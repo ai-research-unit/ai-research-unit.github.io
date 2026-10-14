@@ -6,17 +6,17 @@ The general plain sesquilinear product $\tilde P\star\tilde Q=\tilde P\tilde Q^{
 
 The **ideals** of the multiplication are the two trivial ones on the left and on both sides at once, but on the right they are as many as the algebra's: a right $\star$-ideal is exactly a right algebra ideal, so the right-sided lattice is untouched by the passage from the algebra to the multiplication, while the left-sided and the two-sided lattices collapse to the two-element chain. The asymmetry is the conjugate sitting in the second slot, and it is the first thing this article establishes. The two-sided simplicity of the multiplication is *The Biquaternion Sesqualgebra Is Simple*; the one-sided statement there treats the two sides alike, and the computation below shows they are not alike. The algebra's lattice has, on each side, a projective line of minimal ideals, and those minimal ideals are exactly the sums of two Peirce lines; the Peirce decomposition then says which of them the multiplication keeps and which it destroys, the right ones being kept and the left ones destroyed. The surviving lattice is not idle: its points are the sets $R_w=\{\tilde X:w\tilde X=0\}$, any two of them are complementary so that each pair carries a Peirce decomposition of the block, and each single one is a Hermitian line space on which the multiplication acts as a full $2\times2$ matrix algebra. The section *The Right Ideals and the Matrix Representations* proves this and reads both structures off the lattice.
 
-The **Peirce decomposition** is the algebra's. The four spaces $\tilde\Pi_i\mathbb{B}\tilde\Pi_j$ of a projection need associativity, which the multiplication does not have, and the multiplication contributes to them a **table and nothing else**: the product of two spaces lands in the space whose two indices must agree, and the two indices that must agree sit on the right in the sesquilinear table whereas they sit in the middle in the algebra table. The table is therefore the **transpose** of the algebra's in the second factor, its index rule is not the parity grading of the algebra, and the elements that index it are the **projections**, the Hermitian idempotents, which are exactly the idempotents of the multiplication by *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*. The general form of the transposed table is *Hermitian Idempotents and the Peirce Decomposition*; what is added here is the biquaternion instance, the four lines in the coefficients of the block, the transport through the matrix model, the form the involution takes on the two mixed lines, and the failure of the two-sided conditions of the multiplication to reproduce the four spaces.
+The **Peirce decomposition** is the algebra's. The four spaces $\tilde\Pi_i\mathbb{B}\tilde\Pi_j$ of a projection need associativity, which the multiplication does not have, and the multiplication contributes to them a **table and nothing else**: the product of two spaces lands in the space whose two indices must agree, and the two indices that must agree sit on the right in the sesquilinear table whereas they sit in the middle in the algebra table. The table is therefore the **transpose** of the algebra's in the second factor, its index rule is not the parity grading of the algebra, and the elements that index it are the **projections**, the Hermitian idempotents, which are exactly the idempotents of the multiplication by *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*; and the decompositions are as many as the complete orthogonal pairs of those projections: one degenerate decomposition and a real projective plane of them (§*As Many Decompositions as the Hermitian Roots of One*). The general form of the transposed table is *Hermitian Idempotents and the Peirce Decomposition*; what is added here is the biquaternion instance, the four lines in the coefficients of the block, the transport through the matrix model, the form the involution takes on the two mixed lines, and the failure of the two-sided conditions of the multiplication to reproduce the four spaces.
 
 **Boundaries.** The multiplication, its scalar rules and its idempotents are *Introduction to the General Plain Sesqualgebra of Biquaternions*; the projections and their complementary pairs are *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*; the ideals of a general sesqualgebra are *Ideals and Quotients of a Sesqualgebra*, and the two notions of simplicity are *Simple Sesqualgebras and Minimal Ideals*; the ideals of the block are *The Biquaternion Sesqualgebra Is Simple*, whose two-sided theorem this article quotes and whose one-sided theorem it corrects on the right; the transposed Peirce table of a derived operation is *Hermitian Idempotents and the Peirce Decomposition*; the algebra's ideal theory, its Peirce decomposition and its minimal one-sided ideals are *Ideals and Peirce Decomposition of the General Plain Algebra*; the model in which the four lines are the four matrix entries is *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*; the Hermitian module whose restriction of the scalar form is carried by the right ideals is *Hermitian Modules over the Biquaternion Algebra with Hermitian Adjoint*; and the general definition of the idempotent, the projection and the Peirce decomposition is *Definitions for the Study of the 12 Algebraic Structures*.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$, with $e_0$ the unit and $e_1e_2=e_3$, and $i$ is the central scalar imaginary. Juxtaposition is the **plain** product $\tilde P\tilde Q$ of *Introduction to the General Plain Algebra of Biquaternions*, $\star$ is the multiplication of this block, $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$, and ${}^{*}={}^{\natural}\circ\bar{\cdot}$ is the Hermitian conjugation of *Biquaternions as a Vector Space over $\mathbb{C}$*. A **projection** is a Hermitian idempotent, and the projections are exactly the $\star$-idempotents; they are written
 
 $$
-\tilde\Pi_1(\hat\mu)=\tfrac12\bigl(e_0+i\hat\mu\bigr),\qquad \tilde\Pi_2(\hat\mu)=e_0-\tilde\Pi_1(\hat\mu)=\tfrac12\bigl(e_0-i\hat\mu\bigr),
+\tilde\Pi_+(\tilde\Xi)=\tfrac12\bigl(e_0+\tilde\Xi\bigr),\qquad \tilde\Pi_-(\tilde\Xi)=e_0-\tilde\Pi_+(\tilde\Xi)=\tfrac12\bigl(e_0-\tilde\Xi\bigr),
 $$
 
-with $\hat\mu$ a real vector of the vector subspace and $(\hat\mu,\hat\mu)=1$. The pair $\tilde\Pi_1(\hat\mu),\tilde\Pi_2(\hat\mu)$ is the **complementary pair** of *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*. The matrix model $\mathsf{M}_2$ is the algebra isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ of *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*, with $\mathsf{M}_2(e_0)=\mathrm{I}_2$ and $\mathsf{M}_2(e_k)=-i\sigma_k$ on the three quaternion units.
+with $\tilde\Xi=i\hat n$, where $\hat n$ is a real vector of the vector subspace with $(\hat n,\hat n)=1$. The pair $\tilde\Pi_+(\tilde\Xi),\tilde\Pi_-(\tilde\Xi)$ is the **complementary pair** of *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, and it is the pair $\tilde\Pi_\pm(\tilde\Xi)=\tfrac12(e_0\pm\tilde\Xi)$ of the Hermitian root $\tilde\Xi=i\hat n$, the notation of that article's §*The Two Idempotents of a Root*. The matrix model $\mathsf{M}_2$ is the algebra isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ of *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*, with $\mathsf{M}_2(e_0)=\mathrm{I}_2$ and $\mathsf{M}_2(e_k)=-i\sigma_k$ on the three quaternion units.
 
 ## The Ideals
 
@@ -59,7 +59,7 @@ so that the minimal left ideal of the algebra is the sum of one diagonal and one
 
 ### The Definition
 
-Let $\tilde\Pi$ be a projection, $\tilde\Pi^{\perp}=e_0-\tilde\Pi=\tilde\Pi_2(\hat\mu)$ its complement, and put $\tilde e_1=\tilde\Pi,\tilde e_2=\tilde\Pi^{\perp}$. The four **Peirce spaces** are the intersections
+Let $\tilde\Pi$ be a projection, $\tilde\Pi^{\perp}=e_0-\tilde\Pi=\tilde\Pi_-(\tilde\Xi)$ its complement, and put $\tilde e_1=\tilde\Pi,\tilde e_2=\tilde\Pi^{\perp}$. The four **Peirce spaces** are the intersections
 
 $$
 \mathbb{B}_{ij}=\tilde e_i\,\mathbb{B}\,\tilde e_j,\qquad i,j\in\{1,2\},
@@ -87,7 +87,7 @@ $$
 
 ### The Biquaternion Cases
 
-**Proposition (the four lines).** For the complementary pair $\tilde\Pi=\tilde\Pi_1(\hat\mu)$, $\tilde\Pi^{\perp}=\tilde\Pi_2(\hat\mu)$ the Peirce decomposition of the block is
+**Proposition (the four lines).** For the complementary pair $\tilde\Pi=\tilde\Pi_+(\tilde\Xi)$, $\tilde\Pi^{\perp}=\tilde\Pi_-(\tilde\Xi)$ the Peirce decomposition of the block is
 
 $$
 \mathbb{B}=\tilde\Pi\mathbb{B}\tilde\Pi\oplus\tilde\Pi\mathbb{B}\tilde\Pi^{\perp}\oplus\tilde\Pi^{\perp}\mathbb{B}\tilde\Pi\oplus\tilde\Pi^{\perp}\mathbb{B}\tilde\Pi^{\perp},
@@ -97,16 +97,16 @@ with complex one-dimensional summands
 
 $$
 \tilde\Pi\mathbb{B}\tilde\Pi=\mathbb{C}\tilde\Pi,\quad
-\tilde\Pi\mathbb{B}\tilde\Pi^{\perp}=\mathbb{C}\tilde\Upsilon_1(\hat\mu),\quad
-\tilde\Pi^{\perp}\mathbb{B}\tilde\Pi=\mathbb{C}\tilde\Upsilon_2(\hat\mu),\quad
+\tilde\Pi\mathbb{B}\tilde\Pi^{\perp}=\mathbb{C}\tilde\Upsilon_1(\hat n),\quad
+\tilde\Pi^{\perp}\mathbb{B}\tilde\Pi=\mathbb{C}\tilde\Upsilon_2(\hat n),\quad
 \tilde\Pi^{\perp}\mathbb{B}\tilde\Pi^{\perp}=\mathbb{C}\tilde\Pi^{\perp},
 $$
 
-where $\tilde\Upsilon_1(\hat\mu)$ is any nonzero element of the first mixed space and $\tilde\Upsilon_2(\hat\mu)=\tilde\Upsilon_1(\hat\mu)^{*}$ is its conjugate in the second. Each summand has real dimension two and the total is eight.
+where $\tilde\Upsilon_1(\hat n)$ is any nonzero element of the first mixed space and $\tilde\Upsilon_2(\hat n)=\tilde\Upsilon_1(\hat n)^{*}$ is its conjugate in the second. Each summand has real dimension two and the total is eight.
 
 **Proof.** The decomposition, the one-dimensionality of the four summands and the identification of the two mixed spaces as conjugate are *Ideals and Peirce Decomposition of the General Plain Algebra*, §*The Biquaternion Case* and §*From One Idempotent to Its Complement*, transported to the pair $(\tilde\Pi,\tilde\Pi^{\perp})$, a complete orthogonal family by *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, §*The Complement and the Pairing of the Directions*.
 
-**Example (the standard pair as coordinates).** At $\hat\mu=\hat e_3$ the projection is the standard idempotent $\tilde\Pi_1(\hat e_3)=\tfrac12(e_0+ie_3)$, its complement is $\tilde\Pi_2(\hat e_3)=\tfrac12(e_0-ie_3)$, and the matrix model sends the four lines to the four matrix units,
+**Example (the standard pair as coordinates).** At the axis $\hat n=\hat e_3$ the projection is the standard idempotent $\tilde\Pi_1(\hat e_3)=\tfrac12(e_0+ie_3)$, its complement is $\tilde\Pi_2(\hat e_3)=\tfrac12(e_0-ie_3)$, and the matrix model sends the four lines to the four matrix units,
 
 $$
 \tilde\Pi\longleftrightarrow E_{11},\qquad \tilde\Upsilon_1(\hat e_3)\longleftrightarrow E_{12},\qquad \tilde\Upsilon_2(\hat e_3)\longleftrightarrow E_{21},\qquad \tilde\Pi^{\perp}\longleftrightarrow E_{22},
@@ -114,7 +114,39 @@ $$
 
 as the transport of *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* records; the Peirce coordinates of an element are therefore the four entries of its matrix, grouped by the projection instead of by the basis.
 
-**Remark (what is the multiplication's and what is the algebra's).** The four lines are the algebra's: they do not need the multiplication and they do not depend on it. Two things do depend on it. The first is the choice of the idempotent: the pair $(\tilde\Pi,\tilde\Pi^{\perp})$ that indexes the decomposition is made of projections, and the projections are the Hermitian idempotents, which are exactly the idempotents of the multiplication, so the decomposition can be indexed by the multiplication's own idempotents, a supply the algebra's decomposition does not provide. The second is the table, which is the next subsection.
+**Remark (what is the multiplication's and what is the algebra's).** The four lines are the algebra's: they do not need the multiplication and they do not depend on it. Two things do depend on it. The first is the choice of the idempotent: the pair $(\tilde\Pi,\tilde\Pi^{\perp})$ that indexes the decomposition is made of projections, and the projections are the Hermitian idempotents, which are exactly the idempotents of the multiplication, so the decomposition can be indexed by the multiplication's own idempotents, a supply the algebra's decomposition does not provide. The second is the table, which is the subject of §*The Table in the Standard Pair*.
+
+### As Many Decompositions as the Hermitian Roots of One
+
+**The complete orthogonal pairs of the block are exactly the pairs $\tilde\Pi_+(\tilde\Xi),\tilde\Pi_-(\tilde\Xi)$ of a Hermitian root $\tilde\Xi$ of $+1$, so the Peirce decompositions of the block are in bijection with the Hermitian roots modulo the sign change $\tilde\Xi\sim-\tilde\Xi$: one degenerate decomposition for the class $\{\pm e_0\}$ and a real projective plane of decompositions for the classes of the $\tilde\Xi$, and no other.**
+
+Write the pair of the root in the two signs, $\tilde\Pi_\pm(\tilde\Xi)=\tfrac12(e_0\pm\tilde\Xi)$, as *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, §*The Two Idempotents of a Root*, and put
+
+$$
+\mathbb{B}_{st}=\tilde\Pi_s\,\mathbb{B}\,\tilde\Pi_t,\qquad s,t\in\{+,-\},
+$$
+
+for the four corners. They are the four spaces of §*The Definition* taken on the pair $(\tilde\Pi_+,\tilde\Pi_-)$, which is complete and orthogonal by the same article, §*The Arithmetic of the Pair of Idempotents*:
+
+$$
+\mathbb{B}=\mathbb{B}_{++}\oplus\mathbb{B}_{+-}\oplus\mathbb{B}_{-+}\oplus\mathbb{B}_{--},
+$$
+
+each corner a complex line when the root is not $\pm e_0$, by §*The Biquaternion Cases* read at $\tilde\Pi=\tilde\Pi_+(\tilde\Xi)$, whose complement is $\tilde\Pi_-=\tilde\Pi_-(\tilde\Xi)$.
+
+**The root on the corners.** The two signs are the two eigenvalues of multiplication by the root, and each corner collects one on the left and one on the right,
+
+$$
+x\in\mathbb{B}_{st}\iff\tilde\Xi x=s\,x\ \text{ and }\ x\tilde\Xi=t\,x,
+$$
+
+so $\mathbb{B}_{st}$ is the joint eigenspace of the operators of left and right multiplication by the root with the eigenvalues $s$ and $t$. The forward implication is the definition of the corner, $\tilde\Pi_s x=x\tilde\Pi_t=x$; the reverse reads $\tilde\Pi_sx=\tfrac12(e_0+s\tilde\Xi)x=\tfrac12(x+s\,sx)=x$ and $\tilde\Pi_sx\tilde\Pi_t=x$. This is the statement of the parent, §*The Biquaternion Case* of *Ideals and Peirce Decomposition of the General Plain Algebra*, and it holds here unchanged: the corners are the algebra's, and the root that indexes them is a Hermitian root, which the multiplication itself supplies.
+
+**The bijection.** A complete orthogonal pair of the block is a pair of orthogonal idempotents summing to $e_0$, and the idempotents of the block are the Hermitian idempotents of the algebra, so $\tilde\Xi=\tilde\Pi_+-\tilde\Pi_-$ is Hermitian and has square $\tilde\Xi^2=\tilde\Pi_+^2-\tilde\Pi_+\tilde\Pi_--\tilde\Pi_-\tilde\Pi_++\tilde\Pi_-^2=\tilde\Pi_++\tilde\Pi_-=e_0$: a Hermitian root of $+1$, whose pair the given pair is. Conversely a Hermitian root gives its pair, and the root is read back, $\tilde\Xi=\tilde\Pi_+-\tilde\Pi_-$, so a complete orthogonal pair determines the root up to the interchange of its two members. That interchange is exactly the replacement of the root by its opposite, $\tilde\Pi_+(-\tilde\Xi)=\tilde\Pi_-(\tilde\Xi)$ and $\tilde\Pi_-(-\tilde\Xi)=\tilde\Pi_+(\tilde\Xi)$. So the classes $\{\tilde\Xi,-\tilde\Xi\}$ of Hermitian roots of $+1$, the complete orthogonal pairs of the block and the Peirce decompositions of the block correspond one to one.
+
+**The count.** The Hermitian roots of $+1$ are $\pm e_0$ and the roots $\tilde\Xi=i\hat n$ over the real unit vectors $\hat n$ (*Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, §*The Hermitian Roots of One*). The class $\{\pm e_0\}$ gives the pair $(e_0,0)$ and the **degenerate decomposition**, whose corners are $\mathbb{B}$ and $0$ rather than four lines. A class $\{\tilde\Xi,-\tilde\Xi\}$ gives the pair $(\tilde\Pi_+(\tilde\Xi),\tilde\Pi_-(\tilde\Xi))$ of §*The Biquaternion Cases*, and the change $\hat n\mapsto-\hat n$ leaves the pair unchanged, two antipodal directions giving the same decomposition; the classes of the non-trivial Hermitian roots are therefore the points of the **real projective plane** of the directions, the same projective plane as the right lattice of §*The Complementary Pairs and the Peirce Decompositions*. So the Peirce decompositions of the block are one degenerate decomposition and a real projective plane of decompositions.
+
+**Remark (the contrast with the algebra, and why).** The parent's decompositions are as many as its roots of $+1$ modulo the sign, in three families: the trivial one, the purely imaginary one and a four-real-parameter one. Here the four-parameter family does not descend, because only the Hermitian roots carry idempotents, the idempotents of the block being exactly the Hermitian idempotents of the algebra: an oblique pair $(e,e_0-e)$ of §*The Complementary Pairs and the Peirce Decompositions*, whose idempotents are not Hermitian, still splits $\mathbb{B}$ and still carries the algebra's table, but it is not a pair of the multiplication and its class is not among the ones counted here. The count is the Peirce reading of the halving map of *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*: the map takes the Hermitian roots onto the idempotents, and the idempotents index the decompositions of the block.
 
 ### The Table in the Standard Pair
 
@@ -145,7 +177,7 @@ each entry being the line named, and $0$ where the two second indices disagree.
 
 **Theorem (the exchange).** Let $\tilde\Pi$ be a projection. The involution exchanges the two indices of each Peirce space, $(\mathbb{B}_{ij})^{*}=\mathbb{B}_{ji}$; it fixes each diagonal corner and exchanges the two mixed lines, and in the standard pair it carries the first mixed line to the second and back.
 
-**Proof.** $(\tilde e_ia\tilde e_j)^{*}=\tilde e_j^{*}a^{*}\tilde e_i^{*}=\tilde e_ja^{*}\tilde e_i\in\mathbb{B}_{ji}$ because the two projections are Hermitian, and ${}^{*}$ is an involution, so the inclusion is an equality. The standard-pair statement is the definition $\tilde\Upsilon_2(\hat\mu)=\tilde\Upsilon_1(\hat\mu)^{*}$.
+**Proof.** $(\tilde e_ia\tilde e_j)^{*}=\tilde e_j^{*}a^{*}\tilde e_i^{*}=\tilde e_ja^{*}\tilde e_i\in\mathbb{B}_{ji}$ because the two projections are Hermitian, and ${}^{*}$ is an involution, so the inclusion is an equality. The standard-pair statement is the definition $\tilde\Upsilon_2(\hat n)=\tilde\Upsilon_1(\hat n)^{*}$.
 
 **Corollary (the table is transpose-Hermitian).** The involution acts on the block's product by reversing the two factors, $(\tilde X\star\tilde Y)^{*}=\tilde Y\star\tilde X$, an identity of *Introduction to the General Plain Sesqualgebra of Biquaternions*. So the entry $\mathbb{B}_{ij}\star\mathbb{B}_{jl}\subseteq\mathbb{B}_{il}$ is carried to $\mathbb{B}_{lj}\star\mathbb{B}_{ji}\subseteq\mathbb{B}_{li}$, and on the standard pair, where the involution fixes the two corners and exchanges the two mixed lines, the conjugate of the entry in the row $\tilde A$ and the column $\tilde B$ is the entry in the row $\tilde B$ and the column $\tilde A$. The table is therefore **transpose-Hermitian**, and the display above is invariant under the transposition of its rows and columns combined with the exchange of the labels of the two mixed lines.
 
@@ -203,7 +235,7 @@ $$
 R_w=\{\tilde X:w\tilde X=0\},\qquad 0\neq w\in\mathbb{C}^2,
 $$
 
-one for each line $\mathbb{C}w$ of the row space; equivalently $R_w=\tilde\Pi\mathbb{B}$ for the rank-one projection $\tilde\Pi$ onto the line $\ker w$ of $\mathbb{C}^2$. Two forms give the same ideal exactly when they are proportional, $R_w=R_{w'}\iff w'\in\mathbb{C}^{\times}w$, so the right lattice is a projective line of minimal right ideals, one point for each projection $\tilde\Pi=\tilde\Pi_1(\hat\mu)$.
+one for each line $\mathbb{C}w$ of the row space; equivalently $R_w=\tilde\Pi\mathbb{B}$ for the rank-one projection $\tilde\Pi$ onto the line $\ker w$ of $\mathbb{C}^2$. Two forms give the same ideal exactly when they are proportional, $R_w=R_{w'}\iff w'\in\mathbb{C}^{\times}w$, so the right lattice is a projective line of minimal right ideals, one point for each projection $\tilde\Pi=\tilde\Pi_+(\tilde\Xi)$.
 
 **Proof.** The set $R_w$ is a right ideal because $w(\tilde X\tilde Y)=(w\tilde X)\tilde Y=0$. Its elements are the matrices whose columns lie in the line $\ker w$, so $\dim_{\mathbb{C}}R_w=2$, and it is minimal: a nonzero element has a nonzero column, $\tilde X=uc^{\mathrm{T}}$ with $u$ spanning $\ker w$ and $c\neq0$, and then $\tilde X\mathbb{B}=\{u(c^{\mathrm{T}}\tilde Y):\tilde Y\}=\{u c'^{\mathrm{T}}\}=R_w$. If $u$ is a unit vector spanning $\ker w$ and $\tilde\Pi=uu^{\dagger}$, then $\tilde\Pi\tilde X=\tilde X$ exactly for the matrices with columns in $\ker w$, so $R_w=\tilde\Pi\mathbb{B}$; and $R_w=R_{w'}$ forces $\ker w=\ker w'$, hence $w'$ proportional to $w$.
 
@@ -305,13 +337,14 @@ The claims of the article were recomputed on the matrix model $\mathsf{M}_2$ at 
 - **The corners and the mixed squares.** The closures $\mathbb{B}_{11}\star\mathbb{B}_{11}\subseteq\mathbb{B}_{11}$ and $\mathbb{B}_{22}\star\mathbb{B}_{22}\subseteq\mathbb{B}_{22}$, the annihilation $\mathbb{B}_{12}\star\mathbb{B}_{21}=0=\mathbb{B}_{21}\star\mathbb{B}_{12}$, and the off-diagonal squares $\mathbb{B}_{12}\star\mathbb{B}_{12}=\mathbb{B}_{11}$, $\mathbb{B}_{21}\star\mathbb{B}_{21}=\mathbb{B}_{22}$ were each verified with zero residual, and the corner product $\lambda\tilde\Pi\star\mu\tilde\Pi=\lambda\overline\mu\tilde\Pi$ was checked on a hundred pairs of complex scalars.
 - **The right ideals and their complements.** For the pairs of forms $(1,0),(0,1)$, $(1,0),(1,1)$ and $(1,2),(3,1)$ the intersection $R_w\cap R_{w'}$ was found of complex dimension zero and the sum of dimension four; the idempotent $\tilde e_{w,w'}$ was idempotent with $\tilde e+\tilde e^{\perp}=\mathrm{I}_2$, $\tilde e\mathbb{B}=R_w$ and $\tilde e^{\perp}\mathbb{B}=R_{w'}$ on a hundred samples each; and it was Hermitian exactly for the orthogonal pair $(1,0),(0,1)$, the oblique pairs giving non-Hermitian idempotents.
 - **The two tables on the pairs.** On the Hermitian pair the transposed sesquilinear inclusions hold on the four lines with zero residual, while on the oblique pair the mixed products violate them on every sample whereas the algebra inclusions hold for both pairs.
+- **The corners of the pair of a root.** For the Hermitian roots $e_0$, $-e_0$, $ie_1$ and $i(e_2+e_3)/\sqrt2$ the four corners $\tilde\Pi_s\mathbb{B}\tilde\Pi_t$ of §*As Many Decompositions as the Hermitian Roots of One* were found of complex dimension one each, the root was checked to act on each as the two signs $s$ and $t$, the product rule $\mathbb{B}_{st}\mathbb{B}_{uv}\subseteq\delta_{tu}\mathbb{B}_{sv}$ was checked on eight index pairs, the root and its opposite were checked to give the same unordered pair, and the degenerate pair $(e_0,0)$ was checked to give the corners $\mathbb{B}$ and $0$ rather than four lines.
 - **The realization.** The right action $\varphi(\beta)(\tilde X)=\tilde X\beta$ reversed the product on a hundred pairs, satisfied $\varphi(\beta^{*})=\varphi(\beta)^{*}$ for the restricted form on every sample, and its image spanned the four-dimensional $\operatorname{End}_{\mathbb{C}}(R_w)$; the assignment $\rho(\beta)=\varphi(\beta^{\mathrm{T}})$ was multiplicative and $*$-equivariant and carried $\star$ to the composition with the adjoint on a hundred pairs; and the restriction of the scalar form to $R_w$ had Gram matrix $\tfrac12\mathrm{I}_2$ in the basis $ue_i^{\mathrm{T}}$.
 
 ## Summary
 
 The multiplication has no proper left ideal and no proper two-sided ideal: those two lattices are the two-element chain. Its right ideals, on the other hand, are exactly the right algebra ideals, so on the right the lattice is the algebra's, with a projective line of minimal right ideals $\tilde\Pi\mathbb{B}$ of complex dimension two. The asymmetry is the conjugate in the second slot: the unit acting on the first slot produces the conjugate of an element of a left ideal, $e_0\star\tilde X=\tilde X^{*}$, and on the right the condition reads $I\star\mathbb{B}=I\mathbb{B}\subseteq I$ with the involution absent. The involution carries a left algebra ideal to a right one but does not carry a right $\star$-ideal to a left $\star$-ideal, so the two one-sided lattices are not exchanged by it.
 
-The Peirce decomposition is the algebra's: for a projection the four spaces $\tilde\Pi_i\mathbb{B}\tilde\Pi_j$ split $\mathbb{B}$ into four complex lines, the involution exchanges the two mixed lines and fixes the two corners, each corner is a sesqualgebra whose product is the conjugate product of $\mathbb{C}$, and the two mixed lines annihilate each other while each squares into a corner. The multiplication contributes the **table**: the product of two spaces lands in the space whose first index comes from the first factor and whose second index comes from the second, so the two indices that must agree sit on the right, and the table is the transpose of the algebra's in the second factor. The algebra's minimal one-sided ideals are the sums of one diagonal with one mixed line, and the multiplication keeps the right family and destroys the left one. The four spaces defined by the two-sided conditions of the multiplication are not the Peirce spaces and do not decompose $\mathbb{B}$; the multiplication reads the algebra's decomposition with its own index rule.
+The Peirce decomposition is the algebra's: for a projection the four spaces $\tilde\Pi_i\mathbb{B}\tilde\Pi_j$ split $\mathbb{B}$ into four complex lines, the involution exchanges the two mixed lines and fixes the two corners, each corner is a sesqualgebra whose product is the conjugate product of $\mathbb{C}$, and the two mixed lines annihilate each other while each squares into a corner. The multiplication contributes the **table**: the product of two spaces lands in the space whose first index comes from the first factor and whose second index comes from the second, so the two indices that must agree sit on the right, and the table is the transpose of the algebra's in the second factor. The algebra's minimal one-sided ideals are the sums of one diagonal with one mixed line, and the multiplication keeps the right family and destroys the left one. The four spaces defined by the two-sided conditions of the multiplication are not the Peirce spaces and do not decompose $\mathbb{B}$; the multiplication reads the algebra's decomposition with its own index rule. The pair that indexes a decomposition is the pair $\tilde\Pi_\pm(\tilde\Xi)=\tfrac12(e_0\pm\tilde\Xi)$ of a Hermitian root of $+1$, and the decompositions of the block are as many as those roots modulo the sign: one degenerate decomposition and a real projective plane of them.
 
 The proper right $\star$-ideals are the sets $R_w=\{\tilde X:w\tilde X=0\}$, one for each point of the projective line, and they index both structures. Any two distinct ones are complementary, and each pair carries an idempotent $\tilde e_{w,w'}$, so every unordered pair of points carries a Peirce decomposition of the block; the pair is Hermitian exactly when the two forms are orthogonal, which is exactly when the transposed sesquilinear table is available. Each single right ideal is a positive definite Hermitian line space of Gram matrix $\tfrac12\mathrm{I}_2$, and the right multiplication on it is a $*$-equivariant anti-isomorphism of $\mathbb{B}$; the transpose converts it into an isomorphism of **sesqualgebras** onto $\bigl(M_2(\mathbb{C}),(A,B)\mapsto AB^{\dagger},{}^{\dagger}\bigr)$, so the block has a $2\times2$ matrix realization for each point of the lattice, the standard model being the member at the standard pair. The transpose is needed because the ideal is a right module; the mirror construction on the left ideals, which are not $\star$-ideals, needs none and carries nothing.
 
@@ -323,9 +356,10 @@ The proper right $\star$-ideals are the sets $R_w=\{\tilde X:w\tilde X=0\}$, one
 | $e_0,e_1,e_2,e_3$ | complex basis; $e_0$ the unit, $e_k$ the quaternion units, $e_1e_2=e_3$ |
 | $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ | the general plain sesquilinear product, the multiplication of the block |
 | ${}^{*}$ | the Hermitian conjugation, the conjugate-linear involution |
-| $\tilde\Pi=\tilde\Pi_1(\hat\mu)=\tfrac12(e_0+i\hat\mu)$ | a projection, a Hermitian idempotent, a $\star$-idempotent |
-| $\tilde\Pi^{\perp}=e_0-\tilde\Pi=\tilde\Pi_2(\hat\mu)$ | the complementary projection |
+| $\tilde\Pi=\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_0+\tilde\Xi)$ | a projection, a Hermitian idempotent, a $\star$-idempotent |
+| $\tilde\Pi^{\perp}=e_0-\tilde\Pi=\tilde\Pi_-(\tilde\Xi)$ | the complementary projection |
 | $\mathbb{B}_{ij}=\tilde e_i\mathbb{B}\tilde e_j$ | the four Peirce spaces of the complementary pair |
+| $\tilde\Pi_\pm(\tilde\Xi)=\tfrac12(e_0\pm\tilde\Xi)$, $\mathbb{B}_{st}=\tilde\Pi_s\mathbb{B}\tilde\Pi_t$ | the pair of a Hermitian root of $+1$ and the corners it indexes, $s,t\in\{+,-\}$ |
 | $\mathbb{B}\tilde\Pi$, $\tilde\Pi\mathbb{B}$ | the minimal left and right ideals of the algebra; the right one is a right $\star$-ideal, the left one is not a left $\star$-ideal |
 | $\mathbb{C}\tilde\Upsilon_1$, $\mathbb{C}\tilde\Upsilon_2$ | the two mixed Peirce lines, mutually conjugate |
 | $\mathbb{A}_{ij}$ | the four $\star$-Peirce pieces of the two-sided conditions |
@@ -338,7 +372,7 @@ The proper right $\star$-ideals are the sets $R_w=\{\tilde X:w\tilde X=0\}$, one
 ## Further Reading
 
 - *Introduction to the General Plain Sesqualgebra of Biquaternions* — the multiplication, its scalar rules and its idempotents.
-- *Square Roots of One and the Idempotents of the General Plain Sesqualgebra* — the projections and the complementary pair.
+- *Square Roots of One and the Idempotents of the General Plain Sesqualgebra* — the projections, the complementary pair and the pair of a Hermitian root that indexes the decompositions.
 - *The Biquaternion Sesqualgebra Is Simple* — the two-sided simplicity of the multiplication and the minimal one-sided ideals of the algebra; its one-sided theorem is corrected on the right by §*The Three Lattices*.
 - *Hermitian Idempotents and the Peirce Decomposition* — the transposed Peirce table of a derived operation and the corner as a sesqualgebra.
 - *Ideals and Quotients of a Sesqualgebra* — the ideals of a general sesqualgebra.
@@ -346,6 +380,6 @@ The proper right $\star$-ideals are the sets $R_w=\{\tilde X:w\tilde X=0\}$, one
 - *Ideals and Peirce Decomposition of the General Plain Algebra* — the twin in the algebra, with the Peirce corners and the minimal one-sided ideals.
 - *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* — the model in which the four lines are the four matrix entries.
 - *Zero Divisors of the General Plain Sesqualgebra* — the elements of the mixed lines.
-- *Hermitian Modules over the Biquaternion Algebra with Hermitian Adjoint* — the simple Hermitian module $\mathbb{B}\tilde\Pi_1$, its Gram matrix $\frac12\mathrm{I}_2$ and the $*$-representation, of which §*The Matrix Representations from the Right Ideals* gives the index set.
+- *Hermitian Modules over the Biquaternion Algebra with Hermitian Adjoint* — the simple Hermitian module $\mathbb{B}\tilde\Pi_+$, its Gram matrix $\frac12\mathrm{I}_2$ and the $*$-representation, of which §*The Matrix Representations from the Right Ideals* gives the index set.
 - *Ideals and Quotients of a Sesqualgebra* — the ideals of a general sesqualgebra.
 - *Definitions for the Study of the 12 Algebraic Structures* — the idempotent, the projection and the Peirce decomposition.

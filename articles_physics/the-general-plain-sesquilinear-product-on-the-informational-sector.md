@@ -50,7 +50,7 @@ $\mathrm{Sc}(\tilde Q)=Q_0$ and the trace is $\mathrm{Tr}=2\,\mathrm{Sc}$. The c
 complex conjugation $\bar{\cdot}$, the natural conjugation ${\natural}$, and the Hermitian conjugation
 ${}^{*}=\bar{\cdot}\circ{\natural}$. The informational sector is
 $\mathbb{M}_+=\{\tilde Q:\tilde Q^{*}=+\tilde Q\}$, with the real basis $\{e_0,ie_1,ie_2,ie_3\}$ and the
-coordinates $\tilde Q=(ct')e_0+i\mathbf x'$; the material sector is the anti-Hermitian half,
+coordinates $\tilde Q=(ct')e_0+i\vec x'$; the material sector is the anti-Hermitian half,
 $\mathbb{M}_-=\{\tilde Q:\tilde Q^{*}=-\tilde Q\}$, and $i\mathbb{M}_+=\mathbb{M}_-$. The four scalar
 forms are $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)$ with Gram
 $\mathrm{E}=\mathrm{diag}(1,-1,-1,-1)$ in the coefficient basis,
@@ -94,18 +94,18 @@ the conjugation is the identity.
 
 ## The Product on the Sector Is the General Plain Bilinear Product
 
-Write an informational element in its own coordinates, $\tilde Q=(ct')e_0+i\mathbf x'$. The product of two
+Write an informational element in its own coordinates, $\tilde Q=(ct')e_0+i\vec x'$. The product of two
 informational elements is the general plain bilinear one, and its scalar and vector parts are
 
 $$
-\tilde P\tilde Q = \bigl(c^{2}t'\tau'+\mathbf x'\!\cdot\!\mathbf y'\bigr)
-+ i\bigl(ct'\mathbf y'+c\tau'\mathbf x'\bigr) - \mathbf x'\!\times\!\mathbf y',
+\tilde P\tilde Q = \bigl(c^{2}t'\tau'+\vec x'\!\cdot\!\vec y'\bigr)
++ i\bigl(ct'\vec y'+c\tau'\vec x'\bigr) - \vec x'\!\times\!\vec y',
 $$
 
 so the scalar part is the sector sign $B$ and the vector part carries both an imaginary piece, the
-symmetric combination of the two directions, and the real piece $-\mathbf x'\!\times\!\mathbf y'$, the
+symmetric combination of the two directions, and the real piece $-\vec x'\!\times\!\vec y'$, the
 antisymmetric combination. The composite is informational exactly when the two commute,
-$\mathbf x'\!\times\!\mathbf y'=0$, and it carries a material part exactly when they anticommute. For the
+$\vec x'\!\times\!\vec y'=0$, and it carries a material part exactly when they anticommute. For the
 sesquilinear product the same computation holds with the star absent, and the failure of closure is the
 same failure:
 
@@ -164,7 +164,7 @@ The Born pairing on the informational sector is the sector sign,
 $$
 H\big|_{\mathbb{M}_+} = B\big|_{\mathbb{M}_+} = +\mathrm{I}_4 \ \text{ of signature }(4,0),
 \qquad
-H(\tilde Q,\tilde Q)=c^{2}t'^{2}+\lvert\mathbf x'\rvert^{2}>0 \ \text{ for } \tilde Q\neq0,
+H(\tilde Q,\tilde Q)=c^{2}t'^{2}+\lvert\vec x'\rvert^{2}>0 \ \text{ for } \tilde Q\neq0,
 $$
 
 the Euclidean length-squared of the informational coordinate; it has **no null vector**, so its isotropic
@@ -174,19 +174,19 @@ Lorentzian form of signature $(1,3)$ in the same coordinate,
 $$
 N\big|_{\mathbb{M}_+}=\mathrm{diag}(1,-1,-1,-1),
 \qquad
-N(\tilde Q,\tilde Q)=c^{2}t'^{2}-\lvert\mathbf x'\rvert^{2},
+N(\tilde Q,\tilde Q)=c^{2}t'^{2}-\lvert\vec x'\rvert^{2},
 $$
 
-and the two forms differ by the vector square, $B-N=2\lvert\mathbf x'\rvert^{2}$. The interval's cone is
+and the two forms differ by the vector square, $B-N=2\lvert\vec x'\rvert^{2}$. The interval's cone is
 therefore **inside** the sector and is not a cone of the probability: it is the **purity boundary of the
-state space**. On the unit-trace slice $\tilde\rho=\frac12(e_0+i\mathbf r)$,
+state space**. On the unit-trace slice $\tilde\rho=\frac12(e_0+i\vec r)$,
 
 $$
-N(\tilde\rho,\tilde\rho)=\tfrac14\bigl(1-\lvert\mathbf r\rvert^{2}\bigr),
+N(\tilde\rho,\tilde\rho)=\tfrac14\bigl(1-\lvert\vec r\rvert^{2}\bigr),
 \qquad
-B(\tilde\rho,\tilde\rho)=H(\tilde\rho,\tilde\rho)=\tfrac14\bigl(1+\lvert\mathbf r\rvert^{2}\bigr),
+B(\tilde\rho,\tilde\rho)=H(\tilde\rho,\tilde\rho)=\tfrac14\bigl(1+\lvert\vec r\rvert^{2}\bigr),
 \qquad
-\mathrm{Tr}(\tilde\rho^{2})=\tfrac12\bigl(1+\lvert\mathbf r\rvert^{2}\bigr),
+\mathrm{Tr}(\tilde\rho^{2})=\tfrac12\bigl(1+\lvert\vec r\rvert^{2}\bigr),
 $$
 
 so a state is pure exactly when the probability is $\frac12$, exactly when the interval vanishes, exactly
@@ -201,8 +201,8 @@ cone and the Bloch ball as its trace-one slice are *The Spinor Space as a Hilber
 Sesqualgebra* and *The Bloch Ball as the Trace-One Slice of the Future Light Cone*.
 
 **Remark (verified).** The two restrictions are the displayed matrices with all cross terms $0$;
-$H(\tilde\rho,\tilde\rho)=\frac14(1+\lvert\mathbf r\rvert^{2})$ and
-$\mathrm{Tr}(\tilde\rho^{2})=\frac12(1+\lvert\mathbf r\rvert^{2})$ on $100$ random unit-trace elements, and
+$H(\tilde\rho,\tilde\rho)=\frac14(1+\lvert\vec r\rvert^{2})$ and
+$\mathrm{Tr}(\tilde\rho^{2})=\frac12(1+\lvert\vec r\rvert^{2})$ on $100$ random unit-trace elements, and
 $H$ is strictly positive on $100$ random informational elements.
 
 **Proposed interpretation, labelled as such.** On the informational sector the **probability and the
@@ -221,8 +221,8 @@ square is Hermitian for every element, and applying the involution forces $\tild
 idempotents are therefore exactly the Hermitian projections of the algebra,
 
 $$
-0, \qquad e_0, \qquad \tilde\Pi_1(\hat{\boldsymbol\mu})=\tfrac12\bigl(e_0+i\hat{\boldsymbol\mu}\bigr),
-\qquad \hat{\boldsymbol\mu}\in\mathbb{R}^{3},\ \lvert\hat{\boldsymbol\mu}\rvert=1,
+0, \qquad e_0, \qquad \tilde\Pi_1(\hat\mu)=\tfrac12\bigl(e_0+i\hat\mu\bigr),
+\qquad \hat\mu\in\mathbb{R}^{3},\ \lvert\hat\mu\rvert=1,
 $$
 
 and **all of them lie in the informational sector**: the product has no material idempotent, and its
@@ -261,7 +261,7 @@ $\mathbb{M}_+$ are $S^{2}$ in the imaginary directions together with $\pm e_0$.
 
 **Remark (verified).** On the sector the left multiplication by a Hermitian parameter is self-adjoint for
 $H$ and by an anti-Hermitian one skew-adjoint, to machine precision; the only informational elements
-$\tilde A$ with $\tilde A\tilde A^{*}=e_0$ are $\pm e_0$ and the unit imaginary directions $i\hat{\boldsymbol\mu}$.
+$\tilde A$ with $\tilde A\tilde A^{*}=e_0$ are $\pm e_0$ and the unit imaginary directions $i\hat\mu$.
 
 ## The Two Rows Agree on the State Side
 
@@ -329,7 +329,7 @@ form, and the boundary of what it must declare is the boundary of the sector.
 - **The product is not central on the sector.** Its value has a vector part, so it is not a form; only its
   symmetric half is a form, and the pure states are idempotents of the product and not of the half.
 - **The probability is not the interval.** $H=B$ is Euclidean and definite on the sector, with no cone;
-  the interval is $N$, of signature $(1,3)$, and the two differ by $2\lvert\mathbf x'\rvert^{2}$.
+  the interval is $N$, of signature $(1,3)$, and the two differ by $2\lvert\vec x'\rvert^{2}$.
 - **The cone is not a probability cone.** The interval's cone is the purity boundary of the state space;
   the probability has no null and no element of zero weight.
 - **The sector is not closed under the product.** Two informational elements compose to an informational
@@ -357,7 +357,7 @@ Spinor Space in the General Plain Sesqualgebra*.
 $\tilde P\star\tilde Q=\tilde P\tilde Q$, $H=B$ and the symmetric half of the value is $B e_0$; the Born
 pairing restricts to $+\mathrm{I}_4$ of signature $(4,0)$ on each sector and the interval to
 $\mathrm{diag}(1,-1,-1,-1)$ on $\mathbb{M}_+$; on the unit-trace slice the interval is
-$\frac14(1-\lvert\mathbf r\rvert^{2})$ and the probability $\frac14(1+\lvert\mathbf r\rvert^{2})$, so the
+$\frac14(1-\lvert\vec r\rvert^{2})$ and the probability $\frac14(1+\lvert\vec r\rvert^{2})$, so the
 cone is the purity boundary; the idempotents of the product are the Hermitian projections, all
 informational, all on the cone, with probability $\frac12$; the left multiplication is self-adjoint for a
 Hermitian parameter and skew-adjoint for an anti-Hermitian one; and the worked elements
@@ -390,15 +390,15 @@ of the metric.
 ## Summary
 
 The informational sector $\mathbb{M}_+$ carries the Hermitian elements, an element being
-$\tilde Q=(ct')e_0+i\mathbf x'$, and this article reads on it the general plain sesquilinear product
+$\tilde Q=(ct')e_0+i\vec x'$, and this article reads on it the general plain sesquilinear product
 $\tilde P\tilde Q^{*}$ of the probability band. On $\mathbb{M}_+$ the Hermitian conjugation is the
 identity, so the sesquilinear product **is** the general plain bilinear product: the probability row and the composition
 row coincide on the state side, and the whole difference between them is the sector sign, $-1$ on the
 material sector and a genuine conjugation only on the mixed pairs. The scalar part of the value is the
 sector sign $B=H$, positive definite of signature $(4,0)$, the Euclidean inner product of the
 informational coordinates; the interval is the Lorentzian $N$ of signature $(1,3)$, the two differing by
-twice the vector square, and on the unit-trace slice they read $\frac14(1+\lvert\mathbf r\rvert^{2})$ and
-$\frac14(1-\lvert\mathbf r\rvert^{2})$, so the cone of the norm is the **purity boundary of the state
+twice the vector square, and on the unit-trace slice they read $\frac14(1+\lvert\vec r\rvert^{2})$ and
+$\frac14(1-\lvert\vec r\rvert^{2})$, so the cone of the norm is the **purity boundary of the state
 space** and the purity is the half-difference of the two metrics. The probability form has no null vector, so no
 state has zero probability; the cone is the locus of the pure states, which are exactly the nonzero
 idempotents of the product, all informational, all of probability $\frac12$. The symmetric half of the
@@ -417,18 +417,18 @@ $\mathbb{M}_+$, what is proposed is the naming.
 | $i$ | Central scalar imaginary, $i^{2}=-1$ |
 | $\bar{\cdot},{\natural},{}^{*}=\bar{\cdot}\circ{\natural}$ | Complex, natural and Hermitian conjugations |
 | $\mathbb{M}_+=\{\tilde Q^{*}=+\tilde Q\}$ | Informational sector, basis $\{e_0,ie_1,ie_2,ie_3\}$ |
-| $\tilde Q=(ct')e_0+i\mathbf x'$ | An informational element; real time, imaginary space |
+| $\tilde Q=(ct')e_0+i\vec x'$ | An informational element; real time, imaginary space |
 | $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ | General plain sesquilinear product |
 | $\tilde P\star\tilde Q=\tilde P\tilde Q$ on $\mathbb{M}_+$ | The star is the identity on the sector |
 | $H=B=\mathrm{Sc}(\tilde P\tilde Q)=+\mathrm{I}_4$ | The probability on the sector is the sector sign |
 | $N=\mathrm{diag}(1,-1,-1,-1)$ | The interval, signature $(1,3)$ on $\mathbb{M}_+$ |
-| $B-N=2\lvert\mathbf x'\rvert^{2}$ | The probability as the sum of squares against their difference |
-| $\tilde\rho=\frac12(e_0+i\mathbf r)$, $\lvert\mathbf r\rvert\le1$ | Unit-trace element; the Bloch ball |
-| $N=\frac14(1-\lvert\mathbf r\rvert^{2})$, $H=\frac14(1+\lvert\mathbf r\rvert^{2})$ | The cone as the purity boundary; the purity as the gap |
-| $\tilde\Pi_1(\hat{\boldsymbol\mu})=\frac12(e_0+i\hat{\boldsymbol\mu})$ | The idempotents of the product; the pure states; on the cone |
+| $B-N=2\lvert\vec x'\rvert^{2}$ | The probability as the sum of squares against their difference |
+| $\tilde\rho=\frac12(e_0+i\vec r)$, $\lvert\vec r\rvert\le1$ | Unit-trace element; the Bloch ball |
+| $N=\frac14(1-\lvert\vec r\rvert^{2})$, $H=\frac14(1+\lvert\vec r\rvert^{2})$ | The cone as the purity boundary; the purity as the gap |
+| $\tilde\Pi_1(\hat\mu)=\frac12(e_0+i\hat\mu)$ | The idempotents of the product; the pure states; on the cone |
 | $B e_0$, $\mathrm{Vect}(\tilde P\tilde Q)$ | The symmetric and antisymmetric halves of the value |
 | $(L_{\tilde A})^{\dagger}=L_{\tilde A^{*}}$ | Self-adjoint for $\tilde A\in\mathbb{M}_+$, skew-adjoint for $\tilde A\in\mathbb{M}_-$ |
-| $\{i\hat{\boldsymbol\mu}\}\cup\{\pm e_0\}$ | The isometries of $H$ inside the informational sector |
+| $\{i\hat\mu\}\cup\{\pm e_0\}$ | The isometries of $H$ inside the informational sector |
 | $(p,q)$ | Signature as (number of $+$, number of $-$) diagonal entries |
 
 ## Further Reading

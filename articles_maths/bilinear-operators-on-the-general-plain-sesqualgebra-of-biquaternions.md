@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ be the biquaternion algebra with its Hermitian conjugation ${}^{*}$ and the positive definite form $\langle\tilde W,\tilde V\rangle_{*}=\mathrm{Sc}(\tilde{V}^{*}\tilde W)$. The **spinor module** is the minimal left ideal $S=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,\tilde W\}$, the unique simple left $\mathbb{B}$-module, on which the algebra acts by the left multiplication $L_{\tilde B}(s)=\tilde B\,s$; in the matrix model $\mathsf{M}_2(\mathbb{B})=M_2(\mathbb{C})$ and $S=\mathbb{C}^2$, and the module form is $\langle t,s\rangle_{*}=\mathrm{Sc}(s^{\dagger}t)$ with Gram matrix $\frac12 I_2$ in the basis $\{\tilde\Pi_1,\tilde W\}$ and $s^{\dagger}t$ in the standard column basis (*Hermitian Modules over the Biquaternion Algebra with Hermitian Adjoint*, *Ideals and Peirce Decomposition of the General Plain Algebra*, *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions*).
+Let $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ be the biquaternion algebra with its Hermitian conjugation ${}^{*}$ and the positive definite form $\langle\tilde W,\tilde R\rangle_{*}=\mathrm{Sc}(\tilde{R}^{*}\tilde W)$. The **spinor module** is the minimal left ideal $S=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,\tilde W\}$, the unique simple left $\mathbb{B}$-module, on which the algebra acts by the left multiplication $L_{\tilde B}(s)=\tilde B\,s$; in the matrix model $\mathsf{M}_2(\mathbb{B})=M_2(\mathbb{C})$ and $S=\mathbb{C}^2$, and the module form is $\langle t,s\rangle_{*}=\mathrm{Sc}(s^{\dagger}t)$ with Gram matrix $\frac12 I_2$ in the basis $\{\tilde\Pi_1,\tilde W\}$ and $s^{\dagger}t$ in the standard column basis (*Hermitian Modules over the Biquaternion Algebra with Hermitian Adjoint*, *Ideals and Peirce Decomposition of the General Plain Algebra*, *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions*).
 
 A **bilinear operator** is the operator $s\mapsto b(s,\cdot)$ induced by a bilinear form $b$ on the spinor module. The general theory of these operators is *Bilinear Operators on a Hermitian Module with Hermitian Adjoint*: the form is **Clifford-equivariant** exactly when it satisfies the adjointness axiom of the module, the action of the algebra on the module is **complete** — the Fierz identity — so that the $2^n$ bilinear covariants $\langle\Gamma_A t,s\rangle_{*}$ span the space of forms, and the covariants are classified by the grade of the blade. This article is the biquaternion instance of that theory.
 
@@ -24,13 +24,13 @@ a form is alternating exactly when its operator is skew-adjoint, and the Hermiti
 
 *Proof.* The assignment $M\mapsto b_M$ is a $\mathbb{C}$-linear isomorphism of the $4$-dimensional algebra onto the space of forms, since $s^{\dagger}Mt$ determines $M$. Conjugating, $\overline{b_M(t,s)}=\overline{t^{\dagger}Ms}=s^{\dagger}M^{\dagger}t=b_{M^{\dagger}}(s,t)$, so $b_M$ is Hermitian exactly when $M^{\dagger}=M$. Under the identification $S^{*}\cong S$ by the module form, $T_b$ is the operator of the matrix $M^{\dagger}$ and its adjoint is $M$, so $(T_b)^{*}=T_{b^{*}}$; a form is Hermitian exactly when its operator is self-adjoint, and alternating exactly when the operator is skew-adjoint.
 
-**Proposition (the equivariant form is the module form).** A form is **Clifford-equivariant**, $b(\tilde V\cdot s,t)=b(s,\tilde{V}^{*}\cdot t)$ for all $\tilde V\in\mathbb{B}$, exactly when $M$ commutes with $\mathbb{B}$:
+**Proposition (the equivariant form is the module form).** A form is **Clifford-equivariant**, $b(\tilde R\cdot s,t)=b(s,\tilde{R}^{*}\cdot t)$ for all $\tilde R\in\mathbb{B}$, exactly when $M$ commutes with $\mathbb{B}$:
 
 $$
 b \text{ equivariant} \iff \mathsf{M}_2(M)\in \mathbb{B}'=\mathbb{C}\cdot\mathrm{id} .
 $$
 
-*Proof.* $\mathsf{M}_2(M)$ commutes with $\mathsf{M}_2(\tilde V)$ for all $\tilde V$ exactly when $M$ is a scalar matrix, and $(\tilde V s)^{\dagger}M t=s^{\dagger}\tilde{V}^{*}Mt=b(s,\tilde{V}^{*}t)$ for all $s,t$ is exactly that. The scalar is real for $b$ Hermitian.
+*Proof.* $\mathsf{M}_2(M)$ commutes with $\mathsf{M}_2(\tilde R)$ for all $\tilde R$ exactly when $M$ is a scalar matrix, and $(\tilde R s)^{\dagger}M t=s^{\dagger}\tilde{R}^{*}Mt=b(s,\tilde{R}^{*}t)$ for all $s,t$ is exactly that. The scalar is real for $b$ Hermitian.
 
 **Remark.** So on the biquaternion spinor module the equivariant Hermitian forms are the multiples of the module form, $\mathbb{R}_{>0}$ up to a phase, which is the Schur uniqueness of the module form read as a commutant statement: the commutant of a full matrix algebra acting on its simple module is the scalars. The general theory's warning about an isotropic spinor form has no instance here, for the reason recorded in *Hermitian Modules over the Biquaternion Algebra with Hermitian Adjoint*.
 
@@ -110,7 +110,7 @@ so the slice acts on the covariants by the conjugation $\Gamma\mapsto \tilde{C}^
 
 **The scalar covariant is the module form.** $b_0(s,t)=s^{\dagger}t$ is positive definite, Hermitian, and invariant under the whole slice. Its diagonal $b_0(s,s)=\lvert s\rvert^2$ is the norm of the spinor, the quantity normalised to one for a unit spinor; the classification theorem places it alone among the Hermitian covariants.
 
-**The triplet of a unit spinor.** For a spinor $s$ the three numbers $V_k=i\,b_k(s,s)=s^{\dagger}\sigma_k s$ are real, and for a normalised $s$ they form a unit vector $\tilde V=s^{\dagger}\boldsymbol{\sigma}s$; the trace-one element $\rho=\tfrac12\bigl(e_0+i\,V_k e_k\bigr)$ of $\mathbb{M}_+$ is Hermitian, and its three skew covariant coefficients are the coordinates of $\tilde V$. The three skew covariants of the spinor are the components of that vector.
+**The triplet of a unit spinor.** For a spinor $s$ the three numbers $V_k=i\,b_k(s,s)=s^{\dagger}\sigma_k s$ are real, and for a normalised $s$ they form a unit vector $\tilde R=s^{\dagger}\boldsymbol{\sigma}s$; the trace-one element $\rho=\tfrac12\bigl(e_0+i\,V_k e_k\bigr)$ of $\mathbb{M}_+$ is Hermitian, and its three skew covariant coefficients are the coordinates of $\tilde R$. The three skew covariants of the spinor are the components of that vector.
 
 **The vanishing triplet.** $\rho=\frac12 e_0$ has all three skew coefficients zero: the only Hermitian form with vanishing triplet is the centre of $\mathbb{M}_+$. The trace-one slice of the cone and its geometry are *The Bloch Ball as the Trace-One Slice of the Future Light Cone*.
 

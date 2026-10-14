@@ -6,7 +6,7 @@ This article collects, in one place, the definitions of the classes of elements 
 
 The point of collecting them is that **every definition is relative to a product**, and this is easy to lose when each structure is read on its own. The words *zero divisor*, *idempotent*, *nilpotent*, *unit* each name an equation, and the equation names a product; an element that satisfies the equation of one product need not satisfy that of another. The definitions are therefore stated for a general product $\star$, and every statement that singles out a product names it.
 
-**Conventions.** The complex space is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with units $e_0=1,e_1,e_2,e_3$ and central imaginary $i$, and an element is $\tilde P=P_0e_0+\mathbf P$ with $\mathbf P=\sum_{k=1}^{3}P_ke_k$, $P_\mu\in\mathbb{C}$. The natural conjugation is ${}^{\natural}$, the star is ${}^{*}$, and the four general products are
+**Conventions.** The complex space is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with units $e_0=1,e_1,e_2,e_3$ and central imaginary $i$, and an element is $\tilde P=P_0e_0+\vec P$ with $\vec P=\sum_{k=1}^{3}P_ke_k$, $P_\mu\in\mathbb{C}$. The natural conjugation is ${}^{\natural}$, the star is ${}^{*}$, and the four general products are
 $$
 \tilde P\tilde Q,\qquad \tilde P^{\natural}\tilde Q,\qquad \tilde P\tilde Q^{*},\qquad \tilde P^{\natural}\tilde Q^{*}.
 $$
@@ -120,7 +120,7 @@ The origin and, when the product is unital, the unit are idempotents of every pr
 
 **Definition (Peirce decomposition).** Let the product be associative with unit, and let $\tilde\Pi$ be an idempotent. The **Peirce decomposition** of the algebra relative to $\tilde\Pi$ is the splitting of the regular module into the four pieces indexed by the pair $(\tilde\Pi,1-\tilde\Pi)$; its two algebraic norm pieces are the **corner algebras** $\tilde\Pi\star\mathbb{B}\star\tilde\Pi$ and $(1-\tilde\Pi)\star\mathbb{B}\star(1-\tilde\Pi)$.
 
-The idempotent is the root of $+1$ in the scaled sense of §6, and the idempotent sets of the four general products differ: the plain product has the family $\tfrac12(e_0+\tilde\Xi i)$ over the roots $\tilde\Xi$ of $-1$, the natural product has the trivial idempotents alone, the plain sesquilinear product has the Hermitian idempotents, and the quaternionic sesquilinear product has the family $-\tfrac12e_0+\mu$. The table is in *Idempotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Four Sets*; the classification for the plain product is *Idempotents of the General Plain Algebra*, the general theory is *Unital Algebras*, and the Peirce decomposition of the biquaternion algebra is *Ideals and Peirce Decomposition of the General Plain Algebra*.
+The idempotent is the root of $+1$ in the scaled sense of §6, and the idempotent sets of the four general products differ: the plain product has the family $\tfrac12(e_0+\tilde\Xi i)$ over the roots $\tilde\Xi$ of $-1$, the natural product has the trivial idempotents alone, the plain sesquilinear product has the Hermitian idempotents, and the quaternionic sesquilinear product has the family $-\tfrac12e_0+\vec n$. The table is in *Idempotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Four Sets*; the classification for the plain product is *Idempotents of the General Plain Algebra*, the general theory is *Unital Algebras*, and the Peirce decomposition of the biquaternion algebra is *Ideals and Peirce Decomposition of the General Plain Algebra*.
 
 ---
 
@@ -138,7 +138,7 @@ The square-zero sets of the four general products differ, and the difference is 
 
 | product | square-zero elements |
 |---|---|
-| $\tilde P\tilde Q$ | the pure isotropic cone $\{P_0=0,\ (\mathbf P,\mathbf P)=0\}$ |
+| $\tilde P\tilde Q$ | the pure isotropic cone $\{P_0=0,\ (\vec P,\vec P)=0\}$ |
 | $\tilde P^{\natural}\tilde Q$ | the whole zero-divisor cone $\mathcal{C}$ |
 | $\tilde P\tilde Q^{*}$ | the origin alone |
 | $\tilde P^{\natural}\tilde Q^{*}$ | the solutions of $\overline{\tilde P}\tilde P=0$ |
@@ -209,7 +209,7 @@ The four general products are four definitions to a class, and the table says wh
 |---|---|---|---|---|---|
 | unit | $e_0$ two-sided | left only | right only | none | differ |
 | zero divisor | $\mathcal{C}\setminus\{0\}$ | same | same | same | **coincide** |
-| idempotent | $\tfrac12(e_0+\tilde\Xi i)$ | the trivial pair | the Hermitian ones | $-\tfrac12e_0+\mu$ | differ |
+| idempotent | $\tfrac12(e_0+\tilde\Xi i)$ | the trivial pair | the Hermitian ones | $-\tfrac12e_0+\vec n$ | differ |
 | square-zero | the pure cone | the whole cone | $\{0\}$ | $\{\overline{\tilde P}\tilde P=0\}$ | differ |
 | annihilator of a fixed zero divisor | one plane | another | another | another | differ |
 | invertibility | $C\neq0$ | no two-sided notion | no two-sided notion | no two-sided notion | — |

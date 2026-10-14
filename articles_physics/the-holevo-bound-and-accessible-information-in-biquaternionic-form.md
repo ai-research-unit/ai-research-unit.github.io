@@ -33,24 +33,24 @@ An **ensemble** is a finite family of states with weights:
 $$
 \mathcal{E} = \bigl\{p_x,\ \tilde{\rho}_x\bigr\}_{x\in\mathcal{X}},
 \qquad p_x\geq0, \quad \sum_x p_x = 1, \qquad
-\tilde{\rho}_x = \tfrac{1}{2}\bigl(e_0 + i\mathbf{r}_x\bigr), \quad |\mathbf{r}_x|\leq1 .
+\tilde{\rho}_x = \tfrac{1}{2}\bigl(e_0 + i\vec r_x\bigr), \quad |\vec r_x|\leq1 .
 $$
 
 The **average state** is the convex combination
 
 $$
-\tilde{\rho}^{\natural} = \sum_x p_x\,\tilde{\rho}_x = \tfrac{1}{2}\bigl(e_0 + i\bar{\mathbf{r}}\bigr),
-\qquad \bar{\mathbf{r}} = \sum_x p_x\,\mathbf{r}_x ,
+\tilde{\rho}^{\natural} = \sum_x p_x\,\tilde{\rho}_x = \tfrac{1}{2}\bigl(e_0 + i\bar{\vec r}\bigr),
+\qquad \bar{\vec r} = \sum_x p_x\,\vec r_x ,
 $$
 
-which is again a state, since convexity preserves positivity and trace. The biquaternion norm of the average state is $\tfrac14(1-|\bar{\mathbf{r}}|^2)e_0$, a function of the mean Bloch vector. Its entropy is, for a qubit,
+which is again a state, since convexity preserves positivity and trace. The biquaternion norm of the average state is $\tfrac14(1-|\bar{\vec r}|^2)e_0$, a function of the mean Bloch vector. Its entropy is, for a qubit,
 
 $$
-S(\tilde{\rho}^{\natural}) = h\!\left(\frac{1+|\bar{\mathbf{r}}|}{2}\right),
+S(\tilde{\rho}^{\natural}) = h\!\left(\frac{1+|\bar{\vec r}|}{2}\right),
 \qquad h(p) = -p\log p-(1-p)\log(1-p),
 $$
 
-as follows from the spectrum $\tfrac12(1\pm|\bar{\mathbf{r}}|)$; the entropy is read from the biquaternion norm of the average state and from the biquaternion norms of the individual states, $S(\tilde{\rho}_x) = h\!\left(\tfrac{1+|\mathbf{r}_x|}{2}\right)$.
+as follows from the spectrum $\tfrac12(1\pm|\bar{\vec r}|)$; the entropy is read from the biquaternion norm of the average state and from the biquaternion norms of the individual states, $S(\tilde{\rho}_x) = h\!\left(\tfrac{1+|\vec r_x|}{2}\right)$.
 
 ### Measurements as POVMs
 
@@ -95,7 +95,7 @@ $$
 which is the statement that mixing cannot decrease information. For a pure-state ensemble each $S(\tilde{\rho}_x) = 0$, and the Holevo quantity is simply the entropy of the average state,
 
 $$
-\chi = S(\tilde{\rho}^{\natural}) = h\!\left(\frac{1+|\bar{\mathbf{r}}|}{2}\right)
+\chi = S(\tilde{\rho}^{\natural}) = h\!\left(\frac{1+|\bar{\vec r}|}{2}\right)
 = H\bigl(N(\tilde{\rho}^{\natural})\bigr),
 $$
 
@@ -198,7 +198,7 @@ p_0 = p_1 = \tfrac12, \qquad
 \tilde{\rho}_0 = \tilde\Pi_1(\hat{e}_3), \qquad \tilde{\rho}_1 = \tilde\Pi_2(\hat{e}_3) .
 $$
 
-The average state is $\tilde{\rho}^{\natural} = \tfrac12 e_0$, with Bloch vector $\bar{\mathbf{r}} = 0$ and biquaternion norm $\tfrac14 e_0$, so
+The average state is $\tilde{\rho}^{\natural} = \tfrac12 e_0$, with Bloch vector $\bar{\vec r} = 0$ and biquaternion norm $\tfrac14 e_0$, so
 
 $$
 \chi = S(\tfrac12 e_0) = \log 2 .
@@ -304,14 +304,14 @@ its proof being the data-processing inequality applied to the measurement channe
 | $\mathbb{M}_+$ | Hermitian subspace (states and effects) |
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion units, $e_k^2 = -e_0$ |
 | $i$ | Central scalar imaginary |
-| $\tilde{\rho}_x = \tfrac12(e_0 + i\mathbf{r}_x)$ | Ensemble state |
+| $\tilde{\rho}_x = \tfrac12(e_0 + i\vec r_x)$ | Ensemble state |
 | $\tilde{\rho}^{\natural} = \sum_x p_x\tilde{\rho}_x$ | Average state |
 | $\tilde{E}_y \geq 0$, $\sum_y\tilde{E}_y = e_0$ | POVM (effects) |
 | $p(y|x) = \mathrm{Tr}(\tilde{\rho}_x\tilde{E}_y) = 2\,\mathrm{Sc}(\tilde{\rho}_x\tilde{E}_y)$ | Outcome probability (Born rule) |
 | $I_{\mathrm{acc}} = \max_{\{\tilde{E}_y\}} I(X:Y)$ | Accessible information |
 | $\chi = S(\tilde{\rho}^{\natural}) - \sum_x p_x S(\tilde{\rho}_x)$ | Holevo quantity |
-| $S(\tilde{\rho}) = h\!\left(\tfrac{1+|\mathbf{r}|}{2}\right)$ | Von Neumann entropy of a qubit state |
-| $N(\tilde{\rho}^{\natural}) = \tfrac14(1-|\bar{\mathbf{r}}|^2)e_0$ | Biquaternion norm of the average state |
+| $S(\tilde{\rho}) = h\!\left(\tfrac{1+|\vec r|}{2}\right)$ | Von Neumann entropy of a qubit state |
+| $N(\tilde{\rho}^{\natural}) = \tfrac14(1-|\bar{\vec r}|^2)e_0$ | Biquaternion norm of the average state |
 | $\chi = H(N(\tilde{\rho}^{\natural}))$ (pure ensemble) | Holevo quantity as a biquaternion-norm function |
 | $\rho_{XQ} = \sum_x p_x|x\rangle\langle x|\otimes\tilde{\rho}_x$ | Classical-quantum state, $I(X:Q)=\chi$ |
 | $I(X:Y)\leq\chi\leq\log2$ | Holevo bound and qubit ceiling |

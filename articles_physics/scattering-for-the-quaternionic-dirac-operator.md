@@ -8,7 +8,7 @@ This article states the three-dimensional scattering theory of the same operator
 
 The article is organised as follows. A first section fixes the three-dimensional setting and the two one-sided multiplications, which are the source's notational pivot. A second recalls how Maxwell's equations become a Dirac-type system in a medium and states the force-free case. A third gives the two factorisations of the Helmholtz equation, by a scalar shift and by a vector one. A fourth states the outgoing fundamental solution of the Helmholtz operator, the boundary representation it gives, and the radiation condition, including the zero-divisor caveat recorded beside that condition in *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation*. A fifth states the scattering problem and the integral equation equivalent to it. A sixth assembles the two inputs of the uniqueness theorem. A seventh gives Faddeev's Green's function. A closing section separates what the source establishes from what it transcribes, and lists the open questions.
 
-**Conventions.** We use those of *Conventions in the Biquaternion Universe*, *Introduction to the Biquaternion Universe* and *Biquaternion Regular Functions*. The algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_j^2=-e_0$, $e_je_k+e_ke_j=-2\delta_{jk}e_0$ for $j,k\ge1$, and central scalar imaginary $i$. The spatial Moisil–Teodoresco operator of *Biquaternion Regular Functions* is $D_3 = \sum_{k=1}^{3}e_k\partial_k$, with $D_3^2=-\Delta$ and $\Delta$ the Laplacian of $\mathbb{R}^3$; the corpus's other square root is $D = iD_3$, with $D^2=\Delta$, and the source writes its operator $D$ and means $D_3$, so **every occurrence of the source's $D$ is read here as $D_3$**. The Helmholtz fundamental solution is $\Theta_\alpha = -e^{i\alpha\lvert x\rvert}/(4\pi\lvert x\rvert)$ of *Biquaternion Regular Functions* and *Electromagnetism in Media — The Local Complex Structure at Work*, and the shifted family is $D_{3\pm\alpha} = D_3\pm\alpha$ of *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation*, with fundamental solutions $\mathcal K_{\pm\alpha} = -(D_3\mp\alpha)\Theta_\alpha$ there. The null quadric $N(\tilde Q)=0$, the zero divisors $\mathcal Z$ and the scalar/vector/paravector subspaces are those of *Zero Divisors of the General Plain Algebra*, *Zero Divisors as a Physical Locus in Biquaternionic Form* and *The Light Cone as the Biquaternion Zero-Divisor Cone*. The fields live on $\mathbb{R}^3$ unless a variable is named, $G$ is a domain there, and $\hat{\mathbf{x}} = \mathbf{x}/\lvert\mathbf{x}\rvert$. We write $S(q)$ for the scalar part of a biquaternion $q$ and $V(q)$ for its pure part, and the quaternion conjugation is $\bar q = S(q)-V(q)$; in the source the pure part is written $q$ again, and its display of $V(q)$ in the preliminaries omits the summands, an evident slip for $V(q)=\sum_{j=1}^3 q_je_j$.
+**Conventions.** We use those of *Conventions in the Biquaternion Universe*, *Introduction to the Biquaternion Universe* and *Biquaternion Regular Functions*. The algebra is $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_j^2=-e_0$, $e_je_k+e_ke_j=-2\delta_{jk}e_0$ for $j,k\ge1$, and central scalar imaginary $i$. The spatial Moisil–Teodoresco operator of *Biquaternion Regular Functions* is $D_3 = \sum_{k=1}^{3}e_k\partial_k$, with $D_3^2=-\Delta$ and $\Delta$ the Laplacian of $\mathbb{R}^3$; the corpus's other square root is $D = iD_3$, with $D^2=\Delta$, and the source writes its operator $D$ and means $D_3$, so **every occurrence of the source's $D$ is read here as $D_3$**. The Helmholtz fundamental solution is $\Theta_\alpha = -e^{i\alpha\lvert x\rvert}/(4\pi\lvert x\rvert)$ of *Biquaternion Regular Functions* and *Electromagnetism in Media — The Local Complex Structure at Work*, and the shifted family is $D_{3\pm\alpha} = D_3\pm\alpha$ of *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation*, with fundamental solutions $\mathcal K_{\pm\alpha} = -(D_3\mp\alpha)\Theta_\alpha$ there. The null quadric $N(\tilde Q)=0$, the zero divisors $\mathcal Z$ and the scalar/vector/paravector subspaces are those of *Zero Divisors of the General Plain Algebra*, *Zero Divisors as a Physical Locus in Biquaternionic Form* and *The Light Cone as the Biquaternion Zero-Divisor Cone*. The fields live on $\mathbb{R}^3$ unless a variable is named, $G$ is a domain there, and $\hat x = \vec x/\lvert\vec x\rvert$. We write $S(q)$ for the scalar part of a biquaternion $q$ and $V(q)$ for its pure part, and the quaternion conjugation is $\bar q = S(q)-V(q)$; in the source the pure part is written $q$ again, and its display of $V(q)$ in the preliminaries omits the summands, an evident slip for $V(q)=\sum_{j=1}^3 q_je_j$.
 
 The interpretation list for the parts the corpus already owns is short: *Biquaternion Regular Functions* for the shifted operator; *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation* for the radiation condition and its reductions; *Electromagnetism in Media — The Local Complex Structure at Work* for the Helmholtz kernel; *The Biquaternion D'Alembertian and Its Green's Functions* and *Exercise: The Retarded Potentials and the Green's Function* for the four-dimensional Green's functions, which this article does not use; and *Quaternion Harmonic Analysis* for the Radon and Fourier-slice side of tomography, which is the measured side rather than the scattering side. The mathematics sources for the ingredients the article transcribes are *Clifford Analysis* for monogenic functions, *Integrable Systems* and *Soliton Theory* for the one-dimensional inverse scattering transform, and *Coulomb Scattering and Rutherford's Formula in Biquaternionic Form* for the Born approximation as the corpus already has it.
 
@@ -46,13 +46,13 @@ Two weighted spaces are used. For $s\in\mathbb{R}$, $L^{2,s}$ is the set of scal
 
 The source's second and third sections are the corpus's electromagnetic material seen from the scattering side, and they are recalled here because the scattering problem is posed for Maxwell's equations and only then transported to the algebra.
 
-In an isotropic medium obeying Ohm's law, para- or diamagnetic, Maxwell's equations with the constitutive relations $\mathbf{D}=\epsilon\mathbf{E}$ and $\mathbf{B}=\mu\mathbf{H}$ read, in the time-harmonic regime $\mathbf{E}(x,t)=\mathrm{Re}(\mathbf{E}(x)e^{-i\omega t})$ and likewise for $\mathbf{H}$,
+In an isotropic medium obeying Ohm's law, para- or diamagnetic, Maxwell's equations with the constitutive relations $\vec D=\epsilon\vec E$ and $\vec B=\mu\vec H$ read, in the time-harmonic regime $\vec E(x,t)=\mathrm{Re}(\vec E(x)e^{-i\omega t})$ and likewise for $\vec H$,
 
 $$
-\operatorname{curl}\mathbf{E}=i\omega\mu\mathbf{H}, \qquad
-\operatorname{curl}\mathbf{H}=-i\omega\epsilon\mathbf{E}, \qquad
-\operatorname{div}(\epsilon\mathbf{E})=0, \qquad
-\operatorname{div}(\mu\mathbf{H})=0 .
+\operatorname{curl}\vec E=i\omega\mu\vec H, \qquad
+\operatorname{curl}\vec H=-i\omega\epsilon\vec E, \qquad
+\operatorname{div}(\epsilon\vec E)=0, \qquad
+\operatorname{div}(\mu\vec H)=0 .
 $$
 
 The refractive index of the medium is the complex number $N$ with
@@ -65,11 +65,11 @@ where $n$ is the usual refractive index and $\kappa$ the **extinction coefficien
 
 ### The quaternionic reformulation
 
-With the normalised fields $\mathbf{E}\mapsto\sqrt{\epsilon}\,\mathbf{E}$ and $\mathbf{H}\mapsto\sqrt{\mu}\,\mathbf{H}$, the time-harmonic system becomes the pair
+With the normalised fields $\vec E\mapsto\sqrt{\epsilon}\,\vec E$ and $\vec H\mapsto\sqrt{\mu}\,\vec H$, the time-harmonic system becomes the pair
 
 $$
-D_\epsilon \mathbf{E} = -ik\mathbf{H} - \frac{\rho}{\sqrt{\epsilon}}, \qquad
-D_\mu \mathbf{H} = ik\mathbf{E} + \sqrt{\mu}\,\mathbf{j}, \qquad
+D_\epsilon \vec E = -ik\vec H - \frac{\rho}{\sqrt{\epsilon}}, \qquad
+D_\mu \vec H = ik\vec E + \sqrt{\mu}\,\vec j, \qquad
 D_\alpha = D_3 + \operatorname{grad}\log\sqrt{\alpha},
 $$
 
@@ -80,13 +80,13 @@ with $k=\omega\sqrt{\epsilon\mu}=\omega/c$ the wavenumber of the medium. The ope
 The one place in the source where the operator appears with a variable coefficient and a physical name is the **force-free magnetic field** of magnetohydrodynamics, characterised by
 
 $$
-\operatorname{div}\mathbf{B}=0, \qquad \operatorname{curl}\mathbf{B}+\alpha(x)\mathbf{B}=0
+\operatorname{div}\vec B=0, \qquad \operatorname{curl}\vec B+\alpha(x)\vec B=0
 $$
 
-for a scalar-valued function $\alpha(x)$. Because the scalar part of $D_3\mathbf{B}$ is $-\operatorname{div}\mathbf{B}$ and its vector part is $\operatorname{curl}\mathbf{B}$, and because $\mathbf{B}\alpha(x)=\alpha(x)\mathbf{B}$ for scalar $\alpha$, the pair of equations is **equivalent to the single equation**
+for a scalar-valued function $\alpha(x)$. Because the scalar part of $D_3\vec B$ is $-\operatorname{div}\vec B$ and its vector part is $\operatorname{curl}\vec B$, and because $\vec B\alpha(x)=\alpha(x)\vec B$ for scalar $\alpha$, the pair of equations is **equivalent to the single equation**
 
 $$
-D_\alpha \mathbf{B} = 0, \qquad D_\alpha = D_3 + M_{\alpha(x)} .
+D_\alpha \vec B = 0, \qquad D_\alpha = D_3 + M_{\alpha(x)} .
 $$
 
 This is the source's Remark 5.1, attributing the relation to a paper of Kravchenko's on force-free fields. It is worth separating from the corpus's constant-parameter shift by more than a footnote: *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation* and *Subluminal and Superluminal Electromagnetic Waves and the Lepton Mass Spectrum* treat the **constant-coefficient** Beltrami case, where $\alpha$ commutes with $D_3$ and the second-order companion is the scalar $\Delta+\alpha^2$, whereas here $\alpha$ is a function and right multiplication by it does not commute with $\partial_j$, so the companion is not a scalar operator and the theory of *Biquaternion Regular Functions* does not apply to it unchanged. Three objects are written $D_\alpha$ in play — the constant-parameter shift of *Biquaternion Regular Functions*, the gradient-coefficient operator $D\pm M^{\vec\alpha_f}$ of the electromagnetic articles, and this variable scalar-coefficient one — and this article names the distinction once so that they are not read for one another.
@@ -137,11 +137,11 @@ $$
 It solves $\Delta u+k^2u=0$ away from $y$, and its far-field behaviour is
 
 $$
-F_k(x-y) = -\frac{e^{ik\lvert x\rvert}}{4\pi\lvert x\rvert}\,e^{-ik\hat{\mathbf{x}}\cdot y} + O(\lvert x\rvert^{-2}), \qquad
-D_3 F_k(x-y) = \bigl(D_3F_k\bigr)(x)\,e^{-ik\hat{\mathbf{x}}\cdot y} + O(\lvert x\rvert^{-2}),
+F_k(x-y) = -\frac{e^{ik\lvert x\rvert}}{4\pi\lvert x\rvert}\,e^{-ik\hat x\cdot y} + O(\lvert x\rvert^{-2}), \qquad
+D_3 F_k(x-y) = \bigl(D_3F_k\bigr)(x)\,e^{-ik\hat x\cdot y} + O(\lvert x\rvert^{-2}),
 $$
 
-uniformly in the direction $\hat{\mathbf{x}}$ and in $y$ in a bounded set. The source's Proposition 7.1 attributes this. The first two terms are what will make every integral of the theory an **outgoing** field, and the $O(\lvert x\rvert^{-2})$ is what will make it satisfy the radiation condition with room to spare.
+uniformly in the direction $\hat x$ and in $y$ in a bounded set. The source's Proposition 7.1 attributes this. The first two terms are what will make every integral of the theory an **outgoing** field, and the $O(\lvert x\rvert^{-2})$ is what will make it satisfy the radiation condition with room to spare.
 
 ### The Cauchy-type kernel of the shifted operator
 
@@ -149,13 +149,13 @@ Applying the shifted operator to the Helmholtz kernel gives the fundamental solu
 
 $$
 -D_{-k}F_k = C_k, \qquad
-C_k(x) = \left(k+\frac{\mathbf{x}}{\lvert\mathbf{x}\rvert^{2}}-ik\hat{\mathbf{x}}\right)\frac{e^{ik\lvert\mathbf{x}\rvert}}{4\pi}, \qquad k=\text{const},\ \operatorname{Im}(k)\ge0 ,
+C_k(x) = \left(k+\frac{\vec x}{\lvert\vec x\rvert^{2}}-ik\hat x\right)\frac{e^{ik\lvert\vec x\rvert}}{4\pi}, \qquad k=\text{const},\ \operatorname{Im}(k)\ge0 ,
 $$
 
 obtained, the source says, in the Kravchenko–Shapiro paper on the generalised Cauchy–Riemann system with a quaternionic parameter. Its bracket is exactly the bracket of the corpus's kernel in *Electromagnetism in Media — The Local Complex Structure at Work*,
 
 $$
-\mathcal K_{\pm\alpha} = -(D_3\mp\alpha)\Theta_\alpha = \left(\alpha+\frac{\mathbf{x}}{\lvert\mathbf{x}\rvert^{2}}-i\alpha\hat{\mathbf{x}}\right)\Theta_\alpha ,
+\mathcal K_{\pm\alpha} = -(D_3\mp\alpha)\Theta_\alpha = \left(\alpha+\frac{\vec x}{\lvert\vec x\rvert^{2}}-i\alpha\hat x\right)\Theta_\alpha ,
 $$
 
 read at $\alpha=k$: since $D_{-k}=D_3-k$ is the negative branch $D_{3,-k}$, the source's kernel is $C_k=-(D_3-k)\Theta_k=\mathcal K_{+k}$. The two branches share the second-order companion, for $(D_3+k)(D_3-k)=-\Delta-k^2$ either way, so the companion cannot tell them apart and each of $\mathcal K_{\pm k}$ is a fundamental solution of **either** branch up to the normalisation sign; the corpus's table pairs $\mathcal K_{+\alpha}$ with $D_{3+\alpha}$ and the source applies $C_k$ to $D_{-k}$, and the pairing is a matter of convention rather than of substance. What is not a matter of convention is the **sign** of the kernel: the source's section 2.1 writes the free-space Green's function of the Helmholtz operator as $+e^{ik\lvert r-r'\rvert}/(4\pi\lvert r-r'\rvert)$, whereas the proposition writes $F_k$ with the minus. The two are Green's functions of the two signs of the same operator, $-\Delta-k^2$ and $\Delta+k^2$, and the chapter uses them in its two halves without noting the switch. The corpus's convention, fixed by $\Theta_\alpha$, is the one with the minus, and it is the one used in this article.
@@ -181,7 +181,7 @@ with $k=\sqrt{k^2}$ chosen so that $\operatorname{Im}(k)\ge0$. The two statement
 The condition that selects the outgoing solution is the source's Proposition 7.3, attributed to Kravchenko–Castillo. If $f\in H^1_{\mathrm{loc}}(G^{c})$ lies in $\ker(D_3+k)(G^{c})$ and satisfies the radiation condition
 
 $$
-\Bigl(k-\frac{\mathbf{x}}{\lvert\mathbf{x}\rvert^{2}}+ik\hat{\mathbf{x}}\Bigr)f(x) = o(\lvert x\rvert^{-1}) \qquad (\lvert x\rvert\to\infty),
+\Bigl(k-\frac{\vec x}{\lvert\vec x\rvert^{2}}+ik\hat x\Bigr)f(x) = o(\lvert x\rvert^{-1}) \qquad (\lvert x\rvert\to\infty),
 $$
 
 then $f = -C_k[f]$ for every $x\in G^{c}$, the middle bracket being a two-line fraction in the printed text. If instead $f$ lies in the kernel of the shifted operator and satisfies
@@ -190,7 +190,7 @@ $$
 k\,f(x) + \frac{ix}{\lvert x\rvert}\,f(x)\,k = o(\lvert x\rvert^{-1}) \qquad (\lvert x\rvert\to\infty),
 $$
 
-with $k=\sqrt{k^{2}}$ and $\operatorname{Im}(k)\ge0$, then again $f=-C_k[f]$ on $G^{c}$; and **if $k$ is a zero divisor the source assumes in addition $f(x)=o(\lvert x\rvert^{-1})$**. The second form is the quaternionic radiation condition of the corpus's chiral-media article, the one whose scalar part is the Sommerfeld condition and whose vector part is the condition of Colton and Kress, and the extra hypothesis for the zero-divisor case is the caveat recorded beside it there: the element $1+i\hat{\mathbf{x}}$ is a non-pure zero divisor, so the condition may not be divided by it and implies no decay rate on its own. The source records the same fact in a remark of its own — for a scalar $k$ the term $\hat{\mathbf{x}}/\lvert x\rvert^{2}$ "can be written" away, "which apparently gives a faster decay", and this is "not true because $1+i\hat{\mathbf{x}}$ is a zero divisor" — and the reduction of the second condition to the first is exactly where the two $O(\lvert x\rvert^{-2})$ and $o(\lvert x\rvert^{-1})$ estimates of the previous sections have to be used with care.
+with $k=\sqrt{k^{2}}$ and $\operatorname{Im}(k)\ge0$, then again $f=-C_k[f]$ on $G^{c}$; and **if $k$ is a zero divisor the source assumes in addition $f(x)=o(\lvert x\rvert^{-1})$**. The second form is the quaternionic radiation condition of the corpus's chiral-media article, the one whose scalar part is the Sommerfeld condition and whose vector part is the condition of Colton and Kress, and the extra hypothesis for the zero-divisor case is the caveat recorded beside it there: the element $1+i\hat x$ is a non-pure zero divisor, so the condition may not be divided by it and implies no decay rate on its own. The source records the same fact in a remark of its own — for a scalar $k$ the term $\hat x/\lvert x\rvert^{2}$ "can be written" away, "which apparently gives a faster decay", and this is "not true because $1+i\hat x$ is a zero divisor" — and the reduction of the second condition to the first is exactly where the two $O(\lvert x\rvert^{-2})$ and $o(\lvert x\rvert^{-1})$ estimates of the previous sections have to be used with care.
 
 The source adds one restriction that the corpus should note, because it is easy to lose: its Proposition 7.5 says the representation behind the proposition is true for quaternion-valued functions, but that the paper restricts itself to **vector** fields, quaternion-valued functions with vanishing scalar part. A general quaternion-valued field, and in particular one with a non-zero scalar part, is only partly covered, and this is a real limitation of the chapter rather than a notational preference: the scalar part of the field is what the divergence condition constrains in the Maxwell interpretation.
 
@@ -389,7 +389,7 @@ This last estimate is printed with the *opposite* dependence on $\lambda+\lvert 
 
 1. **Is there a four-variable scattering theory for $\tilde\nabla$?** The corpus's *Biquaternion Regular Functions* works on $\mathbb{H}_{\mathbb{B}}$ in four variables and its integral theory is complete there. The source's scattering theory is three-dimensional and spatial, with the frequency entering through $k$; the four-dimensional analogue, in which the radiation condition would be a condition on the two cones of the null quadric, is not in the corpus and is not in this source. Is the spatial reduction a convenience of the optical setting, or is the four-variable problem genuinely different?
 
-2. **Does the corpus's zero-divisor algebra improve the isotropic case?** The source adds $u^s=o(1)$ when $k$ is isotropic. The corpus knows the geometry of the null cone: an isotropic $k$ has vanishing norm, $N(k)=0$, the elements $\tfrac12(1\pm i\hat{\mathbf{x}})$ are idempotents and zero divisors on it, and the cone carries the light-cone structure and the sphere of idempotents (*Zero Divisors of the General Plain Algebra*, *Idempotents of the General Plain Algebra*, *The Light Cone as the Biquaternion Zero-Divisor Cone*). Is there a radiation condition adapted to the degenerate direction, rather than a hypothesis that avoids it?
+2. **Does the corpus's zero-divisor algebra improve the isotropic case?** The source adds $u^s=o(1)$ when $k$ is isotropic. The corpus knows the geometry of the null cone: an isotropic $k$ has vanishing norm, $N(k)=0$, the elements $\tfrac12(1\pm i\hat x)$ are idempotents and zero divisors on it, and the cone carries the light-cone structure and the sphere of idempotents (*Zero Divisors of the General Plain Algebra*, *Idempotents of the General Plain Algebra*, *The Light Cone as the Biquaternion Zero-Divisor Cone*). Is there a radiation condition adapted to the degenerate direction, rather than a hypothesis that avoids it?
 
 3. **Can the one-dimensional transform and the three-dimensional equation be read in one language?** The corpus has the inverse scattering transform and the Lax pair in *Integrable Systems* and *Soliton Theory*, and the source mentions the AKNS method as a motivation for the Dirac-operator route. Both routes are built on a factorisation of a Dirac-type operator, in different dimensions; is the Faddeev Green's function the three-dimensional input of a Riemann–Hilbert problem whose one-dimensional shadow is the corpus's transform?
 
@@ -420,8 +420,8 @@ The **Lippmann–Schwinger equation** is equivalent to the differential problem 
 | $k$ | Wave vector, identified with $k_1e_1+k_2e_2+k_3e_3$; $k=\sqrt{k^2}$, $\operatorname{Im}(k)\ge0$; $k^2=-k\cdot k$ |
 | $\Theta_\alpha=-e^{i\alpha\lvert x\rvert}/(4\pi\lvert x\rvert)$ | Helmholtz fundamental solution; the source's $F_k$ at $\alpha=k$ |
 | $\mathcal K_{\pm\alpha}=-(D_3\mp\alpha)\Theta_\alpha$ | Fundamental solutions of the shifted family; the source's $C_k$ is $\mathcal K_{+k}$ |
-| $C_k=-D_{-k}F_k$ | Cauchy-type kernel of the Dirac-type operator, $(k+\hat{\mathbf{x}}/\lvert x\rvert-ik\hat{\mathbf{x}})e^{ik\lvert x\rvert}/(4\pi)$ |
-| $k f+\hat{\mathbf{x}}fk=o(\lvert x\rvert^{-1})$ | The quaternionic radiation condition; the factor $1+i\hat{\mathbf{x}}$ is a zero divisor |
+| $C_k=-D_{-k}F_k$ | Cauchy-type kernel of the Dirac-type operator, $(k+\hat x/\lvert x\rvert-ik\hat x)e^{ik\lvert x\rvert}/(4\pi)$ |
+| $k f+\hat xfk=o(\lvert x\rvert^{-1})$ | The quaternionic radiation condition; the factor $1+i\hat x$ is a zero divisor |
 | $m(x)$ | Quaternion-valued potential with compact support $G$ |
 | $u^i,u^s,u=u^i+u^s$ | Incident, scattered and total field |
 | (8.1)–(8.4) | The scattering problem: homogeneous incident field, inhomogeneous total field, outgoing scattered field |
@@ -444,4 +444,4 @@ The **Lippmann–Schwinger equation** is equivalent to the differential problem 
 - A. McIntosh and M. Mitrea, "Clifford algebras and Maxwell's equations in Lipschitz domains", *Mathematical Methods in the Applied Sciences* **22** (1999) 1599–1629, for the Dirac-operator form of Maxwell's equations on Lipschitz domains.
 - C. Müller, "On the behavior of solutions of the differential equation $\Delta u=F(x,u)$ in a neighborhood of a point", *Communications on Pure and Applied Mathematics* **7** (1954) 505–515, for the unique continuation principle.
 - A. F. Fercher, "Optical coherence tomography", *Journal of Biomedical Optics* **1** (1996) 153–173; A. F. Fercher, W. Drexler, C. K. Hitzenberger and T. Lasser, "Optical coherence tomography — principles and applications", *Reports on Progress in Physics* **66** (2003) 239–303, for the tomographic motivation of the chapter.
-- Companion articles: *Biquaternion Regular Functions* (the shift $D_\alpha$ and its integral theory); *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation* (the radiation condition, the two reductions and the zero-divisor caveat); *Electromagnetism in Media — The Local Complex Structure at Work* (the Helmholtz and shifted kernels); *Zero Divisors of the General Plain Algebra*, *Zero Divisors as a Physical Locus in Biquaternionic Form*, *The Light Cone as the Biquaternion Zero-Divisor Cone* and *Idempotents of the General Plain Algebra* (the algebra of the cone, the non-pure zero divisor $1+i\hat{\mathbf{x}}$ and its idempotents); *The Biquaternion D'Alembertian and Its Green's Functions* and *Exercise: The Retarded Potentials and the Green's Function* (the four-dimensional Green's functions, not used here); *Quaternion Harmonic Analysis* (the Radon transform and the Fourier slice theorem, the measured side of tomography); *Coulomb Scattering and Rutherford's Formula in Biquaternionic Form* (the Born approximation as the corpus has it); *Integrable Systems* and *Soliton Theory* (the one-dimensional inverse scattering transform and the Lax–AKNS route); *Clifford Analysis* (monogenic functions and the shifted operator on the real Clifford side); *Conventions in the Biquaternion Universe*.
+- Companion articles: *Biquaternion Regular Functions* (the shift $D_\alpha$ and its integral theory); *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation* (the radiation condition, the two reductions and the zero-divisor caveat); *Electromagnetism in Media — The Local Complex Structure at Work* (the Helmholtz and shifted kernels); *Zero Divisors of the General Plain Algebra*, *Zero Divisors as a Physical Locus in Biquaternionic Form*, *The Light Cone as the Biquaternion Zero-Divisor Cone* and *Idempotents of the General Plain Algebra* (the algebra of the cone, the non-pure zero divisor $1+i\hat x$ and its idempotents); *The Biquaternion D'Alembertian and Its Green's Functions* and *Exercise: The Retarded Potentials and the Green's Function* (the four-dimensional Green's functions, not used here); *Quaternion Harmonic Analysis* (the Radon transform and the Fourier slice theorem, the measured side of tomography); *Coulomb Scattering and Rutherford's Formula in Biquaternionic Form* (the Born approximation as the corpus has it); *Integrable Systems* and *Soliton Theory* (the one-dimensional inverse scattering transform and the Lax–AKNS route); *Clifford Analysis* (monogenic functions and the shifted operator on the real Clifford side); *Conventions in the Biquaternion Universe*.

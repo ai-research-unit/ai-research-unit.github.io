@@ -14,27 +14,27 @@ The block is exact in the opposite sense as well. The Jordan law is weaker than 
 
 **Placement.** The article closes the *Specific Theory* section of the block, after *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*, whose element theory it reads as a consequence of the law, and after the Common Theory articles *Norm and Invertibility in the Symmetric Plain Algebra*, *Zero Divisors of the Symmetric Plain Algebra*, *Square Roots of One and the Idempotents of the Symmetric Plain Algebra*, *Square Roots of Zero and the Nilpotents of the Symmetric Plain Algebra* and *Square Roots of a General Element in the Symmetric Plain Algebra*. The trace form of the block is *The Trace Form and the Invariance of the Symmetric Plain Algebra*, its operators are *The Multiplication Operators of the Symmetric Plain Algebra*, and the plain product it symmetrises is *Introduction to the General Plain Algebra of Biquaternions*.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_1e_2=e_3$ and central scalar imaginary $i$. An element is $\tilde Q=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^{3}Q_ke_k$ and $Q_\mu\in\mathbb{C}$, and $(\mathbf{Q},\mathbf{Q})=\sum_kQ_k^2$. The plain product is juxtaposition $\tilde P\tilde Q$; the product of the block is $\bullet$, the symmetrisation above, and $\tilde X^{\bullet2}=\tilde X\bullet\tilde X$. The natural conjugation is $\tilde Q^{\natural}=Q_0e_0-\mathbf{Q}$, and the biquaternion norm is $N(\tilde Q)=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$. The **left multiplication** of the block is $L^{\bullet}_{\tilde X}:\tilde Y\mapsto\tilde X\bullet\tilde Y$, and $L_{\tilde X},R_{\tilde X}$ without a mark are the plain left and right multiplications. An **idempotent** is an element equal to its square, a **projector** an idempotent operator.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_1e_2=e_3$ and central scalar imaginary $i$. An element is $\tilde Q=Q_0e_0+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_ke_k$ and $Q_\mu\in\mathbb{C}$, and $(\vec Q,\vec Q)=\sum_kQ_k^2$. The plain product is juxtaposition $\tilde P\tilde Q$; the product of the block is $\bullet$, the symmetrisation above, and $\tilde X^{\bullet2}=\tilde X\bullet\tilde X$. The natural conjugation is $\tilde Q^{\natural}=Q_0e_0-\vec Q$, and the biquaternion norm is $N(\tilde Q)=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$. The **left multiplication** of the block is $L^{\bullet}_{\tilde X}:\tilde Y\mapsto\tilde X\bullet\tilde Y$, and $L_{\tilde X},R_{\tilde X}$ without a mark are the plain left and right multiplications. An **idempotent** is an element equal to its square, a **projector** an idempotent operator.
 
 ## The Product and Its Square
 
-**Proposition (the shape of the product).** For $\tilde P=P_0e_0+\mathbf{P}$ and $\tilde Q=Q_0e_0+\mathbf{Q}$,
+**Proposition (the shape of the product).** For $\tilde P=P_0e_0+\vec P$ and $\tilde Q=Q_0e_0+\vec Q$,
 
 $$
-\tilde P\bullet\tilde Q=\bigl[P_0Q_0-(\mathbf{P},\mathbf{Q})\bigr]e_0+P_0\mathbf{Q}+Q_0\mathbf{P}.
+\tilde P\bullet\tilde Q=\bigl[P_0Q_0-(\vec P,\vec Q)\bigr]e_0+P_0\vec Q+Q_0\vec P.
 $$
 
-*Proof.* The plain product is $\tilde P\tilde Q=[P_0Q_0-(\mathbf{P},\mathbf{Q})]e_0+P_0\mathbf{Q}+Q_0\mathbf{P}+\mathbf{P}\times\mathbf{Q}$, with $\mathbf{P}\times\mathbf{Q}$ the cross product of the vector parts; the reverse product carries $-\mathbf{P}\times\mathbf{Q}$ in its place, and the half-sum is the display.
+*Proof.* The plain product is $\tilde P\tilde Q=[P_0Q_0-(\vec P,\vec Q)]e_0+P_0\vec Q+Q_0\vec P+\vec P\times\vec Q$, with $\vec P\times\vec Q$ the cross product of the vector parts; the reverse product carries $-\vec P\times\vec Q$ in its place, and the half-sum is the display.
 
 The block is therefore **the plain product with the cross term dropped**, and the cross term is exactly the antisymmetric part of the plain product.
 
 **Proposition (square, commutativity, unit).** The block is commutative, unital with unit $e_0$, and
 
 $$
-\tilde Q\bullet\tilde Q=\tilde Q^2=\bigl[Q_0^2-(\mathbf{Q},\mathbf{Q})\bigr]e_0+2Q_0\mathbf{Q}.
+\tilde Q\bullet\tilde Q=\tilde Q^2=\bigl[Q_0^2-(\vec Q,\vec Q)\bigr]e_0+2Q_0\vec Q.
 $$
 
-*Proof.* Commutativity is read on the shape of the product, and $e_0\bullet\tilde Q=\tfrac12(e_0\tilde Q+\tilde Qe_0)=\tilde Q$. The cross product cancels on the diagonal, $\mathbf{Q}\times\mathbf{Q}=0$, so $\tilde Q\bullet\tilde Q=\tilde Q\tilde Q$, and the displayed form is the plain square.
+*Proof.* Commutativity is read on the shape of the product, and $e_0\bullet\tilde Q=\tfrac12(e_0\tilde Q+\tilde Qe_0)=\tilde Q$. The cross product cancels on the diagonal, $\vec Q\times\vec Q=0$, so $\tilde Q\bullet\tilde Q=\tilde Q\tilde Q$, and the displayed form is the plain square.
 
 **Corollary (the square of the block is the square of the algebra).** Because the antisymmetric part of the plain product is alternating, it vanishes on the diagonal and carries none of the square. **The square of the block and the square of the algebra are the same map**, so the idempotents, the nilpotents, the square roots and the spectrum of the block are those of the algebra, and the generic norm of §*The Degree-Two Structure* is the algebraic norm. The block and the algebra part company at the product and not at the square.
 
@@ -88,9 +88,9 @@ $$
 
 **Corollary (no projector from a non-trivial idempotent).** A non-trivial idempotent $\tilde\Pi$ satisfies $L^{\bullet}_{\tilde\Pi}{}^{2}\neq L^{\bullet}_{\tilde\Pi}$. The unit alone gives a projector, $L^{\bullet}_{e_0}=\mathrm{id}$, and the origin gives the zero operator.
 
-*Proof.* Write the idempotent as $\tilde\Pi=\tfrac12(e_0+\mathbf u)$ with $\mathbf u$ a pure root of $+1$, so $\mathbf u^2=e_0$ and the scalar coordinate of $\mathbf u$ vanishes; then $L^{\bullet}_{\tilde\Pi}=\tfrac12(\mathrm{id}+L^{\bullet}_{\mathbf u})$. If $L^{\bullet}_{\tilde\Pi}$ were a projector, squaring and comparing would give $(L^{\bullet}_{\mathbf u})^{2}=\mathrm{id}$. But for a pure $\mathbf u$ the square of its operator is $L^{\bullet}_{\mathbf u}{}^{2}\tilde Y=Y_0-(\mathbf u,\mathbf{W})\mathbf u$, which vanishes at every vector $\mathbf W$ of the two-dimensional complex subspace orthogonal to $\mathbf u$; such a $\mathbf W$ is nonzero, so $(L^{\bullet}_{\mathbf u})^{2}\neq\mathrm{id}$ and $L^{\bullet}_{\tilde\Pi}$ is not a projector.
+*Proof.* Write the idempotent as $\tilde\Pi=\tfrac12(e_0+\vec u)$ with $\vec u$ a pure root of $+1$, so $\vec u^2=e_0$ and the scalar coordinate of $\vec u$ vanishes; then $L^{\bullet}_{\tilde\Pi}=\tfrac12(\mathrm{id}+L^{\bullet}_{\vec u})$. If $L^{\bullet}_{\tilde\Pi}$ were a projector, squaring and comparing would give $(L^{\bullet}_{\vec u})^{2}=\mathrm{id}$. But for a pure $\vec u$ the square of its operator is $L^{\bullet}_{\vec u}{}^{2}\tilde Y=Y_0-(\vec u,\vec W)\vec u$, which vanishes at every vector $\vec W$ of the two-dimensional complex subspace orthogonal to $\vec u$; such a $\vec W$ is nonzero, so $(L^{\bullet}_{\vec u})^{2}\neq\mathrm{id}$ and $L^{\bullet}_{\tilde\Pi}$ is not a projector.
 
-**Proposition (a square-zero element gives an operator of index three).** For a pure isotropic $\tilde\Upsilon$, that is $Q_0=0$ and $(\mathbf{Q},\mathbf{Q})=0$, the operator $L^{\bullet}_{\tilde\Upsilon}$ satisfies $L^{\bullet}_{\tilde\Upsilon}{}^{2}\neq0$ and $L^{\bullet}_{\tilde\Upsilon}{}^{3}=0$, with image not contained in the kernel; the witness is $\tilde\Upsilon=e_1+ie_2$.
+**Proposition (a square-zero element gives an operator of index three).** For a pure isotropic $\tilde\Upsilon$, that is $Q_0=0$ and $(\vec Q,\vec Q)=0$, the operator $L^{\bullet}_{\tilde\Upsilon}$ satisfies $L^{\bullet}_{\tilde\Upsilon}{}^{2}\neq0$ and $L^{\bullet}_{\tilde\Upsilon}{}^{3}=0$, with image not contained in the kernel; the witness is $\tilde\Upsilon=e_1+ie_2$.
 
 *Proof.* *Square Roots of Zero and the Nilpotents of the Symmetric Plain Algebra*: the elements of square zero are exactly the pure isotropic vectors, and their left multiplication has the stated index, the image $\mathrm{span}\{e_0,\tilde\Upsilon\}$ not lying in the kernel.
 
@@ -101,7 +101,7 @@ So the block has neither of the two operator constructions of the parent: an ide
 **Proposition (the idempotents of the block).** The idempotents $\tilde\Pi\bullet\tilde\Pi=\tilde\Pi$ are the idempotents of the plain product: the origin, the unit $e_0$, and the elements
 
 $$
-\tilde\Pi=\tfrac12(e_0+\mathbf u),\qquad \mathbf u\ \text{pure},\ \mathbf u^2=e_0,
+\tilde\Pi=\tfrac12(e_0+\vec u),\qquad \vec u\ \text{pure},\ \vec u^2=e_0,
 $$
 
 They are read off the quadratic identity at integral trace, $(T,N)=(0,0)$, $(2,1)$ and $(1,0)$, so that the non-trivial idempotents are exactly the isotropic ones.
@@ -140,12 +140,12 @@ $$
 T(\tilde Q)=2Q_0,\qquad N(\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^2 .
 $$
 
-*Proof.* On the square of §*The Product and Its Square* and $T(\tilde Q)\tilde Q=2Q_0^2e_0+2Q_0\mathbf{Q}$, the difference is $\bigl(Q_0^2-(\mathbf{Q},\mathbf{Q})-2Q_0^2+N(\tilde Q)\bigr)e_0$, and the coefficient vanishes because $N(\tilde Q)=Q_0^2+(\mathbf{Q},\mathbf{Q})$.
+*Proof.* On the square of §*The Product and Its Square* and $T(\tilde Q)\tilde Q=2Q_0^2e_0+2Q_0\vec Q$, the difference is $\bigl(Q_0^2-(\vec Q,\vec Q)-2Q_0^2+N(\tilde Q)\bigr)e_0$, and the coefficient vanishes because $N(\tilde Q)=Q_0^2+(\vec Q,\vec Q)$.
 
 The functional $T$ is the **generic trace** of the block and $N$ its **generic norm**; the identity is the generic minimal polynomial, **of degree two**, so the block is a Jordan algebra of degree two. The discriminant is
 
 $$
-T(\tilde Q)^2-4N(\tilde Q)=-4(\mathbf{Q},\mathbf{Q}),
+T(\tilde Q)^2-4N(\tilde Q)=-4(\vec Q,\vec Q),
 $$
 
 which vanishes exactly on the isotropic cone of the vector part; there the two generic roots coincide, and the element $e_1+ie_2$ is the witness with a nonzero vector part.
@@ -209,18 +209,18 @@ Two fine points, kept because they are about the law and not about the list. The
 
 ## Summary
 
-The symmetric plain product $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ is the plain product with the cross term dropped, $\tilde P\bullet\tilde Q=[P_0Q_0-(\mathbf{P},\mathbf{Q})]e_0+P_0\mathbf{Q}+Q_0\mathbf{P}$, commutative and unital, with the plain square, $\tilde Q^{\bullet2}=[Q_0^2-(\mathbf{Q},\mathbf{Q})]e_0+2Q_0\mathbf{Q}$. Its multiplication operator is the symmetric half $L^{\bullet}_{\tilde A}=\tfrac12(L_{\tilde A}+R_{\tilde A})$ of the two plain multiplications, and it satisfies the operator identity $L^{\bullet}_{\tilde X}L^{\bullet}_{\tilde X^{\bullet2}}=L^{\bullet}_{\tilde X^{\bullet2}}L^{\bullet}_{\tilde X}$, equivalent to the Jordan identity. The block fails left alternativity at $e_1,e_2$, and therefore yields no projector from a non-trivial idempotent and no flag from a square-zero element, whose operator has index three instead. Its idempotents are $0$, $e_0$ and the isotropic $\tfrac12(e_0+\mathbf u)$ with $\mathbf u$ a pure root of $+1$; at a non-trivial idempotent the operator obeys the cubic Peirce identity with eigenvalues $0,\tfrac12,1$ and the space splits as $\mathbb{C}\tilde\Pi\oplus\mathbb{B}_{1/2}\oplus\mathbb{C}(e_0-\tilde\Pi)$ with dimensions $1,2,1$. The block is of degree two: every element satisfies $\tilde Q^{\bullet2}-T(\tilde Q)\tilde Q+N(\tilde Q)e_0=0$ with $T=2Q_0$ and $N=\sum_\mu Q_\mu^2$, its inverse is $\tilde Q^{\natural}/N(\tilde Q)$, its norm obeys $N(U_{\tilde P}\tilde Q)=N(\tilde P)^2N(\tilde Q)$ though it is not multiplicative, and the isotropic cone makes it a non-division Jordan algebra with pure isotropic elements of square zero proper inside the cone. The block inherits none of the parent's projector calculus, associative Peirce calculus or group of units, and its zero-divisor set is larger than the non-invertible elements. Of the twelve structures it is the only Jordan product, the four general and four antisymmetric products failing by non-commutativity, the symmetric quaternionic product by the identity, and the two symmetric sesquilinear products by both clauses read in the conjugate sense.
+The symmetric plain product $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ is the plain product with the cross term dropped, $\tilde P\bullet\tilde Q=[P_0Q_0-(\vec P,\vec Q)]e_0+P_0\vec Q+Q_0\vec P$, commutative and unital, with the plain square, $\tilde Q^{\bullet2}=[Q_0^2-(\vec Q,\vec Q)]e_0+2Q_0\vec Q$. Its multiplication operator is the symmetric half $L^{\bullet}_{\tilde A}=\tfrac12(L_{\tilde A}+R_{\tilde A})$ of the two plain multiplications, and it satisfies the operator identity $L^{\bullet}_{\tilde X}L^{\bullet}_{\tilde X^{\bullet2}}=L^{\bullet}_{\tilde X^{\bullet2}}L^{\bullet}_{\tilde X}$, equivalent to the Jordan identity. The block fails left alternativity at $e_1,e_2$, and therefore yields no projector from a non-trivial idempotent and no flag from a square-zero element, whose operator has index three instead. Its idempotents are $0$, $e_0$ and the isotropic $\tfrac12(e_0+\vec u)$ with $\vec u$ a pure root of $+1$; at a non-trivial idempotent the operator obeys the cubic Peirce identity with eigenvalues $0,\tfrac12,1$ and the space splits as $\mathbb{C}\tilde\Pi\oplus\mathbb{B}_{1/2}\oplus\mathbb{C}(e_0-\tilde\Pi)$ with dimensions $1,2,1$. The block is of degree two: every element satisfies $\tilde Q^{\bullet2}-T(\tilde Q)\tilde Q+N(\tilde Q)e_0=0$ with $T=2Q_0$ and $N=\sum_\mu Q_\mu^2$, its inverse is $\tilde Q^{\natural}/N(\tilde Q)$, its norm obeys $N(U_{\tilde P}\tilde Q)=N(\tilde P)^2N(\tilde Q)$ though it is not multiplicative, and the isotropic cone makes it a non-division Jordan algebra with pure isotropic elements of square zero proper inside the cone. The block inherits none of the parent's projector calculus, associative Peirce calculus or group of units, and its zero-divisor set is larger than the non-invertible elements. Of the twelve structures it is the only Jordan product, the four general and four antisymmetric products failing by non-commutativity, the symmetric quaternionic product by the identity, and the two symmetric sesquilinear products by both clauses read in the conjugate sense.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
 | $\bullet$ | the symmetric plain product, the block's multiplication |
-| $\tilde P\bullet\tilde Q=[P_0Q_0-(\mathbf{P},\mathbf{Q})]e_0+P_0\mathbf{Q}+Q_0\mathbf{P}$ | the shape of the product |
+| $\tilde P\bullet\tilde Q=[P_0Q_0-(\vec P,\vec Q)]e_0+P_0\vec Q+Q_0\vec P$ | the shape of the product |
 | $\tilde Q^{\bullet2}=\tilde Q^2$ | the square, the plain square |
 | $L^{\bullet}_{\tilde A}=\tfrac12(L_{\tilde A}+R_{\tilde A})$ | the multiplication operator of the block |
 | $L^{\bullet}_{\tilde X}L^{\bullet}_{\tilde X^{\bullet2}}=L^{\bullet}_{\tilde X^{\bullet2}}L^{\bullet}_{\tilde X}$ | the operator identity, equivalent to the Jordan identity |
-| $\tfrac12(e_0+\mathbf u)$, $\mathbf u^2=e_0$ pure | the non-trivial idempotents |
+| $\tfrac12(e_0+\vec u)$, $\vec u^2=e_0$ pure | the non-trivial idempotents |
 | $L^{\bullet}_{\tilde\Pi}(2L^{\bullet}_{\tilde\Pi}-\mathrm{id})(L^{\bullet}_{\tilde\Pi}-\mathrm{id})=0$ | the cubic Peirce identity, eigenvalues $0,\tfrac12,1$ |
 | $\mathbb{B}_1\oplus\mathbb{B}_{1/2}\oplus\mathbb{B}_0$ | the Jordan Peirce decomposition, dimensions $1,2,1$ |
 | $T(\tilde Q)=2Q_0$, $N(\tilde Q)=\sum_\mu Q_\mu^2$ | the generic trace and the generic norm |

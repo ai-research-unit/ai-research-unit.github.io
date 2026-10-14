@@ -32,17 +32,17 @@ The relation is not an identity, and the distinction is the parent's open point.
 For everything in this article the module transcription is the one that works, and we adopt it. The fields of the expansion are
 
 $$
-\hat{\psi}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf p}}}
-\sum_{r=1}^{2}\Big[\hat a_r(\mathbf p)\,u^{(r)}(\mathbf p)\,e^{-ip\cdot x}
-+\hat b_r^\dagger(\mathbf p)\,v^{(r)}(\mathbf p)\,e^{+ip\cdot x}\Big],
+\hat{\psi}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}
+\sum_{r=1}^{2}\Big[\hat a_r(\vec p)\,u^{(r)}(\vec p)\,e^{-ip\cdot x}
++\hat b_r^\dagger(\vec p)\,v^{(r)}(\vec p)\,e^{+ip\cdot x}\Big],
 $$
 
-with $E_{\mathbf p}=+\sqrt{\mathbf p^2+m^2}$, the parent's spinors $u^{(r)},v^{(r)}$, and the mode anticommutators
+with $E_{\vec p}=+\sqrt{\vec p^2+m^2}$, the parent's spinors $u^{(r)},v^{(r)}$, and the mode anticommutators
 
 $$
-\{\hat a_r(\mathbf p),\hat a_s^\dagger(\mathbf q)\}
-=\{\hat b_r(\mathbf p),\hat b_s^\dagger(\mathbf q)\}
-=(2\pi)^3\delta_{rs}\delta^{(3)}(\mathbf p-\mathbf q),
+\{\hat a_r(\vec p),\hat a_s^\dagger(\vec q)\}
+=\{\hat b_r(\vec p),\hat b_s^\dagger(\vec q)\}
+=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec q),
 $$
 
 all others vanishing. The adjoint field is the Hermitian conjugate followed by the Clifford element $\gamma^0$,
@@ -50,9 +50,9 @@ all others vanishing. The adjoint field is the Hermitian conjugate followed by t
 $$
 \bar{\hat{\psi}}(x)=\hat{\psi}^\dagger(x)\gamma^0,
 \qquad
-\hat{\psi}^\dagger(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf p}}}
-\sum_{r}\Big[\hat a_r^\dagger(\mathbf p)\,\bar u^{(r)}(\mathbf p)\,\gamma^0\,e^{+ip\cdot x}
-+\hat b_r(\mathbf p)\,\bar v^{(r)}(\mathbf p)\,\gamma^0\,e^{-ip\cdot x}\Big],
+\hat{\psi}^\dagger(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}
+\sum_{r}\Big[\hat a_r^\dagger(\vec p)\,\bar u^{(r)}(\vec p)\,\gamma^0\,e^{+ip\cdot x}
++\hat b_r(\vec p)\,\bar v^{(r)}(\vec p)\,\gamma^0\,e^{-ip\cdot x}\Big],
 $$
 
 and it is $\hat{\psi}^\dagger$ that belongs to the module written in the dual; the factor $\gamma^0$ is the Clifford-odd element that makes $\bar{\hat\psi}\hat\psi$ a Lorentz scalar. This is the same odd/even distinction that the minimal-coupling companion records: the Dirac adjoint, and therefore the current, is not an inner operation of $\mathbb{B}$.
@@ -152,7 +152,7 @@ $$
 \hat H=\int d^3x\,:\!\hat\psi^\dagger\big(-i\gamma^0\boldsymbol\gamma\cdot\nabla+m\gamma^0\big)\hat\psi\!:
 =\int d^3x\,:\!\bar{\hat\psi}\big(-i\boldsymbol\gamma\cdot\nabla+m\big)\hat\psi\!:,
 \qquad
-\hat{\mathbf P}=\int d^3x\,:\!\hat\psi^\dagger(-i\nabla)\hat\psi\!:,
+\hat P=\int d^3x\,:\!\hat\psi^\dagger(-i\nabla)\hat\psi\!:,
 \qquad
 \hat Q=\int d^3x\,:\!\hat\psi^\dagger\hat\psi\!: .
 $$
@@ -160,25 +160,25 @@ $$
 Substituting the mode expansion and normal ordering gives the parent's results,
 
 $$
-\hat H=\sum_r\int\!\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p}\big(\hat a_r^\dagger\hat a_r+\hat b_r^\dagger\hat b_r\big),
+\hat H=\sum_r\int\!\frac{d^3p}{(2\pi)^3}\,E_{\vec p}\big(\hat a_r^\dagger\hat a_r+\hat b_r^\dagger\hat b_r\big),
 \qquad
 \hat Q=\sum_r\int\!\frac{d^3p}{(2\pi)^3}\big(\hat a_r^\dagger\hat a_r-\hat b_r^\dagger\hat b_r\big),
 $$
 
-with $\hat{\mathbf P}=\sum_r\int\frac{d^3p}{(2\pi)^3}\,\mathbf p(\hat a_r^\dagger\hat a_r+\hat b_r^\dagger\hat b_r)$.
+with $\hat P=\sum_r\int\frac{d^3p}{(2\pi)^3}\,\vec p(\hat a_r^\dagger\hat a_r+\hat b_r^\dagger\hat b_r)$.
 
 The normal-ordering sign is fixed by the anticommutator, and it is worth displaying because it is the whole fermionic content of the energy. With $\{\hat b,\hat b^\dagger\}=1$ one has $\hat b\hat b^\dagger=e_0-\hat b^\dagger\hat b$, so the un-normal-ordered Hamiltonian
 
 $$
-\hat H_{\text{raw}}=\sum_r\int\!\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p}\big(\hat a^\dagger\hat a-\hat b\hat b^\dagger\big)
+\hat H_{\text{raw}}=\sum_r\int\!\frac{d^3p}{(2\pi)^3}\,E_{\vec p}\big(\hat a^\dagger\hat a-\hat b\hat b^\dagger\big)
 $$
 
 becomes, after the substitution,
 
 $$
-\hat H_{\text{raw}}=\sum_r\int\!\frac{d^3p}{(2\pi)^3}E_{\mathbf p}\big(\hat a^\dagger\hat a+\hat b^\dagger\hat b\big)+E_0,
+\hat H_{\text{raw}}=\sum_r\int\!\frac{d^3p}{(2\pi)^3}E_{\vec p}\big(\hat a^\dagger\hat a+\hat b^\dagger\hat b\big)+E_0,
 \qquad
-E_0=-2V\!\int\!\frac{d^3p}{(2\pi)^3}E_{\mathbf p},
+E_0=-2V\!\int\!\frac{d^3p}{(2\pi)^3}E_{\vec p},
 $$
 
 with $V$ the spatial volume and $E_0$ the negative, quartically divergent normal-ordering constant. The sign flip of the antiparticle term is what makes the energy bounded below: the raw expression has the antiparticle contribution with the opposite sign, and only the anticommutator turns it into a positive sum. On the two-mode truncation the identity
@@ -224,11 +224,11 @@ on account of the field equation.
 Taking
 
 $$
-\psi(x)=c_1u^{(1)}(\mathbf p_1)e^{-ip_1\cdot x}+c_2u^{(2)}(\mathbf p_1)e^{-ip_1\cdot x}
-+d_1v^{(1)}(\mathbf p_2)e^{+ip_2\cdot x},
+\psi(x)=c_1u^{(1)}(\vec p_1)e^{-ip_1\cdot x}+c_2u^{(2)}(\vec p_1)e^{-ip_1\cdot x}
++d_1v^{(1)}(\vec p_2)e^{+ip_2\cdot x},
 $$
 
-with $m=0.7$, $\mathbf p_1=(0.3,-0.9,1.1)$, $\mathbf p_2=(-0.5,0.2,0.45)$, and complex coefficients $c_1,c_2,d_1$, the four-divergence $\partial_\mu j^\mu$ of the bilinear was evaluated by central differences at a generic spacetime point. It vanishes to $1.1\times10^{-10}$ at step $h=10^{-5}$, which is the discretization error of the difference, and the same check on the full superposition of both frequency branches of both momenta gives $1.8\times10^{-10}$. A single plane wave would have tested only the mass-shell condition; the superposition tests the cancellation between the branches, which is the content of conservation.
+with $m=0.7$, $\vec p_1=(0.3,-0.9,1.1)$, $\vec p_2=(-0.5,0.2,0.45)$, and complex coefficients $c_1,c_2,d_1$, the four-divergence $\partial_\mu j^\mu$ of the bilinear was evaluated by central differences at a generic spacetime point. It vanishes to $1.1\times10^{-10}$ at step $h=10^{-5}$, which is the discretization error of the difference, and the same check on the full superposition of both frequency branches of both momenta gives $1.8\times10^{-10}$. A single plane wave would have tested only the mass-shell condition; the superposition tests the cancellation between the branches, which is the content of conservation.
 
 In biquaternion terms, $\hat J^\mu$ is the spinor-module representative of an operator-valued material-sector element $i\hat{\tilde\Psi}\hat{\tilde\Psi}^{*}$ only in a restricted sense: the minimal-coupling companion shows that the naive algebra-valued bilinear $i\tilde\Psi\tilde\Psi^{*}$ is gauge invariant and in $\mathbb{M}_-$ but is *not* conserved, and that the physical current needs the Clifford-odd $\gamma^0$. The quantized current inherits that: it is a module-level object, and its conservation is the module-level statement.
 
@@ -269,14 +269,14 @@ $$
 with $G_{\mathrm{S}}$ the symmetric kernel, which does *not* vanish at spacelike separation. At equal times, in the normalization of the spin–statistics companion,
 
 $$
-[\hat\psi(x),\hat\psi^\dagger(y)]=\gamma^0\big(m-i\boldsymbol\gamma\cdot\nabla_{\boldsymbol\Delta}\big)F(\boldsymbol\Delta),
+[\hat\psi(x),\hat\psi^\dagger(y)]=\gamma^0\big(m-i\boldsymbol\gamma\cdot\nabla_{\vec\Delta}\big)F(\vec\Delta),
 \qquad
-F(\boldsymbol\Delta)=\frac{m}{2\pi^2|\boldsymbol\Delta|}K_1\!\big(m|\boldsymbol\Delta|\big),
+F(\vec\Delta)=\frac{m}{2\pi^2|\vec\Delta|}K_1\!\big(m|\vec\Delta|\big),
 $$
 
-a modified Bessel function of the second kind, nonzero for every $\boldsymbol\Delta\ne0$. The quantized biquaternion Dirac field, like any spin-$\tfrac12$ field, therefore has a local anticommutator and a nonlocal commutator, and it is the anticommutator that is the $c$-number.
+a modified Bessel function of the second kind, nonzero for every $\vec\Delta\ne0$. The quantized biquaternion Dirac field, like any spin-$\tfrac12$ field, therefore has a local anticommutator and a nonlocal commutator, and it is the anticommutator that is the $c$-number.
 
-**The biquaternion form.** Writing the wave biquaternion $\tilde k=iE\,e_0+\mathbf p$, so that $\tilde k\tilde k^{\natural}=-p^2$, the momentum-space two-point function of the propagator companion is
+**The biquaternion form.** Writing the wave biquaternion $\tilde k=iE\,e_0+\vec p$, so that $\tilde k\tilde k^{\natural}=-p^2$, the momentum-space two-point function of the propagator companion is
 
 $$
 S_F(p)=\frac{i(\not p+m)}{p^2-m^2+i\epsilon}
@@ -320,7 +320,7 @@ $$
 
 so the observables are the even bilinears, the operator algebra is $\mathbb{Z}/2$-graded with the field in the odd part, and the grading agrees with the $2\pi$ rotation on the odd subspace. For one mode the entire structure is realized inside $\mathbb{B}$ through $\tilde a=\tilde S_+/\hbar$ and $(-1)^F=ie_3$; for the field it is external.
 
-The observables are the normal-ordered energy–momentum, charge, current and spin. The Hamiltonian is $\hat H=\sum_r\int\frac{d^3p}{(2\pi)^3}E_{\mathbf p}(\hat a_r^\dagger\hat a_r+\hat b_r^\dagger\hat b_r)$ after normal ordering, with the constant $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\mathbf p}$; the sign flip of the antiparticle term is the anticommutator, verified on the two-mode truncation. The four-momentum assembles into the operator-valued material-sector element $i\hat H e_0+\hat P_ke_k\in\mathcal{A}\otimes\mathbb{M}_-$ and the charge is central. The current is conserved as an operator equation, verified by finite differences on a superposition of two momenta and both frequency branches to $1.1\times10^{-10}$.
+The observables are the normal-ordered energy–momentum, charge, current and spin. The Hamiltonian is $\hat H=\sum_r\int\frac{d^3p}{(2\pi)^3}E_{\vec p}(\hat a_r^\dagger\hat a_r+\hat b_r^\dagger\hat b_r)$ after normal ordering, with the constant $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$; the sign flip of the antiparticle term is the anticommutator, verified on the two-mode truncation. The four-momentum assembles into the operator-valued material-sector element $i\hat H e_0+\hat P_ke_k\in\mathcal{A}\otimes\mathbb{M}_-$ and the charge is central. The current is conserved as an operator equation, verified by finite differences on a superposition of two momenta and both frequency branches to $1.1\times10^{-10}$.
 
 The covariant anticommutator is a $c$-number and vanishes for spacelike separation, $\{\hat\psi(x),\bar{\hat\psi}(y)\}=(i\not\partial_x+m)\Delta_{\mathrm{A}}(x-y)$; the commutator is not and does not. The momentum-space two-point function is the propagator companion's $S_F(p)=-i(\not p+m)/(\tilde k\tilde k^{\natural}+m^2-i\epsilon)$, whose biquaternion form is the deformed mass-shell condition.
 
@@ -340,20 +340,20 @@ The covariant anticommutator is a $c$-number and vanishes for spacelike separati
 | $\hat{\psi}$, $\bar{\hat\psi}=\hat\psi^\dagger\gamma^0$ | Module-valued quantized field and its adjoint |
 | $S=\mathbb{C}^2$ | Spinor module, the unique simple left $\mathbb{B}$-module |
 | $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$, $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$ | Matrix realization (algebra isomorphism onto $M_2(\mathbb{C})$); $S$ is its defining representation |
-| $u^{(r)}(\mathbf p),v^{(r)}(\mathbf p)$ | Plane-wave spinors (solutions article) |
-| $\hat a_r(\mathbf p),\hat b_r(\mathbf p)$ | Particle and antiparticle annihilation operators |
-| $\{\hat a_r(\mathbf p),\hat a_s^\dagger(\mathbf q)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\mathbf p-\mathbf q)$ | Mode anticommutator |
+| $u^{(r)}(\vec p),v^{(r)}(\vec p)$ | Plane-wave spinors (solutions article) |
+| $\hat a_r(\vec p),\hat b_r(\vec p)$ | Particle and antiparticle annihilation operators |
+| $\{\hat a_r(\vec p),\hat a_s^\dagger(\vec q)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec q)$ | Mode anticommutator |
 | $(-1)^F$ | Fermion parity; $(-1)^F\hat\psi(-1)^F=-\hat\psi$ |
-| $\hat H,\hat{\mathbf P},\hat Q,\hat J^\mu,\hat S^k$ | Operator-valued energy, momentum, charge, current, spin |
-| $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\mathbf p}$ | Normal-ordering constant |
+| $\hat H,\hat P,\hat Q,\hat J^\mu,\hat S^k$ | Operator-valued energy, momentum, charge, current, spin |
+| $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$ | Normal-ordering constant |
 | $\hat{\tilde P}=i\hat He_0+\hat P_ke_k\in\mathcal{A}\otimes\mathbb{M}_-$ | Operator four-momentum biquaternion |
 | $\tilde S_k=\tfrac{\hbar}{2}ie_k$, $\tilde S_\pm=\tfrac{\hbar}{2}(ie_1\mp e_2)$ | Spin generators (informational sector) |
 | $\tilde a=\tilde S_+/\hbar$, $\tilde a^\dagger=\tilde S_-/\hbar$, $(-1)^F=ie_3$ | Single-mode ladder and parity inside $\mathbb{B}$ |
 | $\{\hat\psi(x),\bar{\hat\psi}(y)\}=(i\not\partial_x+m)\Delta_{\mathrm{A}}(x-y)$ | Covariant anticommutator ($c$-number) |
 | $G_{\mathrm{S}}(x-y)$ | Symmetric ($c$-number part of the commutator's vacuum expectation) |
-| $F(\boldsymbol\Delta)=\frac{m}{2\pi^2|\boldsymbol\Delta|}K_1(m|\boldsymbol\Delta|)$ | Equal-time commutator kernel, nonzero at every spacelike separation |
+| $F(\vec\Delta)=\frac{m}{2\pi^2|\vec\Delta|}K_1(m|\vec\Delta|)$ | Equal-time commutator kernel, nonzero at every spacelike separation |
 | $S_F(p)=-\frac{i(\not p+m)}{\tilde k\tilde k^{\natural}+m^2-i\epsilon}$ | Feynman propagator amplitude |
-| $\tilde k=iE\,e_0+\mathbf p$, $\tilde k\tilde k^{\natural}=-p^2$ | Wave biquaternion and mass shell |
+| $\tilde k=iE\,e_0+\vec p$, $\tilde k\tilde k^{\natural}=-p^2$ | Wave biquaternion and mass shell |
 | $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace pairing |
 
 ## Further Reading

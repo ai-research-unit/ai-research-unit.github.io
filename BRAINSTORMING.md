@@ -57,10 +57,37 @@ where {|0⟩,|1⟩} is an orthonormal basis. The coefficients α,β are complex 
 
 
 
-DECOMPOSITION Polaire
+
+The axis of a rotation and the rotor built on it therefore share the letter, and the two are told apart by the mark alone: u~ is the rotor, u^ its axis.
 
 
-Polar, intepretations 
+
+
+
+spinors ?
+
+
+
+in GPS, interestingly, roots of 1 can be expresses as exponentials
+~
+ =e 
+iθ
+ w,θ∈R, w∈H real with ∣w∣=1,
+
+can we chack if we can also do that in GPA ?
+
+
+
+
+
+
+PROBLEM COLLISION IDEMPOTENTS 
+WHY NOT P ? others ?
+
+
+
+
+
 
 
 
@@ -7148,145 +7175,790 @@ and a measurement reads its value at a point.
 
 
 
+The trace part of the Hamiltonian does not affect the state. Since \(e^{-i h_0 t/\hbar}\) is a central complex scalar, and since the conjugation
+
+\[
+\tilde U(t)\tilde P\tilde U(t)^* = e^{-i h_0 t/\hbar} R \tilde P e^{+i h_0 t/\hbar} R^* = R\tilde P R^*
+\]
+
+(with \(R=\cos(|h|t/\hbar)e_0+\sin(|h|t/\hbar)\hat h\) a unit real quaternion), the phase \(e^{-i h_0 t/\hbar}\) cancels out. So only the traceless part \(h\) of the Hamiltonian affects the state evolution. This is the standard result: the trace part of the Hamiltonian contributes only to a global, unobservable phase.
 
 
-The trace part of the Hamiltonian does not affect the state. Since 
-e
-−
-i
-h
-0
-t
-/
-ℏ
-e 
-−ih 
-0
-​
- t/ℏ
-  is a central complex scalar, and since the conjugation
 
-U
-~
-(
-t
-)
-P
-~
-U
-~
-(
-t
-)
-∗
+
+
+
+
+
+
+
+
+Here is the text, in the two articles' own notation and nothing else.
+
+```
+THE RESULTS IN EXPONENTIAL FORM
+
+Notation. The space is B = C ⊗_R H, of basis e0 = 1, e1, e2, e3 with
+e1 e2 = e3, central imaginary i with i^2 = -1. An element is
+Ξ~ = Ξ0 e0 + Ξ1 e1 + Ξ2 e2 + Ξ3 e3 with complex coefficients, and
+Ξ~ = Ξ0 e0 + Ξ, Ξ = Ξ1 e1 + Ξ2 e2 + Ξ3 e3.
+
+The two products. The general plain algebra is the product P~ Q~; the
+general plain sesqualgebra is the block P~ ⋆ Q~ = P~ Q~*, with Q~* the
+Hermitian conjugate. Both articles classify the square roots of +1 in
+their product and read the idempotents through the halving map
+Ξ~ ↦ Π~ = (1/2)(e0 + Ξ~), of inverse Ξ~ = 2 Π~ - e0.
+
+General plain algebra. The roots of +1 are:
+  (1) the two central scalars ± e0;
+  (2) the purely imaginary roots ± i n, over the pure real quaternions
+      n with n^2 = -e0, a two-real-parameter family;
+  (3) the pure elements Ξ~ with Ξ1^2 + Ξ2^2 + Ξ3^2 = -1, a
+      four-real-parameter family.
+In exponential form only the first two families appear:
+  ± e0 = e^{i θ} e0 with θ = 0 or θ = π,     ± i n = e^{± i π/2} n.
+Together these are exactly the elements Ξ~ = e^{i θ} w over the real
+unit quaternions w. They are the Hermitian roots, and the family (3)
+has no expression of that shape.
+The idempotents are 0, e0, and Π~ = (1/2)(e0 + Ξ~); in exponential form
+Π~ = (1/2)(e0 + e^{i θ} w), again only at the Hermitian roots, so
+Π~ = 0 = (1/2)(e0 - e0), Π~ = e0 = (1/2)(e0 + e0), and
+Π~ = (1/2)(e0 + i n) over the pure real unit quaternions n.
+
+General plain sesqualgebra. The roots of +1 are the single family
+  Ξ~ = e^{i θ} w,  θ real,  w a real quaternion with w w^natural = 1,
+that is the family U(1) · S^3 = {e^{i θ} w} of real dimension four,
+which is the unitary group U(2). The exponential form is complete here:
+it is the whole root set, and no root of +1 is a zero divisor.
+The Hermitian roots of +1 are ± e0 and the roots Ξ~ = i n^ over the real
+unit vectors n^, a two-real-parameter family.
+The idempotents of the block are 0, e0, and Π~ = (1/2)(e0 + Ξ~) over the
+non-central Hermitian roots, that is
+  Π~ = (1/2)(e0 + i n^),  n^ a real vector with (n^, n^) = 1,
+a two-real-parameter family of rank-one Hermitian projections. Written
+in exponential form they are the same shape, Π~ = (1/2)(e0 + e^{i π/2} w)
+with w = n^, beside the trivial pair 0 = (1/2)(e0 - e0) and
+e0 = (1/2)(e0 + e0).
+
+Comparison. The expression e^{i θ} w is the same in the two articles,
+and it is complete in the sesqualgebra and partial in the algebra. It
+carries two factors, a central phase and a real rotor, and it produces
+the Hermitian roots of the two products and no others. The sesqualgebra
+keeps exactly that part; the algebra adds, beside it, the pure roots
+with Ξ1^2 + Ξ2^2 + Ξ3^2 = -1, whose two real halves are orthogonal and
+which the shape e^{i θ} w, whose two halves are parallel, cannot carry.
+```
+
+One check was recomputed: of 100 generic $e^{i\theta}w$ all 100 are sesqualgebra roots and none is an algebra root; of 100 non-trivial algebra roots all 100 are outside that shape.
+
+If you want an axis symbol for the purely imaginary family, tell me which letter, and I will use that one only.
+
+
+
+
+
+
+12 articles are about polar representations: 10 in maths and 2 in physics.
+
+Maths:
+
+The Polar Element Representation of Biquaternions — articles_maths/the-polar-element-representation-of-biquaternions.md
+Biquaternion Partial Polar Element Representations — articles_maths/biquaternion-partial-polar-element-representations.md
+Real Polar Element Representation — articles_maths/real-polar-element-representation.md
+Complex Polar Element Representation — articles_maths/complex-polar-element-representation.md
+Quaternion Polar Element Representation — articles_maths/quaternion-polar-element-representation.md
+Split-Complex Polar Element Representation — articles_maths/split-complex-polar-element-representation.md
+Split-Quaternion Polar Element Representation — articles_maths/split-quaternion-polar-element-representation.md
+Split-Biquaternion Polar Element Representation — articles_maths/split-biquaternion-polar-element-representation.md
+Dual-Numbers Polar Element Representation — articles_maths/dual-numbers-polar-element-representation.md
+Comparison of the Polar Element Representation — articles_maths/comparison-of-the-polar-element-representation.md
+
+Physics:
+
+The Polar Element Representation of Biquaternions — articles_physics/the-polar-element-representation-of-biquaternions.md
+The Polar Element Representation in Subspaces — articles_physics/the-polar-element-representation-in-subspaces.md
+The Twisted Spinor Operator Representation of Biquaternions
+
+
+
+
+
+
+
+
+There are two quadratic forms:
+
+Form                                      Vanishing set        Role
+N(Q) = Q0² + Q1² + Q2² + Q3²               zero-divisor cone    decides invertibility
+B(Q) = Q0² - Q1² - Q2² - Q3²               a different cone     does not decide invertibility
+
+So you could call:
+
+N-singular:  N(Q) = 0  —  the true zero-divisor cone,
+B-singular:  B(Q) = 0  —  the "other" cone.
+
+
+
+
+
+
+
+
+
+
+# Two Exponential Forms for the Square Roots of 1 in the Biquaternions
+
+## 1. Setting and notation
+
+Let
+\[
+\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H
+\]
+be the biquaternion algebra. Write an element as
+\[
+Q=Q_0e_0+Q_1e_1+Q_2e_2+Q_3e_3,\qquad Q_\mu\in\mathbb C,
+\]
+where \(e_0=1\) and \(e_1,e_2,e_3\) are the quaternion units. Let \(i\) be the central scalar imaginary, \(i^2=-1\).
+
+The biquaternion norm is
+\[
+N(Q)=\sum_{\mu=0}^3 Q_\mu^2.
+\]
+It is complex, central, and multiplicative:
+\[
+N(PQ)=N(P)N(Q).
+\]
+
+For \(N(Q)\neq 0\), the polar element representation is
+\[
+Q=r\,e^{i\alpha}\,B\,\hat q,
+\]
+where
+\[
+r>0,\qquad \alpha\in\left(-\frac{\pi}{2},\frac{\pi}{2}\right],
+\]
+\[
+B=\exp\!\left(i\frac{\chi}{2}n\right),\qquad \chi\ge 0,\quad n\in\mathbb R e_1+\mathbb R e_2+\mathbb R e_3,\quad n^2=-1,
+\]
+and
+\[
+\hat q=\exp(\theta u),\qquad \theta\in\mathbb R,\quad u\in\mathbb R e_1+\mathbb R e_2+\mathbb R e_3,\quad u^2=-1.
+\]
+Here \(B\) is the Hermitian positive unit-norm boost, and \(\hat q\) is the unit real quaternion rotor.
+
+---
+
+## 2. Formula A: the polar exponential form of the roots of 1
+
+Let \(Q^2=1\). Taking norms gives
+\[
+N(Q)^2=N(1)=1,
+\]
+so
+\[
+N(Q)=\pm 1.
+\]
+Hence \(r=|N(Q)|=1\), and the scale factor is trivial.
+
+There are two cases.
+
+### Case 1: \(N(Q)=1\)
+
+Then the polar form forces
+\[
+Q=\pm 1.
+\]
+Equivalently, these are the trivial polar forms
+\[
+Q=1\cdot e^{i0}\cdot 1\cdot(\pm 1).
+\]
+
+### Case 2: \(N(Q)=-1\)
+
+Then the principal square root of \(-1\) is \(i\), so
+\[
+e^{i\alpha}=e^{i\pi/2}=i.
+\]
+Therefore every non-real root of \(1\) has the polar exponential form
+\[
+\boxed{
+Q=\exp\!\left(i\frac{\pi}{2}\right)
+\exp\!\left(i\frac{\chi}{2}n\right)
+\exp(\theta u)
+}
+\]
+with
+\[
+n,u\in\mathbb R e_1+\mathbb R e_2+\mathbb R e_3,\qquad n^2=u^2=-1,
+\]
+\[
+\chi\ge 0,\qquad \theta\in\mathbb R,
+\]
+and the constraint
+\[
+\boxed{
+\left[
+\exp\!\left(i\frac{\chi}{2}n\right)
+\exp(\theta u)
+\right]^2=-1.
+}
+\]
+
+Thus Formula A says:
+
+\[
+\boxed{
+Q=\pm 1
+}
+\]
+or
+\[
+\boxed{
+Q=\exp\!\left(i\frac{\pi}{2}\right)
+\exp\!\left(i\frac{\chi}{2}n\right)
+\exp(\theta u),
+}
+\]
+with the constraint above.
+
+This is the four-factor polar decomposition specialized to the roots of \(1\):
+
+- scale: \(r=1\),
+- phase: \(e^{i\pi/2}=i\),
+- boost: \(\exp(i\chi n/2)\),
+- rotor: \(\exp(\theta u)\).
+
+---
+
+## 3. Formula B: the idempotent exponential form
+
+For any \(Q\) satisfying
+\[
+Q^2=1,
+\]
+define
+\[
+P_-=\frac{1-Q}{2}.
+\]
+Then
+\[
+P_-^2
 =
-e
-−
-i
-h
-0
-t
-/
-ℏ
-R
-P
-~
-e
-+
-i
-h
-0
-t
-/
-ℏ
-R
-∗
+\left(\frac{1-Q}{2}\right)^2
 =
-R
-P
-~
-R
-∗
-U
-~
- (t) 
-P
-~
-  
-U
-~
- (t) 
-∗
- =e 
-−ih 
-0
-​
- t/ℏ
- R 
-P
-~
- e 
-+ih 
-0
-​
- t/ℏ
- R 
-∗
- =R 
-P
-~
- R 
-∗
- 
+\frac{1-2Q+Q^2}{4}
+=
+\frac{1-2Q+1}{4}
+=
+\frac{1-Q}{2}
+=
+P_-.
+\]
+So \(P_-\) is an idempotent:
+\[
+P_-^2=P_-.
+\]
 
-(with 
-R
+Now compute
+\[
+\exp(i\pi P_-).
+\]
+Since \(P_-\) is idempotent,
+\[
+\exp(i\pi P_-)
 =
-cos
-⁡
-(
-∣
-h
-∣
-t
-/
-ℏ
-)
-e
-0
-+
-sin
-⁡
-(
-∣
-h
-∣
-t
-/
-ℏ
-)
-h
-^
-R=cos(∣h∣t/ℏ)e 
-0
-​
- +sin(∣h∣t/ℏ) 
-h
-^
-  a unit real quaternion), the phase 
-e
-−
-i
-h
-0
-t
-/
-ℏ
-e 
-−ih 
-0
-​
- t/ℏ
-  cancels out. So only the traceless part 
-h
-h of the Hamiltonian affects the state evolution. This is the standard result: the trace part of the Hamiltonian contributes only to a global, unobservable phase.
+1+(e^{i\pi}-1)P_-
+=
+1-2P_-.
+\]
+But
+\[
+1-2P_-
+=
+1-2\left(\frac{1-Q}{2}\right)
+=
+1-(1-Q)
+=
+Q.
+\]
+Therefore
+\[
+\boxed{
+Q=\exp(i\pi P_-),
+\qquad
+P_-=\frac{1-Q}{2}.
+}
+\]
+
+This is Formula B. It writes every square root of \(1\) as a single exponential of an idempotent.
+
+For the two trivial roots:
+
+- If \(Q=1\), then \(P_-=0\), and
+  \[
+  Q=\exp(0)=1.
+  \]
+
+- If \(Q=-1\), then \(P_-=1\), and
+  \[
+  Q=\exp(i\pi)=-1.
+  \]
+
+For a non-real root
+\[
+Q=iB\hat q,
+\]
+one has
+\[
+P_-=\frac{1-iB\hat q}{2},
+\]
+and therefore
+\[
+Q=\exp\!\left(i\pi\frac{1-iB\hat q}{2}\right).
+\]
+
+---
+
+## 4. Relation between Formula A and Formula B
+
+Formula A and Formula B describe the same set:
+\[
+\{Q\in\mathbb B:Q^2=1\}.
+\]
+But they are different exponential representations.
+
+### Formula A
+
+Formula A is the polar exponential form:
+\[
+Q=\exp\!\left(i\frac{\pi}{2}\right)
+\exp\!\left(i\frac{\chi}{2}n\right)
+\exp(\theta u).
+\]
+It is an ordered product of exponentials. It exhibits the polar factors: scale, phase, boost, rotor.
+
+### Formula B
+
+Formula B is the idempotent exponential form:
+\[
+Q=\exp(i\pi P_-),
+\qquad
+P_-=\frac{1-Q}{2}.
+\]
+It is a single exponential. It exhibits the spectral idempotent \(P_-\).
+
+The link between them is
+\[
+\boxed{
+P_-=\frac{1-Q}{2}.
+}
+\]
+For the non-real polar case \(Q=iB\hat q\),
+\[
+P_-=\frac{1-iB\hat q}{2}.
+\]
+Then
+\[
+Q=\exp(i\pi P_-)=iB\hat q.
+\]
+
+So Formula A and Formula B are not the same factorization. Formula A decomposes \(Q\) into polar factors. Formula B writes \(Q\) as one exponential of an idempotent. The exponent in Formula B is not the sum of the four exponents in Formula A.
+
+---
+
+## 5. Hermitian roots of 1
+
+Now impose the Hermitian condition
+\[
+Q^*=Q.
+\]
+
+In the polar form, this forces the boost to be trivial:
+\[
+B=1.
+\]
+Hence the Hermitian roots of \(1\) are
+\[
+\boxed{
+Q=\pm 1
+}
+\]
+or
+\[
+\boxed{
+Q=i u,
+\qquad
+u=x e_1+y e_2+z e_3,
+\quad x,y,z\in\mathbb R,
+\quad x^2+y^2+z^2=1.
+}
+\]
+
+Equivalently, in polar factors,
+\[
+B=1,\qquad \hat q=\pm 1
+\]
+for the roots \(\pm 1\), and
+\[
+B=1,\qquad \hat q=u,\qquad u^2=-1
+\]
+for the non-real Hermitian roots.
+
+In the idempotent form, for these roots
+\[
+P_-=\frac{1-Q}{2}
+\]
+is Hermitian:
+\[
+P_-^*=P_-.
+\]
+Thus the Hermitian roots are exactly the exponentials
+\[
+Q=\exp(i\pi P_-)
+\]
+with \(P_-^*=P_-\) and \(P_-^2=P_-\).
+
+For the non-real Hermitian case \(Q=iu\),
+\[
+P_-=\frac{1-iu}{2},
+\]
+and
+\[
+Q=\exp\!\left(i\pi\frac{1-iu}{2}\right).
+\]
+
+---
+
+## 6. Summary
+
+All square roots of \(1\) in the biquaternions are
+\[
+Q=\pm 1
+\]
+or
+\[
+Q=iB\hat q,
+\]
+where
+\[
+B=\exp\!\left(i\frac{\chi}{2}n\right),\qquad
+\hat q=\exp(\theta u),
+\]
+with \(n,u\) unit real pure quaternions and
+\[
+(B\hat q)^2=-1.
+\]
+
+In polar exponential form:
+\[
+\boxed{
+Q=\exp\!\left(i\frac{\pi}{2}\right)
+\exp\!\left(i\frac{\chi}{2}n\right)
+\exp(\theta u).
+}
+\]
+
+In idempotent exponential form:
+\[
+\boxed{
+Q=\exp(i\pi P_-),
+\qquad
+P_-=\frac{1-Q}{2},
+\qquad
+P_-^2=P_-.
+}
+\]
+
+The two forms describe the same roots. Formula A is the polar exponential factorization. Formula B is the spectral idempotent exponential. They are related by
+\[
+\boxed{
+P_-=\frac{1-Q}{2}.
+}
+\]
+The Hermitian roots are the special case \(B=1\), giving
+\[
+Q=\pm 1
+\]
+or
+\[
+Q=i u,\qquad u^2=-1,\quad u\in\mathbb R e_1+\mathbb R e_2+\mathbb R e_3.
+\]
+
+
+
+# Interderiving the Two Exponential Forms for the Square Roots of 1
+
+## 1. The two forms
+
+Let \(Q\in\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H\) satisfy
+\[
+Q^2=1.
+\]
+The two exponential forms are:
+
+### Form A — polar exponential form
+\[
+Q=\pm 1
+\]
+or
+\[
+Q=\exp\!\left(i\frac{\pi}{2}\right)
+\exp\!\left(i\frac{\chi}{2}n\right)
+\exp(\theta u),
+\]
+with
+\[
+n,u\in\mathbb R e_1+\mathbb R e_2+\mathbb R e_3,\qquad n^2=u^2=-1,
+\]
+\[
+\chi\ge 0,\qquad \theta\in\mathbb R,
+\]
+and
+\[
+\left[
+\exp\!\left(i\frac{\chi}{2}n\right)
+\exp(\theta u)
+\right]^2=-1.
+\]
+
+### Form B — idempotent exponential form
+\[
+Q=\exp(i\pi P_-),
+\qquad
+P_-=\frac{1-Q}{2}.
+\]
+Since \(Q^2=1\), the element \(P_-\) is an idempotent:
+\[
+P_-^2=P_-.
+\]
+Then
+\[
+\exp(i\pi P_-)=1+(e^{i\pi}-1)P_-=1-2P_-=Q.
+\]
+
+The two forms describe the same set of roots of \(1\). The question is how to pass explicitly from one to the other.
+
+---
+
+## 2. The bridge element
+
+For the non-trivial roots, introduce the element
+\[
+V=-iQ.
+\]
+Since \(Q^2=1\),
+\[
+V^2=(-iQ)^2=(-i)^2Q^2=-1.
+\]
+Also
+\[
+Q=iV.
+\]
+In Form A, the product
+\[
+V=\exp\!\left(i\frac{\chi}{2}n\right)\exp(\theta u)
+\]
+is exactly a unit-norm square root of \(-1\):
+\[
+V^2=-1.
+\]
+So \(V\) is the bridge between the two forms.
+
+---
+
+## 3. From Form A to Form B
+
+Assume
+\[
+Q=iV,\qquad V=\exp\!\left(i\frac{\chi}{2}n\right)\exp(\theta u),
+\qquad V^2=-1.
+\]
+Then
+\[
+P_-=\frac{1-Q}{2}=\frac{1-iV}{2}.
+\]
+Therefore
+\[
+Q=\exp(i\pi P_-)
+=\exp\!\left(i\pi\frac{1-iV}{2}\right).
+\]
+Substituting \(V\) gives Form B directly in terms of the polar exponents:
+\[
+\boxed{
+Q=
+\exp\!\left(
+i\pi\,
+\frac{
+1-i\exp\!\left(i\frac{\chi}{2}n\right)\exp(\theta u)
+}{2}
+\right).
+}
+\]
+Equivalently, since
+\[
+i\pi\frac{1-iV}{2}
+=
+i\frac{\pi}{2}+\frac{\pi}{2}V,
+\]
+and \(V^2=-1\), we also have
+\[
+Q=
+\exp\!\left(i\frac{\pi}{2}\right)\exp\!\left(\frac{\pi}{2}V\right)
+=
+iV.
+\]
+This is exactly Form A.
+
+So Form A to Form B is:
+\[
+\boxed{
+P_-=\frac{1-iV}{2},
+\qquad
+Q=\exp(i\pi P_-).
+}
+\]
+
+---
+
+## 4. From Form B to Form A
+
+Assume
+\[
+Q=\exp(i\pi P_-),
+\qquad
+P_-^2=P_-.
+\]
+Then
+\[
+Q=1-2P_-.
+\]
+If \(Q=\pm1\), the polar form is trivial:
+\[
+Q=\pm1.
+\]
+For the non-trivial case, set
+\[
+V=-iQ=i(2P_- -1).
+\]
+Then
+\[
+V^2=-1.
+\]
+Now polar-decompose \(V\):
+\[
+V=B\hat q,
+\]
+where
+\[
+B\in M_+,\qquad N(B)=1,\qquad \hat q\in Sp(1).
+\]
+The factors are computed by
+\[
+B=\sqrt{VV^*},
+\qquad
+\hat q=B^{-1}V.
+\]
+Then
+\[
+Q=iV=iB\hat q.
+\]
+Finally write the factors as exponentials:
+\[
+B=\exp\!\left(i\frac{\chi}{2}n\right),
+\qquad
+\hat q=\exp(\theta u).
+\]
+In coordinates,
+\[
+B=\cosh\!\left(\frac{\chi}{2}\right)+i\sinh\!\left(\frac{\chi}{2}\right)n,
+\]
+so
+\[
+\chi=2\operatorname{arccosh}\!\big(\operatorname{Re}B\big),
+\qquad
+n=\frac{\operatorname{Im}B}{i\sinh(\chi/2)}.
+\]
+Similarly,
+\[
+\hat q=\cos\theta+\sin\theta\,u,
+\]
+so
+\[
+\theta=\arccos\!\big(\operatorname{Re}\hat q\big),
+\qquad
+u=\frac{\hat q-\operatorname{Re}\hat q}{\sin\theta}.
+\]
+Thus
+\[
+\boxed{
+Q=
+\exp\!\left(i\frac{\pi}{2}\right)
+\exp\!\left(i\frac{\chi}{2}n\right)
+\exp(\theta u).
+}
+\]
+
+---
+
+## 5. Summary of the deduction
+
+The two forms are interderivable through the element
+\[
+\boxed{V=-iQ=B\hat q.}
+\]
+It satisfies
+\[
+\boxed{V^2=-1.}
+\]
+
+### A \(\to\) B
+\[
+\boxed{
+P_-=\frac{1-iV}{2}
+=
+\frac{1-Q}{2},
+\qquad
+Q=\exp(i\pi P_-).
+}
+\]
+
+### B \(\to\) A
+\[
+\boxed{
+Q=1-2P_-,
+\qquad
+V=-iQ=i(2P_- -1),
+}
+\]
+then polar-decompose \(V\):
+\[
+\boxed{
+V=B\hat q,
+\qquad
+B=\sqrt{VV^*},
+\qquad
+\hat q=B^{-1}V,
+}
+\]
+and write
+\[
+\boxed{
+B=\exp\!\left(i\frac{\chi}{2}n\right),
+\qquad
+\hat q=\exp(\theta u).
+}
+\]
+
+So the idempotent form and the polar exponential form are not independent. The idempotent is
+\[
+\boxed{
+P_-=\frac{1-iV}{2},
+}
+\]
+and the polar factors are the polar decomposition of
+\[
+\boxed{
+V=-iQ.
+}
+\]
+This is the precise algebraic bridge between the two exponential representations.

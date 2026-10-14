@@ -7,7 +7,7 @@ The split-quaternion algebra $\mathbb{H}_{\mathrm{s}} \cong M_2(\mathbb{R})$ car
 
 This article owns the exponential and the Lie group structure: the algebra as a Lie algebra, the closed form of the exponential, the group of units, the norm-one group and its identification with $SL_2(\mathbb{R})$, the elliptic and hyperbolic subgroups, and the polar and exponential parametrisation. It relies on *Split-Quaternion Rotations and the Lorentz Group* for the Lorentz action, on *Split-Quaternion Automorphisms and Derivations* for the derivations. No physics is invoked.
 
-**Conventions.** A general element is $\tilde q = q_0 + \mathbf v$ with $q_0 = \operatorname{Sc}(\tilde q) \in \mathbb{R}$ and $\mathbf v = q_1e_1 + q_2e_2 + q_3e_3 \in V$. The split-quaternion norm is $N(\tilde q) = q_0^2 + N(\mathbf v)$ with $N(\mathbf v) = q_1^2 - q_2^2 - q_3^2$, and on a vector $\mathbf v^2 = -N(\mathbf v)$. Under the commutator $V$ is the Lie algebra $\mathrm{SL}_2(\mathbb{R})$.
+**Conventions.** A general element is $\tilde q = q_0 + \vec v$ with $q_0 = \operatorname{Sc}(\tilde q) \in \mathbb{R}$ and $\vec v = q_1e_1 + q_2e_2 + q_3e_3 \in V$. The split-quaternion norm is $N(\tilde q) = q_0^2 + N(\vec v)$ with $N(\vec v) = q_1^2 - q_2^2 - q_3^2$, and on a vector $\vec v^2 = -N(\vec v)$. Under the commutator $V$ is the Lie algebra $\mathrm{SL}_2(\mathbb{R})$.
 
 ## The Algebra as a Lie Algebra
 
@@ -53,25 +53,25 @@ $$
 
 convergent for every $\tilde q$, because the algebra is finite-dimensional and a submultiplicative norm exists on it.
 
-**Theorem (closed form).** Write $\tilde q = q_0 + \mathbf v$ and put $\mu = N(\mathbf v) = q_1^2 - q_2^2 - q_3^2$. Then
+**Theorem (closed form).** Write $\tilde q = q_0 + \vec v$ and put $\mu = N(\vec v) = q_1^2 - q_2^2 - q_3^2$. Then
 
 $$
-\exp(\tilde q) = e^{q_0} \Bigl( \cosh\sqrt{-\mu} + \frac{\sinh\sqrt{-\mu}}{\sqrt{-\mu}}\,\mathbf v \Bigr), \qquad \mu < 0,
-$$
-
-$$
-\exp(\tilde q) = e^{q_0} \bigl( 1 + \mathbf v \bigr), \qquad \mu = 0,
+\exp(\tilde q) = e^{q_0} \Bigl( \cosh\sqrt{-\mu} + \frac{\sinh\sqrt{-\mu}}{\sqrt{-\mu}}\,\vec v \Bigr), \qquad \mu < 0,
 $$
 
 $$
-\exp(\tilde q) = e^{q_0} \Bigl( \cos\sqrt{\mu} + \frac{\sin\sqrt{\mu}}{\sqrt{\mu}}\,\mathbf v \Bigr), \qquad \mu > 0 .
+\exp(\tilde q) = e^{q_0} \bigl( 1 + \vec v \bigr), \qquad \mu = 0,
 $$
 
-**Proof.** The scalar $q_0$ commutes with $\mathbf v$, so $e^{\tilde q} = e^{q_0} e^{\mathbf v}$, and $\mathbf v^2 = -N(\mathbf v) = -\mu$ is scalar. Hence $\mathbf v^{2k} = (-1)^k \mu^k$ and $\mathbf v^{2k+1} = (-1)^k \mu^k \mathbf v$, and the series splits into the even and odd parts $\sum_k \frac{(-1)^k\mu^k}{(2k)!}$ and $\mathbf v \sum_k \frac{(-1)^k\mu^k}{(2k+1)!}$. These are the power series of $\cos$ and $\sin$ when $\mu > 0$, of $\cosh$ and $\sinh$ when $\mu < 0$ (after factoring $\sqrt{|\mu|}$), and terminate as $1$ and $\mathbf v$ when $\mu = 0$.
+$$
+\exp(\tilde q) = e^{q_0} \Bigl( \cos\sqrt{\mu} + \frac{\sin\sqrt{\mu}}{\sqrt{\mu}}\,\vec v \Bigr), \qquad \mu > 0 .
+$$
+
+**Proof.** The scalar $q_0$ commutes with $\vec v$, so $e^{\tilde q} = e^{q_0} e^{\vec v}$, and $\vec v^2 = -N(\vec v) = -\mu$ is scalar. Hence $\vec v^{2k} = (-1)^k \mu^k$ and $\vec v^{2k+1} = (-1)^k \mu^k \vec v$, and the series splits into the even and odd parts $\sum_k \frac{(-1)^k\mu^k}{(2k)!}$ and $\vec v \sum_k \frac{(-1)^k\mu^k}{(2k+1)!}$. These are the power series of $\cos$ and $\sin$ when $\mu > 0$, of $\cosh$ and $\sinh$ when $\mu < 0$ (after factoring $\sqrt{|\mu|}$), and terminate as $1$ and $\vec v$ when $\mu = 0$.
 
 **Corollary.** The split-quaternion norm of the exponential is $N(e^{\tilde q}) = e^{2q_0}$, so the exponential lands in the component $\{N > 0\}$ of the group of units, and $\exp(S) = \mathbb{R}_{>0}$.
 
-**Proof.** The multiplicativity $N(ab) = N(a)N(b)$ together with $N(e^{q_0}) = e^{2q_0}$ for a scalar reduce the claim to $N(e^{\mathbf v}) = 1$ for $\mathbf v \in V$. The element $\mathbf v$ generates the commutative two-dimensional subalgebra $\operatorname{span}\{1, \mathbf v\}$ with $\mathbf v^2 = -N(\mathbf v)$; writing $\lambda = -N(\mathbf v)$, the exponential in this subalgebra is $e^{\mathbf v} = \cosh\sqrt\lambda + \frac{\sinh\sqrt\lambda}{\sqrt\lambda}\,\mathbf v$ for $\lambda > 0$, $e^{\mathbf v} = \cos\sqrt{-\lambda} + \frac{\sin\sqrt{-\lambda}}{\sqrt{-\lambda}}\,\mathbf v$ for $\lambda < 0$, and $e^{\mathbf v} = 1 + \mathbf v$ for $\lambda = 0$; in each case $N(e^{\mathbf v}) = 1$ by the identity $N(a + b\mathbf v) = a^2 - b^2\lambda$.
+**Proof.** The multiplicativity $N(ab) = N(a)N(b)$ together with $N(e^{q_0}) = e^{2q_0}$ for a scalar reduce the claim to $N(e^{\vec v}) = 1$ for $\vec v \in V$. The element $\vec v$ generates the commutative two-dimensional subalgebra $\operatorname{span}\{1, \vec v\}$ with $\vec v^2 = -N(\vec v)$; writing $\lambda = -N(\vec v)$, the exponential in this subalgebra is $e^{\vec v} = \cosh\sqrt\lambda + \frac{\sinh\sqrt\lambda}{\sqrt\lambda}\,\vec v$ for $\lambda > 0$, $e^{\vec v} = \cos\sqrt{-\lambda} + \frac{\sin\sqrt{-\lambda}}{\sqrt{-\lambda}}\,\vec v$ for $\lambda < 0$, and $e^{\vec v} = 1 + \vec v$ for $\lambda = 0$; in each case $N(e^{\vec v}) = 1$ by the identity $N(a + b\vec v) = a^2 - b^2\lambda$.
 
 ## The Group Law
 
@@ -98,12 +98,12 @@ a series in the free Lie algebra on $\tilde q,\tilde p$, convergent near the ori
 **Theorem.** The kernel of the exponential on the algebra is
 
 $$
-\ker \exp = \{\, 2\pi k\,\mathbf u \;:\; k \in \mathbb{Z},\ \mathbf u \in V,\ \mathbf u^2 = -1 \,\} \cup \{0\},
+\ker \exp = \{\, 2\pi k\,\vec u \;:\; k \in \mathbb{Z},\ \vec u \in V,\ \vec u^2 = -1 \,\} \cup \{0\},
 $$
 
 that is, $0$ together with the integer multiples of $2\pi$ on the "sphere" of roots of $-1$ in $V$.
 
-**Proof.** $e^{2\pi k\mathbf u} = \cos(2\pi k) + \sin(2\pi k)\mathbf u = 1$ for a root of $-1$ and $k\in\mathbb{Z}$, so these elements lie in the kernel. Conversely, if $e^{\tilde p} = 1$ for real $\tilde p$, then $\tilde p$ is diagonalisable over $\mathbb{C}$ with eigenvalues in $2\pi i\mathbb{Z}$; reality forces the eigenvalue multiset to be $\{2\pi i k, -2\pi i k\}$, so $\tilde p$ is traceless with $\tilde p^2 = -(2\pi k)^2$, i.e. $\tilde p = 2\pi k\,\mathbf u$ with $\mathbf u$ a root of $-1$ (or $\tilde p = 0$).
+**Proof.** $e^{2\pi k\vec u} = \cos(2\pi k) + \sin(2\pi k)\vec u = 1$ for a root of $-1$ and $k\in\mathbb{Z}$, so these elements lie in the kernel. Conversely, if $e^{\tilde p} = 1$ for real $\tilde p$, then $\tilde p$ is diagonalisable over $\mathbb{C}$ with eigenvalues in $2\pi i\mathbb{Z}$; reality forces the eigenvalue multiset to be $\{2\pi i k, -2\pi i k\}$, so $\tilde p$ is traceless with $\tilde p^2 = -(2\pi k)^2$, i.e. $\tilde p = 2\pi k\,\vec u$ with $\vec u$ a root of $-1$ (or $\tilde p = 0$).
 
 Thus the exponential is a local homeomorphism everywhere and fails to be injective only along the discrete family of $2\pi$-multiples of the roots of $-1$; this is the source of the angle doubling of the Lorentz rotor of *Split-Quaternion Rotations and the Lorentz Group*.
 
@@ -119,9 +119,9 @@ The positive scalar $\rho$ carries the scale, and the unit $u$ carries the direc
 
 **Proof.** For $N(\tilde q)>0$, $\tilde q/\sqrt{N(\tilde q)}$ has norm $1$; for $N(\tilde q)<0$, $\tilde q/\sqrt{-N(\tilde q)}$ has norm $-1$. The polar representation is the multiplicative form of the decomposition of the group of units into its two components.
 
-**Theorem (exponential parametrisation).** Every unit of the identity component $\{N>0\}$ that lies in the image of the exponential is $\exp(q_0 + \mathbf v)$ with $q_0 \in \mathbb{R}$ and $\mathbf v \in V$; the norm-one elements $U$ that lie in the image are $\exp(\mathbf v)$ with $\mathbf v \in V$, and the elliptic and hyperbolic cases are selected by the sign of $N(\mathbf v)$: $N(\mathbf v) > 0$ gives the compact part and $N(\mathbf v) < 0$ the non-compact part.
+**Theorem (exponential parametrisation).** Every unit of the identity component $\{N>0\}$ that lies in the image of the exponential is $\exp(q_0 + \vec v)$ with $q_0 \in \mathbb{R}$ and $\vec v \in V$; the norm-one elements $U$ that lie in the image are $\exp(\vec v)$ with $\vec v \in V$, and the elliptic and hyperbolic cases are selected by the sign of $N(\vec v)$: $N(\vec v) > 0$ gives the compact part and $N(\vec v) < 0$ the non-compact part.
 
-**Proof.** Immediate from the closed form and the corollary $N(e^{\tilde q}) = e^{2q_0}$, which shows that $q_0$ is fixed by the split-quaternion norm: for $U$ one needs $q_0 = 0$. The sign of $N(\mathbf v)$ decides whether the orthogonal factor is trigonometric or hyperbolic in the closed form.
+**Proof.** Immediate from the closed form and the corollary $N(e^{\tilde q}) = e^{2q_0}$, which shows that $q_0$ is fixed by the split-quaternion norm: for $U$ one needs $q_0 = 0$. The sign of $N(\vec v)$ decides whether the orthogonal factor is trigonometric or hyperbolic in the closed form.
 
 ## The Norm-One Group and $SL_2(\mathbb{R})$
 
@@ -139,7 +139,7 @@ is a connected three-dimensional Lie group, a double cover of the identity compo
 
 The one-parameter subgroups generated by the exponentials split by the sign of $N$ of the exponent.
 
-**The elliptic subgroup.** For $\mathbf v = \theta u$ with $u$ a root of $-1$ ($u^2 = -1$, $N(u) = 1$), the closed form gives
+**The elliptic subgroup.** For $\vec v = \theta u$ with $u$ a root of $-1$ ($u^2 = -1$, $N(u) = 1$), the closed form gives
 
 $$
 \exp(\theta u) = \cos\theta + \sin\theta\, u,
@@ -147,7 +147,7 @@ $$
 
 a compact group isomorphic to $SO(2)$, the **elliptic** subgroup. The prototype is $\exp(\theta e_1) = \cos\theta + \sin\theta\, e_1$, whose adjoint action rotates $\operatorname{span}\{e_2,e_3\}$ by $2\theta$.
 
-**The hyperbolic subgroups.** For $\mathbf v = \theta u$ with $u^2 = +1$ ($N(u) = -1$), for instance $u = e_2$ or $u = e_3$ or $u = (e_2+e_3)/\sqrt2$,
+**The hyperbolic subgroups.** For $\vec v = \theta u$ with $u^2 = +1$ ($N(u) = -1$), for instance $u = e_2$ or $u = e_3$ or $u = (e_2+e_3)/\sqrt2$,
 
 $$
 \exp(\theta u) = \cosh\theta + \sinh\theta\, u,
@@ -157,7 +157,7 @@ a non-compact group isomorphic to $\mathbb{R}$, the **hyperbolic** subgroup. The
 
 **Terminology (hyperbolic versors).** The two families are Hamilton's versors and their indefinite counterparts: $\cos\theta + \xi\sin\theta$, built on a root of $-1$, is a **versor**, and $\cosh t + \eta\sinh t$, the same expression built on a unit of square $+1$, is a **hyperbolic versor**. Hyperbolic versors arise in any algebra of mixed signature; the earliest instance is in the tessarines of James Cockle (1848), the commutative algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$ that the corpus records as the tessarine or reduced biquaternion algebra in *List of Algebras by Dimension*; Homersham Cox used the element with quaternion multiplication (1882), and Alexander Macfarlane built the hyperbolic quaternions on it (1891), an algebra whose difficulties turned the subject toward the biquaternions. The parameter $t$ is the rapidity of the Lorentz boost that the one-parameter group represents, so the hyperbolic versor is the exponential form of a boost; Lie's one-parameter group is the notion that subsumes the versor and the hyperbolic versor alike.
 
-**The parabolic directions.** For $\mathbf v$ null ($\mathbf v^2 = 0$, $\mathbf v \neq 0$), the closed form gives $\exp(\mathbf v) = 1 + \mathbf v$, a unipotent element; the exponentials of the null directions form the one-parameter unipotent subgroups conjugate to the translations of the affine line.
+**The parabolic directions.** For $\vec v$ null ($\vec v^2 = 0$, $\vec v \neq 0$), the closed form gives $\exp(\vec v) = 1 + \vec v$, a unipotent element; the exponentials of the null directions form the one-parameter unipotent subgroups conjugate to the translations of the affine line.
 
 These are the elliptic, hyperbolic and parabolic one-parameter subgroups of the Lorentz group of *Split-Quaternion Rotations and the Lorentz Group*.
 
@@ -173,13 +173,13 @@ with the bracket of the proposition above. The exponential $\exp : V \to U$ is t
 
 ## Comparison with the Biquaternion Case
 
-The biquaternion article *Biquaternion Lie Group and Exponential Structure* computes the same objects for $\mathbb{B} = M_2(\mathbb{C})$: the group of units $GL(2,\mathbb{C})$, the retraction onto $U(2)$, the norm-one group $SL(2,\mathbb{C})$ retracting onto $SU(2)$, the closed form of the exponential, its kernel, and the elliptic and hyperbolic subgroups of the Lorentz group $SO(3,1)$. The split-quaternion case is the real, indefinite analogue. The group of units is $GL_2(\mathbb{R})$ rather than $GL(2,\mathbb{C})$, with **two** components instead of one; the norm-one group is $SL_2(\mathbb{R})$, which retracts onto the circle $SO(2)$ and has infinite cyclic fundamental group, in place of the simply connected sphere $SU(2)$; and the Lorentz group is the three-dimensional $\mathrm{SO}^{+}(2,1)$ in place of the six-dimensional $\mathrm{SO}^{+}(3,1)$. The closed form is the same series, with the sign of $N(\mathbf v)$ deciding between the trigonometric and the hyperbolic branch, the split signature producing both branches where the definite case produces only the elliptic one. Nothing biquaternion-specific — the central imaginary unit $i$, the unitary retraction, the complex parametrisation — is imported.
+The biquaternion article *Biquaternion Lie Group and Exponential Structure* computes the same objects for $\mathbb{B} = M_2(\mathbb{C})$: the group of units $GL(2,\mathbb{C})$, the retraction onto $U(2)$, the norm-one group $SL(2,\mathbb{C})$ retracting onto $SU(2)$, the closed form of the exponential, its kernel, and the elliptic and hyperbolic subgroups of the Lorentz group $SO(3,1)$. The split-quaternion case is the real, indefinite analogue. The group of units is $GL_2(\mathbb{R})$ rather than $GL(2,\mathbb{C})$, with **two** components instead of one; the norm-one group is $SL_2(\mathbb{R})$, which retracts onto the circle $SO(2)$ and has infinite cyclic fundamental group, in place of the simply connected sphere $SU(2)$; and the Lorentz group is the three-dimensional $\mathrm{SO}^{+}(2,1)$ in place of the six-dimensional $\mathrm{SO}^{+}(3,1)$. The closed form is the same series, with the sign of $N(\vec v)$ deciding between the trigonometric and the hyperbolic branch, the split signature producing both branches where the definite case produces only the elliptic one. Nothing biquaternion-specific — the central imaginary unit $i$, the unitary retraction, the complex parametrisation — is imported.
 
 ## Summary
 
 The commutator makes $\mathbb{H}_{\mathrm{s}}$ a Lie algebra with centre $S$ and associated Lie algebra $V \cong \mathrm{SL}_2(\mathbb{R}) \cong \mathrm{SO}(2,1)$. The group of units is $\mathbb{H}_{\mathrm{s}}^\times = \{N \neq 0\} \cong GL_2(\mathbb{R})$, with two components $\{N>0\}$ and $\{N<0\}$; the norm-one group is $U = \{N=1\} \cong SL_2(\mathbb{R})$, a connected three-dimensional group that double-covers $\mathrm{SO}^{+}(2,1)$, with the other component the coset $e_2 U$.
 
-The exponential has the closed form displayed above, with the sign of $N(\mathbf v)$ selecting the trigonometric branch ($N(\mathbf v)>0$), the hyperbolic branch ($N(\mathbf v)<0$) or the terminating branch ($N(\mathbf v)=0$); it satisfies $N(e^{\tilde q}) = e^{2q_0}$, so it lands in the identity component, it is a local diffeomorphism, and it obeys the Baker–Campbell–Hausdorff law rather than additivity. It is not surjective, its image being the invertible matrices with no negative real eigenvalue of odd multiplicity, and its kernel is $0$ together with the $2\pi$-multiples of the roots of $-1$. Every nonzero element has the polar form $\rho u$, and the norm-one elements in the image of the exponential are $\exp(\mathbf v)$ with $\mathbf v \in V$. The one-parameter subgroups are elliptic (compact, from roots of $-1$), hyperbolic (non-compact, from roots of $+1$ in $V$) and parabolic (unipotent, from the null directions). The comparison with $\mathbb{B}$ is the comparison of a real indefinite form with a complex definite one.
+The exponential has the closed form displayed above, with the sign of $N(\vec v)$ selecting the trigonometric branch ($N(\vec v)>0$), the hyperbolic branch ($N(\vec v)<0$) or the terminating branch ($N(\vec v)=0$); it satisfies $N(e^{\tilde q}) = e^{2q_0}$, so it lands in the identity component, it is a local diffeomorphism, and it obeys the Baker–Campbell–Hausdorff law rather than additivity. It is not surjective, its image being the invertible matrices with no negative real eigenvalue of odd multiplicity, and its kernel is $0$ together with the $2\pi$-multiples of the roots of $-1$. Every nonzero element has the polar form $\rho u$, and the norm-one elements in the image of the exponential are $\exp(\vec v)$ with $\vec v \in V$. The one-parameter subgroups are elliptic (compact, from roots of $-1$), hyperbolic (non-compact, from roots of $+1$ in $V$) and parabolic (unipotent, from the null directions). The comparison with $\mathbb{B}$ is the comparison of a real indefinite form with a complex definite one.
 
 ## Summary of Notation
 
@@ -192,8 +192,8 @@ The exponential has the closed form displayed above, with the sign of $N(\mathbf
 | $U = \{N=1\} = \mathrm{SL}_2(\mathbb{R})$ | the norm-one group | *Split-Quaternion Norm and Invertibility* |
 | $e_2 U = \{N=-1\}$ | the other component of the group of units | this article |
 | $\exp(\tilde q) = \sum \tilde q^k/k!$ | the exponential, with the closed form above | this article |
-| $\tilde q = q_0 + \mathbf v$, $\mu = N(\mathbf v)$ | the scalar–vector split and the sign parameter | this article |
-| $\ker\exp$ | $\{2\pi k\mathbf u : k\in\mathbb{Z}, \mathbf u^2=-1\} \cup \{0\}$ | this article |
+| $\tilde q = q_0 + \vec v$, $\mu = N(\vec v)$ | the scalar–vector split and the sign parameter | this article |
+| $\ker\exp$ | $\{2\pi k\vec u : k\in\mathbb{Z}, \vec u^2=-1\} \cup \{0\}$ | this article |
 | $N(e^{\tilde q}) = e^{2q_0}$ | the split-quaternion norm of the exponential | this article |
 | $\exp(\theta u) = \cos\theta + \sin\theta\,u$ | the elliptic subgroup ($u^2 = -1$) | this article |
 | $\exp(\theta u) = \cosh\theta + \sinh\theta\,u$ | the hyperbolic subgroup ($u^2 = +1$ in $V$) | this article |

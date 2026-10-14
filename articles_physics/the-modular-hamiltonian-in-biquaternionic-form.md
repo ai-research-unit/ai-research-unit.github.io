@@ -26,7 +26,7 @@ Three features organize what follows.
 
 The article proceeds as follows. The modular Hamiltonian is defined from $\Delta$, the hypotheses are checked, and the sign convention is fixed. The finite-dimensional realization in $\mathbb{B}$ is recalled from the parents and completed with $\tilde K$'s spectral form. $\tilde K$ is then verified to generate the same flow as $\Delta^{it}$. The trace formula is used to show that the Gibbs form is a scalar extraction. A closing section separates what is established from what is a gap.
 
-**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$ satisfying $e_k^2=-e_0$, scalar imaginary $i$ with $i^2=-1$, and the isomorphism $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The Hermitian (informational) subspace is $\mathbb{M}_+$ and the anti-Hermitian (material) subspace is $\mathbb{M}_-$; Hermitian conjugation ${}^{*}$ is the algebra involution of the Tomita construction. The trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$, so that $\mathrm{Tr}(e_0)=2$. The modular flow is $\sigma_t(\tilde A)=\Delta^{it}\tilde A\Delta^{-it}$, and the modular Hamiltonian is defined by $\Delta=e^{-\tilde K}$, so that $\tilde K=-\log\Delta$ and $\Delta^{it}=e^{-i\tilde Kt}$. In the finite-dimensional model of the parents, $\tilde K=-\log\tilde\rho$ is a Hermitian element of $\mathbb{M}_+$. The physical Hamiltonian of a Gibbs state is written $\tilde H=h_0e_0+i\mathbf h$, and $\beta$ is the inverse temperature; we use units with $\hbar=1$.
+**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$ satisfying $e_k^2=-e_0$, scalar imaginary $i$ with $i^2=-1$, and the isomorphism $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$, so that $\mathbb{B}\cong M_2(\mathbb{C})$. The Hermitian (informational) subspace is $\mathbb{M}_+$ and the anti-Hermitian (material) subspace is $\mathbb{M}_-$; Hermitian conjugation ${}^{*}$ is the algebra involution of the Tomita construction. The trace is normalized by the matrix representation, $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$, so that $\mathrm{Tr}(e_0)=2$. The modular flow is $\sigma_t(\tilde A)=\Delta^{it}\tilde A\Delta^{-it}$, and the modular Hamiltonian is defined by $\Delta=e^{-\tilde K}$, so that $\tilde K=-\log\Delta$ and $\Delta^{it}=e^{-i\tilde Kt}$. In the finite-dimensional model of the parents, $\tilde K=-\log\tilde\rho$ is a Hermitian element of $\mathbb{M}_+$. The physical Hamiltonian of a Gibbs state is written $\tilde H=h_0e_0+i\vec h$, and $\beta$ is the inverse temperature; we use units with $\hbar=1$.
 
 ## The Generator of the Modular Flow
 
@@ -130,25 +130,25 @@ That $\tilde K$ lies in $\mathbb{M}_+$ is the parent's algebraic fact, and it is
 
 Write the faithful state in Bloch form,
 $$
-\tilde\rho=\tfrac12\big(e_0+i\mathbf r\cdot\mathbf e\big),
-\qquad |\mathbf r|<1,
+\tilde\rho=\tfrac12\big(e_0+i\vec r\cdot\mathbf e\big),
+\qquad |\vec r|<1,
 \qquad
-\lambda_\pm=\tfrac12\big(1\pm|\mathbf r|\big)>0,
+\lambda_\pm=\tfrac12\big(1\pm|\vec r|\big)>0,
 $$
-with $\lambda_+,\lambda_-$ the eigenvalues of $\tilde\rho$ and $\hat{\mathbf r}=\mathbf r/|\mathbf r|$. Then
+with $\lambda_+,\lambda_-$ the eigenvalues of $\tilde\rho$ and $\hat r=\vec r/|\vec r|$. Then
 $$
 \tilde K=-\log\tilde\rho
-=a_0\,e_0+i\,\mathbf a\cdot\mathbf e,
+=a_0\,e_0+i\,\vec a\cdot\mathbf e,
 \qquad
-a_0=-\tfrac12\log\det\tilde\rho=-\tfrac12\log\!\Big(\tfrac14\big(1-|\mathbf r|^2\big)\Big),
+a_0=-\tfrac12\log\det\tilde\rho=-\tfrac12\log\!\Big(\tfrac14\big(1-|\vec r|^2\big)\Big),
 \qquad
-\mathbf a=-\tfrac12\log\frac{\lambda_+}{\lambda_-}\,\hat{\mathbf r}.
+\vec a=-\tfrac12\log\frac{\lambda_+}{\lambda_-}\,\hat r.
 $$
-This is the explicit operator: a real scalar part fixed by the determinant of the state, and an imaginary vector part along the Bloch vector, with magnitude the logarithm of the eigenvalue ratio. Two limits are immediate. The tracial state $\mathbf r=0$ gives $\lambda_+=\lambda_-$, hence
+This is the explicit operator: a real scalar part fixed by the determinant of the state, and an imaginary vector part along the Bloch vector, with magnitude the logarithm of the eigenvalue ratio. Two limits are immediate. The tracial state $\vec r=0$ gives $\lambda_+=\lambda_-$, hence
 $$
 \tilde K=(\log 2)e_0,\qquad \Delta=1,\qquad \sigma_t=\mathrm{id},
 $$
-the trivial modular flow the parent identifies. A pure state $|\mathbf r|\to1$ gives $\lambda_-\to0$, so $\det\tilde\rho\to0$ and $|\mathbf a|\to\infty$: the modular Hamiltonian diverges as faithfulness is lost. The divergence is the positivity hypothesis of the previous section appearing in the formula; a pure state on $M_2(\mathbb{C})$ is not faithful, $\Delta$ acquires the eigenvalue $0$, and $-\log\Delta$ does not exist.
+the trivial modular flow the parent identifies. A pure state $|\vec r|\to1$ gives $\lambda_-\to0$, so $\det\tilde\rho\to0$ and $|\vec a|\to\infty$: the modular Hamiltonian diverges as faithfulness is lost. The divergence is the positivity hypothesis of the previous section appearing in the formula; a pure state on $M_2(\mathbb{C})$ is not faithful, $\Delta$ acquires the eigenvalue $0$, and $-\log\Delta$ does not exist.
 
 The eigenvalues of $\Delta$ on the algebra are the ratios of the eigenvalues of $\tilde\rho$,
 $$
@@ -178,8 +178,8 @@ which is the generator identity of the definition. So the $\tilde K$ constructed
 
 The identities above were recomputed symbolically and numerically in the biquaternion algebra, using the matrix representation $\mathsf{M}_2(e_k)=-i\sigma_k$, $\mathsf{M}_2(i)=iI_2$. The state was the parent's generic faithful state,
 $$
-\mathbf r=\big(\tfrac{3}{10},\tfrac{2}{5},-\tfrac15\big),
-\qquad |\mathbf r|^2=\tfrac{29}{100},
+\vec r=\big(\tfrac{3}{10},\tfrac{2}{5},-\tfrac15\big),
+\qquad |\vec r|^2=\tfrac{29}{100},
 \qquad
 \lambda_\pm=\tfrac12\pm\frac{\sqrt{29}}{20},
 $$
@@ -188,8 +188,8 @@ chosen — in the parent, and independently of the derivation here — to lie ne
 | Check | Result |
 |---|---|
 | $\Delta$ eigenvalues $\lambda_+/\lambda_-$, $\lambda_-/\lambda_+$ | $3.333849$, $0.299954$, both $>0$ |
-| $\tilde K$ Hermitian, components real | $a_0=0.864392$, $\mathbf a=(-0.335401,-0.447202,0.223601)$ |
-| $a_0=-\tfrac12\log\det\tilde\rho$, $\mathbf a=-\tfrac12\log(\lambda_+/\lambda_-)\hat{\mathbf r}$ | agreement to $10^{-15}$ |
+| $\tilde K$ Hermitian, components real | $a_0=0.864392$, $\vec a=(-0.335401,-0.447202,0.223601)$ |
+| $a_0=-\tfrac12\log\det\tilde\rho$, $\vec a=-\tfrac12\log(\lambda_+/\lambda_-)\hat r$ | agreement to $10^{-15}$ |
 | $\sigma_t(\tilde A)=\tilde\rho^{it}\tilde A\tilde\rho^{-it}$ equals $e^{-i\tilde Kt}\tilde A e^{i\tilde Kt}$, 12 random $(\tilde A,t)$ | max error $0$ |
 | $\frac{d}{dt}\sigma_t(\tilde A)|_{t=0}=-i[\tilde K,\tilde A]$ (central difference, $h=10^{-6}$) | max error $2.4\times10^{-13}$ |
 | $\mathrm{Tr}(e^{-\tilde K})=\mathrm{Tr}(\tilde\rho)=1$ | $1.0$ to $10^{-39}$ |
@@ -202,9 +202,9 @@ Z=1+e^{-\beta\omega}=1.339596,
 \qquad
 \log Z=0.292368,
 $$
-reproducing the parents' $Z$ and $K$; more generally, for a Gibbs state with $\tilde H=h_0e_0+i\mathbf h$ at inverse temperature $\beta$, the same identity $\tilde K=\beta\tilde H+(\log Z)e_0$ was checked on the independent data $h_0=0.7$, $\mathbf h=(0.3,-0.5,0.8)$, $\beta=1.2$, where
+reproducing the parents' $Z$ and $K$; more generally, for a Gibbs state with $\tilde H=h_0e_0+i\vec h$ at inverse temperature $\beta$, the same identity $\tilde K=\beta\tilde H+(\log Z)e_0$ was checked on the independent data $h_0=0.7$, $\vec h=(0.3,-0.5,0.8)$, $\beta=1.2$, where
 $$
-Z=2e^{-\beta h_0}\cosh(\beta|\mathbf h|)=1.547753
+Z=2e^{-\beta h_0}\cosh(\beta|\vec h|)=1.547753
 $$
 and $\tilde K-(\beta\tilde H+(\log Z)e_0)$ vanishes to $4\times10^{-39}$.
 
@@ -234,20 +234,20 @@ $$
 $$
 No matrix diagonalization is needed to evaluate the state; the doubled scalar part of a biquaternion product is the whole computation.
 
-Second, the physical Gibbs form follows by the shift $\tilde K=\beta\tilde H+(\log Z)e_0$. With $\tilde H=h_0e_0+i\mathbf h$,
+Second, the physical Gibbs form follows by the shift $\tilde K=\beta\tilde H+(\log Z)e_0$. With $\tilde H=h_0e_0+i\vec h$,
 $$
 Z=\mathrm{Tr}\big(e^{-\beta\tilde H}\big)=2\,\mathrm{Sc}\big(e^{-\beta\tilde H}\big)
-=2e^{-\beta h_0}\cosh(\beta|\mathbf h|),
+=2e^{-\beta h_0}\cosh(\beta|\vec h|),
 $$
 and the scalar and vector parts of $\tilde K$ have direct thermodynamic interpretations:
 $$
 \mathrm{Sc}(\tilde K)=\beta h_0+\log Z,
 \qquad
-\mathbf a=\beta\mathbf h,
+\vec a=\beta\vec h,
 $$
-the scalar part carrying the normalization $\log Z$, hence the free energy through $\log Z=-\beta F$, and the imaginary vector part being the thermal polarization of the state, $\mathbf a=\beta\mathbf h$. The trace formula is the bridge: it converts the abstract Gibbs weight $e^{-\tilde K}$ into a scalar Boltzmann factor times a boost-type biquaternion in $\mathbb{M}_+$, which is the partition-function article's thermal operator. The nonlinearity of the biquaternion exponential is tamed because the imaginary vector part squares to a positive scalar, $(i\mathbf h)^2=|\mathbf h|^2e_0$, so $\mathbf h$ and $e_0$ commute and the exponential splits.
+the scalar part carrying the normalization $\log Z$, hence the free energy through $\log Z=-\beta F$, and the imaginary vector part being the thermal polarization of the state, $\vec a=\beta\vec h$. The trace formula is the bridge: it converts the abstract Gibbs weight $e^{-\tilde K}$ into a scalar Boltzmann factor times a boost-type biquaternion in $\mathbb{M}_+$, which is the partition-function article's thermal operator. The nonlinearity of the biquaternion exponential is tamed because the imaginary vector part squares to a positive scalar, $(i\vec h)^2=|\vec h|^2e_0$, so $\vec h$ and $e_0$ commute and the exponential splits.
 
-One feature of the trace is worth separating from the modular Hamiltonian itself. The trace keeps only the scalar part of $e^{-\beta\tilde H}$ and discards its imaginary vector part, the coherence, as the partition-function article records. The modular Hamiltonian does not discard it: both parts of $\tilde K$ are needed, the scalar part for the normalization and the vector part $\mathbf a=\beta\mathbf h$ to generate the flow, which conjugates the algebra and rotates the vector parts of its elements about the axis $\hat{\mathbf a}$ while leaving the state $\tilde\rho$ itself invariant. The partition function is blind to the thermal polarization; the modular flow is what moves it.
+One feature of the trace is worth separating from the modular Hamiltonian itself. The trace keeps only the scalar part of $e^{-\beta\tilde H}$ and discards its imaginary vector part, the coherence, as the partition-function article records. The modular Hamiltonian does not discard it: both parts of $\tilde K$ are needed, the scalar part for the normalization and the vector part $\vec a=\beta\vec h$ to generate the flow, which conjugates the algebra and rotates the vector parts of its elements about the axis $\hat a$ while leaving the state $\tilde\rho$ itself invariant. The partition function is blind to the thermal polarization; the modular flow is what moves it.
 
 ## Is the Modular Hamiltonian Local?
 
@@ -291,12 +291,12 @@ G_1^\dagger=G_1 ,
 $$
 which is the generator $K_1=ie_1$ of the Lorentz-group companion in the spatial direction $e_1$. Its exponential is the boost rotor
 $$
-\tilde\Lambda(\psi)=\exp\!\Big(\frac{\psi}{2}G_1\Big)
+\tilde U(\psi)=\exp\!\Big(\frac{\psi}{2}G_1\Big)
 =\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\,e_1\ \in\mathbb{M}_+,
 \qquad
-\tilde\Lambda(\psi)\tilde\Lambda^{\natural}(\psi)=e_0,
+\tilde U(\psi)\tilde U^{\natural}(\psi)=e_0,
 $$
-and its action on the material sector is the rotor conjugation $\tilde{Q}\mapsto\tilde\Lambda(\psi)\tilde{Q}\tilde\Lambda(\psi)$ (the rotor is Hermitian). Because Bisognano–Wichmann gives $\Delta=e^{-2\pi G_1}$, the modular Hamiltonian of the wedge is
+and its action on the material sector is the rotor conjugation $\tilde{Q}\mapsto\tilde U(\psi)\tilde{Q}\tilde U(\psi)$ (the rotor is Hermitian). Because Bisognano–Wichmann gives $\Delta=e^{-2\pi G_1}$, the modular Hamiltonian of the wedge is
 $$
 \tilde K_W=2\pi\,G_1=2\pi\,i\,e_1 ,
 $$
@@ -308,14 +308,14 @@ q_0\longmapsto q_0\cosh\psi-q_1\sinh\psi,
 \qquad
 q_1\longmapsto q_1\cosh\psi-q_0\sinh\psi,
 \qquad
-N(\tilde\Lambda\tilde{Q}\tilde\Lambda)=N(\tilde{Q}).
+N(\tilde U\tilde{Q}\tilde U)=N(\tilde{Q}).
 $$
 Second, the generator of this action is $G_1$ through the **anticommutator**,
 $$
-\frac{d}{d\psi}\Big(\tilde\Lambda(\psi)\tilde{Q}\tilde\Lambda(\psi)\Big)\Big|_{\psi=0}
+\frac{d}{d\psi}\Big(\tilde U(\psi)\tilde{Q}\tilde U(\psi)\Big)\Big|_{\psi=0}
 =\tfrac12\{G_1,\tilde{Q}\}=\tfrac12\big(G_1\tilde{Q}+\tilde{Q}G_1\big),
 $$
-and exponentiating this derivation reproduces the finite rotor action, $\exp(\psi\,\delta_{G_1})\tilde{Q}=\tilde\Lambda(\psi)\tilde{Q}\tilde\Lambda(\psi)$, with $\delta_{G_1}=\tfrac12\{G_1,\cdot\,\}$. Third, the **commutator** $[G_1,\tilde{Q}]$ is *not* the boost: on the boost plane $q_2=q_3=0$ it vanishes, and in general it generates a rotation in the orthogonal plane,
+and exponentiating this derivation reproduces the finite rotor action, $\exp(\psi\,\delta_{G_1})\tilde{Q}=\tilde U(\psi)\tilde{Q}\tilde U(\psi)$, with $\delta_{G_1}=\tfrac12\{G_1,\cdot\,\}$. Third, the **commutator** $[G_1,\tilde{Q}]$ is *not* the boost: on the boost plane $q_2=q_3=0$ it vanishes, and in general it generates a rotation in the orthogonal plane,
 $$
 [G_1,\tilde{Q}]=\big(0,\,0,\,-2i\,q_3,\,2i\,q_2\big)
 \quad\text{for}\quad \tilde{Q}=iq_0e_0+q_1e_1+q_2e_2+q_3e_3 .
@@ -336,9 +336,9 @@ There is a structural reason the wedge case looks different from the finite-dime
 **Established (recomputed here).**
 
 - $\tilde K=-\log\Delta$ is defined by $\Delta=e^{-\tilde K}$; with this convention $\Delta^{it}=e^{-i\tilde Kt}$ and $d\sigma_t/dt|_{t=0}=-i[\tilde K,\tilde A]$, and the opposite sign convention reverses which flow is KMS.
-- In $\mathbb{B}\cong M_2(\mathbb{C})$, $\tilde K=-\log\tilde\rho\in\mathbb{M}_+$, with the spectral form $a_0=-\tfrac12\log\det\tilde\rho$, $\mathbf a=-\tfrac12\log(\lambda_+/\lambda_-)\hat{\mathbf r}$; $\Delta>0$ for every faithful state, and $\tilde K$ does not exist for a non-faithful one.
+- In $\mathbb{B}\cong M_2(\mathbb{C})$, $\tilde K=-\log\tilde\rho\in\mathbb{M}_+$, with the spectral form $a_0=-\tfrac12\log\det\tilde\rho$, $\vec a=-\tfrac12\log(\lambda_+/\lambda_-)\hat r$; $\Delta>0$ for every faithful state, and $\tilde K$ does not exist for a non-faithful one.
 - $\tilde K$ generates the same flow as $\Delta^{it}$: verified symbolically and numerically on a generic rotated state and a thermal state.
-- $\mathrm{Tr}(e^{-\tilde K})=1$, and the trace formula makes the Gibbs state a doubled scalar extraction, with $\mathrm{Sc}(\tilde K)=\beta h_0+\log Z$ and $\mathbf a=\beta\mathbf h$.
+- $\mathrm{Tr}(e^{-\tilde K})=1$, and the trace formula makes the Gibbs state a doubled scalar extraction, with $\mathrm{Sc}(\tilde K)=\beta h_0+\log Z$ and $\vec a=\beta\vec h$.
 - In the wedge, $\tilde K_W=2\pi G_1$ with $G_1=ie_1\in\mathbb{M}_+$; the rotor action is the boost, its generator is the anticommutator $\tfrac12\{G_1,\cdot\,\}$, and the commutator is a rotation in the orthogonal plane.
 
 **Interpretation.**
@@ -368,13 +368,13 @@ In the biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ the parents' finit
 $$
 \tilde K=-\log\tilde\rho\in\mathbb{M}_+,
 \qquad
-\tilde K=a_0e_0+i\mathbf a\cdot\mathbf e,
+\tilde K=a_0e_0+i\vec a\cdot\mathbf e,
 \qquad
 a_0=-\tfrac12\log\det\tilde\rho,
 \qquad
-\mathbf a=-\tfrac12\log\frac{\lambda_+}{\lambda_-}\hat{\mathbf r},
+\vec a=-\tfrac12\log\frac{\lambda_+}{\lambda_-}\hat r,
 $$
-so the modular Hamiltonian is a Hermitian element of the informational sector, with the scalar part fixed by the determinant of the state and the vector part by its Bloch polarization. It was verified symbolically and numerically — on a generic rotated state and on a thermal state, not only on the case that suggested the formulas — that $\tilde K$ generates the same flow as $\Delta^{it}$, that $\mathrm{Tr}(e^{-\tilde K})=1$, and that the trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ makes the Gibbs form computable, with $\mathrm{Sc}(\tilde K)=\beta h_0+\log Z$ and $\mathbf a=\beta\mathbf h$.
+so the modular Hamiltonian is a Hermitian element of the informational sector, with the scalar part fixed by the determinant of the state and the vector part by its Bloch polarization. It was verified symbolically and numerically — on a generic rotated state and on a thermal state, not only on the case that suggested the formulas — that $\tilde K$ generates the same flow as $\Delta^{it}$, that $\mathrm{Tr}(e^{-\tilde K})=1$, and that the trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ makes the Gibbs form computable, with $\mathrm{Sc}(\tilde K)=\beta h_0+\log Z$ and $\vec a=\beta\vec h$.
 
 The one structural question the finite-dimensional model cannot settle is locality. For a general spacetime region the modular Hamiltonian of the vacuum is nonlocal, and the modular flow is not geometric; it is local exactly in the exceptional cases where the flow is a symmetry flow — the Bisognano–Wichmann wedge, where $\tilde K_W=2\pi G_1$ with $G_1=ie_1\in\mathbb{M}_+$ and the flow is the boost by rapidity $2\pi s$, and the conformal ball, which the framework cannot fully express because the special conformal generators are not elements of $\mathbb{B}$. In the wedge the flow is outer and the action is the two-sided rotor conjugation, not the commutator $[\tilde K_W,\cdot\,]$; in the finite-dimensional model the flow is inner and the commutator is correct. Both cases have $\tilde K\in\mathbb{M}_+$, by different mechanisms, and the gap between them is the type gap of the modular-theory parent.
 
@@ -395,12 +395,12 @@ The one structural question the finite-dimensional model cannot settle is locali
 | $d\sigma_t/dt|_{t=0}=-i[\tilde K,\tilde A]$ | Generator identity (sign convention fixed here) |
 | $\tilde\rho\in\mathbb{M}_+$ | Faithful state, positive definite, trace one |
 | $\tilde K=-\log\tilde\rho\in\mathbb{M}_+$ | Modular Hamiltonian in the finite-dimensional model |
-| $\lambda_\pm=\tfrac12(1\pm|\mathbf r|)$ | Eigenvalues of $\tilde\rho$ |
+| $\lambda_\pm=\tfrac12(1\pm|\vec r|)$ | Eigenvalues of $\tilde\rho$ |
 | $a_0=-\tfrac12\log\det\tilde\rho$ | Scalar part of $\tilde K$ |
-| $\mathbf a=-\tfrac12\log(\lambda_+/\lambda_-)\hat{\mathbf r}$ | Vector part of $\tilde K$ |
+| $\vec a=-\tfrac12\log(\lambda_+/\lambda_-)\hat r$ | Vector part of $\tilde K$ |
 | $\tilde K=\beta\tilde H+(\log Z)e_0$ | Gibbs-state modular Hamiltonian |
 | $G_1=ie_1\in\mathbb{M}_+$ | Boost generator ($=K_1$ in the Lorentz-group companion) |
-| $\tilde\Lambda(\psi)=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}e_1$ | Boost rotor (Hermitian, unit norm) |
+| $\tilde U(\psi)=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}e_1$ | Boost rotor (Hermitian, unit norm) |
 | $\tilde K_W=2\pi G_1$ | Wedge modular Hamiltonian (Bisognano–Wichmann) |
 | $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |

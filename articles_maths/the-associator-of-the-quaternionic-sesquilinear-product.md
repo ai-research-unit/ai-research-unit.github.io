@@ -9,7 +9,7 @@ $$
 \tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q^{*} ,
 $$
 
-is the subject of this group. The rule and the scalar–vector form are *The Four General Products of the Biquaternion $\mathbb{C}$ Space* §*The General Quaternionic Sesquilinear Product*; the sesqualgebra it defines, its multiplication table and its axioms are *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*. The symbols are those of the group: ${}^{\natural}$ is the natural conjugation $\tilde P^{\natural} = P_0 - \mathbf P$, ${}^{*}$ is the star conjugation $\tilde P^{*} = \overline{P_0} - \overline{\mathbf Q}$, the bar is the coefficientwise complex conjugation, and $N(\tilde P) = \tilde P\tilde P^{\natural} = \sum_\mu P_\mu^{2}$ is the norm form.
+is the subject of this group. The rule and the scalar–vector form are *The Four General Products of the Biquaternion $\mathbb{C}$ Space* §*The General Quaternionic Sesquilinear Product*; the sesqualgebra it defines, its multiplication table and its axioms are *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*. The symbols are those of the group: ${}^{\natural}$ is the natural conjugation $\tilde P^{\natural} = P_0 - \vec P$, ${}^{*}$ is the star conjugation $\tilde P^{*} = \overline{P_0} - \overline{\vec Q}$, the bar is the coefficientwise complex conjugation, and $N(\tilde P) = \tilde P\tilde P^{\natural} = \sum_\mu P_\mu^{2}$ is the norm form.
 
 The subject of this article is the **associator** of the multiplication,
 

@@ -20,8 +20,8 @@ The two tables below are the summary, and the six sections after them are the de
 | $\mathrm{Vect}(\mathbb{B})$ | $\tilde Q=\sum_kP_ke_k$ | $-\sum_kP_k^{2}$ | $\sum_kP_k^{2}$ | $\sum_k\lvert P_k\rvert^{2}$ | $-\sum_k\lvert P_k\rvert^{2}$ |
 | $\mathbb{H}_{\mathbb{B}}$ | $\tilde Q=h=\sum_\mu h_\mu e_\mu$, $h_\mu\in\mathbb{R}$ | $h_0^{2}-\sum_kh_k^{2}$ | $\sum_\mu h_\mu^{2}$ | $\sum_\mu h_\mu^{2}$ | $h_0^{2}-\sum_kh_k^{2}$ |
 | $i\mathbb{H}_{\mathbb{B}}$ | $\tilde Q=ih$ | $-h_0^{2}+\sum_kh_k^{2}$ | $-\sum_\mu h_\mu^{2}$ | $\sum_\mu h_\mu^{2}$ | $h_0^{2}-\sum_kh_k^{2}$ |
-| $\mathbb{M}_+$ | $\tilde Q=a_0e_0+i\mathbf p$, $a_0\in\mathbb{R}$ | $a_0^{2}+(\mathbf p,\mathbf p)$ | $a_0^{2}-(\mathbf p,\mathbf p)$ | $a_0^{2}+(\mathbf p,\mathbf p)$ | $a_0^{2}-(\mathbf p,\mathbf p)$ |
-| $\mathbb{M}_-$ | $\tilde Q=ib_0e_0+\mathbf q$, $b_0\in\mathbb{R}$ | $-b_0^{2}-(\mathbf q,\mathbf q)$ | $-b_0^{2}+(\mathbf q,\mathbf q)$ | $b_0^{2}+(\mathbf q,\mathbf q)$ | $b_0^{2}-(\mathbf q,\mathbf q)$ |
+| $\mathbb{M}_+$ | $\tilde Q=a_0e_0+i\vec p$, $a_0\in\mathbb{R}$ | $a_0^{2}+(\vec p,\vec p)$ | $a_0^{2}-(\vec p,\vec p)$ | $a_0^{2}+(\vec p,\vec p)$ | $a_0^{2}-(\vec p,\vec p)$ |
+| $\mathbb{M}_-$ | $\tilde Q=ib_0e_0+\vec q$, $b_0\in\mathbb{R}$ | $-b_0^{2}-(\vec q,\vec q)$ | $-b_0^{2}+(\vec q,\vec q)$ | $b_0^{2}+(\vec q,\vec q)$ | $b_0^{2}-(\vec q,\vec q)$ |
 
 Reading each restriction as a real quadratic form, the signatures are these.
 
@@ -36,7 +36,7 @@ Reading each restriction as a real quadratic form, the signatures are these.
 
 ## Notational Conventions
 
-$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the biquaternion algebra, with basis $e_0,e_1,e_2,e_3$, $e_0=1$, $e_k^{2}=-e_0$, and central scalar imaginary $i$, $i^{2}=-1$. A general element is $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$, written in the centre–vector split $\tilde Q=c+v$ with $c=Q_0e_0\in\mathbb{C}_{\mathbb{B}}$ and $v=\sum_{k=1}^{3}Q_ke_k\in\mathrm{Vect}(\mathbb{B})$. The scalar part is $\mathrm{Sc}$, the coefficientwise conjugation is $\bar{\cdot}$, the natural conjugation is ${}^{\natural}$, with $Q^{\natural}_\nu=\varepsilon_\nu Q_\nu$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The sign vector is $\varepsilon=(1,-1,-1,-1)$, and $\mathbb{B}$ is identified with $\mathbb{C}^{4}$ by $\tilde Q\mapsto(Q_0,Q_1,Q_2,Q_3)$. The vector parts carry the complex bilinear dot product $(\mathbf P,\mathbf Q)=\sum_{k=1}^{3}P_kQ_k$ and the cross product $\mathbf P\times\mathbf Q$.
+$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the biquaternion algebra, with basis $e_0,e_1,e_2,e_3$, $e_0=1$, $e_k^{2}=-e_0$, and central scalar imaginary $i$, $i^{2}=-1$. A general element is $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$, written in the centre–vector split $\tilde Q=c+v$ with $c=Q_0e_0\in\mathbb{C}_{\mathbb{B}}$ and $v=\sum_{k=1}^{3}Q_ke_k\in\mathrm{Vect}(\mathbb{B})$. The scalar part is $\mathrm{Sc}$, the coefficientwise conjugation is $\bar{\cdot}$, the natural conjugation is ${}^{\natural}$, with $Q^{\natural}_\nu=\varepsilon_\nu Q_\nu$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The sign vector is $\varepsilon=(1,-1,-1,-1)$, and $\mathbb{B}$ is identified with $\mathbb{C}^{4}$ by $\tilde Q\mapsto(Q_0,Q_1,Q_2,Q_3)$. The vector parts carry the complex bilinear dot product $(\vec P,\vec Q)=\sum_{k=1}^{3}P_kQ_k$ and the cross product $\vec P\times\vec Q$.
 
 The four general forms are the four pairings of *Conventions in the Biquaternion Universe*, written with the one bracket $\langle\cdot,\cdot\rangle$ whose subscript records the pair $(a,b)$:
 
@@ -62,7 +62,7 @@ $$
 
 $B$ is the general plain bilinear algebraic norm $\langle\tilde Q,\tilde Q\rangle$, $N$ the general quaternionic bilinear algebraic norm $\langle\tilde Q,\tilde Q\rangle_{\natural}$, $H$ the general plain sesquilinear algebraic norm $\langle\tilde Q,\tilde Q\rangle_{*}$ and $K$ the general quaternionic sesquilinear algebraic norm $\langle\tilde Q,\tilde Q\rangle_{\natural*}$; the names, the bracket and the pair of each are the convention of *Conventions in the Biquaternion Universe*, and the four are defined in *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, which also counts them, and separated, as the algebraic norms of those forms, in *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*. $H$ is also the Hermitian algebraic norm and $K$ the Krein algebraic norm. The Euclidean norm is $\lVert\tilde Q\rVert_E=\bigl(\sum_\mu\lvert Q_\mu\rvert^{2}\bigr)^{1/2}$, the square root of $H$ and the unique topological norm of the space.
 
-The remarkable subspaces and their real bases are those of *Introduction to the Remarkable Subspaces*, and are used here in the coordinate form that article gives: the centre $\mathbb{C}_{\mathbb{B}}=\{Ae_0:A\in\mathbb{C}\}$, of real dimension two; the vector subspace $\mathrm{Vect}(\mathbb{B})=\{\sum_kP_ke_k:P_k\in\mathbb{C}\}$, of real dimension six; the quaternion subspace $\mathbb{H}_{\mathbb{B}}=\{\sum_\mu h_\mu e_\mu:h_\mu\in\mathbb{R}\}$ and the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}=\{ih:h\in\mathbb{H}_{\mathbb{B}}\}$, of real dimension four; and the Hermitian subspace $\mathbb{M}_+=\{a_0e_0+i\mathbf p:a_0\in\mathbb{R},\ \mathbf p\ \text{real}\}$ and the anti-Hermitian subspace $\mathbb{M}_-=\{ib_0e_0+\mathbf q:b_0\in\mathbb{R},\ \mathbf q\ \text{real}\}$, of real dimension four. A signature $(p,q)$ over $\mathbb{R}$ counts $p$ positive and $q$ negative squares of the real quadratic form; it is definite when one of the two numbers is zero and indefinite otherwise.
+The remarkable subspaces and their real bases are those of *Introduction to the Remarkable Subspaces*, and are used here in the coordinate form that article gives: the centre $\mathbb{C}_{\mathbb{B}}=\{Ae_0:A\in\mathbb{C}\}$, of real dimension two; the vector subspace $\mathrm{Vect}(\mathbb{B})=\{\sum_kP_ke_k:P_k\in\mathbb{C}\}$, of real dimension six; the quaternion subspace $\mathbb{H}_{\mathbb{B}}=\{\sum_\mu h_\mu e_\mu:h_\mu\in\mathbb{R}\}$ and the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}=\{ih:h\in\mathbb{H}_{\mathbb{B}}\}$, of real dimension four; and the Hermitian subspace $\mathbb{M}_+=\{a_0e_0+i\vec p:a_0\in\mathbb{R},\ \vec p\ \text{real}\}$ and the anti-Hermitian subspace $\mathbb{M}_-=\{ib_0e_0+\vec q:b_0\in\mathbb{R},\ \vec q\ \text{real}\}$, of real dimension four. A signature $(p,q)$ over $\mathbb{R}$ counts $p$ positive and $q$ negative squares of the real quadratic form; it is definite when one of the two numbers is zero and indefinite otherwise.
 
 ## The Centre Subspace
 
@@ -106,30 +106,30 @@ The Euclidean square $H$ is untouched by the translation by $i$, of signature $(
 
 ## The Hermitian Subspace
 
-**On the Hermitian subspace the general plain bilinear algebraic norm coincides with the general plain sesquilinear one, $B=H$, and the general quaternionic bilinear with the general quaternionic sesquilinear, $N=K$.** An element is $\tilde Q=a_0e_0+i\mathbf p$ with $a_0$ real and $\mathbf p$ a real vector, so that $Q_0=a_0$ is real and $Q_k=ip_k$ is purely imaginary: the products $Q_0^{2}=a_0^{2}$ and $Q_k^{2}=-p_k^{2}$ give
+**On the Hermitian subspace the general plain bilinear algebraic norm coincides with the general plain sesquilinear one, $B=H$, and the general quaternionic bilinear with the general quaternionic sesquilinear, $N=K$.** An element is $\tilde Q=a_0e_0+i\vec p$ with $a_0$ real and $\vec p$ a real vector, so that $Q_0=a_0$ is real and $Q_k=ip_k$ is purely imaginary: the products $Q_0^{2}=a_0^{2}$ and $Q_k^{2}=-p_k^{2}$ give
 
 $$
-B=a_0^{2}+(\mathbf p,\mathbf p),\qquad N=a_0^{2}-(\mathbf p,\mathbf p),\qquad H=a_0^{2}+(\mathbf p,\mathbf p),\qquad K=a_0^{2}-(\mathbf p,\mathbf p).
+B=a_0^{2}+(\vec p,\vec p),\qquad N=a_0^{2}-(\vec p,\vec p),\qquad H=a_0^{2}+(\vec p,\vec p),\qquad K=a_0^{2}-(\vec p,\vec p).
 $$
 
-On this subspace the effect of the sign vector $\varepsilon$ is cancelled by the effect of the central imaginary unit: the sign $\varepsilon_k=-1$ of the bilinear sums composes with the sign $i^{2}=-1$ of the imaginary coordinates to give a net $+1$, so that the two bilinear algebraic norms take the same values as the two sesquilinear ones, $B=H$ and $N=K$. The pair $B=H$ is the positive sum of the four squares, of signature $(4,0)$, and the pair $N=K$ is the form $a_0^{2}-(\mathbf p,\mathbf p)$, of signature $(1,3)$, indefinite. On the Hermitian subspace the two bilinear algebraic norms coincide with the two sesquilinear ones, and the coincidence is exact rather than up to sign; it is this coincidence that makes the four algebraic norms fall to the two real forms there, and it does not make the multiplicative algebraic norm definite. $N$ is indefinite on $\mathbb{M}_+$, of signature $(1,3)$; the definite one is $H$, of signature $(4,0)$, the Euclidean square.
+On this subspace the effect of the sign vector $\varepsilon$ is cancelled by the effect of the central imaginary unit: the sign $\varepsilon_k=-1$ of the bilinear sums composes with the sign $i^{2}=-1$ of the imaginary coordinates to give a net $+1$, so that the two bilinear algebraic norms take the same values as the two sesquilinear ones, $B=H$ and $N=K$. The pair $B=H$ is the positive sum of the four squares, of signature $(4,0)$, and the pair $N=K$ is the form $a_0^{2}-(\vec p,\vec p)$, of signature $(1,3)$, indefinite. On the Hermitian subspace the two bilinear algebraic norms coincide with the two sesquilinear ones, and the coincidence is exact rather than up to sign; it is this coincidence that makes the four algebraic norms fall to the two real forms there, and it does not make the multiplicative algebraic norm definite. $N$ is indefinite on $\mathbb{M}_+$, of signature $(1,3)$; the definite one is $H$, of signature $(4,0)$, the Euclidean square.
 
 ## The Anti-Hermitian Subspace
 
-**On the anti-Hermitian subspace the two bilinear algebraic norms are the negative of the two on the Hermitian subspace, and the two sesquilinear ones agree with it.** An element is $\tilde Q=ib_0e_0+\mathbf q$ with $b_0$ real and $\mathbf q$ a real vector, so that $Q_0=ib_0$ is purely imaginary and $Q_k=q_k$ is real:
+**On the anti-Hermitian subspace the two bilinear algebraic norms are the negative of the two on the Hermitian subspace, and the two sesquilinear ones agree with it.** An element is $\tilde Q=ib_0e_0+\vec q$ with $b_0$ real and $\vec q$ a real vector, so that $Q_0=ib_0$ is purely imaginary and $Q_k=q_k$ is real:
 
 $$
-B=-b_0^{2}-(\mathbf q,\mathbf q),\qquad N=-b_0^{2}+(\mathbf q,\mathbf q),\qquad H=b_0^{2}+(\mathbf q,\mathbf q),\qquad K=b_0^{2}-(\mathbf q,\mathbf q).
+B=-b_0^{2}-(\vec q,\vec q),\qquad N=-b_0^{2}+(\vec q,\vec q),\qquad H=b_0^{2}+(\vec q,\vec q),\qquad K=b_0^{2}-(\vec q,\vec q).
 $$
 
-The Euclidean square $H$ and the Krein algebraic norm $K$ are the same as on the Hermitian subspace, because the passage from $\mathbb{M}_+$ to $\mathbb{M}_-$ replaces the imaginary vector $\mathbf p$ by the real vector $\mathbf q$ and the real $a_0$ by the imaginary $ib_0$, an exchange that touches the bilinear algebraic norms and not the sesquilinear ones. So $H$ is positive definite of signature $(4,0)$, unchanged, and $K=b_0^{2}-(\mathbf q,\mathbf q)$ is the Lorentzian form of signature $(1,3)$, unchanged; while $B=-H$ is negative definite, of signature $(0,4)$, and $N=-K$ is of signature $(3,1)$. The material sector is this subspace, and the section below reads it.
+The Euclidean square $H$ and the Krein algebraic norm $K$ are the same as on the Hermitian subspace, because the passage from $\mathbb{M}_+$ to $\mathbb{M}_-$ replaces the imaginary vector $\vec p$ by the real vector $\vec q$ and the real $a_0$ by the imaginary $ib_0$, an exchange that touches the bilinear algebraic norms and not the sesquilinear ones. So $H$ is positive definite of signature $(4,0)$, unchanged, and $K=b_0^{2}-(\vec q,\vec q)$ is the Lorentzian form of signature $(1,3)$, unchanged; while $B=-H$ is negative definite, of signature $(0,4)$, and $N=-K$ is of signature $(3,1)$. The material sector is this subspace, and the section below reads it.
 
 ## The Material Interpretation
 
 **Remark (the material reading).** Restricted to the material sector $\mathbb{M}_-$ the four algebraic norms read
 
 $$
-K=b_0^{2}-(\mathbf q,\mathbf q),\qquad N=-b_0^{2}+(\mathbf q,\mathbf q),\qquad H=b_0^{2}+(\mathbf q,\mathbf q),\qquad B=-b_0^{2}-(\mathbf q,\mathbf q),
+K=b_0^{2}-(\vec q,\vec q),\qquad N=-b_0^{2}+(\vec q,\vec q),\qquad H=b_0^{2}+(\vec q,\vec q),\qquad B=-b_0^{2}-(\vec q,\vec q),
 $$
 
 so that $N=-K$ and $B=-H$ there: the interval $N$ of signature $(3,1)$ and its negative $K$ of signature $(1,3)$, the Euclidean square $H$ of signature $(4,0)$ and its negative. The passage from the interval to the Euclidean square is the passage between $N$ and $H$, and it is the single sign the Hermitian conjugation inserts in the second slot; the passage between $K$ and $N$ is the sign the natural conjugation inserts in the first. On the material sector the pair is the Minkowski form and the Euclidean one that the physics part of the corpus reads as the metric of the biquaternion universe, and it is here that the four algebraic norms acquire the two forms — the interval and the Euclidean square — that the physical readings of *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* carry.
@@ -160,7 +160,7 @@ The same facts are read in the four algebraic norms of *The 4 Algebraic Norms ov
 | $\tilde Q=Ae_0$ | the general element of the centre, $A\in\mathbb{C}$ |
 | $\tilde Q=\sum_kP_ke_k$ | the general element of the vector subspace, $P_k\in\mathbb{C}$ |
 | $h=\sum_\mu h_\mu e_\mu$ | the general element of the quaternion subspace, $h_\mu\in\mathbb{R}$ |
-| $a_0e_0+i\mathbf p$, $ib_0e_0+\mathbf q$ | the general elements of the two sectors, $a_0,b_0\in\mathbb{R}$, $\mathbf p,\mathbf q$ real |
+| $a_0e_0+i\vec p$, $ib_0e_0+\vec q$ | the general elements of the two sectors, $a_0,b_0\in\mathbb{R}$, $\vec p,\vec q$ real |
 | $(p,q)$ | the signature over $\mathbb{R}$ of a real quadratic form |
 
 ## Further Reading

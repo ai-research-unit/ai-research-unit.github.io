@@ -27,11 +27,11 @@ Plain Algebra* and *Comparison Between the Four General Products*; the square-ze
 *Remarkable Subspaces under the Symmetric Quaternionic Algebra of Biquaternions*.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$
-with $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$; a general element is $\tilde Q=Q_0e_0+\mathbf Q$
-with $\mathbf Q=Q_1e_1+Q_2e_2+Q_3e_3$ and $(\mathbf P,\mathbf Q)=\sum_{k=1}^{3}P_kQ_k$. The
+with $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$; a general element is $\tilde Q=Q_0e_0+\vec Q$
+with $\vec Q=Q_1e_1+Q_2e_2+Q_3e_3$ and $(\vec P,\vec Q)=\sum_{k=1}^{3}P_kQ_k$. The
 **symmetric quaternionic multiplication** is
 $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)=N(\tilde P,\tilde Q)e_0$
-with $N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$, and its diagonal is
+with $N(\tilde P,\tilde Q)=P_0Q_0+(\vec P,\vec Q)$, and its diagonal is
 $N(\tilde Q)=N(\tilde Q,\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^2$; the operation is also written
 $\bullet$. The centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$, the vector subspace
 $\mathrm{Vect}(\mathbb{B})=\mathbb{C}e_1+\mathbb{C}e_2+\mathbb{C}e_3$, and the Hermitian subspaces
@@ -118,8 +118,8 @@ and its square is the nonzero central element $N(\tilde Q)e_0$.
 with the parent, the split by the scalar part into the elements with $Q_0=0$ and those with
 $Q_0\neq0$. The two splits are different here, and the block uses the isotropic one. In the parent
 the pure family *is* the nilpotent family (*Zero Divisors of the General Plain Algebra*); in the
-block a pure element $\tilde Q=\mathbf Q$ is a zero divisor like every other, but it is square-zero
-only when it is isotropic, $\tilde Q\star\tilde Q=(\mathbf Q,\mathbf Q)e_0$, and otherwise its
+block a pure element $\tilde Q=\vec Q$ is a zero divisor like every other, but it is square-zero
+only when it is isotropic, $\tilde Q\star\tilde Q=(\vec Q,\vec Q)e_0$, and otherwise its
 square is a nonzero central element. The pure family is therefore not the nilpotent family of the
 block, and the identification of the two, valid in the parent, fails here.
 
@@ -143,12 +143,12 @@ is not a proper subvariety but the space itself, endowed with the map to its hyp
 | the subspace | the isotropic elements | the zero divisors |
 |---|---|---|
 | the centre $\mathbb{C}_{\mathbb{B}}$ | none but $0$ | all nonzero: $\lambda e_0\star e_k=0$ for every $k$ |
-| the vector subspace $\mathrm{Vect}(\mathbb{B})$ | the cone $(\mathbf Q,\mathbf Q)=0$ | all nonzero |
+| the vector subspace $\mathrm{Vect}(\mathbb{B})$ | the cone $(\vec Q,\vec Q)=0$ | all nonzero |
 | the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ | none but $0$, the diagonal being definite there | all nonzero |
 | the Hermitian subspaces $\mathbb{M}_+$, $\mathbb{M}_-$ | the light cones, of real dimension three | all nonzero |
 
 A nonzero central element annihilates the whole vector subspace, since
-$\lambda e_0\star\mathbf Q=\lambda\mathbf Q_0e_0=0$; the centre is accordingly contained in the set
+$\lambda e_0\star\vec Q=\lambda\vec Q_0e_0=0$; the centre is accordingly contained in the set
 not merely as a subset but as its most degenerate part. The subspaces and their isotropic cones are
 *Remarkable Subspaces under the Symmetric Quaternionic Algebra of Biquaternions* and *Introduction
 to the Remarkable Subspaces*.
@@ -217,7 +217,7 @@ and $\mathrm{AQS}$ being maximal too, and the symmetric plain product is not amo
 | symbol | meaning |
 |---|---|
 | $\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0$ | the symmetric quaternionic multiplication |
-| $N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$ | the form of the block |
+| $N(\tilde P,\tilde Q)=P_0Q_0+(\vec P,\vec Q)$ | the form of the block |
 | $N(\tilde Q)=N(\tilde Q,\tilde Q)=\sum_\mu Q_\mu^2$ | the form at the two equal arguments, the algebraic norm of the block |
 | $\mathcal{Z}_{\star}=\mathbb{B}\setminus\{0\}$ | the zero-divisor set of the block |
 | $\operatorname{Ann}(\tilde Q)=\tilde Q^{\perp}$ | the two-sided annihilator of a nonzero element, a hyperplane |

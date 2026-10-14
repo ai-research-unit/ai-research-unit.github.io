@@ -16,7 +16,7 @@ This article asks what the biquaternion framework supplies for this derivation. 
 $$
 \mathrm{tr}\big(\gamma_5\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma\big) = -4i\,\epsilon^{\mu\nu\rho\sigma},
 $$
-recomputed here for all permutations. Because $\gamma_5=i\omega$ with $\omega$ the volume element, the trace is the framework's own chirality structure; because the field strength enters through the commutator $[D_\mu,D_\nu]$, the density is the framework's invariant $I_2=\mathbf{E}\cdot\mathbf{B}$. The method does not introduce an object the algebra lacks.
+recomputed here for all permutations. Because $\gamma_5=i\omega$ with $\omega$ the volume element, the trace is the framework's own chirality structure; because the field strength enters through the commutator $[D_\mu,D_\nu]$, the density is the framework's invariant $I_2=\vec E\cdot\vec B$. The method does not introduce an object the algebra lacks.
 - **Standard, transcribed.** The measure, the Jacobian, the heat-kernel expansion (Seeley–DeWitt), the Fujikawa coefficient, and the index form of the integrated anomaly are standard. The measure is a functional-integral object and belongs to the corpus's general path-integral apparatus, which is cited and not rebuilt here.
 - **Gap, left visible.** The framework does not supply the functional measure: the algebra gives the operator whose determinant is taken, not the space of fields over which the integral runs. The chiral rotation itself is the axial symmetry of the linear chiral pair; the *anomaly* is the statement that this rotation is not a symmetry of the measure. The framework carries the rotation and the operator; the measure is imported.
 
@@ -30,7 +30,7 @@ $$
 \{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4,\qquad g=\mathrm{diag}(+1,-1,-1,-1),
 $$
 
-with $\gamma_5=i\omega$ and $\omega=\gamma^0\gamma^1\gamma^2\gamma^3$ the volume element. The gauge covariant derivative is $D_\mu=\partial_\mu+\tfrac{iq}{\hbar}A_\mu$ with $[D_\mu,D_\nu]=\tfrac{iq}{\hbar}F_{\mu\nu}$ for the abelian factor, and $\mathcal{D}\psi\,\mathcal{D}\bar{\psi}$ denotes the fermion measure of the functional integral. The totally antisymmetric symbol has $\epsilon^{0123}=+1$, and $F_{0i}=E_i$, $F_{ij}=-\epsilon_{ijk}B_k$. The biquaternion field invariants are $I_1=\mathbf{E}^2-c^2\mathbf{B}^2$ and $I_2=\mathbf{E}\cdot\mathbf{B}$, with $\mathbf{B}=\mu\mathbf{H}$, in the instanton article's normalization. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; natural units $\hbar=c=1$ are used in the heat-kernel section.
+with $\gamma_5=i\omega$ and $\omega=\gamma^0\gamma^1\gamma^2\gamma^3$ the volume element. The gauge covariant derivative is $D_\mu=\partial_\mu+\tfrac{iq}{\hbar}A_\mu$ with $[D_\mu,D_\nu]=\tfrac{iq}{\hbar}F_{\mu\nu}$ for the abelian factor, and $\mathcal{D}\psi\,\mathcal{D}\bar{\psi}$ denotes the fermion measure of the functional integral. The totally antisymmetric symbol has $\epsilon^{0123}=+1$, and $F_{0i}=E_i$, $F_{ij}=-\epsilon_{ijk}B_k$. The biquaternion field invariants are $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$, with $\vec B=\mu\vec H$, in the instanton article's normalization. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ the vacuum value; natural units $\hbar=c=1$ are used in the heat-kernel section.
 
 The framework results used here are those of the companion articles:
 
@@ -167,17 +167,17 @@ which is exactly the ABJ form of the companion article. The mass term is the cla
 **The density is the framework's invariant.** The contraction is
 
 $$
-\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma} = -8\,\mathbf{E}\cdot\mathbf{B},
+\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma} = -8\,\vec E\cdot\vec B,
 $$
 
 evaluated directly with $F_{0i}=E_i$, $F_{ij}=-\epsilon_{ijk}B_k$ for sample fields; hence
 
 $$
-A(x) = -\frac{q^2}{2\pi^2}\,\mathbf{E}\cdot\mathbf{B}
+A(x) = -\frac{q^2}{2\pi^2}\,\vec E\cdot\vec B
 = -\frac{q^2}{2\pi^2}\,I_2 ,
 $$
 
-which is the framework's second invariant $I_2$ of the biquaternion field $\tilde{F}=i\sqrt{\epsilon}\,\mathbf{E}-\sqrt{\mu}\,\mathbf{H}$, in the normalization of the instanton article. The anomalous divergence is therefore the divergence of the axial current into the framework's own pseudoscalar invariant; the parity-odd density is parity-odd because $I_2$ is a pseudoscalar, and the topological character noted in the companion article is the total-derivative form of the same contraction.
+which is the framework's second invariant $I_2$ of the biquaternion field $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, in the normalization of the instanton article. The anomalous divergence is therefore the divergence of the axial current into the framework's own pseudoscalar invariant; the parity-odd density is parity-odd because $I_2$ is a pseudoscalar, and the topological character noted in the companion article is the total-derivative form of the same contraction.
 
 **Why $\gamma_5$ is the volume element.** The identity $\gamma_5=i\omega$ is what makes the whole computation a statement about the algebra rather than about a chosen basis. The chirality operator is the volume element of the Clifford algebra up to the central $i$; the anomaly trace is the trace of the volume element against the heat kernel; and the $\epsilon$ symbol is the coordinate form of the volume element. In the biquaternion language $\omega=\mathsf{M}_2(i)$ is the image of the central scalar imaginary, so the insertion of $\gamma_5$ is an insertion of the algebra's central element — the same element whose phase is the vector symmetry that the mass conserves. The axial and vector currents differ by which element of the centre is inserted, and the anomaly is the statement that the volume-element insertion is not a symmetry of the measure.
 
@@ -185,7 +185,7 @@ which is the framework's second invariant $I_2$ of the biquaternion field $\tild
 
 $$
 \big\langle x\big|e^{-\partial^2/M^2}\big|x\big\rangle
-= \int\frac{d^4p}{(2\pi)^4}\,e^{-\mathbf{p}^2/M^2}
+= \int\frac{d^4p}{(2\pi)^4}\,e^{-\vec p^2/M^2}
 = \frac{M^4}{16\pi^2},
 $$
 
@@ -229,7 +229,7 @@ so the axial charge transported in a background is twice the index. The index is
 | The chirality insertion $\gamma_5=i\omega$ as the volume element | **Supplied** by the Clifford isomorphism |
 | The trace identity $\mathrm{tr}(\gamma_5\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma)=-4i\epsilon^{\mu\nu\rho\sigma}$ | **Supplied**, recomputed for all permutations |
 | The heat-kernel splitting $(\gamma^\mu D_\mu)^2=D^2+\tfrac{q}{2}\sigma^{\mu\nu}F_{\mu\nu}$ | **Supplied** from the Clifford relations |
-| The anomaly density as the framework's invariant $I_2=\mathbf{E}\cdot\mathbf{B}$ | **Supplied**; the coefficient is standard |
+| The anomaly density as the framework's invariant $I_2=\vec E\cdot\vec B$ | **Supplied**; the coefficient is standard |
 | The Dirac operator whose determinant is the measure's Jacobian | **Supplied**: the module representative of the linear chiral pair |
 | The functional measure $\mathcal{D}\psi\,\mathcal{D}\bar{\psi}$ and the determinant | **Not supplied**; the general path-integral and functional-integral apparatus, cited |
 | The Fujikawa coefficient, the Seeley–DeWitt expansion, and the index relation | **Transcribed**; standard |
@@ -253,10 +253,10 @@ The Fujikawa method derives the axial anomaly as the Jacobian of the fermion mea
 
 $$
 A(x)=\frac{q^2}{16\pi^2}\,\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}
-= -\frac{q^2}{2\pi^2}\,\mathbf{E}\cdot\mathbf{B},
+= -\frac{q^2}{2\pi^2}\,\vec E\cdot\vec B,
 $$
 
-so the anomaly density is proportional to the framework's second field invariant $I_2=\mathbf{E}\cdot\mathbf{B}$. The axial divergence is the ABJ form, with the mass term the classical breaking and the Jacobian term the quantum one.
+so the anomaly density is proportional to the framework's second field invariant $I_2=\vec E\cdot\vec B$. The axial divergence is the ABJ form, with the mass term the classical breaking and the Jacobian term the quantum one.
 
 The biquaternion content is threefold: the chirality insertion is the volume element, $\gamma_5=i\omega$; the heat-kernel splitting follows from the Clifford relations; and the density is the framework's own pseudoscalar invariant. The rotation is the axial symmetry of the linear chiral pair, and the anomaly is the statement that this rotation does not preserve the measure — while the vector central rotation, being vector-like, does. The integrated anomaly is twice the index of the Dirac operator, which makes the coefficient an integer and therefore exact; the index theorem and the zero-mode count belong to the general gauge apparatus and were cited, not rebuilt. The functional measure itself is not supplied by the algebra: the framework carries the operator and the rotation, and the measure is imported from the path-integral apparatus of the companion articles.
 
@@ -277,8 +277,8 @@ The biquaternion content is threefold: the chirality insertion is the volume ele
 | $J=\exp(-i\int d^4x\,\alpha A)$ | Jacobian of the measure under the rotation, both determinant factors included |
 | $Z[A]=\det(i\gamma^\mu D_\mu-m)$ | Fermion determinant |
 | $\int d^4x\,\partial_\mu j_5^\mu=2\,\mathrm{ind}(D\!\!\!/)$ | Integrated anomaly and index |
-| $I_1=\mathbf{E}^2-c^2\mathbf{B}^2$, $I_2=\mathbf{E}\cdot\mathbf{B}$ | Biquaternion field invariants |
-| $\tilde{F}=i\sqrt{\epsilon}\mathbf{E}-\sqrt{\mu}\mathbf{H}$ | Biquaternion field strength |
+| $I_1=\vec E^2-c^2\vec B^2$, $I_2=\vec E\cdot\vec B$ | Biquaternion field invariants |
+| $\tilde{F}=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Biquaternion field strength |
 | $2im\bar{\psi}\gamma_5\psi$ | Mass contribution to the axial divergence |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 

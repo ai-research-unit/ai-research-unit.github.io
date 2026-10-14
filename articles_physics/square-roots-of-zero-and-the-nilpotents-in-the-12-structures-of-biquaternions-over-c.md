@@ -43,7 +43,7 @@ $i$ is central with $i^{2}=-1$. The conjugations are ${}^{\natural}$, $\bar{\cdo
 ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The **central square** is
 $C(\tilde P)e_0=\tilde P^{\natural}\tilde P$ with $C(\tilde P)=\sum_\mu P_\mu^{2}$, and the **cone** is
 $\mathcal{C}=\{C=0\}$. An element is
-**pure** when $P_0=0$; the material coordinate is $\tilde P=i c t\,e_0+\mathbf x$. The four square-zero
+**pure** when $P_0=0$; the material coordinate is $\tilde P=i c t\,e_0+\vec x$. The four square-zero
 sets of the four general products are written $Z_1$ (plain), $Z_2$ (natural), $Z_3$ (plain sesquilinear)
 and $Z_4$ (quaternionic sesquilinear). The twelve structures are cited by their three-letter names.
 
@@ -59,11 +59,11 @@ $\{\tilde\Upsilon:\tilde\Upsilon\star\tilde\Upsilon=0\}$, origin included, and i
 nilpotent set of the structure.
 
 **In the plain product, the pure isotropic cone.** The plain square of a pure element is
-$-(\mathbf\Xi,\mathbf\Xi)e_0$, so the nonzero roots of $0$ are the pure elements with
-$(\mathbf\Xi,\mathbf\Xi)=0$. Written with real vectors as $\tilde\Xi=\mathbf u+i\mathbf v$, the equations
-are $\mathbf u^{2}=\mathbf v^{2}$ and $\mathbf u\cdot\mathbf v=0$; the root set is the **pure isotropic
+$-(\vec\Xi,\vec\Xi)e_0$, so the nonzero roots of $0$ are the pure elements with
+$(\vec\Xi,\vec\Xi)=0$. Written with real vectors as $\tilde\Xi=\vec u+i\vec v$, the equations
+are $\vec u^{2}=\vec v^{2}$ and $\vec u\cdot\vec v=0$; the root set is the **pure isotropic
 cone** $\{\Xi_0=0,\ \Xi_1^{2}+\Xi_2^{2}+\Xi_3^{2}=0\}$, of real dimension four, and it is one component of
-the plain cone $(\mathbf\Xi,\mathbf\Xi)=0$. The other component is the non-pure cone, the multiples of
+the plain cone $(\vec\Xi,\vec\Xi)=0$. The other component is the non-pure cone, the multiples of
 the projectors, and the two components meet at the origin alone. The physical interpretation is the lightlike
 displacement, the solution set of the wave equation, and the owner is *The Light Cone as the Biquaternion
 Zero-Divisor Cone*.
@@ -101,7 +101,7 @@ middle is not. The rank-drop reading of the same fact, rank two massive and rank
 Rank and the Positivity of the Dagger*.
 
 **The two sub-families inside the cone.** The cone of roots of $0$ splits as the cone itself does. The
-**pure** roots, $\Xi_0=0$ with $(\mathbf\Xi,\mathbf\Xi)=0$, are the nilpotent lightlike displacements of
+**pure** roots, $\Xi_0=0$ with $(\vec\Xi,\vec\Xi)=0$, are the nilpotent lightlike displacements of
 the vector subspace; the **non-pure** family, reached only in the structures whose square is not the plain
 square, consists of the square-zero elements of the indefinite bands and carries the lightlike family
 $c(\hat\mu\pm i)$ of the gauge sesquilinear structure. The elementary physical case is a pure nilpotent
@@ -144,7 +144,7 @@ The mathematics companion computes the four square-zero sets of the four general
 
 | product | the square-zero set | real dimension | physical interpretation |
 |---|---|---|---|
-| GPA | the pure isotropic cone $\{P_0=0,(\mathbf P,\mathbf P)=0\}$ | $4$ | the pure null displacements, the lightlike directions of the composition |
+| GPA | the pure isotropic cone $\{P_0=0,(\vec P,\vec P)=0\}$ | $4$ | the pure null displacements, the lightlike directions of the composition |
 | GQA | the whole cone $\mathcal{C}$ | $6$ | every lightlike element is self-annihilating in the interval band |
 | GPS | the origin alone | $0$ | the probability band has no nonzero square-zero element |
 | GQS | the subfamily $\overline{\tilde P}\tilde P=0$, containing $e_0+ie_1$ | $4$ | a proper part of the lightlike family of the gauge band |
@@ -185,7 +185,7 @@ twelve in one place.
 ### $\mathrm{GPA}$, the general plain algebra — composition
 
 The product is the plain product and its square is the plain square. The root set of $0$ is the pure
-isotropic cone $\{P_0=0,\ (\mathbf P,\mathbf P)=0\}$, of real dimension four, one component of the
+isotropic cone $\{P_0=0,\ (\vec P,\vec P)=0\}$, of real dimension four, one component of the
 zero-divisor cone: the lightlike displacements that are their own annihilating partner. It is a proper
 subfamily of the cone, because a non-pure cone element is a multiple of a projector and not square-zero.
 The reading is *The Cone and the Massless Particles in the 12 Structures of Biquaternions over
@@ -200,7 +200,7 @@ Composition and the Jordan Identity*.
 
 ### $\mathrm{APA}$, the antisymmetric plain algebra — rotation
 
-The product is the commutator $\mathbf P\times\mathbf Q$, alternating, so its square vanishes identically.
+The product is the commutator $\vec P\times\vec Q$, alternating, so its square vanishes identically.
 The root set of $0$ is the whole space: every element is square-zero, an infinitesimal rotation. The
 reading is *The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket*.
 
@@ -358,7 +358,7 @@ the lightlike displacement, read in the light cone articles. The second is exact
 square-zero class contains the fermionic ladder operators of a single mode. Separating the two jobs is the
 content of this section.
 
-**The lightlike displacement.** The material pure nilpotents $Q_0=0$, $(\mathbf Q,\mathbf Q)=0$ are the
+**The lightlike displacement.** The material pure nilpotents $Q_0=0$, $(\vec Q,\vec Q)=0$ are the
 lightlike directions, and the natural product squares every cone element to zero. The physical particle is
 the photon, and *The Null Four-Momentum: What the Cone Derives and What It Does Not* fixes how far
 the identification goes. A nilpotent has a direction and no magnitude; its square vanishing is the
@@ -376,22 +376,23 @@ and a direct computation gives
 
 $$
 \tilde\Upsilon_1^{2}=\tilde\Upsilon_2^{2}=0,\qquad
-\tilde\Upsilon_1\tilde\Upsilon_2=\tilde\Pi_1,\qquad
-\tilde\Upsilon_2\tilde\Upsilon_1=\tilde\Pi_2,\qquad
+\tilde\Upsilon_1\tilde\Upsilon_2=\tilde\Pi_+,\qquad
+\tilde\Upsilon_2\tilde\Upsilon_1=\tilde\Pi_-,\qquad
 \{\tilde\Upsilon_1,\tilde\Upsilon_2\}=e_0,
 $$
 
-with $\tilde\Pi_1=\tfrac12(e_0+ie_3)$ and $\tilde\Pi_2=\tfrac12(e_0-ie_3)$ the vacuum and occupied
-projectors of *The Biquaternion Vacuum as a Minimal Idempotent*. The creation and annihilation operators
+with $\tilde\Pi_+=\tfrac12(e_0+ie_3)$ and $\tilde\Pi_-=\tfrac12(e_0-ie_3)$ the vacuum and occupied
+projectors of *The Biquaternion Vacuum as a Minimal Idempotent*; the element $ie_3$ is a root of $+1$,
+$(ie_3)^2=e_0$, and the two are its associated idempotents. The creation and annihilation operators
 of a single fermionic mode are therefore **nilpotents of the algebra itself**, and the canonical
 anticommutator $\{\tilde a,\tilde a^\dagger\}=e_0$ is the statement that a square-zero pair multiplies to
 the identity. Pauli exclusion is the vanishing square: $\tilde\Upsilon^{2}=0$ says that a second
 application of the same step gives nothing, which is exactly the algebraic form of the statement that a
 mode cannot be occupied twice. The vacuum is the product of the two steps,
-$\tilde\Pi_1=\tilde\Upsilon_1\tilde\Upsilon_2$, so the state and the ladder are not independent objects:
+$\tilde\Pi_+=\tilde\Upsilon_1\tilde\Upsilon_2$, so the state and the ladder are not independent objects:
 the state is what the nilpotent pair creates. *The Spin–Statistics Theorem in Biquaternionic Form* fixes
 the anticommutator, and *The Dirac Sea, Hole Theory and Antimatter in Biquaternionic Form* gives the
-two-projector picture of the mode, which the pair $\tilde\Pi_1,\tilde\Pi_2$ is in the algebra.
+two-projector picture of the mode, which the pair $\tilde\Pi_+,\tilde\Pi_-$ is in the algebra.
 
 **Why the ladder is the nilpotent one.** *The Biquaternion Vacuum as a Minimal Idempotent* records that
 the algebra contains no bosonic ladder: no pair $\tilde a,\tilde a^\dagger\in\mathbb{B}$ can satisfy
@@ -456,7 +457,7 @@ the odd class is a derivative whose vanishing square is what makes a cohomology 
 **The Dirac cone and the null direction.** *Dirac Matter: Graphene, Dirac Cones and Topological
 Insulators in Biquaternionic Form* reads the massless low-energy excitations of graphene and of a
 topological-insulator surface as a two-component spinor with a linear dispersion, and the framework names
-the three objects involved: the spinor, the $\boldsymbol\sigma\cdot\mathbf p$ kinetic term and the
+the three objects involved: the spinor, the $\boldsymbol\sigma\cdot\vec p$ kinetic term and the
 mass term that opens the gap. The **Dirac point** is the momentum at which the dispersion is linear and
 the gap closes, and the masslessness of that point is the vanishing of the interval. The nilpotent of
 this article is the momentum element at that point: a lightlike momentum with
@@ -548,7 +549,7 @@ the same vanishing square doing arithmetic. For a null element $P$ (so $N(P)=0$,
 $e_0+P$ is a **unit**, with inverse $e_0-P$, and $(e_0+P)^n=e_0+nP$: a nilpotent direction generates an
 infinite cyclic subgroup of the unit group. The article's own reading is exact and is the one to keep: the
 real orders have finite unit groups, the complex order does not, and the difference is the **light cone** —
-the null direction is the nilpotent one, it lies on $c^2t^2=\mathbf{x}^2$, and it generates a
+the null direction is the nilpotent one, it lies on $c^2t^2=\vec x^2$, and it generates a
 translation-like one-parameter group without bound, while the finite unit groups sit in the real sector,
 where the norm is definite and no null direction exists. So the zero of the norm is what makes a unit group
 infinite, and the algebraic statement of the light cone's presence is the infinite unit group of the complex
@@ -685,7 +686,7 @@ element theory of the algebra.
 - $C(\tilde Q)e_0=\tilde Q^{\natural}\tilde Q$ the central square; the cone $\mathcal{C}=\{C=0\}$.
 - $Z_1,Z_2,Z_3,Z_4$ the square-zero sets of the plain, natural, general plain sesquilinear and general quaternionic sesquilinear products.
 - $A_\star(\tilde P)$, $B_\star(\tilde P)$ the left and right annihilators; self-annihilation is $\tilde P\in A_\star(\tilde P)$.
-- ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$; the material coordinate $\tilde Q=i c t\,e_0+\mathbf x$; $H(\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}$.
+- ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$; the material coordinate $\tilde Q=i c t\,e_0+\vec x$; $H(\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}$.
 - The twelve structures: GPA, GQA, GPS, GQS general; SPA, SQA, SPS, SQS symmetric; APA, AQA, APS, AQS antisymmetric.
 
 ## Further Reading

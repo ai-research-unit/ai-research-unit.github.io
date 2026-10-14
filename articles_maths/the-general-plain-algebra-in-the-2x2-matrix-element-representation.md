@@ -133,18 +133,18 @@ the plain, the quaternionic, the Hermitian and the Krein form, in the two slots 
 The Peirce decomposition of *Ideals and Peirce Decomposition of the General Plain Algebra* reads the algebra on the four elements
 
 $$
-\tilde\Pi_1 = \tfrac12(e_0 + ie_3), \qquad \tilde\Upsilon_1 = \tfrac12(ie_1 - e_2), \qquad \tilde\Upsilon_2 = \tfrac12(ie_1 + e_2), \qquad \tilde\Pi_2 = \tfrac12(e_0 - ie_3),
+\tilde\Pi_+ = \tfrac12(e_0 + ie_3), \qquad \tilde\Upsilon_1 = \tfrac12(ie_1 - e_2), \qquad \tilde\Upsilon_2 = \tfrac12(ie_1 + e_2), \qquad \tilde\Pi_- = \tfrac12(e_0 - ie_3),
 $$
 
-whose four complex lines $\mathbb{C}\tilde\Pi_1, \mathbb{C}\tilde\Upsilon_1, \mathbb{C}\tilde\Upsilon_2, \mathbb{C}\tilde\Pi_2$ are the Peirce spaces. Write $E_{ij}$ for the **matrix unit**, the matrix with $1$ in position $(i,j)$ and $0$ elsewhere. The realization carries the four lines to the four matrix units, displayed in full,
+whose four complex lines $\mathbb{C}\tilde\Pi_+, \mathbb{C}\tilde\Upsilon_1, \mathbb{C}\tilde\Upsilon_2, \mathbb{C}\tilde\Pi_-$ are the Peirce spaces. The two idempotents $\tilde\Pi_+$ and $\tilde\Pi_-$ are the associated idempotents of the root $ie_3$ of $+1$, $(ie_3)^2=e_0$. Write $E_{ij}$ for the **matrix unit**, the matrix with $1$ in position $(i,j)$ and $0$ elsewhere. The realization carries the four lines to the four matrix units, displayed in full,
 
 $$
-\mathsf{M}_2(\tilde\Pi_1)=\begin{pmatrix}1&0\\0&0\end{pmatrix}=E_{11},\qquad
+\mathsf{M}_2(\tilde\Pi_+)=\begin{pmatrix}1&0\\0&0\end{pmatrix}=E_{11},\qquad
 \mathsf{M}_2(\tilde\Upsilon_1)=\begin{pmatrix}0&1\\0&0\end{pmatrix}=E_{12},
 $$
 $$
 \mathsf{M}_2(\tilde\Upsilon_2)=\begin{pmatrix}0&0\\1&0\end{pmatrix}=E_{21},\qquad
-\mathsf{M}_2(\tilde\Pi_2)=\begin{pmatrix}0&0\\0&1\end{pmatrix}=E_{22}.
+\mathsf{M}_2(\tilde\Pi_-)=\begin{pmatrix}0&0\\0&1\end{pmatrix}=E_{22}.
 $$
 
 The Peirce decomposition of an element is therefore the decomposition of its matrix into its four entries. The Peirce coordinates of the algebra (*Ideals and Peirce Decomposition of the General Plain Algebra*, §*The Peirce Coordinates*) are
@@ -161,7 +161,7 @@ $$
 
 The two diagonal corners are the diagonal entries, the two mixed corners the off-diagonal ones, and the Peirce table of the algebra is the table $E_{ij}E_{kl} = \delta_{jk}E_{il}$ of the matrix units (*Matrix Algebras*, §*Matrix Units*).
 
-Two readings follow from the identification. The idempotents $\tilde\Pi_1, \tilde\Pi_2$ are the diagonal matrix units, a pair of orthogonal rank-one projectors summing to $I$, and the nilpotents $\tilde\Upsilon_1, \tilde\Upsilon_2$ the off-diagonal ones, with $\mathsf{M}_2(\tilde\Upsilon_1)^2 = \mathsf{M}_2(\tilde\Upsilon_2)^2 = 0$, $\mathsf{M}_2(\tilde\Upsilon_1)\mathsf{M}_2(\tilde\Upsilon_2) = E_{11}$ and $\mathsf{M}_2(\tilde\Upsilon_2)\mathsf{M}_2(\tilde\Upsilon_1) = E_{22}$. The corners are the compressions $\mathsf{M}_2(\tilde\Pi_i\mathbb{B}\tilde\Pi_j) = \mathbb{C}E_{ij}$, so the two minimal left ideals are the two columns, $\mathsf{M}_2(\mathbb{B}\tilde\Pi_1) = \mathbb{C}E_{11}\oplus\mathbb{C}E_{21}$ and $\mathsf{M}_2(\mathbb{B}\tilde\Pi_2) = \mathbb{C}E_{12}\oplus\mathbb{C}E_{22}$, with the two rows for the right ideals; this is the matrix reading of *Ideals and Peirce Decomposition of the General Plain Algebra*, §*The Matrix Model*.
+Two readings follow from the identification. The idempotents $\tilde\Pi_+, \tilde\Pi_-$ are the diagonal matrix units, a pair of orthogonal rank-one projectors summing to $I$, and the nilpotents $\tilde\Upsilon_1, \tilde\Upsilon_2$ the off-diagonal ones, with $\mathsf{M}_2(\tilde\Upsilon_1)^2 = \mathsf{M}_2(\tilde\Upsilon_2)^2 = 0$, $\mathsf{M}_2(\tilde\Upsilon_1)\mathsf{M}_2(\tilde\Upsilon_2) = E_{11}$ and $\mathsf{M}_2(\tilde\Upsilon_2)\mathsf{M}_2(\tilde\Upsilon_1) = E_{22}$. The corners are the compressions $\mathsf{M}_2(\tilde\Pi_i\mathbb{B}\tilde\Pi_j) = \mathbb{C}E_{ij}$, so the two minimal left ideals are the two columns, $\mathsf{M}_2(\mathbb{B}\tilde\Pi_+) = \mathbb{C}E_{11}\oplus\mathbb{C}E_{21}$ and $\mathsf{M}_2(\mathbb{B}\tilde\Pi_-) = \mathbb{C}E_{12}\oplus\mathbb{C}E_{22}$, with the two rows for the right ideals; this is the matrix reading of *Ideals and Peirce Decomposition of the General Plain Algebra*, §*The Matrix Model*.
 
 ## Summary
 
@@ -177,7 +177,7 @@ The matrix realization $\mathsf{M}_2$ turns the plain product of the algebra int
 | $E=\operatorname{diag}(1,-1,-1,-1)$ | the coefficient Gram matrix, real signature $(4,4)$ |
 | $\sum_\mu\varepsilon_\mu Q_\mu^2=0$ | the isotropic cone, of real dimension $6$ |
 | $O_4(\mathbb{C})$, $O(4,4)$ | the automorphism group and its realification |
-| $E_{ij}$ | the matrix unit; the images of the Peirce basis, $\mathsf{M}_2(\tilde\Pi_1)=E_{11}$, $\mathsf{M}_2(\tilde\Upsilon_1)=E_{12}$, $\mathsf{M}_2(\tilde\Upsilon_2)=E_{21}$, $\mathsf{M}_2(\tilde\Pi_2)=E_{22}$ |
+| $E_{ij}$ | the matrix unit; the images of the Peirce basis, $\mathsf{M}_2(\tilde\Pi_+)=E_{11}$, $\mathsf{M}_2(\tilde\Upsilon_1)=E_{12}$, $\mathsf{M}_2(\tilde\Upsilon_2)=E_{21}$, $\mathsf{M}_2(\tilde\Pi_-)=E_{22}$ |
 
 ## Further Reading
 

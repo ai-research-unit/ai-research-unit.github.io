@@ -6,16 +6,16 @@ The underlying real vector space of the quaternion algebra $\mathbb{H}$ carries 
 
 $$
 \tilde p\bullet\tilde q=\tfrac12\bigl(\tilde p\tilde q+\tilde q\tilde p\bigr)
-=\bigl(p_0q_0-\mathbf p\cdot\mathbf q\bigr)e_0+p_0\mathbf q+q_0\mathbf p.
+=\bigl(p_0q_0-\vec p\cdot\vec q\bigr)e_0+p_0\vec q+q_0\vec p.
 $$
 
 The operation is the plain product with the cross term dropped, and the space it makes of $\mathbb{H}$ is a commutative unital Jordan algebra over $\mathbb{R}$.
 
-**This is not the algebra $\mathbb{H}$.** The two algebras share the space, the addition, the real scalars and the unit, but $\bullet$ is a different multiplication from the plain product $\tilde p\tilde q$: it is commutative where the plain product is not, and its scalar part $p_0q_0-\mathbf p\cdot\mathbf q$ is not the product of the scalar parts, so **the projection onto the scalar line is not multiplicative**. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives nothing new.
+**This is not the algebra $\mathbb{H}$.** The two algebras share the space, the addition, the real scalars and the unit, but $\bullet$ is a different multiplication from the plain product $\tilde p\tilde q$: it is commutative where the plain product is not, and its scalar part $p_0q_0-\vec p\cdot\vec q$ is not the product of the scalar parts, so **the projection onto the scalar line is not multiplicative**. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives nothing new.
 
 The reading is one of the six operations of *The 6 Products of the Quaternion Real Space*, where the operation is named $\mathrm{SPA}$; it is the one commutative unital Jordan product of the six, and its structure among them is *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*. The split that produces it, with its two projections and its two admissibility conditions, is the general material of *The Symmetric and Antisymmetric Parts of an Algebra Product*. This article owns the operation as a multiplication: the rule, the class, the laws, the sixteen products of the basis, the square and its polarisation, the reconstruction, and the placement of the block among the six. The algebra it builds is read further in the companions of the block: the Common Theory articles *Norm and Invertibility in the Symmetric Plain Algebra*, below this article in this category, *Zero Divisors of the Symmetric Plain Algebra*, below this article in this category, *Square Roots of One and the Idempotents of the Symmetric Plain Algebra*, below this article in this category, *Square Roots of Zero and the Nilpotents of the Symmetric Plain Algebra*, below this article in this category, *Square Roots of a General Element in the Symmetric Plain Algebra*, below this article in this category and *The Specificities of the Symmetric Plain Algebra*, below this article in this category, which owns the reduction of the idempotents and of the nilpotents; the Specific Theory article *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*, below this article in this category; and, in the other sections of the block, *The Trace Form and the Invariance of the Symmetric Plain Algebra*, below this article in this category, *The Multiplication Operators of the Symmetric Plain Algebra*, below this article in this category, *The Symmetric Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*, below this article in this category and *The Symmetric Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$*, below this article in this category.
 
-**Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$, so that $e_1^2=e_2^2=e_3^2=-e_0$ and $e_je_k=-e_ke_j$ for $j\neq k$. A generic element is $\tilde q=q_0e_0+\mathbf q$ with $\mathbf q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; $\mathbf p\cdot\mathbf q=\sum_kp_kq_k$ is the Euclidean dot product of the vector parts, and $\mathbf p\times\mathbf q$ their vector product. The plain product is $\tilde p\tilde q$ throughout; its scalar and vector forms, its table and its rules are those of *Introduction to the General Plain Algebra of Quaternions* and *The Two General Products of the Quaternion $\mathbb{R}$ Space*, and the plain bilinear form is *The 2 Forms over the Quaternion $\mathbb{R}$ Space*.
+**Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$, so that $e_1^2=e_2^2=e_3^2=-e_0$ and $e_je_k=-e_ke_j$ for $j\neq k$. A generic element is $\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; $\vec p\cdot\vec q=\sum_kp_kq_k$ is the Euclidean dot product of the vector parts, and $\vec p\times\vec q$ their vector product. The plain product is $\tilde p\tilde q$ throughout; its scalar and vector forms, its table and its rules are those of *Introduction to the General Plain Algebra of Quaternions* and *The Two General Products of the Quaternion $\mathbb{R}$ Space*, and the plain bilinear form is *The 2 Forms over the Quaternion $\mathbb{R}$ Space*.
 
 ## The Symmetrisation of the Plain Product
 
@@ -36,16 +36,16 @@ The rule needs no more than the plain product, and *The Symmetric and Antisymmet
 The plain product reads, in the scalar–vector form of *Introduction to the General Plain Algebra of Quaternions*,
 
 $$
-\tilde p\tilde q=\bigl(p_0q_0-\mathbf p\cdot\mathbf q\bigr)+p_0\mathbf q+q_0\mathbf p+\mathbf p\times\mathbf q,
+\tilde p\tilde q=\bigl(p_0q_0-\vec p\cdot\vec q\bigr)+p_0\vec q+q_0\vec p+\vec p\times\vec q,
 $$
 
 and its exchange $\tilde q\tilde p$ differs from it only in the sign of the cross term. Adding the two and halving gives the rule that names the block:
 
 $$
-\tilde p\bullet\tilde q=\bigl(p_0q_0-\mathbf p\cdot\mathbf q\bigr)+p_0\mathbf q+q_0\mathbf p.
+\tilde p\bullet\tilde q=\bigl(p_0q_0-\vec p\cdot\vec q\bigr)+p_0\vec q+q_0\vec p.
 $$
 
-**Remark (the cross term is what the symmetrisation removes).** The scalar part $p_0q_0-\mathbf p\cdot\mathbf q$ is symmetric by itself, since $\mathbf p\cdot\mathbf q=\mathbf q\cdot\mathbf p$, and the mixed vector part $p_0\mathbf q+q_0\mathbf p$ is symmetric as well; the only asymmetric piece of the plain product is the cross product $\mathbf p\times\mathbf q$, which changes sign under the exchange. **The symmetric plain product is exactly the plain product with the cross term dropped**, and the vector part of the value is $p_0\mathbf q+q_0\mathbf p$.
+**Remark (the cross term is what the symmetrisation removes).** The scalar part $p_0q_0-\vec p\cdot\vec q$ is symmetric by itself, since $\vec p\cdot\vec q=\vec q\cdot\vec p$, and the mixed vector part $p_0\vec q+q_0\vec p$ is symmetric as well; the only asymmetric piece of the plain product is the cross product $\vec p\times\vec q$, which changes sign under the exchange. **The symmetric plain product is exactly the plain product with the cross term dropped**, and the vector part of the value is $p_0\vec q+q_0\vec p$.
 
 Read on the coordinates, the same rule is the plain coordinate rule with the cross terms deleted:
 
@@ -81,12 +81,12 @@ $$
 \tilde p\bullet\tilde q=\tilde q\bullet\tilde p.
 $$
 
-*Proof.* The half-sum of the plain product and its exchange is unchanged when the two arguments are interchanged; equivalently, the scalar part is the symmetric bilinear form $p_0q_0-\mathbf p\cdot\mathbf q$ and the vector part $p_0\mathbf q+q_0\mathbf p$ is symmetric in the two elements.
+*Proof.* The half-sum of the plain product and its exchange is unchanged when the two arguments are interchanged; equivalently, the scalar part is the symmetric bilinear form $p_0q_0-\vec p\cdot\vec q$ and the vector part $p_0\vec q+q_0\vec p$ is symmetric in the two elements.
 
 Commutativity is the defining departure from the plain product, which is not commutative, since $e_1e_2=e_3$ and $e_2e_1=-e_3$. The commutator of the plain product is carried entirely by the antisymmetric part,
 
 $$
-[\tilde p,\tilde q]=\tilde p\tilde q-\tilde q\tilde p=2\,\mathbf p\times\mathbf q,
+[\tilde p,\tilde q]=\tilde p\tilde q-\tilde q\tilde p=2\,\vec p\times\vec q,
 $$
 
 which is the operation of the companion block *Introduction to the Antisymmetric Plain Algebra of Quaternions*, below this article in this category.
@@ -162,7 +162,7 @@ The product is $\mathbb{R}$-bilinear, so it is fixed by its values on the sixtee
 **Proposition.** The square of an element in the block is the plain square,
 
 $$
-\tilde q\bullet\tilde q=\tilde q^2=\bigl(q_0^2-|\mathbf q|^2\bigr)e_0+2q_0\mathbf q,
+\tilde q\bullet\tilde q=\tilde q^2=\bigl(q_0^2-|\vec q|^2\bigr)e_0+2q_0\vec q,
 $$
 
 so the diagonal of $\bullet$ and the diagonal of the plain product agree.
@@ -187,7 +187,7 @@ So the square map $\tilde q\mapsto\tilde q\bullet\tilde q$ determines the whole 
 
 $$
 \tilde p\tilde q=\tilde p\bullet\tilde q+\tilde p\times\tilde q,\qquad
-\tilde p\times\tilde q=\tfrac12\bigl(\tilde p\tilde q-\tilde q\tilde p\bigr)=\mathbf p\times\mathbf q,
+\tilde p\times\tilde q=\tfrac12\bigl(\tilde p\tilde q-\tilde q\tilde p\bigr)=\vec p\times\vec q,
 $$
 
 and the symmetric part is $\mathrm{SPA}$ and the antisymmetric part $\mathrm{APA}$.
@@ -213,10 +213,10 @@ The symmetric part of the general plain bilinear product of $\mathbb{H}$ is the 
 
 $$
 \tilde p\bullet\tilde q=\tfrac12\bigl(\tilde p\tilde q+\tilde q\tilde p\bigr)
-=\bigl(p_0q_0-\mathbf p\cdot\mathbf q\bigr)e_0+p_0\mathbf q+q_0\mathbf p,
+=\bigl(p_0q_0-\vec p\cdot\vec q\bigr)e_0+p_0\vec q+q_0\vec p,
 $$
 
-the plain product with the cross term dropped. It is $\mathbb{R}$-bilinear and commutative, $e_0$ is a two-sided unit, it satisfies the Jordan identity, and it is not associative, with the witness $(e_1\bullet e_1)\bullet e_2=-e_2$ against $e_1\bullet(e_1\bullet e_2)=0$. Read with the product, the space is a commutative unital special Jordan algebra over $\mathbb{R}$, and it is the one Jordan product of the six operations. The sixteen products of the basis are the quaternion table with the six off-diagonal vector entries set to $0$; the square is the plain square, $\tilde q\bullet\tilde q=(q_0^2-|\mathbf q|^2)e_0+2q_0\mathbf q$, and the product is the polarisation of the square. The plain product reconstructs as $\mathrm{GPA}=\mathrm{SPA}+\mathrm{APA}$, the symmetrisation of an associative product in the plain row of *The 6 Products of the Quaternion Real Space*.
+the plain product with the cross term dropped. It is $\mathbb{R}$-bilinear and commutative, $e_0$ is a two-sided unit, it satisfies the Jordan identity, and it is not associative, with the witness $(e_1\bullet e_1)\bullet e_2=-e_2$ against $e_1\bullet(e_1\bullet e_2)=0$. Read with the product, the space is a commutative unital special Jordan algebra over $\mathbb{R}$, and it is the one Jordan product of the six operations. The sixteen products of the basis are the quaternion table with the six off-diagonal vector entries set to $0$; the square is the plain square, $\tilde q\bullet\tilde q=(q_0^2-|\vec q|^2)e_0+2q_0\vec q$, and the product is the polarisation of the square. The plain product reconstructs as $\mathrm{GPA}=\mathrm{SPA}+\mathrm{APA}$, the symmetrisation of an associative product in the plain row of *The 6 Products of the Quaternion Real Space*.
 
 ## Summary of Notation
 
@@ -225,11 +225,11 @@ the plain product with the cross term dropped. It is $\mathbb{R}$-bilinear and c
 | $\tilde p\bullet\tilde q=\tfrac12(\tilde p\tilde q+\tilde q\tilde p)$ | the symmetrised (Jordan) product, the multiplication of the block |
 | $\mathbb{H}^{\bullet}$ | the quaternion space with the symmetric plain product |
 | $\mathrm{SPA}$ | the name of the operation among the six |
-| $\tilde p\times\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\mathbf p\times\mathbf q$ | the antisymmetric part, $\mathrm{APA}$ |
+| $\tilde p\times\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\vec p\times\vec q$ | the antisymmetric part, $\mathrm{APA}$ |
 | $\tilde q\bullet\tilde q=\tilde q^2$ | the square of the block, the plain square |
 | $\mathrm{GPA}=\mathrm{SPA}+\mathrm{APA}$ | the reconstruction of the plain product |
-| $\tilde q^{\natural}=q_0e_0-\mathbf q$ | the quaternion conjugation, the natural sign |
-| $\mathbf p\cdot\mathbf q$, $\mathbf p\times\mathbf q$ | the dot and the vector products of the vector parts |
+| $\tilde q^{\natural}=q_0e_0-\vec q$ | the quaternion conjugation, the natural sign |
+| $\vec p\cdot\vec q$, $\vec p\times\vec q$ | the dot and the vector products of the vector parts |
 
 ## Further Reading
 

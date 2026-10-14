@@ -16,7 +16,7 @@ the annihilator is the kernel of that operator, so it is a linear subspace.
 The block of this article is the **symmetric quaternionic sesquimultiplication**
 $$
 \tilde P\star\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}+\overline{\tilde Q^{\natural}\tilde P^{*}}\bigr)
-=\bigl[P_0\overline{Q_0}-(\mathbf P,\overline{\mathbf Q})\bigr]-P_0\overline{\mathbf Q}-\overline{Q_0}\mathbf P,
+=\bigl[P_0\overline{Q_0}-(\vec P,\overline{\vec Q})\bigr]-P_0\overline{\vec Q}-\overline{Q_0}\vec P,
 $$
 the Hermitian symmetrisation of the sesquilinear product (*Introduction to the Symmetric
 Quaternionic Sesqualgebra of Biquaternions*). It is conjugate-commutative, so the two annihilators
@@ -130,7 +130,7 @@ as in the symmetric plain algebra. The three blocks carry the same pair of annih
 $\lambda^{2}\neq0$, so it is regular and its annihilator is $\{0\}$: the centre annihilates
 nothing.
 
-**The vector subspace.** A nonzero pure element $\tilde P=\mathbf P$ has the plane annihilator
+**The vector subspace.** A nonzero pure element $\tilde P=\vec P$ has the plane annihilator
 above; inside the vector subspace the annihilator falls to the line through the element, because
 the single equation $\sum_kP_k\overline{X_k}=0$ restricted to the vector subspace leaves that line.
 

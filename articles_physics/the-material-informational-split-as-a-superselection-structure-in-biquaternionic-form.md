@@ -58,8 +58,8 @@ $$
 $$
 Both summands are four-real-dimensional. A general Hermitian element and a general anti-Hermitian element are
 $$
-\tilde{H} = h_0\,e_0 + i\mathbf{h}, \qquad
-\tilde{Q} = i x_0\,e_0 + \mathbf{x}, \qquad h_0,\mathbf{h},x_0,\mathbf{x}\ \text{real},
+\tilde{H} = h_0\,e_0 + i\vec h, \qquad
+\tilde{Q} = i x_0\,e_0 + \vec x, \qquad h_0,\vec h,x_0,\vec x\ \text{real},
 $$
 so that $\mathbb{M}_+$ is the span of $\{e_0, ie_1, ie_2, ie_3\}$ and $\mathbb{M}_-$ is the span of $\{ie_0, e_1, e_2, e_3\}$. The real structure
 $$
@@ -253,7 +253,7 @@ with even part $\mathbb{M}_-^{0}$ and odd part $\mathbb{M}_+^{0}$.
 
 The material-informational split is a superselection structure of a definite and restricted kind. It is worth stating the interpretation in one place.
 
-**Material and informational data.** $\mathbb{M}_-$ carries the four-vectors: the four-position $\tilde{Q} = ict\,e_0+\mathbf{x}$, the four-velocity $\tilde{U} = \gamma(ic\,e_0+\mathbf{v})$, the four-momentum $\tilde{P} = m\tilde{U}$, and their invariants. $\mathbb{M}_+$ carries the states and observables: the idempotents that parametrise the pure states, the Bloch ball of mixed states, and the Hermitian observables paired with them by $\mathrm{Tr}(\tilde{\rho}\tilde{H})$. The two are complementary real forms of the same complex algebra, related by the complex structure $i$ that exchanges them.
+**Material and informational data.** $\mathbb{M}_-$ carries the four-vectors: the four-position $\tilde{Q} = ict\,e_0+\vec x$, the four-velocity $\tilde{V} = \gamma(ic\,e_0+\vec v)$, the four-momentum $\tilde{P} = m\tilde{V}$, and their invariants. $\mathbb{M}_+$ carries the states and observables: the idempotents that parametrise the pure states, the Bloch ball of mixed states, and the Hermitian observables paired with them by $\mathrm{Tr}(\tilde{\rho}\tilde{H})$. The two are complementary real forms of the same complex algebra, related by the complex structure $i$ that exchanges them.
 
 Each observable is the representative $iA$ of a **material element** $A\in\mathbb{M}_-$; the material element is what is observed, and the Hermitian representative is its reading operator.
 
@@ -291,8 +291,8 @@ with the material part the compact $\mathrm{SU}(2)$ of rotations and the informa
 | $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$ | Hermitian decomposition |
 | $P_\pm = \tfrac12(\mathrm{id}\pm{}^{*})$ | Real-linear sector projections (not in $\mathbb{B}$) |
 | $Z(\mathbb{B}) = \mathbb{C}e_0$ | Centre; $\mathbb{R}e_0$ informational, $\mathbb{R}(ie_0)$ material |
-| $\tilde{H} = h_0e_0 + i\mathbf{h}$ | General Hermitian element |
-| $\tilde{Q} = ix_0e_0 + \mathbf{x}$ | General anti-Hermitian element |
+| $\tilde{H} = h_0e_0 + i\vec h$ | General Hermitian element |
+| $\tilde{Q} = ix_0e_0 + \vec x$ | General anti-Hermitian element |
 | $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ | Trace |
 | $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ | Congruence (physical operation) |
 | $\mathbb{M}_\pm^{0}$ | Traceless parts, $\mathrm{SL}(2,\mathbb{C}) = \mathbb{M}_+^{0}\oplus\mathbb{M}_-^{0}$ |

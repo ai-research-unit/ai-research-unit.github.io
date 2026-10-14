@@ -39,10 +39,10 @@ $$
 We write
 
 $$
-\tilde{Q} = Q_0 + \mathbf{Q}, \qquad \mathbf{Q} = \sum_{k=1}^{3} Q_k e_k,
+\tilde{Q} = Q_0 + \vec Q, \qquad \vec Q = \sum_{k=1}^{3} Q_k e_k,
 $$
 
-where $Q_0$ is the **complex scalar part** and $\mathbf{Q}$ is the **complex vector part**. The tilde signals that $\tilde{Q}$ is an element of the algebra $\mathbb{B}$, not a four-vector.
+where $Q_0$ is the **complex scalar part** and $\vec Q$ is the **complex vector part**. The tilde signals that $\tilde{Q}$ is an element of the algebra $\mathbb{B}$, not a four-vector.
 
 Each complex coefficient is written in terms of its real and imaginary parts:
 
@@ -138,11 +138,11 @@ The product read as the multiplication of an algebra is *Introduction to the Gen
 | $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ | General biquaternion |
 | $Q_\mu = q_\mu + i q'_\mu$ | Complex coefficient, with $q_\mu, q'_\mu \in \mathbb{R}$ |
 | $Q_0$ | Complex scalar part |
-| $\mathbf{Q}$ | Complex vector part |
+| $\vec Q$ | Complex vector part |
 | $J : \tilde{Q} \mapsto i\tilde{Q}$ | the real-linear complex structure, $J^2 = -\mathrm{id}$ |
-| $\tilde{Q}^{\natural} = Q_0 e_0 - \mathbf{Q}$ | Quaternion conjugate |
-| $\bar{\tilde{Q}} = \bar{Q_0} e_0 + \mathbf{Q}^*$ | Complex conjugate |
-| $\tilde{Q}^{*} = \bar{Q_0} e_0 - \mathbf{Q}^*$ | Hermitian conjugate |
+| $\tilde{Q}^{\natural} = Q_0 e_0 - \vec Q$ | Quaternion conjugate |
+| $\bar{\tilde{Q}} = \bar{Q_0} e_0 + \vec Q^*$ | Complex conjugate |
+| $\tilde{Q}^{*} = \bar{Q_0} e_0 - \vec Q^*$ | Hermitian conjugate |
 | $\tilde{Q}^\flat = -\overline{\tilde{Q}^{\natural}} = -\tilde{Q}^{*}$ | Anti-Hermitian conjugate |
 
 ## Further Reading

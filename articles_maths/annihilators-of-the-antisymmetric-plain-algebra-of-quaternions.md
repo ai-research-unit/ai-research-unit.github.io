@@ -16,7 +16,7 @@ and its computation is one of linear algebra.
 
 The block of this article is the **antisymmetric plain multiplication**
 $$
-\tilde p\times\tilde q=\tfrac12\bigl(\tilde p\tilde q-\tilde q\tilde p\bigr)=\mathbf p\times\mathbf q,
+\tilde p\times\tilde q=\tfrac12\bigl(\tilde p\tilde q-\tilde q\tilde p\bigr)=\vec p\times\vec q,
 $$
 the cross product of the two vector parts; it is $\mathbb{R}$-bilinear, alternating, of zero scalar
 part and without a unit (*Introduction to the Antisymmetric Plain Algebra of Quaternions*). Its
@@ -78,21 +78,21 @@ reason that the two annihilators coincide.
 
 ## The Annihilator of an Element
 
-**Theorem (the annihilator).** For an element $\tilde p=p_0e_0+\mathbf p$ the annihilator is
+**Theorem (the annihilator).** For an element $\tilde p=p_0e_0+\vec p$ the annihilator is
 $$
 A_\times(\tilde p)=\{\tilde x:\tilde p\times\tilde x=0\}
 =\begin{cases}
-\mathbb{R}e_0\oplus\mathbb{R}\mathbf p, & \mathbf p\neq0,\\[2pt]
-\mathbb{H}, & \mathbf p=0 .
+\mathbb{R}e_0\oplus\mathbb{R}\vec p, & \vec p\neq0,\\[2pt]
+\mathbb{H}, & \vec p=0 .
 \end{cases}
 $$
 For a noncentral element it is the real plane spanned by the centre and the vector part of the
 element, of real dimension two; for a central element every element is annihilated.
 
-*Proof.* If $\mathbf p\neq0$, the equation $\mathbf p\times\mathbf x=0$ holds exactly when
-$\mathbf x$ is parallel to $\mathbf p$, a line of the vector subspace, and the scalar coordinate
+*Proof.* If $\vec p\neq0$, the equation $\vec p\times\vec x=0$ holds exactly when
+$\vec x$ is parallel to $\vec p$, a line of the vector subspace, and the scalar coordinate
 $x_0$ is free and adds the centre; with the centre that is the plane
-$\mathbb{R}e_0\oplus\mathbb{R}\mathbf p$, of real dimension two. If $\tilde p=\lambda e_0$ with
+$\mathbb{R}e_0\oplus\mathbb{R}\vec p$, of real dimension two. If $\tilde p=\lambda e_0$ with
 $\lambda\neq0$, then $\tilde p\times\tilde x=\lambda e_0\times\tilde x=0$ for every $\tilde x$. The
 criterion for the parallelism is the one of *Zero Divisors of the Antisymmetric Plain Algebra*,
 above this article in this category.
@@ -100,9 +100,9 @@ above this article in this category.
 ## The Multiplication Operator and the Rank
 
 **Proposition (the operator in the standard basis).** In the basis $e_0,e_1,e_2,e_3$ the operator
-$L_{\tilde p}$ of an element $\tilde p=p_0e_0+\mathbf p$ has matrix
+$L_{\tilde p}$ of an element $\tilde p=p_0e_0+\vec p$ has matrix
 $$
-\operatorname{diag}(0,C_{\mathbf p})=
+\operatorname{diag}(0,C_{\vec p})=
 \begin{pmatrix}
 0 & 0 & 0 & 0 \\
 0 & 0 & -p_3 & p_2 \\
@@ -110,65 +110,65 @@ $$
 0 & -p_2 & p_1 & 0
 \end{pmatrix},
 $$
-where $C_{\mathbf p}=[\mathbf p]_\times$ is the $3\times3$ skew matrix of the cross product
-$\mathbf x\mapsto\mathbf p\times\mathbf x$.
+where $C_{\vec p}=[\vec p]_\times$ is the $3\times3$ skew matrix of the cross product
+$\vec x\mapsto\vec p\times\vec x$.
 
 *Proof.* The first column is zero, because the scalar direction of $\tilde p$ is invisible and
-$\tilde p\times e_0=\mathbf p\times\mathbf 0=0$; the remaining three columns are
-$\tilde p\times e_k=\mathbf p\times\mathbf e_k$, which are the columns of $C_{\mathbf p}$.
+$\tilde p\times e_0=\vec p\times\mathbf 0=0$; the remaining three columns are
+$\tilde p\times e_k=\vec p\times\mathbf e_k$, which are the columns of $C_{\vec p}$.
 
 **Proposition (the invariants).** The trace of $L_{\tilde p}$ is $0$, its determinant is $0$, and
 its characteristic polynomial is
 $$
-\chi_{L_{\tilde p}}(t)=t^{2}\bigl(t^{2}+|\mathbf p|^{2}\bigr),\qquad
-|\mathbf p|^{2}=\sum_{k=1}^{3}p_k^{2}.
+\chi_{L_{\tilde p}}(t)=t^{2}\bigl(t^{2}+|\vec p|^{2}\bigr),\qquad
+|\vec p|^{2}=\sum_{k=1}^{3}p_k^{2}.
 $$
-The eigenvalues are $0$ with multiplicity two and the two roots of $t^{2}+|\mathbf p|^{2}$.
+The eigenvalues are $0$ with multiplicity two and the two roots of $t^{2}+|\vec p|^{2}$.
 
-*Proof.* The matrix is $\operatorname{diag}(0,C_{\mathbf p})$. Its trace is that of
-$C_{\mathbf p}$, which is zero because $C_{\mathbf p}$ is skew; its determinant is zero because the
+*Proof.* The matrix is $\operatorname{diag}(0,C_{\vec p})$. Its trace is that of
+$C_{\vec p}$, which is zero because $C_{\vec p}$ is skew; its determinant is zero because the
 first row is zero. Its characteristic polynomial is the product of the characteristic polynomial
-$t$ of the scalar block and that of the skew matrix $C_{\mathbf p}$, namely
-$t(t^{2}+|\mathbf p|^{2})$, since the eigenvalues of $C_{\mathbf p}$ are $0$ and
-$\pm i|\mathbf p|$. Computed exactly on general elements of $\mathbb{Q}$ coefficients.
+$t$ of the scalar block and that of the skew matrix $C_{\vec p}$, namely
+$t(t^{2}+|\vec p|^{2})$, since the eigenvalues of $C_{\vec p}$ are $0$ and
+$\pm i|\vec p|$. Computed exactly on general elements of $\mathbb{Q}$ coefficients.
 
 **Remark (the rank drops on the centre alone).** $L_{\tilde p}$ is the zero operator exactly when
-$C_{\mathbf p}=0$, that is when $\mathbf p=0$: the central elements $p_0e_0$ are precisely the
+$C_{\vec p}=0$, that is when $\vec p=0$: the central elements $p_0e_0$ are precisely the
 elements whose multiplication operator is zero. This is the only rank drop, and the annihilator
 reads it at once.
 
 **Corollary (the rank and the annihilator).** The rank of $L_{\tilde p}$ and the annihilator of
-$\tilde p$ depend only on the vector part $\mathbf p$, and there are two cases,
+$\tilde p$ depend only on the vector part $\vec p$, and there are two cases,
 
-| $\mathbf p$ | $\operatorname{rank}L_{\tilde p}$ | $\dim\ker L_{\tilde p}$ | $\ker L_{\tilde p}$ |
+| $\vec p$ | $\operatorname{rank}L_{\tilde p}$ | $\dim\ker L_{\tilde p}$ | $\ker L_{\tilde p}$ |
 |---|---|---|---|
 | $0$ | $0$ | $4$ | $\mathbb{H}$ |
-| $\neq0$ | $2$ | $2$ | $\mathbb{R}e_0\oplus\mathbb{R}\mathbf p$ |
+| $\neq0$ | $2$ | $2$ | $\mathbb{R}e_0\oplus\mathbb{R}\vec p$ |
 
 All dimensions are real dimensions, the space being the real vector space
 $\mathbb{H}\cong\mathbb{R}^4$.
 
-*Proof.* The cross-product matrix $C_{\mathbf p}$ of a nonzero vector $\mathbf p$ has rank two: a
+*Proof.* The cross-product matrix $C_{\vec p}$ of a nonzero vector $\vec p$ has rank two: a
 skew matrix of odd size is singular, its rank is even, and it is nonzero. The matrix of
-$L_{\tilde p}$ is $\operatorname{diag}(0,C_{\mathbf p})$, of the same rank two, and its kernel is
+$L_{\tilde p}$ is $\operatorname{diag}(0,C_{\vec p})$, of the same rank two, and its kernel is
 the direct sum of the kernel $\mathbb{R}e_0$ of the scalar direction and the kernel of
-$C_{\mathbf p}$, which is $\mathbb{R}\mathbf p$ because $\mathbf p\times\mathbf x=0$ exactly when
-$\mathbf x$ is parallel to $\mathbf p$. At $\mathbf p=0$ the operator is zero and the kernel is the
+$C_{\vec p}$, which is $\mathbb{R}\vec p$ because $\vec p\times\vec x=0$ exactly when
+$\vec x$ is parallel to $\vec p$. At $\vec p=0$ the operator is zero and the kernel is the
 whole space. The kernel equals the displayed span on every tested noncentral element, computed
 exactly on a grid of $100$ elements of $\mathbb{Q}$.
 
 **Remark (no rank drop on an isotropic locus).** Over $\mathbb{R}$ the vector form
-$|\mathbf p|^{2}$ is positive definite, so its only zero is $\mathbf p=0$: there is no isotropic
+$|\vec p|^{2}$ is positive definite, so its only zero is $\vec p=0$: there is no isotropic
 locus besides the centre, and the rank drops on the centre alone. The complex sibling has a vector
-form that can vanish at a nonzero $\mathbf P$, but its rank is two there as well, and the vanishing
-only merges the two nonzero eigenvalues $\pm i|\mathbf P|$ into a double zero (*Annihilators of the
+form that can vanish at a nonzero $\vec P$, but its rank is two there as well, and the vanishing
+only merges the two nonzero eigenvalues $\pm i|\vec P|$ into a double zero (*Annihilators of the
 Antisymmetric Plain Algebra*, the biquaternion article of the same name).
 
 ## The Dichotomy
 
-**Theorem (the annihilator's dichotomy is by the vector part).** An element with $\mathbf p=0$ has
-annihilator $\mathbb{H}$; an element with $\mathbf p\neq0$ has annihilator the plane
-$\mathbb{R}e_0\oplus\mathbb{R}\mathbf p$. The dichotomy is read from the vector part.
+**Theorem (the annihilator's dichotomy is by the vector part).** An element with $\vec p=0$ has
+annihilator $\mathbb{H}$; an element with $\vec p\neq0$ has annihilator the plane
+$\mathbb{R}e_0\oplus\mathbb{R}\vec p$. The dichotomy is read from the vector part.
 
 *Proof.* Both cases are the rank computation of §*The Multiplication Operator and the Rank*.
 
@@ -207,9 +207,9 @@ element of the subspace (*Introduction to the Antisymmetric Plain Algebra of Qua
 The two subspaces differ in the annihilator, and the difference is the shape of the kernel. On the
 centre the operation vanishes identically, so the annihilator of a nonzero central element is the
 whole space and the operation is the zero operation. On the vector subspace, where the operation is
-the cross product on $\mathbb{R}^{3}$, the annihilator of a nonzero vector $\mathbf p$ meets the
-vector subspace in the line $\mathbb{R}\mathbf p$ and is the plane
-$\mathbb{R}e_0\oplus\mathbb{R}\mathbf p$ of the ambient space: of its two real dimensions, one is
+the cross product on $\mathbb{R}^{3}$, the annihilator of a nonzero vector $\vec p$ meets the
+vector subspace in the line $\mathbb{R}\vec p$ and is the plane
+$\mathbb{R}e_0\oplus\mathbb{R}\vec p$ of the ambient space: of its two real dimensions, one is
 the vector direction of the element itself, the other the scalar direction, which lies outside the
 vector subspace.
 
@@ -217,31 +217,31 @@ vector subspace.
 
 The annihilator of an element in a product is the set of partners the element kills, the left and
 the right annihilator being the kernels of the left and the right multiplication. For the
-antisymmetric plain multiplication $\tilde p\times\tilde q=\mathbf p\times\mathbf q$ the two
+antisymmetric plain multiplication $\tilde p\times\tilde q=\vec p\times\vec q$ the two
 coincide, $B_\times(\tilde p)=A_\times(\tilde p)=\ker L_{\tilde p}$, because the product is
-alternating. The operator $L_{\tilde p}$ has matrix $\operatorname{diag}(0,C_{\mathbf p})$ and
-characteristic polynomial $t^{2}(t^{2}+|\mathbf p|^{2})$: its rank is two on the noncentral
-elements, where the annihilator is the real plane $\mathbb{R}e_0\oplus\mathbb{R}\mathbf p$, and it
+alternating. The operator $L_{\tilde p}$ has matrix $\operatorname{diag}(0,C_{\vec p})$ and
+characteristic polynomial $t^{2}(t^{2}+|\vec p|^{2})$: its rank is two on the noncentral
+elements, where the annihilator is the real plane $\mathbb{R}e_0\oplus\mathbb{R}\vec p$, and it
 is zero on the central line, whose nonzero elements annihilate the whole space. The annihilator
 therefore separates the two classes of the block by the vector part, the central elements and the
 noncentral elements; every nonzero element is already a zero divisor, so the separation is the
 annihilator's alone, and no cone cuts it. On the two remarkable subspaces the restriction is
 alternating, with the annihilator collapsing to the whole space on the centre and reading as the
-plane $\mathbb{R}e_0\oplus\mathbb{R}\mathbf p$ on the vector subspace. Over $\mathbb{C}$ the
+plane $\mathbb{R}e_0\oplus\mathbb{R}\vec p$ on the vector subspace. Over $\mathbb{C}$ the
 sibling article reads the same plane, of complex dimension two.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde p\times\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\mathbf p\times\mathbf q$ | the antisymmetric plain multiplication, the operation $\mathrm{APA}$ |
+| $\tilde p\times\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\vec p\times\vec q$ | the antisymmetric plain multiplication, the operation $\mathrm{APA}$ |
 | $A_\times(\tilde p),B_\times(\tilde p)$ | the left and the right annihilator of $\tilde p$ in the block, equal because the block is alternating |
 | $L_{\tilde p}$ | the left multiplication operator, $L_{\tilde p}\tilde x=\tilde p\times\tilde x$, whose kernel is the annihilator |
-| $C_{\mathbf p}=[\mathbf p]_\times$ | the $3\times3$ skew matrix of the cross product $\mathbf x\mapsto\mathbf p\times\mathbf x$, so that the matrix of $L_{\tilde p}$ is $\operatorname{diag}(0,C_{\mathbf p})$ |
-| $\chi_{L_{\tilde p}}(t)=t^{2}(t^{2}+|\mathbf p|^{2})$ | the characteristic polynomial of the operator |
-| $\mathbb{R}e_0\oplus\mathbb{R}\mathbf p$ | the annihilator of a noncentral element $\tilde p$, a real plane of dimension two |
+| $C_{\vec p}=[\vec p]_\times$ | the $3\times3$ skew matrix of the cross product $\vec x\mapsto\vec p\times\vec x$, so that the matrix of $L_{\tilde p}$ is $\operatorname{diag}(0,C_{\vec p})$ |
+| $\chi_{L_{\tilde p}}(t)=t^{2}(t^{2}+|\vec p|^{2})$ | the characteristic polynomial of the operator |
+| $\mathbb{R}e_0\oplus\mathbb{R}\vec p$ | the annihilator of a noncentral element $\tilde p$, a real plane of dimension two |
 | $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$ | the centre, on which the operator vanishes and the annihilator is the whole space |
-| $|\mathbf p|^{2}=\sum_k p_k^{2}$ | the vector form, positive definite over $\mathbb{R}$, whose only zero is the centre |
+| $|\vec p|^{2}=\sum_k p_k^{2}$ | the vector form, positive definite over $\mathbb{R}$, whose only zero is the centre |
 
 ## Further Reading
 

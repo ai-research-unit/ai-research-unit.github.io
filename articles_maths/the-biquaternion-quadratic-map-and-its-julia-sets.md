@@ -152,7 +152,7 @@ In particular every square-zero element has $\rho(\mathsf{M}_2(\tilde Q))=0$ and
 
 **Proof.** $q_n(\zeta)=\zeta^{2^n}$ and $q_n'(\zeta)=2^n\zeta^{2^n-1}$. For $|\lambda|<1$ the orbit tends to $0$; for $|\lambda|>1$ it escapes; for $|\lambda|=1$ the orbit stays on the unit circle and is bounded, while $|q_n'(\lambda)|=2^n$ is unbounded, so a non-scalar Jordan block at $|\lambda|=1$ makes the iterate unbounded and a diagonalisable one does not. A square-zero element is a non-zero nilpotent $2\times2$ matrix, of spectrum $\{0,0\}$ and not a Jordan block at a non-zero eigenvalue, so its iterate is $0$ from the first step and lies in $\mathcal K_0$.
 
-**Example (the square-zero element).** The element $\tilde Q=e_1+ie_2$ is a pure vector with $(\mathbf Q,\mathbf Q)=1+i^2=0$, hence $\tilde Q^2=0$; its orbit under $F_0$ is $\tilde Q,0,0,\dots$, so it lies in $\mathcal K_0$ at distance $\sqrt2$ from the origin. It is the smallest witness that the filled Julia set is not confined to a bounded ball and that no escape radius can be stated in the Euclidean norm: an element of norm arbitrarily large and square-zero maps to $0$ in one step.
+**Example (the square-zero element).** The element $\tilde Q=e_1+ie_2$ is a pure vector with $(\vec Q,\vec Q)=1+i^2=0$, hence $\tilde Q^2=0$; its orbit under $F_0$ is $\tilde Q,0,0,\dots$, so it lies in $\mathcal K_0$ at distance $\sqrt2$ from the origin. It is the smallest witness that the filled Julia set is not confined to a bounded ball and that no escape radius can be stated in the Euclidean norm: an element of norm arbitrarily large and square-zero maps to $0$ in one step.
 
 ## Summary
 

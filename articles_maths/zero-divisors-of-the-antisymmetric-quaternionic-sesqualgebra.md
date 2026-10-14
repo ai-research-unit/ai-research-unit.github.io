@@ -7,7 +7,7 @@ on the other, and the definition is relative to the product: the equation $\tild
 names the class, and the class changes with $\star$. For the conjugate cross product
 
 $$
-\tilde P\diamond\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural}\bigr)=\mathbf{P}\times\overline{\mathbf{Q}}
+\tilde P\diamond\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural}\bigr)=\vec P\times\overline{\vec Q}
 $$
 
 of *Introduction to the Antisymmetric Quaternionic Sesqualgebra of Biquaternions* the equation is
@@ -35,14 +35,14 @@ Sesqualgebra*; and the cone of the diagonal, which is a proper part of the set, 
 Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*.
 
 **Conventions.** As in the block: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis
-$e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$ and $e_k^2=-e_0$, a generic element $\tilde Q=Q_0e_0+\mathbf{Q}$
-with $\mathbf{Q}=\sum_kQ_ke_k$, and the product $\diamond$ for the block. The bar is the
+$e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$ and $e_k^2=-e_0$, a generic element $\tilde Q=Q_0e_0+\vec Q$
+with $\vec Q=\sum_kQ_ke_k$, and the product $\diamond$ for the block. The bar is the
 coefficientwise conjugation, on the element and on the vector part alike, so that
-$\overline{\mathbf{Q}}$ is the vector whose coordinates are $\overline{Q_k}$. The two annihilators
+$\overline{\vec Q}$ is the vector whose coordinates are $\overline{Q_k}$. The two annihilators
 of an element $\tilde A$ are written $A_\diamond(\tilde A)=\{\tilde R:\tilde A\diamond\tilde R=0\}$
 and $B_\diamond(\tilde A)=\{\tilde R:\tilde R\diamond\tilde A=0\}$, the left and the right one.
 
-**The results.** Every nonzero element of the block is a two-sided zero divisor, so the zero-divisor set of the block is the whole space with the origin removed, $\mathbb{B}\setminus\{0\}$; no zero-divisor set of the twelve can be larger, and the four general products, whose sets coincide with the vanishing of the central square $C(\tilde Q)=\sum_\mu Q_\mu^{2}$ and form a cone of real dimension six, are proper subsets of it. The set splits into the central family $\lambda e_0$, whose elements annihilate the whole space on both sides, and the non-central family, whose elements are paired with their conjugates by a mutual annihilation. For a non-central element the two annihilators coincide in the complex plane $\mathbb{C}e_0\oplus\mathbb{C}\overline{\mathbf{A}}$, of real dimension four, and the equation $\tilde A\diamond\tilde R=\tilde W$ is solvable exactly on the plane of the values orthogonal to $\mathbf{A}$; for a central element both annihilators are the whole space. The cone of the square-zero elements is a strict part of the set, and no idempotent of the block is a zero divisor.
+**The results.** Every nonzero element of the block is a two-sided zero divisor, so the zero-divisor set of the block is the whole space with the origin removed, $\mathbb{B}\setminus\{0\}$; no zero-divisor set of the twelve can be larger, and the four general products, whose sets coincide with the vanishing of the central square $C(\tilde Q)=\sum_\mu Q_\mu^{2}$ and form a cone of real dimension six, are proper subsets of it. The set splits into the central family $\lambda e_0$, whose elements annihilate the whole space on both sides, and the non-central family, whose elements are paired with their conjugates by a mutual annihilation. For a non-central element the two annihilators coincide in the complex plane $\mathbb{C}e_0\oplus\mathbb{C}\overline{\vec A}$, of real dimension four, and the equation $\tilde A\diamond\tilde R=\tilde W$ is solvable exactly on the plane of the values orthogonal to $\vec A$; for a central element both annihilators are the whole space. The cone of the square-zero elements is a strict part of the set, and no idempotent of the block is a zero divisor.
 
 ## The Definition, Relative to a Product
 
@@ -78,9 +78,9 @@ $\overline{\tilde A}\diamond\tilde A=0$. Consequently every nonzero element of t
 two-sided zero divisor, and the zero-divisor set of the block is $\mathbb{B}\setminus\{0\}$.
 
 *Proof.* For the first product,
-$\tilde A\diamond\overline{\tilde A}=\mathbf{A}\times\overline{\overline{\mathbf{A}}}=\mathbf{A}\times\mathbf{A}=0$;
+$\tilde A\diamond\overline{\tilde A}=\vec A\times\overline{\overline{\vec A}}=\vec A\times\vec A=0$;
 for the second,
-$\overline{\tilde A}\diamond\tilde A=\overline{\mathbf{A}}\times\overline{\mathbf{A}}=0$. The two
+$\overline{\tilde A}\diamond\tilde A=\overline{\vec A}\times\overline{\vec A}=0$. The two
 products vanish for every element and not only for the zero divisors, so the definition is met by
 every nonzero $\tilde A$ with the witness $\overline{\tilde A}$, which is nonzero together with
 $\tilde A$.
@@ -99,8 +99,8 @@ The two families are exhaustive, and the definition of the set is the union of t
 is the space minus the centre and the first is the centre minus the origin.
 
 **Remark (the criterion is the one of the diagonal).** Write the equation
-$\tilde A\diamond\tilde R=0$ in coordinates: it reads $\mathbf{A}\times\overline{\mathbf{R}}=0$,
-which holds exactly when $\mathbf{A}$ and $\overline{\mathbf{R}}$ are $\mathbb{C}$-linearly
+$\tilde A\diamond\tilde R=0$ in coordinates: it reads $\vec A\times\overline{\vec R}=0$,
+which holds exactly when $\vec A$ and $\overline{\vec R}$ are $\mathbb{C}$-linearly
 dependent, that is exactly when the vector part of one element is a complex multiple of the
 conjugate of the vector part of the other. The criterion for the annihilation of a pair is
 therefore the criterion for the vanishing of the diagonal of *The Conjugate Cross Product and the
@@ -120,7 +120,7 @@ annihilator of the element is a nonzero subspace. The loss is quantified in the 
 
 ## The Annihilators
 
-**The two annihilators of a non-central element coincide, and the common annihilator is the complex plane $\mathbb{C}e_0\oplus\mathbb{C}\overline{\mathbf{A}}$ spanned by the centre and the conjugate of the vector part, of real dimension four; for a central element both annihilators are the whole space.**
+**The two annihilators of a non-central element coincide, and the common annihilator is the complex plane $\mathbb{C}e_0\oplus\mathbb{C}\overline{\vec A}$ spanned by the centre and the conjugate of the vector part, of real dimension four; for a central element both annihilators are the whole space.**
 
 The annihilator of an element is the kernel of the left or the right multiplication, the two
 coinciding because the block is conjugate-alternating; for a non-central element it is the plane
@@ -162,7 +162,7 @@ block. The comparison, product by product and annihilator by annihilator, is *Ze
 | product | the zero-divisor set | the annihilator of a non-degenerate zero divisor |
 |---|---|---|
 | $\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$, $\tilde P\tilde Q^{*}$, $\tilde P^{\natural}\tilde Q^{*}$ | $\{\tilde Q\neq0:C(\tilde Q)=0\}$, one and the same set for the four | a complex plane of complex dimension two, the kernel of a rank-one matrix |
-| the block $\mathbf{P}\times\overline{\mathbf{Q}}$ | the whole space with the origin removed | a complex plane of complex dimension two, $\mathbb{C}e_0\oplus\mathbb{C}\overline{\mathbf{A}}$ |
+| the block $\vec P\times\overline{\vec Q}$ | the whole space with the origin removed | a complex plane of complex dimension two, $\mathbb{C}e_0\oplus\mathbb{C}\overline{\vec A}$ |
 
 **Remark (the remarkable subspaces).** The zero-divisor set of the block is the complement of the
 origin, so it meets every nonzero subspace of the space in the whole of that subspace with the
@@ -220,12 +220,12 @@ proper part of the set, the origin is outside it, and no idempotent of the block
 
 | symbol | meaning |
 |---|---|
-| $\tilde A\diamond\tilde R=0$ | the annihilation on the left, reading $\mathbf{A}\times\overline{\mathbf{R}}=0$ |
-| $\tilde R\diamond\tilde A=0$ | the annihilation on the right, reading $\mathbf{R}\times\overline{\mathbf{A}}=0$ |
+| $\tilde A\diamond\tilde R=0$ | the annihilation on the left, reading $\vec A\times\overline{\vec R}=0$ |
+| $\tilde R\diamond\tilde A=0$ | the annihilation on the right, reading $\vec R\times\overline{\vec A}=0$ |
 | $\mathbb{B}\setminus\{0\}$ | the zero-divisor set of the block |
 | $\overline{\tilde A}$ | the annihilator-witness of $\tilde A$, on both sides |
-| $A_\diamond(\tilde A)=B_\diamond(\tilde A)=\mathbb{C}e_0\oplus\mathbb{C}\overline{\mathbf{A}}$ | the common annihilator of a non-central element |
-| $(\mathbf{W},\mathbf{A})=0$ | the image of the left multiplication by $\tilde A$ |
+| $A_\diamond(\tilde A)=B_\diamond(\tilde A)=\mathbb{C}e_0\oplus\mathbb{C}\overline{\vec A}$ | the common annihilator of a non-central element |
+| $(\vec W,\vec A)=0$ | the image of the left multiplication by $\tilde A$ |
 | $\{\tilde Q\neq0:C(\tilde Q)=0\}$ | the zero-divisor set of the four general products |
 
 ## Further Reading

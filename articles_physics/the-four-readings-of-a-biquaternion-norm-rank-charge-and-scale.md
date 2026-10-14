@@ -21,14 +21,14 @@ product are *Conventions in the Biquaternion Universe*.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, basis $e_0,e_1,e_2,e_3$, units
 $e_k^2=-e_0$; the material sector $\mathbb{M}_-$ with the four-position
-$\tilde{Q}=ict\,e_0+\mathbf{x}$; the Hermitian square $\tilde{Q}\tilde{Q}^{*}$ and the rank taken in the
+$\tilde{Q}=ict\,e_0+\vec x$; the Hermitian square $\tilde{Q}\tilde{Q}^{*}$ and the rank taken in the
 matrix model $\mathsf{M}_2$.
 
 ## The Four Readings, One at a Time
 
 **The norm.** $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ is the complex-linear quadratic
 form, its zero set the zero-divisor cone, its value on the material sector the interval
-$-c^2t^2+\mathbf{x}^2$. Read as mass, its sign is the mass-shell sign: the shell $N=-m^2c^2$ is the
+$-c^2t^2+\vec x^2$. Read as mass, its sign is the mass-shell sign: the shell $N=-m^2c^2$ is the
 hyperboloid and the light cone is $N=0$. The interpretation is **value**: which level set the element lies on.
 
 **The rank.** The Hermitian square $\tilde{Q}\tilde{Q}^{*}$ is positive semidefinite, of rank two when

@@ -25,7 +25,7 @@ and it satisfies the Jordan triple identity; equivalently, $\mathbb{B}$ with thi
 
 The article is the fourth of the structural batch, and it is the biquaternion reading of the general pair *The Sesquilinear Associator and the Ternary Product* and *Algebraic J\*-Algebras*, whose parity theorems, vanishing criteria and Jordan triple identity are quoted. The operator forms of the ternary product are *The Ternary Product as an Operator* and *The Adjoint of the Ternary Product*, and the sibling reading whose ternary product fails the identity is *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*.
 
-The setting is that of *Introduction to the General Plain Sesqualgebra of Biquaternions*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the unit, ${}^{*}$ the conjugate-linear involution, and the multiplication $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$. The scalar and vector parts are written $\tilde Q=Q_0e_0+\mathbf Q$ with $(\mathbf P,\mathbf Q)=\sum_kP_kQ_k$ and the cross product $\mathbf P\times\mathbf Q$, and the two halves of the involution are the subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Hermitian and Skew-Hermitian Elements*.
+The setting is that of *Introduction to the General Plain Sesqualgebra of Biquaternions*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the unit, ${}^{*}$ the conjugate-linear involution, and the multiplication $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$. The scalar and vector parts are written $\tilde Q=Q_0e_0+\vec Q$ with $(\vec P,\vec Q)=\sum_kP_kQ_k$ and the cross product $\vec P\times\vec Q$, and the two halves of the involution are the subspaces $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Hermitian and Skew-Hermitian Elements*.
 
 ## The Associator
 
@@ -161,7 +161,7 @@ The general theory of *Algebraic J\*-Algebras* attaches the Jordan triple identi
 
 ### The Failure for the Fourth Product
 
-**Theorem (the sibling).** For the general quaternionic sesquilinear product $\tilde P^{\natural}\tilde Q^{*}$ of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, whose ternary product is the left model, the Jordan triple identity fails: at $(\tilde X,\tilde Y,\tilde U,\tilde V,\tilde W)=(e_0,e_1,e_0,e_2,e_0)$ the left-hand side is $e_3$ and the right-hand side is $-3e_3$.
+**Theorem (the sibling).** For the general quaternionic sesquilinear product $\tilde P^{\natural}\tilde Q^{*}$ of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, whose ternary product is the left model, the Jordan triple identity fails: at $(\tilde X,\tilde Y,\tilde T,\tilde S,\tilde W)=(e_0,e_1,e_0,e_2,e_0)$ the left-hand side is $e_3$ and the right-hand side is $-3e_3$.
 
 **Proof.** The statement and its proof are the theorem and the corollary of *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*, §*The Ternary Product*, where the two sides are computed and the failure is read as the transposition of the two models by the insertion of the $\mathbb{C}$-linear ${}^{\natural}$ in the first slot.
 

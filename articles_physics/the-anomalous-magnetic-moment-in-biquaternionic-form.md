@@ -20,7 +20,7 @@ $$
 g=\mathrm{diag}(+1,-1,-1,-1),
 $$
 
-the spacetime metric $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$, and $\not p=\gamma^0E-\boldsymbol\gamma\cdot\mathbf p$ for $p^\mu=(E,\mathbf p)$. The dictionary companion fixes $\mathsf{M}_4(e_0)=I_4$, $\mathsf{M}_4(e_1)=\gamma^2\gamma^3$, $\mathsf{M}_4(e_2)=\gamma^3\gamma^1$, $\mathsf{M}_4(e_3)=\gamma^1\gamma^2$, $\mathsf{M}_4(i)=-\omega=-\gamma^0\gamma^1\gamma^2\gamma^3$, hence $\mathsf{M}_4(ie_k)=\gamma^0\gamma^k$. The propagator conventions are those of the companion *The Feynman Propagator in Biquaternionic Form*, with
+the spacetime metric $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$, and $\not p=\gamma^0E-\boldsymbol\gamma\cdot\vec p$ for $p^\mu=(E,\vec p)$. The dictionary companion fixes $\mathsf{M}_4(e_0)=I_4$, $\mathsf{M}_4(e_1)=\gamma^2\gamma^3$, $\mathsf{M}_4(e_2)=\gamma^3\gamma^1$, $\mathsf{M}_4(e_3)=\gamma^1\gamma^2$, $\mathsf{M}_4(i)=-\omega=-\gamma^0\gamma^1\gamma^2\gamma^3$, hence $\mathsf{M}_4(ie_k)=\gamma^0\gamma^k$. The propagator conventions are those of the companion *The Feynman Propagator in Biquaternionic Form*, with
 
 $$
 S_F(p)=\frac{i(\not p+m)}{p^2-m^2+i\epsilon}=-\frac{i(\not p+m)}{\tilde{k}\tilde{k}^{\natural}+m^2-i\epsilon} .

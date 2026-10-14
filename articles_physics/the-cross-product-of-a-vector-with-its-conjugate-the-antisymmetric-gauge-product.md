@@ -7,7 +7,7 @@ the most unusual to read. It is
 
 $$
 \tilde P\diamond\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural}\bigr)
-=\mathbf{P}\times\overline{\mathbf{Q}},
+=\vec P\times\overline{\vec Q},
 $$
 
 the cross product of the vector part of the first argument with the **conjugate** of the vector part of
@@ -38,10 +38,10 @@ Sesqualgebra* and *The 12 Products of the Biquaternion Complex Space*.
 **Conventions.** As in the companion articles of this block:
 $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0=1$,
 $e_k^{2}=-e_0$, $e_1e_2=e_3$, central $i$; $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$,
-scalar part $\mathrm{Sc}(\tilde Q)=Q_0$ and vector part $\mathbf{Q}=\sum_kQ_ke_k$; the natural conjugation
-$\tilde Q^{\natural}=Q_0e_0-\mathbf{Q}$, the coefficientwise one $\bar{\tilde Q}=\sum_\mu\bar Q_\mu e_\mu$,
-and the star $\tilde Q^{*}=\overline{\tilde Q^{\natural}}$; $(\mathbf{P},\mathbf{Q})=\sum_kP_kQ_k$ and
-$\times$ are the bilinear dot and cross products, and $\overline{\mathbf{Q}}=\sum_k\overline{Q_k}e_k$; the
+scalar part $\mathrm{Sc}(\tilde Q)=Q_0$ and vector part $\vec Q=\sum_kQ_ke_k$; the natural conjugation
+$\tilde Q^{\natural}=Q_0e_0-\vec Q$, the coefficientwise one $\bar{\tilde Q}=\sum_\mu\bar Q_\mu e_\mu$,
+and the star $\tilde Q^{*}=\overline{\tilde Q^{\natural}}$; $(\vec P,\vec Q)=\sum_kP_kQ_k$ and
+$\times$ are the bilinear dot and cross products, and $\overline{\vec Q}=\sum_k\overline{Q_k}e_k$; the
 fourth product is $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$; the Krein form is
 $K(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$
 with $\varepsilon=(1,-1,-1,-1)$; the sectors are $\mathbb{M}_+$ (informational) and $\mathbb{M}_-$
@@ -50,7 +50,7 @@ with $\varepsilon=(1,-1,-1,-1)$; the sectors are $\mathbb{M}_+$ (informational) 
 **A notation caution.** The fourth product is written $\tilde P\star\tilde Q$ in this block. The
 antisymmetric half is written $\diamond$ here, the symbol of *Introduction to the Antisymmetric
 Quaternionic Sesqualgebra of Biquaternions*; the menu comment renders it $\wedge$, which the mathematics
-article avoids because $\wedge$ names the plain outer product $\mathbf{P}\times\mathbf{Q}$ of the
+article avoids because $\wedge$ names the plain outer product $\vec P\times\vec Q$ of the
 antisymmetric plain algebra. The stable identifier is the name $\mathrm{AQS}$.
 
 ## The Rule and Its Coordinate Form
@@ -63,7 +63,7 @@ scalar part and the mixed term:
 
 $$
 \tilde P\diamond\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural}\bigr)
-=\mathbf{P}\times\overline{\mathbf{Q}}.
+=\vec P\times\overline{\vec Q}.
 $$
 
 The value is a **pure vector** and its image is therefore the vector subspace
@@ -82,7 +82,7 @@ $$
 $$
 
 *Proof.* Read the components of the bilinear cross product and substitute the conjugate coordinates of
-$\overline{\mathbf{Q}}$.
+$\overline{\vec Q}$.
 
 ## The Laws of the Operation
 
@@ -96,8 +96,8 @@ $$
 \qquad (A\in\mathbb{C}).
 $$
 
-*Proof.* The cross product is $\mathbb{C}$-linear in $\mathbf{P}$ and the conjugate is
-$\mathbb{C}$-antilinear in $\mathbf{Q}$, as the coordinate rule shows directly.
+*Proof.* The cross product is $\mathbb{C}$-linear in $\vec P$ and the conjugate is
+$\mathbb{C}$-antilinear in $\vec Q$, as the coordinate rule shows directly.
 
 **Proposition (conjugate-alternation).** The operation is **conjugate-alternating**,
 
@@ -105,8 +105,8 @@ $$
 \tilde P\diamond\tilde Q=-\overline{\tilde Q\diamond\tilde P}.
 $$
 
-*Proof.* Exchanging the arguments gives $\mathbf{Q}\times\overline{\mathbf{P}}$, and conjugating it gives
-$\overline{\mathbf{Q}}\times\mathbf{P}=-\mathbf{P}\times\overline{\mathbf{Q}}$.
+*Proof.* Exchanging the arguments gives $\vec Q\times\overline{\vec P}$, and conjugating it gives
+$\overline{\vec Q}\times\vec P=-\vec P\times\overline{\vec Q}$.
 
 The symmetry is the antisymmetry of a sesqualgebra part read through the conjugate of the value, and it is
 **not** alternation in the bilinear sense. In the bilinear theory an alternating product vanishes at the two equal arguments, because $f(x,x)=-f(x,x)$; here the two sides of the exchange are not the same element but
@@ -123,7 +123,7 @@ fourth product, and is stated here only to close the list of laws.)
 **Theorem (the algebraic norm).** For every biquaternion,
 
 $$
-\tilde Q\diamond\tilde Q=\mathbf{Q}\times\overline{\mathbf{Q}}.
+\tilde Q\diamond\tilde Q=\vec Q\times\overline{\vec Q}.
 $$
 
 It vanishes exactly when the vector part is a **complex multiple of a real vector**, and in particular on
@@ -133,10 +133,10 @@ $$
 (e_1+ie_2)\diamond(e_1+ie_2)=-2ie_3.
 $$
 
-*Proof.* Put $\tilde P=\tilde Q$ in the rule. The vector part $\mathbf{Q}=(1,i,0)$ and its conjugate
-$\overline{\mathbf{Q}}=(1,-i,0)$ have cross product $(0,0,-2i)$. The vanishing condition is the
-parallelism of $\mathbf{Q}$ and $\overline{\mathbf{Q}}$, which holds exactly when $\mathbf{Q}=z\,\mathbf{u}$
-with $z\in\mathbb{C}$ and $\mathbf{u}$ real.
+*Proof.* Put $\tilde P=\tilde Q$ in the rule. The vector part $\vec Q=(1,i,0)$ and its conjugate
+$\overline{\vec Q}=(1,-i,0)$ have cross product $(0,0,-2i)$. The vanishing condition is the
+parallelism of $\vec Q$ and $\overline{\vec Q}$, which holds exactly when $\vec Q=z\,\vec u$
+with $z\in\mathbb{C}$ and $\vec u$ real.
 
 **Remark (why this algebraic norm is different).** In the bilinear theory the algebraic norm of an antisymmetric part
 is zero and the algebraic norm of the symmetric part carries the square; the two are separated cleanly. For a
@@ -150,15 +150,15 @@ Antisymmetric Parts of a Sesqualgebra Product*.
 
 **The algebraic norm read as the self-helicity of one element.** The corpus reads the **off-diagonal** axial
 vector as a polarisation direction carried by a pair of elements; the algebraic norm extends that interpretation to a
-**single** element, and the extension is exact. On a complex vector $\mathbf{Q}=\mathbf{a}+i\mathbf{b}$ with
-$\mathbf{a},\mathbf{b}$ real,
+**single** element, and the extension is exact. On a complex vector $\vec Q=\vec a+i\vec b$ with
+$\vec a,\vec b$ real,
 
 $$
-\mathbf{Q}\times\overline{\mathbf{Q}}=(\mathbf{a}+i\mathbf{b})\times(\mathbf{a}-i\mathbf{b})=-2i\,\mathbf{a}\times\mathbf{b},
+\vec Q\times\overline{\vec Q}=(\vec a+i\vec b)\times(\vec a-i\vec b)=-2i\,\vec a\times\vec b,
 $$
 
 so the algebraic norm of the antisymmetric gauge product is the imaginary multiple of twice the cross product of
-the two real vectors an element carries — $-2ie_3$ at $\mathbf Q=e_1+ie_2$. A single complex vector has an
+the two real vectors an element carries — $-2ie_3$ at $\vec Q=e_1+ie_2$. A single complex vector has an
 intrinsic axial direction, perpendicular to the plane of its real and imaginary parts, and the algebraic norm is
 that direction: an element carries a **built-in helicity** before any second element enters, and the
 vanishing condition — the vector part a complex multiple of a real vector — is exactly the condition that
@@ -175,7 +175,7 @@ off-diagonal axial vector.
 
 The cross product of two vectors is not a third vector of the same kind: under a reflection it transforms
 with the opposite sign, and the object it defines is an **axial vector** or pseudovector. In the algebra
-the value $\mathbf{P}\times\overline{\mathbf{Q}}$ is a vector of $\mathrm{Vect}(\mathbb{B})$, so it lives
+the value $\vec P\times\overline{\vec Q}$ is a vector of $\mathrm{Vect}(\mathbb{B})$, so it lives
 in the same six-dimensional real space as a vector field strength, and it is an axial object by the
 algebra's own rule. That is the object the band reads.
 
@@ -194,7 +194,7 @@ The value is a cross product, and in three complex dimensions a cross product is
 exterior product. Writing $\star$ for the Hodge dual on the three-dimensional complex space,
 
 $$
-\mathbf{P}\times\overline{\mathbf{Q}}=\star\bigl(\mathbf{P}\wedge\overline{\mathbf{Q}}\bigr),
+\vec P\times\overline{\vec Q}=\star\bigl(\vec P\wedge\overline{\vec Q}\bigr),
 $$
 
 so the antisymmetric gauge product is the **field-strength pairing** of the two vector parts: it is an
@@ -237,7 +237,7 @@ space.
 3. **An axial vector is not a generator.** The gauge generators of the framework are the left
 multiplications by the anti-Hermitian elements of $\mathbb{M}_-$, the compact sector whose
 exponentiation gives the internal unitary group (*Observables, Gauge Generators and the Chirality of the
-Internal Action*). The value $\mathbf{P}\times\overline{\mathbf{Q}}$ is a vector of
+Internal Action*). The value $\vec P\times\overline{\vec Q}$ is a vector of
 $\mathrm{Vect}(\mathbb{B})$; it is not in general an element of $\mathbb{M}_-$ and it is not a left
 multiplication. The passage from an axial vector to a generator is a passage between two different
 constructions, and this article does not make it. The positive form of the same statement is that the
@@ -247,8 +247,8 @@ axial vector is the *carrier* of a direction, and the generator is the *operator
 
 Two further readings of the same value are recorded here, each under a name of its own and each labelled an interpretation rather than a theorem.
 
-- **Oriented-area interpretation.** The value $\mathbf{P}\times\overline{\mathbf{Q}}$ is read as an **oriented area**: a cross product is the area of the parallelogram spanned by the two vectors together with its orientation, so the polarisation direction of the band is a plane orientation of the gauge frame rather than a vector along a line. The interpretation gives the direction a geometric carrier — a plane and a sign — and it is the frame-level counterpart of the polarisation sphere of *Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form*, which owns the physical polarisation. The boundary is the article's: the value is an element of the algebra and not a point of a sphere.
-- **Internal handedness.** That the value is an **axial** (pseudo) vector is read as a **handedness of the internal frame**: the operation carries the orientation of the frame and not only a direction in it. The pseudo character belongs to the cross product as such — it is already present in the real antisymmetric part $\mathbf{P}\times\mathbf{Q}$ of §*The Value Is an Axial Vector* — and what the conjugation of the second slot adds is that the pairing joins a vector to the *conjugate* of another, so that the value is a direction of the frame paired with the conjugate direction of its partner. The name attaches the orientation to the frame; its boundary is that no reflection group, no spin and no parity are claimed here.
+- **Oriented-area interpretation.** The value $\vec P\times\overline{\vec Q}$ is read as an **oriented area**: a cross product is the area of the parallelogram spanned by the two vectors together with its orientation, so the polarisation direction of the band is a plane orientation of the gauge frame rather than a vector along a line. The interpretation gives the direction a geometric carrier — a plane and a sign — and it is the frame-level counterpart of the polarisation sphere of *Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form*, which owns the physical polarisation. The boundary is the article's: the value is an element of the algebra and not a point of a sphere.
+- **Internal handedness.** That the value is an **axial** (pseudo) vector is read as a **handedness of the internal frame**: the operation carries the orientation of the frame and not only a direction in it. The pseudo character belongs to the cross product as such — it is already present in the real antisymmetric part $\vec P\times\vec Q$ of §*The Value Is an Axial Vector* — and what the conjugation of the second slot adds is that the pairing joins a vector to the *conjugate* of another, so that the value is a direction of the frame paired with the conjugate direction of its partner. The name attaches the orientation to the frame; its boundary is that no reflection group, no spin and no parity are claimed here.
 
 ## The Limits
 
@@ -267,19 +267,19 @@ those the corpus has already fixed, and none is invented here.
 ## The Ledger
 
 **Proved, and recomputed.** The antisymmetric half is
-$\tilde P\diamond\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural})=\mathbf{P}\times\overline{\mathbf{Q}}$,
+$\tilde P\diamond\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural})=\vec P\times\overline{\vec Q}$,
 pure vector, with the coordinate rule displayed; it is sesquilinear over $(\mathbb{C},\bar{\cdot})$,
 $\mathbb{C}$-linear in the first slot and conjugate-linear in the second; it is conjugate-alternating,
 $\tilde P\diamond\tilde Q=-\overline{\tilde Q\diamond\tilde P}$; and it has no unit on either side. Its
-algebraic norm is $\mathbf{Q}\times\overline{\mathbf{Q}}$, vanishing exactly when $\mathbf{Q}$ is a complex
+algebraic norm is $\vec Q\times\overline{\vec Q}$, vanishing exactly when $\vec Q$ is a complex
 multiple of a real vector, and equal to $-2ie_3$ at $\tilde Q=e_1+ie_2$. The form is reproduced from *Introduction to the Antisymmetric Quaternionic Sesqualgebra
 of Biquaternions*, *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic
 Sesqualgebra* and *The 12 Products of the Biquaternion Complex Space*.
 
 **Interpretation.** That the axial vector of the value carries a polarisation or spin direction for the gauge side,
 and that the value is a direction and not a state. Three further names for the same facts, each an interpretation:
-the algebraic norm read as the **self-helicity** of one element, $\mathbf{Q}\times\overline{\mathbf{Q}}=-2i\,\mathbf{a}\times\mathbf{b}$
-for $\mathbf{Q}=\mathbf{a}+i\mathbf{b}$; the operation read as a **field-strength pairing**, the Hodge dual
+the algebraic norm read as the **self-helicity** of one element, $\vec Q\times\overline{\vec Q}=-2i\,\vec a\times\vec b$
+for $\vec Q=\vec a+i\vec b$; the operation read as a **field-strength pairing**, the Hodge dual
 of an antisymmetric two-form, so that the symmetric half is the metric interpretation and the antisymmetric half
 the curvature interpretation of the frame; and the operation read as an **anti-linear pairing**, its
 conjugate-alternation the shape of a conjugation-mediated pairing and its non-vanishing algebraic norm the
@@ -300,9 +300,9 @@ The antisymmetric gauge product reads as the rotation-like part of the internal 
 The antisymmetric quaternionic sesquilinear product is the half-difference of the two orders of the fourth
 product, and it is the cross product of the vector part of the first argument with the conjugate of the
 vector part of the second,
-$\tilde P\diamond\tilde Q=\mathbf{P}\times\overline{\mathbf{Q}}$. Its value is a **pure vector**, so its
+$\tilde P\diamond\tilde Q=\vec P\times\overline{\vec Q}$. Its value is a **pure vector**, so its
 image is the vector subspace; it is sesquilinear over $(\mathbb{C},\bar{\cdot})$ and
-**conjugate-alternating**; and it has no unit. Its algebraic norm $\mathbf{Q}\times\overline{\mathbf{Q}}$ does
+**conjugate-alternating**; and it has no unit. Its algebraic norm $\vec Q\times\overline{\vec Q}$ does
 **not** vanish in general — it is $-2ie_3$ at $\tilde Q=e_1+ie_2$ — because the antisymmetric half of a
 sesqualgebra product is the anti-fixed part of the square and the adaptation of the exchange does not force
 the algebraic norm to zero. The interpretation of the band is that the **axial vector** of the value carries a
@@ -320,10 +320,10 @@ the subject of the companion article of the band.
 | Symbol | Meaning |
 |---|---|
 | $\tilde P\diamond\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural})$ | the antisymmetric quaternionic sesquilinear product, $\mathrm{AQS}$ |
-| $\tilde P\diamond\tilde Q=\mathbf{P}\times\overline{\mathbf{Q}}$ | the value; pure vector |
+| $\tilde P\diamond\tilde Q=\vec P\times\overline{\vec Q}$ | the value; pure vector |
 | $P_2\overline{Q_3}-P_3\overline{Q_2},\dots$ | the coordinate rule |
 | $\tilde P\diamond\tilde Q=-\overline{\tilde Q\diamond\tilde P}$ | conjugate-alternation |
-| $\tilde Q\diamond\tilde Q=\mathbf{Q}\times\overline{\mathbf{Q}}$ | the algebraic norm; not zero in general |
+| $\tilde Q\diamond\tilde Q=\vec Q\times\overline{\vec Q}$ | the algebraic norm; not zero in general |
 | $(e_1+ie_2)\diamond(e_1+ie_2)=-2ie_3$ | the witness of the non-vanishing algebraic norm |
 | $\mathrm{Vect}(\mathbb{B})$ | the vector subspace; the image of the operation |
 | axial vector | the interpretation of the value; a direction, not a state and not a generator |

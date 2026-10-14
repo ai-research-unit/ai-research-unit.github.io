@@ -12,7 +12,7 @@ One word on the two scalar rules, because they are weaker than they look. They a
 
 The general theory is the sesquilinear block: the definition and the standard example are *Sesqualgebras*, the calculus of the product is *The Sesquilinear Product*, the semilinear maps and the conjugate module are *Conjugate-Linear Maps and the Conjugate Dual*, the associator and the ternary product are *The Sesquilinear Associator and the Ternary Product*, the abstract ternary system is *Algebraic J\*-Algebras*, the two halves of an involutive algebra are *Hermitian and Skew-Hermitian Elements*, the squares are *Hermitian Squares and the Algebraic Positive Cone*, and the ideals are *Ideals and Quotients of a Sesqualgebra*. On the biquaternion side, the two-sided ideals of the algebra and the simplicity of the ring are *Ideals and Peirce Decomposition of the General Plain Algebra*, and the idempotents are *Idempotents of the General Plain Algebra*.
 
-**Conventions.** $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is the biquaternion algebra, with basis $e_0,e_1,e_2,e_3$ and central scalar imaginary $i$, $i^2 = -1$; a general element is $\tilde Q = \sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$. Throughout, a biquaternion is written $\tilde Q = Q_0e_0 + \mathbf Q$ with $\mathbf Q = \sum_{k=1}^{3} Q_ke_k$, and $\overline{\mathbf Q}$ is the coefficientwise conjugate of the vector part. The base involution is the complex conjugation, written $\varsigma(z) = \bar z$, and the involution of the algebra is the Hermitian conjugation ${}^{*} = \bar{\cdot} \circ {}^{\natural}$, with the coordinates $Q^{*}_0 = \overline{Q_0}$ and $Q^{*}_k = -\overline{Q_k}$ for $k = 1,2,3$, that is $Q^{*}_\nu = \varepsilon_\nu \overline{Q_\nu}$ with $\varepsilon = (1,-1,-1,-1)$. The four general products and their notation are those of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*.
+**Conventions.** $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ is the biquaternion algebra, with basis $e_0,e_1,e_2,e_3$ and central scalar imaginary $i$, $i^2 = -1$; a general element is $\tilde Q = \sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$. Throughout, a biquaternion is written $\tilde Q = Q_0e_0 + \vec Q$ with $\vec Q = \sum_{k=1}^{3} Q_ke_k$, and $\overline{\vec Q}$ is the coefficientwise conjugate of the vector part. The base involution is the complex conjugation, written $\varsigma(z) = \bar z$, and the involution of the algebra is the Hermitian conjugation ${}^{*} = \bar{\cdot} \circ {}^{\natural}$, with the coordinates $Q^{*}_0 = \overline{Q_0}$ and $Q^{*}_k = -\overline{Q_k}$ for $k = 1,2,3$, that is $Q^{*}_\nu = \varepsilon_\nu \overline{Q_\nu}$ with $\varepsilon = (1,-1,-1,-1)$. The four general products and their notation are those of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*.
 
 ## The Product Read as a Multiplication
 
@@ -39,10 +39,10 @@ each product $e_\mu e_\nu$ being a basis element up to sign, so that the double 
 Collecting the scalar part and the vector part of the two elements, the vector part of the second read through the coefficientwise conjugate, the same product reads
 
 $$
-\tilde P\star\tilde Q=\bigl(P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})\bigr)-P_0\overline{\mathbf Q}+\overline{Q_0}\mathbf P-\mathbf P\times\overline{\mathbf Q} ,
+\tilde P\star\tilde Q=\bigl(P_0\overline{Q_0}+(\vec P,\overline{\vec Q})\bigr)-P_0\overline{\vec Q}+\overline{Q_0}\vec P-\vec P\times\overline{\vec Q} ,
 $$
 
-where $(\mathbf P,\overline{\mathbf Q})$ and $\mathbf P\times\overline{\mathbf Q}$ are the complex bilinear dot and cross products of the vector parts and the display is the one of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*. Its scalar part is $\mathrm{Sc}(\tilde P\star\tilde Q)=\sum_{\mu=0}^{3}P_\mu\overline{Q_\mu}$, conjugate-linear in the coordinates of the second element, and its vector part is the one displayed.
+where $(\vec P,\overline{\vec Q})$ and $\vec P\times\overline{\vec Q}$ are the complex bilinear dot and cross products of the vector parts and the display is the one of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*. Its scalar part is $\mathrm{Sc}(\tilde P\star\tilde Q)=\sum_{\mu=0}^{3}P_\mu\overline{Q_\mu}$, conjugate-linear in the coordinates of the second element, and its vector part is the one displayed.
 
 ### The Two Scalar Rules
 
@@ -239,14 +239,14 @@ a sum fixed by the complex conjugation.
 **Proposition.** An element is idempotent for the sesquilinear multiplication, $\tilde Q \star \tilde Q = \tilde Q$, if and only if it is a Hermitian idempotent of the algebra; hence the idempotents of the multiplication are $0$, $e_0$, and the **pure states**
 
 $$
-\tilde\Pi_1(\hat\mu) = \tfrac12\bigl(e_0 + i\hat\mu\bigr) , \qquad \hat\mu \in \mathbb{R}^{3}, \ |\hat\mu| = 1 ,
+\tilde\Pi_+(\tilde\Xi) = \tfrac12\bigl(e_0 + \tilde\Xi\bigr) , \qquad \hat n \in \mathbb{R}^{3}, \ |\hat n| = 1 ,
 $$
 
 indexed by the real unit vectors (*Conventions in Mathematics*, *Idempotents of the General Plain Algebra*).
 
-**Proof.** If $\tilde Q \star \tilde Q = \tilde Q$ then $\tilde Q\tilde Q^{*} = \tilde Q$, and applying ${}^{*}$ gives $\tilde Q\tilde Q^{*} = \tilde Q^{*}$ because the square is Hermitian, so $\tilde Q = \tilde Q^{*}$; hence $\tilde Q\tilde Q^{*} = \tilde Q^{2}$ and $\tilde Q$ is an idempotent of the algebra, Hermitian. Conversely a Hermitian idempotent satisfies $\tilde Q \star \tilde Q = \tilde Q\tilde Q^{*} = \tilde Q^{2} = \tilde Q$. The Hermitian idempotents of $\mathbb{B}$ are classified in *Idempotents of the General Plain Algebra*: the idempotents are the elements $\tfrac12(e_0 + \xi i)$ with $\xi$ a root of $-1$, and the Hermitian ones are those of the **real root** family, $\xi = \pm\mu$ with $\mu$ a unit pure real quaternion, that is the elements $\tfrac12(e_0 \pm \mu i)$, together with the trivial idempotents $0$ and $e_0$.
+**Proof.** If $\tilde Q \star \tilde Q = \tilde Q$ then $\tilde Q\tilde Q^{*} = \tilde Q$, and applying ${}^{*}$ gives $\tilde Q\tilde Q^{*} = \tilde Q^{*}$ because the square is Hermitian, so $\tilde Q = \tilde Q^{*}$; hence $\tilde Q\tilde Q^{*} = \tilde Q^{2}$ and $\tilde Q$ is an idempotent of the algebra, Hermitian. Conversely a Hermitian idempotent satisfies $\tilde Q \star \tilde Q = \tilde Q\tilde Q^{*} = \tilde Q^{2} = \tilde Q$. The Hermitian idempotents of $\mathbb{B}$ are classified in *Idempotents of the General Plain Algebra*: the idempotents are the elements $\tfrac12(e_0 + \xi i)$ with $\xi$ a root of $-1$, and the Hermitian ones are those of the **real root** family, $\xi = \pm\vec n$ with $\vec n$ a unit pure real quaternion, that is the elements $\tfrac12(e_0 \pm \vec n i)$, together with the trivial idempotents $0$ and $e_0$.
 
-**Remark.** The unit $e_0$ is idempotent on both sides, and each $\tilde\Pi_1(\hat\mu)$ is idempotent for the multiplication while being a Hermitian idempotent of the algebra, a pure state of *Idempotents of the General Plain Algebra*; the sesquilinear multiplication therefore has the same idempotents as the algebra has Hermitian ones, and none besides. The idempotents of the algebra that are not Hermitian, the non-trivial-root family of *Idempotents of the General Plain Algebra*, are **not** idempotent for the multiplication.
+**Remark.** The unit $e_0$ is idempotent on both sides, and each $\tilde\Pi_+(\tilde\Xi)$ is idempotent for the multiplication while being a Hermitian idempotent of the algebra, a pure state of *Idempotents of the General Plain Algebra*; the sesquilinear multiplication therefore has the same idempotents as the algebra has Hermitian ones, and none besides. The idempotents of the algebra that are not Hermitian, the non-trivial-root family of *Idempotents of the General Plain Algebra*, are **not** idempotent for the multiplication.
 
 ## The Four General Products and the Sesquilinear Structure
 
@@ -343,7 +343,7 @@ Among the four general products of *The Four General Products of the Biquaternio
 | $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ | the biquaternion algebra, read here with the sesquilinear multiplication |
 | $e_0,e_1,e_2,e_3$ | complex basis; $e_0$ the unit, $e_k$ the quaternion units |
 | $i$ | central scalar imaginary, $i^2=-1$ |
-| $\tilde Q = Q_0e_0 + \mathbf Q$ | a biquaternion and its scalar–vector split |
+| $\tilde Q = Q_0e_0 + \vec Q$ | a biquaternion and its scalar–vector split |
 | $\varsigma(z) = \bar z$ | the base involution, the complex conjugation |
 | ${}^{*} = \bar{\cdot}\circ{}^{\natural}$ | the Hermitian conjugation, the conjugate-linear involution of the algebra |
 | $\sigma(\tilde Y) = e_0 \star \tilde Y$ | the first row of a product, the involution of the derived operation |
@@ -353,7 +353,7 @@ Among the four general products of *The Four General Products of the Biquaternio
 | $\{\tilde P,\tilde Q,\tilde R\} = \tilde P\tilde Q^{*}\tilde R$ | the ternary product, the $J^{*}$-structure |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | the Hermitian and the anti-Hermitian halves, $H(\mathbb{B})$ and $S(\mathbb{B})$ |
 | $C(\mathbb{B})$ | the algebraic positive cone, the sums of the squares $\tilde Q \star \tilde Q$ |
-| $\tilde\Pi_1(\hat\mu) = \tfrac12(e_0+i\hat\mu)$ | the idempotents of the multiplication, $\hat\mu$ a real unit vector |
+| $\tilde\Pi_+(\tilde\Xi) = \tfrac12(e_0+\tilde\Xi)$ | the idempotents of the multiplication, $\hat n$ a real unit vector |
 
 ## Further Reading
 

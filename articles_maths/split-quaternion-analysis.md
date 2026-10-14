@@ -25,7 +25,7 @@ $$
 
 The Euclidean norm makes the algebra a normed algebra up to the constant $\sqrt{2}$, and it induces the product topology of $\mathbb{R}^4$.
 
-**Proof.** In the four real coordinates the product is bilinear, and the bound $|\tilde q \tilde p|^2 \leq 2\,|\tilde q|^2|\tilde p|^2$ follows from the Cauchy–Schwarz inequality applied to the expansions of the scalar part $q_0p_0 - B(\mathbf u,\mathbf v)$ and the vector part $q_0\mathbf v + p_0\mathbf u + \tfrac12[\mathbf u,\mathbf v]$; equality is attained at $\tilde q = \tilde p = 1 + e_2$, so the constant $\sqrt2$ is best possible. The topology statement is that the Euclidean norm on the four real coordinates is the product topology of $\mathbb{R}^4$.
+**Proof.** In the four real coordinates the product is bilinear, and the bound $|\tilde q \tilde p|^2 \leq 2\,|\tilde q|^2|\tilde p|^2$ follows from the Cauchy–Schwarz inequality applied to the expansions of the scalar part $q_0p_0 - B(\vec u,\vec v)$ and the vector part $q_0\vec v + p_0\vec u + \tfrac12[\vec u,\vec v]$; equality is attained at $\tilde q = \tilde p = 1 + e_2$, so the constant $\sqrt2$ is best possible. The topology statement is that the Euclidean norm on the four real coordinates is the product topology of $\mathbb{R}^4$.
 
 **Corollary (Open and Closed Sets).** The group of units is open, the zero divisor set is closed, and the unit group is a topological group in the Euclidean topology. The norm-one group $U$ and the level sets of the split-quaternion norm are closed subsets.
 

@@ -3,7 +3,7 @@
 ## Introduction
 
 The antisymmetric quaternionic multiplication
-$\tilde p\diamond\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)=p_0\mathbf q-q_0\mathbf p-\mathbf p\times\mathbf q$ is alternating and vector valued, and it fails the
+$\tilde p\diamond\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)=p_0\vec q-q_0\vec p-\vec p\times\vec q$ is alternating and vector valued, and it fails the
 Jacobi identity (*The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic
 Algebra*, below this article in this category). A Lie algebra carries its invariant bilinear forms, the
 symmetric $\beta$ with $\beta([x,y],z)+\beta(y,[x,z])=0$, whose prototype is the Killing form; the block
@@ -30,11 +30,11 @@ Algebra*, below this article in this category; the operators are *The Adjoint Op
 Antisymmetric Quaternionic Algebra*, below this article in this category. The comparator is *The Killing
 
 **Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and
-$e_1^2=e_2^2=e_3^2=-e_0$; a generic element is $\tilde q=q_0e_0+\mathbf q$, the **centre** is
+$e_1^2=e_2^2=e_3^2=-e_0$; a generic element is $\tilde q=q_0e_0+\vec q$, the **centre** is
 $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$ and the **vector subspace** is
-$\mathrm{Vect}(\mathbb{H})=\{\mathbf q\}$; $\mathbf p\cdot\mathbf q$ is the Euclidean dot product and
+$\mathrm{Vect}(\mathbb{H})=\{\vec q\}$; $\vec p\cdot\vec q$ is the Euclidean dot product and
 $L^{\diamond}_{\tilde p}$ is the left multiplication operator. The **quaternion form** is
-$N(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q$.
+$N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$.
 
 ## The Invariance Condition
 
@@ -141,7 +141,7 @@ the composition of the two left multiplication operators.
 **Proposition (the operator trace form is non-degenerate).** For all $\tilde p,\tilde q$,
 
 $$
-K(\tilde p,\tilde q)=3p_0q_0-2\,\mathbf p\cdot\mathbf q ,
+K(\tilde p,\tilde q)=3p_0q_0-2\,\vec p\cdot\vec q ,
 $$
 
 with Gram matrix $\operatorname{diag}(3,-2,-2,-2)$, of rank four, hence non-degenerate.
@@ -155,7 +155,7 @@ entries.
 
 $$
 F(\tilde p,\tilde q,\tilde r)=K(\tilde p\diamond\tilde q,\tilde r)+K(\tilde q,\tilde p\diamond\tilde r)
-=-4p_0\,(\mathbf q\cdot\mathbf r)+2q_0\,(\mathbf p\cdot\mathbf r)+2r_0\,(\mathbf p\cdot\mathbf q)
+=-4p_0\,(\vec q\cdot\vec r)+2q_0\,(\vec p\cdot\vec r)+2r_0\,(\vec p\cdot\vec q)
 $$
 
 does not vanish identically, and at $(\tilde p,\tilde q,\tilde r)=(e_0,e_1,e_1)$ it equals
@@ -175,8 +175,8 @@ either. The substitute computed here is a form of the **operators** and not an i
 ## The Comparison with the Killing Form of the Cross Product
 
 **Remark (the comparator carries a Killing form).** The antisymmetric plain block
-$\tilde p\times\tilde q=\mathbf p\times\mathbf q$ is a Lie algebra; it carries the Killing form
-$\kappa(\tilde p,\tilde q)=\operatorname{Tr}(\operatorname{ad}_{\tilde p}\operatorname{ad}_{\tilde q})=-2\,\mathbf p\cdot\mathbf q$,
+$\tilde p\times\tilde q=\vec p\times\vec q$ is a Lie algebra; it carries the Killing form
+$\kappa(\tilde p,\tilde q)=\operatorname{Tr}(\operatorname{ad}_{\tilde p}\operatorname{ad}_{\tilde q})=-2\,\vec p\cdot\vec q$,
 computed on the cross product and negative definite on the vector subspace, with the centre as radical
 (*The Killing Form of the Antisymmetric Plain Algebra*). The block of this article has no such form:
 its only invariant form is the degenerate $\varphi$, its coefficient form vanishes, and the trace form
@@ -184,7 +184,7 @@ of its operators is non-degenerate but not invariant. The comparison is the exac
 the Killing form exists for the cross product because the Jacobi identity holds, and it has no analogue
 here because the Jacobi identity does not. On the vector subspace, where the block is the cross product
 up to sign, both $\kappa$ and the operator trace form restrict to multiples of the same Euclidean form
-$-\mathbf p\cdot\mathbf q$; the two differ only in the scalar factor, and neither is an invariant form
+$-\vec p\cdot\vec q$; the two differ only in the scalar factor, and neither is an invariant form
 of the block.
 
 ## Summary
@@ -195,11 +195,11 @@ one-dimensional solution space, spanned by the scalar-part form $\varphi(\tilde 
 symmetric of Gram matrix $\operatorname{diag}(1,0,0,0)$ and rank one, with the vector subspace as
 radical; there is no nonzero alternating invariant form. The coefficient form of the block vanishes,
 the values having zero scalar part. The operator trace form
-$K(\tilde p,\tilde q)=\operatorname{Tr}(L^{\diamond}_{\tilde p}L^{\diamond}_{\tilde q})=3p_0q_0-2\,\mathbf p\cdot\mathbf q$
+$K(\tilde p,\tilde q)=\operatorname{Tr}(L^{\diamond}_{\tilde p}L^{\diamond}_{\tilde q})=3p_0q_0-2\,\vec p\cdot\vec q$
 is non-degenerate, of Gram matrix $\operatorname{diag}(3,-2,-2,-2)$, but is not invariant, with the
-failure $-4p_0(\mathbf q\cdot\mathbf r)+2q_0(\mathbf p\cdot\mathbf r)+2r_0(\mathbf p\cdot\mathbf q)$;
+failure $-4p_0(\vec q\cdot\vec r)+2q_0(\vec p\cdot\vec r)+2r_0(\vec p\cdot\vec q)$;
 the absence is the same obstruction as the Jacobi failure. The comparator, the cross product, carries
-the Killing form $-2\,\mathbf p\cdot\mathbf q$, available because its Jacobi identity holds.
+the Killing form $-2\,\vec p\cdot\vec q$, available because its Jacobi identity holds.
 
 ## Summary of Notation
 
@@ -210,8 +210,8 @@ the Killing form $-2\,\mathbf p\cdot\mathbf q$, available because its Jacobi ide
 | $\mathrm{Vect}(\mathbb{H})$ | the radical of $\varphi$ |
 | $0$ | the alternating invariant forms |
 | $\mathrm{Sc}(\tilde p\diamond\tilde q)=0$ | the vanishing of the coefficient form |
-| $K(\tilde p,\tilde q)=3p_0q_0-2\,\mathbf p\cdot\mathbf q$, Gram $\operatorname{diag}(3,-2,-2,-2)$ | the operator trace form, non-degenerate, not invariant |
-| $\kappa(\tilde p,\tilde q)=-2\,\mathbf p\cdot\mathbf q$ | the Killing form of the comparator |
+| $K(\tilde p,\tilde q)=3p_0q_0-2\,\vec p\cdot\vec q$, Gram $\operatorname{diag}(3,-2,-2,-2)$ | the operator trace form, non-degenerate, not invariant |
+| $\kappa(\tilde p,\tilde q)=-2\,\vec p\cdot\vec q$ | the Killing form of the comparator |
 
 ## Further Reading
 

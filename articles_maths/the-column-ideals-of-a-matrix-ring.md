@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Let \(D\) be a division ring, let \(n \geq 1\), and let \(A = M_n(D)\). The \(j\)-th **column ideal** of \(A\) is the left ideal \(L_j = AE_{jj}\) of the matrices supported in the \(j\)-th column. It is a minimal left ideal, and its corner-adapted basis has a fixed shape: **exactly one idempotent and \(n-1\) nilpotents**. For \(n = 2\) this reads one idempotent and one nilpotent, which is the shape of the biquaternion spinor space \(S = \mathbb{C}\{\tilde\Pi_1,\tilde\Upsilon_2\} = \mathbb{B}\tilde\Pi_1\); the general statement removes any appearance of coincidence from that shape.
+Let \(D\) be a division ring, let \(n \geq 1\), and let \(A = M_n(D)\). The \(j\)-th **column ideal** of \(A\) is the left ideal \(L_j = AE_{jj}\) of the matrices supported in the \(j\)-th column. It is a minimal left ideal, and its corner-adapted basis has a fixed shape: **exactly one idempotent and \(n-1\) nilpotents**. For \(n = 2\) this reads one idempotent and one nilpotent, which is the shape of the biquaternion spinor space \(S = \mathbb{C}\{\tilde\Pi_+,\tilde\Upsilon_2\} = \mathbb{B}\tilde\Pi_+\); the general statement removes any appearance of coincidence from that shape.
 
 The count is forced by the **Peirce decomposition** and by nothing else. The matrix units \(E_{11},\dots,E_{nn}\) are a complete orthogonal family of idempotents, and relative to that family the column \(L_j\) splits into \(n\) one-dimensional corners. One of them is the **diagonal** corner \(E_{jj}L_j = E_{jj}AE_{jj}\), a copy of the division ring \(D\), and it contains the idempotent \(E_{jj}\), which is the identity of that corner. The other \(n-1\) are the **off-diagonal** corners \(E_{ii}AE_{jj}\) with \(i \neq j\), and each of them is **square-zero**: the product of any two of its elements is zero. A nonzero square-zero element is a nilpotent and not an idempotent, so an off-diagonal corner contains no nonzero idempotent at all. A basis of the column with one element per corner therefore has exactly one idempotent and \(n-1\) nilpotents, and \(n-1\) is nothing but the number of off-diagonal corners of a column.
 
@@ -179,7 +179,7 @@ The idempotents of \(L_j\) are not the single element \(E_{jj}\); they are an af
 
 *Proof.* Let \(x = \sum_i x_{ij}E_{ij}\) satisfy \(x^2 = x\). By §*The Nilpotents of the Column* the coefficient of \(E_{ij}\) in \(x^2\) is \(x_{ij}x_{jj}\), so the equation reads \(x_{ij}x_{jj} = x_{ij}\) for every \(i\), and for \(i = j\), \(x_{jj}^2 = x_{jj}\), so \(x_{jj} \in \{0,1\}\) because \(D\) is a division ring. If \(x_{jj} = 0\) then \(x_{ij}x_{jj} = 0 = x_{ij}\) for every \(i\), so \(x = 0\). If \(x_{jj} = 1\) then \(x = E_{jj} + \nu\) with \(\nu = x - E_{jj} \in N_j\). Conversely, for \(\nu \in N_j\) one has \(E_{jj}\nu = \nu_{jj}E_{jj} = 0\), \(\nu E_{jj} = \nu\) and \(\nu^2 = 0\), so \((E_{jj}+\nu)^2 = E_{jj} + \nu\).
 
-The family \(E_{jj} + N_j\) is a translate of the nilpotent subspace, so the idempotents of the column are as numerous as the elements of \(N_j \cong D^{n-1}\); in the biquaternion case \(n = 2\) they are the idempotents \(\tilde\Pi_1 + c\tilde\Upsilon_2\) with \(c \in \mathbb{C}\).
+The family \(E_{jj} + N_j\) is a translate of the nilpotent subspace, so the idempotents of the column are as numerous as the elements of \(N_j \cong D^{n-1}\); in the biquaternion case \(n = 2\) they are the idempotents \(\tilde\Pi_+ + c\tilde\Upsilon_2\) with \(c \in \mathbb{C}\).
 
 ### The Corner-Adapted Basis Is Not Every Basis
 
@@ -195,7 +195,7 @@ are idempotent and form a \(D\)-basis of \(L_j\). So a basis of the column can c
 
 *Proof.* Each \(E_{ij}\) with \(i \neq j\) lies in \(N_j\), so \(E_{jj}+E_{ij}\) is idempotent by §*The Idempotents of the Column*. The \(n\) elements are linearly independent: their coefficients in the basis \((E_{1j},\dots,E_{nj})\) are the rows of the matrix that is the identity except that its \(j\)-th column is filled with ones, whose determinant is \(1\). So they are a basis.
 
-So "one idempotent and \(n-1\) nilpotents" is a statement about the **corner-adapted** basis, the basis with one element per Peirce corner, and it is that basis which the physical spinor statements use: the biquaternion spinor space is presented on \((\tilde\Pi_1,\tilde\Upsilon_2)\), not on \((\tilde\Pi_1, \tilde\Pi_1 + \tilde\Upsilon_2)\). What the theorem asserts is that the \(n-1\) off-diagonal elements of a corner-adapted basis are nilpotents for every normalisation, and that such a basis never has two idempotents, having exactly one, namely \(E_{jj}\), when its diagonal element is the identity of its corner.
+So "one idempotent and \(n-1\) nilpotents" is a statement about the **corner-adapted** basis, the basis with one element per Peirce corner, and it is that basis which the physical spinor statements use: the biquaternion spinor space is presented on \((\tilde\Pi_+,\tilde\Upsilon_2)\), not on \((\tilde\Pi_+, \tilde\Pi_+ + \tilde\Upsilon_2)\). What the theorem asserts is that the \(n-1\) off-diagonal elements of a corner-adapted basis are nilpotents for every normalisation, and that such a basis never has two idempotents, having exactly one, namely \(E_{jj}\), when its diagonal element is the identity of its corner.
 
 ## The Counts Tabulated
 
@@ -226,10 +226,10 @@ For \(n = 2\) a column has one diagonal corner and one off-diagonal corner, so t
 The corpus's worked instance is the biquaternion algebra \(\mathbb{B} \cong M_2(\mathbb{C})\), with \(D = \mathbb{C}\) and \(n = 2\). The first column is the spinor space
 
 $$
-S = \mathbb{B}\tilde\Pi_1 = \mathbb{C}\{\tilde\Pi_1,\tilde\Upsilon_2\},
+S = \mathbb{B}\tilde\Pi_+ = \mathbb{C}\{\tilde\Pi_+,\tilde\Upsilon_2\},
 $$
 
-with \(\tilde\Pi_1 = \tfrac12(e_0+ie_3)\) the idempotent of the diagonal corner and \(\tilde\Upsilon_2 = \tfrac12(ie_1+e_2)\) the square-zero generator of the off-diagonal corner; the second column is the complement \(\mathbb{B}\tilde\Pi_2 = \mathbb{C}\{\tilde\Upsilon_1,\tilde\Pi_2\}\), the mirror case. The idempotents of \(S\) are \(\tilde\Pi_1 + c\tilde\Upsilon_2\) with \(c \in \mathbb{C}\), by §*The Idempotents of the Column*. The ideals, the Peirce corners and the two multiplication tables are *Ideals and Peirce Decomposition of the General Plain Algebra*; the two minimal left ideals as the spinor space and its complement are *The Spinor Space as a Module and as a Hilbert Space* and *The Complementary Space of the Spinor Space and Its Physical Meaning*.
+with \(\tilde\Pi_+ = \tfrac12(e_0+ie_3)\) the idempotent of the diagonal corner and \(\tilde\Upsilon_2 = \tfrac12(ie_1+e_2)\) the square-zero generator of the off-diagonal corner; the second column is the complement \(\mathbb{B}\tilde\Pi_- = \mathbb{C}\{\tilde\Upsilon_1,\tilde\Pi_-\}\), the mirror case. The root \(ie_3\) of \(+1\), \((ie_3)^2=e_0\), carries the two associated idempotents \(\tilde\Pi_+\) and \(\tilde\Pi_-\). The idempotents of \(S\) are \(\tilde\Pi_+ + c\tilde\Upsilon_2\) with \(c \in \mathbb{C}\), by §*The Idempotents of the Column*. The ideals, the Peirce corners and the two multiplication tables are *Ideals and Peirce Decomposition of the General Plain Algebra*; the two minimal left ideals as the spinor space and its complement are *The Spinor Space as a Module and as a Hilbert Space* and *The Complementary Space of the Spinor Space and Its Physical Meaning*.
 
 ## Where the Count Does Not Apply
 
@@ -256,14 +256,14 @@ is a nonzero left ideal of \(M_n(R)\) strictly contained in \(M_n(R)E_{jj}\), si
 - **Minimality.** For every nonzero \(x \in L_j\), and \(i_0\) chosen with \(x_{i_0j} \neq 0\), one has \(E_{ii_0}x = x_{i_0j}E_{ij}\), so that \(Ax = L_j\); the column has no nonzero proper left submodule.
 - **Powers and nilpotents.** The \(E_{ij}\)-coefficient of \(x^m\) is \(x_{ij}x_{jj}^{m-1}\) for \(m \le 4\); \(x\) is nilpotent exactly when \(x_{jj} = 0\); and \(N_j^2 = 0\).
 - **Idempotents.** \(E_{jj}+\nu\) is idempotent for every \(\nu \in N_j\), and \(E_{jj}\), \(E_{jj}+E_{ij}\) (\(i \neq j\)) are \(n\) idempotents forming a basis of the column.
-- **Biquaternion instance.** \(\tilde\Pi_1^2 = \tilde\Pi_1\), \(\tilde\Upsilon_2^2 = 0\) and \(\tilde\Pi_1 + c\tilde\Upsilon_2\) idempotent for \(100\) values of \(c \in \mathbb{C}\).
+- **Biquaternion instance.** \(\tilde\Pi_+^2 = \tilde\Pi_+\), \(\tilde\Upsilon_2^2 = 0\) and \(\tilde\Pi_+ + c\tilde\Upsilon_2\) idempotent for \(100\) values of \(c \in \mathbb{C}\).
 - **Boundary.** Over \(R = \mathbb{Z}\) with \(I = 2\mathbb{Z}\) and \(n = 2\), the set \(M_2(I)E_{11}\) is preserved by left multiplication and excludes \(E_{11}\), so it is a proper nonzero left ideal of \(M_2(\mathbb{Z})E_{11}\).
 
 ## Summary
 
 In the matrix ring \(A = M_n(D)\) over a division ring \(D\), the \(j\)-th column ideal \(L_j = AE_{jj} = \bigoplus_i DE_{ij}\) is a minimal left ideal of dimension \(n\), and its corner-adapted basis, the basis with one element per Peirce corner, has exactly **one idempotent and \(n-1\) nilpotents**. The count is forced by the corner structure of the column: the diagonal corner \(E_{jj}AE_{jj} = DE_{jj}\) is a copy of the division ring \(D\) and contains the idempotent \(E_{jj}\), the identity of that corner, while each of the \(n-1\) off-diagonal corners \(E_{ii}AE_{jj} = DE_{ij}\) is square-zero by \((fae)^2 = fa(ef)ae = 0\), so it contains no nonzero idempotent and all its nonzero elements are nilpotents. Hence \(1 + (n-1) = n\), and \(n-1\) is the number of off-diagonal corners of a column, not a numerical accident.
 
-The matrix-unit basis \((E_{1j},\dots,E_{nj})\) realises the count, and the shape is stable in the off-diagonal corners under any normalisation, while the diagonal element is idempotent exactly when it is the corner's identity \(E_{jj}\). The nilpotents of the column are exactly the elements of its off-diagonal part \(N_j\), each square-zero, and \(N_j\) is the kernel of the ring homomorphism \(\pi(x) = x_{jj}\) from the column to \(D\), with \(\pi(E_{jj}) = 1\), so the column is an extension of \(D\) by a square-zero ideal. The idempotents, by contrast, are not the single \(E_{jj}\): they are the affine family \(E_{jj}+N_j\), and a basis of the column can be chosen all of whose elements are idempotents. The count needs a division ring: over a ring with a proper nonzero ideal the column is not minimal, and the corner argument fails. For \(n = 2\) the count is one idempotent and one nilpotent, which is the shape of the biquaternion spinor space \(S = \mathbb{B}\tilde\Pi_1 = \mathbb{C}\{\tilde\Pi_1,\tilde\Upsilon_2\}\).
+The matrix-unit basis \((E_{1j},\dots,E_{nj})\) realises the count, and the shape is stable in the off-diagonal corners under any normalisation, while the diagonal element is idempotent exactly when it is the corner's identity \(E_{jj}\). The nilpotents of the column are exactly the elements of its off-diagonal part \(N_j\), each square-zero, and \(N_j\) is the kernel of the ring homomorphism \(\pi(x) = x_{jj}\) from the column to \(D\), with \(\pi(E_{jj}) = 1\), so the column is an extension of \(D\) by a square-zero ideal. The idempotents, by contrast, are not the single \(E_{jj}\): they are the affine family \(E_{jj}+N_j\), and a basis of the column can be chosen all of whose elements are idempotents. The count needs a division ring: over a ring with a proper nonzero ideal the column is not minimal, and the corner argument fails. For \(n = 2\) the count is one idempotent and one nilpotent, which is the shape of the biquaternion spinor space \(S = \mathbb{B}\tilde\Pi_+ = \mathbb{C}\{\tilde\Pi_+,\tilde\Upsilon_2\}\).
 
 ## Summary of Notation
 
@@ -281,7 +281,7 @@ The matrix-unit basis \((E_{1j},\dots,E_{nj})\) realises the count, and the shap
 | \(E_{jj} + N_j\) | The affine family of idempotents of the column |
 | Corner-adapted basis | A basis of \(L_j\) with one element in each corner |
 | \(\mathbb{B} \cong M_2(\mathbb{C})\) | The biquaternion instance, \(n = 2\), \(D = \mathbb{C}\) |
-| \(S = \mathbb{B}\tilde\Pi_1 = \mathbb{C}\{\tilde\Pi_1,\tilde\Upsilon_2\}\) | The spinor space, the first column: one idempotent, one nilpotent |
+| \(S = \mathbb{B}\tilde\Pi_+ = \mathbb{C}\{\tilde\Pi_+,\tilde\Upsilon_2\}\) | The spinor space, the first column: one idempotent, one nilpotent |
 
 ## Further Reading
 

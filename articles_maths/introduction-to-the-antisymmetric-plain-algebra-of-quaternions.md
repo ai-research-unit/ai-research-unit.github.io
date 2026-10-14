@@ -9,7 +9,7 @@ antisymmetric part, and each part is again a real bilinear product of the same s
 reads the **antisymmetric part** as a multiplication in its own right:
 
 $$
-\tilde p\times\tilde q=\tfrac12\bigl(\tilde p\tilde q-\tilde q\tilde p\bigr)=\mathbf p\times\mathbf q,
+\tilde p\times\tilde q=\tfrac12\bigl(\tilde p\tilde q-\tilde q\tilde p\bigr)=\vec p\times\vec q,
 $$
 
 the cross product of the two vector parts. The space $\mathbb{H}$ with this operation is written
@@ -38,10 +38,10 @@ Quaternions*.
 
 **Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$, so
 that $e_1^2=e_2^2=e_3^2=-e_0$ and $e_je_k=-e_ke_j$ for $j\neq k$. A generic element is
-$\tilde q=q_0e_0+\mathbf q$ with $\mathbf q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$;
-$\mathbf p\cdot\mathbf q$ is the Euclidean dot product and $\mathbf p\times\mathbf q$ the vector
+$\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$;
+$\vec p\cdot\vec q$ is the Euclidean dot product and $\vec p\times\vec q$ the vector
 product of the vector parts. The plain product is $\tilde p\tilde q$, its scalar–vector rule is
-$\tilde p\tilde q=(p_0q_0-\mathbf p\cdot\mathbf q)+p_0\mathbf q+q_0\mathbf p+\mathbf p\times\mathbf q$,
+$\tilde p\tilde q=(p_0q_0-\vec p\cdot\vec q)+p_0\vec q+q_0\vec p+\vec p\times\vec q$,
 and the symbol $\circ$ is reserved for the composition of maps.
 
 ## The Antisymmetric Part of the Plain Product
@@ -62,13 +62,13 @@ $\mathbb{H}^{\times}$ and is the **antisymmetric plain algebra** of the block.
 
 ### The Coordinate and Scalar–Vector Forms
 
-The plain product reads $\tilde p\tilde q=(p_0q_0-\mathbf p\cdot\mathbf q)+p_0\mathbf q+q_0\mathbf p+\mathbf p\times\mathbf q$,
+The plain product reads $\tilde p\tilde q=(p_0q_0-\vec p\cdot\vec q)+p_0\vec q+q_0\vec p+\vec p\times\vec q$,
 and its exchange $\tilde q\tilde p$ differs from it in the sign of the cross term and in the order of
 the mixed terms. Subtracting and halving, the symmetric pieces cancel and the operation is the cross
 term alone:
 
 $$
-\tilde p\times\tilde q=\mathbf p\times\mathbf q .
+\tilde p\times\tilde q=\vec p\times\vec q .
 $$
 
 Read on the coordinates,
@@ -130,7 +130,7 @@ J(\tilde p,\tilde q,\tilde r)=(\tilde p\times\tilde q)\times\tilde r
 $$
 
 *Proof.* Read on the vector parts, the cyclic sum is
-$(\mathbf p\times\mathbf q)\times\mathbf r+(\mathbf q\times\mathbf r)\times\mathbf p+(\mathbf r\times\mathbf p)\times\mathbf q$,
+$(\vec p\times\vec q)\times\vec r+(\vec q\times\vec r)\times\vec p+(\vec r\times\vec p)\times\vec q$,
 which vanishes by the anticommutativity and the Jacobi identity of the vector product of
 $\mathbb{R}^3$ (*Quaternion Algebra*); the identity is verified on general elements and on the
 $64$ triples of the units. The scalar coordinates do not enter.
@@ -161,7 +161,7 @@ product; and nothing else.
 **Proposition (the image).** The image of the block is the vector subspace,
 
 $$
-\mathrm{Vect}(\mathbb{H})=\{\mathbf q\}=\{q_0=0\},
+\mathrm{Vect}(\mathbb{H})=\{\vec q\}=\{q_0=0\},
 $$
 
 of real dimension three, and the block is onto it: every pure element is a value, since
@@ -201,7 +201,7 @@ below this article in this category.
 ## Summary
 
 The antisymmetric plain multiplication is
-$\tilde p\times\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\mathbf p\times\mathbf q$, the
+$\tilde p\times\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\vec p\times\vec q$, the
 cross product of the two vector parts, the antisymmetric half of the plain product. It is
 $\mathbb{R}$-bilinear and alternating, with $\tilde p\times\tilde p=0$, half the commutator
 $[\tilde p,\tilde q]=2(\tilde p\times\tilde q)$ of the associative product. It satisfies the Jacobi
@@ -216,12 +216,12 @@ and is the neighbouring block.
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde p\times\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\mathbf p\times\mathbf q$ | the antisymmetric plain multiplication, the operation $\mathrm{APA}$ |
+| $\tilde p\times\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\vec p\times\vec q$ | the antisymmetric plain multiplication, the operation $\mathrm{APA}$ |
 | $\mathbb{H}^{\times}$ | the quaternion space with the antisymmetric plain product |
-| $\mathbf p\times\mathbf q$ | the vector product of the vector parts |
+| $\vec p\times\vec q$ | the vector product of the vector parts |
 | $[\tilde p,\tilde q]=\tilde p\tilde q-\tilde q\tilde p=2(\tilde p\times\tilde q)$ | the commutator of the plain product, twice the operation |
 | $\tilde p\times\tilde p=0$ | the alternation, the vanishing square |
-| $\mathrm{Vect}(\mathbb{H})=\{\mathbf q\}$ | the image, the vector subspace |
+| $\mathrm{Vect}(\mathbb{H})=\{\vec q\}$ | the image, the vector subspace |
 | $\mathrm{GPA}=\mathrm{SPA}+\mathrm{APA}$ | the reconstruction of the plain product from its two halves |
 | $\mathfrak{g}=(\mathbb{H},\times)$ | the real Lie algebra of the block |
 

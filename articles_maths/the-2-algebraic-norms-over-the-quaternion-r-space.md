@@ -8,11 +8,11 @@ $$
 N_P(\tilde p)=\tilde p^2 , \qquad N_Q(\tilde p)=\tilde p^{\natural}\tilde p=|\tilde p|^2e_0 .
 $$
 
-The **plain algebraic norm** $N_P$ is the square of the plain product, $N_P(\tilde p)=B(\tilde p)e_0+2p_0\mathbf p$ with $B(\tilde p)=p_0^2-\lvert\mathbf p\rvert^2$; the **quaternion algebraic norm** $N_Q$ is the algebraic norm of the quaternionic product, $N_Q(\tilde p)=N(\tilde p)e_0$ with $N(\tilde p)=p_0^2+\lvert\mathbf p\rvert^2$. The first is a general element of $\mathbb{H}$ and is **indefinite**: it takes the value $e_0$ at $e_0$ and $-e_0$ at $e_1$, so its scalar coefficient is of both signs. The second is the central positive element $|\tilde p|^2e_0$, **positive definite**. The two norms are read off the two forms, the first from the plain form and the second from the quaternion form.
+The **plain algebraic norm** $N_P$ is the square of the plain product, $N_P(\tilde p)=B(\tilde p)e_0+2p_0\vec p$ with $B(\tilde p)=p_0^2-\lvert\vec p\rvert^2$; the **quaternion algebraic norm** $N_Q$ is the algebraic norm of the quaternionic product, $N_Q(\tilde p)=N(\tilde p)e_0$ with $N(\tilde p)=p_0^2+\lvert\vec p\rvert^2$. The first is a general element of $\mathbb{H}$ and is **indefinite**: it takes the value $e_0$ at $e_0$ and $-e_0$ at $e_1$, so its scalar coefficient is of both signs. The second is the central positive element $|\tilde p|^2e_0$, **positive definite**. The two norms are read off the two forms, the first from the plain form and the second from the quaternion form.
 
 This article gives the two norms, the **multiplicativity** of the second and the failure of the first, the **norm of a product against the product of the norms**, the **level sets** read algebraically, and the **invertibility criteria** the two give. It assumes the two forms from *The 2 Forms over the Quaternion $\mathbb{R}$ Space* and the two squares from *Comparison Between the Two General Products*, both preceding this one; the norms read on the two remarkable subspaces are *Remarkable Subspaces and the Two Algebraic Norms*, below this article in this category; and the theory of the norm and the invertibility of the plain product is owned by *Norm and Invertibility in the General Plain Algebra*, in the GPA block below.
 
-**Conventions.** Throughout, $\tilde p=p_0e_0+\mathbf p$ and $\tilde q=q_0e_0+\mathbf q$ name elements, $(\mathbf p,\mathbf q)$ is the dot product of the vector parts, $B(\tilde p)=p_0^2-\lvert\mathbf p\rvert^2$ and $N(\tilde p)=p_0^2+\lvert\mathbf p\rvert^2$ are the two forms read at the two equal arguments, and $\tilde p^{\natural}=p_0e_0-\mathbf p$. The two algebraic norms are $N_P(\tilde p)=\tilde p^2$ and $N_Q(\tilde p)=\tilde p^{\natural}\tilde p=|\tilde p|^2e_0$; the number $|\tilde p|^2\geq0$ is written $N(\tilde p)$ when the coefficient is meant and $N_Q(\tilde p)$ when the central element is meant.
+**Conventions.** Throughout, $\tilde p=p_0e_0+\vec p$ and $\tilde q=q_0e_0+\vec q$ name elements, $(\vec p,\vec q)$ is the dot product of the vector parts, $B(\tilde p)=p_0^2-\lvert\vec p\rvert^2$ and $N(\tilde p)=p_0^2+\lvert\vec p\rvert^2$ are the two forms read at the two equal arguments, and $\tilde p^{\natural}=p_0e_0-\vec p$. The two algebraic norms are $N_P(\tilde p)=\tilde p^2$ and $N_Q(\tilde p)=\tilde p^{\natural}\tilde p=|\tilde p|^2e_0$; the number $|\tilde p|^2\geq0$ is written $N(\tilde p)$ when the coefficient is meant and $N_Q(\tilde p)$ when the central element is meant.
 
 ## The Two Norms
 
@@ -25,10 +25,10 @@ $$
 and on the coordinates
 
 $$
-N_P(\tilde p)=\bigl(p_0^2-\lvert\mathbf p\rvert^2\bigr)e_0+2p_0\mathbf p , \qquad N_Q(\tilde p)=\bigl(p_0^2+\lvert\mathbf p\rvert^2\bigr)e_0 .
+N_P(\tilde p)=\bigl(p_0^2-\lvert\vec p\rvert^2\bigr)e_0+2p_0\vec p , \qquad N_Q(\tilde p)=\bigl(p_0^2+\lvert\vec p\rvert^2\bigr)e_0 .
 $$
 
-The plain norm is a general quaternion, its scalar coefficient $B(\tilde p)$ being of any sign and its vector coefficient $2p_0\mathbf p$ being nonzero off the axes; the quaternion norm is a nonnegative real multiple of the unit, and it is zero only at the origin.
+The plain norm is a general quaternion, its scalar coefficient $B(\tilde p)$ being of any sign and its vector coefficient $2p_0\vec p$ being nonzero off the axes; the quaternion norm is a nonnegative real multiple of the unit, and it is zero only at the origin.
 
 ## Multiplicativity
 
@@ -70,9 +70,9 @@ So the quaternion norm is insensitive to the order of the factors and to the nes
 
 *The quaternion norm.* For a central value $ce_0$, $N_Q(\tilde p)=ce_0$ is the **three-sphere** $|\tilde p|^2=c$ when $c>0$, the origin alone when $c=0$, and is empty when $c<0$.
 
-*The plain norm.* For a central value $ce_0$, the equation $N_P(\tilde p)=ce_0$ forces $\tilde p^2$ to be central, that is $p_0\mathbf p=0$, and the level set is: the **two elements** $\pm\sqrt c\,e_0$ when $c>0$; the **two-sphere** $|\mathbf p|=\sqrt{-c}$ of the vector subspace when $c<0$; and the origin alone when $c=0$.
+*The plain norm.* For a central value $ce_0$, the equation $N_P(\tilde p)=ce_0$ forces $\tilde p^2$ to be central, that is $p_0\vec p=0$, and the level set is: the **two elements** $\pm\sqrt c\,e_0$ when $c>0$; the **two-sphere** $|\vec p|=\sqrt{-c}$ of the vector subspace when $c<0$; and the origin alone when $c=0$.
 
-*Proof.* $N_Q(\tilde p)=ce_0$ reads $p_0^2+\lvert\mathbf p\rvert^2=c$, the equation of the sphere of radius $\sqrt c$ in the four coordinates, empty for $c<0$. For $N_P(\tilde p)=ce_0$ one needs the vector coefficient $2p_0\mathbf p$ to vanish, so $p_0=0$ or $\mathbf p=0$; with $\mathbf p=0$ the equation is $p_0^2=c$, giving the two elements $\pm\sqrt c\,e_0$ for $c>0$ and nothing for $c<0$; with $p_0=0$ the equation is $-\lvert\mathbf p\rvert^2=c$, giving the sphere of radius $\sqrt{-c}$ in the vector subspace for $c<0$ and nothing for $c>0$.
+*Proof.* $N_Q(\tilde p)=ce_0$ reads $p_0^2+\lvert\vec p\rvert^2=c$, the equation of the sphere of radius $\sqrt c$ in the four coordinates, empty for $c<0$. For $N_P(\tilde p)=ce_0$ one needs the vector coefficient $2p_0\vec p$ to vanish, so $p_0=0$ or $\vec p=0$; with $\vec p=0$ the equation is $p_0^2=c$, giving the two elements $\pm\sqrt c\,e_0$ for $c>0$ and nothing for $c<0$; with $p_0=0$ the equation is $-\lvert\vec p\rvert^2=c$, giving the sphere of radius $\sqrt{-c}$ in the vector subspace for $c<0$ and nothing for $c>0$.
 
 So the level sets of the two norms are of different shapes: the quaternion norm cuts the space into concentric three-spheres, cut by the origin and empty for the negative values; the plain norm cuts the real axis into two points, above the origin, and the vector subspace into two-spheres, below it, the two families meeting only at the origin, which is the level set of the value $0$. In particular the elements of unit quaternion norm form the **unit three-sphere** of the four coordinates, and the elements of square $+e_0$ are the two elements $\pm e_0$ while the elements of square $-e_0$ are the unit two-sphere of the vector subspace; this is the algebraic reading of the roots of $\pm1$, the roots of $1$ being the two scalar units for the plain product and the roots of $-1$ the whole unit sphere of the vectors.
 
@@ -86,7 +86,7 @@ So the **quaternion norm is the norm of the algebra**: it is real-valued, defini
 
 ## Summary
 
-The quaternion space carries two algebraic norms, the algebraic norm of the plain product $N_P(\tilde p)=\tilde p^2=(p_0^2-\lvert\mathbf p\rvert^2)e_0+2p_0\mathbf p$ and the algebraic norm of the quaternionic product $N_Q(\tilde p)=\tilde p^{\natural}\tilde p=(p_0^2+\lvert\mathbf p\rvert^2)e_0$, read off the plain form and the quaternion form. The first is indefinite, taking $e_0$ and $-e_0$ at $e_0$ and $e_1$; the second is positive definite, zero only at the origin. The second is multiplicative, $N_Q(\tilde p\tilde q)=N_Q(\tilde p)N_Q(\tilde q)$, and the first is not, $N_P(e_1e_2)=-e_0$ against $N_P(e_1)N_P(e_2)=e_0$; the quaternion norm of a product equals the product of the quaternion norms and does not depend on the order, while the plain norm of a product is not the product of the plain norms.
+The quaternion space carries two algebraic norms, the algebraic norm of the plain product $N_P(\tilde p)=\tilde p^2=(p_0^2-\lvert\vec p\rvert^2)e_0+2p_0\vec p$ and the algebraic norm of the quaternionic product $N_Q(\tilde p)=\tilde p^{\natural}\tilde p=(p_0^2+\lvert\vec p\rvert^2)e_0$, read off the plain form and the quaternion form. The first is indefinite, taking $e_0$ and $-e_0$ at $e_0$ and $e_1$; the second is positive definite, zero only at the origin. The second is multiplicative, $N_Q(\tilde p\tilde q)=N_Q(\tilde p)N_Q(\tilde q)$, and the first is not, $N_P(e_1e_2)=-e_0$ against $N_P(e_1)N_P(e_2)=e_0$; the quaternion norm of a product equals the product of the quaternion norms and does not depend on the order, while the plain norm of a product is not the product of the plain norms.
 
 The level sets of the quaternion norm at a central value are the three-spheres, cut by the origin and empty for negative values; those of the plain norm are two points on the real axis for a positive value and a two-sphere of the vector subspace for a negative one. The invertibility criterion is the quaternion norm's: $\tilde p$ is invertible exactly when $N_Q(\tilde p)\neq0$, with inverse $\tilde p^{\natural}/|\tilde p|^2$; the plain norm gives no criterion, being neither real-valued nor multiplicative.
 
@@ -94,12 +94,12 @@ The level sets of the quaternion norm at a central value are the three-spheres, 
 
 | Symbol | Meaning |
 |---|---|
-| $N_P(\tilde p)=\tilde p^2=(p_0^2-\lvert\mathbf p\rvert^2)e_0+2p_0\mathbf p$ | the plain algebraic norm, indefinite |
-| $N_Q(\tilde p)=\tilde p^{\natural}\tilde p=(p_0^2+\lvert\mathbf p\rvert^2)e_0$ | the quaternion algebraic norm, positive definite |
+| $N_P(\tilde p)=\tilde p^2=(p_0^2-\lvert\vec p\rvert^2)e_0+2p_0\vec p$ | the plain algebraic norm, indefinite |
+| $N_Q(\tilde p)=\tilde p^{\natural}\tilde p=(p_0^2+\lvert\vec p\rvert^2)e_0$ | the quaternion algebraic norm, positive definite |
 | $N_Q(\tilde p\tilde q)=N_Q(\tilde p)N_Q(\tilde q)$ | the multiplicativity of the quaternion norm |
 | $N_P(e_1e_2)=-e_0$, $N_P(e_1)N_P(e_2)=e_0$ | the failure of the plain norm |
 | $\lvert\tilde p\rvert^2=c$: the three-sphere | the level sets of $N_Q$ |
-| $\pm\sqrt c\,e_0$; $\lvert\mathbf p\rvert=\sqrt{-c}$ | the level sets of $N_P$ |
+| $\pm\sqrt c\,e_0$; $\lvert\vec p\rvert=\sqrt{-c}$ | the level sets of $N_P$ |
 | $\tilde p^{-1}=\tilde p^{\natural}/\lvert\tilde p\rvert^2$, $\tilde p\neq0$ | the invertibility criterion |
 
 ## Further Reading

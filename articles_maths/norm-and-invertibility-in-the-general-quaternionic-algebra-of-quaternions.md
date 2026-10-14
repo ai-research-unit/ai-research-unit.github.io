@@ -21,7 +21,7 @@ It is the second of the two algebraic norms of the space and it is the diagonal 
 **Proposition.** $N(\tilde q)$ is a real scalar, central in $\mathbb{H}$, and the map $N : \mathbb{H} \to \mathbb{R}$ is a quadratic form with polar form
 
 $$
-\beta(\tilde p,\tilde q) = \tfrac12\bigl(N(\tilde p+\tilde q) - N(\tilde p) - N(\tilde q)\bigr) = p_0q_0 + \mathbf p \cdot \mathbf q ,
+\beta(\tilde p,\tilde q) = \tfrac12\bigl(N(\tilde p+\tilde q) - N(\tilde p) - N(\tilde q)\bigr) = p_0q_0 + \vec p \cdot \vec q ,
 $$
 
 the quaternionic bilinear form of the space (*The 2 Forms over the Quaternion $\mathbb{R}$ Space*).
@@ -46,7 +46,7 @@ Multiplicativity is the whole reason the product carries an inversion theory at 
 
 *Proof.* $N(\tilde q)$ is a sum of four squares of real numbers. This is the coincidence of the norm with the Euclidean norm, and it is the property that removes every singular element and every isotropic direction from the block.
 
-**Remark (the other norm).** The plain product carries the plain bilinear algebraic norm $\tilde p^2$, whose scalar part is $\mathrm{Sc}(\tilde p^2) = p_0^2 - \mathbf p \cdot \mathbf p$ and whose associated form has signature $(1,3)$ and is indefinite (*The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space*). The two norms are equal on the scalar line and differ in sign on the vector subspace, and their definiteness is opposite. The comparison on the two forms of the one space is *The Isotropic Structure of the General Quaternionic Algebra*, below this article in this category.
+**Remark (the other norm).** The plain product carries the plain bilinear algebraic norm $\tilde p^2$, whose scalar part is $\mathrm{Sc}(\tilde p^2) = p_0^2 - \vec p \cdot \vec p$ and whose associated form has signature $(1,3)$ and is indefinite (*The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space*). The two norms are equal on the scalar line and differ in sign on the vector subspace, and their definiteness is opposite. The comparison on the two forms of the one space is *The Isotropic Structure of the General Quaternionic Algebra*, below this article in this category.
 
 **Corollary (no zero divisors).** If $\tilde p \star \tilde q = 0$ then $N(\tilde p)N(\tilde q) = 0$, so $\tilde p = 0$ or $\tilde q = 0$ over $\mathbb{R}$. The product has no zero divisors, and no nonzero element is a zero divisor.
 
@@ -104,7 +104,7 @@ Over $\mathbb{R}$ the third class is empty and the classification is two-valued:
 
 ## Summary
 
-The quaternionic product carries the norm $N(\tilde q) = \tilde q^{\natural}\tilde q = q_0^2 + q_1^2 + q_2^2 + q_3^2$, which over $\mathbb{R}$ is the Euclidean norm of the coordinate vector, a positive definite quadratic form with polar form $\beta(\tilde p,\tilde q) = p_0q_0 + \mathbf p \cdot \mathbf q$, central-valued and multiplicative, $N(\tilde p \star \tilde q) = N(\tilde p)N(\tilde q)$. Since the algebra has a left unit and no right one, the inverse of the unital theory does not exist; the two one-sided equations $\tilde p \star \tilde x = e_0$ and $\tilde y \star \tilde p = e_0$ both have the unique solution $\zeta(\tilde p) = \tilde p/N(\tilde p) = (\tilde p^{-1})^{\natural}$ exactly when $N(\tilde p) \neq 0$, so the left and the right one-sided inverses coincide. The units are $\mathbb{H}^{\times} = \mathbb{H} \setminus \{0\}$ over $\mathbb{R}$ and they do not form a group, only a quasigroup with a left unit and with two-sided inverses. An element is either zero, or $N$-nonzero and one-sided invertible, or $N$-zero and nilpotent of index two; over $\mathbb{R}$ the last class is empty. The plain algebra carries the same norm and a genuine group of units, and the whole difference between the two blocks is there.
+The quaternionic product carries the norm $N(\tilde q) = \tilde q^{\natural}\tilde q = q_0^2 + q_1^2 + q_2^2 + q_3^2$, which over $\mathbb{R}$ is the Euclidean norm of the coordinate vector, a positive definite quadratic form with polar form $\beta(\tilde p,\tilde q) = p_0q_0 + \vec p \cdot \vec q$, central-valued and multiplicative, $N(\tilde p \star \tilde q) = N(\tilde p)N(\tilde q)$. Since the algebra has a left unit and no right one, the inverse of the unital theory does not exist; the two one-sided equations $\tilde p \star \tilde x = e_0$ and $\tilde y \star \tilde p = e_0$ both have the unique solution $\zeta(\tilde p) = \tilde p/N(\tilde p) = (\tilde p^{-1})^{\natural}$ exactly when $N(\tilde p) \neq 0$, so the left and the right one-sided inverses coincide. The units are $\mathbb{H}^{\times} = \mathbb{H} \setminus \{0\}$ over $\mathbb{R}$ and they do not form a group, only a quasigroup with a left unit and with two-sided inverses. An element is either zero, or $N$-nonzero and one-sided invertible, or $N$-zero and nilpotent of index two; over $\mathbb{R}$ the last class is empty. The plain algebra carries the same norm and a genuine group of units, and the whole difference between the two blocks is there.
 
 ## Summary of Notation
 
@@ -112,11 +112,11 @@ The quaternionic product carries the norm $N(\tilde q) = \tilde q^{\natural}\til
 |---|---|
 | $\tilde p \star \tilde q = \tilde p^{\natural}\tilde q$ | the general quaternionic bilinear product |
 | $N(\tilde q) = \tilde q^{\natural}\tilde q = \sum_\mu q_\mu^2$ | the quaternionic bilinear algebraic norm |
-| $\beta(\tilde p,\tilde q) = p_0q_0 + \mathbf p \cdot \mathbf q$ | the quaternionic bilinear form, the polar form of $N$ |
+| $\beta(\tilde p,\tilde q) = p_0q_0 + \vec p \cdot \vec q$ | the quaternionic bilinear form, the polar form of $N$ |
 | $\zeta(\tilde p) = \tilde p/N(\tilde p)$ | the one-sided inverse of $\tilde p$ |
 | $\mathbb{H}^{\times} = \{\tilde p : N(\tilde p) \neq 0\}$ | the units, $\mathbb{H} \setminus \{0\}$ over $\mathbb{R}$ |
 | $\tilde q^{-1} = \tilde q^{\natural}/N(\tilde q)$ | the plain inverse, from the general plain algebra |
-| $\mathrm{Sc}(\tilde q^2) = q_0^2 - \mathbf q \cdot \mathbf q$ | the scalar part of the plain bilinear algebraic norm, for contrast |
+| $\mathrm{Sc}(\tilde q^2) = q_0^2 - \vec q \cdot \vec q$ | the scalar part of the plain bilinear algebraic norm, for contrast |
 
 ## Further Reading
 

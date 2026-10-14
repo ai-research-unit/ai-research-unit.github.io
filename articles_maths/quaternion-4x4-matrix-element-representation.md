@@ -69,7 +69,7 @@ $$
 
 *Proof.* Subtract the scalar matrix $q_0I$ from $\mathsf{M}_4(\tilde q)$; the remainder is the displayed matrix, whose transpose is its negative.
 
-The decomposition separates the two subspaces: for a scalar $s$ the Cayley matrix is the scalar matrix $\mathsf{M}_4(s) = sI$, and for a pure quaternion $\mathbf{q}$ it is $\mathsf{M}_4(\mathbf{q}) = \Omega_{\mathbf{q}}$, traceless and skew-symmetric. The scalar subspace therefore maps to the scalar matrices and the vector subspace to the traceless skew-symmetric ones.
+The decomposition separates the two subspaces: for a scalar $s$ the Cayley matrix is the scalar matrix $\mathsf{M}_4(s) = sI$, and for a pure quaternion $\vec q$ it is $\mathsf{M}_4(\vec q) = \Omega_{\vec q}$, traceless and skew-symmetric. The scalar subspace therefore maps to the scalar matrices and the vector subspace to the traceless skew-symmetric ones.
 
 ### A Worked Cayley Matrix
 

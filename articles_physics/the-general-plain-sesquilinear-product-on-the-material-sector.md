@@ -108,7 +108,7 @@ material sector but one product read with two signs, and the sign is what the se
 
 ## The Product of Two Material Elements
 
-Write a material element in its own coordinates, $\tilde T=ict\,e_0+\mathbf x$. The product on the sector
+Write a material element in its own coordinates, $\tilde T=ict\,e_0+\vec x$. The product on the sector
 is the general plain bilinear one, $-1$ times, so its structure is the structure of *The General Plain Bilinear Product
 on the Material Sector* and only its reading changes. For two material elements,
 
@@ -124,10 +124,10 @@ under the sesquilinear product either, and the composite is material exactly whe
 
 $$
 \mathrm{Sc}\bigl(\tilde P\star\tilde Q\bigr) = H(\tilde P,\tilde Q) = -B(\tilde P,\tilde Q)
-= c^{2}t\,\tau+\mathbf x\!\cdot\!\mathbf y > 0 \ \text{ on a nonzero element},
+= c^{2}t\,\tau+\vec x\!\cdot\!\vec y > 0 \ \text{ on a nonzero element},
 $$
 
-written in the material coordinates $ct,\mathbf x$ and $c\tau,\mathbf y$: it is the **Euclidean inner
+written in the material coordinates $ct,\vec x$ and $c\tau,\vec y$: it is the **Euclidean inner
 product** of the two four-vectors, not the Minkowski one. The **vector part** is minus the vector part of
 the general plain bilinear composite, and it is the phase half of the band; the two halves of the
 sesquilinear composite are the two halves of the general plain bilinear composite with one sign, which is the content of the
@@ -162,7 +162,7 @@ B=-\mathrm{I}_4,\qquad N=\mathrm{diag}(-1,1,1,1),\qquad H=+\mathrm{I}_4,\qquad
 K=\mathrm{diag}(1,-1,-1,-1),
 $$
 
-in the coordinates $(ict,\mathbf x)$: the sign form is negative definite, the interval Lorentzian of
+in the coordinates $(ict,\vec x)$: the sign form is negative definite, the interval Lorentzian of
 signature $(3,1)$, the probability Euclidean, and the Krein form of signature $(1,3)$. Four forms on four
 directions, and only the interval carries the causal structure.
 
@@ -222,10 +222,10 @@ lightlike displacement has a strictly positive weight and is still annihilated b
 The wall of the reversible operations stays where the composition put it, and the probability does not
 move it — it inherits it, because the second slot's conjugation is only a sign there. The wall has a second
 face on the sector: a lightlike four-vector is an imaginary multiple of a pure state,
-$\tilde T=2ict\,\tilde\Pi_1(-\hat{\mathbf x})$, so the massless displacement and the informational
+$\tilde T=2ict\,\tilde\Pi_1(-\hat x)$, so the massless displacement and the informational
 projection are one element read through the central $i$ (*The Cone and the Massless Particles in the 12
 Structures of Biquaternions over $\mathbb{C}$*). Its square is not zero,
-$\tilde T^{2}=-2c^{2}t^{2}e_0+2ic^{2}t^{2}\hat{\mathbf x}$, and no element of the sector squares to zero at
+$\tilde T^{2}=-2c^{2}t^{2}e_0+2ic^{2}t^{2}\hat x$, and no element of the sector squares to zero at
 all: the nilpotents are the pure isotropic elements, outside $\mathbb{M}_-$ except at the origin, nilpotent
 of index two under the composition and of index three under the probability product (*Nilpotents in the 12
 Structures of Biquaternions over $\mathbb{C}$*).
@@ -236,8 +236,8 @@ An element is an isometry of the Born pairing when $\tilde A\tilde A^{*}=e_0$, a
 that equation reads $-\tilde A^{2}=e_0$, that is, in the material coordinates,
 
 $$
--\bigl(ic t\,e_0+\mathbf x\bigr)^{2}=e_0
-\iff \mathbf x\!\cdot\!\mathbf x=1 \ \text{and}\ ct=0, \quad\text{or}\quad \mathbf x=0 \ \text{and}\ ct=\pm1,
+-\bigl(ic t\,e_0+\vec x\bigr)^{2}=e_0
+\iff \vec x\!\cdot\!\vec x=1 \ \text{and}\ ct=0, \quad\text{or}\quad \vec x=0 \ \text{and}\ ct=\pm1,
 $$
 
 whose solutions are the **unit spatial directions** $S^{2}$ together with the two central elements
@@ -246,17 +246,17 @@ central isometries. So on the material sector the isometries of the probability 
 the boosts are not among them: the material boost
 
 $$
-\tilde\Lambda = i\cosh u\,e_0+\sinh u\,e_1 \in \mathbb{M}_-
+\tilde U = i\cosh u\,e_0+\sinh u\,e_1 \in \mathbb{M}_-
 $$
 
-has $N(\tilde\Lambda,\tilde\Lambda)=-1$, so it is an isometry of the interval, and
-$H(\tilde\Lambda,\tilde\Lambda)=\cosh 2u\neq1$, so it is **not** an isometry of the probability: it moves
+has $N(\tilde U,\tilde U)=-1$, so it is an isometry of the interval, and
+$H(\tilde U,\tilde U)=\cosh 2u\neq1$, so it is **not** an isometry of the probability: it moves
 the probability norm by the factor $\cosh 2u$. The spin element $e_k$ is an isometry of both,
 $N(e_k,e_k)=H(e_k,e_k)=+1$.
 
 **Remark (verified).** $100$ random material elements satisfy $\tilde A\tilde A^{*}=e_0$ only at
-$\mathbf x$ of unit modulus with $t=0$ or at $\pm ie_0$; $\cosh 2u$ is reproduced to $10^{-9}$ by
-$H(\tilde\Lambda,\tilde\Lambda)$ at $u=0.5,1,2$, and $N(e_k,e_k)=H(e_k,e_k)=+1$.
+$\vec x$ of unit modulus with $t=0$ or at $\pm ie_0$; $\cosh 2u$ is reproduced to $10^{-9}$ by
+$H(\tilde U,\tilde U)$ at $u=0.5,1,2$, and $N(e_k,e_k)=H(e_k,e_k)=+1$.
 
 **Proposed interpretation, labelled as such.** On the material sector the **compact part of the Lorentz
 group preserves the probability and the non-compact part does not**. A rotation is a reversible operation
@@ -271,14 +271,14 @@ The two forms differ by twice the coefficient square of the vector part, and on 
 the difference is read on the space axes alone:
 
 $$
-H(\tilde P,\tilde Q) = -B(\tilde P,\tilde Q) = N(\tilde P,\tilde Q)+2\,\mathbf x\!\cdot\!\mathbf y,
+H(\tilde P,\tilde Q) = -B(\tilde P,\tilde Q) = N(\tilde P,\tilde Q)+2\,\vec x\!\cdot\!\vec y,
 \qquad
-H(\tilde T,\tilde T)=c^{2}t^{2}+\lvert\mathbf x\rvert^{2},
+H(\tilde T,\tilde T)=c^{2}t^{2}+\lvert\vec x\rvert^{2},
 \qquad
-N(\tilde T,\tilde T)=-c^{2}t^{2}+\lvert\mathbf x\rvert^{2}.
+N(\tilde T,\tilde T)=-c^{2}t^{2}+\lvert\vec x\rvert^{2}.
 $$
 
-The two agree on the central time direction up to sign and differ by $2\lvert\mathbf x\rvert^{2}$ on the
+The two agree on the central time direction up to sign and differ by $2\lvert\vec x\rvert^{2}$ on the
 space directions; they agree in magnitude only on the complex time line, where both are $\pm c^{2}t^{2}$.
 A massive element has $N<0$ and a large positive probability; a lightlike element has $N=0$ and a positive
 probability; a spacelike element has $N>0$ and a probability larger than its norm. The probability
@@ -327,7 +327,7 @@ the boundary of what it must declare is the boundary of the sector.
 
 - **The probability is not the interval.** $H$ is Euclidean and definite on the sector, with no cone and
   no causal content; the interval is $N$, of signature $(3,1)$, and the two differ by
-  $2\lvert\mathbf x\rvert^{2}$.
+  $2\lvert\vec x\rvert^{2}$.
 - **The sector sign is not the probability.** $B=-H$ on $\mathbb{M}_-$: the composition's scalar form is
   the negative of the probability, and it is $B$ and not $H$ that carries the sign of the sector.
 - **The probability form has no null but the product has zero divisors.** The empty cone of $H$ and the
@@ -387,9 +387,9 @@ conjugation is the central scalar $-1$, so the sesquilinear product is the gener
 sign, $\tilde P\star\tilde Q=-\tilde P\tilde Q$: the second slot's conjugation is **invisible on a pair
 drawn from the sector as a map and visible in the scalar form**, where it turns the negative definite
 sector sign $B$ into the positive definite Born pairing $H$. The pairing restricts to $+\mathrm{I}_4$ of
-signature $(4,0)$ on each sector, the Euclidean inner product $c^{2}t\tau+\mathbf x\!\cdot\!\mathbf y$ of
+signature $(4,0)$ on each sector, the Euclidean inner product $c^{2}t\tau+\vec x\!\cdot\!\vec y$ of
 the material coordinates; the interval is the Lorentzian $N$, of signature $(3,1)$, and the two differ by
-twice $\mathbf x\!\cdot\!\mathbf y$. Being positive definite, $H$ has no null vector, so no material
+twice $\vec x\!\cdot\!\vec y$. Being positive definite, $H$ has no null vector, so no material
 element has zero probability and a lightlike four-vector has positive probability; yet the product on the
 sector has the vanishing products of the general plain bilinear product, so its zero divisors and
 annihilators are carried by the light cone, and a lightlike element is annihilated by a nonzero material
@@ -408,18 +408,18 @@ restricted to $\mathbb{M}_-$, what is proposed is the naming.
 | $i$ | Central scalar imaginary, $i^{2}=-1$ |
 | $\bar{\cdot},{\natural},{}^{*}=\bar{\cdot}\circ{\natural}$ | Complex, natural and Hermitian conjugations |
 | $\mathbb{M}_-=\{\tilde Q^{*}=-\tilde Q\}$ | Material sector, basis $\{ie_0,e_1,e_2,e_3\}$ |
-| $\tilde T=ict\,e_0+\mathbf x$ | A material event; imaginary time, real space |
+| $\tilde T=ict\,e_0+\vec x$ | A material event; imaginary time, real space |
 | $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ | General plain sesquilinear product |
 | $\tilde P\star\tilde Q=-\tilde P\tilde Q$ on $\mathbb{M}_-$ | The star is the central $-1$ on the sector |
 | $B=\mathrm{Sc}(\tilde P\tilde Q)=-\mathrm{I}_4$ on $\mathbb{M}_-$ | The sector sign, negative on the material side |
 | $H=\mathrm{Sc}(\tilde P\tilde Q^{*})=-B=+\mathrm{I}_4$ | The Born pairing, positive definite on each sector |
 | $N=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=\mathrm{diag}(-1,1,1,1)$ | The interval, signature $(3,1)$ on $\mathbb{M}_-$ |
 | $K=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\mathrm{diag}(1,-1,-1,-1)$ | The Krein form, signature $(1,3)$ on $\mathbb{M}_-$ |
-| $H=N+2\,\mathbf x\!\cdot\!\mathbf y$ | The probability as the definite companion of the interval |
+| $H=N+2\,\vec x\!\cdot\!\vec y$ | The probability as the definite companion of the interval |
 | $\tilde P\star\tilde Q=0\iff\tilde P\tilde Q=0$ | The vanishing products are those of the general plain bilinear product |
 | $\mathcal{C}=\{N=0\}$ | The light cone; the zero divisors of the product on the sector |
 | $\{\tilde A:\tilde A\tilde A^{*}=e_0\}=S^{2}\cup\{\pm ie_0\}$ | Isometries of $H$ inside the material sector |
-| $\tilde\Lambda=i\cosh u\,e_0+\sinh u\,e_1$ | The material boost; preserves $N$, not $H$ |
+| $\tilde U=i\cosh u\,e_0+\sinh u\,e_1$ | The material boost; preserves $N$, not $H$ |
 | $(p,q)$ | Signature as (number of $+$, number of $-$) diagonal entries |
 
 ## Further Reading

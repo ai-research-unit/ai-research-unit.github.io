@@ -21,7 +21,7 @@ The article proceeds as follows. A section fixes the total-derivative argument o
 $$
 \langle \tilde Q,\tilde Y\rangle = \mathrm{Re}\,\mathrm{Tr}\big(\tilde Q^{*}\tilde Y\big),
 $$
-positive definite on $\mathbb{M}_+$ and negative definite on $\mathbb{M}_-$; the trace is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ with $\mathrm{Tr}(e_0)=2$. The material coordinate is $\tilde Q=ict\,e_0+\mathbf{x}$, the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, the gradient is $\tilde\nabla=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, and the d'Alembertian is $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial_{ict}^2+\Delta$; the quadratic operator is $\tilde K=\Box-m^2$. The functional integral with source is
+positive definite on $\mathbb{M}_+$ and negative definite on $\mathbb{M}_-$; the trace is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$ with $\mathrm{Tr}(e_0)=2$. The material coordinate is $\tilde Q=ict\,e_0+\vec x$, the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, the gradient is $\tilde\nabla=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, and the d'Alembertian is $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial_{ict}^2+\Delta$; the quadratic operator is $\tilde K=\Box-m^2$. The functional integral with source is
 $$
 Z[\tilde J]=\int\mathcal{D}\tilde\Phi\;e^{\,iS[\tilde\Phi]/\hbar+\langle\tilde J,\tilde\Phi\rangle},
 $$
@@ -124,7 +124,7 @@ equivalently, since $\tilde K$ is central and the expectation is linear,
 $$
 \big(\Box-m^2\big)\,\big\langle\tilde\Phi\big\rangle=-\tfrac12\Big\langle\frac{\delta S_{\mathrm{int}}}{\delta\tilde\Phi}\Big\rangle .
 $$
-The free case is the statement that the expectation of the free field solves the classical equation, and the interaction contributes the source term on the right. The algebra's content is that the operator acting is the central $\Box-m^2$ of the series conventions, so that in momentum space the equation is the algebraic one $\mathcal M(\tilde k)\langle\tilde\Phi(k)\rangle=\cdots$ with $\mathcal M(\tilde k)=\tilde k\tilde k^{\natural}+m^2$ and $\tilde k=iE e_0+\mathbf p$ — the central mass-shell operator of *The Feynman Propagator in Biquaternionic Form* and of the functional-integral article. Nothing about the equation is new; what is new is the operator's address in the algebra, the centre, and the module on which the expectation is taken.
+The free case is the statement that the expectation of the free field solves the classical equation, and the interaction contributes the source term on the right. The algebra's content is that the operator acting is the central $\Box-m^2$ of the series conventions, so that in momentum space the equation is the algebraic one $\mathcal M(\tilde k)\langle\tilde\Phi(k)\rangle=\cdots$ with $\mathcal M(\tilde k)=\tilde k\tilde k^{\natural}+m^2$ and $\tilde k=iE e_0+\vec p$ — the central mass-shell operator of *The Feynman Propagator in Biquaternionic Form* and of the functional-integral article. Nothing about the equation is new; what is new is the operator's address in the algebra, the centre, and the module on which the expectation is taken.
 
 ### The Gauge Field and the Fermion
 

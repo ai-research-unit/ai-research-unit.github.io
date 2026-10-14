@@ -20,12 +20,12 @@ The conventions are inherited from the read-list articles and none is redefined.
 
 ## What the Flat Machinery Assumes
 
-The pointwise metric of the framework is the polar form of the biquaternion norm. For $\tilde{Q} = iq_0 + \mathbf{q}$ and $\tilde{P} = ip_0 + \mathbf{p}$ in $\mathbb{M}_-$,
+The pointwise metric of the framework is the polar form of the biquaternion norm. For $\tilde{Q} = iq_0 + \vec q$ and $\tilde{P} = ip_0 + \vec p$ in $\mathbb{M}_-$,
 
 $$
 \tfrac{1}{2}\left(\tilde{Q}\tilde{P}^{\natural} + \tilde{P}\tilde{Q}^{\natural}\right)
 = \mathrm{Sc}\left(\tilde{Q}\tilde{P}^{\natural}\right)
-= -q_0p_0 + \mathbf{q}\cdot\mathbf{p},
+= -q_0p_0 + \vec q\cdot\vec p,
 $$
 
 a real scalar. Write $\langle \tilde{Q}, \tilde{P}\rangle_{\natural}$ for this form; in the basis $(ie_0, e_1, e_2, e_3)$ of $\mathbb{M}_-$ its Gram matrix is $\mathrm{diag}(-1,1,1,1)$, so it is the Minkowski inner product of $\mathbb{M}_- \cong \mathbb{R}^{1,3}$. It is preserved by rotor conjugation,
@@ -38,7 +38,7 @@ because the biquaternion norm is invariant and the conjugation action is linear 
 
 Four assumptions are built into that statement, and each is a flat-space assumption.
 
-**1. One algebra, at one point.** The framework has no notion of two points. The four-position $\tilde{Q}$, the four-velocity $\tilde{U}$, and every other four-vector are elements of $\mathbb{M}_-$; separation between events enters only as a difference $\tilde{Q}_1 - \tilde{Q}_2$, never as a displacement along a path.
+**1. One algebra, at one point.** The framework has no notion of two points. The four-position $\tilde{Q}$, the four-velocity $\tilde{V}$, and every other four-vector are elements of $\mathbb{M}_-$; separation between events enters only as a difference $\tilde{Q}_1 - \tilde{Q}_2$, never as a displacement along a path.
 
 **2. A biquaternion norm with constant coefficients.** The form $\langle \cdot,\cdot \rangle_{\natural}$ is the same at every point, by construction. Nothing in the algebra can vary it.
 
@@ -83,27 +83,27 @@ It is at this point that a genuine ambiguity appears, and it should be stated be
 
 ### The Two Readings
 
-**Reading A, the point map.** Take the four-position as the framework writes it, $\tilde{Q} = ict\,e_0 + \mathbf{x}$, with the local $c$. Then $c$ is a function of position and
+**Reading A, the point map.** Take the four-position as the framework writes it, $\tilde{Q} = ict\,e_0 + \vec x$, with the local $c$. Then $c$ is a function of position and
 
 $$
 d(ict) = ic\,dt + i\,t\,dc,
 $$
 
-so the displacement biquaternion is $d\tilde{Q} = i(c\,dt + t\,dc)e_0 + d\mathbf{x}$ — still an element of $\mathbb{M}_-$ — and the interval is $ds^2 = N(d\tilde{Q})$,
+so the displacement biquaternion is $d\tilde{Q} = i(c\,dt + t\,dc)e_0 + d\vec x$ — still an element of $\mathbb{M}_-$ — and the interval is $ds^2 = N(d\tilde{Q})$,
 
 $$
-ds^2 = -c^2\,dt^2 - 2ct\,dt\,dc - t^2 (dc)^2 + d\mathbf{x}^2
-= -c^2\,dt^2 - 2ct\,\partial_i c\,dt\,dx^i - t^2\,\partial_i c\,\partial_j c\,dx^i dx^j + d\mathbf{x}^2 .
+ds^2 = -c^2\,dt^2 - 2ct\,dt\,dc - t^2 (dc)^2 + d\vec x^2
+= -c^2\,dt^2 - 2ct\,\partial_i c\,dt\,dx^i - t^2\,\partial_i c\,\partial_j c\,dx^i dx^j + d\vec x^2 .
 $$
 
-The metric so obtained is nondegenerate — $\det g = -c^2$ in the coordinates $(t,x,y,z)$ — but it is **flat**. The map $(t,\mathbf{x}) \mapsto i\,c(\mathbf{x})\,t\,e_0 + \mathbf{x}$ is a diffeomorphism of $\mathbb{R}^4$ onto $\mathbb{M}_-$ (its Jacobian determinant is $c > 0$), and it is pulling back the flat form of $\mathbb{M}_-$; a pullback of a flat form along a diffeomorphism is flat, and no curvature can be produced by reparametrising a flat space. Direct computation confirms it: for $c = 1 + \tfrac{1}{10}(x^2+y^2+z^2)$ and, on a second and independent case, for $c = 2 + \sin x\,\cos y$, every component of the Riemann tensor vanishes. The local scale factor, read as a map of points, changes the coordinate description of flat spacetime and nothing else.
+The metric so obtained is nondegenerate — $\det g = -c^2$ in the coordinates $(t,x,y,z)$ — but it is **flat**. The map $(t,\vec x) \mapsto i\,c(\vec x)\,t\,e_0 + \vec x$ is a diffeomorphism of $\mathbb{R}^4$ onto $\mathbb{M}_-$ (its Jacobian determinant is $c > 0$), and it is pulling back the flat form of $\mathbb{M}_-$; a pullback of a flat form along a diffeomorphism is flat, and no curvature can be produced by reparametrising a flat space. Direct computation confirms it: for $c = 1 + \tfrac{1}{10}(x^2+y^2+z^2)$ and, on a second and independent case, for $c = 2 + \sin x\,\cos y$, every component of the Riemann tensor vanishes. The local scale factor, read as a map of points, changes the coordinate description of flat spacetime and nothing else.
 
 **Reading B, the derivative rule.** Take instead the framework's actual usage, in which $c$ enters through the operator $\partial_{ict} = -(i/c)\partial_t$ and the four-position is written with a single complex coordinate $ict$ rather than with a position-dependent coefficient. Equivalently, hold $c$ fixed in the differential: $d(ict) = ic\,dt$. Then
 
 $$
-ds^2 = -c(\mathbf{x})^2\,dt^2 + d\mathbf{x}^2,
+ds^2 = -c(\vec x)^2\,dt^2 + d\vec x^2,
 \qquad
-g_{\mu\nu} = \mathrm{diag}\left(-c(\mathbf{x})^2,\ 1,\ 1,\ 1\right),
+g_{\mu\nu} = \mathrm{diag}\left(-c(\vec x)^2,\ 1,\ 1,\ 1\right),
 $$
 
 and this metric is genuinely curved whenever $c$ is not affine in the spatial coordinates.
@@ -128,7 +128,7 @@ which is $+\tfrac{2}{3}$ at $x = \pi/2$ and vanishes at $x = 0$ and $x = \pi$.
 
 The class is narrow in a way that is easy to state: one free function of the spatial coordinates (or of time as well), no shift vector, and a flat three-metric on the spatial slices, $g_{ij} = \delta_{ij}$. It is the diagonal, spatially rigid sub-case of the frame route of the next section.
 
-Its decisive limitation is the following. Within this class, **Ricci-flatness forces flatness.** The condition $R_{ij} = 0$ requires $\partial_i\partial_j u = 0$ for every pair of spatial indices, so $u = \mathbf{a}(t)\cdot\mathbf{x} + b(t)$ is affine in the spatial coordinates; then $R_{00} = u\,\Delta u$ vanishes automatically, so this is the whole Ricci-flat family. And every member of that family is flat: for $u = \mathbf{a}(t)\cdot\mathbf{x} + b(t)$ with arbitrary functions $\mathbf{a}(t)$ and $b(t)$, the Riemann tensor vanishes identically, as direct symbolic computation of the general case confirms. The family is the algebra's way of writing a uniformly accelerated (Rindler-type) frame, and it is a reparametrisation of Minkowski space.
+Its decisive limitation is the following. Within this class, **Ricci-flatness forces flatness.** The condition $R_{ij} = 0$ requires $\partial_i\partial_j u = 0$ for every pair of spatial indices, so $u = \vec a(t)\cdot\vec x + b(t)$ is affine in the spatial coordinates; then $R_{00} = u\,\Delta u$ vanishes automatically, so this is the whole Ricci-flat family. And every member of that family is flat: for $u = \vec a(t)\cdot\vec x + b(t)$ with arbitrary functions $\vec a(t)$ and $b(t)$, the Riemann tensor vanishes identically, as direct symbolic computation of the general case confirms. The family is the algebra's way of writing a uniformly accelerated (Rindler-type) frame, and it is a reparametrisation of Minkowski space.
 
 The consequence is worth stating plainly, in the restricted sense in which it holds. A metric that the local-scale route can write down at all cannot be a non-flat Ricci-flat spacetime. It therefore cannot carry a vacuum gravitational field with Weyl curvature, and with it no vacuum gravitational wave and no vacuum black-hole exterior. This is a statement about a metric class, not a theorem about the biquaternion programme — but it is enough to show that the local scale factor of the imaginary time axis is not the route by which general relativity will enter the framework.
 
@@ -409,7 +409,7 @@ The boundary of this article is unchanged by the claim, and the claim is unchang
 
 A second external source reaches this article's own subject from the opposite direction, and it is worth separating from the first, because it claims more. D. J. Cirilo-Lombardo (*Algebraic structures, physics and geometry from a Unified Field Theoretical framework*, arXiv:1411.5493v3 [hep-th], 2015) works from a unified field theory unrelated to the corpus and asks what algebraic structure the **basis** of its principal fibre bundle $P(G,M)$ carries; his answer is the biquaternion algebra. The bundle is new here — no article of the series constructs a principal bundle over the manifold with the algebra in the basis — and the claim is *stronger* than anything this article has built, because a basis is exactly the thing the section *Curvature Cannot Be Carried by the Algebra* showed cannot carry curvature.
 
-The dictionary is exact, and the companion article *The Biquaternion Basis of a Unified-Field Fibre Bundle* records the verification entry by entry. The source assembles its structural group blockwise from one $2\times2$ matrix $Q = a_0\sigma_0 - i\boldsymbol\sigma\!\cdot\!\mathbf a$, which is the matrix image $\mathsf{M}_2(\tilde Q)$ of the biquaternion $\tilde Q = a_0 + \mathbf a\!\cdot\!\mathbf e$ under the corpus's representation $\mathsf{M}_2(e_k) = -i\sigma_k$, with the coefficients fixed by a four-momentum, $a_0 = p_0/m$ and $\mathbf a = i\mathbf p/m$. Its unit-norm condition and its relativistic relation are then one identity, $N(\tilde Q) = 1$, and its object is the Hermitian biquaternion of $\mathbb{M}_+$ — the informational sector, not the material one this article's metric is read from. Its own "conjugate transpose" $G^+$ is the quaternionic conjugation of the block and not the matrix adjoint; that is the interpretation in which its $G^+G = I_4$ holds, and the distinction is invisible while the coefficients are real.
+The dictionary is exact, and the companion article *The Biquaternion Basis of a Unified-Field Fibre Bundle* records the verification entry by entry. The source assembles its structural group blockwise from one $2\times2$ matrix $Q = a_0\sigma_0 - i\boldsymbol\sigma\!\cdot\!\vec a$, which is the matrix image $\mathsf{M}_2(\tilde Q)$ of the biquaternion $\tilde Q = a_0 + \vec a\!\cdot\!\mathbf e$ under the corpus's representation $\mathsf{M}_2(e_k) = -i\sigma_k$, with the coefficients fixed by a four-momentum, $a_0 = p_0/m$ and $\vec a = i\vec p/m$. Its unit-norm condition and its relativistic relation are then one identity, $N(\tilde Q) = 1$, and its object is the Hermitian biquaternion of $\mathbb{M}_+$ — the informational sector, not the material one this article's metric is read from. Its own "conjugate transpose" $G^+$ is the quaternionic conjugation of the block and not the matrix adjoint; that is the interpretation in which its $G^+G = I_4$ holds, and the distinction is invisible while the coefficients are real.
 
 **Which naturality is meant.** The word *naturally* has to be split before the claim can be assessed, and the two interpretations are different statements. A **preferred-basis** claim would assert that the bundle's structure group reduces into the biquaternion unit group; that is a statement about $G$, it is testable, and the source's own test is $G^+G = I_4$ in just the conjugation that holds. An **algebra-on-the-fibres** claim would assert that each fibre is a module over $\mathbb{B}$; that is what *The Hopf Fibration and the Biquaternion Gauge Bundle* already constructs from the framework's side, and it is a statement about the fibres rather than about the basis. The corpus reads the second as true and unremarkable and the first as the substantive claim.
 
@@ -463,7 +463,7 @@ Read further, the local complex structure is an **emergent metric** in the sense
 
 The read-list machinery is flat and pointwise: one fixed algebra, one fixed biquaternion norm with constant coefficients, a global chart with a distinguished imaginary time, and a global rotor group. Curvature cannot be made a property of the algebra, because the algebra has no points and no deformable coefficient; it can only be carried by the field that attaches the algebra to spacetime.
 
-The framework's own local device is the local scale $c = 1/\sqrt{\epsilon\mu}$ of the imaginary time axis. It admits two inequivalent interpretations. As a map of points, $\tilde{Q} = i\,c(\mathbf{x})\,t\,e_0 + \mathbf{x}$, it yields a nondegenerate metric with $\det g = -c^2$ that is identically flat — the pullback of the flat form of $\mathbb{M}_-$ along a diffeomorphism — as direct computation confirms. As a derivative rule, $\partial_{ict} = -(i/c)\partial_t$ with $c$ held fixed in the differential, it yields $g_{\mu\nu} = \mathrm{diag}(-c^2,1,1,1)$, genuinely curved, with $R_{00} = u\Delta u$, $R_{0i} = 0$, $R_{ij} = -\partial_i\partial_j u / u$ for $u = c$. The framework's prose does not choose between the interpretations, and the choice is left open here.
+The framework's own local device is the local scale $c = 1/\sqrt{\epsilon\mu}$ of the imaginary time axis. It admits two inequivalent interpretations. As a map of points, $\tilde{Q} = i\,c(\vec x)\,t\,e_0 + \vec x$, it yields a nondegenerate metric with $\det g = -c^2$ that is identically flat — the pullback of the flat form of $\mathbb{M}_-$ along a diffeomorphism — as direct computation confirms. As a derivative rule, $\partial_{ict} = -(i/c)\partial_t$ with $c$ held fixed in the differential, it yields $g_{\mu\nu} = \mathrm{diag}(-c^2,1,1,1)$, genuinely curved, with $R_{00} = u\Delta u$, $R_{0i} = 0$, $R_{ij} = -\partial_i\partial_j u / u$ for $u = c$. The framework's prose does not choose between the interpretations, and the choice is left open here.
 
 Within the second interpretation's class — one function, no shift, flat spatial slices — Ricci-flatness forces $u$ to be affine in the spatial coordinates, and every such metric is flat. The class therefore contains no non-flat vacuum geometry: no Weyl curvature, no gravitational waves, no black-hole exteriors. The local scale factor is not the route to general relativity. Nor is it the same object as the metric: $c$ is the Maxwell speed of a medium, and the standard effective metric of a dielectric is a metric for light, not for free fall.
 

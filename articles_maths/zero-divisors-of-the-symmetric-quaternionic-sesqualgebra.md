@@ -31,16 +31,16 @@ square, are *Zero Divisors of the General Plain Algebra*.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis
 $e_0,e_1,e_2,e_3$, $e_1^2=e_2^2=e_3^2=-e_0$ and $e_1e_2=e_3$; $\tilde Q=\sum_\mu Q_\mu e_\mu$ with
-$Q_\mu\in\mathbb{C}$ and central scalar imaginary $i$; $\mathbf{Q}=\sum_kQ_ke_k$;
-$(\mathbf P,\mathbf Q)=\sum_kP_kQ_k$ is the complex bilinear dot product; ${}^{\natural}$ fixes
+$Q_\mu\in\mathbb{C}$ and central scalar imaginary $i$; $\vec Q=\sum_kQ_ke_k$;
+$(\vec P,\vec Q)=\sum_kP_kQ_k$ is the complex bilinear dot product; ${}^{\natural}$ fixes
 $e_0$ and negates $e_1,e_2,e_3$ with the coefficients fixed, $\bar{\cdot}$ conjugates the
 coefficients, and ${}^{*}={}^{\natural}\circ\bar{\cdot}$; and $\varepsilon=(1,-1,-1,-1)$. The
 **central square** of an element is
-$C(\tilde Q)=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2=Q_0^2+(\mathbf Q,\mathbf Q)$, the product
+$C(\tilde Q)=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2=Q_0^2+(\vec Q,\vec Q)$, the product
 of the plain bilinear product with the natural conjugation, as in *Zero Divisors of the General
 Plain Algebra*. Throughout this article the product is the block, written $\star$.
 
-**The results.** A nonzero biquaternion is a zero divisor of the block exactly when $Q_0=0$ or $C(\tilde Q)=Q_0^2+(\mathbf Q,\mathbf Q)=0$, so the zero-divisor set is the enlarged set $(\{Q_0=0\}\cup\{C(\tilde Q)=0\})\setminus\{0\}$. It splits into the pure family $\{Q_0=0\}$, the nonzero elements of the vector subspace, and the non-pure family $\{Q_0\neq0,\ C(\tilde Q)=0\}$, whose members have the central square of the plain zero divisors. The block's set strictly contains the single zero-divisor set $\{\tilde Q\neq0:C(\tilde Q)=0\}$ of the four general products, the difference being the pure non-isotropic vectors such as $e_1$. The left and the right zero divisors coincide, and the regular elements are those with $Q_0\neq0$ and $C(\tilde Q)\neq0$.
+**The results.** A nonzero biquaternion is a zero divisor of the block exactly when $Q_0=0$ or $C(\tilde Q)=Q_0^2+(\vec Q,\vec Q)=0$, so the zero-divisor set is the enlarged set $(\{Q_0=0\}\cup\{C(\tilde Q)=0\})\setminus\{0\}$. It splits into the pure family $\{Q_0=0\}$, the nonzero elements of the vector subspace, and the non-pure family $\{Q_0\neq0,\ C(\tilde Q)=0\}$, whose members have the central square of the plain zero divisors. The block's set strictly contains the single zero-divisor set $\{\tilde Q\neq0:C(\tilde Q)=0\}$ of the four general products, the difference being the pure non-isotropic vectors such as $e_1$. The left and the right zero divisors coincide, and the regular elements are those with $Q_0\neq0$ and $C(\tilde Q)\neq0$.
 
 ## Definition
 
@@ -65,23 +65,23 @@ $\tilde Q\star\tilde R=0$ and $\tilde R\star\tilde Q=0$. On a general pair the s
 of *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions* reads
 
 $$
-\tilde Q\star\tilde R=\bigl[Q_0\overline{R_0}-(\mathbf Q,\overline{\mathbf R})\bigr]
--Q_0\overline{\mathbf R}-\overline{R_0}\,\mathbf Q ,
+\tilde Q\star\tilde R=\bigl[Q_0\overline{R_0}-(\vec Q,\overline{\vec R})\bigr]
+-Q_0\overline{\vec R}-\overline{R_0}\,\vec Q ,
 $$
 
 so the equation $\tilde Q\star\tilde R=0$ is the pair
 
 $$
-Q_0\overline{R_0}=(\mathbf Q,\overline{\mathbf R}),
+Q_0\overline{R_0}=(\vec Q,\overline{\vec R}),
 \qquad
-Q_0\overline{\mathbf R}+\overline{R_0}\,\mathbf Q=\mathbf 0 .
+Q_0\overline{\vec R}+\overline{R_0}\,\vec Q=\mathbf 0 .
 $$
 
 Unqualified, the product is the block for the rest of the article.
 
 ## The Criterion
 
-**A nonzero biquaternion $\tilde Q$ is a zero divisor of the block exactly when $Q_0=0$ or $C(\tilde Q)=Q_0^2+(\mathbf Q,\mathbf Q)=0$, so the zero-divisor set is the disjoint union of the pure family $\{Q_0=0,\ \tilde Q\neq0\}$ and the non-pure family $\{Q_0\neq0,\ C(\tilde Q)=0\}$.**
+**A nonzero biquaternion $\tilde Q$ is a zero divisor of the block exactly when $Q_0=0$ or $C(\tilde Q)=Q_0^2+(\vec Q,\vec Q)=0$, so the zero-divisor set is the disjoint union of the pure family $\{Q_0=0,\ \tilde Q\neq0\}$ and the non-pure family $\{Q_0\neq0,\ C(\tilde Q)=0\}$.**
 
 **Theorem (the criterion of the block).** A nonzero biquaternion $\tilde Q$ is a zero divisor of
 the block if and only if
@@ -89,15 +89,15 @@ the block if and only if
 $$
 Q_0=0
 \qquad\text{or}\qquad
-C(\tilde Q)=Q_0^2+(\mathbf Q,\mathbf Q)=0 .
+C(\tilde Q)=Q_0^2+(\vec Q,\vec Q)=0 .
 $$
 
 *Proof.* Write the two defining equations for the unknown $\tilde R$.
 
 **The case $Q_0=0$.** The vector equation
-$Q_0\overline{\mathbf R}+\overline{R_0}\mathbf Q=\mathbf 0$ becomes
-$\overline{R_0}\mathbf Q=\mathbf 0$, and since $\tilde Q\neq0$ has $\mathbf Q\neq0$, this forces
-$R_0=0$. The scalar equation becomes $0=(\mathbf Q,\overline{\mathbf R})$, that is
+$Q_0\overline{\vec R}+\overline{R_0}\vec Q=\mathbf 0$ becomes
+$\overline{R_0}\vec Q=\mathbf 0$, and since $\tilde Q\neq0$ has $\vec Q\neq0$, this forces
+$R_0=0$. The scalar equation becomes $0=(\vec Q,\overline{\vec R})$, that is
 $\sum_{k=1}^{3}Q_k\overline{R_k}=0$, a single complex equation in the three complex unknowns
 $R_1,R_2,R_3$; it has a nonzero solution, and with $R_0=0$ that solution gives a nonzero $\tilde R$
 with $\tilde Q\star\tilde R=0$. Hence every element of vanishing scalar part is a left zero
@@ -111,9 +111,9 @@ Q_0\overline{R_0}=\sum_kQ_k\overline{R_k}=-\frac{\overline{R_0}}{Q_0}\sum_kQ_k^2
 $$
 
 which after multiplication by $Q_0$ reads $\overline{R_0}\,C(\tilde Q)=0$. If $C(\tilde Q)\neq0$
-then $\overline{R_0}=0$, and the vector equation forces $\overline{\mathbf R}=\mathbf 0$, hence
+then $\overline{R_0}=0$, and the vector equation forces $\overline{\vec R}=\mathbf 0$, hence
 $\tilde R=0$: there is no zero divisor. If $C(\tilde Q)=0$ then the scalar equation holds for every
-$R_0$, the vector equation determines $\mathbf R$ from $R_0$, and any $R_0\neq0$ gives a nonzero
+$R_0$, the vector equation determines $\vec R$ from $R_0$, and any $R_0\neq0$ gives a nonzero
 $\tilde R$ with $\tilde Q\star\tilde R=0$. Hence a non-pure element is a left zero divisor exactly
 when $C(\tilde Q)=0$.
 
@@ -127,8 +127,8 @@ stated.
 the non-pure zero divisors of the plain product.
 
 *Proof.* The two conditions $Q_0=0$ and $Q_0\neq0$ are exclusive; on the first the criterion is
-$Q_0=0$ alone, on the second it is $C(\tilde Q)=0$ alone. In the second family $\mathbf Q\neq0$,
-since $C(\tilde Q)=Q_0^2+(\mathbf Q,\mathbf Q)=0$ would force $(\mathbf Q,\mathbf Q)=-Q_0^2\neq0$.
+$Q_0=0$ alone, on the second it is $C(\tilde Q)=0$ alone. In the second family $\vec Q\neq0$,
+since $C(\tilde Q)=Q_0^2+(\vec Q,\vec Q)=0$ would force $(\vec Q,\vec Q)=-Q_0^2\neq0$.
 
 ## The Two Sides and the Annihilators
 
@@ -232,7 +232,7 @@ The zero divisor of the block is defined by an equation in the product, and the 
 
 $$
 \{\tilde Q\neq0:Q_0=0\}\ \cup\ \{\tilde Q\neq0:C(\tilde Q)=0\},
-\qquad C(\tilde Q)=Q_0^2+(\mathbf Q,\mathbf Q),
+\qquad C(\tilde Q)=Q_0^2+(\vec Q,\vec Q),
 $$
 
 the disjoint union of the pure family, the nonzero elements of the vector subspace, and the
@@ -254,7 +254,7 @@ substitute for the invertible ones.
 | Symbol | Meaning |
 |---|---|
 | $\tilde Q\star\tilde R=\tfrac12(\tilde Q^{\natural}\tilde R^{*}+\tilde R^{*}\tilde Q^{\natural})$ | the symmetric quaternionic sesquilinear product, the block |
-| $C(\tilde Q)=Q_0^2+(\mathbf Q,\mathbf Q)=\sum_\mu Q_\mu^2$ | the central square, deciding the criterion |
+| $C(\tilde Q)=Q_0^2+(\vec Q,\vec Q)=\sum_\mu Q_\mu^2$ | the central square, deciding the criterion |
 | $\{\tilde Q\neq0:Q_0=0\}$ | the pure family of the zero divisors |
 | $\{\tilde Q\neq0:C(\tilde Q)=0\}$ | the non-pure family, the general set |
 | $A_\star(\tilde Q)$ | the annihilator, of complex dimension two or one |

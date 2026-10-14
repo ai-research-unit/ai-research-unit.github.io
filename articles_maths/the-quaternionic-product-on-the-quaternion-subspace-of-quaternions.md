@@ -16,57 +16,57 @@ $$
 S = \mathbb{R}e_0 = \{\tilde p : \tilde p^{\natural} = \tilde p\} , \qquad V = \mathrm{Vect}(e_1,e_2,e_3) = \mathbb{R}^3 = \{\tilde p : \tilde p^{\natural} = -\tilde p\} .
 $$
 
-They are the two eigenspaces of the conjugation, of real dimensions one and three, and $\mathbb{H} = S \oplus V$ with the decomposition $\tilde p = p_0e_0 + \mathbf p$.
+They are the two eigenspaces of the conjugation, of real dimensions one and three, and $\mathbb{H} = S \oplus V$ with the decomposition $\tilde p = p_0e_0 + \vec p$.
 
 **Proposition (the mixed products).** The scalar line acts on the vector subspace by scaling, on both sides:
 
 $$
-(p_0e_0) \star \mathbf q = p_0\mathbf q , \qquad \mathbf p \star (q_0e_0) = -q_0\mathbf p .
+(p_0e_0) \star \vec q = p_0\vec q , \qquad \vec p \star (q_0e_0) = -q_0\vec p .
 $$
 
-*Proof.* $e_0^{\natural} = e_0$ and $\mathbf q^{\natural} = -\mathbf q$, so $(p_0e_0)^{\natural}\mathbf q = p_0\mathbf q$ and $\mathbf p^{\natural}(q_0e_0) = -q_0\mathbf p$.
+*Proof.* $e_0^{\natural} = e_0$ and $\vec q^{\natural} = -\vec q$, so $(p_0e_0)^{\natural}\vec q = p_0\vec q$ and $\vec p^{\natural}(q_0e_0) = -q_0\vec p$.
 
 **Corollary.** Both mixed products lie again in $V$, with the scalar coefficient on the left and the negated scalar coefficient on the right; the scalar line therefore acts on $V$ by the two opposite scalings, and the asymmetry is the same conjugation that makes the unit one-sided.
 
 ## The Restriction to the Vector Subspace
 
-**Theorem (the restriction).** For pure elements $\mathbf p, \mathbf q \in V$,
+**Theorem (the restriction).** For pure elements $\vec p, \vec q \in V$,
 
 $$
-\mathbf p \star \mathbf q = \mathbf p^{\natural}\mathbf q = -\mathbf p\mathbf q = \bigl(\mathbf p \cdot \mathbf q\bigr)e_0 - \mathbf p \times \mathbf q .
+\vec p \star \vec q = \vec p^{\natural}\vec q = -\vec p\vec q = \bigl(\vec p \cdot \vec q\bigr)e_0 - \vec p \times \vec q .
 $$
 
 The restriction of the quaternionic product to the vector subspace is therefore the **negative of the plain product** of the two pure quaternions; its value lies in $S \oplus V$, its scalar part is the Euclidean pairing, and its pure part is the negative of the cross product.
 
-*Proof.* For a pure element $\mathbf p^{\natural} = -\mathbf p$, so $\mathbf p \star \mathbf q = -\mathbf p\mathbf q$; the plain product of two pure quaternions is $\mathbf p\mathbf q = -\,\mathbf p \cdot \mathbf q + \mathbf p \times \mathbf q$, and the sign is reversed.
+*Proof.* For a pure element $\vec p^{\natural} = -\vec p$, so $\vec p \star \vec q = -\vec p\vec q$; the plain product of two pure quaternions is $\vec p\vec q = -\,\vec p \cdot \vec q + \vec p \times \vec q$, and the sign is reversed.
 
-**Corollary (the identification).** The restriction is the difference of the two plain companion operations on $V$: the scalar part is the symmetrised plain product, $\tfrac12(\mathbf p\mathbf q + \mathbf q\mathbf p) = \mathbf p \cdot \mathbf q$, and the pure part is the antisymmetrised one, $\tfrac12(\mathbf p\mathbf q - \mathbf q\mathbf p) = \mathbf p \times \mathbf q$. The quaternionic product on $V$ is thus the symmetrised product minus the antisymmetrised one, the plain product read with the conjugation inserted in the first slot, and the insertion of the conjugation on a pure first factor is exactly a negation.
+**Corollary (the identification).** The restriction is the difference of the two plain companion operations on $V$: the scalar part is the symmetrised plain product, $\tfrac12(\vec p\vec q + \vec q\vec p) = \vec p \cdot \vec q$, and the pure part is the antisymmetrised one, $\tfrac12(\vec p\vec q - \vec q\vec p) = \vec p \times \vec q$. The quaternionic product on $V$ is thus the symmetrised product minus the antisymmetrised one, the plain product read with the conjugation inserted in the first slot, and the insertion of the conjugation on a pure first factor is exactly a negation.
 
-**Example.** At $\mathbf p = \mathbf q = e_1$ the value is $e_0$; at $\mathbf p = e_1$, $\mathbf q = e_2$ the value is $-e_3$; at $\mathbf p = e_1$, $\mathbf q = -e_1$ the value is $e_0$. The first and the third values are in the scalar line, the second in the vector subspace, and the reading is the Euclidean pairing and the negative cross product of the two vectors.
+**Example.** At $\vec p = \vec q = e_1$ the value is $e_0$; at $\vec p = e_1$, $\vec q = e_2$ the value is $-e_3$; at $\vec p = e_1$, $\vec q = -e_1$ the value is $e_0$. The first and the third values are in the scalar line, the second in the vector subspace, and the reading is the Euclidean pairing and the negative cross product of the two vectors.
 
 ## The Invariance
 
-**Theorem (which piece is invariant).** The scalar line $S$ is invariant under the quaternionic product, and on it the product is the plain multiplication of the scalars: $(p_0e_0) \star (q_0e_0) = p_0q_0e_0$. The vector subspace $V$ is **not** invariant: for pure $\mathbf p, \mathbf q \neq 0$ the value $\mathbf p \star \mathbf q$ lies in $V$ exactly when $\mathbf p \cdot \mathbf q = 0$, and then it is $-\mathbf p \times \mathbf q$. The mixed products lie in $V$.
+**Theorem (which piece is invariant).** The scalar line $S$ is invariant under the quaternionic product, and on it the product is the plain multiplication of the scalars: $(p_0e_0) \star (q_0e_0) = p_0q_0e_0$. The vector subspace $V$ is **not** invariant: for pure $\vec p, \vec q \neq 0$ the value $\vec p \star \vec q$ lies in $V$ exactly when $\vec p \cdot \vec q = 0$, and then it is $-\vec p \times \vec q$. The mixed products lie in $V$.
 
-*Proof.* The scalar line statement is the mixed product at two scalars. The vector statement is the restriction theorem: the scalar part of $\mathbf p \star \mathbf q$ is $\mathbf p \cdot \mathbf q$, which vanishes exactly on the orthogonal pairs; in that case the value is the pure element $-\mathbf p \times \mathbf q$, also nonzero on non-parallel pairs.
+*Proof.* The scalar line statement is the mixed product at two scalars. The vector statement is the restriction theorem: the scalar part of $\vec p \star \vec q$ is $\vec p \cdot \vec q$, which vanishes exactly on the orthogonal pairs; in that case the value is the pure element $-\vec p \times \vec q$, also nonzero on non-parallel pairs.
 
 **Corollary.** The product mixes the two pieces in one direction only: $S \star S \subseteq S$, $S \star V \subseteq V$, $V \star S \subseteq V$, while $V \star V$ meets both pieces. The scalar line is the unique proper invariant subspace, of dimension one; the vector subspace is a three-dimensional piece stable under the mixing but not closed.
 
-*Proof.* The three inclusions are the two propositions above; the failure of closure of $V$ is the exact condition $\mathbf p \cdot \mathbf q = 0$.
+*Proof.* The three inclusions are the two propositions above; the failure of closure of $V$ is the exact condition $\vec p \cdot \vec q = 0$.
 
-**Remark.** The scalar line is invariant for the symmetrised product as well, and the vector subspace is not closed for it either, the value being the scalar $\mathbf p \cdot \mathbf q e_0$ (*The Symmetrised Quaternionic Product and the Hermitian Subspace*). The failure of closure of $V$ is thus common to the two companion operations, and it is the algebraic reason the corpus gives only two remarkable subspaces and not more.
+**Remark.** The scalar line is invariant for the symmetrised product as well, and the vector subspace is not closed for it either, the value being the scalar $\vec p \cdot \vec q e_0$ (*The Symmetrised Quaternionic Product and the Hermitian Subspace*). The failure of closure of $V$ is thus common to the two companion operations, and it is the algebraic reason the corpus gives only two remarkable subspaces and not more.
 
 ## The Comparison with the Plain Product
 
-**Proposition.** The restriction of the plain product to the two pieces is the negative of the restriction of the quaternionic product, on both pieces read together: on $S$ the two agree, $(p_0e_0)(q_0e_0) = p_0q_0e_0$, while on $V$ they differ by the sign of the conjugate, $\mathbf p\mathbf q = -\mathbf p \star \mathbf q$. In particular the plain pure part of the restriction is $+\mathbf p \times \mathbf q$ against the $-\mathbf p \times \mathbf q$ of the quaternionic product, and the plain scalar part is $-\mathbf p \cdot \mathbf q$ against $+\mathbf p \cdot \mathbf q$.
+**Proposition.** The restriction of the plain product to the two pieces is the negative of the restriction of the quaternionic product, on both pieces read together: on $S$ the two agree, $(p_0e_0)(q_0e_0) = p_0q_0e_0$, while on $V$ they differ by the sign of the conjugate, $\vec p\vec q = -\vec p \star \vec q$. In particular the plain pure part of the restriction is $+\vec p \times \vec q$ against the $-\vec p \times \vec q$ of the quaternionic product, and the plain scalar part is $-\vec p \cdot \vec q$ against $+\vec p \cdot \vec q$.
 
-*Proof.* The plain product of two pure quaternions is $\mathbf p\mathbf q = -\,\mathbf p \cdot \mathbf q + \mathbf p \times \mathbf q$, and the quaternionic one is its negative by the restriction theorem.
+*Proof.* The plain product of two pure quaternions is $\vec p\vec q = -\,\vec p \cdot \vec q + \vec p \times \vec q$, and the quaternionic one is its negative by the restriction theorem.
 
-**Remark.** The pattern of invariance is the same for the two products on the scalar line and the same on the vector subspace, and only the signs differ; the two products are exchanged by the conjugation, $\mathbf q \star \mathbf p = (\mathbf p \star \mathbf q)^{\natural}$, and on a pair of pure elements the conjugation is the negation, which is the whole of the comparison. The general comparison of the two products, with the whole table of their laws, is *Comparison Between the Two General Products*.
+**Remark.** The pattern of invariance is the same for the two products on the scalar line and the same on the vector subspace, and only the signs differ; the two products are exchanged by the conjugation, $\vec q \star \vec p = (\vec p \star \vec q)^{\natural}$, and on a pair of pure elements the conjugation is the negation, which is the whole of the comparison. The general comparison of the two products, with the whole table of their laws, is *Comparison Between the Two General Products*.
 
 ## Summary
 
-The conjugation splits $\mathbb{H}$ into the scalar line $S$ and the vector subspace $V$, the two companion pieces of the block. On $S$ the quaternionic product is the plain product of the scalars and $S$ is invariant; on $V$ it is the negative of the plain product of pure quaternions, $\mathbf p \star \mathbf q = -\mathbf p\mathbf q = (\mathbf p \cdot \mathbf q)e_0 - \mathbf p \times \mathbf q$, so that the value is the Euclidean pairing in the scalar line and the negative cross product in the vector subspace; $V$ is therefore not invariant, and it is invariant exactly on the orthogonal pairs. The mixed products lie in $V$ and act by the two opposite scalings. Compared with the plain product on the same pieces the only difference is a sign, the two products being exchanged by the conjugation.
+The conjugation splits $\mathbb{H}$ into the scalar line $S$ and the vector subspace $V$, the two companion pieces of the block. On $S$ the quaternionic product is the plain product of the scalars and $S$ is invariant; on $V$ it is the negative of the plain product of pure quaternions, $\vec p \star \vec q = -\vec p\vec q = (\vec p \cdot \vec q)e_0 - \vec p \times \vec q$, so that the value is the Euclidean pairing in the scalar line and the negative cross product in the vector subspace; $V$ is therefore not invariant, and it is invariant exactly on the orthogonal pairs. The mixed products lie in $V$ and act by the two opposite scalings. Compared with the plain product on the same pieces the only difference is a sign, the two products being exchanged by the conjugation.
 
 ## Summary of Notation
 
@@ -75,9 +75,9 @@ The conjugation splits $\mathbb{H}$ into the scalar line $S$ and the vector subs
 | $\mathbb{H} = S \oplus V$ | the splitting into the two eigenspaces of the conjugation |
 | $S = \mathbb{R}e_0$ | the scalar line, the Hermitian subspace, dimension one |
 | $V = \mathrm{Vect}(e_1,e_2,e_3)$ | the vector subspace, the anti-Hermitian subspace, dimension three |
-| $\mathbf p \star \mathbf q = -\mathbf p\mathbf q$ | the restriction to the vector subspace |
-| $\mathbf p \cdot \mathbf q$ | the Euclidean pairing, the scalar part of the restriction |
-| $\mathbf p \times \mathbf q$ | the cross product, the negative of the pure part |
+| $\vec p \star \vec q = -\vec p\vec q$ | the restriction to the vector subspace |
+| $\vec p \cdot \vec q$ | the Euclidean pairing, the scalar part of the restriction |
+| $\vec p \times \vec q$ | the cross product, the negative of the pure part |
 | $\tilde p\tilde q$ | the plain product, whose restriction to $V$ is the negative |
 
 ## Further Reading

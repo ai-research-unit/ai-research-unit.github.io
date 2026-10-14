@@ -33,23 +33,23 @@ The slice structure of *Conventions in the Biquaternion Universe* fixes what the
 
 ## The Naive Count
 
-Write the two factors as scalar part plus vector part, $\tilde{P} = S_1 + \mathbf{V}_1$ and $\tilde{Q} = S_2 + \mathbf{V}_2$, with $S$ complex scalars and $\mathbf{V}$ complex vectors. The product is
+Write the two factors as scalar part plus vector part, $\tilde{P} = S_1 + \vec V_1$ and $\tilde{Q} = S_2 + \vec V_2$, with $S$ complex scalars and $\vec V$ complex vectors. The product is
 
 $$
-\tilde{P}\tilde{Q} = \bigl(S_1S_2 - \mathbf{V}_1\cdot\mathbf{V}_2\bigr) + \bigl(S_1\mathbf{V}_2 + S_2\mathbf{V}_1 + \mathbf{V}_1\times\mathbf{V}_2\bigr).
+\tilde{P}\tilde{Q} = \bigl(S_1S_2 - \vec V_1\cdot\vec V_2\bigr) + \bigl(S_1\vec V_2 + S_2\vec V_1 + \vec V_1\times\vec V_2\bigr).
 $$
 
-The sign of the cross term is the corpus's: with $e_1e_2 = e_3$ the outer product is $+\mathbf{V}_1\times\mathbf{V}_2$, so that $e_1e_2$ returns $e_3$; the source's convention reverses the order of the vector units and carries the opposite sign, which is a relabelling and changes no count.
+The sign of the cross term is the corpus's: with $e_1e_2 = e_3$ the outer product is $+\vec V_1\times\vec V_2$, so that $e_1e_2$ returns $e_3$; the source's convention reverses the order of the vector units and carries the opposite sign, which is a relabelling and changes no count.
 
 Counting the coefficient products that appear above, one by one:
 
 | term | coefficient products |
 |---|---|
 | $S_1S_2$ | $1$ |
-| $\mathbf{V}_1\cdot\mathbf{V}_2$ | $3$ |
-| $S_1\mathbf{V}_2$ | $3$ |
-| $S_2\mathbf{V}_1$ | $3$ |
-| $\mathbf{V}_1\times\mathbf{V}_2$ | $6$ |
+| $\vec V_1\cdot\vec V_2$ | $3$ |
+| $S_1\vec V_2$ | $3$ |
+| $S_2\vec V_1$ | $3$ |
+| $\vec V_1\times\vec V_2$ | $6$ |
 | **total** | $\mathbf{16}$ |
 
 The naive scheme therefore costs sixteen complex multiplications, or **sixty-four real multiplications**, for a product with all eight components active. On the real-quaternion slice the same scheme costs $4\times4 = 16$ real multiplications, and on the antiquaternion slice the purely imaginary coefficients can be multiplied as real numbers, again sixteen. The naive count is the baseline against which the next section's algorithm is measured.
@@ -108,7 +108,7 @@ For the slices the scheme already terminates at the coefficient level: a real-qu
 The scheme above has coefficients that are complex *scalars*, and it is bilinear over the real numbers: every output is a scalar linear combination of the eight intermediate products. **Nothing in it uses the commutativity of the coefficients**, so it applies unchanged when the coefficients are replaced by matrices. That is the step from a biquaternion to a *matrix-valued* biquaternion, an element of $\mathbb{B}^{n\times m}$: each of the four coefficients becomes an $n\times m$ complex matrix, and the product rule keeps exactly its scalar-vector shape,
 
 $$
-Q_1Q_2 = \bigl(S_1S_2 - \mathbf{V}_1\cdot\mathbf{V}_2\bigr) + \bigl(S_1\mathbf{V}_2 + S_2\mathbf{V}_1 + \mathbf{V}_1\times\mathbf{V}_2\bigr),
+Q_1Q_2 = \bigl(S_1S_2 - \vec V_1\cdot\vec V_2\bigr) + \bigl(S_1\vec V_2 + S_2\vec V_1 + \vec V_1\times\vec V_2\bigr),
 $$
 
 with the dot and cross products understood entrywise, in the order of matrix multiplication, and with the coefficients no longer commuting. The eight intermediate products are then products of matrices, evaluated with a single real matrix-multiplication kernel; the dot and cross products are absorbed into them and are never formed separately.
@@ -250,7 +250,7 @@ The split the arithmetic respects is $\mathbb{B} = \mathbb{H}_{\mathbb{B}}\oplus
 | $Q_\mu=q_\mu+iq'_\mu$ | Complex coefficients; the eight real parameters are $q_\mu,q'_\mu$ |
 | $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$ | Real-quaternion and antiquaternion halves, the complex-conjugation split |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Material and informational sectors, the dagger split, crossing the halves |
-| $S_1+\mathbf{V}_1$, $S_2+\mathbf{V}_2$ | Scalar and vector parts of the two factors |
+| $S_1+\vec V_1$, $S_2+\vec V_2$ | Scalar and vector parts of the two factors |
 | $H_1,\dots,H_4$ | The four Hadamard (Sylvester) products of the coefficient vectors |
 | $P_{00},P_{32},P_{13},P_{21}$ | The four corner products, in the corpus basis |
 | coefficient product | one product of a coefficient of one factor by a coefficient of the other |

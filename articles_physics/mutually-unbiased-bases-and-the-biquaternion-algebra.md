@@ -152,7 +152,7 @@ for a trace-one state, so the $d(d+1)$ probabilities determine the state linearl
 
 ### Verification for the qubit
 
-Let $\tilde{\rho} = \tfrac12(e_0+i\mathbf{r})$ and let $r_k = \mathbf{r}\cdot\hat{e}_k$. In basis $\mathcal{B}_k$ the two outcome probabilities are $p_\pm^{(k)} = \tfrac12(1\pm r_k)$. The contribution of basis $k$ to the sum is
+Let $\tilde{\rho} = \tfrac12(e_0+i\vec r)$ and let $r_k = \vec r\cdot\hat{e}_k$. In basis $\mathcal{B}_k$ the two outcome probabilities are $p_\pm^{(k)} = \tfrac12(1\pm r_k)$. The contribution of basis $k$ to the sum is
 
 $$
 p_+^{(k)}\tilde\Pi_1(\hat{e}_k) + p_-^{(k)}\tilde\Pi_2(\hat{e}_k)
@@ -163,8 +163,8 @@ as follows by expanding the two terms. Summing over the three bases gives
 
 $$
 \sum_{k=1}^{3}\tfrac12\bigl(e_0 + i r_k\hat{e}_k\bigr)
-= \tfrac{3}{2}e_0 + \tfrac12 i\mathbf{r}
-= e_0 + \tfrac12\bigl(e_0 + i\mathbf{r}\bigr)
+= \tfrac{3}{2}e_0 + \tfrac12 i\vec r
+= e_0 + \tfrac12\bigl(e_0 + i\vec r\bigr)
 = e_0 + \tilde{\rho} ,
 $$
 

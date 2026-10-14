@@ -142,8 +142,8 @@ punctured space.
 
 | the split | general plain algebra | symmetric plain sesqualgebra |
 |---|---|---|
-| criterion | $Q_0^{2}+(\mathbf Q,\mathbf Q) = 0$, one element | $H(\tilde P,\tilde R) = 0$, an element and a partner |
-| pure family | $P_0 = 0$, $(\mathbf P,\mathbf P) = 0$ | absent |
+| criterion | $Q_0^{2}+(\vec Q,\vec Q) = 0$, one element | $H(\tilde P,\tilde R) = 0$, an element and a partner |
+| pure family | $P_0 = 0$, $(\vec P,\vec P) = 0$ | absent |
 | non-pure family | $P_0\neq0$, complex multiples of idempotents | absent |
 | the set | a complex cone of dimension $3$, the origin removed | the whole punctured space, dimension $4$ |
 

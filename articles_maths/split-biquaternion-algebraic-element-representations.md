@@ -32,7 +32,7 @@ $$
 
 with $e_0 = 1$ and $e_1, e_2, e_3$ the quaternion units. The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. Each split complex coefficient is written $Q_\mu = q_\mu + j q'_\mu$ with $q_\mu, q'_\mu \in \mathbb{R}$.
 
-The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \mathbf{Q}$, where $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The split complex conjugate is $\bar{\tilde{Q}} = \bar{Q_0} e_0 + \mathbf{Q}^*$, where $Q_{\bar{\mu}} = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^{*}$.
+The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \vec Q$, where $\vec Q = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The split complex conjugate is $\bar{\tilde{Q}} = \bar{Q_0} e_0 + \vec Q^*$, where $Q_{\bar{\mu}} = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^{*}$.
 
 The idempotents of the split complex algebra are $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is
 
@@ -405,7 +405,7 @@ Different choices give representations that are related by conjugation or by a c
 
 | Representation | Split biquaternion as | Useful for |
 |---|---|---|
-| Split complex four-vector | $Q^\mu = (Q^0, \mathbf{Q})$ | Tensor formalism, indefinite quadratic forms |
+| Split complex four-vector | $Q^\mu = (Q^0, \vec Q)$ | Tensor formalism, indefinite quadratic forms |
 | Idempotent | $(\tilde{Q}_+, \tilde{Q}_-) \in \mathbb{H} \oplus \mathbb{H}$ | Structure, norm, invertibility, zero divisors |
 | Module | Operator on $\mathbb{H} \tilde\Pi_1 \oplus \mathbb{H} \tilde\Pi_2$ | Representation theory |
 | Clifford algebra | Element of $\mathrm{Cl}_{0,3} \cong \mathrm{Cl}_{1,2}$ | Clifford algebra classification, geometry |
@@ -426,8 +426,8 @@ Unlike the biquaternion algebra, the split biquaternion algebra does **not** hav
 | $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$, $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$ | Idempotents of $\mathbb{D}$ |
 | $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ | General split biquaternion |
 | $Q_\mu = q_\mu + j q'_\mu$ | Split complex coefficient, $q_\mu, q'_\mu \in \mathbb{R}$ |
-| $Q^\mu = (Q^0, \mathbf{Q})$ | Four-vector components; $Q^0$ the scalar component |
-| $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ | Split vector part |
+| $Q^\mu = (Q^0, \vec Q)$ | Four-vector components; $Q^0$ the scalar component |
+| $\vec Q = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ | Split vector part |
 | $\tilde{Q}^{\natural}$ | Quaternion conjugate |
 | $\bar{\tilde{Q}}$ | Split complex conjugate |
 | $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ | Hermitian conjugate |

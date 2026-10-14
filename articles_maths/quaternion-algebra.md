@@ -52,7 +52,7 @@ $$
 The real number $q_0$ is the **scalar part**, and the triple $(q_1, q_2, q_3)$ is the **vector part**. We also write
 
 $$
-\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad \mathbf{q} = \sum_{k=1}^{3} q_k e_k.
+\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad \vec q = \sum_{k=1}^{3} q_k e_k.
 $$
 
 ### A Note on the Notation
@@ -84,13 +84,13 @@ an involution of the algebra that reverses the order of a product, $(p\tilde q)^
 
 ### The Vector Part and $\mathbb{R}^3$
 
-The vector part $\mathbf{q}$ of a quaternion is identified with a vector in $\mathbb{R}^3$. Under this identification, the product of two quaternions is
+The vector part $\vec q$ of a quaternion is identified with a vector in $\mathbb{R}^3$. Under this identification, the product of two quaternions is
 
 $$
-p\tilde q = (p_0 q_0 - \mathbf{p} \cdot \mathbf{q}) + (p_0 \mathbf{q} + q_0 \mathbf{p} + \mathbf{p} \times \mathbf{q}),
+p\tilde q = (p_0 q_0 - \vec p \cdot \vec q) + (p_0 \vec q + q_0 \vec p + \vec p \times \vec q),
 $$
 
-where $\mathbf{p} \cdot \mathbf{q}$ is the ordinary dot product and $\mathbf{p} \times \mathbf{q}$ is the ordinary cross product in $\mathbb{R}^3$. The dot product and cross product are not separate operations; they are the scalar and vector parts of a single quaternion product.
+where $\vec p \cdot \vec q$ is the ordinary dot product and $\vec p \times \vec q$ is the ordinary cross product in $\mathbb{R}^3$. The dot product and cross product are not separate operations; they are the scalar and vector parts of a single quaternion product.
 
 ## The Algebra Structure
 
@@ -114,7 +114,7 @@ $$
 \tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3,
 $$
 
-where $q_0$ is the **scalar part** and $\mathbf{q}$ is the **vector part**.
+where $q_0$ is the **scalar part** and $\vec q$ is the **vector part**.
 
 ### Multiplication
 
@@ -127,7 +127,7 @@ $$
 where the products $e_\mu e_\nu$ are those of the quaternion algebra. In scalar-vector notation, this becomes
 
 $$
-p\tilde q = p_0 q_0 - \mathbf{p} \cdot \mathbf{q} + p_0 \mathbf{q} + q_0 \mathbf{p} + \mathbf{p} \times \mathbf{q}.
+p\tilde q = p_0 q_0 - \vec p \cdot \vec q + p_0 \vec q + q_0 \vec p + \vec p \times \vec q.
 $$
 
 ### Conjugations
@@ -169,7 +169,7 @@ $$
 Comparing the scalar and vector parts:
 
 - Scalar part: $q_0 = q_0$, always satisfied.
-- Vector part: $-\mathbf{q} = \mathbf{q}$, so $\mathbf{q} = 0$.
+- Vector part: $-\vec q = \vec q$, so $\vec q = 0$.
 
 The fixed points are quaternions with vanishing vector part:
 
@@ -190,15 +190,15 @@ $$
 Comparing the scalar and vector parts:
 
 - Scalar part: $-q_0 = q_0$, so $q_0 = 0$.
-- Vector part: $\mathbf{q} = \mathbf{q}$, always satisfied.
+- Vector part: $\vec q = \vec q$, always satisfied.
 
 The fixed points are quaternions with vanishing scalar part:
 
 $$
-\tilde q = \mathbf{q}, \qquad \mathbf{q} \in \mathbb{R}^3.
+\tilde q = \vec q, \qquad \vec q \in \mathbb{R}^3.
 $$
 
-This is the **vector subspace** $\operatorname{Im}\mathbb{H}$, a copy of three-dimensional space embedded in $\mathbb{H}$ as the pure imaginary quaternions. It is a real vector space of dimension $3$. It is not a subalgebra of $\mathbb{H}$: the product of two pure quaternions is not pure, because it has a scalar part $-\mathbf{p} \cdot \mathbf{q}$.
+This is the **vector subspace** $\operatorname{Im}\mathbb{H}$, a copy of three-dimensional space embedded in $\mathbb{H}$ as the pure imaginary quaternions. It is a real vector space of dimension $3$. It is not a subalgebra of $\mathbb{H}$: the product of two pure quaternions is not pure, because it has a scalar part $-\vec p \cdot \vec q$.
 
 ### The Total Subspace
 
@@ -211,7 +211,7 @@ $$
 Comparing the scalar and vector parts:
 
 - Scalar part: $-q_0 = q_0$, so $q_0 = 0$.
-- Vector part: $-\mathbf{q} = \mathbf{q}$, so $\mathbf{q} = 0$.
+- Vector part: $-\vec q = \vec q$, so $\vec q = 0$.
 
 The fixed points are
 
@@ -267,10 +267,10 @@ $$
 [p, \tilde q] = p\tilde q - \tilde q p.
 $$
 
-For pure quaternions $\mathbf{p}, \mathbf{q} \in \operatorname{Im}\mathbb{H}$, the commutator is
+For pure quaternions $\vec p, \vec q \in \operatorname{Im}\mathbb{H}$, the commutator is
 
 $$
-[\mathbf{p}, \mathbf{q}] = 2 \mathbf{p} \times \mathbf{q}.
+[\vec p, \vec q] = 2 \vec p \times \vec q.
 $$
 
 So the vector subspace $\operatorname{Im}\mathbb{H}$, equipped with the commutator bracket, is a Lie subalgebra of $\mathbb{H}$ isomorphic to the Lie algebra $\mathrm{SO}(3)$ of skew-symmetric $3\times 3$ real matrices:
@@ -310,7 +310,7 @@ The commutator $[p,\tilde q] = p\tilde q - \tilde q p$ gives $\mathbb{H}$ a Lie 
 | $e_1, e_2, e_3$ | Quaternion units, $e_k^2 = -e_0$ |
 | $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | General quaternion |
 | $q_0$ | Scalar part |
-| $\mathbf{q}$ | Vector part |
+| $\vec q$ | Vector part |
 | $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | Quaternion conjugate |
 | $-\tilde{q}^{\natural} = -q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | Vector conjugate |
 | $-\tilde q = -q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | Total conjugate |

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The antisymmetric plain algebra, $\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf{P}\times\mathbf{Q}$, is read here in the $4\times4$ regular model of the chapter of the general plain algebra: the four-dimensional regular model, in which the bracket is the halved commutator of the left multiplication operators and, through the adjoint representation, a six-dimensional real matrix model. This article is the second of the two representation articles of the block, and its companion *The Antisymmetric Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* reads the same bracket in the two-dimensional model.
+The antisymmetric plain algebra, $\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\vec P\times\vec Q$, is read here in the $4\times4$ regular model of the chapter of the general plain algebra: the four-dimensional regular model, in which the bracket is the halved commutator of the left multiplication operators and, through the adjoint representation, a six-dimensional real matrix model. This article is the second of the two representation articles of the block, and its companion *The Antisymmetric Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* reads the same bracket in the two-dimensional model.
 
 The model gives the operator identity $\mathsf{M}_4(\tilde P\wedge\tilde Q)=\tfrac12[\mathsf{M}_4(\tilde P),\mathsf{M}_4(\tilde Q)]$ and, for the adjoint representation, the six-dimensional real matrices of the adjoints, with their invariants: vanishing trace, vanishing determinant, rank four and the characteristic polynomial $\lambda^2(\lambda^2+4)^2$ at the real units. The model is identified with the Lie algebra of the derived algebra.
 
@@ -28,7 +28,7 @@ and the image of $\mathsf{M}_4$ is a commutative algebra of operators isomorphic
 
 $$
 \operatorname{ad}:\mathrm{Vect}(\mathbb{B})\to M_6(\mathbb{R}),\qquad
-\operatorname{ad}_{\tilde P}\longmapsto \bigl(\text{the matrix of }\tilde X\mapsto[\tilde P,\tilde X]=2\,(\mathbf{P}\times\mathbf{X})\bigr)
+\operatorname{ad}_{\tilde P}\longmapsto \bigl(\text{the matrix of }\tilde X\mapsto[\tilde P,\tilde X]=2\,(\vec P\times\vec X)\bigr)
 $$
 
 in the real basis $(e_1,e_2,e_3,ie_1,ie_2,ie_3)$, with kernel zero, so that the image is $\mathfrak{sl}(2,\mathbb{C})$ read as a six-dimensional real Lie algebra. The matrix of $\operatorname{ad}_{e_1}$ is
@@ -52,20 +52,20 @@ and the matrix of $\operatorname{ad}_{ie_1}$ is the realification of the complex
 **Theorem (the invariants).** Every nonzero matrix of the six-dimensional real model has vanishing trace, rank $4$ and vanishing determinant, and its characteristic polynomial is
 
 $$
-\lambda^2\bigl(\lambda^2+4\,\mathbf{P}\cdot\mathbf{P}\bigr)\bigl(\lambda^2+4\,\overline{\mathbf{P}\cdot\mathbf{P}}\bigr).
+\lambda^2\bigl(\lambda^2+4\,\vec P\cdot\vec P\bigr)\bigl(\lambda^2+4\,\overline{\vec P\cdot\vec P}\bigr).
 $$
 
-On the real vector directions, where $\mathbf{P}\cdot\mathbf{P}$ is real, this is $\lambda^2(\lambda^2+4\,\mathbf{P}\cdot\mathbf{P})^2$; at the real units, and in particular for the displayed matrix of $\operatorname{ad}_{e_1}$, it is $\lambda^2(\lambda^2+4)^2$, with the eigenvalues $0$, of multiplicity two, and $\pm2i$, of multiplicity two each, and the minimal polynomial $\lambda(\lambda^2+4)$; at $\operatorname{ad}_{ie_1}$, where $\mathbf{P}\cdot\mathbf{P}=-1$, it is $\lambda^2(\lambda^2-4)^2$.
+On the real vector directions, where $\vec P\cdot\vec P$ is real, this is $\lambda^2(\lambda^2+4\,\vec P\cdot\vec P)^2$; at the real units, and in particular for the displayed matrix of $\operatorname{ad}_{e_1}$, it is $\lambda^2(\lambda^2+4)^2$, with the eigenvalues $0$, of multiplicity two, and $\pm2i$, of multiplicity two each, and the minimal polynomial $\lambda(\lambda^2+4)$; at $\operatorname{ad}_{ie_1}$, where $\vec P\cdot\vec P=-1$, it is $\lambda^2(\lambda^2-4)^2$.
 
 The trace form of the model is read on the real six-dimensional space, where the trace is real, so that it is eight times the realification of the form of the block,
 
 $$
-\operatorname{Tr}\bigl(\operatorname{ad}_{\tilde P}\operatorname{ad}_{\tilde Q}\bigr)=8\,\operatorname{Re}\kappa(\tilde P,\tilde Q)=-16\,\operatorname{Re}(\mathbf{P}\cdot\mathbf{Q}),
+\operatorname{Tr}\bigl(\operatorname{ad}_{\tilde P}\operatorname{ad}_{\tilde Q}\bigr)=8\,\operatorname{Re}\kappa(\tilde P,\tilde Q)=-16\,\operatorname{Re}(\vec P\cdot\vec Q),
 $$
 
 with Gram matrix $\operatorname{diag}(-16,-16,-16,16,16,16)$ in the real basis $(e_1,e_2,e_3,ie_1,ie_2,ie_3)$, negative on the real vector directions and positive on the imaginary ones. The factor eight is the square of the factor two that relates the adjoint $[\tilde P,\cdot]$ of the block to its halved adjoint $\tilde P\wedge\cdot$, times the factor two by which the real trace doubles the real part of the complex trace; the complex trace of the same adjoints, read before realification, is the $4\kappa$ of *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*.
 
-*Proof.* The complex three-dimensional operator of the adjoint is $2C_{\mathbf{P}}$; the cross-product matrix satisfies $C_{\mathbf{P}}^2=\mathbf{P}\mathbf{P}^{\mathsf T}-(\mathbf{P}\cdot\mathbf{P})\mathrm{I}_3$, so its characteristic polynomial is $\lambda(\lambda^2+\mathbf{P}\cdot\mathbf{P})$ and that of $2C_{\mathbf{P}}$ is $\lambda(\lambda^2+4\,\mathbf{P}\cdot\mathbf{P})$; the realification replaces each complex eigenvalue by the pair formed with its conjugate, so the characteristic polynomial of the real $6\times6$ matrix is $\lambda^2(\lambda^2+4\,\mathbf{P}\cdot\mathbf{P})(\lambda^2+4\,\overline{\mathbf{P}\cdot\mathbf{P}})$, which at the real units is $\lambda^2(\lambda^2+4)^2$. The trace is the sum of the eigenvalues, which is zero, and the determinant the product, which is zero because of the eigenvalue $0$; the rank is four because the kernel of the adjoint on the derived algebra is the complex line $\mathbb{C}\mathbf{P}$, of real dimension two. For the trace form, the complex trace of the square of the adjoint is four times the complex trace of the square of the halved adjoint, that is $4\kappa=-8\,\mathbf{P}\cdot\mathbf{Q}$, and the realification of a complex-linear endomorphism doubles the real part of its trace, so the real trace of the square is $2\operatorname{Re}(-8\,\mathbf{P}\cdot\mathbf{Q})=-16\operatorname{Re}(\mathbf{P}\cdot\mathbf{Q})=8\operatorname{Re}\kappa(\tilde P,\tilde Q)$.
+*Proof.* The complex three-dimensional operator of the adjoint is $2C_{\vec P}$; the cross-product matrix satisfies $C_{\vec P}^2=\vec P\vec P^{\mathsf T}-(\vec P\cdot\vec P)\mathrm{I}_3$, so its characteristic polynomial is $\lambda(\lambda^2+\vec P\cdot\vec P)$ and that of $2C_{\vec P}$ is $\lambda(\lambda^2+4\,\vec P\cdot\vec P)$; the realification replaces each complex eigenvalue by the pair formed with its conjugate, so the characteristic polynomial of the real $6\times6$ matrix is $\lambda^2(\lambda^2+4\,\vec P\cdot\vec P)(\lambda^2+4\,\overline{\vec P\cdot\vec P})$, which at the real units is $\lambda^2(\lambda^2+4)^2$. The trace is the sum of the eigenvalues, which is zero, and the determinant the product, which is zero because of the eigenvalue $0$; the rank is four because the kernel of the adjoint on the derived algebra is the complex line $\mathbb{C}\vec P$, of real dimension two. For the trace form, the complex trace of the square of the adjoint is four times the complex trace of the square of the halved adjoint, that is $4\kappa=-8\,\vec P\cdot\vec Q$, and the realification of a complex-linear endomorphism doubles the real part of its trace, so the real trace of the square is $2\operatorname{Re}(-8\,\vec P\cdot\vec Q)=-16\operatorname{Re}(\vec P\cdot\vec Q)=8\operatorname{Re}\kappa(\tilde P,\tilde Q)$.
 
 **Remark (the realification of the complex adjoint).** **The six-dimensional real model is the realification of the three-dimensional complex adjoint, and its three invariants — trace, determinant and rank — are the three invariants of a model of $\mathfrak{sl}(2,\mathbb{C})$ in real form.** The vanishing trace is the vanishing of the trace of every adjoint; the vanishing determinant and the rank four are the statement that the kernel is a complex line; and the eigenvalues are those of the complex cross-product operator, doubled by the realification. The same matrices with the centre restored are the matrices of the adjoints of the whole block, read in *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*.
 
@@ -75,7 +75,7 @@ with Gram matrix $\operatorname{diag}(-16,-16,-16,16,16,16)$ in the real basis $
 
 **The six-dimensional matrix.** The matrix of $\operatorname{ad}_{e_1}$ displayed above has $\operatorname{Tr}=0$, $\det=0$ and rank $4$; the matrix of $\operatorname{ad}_{ie_1}$ is the realification of $2iC_{e_1}$, with zero diagonal $3\times3$ blocks and the block of $\operatorname{ad}_{e_1}$ in the two off-diagonal positions with opposite signs, and it has the same vanishing trace, vanishing determinant and rank.
 
-**The characteristic polynomial.** $\lambda^2(\lambda^2+4)^2$ for the matrix of $\operatorname{ad}_{e_1}$: the eigenvalues $0$ twice and $\pm2i$ twice each, the imaginary eigenvalues of the cross product doubled by the realification. For $\operatorname{ad}_{ie_1}$, where $\mathbf{P}\cdot\mathbf{P}=-1$, the same count gives $\lambda^2(\lambda^2-4)^2$: the characteristic polynomial depends on $\mathbf{P}\cdot\mathbf{P}$.
+**The characteristic polynomial.** $\lambda^2(\lambda^2+4)^2$ for the matrix of $\operatorname{ad}_{e_1}$: the eigenvalues $0$ twice and $\pm2i$ twice each, the imaginary eigenvalues of the cross product doubled by the realification. For $\operatorname{ad}_{ie_1}$, where $\vec P\cdot\vec P=-1$, the same count gives $\lambda^2(\lambda^2-4)^2$: the characteristic polynomial depends on $\vec P\cdot\vec P$.
 
 **The trace form in the model.** $\operatorname{Tr}(\operatorname{ad}_{e_1}\operatorname{ad}_{e_1})=-16$ and $\operatorname{Tr}(\operatorname{ad}_{ie_1}\operatorname{ad}_{ie_1})=16$, while $\operatorname{Tr}(\operatorname{ad}_{e_1}\operatorname{ad}_{ie_1})=0$: the model's trace form is eight times the realification of the form of the block, of Gram matrix $\operatorname{diag}(-16,-16,-16,16,16,16)$, as the theorem states.
 
@@ -115,7 +115,7 @@ since $\mathsf{M}_4(e_1)\mathsf{M}_4(e_2)=\mathsf{M}_4(e_3)$ and $\mathsf{M}_4(e
 
 ## Summary
 
-In the four-dimensional regular model the bracket is the halved commutator of the left multiplication operators, $\mathsf{M}_4(\tilde P\wedge\tilde Q)=\tfrac12[\mathsf{M}_4(\tilde P),\mathsf{M}_4(\tilde Q)]$, and the adjoint representation is a six-dimensional real matrix model with kernel zero on the derived algebra and image $\mathfrak{sl}(2,\mathbb{C})$, every nonzero matrix of which has vanishing trace, vanishing determinant and rank $4$, with characteristic polynomial $\lambda^2(\lambda^2+4\,\mathbf{P}\cdot\mathbf{P})(\lambda^2+4\,\overline{\mathbf{P}\cdot\mathbf{P}})$ — equal to $\lambda^2(\lambda^2+4)^2$, with minimal polynomial $\lambda(\lambda^2+4)$, at the real units; the trace form of the model is eight times the realification of the form of the block, of Gram matrix $\operatorname{diag}(-16,-16,-16,16,16,16)$. The model identifies the derived algebra with $\mathfrak{sl}(2,\mathbb{C})$ as its adjoint representation, and it exhibits the decomposition $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus\mathrm{Vect}(\mathbb{B})$ as a kernel and an image.
+In the four-dimensional regular model the bracket is the halved commutator of the left multiplication operators, $\mathsf{M}_4(\tilde P\wedge\tilde Q)=\tfrac12[\mathsf{M}_4(\tilde P),\mathsf{M}_4(\tilde Q)]$, and the adjoint representation is a six-dimensional real matrix model with kernel zero on the derived algebra and image $\mathfrak{sl}(2,\mathbb{C})$, every nonzero matrix of which has vanishing trace, vanishing determinant and rank $4$, with characteristic polynomial $\lambda^2(\lambda^2+4\,\vec P\cdot\vec P)(\lambda^2+4\,\overline{\vec P\cdot\vec P})$ — equal to $\lambda^2(\lambda^2+4)^2$, with minimal polynomial $\lambda(\lambda^2+4)$, at the real units; the trace form of the model is eight times the realification of the form of the block, of Gram matrix $\operatorname{diag}(-16,-16,-16,16,16,16)$. The model identifies the derived algebra with $\mathfrak{sl}(2,\mathbb{C})$ as its adjoint representation, and it exhibits the decomposition $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus\mathrm{Vect}(\mathbb{B})$ as a kernel and an image.
 
 ## Summary of Notation
 
@@ -124,7 +124,7 @@ In the four-dimensional regular model the bracket is the halved commutator of th
 | $\mathsf{M}_4(\tilde P\wedge\tilde Q)=\tfrac12[\mathsf{M}_4(\tilde P),\mathsf{M}_4(\tilde Q)]$ | the bracket in the four-dimensional regular model |
 | $\operatorname{ad}:\mathrm{Vect}(\mathbb{B})\to M_6(\mathbb{R})$ | the six-dimensional real model of the adjoint |
 | $\operatorname{Tr}=0$, $\det=0$, rank $4$ | the invariants of every nonzero matrix of the model |
-| $\lambda^2(\lambda^2+4\,\mathbf{P}\cdot\mathbf{P})(\lambda^2+4\,\overline{\mathbf{P}\cdot\mathbf{P}})$ | the characteristic polynomial of the matrix of $\operatorname{ad}_{\tilde P}$, equal to $\lambda^2(\lambda^2+4)^2$ at the real units |
+| $\lambda^2(\lambda^2+4\,\vec P\cdot\vec P)(\lambda^2+4\,\overline{\vec P\cdot\vec P})$ | the characteristic polynomial of the matrix of $\operatorname{ad}_{\tilde P}$, equal to $\lambda^2(\lambda^2+4)^2$ at the real units |
 | $\operatorname{Tr}(\operatorname{ad}_{\tilde P}\operatorname{ad}_{\tilde Q})=8\operatorname{Re}\kappa(\tilde P,\tilde Q)$ | the trace form of the model, eight times the realification of the form of the block |
 
 ## Further Reading

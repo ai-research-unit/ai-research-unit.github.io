@@ -7,7 +7,7 @@ The Hopf fibration of the companion article *The Hopf Fibration and the Biquater
 The framework enters through two facts that are genuinely its own and one that is not.
 
 - **The operator is the framework's.** The Dirac operator in biquaternionic form is built from the biquaternionic gradient $\tilde\nabla=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$ and its coupling to the connection, and its square returns the d'Alembertian: the framework's spinor module carries it, and *The Dirac Equation in Biquaternionic Form* and *The Spinor Module in Biquaternionic Form and Its Lorentz Action* fix it. The index is a property of that operator.
-- **The counting is by the topological density, which the framework already has.** The index density is a total derivative whose integral is the instanton number, and the abelian form of the density is the framework's invariant $I_2=\mathbf E\cdot\mathbf B$. This was established in *Instantons and Solitons in Biquaternionic Form* and is not repeated here.
+- **The counting is by the topological density, which the framework already has.** The index density is a total derivative whose integral is the instanton number, and the abelian form of the density is the framework's invariant $I_2=\vec E\cdot\vec B$. This was established in *Instantons and Solitons in Biquaternionic Form* and is not repeated here.
 - **The trace is the matrix trace, and the framework's biquaternion norm does not supply it.** The non-abelian index density is $\mathrm{Tr}(F\wedge F)$ with the matrix trace on the gauge factor. The framework's quadratic invariant, the biquaternion norm $N(\tilde F)=\tilde F\tilde F^{\natural}$, is a rank-two bilinear of a *single* algebra element and has no second slot in which to trace two gauge-algebra-valued objects. This is the same rank-two limitation recorded for the topological density, and it controls what the framework can and cannot express about the index.
 
 The article states the index theorem as the standard result it is, derives the specialisations that the framework uses, and separates the two.
@@ -124,7 +124,7 @@ $$
 \qquad
 \tfrac14\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}=2\,I_2 \quad(\text{Euclidean}),
 \qquad
-I_2=\mathbf E\cdot\mathbf B ,
+I_2=\vec E\cdot\vec B ,
 $$
 
 
@@ -182,7 +182,7 @@ A second place where the count is imported is the fermion itself. The index theo
 
 The index of the biquaternionic Dirac operator is the difference $n_+-n_-$ of the numbers of positive- and negative-chirality zero modes, and the Atiyah–Singer theorem computes it as the integral of the index density $\mathrm{ch}(E)\wedge\hat A(TM)$. On the flat four-dimensional slice the $\hat A$-genus is trivial and the index is $2T(R)Q$, where $Q$ is the instanton charge of *Instantons and Solitons in Biquaternionic Form* and $T(R)$ is the Dynkin index. For the framework's two representations the indices are $T(\text{defining})=\tfrac12$ and $T(\text{adjoint})=2$, giving a single zero mode in the defining module and four in the adjoint for a unit self-dual instanton, $n_+=k$ and $n_+=4k$ respectively. The abelian specialisation on the two-sphere gives index equal to the monopole charge, which is the Chern number one of the Hopf bundle.
 
-The index density is a total derivative whose integral equals the instanton charge, and in the abelian case it is the framework's invariant $I_2=\mathbf E\cdot\mathbf B$. The operator, its defining module, the adjoint representation and the group theory of the indices are all the algebra's; the theorem itself, the $\hat A$-genus, the boundary eta invariant and the identification of the counted modes with physical fermions are standard results transcribed. The one place where the framework is silent is the invariant form of the non-abelian density: it is computable in components with the matrix trace, but it is not an object of the biquaternion-norm invariant calculus, because that calculus is rank-two and single-slot while the density is traced over a second algebra factor.
+The index density is a total derivative whose integral equals the instanton charge, and in the abelian case it is the framework's invariant $I_2=\vec E\cdot\vec B$. The operator, its defining module, the adjoint representation and the group theory of the indices are all the algebra's; the theorem itself, the $\hat A$-genus, the boundary eta invariant and the identification of the counted modes with physical fermions are standard results transcribed. The one place where the framework is silent is the invariant form of the non-abelian density: it is computable in components with the matrix trace, but it is not an object of the biquaternion-norm invariant calculus, because that calculus is rank-two and single-slot while the density is traced over a second algebra factor.
 
 ## Summary of Notation
 
@@ -209,7 +209,7 @@ The index density is a total derivative whose integral equals the instanton char
 | $Q=\frac{1}{8\pi^2}\int\mathrm{Tr}(F\wedge F)$ | Topological (instanton) charge, $Q\in\mathbb Z$ |
 | $\Omega_{\mathrm{CS}}$ | Chern–Simons three-form; $d\Omega_{\mathrm{CS}}=\mathrm{Tr}(F\wedge F)$ |
 | $\eta(0)$, $h$ | Eta invariant and boundary zero-mode count (APS) |
-| $I_2=\mathbf E\cdot\mathbf B$ | Framework's second invariant; index density in the abelian case |
+| $I_2=\vec E\cdot\vec B$ | Framework's second invariant; index density in the abelian case |
 | $N(\tilde F)=\tilde F\tilde F^{\natural}$ | Biquaternion norm; rank-two, single-slot, does not supply $\mathrm{Tr}(F\wedge F)$ |
 
 ## Further Reading

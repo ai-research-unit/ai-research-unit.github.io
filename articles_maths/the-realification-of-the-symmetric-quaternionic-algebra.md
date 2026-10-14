@@ -4,7 +4,7 @@
 
 The Symmetric Quaternionic Algebra is the structure that the biquaternion ring $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries when the multiplication is the quaternion form $N$ of the quaternionic family read as a product,
 $$
-\tilde P\star\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P\bigr)=N(\tilde P,\tilde Q)\,e_0,\qquad N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q),
+\tilde P\star\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P\bigr)=N(\tilde P,\tilde Q)\,e_0,\qquad N(\tilde P,\tilde Q)=P_0Q_0+(\vec P,\vec Q),
 $$
 the operation that is commutative, central-valued and devoid of a unit (*Introduction to the Symmetric Quaternionic Algebra of Biquaternions*). Over $\mathbb{C}$ it is the row $\mathrm{SQA}$ of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; read over $\mathbb{R}$ the same operation on the same elements is an $\mathbb{R}$-bilinear product on the eight-dimensional real space, and this article owns that real reading. The operation is written $\star$ in this entry, the mark of the block; *The Specificities of the Symmetric Quaternionic Algebra* writes it $\bullet$, and the two marks denote one multiplication.
 

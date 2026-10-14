@@ -21,6 +21,8 @@ $$
 
 in which $r$ is the **modulus** of $a$ and $\sigma$ is its **sign factor**.
 
+The second factor is a **unit element**, an element of norm one for the norm in view (*Conventions in Mathematics*, §*The Unitary Convention*); the norm in view is $N(a)=a^2$, so the unit elements are the two roots of $+1$, the group $\{\pm1\} = O(1)$, and the sign factor is the unit factor of the real column. The phrase names the norm-one elements and not every invertible element: the **group of units** $\mathbb{R}^\times$ of the algebra is the wider set of nonzero reals, treated in its own section, and the two senses of the word are kept apart throughout.
+
 The definition names the two factors before anything is proved about them, so that the propositions below have definite objects to be about. The modulus carries one real parameter. The sign factor is constrained by the equation $\sigma^2 = 1$, which is the two-point set $\{\pm1\}$, so it carries no continuous parameter. The counts add to the real dimension of the algebra, $1 + 0 = 1$, and this additivity is the pattern the whole family follows.
 
 ### The Modulus from the Norm
@@ -70,6 +72,16 @@ The sign factor is the element that acts: multiplication by $-1$ is the reflecti
 The pair of factors is therefore unique, with no sign ambiguity and no branch ambiguity. What is *not* unique is a coordinate for the sign factor: the sign has no continuous coordinate at all, because the group is finite, and the discrete alternative is the whole of what the exponential can offer. This is the base case of the non-uniqueness of the exponential coordinate that appears from $\mathbb{C}$ onward, where the coordinate of the unit factor is a class modulo $2\pi$.
 
 ## The Exponential Form
+
+### The Word as Exponentials
+
+The word $a = r\,s$ is the product of a scale and a sign, and the scale alone is an exponential: with $r = \lvert a\rvert$ and $s = \operatorname{sgn} a$,
+
+$$
+a = \exp(\ln\lvert a\rvert)\cdot s , \qquad s \in \{\pm e_0\} .
+$$
+
+The exponent of the scale is the real number $\ln\lvert a\rvert$, whose root is $e_0$ of square $+e_0$, the hyperbolic row of the trichotomy below. The sign is the one factor of the whole series that no exponential produces, since the exponential of $\mathbb{R}$ is the positive half-line $\mathbb{R}_{>0}$ and $-1$ lies outside it; the sign group $\{\pm e_0\}$ is the discrete boundary of the exponential reading, and it is the whole of the compact slot in $\mathbb{R}$. The two factors commute, so the order is free. The word is nevertheless **not** a single exponential, because the sign is not an exponential at all: no element of $\mathbb{R}$ has an exponential equal to a negative number, and the two signs are exactly the two components lost by the exponential.
 
 ### The Trichotomy of the Exponential
 

@@ -14,7 +14,7 @@ The division between what is established and what is interpretation is stated at
 
 The article is organized as follows. The next section identifies the global symmetry. The section after that localizes it and derives the connection. The following section names the connection and the covariant derivative and records their properties. The next section proves that the field strength is the curvature. A section connects the result to the Maxwell and quantization articles. A section separates what the algebra supplies from what it only transcribes. Two short sections treat the non-abelian extension and the obstruction posed by the mass term. The article closes with open questions.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the complex scalar subspace, which is the centre of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The potential and field strength are $\tilde{A} = i\phi/c\,e_0 + \mathbf{A}$ and $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$, the source is $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_0 + \sqrt{\mu}\,\mathbf{J}$, and the Maxwell equation is $\tilde{\nabla}\tilde{F} = -\tilde{R}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the complex scalar subspace, which is the centre of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The potential and field strength are $\tilde{A} = i\phi/c\,e_0 + \vec A$ and $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$, the source is $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_0 + \sqrt{\mu}\,\vec J$, and the Maxwell equation is $\tilde{\nabla}\tilde{F} = -\tilde{R}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged.
 
 ## The Global Phase Symmetry
 
@@ -114,7 +114,7 @@ The two $\tilde{\nabla}\Gamma$ terms cancel, and the centrality of $\lambda$ mov
 
 **The transformation law is the one already in the corpus.** The law $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$ is exactly the gauge transformation of *Maxwell's Equations in the Biquaternionic Formulation*. The Maxwell gauge freedom is thus not an extra assumption laid on the theory: it is the local form of the global central phase symmetry, and the potential biquaternion is the connection that the localization forces.
 
-**The gauge function must have constant imaginary part to preserve $\mathbb{M}_-$.** If $\tilde{A} \in \mathbb{M}_-$ — the parent's assignment, with $A_0 = i\phi/c$ purely imaginary and $\mathbf{A}$ real — then $\tilde{A}'$ is again in $\mathbb{M}_-$ precisely when $\mathrm{Im}\,\Gamma$ is constant. Indeed
+**The gauge function must have constant imaginary part to preserve $\mathbb{M}_-$.** If $\tilde{A} \in \mathbb{M}_-$ — the parent's assignment, with $A_0 = i\phi/c$ purely imaginary and $\vec A$ real — then $\tilde{A}'$ is again in $\mathbb{M}_-$ precisely when $\mathrm{Im}\,\Gamma$ is constant. Indeed
 
 $$
 \tilde{\nabla}\Gamma = e_0\,\partial_{ict}\Gamma + e_k\,\partial_k\Gamma,
@@ -157,7 +157,7 @@ which is the Leibniz rule of the gradient corrected by the connection. This is t
 The covariant derivative packages the connection. The curvature is built from the connection by differentiation. In the biquaternion algebra the natural first derivative of the connection is $\tilde{\nabla}^{\natural}\tilde{A}$, and its scalar and vector parts separate cleanly. A direct computation gives
 
 $$
-\tilde{\nabla}^{\natural}\tilde{A} = \underbrace{\left(\partial_{ict}A_0 + \mathrm{div}\,\mathbf{A}\right)}_{=\,S}e_0 + \sum_{k=1}^{3}\left(\partial_{ict}A_k - \partial_k A_0\right)e_k - \mathrm{rot}\,\mathbf{A}.
+\tilde{\nabla}^{\natural}\tilde{A} = \underbrace{\left(\partial_{ict}A_0 + \mathrm{div}\,\vec A\right)}_{=\,S}e_0 + \sum_{k=1}^{3}\left(\partial_{ict}A_k - \partial_k A_0\right)e_k - \mathrm{rot}\,\vec A.
 $$
 
 The scalar part is the **gauge scalar** $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ of the Maxwell article, which transforms as $S' = S - \Box\Gamma$ and is therefore pure gauge. The vector part is gauge invariant. Define the **field-strength biquaternion** as the vector part,
@@ -166,7 +166,7 @@ $$
 \tilde{F} = \mathrm{Vect}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) = \tilde{\nabla}^{\natural}\tilde{A} - S .
 $$
 
-With the parent's conventions this is the field strength $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$ up to the overall normalization that the parent's construction also carries; the parent flags exactly this normalization freedom, and it does not affect anything below.
+With the parent's conventions this is the field strength $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ up to the overall normalization that the parent's construction also carries; the parent flags exactly this normalization freedom, and it does not affect anything below.
 
 ### The curvature identity
 
@@ -204,7 +204,7 @@ The field strength is the **commutator of two covariant derivatives**, contracte
 
 ### The homogeneous equations are an identity, not an equation of motion
 
-Because $\tilde{F}$ is *constructed* from $\tilde{A}$ — its electric components are $F_{0k} = \partial_{ict}A_k - \partial_k A_0$ and its magnetic components are $-(\mathrm{rot}\,\mathbf{A})_k$ — the two homogeneous Maxwell equations hold identically. The magnetic field is $\mathbf{B} = \mathrm{rot}\,\mathbf{A}$, so $\mathrm{div}\,\mathbf{B} = 0$; and $\mathbf{E} = -\partial_t\mathbf{A} - \nabla\phi$, so Faraday's law holds. In the language of forms this is $dF = d^2A = 0$: the homogeneous pair is the **Bianchi identity** of the connection, and it is automatic. The detailed biquaternionic form of the Bianchi identity, and the sense in which a single biquaternion equation carries it, are the subject of the planned companion *Gauge Curvature and the Bianchi Identity*; this article does not claim a one-line form for it. What is established here is the weaker and safer statement: given the potential representation $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$, the homogeneous equations are not independent.
+Because $\tilde{F}$ is *constructed* from $\tilde{A}$ — its electric components are $F_{0k} = \partial_{ict}A_k - \partial_k A_0$ and its magnetic components are $-(\mathrm{rot}\,\vec A)_k$ — the two homogeneous Maxwell equations hold identically. The magnetic field is $\vec B = \mathrm{rot}\,\vec A$, so $\mathrm{div}\,\vec B = 0$; and $\vec E = -\partial_t\vec A - \nabla\phi$, so Faraday's law holds. In the language of forms this is $dF = d^2A = 0$: the homogeneous pair is the **Bianchi identity** of the connection, and it is automatic. The detailed biquaternionic form of the Bianchi identity, and the sense in which a single biquaternion equation carries it, are the subject of the planned companion *Gauge Curvature and the Bianchi Identity*; this article does not claim a one-line form for it. What is established here is the weaker and safer statement: given the potential representation $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$, the homogeneous equations are not independent.
 
 ## The Gauge Principle and the Maxwell Field
 
@@ -359,7 +359,7 @@ Two gaps are left visible. The non-abelian extension needs the algebra's non-com
 | $\tilde{\Psi}^\flat = -\tilde{\Psi}^{*}$ | Anti-Hermitian conjugate, ${}^{*} = ({}^{\natural})^{\,*}$ |
 | $\lambda = e^{iq\Gamma/\hbar}$ | Local central phase; $\Gamma$ real scalar |
 | $q$ | Coupling constant (charge), not fixed by the algebra |
-| $\tilde{A} = i\phi/c\,e_0 + \mathbf{A}$ | Connection = potential biquaternion (in $\mathbb{M}_-$) |
+| $\tilde{A} = i\phi/c\,e_0 + \vec A$ | Connection = potential biquaternion (in $\mathbb{M}_-$) |
 | $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$ | Gauge transformation of the connection |
 | $D = \tilde{\nabla} + \frac{iq}{\hbar}\tilde{A}$ | Covariant derivative |
 | $D_\mu = \partial_\mu + \frac{iq}{\hbar}A_\mu$ | Components of the covariant derivative |
@@ -367,7 +367,7 @@ Two gaps are left visible. The non-abelian extension needs the algebra's non-com
 | $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ | Field strength = curvature |
 | $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$ | Abelian curvature components |
 | $\bar{e}_0 = e_0, \bar{e}_k = -e_k$ | Conjugate basis used in the curvature identity |
-| $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_0 + \sqrt{\mu}\,\mathbf{J}$ | Source biquaternion |
+| $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_0 + \sqrt{\mu}\,\vec J$ | Source biquaternion |
 | $\tilde{\nabla}\tilde{F} = -\tilde{R}$ | Biquaternionic Maxwell equation |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace pairing of the informational sector |

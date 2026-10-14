@@ -7,7 +7,7 @@ The square root of an element is defined by an equation in which the product occ
 $$
 \tilde p\diamond\tilde q
 =\tfrac12\bigl(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p\bigr)
-=p_0\mathbf q-q_0\mathbf p-\mathbf p\times\mathbf q ,
+=p_0\vec q-q_0\vec p-\vec p\times\vec q ,
 $$
 
 which is alternating and without a unit (*Introduction to the Antisymmetric Quaternionic Algebra of Quaternions*). The article solves, for a general element $a\in\mathbb{H}$, the equation
@@ -20,7 +20,7 @@ in the element $\tilde\xi$.
 
 The reduction is the same as the reduction of the three central values, and it is the whole of the problem: the block is alternating, so its square is zero at every element, and the equation is the equation $0=a$. **The origin alone has square roots, and every element of the space is a square root of it; no nonzero element has a square root.** The classification is therefore the two-line classification of the equation $0=a$, and it is the extreme case of the general reduction of *Square Roots of a General Element in the General Plain Algebra*, where the quadratic in the scalar part supplies the finite families of the plain theory. The central values are read off as a special case, and their article is cited.
 
-**Conventions.** Throughout, $\tilde p=p_0e_0+\mathbf p$, $\tilde q=q_0e_0+\mathbf q$ and $\tilde\xi=\xi_0e_0+\boldsymbol\xi$ name elements of $\mathbb{H}$ with real coefficients, $(\mathbf p,\mathbf q)$ is the dot product and $\mathbf p\times\mathbf q$ the cross product of the vector parts, and $\tilde q^{\natural}=q_0e_0-\mathbf q$ is the quaternion conjugation; the bar is the identity and the star coincides with the natural conjugation, so no bare bar is written on an element of this block. The operation is written $\diamond$ and never $\wedge^{\natural}$ outside a citation. The equation $\tilde\xi\diamond\tilde\xi=a$ is read in the product $\diamond$; the element $a$ is general, with no central or pure restriction, and the value $a=0$ is the origin of the space. The quaternion form of the space is $N(\tilde p)=p_0^2+\lvert\mathbf p\rvert^2$.
+**Conventions.** Throughout, $\tilde p=p_0e_0+\vec p$, $\tilde q=q_0e_0+\vec q$ and $\tilde\xi=\xi_0e_0+\vec\xi$ name elements of $\mathbb{H}$ with real coefficients, $(\vec p,\vec q)$ is the dot product and $\vec p\times\vec q$ the cross product of the vector parts, and $\tilde q^{\natural}=q_0e_0-\vec q$ is the quaternion conjugation; the bar is the identity and the star coincides with the natural conjugation, so no bare bar is written on an element of this block. The operation is written $\diamond$ and never $\wedge^{\natural}$ outside a citation. The equation $\tilde\xi\diamond\tilde\xi=a$ is read in the product $\diamond$; the element $a$ is general, with no central or pure restriction, and the value $a=0$ is the origin of the space. The quaternion form of the space is $N(\tilde p)=p_0^2+\lvert\vec p\rvert^2$.
 
 **Boundaries.** The operation and its alternation are *Introduction to the Antisymmetric Quaternionic Algebra of Quaternions*; the definitions of the square and of the square root of an element are *Definitions for the Study of the 6 Algebraic Structures*. The general reduction of the equation in the plain product is *Square Roots of a General Element in the General Plain Algebra*; the special case of the three central values is *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Quaternionic Algebra*; the square-zero elements and the zero divisors are *Nilpotents of the Antisymmetric Quaternionic Algebra* and *Zero Divisors of the Antisymmetric Quaternionic Algebra*.
 
@@ -87,7 +87,7 @@ The table is the reduction read value by value. The case-by-case classification 
 
 ## Worked Examples
 
-The examples are read from the explicit form $\tilde p\diamond\tilde q=p_0\mathbf q-q_0\mathbf p-\mathbf p\times\mathbf q$, and each is the reduction at a displayed value.
+The examples are read from the explicit form $\tilde p\diamond\tilde q=p_0\vec q-q_0\vec p-\vec p\times\vec q$, and each is the reduction at a displayed value.
 
 - **The square root of $e_0$.** The equation $\tilde\xi\diamond\tilde\xi=e_0$ has no solution: the left side is a pure vector, the right side is central and nonzero, and the two cannot agree.
 - **The square root of $e_1$.** The equation $\tilde\xi\diamond\tilde\xi=e_1$ has no solution, for the same reason: the left side is zero and the right side is the nonzero pure vector $e_1$.

@@ -7,7 +7,7 @@ product and not of the space (*Definitions for the Study of the 12 Algebraic Str
 Zero Divisor and the Annihilator*). The block of this article is the antisymmetric plain
 multiplication
 $$
-\tilde P\wedge\tilde Q=\tfrac12\bigl(\tilde P\tilde Q-\tilde Q\tilde P\bigr)=\mathbf{P}\times\mathbf{Q},
+\tilde P\wedge\tilde Q=\tfrac12\bigl(\tilde P\tilde Q-\tilde Q\tilde P\bigr)=\vec P\times\vec Q,
 $$
 the cross product of the two vector parts; it is $\mathbb{C}$-bilinear, alternating, vector valued
 and without a unit (*Introduction to the Antisymmetric Plain Algebra of Biquaternions*). The
@@ -28,7 +28,7 @@ classification is a dichotomy of the **annihilator**, read from the vector part,
 of elements bracket to zero is owned by the remarkable-subspaces article of the block, and the
 alternation itself by the introduction; both are cited.
 
-**The results.** The zero divisor of the antisymmetric plain multiplication $\tilde P\wedge\tilde Q=\mathbf{P}\times\mathbf{Q}$ is total: because the block is alternating, every nonzero element is a two-sided zero divisor with itself as annihilating partner, and the zero-divisor set is the punctured space $\mathbb{B}\setminus\{0\}$. It strictly contains the zero-divisor set $\{C(\tilde Q)=0\}\setminus\{0\}$ common to the four general products, the witness being $e_0$; among the twelve structures the punctured space is attained by exactly six. The pure and non-pure classification of the parent does not exist for the block, the criterion being met by both families alike, and what replaces it is the annihilator's dichotomy by the vector part.
+**The results.** The zero divisor of the antisymmetric plain multiplication $\tilde P\wedge\tilde Q=\vec P\times\vec Q$ is total: because the block is alternating, every nonzero element is a two-sided zero divisor with itself as annihilating partner, and the zero-divisor set is the punctured space $\mathbb{B}\setminus\{0\}$. It strictly contains the zero-divisor set $\{C(\tilde Q)=0\}\setminus\{0\}$ common to the four general products, the witness being $e_0$; among the twelve structures the punctured space is attained by exactly six. The pure and non-pure classification of the parent does not exist for the block, the criterion being met by both families alike, and what replaces it is the annihilator's dichotomy by the vector part.
 
 ## The Notion and Its Product
 
@@ -79,7 +79,7 @@ line $\mathbb{C}\tilde Q$ always lies in its annihilator on both sides.
 The general plain product comes with a classification of its zero divisors into two families, the
 pure and the non-pure, split by the vanishing of the scalar part $Q_0$ (*Zero Divisors of the
 General Plain Algebra*, §*The Two Families of Zero Divisors*). That classification rests on the two
-terms of the parent's square, $\tilde Q^{2}=[Q_0^{2}-(\mathbf Q,\mathbf Q)]e_0+2Q_0\mathbf Q$, the
+terms of the parent's square, $\tilde Q^{2}=[Q_0^{2}-(\vec Q,\vec Q)]e_0+2Q_0\vec Q$, the
 central term and the vector term, both read from the scalar part. For the block it does not exist.
 
 **Proposition (the classification of the zero divisors collapses).** For the block the criterion of
@@ -88,8 +88,8 @@ the elements with a nonzero scalar part and the pure elements are zero divisors,
 of the parent into a pure and a non-pure family does not exist for the zero-divisor criterion.
 
 *Proof.* The criterion is the theorem of §*The Criterion*, which holds for every nonzero element
-and mentions neither the scalar part nor the vector part; the pure elements $\tilde P=\mathbf P$
-and the non-pure elements $\tilde P=P_0e_0+\mathbf P$ with $P_0\neq0$ satisfy it in the same way.
+and mentions neither the scalar part nor the vector part; the pure elements $\tilde P=\vec P$
+and the non-pure elements $\tilde P=P_0e_0+\vec P$ with $P_0\neq0$ satisfy it in the same way.
 
 The collapse of the zero-divisor classification is the removal of the scalar part in the sharpest
 form. In the block the square is a pure vector and vanishes for every element,
@@ -167,7 +167,7 @@ elements whose bracket vanishes, are *Annihilators of the Antisymmetric Plain Al
 
 ## Summary
 
-For the antisymmetric plain multiplication $\tilde P\wedge\tilde Q=\mathbf{P}\times\mathbf{Q}$ the
+For the antisymmetric plain multiplication $\tilde P\wedge\tilde Q=\vec P\times\vec Q$ the
 zero-divisor class is total: every nonzero element is a two-sided zero divisor, with itself as the
 annihilating partner, because the block is alternating and the square of each element vanishes. The
 zero-divisor set is the punctured space $\mathbb{B}\setminus\{0\}$, and it strictly contains the
@@ -185,7 +185,7 @@ on the remarkable subspaces are that article's.
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf{P}\times\mathbf{Q}$ | the antisymmetric plain multiplication, the operation $\mathrm{APA}$ |
+| $\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\vec P\times\vec Q$ | the antisymmetric plain multiplication, the operation $\mathrm{APA}$ |
 | $C(\tilde P)=\sum_\mu P_\mu^{2}$ | the central square, the zero-divisor criterion of the four general products |
 | $\mathrm{Vect}(\mathbb{B})$ | the vector subspace, on which the block is the cross product |
 | $e_0$ | a zero divisor of the block, with partner itself, and not a zero divisor of the four general products |

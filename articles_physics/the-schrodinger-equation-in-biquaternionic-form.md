@@ -38,7 +38,7 @@ a copy of the complex line embedded as the scalar part, and it is the centre of 
 
 ### The quaternion units and the non-central roots
 
-Each quaternion unit satisfies $e_j^2 = -e_0$, but the $e_j$ do not commute: $e_1e_2 = e_3 = -e_2e_1$. They are non-central roots of $-1$. The companion article on biquaternion roots of minus one classifies all roots $\tilde{\Xi}$ with $\tilde{\Xi}^2 = -e_0$: either $\tilde{\Xi} = \pm i$ (the central roots), or $\tilde{\Xi} = \mathbf{Q}$ is a complex vector with $(\mathbf{Q},\mathbf{Q}) := Q_1^2 + Q_2^2 + Q_3^2 = 1$ (the non-central roots). The real members of the second family are the **unit pure real quaternions** $\hat{\mu} \in \mathbb{H}_{\mathbb{B}}$, with $|\hat{\mu}| = 1$, so $\hat{\mu}^2 = -e_0$ and $\hat{\mu}^\dagger = -\hat{\mu} \in \mathbb{M}_-$. They are the points of the Bloch sphere, i.e. the directions of the state. Both $\hat{\mu}$ and $i$ square to $-e_0$ and are anti-Hermitian, but $i$ is central and $\hat{\mu}$ is not.
+Each quaternion unit satisfies $e_j^2 = -e_0$, but the $e_j$ do not commute: $e_1e_2 = e_3 = -e_2e_1$. They are non-central roots of $-1$. The companion article on biquaternion roots of minus one classifies all roots $\tilde{\Xi}$ with $\tilde{\Xi}^2 = -e_0$: either $\tilde{\Xi} = \pm i$ (the central roots), or $\tilde{\Xi} = \vec Q$ is a complex vector with $(\vec Q,\vec Q) := Q_1^2 + Q_2^2 + Q_3^2 = 1$ (the non-central roots). The real members of the second family are the **unit pure real quaternions** $\hat{\mu} \in \mathbb{H}_{\mathbb{B}}$, with $|\hat{\mu}| = 1$, so $\hat{\mu}^2 = -e_0$ and $\hat{\mu}^\dagger = -\hat{\mu} \in \mathbb{M}_-$. They are the points of the Bloch sphere, i.e. the directions of the state. Both $\hat{\mu}$ and $i$ square to $-e_0$ and are anti-Hermitian, but $i$ is central and $\hat{\mu}$ is not.
 
 The two appear side by side in the idempotent
 
@@ -71,7 +71,7 @@ so $i$ carries $\mathbb{M}_+$ out of itself; it is not an operator on $\mathbb{M
 
 ## The Scalar Imaginary Exchanges the Two Sectors
 
-The relation $i\,\mathbb{M}_+ = \mathbb{M}_-$ is the algebraic content of the Hermitian decomposition, and it is the whole reason the scalar imaginary is the right unit for the Schrödinger equation. Concretely, for a Hermitian element $\tilde{H} = h_0e_0 + i\mathbf{h} \in \mathbb{M}_+$, using $\tilde{H}^{*} = \tilde{H}$, $i^{*} = -i$, and the centrality of $i$,
+The relation $i\,\mathbb{M}_+ = \mathbb{M}_-$ is the algebraic content of the Hermitian decomposition, and it is the whole reason the scalar imaginary is the right unit for the Schrödinger equation. Concretely, for a Hermitian element $\tilde{H} = h_0e_0 + i\vec h \in \mathbb{M}_+$, using $\tilde{H}^{*} = \tilde{H}$, $i^{*} = -i$, and the centrality of $i$,
 
 $$
 (i\tilde{H})^{*} = \tilde{H}^{*} i^{*} = \tilde{H}\,(-i) = -i\tilde{H}.
@@ -115,7 +115,7 @@ $$
 
 so the equation holds. The Hermitian-valued unknown is not inconsistent.
 
-What disqualifies this $\psi$ is not the equation but the requirement that a wave function be a state: $N(\psi) = \psi\bar{\psi} = -e_0$, so $\psi$ is invertible and in particular not a zero divisor. A wave function in the state module satisfies $\psi\tilde{P} = \psi$, hence $\psi(e_0 - \tilde{P}) = 0$ with $e_0 - \tilde{P} \neq 0$: every nonzero element of $\mathbb{B}\tilde{P}$ is a zero divisor. (The idempotent $\tilde\Pi_1 = \tfrac{1}{2}(e_0 + ie_3)$ — which is $\tilde{P}$ itself — is an element of $\mathbb{M}_+$ that does lie in the state module; a generic Hermitian element does not. Membership in $\mathbb{B}\tilde{P}$ does not follow from being a zero divisor: $\tilde\Pi_2 = \tfrac{1}{2}(e_0 - ie_3)$ is a zero divisor too, and $\tilde{Q}\tilde{P} = \tilde\Pi_2$ would give $\tilde\Pi_2 = \tilde\Pi_2\tilde{P} = 0$, impossible.) The correct exclusion is therefore structural — $\mathbb{M}_+$ is not a left ideal, and its elements need not be zero divisors — not the absence of solutions.
+What disqualifies this $\psi$ is not the equation but the requirement that a wave function be a state: $N(\psi) = \psi\bar{\psi} = -e_0$, so $\psi$ is invertible and in particular not a zero divisor. A wave function in the state module satisfies $\psi\tilde{P} = \psi$, hence $\psi(e_0 - \tilde{P}) = 0$ with $e_0 - \tilde{P} \neq 0$: every nonzero element of $\mathbb{B}\tilde{P}$ is a zero divisor. (The idempotent $\tilde\Pi_+ = \tfrac{1}{2}(e_0 + ie_3)$ — which is $\tilde{P}$ itself — is an element of $\mathbb{M}_+$ that does lie in the state module; a generic Hermitian element does not. Membership in $\mathbb{B}\tilde{P}$ does not follow from being a zero divisor: $\tilde\Pi_- = \tfrac{1}{2}(e_0 - ie_3)$ is a zero divisor too, and $\tilde{Q}\tilde{P} = \tilde\Pi_-$ would give $\tilde\Pi_- = \tilde\Pi_-\tilde{P} = 0$, impossible.) The correct exclusion is therefore structural — $\mathbb{M}_+$ is not a left ideal, and its elements need not be zero divisors — not the absence of solutions. Here $ie_3$ is a root of $+1$, $(ie_3)^2=e_0$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
 
 The correct relation between the two kinds of state is bilinear. From $\psi \in \mathbb{B}\tilde{P}$ one forms
 
@@ -132,23 +132,23 @@ With these objects separated, the equation reads
 $$
 i\hbar\,\partial_t\psi(t) = \tilde{H}\,\psi(t),
 \qquad
-\tilde{H} = h_0e_0 + i\mathbf{h} \in \mathbb{M}_+,
+\tilde{H} = h_0e_0 + i\vec h \in \mathbb{M}_+,
 \qquad
 \psi(t) \in \mathbb{B}\tilde{P},
 $$
 
 where $i$ is the scalar imaginary. Because $i$ is central, $i\tilde{H} = \tilde{H}i$, and there is no left/right ordering ambiguity in the equation. Because $\mathbb{B}\tilde{P}$ is a left ideal, $\tilde{H}\psi \in \mathbb{B}\tilde{P}$, so the equation is consistent within the module.
 
-**Solution.** Since $-i\tilde{H} = -ih_0e_0 + \mathbf{h}$ and the scalar and vector parts commute,
+**Solution.** Since $-i\tilde{H} = -ih_0e_0 + \vec h$ and the scalar and vector parts commute,
 
 $$
 \tilde{U}(t) = \exp\!\left(-i\tilde{H}t/\hbar\right)
-= e^{-ih_0t/\hbar}\left(\cos\theta\,e_0 + \sin\theta\,\hat{\mathbf{h}}\right),
+= e^{-ih_0t/\hbar}\left(\cos\theta\,e_0 + \sin\theta\,\hat h\right),
 \qquad
-\theta = \frac{|\mathbf{h}|t}{\hbar},
+\theta = \frac{|\vec h|t}{\hbar},
 $$
 
-and $\psi(t) = \tilde{U}(t)\psi(0)$. The element $\tilde{U}$ is unitary, $\tilde{U}\tilde{U}^{*} = e_0$: the central phase cancels and $R = \cos\theta\,e_0 + \sin\theta\,\hat{\mathbf{h}}$ is a unit real quaternion, $R R^{*} = e_0$. Consequently the Hermitian norm $\mathrm{Tr}(\psi^\dagger\psi)$ is preserved: with $\psi(t) = \tilde{U}\psi(0)$,
+and $\psi(t) = \tilde{U}(t)\psi(0)$. The element $\tilde{U}$ is unitary, $\tilde{U}\tilde{U}^{*} = e_0$: the central phase cancels and $R = \cos\theta\,e_0 + \sin\theta\,\hat h$ is a unit real quaternion, $R R^{*} = e_0$. Consequently the Hermitian norm $\mathrm{Tr}(\psi^\dagger\psi)$ is preserved: with $\psi(t) = \tilde{U}\psi(0)$,
 
 $$
 \mathrm{Tr}\!\left(\psi(t)^\dagger\psi(t)\right)
@@ -158,7 +158,7 @@ $$
 
 Differentiating the solution gives $i\hbar\,\partial_t\psi = i\hbar(-i\tilde{H}/\hbar)\psi = \tilde{H}\psi$, so it is the required solution.
 
-**Case checked.** For $\tilde{H} = i\,e_1$ one has $h_0 = 0$, $\mathbf{h} = e_1$, and $\tilde{U}(t) = \cos(t/\hbar)e_0 + \sin(t/\hbar)e_1$. Then $\tilde{U}(t)$ is unitary, and $\tilde{H}\tilde{U} = i e_1(\cos(t/\hbar)e_0 + \sin(t/\hbar)e_1) = i\cos(t/\hbar)e_1 - i\sin(t/\hbar)e_0$ equals $i\hbar\,\dot{\tilde{U}} = i(-\sin(t/\hbar)e_0 + \cos(t/\hbar)e_1)$, term by term. This case was chosen independently of the general formula and confirms it.
+**Case checked.** For $\tilde{H} = i\,e_1$ one has $h_0 = 0$, $\vec h = e_1$, and $\tilde{U}(t) = \cos(t/\hbar)e_0 + \sin(t/\hbar)e_1$. Then $\tilde{U}(t)$ is unitary, and $\tilde{H}\tilde{U} = i e_1(\cos(t/\hbar)e_0 + \sin(t/\hbar)e_1) = i\cos(t/\hbar)e_1 - i\sin(t/\hbar)e_0$ equals $i\hbar\,\dot{\tilde{U}} = i(-\sin(t/\hbar)e_0 + \cos(t/\hbar)e_1)$, term by term. This case was chosen independently of the general formula and confirms it.
 
 **Consistency with the density matrix.** The companion article's equation for $\tilde{\rho} = \psi\psi^\dagger$ follows from the spinor equation. Differentiating $\tilde{\rho} = \psi\psi^\dagger$ and using $\partial_t\psi = -i\tilde{H}\psi/\hbar$, $\partial_t\psi^\dagger = i\psi^\dagger\tilde{H}/\hbar$ (valid because $\tilde{H}^{*} = \tilde{H}$) gives
 
@@ -169,13 +169,13 @@ $$
 i\hbar\,\partial_t\tilde{\rho} = [\tilde{H},\tilde{\rho}],
 $$
 
-which is the von Neumann equation of the parent article. The Born rule follows as there: with $\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$ and $\tilde\Pi_1(\hat{\mu}) = \tfrac12(e_0 + i\hat{\mu})$,
+which is the von Neumann equation of the parent article. The Born rule follows as there: with $\tilde{\rho} = \tfrac12(e_0 + i\vec r)$ and $\tilde\Pi_1(\hat{\mu}) = \tfrac12(e_0 + i\hat{\mu})$,
 
 $$
-p_+ = \mathrm{Tr}\!\left(\tilde\Pi_1(\hat{\mu})\,\tilde{\rho}\right) = \tfrac12\left(1 + \hat{\mu}\cdot\mathbf{r}\right).
+p_+ = \mathrm{Tr}\!\left(\tilde\Pi_1(\hat{\mu})\,\tilde{\rho}\right) = \tfrac12\left(1 + \hat{\mu}\cdot\vec r\right).
 $$
 
-For the up-state spinor $\psi = \begin{pmatrix} 1 \\ 0\end{pmatrix}$ one has $\mathbf{r} = e_3$, and $p_+ = \tfrac12(1 + \hat{\mu}\cdot e_3)$, the standard result.
+For the up-state spinor $\psi = \begin{pmatrix} 1 \\ 0\end{pmatrix}$ one has $\vec r = e_3$, and $p_+ = \tfrac12(1 + \hat{\mu}\cdot e_3)$, the standard result.
 
 ## Why the Scalar Imaginary, and Not a Quaternion Unit
 
@@ -224,7 +224,7 @@ The equation can be rearranged into a statement that lives entirely in one secto
 $$
 \partial_t\psi = \tilde{G}\psi,
 \qquad
-\tilde{G} = -\frac{i}{\hbar}\tilde{H} = \frac{\mathbf{h} - i h_0 e_0}{\hbar} \in \mathbb{M}_-.
+\tilde{G} = -\frac{i}{\hbar}\tilde{H} = \frac{\vec h - i h_0 e_0}{\hbar} \in \mathbb{M}_-.
 $$
 
 The generator $\tilde{G}$ is anti-Hermitian; this is the general reason the exponential is unitary. The two interpretations are then:
@@ -276,7 +276,7 @@ $$
 i\hbar\,\partial_t\psi = \tilde{H}\psi,
 $$
 
-with $\tilde{H} = h_0e_0 + i\mathbf{h} \in \mathbb{M}_+$ Hermitian, $\psi$ a spinor in a minimal left ideal $\mathbb{B}\tilde{P} \cong \mathbb{C}^2$, and $i$ the **scalar imaginary** — the central root of $-1$ in $\mathbb{B}$, unique up to sign.
+with $\tilde{H} = h_0e_0 + i\vec h \in \mathbb{M}_+$ Hermitian, $\psi$ a spinor in a minimal left ideal $\mathbb{B}\tilde{P} \cong \mathbb{C}^2$, and $i$ the **scalar imaginary** — the central root of $-1$ in $\mathbb{B}$, unique up to sign.
 
 The symbol $i$ must not be confused with the quaternion units or the non-central roots of $-1$, which are rotation axes, and it is not a complex structure on $\mathbb{M}_+$, since $i\,\mathbb{M}_+ = \mathbb{M}_-$: the scalar imaginary is the canonical isomorphism between the two sectors, not an operator on either. The wave function is a spinor in the state module, not a generic element of $\mathbb{M}_+$; the density matrix is recovered as $\tilde{\rho} = \psi\psi^\dagger/\mathrm{Tr}(\psi^\dagger\psi) \in \mathbb{M}_+$, and the spinor equation implies the parent article's von Neumann equation $i\hbar\,\partial_t\tilde{\rho} = [\tilde{H},\tilde{\rho}]$.
 
@@ -295,12 +295,12 @@ Read in the two sectors, the equation says that the Hermitian observable $\tilde
 | $\mathbb{M}_+$ | Hermitian subspace (observables): $i\hbar\,\partial_t\psi = \tilde{H}\psi$ has $\tilde{H} \in \mathbb{M}_+$ |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (generators): $\tilde{G} = -i\tilde{H}/\hbar \in \mathbb{M}_-$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subspace; home of the unit pure quaternions $\hat{\mu}$ |
-| $\tilde{H} = h_0e_0 + i\mathbf{h}$ | Hermitian element (Hamiltonian) |
+| $\tilde{H} = h_0e_0 + i\vec h$ | Hermitian element (Hamiltonian) |
 | $\tilde\Pi_{1,2}(\hat{\mu}) = \tfrac12(e_0 \pm i\hat{\mu})$ | Idempotent (pure state); $\hat{\mu}$ the state axis |
 | $\mathbb{B}\tilde{P} \cong \mathbb{C}^2$ | Minimal left ideal: the state module of spinors $\psi$ |
 | $\tilde{\rho} = \psi\psi^\dagger/\mathrm{Tr}(\psi^\dagger\psi)$ | Density matrix associated to a spinor |
 | $\tilde{U}(t) = \exp(-i\tilde{H}t/\hbar)$ | Unitary evolution, $\psi(t) = \tilde{U}(t)\psi(0)$ |
-| $\mathrm{Tr}(\tilde\Pi_1(\hat{\mu})\tilde{H}) = 2\,\mathrm{Sc}(\tilde\Pi_1(\hat{\mu})\tilde{H}) = h_0 + \hat{\mu}\cdot\mathbf{h}$ | Trace formula / Born rule |
+| $\mathrm{Tr}(\tilde\Pi_1(\hat{\mu})\tilde{H}) = 2\,\mathrm{Sc}(\tilde\Pi_1(\hat{\mu})\tilde{H}) = h_0 + \hat{\mu}\cdot\vec h$ | Trace formula / Born rule |
 | $e_j e_k = \varepsilon_{jkl}e_l$, $j \neq k$ | Quaternion multiplication |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |

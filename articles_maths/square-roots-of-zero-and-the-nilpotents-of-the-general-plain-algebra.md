@@ -16,13 +16,13 @@ The second is the nilpotents of the algebra, the nonzero elements whose square v
 
 The article is algebraic. The zero-divisor set, its two families and the criterion on the central square are *Zero Divisors of the General Plain Algebra*; the roots of $+1$ and the idempotents are *Square Roots of One and the Idempotents of the General Plain Algebra*; the minimal ideals the nilpotents generate are *Ideals and Peirce Decomposition of the General Plain Algebra*; and the same class read against the four general products is *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$, and central scalar imaginary $i$, $i^2=-1$. A general element is $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu=Q_0e_0+\mathbf Q$ with $Q_\mu\in\mathbb{C}$ and $\mathbf Q=\sum_{k=1}^{3}Q_ke_k$. The natural conjugation is $\tilde Q^{\natural}=Q_0-\mathbf Q$ and the star is $\tilde Q^{*}=\overline{Q_0}-\overline{\mathbf Q}$. The general plain bilinear form of two vector parts is
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$, and central scalar imaginary $i$, $i^2=-1$. A general element is $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu=Q_0e_0+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=\sum_{k=1}^{3}Q_ke_k$. The natural conjugation is $\tilde Q^{\natural}=Q_0-\vec Q$ and the star is $\tilde Q^{*}=\overline{Q_0}-\overline{\vec Q}$. The general plain bilinear form of two vector parts is
 
 $$
-(\mathbf P,\mathbf Q)=\sum_{k=1}^{3}P_kQ_k,
+(\vec P,\vec Q)=\sum_{k=1}^{3}P_kQ_k,
 $$
 
-and the square of a pure element is $\mathbf Q^2=-(\mathbf Q,\mathbf Q)e_0$. The **central square** is
+and the square of a pure element is $\vec Q^2=-(\vec Q,\vec Q)e_0$. The **central square** is
 
 $$
 \tilde Q\tilde Q^{\natural}=\tilde Q^{\natural}\tilde Q=C(\tilde Q)e_0,\qquad C(\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^2 .
@@ -34,7 +34,7 @@ The equations name a product, so the roots and the nilpotents are relative to it
 
 ## The Roots of Zero
 
-**The roots of $0$ are exactly the origin and the nilpotent cone, the pure biquaternions with $(\boldsymbol\Xi,\boldsymbol\Xi)=0$, a four-real-parameter family; the nonzero roots are the nilpotents.**
+**The roots of $0$ are exactly the origin and the nilpotent cone, the pure biquaternions with $(\vec\Xi,\vec\Xi)=0$, a four-real-parameter family; the nonzero roots are the nilpotents.**
 
 A **root of $0$** is an element $\tilde\Xi\in\mathbb{B}$ with $\tilde\Xi^2=0$, the square being the one of the general plain bilinear product.
 
@@ -43,26 +43,26 @@ A **root of $0$** is an element $\tilde\Xi\in\mathbb{B}$ with $\tilde\Xi^2=0$, t
 Write the root in scalar and vector parts,
 
 $$
-\tilde\Xi=\Xi_0e_0+\boldsymbol\Xi,\qquad \boldsymbol\Xi=\Xi_1e_1+\Xi_2e_2+\Xi_3e_3,\qquad \Xi_k\in\mathbb{C}.
+\tilde\Xi=\Xi_0e_0+\vec\Xi,\qquad \vec\Xi=\Xi_1e_1+\Xi_2e_2+\Xi_3e_3,\qquad \Xi_k\in\mathbb{C}.
 $$
 
 The square of a biquaternion is given by the product formula,
 
 $$
-\tilde\Xi^2=\bigl(\Xi_0^2-(\boldsymbol\Xi,\boldsymbol\Xi)\bigr)e_0+2\Xi_0\boldsymbol\Xi,\qquad (\boldsymbol\Xi,\boldsymbol\Xi)=\Xi_1^2+\Xi_2^2+\Xi_3^2,
+\tilde\Xi^2=\bigl(\Xi_0^2-(\vec\Xi,\vec\Xi)\bigr)e_0+2\Xi_0\vec\Xi,\qquad (\vec\Xi,\vec\Xi)=\Xi_1^2+\Xi_2^2+\Xi_3^2,
 $$
 
 so equating $\tilde\Xi^2$ to $0$ splits the equation into a vector part and a scalar part,
 
 $$
-2\Xi_0\boldsymbol\Xi=0,
+2\Xi_0\vec\Xi=0,
 $$
 
 $$
-\Xi_0^2-(\boldsymbol\Xi,\boldsymbol\Xi)=0 .
+\Xi_0^2-(\vec\Xi,\vec\Xi)=0 .
 $$
 
-Since $\mathbb{C}$ is a field, the vector equation holds exactly when $\Xi_0=0$ or $\boldsymbol\Xi=0$. The roots of $0$ therefore split into two disjoint cases: the root is a complex scalar, $\boldsymbol\Xi=0$, or the root is pure, $\Xi_0=0$.
+Since $\mathbb{C}$ is a field, the vector equation holds exactly when $\Xi_0=0$ or $\vec\Xi=0$. The roots of $0$ therefore split into two disjoint cases: the root is a complex scalar, $\vec\Xi=0$, or the root is pure, $\Xi_0=0$.
 
 ### The Zero Element
 
@@ -76,31 +76,31 @@ the origin.
 
 ### The Null Cone
 
-In the pure case $\tilde\Xi=\boldsymbol\Xi$ and the scalar equation reads
+In the pure case $\tilde\Xi=\vec\Xi$ and the scalar equation reads
 
 $$
-(\boldsymbol\Xi,\boldsymbol\Xi)=\Xi_1^2+\Xi_2^2+\Xi_3^2=0 .
+(\vec\Xi,\vec\Xi)=\Xi_1^2+\Xi_2^2+\Xi_3^2=0 .
 $$
 
 Write the complex coefficients as $\Xi_k=\xi_k+i\xi'_k$ with real $\xi_k,\xi'_k$, so that
 
 $$
-\boldsymbol\Xi=\boldsymbol\xi+i\boldsymbol\xi',\qquad \boldsymbol\xi=\xi_1e_1+\xi_2e_2+\xi_3e_3,\qquad \boldsymbol\xi'=\xi'_1e_1+\xi'_2e_2+\xi'_3e_3 .
+\vec\Xi=\vec\xi+i\vec\xi',\qquad \vec\xi=\xi_1e_1+\xi_2e_2+\xi_3e_3,\qquad \vec\xi'=\xi'_1e_1+\xi'_2e_2+\xi'_3e_3 .
 $$
 
 Then
 
 $$
-(\boldsymbol\Xi,\boldsymbol\Xi)=\sum_{k=1}^{3}(\xi_k+i\xi'_k)^2=\bigl(\xi_1^2+\xi_2^2+\xi_3^2-(\xi'_1)^2-(\xi'_2)^2-(\xi'_3)^2\bigr)+2i\bigl(\xi_1\xi'_1+\xi_2\xi'_2+\xi_3\xi'_3\bigr),
+(\vec\Xi,\vec\Xi)=\sum_{k=1}^{3}(\xi_k+i\xi'_k)^2=\bigl(\xi_1^2+\xi_2^2+\xi_3^2-(\xi'_1)^2-(\xi'_2)^2-(\xi'_3)^2\bigr)+2i\bigl(\xi_1\xi'_1+\xi_2\xi'_2+\xi_3\xi'_3\bigr),
 $$
 
-so the single complex equation $(\boldsymbol\Xi,\boldsymbol\Xi)=0$ is the two real equations
+so the single complex equation $(\vec\Xi,\vec\Xi)=0$ is the two real equations
 
 $$
 \xi_1^2+\xi_2^2+\xi_3^2-(\xi'_1)^2-(\xi'_2)^2-(\xi'_3)^2=0,\qquad \xi_1\xi'_1+\xi_2\xi'_2+\xi_3\xi'_3=0 .
 $$
 
-Six real coefficients carry two constraints, so the roots in this case form a **four-real-parameter family**, the **null cone** of the pure subspace; equivalently its two real vector parts $\boldsymbol\xi$ and $\boldsymbol\xi'$ are orthogonal and satisfy $\boldsymbol\xi\cdot\boldsymbol\xi=\boldsymbol\xi'\cdot\boldsymbol\xi'$. Its nonzero elements are the nilpotents of the algebra.
+Six real coefficients carry two constraints, so the roots in this case form a **four-real-parameter family**, the **null cone** of the pure subspace; equivalently its two real vector parts $\vec\xi$ and $\vec\xi'$ are orthogonal and satisfy $\vec\xi\cdot\vec\xi=\vec\xi'\cdot\vec\xi'$. Its nonzero elements are the nilpotents of the algebra.
 
 ### Statement of the Theorem
 
@@ -122,7 +122,7 @@ that is, writing $\Xi_k=\xi_k+i\xi'_k$, the pair of real equations $\xi_1^2+\xi_
 
 ### Verification
 
-For a pure $\tilde\Xi$ with $(\boldsymbol\Xi,\boldsymbol\Xi)=0$ the scalar part of $\tilde\Xi^2$ is $-(\boldsymbol\Xi,\boldsymbol\Xi)=0$ and the vector part is $2\Xi_0\boldsymbol\Xi=0$, since $\Xi_0=0$; so such an element is a root of $0$. The scalar case gives only the origin, and the two cases are exhaustive by the reduction, because the vector equation forces $\Xi_0=0$ or $\boldsymbol\Xi=0$.
+For a pure $\tilde\Xi$ with $(\vec\Xi,\vec\Xi)=0$ the scalar part of $\tilde\Xi^2$ is $-(\vec\Xi,\vec\Xi)=0$ and the vector part is $2\Xi_0\vec\Xi=0$, since $\Xi_0=0$; so such an element is a root of $0$. The scalar case gives only the origin, and the two cases are exhaustive by the reduction, because the vector equation forces $\Xi_0=0$ or $\vec\Xi=0$.
 
 A worked instance is
 
@@ -132,7 +132,7 @@ $$
 
 ### The Roots of Zero and the Nilpotents
 
-The nonzero roots of $0$ are exactly the **nilpotents** of the algebra. This is the criterion of §*The Criterion*: an element has vanishing square exactly when it is pure with isotropic vector part, $P_0=0$ and $(\mathbf P,\mathbf P)=0$, which is the defining equation of the null cone above with the origin removed. The roots of $0$ are therefore the origin together with the nilpotent cone, and the remainder of this article studies that cone.
+The nonzero roots of $0$ are exactly the **nilpotents** of the algebra. This is the criterion of §*The Criterion*: an element has vanishing square exactly when it is pure with isotropic vector part, $P_0=0$ and $(\vec P,\vec P)=0$, which is the defining equation of the null cone above with the origin removed. The roots of $0$ are therefore the origin together with the nilpotent cone, and the remainder of this article studies that cone.
 
 The nonzero roots of $0$ are **not units**. A root of $0$ other than $0$ is a nilpotent, hence a square-zero element, and a square-zero element is a zero divisor: it annihilates itself, and a unit is never a zero divisor. This is the behaviour opposite to the roots of $+1$, which are units of the algebra; the roots of the three central values and their invertibility are read value by value in *Square Roots of One and the Idempotents of the General Plain Algebra* and *Square Roots of a General Element in the General Plain Algebra*.
 
@@ -164,17 +164,17 @@ The nilpotents are thus a conjugation-stable class, and a statement about one ni
 
 ### The Criterion
 
-**An element is a nilpotent exactly when it is pure and its vector part is isotropic, $P_0=0$ and $(\mathbf P,\mathbf P)=0$; every nilpotent is then a zero divisor and its powers stop at the second.**
+**An element is a nilpotent exactly when it is pure and its vector part is isotropic, $P_0=0$ and $(\vec P,\vec P)=0$; every nilpotent is then a zero divisor and its powers stop at the second.**
 
 The square of a general element closes in two terms, one central and one along the vector part, because the vector part is a pure quaternion combination and its own square is central:
 
 $$
-\tilde Q^2=\bigl[Q_0^2-(\mathbf Q,\mathbf Q)\bigr]e_0+2Q_0\mathbf Q .
+\tilde Q^2=\bigl[Q_0^2-(\vec Q,\vec Q)\bigr]e_0+2Q_0\vec Q .
 $$
 
-**Theorem (the criterion for a nilpotent).** For $\tilde P\in\mathbb{B}$ the following are equivalent: $\tilde P^2=0$; $\tilde P$ is pure, $P_0=0$, and its vector part is isotropic, $(\mathbf P,\mathbf P)=0$; and $P_0=0$ and $C(\tilde P)=0$.
+**Theorem (the criterion for a nilpotent).** For $\tilde P\in\mathbb{B}$ the following are equivalent: $\tilde P^2=0$; $\tilde P$ is pure, $P_0=0$, and its vector part is isotropic, $(\vec P,\vec P)=0$; and $P_0=0$ and $C(\tilde P)=0$.
 
-**Proof.** The displayed formula expands the square. If $P_0\neq0$ then the vector part $2P_0\mathbf P$ vanishes only for $\mathbf P=0$, and then the scalar part is $P_0^2\neq0$; so a nilpotent is pure. For a pure $\tilde P$ the formula reads $\tilde P^2=-(\mathbf P,\mathbf P)e_0$, a central element, which vanishes exactly when $(\mathbf P,\mathbf P)=0$. Finally, for pure $\tilde P$ the central square is $C(\tilde P)=P_0^2+(\mathbf P,\mathbf P)=(\mathbf P,\mathbf P)$, so the two conditions agree.
+**Proof.** The displayed formula expands the square. If $P_0\neq0$ then the vector part $2P_0\vec P$ vanishes only for $\vec P=0$, and then the scalar part is $P_0^2\neq0$; so a nilpotent is pure. For a pure $\tilde P$ the formula reads $\tilde P^2=-(\vec P,\vec P)e_0$, a central element, which vanishes exactly when $(\vec P,\vec P)=0$. Finally, for pure $\tilde P$ the central square is $C(\tilde P)=P_0^2+(\vec P,\vec P)=(\vec P,\vec P)$, so the two conditions agree.
 
 **Corollary.** Every nilpotent is pure, and every nonzero nilpotent is a zero divisor. Its only nonzero power relation is $\tilde\Upsilon^2=0$, the central zero, so its powers stop at the second.
 
@@ -182,18 +182,18 @@ The criterion separates the class sharply: the nilpotents are the elements of th
 
 ### The Nilpotent Cone
 
-**The nilpotents form the cone $\{P_1^2+P_2^2+P_3^2=0\}$ in the vector subspace, of complex dimension two and real dimension four; its nonzero elements are $r(\hat{\mathbf p}+i\hat{\mathbf p}')$ with $r>0$ and $\hat{\mathbf p},\hat{\mathbf p}'$ orthogonal real unit vectors.**
+**The nilpotents form the cone $\{P_1^2+P_2^2+P_3^2=0\}$ in the vector subspace, of complex dimension two and real dimension four; its nonzero elements are $r(\hat p+i\hat p')$ with $r>0$ and $\hat p,\hat p'$ orthogonal real unit vectors.**
 
-The set of nilpotents is the vanishing set of the two conditions of the criterion, and it is a cone. The vector part of a nilpotent is a complex vector $\mathbf P=(P_1,P_2,P_3)$, and its coefficients split into a real and an imaginary part, $P_k=p_k+ip'_k$ with real $p_k,p'_k$, so that the vector part splits into two real vector parts carrying the central imaginary on the second,
-
-$$
-\mathbf P=\mathbf p+i\mathbf p',\qquad \mathbf p=\sum_{k=1}^{3}p_ke_k,\qquad \mathbf p'=\sum_{k=1}^{3}p'_ke_k .
-$$
-
-The single complex equation $(\mathbf P,\mathbf P)=P_1^2+P_2^2+P_3^2=0$ is then the two real equations
+The set of nilpotents is the vanishing set of the two conditions of the criterion, and it is a cone. The vector part of a nilpotent is a complex vector $\vec P=(P_1,P_2,P_3)$, and its coefficients split into a real and an imaginary part, $P_k=p_k+ip'_k$ with real $p_k,p'_k$, so that the vector part splits into two real vector parts carrying the central imaginary on the second,
 
 $$
-\mathbf p\cdot\mathbf p=\mathbf p'\cdot\mathbf p',\qquad \mathbf p\cdot\mathbf p'=0,
+\vec P=\vec p+i\vec p',\qquad \vec p=\sum_{k=1}^{3}p_ke_k,\qquad \vec p'=\sum_{k=1}^{3}p'_ke_k .
+$$
+
+The single complex equation $(\vec P,\vec P)=P_1^2+P_2^2+P_3^2=0$ is then the two real equations
+
+$$
+\vec p\cdot\vec p=\vec p'\cdot\vec p',\qquad \vec p\cdot\vec p'=0,
 $$
 
 that is $\sum_kp_k^2=\sum_k(p'_k)^2$ and $\sum_kp_kp'_k=0$: the two real parts of a nilpotent are orthogonal and have equal sum of squares.
@@ -207,18 +207,18 @@ $$
 a complex cone of complex dimension two and real dimension four, a four-real-parameter family. Its nonzero elements are written
 
 $$
-\tilde\Upsilon=\mathbf p+i\mathbf p',\qquad \mathbf p\cdot\mathbf p=\mathbf p'\cdot\mathbf p',\qquad \mathbf p\cdot\mathbf p'=0,
+\tilde\Upsilon=\vec p+i\vec p',\qquad \vec p\cdot\vec p=\vec p'\cdot\vec p',\qquad \vec p\cdot\vec p'=0,
 $$
 
-and equivalently, with $r>0$ and $\hat{\mathbf p},\hat{\mathbf p}'$ the two orthogonal real unit directions, so that $r^2=\mathbf p\cdot\mathbf p=\mathbf p'\cdot\mathbf p'$,
+and equivalently, with $r>0$ and $\hat p,\hat p'$ the two orthogonal real unit directions, so that $r^2=\vec p\cdot\vec p=\vec p'\cdot\vec p'$,
 
 $$
-\tilde\Upsilon=r(\hat{\mathbf p}+i\hat{\mathbf p}'),\qquad r>0,\qquad \hat{\mathbf p}\cdot\hat{\mathbf p}=\hat{\mathbf p}'\cdot\hat{\mathbf p}'=1,\qquad \hat{\mathbf p}\cdot\hat{\mathbf p}'=0 .
+\tilde\Upsilon=r(\hat p+i\hat p'),\qquad r>0,\qquad \hat p\cdot\hat p=\hat p'\cdot\hat p'=1,\qquad \hat p\cdot\hat p'=0 .
 $$
 
-**Proof.** The first is the criterion. The complex equation cuts a complex-quadric cone in $\mathbb{C}^3$, of complex dimension two; as a real cone it is the two real equations displayed, whose independence away from the origin gives real dimension four. For the parametrisation, the two real equations say that the real part $\mathbf p$ and the imaginary part $\mathbf p'$ are orthogonal and have equal sum of squares, which is the stated form; conversely such a pair satisfies both.
+**Proof.** The first is the criterion. The complex equation cuts a complex-quadric cone in $\mathbb{C}^3$, of complex dimension two; as a real cone it is the two real equations displayed, whose independence away from the origin gives real dimension four. For the parametrisation, the two real equations say that the real part $\vec p$ and the imaginary part $\vec p'$ are orthogonal and have equal sum of squares, which is the stated form; conversely such a pair satisfies both.
 
-The cone is stable under complex scaling, $\tilde\Upsilon\mapsto\lambda\tilde\Upsilon$ for $\lambda\in\mathbb{C}$, because the isotropy condition is homogeneous of degree two; it is stable under the star, which conjugates the two real parts; and the natural conjugation sends $\tilde\Upsilon$ to $-\tilde\Upsilon$. The parameter $r$ is fixed by $r^2=\mathbf p\cdot\mathbf p=\mathbf p'\cdot\mathbf p'$, and the pair $(\hat{\mathbf p},\hat{\mathbf p}')$ is determined up to the simultaneous sign change $(\hat{\mathbf p},\hat{\mathbf p}')\mapsto(-\hat{\mathbf p},-\hat{\mathbf p}')$.
+The cone is stable under complex scaling, $\tilde\Upsilon\mapsto\lambda\tilde\Upsilon$ for $\lambda\in\mathbb{C}$, because the isotropy condition is homogeneous of degree two; it is stable under the star, which conjugates the two real parts; and the natural conjugation sends $\tilde\Upsilon$ to $-\tilde\Upsilon$. The parameter $r$ is fixed by $r^2=\vec p\cdot\vec p=\vec p'\cdot\vec p'$, and the pair $(\hat p,\hat p')$ is determined up to the simultaneous sign change $(\hat p,\hat p')\mapsto(-\hat p,-\hat p')$.
 
 ### Index Two
 
@@ -229,10 +229,10 @@ The cone is stable under complex scaling, $\tilde\Upsilon\mapsto\lambda\tilde\Up
 **Proof.** The cube follows from the displayed square,
 
 $$
-\tilde P^3=\tilde P\,\tilde P^2=P_0\bigl[P_0^2-3(\mathbf P,\mathbf P)\bigr]e_0+\bigl[3P_0^2-(\mathbf P,\mathbf P)\bigr]\mathbf P .
+\tilde P^3=\tilde P\,\tilde P^2=P_0\bigl[P_0^2-3(\vec P,\vec P)\bigr]e_0+\bigl[3P_0^2-(\vec P,\vec P)\bigr]\vec P .
 $$
 
-If $\mathbf P=0$ then $\tilde P=P_0e_0$ and $\tilde P^3=P_0^3e_0$, which vanishes only for $P_0=0$, that is for $\tilde P=0$, and then $\tilde P^2=0$ as well. If $\mathbf P\neq0$ then the vanishing of the vector part of $\tilde P^3$ forces $(\mathbf P,\mathbf P)=3P_0^2$, and the scalar part is then $P_0[P_0^2-3\cdot3P_0^2]=-8P_0^3$, which vanishes only for $P_0=0$, whereupon $(\mathbf P,\mathbf P)=0$. In both cases $\tilde P^3=0$ gives $P_0=0$ and $(\mathbf P,\mathbf P)=0$, which is $\tilde P^2=0$. The converse is immediate.
+If $\vec P=0$ then $\tilde P=P_0e_0$ and $\tilde P^3=P_0^3e_0$, which vanishes only for $P_0=0$, that is for $\tilde P=0$, and then $\tilde P^2=0$ as well. If $\vec P\neq0$ then the vanishing of the vector part of $\tilde P^3$ forces $(\vec P,\vec P)=3P_0^2$, and the scalar part is then $P_0[P_0^2-3\cdot3P_0^2]=-8P_0^3$, which vanishes only for $P_0=0$, whereupon $(\vec P,\vec P)=0$. In both cases $\tilde P^3=0$ gives $P_0=0$ and $(\vec P,\vec P)=0$, which is $\tilde P^2=0$. The converse is immediate.
 
 The theorem is the reason the word "nilpotent" needs no index qualifier here. It also fixes the shape of the powers of an element: a nilpotent has the two-term power string $\tilde\Upsilon,\tilde\Upsilon^2=0$ and no longer one, whereas a non-pure zero divisor has the infinite string $\tilde P^k=2^{k-1}P_0^{k-1}\tilde P$ of *Zero Divisors of the General Plain Algebra*.
 
@@ -268,16 +268,16 @@ The disjointness is the two-family statement in another dress. The zero-divisor 
 
 The conjugations act on the nilpotent cone in a simple way, and the action is worth recording because the two families of the zero divisors are separated by it.
 
-| conjugation | effect on a nilpotent $\tilde\Upsilon=r(\hat{\mathbf p}+i\hat{\mathbf p}')$ |
+| conjugation | effect on a nilpotent $\tilde\Upsilon=r(\hat p+i\hat p')$ |
 |---|---|
-| natural, ${}^{\natural}$ | $-\tilde\Upsilon=-r(\hat{\mathbf p}+i\hat{\mathbf p}')$, a nilpotent |
-| star, ${}^{*}$ | $\overline{\tilde\Upsilon}=r(\hat{\mathbf p}-i\hat{\mathbf p}')$, a nilpotent |
-| Hermitian, ${}^{\natural}\circ{}^{*}={}^{*}\circ{}^{\natural}$ | $-\overline{\tilde\Upsilon}=-r(\hat{\mathbf p}-i\hat{\mathbf p}')$, a nilpotent |
+| natural, ${}^{\natural}$ | $-\tilde\Upsilon=-r(\hat p+i\hat p')$, a nilpotent |
+| star, ${}^{*}$ | $\overline{\tilde\Upsilon}=r(\hat p-i\hat p')$, a nilpotent |
+| Hermitian, ${}^{\natural}\circ{}^{*}={}^{*}\circ{}^{\natural}$ | $-\overline{\tilde\Upsilon}=-r(\hat p-i\hat p')$, a nilpotent |
 | reversal | the reversed element and the three above according to the layer |
 
-The star fixes no nonzero nilpotent: a star-fixed element has real coefficients, and a pure real vector $\mathbf p$ with $\mathbf p\cdot\mathbf p=p_1^2+p_2^2+p_3^2=0$ vanishes, since the three squares are non-negative. So the star pairs the nilpotents two by two. The class is a cone, and each conjugation is a real-linear bijection of the cone onto itself.
+The star fixes no nonzero nilpotent: a star-fixed element has real coefficients, and a pure real vector $\vec p$ with $\vec p\cdot\vec p=p_1^2+p_2^2+p_3^2=0$ vanishes, since the three squares are non-negative. So the star pairs the nilpotents two by two. The class is a cone, and each conjugation is a real-linear bijection of the cone onto itself.
 
-The real and imaginary parts make the same point. Writing $\tilde\Upsilon=\mathbf p+i\mathbf p'$ with $\mathbf p,\mathbf p'$ real pure vectors, the nilpotency is the pair of real equations of §*The Nilpotent Cone*: the two real parts of a nilpotent are orthogonal and have equal sum of squares. This is a real condition, and the class is real-algebraically defined even though the algebra is complex.
+The real and imaginary parts make the same point. Writing $\tilde\Upsilon=\vec p+i\vec p'$ with $\vec p,\vec p'$ real pure vectors, the nilpotency is the pair of real equations of §*The Nilpotent Cone*: the two real parts of a nilpotent are orthogonal and have equal sum of squares. This is a real condition, and the class is real-algebraically defined even though the algebra is complex.
 
 ### The Matrix Model
 
@@ -295,7 +295,7 @@ $$
 \tilde\Upsilon_1=\frac{ie_1-e_2}{2},\qquad \tilde\Upsilon_2=\frac{ie_1+e_2}{2},
 $$
 
-with $\tilde\Upsilon_1^2=\tilde\Upsilon_2^2=0$, which are exchanged by the star and which, together with the two primitive idempotents $\tilde\Pi_1,\tilde\Pi_2$, form a $\mathbb{C}$-basis of $\mathbb{B}$ with the multiplication table $\tilde\Upsilon_1\tilde\Upsilon_2=\tilde\Pi_1$ and $\tilde\Upsilon_2\tilde\Upsilon_1=\tilde\Pi_2$ (*Ideals and Peirce Decomposition of the General Plain Algebra*). Every nilpotent is a complex multiple of a conjugate of one of these two, and the cone is the orbit of $\tilde\Upsilon_1$ under the group of invertible elements.
+with $\tilde\Upsilon_1^2=\tilde\Upsilon_2^2=0$, which are exchanged by the star and which, together with the two primitive idempotents $\tilde\Pi_+,\tilde\Pi_-$, form a $\mathbb{C}$-basis of $\mathbb{B}$ with the multiplication table $\tilde\Upsilon_1\tilde\Upsilon_2=\tilde\Pi_+$ and $\tilde\Upsilon_2\tilde\Upsilon_1=\tilde\Pi_-$ (*Ideals and Peirce Decomposition of the General Plain Algebra*). Every nilpotent is a complex multiple of a conjugate of one of these two, and the cone is the orbit of $\tilde\Upsilon_1$ under the group of invertible elements.
 
 ### The Nilpotents and the Ideals
 
@@ -307,7 +307,7 @@ The nilpotents are the elements on which the ideal theory of the algebra is simp
 
 **Proof.** If $\tilde\Upsilon^2=0$ then $(\tilde X\tilde\Upsilon)\tilde\Upsilon=\tilde X\tilde\Upsilon^2=0$ for every $\tilde X$, so $\mathbb{B}\tilde\Upsilon\subseteq I_{\tilde\Upsilon}$; both are nonzero proper left ideals and both are minimal of real dimension four, hence equal. The right statement is the mirror image. The converse, that coincidence forces nilpotency, is the statement for the other class in *Introduction to the Remarkable Subspaces*.
 
-The deeper ideal theory, the Peirce decomposition, the minimal left and right ideals $\mathbb{B}\tilde\Pi_1,\mathbb{B}\tilde\Pi_2$ and the module structure of the algebra over itself, is *Ideals and Peirce Decomposition of the General Plain Algebra* and *Modules over the General Plain Algebra of Biquaternions*; the nilpotents enter it as the off-diagonal units $\tilde\Upsilon_1,\tilde\Upsilon_2$.
+The deeper ideal theory, the Peirce decomposition, the minimal left and right ideals $\mathbb{B}\tilde\Pi_+,\mathbb{B}\tilde\Pi_-$ and the module structure of the algebra over itself, is *Ideals and Peirce Decomposition of the General Plain Algebra* and *Modules over the General Plain Algebra of Biquaternions*; the nilpotents enter it as the off-diagonal units $\tilde\Upsilon_1,\tilde\Upsilon_2$.
 
 ### The Nilpotents and the Remarkable Subspaces
 
@@ -330,7 +330,7 @@ The entries are forced: the centre, the quaternion subspace and the anti-quatern
 
 The general plain bilinear product of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* is the multiplication of the algebra $\mathbb{B}$ of *Introduction to the General Plain Algebra of Biquaternions*. The square roots of $0$ in that product are the origin together with the nilpotent cone, the pure biquaternions $\tilde\Xi=\Xi_1e_1+\Xi_2e_2+\Xi_3e_3$ with $\Xi_1^2+\Xi_2^2+\Xi_3^2=0$, a four-real-parameter family; writing $\Xi_k=\xi_k+i\xi'_k$, the two real equations are $\xi_1^2+\xi_2^2+\xi_3^2-(\xi'_1)^2-(\xi'_2)^2-(\xi'_3)^2=0$ and $\xi_1\xi'_1+\xi_2\xi'_2+\xi_3\xi'_3=0$, and a worked instance is $e_1+ie_2$.
 
-The nonzero roots of $0$ are exactly the nilpotents of the algebra, the nonzero elements of vanishing square. The criterion is $P_0=0$ and $(\mathbf P,\mathbf P)=0$, so every nilpotent is pure and its vector part is isotropic for the general plain bilinear form; the class is the nilpotent cone, a complex cone of complex dimension two and real dimension four, parametrised as $r(\hat{\mathbf p}+i\hat{\mathbf p}')$ over orthonormal pairs of real unit vectors. The algebra has no nilpotent of index three: $\tilde P^3=0$ exactly when $\tilde P^2=0$, so index two is the only index, and the powers of a nilpotent stop at the second.
+The nonzero roots of $0$ are exactly the nilpotents of the algebra, the nonzero elements of vanishing square. The criterion is $P_0=0$ and $(\vec P,\vec P)=0$, so every nilpotent is pure and its vector part is isotropic for the general plain bilinear form; the class is the nilpotent cone, a complex cone of complex dimension two and real dimension four, parametrised as $r(\hat p+i\hat p')$ over orthonormal pairs of real unit vectors. The algebra has no nilpotent of index three: $\tilde P^3=0$ exactly when $\tilde P^2=0$, so index two is the only index, and the powers of a nilpotent stop at the second.
 
 Every nonzero nilpotent annihilates itself, so it is a two-sided zero divisor and the ideal it generates is its own annihilator; the nilpotents are the pure family of the zero-divisor set, the non-pure family being the complex multiples of the non-trivial idempotents, and the two classes meet only at $0$. The star preserves the nilpotent set and fixes none of it, the natural conjugation sends $\tilde\Upsilon$ to $-\tilde\Upsilon$, and in the model $M_2(\mathbb{C})$ the nilpotents are the nonzero trace-free singular matrices, the conjugates of the strictly triangular Jordan block, with the two off-diagonal Peirce units as the standard pair. Of the remarkable subspaces only the vector subspace contains one, and it contains all of them.
 
@@ -342,14 +342,14 @@ Every nonzero nilpotent annihilates itself, so it is a two-sided zero divisor an
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_1e_2=e_3$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\tilde\Xi$ | A root of $0$, $\tilde\Xi^2=0$ |
-| $\tilde\Xi=\Xi_0e_0+\boldsymbol\Xi$, $\boldsymbol\Xi=\boldsymbol\xi+i\boldsymbol\xi'$ | Scalar and vector parts of a root; $\boldsymbol\xi,\boldsymbol\xi'$ real pure |
-| $(\mathbf P,\mathbf Q)=\sum_kP_kQ_k$ | General plain bilinear form of two vector parts |
+| $\tilde\Xi=\Xi_0e_0+\vec\Xi$, $\vec\Xi=\vec\xi+i\vec\xi'$ | Scalar and vector parts of a root; $\vec\xi,\vec\xi'$ real pure |
+| $(\vec P,\vec Q)=\sum_kP_kQ_k$ | General plain bilinear form of two vector parts |
 | $C(\tilde P)=\sum_\mu P_\mu^2$ | The central square, $\tilde P\tilde P^{\natural}=C(\tilde P)e_0$ |
 | $\tilde\Upsilon$ | A nilpotent, $\tilde\Upsilon^2=0$ |
 | $\tilde\Upsilon_1,\tilde\Upsilon_2$ | The two off-diagonal Peirce units $\tfrac{ie_1-e_2}{2}$, $\tfrac{ie_1+e_2}{2}$ |
-| $\{\tilde\Upsilon\}$ | The nilpotent cone, $\{P_0=0,\ (\mathbf P,\mathbf P)=0\}$ |
-| $\mathbf p,\mathbf p'$ | The two real vector parts of a nilpotent, $\tilde\Upsilon=\mathbf p+i\mathbf p'$, orthogonal and of equal sum of squares |
-| $r(\hat{\mathbf p}+i\hat{\mathbf p}')$ | The parametrisation of the cone over orthonormal real unit pairs |
+| $\{\tilde\Upsilon\}$ | The nilpotent cone, $\{P_0=0,\ (\vec P,\vec P)=0\}$ |
+| $\vec p,\vec p'$ | The two real vector parts of a nilpotent, $\tilde\Upsilon=\vec p+i\vec p'$, orthogonal and of equal sum of squares |
+| $r(\hat p+i\hat p')$ | The parametrisation of the cone over orthonormal real unit pairs |
 | $\tilde P$, $\tilde Q$ | The generic element of a statement that holds for every element |
 
 ## Further Reading

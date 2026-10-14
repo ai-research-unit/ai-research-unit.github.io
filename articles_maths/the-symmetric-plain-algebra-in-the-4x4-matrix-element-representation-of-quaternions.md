@@ -6,7 +6,7 @@ The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde p
 
 **This is not the algebra $\mathbb{H}$.** The two algebras share the space, the addition, the real scalars and the unit, but $\bullet$ is a different multiplication and the projection onto the scalar line is not multiplicative. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives nothing new.
 
-**Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1^2=e_2^2=e_3^2=-e_0$. An element is $\tilde q=q_0e_0+\mathbf q$ with $\mathbf q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; the norm is $N(\tilde q)=q_0^2+|\mathbf q|^2$, the trace form is $\tau(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\bullet\tilde q)$, and the left and right regular representations $\mathsf{M}_4$, $\mathsf{M}_4'$ are those of *The General Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$*.
+**Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1^2=e_2^2=e_3^2=-e_0$. An element is $\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; the norm is $N(\tilde q)=q_0^2+|\vec q|^2$, the trace form is $\tau(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\bullet\tilde q)$, and the left and right regular representations $\mathsf{M}_4$, $\mathsf{M}_4'$ are those of *The General Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$*.
 
 ## The Representation
 
@@ -34,7 +34,7 @@ $$
 \det\mathsf{M}_4(\tilde q)=N(\tilde q)^2 .
 $$
 
-*Proof.* The left multiplication by $\tilde q$ has the eigenvalues $q_0\pm|\mathbf q|\,i$ as a complex linear map, each with multiplicity two, so the trace is $4q_0$ and the determinant is $(q_0^2+|\mathbf q|^2)^2=N(\tilde q)^2$; both are quoted from *The General Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$*.
+*Proof.* The left multiplication by $\tilde q$ has the eigenvalues $q_0\pm|\vec q|\,i$ as a complex linear map, each with multiplicity two, so the trace is $4q_0$ and the determinant is $(q_0^2+|\vec q|^2)^2=N(\tilde q)^2$; both are quoted from *The General Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$*.
 
 **Corollary.** The **Jordan inverse** is $\mathsf{M}_4(\tilde q^{-1})=(2q_0\mathrm I-\mathsf{M}_4(\tilde q))/N(\tilde q)$ for $\tilde q\neq0$; the invertibility criterion is $\det\neq0$, and the determinant being a square of the norm, it vanishes only at the origin.
 
@@ -43,7 +43,7 @@ $$
 **Theorem.** On the model the trace form is a **quarter of the matrix trace pairing**:
 
 $$
-\operatorname{tr}\bigl(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q)\bigr)=4\,\tau(\tilde p,\tilde q)=4\bigl(p_0q_0-\mathbf p\cdot\mathbf q\bigr).
+\operatorname{tr}\bigl(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q)\bigr)=4\,\tau(\tilde p,\tilde q)=4\bigl(p_0q_0-\vec p\cdot\vec q\bigr).
 $$
 
 *Proof.* $\operatorname{tr}\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q)=\operatorname{tr}\mathsf{M}_4(\tilde p\tilde q)=4\,\mathrm{Sc}(\tilde p\tilde q)=4\,\tau(\tilde p,\tilde q)$, using the multiplicativity, the trace of the regular matrix and $\tau(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\tilde q)$ of *The Trace Form and the Invariance of the Symmetric Plain Algebra*.

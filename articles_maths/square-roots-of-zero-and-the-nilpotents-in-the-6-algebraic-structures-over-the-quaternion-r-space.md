@@ -23,7 +23,7 @@ and every table of the article follows this order, family by family and, inside 
 
 **Scope and owners.** This article owns the comparison of the six root sets of $0$ and of the six square-zero sets, the cone reading of the root set of $0$, the comparison of the three classes of the square-zero elements, the zero divisors and the roots of $0$, and the nilpotent as the nonzero member of the set. The per-structure results stay owned by their articles, cited one by one below: the square-zero sets by the six *Nilpotents of the …*. The products are *The 6 Products of the Quaternion Real Space* and *The Two General Products of the Quaternion $\mathbb{R}$ Space*; the structures and the codes are *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; the vocabulary stated once for a general product, the root of a central value and the nilpotent, is *Definitions for the Study of the 6 Algebraic Structures*; the two forms are *The 2 Forms over the Quaternion $\mathbb{R}$ Space*; the zero divisors, their sets and the one-sided inverse equations are *Zero Divisors in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; the division property of the plain product is *Norm and Invertibility in the General Plain Algebra of Quaternions*; the annihilating partners are *Annihilators in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; and the biquaternion case is *Nilpotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
-**Conventions.** $\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_0=1$; a general element is $\tilde\xi=\xi_0e_0+\boldsymbol\xi$ with $\xi_0\in\mathbb{R}$ and $\boldsymbol\xi=\sum_k\xi_ke_k$; the natural conjugation is $\tilde\xi^{\natural}=\xi_0-\boldsymbol\xi$; the **plain form** is $B(\tilde\xi)=\xi_0^{2}-\lvert\boldsymbol\xi\rvert^{2}=\mathrm{Sc}(\tilde\xi^{2})$; and the **quaternion form** is $N(\tilde\xi)=\xi_0^{2}+\lvert\boldsymbol\xi\rvert^{2}=\mathrm{Sc}(\tilde\xi^{\natural}\tilde\xi)$, the norm. The plain product is $\tilde\xi\tilde\eta$, the Jordan product is $\tilde\xi\bullet\tilde\eta=\tfrac12(\tilde\xi\tilde\eta+\tilde\eta\tilde\xi)$, the plain cross product is $\tilde\xi\wedge\tilde\eta=\tfrac12(\tilde\xi\tilde\eta-\tilde\eta\tilde\xi)=\boldsymbol\xi\times\boldsymbol\eta$, the quaternionic product is $\tilde\xi^{\natural}\tilde\eta$, its symmetrisation is the scalar-valued rule $N(\tilde\xi,\tilde\eta)e_0$, and the quaternionic cross product is $\tilde\xi\wedge^{\natural}\tilde\eta=\tfrac12(\tilde\xi^{\natural}\tilde\eta-\tilde\eta^{\natural}\tilde\xi)$. The **root of a central value** is defined in *Definitions for the Study of the 6 Algebraic Structures* §*The Element Vocabulary* as an element $\tilde\xi$ with $\tilde\xi^{2}=c$ for a central $c$, the class of them being the set of its solutions, with no nonzero requirement; the **nilpotent** is defined in the same section as a nonzero square-zero element. The origin is therefore counted with the roots of $0$ wherever it solves the equation, and the places where an owner counts the nonzero roots alone are read as the origin alone.
+**Conventions.** $\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_0=1$; a general element is $\tilde\xi=\xi_0e_0+\vec\xi$ with $\xi_0\in\mathbb{R}$ and $\vec\xi=\sum_k\xi_ke_k$; the natural conjugation is $\tilde\xi^{\natural}=\xi_0-\vec\xi$; the **plain form** is $B(\tilde\xi)=\xi_0^{2}-\lvert\vec\xi\rvert^{2}=\mathrm{Sc}(\tilde\xi^{2})$; and the **quaternion form** is $N(\tilde\xi)=\xi_0^{2}+\lvert\vec\xi\rvert^{2}=\mathrm{Sc}(\tilde\xi^{\natural}\tilde\xi)$, the norm. The plain product is $\tilde\xi\tilde\eta$, the Jordan product is $\tilde\xi\bullet\tilde\eta=\tfrac12(\tilde\xi\tilde\eta+\tilde\eta\tilde\xi)$, the plain cross product is $\tilde\xi\wedge\tilde\eta=\tfrac12(\tilde\xi\tilde\eta-\tilde\eta\tilde\xi)=\vec\xi\times\vec\eta$, the quaternionic product is $\tilde\xi^{\natural}\tilde\eta$, its symmetrisation is the scalar-valued rule $N(\tilde\xi,\tilde\eta)e_0$, and the quaternionic cross product is $\tilde\xi\wedge^{\natural}\tilde\eta=\tfrac12(\tilde\xi^{\natural}\tilde\eta-\tilde\eta^{\natural}\tilde\xi)$. The **root of a central value** is defined in *Definitions for the Study of the 6 Algebraic Structures* §*The Element Vocabulary* as an element $\tilde\xi$ with $\tilde\xi^{2}=c$ for a central $c$, the class of them being the set of its solutions, with no nonzero requirement; the **nilpotent** is defined in the same section as a nonzero square-zero element. The origin is therefore counted with the roots of $0$ wherever it solves the equation, and the places where an owner counts the nonzero roots alone are read as the origin alone.
 
 ## The Roots of Zero in the Six Structures
 
@@ -31,7 +31,7 @@ The square of a structure is its operation read at the two equal arguments, so e
 
 | the square | the structures | at the two equal arguments |
 |---|---|---|
-| the plain square | $\mathrm{GPA}$, $\mathrm{SPA}$ | $(\xi_0^{2}-\lvert\boldsymbol\xi\rvert^{2})e_0+2\xi_0\boldsymbol\xi$ |
+| the plain square | $\mathrm{GPA}$, $\mathrm{SPA}$ | $(\xi_0^{2}-\lvert\vec\xi\rvert^{2})e_0+2\xi_0\vec\xi$ |
 | the central square | $\mathrm{GQA}$, $\mathrm{SQA}$ | $N(\tilde\xi)e_0$ |
 | the vanishing square | $\mathrm{APA}$, $\mathrm{AQA}$ | $0$ |
 
@@ -51,13 +51,13 @@ and it is the square-zero set of the structure.
 
 **Theorem (the six root sets of $0$; quoted).** Among the six structures of the quaternion real space the root set of $0$ is the origin alone $\{0\}$ for $\mathrm{GPA}$, $\mathrm{SPA}$, $\mathrm{GQA}$ and $\mathrm{SQA}$, and it is the whole space $\mathbb{H}$ for $\mathrm{APA}$ and $\mathrm{AQA}$. Only two root sets occur, and no structure of the six has a root set of $0$ that is neither a point nor the whole space.
 
-*Proof.* For the general plain structure the pair $B(\tilde\xi)=0$, $2\xi_0\boldsymbol\xi=0$ forces the origin: the second equation gives $\xi_0=0$ or $\boldsymbol\xi=0$, the pure branch gives $\lvert\boldsymbol\xi\rvert^{2}=0$ and the central branch $\xi_0^{2}=0$, and the plain form, indefinite though it is, has no real isotropic direction, its isotropic cone being real only after complexification. For the general quaternionic structure the equation is $N(\tilde\xi)=0$ with $N$ a sum of four real squares, so the origin alone vanishes. The two symmetric structures have the same square on the diagonal, the Jordan square being the plain square and the symmetrised quaternionic square being the norm times $e_0$, so they keep the same one-point sets. Both cross products are alternating, so $\tilde\xi\wedge\tilde\xi=0$ and $\tilde\xi\wedge^{\natural}\tilde\xi=0$ for every element, and the equation is satisfied identically. The assertion that no third set occurs is the classification of the squares: the square of a structure of the six is the plain square, the norm times $e_0$, or zero, and the first two have the origin as their only real zero.
+*Proof.* For the general plain structure the pair $B(\tilde\xi)=0$, $2\xi_0\vec\xi=0$ forces the origin: the second equation gives $\xi_0=0$ or $\vec\xi=0$, the pure branch gives $\lvert\vec\xi\rvert^{2}=0$ and the central branch $\xi_0^{2}=0$, and the plain form, indefinite though it is, has no real isotropic direction, its isotropic cone being real only after complexification. For the general quaternionic structure the equation is $N(\tilde\xi)=0$ with $N$ a sum of four real squares, so the origin alone vanishes. The two symmetric structures have the same square on the diagonal, the Jordan square being the plain square and the symmetrised quaternionic square being the norm times $e_0$, so they keep the same one-point sets. Both cross products are alternating, so $\tilde\xi\wedge\tilde\xi=0$ and $\tilde\xi\wedge^{\natural}\tilde\xi=0$ for every element, and the equation is satisfied identically. The assertion that no third set occurs is the classification of the squares: the square of a structure of the six is the plain square, the norm times $e_0$, or zero, and the first two have the origin as their only real zero.
 
 The six are read one by one below; each names the product, its square and its root set of $0$, and cites the article that owns it.
 
 ### $\mathrm{GPA}$, the general plain algebra
 
-The product is $\tilde\xi\tilde\eta$, and its square is the plain square, of scalar part $B(\tilde\xi)=\xi_0^{2}-\lvert\boldsymbol\xi\rvert^{2}$ and vector part $2\xi_0\boldsymbol\xi$. The root set of $0$ is $\{0\}$ alone, by the division property of the plain algebra; the isotropic cone of the plain form is real only after complexification, and the second equation of the pair removes it. The article is *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*.
+The product is $\tilde\xi\tilde\eta$, and its square is the plain square, of scalar part $B(\tilde\xi)=\xi_0^{2}-\lvert\vec\xi\rvert^{2}$ and vector part $2\xi_0\vec\xi$. The root set of $0$ is $\{0\}$ alone, by the division property of the plain algebra; the isotropic cone of the plain form is real only after complexification, and the second equation of the pair removes it. The article is *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*.
 
 ### $\mathrm{SPA}$, the symmetric plain algebra
 
@@ -65,7 +65,7 @@ The product is the Jordan product $\tilde\xi\bullet\tilde\eta$, and its square i
 
 ### $\mathrm{APA}$, the antisymmetric plain algebra
 
-The product is the commutator $\tilde\xi\wedge\tilde\eta=\boldsymbol\xi\times\boldsymbol\eta$, the cross product of the two vector parts. It is alternating, so at the two equal arguments it vanishes, $\tilde\xi\wedge\tilde\xi=0$, and the equation is satisfied identically. The root set of $0$ is every element of the space; the nonzero ones are at once the square-zero set, the nilpotent set and the zero-divisor set of the block, all three being the punctured space. The article is *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Plain Algebra*.
+The product is the commutator $\tilde\xi\wedge\tilde\eta=\vec\xi\times\vec\eta$, the cross product of the two vector parts. It is alternating, so at the two equal arguments it vanishes, $\tilde\xi\wedge\tilde\xi=0$, and the equation is satisfied identically. The root set of $0$ is every element of the space; the nonzero ones are at once the square-zero set, the nilpotent set and the zero-divisor set of the block, all three being the punctured space. The article is *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Plain Algebra*.
 
 ### $\mathrm{GQA}$, the general quaternionic algebra
 
@@ -85,8 +85,8 @@ The product is the commutator $\tilde\xi\wedge^{\natural}\tilde\eta=\tfrac12(\ti
 
 | the family | the equation of the root of $0$ |
 |---|---|
-| the plain family | $\xi_0^{2}-\lvert\boldsymbol\xi\rvert^{2}=0$ with $2\xi_0\boldsymbol\xi=0$ |
-| the quaternionic family | $N(\tilde\xi)=\xi_0^{2}+\lvert\boldsymbol\xi\rvert^{2}=0$ |
+| the plain family | $\xi_0^{2}-\lvert\vec\xi\rvert^{2}=0$ with $2\xi_0\vec\xi=0$ |
+| the quaternionic family | $N(\tilde\xi)=\xi_0^{2}+\lvert\vec\xi\rvert^{2}=0$ |
 | the two antisymmetric structures | $0=0$, satisfied identically |
 
 ## The Nilpotents in the Six Structures
@@ -105,7 +105,7 @@ The six are read one by one below; each names the product, its diagonal and its 
 
 ### $\mathrm{GPA}$, the general plain algebra
 
-The product is $\tilde\nu\tilde\eta$, and its diagonal is the plain square, of scalar part $B(\tilde\nu)=\nu_0^{2}-\lvert\boldsymbol\nu\rvert^{2}$ and vector part $2\nu_0\boldsymbol\nu$. The square-zero set is $\{0\}$ alone, by the division property of the plain algebra, and there is no nilpotent. The article is *Nilpotents of the General Plain Algebra*.
+The product is $\tilde\nu\tilde\eta$, and its diagonal is the plain square, of scalar part $B(\tilde\nu)=\nu_0^{2}-\lvert\vec\nu\rvert^{2}$ and vector part $2\nu_0\vec\nu$. The square-zero set is $\{0\}$ alone, by the division property of the plain algebra, and there is no nilpotent. The article is *Nilpotents of the General Plain Algebra*.
 
 ### $\mathrm{SPA}$, the symmetric plain algebra
 
@@ -113,7 +113,7 @@ The product is the Jordan product $\tilde\nu\bullet\tilde\eta$, and its diagonal
 
 ### $\mathrm{APA}$, the antisymmetric plain algebra
 
-The product is the plain cross product $\tilde\nu\wedge\tilde\eta=\boldsymbol\nu\times\boldsymbol\eta$, alternating, so its diagonal vanishes identically. The square-zero set is the whole space, and every nonzero element is a nilpotent of index two. The article is *Nilpotents of the Antisymmetric Plain Algebra*.
+The product is the plain cross product $\tilde\nu\wedge\tilde\eta=\vec\nu\times\vec\eta$, alternating, so its diagonal vanishes identically. The square-zero set is the whole space, and every nonzero element is a nilpotent of index two. The article is *Nilpotents of the Antisymmetric Plain Algebra*.
 
 ### $\mathrm{GQA}$, the general quaternionic algebra
 
@@ -145,8 +145,8 @@ The set is collected once below, with the two readings of the roots of $0$ and t
 
 | the family | the structure | the square | the square-zero equation | the root set of $0$, the square-zero set | the nilpotents |
 |---|---|---|---|---|---|
-| the plain algebra | $\mathrm{GPA}$ | $\tilde\xi^{2}$ | $B(\tilde\xi)=0$, $2\xi_0\boldsymbol\xi=0$ | $\{0\}$ | none |
-| | $\mathrm{SPA}$ | $\tilde\xi^{2}$ | $B(\tilde\xi)=0$, $2\xi_0\boldsymbol\xi=0$ | $\{0\}$ | none |
+| the plain algebra | $\mathrm{GPA}$ | $\tilde\xi^{2}$ | $B(\tilde\xi)=0$, $2\xi_0\vec\xi=0$ | $\{0\}$ | none |
+| | $\mathrm{SPA}$ | $\tilde\xi^{2}$ | $B(\tilde\xi)=0$, $2\xi_0\vec\xi=0$ | $\{0\}$ | none |
 | | $\mathrm{APA}$ | $0$ | satisfied identically | $\mathbb{H}$ | every nonzero element |
 | the quaternionic algebra | $\mathrm{GQA}$ | $N(\tilde\xi)e_0$ | $N(\tilde\xi)=0$ | $\{0\}$ | none |
 | | $\mathrm{SQA}$ | $N(\tilde\xi)e_0$ | $N(\tilde\xi)=0$ | $\{0\}$ | none |
@@ -183,8 +183,8 @@ The nilpotents are the nonzero members of the square-zero sets: none in the four
 | $\{0\}$ | the square-zero set of GPA, SPA, GQA and SQA, and their nilpotent set |
 | $\mathbb{H}$ | the square-zero set of APA and AQA |
 | $\mathbb{H}\setminus\{0\}$ | the nilpotent set, and the zero-divisor set, of APA and AQA |
-| $B(\tilde\xi)=\xi_0^{2}-\lvert\boldsymbol\xi\rvert^{2}$ | the plain form, the scalar part of the plain square |
-| $N(\tilde\xi)=\xi_0^{2}+\lvert\boldsymbol\xi\rvert^{2}$ | the quaternion form, the square of the quaternionic family, and the norm |
+| $B(\tilde\xi)=\xi_0^{2}-\lvert\vec\xi\rvert^{2}$ | the plain form, the scalar part of the plain square |
+| $N(\tilde\xi)=\xi_0^{2}+\lvert\vec\xi\rvert^{2}$ | the quaternion form, the square of the quaternionic family, and the norm |
 | $\mathrm{Vect}(\mathbb{H})\setminus\{0\}$ | the zero-divisor set of SPA, for the comparison |
 | cone, apex | a set that contains every real multiple of each of its elements, and its origin |
 | $\mathrm{GPA},\dots,\mathrm{AQA}$ | the six structures of the space, the two general products and their four parts |

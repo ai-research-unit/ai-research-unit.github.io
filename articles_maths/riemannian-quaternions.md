@@ -2,13 +2,13 @@
 
 ## Introduction
 
-Hamilton's quaternions are the four-dimensional real algebra with a fixed basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, and the interval between two events of the algebra is the scalar part of the square of their difference, $\mathrm{Sc}(\tilde q^2) = q_0^2-\mathbf q\cdot\mathbf q$. A **Riemannian quaternion** is a quaternion whose four components are read against a basis that is allowed to vary from point to point, so that the four squared basis vectors, and with them the interval, become positional data. The name is the source's, and it is not the name of a Riemannian manifold: the object is a quaternion in a moving frame, and the geometry it carries is the diagonal form read from the frame.
+Hamilton's quaternions are the four-dimensional real algebra with a fixed basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$, and the interval between two events of the algebra is the scalar part of the square of their difference, $\mathrm{Sc}(\tilde q^2) = q_0^2-\vec q\cdot\vec q$. A **Riemannian quaternion** is a quaternion whose four components are read against a basis that is allowed to vary from point to point, so that the four squared basis vectors, and with them the interval, become positional data. The name is the source's, and it is not the name of a Riemannian manifold: the object is a quaternion in a moving frame, and the geometry it carries is the diagonal form read from the frame.
 
 The article develops three things. The first is the frame and the interval: the frame is a quadruple of basis elements whose squares are prescribed, the interval of a displacement is diagonal in the frame with the squares of the frame as its coefficients, and the metric is therefore dynamic exactly when the frame is. The second is the differential calculus of the construction: the derivative of a coefficient times a frame element splits, by the Leibniz rule, into a part from the coefficient and a part from the frame, and the source names the resulting freedom of attribution the *general equivalence principle*. The third is the **rope**, the vector part of the square of a displacement, which is the companion of the metric in the construction and is nonzero exactly when the displacement has both a temporal and a spatial part.
 
 The treatment is mathematical. No physical object is introduced and no physical interpretation is invoked; the source's reading of one example as a field of a central mass is recorded as the source's and is not used.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_k^2=-e_0$, $e_1e_2=e_3$. A quaternion is $\tilde q = q_0e_0+\mathbf q$, with scalar part $\mathrm{Sc}\,\tilde q = q_0$ and vector part $\mathbf q = \mathrm{Vect}\,\tilde q$, the conjugate is $\tilde{q}^{\natural} = q_0e_0-\mathbf q$, and the norm is $N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2+|\mathbf q|^2$. The frame elements are written with a hat, $\hat\imath_0,\hat\imath_1,\hat\imath_2,\hat\imath_3$, and their scalar multiples with a plain letter, $\hat\imath_\mu = \imath_\mu e_\mu$ with $\imath_\mu\neq0$ real.
+Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_k^2=-e_0$, $e_1e_2=e_3$. A quaternion is $\tilde q = q_0e_0+\vec q$, with scalar part $\mathrm{Sc}\,\tilde q = q_0$ and vector part $\vec q = \mathrm{Vect}\,\tilde q$, the conjugate is $\tilde{q}^{\natural} = q_0e_0-\vec q$, and the norm is $N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2+|\vec q|^2$. The frame elements are written with a hat, $\hat\imath_0,\hat\imath_1,\hat\imath_2,\hat\imath_3$, and their scalar multiples with a plain letter, $\hat\imath_\mu = \imath_\mu e_\mu$ with $\imath_\mu\neq0$ real.
 
 ## The Frame
 
@@ -142,7 +142,7 @@ $$
 
 With the source's weights $w_k=\tfrac13$ this is $\mathrm{Vect}(\mathrm dA^2) = 2(\mathrm da_0)\sum_k\tfrac13(\mathrm da_k)\hat\imath_0\hat\imath_k$, and the three products $\hat\imath_0\hat\imath_k$ of a temporal frame element with a spatial one are the source's **3-rope**.
 
-*Proof.* Write $\mathrm dA = c_0\hat\imath_0+\mathbf c$ with $\mathbf c = \sum_k c_k\hat\imath_k$ and $c_k = w_k\mathrm da_k$. Then $\mathrm dA^2 = c_0^2\hat\imath_0^2 + c_0\hat\imath_0\mathbf c + \mathbf c c_0\hat\imath_0 + \mathbf c^2$. The vector part of $\mathbf c^2$ is zero, because the square of a pure quaternion is a scalar, and the two middle terms are each $c_0\hat\imath_0\mathbf c$, with $\hat\imath_0$ central; adding them gives the display.
+*Proof.* Write $\mathrm dA = c_0\hat\imath_0+\vec c$ with $\vec c = \sum_k c_k\hat\imath_k$ and $c_k = w_k\mathrm da_k$. Then $\mathrm dA^2 = c_0^2\hat\imath_0^2 + c_0\hat\imath_0\vec c + \vec c c_0\hat\imath_0 + \vec c^2$. The vector part of $\vec c^2$ is zero, because the square of a pure quaternion is a scalar, and the two middle terms are each $c_0\hat\imath_0\vec c$, with $\hat\imath_0$ central; adding them gives the display.
 
 **Corollary.** The rope vanishes exactly when the displacement has no temporal part or no spatial part, that is when $\mathrm da_0 = 0$ or $\mathrm da_1 = \mathrm da_2 = \mathrm da_3 = 0$; otherwise it is a nonzero pure quaternion, and it lies in the three-dimensional subspace spanned by $\hat\imath_0\hat\imath_1,\hat\imath_0\hat\imath_2,\hat\imath_0\hat\imath_3$.
 
@@ -196,7 +196,7 @@ The construction is the second of the two ways presented in the corpus of making
 |---|---|
 | $\mathbb{H}$ | Quaternion algebra over $\mathbb{R}$ |
 | $e_0=1,e_1,e_2,e_3$ | Fixed basis, $e_k^2=-e_0$ |
-| $\tilde q = q_0e_0+\mathbf q$ | Quaternion, scalar part $q_0$, vector part $\mathbf q$ |
+| $\tilde q = q_0e_0+\vec q$ | Quaternion, scalar part $q_0$, vector part $\vec q$ |
 | $\mathrm{Sc},\mathrm{Vect}$ | Scalar and vector part functionals |
 | $N(\tilde q)=\tilde q\tilde{q}^{\natural}$ | Quaternion norm |
 | $\imath_0,\imath_1,\imath_2,\imath_3$ | Frame functions on the domain |

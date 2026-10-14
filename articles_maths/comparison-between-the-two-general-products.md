@@ -8,7 +8,7 @@ This article tabulates the properties that separate the two products — bilinea
 
 The article assumes the two products and their coordinate rules from *The Two General Products of the Quaternion $\mathbb{R}$ Space*, the article preceding this one, and it uses the linking identities of *Relations Between the Two General Products*, the article preceding this one, for the unit and the square rows. The left and right multiplications and the associator are *The Two General Products and Operators*, below this article in this category.
 
-**Conventions.** Throughout, $\tilde p=p_0e_0+\mathbf p$ and $\tilde q=q_0e_0+\mathbf q$ name elements, $e_0=1$ is the unit of the algebra, $\mathbf p$ is the vector part of $\tilde p$, and $\tilde q^{\natural}=q_0e_0-\mathbf q$ is the quaternion conjugation. The two products are written $\tilde p\tilde q$ and $\tilde p^{\natural}\tilde q$.
+**Conventions.** Throughout, $\tilde p=p_0e_0+\vec p$ and $\tilde q=q_0e_0+\vec q$ name elements, $e_0=1$ is the unit of the algebra, $\vec p$ is the vector part of $\tilde p$, and $\tilde q^{\natural}=q_0e_0-\vec q$ is the quaternion conjugation. The two products are written $\tilde p\tilde q$ and $\tilde p^{\natural}\tilde q$.
 
 ## The Property Table
 
@@ -20,11 +20,11 @@ The article assumes the two products and their coordinate rules from *The Two Ge
 | commutative | no | no |
 | $e_0$ is a left identity | yes | yes |
 | $e_0$ is a right identity | yes | no |
-| the square $\tilde p^2$ | $B(\tilde p)e_0+2p_0\mathbf p$ | $N(\tilde p)e_0$, scalar |
+| the square $\tilde p^2$ | $B(\tilde p)e_0+2p_0\vec p$ | $N(\tilde p)e_0$, scalar |
 | the values on the units | $e_1e_2=e_3$, $e_1^2=-e_0$ | $e_1^{\natural}e_2=-e_3$, $e_1^{\natural}e_1=e_0$ |
 | the radical | $\{0\}$ | $\{0\}$ |
 
-The last row is the **radical** of the product, the set of elements annihilating the whole space on both sides, $\{x:f(x,y)=0=f(y,x)\ \text{for every}\ y\}$; it is the same for the two products and it is the zero subspace, the algebra being a division algebra and the quaternionic product having no zero divisor. The rows for the square read $B(\tilde p)=p_0^2-\lvert\mathbf p\rvert^2$ and $N(\tilde p)=\lvert p\rvert^2$; the two algebraic norms are *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space*, below this article in this category.
+The last row is the **radical** of the product, the set of elements annihilating the whole space on both sides, $\{x:f(x,y)=0=f(y,x)\ \text{for every}\ y\}$; it is the same for the two products and it is the zero subspace, the algebra being a division algebra and the quaternionic product having no zero divisor. The rows for the square read $B(\tilde p)=p_0^2-\lvert\vec p\rvert^2$ and $N(\tilde p)=\lvert p\rvert^2$; the two algebraic norms are *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space*, below this article in this category.
 
 ## Bilinearity
 
@@ -52,15 +52,15 @@ Neither product is commutative. For the plain product the failure is the failure
 
 The square of the plain product is a general quaternion and the square of the quaternionic product is always a scalar, and this is the sharpest single difference between the two products at the two equal arguments.
 
-**Proposition (the two squares).** For every $\tilde p=p_0e_0+\mathbf p$,
+**Proposition (the two squares).** For every $\tilde p=p_0e_0+\vec p$,
 
 $$
-\tilde p^2=B(\tilde p)e_0+2p_0\mathbf p , \qquad \tilde p^{\natural}\tilde p=N(\tilde p)e_0=|\tilde p|^2e_0 ,
+\tilde p^2=B(\tilde p)e_0+2p_0\vec p , \qquad \tilde p^{\natural}\tilde p=N(\tilde p)e_0=|\tilde p|^2e_0 ,
 $$
 
-with $B(\tilde p)=p_0^2-\lvert\mathbf p\rvert^2$ and $N(\tilde p)=p_0^2+\lvert\mathbf p\rvert^2$. The square of the plain product is scalar exactly when $\tilde p$ is real or $\tilde p$ is purely imaginary with $p_0=0$; the square of the quaternionic product is scalar for every $\tilde p$.
+with $B(\tilde p)=p_0^2-\lvert\vec p\rvert^2$ and $N(\tilde p)=p_0^2+\lvert\vec p\rvert^2$. The square of the plain product is scalar exactly when $\tilde p$ is real or $\tilde p$ is purely imaginary with $p_0=0$; the square of the quaternionic product is scalar for every $\tilde p$.
 
-*Proof.* Expanding the plain product on a single element, $(\mathbf p)^2=-\lvert\mathbf p\rvert^2e_0$ and $\mathbf p\times\mathbf p=0$, so $\tilde p^2=p_0^2e_0+2p_0\mathbf p+\mathbf p^2=(p_0^2-\lvert\mathbf p\rvert^2)e_0+2p_0\mathbf p$. The quaternionic square is $\tilde p^{\natural}\tilde p$, which is the product of the conjugate with the element, equal to $\lvert\tilde p\rvert^2e_0$ by the multiplicativity of the norm; and the vector part $2p_0\mathbf p$ of the plain square vanishes exactly when $p_0=0$ or $\mathbf p=0$.
+*Proof.* Expanding the plain product on a single element, $(\vec p)^2=-\lvert\vec p\rvert^2e_0$ and $\vec p\times\vec p=0$, so $\tilde p^2=p_0^2e_0+2p_0\vec p+\vec p^2=(p_0^2-\lvert\vec p\rvert^2)e_0+2p_0\vec p$. The quaternionic square is $\tilde p^{\natural}\tilde p$, which is the product of the conjugate with the element, equal to $\lvert\tilde p\rvert^2e_0$ by the multiplicativity of the norm; and the vector part $2p_0\vec p$ of the plain square vanishes exactly when $p_0=0$ or $\vec p=0$.
 
 The two squares are the two algebraic norms of the chapter read at the two equal arguments, and the fact that one is scalar and the other is not is the reason the plain product has no invertibility criterion in the norm while the quaternionic product does; the norms, their multiplicativity and their invertibility criteria are *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space*, below this article in this category.
 
@@ -84,7 +84,7 @@ So neither product has a nonzero annihilator, and both are **nondegenerate** in 
 
 ## Summary
 
-The comparison of the two general products of $\mathbb{H}$ is the table with the rows bilinearity, associativity, the unit, commutativity, the square, the values and the radical. The general plain product is $\mathbb{R}$-bilinear in each slot, associative, non-commutative, with the two-sided unit $e_0$, with the square $\tilde p^2=(p_0^2-\lvert\mathbf p\rvert^2)e_0+2p_0\mathbf p$, and the radical $\{0\}$. The general quaternionic product is $\mathbb{R}$-bilinear in each slot, non-associative, non-commutative, with the left unit $e_0$ and no right one, with the scalar square $\tilde p^{\natural}\tilde p=\lvert\tilde p\rvert^2e_0$, and the radical $\{0\}$.
+The comparison of the two general products of $\mathbb{H}$ is the table with the rows bilinearity, associativity, the unit, commutativity, the square, the values and the radical. The general plain product is $\mathbb{R}$-bilinear in each slot, associative, non-commutative, with the two-sided unit $e_0$, with the square $\tilde p^2=(p_0^2-\lvert\vec p\rvert^2)e_0+2p_0\vec p$, and the radical $\{0\}$. The general quaternionic product is $\mathbb{R}$-bilinear in each slot, non-associative, non-commutative, with the left unit $e_0$ and no right one, with the scalar square $\tilde p^{\natural}\tilde p=\lvert\tilde p\rvert^2e_0$, and the radical $\{0\}$.
 
 The classification isolates the general plain product as the only associative and two-sidedly unital one of the two, and hence as the only multiplication of an associative unital algebra over $\mathbb{R}$. The two products agree on the pairs with a real first factor and disagree elsewhere, and on the units they differ by a sign on every pair except those.
 
@@ -94,8 +94,8 @@ The classification isolates the general plain product as the only associative an
 |---|---|
 | $\tilde p\tilde q$ | the general plain bilinear product |
 | $\tilde p^{\natural}\tilde q$ | the general quaternionic bilinear product |
-| $B(\tilde p)=p_0^2-\lvert\mathbf p\rvert^2$ | the value on the square of the plain product |
-| $N(\tilde p)=p_0^2+\lvert\mathbf p\rvert^2$ | the value on the square of the quaternionic product |
+| $B(\tilde p)=p_0^2-\lvert\vec p\rvert^2$ | the value on the square of the plain product |
+| $N(\tilde p)=p_0^2+\lvert\vec p\rvert^2$ | the value on the square of the quaternionic product |
 | $\{x:f(x,y)=0=f(y,x)\ \forall y\}=\{0\}$ | the radical of each product |
 | $e_0$ | two-sided unit for the plain product, left unit for the quaternionic one |
 | $(\tilde p^{\natural}\tilde q)^{\natural}\tilde r-\tilde p^{\natural}(\tilde q^{\natural}\tilde r)=(\tilde q^{\natural}\tilde p-\tilde p^{\natural}\tilde q^{\natural})\tilde r$ | the associator of the quaternionic product |

@@ -483,7 +483,7 @@ holds for left regular $f$, its mirror image with the kernel on the right holds 
 |---|---|
 | $\mathbb{H}$ | Quaternion algebra |
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
-| $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = \sum_\mu q_\mu e_\mu$ | General quaternion, scalar part $q_0$, vector part $\mathbf{q}$ |
+| $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = \sum_\mu q_\mu e_\mu$ | General quaternion, scalar part $q_0$, vector part $\vec q$ |
 | $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | Quaternion conjugate |
 | $N(\tilde q) = \tilde q\tilde{q}^{\natural} = \lvert \tilde q\rvert^2$ | Quaternion norm and modulus |
 | $\partial_\mu = \partial/\partial q_\mu$ | Coordinate derivatives, $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ |

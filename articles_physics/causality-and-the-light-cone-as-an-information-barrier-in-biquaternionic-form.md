@@ -19,7 +19,7 @@ The cone is also the characteristic cone of the algebra's wave operator. The sta
 
 The word "information" is used in its physical, signal-theoretic sense: a signal is a physical process passing from one event to another that can carry a message, and the question is which pairs of events can be joined by such a process. This is classical relativistic physics with a causal postulate. It is distinct from the operator-theoretic content of the Hermitian sector $\mathbb{M}_+$ treated in the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*; the two interpretations share the algebra and nothing else.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, and the central scalar imaginary $i$ with $i^2 = -1$. The material sector $\mathbb{M}_-$ is the anti-Hermitian subspace, with elements of the form $i\alpha\,e_0 + \mathbf{a}$, $\alpha \in \mathbb{R}$, $\mathbf{a} = a_1e_1+a_2e_2+a_3e_3$ real. The biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, and the material coordinate is $\tilde{Q} = ic\,t\,e_0 + \mathbf{x}$. The $ict$-coordinate metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Numerical statements below were checked in the four-component coefficient representation $\tilde{Q} = Q_0e_0+Q_1e_1+Q_2e_2+Q_3e_3$ with complex coefficients, and on generic configurations rather than on a single null direction.
+**Conventions.** The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, and the central scalar imaginary $i$ with $i^2 = -1$. The material sector $\mathbb{M}_-$ is the anti-Hermitian subspace, with elements of the form $i\alpha\,e_0 + \vec a$, $\alpha \in \mathbb{R}$, $\vec a = a_1e_1+a_2e_2+a_3e_3$ real. The biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$, and the material coordinate is $\tilde{Q} = ic\,t\,e_0 + \vec x$. The $ict$-coordinate metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. Numerical statements below were checked in the four-component coefficient representation $\tilde{Q} = Q_0e_0+Q_1e_1+Q_2e_2+Q_3e_3$ with complex coefficients, and on generic configurations rather than on a single null direction.
 
 ## Events, Displacements and the Causal Order
 
@@ -28,21 +28,21 @@ The word "information" is used in its physical, signal-theoretic sense: a signal
 An event is an element of the material sector,
 
 $$
-\tilde{Q} = ic\,t\,e_0 + \mathbf{x}, \qquad \mathbf{x} = x\,e_1 + y\,e_2 + z\,e_3,
+\tilde{Q} = ic\,t\,e_0 + \vec x, \qquad \vec x = x\,e_1 + y\,e_2 + z\,e_3,
 $$
 
 with $t, x, y, z \in \mathbb{R}$ and $c$ the local speed of light. The scalar part is purely imaginary and the vector part is real, so $\tilde{Q} \in \mathbb{M}_-$. The displacement from an event $p$ to an event $q$ is
 
 $$
-\tilde{Q}_{qp} = \tilde{Q}_q - \tilde{Q}_p = ic\,\Delta t\,e_0 + \Delta\mathbf{x},
+\tilde{Q}_{qp} = \tilde{Q}_q - \tilde{Q}_p = ic\,\Delta t\,e_0 + \Delta\vec x,
 \qquad
-\Delta t = t_q - t_p, \quad \Delta\mathbf{x} = \mathbf{x}_q - \mathbf{x}_p,
+\Delta t = t_q - t_p, \quad \Delta\vec x = \vec x_q - \vec x_p,
 $$
 
 and its biquaternion norm is the invariant interval
 
 $$
-N(\tilde{Q}_{qp}) = \tilde{Q}_{qp}\tilde{Q}^{\natural}_{qp} = (ic\,\Delta t)^2 + |\Delta\mathbf{x}|^2 = -c^2(\Delta t)^2 + |\Delta\mathbf{x}|^2 .
+N(\tilde{Q}_{qp}) = \tilde{Q}_{qp}\tilde{Q}^{\natural}_{qp} = (ic\,\Delta t)^2 + |\Delta\vec x|^2 = -c^2(\Delta t)^2 + |\Delta\vec x|^2 .
 $$
 
 The minus sign in the time–time term is the algebraic consequence of $i^2 = -1$; it is not an independent postulate of the metric. The time orientation of the displacement is carried by the scalar projection,
@@ -81,7 +81,7 @@ The vanishing set of the biquaternion norm on the material sector is the double 
 
 $$
 \mathcal{Z} = \{\, \tilde{Q} \in \mathbb{M}_- : \tilde{Q} \ne 0,\ N(\tilde{Q}) = 0 \,\}
-= \{\, ic\,t\,e_0 + \mathbf{x} : |\mathbf{x}| = c\,|t| \,\},
+= \{\, ic\,t\,e_0 + \vec x : |\vec x| = c\,|t| \,\},
 $$
 
 the light cone of Minkowski space. The companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* proves the following, and it is quoted here rather than repeated.
@@ -89,11 +89,11 @@ the light cone of Minkowski space. The companion article *The Light Cone as the 
 **The cone is the zero-divisor set.** A nonzero biquaternion has $N(\tilde{Q}) = 0$ if and only if it is a zero divisor of $\mathbb{B}$: there is a nonzero $\tilde{R}$ with $\tilde{Q}\tilde{R} = 0$. The zero divisors split into a nilpotent family, whose scalar part vanishes, and a family of multiples of the algebra's idempotents, whose scalar part does not. On the real material slice the second family is the one that occurs: a nonzero null element with $ct \ne 0$ is a multiple of an idempotent by the purely imaginary scalar $2ict$,
 
 $$
-\tilde{Q} = ict\left(e_0 - i\hat{\mathbf{x}}\right) = 2ict\,\tilde\Pi(-\hat{\mathbf{x}}),
+\tilde{Q} = ict\left(e_0 - i\hat x\right) = 2ict\,\tilde\Pi(-\hat x),
 \qquad
-\tilde\Pi(-\hat{\mathbf{x}}) = \tfrac12\left(e_0 - i\hat{\mathbf{x}}\right),
+\tilde\Pi(-\hat x) = \tfrac12\left(e_0 - i\hat x\right),
 \qquad
-\hat{\mathbf{x}} = \frac{\mathbf{x}}{|\mathbf{x}|},
+\hat x = \frac{\vec x}{|\vec x|},
 $$
 
 so the material cone is the idempotent-multiple branch of $\mathcal{Z}$ realized over the reals, and the nilpotent branch would require complex spatial components. The cone is therefore the locus at which the algebra fails to be invertible. Off the cone the inverse exists explicitly,
@@ -147,55 +147,55 @@ The causal order of a physical theory must be transitive: if a signal can pass f
 Write a future-directed nonspacelike displacement in the form
 
 $$
-\tilde{a} = i\alpha_a\,e_0 + \mathbf{a}, \qquad \alpha_a = c\,\Delta t_a > 0, \qquad |\mathbf{a}| \le \alpha_a,
+\tilde{a} = i\alpha_a\,e_0 + \vec a, \qquad \alpha_a = c\,\Delta t_a > 0, \qquad |\vec a| \le \alpha_a,
 $$
 
-the last inequality being $N(\tilde{a}) = -\alpha_a^2 + |\mathbf{a}|^2 \le 0$. Let $\tilde{b} = i\alpha_b\,e_0 + \mathbf{b}$ be a second such displacement. Then
+the last inequality being $N(\tilde{a}) = -\alpha_a^2 + |\vec a|^2 \le 0$. Let $\tilde{b} = i\alpha_b\,e_0 + \vec b$ be a second such displacement. Then
 
 $$
-\tilde{a} + \tilde{b} = i(\alpha_a + \alpha_b)\,e_0 + (\mathbf{a} + \mathbf{b}),
+\tilde{a} + \tilde{b} = i(\alpha_a + \alpha_b)\,e_0 + (\vec a + \vec b),
 $$
 
 and the triangle inequality for the real vector part gives
 
 $$
-|\mathbf{a} + \mathbf{b}| \le |\mathbf{a}| + |\mathbf{b}| \le \alpha_a + \alpha_b .
+|\vec a + \vec b| \le |\vec a| + |\vec b| \le \alpha_a + \alpha_b .
 $$
 
 Squaring,
 
 $$
-N(\tilde{a} + \tilde{b}) = -(\alpha_a+\alpha_b)^2 + |\mathbf{a}+\mathbf{b}|^2 \le 0,
+N(\tilde{a} + \tilde{b}) = -(\alpha_a+\alpha_b)^2 + |\vec a+\vec b|^2 \le 0,
 $$
 
 while the scalar coefficient has $\alpha_a + \alpha_b > 0$, so the sum is future-directed. Hence the sum of two future-directed nonspacelike displacements is future-directed nonspacelike: if $p \preceq q$ and $q \preceq r$, then $p \preceq r$ and the causal order is transitive. Equality $N(\tilde{a}+\tilde{b}) = 0$ occurs only when both displacements are null and their spatial parts are parallel and equally oriented, so that the relay is itself a light signal; two null displacements in non-parallel or oppositely oriented directions sum to a strictly timelike one.
 
-The order is also antisymmetric. If $p \preceq q$ and $q \preceq p$ then $\Delta t \ge 0$ and $\Delta t \le 0$, so $\Delta t = 0$, and $N(\tilde{Q}_{qp}) \le 0$ then gives $|\Delta\mathbf{x}| \le 0$, hence $\Delta\mathbf{x} = 0$ and $p = q$. Together with reflexivity and transitivity this makes $\preceq$ a **partial order** on the events: the structure of possible influence is an order, not a graph with cycles, and distinct events are ordered in at most one direction. This is what forbids a signal loop that closes on itself and returns to its own emission event; a closed causal curve in flat spacetime would require a strict part of the order to hold in both directions.
+The order is also antisymmetric. If $p \preceq q$ and $q \preceq p$ then $\Delta t \ge 0$ and $\Delta t \le 0$, so $\Delta t = 0$, and $N(\tilde{Q}_{qp}) \le 0$ then gives $|\Delta\vec x| \le 0$, hence $\Delta\vec x = 0$ and $p = q$. Together with reflexivity and transitivity this makes $\preceq$ a **partial order** on the events: the structure of possible influence is an order, not a graph with cycles, and distinct events are ordered in at most one direction. This is what forbids a signal loop that closes on itself and returns to its own emission event; a closed causal curve in flat spacetime would require a strict part of the order to hold in both directions.
 
 ## The Relative-Velocity Barrier
 
 ### The Invariant Relative Lorentz Factor
 
-The causal order is between events. A second barrier stands between observers, and it is expressed by the four-velocity biquaternion. For an observer with velocity $\mathbf{v}$, the four-velocity is
+The causal order is between events. A second barrier stands between observers, and it is expressed by the four-velocity biquaternion. For an observer with velocity $\vec v$, the four-velocity is
 
 $$
-\tilde{U} = \gamma\left(ic\,e_0 + \mathbf{v}\right),
+\tilde{V} = \gamma\left(ic\,e_0 + \vec v\right),
 \qquad
-\gamma = \left(1 - \frac{\mathbf{v}^2}{c^2}\right)^{-1/2},
+\gamma = \left(1 - \frac{\vec v^2}{c^2}\right)^{-1/2},
 \qquad
-N(\tilde{U}) = -c^2,
+N(\tilde{V}) = -c^2,
 $$
 
-as in the companion article *Relativistic Mechanics in Biquaternionic Form*. For two observers with four-velocities $\tilde{U}_1, \tilde{U}_2$, the contraction
+as in the companion article *Relativistic Mechanics in Biquaternionic Form*. For two observers with four-velocities $\tilde{V}_1, \tilde{V}_2$, the contraction
 
 $$
--\,\frac{1}{c^2}\,\mathrm{Sc}\!\left(\tilde{U}_1\tilde{U}^{\natural}_2\right)
-= \gamma_1\gamma_2\left(1 - \frac{\mathbf{v}_1\cdot\mathbf{v}_2}{c^2}\right)
+-\,\frac{1}{c^2}\,\mathrm{Sc}\!\left(\tilde{V}_1\tilde{V}^{\natural}_2\right)
+= \gamma_1\gamma_2\left(1 - \frac{\vec v_1\cdot\vec v_2}{c^2}\right)
 = \gamma_1\gamma_2\left(1 - \beta_1\beta_2\cos\theta\right)
 \equiv \gamma_{\mathrm{rel}}
 $$
 
-is the Lorentz factor of their relative motion, where $\beta_i = |\mathbf{v}_i|/c$ and $\theta$ is the angle between the two velocities. The computation is the direct product of the two four-velocities in the coefficient representation; it uses $\tilde{U}^{\natural}_2 = \gamma_2(ic\,e_0 - \mathbf{v}_2)$ and $\mathrm{Sc}((ic\,e_0+\mathbf{v}_1)\cdot(ic\,e_0-\mathbf{v}_2)) = -c^2 + \mathbf{v}_1\cdot\mathbf{v}_2$. The result is frame-independent because it is built from the invariant biquaternion norm, as it must be.
+is the Lorentz factor of their relative motion, where $\beta_i = |\vec v_i|/c$ and $\theta$ is the angle between the two velocities. The computation is the direct product of the two four-velocities in the coefficient representation; it uses $\tilde{V}^{\natural}_2 = \gamma_2(ic\,e_0 - \vec v_2)$ and $\mathrm{Sc}((ic\,e_0+\vec v_1)\cdot(ic\,e_0-\vec v_2)) = -c^2 + \vec v_1\cdot\vec v_2$. The result is frame-independent because it is built from the invariant biquaternion norm, as it must be.
 
 ### The Inequality That Makes the Barrier
 
@@ -225,7 +225,7 @@ $$
 g(\theta) \ge g(1) = \beta_1^2 + \beta_2^2 - 2\beta_1\beta_2 = (\beta_1 - \beta_2)^2 \ge 0 .
 $$
 
-Hence $\gamma_{\mathrm{rel}} \ge 1$, and equality holds only if $\beta_1 = \beta_2$ and $\theta = 0$, that is only if $\mathbf{v}_1 = \mathbf{v}_2$. Since the relative speed is
+Hence $\gamma_{\mathrm{rel}} \ge 1$, and equality holds only if $\beta_1 = \beta_2$ and $\theta = 0$, that is only if $\vec v_1 = \vec v_2$. Since the relative speed is
 
 $$
 v_{\mathrm{rel}} = c\sqrt{1 - \gamma_{\mathrm{rel}}^{-2}},
@@ -235,13 +235,13 @@ the inequality says $v_{\mathrm{rel}} < c$ for every pair of distinct observers,
 
 ### Two Evaluations
 
-The formula and its bound are worth checking on the two configurations in which the answer is fixed by symmetry. For $\mathbf{v}_1 = 0.6c\,\hat{e}_1$ and $\mathbf{v}_2 = 0.8c\,\hat{e}_1$, collinear,
+The formula and its bound are worth checking on the two configurations in which the answer is fixed by symmetry. For $\vec v_1 = 0.6c\,\hat{e}_1$ and $\vec v_2 = 0.8c\,\hat{e}_1$, collinear,
 
 $$
 \gamma_{\mathrm{rel}} = \gamma_1\gamma_2(1-\beta_1\beta_2) = \frac{5}{4}\cdot\frac{5}{3}\left(1-\frac{12}{25}\right) = \frac{25}{12}\cdot\frac{13}{25} = \frac{13}{12} \approx 1.0833333,
 $$
 
-giving $v_{\mathrm{rel}} = c\sqrt{1-(12/13)^2} = \frac{5}{13}c \approx 0.3846154\,c$, which is the velocity-subtraction value $(0.8-0.6)/(1-0.48)c$. For $\mathbf{v}_1 = 0.6c\,\hat{e}_1$ and $\mathbf{v}_2 = 0.6c\,\hat{e}_2$, orthogonal and of equal speed, $\cos\theta = 0$ and
+giving $v_{\mathrm{rel}} = c\sqrt{1-(12/13)^2} = \frac{5}{13}c \approx 0.3846154\,c$, which is the velocity-subtraction value $(0.8-0.6)/(1-0.48)c$. For $\vec v_1 = 0.6c\,\hat{e}_1$ and $\vec v_2 = 0.6c\,\hat{e}_2$, orthogonal and of equal speed, $\cos\theta = 0$ and
 
 $$
 \gamma_{\mathrm{rel}} = \gamma_1\gamma_2 = \left(\frac{5}{4}\right)^2 = \frac{25}{16} = 1.5625,
@@ -256,7 +256,7 @@ This is the equal-rapidity orthogonal instance worked in the companion article *
 The barrier at $v = c$ has a second, group-theoretic expression, and it is the one that shows why the speed of light is unreachable rather than merely unexceeded. A boost is generated by the Hermitian unit-norm biquaternion
 
 $$
-\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\hat{\mathbf{u}},
+\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\hat u,
 \qquad
 \tanh\psi = \frac{u}{c},
 \qquad
@@ -265,11 +265,11 @@ $$
 \sinh\psi = \gamma\beta,
 $$
 
-where $\psi$ is the **rapidity** and $\hat{\mathbf{u}}$ the boost direction. The rapidity is an additive coordinate on the boost group: two boosts along a common direction compose to a boost of summed rapidity,
+where $\psi$ is the **rapidity** and $\hat u$ the boost direction. The rapidity is an additive coordinate on the boost group: two boosts along a common direction compose to a boost of summed rapidity,
 
 $$
 \tilde{\Lambda}_2\tilde{\Lambda}_1
-= \cosh\frac{\psi_1+\psi_2}{2} + i\sinh\frac{\psi_1+\psi_2}{2}\hat{\mathbf{u}},
+= \cosh\frac{\psi_1+\psi_2}{2} + i\sinh\frac{\psi_1+\psi_2}{2}\hat u,
 $$
 
 as verified in the companion article *Exercise: Boosting a Four-Velocity and Rapidity Composition*. The corresponding velocities compose by the hyperbolic addition law
@@ -293,7 +293,7 @@ $$
 
 A finite composition of boosts has a finite total rapidity $\psi_1+\cdots+\psi_n$, hence a speed strictly below $c$; to reach the cone one would need an infinite rapidity, and no finite sequence of subluminal operations supplies it. This is the sense in which the light cone lies at infinity in the group parameter. The barrier is not a ceiling that a process approaches and stops at; it is a limit that is approached but never attained, and the group is non-compact precisely because its boost parameter is unbounded. The check is elementary: composing the subluminal speed $\beta = 0.9$ with itself $n$ times in the hyperbolic sense gives $\beta_n = \tanh(n\,\mathrm{atanh}\,0.9)$, for which $1-\beta_n \approx 2e^{-2n\,\mathrm{atanh}\,0.9}$; at $n = 5$ the deficit is $8.08\times10^{-7}$, at $n = 10$ it is $3.26\times10^{-13}$, and it remains positive for every finite $n$, becoming indistinguishable from zero in double precision only when the deficit falls below the representable range, near $n = 13$.
 
-The same bound appears in the contraction of a null wavevector with an observer, treated in the companion article *Exercise: The Relativistic Doppler Effect*: the measured frequency $-\mathrm{Sc}(\tilde{K}\tilde{U}^{\natural})$ is strictly positive for every future timelike $\tilde{U}$ and every future null $\tilde{K}$, so a light signal cannot be brought to zero frequency by a change of observer. The impossibility of bringing that contraction to zero, the impossibility of closing the relative-velocity deficit, and the vanishing of $N(\tilde{K})$ are three faces of the same cone.
+The same bound appears in the contraction of a null wavevector with an observer, treated in the companion article *Exercise: The Relativistic Doppler Effect*: the measured frequency $-\mathrm{Sc}(\tilde{K}\tilde{V}^{\natural})$ is strictly positive for every future timelike $\tilde{V}$ and every future null $\tilde{K}$, so a light signal cannot be brought to zero frequency by a change of observer. The impossibility of bringing that contraction to zero, the impossibility of closing the relative-velocity deficit, and the vanishing of $N(\tilde{K})$ are three faces of the same cone.
 
 ### The Boundary of the Theorem: a Constant Rapidity
 
@@ -311,12 +311,12 @@ $$
 \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \Delta = \Delta - \frac{1}{c^2}\partial_t^2,
 $$
 
-the series' d'Alembertian. For a wave whose phase is the scalar $s = \mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural}) = -\omega t + \mathbf{k}\cdot\mathbf{x}$, the chain rule gives the corpus identity
+the series' d'Alembertian. For a wave whose phase is the scalar $s = \mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural}) = -\omega t + \vec k\cdot\vec x$, the chain rule gives the corpus identity
 
 $$
 \Box f(s) = N(\tilde{K})\,f''(s),
 \qquad
-N(\tilde{K}) = -\frac{\omega^2}{c^2} + |\mathbf{k}|^2,
+N(\tilde{K}) = -\frac{\omega^2}{c^2} + |\vec k|^2,
 $$
 
 because $s$ is linear and $\Box s = 0$. The exponential $e^{s}$ is therefore an eigenfunction with eigenvalue $N(\tilde{K})$, and the oscillatory positive-frequency wave $e^{is}$ has eigenvalue $-N(\tilde{K})$, the two differing by the overall sign that leaves the kernel unchanged. In either case the characteristic variety, the set on which the symbol vanishes, is exactly the null cone $\mathcal{Z}$. The cone is therefore the characteristic cone of the algebra's own wave operator, and the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* records the equivalent zero-divisor statement.
@@ -357,7 +357,7 @@ $J^+(p)$ and $J^-(p)$ are the **causal future** and **causal past** of $p$, and 
 
 The information-theoretic content is the following pair of statements.
 
-**What can be exchanged.** A signal emitted at $p$ can be received exactly at the events of $J^+(p)$. Within that set the delay is bounded below by the straight-line light travel time, $\Delta t \ge |\Delta\mathbf{x}|/c$, with equality exactly for a null displacement. For two events in $J^+(p)$ the relay of the transitivity section shows that a chain of causal segments is again a causal segment, so the reachable set is closed under relays. Nothing in this statement distinguishes one interaction from another: the reachable set is fixed by the causal order alone.
+**What can be exchanged.** A signal emitted at $p$ can be received exactly at the events of $J^+(p)$. Within that set the delay is bounded below by the straight-line light travel time, $\Delta t \ge |\Delta\vec x|/c$, with equality exactly for a null displacement. For two events in $J^+(p)$ the relay of the transitivity section shows that a chain of causal segments is again a causal segment, so the reachable set is closed under relays. Nothing in this statement distinguishes one interaction from another: the reachable set is fixed by the causal order alone.
 
 **What cannot be exchanged.** No admissible signal connects $p$ to any event of $E(p)$. A process that starts inside the cone and is built from continuous causal steps remains inside the cone, as the connectivity and invariance arguments of the preceding sections show, so it cannot arrive at a spacelike-separated event. Equivalently, an influence that reached $E(p)$ would have to leave the cone at some intermediate event, which is the negation of the causal postulate.
 
@@ -383,7 +383,7 @@ The conventions and the results taken over from the relativity series are those 
 
 The causal structure of the material sector $\mathbb{M}_-$ is the structure of the biquaternion norm $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ and of its vanishing set, the light cone.
 
-1. **The interval and its sign.** For the displacement $\tilde{Q}_{qp} = ic\,\Delta t\,e_0 + \Delta\mathbf{x}$, the interval is $N(\tilde{Q}_{qp}) = -c^2(\Delta t)^2 + |\Delta\mathbf{x}|^2$, and its sign divides Minkowski space into the spacelike, null and timelike regions. The null set is the light cone, which the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* identifies with the material-sector part of the zero-divisor set of the algebra.
+1. **The interval and its sign.** For the displacement $\tilde{Q}_{qp} = ic\,\Delta t\,e_0 + \Delta\vec x$, the interval is $N(\tilde{Q}_{qp}) = -c^2(\Delta t)^2 + |\Delta\vec x|^2$, and its sign divides Minkowski space into the spacelike, null and timelike regions. The null set is the light cone, which the companion article *The Light Cone as the Biquaternion Zero-Divisor Cone* identifies with the material-sector part of the zero-divisor set of the algebra.
 
 2. **The causal order.** The relation $p \preceq q$, defined by $N(\tilde{Q}_{qp}) \le 0$ with $\Delta t \ge 0$, is a partial order. Transitivity follows from the triangle inequality: a sum of future-directed nonspacelike displacements is future-directed nonspacelike, with equality in $N$ only for null segments that are parallel and equally oriented.
 
@@ -391,7 +391,7 @@ The causal structure of the material sector $\mathbb{M}_-$ is the structure of t
 
 4. **The topological barrier.** The complement of the cone has three connected components, and $N$ can change sign along a continuous path only at the cone. A continuous causal process therefore reaches the elsewhere only by leaving the cone.
 
-5. **The relative-velocity barrier.** The invariant contraction of two future timelike four-velocities satisfies $-\mathrm{Sc}(\tilde{U}_1\tilde{U}^{\natural}_2)/c^2 = \gamma_1\gamma_2(1-\beta_1\beta_2\cos\theta) = \gamma_{\mathrm{rel}} \ge 1$, with equality only for equal velocities; the relative speed is strictly below $c$.
+5. **The relative-velocity barrier.** The invariant contraction of two future timelike four-velocities satisfies $-\mathrm{Sc}(\tilde{V}_1\tilde{V}^{\natural}_2)/c^2 = \gamma_1\gamma_2(1-\beta_1\beta_2\cos\theta) = \gamma_{\mathrm{rel}} \ge 1$, with equality only for equal velocities; the relative speed is strictly below $c$.
 
 6. **The rapidity barrier.** Boosts compose additively in rapidity, $\beta = \tanh\psi$, so the barrier $\beta = 1$ lies at $\psi = \infty$ and is attained by no finite composition.
 
@@ -412,7 +412,7 @@ The information-theoretic interpretation is that $J^+(p)$ is the set of events t
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $c$, $c_0$ | Speed of light in the medium, and in vacuum |
 | $\tilde{Q}^{\natural}$, $\bar{\tilde{Q}}$, $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$ | Quaternion, complex and Hermitian conjugation |
-| $\tilde{Q} = ic\,t\,e_0 + \mathbf{x}$ | Material four-position |
+| $\tilde{Q} = ic\,t\,e_0 + \vec x$ | Material four-position |
 | $\tilde{Q}_{qp} = \tilde{Q}_q - \tilde{Q}_p$ | Displacement from $p$ to $q$ |
 | $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm; the interval on $\mathbb{M}_-$ |
 | $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | $ict$-coordinate metric |
@@ -420,12 +420,12 @@ The information-theoretic interpretation is that $J^+(p)$ is the set of events t
 | $\mathcal{Z}$ | Light cone: the $N=0$ locus of $\mathbb{M}_-$, the material-sector part of the zero-divisor set of $\mathbb{B}$ |
 | $p \preceq q$ | Causal order: $N(\tilde{Q}_{qp})\le 0$ and $\Delta t\ge 0$ |
 | $J^+(p)$, $J^-(p)$, $E(p)$ | Causal future, causal past, and elsewhere of $p$ |
-| $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$, $N(\tilde{\Lambda})=e_0$ | Boost rotor (unit-norm biquaternion) |
+| $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat u$, $N(\tilde{\Lambda})=e_0$ | Boost rotor (unit-norm biquaternion) |
 | $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ | Rotor conjugation |
-| $\tilde{U} = \gamma(ic\,e_0+\mathbf{v})$, $N(\tilde{U})=-c^2$ | Four-velocity |
-| $\beta = |\mathbf{v}|/c$, $\gamma = (1-\beta^2)^{-1/2}$ | Dimensionless speed and Lorentz factor |
+| $\tilde{V} = \gamma(ic\,e_0+\vec v)$, $N(\tilde{V})=-c^2$ | Four-velocity |
+| $\beta = |\vec v|/c$, $\gamma = (1-\beta^2)^{-1/2}$ | Dimensionless speed and Lorentz factor |
 | $\psi$, $\tanh\psi=\beta$ | Rapidity |
-| $\gamma_{\mathrm{rel}} = \gamma_1\gamma_2(1-\beta_1\beta_2\cos\theta)$ | Relative Lorentz factor, $= -\mathrm{Sc}(\tilde{U}_1\tilde{U}^{\natural}_2)/c^2$ |
+| $\gamma_{\mathrm{rel}} = \gamma_1\gamma_2(1-\beta_1\beta_2\cos\theta)$ | Relative Lorentz factor, $= -\mathrm{Sc}(\tilde{V}_1\tilde{V}^{\natural}_2)/c^2$ |
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its conjugate |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2+\Delta$ | d'Alembertian, series convention |
 | $SO^+(1,3)\cong SL(2,\mathbb{C})/\{\pm e_0\}$ | Restricted Lorentz group |

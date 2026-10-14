@@ -19,7 +19,7 @@ $$
 $$
 The first is a subalgebra, indeed the centre, and the second is not closed under the product.
 
-**Proof.** A quaternion fixed by ${}^{\natural}$ has $\mathbf q=0$ and a quaternion anti-fixed has $q_0=0$, so the intersection is $\tilde q=0$; every $\tilde q=q_0+\mathbf q$ is the sum of one of each. The subalgebra and centre statements are *Introduction to the Remarkable Subspaces of the Quaternions*; the failure of closure is the product law $\mathbf p\mathbf q=-\langle\mathbf p,\mathbf q\rangle+\mathbf p\times\mathbf q$ recalled there.
+**Proof.** A quaternion fixed by ${}^{\natural}$ has $\vec q=0$ and a quaternion anti-fixed has $q_0=0$, so the intersection is $\tilde q=0$; every $\tilde q=q_0+\vec q$ is the sum of one of each. The subalgebra and centre statements are *Introduction to the Remarkable Subspaces of the Quaternions*; the failure of closure is the product law $\vec p\vec q=-\langle\vec p,\vec q\rangle+\vec p\times\vec q$ recalled there.
 
 ## The Sign Pattern of the Natural Sign
 
@@ -42,7 +42,7 @@ Each axis line $\mathbb{R}\nu$ of the vector subspace, $\nu$ a unit imaginary qu
 | axis line | $\mathbb{R}\nu$, one per pair $\pm\nu$ |
 | involution | $\iota_\nu$, an involutive automorphism |
 | fixed plane | $\mathbb{C}_\nu=\mathbb{R}e_0\oplus\mathbb{R}\nu$, the commutative subalgebra of the axis |
-| negated plane | $\nu^\perp=\{\mathbf q:\nu\cdot\mathbf q=0\}$, its orthogonal complement |
+| negated plane | $\nu^\perp=\{\vec q:\nu\cdot\vec q=0\}$, its orthogonal complement |
 | sign pattern | $+1$ of multiplicity $2$ on $\mathbb{C}_\nu$, $-1$ of multiplicity $2$ on $\nu^\perp$ |
 | action on the two subspaces | preserves $\mathbb{R}_{\mathbb{H}}$; on $\mathrm{Vect}(\mathbb{H})$ fixes the line $\mathbb{R}\nu$ and negates the plane $\nu^\perp$ |
 

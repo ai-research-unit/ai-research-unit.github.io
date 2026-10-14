@@ -157,7 +157,7 @@ classification.
 The scalar part is the right invariant because the scalar imaginary $i$ is central: the scalar part
 is the component of the element in the central direction, and the vector part is the component
 perpendicular to it, so "pure" and "non-pure" ask whether the central component vanishes. The two
-cases read the criterion $\tilde{Q}\tilde{Q}^{\natural} = Q_0^2 + (\mathbf{Q}, \mathbf{Q}) = 0$
+cases read the criterion $\tilde{Q}\tilde{Q}^{\natural} = Q_0^2 + (\vec Q, \vec Q) = 0$
 differently — in the pure case the scalar contribution drops out, in the non-pure case it can
 cancel the vector contribution — and the two resulting families are structurally distinct: a
 nilpotent in the pure case, a complex multiple of an idempotent in the non-pure one, as the
@@ -222,32 +222,32 @@ reading each triple as a vector of $\mathbb{R}^3$, a pure biquaternion is the su
 vectors carrying the central imaginary on the second,
 
 $$
-\tilde{Q} = \boldsymbol{\rho} + i\,\boldsymbol{\rho}', \qquad \boldsymbol{\rho}, \boldsymbol{\rho}' \in \mathbb{R}^3 .
+\tilde{Q} = \vec\rho + i\,\vec\rho', \qquad \vec\rho, \vec\rho' \in \mathbb{R}^3 .
 $$
 
 An element of this form is a **bivector** in the older vocabulary; the term and its setting are
 recorded in *A Brief History of Biquaternions in Physics*.
 
 Squaring and separating real and imaginary parts, using the product rule
-$\boldsymbol{\rho}\,\boldsymbol{\sigma} = -\boldsymbol{\rho}\cdot\boldsymbol{\sigma} + \boldsymbol{\rho}\times\boldsymbol{\sigma}$
+$\vec\rho\,\vec\sigma = -\vec\rho\cdot\vec\sigma + \vec\rho\times\vec\sigma$
 for two real vectors, the square of a pure biquaternion is
 
 $$
-\tilde{Q}^2 = \bigl(|\boldsymbol{\rho}'|^2 - |\boldsymbol{\rho}|^2\bigr)\, e_0 - 2i\,(\boldsymbol{\rho}\cdot\boldsymbol{\rho}')\, e_0 .
+\tilde{Q}^2 = \bigl(|\vec\rho'|^2 - |\vec\rho|^2\bigr)\, e_0 - 2i\,(\vec\rho\cdot\vec\rho')\, e_0 .
 $$
 
 The square is therefore a complex scalar, and it vanishes exactly when the two conditions
 
 $$
-\boldsymbol{\rho}\cdot\boldsymbol{\rho}' = 0, \qquad |\boldsymbol{\rho}| = |\boldsymbol{\rho}'|,
+\vec\rho\cdot\vec\rho' = 0, \qquad |\vec\rho| = |\vec\rho'|,
 $$
 
 hold. This restates the criterion proved above in real coordinates.
 
 **Corollary (the pure zero divisors as bivectors).** A nonzero pure biquaternion
-$\tilde{Q} = \boldsymbol{\rho} + i\boldsymbol{\rho}'$ is a zero divisor if and only if its two real
-parts are orthogonal and of equal length. Equivalently, writing $\boldsymbol{\rho} = r\hat{u}$ and
-$\boldsymbol{\rho}' = r\hat{v}$ with $r = |\boldsymbol{\rho}| = |\boldsymbol{\rho}'|$, the pure
+$\tilde{Q} = \vec\rho + i\vec\rho'$ is a zero divisor if and only if its two real
+parts are orthogonal and of equal length. Equivalently, writing $\vec\rho = r\hat{u}$ and
+$\vec\rho' = r\hat{v}$ with $r = |\vec\rho| = |\vec\rho'|$, the pure
 zero divisors are exactly the elements
 
 $$
@@ -259,9 +259,9 @@ direction — one, two and one real parameters. The pure zero divisors therefore
 dimension $4$, agreeing with the dimension recorded for the pure family below.
 
 **Remark (the sign of the square).** The same formula shows that when the two parts are
-perpendicular the square is the real scalar $|\boldsymbol{\rho}'|^2 - |\boldsymbol{\rho}|^2$:
-positive, zero, or negative according as $|\boldsymbol{\rho}'|$ is greater than, equal to, or less
-than $|\boldsymbol{\rho}|$. A real vector has $v^2 = -|v|^2 < 0$ without exception, so it is only a
+perpendicular the square is the real scalar $|\vec\rho'|^2 - |\vec\rho|^2$:
+positive, zero, or negative according as $|\vec\rho'|$ is greater than, equal to, or less
+than $|\vec\rho|$. A real vector has $v^2 = -|v|^2 < 0$ without exception, so it is only a
 bivector that allows a nonzero square of positive sign; this is what the reading of the theory at
 its origin turns on (*A Brief History of Biquaternions in Physics*).
 
@@ -271,33 +271,33 @@ its origin turns on (*A Brief History of Biquaternions in Physics*).
 
 ### The Square of a Non-Pure Biquaternion
 
-Let $\tilde{Q} = Q_0 e_0 + \mathbf{Q}$ with $Q_0 \in \mathbb{C}$, $Q_0 \neq 0$, and
-$\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. Using the product formula,
+Let $\tilde{Q} = Q_0 e_0 + \vec Q$ with $Q_0 \in \mathbb{C}$, $Q_0 \neq 0$, and
+$\vec Q = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. Using the product formula,
 
 $$
-\tilde{Q}^2 = (Q_0^2 - (\mathbf{Q}, \mathbf{Q})) e_0 + 2 Q_0 \mathbf{Q},
+\tilde{Q}^2 = (Q_0^2 - (\vec Q, \vec Q)) e_0 + 2 Q_0 \vec Q,
 $$
 
-where $(\mathbf{Q}, \mathbf{Q}) = Q_1^2 + Q_2^2 + Q_3^2$.
+where $(\vec Q, \vec Q) = Q_1^2 + Q_2^2 + Q_3^2$.
 
 ### The Relation to the Scalar Part
 
 The product $\tilde{Q}\tilde{Q}^{\natural}$ is
 
 $$
-\tilde{Q}\tilde{Q}^{\natural} = Q_0^2 + (\mathbf{Q}, \mathbf{Q}).
+\tilde{Q}\tilde{Q}^{\natural} = Q_0^2 + (\vec Q, \vec Q).
 $$
 
 So the condition $\tilde{Q}\tilde{Q}^{\natural} = 0$ is equivalent to
 
 $$
-(\mathbf{Q}, \mathbf{Q}) = -Q_0^2.
+(\vec Q, \vec Q) = -Q_0^2.
 $$
 
 Substituting this into the expression for $\tilde{Q}^2$:
 
 $$
-\tilde{Q}^2 = (Q_0^2 + Q_0^2) e_0 + 2 Q_0 \mathbf{Q} = 2 Q_0^2 e_0 + 2 Q_0 \mathbf{Q} = 2 Q_0 (Q_0 e_0 + \mathbf{Q}) = 2 Q_0 \tilde{Q}.
+\tilde{Q}^2 = (Q_0^2 + Q_0^2) e_0 + 2 Q_0 \vec Q = 2 Q_0^2 e_0 + 2 Q_0 \vec Q = 2 Q_0 (Q_0 e_0 + \vec Q) = 2 Q_0 \tilde{Q}.
 $$
 
 So every non-pure zero divisor satisfies

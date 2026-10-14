@@ -11,7 +11,7 @@ $$
 \tilde q = 1 + 2e_1 - e_2 + 3e_3,
 $$
 
-with scalar part $q_0 = 1$ and vector part $\mathbf{q} = 2e_1 - e_2 + 3e_3$, chosen so that no coordinate vanishes and no two coordinates coincide. The general theory is from *Quaternion Algebra* (the basis, the multiplication and the three involutions), *Quaternion Norm and Invertibility* (the quaternion norm and the unit criterion), *Quaternion Rotations and Reflections* (the conjugation action and the covering of $SO(3)$), *Quaternion 2x2 Matrix Element Representation* and *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_L$* (the matrix images). A few examples with other elements are given where a single example would be misleading.
+with scalar part $q_0 = 1$ and vector part $\vec q = 2e_1 - e_2 + 3e_3$, chosen so that no coordinate vanishes and no two coordinates coincide. The general theory is from *Quaternion Algebra* (the basis, the multiplication and the three involutions), *Quaternion Norm and Invertibility* (the quaternion norm and the unit criterion), *Quaternion Rotations and Reflections* (the conjugation action and the covering of $SO(3)$), *Quaternion 2x2 Matrix Element Representation* and *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_L$* (the matrix images). A few examples with other elements are given where a single example would be misleading.
 
 Throughout, the basis is $e_0 = 1, e_1, e_2, e_3$ with
 
@@ -33,7 +33,7 @@ called quaternion, vector and total conjugation. Each is an involution: applying
 
 **Proposition.** The three involutions are ${}^{\natural}$, $-{}^{\natural}$ and $-\mathrm{id}$: the second is the negative of the first and the third is the negative of the identity, so the three maps together with the identity form the group $\mathbb{Z}/2\times\mathbb{Z}/2$ of sign changes of the scalar and vector parts.
 
-*Proof.* The first negates the vector part and fixes the scalar part, $q_0-\mathbf{q}$; the second is its negative, $-q_0+\mathbf{q} = -(q_0-\mathbf{q})$, and so negates the scalar part and fixes the vector part; the third negates both, $-q_0-\mathbf{q}$. Composing the sign changes independently in the two parts gives the Klein four-group.
+*Proof.* The first negates the vector part and fixes the scalar part, $q_0-\vec q$; the second is its negative, $-q_0+\vec q = -(q_0-\vec q)$, and so negates the scalar part and fixes the vector part; the third negates both, $-q_0-\vec q$. Composing the sign changes independently in the two parts gives the Klein four-group.
 
 **Worked values.** For $\tilde q = 1+2e_1-e_2+3e_3$,
 
@@ -51,7 +51,7 @@ $$
 
 of dimensions $1$, $3$ and $0$.
 
-*Proof.* $\tilde{q}^{\natural} = \tilde q$ gives $\mathbf{q} = 0$; $-\tilde{q}^{\natural} = \tilde q$ gives $q_0 = 0$; $-\tilde q = \tilde q$ gives $\tilde q = -\tilde q$, so $\tilde q = 0$.
+*Proof.* $\tilde{q}^{\natural} = \tilde q$ gives $\vec q = 0$; $-\tilde{q}^{\natural} = \tilde q$ gives $q_0 = 0$; $-\tilde q = \tilde q$ gives $\tilde q = -\tilde q$, so $\tilde q = 0$.
 
 So the scalar axis, the imaginary three-space and the origin are the fixed sets, and they are exactly the images of the projections onto the scalar part, the vector part and zero. The first is a subalgebra isomorphic to $\mathbb{R}$; the second is not, because the product of two of its elements has a scalar part.
 
@@ -61,7 +61,7 @@ So the scalar axis, the imaginary three-space and the origin are the fixed sets,
 
 **Theorem.** The roots of $-1$ are the pure imaginary quaternions of norm one.
 
-*Proof.* Write $\tilde\xi = p_0+\mathbf{p}$. Then $\tilde\xi^2 = p_0^2-N(\mathbf{p})+2p_0\mathbf{p}$, so $\tilde\xi^2 = -1$ gives $2p_0\mathbf{p} = 0$ and $p_0^2-N(\mathbf{p}) = -1$. If $p_0\neq0$ then $\mathbf{p} = 0$ and $p_0^2 = -1$, impossible, so $p_0 = 0$ and $N(\mathbf{p}) = 1$.
+*Proof.* Write $\tilde\xi = p_0+\vec p$. Then $\tilde\xi^2 = p_0^2-N(\vec p)+2p_0\vec p$, so $\tilde\xi^2 = -1$ gives $2p_0\vec p = 0$ and $p_0^2-N(\vec p) = -1$. If $p_0\neq0$ then $\vec p = 0$ and $p_0^2 = -1$, impossible, so $p_0 = 0$ and $N(\vec p) = 1$.
 
 **Worked roots.** The element
 

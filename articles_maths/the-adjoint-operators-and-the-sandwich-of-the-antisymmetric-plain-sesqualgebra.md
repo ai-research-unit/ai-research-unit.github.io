@@ -4,7 +4,7 @@
 
 The operation of the block, $\tilde P\diamond\tilde Q=\mathrm{Vect}(\tilde P\tilde Q^{*})$, is conjugate-linear in its second slot, so its **left multiplication** $\tilde X\mapsto\tilde A\diamond\tilde X$ is a conjugate-linear operator and its **right multiplication** $\tilde X\mapsto\tilde X\diamond\tilde A$ is $\mathbb{C}$-linear; the pair $(L^{\diamond}_{\tilde A},R^{\diamond}_{\tilde A})$ is the operator data of the block, and this article computes it. The conjugate linearity is not a defect to be removed, it is the parity that the operation carries, and it forces a **companion**: to every conjugate-linear operator the theory attaches the $\mathbb{C}$-linear operator obtained by conjugating the coefficients of the value, and the companion of the left multiplication of the block is the negative of the right multiplication, $T_{\tilde A}=\overline{L^{\diamond}_{\tilde A}}=-R^{\diamond}_{\tilde A}$, by the conjugate-alternation. The companion is the honest linear object, and the characteristic polynomial that is computed is that of the real matrix of the left multiplication.
 
-Five facts organise the reading. The left operator is the **vector part of a left multiplication of the row**, $L^{\diamond}_{\tilde A}=\mathrm{Vect}\circ S_{\tilde A,e_0}$, so it sits inside the sesquilinear sandwich of *The Sesquilinear Sandwich on the Biquaternions*. Its **trace vanishes** and its **rank is six** for a unit and **four** for a zero divisor, the kernel being the set of the elements whose product with $\tilde A$ on the left is central; for $\tilde A=e_0$ that kernel is the centre, and for $\tilde A=e_k$ it is the complex line of $e_k$. Its **adjoint** with respect to the form $H$ is the right multiplication of the star of the vector part, $L^{\diamond\dagger}_{\tilde A}(\tilde Y)=(\mathrm{Vect}\tilde Y)^{*}\tilde A$, the adjoint of a conjugate-linear operator being conjugate-linear with the twisted rule of *The Adjoint of the Sesquilinear Sandwich on the Biquaternions*. And the **derivations** of the block are exactly the three products $D_{\mathbf a}(\tilde X)=[0,\mathbf a\times\tilde{\mathbf X}]$ with $\mathbf a$ a **real** vector, a three-dimensional real Lie algebra isomorphic to $\mathbb{R}^{3}$ with the cross product, which is also the Lie algebra of the structure group; the group contains the coefficientwise conjugation and the transformations that act on the complex vector subspace by a real matrix $R$ with $R^{\mathsf T}R=I$ and $\det R=1$, and it does not contain the natural conjugation. And the two one-sided operators of the block **do not compose**: the composite $L^{\diamond}_{\tilde A}L^{\diamond}_{\tilde B}$ is not an operator of the block, and $L^{\diamond}_{\tilde A}L^{\diamond}_{\tilde B}\neq L^{\diamond}_{\tilde A\diamond\tilde B}$ because the projection $\mathrm{Vect}$ intervenes twice, so the block has no monoid of one-sided operators and no regular representation; the composition laws, and the contrast with the row that does compose, are the last reading of the operator theory.
+Five facts organise the reading. The left operator is the **vector part of a left multiplication of the row**, $L^{\diamond}_{\tilde A}=\mathrm{Vect}\circ S_{\tilde A,e_0}$, so it sits inside the sesquilinear sandwich of *The Sesquilinear Sandwich on the Biquaternions*. Its **trace vanishes** and its **rank is six** for a unit and **four** for a zero divisor, the kernel being the set of the elements whose product with $\tilde A$ on the left is central; for $\tilde A=e_0$ that kernel is the centre, and for $\tilde A=e_k$ it is the complex line of $e_k$. Its **adjoint** with respect to the form $H$ is the right multiplication of the star of the vector part, $L^{\diamond\dagger}_{\tilde A}(\tilde Y)=(\mathrm{Vect}\tilde Y)^{*}\tilde A$, the adjoint of a conjugate-linear operator being conjugate-linear with the twisted rule of *The Adjoint of the Sesquilinear Sandwich on the Biquaternions*. And the **derivations** of the block are exactly the three products $D_{\vec a}(\tilde X)=[0,\vec a\times\tilde{\mathbf X}]$ with $\vec a$ a **real** vector, a three-dimensional real Lie algebra isomorphic to $\mathbb{R}^{3}$ with the cross product, which is also the Lie algebra of the structure group; the group contains the coefficientwise conjugation and the transformations that act on the complex vector subspace by a real matrix $R$ with $R^{\mathsf T}R=I$ and $\det R=1$, and it does not contain the natural conjugation. And the two one-sided operators of the block **do not compose**: the composite $L^{\diamond}_{\tilde A}L^{\diamond}_{\tilde B}$ is not an operator of the block, and $L^{\diamond}_{\tilde A}L^{\diamond}_{\tilde B}\neq L^{\diamond}_{\tilde A\diamond\tilde B}$ because the projection $\mathrm{Vect}$ intervenes twice, so the block has no monoid of one-sided operators and no regular representation; the composition laws, and the contrast with the row that does compose, are the last reading of the operator theory.
 
 The setting is that of *Introduction to the Antisymmetric Plain Sesqualgebra of Biquaternions*; the general theory of the one-sided multiplications and of the obstruction to a single linear representation is *The Left and Right Multiplications of the Biquaternion Sesqualgebra*; the sandwich is *The Sesquilinear Sandwich on the Biquaternions* and its adjoint *The Adjoint of the Sesquilinear Sandwich on the Biquaternions*; the form $H$ is *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; the derivations of a sesqualgebra are *Derivations of a Sesqualgebra*; the multiplicative norm $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$ and the zero divisors are *Norm and Invertibility in the General Quaternionic Algebra*; the pairing and the sandwich relation of the block are *The Sesquilinear Pairing of the Antisymmetric Plain Sesqualgebra*, above in this block; and the matrix models are *The Antisymmetric Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* and *The Antisymmetric Plain Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$*, below. The rank, the kernel, the trace and the determinant are the algebraic invariants of a linear map.
 
@@ -49,30 +49,30 @@ where the bar is the coefficientwise conjugation of the value. The **companion**
 
 ## The Matrix in the Real Basis
 
-**The basis.** The operator is read in the **real basis** $(\mathcal B)=(e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3)$ of $\mathbb{B}$ as an $\mathbb{R}$-vector space, on which an $\mathbb{R}$-linear or conjugate-linear operator has a real $8\times8$ matrix. Write $\tilde A=A_0e_0+\mathbf A$ with $A_0=a+ib$ and $\mathbf A=\mathbf u+i\mathbf v$, and $\tilde X=X_0e_0+\mathbf X$ with $X_0=x+iy$ and $\mathbf X=\mathbf U+i\mathbf V$, all of $a,b,x,y$ real and $\mathbf u,\mathbf v,\mathbf U,\mathbf V$ real vectors.
+**The basis.** The operator is read in the **real basis** $(\mathcal B)=(e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3)$ of $\mathbb{B}$ as an $\mathbb{R}$-vector space, on which an $\mathbb{R}$-linear or conjugate-linear operator has a real $8\times8$ matrix. Write $\tilde A=A_0e_0+\vec A$ with $A_0=a+ib$ and $\vec A=\vec u+i\vec v$, and $\tilde X=X_0e_0+\vec X$ with $X_0=x+iy$ and $\vec X=\vec U+i\vec V$, all of $a,b,x,y$ real and $\vec u,\vec v,\vec U,\vec V$ real vectors.
 
 **Theorem (the coordinate rule).** The left operator reads
 
 $$
 L^{\diamond}_{\tilde A}(\tilde X)=
-\bigl(x\,\mathbf u+y\,\mathbf v-a\,\mathbf U-b\,\mathbf V-\mathbf u\times\mathbf U-\mathbf v\times\mathbf V\bigr)
-+i\bigl(x\,\mathbf v-y\,\mathbf u-b\,\mathbf U+a\,\mathbf V+\mathbf u\times\mathbf V-\mathbf v\times\mathbf U\bigr),
+\bigl(x\,\vec u+y\,\vec v-a\,\vec U-b\,\vec V-\vec u\times\vec U-\vec v\times\vec V\bigr)
++i\bigl(x\,\vec v-y\,\vec u-b\,\vec U+a\,\vec V+\vec u\times\vec V-\vec v\times\vec U\bigr),
 $$
 
 a pure vector, so the two scalar coordinates $(e_0,ie_0)$ of the value vanish identically and the matrix has its two scalar rows zero. On the real basis elements,
 
 $$
-L^{\diamond}_{\tilde A}(e_0)=\mathbf A,\quad
-L^{\diamond}_{\tilde A}(ie_0)=-i\,\mathbf A,\quad
-L^{\diamond}_{\tilde A}(e_k)=-a\,e_k-\mathbf u\times e_k+i\bigl(-b\,e_k-\mathbf v\times e_k\bigr),\quad
+L^{\diamond}_{\tilde A}(e_0)=\vec A,\quad
+L^{\diamond}_{\tilde A}(ie_0)=-i\,\vec A,\quad
+L^{\diamond}_{\tilde A}(e_k)=-a\,e_k-\vec u\times e_k+i\bigl(-b\,e_k-\vec v\times e_k\bigr),\quad
 L^{\diamond}_{\tilde A}(ie_k)=L^{\diamond}_{\tilde A}(e_k)\text{ conjugated},
 $$
 
 whose last identity is the $\mathbb{C}$-semilinearity, $L^{\diamond}_{\tilde A}(i\tilde X)=-i\,L^{\diamond}_{\tilde A}(\tilde X)$.
 
-*Proof.* The coordinate rule is the substitution $\tilde A\tilde X^{*}=(A_0+\mathbf A)\bigl(\overline{X_0}-\overline{\mathbf X}\bigr)$ with the scalar–vector multiplication of the row, collecting the real and the imaginary parts of the vector part; the value is a vector part by the definition of the block, so the scalar coordinate vanishes.
+*Proof.* The coordinate rule is the substitution $\tilde A\tilde X^{*}=(A_0+\vec A)\bigl(\overline{X_0}-\overline{\vec X}\bigr)$ with the scalar–vector multiplication of the row, collecting the real and the imaginary parts of the vector part; the value is a vector part by the definition of the block, so the scalar coordinate vanishes.
 
-**Corollary (the matrix of the unit).** At $\tilde A=e_0$ the coordinate rule is $L^{\diamond}_{e_0}(\tilde X)=-\overline{\mathbf X}$, and the matrix is diagonal,
+**Corollary (the matrix of the unit).** At $\tilde A=e_0$ the coordinate rule is $L^{\diamond}_{e_0}(\tilde X)=-\overline{\vec X}$, and the matrix is diagonal,
 
 $$
 M_{e_0}=\operatorname{diag}\bigl(0,-1,-1,-1,\,0,\,1,\,1,\,1\bigr),
@@ -139,15 +139,15 @@ $$
 \bigl(L^{\diamond}_{\tilde A}\bigr)^{\dagger}(\tilde Y)=\bigl(\mathrm{Vect}(\tilde Y)\bigr)^{*}\,\tilde A ,
 $$
 
-the conjugate-linear **right multiplication by $\tilde A$ of the star of the vector part**. In coordinates, with $\tilde Y=Y_0e_0+\mathbf Y$ and $A_0=a+ib$, $\mathbf A=\mathbf u+i\mathbf v$,
+the conjugate-linear **right multiplication by $\tilde A$ of the star of the vector part**. In coordinates, with $\tilde Y=Y_0e_0+\vec Y$ and $A_0=a+ib$, $\vec A=\vec u+i\vec v$,
 
 $$
 \bigl(L^{\diamond}_{\tilde A}\bigr)^{\dagger}(\tilde Y)
-=\bigl(\mathbf A,\overline{\mathbf Y}\bigr)
--a\,\overline{\mathbf Y}+\mathbf u\times\overline{\mathbf Y}+i\bigl(-b\,\overline{\mathbf Y}+\mathbf v\times\overline{\mathbf Y}\bigr),
+=\bigl(\vec A,\overline{\vec Y}\bigr)
+-a\,\overline{\vec Y}+\vec u\times\overline{\vec Y}+i\bigl(-b\,\overline{\vec Y}+\vec v\times\overline{\vec Y}\bigr),
 $$
 
-whose scalar part is the form $H(\mathbf A,\mathbf Y)$ of the two vector parts and whose vector part is the displayed one.
+whose scalar part is the form $H(\vec A,\vec Y)$ of the two vector parts and whose vector part is the displayed one.
 
 *Proof.* The projection $\mathrm{Vect}$ is self-adjoint for the form, $\varphi(\mathrm{Vect}\tilde X,\tilde Y)=\varphi(\mathrm{Vect}\tilde X,\mathrm{Vect}\tilde Y)=\varphi(\tilde X,\mathrm{Vect}\tilde Y)$, because the form depends on a pure vector only through the vector part. The adjoint of the left multiplication $L_{\tilde A}(\tilde X)=\tilde A\tilde X^{*}$ of the row is the right multiplication by $\tilde A$, $L_{\tilde A}^{\dagger}(\tilde Y)=\tilde Y^{*}\tilde A$, by *The Adjoint of the Sesquilinear Sandwich on the Biquaternions*, §*The Special Cases*, since $L_{\tilde A}=S_{\tilde A,e_0}$ and $S_{\tilde P,\tilde Q}^{\dagger}=S_{\tilde Q^{*},\tilde P^{*}}=S_{e_0,\tilde A^{*}}$ reads $\tilde Y^{*}\tilde A$. Therefore $(L^{\diamond}_{\tilde A})^{\dagger}(\tilde Y)=(\mathrm{Vect}\tilde Y)^{*}\tilde A$, and the coordinate form is its scalar–vector expansion.
 
@@ -167,7 +167,7 @@ $$
 
 **Corollary (the self-adjoint operators).** The left operator is self-adjoint, $L^{\diamond\dagger}_{\tilde A}=L^{\diamond}_{\tilde A}$, exactly when $\tilde A$ is **central**, $\tilde A=\lambda e_0$ with $\lambda\in\mathbb{C}$; on the central elements the two sides coincide, and off them they differ.
 
-*Proof.* By the theorem the adjoint is $\tilde Y\mapsto(\mathrm{Vect}\tilde Y)^{*}\tilde A$, and self-adjointness reads $(\mathrm{Vect}\tilde Y)^{*}\tilde A=\mathrm{Vect}(\tilde A\tilde Y^{*})$ for all $\tilde Y$. At $\tilde A=\lambda e_0$ both sides are $-\overline{\lambda}\,\overline{\mathbf Y}$ and the identity holds. For $\tilde A=\mathbf e_k$ the left side is $(\mathrm{Vect}\tilde Y)^{*}e_k$ and the right side $\mathrm{Vect}(e_k\tilde Y^{*})$; the witness $\tilde Y=e_0$ gives $0$ on the left and $e_k$ on the right, so the identity fails, and the general element has a non-central part with the same witness.
+*Proof.* By the theorem the adjoint is $\tilde Y\mapsto(\mathrm{Vect}\tilde Y)^{*}\tilde A$, and self-adjointness reads $(\mathrm{Vect}\tilde Y)^{*}\tilde A=\mathrm{Vect}(\tilde A\tilde Y^{*})$ for all $\tilde Y$. At $\tilde A=\lambda e_0$ both sides are $-\overline{\lambda}\,\overline{\vec Y}$ and the identity holds. For $\tilde A=\mathbf e_k$ the left side is $(\mathrm{Vect}\tilde Y)^{*}e_k$ and the right side $\mathrm{Vect}(e_k\tilde Y^{*})$; the witness $\tilde Y=e_0$ gives $0$ on the left and $e_k$ on the right, so the identity fails, and the general element has a non-central part with the same witness.
 
 ## The Sandwich
 
@@ -196,7 +196,7 @@ $$
 the sum of the vector part of $\tilde A\tilde X^{*}$ multiplied by $\tilde B^{*}$ and the scalar part $H(\tilde A,\tilde X)$ multiplied by $\tilde B^{*}$, and its vector part is
 
 $$
-\mathrm{Vect}\bigl(\tilde A\tilde X^{*}\tilde B^{*}\bigr)=\mathrm{Vect}\bigl(L^{\diamond}_{\tilde A}(\tilde X)\,\tilde B^{*}\bigr)-H(\tilde A,\tilde X)\,\overline{\mathbf B}.
+\mathrm{Vect}\bigl(\tilde A\tilde X^{*}\tilde B^{*}\bigr)=\mathrm{Vect}\bigl(L^{\diamond}_{\tilde A}(\tilde X)\,\tilde B^{*}\bigr)-H(\tilde A,\tilde X)\,\overline{\vec B}.
 $$
 
 The sandwich therefore carries the block in the first factor of its vector part and the form $H$ in the scalar correction, which is the operator form of the split of the row: the two halves $\mathrm{SPS}$ and $\diamond$ of the product appear as the scalar part and the vector part of $\tilde A\tilde X^{*}$, as in *The Sesquilinear Pairing of the Antisymmetric Plain Sesqualgebra*, §*The Compatibility with the Sandwich*.
@@ -242,23 +242,23 @@ $$
 
 for all $\tilde P,\tilde Q$; the derivations form a Lie algebra under the commutator, the derivation algebra of the block, by *Derivations of a Sesqualgebra*.
 
-**Theorem (the derivation algebra).** For a real vector $\mathbf a=\sum_k a_ke_k$ define
+**Theorem (the derivation algebra).** For a real vector $\vec a=\sum_k a_ke_k$ define
 
 $$
-D_{\mathbf a}(\tilde X)=[0,\ \mathbf a\times\tilde{\mathbf X}],
+D_{\vec a}(\tilde X)=[0,\ \vec a\times\tilde{\mathbf X}],
 $$
 
-the cross product of $\mathbf a$ with the vector part, a $\mathbb{C}$-linear operator annihilating the centre. Then $D_{\mathbf a}$ is a derivation of the block exactly when $\mathbf a$ is **real**, and the derivations so obtained form a three-dimensional real space with basis $D_{e_1},D_{e_2},D_{e_3}$, closed under the commutator,
+the cross product of $\vec a$ with the vector part, a $\mathbb{C}$-linear operator annihilating the centre. Then $D_{\vec a}$ is a derivation of the block exactly when $\vec a$ is **real**, and the derivations so obtained form a three-dimensional real space with basis $D_{e_1},D_{e_2},D_{e_3}$, closed under the commutator,
 
 $$
-[D_{\mathbf a},D_{\mathbf b}]=D_{\mathbf a\times\mathbf b},
+[D_{\vec a},D_{\vec b}]=D_{\vec a\times\vec b},
 $$
 
-so that the derivation algebra of the block is isomorphic to $\mathbb{R}^{3}$ with the cross product, and it is exactly this space. A derivation $D_{\mathbf a}$ with a non-real $\mathbf a$ fails the Leibniz rule, and a scalar derivation $\tilde X\mapsto\lambda\tilde X$ satisfies it only for $\lambda=0$; the three displayed derivations therefore exhaust the algebra.
+so that the derivation algebra of the block is isomorphic to $\mathbb{R}^{3}$ with the cross product, and it is exactly this space. A derivation $D_{\vec a}$ with a non-real $\vec a$ fails the Leibniz rule, and a scalar derivation $\tilde X\mapsto\lambda\tilde X$ satisfies it only for $\lambda=0$; the three displayed derivations therefore exhaust the algebra.
 
-*Proof.* The Leibniz defect of $D_{\mathbf a}$ is the computation of $\mathbf a\times(\tilde{\mathbf P}\diamond\tilde{\mathbf Q})$ against $(\mathbf a\times\tilde{\mathbf P})\diamond\tilde{\mathbf Q}+\tilde{\mathbf P}\diamond(\mathbf a\times\tilde{\mathbf Q})$; the two cross products in the three terms combine by the Jacobi identity of the cross product exactly when $\mathbf a$ is fixed by the conjugation, and the terms carrying $\overline{\mathbf a}$ in the sesquilinear slots cancel only then; the bracket is the vector triple identity $[D_{\mathbf a},D_{\mathbf b}](\tilde X)=\mathbf a\times(\mathbf b\times\tilde{\mathbf X})-\mathbf b\times(\mathbf a\times\tilde{\mathbf X})=(\mathbf a\times\mathbf b)\times\tilde{\mathbf X}$. The dimension three is the dimension of the space of the real vectors $\mathbf a$, the operators $D_{e_1},D_{e_2},D_{e_3}$ being independent on the vector coordinates.
+*Proof.* The Leibniz defect of $D_{\vec a}$ is the computation of $\vec a\times(\tilde{\mathbf P}\diamond\tilde{\mathbf Q})$ against $(\vec a\times\tilde{\mathbf P})\diamond\tilde{\mathbf Q}+\tilde{\mathbf P}\diamond(\vec a\times\tilde{\mathbf Q})$; the two cross products in the three terms combine by the Jacobi identity of the cross product exactly when $\vec a$ is fixed by the conjugation, and the terms carrying $\overline{\vec a}$ in the sesquilinear slots cancel only then; the bracket is the vector triple identity $[D_{\vec a},D_{\vec b}](\tilde X)=\vec a\times(\vec b\times\tilde{\mathbf X})-\vec b\times(\vec a\times\tilde{\mathbf X})=(\vec a\times\vec b)\times\tilde{\mathbf X}$. The dimension three is the dimension of the space of the real vectors $\vec a$, the operators $D_{e_1},D_{e_2},D_{e_3}$ being independent on the vector coordinates.
 
-**Remark (the derivations act by the cross product).** The operator $D_{\mathbf a}$ acts on the complex vector subspace by the cross product with $\mathbf a$, which is the infinitesimal form of the transformations of the vector coordinates preserving the cross product; on the real vectors $D_{\mathbf a}(\mathbf X)=\mathbf a\times\mathbf X$ is the derivation of the cross product, and the derivation algebra $\mathbb{R}^{3}$ is the infinitesimal form of the group of the transformations of the real vector triple preserving the cross product and the dot product, of determinant one. The central direction is dead: $D_{\mathbf a}$ annihilates the centre for every $\mathbf a$, and the central component of an operator never enters the Leibniz rule, since the block reads the centre only through the vector part.
+**Remark (the derivations act by the cross product).** The operator $D_{\vec a}$ acts on the complex vector subspace by the cross product with $\vec a$, which is the infinitesimal form of the transformations of the vector coordinates preserving the cross product; on the real vectors $D_{\vec a}(\vec X)=\vec a\times\vec X$ is the derivation of the cross product, and the derivation algebra $\mathbb{R}^{3}$ is the infinitesimal form of the group of the transformations of the real vector triple preserving the cross product and the dot product, of determinant one. The central direction is dead: $D_{\vec a}$ annihilates the centre for every $\vec a$, and the central component of an operator never enters the Leibniz rule, since the block reads the centre only through the vector part.
 
 ## The Structure Group
 
@@ -275,7 +275,7 @@ for all $\tilde P,\tilde Q$; its identity component has Lie algebra the derivati
 1. The **coefficientwise conjugation** $\overline{\cdot}$: it is an automorphism of the block, $\overline{\tilde P\diamond\tilde Q}=\overline{\tilde P}\diamond\overline{\tilde Q}$, and it is **conjugate-linear**, so the structure group is not confined to the linear maps.
 2. The **complex linear extensions of the real transformations preserving the cross product**: for a real $3\times3$ matrix $R$ with $R^{\mathsf T}R=I$ and $\det R=1$, the map $T_R$ fixing the centre and acting on the complex vector subspace by $R$ in its two real components,
    $$
-   T_R(Q_0e_0+\mathbf U+i\mathbf V)=Q_0e_0+R\mathbf U+iR\mathbf V,
+   T_R(Q_0e_0+\vec U+i\vec V)=Q_0e_0+R\vec U+iR\vec V,
    $$
    is a $\mathbb{C}$-linear automorphism of the block.
 
@@ -287,7 +287,7 @@ The **natural conjugation** $^{\natural}$ is **not** an automorphism of the bloc
 
 ## Summary
 
-The left multiplication of the block is the conjugate-linear operator $L^{\diamond}_{\tilde A}=\mathrm{Vect}\circ S_{\tilde A,e_0}$, the vector part of the left multiplication of the row; the right multiplication is its conjugate, $R^{\diamond}_{\tilde A}=-\overline{L^{\diamond}_{\tilde A}}$, so a single $\mathbb{C}$-linear companion $T_{\tilde A}=\overline{L^{\diamond}_{\tilde A}}=-R^{\diamond}_{\tilde A}$ carries the whole operator theory. In the real basis the matrix has its two scalar rows zero and its trace zero; it has rank six for a unit and four for a zero divisor, the kernel being the set of the $\tilde X$ with $\tilde A\tilde X^{*}$ central, which is the centre for $\tilde A=e_0$ and the line $\mathbb{C}e_k$ for $\tilde A=e_k$. The characteristic polynomial of the matrix $M_{\tilde A}$ is even, $\lambda^{2}P(\lambda)$, with $P$ even of degree six: $\lambda^{2}(\lambda^{2}-1)^{3}$ at the unit, $\lambda^{4}(\lambda^{2}+1)^{2}$ at the basis vectors, and $\lambda^{4}(\lambda^{2}+2)^{2}$ at the zero divisor $e_1+ie_2$. The adjoint with respect to $H$ is the right multiplication of the star of the vector part, $(L^{\diamond}_{\tilde A})^{\dagger}(\tilde Y)=(\mathrm{Vect}\tilde Y)^{*}\tilde A$, a conjugate-linear operator with scalar part $H(\mathbf A,\mathbf Y)$; the operator is the first factor of the two-parameter sandwich, whose value is $L^{\diamond}_{\tilde A}(\tilde X)\tilde B^{*}+H(\tilde A,\tilde X)\tilde B^{*}$. The derivations are the cross products $D_{\mathbf a}(\tilde X)=[0,\mathbf a\times\tilde{\mathbf X}]$ with $\mathbf a$ real, a three-dimensional Lie algebra isomorphic to $\mathbb{R}^{3}$ with the cross product; the structure group contains the coefficientwise conjugation (conjugate-linear) and the complex-linear extensions of the real transformations preserving the cross product of the vector triple, of determinant one, with Lie algebra the derivation algebra, and it does not contain the natural conjugation. The two one-sided operators do not compose, $L^{\diamond}_{\tilde A}L^{\diamond}_{\tilde B}(\tilde X)=\mathrm{Vect}(\tilde A\tilde X\tilde B^{*})-\overline{H(\tilde B,\tilde X)}\,\mathrm{Vect}(\tilde A)$ while $L^{\diamond}_{e_1}L^{\diamond}_{e_1}(e_2)=-e_2$ against $L^{\diamond}_{e_1\diamond e_1}=0$, so the block has no monoid of operators and no regular representation; the companion family composes into the right family, $T_{\tilde A}T_{\tilde B}=R^{\diamond}_{\tilde A}R^{\diamond}_{\tilde B}$.
+The left multiplication of the block is the conjugate-linear operator $L^{\diamond}_{\tilde A}=\mathrm{Vect}\circ S_{\tilde A,e_0}$, the vector part of the left multiplication of the row; the right multiplication is its conjugate, $R^{\diamond}_{\tilde A}=-\overline{L^{\diamond}_{\tilde A}}$, so a single $\mathbb{C}$-linear companion $T_{\tilde A}=\overline{L^{\diamond}_{\tilde A}}=-R^{\diamond}_{\tilde A}$ carries the whole operator theory. In the real basis the matrix has its two scalar rows zero and its trace zero; it has rank six for a unit and four for a zero divisor, the kernel being the set of the $\tilde X$ with $\tilde A\tilde X^{*}$ central, which is the centre for $\tilde A=e_0$ and the line $\mathbb{C}e_k$ for $\tilde A=e_k$. The characteristic polynomial of the matrix $M_{\tilde A}$ is even, $\lambda^{2}P(\lambda)$, with $P$ even of degree six: $\lambda^{2}(\lambda^{2}-1)^{3}$ at the unit, $\lambda^{4}(\lambda^{2}+1)^{2}$ at the basis vectors, and $\lambda^{4}(\lambda^{2}+2)^{2}$ at the zero divisor $e_1+ie_2$. The adjoint with respect to $H$ is the right multiplication of the star of the vector part, $(L^{\diamond}_{\tilde A})^{\dagger}(\tilde Y)=(\mathrm{Vect}\tilde Y)^{*}\tilde A$, a conjugate-linear operator with scalar part $H(\vec A,\vec Y)$; the operator is the first factor of the two-parameter sandwich, whose value is $L^{\diamond}_{\tilde A}(\tilde X)\tilde B^{*}+H(\tilde A,\tilde X)\tilde B^{*}$. The derivations are the cross products $D_{\vec a}(\tilde X)=[0,\vec a\times\tilde{\mathbf X}]$ with $\vec a$ real, a three-dimensional Lie algebra isomorphic to $\mathbb{R}^{3}$ with the cross product; the structure group contains the coefficientwise conjugation (conjugate-linear) and the complex-linear extensions of the real transformations preserving the cross product of the vector triple, of determinant one, with Lie algebra the derivation algebra, and it does not contain the natural conjugation. The two one-sided operators do not compose, $L^{\diamond}_{\tilde A}L^{\diamond}_{\tilde B}(\tilde X)=\mathrm{Vect}(\tilde A\tilde X\tilde B^{*})-\overline{H(\tilde B,\tilde X)}\,\mathrm{Vect}(\tilde A)$ while $L^{\diamond}_{e_1}L^{\diamond}_{e_1}(e_2)=-e_2$ against $L^{\diamond}_{e_1\diamond e_1}=0$, so the block has no monoid of operators and no regular representation; the companion family composes into the right family, $T_{\tilde A}T_{\tilde B}=R^{\diamond}_{\tilde A}R^{\diamond}_{\tilde B}$.
 
 ## Summary of Notation
 
@@ -301,7 +301,7 @@ The left multiplication of the block is the conjugate-linear operator $L^{\diamo
 | $M_{e_0}=\operatorname{diag}(0,-1,-1,-1,0,1,1,1)$ | the matrix of the unit, trace zero, rank six |
 | $\chi_{M_{\tilde A}}=\lambda^{2}P(\lambda)$ | the characteristic polynomial of the real matrix of $L^{\diamond}_{\tilde A}$, even, $P$ even of degree six |
 | $(L^{\diamond}_{\tilde A})^{\dagger}(\tilde Y)=(\mathrm{Vect}\tilde Y)^{*}\tilde A$ | the adjoint under the twisted rule |
-| $D_{\mathbf a}(\tilde X)=[0,\mathbf a\times\tilde{\mathbf X}]$ | the derivation by a real vector, the algebra $\mathbb{R}^{3}$ with the cross product |
+| $D_{\vec a}(\tilde X)=[0,\vec a\times\tilde{\mathbf X}]$ | the derivation by a real vector, the algebra $\mathbb{R}^{3}$ with the cross product |
 | $T_R$ | the complex-linear automorphism from a real $R$ with $R^{\mathsf T}R=I$, $\det R=1$ |
 
 ## Further Reading

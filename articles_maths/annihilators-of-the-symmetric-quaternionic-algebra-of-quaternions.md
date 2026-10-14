@@ -17,7 +17,7 @@ of linear algebra.
 The block of this article is the **symmetric quaternionic multiplication**
 $$
 \tilde p\star\tilde q=\tfrac12\bigl(\tilde p^{\natural}\tilde q+\tilde q^{\natural}\tilde p\bigr)
-=N(\tilde p,\tilde q)\,e_0,\qquad N(\tilde p,\tilde q)=p_0q_0+(\mathbf p,\mathbf q),
+=N(\tilde p,\tilde q)\,e_0,\qquad N(\tilde p,\tilde q)=p_0q_0+(\vec p,\vec q),
 $$
 the quaternion form read as a product (*Introduction to the Symmetric Quaternionic Algebra of
 Quaternions*). It is commutative and central valued, so the two annihilators of an element are one
@@ -82,13 +82,13 @@ Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*).
 
 **Corollary (the element is never in its own annihilator).** For $\tilde p\neq0$ the element does
 not belong to its annihilator, because
-$N(\tilde p,\tilde p)=N(\tilde p)=p_0^{2}+|\mathbf p|^{2}>0$. Only $0$ lies in its own annihilator,
+$N(\tilde p,\tilde p)=N(\tilde p)=p_0^{2}+|\vec p|^{2}>0$. Only $0$ lies in its own annihilator,
 and there the annihilator is the whole space.
 
 ## The Multiplication Operator and the Rank
 
 **Proposition (the operator).** In the basis $e_0,e_1,e_2,e_3$ the operator $L_{\tilde p}$ of an
-element $\tilde p=p_0e_0+\mathbf p$ has matrix
+element $\tilde p=p_0e_0+\vec p$ has matrix
 $$
 \begin{pmatrix}
 p_0 & p_1 & p_2 & p_3 \\
@@ -120,7 +120,7 @@ general products read on the cone is read here on the isotropic locus.
 Over $\mathbb{C}$ that locus is a nontrivial cone: the isotropic elements satisfy
 $N(\tilde p,\tilde p)=0$, they lie in their own annihilator, and they are exactly the nilpotents of
 index two. Over $\mathbb{R}$ the form is positive definite, so
-$N(\tilde p,\tilde p)=N(\tilde p)=p_0^{2}+|\mathbf p|^{2}>0$ for every nonzero element and the
+$N(\tilde p,\tilde p)=N(\tilde p)=p_0^{2}+|\vec p|^{2}>0$ for every nonzero element and the
 isotropic set is the single point $0$: **no nonzero element is in its own annihilator**. The
 hyperplane shape is the same in the two blocks; the definiteness is what removes the
 self-annihilating elements, and it is the only difference. The reason the annihilator is never zero
@@ -138,11 +138,11 @@ each.
 $N(\lambda e_0,\tilde x)=\lambda x_0$, so its annihilator is $\{x_0=0\}$, the vector subspace. The
 centre is therefore the subspace whose nonzero elements annihilate exactly the vector subspace.
 
-**The vector subspace.** A nonzero pure element $\tilde p=\mathbf p$ has
-$N(\mathbf p,\tilde x)=(\mathbf p,\mathbf x)$, so its annihilator is the hyperplane
-$\{\tilde x:(\mathbf p,\mathbf x)=0\}$. It contains the centre and, inside the vector subspace, the
-real plane orthogonal to $\mathbf p$; the element $\mathbf p$ never lies in the annihilator,
-because $(\mathbf p,\mathbf p)>0$ for $\mathbf p\neq0$. On the vector subspace the annihilator
+**The vector subspace.** A nonzero pure element $\tilde p=\vec p$ has
+$N(\vec p,\tilde x)=(\vec p,\vec x)$, so its annihilator is the hyperplane
+$\{\tilde x:(\vec p,\vec x)=0\}$. It contains the centre and, inside the vector subspace, the
+real plane orthogonal to $\vec p$; the element $\vec p$ never lies in the annihilator,
+because $(\vec p,\vec p)>0$ for $\vec p\neq0$. On the vector subspace the annihilator
 meets the subspace in a plane, of dimension two, and the missing dimension is the scalar one.
 
 ## Summary
@@ -151,7 +151,7 @@ The annihilator of an element in a product is the set of partners the element ki
 the right annihilator being the kernels of the left and the right multiplication. The symmetric
 quaternionic multiplication is commutative and central valued,
 $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$ with
-$N(\tilde p,\tilde q)=p_0q_0+(\mathbf p,\mathbf q)$, so the two annihilators of an element
+$N(\tilde p,\tilde q)=p_0q_0+(\vec p,\vec q)$, so the two annihilators of an element
 coincide. Every nonzero element is a zero divisor and every nonzero element has the **hyperplane**
 $\tilde p^{\perp}$ as annihilator, of real dimension three; the operator $L_{\tilde p}$ has rank
 one, image the centre $\mathbb{R}e_0$, trace $p_0$ and determinant $0$; and the annihilator of the
@@ -165,11 +165,11 @@ themselves.
 | Symbol | Meaning |
 |---|---|
 | $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$ | the symmetric quaternionic multiplication, the operation $\mathrm{SQA}$ |
-| $N(\tilde p,\tilde q)=p_0q_0+(\mathbf p,\mathbf q)$ | the quaternion form, the scalar part of the block, positive definite |
+| $N(\tilde p,\tilde q)=p_0q_0+(\vec p,\vec q)$ | the quaternion form, the scalar part of the block, positive definite |
 | $A_\star(\tilde p),B_\star(\tilde p)$ | the left and the right annihilator of $\tilde p$ in the block, equal because the block is commutative |
 | $L_{\tilde p}$ | the left multiplication operator, $L_{\tilde p}\tilde x=N(\tilde p,\tilde x)e_0$, of rank one for $\tilde p\neq0$ |
 | $\tilde p^{\perp}=\{\tilde x:N(\tilde p,\tilde x)=0\}$ | the annihilator of a nonzero element, a real hyperplane of dimension three |
-| $N(\tilde p)=p_0^{2}+|\mathbf p|^{2}=N(\tilde p,\tilde p)>0$ | the definite norm, never zero at a nonzero element |
+| $N(\tilde p)=p_0^{2}+|\vec p|^{2}=N(\tilde p,\tilde p)>0$ | the definite norm, never zero at a nonzero element |
 
 ## Further Reading
 

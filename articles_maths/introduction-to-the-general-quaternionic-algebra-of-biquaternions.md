@@ -8,7 +8,7 @@ The construction is short and the consequences are of two kinds. The product is 
 
 The boundaries are stated at once. The product is not defined here: the coordinate rule and the four names are *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, the identities that link the four general products are *Relations Between the Four General Products*, and their properties are compared in *Comparison Between the Four General Products*. The same space read with the plain product is *Introduction to the General Plain Algebra of Biquaternions* and with the star in the second slot is *Introduction to the General Plain Sesqualgebra of Biquaternions*; the fourth product is *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*. The question of the base rings is *The Realification of the General Plain Algebra*, and the centre is proved in *Introduction to the General Plain Algebra of Biquaternions*, §*The Scalars Are the Centre*; what is done here with the base ring is narrower and sharp: the three quaternionic scalar laws are tested on the product and the answer fixes the base at $\mathbb{C}$. The elements, the basis, the conjugations and the remarkable subspaces are *Biquaternions as a Vector Space over $\mathbb{C}$*, *Introduction to the Remarkable Subspaces*, *Decompositions Along the Remarkable Subspaces* and *Comparison of the Remarkable Subspaces*, and the span table of the plain product on the remarkable subspaces is *Remarkable Subspaces and the Four General Products*; what is done here with the subspaces is narrower, the agreement with the plain product on the scalar line, the negated quaternion product on the vector part, and the $\mathbb{Z}/2$-grading that the real quaternion splitting gives to this multiplication. The general theory is *Algebras: A General Introduction*, associativity is *Associative Algebras*, the identity is *Unital Algebras*, the three weaker identities are *Non-Associative Algebras and the Property Ladder*, and the anti-automorphisms are *Opposite Algebras and Anti-Isomorphisms*. On the biquaternion side, the units and the invertibility criterion are read in the same article, the zero divisors are *Zero Divisors of the General Plain Algebra*, and the idempotents of the algebra are *Idempotents of the General Plain Algebra*.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the biquaternion algebra, with basis $e_0,e_1,e_2,e_3$ and central scalar imaginary $i$, $i^2=-1$; a general element is $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. Throughout, an element is written $\tilde Q=Q_0e_0+\mathbf Q$ with $\mathbf Q=\sum_{k=1}^{3}Q_ke_k$, and $(\mathbf P,\mathbf Q)=\sum_kP_kQ_k$ and $\mathbf P\times\mathbf Q$ are the complex bilinear dot and cross products of the vector parts. The conjugations are the natural one ${}^{\natural}$, which keeps the scalar coordinate and negates the three vector coordinates, the coefficientwise one $\bar{\cdot}$, which conjugates the four coefficients, and the star ${}^{*}=\bar{\cdot}\circ{}^{\natural}={}^{\natural}\circ\bar{\cdot}$; the sign vector is $\varepsilon=(1,-1,-1,-1)$, so that $Q^{\natural}_\nu=\varepsilon_\nu Q_\nu$. The plain product is written $\tilde P\tilde Q$ and the product of this article is written $\star$, with
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the biquaternion algebra, with basis $e_0,e_1,e_2,e_3$ and central scalar imaginary $i$, $i^2=-1$; a general element is $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. Throughout, an element is written $\tilde Q=Q_0e_0+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_ke_k$, and $(\vec P,\vec Q)=\sum_kP_kQ_k$ and $\vec P\times\vec Q$ are the complex bilinear dot and cross products of the vector parts. The conjugations are the natural one ${}^{\natural}$, which keeps the scalar coordinate and negates the three vector coordinates, the coefficientwise one $\bar{\cdot}$, which conjugates the four coefficients, and the star ${}^{*}=\bar{\cdot}\circ{}^{\natural}={}^{\natural}\circ\bar{\cdot}$; the sign vector is $\varepsilon=(1,-1,-1,-1)$, so that $Q^{\natural}_\nu=\varepsilon_\nu Q_\nu$. The plain product is written $\tilde P\tilde Q$ and the product of this article is written $\star$, with
 
 $$
 \tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q
@@ -41,7 +41,7 @@ $$
 Collecting the scalar part and the vector part of the two elements, the same product reads
 
 $$
-\tilde P\star\tilde Q=\bigl(P_0Q_0+(\mathbf P,\mathbf Q)\bigr)+P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q ,
+\tilde P\star\tilde Q=\bigl(P_0Q_0+(\vec P,\vec Q)\bigr)+P_0\vec Q-Q_0\vec P-\vec P\times\vec Q ,
 $$
 
 the coordinate display of the definition with the vector part of the first factor negated, which is what the conjugation ${}^{\natural}$ does to it; both displays are quoted from *The Four General Products of the Biquaternion $\mathbb{C}$ Space*. The scalar part of the product is $\mathrm{Sc}(\tilde P\star\tilde Q)=\sum_{\mu=0}^{3}P_\mu Q_\mu$, written on the coordinates of the two factors.
@@ -225,22 +225,22 @@ $$
 
 so the square is a scalar element, in the scalar line $\mathbb{C}e_0$.
 
-**Proof.** The scalar–vector form gives $\tilde Q^{\natural}\tilde Q=(Q_0-\mathbf Q)(Q_0+\mathbf Q)=Q_0^2-\mathbf Q^2$, and $\mathbf Q^2=-(\mathbf Q,\mathbf Q)$ for a vector part, so the value is $\bigl(Q_0^2+(\mathbf Q,\mathbf Q)\bigr)e_0=\sum_\mu Q_\mu^2e_0$. The same scalar is produced in the two orders, $\tilde Q\tilde Q^{\natural}=\tilde Q^{\natural}\tilde Q$.
+**Proof.** The scalar–vector form gives $\tilde Q^{\natural}\tilde Q=(Q_0-\vec Q)(Q_0+\vec Q)=Q_0^2-\vec Q^2$, and $\vec Q^2=-(\vec Q,\vec Q)$ for a vector part, so the value is $\bigl(Q_0^2+(\vec Q,\vec Q)\bigr)e_0=\sum_\mu Q_\mu^2e_0$. The same scalar is produced in the two orders, $\tilde Q\tilde Q^{\natural}=\tilde Q^{\natural}\tilde Q$.
 
 **Corollary.** Every square lies in the scalar line $\mathbb{C}e_0$; it is fixed by the natural conjugation, and it is central for the plain product. The squaring map of the multiplication is $\tilde Q\mapsto\bigl(\sum_\mu Q_\mu^2\bigr)e_0$, with its values in the scalar line rather than in the field.
 
-**Remark.** The plain product and the $\natural$-product therefore have different squares: the square in the multiplication is $\bigl(\sum_\mu Q_\mu^2\bigr)e_0$ for every $\tilde Q$, whereas the square in the plain product is $Q_0^2-(\mathbf Q,\mathbf Q)+2Q_0\mathbf Q$, which lands in the scalar line exactly when $\tilde Q$ is a multiple of $e_0$, and is then $Q_0^2e_0$, or when its scalar part vanishes, and is then $-\bigl(\sum_k Q_k^2\bigr)e_0$. Which of the two a statement about squares is about must be said each time, and the two are the pair of structures attached to the two bilinear products of the space.
+**Remark.** The plain product and the $\natural$-product therefore have different squares: the square in the multiplication is $\bigl(\sum_\mu Q_\mu^2\bigr)e_0$ for every $\tilde Q$, whereas the square in the plain product is $Q_0^2-(\vec Q,\vec Q)+2Q_0\vec Q$, which lands in the scalar line exactly when $\tilde Q$ is a multiple of $e_0$, and is then $Q_0^2e_0$, or when its scalar part vanishes, and is then $-\bigl(\sum_k Q_k^2\bigr)e_0$. Which of the two a statement about squares is about must be said each time, and the two are the pair of structures attached to the two bilinear products of the space.
 
 ### The Symmetrised and the Antisymmetrised Product
 
 **Proposition.** The product is symmetric modulo its scalar line, and its symmetrisation is scalar:
 
 $$
-\tilde P\star\tilde Q+\tilde Q\star\tilde P=2\,\mathrm{Sc}(\tilde P^{\natural}\tilde Q)\,e_0=2\bigl(P_0Q_0+(\mathbf P,\mathbf Q)\bigr)e_0 , \qquad
-\tilde P\star\tilde Q-\tilde Q\star\tilde P=2P_0\mathbf Q-2Q_0\mathbf P-2\mathbf P\times\mathbf Q .
+\tilde P\star\tilde Q+\tilde Q\star\tilde P=2\,\mathrm{Sc}(\tilde P^{\natural}\tilde Q)\,e_0=2\bigl(P_0Q_0+(\vec P,\vec Q)\bigr)e_0 , \qquad
+\tilde P\star\tilde Q-\tilde Q\star\tilde P=2P_0\vec Q-2Q_0\vec P-2\vec P\times\vec Q .
 $$
 
-**Proof.** The sum of the left-hand sides is $\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P$, whose scalar part is twice $\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$ and whose vector part is $P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q+Q_0\mathbf P-P_0\mathbf Q+\mathbf P\times\mathbf Q=0$; the difference is the same computation with the signs kept.
+**Proof.** The sum of the left-hand sides is $\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P$, whose scalar part is twice $\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\vec P,\vec Q)$ and whose vector part is $P_0\vec Q-Q_0\vec P-\vec P\times\vec Q+Q_0\vec P-P_0\vec Q+\vec P\times\vec Q=0$; the difference is the same computation with the signs kept.
 
 **Corollary.** The symmetrised product lies in the scalar line and the antisymmetrised product in the vector part. The multiplication is thus the sum of a symmetric scalar part and an antisymmetric vector part, the two added inside the algebra rather than in separate spaces, which is the shape in which the quaternion product itself is usually written.
 
@@ -274,11 +274,11 @@ The remarkable subspaces and the exact span table of the plain product on them a
 
 ### The Scalar Line and the Vector Part
 
-**Proposition.** On the scalar line the multiplication agrees with the plain product and is the multiplication of the field: $(Ae_0)\star(Be_0)=ABe_0$ for $A,B\in\mathbb{C}$. On the vector part it is the negated quaternion product: $\mathbf U\star\mathbf V=-\mathbf U\mathbf V$ for pure vector parts, so its symmetric part is the dot product, $\mathbf U\star\mathbf V+\mathbf V\star\mathbf U=2(\mathbf U,\mathbf V)e_0$, and its antisymmetric part is minus the cross product.
+**Proposition.** On the scalar line the multiplication agrees with the plain product and is the multiplication of the field: $(Ae_0)\star(Be_0)=ABe_0$ for $A,B\in\mathbb{C}$. On the vector part it is the negated quaternion product: $\vec U\star\vec V=-\vec U\vec V$ for pure vector parts, so its symmetric part is the dot product, $\vec U\star\vec V+\vec V\star\vec U=2(\vec U,\vec V)e_0$, and its antisymmetric part is minus the cross product.
 
-**Proof.** The natural conjugation fixes the scalar line and negates the vector part; on the vector part the plain product of two pure vectors is $-(\mathbf U,\mathbf V)+\mathbf U\times\mathbf V$, and the product is its negative.
+**Proof.** The natural conjugation fixes the scalar line and negates the vector part; on the vector part the plain product of two pure vectors is $-(\vec U,\vec V)+\vec U\times\vec V$, and the product is its negative.
 
-**Remark.** On the vector part the multiplication is therefore the companion of the plain product in the same sense as the quaternion product is the companion of the vector product: the plain product has the symmetric part $-(\mathbf U,\mathbf V)$ beside the cross product, and the $\natural$-product has the symmetric part $+(\mathbf U,\mathbf V)$ beside the negative cross product. On the scalar line the two agree, which is the statement that $\natural$ is the identity where the conjugation has nothing to do.
+**Remark.** On the vector part the multiplication is therefore the companion of the plain product in the same sense as the quaternion product is the companion of the vector product: the plain product has the symmetric part $-(\vec U,\vec V)$ beside the cross product, and the $\natural$-product has the symmetric part $+(\vec U,\vec V)$ beside the negative cross product. On the scalar line the two agree, which is the statement that $\natural$ is the identity where the conjugation has nothing to do.
 
 ### The Quaternion Subspace and Its Imaginary
 
@@ -303,7 +303,7 @@ The identities of *Relations Between the Four General Products* give the multipl
 $$
 \tilde P^{\natural}\tilde Q=2P_0\tilde Q-\tilde P\tilde Q , \qquad
 \tilde P\tilde Q+\tilde P^{\natural}\tilde Q=2P_0\tilde Q , \qquad
-\tilde P\tilde Q-\tilde P^{\natural}\tilde Q=2\mathbf P\tilde Q .
+\tilde P\tilde Q-\tilde P^{\natural}\tilde Q=2\vec P\tilde Q .
 $$
 
 The first display is the second identity solved for the $\natural$-product, and the three say the same thing: **the multiplication of this article is the plain multiplication with the scalar part of the first factor doubled and the plain product subtracted, that is, with the first factor replaced by its conjugate.** Hence the two bilinear products agree exactly where the first factor is scalar, and the whole difference is carried by the vector part of the first factor. In the language of the preceding section, this is the isotope identity read on the coordinates.
@@ -338,9 +338,9 @@ Its table has $e_0$ on the diagonal, the identity row and the negated column, an
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | the biquaternion algebra, read here with the general quaternionic bilinear multiplication |
 | $e_0,e_1,e_2,e_3$ | complex basis; $e_0$ the unit, $e_k$ the quaternion units |
 | $i$ | central scalar imaginary, $i^2=-1$ |
-| $\tilde Q=Q_0e_0+\mathbf Q$ | a biquaternion and its scalar–vector split, $\mathbf Q=\sum_kQ_ke_k$ |
-| $(\mathbf P,\mathbf Q)=\sum_kP_kQ_k$ | complex bilinear dot product of the vector parts |
-| $\mathbf P\times\mathbf Q$ | complex bilinear cross product of the vector parts |
+| $\tilde Q=Q_0e_0+\vec Q$ | a biquaternion and its scalar–vector split, $\vec Q=\sum_kQ_ke_k$ |
+| $(\vec P,\vec Q)=\sum_kP_kQ_k$ | complex bilinear dot product of the vector parts |
+| $\vec P\times\vec Q$ | complex bilinear cross product of the vector parts |
 | ${}^{\natural}$ | the natural conjugation, the $\mathbb{C}$-linear anti-automorphism of the first slot |
 | $\bar{\cdot}$, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ | the coefficientwise conjugation and the star |
 | $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ | the general quaternionic bilinear product, the multiplication of the article |

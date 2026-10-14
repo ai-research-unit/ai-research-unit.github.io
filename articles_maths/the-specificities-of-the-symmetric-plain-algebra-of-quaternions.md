@@ -6,7 +6,7 @@ The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde p
 
 **This is not the algebra $\mathbb{H}$.** The two algebras share the space, the addition, the real scalars and the unit, but $\bullet$ is a different multiplication and the projection onto the scalar line is not multiplicative. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives nothing new.
 
-**Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1^2=e_2^2=e_3^2=-e_0$. An element is $\tilde q=q_0e_0+\mathbf q$ with $\mathbf q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; the norm is $N(\tilde q)=\tilde q\tilde q^{\natural}=q_0^2+|\mathbf q|^2$, the generic trace is $T(\tilde q)=2q_0$, and the scalar line and the vector subspace are those of *Introduction to the Remarkable Subspaces of the Quaternions*. The names of the six operations are those of *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*.
+**Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1^2=e_2^2=e_3^2=-e_0$. An element is $\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; the norm is $N(\tilde q)=\tilde q\tilde q^{\natural}=q_0^2+|\vec q|^2$, the generic trace is $T(\tilde q)=2q_0$, and the scalar line and the vector subspace are those of *Introduction to the Remarkable Subspaces of the Quaternions*. The names of the six operations are those of *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*.
 
 ## The Properties of the Block
 
@@ -34,7 +34,7 @@ $$
 
 where the square is the square of the Jordan product.
 
-**Theorem (the definiteness of the norm).** The generic norm $N(\tilde q)=\tilde q\tilde q^{\natural}=q_0^2+|\mathbf q|^2$ is positive definite and vanishes only at the origin; consequently the block has **no nonzero nilpotent**, every nonzero element is invertible, and the block is a degree-two Jordan algebra with an **anisotropic generic norm**.
+**Theorem (the definiteness of the norm).** The generic norm $N(\tilde q)=\tilde q\tilde q^{\natural}=q_0^2+|\vec q|^2$ is positive definite and vanishes only at the origin; consequently the block has **no nonzero nilpotent**, every nonzero element is invertible, and the block is a degree-two Jordan algebra with an **anisotropic generic norm**.
 
 *Proof.* The norm is a sum of squares of the coordinates, so it is non-negative and vanishes only when $\tilde q=0$; no nonzero nilpotent follows from the quadratic identity $\tilde q^2-2q_0\tilde q+N(\tilde q)e_0=0$, and invertibility is *Norm and Invertibility in the Symmetric Plain Algebra*.
 
@@ -46,7 +46,7 @@ $$
 
 with both terms nonzero.
 
-*Proof.* $e_1\bullet e_1=e_1^2=-e_0$ and $e_0\bullet e_0=e_0^2=e_0$. In general the square of a pure element is $\mathbf u\bullet\mathbf u=-|\mathbf u|^2e_0$, negative, while the square of $e_0$ is $+e_0$, so the square of a pure unit element cancels the square of the unit. Equivalently, the trace form $\operatorname{Tr}(L^{\bullet}_{\tilde p}L^{\bullet}_{\tilde q})=4p_0q_0-2\,\mathbf p\cdot\mathbf q$ is indefinite of signature $(1,3)$, so the Euclidean criterion fails too.
+*Proof.* $e_1\bullet e_1=e_1^2=-e_0$ and $e_0\bullet e_0=e_0^2=e_0$. In general the square of a pure element is $\vec u\bullet\vec u=-|\vec u|^2e_0$, negative, while the square of $e_0$ is $+e_0$, so the square of a pure unit element cancels the square of the unit. Equivalently, the trace form $\operatorname{Tr}(L^{\bullet}_{\tilde p}L^{\bullet}_{\tilde q})=4p_0q_0-2\,\vec p\cdot\vec q$ is indefinite of signature $(1,3)$, so the Euclidean criterion fails too.
 
 **Theorem (the natural involution is formally real).** The quaternion conjugation $\natural$ is an involution of the block, $(\tilde p\bullet\tilde q)^{\natural}=\tilde p^{\natural}\bullet\tilde q^{\natural}$, its self-adjoint part is the scalar line $\mathbb{R}e_0$, and a sum of squares of self-adjoint elements is a sum of positive scalars, vanishing only when every term vanishes. **The natural involution of the block is formally real.**
 
@@ -57,7 +57,7 @@ with both terms nonzero.
 **Remark (which operation carries the sum-of-squares condition of the product).** The sum-of-squares condition for the product is met by the **general quaternionic** and the **symmetric quaternionic** products, whose squares are $|\tilde x|^2e_0$ and are non-negative; but neither is a commutative Jordan product, $\mathrm{GQA}$ being non-commutative and $\mathrm{SQA}$ failing the Jordan identity, so neither carries the formal reality of a Jordan algebra. The **Euclidean spin factor** $JSpin_4\cong H_2(\mathbb{C})$, the degree-two formally real *Jordan* algebra on this space, is $\mathbb{R}\oplus\mathbb{R}^3$ with the product
 
 $$
-(a\cdot e_0+\mathbf u)\bullet'(b\cdot e_0+\mathbf v)=(ab+\mathbf u\cdot\mathbf v)e_0+(a\mathbf v+b\mathbf u),
+(a\cdot e_0+\vec u)\bullet'(b\cdot e_0+\vec v)=(ab+\vec u\cdot\vec v)e_0+(a\vec v+b\vec u),
 $$
 
 whose vector-vector sign is opposite to the block's; it is the spin factor of *Jordan Algebras*, §*Spin Factors*, and it is **not one of the six operations** of the menu. So **the block is the only commutative unital Jordan algebra of the six, and the owner of the definite norm, but its product is not formally real**, the sum-of-squares condition for the product being carried by two operations that are not commutative Jordan products.
@@ -72,7 +72,7 @@ $$
 \tilde\pi\bullet\tilde\pi=\tilde\pi\iff\tilde\pi\in\{0,e_0\}.
 $$
 
-*Proof.* The square of the block is the plain square, so the equation is $\tilde\pi^2=\tilde\pi$. The vector part gives $(2\pi_0-1)\boldsymbol{\pi}=0$, so either $\boldsymbol{\pi}=0$, and then $\pi_0^2=\pi_0$, giving $\tilde\pi\in\{0,e_0\}$, or $\pi_0=\tfrac12$, and then the scalar part gives $|\boldsymbol{\pi}|^2=-\tfrac14$, which has no real solution.
+*Proof.* The square of the block is the plain square, so the equation is $\tilde\pi^2=\tilde\pi$. The vector part gives $(2\pi_0-1)\vec\pi=0$, so either $\vec\pi=0$, and then $\pi_0^2=\pi_0$, giving $\tilde\pi\in\{0,e_0\}$, or $\pi_0=\tfrac12$, and then the scalar part gives $|\vec\pi|^2=-\tfrac14$, which has no real solution.
 
 **Corollary (the class is two-point).** The idempotent class is a two-point class, the two trivial idempotents; the block has **no nontrivial idempotent**, and therefore no projector calculus.
 
@@ -84,7 +84,7 @@ $$
 \tilde p\bullet\tilde p=0\iff\tilde p=0 .
 $$
 
-*Proof.* The equation is $\tilde p^2=0$, whose scalar and vector equations are $p_0^2-|\mathbf p|^2=0$ and $2p_0\mathbf p=0$. If $\mathbf p=0$ then $p_0=0$; if $p_0=0$ then $|\mathbf p|^2=0$ and $\mathbf p=0$.
+*Proof.* The equation is $\tilde p^2=0$, whose scalar and vector equations are $p_0^2-|\vec p|^2=0$ and $2p_0\vec p=0$. If $\vec p=0$ then $p_0=0$; if $p_0=0$ then $|\vec p|^2=0$ and $\vec p=0$.
 
 **Remark (zero divisors are not nilpotents).** The block has a large zero-divisor set, the nonzero pure elements, but **no nonzero nilpotent**: the two classes are distinct, a zero divisor being an element with a nonzero partner and a nilpotent an element whose own square vanishes, and they coincide neither here nor in general.
 
@@ -119,10 +119,10 @@ where $J_\lambda(c)=\{\tilde x : c\bullet\tilde x=\lambda\tilde x\}$.
 
 ### The Isotropic Cone
 
-**Proposition.** The generic norm has no isotropic element but the origin, while the quadratic trace $\mathrm{Sc}(\tilde q\bullet\tilde q)=q_0^2-|\mathbf q|^2$ has the isotropic cone
+**Proposition.** The generic norm has no isotropic element but the origin, while the quadratic trace $\mathrm{Sc}(\tilde q\bullet\tilde q)=q_0^2-|\vec q|^2$ has the isotropic cone
 
 $$
-q_0^2=|\mathbf q|^2,
+q_0^2=|\vec q|^2,
 $$
 
 of real dimension three in the algebra.
@@ -139,7 +139,7 @@ of real dimension three in the algebra.
 
 ## Summary
 
-The symmetric plain algebra of $\mathbb{H}$ is a commutative unital special Jordan algebra over $\mathbb{R}$, not associative but power-associative, and with a **positive definite generic norm** $N(\tilde q)=q_0^2+|\mathbf q|^2$: sums of squares of the coordinates vanish only at the origin, the block has no nonzero nilpotent, and every nonzero element is invertible. Its underlying product is nevertheless **not formally real** with the identity involution: $e_1\bullet e_1+e_0\bullet e_0=-e_0+e_0=0$ with both terms nonzero, because the square of a pure element is negative, and its trace form is indefinite of signature $(1,3)$; the natural involution $\natural$ of the block is formally real, with the scalar line as self-adjoint part, and the definiteness of the generic norm is the operative property the outline calls the formal reality of $\mathbb{H}$ as a Jordan algebra. Its idempotents are exactly $0$ and $e_0$, so its class is two-point and it has no nontrivial projector; its nilpotents are only $0$, so its zero divisors, the nonzero pure elements, are not nilpotents; its Peirce decomposition is degenerate, for the same reason; and its generic norm has no isotropic element but the origin, while its quadratic trace has the indefinite cone $q_0^2=|\mathbf q|^2$. The degree-two structure is carried by the trace $T(\tilde q)=2q_0$, the norm $N(\tilde q)=q_0^2+|\mathbf q|^2$, the quadratic identity and the Jordan inverse. Among the six operations the block is the unique one that is commutative, unital and Jordan, and the criterion is read off those three operations.
+The symmetric plain algebra of $\mathbb{H}$ is a commutative unital special Jordan algebra over $\mathbb{R}$, not associative but power-associative, and with a **positive definite generic norm** $N(\tilde q)=q_0^2+|\vec q|^2$: sums of squares of the coordinates vanish only at the origin, the block has no nonzero nilpotent, and every nonzero element is invertible. Its underlying product is nevertheless **not formally real** with the identity involution: $e_1\bullet e_1+e_0\bullet e_0=-e_0+e_0=0$ with both terms nonzero, because the square of a pure element is negative, and its trace form is indefinite of signature $(1,3)$; the natural involution $\natural$ of the block is formally real, with the scalar line as self-adjoint part, and the definiteness of the generic norm is the operative property the outline calls the formal reality of $\mathbb{H}$ as a Jordan algebra. Its idempotents are exactly $0$ and $e_0$, so its class is two-point and it has no nontrivial projector; its nilpotents are only $0$, so its zero divisors, the nonzero pure elements, are not nilpotents; its Peirce decomposition is degenerate, for the same reason; and its generic norm has no isotropic element but the origin, while its quadratic trace has the indefinite cone $q_0^2=|\vec q|^2$. The degree-two structure is carried by the trace $T(\tilde q)=2q_0$, the norm $N(\tilde q)=q_0^2+|\vec q|^2$, the quadratic identity and the Jordan inverse. Among the six operations the block is the unique one that is commutative, unital and Jordan, and the criterion is read off those three operations.
 
 ## Summary of Notation
 
@@ -147,11 +147,11 @@ The symmetric plain algebra of $\mathbb{H}$ is a commutative unital special Jord
 |---|---|
 | $\bullet$ | the symmetric plain (Jordan) product |
 | $e_0$ | the two-sided unit |
-| $N(\tilde q)=q_0^2+\lvert\mathbf q\rvert^2$ | the norm, positive definite |
+| $N(\tilde q)=q_0^2+\lvert\vec q\rvert^2$ | the norm, positive definite |
 | $T(\tilde q)=2q_0$ | the generic trace |
 | $\{0,e_0\}$ | the idempotents |
 | $\{0\}$ | the nilpotents and the square-zero elements |
-| $q_0^2=\lvert\mathbf q\rvert^2$ | the isotropic cone of the quadratic trace |
+| $q_0^2=\lvert\vec q\rvert^2$ | the isotropic cone of the quadratic trace |
 | the six | $\mathrm{GPA},\mathrm{SPA},\mathrm{APA},\mathrm{GQA},\mathrm{SQA},\mathrm{AQA}$ |
 
 ## Further Reading

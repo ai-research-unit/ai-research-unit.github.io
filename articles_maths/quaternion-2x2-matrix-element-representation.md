@@ -135,7 +135,7 @@ $$
 \iota(\operatorname{Im}\mathbb{H}) = \left\{ M\in\iota(\mathbb{H}) : \operatorname{tr}M = 0 \right\}.
 $$
 
-*Proof.* A scalar $s$ maps to $sI$, whose trace is $2s$ and which is scalar; a pure quaternion $\mathbf{q}$ maps to $-i(q_1\sigma_1+q_2\sigma_2+q_3\sigma_3)$, a traceless matrix. The trace vanishes exactly when $q_0 = 0$, the vector condition.
+*Proof.* A scalar $s$ maps to $sI$, whose trace is $2s$ and which is scalar; a pure quaternion $\vec q$ maps to $-i(q_1\sigma_1+q_2\sigma_2+q_3\sigma_3)$, a traceless matrix. The trace vanishes exactly when $q_0 = 0$, the vector condition.
 
 **Corollary.** In matrix terms the decomposition is the splitting of $\iota(\mathbb{H})$ into its scalar part and its traceless part; the scalar subspace is the one-dimensional centre and the vector subspace the three-dimensional traceless summand.
 

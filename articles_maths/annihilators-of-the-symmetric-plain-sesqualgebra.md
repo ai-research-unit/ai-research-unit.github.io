@@ -16,7 +16,7 @@ the annihilator is the kernel of that operator, so it is a linear subspace.
 The block of this article is the **symmetric plain sesquimultiplication**
 $$
 \tilde P\star\tilde Q=H(\tilde P,\tilde Q)e_0,\qquad
-H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q}),
+H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\vec P,\overline{\vec Q}),
 $$
 the Hermitian form read as a product (*Introduction to the Symmetric Plain Sesqualgebra of
 Biquaternions*). It is conjugate-commutative and central valued, so the two annihilators of an
@@ -99,8 +99,8 @@ The zero-divisor set of the block is the whole punctured space, so it separates 
 annihilator separates everything: it is the Hermitian orthogonal $\tilde P^{\perp}$, a hyperplane,
 and it is nonzero for every nonzero element. The block is the Hermitian twin of the symmetric
 quaternionic algebra; both have the hyperplane annihilator, and they differ in the form, the
-bilinear $N=P_0Q_0+(\mathbf P,\mathbf Q)$ in the one and the Hermitian
-$H=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})$ in the other. The isotropic locus is the set
+bilinear $N=P_0Q_0+(\vec P,\vec Q)$ in the one and the Hermitian
+$H=P_0\overline{Q_0}+(\vec P,\overline{\vec Q})$ in the other. The isotropic locus is the set
 where the element lies in its own annihilator, and the block has no other separation.
 
 ## The Annihilator on the Remarkable Subspaces
@@ -111,10 +111,10 @@ where the element lies in its own annihilator, and the block has no other separa
 $H(\lambda e_0,\tilde X)=\lambda\overline{X_0}$, so its annihilator is $\{X_0=0\}$, the vector
 subspace. The centre is the subspace whose nonzero elements annihilate exactly the vector subspace.
 
-**The vector subspace.** A nonzero pure element $\tilde P=\mathbf P$ has
-$H(\mathbf P,\tilde X)=(\mathbf P,\overline{\mathbf X})$, so its annihilator is the hyperplane
-$\{\tilde X:(\mathbf P,\overline{\mathbf X})=0\}$. It contains the centre and, inside the vector
-subspace, the Hermitian orthogonal plane of $\mathbf P$; the element $\mathbf P$ lies in its own
+**The vector subspace.** A nonzero pure element $\tilde P=\vec P$ has
+$H(\vec P,\tilde X)=(\vec P,\overline{\vec X})$, so its annihilator is the hyperplane
+$\{\tilde X:(\vec P,\overline{\vec X})=0\}$. It contains the centre and, inside the vector
+subspace, the Hermitian orthogonal plane of $\vec P$; the element $\vec P$ lies in its own
 annihilator exactly when it is isotropic for $H$.
 
 **The Hermitian and anti-Hermitian subspaces.** On the Hermitian subspace the form $H$ is the
@@ -128,7 +128,7 @@ The annihilator of an element in a product is the set of partners the element ki
 the right annihilator being the kernels of the left and the right multiplication. The symmetric
 plain sesquimultiplication is conjugate-commutative and central valued,
 $\tilde P\star\tilde X=H(\tilde P,\tilde X)e_0$ with
-$H(\tilde P,\tilde X)=P_0\overline{X_0}+(\mathbf P,\overline{\mathbf X})$, so the two annihilators
+$H(\tilde P,\tilde X)=P_0\overline{X_0}+(\vec P,\overline{\vec X})$, so the two annihilators
 of an element coincide. Every nonzero element is a zero divisor and every nonzero element has the
 **hyperplane** $\tilde P^{\perp}$ as annihilator, of complex dimension three; the element lies in
 its own annihilator exactly when it is isotropic, and the annihilator of the product is $\{0\}$
@@ -140,7 +140,7 @@ quaternionic algebra, and the two differ only in the form.
 | Symbol | Meaning |
 |---|---|
 | $\tilde P\star\tilde Q=H(\tilde P,\tilde Q)e_0$ | the symmetric plain sesquimultiplication, the operation $\mathrm{SPS}$ |
-| $H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})$ | the Hermitian form, the scalar part of the block |
+| $H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\vec P,\overline{\vec Q})$ | the Hermitian form, the scalar part of the block |
 | $A_\star(\tilde P),B_\star(\tilde P)$ | the left and the right annihilator, equal because the block is conjugate-commutative |
 | $L_{\tilde P}$ | the left multiplication operator, $L_{\tilde P}\tilde X=H(\tilde P,\tilde X)e_0$, of rank one for $\tilde P\neq0$ |
 | $\tilde P^{\perp}=\{\tilde X:H(\tilde P,\tilde X)=0\}$ | the annihilator of a nonzero element, a complex hyperplane of dimension three |

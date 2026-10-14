@@ -10,7 +10,7 @@ The equation names a product, and throughout this article the square is the one 
 
 **Boundaries.** The plain square-root problem, its vector–scalar reduction and its two branches are *Square Roots of a General Element in the General Plain Algebra*; the roots of $+1$ and of $-1$ in the plain product with its idempotents are *Square Roots of One and the Idempotents of the General Plain Algebra*, and the roots of $0$ with its nilpotents are *Square Roots of Zero and the Nilpotents of the General Plain Algebra*. The four central-value problems of the four general products side by side are *Square Roots of a General Element in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, which owns the comparison; this article owns the block reading and the existence criterion for an arbitrary radicand. The algebraic norm is *Norm and Invertibility in the General Quaternionic Algebra*, the cone and the zero divisors are *Zero Divisors of the General Quaternionic Algebra*, the roots of $+1$ and of $-1$ with the idempotents of the product are *Square Roots of One and the Idempotents of the General Quaternionic Algebra*, and the roots of $0$ with the nilpotents are *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra*.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$, with $e_1e_2=e_3$ and central scalar imaginary $i$, $i^2=-1$. Juxtaposition is the plain product and $\star$ the general quaternionic bilinear product $\tilde\Xi\star\tilde Q=\tilde\Xi^{\natural}\tilde Q$, with $\natural$ the natural conjugation $\tilde Q^{\natural}=Q_0-\mathbf Q$. An element is $\tilde\Xi=\Xi_0e_0+\mathbf\Xi$ with $\mathbf\Xi=\sum_{k=1}^{3}\Xi_ke_k$, the **algebraic norm** is $N(\tilde\Xi)=\sum_\mu \Xi_\mu^2=\Xi_0^2+(\mathbf\Xi,\mathbf\Xi)$, and a **central value** is an element $\lambda e_0$ with $\lambda\in\mathbb{C}$; the scalar line $\mathbb{C}e_0$ is denoted $\mathbb{C}_{\mathbb{B}}$.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$, with $e_1e_2=e_3$ and central scalar imaginary $i$, $i^2=-1$. Juxtaposition is the plain product and $\star$ the general quaternionic bilinear product $\tilde\Xi\star\tilde Q=\tilde\Xi^{\natural}\tilde Q$, with $\natural$ the natural conjugation $\tilde Q^{\natural}=Q_0-\vec Q$. An element is $\tilde\Xi=\Xi_0e_0+\vec\Xi$ with $\vec\Xi=\sum_{k=1}^{3}\Xi_ke_k$, the **algebraic norm** is $N(\tilde\Xi)=\sum_\mu \Xi_\mu^2=\Xi_0^2+(\vec\Xi,\vec\Xi)$, and a **central value** is an element $\lambda e_0$ with $\lambda\in\mathbb{C}$; the scalar line $\mathbb{C}e_0$ is denoted $\mathbb{C}_{\mathbb{B}}$.
 
 ## The Reduction
 
@@ -28,7 +28,7 @@ $$
 \tilde\Xi\star\tilde\Xi=N(\tilde\Xi)e_0 .
 $$
 
-**Proof.** The scalar–vector form of the product gives $\tilde\Xi^{\natural}\tilde\Xi=(\Xi_0-\mathbf\Xi)(\Xi_0+\mathbf\Xi)=\Xi_0^2-\mathbf\Xi^2=\bigl(\Xi_0^2+(\mathbf\Xi,\mathbf\Xi)\bigr)e_0$; the statement is §*The Square Lies in the Scalar Line* of *Introduction to the General Quaternionic Algebra of Biquaternions*.
+**Proof.** The scalar–vector form of the product gives $\tilde\Xi^{\natural}\tilde\Xi=(\Xi_0-\vec\Xi)(\Xi_0+\vec\Xi)=\Xi_0^2-\vec\Xi^2=\bigl(\Xi_0^2+(\vec\Xi,\vec\Xi)\bigr)e_0$; the statement is §*The Square Lies in the Scalar Line* of *Introduction to the General Quaternionic Algebra of Biquaternions*.
 
 **Theorem (the existence criterion).** The equation $\tilde\Xi\star\tilde\Xi=\tilde Q$ has a solution if and only if $\tilde Q$ is a central value. For $\tilde Q=\lambda e_0$ the equation is equivalent to the single complex equation
 
@@ -90,16 +90,16 @@ The classification covers every element; the two non-empty rows differ in whethe
 
 The values $\lambda=-1$, $0$ and $+1$ are the subject of the companion articles *Square Roots of One and the Idempotents of the General Quaternionic Algebra* and *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra*, and they are the seeds of the classification:
 
-- $R(-1)=\{N=-1\}$, a quadric of real dimension six containing the central roots $\pm i$ and the imaginary vector roots $i\hat\mu$ over the real unit vectors $\hat\mu$;
+- $R(-1)=\{N=-1\}$, a quadric of real dimension six containing the central roots $\pm i$ and the imaginary vector roots $\tilde\Xi$ over the real unit vectors $\hat n$;
 - $R(0)=\{N=0\}=C$, the zero-divisor cone, containing the origin, the pure isotropic elements and the complex multiples of the nontrivial plain idempotents;
-- $R(+1)=\{N=1\}$, a quadric of real dimension six containing the central roots $\pm e_0$ and the real vector roots $\hat\mu$.
+- $R(+1)=\{N=1\}$, a quadric of real dimension six containing the central roots $\pm e_0$ and the real vector roots $\hat n$.
 
 By the scaling theorem, $R(\lambda)$ for a general value is the image of one of the first and the third under multiplication by a square root of $\lambda$, and the second is the cone, which is fixed by every non-zero scaling.
 
 ## Worked Examples
 
-- **Roots of $1$.** The central roots are $\pm e_0$. The element $e_1$ is a root, since $N(e_1)=1$; more generally every real unit vector $\hat\mu$ is a root, and the elements $i\mathbf u$ with $(\mathbf u,\mathbf u)=-1$ are roots as well. The element $e_0+e_1$ is not a root, since $N(e_0+e_1)=1+1=2$.
-- **Roots of $-1$.** The central roots are $\pm i$, and the elements $i\hat\mu$ over the real unit vectors are roots. The element $e_1$ is not a root of $-1$; it is a root of $+1$. This is the sign that the quaternionic product removes from the pure square.
+- **Roots of $1$.** The central roots are $\pm e_0$. The element $e_1$ is a root, since $N(e_1)=1$; more generally every real unit vector $\hat n$ is a root, and the elements $i\vec u$ with $(\vec u,\vec u)=-1$ are roots as well. The element $e_0+e_1$ is not a root, since $N(e_0+e_1)=1+1=2$.
+- **Roots of $-1$.** The central roots are $\pm i$, and the elements $\tilde\Xi$ over the real unit vectors are roots. The element $e_1$ is not a root of $-1$; it is a root of $+1$. This is the sign that the quaternionic product removes from the pure square.
 - **Roots of $0$.** The origin, the pure isotropic element $e_1+ie_2$, and the non-pure element $e_0+ie_1$ are roots; the first is the trivial one, the second is a nilpotent of the plain product, and the third is twice a Hermitian idempotent. The root set is the whole cone, and its members are the zero divisors of the algebra.
 - **Roots of a complex value.** For $\lambda=4$ the element $2e_0$ is a root, and so is $2e_1$; for $\lambda=i$ the element $\alpha e_0$ with $\alpha^2=i$, for instance $\alpha=(1+i)/\sqrt2$, is a root, and the whole root set is the image of $R(1)$ under multiplication by $\alpha$.
 - **A non-central radicand.** The element $e_1$ has no root: its square-root equation would force the central element $N(\tilde\Xi)e_0$ to equal $e_1$. The statement is the absence of §*The Reduction*, and it is the sharpest difference from the plain product, where $e_1$ has the four roots $\pm\tfrac{1}{\sqrt2}(e_0+e_1)$ and $\pm\tfrac{i}{\sqrt2}(e_0-e_1)$ (*Square Roots of a General Element in the General Plain Algebra*).
@@ -112,14 +112,14 @@ The algebraic norm decides the nature of every root, and it decides it the same 
 
 ## Summary
 
-The square-root equation $\tilde\Xi\star\tilde\Xi=\tilde Q$ of the general quaternionic product has a solution exactly when $\tilde Q$ is a central value; an element with non-zero vector part has no root, because the quaternionic square is always central. For a central radicand the equation reduces to the single complex equation $N(\tilde\Xi)=\lambda$, the square of the equation being the algebraic norm, and the root set is the nondegenerate complex quadric $N=\lambda$ of real dimension six when $\lambda\neq0$, and the zero-divisor cone of real dimension six when $\lambda=0$. Every central value has roots, among them the central root $\sqrt\lambda\,e_0$, and the root set of $\lambda$ is the root set of $1$, or of $-1$, scaled by a square root of the value. The three special values generate the classification: $R(-1)$ contains the imaginary vector roots $i\hat\mu$, $R(+1)$ the real vector roots $\hat\mu$, and $R(0)$ the whole nilpotent cone of the product. The roots of a non-zero value are units of the algebra, the non-zero roots of $0$ are its zero divisors, and the absence of a root for a non-central radicand is stated and not filled.
+The square-root equation $\tilde\Xi\star\tilde\Xi=\tilde Q$ of the general quaternionic product has a solution exactly when $\tilde Q$ is a central value; an element with non-zero vector part has no root, because the quaternionic square is always central. For a central radicand the equation reduces to the single complex equation $N(\tilde\Xi)=\lambda$, the square of the equation being the algebraic norm, and the root set is the nondegenerate complex quadric $N=\lambda$ of real dimension six when $\lambda\neq0$, and the zero-divisor cone of real dimension six when $\lambda=0$. Every central value has roots, among them the central root $\sqrt\lambda\,e_0$, and the root set of $\lambda$ is the root set of $1$, or of $-1$, scaled by a square root of the value. The three special values generate the classification: $R(-1)$ contains the imaginary vector roots $\tilde\Xi$, $R(+1)$ the real vector roots $\hat n$, and $R(0)$ the whole nilpotent cone of the product. The roots of a non-zero value are units of the algebra, the non-zero roots of $0$ are its zero divisors, and the absence of a root for a non-central radicand is stated and not filled.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
 | $\tilde\Xi\star\tilde Q=\tilde\Xi^{\natural}\tilde Q$ | the general quaternionic bilinear product |
-| $N(\tilde\Xi)=\sum_\mu \Xi_\mu^2=\Xi_0^2+(\mathbf\Xi,\mathbf\Xi)$ | the algebraic norm |
+| $N(\tilde\Xi)=\sum_\mu \Xi_\mu^2=\Xi_0^2+(\vec\Xi,\vec\Xi)$ | the algebraic norm |
 | $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ | the scalar line, the set of the central values |
 | $\lambda e_0$ | a central value, $\lambda=\lambda_1+i\lambda_2$ |
 | $\tilde\Xi\star\tilde\Xi=N(\tilde\Xi)e_0$ | the central square |

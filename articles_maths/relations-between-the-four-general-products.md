@@ -12,7 +12,7 @@ This article collects the identities that link the four. They are not four unrel
 
 Which of the four general products is a multiplication in the sense of algebra is *Comparison Between the Four General Products*, and the properties of each are tabulated there. The behaviour of the general plain bilinear product on the remarkable subspaces is *Remarkable Subspaces and the Four General Products*, and its split into a symmetric and an antisymmetric half is *The 12 Products of the Biquaternion Complex Space*.
 
-The article assumes the four general products and their scalar–vector forms from *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, and the conjugations from *Biquaternions as a Vector Space over $\mathbb{C}$* and *The Group of Involutions*. Throughout, $\tilde P=P_0+\mathbf P$ and $\tilde Q=Q_0+\mathbf Q$ separate the complex scalar part from the complex vector part, $(\mathbf P,\mathbf Q)=\sum_kP_kQ_k$ and $\mathbf P\times\mathbf Q$ are the complex bilinear dot and cross products, and $\overline{\mathbf Q}$ is the coefficientwise conjugate of the vector part.
+The article assumes the four general products and their scalar–vector forms from *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, and the conjugations from *Biquaternions as a Vector Space over $\mathbb{C}$* and *The Group of Involutions*. Throughout, $\tilde P=P_0+\vec P$ and $\tilde Q=Q_0+\vec Q$ separate the complex scalar part from the complex vector part, $(\vec P,\vec Q)=\sum_kP_kQ_k$ and $\vec P\times\vec Q$ are the complex bilinear dot and cross products, and $\overline{\vec Q}$ is the coefficientwise conjugate of the vector part.
 
 ## The Two Choices, and the Four General Products
 
@@ -43,22 +43,22 @@ The ${}^{\natural}$ in the first slot and the ${}^{*}$ in the second are what di
 Separating the scalar part of the first factor from its vector part, the general plain bilinear product and the ${}^{\natural}$-product are
 
 $$
-\tilde P\tilde Q=(P_0e_0)\tilde Q+\mathbf P\tilde Q , \qquad
-\tilde P^{\natural}\tilde Q=(P_0e_0)\tilde Q-\mathbf P\tilde Q ,
+\tilde P\tilde Q=(P_0e_0)\tilde Q+\vec P\tilde Q , \qquad
+\tilde P^{\natural}\tilde Q=(P_0e_0)\tilde Q-\vec P\tilde Q ,
 $$
 
 the vector part being read as an element where it multiplies. Adding and subtracting,
 
 $$
 \tilde P\tilde Q+\tilde P^{\natural}\tilde Q=2P_0\tilde Q , \qquad
-\tilde P\tilde Q-\tilde P^{\natural}\tilde Q=2\,\mathbf P\tilde Q .
+\tilde P\tilde Q-\tilde P^{\natural}\tilde Q=2\,\vec P\tilde Q .
 $$
 
 The same separation applied to the two sesquilinear products gives
 
 $$
 \tilde P\tilde Q^{*}+\tilde P^{\natural}\tilde Q^{*}=2P_0\tilde Q^{*} , \qquad
-\tilde P\tilde Q^{*}-\tilde P^{\natural}\tilde Q^{*}=2\,\mathbf P\tilde Q^{*} .
+\tilde P\tilde Q^{*}-\tilde P^{\natural}\tilde Q^{*}=2\,\vec P\tilde Q^{*} .
 $$
 
 So the ${}^{\natural}$ in the first slot separates the scalar part of the first factor from its vector part, and the four general products are the two pairs of that separation: the general plain bilinear product and the ${}^{\natural}$-product are separated by the vector part of $\tilde P$, the two sesquilinear ones by the same vector part after the second factor has been conjugated. The two pairs differ from one another by the ${}^{*}$ in the second slot.
@@ -66,7 +66,7 @@ So the ${}^{\natural}$ in the first slot separates the scalar part of the first 
 One reading follows. The ${}^{\natural}$-product agrees with the general plain bilinear product in its first argument exactly when the vector part of that argument annihilates the second factor,
 
 $$
-\tilde P^{\natural}\tilde Q=\tilde P\tilde Q \quad\Longleftrightarrow\quad \mathbf P\tilde Q=0 ,
+\tilde P^{\natural}\tilde Q=\tilde P\tilde Q \quad\Longleftrightarrow\quad \vec P\tilde Q=0 ,
 $$
 
 which holds in particular for every central $\tilde P$, the vector part being zero; no two of the four general products agree on every pair, since the vector part of a general element is different from zero.
@@ -113,12 +113,12 @@ with $\varepsilon=(1,-1,-1,-1)$; the first two are linear in the coordinates of 
 
 $$
 \mathrm{Sc}(\tilde P\tilde Q)+\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=2P_0Q_0 , \qquad
-\mathrm{Sc}(\tilde P\tilde Q)-\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=-2(\mathbf P,\mathbf Q) ,
+\mathrm{Sc}(\tilde P\tilde Q)-\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=-2(\vec P,\vec Q) ,
 $$
 
 $$
 \mathrm{Sc}(\tilde P\tilde Q^{*})+\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=2P_0\overline{Q_0} , \qquad
-\mathrm{Sc}(\tilde P\tilde Q^{*})-\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=2(\mathbf P,\overline{\mathbf Q}) .
+\mathrm{Sc}(\tilde P\tilde Q^{*})-\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=2(\vec P,\overline{\vec Q}) .
 $$
 
 The sums separate the scalar parts of the two factors, the differences the vector part of the first factor against the second: the two scalar parts of a pair are the same reading with the sign of the vector part of the first factor flipped, and their mean and their half-difference are the two extreme readings.
@@ -163,20 +163,20 @@ $$
 and reading the vector part of each side gives
 
 $$
-\mathrm{Vec}(\tilde P^{\natural}\tilde Q)=2P_0\mathbf Q-\mathrm{Vec}(\tilde P\tilde Q) , \qquad
-\mathrm{Vec}(\tilde P^{\natural}\tilde Q^{*})=-2P_0\overline{\mathbf Q}-\mathrm{Vec}(\tilde P\tilde Q^{*}) .
+\mathrm{Vec}(\tilde P^{\natural}\tilde Q)=2P_0\vec Q-\mathrm{Vec}(\tilde P\tilde Q) , \qquad
+\mathrm{Vec}(\tilde P^{\natural}\tilde Q^{*})=-2P_0\overline{\vec Q}-\mathrm{Vec}(\tilde P\tilde Q^{*}) .
 $$
 
-The first says that the vector part of the ${}^{\natural}$-product is the reflection of the vector part of the general plain bilinear product in $P_0\mathbf Q$; the second, that the vector part of the sesquilinear pair reflects in $-P_0\overline{\mathbf Q}$. In full, the four vector parts of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* are two mixed terms and a cross term in each case, and the two signs — the sign of the cross term and the sign of the vector part of the first factor — are what tell the four apart:
+The first says that the vector part of the ${}^{\natural}$-product is the reflection of the vector part of the general plain bilinear product in $P_0\vec Q$; the second, that the vector part of the sesquilinear pair reflects in $-P_0\overline{\vec Q}$. In full, the four vector parts of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* are two mixed terms and a cross term in each case, and the two signs — the sign of the cross term and the sign of the vector part of the first factor — are what tell the four apart:
 
 | product | vector part | cross term |
 |---|---|---|
-| $\tilde P\tilde Q$ | $P_0\mathbf Q+Q_0\mathbf P+\mathbf P\times\mathbf Q$ | $+$ |
-| $\tilde P^{\natural}\tilde Q$ | $P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$ | $-$ |
-| $\tilde P\tilde Q^{*}$ | $-P_0\overline{\mathbf Q}+\overline{Q_0}\mathbf P-\mathbf P\times\overline{\mathbf Q}$ | $-$ |
-| $\tilde P^{\natural}\tilde Q^{*}$ | $-P_0\overline{\mathbf Q}-\overline{Q_0}\mathbf P+\mathbf P\times\overline{\mathbf Q}$ | $+$ |
+| $\tilde P\tilde Q$ | $P_0\vec Q+Q_0\vec P+\vec P\times\vec Q$ | $+$ |
+| $\tilde P^{\natural}\tilde Q$ | $P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$ | $-$ |
+| $\tilde P\tilde Q^{*}$ | $-P_0\overline{\vec Q}+\overline{Q_0}\vec P-\vec P\times\overline{\vec Q}$ | $-$ |
+| $\tilde P^{\natural}\tilde Q^{*}$ | $-P_0\overline{\vec Q}-\overline{Q_0}\vec P+\vec P\times\overline{\vec Q}$ | $+$ |
 
-Deleting the cross term, the first and the second rows are reflections of each other in $P_0\mathbf Q$, and the third and the fourth in $-P_0\overline{\mathbf Q}$; the cross term then distinguishes within each pair, and the ${}^{*}$ in the second slot conjugates the coordinates of $\mathbf Q$, reverses the sign of the $P_0$-term and of the cross term, and leaves the sign of the $Q_0$-term alone.
+Deleting the cross term, the first and the second rows are reflections of each other in $P_0\vec Q$, and the third and the fourth in $-P_0\overline{\vec Q}$; the cross term then distinguishes within each pair, and the ${}^{*}$ in the second slot conjugates the coordinates of $\vec Q$, reverses the sign of the $P_0$-term and of the cross term, and leaves the sign of the $Q_0$-term alone.
 
 ## The Left Multiplications
 
@@ -237,8 +237,8 @@ The four general products of *The Four General Products of the Biquaternion $\ma
 The two conjugations in the slots separate the scalar part of a factor from its vector part,
 
 $$
-\tilde P\tilde Q\pm\tilde P^{\natural}\tilde Q=2P_0\tilde Q \ \text{and}\ 2\mathbf P\tilde Q , \qquad
-\tilde P\tilde Q^{*}\pm\tilde P^{\natural}\tilde Q^{*}=2P_0\tilde Q^{*} \ \text{and}\ 2\mathbf P\tilde Q^{*} ,
+\tilde P\tilde Q\pm\tilde P^{\natural}\tilde Q=2P_0\tilde Q \ \text{and}\ 2\vec P\tilde Q , \qquad
+\tilde P\tilde Q^{*}\pm\tilde P^{\natural}\tilde Q^{*}=2P_0\tilde Q^{*} \ \text{and}\ 2\vec P\tilde Q^{*} ,
 $$
 
 and the same identities hold for the vector parts. The ${}^{\natural}$ of the ${}^{\natural}$-product and the ${}^{*}$ of the ${}^{*}$-product return the same product with the slots exchanged, which is why the scalar parts of those two are symmetric and conjugate-symmetric respectively, while no one of the four general products is commutative.
@@ -252,7 +252,7 @@ The left multiplications of the four are the general plain bilinear ones read th
 | symbol | meaning |
 |---|---|
 | $\tilde P\tilde Q, \tilde P^{\natural}\tilde Q, \tilde P\tilde Q^{*}, \tilde P^{\natural}\tilde Q^{*}$ | the four general products, defined in *The Four General Products of the Biquaternion $\mathbb{C}$ Space* |
-| $\mathbf P$ | the vector part of $\tilde P$, $P_1e_1+P_2e_2+P_3e_3$, read as an element where it multiplies |
+| $\vec P$ | the vector part of $\tilde P$, $P_1e_1+P_2e_2+P_3e_3$, read as an element where it multiplies |
 | $\varepsilon=(1,-1,-1,-1)$ | the sign vector, the signs of the first and of the fourth scalar parts |
 | $L_{\tilde P}$, $R_{\tilde P}$ | the left and right multiplications of the general plain bilinear product by $\tilde P$ |
 | $L^{\natural}_{\tilde P}$, $L^{*}_{\tilde P}$, $L^{\natural*}_{\tilde P}$ | the left multiplications of the three other products |

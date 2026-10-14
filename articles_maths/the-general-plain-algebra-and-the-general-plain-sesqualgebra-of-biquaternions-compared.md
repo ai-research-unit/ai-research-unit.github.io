@@ -8,7 +8,7 @@ This article compares the two structures point by point, on ten headings: the mu
 
 The article is arranged so that each section is self-contained: the entry of the two structures under the heading, the contrast, its cause, and the article that owns the proof. The closing *Summary* collects the ten rows in one table.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the biquaternion algebra, with the basis $e_0,e_1,e_2,e_3$ and the central scalar imaginary $i$, $i^2=-1$. A general element is $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$, written $\tilde Q=Q_0e_0+\mathbf Q$ with $\mathbf Q=\sum_{k=1}^{3}Q_ke_k$; $\mathrm{Sc}(\tilde Q)=Q_0$ is the scalar part and $\mathrm{Vect}(\tilde Q)=\mathbf Q$ the vector part. The coefficient conjugation is $\overline{Q_\mu}$, the quaternion conjugation is $\tilde Q^{\natural}=Q_0e_0-\mathbf Q$, and the Hermitian conjugation is the composite ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, of coordinates $Q^{*}_0=\overline{Q_0}$ and $Q^{*}_k=-\overline{Q_k}$, that is $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ with $\varepsilon=(1,-1,-1,-1)$. The **norm** is the central square $N(\tilde Q)=\tilde Q\tilde Q^{\natural}=Q_0^2+Q_1^2+Q_2^2+Q_3^2$. The two structures are written $(\mathbb{B},\cdot)$, the general plain algebra, and $(\mathbb{B},\star)$ with $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$, the general plain sesqualgebra. Throughout, an **idempotent** is an element $\tilde\Pi$ with $\tilde\Pi^2=\tilde\Pi$ in the product under discussion, and a **projector** is an idempotent operator of the space.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the biquaternion algebra, with the basis $e_0,e_1,e_2,e_3$ and the central scalar imaginary $i$, $i^2=-1$. A general element is $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$, written $\tilde Q=Q_0e_0+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_ke_k$; $\mathrm{Sc}(\tilde Q)=Q_0$ is the scalar part and $\mathrm{Vect}(\tilde Q)=\vec Q$ the vector part. The coefficient conjugation is $\overline{Q_\mu}$, the quaternion conjugation is $\tilde Q^{\natural}=Q_0e_0-\vec Q$, and the Hermitian conjugation is the composite ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, of coordinates $Q^{*}_0=\overline{Q_0}$ and $Q^{*}_k=-\overline{Q_k}$, that is $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ with $\varepsilon=(1,-1,-1,-1)$. The **norm** is the central square $N(\tilde Q)=\tilde Q\tilde Q^{\natural}=Q_0^2+Q_1^2+Q_2^2+Q_3^2$. The two structures are written $(\mathbb{B},\cdot)$, the general plain algebra, and $(\mathbb{B},\star)$ with $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$, the general plain sesqualgebra. Throughout, an **idempotent** is an element $\tilde\Pi$ with $\tilde\Pi^2=\tilde\Pi$ in the product under discussion, and a **projector** is an idempotent operator of the space.
 
 ## The Two Products and the Two Units
 
@@ -122,12 +122,12 @@ a complex cone of dimension three, of real dimension six, with annihilator a com
 
 - In the algebra the square-zero elements are exactly the **pure isotropic cone**
 $$
-\{\tilde P:P_0=0,\ (\mathbf P,\mathbf P)=0\},
+\{\tilde P:P_0=0,\ (\vec P,\vec P)=0\},
 $$
-a complex cone of dimension two, of real dimension four, and every nonzero element of it is a nilpotent of index two, $\tilde P^2=0$; equivalently the square reads $\tilde P^2=\bigl(P_0^2-(\mathbf P,\mathbf P)\bigr)e_0+2P_0\mathbf P$ and vanishes exactly on the cone.
+a complex cone of dimension two, of real dimension four, and every nonzero element of it is a nilpotent of index two, $\tilde P^2=0$; equivalently the square reads $\tilde P^2=\bigl(P_0^2-(\vec P,\vec P)\bigr)e_0+2P_0\vec P$ and vanishes exactly on the cone.
 - In the sesqualgebra there is **no nonzero square-zero element**: the square $\tilde P\star\tilde P=\tilde P\tilde P^{*}$ has scalar part $\sum_\mu\lvert P_\mu\rvert^2$, which is real, nonnegative and vanishes only at $\tilde P=0$. The sesqualgebra nevertheless has nilpotents, and they are exactly the pure isotropic cone above, of **index three**: an element of the cone satisfies $\tilde P^{\star2}\neq0$ and $\tilde P^{\star3}=0$.
 
-*Proof.* The square of the algebra is developed by the coordinates of the plain product; the vanishing of its scalar and vector parts is the two scalar equations $P_0^2=(\mathbf P,\mathbf P)$ and $P_0\mathbf P=0$, whose solutions are the pure isotropic cone together with the origin. For the sesqualgebra, the scalar part is $\mathrm{Sc}(\tilde P\tilde P^{*})=\sum_\mu P_\mu\overline{P_\mu}=\sum_\mu\lvert P_\mu\rvert^2$, a sum of nonnegative reals, vanishing only if every coordinate vanishes. The pure isotropic elements satisfy $\tilde P\tilde P=0$, and one verifies $\tilde P\tilde P^{*}\neq0$ while $\tilde P(\tilde P^{*})\tilde P^{*}=0$ on the cone; the index is read in the $2\times2$ model, where the cone is the rank-one traceless matrices and the criterion $P_0=0$ is the vanishing of the trace. The two classes are *Nilpotents of the General Plain Algebra*, *Nilpotents of the General Plain Sesqualgebra* and *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, and the central square that both criteria read is *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+*Proof.* The square of the algebra is developed by the coordinates of the plain product; the vanishing of its scalar and vector parts is the two scalar equations $P_0^2=(\vec P,\vec P)$ and $P_0\vec P=0$, whose solutions are the pure isotropic cone together with the origin. For the sesqualgebra, the scalar part is $\mathrm{Sc}(\tilde P\tilde P^{*})=\sum_\mu P_\mu\overline{P_\mu}=\sum_\mu\lvert P_\mu\rvert^2$, a sum of nonnegative reals, vanishing only if every coordinate vanishes. The pure isotropic elements satisfy $\tilde P\tilde P=0$, and one verifies $\tilde P\tilde P^{*}\neq0$ while $\tilde P(\tilde P^{*})\tilde P^{*}=0$ on the cone; the index is read in the $2\times2$ model, where the cone is the rank-one traceless matrices and the criterion $P_0=0$ is the vanishing of the trace. The two classes are *Nilpotents of the General Plain Algebra*, *Nilpotents of the General Plain Sesqualgebra* and *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, and the central square that both criteria read is *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 | class | $(\mathbb{B},\cdot)$ | $(\mathbb{B},\star)$ |
 |---|---|---|
@@ -136,7 +136,7 @@ a complex cone of dimension two, of real dimension four, and every nonzero eleme
 | nilpotents | pure isotropic cone, index $2$ | pure isotropic cone, index $3$ |
 | nilpotents inside the zero divisors | proper subfamily | proper subfamily |
 
-The sesqualgebra thus has a **thinner** square-zero set than the algebra and the **same** nilpotent set, and the partition of the zero divisors by the scalar part is inherited unchanged: the pure family $P_0=0$ with $(\mathbf P,\mathbf P)=0$ is the nilpotent family, and the non-pure family $P_0\neq0$ consists of zero divisors that are not nilpotents in either structure. The index is the only thing the second slot changes, and it changes it from two to three.
+The sesqualgebra thus has a **thinner** square-zero set than the algebra and the **same** nilpotent set, and the partition of the zero divisors by the scalar part is inherited unchanged: the pure family $P_0=0$ with $(\vec P,\vec P)=0$ is the nilpotent family, and the non-pure family $P_0\neq0$ consists of zero divisors that are not nilpotents in either structure. The index is the only thing the second slot changes, and it changes it from two to three.
 
 ## Idempotents
 
@@ -146,7 +146,7 @@ $$
 $$
 of real dimension four; those other than $0$ and $e_0$ have central square $0$ and are zero divisors, and the complementation $\tilde\Pi\mapsto e_0-\tilde\Pi$ pairs them with orthogonality $\tilde\Pi(e_0-\tilde\Pi)=0$. The idempotents of the sesqualgebra are exactly the **Hermitian idempotents**
 $$
-\{0,e_0\}\cup\Bigl\{\tfrac12(e_0+i\hat\mu):\hat\mu\in\mathbb{R}^3,\ \lvert\hat\mu\rvert=1\Bigr\},
+\{0,e_0\}\cup\Bigl\{\tfrac12(e_0+\tilde\Xi):\hat n\in\mathbb{R}^3,\ \lvert\hat n\rvert=1\Bigr\},
 $$
 the two-sphere of real dimension two, and the sesqualgebra's idempotent family is the Hermitian part of the algebra's.
 
@@ -166,9 +166,9 @@ The two equations are $\tilde X^2=\tilde A$ and $\tilde X\star\tilde X=\tilde A$
 $$
 \mathrm{Sc}(\tilde X\star\tilde X)=\sum_\mu\lvert X_\mu\rvert^2.
 $$
-Its image is the **Hermitian cone** $\{\alpha e_0+i\mathbf w:\alpha\geq\lvert\mathbf w\rvert\}\subset\mathbb{M}_+$, of real dimension four, and the boundary $\alpha=\lvert\mathbf w\rvert$ is exactly the zero-divisor set: writing $\tilde X\star\tilde X=\alpha e_0+i\mathbf w$ with $\alpha\in\mathbb{R}$ and $\mathbf w\in\mathbb{R}^3$, one has
+Its image is the **Hermitian cone** $\{\alpha e_0+i\vec w:\alpha\geq\lvert\vec w\rvert\}\subset\mathbb{M}_+$, of real dimension four, and the boundary $\alpha=\lvert\vec w\rvert$ is exactly the zero-divisor set: writing $\tilde X\star\tilde X=\alpha e_0+i\vec w$ with $\alpha\in\mathbb{R}$ and $\vec w\in\mathbb{R}^3$, one has
 $$
-\alpha^2-\lvert\mathbf w\rvert^2=\lvert N(\tilde X)\rvert^2 .
+\alpha^2-\lvert\vec w\rvert^2=\lvert N(\tilde X)\rvert^2 .
 $$
 
 *Proof.* Hermiticity is the reversal law at $\tilde P=\tilde Q$, $(\tilde X\star\tilde X)^{*}=\tilde X\star\tilde X$; the scalar part is $\mathrm{Sc}(\tilde X\tilde X^{*})=\sum_\mu X_\mu\overline{X_\mu}$; the identity for the vector part follows by expanding the square in the four coordinates and using $\lvert N\rvert^2=(a^2-b^2)^2+(2a\cdot b)^2$ for $\tilde X=a+ib$ with real $a,b$, and its vanishing is $N(\tilde X)=0$. The cone and its boundary are *The Squares and the Positive Cone of the Biquaternion Sesqualgebra*.
@@ -177,13 +177,13 @@ The contrast on the central values is complete.
 
 | central value | algebra $(\mathbb{B},\cdot)$ | sesqualgebra $(\mathbb{B},\star)$ |
 |---|---|---|
-| $-e_0$ | nonempty: the roots of $-1$, the elements $\pm ie_0$ and the pure $\mathbf X$ with $\mathbf X\cdot\mathbf X=1$ | **empty** |
+| $-e_0$ | nonempty: the roots of $-1$, the elements $\pm ie_0$ and the pure $\vec X$ with $\vec X\cdot\vec X=1$ | **empty** |
 | $0$ | the pure isotropic cone | $\{0\}$ |
 | $+e_0$ | nonempty: the involutions, the roots of $+1$ | the unitary group $U(2)$, written $e^{i\theta}w$ over the real unit quaternions $w$ |
 
 *Proof of the sesquilinear column.* A root of $-e_0$ would have scalar part $\sum_\mu\lvert X_\mu\rvert^2=-1$, impossible; the root of $0$ forces every coordinate to vanish, since the scalar part is a sum of nonnegative reals; and the root of $+e_0$ is the equation $\tilde X\tilde X^{*}=e_0$, solved by $\tilde X=e^{i\theta}w$ with $\theta$ real and $w$ a real unit quaternion, because such an element has $\tilde X^{*}=e^{-i\theta}w^{\natural}=e^{-i\theta}w^{-1}$ and its sesquilinear square is $\tilde X\star\tilde X=e^{i\theta}w\,e^{-i\theta}w^{-1}=w\,w^{-1}=e_0$. The algebra's column is the classification of *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*; the sesquilinear column is *Square Roots of Minus One, Zero and Plus One in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, where the roots of $+1$ are identified with the unitary group; and the general equations are *Square Roots of a General Element in the General Plain Algebra* and *Square Roots of a General Element in the General Plain Sesqualgebra*.
 
-The sharp difference is the sign. The algebra's square map reaches every central value, the roots of $-1$ in particular, because the algebra is split over $\mathbb{C}$ and its square is unconstrained. The sesqualgebra's square map is confined to the Hermitian cone and never becomes negative, since its scalar part is a sum of squares; a root of the sesquilinear equation exists exactly when the target lies in the cone, and no non-real or negative central value has one. On the boundary of the cone the two phenomena meet: the identity $\alpha^2-\lvert\mathbf w\rvert^2=\lvert N(\tilde X)\rvert^2$ shows that a sesquilinear square lies on the boundary $\alpha=\lvert\mathbf w\rvert$ exactly when $\tilde X$ is a zero divisor of the algebra, so the boundary of the sesquilinear cone is the image of the algebra's zero-divisor cone.
+The sharp difference is the sign. The algebra's square map reaches every central value, the roots of $-1$ in particular, because the algebra is split over $\mathbb{C}$ and its square is unconstrained. The sesqualgebra's square map is confined to the Hermitian cone and never becomes negative, since its scalar part is a sum of squares; a root of the sesquilinear equation exists exactly when the target lies in the cone, and no non-real or negative central value has one. On the boundary of the cone the two phenomena meet: the identity $\alpha^2-\lvert\vec w\rvert^2=\lvert N(\tilde X)\rvert^2$ shows that a sesquilinear square lies on the boundary $\alpha=\lvert\vec w\rvert$ exactly when $\tilde X$ is a zero divisor of the algebra, so the boundary of the sesquilinear cone is the image of the algebra's zero-divisor cone.
 
 ## The Form
 
@@ -261,7 +261,7 @@ The same holds on the regular model, with the transposition in place of the adju
 | product | $\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)$ | $\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)^{\dagger}$ |
 | quaternion conjugation | adjugate | adjugate |
 | Hermitian conjugation | conjugate transpose | conjugate transpose |
-| trace of the square's image | $2\bigl(Q_0^2-(\mathbf Q,\mathbf Q)\bigr)$ | $2\sum_\mu\lvert Q_\mu\rvert^2$ |
+| trace of the square's image | $2\bigl(Q_0^2-(\vec Q,\vec Q)\bigr)$ | $2\sum_\mu\lvert Q_\mu\rvert^2$ |
 | the form | $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q))$ | $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)^{\dagger})$ |
 | regular model $\mathsf{M}_4$ | $\mathsf{M}_4(\tilde P)\mathsf{M}_4(\tilde Q)$ | $\mathsf{M}_4(\tilde P)\mathsf{M}_4(\tilde Q)^{\dagger}$ |
 
@@ -284,7 +284,7 @@ The two structures share what does not see the involution: the norm and its vani
 | invertibility | units $\{N\neq0\}\cong\mathrm{GL}_2(\mathbb{C})$, two-sided inverse | no unit, one-sided inverse iff $N\neq0$ |
 | zero divisors | $\{N=0\}\setminus\{0\}$ | same set |
 | nilpotents | pure isotropic cone, index $2$ | same set, index $3$ |
-| idempotents | $\{0,e_0\}$ and $\tfrac12(e_0+\eta)$, $\eta^2=e_0$ | Hermitian ones, $\tfrac12(e_0+i\hat\mu)$ |
+| idempotents | $\{0,e_0\}$ and $\tfrac12(e_0+\eta)$, $\eta^2=e_0$ | Hermitian ones, $\tfrac12(e_0+\tilde\Xi)$ |
 | square roots | roots of $-1$, $0$, $+1$ all nonempty | root of $-1$ none, of $0$ only the origin, of $+1$ the unitary family |
 | form | $\mathrm{Sc}(\tilde P\tilde Q)$, signature $(4,4)$ | $\mathrm{Sc}(\tilde P\tilde Q^{*})$, signature $(8,0)$ |
 | operators | left monoid, commuting families | left conjugate-linear, forward right monoid |
@@ -297,7 +297,7 @@ The two structures are the two ends of one construction: the algebra is the refe
 | symbol | meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | the biquaternion algebra, basis $e_0,e_1,e_2,e_3$, central $i$ |
-| $\tilde Q=Q_0e_0+\mathbf Q$ | a biquaternion, scalar part $Q_0$ and vector part $\mathbf Q$ |
+| $\tilde Q=Q_0e_0+\vec Q$ | a biquaternion, scalar part $Q_0$ and vector part $\vec Q$ |
 | ${}^{\natural},{}^{*}$ | quaternion conjugation and Hermitian conjugation, $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ |
 | $\tilde P\tilde Q$ | the general plain product, the algebra's multiplication |
 | $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ | the general plain sesquilinear product, the derived operation |
@@ -305,7 +305,7 @@ The two structures are the two ends of one construction: the algebra is the refe
 | $\mathbb{B}^{\times}=\{N\neq0\}$ | the group of units of the algebra, $\cong\mathrm{GL}_2(\mathbb{C})$ |
 | $\tilde X^{-1\star}=(\tilde X^{-1})^{*}$ | the one-sided inverse of the sesqualgebra |
 | $\{N=0\}\setminus\{0\}$ | the zero-divisor cone, common to the two structures |
-| $\alpha e_0+i\mathbf w$, $\alpha\geq\lvert\mathbf w\rvert$ | the Hermitian cone, the image of the sesquilinear square |
+| $\alpha e_0+i\vec w$, $\alpha\geq\lvert\vec w\rvert$ | the Hermitian cone, the image of the sesquilinear square |
 | $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$ | the form of the algebra, signature $(4,4)$ |
 | $\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})$ | the form of the sesqualgebra, signature $(8,0)$ |
 | $L_{\tilde A},R_{\tilde A}$ and $L^{\star}_{\tilde A},R^{\star}_{\tilde A}$ | the one-sided multiplications of the two structures |

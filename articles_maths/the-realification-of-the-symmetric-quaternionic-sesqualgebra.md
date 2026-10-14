@@ -5,7 +5,7 @@
 The Symmetric Quaternionic Sesqualgebra is one of the twelve algebraic structures that the biquaternion space of $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ carries, the structure carried by the block
 $$
 \tilde P\star\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural}\bigr)
-=\bigl[P_0\overline{Q_0}-(\mathbf P,\overline{\mathbf Q})\bigr]-P_0\overline{\mathbf Q}-\overline{Q_0}\mathbf P,
+=\bigl[P_0\overline{Q_0}-(\vec P,\overline{\vec Q})\bigr]-P_0\overline{\vec Q}-\overline{Q_0}\vec P,
 $$
 which over $\mathbb{C}$ is the symmetric quaternionic sesquilinear structure $\mathrm{SQS}$ of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. Read over $\mathbb{R}$, the same product on the same set is an $\mathbb{R}$-algebra on the eight-dimensional real space $\mathbb{R}^8$, and this article owns that real reading.
 
@@ -17,7 +17,7 @@ The product is symmetric quaternionic sesquilinear over $\mathbb{C}$ and $\mathb
 
 Every ring-theoretic property is the same in the two readings, by the dictionary of the same article: a condition written with the addition, the product, $e_0$ and quantification over the elements is a statement about the **ring** and does not move when the scalars are restricted to $\mathbb{R}$ — the product is unchanged, so every identity of the ring, with its fixed element maps, holds in both readings. For the block these are: conjugate-commutativity, $\tilde P\star\tilde Q=\kappa(\tilde Q\star\tilde P)$ with $\kappa$ the coefficientwise conjugation, an identity of the ring and not of the field; the failure of associativity, read at the triple $(e_0,e_0,e_1)$, where the two sides are $-e_1$ and $e_1$; the failure of the Jordan identity at $x=y=e_1$, whose quartic sides $(x^{2}\star x)\star x$ and $x^{2}\star(x\star x)$ are $-e_0$ and $e_0$; and the absence of a unit on either side. What moves is every notion that names the field: the space, of complex dimension four and real dimension eight; the linear structure, in which the conjugate-linear operators appear; and the forms.
 
-The block's values are not confined to the centre, unlike those of the sibling $\mathrm{SPS}$. Its scalar part is the form $K(\tilde P,\tilde Q)$ and its vector part is the mixed term $-P_0\overline{\mathbf Q}-\overline{Q_0}\mathbf P$, which does not vanish for a general pair: the values are not confined to any subspace of the remarkable subspaces, and their real span is the whole $\mathbb{R}^8$, as *Remarkable Subspaces under the Symmetric Quaternionic Sesqualgebra of Biquaternions* computes.
+The block's values are not confined to the centre, unlike those of the sibling $\mathrm{SPS}$. Its scalar part is the form $K(\tilde P,\tilde Q)$ and its vector part is the mixed term $-P_0\overline{\vec Q}-\overline{Q_0}\vec P$, which does not vanish for a general pair: the values are not confined to any subspace of the remarkable subspaces, and their real span is the whole $\mathbb{R}^8$, as *Remarkable Subspaces under the Symmetric Quaternionic Sesqualgebra of Biquaternions* computes.
 
 ## The Second Slot and the Centre
 
@@ -43,7 +43,7 @@ the first the shape of the conjugate-linear maps and the second the shape of the
 
 The block carries the Krein form
 $$
-K(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\star\tilde Q)=P_0\overline{Q_0}-(\mathbf P,\overline{\mathbf Q}),
+K(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\star\tilde Q)=P_0\overline{Q_0}-(\vec P,\overline{\vec Q}),
 $$
 Hermitian of complex inertia $(1,3)$. The realification of a Hermitian form doubles its inertia, by §*The Realification of a Form* of *The Realification and the Effect of the Change of Scalars*, so the form $\Phi_{\mathbb{R}}=\operatorname{Re}K$ is the real symmetric bilinear form on $\mathbb{R}^8$ of signature
 $$

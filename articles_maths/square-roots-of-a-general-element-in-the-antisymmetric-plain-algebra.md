@@ -7,7 +7,7 @@ the square root is relative to it (*Definitions for the Study of the 12 Algebrai
 §*Powers, the Square and the Roots*). The block of this article is the antisymmetric plain
 multiplication
 $$
-\tilde\Xi\wedge\tilde Q=\tfrac12\bigl(\tilde\Xi\tilde Q-\tilde Q\tilde\Xi\bigr)=\mathbf\Xi\times\mathbf{Q},
+\tilde\Xi\wedge\tilde Q=\tfrac12\bigl(\tilde\Xi\tilde Q-\tilde Q\tilde\Xi\bigr)=\vec\Xi\times\vec Q,
 $$
 the cross product of the two vector parts, which is alternating (*Introduction to the
 Antisymmetric Plain Algebra of Biquaternions*). The article solves the equation for every right
@@ -24,7 +24,7 @@ Plain Algebra* and *Square Roots of Zero and the Nilpotents of the Antisymmetric
 and the theory of the general plain product, to which the block is compared, is *Square Roots of a
 General Element in the General Plain Algebra*.
 
-**The results.** The square map of the antisymmetric plain multiplication $\tilde\Xi\wedge\tilde Q=\mathbf\Xi\times\mathbf{Q}$ is the zero map: $\mathrm{sq}(\tilde\Xi)=\tilde\Xi\wedge\tilde\Xi=0$, so the equation $\tilde\Xi\wedge\tilde\Xi=\tilde A$ reads $0=\tilde A$. It has a solution exactly when $\tilde A=0$, and then **every** element of $\mathbb{B}$ is a square root; for every nonzero $\tilde A$ it has no solution. The image of the square map is the origin $\{0\}$ and its kernel is the whole space $\mathbb{B}$, so it is neither injective nor surjective.
+**The results.** The square map of the antisymmetric plain multiplication $\tilde\Xi\wedge\tilde Q=\vec\Xi\times\vec Q$ is the zero map: $\mathrm{sq}(\tilde\Xi)=\tilde\Xi\wedge\tilde\Xi=0$, so the equation $\tilde\Xi\wedge\tilde\Xi=\tilde A$ reads $0=\tilde A$. It has a solution exactly when $\tilde A=0$, and then **every** element of $\mathbb{B}$ is a square root; for every nonzero $\tilde A$ it has no solution. The image of the square map is the origin $\{0\}$ and its kernel is the whole space $\mathbb{B}$, so it is neither injective nor surjective.
 
 ## The Notion and Its Product
 
@@ -133,14 +133,14 @@ Idempotents of the General Plain Algebra*; *Square Roots of Zero and the Nilpote
 Plain Algebra*). The block is the antisymmetric half of that
 product, and the comparison is the comparison of a square map that is zero with a square map that
 is not: the parent's square map is the identity-block combination
-$\tilde\Xi^{2}=2\Xi_0\tilde\Xi-\bigl[\Xi_0^{2}+(\mathbf\Xi,\mathbf\Xi)\bigr]e_0$, whose image and kernel
+$\tilde\Xi^{2}=2\Xi_0\tilde\Xi-\bigl[\Xi_0^{2}+(\vec\Xi,\vec\Xi)\bigr]e_0$, whose image and kernel
 are proper, and the block's square map is the zero map, whose image is the origin and whose kernel
 is the whole space. The only right side of which the block has square roots is the origin, and
 there it has more than the parent: the parent's square roots of the origin are the origin together
 with the pure isotropic cone, while the block's are the whole space.
 
 **Remark (the removal of the scalar part).** The parent's square carries a central part,
-$\Xi_0^{2}-(\mathbf\Xi,\mathbf\Xi)$, and a vector part $2\Xi_0\mathbf\Xi$; the block removes the scalar
+$\Xi_0^{2}-(\vec\Xi,\vec\Xi)$, and a vector part $2\Xi_0\vec\Xi$; the block removes the scalar
 part of the product, and with it the central part of the square. The equation
 $\tilde\Xi\wedge\tilde\Xi=\tilde A$ is the parent's square-root equation
 with the central coordinate deleted, and with the central coordinate deleted the equation collapses
@@ -149,7 +149,7 @@ root sets of the three central values record, read for an arbitrary right side.
 
 ## Summary
 
-For the antisymmetric plain multiplication $\tilde\Xi\wedge\tilde Q=\mathbf\Xi\times\mathbf{Q}$ the
+For the antisymmetric plain multiplication $\tilde\Xi\wedge\tilde Q=\vec\Xi\times\vec Q$ the
 square of every element vanishes, so the equation $\tilde\Xi\wedge\tilde\Xi=\tilde A$ reads
 $0=\tilde A$ and is independent of the unknown. It has a solution exactly when $\tilde A=0$, and
 then every element of $\mathbb{B}$ is a square root; for every nonzero $\tilde A$ it has no
@@ -164,13 +164,13 @@ have no counterpart in the block.
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde\Xi\wedge\tilde Q=\tfrac12(\tilde\Xi\tilde Q-\tilde Q\tilde\Xi)=\mathbf\Xi\times\mathbf{Q}$ | the antisymmetric plain multiplication, the operation $\mathrm{APA}$ |
+| $\tilde\Xi\wedge\tilde Q=\tfrac12(\tilde\Xi\tilde Q-\tilde Q\tilde\Xi)=\vec\Xi\times\vec Q$ | the antisymmetric plain multiplication, the operation $\mathrm{APA}$ |
 | $\mathrm{sq}(\tilde\Xi)=\tilde\Xi\wedge\tilde\Xi=0$ | the square map of the block, the zero map |
 | $\tilde\Xi\wedge\tilde\Xi=\tilde A$ | the square-root equation, equivalent to $0=\tilde A$ |
 | $\mathbb{B}$ | the square roots of the origin, the kernel of the square map |
 | $\{0\}$ | the image of the square map, the only right side with square roots |
-| $(\mathbf P,\mathbf Q)=P_1Q_1+P_2Q_2+P_3Q_3$ | the complex bilinear form on the vector parts |
-| $N(\tilde\Xi)=\Xi_0^{2}+(\mathbf\Xi,\mathbf\Xi)$ | the algebraic norm of the parent product, the central part of $\tilde\Xi\tilde\Xi^{\natural}$; the parent square's own central part is $\Xi_0^{2}-(\mathbf\Xi,\mathbf\Xi)$ |
+| $(\vec P,\vec Q)=P_1Q_1+P_2Q_2+P_3Q_3$ | the complex bilinear form on the vector parts |
+| $N(\tilde\Xi)=\Xi_0^{2}+(\vec\Xi,\vec\Xi)$ | the algebraic norm of the parent product, the central part of $\tilde\Xi\tilde\Xi^{\natural}$; the parent square's own central part is $\Xi_0^{2}-(\vec\Xi,\vec\Xi)$ |
 
 ## Further Reading
 

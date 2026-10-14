@@ -7,7 +7,7 @@ The twisted two-sided operator $\Theta_{\tilde A}(\tilde Y)=\tilde A\tilde Y\til
 
 The two constituents are the **pin group** $\mathrm{Pin}=\{\tilde A\in\mathbb{B}^\times:N(\tilde A)=\pm1\}$ and the **spin group** $\mathrm{Spin}=\{\tilde A\in\mathbb{B}^\times:N(\tilde A)=1\}$, the latter of index two. The twisted operator is *Two-Sided Operators on the General Quaternionic Algebra of Biquaternions*; the one-sided factors are *One-Sided Operators on the General Quaternionic Algebra of Biquaternions*; the form and its orthogonal group are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; the unit group into which both groups sit is *The Biquaternion Unit Group as a Topological Group*; the general Clifford theory of the pin and spin groups is *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*, of which this is the biquaternion instance; and the vector subspace and the reflection are *Introduction to the Remarkable Subspaces* and *Biquaternion Rotations and Lorentz Transformations*.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde A=\sum_\mu A_\mu e_\mu$, and is written $\tilde A=A_0e_0+\mathbf A$ with the vector part $\mathbf A=\sum_{k=1}^{3}A_ke_k$. The natural conjugation is $\tilde A^{\natural}=A_0e_0-\mathbf A$; it is $\mathbb{C}$-linear, an involution, and the sign character of the algebra, since it fixes the centre and negates the vector subspace. The norm is $N(\tilde A)=\tilde A\tilde A^{\natural}=\sum_\mu A_\mu^2$, central and multiplicative, and the general quaternionic bilinear form is $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P\tilde Q^{\natural})$, so that $N(\tilde A)=\langle\tilde A,\tilde A\rangle_{\natural}$. The vector subspace is $V=\mathrm{Vect}(\mathbb{B})=\mathbb{C}\{e_1,e_2,e_3\}$, of complex dimension $3$, and the reflection in it is $\rho_{\tilde V}(\tilde W)=\tilde W-2\langle\tilde W,\tilde V\rangle_{\natural}N(\tilde V)^{-1}\tilde V$ for $\tilde V\in V$ with $N(\tilde V)\neq0$.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde A=\sum_\mu A_\mu e_\mu$, and is written $\tilde A=A_0e_0+\vec A$ with the vector part $\vec A=\sum_{k=1}^{3}A_ke_k$. The natural conjugation is $\tilde A^{\natural}=A_0e_0-\vec A$; it is $\mathbb{C}$-linear, an involution, and the sign character of the algebra, since it fixes the centre and negates the vector subspace. The norm is $N(\tilde A)=\tilde A\tilde A^{\natural}=\sum_\mu A_\mu^2$, central and multiplicative, and the general quaternionic bilinear form is $\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P\tilde Q^{\natural})$, so that $N(\tilde A)=\langle\tilde A,\tilde A\rangle_{\natural}$. The vector subspace is $V=\mathrm{Vect}(\mathbb{B})=\mathbb{C}\{e_1,e_2,e_3\}$, of complex dimension $3$, and the reflection in it is $\rho_{\tilde R}(\tilde W)=\tilde W-2\langle\tilde W,\tilde R\rangle_{\natural}N(\tilde R)^{-1}\tilde R$ for $\tilde R\in V$ with $N(\tilde R)\neq0$.
 
 ## The Two Groups
 
@@ -61,17 +61,17 @@ of complex dimension $3$, acting on $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus V$
 
 The twist $\natural$ is the sign character of the algebra: it is $+1$ on the centre $\mathbb{C}_{\mathbb{B}}$ and $-1$ on the quaternion vector subspace $V$. The elements on which the twist is $-1$ play, in this algebra, the role that the vectors of a quadratic space play in the general theory of the signed inner conjugation, and the two-sided operator of such an element is the sandwich of that theory. In the grade dictionary of the Clifford algebra the elements of $V$ are the grade-two elements and the geometric grade-one vectors are the imaginary ones $ie_k$; this article keeps the quaternion naming of the group, in which $e_k$ is a vector, and states the dictionary once here so that the two readings are not confused.
 
-**Definition.** A **versor** of the algebra is a product $\tilde A=\tilde V_1\tilde V_2\cdots\tilde V_k$ of elements of $V$ with $N(\tilde V_j)\neq0$; the **Lipschitz group** is the group that the non-isotropic vectors of $V$ generate.
+**Definition.** A **versor** of the algebra is a product $\tilde A=\tilde R_1\tilde R_2\cdots\tilde R_k$ of elements of $V$ with $N(\tilde R_j)\neq0$; the **Lipschitz group** is the group that the non-isotropic vectors of $V$ generate.
 
 **Proposition (versors are units, and the norm multiplies).** Every versor is a unit, and
 
 $$
-N(\tilde V_1\tilde V_2\cdots\tilde V_k)=N(\tilde V_1)N(\tilde V_2)\cdots N(\tilde V_k);
+N(\tilde R_1\tilde R_2\cdots\tilde R_k)=N(\tilde R_1)N(\tilde R_2)\cdots N(\tilde R_k);
 $$
 
 after division by a square root of its norm every versor lies in $\mathrm{Pin}$, and in $\mathrm{Spin}$ exactly when its norm is one.
 
-*Proof.* A vector $\tilde V$ with $N(\tilde V)\neq0$ is invertible, with $\tilde V^{-1}=\tilde V^{\natural}/N(\tilde V)$, because $\tilde V\tilde V^{\natural}=N(\tilde V)e_0$; a product of units is a unit. The norm is multiplicative on the whole algebra, so it multiplies over the factors, and the normalised element $\tilde A/N(\tilde A)^{1/2}$ has norm $N(\tilde A)\big/\bigl(N(\tilde A)^{1/2}\bigr)^{2}=1$, a square root of a nonzero complex number being available.
+*Proof.* A vector $\tilde R$ with $N(\tilde R)\neq0$ is invertible, with $\tilde R^{-1}=\tilde R^{\natural}/N(\tilde R)$, because $\tilde R\tilde R^{\natural}=N(\tilde R)e_0$; a product of units is a unit. The norm is multiplicative on the whole algebra, so it multiplies over the factors, and the normalised element $\tilde A/N(\tilde A)^{1/2}$ has norm $N(\tilde A)\big/\bigl(N(\tilde A)^{1/2}\bigr)^{2}=1$, a square root of a nonzero complex number being available.
 
 **Proposition (the sandwich on the vector subspace).** For every unit $\tilde A$ the twisted operator preserves the vector subspace and acts on it by a **similarity** with multiplier $N(\tilde A)^{2}$:
 
@@ -84,37 +84,37 @@ For $\tilde A$ in the pin group the restriction is therefore an automorphism of 
 
 *Proof.* The operator is $\Theta_{\tilde A}=N(\tilde A)\mathrm{Ad}_{\tilde A}$, a central scalar times an inner automorphism. An automorphism of the algebra preserves the centre and the trace-zero subspace $V$, so $\Theta_{\tilde A}(V)\subseteq V$; an inner automorphism preserves the determinant, hence the norm, and the scalar contributes its square, giving $N(\Theta_{\tilde A}\tilde W)=N(\tilde A)^{2}N(\tilde W)$. In the three-dimensional basis the determinant of a scalar times a map is the cube of the scalar, and the inner automorphism has determinant one on $V$; the determinant of the restriction is therefore $N(\tilde A)^{3}$, of sign $N(\tilde A)$.
 
-**Corollary (the half-turn carried by a vector).** For $\tilde V\in V$ with $N(\tilde V)\neq0$ the sandwich is the half-turn about the line $\mathbb{C}\tilde V$, composed with the homothety of ratio $N(\tilde V)$: writing $\tau_{\tilde V}$ for the half-turn,
+**Corollary (the half-turn carried by a vector).** For $\tilde R\in V$ with $N(\tilde R)\neq0$ the sandwich is the half-turn about the line $\mathbb{C}\tilde R$, composed with the homothety of ratio $N(\tilde R)$: writing $\tau_{\tilde R}$ for the half-turn,
 
 $$
-\Theta_{\tilde V}(\tilde W)=N(\tilde V)\,\tau_{\tilde V}(\tilde W),\qquad
-\tau_{\tilde V}(\tilde W)=2\,\frac{\langle\tilde W,\tilde V\rangle_{\natural}}{N(\tilde V)}\,\tilde V-\tilde W .
+\Theta_{\tilde R}(\tilde W)=N(\tilde R)\,\tau_{\tilde R}(\tilde W),\qquad
+\tau_{\tilde R}(\tilde W)=2\,\frac{\langle\tilde W,\tilde R\rangle_{\natural}}{N(\tilde R)}\,\tilde R-\tilde W .
 $$
 
-Thus $\Theta_{\tilde V}$ acts on $\tilde V$ by $N(\tilde V)$ and on its orthogonal complement by $-N(\tilde V)$: for $N(\tilde V)=1$ it is the half-turn, fixing the line and negating the complement, of determinant $+1$; for $N(\tilde V)=-1$ the homothety and the half-turn combine into the honest reflection $\rho_{\tilde V}$ itself, negating the line, fixing the complement, of determinant $-1$.
+Thus $\Theta_{\tilde R}$ acts on $\tilde R$ by $N(\tilde R)$ and on its orthogonal complement by $-N(\tilde R)$: for $N(\tilde R)=1$ it is the half-turn, fixing the line and negating the complement, of determinant $+1$; for $N(\tilde R)=-1$ the homothety and the half-turn combine into the honest reflection $\rho_{\tilde R}$ itself, negating the line, fixing the complement, of determinant $-1$.
 
-*Proof.* Insert the reflection formula of the next section, $\Theta_{\tilde V}=-N(\tilde V)\rho_{\tilde V}$, and $\rho_{\tilde V}(\tilde W)=\tilde W-2\langle\tilde W,\tilde V\rangle_{\natural}N(\tilde V)^{-1}\tilde V$, writing $\tau_{\tilde V}=-\rho_{\tilde V}$ for the half-turn.
+*Proof.* Insert the reflection formula of the next section, $\Theta_{\tilde R}=-N(\tilde R)\rho_{\tilde R}$, and $\rho_{\tilde R}(\tilde W)=\tilde W-2\langle\tilde W,\tilde R\rangle_{\natural}N(\tilde R)^{-1}\tilde R$, writing $\tau_{\tilde R}=-\rho_{\tilde R}$ for the half-turn.
 
 **Remark (why every unit preserves the vector subspace here).** In the general theory the condition $\Theta(V)\subseteq V$ defines the Clifford group, and it is not a consequence of the norm condition: over the real form of signature $(1,1)$ the unit of norm one recorded in *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* has a signed inner conjugation that carries a vector outside the space of vectors. That warning does not bite in the biquaternion algebra. Here $\mathbb{B}\cong M_2(\mathbb{C})$ is a full matrix algebra over an algebraically closed field, every automorphism of it is inner by Skolem–Noether, and a central scalar times an inner automorphism preserves $V$; the Clifford group is therefore the whole unit group $\mathbb{B}^{\times}$, and inside it the pin group is exactly the norm shell, not a proper subgroup of it.
 
 **Proposition (the groups generated by the versors).** The vectors of $V$ of norm one lie in $\mathrm{Spin}$ and act on $V$ by the half-turns about their lines; products of two of them act by the rotations, and by Cartan–Dieudonné in dimension three every rotation of $V$ is a product of two reflections and corresponds in the spin group to a product of two unit vectors (*The Clifford, Pin and Spin Groups with Signed Inner Conjugation*, §*Cartan–Dieudonné and the Reflection Length*). The non-isotropic vectors of $V$ therefore generate $\mathrm{Pin}$, their norm-one part generates $\mathrm{Spin}$, and the image of the latter is the rotation group $\Theta(\mathrm{Spin})\cong SO_3(\mathbb{C})$ of the vector subspace.
 
-*Proof.* A norm-one vector $\tilde V$ lies in $\mathrm{Pin}$, indeed in $\mathrm{Spin}$; by the corollary its image on $V$ fixes $\tilde V$ and negates the orthogonal complement, which is the reflection $\rho_{\tilde V}$ up to the sign, a half-turn. Two half-turns compose to a rotation, $\Theta_{\tilde V}\Theta_{\tilde W}=\Theta_{\tilde V\tilde W}$ with $N(\tilde V\tilde W)=1$, and the quoted theorem of the general article supplies every rotation as such a product; the resulting group of operators has been identified with $\mathrm{Inn}(\mathbb{B})\cong SO_3(\mathbb{C})$ above.
+*Proof.* A norm-one vector $\tilde R$ lies in $\mathrm{Pin}$, indeed in $\mathrm{Spin}$; by the corollary its image on $V$ fixes $\tilde R$ and negates the orthogonal complement, which is the reflection $\rho_{\tilde R}$ up to the sign, a half-turn. Two half-turns compose to a rotation, $\Theta_{\tilde R}\Theta_{\tilde W}=\Theta_{\tilde R\tilde W}$ with $N(\tilde R\tilde W)=1$, and the quoted theorem of the general article supplies every rotation as such a product; the resulting group of operators has been identified with $\mathrm{Inn}(\mathbb{B})\cong SO_3(\mathbb{C})$ above.
 
 ## The Reflection
 
-**Proposition (the reflection on the vector subspace).** For $\tilde V\in V$ with $N(\tilde V)\neq0$ the twisted operator fixes the centre up to the norm and equals the reflection up to the norm and the sign:
+**Proposition (the reflection on the vector subspace).** For $\tilde R\in V$ with $N(\tilde R)\neq0$ the twisted operator fixes the centre up to the norm and equals the reflection up to the norm and the sign:
 
 $$
-\Theta_{\tilde V}(e_0)=N(\tilde V)e_0,\qquad
-\Theta_{\tilde V}(\tilde W)=-N(\tilde V)\,\rho_{\tilde V}(\tilde W)\qquad(\tilde W\in V).
+\Theta_{\tilde R}(e_0)=N(\tilde R)e_0,\qquad
+\Theta_{\tilde R}(\tilde W)=-N(\tilde R)\,\rho_{\tilde R}(\tilde W)\qquad(\tilde W\in V).
 $$
 
-In particular, for a vector of norm one, $\Theta_{\tilde V}(\tilde W)=-\rho_{\tilde V}(\tilde W)$ on $V$: the twisted operator carries the reflection composed with the sign, and on the norm-one shell it is the plain inner conjugation, so the sign cannot be removed by a change of the description.
+In particular, for a vector of norm one, $\Theta_{\tilde R}(\tilde W)=-\rho_{\tilde R}(\tilde W)$ on $V$: the twisted operator carries the reflection composed with the sign, and on the norm-one shell it is the plain inner conjugation, so the sign cannot be removed by a change of the description.
 
-*Proof.* $\Theta_{\tilde V}(e_0)=\tilde V\tilde V^{\natural}=N(\tilde V)e_0$. For $\tilde W\in V$, write the pure quaternions as vectors and use the classical identities $\tilde V\tilde W=-\langle\tilde V,\tilde W\rangle_{\natural}e_0+(\tilde V\times\tilde W)$ and $(\tilde V\times\tilde W)\times\tilde V=N(\tilde V)\tilde W-\langle\tilde V,\tilde W\rangle_{\natural}\tilde V$ of the quaternion product; then $\tilde V\tilde W\tilde V^{\natural}=-\tilde V\tilde W\tilde V=N(\tilde V)\tilde W-2\langle\tilde V,\tilde W\rangle_{\natural}\tilde V$, which is $N(\tilde V)\rho_{\tilde V}(\tilde W)$; inserting the sign of $\tilde V^{\natural}=-\tilde V$ gives the displayed identity.
+*Proof.* $\Theta_{\tilde R}(e_0)=\tilde R\tilde R^{\natural}=N(\tilde R)e_0$. For $\tilde W\in V$, write the pure quaternions as vectors and use the classical identities $\tilde R\tilde W=-\langle\tilde R,\tilde W\rangle_{\natural}e_0+(\tilde R\times\tilde W)$ and $(\tilde R\times\tilde W)\times\tilde R=N(\tilde R)\tilde W-\langle\tilde R,\tilde W\rangle_{\natural}\tilde R$ of the quaternion product; then $\tilde R\tilde W\tilde R^{\natural}=-\tilde R\tilde W\tilde R=N(\tilde R)\tilde W-2\langle\tilde R,\tilde W\rangle_{\natural}\tilde R$, which is $N(\tilde R)\rho_{\tilde R}(\tilde W)$; inserting the sign of $\tilde R^{\natural}=-\tilde R$ gives the displayed identity.
 
-**Remark (the minus is the general one).** The appearance of $-\rho_{\tilde V}$ rather than $\rho_{\tilde V}$ is the phenomenon the Clifford layer records: for an element of the odd part the plain inner conjugation returns the reflection composed with $-\mathrm{id}$, and it is the twisted member of the family, with the twist in the left factor, that returns the reflection itself. On the norm-one shell the operator $\Theta$ here coincides with the plain inner conjugation, so it carries the minus; the corresponding signed left twist of the general theory differs from $\Theta$ by the norm normalisation and is discussed in *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*. The half-turn reading of the same identity, and the generation of the rotation group by the versors, are in the section above.
+**Remark (the minus is the general one).** The appearance of $-\rho_{\tilde R}$ rather than $\rho_{\tilde R}$ is the phenomenon the Clifford layer records: for an element of the odd part the plain inner conjugation returns the reflection composed with $-\mathrm{id}$, and it is the twisted member of the family, with the twist in the left factor, that returns the reflection itself. On the norm-one shell the operator $\Theta$ here coincides with the plain inner conjugation, so it carries the minus; the corresponding signed left twist of the general theory differs from $\Theta$ by the norm normalisation and is discussed in *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*. The half-turn reading of the same identity, and the generation of the rotation group by the versors, are in the section above.
 
 ## Worked Examples
 
@@ -124,13 +124,13 @@ In particular, for a vector of norm one, $\Theta_{\tilde V}(\tilde W)=-\rho_{\ti
 
 **A pin element of norm minus one.** For $\tilde A=ie_0$, $N=-1$ and $\Theta_{\tilde A}=-\mathrm{id}$; the operator is a form-preserving map with $\det=+1$ and is not an automorphism: it is the twisted coset.
 
-**A vector of norm one.** For $\tilde V=e_1$ the element lies in $\mathrm{Spin}$, and $\Theta_{\tilde V}$ fixes $e_0$ and acts on $V$ by $\Theta_{\tilde V}(e_1)=e_1$, $\Theta_{\tilde V}(e_2)=-e_2$, $\Theta_{\tilde V}(e_3)=-e_3$; the reflection $\rho_{\tilde V}$ acts by $-\Theta_{\tilde V}$, that is $-e_1$ on $\tilde V$ and identity on its complement, as the proposition prescribes. The half-turn reading is the same statement: $\Theta_{\tilde V}$ is the half-turn about the line $\mathbb{C}e_1$, of determinant $+1$ on $V$.
+**A vector of norm one.** For $\tilde R=e_1$ the element lies in $\mathrm{Spin}$, and $\Theta_{\tilde R}$ fixes $e_0$ and acts on $V$ by $\Theta_{\tilde R}(e_1)=e_1$, $\Theta_{\tilde R}(e_2)=-e_2$, $\Theta_{\tilde R}(e_3)=-e_3$; the reflection $\rho_{\tilde R}$ acts by $-\Theta_{\tilde R}$, that is $-e_1$ on $\tilde R$ and identity on its complement, as the proposition prescribes. The half-turn reading is the same statement: $\Theta_{\tilde R}$ is the half-turn about the line $\mathbb{C}e_1$, of determinant $+1$ on $V$.
 
-**A vector of norm minus one.** For $\tilde V=ie_1$, $N(\tilde V)=-1$, and $\Theta_{\tilde V}=\rho_{\tilde V}$ is the honest reflection: it negates $ie_1$, fixes the orthogonal complement, and has determinant $-1$ on $V$; the homothety of ratio $-1$ and the half-turn have combined into a reflection, as the corollary prescribes. The element lies in the odd part of the pin group and not in $\mathrm{Spin}$.
+**A vector of norm minus one.** For $\tilde R=ie_1$, $N(\tilde R)=-1$, and $\Theta_{\tilde R}=\rho_{\tilde R}$ is the honest reflection: it negates $ie_1$, fixes the orthogonal complement, and has determinant $-1$ on $V$; the homothety of ratio $-1$ and the half-turn have combined into a reflection, as the corollary prescribes. The element lies in the odd part of the pin group and not in $\mathrm{Spin}$.
 
 **A versor of length two.** For $\tilde A=e_1e_2=e_3$, the product of the two norm-one vectors $e_1$ and $e_2$, the norm is $N(\tilde A)=1$ and $\Theta_{\tilde A}$ is the half-turn about the line $\mathbb{C}e_3$: it fixes $e_3$ and negates $e_1,e_2$, of determinant $+1$; indeed $\Theta_{e_1e_2}=\Theta_{e_1}\Theta_{e_2}$ conjugates the two half-turns into a rotation, and here the composition is again a half-turn because the lines are orthogonal.
 
-**A null vector.** For $\tilde V=e_1+ie_2$, $N(\tilde V)=0$: the element is not in the pin group, $\Theta_{\tilde V}(e_0)=0$, and the reflection formula does not apply, its normalisation being undefined.
+**A null vector.** For $\tilde R=e_1+ie_2$, $N(\tilde R)=0$: the element is not in the pin group, $\Theta_{\tilde R}(e_0)=0$, and the reflection formula does not apply, its normalisation being undefined.
 
 ## Summary
 
@@ -145,12 +145,12 @@ The pin group of the general quaternionic bilinear form is $\mathrm{Pin}=\{\tild
 | $\Theta_{\tilde A}(\tilde Y)=\tilde A\tilde Y\tilde A^{\natural}$ | The action of the pin group on the algebra |
 | $\Theta_{\tilde A}\Theta_{\tilde B}=\Theta_{\tilde A\tilde B}$, kernel $\{\pm e_0\}$ | The two-to-one cover |
 | $\Theta(\mathrm{Spin})\cong PGL_2(\mathbb{C})\cong SO_3(\mathbb{C})$ | The rotation group of the vector subspace |
-| $\tilde V_1\cdots\tilde V_k$, $N(\tilde V_j)\neq0$ | A versor, and the Lipschitz group it generates |
-| $N(\tilde A)=\prod_jN(\tilde V_j)$ | The norm multiplies over the factors of a versor |
+| $\tilde R_1\cdots\tilde R_k$, $N(\tilde R_j)\neq0$ | A versor, and the Lipschitz group it generates |
+| $N(\tilde A)=\prod_jN(\tilde R_j)$ | The norm multiplies over the factors of a versor |
 | $\Theta_{\tilde A}(V)\subseteq V$, $N(\Theta_{\tilde A}\tilde W)=N(\tilde A)^{2}N(\tilde W)$ | The sandwich of a unit is a similarity of the vector subspace |
-| $\Theta_{\tilde V}=N(\tilde V)\tau_{\tilde V}$ | The half-turn carried by a vector, of determinant $N(\tilde V)^{3}$ |
-| $\Theta_{\tilde V}|_V=-N(\tilde V)\rho_{\tilde V}$ | The reflection carried by a vector |
-| $\rho_{\tilde V}(\tilde W)=\tilde W-2\langle\tilde W,\tilde V\rangle_{\natural}N(\tilde V)^{-1}\tilde V$ | The reflection in the vector subspace |
+| $\Theta_{\tilde R}=N(\tilde R)\tau_{\tilde R}$ | The half-turn carried by a vector, of determinant $N(\tilde R)^{3}$ |
+| $\Theta_{\tilde R}|_V=-N(\tilde R)\rho_{\tilde R}$ | The reflection carried by a vector |
+| $\rho_{\tilde R}(\tilde W)=\tilde W-2\langle\tilde W,\tilde R\rangle_{\natural}N(\tilde R)^{-1}\tilde R$ | The reflection in the vector subspace |
 
 ## Further Reading
 

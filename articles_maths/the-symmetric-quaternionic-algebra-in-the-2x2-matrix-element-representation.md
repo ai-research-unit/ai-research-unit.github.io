@@ -6,7 +6,7 @@ The symmetric quaternionic multiplication is the central-valued operation $\tild
 
 The model itself, the isomorphism $\mathsf{M}_2$, the trace $\operatorname{Tr}\mathsf{M}_2(\tilde Q)=2Q_0$, the determinant $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$ and the matrix of the conjugation as the adjugate are those of the cited articles and are used here, not restated. The form $N$ and its Gram matrix are *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*; the operators are *The Multiplication Operators of the Symmetric Quaternionic Algebra*; the normal forms of the singular matrices are *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*. Nothing of the enriched layer is used.
 
-**Conventions.** The product is $\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0$ with $N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$; the realisation is $\mathsf{M}_2$, an algebra isomorphism with $\mathsf{M}_2(e_0)=I_2$ and $\mathsf{M}_2(e_k)=-i\sigma_k$; the adjugate of a matrix is written $\operatorname{adj}$, and it is the matrix of the natural conjugation, $\mathsf{M}_2(\tilde Q^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde Q)$.
+**Conventions.** The product is $\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0$ with $N(\tilde P,\tilde Q)=P_0Q_0+(\vec P,\vec Q)$; the realisation is $\mathsf{M}_2$, an algebra isomorphism with $\mathsf{M}_2(e_0)=I_2$ and $\mathsf{M}_2(e_k)=-i\sigma_k$; the adjugate of a matrix is written $\operatorname{adj}$, and it is the matrix of the natural conjugation, $\mathsf{M}_2(\tilde Q^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde Q)$.
 
 ## The Symmetrisation of the Matrix Product
 

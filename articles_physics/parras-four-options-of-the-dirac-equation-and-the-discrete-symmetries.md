@@ -10,7 +10,7 @@ The article is an **equivalent rewriting**, as everywhere in this series: the fo
 
 ## The Four Options
 
-Parra starts from the four-component complex Dirac spinor $\Psi = (\Psi_1,\Psi_2,\Psi_3,\Psi_4)^{\mathsf T}$ and inspects the eight real equations. His assumption is that the **real part** $\Re(\Psi_1)$ of the first component transforms as a scalar; under that assumption the eight equations acquire a vector character once the **spin vector** $\mathbf n = -\mathbf n^{*}$ (the axial vector built from the spin degrees of freedom) is introduced. Two scalars and two vectors remain. Writing the two scalars as $\alpha$ and $\lambda$ and the two vectors as $\mathbf E = (E_1,E_2,E_3)$ and $\mathbf B = (B_1,B_2,B_3)$, the option-$\{0\}$ spinor is
+Parra starts from the four-component complex Dirac spinor $\Psi = (\Psi_1,\Psi_2,\Psi_3,\Psi_4)^{\mathsf T}$ and inspects the eight real equations. His assumption is that the **real part** $\Re(\Psi_1)$ of the first component transforms as a scalar; under that assumption the eight equations acquire a vector character once the **spin vector** $\vec n = -\vec n^{*}$ (the axial vector built from the spin degrees of freedom) is introduced. Two scalars and two vectors remain. Writing the two scalars as $\alpha$ and $\lambda$ and the two vectors as $\vec E = (E_1,E_2,E_3)$ and $\vec B = (B_1,B_2,B_3)$, the option-$\{0\}$ spinor is
 
 $$
 \Psi_{\{0\}} =
@@ -94,7 +94,7 @@ The first three rows together with the identity are the elements of the Klein fo
 
 **Interpretation (the three symmetries on the characters).** The block action identifies the non-trivial characters with the discrete symmetries, the assignment being fixed by the standard transformation properties.
 
-- **Parity $P$ is ${}^{\natural}$.** It fixes the two temporal blocks and negates the two spatial ones, sending the material four-vector $ict\,e_0+\mathbf{x}$ to $ict\,e_0-\mathbf{x}$: space inverted, time kept. It is $\mathbb{C}$-linear, the algebraic form of the unitarity of parity.
+- **Parity $P$ is ${}^{\natural}$.** It fixes the two temporal blocks and negates the two spatial ones, sending the material four-vector $ict\,e_0+\vec x$ to $ict\,e_0-\vec x$: space inverted, time kept. It is $\mathbb{C}$-linear, the algebraic form of the unitarity of parity.
 - **Time reversal $T$ is $\bar{\cdot}$.** On the material sector it negates the material time $T_{\mathrm{m}}=\mathbb{R}(ie_0)$ — the $ict$ direction — and fixes the material space, and it is **anti-linear**, which is the anti-unitarity of time reversal. The corpus reaches the same object as the anti-linear part of $T$ (*The CPT Theorem in Biquaternionic Form*).
 - **The full reflection $PT$ is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$**, negating both material blocks and so sending $x^\mu\mapsto-x^\mu$.
 - **Charge conjugation is $\flat=-{}^{*}$, the real structure.** It fixes the material sector and negates the informational one, is anti-linear, and is the object the corpus builds $C$ on (*Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*; *Charge Conjugation and the Division Ring*). That it is a character and not a group element is the algebraic statement that $C$ does not join $\{1,P,T,PT\}$ as an independent factor but is the sign that turns $PT$ into its negative.
@@ -165,8 +165,8 @@ Parra's four options are four inequivalent ways of reading the eight real Dirac 
 |---|---|
 | $\Psi_{\{r\}}$, $r=0,1,2,3$ | The Parra spinor of option $\{r\}$, a four-component complex spinor |
 | $\alpha,\lambda$ | The two scalars of the vector interpretation |
-| $\mathbf E=(E_1,E_2,E_3)$, $\mathbf B=(B_1,B_2,B_3)$ | The two vectors of the vector interpretation |
-| $\mathbf n=-\mathbf n^{*}$ | The spin vector, $=-iS$ in Parra's notation |
+| $\vec E=(E_1,E_2,E_3)$, $\vec B=(B_1,B_2,B_3)$ | The two vectors of the vector interpretation |
+| $\vec n=-\vec n^{*}$ | The spin vector, $=-iS$ in Parra's notation |
 | $\{e_i\}$, $e_ie_j+e_je_i=2\eta_{ij}$ | The Clifford basis; $e_{21}=e_2e_1$ the spin bivector |
 | $\nabla$, $A$, $m$, $q$ | Gradient, potential, mass, charge |
 | $\Gamma_{1,3}$, $\Gamma^+_{1,3}$ | Clifford–Lipschitz group and its even part |

@@ -175,10 +175,10 @@ where $\{|0\rangle, |1\rangle\}$ is an orthonormal basis. The coefficients $\alp
 A **mixed state** of a qubit is a density matrix
 
 $$
-\rho = \frac{1}{2}\left(I + \mathbf{r}\cdot\boldsymbol{\sigma}\right),
+\rho = \frac{1}{2}\left(I + \vec r\cdot\boldsymbol{\sigma}\right),
 $$
 
-where $\mathbf{r} = (r_1, r_2, r_3) \in \mathbb{R}^3$ is the **Bloch vector**, and $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ are the Pauli matrices:
+where $\vec r = (r_1, r_2, r_3) \in \mathbb{R}^3$ is the **Bloch vector**, and $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ are the Pauli matrices:
 
 $$
 \sigma_1 = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix}, \quad
@@ -189,28 +189,28 @@ $$
 The **positivity** of $\rho$ is equivalent to the condition
 
 $$
-|\mathbf{r}| \leq 1.
+|\vec r| \leq 1.
 $$
 
-The state is **pure** if and only if $|\mathbf{r}| = 1$, and **mixed** otherwise. The **maximally mixed state** has $\mathbf{r} = 0$, i.e., $\rho = I/2$.
+The state is **pure** if and only if $|\vec r| = 1$, and **mixed** otherwise. The **maximally mixed state** has $\vec r = 0$, i.e., $\rho = I/2$.
 
 ### The Bloch Sphere
 
 The set of pure states of a qubit is in one-to-one correspondence with the unit sphere
 
 $$
-S^2 = \{\mathbf{r} \in \mathbb{R}^3 : |\mathbf{r}| = 1\}.
+S^2 = \{\vec r \in \mathbb{R}^3 : |\vec r| = 1\}.
 $$
 
-This is the **Bloch sphere**. Each point on the sphere corresponds to a unique pure state, and the vector $\mathbf{r}$ is the direction along which the spin is definite (spin-up in the direction $\mathbf{r}$).
+This is the **Bloch sphere**. Each point on the sphere corresponds to a unique pure state, and the vector $\vec r$ is the direction along which the spin is definite (spin-up in the direction $\vec r$).
 
 The set of all states (pure and mixed) is the **Bloch ball** of radius one:
 
 $$
-B^3 = \{\mathbf{r} \in \mathbb{R}^3 : |\mathbf{r}| \leq 1\}.
+B^3 = \{\vec r \in \mathbb{R}^3 : |\vec r| \leq 1\}.
 $$
 
-The centre $\mathbf{r} = 0$ is the maximally mixed state; the boundary sphere is the set of pure states.
+The centre $\vec r = 0$ is the maximally mixed state; the boundary sphere is the set of pure states.
 
 The Bloch sphere provides a geometric representation of a qubit that is both intuitive and useful. Rotations of the sphere correspond to unitary operations on the qubit (up to a sign), and the distance between two points corresponds to the distinguishability of the corresponding states.
 
@@ -219,36 +219,36 @@ The Bloch sphere provides a geometric representation of a qubit that is both int
 The **Pauli matrices** form a basis for the traceless Hermitian operators on $\mathbb{C}^2$. Any Hermitian operator $A$ on $\mathbb{C}^2$ can be written as
 
 $$
-A = a_0\, I + \mathbf{a}\cdot\boldsymbol{\sigma},
+A = a_0\, I + \vec a\cdot\boldsymbol{\sigma},
 $$
 
-where $a_0 \in \mathbb{R}$ is the trace part and $\mathbf{a} \in \mathbb{R}^3$ is the traceless part. The eigenvalues of $A$ are $a_0 \pm |\mathbf{a}|$.
+where $a_0 \in \mathbb{R}$ is the trace part and $\vec a \in \mathbb{R}^3$ is the traceless part. The eigenvalues of $A$ are $a_0 \pm |\vec a|$.
 
-The **expectation value** of $A$ in a state $\rho = \tfrac{1}{2}(I + \mathbf{r}\cdot\boldsymbol{\sigma})$ is
+The **expectation value** of $A$ in a state $\rho = \tfrac{1}{2}(I + \vec r\cdot\boldsymbol{\sigma})$ is
 
 $$
-\langle A \rangle_\rho = \mathrm{Tr}(A\rho) = a_0 + \mathbf{a}\cdot\mathbf{r}.
+\langle A \rangle_\rho = \mathrm{Tr}(A\rho) = a_0 + \vec a\cdot\vec r.
 $$
 
 This is the standard formula for the expectation value of a qubit observable.
 
 ### The Born Rule for a Qubit
 
-For a projective measurement of an observable $A = a_0 I + \mathbf{a}\cdot\boldsymbol{\sigma}$ in a state $\rho = \tfrac{1}{2}(I + \mathbf{r}\cdot\boldsymbol{\sigma})$, the outcomes are $a_\pm = a_0 \pm |\mathbf{a}|$, with probabilities
+For a projective measurement of an observable $A = a_0 I + \vec a\cdot\boldsymbol{\sigma}$ in a state $\rho = \tfrac{1}{2}(I + \vec r\cdot\boldsymbol{\sigma})$, the outcomes are $a_\pm = a_0 \pm |\vec a|$, with probabilities
 
 $$
-p_\pm = \frac{1}{2}\left(1 \pm \hat{\mathbf{a}}\cdot\mathbf{r}\right),
+p_\pm = \frac{1}{2}\left(1 \pm \hat a\cdot\vec r\right),
 $$
 
-where $\hat{\mathbf{a}} = \mathbf{a}/|\mathbf{a}|$. So the probability of each outcome depends only on the angle between the measurement direction $\hat{\mathbf{a}}$ and the Bloch vector $\mathbf{r}$.
+where $\hat a = \vec a/|\vec a|$. So the probability of each outcome depends only on the angle between the measurement direction $\hat a$ and the Bloch vector $\vec r$.
 
 After the measurement with outcome $+$, the state collapses to the pure state
 
 $$
-\rho' = \frac{1}{2}\left(I + \hat{\mathbf{a}}\cdot\boldsymbol{\sigma}\right),
+\rho' = \frac{1}{2}\left(I + \hat a\cdot\boldsymbol{\sigma}\right),
 $$
 
-i.e., the Bloch vector becomes $\hat{\mathbf{a}}$.
+i.e., the Bloch vector becomes $\hat a$.
 
 ## Dynamics
 
@@ -460,7 +460,7 @@ The standard formalism has several open issues: the measurement problem, the axi
 | $\hbar$ | Reduced Planck constant |
 | $\lvert\psi\rangle = \alpha\lvert 0\rangle + \beta\lvert 1\rangle$ | Pure qubit state, $\lvert\alpha\rvert^2 + \lvert\beta\rvert^2 = 1$ |
 | $\boldsymbol{\sigma} = (\sigma_1,\sigma_2,\sigma_3)$ | Pauli matrices |
-| $\mathbf{r}$ | Bloch vector, $\rho = \tfrac{1}{2}(I + \mathbf{r}\cdot\boldsymbol{\sigma})$ |
+| $\vec r$ | Bloch vector, $\rho = \tfrac{1}{2}(I + \vec r\cdot\boldsymbol{\sigma})$ |
 | $S^2$, $B^3$ | Bloch sphere (pure states) and Bloch ball (all states) |
 | $\{E_i\}$ | POVM elements: $E_i \geq 0$, $\sum_i E_i = I$ |
 | $K_i$, $\Phi$ | Kraus operators and the channel $\Phi(\rho) = \sum_i K_i \rho K_i^\dagger$ |

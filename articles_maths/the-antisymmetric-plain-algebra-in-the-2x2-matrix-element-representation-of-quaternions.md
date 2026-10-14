@@ -3,7 +3,7 @@
 ## Introduction
 
 The antisymmetric plain algebra of $\mathbb{H}$ is the cross product
-$\tilde p\times\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\mathbf p\times\mathbf q$ of
+$\tilde p\times\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\vec p\times\vec q$ of
 *Introduction to the Antisymmetric Plain Algebra of Quaternions*. This article reads the operation on
 the embedding $\mathbb{H}\hookrightarrow M_2(\mathbb{C})$ of *Introduction to the $2\times2$ Matrix
 Element Representation $M_2(\mathbb{C})$ of Quaternions*, where the plain product becomes the matrix
@@ -39,14 +39,14 @@ with $\mathsf{M}_2(e_0)=\mathrm{I}_2$, $\mathsf{M}_2(e_1)=-i\sigma_1$, $\mathsf{
 $\mathsf{M}_2(e_3)=-i\sigma_3$, the Pauli matrices; the plain product is the matrix product,
 $\mathsf{M}_2(\tilde p\tilde q)=\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)$, and the conjugation is
 the Hermitian adjoint, $\mathsf{M}_2(\tilde q^{\natural})=\mathsf{M}_2(\tilde q)^{\dagger}$. The
-**quaternion form** is $N(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q$ and the **plain form**
-$B(\tilde p,\tilde q)=p_0q_0-\mathbf p\cdot\mathbf q$.
+**quaternion form** is $N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$ and the **plain form**
+$B(\tilde p,\tilde q)=p_0q_0-\vec p\cdot\vec q$.
 
 ## The Model
 
 **Proposition.** The map $\mathsf{M}_2$ is an injective $\mathbb{R}$-algebra homomorphism into
 $M_2(\mathbb{C})$, with $\operatorname{Tr}\mathsf{M}_2(\tilde q)=2q_0$ and determinant
-$\det\mathsf{M}_2(\tilde q)=q_0^2+|\mathbf q|^2=N(\tilde q)$, the quaternion norm. The
+$\det\mathsf{M}_2(\tilde q)=q_0^2+|\vec q|^2=N(\tilde q)$, the quaternion norm. The
 pure elements have trace-free images, and the image of the vector subspace is a three-dimensional real
 subspace of the trace-free matrices.
 
@@ -81,7 +81,7 @@ the model,
 
 $$
 \mathsf{M}_2\bigl(\mathrm{Vect}(\mathbb{H})\bigr)
-=\{\mathsf{M}_2(\mathbf q):\ \operatorname{Tr}\mathsf{M}_2(\mathbf q)=0\},
+=\{\mathsf{M}_2(\vec q):\ \operatorname{Tr}\mathsf{M}_2(\vec q)=0\},
 $$
 
 a three-dimensional real subspace, and the kernel of the model map is $\{0\}$: the model is faithful.
@@ -124,12 +124,12 @@ $\mathsf{M}_2(e_0)=\mathrm{I}_2$ entering no value.
 
 $$
 \operatorname{Tr}\mathsf{M}_2(\tilde q)=2q_0,\qquad
-\det\mathsf{M}_2(\tilde q)=N(\tilde q)=q_0^2+|\mathbf q|^2,
+\det\mathsf{M}_2(\tilde q)=N(\tilde q)=q_0^2+|\vec q|^2,
 $$
 
 $$
 \operatorname{Tr}\mathsf{M}_2(\tilde p\times\tilde q)=0,\qquad
-\det\mathsf{M}_2(\tilde p\times\tilde q)=|\mathbf p\times\mathbf q|^2,
+\det\mathsf{M}_2(\tilde p\times\tilde q)=|\vec p\times\vec q|^2,
 $$
 
 and the images satisfy the normality relation
@@ -139,7 +139,7 @@ $$
 $$
 
 *Proof.* The trace and the determinant are those of the model; the value of the block is pure, so the
-trace vanishes and the determinant is the norm of the pure vector part $|\mathbf p\times\mathbf q|^2$.
+trace vanishes and the determinant is the norm of the pure vector part $|\vec p\times\vec q|^2$.
 The normality is $\mathsf{M}_2(\tilde q)\mathsf{M}_2(\tilde q^{\natural})=\mathsf{M}_2(\tilde q\tilde q^{\natural})=N(\tilde q)\mathrm{I}_2$.
 
 ## The Trace Form and the Killing Form
@@ -147,7 +147,7 @@ The normality is $\mathsf{M}_2(\tilde q)\mathsf{M}_2(\tilde q^{\natural})=\maths
 **Theorem (the trace form is the Killing form).** On the derived algebra,
 
 $$
-\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)\bigr)=\kappa(\tilde p,\tilde q)=-2\,\mathbf p\cdot\mathbf q
+\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)\bigr)=\kappa(\tilde p,\tilde q)=-2\,\vec p\cdot\vec q
 \qquad(\tilde p,\tilde q\in\mathrm{Vect}(\mathbb{H})),
 $$
 
@@ -157,7 +157,7 @@ $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)^{\dagger
 
 *Proof.* The model is multiplicative, so
 $\operatorname{Tr}(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q))=\operatorname{Tr}\mathsf{M}_2(\tilde p\tilde q)=2\mathrm{Sc}(\tilde p\tilde q)=2B(\tilde p,\tilde q)$;
-on pure elements $B=-\mathbf p\cdot\mathbf q$ and the trace is $-2\,\mathbf p\cdot\mathbf q$, the
+on pure elements $B=-\vec p\cdot\vec q$ and the trace is $-2\,\vec p\cdot\vec q$, the
 Killing form. For the quaternion form, $\mathsf{M}_2(\tilde q)^{\dagger}=\mathsf{M}_2(\tilde q^{\natural})$
 and $\operatorname{Tr}\mathsf{M}_2(\tilde p\tilde q^{\natural})=2\mathrm{Sc}(\tilde p\tilde q^{\natural})=2N(\tilde p,\tilde q)$.
 
@@ -190,7 +190,7 @@ image of the block is the three-dimensional real subspace of trace-free matrices
 identified with $\mathfrak{su}(2)$; the model is faithful, of kernel $\{0\}$. The invariants are
 $\operatorname{Tr}\mathsf{M}_2(\tilde q)=2q_0$, $\det\mathsf{M}_2(\tilde q)=N(\tilde q)$,
 $\operatorname{Tr}\mathsf{M}_2(\tilde p\times\tilde q)=0$ and
-$\det\mathsf{M}_2(\tilde p\times\tilde q)=|\mathbf p\times\mathbf q|^2$, with the normality
+$\det\mathsf{M}_2(\tilde p\times\tilde q)=|\vec p\times\vec q|^2$, with the normality
 $\mathsf{M}_2(\tilde q)\mathsf{M}_2(\tilde q)^{\dagger}=N(\tilde q)\mathrm{I}_2$. The trace form of the
 model is the Killing form of the block on the derived algebra, and the general trace and the conjugate
 trace read the plain form and the quaternion form. The plain algebra on the same model is the matrix
@@ -205,7 +205,7 @@ product, of the whole matrix algebra as image.
 | $\{\operatorname{Tr}=0\}$ | the image of the block, the trace-free part |
 | $\operatorname{Tr}\mathsf{M}_2(\tilde q)=2q_0$ | the trace of the model |
 | $\det\mathsf{M}_2(\tilde q)=N(\tilde q)$ | the determinant, the quaternion norm |
-| $\operatorname{Tr}(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q))=-2\,\mathbf p\cdot\mathbf q$ | the trace form as the Killing form |
+| $\operatorname{Tr}(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q))=-2\,\vec p\cdot\vec q$ | the trace form as the Killing form |
 
 ## Further Reading
 

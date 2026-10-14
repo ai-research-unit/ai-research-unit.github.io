@@ -32,7 +32,7 @@ so the spectrum is real and the operator is a real scalar.
 
 **Proof.** The criterion is that of *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra of Biquaternions*, §*The $J$-Adjoint of the Three Families*; a scalar multiple of the identity has the single eigenvalue $t$ with multiplicity $\dim_{\mathbb{C}}\mathbb{B}=4$.
 
-**Remark (why there is no non-real case here).** A real quaternion $\tilde{Q}=t+\sum_kq_ke_k$ has the two eigenvalues $\lambda=t+i|\mathbf{q}|$ and $\bar\lambda$ of $\mathsf{M}_2(\tilde{Q})$ (*Biquaternion Spectral Theory*, §*The Biquaternion Spectrum*), so $\mathrm{spec}(L_{\tilde{Q}})=\{\lambda,\bar\lambda\}$ with multiplicity two each; but such an $L_{\tilde{Q}}$ is $J$-self-adjoint only when $\mathbf{q}=0$, in which case the pair collapses to the real double eigenvalue $t$. The non-real pair is a $J$-self-adjoint spectrum only for operators outside the left-multiplication family. The same statement holds for $R_{\tilde{R}}$.
+**Remark (why there is no non-real case here).** A real quaternion $\tilde{Q}=t+\sum_kq_ke_k$ has the two eigenvalues $\lambda=t+i|\vec q|$ and $\bar\lambda$ of $\mathsf{M}_2(\tilde{Q})$ (*Biquaternion Spectral Theory*, §*The Biquaternion Spectrum*), so $\mathrm{spec}(L_{\tilde{Q}})=\{\lambda,\bar\lambda\}$ with multiplicity two each; but such an $L_{\tilde{Q}}$ is $J$-self-adjoint only when $\vec q=0$, in which case the pair collapses to the real double eigenvalue $t$. The non-real pair is a $J$-self-adjoint spectrum only for operators outside the left-multiplication family. The same statement holds for $R_{\tilde{R}}$.
 
 **Proof.** The eigenvalues of a real quaternion are those of its $2\times2$ matrix, computed in *Biquaternion Spectral Theory*; the collapse is the criterion above.
 
@@ -44,22 +44,22 @@ so the spectrum is real and the operator is a real scalar.
 $$
 \mathrm{spec}\bigl(\Theta_{\tilde{Q}}\bigr)=\bigl\{|\zeta|^{2}\bigr\}\ \text{with multiplicity }4,\qquad\text{inertia }(4,0).
 $$
-- If $\tilde{Q}=\tilde V\in\mathbb{V}_{\mathbb{B}}$ is a pure vector with $\langle\tilde V,\tilde V\rangle_{\natural}\neq0$, then
+- If $\tilde{Q}=\tilde S\in\mathbb{V}_{\mathbb{B}}$ is a pure vector with $\langle\tilde S,\tilde S\rangle_{\natural}\neq0$, then
 $$
-\mathrm{spec}\bigl(\Theta_{\tilde{V}}\bigr)=\bigl\{|\langle\tilde V,\tilde V\rangle_{\natural}|,\,|\langle\tilde V,\tilde V\rangle_{\natural}|,\,-|\langle\tilde V,\tilde V\rangle_{\natural}|,\,-|\langle\tilde V,\tilde V\rangle_{\natural}|\bigr\},\qquad\text{inertia }(2,2).
+\mathrm{spec}\bigl(\Theta_{\tilde{S}}\bigr)=\bigl\{|\langle\tilde S,\tilde S\rangle_{\natural}|,\,|\langle\tilde S,\tilde S\rangle_{\natural}|,\,-|\langle\tilde S,\tilde S\rangle_{\natural}|,\,-|\langle\tilde S,\tilde S\rangle_{\natural}|\bigr\},\qquad\text{inertia }(2,2).
 $$
-- If $\tilde{Q}=\tilde V\in\mathbb{V}_{\mathbb{B}}$ has $\langle\tilde V,\tilde V\rangle_{\natural}=0$, then $\Theta_{\tilde{V}}$ is nilpotent of order two, $\Theta_{\tilde{V}}^{2}=0$, and
+- If $\tilde{Q}=\tilde S\in\mathbb{V}_{\mathbb{B}}$ has $\langle\tilde S,\tilde S\rangle_{\natural}=0$, then $\Theta_{\tilde{S}}$ is nilpotent of order two, $\Theta_{\tilde{S}}^{2}=0$, and
 $$
-\mathrm{spec}\bigl(\Theta_{\tilde{V}}\bigr)=\{0\}\ \text{with multiplicity }4.
+\mathrm{spec}\bigl(\Theta_{\tilde{S}}\bigr)=\{0\}\ \text{with multiplicity }4.
 $$
 
-**Proof.** For a central parameter, $\Theta_{\zeta e_0}(\tilde{P})=\zeta\tilde{P}\bar\zeta=|\zeta|^{2}\tilde{P}$, which is the first line. For a vector parameter, $\tilde V^{2}=-\langle\tilde V,\tilde V\rangle_{\natural}e_0$ and $(\tilde V^{\dagger})^{2}=-\overline{\langle\tilde V,\tilde V\rangle_{\natural}}e_0$, because $\tilde V^{\dagger}=-\bar{\tilde V}$ and $\bar{\tilde V}{}^{2}=-\langle\bar{\tilde V},\bar{\tilde V}\rangle_{\natural}e_0=-\overline{\langle\tilde V,\tilde V\rangle_{\natural}}e_0$; hence
+**Proof.** For a central parameter, $\Theta_{\zeta e_0}(\tilde{P})=\zeta\tilde{P}\bar\zeta=|\zeta|^{2}\tilde{P}$, which is the first line. For a vector parameter, $\tilde S^{2}=-\langle\tilde S,\tilde S\rangle_{\natural}e_0$ and $(\tilde S^{\dagger})^{2}=-\overline{\langle\tilde S,\tilde S\rangle_{\natural}}e_0$, because $\tilde S^{\dagger}=-\bar{\tilde S}$ and $\bar{\tilde S}{}^{2}=-\langle\bar{\tilde S},\bar{\tilde S}\rangle_{\natural}e_0=-\overline{\langle\tilde S,\tilde S\rangle_{\natural}}e_0$; hence
 $$
-\Theta_{\tilde V}^{2}(\tilde{P})=\tilde V^{2}\tilde P(\tilde V^{\dagger})^{2}=|\langle\tilde V,\tilde V\rangle_{\natural}|^{2}\tilde P,
+\Theta_{\tilde S}^{2}(\tilde{P})=\tilde S^{2}\tilde P(\tilde S^{\dagger})^{2}=|\langle\tilde S,\tilde S\rangle_{\natural}|^{2}\tilde P,
 $$
-so $\Theta_{\tilde V}^{2}=|\langle\tilde V,\tilde V\rangle_{\natural}|^{2}\mathrm{id}$. If $\langle\tilde V,\tilde V\rangle_{\natural}\neq0$ the matrix $\mathsf{M}_2(\tilde V)$ is traceless with $\mathsf{M}_2(\tilde V)^{2}=-\langle\tilde V,\tilde V\rangle_{\natural}I$, hence diagonalisable with the eigenvalues $\pm i\sqrt{\langle\tilde V,\tilde V\rangle_{\natural}}$, and the product rule gives $\{|N|,|N|,-|N|,-|N|\}$. If $\langle\tilde V,\tilde V\rangle_{\natural}=0$ then $\tilde V^{2}=0$ and $(\tilde V^{\dagger})^{2}=0$, so $\Theta_{\tilde V}^{2}=0$; the single eigenvalue is $0$ with multiplicity four.
+so $\Theta_{\tilde S}^{2}=|\langle\tilde S,\tilde S\rangle_{\natural}|^{2}\mathrm{id}$. If $\langle\tilde S,\tilde S\rangle_{\natural}\neq0$ the matrix $\mathsf{M}_2(\tilde S)$ is traceless with $\mathsf{M}_2(\tilde S)^{2}=-\langle\tilde S,\tilde S\rangle_{\natural}I$, hence diagonalisable with the eigenvalues $\pm i\sqrt{\langle\tilde S,\tilde S\rangle_{\natural}}$, and the product rule gives $\{|N|,|N|,-|N|,-|N|\}$. If $\langle\tilde S,\tilde S\rangle_{\natural}=0$ then $\tilde S^{2}=0$ and $(\tilde S^{\dagger})^{2}=0$, so $\Theta_{\tilde S}^{2}=0$; the single eigenvalue is $0$ with multiplicity four.
 
-**Corollary (the sandwich is definitizable except at the null elements).** A $J$-self-adjoint sandwich is diagonalisable, with real spectrum, exactly when it is not the sandwich of a null vector $\tilde V$ with $\langle\tilde V,\tilde V\rangle_{\natural}=0$; in that case its spectrum is the real pair $\pm|\langle\tilde Q,\tilde Q\rangle_{\natural}|$ with the inertia $(4,0)$ or $(2,2)$, and the operator is definitizable in the sense of *Definitizable Operators and the Krein–Naĭmark Theorem*.
+**Corollary (the sandwich is definitizable except at the null elements).** A $J$-self-adjoint sandwich is diagonalisable, with real spectrum, exactly when it is not the sandwich of a null vector $\tilde S$ with $\langle\tilde S,\tilde S\rangle_{\natural}=0$; in that case its spectrum is the real pair $\pm|\langle\tilde Q,\tilde Q\rangle_{\natural}|$ with the inertia $(4,0)$ or $(2,2)$, and the operator is definitizable in the sense of *Definitizable Operators and the Krein–Naĭmark Theorem*.
 
 **Proof.** The theorem gives the two diagonalisable regimes; the nilpotent case has no basis of eigenvectors.
 
@@ -121,8 +121,8 @@ For the Krein adjoint $T^{\dagger}=JT^{*}J$ the $J$-self-adjoint operators of th
 | $\mathrm{spec}(L_{\tilde{Q}})=\mathrm{spec}(\mathsf{M}_2(\tilde{Q}))$ (twice) | Rule for the left multiplication |
 | $L_{\tilde{Q}}$ $J$-self-adjoint $\iff\tilde{Q}\in\mathbb{R}e_0$, spectrum $\{t\}$ (mult. 4) | The left-multiplication case |
 | $\mathrm{spec}(\Theta_{\zeta e_0})=\{\lvert\zeta\rvert^{2}\}$ (mult. 4), inertia $(4,0)$ | The central regime |
-| $\mathrm{spec}(\Theta_{\tilde V})=\{\pm\lvert \langle\tilde V,\tilde V\rangle_{\natural}\rvert\}$ (mult. 2), inertia $(2,2)$ | The vector regime |
-| $\Theta_{\tilde V}^{2}=0$, $\mathrm{spec}=\{0\}$ | The null-vector regime |
+| $\mathrm{spec}(\Theta_{\tilde S})=\{\pm\lvert \langle\tilde S,\tilde S\rangle_{\natural}\rvert\}$ (mult. 2), inertia $(2,2)$ | The vector regime |
+| $\Theta_{\tilde S}^{2}=0$, $\mathrm{spec}=\{0\}$ | The null-vector regime |
 | $\mathrm{spec}(T)=\overline{\mathrm{spec}(T)}$ | The general symmetry |
 | $\mathrm{spec}(L_{e_1}+R_{e_1})=\{2i,-2i,0\}$ | A non-real, non-definitizable spectrum |
 

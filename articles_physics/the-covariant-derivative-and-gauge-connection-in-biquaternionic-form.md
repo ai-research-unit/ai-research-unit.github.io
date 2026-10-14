@@ -33,7 +33,7 @@ The division between what is established and what is interpretation is kept expl
 - **Interpretation.** Reading $\tilde{A}$ as a connection on a bundle, the covariant derivative as parallel transport, and $\bar D D$ as the biquaternion form of the identity "square of a Dirac operator equals Laplacian plus curvature" are geometric interpretations of algebraic content. They are labelled as interpretation wherever they occur.
 - **Gaps, left visible.** The non-abelian extension, the reality and compactness conditions that would select a compact gauge algebra, and the covariant wave operator for a charged scalar are not settled here; each is stated as a gap where it arises and collected in the open questions.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the complex scalar subspace, which is the centre of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The connection is $\tilde{A} = \sum_{\mu=0}^{3} A_\mu e_\mu = i\phi/c\,e_0 + \mathbf{A}$, with $A_0 = i\phi/c$ purely imaginary and $A_1, A_2, A_3$ real, so that $\tilde{A} \in \mathbb{M}_-$; the field strength is $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ and the Maxwell equation is $\tilde{\nabla}\tilde{F} = -\tilde{R}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the complex scalar subspace, which is the centre of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The connection is $\tilde{A} = \sum_{\mu=0}^{3} A_\mu e_\mu = i\phi/c\,e_0 + \vec A$, with $A_0 = i\phi/c$ purely imaginary and $A_1, A_2, A_3$ real, so that $\tilde{A} \in \mathbb{M}_-$; the field strength is $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A})$ and the Maxwell equation is $\tilde{\nabla}\tilde{F} = -\tilde{R}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ the vacuum speed of light. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged.
 
 ## The Covariant Derivative and Its Components
 
@@ -149,7 +149,7 @@ The transformation law makes the connection's status precise.
 **The connection is not gauge invariant.** Its entire gauge orbit is the set $\{\tilde{A} - \tilde{\nabla}\Gamma\}$. The scalar part of $\tilde{\nabla}^{\natural}\tilde{A}$,
 
 $$
-S = \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) = \partial_{ict}A_0 + \mathrm{div}\,\mathbf{A},
+S = \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) = \partial_{ict}A_0 + \mathrm{div}\,\vec A,
 $$
 
 transforms as $S' = S - \Box\Gamma$, so $S$ is a pure-gauge quantity; the Lorenz gauge $S = 0$ is a choice, not a condition. This is the gauge scalar of the Maxwell article, inherited unchanged.
@@ -176,7 +176,7 @@ so that $\partial_\mu\Gamma(\tilde{Q}_0) = A_\mu(\tilde{Q}_0)$ and hence $\tilde
 **The connection one-form is a real quaternion.** One observation about the connection is worth recording. Pairing the connection with a coordinate displacement gives
 
 $$
-\tilde{A}_\mu\,dx^\mu = A_0\,d(ict) + A_k\,dx^k = -\phi\,dt + \mathbf{A}\cdot d\mathbf{x},
+\tilde{A}_\mu\,dx^\mu = A_0\,d(ict) + A_k\,dx^k = -\phi\,dt + \vec A\cdot d\vec x,
 $$
 
 which is real: $A_0$ is imaginary and $d(ict)$ is imaginary, so their product is real, while $A_k$ and $dx^k$ are separately real. In the algebra this says $\tilde{A}_\mu\,dx^\mu \in \mathbb{H}_{\mathbb{B}}$, the real-quaternion subspace. Around a closed path the integral is gauge invariant, because $\tilde{A}_\mu\,dx^\mu \mapsto \tilde{A}_\mu\,dx^\mu - d\Gamma$ and $\oint d\Gamma = 0$. Reading the exponential of this integral as a **holonomy** is a geometric interpretation of the algebraic fact; whether the real-quaternion character of the one-form carries content beyond this bookkeeping is not established here and is recorded as an open question.
@@ -326,7 +326,7 @@ with the scalar part the covariant d'Alembertian and the vector part the curvatu
 | $\tilde{\nabla} = e_0\partial_{ict} + e_k\partial_k$ | Biquaternionic gradient |
 | $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_k\partial_k$ | Quaternion-conjugate gradient |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$ | d'Alembertian |
-| $\tilde{A} = \sum_\mu A_\mu e_\mu = i\phi/c\,e_0 + \mathbf{A}$ | Connection / potential biquaternion, in $\mathbb{M}_-$ |
+| $\tilde{A} = \sum_\mu A_\mu e_\mu = i\phi/c\,e_0 + \vec A$ | Connection / potential biquaternion, in $\mathbb{M}_-$ |
 | $\Gamma$ | Real scalar gauge function |
 | $\lambda = e^{iq\Gamma/\hbar}$ | Local central phase (abelian) |
 | $q$ | Coupling constant (charge), not fixed by the algebra |

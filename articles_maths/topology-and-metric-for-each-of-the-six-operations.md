@@ -6,7 +6,7 @@ The chapter closes where the six products of *The 6 Algebraic Structures over th
 
 **Boundaries.** The six products and their laws are *The 6 Products of the Quaternion Real Space* and *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; the two forms of the space are *The 2 Forms over the Quaternion $\mathbb{R}$ Space*; the norm is *Norm and Invertibility in the General Plain Algebra*; the metric of the quaternion space is *Quaternion Metrics*, above this article in this category; the space and its topology are *Introduction to Topology on the Quaternions* and *Quaternion Topology*, above this article in this category.
 
-**Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$; an element is $\tilde q=q_0e_0+\mathbf q$ with $\mathbf q=\sum_kq_ke_k$. The **quaternion form** is $N(\tilde q)=q_0^{2}+|\mathbf q|^{2}$ and the **plain form** is $B(\tilde q)=q_0^{2}-|\mathbf q|^{2}$; the **quaternion conjugation** is $\tilde q^{\natural}=q_0e_0-\mathbf q$, the bar is the identity. The six products are those of the table of *The 6 Products of the Quaternion Real Space*, and for a product $\star$ the **metric form** is the polarisation of the scalar part at the two equal arguments,
+**Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$; an element is $\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_kq_ke_k$. The **quaternion form** is $N(\tilde q)=q_0^{2}+|\vec q|^{2}$ and the **plain form** is $B(\tilde q)=q_0^{2}-|\vec q|^{2}$; the **quaternion conjugation** is $\tilde q^{\natural}=q_0e_0-\vec q$, the bar is the identity. The six products are those of the table of *The 6 Products of the Quaternion Real Space*, and for a product $\star$ the **metric form** is the polarisation of the scalar part at the two equal arguments,
 
 $$
 \Phi_\star(\tilde p,\tilde q)=\mathrm{Sc}\bigl(\tilde p\star\tilde q\bigr)\ \text{symmetrised},\qquad
@@ -22,7 +22,7 @@ $$
 |---|---|---|---|---|---|---|
 | $Q_\star(\tilde q)=\mathrm{Sc}(\tilde q\star\tilde q)$ | $B(\tilde q)$ | $B(\tilde q)$ | $0$ | $N(\tilde q)$ | $N(\tilde q)$ | $0$ |
 
-*Proof.* For the plain products $\tilde q\tilde q=\tilde q^{2}=(q_0^{2}-|\mathbf q|^{2})e_0+2q_0\mathbf q$, whose scalar part is $B(\tilde q)$; the symmetric plain product has the same square, $\tfrac12(\tilde q\tilde q+\tilde q\tilde q)=\tilde q^{2}$. For the antisymmetric plain product, $\tfrac12(\tilde q\tilde q-\tilde q\tilde q)=0$. For the quaternionic products $\tilde q^{\natural}\tilde q=N(\tilde q)e_0$ and $\tfrac12(\tilde q^{\natural}\tilde q+\tilde q^{\natural}\tilde q)=N(\tilde q)e_0$, and the antisymmetric quaternionic product is $\tfrac12(\tilde q^{\natural}\tilde q-\tilde q^{\natural}\tilde q)=0$.
+*Proof.* For the plain products $\tilde q\tilde q=\tilde q^{2}=(q_0^{2}-|\vec q|^{2})e_0+2q_0\vec q$, whose scalar part is $B(\tilde q)$; the symmetric plain product has the same square, $\tfrac12(\tilde q\tilde q+\tilde q\tilde q)=\tilde q^{2}$. For the antisymmetric plain product, $\tfrac12(\tilde q\tilde q-\tilde q\tilde q)=0$. For the quaternionic products $\tilde q^{\natural}\tilde q=N(\tilde q)e_0$ and $\tfrac12(\tilde q^{\natural}\tilde q+\tilde q^{\natural}\tilde q)=N(\tilde q)e_0$, and the antisymmetric quaternionic product is $\tfrac12(\tilde q^{\natural}\tilde q-\tilde q^{\natural}\tilde q)=0$.
 
 **Corollary (two facts distribute the six).** Only two quadratic forms occur on the diagonal, the plain form $B$ and the quaternion form $N$, together with the zero form; and the pairing of each product is the polarisation of the diagonal, so the metric of a quaternion product is intrinsic to it.
 
@@ -69,8 +69,8 @@ For each of the six products the scalar part of the square is a quadratic form, 
 |---|---|
 | $Q_\star(\tilde q)=\mathrm{Sc}(\tilde q\star\tilde q)$ | the scalar part at the two equal arguments of a product |
 | $\Phi_\star$ | the metric form, the polarisation of $Q_\star$ |
-| $B(\tilde q)=q_0^{2}-|\mathbf q|^{2}$ | the plain form, signature $(1,3)$ |
-| $N(\tilde q)=q_0^{2}+|\mathbf q|^{2}$ | the quaternion form, signature $(4,0)$ |
+| $B(\tilde q)=q_0^{2}-|\vec q|^{2}$ | the plain form, signature $(1,3)$ |
+| $N(\tilde q)=q_0^{2}+|\vec q|^{2}$ | the quaternion form, signature $(4,0)$ |
 | $S^3=\{N=1\}$, $\{B=1\}$, $\{B=0\}$ | the unit sphere, the unit hyperboloid, the null cone |
 | $0$ | the metric form of the two antisymmetric products |
 

@@ -6,7 +6,7 @@ The symmetric quaternionic product is the pairing $N$ placed on the scalar line.
 
 **Placement.** This is the Specific Theory entry of the block. Its companion is *The Specificities of the Symmetric Quaternionic Algebra*, above this article in this category; the Common Theory slots it cites rather than restates are *Introduction to the Symmetric Quaternionic Algebra of Quaternions*, *Zero Divisors of the Symmetric Quaternionic Algebra*, *Square Roots of One and the Idempotents of the Symmetric Quaternionic Algebra* and *Square Roots of Zero and the Nilpotents of the Symmetric Quaternionic Algebra*, all above this article in this category; its Operators companion is *The Multiplication Operators of the Symmetric Quaternionic Algebra*, below this article in this category.
 
-**Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$; an element is $\tilde q=q_0e_0+\mathbf q$. The **quaternion conjugation** is $\tilde q^{\natural}=q_0e_0-\mathbf q$; the bar is the identity, the star coincides with the natural sign ${}^{\natural}$. The **quaternion form** is $N(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q$ and $N(\tilde q)=q_0^{2}+|\mathbf q|^{2}$; the **symmetric quaternionic product** is $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$.
+**Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$; an element is $\tilde q=q_0e_0+\vec q$. The **quaternion conjugation** is $\tilde q^{\natural}=q_0e_0-\vec q$; the bar is the identity, the star coincides with the natural sign ${}^{\natural}$. The **quaternion form** is $N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$ and $N(\tilde q)=q_0^{2}+|\vec q|^{2}$; the **symmetric quaternionic product** is $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$.
 
 ## The Pairing with Values in the Centre
 
@@ -40,7 +40,7 @@ $$
 \{\tilde x:\tilde x\star\tilde x=0\}=\{0\}.
 $$
 
-*Proof.* The square is $N(\tilde x)e_0=(x_0^{2}+|\mathbf x|^{2})e_0$, a sum of squares; it vanishes exactly when every coordinate of $\tilde x$ vanishes.
+*Proof.* The square is $N(\tilde x)e_0=(x_0^{2}+|\vec x|^{2})e_0$, a sum of squares; it vanishes exactly when every coordinate of $\tilde x$ vanishes.
 
 **Remark (isotropy and zero divisors are pulled apart).** In many products the isotropic set and the zero-divisor set agree up to the origin; here they are opposite extremes. The isotropic set is the single point $\{0\}$, because the coefficient is definite; the zero-divisor set is the whole punctured space $\mathbb{H}\setminus\{0\}$, because the vanishing of a product involves a *pair* of elements and not a single one (*Zero Divisors of the Symmetric Quaternionic Algebra*). The block is therefore anisotropic and, at the same time, has no regular element except $0$. Neither statement contradicts the other, and the two together are the specific feature of the block.
 
@@ -49,7 +49,7 @@ $$
 **Theorem (the cone of squares is a half-line).** For every $\tilde x$ the square is a nonnegative multiple of $e_0$,
 
 $$
-\tilde x\star\tilde x=N(\tilde x)e_0,\qquad N(\tilde x)=x_0^{2}+|\mathbf x|^{2}\geq0,
+\tilde x\star\tilde x=N(\tilde x)e_0,\qquad N(\tilde x)=x_0^{2}+|\vec x|^{2}\geq0,
 $$
 
 and the set of values $\tilde x\star\tilde x$ as $\tilde x$ ranges over the block is the closed half-line $\mathbb{R}_{\geq0}e_0$.
@@ -82,7 +82,7 @@ The symmetric quaternionic block is non-degenerate and anisotropic: its coeffici
 |---|---|
 | $\operatorname{Rad}(\star)=\operatorname{rad}(N)$ | the radical; $\{0\}$ by definiteness |
 | $\{\tilde x:\tilde x\star\tilde x=0\}=\{0\}$ | the isotropic elements |
-| $N(\tilde x)=x_0^{2}+|\mathbf x|^{2}$ | the definite coefficient, Gram matrix $I_4$ |
+| $N(\tilde x)=x_0^{2}+|\vec x|^{2}$ | the definite coefficient, Gram matrix $I_4$ |
 | $\mathbb{R}_{\geq0}e_0$ | the cone of squares |
 | $\{\tilde x:N(\tilde x)=\lambda\}$, $\lambda>0$ | the square roots of a positive central element |
 

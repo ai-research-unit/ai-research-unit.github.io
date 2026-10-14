@@ -192,7 +192,7 @@ $$
 q_0 = ct', \quad q'_0 = ct, \quad q_1 = x, \quad q_2 = y, \quad q_3 = z, \quad q'_1 = x', \quad q'_2 = y', \quad q'_3 = z' ,
 $$
 
-the unprimed slot carrying the informational time $ct'$ and the material space $\mathbf{x}$, the primed slot the material time $ct$ and the informational space $\mathbf{x}'$.
+the unprimed slot carrying the informational time $ct'$ and the material space $\vec x$, the primed slot the material time $ct$ and the informational space $\vec x'$.
 
 ### The Centre Subspace $\mathbb{C}_{\mathbb{B}}$
 
@@ -225,7 +225,7 @@ $$
 Its image is exactly $\mathrm{SL}(2,\mathbb{C})$, the traceless complex matrices, so the third split $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$ of the relations article reads here as the trace decomposition $M_2(\mathbb{C}) = \mathbb{C}\mathsf{M}_2(e_0) \oplus \mathrm{SL}(2,\mathbb{C})$: scalar part against traceless part. It is the **anti-fixed space** of quaternion conjugation, the elements with $\tilde{Q}^{\natural} = -\tilde{Q}$, whose fixed space is the centre subspace above; equivalently it is the kernel of the scalar part. It is the only one of the remarkable subspaces that is six-dimensional, being three-dimensional over $\mathbb{C}$. Under the commutator it is closed, $[\mathrm{SL}_2,\mathrm{SL}_2] \subseteq \mathrm{SL}_2$, and indeed it is the derived subspace $[\mathbb{B},\mathbb{B}]$; under multiplication it is not — the product of two traceless matrices need not be traceless, since $\mathrm{Tr}(M^2) = -2\det M$. Its six real parameters are the two spatial blocks together,
 
 $$
-\tilde{Q} = q_1e_1 + q_2e_2 + q_3e_3 + q'_1(ie_1) + q'_2(ie_2) + q'_3(ie_3) = \mathbf{x} + i\mathbf{x}' ,
+\tilde{Q} = q_1e_1 + q_2e_2 + q_3e_3 + q'_1(ie_1) + q'_2(ie_2) + q'_3(ie_3) = \vec x + i\vec x' ,
 $$
 
 so its real and imaginary parts are the material and the informational space block, $\mathrm{Vect}(\mathbb{B}) = X_{\mathrm{m}} \oplus X_{\mathrm{i}}$: it takes one spatial block from $\mathbb{M}_+$ and one from $\mathbb{M}_-$, the spatial counterpart of the centre subspace's two temporal blocks. Reading its entries back off the traceless matrix returns the three complex coefficients $Q_k = q_k + iq'_k$, whose real and imaginary parts are the two spatial vectors. Its determinant is the biquaternion norm with the scalar term dropped, $\det = Q_1^2 + Q_2^2 + Q_3^2$.
@@ -347,7 +347,7 @@ $$
 \det \mathsf{M}_2(\tilde{Q}) = N(\tilde{Q}) = -(q'_0)^2 + q_1^2 + q_2^2 + q_3^2 ,
 $$
 
-the Minkowski interval of signature $(3,1)$: the $ict$ metric of the corpus, read on the material four-position of the companion article, $\tilde{Q} = ict\,e_0 + x\,e_1 + y\,e_2 + z\,e_3$, that is $q'_0 = ct$, $q_1 = x$, $q_2 = y$, $q_3 = z$, giving $-(ct)^2 + \mathbf{x}^2$. This is the most economical place to see why the material subspace is the **anti**-Hermitian one: the anti-Hermitian matrices are exactly those on which the determinant comes out with one minus sign.
+the Minkowski interval of signature $(3,1)$: the $ict$ metric of the corpus, read on the material four-position of the companion article, $\tilde{Q} = ict\,e_0 + x\,e_1 + y\,e_2 + z\,e_3$, that is $q'_0 = ct$, $q_1 = x$, $q_2 = y$, $q_3 = z$, giving $-(ct)^2 + \vec x^2$. This is the most economical place to see why the material subspace is the **anti**-Hermitian one: the anti-Hermitian matrices are exactly those on which the determinant comes out with one minus sign.
 
 ### How They Fit Together
 
@@ -362,17 +362,17 @@ The relations among the subspaces — the three splits, their intersections, and
 The matrix form makes the algebra's ideal structure a statement about columns. The idempotents
 
 $$
-\tilde\Pi_1 = \tfrac12(e_0 + ie_3) \;\longmapsto\; \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix} = E_{11}, \qquad
-\tilde\Pi_2 = \tfrac12(e_0 - ie_3) \;\longmapsto\; \begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix} = E_{22}
+\tilde\Pi_+ = \tfrac12(e_0 + ie_3) \;\longmapsto\; \begin{pmatrix} 1 & 0 \\ 0 & 0 \end{pmatrix} = E_{11}, \qquad
+\tilde\Pi_- = \tfrac12(e_0 - ie_3) \;\longmapsto\; \begin{pmatrix} 0 & 0 \\ 0 & 1 \end{pmatrix} = E_{22}
 $$
 
 generate the two **columns** of the matrix algebra,
 
 $$
-\mathbb{B}\tilde\Pi_1 = \mathbb{C}E_{11} \oplus \mathbb{C}E_{21}, \qquad \mathbb{B}\tilde\Pi_2 = \mathbb{C}E_{12} \oplus \mathbb{C}E_{22},
+\mathbb{B}\tilde\Pi_+ = \mathbb{C}E_{11} \oplus \mathbb{C}E_{21}, \qquad \mathbb{B}\tilde\Pi_- = \mathbb{C}E_{12} \oplus \mathbb{C}E_{22},
 $$
 
-with $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$; the first column is the set of matrices whose second column vanishes, the second those whose first column vanishes. Each column is two-dimensional over $\mathbb{C}$ and minimal, and left multiplication acts on it irreducibly: the column **is** the spinor module $S = \mathbb{C}^2$ of the companion articles on the spinor module and on representation theory — the abstract simple module realised inside the algebra, with the algebra acting on it by left multiplication — and not merely a space isomorphic to it.
+with $\mathbb{B} = \mathbb{B}\tilde\Pi_+ \oplus \mathbb{B}\tilde\Pi_-$; the first column is the set of matrices whose second column vanishes, the second those whose first column vanishes. $ie_3$ is a root of $+1$, $(ie_3)^2 = e_0$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents. Each column is two-dimensional over $\mathbb{C}$ and minimal, and left multiplication acts on it irreducibly: the column **is** the spinor module $S = \mathbb{C}^2$ of the companion articles on the spinor module and on representation theory — the abstract simple module realised inside the algebra, with the algebra acting on it by left multiplication — and not merely a space isomorphic to it.
 
 Two structural facts are visible in this form, and both are used by the physics articles.
 
@@ -382,11 +382,11 @@ $$
 \tilde\Upsilon_1 = \tfrac12(ie_1 - e_2) \;\longmapsto\; \begin{pmatrix} 0 & 1 \\ 0 & 0 \end{pmatrix} = E_{12} = |0\rangle\langle 1| .
 $$
 
-whose right action maps the first column onto the second — $E_{11} \mapsto E_{12}$ and $E_{21} \mapsto E_{22}$ — while annihilating the second. This is the matrix form of the structural reason the biquaternionic Dirac equation couples the chiralities by a right multiplication, and of the statement that the spinor module, not the whole algebra, is the carrier of the Dirac field. The element is the corpus's truncated lowering operator — the name matches the image $|0\rangle\langle 1|$ exactly — and the spinor-module articles write it $\tilde\Upsilon_1$, with $\tilde\Upsilon_2 = \tfrac12(ie_1 + e_2)$; the pair satisfies the matrix-unit relations $\tilde\Upsilon_1\tilde\Upsilon_2 = \tilde\Pi_1$, $\tilde\Upsilon_2\tilde\Upsilon_1 = \tilde\Pi_2$, $\tilde\Upsilon_1^2 = \tilde\Upsilon_2^2 = 0$.
+whose right action maps the first column onto the second — $E_{11} \mapsto E_{12}$ and $E_{21} \mapsto E_{22}$ — while annihilating the second. This is the matrix form of the structural reason the biquaternionic Dirac equation couples the chiralities by a right multiplication, and of the statement that the spinor module, not the whole algebra, is the carrier of the Dirac field. The element is the corpus's truncated lowering operator — the name matches the image $|0\rangle\langle 1|$ exactly — and the spinor-module articles write it $\tilde\Upsilon_1$, with $\tilde\Upsilon_2 = \tfrac12(ie_1 + e_2)$; the pair satisfies the matrix-unit relations $\tilde\Upsilon_1\tilde\Upsilon_2 = \tilde\Pi_+$, $\tilde\Upsilon_2\tilde\Upsilon_1 = \tilde\Pi_-$, $\tilde\Upsilon_1^2 = \tilde\Upsilon_2^2 = 0$.
 
 **The two-sided ideals are not among them.** Since $\mathbb{B} \cong M_2(\mathbb{C})$ is simple, its only two-sided ideals are $0$ and $\mathbb{B}$; the columns are one-sided. That is what allows the algebra to be simple and still carry two distinct chiralities, and it is why the mass term must be off-diagonal rather than a multiplication confined to a single column.
 
-The pair $\tilde\Pi_{1,2}$ used here is not the only one: every unit vector $\hat{\boldsymbol\mu}$ gives the idempotent pair $\tilde\Pi_{1,2}(\hat{\boldsymbol\mu}) = \tfrac12(e_0 \pm i\hat{\boldsymbol\mu})$, and $\tilde\Pi_{1,2} = \tilde\Pi_{1,2}(\hat{\mathbf{e}}_3)$ is the choice for which the two columns are the coordinate columns. The projector $\tilde\Pi_1(\hat{\mathbf{e}}_1)$ of the section *Spin, Qubits and the Bloch Vector* is a member of that family, corresponding to a different direction.
+The pair $\tilde\Pi_\pm$ used here is not the only one: every unit vector $\hat n$ gives the idempotent pair $\tilde\Pi_{1,2}(\hat n) = \tfrac12(e_0 \pm i\hat n)$, and $\tilde\Pi_\pm = \tilde\Pi_{1,2}(\hat e_3)$ is the choice for which the two columns are the coordinate columns. The projector $\tilde\Pi_1(\hat e_1)$ of the section *Spin, Qubits and the Bloch Vector* is a member of that family, corresponding to a different direction.
 
 ## The Conjugations in Matrix Form
 
@@ -438,11 +438,11 @@ which are the Hermitian spin matrices. The eigenvalue statement $\tilde{S}_k^2 =
 **States as projectors.** The rank-one idempotents of $\mathbb{M}_+$ are the pure-state projectors. The element
 
 $$
-\tilde\Pi_1(\hat{\mathbf{e}}_1) = \tfrac{1}{2}(e_0 + ie_1) \;\longmapsto\; \tfrac{1}{2}\begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}
+\tilde\Pi_1(\hat e_1) = \tfrac{1}{2}(e_0 + ie_1) \;\longmapsto\; \tfrac{1}{2}\begin{pmatrix} 1 & 1 \\ 1 & 1 \end{pmatrix}
 = \tfrac{1}{2}\big(\mathsf{M}_2(e_0) + \mathsf{M}_2(ie_1)\big)
 $$
 
-satisfies $\tilde{P}^2 = \tilde{P}$, has trace $1$ and determinant $0$: it is a rank-one projector, hence a pure state. Its complement $\tilde\Pi_2(\hat{\mathbf{e}}_1) = \tfrac12(e_0 - ie_1)$ is the orthogonal projector, and $\tilde\Pi_1(\hat{\mathbf{e}}_1) + \tilde\Pi_2(\hat{\mathbf{e}}_1) = e_0$ is $\mathsf{M}_2(e_0)$. Both have vanishing biquaternion norm, which is the matrix way of saying that the rank-one idempotents of $\mathbb{M}_+$ live on the null cone: a pure state is a null element of the algebra. Note that not every idempotent of $\mathbb{M}_+$ is a state: the unit $e_0$ is idempotent, and its matrix $\mathsf{M}_2(e_0)$ has trace $2$ and determinant $1$, so it is the full-rank projector and does not lie on the null cone. This is the representation-theoretic content of *The Biquaternion Vacuum as a Minimal Idempotent*.
+satisfies $\tilde{P}^2 = \tilde{P}$, has trace $1$ and determinant $0$: it is a rank-one projector, hence a pure state. Its complement $\tilde\Pi_2(\hat e_1) = \tfrac12(e_0 - ie_1)$ is the orthogonal projector, and $\tilde\Pi_1(\hat e_1) + \tilde\Pi_2(\hat e_1) = e_0$ is $\mathsf{M}_2(e_0)$. Both have vanishing biquaternion norm, which is the matrix way of saying that the rank-one idempotents of $\mathbb{M}_+$ live on the null cone: a pure state is a null element of the algebra. Note that not every idempotent of $\mathbb{M}_+$ is a state: the unit $e_0$ is idempotent, and its matrix $\mathsf{M}_2(e_0)$ has trace $2$ and determinant $1$, so it is the full-rank projector and does not lie on the null cone. This is the representation-theoretic content of *The Biquaternion Vacuum as a Minimal Idempotent*.
 
 **The density matrix.** A general mixed state is
 
@@ -450,13 +450,13 @@ $$
 \rho = \tfrac{1}{2}\big(\mathsf{M}_2(e_0) + r_1\mathsf{M}_2(ie_1) + r_2\mathsf{M}_2(ie_2) + r_3\mathsf{M}_2(ie_3)\big),
 $$
 
-with Bloch vector $\mathbf{r} \in \mathbb{R}^3$. It is Hermitian with unit trace, so it lies in the image of $\mathbb{M}_+$, and the Bloch components are recovered by the trace pairing,
+with Bloch vector $\vec r \in \mathbb{R}^3$. It is Hermitian with unit trace, so it lies in the image of $\mathbb{M}_+$, and the Bloch components are recovered by the trace pairing,
 
 $$
 r_k = \mathrm{Tr}\big(\rho\,\mathsf{M}_2(ie_k)\big),
 $$
 
-verified for all three components. The purity condition $\mathrm{Tr}(\rho^2) = 1$ is $|\mathbf{r}| = 1$, and the boundary of the Bloch ball is the set of rank-one projectors, i.e. the pure states found above. So the three-level description — biquaternion state, density matrix, Bloch vector — is one statement in three coordinate systems, and the passage between them is matrix multiplication and the trace.
+verified for all three components. The purity condition $\mathrm{Tr}(\rho^2) = 1$ is $|\vec r| = 1$, and the boundary of the Bloch ball is the set of rank-one projectors, i.e. the pure states found above. So the three-level description — biquaternion state, density matrix, Bloch vector — is one statement in three coordinate systems, and the passage between them is matrix multiplication and the trace.
 
 ## The Groups
 
@@ -475,7 +475,7 @@ $$
 This is the matrix form of the statement that the unit-norm elements act on $\mathbb{M}_-$ by rotor conjugation and generate the Lorentz group. Concretely, the rotation rotors are the unit-norm elements of $\mathbb{H}_{\mathbb{B}}$, which map to the $SU(2)$ matrices
 
 $$
-\tilde{R}(\theta, \hat{\mathbf{n}}) = \exp\!\big(\tfrac{1}{2}\theta \hat{\mathbf{n}}\cdot e\big) \;\longmapsto\; \exp\!\big(\tfrac{1}{2}\theta\,n_k\,\mathsf{M}_2(e_k)\big),
+\tilde{R}(\theta, \hat n) = \exp\!\big(\tfrac{1}{2}\theta \hat n\cdot e\big) \;\longmapsto\; \exp\!\big(\tfrac{1}{2}\theta\,n_k\,\mathsf{M}_2(e_k)\big),
 $$
 
 and the boost rotors are the Hermitian unit-norm elements, which map to the Hermitian $\mathrm{SL}(2,\mathbb{C})$ matrices. The two cases are distinguished in the matrix form by Hermiticity, exactly as they are distinguished in the algebra by the split $\mathbb{M}_+ \oplus \mathbb{M}_-$.
@@ -504,10 +504,10 @@ The matrix representation of the biquaternion algebra is the isomorphism $\maths
 
 - The signs are forced: $e_k^2 = -e_0$ requires the factor $i$, and $e_1e_2 = +e_3$ requires the minus sign. Both are checked by multiplying the four basis matrices. The equivalent statement, that the images of the Hermitian elements are Hermitian, is why the Hermitian elements of the algebra are its observables.
 - The trace is twice the scalar part, $\mathrm{Tr}(\tilde{Q}) = 2Q_0$, and the determinant **is** the biquaternion norm, $\det(\tilde{Q}) = N(\tilde{Q}) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$. Invertibility, multiplicativity of the norm, and the zero divisors as rank-one (singular) matrices $\mathsf{M}_2(\tilde{Q}) = uv^{T}$ all follow.
-- The subspaces of the algebra are the centre subspace $\mathbb{C}_{\mathbb{B}}$, $Q_0e_0 \mapsto Q_0\mathsf{M}_2(e_0)$, the only one of the remarkable subspaces of real dimension two; the vector subspace $\mathrm{Vect}(\mathbb{B})$, the traceless part, $Q_1e_1 + Q_2e_2 + Q_3e_3 \mapsto \mathrm{SL}(2,\mathbb{C})$, the anti-fixed space of quaternion conjugation; the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ (the matrices $\begin{pmatrix} z & w \\ -\bar{w} & \bar{z}\end{pmatrix}$ with $z = q_0 - iq_3$, $w = -iq_1 - q_2$, determinant $q_0^2 + q_1^2 + q_2^2 + q_3^2$ definite); the antiquaternion subspace $i\mathbb{H}_{\mathbb{B}}$ ($i$ times the quaternion matrices, determinant $-(q'_0)^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2$, negative definite); the Hermitian subspace $\mathbb{M}_+$ (the informational subspace, $q_0e_0 + iq'_ke_k$ mapped to a Hermitian matrix, $\det = q_0^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2 = c^2(t')^2 - (\mathbf{x}')^2$); and the anti-Hermitian subspace $\mathbb{M}_-$ (the material subspace, $iq'_0e_0 + q_ke_k$ mapped to $i$ times a Hermitian matrix, $\det = -(q'_0)^2 + q_1^2 + q_2^2 + q_3^2 = -c^2t^2 + \mathbf{x}^2$, the $ict$ interval). Every element splits into a Hermitian plus an anti-Hermitian part, $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$, with $\mathbb{M}_- = i\mathbb{M}_+$.
-- The minimal left ideals are the matrix **columns**: $\tilde\Pi_{1,2} = \tfrac12(e_0 \pm ie_3)$ map to $E_{11}$ and $E_{22}$, and $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$ is the split into the two chiralities. Left multiplication preserves each column, while right multiplication by $\tilde\Upsilon_1 = \tfrac12(ie_1 - e_2) \mapsto E_{12}$ carries the first column onto the second — it annihilates the second — and that is why the mass term of the Dirac equation is a right multiplication. The algebra is simple, so these ideals are one-sided, not two-sided.
+- The subspaces of the algebra are the centre subspace $\mathbb{C}_{\mathbb{B}}$, $Q_0e_0 \mapsto Q_0\mathsf{M}_2(e_0)$, the only one of the remarkable subspaces of real dimension two; the vector subspace $\mathrm{Vect}(\mathbb{B})$, the traceless part, $Q_1e_1 + Q_2e_2 + Q_3e_3 \mapsto \mathrm{SL}(2,\mathbb{C})$, the anti-fixed space of quaternion conjugation; the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ (the matrices $\begin{pmatrix} z & w \\ -\bar{w} & \bar{z}\end{pmatrix}$ with $z = q_0 - iq_3$, $w = -iq_1 - q_2$, determinant $q_0^2 + q_1^2 + q_2^2 + q_3^2$ definite); the antiquaternion subspace $i\mathbb{H}_{\mathbb{B}}$ ($i$ times the quaternion matrices, determinant $-(q'_0)^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2$, negative definite); the Hermitian subspace $\mathbb{M}_+$ (the informational subspace, $q_0e_0 + iq'_ke_k$ mapped to a Hermitian matrix, $\det = q_0^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2 = c^2(t')^2 - (\vec x')^2$); and the anti-Hermitian subspace $\mathbb{M}_-$ (the material subspace, $iq'_0e_0 + q_ke_k$ mapped to $i$ times a Hermitian matrix, $\det = -(q'_0)^2 + q_1^2 + q_2^2 + q_3^2 = -c^2t^2 + \vec x^2$, the $ict$ interval). Every element splits into a Hermitian plus an anti-Hermitian part, $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$, with $\mathbb{M}_- = i\mathbb{M}_+$.
+- The minimal left ideals are the matrix **columns**: $\tilde\Pi_\pm = \tfrac12(e_0 \pm ie_3)$ map to $E_{11}$ and $E_{22}$, and $\mathbb{B} = \mathbb{B}\tilde\Pi_+ \oplus \mathbb{B}\tilde\Pi_-$ is the split into the two chiralities. Left multiplication preserves each column, while right multiplication by $\tilde\Upsilon_1 = \tfrac12(ie_1 - e_2) \mapsto E_{12}$ carries the first column onto the second — it annihilates the second — and that is why the mass term of the Dirac equation is a right multiplication. The algebra is simple, so these ideals are one-sided, not two-sided.
 - Quaternion conjugation is the adjugate $\epsilon M^{\mathsf T}\epsilon^{-1}$ and complex conjugation is $\epsilon\overline{M}\epsilon^{-1}$; both are dressed by the antisymmetric form $\epsilon = \mathsf{M}_2(-e_2)$. Hermitian conjugation is the conjugate transpose and $\flat = -{}^{*}$ is its negative, neither of them dressed. Entrywise conjugation of $M$ on its own is not the image of any involution of the algebra.
-- The physics is read off the matrices: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k \mapsto \tfrac{\hbar}{2}\mathsf{M}_2(ie_k)$; the pure states are the rank-one projectors $\tilde\Pi_{1,2}(\hat{\boldsymbol\mu})$ and are the null elements $N(\tilde{P}) = 0$; the density matrix $\rho = \tfrac12\big(\mathsf{M}_2(e_0) + r_k\mathsf{M}_2(ie_k)\big)$ has $r_k = \mathrm{Tr}\big(\rho\,\mathsf{M}_2(ie_k)\big)$ on the Bloch ball.
+- The physics is read off the matrices: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k \mapsto \tfrac{\hbar}{2}\mathsf{M}_2(ie_k)$; the pure states are the rank-one projectors $\tilde\Pi_{1,2}(\hat n)$ and are the null elements $N(\tilde{P}) = 0$; the density matrix $\rho = \tfrac12\big(\mathsf{M}_2(e_0) + r_k\mathsf{M}_2(ie_k)\big)$ has $r_k = \mathrm{Tr}\big(\rho\,\mathsf{M}_2(ie_k)\big)$ on the Bloch ball.
 - Unit norm is unit determinant, so the unit-norm biquaternions are $\mathrm{SL}(2,\mathbb{C})$, with the rotations unitary and the boosts Hermitian.
 
 ## Summary of Notation
@@ -532,16 +532,16 @@ The matrix representation of the biquaternion algebra is the isomorphism $\maths
 | $\mathrm{Vect}(\mathbb{B})$ | The vector subspace, the complement of the centre subspace: $Q_1e_1 + Q_2e_2 + Q_3e_3 \mapsto \begin{pmatrix} -iQ_3 & -iQ_1-Q_2 \\ -iQ_1+Q_2 & iQ_3\end{pmatrix}$, the traceless matrices $\mathrm{SL}(2,\mathbb{C})$; the anti-fixed space of quaternion conjugation, closed under the commutator and equal to the derived subspace $[\mathbb{B},\mathbb{B}]$ |
 | $\mathbb{H}_{\mathbb{B}}$ | The real-quaternion subspace: $q_0e_0 + \cdots + q_3e_3 \mapsto \begin{pmatrix} z & w \\ -\bar{w} & \bar{z}\end{pmatrix}$, $z = q_0 - iq_3$, $w = -iq_1 - q_2$, determinant $q_0^2 + q_1^2 + q_2^2 + q_3^2$ |
 | $i\mathbb{H}_{\mathbb{B}}$ | The antiquaternion subspace, the anti-fixed space of complex conjugation: $i$ times the real-quaternion image, $\begin{pmatrix} iz & iw \\ -i\bar{w} & i\bar{z}\end{pmatrix}$, determinant **negative** definite. With $\mathbb{H}_{\mathbb{B}}$ it gives $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$, a split crossing the $\mathbb{M}_\pm$ split |
-| $\mathbb{M}_+$ | The informational subspace, the Hermitian one: $q_0e_0 + iq'_ke_k = (ct')\,e_0 + i\mathbf{x}'$, mapped to a Hermitian matrix, $\det = q_0^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2 = c^2(t')^2 - (\mathbf{x}')^2$; parameters $q_0, q'_1, q'_2, q'_3$, with $q_0 = ct'$ |
-| $\mathbb{M}_-$ | The material subspace, the anti-Hermitian one: $iq'_0e_0 + q_ke_k = ict\,e_0 + \mathbf{x}$, mapped to $i$ times a Hermitian matrix, $\det = -(q'_0)^2 + q_1^2 + q_2^2 + q_3^2 = -c^2t^2 + \mathbf{x}^2$; parameters $q'_0, q_1, q_2, q_3$, with $q'_0 = ct$ |
+| $\mathbb{M}_+$ | The informational subspace, the Hermitian one: $q_0e_0 + iq'_ke_k = (ct')\,e_0 + i\vec x'$, mapped to a Hermitian matrix, $\det = q_0^2 - (q'_1)^2 - (q'_2)^2 - (q'_3)^2 = c^2(t')^2 - (\vec x')^2$; parameters $q_0, q'_1, q'_2, q'_3$, with $q_0 = ct'$ |
+| $\mathbb{M}_-$ | The material subspace, the anti-Hermitian one: $iq'_0e_0 + q_ke_k = ict\,e_0 + \vec x$, mapped to $i$ times a Hermitian matrix, $\det = -(q'_0)^2 + q_1^2 + q_2^2 + q_3^2 = -c^2t^2 + \vec x^2$; parameters $q'_0, q_1, q_2, q_3$, with $q'_0 = ct$ |
 | $\mathbb{B} = \mathbb{C}_{\mathbb{B}} \oplus \mathrm{Vect}(\mathbb{B})$ | The trace decomposition $M_2(\mathbb{C}) = \mathbb{C}\mathsf{M}_2(e_0) \oplus \mathrm{SL}(2,\mathbb{C})$: scalar part against traceless part |
 | $\mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-$ | Every element is a Hermitian part plus an anti-Hermitian part; $\mathbb{M}_- = i\mathbb{M}_+$ |
-| $\tilde\Pi_{1,2} = \tfrac12(e_0 \pm ie_3) = \tilde\Pi_{1,2}(\hat{\mathbf{e}}_3)$ | Idempotents generating the two minimal left ideals; $\mathsf{M}_2(\tilde\Pi_{1,2}) = E_{11}, E_{22}$ |
-| $\tilde\Pi_{1,2}(\hat{\boldsymbol\mu}) = \tfrac12(e_0 \pm i\hat{\boldsymbol\mu})$ | The rank-one idempotents of $\mathbb{M}_+$, i.e. the pure-state projectors: the idempotents with $N(\tilde{P}) = 0$ |
-| $\mathbb{B}\tilde\Pi_1$, $\mathbb{B}\tilde\Pi_2$ | The two matrix **columns**, i.e. the two chiralities; $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$ |
-| $\tilde\Upsilon_1 = \tfrac12(ie_1 - e_2) \mapsto E_{12}$ | Right multiplication carries $\mathbb{B}\tilde\Pi_1$ onto $\mathbb{B}\tilde\Pi_2$; the chirality coupling. The corpus's truncated lowering operator; the spinor-module articles write it $\tilde\Upsilon_1$, its conjugate $\tilde\Upsilon_2$ |
+| $\tilde\Pi_\pm = \tfrac12(e_0 \pm ie_3) = \tilde\Pi_{1,2}(\hat e_3)$ | Idempotents generating the two minimal left ideals; $\mathsf{M}_2(\tilde\Pi_\pm) = E_{11}, E_{22}$ |
+| $\tilde\Pi_{1,2}(\hat n) = \tfrac12(e_0 \pm i\hat n)$ | The rank-one idempotents of $\mathbb{M}_+$, i.e. the pure-state projectors: the idempotents with $N(\tilde{P}) = 0$ |
+| $\mathbb{B}\tilde\Pi_+$, $\mathbb{B}\tilde\Pi_-$ | The two matrix **columns**, i.e. the two chiralities; $\mathbb{B} = \mathbb{B}\tilde\Pi_+ \oplus \mathbb{B}\tilde\Pi_-$ |
+| $\tilde\Upsilon_1 = \tfrac12(ie_1 - e_2) \mapsto E_{12}$ | Right multiplication carries $\mathbb{B}\tilde\Pi_+$ onto $\mathbb{B}\tilde\Pi_-$; the chirality coupling. The corpus's truncated lowering operator; the spinor-module articles write it $\tilde\Upsilon_1$, its conjugate $\tilde\Upsilon_2$ |
 | $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$ | Spin operators; the images $\tfrac{\hbar}{2}\mathsf{M}_2(ie_k)$ are Hermitian |
-| $\rho = \tfrac12\big(\mathsf{M}_2(e_0) + r_k\mathsf{M}_2(ie_k)\big)$ | Density matrix; Bloch vector $\mathbf{r}$, $r_k = \mathrm{Tr}\big(\rho\,\mathsf{M}_2(ie_k)\big)$ |
+| $\rho = \tfrac12\big(\mathsf{M}_2(e_0) + r_k\mathsf{M}_2(ie_k)\big)$ | Density matrix; Bloch vector $\vec r$, $r_k = \mathrm{Tr}\big(\rho\,\mathsf{M}_2(ie_k)\big)$ |
 | $\mathrm{SL}(2,\mathbb{C})$ | Image of the unit-norm biquaternions |
 | $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |

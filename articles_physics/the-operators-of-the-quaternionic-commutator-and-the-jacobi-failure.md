@@ -6,7 +6,7 @@ The antisymmetric quaternionic multiplication is
 
 $$
 \tilde P\diamond\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P\bigr)
-=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q ,
+=P_0\vec Q-Q_0\vec P-\vec P\times\vec Q ,
 $$
 
 the antisymmetric part of the quaternionic product for the exchange of its arguments. Its value is a
@@ -45,7 +45,7 @@ multiplication by the parameter followed by the projection onto the vector subsp
 $$
 (L_{\tilde A})^{N}=\tfrac12\,L^{\mathrm{plain}}_{\tilde A}\bigl(\mathrm{id}-\natural\bigr)
 =L^{\mathrm{plain}}_{\tilde A}\circ P ,\qquad
-(L_{\tilde A})^{N}\tilde Y=\tilde A\,\mathbf Y ,
+(L_{\tilde A})^{N}\tilde Y=\tilde A\,\vec Y ,
 $$
 
 which is **not a multiplication** of the block: the parameter passes through the plain product, the
@@ -65,8 +65,8 @@ displays were recomputed from the explicit product on eighty random triples befo
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis
 $e_0=1,e_1,e_2,e_3$, $e_k^{2}=-e_0$, $e_1e_2=e_3$, central scalar imaginary $i$ with $i^{2}=-1$, and a
-general element $\tilde Q=Q_0e_0+\mathbf Q$ of vector part $\mathbf Q=\sum_{k=1}^{3}Q_ke_k$; the complex
-bilinear dot and cross products are $(\mathbf P,\mathbf Q)$ and $\mathbf P\times\mathbf Q$ with
+general element $\tilde Q=Q_0e_0+\vec Q$ of vector part $\vec Q=\sum_{k=1}^{3}Q_ke_k$; the complex
+bilinear dot and cross products are $(\vec P,\vec Q)$ and $\vec P\times\vec Q$ with
 $e_j\times e_k=e_l$ cyclically. The natural conjugation is ${}^{\natural}$, the Hermitian star is
 ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, the sectors are $\mathbb{M}_{\pm}$, and the vector subspace is
 $\mathrm{Vect}(\mathbb{B})=\{\tilde Q:\mathrm{Sc}(\tilde Q)=0\}$. The **quaternionic product** is
@@ -86,7 +86,7 @@ $\mathbb{C}$-linear map
 
 $$
 L_{\tilde A}:\mathbb{B}\to\mathbb{B},\qquad
-L_{\tilde A}\tilde R=\tilde A\diamond\tilde R=A_0\mathbf R-R_0\mathbf A-\mathbf A\times\mathbf R ,
+L_{\tilde A}\tilde R=\tilde A\diamond\tilde R=A_0\vec R-R_0\vec A-\vec A\times\vec R ,
 $$
 
 and the **right multiplication operator** is $R_{\tilde A}\tilde R=\tilde R\diamond\tilde A$. The map
@@ -114,7 +114,7 @@ M_{\tilde A}=L_{\tilde A}=
 \operatorname{Tr}L_{\tilde A}=3A_0 ,
 $$
 
-the first row vanishes, the vector block is $A_0I_3$ plus the skew matrix of $\mathbf R\mapsto-\mathbf A\times\mathbf R$,
+the first row vanishes, the vector block is $A_0I_3$ plus the skew matrix of $\vec R\mapsto-\vec A\times\vec R$,
 and the characteristic polynomial is $\lambda(\lambda-A_0)(\lambda^{2}-2A_0\lambda+N(\tilde A))$. The
 rank is three exactly when $N(\tilde A)\neq0$, two on the isotropic cone away from the origin, and zero
 only at $\tilde A=0$; the kernel always contains the line $\mathbb{C}\tilde A$, and for a regular
@@ -138,7 +138,7 @@ adjoint map, and the halving is the normalisation of the antisymmetric bilinear 
 Operators of the Antisymmetric Quaternionic Algebra*).
 
 **Corollary (the candidate inner derivations are not derivations).** The block has **no nonzero inner
-derivation**: a derivation must annihilate $e_0$, while $L_{\tilde A}e_0=-\mathbf A$ and
+derivation**: a derivation must annihilate $e_0$, while $L_{\tilde A}e_0=-\vec A$ and
 $L_{\tilde A}e_1=A_0e_1$ force $\tilde A=0$. The derivation algebra is therefore the three-dimensional
 space of maps annihilating the scalar line and acting on the vector subspace by a skew matrix, and
 **every derivation is outer** (*The Adjoint Operators of the Antisymmetric Quaternionic Algebra*).
@@ -155,25 +155,25 @@ This is the first place the obstruction is visible.
 
 $$
 L_{\tilde A}L_{\tilde B}\tilde R
-= A_0B_0\mathbf R - A_0R_0\mathbf B - A_0\,\mathbf B\times\mathbf R - B_0\,\mathbf A\times\mathbf R
-+ R_0\,\mathbf A\times\mathbf B + (\mathbf A,\mathbf R)\mathbf B - (\mathbf A,\mathbf B)\mathbf R ,
+= A_0B_0\vec R - A_0R_0\vec B - A_0\,\vec B\times\vec R - B_0\,\vec A\times\vec R
++ R_0\,\vec A\times\vec B + (\vec A,\vec R)\vec B - (\vec A,\vec B)\vec R ,
 $$
 
 which is *The Adjoint Operators of the Antisymmetric Quaternionic Algebra*. The composite is not a
-multiplication in general: its value carries a scalar term $-(\mathbf A,\mathbf B)\mathbf R$ and a cross
-term $-A_0\mathbf B\times\mathbf R$ that one multiplication cannot carry.
+multiplication in general: its value carries a scalar term $-(\vec A,\vec B)\vec R$ and a cross
+term $-A_0\vec B\times\vec R$ that one multiplication cannot carry.
 
 **Theorem (the composition law and the deviation).** For all $\tilde A,\tilde B$,
 
 $$
 [L_{\tilde A},L_{\tilde B}]=L_{\tilde A\diamond\tilde B}+D(\tilde A,\tilde B),\qquad
-D(\tilde A,\tilde B)\tilde R=A_0\,(\mathbf B\times\mathbf R)-B_0\,(\mathbf A\times\mathbf R)+R_0\,(\mathbf A\times\mathbf B) ,
+D(\tilde A,\tilde B)\tilde R=A_0\,(\vec B\times\vec R)-B_0\,(\vec A\times\vec R)+R_0\,(\vec A\times\vec B) ,
 $$
 
 and the deviation is the negative of the cyclic sum, $D(\tilde A,\tilde B)\tilde R=-J(\tilde A,\tilde B,\tilde R)$;
 the cyclic sum vanishes for all triples exactly when the block satisfies the Jacobi identity. The
-deviation has trace zero and is not a multiplication: $D(\tilde A,\tilde B)e_0=\mathbf A\times\mathbf B$,
-and at $(e_0,e_1)$ it is the cross-product operator $D(e_0,e_1)\tilde R=e_1\times\mathbf R$, nonzero at
+deviation has trace zero and is not a multiplication: $D(\tilde A,\tilde B)e_0=\vec A\times\vec B$,
+and at $(e_0,e_1)$ it is the cross-product operator $D(e_0,e_1)\tilde R=e_1\times\vec R$, nonzero at
 the triple $(e_0,e_1,e_2)$, where $D(e_0,e_1)e_2=+e_3$. The law is *The Adjoint Operators of the
 Antisymmetric Quaternionic Algebra* and the cyclic sum is *The Jacobi Failure and the Associator Defect
 of the Antisymmetric Quaternionic Algebra*.
@@ -232,10 +232,10 @@ symmetric of Gram matrix $\operatorname{diag}(1,0,0,0)$ of rank one and radical 
 subspace; there is no nonzero alternating invariant form, and so **no non-degenerate invariant form**.
 With $\varphi$ the adjoint is undetermined, the form being blind on the vector slot, and the block
 supplies no adjoint of its own. Two substitutes are used: the **operator trace form**
-$K(\tilde A,\tilde B)=\operatorname{Tr}(L_{\tilde A}L_{\tilde B})=3A_0B_0-2(\mathbf A,\mathbf B)$, of
+$K(\tilde A,\tilde B)=\operatorname{Tr}(L_{\tilde A}L_{\tilde B})=3A_0B_0-2(\vec A,\vec B)$, of
 Gram matrix $\operatorname{diag}(3,-2,-2,-2)$, non-degenerate but **not** invariant, its failure being
 the Jacobi failure; and the **quaternionic form** of the parent,
-$N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$, of Gram
+$N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\vec P,\vec Q)$, of Gram
 matrix the identity, non-degenerate and the form the other quaternionic rows use (*The 4 Forms over the Biquaternion $\mathbb{C}$ Space*). Since the block has no non-degenerate invariant form, the form this article
 adjoints for is the imported $N$; the degeneracy of $\varphi$ and the non-invariance of $K$ are read in
 *Boosts, Mixed Terms and the Missing Lie Structure* and not re-read here.
@@ -247,10 +247,10 @@ adjoints for is the imported $N$; the degeneracy of $\varphi$ and the non-invari
 $$
 (L_{\tilde A})^{N}=\tfrac12\,L^{\mathrm{plain}}_{\tilde A}\bigl(\mathrm{id}-\natural\bigr)
 =L^{\mathrm{plain}}_{\tilde A}\circ P ,\qquad
-(L_{\tilde A})^{N}\tilde Y=\tilde A\,\mathbf Y ,
+(L_{\tilde A})^{N}\tilde Y=\tilde A\,\vec Y ,
 $$
 
-where $P$ is the projection onto the vector subspace, $P\tilde Y=\tfrac12(\tilde Y-\tilde Y^{\natural})=\mathbf Y$,
+where $P$ is the projection onto the vector subspace, $P\tilde Y=\tfrac12(\tilde Y-\tilde Y^{\natural})=\vec Y$,
 and $L^{\mathrm{plain}}_{\tilde A}$ is the plain left multiplication; the right adjoint is
 $(R_{\tilde A})^{N}=-(L_{\tilde A})^{N}$, since $R_{\tilde A}=-L_{\tilde A}$.
 
@@ -259,7 +259,7 @@ $N([\tilde A,\tilde X]_{\natural},\tilde Y)=-N(\tilde X,[\tilde A,\tilde Y]_{\na
 first slot of $N$ reads the natural conjugation and the bracket is the difference of the two conjugated
 products; halving gives the display. Equivalently, the adjoint of a plain left multiplication is
 $(L^{\mathrm{plain}}_{\tilde C})^{N}=L^{\mathrm{plain}}_{\tilde C^{\natural}}$ and $\natural^{N}=\natural$
-(*The 4 Forms over the Biquaternion $\mathbb{C}$ Space*), which gives the display and the value $\tilde A\,\mathbf Y$.
+(*The 4 Forms over the Biquaternion $\mathbb{C}$ Space*), which gives the display and the value $\tilde A\,\vec Y$.
 
 *Read as a physical statement.* The adjoint does **not** stay in the family; it is a **plain** left
 multiplication by the parameter followed by the projection onto the vector subspace. The parameter is
@@ -294,9 +294,9 @@ and no nonzero one-sided operator is skew-adjoint. The self-adjoint family is $\
 the multiples of the projection onto the vector subspace, and the skew family is trivial.
 
 *Proof.* Read the criteria on the matrix. For $N$ the adjoint is the transpose of $M_{\tilde A}$, whose
-first column is zero and whose first row carries $-\mathbf A$; equality with $M_{\tilde A}$ forces
-$\mathbf A=0$, and then $M_{\tilde A}=A_0P$ is symmetric; equality with $-M_{\tilde A}$ forces
-$\mathbf A=0$ and then $M_{\tilde A}=0$. For $B$ and $K$ the adjoints differ from the transpose by the
+first column is zero and whose first row carries $-\vec A$; equality with $M_{\tilde A}$ forces
+$\vec A=0$, and then $M_{\tilde A}=A_0P$ is symmetric; equality with $-M_{\tilde A}$ forces
+$\vec A=0$ and then $M_{\tilde A}=0$. For $B$ and $K$ the adjoints differ from the transpose by the
 algebraic norm rescaling of the Gram matrix, which preserves both equalities.
 
 *Read as a physical statement.* The block has **no generators**: unlike the plain antisymmetric row,
@@ -321,10 +321,10 @@ the parameter.
 *Proof.* Since $R_{\tilde A}=-L_{\tilde A}$ and $(L_{\tilde A})^{N}=L^{\mathrm{plain}}_{\tilde A}P$, the
 adjoint of the sandwich is $-L^{\mathrm{plain}}_{\tilde A}PL^{\mathrm{plain}}_{\tilde A}P$, while the
 sandwich itself is $-L_{\tilde A}^{2}$. For a pure parameter $L_{\tilde A}^{2}$ acts as
-$\mathbf A\mathbf A^{T}-N(\mathbf A)I_3$ on the vector subspace and kills the scalar line, a symmetric
+$\vec A\vec A^{T}-N(\vec A)I_3$ on the vector subspace and kills the scalar line, a symmetric
 matrix; for a parameter with a nonzero scalar part the square contains the antisymmetric term
-$2A_0[\mathbf A]_{\times}$ and is not symmetric. The projection statement is that computation at
-$N(\mathbf A)=1$, $\mathbf A=e_1$.
+$2A_0[\vec A]_{\times}$ and is not symmetric. The projection statement is that computation at
+$N(\vec A)=1$, $\vec A=e_1$.
 
 *Read as a physical statement.* The **compact** parameters are exactly the self-adjoint sandwiches: the
 pure, rotation-like parameters make the sandwich symmetric for $N$, and the parameters with a scalar
@@ -372,9 +372,9 @@ obstruction.
 
 ## The Operators Acting on the State Space
 
-The state space is $S=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,\tilde\Upsilon_2\}$, the minimal
+The state space is $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\tilde\Upsilon_2\}$, the minimal
 left ideal of *The Spinor Space as a Module and as a Hilbert Space*, with the complementary ideal
-$\mathbb{B}\tilde\Pi_2$ of *The Complementary Space of the Spinor Space and Its Physical Meaning*.
+$\mathbb{B}\tilde\Pi_-$ of *The Complementary Space of the Spinor Space and Its Physical Meaning*.
 
 **Theorem (the action through the matrix model).** In the matrix model $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$
 with $\mathsf{M}_2(e_k)=-i\sigma_k$,
@@ -461,7 +461,7 @@ $$
 $$
 
 and indeed $L_{\tilde A}L_{\tilde B}e_3=L_{\tilde B}L_{\tilde A}e_3=-e_1$, so the commutator vanishes
-there. It does not vanish as an operator: $D(\tilde A,\tilde B)e_0=\mathbf A\times\mathbf B=e_1\times e_2=e_3$,
+there. It does not vanish as an operator: $D(\tilde A,\tilde B)e_0=\vec A\times\vec B=e_1\times e_2=e_3$,
 which no multiplication of the block produces, since every multiplication annihilates the scalar line.
 
 The operator invariants are read on the same element. The parameter lies off the isotropic cone, so the
@@ -489,7 +489,7 @@ random triples** with no residual; the law of the adjoint maps
 $[\operatorname{ad}_{\tilde A},\operatorname{ad}_{\tilde B}]=\operatorname{ad}_{[\tilde A,\tilde B]_{\natural}}+4D$
 was checked on thirty triples; the deviation was confirmed to lie outside the span of the four operators
 on every sampled pair; and the operator span was confirmed twelve-dimensional, thirteen with the
-identity. The adjoint identity $(L_{\tilde A})^{N}\tilde Y=\tilde A\,\mathbf Y=\tfrac12L^{\mathrm{plain}}_{\tilde A}(\mathrm{id}-\natural)\tilde Y$
+identity. The adjoint identity $(L_{\tilde A})^{N}\tilde Y=\tilde A\,\vec Y=\tfrac12L^{\mathrm{plain}}_{\tilde A}(\mathrm{id}-\natural)\tilde Y$
 was checked on random parameters; the type criteria were scanned on central, pure, null and mixed
 parameters; the sandwich criterion (self-adjoint at the pure parameters, never skew for a nonzero one)
 was scanned on four thousand random elements; and the matrix-model identity was checked on random pairs.
@@ -535,7 +535,7 @@ four-dimensional operator family; the matrix $M_{\tilde A}$, its trace $3A_0$, i
 polynomial and its rank, three off the isotropic cone and two on it, with the kernel always containing
 the line of the parameter; the halved adjoint relation $L_{\tilde A}=\tfrac12\operatorname{ad}_{\tilde A}$;
 the composition law $[L_{\tilde A},L_{\tilde B}]=L_{\tilde A\diamond\tilde B}+D(\tilde A,\tilde B)$ and
-the deviation $D(\tilde A,\tilde B)\tilde R=A_0(\mathbf B\times\mathbf R)-B_0(\mathbf A\times\mathbf R)+R_0(\mathbf A\times\mathbf B)$,
+the deviation $D(\tilde A,\tilde B)\tilde R=A_0(\vec B\times\vec R)-B_0(\vec A\times\vec R)+R_0(\vec A\times\vec B)$,
 its trace zero and its identity with the negative of the cyclic sum; the law of the adjoint maps
 $[\operatorname{ad}_{\tilde A},\operatorname{ad}_{\tilde B}]=\operatorname{ad}_{[\tilde A,\tilde B]_{\natural}}+4D$;
 the failure of closure, the deviation lying outside the span of the operators; the operator algebra of
@@ -582,7 +582,7 @@ of the siblings stands: an obstruction constrains an interpretation without supp
 ## Summary
 
 The block is the antisymmetric quaternionic multiplication
-$\tilde P\diamond\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$,
+$\tilde P\diamond\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)=P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$,
 with operators the left multiplications $L_{\tilde A}\tilde R=\tilde A\diamond\tilde R$, the right family
 being the negated left family, $R_{\tilde A}=-L_{\tilde A}$. The left multiplication is the **halved
 adjoint map**, $L_{\tilde A}=\tfrac12\operatorname{ad}_{\tilde A}$, so the operators are the inner
@@ -614,9 +614,9 @@ the operator form of the Jacobi identity.
 | $\operatorname{ad}_{\tilde A}=[\tilde A,\cdot]_{\natural}$ | the adjoint map; $L_{\tilde A}=\tfrac12\operatorname{ad}_{\tilde A}$ |
 | $\operatorname{Tr}L_{\tilde A}=3A_0$ | the trace; rank three off the isotropic cone, two on it |
 | $D(\tilde A,\tilde B)=[L_{\tilde A},L_{\tilde B}]-L_{\tilde A\diamond\tilde B}$ | the deviation, the operator form of the Jacobi failure |
-| $D(\tilde A,\tilde B)\tilde R=A_0(\mathbf B\times\mathbf R)-B_0(\mathbf A\times\mathbf R)+R_0(\mathbf A\times\mathbf B)$ | the deviation, explicitly; $-D=J$ |
+| $D(\tilde A,\tilde B)\tilde R=A_0(\vec B\times\vec R)-B_0(\vec A\times\vec R)+R_0(\vec A\times\vec B)$ | the deviation, explicitly; $-D=J$ |
 | $\varphi(\tilde P,\tilde Q)=P_0Q_0$ | the only invariant bilinear form; rank one, the degeneracy of the row |
-| $K(\tilde A,\tilde B)=\operatorname{Tr}(L_{\tilde A}L_{\tilde B})=3A_0B_0-2(\mathbf A,\mathbf B)$ | the operator trace form; non-degenerate, not invariant |
+| $K(\tilde A,\tilde B)=\operatorname{Tr}(L_{\tilde A}L_{\tilde B})=3A_0B_0-2(\vec A,\vec B)$ | the operator trace form; non-degenerate, not invariant |
 | $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ | the quaternionic form, Gram $I_4$; the form for the adjoint |
 | $(L_{\tilde A})^{N}=\tfrac12L^{\mathrm{plain}}_{\tilde A}(\mathrm{id}-\natural)=L^{\mathrm{plain}}_{\tilde A}\circ P$ | the adjoint; the plain multiplication by the parameter and the projection |
 | $P=\operatorname{diag}(0,1,1,1)=L_{e_0}$ | the projection onto the vector subspace; the only self-adjoint multiplication |

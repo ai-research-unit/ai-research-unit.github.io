@@ -137,7 +137,7 @@ This is the algebraic content of the phrase "the far side is reached by an antip
 
 ### The current lives in the material sector
 
-The conserved current of the framework is the material-sector object $\tilde J = ic\,j^0e_0 + \mathbf{j} \in \mathbb{M}_-$, as in the parent and the scattering articles. The matching problem solved here is the statement of the continuity of that current across the step. In the Klein region the sign of the transmitted current is not the sign of the incident charge current; the biquaternion current is conserved, and it is the identification of that current with the transport of one electron that fails. The algebra records the conservation faithfully and leaves the particle interpretation to the field theory.
+The conserved current of the framework is the material-sector object $\tilde J = ic\,j^0e_0 + \vec j \in \mathbb{M}_-$, as in the parent and the scattering articles. The matching problem solved here is the statement of the continuity of that current across the step. In the Klein region the sign of the transmitted current is not the sign of the incident charge current; the biquaternion current is conserved, and it is the identification of that current with the transport of one electron that fails. The algebra records the conservation faithfully and leaves the particle interpretation to the field theory.
 
 ### What the biquaternion form does not supply
 

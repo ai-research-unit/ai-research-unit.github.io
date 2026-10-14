@@ -13,7 +13,7 @@ $$
 where ${}^{\natural}$ is the natural conjugation of the algebra, and the article is about that operation. Its single decisive property is that **every value is central**: the half-sum of an element and its natural conjugate has no vector part, so the product collapses to
 
 $$
-\tilde P \star \tilde Q = \mathrm{Sc}\bigl(\tilde P\tilde Q^{*}\bigr)\, e_0 = H(\tilde P,\tilde Q)\, e_0 , \qquad H(\tilde P,\tilde Q) = P_0\overline{Q_0} + (\mathbf P, \overline{\mathbf Q}) ,
+\tilde P \star \tilde Q = \mathrm{Sc}\bigl(\tilde P\tilde Q^{*}\bigr)\, e_0 = H(\tilde P,\tilde Q)\, e_0 , \qquad H(\tilde P,\tilde Q) = P_0\overline{Q_0} + (\vec P, \overline{\vec Q}) ,
 $$
 
 which is the **Hermitian form of the corpus read as a multiplication**. The block is therefore not a new bilinear form to be found but a known one put to a new use: the form $H$ that carries the positivity of the Hermitian cone (*The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*) is here a product on the same space.
@@ -22,7 +22,7 @@ Three consequences organise the block, and they are the exact opposites of the q
 
 **Boundaries.** The product that is split is *Introduction to the General Plain Sesqualgebra of Biquaternions*; the split itself and the general construction of the two parts are *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*, and this article quotes both and restates neither. The form $H$, its positivity, its cone and its norm are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint* and *The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra*; the form is not developed here. The other half of the product is the block *Biquaternions as an Antisymmetric Plain Sesqualgebra (APS) over $\mathbb{C}$*, and the twelve operations as a family are *The 12 Products of the Biquaternion Complex Space*. The sibling symmetric rows are the blocks of *Introduction to the Symmetric Plain Algebra of Biquaternions* and *Introduction to the Symmetric Quaternionic Algebra of Biquaternions*, which this article compares with on the law alone. Nothing topological and nothing metric appears.
 
-**Conventions.** $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, with basis $e_0, e_1, e_2, e_3$, $e_0$ the identity, $e_k^2 = -e_0$ and $e_j e_k = e_l$ for $(j,k,l)$ a cyclic permutation of $(1,2,3)$; a general element is $\tilde Q = \sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$, and $\tilde Q = Q_0 e_0 + \mathbf Q$ with $\mathbf Q = \sum_{k=1}^{3} Q_k e_k$. The scalar part is $\mathrm{Sc}$. The **natural conjugation** ${}^{\natural}$ negates $e_1, e_2, e_3$ and fixes $e_0$, and is $\mathbb{C}$-linear; the **coefficientwise conjugation** $\overline{\cdot}$ conjugates the four coordinates; the **Hermitian conjugation** is ${}^{*} = \overline{\cdot} \circ {}^{\natural}$, so that $Q^{*}_\nu = \varepsilon_\nu \overline{Q_\nu}$ with $\varepsilon = (1,-1,-1,-1)$. The dot and cross products of vector parts, and the four general products of the space, are those of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*; the product split here is the general plain sesquilinear one.
+**Conventions.** $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$, with basis $e_0, e_1, e_2, e_3$, $e_0$ the identity, $e_k^2 = -e_0$ and $e_j e_k = e_l$ for $(j,k,l)$ a cyclic permutation of $(1,2,3)$; a general element is $\tilde Q = \sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu \in \mathbb{C}$, and $\tilde Q = Q_0 e_0 + \vec Q$ with $\vec Q = \sum_{k=1}^{3} Q_k e_k$. The scalar part is $\mathrm{Sc}$. The **natural conjugation** ${}^{\natural}$ negates $e_1, e_2, e_3$ and fixes $e_0$, and is $\mathbb{C}$-linear; the **coefficientwise conjugation** $\overline{\cdot}$ conjugates the four coordinates; the **Hermitian conjugation** is ${}^{*} = \overline{\cdot} \circ {}^{\natural}$, so that $Q^{*}_\nu = \varepsilon_\nu \overline{Q_\nu}$ with $\varepsilon = (1,-1,-1,-1)$. The dot and cross products of vector parts, and the four general products of the space, are those of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*; the product split here is the general plain sesquilinear one.
 
 ## The Product Read as a Multiplication
 
@@ -37,7 +37,7 @@ It is the symmetric part of the general plain sesquilinear product $\tilde P\til
 **Proposition (the value is central).** For all $\tilde P, \tilde Q$,
 
 $$
-\tilde P \star \tilde Q = \mathrm{Sc}\bigl(\tilde P\tilde Q^{*}\bigr)\, e_0 = H(\tilde P,\tilde Q)\, e_0 , \qquad H(\tilde P,\tilde Q) = \sum_{\mu=0}^{3} P_\mu \overline{Q_\mu} = P_0 \overline{Q_0} + (\mathbf P, \overline{\mathbf Q}) ,
+\tilde P \star \tilde Q = \mathrm{Sc}\bigl(\tilde P\tilde Q^{*}\bigr)\, e_0 = H(\tilde P,\tilde Q)\, e_0 , \qquad H(\tilde P,\tilde Q) = \sum_{\mu=0}^{3} P_\mu \overline{Q_\mu} = P_0 \overline{Q_0} + (\vec P, \overline{\vec Q}) ,
 $$
 
 so the image of the multiplication is the centre $\mathbb{C}_{\mathbb{B}} = \{\lambda e_0\}$. Equivalently, in the two other forms of the same identity,
@@ -46,7 +46,7 @@ $$
 \tilde P \star \tilde Q = \tfrac12\bigl(\tilde P\tilde Q^{*} + \overline{\tilde Q}\,\tilde P^{\natural}\bigr) = \tfrac12\bigl(\tilde P\tilde Q^{*} + \overline{\tilde Q\tilde P^{*}}\bigr) .
 $$
 
-*Proof.* Write the value in scalar–vector form, $\tilde P\tilde Q^{*} = \bigl(P_0\overline{Q_0} + (\mathbf P,\overline{\mathbf Q})\bigr) - P_0\overline{\mathbf Q} + \overline{Q_0}\mathbf P - \mathbf P\times\overline{\mathbf Q}$ (*Introduction to the General Plain Sesqualgebra of Biquaternions*). The natural conjugation negates the vector part and fixes the scalar part, so the half-sum of the value and its natural conjugate keeps the scalar part and cancels the vector part, giving the first display. Next, $(PQ^{*})^{\natural} = (Q^{*})^{\natural} P^{\natural} = \overline{Q}\, P^{\natural}$ because ${}^{\natural}$ is an antiautomorphism and $(Q^{*})^{\natural} = \overline{Q}$; and $\overline{Q}\,P^{\natural} = \overline{QP^{*}}$ because $\overline{\cdot}$ is an automorphism and $\overline{P^{*}} = P^{\natural}$. This gives the two forms of the second display.
+*Proof.* Write the value in scalar–vector form, $\tilde P\tilde Q^{*} = \bigl(P_0\overline{Q_0} + (\vec P,\overline{\vec Q})\bigr) - P_0\overline{\vec Q} + \overline{Q_0}\vec P - \vec P\times\overline{\vec Q}$ (*Introduction to the General Plain Sesqualgebra of Biquaternions*). The natural conjugation negates the vector part and fixes the scalar part, so the half-sum of the value and its natural conjugate keeps the scalar part and cancels the vector part, giving the first display. Next, $(PQ^{*})^{\natural} = (Q^{*})^{\natural} P^{\natural} = \overline{Q}\, P^{\natural}$ because ${}^{\natural}$ is an antiautomorphism and $(Q^{*})^{\natural} = \overline{Q}$; and $\overline{Q}\,P^{\natural} = \overline{QP^{*}}$ because $\overline{\cdot}$ is an automorphism and $\overline{P^{*}} = P^{\natural}$. This gives the two forms of the second display.
 
 **Remark (the three readings of the same half-sum).** The three expressions record three faces of one operation: $(\tilde P\tilde Q^{*} + (\tilde P\tilde Q^{*})^{\natural})/2$ is the half-sum with the natural conjugate, $\mathrm{Sc}(\tilde P\tilde Q^{*})e_0$ is the scalar part, and $H(\tilde P,\tilde Q)e_0$ is the Hermitian form. The article uses all three, and they are the same element; in particular the **form $H$ and the product $\star$ carry the same information**, which is the reason the block is central-valued and not a genuine new multiplication on the space.
 
@@ -137,7 +137,7 @@ $$
 \tilde Q \star e_0 = Q_0\, e_0 , \qquad e_0 \star \tilde Q = \overline{Q_0}\, e_0 .
 $$
 
-Hence $e_0$ is **neither a right unit nor a left unit** of the block: the equation $\tilde Q \star e_0 = \tilde Q$ forces $\mathbf Q = 0$ and $Q_0$ arbitrary, and the equation $e_0 \star \tilde Q = \tilde Q$ forces $\mathbf Q = 0$ and $Q_0$ real. No other element is a unit either, on either side: a right unit $\tilde E$ would have $e_1 \star \tilde E = e_1$, a left unit $\tilde E$ would have $\tilde E \star e_1 = e_1$, and every value of the product is central while $e_1$ is not.
+Hence $e_0$ is **neither a right unit nor a left unit** of the block: the equation $\tilde Q \star e_0 = \tilde Q$ forces $\vec Q = 0$ and $Q_0$ arbitrary, and the equation $e_0 \star \tilde Q = \tilde Q$ forces $\vec Q = 0$ and $Q_0$ real. No other element is a unit either, on either side: a right unit $\tilde E$ would have $e_1 \star \tilde E = e_1$, a left unit $\tilde E$ would have $\tilde E \star e_1 = e_1$, and every value of the product is central while $e_1$ is not.
 
 *Proof.* $H(\tilde Q,e_0) = Q_0\overline{1} = Q_0$ and $H(e_0,\tilde Q) = \overline{Q_0}$; multiply by $e_0$. For the general statement, $e_1 \star \tilde E = H(e_1,\tilde E)e_0$ and $\tilde E \star e_1 = H(\tilde E,e_1)e_0$ are central, while $e_1\notin\mathbb{C}e_0$, so neither can equal $e_1$. The two scalar rules are the failure, since the central image can carry only the scalar part of the element and not its vector part.
 
@@ -211,7 +211,7 @@ The symmetric plain sesqualgebra is the operation $\tilde P\star\tilde Q = \tfra
 | $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | the biquaternion algebra; basis $e_0,e_1,e_2,e_3$, $e_0 = 1$, $e_k^{2} = -1$ |
 | ${}^{\natural}$, $\overline{\cdot}$, ${}^{*} = \overline{\cdot}\circ{}^{\natural}$ | natural conjugation, coefficientwise conjugation, Hermitian conjugation |
 | $\tilde P \star \tilde Q = \tfrac12\bigl(\tilde P\tilde Q^{*} + (\tilde P\tilde Q^{*})^{\natural}\bigr)$ | the multiplication of the block; the symmetric part of the plain sesquilinear product |
-| $H(\tilde P,\tilde Q) = \sum_\mu P_\mu\overline{Q_\mu} = P_0\overline{Q_0} + (\mathbf P,\overline{\mathbf Q})$ | the Hermitian form, read as the coefficient of $e_0$ |
+| $H(\tilde P,\tilde Q) = \sum_\mu P_\mu\overline{Q_\mu} = P_0\overline{Q_0} + (\vec P,\overline{\vec Q})$ | the Hermitian form, read as the coefficient of $e_0$ |
 | $\tilde P\star\tilde Q = H(\tilde P,\tilde Q)e_0$ | the value is central; image $\mathbb{C}_{\mathbb{B}}$ |
 | $e_\mu\star e_\nu = \delta_{\mu\nu}e_0$ | the sixteen products of the basis |
 | $\tilde Q\star\tilde Q = \bigl(\sum_\mu\lvert Q_\mu\rvert^{2}\bigr)e_0$ | the square; real and positive off the origin |

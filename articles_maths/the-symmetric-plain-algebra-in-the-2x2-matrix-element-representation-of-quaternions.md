@@ -6,7 +6,7 @@ The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde p
 
 **This is not the algebra $\mathbb{H}$.** The two algebras share the space, the addition, the real scalars and the unit, but $\bullet$ is a different multiplication and the projection onto the scalar line is not multiplicative. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives nothing new.
 
-**Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1^2=e_2^2=e_3^2=-e_0$. An element is $\tilde q=q_0e_0+\mathbf q$ with $\mathbf q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; the norm is $N(\tilde q)=q_0^2+|\mathbf q|^2$, and the trace form is $\tau(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\bullet\tilde q)$. The embedding $\mathsf{M}_2$, its multiplicativity and its invariants are *The General Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*, whose conventions are held here.
+**Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1^2=e_2^2=e_3^2=-e_0$. An element is $\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; the norm is $N(\tilde q)=q_0^2+|\vec q|^2$, and the trace form is $\tau(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\bullet\tilde q)$. The embedding $\mathsf{M}_2$, its multiplicativity and its invariants are *The General Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*, whose conventions are held here.
 
 ## The Representation
 
@@ -31,7 +31,7 @@ $$
 
 $$
 \operatorname{tr}\mathsf{M}_2(\tilde q)=2q_0=T(\tilde q),\qquad
-\det\mathsf{M}_2(\tilde q)=N(\tilde q)=q_0^2+|\mathbf q|^2 .
+\det\mathsf{M}_2(\tilde q)=N(\tilde q)=q_0^2+|\vec q|^2 .
 $$
 
 *Proof.* The trace is $2q_0$ on the embedding; the determinant is the multiplicativity of the norm, $\det\mathsf{M}_2(\tilde q)=\mathsf{M}_2(\tilde q)\mathsf{M}_2(\tilde q^{\natural})$ read as $N(\tilde q)$, by *The General Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*.
@@ -43,7 +43,7 @@ $$
 **Theorem.** On the model the trace form is the **half of the matrix trace pairing**:
 
 $$
-\operatorname{tr}\bigl(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)\bigr)=2\,\tau(\tilde p,\tilde q)=2\bigl(p_0q_0-\mathbf p\cdot\mathbf q\bigr).
+\operatorname{tr}\bigl(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)\bigr)=2\,\tau(\tilde p,\tilde q)=2\bigl(p_0q_0-\vec p\cdot\vec q\bigr).
 $$
 
 *Proof.* $\operatorname{tr}\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)=\operatorname{tr}\mathsf{M}_2(\tilde p\tilde q)=2\,\mathrm{Sc}(\tilde p\tilde q)=2\,\tau(\tilde p,\tilde q)$, using the multiplicativity of the embedding, the trace of the representative, and $\tau(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\tilde q)$ of *The Trace Form and the Invariance of the Symmetric Plain Algebra*.
@@ -66,7 +66,7 @@ $$
 
 ## Summary
 
-The $2\times2$ matrix element representation $\mathsf{M}_2:\mathbb{H}\hookrightarrow M_2(\mathbb{C})$ is real-linear and multiplicative for the plain product, and it carries the Jordan product to the half-sum of the two orders of the matrices: $\mathsf{M}_2(\tilde p\bullet\tilde q)=\tfrac12(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)+\mathsf{M}_2(\tilde q)\mathsf{M}_2(\tilde p))$, so the block is the image of the symmetrised matrix algebra. The trace is $2q_0$ and the determinant is $N(\tilde q)=q_0^2+|\mathbf q|^2$, so the Jordan inverse is the normalised conjugate and the invertible elements are the nonzero ones. The trace form is the half of the plain matrix trace pairing, $\operatorname{tr}(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q))=2\tau(\tilde p,\tilde q)$, of Gram matrix $\operatorname{diag}(1,-1,-1,-1)$ and signature $(1,3)$; it is the indefinite trace pairing, against the positive definite determinant. The trace, the determinant, the trace form and the inverse formula are shared with the plain algebra on the same model; the half-sum changes only the product.
+The $2\times2$ matrix element representation $\mathsf{M}_2:\mathbb{H}\hookrightarrow M_2(\mathbb{C})$ is real-linear and multiplicative for the plain product, and it carries the Jordan product to the half-sum of the two orders of the matrices: $\mathsf{M}_2(\tilde p\bullet\tilde q)=\tfrac12(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)+\mathsf{M}_2(\tilde q)\mathsf{M}_2(\tilde p))$, so the block is the image of the symmetrised matrix algebra. The trace is $2q_0$ and the determinant is $N(\tilde q)=q_0^2+|\vec q|^2$, so the Jordan inverse is the normalised conjugate and the invertible elements are the nonzero ones. The trace form is the half of the plain matrix trace pairing, $\operatorname{tr}(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q))=2\tau(\tilde p,\tilde q)$, of Gram matrix $\operatorname{diag}(1,-1,-1,-1)$ and signature $(1,3)$; it is the indefinite trace pairing, against the positive definite determinant. The trace, the determinant, the trace form and the inverse formula are shared with the plain algebra on the same model; the half-sum changes only the product.
 
 ## Summary of Notation
 

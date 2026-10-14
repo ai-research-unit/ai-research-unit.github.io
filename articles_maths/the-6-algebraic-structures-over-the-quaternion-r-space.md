@@ -8,11 +8,11 @@ $$
 \mathrm{GPA} , \quad \mathrm{SPA} , \quad \mathrm{APA} , \quad \mathrm{GQA} , \quad \mathrm{SQA} , \quad \mathrm{AQA} .
 $$
 
-The **general plain algebra** $\mathrm{GPA}$ is the space with the general plain bilinear product $\tilde p\tilde q$; the **symmetric plain algebra** $\mathrm{SPA}$ with the Jordan product $\tilde p\bullet\tilde q$; the **antisymmetric plain algebra** $\mathrm{APA}$ with the cross product $\tilde p\wedge\tilde q=\mathbf p\times\mathbf q$; the **general quaternionic algebra** $\mathrm{GQA}$ with the general quaternionic product $\tilde p^{\natural}\tilde q$; the **symmetric quaternionic algebra** $\mathrm{SQA}$ with the product $N(\tilde p,\tilde q)e_0$; and the **antisymmetric quaternionic algebra** $\mathrm{AQA}$ with the quaternionic cross product $\tilde p\wedge^{\natural}\tilde q$. The same space carries the six, and the six are told apart by the laws their products satisfy; this article gives the names, the structure of each, the law table and the two laws that single out two of the six.
+The **general plain algebra** $\mathrm{GPA}$ is the space with the general plain bilinear product $\tilde p\tilde q$; the **symmetric plain algebra** $\mathrm{SPA}$ with the Jordan product $\tilde p\bullet\tilde q$; the **antisymmetric plain algebra** $\mathrm{APA}$ with the cross product $\tilde p\wedge\tilde q=\vec p\times\vec q$; the **general quaternionic algebra** $\mathrm{GQA}$ with the general quaternionic product $\tilde p^{\natural}\tilde q$; the **symmetric quaternionic algebra** $\mathrm{SQA}$ with the product $N(\tilde p,\tilde q)e_0$; and the **antisymmetric quaternionic algebra** $\mathrm{AQA}$ with the quaternionic cross product $\tilde p\wedge^{\natural}\tilde q$. The same space carries the six, and the six are told apart by the laws their products satisfy; this article gives the names, the structure of each, the law table and the two laws that single out two of the six.
 
 The article assumes the six products and their coordinate rules from *The 6 Products of the Quaternion Real Space*, the article preceding this one, and the definitions of the vocabulary it uses from *Definitions for the Study of the 6 Algebraic Structures*, below this article in this category.
 
-**Conventions.** Throughout, $\mathbb{H}$ is the real quaternion algebra with units $e_0,e_1,e_2,e_3$, $\tilde p=p_0e_0+\mathbf p$ and $\tilde q=q_0e_0+\mathbf q$ name elements, and the six products are written $\tilde p\tilde q$, $\tilde p\bullet\tilde q$, $\tilde p\wedge\tilde q=\mathbf p\times\mathbf q$, $\tilde p^{\natural}\tilde q$, $N(\tilde p,\tilde q)e_0$ and $\tilde p\wedge^{\natural}\tilde q$. The **support** of a structure is the underlying real vector space, which is $\mathbb{H}$ for all six.
+**Conventions.** Throughout, $\mathbb{H}$ is the real quaternion algebra with units $e_0,e_1,e_2,e_3$, $\tilde p=p_0e_0+\vec p$ and $\tilde q=q_0e_0+\vec q$ name elements, and the six products are written $\tilde p\tilde q$, $\tilde p\bullet\tilde q$, $\tilde p\wedge\tilde q=\vec p\times\vec q$, $\tilde p^{\natural}\tilde q$, $N(\tilde p,\tilde q)e_0$ and $\tilde p\wedge^{\natural}\tilde q$. The **support** of a structure is the underlying real vector space, which is $\mathbb{H}$ for all six.
 
 ## The Six Names and Their Structures
 
@@ -20,7 +20,7 @@ The article assumes the six products and their coordinate rules from *The 6 Prod
 |---|---|---|---|
 | $\mathrm{GPA}$ | general plain algebra | $\tilde p\tilde q$ | associative unital algebra, a division algebra |
 | $\mathrm{SPA}$ | symmetric plain algebra | $\tilde p\bullet\tilde q$ | commutative Jordan algebra |
-| $\mathrm{APA}$ | antisymmetric plain algebra | $\tilde p\wedge\tilde q=\mathbf p\times\mathbf q$ | Lie algebra, alternating |
+| $\mathrm{APA}$ | antisymmetric plain algebra | $\tilde p\wedge\tilde q=\vec p\times\vec q$ | Lie algebra, alternating |
 | $\mathrm{GQA}$ | general quaternionic algebra | $\tilde p^{\natural}\tilde q$ | non-associative algebra with a left unit |
 | $\mathrm{SQA}$ | symmetric quaternionic algebra | $N(\tilde p,\tilde q)e_0$ | commutative, scalar-valued rule |
 | $\mathrm{AQA}$ | antisymmetric quaternionic algebra | $\tilde p\wedge^{\natural}\tilde q$ | alternating, non-Lie rule |
@@ -68,7 +68,7 @@ The law table separates them: the symmetric products are commutative, flexible a
 |---|---|
 | $\mathrm{GPA}$ | general plain algebra, the associative division algebra of $\tilde p\tilde q$ |
 | $\mathrm{SPA}$ | symmetric plain algebra, the Jordan algebra of $\tilde p\bullet\tilde q$ |
-| $\mathrm{APA}$ | antisymmetric plain algebra, the Lie algebra of $\tilde p\wedge\tilde q=\mathbf p\times\mathbf q$ |
+| $\mathrm{APA}$ | antisymmetric plain algebra, the Lie algebra of $\tilde p\wedge\tilde q=\vec p\times\vec q$ |
 | $\mathrm{GQA}$ | general quaternionic algebra, the left-unital rule $\tilde p^{\natural}\tilde q$ |
 | $\mathrm{SQA}$ | symmetric quaternionic algebra, the scalar rule $N(\tilde p,\tilde q)e_0$ |
 | $\mathrm{AQA}$ | antisymmetric quaternionic algebra, the rule $\tilde p\wedge^{\natural}\tilde q$ |

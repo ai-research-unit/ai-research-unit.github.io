@@ -28,7 +28,7 @@ whose thermal factor is a **central scalar**, so it multiplies every entry of th
 
 The article proceeds as follows. A section fixes the contour and the doubled fields. A section separates the branch doubling from the algebra's doubling. A section gives the Keldysh rotation and the matrix of Green's functions, with the verification. A section treats the equilibrium relations and the fluctuation–dissipation theorem, a section the relation to Matsubara and the thermal states of the companion articles, and a section the non-equilibrium case. A section separates what is established from what is interpretation.
 
-**Conventions.** We use those of the companion articles, in particular *The Matsubara Thermal Formalism in Biquaternionic Form*, *The KMS Condition and the Biquaternion Framework*, *The Unruh Effect in Biquaternionic Form*, and *Hawking Radiation in Biquaternionic Form*. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, central scalar imaginary $i$, and isomorphism $\mathsf{M}_2(e_k)=-i\sigma_k$. The sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$; $\tilde{Q}=ict\,e_0+\mathbf x$ is the material coordinate; $\tilde\nabla=e_0\partial_{ict}+e_k\partial_k$ and $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial_{ict}^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$; the trace pairing is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$. The inverse temperature is $\beta=\hbar/(k_BT)$ and the Bose occupation number is $n_{\mathrm B}(\omega)=1/(e^{\beta\omega}-1)$. The branch index is written $\alpha,\beta\in\{+,-\}$ or, in the rotated basis, $\{cl,q\}$.
+**Conventions.** We use those of the companion articles, in particular *The Matsubara Thermal Formalism in Biquaternionic Form*, *The KMS Condition and the Biquaternion Framework*, *The Unruh Effect in Biquaternionic Form*, and *Hawking Radiation in Biquaternionic Form*. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, central scalar imaginary $i$, and isomorphism $\mathsf{M}_2(e_k)=-i\sigma_k$. The sectors are $\mathbb{M}_-$ and $\mathbb{M}_+$; $\tilde{Q}=ict\,e_0+\vec x$ is the material coordinate; $\tilde\nabla=e_0\partial_{ict}+e_k\partial_k$ and $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial_{ict}^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$; the trace pairing is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$. The inverse temperature is $\beta=\hbar/(k_BT)$ and the Bose occupation number is $n_{\mathrm B}(\omega)=1/(e^{\beta\omega}-1)$. The branch index is written $\alpha,\beta\in\{+,-\}$ or, in the rotated basis, $\{cl,q\}$.
 
 ## The Closed-Time-Path Contour and the Doubled Fields
 
@@ -36,9 +36,9 @@ The formalism begins with a contour and produces a doubling; the doubling is wha
 
 **The contour.** The **closed-time path** $\mathcal{C}$ runs along the real time axis from $-\infty$ to $+\infty$ and then back from $+\infty$ to $-\infty$, with a possible excursion into the imaginary direction. Writing the two legs as $\mathcal{C}_+$ and $\mathcal{C}_-$, the field is defined on each leg separately:
 $$
-\tilde\Phi_+(t,\mathbf x) \equiv \tilde\Phi(t,\mathbf x)\big|_{t\in\mathcal{C}_+},
+\tilde\Phi_+(t,\vec x) \equiv \tilde\Phi(t,\vec x)\big|_{t\in\mathcal{C}_+},
 \qquad
-\tilde\Phi_-(t,\mathbf x) \equiv \tilde\Phi(t,\mathbf x)\big|_{t\in\mathcal{C}_-}.
+\tilde\Phi_-(t,\vec x) \equiv \tilde\Phi(t,\vec x)\big|_{t\in\mathcal{C}_-}.
 $$
 The generating functional is
 $$
@@ -71,7 +71,7 @@ block-diagonal, with the minus sign of the reversed branch. The Keldysh rotation
 
 This is where a plausible-looking identification is wrong, and it is worth being explicit.
 
-**The algebra's module is two-dimensional too.** The biquaternion algebra has a two-dimensional complex irreducible module $\mathbb{B}\tilde\Pi(\hat{\boldsymbol\mu})\cong\mathbb{C}^2$, and the isomorphism $\mathsf{M}_2$ represents $\mathbb{B}$ by $2\times2$ complex matrices. Numerically, "two" appears in both structures.
+**The algebra's module is two-dimensional too.** The biquaternion algebra has a two-dimensional complex irreducible module $\mathbb{B}\tilde\Pi(\hat\mu)\cong\mathbb{C}^2$, and the isomorphism $\mathsf{M}_2$ represents $\mathbb{B}$ by $2\times2$ complex matrices. Numerically, "two" appears in both structures.
 
 **The branch factor is external.** The CTP field is a map from the contour pair to the field's own value space; the field's value space is the module (a two-dimensional complex space for a scalar, the spinor module for a spinor). Hence the doubled field space is a **tensor product**,
 $$

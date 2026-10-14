@@ -7,7 +7,7 @@ the product (*Definitions for the Study of the 12 Algebraic Structures*, §*Powe
 the Roots*). The block of this article is the antisymmetric quaternionic multiplication
 $$
 \tilde\Xi\diamond\tilde Q=\tfrac12\bigl(\tilde\Xi^{\natural}\tilde Q-\tilde Q^{\natural}\tilde\Xi\bigr)
-=\Xi_0\mathbf Q-Q_0\mathbf\Xi-\mathbf\Xi\times\mathbf Q ,
+=\Xi_0\vec Q-Q_0\vec\Xi-\vec\Xi\times\vec Q ,
 $$
 which is alternating and without a unit (*Introduction to the Antisymmetric Quaternionic Algebra of
 Biquaternions*).
@@ -44,7 +44,7 @@ the idempotent families of the plain product, which are *Square Roots of One and
 the General Plain Algebra*.
 
 **The results.** For the antisymmetric quaternionic multiplication
-$\tilde\Xi\diamond\tilde Q=\Xi_0\mathbf Q-Q_0\mathbf\Xi-\mathbf\Xi\times\mathbf Q$ the square of
+$\tilde\Xi\diamond\tilde Q=\Xi_0\vec Q-Q_0\vec\Xi-\vec\Xi\times\vec Q$ the square of
 every element vanishes, $\tilde\Xi\diamond\tilde\Xi=0$, and the root equation of $+1$ therefore
 reduces to $0=+e_0$: the block has **no root of $+1$**. The idempotent equation
 $\tilde\Pi\diamond\tilde\Pi=\tilde\Pi$ reduces to $0=\tilde\Pi$, so the block has **one idempotent,
@@ -168,8 +168,8 @@ because the right side is then zero as well.
 and no projection. In particular the unit $e_0$ of the ambient algebra is not an idempotent of the
 block:
 $$
-e_0\diamond e_0=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q=0\neq e_0
-\qquad(\tilde P=\tilde Q=e_0,\ P_0=Q_0=1,\ \mathbf P=\mathbf Q=0).
+e_0\diamond e_0=P_0\vec Q-Q_0\vec P-\vec P\times\vec Q=0\neq e_0
+\qquad(\tilde P=\tilde Q=e_0,\ P_0=Q_0=1,\ \vec P=\vec Q=0).
 $$
 
 *Proof.* A nontrivial idempotent is one different from the origin and, when the product is unital,
@@ -209,7 +209,7 @@ Antisymmetric Quaternionic Algebra* that states it.
 idempotent of the block, since $e_0\diamond e_0=0$; it is nevertheless the element whose left
 multiplication is a projector, because
 $$
-L_{e_0}\tilde X=e_0\diamond\tilde X=\mathbf X , \qquad L_{e_0}^{2}=L_{e_0} ,
+L_{e_0}\tilde X=e_0\diamond\tilde X=\vec X , \qquad L_{e_0}^{2}=L_{e_0} ,
 $$
 the projection onto the vector subspace along the centre. The element and its operator are two
 different objects, and the block separates them: the element $e_0$ is not idempotent, while the
@@ -244,7 +244,7 @@ Biquaternion $\mathbb{C}$ Space*.
 ## Summary
 
 For the antisymmetric quaternionic multiplication
-$\tilde\Xi\diamond\tilde Q=\Xi_0\mathbf Q-Q_0\mathbf\Xi-\mathbf\Xi\times\mathbf Q$ the square of every
+$\tilde\Xi\diamond\tilde Q=\Xi_0\vec Q-Q_0\vec\Xi-\vec\Xi\times\vec Q$ the square of every
 element vanishes, $\tilde\Xi\diamond\tilde\Xi=0$, because the block is alternating; the root equation
 of $+1$ therefore reduces to the scalar equation $0=+e_0$ and has no solution. The roots of $-1$
 fall to the same reduction, $0=-e_0$, and are the short remark closing the roots-of-one part; the
@@ -264,7 +264,7 @@ quaternionic product's trivial pair.
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde\Xi\diamond\tilde Q=\Xi_0\mathbf Q-Q_0\mathbf\Xi-\mathbf\Xi\times\mathbf Q$ | the antisymmetric quaternionic multiplication, the operation $\mathrm{AQA}$ |
+| $\tilde\Xi\diamond\tilde Q=\Xi_0\vec Q-Q_0\vec\Xi-\vec\Xi\times\vec Q$ | the antisymmetric quaternionic multiplication, the operation $\mathrm{AQA}$ |
 | $\tilde\Xi\diamond\tilde\Xi=0$ | the reduction, the square of every element |
 | $\tilde\Xi\diamond\tilde\Xi=+e_0$ | the root equation of $+1$, reduced to $0=+e_0$, without solution |
 | $\lambda\in\{-1,0,+1\}$ | the central values; $-1$ is the remark, $0$ is *Square Roots of Zero and the Nilpotents of the Antisymmetric Quaternionic Algebra* |

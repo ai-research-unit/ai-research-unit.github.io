@@ -9,7 +9,7 @@ multiplication
 $$
 \tilde P\diamond\tilde Q
 =\tfrac12\bigl(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P\bigr)
-=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q ,
+=P_0\vec Q-Q_0\vec P-\vec P\times\vec Q ,
 $$
 which is alternating and without a unit (*Introduction to the Antisymmetric Quaternionic Algebra
 of Biquaternions*). The article solves, for a general element $a\in\mathbb{B}$, the equation
@@ -139,7 +139,7 @@ origin.
 
 ## Worked Examples
 
-The examples are read from the explicit form $\tilde P\diamond\tilde Q=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$, and each is the reduction at a displayed value.
+The examples are read from the explicit form $\tilde P\diamond\tilde Q=P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$, and each is the reduction at a displayed value.
 
 - **The square root of $e_0$.** The equation $\tilde\Xi\diamond\tilde\Xi=e_0$ has no solution: the
     left side is a pure vector, the right side is central, and the two cannot agree.
@@ -174,7 +174,7 @@ $+1$. The square roots of the origin are the zero divisors of the block together
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\diamond\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$ | the antisymmetric quaternionic multiplication, the operation $\mathrm{AQA}$ |
+| $\tilde P\diamond\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)=P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$ | the antisymmetric quaternionic multiplication, the operation $\mathrm{AQA}$ |
 | $\tilde\Xi\diamond\tilde\Xi=0$ | the reduction, the square of every element |
 | $a\in\mathbb{B}$ | the element whose square roots are sought |
 | $\mathbb{B}$ | the set of square roots of the origin |

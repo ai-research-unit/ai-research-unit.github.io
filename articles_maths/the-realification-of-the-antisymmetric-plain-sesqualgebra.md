@@ -20,7 +20,7 @@ $$
 $$
 the scalar half being the product of the symmetric plain sesqualgebra; its scalar part therefore vanishes and it carries **no form** of its own. Its rule is the rule of the block, unchanged over $\mathbb{R}$,
 $$
-\tilde P\circ\tilde Q=-P_0\overline{\mathbf Q}+\overline{Q_0}\mathbf P-\mathbf P\times\overline{\mathbf Q},
+\tilde P\circ\tilde Q=-P_0\overline{\vec Q}+\overline{Q_0}\vec P-\vec P\times\overline{\vec Q},
 $$
 and its diagonal is not zero but the vector part of the square, $\tilde Q\circ\tilde Q=\operatorname{Vect}(\tilde Q\tilde Q^{*})$, equal to $2ie_3$ at $e_1+ie_2$. The operator criterion of the block, $R_{e_0}=P_{\operatorname{Vect}}$ (*The Specificities of the Antisymmetric Plain Sesqualgebra*), is a statement about the ring and holds in the two readings.
 

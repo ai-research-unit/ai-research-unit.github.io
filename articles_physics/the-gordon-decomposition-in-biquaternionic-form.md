@@ -183,40 +183,40 @@ $$
 = -\frac{e\hbar}{2mc}\cdot\tfrac12 F_{\mu\nu}\,\bar\psi\sigma^{\mu\nu}\psi,
 $$
 
-which is an effective **Pauli moment term** $-\frac{e\hbar}{2mc}\,\mathbf B\cdot\psi^\dagger\boldsymbol\sigma\psi$. Its coefficient is the Dirac value $g = 2$. The companion article on the anomalous magnetic moment uses exactly this split: the tree-level vertex is $\gamma^\mu F_1 + \frac{i\sigma^{\mu\nu}q_\nu}{2m}F_2$ with $F_1(0) = 1$, $F_2(0) = 1$, and the anomaly is the radiative correction to $F_2(0)$. The convection coefficient is fixed by the Ward identity; the spin coefficient is the one that can be corrected.
+which is an effective **Pauli moment term** $-\frac{e\hbar}{2mc}\,\vec B\cdot\psi^\dagger\boldsymbol\sigma\psi$. Its coefficient is the Dirac value $g = 2$. The companion article on the anomalous magnetic moment uses exactly this split: the tree-level vertex is $\gamma^\mu F_1 + \frac{i\sigma^{\mu\nu}q_\nu}{2m}F_2$ with $F_1(0) = 1$, $F_2(0) = 1$, and the anomaly is the radiative correction to $F_2(0)$. The convection coefficient is fixed by the Ward identity; the spin coefficient is the one that can be corrected.
 
 The same decomposition underlies the companion article on the classical origin of $g = 2$: the factor of two is the statement that the spin-density gradient is twice as effective at generating an electric current as it is at contributing to the linear momentum, which is the factor-of-two asymmetry recorded below.
 
 ## The Massless Generalisation
 
-The covariant form above needs $m \neq 0$, because both terms carry $1/m$. A decomposition that survives the massless limit uses the energy in place of the mass. Assume a time-harmonic solution $\psi(\mathbf r, t) = \psi(\mathbf r)e^{-iEt}$ with $E = \sqrt{|\mathbf k|^2 + m^2}$, and use the Dirac equation once more. For the spatial current one finds
+The covariant form above needs $m \neq 0$, because both terms carry $1/m$. A decomposition that survives the massless limit uses the energy in place of the mass. Assume a time-harmonic solution $\psi(\vec r, t) = \psi(\vec r)e^{-iEt}$ with $E = \sqrt{|\vec k|^2 + m^2}$, and use the Dirac equation once more. For the spatial current one finds
 
 $$
-\mathbf j \equiv e\,\bar\psi\boldsymbol\gamma\psi
+\vec j \equiv e\,\bar\psi\boldsymbol\gamma\psi
 = \frac{e}{2iE}\left(\psi^\dagger\nabla\psi - \left(\nabla\psi^\dagger\right)\psi\right)
-+ \frac{e}{E}\,\nabla\times\mathbf S,
++ \frac{e}{E}\,\nabla\times\vec S,
 $$
 
 with $\boldsymbol\gamma = (\gamma^1,\gamma^2,\gamma^3)$ and
 
 $$
-\mathbf S = \psi^\dagger\hat{\mathbf S}\psi,
+\vec S = \psi^\dagger\hat S\psi,
 \qquad
 \left(\hat S_x,\hat S_y,\hat S_z\right) = \left(\Sigma^{23},\Sigma^{31},\Sigma^{12}\right),
 \qquad
-\hat{\mathbf S} = \frac12\begin{pmatrix}\boldsymbol\sigma & 0\\ 0 & \boldsymbol\sigma\end{pmatrix}.
+\hat S = \frac12\begin{pmatrix}\boldsymbol\sigma & 0\\ 0 & \boldsymbol\sigma\end{pmatrix}.
 $$
 
-The first term is the **free current**: for a near plane wave of finite extent it is $e\rho\,\mathbf k/E = e\rho\,\mathbf v$ with $\rho = \psi^\dagger\psi$ and $\mathbf v = \mathbf k/E$, which is the transport of charge at the group velocity. The second is the **bound spin current** $(e/E)\nabla\times\mathbf S$.
+The first term is the **free current**: for a near plane wave of finite extent it is $e\rho\,\vec k/E = e\rho\,\vec v$ with $\rho = \psi^\dagger\psi$ and $\vec v = \vec k/E$, which is the transport of charge at the group velocity. The second is the **bound spin current** $(e/E)\nabla\times\vec S$.
 
 Integrating by parts, the magnetic moment is
 
 $$
-\boldsymbol\mu = \frac12\int\mathbf r\times\mathbf j_{\rm bound}\,d^3x
-= \frac{e}{E}\int\mathbf S\,d^3x .
+\vec\mu = \frac12\int\vec r\times\vec j_{\rm bound}\,d^3x
+= \frac{e}{E}\int\vec S\,d^3x .
 $$
 
-In the rest frame $E = m$ this is $\boldsymbol\mu_{\rm Dirac} = (e/m)\mathbf S = (eg/2m)\mathbf S$ with $g = 2$, recovering the massive result. For a massless right-handed Weyl particle the spin is locked to the direction $\hat{\mathbf k}$ of the kinetic momentum and the moment is $\boldsymbol\mu_{\rm Weyl} = (e/E)(\hbar\hat{\mathbf k}/2)$. This is the cleanest form of the statement that the massless limit does not remove the spin current; it only removes the separation scale $m$ in favour of the energy $E$.
+In the rest frame $E = m$ this is $\vec\mu_{\rm Dirac} = (e/m)\vec S = (eg/2m)\vec S$ with $g = 2$, recovering the massive result. For a massless right-handed Weyl particle the spin is locked to the direction $\hat k$ of the kinetic momentum and the moment is $\vec\mu_{\rm Weyl} = (e/E)(\hbar\hat k/2)$. This is the cleanest form of the statement that the massless limit does not remove the spin current; it only removes the separation scale $m$ in favour of the energy $E$.
 
 ## The Angular-Momentum and Stress-Tensor Relatives
 
@@ -235,8 +235,8 @@ $$
 and on shell its time components give the energy density $\mathcal E = E\,\psi^\dagger\psi$ and the momentum density
 
 $$
-\mathbf P = \frac{1}{2i}\left(\psi^\dagger\nabla\psi - \left(\nabla\psi^\dagger\right)\psi\right)
-+ \frac12\nabla\times\mathbf S .
+\vec P = \frac{1}{2i}\left(\psi^\dagger\nabla\psi - \left(\nabla\psi^\dagger\right)\psi\right)
++ \frac12\nabla\times\vec S .
 $$
 
 Compare this with the current above: the spin contribution to the momentum density carries the coefficient $\tfrac12$, while the spin contribution to the electric current carries $1$. The spin-density gradient is therefore **twice as effective** at producing an electric current as at contributing to the linear momentum, and that factor of two is the Dirac value $g = 2$ seen from the angular-momentum side.
@@ -252,14 +252,14 @@ $$
 does not contain the bound spin-momentum term; the term is restored by the antisymmetric (spin) part of the Belinfante improvement. Integrating, the spin contribution to the total angular momentum is
 
 $$
-\int\mathbf r\times\left(\tfrac12\nabla\times\mathbf S\right)d^3x = \int\mathbf S\,d^3x,
+\int\vec r\times\left(\tfrac12\nabla\times\vec S\right)d^3x = \int\vec S\,d^3x,
 $$
 
 so the division by two is necessary for angular momentum and the absence of it for the current is the statement of $g = 2$.
 
 ### Spin in Maxwell's equations
 
-The same strategy — split a conserved density into a transport part and a curl of a spin density — applies to light. For monochromatic Maxwell fields in the Riemann–Silberstein form, the time-averaged momentum density splits as $\mathbf P = \mathbf P_{\rm free} + \mathbf P_{\rm bound}$ with $\mathbf P_{\rm bound} = \tfrac12\nabla\times\mathbf S$, and the spin density can be identified, in the paraxial or pure-helicity case, with either $\mathbf S = \frac{\mu_0}{2i\omega}\mathbf H^*\times\mathbf H$ or $\mathbf S = \frac{\epsilon_0}{2i\omega}\mathbf E^*\times\mathbf E$; the two agree for a helicity state and may differ otherwise. This is the electromagnetic analogue of the Dirac decomposition, and the companion articles on the Riemann–Silberstein vector and on angular momentum and spin in biquaternionic form develop the same objects in the framework's notation.
+The same strategy — split a conserved density into a transport part and a curl of a spin density — applies to light. For monochromatic Maxwell fields in the Riemann–Silberstein form, the time-averaged momentum density splits as $\vec P = \vec P_{\rm free} + \vec P_{\rm bound}$ with $\vec P_{\rm bound} = \tfrac12\nabla\times\vec S$, and the spin density can be identified, in the paraxial or pure-helicity case, with either $\vec S = \frac{\mu_0}{2i\omega}\vec H^*\times\vec H$ or $\vec S = \frac{\epsilon_0}{2i\omega}\vec E^*\times\vec E$; the two agree for a helicity state and may differ otherwise. This is the electromagnetic analogue of the Dirac decomposition, and the companion articles on the Riemann–Silberstein vector and on angular momentum and spin in biquaternionic form develop the same objects in the framework's notation.
 
 ## The Biquaternion Reading
 
@@ -321,7 +321,7 @@ $$
 + \frac{i\sigma^{\mu\nu}(p'-p)_\nu}{2m}\right]u(p),
 $$
 
-where the first term is the current of a charged scalar and the second is the spin term whose coefficient gives $g = 2$. The decomposition requires $m \neq 0$ because both terms carry $1/m$; the massless version replaces $m$ by the energy $E$ and writes the spin term as $(e/E)\nabla\times\mathbf S$, recovering the Dirac moment in the rest frame and the locked Weyl moment for a massless particle. The Belinfante–Rosenfeld tensor contains the same spin term with coefficient $\tfrac12$ in the momentum density, and the mismatch between that $\tfrac12$ and the current's $1$ is the angular-momentum face of $g = 2$.
+where the first term is the current of a charged scalar and the second is the spin term whose coefficient gives $g = 2$. The decomposition requires $m \neq 0$ because both terms carry $1/m$; the massless version replaces $m$ by the energy $E$ and writes the spin term as $(e/E)\nabla\times\vec S$, recovering the Dirac moment in the rest frame and the locked Weyl moment for a massless particle. The Belinfante–Rosenfeld tensor contains the same spin term with coefficient $\tfrac12$ in the momentum density, and the mismatch between that $\tfrac12$ and the current's $1$ is the angular-momentum face of $g = 2$.
 
 The biquaternion interpretation is a naming of the two structures: the split of the generator product is the split into the metric (central) direction and the bivector direction, so the convection current is central and the spin current is a bivector whose magnetic (rotation-type) part lies in the informational sector $\mathbb{M}_+$ and whose boost-type part lies in $\mathbb{M}_-$. The identity itself is a spinor-module statement, because the Dirac adjoint carries the Clifford-odd $\gamma^0$ outside $\mathbb{B}$; the framework transcribes it, verifies its algebra and locates its two terms, and does not derive it from a product in the algebra.
 
@@ -337,7 +337,7 @@ The biquaternion interpretation is a naming of the two structures: the split of 
 | $j^\mu = \bar\psi\gamma^\mu\psi$ | Conserved number current |
 | $p$, $p'$, $q = p'-p$, $P = \frac12(p+p')$ | Momenta, transfer and average |
 | $\bar u'\gamma^\mu u = \bar u'[(p+p')^\mu + i\sigma^{\mu\nu}q_\nu]u/2m$ | Momentum-space Gordon identity |
-| $\mathbf S = \psi^\dagger\hat{\mathbf S}\psi$, $\hat{\mathbf S} = \frac12\mathrm{diag}(\boldsymbol\sigma,\boldsymbol\sigma)$ | Spin density and spin matrix |
+| $\vec S = \psi^\dagger\hat S\psi$, $\hat S = \frac12\mathrm{diag}(\boldsymbol\sigma,\boldsymbol\sigma)$ | Spin density and spin matrix |
 | $T^{\mu\nu}_{\rm BR}$, $T^{\mu\nu}_{\rm canonical}$ | Belinfante–Rosenfeld and canonical stress tensors |
 | $\frac{e\hbar}{2mc}\cdot\frac12 F_{\mu\nu}\bar\psi\sigma^{\mu\nu}\psi$ | Effective Pauli moment term ($g = 2$) |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Informational and material sectors; bivector magnetic and boost parts |

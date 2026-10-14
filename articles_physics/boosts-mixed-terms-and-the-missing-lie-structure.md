@@ -8,13 +8,13 @@ reads what the failure leaves behind. The operation is
 
 $$
 \tilde P\wedge_{\natural}\tilde Q
-=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q ,
+=P_0\vec Q-Q_0\vec P-\vec P\times\vec Q ,
 $$
 
 the antisymmetric part of the quaternionic product, and its value is the sum of two pieces of different
-kinds. The **mixed term** $P_0\mathbf Q-Q_0\mathbf P$ carries a scalar part times a vector part, is the
+kinds. The **mixed term** $P_0\vec Q-Q_0\vec P$ carries a scalar part times a vector part, is the
 piece that mixes the time direction with the space direction, and is the only place the Jacobi identity
-breaks. The **cross term** $-\mathbf P\times\mathbf Q$ carries two vector parts and is the piece the plain
+breaks. The **cross term** $-\vec P\times\vec Q$ carries two vector parts and is the piece the plain
 bracket also has, with a reversed sign. On the material sector the two pieces separate by their
 Hermitian character: the cross term is **anti-Hermitian** and gives the compact **rotation** directions,
 while the mixed term is **Hermitian** and gives the **boost** directions. The Jacobi failure is thus a
@@ -42,7 +42,7 @@ Algebra Reaches SU(2) but Not SU(3)*.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis
 $e_0=1,e_1,e_2,e_3$, $e_k^{2}=-e_0$, $e_1e_2=e_3$, and central scalar imaginary $i$ with $i^{2}=-1$; an
-element is $\tilde Q=Q_0e_0+\mathbf Q$; the natural conjugation is ${}^{\natural}$ and the Hermitian star
+element is $\tilde Q=Q_0e_0+\vec Q$; the natural conjugation is ${}^{\natural}$ and the Hermitian star
 is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$; the sectors are $\mathbb{M}_\pm$, with the material basis
 $ie_0,e_1,e_2,e_3$. The quaternionic product is $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ and
 $\tilde P\wedge_{\natural}\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$ is
@@ -58,16 +58,16 @@ $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$.
 
 $$
 \tilde P\wedge_{\natural}\tilde Q
-=\underbrace{P_0\mathbf Q-Q_0\mathbf P}_{\text{mixed term}}\;\underbrace{-\;\mathbf P\times\mathbf Q}_{\text{cross term}} ,
+=\underbrace{P_0\vec Q-Q_0\vec P}_{\text{mixed term}}\;\underbrace{-\;\vec P\times\vec Q}_{\text{cross term}} ,
 $$
 
 and the two terms are distinguished by the number of vector parts they carry: the mixed term is a scalar
 part times a vector part, the cross term a product of two vector parts. The cross term is exactly the
-plain bracket, $\mathbf P\times\mathbf Q$, with the sign reversed; the mixed term is absent from the plain
+plain bracket, $\vec P\times\vec Q$, with the sign reversed; the mixed term is absent from the plain
 bracket.
 
 *Proof.* The explicit form of the operation is the sum of the two displayed terms; the plain bracket is
-$\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf P\times\mathbf Q$, which carries the cross product
+$\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\vec P\times\vec Q$, which carries the cross product
 with the other sign and no mixed term.
 
 The two terms behave differently under the Hermitian conjugation, and that is the physical key.
@@ -76,15 +76,15 @@ The two terms behave differently under the Hermitian conjugation, and that is th
 mixed term is **Hermitian** and the cross term is **anti-Hermitian**,
 
 $$
-(P_0\mathbf Q-Q_0\mathbf P)^{*}=P_0\mathbf Q-Q_0\mathbf P , \qquad
-(-\mathbf P\times\mathbf Q)^{*}=+\mathbf P\times\mathbf Q ,
+(P_0\vec Q-Q_0\vec P)^{*}=P_0\vec Q-Q_0\vec P , \qquad
+(-\vec P\times\vec Q)^{*}=+\vec P\times\vec Q ,
 $$
 
 and then the mixed term lies in $\mathbb{M}_+$ and the cross term in $\mathbb{M}_-$.
 
-*Proof.* On the material sector $P_0=ip_0$, $Q_0=iq_0$ with $p_0,q_0$ real and $\mathbf P,\mathbf Q$ real
-vectors. Then $P_0\mathbf Q-Q_0\mathbf P=i(p_0\mathbf q-q_0\mathbf p)$ is $i$ times a real vector, a
-combination of the Hermitian imaginary units $ie_k$, hence Hermitian; and $-\mathbf P\times\mathbf Q$ is a
+*Proof.* On the material sector $P_0=ip_0$, $Q_0=iq_0$ with $p_0,q_0$ real and $\vec P,\vec Q$ real
+vectors. Then $P_0\vec Q-Q_0\vec P=i(p_0\vec q-q_0\vec p)$ is $i$ times a real vector, a
+combination of the Hermitian imaginary units $ie_k$, hence Hermitian; and $-\vec P\times\vec Q$ is a
 real vector, a combination of the anti-Hermitian units $e_k$, hence anti-Hermitian. The two sectors
 $\mathbb{M}_\pm$ are the fixed and anti-fixed spaces of the star.
 
@@ -93,19 +93,19 @@ $\mathbb{M}_\pm$ are the fixed and anti-fixed spaces of the star.
 The split just proved is a split of the bracket of two material operations into its two familiar physical
 directions, and the identification is exact on the material sector.
 
-**Proposition (the boost-rotation split).** For $\tilde P=ip_0e_0+\mathbf p$ and
-$\tilde Q=iq_0e_0+\mathbf q$ with $p_0,q_0$ real and $\mathbf p,\mathbf q$ real vectors,
+**Proposition (the boost-rotation split).** For $\tilde P=ip_0e_0+\vec p$ and
+$\tilde Q=iq_0e_0+\vec q$ with $p_0,q_0$ real and $\vec p,\vec q$ real vectors,
 
 $$
-\tilde P\wedge_{\natural}\tilde Q=-\;\mathbf p\times\mathbf q\;+\;i\,(p_0\mathbf q-q_0\mathbf p) ,
+\tilde P\wedge_{\natural}\tilde Q=-\;\vec p\times\vec q\;+\;i\,(p_0\vec q-q_0\vec p) ,
 $$
 
 so the value of the bracket of two material operations is a pure vector whose **real part is a rotation**
 and whose **imaginary part is a boost**.
 
-*Proof.* Substitute the material coordinates into the split of the value. The cross term $-\mathbf p\times\mathbf q$
+*Proof.* Substitute the material coordinates into the split of the value. The cross term $-\vec p\times\vec q$
 is real and lies in $\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3$, the rotation directions; the mixed term
-$i(p_0\mathbf q-q_0\mathbf p)$ is imaginary and lies in $i\mathbb{R}e_1+i\mathbb{R}e_2+i\mathbb{R}e_3$, the
+$i(p_0\vec q-q_0\vec p)$ is imaginary and lies in $i\mathbb{R}e_1+i\mathbb{R}e_2+i\mathbb{R}e_3$, the
 boost directions.
 
 ### The Compact Rotations
@@ -138,7 +138,7 @@ precisely a boost-like configuration; on the pure vectors (rotations only) the i
 
 **Remark (verified).**
 complex arithmetic. The value of the bracket is always a pure vector; its real part equals
-$-\mathbf p\times\mathbf q$ and its imaginary part equals $i(p_0\mathbf q-q_0\mathbf p)$ exactly; and the
+$-\vec p\times\vec q$ and its imaginary part equals $i(p_0\vec q-q_0\vec p)$ exactly; and the
 mixed term is Hermitian while the cross term is anti-Hermitian, to machine precision. The two pieces are
 the sector projections of the value: the real part is its $\mathbb{M}_-$ (anti-Hermitian) piece and the
 imaginary part its $\mathbb{M}_+$ (Hermitian) piece.
@@ -180,7 +180,7 @@ is unavailable.
 is non-degenerate and **not** invariant,
 
 $$
-K(\tilde A,\tilde B)=\operatorname{Tr}\bigl(L_{\tilde A}L_{\tilde B}\bigr)=3A_0B_0-2\,(\mathbf A,\mathbf B) ,
+K(\tilde A,\tilde B)=\operatorname{Tr}\bigl(L_{\tilde A}L_{\tilde B}\bigr)=3A_0B_0-2\,(\vec A,\vec B) ,
 $$
 
 with Gram matrix $\operatorname{diag}(3,-2,-2,-2)$ and radical zero; and the failure of its invariance,
@@ -196,7 +196,7 @@ of the Antisymmetric Quaternionic Algebra*.
 **Remark (verified).** The invariant-form space was recomputed by solving the invariance condition over all
 symmetric Gram matrices: the solution space is **one-dimensional**, spanned by $\operatorname{diag}(1,0,0,0)$,
 and the alternating solution space is **zero**; the trace form $K$ was recomputed as
-$\operatorname{Tr}(L_{\tilde A}L_{\tilde B})$ and equals $3A_0B_0-2(\mathbf A,\mathbf B)$ to
+$\operatorname{Tr}(L_{\tilde A}L_{\tilde B})$ and equals $3A_0B_0-2(\vec A,\vec B)$ to
 $4.0\times10^{-15}$; and its invariance failure at the triple $(e_0,e_1,e_1)$ is $-4$.
 
 **Interpretation (the only invariant reads the time direction).** The one invariant form, $\varphi(\tilde P,\tilde Q)=P_0Q_0$,
@@ -220,7 +220,7 @@ vector subspace; so it has no Killing form and **no Casimir element**. There is 
 label the irreducible pieces of a bracket that is not a Lie algebra.
 
 **The derived bracket is the only Lie part.** On the derived subalgebra $\mathrm{Vect}(\mathbb{B})$ the
-bracket is $-\mathbf P\times\mathbf Q$, a Lie bracket isomorphic to $\mathfrak{sl}(2,\mathbb{C})$; this is
+bracket is $-\vec P\times\vec Q$, a Lie bracket isomorphic to $\mathfrak{sl}(2,\mathbb{C})$; this is
 the entire Lie content of the operation, and it is three-dimensional. Everything the bracket adds to it —
 the mixed terms, the boost-like part — breaks the identity. The Lie structure is therefore not absent from
 the operation but **missing above the derived subalgebra**: the operation is a Lie bracket on
@@ -297,14 +297,14 @@ which the corpus reads as the non-compact boost directions.
 
 ## The Ledger
 
-**Proved.** The split of the value into the mixed term $P_0\mathbf Q-Q_0\mathbf P$ and the cross term
-$-\mathbf P\times\mathbf Q$; the Hermitian character of the mixed term ($\mathbb{M}_+$) and the
+**Proved.** The split of the value into the mixed term $P_0\vec Q-Q_0\vec P$ and the cross term
+$-\vec P\times\vec Q$; the Hermitian character of the mixed term ($\mathbb{M}_+$) and the
 anti-Hermitian character of the cross term ($\mathbb{M}_-$) for material arguments; the boost-rotation
-split $-\mathbf p\times\mathbf q+i(p_0\mathbf q-q_0\mathbf p)$ on the material sector; the
+split $-\vec p\times\vec q+i(p_0\vec q-q_0\vec p)$ on the material sector; the
 one-dimensional space of invariant forms, spanned by $\varphi=P_0Q_0$, symmetric of rank $1$ with radical
 the vector subspace, and the absence of a nonzero alternating invariant form; the vanishing of the
 coefficient form of the bracket; the non-degenerate but non-invariant operator trace form
-$K=3A_0B_0-2(\mathbf A,\mathbf B)$; the absence of a Killing form and a Casimir element; the derived
+$K=3A_0B_0-2(\vec A,\vec B)$; the absence of a Killing form and a Casimir element; the derived
 bracket as a Lie bracket on $\mathrm{Vect}(\mathbb{B})$ isomorphic to $\mathfrak{sl}(2,\mathbb{C})$; the
 trace $3A_0$, rank $3$ off the isotropic cone, absence of a nonzero inner derivation and the
 three-dimensional derivation algebra of the operators.
@@ -332,17 +332,17 @@ The mixed term reads as the boost and the missing Lie structure reads as the non
 ## Summary
 
 The antisymmetrised quaternionic product
-$\tilde P\wedge_{\natural}\tilde Q=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$ splits into a
-**mixed term** $P_0\mathbf Q-Q_0\mathbf P$ and a **cross term** $-\mathbf P\times\mathbf Q$, and on the
+$\tilde P\wedge_{\natural}\tilde Q=P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$ splits into a
+**mixed term** $P_0\vec Q-Q_0\vec P$ and a **cross term** $-\vec P\times\vec Q$, and on the
 material sector the two separate by their Hermitian character: the cross term is anti-Hermitian and gives
 the **compact rotation** directions, the mixed term is Hermitian and gives the **boost-like** directions.
-The value of the bracket of two material operations is therefore $-\mathbf p\times\mathbf q+i(p_0\mathbf q-q_0\mathbf p)$,
+The value of the bracket of two material operations is therefore $-\vec p\times\vec q+i(p_0\vec q-q_0\vec p)$,
 a rotation plus a boost, and the Jacobi failure — which needs a scalar part in one argument and two
 non-parallel vector parts in the other two — is exactly a **boost phenomenon**: it is invisible on the
 rotations and enters with the mixed terms. The bracket's only invariant bilinear form is the rank-one
 $\varphi(\tilde P,\tilde Q)=P_0Q_0$, reading the scalar parts, with radical the whole vector subspace, and
 there is no nonzero alternating invariant form; its coefficient form vanishes; and the operator trace form
-$K=\operatorname{Tr}(L_{\tilde A}L_{\tilde B})=3A_0B_0-2(\mathbf A,\mathbf B)$ is non-degenerate but
+$K=\operatorname{Tr}(L_{\tilde A}L_{\tilde B})=3A_0B_0-2(\vec A,\vec B)$ is non-degenerate but
 **not** invariant, its failure being the Jacobi failure itself. Consequently the bracket has **no Killing
 form, no Casimir element and no nonzero inner derivation**, and its only Lie part is the derived bracket on
 $\mathrm{Vect}(\mathbb{B})$, isomorphic to $\mathfrak{sl}(2,\mathbb{C})$. This Lie structure is **missing
@@ -367,16 +367,16 @@ are *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*; th
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\wedge_{\natural}\tilde Q=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$ | the antisymmetrised quaternionic product (AQA) |
-| $P_0\mathbf Q-Q_0\mathbf P$ | the mixed term; the boost-like, Hermitian part on $\mathbb{M}_-$ |
-| $-\mathbf P\times\mathbf Q$ | the cross term; the compact, anti-Hermitian rotation part on $\mathbb{M}_-$ |
-| $-\mathbf p\times\mathbf q+i(p_0\mathbf q-q_0\mathbf p)$ | the bracket of two material operations; rotation plus boost |
+| $\tilde P\wedge_{\natural}\tilde Q=P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$ | the antisymmetrised quaternionic product (AQA) |
+| $P_0\vec Q-Q_0\vec P$ | the mixed term; the boost-like, Hermitian part on $\mathbb{M}_-$ |
+| $-\vec P\times\vec Q$ | the cross term; the compact, anti-Hermitian rotation part on $\mathbb{M}_-$ |
+| $-\vec p\times\vec q+i(p_0\vec q-q_0\vec p)$ | the bracket of two material operations; rotation plus boost |
 | $\mathbb{M}_+,\mathbb{M}_-$ | the Hermitian and anti-Hermitian sectors; the boost and rotation directions |
 | $\varphi(\tilde P,\tilde Q)=P_0Q_0$ | the only invariant bilinear form; rank $1$, radical $\mathrm{Vect}(\mathbb{B})$ |
-| $K(\tilde A,\tilde B)=\operatorname{Tr}(L_{\tilde A}L_{\tilde B})=3A_0B_0-2(\mathbf A,\mathbf B)$ | the operator trace form; non-degenerate, not invariant |
+| $K(\tilde A,\tilde B)=\operatorname{Tr}(L_{\tilde A}L_{\tilde B})=3A_0B_0-2(\vec A,\vec B)$ | the operator trace form; non-degenerate, not invariant |
 | $L_{\tilde A}$ | the left multiplication $\tilde R\mapsto\tilde A\wedge_{\natural}\tilde R$; trace $3A_0$, rank $3$ off the cone |
 | $\mathfrak{sl}(2,\mathbb{C})$ | the derived bracket on $\mathrm{Vect}(\mathbb{B})$; the only Lie part |
-| $i(p_0\mathbf q-q_0\mathbf p)$ | the boost parameter content: rapidity directions, non-compact |
+| $i(p_0\vec q-q_0\vec p)$ | the boost parameter content: rapidity directions, non-compact |
 
 ## Further Reading
 

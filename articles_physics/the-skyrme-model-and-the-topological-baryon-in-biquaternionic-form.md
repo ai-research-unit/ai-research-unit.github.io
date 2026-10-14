@@ -36,7 +36,7 @@ so $B = 1$ for the profile $F(0) = \pi$, $F(\infty) = 0$, and $B = k$ for $F(0) 
 - Companion article *Chiral Fermions in the Biquaternion Framework*, for the anomaly context of the Wess–Zumino–Witten term.
 - Companion article *The Standard Model under the Biquaternion Framework — A Research Agenda*, for the flavour and matter content.
 
-**Conventions.** We use those of the companion articles throughout. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_ae_b = -\delta_{ab}e_0 + \varepsilon_{abc}e_c$, and $i$ is the central scalar imaginary. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{H}^1_{\mathbb{B}}$ the unit real quaternions $\cong SU(2)\cong\mathbb{S}^3$. The skyrmion field is $\tilde U\in\mathbb{H}^1_{\mathbb{B}}$, its current is $j_\mu = \tilde U^{-1}\partial_\mu\tilde U\in\mathrm{SU}(2)\subset\mathbb{M}_-$, and the invariant trace is $\mathrm{Tr} = 2\,\mathrm{Sc}$ with the matrix trace $\mathrm{Tr}(e_ae_b) = -2\delta_{ab}$. The gradient is $\tilde\nabla = e_0\partial_{ict} + e_k\partial_k$, the $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$, and the biquaternion-norm contraction is the one whose positive kinetic term carries the overall sign exhibited below. The energy functional is written in the static gauge with coordinates $\mathbf{x}\in\mathbb{R}^3$, and natural units $\hbar = c = 1$ are used throughout. The decay constant is $f_\pi$ and the Skyrme parameter is $e$; the pion field is $\tilde\pi = \pi^a e_a\in\mathrm{SU}(2)\subset\mathbb{M}_-$ with $\tilde U = \exp(\tilde\pi/f_\pi)$, as in the pion article. The Skyrme Lagrangian is understood as the leading part of a derivative expansion of the pion effective theory, not as part of the framework's fundamental Lagrangian; the framework's fundamental scalar is free and has no potential, as the instanton-and-soliton article records.
+**Conventions.** We use those of the companion articles throughout. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_ae_b = -\delta_{ab}e_0 + \varepsilon_{abc}e_c$, and $i$ is the central scalar imaginary. The sectors are $\mathbb{M}_-$ (anti-Hermitian, material) and $\mathbb{M}_+$ (Hermitian, informational); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{H}^1_{\mathbb{B}}$ the unit real quaternions $\cong SU(2)\cong\mathbb{S}^3$. The skyrmion field is $\tilde U\in\mathbb{H}^1_{\mathbb{B}}$, its current is $j_\mu = \tilde U^{-1}\partial_\mu\tilde U\in\mathrm{SU}(2)\subset\mathbb{M}_-$, and the invariant trace is $\mathrm{Tr} = 2\,\mathrm{Sc}$ with the matrix trace $\mathrm{Tr}(e_ae_b) = -2\delta_{ab}$. The gradient is $\tilde\nabla = e_0\partial_{ict} + e_k\partial_k$, the $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$, and the biquaternion-norm contraction is the one whose positive kinetic term carries the overall sign exhibited below. The energy functional is written in the static gauge with coordinates $\vec x\in\mathbb{R}^3$, and natural units $\hbar = c = 1$ are used throughout. The decay constant is $f_\pi$ and the Skyrme parameter is $e$; the pion field is $\tilde\pi = \pi^a e_a\in\mathrm{SU}(2)\subset\mathbb{M}_-$ with $\tilde U = \exp(\tilde\pi/f_\pi)$, as in the pion article. The Skyrme Lagrangian is understood as the leading part of a derivative expansion of the pion effective theory, not as part of the framework's fundamental Lagrangian; the framework's fundamental scalar is free and has no potential, as the instanton-and-soliton article records.
 
 ## The Skyrme Field and the Skyrme Term
 
@@ -52,7 +52,7 @@ $$
 \tilde U^{-1} = \tilde U^{\natural} = \tilde U^{*} ,
 $$
 
-where the last identities hold because $\tilde U$ is a unit real quaternion. The field takes values in the manifold $\mathbb{S}^3$, and the analyses of this article are static: the energy functional is evaluated on configurations $\tilde U(\mathbf{x})$ that are pure gauge at spatial infinity, $\tilde U(\mathbf{x})\to e_0$ as $|\mathbf{x}|\to\infty$, so that they extend to maps $\mathbb{S}^3\to\mathbb{S}^3$.
+where the last identities hold because $\tilde U$ is a unit real quaternion. The field takes values in the manifold $\mathbb{S}^3$, and the analyses of this article are static: the energy functional is evaluated on configurations $\tilde U(\vec x)$ that are pure gauge at spatial infinity, $\tilde U(\vec x)\to e_0$ as $|\vec x|\to\infty$, so that they extend to maps $\mathbb{S}^3\to\mathbb{S}^3$.
 
 **The current.** The Maurer–Cartan form of the companion article is
 
@@ -96,10 +96,10 @@ The two invariants $\mathcal{L}_2$ and $\mathcal{L}_4$ are the first two terms o
 
 A static soliton in more than two spatial dimensions needs a term of higher order than the kinetic energy, and the reason is a scaling argument.
 
-**Derrick's scaling.** Let $\tilde U(\mathbf{x})$ be a static configuration of finite energy, and consider the one-parameter family obtained by spatial dilation,
+**Derrick's scaling.** Let $\tilde U(\vec x)$ be a static configuration of finite energy, and consider the one-parameter family obtained by spatial dilation,
 
 $$
-\tilde U_\lambda(\mathbf{x}) = \tilde U(\lambda\mathbf{x}) .
+\tilde U_\lambda(\vec x) = \tilde U(\lambda\vec x) .
 $$
 
 The two-derivative energy scales as
@@ -173,11 +173,11 @@ is the degree of the map $\tilde U:\mathbb{S}^3\to\mathbb{S}^3$ defined by the c
 **The hedgehog reduction.** For a configuration of the **hedgehog** form
 
 $$
-\tilde U(\mathbf{x}) = \cos F(r)\,e_0 + \sin F(r)\,\hat r ,
+\tilde U(\vec x) = \cos F(r)\,e_0 + \sin F(r)\,\hat r ,
 \qquad
 \hat r = \frac{x^a}{r}e_a ,
 \qquad
-r = |\mathbf{x}| ,
+r = |\vec x| ,
 $$
 
 which is the most general spherically symmetric map with the identity embedded at the origin, the winding-number density is

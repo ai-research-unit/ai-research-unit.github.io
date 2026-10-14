@@ -256,8 +256,8 @@ $$
 the compact part $U(2)$ of real dimension $4$ is the rotor $SU(2)$ together with the phase $U(1)$, and the non-compact part $\exp(\mathfrak{p})$, also of real dimension $4$, is the **boosts** (Hermitian traceless, three parameters) together with the **dilatation** (the scalar, one parameter). The polar form is this decomposition read factor by factor,
 
 $$
-\tilde{Q}=r\,e^{i\alpha}\,B\,\hat{q}
-=\underbrace{(e^{i\alpha}\hat{q})}_{\text{compact, }U(2)}\;\underbrace{(rB)}_{\text{non-compact, }\exp(\mathfrak{p})},
+\tilde{Q}=r\,e^{i\alpha}\,B\,\tilde u
+=\underbrace{(e^{i\alpha}\tilde u)}_{\text{compact, }U(2)}\;\underbrace{(rB)}_{\text{non-compact, }\exp(\mathfrak{p})},
 $$
 
 so the boost is the non-compact factor of the Lorentz group, the symmetric space $SL(2,\mathbb{C})/SU(2)=H^3$ of real dimension $3$, and it sits beside the dilatation as the four non-compact directions of the twisted group. With Lorentz alone the boost is present and the dilatation is not; with the twist the two are the two halves of the non-compact part.

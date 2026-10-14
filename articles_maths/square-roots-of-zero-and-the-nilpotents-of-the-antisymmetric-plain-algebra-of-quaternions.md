@@ -8,7 +8,7 @@ Algebraic Structures*, §*The Element Vocabulary*). The block of this article is
 plain multiplication
 
 $$
-\tilde p\times\tilde q=\tfrac12\bigl(\tilde p\tilde q-\tilde q\tilde p\bigr)=\mathbf p\times\mathbf q,
+\tilde p\times\tilde q=\tfrac12\bigl(\tilde p\tilde q-\tilde q\tilde p\bigr)=\vec p\times\vec q,
 $$
 
 the cross product of the two vector parts, which is alternating and without a unit (*Introduction to
@@ -38,7 +38,7 @@ Antisymmetric Plain Algebra*; the zero-divisor set, which is *Zero Divisors of t
 Plain Algebra*; the annihilators, which are *Annihilators of the Antisymmetric Plain Algebra*; or the
 parent's class, which is *Square Roots of Zero and the Nilpotents of the General Plain Algebra*.
 
-**The results.** For the antisymmetric plain multiplication $\tilde p\times\tilde q=\mathbf p\times\mathbf q$
+**The results.** For the antisymmetric plain multiplication $\tilde p\times\tilde q=\vec p\times\vec q$
 the square of every element vanishes, $\tilde p\times\tilde p=0$, so the equation
 $\tilde\xi\times\tilde\xi=0$ is a tautology and its nonzero solutions, **the roots of $0$**, are the
 **punctured space** $\mathbb{H}\setminus\{0\}$, which is at once the square-zero set and the
@@ -114,7 +114,7 @@ nonzero, with itself as partner (*Zero Divisors of the Antisymmetric Plain Algeb
 
 **Remark (the whole space, and not only the vector subspace).** The root set of $0$ is the whole
 space, and **not** the vector subspace: the scalar coordinate does not enter the square, since
-$\tilde\xi\times\tilde\xi=0$ for a non-pure element as well, and an element such as $e_0+\mathbf q$
+$\tilde\xi\times\tilde\xi=0$ for a non-pure element as well, and an element such as $e_0+\vec q$
 lies in the set as soon as it is nonzero. The set has real dimension four, and its elements are
 pairwise partners of themselves.
 
@@ -231,7 +231,7 @@ the Antisymmetric Plain Algebra*). Hence every element is its own annihilating p
 and on the right.
 
 The self-annihilation is the element-level form of the totality of the class. For a noncentral element
-the annihilator is the plane $\mathbb{R}e_0\oplus\mathbb{R}\mathbf\nu$ of real dimension two, which
+the annihilator is the plane $\mathbb{R}e_0\oplus\mathbb{R}\vec\nu$ of real dimension two, which
 contains the element; for a central element it is the whole space. The element lies in its annihilator
 in every case, which is the statement that the square vanishes.
 
@@ -309,7 +309,7 @@ sets are read in *Square Roots of Zero and the Nilpotents in the 6 Algebraic Str
 
 ## Summary
 
-For the antisymmetric plain multiplication $\tilde p\times\tilde q=\mathbf p\times\mathbf q$ the square
+For the antisymmetric plain multiplication $\tilde p\times\tilde q=\vec p\times\vec q$ the square
 of every element vanishes, so the equation $\tilde\xi\times\tilde\xi=0$ is a tautology and its roots,
 the roots of $0$, are the punctured space, the whole space with the origin removed; the root set
 coincides with the square-zero set and with the zero-divisor set. The nilpotent class is the whole
@@ -327,7 +327,7 @@ enlargement being the removal of the scalar part from the square.
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde p\times\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\mathbf p\times\mathbf q$ | the antisymmetric plain multiplication, the operation $\mathrm{APA}$ |
+| $\tilde p\times\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\vec p\times\vec q$ | the antisymmetric plain multiplication, the operation $\mathrm{APA}$ |
 | $\tilde\xi\times\tilde\xi=0$ | the root equation of $0$, a tautology |
 | $\mathbb{H}\setminus\{0\}$ | the roots of $0$, at once the nilpotents, the square-zero elements and the zero divisors |
 | $\mathbb{H}$ | the nilpotent class of the block, the trivial origin included |

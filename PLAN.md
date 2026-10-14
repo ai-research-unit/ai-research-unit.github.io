@@ -55,6 +55,9 @@ Use plain words.
 
 When a simple question is asked, make a simple response using a clear language, if possible under 200 words.
 
+When chatting, use chat-math mode — write math as $…$ inline and $$…$$ for display, never in backticks, never bare, never \(…\).
+
+
 When there is an issue, explain it clearly.
 
 Avoid verbiage, jargon, over-engineering, complacency.

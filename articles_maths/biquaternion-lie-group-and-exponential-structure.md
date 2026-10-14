@@ -6,7 +6,7 @@ The group of units $\mathbb{B}^\times$ is a real Lie group, and its exponential 
 
 The exponential itself — its series, its closed form, the logarithm and the power functions — is computed in *Biquaternion Elementary Functions*, and only its group-theoretic consequences are used here; the Lie algebra is in Algebra, and the topology of the group is in *The Biquaternion Unit Group as a Topological Group*.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$, and $\tilde{Q}$ is a unit exactly when $N(\tilde{Q})\neq0$ (*Norm and Invertibility in the General Quaternionic Algebra*). Throughout, a biquaternion is written $\tilde{Q}=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^3 Q_k e_k$.
+**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$, and $\tilde{Q}$ is a unit exactly when $N(\tilde{Q})\neq0$ (*Norm and Invertibility in the General Quaternionic Algebra*). Throughout, a biquaternion is written $\tilde{Q}=Q_0e_0+\vec Q$ with $\vec Q=\sum_{k=1}^3 Q_k e_k$.
 
 ---
 
@@ -72,7 +72,7 @@ $$
 
 In particular $M_3(\mathbb{B})\cong M_6(\mathbb{C})$ contains $\mathfrak{u}(3)$ and hence $\mathfrak{su}(3)$, with its eight generators written as $3\times3$ matrices of biquaternions. This realises the ceiling's answer: the octet is not in $\mathbb{B}$, and it *is* in $M_3(\mathbb{B})$, for the price of enlarging the carrier by the factor $2$ in each matrix direction. Since $\mathbb{B}\hookrightarrow M_3(\mathbb{B})$ by the scalar matrices, the chain is $\mathfrak{su}(2)=\mathfrak{k}\subset\mathfrak{su}(3)\subset\mathfrak{u}(3)\subset M_3(\mathbb{B})$.
 
-The closed forms use the Conway operator calculus of *The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure*, §*The Conway Operator Basis*: $a[\,]b$ is the linear function $\tilde{Q}\mapsto a\tilde{Q}b$, $\odot$ is composition, $D\{d_1,d_2,d_3\}=\frac12\sum_kd_ke_k[\,]e_k$, and for a unit vector $\mathbf b$ each of the generators $b[\,]b$ and $e_k[\,]e_k$ has square the identity, $(b[\,]b)^2=(e_k[\,]e_k)^2=[\,]$, so their exponentials are trigonometric.
+The closed forms use the Conway operator calculus of *The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure*, §*The Conway Operator Basis*: $a[\,]b$ is the linear function $\tilde{Q}\mapsto a\tilde{Q}b$, $\odot$ is composition, $D\{d_1,d_2,d_3\}=\frac12\sum_kd_ke_k[\,]e_k$, and for a unit vector $\vec b$ each of the generators $b[\,]b$ and $e_k[\,]e_k$ has square the identity, $(b[\,]b)^2=(e_k[\,]e_k)^2=[\,]$, so their exponentials are trigonometric.
 
 **Proposition (the three exponentials).** $\mathrm{EXP}$ denoting the exponential series of a linear function, for real $\alpha$, $\beta$ and $\delta_k$,
 
@@ -89,7 +89,7 @@ $$
 
 *Proof.* The first is the Olinde–Rodrigues formula, verified residual $5.8\times10^{-16}$; for the second and third the squares of the generators are the identity, $(b[\,]b)^2=[\,]$ and $(e_k[\,]e_k)^2=[\,]$, so the series collapses to cosine and sine, verified residuals $1.7\times10^{-15}$ and $1.0\times10^{-15}$. The signs of the imaginary units are the ones that make the results compact for real parameters: $D$ carries $i$ and $b[\,]b$ carries $i$, while the antisymmetric function carries none.
 
-**Theorem (Lie-type forms for $\mathrm{SU}(3)$, $\mathrm{SL}(3,\mathbb{R})$ and $\mathrm{SL}(3,\mathbb{C})$).** For real $\alpha,\beta,\delta_1,\delta_2$, with $\mathbf a$ and $\mathbf b$ unit vectors and $\delta_1+\delta_2+\delta_3=0$, every element of $\mathrm{SU}(3)$ is
+**Theorem (Lie-type forms for $\mathrm{SU}(3)$, $\mathrm{SL}(3,\mathbb{R})$ and $\mathrm{SL}(3,\mathbb{C})$).** For real $\alpha,\beta,\delta_1,\delta_2$, with $\vec a$ and $\vec b$ unit vectors and $\delta_1+\delta_2+\delta_3=0$, every element of $\mathrm{SU}(3)$ is
 
 $$
 G=\exp\Bigl(\tfrac{\beta}{2}i\,b[\,]b\Bigr)\odot\exp\Bigl(\tfrac{\alpha}{2}\bigl(a[\,]-[\,]a\bigr)\Bigr)
@@ -98,7 +98,7 @@ $$
 
 with the eight independent parameters $\alpha,\beta,\delta_1,\delta_2$ and the four angles in the two unit vectors. Suppressing the imaginary units gives the same formula for $\mathrm{SL}(3,\mathbb{R})$ when all parameters are real, and for $\mathrm{SL}(3,\mathbb{C})$ when they are complex.
 
-**Theorem (Euler-angles forms).** With unit vectors $\mathbf a,\mathbf b,\mathbf c,\mathbf d,\mathbf u,\mathbf v,\mathbf w$ and real angles,
+**Theorem (Euler-angles forms).** With unit vectors $\vec a,\vec b,\vec c,\vec d,\vec u,\vec v,\vec w$ and real angles,
 
 $$
 U_{\mathrm{SU}(3)}=\exp\bigl(\tfrac{\alpha}{2}a\bigr)[\,]\exp\bigl(-\tfrac{\alpha}{2}a\bigr)
@@ -120,7 +120,7 @@ U_{\mathrm{SU}(2)}=\exp\bigl(\tfrac{\alpha}{2}w\bigr)[\,]\exp\bigl(-\tfrac{\alph
 \odot\exp\bigl(\tfrac{\gamma}{2}w\bigr)[\,]\exp\bigl(-\tfrac{\gamma}{2}w\bigr).
 $$
 
-Each **outer** factor is a conjugation of the argument by a single unit vector, $e^{\theta}[\,]e^{-\theta}$; the $\mathrm{SU}(3)$ form has two of them, with unit vectors $\mathbf a$ and $\mathbf b$ and the four angles they carry, and its middle factor is a traceless diagonal $D\{\beta,\gamma,-\beta-\gamma\}$. The $\mathrm{SU}(4)$ form pairs **different** vectors in each outer factor, $\exp(\tfrac\alpha2a)[\,]\exp(-\tfrac\beta2b)$ and $\exp(\tfrac\psi2c)[\,]\exp(-\tfrac\eta2d)$, and its middle factor carries three diagonal parameters $\gamma,\delta,\epsilon$ with no trace condition: that is $7$ scalar parameters and $8$ angles, the fifteen parameters of $\mathrm{SU}(4)$.
+Each **outer** factor is a conjugation of the argument by a single unit vector, $e^{\theta}[\,]e^{-\theta}$; the $\mathrm{SU}(3)$ form has two of them, with unit vectors $\vec a$ and $\vec b$ and the four angles they carry, and its middle factor is a traceless diagonal $D\{\beta,\gamma,-\beta-\gamma\}$. The $\mathrm{SU}(4)$ form pairs **different** vectors in each outer factor, $\exp(\tfrac\alpha2a)[\,]\exp(-\tfrac\beta2b)$ and $\exp(\tfrac\psi2c)[\,]\exp(-\tfrac\eta2d)$, and its middle factor carries three diagonal parameters $\gamma,\delta,\epsilon$ with no trace condition: that is $7$ scalar parameters and $8$ angles, the fifteen parameters of $\mathrm{SU}(4)$.
 
 **Remark (the inverse).** The inverse of any of these elements is obtained by reversing the order of the factors and changing the signs of the exponents, and it equals the biconjugate of the function,
 $$G^{-1}=G^{+\approx}=G^{\dagger},$$

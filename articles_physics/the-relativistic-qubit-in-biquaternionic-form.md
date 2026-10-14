@@ -33,13 +33,13 @@ $$
 $$
 and it is the ordinary relation between a ket and a density operator. A general state is
 $$
-\tilde{\rho} = \tfrac12\bigl(e_0 + i\mathbf{r}\bigr), \qquad \mathbf{r}\in\mathbb{R}^3, \qquad |\mathbf{r}| = 1 \iff \tilde{\rho}\ \text{pure},
+\tilde{\rho} = \tfrac12\bigl(e_0 + i\vec r\bigr), \qquad \vec r\in\mathbb{R}^3, \qquad |\vec r| = 1 \iff \tilde{\rho}\ \text{pure},
 $$
-so the state space is the Bloch ball $|\mathbf{r}|\leq1$, and the pure states are its boundary. The pure-state idempotents are
+so the state space is the Bloch ball $|\vec r|\leq1$, and the pure states are its boundary. The pure-state idempotents are
 $$
 \tilde\Pi_{1,2}(\hat{\mu}) = \tfrac12\bigl(e_0 \pm i\hat{\mu}\bigr), \qquad |\hat{\mu}| = 1,
 $$
-and the Born pairing is $\mathrm{Tr}(\tilde{\rho}\tilde{H}) = h_0 + \mathbf{r}\cdot\mathbf{h}$. None of this uses relativity; it is the content of the quantum-mechanical companion, recalled here because the relativistic qubit is a structure imposed on this state space.
+and the Born pairing is $\mathrm{Tr}(\tilde{\rho}\tilde{H}) = h_0 + \vec r\cdot\vec h$. None of this uses relativity; it is the content of the quantum-mechanical companion, recalled here because the relativistic qubit is a structure imposed on this state space.
 
 ### Why the carrier is forced
 
@@ -51,8 +51,8 @@ The word *native* is exact and is worth one paragraph, because it is what makes 
 
 A biquaternion of unit norm,
 $$
-\tilde{\Lambda} = \cosh\frac{\psi}{2}\,e_0 + i\sinh\frac{\psi}{2}\,\hat{\mathbf{u}} \quad(\text{boost}), \qquad
-\tilde{R} = \cos\frac{\theta}{2}\,e_0 + \sin\frac{\theta}{2}\,\hat{\mathbf{n}} \quad(\text{rotation}),
+\tilde{\Lambda} = \cosh\frac{\psi}{2}\,e_0 + i\sinh\frac{\psi}{2}\,\hat u \quad(\text{boost}), \qquad
+\tilde{R} = \cos\frac{\theta}{2}\,e_0 + \sin\frac{\theta}{2}\,\hat n \quad(\text{rotation}),
 $$
 satisfies $N(\tilde{\Lambda}) = 1$, hence $\tilde{\Lambda}^{-1} = \tilde{\Lambda}^{\natural}$, and the unit-norm elements form $SL(2,\mathbb{C})$, the double cover of the proper orthochronous Lorentz group. The same element acts on the two sectors by different formulas:
 
@@ -88,9 +88,9 @@ which is the unitarity condition. Among the unit-norm elements, $\tilde{\Lambda}
 $$
 \text{the spinor norm is preserved by } SU(2) \text{ and by no other subgroup of } SL(2,\mathbb{C}).
 $$
-A boost fails the condition maximally: for $\tilde{\Lambda}$ Hermitian one has $\tilde{\Lambda}^{*}\tilde{\Lambda} = \tilde{\Lambda}^2 = e_0 + i\sinh\psi\,\hat{\mathbf{u}}$, so
+A boost fails the condition maximally: for $\tilde{\Lambda}$ Hermitian one has $\tilde{\Lambda}^{*}\tilde{\Lambda} = \tilde{\Lambda}^2 = e_0 + i\sinh\psi\,\hat u$, so
 $$
-\langle\tilde{\Lambda}u|\tilde{\Lambda}u\rangle = \langle u|u\rangle + i\sinh\psi\,\langle u|\hat{\mathbf{u}}|u\rangle \neq \langle u|u\rangle .
+\langle\tilde{\Lambda}u|\tilde{\Lambda}u\rangle = \langle u|u\rangle + i\sinh\psi\,\langle u|\hat u|u\rangle \neq \langle u|u\rangle .
 $$
 The norm is scaled by a positive factor rather than rotated, so the ray is preserved but the normalization is not.
 
@@ -133,38 +133,38 @@ $$
 $$
 be the corresponding pure state. Define
 $$
-\tilde{V}(u) = i\,\tilde\Pi(u)\in\mathbb{M}_- .
+\tilde{\ell}(u) = i\,\tilde\Pi(u)\in\mathbb{M}_- .
 $$
-Two elementary facts identify $\tilde{V}$ as a future null four-vector.
+Two elementary facts identify $\tilde{\ell}$ as a future null four-vector.
 
 **It is null.** The determinant of a rank-one matrix vanishes, and under the matrix model the determinant is the biquaternion norm, so
 $$
 N\bigl(\tilde\Pi(u)\bigr) = \det\mathsf{M}_2\bigl(\tilde\Pi(u)\bigr) = \det\bigl(|u\rangle\langle u|\bigr) = 0 ,
 \qquad
-N\bigl(\tilde{V}(u)\bigr) = i^2 N\bigl(\tilde\Pi(u)\bigr) = 0 .
+N\bigl(\tilde{\ell}(u)\bigr) = i^2 N\bigl(\tilde\Pi(u)\bigr) = 0 .
 $$
 
-**It is future-directed and of definite normalization.** Writing $\tilde\Pi(u) = \tfrac12(e_0 + i\mathbf{r})$ with $|\mathbf{r}| = 1$, the element $\tilde{V}(u) = i\tilde\Pi(u)$ has the form
+**It is future-directed and of definite normalization.** Writing $\tilde\Pi(u) = \tfrac12(e_0 + i\vec r)$ with $|\vec r| = 1$, the element $\tilde{\ell}(u) = i\tilde\Pi(u)$ has the form
 $$
-\tilde{V}(u) = \tfrac{i}{2}\,e_0 - \tfrac12\,\mathbf{r} ,
+\tilde{\ell}(u) = \tfrac{i}{2}\,e_0 - \tfrac12\,\vec r ,
 $$
-so in the four-vector coordinates $\tilde{Q} = ict\,e_0 + \mathbf{x}$ its time component is $ct = \tfrac12 > 0$ and its spatial direction is
+so in the four-vector coordinates $\tilde{Q} = ict\,e_0 + \vec x$ its time component is $ct = \tfrac12 > 0$ and its spatial direction is
 $$
-\hat{\mathbf{p}} = -\hat{\mathbf{r}} .
+\hat p = -\hat r .
 $$
 The map takes a pure state of the informational sector to the unit-length future-directed null four-vector of its own Bloch direction, reversed in space; it is a bijection from the Bloch sphere onto the celestial sphere.
 
 **It is equivariant.** The map intertwines the spinor action with the four-vector action,
 $$
-\tilde{V}\bigl(\tilde{\Lambda}u\bigr)
+\tilde{\ell}\bigl(\tilde{\Lambda}u\bigr)
 = i\,\mathsf{M}_2^{-1}\!\bigl(\mathsf{M}_2(\tilde{\Lambda})|u\rangle\langle u|\mathsf{M}_2(\tilde{\Lambda})^\dagger\bigr)
-= \tilde{\Lambda}\,\tilde{V}(u)\,\tilde{\Lambda}^{*} ,
+= \tilde{\Lambda}\,\tilde{\ell}(u)\,\tilde{\Lambda}^{*} ,
 $$
 which is the statement that the diagram of the two actions commutes: the informational ray and its material null direction are carried by the same Lorentz transformation. The verification is the associativity of the matrix product together with $\mathsf{M}_2(\tilde{\Lambda}^{*}) = \mathsf{M}_2(\tilde{\Lambda})^\dagger$.
 
 ### The material image of an informational state
 
-The null-vector map gives the relativistic qubit a geometric face and is the precise sense in which the two sectors of the structural companion are linked at the level of a single state. A pure spinor state *is* a light direction; the material sector receives an image of the informational state, and the image transforms covariantly. The correspondence is the biquaternion form of the standard spinor–helicity construction, in which a two-component Weyl spinor is the square root of a null momentum, and the celestial sphere of the pure states is the sphere of null directions. It is worth noting what the map is not: it is defined for pure states, it takes the ray and not the spinor (the two spinors $\pm|u\rangle$ give the same $\tilde{V}$), and it carries no information about the normalization, which the boost changes. For mixed states there is no analogous map, because the element $i\tilde{\rho}$ of $\mathbb{M}_-$ is not null except on the boundary, and the natural invariant of a mixed state is $N(\tilde{\rho}) = \tfrac14(1-|\mathbf{r}|^2)\geq0$, which measures the distance from the pure boundary rather than a direction.
+The null-vector map gives the relativistic qubit a geometric face and is the precise sense in which the two sectors of the structural companion are linked at the level of a single state. A pure spinor state *is* a light direction; the material sector receives an image of the informational state, and the image transforms covariantly. The correspondence is the biquaternion form of the standard spinor–helicity construction, in which a two-component Weyl spinor is the square root of a null momentum, and the celestial sphere of the pure states is the sphere of null directions. It is worth noting what the map is not: it is defined for pure states, it takes the ray and not the spinor (the two spinors $\pm|u\rangle$ give the same $\tilde{\ell}$), and it carries no information about the normalization, which the boost changes. For mixed states there is no analogous map, because the element $i\tilde{\rho}$ of $\mathbb{M}_-$ is not null except on the boundary, and the natural invariant of a mixed state is $N(\tilde{\rho}) = \tfrac14(1-|\vec r|^2)\geq0$, which measures the distance from the pure boundary rather than a direction.
 
 **A worked instance.** Take the spin-up state along $z$, $|u\rangle = (1,0)^{\mathsf T}$, and boost along $x$ with rapidity $\psi = 0.6$. The spinor becomes
 $$
@@ -172,14 +172,14 @@ $$
 $$
 whose norm is $1.34986 = e^{0.3}$, not $1$: the boost has scaled the spinor, as the non-unitarity computation predicts. The ray, however, has moved, and the Bloch vector of the normalized state is
 $$
-\hat{\mathbf{r}}: \ (0,0,1) \ \longmapsto\ (0.53705,\ 0,\ 0.84355),
+\hat r: \ (0,0,1) \ \longmapsto\ (0.53705,\ 0,\ 0.84355),
 $$
 a Möbius displacement from the north pole toward $+x$. The null four-vector is correspondingly
 $$
-\tilde{V} = \bigl(\tfrac{i}{2},\ -\tfrac12\hat{\mathbf{r}}\bigr): \
+\tilde{\ell} = \bigl(\tfrac{i}{2},\ -\tfrac12\hat r\bigr): \
 \bigl(0.5i,\ 0,\ 0,\ -0.5\bigr) \ \longmapsto\ \bigl(0.59273i,\ -0.31833,\ 0,\ -0.5\bigr),
 $$
-which remains null, $N(\tilde{V}) = 0$ in both frames, and is carried by the same rotor. A boost along the spin's own axis, by contrast, leaves the ray fixed — $|u\rangle = (1,1)^{\mathsf T}/\sqrt2$ boosted along $x$ returns the ray of $(1,1)^{\mathsf T}$ with the norm scaled by $e^{0.3}$ — because a Möbius map fixing its own fixed point on the sphere only scales the coordinate. These two behaviours, the displacement of a transverse spin and the scaling of a longitudinal one, are the elementary kinematics of the relativistic qubit.
+which remains null, $N(\tilde{\ell}) = 0$ in both frames, and is carried by the same rotor. A boost along the spin's own axis, by contrast, leaves the ray fixed — $|u\rangle = (1,1)^{\mathsf T}/\sqrt2$ boosted along $x$ returns the ray of $(1,1)^{\mathsf T}$ with the norm scaled by $e^{0.3}$ — because a Möbius map fixing its own fixed point on the sphere only scales the coordinate. These two behaviours, the displacement of a transverse spin and the scaling of a longitudinal one, are the elementary kinematics of the relativistic qubit.
 
 ## Mixed States and the Little Group
 
@@ -197,7 +197,7 @@ $$
 $$
 and after normalizing, the centre of the Bloch ball is carried to the point
 $$
-\mathbf{r} = \tanh\psi\ \hat{\mathbf{u}},
+\vec r = \tanh\psi\ \hat u,
 $$
 not to itself. A transformation that moves the maximally mixed state while scaling the trace is not a channel, and the reason is structural: the congruence by a non-unitary element is a map on the *algebra*, not an operation on the *state space*, and the companion quantum-mechanical article records the same fact from the group side — the trace pairing, on which the Born rule rests, is preserved exactly by the unitary group and by no larger one.
 
@@ -215,7 +215,7 @@ $$
 $$
 and this is the little group of a **massive** particle. Its representations are the spin representations: the spin-$\tfrac12$ representation is the defining two-dimensional one, and the qubit at rest is the carrier of that representation.
 
-For a **massless** particle the four-velocity is replaced by the null four-momentum $\tilde{V}$ with $N(\tilde{V}) = 0$. The stabilizer of a null element in $SL(2,\mathbb{C})$ is larger: it is the two-dimensional Euclidean group $E(2)$, generated by one rotation about the spatial momentum and two null translations, and it is non-compact. Its finite-dimensional unitary representations are one-dimensional and labelled by the helicity. The massless relativistic qubit therefore does not have a rest-frame two-state structure; it has a helicity label and a single state per momentum, which is the group-theoretic statement that a massless spin-$\tfrac12$ particle has one helicity state rather than two spin states. The distinction between the massive and the massless qubit is thus a distinction between the two little groups,
+For a **massless** particle the four-velocity is replaced by the null four-momentum $\tilde{\ell}$ with $N(\tilde{\ell}) = 0$. The stabilizer of a null element in $SL(2,\mathbb{C})$ is larger: it is the two-dimensional Euclidean group $E(2)$, generated by one rotation about the spatial momentum and two null translations, and it is non-compact. Its finite-dimensional unitary representations are one-dimensional and labelled by the helicity. The massless relativistic qubit therefore does not have a rest-frame two-state structure; it has a helicity label and a single state per momentum, which is the group-theoretic statement that a massless spin-$\tfrac12$ particle has one helicity state rather than two spin states. The distinction between the massive and the massless qubit is thus a distinction between the two little groups,
 $$
 SU(2)\ (\text{massive, spin}), \qquad E(2)\ (\text{massless, helicity}),
 $$
@@ -255,7 +255,7 @@ The frame dependence of everything that follows enters through the momentum argu
 
 ## Observables, Generators, and the Two Sectors
 
-**Observables.** The observables of the qubit are the Hermitian elements $\tilde{H} = h_0e_0 + i\mathbf{h}$, with the spin operators
+**Observables.** The observables of the qubit are the Hermitian elements $\tilde{H} = h_0e_0 + i\vec h$, with the spin operators
 $$
 \tilde{S}_k = \frac{\hbar}{2}\,i e_k , \qquad [\tilde{S}_j,\tilde{S}_k] = i\hbar\,\epsilon_{jkl}\tilde{S}_l ,
 $$
@@ -277,7 +277,7 @@ The relativistic qubit is the defining module $S$ of $\mathbb{B}$ with the left 
 
 The left action is not unitary. The spinor norm is preserved if and only if $\tilde{\Lambda}^{*}\tilde{\Lambda} = e_0$, which selects $SU(2)$ inside $SL(2,\mathbb{C})$; a boost scales the norm and leaves the ray transformed by a Möbius map. Each pure state determines a future null four-vector
 $$
-\tilde{V}(u) = i\,\mathsf{M}_2^{-1}\bigl(|u\rangle\langle u|\bigr) = \tfrac{i}{2}e_0 - \tfrac12\mathbf{r}, \qquad N(\tilde{V}) = 0, \qquad \tilde{V}(\tilde{\Lambda}u) = \tilde{\Lambda}\tilde{V}(u)\tilde{\Lambda}^{*} ,
+\tilde{\ell}(u) = i\,\mathsf{M}_2^{-1}\bigl(|u\rangle\langle u|\bigr) = \tfrac{i}{2}e_0 - \tfrac12\vec r, \qquad N(\tilde{\ell}) = 0, \qquad \tilde{\ell}(\tilde{\Lambda}u) = \tilde{\Lambda}\tilde{\ell}(u)\tilde{\Lambda}^{*} ,
 $$
 so the informational ray and its material null direction are carried by the same Lorentz transformation; the pure-state Bloch sphere is the celestial sphere, with the spatial direction of the null vector opposite the Bloch direction. The map exists for pure states only.
 
@@ -295,14 +295,14 @@ which fixes the rest four-velocity, is a unit real quaternion, and acts on the B
 | $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ | Matrix model, $e_k\mapsto-i\sigma_k$, $i\mapsto iI_2$ |
 | $S = \mathbb{C}^2$ | Defining (spinor) module, the qubit carrier |
 | $|u\rangle\in S$ | State vector (spinor) |
-| $\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$ | State, Bloch vector $\mathbf{r}$, $|\mathbf{r}|\leq1$ |
+| $\tilde{\rho} = \tfrac12(e_0 + i\vec r)$ | State, Bloch vector $\vec r$, $|\vec r|\leq1$ |
 | $\tilde\Pi_{1,2}(\hat{\mu}) = \tfrac12(e_0\pm i\hat{\mu})$ | Pure-state idempotent |
 | $\tilde{\Lambda}$, $N(\tilde{\Lambda}) = 1$ | Unit-norm biquaternion, element of $SL(2,\mathbb{C})$ |
 | $SU(2)$ | Unit real quaternions, unitary subgroup |
 | $z = u_1/u_0$ | Möbius coordinate on the pure-state sphere $\mathbb{CP}^1$ |
-| $\tilde{V}(u) = i\mathsf{M}_2^{-1}(|u\rangle\langle u|)$ | Future null four-vector of a pure state, $N(\tilde{V}) = 0$ |
-| $\hat{\mathbf{p}} = -\hat{\mathbf{r}}$ | Null direction opposite the Bloch direction |
-| $\tilde{U} = \gamma(ic\,e_0 + \mathbf{v})$ | Four-velocity, $N(\tilde{U}) = -c^2$ |
+| $\tilde{\ell}(u) = i\mathsf{M}_2^{-1}(|u\rangle\langle u|)$ | Future null four-vector of a pure state, $N(\tilde{\ell}) = 0$ |
+| $\hat p = -\hat r$ | Null direction opposite the Bloch direction |
+| $\tilde{U} = \gamma(ic\,e_0 + \vec v)$ | Four-velocity, $N(\tilde{U}) = -c^2$ |
 | $\mathrm{Little}(\tilde{U})$ | Stabilizer of $\tilde{U}$: $U(2)$ massive, $E(2)$ massless |
 | $\tilde{\Lambda}_{\tilde{U}}$ | Standard boost carrying $\tilde{U}$ to rest |
 | $\tilde{W}(\tilde{\Lambda},\tilde{U}) = \tilde{\Lambda}_{\tilde{U}'}\tilde{\Lambda}\tilde{\Lambda}_{\tilde{U}}^{-1}$ | Wigner rotation, $\in SU(2)$ |

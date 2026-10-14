@@ -44,7 +44,7 @@ $$
 Q_0 = q_0 + iq'_0, \qquad Q_1 = q_1 + iq'_1, \qquad Q_2 = q_2 + iq'_2, \qquad Q_3 = q_3 + iq'_3, \qquad q_\mu, q'_\mu \in \mathbb{R},
 $$
 
-replaces the four complex coefficients by **eight real parameters**: $q_\mu$ is the real part of $Q_\mu$, the coefficient of $e_\mu$, and $q'_\mu$ its imaginary part, the coefficient of $ie_\mu$, so the prime marks the parameter that carries the $i$. As a real vector space $\mathbb{B}$ is eight-dimensional, and the remarkable subspaces below are what the eight parameters are grouped into. The full set of parametrisations, and the two conventions they embody, are in *The Element and Its Coefficients* and *Remarkable Subspaces* below; nothing in them changes the split stated here.
+replaces the four complex coefficients by **eight real parameters**: $q_\mu$ is the real part of $Q_\mu$, the coefficient of $e_\mu$, and $q'_\mu$ its imaginary part, the coefficient of $ie_\mu$, so the prime marks the parameter that carries the $i$. As a real vector space $\mathbb{B}$ is eight-dimensional, and the remarkable subspaces below are what the eight parameters are grouped into. The full set of parametrisations, and the two conventions they embody, are in *The Elements and their Coefficients* and *Remarkable Subspaces* below; nothing in them changes the split stated here.
 
 One structural fact governs the whole series, so it is worth isolating. **The scalar unit $i$ is central**: it commutes with every element of $\mathbb{B}$, because it belongs to the $\mathbb{C}$ factor of the tensor product, while the quaternion units belong to the $\mathbb{H}$ factor. Multiplication by a *central* phase $e^{i\alpha}$ therefore commutes with every operator constructed from the algebra — in particular with the biquaternionic gradient $\tilde{\nabla}$ — and this is why the central phase is the algebra's natural continuous symmetry. The articles on Noether's theorem and the gauge principle rest on it.
 
@@ -58,21 +58,35 @@ $$
 
 and this identification is used constantly. It is fixed by a single isomorphism, written $\mathsf{M}_2$; its four basis images, and the rule that neither the factor $i$ nor the sign is a free choice, are stated in *The 2×2 Matrix Representation* below, and the development of the representation — the general element, the remarkable subspaces as matrices, the conjugations, the trace and the determinant — is in the companion article *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*. Its two **minimal left ideals** are the algebra's two chiralities; the spinor module and the mass term a field equation builds on that structure are the subject of *The Dirac Equation in Biquaternionic Form*.
 
-## The Element and Its Coefficients
+## The Elements and their Coefficients
 
 The case and the tilde of the glyph are fixed first, and the element is written after. A generic element is preferably written so that the glyph alone identifies its algebra, two features being read together: the **case** separates a real scalar from a complex one, and a **tilde** marks the quaternionic factor.
 
 | System | Name | Generic element | Scalar–vector decomposition | Coefficients |
 |---|---|---|---|---|
 | $\mathbb{C}$ | Complex numbers | $A = a + ia'$ | Scalar $a$, vector $ia'$ | Real, $a, a'$ |
-| $\mathbb{H}$ | Quaternions | $\tilde q = q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$ | $q_0e_0 + \mathbf q$, $\mathbf q = q_1e_1 + q_2e_2 + q_3e_3$ | Real |
-| $\mathbb{B}$ | Biquaternions | $\tilde Q = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$ | $Q_0e_0 + \mathbf Q$, $\mathbf Q = Q_1e_1 + Q_2e_2 + Q_3e_3$, $Q_\mu\in\mathbb{C}$ | Complex, $Q_\mu = q_\mu + iq'_\mu$ |
+| $\mathbb{H}$ | Quaternions | $\tilde q = q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$ | $q_0e_0 + \vec q$, $\vec q = q_1e_1 + q_2e_2 + q_3e_3$ | Real, $q_\mu$ |
+| $\mathbb{B}$ | Biquaternions | $\tilde Q = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$ | $Q_0e_0 + \vec Q$, $\vec Q = Q_1e_1 + Q_2e_2 + Q_3e_3$, $Q_\mu\in\mathbb{C}$ | Complex, $Q_\mu = q_\mu + iq'_\mu$ |
 
-Four rules are read off the table. **A complex element carries a majuscule**, $A$, the case naming the scalar sector: an upper-case glyph has a scalar sector larger than the reals, a lower-case one has the reals. **The second coordinate of a complex element carries a prime**, $A = a + ia'$. And **the quaternionic elements carry a tilde**: lower case for the quaternions, $\tilde q$, and upper case for the biquaternions, $\tilde Q$. Finally, **the element is a scalar part plus a vector part**: the scalar part is carried by the unit — $1$ in $\mathbb{C}$, $e_0$ in $\mathbb{H}$ and $\mathbb{B}$ — and the vector part by the remaining basis directions, assembled in the bold letter $\mathbf q$ or $\mathbf Q$, so that $\tilde Q = Q_0e_0 + \mathbf Q$ with $\mathbf Q = Q_1e_1 + Q_2e_2 + Q_3e_3$ and $Q_\mu = q_\mu + iq'_\mu$.
+Four rules are read off the table. **A complex element carries a majuscule**, $A$, the case naming the scalar sector: an upper-case glyph has a scalar sector larger than the reals, a lower-case one has the reals. **The second coordinate of a complex element carries a prime**, $A = a + ia'$. And **the quaternionic elements carry a tilde**: lower case for the quaternions, $\tilde q$, and upper case for the biquaternions, $\tilde Q$. Finally, **the element is a scalar part plus a vector part**: the scalar part is carried by the unit — $1$ in $\mathbb{C}$, $e_0$ in $\mathbb{H}$ and $\mathbb{B}$ — and the vector part by the remaining basis directions, carrying the arrow, $\vec q$ or $\vec Q$, so that $\tilde Q = Q_0e_0 + \vec Q$ with $\vec Q = Q_1e_1 + Q_2e_2 + Q_3e_3$ and $Q_\mu = q_\mu + iq'_\mu$. The arrow is reserved for the vector part of a named element, and the hat for a pure element, one with no scalar part (§*Pure Elements and their Coefficients*): the vector part of $\tilde{Q}$ is $\vec{Q}$, a pure element standing by itself is $\hat q$ or $\hat Q$, and a unit pure quaternion is written $\hat u$. The two marks are never stacked.
+
+**The element with its vector.** The rules collect into a scalar part beside a vector part,
+
+$$
+\tilde q = q_0e_0 + \vec q , \qquad \tilde Q = Q_0e_0 + \vec Q .
+$$
+
+with
+
+$$
+\vec q = q_1e_1 + q_2e_2 + q_3e_3 , \qquad \vec Q = Q_1e_1 + Q_2e_2 + Q_3e_3 .
+$$
+
+The first is the general quaternion and the second the general biquaternion, each written as a scalar part beside a vector part.
 
 The notation of this article already reads through the convention: the coefficients $q_\mu$ are real, the coefficients $Q_\mu = q_\mu + iq'_\mu$ are complex, and a general element of $\mathbb{B}$ is written $\tilde Q$.
 
-**The generic element and the four-momentum share the letter $\tilde{P}$.** A statement that holds for every element is written with $\tilde{P}$ or $\tilde{Q}$ — the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{Q})$, the commutator bracket $[\tilde{P},\tilde{Q}] = \tilde{P}\tilde{Q} - \tilde{Q}\tilde{P}$, the general quaternionic bilinear form $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ and the multiplicativity $\langle\tilde{P}\tilde{Q},\tilde{P}\tilde{Q}\rangle_{\natural} = \langle\tilde{P},\tilde{P}\rangle_{\natural}\,\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$ — and the same letter names a four-momentum or four-vector, $\tilde{P} = m\tilde{U}$. Both roles are inherited from the mathematical corpus, where *Idempotents of the General Plain Algebra* writes the generic element $\tilde{P}$ beside the idempotent $\tilde{\Pi}$.
+**The generic element and the four-momentum share the letter $\tilde{P}$.** A statement that holds for every element is written with $\tilde{P}$ or $\tilde{Q}$ — the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{Q})$, the commutator bracket $[\tilde{P},\tilde{Q}] = \tilde{P}\tilde{Q} - \tilde{Q}\tilde{P}$, the general quaternionic bilinear form $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ and the multiplicativity $\langle\tilde{P}\tilde{Q},\tilde{P}\tilde{Q}\rangle_{\natural} = \langle\tilde{P},\tilde{P}\rangle_{\natural}\,\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$ — and the same letter names a four-momentum or four-vector, $\tilde{P} = m\tilde{V}$, the four-velocity being $\tilde{V}$. Both roles are inherited from the mathematical corpus, where *Idempotents of the General Plain Algebra* writes the generic element $\tilde{P}$ beside the idempotent $\tilde{\Pi}$.
 
 **What the prime marks.** The prime belongs to the **coefficients**, not to the physical coordinates. The four coefficients of a general element are complex, and writing each as a real part plus $i$ times a real part,
 
@@ -99,7 +113,30 @@ $$
 
 **The alternative, and why it is not used.** $\mathbb{H}_{\mathbb{B}}$, which takes its scalar slot from $\mathbb{M}_+$ and its vector slots from $\mathbb{M}_-$, would be split across the two primes under the alternative labelling, so that it could no longer be written with a single name. That alternative makes the prime mark the **sector** — all-primed for $\mathbb{M}_+$ against all-unprimed for $\mathbb{M}_-$ — which is uniform in the opposite direction, and the corpus has used that labelling too. It is not kept, because it makes the prime mean "informational" rather than "imaginary", and the prime then no longer tracks the $i$: the informational time $ct'$ would be carried by a primed parameter although it is real, and the material time $ict$ by an unprimed one although it is imaginary. The present convention keeps the prime glued to the $i$, at the price of a mixed prime status inside each sector. The crossing itself, and the alternatives it allows, are examined in *Relations Between Subspaces*.
 
-This is a **preferred convention** — a preference, not a strict rule, not to be enforced by rewriting other articles: the basis $e_0, \dots, e_3$, the central unit $i$, the Euclidean vector $\mathbf{x}$, the coefficients $q_\mu, q'_\mu$, indices such as $\mu, \nu, k$, and the ladder operators $\tilde a, \tilde a^{\dagger}$ keep their established symbols.
+This is a **preferred convention** — a preference, not a strict rule, not to be enforced by rewriting other articles: the basis $e_0, \dots, e_3$, the central unit $i$, the Euclidean vector $\vec x$, the coefficients $q_\mu, q'_\mu$, indices such as $\mu, \nu, k$, and the ladder operators $\tilde a, \tilde a^{\dagger}$ keep their established symbols.
+
+## Pure Elements and their Coefficients
+
+A **pure element** is an element with no scalar part. The scalar part of an element of $\mathbb{B}$ is carried by $e_0$, so a pure element is one whose $e_0$-coefficient vanishes, $\mathrm{Sc}(\tilde{Q}) = Q_0 = 0$, and which is carried by the three vector directions alone. The pure elements are exactly the elements of the **vector subspace** $\mathrm{Vect}(\mathbb{B})$, the anti-fixed space of quaternion conjugation,
+
+$$
+\hat{Q}^{\natural} = -\hat{Q},
+$$
+
+of real dimension six; the pure quaternions of the quaternion layer are the vectors of $\mathbb{R}^{3}$.
+
+**The glyph drops the tilde and carries the hat.** The tilde marks the quaternionic factor of an element that is read with its scalar part beside its vector part; a pure element is read on its vector part alone, so it is written with the hat and without the tilde, $\hat q$ in the quaternion layer and $\hat Q$ in the biquaternion layer. The case is unchanged, and the hat is the only mark: a pure element is never written with a tilde, and it is never written with the arrow, which belongs to the vector part of a named element.
+
+| System | Name | Pure element | Pure unit element | Scalar part | Coefficients |
+|---|---|---|---|---|---|
+| $\mathbb{H}$ | Quaternions | $\hat q = q_1e_1 + q_2e_2 + q_3e_3$ | $\hat u$ | $q_0 = 0$ | Real, $q_\mu$ |
+| $\mathbb{B}$ | Biquaternions | $\hat{Q} = Q_1e_1 + Q_2e_2 + Q_3e_3$ | $\hat U$ | $Q_0 = 0$ | Complex, $Q_\mu = q_\mu + iq'_\mu$ |
+
+Three rules are read off the table. **A pure element is the vector part of an element read on its own.** For $\tilde{Q} = Q_0e_0 + \vec{Q}$ the vector part $\vec{Q}$ is a pure biquaternion, and for $\tilde q = q_0e_0 + \vec q$ the vector part $\vec q$ is a pure quaternion; the difference between $\vec{Q}$ and $\hat{Q}$ is one of role alone, the arrow naming the part inside the split of a named element and the hat naming a pure element that stands by itself. **A pure element is anti-fixed by quaternion conjugation**, $\hat{Q}^{\natural} = -\hat{Q}$, having no scalar part to be fixed. **The hat marks purity, not magnitude.** A pure element is of arbitrary magnitude; a unit pure element — a unit pure quaternion $\hat u$ — carries no second mark, its unit length being carried by the construction.
+
+**The pure glyphs.** The hat is laid on the glyph of a special element on the same case rule that governs the layer: the pure root is $\hat\Xi$ in the biquaternion layer and $\hat\xi$ in the quaternion layer, and the pure nilpotent is $\hat\Upsilon$ in the biquaternion layer and $\hat\nu$ in the quaternion layer.
+
+A pure glyph is given from the quaternions to the biquaternions only, the layers this convention reaches. The octonion layer is outside the series, and the commutative layers carry their imaginary part in a single coefficient, $A = a + ia'$.
 
 ## The Conjugations and the Adjoint
 
@@ -179,7 +216,7 @@ $$
 q'_0 = c\,t, \qquad (q_1, q_2, q_3) = (x, y, z), \qquad q_0 = c\,t', \qquad (q'_1, q'_2, q'_3) = (x', y', z'),
 $$
 
-with $\mathbf{x} = x e_1 + y e_2 + z e_3$ the real spatial vector and $i\mathbf{x}' = i x' e_1 + i y' e_2 + i z' e_3$ its imaginary counterpart. The **material coordinate** $\tilde{Q} = ict\,e_0 + \mathbf{x}$ and the **informational coordinate** $\tilde{Q} = ct'\,e_0 + i\mathbf{x}'$ are the two ends of it, and each subspace keeps whichever part of the dictionary its defining condition leaves free.
+with $\vec x = x e_1 + y e_2 + z e_3$ the real spatial vector and $i\vec x' = i x' e_1 + i y' e_2 + i z' e_3$ its imaginary counterpart. The **material coordinate** $\tilde{Q} = ict\,e_0 + \vec x$ and the **informational coordinate** $\tilde{Q} = ct'\,e_0 + i\vec x'$ are the two ends of it, and each subspace keeps whichever part of the dictionary its defining condition leaves free.
 
 | Subspace | Algebraic name | Physical name | Basis | Real parameters | Physical coordinates |
 |---|---|---|---|---|---|
@@ -198,7 +235,13 @@ $$
 \tilde{H} = h_0e_0 + ih_1e_1 + ih_2e_2 + ih_3e_3, \qquad h_0, h_1, h_2, h_3 \in \mathbb{R},
 $$
 
-with $h_0 = ct'$ and $h_k = x'_k$. This is the informational coordinate $ct'\,e_0 + i\mathbf{x}'$ of the table under the coefficient names of an operator, and its matrix image, under the unit images of §*The 2×2 Matrix Representation* ($\mathsf{M}_2(e_0) = I_2$ and the vector units $-i$ times the Pauli matrices $\sigma_1, \sigma_2, \sigma_3$), is the general Hermitian $2\times2$ matrix $h_0I_2 + h_1\sigma_1 + h_2\sigma_2 + h_3\sigma_3$ of *The Native Qubit and the Defining Module of the Biquaternion Algebra*. The tilde is required, because $H$ without it is the Hermitian form of §*The Involutions and the Four Forms*, and $h$ without a subscript is the Planck constant.
+or, with the vector part assembled,
+
+$$
+\tilde{H} = h_0e_0 + i\vec h , \qquad \vec h = h_1e_1 + h_2e_2 + h_3e_3 ,
+$$
+
+with $h_0 = ct'$ and $h_k = x'_k$. This is the informational coordinate $ct'\,e_0 + i\vec x'$ of the table under the coefficient names of an operator, and its matrix image, under the unit images of §*The 2×2 Matrix Representation* ($\mathsf{M}_2(e_0) = I_2$ and the vector units $-i$ times the Pauli matrices $\sigma_1, \sigma_2, \sigma_3$), is the general Hermitian $2\times2$ matrix $h_0I_2 + h_1\sigma_1 + h_2\sigma_2 + h_3\sigma_3$ of *The Native Qubit and the Defining Module of the Biquaternion Algebra*. The tilde is required, because $H$ without it is the Hermitian form of §*The Involutions and the Four Forms*, and $h$ without a subscript is the Planck constant.
 
 **The collective names.** Two of the three decompositions of the algebra pair up the subspaces and give the pairs a name of their own. The first needs none beyond the names of its two members:
 
@@ -218,7 +261,7 @@ $$
 \mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_-
 $$
 
-pairs the two sectors — in this series' usage, *the sectors*, without qualification, are these two, and it is the split the relativistic articles are written in terms of. The two pairings cross: no sector is a half, and each sector draws its scalar slot from one half and its vector slots from the other, as *The Element and Its Coefficients* above records.
+pairs the two sectors — in this series' usage, *the sectors*, without qualification, are these two, and it is the split the relativistic articles are written in terms of. The two pairings cross: no sector is a half, and each sector draws its scalar slot from one half and its vector slots from the other, as *The Elements and their Coefficients* above records.
 
 **The choice of which subspace is "real".** The convention that has to be flagged is that $\mathbb{M}_-$ is the *anti*-Hermitian subspace, so that the framework's "real" part is the part built on $i$ times a Hermitian element, where the more familiar convention takes the Hermitian part as real. The two differ only by the central factor $i$, and there is no mathematical error either way. What is unusual is that the convention is applied to the **field** rather than to the generators. Once it is, $\mathbb{M}_-$ is fixed by $\flat$ and $\mathbb{M}_+$ is not, and that is what makes $\mathbb{M}_-$ the framework's material subspace. A reader who "restores" the Hermitian convention will find the whole series inverted. Do not.
 
@@ -290,7 +333,7 @@ Throughout the series a signature is written $(p,q)$ with the **positive** direc
 
 **What is forced and what is chosen.** The two bilinear forms are $\mathbb{C}$-bilinear in both slots and the two sesquilinear forms are linear in the first slot and sesquilinear in the second. That is not a choice but a consequence of the $\mathbb{C}$-linearity of the natural sign together with the centrality of $\mathbb{C}$ in $\mathbb{B}$; its verification is *Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint*. Multiplication by $i$ reverses the sign of the two bilinear forms and leaves the two sesquilinear forms unchanged, since the centrality of $i$ puts either a factor $i^2 = -1$ on both slots or on neither.
 
-## The Four Algebraic Norms
+## The Four Algebraic Norms and the Unitary Convention
 
 **The definition of a norm.** The norm of a form is that form read at its two equal arguments,
 
@@ -310,6 +353,67 @@ and the convention is one of **notation, not of substance**: the pair is the for
 | $K$, the general quaternionic sesquilinear algebraic norm | $({}^{\natural},{}^{*})$ | $K(\tilde{Q}) = K(\tilde{Q},\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural*} = \mathrm{Sc}(\tilde{Q}^{\natural}\tilde{Q}^{*})$ | $\lvert Q_0\rvert^2 - \lvert Q_1\rvert^2 - \lvert Q_2\rvert^2 - \lvert Q_3\rvert^2$ | $\mathbb{R}$ |
 
 The third is also called the Hermitian algebraic norm and the fourth the Krein algebraic norm, and the four letters are the short names. The other sense of the word, the **topological norm**, is the square root of the definite one, $\lVert\tilde{Q}\rVert_E = \bigl(H(\tilde{Q})\bigr)^{1/2}$, and it is *The Norm Defined by a Form*.
+
+### The Unitary Convention
+
+The unit elements carry a glyph of their own, beside the root $\tilde{\Xi}$ (§*The Root Convention*), the idempotent $\tilde{\Pi}$ (§*The Idempotent Convention*) and the nilpotent $\tilde{\nu}$ (§*The Nilpotent Convention*): the **u**, in the two cases, as in the mathematical corpus (§*The Unitary Convention* of *Conventions in Mathematics*).
+
+**A unit element is an element of norm one, and the norm is the one in view.** The glyph is the generic norm above read at the central value $e_0$,
+
+$$
+\mathrm{Norm}(\tilde{U}) = e_0 ,
+$$
+
+so that it names no set until the norm is named. The convention is **relative to the norm**: the norm-one set is the level set of that norm, it depends on the form exactly as the norm does, and a statement that writes $\tilde{U}$ names its norm — $B$, $N$, $H$ or $K$ in the biquaternion layer, $B$ or $N$ in the quaternion layer. The same glyph stands for the unit quaternion under one norm and for a point of another level set under another, and the norm is what tells them apart.
+
+**The norm-one set, norm by norm.** In the biquaternion layer the four norms give four level sets:
+
+| Norm | the condition $\mathrm{Norm}(\tilde{U}) = e_0$ | the norm-one elements |
+|---|---|---|
+| $B$ | $Q_0^2 - Q_1^2 - Q_2^2 - Q_3^2 = e_0$ | the complex hyperboloid of the plain bilinear norm |
+| $N$ | $Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 = e_0$ | $\mathbb{B}^{\times}_1$, the norm-one units |
+| $H$ | $\lvert Q_0\rvert^2 + \lvert Q_1\rvert^2 + \lvert Q_2\rvert^2 + \lvert Q_3\rvert^2 = 1$ | the unit sphere of the definite norm |
+| $K$ | $\lvert Q_0\rvert^2 - \lvert Q_1\rvert^2 - \lvert Q_2\rvert^2 - \lvert Q_3\rvert^2 = 1$ | the indefinite level set of the Krein norm |
+
+The two bilinear norms are complex-valued, so their level sets are complex and the condition is read $= e_0$; the two sesquilinear norms are real-valued, so their level sets are real and the condition is read $= 1$.
+
+**The quaternion layer, and the rotors.** In the quaternion layer the norm is the quaternion norm and its level set is the sphere
+
+$$
+Sp(1)=\{\tilde{u}\in\mathbb{H}:\tilde{u}\tilde{u}^{\natural}=e_0\}=\{\tilde{u}\in\mathbb{H}:u_0^2+u_1^2+u_2^2+u_3^2=1\}=S^{3}=\mathrm{SU}(2),
+$$
+
+the **unit quaternions**, the double cover of $SO(3)$ by $\tilde{u}\mapsto\iota_{\tilde{u}}$, with the kernel $\{\pm e_0\}$. **The rotors are these elements**: the orientation rotor of the rotation and spin articles, $N(\tilde{R}) = e_0$, is a unit real quaternion and is therefore written $\tilde{u}$.
+
+**The group condition is narrower than the norm-one condition.** Where the form in view is the sesquilinear one and the element is asked not only to have norm one but to preserve the form, $\tilde{U}^{*}\tilde{U} = e_0$, the norm-one elements that do so form the **unitary group**, written without a tilde because a tilde marks an element and not a group,
+
+$$
+U(\mathbb{B})=\{\tilde{U}:\tilde{U}^{*}\tilde{U}=e_0\}\cong U(2),
+$$
+
+of real dimension $4$. Every such element has $H(\tilde{U}) = e_0$, so the group sits inside the norm-one set of $H$; and the unitary group of the algebra is the product $U(\mathbb{B}) = S^{1}\cdot S^{3}$ with $S^{1}\cap S^{3}=\{\pm e_0\}$, a unit quaternion together with an arbitrary central phase. The name **unitary** is the name of that group; the glyph $\tilde{U}$ is the norm-one element, which is the wider notion. The unitary parameters of the operator articles, written $\tilde{u}$ with $\tilde{u}^{*} = \tilde{u}^{-1}$, are elements of that group.
+
+**The layers and their involutions.** The norm and the group condition have a sense only where the involution they use exists: the bar alone over $\mathbb{C}$ and the split-complex numbers, the natural sign alone over $\mathbb{H}$ and the split-quaternions, and all four marks over $\mathbb{B}$ and the split-biquaternions. A layer with no star has no Hermitian and no Krein form, so its unit elements are those of a bilinear form alone.
+
+**The case rule splits the glyph, as it does for the elements, the idempotents, the nilpotents and the roots.** The unit elements of the biquaternion and split-biquaternion layers carry the upper-case tilde, $\tilde{U}$; those of the quaternion and split-quaternion layers carry the lower-case tilde, $\tilde{u}$; and those of the complex, split-complex and dual layers carry the plain capital, $U$, no tilde being written where there is no quaternionic factor.
+
+**The coordinates carry the letter of the unit element**, as for a general element: in $\mathbb{B}$ it is $\tilde{U} = U_0e_0 + U_1e_1 + U_2e_2 + U_3e_3$ with $U_\mu = u_\mu + iu'_\mu$, its scalar part $U_0$ and its vector part $\vec{U} = \vec{u} + i\vec{u}'$; in $\mathbb{H}$ it is $\tilde{u} = u_0e_0 + u_1e_1 + u_2e_2 + u_3e_3$ with real $u_\mu$.
+
+**The subscript of a unit element is numeric when it counts and a role label when it names.** Where more than one occurs the elements are numbered, $\tilde U_1, \tilde U_2$; where the unit elements of a statement play named roles, each carries the role in upright roman as its subscript, for instance $\tilde U_{\mathrm b}$ for a boost factor and $\tilde U_{\mathrm r}$ for a rotation factor. A sign is a subscript where the statement needs one, as in $\tilde U_+$ and $\tilde U_-$.
+
+The glyph is therefore **split by the case rule**, and the split is the reason the convention is stated:
+
+| Symbol | Role |
+|---|---|
+| $\tilde{U}$ | A unit element of the biquaternion or split-biquaternion layer, $\mathrm{Norm}(\tilde{U}) = e_0$ |
+| $\hat U$ | A unit pure biquaternion, the pure case of $\tilde{U}$, of norm one |
+| $\tilde{u}$ | A unit element of the quaternion or split-quaternion layer, a unit quaternion, $Sp(1)$ |
+| $\hat u$ | A unit pure quaternion, the pure case of $\tilde{u}$; the axis of a rotation |
+| $U$ | A unit element of the complex, split-complex or dual layer, a modulus-one scalar |
+
+**The pure case of the unit element carries the hat, and the two pure unit glyphs are $\hat u$ and $\hat U$.** The pure form of the unit element is written with the hat of its layer and without the tilde: $\hat u$ in the quaternion and split-quaternion layers, $\hat U$ in the biquaternion and split-biquaternion ones, read off the general unit element by $\tilde u \to \hat u$ and $\tilde U \to \hat U$.
+
+The convention is one of **notation, not of substance**: an element written $\tilde{U}$ is not a different kind of object from one written $\tilde{Q}$, only an element known to have norm one. It is **relative to the norm**, and it says nothing until the norm is named. The letter is not free for a generic element: an arbitrary element is $\tilde{P}$ or $\tilde{Q}$, a root is $\tilde{\Xi}$, an idempotent $\tilde{\Pi}$, a nilpotent $\tilde{\nu}$ or $\tilde{\Upsilon}$, a four-velocity $\tilde{V}$.
 
 ## The Central Map and Its Restrictions
 
@@ -334,29 +438,29 @@ The phase gate of the gate articles is a rotation about $e_3$, a non-central gen
 
 The roots carry a symbol of their own, beside the idempotent $\tilde{\Pi}$ (§*The Idempotent Convention*) and the nilpotent $\tilde{\nu}$ (§*The Nilpotent Convention*): the **xi**, in the two cases.
 
-A **root of $-1$** of the algebra is an element $\tilde{\Xi}$ with $\tilde{\Xi}^2 = -1$. More generally a **root of a central value** $\lambda$ is an element with $\tilde{\Xi}^2 = \lambda e_0$. The roots of the three central values $-1, 0, +1$ are those of *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*, and the general root is that of *Square Roots of a General Element in the General Plain Algebra*; the roots the series uses are the roots of $-1$.
+A **root of $1$** of the algebra is an element $\tilde{\Xi}$ with $\tilde{\Xi}^2 = 1$. More generally a **root of a central value** $\lambda$ is an element with $\tilde{\Xi}^2 = \lambda e_0$. The roots of the three central values $-1, 0, +1$ are those of *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*, and the general root is that of *Square Roots of a General Element in the General Plain Algebra*; the roots the series uses are the roots of $1$.
 
 **The square is read in a named product**, the algebra product unless the statement names another, as for the nilpotents (§*The Nilpotent Convention*), and the class is relative to the product; the roots of a value in the four general products are those of *Square Roots of a General Element in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
-**The case rule splits the glyph, as it does in the mathematical corpus.** The roots of the biquaternion and split-biquaternion layers carry the upper-case tilde, $\tilde{\Xi}$, the glyph the series uses; those of the quaternion and split-quaternion layers carry the lower-case tilde, $\tilde{\xi}$; and those of the complex, split-complex and dual layers carry the plain capital, $\Xi$, no tilde being written where there is no quaternionic factor — the only tilde-free layer with a root of $-1$ being $\mathbb{C}$, whose two roots are the central $\pm i$. The series works in $\mathbb{B}$ and writes $\tilde{\Xi}$ throughout; the other two glyphs are the mathematical corpus's, and the layer fixes the glyph.
+**The case rule splits the glyph, as it does for the elements, the idempotents and the nilpotents.** The roots of the biquaternion and split-biquaternion layers carry the upper-case tilde, $\tilde{\Xi}$; those of the quaternion and split-quaternion layers carry the lower-case tilde, $\tilde{\xi}$; and those of the complex, split-complex and dual layers carry the plain capital, $\Xi$, no tilde being written where there is no quaternionic factor — the only tilde-free layer with a root of $-1$ being $\mathbb{C}$, whose two roots are the central $\pm i$. The layer fixes the glyph.
 
-**The coordinates carry the letter of the root**: in $\mathbb{B}$ a root is $\tilde{\Xi} = \Xi_0e_0 + \Xi_1e_1 + \Xi_2e_2 + \Xi_3e_3$ with $\Xi_\mu = \xi_\mu + i\xi'_\mu$, its scalar part $\Xi_0$ and its vector part $\boldsymbol{\Xi} = \boldsymbol{\xi} + i\boldsymbol{\xi}'$.
+**The coordinates carry the letter of the root**, as for a general element: in $\mathbb{B}$ the root is $\tilde{\Xi} = \Xi_0e_0 + \Xi_1e_1 + \Xi_2e_2 + \Xi_3e_3$ with $\Xi_\mu = \xi_\mu + i\xi'_\mu$, its scalar part $\Xi_0$ and its vector part $\vec\Xi = \vec\xi + i\vec\xi'$; in $\mathbb{H}$ it is $\tilde\xi = \xi_0e_0 + \xi_1e_1 + \xi_2e_2 + \xi_3e_3$ with real $\xi_\mu$.
 
-**The subscript of a root is always numeric** where more than one occurs, as for the idempotents and the nilpotents, and a sign is never written as a subscript.
+**The subscript of a root is numeric when it counts and a role label when it names.** Where more than one occurs the roots are numbered, $\tilde\Xi_1, \tilde\Xi_2$, as for the nilpotents and for the idempotent pairs other than the complete sign pair of §*The Idempotent Convention*; where a root plays a named role, it carries the role in upright roman as its subscript. A sign is a subscript where the statement needs one.
 
 The root glyph is therefore **split by the case rule**, and the split is the reason the convention is stated:
 
 | Symbol | Role |
 |---|---|
-| $\tilde{\Xi}$ | A root of $-1$ of the biquaternion or split-biquaternion layer |
-| $\tilde{\xi}$ | A root of $-1$ of the quaternion or split-quaternion layer |
-| $\Xi$ | A root of $-1$ of the complex, split-complex or dual layer, where no tilde is written |
+| $\tilde{\Xi}$ | A root of $1$ of the biquaternion or split-biquaternion layer |
+| $\tilde{\xi}$ | A root of $1$ of the quaternion or split-quaternion layer |
+| $\Xi$ | A root of $1$ of the complex, split-complex or dual layer, where no tilde is written |
 
-The convention is one of **notation, not of substance**: an element written $\tilde{\Xi}$ is not a different kind of object from one written $\tilde{Q}$, only an element known to be a root of $-1$.
+The convention is one of **notation, not of substance**: an element written $\tilde{\Xi}$ is not a different kind of object from one written $\tilde{Q}$, only an element known to be a root of $1$.
 
 ### The Idempotent Convention
 
-The convention of *The Element and Its Coefficients* fixes the case and the tilde of a generic element. The idempotents carry a symbol of their own, and the series uses it throughout.
+The convention of *The Elements and their Coefficients* fixes the case and the tilde of a generic element. The idempotents carry a symbol of their own, and the series uses it throughout.
 
 An **idempotent** of the algebra is an element $\tilde{\Pi}$ with $\tilde{\Pi}^2 = \tilde{\Pi}$; a **projector** is a Hermitian idempotent, $\tilde{\Pi}^{*} = \tilde{\Pi}$, and the rank-one projectors of $\mathbb{M}_+$ are the **pure states** of the informational sector.
 
@@ -364,7 +468,9 @@ An **idempotent** of the algebra is an element $\tilde{\Pi}$ with $\tilde{\Pi}^2
 
 A non-zero idempotent $\tilde{\Pi}$ generates the **minimal left ideal** $\mathbb{B}\tilde{\Pi}$, which is the state module of the companion articles; the standard pair, the classification of the idempotents, the polarisation identity, the Peirce decomposition, the matrix units and the projective geometry of the pure states are those of *Idempotents of the General Plain Algebra* and its companions in the mathematical corpus.
 
-**The subscript of an idempotent is always numeric**: a pair is $\tilde{\Pi}_1, \tilde{\Pi}_2$, a second pair in the same statement takes the next numbers, $\tilde{\Pi}_3, \tilde{\Pi}_4$, and the sign $\pm$ is never written as a subscript, a family indexed by a direction being written with its argument, $\tilde{\Pi}_{1,2}(\hat{\mu})$.
+**The coordinates carry the letter of the idempotent**, as for a general element: in $\mathbb{B}$ the idempotent is $\tilde{\Pi} = \Pi_0e_0 + \Pi_1e_1 + \Pi_2e_2 + \Pi_3e_3$ with $\Pi_\mu = \pi_\mu + i\pi'_\mu$, its scalar part $\Pi_0$ and its vector part $\vec\Pi = \vec\pi + i\vec\pi'$; in $\mathbb{H}$ it is $\tilde\pi = \pi_0e_0 + \pi_1e_1 + \pi_2e_2 + \pi_3e_3$ with real $\pi_\mu$.
+
+**The subscript of an idempotent is numeric when it counts and a role label when it names, but for the two members of a complete sign pair.** A pair is $\tilde{\Pi}_1, \tilde{\Pi}_2$; a second pair in the same statement takes the next numbers, $\tilde{\Pi}_3, \tilde{\Pi}_4$; and a family indexed by a direction is written with its argument, $\tilde{\Pi}_{1,2}(\hat{\mu})$. When a pair is **complete**, $\tilde{\Pi}_+ + \tilde{\Pi}_- = e_0$, its two members may be written $\tilde{\Pi}_+$ and $\tilde{\Pi}_-$: the subscript $+$ names the member attached to $+1$ and the subscript $-$ the member attached to $-1$. A pair that is not complete may be numbered, labelled or signed as the statement requires. A role label is written in upright roman, as for a unit element.
 
 The idempotent glyph is therefore **split by the case rule**, and the split is the reason the convention is stated:
 
@@ -388,7 +494,9 @@ $$
 
 **The square is read in a named product**, the algebra product unless the statement names another, as in the mathematical corpus (§*The Nilpotent Convention* of *Conventions in Mathematics*), and the class is relative to the product. A nilpotent is never a projector, a Hermitian nilpotent being zero, and it is never a state; the nilpotent is the partner of the idempotent in a minimal left ideal, $\mathbb{B}\tilde{\Upsilon}_2 = \mathbb{B}\tilde{\Pi}_1$.
 
-**The subscript of a nilpotent is always numeric**, as for the idempotents: a pair is $\tilde{\nu}_1, \tilde{\nu}_2$, a second pair in the same statement takes the next numbers, and a sign is never written as a subscript.
+**The coordinates carry the letter of the nilpotent**, as for a general element: in $\mathbb{B}$ the nilpotent is $\tilde{\Upsilon} = \Upsilon_0e_0 + \Upsilon_1e_1 + \Upsilon_2e_2 + \Upsilon_3e_3$ with $\Upsilon_\mu = \nu_\mu + i\nu'_\mu$, its scalar part $\Upsilon_0$ and its vector part $\vec\Upsilon = \vec\nu + i\vec\nu'$; in $\mathbb{H}$ it is $\tilde\nu = \nu_0e_0 + \nu_1e_1 + \nu_2e_2 + \nu_3e_3$ with real $\nu_\mu$.
+
+**The subscript of a nilpotent is numeric when it counts and a role label when it names**, as for the idempotents apart from their complete sign pair: where more than one occurs a pair is $\tilde{\nu}_1, \tilde{\nu}_2$, a second pair in the same statement takes the next numbers, and where a nilpotent plays a named role it carries the role in upright roman as its subscript. A sign is a subscript where the statement needs one.
 
 The nilpotents have no classification of the idempotent kind and no sphere of pure states; which set the square-zero elements form depends on the product. The nilpotents of a state module are those of *The Biquaternion Vacuum as a Minimal Idempotent*, and the spin-down state of *Spin-1/2 Quantum Physics in Biquaternionic Form* is a nilpotent of the ideal of that vacuum.
 
@@ -418,7 +526,7 @@ $$
 \tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu \;\longleftrightarrow\; (Q^0, Q^1, Q^2, Q^3), \qquad Q^0 = Q_0, \quad (Q^1, Q^2, Q^3) = (Q_1, Q_2, Q_3),
 $$
 
-and the index is written in the upper position. **No index is raised or lowered anywhere in the series.** On $\mathbb{C}^4$ there is no pairing with which to move one, and the $ict$ convention is what puts the metric into the coefficient — $(ict, \mathbf{x})$ rather than a contraction rule — so that the interval is the sum of squares with no explicit scalar product. The article owns the product in components and the column-and-dual-row convention.
+and the index is written in the upper position. **No index is raised or lowered anywhere in the series.** On $\mathbb{C}^4$ there is no pairing with which to move one, and the $ict$ convention is what puts the metric into the coefficient — $(ict, \vec x)$ rather than a contraction rule — so that the interval is the sum of squares with no explicit scalar product. The article owns the product in components and the column-and-dual-row convention.
 
 ## The 4×4 Matrix Representation
 
@@ -545,9 +653,9 @@ $\flat$ is **not** the charge conjugation either. It has the **shape** of a char
 
 The conventions of the series are one object read in order, from the object itself to the two clauses a field equation inherits.
 
-**The object and its parts.** The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, over complex coefficients. The scalar unit $i$ is central, which is what makes the central phase the algebra's continuous symmetry, and multiplication by it is one map whose restrictions are the global phase and the exchanges and duality rotations of the sectors (§*The Central Map and Its Restrictions*). The conjugations cut the algebra into the remarkable subspaces of §*The Remarkable Subspaces*, each carrying its own real parameters and its slice of the coordinate dictionary, with $q'_0 = ct$, $q_0 = ct'$, $(q_1,q_2,q_3) = (x,y,z)$ and $(q'_1,q'_2,q'_3) = (x',y',z')$. The algebra carries four forms, not two — the general plain bilinear $B$, the general quaternionic bilinear $N$, the Hermitian $H$ and the Krein $K$ — read on the diagonal as the four norms, of which $N$ is the biquaternion norm. The matrix representation $\mathsf{M}_2$ is fixed by its four basis images, with the Hermitian units following as $\mathsf{M}_2(ie_k) = i\,\mathsf{M}_2(e_k)$; the residual freedom is a unitary change of basis of $\mathbb{C}^2$ and nothing further, so the sector dictionary cannot be altered by re-choosing it.
+**The object and its parts.** The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, over complex coefficients. The scalar unit $i$ is central, which is what makes the central phase the algebra's continuous symmetry, and multiplication by it is one map whose restrictions are the global phase and the exchanges and duality rotations of the sectors (§*The Central Map and Its Restrictions*). The conjugations cut the algebra into the remarkable subspaces of §*The Remarkable Subspaces*, each carrying its own real parameters and its slice of the coordinate dictionary, with $q'_0 = ct$, $q_0 = ct'$, $(q_1,q_2,q_3) = (x,y,z)$ and $(q'_1,q'_2,q'_3) = (x',y',z')$. The elements with no scalar part — the vector subspace — are the **pure elements**, written with the hat and without the tilde, $\hat{Q}$ (§*Pure Elements and their Coefficients*). The algebra carries four forms, not two — the general plain bilinear $B$, the general quaternionic bilinear $N$, the Hermitian $H$ and the Krein $K$ — read on the diagonal as the four norms, of which $N$ is the biquaternion norm. The matrix representation $\mathsf{M}_2$ is fixed by its four basis images, with the Hermitian units following as $\mathsf{M}_2(ie_k) = i\,\mathsf{M}_2(e_k)$; the residual freedom is a unitary change of basis of $\mathbb{C}^2$ and nothing further, so the sector dictionary cannot be altered by re-choosing it.
 
-**The presentations, the gradient and the metric levels.** The algebra is written in three presentations — the coefficient quadruple, the $4\times4$ regular matrix and the $2\times2$ image $\mathsf{M}_2$ — each developed in its own article, and it is the trace of $\mathsf{M}_2$ that the series calls the trace. The material coordinate is $\tilde{Q} = ict\,e_0 + \mathbf{x}$, using the $ict$ convention so that the Minkowski interval is the biquaternion norm, vanishing on the zero-divisor cone. The series d'Alembertian is $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_0^2 + \Delta_Q$, read on the material sector as $\partial_{ict}^2 + \Delta = \Delta - c^{-2}\partial_t^2$; every article uses this one operator, with the mass equation $\left(\Box - m^2c^2/\hbar^2\right)\psi = 0$. The algebra's real structure is $\flat = -{}^{*}$, and the mass term built on $\flat$ and then retired, with the dispersion that retired it, is recorded in *The Dirac Equation in Biquaternionic Form* and *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*. The three levels of the word *metric* are set out in *The Four Forms, the Four Algebraic Norms and the Change of Scalars*, and the tool is never a reason to change a convention of the framework.
+**The presentations, the gradient and the metric levels.** The algebra is written in three presentations — the coefficient quadruple, the $4\times4$ regular matrix and the $2\times2$ image $\mathsf{M}_2$ — each developed in its own article, and it is the trace of $\mathsf{M}_2$ that the series calls the trace. The material coordinate is $\tilde{Q} = ict\,e_0 + \vec x$, using the $ict$ convention so that the Minkowski interval is the biquaternion norm, vanishing on the zero-divisor cone. The series d'Alembertian is $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial^2/\partial Q_0^2 + \Delta_Q$, read on the material sector as $\partial_{ict}^2 + \Delta = \Delta - c^{-2}\partial_t^2$; every article uses this one operator, with the mass equation $\left(\Box - m^2c^2/\hbar^2\right)\psi = 0$. The algebra's real structure is $\flat = -{}^{*}$, and the mass term built on $\flat$ and then retired, with the dispersion that retired it, is recorded in *The Dirac Equation in Biquaternionic Form* and *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*. The three levels of the word *metric* are set out in *The Four Forms, the Four Algebraic Norms and the Change of Scalars*, and the tool is never a reason to change a convention of the framework.
 
 The theme is single. In a framework whose algebra and sector assignment are non-standard, the most likely error is a correction of something that is deliberate. The conventions recorded above are the places where that is most likely to happen.
 
@@ -559,24 +667,36 @@ The theme is single. In a framework whose algebra and sector assignment are non-
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
 | $i$ | Central scalar imaginary, $i^2 = -1$ |
 | $\tilde{Q}$ | An element of the algebra. The same symbol serves for the general element and for an element of any of the subspaces, whichever the passage at hand is about; the complex coefficients are $Q_\mu$, the real parameters of a four-dimensional subspace are $q_\mu$ and $q'_\mu$, the prime marking the slot that carries the $i$. |
-| $\tilde{P}$ | A four-momentum or four-vector, $\tilde{P} = m\tilde{U}$, and a generic element in a statement that holds for every element (see §*The Element and Its Coefficients*) |
+| $\vec Q$ | The vector part of an element, $\vec Q = Q_1e_1 + Q_2e_2 + Q_3e_3$ (see §*The Elements and their Coefficients*) |
+| $\hat q$ | A pure quaternion, an element of the quaternion layer with no scalar part, $\hat q = q_1e_1 + q_2e_2 + q_3e_3$ (see §*Pure Elements and their Coefficients*) |
+| $\hat Q$ | A pure biquaternion, an element with no scalar part, $\mathrm{Sc}(\hat Q) = 0$, the vector subspace $\mathrm{Vect}(\mathbb{B})$ (see §*Pure Elements and their Coefficients*) |
+| $\hat u$ | A unit pure quaternion, the axis of a rotation |
+| $\hat U$ | A unit pure biquaternion, of norm one |
+| $\hat\Xi$ | A pure root of $1$ of the biquaternion layer |
+| $\hat\Upsilon$ | A pure nilpotent of the biquaternion layer |
+| $\tilde{P}$ | A four-momentum or four-vector, $\tilde{P} = m\tilde{V}$, and a generic element in a statement that holds for every element (see §*The Elements and their Coefficients*) |
+| $\tilde{V}$ | The four-velocity, $N(\tilde{V}) = -c^{2}$ |
 | $\tilde{\Pi}$ | An idempotent, projector or pure state, $\tilde{\Pi}^2 = \tilde{\Pi}$, and the minimal left ideal $\mathbb{B}\tilde{\Pi}$ it generates (see §*The Idempotent Convention*). By the case rule the quaternion layer of the mathematical corpus writes $\tilde{\pi}$ and the tilde-free layers $\Pi$ |
 | $\tilde{\nu}$ | A nilpotent of the quaternion or split-quaternion layer, $\tilde{\nu}^2 = 0$ (see §*The Nilpotent Convention*) |
 | $\tilde{\Upsilon}$ | A nilpotent of the biquaternion or split-biquaternion layer, the upper-case glyph of the same letter; not a $Y$ |
-| $\tilde{\Xi}$ | A root of $-1$ of the biquaternion or split-biquaternion layer, $\tilde{\Xi}^2 = -1$ (see §*The Root Convention*) |
-| $\tilde{\xi}$ | A root of $-1$ of the quaternion or split-quaternion layer |
+| $\tilde{\Xi}$ | A root of $1$ of the biquaternion or split-biquaternion layer, $\tilde{\Xi}^2 = 1$ (see §*The Root Convention*) |
+| $\tilde{U}$ | A unit element, $\mathrm{Norm}(\tilde{U}) = e_0$ for the norm in view (see §*The Unitary Convention*) |
+| $\hat U$ | A unit pure biquaternion, the pure case of $\tilde{U}$, of norm one |
+| $\tilde{u}$ | A unit element of the quaternion or split-quaternion layer, a unit quaternion |
+| $\hat u$ | A unit pure quaternion, the pure case of $\tilde{u}$; the axis of a rotation |
+| $\tilde{\xi}$ | A root of $1$ of the quaternion or split-quaternion layer |
 | $\tilde{Q}^{\natural}, \bar{\tilde{Q}}, \tilde{Q}^{*}, \tilde{Q}^{\flat}$ | Quaternion (the natural sign), complex, Hermitian and anti-Hermitian conjugation |
 | $\tilde{Q}^{\natural} \mapsto \epsilon M^{\mathsf T}\epsilon^{-1}$, $\bar{\tilde{Q}} \mapsto \epsilon\overline{M}\epsilon^{-1}$ | The two conjugations dressed by the antisymmetric form; $\epsilon = \mathsf{M}_2(-e_2)$ |
 | $\tilde{Q}^{*} \mapsto M^\dagger$, $\tilde{Q}^\flat \mapsto -M^\dagger$ | The two undressed ones. Entrywise conjugation of $M$ alone is not the image of any involution |
 | $\flat = -{}^{*}$ | The anti-Hermitian conjugation, the algebra's real structure |
 | $\mathbb{C}_{\mathbb{B}} = \{Q_0 e_0\}$ | Centre subspace, fixed points of quaternion conjugation; the centre of $\mathbb{B}$ and the complex time sector; parameters $q_0, q'_0$ with $q_0 = ct'$ and $q'_0 = ct$ |
-| $\mathrm{Vect}(\mathbb{B}) = \{\tilde{Q} : \mathrm{Sc}(\tilde{Q}) = 0\}$ | The vector subspace, i.e. the complex space sector: anti-fixed points of quaternion conjugation, real dimension six; parameters $q_k, q'_k$ with $(q_k) = (x,y,z)$ and $(q'_k) = (x',y',z')$. |
+| $\mathrm{Vect}(\mathbb{B}) = \{\tilde{Q} : \mathrm{Sc}(\tilde{Q}) = 0\}$ | The vector subspace, i.e. the complex space sector: anti-fixed points of quaternion conjugation, real dimension six; parameters $q_k, q'_k$ with $(q_k) = (x,y,z)$ and $(q'_k) = (x',y',z')$. The pure elements are these, written $\hat{Q}$ (§*Pure Elements and their Coefficients*). |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace, i.e. the real sector (the real half): fixed points of complex conjugation, all four coefficients real |
 | $i\mathbb{H}_{\mathbb{B}}$ | Antiquaternion subspace, i.e. the imaginary sector (the imaginary half): anti-fixed points of complex conjugation, all four coefficients purely imaginary; not a subalgebra. $\mathbb{B} = \mathbb{H}_{\mathbb{B}} \oplus i\mathbb{H}_{\mathbb{B}}$, a split that crosses the $\mathbb{M}_\pm$ split |
 | $\mathbb{M}_+ = \{ \tilde{Q} : \tilde{Q}^{*} = \tilde{Q} \}$ | Hermitian subspace, the informational sector; basis $e_0, ie_1, ie_2, ie_3$, parameters $q_0, q'_1, q'_2, q'_3$ (real), with $q_0 = ct'$ |
 | $\mathbb{M}_- = \{ \tilde{Q} : \tilde{Q}^\flat = \tilde{Q} \}$ | Anti-Hermitian subspace, the material sector; basis $ie_0, e_1, e_2, e_3$, parameters $q'_0, q_1, q_2, q_3$ (real), with $q'_0 = ct$ |
-| $\tilde{Q} = ict\,e_0 + \mathbf{x}$ | The material coordinate, $\mathbf{x} = x e_1 + y e_2 + z e_3$ |
-| $(ct')\,e_0 + i\mathbf{x}'$ | The informational coordinate, $\mathbf{x}' = x' e_1 + y' e_2 + z' e_3$; the temporal coefficient $ct'$ is real and the spatial ones imaginary, the mirror of the material coordinate |
+| $\tilde{Q} = ict\,e_0 + \vec x$ | The material coordinate, $\vec x = x e_1 + y e_2 + z e_3$ |
+| $(ct')\,e_0 + i\vec x'$ | The informational coordinate, $\vec x' = x' e_1 + y' e_2 + z' e_3$; the temporal coefficient $ct'$ is real and the spatial ones imaginary, the mirror of the material coordinate |
 | $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2$ | Biquaternion norm, level 1 of the three levels of the word *metric* (§*The Metric: Three Levels* of *The Four Forms, the Four Algebraic Norms and the Change of Scalars*) |
 | $\mathrm{Form}(\tilde{P},\tilde{Q})$, $\mathrm{Norm}(\tilde{Q})=\mathrm{Form}(\tilde{Q},\tilde{Q})$ | The generic form and the generic norm, instantiated one to a general product by the four forms and the four norms $B$, $N$, $H$, $K$ (§*The Four Algebraic Norms*, §*The Involutions and the Four Forms*) |
 | $\mathrm{GPA}$, $\mathrm{SPA}$, $\mathrm{APA}$, $\mathrm{GQA}$, $\mathrm{SQA}$, $\mathrm{AQA}$, $\mathrm{GPS}$, $\mathrm{SPS}$, $\mathrm{APS}$, $\mathrm{GQS}$, $\mathrm{SQS}$, $\mathrm{AQS}$ | The twelve products, the four general products and their symmetric and antisymmetric parts (§*The Twelve Products and Their Names*) |

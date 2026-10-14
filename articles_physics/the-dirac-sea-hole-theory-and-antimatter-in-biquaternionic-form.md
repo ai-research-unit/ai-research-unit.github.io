@@ -17,7 +17,7 @@ The article is organised as follows. The next section states the negative-energy
 
 ## The Negative-Energy Problem
 
-Dirac's equation is linear in the time derivative, so its solutions come in two branches. For a plane wave of four-momentum $p$ the equation admits both $p^0 = +\sqrt{\mathbf p^2+m^2}$ and $p^0 = -\sqrt{\mathbf p^2+m^2}$, and the second branch has no lower bound: the energy of a solution on the negative branch can be arbitrarily negative. A charged particle would radiate without limit as it fell, so the classical one-particle theory has no stable ground state. The difficulty is not an artefact of the free theory; it survives coupling to the electromagnetic field.
+Dirac's equation is linear in the time derivative, so its solutions come in two branches. For a plane wave of four-momentum $p$ the equation admits both $p^0 = +\sqrt{\vec p^2+m^2}$ and $p^0 = -\sqrt{\vec p^2+m^2}$, and the second branch has no lower bound: the energy of a solution on the negative branch can be arbitrarily negative. A charged particle would radiate without limit as it fell, so the classical one-particle theory has no stable ground state. The difficulty is not an artefact of the free theory; it survives coupling to the electromagnetic field.
 
 **Klein's paradox** sharpened the trouble. For a potential step strong enough that $V > E + mc^2$, the transmitted wave in the usual one-particle calculation has a negative group velocity and the reflected current exceeds the incident current. The companion article *The Klein Paradox in Biquaternionic Form* treats the calculation in the framework's variables. Its physical significance here is that a strong potential does not simply confine a Dirac electron: it pulls it onto the negative branch. The one-particle theory therefore cannot describe a step of arbitrary strength, and the missing ingredient is the antiparticle.
 
@@ -40,7 +40,7 @@ Dirac first identified the hole with the proton, in a 1930 paper on electrons an
 
 Four objections made the filled sea untenable as a fundamental description.
 
-- **Infinite charge and energy.** A completely filled sea of negative-energy states has infinite total charge and infinite (negative) energy. Only differences from the sea are observable, so the infinities must be subtracted, but the subtraction is a prescription, not a derivation. In the operator language this prescription becomes **normal ordering**, the removal of the vacuum expectation value of the energy and charge; the framework's canonical-quantization article performs exactly this subtraction and records the constant $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\mathbf p}$.
+- **Infinite charge and energy.** A completely filled sea of negative-energy states has infinite total charge and infinite (negative) energy. Only differences from the sea are observable, so the infinities must be subtracted, but the subtraction is a prescription, not a derivation. In the operator language this prescription becomes **normal ordering**, the removal of the vacuum expectation value of the energy and charge; the framework's canonical-quantization article performs exactly this subtraction and records the constant $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$.
 - **It is a fermion-only device.** The exclusion principle is what keeps the sea inert. A boson obeys no exclusion, so a filled bosonic sea would be no obstacle to further occupation, and the negative-frequency problem of the Klein–Gordon equation must be resolved another way — by the second-quantized treatment of the two branches with a different statistics. Hole theory therefore cannot be the general theory of the vacuum.
 - **The sea is an infinite many-body state, not a one-particle statement.** Its consistency requires an infinite number of particles and a notion of the vacuum as a state of an operator algebra, which the one-particle equation does not supply.
 - **It is not needed.** Once the fields are quantized, the same predictions follow from the anticommutation relations alone, without populating anything.
@@ -54,7 +54,7 @@ The last point is the decisive one: the hole theory is a correct but redundant b
 The reinterpretation of the negative branch is usually credited to Furry and Oppenheimer (1934), who showed that positron processes follow from the second-quantized electron field without a sea, and to Stückelberg (1941) and Feynman (1948), who made the picture systematic: a negative-frequency solution propagating forward in time is the same as a positive-frequency antiparticle propagating backward in time. The field operator is expanded as
 
 $$
-\hat\psi(x) = \sum_r\int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf p}}}\left[\hat a_r(\mathbf p)\,u^{(r)}(\mathbf p)e^{-ip\cdot x} + \hat b_r^\dagger(\mathbf p)\,v^{(r)}(\mathbf p)e^{+ip\cdot x}\right],
+\hat\psi(x) = \sum_r\int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}\left[\hat a_r(\vec p)\,u^{(r)}(\vec p)e^{-ip\cdot x} + \hat b_r^\dagger(\vec p)\,v^{(r)}(\vec p)e^{+ip\cdot x}\right],
 $$
 
 in which the **annihilation** operator multiplies the positive-frequency spinors and the **creation** operator of antiparticles multiplies the negative-frequency spinors. There is no sea; the vacuum $|0\rangle$ is defined by $\hat a|0\rangle = \hat b|0\rangle = 0$. The framework's canonical-quantization article writes precisely this expansion on the spinor module, with each mode function the module representative of a biquaternion plane wave.
@@ -64,7 +64,7 @@ in which the **annihilation** operator multiplies the positive-frequency spinors
 With the anticommutator the Hamiltonian becomes, after normal ordering,
 
 $$
-\hat H = \sum_r\int\frac{d^3p}{(2\pi)^3}E_{\mathbf p}\left(\hat a_r^\dagger\hat a_r + \hat b_r^\dagger\hat b_r\right),
+\hat H = \sum_r\int\frac{d^3p}{(2\pi)^3}E_{\vec p}\left(\hat a_r^\dagger\hat a_r + \hat b_r^\dagger\hat b_r\right),
 $$
 
 a positive sum of particle and antiparticle numbers, with the divergent constant removed. The charge is equally normal-ordered, and particles and antiparticles carry opposite charge. This is the modern replacement of the filled sea, and it is the content the framework already has.
@@ -77,7 +77,7 @@ The first calculation is **Uehling's** (1935): the vacuum polarization correctio
 
 ## The Dirac Sea in Condensed Matter
 
-In solids the filled sea is a physical object. The electrons of a crystal fill the bands up to the Fermi level; the filled valence band of a semiconductor or insulator is a **Fermi sea**, and an empty state near the top of the valence band — a **hole** — conducts as a positive charge. The arithmetic is the same as in Dirac's hole theory: remove an electron of charge $-e$ and momentum $\mathbf p$ from the filled band, and the remaining excitation has charge $+e$, momentum $-\mathbf p$ and positive energy. The effective mass of the hole is the negative of the electron's band mass, exactly as the hole's energy in the Dirac sea is positive when the electron energy was negative.
+In solids the filled sea is a physical object. The electrons of a crystal fill the bands up to the Fermi level; the filled valence band of a semiconductor or insulator is a **Fermi sea**, and an empty state near the top of the valence band — a **hole** — conducts as a positive charge. The arithmetic is the same as in Dirac's hole theory: remove an electron of charge $-e$ and momentum $\vec p$ from the filled band, and the remaining excitation has charge $+e$, momentum $-\vec p$ and positive energy. The effective mass of the hole is the negative of the electron's band mass, exactly as the hole's energy in the Dirac sea is positive when the electron energy was negative.
 
 The analogy sharpens in the Dirac materials of the companion article *Dirac Matter: Graphene, Dirac Cones and Topological Insulators in Biquaternionic Form*. Graphene's electrons near the Dirac point obey a massless two-dimensional Dirac equation, and the negative-energy branch is the filled lower cone; its hole excitations are the positive-charge carriers. In a Dirac or Weyl semimetal the filled negative-energy branch is again a real Dirac sea, and its low-energy response — including the anomalous quantum Hall effect and Klein tunnelling — is described by the same equations that Dirac wrote for the vacuum. The condensed-matter realization is therefore the place where the sea is not a bookkeeping device but a measured many-body state.
 
@@ -89,14 +89,14 @@ The framework's mass shell $\tilde k\tilde k^{\natural} = -m^2c^2/\hbar^2$ has t
 
 ### The operator content is already the reinterpretation
 
-The framework's canonical-quantization article contains the modern resolution verbatim. It shows that if the modes commuted, the energy $H=\sum E_{\mathbf p}(\hat a^\dagger\hat a-\hat b^\dagger\hat b)$ would be **unbounded below** and no stable vacuum would exist; that the **anticommutator** replaces this by a positive sum plus a c-number; and that "the anticommutator is what makes the negative-frequency modes into positive-energy antiparticles. This is the operator content of the Dirac sea." The framework is therefore explicitly on the reinterpretation side: the vacuum is the state annihilated by the annihilation operators, and the negative branch is the creation operators of antiparticles. Dirac's filled sea is not implemented, and does not need to be.
+The framework's canonical-quantization article contains the modern resolution verbatim. It shows that if the modes commuted, the energy $H=\sum E_{\vec p}(\hat a^\dagger\hat a-\hat b^\dagger\hat b)$ would be **unbounded below** and no stable vacuum would exist; that the **anticommutator** replaces this by a positive sum plus a c-number; and that "the anticommutator is what makes the negative-frequency modes into positive-energy antiparticles. This is the operator content of the Dirac sea." The framework is therefore explicitly on the reinterpretation side: the vacuum is the state annihilated by the annihilation operators, and the negative branch is the creation operators of antiparticles. Dirac's filled sea is not implemented, and does not need to be.
 
 ### The infinite charge is the normal-ordering constant
 
 The framework's one-particle structure has no sea, and therefore no infinite charge of its own. The infinity appears only when the field is quantized, as the normal-ordering constant
 
 $$
-E_0 = -2V\int\frac{d^3p}{(2\pi)^3}E_{\mathbf p},
+E_0 = -2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p},
 $$
 
 which the canonical-quantization article removes by the standard prescription and describes as "an ultraviolet feature of the free field." The framework's added question is whether the biquaternion structure singles out a distinguished regularization or assigns $E_0$ a geometric meaning; the article records that "nothing in the biquaternion structure as used here changes that," and the question is open. This is the correct place to fix the article's negative conclusion: **the framework inherits the sea's infinity as the ordinary normal-ordering constant and does not, in the corpus as it stands, explain it.**
@@ -147,17 +147,17 @@ Putting the pieces together, the framework supports the following interpretation
 
 The Dirac equation has negative-energy solutions with no lower bound, and Klein's paradox shows that a strong potential drives a one-particle state onto them. Dirac's 1930 hole theory filled the negative-energy states and identified the holes with positive-energy, positively charged particles, predicting the positron (observed by Anderson in 1932) before it was found. The filled sea is untenable as a fundamental picture: it carries infinite charge and energy, it works only for fermions, it is irreducibly many-body, and it is unnecessary. The modern treatment reinterprets the negative-frequency modes as antiparticle creation operators, defines the vacuum as the empty Fock state, and removes the vacuum constant by normal ordering.
 
-The biquaternion framework is naturally on this second side. Its mass shell has the two branches; its canonical quantization expands the field in positive- and negative-frequency modes, exhibits the unbounded energy that would follow from commuting modes, and finds stability in the anticommutator, which is exactly "the operator content of the Dirac sea." Its charge conjugation is the real structure $\mathcal C$ on the doubled module, which relabels particles as antiparticles as the hole picture does. What the framework does not do is fill a sea — its one-particle algebra has none — and it does not explain the vacuum constant, which appears as the ordinary normal-ordering constant $E_0=-2V\int d^3p\,E_{\mathbf p}/(2\pi)^3$. In condensed matter, by contrast, the Dirac sea is a physical filled band, and in the Dirac materials of the companion article the sea and its holes are measured.
+The biquaternion framework is naturally on this second side. Its mass shell has the two branches; its canonical quantization expands the field in positive- and negative-frequency modes, exhibits the unbounded energy that would follow from commuting modes, and finds stability in the anticommutator, which is exactly "the operator content of the Dirac sea." Its charge conjugation is the real structure $\mathcal C$ on the doubled module, which relabels particles as antiparticles as the hole picture does. What the framework does not do is fill a sea — its one-particle algebra has none — and it does not explain the vacuum constant, which appears as the ordinary normal-ordering constant $E_0=-2V\int d^3p\,E_{\vec p}/(2\pi)^3$. In condensed matter, by contrast, the Dirac sea is a physical filled band, and in the Dirac materials of the companion article the sea and its holes are measured.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $E=\pm\sqrt{\mathbf p^2+m^2}$ | Two branches of the Dirac dispersion |
-| $\hat a_r(\mathbf p)$, $\hat b_r(\mathbf p)$ | Particle and antiparticle annihilation operators |
+| $E=\pm\sqrt{\vec p^2+m^2}$ | Two branches of the Dirac dispersion |
+| $\hat a_r(\vec p)$, $\hat b_r(\vec p)$ | Particle and antiparticle annihilation operators |
 | $u^{(r)}$, $v^{(r)}$ | Positive- and negative-frequency spinors |
 | $|0\rangle$, $\hat a|0\rangle=\hat b|0\rangle=0$ | Fock vacuum; no sea |
-| $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\mathbf p}$ | Normal-ordering constant (vacuum energy) |
+| $E_0=-2V\int\frac{d^3p}{(2\pi)^3}E_{\vec p}$ | Normal-ordering constant (vacuum energy) |
 | $e$ | Positive unit of charge; the electron carries $-e$ |
 | $\mathcal C$ | Framework's charge-conjugation real structure on $\Delta=S\oplus\bar S$ |
 | $Z_c$ | Componentwise complex conjugation of the biquaternion field; carries the electron equation to the positron equation, $F_{\mathrm{pos}}=\overline{F_{\mathrm{el}}}$ |

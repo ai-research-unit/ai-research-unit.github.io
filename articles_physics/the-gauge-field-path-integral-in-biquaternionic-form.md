@@ -13,7 +13,7 @@ The companion article *Canonical Quantization of the Biquaternion Maxwell Field*
 - Companion article *The Path Integral in Biquaternionic Form*, for the sum-over-paths framework of the series.
 - Companion article *The Gauge Principle in Biquaternionic Form*, for the gauge transformation, the gauge scalar, and the covariant derivative.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$, central $i$, material sector $\mathbb{M}_-$ and informational sector $\mathbb{M}_+$. The gauge potential is the material four-vector $\tilde{A}=iA_0e_0+\mathbf{A}\in\mathbb{M}_-$, the field strength is $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, the d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$, and the gauge scalar is $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$. The Lagrangian is $\mathcal{L}=-\tfrac14F_{\mu\nu}F^{\mu\nu}=-\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde{F}\tilde{F}^{\natural})$, with $\tilde{F}$ the field-strength biquaternion of the Maxwell companion, the series metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, the series momentum invariant is $p^2=\omega^2-\mathbf{p}^2$, so that $p_\mu p^\mu=-p^2$ and $p_\mu p^\mu=-\mu^2$ is the mass shell, and natural units $\hbar=c=1$ are used for the integral. The integral is over $\tilde{A}$-configurations, the measure being written $\mathcal{D}\tilde{A}$; in components it is the fourfold product of measures for $A_0,A_1,A_2,A_3$. The gauge coupling is $g$ and, where a non-abelian structure is indicated, its generators are realized in $\mathbb{M}_+$ as in the BRST construction.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$, central $i$, material sector $\mathbb{M}_-$ and informational sector $\mathbb{M}_+$. The gauge potential is the material four-vector $\tilde{A}=iA_0e_0+\vec A\in\mathbb{M}_-$, the field strength is $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, the d'Alembertian is $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$, and the gauge scalar is $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$. The Lagrangian is $\mathcal{L}=-\tfrac14F_{\mu\nu}F^{\mu\nu}=-\tfrac12\mathrm{Re}\,\mathrm{Sc}(\tilde{F}\tilde{F}^{\natural})$, with $\tilde{F}$ the field-strength biquaternion of the Maxwell companion, the series metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, the series momentum invariant is $p^2=\omega^2-\vec p^2$, so that $p_\mu p^\mu=-p^2$ and $p_\mu p^\mu=-\mu^2$ is the mass shell, and natural units $\hbar=c=1$ are used for the integral. The integral is over $\tilde{A}$-configurations, the measure being written $\mathcal{D}\tilde{A}$; in components it is the fourfold product of measures for $A_0,A_1,A_2,A_3$. The gauge coupling is $g$ and, where a non-abelian structure is indicated, its generators are realized in $\mathbb{M}_+$ as in the BRST construction.
 
 ## The Functional Integral for a Gauge Field
 
@@ -51,7 +51,7 @@ with $\mathrm{Vol}(\mathcal{G})$ the volume of the gauge group — an infinite f
 The measure is a product over the four material components. Because the material sector decomposes as $\mathbb{M}_-=\mathrm{span}_{\mathbb{R}}\{ie_0\}\oplus V$ with $V$ the vector part, the measure can be written as a product over the scalar-direction component and the three vector-direction components,
 
 $$
-\mathcal{D}\tilde{A} = \mathcal{D}A_0\;\mathcal{D}\mathbf{A},
+\mathcal{D}\tilde{A} = \mathcal{D}A_0\;\mathcal{D}\vec A,
 \qquad
 \tilde{A} = iA_0e_0+\sum_{k=1}^{3}A_ke_k ,
 $$
@@ -281,7 +281,7 @@ The gauge-fixed quadratic action is Gaussian, and its inverse is the propagator 
 
 | Symbol | Meaning |
 |---|---|
-| $\mathcal{D}\tilde{A}$ | Measure on $\mathbb{M}_-$-valued configurations; $\mathcal{D}A_0\,\mathcal{D}\mathbf{A}$ in components |
+| $\mathcal{D}\tilde{A}$ | Measure on $\mathbb{M}_-$-valued configurations; $\mathcal{D}A_0\,\mathcal{D}\vec A$ in components |
 | $S[\tilde{A}]=\int d^4x\,(-\tfrac14F_{\mu\nu}F^{\mu\nu})=-\tfrac12\int\mathrm{Re}\,\mathrm{Sc}(\tilde{F}\tilde{F}^{\natural})$ | Gauge-field action, component and bilinear forms |
 | $\tilde{A}^\Gamma=\tilde{A}-\tilde{\nabla}\Gamma$, $S[\tilde{A}^\Gamma]=S[\tilde{A}]$ | Gauge transformation and invariance of the action |
 | $\mathrm{Vol}(\mathcal{G})$ | Infinite gauge-group volume; the pathology of the naive integral |

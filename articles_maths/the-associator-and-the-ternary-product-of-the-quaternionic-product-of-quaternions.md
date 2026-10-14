@@ -5,7 +5,7 @@
 The product of this block is the **general quaternionic bilinear product**
 
 $$
-\tilde p \star \tilde q = \tilde p^{\natural}\tilde q , \qquad \tilde p^{\natural} = p_0 - \mathbf p ,
+\tilde p \star \tilde q = \tilde p^{\natural}\tilde q , \qquad \tilde p^{\natural} = p_0 - \vec p ,
 $$
 
 the second of the two bilinear products of the quaternion real space, whose rule is *The Two General Products of the Quaternion $\mathbb{R}$ Space* and whose algebra is *Introduction to the General Quaternionic Algebra of Quaternions*. The product is $\mathbb{R}$-bilinear and has $e_0$ as a left unit and no right one; the element theory of its square, its zero divisors, its roots and its idempotents is the Common Theory of the block. This article reads its **associativity defect**.
@@ -36,15 +36,15 @@ $$
 
 and the difference is the displayed product on the right.
 
-**Theorem (the coordinate form).** With $\mathbf p, \mathbf q$ the vector parts and $\mathbf p \cdot \mathbf q$ their Euclidean inner product,
+**Theorem (the coordinate form).** With $\vec p, \vec q$ the vector parts and $\vec p \cdot \vec q$ their Euclidean inner product,
 
 $$
-\tilde q^{\natural}\tilde p - \tilde p^{\natural}\tilde q^{\natural} = 2\bigl((\mathbf p \cdot \mathbf q)e_0 + q_0\mathbf p\bigr) .
+\tilde q^{\natural}\tilde p - \tilde p^{\natural}\tilde q^{\natural} = 2\bigl((\vec p \cdot \vec q)e_0 + q_0\vec p\bigr) .
 $$
 
-*Proof.* Expand $\tilde q^{\natural}\tilde p = (q_0 - \mathbf q)(p_0 + \mathbf p)$ and $\tilde p^{\natural}\tilde q^{\natural} = (p_0 - \mathbf p)(q_0 - \mathbf q)$ in the plain product using $\mathbf q\mathbf p = -\,\mathbf q \cdot \mathbf p + \mathbf q \times \mathbf p$, and subtract: the two cross products cancel and the two copies of each remaining term add to twice their common value.
+*Proof.* Expand $\tilde q^{\natural}\tilde p = (q_0 - \vec q)(p_0 + \vec p)$ and $\tilde p^{\natural}\tilde q^{\natural} = (p_0 - \vec p)(q_0 - \vec q)$ in the plain product using $\vec q\vec p = -\,\vec q \cdot \vec p + \vec q \times \vec p$, and subtract: the two cross products cancel and the two copies of each remaining term add to twice their common value.
 
-**Remark.** The coordinate form is the measure of the defect, and it is short. The associator coefficient vanishes exactly when $(\mathbf p \cdot \mathbf q)e_0 + q_0\mathbf p = 0$, that is when $\mathbf p = 0$ — the first factor central — or when $q_0 = 0$ with $\mathbf p$ orthogonal to $\mathbf q$ in the three-dimensional Euclidean sense. In every other case the defect is present, and it is proportional to the first factor.
+**Remark.** The coordinate form is the measure of the defect, and it is short. The associator coefficient vanishes exactly when $(\vec p \cdot \vec q)e_0 + q_0\vec p = 0$, that is when $\vec p = 0$ — the first factor central — or when $q_0 = 0$ with $\vec p$ orthogonal to $\vec q$ in the three-dimensional Euclidean sense. In every other case the defect is present, and it is proportional to the first factor.
 
 **Theorem (the sixteen coefficients).** The associator is determined by its values on the basis triples. Writing $C_{\mu\nu}$ for the element with $[\tilde e_\mu,\tilde e_\nu,\tilde r] = C_{\mu\nu}\tilde r$, the coefficients are
 
@@ -57,7 +57,7 @@ $$
 
 Six of the sixteen coefficients are nonzero: $C_{\mu 0} = 2e_\mu$ for $\mu \neq 0$ and $C_{\mu\mu} = 2e_0$ for $\mu \neq 0$. Consequently $24$ of the $64$ triples of basis elements give a nonzero associator, each nonzero coefficient contributing the four values of the third slot.
 
-*Proof.* The table is the coordinate formula read on the basis: $\mathbf p \cdot \mathbf q$ is nonzero only for $\mu = \nu \neq 0$, where it is $1$, and $q_0$ is nonzero only for $\nu = 0$, where it is $1$ and $C_{\mu 0} = 2e_\mu$. The count is $6 \times 4 = 24$.
+*Proof.* The table is the coordinate formula read on the basis: $\vec p \cdot \vec q$ is nonzero only for $\mu = \nu \neq 0$, where it is $1$, and $q_0$ is nonzero only for $\nu = 0$, where it is $1$ and $C_{\mu 0} = 2e_\mu$. The count is $6 \times 4 = 24$.
 
 **Corollary (non-associativity).** The product is not associative: $[e_1,e_0,e_0] = 2e_1$, and the defect is detected on the basis alone.
 
@@ -92,10 +92,10 @@ the commutative companion of $\star$, written with the bare bullet as in the sym
 **Lemma.** The symmetrised product is central-valued:
 
 $$
-\tilde p \bullet \tilde q = \beta(\tilde p,\tilde q)\,e_0 , \qquad \beta(\tilde p,\tilde q) = p_0q_0 + \mathbf p \cdot \mathbf q .
+\tilde p \bullet \tilde q = \beta(\tilde p,\tilde q)\,e_0 , \qquad \beta(\tilde p,\tilde q) = p_0q_0 + \vec p \cdot \vec q .
 $$
 
-*Proof.* The two summands are $\tilde p^{\natural}\tilde q$ and $\tilde q^{\natural}\tilde p$, whose vector parts are $p_0\mathbf q - q_0\mathbf p - \mathbf p \times \mathbf q$ and $q_0\mathbf p - p_0\mathbf q - \mathbf q \times \mathbf p$; the cross products cancel by antisymmetry, the two copies of $p_0\mathbf q - q_0\mathbf p$ cancel in the half-sum, and the scalar parts add to $2\beta(\tilde p,\tilde q)$.
+*Proof.* The two summands are $\tilde p^{\natural}\tilde q$ and $\tilde q^{\natural}\tilde p$, whose vector parts are $p_0\vec q - q_0\vec p - \vec p \times \vec q$ and $q_0\vec p - p_0\vec q - \vec q \times \vec p$; the cross products cancel by antisymmetry, the two copies of $p_0\vec q - q_0\vec p$ cancel in the half-sum, and the scalar parts add to $2\beta(\tilde p,\tilde q)$.
 
 **Definition.** The **ternary product** of the quaternionic multiplication is the ternary operation generated by the symmetrisation,
 
@@ -141,7 +141,7 @@ fails for the ternary product of the quaternionic multiplication. At $(x,y,u,v,w
 
 ## Summary
 
-The quaternionic product is not associative, and its associator has the closed form $(\tilde q^{\natural}\tilde p - \tilde p^{\natural}\tilde q^{\natural})\tilde r$, with the coordinate form $2((\mathbf p \cdot \mathbf q)e_0 + q_0\mathbf p)\tilde r$; the sixteen coefficients $[e_\mu,e_\nu,\cdot]$ have six nonzero entries and $24$ of the $64$ basis triples are nonzero. The product satisfies no rung of the ladder of weaker identities: it fails flexibility at $(e_3,e_0)$ and it fails the weakest rung, third-power associativity, so it is not alternative, not flexible and not power-associative. The general theory attaches a ternary operation to the symmetrisation; here the symmetrisation is the central-valued $\tilde p \bullet \tilde q = \beta(\tilde p,\tilde q)e_0$, and the ternary product is central-valued, $\mathbb{R}$-linear in its three variables, symmetric in its outer two, and fails the five-linear Jordan triple identity at $(e_0,e_0,e_1,e_0,e_1)$. The plain multiplication is the contrast throughout: its associator vanishes identically, it satisfies every rung of the ladder, and its ternary product is a Jordan triple system.
+The quaternionic product is not associative, and its associator has the closed form $(\tilde q^{\natural}\tilde p - \tilde p^{\natural}\tilde q^{\natural})\tilde r$, with the coordinate form $2((\vec p \cdot \vec q)e_0 + q_0\vec p)\tilde r$; the sixteen coefficients $[e_\mu,e_\nu,\cdot]$ have six nonzero entries and $24$ of the $64$ basis triples are nonzero. The product satisfies no rung of the ladder of weaker identities: it fails flexibility at $(e_3,e_0)$ and it fails the weakest rung, third-power associativity, so it is not alternative, not flexible and not power-associative. The general theory attaches a ternary operation to the symmetrisation; here the symmetrisation is the central-valued $\tilde p \bullet \tilde q = \beta(\tilde p,\tilde q)e_0$, and the ternary product is central-valued, $\mathbb{R}$-linear in its three variables, symmetric in its outer two, and fails the five-linear Jordan triple identity at $(e_0,e_0,e_1,e_0,e_1)$. The plain multiplication is the contrast throughout: its associator vanishes identically, it satisfies every rung of the ladder, and its ternary product is a Jordan triple system.
 
 ## Summary of Notation
 
@@ -149,15 +149,15 @@ The quaternionic product is not associative, and its associator has the closed f
 |---|---|
 | $\mathbb{H}$ | the quaternion algebra, the real space of the block |
 | $\tilde p = \sum_\mu p_\mu e_\mu$ | an element and its four real coordinates |
-| $\mathbf p = \sum_k p_ke_k$ | the vector part |
-| $\mathbf p \cdot \mathbf q$ | the Euclidean inner product of the vector parts |
-| $\mathbf p \times \mathbf q$ | the cross product of the vector parts |
-| ${}^{\natural}$ | the conjugation $\tilde p^{\natural} = p_0 - \mathbf p$ |
+| $\vec p = \sum_k p_ke_k$ | the vector part |
+| $\vec p \cdot \vec q$ | the Euclidean inner product of the vector parts |
+| $\vec p \times \vec q$ | the cross product of the vector parts |
+| ${}^{\natural}$ | the conjugation $\tilde p^{\natural} = p_0 - \vec p$ |
 | $\tilde p \star \tilde q = \tilde p^{\natural}\tilde q$ | the general quaternionic bilinear product |
 | $[\tilde p,\tilde q,\tilde r] = (\tilde p \star \tilde q) \star \tilde r - \tilde p \star (\tilde q \star \tilde r)$ | the associator of the product |
 | $C_{\mu\nu}$ | the associator coefficients, $[e_\mu,e_\nu,\tilde r] = C_{\mu\nu}\tilde r$ |
 | $\tilde p \bullet \tilde q = \tfrac12(\tilde p \star \tilde q + \tilde q \star \tilde p)$ | the symmetrised product |
-| $\beta(\tilde p,\tilde q) = p_0q_0 + \mathbf p \cdot \mathbf q$ | its central coefficient |
+| $\beta(\tilde p,\tilde q) = p_0q_0 + \vec p \cdot \vec q$ | its central coefficient |
 | $\{\tilde p,\tilde q,\tilde r\}$ | the ternary product of the symmetrisation |
 
 ## Further Reading

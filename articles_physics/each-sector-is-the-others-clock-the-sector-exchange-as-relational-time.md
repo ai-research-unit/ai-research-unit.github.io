@@ -24,7 +24,7 @@ $$
 \tilde{Q}_- = ict\,e_0 + x\,e_1 + y\,e_2 + z\,e_3 \in \mathbb{M}_-, \qquad \tilde{Q}_+ = ct'\,e_0 + i\bigl(x'e_1 + y'e_2 + z'e_3\bigr) \in \mathbb{M}_+,
 $$
 
-with $t, \mathbf{x}, t', \mathbf{x}'$ real. The verification of the two inclusions is the pair of computations in *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, and the interpretation of the coefficients is the $ict$ dictionary of *Conventions in the Biquaternion Universe*.
+with $t, \vec x, t', \vec x'$ real. The verification of the two inclusions is the pair of computations in *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, and the interpretation of the coefficients is the $ict$ dictionary of *Conventions in the Biquaternion Universe*.
 
 The centre of the algebra is $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$, and it is the complex time sector of *Other Remarkable Subspaces*. The two times are its two real coordinates: writing
 
@@ -45,10 +45,10 @@ $$
 so $i\tilde{Q}_- \in \mathbb{M}_+$, and the same computation run backwards sends $\mathbb{M}_+$ to $\mathbb{M}_-$. In coordinates the exchange is
 
 $$
-i\bigl(ict\,e_0 + \mathbf{x}\bigr) = -ct\,e_0 + i\mathbf{x} \in \mathbb{M}_+, \qquad i\bigl(ct'\,e_0 + i\mathbf{x}'\bigr) = ict'\,e_0 - \mathbf{x}' \in \mathbb{M}_- .
+i\bigl(ict\,e_0 + \vec x\bigr) = -ct\,e_0 + i\vec x \in \mathbb{M}_+, \qquad i\bigl(ct'\,e_0 + i\vec x'\bigr) = ict'\,e_0 - \vec x' \in \mathbb{M}_- .
 $$
 
-Read on the coefficients, the material element $(t, \mathbf{x})$ is carried to the informational element $(t' = -t,\ \mathbf{x}' = \mathbf{x})$, and the informational element $(t', \mathbf{x}')$ is carried to the material element $(t = t',\ \mathbf{x} = -\mathbf{x}')$. The two times therefore exchange roles, with the sign that a quarter turn carries, and the two spaces exchange roles in the same movement. On the central coordinate the exchange is one application of the generator,
+Read on the coefficients, the material element $(t, \vec x)$ is carried to the informational element $(t' = -t,\ \vec x' = \vec x)$, and the informational element $(t', \vec x')$ is carried to the material element $(t = t',\ \vec x = -\vec x')$. The two times therefore exchange roles, with the sign that a quarter turn carries, and the two spaces exchange roles in the same movement. On the central coordinate the exchange is one application of the generator,
 
 $$
 z \mapsto i z = -ct + i\,ct' ,

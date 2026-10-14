@@ -46,8 +46,8 @@ ${}^{\natural}$, $\bar{\cdot}$ and ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The *
 $C(\tilde\Xi)e_0=\tilde\Xi^{\natural}\tilde\Xi=\tilde\Xi\tilde\Xi^{\natural}$ with
 $C(\tilde\Xi)=\sum_\mu\Xi_\mu^{2}$; the **Hermitian square** is $H(\tilde\Xi)=\sum_\mu\lvert\Xi_\mu\rvert^{2}$;
 the **Krein value** is $\Delta(\tilde\Xi)=\lvert\Xi_0\rvert^{2}-\sum_k\lvert\Xi_k\rvert^{2}$. An element is
-**pure** when $\Xi_0=0$ and **central** when $\mathbf\Xi=0$. The material coordinate is
-$\tilde\Xi=i c t\,e_0+\mathbf x$ with $c=1/\sqrt{\epsilon\mu}$. The twelve structures are cited by their
+**pure** when $\Xi_0=0$ and **central** when $\vec\Xi=0$. The material coordinate is
+$\tilde\Xi=i c t\,e_0+\vec x$ with $c=1/\sqrt{\epsilon\mu}$. The twelve structures are cited by their
 three-letter names throughout.
 
 ## The Halving Map
@@ -91,13 +91,13 @@ different object with a different job.
 ## Roots of One: the Involution, the Unitary and the Normalisation
 
 **In the plain product.** The plain square of $\tilde\Xi$ is
-$\Xi_0^{2}-(\mathbf\Xi,\mathbf\Xi)+2\Xi_0\mathbf\Xi$, so the equation $\tilde\Xi^{2}=e_0$ forces
-either $\mathbf\Xi=0$ and $\Xi_0=\pm1$, or $\Xi_0=0$ and $(\mathbf\Xi,\mathbf\Xi)=-1$. The roots of $+1$
+$\Xi_0^{2}-(\vec\Xi,\vec\Xi)+2\Xi_0\vec\Xi$, so the equation $\tilde\Xi^{2}=e_0$ forces
+either $\vec\Xi=0$ and $\Xi_0=\pm1$, or $\Xi_0=0$ and $(\vec\Xi,\vec\Xi)=-1$. The roots of $+1$
 of $\mathrm{GPA}$ are therefore the central pair $\pm e_0$ and the pure family
-$\{\Xi_0=0,\ (\mathbf\Xi,\mathbf\Xi)=-1\}$, a quadric of real dimension four. The central pair is the
+$\{\Xi_0=0,\ (\vec\Xi,\vec\Xi)=-1\}$, a quadric of real dimension four. The central pair is the
 trivial involution; a pure root reverses a direction of the vector subspace, with square the positive
 unit $e_0$. The family is classified directly, on the roots of $+1$ themselves, and the
-classification is the one the mathematics companion gives; the element $i\hat\mu=i e_1$ is the worked
+classification is the one the mathematics companion gives; the element $i\tilde\xi=i e_1$ is the worked
 member, and $e_1+\sqrt2\,i e_2$ is the pure member with a complex coefficient. Physically an involution is
 a discrete symmetry, a reversal of a direction, and the corpus reads the family as the reality conditions
 of the material sector in *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*.
@@ -131,14 +131,14 @@ Sesqualgebra* and *The Bloch Ball as the Trace-One Slice of the Future Light Con
 
 **In the quaternionic families.** The quaternionic square is the central square $C(\tilde\Xi)e_0$, so
 the roots of $+1$ are the quadric $C=+1$ for $\mathrm{GQA}$ and $\mathrm{SQA}$, containing the central pair
-$\pm e_0$ and the real vector roots $\hat\mu$, and the family of the slopes $\lvert t\rvert>1$ with the
+$\pm e_0$ and the real vector roots $\tilde\xi$, and the family of the slopes $\lvert t\rvert>1$ with the
 central circle for $\mathrm{GQS}$, containing $e_0$ and $i$. The physical interpretation is again the
 interval: a root of $+1$ is an element of interval $+1$, that is a spacelike unit element of the material
 sector, and the slope ranges of the gauge sesquilinear structure are its three causal classes.
 
 **In the gauge sesquilinear family.** The fourth product's square has the Krein value as its scalar part,
 and the roots of $+1$ are the family at the slopes $\lvert t\rvert>1$ of the parametrisation
-$\tilde\Xi=c(\hat\mu+it)$ with $(t^{2}-1)\lvert c\rvert^{2}=+1$, together with the central circle
+$\tilde\Xi=c(\tilde\xi+it)$ with $(t^{2}-1)\lvert c\rvert^{2}=+1$, together with the central circle
 $\lvert a\rvert^{2}=1$ of the multiples of $e_0$. The slope is a causal parameter: the three named values
 select the three ranges of $t$, that is the three causal classes of the material sector, and the roots of
 $+1$ are the spacelike class. The owner of the parametrisation and the indefinite metric is *The Fourth
@@ -191,7 +191,7 @@ its square and its root set of $+1$, before the table collects them in one place
 ### $\mathrm{GPA}$, the general plain algebra — composition
 
 The product is the plain product and its square is the plain square. The roots of $+1$ are the central pair
-$\pm e_0$ and the pure family with $(\mathbf\Xi,\mathbf\Xi)=-1$, of real dimension four; the halving map
+$\pm e_0$ and the pure family with $(\vec\Xi,\vec\Xi)=-1$, of real dimension four; the halving map
 carries them onto the idempotents, so the composition has one state per involution. The reading is *Square
 Roots: the Local Complex Structure, the Light Cone and the Mass Shell*.
 
@@ -212,7 +212,7 @@ is *The Cross Product as a Lie Bracket: Rotations and the Jacobi Identity*.
 
 The product is the natural product $\tilde P^{\natural}\tilde Q$ and its square is the central interval $C(\tilde\Xi)e_0$, so
 the root problem of $+1$ is the level set $C=+1$, the quadric of real dimension six. It contains the
-central pair $\pm e_0$ and the real vector roots $\hat\mu$. The reading is *The Interval as the Square and
+central pair $\pm e_0$ and the real vector roots $\tilde\xi$. The reading is *The Interval as the Square and
 the Charge of the Material Composition*.
 
 ### $\mathrm{SQA}$, the symmetric quaternionic algebra — coupling
@@ -252,7 +252,7 @@ square. The reading is *The Imaginary Part of the Born Pairing: the Antisymmetri
 ### $\mathrm{GQS}$, the general quaternionic sesqualgebra — gauge
 
 The product is the fourth product and its square has the Krein value as scalar part, real for every
-element. The roots of $+1$ are the slopes $\lvert t\rvert>1$ of the parametrisation $c(\hat\mu+it)$ beside
+element. The roots of $+1$ are the slopes $\lvert t\rvert>1$ of the parametrisation $c(\tilde\xi+it)$ beside
 the central circle. Physically the value is the spacelike class of the indefinite metric. The reading is
 *The Fourth Product and Its Indefinite Metric*.
 
@@ -276,13 +276,13 @@ plain pair's family being the one the halving map produces.
 
 | structure | square | roots of $+1$ | idempotent family | physical interpretation |
 |---|---|---|---|---|
-| GPA | $\tilde\Xi^{2}$ | $\pm e_0$ and the pure family $(\mathbf\Xi,\mathbf\Xi)=-1$, dim 4 | $\tfrac12(e_0+\tilde\Xi)$, the states | involution, discrete symmetry |
+| GPA | $\tilde\Xi^{2}$ | $\pm e_0$ and the pure family $(\vec\Xi,\vec\Xi)=-1$, dim 4 | $\tfrac12(e_0+\tilde\Xi)$, the states | involution, discrete symmetry |
 | SPA | $\tilde\Xi^{2}$ | the set of GPA | the set of GPA | the same, but the pure roots are zero divisors of the block |
 | APA | $0$ | none | none | a bracket has no involution |
 | GQA | $C(\tilde\Xi)e_0$ | quadric $C=+1$, dim 6 | trivial pair only | the spacelike shell of the interval |
 | SQA | $C(\tilde\Xi)e_0$ | quadric $C=+1$ | trivial pair only | the same |
 | AQA | $0$ | none | none | a bracket has no involution |
-| GPS | $\tilde\Xi\tilde\Xi^{*}$ | the unitary group $U(2)$, dim 4 | the Hermitian states $\tfrac12(e_0+i\hat\mu)$ | the symmetries of the pairing |
+| GPS | $\tilde\Xi\tilde\Xi^{*}$ | the unitary group $U(2)$, dim 4 | the Hermitian states $\tfrac12(e_0+i\tilde\xi)$ | the symmetries of the pairing |
 | SPS | $H(\tilde\Xi)e_0$ | the sphere $H=1$, dim 7 | trivial pair only | normalisation replaces unitarity |
 | APS | the pure part | none | none | the bracket has a parity, not a value |
 | GQS | the Krein value | slopes $\lvert t\rvert>1$ and the central circle | the invertible states $-\tfrac12e_0+\mu$ | the spacelike class of the indefinite metric |
@@ -319,8 +319,7 @@ the band cannot carry a clock, a state or a symmetry of that kind: the probabili
 complex structure of its own, and its phase is imported from the composition. The physical interpretations of the
 roots of $-1$ — the local complex structure, the speed of light, the clock, the half-turn, the Kramers
 sign — are owned elsewhere in the corpus, and the article cites their owners rather than restating them:
-*The Local Complex Structure and the Speed of Light*, *Square Roots: the Local Complex Structure, the Light
-Cone and the Mass Shell*, *Each Sector Is the Other's Clock: the Sector Exchange as Relational Time*,
+*The Local Complex Structure and the Speed of Light*, *Square Roots of One and the Idempotents: the Hermitian Observables and the States*, *Each Sector Is the Other's Clock: the Sector Exchange as Relational Time*,
 *Thermal Time and the Modular Flow in the Biquaternion Framework*, *Kramers Degeneracy and Antiunitary
 Symmetry in Biquaternionic Form* and *The Spectral Triple of the Biquaternion Algebra*. The state part that follows does not use
 the roots of $-1$: no state, family, bijection, projection or complete-measurement reading is described
@@ -353,7 +352,7 @@ degenerate end of the state set.
 $\tfrac12(e_0+\tilde\Xi)$ over the roots $\tilde\Xi$ of $+1$, and the map
 $\tilde\Xi\mapsto\tfrac12(e_0+\tilde\Xi)$ is a bijection from the roots of $+1$ onto the idempotents.
 The classification of the roots of $+1$, given above, splits the family in three: the trivial pair from
-$\pm e_0$, the **Hermitian** family $\tfrac12(e_0+i\hat\mu)$ over the real unit vectors, and the
+$\pm e_0$, the **Hermitian** family $\tfrac12(e_0+i\tilde\xi)$ over the real unit vectors, and the
 four-parameter **non-trivial** family from the pure roots, which lies in none of the four
 four-dimensional subspaces.
 
@@ -379,19 +378,19 @@ the 12 Structures of Biquaternions over $\mathbb{C}$*.
 ## The Hermitian Family: the Pure States and the Bloch Ball
 
 **The family.** The idempotents of the general plain sesquilinear product are $0$, $e_0$ and the Hermitian
-family $\tfrac12(e_0+i\hat\mu)$ over the real unit vectors $\hat\mu$, a two-parameter family lying in the
+family $\tfrac12(e_0+i\tilde\xi)$ over the real unit vectors $\tilde\xi$, a two-parameter family lying in the
 informational sector $\mathbb{M}_+$. The owner is *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, and the
 physics is *Why Probability Values Are Central: the Symmetric Sesquilinear Product and Its Cone*.
 
 **The physical interpretation.** The Hermitian idempotents are the **pure states** of the probability band. The
-element $\tfrac12(e_0+i\hat\mu)$ has a real scalar part and a purely imaginary vector part, which is the
-coefficient condition of the informational sector, and the map $\hat\mu\mapsto\tfrac12(e_0+i\hat\mu)$ sends
+element $\tfrac12(e_0+i\tilde\xi)$ has a real scalar part and a purely imaginary vector part, which is the
+coefficient condition of the informational sector, and the map $\tilde\xi\mapsto\tfrac12(e_0+i\tilde\xi)$ sends
 the real unit sphere onto the family. The corpus reads the family as the extremal points of the positive
 cone of the sesquilgebra: the idempotents sit on the boundary of the cone and are the states the pairing
 cannot write as a mixture of two others. The Bloch ball, the trace-one slice of the future light cone, is
 the convex body they generate, and its extremal points are exactly this family; the owner is *The Bloch
 Ball as the Trace-One Slice of the Future Light Cone*. The vacuum is the minimal member, and a pure state
-is minimal because it has no orthogonal part: the complementation $\hat\mu\mapsto-\hat\mu$ pairs it with
+is minimal because it has no orthogonal part: the complementation $\tilde\xi\mapsto-\tilde\xi$ pairs it with
 the state of the opposite direction, and the pair is a complete two-outcome measurement.
 
 **The symmetry of the band keeps the pair.** The symmetric plain sesquilinear product has a scalar-valued
@@ -411,7 +410,7 @@ structure has the same family. The owner is *Square Roots of One and the Idempot
 family of the twelve whose members are **units** of the algebra. The element $-\tfrac12e_0+\mu$ has a real
 scalar part $-\tfrac12$ and a real vector part of squared length $\tfrac34$, so its central square is
 $\tfrac14+\tfrac34=e_0$ and it is invertible: the state can be undone. The contrast with the probability
-band is exact and is the physics of the central-square theorem. The pure state $\tfrac12(e_0+i\hat\mu)$ has
+band is exact and is the physics of the central-square theorem. The pure state $\tfrac12(e_0+i\tilde\xi)$ has
 central square $0$ and is a zero divisor: the state of the band that measures probability is **null** for
 the composition. The gauge state $-\tfrac12e_0+\mu$ has central square $e_0$ and is a unit: the state of
 the band whose value is an interval is **invertible**. The reading is that a determinate outcome of a
@@ -463,7 +462,7 @@ the family $\tfrac12(e_0+\tilde\Xi)$ over the roots $\tilde\Xi$ of $+1$; the map
 from the roots of $+1$ onto the states, so every root of one gives a state. The nonzero idempotents lie on the cone
 and are zero divisors, which is the algebraic form of the statement that a measurement has no inverse. The
 reading is *The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent* and
-*Square Roots: the Local Complex Structure, the Light Cone and the Mass Shell*.
+*Square Roots of One and the Idempotents: the Hermitian Observables and the States*.
 
 ### $\mathrm{SPA}$, the symmetric plain algebra — commutativity
 
@@ -498,7 +497,7 @@ set is the origin alone. The reading is *Boosts, Mixed Terms and the Missing Lie
 ### $\mathrm{GPS}$, the general plain sesqualgebra — probability
 
 The product is the pairing and its square is the Hermitian square. The idempotents are $0$, $e_0$ and the
-Hermitian family $\tfrac12(e_0+i\hat\mu)$ over the real unit vectors $\hat\mu$, which lies in the
+Hermitian family $\tfrac12(e_0+i\tilde\xi)$ over the real unit vectors $\tilde\xi$, which lies in the
 informational sector $\mathbb{M}_+$. Physically these are the pure states, the boundary of the positive
 cone and the extremal points of the Bloch ball, and they are zero divisors because a projector has no
 inverse. The reading is *Why Probability Values Are Central: the Symmetric Sesquilinear Product and Its
@@ -553,7 +552,7 @@ idempotent and the physical interpretation.
 | GQA | $C(\tilde\Pi)e_0$ | $0$, $e_0$ | — | the band of the interval has no nontrivial state |
 | SQA | $C(\tilde\Pi)e_0$ | $0$, $e_0$ | — | the same |
 | AQA | $0$ | $0$ alone | — | an infinitesimal transformation has no state |
-| GPS | $\tilde\Pi\tilde\Pi^{*}$ | $0$, $e_0$, $\tfrac12(e_0+i\hat\mu)$ | $0$ (zero divisors) | the pure states, on the boundary of the positive cone and in the Bloch ball |
+| GPS | $\tilde\Pi\tilde\Pi^{*}$ | $0$, $e_0$, $\tfrac12(e_0+i\tilde\xi)$ | $0$ (zero divisors) | the pure states, on the boundary of the positive cone and in the Bloch ball |
 | SPS | $\mathrm{Sc}(\tilde\Pi\tilde\Pi^{*})e_0$ | $0$, $e_0$ | — | the symmetrised pairing keeps only the trivial states |
 | APS | the pure part | $0$ alone | — | an infinitesimal transformation has no state |
 | GQS | $\tilde\Pi^{\natural}\tilde\Pi^{*}$ | $0$, $e_0$, $-\tfrac12e_0+\mu$ | $e_0$ (units) | the invertible states of the gauge band |
@@ -573,7 +572,7 @@ brackets carry none.
 For the plain product the map $\tilde\Pi\mapsto e_0-\tilde\Pi$ is the **complementation**: the complement
 is idempotent, the two are orthogonal, $\tilde\Pi(e_0-\tilde\Pi)=0$, and they sum to $e_0$. The map is the
 antipode of the root set, $\tilde\Xi\mapsto-\tilde\Xi$ for the plain family and
-$\hat\mu\mapsto-\hat\mu$ for the Hermitian subfamily. The physical interpretation is a **complete measurement**:
+$\tilde\xi\mapsto-\tilde\xi$ for the Hermitian subfamily. The physical interpretation is a **complete measurement**:
 the pair $\{\tilde\Pi,e_0-\tilde\Pi\}$ is a two-outcome measurement whose outcomes exhaust the identity,
 and the orthogonality is the statement that the two outcomes are mutually exclusive. The spectral
 decomposition of an idempotent is the Peirce splitting into the two ideals
@@ -582,10 +581,10 @@ outcome eigenspaces. For the plain band the complementation pairs the whole fami
 part included; for the probability band it pairs the Hermitian family; it fails for the gauge family,
 which is not closed under it, and is the exchange of the trivial pair for the natural product.
 
-The pairing of the Hermitian family under $\hat\mu\mapsto-\hat\mu$ is the corpus's antipodal pure state,
+The pairing of the Hermitian family under $\tilde\xi\mapsto-\tilde\xi$ is the corpus's antipodal pure state,
 and it is the algebraic form of the two outcomes of a spin measurement along a direction: the two states
-$\tfrac12(e_0+i\hat\mu)$ and $\tfrac12(e_0-i\hat\mu)$ are the two eigenstates, and the operator that
-separates them is the element $i\hat\mu$ itself, a root of $+1$ read as an observable. The owner of the
+$\tfrac12(e_0+i\tilde\xi)$ and $\tfrac12(e_0-i\tilde\xi)$ are the two eigenstates, and the operator that
+separates them is the element $i\tilde\xi$ itself, a root of $+1$ read as an observable. The owner of the
 observable face is *Observables, Gauge Generators and the Chirality of the Internal Action*, and the
 complement is the same statement read on the identity.
 
@@ -613,14 +612,14 @@ the idempotent table.
 
 **A state is a point of the Bloch ball.** *The Bloch Ball as the Trace-One Slice of the Future Light Cone*
 identifies the state space with the trace-one slice of the cone, a ball whose sphere is the pure states,
-and the idempotent condition is the boundary condition $\lvert\mathbf r\rvert=1$. *The Generalized Bloch
+and the idempotent condition is the boundary condition $\lvert\vec r\rvert=1$. *The Generalized Bloch
 Ball for Spin 1 in the Biquaternion Framework* extends the picture and marks the ceiling of the framework;
 the lesson for the idempotent table is that each structure cuts a convex body of states, and the Hermitian
 family is the one whose body has been named.
 
 **Decoherence moves a state off the idempotent family.** *Decoherence as Idempotent Projection* shows that
 a pure state is an idempotent and that the dephasing channel deforms it into a positive trace-one element
-that is not idempotent, the deviation being the scalar $(\lvert\mathbf r\rvert^{2}-1)/4$. The idempotent
+that is not idempotent, the deviation being the scalar $(\lvert\vec r\rvert^{2}-1)/4$. The idempotent
 family is therefore the *pure* end of the state family, and an idempotent is a state that has not
 decohered. The Jordan idempotent is the algebra's name for the undivided state, and the mixed states of the
 ball are exactly the states that are not idempotents.
@@ -643,11 +642,13 @@ basis element of the correlations of two, and the tensor-product article is wher
 the same.
 
 **The vacuum is a minimal idempotent.** *The Biquaternion Vacuum as a Minimal Idempotent* identifies the
-one-mode vacuum with the minimal idempotent $\tilde\Pi_1=\tfrac12(e_0+ie_3)$, of trace one, which generates
-the minimal left ideal that is the one-particle module. Three properties of the table meet in it: it is a
+one-mode vacuum with the minimal idempotent $\tilde\Pi_+=\tfrac12(e_0+ie_3)$, of trace one, which generates
+the minimal left ideal that is the one-particle module. The element $ie_3$ is a root of $+1$,
+$(ie_3)^2=e_0$, and $\tilde\Pi_+$ with its complement $\tilde\Pi_-=\tfrac12(e_0-ie_3)$ are its two
+associated idempotents. Three properties of the table meet in it: it is a
 state, so it is Hermitian; it is minimal, so it is an extreme point of the state set; and it is a zero
 divisor, so it is in the non-pure family of the cone. The vacuum-manifold observation of that article —
-every unit vector $\hat\mu$ gives a vacuum and the algebra singles none out — is the statement that the
+every unit vector $\tilde\xi$ gives a vacuum and the algebra singles none out — is the statement that the
 table has a sphere of vacua and no preferred point, which is the framework's standing disclaimer about
 selection. *The GNS Construction in the Biquaternion Framework* recovers the same idempotent from the
 state's null space, so the minimal idempotent, the vacuum vector and the one-particle module are three
@@ -662,10 +663,10 @@ the coarse-graining maps and the polarisation sphere.
 
 **The deviation from idempotency is the entropy coordinate.** *Von Neumann Entropy and the Biquaternion
 Norm* and *Coarse-Graining and the Biquaternion Entropy Functional* compute the deviation from idempotency
-of a state $\tilde\rho=\tfrac12(e_0+i\mathbf r)$ and find it to be a single scalar,
+of a state $\tilde\rho=\tfrac12(e_0+i\vec r)$ and find it to be a single scalar,
 
 $$
-\mathrm{Sc}\bigl(\tilde\rho^{2}-\tilde\rho\bigr)=\tfrac14\bigl(\lvert\mathbf r\rvert^{2}-1\bigr)
+\mathrm{Sc}\bigl(\tilde\rho^{2}-\tilde\rho\bigr)=\tfrac14\bigl(\lvert\vec r\rvert^{2}-1\bigr)
 =-N(\tilde\rho),
 $$
 
@@ -702,7 +703,7 @@ neighbours, and the two readings agree through a **reciprocity**. The classical 
 state's spectral family, with respect to the Bloch radius, is the reciprocal of the biquaternion norm,
 
 $$
-g_{rr}=\frac{1}{1-|\mathbf{r}|^{2}}=\frac{1}{4\,\mathrm{Sc}\,N(\tilde\rho)} .
+g_{rr}=\frac{1}{1-|\vec r|^{2}}=\frac{1}{4\,\mathrm{Sc}\,N(\tilde\rho)} .
 $$
 
 It is minimal at the maximally mixed state, where the norm is largest, and it **diverges on the
@@ -716,7 +717,7 @@ element.
 
 **The vacuum idempotent carries the zero-point energy.** *The Vacuum State and the Casimir Effect in
 Biquaternionic Form* identifies the vacuum with the one-mode state of no particles, which is the minimal
-idempotent $\tilde\Pi_1=\tfrac12(e_0+ie_3)$ of *The Biquaternion Vacuum as a Minimal Idempotent*, and
+idempotent $\tilde\Pi_+=\tfrac12(e_0+ie_3)$ of *The Biquaternion Vacuum as a Minimal Idempotent*, and
 records that the state costs half a quantum of energy per mode. The idempotent is the state of the field
 when nothing is excited, and the normal-ordering prescription removes the absolute sum while leaving the
 **difference** produced by boundary conditions: the Casimir energy. The idempotent therefore carries a
@@ -872,8 +873,8 @@ chirality splitting.
 - The root of $+1$ carries the double cover. In *The Two-Sheeted Cover and the Topology of Boosts in
   Biquaternionic Form* the rotor $R(2\pi)=-e_0$ is the nontrivial central root of $+1$, while the boost
   manifold is contractible and the closure failure of two boosts is the Thomas–Wigner rotation.
-- The root of $+1$ is also an observable's own square. A traceless Hermitian element $\tilde H=i\mathbf h$
-  squares to the positive value $\lvert\mathbf h\rvert^{2}e_0$, so $\tilde H/\lvert\mathbf h\rvert$ is an
+- The root of $+1$ is also an observable's own square. A traceless Hermitian element $\tilde H=i\vec h$
+  squares to the positive value $\lvert\vec h\rvert^{2}e_0$, so $\tilde H/\lvert\vec h\rvert$ is an
   involution, and its two eigenvalues are the split levels of *The Zeeman and Stark Effects in
   Biquaternionic Form*. The algebra gives the structure and the isotropy of the splitting, not the
   gyromagnetic ratio.
@@ -885,7 +886,7 @@ chirality splitting.
   algebra being central simple; the sign of its square fixes the KO-dimension of the triple, and here
   $J^{2}=+e_0$ (*The Spectral Triple of the Biquaternion Algebra*).
 - The idempotents are the zero-entropy states: the deviation
-  $\mathrm{Sc}(\tilde\rho^{2}-\tilde\rho)=\tfrac14(\lvert\mathbf r\rvert^{2}-1)$ is minus the biquaternion
+  $\mathrm{Sc}(\tilde\rho^{2}-\tilde\rho)=\tfrac14(\lvert\vec r\rvert^{2}-1)$ is minus the biquaternion
   norm, and the entropy is a monotone function of it that vanishes exactly on the idempotents. The sphere
   of idempotents of $\mathbb{M}_+$ is at once the pure-qubit sphere, the polarisation sphere and the
   boundary of the state cone.
@@ -938,7 +939,7 @@ $\tilde\Pi=\tfrac12(e_0+\tilde\Xi)$ carries the roots of $+1$ of the plain produ
 idempotents, with inverse $\tilde\Xi=2\tilde\Pi-e_0$; the article reads the two as one subject. Physically a root of $+1$ is an
 involution, a reality condition, a discrete symmetry, or, in the pairing, a unitary; an idempotent is a
 projection, and a projection is a determinate state. The mathematics companion proves that the plain
-product's roots of $+1$ are the central pair $\pm e_0$ and the pure family $(\mathbf\Xi,\mathbf\Xi)=-1$,
+product's roots of $+1$ are the central pair $\pm e_0$ and the pure family $(\vec\Xi,\vec\Xi)=-1$,
 that the probability band's roots are the unitary group $U(2)$, that the symmetrisation replaces them by
 the unit sphere, and that the natural product's roots are the level set $C=+1$; the symmetric
 sesquilinear structures are the two whose root of one need not be a unit, the witness $\tilde w$ being a
@@ -946,7 +947,7 @@ root of $+1$ in $\mathrm{SPS}$ and a root of $-1$ in $\mathrm{SQS}$. The idempot
 same map: only five of the twelve structures carry a nontrivial idempotent — the general plain structure
 and its symmetrisation, with the family $\tfrac12(e_0+\tilde\Xi)$ over the roots of $+1$, one state
 per root; the general plain sesquilinear structure, with the Hermitian family
-$\tfrac12(e_0+i\hat\mu)$ over the real unit vectors, the pure states of the probability band, on the
+$\tfrac12(e_0+i\tilde\xi)$ over the real unit vectors, the pure states of the probability band, on the
 boundary of the positive cone and the extremal points of the Bloch ball; and the two quaternionic
 sesquilinear structures, with the family $-\tfrac12e_0+\mu$ over the real vectors of squared length
 $\tfrac34$, the states of the gauge band. The central square separates the families: it vanishes on the
@@ -968,8 +969,8 @@ nonempty, with the witness $\tilde w$ on the cone for the symmetric gauge struct
 - $\tilde\Xi$ a root of $+1$, $\tilde\Xi\star\tilde\Xi=e_0$; $\tilde\Pi$ an idempotent, $\tilde\Pi\star\tilde\Pi=\tilde\Pi$; the trivial pair $0$ and $e_0$.
 - The halving map $\tilde\Pi=\tfrac12(e_0+\tilde\Xi)$ and its inverse $\tilde\Xi=2\tilde\Pi-e_0$.
 - $C(\tilde\Xi)e_0=\tilde\Xi^{\natural}\tilde\Xi$ the central square; $H(\tilde\Xi)=\sum_\mu\lvert\Xi_\mu\rvert^{2}$ the Hermitian square; $\Delta(\tilde\Xi)$ the Krein value; $C\neq0$ is the criterion of invertibility.
-- pure means $\Xi_0=0$; central means $\mathbf\Xi=0$; $\hat\mu$ a real unit vector.
-- The families $\tfrac12(e_0+\tilde\Xi)$ over the roots of $+1$, $\tfrac12(e_0+i\hat\mu)$, and $-\tfrac12e_0+\mu$ with $(\mu,\mu)=\tfrac34$.
+- pure means $\Xi_0=0$; central means $\vec\Xi=0$; $\tilde\xi$ a real unit vector.
+- The families $\tfrac12(e_0+\tilde\Xi)$ over the roots of $+1$, $\tfrac12(e_0+i\tilde\xi)$, and $-\tfrac12e_0+\mu$ with $(\mu,\mu)=\tfrac34$.
 - The complementation $\tilde\Pi\mapsto e_0-\tilde\Pi$, with $\tilde\Pi(e_0-\tilde\Pi)=0$; the Peirce splitting $\mathbb{B}=\mathbb{B}\tilde\Pi\oplus\mathbb{B}(e_0-\tilde\Pi)$.
 - The remarkable subspaces: the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and anti-quaternion subspaces $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, and the Hermitian and anti-Hermitian ones $\mathbb{M}_+$, $\mathbb{M}_-$.
 - The witness $\tilde w=\tfrac{1}{\sqrt2}(e_1+ie_2)$ of the two symmetric sesquilinear structures.
@@ -980,7 +981,7 @@ nonempty, with the witness $\tilde w$ on the cone for the symmetric gauge struct
 - The mathematics companion: *Square Roots of One and the Idempotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/square-roots-of-one-and-the-idempotents-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the classification of the roots of $+1$ in the twelve structures, the unit theorem, the twelve idempotent sets, the central-square theorem, the halving map and the complementation.
 - The companion articles of the section: *Square Roots of Zero and the Nilpotents in the 12 Structures of Biquaternions over $\mathbb{C}$*, for the roots of $0$; *Square Roots of a General Element in the 12 Structures of Biquaternions over $\mathbb{C}$*, for the general radicand and the four existence classes; *Zero Divisors in the 12 Structures of Biquaternions over $\mathbb{C}$*; *Annihilators in the 12 Structures of Biquaternions over $\mathbb{C}$*.
 - The state reading of a process: *The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent*; *The Operators of the General Plain Bilinear Product: One-Sided, Two-Sided and the Sandwich*.
-- The plain family and the algebra's idempotents: *The Biquaternion Vacuum as a Minimal Idempotent*; *Ideals and Peirce Decomposition of the General Plain Algebra* (mathematics); *Square Roots: the Local Complex Structure, the Light Cone and the Mass Shell*.
+- The plain family and the algebra's idempotents: *The Biquaternion Vacuum as a Minimal Idempotent*; *Ideals and Peirce Decomposition of the General Plain Algebra* (mathematics); *Square Roots of One and the Idempotents: the Hermitian Observables and the States*.
 - The pure states and the Bloch ball: *Why Probability Values Are Central: the Symmetric Sesquilinear Product and Its Cone*; *The Bloch Ball as the Trace-One Slice of the Future Light Cone*; *The Hermitian Subspace M₊ as the Informational Sector*; *The Anti-Hermitian Subspace M₋ as the Material Sector*.
 - The gauge family and the indefinite metric: *The Fourth Product and Its Indefinite Metric*; *The States the Indefinite Metric Cannot Normalise*; *Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra* (mathematics).
 - The observable face of the involution: *Observables, Gauge Generators and the Chirality of the Internal Action*; *Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form*; *The Reflection and the Rotation in Biquaternionic Form*.

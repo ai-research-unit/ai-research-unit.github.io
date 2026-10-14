@@ -28,7 +28,7 @@ band descends from this: the left family does not close under composition, so th
 the associative kind, and the left multiplication has no adjoint of the same kind as the right one.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, the relations
-$e_k^{2}=-e_0$ and $e_1e_2=e_3$, and central $i$ with $i^{2}=-1$; an element is $\tilde Q=Q_0e_0+\mathbf Q$ with
+$e_k^{2}=-e_0$ and $e_1e_2=e_3$, and central $i$ with $i^{2}=-1$; an element is $\tilde Q=Q_0e_0+\vec Q$ with
 complex coefficients. The Hermitian conjugation is ${}^{*}$ with $Q^{*}_{\nu}=\varepsilon_{\nu}\overline{Q_{\nu}}$
 and $\varepsilon=(1,-1,-1,-1)$; the natural conjugation is ${}^{\natural}$. The sectors are
 $\mathbb{M}_+=\{\tilde Q^{*}=\tilde Q\}$ (informational) and $\mathbb{M}_-=\{\tilde Q^{*}=-\tilde Q\}$ (material),
@@ -342,13 +342,13 @@ the two-sided inner action.
 The operators act on the simple module, and there the pairing is the norm.
 
 **The state space.** The **spinor module** is the minimal left ideal
-$S=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,\tilde\Upsilon_2\}$, the unique simple left $\mathbb{B}$-module, of
+$S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\tilde\Upsilon_2\}$, the unique simple left $\mathbb{B}$-module, of
 complex dimension two, of *The Spinor Space as a Hilbert Space of the General Plain Sesqualgebra* and *The
 Complementary Space of the Spinor Space in the General Plain Sesqualgebra* (its second basis element is written
 $\tilde W$ in the companion maths article *Bilinear Operators on the General Plain Sesqualgebra of Biquaternions*).
 The algebra acts on it by the left multiplication $L_{\tilde A}s=\tilde A s$, the action is onto the endomorphisms,
 and the module form is $\langle t,s\rangle_{*}=\mathrm{Sc}(t s^{*})$, positive definite with Gram matrix
-$\tfrac12 I_2$ in the basis $(\tilde\Pi_1,\tilde\Upsilon_2)$ of *Hermitian Modules over the Biquaternion Algebra with
+$\tfrac12 I_2$ in the basis $(\tilde\Pi_+,\tilde\Upsilon_2)$ of *Hermitian Modules over the Biquaternion Algebra with
 Hermitian Adjoint*.
 
 **Proposition (the Born pairing is the scalar part of the product).** For all $\tilde P,\tilde Q$,
@@ -372,16 +372,16 @@ framework reads the scalar part of the product as a probability, it does not der
 algebra.
 
 **Proposition (the product pairs the carrier and does not act on it).** The product's left multiplication keeps the
-carrier on its first basis element, $L^{\star}_{\tilde Q}(\tilde\Pi_1)=\tilde Q\tilde\Pi_1\in S$ for every
+carrier on its first basis element, $L^{\star}_{\tilde Q}(\tilde\Pi_+)=\tilde Q\tilde\Pi_+\in S$ for every
 $\tilde Q$, and carries the second out of it for generic $\tilde Q$,
 $L^{\star}_{\tilde Q}(\tilde\Upsilon_2)=\tilde Q\tilde\Upsilon_1\notin S$, since
-$\tilde\Upsilon_2^{*}=\tilde\Upsilon_1$ lies in the complementary ideal $\mathbb{B}\tilde\Pi_2$. The product
+$\tilde\Upsilon_2^{*}=\tilde\Upsilon_1$ lies in the complementary ideal $\mathbb{B}\tilde\Pi_-$. The product
 therefore **pairs** the state space, taking two states to a scalar, and does not act on it; the acting structure is
 the ordinary left multiplication of the paragraph above.
 
-*Proof.* $\tilde\Pi_1^{*}=\tilde\Pi_1$, so the first image is $\tilde Q\tilde\Pi_1$, which lies in the left ideal
-$S$; $\tilde\Upsilon_2^{*}=\tilde\Upsilon_1\in\mathbb{B}\tilde\Pi_2$, so the second image has components along
-$\tilde\Upsilon_1$ and $\tilde\Pi_2$ for generic $\tilde Q$ and lies outside $S$. The two computations are the
+*Proof.* $\tilde\Pi_+^{*}=\tilde\Pi_+$, so the first image is $\tilde Q\tilde\Pi_+$, which lies in the left ideal
+$S$; $\tilde\Upsilon_2^{*}=\tilde\Upsilon_1\in\mathbb{B}\tilde\Pi_-$, so the second image has components along
+$\tilde\Upsilon_1$ and $\tilde\Pi_-$ for generic $\tilde Q$ and lies outside $S$. The two computations are the
 state-space siblings' (*The Spinor Space as a Hilbert Space of the General Plain Sesqualgebra* and *The
 Complementary Space of the Spinor Space in the General Plain Sesqualgebra*).
 
@@ -404,7 +404,7 @@ $\{\tilde Q\tilde Q^{*}:\tilde Q\in\mathbb{B}\}$ is the cone of the positive sem
 interior the positive definite ones. The sandwich preserves the cone for every parameter and the unitary slice
 permutes it. On the state space the left multiplications are the matrix units of $\mathrm{End}_{\mathbb{C}}(S)$;
 the right multiplications commute with them and the nilpotent ones carry the module to the complementary ideal
-$\mathbb{B}\tilde\Pi_2$.
+$\mathbb{B}\tilde\Pi_-$.
 
 *Proof.* The image is the definition; the cone is the positivity of the Gram matrix, *The Canonical Hermitian Form
 on the Regular Module of the Biquaternion Algebra*; the cone preservation is
@@ -502,7 +502,7 @@ $(\Theta_{\tilde Q})^{\dagger}=\Theta_{\tilde Q^{*}}$; the twisted adjoint of $L
 $\tilde X\mapsto\tilde X^{*}\tilde A$; the type criteria hold on random, Hermitian, anti-Hermitian and unitary
 parameters; the sandwich criterion holds exactly for the parameters Hermitian up to a phase; the form-preserving
 criterion holds exactly at $\tilde A\in U$; the multiplicativity criteria hold exactly at central parameters and at
-the slice; the product's left multiplication keeps $\tilde\Pi_1$ in the carrier and carries $\tilde\Upsilon_2$ out of
+the slice; the product's left multiplication keeps $\tilde\Pi_+$ in the carrier and carries $\tilde\Upsilon_2$ out of
 it; and the worked case was checked coefficient by coefficient.
 
 ## The Bound
@@ -643,7 +643,7 @@ Hermitian adjoint that keeps them. What is proved is the algebra; what is propos
 | $L_{\tilde A}$ preserves $\langle\cdot,\cdot\rangle_{*}\iff\tilde A\in U$ | The form-preserving operators |
 | $\Theta_{\tilde Q}=\mathrm{Ad}_{\tilde Q}\iff\tilde Q\in U$ | The sandwich and the inner automorphism agree on the slice |
 | $\mathbb{M}_\pm$, $U$, $\mathsf{M}_2$, $N$ | The sectors, the unitary slice, the matrix model, the biquaternion norm |
-| $S=\mathbb{B}\tilde\Pi_1$, $\mathbb{B}\tilde\Pi_2$ | The spinor space and its complement |
+| $S=\mathbb{B}\tilde\Pi_+$, $\mathbb{B}\tilde\Pi_-$ | The spinor space and its complement |
 
 ## Further Reading
 

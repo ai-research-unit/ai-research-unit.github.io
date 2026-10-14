@@ -14,7 +14,7 @@ $$
 \tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = \sum_{\mu=0}^{3} q_\mu e_\mu, \qquad q_0, q_1, q_2, q_3 \in F,
 $$
 
-with **scalar part** $\mathrm{Sc}(\tilde q) = q_0$ and **vector part** $\mathbf{q} = q_1e_1 + q_2e_2 + q_3e_3$; the **conjugate** is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$. The pure imaginary subspace is $\operatorname{Im}\mathbb{H} = \{\tilde q : \tilde{q}^{\natural} = -\tilde q\}$.
+with **scalar part** $\mathrm{Sc}(\tilde q) = q_0$ and **vector part** $\vec q = q_1e_1 + q_2e_2 + q_3e_3$; the **conjugate** is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$. The pure imaginary subspace is $\operatorname{Im}\mathbb{H} = \{\tilde q : \tilde{q}^{\natural} = -\tilde q\}$.
 
 ## The Quaternion Norm
 
@@ -26,7 +26,7 @@ $$
 N(\tilde q) = \tilde q\tilde{q}^{\natural} = \tilde{q}^{\natural} \tilde q = q_0^2 + q_1^2 + q_2^2 + q_3^2 .
 $$
 
-The equality of the two products is checked from the multiplication table: the vector part of $\tilde q\tilde{q}^{\natural}$ is $q_0\mathbf{q} - \mathbf{q}q_0 + \mathbf{q}\times(-\mathbf{q}) = 0$, and the scalar calculation is the sum of squares.
+The equality of the two products is checked from the multiplication table: the vector part of $\tilde q\tilde{q}^{\natural}$ is $q_0\vec q - \vec qq_0 + \vec q\times(-\vec q) = 0$, and the scalar calculation is the sum of squares.
 
 **Proposition.** $N(\tilde q)$ is a central element of $\mathbb{H}$, it lies in the image of $F$, and the map $N : \mathbb{H}\to F$ is a quadratic form on the underlying vector space, with polar form $b(p,\tilde q) = \mathrm{Sc}(p\tilde{q}^{\natural})$.
 
@@ -134,7 +134,7 @@ $$
 
 *Proof.* $(\tilde q)(\tilde{q}^{\natural}/N(\tilde q)) = (\tilde q\tilde{q}^{\natural})/N(\tilde q) = N(\tilde q)/N(\tilde q) = 1$, and $(\tilde{q}^{\natural}/N(\tilde q))(\tilde q) = (\tilde{q}^{\natural} \tilde q)/N(\tilde q) = 1$ because $\tilde{q}^{\natural} \tilde q = N(\tilde q)$ is central.
 
-For a unit quaternion $N(\tilde q) = 1$ the formula reduces to $\tilde q^{-1} = \tilde{q}^{\natural}$: on the unit sphere, inversion is conjugation. For a pure imaginary $\mathbf{q}$ one has $\mathbf{q}^{\natural} = -\mathbf{q}$ and $\mathbf{q}^{-1} = -\mathbf{q}/N(\mathbf{q})$, so the imaginary line is closed under inversion up to the real scale.
+For a unit quaternion $N(\tilde q) = 1$ the formula reduces to $\tilde q^{-1} = \tilde{q}^{\natural}$: on the unit sphere, inversion is conjugation. For a pure imaginary $\vec q$ one has $\vec q^{\natural} = -\vec q$ and $\vec q^{-1} = -\vec q/N(\vec q)$, so the imaginary line is closed under inversion up to the real scale.
 
 ## The Group of Units
 
@@ -219,7 +219,7 @@ Invertibility is decided by the quaternion norm: $\tilde q$ is a unit exactly wh
 | $\mathbb{H}$ | The quaternion algebra |
 | $F$ | Base field of characteristic not $2$; $\mathbb{R}$ for the definite statements |
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
-| $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = \sum_{\mu=0}^{3} q_\mu e_\mu$ | General quaternion, scalar part $q_0$, vector part $\mathbf{q}$ |
+| $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = \sum_{\mu=0}^{3} q_\mu e_\mu$ | General quaternion, scalar part $q_0$, vector part $\vec q$ |
 | $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | Quaternion conjugate |
 | $N(\tilde q) = \tilde q\tilde{q}^{\natural} = \tilde{q}^{\natural} \tilde q$ | Quaternion norm |
 | $\lvert \tilde q\rvert = \sqrt{N(\tilde q)}$ | Modulus over $\mathbb{R}$ |

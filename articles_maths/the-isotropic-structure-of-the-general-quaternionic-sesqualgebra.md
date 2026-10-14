@@ -61,33 +61,33 @@ Therefore the Witt index is at most $\min(p,q)$, and the bound is attained.
 
 **Definition.** A **doubly null line** is an isotropic line that lies in the norm cone as well: a complex line $\mathbb{C}\tilde{Q}$ with $\langle\tilde{Q},\tilde{Q}\rangle_{\natural*}=0$ and $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=0$.
 
-**Theorem (the Peirce lines).** For every real unit vector $\hat\mu\in\mathbb{V}_{\mathbb{B}}$ the element
+**Theorem (the Peirce lines).** For every real unit vector $\hat n\in\mathbb{V}_{\mathbb{B}}$ the element
 
 $$
-\tilde\Pi_{1,2}(\hat\mu)=\tfrac12\bigl(e_0\pm i\hat\mu\bigr)
+\tilde\Pi_\pm(\tilde\Xi)=\tfrac12\bigl(e_0\pm \tilde\Xi\bigr)
 $$
 
-is a rank-one Hermitian idempotent, $\tilde\Pi_{1,2}^2=\tilde\Pi_{1,2}$, $\tilde\Pi_{1,2}^{*}=\tilde\Pi_{1,2}$, with $N(\tilde\Pi_{1,2})=0$ and $\langle\tilde\Pi_{1,2},\tilde\Pi_{1,2}\rangle_{\natural*}=0$. The line $\mathbb{C}\tilde\Pi_{1,2}(\hat\mu)$ is therefore a maximal totally isotropic complex subspace and a doubly null line; it is a **Peirce line** of the algebra, generating the minimal left ideal $\mathbb{B}\tilde\Pi_{1,2}(\hat\mu)$ and the minimal right ideal $\tilde\Pi_{1,2}(\hat\mu)\mathbb{B}$, of complex dimension two, every element of which is a zero divisor. The two diagonal members $\hat\mu=e_1$ give the lines $\mathbb{C}(e_0\pm ie_1)$, the two distinguished doubly null lines.
+is a rank-one Hermitian idempotent, $\tilde\Pi_{1,2}^2=\tilde\Pi_{1,2}$, $\tilde\Pi_{1,2}^{*}=\tilde\Pi_{1,2}$, with $N(\tilde\Pi_{1,2})=0$ and $\langle\tilde\Pi_{1,2},\tilde\Pi_{1,2}\rangle_{\natural*}=0$. The line $\mathbb{C}\tilde\Pi_\pm(\tilde\Xi)$ is therefore a maximal totally isotropic complex subspace and a doubly null line; it is a **Peirce line** of the algebra, generating the minimal left ideal $\mathbb{B}\tilde\Pi_\pm(\tilde\Xi)$ and the minimal right ideal $\tilde\Pi_\pm(\tilde\Xi)\mathbb{B}$, of complex dimension two, every element of which is a zero divisor. The two diagonal members $\hat n=e_1$ give the lines $\mathbb{C}(e_0\pm ie_1)$, the two distinguished doubly null lines.
 
-**Proof.** A real unit vector has $\hat\mu^2=-e_0$, so $(i\hat\mu)^2=e_0$ and $(e_0\pm i\hat\mu)^2=1\pm2i\hat\mu+(i\hat\mu)^2=2(e_0\pm i\hat\mu)$, whence $\tilde\Pi_{1,2}^2=\tilde\Pi_{1,2}$; $\tilde\Pi_{1,2}$ is Hermitian because $(i\hat\mu)^{*}=i\hat\mu$. For the two squares, $N(e_0\pm i\hat\mu)=1+N(i\hat\mu)=1-\|\hat\mu\|_E^2=0$ and $\langle e_0\pm i\hat\mu,e_0\pm i\hat\mu\rangle_{\natural*}=1-\|i\hat\mu\|_E^2=0$. The minimal ideals are the standard ones of the algebra, of complex dimension two, and their elements $X\tilde\Pi_{1,2}$ satisfy $N(X\tilde\Pi_{1,2})=N(X)N(\tilde\Pi_{1,2})=0$.
+**Proof.** A real unit vector has $\hat n^2=-e_0$, so $(\tilde\Xi)^2=e_0$ and $(e_0\pm \tilde\Xi)^2=1\pm2\tilde\Xi+(\tilde\Xi)^2=2(e_0\pm \tilde\Xi)$, whence $\tilde\Pi_{1,2}^2=\tilde\Pi_{1,2}$; $\tilde\Pi_{1,2}$ is Hermitian because $(\tilde\Xi)^{*}=\tilde\Xi$. For the two squares, $N(e_0\pm \tilde\Xi)=1+N(\tilde\Xi)=1-\|\hat n\|_E^2=0$ and $\langle e_0\pm \tilde\Xi,e_0\pm \tilde\Xi\rangle_{\natural*}=1-\|\tilde\Xi\|_E^2=0$. The minimal ideals are the standard ones of the algebra, of complex dimension two, and their elements $X\tilde\Pi_{1,2}$ satisfy $N(X\tilde\Pi_{1,2})=N(X)N(\tilde\Pi_{1,2})=0$.
 
-**Corollary (the two descriptions agree on the norm cone).** The Peirce lines are exactly the doubly null lines. Writing $\tilde V=\tilde U+i\tilde W$ with $\tilde U,\tilde W\in\mathbb{V}_{\mathbb{B}}$ real, the conditions $\|\tilde V\|_E=1$ and $N(\tilde V)=-1$ read
+**Corollary (the two descriptions agree on the norm cone).** The Peirce lines are exactly the doubly null lines. Writing $\tilde R=\tilde S+i\tilde W$ with $\tilde S,\tilde W\in\mathbb{V}_{\mathbb{B}}$ real, the conditions $\|\tilde R\|_E=1$ and $N(\tilde R)=-1$ read
 
 $$
-\|\tilde U\|_E^{2}+\|\tilde W\|_E^{2}=1,\qquad
-\|\tilde U\|_E^{2}-\|\tilde W\|_E^{2}=-1,\qquad
-\langle\tilde U,\tilde W\rangle=0,
+\|\tilde S\|_E^{2}+\|\tilde W\|_E^{2}=1,\qquad
+\|\tilde S\|_E^{2}-\|\tilde W\|_E^{2}=-1,\qquad
+\langle\tilde S,\tilde W\rangle=0,
 $$
 
-which force $\tilde U=0$ and $\|\tilde W\|_E=1$: the doubly null lines are exactly the lines $\mathbb{C}(e_0\pm i\hat\mu)$, parametrised by the real unit directions with the two signs, and the Peirce description is complete on the norm cone. The maximal totally isotropic *real* subspace is, by contrast, the plane $\mathrm{span}_{\mathbb{R}}\{e_0+e_1,i(e_0+e_1)\}$, whose generator has $N=2$ and is not a zero divisor, so it is not a Peirce line; within the real form $\mathbb{H}_{\mathbb{B}}$, whose form is the interval form in the basis $e_0,e_1,e_2,e_3$, the maximal totally isotropic subspace is the diagonal light line $\mathrm{span}_{\mathbb{R}}\{e_0+e_1\}$, and the Peirce lines are the complementary, norm-null part of the isotropic lines.
+which force $\tilde S=0$ and $\|\tilde W\|_E=1$: the doubly null lines are exactly the lines $\mathbb{C}(e_0\pm \tilde\Xi)$, parametrised by the real unit directions with the two signs, and the Peirce description is complete on the norm cone. The maximal totally isotropic *real* subspace is, by contrast, the plane $\mathrm{span}_{\mathbb{R}}\{e_0+e_1,i(e_0+e_1)\}$, whose generator has $N=2$ and is not a zero divisor, so it is not a Peirce line; within the real form $\mathbb{H}_{\mathbb{B}}$, whose form is the interval form in the basis $e_0,e_1,e_2,e_3$, the maximal totally isotropic subspace is the diagonal light line $\mathrm{span}_{\mathbb{R}}\{e_0+e_1\}$, and the Peirce lines are the complementary, norm-null part of the isotropic lines.
 
-**Proof.** The three equations are the real and imaginary parts of $N(\tilde V)=-1$ together with $\|\tilde V\|_E=1$, using $N(\tilde U+i\tilde W)=\|\tilde U\|_E^{2}-\|\tilde W\|_E^{2}+2i\langle\tilde U,\tilde W\rangle$ and $\|\tilde U+i\tilde W\|_E^{2}=\|\tilde U\|_E^{2}+\|\tilde W\|_E^{2}$; adding and subtracting the first two give $\|\tilde U\|_E^{2}=0$ and $\|\tilde W\|_E^{2}=1$. The remaining statements are the previous definition and corollary.
+**Proof.** The three equations are the real and imaginary parts of $N(\tilde R)=-1$ together with $\|\tilde R\|_E=1$, using $N(\tilde S+i\tilde W)=\|\tilde S\|_E^{2}-\|\tilde W\|_E^{2}+2i\langle\tilde S,\tilde W\rangle$ and $\|\tilde S+i\tilde W\|_E^{2}=\|\tilde S\|_E^{2}+\|\tilde W\|_E^{2}$; adding and subtracting the first two give $\|\tilde S\|_E^{2}=0$ and $\|\tilde W\|_E^{2}=1$. The remaining statements are the previous definition and corollary.
 
 ## The Isotropic Lines
 
 **Definition.** The **isotropic lines** of $\mathbb{C}^{4}$ for the general quaternionic sesquilinear form are the complex lines $\mathbb{C}\tilde{Q}$ spanned by nonzero isotropic elements.
 
-The isotropic lines are exactly the lines $\mathbb{C}(e_0+\tilde{V})$ with $\|\tilde{V}\|_E=1$, the boundary case of the parametrisation of the maximal positive definite subspaces in *Krein Orthogonality and the Fundamental Decomposition*, which uses the set $\|\tilde{V}\|_E<1$. Their identification with the norm-one set of $\mathbb{V}_{\mathbb{B}}$ is *The Krein Level Sets and the Hyperbolic Structure*.
+The isotropic lines are exactly the lines $\mathbb{C}(e_0+\tilde{R})$ with $\|\tilde{R}\|_E=1$, the boundary case of the parametrisation of the maximal positive definite subspaces in *Krein Orthogonality and the Fundamental Decomposition*, which uses the set $\|\tilde{R}\|_E<1$. Their identification with the norm-one set of $\mathbb{V}_{\mathbb{B}}$ is *The Krein Level Sets and the Hyperbolic Structure*.
 
 ## Worked Examples
 
@@ -101,13 +101,13 @@ The isotropic lines are exactly the lines $\mathbb{C}(e_0+\tilde{V})$ with $\|\t
 
 **A maximal isotropic plane.** $\mathbb{W}_{\mathrm{iso}}=\mathrm{span}_{\mathbb{R}}\{e_0+e_1,\ i(e_0+e_1)\}$: real dimension $2$, over $\mathbb{C}$ it is the single line $\mathbb{C}(e_0+e_1)$, and it is maximal because the Witt index over $\mathbb{R}$ is $2$.
 
-**A Peirce line.** $\hat\mu=e_2$: $\tilde\Pi_1=\tfrac12(e_0+ie_2)$ is a rank-one Hermitian idempotent with $N=0$ and $\langle\tilde\Pi_1,\tilde\Pi_1\rangle_{\natural*}=0$, so the line $\mathbb{C}(e_0+ie_2)=\mathbb{C}\tilde\Pi_1$ is a doubly null maximal isotropic line, a Peirce line.
+**A Peirce line.** $\hat n=e_2$: $\tilde\Pi_1=\tfrac12(e_0+ie_2)$ is a rank-one Hermitian idempotent with $N=0$ and $\langle\tilde\Pi_1,\tilde\Pi_1\rangle_{\natural*}=0$, so the line $\mathbb{C}(e_0+ie_2)=\mathbb{C}\tilde\Pi_1$ is a doubly null maximal isotropic line, a Peirce line.
 
 **A maximal isotropic line that is not Peirce.** $\mathbb{C}(e_0+e_1)$: the generator has $N=2$, so the line is isotropic and not doubly null; it is the complexification of the diagonal light line of the real form $\mathbb{H}_{\mathbb{B}}$, and it exhausts the index over $\mathbb{C}$ without lying in the norm cone.
 
 ## Summary
 
-The Krein null set is $\mathcal{K}=\{\|c\|_E=\|v\|_E\}$, a real algebraic cone of dimension $7$, whose only singular point is the apex. It meets the complex norm cone of the zero divisors in the union of the doubly null lines, a cone of real dimension $4$ that contains $\mathbb{C}(e_0\pm ie_1)$; the comparison of the two cones is *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, §*What the Four Forms Separate*. A totally isotropic subspace is one contained in its own Krein-orthogonal complement; the Witt index is $\min(p,q)$, that is $1$ over $\mathbb{C}$ and $2$ over $\mathbb{R}$; a maximal isotropic complex subspace is the line $\mathbb{C}(e_0+e_1)$, a maximal isotropic real subspace is the plane it spans with $i(e_0+e_1)$; every isotropic subspace extends to a maximal one and the automorphism group acts transitively on the maximal ones. The isotropic complex lines are parametrised by the norm-one set $\{\|\tilde V\|_E=1\}$ of the vector subspace, on which each line is met exactly once; the topology of this set is *The Euclidean Topology of the Biquaternion Algebra*. The index is computed twice: bounded by the two definite parts, a totally isotropic subspace injecting into the quotient by either, and exhibited by the **Peirce lines** generated by the rank-one Hermitian idempotents $\tilde\Pi_{1,2}(\hat\mu)=\tfrac12(e_0\pm i\hat\mu)$; these are exactly the doubly null lines, the isotropic lines that lie in the norm cone, while the maximal isotropic real plane is not a Peirce line, its generator being a non-zero-divisor.
+The Krein null set is $\mathcal{K}=\{\|c\|_E=\|v\|_E\}$, a real algebraic cone of dimension $7$, whose only singular point is the apex. It meets the complex norm cone of the zero divisors in the union of the doubly null lines, a cone of real dimension $4$ that contains $\mathbb{C}(e_0\pm ie_1)$; the comparison of the two cones is *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, §*What the Four Forms Separate*. A totally isotropic subspace is one contained in its own Krein-orthogonal complement; the Witt index is $\min(p,q)$, that is $1$ over $\mathbb{C}$ and $2$ over $\mathbb{R}$; a maximal isotropic complex subspace is the line $\mathbb{C}(e_0+e_1)$, a maximal isotropic real subspace is the plane it spans with $i(e_0+e_1)$; every isotropic subspace extends to a maximal one and the automorphism group acts transitively on the maximal ones. The isotropic complex lines are parametrised by the norm-one set $\{\|\tilde R\|_E=1\}$ of the vector subspace, on which each line is met exactly once; the topology of this set is *The Euclidean Topology of the Biquaternion Algebra*. The index is computed twice: bounded by the two definite parts, a totally isotropic subspace injecting into the quotient by either, and exhibited by the **Peirce lines** generated by the rank-one Hermitian idempotents $\tilde\Pi_\pm(\tilde\Xi)=\tfrac12(e_0\pm \tilde\Xi)$; these are exactly the doubly null lines, the isotropic lines that lie in the norm cone, while the maximal isotropic real plane is not a Peirce line, its generator being a non-zero-divisor.
 
 ## Summary of Notation
 
@@ -120,15 +120,15 @@ The Krein null set is $\mathcal{K}=\{\|c\|_E=\|v\|_E\}$, a real algebraic cone o
 | $\mathbb{W}_{\mathrm{iso}}=\mathrm{span}_{\mathbb{R}}\{e_0+e_1,i(e_0+e_1)\}$ | The maximal isotropic real plane |
 | $\mathbb{W}\subseteq\mathbb{W}^{\perp_{K}}$ | Totally isotropic subspace |
 | $\dim_{\mathbb{C}}\mathbb{W}\le\min(p,q)$ | The index bound by the two definite parts |
-| $\tilde\Pi_{1,2}(\hat\mu)=\tfrac12(e_0\pm i\hat\mu)$ | The rank-one Hermitian idempotents spanning the Peirce lines |
-| $\mathbb{C}(e_0\pm i\hat\mu)$ | The doubly null lines, exactly the Peirce lines |
-| $\{\lVert\tilde V\rVert_E=1\}$ | the norm-one set parametrising the isotropic complex lines |
+| $\tilde\Pi_\pm(\tilde\Xi)=\tfrac12(e_0\pm \tilde\Xi)$ | The rank-one Hermitian idempotents spanning the Peirce lines |
+| $\mathbb{C}(e_0\pm \tilde\Xi)$ | The doubly null lines, exactly the Peirce lines |
+| $\{\lVert\tilde R\rVert_E=1\}$ | the norm-one set parametrising the isotropic complex lines |
 
 ## Further Reading
 
 - *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the norm cone of the zero divisors, whose intersection with the Krein null set is the doubly null lines
 - *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the four forms and their four null sets, and for the null quadric of the general plain bilinear form with its hyperbolic planes
-- *Idempotents of the General Plain Algebra* (`articles_maths/idempotents-of-the-general-plain-algebra.md`), for the idempotents $\tilde\Pi_{1,2}(\hat\mu)$ and the minimal left and right ideals they generate
+- *Idempotents of the General Plain Algebra* (`articles_maths/idempotents-of-the-general-plain-algebra.md`), for the idempotents $\tilde\Pi_\pm(\tilde\Xi)$ and the minimal left and right ideals they generate
 - *Remarkable Subspaces and the Four General Products* (`articles_maths/remarkable-subspaces-and-the-four-general-products.md`), for the same description for the general quaternionic bilinear form
 - *Krein Orthogonality and the Fundamental Decomposition* (`articles_maths/krein-orthogonality-and-the-fundamental-decomposition.md`), for the complements used here
 - *The Krein Level Sets and the Hyperbolic Structure* (`articles_maths/the-krein-level-sets-and-the-hyperbolic-structure.md`), for the ball whose boundary is the isotropic sphere

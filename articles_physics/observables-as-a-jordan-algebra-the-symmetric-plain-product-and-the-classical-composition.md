@@ -26,7 +26,7 @@ algebra itself is *Jordan Algebras*, and its special class is *Special and Excep
 
 The conventions are those of the companion article. The algebra is
 $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$,
-$e_k^{2}=-e_0$, central scalar imaginary $i$, and general element $\tilde Q=Q_0e_0+\mathbf{Q}$. The
+$e_k^{2}=-e_0$, central scalar imaginary $i$, and general element $\tilde Q=Q_0e_0+\vec Q$. The
 material sector is the anti-Hermitian subspace $\mathbb{M}_-$ and the informational sector the Hermitian
 subspace $\mathbb{M}_+$, both real and four-dimensional;
 $\mathrm{Sc}(\tilde Q)=Q_0$ is the scalar part and ${}^{*}$ is the Hermitian conjugation.
@@ -109,17 +109,17 @@ commutative bilinear operation and was recomputed on random pairs. The square an
 *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*.
 
 **Proposition.** The square of an observable is a **positive** observable. In coordinates, for
-$\tilde Q=h_0e_0+i\mathbf{h}$ with $h_0$ and $\mathbf{h}$ real,
+$\tilde Q=h_0e_0+i\vec h$ with $h_0$ and $\vec h$ real,
 
 $$
-\tilde Q^{2}=\bigl(h_0^{2}+(\mathbf{h},\mathbf{h})\bigr)e_0+2h_0\,i\mathbf{h},
+\tilde Q^{2}=\bigl(h_0^{2}+(\vec h,\vec h)\bigr)e_0+2h_0\,i\vec h,
 $$
 
-and the positivity condition $h_0^{2}+(\mathbf{h},\mathbf{h})\geq\lvert 2h_0\rvert\,\lvert\mathbf{h}\rvert$
-is the identity $(h_0^{2}-(\mathbf{h},\mathbf{h}))^{2}\geq0$.
+and the positivity condition $h_0^{2}+(\vec h,\vec h)\geq\lvert 2h_0\rvert\,\lvert\vec h\rvert$
+is the identity $(h_0^{2}-(\vec h,\vec h))^{2}\geq0$.
 
 *Proof.* The spectral form of a Hermitian element is
-$\tilde Q=\lambda_+\tilde\Pi_1+\lambda_-\tilde\Pi_2$ with $\lambda_\pm=h_0\pm\lvert\mathbf{h}\rvert$ real
+$\tilde Q=\lambda_+\tilde\Pi_1+\lambda_-\tilde\Pi_2$ with $\lambda_\pm=h_0\pm\lvert\vec h\rvert$ real
 and $\tilde\Pi_{1,2}$ orthogonal idempotents of *The Hermitian Subspace $\mathbb{M}_+$ as the Informational
 Sector*; squaring gives $\tilde Q^{2}=\lambda_+^{2}\tilde\Pi_1+\lambda_-^{2}\tilde\Pi_2$, a combination of
 the same idempotents with non-negative coefficients, hence positive. The coordinate display and the
@@ -133,17 +133,17 @@ the positive cone is closed under addition, so a sum of squares vanishes only wh
 $Q_1=\cdots=Q_n=0$.
 
 *Proof.* Each $Q_i^{2}$ is positive by the proposition, and the sum of positive elements is positive
-because the cone $\{h_0\geq\lvert\mathbf{h}\rvert\}$ is convex. Apply the trace form to the sum against
-the unit: with $\tilde Q_i=h_{0,i}e_0+i\mathbf{h}_i$ one has
-$\tau(\tilde Q_i^{2},e_0)=h_{0,i}^{2}+(\mathbf{h}_i,\mathbf{h}_i)\geq0$ and
-$\tau(\sum_i\tilde Q_i^{2},e_0)=\sum_i\bigl(h_{0,i}^{2}+(\mathbf{h}_i,\mathbf{h}_i)\bigr)$; if the sum
+because the cone $\{h_0\geq\lvert\vec h\rvert\}$ is convex. Apply the trace form to the sum against
+the unit: with $\tilde Q_i=h_{0,i}e_0+i\vec h_i$ one has
+$\tau(\tilde Q_i^{2},e_0)=h_{0,i}^{2}+(\vec h_i,\vec h_i)\geq0$ and
+$\tau(\sum_i\tilde Q_i^{2},e_0)=\sum_i\bigl(h_{0,i}^{2}+(\vec h_i,\vec h_i)\bigr)$; if the sum
 vanishes then this trace vanishes, and the vanishing of a sum of non-negative terms forces every
-$h_{0,i}=\mathbf{h}_i=0$. The cone and the positive definiteness of the trace form are
+$h_{0,i}=\vec h_i=0$. The cone and the positive definiteness of the trace form are
 *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* and the section above.
 
 **Remark (the square does not order the sector by the norm).** Positivity of the square is a statement
 about the **spectrum**, and it is not the sign of the biquaternion norm: a Hermitian element has
-$N(\tilde Q)=h_0^{2}-(\mathbf{h},\mathbf{h})$, which is indefinite, and an element of the positive cone
+$N(\tilde Q)=h_0^{2}-(\vec h,\vec h)$, which is indefinite, and an element of the positive cone
 can have negative norm. The two are kept apart wherever they appear; the norm is *Norm and Invertibility in the General Quaternionic Algebra*.
 
 ## The Trace Form and the Invariance
@@ -152,7 +152,7 @@ can have negative norm. The two are kept apart wherever they appear; the norm is
 
 $$
 \tau(\tilde P,\tilde Q)=\mathrm{Sc}\bigl(\tilde P\bullet\tilde Q\bigr)
-=\mathrm{Sc}\bigl(\tilde P\tilde Q\bigr)=P_0Q_0-(\mathbf{P},\mathbf{Q}).
+=\mathrm{Sc}\bigl(\tilde P\tilde Q\bigr)=P_0Q_0-(\vec P,\vec Q).
 $$
 
 It is $\mathbb{C}$-bilinear, symmetric and non-degenerate on $\mathbb{B}$, and on the informational sector
@@ -175,13 +175,13 @@ $\mathrm{Sc}(\tilde Q\tilde P\tilde R)=\mathrm{Sc}(\tilde P\tilde R\tilde Q)$. T
 Algebra*.
 
 **Proposition (positivity on the observables).** On $\mathbb{M}_+$ the trace form is real and strictly
-positive on non-zero elements, $\tau(\tilde Q,\tilde Q)=h_0^{2}+(\mathbf{h},\mathbf{h})>0$ for
-$\tilde Q=h_0e_0+i\mathbf{h}\neq0$, and it **coincides with the Hermitian form**
+positive on non-zero elements, $\tau(\tilde Q,\tilde Q)=h_0^{2}+(\vec h,\vec h)>0$ for
+$\tilde Q=h_0e_0+i\vec h\neq0$, and it **coincides with the Hermitian form**
 $\mathrm{Sc}(\tilde P\tilde Q^{*})$, the Born pairing of the frame.
 
 *Proof.* For $\tilde Q$ Hermitian, $\tilde Q^{*}=\tilde Q$, so
 $\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})$; the algebraic norm
-is the sum of the squares of the four real coordinates $h_0,\mathbf{h}$.
+is the sum of the squares of the four real coordinates $h_0,\vec h$.
 The Born pairing and the Hilbert–Schmidt interpretation are *The Hermitian Subspace $\mathbb{M}_+$ as the
 Informational Sector*.
 
@@ -266,7 +266,7 @@ not, while the antisymmetric product closes the material sector and not the info
 square of an observable is the ordinary square and is a positive observable, with the polarisation
 recovering the product from the square; the observables form a commutative unital **special Jordan
 algebra** over $\mathbb{R}$ of real dimension four, and it is formally real; the trace form
-$\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=P_0Q_0-(\mathbf{P},\mathbf{Q})$ is
+$\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=P_0Q_0-(\vec P,\vec Q)$ is
 symmetric, non-degenerate, invariant,
 $\tau(\tilde P\bullet\tilde Q,\tilde R)=\tau(\tilde P,\tilde Q\bullet\tilde R)$, positive definite on
 $\mathbb{M}_+$, and equal there to the Hermitian form $\mathrm{Sc}(\tilde P\tilde Q^{*})$.
@@ -294,7 +294,7 @@ and a generator part. The observables form a commutative unital **special Jordan
 $\mathbb{R}$ of real dimension four, with the unit $e_0$, the Jordan identity in place of associativity,
 and the square as the algebraic norm of the operation. The square of an observable is a positive observable,
 and the algebra is formally real. Its trace form
-$\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=P_0Q_0-(\mathbf{P},\mathbf{Q})$ is
+$\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=P_0Q_0-(\vec P,\vec Q)$ is
 symmetric, invariant, positive definite on $\mathbb{M}_+$, and equal there to the Hermitian Born pairing
 $\mathrm{Sc}(\tilde P\tilde Q^{*})$. The readings offered and labelled here are that the symmetrised
 product is the **classical composition** of two observables, that the observables are a **Jordan
@@ -311,7 +311,7 @@ are the closure, the positivity and the invariance, and none of the three interp
 | $\tilde P\tilde Q=\tilde P\bullet\tilde Q+\tilde P\wedge\tilde Q$ | Observables split into observable part and generator part |
 | $\tilde Q^{2}$ | Square, equal to the ordinary square; the algebraic norm of the operation |
 | $(\tilde P+\tilde Q)^{2}-\tilde P^{2}-\tilde Q^{2}=2\tilde P\bullet\tilde Q$ | Polarisation of the square |
-| $\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=P_0Q_0-(\mathbf{P},\mathbf{Q})$ | Trace form of the block |
+| $\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=P_0Q_0-(\vec P,\vec Q)$ | Trace form of the block |
 | $\tau(\tilde P\bullet\tilde Q,\tilde R)=\tau(\tilde P,\tilde Q\bullet\tilde R)$ | Invariance, the trace identity |
 | $\mathrm{Sc}(\tilde P\tilde Q^{*})$ | The Hermitian (Born) form, equal to $\tau$ on $\mathbb{M}_+$ |
 | $(p,q)$ | Signature written as (number of $+$, number of $-$) |

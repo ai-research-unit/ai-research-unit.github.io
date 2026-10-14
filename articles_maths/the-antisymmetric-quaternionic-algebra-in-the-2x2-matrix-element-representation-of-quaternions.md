@@ -3,7 +3,7 @@
 ## Introduction
 
 The antisymmetric quaternionic algebra of $\mathbb{H}$ is the operation
-$\tilde p\diamond\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)=p_0\mathbf q-q_0\mathbf p-\mathbf p\times\mathbf q$ of *Introduction to the Antisymmetric Quaternionic
+$\tilde p\diamond\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)=p_0\vec q-q_0\vec p-\vec p\times\vec q$ of *Introduction to the Antisymmetric Quaternionic
 Algebra of Quaternions*. This article reads it on the embedding $\mathbb{H}\hookrightarrow M_2(\mathbb{C})$
 of *Introduction to the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$ of Quaternions*, where
 the parent product becomes the **conjugated product** $\mathsf{M}_2(\tilde p)^{\dagger}\mathsf{M}_2(\tilde q)$
@@ -41,8 +41,8 @@ $\mathsf{M}_2(e_3)=-i\sigma_3$, the Pauli matrices. The plain product is the mat
 $\mathsf{M}_2(\tilde p\tilde q)=\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)$, the parent product is
 $\mathsf{M}_2(\tilde p^{\natural}\tilde q)=\mathsf{M}_2(\tilde p)^{\dagger}\mathsf{M}_2(\tilde q)$, and
 the conjugation is the Hermitian adjoint, $\mathsf{M}_2(\tilde q^{\natural})=\mathsf{M}_2(\tilde q)^{\dagger}$.
-The **quaternion form** is $N(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q$ and the **plain form**
-$B(\tilde p,\tilde q)=p_0q_0-\mathbf p\cdot\mathbf q$.
+The **quaternion form** is $N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$ and the **plain form**
+$B(\tilde p,\tilde q)=p_0q_0-\vec p\cdot\vec q$.
 
 ## The Model and the Conjugated Commutator
 
@@ -61,7 +61,7 @@ and half of it is the image of the block.
 halved plain commutator $\tfrac12[\mathsf{M}_2(\tilde p),\mathsf{M}_2(\tilde q)]$, of values the
 traceless matrices of the image; the antisymmetrization of the parent is the halved **conjugated**
 commutator, of values the anti-Hermitian matrices. The two agree on the pure elements up to sign, since
-$\mathsf{M}_2(\mathbf u)^{\dagger}=-\mathsf{M}_2(\mathbf u)$ for a pure $\mathbf u$.
+$\mathsf{M}_2(\vec u)^{\dagger}=-\mathsf{M}_2(\vec u)$ for a pure $\vec u$.
 
 ## The Image: the Anti-Hermitian Matrices
 
@@ -121,7 +121,7 @@ $$
 $$
 
 and the operator trace form is the combination
-$K(\tilde p,\tilde q)=\tfrac12\bigl(N(\tilde p,\tilde q)+5B(\tilde p,\tilde q)\bigr)=3p_0q_0-2\,\mathbf p\cdot\mathbf q$.
+$K(\tilde p,\tilde q)=\tfrac12\bigl(N(\tilde p,\tilde q)+5B(\tilde p,\tilde q)\bigr)=3p_0q_0-2\,\vec p\cdot\vec q$.
 
 *Proof.* The model is multiplicative, so
 $\operatorname{Tr}(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)^{\dagger})=\operatorname{Tr}\mathsf{M}_2(\tilde p\tilde q^{\natural})=2N(\tilde p,\tilde q)$
@@ -169,7 +169,7 @@ $\mathsf{M}_2(\tilde p\diamond\tilde q)^2=-N(\tilde p\diamond\tilde q)\mathrm{I}
 model with the conjugate reads the quaternion form, $\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde p)\mathsf{M}_2(\tilde q)^{\dagger})=N(\tilde p,\tilde q)$,
 the plain trace reads the plain form, the unique invariant form of the block is
 $\varphi=p_0q_0=\tfrac14\operatorname{Tr}\mathsf{M}_2(\tilde p)\operatorname{Tr}\mathsf{M}_2(\tilde q)$,
-and the operator trace form is $\tfrac12(N+5B)=3p_0q_0-2\,\mathbf p\cdot\mathbf q$. The six products are
+and the operator trace form is $\tfrac12(N+5B)=3p_0q_0-2\,\vec p\cdot\vec q$. The six products are
 the matrix product and its symmetric and antisymmetric halves, and the conjugated matrix product and its
 halves.
 

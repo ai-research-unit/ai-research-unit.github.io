@@ -6,95 +6,95 @@ In 1851 Léon Foucault suspended a long pendulum in the Panthéon and watched it
 
 The effect is peculiar among the systems of this subcategory in that it is **geometric**. The precession angle does not depend on the mass of the bob, on the length of the wire, on the local value of $g$, or on the amplitude of the swing, as long as the pendulum is long and the amplitude small. It depends only on the path that the pivot is carried along by the rotating Earth — a circle of latitude — and on nothing else. It is a **holonomy**: the net rotation accumulated by a frame when it is carried around a closed loop, an angle fixed by the geometry of the loop rather than by the details of the transport.
 
-This article treats the Foucault pendulum in the biquaternion framework. Three things are developed. The pendulum's swing direction is a real unit vector in the three-space $\operatorname{span}\{e_1,e_2,e_3\} \subset \mathbb{M}_-$, and the rotating frame is a one-parameter family of real-quaternion rotors $R(t)$ acting on it by the adjoint action. The **Coriolis and centrifugal forces are commutators** with the frame's angular velocity, $\mathbf{F}_{\text{Cor}} = -m[\boldsymbol\Omega,\dot{\boldsymbol\rho}]$ and $\mathbf{F}_{\text{cf}} = -\tfrac{m}{4}[\boldsymbol\Omega,[\boldsymbol\Omega,\boldsymbol\rho]]$, which is the algebraic form of the statement that they are the corrections for describing inertial motion in a rotating frame. And the precession angle is identified with the total geodesic curvature of the latitude circle, $\oint\kappa_g\,ds = 2\pi\sin\lambda$, which by Gauss–Bonnet is $2\pi$ minus the enclosed solid angle.
+This article treats the Foucault pendulum in the biquaternion framework. Three things are developed. The pendulum's swing direction is a real unit vector in the three-space $\operatorname{span}\{e_1,e_2,e_3\} \subset \mathbb{M}_-$, and the rotating frame is a one-parameter family of real-quaternion rotors $R(t)$ acting on it by the adjoint action. The **Coriolis and centrifugal forces are commutators** with the frame's angular velocity, $\vec F_{\text{Cor}} = -m[\vec\Omega,\dot{\vec\rho}]$ and $\vec F_{\text{cf}} = -\tfrac{m}{4}[\vec\Omega,[\vec\Omega,\vec\rho]]$, which is the algebraic form of the statement that they are the corrections for describing inertial motion in a rotating frame. And the precession angle is identified with the total geodesic curvature of the latitude circle, $\oint\kappa_g\,ds = 2\pi\sin\lambda$, which by Gauss–Bonnet is $2\pi$ minus the enclosed solid angle.
 
 The treatment is classical and non-quantum. The geometric phase of a quantum system, the Berry phase, and its biquaternion formulation belong to the companion article *The Berry Phase and Geometric Phases in Biquaternionic Form*; the classical Hannay angle is a separate construction. What is used here is the elementary holonomy of a frame carried around a loop on a sphere, and the pendulum that realizes it. The particle is structureless — the bob carries no intrinsic angular momentum and no magnetic moment — so the effect is one of the spin-zero subcategory, and it is the purely geometric end of it.
 
-**Conventions.** The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_je_k = \epsilon_{jkl}e_l$ for $j \neq k$; the scalar imaginary $i$ is central with $i^2 = -e_0$. The material sector is $\mathbb{M}_-$ and the informational sector $\mathbb{M}_+$, with $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm = \mathbb{M}_\mp$. Position vectors, velocities, angular velocities and forces are real vectors in $\operatorname{span}\{e_1,e_2,e_3\} \subset \mathbb{M}_-$; the energy is a central scalar. For two real vectors $\mathbf{a},\mathbf{b}$,
+**Conventions.** The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_je_k = \epsilon_{jkl}e_l$ for $j \neq k$; the scalar imaginary $i$ is central with $i^2 = -e_0$. The material sector is $\mathbb{M}_-$ and the informational sector $\mathbb{M}_+$, with $\mathbb{B} = \mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm = \mathbb{M}_\mp$. Position vectors, velocities, angular velocities and forces are real vectors in $\operatorname{span}\{e_1,e_2,e_3\} \subset \mathbb{M}_-$; the energy is a central scalar. For two real vectors $\vec a,\vec b$,
 
 $$
-\mathbf{a}\mathbf{b} = -\mathbf{a}\cdot\mathbf{b}\,e_0 + \mathbf{a}\times\mathbf{b}, \qquad [\mathbf{a},\mathbf{b}] = 2\,\mathbf{a}\times\mathbf{b} .
+\vec a\vec b = -\vec a\cdot\vec b\,e_0 + \vec a\times\vec b, \qquad [\vec a,\vec b] = 2\,\vec a\times\vec b .
 $$
 
-A rotation by angle $\theta$ about the unit axis $\hat{\mathbf{n}}$ is implemented by the unit real quaternion $R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\hat{\mathbf{n}}$, acting by $\mathbf{a} \mapsto R\mathbf{a}R^{-1}$.
+A rotation by angle $\theta$ about the unit axis $\hat n$ is implemented by the unit real quaternion $R = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\hat n$, acting by $\vec a \mapsto R\vec aR^{-1}$.
 
 ## Inertial and Rotating Frames
 
 ### The Rotor of the Frame
 
-Let the Earth-fixed frame rotate with angular velocity $\boldsymbol\Omega$ relative to an inertial frame, and let $\hat{\mathbf{u}} = \boldsymbol\Omega/\Omega$ be the axis. The rotor that carries the inertial frame into the rotating frame is the one-parameter family
+Let the Earth-fixed frame rotate with angular velocity $\vec\Omega$ relative to an inertial frame, and let $\hat u = \vec\Omega/\Omega$ be the axis. The rotor that carries the inertial frame into the rotating frame is the one-parameter family
 
 $$
-R(t) = \cos\frac{\Omega t}{2} + \sin\frac{\Omega t}{2}\,\hat{\mathbf{u}} \in \mathbb{H}_{\mathbb{B}}, \qquad R^{-1}(t) = \overline{R}(t) ,
+R(t) = \cos\frac{\Omega t}{2} + \sin\frac{\Omega t}{2}\,\hat u \in \mathbb{H}_{\mathbb{B}}, \qquad R^{-1}(t) = \overline{R}(t) ,
 $$
 
-so that after a time $t$ the frame has turned by the angle $\Omega t$ about $\hat{\mathbf{u}}$. A vector with fixed components in the rotating frame has inertial components $\mathbf{a}_{\text{in}} = R\,\mathbf{a}_{\text{rot}}R^{-1}$; a vector with fixed inertial components has rotating-frame components
+so that after a time $t$ the frame has turned by the angle $\Omega t$ about $\hat u$. A vector with fixed components in the rotating frame has inertial components $\vec a_{\text{in}} = R\,\vec a_{\text{rot}}R^{-1}$; a vector with fixed inertial components has rotating-frame components
 
 $$
-\mathbf{a}_{\text{rot}}(t) = R^{-1}(t)\,\mathbf{a}_{\text{in}}\,R(t) .
+\vec a_{\text{rot}}(t) = R^{-1}(t)\,\vec a_{\text{in}}\,R(t) .
 $$
 
 ### The Time Derivative in the Rotating Frame
 
-Differentiating the second relation and using $\dot R R^{-1} = \tfrac{1}{2}\boldsymbol\Omega$ as a pure quaternion — which holds because $\boldsymbol\Omega$ is the angular velocity of the frame and the rotor is its half-angle exponential — gives
+Differentiating the second relation and using $\dot R R^{-1} = \tfrac{1}{2}\vec\Omega$ as a pure quaternion — which holds because $\vec\Omega$ is the angular velocity of the frame and the rotor is its half-angle exponential — gives
 
 $$
-\frac{d\mathbf{a}_{\text{rot}}}{dt} = -\,\boldsymbol\Omega\times\mathbf{a}_{\text{rot}} \qquad (\mathbf{a}_{\text{in}}\ \text{constant}).
+\frac{d\vec a_{\text{rot}}}{dt} = -\,\vec\Omega\times\vec a_{\text{rot}} \qquad (\vec a_{\text{in}}\ \text{constant}).
 $$
 
-This is the elementary statement that a vector fixed in inertial space appears to rotate backwards in the rotating frame. It was checked numerically: with $\boldsymbol\Omega = (0, 0.3, 0.5)$ and a generic constant inertial vector, the finite-difference derivative of $\mathbf{a}_{\text{rot}}(t)$ agrees with $-\boldsymbol\Omega\times\mathbf{a}_{\text{rot}}$ to five decimal places.
+This is the elementary statement that a vector fixed in inertial space appears to rotate backwards in the rotating frame. It was checked numerically: with $\vec\Omega = (0, 0.3, 0.5)$ and a generic constant inertial vector, the finite-difference derivative of $\vec a_{\text{rot}}(t)$ agrees with $-\vec\Omega\times\vec a_{\text{rot}}$ to five decimal places.
 
 The general relation for an arbitrary vector follows by adding the rotating-frame derivative,
 
 $$
-\left(\frac{d\mathbf{a}}{dt}\right)_{\text{in}} = \left(\frac{d\mathbf{a}}{dt}\right)_{\text{rot}} + \boldsymbol\Omega\times\mathbf{a} ,
+\left(\frac{d\vec a}{dt}\right)_{\text{in}} = \left(\frac{d\vec a}{dt}\right)_{\text{rot}} + \vec\Omega\times\vec a ,
 $$
 
 which is the standard transport formula expressed through the rotor.
 
 ### The Fictitious Forces as Commutators
 
-Newton's second law in the inertial frame, $m\ddot{\mathbf{r}}_{\text{in}} = \mathbf{F}$, becomes in the rotating frame an equation with two extra terms. Applying the transport formula twice,
+Newton's second law in the inertial frame, $m\ddot{\vec r}_{\text{in}} = \vec F$, becomes in the rotating frame an equation with two extra terms. Applying the transport formula twice,
 
 $$
-m\ddot{\boldsymbol\rho} = \mathbf{F} - 2m\,\boldsymbol\Omega\times\dot{\boldsymbol\rho} - m\,\boldsymbol\Omega\times\left(\boldsymbol\Omega\times\boldsymbol\rho\right) ,
+m\ddot{\vec\rho} = \vec F - 2m\,\vec\Omega\times\dot{\vec\rho} - m\,\vec\Omega\times\left(\vec\Omega\times\vec\rho\right) ,
 $$
 
-where $\boldsymbol\rho$ is the position in the rotating frame. The two fictitious terms are the Coriolis force and the centrifugal force, and in the quaternion algebra each is a **commutator with the angular velocity**. The Coriolis term is
+where $\vec\rho$ is the position in the rotating frame. The two fictitious terms are the Coriolis force and the centrifugal force, and in the quaternion algebra each is a **commutator with the angular velocity**. The Coriolis term is
 
 $$
--2m\,\boldsymbol\Omega\times\dot{\boldsymbol\rho} = -m\,[\boldsymbol\Omega,\dot{\boldsymbol\rho}] ,
+-2m\,\vec\Omega\times\dot{\vec\rho} = -m\,[\vec\Omega,\dot{\vec\rho}] ,
 $$
 
-since $[\mathbf{a},\mathbf{b}] = 2\mathbf{a}\times\mathbf{b}$, and the centrifugal term is the double commutator,
+since $[\vec a,\vec b] = 2\vec a\times\vec b$, and the centrifugal term is the double commutator,
 
 $$
--m\,\boldsymbol\Omega\times\left(\boldsymbol\Omega\times\boldsymbol\rho\right) = -\frac{m}{4}\left[\boldsymbol\Omega,\left[\boldsymbol\Omega,\boldsymbol\rho\right]\right] ,
+-m\,\vec\Omega\times\left(\vec\Omega\times\vec\rho\right) = -\frac{m}{4}\left[\vec\Omega,\left[\vec\Omega,\vec\rho\right]\right] ,
 $$
 
-since $[\boldsymbol\Omega,[\boldsymbol\Omega,\boldsymbol\rho]] = 4\,\boldsymbol\Omega\times(\boldsymbol\Omega\times\boldsymbol\rho)$. The fictitious forces are therefore the first and second commutators of the frame's generator with the velocity and the position. This is the algebraic content of the statement that they correct for the rotation of the frame: the generator $\boldsymbol\Omega$ is a real vector in $\mathbb{M}_-$, and the adjoint action of its exponential produces the correction terms.
+since $[\vec\Omega,[\vec\Omega,\vec\rho]] = 4\,\vec\Omega\times(\vec\Omega\times\vec\rho)$. The fictitious forces are therefore the first and second commutators of the frame's generator with the velocity and the position. This is the algebraic content of the statement that they correct for the rotation of the frame: the generator $\vec\Omega$ is a real vector in $\mathbb{M}_-$, and the adjoint action of its exponential produces the correction terms.
 
 ## The Pendulum in the Rotating Frame
 
 ### The Geometry of the Local Frame
 
-Place the origin at the point of suspension, taken to be fixed in the rotating frame, and choose local axes with $\hat{\mathbf{z}}$ along the local vertical (the outward radial direction), $\hat{\mathbf{x}}$ pointing east and $\hat{\mathbf{y}}$ pointing north. At latitude $\lambda$ the Earth's angular velocity has components
+Place the origin at the point of suspension, taken to be fixed in the rotating frame, and choose local axes with $\hat z$ along the local vertical (the outward radial direction), $\hat x$ pointing east and $\hat y$ pointing north. At latitude $\lambda$ the Earth's angular velocity has components
 
 $$
-\boldsymbol\Omega = \Omega\cos\lambda\,\hat{\mathbf{y}} + \Omega\sin\lambda\,\hat{\mathbf{z}}
+\vec\Omega = \Omega\cos\lambda\,\hat y + \Omega\sin\lambda\,\hat z
 $$
 
 in these axes: the component along the local vertical is $\Omega\sin\lambda$, and the component along north is $\Omega\cos\lambda$. Only the vertical component enters the precession to leading order. The horizontal component, and the centrifugal term that accompanies it, are of the same order in $\Omega$ as the Coriolis term that does the work; their effect on the precession rate is computed below and is of relative order $(\Omega\sin\lambda/\omega_0)^2$.
 
 ### Small Oscillations
 
-For small horizontal displacements $\boldsymbol\rho = x\hat{\mathbf{x}} + y\hat{\mathbf{y}}$ the restoring force of the pendulum is $-m\omega_0^2\boldsymbol\rho$, with $\omega_0 = \sqrt{g/\ell}$ the pendulum frequency, and the equation of motion in the rotating frame is
+For small horizontal displacements $\vec\rho = x\hat x + y\hat y$ the restoring force of the pendulum is $-m\omega_0^2\vec\rho$, with $\omega_0 = \sqrt{g/\ell}$ the pendulum frequency, and the equation of motion in the rotating frame is
 
 $$
-\ddot{\boldsymbol\rho} = -\omega_0^2\boldsymbol\rho - 2\,\boldsymbol\Omega\times\dot{\boldsymbol\rho} .
+\ddot{\vec\rho} = -\omega_0^2\vec\rho - 2\,\vec\Omega\times\dot{\vec\rho} .
 $$
 
-Now $\boldsymbol\Omega\times\dot{\boldsymbol\rho}$ has the vertical component; projecting onto the horizontal plane, the contributions of $\boldsymbol\Omega_x$ and $\boldsymbol\Omega_y$ are along the vertical and drop out, and only $\Omega_z = \Omega\sin\lambda$ survives:
+Now $\vec\Omega\times\dot{\vec\rho}$ has the vertical component; projecting onto the horizontal plane, the contributions of $\vec\Omega_x$ and $\vec\Omega_y$ are along the vertical and drop out, and only $\Omega_z = \Omega\sin\lambda$ survives:
 
 $$
 \ddot x = -\omega_0^2 x + 2\Omega\sin\lambda\,\dot y, \qquad \ddot y = -\omega_0^2 y - 2\Omega\sin\lambda\,\dot x .
@@ -143,7 +143,7 @@ the Foucault angle.
 The retained equations omit the centrifugal force, which is of the same order in $\Omega$ as the Coriolis force that produces the precession. Its size is worth fixing, because the rate $\Omega\sin\lambda$ is often quoted without qualification and the neglected term is not merely a renormalization of the local vertical. In the local axes the horizontal projection of the centrifugal acceleration is
 
 $$
--\boldsymbol\Omega\times\left(\boldsymbol\Omega\times\boldsymbol\rho\right) = \Omega^2x\,\hat{\mathbf{x}} + \Omega^2\sin^2\lambda\,y\,\hat{\mathbf{y}} ,
+-\vec\Omega\times\left(\vec\Omega\times\vec\rho\right) = \Omega^2x\,\hat x + \Omega^2\sin^2\lambda\,y\,\hat y ,
 $$
 
 the east component being the full $\Omega^2\rho$ because the east direction is perpendicular to the Earth's axis, and the north component being reduced by $\sin^2\lambda$. Restoring it, the horizontal equations become
@@ -186,7 +186,7 @@ The derivation shows that the precession rate $-\Omega\sin\lambda$ is independen
 
 ### The Path on the Sphere
 
-As the Earth rotates, the local vertical $\hat{\mathbf{r}}$ at the laboratory traces a circle of latitude on the unit sphere of directions. Its colatitude is $\theta_0 = \frac{\pi}{2} - \lambda$, so its polar distance from the axis is $\sin\theta_0 = \cos\lambda$ and its height is $\cos\theta_0 = \sin\lambda$. The path is parametrized by the rotation angle $t$,
+As the Earth rotates, the local vertical $\hat r$ at the laboratory traces a circle of latitude on the unit sphere of directions. Its colatitude is $\theta_0 = \frac{\pi}{2} - \lambda$, so its polar distance from the axis is $\sin\theta_0 = \cos\lambda$ and its height is $\cos\theta_0 = \sin\lambda$. The path is parametrized by the rotation angle $t$,
 
 $$
 \boldsymbol\gamma(t) = \left(\sin\theta_0\cos t,\ \sin\theta_0\sin t,\ \cos\theta_0\right),
@@ -202,7 +202,7 @@ $$
 \oint\kappa_g\,ds = 2\pi\cos\theta_0 = 2\pi\sin\lambda .
 $$
 
-This was computed numerically by evaluating $\kappa_g = \mathbf{n}\cdot(\boldsymbol\gamma''\times\boldsymbol\gamma')/|\boldsymbol\gamma'|^3$ along the curve and integrating, with the orientation of the curve and of the normal $\mathbf{n}$ fixed by the Gauss–Bonnet statement below: for $\lambda = 0.9$ rad the integral is $4.921788$, equal to $2\pi\sin(0.9)$ to six decimal places. The sign of $\kappa_g$ is itself a convention — reversing either the normal or the sense of traversal reverses it — and only the magnitude $2\pi\sin\lambda$ is invariant. The total geodesic turning is exactly the Foucault angle.
+This was computed numerically by evaluating $\kappa_g = \vec n\cdot(\boldsymbol\gamma''\times\boldsymbol\gamma')/|\boldsymbol\gamma'|^3$ along the curve and integrating, with the orientation of the curve and of the normal $\vec n$ fixed by the Gauss–Bonnet statement below: for $\lambda = 0.9$ rad the integral is $4.921788$, equal to $2\pi\sin(0.9)$ to six decimal places. The sign of $\kappa_g$ is itself a convention — reversing either the normal or the sense of traversal reverses it — and only the magnitude $2\pi\sin\lambda$ is invariant. The total geodesic turning is exactly the Foucault angle.
 
 
 ### Gauss–Bonnet and the Solid Angle
@@ -223,7 +223,7 @@ in agreement with the direct computation. **The Foucault angle is $2\pi$ minus t
 
 ### The Parallel-Transport Holonomy
 
-The complementary quantity is the holonomy of parallel transport around the loop: a tangent vector carried once around the latitude circle by the Levi-Civita connection of the sphere returns rotated by the enclosed solid angle. Evaluating the parallel-transport equation $\dot{\mathbf{v}} = -(\mathbf{v}\cdot\dot{\boldsymbol\gamma})\boldsymbol\gamma$ along the latitude circle and measuring the signed angle between the initial and final tangent vectors gives $1.361397$ for $\lambda = 0.9$, equal to $2\pi(1-\sin(0.9)) = 2\pi(1-\sin\lambda)$ to six decimal places, and the two numbers satisfy
+The complementary quantity is the holonomy of parallel transport around the loop: a tangent vector carried once around the latitude circle by the Levi-Civita connection of the sphere returns rotated by the enclosed solid angle. Evaluating the parallel-transport equation $\dot{\vec v} = -(\vec v\cdot\dot{\boldsymbol\gamma})\boldsymbol\gamma$ along the latitude circle and measuring the signed angle between the initial and final tangent vectors gives $1.361397$ for $\lambda = 0.9$, equal to $2\pi(1-\sin(0.9)) = 2\pi(1-\sin\lambda)$ to six decimal places, and the two numbers satisfy
 
 $$
 \oint\kappa_g\,ds + 2\pi(1-\sin\lambda) = 2\pi\sin\lambda + 2\pi(1-\sin\lambda) = 2\pi ,
@@ -246,10 +246,10 @@ The identification has three consequences, and together they are the meaning of 
 The rotating-frame transformation is implemented by the rotor $R(t)$ of the first section, and after one sidereal day the rotor has turned by the angle $2\pi$ about the Earth's axis:
 
 $$
-R(T_{\text{day}}) = \cos\pi + \sin\pi\,\hat{\mathbf{u}} = -e_0 .
+R(T_{\text{day}}) = \cos\pi + \sin\pi\,\hat u = -e_0 .
 $$
 
-The rotor is therefore $-e_0$, not $e_0$: the lift of a full rotation to the real quaternions is minus the identity, the familiar two-valuedness of the rotation group. The adjoint action of $-e_0$ is the identity, however, since $(-e_0)\mathbf{a}(-e_0)^{-1} = \mathbf{a}$, and the vector quantities of the problem cannot distinguish $R$ from $-R$. The full-frame rotation is therefore trivial for the pendulum's swing direction, as it must be after a closed day, and the precession of $2\pi\sin\lambda$ is the rotation of that direction **relative to the local frame**, that is, about the local vertical, not the full rotation about the Earth's axis.
+The rotor is therefore $-e_0$, not $e_0$: the lift of a full rotation to the real quaternions is minus the identity, the familiar two-valuedness of the rotation group. The adjoint action of $-e_0$ is the identity, however, since $(-e_0)\vec a(-e_0)^{-1} = \vec a$, and the vector quantities of the problem cannot distinguish $R$ from $-R$. The full-frame rotation is therefore trivial for the pendulum's swing direction, as it must be after a closed day, and the precession of $2\pi\sin\lambda$ is the rotation of that direction **relative to the local frame**, that is, about the local vertical, not the full rotation about the Earth's axis.
 
 This is worth a remark about the double cover. The lift of the one-day loop to $SU(2)$ is the path from $e_0$ to $-e_0$, a path that does not close; but the classical pendulum is described by vectors, on which the group acts through the adjoint representation, and the adjoint representation factors through $SO(3)$, where the loop does close. There is no observable spinor sign for a structureless pendulum, because a spinor sign is a statement about the action on a half-integer-spin state, and the bob carries spin zero. The geometric phase of the present article is an element of the rotation group; whether it lifts to one or the other element of the double cover is a question that has no physical content for a spinless classical system.
 
@@ -263,17 +263,17 @@ The Foucault precession is the oldest and simplest member of the family of geome
 
 ## Summary
 
-The Foucault pendulum in biquaternionic form is a real vector in the material sector carried around by a rotation of the frame. The frame is the rotor $R(t) = \cos\frac{\Omega t}{2} + \sin\frac{\Omega t}{2}\hat{\mathbf{u}}$, acting on the real three-space by the adjoint action, and the transport formula gives the fictitious forces as commutators with the frame's angular velocity,
+The Foucault pendulum in biquaternionic form is a real vector in the material sector carried around by a rotation of the frame. The frame is the rotor $R(t) = \cos\frac{\Omega t}{2} + \sin\frac{\Omega t}{2}\hat u$, acting on the real three-space by the adjoint action, and the transport formula gives the fictitious forces as commutators with the frame's angular velocity,
 
 $$
-\mathbf{F}_{\text{Cor}} = -m[\boldsymbol\Omega,\dot{\boldsymbol\rho}], \qquad
-\mathbf{F}_{\text{cf}} = -\frac{m}{4}[\boldsymbol\Omega,[\boldsymbol\Omega,\boldsymbol\rho]] .
+\vec F_{\text{Cor}} = -m[\vec\Omega,\dot{\vec\rho}], \qquad
+\vec F_{\text{cf}} = -\frac{m}{4}[\vec\Omega,[\vec\Omega,\vec\rho]] .
 $$
 
 For a pendulum of frequency $\omega_0$ at latitude $\lambda$, the horizontal motion satisfies
 
 $$
-\ddot{\boldsymbol\rho} = -\omega_0^2\boldsymbol\rho - 2\,\boldsymbol\Omega\times\dot{\boldsymbol\rho},
+\ddot{\vec\rho} = -\omega_0^2\vec\rho - 2\,\vec\Omega\times\dot{\vec\rho},
 \qquad
 \ddot z + 2i\Omega\sin\lambda\,\dot z + \omega_0^2 z = 0,
 $$
@@ -305,14 +305,14 @@ The effect is the purely geometric end of the spin-zero subcategory: it involves
 | $i$ | Central scalar imaginary, $i^2 = -e_0$ |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Material (anti-Hermitian), informational (Hermitian) sectors |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subalgebra (rotation rotors) |
-| $\boldsymbol\Omega$ | Angular velocity of the rotating frame; real vector |
-| $\Omega = |\boldsymbol\Omega|$, $\hat{\mathbf{u}} = \boldsymbol\Omega/\Omega$ | Angular speed; rotation axis |
-| $R(t) = \cos\frac{\Omega t}{2} + \sin\frac{\Omega t}{2}\hat{\mathbf{u}}$ | Frame rotor; $\mathbf{a}_{\text{rot}} = R^{-1}\mathbf{a}_{\text{in}}R$ |
-| $\mathbf{a}_{\text{in}}$, $\mathbf{a}_{\text{rot}}$ | Inertial and rotating-frame components of a vector |
-| $[\mathbf{a},\mathbf{b}] = 2\mathbf{a}\times\mathbf{b}$ | Commutator of two real vectors |
-| $-m[\boldsymbol\Omega,\dot{\boldsymbol\rho}]$ | Coriolis force as a commutator |
-| $-\tfrac{m}{4}[\boldsymbol\Omega,[\boldsymbol\Omega,\boldsymbol\rho]]$ | Centrifugal force as a double commutator |
-| $\boldsymbol\rho = x\hat{\mathbf{x}} + y\hat{\mathbf{y}}$ | Horizontal displacement of the bob |
+| $\vec\Omega$ | Angular velocity of the rotating frame; real vector |
+| $\Omega = |\vec\Omega|$, $\hat u = \vec\Omega/\Omega$ | Angular speed; rotation axis |
+| $R(t) = \cos\frac{\Omega t}{2} + \sin\frac{\Omega t}{2}\hat u$ | Frame rotor; $\vec a_{\text{rot}} = R^{-1}\vec a_{\text{in}}R$ |
+| $\vec a_{\text{in}}$, $\vec a_{\text{rot}}$ | Inertial and rotating-frame components of a vector |
+| $[\vec a,\vec b] = 2\vec a\times\vec b$ | Commutator of two real vectors |
+| $-m[\vec\Omega,\dot{\vec\rho}]$ | Coriolis force as a commutator |
+| $-\tfrac{m}{4}[\vec\Omega,[\vec\Omega,\vec\rho]]$ | Centrifugal force as a double commutator |
+| $\vec\rho = x\hat x + y\hat y$ | Horizontal displacement of the bob |
 | $\lambda$ | Latitude; local vertical component $\Omega\sin\lambda$ |
 | $\omega_0 = \sqrt{g/\ell}$ | Pendulum frequency |
 | $z = x + iy$ | Complex horizontal coordinate |

@@ -6,7 +6,7 @@
 The product of this group is the **general quaternionic bilinear product**
 
 $$
-\tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q , \qquad \tilde P^{\natural} = P_0 - \mathbf P ,
+\tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q , \qquad \tilde P^{\natural} = P_0 - \vec P ,
 $$
 
 the second of the four general products of the biquaternion algebra $\mathbb{B}$ (*The Four General Products of the Biquaternion $\mathbb{C}$ Space* §*The General Quaternionic Bilinear Product*), whose algebra is *Introduction to the General Quaternionic Algebra of Biquaternions*. The four articles before this one are negative in their outcome: the product has no nontrivial idempotent, its square-zero set is the whole zero-divisor cone, it is associative at no rung of the ladder, and its symmetrisation is no Jordan algebra. This article is the batch's one positive structure theorem, and it is about the **operators** that the product defines rather than about the elements of the algebra.
@@ -133,7 +133,7 @@ The left multiplications of the quaternionic product are $L_{\tilde P}(\tilde X)
 | $\mathbb{B}$ | the biquaternion algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ |
 | $e_0,e_1,e_2,e_3$ | the basis, $e_0$ the identity, $e_k^2 = -e_0$ |
 | $\tilde P = \sum_\mu P_\mu e_\mu$ | an element and its four complex coordinates |
-| ${}^{\natural}$ | the natural conjugation $\tilde P^{\natural} = P_0 - \mathbf P$ |
+| ${}^{\natural}$ | the natural conjugation $\tilde P^{\natural} = P_0 - \vec P$ |
 | $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q$ | the general quaternionic bilinear product, the multiplication of this group |
 | $\tilde P\tilde Q$ | the plain (associative) product of the algebra |
 | $L_{\tilde P}$ | the left multiplication $\tilde X\mapsto\tilde P\star\tilde X = \tilde P^{\natural}\tilde X$ |

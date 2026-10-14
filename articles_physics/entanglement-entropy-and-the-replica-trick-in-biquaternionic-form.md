@@ -78,9 +78,9 @@ In finite dimension the replica trick is not a trick at all: the continuation is
 $$
 Z_n=\sum_i\lambda_i^n
 $$
-for every integer $n\ge1$, and the right-hand side is an entire function of $n$, so its continuation to non-integer $n$ is immediate. The Rényi entropies are $S_n=\frac{1}{1-n}\log\sum_i\lambda_i^n$, and the entropy is the limit above. In the biquaternion framework the eigenvalues of a single-mode reduced state are $\tfrac12(1\pm|\mathbf r_A|)$, where $\mathbf r_A$ is the reduced state's Bloch vector, so
+for every integer $n\ge1$, and the right-hand side is an entire function of $n$, so its continuation to non-integer $n$ is immediate. The Rényi entropies are $S_n=\frac{1}{1-n}\log\sum_i\lambda_i^n$, and the entropy is the limit above. In the biquaternion framework the eigenvalues of a single-mode reduced state are $\tfrac12(1\pm|\vec r_A|)$, where $\vec r_A$ is the reduced state's Bloch vector, so
 $$
-S_A=-\tfrac12\log\frac{1-|\mathbf r_A|^2}{4}-|\mathbf r_A|\,\mathrm{artanh}\big(|\mathbf r_A|\big),
+S_A=-\tfrac12\log\frac{1-|\vec r_A|^2}{4}-|\vec r_A|\,\mathrm{artanh}\big(|\vec r_A|\big),
 $$
 the closed form of the relative-entropy companion article. The replica trick and the closed form are two routes to the same number, and the worked example below checks them against each other.
 
@@ -146,9 +146,9 @@ $$
 $$
 a biquaternion state of the Bloch ball with
 $$
-\mathbf r_A=\cos(2\theta)\,\hat{\mathbf e}_3,
+\vec r_A=\cos(2\theta)\,\hat e_3,
 \qquad
-|\mathbf r_A|=\big|\cos(2\theta)\big|,
+|\vec r_A|=\big|\cos(2\theta)\big|,
 \qquad
 \lambda_\pm=\frac{1\pm\cos2\theta}{2}=\cos^2\theta,\ \sin^2\theta .
 $$
@@ -249,7 +249,7 @@ The framework thus reproduces the replica method exactly in finite dimension, wi
 | $S_A=-\frac{d}{dn}\log Z_n\big|_{n=1}$ | Replica-trick representation of $S_A$ |
 | $\mathsf{C}_n$ | Cyclic shift of the $n$ replicas |
 | $\mathbb F_{AA'}$ | Swap operator; $n=2$ replica shift |
-| $\mathbf r_A$, $r_A=|\mathbf r_A|$ | Bloch vector and radius of a single-mode reduced state |
+| $\vec r_A$, $r_A=|\vec r_A|$ | Bloch vector and radius of a single-mode reduced state |
 | $\cos^2\theta,\sin^2\theta$ | Eigenvalues of $\rho_A$ for $|\psi_\theta\rangle$ |
 | $h(p)$ | Binary entropy $-p\log p-(1-p)\log(1-p)$ |
 

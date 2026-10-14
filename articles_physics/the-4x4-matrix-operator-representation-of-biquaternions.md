@@ -167,9 +167,9 @@ $$
 \end{pmatrix}, \qquad \operatorname{rank} = 1, \qquad \operatorname{Tr} = 0, \qquad \det = 0 .
 $$
 
-The two middle columns vanish and the first and fourth are $\pm 2(e_0 + ie_3)$: the image is the line $\mathbb{C}\tilde\Pi_1$ with $\tilde\Pi_1 = \tfrac12(e_0+ie_3)$, and the matrix squares to zero. The four eigenvalues are all zero although the rank is one, which is the sharp statement that a null operator is not diagonalisable: the collapse is not a change of eigenvalue but a loss of rank.
+The two middle columns vanish and the first and fourth are $\pm 2(e_0 + ie_3)$: the image is the line $\mathbb{C}\tilde\Pi_+$ with $\tilde\Pi_+ = \tfrac12(e_0+ie_3)$, where $ie_3$ is a root of $+1$, $(ie_3)^2=e_0$, and the two idempotents $\tilde\Pi_+$ and $\tilde\Pi_- = \tfrac12(e_0-ie_3)$ are its associated idempotents; and the matrix squares to zero. The four eigenvalues are all zero although the rank is one, which is the sharp statement that a null operator is not diagonalisable: the collapse is not a change of eigenvalue but a loss of rank.
 
-**Example (projection).** For $\tilde{Q} = \tfrac12(e_0 - ie_3) = \tilde\Pi_2$, a null operand with $Q_0 = \tfrac12$,
+**Example (projection).** For $\tilde{Q} = \tfrac12(e_0 - ie_3) = \tilde\Pi_-$, a null operand with $Q_0 = \tfrac12$,
 
 $$
 \operatorname{H}_{\tilde{Q}} = \begin{pmatrix}
@@ -180,7 +180,7 @@ $$
 \end{pmatrix}, \qquad \operatorname{rank} = 1, \qquad \operatorname{Tr} = 1, \qquad \det = 0 .
 $$
 
-The first column is $\tilde\Pi_2$ and the fourth is $i\tilde\Pi_2$; the single nonzero eigenvalue of the operator is $1 = 4\lvert\tfrac12\rvert^{2}$, so the operator is exactly the projection onto its own image line.
+The first column is $\tilde\Pi_-$ and the fourth is $i\tilde\Pi_-$; the single nonzero eigenvalue of the operator is $1 = 4\lvert\tfrac12\rvert^{2}$, so the operator is exactly the projection onto its own image line.
 
 The contrast between the two examples is the whole content of the two regimes at matrix level: both operators have rank one and determinant zero, both send the whole coefficient space onto one line, and they are separated by the single real number $\operatorname{Tr}\operatorname{H}_{\tilde{Q}} = 4\lvert Q_0\rvert^{2}$, which vanishes exactly when the collapse is nilpotent. In the invertible case the determinant is $\lvert N(\tilde{Q})\rvert^{4} \neq 0$ and no collapse occurs at all.
 

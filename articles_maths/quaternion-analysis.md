@@ -19,7 +19,7 @@ $$
 \tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3, \qquad q_\mu \in \mathbb{R}.
 $$
 
-The real number $q_0$ is the **scalar part**, and the triple $(q_1, q_2, q_3)$ is the **vector part**. We write $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with $\mathbf{q} \in \mathbb{R}^3$.
+The real number $q_0$ is the **scalar part**, and the triple $(q_1, q_2, q_3)$ is the **vector part**. We write $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with $\vec q \in \mathbb{R}^3$.
 
 The **modulus** of $\tilde q$ is
 
@@ -541,7 +541,7 @@ The article develops what that notion supports: contour integrals along paths, p
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis |
 | $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | General quaternion |
 | $q_0$ | Scalar part |
-| $\mathbf{q}$ | Vector part |
+| $\vec q$ | Vector part |
 | $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | Quaternion conjugate |
 | $\lvert \tilde q\rvert = \sqrt{\tilde q \tilde{q}^{\natural}}$ | Modulus |
 | $B(q_0, r)$ | Open ball of radius $r$ |

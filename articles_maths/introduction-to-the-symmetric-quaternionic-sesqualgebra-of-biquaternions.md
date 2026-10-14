@@ -6,14 +6,14 @@ The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$
 
 $$
 \tilde P\star\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural}\bigr)
-=\bigl[P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})\bigr]-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P},
+=\bigl[P_0\overline{Q_0}-(\vec P,\overline{\vec Q})\bigr]-P_0\overline{\vec Q}-\overline{Q_0}\vec P,
 $$
 
-the **symmetric quaternionic sesquilinear product**, abbreviated $\mathrm{SQS}$. Its scalar part is the Krein form $K$ of the corpus and its vector part is the mixed term alone: the cross product $\mathbf{P}\times\overline{\mathbf{Q}}$ that separates the two orders cancels in the half-sum, so the two parts of the value, scalar and vector, sit side by side in one element and neither annihilates the other. What distinguishes the block is the shape of this value: of the four symmetric parts the quaternionic bilinear one, $\tilde Q^{\natural}\tilde Q=N(\tilde Q)e_0$, and the plain sesquilinear one, whose diagonal is the positive Hermitian form times $e_0$, have central diagonals, while $\mathrm{SPA}$, whose diagonal is the plain square and is $2e_1$ at $e_0+e_1$, and $\mathrm{SQS}$ keep a vector part; the block is the one whose scalar part is the form $K$ and whose vector part is the mixed term alone.
+the **symmetric quaternionic sesquilinear product**, abbreviated $\mathrm{SQS}$. Its scalar part is the Krein form $K$ of the corpus and its vector part is the mixed term alone: the cross product $\vec P\times\overline{\vec Q}$ that separates the two orders cancels in the half-sum, so the two parts of the value, scalar and vector, sit side by side in one element and neither annihilates the other. What distinguishes the block is the shape of this value: of the four symmetric parts the quaternionic bilinear one, $\tilde Q^{\natural}\tilde Q=N(\tilde Q)e_0$, and the plain sesquilinear one, whose diagonal is the positive Hermitian form times $e_0$, have central diagonals, while $\mathrm{SPA}$, whose diagonal is the plain square and is $2e_1$ at $e_0+e_1$, and $\mathrm{SQS}$ keep a vector part; the block is the one whose scalar part is the form $K$ and whose vector part is the mixed term alone.
 
-The general construction of the sesqualgebra parts is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; the general quaternionic sesquilinear product, its two orders, its one-sided actions and its operators are *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*, *The Two One-Sided Actions and the Absence of a Unit* and *The Left and Right Multiplications of the General Quaternionic Sesquilinear Product*; the form $K$ is *The Krein Gram Matrix and the Restrictions of the Form*; and the two halves of the split, with the antisymmetric part $\mathbf{P}\times\overline{\mathbf{Q}}$, are *The 12 Products of the Biquaternion Complex Space*, whose table places the block among the twelve. This article owns the introduction of the block; the diagonal, the halves, the form, the remarkable subspaces, the operators and the two matrix models are the five articles that follow.
+The general construction of the sesqualgebra parts is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; the general quaternionic sesquilinear product, its two orders, its one-sided actions and its operators are *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*, *The Two One-Sided Actions and the Absence of a Unit* and *The Left and Right Multiplications of the General Quaternionic Sesquilinear Product*; the form $K$ is *The Krein Gram Matrix and the Restrictions of the Form*; and the two halves of the split, with the antisymmetric part $\vec P\times\overline{\vec Q}$, are *The 12 Products of the Biquaternion Complex Space*, whose table places the block among the twelve. This article owns the introduction of the block; the diagonal, the halves, the form, the remarkable subspaces, the operators and the two matrix models are the five articles that follow.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the identity and $e_k^{2}=-e_0$; $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; $i$ is the central scalar imaginary; $\mathrm{Sc}$ is the scalar part and $\mathbf{Q}=\sum_kQ_ke_k$ the vector part; ${}^{\natural}$ is the natural conjugation, negating $e_1,e_2,e_3$ and fixing the complex coefficients, and ${}^{*}={}^{\natural}\circ\bar{\cdot}$ is the Hermitian conjugation, the bar being the coefficientwise complex conjugation; $(\mathbf{P},\mathbf{Q})=\sum_kP_kQ_k$ is the bilinear dot product and $\times$ the bilinear cross product; $\varepsilon=(1,-1,-1,-1)$ is the sign vector. The product of this article is $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural})$.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0$ the identity and $e_k^{2}=-e_0$; $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; $i$ is the central scalar imaginary; $\mathrm{Sc}$ is the scalar part and $\vec Q=\sum_kQ_ke_k$ the vector part; ${}^{\natural}$ is the natural conjugation, negating $e_1,e_2,e_3$ and fixing the complex coefficients, and ${}^{*}={}^{\natural}\circ\bar{\cdot}$ is the Hermitian conjugation, the bar being the coefficientwise complex conjugation; $(\vec P,\vec Q)=\sum_kP_kQ_k$ is the bilinear dot product and $\times$ the bilinear cross product; $\varepsilon=(1,-1,-1,-1)$ is the sign vector. The product of this article is $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural})$.
 
 ## The Product
 
@@ -30,19 +30,19 @@ the half-sum of the two orders of the general quaternionic sesquilinear product,
 **Theorem (the scalar–vector form).** For all biquaternions,
 
 $$
-\tilde P\star\tilde Q=\bigl[P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})\bigr]-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}.
+\tilde P\star\tilde Q=\bigl[P_0\overline{Q_0}-(\vec P,\overline{\vec Q})\bigr]-P_0\overline{\vec Q}-\overline{Q_0}\vec P.
 $$
 
-The scalar part is the Krein form $K(\tilde P,\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ and the vector part is the mixed term $-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}$.
+The scalar part is the Krein form $K(\tilde P,\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ and the vector part is the mixed term $-P_0\overline{\vec Q}-\overline{Q_0}\vec P$.
 
-*Proof.* Write the plain product of two quaternions as $XY=[X_0Y_0-(\mathbf{X},\mathbf{Y})]+X_0\mathbf{Y}+Y_0\mathbf{X}+\mathbf{X}\times\mathbf{Y}$. For the first order put $X=\tilde P^{\natural}$, of scalar part $P_0$ and vector part $-\mathbf{P}$, and $Y=\tilde Q^{*}$, of scalar part $\overline{Q_0}$ and vector part $-\overline{\mathbf{Q}}$: the vector part of the product is $-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}+\mathbf{P}\times\overline{\mathbf{Q}}$. For the second order the same computation with the factors exchanged gives $-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}-\mathbf{P}\times\overline{\mathbf{Q}}$, since $\overline{\mathbf{Q}}\times\mathbf{P}=-\mathbf{P}\times\overline{\mathbf{Q}}$. The two vector parts differ by the sign of the cross product, whose half-sum vanishes and whose half-difference is $\mathbf{P}\times\overline{\mathbf{Q}}$, and their scalar parts are equal, since $\mathrm{Sc}(XY)=\mathrm{Sc}(YX)$; the half-sum is the displayed value.
+*Proof.* Write the plain product of two quaternions as $XY=[X_0Y_0-(\vec X,\vec Y)]+X_0\vec Y+Y_0\vec X+\vec X\times\vec Y$. For the first order put $X=\tilde P^{\natural}$, of scalar part $P_0$ and vector part $-\vec P$, and $Y=\tilde Q^{*}$, of scalar part $\overline{Q_0}$ and vector part $-\overline{\vec Q}$: the vector part of the product is $-P_0\overline{\vec Q}-\overline{Q_0}\vec P+\vec P\times\overline{\vec Q}$. For the second order the same computation with the factors exchanged gives $-P_0\overline{\vec Q}-\overline{Q_0}\vec P-\vec P\times\overline{\vec Q}$, since $\overline{\vec Q}\times\vec P=-\vec P\times\overline{\vec Q}$. The two vector parts differ by the sign of the cross product, whose half-sum vanishes and whose half-difference is $\vec P\times\overline{\vec Q}$, and their scalar parts are equal, since $\mathrm{Sc}(XY)=\mathrm{Sc}(YX)$; the half-sum is the displayed value.
 
 **Corollary (the two projections of the value).** The scalar part of the value is a complex multiple of $e_0$, and the vector part of the value is a complex vector in $\mathbf{e}=\mathrm{span}_{\mathbb{C}}\{e_1,e_2,e_3\}$; concretely
 
 $$
-\mathrm{Sc}(\tilde P\star\tilde Q)=P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}}),
+\mathrm{Sc}(\tilde P\star\tilde Q)=P_0\overline{Q_0}-(\vec P,\overline{\vec Q}),
 \qquad
-\mathrm{Vect}(\tilde P\star\tilde Q)=-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}.
+\mathrm{Vect}(\tilde P\star\tilde Q)=-P_0\overline{\vec Q}-\overline{Q_0}\vec P.
 $$
 
 *Proof.* The scalar part is the scalar part of the value, the first display; the vector part is read in the second.
@@ -81,7 +81,7 @@ where $\mathrm{SPA}(\tilde X,\tilde Y)=\tfrac12(\tilde X\tilde Y+\tilde Y\tilde 
 
 *Proof.* The natural conjugation is an anti-automorphism, so $(\overline{\tilde Q}\tilde P)^{\natural}=\tilde P^{\natural}(\overline{\tilde Q})^{\natural}=\tilde P^{\natural}\tilde Q^{*}$, since $(\overline{\tilde Q})^{\natural}=\tilde Q^{*}$; the second identity is the same with the factors exchanged. Averaging gives $\tilde P\star\tilde Q=\bigl[\tfrac12(\overline{\tilde Q}\tilde P+\tilde P\overline{\tilde Q})\bigr]^{\natural}=\bigl[\mathrm{SPA}(\overline{\tilde Q},\tilde P)\bigr]^{\natural}$.
 
-**Remark (the orders are not conjugate to each other).** The second order $\tilde Q^{*}\tilde P^{\natural}$ is not $\overline{\tilde P^{\natural}\tilde Q^{*}}$; the two differ by the cross product, $(\tilde P^{\natural}\tilde Q^{*})-(\tilde Q^{*}\tilde P^{\natural})=2\,\mathbf{P}\times\overline{\mathbf{Q}}$, so the cross-product cancellation in the half-sum is not a conjugation but a genuine cancellation of two independent orders.
+**Remark (the orders are not conjugate to each other).** The second order $\tilde Q^{*}\tilde P^{\natural}$ is not $\overline{\tilde P^{\natural}\tilde Q^{*}}$; the two differ by the cross product, $(\tilde P^{\natural}\tilde Q^{*})-(\tilde Q^{*}\tilde P^{\natural})=2\,\vec P\times\overline{\vec Q}$, so the cross-product cancellation in the half-sum is not a conjugation but a genuine cancellation of two independent orders.
 
 ## The Absence of a Unit and the Two One-Sided Actions
 
@@ -123,14 +123,14 @@ and it is symmetric, the table being symmetric across its diagonal.
 **Theorem (the diagonal).** For every biquaternion,
 
 $$
-\tilde Q\star\tilde Q=K(\tilde Q,\tilde Q)\,e_0-Q_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{Q},
+\tilde Q\star\tilde Q=K(\tilde Q,\tilde Q)\,e_0-Q_0\overline{\vec Q}-\overline{Q_0}\vec Q,
 \qquad
 K(\tilde Q,\tilde Q)=\sum_\mu\varepsilon_\mu|Q_\mu|^{2}=|Q_0|^{2}-\sum_{k=1}^{3}|Q_k|^{2}.
 $$
 
 The scalar part is real, and the vector part vanishes exactly when the mixed term does.
 
-*Proof.* Put $\tilde P=\tilde Q$ in the scalar–vector form: the scalar part is $K(\tilde Q,\tilde Q)=|Q_0|^{2}-\sum_k|Q_k|^{2}$, a sum of real squares with signs, and the vector part is $-Q_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{Q}=-2\mathrm{Re}(Q_0\overline{\mathbf{Q}})$, a real vector.
+*Proof.* Put $\tilde P=\tilde Q$ in the scalar–vector form: the scalar part is $K(\tilde Q,\tilde Q)=|Q_0|^{2}-\sum_k|Q_k|^{2}$, a sum of real squares with signs, and the vector part is $-Q_0\overline{\vec Q}-\overline{Q_0}\vec Q=-2\mathrm{Re}(Q_0\overline{\vec Q})$, a real vector.
 
 **Theorem (the polarisation).** For all biquaternions,
 
@@ -142,7 +142,7 @@ so the block is the sum of the polarisation of its square and the half-differenc
 
 *Proof.* Expand the square by additivity: $(\tilde P+\tilde Q)\star(\tilde P+\tilde Q)=\tilde P\star\tilde P+\tilde P\star\tilde Q+\tilde Q\star\tilde P+\tilde Q\star\tilde Q$. The first summand of the display is therefore $\tfrac12(\tilde P\star\tilde Q+\tilde Q\star\tilde P)$, and adding the half-difference $\tfrac12(\tilde P\star\tilde Q-\tilde Q\star\tilde P)$ recovers $\tilde P\star\tilde Q$. Since $\tilde Q\star\tilde P=\overline{\tilde P\star\tilde Q}$ by conjugate-commutativity, the two parts are $\tfrac12(\tilde P\star\tilde Q+\overline{\tilde P\star\tilde Q})$ and $\tfrac12(\tilde P\star\tilde Q-\overline{\tilde P\star\tilde Q})$, the conjugate-even and conjugate-odd parts.
 
-**Remark.** The polarisation separates the conjugate-even part of the value, which is the polarisation of the square, from the conjugate-odd half-difference $\tfrac12(\tilde P\star\tilde Q-\tilde Q\star\tilde P)$. The antisymmetric companion of the *general* quaternionic sesquilinear product is a different object: from $\mathrm{GQS}=\mathrm{SQS}+\mathrm{AQS}$ one reads $\tilde P^{\natural}\tilde Q^{*}=\tilde P\star\tilde Q+\mathbf{P}\times\overline{\mathbf{Q}}$, the cross product $\mathbf{P}\times\overline{\mathbf{Q}}$ being the product of Block 8 of the batch, and that reconstruction is the one of *The 12 Products of the Biquaternion Complex Space*.
+**Remark.** The polarisation separates the conjugate-even part of the value, which is the polarisation of the square, from the conjugate-odd half-difference $\tfrac12(\tilde P\star\tilde Q-\tilde Q\star\tilde P)$. The antisymmetric companion of the *general* quaternionic sesquilinear product is a different object: from $\mathrm{GQS}=\mathrm{SQS}+\mathrm{AQS}$ one reads $\tilde P^{\natural}\tilde Q^{*}=\tilde P\star\tilde Q+\vec P\times\overline{\vec Q}$, the cross product $\vec P\times\overline{\vec Q}$ being the product of Block 8 of the batch, and that reconstruction is the one of *The 12 Products of the Biquaternion Complex Space*.
 
 ## The Failure of the Jordan Identity
 
@@ -167,7 +167,7 @@ and they differ by $-2e_0$. The product satisfies no Jordan identity.
 $$
 \mathrm{GQS}=\mathrm{SQS}+\mathrm{AQS},
 \qquad
-\mathrm{AQS}(\tilde P,\tilde Q)=\mathbf{P}\times\overline{\mathbf{Q}},
+\mathrm{AQS}(\tilde P,\tilde Q)=\vec P\times\overline{\vec Q},
 $$
 
 the two halves being sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$ and valued, the first in no subspace of the remarkable subspaces and the second in the vector subspace.
@@ -178,7 +178,7 @@ the two halves being sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$ and valued, 
 
 ## Worked Examples
 
-**An axis square.** $\tilde Q=e_1$: $\tilde Q\star\tilde Q=-e_0$, since $K(e_1,e_1)=-1$ and the vector part $-0\cdot\overline{\mathbf{Q}}-0\cdot\mathbf{Q}$ vanishes; the diagonal is the central element $-e_0$.
+**An axis square.** $\tilde Q=e_1$: $\tilde Q\star\tilde Q=-e_0$, since $K(e_1,e_1)=-1$ and the vector part $-0\cdot\overline{\vec Q}-0\cdot\vec Q$ vanishes; the diagonal is the central element $-e_0$.
 
 **A null square.** $\tilde Q=e_1+ie_2$: $\tilde Q\star\tilde Q=-2e_0$, since $K=-|1|^{2}-|i|^{2}=-2$ and again the vector part vanishes; the diagonal is central even though the element is not in the centre, because its scalar coefficient is zero.
 
@@ -186,13 +186,13 @@ the two halves being sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$ and valued, 
 
 **An isotropic element for the form.** $\tilde P=e_0+e_1$: $K(\tilde P,\tilde P)=0$, so the scalar part of $\tilde P\star\tilde P$ vanishes while the vector part $-2e_1$ does not; the element is isotropic for $K$ and not a zero divisor.
 
-**A basis product.** $\tilde P=e_2$, $\tilde Q=e_1$: $\tilde P\star\tilde Q=\tfrac12\bigl((-e_2)(-e_1)+(-e_1)(-e_2)\bigr)=\tfrac12(e_2e_1+e_1e_2)=0$, the two orders cancelling; the antisymmetric companion is $\mathbf{P}\times\overline{\mathbf{Q}}=-e_3$.
+**A basis product.** $\tilde P=e_2$, $\tilde Q=e_1$: $\tilde P\star\tilde Q=\tfrac12\bigl((-e_2)(-e_1)+(-e_1)(-e_2)\bigr)=\tfrac12(e_2e_1+e_1e_2)=0$, the two orders cancelling; the antisymmetric companion is $\vec P\times\overline{\vec Q}=-e_3$.
 
 **The two actions at a vector.** $\tilde Q=e_1$: $e_0\star e_1=e_1^{*}=-e_1$ and $e_1\star e_0=e_1^{\natural}=-e_1$; the two conjugations agree on a real vector and differ on a general element, for instance on $e_1+ie_0$, where $e_0\star\tilde Q=\tilde Q^{*}=-e_1-ie_0$ and $\tilde Q\star e_0=\tilde Q^{\natural}=-e_1+ie_0$.
 
 ## Summary
 
-The symmetric quaternionic sesquilinear product is $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural})=[P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})]-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}$, with scalar part the Krein form $K$ and vector part the mixed term alone; the cross product of the two orders cancels in the half-sum. The product is sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$, conjugate-commutative, and it has no unit on either side; the unit candidate $e_0$ acts as $\tilde Q^{*}$ on the left and as $\tilde Q^{\natural}$ on the right. On the four real basis directions the table is symmetric, with $e_k\star e_k=-e_0$ and $e_i\star e_j=0$ for $i\neq j$ among the vector directions. The square is $K(\tilde Q,\tilde Q)e_0-Q_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{Q}$, and the polarisation separates the conjugate-even part of the value from the conjugate-odd half-difference $\tfrac12(\tilde P\star\tilde Q-\tilde Q\star\tilde P)$, while the antisymmetric companion of the general product is the cross product $\mathbf{P}\times\overline{\mathbf{Q}}$. The Jordan identity fails on the witness $x=y=e_1$, with the two sides $-e_0$ and $e_0$: a central shift, where the sibling $\mathrm{SPS}$ fails by an outright vanishing. The block is one of the twelve operations of *The 12 Products of the Biquaternion Complex Space*, and it is the only one whose value has the Krein form $K$ as its scalar part and the mixed term alone as its vector part, the cross product having cancelled between the two orders.
+The symmetric quaternionic sesquilinear product is $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural})=[P_0\overline{Q_0}-(\vec P,\overline{\vec Q})]-P_0\overline{\vec Q}-\overline{Q_0}\vec P$, with scalar part the Krein form $K$ and vector part the mixed term alone; the cross product of the two orders cancels in the half-sum. The product is sesquilinear over $(\mathbb{C},\bar{\cdot}\,)$, conjugate-commutative, and it has no unit on either side; the unit candidate $e_0$ acts as $\tilde Q^{*}$ on the left and as $\tilde Q^{\natural}$ on the right. On the four real basis directions the table is symmetric, with $e_k\star e_k=-e_0$ and $e_i\star e_j=0$ for $i\neq j$ among the vector directions. The square is $K(\tilde Q,\tilde Q)e_0-Q_0\overline{\vec Q}-\overline{Q_0}\vec Q$, and the polarisation separates the conjugate-even part of the value from the conjugate-odd half-difference $\tfrac12(\tilde P\star\tilde Q-\tilde Q\star\tilde P)$, while the antisymmetric companion of the general product is the cross product $\vec P\times\overline{\vec Q}$. The Jordan identity fails on the witness $x=y=e_1$, with the two sides $-e_0$ and $e_0$: a central shift, where the sibling $\mathrm{SPS}$ fails by an outright vanishing. The block is one of the twelve operations of *The 12 Products of the Biquaternion Complex Space*, and it is the only one whose value has the Krein form $K$ as its scalar part and the mixed term alone as its vector part, the cross product having cancelled between the two orders.
 
 ## Summary of Notation
 
@@ -200,9 +200,9 @@ The symmetric quaternionic sesquilinear product is $\tilde P\star\tilde Q=\tfrac
 |---|---|
 | $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural})$ | the symmetric quaternionic sesquilinear product, the block $\mathrm{SQS}$ |
 | $K(\tilde P,\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ | the scalar part of the value, the Krein form |
-| $-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}$ | the vector part of the value, the mixed term |
-| $\mathbf{P}\times\overline{\mathbf{Q}}$ | the antisymmetric companion $\mathrm{AQS}$, the cross product |
-| $\tilde Q\star\tilde Q=K(\tilde Q,\tilde Q)e_0-Q_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{Q}$ | the diagonal |
+| $-P_0\overline{\vec Q}-\overline{Q_0}\vec P$ | the vector part of the value, the mixed term |
+| $\vec P\times\overline{\vec Q}$ | the antisymmetric companion $\mathrm{AQS}$, the cross product |
+| $\tilde Q\star\tilde Q=K(\tilde Q,\tilde Q)e_0-Q_0\overline{\vec Q}-\overline{Q_0}\vec Q$ | the diagonal |
 | $e_0\star\tilde Q=\tilde Q^{*}$, $\tilde Q\star e_0=\tilde Q^{\natural}$ | the two one-sided actions of $e_0$; no unit |
 | $(x^{2}\star x)\star x$ versus $x^{2}\star(x\star x)$ at $x=e_1$ | the Jordan witness, the two sides $-e_0$ and $e_0$ |
 

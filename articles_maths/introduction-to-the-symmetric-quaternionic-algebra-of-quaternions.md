@@ -12,13 +12,13 @@ The general construction of the splitting, and the general definitions of the un
 
 **Boundaries.** The six products and the six structures are *The 6 Products of the Quaternion Real Space* and *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; the two general products are *The Two General Products of the Quaternion $\mathbb{R}$ Space*; the antisymmetric quaternionic companion of this block is *Introduction to the Antisymmetric Quaternionic Algebra of Quaternions*, below this article in this category; the parallel of this block among the plain products is *Introduction to the Symmetric Plain Algebra of Quaternions*, above this article in this category. The companion articles of the block read the same operation through its zero divisors, its roots of a central value, its specificities, its radical and isotropy, its form, its multiplication operators and its two matrix models. The quaternion norm and the invertibility criterion are *Norm and Invertibility in the General Plain Algebra*.
 
-**Conventions.** Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$, with basis $e_0=1,e_1,e_2,e_3$, the products $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$, and $e_k^{2}=-e_0$. A quaternion is $\tilde q=q_0e_0+q_1e_1+q_2e_2+q_3e_3$, its **scalar part** is $\mathrm{Sc}\,\tilde q=q_0$ and its **vector part** is $\mathrm{Vect}\,\tilde q=\mathbf q=q_1e_1+q_2e_2+q_3e_3$. The **quaternion conjugation** is $\tilde q^{\natural}=q_0e_0-\mathbf q$. On $\mathbb{R}$ the corpus convention reads: the **bar** is the identity, $\mathbb{R}$ having no nontrivial involution; the **natural sign** is ${}^{\natural}$; and the **star** coincides with the natural sign and adds nothing. The **quaternion form** is
+**Conventions.** Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$, with basis $e_0=1,e_1,e_2,e_3$, the products $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$, and $e_k^{2}=-e_0$. A quaternion is $\tilde q=q_0e_0+q_1e_1+q_2e_2+q_3e_3$, its **scalar part** is $\mathrm{Sc}\,\tilde q=q_0$ and its **vector part** is $\mathrm{Vect}\,\tilde q=\vec q=q_1e_1+q_2e_2+q_3e_3$. The **quaternion conjugation** is $\tilde q^{\natural}=q_0e_0-\vec q$. On $\mathbb{R}$ the corpus convention reads: the **bar** is the identity, $\mathbb{R}$ having no nontrivial involution; the **natural sign** is ${}^{\natural}$; and the **star** coincides with the natural sign and adds nothing. The **quaternion form** is
 
 $$
-N(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q=\mathrm{Sc}\bigl(\tilde p^{\natural}\tilde q\bigr),\qquad \mathbf p\cdot\mathbf q=\sum_{k=1}^{3}p_kq_k,
+N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q=\mathrm{Sc}\bigl(\tilde p^{\natural}\tilde q\bigr),\qquad \vec p\cdot\vec q=\sum_{k=1}^{3}p_kq_k,
 $$
 
-and the **plain form** is $B(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\tilde q)=p_0q_0-\mathbf p\cdot\mathbf q$. The two forms are the subject of *The 2 Forms over the Quaternion $\mathbb{R}$ Space* and are cited here.
+and the **plain form** is $B(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\tilde q)=p_0q_0-\vec p\cdot\vec q$. The two forms are the subject of *The 2 Forms over the Quaternion $\mathbb{R}$ Space* and are cited here.
 
 ## The Operation
 
@@ -42,7 +42,7 @@ $$
 \tilde p\star\tilde q = N(\tilde p,\tilde q)\,e_0 .
 $$
 
-*Proof.* Write the parent product in scalar and vector parts. Since $\tilde p^{\natural}\tilde q=(p_0e_0-\mathbf p)(q_0e_0+\mathbf q)$, its scalar part is $p_0q_0+\mathbf p\cdot\mathbf q$ and its vector part is $p_0\mathbf q-q_0\mathbf p-\mathbf p\times\mathbf q$, as in *Introduction to the General Quaternionic Algebra of Quaternions*. The exchange $\tilde q^{\natural}\tilde p$ has the same scalar part and the vector part $q_0\mathbf p-p_0\mathbf q-\mathbf q\times\mathbf p$. In the half-sum the two mixed terms cancel and the two vector products cancel by $\mathbf p\times\mathbf q=-\mathbf q\times\mathbf p$.
+*Proof.* Write the parent product in scalar and vector parts. Since $\tilde p^{\natural}\tilde q=(p_0e_0-\vec p)(q_0e_0+\vec q)$, its scalar part is $p_0q_0+\vec p\cdot\vec q$ and its vector part is $p_0\vec q-q_0\vec p-\vec p\times\vec q$, as in *Introduction to the General Quaternionic Algebra of Quaternions*. The exchange $\tilde q^{\natural}\tilde p$ has the same scalar part and the vector part $q_0\vec p-p_0\vec q-\vec q\times\vec p$. In the half-sum the two mixed terms cancel and the two vector products cancel by $\vec p\times\vec q=-\vec q\times\vec p$.
 
 The coefficient $N$ is the **quaternion form**, the one of the two forms of the space that *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* attaches to $\mathrm{SQA}$.
 
@@ -195,10 +195,10 @@ The symmetric quaternionic product is the operation $\tilde p\star\tilde q=\tfra
 
 | symbol | meaning |
 |---|---|
-| $\tilde q=q_0e_0+\mathbf q$ | a quaternion, with scalar part $q_0$ and vector part $\mathbf q$ |
-| ${}^{\natural}$ | the quaternion conjugation $\tilde q^{\natural}=q_0e_0-\mathbf q$; the bar is the identity, the star coincides with ${}^{\natural}$ |
-| $N(\tilde p,\tilde q)$ | the quaternion form $p_0q_0+\mathbf p\cdot\mathbf q=\mathrm{Sc}(\tilde p^{\natural}\tilde q)$ |
-| $B(\tilde p,\tilde q)$ | the plain form $p_0q_0-\mathbf p\cdot\mathbf q=\mathrm{Sc}(\tilde p\tilde q)$ |
+| $\tilde q=q_0e_0+\vec q$ | a quaternion, with scalar part $q_0$ and vector part $\vec q$ |
+| ${}^{\natural}$ | the quaternion conjugation $\tilde q^{\natural}=q_0e_0-\vec q$; the bar is the identity, the star coincides with ${}^{\natural}$ |
+| $N(\tilde p,\tilde q)$ | the quaternion form $p_0q_0+\vec p\cdot\vec q=\mathrm{Sc}(\tilde p^{\natural}\tilde q)$ |
+| $B(\tilde p,\tilde q)$ | the plain form $p_0q_0-\vec p\cdot\vec q=\mathrm{Sc}(\tilde p\tilde q)$ |
 | $\star$ | the symmetric quaternionic product $\tfrac12(\tilde p^{\natural}\tilde q+\tilde q^{\natural}\tilde p)=N(\tilde p,\tilde q)e_0$ |
 | $[\tilde p,\tilde q]_{\natural}$ | the quaternionic bracket $\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p$, the companion block $\mathrm{AQA}$ |
 | $\circ$ | the generic product of another structure of the catalogue |

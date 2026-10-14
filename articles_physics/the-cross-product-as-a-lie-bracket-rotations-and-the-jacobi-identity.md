@@ -6,7 +6,7 @@ The antisymmetric half of the general plain bilinear product is the cross produc
 part drops, the result lies in the traceless vector subspace, and the operation is alternating:
 
 $$
-\tilde P\wedge\tilde Q=\tfrac12\bigl(\tilde P\tilde Q-\tilde Q\tilde P\bigr)=\mathbf{P}\times\mathbf{Q},
+\tilde P\wedge\tilde Q=\tfrac12\bigl(\tilde P\tilde Q-\tilde Q\tilde P\bigr)=\vec P\times\vec Q,
 \qquad
 \mathrm{Sc}\bigl(\tilde P\wedge\tilde Q\bigr)=0,
 \qquad
@@ -20,8 +20,8 @@ the operation is a **Lie bracket**.
 
 The **physical interpretation** offered here, and labelled as such, is that the antisymmetric plain product is the
 bracket of **infinitesimal rotations**. A rotation of the frame about the direction $e_k$ is the
-conjugation $\tilde X\mapsto\tilde\Lambda_k(\theta)\tilde X\tilde\Lambda_k(\theta)^{-1}$ by the real unit
-rotor $\tilde\Lambda_k(\theta)=\cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}e_k$, and the derivative of
+conjugation $\tilde X\mapsto\tilde U_k(\theta)\tilde X\tilde U_k(\theta)^{-1}$ by the real unit
+rotor $\tilde U_k(\theta)=\cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}e_k$, and the derivative of
 that family at the identity is the bracket: the generator of the rotation about the direction $e_k$ is
 $\tfrac12 e_k$, and the three generators close on the rotation algebra
 $\mathfrak{su}(2)\cong\mathfrak{so}(3)$. The **closure of the rotation algebra is the Jacobi identity**:
@@ -35,7 +35,7 @@ global structure is separate. The physical angular momentum of a system is not t
 
 The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis
 $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$, $e_k^{2}=-e_0$, central scalar imaginary $i$, and general element
-$\tilde Q=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^{3}Q_ke_k$ and $Q_\mu\in\mathbb{C}$;
+$\tilde Q=Q_0e_0+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_ke_k$ and $Q_\mu\in\mathbb{C}$;
 $\mathrm{Sc}(\tilde Q)=Q_0$ is the scalar part and
 $\mathrm{Vect}(\mathbb{B})=\{\tilde Q:\mathrm{Sc}(\tilde Q)=0\}$ is the traceless vector subspace. The
 conventions are those of *Conventions in the Biquaternion Universe*.
@@ -55,13 +55,13 @@ $$
 parts, with zero scalar part:
 
 $$
-\tilde P\wedge\tilde Q=\mathbf{P}\times\mathbf{Q}
+\tilde P\wedge\tilde Q=\vec P\times\vec Q
 =\bigl(P_2Q_3-P_3Q_2\bigr)e_1+\bigl(P_3Q_1-P_1Q_3\bigr)e_2+\bigl(P_1Q_2-P_2Q_1\bigr)e_3 .
 $$
 
 *Proof.* The scalar parts of $\tilde P\tilde Q$ and $\tilde Q\tilde P$ are equal, so they cancel; the
 vector part of the difference is the difference of the cross products
-$\mathbf{P}\times\mathbf{Q}-\mathbf{Q}\times\mathbf{P}=2\,\mathbf{P}\times\mathbf{Q}$, and halving gives
+$\vec P\times\vec Q-\vec Q\times\vec P=2\,\vec P\times\vec Q$, and halving gives
 the cross product. This is *Introduction to the
 Antisymmetric Plain Algebra of Biquaternions*, and the operation is read here as the bracket of the
 block.
@@ -110,7 +110,7 @@ $$
 $$
 
 *Proof.* By the coordinate form the identity is the Jacobi identity of the cross product,
-$\mathbf{P}\times(\mathbf{Q}\times\mathbf{R})+\mathbf{Q}\times(\mathbf{R}\times\mathbf{P})+\mathbf{R}\times(\mathbf{P}\times\mathbf{Q})=0$,
+$\vec P\times(\vec Q\times\vec R)+\vec Q\times(\vec R\times\vec P)+\vec R\times(\vec P\times\vec Q)=0$,
 which is the vector triple product identity. The scalar
 part is zero on every term and the vector identity holds identically. The identity was recomputed here on
 general elements and on random triples. It is established as a Lie algebra in *The Lie Algebra of the
@@ -140,19 +140,19 @@ $\mathfrak{g}=(\mathbb{B},\wedge)$.
 ## The Bracket of the Infinitesimal Rotations
 
 A rotation of the frame about the direction $e_k$ is the conjugation by the real unit rotor
-$\tilde\Lambda_k(\theta)$ of the corpus. More generally a conjugation by any element of unit norm is an
-algebra automorphism: for a unit element $\tilde\Lambda$ with
-$N(\tilde\Lambda)=\tilde\Lambda\tilde\Lambda^{\natural}=1$,
+$\tilde U_k(\theta)$ of the corpus. More generally a conjugation by any element of unit norm is an
+algebra automorphism: for a unit element $\tilde U$ with
+$N(\tilde U)=\tilde U\tilde U^{\natural}=1$,
 
 $$
-R_{\tilde\Lambda}(\tilde X)=\tilde\Lambda\tilde X\tilde\Lambda^{-1},
+R_{\tilde U}(\tilde X)=\tilde U\tilde X\tilde U^{-1},
 $$
 
 is an automorphism of the algebra, and the rotors with their Lorentzian companions are *Biquaternion
 Rotations and Lorentz Transformations*. The rotor of the rotation about $e_k$ by the angle $\theta$ is
 
 $$
-\tilde\Lambda_k(\theta)=\cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}\,e_k,
+\tilde U_k(\theta)=\cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}\,e_k,
 \qquad
 \text{of unit norm, since } e_k^{2}=-e_0 .
 $$
@@ -165,14 +165,14 @@ elements are the inner automorphisms of the algebra.
 identity is the antisymmetric plain product:
 
 $$
-\left.\frac{d}{d\theta}\right|_{\theta=0}R_{\tilde\Lambda_k(\theta)}(\tilde X)
+\left.\frac{d}{d\theta}\right|_{\theta=0}R_{\tilde U_k(\theta)}(\tilde X)
 =\tfrac12\bigl[e_k,\tilde X\bigr]=e_k\wedge\tilde X .
 $$
 
-*Proof.* The derivative of $\tilde\Lambda\tilde X\tilde\Lambda^{-1}$ is
-$\dot{\tilde\Lambda}\tilde X\tilde\Lambda^{-1}+\tilde\Lambda\tilde X(\tilde\Lambda^{-1})^{\cdot}$; at
+*Proof.* The derivative of $\tilde U\tilde X\tilde U^{-1}$ is
+$\dot{\tilde U}\tilde X\tilde U^{-1}+\tilde U\tilde X(\tilde U^{-1})^{\cdot}$; at
 $\theta=0$ the rotor is $e_0$, the inverse is $e_0$, and
-$\dot{\tilde\Lambda}_k(0)=\tfrac12 e_k$, $\dot{\tilde\Lambda}_k^{-1}(0)=-\tfrac12 e_k$, so the
+$\dot{\tilde U}_k(0)=\tfrac12 e_k$, $\dot{\tilde U}_k^{-1}(0)=-\tfrac12 e_k$, so the
 derivative is $\tfrac12(e_k\tilde X-\tilde X e_k)=\tfrac12[e_k,\tilde X]$, which is $e_k\wedge\tilde X$.
 
 The proposition is the whole content of the interpretation: **the infinitesimal rotation about the axis $e_k$ has
@@ -233,7 +233,7 @@ rotations of the frame itself.
 $\mathbb{R}$, which is the Lorentz algebra of bivectors. **The generators of the Lorentz transformations
 and the components of an antisymmetric field strength are the same space**, and the central imaginary $i$
 acts on it as the duality rotation, giving the self-dual and anti-self-dual halves and the combination
-$\mathbf E+ic\mathbf B$. *The identification of the vector subspace with the field-strength space, and
+$\vec E+ic\vec B$. *The identification of the vector subspace with the field-strength space, and
 the split, are owned by The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material
 Sector.*
 
@@ -263,12 +263,12 @@ which is a separate construction.
 ## The Ledger
 
 **Proved.** The antisymmetric plain product
-$\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf{P}\times\mathbf{Q}$ is
+$\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\vec P\times\vec Q$ is
 $\mathbb{C}$-bilinear, alternating and skew, with zero scalar part and values in $\mathrm{Vect}(\mathbb{B})$,
 and no unit; it satisfies the Jacobi identity, and it is the only Lie product among the twelve; the
 general plain bilinear product is reconstructed as $\mathrm{GPA}=\mathrm{SPA}+\mathrm{APA}$, so
 $\tilde P\wedge\tilde Q=\tfrac12[\tilde P,\tilde Q]$; the derivative of the rotation
-$\tilde X\mapsto\tilde\Lambda_k(\theta)\tilde X\tilde\Lambda_k(\theta)^{-1}$ at the identity is the
+$\tilde X\mapsto\tilde U_k(\theta)\tilde X\tilde U_k(\theta)^{-1}$ at the identity is the
 bracket with $e_k$, $\tfrac12[e_k,\tilde X]=e_k\wedge\tilde X$; and the real
 vector triple with the generators $T_a=\tfrac12 e_a$ satisfies $[T_a,T_b]=\varepsilon_{abc}T_c$, so it
 is $\mathfrak{su}(2)\cong\mathfrak{so}(3)$.
@@ -292,7 +292,7 @@ The bracket reads as the infinitesimal change of frame in its compact half: the 
 ## Summary
 
 The antisymmetric part of the general plain bilinear product is the **cross product of the two vector parts**,
-$\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf{P}\times\mathbf{Q}$, with zero
+$\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\vec P\times\vec Q$, with zero
 scalar part and values in the traceless vector subspace, and it is the halved commutator,
 $\tilde P\wedge\tilde Q=\tfrac12[\tilde P,\tilde Q]$. The operation is $\mathbb{C}$-bilinear, alternating
 and skew, it has no unit, and it satisfies the **Jacobi identity**; it is the only Lie product of the
@@ -300,7 +300,7 @@ twelve operations of *The 12 Products of the Biquaternion Complex Space*, so the
 biquaternion space with the bracket is a complex Lie algebra of complex dimension four. The physical
 interpretation offered and labelled here is that the operation is the bracket of the **infinitesimal rotations**
 of the frame: the derivative of the rotation
-$\tilde X\mapsto\tilde\Lambda_k(\theta)\tilde X\tilde\Lambda_k(\theta)^{-1}$ at the identity is the
+$\tilde X\mapsto\tilde U_k(\theta)\tilde X\tilde U_k(\theta)^{-1}$ at the identity is the
 bracket, the generator of the rotation about $e_a$ is $T_a=\tfrac12e_a$, and the
 three generators satisfy $[T_a,T_b]=\varepsilon_{abc}T_c$, so the real vector triple is
 $\mathfrak{su}(2)\cong\mathfrak{so}(3)$; the Jacobi identity is the **closure of the rotation algebra**.
@@ -312,13 +312,13 @@ angular momentum.
 | Symbol | Meaning |
 |---|---|
 | $\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)$ | Antisymmetric plain product, the operation $\mathrm{APA}$ |
-| $\mathbf{P}\times\mathbf{Q}$ | The cross product of the two vector parts; the value of the bracket |
+| $\vec P\times\vec Q$ | The cross product of the two vector parts; the value of the bracket |
 | $\tilde P\wedge\tilde Q=\tfrac12[\tilde P,\tilde Q]$ | The bracket as the halved commutator |
 | $\tilde P\tilde Q=\tilde P\bullet\tilde Q+\tilde P\wedge\tilde Q$ | The reconstruction $\mathrm{GPA}=\mathrm{SPA}+\mathrm{APA}$ |
 | $\mathrm{Vect}(\mathbb{B})$ | Traceless vector subspace; the derived algebra and the image of the bracket |
 | $\tilde P\wedge(\tilde Q\wedge\tilde R)+\tilde Q\wedge(\tilde R\wedge\tilde P)+\tilde R\wedge(\tilde P\wedge\tilde Q)=0$ | The Jacobi identity |
-| $R_{\tilde\Lambda}(\tilde X)=\tilde\Lambda\tilde X\tilde\Lambda^{-1}$ | Conjugation by a unit element; a rotation of the frame |
-| $\tilde\Lambda_k(\theta)=\cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}e_k$ | Rotor of the rotation about $e_k$ by $\theta$ |
+| $R_{\tilde U}(\tilde X)=\tilde U\tilde X\tilde U^{-1}$ | Conjugation by a unit element; a rotation of the frame |
+| $\tilde U_k(\theta)=\cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}e_k$ | Rotor of the rotation about $e_k$ by $\theta$ |
 | $T_a=\tfrac12e_a$, $[T_a,T_b]=\varepsilon_{abc}T_c$ | Generators of the compact factor; $\mathfrak{su}(2)\cong\mathfrak{so}(3)$ |
 | $(p,q)$ | Signature written as (number of $+$, number of $-$) |
 

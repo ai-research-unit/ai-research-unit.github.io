@@ -8,7 +8,7 @@ The two remarkable subspaces of $\mathbb{H}$, the scalar line and the vector sub
 
 The scalar and vector subspaces of *Introduction to the Remarkable Subspaces of the Quaternions* are
 $$
-\mathbb{R}_{\mathbb{H}}=\{s e_0:s\in\mathbb{R}\} , \qquad \operatorname{Vect}(\mathbb{H})=\{\mathbf q=q_1e_1+q_2e_2+q_3e_3\} ,
+\mathbb{R}_{\mathbb{H}}=\{s e_0:s\in\mathbb{R}\} , \qquad \operatorname{Vect}(\mathbb{H})=\{\vec q=q_1e_1+q_2e_2+q_3e_3\} ,
 $$
 of dimensions $1$ and $3$, with $\mathbb{H}=\mathbb{R}_{\mathbb{H}}\oplus\operatorname{Vect}(\mathbb{H})$ and $\mathbb{R}_{\mathbb{H}}\cap\operatorname{Vect}(\mathbb{H})=\{0\}$. Their sign pattern under the conjugation is the one of *Introduction to the Remarkable Subspaces of the Quaternions*: the scalar line is the fixed space and the vector subspace the anti-fixed space, and the two subspaces are the whole list.
 
@@ -19,7 +19,7 @@ The six products carry five named forms, of which four are distinct, because the
 | form | definition | owner |
 |---|---|---|
 | plain form $B$ | $B(\tilde p,\tilde q)=\operatorname{Sc}(\tilde p\tilde q)$ | *The 2 Forms over the Quaternion $\mathbb{R}$ Space* |
-| quaternion form $N$ | $N(\tilde p,\tilde q)=\operatorname{Sc}(\tilde p^{\natural}\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q$ | *The 2 Forms over the Quaternion $\mathbb{R}$ Space* |
+| quaternion form $N$ | $N(\tilde p,\tilde q)=\operatorname{Sc}(\tilde p^{\natural}\tilde q)=p_0q_0+\vec p\cdot\vec q$ | *The 2 Forms over the Quaternion $\mathbb{R}$ Space* |
 | Jordan trace form $\tau$ | $\tau(\tilde p,\tilde q)=\operatorname{Sc}(\tilde p\bullet\tilde q)$ | *The Trace Form and the Invariance of the Symmetric Plain Algebra* |
 | Killing form of the cross product $K$ | $K(\tilde p,\tilde q)=\operatorname{tr}(\operatorname{ad}_{\tilde p}\operatorname{ad}_{\tilde q})$ | *The Killing Form of the Antisymmetric Plain Algebra* |
 | invariant form of the antisymmetrised quaternionic product $\varphi$ | $\varphi(\tilde p,\tilde q)=p_0q_0$, the unique invariant form of AQA | *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra* |

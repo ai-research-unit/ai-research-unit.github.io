@@ -6,7 +6,7 @@ A root of a central value is defined by an equation in which the product occurs,
 the product (*Definitions for the Study of the 12 Algebraic Structures*, §*Powers, the Square and
 the Roots*). The block of this article is the antisymmetric plain multiplication
 $$
-\tilde\Xi\wedge\tilde Q=\tfrac12\bigl(\tilde\Xi\tilde Q-\tilde Q\tilde\Xi\bigr)=\mathbf\Xi\times\mathbf{Q},
+\tilde\Xi\wedge\tilde Q=\tfrac12\bigl(\tilde\Xi\tilde Q-\tilde Q\tilde\Xi\bigr)=\vec\Xi\times\vec Q,
 $$
 the cross product of the two vector parts, which is alternating and without a unit
 (*Introduction to the Antisymmetric Plain Algebra of Biquaternions*).
@@ -39,7 +39,7 @@ right side, which is *Square Roots of a General Element in the Antisymmetric Pla
 zero-divisor set, which is *Zero Divisors of the Antisymmetric Plain Algebra*; or the idempotent
 families of the parent product, which are *Square Roots of One and the Idempotents of the General Plain Algebra*.
 
-**The results.** For the antisymmetric plain multiplication $\tilde\Xi\wedge\tilde Q=\mathbf\Xi\times\mathbf{Q}$ the square of every element vanishes, $\tilde\Xi\wedge\tilde\Xi=0$, and the root equation of $+1$ therefore reduces to $0=+e_0$: the block has **no root of $+1$**. The idempotent equation $\tilde\Pi\wedge\tilde\Pi=\tilde\Pi$ reduces to $0=\tilde\Pi$, so the block has **one idempotent, the origin**, and **no nontrivial idempotent**, hence no orthogonal family, no primitive idempotent, no projection and no Peirce decomposition; the unit $e_0$ of the ambient algebra is not an idempotent of the block. The comparison with the parent product is the comparison of the origin alone with the parent's family $\tfrac12(e_0+\tilde\Xi)$ over the roots $\tilde\Xi$ of $+1$ of the plain product, a set of real dimension four.
+**The results.** For the antisymmetric plain multiplication $\tilde\Xi\wedge\tilde Q=\vec\Xi\times\vec Q$ the square of every element vanishes, $\tilde\Xi\wedge\tilde\Xi=0$, and the root equation of $+1$ therefore reduces to $0=+e_0$: the block has **no root of $+1$**. The idempotent equation $\tilde\Pi\wedge\tilde\Pi=\tilde\Pi$ reduces to $0=\tilde\Pi$, so the block has **one idempotent, the origin**, and **no nontrivial idempotent**, hence no orthogonal family, no primitive idempotent, no projection and no Peirce decomposition; the unit $e_0$ of the ambient algebra is not an idempotent of the block. The comparison with the parent product is the comparison of the origin alone with the parent's family $\tfrac12(e_0+\tilde\Xi)$ over the roots $\tilde\Xi$ of $+1$ of the plain product, a set of real dimension four.
 
 ## The Notion and Its Product
 
@@ -197,7 +197,7 @@ Space*, §*The Four Sets*.
 
 ## Summary
 
-For the antisymmetric plain multiplication $\tilde\Xi\wedge\tilde Q=\mathbf\Xi\times\mathbf{Q}$ the
+For the antisymmetric plain multiplication $\tilde\Xi\wedge\tilde Q=\vec\Xi\times\vec Q$ the
 square of every element vanishes, $\tilde\Xi\wedge\tilde\Xi=0$, because the block is alternating;
 the root equation of $+1$ therefore reduces to the scalar equation $0=+e_0$ and has no solution.
 The roots of $-1$ fall to the same reduction, $0=-e_0$, and are the short remark closing the
@@ -215,7 +215,7 @@ decompositions, the Peirce decomposition — belongs to the parent and not to th
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde\Xi\wedge\tilde Q=\tfrac12(\tilde\Xi\tilde Q-\tilde Q\tilde\Xi)=\mathbf\Xi\times\mathbf{Q}$ | the antisymmetric plain multiplication, the operation $\mathrm{APA}$ |
+| $\tilde\Xi\wedge\tilde Q=\tfrac12(\tilde\Xi\tilde Q-\tilde Q\tilde\Xi)=\vec\Xi\times\vec Q$ | the antisymmetric plain multiplication, the operation $\mathrm{APA}$ |
 | $\tilde\Xi\wedge\tilde\Xi=0$ | the square of every element vanishes |
 | $\tilde\Xi\wedge\tilde\Xi=+e_0$ | the root equation of $+1$, reduced to $0=+e_0$, without solution |
 | $\lambda\in\{-1,0,+1\}$ | the central values; $-1$ is the remark, $0$ is *Square Roots of Zero and the Nilpotents of the Antisymmetric Plain Algebra* |

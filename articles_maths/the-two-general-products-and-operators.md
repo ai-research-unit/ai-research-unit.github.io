@@ -6,7 +6,7 @@ The two general products of the quaternion space are defined in *The Two General
 
 The article assumes the two products and their rules from *The Two General Products of the Quaternion $\mathbb{R}$ Space*, the identities of *Relations Between the Two General Products*, and the property table of *Comparison Between the Two General Products*, all preceding this one. The two forms with respect to which the adjoints are taken are *The 2 Forms over the Quaternion $\mathbb{R}$ Space*, below this article in this category, and the adjoint calculus of the plain product alone is *Association and the Transpose on the General Plain Algebra* and *One-Sided Operators on the General Plain Algebra of Quaternions*, in the GPA block below. The enveloping algebra of the plain product, with the sandwich family and the operator basis, is *The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure*, in the GPA block below.
 
-**Conventions.** Throughout, $\tilde p=p_0e_0+\mathbf p$ and $\tilde q=q_0e_0+\mathbf q$ name elements and $\tilde q^{\natural}=q_0e_0-\mathbf q$ is the quaternion conjugation. The two products are written $\tilde p\tilde q$ and $\tilde p^{\natural}\tilde q$, and the operators are
+**Conventions.** Throughout, $\tilde p=p_0e_0+\vec p$ and $\tilde q=q_0e_0+\vec q$ name elements and $\tilde q^{\natural}=q_0e_0-\vec q$ is the quaternion conjugation. The two products are written $\tilde p\tilde q$ and $\tilde p^{\natural}\tilde q$, and the operators are
 
 $$
 L_{\tilde p}(\tilde q)=\tilde p\tilde q , \quad R_{\tilde p}(\tilde q)=\tilde q\tilde p , \quad L^{\natural}_{\tilde p}(\tilde q)=\tilde p^{\natural}\tilde q , \quad R^{\natural}_{\tilde p}(\tilde q)=\tilde q^{\natural}\tilde p .

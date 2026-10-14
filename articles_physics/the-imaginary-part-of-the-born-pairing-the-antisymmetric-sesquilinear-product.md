@@ -5,7 +5,7 @@
 Every value of the plain sesquilinear product $\tilde P\tilde Q^{*}$ splits into two halves, and the companion band read the first of them. This article is the first of the two articles of the second band, and it reads the **antisymmetric half**:
 
 $$
-\tilde P\wedge_{*}\tilde Q=\tfrac12\Bigl(\tilde P\tilde Q^{*}-\bigl(\tilde P\tilde Q^{*}\bigr)^{\natural}\Bigr)=\mathrm{Vect}\bigl(\tilde P\tilde Q^{*}\bigr)=-P_0\overline{\mathbf Q}+\overline{Q_0}\mathbf P-\mathbf P\times\overline{\mathbf Q}.
+\tilde P\wedge_{*}\tilde Q=\tfrac12\Bigl(\tilde P\tilde Q^{*}-\bigl(\tilde P\tilde Q^{*}\bigr)^{\natural}\Bigr)=\mathrm{Vect}\bigl(\tilde P\tilde Q^{*}\bigr)=-P_0\overline{\vec Q}+\overline{Q_0}\vec P-\vec P\times\overline{\vec Q}.
 $$
 
 The value is a **pure vector** and the scalar part of the parent value is exactly what the subtraction removes, so the two bands of the block carry the two halves of one number: the companion band carries the central half, which the corpus reads as a **probability**, and this band carries the vector half, which the corpus reads as a **phase** or an **interference term**. The split between the two bands of the block is exactly this split.
@@ -14,7 +14,7 @@ Three facts distinguish the operation from a bilinear antisymmetrisation, and th
 
 **Boundaries.** The operation is *Introduction to the Antisymmetric Plain Sesqualgebra of Biquaternions*; the algebraic norm, its vanishing criterion and the quadric it defines, and the Jacobi failure, are *The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra*; the general construction of the two parts is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*. The physical phases are read elsewhere and are owned elsewhere: the phase of a path is *The Path Integral in Biquaternionic Form*, the interference experiment is *The Double-Slit Experiment in Biquaternionic Form*, the geometric phase of a spin is *Geometric Phases of Non-Relativistic Spin in Biquaternionic Form* and *The Berry Phase and Geometric Phases in Biquaternionic Form*, and the phase of a polarisation is *Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form*. The positivity and the states are *Mass, Rank and the Positivity of the Dagger*, *The Bloch Ball as the Trace-One Slice of the Future Light Cone* and *The Ontology of the Quantum State under the Biquaternion Framework*. The other half of the same value is *The Hermitian Form as a Product: Positivity and the Real Part of the Born Pairing*, and the centrality of probability there is *Why Probability Values Are Central: the Symmetric Sesquilinear Product and Its Cone*.
 
-**Conventions.** As in the companion articles and in *Conventions in the Biquaternion Universe*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_k^{2}=-e_0$, $e_1e_2=e_3$; $\tilde Q=Q_0e_0+\mathbf Q$, $Q_\mu\in\mathbb{C}$; ${}^{\natural}$ the natural conjugation, $\overline{\cdot}$ the coefficientwise one, ${}^{*}=\overline{\cdot}\circ{}^{\natural}$; $\mathrm{Sc}$ the scalar part, $\mathrm{Vect}$ the vector part, $\mathrm{Tr}=2\,\mathrm{Sc}$. The bilinear dot and cross products of vector parts are written $(\mathbf P,\mathbf Q)$ and $\mathbf P\times\mathbf Q$. The Hermitian form is $H(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})=\sum_\mu P_\mu\overline{Q_\mu}$, the operation of the companion band is $\tilde P\circledast\tilde Q=H(\tilde P,\tilde Q)e_0$, and the operation of this band is $\tilde P\wedge_{*}\tilde Q$. A state is $\tilde\rho=\tfrac12(e_0+i\mathbf r)$ with $\mathbf r\in\mathbb{R}^{3}$ and $\lvert\mathbf r\rvert\le1$, and a projector is $\tilde\Pi_{1,2}(\hat{\boldsymbol{\mu}})=\tfrac12(e_0\pm i\hat{\boldsymbol{\mu}})$ with $\lvert\hat{\boldsymbol{\mu}}\rvert=1$. The sectors are $\mathbb{M}_{\pm}$ and the centre is $\mathbb{C}_{\mathbb{B}}=\{\lambda e_0\}$.
+**Conventions.** As in the companion articles and in *Conventions in the Biquaternion Universe*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_k^{2}=-e_0$, $e_1e_2=e_3$; $\tilde Q=Q_0e_0+\vec Q$, $Q_\mu\in\mathbb{C}$; ${}^{\natural}$ the natural conjugation, $\overline{\cdot}$ the coefficientwise one, ${}^{*}=\overline{\cdot}\circ{}^{\natural}$; $\mathrm{Sc}$ the scalar part, $\mathrm{Vect}$ the vector part, $\mathrm{Tr}=2\,\mathrm{Sc}$. The bilinear dot and cross products of vector parts are written $(\vec P,\vec Q)$ and $\vec P\times\vec Q$. The Hermitian form is $H(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})=\sum_\mu P_\mu\overline{Q_\mu}$, the operation of the companion band is $\tilde P\circledast\tilde Q=H(\tilde P,\tilde Q)e_0$, and the operation of this band is $\tilde P\wedge_{*}\tilde Q$. A state is $\tilde\rho=\tfrac12(e_0+i\vec r)$ with $\vec r\in\mathbb{R}^{3}$ and $\lvert\vec r\rvert\le1$, and a projector is $\tilde\Pi_{1,2}(\hat\mu)=\tfrac12(e_0\pm i\hat\mu)$ with $\lvert\hat\mu\rvert=1$. The sectors are $\mathbb{M}_{\pm}$ and the centre is $\mathbb{C}_{\mathbb{B}}=\{\lambda e_0\}$.
 
 ## The Operation and Its Value
 
@@ -35,7 +35,7 @@ $$
 a central part and a vector part. Substituting the coordinate rule of the parent product gives the value in coordinates,
 
 $$
-\tilde P\wedge_{*}\tilde Q=-P_0\overline{\mathbf Q}+\overline{Q_0}\mathbf P-\mathbf P\times\overline{\mathbf Q},
+\tilde P\wedge_{*}\tilde Q=-P_0\overline{\vec Q}+\overline{Q_0}\vec P-\vec P\times\overline{\vec Q},
 $$
 
 each term of which is a vector part, so the value is **pure vector** and the operation has image in the vector subspace $\mathrm{Vect}(\mathbb{B})$ (*Introduction to the Antisymmetric Plain Sesqualgebra of Biquaternions*).
@@ -58,16 +58,16 @@ the bar acting coefficientwise on the vector value. A bilinear antisymmetrisatio
 
 ### The Vector Part of the Square
 
-Putting $\tilde P=\tilde Q$ in the definition, the parent value $X=\tilde Q\tilde Q^{*}$ is Hermitian, $X=x_0e_0+i\mathbf x$ with $x_0$ real and $\mathbf x$ a real vector, so $X^{\natural}=x_0e_0-i\mathbf x$ and the half-difference keeps the vector part alone; hence
+Putting $\tilde P=\tilde Q$ in the definition, the parent value $X=\tilde Q\tilde Q^{*}$ is Hermitian, $X=x_0e_0+i\vec x$ with $x_0$ real and $\vec x$ a real vector, so $X^{\natural}=x_0e_0-i\vec x$ and the half-difference keeps the vector part alone; hence
 
 $$
 \tilde Q\wedge_{*}\tilde Q=\mathrm{Vect}\bigl(\tilde Q\tilde Q^{*}\bigr),
 $$
 
-the **vector part of the sesquilinear square**. Writing the element in real coordinates, $Q_0=a+ib$ and $\mathbf Q=\mathbf u+i\mathbf v$ with $a,b\in\mathbb{R}$ and $\mathbf u,\mathbf v$ real vectors,
+the **vector part of the sesquilinear square**. Writing the element in real coordinates, $Q_0=a+ib$ and $\vec Q=\vec u+i\vec v$ with $a,b\in\mathbb{R}$ and $\vec u,\vec v$ real vectors,
 
 $$
-\tilde Q\wedge_{*}\tilde Q=2i\bigl(a\,\mathbf v-b\,\mathbf u+\mathbf u\times\mathbf v\bigr),
+\tilde Q\wedge_{*}\tilde Q=2i\bigl(a\,\vec v-b\,\vec u+\vec u\times\vec v\bigr),
 $$
 
 a **purely imaginary vector**, quadratic and homogeneous in the real coordinates (*The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra*). The algebraic norm is therefore not an identity but a genuine quadratic map, and its vanishing is a condition and not a law.
@@ -76,7 +76,7 @@ a **purely imaginary vector**, quadratic and homogeneous in the real coordinates
 
 ### The Witness and the Vanishing Set
 
-The witness named by the menu is $\tilde Q=e_1+ie_2$, for which $\mathbf u=e_1$, $\mathbf v=e_2$, $a=b=0$ and the cross term alone survives:
+The witness named by the menu is $\tilde Q=e_1+ie_2$, for which $\vec u=e_1$, $\vec v=e_2$, $a=b=0$ and the cross term alone survives:
 
 $$
 (e_1+ie_2)\wedge_{*}(e_1+ie_2)=2i\,e_1\times e_2=2ie_3\neq0 .
@@ -108,17 +108,17 @@ is the part of the same value that the exchange reverses and conjugates, and the
 
 ### Where the Phase Lives
 
-The value of the operation is a **pure vector**, $\mathrm{Vect}(\tilde P\tilde Q^{*})\in\mathrm{Vect}(\mathbb{B})$, with no scalar part; its complex coordinates are general, and the **algebraic norm** is where the value becomes purely imaginary — exactly the central imaginary $i$ times a real vector. Those purely imaginary vectors are exactly the vector part $i\mathbb{R}^{3}$ of the informational sector $\mathbb{M}_{+}=\mathbb{R}e_0\oplus i\mathbb{R}^{3}$, and they place the two halves of a algebraic norm amplitude in the two parts of the coordinate at once: the **probability** is the central, $e_0$ direction, and the **coherence** is the imaginary vector $i\mathbb{R}^{3}$. On the state side the statement is sharp. For $\tilde\rho=\tfrac12(e_0+i\mathbf r)$, $\tilde\rho^{*}=\tilde\rho$, so the operation is the vector part of the square, and
+The value of the operation is a **pure vector**, $\mathrm{Vect}(\tilde P\tilde Q^{*})\in\mathrm{Vect}(\mathbb{B})$, with no scalar part; its complex coordinates are general, and the **algebraic norm** is where the value becomes purely imaginary — exactly the central imaginary $i$ times a real vector. Those purely imaginary vectors are exactly the vector part $i\mathbb{R}^{3}$ of the informational sector $\mathbb{M}_{+}=\mathbb{R}e_0\oplus i\mathbb{R}^{3}$, and they place the two halves of a algebraic norm amplitude in the two parts of the coordinate at once: the **probability** is the central, $e_0$ direction, and the **coherence** is the imaginary vector $i\mathbb{R}^{3}$. On the state side the statement is sharp. For $\tilde\rho=\tfrac12(e_0+i\vec r)$, $\tilde\rho^{*}=\tilde\rho$, so the operation is the vector part of the square, and
 
 $$
-\tilde\rho\wedge_{*}\tilde\rho=\mathrm{Vect}\bigl(\tilde\rho^{2}\bigr)=\tfrac12\,i\,\mathbf r .
+\tilde\rho\wedge_{*}\tilde\rho=\mathrm{Vect}\bigl(\tilde\rho^{2}\bigr)=\tfrac12\,i\,\vec r .
 $$
 
 The antisymmetric square of a state is its **Bloch vector**, that is the direction and the magnitude of the state's coherence, while the symmetric square of the same state is its **purity**, $\tilde\rho\circledast\tilde\rho=\tfrac12\mathrm{Tr}(\tilde\rho^{2})e_0$ (the companion band). One value, one state: a central number and an imaginary vector, purity and coherence direction.
 
-**The purely imaginary description belongs to the algebraic norm alone.** The imaginary character of the value is a statement about the **self-pairing**. On $\tilde P=\tilde Q$ the value is the real-coordinate vector $2i(a\mathbf v-b\mathbf u+\mathbf u\times\mathbf v)$, a real vector times the central $i$, and it is purely imaginary. For two **different** elements the value is a general vector part and is **not** purely imaginary: its coordinates are complex and are generically nonzero in real part as well, so the purely imaginary description characterises the algebraic norm and not the valued pairing. A reader who writes "the value of the antisymmetric product is imaginary" without qualification describes the algebraic norm and not the operation.
+**The purely imaginary description belongs to the algebraic norm alone.** The imaginary character of the value is a statement about the **self-pairing**. On $\tilde P=\tilde Q$ the value is the real-coordinate vector $2i(a\vec v-b\vec u+\vec u\times\vec v)$, a real vector times the central $i$, and it is purely imaginary. For two **different** elements the value is a general vector part and is **not** purely imaginary: its coordinates are complex and are generically nonzero in real part as well, so the purely imaginary description characterises the algebraic norm and not the valued pairing. A reader who writes "the value of the antisymmetric product is imaginary" without qualification describes the algebraic norm and not the operation.
 
-**Remark (verified).** $\tilde\rho\wedge_{*}\tilde\rho=\tfrac12 i\mathbf r$ on $100$ random states, to $<10^{-13}$.
+**Remark (verified).** $\tilde\rho\wedge_{*}\tilde\rho=\tfrac12 i\vec r$ on $100$ random states, to $<10^{-13}$.
 
 **Remark (the phase is the central imaginary, and the corpus says so).** The corpus identifies the symbol $i$ of the phase $e^{iS/\hbar}$ with the **central scalar imaginary**, places the exponent in the material sector, and records that only *relative* phases of paths are observable (*The Path Integral in Biquaternionic Form*). The vector part of the pairing is written with that same central $i$, and this is the algebraic contact between the two statements: the phase-like half of a pairing is the half that is imaginary under the natural conjugation. The contact is a consistency and not a derivation, and it is stated as such.
 
@@ -161,7 +161,7 @@ The two operations share the vector-valued image and the vanishing trace form, a
 
 **What the operation does.**
 - Carries the vector half of the plain sesquilinear amplitude: $\tilde P\tilde Q^{*}=\tilde P\circledast\tilde Q+\tilde P\wedge_{*}\tilde Q$.
-- Exposes the coherence of a state on its algebraic norm: $\tilde\rho\wedge_{*}\tilde\rho=\tfrac12 i\mathbf r$, the Bloch vector times $i/2$.
+- Exposes the coherence of a state on its algebraic norm: $\tilde\rho\wedge_{*}\tilde\rho=\tfrac12 i\vec r$, the Bloch vector times $i/2$.
 - Reads the **axis** of the relative phase of two amplitudes, the central half supplying the alignment; purely imaginary at the two equal arguments only.
 - Has values in the vector subspace $\mathrm{Vect}(\mathbb{B})$, with the image of the algebraic norm, the purely imaginary vectors $i\mathrm{Vect}_{\mathbb{R}}(\mathbb{B})$, the vector part of the informational sector $\mathbb{M}_{+}$.
 
@@ -179,20 +179,20 @@ The imaginary part reads as interference and, on the clock, as the carrier of th
 
 ## Summary
 
-The antisymmetric plain sesqualgebra carries the **vector half** of the plain sesquilinear amplitude, $\tilde P\wedge_{*}\tilde Q=\mathrm{Vect}(\tilde P\tilde Q^{*})=-P_0\overline{\mathbf Q}+\overline{Q_0}\mathbf P-\mathbf P\times\overline{\mathbf Q}$, so that $\tilde P\tilde Q^{*}=\tilde P\circledast\tilde Q+\tilde P\wedge_{*}\tilde Q$ splits one value into its **probability** half and its **phase** half. The value is a **pure vector** (no scalar part), the trace form vanishes, and the law is the **conjugate-alternation** $\tilde P\wedge_{*}\tilde Q=-\overline{\tilde Q\wedge_{*}\tilde P}$. Its **algebraic norm is not zero**: $\tilde Q\wedge_{*}\tilde Q=\mathrm{Vect}(\tilde Q\tilde Q^{*})=2i(a\mathbf v-b\mathbf u+\mathbf u\times\mathbf v)$ is a quadratic condition, and the witness $e_1+ie_2$ gives $2ie_3$, the exact opposite of the two algebra rows, where the antisymmetric part is alternating. The value is **purely imaginary at the two equal arguments only** — the self-pairing is a real vector times the central $i$, while the pairing of two different elements is a general vector part and need not be purely imaginary — so "the antisymmetric value is imaginary" is a statement about the algebraic norm and not about the operation. On the state side the algebraic norm is the **coherence direction**, $\tilde\rho\wedge_{*}\tilde\rho=\tfrac12 i\mathbf r$, while the algebraic norm of the companion band is the purity. The reading is that the vector half of a pairing is the phase, the interference term and the **axis** of the relative phase, in the algebraic sense that it is the half reversed and conjugated by the exchange, the central half supplying the alignment; the bound is that a phase is **read from** a value and is **not measured by** the operation, that the axis is a direction and not a generator since the Jacobi identity fails, and that the physical phases remain the property of the phase articles of the corpus.
+The antisymmetric plain sesqualgebra carries the **vector half** of the plain sesquilinear amplitude, $\tilde P\wedge_{*}\tilde Q=\mathrm{Vect}(\tilde P\tilde Q^{*})=-P_0\overline{\vec Q}+\overline{Q_0}\vec P-\vec P\times\overline{\vec Q}$, so that $\tilde P\tilde Q^{*}=\tilde P\circledast\tilde Q+\tilde P\wedge_{*}\tilde Q$ splits one value into its **probability** half and its **phase** half. The value is a **pure vector** (no scalar part), the trace form vanishes, and the law is the **conjugate-alternation** $\tilde P\wedge_{*}\tilde Q=-\overline{\tilde Q\wedge_{*}\tilde P}$. Its **algebraic norm is not zero**: $\tilde Q\wedge_{*}\tilde Q=\mathrm{Vect}(\tilde Q\tilde Q^{*})=2i(a\vec v-b\vec u+\vec u\times\vec v)$ is a quadratic condition, and the witness $e_1+ie_2$ gives $2ie_3$, the exact opposite of the two algebra rows, where the antisymmetric part is alternating. The value is **purely imaginary at the two equal arguments only** — the self-pairing is a real vector times the central $i$, while the pairing of two different elements is a general vector part and need not be purely imaginary — so "the antisymmetric value is imaginary" is a statement about the algebraic norm and not about the operation. On the state side the algebraic norm is the **coherence direction**, $\tilde\rho\wedge_{*}\tilde\rho=\tfrac12 i\vec r$, while the algebraic norm of the companion band is the purity. The reading is that the vector half of a pairing is the phase, the interference term and the **axis** of the relative phase, in the algebraic sense that it is the half reversed and conjugated by the exchange, the central half supplying the alignment; the bound is that a phase is **read from** a value and is **not measured by** the operation, that the axis is a direction and not a generator since the Jacobi identity fails, and that the physical phases remain the property of the phase articles of the corpus.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\tilde P\wedge_{*}\tilde Q=\mathrm{Vect}(\tilde P\tilde Q^{*})$ | the antisymmetric part (APS); the operation of the block |
-| $\tilde P\wedge_{*}\tilde Q=-P_0\overline{\mathbf Q}+\overline{Q_0}\mathbf P-\mathbf P\times\overline{\mathbf Q}$ | the coordinate rule |
+| $\tilde P\wedge_{*}\tilde Q=-P_0\overline{\vec Q}+\overline{Q_0}\vec P-\vec P\times\overline{\vec Q}$ | the coordinate rule |
 | $\tilde P\tilde Q^{*}=\tilde P\circledast\tilde Q+\tilde P\wedge_{*}\tilde Q$ | one amplitude, a central half and a vector half |
 | $\tilde P\wedge_{*}\tilde Q=-\overline{\tilde Q\wedge_{*}\tilde P}$ | conjugate-alternation |
-| $\tilde Q\wedge_{*}\tilde Q=\mathrm{Vect}(\tilde Q\tilde Q^{*})=2i(a\mathbf v-b\mathbf u+\mathbf u\times\mathbf v)$ | the algebraic norm; not zero in general |
+| $\tilde Q\wedge_{*}\tilde Q=\mathrm{Vect}(\tilde Q\tilde Q^{*})=2i(a\vec v-b\vec u+\vec u\times\vec v)$ | the algebraic norm; not zero in general |
 | $(e_1+ie_2)\wedge_{*}(e_1+ie_2)=2ie_3$ | the witness of the non-vanishing algebraic norm |
 | $\mathrm{Sc}(\tilde P\wedge_{*}\tilde Q)=0$ | the trace form vanishes |
-| $\tilde\rho\wedge_{*}\tilde\rho=\tfrac12 i\mathbf r$ | the algebraic norm of a state is its Bloch vector times $i/2$ |
+| $\tilde\rho\wedge_{*}\tilde\rho=\tfrac12 i\vec r$ | the algebraic norm of a state is its Bloch vector times $i/2$ |
 | purely imaginary at the two equal arguments only | the self-pairing is $i$ times a real vector; the pairing of two distinct elements also carries a real part |
 | $i\,\mathrm{Vect}_{\mathbb{R}}(\mathbb{B})$ | the purely imaginary vectors; the image of the algebraic norm |
 | $\tilde P\circledast\tilde Q=H(\tilde P,\tilde Q)e_0$ | the symmetric half, read in the companion band |

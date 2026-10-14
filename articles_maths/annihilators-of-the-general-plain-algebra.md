@@ -17,7 +17,7 @@ The block of this article is the **general plain multiplication**, the plain pro
 biquaternion algebra,
 $$
 \tilde P\star\tilde Q=\tilde P\tilde Q
-=\bigl[P_0Q_0-(\mathbf P,\mathbf Q)\bigr]+P_0\mathbf Q+Q_0\mathbf P+\mathbf P\times\mathbf Q,
+=\bigl[P_0Q_0-(\vec P,\vec Q)\bigr]+P_0\vec Q+Q_0\vec P+\vec P\times\vec Q,
 $$
 the operation $\mathrm{GPA}$ of the twelve (*Introduction to the General Plain Algebra of
 Biquaternions*). It is associative, and the algebra is the complexification of the quaternion
@@ -63,7 +63,7 @@ General Quaternionic Sesqualgebra* each have an involution that modifies the rea
 **Both multiplication operators have trace $4P_0$ and determinant $C(\tilde P)^{2}$; they are invertible off the cone, and on the cone each is of rank two with a kernel of complex dimension two.**
 
 **Proposition (the operators and their determinants).** In the basis $e_0,e_1,e_2,e_3$ the
-operators $L_{\tilde P}$ and $R_{\tilde P}$ of an element $\tilde P=P_0e_0+\mathbf P$ have trace
+operators $L_{\tilde P}$ and $R_{\tilde P}$ of an element $\tilde P=P_0e_0+\vec P$ have trace
 $4P_0$ each and determinant
 $$
 \det L_{\tilde P}=\det R_{\tilde P}=C(\tilde P)^{2},\qquad
@@ -153,11 +153,11 @@ algebra is the one for which the two sides are genuinely two.
 $L_{\lambda e_0}\tilde X=\lambda\tilde X$, the scalar operator, so it is a unit of the plain
 product and its annihilator is $\{0\}$.
 
-**The vector subspace.** A nonzero pure element $\tilde P=\mathbf P$ has central square
-$(\mathbf P,\mathbf P)$, so it is a zero divisor of the cone exactly when its vector part is
+**The vector subspace.** A nonzero pure element $\tilde P=\vec P$ has central square
+$(\vec P,\vec P)$, so it is a zero divisor of the cone exactly when its vector part is
 isotropic; then the two annihilators are the complex planes of the elements that the pure
-quaternion $\mathbf P$ kills, read off the multiplication table, and for the isotropic
-$\mathbf P=e_1+ie_2$ they are the planes of the example above.
+quaternion $\vec P$ kills, read off the multiplication table, and for the isotropic
+$\vec P=e_1+ie_2$ they are the planes of the example above.
 
 **The Hermitian and anti-Hermitian subspaces.** On a remarkable subspace the annihilator of an
 element of the subspace is the intersection of the ambient plane with the subspace, so the

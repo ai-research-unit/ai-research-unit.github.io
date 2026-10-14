@@ -8,7 +8,7 @@ The central image **flattens the table**, and the point of the article is to say
 
 **Boundaries.** The subspaces and their names are *Introduction to the Remarkable Subspaces* and *Comparison of the Remarkable Subspaces*; the pattern is the sibling *Remarkable Subspaces under the General Plain Sesqualgebra of Biquaternions*; the form $H$ and its restriction are *The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra* and *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, and the closure of the remarkable subspaces under the general plain sesquilinear product is the sibling article's. This article owns only the reading of the remarkable subspaces under the product of the block. Nothing topological and nothing metric appears.
 
-**Conventions.** As in the companion articles: $\mathbb{B}$ with basis $e_0,e_1,e_2,e_3$, natural conjugation ${}^{\natural}$, coefficientwise conjugation $\overline{\cdot}$, Hermitian conjugation ${}^{*} = \overline{\cdot}\circ{}^{\natural}$; the block is $\tilde P\star\tilde Q = H(\tilde P,\tilde Q)e_0$ with $H(\tilde P,\tilde Q) = P_0\overline{Q_0} + (\mathbf P,\overline{\mathbf Q})$. The remarkable subspaces are the eigenspaces of the three involutions of the algebra: the centre and the vector subspace for the natural conjugation, the quaternion and the anti-quaternion subspace for the coefficientwise conjugation, the Hermitian and the anti-Hermitian subspace for the Hermitian conjugation.
+**Conventions.** As in the companion articles: $\mathbb{B}$ with basis $e_0,e_1,e_2,e_3$, natural conjugation ${}^{\natural}$, coefficientwise conjugation $\overline{\cdot}$, Hermitian conjugation ${}^{*} = \overline{\cdot}\circ{}^{\natural}$; the block is $\tilde P\star\tilde Q = H(\tilde P,\tilde Q)e_0$ with $H(\tilde P,\tilde Q) = P_0\overline{Q_0} + (\vec P,\overline{\vec Q})$. The remarkable subspaces are the eigenspaces of the three involutions of the algebra: the centre and the vector subspace for the natural conjugation, the quaternion and the anti-quaternion subspace for the coefficientwise conjugation, the Hermitian and the anti-Hermitian subspace for the Hermitian conjugation.
 
 ## The Closure of the remarkable subspaces, in One Statement
 
@@ -30,20 +30,20 @@ the multiplication of the field by the conjugate of the second factor. The centr
 
 ## The Vector Subspace
 
-The vector subspace is $\mathrm{Vect}(\mathbb{B}) = \{\mathbf P : P_0 = 0\}$, of real dimension six. On it the form is $H(\mathbf P,\mathbf Q) = (\mathbf P,\overline{\mathbf Q})$, so the product of two vectors is the central element
+The vector subspace is $\mathrm{Vect}(\mathbb{B}) = \{\vec P : P_0 = 0\}$, of real dimension six. On it the form is $H(\vec P,\vec Q) = (\vec P,\overline{\vec Q})$, so the product of two vectors is the central element
 
 $$
-\mathbf P\star\mathbf Q = (\mathbf P,\overline{\mathbf Q})\,e_0 ,
+\vec P\star\vec Q = (\vec P,\overline{\vec Q})\,e_0 ,
 $$
 
-and it is **not closed**: the smallest witness is $e_1\star e_1 = H(e_1,e_1)e_0 = e_0$, which leaves the vector subspace because it has a scalar part. The element $e_0$ is not in the subspace, so the only idempotent the subspace contains is $0$; the elements of square zero are none, since $H(\mathbf P,\mathbf P) = \sum_{k}\lvert P_k\rvert^{2}$ vanishes only at the origin; and the restriction of $H$ is positive definite of real rank $6$, with isotropic cone $\{0\}$.
+and it is **not closed**: the smallest witness is $e_1\star e_1 = H(e_1,e_1)e_0 = e_0$, which leaves the vector subspace because it has a scalar part. The element $e_0$ is not in the subspace, so the only idempotent the subspace contains is $0$; the elements of square zero are none, since $H(\vec P,\vec P) = \sum_{k}\lvert P_k\rvert^{2}$ vanishes only at the origin; and the restriction of $H$ is positive definite of real rank $6$, with isotropic cone $\{0\}$.
 
 ## The Quaternion Subspace
 
-The quaternion subspace is $\mathbb{H}_{\mathbb{B}} = \{\sum_\mu P_\mu e_\mu : P_\mu\in\mathbb{R}\}$, the real span of the basis, of real dimension four. On it the form is real and is the quaternion form, $H(\tilde P,\tilde Q) = P_0Q_0 + (\mathbf P,\mathbf Q) = N(\tilde P,\tilde Q)$, so the product is
+The quaternion subspace is $\mathbb{H}_{\mathbb{B}} = \{\sum_\mu P_\mu e_\mu : P_\mu\in\mathbb{R}\}$, the real span of the basis, of real dimension four. On it the form is real and is the quaternion form, $H(\tilde P,\tilde Q) = P_0Q_0 + (\vec P,\vec Q) = N(\tilde P,\tilde Q)$, so the product is
 
 $$
-\tilde P\star\tilde Q = \bigl(P_0Q_0 + (\mathbf P,\mathbf Q)\bigr)e_0 ,
+\tilde P\star\tilde Q = \bigl(P_0Q_0 + (\vec P,\vec Q)\bigr)e_0 ,
 $$
 
 with a **real** central coefficient. The subspace is **closed**, because the value is a real multiple of $e_0$ and the real multiples of $e_0$ lie in $\mathbb{H}_{\mathbb{B}}$; it is the smallest closed subspace containing the basis $e_0,e_1,e_2,e_3$. Its idempotents are $0$ and $e_0$, the same two as the block, and its elements of square zero are none. The restriction of $H$ is the identity form on the basis, of real rank $4$ and signature $(4,0)$; on this subspace the block coincides with the symmetric quaternionic block, and the section is the bridge between the two rows in coordinates.
@@ -76,7 +76,7 @@ with a real central coefficient. The subspace is **closed**, because the real mu
 
 ## The Anti-Hermitian Subspace
 
-The anti-Hermitian subspace is the anti-fixed space of the Hermitian conjugation, $\mathbb{M}_- = \{Q_0\in i\mathbb{R},\ Q_k\in\mathbb{R}\}$, of real dimension four, with basis $ie_0, e_1, e_2, e_3$. On it the form is real again, and for $\tilde P = ip_0e_0 + \mathbf p$, $\tilde Q = iq_0e_0 + \mathbf q$ with real coordinates it reads
+The anti-Hermitian subspace is the anti-fixed space of the Hermitian conjugation, $\mathbb{M}_- = \{Q_0\in i\mathbb{R},\ Q_k\in\mathbb{R}\}$, of real dimension four, with basis $ie_0, e_1, e_2, e_3$. On it the form is real again, and for $\tilde P = ip_0e_0 + \vec p$, $\tilde Q = iq_0e_0 + \vec q$ with real coordinates it reads
 
 $$
 H(\tilde P,\tilde Q) = (ip_0)(\overline{iq_0}) + \sum_{k}p_kq_k = p_0q_0 + \sum_{k=1}^{3}p_kq_k ,
@@ -119,8 +119,8 @@ Under the product of the symmetric plain sesqualgebra every value is central, an
 | $i\mathbb{H}_{\mathbb{B}}$ | the purely imaginary span; not closed |
 | $\mathbb{M}_+$ | the Hermitian subspace; closed |
 | $\mathbb{M}_-$ | the anti-Hermitian subspace; not closed |
-| $\mathbf P\star\mathbf Q = (\mathbf P,\overline{\mathbf Q})e_0$ | the product on the vector subspace |
-| $\tilde P\star\tilde Q = \bigl(P_0Q_0 + (\mathbf P,\mathbf Q)\bigr)e_0$ | the product on the quaternion and Hermitian subspaces |
+| $\vec P\star\vec Q = (\vec P,\overline{\vec Q})e_0$ | the product on the vector subspace |
+| $\tilde P\star\tilde Q = \bigl(P_0Q_0 + (\vec P,\vec Q)\bigr)e_0$ | the product on the quaternion and Hermitian subspaces |
 | $S$ closed $\iff e_0\in S$ | the closure criterion for the remarkable subspaces |
 
 ## Further Reading

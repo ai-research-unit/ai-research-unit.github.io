@@ -10,7 +10,7 @@ $$
 e_0 = 1, \qquad e_1^2 = e_2^2 = e_3^2 = -e_0, \qquad e_1 e_2 = e_3, \quad e_2 e_3 = e_1, \quad e_3 e_1 = e_2,
 $$
 
-and $i$ is a central scalar imaginary. We write $\tilde{Q} = Q_0 e_0 + \mathbf{Q}$, $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$.
+and $i$ is a central scalar imaginary. We write $\tilde{Q} = Q_0 e_0 + \vec Q$, $\vec Q = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$.
 
 ## The Biquaternion Variable and Its Two Complex Structures
 
@@ -62,19 +62,19 @@ $$
 
 ## The System of Regularity Equations
 
-Writing $\tilde{F} = F_0 + \mathbf{F}$ with $\mathbf{F} = F_1 e_1 + F_2 e_2 + F_3 e_3$, the analysis article gives
+Writing $\tilde{F} = F_0 + \vec F$ with $\vec F = F_1 e_1 + F_2 e_2 + F_3 e_3$, the analysis article gives
 
 $$
-\tilde{\nabla}\tilde{F} = \left(\partial_{Q_0}F_0 - \mathrm{div}\,\mathbf{F}\right) + \left(\partial_{Q_0}\mathbf{F} + \mathrm{grad}\,F_0 + \mathrm{rot}\,\mathbf{F}\right),
+\tilde{\nabla}\tilde{F} = \left(\partial_{Q_0}F_0 - \mathrm{div}\,\vec F\right) + \left(\partial_{Q_0}\vec F + \mathrm{grad}\,F_0 + \mathrm{rot}\,\vec F\right),
 $$
 
-with $\mathrm{div}\,\mathbf{F} = \sum_k \partial_{Q_k}F_k$, $\mathrm{grad}\,F_0 = \sum_k (\partial_{Q_k}F_0)e_k$, and $\mathrm{rot}\,\mathbf{F} = \sum_{j,k,l}\epsilon_{jkl}(\partial_{Q_j}F_k)e_l$. Therefore $\tilde{F}$ is regular if and only if
+with $\mathrm{div}\,\vec F = \sum_k \partial_{Q_k}F_k$, $\mathrm{grad}\,F_0 = \sum_k (\partial_{Q_k}F_0)e_k$, and $\mathrm{rot}\,\vec F = \sum_{j,k,l}\epsilon_{jkl}(\partial_{Q_j}F_k)e_l$. Therefore $\tilde{F}$ is regular if and only if
 
 $$
-\partial_{Q_0}F_0 = \mathrm{div}\,\mathbf{F}, \qquad \partial_{Q_0}\mathbf{F} + \mathrm{grad}\,F_0 + \mathrm{rot}\,\mathbf{F} = 0.
+\partial_{Q_0}F_0 = \mathrm{div}\,\vec F, \qquad \partial_{Q_0}\vec F + \mathrm{grad}\,F_0 + \mathrm{rot}\,\vec F = 0.
 $$
 
-This is a **system of four equations** for the four coefficients, the biquaternionic **Cauchy–Riemann–Fueter system**. It is the precise sense in which regularity is expressed by a system of equations rather than by one complex equation, and it is the local expression of the regularity notion inherited from the Clifford algebra, coupling $F_0$ to $\mathbf{F}$ through $\mathrm{div}$, $\mathrm{grad}$, and $\mathrm{rot}$.
+This is a **system of four equations** for the four coefficients, the biquaternionic **Cauchy–Riemann–Fueter system**. It is the precise sense in which regularity is expressed by a system of equations rather than by one complex equation, and it is the local expression of the regularity notion inherited from the Clifford algebra, coupling $F_0$ to $\vec F$ through $\mathrm{div}$, $\mathrm{grad}$, and $\mathrm{rot}$.
 
 On $\mathbb{H}_{\mathbb{B}}$ the principal symbol $s(\xi) = \sum_\mu \xi_\mu e_\mu$ satisfies $s(\xi)s^{\natural}(\xi) = |\xi|^2 e_0$, so the system is **elliptic** and its solutions are smooth (indeed real-analytic). On $\mathbb{M}_-$, with $s(\xi) = -i\xi_0 e_0 + \sum_k \xi_k e_k$, one finds
 
@@ -270,7 +270,7 @@ Restricting to real quaternion-valued functions recovers Fueter's quaternionic a
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ | Biquaternion algebra, $\cong \mathrm{Cl}_{1,3}^{+}$ |
-| $\tilde{Q} = Q_0 e_0 + \mathbf{Q}$ | Biquaternion variable; $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ |
+| $\tilde{Q} = Q_0 e_0 + \vec Q$ | Biquaternion variable; $\vec Q = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ |
 | $\tilde{\nabla} = \sum_\mu e_\mu \partial_{Q_\mu}$ | Biquaternionic Cauchy–Riemann operator |
 | $\tilde{\nabla}^{\natural} = e_0\partial_{Q_0} - \sum_k e_k\partial_{Q_k}$ | Quaternion conjugate operator; $(\tilde{\nabla}, \tilde{\nabla}^{\natural})$ mirrors $(\partial_{\bar A}, \partial_A)$ |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$ | Scalar d'Alembertian, the sum of the four second derivatives |

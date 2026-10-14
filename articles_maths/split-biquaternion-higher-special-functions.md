@@ -19,7 +19,7 @@ $$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu = q_\mu + j q'_\mu, \quad q_\mu, q'_\mu \in \mathbb{R}.
 $$
 
-The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \mathbf{Q}$. The split-biquaternion norm is $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$.
+The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \vec Q$. The split-biquaternion norm is $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$.
 
 The **idempotent components** of $\tilde{Q}$ are the real quaternions
 
@@ -65,10 +65,10 @@ where $I_n(\theta_\pm)$ on the right is the ordinary complex **modified** Bessel
 
 ### The Pure Nilpotent Regime
 
-For a component $\tilde{Q}_\pm = \mathbf{Q}_\pm$ with $\mathbf{Q}_\pm^2 = 0$, the quaternion Bessel function truncates:
+For a component $\tilde{Q}_\pm = \vec Q_\pm$ with $\vec Q_\pm^2 = 0$, the quaternion Bessel function truncates:
 
 $$
-J_n(\mathbf{Q}_\pm) = \begin{cases} \frac{1}{n!} \left(\frac{\mathbf{Q}_\pm}{2}\right)^n & \text{if } n = 0 \text{ or } n = 1, \\ 0 & \text{if } n \geq 2. \end{cases}
+J_n(\vec Q_\pm) = \begin{cases} \frac{1}{n!} \left(\frac{\vec Q_\pm}{2}\right)^n & \text{if } n = 0 \text{ or } n = 1, \\ 0 & \text{if } n \geq 2. \end{cases}
 $$
 
 For non-integer $\nu$, the series reduces to the terms with $2m + \nu < 2$.

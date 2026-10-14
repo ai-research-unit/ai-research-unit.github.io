@@ -127,10 +127,10 @@ $$
 \mathsf{M}_4(Q_0e_0)=\begin{pmatrix}Q_0&0&0&0\\0&Q_0&0&0\\0&0&Q_0&0\\0&0&0&Q_0\end{pmatrix}=Q_0I_4,\qquad \operatorname{Tr}=4Q_0,\quad \det=Q_0^4 .
 $$
 
-**The vector subspace.** For $\tilde Q=\mathbf P=P_1e_1+P_2e_2+P_3e_3$ the matrix is traceless,
+**The vector subspace.** For $\tilde Q=\vec P=P_1e_1+P_2e_2+P_3e_3$ the matrix is traceless,
 
 $$
-\mathsf{M}_4(\mathbf P)=\begin{pmatrix}0&-P_1&-P_2&-P_3\\P_1&0&-P_3&P_2\\P_2&P_3&0&-P_1\\P_3&-P_2&P_1&0\end{pmatrix},\qquad \operatorname{Tr}=0,\quad \det=\bigl(P_1^2+P_2^2+P_3^2\bigr)^2 .
+\mathsf{M}_4(\vec P)=\begin{pmatrix}0&-P_1&-P_2&-P_3\\P_1&0&-P_3&P_2\\P_2&P_3&0&-P_1\\P_3&-P_2&P_1&0\end{pmatrix},\qquad \operatorname{Tr}=0,\quad \det=\bigl(P_1^2+P_2^2+P_3^2\bigr)^2 .
 $$
 
 **The quaternion subspace.** For $\tilde Q=h=h_0e_0+h_1e_1+h_2e_2+h_3e_3$ with $h_\mu\in\mathbb{R}$ the matrix is real,
@@ -145,13 +145,13 @@ $$
 \mathsf{M}_4(ih)=i\,\mathsf{M}_4(h)=\begin{pmatrix}ih_0&-ih_1&-ih_2&-ih_3\\ih_1&ih_0&-ih_3&ih_2\\ih_2&ih_3&ih_0&-ih_1\\ih_3&-ih_2&ih_1&ih_0\end{pmatrix},\qquad \operatorname{Tr}=4ih_0,\quad \det=\bigl(h_0^2+h_1^2+h_2^2+h_3^2\bigr)^2>0 .
 $$
 
-**The Hermitian subspace.** For $\tilde Q=a_0e_0+i\mathbf p$ with $a_0$ real and $\mathbf p$ a real vector the matrix is Hermitian,
+**The Hermitian subspace.** For $\tilde Q=a_0e_0+i\vec p$ with $a_0$ real and $\vec p$ a real vector the matrix is Hermitian,
 
 $$
 \mathsf{M}_4(\tilde Q)=\begin{pmatrix}a_0&-ip_1&-ip_2&-ip_3\\ip_1&a_0&-ip_3&ip_2\\ip_2&ip_3&a_0&-ip_1\\ip_3&-ip_2&ip_1&a_0\end{pmatrix}=\mathsf{M}_4(\tilde Q)^\dagger,\qquad \operatorname{Tr}=4a_0,\quad \det=\bigl(a_0^2-p_1^2-p_2^2-p_3^2\bigr)^2 .
 $$
 
-**The anti-Hermitian subspace.** For $\tilde Q=ib_0e_0+\mathbf q$ with $b_0$ real and $\mathbf q$ a real vector the matrix is anti-Hermitian,
+**The anti-Hermitian subspace.** For $\tilde Q=ib_0e_0+\vec q$ with $b_0$ real and $\vec q$ a real vector the matrix is anti-Hermitian,
 
 $$
 \mathsf{M}_4(\tilde Q)=\begin{pmatrix}ib_0&-q_1&-q_2&-q_3\\q_1&ib_0&-q_3&q_2\\q_2&q_3&ib_0&-q_1\\q_3&-q_2&q_1&ib_0\end{pmatrix}=-\mathsf{M}_4(\tilde Q)^\dagger,\qquad \operatorname{Tr}=4ib_0,\quad \det=\bigl(q_1^2+q_2^2+q_3^2-b_0^2\bigr)^2 .

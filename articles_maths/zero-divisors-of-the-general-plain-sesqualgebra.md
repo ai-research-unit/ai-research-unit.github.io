@@ -38,17 +38,17 @@ Invertibility in the General Plain Sesqualgebra*; the square-zero set of the blo
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$
 with $e_1e_2=e_3$ and central scalar imaginary $i$. A general element is
-$\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu=Q_0e_0+\mathbf Q$ with $\mathbf Q=Q_1e_1+Q_2e_2+Q_3e_3$ and
-$Q_\mu\in\mathbb{C}$; the natural conjugation is $\tilde Q^{\natural}=Q_0-\mathbf Q$, the
-coefficientwise conjugation is $\overline{\tilde Q}=\overline{Q_0}e_0+\overline{\mathbf Q}$, and
+$\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu=Q_0e_0+\vec Q$ with $\vec Q=Q_1e_1+Q_2e_2+Q_3e_3$ and
+$Q_\mu\in\mathbb{C}$; the natural conjugation is $\tilde Q^{\natural}=Q_0-\vec Q$, the
+coefficientwise conjugation is $\overline{\tilde Q}=\overline{Q_0}e_0+\overline{\vec Q}$, and
 the Hermitian conjugation is
-$\tilde Q^{*}=\overline{\tilde Q^{\natural}}=\overline{Q_0}-\overline{\mathbf Q}$. Juxtaposition is
+$\tilde Q^{*}=\overline{\tilde Q^{\natural}}=\overline{Q_0}-\overline{\vec Q}$. Juxtaposition is
 the **plain** product and $\star$ the block, $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$. The
-**central square** is $C(\tilde Q)=\tilde Q\tilde Q^{\natural}=Q_0^{2}+(\mathbf Q,\mathbf Q)$ with
-$(\mathbf Q,\mathbf Q)=Q_1^{2}+Q_2^{2}+Q_3^{2}$, and its vanishing set, the origin removed, is the
+**central square** is $C(\tilde Q)=\tilde Q\tilde Q^{\natural}=Q_0^{2}+(\vec Q,\vec Q)$ with
+$(\vec Q,\vec Q)=Q_1^{2}+Q_2^{2}+Q_3^{2}$, and its vanishing set, the origin removed, is the
 common zero-divisor cone.
 
-**The results.** A nonzero biquaternion is a zero divisor of the block $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ exactly when its central square vanishes, $C(\tilde Q)=Q_0^{2}+(\mathbf Q,\mathbf Q)=0$; the block's zero-divisor set is therefore the parent's, the nonzero complex cone of complex dimension three, and it is the common set of the four general products. Every zero divisor of the block is two-sided, and the two annihilators coincide, each a complex plane of complex dimension two on the cone and $\{0\}$ off it. The parent's partition by the scalar coordinate survives: the pure family ($Q_0=0$, isotropic) is the block's nilpotent family, of index three, and the non-pure family ($Q_0\neq0$) consists of the complex multiples of the nontrivial idempotents, among which exactly the Hermitian idempotents $\tfrac12(e_0+i\hat\mu)$ are idempotents of the block.
+**The results.** A nonzero biquaternion is a zero divisor of the block $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ exactly when its central square vanishes, $C(\tilde Q)=Q_0^{2}+(\vec Q,\vec Q)=0$; the block's zero-divisor set is therefore the parent's, the nonzero complex cone of complex dimension three, and it is the common set of the four general products. Every zero divisor of the block is two-sided, and the two annihilators coincide, each a complex plane of complex dimension two on the cone and $\{0\}$ off it. The parent's partition by the scalar coordinate survives: the pure family ($Q_0=0$, isotropic) is the block's nilpotent family, of index three, and the non-pure family ($Q_0\neq0$) consists of the complex multiples of the nontrivial idempotents, among which exactly the Hermitian idempotents $\tfrac12(e_0+\tilde\Xi)$ are idempotents of the block.
 
 ## The Criterion
 
@@ -69,7 +69,7 @@ Algebra*: $\tilde Q$ is a zero divisor of the plain product exactly when $C(\til
 **Corollary (the set).** The zero-divisor set of the block is
 
 $$
-\mathcal{Z}_\star=\{\tilde Q\neq0: C(\tilde Q)=0\}=\{\tilde Q\neq0: Q_0^{2}+(\mathbf Q,\mathbf Q)=0\},
+\mathcal{Z}_\star=\{\tilde Q\neq0: C(\tilde Q)=0\}=\{\tilde Q\neq0: Q_0^{2}+(\vec Q,\vec Q)=0\},
 $$
 
 the nonzero elements of the complex cone $\mathcal{C}$, of complex dimension three; every zero
@@ -98,10 +98,10 @@ Sesqualgebra*, below this article in this category.
 
 ## The Two Families, and What the Block Does to Them
 
-**The parent's partition by the scalar coordinate survives: the pure family ($Q_0=0$, isotropic) is the block's nilpotent family, of index three rather than two, and the non-pure family ($Q_0\neq0$) is the nonzero complex multiples of the nontrivial idempotents, among which exactly the Hermitian idempotents $\tfrac12(e_0+i\hat\mu)$ are idempotents of the block.**
+**The parent's partition by the scalar coordinate survives: the pure family ($Q_0=0$, isotropic) is the block's nilpotent family, of index three rather than two, and the non-pure family ($Q_0\neq0$) is the nonzero complex multiples of the nontrivial idempotents, among which exactly the Hermitian idempotents $\tfrac12(e_0+\tilde\Xi)$ are idempotents of the block.**
 
 The plain product partitions its zero divisors by the scalar coordinate (*Zero Divisors of the
-General Plain Algebra*): the **pure family** has $Q_0=0$ and $(\mathbf Q,\mathbf Q)=0$, and its
+General Plain Algebra*): the **pure family** has $Q_0=0$ and $(\vec Q,\vec Q)=0$, and its
 nonzero members are the nilpotents, $\tilde Q^{2}=0$; the **non-pure family** has $Q_0\neq0$, and
 its members are the nonzero complex multiples of the nontrivial idempotents
 $\tfrac12(e_0+\tilde\Xi i)$ over the roots $\tilde\Xi$ of $-1$. The partition is by the scalar
@@ -109,15 +109,15 @@ coordinate, which is a datum of the element and not of the product, so it surviv
 block; what does not survive is the **reading of the two families through the square**.
 
 **Proposition (the pure family is not square-zero for the block).** Let $\tilde Q$ be a nonzero
-pure zero divisor, $\tilde Q=\mathbf Q$ with $(\mathbf Q,\mathbf Q)=0$. Then its plain square
+pure zero divisor, $\tilde Q=\vec Q$ with $(\vec Q,\vec Q)=0$. Then its plain square
 vanishes, but its block-square does not:
 
 $$
 \tilde Q^{2}=0,\qquad \tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}=\mathrm{Sc}\bigl(\tilde Q\tilde Q^{*}\bigr)e_0+\mathrm{Vect}\bigl(\tilde Q\tilde Q^{*}\bigr)\neq0 .
 $$
 
-*Proof.* The plain square vanishes because $\tilde Q^{2}=(\mathbf Q,\mathbf Q)e_0$ by the product
-rule and $(\mathbf Q,\mathbf Q)=0$. For the block-square,
+*Proof.* The plain square vanishes because $\tilde Q^{2}=(\vec Q,\vec Q)e_0$ by the product
+rule and $(\vec Q,\vec Q)=0$. For the block-square,
 $\mathrm{Sc}(\tilde Q\tilde Q^{*})=\sum_\mu\lvert Q_\mu\rvert^{2}=H(\tilde Q)$, the algebraic norm
 of the block, which is positive for $\tilde Q\neq0$ by the definiteness of *Norm and Invertibility
 in the General Plain Sesqualgebra*; so the block-square is nonzero. The witness $\tilde Q=e_1+ie_2$
@@ -133,23 +133,23 @@ kept, and the index attached to each family is read from the square of the produ
 
 **Proposition (the non-pure family and the idempotents of the block).** The non-pure zero divisors
 are the nonzero complex multiples of the nontrivial idempotents of the plain product, and among
-them exactly the **Hermitian idempotents** $\tfrac12(e_0+i\hat\mu)$ over the real unit vectors
-$\hat\mu$ are idempotents of the block; the others are zero divisors of the block and not
+them exactly the **Hermitian idempotents** $\tfrac12(e_0+\tilde\Xi)$ over the real unit vectors
+$\hat n$ are idempotents of the block; the others are zero divisors of the block and not
 idempotents of it.
 
 *Proof.* The plain description is *Zero Divisors of the General Plain Algebra*. An idempotent of
 the block is a Hermitian idempotent of the plain product (*Idempotents of the General Plain
 Sesqualgebra*), and a Hermitian idempotent $\tilde\Pi$ has
 $\tilde\Pi\star\tilde\Pi=\tilde\Pi\tilde\Pi^{*}=\tilde\Pi^{2}=\tilde\Pi$; the Hermitian ones are
-those with a real root $\tilde\Xi=\pm\hat\mu$, that is the family $\tfrac12(e_0+i\hat\mu)$. A
+those with a real root $\tilde\Xi=\pm\hat n$, that is the family $\tfrac12(e_0+\tilde\Xi)$. A
 multiple $\lambda\tilde\Pi$ with $\lambda\neq1$ is a zero divisor but is idempotent for neither
 product unless $\lambda=1$.
 
 **Remark (the scalar part of a block idempotent is fixed).** The block idempotents
-$\tfrac12(e_0+i\hat\mu)$ have scalar part $\tfrac12$, which is the positive value the algebraic
+$\tfrac12(e_0+\tilde\Xi)$ have scalar part $\tfrac12$, which is the positive value the algebraic
 norm $H(\tilde\Pi)=\mathrm{Sc}(\tilde\Pi\star\tilde\Pi)=\sum_\mu\lvert\Pi_\mu\rvert^{2}$ forces on
 any idempotent of the block; in particular
-$C\bigl(\tfrac12(e_0+i\hat\mu)\bigr)=\tfrac14(1-(\hat\mu,\hat\mu))=0$, so every block idempotent is
+$C\bigl(\tfrac12(e_0+\tilde\Xi)\bigr)=\tfrac14(1-(\hat n,\hat n))=0$, so every block idempotent is
 a zero divisor, of the non-pure family. The unit $e_0$ is not a zero divisor, $c(e_0)=1$.
 
 ## The Comparison with the Parent and with the Four General Products
@@ -158,7 +158,7 @@ a zero divisor, of the non-pure family. The unit $e_0$ is not a zero divisor, $c
 
 | clause | general plain algebra | general plain sesqualgebra |
 |---|---|---|
-| criterion | $C(\tilde Q)=Q_0^{2}+(\mathbf Q,\mathbf Q)=0$ | $C(\tilde Q)=0$, the same |
+| criterion | $C(\tilde Q)=Q_0^{2}+(\vec Q,\vec Q)=0$ | $C(\tilde Q)=0$, the same |
 | the set | the cone $\mathcal{C}$ without the origin | the same cone without the origin |
 | sides | left and right, generally distinct sets of partners | left and right, with the same annihilator |
 | pure family | $Q_0=0$, isotropic, the nonzero nilpotents of index two | $Q_0=0$, isotropic, the nonzero nilpotents of index three |
@@ -179,7 +179,7 @@ The zero divisors of the general plain sesqualgebra are decided by one equation 
 alone, and the equation is the parent's: because $\tilde P\star\tilde R=\tilde P\tilde R^{*}$ and
 ${}^{*}$ is a bijection, an element is a zero divisor of the block exactly when it is a zero
 divisor of the plain product, that is exactly when its central square vanishes,
-$C(\tilde Q)=Q_0^{2}+(\mathbf Q,\mathbf Q)=0$ with $\tilde Q\neq0$. The **set** is the nonzero
+$C(\tilde Q)=Q_0^{2}+(\vec Q,\vec Q)=0$ with $\tilde Q\neq0$. The **set** is the nonzero
 zero-divisor cone, of complex dimension three, which is the common set of the four general
 products, and every member is **two-sided**. The **annihilators** are equal on the two sides and
 are the image under the involution of the plain annihilator
@@ -191,7 +191,7 @@ family consists of the nonzero complex multiples of the nontrivial idempotents. 
 **square-theoretic reading**: a pure zero divisor is a nilpotent of index two for the parent and a
 nilpotent of **index three** for the block, its block-square being the nonzero Hermitian element
 $\tilde Q\tilde Q^{*}$ with positive scalar part; the non-pure zero divisors are nilpotent for
-neither; and of the non-pure multiples, exactly the Hermitian idempotents $\tfrac12(e_0+i\hat\mu)$
+neither; and of the non-pure multiples, exactly the Hermitian idempotents $\tfrac12(e_0+\tilde\Xi)$
 are idempotents of the block. The block keeps the set, keeps the criterion, the partition and the
 annihilators, and changes the index.
 
@@ -200,14 +200,14 @@ annihilators, and changes the index.
 | Symbol | Meaning |
 |---|---|
 | $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ | the product of the block |
-| $C(\tilde Q)=\tilde Q\tilde Q^{\natural}=Q_0^{2}+(\mathbf Q,\mathbf Q)$ | the central square |
+| $C(\tilde Q)=\tilde Q\tilde Q^{\natural}=Q_0^{2}+(\vec Q,\vec Q)$ | the central square |
 | $\mathcal{Z}_\star=\{\tilde Q\neq0:C(\tilde Q)=0\}$ | the zero-divisor set, the nonzero cone |
 | $\tilde Q\star\tilde R=0\Leftrightarrow\tilde Q\tilde R^{*}=0$ | the annihilation equation |
 | $A_\star(\tilde Q)$, $B_\star(\tilde Q)$ | the left and the right annihilators, equal |
 | $K(\tilde Q)^{*}$, $K(\tilde Q)=\{\tilde Z:\tilde Q\tilde Z=0\}$ | the common annihilator, the plain annihilator carried through the involution |
 | $Q_0=0$ | the pure family, isotropic: the nilpotents of the block, index three |
 | $Q_0\neq0$ | the non-pure family, multiples of the idempotents, not nilpotent |
-| $\tfrac12(e_0+i\hat\mu)$ | the Hermitian idempotents, zero divisors and block idempotents |
+| $\tfrac12(e_0+\tilde\Xi)$ | the Hermitian idempotents, zero divisors and block idempotents |
 
 ## Further Reading
 

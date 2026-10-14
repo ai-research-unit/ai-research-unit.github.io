@@ -90,7 +90,7 @@ with signature $p-q=-2$ in the complex counting. The isometry group of $K$ is $U
 
 The framework already carries an indefinite pairing of signature $(3,1)$ on the material sector — the interval — and it is worth separating the two, because they are read by different products and their signs differ.
 
-Let $\tilde T=ict\,e_0+\mathbf x$ be a material four-vector, $\mathbf x=(x,y,z)$. The biquaternion norm, read by the quaternionic product, is the interval,
+Let $\tilde T=ict\,e_0+\vec x$ be a material four-vector, $\vec x=(x,y,z)$. The biquaternion norm, read by the quaternionic product, is the interval,
 
 $$
 N(\tilde T)=\mathrm{Sc}\bigl(\tilde T^{\natural}\tilde T\bigr)=Q_0^{2}+Q_1^{2}+Q_2^{2}+Q_3^{2}
@@ -135,7 +135,7 @@ which is the Minkowski metric in the convention with **one positive time directi
 
 ## A Worked Case: One Four-Vector in Four Forms
 
-One element settles the arithmetic, and it is worth writing out because the four signs are easy to confuse. Take the material four-vector with $ct=3$ and $\mathbf x=e_1$, that is $\tilde T=3i\,e_0+e_1$.
+One element settles the arithmetic, and it is worth writing out because the four signs are easy to confuse. Take the material four-vector with $ct=3$ and $\vec x=e_1$, that is $\tilde T=3i\,e_0+e_1$.
 
 | form | read by | value at $\tilde T$ |
 |---|---|---|
@@ -144,7 +144,7 @@ One element settles the arithmetic, and it is worth writing out because the four
 | $B(\tilde T,\tilde T)$, the plain scalar product | the plain product | $-9-1=-10$ |
 | $H(\tilde T,\tilde T)$, the probability form | the sesquilinear product | $+9+1=+10$ |
 
-The numbers carry four statements. The **interval** is negative, so the four-vector is timelike and massive, with $m^{2}c^{2}=8$ in these units; the interval is the quantity the mass shell is the level set of. The **gauge metric** is its negative, $K=-N$, and is therefore the Minkowski form with the time direction positive. The **plain scalar product** is the negative Euclidean square, $-(c^{2}t^{2}+\mathbf x^{2})$, of signature $(0,4)$ on the material sector — it has no cone and so cannot be a metric. And the **probability form** is the Euclidean square, positive definite, which is why the states live with it and not with $K$. The same four-vector, in other words, is measured by four pairings with four different meanings, and only the fourth product's gives the spacetime sign convention.
+The numbers carry four statements. The **interval** is negative, so the four-vector is timelike and massive, with $m^{2}c^{2}=8$ in these units; the interval is the quantity the mass shell is the level set of. The **gauge metric** is its negative, $K=-N$, and is therefore the Minkowski form with the time direction positive. The **plain scalar product** is the negative Euclidean square, $-(c^{2}t^{2}+\vec x^{2})$, of signature $(0,4)$ on the material sector — it has no cone and so cannot be a metric. And the **probability form** is the Euclidean square, positive definite, which is why the states live with it and not with $K$. The same four-vector, in other words, is measured by four pairings with four different meanings, and only the fourth product's gives the spacetime sign convention.
 
 **One more value, the informational one.** Take $\tilde H=2e_0+i(e_1+e_2+e_3)$ in the informational sector. Then $N(\tilde H)=4-3=1$ and $K(\tilde H)=4-3=1$, the Lagrange identity $K=+N$ on $\mathbb{M}_+$; the signature is again $(1,3)$, the positive direction the scalar one, and the element is of norm one, so it is a unit of the algebra rather than a zero divisor. The metre that reads a material four-vector and the metre that reads an informational element are the same metric read on the two sectors, and the sign of the sector is the whole difference.
 
@@ -201,7 +201,7 @@ The fourth of the framework's four general products is the general quaternionic 
 |---|---|
 | $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$ | the fourth product; the gauge corner |
 | $K(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ | the indefinite (Krein) metric of the fourth product |
-| $K(\tilde Q,\tilde Q)=\lvert Q_0\rvert^{2}-\lvert\mathbf Q\rvert^{2}$ | the algebraic norm of the metric; the Krein invariant |
+| $K(\tilde Q,\tilde Q)=\lvert Q_0\rvert^{2}-\lvert\vec Q\rvert^{2}$ | the algebraic norm of the metric; the Krein invariant |
 | $\varepsilon=(1,-1,-1,-1)$ | the sign vector; the metric's signs |
 | $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$ | the centre; the positive part of the metric |
 | $\mathrm{Vect}(\mathbb{B})=\{Q_0=0\}$ | the vector subspace; the negative part of the metric |

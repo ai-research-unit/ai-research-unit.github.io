@@ -8,13 +8,13 @@ This is one of the exercises in the relativity series. It is a set of worked pro
 $$
 \langle \tilde{A}, \tilde{B}\rangle = \mathrm{Sc}\!\left(\tilde{A}\tilde{B}^{\natural}\right),
 $$
-which is symmetric, real-valued on $\mathbb{M}_-$, and reproduces the biquaternion norm on the diagonal. The four-position $\tilde{Q} = ict\,e_0 + \mathbf{x}$, the four-velocity $\tilde{U} = \gamma(ic\,e_0 + \mathbf{v})$ with $N(\tilde{U}) = -c^2$, and the four-momentum
+which is symmetric, real-valued on $\mathbb{M}_-$, and reproduces the biquaternion norm on the diagonal. The four-position $\tilde{Q} = ict\,e_0 + \vec x$, the four-velocity $\tilde{V} = \gamma(ic\,e_0 + \vec v)$ with $N(\tilde{V}) = -c^2$, and the four-momentum
 $$
-\tilde{P} = m\tilde{U} = i\frac{E}{c}\,e_0 + \mathbf{p},
+\tilde{P} = m\tilde{V} = i\frac{E}{c}\,e_0 + \vec p,
 \qquad N(\tilde{P}) = -m^2c^2,
-\qquad E = \gamma mc^2,\quad \mathbf{p} = \gamma m\mathbf{v}.
+\qquad E = \gamma mc^2,\quad \vec p = \gamma m\vec v.
 $$
-The boost biquaternion $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$ with $\tanh\psi = u/c$ and $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$, and the rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$; the Poincaré pair $(\tilde{\Lambda},\tilde{a})$ acting by $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}+\tilde{a}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged.
+The boost biquaternion $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat u$ with $\tanh\psi = u/c$ and $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$, and the rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$; the Poincaré pair $(\tilde{\Lambda},\tilde{a})$ acting by $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}+\tilde{a}$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged.
 
 **What is to be shown.** The problems are: (1) the conservation law as a single biquaternion equation, its equivalence to energy and three-momentum conservation, and its frame covariance; (2) the invariant mass and the Mandelstam invariants of a $2\to2$ collision; (3) the centre-of-momentum frame and the elastic point; (4) the production threshold, in fixed-target and collider form; (5) a numerical instance checked in two frames; (6) the non-relativistic limit. Each problem is stated and then solved in full; the value of an exercise article is in the solutions. The exercise also tests its parents: two gaps found in the course of the work are reported explicitly in the closing section rather than smoothed over.
 
@@ -24,7 +24,7 @@ $$
 \qquad
 \tilde{P}_1 + \tilde{P}_2 = \tilde{P}_3 + \tilde{P}_4 + \dots + \tilde{P}_n .
 $$
-Starred quantities refer to the centre-of-momentum (COM) frame, the inertial frame in which the total three-momentum vanishes. For a $2\to2$ collision we write $p^*$ for the common magnitude of the two initial COM momenta and $q^*$ for the common magnitude of the two final COM momenta, and $\theta^*$ for the COM scattering angle between $\mathbf{p}_1^*$ and $\mathbf{p}_3^*$. Unstarred quantities refer to the laboratory.
+Starred quantities refer to the centre-of-momentum (COM) frame, the inertial frame in which the total three-momentum vanishes. For a $2\to2$ collision we write $p^*$ for the common magnitude of the two initial COM momenta and $q^*$ for the common magnitude of the two final COM momenta, and $\theta^*$ for the COM scattering angle between $\vec p_1^*$ and $\vec p_3^*$. Unstarred quantities refer to the laboratory.
 
 **A word on the parents.** The conservation law used below is not stated in the parent article, which treats a single particle; it is supplied here and applied. Its derivation from the translation invariance of the Poincaré frame is the subject of the planned companion *Noether's Theorem in Biquaternionic Form* and is not attempted here. What is checked here is that the law, once stated, does what a conservation law must do: it splits into the energy and momentum laws in any frame, it is preserved by every change of frame, and it yields the invariants and thresholds that the standard treatment yields.
 
@@ -42,13 +42,13 @@ $$
 \qquad\Longleftrightarrow\qquad
 \tilde{P}_{\rm in} - \tilde{P}_{\rm out} = 0 .
 $$
-Write the difference as $i\Delta_0\,e_0 + \boldsymbol{\Delta}$, with $\Delta_0$ real and $\boldsymbol{\Delta} = \sum_k\Delta_k e_k$ a real three-vector, by the membership condition of $\mathbb{M}_-$ (imaginary scalar, real vector). The scalar and vector parts of $\mathbb{M}_-$ are extracted by the real-linear projections $\mathrm{Sc}$ and $\mathrm{Vect}$, so the single biquaternion equation vanishes if and only if its scalar and vector parts vanish separately:
+Write the difference as $i\Delta_0\,e_0 + \vec\Delta$, with $\Delta_0$ real and $\vec\Delta = \sum_k\Delta_k e_k$ a real three-vector, by the membership condition of $\mathbb{M}_-$ (imaginary scalar, real vector). The scalar and vector parts of $\mathbb{M}_-$ are extracted by the real-linear projections $\mathrm{Sc}$ and $\mathrm{Vect}$, so the single biquaternion equation vanishes if and only if its scalar and vector parts vanish separately:
 $$
 \mathrm{Sc}\!\left(\tilde{P}_{\rm in}-\tilde{P}_{\rm out}\right) = 0
 \iff \sum_a E_a = \sum_f E_f,
 \qquad
 \mathrm{Vect}\!\left(\tilde{P}_{\rm in}-\tilde{P}_{\rm out}\right) = 0
-\iff \sum_a \mathbf{p}_a = \sum_f \mathbf{p}_f .
+\iff \sum_a \vec p_a = \sum_f \vec p_f .
 $$
 These are the conservation of total energy and of total three-momentum. The biquaternion law is therefore not a new law: it is the pair of standard laws written as one $\mathbb{M}_-$-valued equation. The reason the compression is possible is structural — energy and three-momentum are the scalar and vector components of one element of the material sector, and the $ict$ convention is what puts them there.
 
@@ -76,7 +76,7 @@ $$
 \qquad
 \tilde{P}_2 = i\,m\,e_0 ,
 $$
-so $\tilde{P}_{\rm in} = i\,4m\,e_0 + \sqrt{8}\,m\,e_3$ and $s := -N(\tilde{P}_{\rm in}) = (4m)^2 - 8m^2 = 8m^2$. Problem 3 gives the COM data: $W = \sqrt{s} = 2\sqrt{2}\,m$, $E^* = W/2 = \sqrt{2}\,m$, $p^* = m$, and the COM velocity $V = p^*/E^* = 1/\sqrt{2}$, $\gamma = \sqrt{2}$. For the COM scattering angle $\theta^* = 90^\circ$ the final COM momenta are $\mathbf{p}_3^* = m\,e_1$, $\mathbf{p}_4^* = -m\,e_1$, and boosting to the laboratory gives
+so $\tilde{P}_{\rm in} = i\,4m\,e_0 + \sqrt{8}\,m\,e_3$ and $s := -N(\tilde{P}_{\rm in}) = (4m)^2 - 8m^2 = 8m^2$. Problem 3 gives the COM data: $W = \sqrt{s} = 2\sqrt{2}\,m$, $E^* = W/2 = \sqrt{2}\,m$, $p^* = m$, and the COM velocity $V = p^*/E^* = 1/\sqrt{2}$, $\gamma = \sqrt{2}$. For the COM scattering angle $\theta^* = 90^\circ$ the final COM momenta are $\vec p_3^* = m\,e_1$, $\vec p_4^* = -m\,e_1$, and boosting to the laboratory gives
 $$
 \tilde{P}_3 = i\,2m\,e_0 + m\,e_1 + \sqrt{2}\,m\,e_3,
 \qquad
@@ -104,16 +104,16 @@ u := -c^2\,N(\tilde{P}_1-\tilde{P}_4).
 $$
 (a) Express $s$ in components and identify it with the square of the COM energy. (b) Express $s,t,u$ through the invariant pairing. (c) Prove $s+t+u = (m_1^2+m_2^2+m_3^2+m_4^2)c^4$ using the conservation law. (d) Evaluate for elastic scattering and check the sum rule numerically. (e) Explain why $t$ and $u$ do not define real masses.
 
-**Solution (a).** Since $\tilde{P}_1+\tilde{P}_2 = i(E_1+E_2)/c\,e_0 + (\mathbf{p}_1+\mathbf{p}_2)$,
+**Solution (a).** Since $\tilde{P}_1+\tilde{P}_2 = i(E_1+E_2)/c\,e_0 + (\vec p_1+\vec p_2)$,
 $$
 N(\tilde{P}_1+\tilde{P}_2)
-= -\frac{(E_1+E_2)^2}{c^2} + (\mathbf{p}_1+\mathbf{p}_2)^2,
+= -\frac{(E_1+E_2)^2}{c^2} + (\vec p_1+\vec p_2)^2,
 $$
 so
 $$
-s = (E_1+E_2)^2 - (\mathbf{p}_1+\mathbf{p}_2)^2c^2 .
+s = (E_1+E_2)^2 - (\vec p_1+\vec p_2)^2c^2 .
 $$
-This is the standard invariant $s$. In the COM frame $\mathbf{p}_1+\mathbf{p}_2 = 0$, so $s = W^2$ with $W := E_1^*+E_2^*$ the total COM energy; and $s$ is invariant, so $W = \sqrt{s}$ in every frame. The total invariant mass is $M_{\rm tot} = W/c^2 = \sqrt{s}/c^2$, and the parent's definition $N(\tilde{P}) = -M^2c^2$ is recovered with $M = M_{\rm tot}$ whenever $\tilde{P}$ is future-directed timelike, which the sum of two future-directed timelike four-momenta always is.
+This is the standard invariant $s$. In the COM frame $\vec p_1+\vec p_2 = 0$, so $s = W^2$ with $W := E_1^*+E_2^*$ the total COM energy; and $s$ is invariant, so $W = \sqrt{s}$ in every frame. The total invariant mass is $M_{\rm tot} = W/c^2 = \sqrt{s}/c^2$, and the parent's definition $N(\tilde{P}) = -M^2c^2$ is recovered with $M = M_{\rm tot}$ whenever $\tilde{P}$ is future-directed timelike, which the sum of two future-directed timelike four-momenta always is.
 
 **Solution (b).** Expanding the norm of a difference,
 $$
@@ -127,11 +127,11 @@ t = (m_1^2+m_3^2)c^4 + 2c^2\langle\tilde{P}_1,\tilde{P}_3\rangle,
 \qquad
 u = (m_1^2+m_4^2)c^4 + 2c^2\langle\tilde{P}_1,\tilde{P}_4\rangle .
 $$
-In components, using $\langle\tilde{P}_A,\tilde{P}_B\rangle = -E_AE_B/c^2 + \mathbf{p}_A\cdot\mathbf{p}_B$,
+In components, using $\langle\tilde{P}_A,\tilde{P}_B\rangle = -E_AE_B/c^2 + \vec p_A\cdot\vec p_B$,
 $$
-s = (m_1^2+m_2^2)c^4 + 2E_1E_2 - 2c^2\,\mathbf{p}_1\cdot\mathbf{p}_2,
+s = (m_1^2+m_2^2)c^4 + 2E_1E_2 - 2c^2\,\vec p_1\cdot\vec p_2,
 $$
-and analogously for $t$ (with $2E_1E_3 - 2c^2\mathbf{p}_1\cdot\mathbf{p}_3$ added to $(m_1^2+m_3^2)c^4$) and for $u$.
+and analogously for $t$ (with $2E_1E_3 - 2c^2\vec p_1\cdot\vec p_3$ added to $(m_1^2+m_3^2)c^4$) and for $u$.
 
 **Solution (c).** Add the three invariants. The mass terms sum to $(3m_1^2+m_2^2+m_3^2+m_4^2)c^4$. The pairing terms, including the minus sign in $s$ and the plus signs in $t$ and $u$, are
 $$
@@ -170,10 +170,10 @@ which is $E^{*2} - p^{*2}c^2 = m^2c^4$ rearranged. For the example of Problem 1(
 
 **Statement.** (a) Construct the boost biquaternion that carries the laboratory to the COM frame and verify that it rotates the total four-momentum to a pure imaginary scalar. (b) Derive the COM energies and the initial and final momentum magnitudes for a general $2\to2$ collision. (c) Give the relation between the laboratory velocity of the COM frame and the total four-momentum. (d) Record the elastic case.
 
-**Solution (a).** Let $\tilde{P} = \tilde{P}_1+\tilde{P}_2$ be the total four-momentum, with $\tilde{P}\tilde{P}^{\natural} = -W^2/c^2$, where $W=\sqrt{s}>0$. The parent's relation between a four-velocity and its frame rotor, $\tilde{\Lambda} = \sqrt{-\frac{i}{c}\tilde{U}^{\natural}}$, applied to the total treated as a single body of mass $M_{\rm tot} = W/c^2$, gives the rotor
+**Solution (a).** Let $\tilde{P} = \tilde{P}_1+\tilde{P}_2$ be the total four-momentum, with $\tilde{P}\tilde{P}^{\natural} = -W^2/c^2$, where $W=\sqrt{s}>0$. The parent's relation between a four-velocity and its frame rotor, $\tilde{\Lambda} = \sqrt{-\frac{i}{c}\tilde{V}^{\natural}}$, applied to the total treated as a single body of mass $M_{\rm tot} = W/c^2$, gives the rotor
 $$
 \boxed{\ \tilde{\Lambda}_{\rm CM} = \sqrt{-\frac{ic}{W}\,\tilde{P}^{\natural}}\ }
-= \cosh\frac{\Psi}{2} + i\sinh\frac{\Psi}{2}\,\hat{\mathbf{V}},
+= \cosh\frac{\Psi}{2} + i\sinh\frac{\Psi}{2}\,\hat V,
 \qquad
 \tilde{\Lambda}_{\rm CM}\tilde{\Lambda}^{\natural}_{\rm CM} = e_0,
 $$
@@ -188,7 +188,7 @@ $$
 $$
 because $\tilde{\Lambda}^{\natural}_{\rm CM}$ is the boost of the same rapidity in the opposite direction.
 
-**Solution (b).** In the COM frame the vector part of $\tilde{P}$ vanishes, so $\mathbf{p}_1^* + \mathbf{p}_2^* = 0$ and $E_1^* + E_2^* = W$. The mass-shell relations $E_a^{*2} = m_a^2c^4 + p^{*2}c^2$ (both particles share the magnitude $p^*$ because their momenta are opposite) give, by the same elimination as for the two-body decay,
+**Solution (b).** In the COM frame the vector part of $\tilde{P}$ vanishes, so $\vec p_1^* + \vec p_2^* = 0$ and $E_1^* + E_2^* = W$. The mass-shell relations $E_a^{*2} = m_a^2c^4 + p^{*2}c^2$ (both particles share the magnitude $p^*$ because their momenta are opposite) give, by the same elimination as for the two-body decay,
 $$
 E_1^* = \frac{s + m_1^2c^4 - m_2^2c^4}{2\sqrt{s}},
 \qquad
@@ -204,17 +204,17 @@ E_3^* = \frac{s + m_3^2c^4 - m_4^2c^4}{2\sqrt{s}},
 \qquad
 q^{*2}c^2 = \frac{\left[s-(m_3+m_4)^2c^4\right]\left[s-(m_3-m_4)^2c^4\right]}{4s}.
 $$
-The final momenta are opposite, $\mathbf{p}_3^* = -\mathbf{p}_4^*$, of common magnitude $q^*$, and their common direction relative to $\mathbf{p}_1^*$ is the COM scattering angle $\theta^*$. There is no constraint on $\theta^*$ from four-momentum conservation alone: conservation fixes the magnitudes and the back-to-back configuration but leaves one angle free, which is why the scattering angle must be supplied by the dynamics (or measured).
+The final momenta are opposite, $\vec p_3^* = -\vec p_4^*$, of common magnitude $q^*$, and their common direction relative to $\vec p_1^*$ is the COM scattering angle $\theta^*$. There is no constraint on $\theta^*$ from four-momentum conservation alone: conservation fixes the magnitudes and the back-to-back configuration but leaves one angle free, which is why the scattering angle must be supplied by the dynamics (or measured).
 
-**Solution (c).** The laboratory energy and momentum of the COM frame are the total ones, $E=E_1+E_2$ and $\mathbf{P}=\mathbf{p}_1+\mathbf{p}_2$, and the COM frame moves in the laboratory with velocity
+**Solution (c).** The laboratory energy and momentum of the COM frame are the total ones, $E=E_1+E_2$ and $\vec P=\vec p_1+\vec p_2$, and the COM frame moves in the laboratory with velocity
 $$
-\mathbf{V} = \frac{\mathbf{P}c^2}{E},
+\vec V = \frac{\vec Pc^2}{E},
 \qquad
 \gamma = \frac{1}{\sqrt{1-V^2/c^2}} = \frac{E}{W},
 $$
-the second equality because $E = \gamma(W + \mathbf{V}\cdot 0)$ when the total momentum vanishes in the COM frame. The laboratory energy of a body with COM energy $E_a^*$ and COM momentum $\mathbf{p}_a^*$ is therefore
+the second equality because $E = \gamma(W + \vec V\cdot 0)$ when the total momentum vanishes in the COM frame. The laboratory energy of a body with COM energy $E_a^*$ and COM momentum $\vec p_a^*$ is therefore
 $$
-E_a = \gamma\left(E_a^* + \mathbf{V}\cdot\mathbf{p}_a^*\right),
+E_a = \gamma\left(E_a^* + \vec V\cdot\vec p_a^*\right),
 $$
 the standard transformation. The construction of $\tilde{\Lambda}_{\rm CM}$ is undefined when $\tilde{P}$ is null, $W=0$; that degenerate case (massless collinear momenta) is the collision analogue of the parent's open question on null totals and is not treated here.
 
@@ -230,7 +230,7 @@ $$
 $$
 At equality the final particles emerge with no relative kinetic energy. This is the biquaternion form of the standard threshold: it is a statement about $N(\tilde{P}_1+\tilde{P}_2)$, computed from the initial data, against a rest-energy sum. Because $s$ is a Lorentz invariant, the condition is frame-independent, as a threshold must be.
 
-**Solution (b).** Let body 2 be at rest in the laboratory, so $\tilde{P}_2 = i\,m_2c\,e_0$ and $\mathbf{p}_2=0$. Then
+**Solution (b).** Let body 2 be at rest in the laboratory, so $\tilde{P}_2 = i\,m_2c\,e_0$ and $\vec p_2=0$. Then
 $$
 s = (m_1^2+m_2^2)c^4 + 2E_1m_2c^2 ,
 $$
@@ -264,7 +264,7 @@ for this reaction. The origin of the factor is visible in the fixed-target expre
 
 **Statement.** Take two equal masses $m_1=m_2=m$, units $c=1$, and an elastic collision with projectile total energy $E_1 = 3m$ on a stationary target. (a) Compute $s$, $W$, $E_1^*$, $p^*$, $V$, and $\gamma$. (b) For $\theta^*=90^\circ$ compute the two final laboratory four-momenta, energies, and angles. (c) Verify four-momentum conservation in both frames and the sum rule. (d) Compare the laboratory opening angle with the non-relativistic value.
 
-**Solution (a).** With $c=1$ and $\mathbf{p}_1$ along $e_3$,
+**Solution (a).** With $c=1$ and $\vec p_1$ along $e_3$,
 $$
 \tilde{P}_1 = i\,3m\,e_0 + \sqrt{8}\,m\,e_3,
 \qquad
@@ -296,13 +296,13 @@ $$
 \qquad
 \tilde{P}_4^* = i\sqrt{2}\,m\,e_0 - m\,e_1 .
 $$
-The COM→labor boost is the rotation generated by $\tilde{\Lambda}^{\natural}_{\rm CM} = \cosh\frac{\Psi}{2} - i\sinh\frac{\Psi}{2}\hat{\mathbf{V}}$ with $\hat{\mathbf{V}} = e_3$, which acts by the component formula of Problem 3(c) with $E_1^* = E_2^* = \sqrt{2}m$, $p^* = m$, $V = 1/\sqrt{2}$, $\gamma = \sqrt{2}$. A particle whose COM momentum is transverse to $\mathbf{V}$ acquires the laboratory momentum $\gamma p^* = \sqrt{2}\,m$ along $\mathbf{V}$ and energy $\gamma E^* = 2m$; a particle with a longitudinal COM component gains or loses according to the sign. Thus
+The COM→labor boost is the rotation generated by $\tilde{\Lambda}^{\natural}_{\rm CM} = \cosh\frac{\Psi}{2} - i\sinh\frac{\Psi}{2}\hat V$ with $\hat V = e_3$, which acts by the component formula of Problem 3(c) with $E_1^* = E_2^* = \sqrt{2}m$, $p^* = m$, $V = 1/\sqrt{2}$, $\gamma = \sqrt{2}$. A particle whose COM momentum is transverse to $\vec V$ acquires the laboratory momentum $\gamma p^* = \sqrt{2}\,m$ along $\vec V$ and energy $\gamma E^* = 2m$; a particle with a longitudinal COM component gains or loses according to the sign. Thus
 $$
 \tilde{P}_3 = i\,2m\,e_0 + m\,e_1 + \sqrt{2}\,m\,e_3,
 \qquad
 \tilde{P}_4 = i\,2m\,e_0 - m\,e_1 + \sqrt{2}\,m\,e_3 .
 $$
-The laboratory energies are $E_3 = E_4 = 2m$, and the laboratory angles measured from $\mathbf{V}$ are
+The laboratory energies are $E_3 = E_4 = 2m$, and the laboratory angles measured from $\vec V$ are
 $$
 \tan\theta_3 = \frac{p_{3\perp}}{p_{3\parallel}} = \frac{1}{\sqrt{2}},
 \qquad
@@ -334,11 +334,11 @@ as the sum rule requires.
 
 ## Problem 6: The Non-Relativistic Limit
 
-**Statement.** Expand the results above for $\mathbf{v}\ll c$ and recover (a) the separate Galilean conservation laws, (b) the fixed-target threshold as a rest-energy balance, and (c) the $90^\circ$ opening angle for equal-mass elastic scattering. Quantify why the example of Problem 5 is far from the limit.
+**Statement.** Expand the results above for $\vec v\ll c$ and recover (a) the separate Galilean conservation laws, (b) the fixed-target threshold as a rest-energy balance, and (c) the $90^\circ$ opening angle for equal-mass elastic scattering. Quantify why the example of Problem 5 is far from the limit.
 
-**Solution (a).** For $\mathbf{v}_a\ll c$, $\gamma_a = 1 + \frac{1}{2}v_a^2/c^2 + O(v^4/c^4)$, and the four-momentum is
+**Solution (a).** For $\vec v_a\ll c$, $\gamma_a = 1 + \frac{1}{2}v_a^2/c^2 + O(v^4/c^4)$, and the four-momentum is
 $$
-\tilde{P}_a = i\left(m_ac + \frac{1}{2}\frac{m_av_a^2}{c}\right)e_0 + m_a\mathbf{v}_a + O(v^3/c^3).
+\tilde{P}_a = i\left(m_ac + \frac{1}{2}\frac{m_av_a^2}{c}\right)e_0 + m_a\vec v_a + O(v^3/c^3).
 $$
 The scalar part is $i/c$ times (rest energy + kinetic energy), and the vector part is the Newtonian momentum. Four-momentum conservation therefore splits into the separate conservation of total rest-plus-kinetic energy and of total Newtonian momentum. Because the rest masses are separately conserved in a non-relativistic collision, this is the Newtonian conservation of kinetic energy and momentum. The single biquaternion equation reproduces both, with the $ict$ convention packing them into one element of $\mathbb{M}_-$.
 
@@ -364,7 +364,7 @@ Two gaps were found while applying the parents. They are reported here, with the
 
 **Gap 2: the parent's invariant-mass construction covers only the timelike total.** The parent (and the two-body companion) define the invariant mass by $N(\tilde{P}) = -M^2c^2$ with real $M\ge0$. Applied to the total four-momentum of a physical pair this is well founded, because the sum of future-directed timelike four-momenta is future-directed timelike. It does not extend to the crossed invariants $t$ and $u$ of a $2\to2$ collision, which are norms of differences and are spacelike (negative $t,u$ at $90^\circ$ in Problem 5). The exercise therefore uses the biquaternion norm directly and does not extract a real mass from $t$ or $u$; the parent's mass construction is silent on these.
 
-**Inherited, and not re-reported.** The direction convention of the star-to-laboratory boost rotor in *The Lorentz Transformation as a Biquaternionic Rotation* (and in the two-body companion) is a known ambiguity: the rotor built with $+\hat{\mathbf{V}}$ carries the laboratory to the COM frame, so the COM-to-laboratory rotation is generated by the quaternion conjugate. This exercise adopts that physical convention and states it explicitly (Problem 3); it was already recorded by the exercise on the two-body decay and is not claimed here as a new finding.
+**Inherited, and not re-reported.** The direction convention of the star-to-laboratory boost rotor in *The Lorentz Transformation as a Biquaternionic Rotation* (and in the two-body companion) is a known ambiguity: the rotor built with $+\hat V$ carries the laboratory to the COM frame, so the COM-to-laboratory rotation is generated by the quaternion conjugate. This exercise adopts that physical convention and states it explicitly (Problem 3); it was already recorded by the exercise on the two-body decay and is not claimed here as a new finding.
 
 ## Summary
 
@@ -395,10 +395,10 @@ We have worked four-momentum conservation for a collision as an application of t
 | $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$ | Complex scalar subspace (centre of the algebra) |
 | $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\langle\tilde{A},\tilde{B}\rangle = \mathrm{Sc}(\tilde{A}\tilde{B}^{\natural})$ | Invariant pairing on $\mathbb{M}_-$ |
-| $\tilde{P}_a = m_a\tilde{U}_a = iE_a/c\,e_0+\mathbf{p}_a$ | Four-momentum, $N(\tilde{P}_a)=-m_a^2c^2$ |
-| $\tilde{U}_a = \gamma_a(ic\,e_0+\mathbf{v}_a)$ | Four-velocity, $N(\tilde{U}_a)=-c^2$ |
+| $\tilde{P}_a = m_a\tilde{V}_a = iE_a/c\,e_0+\vec p_a$ | Four-momentum, $N(\tilde{P}_a)=-m_a^2c^2$ |
+| $\tilde{V}_a = \gamma_a(ic\,e_0+\vec v_a)$ | Four-velocity, $N(\tilde{V}_a)=-c^2$ |
 | $\tilde{P} = \tilde{P}_1+\tilde{P}_2$ | Total four-momentum |
-| $\tilde{\Lambda} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$ | Boost biquaternion, $\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_0$ |
+| $\tilde{\Lambda} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\hat u$ | Boost biquaternion, $\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_0$ |
 | $(\tilde{\Lambda},\tilde{a})$ | Poincaré transformation, $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}+\tilde{a}$ |
 | $\tilde{\Lambda}_{\rm CM} = \sqrt{-\frac{ic}{W}\tilde{P}^{\natural}}$ | Boost biquaternion, laboratory to COM frame |
 | $\tilde{\Lambda}^{\natural}_{\rm CM}$ | Quaternion conjugate, COM frame to laboratory |
@@ -406,9 +406,9 @@ We have worked four-momentum conservation for a collision as an application of t
 | $W = \sqrt{s} = E_1^*+E_2^*$ | Total COM energy |
 | $M_{\rm tot} = W/c^2$ | Total invariant mass of the initial pair |
 | $p^*,q^*$ | Initial and final common COM momentum magnitudes |
-| $E_a^*, \mathbf{p}_a^*$ | COM energies and momenta |
+| $E_a^*, \vec p_a^*$ | COM energies and momenta |
 | $\theta^*$ | COM scattering angle |
-| $\mathbf{V} = \mathbf{P}c^2/E$, $\gamma = E/W$ | Laboratory velocity and Lorentz factor of the COM frame |
+| $\vec V = \vec Pc^2/E$, $\gamma = E/W$ | Laboratory velocity and Lorentz factor of the COM frame |
 | $\Theta$ | Laboratory opening angle |
 | $K_1 = E_1 - m_1c^2$ | Projectile kinetic energy |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |

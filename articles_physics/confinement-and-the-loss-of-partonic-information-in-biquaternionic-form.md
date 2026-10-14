@@ -23,7 +23,7 @@ U(C) = \mathcal{P}\exp\!\left(i\oint_C A_\mu\,dx^\mu\right),
 W(C) = \mathrm{Tr}\,U(C),
 $$
 
-with $\mathcal{P}$ the path ordering and the trace over the informational realization. The states of the informational sector are $\tilde{\rho}\in\mathbb{M}_+$ with $\tilde{\rho}\geq0$, $\mathrm{Tr}\tilde{\rho} = 1$, and are parametrized by the Bloch vector, $\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$, $|\mathbf{r}|\leq1$, in the quaternion realization. The relative entropy is $S(\tilde{\rho}\|\tilde{\sigma})$; the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, $\mathrm{Tr}(e_0) = 2$. The symbols $SU(3)$, $N_c$, $N_f$, $\alpha_s$, and the colour labels $\mathbf{3}$, $\mathbf{8}$ are **standard QCD notation, not framework objects**; they are used only where standard results are quoted or where an object is named as missing. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium.
+with $\mathcal{P}$ the path ordering and the trace over the informational realization. The states of the informational sector are $\tilde{\rho}\in\mathbb{M}_+$ with $\tilde{\rho}\geq0$, $\mathrm{Tr}\tilde{\rho} = 1$, and are parametrized by the Bloch vector, $\tilde{\rho} = \tfrac12(e_0 + i\vec r)$, $|\vec r|\leq1$, in the quaternion realization. The relative entropy is $S(\tilde{\rho}\|\tilde{\sigma})$; the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, $\mathrm{Tr}(e_0) = 2$. The symbols $SU(3)$, $N_c$, $N_f$, $\alpha_s$, and the colour labels $\mathbf{3}$, $\mathbf{8}$ are **standard QCD notation, not framework objects**; they are used only where standard results are quoted or where an object is named as missing. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the speed of light in the medium.
 
 ## Confinement and the Order Parameter
 
@@ -121,19 +121,19 @@ One qualification keeps the model honest. The colour symmetry of QCD is local, s
 
 ### The Restricted State and the Vanishing Relative Entropy
 
-The superselection statement can be made exact without a colour group, on the framework's own state space, by using the commutant structure that any charge superselection rule produces. Let a charge generator be represented on the informational sector by an element of $\mathrm{SU}(2)\subset\mathbb{M}_+$, so that the rotation $\tilde{\rho}\mapsto U\tilde{\rho}\,U^\dagger$ with $U = \exp(i\theta\, n_a ie_a/2)$ is the charge rotation about the axis $\mathbf{n}$. The **accessible** state is the restriction of $\tilde{\rho}$ to the algebra of observables commuting with the charge; in the quaternion realization this restriction is the dephasing of the Bloch vector along the charge axis,
+The superselection statement can be made exact without a colour group, on the framework's own state space, by using the commutant structure that any charge superselection rule produces. Let a charge generator be represented on the informational sector by an element of $\mathrm{SU}(2)\subset\mathbb{M}_+$, so that the rotation $\tilde{\rho}\mapsto U\tilde{\rho}\,U^\dagger$ with $U = \exp(i\theta\, n_a ie_a/2)$ is the charge rotation about the axis $\vec n$. The **accessible** state is the restriction of $\tilde{\rho}$ to the algebra of observables commuting with the charge; in the quaternion realization this restriction is the dephasing of the Bloch vector along the charge axis,
 
 $$
-\mathbf{r} \;\longmapsto\; (\mathbf{r}\cdot\hat{\mathbf{n}})\,\hat{\mathbf{n}},
+\vec r \;\longmapsto\; (\vec r\cdot\hat n)\,\hat n,
 $$
 
 the projection of the Bloch vector onto the axis, which is the full-dephasing limit of the companion article on idempotent projection. Two states that differ by a charge rotation have **the same accessible state**:
 
 $$
-\mathbf{r}\cdot\hat{\mathbf{n}} = (R_{\hat{\mathbf{n}}}(\theta)\mathbf{r})\cdot\hat{\mathbf{n}},
+\vec r\cdot\hat n = (R_{\hat n}(\theta)\vec r)\cdot\hat n,
 $$
 
-because a rotation about $\hat{\mathbf{n}}$ preserves the component along $\hat{\mathbf{n}}$. Their full relative entropy is generally positive, but the relative entropy of their accessible restrictions vanishes. This was checked on explicit states: with $\mathbf{r} = (0.5,-0.3,0.4)$ and a charge rotation about $\hat{\mathbf{n}} = (0,0,1)$ by $1.1$ radians, the full relative entropy was $S(\tilde{\rho}\|\tilde{\rho}_{\mathrm{rot}}) = 0.231562$, while the accessible relative entropy vanished identically, and the two accessible Bloch vectors agreed exactly.
+because a rotation about $\hat n$ preserves the component along $\hat n$. Their full relative entropy is generally positive, but the relative entropy of their accessible restrictions vanishes. This was checked on explicit states: with $\vec r = (0.5,-0.3,0.4)$ and a charge rotation about $\hat n = (0,0,1)$ by $1.1$ radians, the full relative entropy was $S(\tilde{\rho}\|\tilde{\rho}_{\mathrm{rot}}) = 0.231562$, while the accessible relative entropy vanished identically, and the two accessible Bloch vectors agreed exactly.
 
 The lesson is the article's thesis in its sharpest form. A charge rotation is not a gauge transformation: it changes the state, and the full relative entropy detects the change. But the change is invisible to the accessible algebra, and the accessible algebra is the whole of what survives to asymptotic observation. The information lost is exactly the component of the state along the unobservable charge directions, and no re-description recovers it.
 
@@ -254,7 +254,7 @@ The negative result above concerns **colour** confinement, and it stands: the or
 
 ### The Linear Bag Model
 
-Let $q$ be a time-harmonic Dirac bispinor, $\Phi(t,\mathbf{x}) = q(\mathbf{x})e^{i\omega t}$, obeying the massive Dirac equation
+Let $q$ be a time-harmonic Dirac bispinor, $\Phi(t,\vec x) = q(\vec x)e^{i\omega t}$, obeying the massive Dirac equation
 
 $$
 \left(i\omega\gamma_0 - \sum_{k=1}^{3}\gamma_k\partial_k + im\right)q = 0
@@ -263,10 +263,10 @@ $$
 in a bounded domain $\Omega$, with $\partial\Omega$ a closed Liapunov surface. The confinement of the field to $\Omega$ is the boundary condition
 
 $$
-\sum_{k=1}^{3} n_k\gamma_k\,q(\mathbf{x}) = i\,q(\mathbf{x}) \qquad(\mathbf{x}\in\partial\Omega),
+\sum_{k=1}^{3} n_k\gamma_k\,q(\vec x) = i\,q(\vec x) \qquad(\vec x\in\partial\Omega),
 $$
 
-where $\mathbf{n}$ is the unit outward normal; the condition is what forbids the flow of the particle through the surface of the confining region. The equation and the condition together are the **linear bag model**, and the question they pose is a boundary-value question: for which boundary data $q$ on $\partial\Omega$ does the pair have a solution, and is the associated integral operator invertible or Fredholm.
+where $\vec n$ is the unit outward normal; the condition is what forbids the flow of the particle through the surface of the confining region. The equation and the condition together are the **linear bag model**, and the question they pose is a boundary-value question: for which boundary data $q$ on $\partial\Omega$ does the pair have a solution, and is the associated integral operator invertible or Fredholm.
 
 ### The Biquaternionic Reduction
 
@@ -407,9 +407,9 @@ The two confinement pictures must be kept apart, and the framework houses one of
 | $\sigma$ | String tension |
 | $_{L\times T}$, $V(L)$ | Rectangular loop; static potential; $\langle W\rangle\sim e^{-iTV(L)}$ |
 | $I(C) = -\log|\langle W(C)\rangle|$ | Information cost of the loop |
-| $\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$, $|\mathbf{r}|\leq1$ | State of the informational sector (Bloch ball) |
-| $\mathbf{r}\cdot\hat{\mathbf{n}}$ | Component along the charge axis; accessible content |
-| $R_{\hat{\mathbf{n}}}(\theta)$, $U = e^{i\theta n_a ie_a/2}$ | Charge rotation |
+| $\tilde{\rho} = \tfrac12(e_0 + i\vec r)$, $|\vec r|\leq1$ | State of the informational sector (Bloch ball) |
+| $\vec r\cdot\hat n$ | Component along the charge axis; accessible content |
+| $R_{\hat n}(\theta)$, $U = e^{i\theta n_a ie_a/2}$ | Charge rotation |
 | $S(\tilde{\rho}\|\tilde{\sigma})$ | Relative entropy; monotone under channels |
 | $E(\tilde{Q}) = \int_G dU\, UXU^{-1}$ | Colour-singlet conditional expectation; idempotent channel |
 | $\beta_g = -(g^3/16\pi^2)b_0$, $b_0 = 11 - \tfrac{2}{3}N_f$ | One-loop running (transcribed) |

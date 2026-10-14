@@ -62,17 +62,17 @@ We collect the mode operators that the parents supply, because the rest of the a
 **Fermionic (Dirac).** The field expands as
 
 $$
-\hat\psi(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf p}}}\sum_{r=1}^{2}
-\Big[\hat a_r(\mathbf p)u^{(r)}(\mathbf p)e^{-ip\cdot x}
-+\hat b_r^\dagger(\mathbf p)v^{(r)}(\mathbf p)e^{+ip\cdot x}\Big],
+\hat\psi(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}\sum_{r=1}^{2}
+\Big[\hat a_r(\vec p)u^{(r)}(\vec p)e^{-ip\cdot x}
++\hat b_r^\dagger(\vec p)v^{(r)}(\vec p)e^{+ip\cdot x}\Big],
 $$
 
 with $\hat a_r$ annihilating particles and $\hat b_r$ annihilating antiparticles. The mode algebra is
 
 $$
-\{\hat a_r(\mathbf p),\hat a_s^\dagger(\mathbf q)\}
-=\{\hat b_r(\mathbf p),\hat b_s^\dagger(\mathbf q)\}
-=(2\pi)^3\delta_{rs}\delta^{(3)}(\mathbf p-\mathbf q),
+\{\hat a_r(\vec p),\hat a_s^\dagger(\vec q)\}
+=\{\hat b_r(\vec p),\hat b_s^\dagger(\vec q)\}
+=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec q),
 $$
 
 with all other anticommutators vanishing. The particle number, antiparticle number, the total number of quanta and the electric charge are
@@ -84,13 +84,13 @@ $$
 \hat Q=\hat N_a-\hat N_b,
 $$
 
-and Pauli exclusion is the algebraic identity $(\hat a_r^\dagger(\mathbf p))^2=0$. Here $\hat Q=\hat N_a-\hat N_b$ is the conserved fermion number (the corpus's $U(1)$ charge), while $\hat F=\hat N_a+\hat N_b$ is the **total number of quanta**, whose parity is the Dirac article's fermion parity $(-1)^F$; the two agree modulo 2, which is why the parity can be written with either. The notation $\hat Q$ is the Dirac quantization article's; $\hat F$ is introduced here.
+and Pauli exclusion is the algebraic identity $(\hat a_r^\dagger(\vec p))^2=0$. Here $\hat Q=\hat N_a-\hat N_b$ is the conserved fermion number (the corpus's $U(1)$ charge), while $\hat F=\hat N_a+\hat N_b$ is the **total number of quanta**, whose parity is the Dirac article's fermion parity $(-1)^F$; the two agree modulo 2, which is why the parity can be written with either. The notation $\hat Q$ is the Dirac quantization article's; $\hat F$ is introduced here.
 
 **Bosonic (Maxwell).** The potential expands in four polarizations with
 
 $$
-\big[\hat a_r(\mathbf k),\hat a_s^\dagger(\mathbf k')\big]
-=\zeta_r\,\delta_{rs}\,(2\pi)^3\delta^{(3)}(\mathbf k-\mathbf k'),
+\big[\hat a_r(\vec k),\hat a_s^\dagger(\vec k')\big]
+=\zeta_r\,\delta_{rs}\,(2\pi)^3\delta^{(3)}(\vec k-\vec k'),
 \qquad
 (\zeta_0,\zeta_1,\zeta_2,\zeta_3)=(-1,+1,+1,+1),
 $$
@@ -189,7 +189,7 @@ where $|0\rangle=(1,0)^{\mathsf T}$ and $|1\rangle=(0,1)^{\mathsf T}$ in the mod
 
 Three consequences follow at once, all of them recomputed above.
 
-- **The Fock space is the fundamental module.** The single-mode Fock space is the two-dimensional spinor module $\mathbb{C}^2$, on which $\mathbb{B}=\mathrm{End}(\mathbb{C}^2)$ acts irreducibly. The vacuum and the occupied state are its two rays; their projectors are the idempotents $\tilde\Pi_1=\tfrac12(e_0+ie_3)$ and $\tilde\Pi_2=\tfrac12(e_0-ie_3)$, and $\tilde N_{\mathrm{tr}}=\tilde\Pi_2$. The number operator of a single fermionic mode is a pure-state projector of the informational sector.
+- **The Fock space is the fundamental module.** The single-mode Fock space is the two-dimensional spinor module $\mathbb{C}^2$, on which $\mathbb{B}=\mathrm{End}(\mathbb{C}^2)$ acts irreducibly. The vacuum and the occupied state are its two rays; their projectors are the idempotents $\tilde\Pi_+=\tfrac12(e_0+ie_3)$ and $\tilde\Pi_-=\tfrac12(e_0-ie_3)$, the two associated with the root of $+1$ $ie_3$ since $(ie_3)^2=e_0$, and $\tilde N_{\mathrm{tr}}=\tilde\Pi_-$. The number operator of a single fermionic mode is a pure-state projector of the informational sector.
 - **The grading is an element of the algebra.** Fermion parity for one mode is
 
 $$
@@ -273,9 +273,9 @@ The capacity is one mode and no more: $N$ fermionic modes generate $M_{2^N}(\mat
 | $\mathcal{H}_1$, $\mathcal{F}$ | One-particle space; Fock space |
 | $\hat a,\hat a^\dagger$ | Annihilation and creation operators (general) |
 | $\hat N=\sum_i\hat a_i^\dagger\hat a_i$ | Number operator |
-| $\hat a_r(\mathbf p),\hat b_r(\mathbf p)$ | Dirac particle and antiparticle mode operators (parent's notation) |
+| $\hat a_r(\vec p),\hat b_r(\vec p)$ | Dirac particle and antiparticle mode operators (parent's notation) |
 | $\hat F=\hat N_a+\hat N_b$, $\hat Q=\hat N_a-\hat N_b$ | Total number of quanta (parity $(-1)^F$), and fermion number (= electric charge) |
-| $\hat a_r(\mathbf k)$, $\zeta=(-1,+1,+1,+1)$ | Maxwell mode operators and indefinite metric |
+| $\hat a_r(\vec k)$, $\zeta=(-1,+1,+1,+1)$ | Maxwell mode operators and indefinite metric |
 | $\hat N_\gamma$ | Photon number (transverse sum) |
 | $\tilde\Upsilon_1=\tfrac12(ie_1-e_2)$ | Single-mode annihilation operator in $\mathbb{B}$ |
 | $\tilde\Upsilon_2=\tfrac12(ie_1+e_2)$ | Single-mode creation operator in $\mathbb{B}$ |

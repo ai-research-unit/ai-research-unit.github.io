@@ -44,7 +44,7 @@ $$
 = t\,\Phi(\tilde{\rho}_1\otimes\tilde{\rho}_0) + (1-t)\,\Phi(\tilde{\rho}_2\otimes\tilde{\rho}_0).
 $$
 
-And the target map $\tilde{\rho}_x\mapsto\tilde{\rho}_x\otimes\tilde{\rho}_x$ is **quadratic**: doubling the deviation of $\tilde{\rho}_x$ from the maximally mixed state quadruples it in the tensor product, since the Bloch vector of the product is $\mathbf{r}\otimes\mathbf{r}$. The two requirements cannot both hold for a set of states that includes a non-orthogonal pair.
+And the target map $\tilde{\rho}_x\mapsto\tilde{\rho}_x\otimes\tilde{\rho}_x$ is **quadratic**: doubling the deviation of $\tilde{\rho}_x$ from the maximally mixed state quadruples it in the tensor product, since the Bloch vector of the product is $\vec r\otimes\vec r$. The two requirements cannot both hold for a set of states that includes a non-orthogonal pair.
 
 ### The unitary form of the requirement
 

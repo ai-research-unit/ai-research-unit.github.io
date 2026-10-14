@@ -24,12 +24,12 @@ and consequently $\tilde Q^2$ is again a zero divisor, on the same complex line 
 
 **Theorem (the two kinds).** Every $\tilde Q\in\mathscr{Z}$ is exactly one of the following.
 
-1. **Square-zero**: $\tilde Q^2=0$, equivalently $Q_0=0$. These are the pure vectors with $(\mathbf Q,\mathbf Q)=0$.
+1. **Square-zero**: $\tilde Q^2=0$, equivalently $Q_0=0$. These are the pure vectors with $(\vec Q,\vec Q)=0$.
 2. **Idempotent-like**: $\tilde Q=\tau\tilde\Pi$ with $\tau\in\mathbb{C}\setminus\{0\}$ and $\tilde\Pi$ a primitive idempotent; here $Q_0=\tau/2$, and $\tilde Q^2=\tau\tilde Q$.
 
 **Proof.** The matrix $\mathsf{M}_2(\tilde Q)$ is rank one, so its spectrum is $\{0,\tau\}$ with $\tau=\operatorname{tr}\mathsf{M}_2(\tilde Q)=2Q_0$. If $\tau=0$ the matrix is nilpotent of trace and determinant zero, hence its square is zero, so $\tilde Q^2=0$; conversely $\tilde Q^2=0$ forces $N=0$ and $2Q_0\tilde Q=0$, so $Q_0=0$ because $\tilde Q\neq0$. If $\tau\neq0$ the matrix is diagonalisable with eigenvalues $\tau,0$, so $\mathsf{M}_2(\tilde Q)=\tau P$ with $P$ a rank-one idempotent, and transporting along the isomorphism $\mathsf{M}_2$ gives $\tilde Q=\tau\tilde\Pi$ for a rank-one idempotent $\tilde\Pi$ of the algebra; conversely such an element has norm $\tau^2N(\tilde\Pi)=0$ and is non-zero.
 
-**Remark (the pure square-zero elements).** The square-zero elements form the cone $\{\mathbf Q : (\mathbf Q,\mathbf Q)=0\}\subset\mathrm{Vect}(\mathbb{B})$, the isotropic cone of the general plain bilinear form $\mathbf Q\cdot\mathbf Q$ on $\mathbb{C}^3$, and they are precisely the non-zero critical points at which $\mathsf{M}_2(\tilde Q)$ is nilpotent. The example $\tilde Q=e_1+ie_2$ of *The Biquaternion Quadratic Map and Its Julia Sets* is one of them.
+**Remark (the pure square-zero elements).** The square-zero elements form the cone $\{\vec Q : (\vec Q,\vec Q)=0\}\subset\mathrm{Vect}(\mathbb{B})$, the isotropic cone of the general plain bilinear form $\vec Q\cdot\vec Q$ on $\mathbb{C}^3$, and they are precisely the non-zero critical points at which $\mathsf{M}_2(\tilde Q)$ is nilpotent. The example $\tilde Q=e_1+ie_2$ of *The Biquaternion Quadratic Map and Its Julia Sets* is one of them.
 
 ## The Dynamics on the Cone
 

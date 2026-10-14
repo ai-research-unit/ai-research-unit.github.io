@@ -13,7 +13,7 @@ The algebra, the conjugations and the remarkable subspaces are *Biquaternions as
 
 ## The Two Candidate Groups
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$; a general element is $\tilde A=\sum_\mu A_\mu e_\mu$, written $\tilde A=A_0e_0+\mathbf A$ with vector part $\mathbf A=\sum_kA_ke_k$. The plain bilinear form is
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$; a general element is $\tilde A=\sum_\mu A_\mu e_\mu$, written $\tilde A=A_0e_0+\vec A$ with vector part $\vec A=\sum_kA_ke_k$. The plain bilinear form is
 
 $$
 \langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu Q_\mu,\qquad \varepsilon=(1,-1,-1,-1),
@@ -149,21 +149,21 @@ and both signs have determinant $+1$ on the four-dimensional space.
 
 ## The Reflections the Algebra Does Not Reach
 
-**Definition.** For $\tilde U\in\mathbb{B}$ with $q(\tilde U)\neq0$ the **reflection** of the plain form in the direction $\tilde U$ is
+**Definition.** For $\tilde S\in\mathbb{B}$ with $q(\tilde S)\neq0$ the **reflection** of the plain form in the direction $\tilde S$ is
 
 $$
-\rho_{\tilde U}(\tilde X)=\tilde X-\frac{2\langle\tilde X,\tilde U\rangle}{q(\tilde U)}\,\tilde U .
+\rho_{\tilde S}(\tilde X)=\tilde X-\frac{2\langle\tilde X,\tilde S\rangle}{q(\tilde S)}\,\tilde S .
 $$
 
-**Theorem (the reflections are not two-sided operators).** Every $\rho_{\tilde U}$ is an isometry of the plain form of determinant $-1$, and no $\rho_{\tilde U}$ is of the form $L_{\tilde A}R_{\tilde B}$. Consequently the reflections lie outside the two-sided family, and so does every product of an odd number of them.
+**Theorem (the reflections are not two-sided operators).** Every $\rho_{\tilde S}$ is an isometry of the plain form of determinant $-1$, and no $\rho_{\tilde S}$ is of the form $L_{\tilde A}R_{\tilde B}$. Consequently the reflections lie outside the two-sided family, and so does every product of an odd number of them.
 
-*Proof.* The reflection formula is the definition of the reflection of a quadratic space, so $\rho_{\tilde U}$ is an isometry of determinant $-1$; both were verified on random directions $\tilde U$. For the second statement, a two-sided operator that is an isometry is $\pm\mathrm{Ad}_{\tilde A}$, so it suffices to exclude the two maps $\pm\mathrm{Ad}_{\tilde A}$, and the exclusion is by the constant-sign rule. An inner automorphism is multiplicative, $\mathrm{Ad}_{\tilde A}(\tilde X\tilde Y)=\mathrm{Ad}_{\tilde A}\tilde X\cdot\mathrm{Ad}_{\tilde A}\tilde Y$, and the negative coset is anti-multiplicative, $-\mathrm{Ad}_{\tilde A}(\tilde X\tilde Y)=-\mathrm{Ad}_{\tilde A}\tilde X\cdot\mathrm{Ad}_{\tilde A}\tilde Y$: each satisfies
+*Proof.* The reflection formula is the definition of the reflection of a quadratic space, so $\rho_{\tilde S}$ is an isometry of determinant $-1$; both were verified on random directions $\tilde S$. For the second statement, a two-sided operator that is an isometry is $\pm\mathrm{Ad}_{\tilde A}$, so it suffices to exclude the two maps $\pm\mathrm{Ad}_{\tilde A}$, and the exclusion is by the constant-sign rule. An inner automorphism is multiplicative, $\mathrm{Ad}_{\tilde A}(\tilde X\tilde Y)=\mathrm{Ad}_{\tilde A}\tilde X\cdot\mathrm{Ad}_{\tilde A}\tilde Y$, and the negative coset is anti-multiplicative, $-\mathrm{Ad}_{\tilde A}(\tilde X\tilde Y)=-\mathrm{Ad}_{\tilde A}\tilde X\cdot\mathrm{Ad}_{\tilde A}\tilde Y$: each satisfies
 
 $$
 F(\tilde X\tilde Y)=\varepsilon F(\tilde X)F(\tilde Y)\qquad\text{with a constant sign }\varepsilon=\pm1,
 $$
 
-verified as the singleton sets $\{+1\}$ and $\{-1\}$ of ratios over random pairs. A reflection does not: for $\tilde U=\lambda e_0$ the map is $\rho_{\lambda e_0}=\operatorname{diag}(-1,1,1,1)$, and if it were $-\mathrm{Ad}_{\tilde A}$ then $\mathrm{Ad}_{\tilde A}$ would have to act as $-1$ on the traceless subspace, of determinant $-1$, whereas $\det\bigl(\mathrm{Ad}_{\tilde A}|_V\bigr)=+1$, verified on random units; and if it were $+\mathrm{Ad}_{\tilde A}$ it would have to fix $e_0$, which it negates. For a pure direction $\tilde U\in V$ the reflection fixes $e_0$ and negates $\tilde U$, so the only remaining possibility is $+\mathrm{Ad}_{\tilde A}$, an algebra automorphism; and it is not multiplicative: for $\tilde W\in V$ with $\langle\tilde U,\tilde W\rangle=0$ and $\tilde W$ not proportional to $\tilde U$, the product $\tilde U\tilde W$ lies in $V$ and is orthogonal for the plain form to $\tilde U$, hence fixed, while $\rho_{\tilde U}(\tilde U)\rho_{\tilde U}(\tilde W)=(-\tilde U)\tilde W=-\tilde U\tilde W$, a contradiction as soon as $\tilde U\tilde W\neq0$. For a mixed direction $\tilde U$ with $U_0\neq0$ the reflection moves the centre, $\rho_{\tilde U}(e_0)=e_0-2U_0q(\tilde U)^{-1}\tilde U$, and cannot be $\pm\mathrm{Ad}_{\tilde A}$, which fixes or negates it. The decomposability test settles all cases at once and independently: written in the basis $e_k[\,]e_l$ of $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$, the tensor rank of $\rho_{\tilde U}$ is four for every direction tested — the central, the pure and the mixed — while a two-sided operator has tensor rank one.
+verified as the singleton sets $\{+1\}$ and $\{-1\}$ of ratios over random pairs. A reflection does not: for $\tilde S=\lambda e_0$ the map is $\rho_{\lambda e_0}=\operatorname{diag}(-1,1,1,1)$, and if it were $-\mathrm{Ad}_{\tilde A}$ then $\mathrm{Ad}_{\tilde A}$ would have to act as $-1$ on the traceless subspace, of determinant $-1$, whereas $\det\bigl(\mathrm{Ad}_{\tilde A}|_V\bigr)=+1$, verified on random units; and if it were $+\mathrm{Ad}_{\tilde A}$ it would have to fix $e_0$, which it negates. For a pure direction $\tilde S\in V$ the reflection fixes $e_0$ and negates $\tilde S$, so the only remaining possibility is $+\mathrm{Ad}_{\tilde A}$, an algebra automorphism; and it is not multiplicative: for $\tilde W\in V$ with $\langle\tilde S,\tilde W\rangle=0$ and $\tilde W$ not proportional to $\tilde S$, the product $\tilde S\tilde W$ lies in $V$ and is orthogonal for the plain form to $\tilde S$, hence fixed, while $\rho_{\tilde S}(\tilde S)\rho_{\tilde S}(\tilde W)=(-\tilde S)\tilde W=-\tilde S\tilde W$, a contradiction as soon as $\tilde S\tilde W\neq0$. For a mixed direction $\tilde S$ with $U_0\neq0$ the reflection moves the centre, $\rho_{\tilde S}(e_0)=e_0-2U_0q(\tilde S)^{-1}\tilde S$, and cannot be $\pm\mathrm{Ad}_{\tilde A}$, which fixes or negates it. The decomposability test settles all cases at once and independently: written in the basis $e_k[\,]e_l$ of $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$, the tensor rank of $\rho_{\tilde S}$ is four for every direction tested — the central, the pure and the mixed — while a two-sided operator has tensor rank one.
 
 **Proposition (the even products split).** A product of two reflections is an isometry of determinant $+1$. When both directions lie in the vector subspace the product **is** a two-sided operator: for the orthogonal pure directions $e_1,e_2$,
 
@@ -175,7 +175,7 @@ verified including the parameter, and in general a product of two reflections in
 
 **Corollary (what the algebra reaches of the orthogonal group).** The isometry group of the plain form is $O(\mathbb{B},q)\cong O_4(\mathbb{C})$, of complex dimension six; the operators the algebra supplies are the $3$-dimensional family $\{\pm\mathrm{Ad}_{\tilde A}\}$, and no reflection, and no product of an odd number of reflections, is among them. The isometries the algebra does not carry are the improper ones, and those of their even products that leave $\{\pm\mathrm{Ad}_{\tilde A}\}$: their carrier is the Clifford algebra of the form, not the algebra. The reflections are read in the odd slot of the Clifford envelope (*Biquaternion Versors and the Orthogonal Group*) and in the general theory (*The Clifford, Pin and Spin Groups with Signed Inner Conjugation*), where the reflection in a non-isotropic vector is $\rho_u(v)=-uvu^{-1}$.
 
-**Remark (the companion reflections are two-sided, and this is the whole difference).** The reflections of the quaternionic category are the signed inner conjugations $\Theta_{\tilde V}(\tilde Y)=\tilde V\tilde Y\tilde V^{\natural}$ for $N(\tilde V)=\pm1$, the maps that carry the reflections of the vector subspace. They **are** members of the plain two-sided family, $L_{\tilde V}R_{\tilde V^{\natural}}$, with the product of the parameters equal to $N(\tilde V)e_0=\pm e_0$; by the criterion of this article they are isometries of the plain form as well, and they are the operators $\pm\mathrm{Ad}_{\tilde V}$. The two categories therefore read the same operator family with different forms: for the quaternionic form the reflections are inside the family and generate the pin group, for the plain form the reflections in directions of the algebra are outside it and the family supplies only the inner automorphisms. The biquaternion reflections of the vector subspace, in the third reading of the corpus, are *Biquaternion Rotations and Lorentz Transformations*.
+**Remark (the companion reflections are two-sided, and this is the whole difference).** The reflections of the quaternionic category are the signed inner conjugations $\Theta_{\tilde R}(\tilde Y)=\tilde R\tilde Y\tilde R^{\natural}$ for $N(\tilde R)=\pm1$, the maps that carry the reflections of the vector subspace. They **are** members of the plain two-sided family, $L_{\tilde R}R_{\tilde R^{\natural}}$, with the product of the parameters equal to $N(\tilde R)e_0=\pm e_0$; by the criterion of this article they are isometries of the plain form as well, and they are the operators $\pm\mathrm{Ad}_{\tilde R}$. The two categories therefore read the same operator family with different forms: for the quaternionic form the reflections are inside the family and generate the pin group, for the plain form the reflections in directions of the algebra are outside it and the family supplies only the inner automorphisms. The biquaternion reflections of the vector subspace, in the third reading of the corpus, are *Biquaternion Rotations and Lorentz Transformations*.
 
 ## Worked Examples
 
@@ -191,21 +191,21 @@ so the action cannot detect the norm: $\mathrm{Ad}_{\tilde A}$ and $\mathrm{Ad}_
 
 **The central element of norm minus one.** For $\tilde A=ie_0$ one has $N=-1$ and $q=-1$, a unit of the candidate pin shell; the operator is $\mathrm{Ad}_{ie_0}=\mathrm{id}$, verified. In the quaternionic category the same element gives $\Theta_{ie_0}=-\mathrm{id}$, the twisted coset of the cover. The example is the sharpest single instance of the difference between the two articles.
 
-**A reflection in a vector direction.** For $\tilde U=e_1$ the reflection is $\rho_{e_1}=\operatorname{diag}(1,-1,1,1)$ in the basis $e_0,e_1,e_2,e_3$: it fixes the centre and the orthogonal complement of $e_1$ and negates $e_1$, so it has determinant $-1$ on the four-dimensional space and $-1$ on the vector subspace. Its tensor rank is four, so it is not of the form $L_{\tilde A}R_{\tilde B}$: the algebra does not carry this isometry. The same holds for the neighbouring direction $e_2$, and for the unit $e_1$ itself, whose operators $L_{e_1}R_{e_1}=\operatorname{diag}(-1,-1,1,1)$ and $\mathrm{Ad}_{e_1}=\operatorname{diag}(1,1,-1,-1)$ are two-sided and are not this reflection.
+**A reflection in a vector direction.** For $\tilde S=e_1$ the reflection is $\rho_{e_1}=\operatorname{diag}(1,-1,1,1)$ in the basis $e_0,e_1,e_2,e_3$: it fixes the centre and the orthogonal complement of $e_1$ and negates $e_1$, so it has determinant $-1$ on the four-dimensional space and $-1$ on the vector subspace. Its tensor rank is four, so it is not of the form $L_{\tilde A}R_{\tilde B}$: the algebra does not carry this isometry. The same holds for the neighbouring direction $e_2$, and for the unit $e_1$ itself, whose operators $L_{e_1}R_{e_1}=\operatorname{diag}(-1,-1,1,1)$ and $\mathrm{Ad}_{e_1}=\operatorname{diag}(1,1,-1,-1)$ are two-sided and are not this reflection.
 
-**A reflection in the central direction.** For $\tilde U=e_0$ one has $q=1$ and $\rho_{e_0}=\operatorname{diag}(-1,1,1,1)$: it negates the centre and fixes the vector subspace, so it is not of the form $\pm\mathrm{Ad}_{\tilde A}$ — the positive coset fixes the centre, and the negative one acts on the vector subspace with determinant $-1$, while this map fixes that subspace. Its tensor rank is four. The direction that looks most innocent is already outside the family.
+**A reflection in the central direction.** For $\tilde S=e_0$ one has $q=1$ and $\rho_{e_0}=\operatorname{diag}(-1,1,1,1)$: it negates the centre and fixes the vector subspace, so it is not of the form $\pm\mathrm{Ad}_{\tilde A}$ — the positive coset fixes the centre, and the negative one acts on the vector subspace with determinant $-1$, while this map fixes that subspace. Its tensor rank is four. The direction that looks most innocent is already outside the family.
 
-**A reflection in a mixed direction.** For $\tilde U=e_0+2e_1$ one has $q(\tilde U)=1-4=-3$, and
+**A reflection in a mixed direction.** For $\tilde S=e_0+2e_1$ one has $q(\tilde S)=1-4=-3$, and
 
 $$
-\rho_{\tilde U}(e_0)=e_0-\frac{2}{-3}(e_0+2e_1)=\tfrac53e_0+\tfrac43e_1\notin\{\pm e_0\},
+\rho_{\tilde S}(e_0)=e_0-\frac{2}{-3}(e_0+2e_1)=\tfrac53e_0+\tfrac43e_1\notin\{\pm e_0\},
 $$
 
 so the reflection moves the centre and is not an inner automorphism up to sign; its tensor rank is four as well.
 
 **A product of two vector reflections.** $\rho_{e_1}\rho_{e_2}=\mathrm{Ad}_{e_3}$: it fixes the centre and $e_3$ and negates $e_1,e_2$, a half-turn of the vector subspace and an operator of the two-sided family, with parameter product $e_0$. The example shows that the obstruction is in the odd part only.
 
-**A null direction.** For $\tilde U=e_1+ie_2$ one has $q(\tilde U)=0$ and $N(\tilde U)=0$: the element is a zero divisor of the algebra, not a unit, and the reflection formula does not apply, its normalisation being undefined. The candidate shell excludes it and the unit group excludes it too.
+**A null direction.** For $\tilde S=e_1+ie_2$ one has $q(\tilde S)=0$ and $N(\tilde S)=0$: the element is a zero divisor of the algebra, not a unit, and the reflection formula does not apply, its normalisation being undefined. The candidate shell excludes it and the unit group excludes it too.
 
 **The normalisation of a parameter.** For $\tilde A=e_0+2e_1$, $N(\tilde A)=5$ and $\tilde A/\sqrt5$ has norm one and the same inner automorphism. The example is the section of the central quotient used in the corollary: the shell $\mathrm{SL}_2(\mathbb{C})$ selects a representative of each class of $\mathbb{B}^{\times}/\mathbb{C}^{\times}$ up to sign, and never a subfamily of operators.
 
@@ -228,7 +228,7 @@ The plain form $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$ c
 | $\mathrm{Inn}(\mathbb{B})\cong PGL_2(\mathbb{C})\cong SO_3(\mathbb{C})$ | The rotation group of the vector subspace $V$ |
 | $\mathrm{SL}_2(\mathbb{C})/\{\pm e_0\}\cong SO_3(\mathbb{C})$ | The classical two-to-one cover, by normalising $N$ |
 | $\{\pm\mathrm{Ad}_{\tilde A}\}$ | The two-sided isometries; $\det=+1$; dimension three of six |
-| $\rho_{\tilde U}(\tilde X)=\tilde X-2\langle\tilde X,\tilde U\rangle q(\tilde U)^{-1}\tilde U$ | The reflection; an isometry of determinant $-1$, **not** two-sided |
+| $\rho_{\tilde S}(\tilde X)=\tilde X-2\langle\tilde X,\tilde S\rangle q(\tilde S)^{-1}\tilde S$ | The reflection; an isometry of determinant $-1$, **not** two-sided |
 | $\rho_{e_1}\rho_{e_2}=\mathrm{Ad}_{e_3}$ | Two vector reflections make an inner automorphism |
 | $\langle\Theta_{\tilde A}\tilde X,\Theta_{\tilde A}\tilde Y\rangle_{\natural}=N(\tilde A)^{2}\langle\tilde X,\tilde Y\rangle_{\natural}$ | The quaternionic isometry condition $N=\pm1$; vacuous for the plain form |
 

@@ -26,7 +26,7 @@ Matching the matrix form $\mathsf{M}_2(\tilde{Q})=uv^{T}$ of *The 2×2 Matrix El
 
 ## Spinors as the Minimal Left Ideals
 
-The minimal left ideals of $\mathbb{B}\cong M_2(\mathbb{C})$ are the two lines $\mathbb{B}\tilde\Pi_1$ and $\mathbb{B}\tilde\Pi_2$, where $\tilde\Pi_{1,2}=\tfrac12(e_0\pm i\hat{\mathbf{u}})$ are a complete pair of orthogonal idempotents (*Idempotents of the General Plain Algebra*, *Ideals and Peirce Decomposition of the General Plain Algebra*). Each is a copy of $\mathbb{C}^2$ as a left $\mathbb{B}$-module, and the algebra is their direct sum,
+The minimal left ideals of $\mathbb{B}\cong M_2(\mathbb{C})$ are the two lines $\mathbb{B}\tilde\Pi_1$ and $\mathbb{B}\tilde\Pi_2$, where $\tilde\Pi_{1,2}=\tfrac12(e_0\pm i\hat u)$ are a complete pair of orthogonal idempotents (*Idempotents of the General Plain Algebra*, *Ideals and Peirce Decomposition of the General Plain Algebra*). Each is a copy of $\mathbb{C}^2$ as a left $\mathbb{B}$-module, and the algebra is their direct sum,
 $$
 \mathbb{B}=\mathbb{B}\tilde\Pi_1\oplus\mathbb{B}\tilde\Pi_2,
 $$

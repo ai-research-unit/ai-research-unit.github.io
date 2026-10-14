@@ -11,7 +11,7 @@ Two of the remarkable subspaces of the biquaternion algebra are the two sectors 
 
 Each of the four is a physical object before it is an algebraic one. The complex time sector is where the two times and the global phase live; the complex space sector is where the electromagnetic field strength and the generators of the Lorentz transformations live; the real sector is the Euclidean, or Wick-rotated, interpretation of the four-vector space, and it is the home of the rotation rotors; the imaginary sector is the sector every coefficient of which carries the central imaginary, the sector of the boost generators.
 
-Three facts are fixed for each of the four. The first is **how its dimension is written**: as a real dimension always, and as a complex dimension in the two cases where that second writing exists. The second is **which physics it carries**: the two time coordinates $ict$ and $ct'$ for the first, the two space blocks $\mathbf{x}$ and $i\mathbf{x}'$ for the second, the mixed assignments for the last two. The third is **whether the four forms of the algebra carry an alternating companion on it**, the *area pairing* of the sector: present on the complex time and on the complex space sector, and absent on the real and on the imaginary one. Together the four account for the whole of the physical dictionary of a biquaternion, since the two sectors account for the rest.
+Three facts are fixed for each of the four. The first is **how its dimension is written**: as a real dimension always, and as a complex dimension in the two cases where that second writing exists. The second is **which physics it carries**: the two time coordinates $ict$ and $ct'$ for the first, the two space blocks $\vec x$ and $i\vec x'$ for the second, the mixed assignments for the last two. The third is **whether the four forms of the algebra carry an alternating companion on it**, the *area pairing* of the sector: present on the complex time and on the complex space sector, and absent on the real and on the imaginary one. Together the four account for the whole of the physical dictionary of a biquaternion, since the two sectors account for the rest.
 
 The definitions, the involution that cuts out each subspace and the parameter dictionary are fixed in *Conventions in the Biquaternion Universe*; the place of the four among the remarkable subspaces is in *Relations Between Subspaces*; the four forms read on each of the four, with their real and imaginary parts, are *Remarkable Subspaces and the Four Forms*. This article counts the dimensions, places the physics and names the area pairing.
 
@@ -31,7 +31,7 @@ Its physics is the physics of a number. A quantity that can take a definite valu
 
 This is the set of elements with vanishing scalar part, the traceless part of the algebra; it is also the derived subspace $[\mathbb{B}, \mathbb{B}]$, spanned by all commutators, and it is a Lie algebra. Its elements are the complex vectors $z_1 e_1 + z_2 e_2 + z_3 e_3$.
 
-It carries **both spatial blocks and no temporal one**. The three real directions carry the material space $\mathbf{x}$, the three imaginary ones the informational space $i\mathbf{x}'$, and the three complex coordinates are the three complex spatial directions $x + ix'$, $y + iy'$, $z + iz'$.
+It carries **both spatial blocks and no temporal one**. The three real directions carry the material space $\vec x$, the three imaginary ones the informational space $i\vec x'$, and the three complex coordinates are the three complex spatial directions $x + ix'$, $y + iy'$, $z + iz'$.
 
 Its physics is the physics of a complex three-vector. The central imaginary acts on this sector as an internal rotation — the electric–magnetic duality rotation — and the three complex coordinates are the complex combination of the electromagnetic field strength, so that the electric and the magnetic parts are the real and the imaginary parts of one complex object and the two classical field invariants are the real and imaginary parts of one complex form. The same six real directions carry the six generators of the Lorentz group: the three real vector units generate the rotations and the three imaginary ones the boosts, so a single complex three-vector is at once a field configuration and a generator of the transformations that act on it. That is the role the sector plays in the physics of spin one.
 
@@ -44,12 +44,12 @@ This is the set of elements with no coefficient carrying the central imaginary: 
 It carries the **informational time with the material space**,
 
 $$
-\tilde{Q} = (ct')\,e_0 + \mathbf{x} = ct'\,e_0 + x e_1 + y e_2 + z e_3 .
+\tilde{Q} = (ct')\,e_0 + \vec x = ct'\,e_0 + x e_1 + y e_2 + z e_3 .
 $$
 
 Its physics is the Euclidean four-dimensional geometry. Because no coefficient carries the $i$, the $ict$ writing is unavailable inside the sector: the temporal coefficient is real, the four-dimensional form is positive definite of signature $(4,0)$, there is no null direction and no light cone, and no direction is singled out as time. This is exactly what the Wick rotation produces, and it is why the sector is called real. The unit elements are the rotation rotors, and their action is the rotation of the material space, with the two-to-one cover of the rotation group.
 
-**No area pairing.** The alternating companion of the four forms is **zero** on the real sector. The reason is that the companion is read by multiplying one element by the central imaginary, and the multiplication by $i$ carries the sector out of itself: it sends $ct'\,e_0 + \mathbf{x}$ to $i(ct'\,e_0 + \mathbf{x})$, an element of the imaginary sector. The sector holds one member of each conjugate pair and never both — the informational time, whose partner is the material time, and the material space, whose partners are the informational directions — so there is no pair of directions inside the sector for the companion to join, and it vanishes identically. On the sector the four forms are real, each is recovered from its own diagonal, and the only pairing left is the real symmetric one of the diagonal.
+**No area pairing.** The alternating companion of the four forms is **zero** on the real sector. The reason is that the companion is read by multiplying one element by the central imaginary, and the multiplication by $i$ carries the sector out of itself: it sends $ct'\,e_0 + \vec x$ to $i(ct'\,e_0 + \vec x)$, an element of the imaginary sector. The sector holds one member of each conjugate pair and never both — the informational time, whose partner is the material time, and the material space, whose partners are the informational directions — so there is no pair of directions inside the sector for the companion to join, and it vanishes identically. On the sector the four forms are real, each is recovered from its own diagonal, and the only pairing left is the real symmetric one of the diagonal.
 
 ### The Imaginary Sector $i\mathbb{H}_{\mathbb{B}}$
 
@@ -58,10 +58,10 @@ This is the image of the real sector under multiplication by the central imagina
 It carries the **material time with the informational space**,
 
 $$
-\tilde{Q} = ict\,e_0 + i\mathbf{x}' = i\bigl(ct\,e_0 + \mathbf{x}'\bigr) .
+\tilde{Q} = ict\,e_0 + i\vec x' = i\bigl(ct\,e_0 + \vec x'\bigr) .
 $$
 
-Its physics is the sector of the imaginary coefficients and of the boost generators. The material time $ict$ is here, with the informational space $i\mathbf{x}'$, the reverse assignment to the real sector. It is also where the infinitesimal generators of the boosts lie, the three imaginary vector units $ie_1, ie_2, ie_3$; a finite boost does not lie in the sector, since its scalar part is real, so the sector holds the generators and the boosts themselves are obtained by leaving it. It is the negative-definite counterpart of the real sector, with no null direction and no light cone.
+Its physics is the sector of the imaginary coefficients and of the boost generators. The material time $ict$ is here, with the informational space $i\vec x'$, the reverse assignment to the real sector. It is also where the infinitesimal generators of the boosts lie, the three imaginary vector units $ie_1, ie_2, ie_3$; a finite boost does not lie in the sector, since its scalar part is real, so the sector holds the generators and the boosts themselves are obtained by leaving it. It is the negative-definite counterpart of the real sector, with no null direction and no light cone.
 
 **No area pairing.** The alternating companion is **zero** here too, and for the mirror reason: the multiplication by $i$ carries the imaginary sector into the real one, so the sector holds the other member of each conjugate pair — the material time and the informational space — and again never both members of a pair. The two mixed sectors are the two halves of the dictionary that each contain exactly one member of every conjugate pair, and the area pairing needs both.
 
@@ -102,7 +102,7 @@ The same map $i$ **exchanges** the other two, $i\,\mathbb{H}_{\mathbb{B}} = i\ma
 
 ## The Physical Coordinates
 
-The dictionary assigns one real parameter to each real coordinate: $q_0 = ct'$ and $q'_0 = ct$ for the two times, and $q_k = (x, y, z)$, $q'_k = (x', y', z')$ for the two spaces, with $\mathbf{x} = x e_1 + y e_2 + z e_3$ the material space and $i\mathbf{x}' = i(x' e_1 + y' e_2 + z' e_3)$ the informational space. The two temporal writings are the informational $ct'$ and the material $ict$; the two spatial writings are the material $\mathbf{x}$ and the informational $i\mathbf{x}'$. The four sectors take them as follows.
+The dictionary assigns one real parameter to each real coordinate: $q_0 = ct'$ and $q'_0 = ct$ for the two times, and $q_k = (x, y, z)$, $q'_k = (x', y', z')$ for the two spaces, with $\vec x = x e_1 + y e_2 + z e_3$ the material space and $i\vec x' = i(x' e_1 + y' e_2 + z' e_3)$ the informational space. The two temporal writings are the informational $ct'$ and the material $ict$; the two spatial writings are the material $\vec x$ and the informational $i\vec x'$. The four sectors take them as follows.
 
 ### The Two Times on One Complex Axis
 
@@ -119,7 +119,7 @@ The informational time stands on the real direction $e_0$, the material time on 
 The complex space sector takes both spatial writings and neither temporal one,
 
 $$
-\tilde{Q} = \mathbf{x} + i\mathbf{x}' = (x e_1 + y e_2 + z e_3) + i(x' e_1 + y' e_2 + z' e_3) .
+\tilde{Q} = \vec x + i\vec x' = (x e_1 + y e_2 + z e_3) + i(x' e_1 + y' e_2 + z' e_3) .
 $$
 
 The material space stands on the real directions, the informational space on the imaginary ones, and the three complex coordinates $x + ix'$, $y + iy'$, $z + iz'$ are the complex space. The sector is the complex space sector precisely because both of its blocks are spaces, and multiplication by $i$ on it is the duality rotation of the complex three-vector.
@@ -129,7 +129,7 @@ The material space stands on the real directions, the informational space on the
 The real sector takes the informational writing of time with the material writing of space,
 
 $$
-\tilde{Q} = (ct')\,e_0 + \mathbf{x} = ct'\,e_0 + x e_1 + y e_2 + z e_3 .
+\tilde{Q} = (ct')\,e_0 + \vec x = ct'\,e_0 + x e_1 + y e_2 + z e_3 .
 $$
 
 Both parts appear with real coefficients, and the four-vector it carries is the Euclidean four-vector of the Wick-rotated interpretation. The material time $ict$ is not available here: the $ict$ writing needs the central imaginary, and the sector is defined by the absence of it.
@@ -139,7 +139,7 @@ Both parts appear with real coefficients, and the four-vector it carries is the 
 The imaginary sector takes the reverse mixed assignment, the material writing of time with the informational writing of space,
 
 $$
-\tilde{Q} = ict\,e_0 + i\mathbf{x}' = i\,(ct)\,e_0 + i\,(x' e_1 + y' e_2 + z' e_3) = i\bigl(ct\,e_0 + \mathbf{x}'\bigr) .
+\tilde{Q} = ict\,e_0 + i\vec x' = i\,(ct)\,e_0 + i\,(x' e_1 + y' e_2 + z' e_3) = i\bigl(ct\,e_0 + \vec x'\bigr) .
 $$
 
 Every coefficient carries the central imaginary, and the sector is the image of the real one under multiplication by $i$.
@@ -150,10 +150,10 @@ There are two times and two spaces, hence four ways to take one of each; each be
 
 | sector | temporal writing | spatial writing | element |
 |---|---|---|---|
-| real $\mathbb{H}_{\mathbb{B}}$ | $ct'$ | $\mathbf{x}$ | $ct'\,e_0 + \mathbf{x}$ |
-| informational $\mathbb{M}_+$ | $ct'$ | $i\mathbf{x}'$ | $ct'\,e_0 + i\mathbf{x}'$ |
-| imaginary $i\mathbb{H}_{\mathbb{B}}$ | $ict$ | $i\mathbf{x}'$ | $ict\,e_0 + i\mathbf{x}'$ |
-| material $\mathbb{M}_-$ | $ict$ | $\mathbf{x}$ | $ict\,e_0 + \mathbf{x}$ |
+| real $\mathbb{H}_{\mathbb{B}}$ | $ct'$ | $\vec x$ | $ct'\,e_0 + \vec x$ |
+| informational $\mathbb{M}_+$ | $ct'$ | $i\vec x'$ | $ct'\,e_0 + i\vec x'$ |
+| imaginary $i\mathbb{H}_{\mathbb{B}}$ | $ict$ | $i\vec x'$ | $ict\,e_0 + i\vec x'$ |
+| material $\mathbb{M}_-$ | $ict$ | $\vec x$ | $ict\,e_0 + \vec x$ |
 
 The complex time and the complex space sector stand outside the table because each takes two coordinates of the same kind at once: the complex time sector both times and no space, the complex space sector both spaces and no time. In this sense the four other subspaces are the two homogeneous sectors and the two mixed ones, and the remarkable subspaces of the algebra are exhausted by them together with the two sectors.
 
@@ -183,7 +183,7 @@ The four subspaces read as four physical structures of the framework. The comple
 
 Read as a **superstructure**, the real and imaginary sectors carry a $\mathbb{Z}_2$ grading, even for the real sector and odd for the imaginary one, and the interpretation is offered with the caution that this is the *computational* split, the split of the coefficients, while the *physical* split is the sector one; the two must not be conflated. The sectors that carry a complex dimension, the complex time and the complex space sector, are exactly the two on which $i$ closes, which is why they and not the real and the imaginary sector carry the area pairing.
 
-Read as **phase space**, the complex space sector is the framework's $T^*\mathbb{R}^3$: its three complex coordinates are the three configuration–momentum pairs, one to each spatial direction, and the area pairing is the symplectic form, whose primitive $\int\mathbf p\cdot d\mathbf q$ is the action (*The Symplectic Form and the Biquaternion Norm Cone*). The two sides of each pair are the real spatial direction, which carries the configuration, and its imaginary partner $ie_k$, which carries the momentum; the identification of the two is the algebra's **fixed** complex structure $i$ and not a metric, so the framework's tangent–cotangent isomorphism is rigid, the same at every point and for every pair, and is a structure rather than a dynamical Legendre transform (*Why Complexify Spacetime?*). Boundary: this is the kinematic phase space; the dynamics requires the Hamiltonian, which the algebra supplies only as an acting element.
+Read as **phase space**, the complex space sector is the framework's $T^*\mathbb{R}^3$: its three complex coordinates are the three configuration–momentum pairs, one to each spatial direction, and the area pairing is the symplectic form, whose primitive $\int\vec p\cdot d\vec q$ is the action (*The Symplectic Form and the Biquaternion Norm Cone*). The two sides of each pair are the real spatial direction, which carries the configuration, and its imaginary partner $ie_k$, which carries the momentum; the identification of the two is the algebra's **fixed** complex structure $i$ and not a metric, so the framework's tangent–cotangent isomorphism is rigid, the same at every point and for every pair, and is a structure rather than a dynamical Legendre transform (*Why Complexify Spacetime?*). Boundary: this is the kinematic phase space; the dynamics requires the Hamiltonian, which the algebra supplies only as an acting element.
 
 Read as **energy and time**, the complex time sector carries the framework's one temporal degree of freedom and its energy. The central scalar $h_0 e_0$ generating the phase $\exp(-ih_0t/\hbar)e_0$ is the energy, and the material time $ict$ is the clock it is conjugate to in the Hamiltonian sense — the phase being the action $e^{iS/\hbar}$ — so the sector is one energy–time pair, and the interpretation is the temporal twin of the phase-space interpretation above. The two times are separately one pair, the one the area pairing conjugates, and the two pairings must not be conflated: the area pairing conjugates the informational time with the material time, while the energy–time conjugacy pairs a central scalar with the clock (*Each Sector Is the Other's Clock: the Sector Exchange as Relational Time*). Boundary: the algebra supplies the pair and not the Hamiltonian, and the clock article's statement that the exchange supplies no rate is untouched; the conjugate named here is the generator of the central phase, a $c$-number, and not an operator-valued observable.
 
@@ -212,10 +212,10 @@ Read as pairings, the first two of the four carry an **area pairing** and the la
 | bar | Complex conjugation; fixed sector the real, anti-fixed the imaginary |
 | $i\,\mathbb{H}_{\mathbb{B}} = i\mathbb{H}_{\mathbb{B}}$ | The scalar imaginary exchanges the real and the imaginary sector (the Wick rotation) |
 | $q_0 = ct'$, $q'_0 = ct$ | Informational time $ct'$ and material time $ict$ |
-| $\mathbf{x} = x e_1 + y e_2 + z e_3$ | Material space |
-| $i\mathbf{x}' = i(x' e_1 + y' e_2 + z' e_3)$ | Informational space |
+| $\vec x = x e_1 + y e_2 + z e_3$ | Material space |
+| $i\vec x' = i(x' e_1 + y' e_2 + z' e_3)$ | Informational space |
 | $ct'\,e_0 + ict\,e_0$ | The complex time sector: both times on one complex axis |
-| $\mathbf{x} + i\mathbf{x}'$ | The complex space sector: both spaces in one complex vector |
+| $\vec x + i\vec x'$ | The complex space sector: both spaces in one complex vector |
 | the area pairing | The alternating companion of the four forms: non-degenerate on the complex time sector, of rank $2$, and on the complex space sector, of rank $6$, where it pairs each direction with its partner under multiplication by $i$; zero on the real and on the imaginary sector |
 | the complex dimension | Present exactly where the area pairing is present: on the two sectors the multiplication by $i$ preserves |
 

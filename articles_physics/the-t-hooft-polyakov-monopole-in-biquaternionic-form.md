@@ -44,7 +44,7 @@ $$
 \qquad
 \mathcal A_i^a = \varepsilon_{aij}\,\hat x_j\,\frac{1-K(r)}{r},
 \qquad
-r=|\mathbf x|,
+r=|\vec x|,
 \qquad
 \hat x_i=\frac{x_i}{r},
 $$

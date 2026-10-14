@@ -6,7 +6,7 @@ The symmetric quaternionic product pairs two elements and returns a scalar: $\ti
 
 **Boundaries.** The product and its scalar law are *Introduction to the Symmetric Quaternionic Algebra of Quaternions*; the zero divisors are *Zero Divisors of the Symmetric Quaternionic Algebra*; the roots of a central value are *Square Roots of a General Element in the Symmetric Quaternionic Algebra*; the general definitions of a unit and of an inverse are *Definitions for the Study of the 6 Algebraic Structures*; the parent's norm and inverse criterion, which the block reads on its diagonal, are *Norm and Invertibility in the General Plain Algebra*.
 
-**Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$; an element is $\tilde q=q_0e_0+\mathbf q$. The **quaternion conjugation** is $\tilde q^{\natural}=q_0e_0-\mathbf q$; the bar is the identity, the star coincides with the natural sign ${}^{\natural}$. The **quaternion form** is $N(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q=\mathrm{Sc}(\tilde p^{\natural}\tilde q)$, the **plain form** is $B(\tilde p,\tilde q)=p_0q_0-\mathbf p\cdot\mathbf q=\mathrm{Sc}(\tilde p\tilde q)$, and the **symmetric quaternionic product** is $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$. The centre is $\mathbb{R}e_0$ and the vector subspace is $\mathrm{Vect}(\mathbb{H})=\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3$.
+**Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$; an element is $\tilde q=q_0e_0+\vec q$. The **quaternion conjugation** is $\tilde q^{\natural}=q_0e_0-\vec q$; the bar is the identity, the star coincides with the natural sign ${}^{\natural}$. The **quaternion form** is $N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q=\mathrm{Sc}(\tilde p^{\natural}\tilde q)$, the **plain form** is $B(\tilde p,\tilde q)=p_0q_0-\vec p\cdot\vec q=\mathrm{Sc}(\tilde p\tilde q)$, and the **symmetric quaternionic product** is $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$. The centre is $\mathbb{R}e_0$ and the vector subspace is $\mathrm{Vect}(\mathbb{H})=\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3$.
 
 ## The General Definitions
 
@@ -25,12 +25,12 @@ The two definitions of the algebra are quoted, and the rest of the article is th
 **Proposition (the norm is the diagonal).** For every $\tilde x$ the square of the block is the central element
 
 $$
-\tilde x\star\tilde x=N(\tilde x)e_0,\qquad N(\tilde x)=x_0^{2}+|\mathbf x|^{2},
+\tilde x\star\tilde x=N(\tilde x)e_0,\qquad N(\tilde x)=x_0^{2}+|\vec x|^{2},
 $$
 
 so the algebraic norm of the block is the definite quaternion form $N$.
 
-*Proof.* The product is $\tilde x\star\tilde x=N(\tilde x,\tilde x)e_0$ by the governing formula of *Introduction to the Symmetric Quaternionic Algebra of Quaternions*, and $N(\tilde x,\tilde x)=x_0^{2}+\mathbf x\cdot\mathbf x=N(\tilde x)$.
+*Proof.* The product is $\tilde x\star\tilde x=N(\tilde x,\tilde x)e_0$ by the governing formula of *Introduction to the Symmetric Quaternionic Algebra of Quaternions*, and $N(\tilde x,\tilde x)=x_0^{2}+\vec x\cdot\vec x=N(\tilde x)$.
 
 **Theorem (the algebraic norm is the multiplicative form of the plain product).** The algebraic norm of the block is the quaternion norm of the algebra,
 
@@ -46,7 +46,7 @@ $$
 
 The form is positive definite, of Gram matrix $I_4$, of rank $4$, with radical $\{0\}$.
 
-*Proof.* The identity $\tilde q\tilde q^{\natural}=N(\tilde q)e_0$, the multiplicativity and the inverse criterion are *Norm and Invertibility in the General Plain Algebra*, where the quaternion norm is owned, and the identification with the quaternion algebraic norm $N_Q$ is *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space*; the polarisation is the expansion of $\tilde p\star\tilde p=N(\tilde p)e_0$ at $\tilde p+\tilde q$ by bilinearity; and the Gram matrix and the definiteness are *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*, where $N(e_\mu,e_\nu)=\delta_{\mu\nu}$ and $N(\tilde x)=x_0^{2}+|\mathbf x|^{2}$ is a sum of four squares vanishing only at the origin.
+*Proof.* The identity $\tilde q\tilde q^{\natural}=N(\tilde q)e_0$, the multiplicativity and the inverse criterion are *Norm and Invertibility in the General Plain Algebra*, where the quaternion norm is owned, and the identification with the quaternion algebraic norm $N_Q$ is *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space*; the polarisation is the expansion of $\tilde p\star\tilde p=N(\tilde p)e_0$ at $\tilde p+\tilde q$ by bilinearity; and the Gram matrix and the definiteness are *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*, where $N(e_\mu,e_\nu)=\delta_{\mu\nu}$ and $N(\tilde x)=x_0^{2}+|\vec x|^{2}$ is a sum of four squares vanishing only at the origin.
 
 **Theorem (the norm is not multiplicative for the block).** For the product of the block the norm is the square of the coefficient,
 
@@ -119,19 +119,19 @@ $$
 \tilde p^{\natural}\star\tilde q^{\natural}=N(\tilde p,\tilde q)e_0=\tilde p\star\tilde q .
 $$
 
-*Proof.* The collapse of the conjugations is the convention of the real chapter; the natural conjugation reverses the sign of the vector part, so it fixes $p_0$, fixes $|\mathbf p|^{2}$, and preserves the dot product; the last display is the governing formula applied to the conjugated arguments, whose coefficient is unchanged.
+*Proof.* The collapse of the conjugations is the convention of the real chapter; the natural conjugation reverses the sign of the vector part, so it fixes $p_0$, fixes $|\vec p|^{2}$, and preserves the dot product; the last display is the governing formula applied to the conjugated arguments, whose coefficient is unchanged.
 
 ## Summary
 
-The symmetric quaternionic block reads its algebraic norm on its diagonal: the norm is the quaternion form $N(\tilde x)=x_0^{2}+|\mathbf x|^{2}$, positive definite of Gram matrix $I_4$ and radical $\{0\}$, and it is the same form that the plain product carries as its multiplicative norm, $N(\tilde p\tilde q)=N(\tilde p)N(\tilde q)$. For the block the form is not multiplicative, $N(\tilde p\star\tilde q)=N(\tilde p,\tilde q)^{2}$, with the witness $(e_1,e_2)$ giving $0$ against $1$. The block has no unit, no one-sided unit, no inverse and no group of units; the element $e_0$ is a unit of the central line alone, and the equation $\tilde A\star\tilde X=e_0$ is solvable for $\tilde A\neq0$ without producing an inverse. The non-isotropic class is the whole punctured space, which is exactly the group of units of the plain product with the inverse $\tilde p^{-1}=\tilde p^{\natural}/N(\tilde p)$, and the isotropic class is the origin alone.
+The symmetric quaternionic block reads its algebraic norm on its diagonal: the norm is the quaternion form $N(\tilde x)=x_0^{2}+|\vec x|^{2}$, positive definite of Gram matrix $I_4$ and radical $\{0\}$, and it is the same form that the plain product carries as its multiplicative norm, $N(\tilde p\tilde q)=N(\tilde p)N(\tilde q)$. For the block the form is not multiplicative, $N(\tilde p\star\tilde q)=N(\tilde p,\tilde q)^{2}$, with the witness $(e_1,e_2)$ giving $0$ against $1$. The block has no unit, no one-sided unit, no inverse and no group of units; the element $e_0$ is a unit of the central line alone, and the equation $\tilde A\star\tilde X=e_0$ is solvable for $\tilde A\neq0$ without producing an inverse. The non-isotropic class is the whole punctured space, which is exactly the group of units of the plain product with the inverse $\tilde p^{-1}=\tilde p^{\natural}/N(\tilde p)$, and the isotropic class is the origin alone.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
-| $N(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q$ | the quaternion form, the coefficient of the product |
+| $N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$ | the quaternion form, the coefficient of the product |
 | $\tilde p\star\tilde p=N(\tilde p)e_0$ | the diagonal, the algebraic norm of the block |
-| $N(\tilde p)=p_0^{2}+|\mathbf p|^{2}$ | the definite norm, Gram matrix $I_4$, radical $\{0\}$ |
+| $N(\tilde p)=p_0^{2}+|\vec p|^{2}$ | the definite norm, Gram matrix $I_4$, radical $\{0\}$ |
 | $N(\tilde p\star\tilde q)=N(\tilde p,\tilde q)^{2}$ | the norm of a block product; not multiplicative |
 | unit, inverse | absent; $e_0$ is a unit of the central line alone |
 | $\{\tilde p:N(\tilde p)\neq0\}=\mathbb{H}\setminus\{0\}$ | the non-isotropic class, the unit group of the plain product |

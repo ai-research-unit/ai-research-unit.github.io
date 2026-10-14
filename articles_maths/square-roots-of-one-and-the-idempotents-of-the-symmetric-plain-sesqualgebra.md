@@ -182,16 +182,16 @@ so $\tilde\Pi$ is idempotent if and only if $\tilde\Xi = \pm e_0$. The inverse m
 
 **Among the four symmetric products the block carries the two-point idempotent set $\{0,e_0\}$, which it shares with its central sibling $\mathrm{SQA}$, while $\mathrm{SPA}$ carries a four-parameter family and $\mathrm{SQS}$ a two-parameter family.**
 
-The idempotents of the four symmetric structures are of two kinds beyond the two points. The symmetric plain algebra carries the four-parameter plain family, the symmetric quaternionic sesqualgebra the two-parameter family $-\tfrac12e_0+\mu$, and the two central blocks, $\mathrm{SQA}$ and the present $\mathrm{SPS}$, the two points. The table collects the comparison.
+The idempotents of the four symmetric structures are of two kinds beyond the two points. The symmetric plain algebra carries the four-parameter plain family, the symmetric quaternionic sesqualgebra the two-parameter family $-\tfrac12e_0+\vec n$, and the two central blocks, $\mathrm{SQA}$ and the present $\mathrm{SPS}$, the two points. The table collects the comparison.
 
 | structure | product | idempotents | index set |
 |---|---|---|---|
 | $\mathrm{SPA}$ | $\tfrac12(\tilde P\tilde Q + \tilde Q\tilde P)$ | the two families $\tfrac12(e_0 + \tilde\Xi)$ with $\tilde\Xi$ a root of $+1$ | the roots of $+1$ |
 | $\mathrm{SQA}$ | $N(\tilde P,\tilde Q)e_0$ | $0$ and $e_0$ | two points |
 | $\mathrm{SPS}$ | $H(\tilde P,\tilde Q)e_0$ | $0$ and $e_0$ | two points |
-| $\mathrm{SQS}$ | $\tfrac12(\tilde P^{\natural}\tilde Q^{*} + \tilde Q^{*}\tilde P^{\natural})$ | $0$, $e_0$, and the family $-\tfrac12e_0+\mu$ with $(\mu,\mu)=\tfrac34$ | the two-sphere |
+| $\mathrm{SQS}$ | $\tfrac12(\tilde P^{\natural}\tilde Q^{*} + \tilde Q^{*}\tilde P^{\natural})$ | $0$, $e_0$, and the family $-\tfrac12e_0+\vec n$ with $(\vec n,\vec n)=\tfrac34$ | the two-sphere |
 
-The plain sibling is the one with a unit and the one whose product has a vector part, and it carries a four-parameter family of nontrivial idempotents, indexed by its roots of $+1$; the quaternionic sesquilinear sibling carries the two-parameter family $-\tfrac12e_0+\mu$, and the two central blocks carry the two points; among the central blocks the present one is distinguished not by the idempotents but by the image and the sign of its form. The comparison with the general plain product, whose idempotents are the two standard ones $\tilde\Pi_1$ and $\tilde\Pi_2$ and the complex multiples, is *Idempotents of the General Plain Algebra*.
+The plain sibling is the one with a unit and the one whose product has a vector part, and it carries a four-parameter family of nontrivial idempotents, indexed by its roots of $+1$; the quaternionic sesquilinear sibling carries the two-parameter family $-\tfrac12e_0+\vec n$, and the two central blocks carry the two points; among the central blocks the present one is distinguished not by the idempotents but by the image and the sign of its form. The comparison with the general plain product, whose idempotents are the two standard ones $\tilde\Pi_+$ and $\tilde\Pi_-$ and the complex multiples, is *Idempotents of the General Plain Algebra*.
 
 ## Summary
 

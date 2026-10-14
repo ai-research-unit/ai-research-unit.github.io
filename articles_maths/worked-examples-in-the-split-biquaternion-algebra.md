@@ -30,13 +30,13 @@ The unit $j$ is central, $j^2 = +1$, and commutes with each $e_k$, while the qua
 | $e_2$ | $e_2$ | $-e_3$ | $-e_0$ | $e_1$ |
 | $e_3$ | $e_3$ | $e_2$ | $-e_1$ | $-e_0$ |
 
-The same table holds after replacing any entry by its product with $j$, since $j$ is central. In scalar-vector form, for $\tilde{Q} = Q_0 e_0 + \mathbf{Q}$ and $\tilde{R} = R_0 e_0 + \mathbf{R}$,
+The same table holds after replacing any entry by its product with $j$, since $j$ is central. In scalar-vector form, for $\tilde{Q} = Q_0 e_0 + \vec Q$ and $\tilde{R} = R_0 e_0 + \vec R$,
 
 $$
-\tilde{Q} \tilde{R} = \big(Q_0 R_0 - (\mathbf{Q}, \mathbf{R})\big) e_0 + Q_0 \mathbf{R} + R_0 \mathbf{Q} + [\mathbf{Q}, \mathbf{R}],
+\tilde{Q} \tilde{R} = \big(Q_0 R_0 - (\vec Q, \vec R)\big) e_0 + Q_0 \vec R + R_0 \vec Q + [\vec Q, \vec R],
 $$
 
-where $(\mathbf{Q}, \mathbf{R}) = \sum_{k=1}^{3} Q_k R_k$ and $[\mathbf{Q}, \mathbf{R}]$ is the split-complex-linear cross product. The algebra is associative but not commutative, because $[\mathbf{Q}, \mathbf{R}]$ need not vanish; it is not a division algebra, because it has zero divisors, as the examples below show.
+where $(\vec Q, \vec R) = \sum_{k=1}^{3} Q_k R_k$ and $[\vec Q, \vec R]$ is the split-complex-linear cross product. The algebra is associative but not commutative, because $[\vec Q, \vec R]$ need not vanish; it is not a division algebra, because it has zero divisors, as the examples below show.
 
 ### Worked Multiplication
 
@@ -46,7 +46,7 @@ $$
 \tilde{Q}^2 = (-4 + 4 e_1) + j (4 + 4 e_1).
 $$
 
-This can be verified either from the scalar-vector formula, using $Q_0 = 1 + j$, $\mathbf{Q} = 2 e_1 + (1 - j) e_2$, or from the idempotent components: since $\tilde\Pi_1^2 = \tilde\Pi_1$, $\tilde\Pi_2^2 = \tilde\Pi_2$ and $\tilde\Pi_1 \tilde\Pi_2 = 0$,
+This can be verified either from the scalar-vector formula, using $Q_0 = 1 + j$, $\vec Q = 2 e_1 + (1 - j) e_2$, or from the idempotent components: since $\tilde\Pi_1^2 = \tilde\Pi_1$, $\tilde\Pi_2^2 = \tilde\Pi_2$ and $\tilde\Pi_1 \tilde\Pi_2 = 0$,
 
 $$
 \tilde{Q}^2 = \tilde{Q}_+^2 \tilde\Pi_1 + \tilde{Q}_-^2 \tilde\Pi_2,
@@ -192,7 +192,7 @@ and $\varphi(\tilde{Q}^{-1}) = \tfrac{1}{8}(2 - 2 e_1, -2 e_1 - 2 e_2)$, which a
 
 ## Summary
 
-The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ has the real basis $1, e_1, e_2, e_3, j, j e_1, j e_2, j e_3$ and the product formula $\tilde{Q} \tilde{R} = (Q_0 R_0 - (\mathbf{Q}, \mathbf{R})) e_0 + Q_0 \mathbf{R} + R_0 \mathbf{Q} + [\mathbf{Q}, \mathbf{R}]$. On the concrete element
+The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ has the real basis $1, e_1, e_2, e_3, j, j e_1, j e_2, j e_3$ and the product formula $\tilde{Q} \tilde{R} = (Q_0 R_0 - (\vec Q, \vec R)) e_0 + Q_0 \vec R + R_0 \vec Q + [\vec Q, \vec R]$. On the concrete element
 
 $$
 \tilde{Q} = (1 + j) + 2 e_1 + (1 - j) e_2

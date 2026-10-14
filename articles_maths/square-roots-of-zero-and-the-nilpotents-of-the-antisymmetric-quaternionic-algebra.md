@@ -8,7 +8,7 @@ occurs, so both belong to the product (*Definitions for the Study of the 12 Alge
 antisymmetric quaternionic multiplication
 $$
 \tilde\Xi\diamond\tilde Q=\tfrac12\bigl(\tilde\Xi^{\natural}\tilde Q-\tilde Q^{\natural}\tilde\Xi\bigr)
-=\Xi_0\mathbf Q-Q_0\mathbf\Xi-\mathbf\Xi\times\mathbf Q ,
+=\Xi_0\vec Q-Q_0\vec\Xi-\vec\Xi\times\vec Q ,
 $$
 which is alternating and without a unit (*Introduction to the Antisymmetric Quaternionic Algebra of
 Biquaternions*).
@@ -41,7 +41,7 @@ Antisymmetric Quaternionic Algebra*; or the nilpotent cone of the parent product
 *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra*.
 
 **The results.** For the antisymmetric quaternionic multiplication
-$\tilde P\diamond\tilde Q=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$ the square of every
+$\tilde P\diamond\tilde Q=P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$ the square of every
 element vanishes, $\tilde P\diamond\tilde P=0$, so the root equation of $0$ is the scalar equation
 $0=0$ and the root set of $0$ is the punctured space $\mathbb{B}\setminus\{0\}$; it is at once the
 square-zero set and the zero-divisor set, and **every element of the space is a nilpotent**, of
@@ -289,7 +289,7 @@ $\mathbb{R}$ Space*.
 ## Summary
 
 For the antisymmetric quaternionic multiplication
-$\tilde P\diamond\tilde Q=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$ the square of every
+$\tilde P\diamond\tilde Q=P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$ the square of every
 element vanishes, so the equation of the roots of $0$ holds at every element and the root set of $0$
 is the punctured space, at once the square-zero set and the zero-divisor set of the block. Every
 element is a nilpotent: the square-zero set is the punctured space, the index of a nonzero element
@@ -308,7 +308,7 @@ matrix.
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\diamond\tilde Q=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$ | the antisymmetric quaternionic multiplication, the operation $\mathrm{AQA}$ |
+| $\tilde P\diamond\tilde Q=P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$ | the antisymmetric quaternionic multiplication, the operation $\mathrm{AQA}$ |
 | $\tilde\Upsilon\diamond\tilde\Upsilon=0$ | the criterion, the vanishing square of every element |
 | $\mathbb{B}\setminus\{0\}$ | the root set of $0$, at once the square-zero set and the zero-divisor set |
 | $\mathbb{B}$ | the nilpotent set of the block, the whole space |

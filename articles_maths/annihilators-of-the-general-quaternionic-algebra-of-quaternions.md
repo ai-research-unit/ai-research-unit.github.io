@@ -17,12 +17,12 @@ space $\mathbb{H}$.
 The block of this article is the **general quaternionic multiplication**
 $$
 \tilde p\star\tilde q=\tilde p^{\natural}\tilde q
-=\bigl[p_0q_0+\mathbf p\cdot\mathbf q\bigr]e_0+p_0\mathbf q-q_0\mathbf p-\mathbf p\times\mathbf q,
+=\bigl[p_0q_0+\vec p\cdot\vec q\bigr]e_0+p_0\vec q-q_0\vec p-\vec p\times\vec q,
 $$
 the product of the conjugate of the first factor with the second, read over $\mathbb{R}$
 (*Introduction to the General Quaternionic Algebra of Quaternions*). It is not associative, and it
 has $e_0$ as a left unit only. But over $\mathbb{R}$ the quaternion algebra is a division algebra
-and the norm $N(\tilde p)=\tilde p^{\natural}\tilde p=p_0^2+|\mathbf p|^2$ is a sum of four
+and the norm $N(\tilde p)=\tilde p^{\natural}\tilde p=p_0^2+|\vec p|^2$ is a sum of four
 squares, hence positive definite; since the norm is multiplicative,
 $N(\tilde p\star\tilde q)=N(\tilde p)N(\tilde q)$, the product has **no zero divisors** at all
 (*Norm and Invertibility in the General Quaternionic Algebra*). The annihilator is the finer
@@ -112,7 +112,7 @@ property of the general quaternionic shape: over $\mathbb{C}$ the same shape has
 **Proposition (the operator and its determinant).** In the basis $e_0,e_1,e_2,e_3$ the operators
 are the plain left and right multiplications by the conjugate $\tilde p^{\natural}$, of determinant
 $$
-\det L_{\tilde p}=N(\tilde p)^{2}=\bigl(p_0^2+|\mathbf p|^2\bigr)^{2},\qquad
+\det L_{\tilde p}=N(\tilde p)^{2}=\bigl(p_0^2+|\vec p|^2\bigr)^{2},\qquad
 \det R_{\tilde p}=N(\tilde p)^{2}.
 $$
 
@@ -163,8 +163,8 @@ $\tilde p^{\natural}=\lambda e_0$ and $L_{\lambda e_0}\tilde x=\lambda\tilde x$;
 the scalar $\lambda$ times the identity, invertible for $\lambda\neq0$, so its annihilator is
 $\{0\}$.
 
-**The vector subspace.** A nonzero pure element $\tilde p=\mathbf p$ has
-$N(\tilde p)=|\mathbf p|^2>0$ and $L_{\mathbf p}\tilde x=-\mathbf p\tilde x$, again invertible; its
+**The vector subspace.** A nonzero pure element $\tilde p=\vec p$ has
+$N(\tilde p)=|\vec p|^2>0$ and $L_{\vec p}\tilde x=-\vec p\tilde x$, again invertible; its
 annihilator is $\{0\}$.
 
 **Proposition (the reading on the subspaces).** On the centre $\mathbb{R}e_0$ and on the vector
@@ -187,7 +187,7 @@ quaternionic multiplication $\tilde p\star\tilde x=\tilde p^{\natural}\tilde x$ 
 conjugation, a real-linear anti-automorphism of order two, so its two annihilators of an element
 always coincide, exactly as over $\mathbb{C}$. Over $\mathbb{R}$ they coincide **vacuously**: the
 two operators are the multiplications by the conjugate $\tilde p^{\natural}$ in the division
-algebra, of determinant $N(\tilde p)^2=(p_0^2+|\mathbf p|^2)^2$, invertible at every nonzero
+algebra, of determinant $N(\tilde p)^2=(p_0^2+|\vec p|^2)^2$, invertible at every nonzero
 $\tilde p$. The common annihilator is therefore $\{0\}$ at every nonzero element and the whole
 space at the origin, and the dichotomy has these two rows and no more. The block has no zero
 divisors and no *Zero Divisors* article, and its element-level annihilator is distinct from the
@@ -203,10 +203,10 @@ plane on it; over $\mathbb{R}$ the division property leaves nothing.
 | $A_\star(\tilde p),B_\star(\tilde p)$ | the left and the right annihilator of $\tilde p$, equal by the anti-automorphism ${}^{\natural}$ |
 | $L_{\tilde p}\tilde x=\tilde p^{\natural}\tilde x$ | the left multiplication, whose kernel is the annihilator |
 | $R_{\tilde p}\tilde x=\tilde x\tilde p^{\natural}$ | the plain right multiplication by the conjugate, the mirror of $L_{\tilde p}$ |
-| $\det L_{\tilde p}=N(\tilde p)^{2}$ | the determinant, $(p_0^2+|\mathbf p|^2)^2$, nonzero at every nonzero element |
+| $\det L_{\tilde p}=N(\tilde p)^{2}$ | the determinant, $(p_0^2+|\vec p|^2)^2$, nonzero at every nonzero element |
 | $\{0\}$ off the origin | the annihilator of a nonzero element |
 | $\mathbb{H}$ at the origin | the annihilator of $0$ |
-| $N(\tilde p)=p_0^2+|\mathbf p|^2$ | the definite norm, the source of the division property |
+| $N(\tilde p)=p_0^2+|\vec p|^2$ | the definite norm, the source of the division property |
 
 ## Further Reading
 

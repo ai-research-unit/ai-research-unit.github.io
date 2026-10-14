@@ -18,7 +18,7 @@ The invertibility is where the article records an **absence**. The plain product
 
 **Boundaries.** The three other algebraic norms of the space are *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*, and they are not read here: the general quaternionic algebraic norm $N$ is that of the quaternionic algebra, the general plain sesquilinear algebraic norm $H$ is that of the general plain sesqualgebra, and the general quaternionic sesquilinear algebraic norm $K$ is that of the general quaternionic sesqualgebra. The product and its element theory are *Introduction to the General Plain Algebra of Biquaternions*; the conjugations and the remarkable subspaces are the basic algebra article; the unit tables of the four products are *Comparison Between the Four General Products*; the definitions of the unit, the inverse and the group of units are *Definitions for the Study of the 12 Algebraic Structures*, §*The Unit and the Inverse*.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0=1,e_1,e_2,e_3$, with $e_1e_2=e_3$, $e_k^{2}=-e_0$ and central scalar imaginary $i$, $i^{2}=-1$. A general element is $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$, written in the centre–vector split $\tilde Q=Q_0e_0+\mathbf Q$ with $\mathbf Q=\sum_{k=1}^{3}Q_ke_k$. The scalar part is $\mathrm{Sc}$, the natural conjugation is $\tilde Q^{\natural}=Q_0-\mathbf Q$, the coefficientwise conjugation is $\bar{\cdot}$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The sign vector is $\varepsilon=(1,-1,-1,-1)$, and $(\mathbf P,\mathbf Q)=\sum_{k=1}^{3}P_kQ_k$ is the complex bilinear dot product of the vector parts. Throughout this article the product is the general plain bilinear product, written by juxtaposition, $\tilde P\tilde Q$.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0=1,e_1,e_2,e_3$, with $e_1e_2=e_3$, $e_k^{2}=-e_0$ and central scalar imaginary $i$, $i^{2}=-1$. A general element is $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$, written in the centre–vector split $\tilde Q=Q_0e_0+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_ke_k$. The scalar part is $\mathrm{Sc}$, the natural conjugation is $\tilde Q^{\natural}=Q_0-\vec Q$, the coefficientwise conjugation is $\bar{\cdot}$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The sign vector is $\varepsilon=(1,-1,-1,-1)$, and $(\vec P,\vec Q)=\sum_{k=1}^{3}P_kQ_k$ is the complex bilinear dot product of the vector parts. Throughout this article the product is the general plain bilinear product, written by juxtaposition, $\tilde P\tilde Q$.
 
 ## The Algebraic Norm of the Plain Product
 
@@ -33,7 +33,7 @@ $$
 equivalently $B(\tilde Q)=B(\tilde Q,\tilde Q)$ for the form
 
 $$
-B(\tilde P,\tilde Q)=\mathrm{Sc}\bigl(\tilde P\tilde Q\bigr)=\sum_{\mu=0}^{3}\varepsilon_\mu P_\mu Q_\mu=P_0Q_0-(\mathbf P,\mathbf Q),
+B(\tilde P,\tilde Q)=\mathrm{Sc}\bigl(\tilde P\tilde Q\bigr)=\sum_{\mu=0}^{3}\varepsilon_\mu P_\mu Q_\mu=P_0Q_0-(\vec P,\vec Q),
 $$
 
 which is the general plain bilinear form of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, the $\mathbb{C}$-bilinear form of the pair $(\mathrm{id},\mathrm{id})$. The two arities of the letter are one object: with two arguments the form, with one argument its diagonal.

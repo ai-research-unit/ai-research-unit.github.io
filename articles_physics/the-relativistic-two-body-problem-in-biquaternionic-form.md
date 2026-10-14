@@ -14,33 +14,33 @@ This article extends that dictionary to the simplest system of more than one bod
 
 The article is the foundation for the later exercise on the relativistic kinematics of a two-body decay, so the kinematics are worked out explicitly: the centre-of-momentum energies and momentum, the relative rapidity, the invariant mass, the boost to an arbitrary frame, and the reduction to an effective one-body problem. A decay is the special case in which the total four-momentum is that of a single body at rest.
 
-The conventions are those of the companion articles: the algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$; the scalar imaginary $i$ with $i^2 = -1$; the anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part) and the Hermitian subspace $\mathbb{M}_+$; the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and the complex subspace $\mathbb{C}_{\mathbb{B}}$; the biquaternion norm $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$; and the rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ with $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$, which implements the Lorentz transformation. Throughout, $c$ is the speed of light in the medium, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ the vacuum value; $\mathbf{v}$ denotes particle velocities.
+The conventions are those of the companion articles: the algebra $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$; the scalar imaginary $i$ with $i^2 = -1$; the anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part) and the Hermitian subspace $\mathbb{M}_+$; the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and the complex subspace $\mathbb{C}_{\mathbb{B}}$; the biquaternion norm $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$; and the rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ with $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$, which implements the Lorentz transformation. Throughout, $c$ is the speed of light in the medium, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ the vacuum value; $\vec v$ denotes particle velocities.
 
 ## The Two Four-Momenta in the Material Sector
 
-The first body has rest mass $m_1$, velocity $\mathbf{v}_1$, and four-momentum
+The first body has rest mass $m_1$, velocity $\vec v_1$, and four-momentum
 
 $$
-\tilde{P}_1 = m_1\tilde{U}_1 = i\frac{E_1}{c}\,e_0 + \mathbf{p}_1,
+\tilde{P}_1 = m_1\tilde{U}_1 = i\frac{E_1}{c}\,e_0 + \vec p_1,
 \qquad
 E_1 = \gamma_1 m_1 c^2,
 \qquad
-\mathbf{p}_1 = \gamma_1 m_1 \mathbf{v}_1,
+\vec p_1 = \gamma_1 m_1 \vec v_1,
 $$
 
-with $\gamma_1 = (1 - \mathbf{v}_1^2/c^2)^{-1/2}$. The second body is described identically with label $2$. Since the scalar part is imaginary and the vector part is real, both $\tilde{P}_1$ and $\tilde{P}_2$ lie in the anti-Hermitian subspace $\mathbb{M}_-$, as required of every four-momentum.
+with $\gamma_1 = (1 - \vec v_1^2/c^2)^{-1/2}$. The second body is described identically with label $2$. Since the scalar part is imaginary and the vector part is real, both $\tilde{P}_1$ and $\tilde{P}_2$ lie in the anti-Hermitian subspace $\mathbb{M}_-$, as required of every four-momentum.
 
 Each four-momentum satisfies the **mass-shell relation**
 
 $$
-N(\tilde{P}_a) = \tilde{P}_a\tilde{P}^{\natural}_a = -\frac{E_a^2}{c^2} + \mathbf{p}_a^2 = -m_a^2c^2,
+N(\tilde{P}_a) = \tilde{P}_a\tilde{P}^{\natural}_a = -\frac{E_a^2}{c^2} + \vec p_a^2 = -m_a^2c^2,
 \qquad a = 1, 2,
 $$
 
-which is the biquaternion form of $E_a^2 = \mathbf{p}_a^2c^2 + m_a^2c^4$. The **unit four-velocities** are
+which is the biquaternion form of $E_a^2 = \vec p_a^2c^2 + m_a^2c^4$. The **unit four-velocities** are
 
 $$
-\tilde{u}_a = \frac{\tilde{U}_a}{c} = \gamma_a\left(i\,e_0 + \frac{\mathbf{v}_a}{c}\right),
+\tilde{u}_a = \frac{\tilde{U}_a}{c} = \gamma_a\left(i\,e_0 + \frac{\vec v_a}{c}\right),
 \qquad
 N(\tilde{u}_a) = -1,
 $$
@@ -55,10 +55,10 @@ $$
 \langle \tilde{A}, \tilde{B}\rangle := \mathrm{Sc}\!\left(\tilde{A}\tilde{B}^{\natural}\right).
 $$
 
-For elements of $\mathbb{M}_-$ this is **real**: writing $\tilde{A} = i\alpha\,e_0 + \mathbf{a}$ and $\tilde{B} = i\beta\,e_0 + \mathbf{b}$ with real $\alpha, \beta$ and real $\mathbf{a}, \mathbf{b}$, one has
+For elements of $\mathbb{M}_-$ this is **real**: writing $\tilde{A} = i\alpha\,e_0 + \vec a$ and $\tilde{B} = i\beta\,e_0 + \vec b$ with real $\alpha, \beta$ and real $\vec a, \vec b$, one has
 
 $$
-\langle \tilde{A},\tilde{B}\rangle = (i\alpha)(i\beta) + \mathbf{a}\cdot\mathbf{b} = -\alpha\beta + \mathbf{a}\cdot\mathbf{b}.
+\langle \tilde{A},\tilde{B}\rangle = (i\alpha)(i\beta) + \vec a\cdot\vec b = -\alpha\beta + \vec a\cdot\vec b.
 $$
 
 The pairing is symmetric, bilinear, and non-degenerate, and it reproduces the biquaternion norm on the diagonal:
@@ -72,13 +72,13 @@ Its signature is $(3,1)$ in the basis $\{ie_0, e_1, e_2, e_3\}$: the temporal di
 For the four-momenta the pairing reads
 
 $$
-\langle \tilde{P}_1, \tilde{P}_2\rangle = -\frac{E_1E_2}{c^2} + \mathbf{p}_1\cdot\mathbf{p}_2,
+\langle \tilde{P}_1, \tilde{P}_2\rangle = -\frac{E_1E_2}{c^2} + \vec p_1\cdot\vec p_2,
 $$
 
 which is the Minkowski inner product of the two four-momenta in the $ict$ convention, with real time components $E_a/c$. In particular, for the unit four-velocities,
 
 $$
-\langle \tilde{u}_1, \tilde{u}_2\rangle = -\gamma_1\gamma_2\left(1 - \frac{\mathbf{v}_1\cdot\mathbf{v}_2}{c^2}\right).
+\langle \tilde{u}_1, \tilde{u}_2\rangle = -\gamma_1\gamma_2\left(1 - \frac{\vec v_1\cdot\vec v_2}{c^2}\right).
 $$
 
 The pairing is invariant under rotor conjugation. Indeed $N$ is invariant, and $\langle\cdot,\cdot\rangle$ is the polarization of $N$; since rotor conjugation is linear on $\mathbb{M}_-$, the invariance of the quadratic form implies the invariance of its polarization.
@@ -88,10 +88,10 @@ The pairing is invariant under rotor conjugation. Indeed $N$ is invariant, and $
 The **total four-momentum** of the pair is the sum
 
 $$
-\tilde{P} = \tilde{P}_1 + \tilde{P}_2 = i\frac{E_1+E_2}{c}\,e_0 + (\mathbf{p}_1+\mathbf{p}_2).
+\tilde{P} = \tilde{P}_1 + \tilde{P}_2 = i\frac{E_1+E_2}{c}\,e_0 + (\vec p_1+\vec p_2).
 $$
 
-Because $\mathbb{M}_-$ is a real vector space, $\tilde{P} \in \mathbb{M}_-$: the total energy is $E_1+E_2$, the total momentum $\mathbf{p}_1+\mathbf{p}_2$. In the biquaternion formulation this is the statement that $\mathbb{M}_-$ is closed under addition.
+Because $\mathbb{M}_-$ is a real vector space, $\tilde{P} \in \mathbb{M}_-$: the total energy is $E_1+E_2$, the total momentum $\vec p_1+\vec p_2$. In the biquaternion formulation this is the statement that $\mathbb{M}_-$ is closed under addition.
 
 The biquaternion norm is multiplicative on $\mathbb{B}$ but **not additive**. For any $\tilde{A}, \tilde{B} \in \mathbb{B}$,
 
@@ -131,7 +131,7 @@ $$
 In components, expanding the total four-momentum directly,
 
 $$
-M^2c^4 = (E_1+E_2)^2 - (\mathbf{p}_1+\mathbf{p}_2)^2c^2,
+M^2c^4 = (E_1+E_2)^2 - (\vec p_1+\vec p_2)^2c^2,
 $$
 
 which is the standard invariant mass of a two-body system. The name "invariant" is the statement that $N(\tilde{P})$ is unchanged by rotor conjugation; $Mc^2$ is also called the **centre-of-momentum energy** of the pair.
@@ -142,7 +142,7 @@ $$
 M \ge m_1 + m_2,
 $$
 
-with equality if and only if $\mathbf{v}_1 = \mathbf{v}_2$. Both follow below from $\cosh\psi_{\rm rel}\ge1$.
+with equality if and only if $\vec v_1 = \vec v_2$. Both follow below from $\cosh\psi_{\rm rel}\ge1$.
 
 ## Conservation in the Biquaternion Formulation
 
@@ -165,7 +165,7 @@ Because the decomposition into scalar (time) and vector (space) parts is by real
 $$
 \frac{d}{dt}(E_1+E_2) = 0,
 \qquad
-\frac{d}{dt}(\mathbf{p}_1+\mathbf{p}_2) = 0.
+\frac{d}{dt}(\vec p_1+\vec p_2) = 0.
 $$
 
 Two comments are in order. First, the conservation law is **Lorentz covariant**: if $\tilde{P}_1 + \tilde{P}_2$ is constant in one inertial frame, then applying the same rotor conjugation to both sides, $\tilde{\Lambda}\tilde{P}_1\tilde{\Lambda}^{*} + \tilde{\Lambda}\tilde{P}_2\tilde{\Lambda}^{*} = \tilde{\Lambda}(\tilde{P}_1+\tilde{P}_2)\tilde{\Lambda}^{*}$, shows that it is constant in every inertial frame. The statement of conservation is a statement about an element of $\mathbb{M}_-$, and the element transforms as a whole. Second, the four-forces above are differentiated with respect to a **common** coordinate time. Differentiating instead with respect to each body's proper time introduces the factors $\gamma_a$, since $d\tau_a = dt/\gamma_a$; the common coordinate time is the natural choice for a two-body conservation law.
@@ -177,7 +177,7 @@ When the two bodies are not isolated but are subject to external four-forces, th
 The **centre-of-momentum (COM) frame** is an inertial frame in which the total three-momentum vanishes:
 
 $$
-\mathbf{p}_1^* + \mathbf{p}_2^* = 0.
+\vec p_1^* + \vec p_2^* = 0.
 $$
 
 Asterisks denote quantities in this frame. In the biquaternion formulation the condition is that the vector part of the total four-momentum vanishes, so that $\tilde{P}$ is a pure imaginary scalar:
@@ -194,19 +194,19 @@ $$
 \tilde{\Lambda}_{\rm CM}\tilde{\Lambda}^{\natural}_{\rm CM} = e_0.
 $$
 
-Its rapidity $\Psi$ satisfies $\cosh\Psi = E_{\rm tot}/(Mc^2)$ and $\sinh\Psi\,\hat{\mathbf{u}} = \mathbf{P}_{\rm tot}/(Mc)$, so its velocity is $\mathbf{V}_{\rm CM} = \mathbf{P}_{\rm tot}c^2/E_{\rm tot}$; the branch with $\mathrm{Sc}(\tilde{\Lambda}_{\rm CM}) > 0$ is the physical one. The frame is unique up to spatial rotations, which leave $\tilde{P}^* = iMc\,e_0$ unchanged.
+Its rapidity $\Psi$ satisfies $\cosh\Psi = E_{\rm tot}/(Mc^2)$ and $\sinh\Psi\,\hat u = \vec P_{\rm tot}/(Mc)$, so its velocity is $\vec V_{\rm CM} = \vec P_{\rm tot}c^2/E_{\rm tot}$; the branch with $\mathrm{Sc}(\tilde{\Lambda}_{\rm CM}) > 0$ is the physical one. The frame is unique up to spatial rotations, which leave $\tilde{P}^* = iMc\,e_0$ unchanged.
 
 ### Constituent Energies and Momentum
 
 In the COM frame the two four-momenta are
 
 $$
-\tilde{P}_1^* = i\frac{E_1^*}{c}\,e_0 + \mathbf{p}^*,
+\tilde{P}_1^* = i\frac{E_1^*}{c}\,e_0 + \vec p^*,
 \qquad
-\tilde{P}_2^* = i\frac{E_2^*}{c}\,e_0 - \mathbf{p}^*,
+\tilde{P}_2^* = i\frac{E_2^*}{c}\,e_0 - \vec p^*,
 $$
 
-with $\mathbf{p}^* = \mathbf{p}_1^* = -\mathbf{p}_2^*$. Summing and comparing with $\tilde{P}^* = iMc\,e_0$ gives
+with $\vec p^* = \vec p_1^* = -\vec p_2^*$. Summing and comparing with $\tilde{P}^* = iMc\,e_0$ gives
 
 $$
 E_1^* + E_2^* = Mc^2.
@@ -220,7 +220,7 @@ E_1^{*2} = m_1^2c^4 + p^{*2}c^2,
 E_2^{*2} = m_2^2c^4 + p^{*2}c^2,
 $$
 
-where $p^{*2} = \mathbf{p}^*\cdot\mathbf{p}^*$. Subtracting the two shell relations eliminates $p^*$ and yields $E_1^{*2} - E_2^{*2} = (m_1^2-m_2^2)c^4 = (E_1^*-E_2^*)(E_1^*+E_2^*)$, so that $E_1^*-E_2^* = (m_1^2-m_2^2)c^2/M$. Combining this with $E_1^*+E_2^* = Mc^2$ gives the explicit energies
+where $p^{*2} = \vec p^*\cdot\vec p^*$. Subtracting the two shell relations eliminates $p^*$ and yields $E_1^{*2} - E_2^{*2} = (m_1^2-m_2^2)c^4 = (E_1^*-E_2^*)(E_1^*+E_2^*)$, so that $E_1^*-E_2^* = (m_1^2-m_2^2)c^2/M$. Combining this with $E_1^*+E_2^* = Mc^2$ gives the explicit energies
 
 $$
 E_1^* = \frac{\left(M^2 + m_1^2 - m_2^2\right)c^2}{2M},
@@ -242,10 +242,10 @@ The COM frame exhibits the two bodies moving in opposite directions, but the inv
 
 $$
 \tilde{u}_{2|1} = \tilde{\Lambda}_1\,\tilde{u}_2\,\tilde{\Lambda}_1^{*}
-= i\gamma_{\rm rel}\,e_0 + \gamma_{\rm rel}\,\frac{\mathbf{v}_{\rm rel}}{c},
+= i\gamma_{\rm rel}\,e_0 + \gamma_{\rm rel}\,\frac{\vec v_{\rm rel}}{c},
 $$
 
-where $\mathbf{v}_{\rm rel}$ is the velocity of body 2 in the rest frame of body 1 and
+where $\vec v_{\rm rel}$ is the velocity of body 2 in the rest frame of body 1 and
 
 $$
 \gamma_{\rm rel} = \frac{1}{\sqrt{1 - v_{\rm rel}^2/c^2}}
@@ -257,16 +257,16 @@ Because the pairing is invariant under rotor conjugation, the relative Lorentz f
 
 $$
 \gamma_{\rm rel} = -\langle \tilde{u}_1, \tilde{u}_2\rangle
-= \gamma_1\gamma_2\left(1 - \frac{\mathbf{v}_1\cdot\mathbf{v}_2}{c^2}\right).
+= \gamma_1\gamma_2\left(1 - \frac{\vec v_1\cdot\vec v_2}{c^2}\right).
 $$
 
-This quantity is $\ge 1$, since it is a Lorentz factor, and it equals $1$ exactly when $\mathbf{v}_1 = \mathbf{v}_2$. Introducing the **relative rapidity** $\psi_{\rm rel}$ by $\cosh\psi_{\rm rel} = \gamma_{\rm rel}$, the relative speed is $v_{\rm rel} = c\tanh\psi_{\rm rel}$. In terms of the two velocities in an arbitrary frame,
+This quantity is $\ge 1$, since it is a Lorentz factor, and it equals $1$ exactly when $\vec v_1 = \vec v_2$. Introducing the **relative rapidity** $\psi_{\rm rel}$ by $\cosh\psi_{\rm rel} = \gamma_{\rm rel}$, the relative speed is $v_{\rm rel} = c\tanh\psi_{\rm rel}$. In terms of the two velocities in an arbitrary frame,
 
 $$
-v_{\rm rel} = \frac{\sqrt{\left|\mathbf{v}_1-\mathbf{v}_2\right|^2 - \frac{1}{c^2}\left|\mathbf{v}_1\times\mathbf{v}_2\right|^2}}{1 - \mathbf{v}_1\cdot\mathbf{v}_2/c^2},
+v_{\rm rel} = \frac{\sqrt{\left|\vec v_1-\vec v_2\right|^2 - \frac{1}{c^2}\left|\vec v_1\times\vec v_2\right|^2}}{1 - \vec v_1\cdot\vec v_2/c^2},
 $$
 
-which reduces to the Galilean $|\mathbf{v}_2-\mathbf{v}_1|$ when both speeds are small compared with $c$. The rapidities compose additively along the common axis of relative motion:
+which reduces to the Galilean $|\vec v_2-\vec v_1|$ when both speeds are small compared with $c$. The rapidities compose additively along the common axis of relative motion:
 
 $$
 \psi_{\rm rel} = \psi_1^* + \psi_2^*,
@@ -292,7 +292,7 @@ $$
 
 hence $M \ge m_1+m_2$, with equality if and only if the relative rapidity vanishes, that is, if and only if the two bodies are at relative rest. The pair's mass is thus the invariant that measures the energy locked in the relative motion.
 
-Two special cases are worth recording. First, if the two bodies are at relative rest, $\psi_{\rm rel} = 0$ and $M = m_1+m_2$: the masses add. Second, if body 2 is at rest in the chosen frame (a fixed-target configuration, with $\mathbf{v}_2 = 0$ and $\mathbf{v}_1 = \mathbf{v}$), then $\gamma_{\rm rel} = \gamma_1$ and
+Two special cases are worth recording. First, if the two bodies are at relative rest, $\psi_{\rm rel} = 0$ and $M = m_1+m_2$: the masses add. Second, if body 2 is at rest in the chosen frame (a fixed-target configuration, with $\vec v_2 = 0$ and $\vec v_1 = \vec v$), then $\gamma_{\rm rel} = \gamma_1$ and
 
 $$
 M^2c^4 = m_1^2c^4 + m_2^2c^4 + 2m_2E_1c^2,
@@ -321,7 +321,7 @@ E_2^* = \frac{\left(M^2 + m_2^2 - m_1^2\right)c^2}{2M},
 $$
 
 $$
-\mathbf{p}_1^* = -\mathbf{p}_2^* = \mathbf{p}^*,
+\vec p_1^* = -\vec p_2^* = \vec p^*,
 \qquad
 p^* = \frac{c}{2M}\sqrt{\left[M^2 - (m_1+m_2)^2\right]\left[M^2 - (m_1-m_2)^2\right]},
 $$
@@ -334,10 +334,10 @@ $$
 
 which is the total kinetic energy of the daughters in the parent rest frame, split in the ratio $(E_1^*-m_1c^2)/(E_2^*-m_2c^2) = m_2/m_1$ in the non-relativistic limit derived below.
 
-If the parent is moving in the laboratory frame with velocity $\mathbf{V}$, the daughter four-momenta are obtained from their rest-frame values by the rotor conjugation $\tilde{P}_a = \tilde{\Lambda}\tilde{P}_a^*\tilde{\Lambda}^{*}$, where $\tilde{\Lambda}$ is the **inverse** of the rotor that carries the laboratory frame to the parent rest frame — the quaternion conjugate of $\tilde{\Lambda}_{\rm CM}$ of the preceding section:
+If the parent is moving in the laboratory frame with velocity $\vec V$, the daughter four-momenta are obtained from their rest-frame values by the rotor conjugation $\tilde{P}_a = \tilde{\Lambda}\tilde{P}_a^*\tilde{\Lambda}^{*}$, where $\tilde{\Lambda}$ is the **inverse** of the rotor that carries the laboratory frame to the parent rest frame — the quaternion conjugate of $\tilde{\Lambda}_{\rm CM}$ of the preceding section:
 
 $$
-\tilde{\Lambda} = \tilde{\Lambda}^{\natural}_{\rm CM} = \cosh\frac{\Psi}{2} - i\sinh\frac{\Psi}{2}\,\hat{\mathbf{V}},
+\tilde{\Lambda} = \tilde{\Lambda}^{\natural}_{\rm CM} = \cosh\frac{\Psi}{2} - i\sinh\frac{\Psi}{2}\,\hat V,
 \qquad
 \tanh\Psi = \frac{V}{c},
 $$
@@ -347,12 +347,12 @@ the sign of the vector part being opposite to that of the lab-to-rest rotor. The
 In components this is the standard Lorentz transformation of a four-momentum,
 
 $$
-E_a = \gamma\left(E_a^* + \mathbf{V}\cdot\mathbf{p}_a^*\right),
+E_a = \gamma\left(E_a^* + \vec V\cdot\vec p_a^*\right),
 \qquad
-\mathbf{p}_a = \mathbf{p}_a^* + \frac{\gamma-1}{V^2}\left(\mathbf{V}\cdot\mathbf{p}_a^*\right)\mathbf{V} + \gamma\frac{E_a^*}{c^2}\mathbf{V},
+\vec p_a = \vec p_a^* + \frac{\gamma-1}{V^2}\left(\vec V\cdot\vec p_a^*\right)\vec V + \gamma\frac{E_a^*}{c^2}\vec V,
 $$
 
-with $\gamma = \cosh\Psi$. Writing $\cos\theta_a^*$ for the angle between $\mathbf{V}$ and $\mathbf{p}_a^*$, the lab energy takes the compact form
+with $\gamma = \cosh\Psi$. Writing $\cos\theta_a^*$ for the angle between $\vec V$ and $\vec p_a^*$, the lab energy takes the compact form
 
 $$
 E_a = \gamma E_a^*\left(1 + \frac{Vv_a^*}{c^2}\cos\theta_a^*\right),
@@ -362,7 +362,7 @@ so that for a given daughter the lab energy ranges from $\gamma E_a^*(1 - Vv_a^*
 
 ## Reduction to the Effective One-Body Problem
 
-The invariance of $M$ suggests a reduction of the two-body kinematics to a one-body problem. The reduction that is exact and convention-free is kinematic. In the COM frame the pair is described by the single relative momentum $\mathbf{p}^*$, and the individual momenta are fixed by $\mathbf{p}_1^* = -\mathbf{p}_2^* = \mathbf{p}^*$ together with the mass-shell constraints. The pair's invariant mass is then the energy of that single relative degree of freedom:
+The invariance of $M$ suggests a reduction of the two-body kinematics to a one-body problem. The reduction that is exact and convention-free is kinematic. In the COM frame the pair is described by the single relative momentum $\vec p^*$, and the individual momenta are fixed by $\vec p_1^* = -\vec p_2^* = \vec p^*$ together with the mass-shell constraints. The pair's invariant mass is then the energy of that single relative degree of freedom:
 
 $$
 Mc^2 = E_1^* + E_2^*
@@ -375,7 +375,7 @@ $$
 p^{*2} = \frac{\left[M^2 - (m_1+m_2)^2\right]\left[M^2 - (m_1-m_2)^2\right]c^2}{4M^2}.
 $$
 
-The single degree of freedom $\mathbf{p}^*$, with the dispersion relation above, is the kinematic content of "the two-body problem reduces to an effective one-body problem". The total (COM) motion is free, since $\tilde{P}$ is conserved; only the relative motion carries dynamical information.
+The single degree of freedom $\vec p^*$, with the dispersion relation above, is the kinematic content of "the two-body problem reduces to an effective one-body problem". The total (COM) motion is free, since $\tilde{P}$ is conserved; only the relative motion carries dynamical information.
 
 In the non-relativistic limit the dispersion relation becomes that of a particle of the **reduced mass**
 
@@ -389,11 +389,11 @@ $$
 Mc^2 = (m_1+m_2)c^2 + \frac{p^{*2}}{2\mu} + O\!\left(p^{*4}\right).
 $$
 
-Thus the leading non-relativistic reduction is the familiar one: a fictitious body of mass $\mu$ carrying the relative momentum $\mathbf{p}^*$ and the relative kinetic energy. The exact dynamical reduction of two **interacting** relativistic bodies to a single one-body equation is more delicate: the interaction must be specified together with a synchronisation convention between the two worldlines, and different conventions give inequivalent effective equations. The kinematic reduction above is independent of such choices and is all that is required for the decay kinematics.
+Thus the leading non-relativistic reduction is the familiar one: a fictitious body of mass $\mu$ carrying the relative momentum $\vec p^*$ and the relative kinetic energy. The exact dynamical reduction of two **interacting** relativistic bodies to a single one-body equation is more delicate: the interaction must be specified together with a synchronisation convention between the two worldlines, and different conventions give inequivalent effective equations. The kinematic reduction above is independent of such choices and is all that is required for the decay kinematics.
 
 ## The Non-Relativistic Limit
 
-The non-relativistic limit provides an independent consistency check against the known Newtonian two-body results. Let $\mathbf{v}_1, \mathbf{v}_2$ be small compared with $c$.
+The non-relativistic limit provides an independent consistency check against the known Newtonian two-body results. Let $\vec v_1, \vec v_2$ be small compared with $c$.
 
 **Invariant mass.** Expanding $\cosh\psi_{\rm rel} = 1 + \psi_{\rm rel}^2/2 + O(\psi_{\rm rel}^4)$ with $\psi_{\rm rel} \approx v_{\rm rel}/c$,
 
@@ -409,13 +409,13 @@ $$
 
 The invariant mass is the rest energy plus the relative kinetic energy computed with the reduced mass — exactly the Newtonian energy of the relative motion.
 
-**COM frame.** The COM boost velocity is $\mathbf{V}_{\rm CM} = \mathbf{P}_{\rm tot}c^2/E_{\rm tot}$. Expanding with $\mathbf{p}_a \approx m_a\mathbf{v}_a$ and $E_{\rm tot} \approx (m_1+m_2)c^2$,
+**COM frame.** The COM boost velocity is $\vec V_{\rm CM} = \vec P_{\rm tot}c^2/E_{\rm tot}$. Expanding with $\vec p_a \approx m_a\vec v_a$ and $E_{\rm tot} \approx (m_1+m_2)c^2$,
 
 $$
-\mathbf{V}_{\rm CM} \approx \frac{m_1\mathbf{v}_1 + m_2\mathbf{v}_2}{m_1+m_2},
+\vec V_{\rm CM} \approx \frac{m_1\vec v_1 + m_2\vec v_2}{m_1+m_2},
 $$
 
-the Newtonian centre-of-mass velocity. In this frame the individual velocities are $\mathbf{v}_1^* \approx -m_2\mathbf{v}_{\rm rel}/(m_1+m_2)$ and $\mathbf{v}_2^* \approx m_1\mathbf{v}_{\rm rel}/(m_1+m_2)$, and the total kinetic energy $\tfrac12m_1v_1^{*2} + \tfrac12m_2v_2^{*2} = \tfrac12\mu v_{\rm rel}^2$ is the relative kinetic energy with the reduced mass.
+the Newtonian centre-of-mass velocity. In this frame the individual velocities are $\vec v_1^* \approx -m_2\vec v_{\rm rel}/(m_1+m_2)$ and $\vec v_2^* \approx m_1\vec v_{\rm rel}/(m_1+m_2)$, and the total kinetic energy $\tfrac12m_1v_1^{*2} + \tfrac12m_2v_2^{*2} = \tfrac12\mu v_{\rm rel}^2$ is the relative kinetic energy with the reduced mass.
 
 **Momentum and energies.** The COM momentum is $p^* \approx \mu v_{\rm rel}$, and the individual kinetic energies are
 
@@ -448,12 +448,12 @@ $$
 where $\hat H_{\mathrm D}(i)$ is the one-particle Dirac Hamiltonian of particle $i$, the Coulomb term is instantaneous, and the **Breit operator**
 
 $$
-\hat B_{ij} = -\frac{1}{2r_{ij}}\left[\boldsymbol\alpha(i)\cdot\boldsymbol\alpha(j) + \frac{\left(\boldsymbol\alpha(i)\cdot\mathbf r_{ij}\right)\left(\boldsymbol\alpha(j)\cdot\mathbf r_{ij}\right)}{r_{ij}^2}\right]
+\hat B_{ij} = -\frac{1}{2r_{ij}}\left[\boldsymbol\alpha(i)\cdot\boldsymbol\alpha(j) + \frac{\left(\boldsymbol\alpha(i)\cdot\vec r_{ij}\right)\left(\boldsymbol\alpha(j)\cdot\vec r_{ij}\right)}{r_{ij}^2}\right]
 $$
 
 adds the magnetic and retardation corrections of order $1/c^2$. The wave function $\Psi$ is a $4^N$-component spinor, the tensor product of $N$ Dirac spinors.
 
-The one-particle Dirac Hamiltonians together with the instantaneous Coulomb term form the **Dirac–Coulomb** operator; adding $\hat B$ gives the **Dirac–Coulomb–Breit** Hamiltonian $H_{\mathrm{DCB}}$. In the non-relativistic reduction it becomes the **Breit–Pauli** Hamiltonian, a sum of terms with distinct physical meanings: the non-relativistic kinetic term and potential $H_0$; the relativistic kinetic correction $H_1=-\frac{1}{8c^2}\sum_i\hat p_i^4/m_i^3$; the orbit–orbit magnetic-dipole term $H_2$; the spin–orbit term $H_3$; the Darwin term $H_4$; the spin–spin term $H_5$, with a contact part proportional to $\delta(\mathbf r_{ij})$ (the Fermi contact interaction) and a dipole–dipole part; and the external-field coupling $H_6$. These are the terms by which the Breit Hamiltonian reproduces fine structure, the Darwin term and the spin–spin splitting of positronium.
+The one-particle Dirac Hamiltonians together with the instantaneous Coulomb term form the **Dirac–Coulomb** operator; adding $\hat B$ gives the **Dirac–Coulomb–Breit** Hamiltonian $H_{\mathrm{DCB}}$. In the non-relativistic reduction it becomes the **Breit–Pauli** Hamiltonian, a sum of terms with distinct physical meanings: the non-relativistic kinetic term and potential $H_0$; the relativistic kinetic correction $H_1=-\frac{1}{8c^2}\sum_i\hat p_i^4/m_i^3$; the orbit–orbit magnetic-dipole term $H_2$; the spin–orbit term $H_3$; the Darwin term $H_4$; the spin–spin term $H_5$, with a contact part proportional to $\delta(\vec r_{ij})$ (the Fermi contact interaction) and a dipole–dipole part; and the external-field coupling $H_6$. These are the terms by which the Breit Hamiltonian reproduces fine structure, the Darwin term and the spin–spin splitting of positronium.
 
 Three properties matter for the framework.
 
@@ -497,7 +497,7 @@ The dynamics of two *interacting* spin-$\tfrac12$ particles begins with the Brei
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
 | $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\langle\tilde{A},\tilde{B}\rangle = \mathrm{Sc}(\tilde{A}\tilde{B}^{\natural})$ | Invariant pairing on $\mathbb{M}_-$ |
-| $\tilde{P}_a = m_a\tilde{U}_a = iE_a/c\,e_0+\mathbf{p}_a$ | Four-momentum of body $a$ |
+| $\tilde{P}_a = m_a\tilde{U}_a = iE_a/c\,e_0+\vec p_a$ | Four-momentum of body $a$ |
 | $\tilde{u}_a = \tilde{U}_a/c$ | Unit four-velocity, $N(\tilde{u}_a) = -1$ |
 | $\tilde{P} = \tilde{P}_1+\tilde{P}_2$ | Total four-momentum |
 | $N(\tilde{P}) = -M^2c^2$ | Invariant mass of the pair |
@@ -505,8 +505,8 @@ The dynamics of two *interacting* spin-$\tfrac12$ particles begins with the Brei
 | $\gamma_{\rm rel} = \cosh\psi_{\rm rel} = -\langle\tilde{u}_1,\tilde{u}_2\rangle$ | Relative Lorentz factor |
 | $\psi_{\rm rel}$ | Relative rapidity, $v_{\rm rel} = c\tanh\psi_{\rm rel}$ |
 | $\tilde{\Lambda}_{\rm CM} = \sqrt{-i\tilde{P}^{\natural}/(Mc)}$ | Boost biquaternion to the centre-of-momentum frame |
-| $E_a^*,$ $\mathbf{p}_a^*$ | Energy and momentum in the centre-of-momentum frame |
-| $p^*$ | Common momentum magnitude, $\mathbf{p}_1^* = -\mathbf{p}_2^* = \mathbf{p}^*$ |
+| $E_a^*,$ $\vec p_a^*$ | Energy and momentum in the centre-of-momentum frame |
+| $p^*$ | Common momentum magnitude, $\vec p_1^* = -\vec p_2^* = \vec p^*$ |
 | $\mu = m_1m_2/(m_1+m_2)$ | Non-relativistic reduced mass |
 | $Q = (M-m_1-m_2)c^2$ | Released energy of a two-body decay |
 | $\hat H_{\mathrm D}(i)$ | One-particle Dirac Hamiltonian of particle $i$ |

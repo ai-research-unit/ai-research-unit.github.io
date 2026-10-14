@@ -3,7 +3,7 @@
 ## Introduction
 
 The antisymmetric quaternionic algebra of $\mathbb{H}$ carries the operation
-$\tilde p\diamond\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)=p_0\mathbf q-q_0\mathbf p-\mathbf p\times\mathbf q$
+$\tilde p\diamond\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)=p_0\vec q-q_0\vec p-\vec p\times\vec q$
 of *Introduction to the Antisymmetric Quaternionic Algebra of Quaternions*. The parent quaternionic
 product has no zero divisor, the ambient algebra $\mathbb{H}$ being a division algebra; the
 antisymmetric block is at the opposite extreme. This article determines its zero divisors: the
@@ -21,12 +21,12 @@ Antisymmetric Quaternionic Algebra*, below this article in this category; the co
 parent's divisor theory is
 
 **Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and
-$e_1^2=e_2^2=e_3^2=-e_0$. A generic element is $\tilde q=q_0e_0+\mathbf q$ with
-$\mathbf q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; $\mathbf p\cdot\mathbf q$ is the
-Euclidean dot product, $\mathbf p\times\mathbf q$ the vector product, the **centre** is
+$e_1^2=e_2^2=e_3^2=-e_0$. A generic element is $\tilde q=q_0e_0+\vec q$ with
+$\vec q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; $\vec p\cdot\vec q$ is the
+Euclidean dot product, $\vec p\times\vec q$ the vector product, the **centre** is
 $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$ and the **vector subspace** is
-$\mathrm{Vect}(\mathbb{H})=\{\mathbf q\}$; the **quaternion form** is
-$N(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q$.
+$\mathrm{Vect}(\mathbb{H})=\{\vec q\}$; the **quaternion form** is
+$N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$.
 
 ## The Notion and the Product
 
@@ -54,23 +54,23 @@ $\tilde q=\tilde p$; no nonzero element is excluded.
 **Theorem (the criterion).** For nonzero $\tilde p,\tilde q$,
 
 $$
-\tilde p\diamond\tilde q=0\iff p_0\mathbf q=q_0\mathbf p+\mathbf p\times\mathbf q
+\tilde p\diamond\tilde q=0\iff p_0\vec q=q_0\vec p+\vec p\times\vec q
 \iff \tilde q\ \text{is a multiple of}\ \tilde p,\ \tilde q=\lambda\tilde p .
 $$
 
 For a nonzero element the annihilating partners are exactly the multiples of the element.
 
 *Proof.* The equation
-$\tilde p\diamond\tilde q=p_0\mathbf q-q_0\mathbf p-\mathbf p\times\mathbf q=0$ is the displayed
-criterion. Let $\mathbf q=\alpha\mathbf p+\mathbf q_\perp$ with $\mathbf q_\perp\perp\mathbf p$;
-the criterion splits into the parallel part $(p_0\alpha-q_0)\mathbf p=0$ and the perpendicular part
-$p_0\mathbf q_\perp=\mathbf p\times\mathbf q_\perp$. The first gives $\alpha=q_0/p_0$ when
-$p_0\neq0$; the second is $p_0\mathbf q_\perp=|\mathbf p|R(\mathbf q_\perp)$ with $R$ a quarter
-turn of the plane orthogonal to $\mathbf p$, so that
-$(p_0/|\mathbf p|)\mathbf q_\perp=R(\mathbf q_\perp)$ would make the real number $p_0/|\mathbf p|$
-an eigenvalue of $R$, and a quarter turn has no real eigenvalue; hence $\mathbf q_\perp=0$, so
-$\mathbf q=\alpha\mathbf p$ and $\tilde q=\lambda\tilde p$. For a pure $\tilde p$ the parallel part
-gives $q_0=0$ and the perpendicular part $\mathbf p\times\mathbf q=0$, so again
+$\tilde p\diamond\tilde q=p_0\vec q-q_0\vec p-\vec p\times\vec q=0$ is the displayed
+criterion. Let $\vec q=\alpha\vec p+\vec q_\perp$ with $\vec q_\perp\perp\vec p$;
+the criterion splits into the parallel part $(p_0\alpha-q_0)\vec p=0$ and the perpendicular part
+$p_0\vec q_\perp=\vec p\times\vec q_\perp$. The first gives $\alpha=q_0/p_0$ when
+$p_0\neq0$; the second is $p_0\vec q_\perp=|\vec p|R(\vec q_\perp)$ with $R$ a quarter
+turn of the plane orthogonal to $\vec p$, so that
+$(p_0/|\vec p|)\vec q_\perp=R(\vec q_\perp)$ would make the real number $p_0/|\vec p|$
+an eigenvalue of $R$, and a quarter turn has no real eigenvalue; hence $\vec q_\perp=0$, so
+$\vec q=\alpha\vec p$ and $\tilde q=\lambda\tilde p$. For a pure $\tilde p$ the parallel part
+gives $q_0=0$ and the perpendicular part $\vec p\times\vec q=0$, so again
 $\tilde q=\lambda\tilde p$, then pure. The direct verification by the rank of the multiplication
 operator is below.
 
@@ -79,7 +79,7 @@ operator is below.
 **Remark (why no perpendicular partner).** The criterion couples the scalar direction and the
 vector part. The cross product contributes the perpendicular component alone, and the scalar part
 times the perpendicular part is compared with a quarter turn of it, a rotation of the plane
-orthogonal to $\mathbf p$; a quarter turn has no real eigenvector, so the perpendicular component
+orthogonal to $\vec p$; a quarter turn has no real eigenvector, so the perpendicular component
 of the partner is **forced to vanish**. Only the parallel component survives, and it fixes the
 ratio of the scalar parts. The partners are therefore the parallel pairs, and the perpendicular
 pairs are exactly the pairs that are **not** partners.
@@ -98,7 +98,7 @@ Algebra*, below this article in this category.
 $\tilde p,\tilde q\neq0$ and $\tilde p\diamond\tilde q=0$ form two families:
 
 $$
-\text{(i) the pure pairs: } \tilde p=\mathbf u,\ \tilde q=\lambda\mathbf u\ \text{with}\ \mathbf u\neq0,\ \lambda\neq0 ;
+\text{(i) the pure pairs: } \tilde p=\vec u,\ \tilde q=\lambda\vec u\ \text{with}\ \vec u\neq0,\ \lambda\neq0 ;
 \qquad
 \text{(ii) the non-pure pairs: } \tilde q=\lambda\tilde p\ \text{with}\ \tilde p\ \text{non-pure},\ \lambda\neq0 .
 $$
@@ -123,12 +123,12 @@ a line.
 The antisymmetrised quaternionic block has no nontrivial divisor theory: the operation is
 alternating, so every nonzero element is a zero divisor with itself as partner and the zero-divisor
 set is the punctured four-dimensional space. The criterion for a pair is
-$p_0\mathbf q=q_0\mathbf p+\mathbf p\times\mathbf q$, which forces the partner to be a **multiple
+$p_0\vec q=q_0\vec p+\vec p\times\vec q$, which forces the partner to be a **multiple
 of the element**, $\tilde q=\lambda\tilde p$: the perpendicular component is killed by the
 quarter-turn comparison of the scalar and cross terms, and the annihilator is the **line**
 $\mathbb{R}\tilde p$ for a nonzero element, cutting the multiplication operator down to rank three,
 with trace $3p_0$, vanishing determinant and characteristic polynomial
-$t(t-p_0)\bigl((t-p_0)^2+|\mathbf p|^2\bigr)$. The zero-divisor pairs split into the pure parallel
+$t(t-p_0)\bigl((t-p_0)^2+|\vec p|^2\bigr)$. The zero-divisor pairs split into the pure parallel
 pairs and the non-pure proportional pairs, of real dimension five. Over $\mathbb{C}$ the same
 criterion holds and the annihilator widens on the isotropic cone of the central square; over
 $\mathbb{R}$ the cone is empty and the annihilator is always the line.
@@ -139,11 +139,11 @@ $\mathbb{R}$ the cone is empty and the annihilator is always the line.
 |---|---|
 | $\tilde p\diamond\tilde q=0$, $\tilde p,\tilde q\neq0$ | a zero-divisor pair |
 | $\mathbb{H}\setminus\{0\}$ | the zero-divisor set, total |
-| $p_0\mathbf q=q_0\mathbf p+\mathbf p\times\mathbf q$ | the criterion |
+| $p_0\vec q=q_0\vec p+\vec p\times\vec q$ | the criterion |
 | $\tilde q=\lambda\tilde p$ | the partner, a multiple of the element |
 | $\operatorname{Ann}(\tilde p)=\mathbb{R}\tilde p$ | the annihilator, a line |
 | $\operatorname{Tr}L^{\diamond}_{\tilde p}=3p_0$, $\det=0$, rank $3$ | the invariants of the operator |
-| $t(t-p_0)\bigl((t-p_0)^2+\lvert\mathbf p\rvert^2\bigr)$ | the characteristic polynomial |
+| $t(t-p_0)\bigl((t-p_0)^2+\lvert\vec p\rvert^2\bigr)$ | the characteristic polynomial |
 
 ## Further Reading
 

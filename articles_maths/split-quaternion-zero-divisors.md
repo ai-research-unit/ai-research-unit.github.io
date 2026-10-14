@@ -97,13 +97,13 @@ $$
 
 Every nilpotent is a zero divisor, and the nilpotents form a proper subset of the zero divisor set.
 
-**Proof.** Write $\tilde q = q_0 + \mathbf v$ with $q_0 \in S$ and $\mathbf v \in V$. Since $e_1, e_2, e_3$ are traceless and the product of two distinct generators is the third with a sign, the square is
+**Proof.** Write $\tilde q = q_0 + \vec v$ with $q_0 \in S$ and $\vec v \in V$. Since $e_1, e_2, e_3$ are traceless and the product of two distinct generators is the third with a sign, the square is
 
 $$
-\tilde q^2 = q_0^2 + 2q_0\mathbf v + \mathbf v^2 = q_0^2 + 2q_0\mathbf v - N(\mathbf v),
+\tilde q^2 = q_0^2 + 2q_0\vec v + \vec v^2 = q_0^2 + 2q_0\vec v - N(\vec v),
 $$
 
-where $\mathbf v^2 = -N(\mathbf v)$ is the identity for pure vectors recorded in (*Split-Quaternion Norm and Invertibility*, §*The Split-Quaternion Norm*). If $\tilde q^2 = 0$, then comparing the components in $S$ and in $V$ gives $2q_0\mathbf v = 0$, so $q_0 = 0$ or $\mathbf v = 0$. If $\mathbf v = 0$ then $q_0^2 = 0$, so $q_0 = 0$ and $\tilde q = 0$, excluded by hypothesis; hence $q_0 = 0$ and $\tilde q = \mathbf v \in V$. Then $\tilde q^2 = -N(\tilde q)$, so $\tilde q^2 = 0$ exactly when $N(\tilde q) = 0$. Conversely every such $\tilde q$ has $\tilde q^2 = 0$. The computation for $e_1 + e_3$ uses $e_1 e_3 = -e_3 e_1$ and $e_1^2 = -1$, $e_3^2 = +1$. Every nilpotent satisfies $N(\tilde q)^2 = N(\tilde q^2) = 0$, hence $N(\tilde q) = 0$, so it is a zero divisor; the element $1 + e_2$ is a zero divisor with $N(1+e_2) = 0$ but $(1+e_2)^2 = 2(1+e_2) \neq 0$, so the inclusion is proper.
+where $\vec v^2 = -N(\vec v)$ is the identity for pure vectors recorded in (*Split-Quaternion Norm and Invertibility*, §*The Split-Quaternion Norm*). If $\tilde q^2 = 0$, then comparing the components in $S$ and in $V$ gives $2q_0\vec v = 0$, so $q_0 = 0$ or $\vec v = 0$. If $\vec v = 0$ then $q_0^2 = 0$, so $q_0 = 0$ and $\tilde q = 0$, excluded by hypothesis; hence $q_0 = 0$ and $\tilde q = \vec v \in V$. Then $\tilde q^2 = -N(\tilde q)$, so $\tilde q^2 = 0$ exactly when $N(\tilde q) = 0$. Conversely every such $\tilde q$ has $\tilde q^2 = 0$. The computation for $e_1 + e_3$ uses $e_1 e_3 = -e_3 e_1$ and $e_1^2 = -1$, $e_3^2 = +1$. Every nilpotent satisfies $N(\tilde q)^2 = N(\tilde q^2) = 0$, hence $N(\tilde q) = 0$, so it is a zero divisor; the element $1 + e_2$ is a zero divisor with $N(1+e_2) = 0$ but $(1+e_2)^2 = 2(1+e_2) \neq 0$, so the inclusion is proper.
 
 The nilpotent set is the level set $N = 0$ in $V$; by *Split-Quaternion Norm and Invertibility*, §*Isotropy*, its lines are the curve $\mathbb{R}(e_1 + \cos\theta\, e_2 + \sin\theta\, e_3)$.
 

@@ -41,13 +41,13 @@ different form, and its theory is *Norm and Invertibility in the General Plain A
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$,
 $e_k^2=-e_0$ and $e_1e_2=e_3$; $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$ and central
-scalar imaginary $i$; $\mathbf Q=\sum_kQ_ke_k$; $(\mathbf P,\mathbf Q)=\sum_kP_kQ_k$; ${}^{\natural}$ negates
+scalar imaginary $i$; $\vec Q=\sum_kQ_ke_k$; $(\vec P,\vec Q)=\sum_kP_kQ_k$; ${}^{\natural}$ negates
 $e_1,e_2,e_3$ and fixes the coefficients, $\bar{\cdot}$ conjugates the coefficients, and
 ${}^{*}={}^{\natural}\circ\bar{\cdot}$. The **algebraic norm of the block** is
 $K(\tilde Q)=\mathrm{Sc}(\tilde Q\star\tilde Q)=K(\tilde Q,\tilde Q)=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$,
 the diagonal of the **Krein form** $K(\tilde P,\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ with
 $\varepsilon=(1,-1,-1,-1)$; the square of an element is
-$\tilde Q\star\tilde Q=K(\tilde Q,\tilde Q)e_0-Q_0\overline{\mathbf Q}-\overline{Q_0}\mathbf Q$.
+$\tilde Q\star\tilde Q=K(\tilde Q,\tilde Q)e_0-Q_0\overline{\vec Q}-\overline{Q_0}\vec Q$.
 Throughout this article the product is the block.
 
 **The results.** The block has no unit, so no element has an inverse and the group of units is empty. It carries one algebraic norm, the Krein form $K(\tilde Q)=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$, real and indefinite of signature $(2,6)$, which is **not multiplicative** and does **not** detect the zero divisors: $K(e_0+e_1)=0$ on a regular element and $K(e_1)=-1$ on a pure zero divisor. Invertibility is replaced by regularity, $Q_0\neq0$ and $C(\tilde Q)\neq0$, where the left multiplication is injective with rank eight, six and four on the regular, non-pure and pure classes and rank zero at the origin.
@@ -119,10 +119,10 @@ form, with one argument its diagonal.
 $\mathrm{Sc}(\tilde Q\star\tilde Q)=K(\tilde Q)$, and
 
 $$
-\tilde Q\star\tilde Q=K(\tilde Q)e_0-Q_0\overline{\mathbf Q}-\overline{Q_0}\mathbf Q,
+\tilde Q\star\tilde Q=K(\tilde Q)e_0-Q_0\overline{\vec Q}-\overline{Q_0}\vec Q,
 $$
 
-with vector part $-2\mathrm{Re}(Q_0\overline{\mathbf Q})$.
+with vector part $-2\mathrm{Re}(Q_0\overline{\vec Q})$.
 
 *Proof.* The scalar part is the diagonal of the Krein form as the scalar part of the product of the block
 (*The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra*); the rest is the diagonal formula
@@ -258,7 +258,7 @@ central square, not by $K$.
 | $\tilde Q\star\tilde Q^{-1}=\tilde Q^{-1}\star\tilde Q=\tilde E$ | the inverse equation; empty without a unit |
 | $K(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\star\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ | the Krein form, the scalar-part form of the product |
 | $K(\tilde Q)=K(\tilde Q,\tilde Q)=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$ | the algebraic norm of the block, one of the four algebraic norms of the space |
-| $\tilde Q\star\tilde Q=K(\tilde Q)e_0-Q_0\overline{\mathbf Q}-\overline{Q_0}\mathbf Q$ | the square, a real quaternion with scalar part $K(\tilde Q)$ |
+| $\tilde Q\star\tilde Q=K(\tilde Q)e_0-Q_0\overline{\vec Q}-\overline{Q_0}\vec Q$ | the square, a real quaternion with scalar part $K(\tilde Q)$ |
 | $K(\tilde P\star\tilde Q)\neq K(\tilde P)K(\tilde Q)$ | the failure of multiplicativity |
 | $Q_0\neq0,\ C(\tilde Q)\neq0$ | the regular elements, the substitute for the invertible ones |
 | $\mathrm{rank}\,L^{\star}_{\tilde Q}\in\{8,6,4,0\}$ | the ranks: regular, non-pure divisor, pure divisor, origin |

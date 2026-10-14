@@ -10,7 +10,7 @@ article reads the **antisymmetric part** as a multiplication in its own right:
 
 $$
 \tilde p\diamond\tilde q=\tfrac12\bigl(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p\bigr)
-=p_0\mathbf q-q_0\mathbf p-\mathbf p\times\mathbf q,
+=p_0\vec q-q_0\vec p-\vec p\times\vec q,
 $$
 
 the quaternionic product with its scalar part removed. The space $\mathbb{H}$ with this operation is
@@ -39,11 +39,11 @@ the Antisymmetric Plain Algebra of Quaternions*, above this article in this cate
 
 **Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$, so that
 $e_1^2=e_2^2=e_3^2=-e_0$ and $e_je_k=-e_ke_j$ for $j\neq k$. A generic element is
-$\tilde q=q_0e_0+\mathbf q$ with $\mathbf q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$;
-$\mathbf p\cdot\mathbf q$ is the Euclidean dot product and $\mathbf p\times\mathbf q$ the vector
+$\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$;
+$\vec p\cdot\vec q$ is the Euclidean dot product and $\vec p\times\vec q$ the vector
 product of the vector parts. The parent product is $\tilde p^{\natural}\tilde q$, of scalar–vector rule
-$\tilde p^{\natural}\tilde q=(p_0q_0+\mathbf p\cdot\mathbf q)+p_0\mathbf q-q_0\mathbf p-\mathbf p\times\mathbf q$;
-the **quaternion form** is $N(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q$. The circle $\circ$
+$\tilde p^{\natural}\tilde q=(p_0q_0+\vec p\cdot\vec q)+p_0\vec q-q_0\vec p-\vec p\times\vec q$;
+the **quaternion form** is $N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$. The circle $\circ$
 is reserved for the composition of maps.
 
 ## The Antisymmetrised Quaternionic Product
@@ -65,13 +65,13 @@ algebra** of the block.
 ### The Coordinate and Scalar–Vector Forms
 
 The parent product reads
-$\tilde p^{\natural}\tilde q=(p_0q_0+\mathbf p\cdot\mathbf q)+p_0\mathbf q-q_0\mathbf p-\mathbf p\times\mathbf q$,
+$\tilde p^{\natural}\tilde q=(p_0q_0+\vec p\cdot\vec q)+p_0\vec q-q_0\vec p-\vec p\times\vec q$,
 and its exchange $\tilde q^{\natural}\tilde p$ differs in the sign of the scalar part, in the order of
 the mixed terms and in the sign of the cross term. Subtracting and halving, the scalar part cancels and
 the operation is
 
 $$
-\tilde p\diamond\tilde q=p_0\mathbf q-q_0\mathbf p-\mathbf p\times\mathbf q .
+\tilde p\diamond\tilde q=p_0\vec q-q_0\vec p-\vec p\times\vec q .
 $$
 
 Read on the coordinates,
@@ -84,7 +84,7 @@ $$
 $$
 
 **Remark (the scalar part of the parent is removed).** The operation is the parent product with its
-scalar coordinate deleted: the scalar value $p_0q_0+\mathbf p\cdot\mathbf q$ of the parent is the
+scalar coordinate deleted: the scalar value $p_0q_0+\vec p\cdot\vec q$ of the parent is the
 trace of its $2\times2$ model, and the antisymmetrisation kills the trace. Every value is a pure
 element.
 
@@ -127,15 +127,15 @@ the parent quaternionic product is not associative, hence the failure read below
 **Proposition (the image).** The image of the block is the vector subspace,
 
 $$
-\mathbb{H}\diamond\mathbb{H}=\mathrm{Vect}(\mathbb{H})=\{\mathbf q\}=\{q_0=0\},
+\mathbb{H}\diamond\mathbb{H}=\mathrm{Vect}(\mathbb{H})=\{\vec q\}=\{q_0=0\},
 $$
 
 of real dimension three, and the block is onto it, since $e_1\diamond e_2=-e_3$ and its images
 generate the vector subspace. The left action of $e_0$ is the projection onto the vector subspace,
-$e_0\diamond\tilde q=\mathbf q$, and the right action is its negative, $\tilde q\diamond e_0=-\mathbf q$.
+$e_0\diamond\tilde q=\vec q$, and the right action is its negative, $\tilde q\diamond e_0=-\vec q$.
 
 **Proposition (no unit).** The block has no left unit, no right unit and no two-sided unit. The
-candidate $e_0$ has $e_0\diamond\tilde q=\mathbf q$, which is not $\tilde q$ at a non-pure element, and
+candidate $e_0$ has $e_0\diamond\tilde q=\vec q$, which is not $\tilde q$ at a non-pure element, and
 no other candidate reaches the scalar direction, every value being pure.
 
 **Proposition (the reconstruction).** The parent product is the sum of its two halves,
@@ -184,7 +184,7 @@ $$
 
 $$
 J(\tilde p,\tilde q,\tilde r)
-=-p_0\,(\mathbf q\times\mathbf r)+q_0\,(\mathbf p\times\mathbf r)-r_0\,(\mathbf p\times\mathbf q),
+=-p_0\,(\vec q\times\vec r)+q_0\,(\vec p\times\vec r)-r_0\,(\vec p\times\vec q),
 $$
 
 and the catalogue witness is the triple $(e_0,e_1,e_2)$, where
@@ -221,14 +221,14 @@ on the element theory, and differs on the identity and the structure it defines.
 ## Summary
 
 The antisymmetrised quaternionic multiplication is
-$\tilde p\diamond\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)=p_0\mathbf q-q_0\mathbf p-\mathbf p\times\mathbf q$, the anticommutative half of the general
+$\tilde p\diamond\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)=p_0\vec q-q_0\vec p-\vec p\times\vec q$, the anticommutative half of the general
 quaternionic product, of quaternion bracket $[\tilde p,\tilde q]_{\natural}=2(\tilde p\diamond\tilde q)$.
 It is $\mathbb{R}$-bilinear and alternating, with $\tilde p\diamond\tilde p=0$; its image is the vector
 subspace $\mathrm{Vect}(\mathbb{H})$; the left multiplication by $e_0$ is the projection onto the vector
 subspace and the right one its negative; and it has no unit. The parent product is reconstructed as
 $\mathrm{GQA}=\mathrm{SQA}+\mathrm{AQA}$, and the square map sees only the symmetric half. Unlike its
 plain companion it **fails the Jacobi identity**: the cyclic sum has the closed form
-$-p_0(\mathbf q\times\mathbf r)+q_0(\mathbf p\times\mathbf r)-r_0(\mathbf p\times\mathbf q)$ and the
+$-p_0(\vec q\times\vec r)+q_0(\vec p\times\vec r)-r_0(\vec p\times\vec q)$ and the
 witness $(e_0,e_1,e_2)$ gives $-e_3$. This failure is the whole difference between the two
 antisymmetric blocks.
 
@@ -237,10 +237,10 @@ antisymmetric blocks.
 | Symbol | Meaning |
 |---|---|
 | $\tilde p\diamond\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)$ | the antisymmetrised quaternionic multiplication, the operation $\mathrm{AQA}$ |
-| $p_0\mathbf q-q_0\mathbf p-\mathbf p\times\mathbf q$ | its scalar–vector form |
+| $p_0\vec q-q_0\vec p-\vec p\times\vec q$ | its scalar–vector form |
 | $[\tilde p,\tilde q]_{\natural}=\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p=2(\tilde p\diamond\tilde q)$ | the quaternionic bracket, twice the operation |
 | $\tilde p\diamond\tilde p=0$ | the alternation, the vanishing square |
-| $e_0\diamond\tilde q=\mathbf q$ | the left projection onto the vector subspace |
+| $e_0\diamond\tilde q=\vec q$ | the left projection onto the vector subspace |
 | $\mathrm{Vect}(\mathbb{H})$ | the image, the vector subspace |
 | $\mathrm{GQA}=\mathrm{SQA}+\mathrm{AQA}$ | the reconstruction of the parent product |
 | $J(\tilde p,\tilde q,\tilde r)$ | the cyclic sum, nonzero, the Jacobi defect |

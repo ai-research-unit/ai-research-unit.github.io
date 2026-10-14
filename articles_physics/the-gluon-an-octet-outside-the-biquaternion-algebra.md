@@ -118,7 +118,7 @@ $$
 \qquad
 \mathrm{Sc}(\tilde{F})=0 ,
 $$
-is a pure-vector material biquaternion, and whose propagating solutions are the self-dual and anti-self-dual combinations carrying the two helicities $\pm1$. The companion articles *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector* and *The Photon in Biquaternionic Form* develop exactly this structure for the massless vector, and it applies to a colour-fixed gluon without change, because a colour-fixed gluon satisfies the abelian Maxwell system component by component. The field-strength invariants $I_1=\mathbf{E}^2-c^2\mathbf{B}^2$ and $I_2=\mathbf{E}\cdot\mathbf{B}$ of the companion article govern its Lorentz structure, and the helicity basis is the same.
+is a pure-vector material biquaternion, and whose propagating solutions are the self-dual and anti-self-dual combinations carrying the two helicities $\pm1$. The companion articles *The Self-Dual and Anti-Self-Dual Split: Spin 1 from the Biquaternion Material Sector* and *The Photon in Biquaternionic Form* develop exactly this structure for the massless vector, and it applies to a colour-fixed gluon without change, because a colour-fixed gluon satisfies the abelian Maxwell system component by component. The field-strength invariants $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$ of the companion article govern its Lorentz structure, and the helicity basis is the same.
 
 Two qualifications keep the statement exact.
 

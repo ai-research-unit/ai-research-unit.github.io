@@ -26,12 +26,12 @@ interpretation is *Observables, Gauge Generators and the Chirality of the Intern
 
 **Conventions.** As in the companion *The Interval as the Square and the Charge of the Material
 Composition*: $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$,
-$e_k^{2}=-e_0$, $e_1e_2=e_3$; an element $\tilde Q=Q_0e_0+\mathbf Q$; the natural conjugation
-$\tilde Q^{\natural}=Q_0-\mathbf Q$, the Hermitian one $\tilde Q^{*}$, the coefficientwise bar; the
+$e_k^{2}=-e_0$, $e_1e_2=e_3$; an element $\tilde Q=Q_0e_0+\vec Q$; the natural conjugation
+$\tilde Q^{\natural}=Q_0-\vec Q$, the Hermitian one $\tilde Q^{*}$, the coefficientwise bar; the
 sectors $\mathbb{M}_\pm$; the general plain bilinear product $\tilde P\tilde Q$, the quaternionic product
 $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$, the biquaternion norm $N(\tilde Q)=\sum_\mu Q_\mu^{2}$;
 the real quaternion subspace $\mathbb{H}_{\mathbb{B}}=\mathbb{R}e_0+\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3$
-and its imaginary multiple $i\mathbb{H}_{\mathbb{B}}$; the material coordinate $ict\,e_0+\mathbf x$.
+and its imaginary multiple $i\mathbb{H}_{\mathbb{B}}$; the material coordinate $ict\,e_0+\vec x$.
 
 ## The Two Slots Are Not the Same
 
@@ -54,7 +54,7 @@ interval is read and the second as the one that acts, or the other way round acc
 algebra asserts only that the roles are distinct. The product is also non-commutative, with
 
 $$
-\tilde P\star\tilde Q-\tilde Q\star\tilde P=2P_0\mathbf Q-2Q_0\mathbf P-2\,\mathbf P\times\mathbf Q ,
+\tilde P\star\tilde Q-\tilde Q\star\tilde P=2P_0\vec Q-2Q_0\vec P-2\,\vec P\times\vec Q ,
 $$
 
 so the order matters, and it matters through the same conjugation that produces the interval.
@@ -94,8 +94,8 @@ fixed.
 
 $$
 \tfrac12\bigl(\tilde P\star\tilde Q+\tilde Q\star\tilde P\bigr)
-=\bigl(P_0Q_0+(\mathbf P,\mathbf Q)\bigr)e_0 , \qquad
-\tfrac12\bigl(\tilde P\star\tilde Q-\tilde Q\star\tilde P\bigr)=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q .
+=\bigl(P_0Q_0+(\vec P,\vec Q)\bigr)e_0 , \qquad
+\tfrac12\bigl(\tilde P\star\tilde Q-\tilde Q\star\tilde P\bigr)=P_0\vec Q-Q_0\vec P-\vec P\times\vec Q .
 $$
 
 The **first half is a central number** and the second half is a **vector**. The central half is the
@@ -148,11 +148,11 @@ ones.
 The projections the framework uses are elements of the informational sector, and they are not idempotent
 for $\star$ at all.
 
-**Proposition (the informational projectors).** For every real unit vector $\hat{\boldsymbol\mu}$ the
+**Proposition (the informational projectors).** For every real unit vector $\hat\mu$ the
 element
 
 $$
-\tilde\Pi=\tfrac12\bigl(e_0+i\hat{\boldsymbol\mu}\bigr)
+\tilde\Pi=\tfrac12\bigl(e_0+i\hat\mu\bigr)
 $$
 
 satisfies $\tilde\Pi^{2}=\tilde\Pi$ for the general plain bilinear product, $\tilde\Pi\tilde\Pi^{*}=\tilde\Pi$ for the
@@ -162,8 +162,8 @@ $$
 N(\tilde\Pi)=0 , \qquad \tilde\Pi\star\tilde\Pi=N(\tilde\Pi)e_0=0 .
 $$
 
-**Proof.** The first two are the standard projector identities for $\tfrac12(e_0+i\hat{\boldsymbol\mu})$
-with $\hat{\boldsymbol\mu}^{2}=-e_0$; the trace is the definition, and the last is the square identity of
+**Proof.** The first two are the standard projector identities for $\tfrac12(e_0+i\hat\mu)$
+with $\hat\mu^{2}=-e_0$; the trace is the definition, and the last is the square identity of
 the companion article applied to $\tilde\Pi$, whose norm vanishes because
 $N(\tilde\Pi)=\tfrac14(1-1)=0$.
 
@@ -270,7 +270,7 @@ and no right one; the non-commutativity; the rule $L_{\tilde A}\circ L_{\tilde B
 so that the operations compose associatively though the elements do not. The split of a composite into a
 central half and a vector half, with the central half the order-independent part. The idempotents of
 $\star$ are exactly $0$ and $e_0$. The informational projectors
-$\tfrac12(e_0+i\hat{\boldsymbol\mu})$ are idempotent for the ordinary and the sesquilinear products, have
+$\tfrac12(e_0+i\hat\mu)$ are idempotent for the ordinary and the sesquilinear products, have
 $N=0$, and are **null** for $\star$. The four inclusions of the real–imaginary split, and the non-closure
 of the spatial part of the material sector, with the witness $e_1\star e_1=e_0$.
 
@@ -295,7 +295,7 @@ The orientation reads as the statement that the material ledger carries no Born 
 The material composition $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ is **oriented**: its first
 slot is read through the natural conjugation and its second is not, the identity acts as the identity only
 from the left, $\tilde Q\star e_0=\tilde Q^{\natural}\neq\tilde Q$, so there is no right identity, and the
-order matters with commutator $2P_0\mathbf Q-2Q_0\mathbf P-2\mathbf P\times\mathbf Q$. The operations
+order matters with commutator $2P_0\vec Q-2Q_0\vec P-2\vec P\times\vec Q$. The operations
 themselves still compose associatively, $L_{\tilde A}\circ L_{\tilde B}=L_{\tilde B\tilde A}$, so a chain
 of material operations is a well-defined map even though a chain of the corresponding elements is not. The
 interpretation is that the physical evolution is the **monoid of left multiplications** and the element only its
@@ -305,7 +305,7 @@ and satisfy $Q_0^{2}=Q_0$, so the material multiplication resolves no state agai
 composite of two material operations splits into a central number — the order-independent pairing — and a
 direction; on the material sector the square is a number, so the sector is not closed, the witness being
 $e_1\star e_1=e_0$. The projections the framework uses belong to the informational sector, where
-$\tilde\Pi=\tfrac12(e_0+i\hat{\boldsymbol\mu})$ is idempotent for the ordinary and the sesquilinear products
+$\tilde\Pi=\tfrac12(e_0+i\hat\mu)$ is idempotent for the ordinary and the sesquilinear products
 and is **null** for the material composition. The material composition therefore respects one internal
 split — the real quaternion subspace is closed, and a real value composes to a real value — but the even
 part of the material sector is not closed, since a product of two spatial elements may land on the unit.
@@ -324,9 +324,9 @@ their monoid by *The Left Multiplications of the Quaternionic Product and the Op
 | $\tilde Q^{\natural}$ | the natural conjugation; the operation inserted in the first slot |
 | $e_0$; $0$ | the two idempotents of $\star$; the left identity and the zero element |
 | $L_{\tilde A}$ | the left multiplication $\tilde X\mapsto\tilde A\star\tilde X$ |
-| $2P_0\mathbf Q-2Q_0\mathbf P-2\mathbf P\times\mathbf Q$ | the commutator of $\star$ |
-| $P_0Q_0+(\mathbf P,\mathbf Q)$ | the central, order-independent half of a composite |
-| $\tilde\Pi=\tfrac12(e_0+i\hat{\boldsymbol\mu})$ | the informational projector; null for $\star$ |
+| $2P_0\vec Q-2Q_0\vec P-2\vec P\times\vec Q$ | the commutator of $\star$ |
+| $P_0Q_0+(\vec P,\vec Q)$ | the central, order-independent half of a composite |
+| $\tilde\Pi=\tfrac12(e_0+i\hat\mu)$ | the informational projector; null for $\star$ |
 | $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$ | the real quaternion subspace and its imaginary multiple |
 | $\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3$ | the spatial part of the material sector; not closed under $\star$ |
 | $\mathbb{M}_\pm$ | the material and informational sectors |

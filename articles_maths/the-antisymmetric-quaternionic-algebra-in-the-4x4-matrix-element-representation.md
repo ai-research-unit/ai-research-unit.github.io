@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The antisymmetric quaternionic multiplication $\tilde P\diamond\tilde Q=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$ is the halved difference of the quaternionic product and the product with the arguments exchanged (*Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions*). This article reads the operation of the block in the $4\times4$ left regular model, the regular representation on $\mathbb{B}$ as a four-dimensional space, of *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* and *The General Quaternionic Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$*; it is the second of the two representation articles of the block, and its companion *The Antisymmetric Quaternionic Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* repeats the reading on the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$. The article treats the difference of the two twisted products, the image and the kernel on the matrices, the trace, the determinant and the rank of the operator, and the matrix form of the invariant form. Nothing of the parent product's own models is redone; the models are cited and used.
+The antisymmetric quaternionic multiplication $\tilde P\diamond\tilde Q=P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$ is the halved difference of the quaternionic product and the product with the arguments exchanged (*Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions*). This article reads the operation of the block in the $4\times4$ left regular model, the regular representation on $\mathbb{B}$ as a four-dimensional space, of *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* and *The General Quaternionic Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$*; it is the second of the two representation articles of the block, and its companion *The Antisymmetric Quaternionic Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* repeats the reading on the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$. The article treats the difference of the two twisted products, the image and the kernel on the matrices, the trace, the determinant and the rank of the operator, and the matrix form of the invariant form. Nothing of the parent product's own models is redone; the models are cited and used.
 
 ## The Operation in the Model
 
@@ -110,7 +110,7 @@ In the $4\times4$ regular model the operation of the block is half the differenc
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\diamond\tilde Q=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$ | the antisymmetric quaternionic multiplication, the operation $\mathrm{AQA}$ |
+| $\tilde P\diamond\tilde Q=P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$ | the antisymmetric quaternionic multiplication, the operation $\mathrm{AQA}$ |
 | $\mathsf{M}_4$ | the left regular representation, the $4\times4$ model |
 | $\mathsf{M}_4(\tilde P^{\natural})=\mathsf{M}_4(\tilde P)^{\mathsf T}$ | the matrix of the quaternion conjugation in the model |
 | $\mathsf{M}_4(\tilde P)^{\mathsf T}\mathsf{M}_4(\tilde Q)$ | the twisted product, the matrix of the parent product |

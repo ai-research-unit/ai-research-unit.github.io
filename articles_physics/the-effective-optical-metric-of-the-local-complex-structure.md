@@ -4,7 +4,7 @@
 
 The local complex structure of the framework identifies the temporal direction with the imaginary scalar generator, $t\mapsto i\,c\,t\,e_0$, with $c$ the local speed of light in the medium. It induces at each point the quadratic form
 $$
-N(d\tilde{Q})=(ic\,dt)^2+d\mathbf x^2=-c^2\,dt^2+d\mathbf x^2,
+N(d\tilde{Q})=(ic\,dt)^2+d\vec x^2=-c^2\,dt^2+d\vec x^2,
 $$
 of signature $(3,1)$, so the framework reads a Lorentzian metric off the algebra rather than postulating it. The structure leaves one number free, the scale $c=1/\sqrt{\epsilon\mu}$; the null cone of the form has aperture $c$; and the wave operator $\Box=\Delta-c^{-2}\partial_t^2$ has characteristic speed $c$ (*The Local Complex Structure and the Speed of Light*).
 
@@ -12,7 +12,7 @@ That construction is announced as a **metric**, and the word invites a specific 
 
 This article takes up that separate question. The result is short and sharp: **in a static medium the framework's local metric is exactly the optical metric**, to machine precision and with no extra assumption, and the two independent boundaries — motion and anisotropy — show exactly where the framework's single scalar $c$ runs out. A third boundary is more interesting than either: when $\epsilon\mu$ changes sign the framework's metric changes signature, and that change is the Wick rotation of the local structure.
 
-Throughout, the algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, and central $i$. The material sector is $\mathbb{M}_-$ with $\tilde{Q}=ic\,t\,e_0+\mathbf x$ and norm $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$. The framework's local metric is $g=\mathrm{diag}(-c^2,1,1,1)$ in the coordinate basis $(\partial_t,\partial_x,\partial_y,\partial_z)$. The medium speed is $c=1/\sqrt{\epsilon\mu}$, the vacuum speed $c_0=1/\sqrt{\epsilon_0\mu_0}$, and the refractive index $n=c_0/c$.
+Throughout, the algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, and central $i$. The material sector is $\mathbb{M}_-$ with $\tilde{Q}=ic\,t\,e_0+\vec x$ and norm $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$. The framework's local metric is $g=\mathrm{diag}(-c^2,1,1,1)$ in the coordinate basis $(\partial_t,\partial_x,\partial_y,\partial_z)$. The medium speed is $c=1/\sqrt{\epsilon\mu}$, the vacuum speed $c_0=1/\sqrt{\epsilon_0\mu_0}$, and the refractive index $n=c_0/c$.
 
 ## The Optical Metric of a Medium
 
@@ -34,9 +34,9 @@ $$
 $$
 Its null cone is
 $$
--\frac{dt^2}{n^2}+d\mathbf x^2=0
+-\frac{dt^2}{n^2}+d\vec x^2=0
 \;\Longleftrightarrow\;
-\left|\frac{d\mathbf x}{dt}\right|=\frac{1}{n}=c ,
+\left|\frac{d\vec x}{dt}\right|=\frac{1}{n}=c ,
 $$
 so the coordinate speed of light in the medium is $1/n$: the optical metric reproduces the medium's light speed by construction. This is the standard object, and nothing about it is in question.
 
@@ -122,7 +122,7 @@ The interpretation adds no prediction and no gravity. It is a repackaging of Gor
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
-| $\mathbb{M}_-$ | Material sector, $\tilde{Q}=ic\,t\,e_0+\mathbf x$ |
+| $\mathbb{M}_-$ | Material sector, $\tilde{Q}=ic\,t\,e_0+\vec x$ |
 | $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm; null cone $N=0$ |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0=1/\sqrt{\epsilon_0\mu_0}$ | Medium and vacuum speeds |
 | $n=c_0/c$ | Refractive index |

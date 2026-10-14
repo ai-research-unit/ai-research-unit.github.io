@@ -31,7 +31,7 @@ $$
 \qquad
 \mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_- .
 $$
-The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0)=2$; the biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, central-valued; the Hermitian form is $\langle\tilde{Q},\tilde{Y}\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Y})$. The matrix model is the $\mathbb{C}$-linear representation $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$, under which $\mathsf{M}_2(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. A state is $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$, $|\mathbf{r}|\leq1$, and a pure state is $\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$.
+The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0)=2$; the biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$, central-valued; the Hermitian form is $\langle\tilde{Q},\tilde{Y}\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Y})$. The matrix model is the $\mathbb{C}$-linear representation $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$, under which $\mathsf{M}_2(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. A state is $\tilde{\rho}=\tfrac12(e_0+i\vec r)$, $|\vec r|\leq1$, and a pure state is $\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$.
 
 ## The Centre: Definition and Computation
 
@@ -41,11 +41,11 @@ Z(\mathbb{B})=\bigl\{\tilde{Q}\in\mathbb{B}:\ \tilde{Q}\tilde{Y}=\tilde{Y}\tilde
 $$
 Equivalently, since $\mathbb{B}$ is generated as a real algebra by $e_0,e_1,e_2,e_3,i$, an element is central if and only if it commutes with $e_1,e_2,e_3$ and with $i$; commutation with $i$ is automatic because $i$ is central, and commutation with $e_0$ is automatic because $e_0$ is the unit.
 
-**Computation.** Write $\tilde{Q}=x_0e_0+\mathbf{x}$ with $\mathbf{x}=x_1e_1+x_2e_2+x_3e_3$ the pure-quaternion part. For $k=1,2,3$,
+**Computation.** Write $\tilde{Q}=x_0e_0+\vec x$ with $\vec x=x_1e_1+x_2e_2+x_3e_3$ the pure-quaternion part. For $k=1,2,3$,
 $$
-[\tilde{Q},e_k]=[\mathbf{x},e_k]=2\,\mathbf{x}\times e_k ,
+[\tilde{Q},e_k]=[\vec x,e_k]=2\,\vec x\times e_k ,
 $$
-where the cross product is that of $\mathbb{R}^3$ under the identification $e_j\leftrightarrow$ the $j$-th basis vector. If $\tilde{Q}$ is central then $[\tilde{Q},e_k]=0$ for all $k$, so $\mathbf{x}\times e_k=0$ for $k=1,2,3$. Since $e_1,e_2,e_3$ span $\mathbb{R}^3$, this forces $\mathbf{x}=0$. Hence a central element is a complex multiple of the unit,
+where the cross product is that of $\mathbb{R}^3$ under the identification $e_j\leftrightarrow$ the $j$-th basis vector. If $\tilde{Q}$ is central then $[\tilde{Q},e_k]=0$ for all $k$, so $\vec x\times e_k=0$ for $k=1,2,3$. Since $e_1,e_2,e_3$ span $\mathbb{R}^3$, this forces $\vec x=0$. Hence a central element is a complex multiple of the unit,
 $$
 \boxed{\ Z(\mathbb{B})=\mathbb{C}_{\mathbb{B}}=\bigl\{x_0e_0:\ x_0\in\mathbb{C}\bigr\}=\mathbb{C}e_0\cong\mathbb{C}.\ }
 $$

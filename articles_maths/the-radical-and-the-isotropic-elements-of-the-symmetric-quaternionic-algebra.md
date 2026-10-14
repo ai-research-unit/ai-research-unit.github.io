@@ -5,7 +5,7 @@
 The symmetric quaternionic multiplication $\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0$
 (*Introduction to the Symmetric Quaternionic Algebra of Biquaternions*) collapses every product onto the
 central line, so the element theory of the operation is read entirely from the coefficient
-$N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$ and its diagonal. This article reads that coefficient as a
+$N(\tilde P,\tilde Q)=P_0Q_0+(\vec P,\vec Q)$ and its diagonal. This article reads that coefficient as a
 pairing and develops the two objects the article title names: the **radical**, which is the set of elements
 annihilated by the whole algebra on both sides, and the **isotropic elements**, the elements whose square
 vanishes. It then records the derived objects the collapse produces — the derived law and the ternary law — and identifies the isotropic elements with the zero divisors of the parent plain algebra.
@@ -13,7 +13,7 @@ vanishes. It then records the derived objects the collapse produces — the deri
 **Placement.** The article is the first entry of the *Specific Theory* section of the block, the section that carries the block's own structural theory, and it is followed by *The Specificities of the Symmetric Quaternionic Algebra*. It assumes the operation and its formula from *Introduction to the Symmetric Quaternionic Algebra of Biquaternions*, the centrality from *The Symmetrised Quaternionic Product and the Hermitian Subspace*, the norm, its polarisation and its isotropic cone from *Norm and Invertibility in the General Quaternionic Algebra* and *Zero Divisors of the General Plain Algebra*; the idempotents, the nilpotents and the zero-divisor set of the block are the Common Theory slots *Square Roots of One and the Idempotents of the Symmetric Quaternionic Algebra*, *Square Roots of Zero and the Nilpotents of the Symmetric Quaternionic Algebra* and *Zero Divisors of the Symmetric Quaternionic Algebra*, cited here and not restated. The remarkable subspaces are treated in the companion article *Remarkable Subspaces under the Symmetric Quaternionic Algebra of Biquaternions*, and the form reader is *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*.
 
 **Conventions.** The operation is $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$,
-equal to $N(\tilde P,\tilde Q)e_0$; the coefficient $N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$ is the
+equal to $N(\tilde P,\tilde Q)e_0$; the coefficient $N(\tilde P,\tilde Q)=P_0Q_0+(\vec P,\vec Q)$ is the
 quaternion form, and $N(\tilde Q)=N(\tilde Q,\tilde Q)=\sum_\mu Q_\mu^2$ is its diagonal; the quaternionic
 bracket is $[\tilde P,\tilde Q]_{\natural}=\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P$. The remarkable subspaces are $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$,
 $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ of *Introduction to the Remarkable Subspaces*.
@@ -166,7 +166,7 @@ T(\tilde P,\tilde Q,\tilde R) = [\tilde P,\tilde R]_{\natural}\star\tilde Q
 $$
 
 which is linear in each of its three arguments and alternating in the first and the third, the bracket
-$[\tilde P,\tilde R]_{\natural}=2\bigl(P_0\mathbf R-R_0\mathbf P-\mathbf P\times\mathbf R\bigr)$ being alternating. It does
+$[\tilde P,\tilde R]_{\natural}=2\bigl(P_0\vec R-R_0\vec P-\vec P\times\vec R\bigr)$ being alternating. It does
 **not** vanish in general: at $\tilde P=e_1$, $\tilde R=e_2$, $\tilde Q=e_3$ the bracket is
 $[\tilde P,\tilde R]_{\natural}=-2e_3$ and $N(-2e_3,e_3)=-2$, so $T=-2e_0$, and the sum
 $[\tilde P,\tilde R]_{\natural}\star\tilde Q+\tilde Q\star[\tilde P,\tilde R]_{\natural}=2N([\tilde P,\tilde R]_{\natural},\tilde Q)e_0$ is twice this value and is not $0$. The operation therefore
@@ -216,7 +216,7 @@ contain no nonzero isotropic element.
 | Symbol | Meaning |
 |---|---|
 | $\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0$ | the symmetric quaternionic multiplication |
-| $N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$ | the quaternion form, the coefficient of the product |
+| $N(\tilde P,\tilde Q)=P_0Q_0+(\vec P,\vec Q)$ | the quaternion form, the coefficient of the product |
 | $N(\tilde Q)=N(\tilde Q,\tilde Q)=\sum_\mu Q_\mu^2$ | the norm form, the diagonal of $N$ |
 | $L^{\star}_{\tilde A}$ | the left (and right) multiplication, $L^{\star}_{\tilde A}\tilde R=N(\tilde A,\tilde R)e_0$ |
 | $\operatorname{Rad}(\star)$ | the two-sided annihilator, $\{0\}$ |

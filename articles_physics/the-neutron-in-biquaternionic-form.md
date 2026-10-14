@@ -91,10 +91,10 @@ The composite character is thus not a gap of the article; it is the framework's 
 
 ## The Magnetic Moment: A Neutral Field with a Nonzero Moment
 
-The electron article derives, from the $1/2m$ coefficient produced by the Dirac equation under minimal coupling, the tree-level gyromagnetic relation $\boldsymbol{\mu} = (g q/2m)\mathbf{S}$ with $g=2$. Applied to a **neutral** structureless Dirac fermion the same treatment gives
+The electron article derives, from the $1/2m$ coefficient produced by the Dirac equation under minimal coupling, the tree-level gyromagnetic relation $\vec\mu = (g q/2m)\vec S$ with $g=2$. Applied to a **neutral** structureless Dirac fermion the same treatment gives
 
 $$
-\boldsymbol{\mu} \;=\; \frac{g\,q}{2m}\,\mathbf{S} \;=\; 0 \qquad (q=0),
+\vec\mu \;=\; \frac{g\,q}{2m}\,\vec S \;=\; 0 \qquad (q=0),
 $$
 
 for any $g$: a neutral point Dirac fermion has no magnetic moment. The measured neutron moment is

@@ -164,10 +164,10 @@ reproduces it exactly, since $\langle \varepsilon_\mu, \tfrac{1}{2}h_{\nu\lambda
 
 ### The Counting
 
-The frame perturbation has $4 \times 4 = 16$ real components; a symmetric $h_{\mu\nu}$ has $10$. The difference is accounted for by the **local Lorentz transformations** of the frame. If $\tilde{\Lambda} = e_0 + \tilde{G}$ is an infinitesimal unit-norm biquaternion, the frame transforms as
+The frame perturbation has $4 \times 4 = 16$ real components; a symmetric $h_{\mu\nu}$ has $10$. The difference is accounted for by the **local Lorentz transformations** of the frame. If $\tilde{U} = e_0 + \tilde{G}$ is an infinitesimal unit-norm biquaternion, the frame transforms as
 
 $$
-\tilde{E}_\mu \;\longmapsto\; \tilde{\Lambda}\tilde{E}_\mu\tilde{\Lambda}^{*}
+\tilde{E}_\mu \;\longmapsto\; \tilde{U}\tilde{E}_\mu\tilde{U}^{*}
 = \tilde{E}_\mu + \tilde{G}\tilde{E}_\mu + \tilde{E}_\mu\tilde{G}^{*} + O(\tilde{G}^2),
 $$
 
@@ -177,7 +177,7 @@ $$
 \delta\tilde{E}_\mu \;\longmapsto\; \delta\tilde{E}_\mu + \tilde{G}\varepsilon_\mu + \varepsilon_\mu\tilde{G}^{*} .
 $$
 
-The unit-norm condition $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$ linearizes to $\tilde{G} + \tilde{G}^{\natural} = 0$, which says that $\tilde{G}$ is a **complex pure vector**, $\tilde{G} \in \mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3, ie_1, ie_2, ie_3\}$. This is the six-dimensional traceless subspace that the parent article identifies with the Lorentz Lie algebra $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$, spanned by the rotation generators $J_k = e_k$ and the boost generators $K_k = ie_k$. Its elements leave the metric perturbation invariant:
+The unit-norm condition $\tilde{U}\tilde{U}^{\natural} = e_0$ linearizes to $\tilde{G} + \tilde{G}^{\natural} = 0$, which says that $\tilde{G}$ is a **complex pure vector**, $\tilde{G} \in \mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3, ie_1, ie_2, ie_3\}$. This is the six-dimensional traceless subspace that the parent article identifies with the Lorentz Lie algebra $\mathrm{SL}(2,\mathbb{C})_{\mathbb{R}}$, spanned by the rotation generators $J_k = e_k$ and the boost generators $K_k = ie_k$. Its elements leave the metric perturbation invariant:
 
 $$
 \langle \varepsilon_\mu, \tilde{G}\varepsilon_\nu + \varepsilon_\nu\tilde{G}^{*}\rangle_{\natural}

@@ -7,7 +7,7 @@ the square root is relative to it (*Definitions for the Study of the 6 Algebraic
 §*The Element Vocabulary*). The block of this article is the antisymmetric plain multiplication
 
 $$
-\tilde p\times\tilde q=\tfrac12\bigl(\tilde p\tilde q-\tilde q\tilde p\bigr)=\mathbf p\times\mathbf q,
+\tilde p\times\tilde q=\tfrac12\bigl(\tilde p\tilde q-\tilde q\tilde p\bigr)=\vec p\times\vec q,
 $$
 
 the cross product of the two vector parts, which is alternating (*Introduction to the Antisymmetric
@@ -124,7 +124,7 @@ unital, and its square-root equation $\tilde\xi^2=\tilde a$ is a genuine classif
 (*Square Roots of a General Element in the General Plain Algebra*; *Square Roots of a General Element in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*).
 The block is the antisymmetric half of that product, and the comparison is the comparison of a square
 map that is zero with a square map that is not. The parent's square is
-$\tilde\xi^2=2\xi_0\tilde\xi-\bigl[\xi_0^2+\lvert\boldsymbol\xi\rvert^2\bigr]e_0$, whose image and
+$\tilde\xi^2=2\xi_0\tilde\xi-\bigl[\xi_0^2+\lvert\vec\xi\rvert^2\bigr]e_0$, whose image and
 kernel are proper; the block's square map is the zero map, whose image is the origin and whose kernel
 is the whole space. Over $\mathbb{R}$ the parent's square roots of the origin are the origin alone,
 the plain product being a division product, while the block's are the whole space; and the parent's
@@ -134,7 +134,7 @@ six-structure table: the two antisymmetric structures have the whole space as th
 and no root of any other central value.
 
 **Remark (the removal of the scalar part).** The parent's square carries a central part
-$\xi_0^2-\lvert\boldsymbol\xi\rvert^2$ and a vector part $2\xi_0\boldsymbol\xi$; the block removes the
+$\xi_0^2-\lvert\vec\xi\rvert^2$ and a vector part $2\xi_0\vec\xi$; the block removes the
 scalar part of the product, and with it the central part of the square. The equation
 $\tilde\xi\times\tilde\xi=\tilde a$ is the parent's square-root equation with the central coordinate
 deleted, and with the central coordinate deleted the equation collapses to the statement that
@@ -143,7 +143,7 @@ central values record, read for an arbitrary right side.
 
 ## Summary
 
-For the antisymmetric plain multiplication $\tilde\xi\times\tilde q=\boldsymbol\xi\times\mathbf q$ the
+For the antisymmetric plain multiplication $\tilde\xi\times\tilde q=\vec\xi\times\vec q$ the
 square of every element vanishes, so the equation $\tilde\xi\times\tilde\xi=\tilde a$ reads
 $0=\tilde a$ and is independent of the unknown. It has a solution exactly when $\tilde a=0$, and then
 every element of $\mathbb{H}$ is a square root; for every nonzero $\tilde a$ it has no solution. The
@@ -157,13 +157,13 @@ the parent's two-point and two-sphere families have no counterpart in the block.
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde\xi\times\tilde q=\tfrac12(\tilde\xi\tilde q-\tilde q\tilde\xi)=\boldsymbol\xi\times\mathbf q$ | the antisymmetric plain multiplication, the operation $\mathrm{APA}$ |
+| $\tilde\xi\times\tilde q=\tfrac12(\tilde\xi\tilde q-\tilde q\tilde\xi)=\vec\xi\times\vec q$ | the antisymmetric plain multiplication, the operation $\mathrm{APA}$ |
 | $\mathrm{sq}(\tilde\xi)=\tilde\xi\times\tilde\xi=0$ | the square map of the block, the zero map |
 | $\tilde\xi\times\tilde\xi=\tilde a$ | the square-root equation, equivalent to $0=\tilde a$ |
 | $\mathbb{H}$ | the square roots of the origin, the kernel of the square map |
 | $\{0\}$ | the image of the square map, the only right side with square roots |
-| $\tilde\xi^2=2\xi_0\tilde\xi-\bigl[\xi_0^2+\lvert\boldsymbol\xi\rvert^2\bigr]e_0$ | the square of the parent plain product, with its central part and its vector part |
-| $\boldsymbol\xi\times\mathbf q$ | the cross product of the two vector parts, the value of the block |
+| $\tilde\xi^2=2\xi_0\tilde\xi-\bigl[\xi_0^2+\lvert\vec\xi\rvert^2\bigr]e_0$ | the square of the parent plain product, with its central part and its vector part |
+| $\vec\xi\times\vec q$ | the cross product of the two vector parts, the value of the block |
 
 ## Further Reading
 

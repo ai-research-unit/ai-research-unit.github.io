@@ -12,12 +12,12 @@ general one of *Definitions for the Study of the 6 Algebraic Structures*, and th
 only computation of the article; everything after it is a reading of the criterion.
 
 **Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and
-$e_1e_2=e_3$; an element is $\tilde q=q_0e_0+\mathbf q$ with $\mathbf q=\sum_kq_ke_k$. The
-**quaternion conjugation** is $\tilde q^{\natural}=q_0e_0-\mathbf q$; the bar is the identity, the
+$e_1e_2=e_3$; an element is $\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_kq_ke_k$. The
+**quaternion conjugation** is $\tilde q^{\natural}=q_0e_0-\vec q$; the bar is the identity, the
 star coincides with the natural sign ${}^{\natural}$. The **quaternion form** is
-$N(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q=\mathrm{Sc}(\tilde p^{\natural}\tilde q)$ and
+$N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q=\mathrm{Sc}(\tilde p^{\natural}\tilde q)$ and
 the **plain form** is
-$B(\tilde p,\tilde q)=p_0q_0-\mathbf p\cdot\mathbf q=\mathrm{Sc}(\tilde p\tilde q)$. The
+$B(\tilde p,\tilde q)=p_0q_0-\vec p\cdot\vec q=\mathrm{Sc}(\tilde p\tilde q)$. The
 **symmetric quaternionic product** is
 $\tilde p\star\tilde q=\tfrac12(\tilde p^{\natural}\tilde q+\tilde q^{\natural}\tilde p)=N(\tilde p,\tilde q)e_0$.
 
@@ -64,17 +64,17 @@ definite form still pairs an element with many others to zero.
 $\tilde p\star\tilde q=0$ form the quadric
 
 $$
-\{(\tilde p,\tilde q)\in\mathbb{H}\times\mathbb{H}:p_0q_0+\mathbf p\cdot\mathbf q=0\},
+\{(\tilde p,\tilde q)\in\mathbb{H}\times\mathbb{H}:p_0q_0+\vec p\cdot\vec q=0\},
 $$
 
 a real hypersurface of $\mathbb{H}\times\mathbb{H}\cong\mathbb{R}^8$ of real dimension $7$. In
 terms of the scalar and vector parts the pairs fall into three families:
 
-- **both pure**, $p_0=q_0=0$: then $\mathbf p\cdot\mathbf q=0$, so the two vector parts are perpendicular;
-- **exactly one pure**, say $p_0=0\ne q_0$: then $\mathbf p\cdot\mathbf q=0$, the scalar coordinate $q_0$ being free and the vector part $\mathbf q$ constrained to the plane perpendicular to $\mathbf p$;
-- **both nonpure**, $p_0q_0\ne0$: then $q_0=-\dfrac{\mathbf p\cdot\mathbf q}{p_0}$, the **scalar compensation** that offsets the pairing of the vector parts.
+- **both pure**, $p_0=q_0=0$: then $\vec p\cdot\vec q=0$, so the two vector parts are perpendicular;
+- **exactly one pure**, say $p_0=0\ne q_0$: then $\vec p\cdot\vec q=0$, the scalar coordinate $q_0$ being free and the vector part $\vec q$ constrained to the plane perpendicular to $\vec p$;
+- **both nonpure**, $p_0q_0\ne0$: then $q_0=-\dfrac{\vec p\cdot\vec q}{p_0}$, the **scalar compensation** that offsets the pairing of the vector parts.
 
-*Proof.* The quadric is the zero set of the polynomial $p_0q_0+\mathbf p\cdot\mathbf q$, which is
+*Proof.* The quadric is the zero set of the polynomial $p_0q_0+\vec p\cdot\vec q$, which is
 not identically zero, so the set is a hypersurface of the eight-dimensional product; the three
 families are the splitting of the equation according to which scalar coordinates vanish, and the
 display of the third family is the equation solved for $q_0$.
@@ -120,9 +120,9 @@ $$
 N(\tilde p,\tilde q)=B(\tilde p,\tilde q^{\natural})=\mathrm{Sc}\bigl(\tilde p\,\tilde q^{\natural}\bigr).
 $$
 
-*Proof.* Since $\tilde q^{\natural}=q_0e_0-\mathbf q$, the product $\tilde p\tilde q^{\natural}$
+*Proof.* Since $\tilde q^{\natural}=q_0e_0-\vec q$, the product $\tilde p\tilde q^{\natural}$
 has scalar part
-$p_0q_0-\mathbf p\cdot(-\mathbf q)=p_0q_0+\mathbf p\cdot\mathbf q=N(\tilde p,\tilde q)$, and
+$p_0q_0-\vec p\cdot(-\vec q)=p_0q_0+\vec p\cdot\vec q=N(\tilde p,\tilde q)$, and
 $\mathrm{Sc}(\tilde p\tilde q^{\natural})=B(\tilde p,\tilde q^{\natural})$ by the definition of the
 plain form.
 
@@ -133,7 +133,7 @@ the **plain form**, evaluated at $\tilde p$ and the conjugate of $\tilde q$.
 *Proof.* Compose the theorem of §*The Criterion* with the proposition.
 
 Now the plain form $B$ is indefinite of signature $(1,3)$, and its isotropic elements are the
-nonzero solutions of $B(\tilde q,\tilde q)=q_0^{2}-|\mathbf q|^{2}=0$, the cone of real dimension
+nonzero solutions of $B(\tilde q,\tilde q)=q_0^{2}-|\vec q|^{2}=0$, the cone of real dimension
 $3$ with two families (*The 2 Forms over the Quaternion $\mathbb{R}$ Space*). The quaternion form
 $N$ is definite, and its only isotropic element is $0$. The block's zero-divisor pairs are the
 pairs that the plain form kills at $\tilde q^{\natural}$, a much larger class than the isotropic
@@ -168,13 +168,13 @@ so the same division property gives $\tilde q=0$.
 exactly the nonzero pure quaternions.
 
 *Proof.* Write
-$\tilde p\bullet\tilde q=(p_0q_0-\mathbf p\cdot\mathbf q)e_0+p_0\mathbf q+q_0\mathbf p$. If both
-elements are pure, the value is $-(\mathbf p\cdot\mathbf q)e_0$, which vanishes exactly when
-$\mathbf p\cdot\mathbf q=0$. If exactly one is pure, say $p_0=0\ne q_0$, the vector part is
-$q_0\mathbf p$, which vanishes only for $\mathbf p=0$; so no such pair is a zero-divisor pair. If
-both are nonpure, the vector part $p_0\mathbf q+q_0\mathbf p$ forces
-$\mathbf q=-(q_0/p_0)\mathbf p$, and the scalar part $p_0q_0-\mathbf p\cdot\mathbf q=0$ then reads
-$p_0q_0+(q_0/p_0)|\mathbf p|^{2}=0$, that is $q_0\bigl(p_0^{2}+|\mathbf p|^{2}\bigr)/p_0=0$, which
+$\tilde p\bullet\tilde q=(p_0q_0-\vec p\cdot\vec q)e_0+p_0\vec q+q_0\vec p$. If both
+elements are pure, the value is $-(\vec p\cdot\vec q)e_0$, which vanishes exactly when
+$\vec p\cdot\vec q=0$. If exactly one is pure, say $p_0=0\ne q_0$, the vector part is
+$q_0\vec p$, which vanishes only for $\vec p=0$; so no such pair is a zero-divisor pair. If
+both are nonpure, the vector part $p_0\vec q+q_0\vec p$ forces
+$\vec q=-(q_0/p_0)\vec p$, and the scalar part $p_0q_0-\vec p\cdot\vec q=0$ then reads
+$p_0q_0+(q_0/p_0)|\vec p|^{2}=0$, that is $q_0\bigl(p_0^{2}+|\vec p|^{2}\bigr)/p_0=0$, which
 forces $\tilde p=0$, a contradiction. So the zero-divisor pairs have both factors pure and
 perpendicular vector parts, and a pure element is a zero divisor exactly when it is nonzero.
 
@@ -225,8 +225,8 @@ structure has only the nonzero pure quaternions, and the two general structures 
 | symbol | meaning |
 |---|---|
 | $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$ | the symmetric quaternionic product |
-| $N(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q=\mathrm{Sc}(\tilde p^{\natural}\tilde q)$ | the quaternion form, definite |
-| $B(\tilde p,\tilde q)=p_0q_0-\mathbf p\cdot\mathbf q=\mathrm{Sc}(\tilde p\tilde q)$ | the plain form, indefinite |
+| $N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q=\mathrm{Sc}(\tilde p^{\natural}\tilde q)$ | the quaternion form, definite |
+| $B(\tilde p,\tilde q)=p_0q_0-\vec p\cdot\vec q=\mathrm{Sc}(\tilde p\tilde q)$ | the plain form, indefinite |
 | $\mathrm{Ann}(\tilde a)=\tilde a^{\perp}$ | the annihilator, a hyperplane of real dimension $3$ for $\tilde a\neq0$ |
 | $\{N=0\}$ | the quadric of zero-divisor pairs, real dimension $7$ |
 | $N(\tilde p,\tilde q)=B(\tilde p,\tilde q^{\natural})$ | the bridge between the criterion and the plain form |

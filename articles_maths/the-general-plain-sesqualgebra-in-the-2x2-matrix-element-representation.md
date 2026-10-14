@@ -86,7 +86,7 @@ The model collects the objects of the group in one dictionary.
 
 | object of the group | matrix model |
 |---|---|
-| element $\tilde{Q}=Q_0e_0+\mathbf{Q}$ | $\mathsf{M}_2(\tilde{Q})=\begin{pmatrix}Q_0-iQ_3&-iQ_1-Q_2\\-iQ_1+Q_2&Q_0+iQ_3\end{pmatrix}$ |
+| element $\tilde{Q}=Q_0e_0+\vec Q$ | $\mathsf{M}_2(\tilde{Q})=\begin{pmatrix}Q_0-iQ_3&-iQ_1-Q_2\\-iQ_1+Q_2&Q_0+iQ_3\end{pmatrix}$ |
 | involution $\tilde{Q}^{*}$ | the conjugate transpose $\mathsf{M}_2(\tilde{Q})^{\dagger}$ |
 | multiplication $\tilde{P}\star\tilde{Q}$ | $XY^{\dagger}$ |
 | ternary product $\{\tilde{P},\tilde{Q},\tilde{R}\}$ | $XY^{\dagger}Z$ |

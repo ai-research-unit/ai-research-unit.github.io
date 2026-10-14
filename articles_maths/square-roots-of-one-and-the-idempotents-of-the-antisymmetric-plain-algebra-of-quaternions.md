@@ -7,7 +7,7 @@ of the product and not of the space (*Definitions for the Study of the 6 Algebra
 §*The Element Vocabulary*). The block of this article is the antisymmetric plain multiplication
 
 $$
-\tilde p\times\tilde q=\tfrac12\bigl(\tilde p\tilde q-\tilde q\tilde p\bigr)=\mathbf p\times\mathbf q,
+\tilde p\times\tilde q=\tfrac12\bigl(\tilde p\tilde q-\tilde q\tilde p\bigr)=\vec p\times\vec q,
 $$
 
 the cross product of the two vector parts, which is alternating and without a unit (*Introduction to
@@ -37,7 +37,7 @@ right side, which is *Square Roots of a General Element in the Antisymmetric Pla
 zero-divisor set, which is *Zero Divisors of the Antisymmetric Plain Algebra*; or the idempotent
 families of the parent product, which are *Square Roots of One and the Idempotents of the General Plain Algebra*.
 
-**The results.** For the antisymmetric plain multiplication $\tilde p\times\tilde q=\mathbf p\times\mathbf q$
+**The results.** For the antisymmetric plain multiplication $\tilde p\times\tilde q=\vec p\times\vec q$
 the square of every element vanishes, $\tilde\xi\times\tilde\xi=0$, and the root equation of $+1$
 therefore reduces to $0=+e_0$: the block has **no root of $+1$**, and **no root of $-1$** either, by
 the same reduction. The idempotent equation $\tilde\pi\times\tilde\pi=\tilde\pi$ reduces to
@@ -241,7 +241,7 @@ Quaternion $\mathbb{R}$ Space*, and the four sets of the biquaternion chapter in
 
 ## Summary
 
-For the antisymmetric plain multiplication $\tilde p\times\tilde q=\mathbf p\times\mathbf q$ the
+For the antisymmetric plain multiplication $\tilde p\times\tilde q=\vec p\times\vec q$ the
 square of every element vanishes, $\tilde\xi\times\tilde\xi=0$, so the root equation of $+1$ reduces
 to the scalar equation $0=+e_0$ and the block has no root of $+1$; the root equation of $-1$ reduces
 to $0=-e_0$ and the block has no root of $-1$ either. The idempotent equation
@@ -258,7 +258,7 @@ to the block.
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde p\times\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\mathbf p\times\mathbf q$ | the antisymmetric plain multiplication, the operation $\mathrm{APA}$ |
+| $\tilde p\times\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\vec p\times\vec q$ | the antisymmetric plain multiplication, the operation $\mathrm{APA}$ |
 | $\tilde\xi\times\tilde\xi=+e_0$ | the root equation of $+1$, equivalent to $0=+e_0$ |
 | $\tilde\xi\times\tilde\xi=-e_0$ | the root equation of $-1$, equivalent to $0=-e_0$ |
 | $\varnothing$ | the roots of $+1$, and the roots of $-1$ |

@@ -49,7 +49,7 @@ so the masses $m_i$ are the roots: the representation carries a **discrete set o
 
 ### The Eigenvalues of $\Gamma^{0}$
 
-The roots are read off from the eigenvalues of $\Gamma^{0}$. Setting $\mathbf{p}=0$ gives $\Gamma(p)=p_0\Gamma^0$ and
+The roots are read off from the eigenvalues of $\Gamma^{0}$. Setting $\vec p=0$ gives $\Gamma(p)=p_0\Gamma^0$ and
 
 $$
 \det\bigl(p_0\Gamma^{0}+mE\bigr) = \tilde{c}\,\bigl(p_0-\mu_0\lambda_1\bigr)\bigl(p_0-\mu_0\lambda_2\bigr)\cdots\bigl(p_0-\mu_0\lambda_N\bigr),

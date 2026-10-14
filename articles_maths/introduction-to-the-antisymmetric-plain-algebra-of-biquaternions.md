@@ -13,7 +13,7 @@ $$
 and the two halves are independent data. The symmetric half is the subject of *Introduction to the Symmetric Plain Algebra of Biquaternions*; this article introduces the antisymmetric half, the operation
 
 $$
-\tilde P\wedge\tilde Q=\mathbf{P}\times\mathbf{Q},
+\tilde P\wedge\tilde Q=\vec P\times\vec Q,
 $$
 
 the cross product of the two vector parts. The operation is the antisymmetric plain bilinear entry of the table of *The 12 Products of the Biquaternion Complex Space*, and it is the table's Lie product: it alone of the twelve operations satisfies the Jacobi identity. This article establishes the class of the operation, its alternation, its image, the absence of a unit, the Jacobi identity with the cyclic sum recomputed on the units, the sixteen brackets of the basis, the reconstruction of the plain product from its two halves, and the placement of the block among the twelve.
@@ -37,16 +37,16 @@ The **antisymmetric plain algebra** of the biquaternions is the operation $\wedg
 **Proposition (the cross product of the vector parts).** For all $\tilde P,\tilde Q$,
 
 $$
-\tilde P\wedge\tilde Q=\mathbf{P}\times\mathbf{Q},
+\tilde P\wedge\tilde Q=\vec P\times\vec Q,
 $$
 
-where $\mathbf{P}=(P_1,P_2,P_3)$ and $\mathbf{Q}=(Q_1,Q_2,Q_3)$ are the vector parts, and the scalar part of the product is zero, $\operatorname{Sc}(\tilde P\wedge\tilde Q)=0$.
+where $\vec P=(P_1,P_2,P_3)$ and $\vec Q=(Q_1,Q_2,Q_3)$ are the vector parts, and the scalar part of the product is zero, $\operatorname{Sc}(\tilde P\wedge\tilde Q)=0$.
 
-*Proof.* The scalar parts of $\tilde P\tilde Q$ and of $\tilde Q\tilde P$ are equal, both being $P_0Q_0-\mathbf{P}\cdot\mathbf{Q}$, so they cancel in the difference and the scalar part of the half-difference is zero. The vector part of $\tilde P\tilde Q$ is $P_0\mathbf{Q}+Q_0\mathbf{P}+\mathbf{P}\times\mathbf{Q}$ and the vector part of $\tilde Q\tilde P$ is $Q_0\mathbf{P}+P_0\mathbf{Q}+\mathbf{Q}\times\mathbf{P}$, so the half-difference is $\tfrac12(\mathbf{P}\times\mathbf{Q}-\mathbf{Q}\times\mathbf{P})=\mathbf{P}\times\mathbf{Q}$.
+*Proof.* The scalar parts of $\tilde P\tilde Q$ and of $\tilde Q\tilde P$ are equal, both being $P_0Q_0-\vec P\cdot\vec Q$, so they cancel in the difference and the scalar part of the half-difference is zero. The vector part of $\tilde P\tilde Q$ is $P_0\vec Q+Q_0\vec P+\vec P\times\vec Q$ and the vector part of $\tilde Q\tilde P$ is $Q_0\vec P+P_0\vec Q+\vec Q\times\vec P$, so the half-difference is $\tfrac12(\vec P\times\vec Q-\vec Q\times\vec P)=\vec P\times\vec Q$.
 
 **Corollary (the class).** The operation is $\mathbb{C}$-bilinear, and it is alternating, $\tilde P\wedge\tilde P=0$ and $\tilde P\wedge\tilde Q=-\tilde Q\wedge\tilde P$ for all $\tilde P,\tilde Q$.
 
-*Proof.* The cross product of vector parts is $\mathbb{C}$-bilinear because the plain product is, and it is alternating because $\mathbf{P}\times\mathbf{P}=0$.
+*Proof.* The cross product of vector parts is $\mathbb{C}$-bilinear because the plain product is, and it is alternating because $\vec P\times\vec P=0$.
 
 **Remark.** The operation is therefore of the class $\mathbb{C}$-bilinear and alternating, and its values lie in the vector subspace $\mathrm{Vect}(\mathbb{B})$: **the image of the antisymmetric plain algebra is the vector subspace**, of complex dimension three and real dimension six. The scalar direction is invisible to the operation, and the three complex coordinate directions $e_1,e_2,e_3$ carry the whole of it.
 
@@ -66,7 +66,7 @@ $$
 [\tilde P,\tilde Q]=\tilde P\tilde Q-\tilde Q\tilde P=2\,(\tilde P\wedge\tilde Q),
 $$
 
-and the commutator is the cross product of the vector parts with the factor two, $[\tilde P,\tilde Q]=2\,\mathbf{P}\times\mathbf{Q}$.
+and the commutator is the cross product of the vector parts with the factor two, $[\tilde P,\tilde Q]=2\,\vec P\times\vec Q$.
 
 *Proof.* The commutator is the difference of the two products, which is twice their half-difference; the value is twice the cross product of the previous proposition.
 
@@ -90,13 +90,13 @@ $$
 
 for all $\tilde P,\tilde Q,\tilde R\in\mathbb{B}$.
 
-*Proof.* Write the operation as the cross product of the vector parts, $\tilde P\wedge\tilde Q=\mathbf{P}\times\mathbf{Q}$. The three terms are $(\mathbf{P}\times\mathbf{Q})\times\mathbf{R}$, $(\mathbf{Q}\times\mathbf{R})\times\mathbf{P}$ and $(\mathbf{R}\times\mathbf{P})\times\mathbf{Q}$, and the vector triple product gives
+*Proof.* Write the operation as the cross product of the vector parts, $\tilde P\wedge\tilde Q=\vec P\times\vec Q$. The three terms are $(\vec P\times\vec Q)\times\vec R$, $(\vec Q\times\vec R)\times\vec P$ and $(\vec R\times\vec P)\times\vec Q$, and the vector triple product gives
 
 $$
-(\mathbf{P}\times\mathbf{Q})\times\mathbf{R}=\mathbf{Q}(\mathbf{P}\cdot\mathbf{R})-\mathbf{P}(\mathbf{Q}\cdot\mathbf{R}),
+(\vec P\times\vec Q)\times\vec R=\vec Q(\vec P\cdot\vec R)-\vec P(\vec Q\cdot\vec R),
 $$
 
-with the two cyclic analogues. The six terms cancel in pairs, since $\mathbf{Q}(\mathbf{P}\cdot\mathbf{R})$ from the first term cancels $-\mathbf{Q}(\mathbf{R}\cdot\mathbf{P})$ from the third, and similarly for the other two pairs, using the symmetry of the scalar product of vectors. The identity therefore holds on arbitrary arguments; it was also verified on all sixty-four triples of the units and on general elements of $\mathbb{Q}(i)$ coefficients, where the cyclic sum vanishes identically.
+with the two cyclic analogues. The six terms cancel in pairs, since $\vec Q(\vec P\cdot\vec R)$ from the first term cancels $-\vec Q(\vec R\cdot\vec P)$ from the third, and similarly for the other two pairs, using the symmetry of the scalar product of vectors. The identity therefore holds on arbitrary arguments; it was also verified on all sixty-four triples of the units and on general elements of $\mathbb{Q}(i)$ coefficients, where the cyclic sum vanishes identically.
 
 **Remark.** The cyclic sum on the units is zero, and the vanishing is the whole content of the theorem: it is not a numerical accident of the basis but the Jacobi identity of the cross product, and it is inherited by the vector subspace, which is where the values lie. **The operation is a Lie bracket.**
 
@@ -187,7 +187,7 @@ The twelve operations decompose by product and by half, and the present block is
 
 | product | symmetric half | antisymmetric half |
 |---|---|---|
-| plain $\tilde P\tilde Q$ | $\mathrm{SPA}$: the Jordan product on $\mathbb{B}$ | $\mathrm{APA}$: the bracket $\mathbf{P}\times\mathbf{Q}$ |
+| plain $\tilde P\tilde Q$ | $\mathrm{SPA}$: the Jordan product on $\mathbb{B}$ | $\mathrm{APA}$: the bracket $\vec P\times\vec Q$ |
 | quaternionic $\tilde P^{\natural}\tilde Q$ | $\mathrm{SQA}$ | $\mathrm{AQA}$, no Jacobi |
 | plain sesquilinear $\tilde P\tilde Q^{*}$ | $\mathrm{SPS}$ | $\mathrm{APS}$, no Jacobi |
 | quaternionic sesquilinear $\tilde P^{\natural}\tilde Q^{*}$ | $\mathrm{SQS}$ | $\mathrm{AQS}$, no Jacobi |
@@ -200,14 +200,14 @@ The element theory of the operation is the five articles that follow it along it
 
 ## Summary
 
-The antisymmetric part of the plain product of the biquaternions is the operation $\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)$, equal to the cross product $\mathbf{P}\times\mathbf{Q}$ of the two vector parts, of scalar part zero, $\mathbb{C}$-bilinear and alternating, with image the vector subspace $\mathrm{Vect}(\mathbb{B})$ and without a unit. It is half the commutator, $[\tilde P,\tilde Q]=2(\tilde P\wedge\tilde Q)$, and it satisfies the Jacobi identity, with the cyclic sum recomputed as zero on the sixty-four triples of the units; of the twelve operations of the batch it is the only one that does, so it is the only Lie product among them. Its sixteen brackets on the basis have the seven vanishing entries of the identity row and column and, on $e_1,e_2,e_3$, the cross-product table of $\mathbb{C}^3$ and hence of $\mathfrak{sl}(2,\mathbb{C})$. The plain product is reconstructed as $\mathrm{GPA}=\mathrm{SPA}+\mathrm{APA}$, and the square map sees only the symmetric half, so the antisymmetric half is recovered from the product only through the commutator.
+The antisymmetric part of the plain product of the biquaternions is the operation $\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)$, equal to the cross product $\vec P\times\vec Q$ of the two vector parts, of scalar part zero, $\mathbb{C}$-bilinear and alternating, with image the vector subspace $\mathrm{Vect}(\mathbb{B})$ and without a unit. It is half the commutator, $[\tilde P,\tilde Q]=2(\tilde P\wedge\tilde Q)$, and it satisfies the Jacobi identity, with the cyclic sum recomputed as zero on the sixty-four triples of the units; of the twelve operations of the batch it is the only one that does, so it is the only Lie product among them. Its sixteen brackets on the basis have the seven vanishing entries of the identity row and column and, on $e_1,e_2,e_3$, the cross-product table of $\mathbb{C}^3$ and hence of $\mathfrak{sl}(2,\mathbb{C})$. The plain product is reconstructed as $\mathrm{GPA}=\mathrm{SPA}+\mathrm{APA}$, and the square map sees only the symmetric half, so the antisymmetric half is recovered from the product only through the commutator.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)$ | the antisymmetric plain algebra, $\mathrm{APA}$, the operation of the block |
-| $\tilde P\wedge\tilde Q=\mathbf{P}\times\mathbf{Q}$ | its value, the cross product of the vector parts |
+| $\tilde P\wedge\tilde Q=\vec P\times\vec Q$ | its value, the cross product of the vector parts |
 | $\operatorname{Sc}(\tilde P\wedge\tilde Q)=0$ | the scalar part of every value vanishes |
 | $[\tilde P,\tilde Q]=\tilde P\tilde Q-\tilde Q\tilde P=2(\tilde P\wedge\tilde Q)$ | the commutator of the algebra, twice the operation |
 | $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ | the symmetric plain algebra, $\mathrm{SPA}$, the other half |

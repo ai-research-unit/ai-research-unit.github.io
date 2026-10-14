@@ -58,13 +58,13 @@ Quaternionic Algebra of Biquaternions*; the composition law is the mathematics o
 Quaternionic Product and the Opposite Monoid*; the article reads them.
 
 Throughout, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$,
-$e_k^{2}=-e_0$ and central imaginary $i$; a general element is $\tilde Q=Q_0e_0+\mathbf Q$ with the vector part
-$\mathbf Q=Q_1e_1+Q_2e_2+Q_3e_3$. Juxtaposition is the **plain**, associative product. The conjugations are the
+$e_k^{2}=-e_0$ and central imaginary $i$; a general element is $\tilde Q=Q_0e_0+\vec Q$ with the vector part
+$\vec Q=Q_1e_1+Q_2e_2+Q_3e_3$. Juxtaposition is the **plain**, associative product. The conjugations are the
 coefficientwise $\bar{\cdot}$, the natural ${\natural}$ fixing $i$ and negating $e_1,e_2,e_3$, and the Hermitian
 ${}^{*}=\bar{\cdot}\circ{\natural}$; the sectors are $\mathbb{M}_\pm=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}$. The product
 of the band is written $\star$, and it is read through the natural conjugation alone. The form is the one displayed
 above, of Gram matrix $I_4$; it is cited, never re-proved, and on the material sector $\mathbb{M}_-$ it is the interval
-$-c^{2}t^{2}+\mathbf x^{2}$, of signature $(3,1)$ (*The Interval as the Square and the Charge of the Material Composition*). Its algebraic norm is the
+$-c^{2}t^{2}+\vec x^{2}$, of signature $(3,1)$ (*The Interval as the Square and the Charge of the Material Composition*). Its algebraic norm is the
 **biquaternion norm**
 
 $$
@@ -263,8 +263,8 @@ labelled so.
 | parameter $\tilde P$ | subalgebra | $L_{\tilde P}$ is $N$-self-adjoint | $N$-skew-adjoint | $N$-preserving |
 |---|---|---|---|---|
 | central, $\tilde P=\lambda e_0$ | $\mathbb{C}_{\mathbb{B}}$ | yes | only $\tilde P=0$ | $N(\tilde P)=1$ |
-| pure, $\tilde P=\mathbf P$ | $\mathrm{Vect}(\mathbb{B})$ | only $\tilde P=0$ | yes | $N(\tilde P)=1$ |
-| mixed, $\tilde P=a_0e_0+\mathbf P$ | — | no | no | $N(\tilde P)=1$ |
+| pure, $\tilde P=\vec P$ | $\mathrm{Vect}(\mathbb{B})$ | only $\tilde P=0$ | yes | $N(\tilde P)=1$ |
+| mixed, $\tilde P=a_0e_0+\vec P$ | — | no | no | $N(\tilde P)=1$ |
 
 The table collects the one-sided criterion; the two-sided criterion of the second corollary is one row deeper and is
 read as: self-adjoint for a parameter in the centre or the vector subspace, skew-adjoint never, and preserving exactly
@@ -343,9 +343,9 @@ the only obstruction to a two-sided operation being an automorphism. The interpr
 ## The Operators Acting on the State Space
 
 The operators of the band act on the state space of the corpus, and since $L_{\tilde P}=L^{\mathrm{plain}}_{\tilde P^{\natural}}$
-their action is the plain action with the parameter conjugated. Let $S=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,\tilde\Upsilon_2\}$
-be the minimal left ideal, with $\tilde\Pi_2=e_0-\tilde\Pi_1$ the complementary idempotent and
-$\mathbb{B}\tilde\Pi_2=\mathbb{C}\{\tilde\Pi_2,\tilde\Upsilon_1\}$ the complement, as in *The Spinor Space as a Module
+their action is the plain action with the parameter conjugated. Let $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\tilde\Upsilon_2\}$
+be the minimal left ideal, with $\tilde\Pi_-=e_0-\tilde\Pi_+$ the complementary idempotent and
+$\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\tilde\Pi_-,\tilde\Upsilon_1\}$ the complement, as in *The Spinor Space as a Module
 and as a Hilbert Space* and *The Complementary Space of the Spinor Space and Its Physical Meaning*.
 
 **Proposition (the left actions exhaust the operators of the state space).** The map
@@ -362,7 +362,7 @@ $$
 the signs entering because the left multiplication reads its parameter through the conjugation; they are therefore a
 basis as well, and every operator of the state space is a left multiplication of the band.
 
-*Proof.* The module $S=\mathbb{B}\tilde\Pi_1$, its complex dimension two and the faithfulness of the left action are *The
+*Proof.* The module $S=\mathbb{B}\tilde\Pi_+$, its complex dimension two and the faithfulness of the left action are *The
 Spinor Space as a Module and as a Hilbert Space* and *Biquaternion Objects and Their Matrix Correspondences*; the
 equality $L_{\tilde P}=L^{\mathrm{plain}}_{\tilde P^{\natural}}$ together with $e_\mu^{\natural}=\varepsilon_\mu e_\mu$
 and $\varepsilon=(1,-1,-1,-1)$ is the isotope identity of *The Specificities of the General Quaternionic Algebra*,
@@ -370,18 +370,18 @@ and $\varepsilon=(1,-1,-1,-1)$ is the isotope identity of *The Specificities of 
 
 **Proposition (the projectors, and the swap of the two ideals).** The left multiplication $L_{\tilde P}$ is a projector
 exactly when $\tilde P$ is a plain idempotent; and for the two minimal idempotents, whose natural conjugates are
-exchanged, $\tilde\Pi_1^{\natural}=\tilde\Pi_2$ and $\tilde\Pi_2^{\natural}=\tilde\Pi_1$,
-$L_{\tilde\Pi_1}=L^{\mathrm{plain}}_{\tilde\Pi_2}$ is the plain projector onto the **complementary** ideal
-$\mathbb{B}\tilde\Pi_2$, while $L_{\tilde\Pi_2}=L^{\mathrm{plain}}_{\tilde\Pi_1}$ is the plain projector onto $S$; the
-two are orthogonal, $L_{\tilde\Pi_1}L_{\tilde\Pi_2}=0$. In particular the element $\tilde\Pi_1$ is a **nilpotent** of the
-band's own product, $\tilde\Pi_1\star\tilde\Pi_1=N(\tilde\Pi_1)e_0=0$, while the operator it defines is a projector: the
+exchanged, $\tilde\Pi_+^{\natural}=\tilde\Pi_-$ and $\tilde\Pi_-^{\natural}=\tilde\Pi_+$,
+$L_{\tilde\Pi_+}=L^{\mathrm{plain}}_{\tilde\Pi_-}$ is the plain projector onto the **complementary** ideal
+$\mathbb{B}\tilde\Pi_-$, while $L_{\tilde\Pi_-}=L^{\mathrm{plain}}_{\tilde\Pi_+}$ is the plain projector onto $S$; the
+two are orthogonal, $L_{\tilde\Pi_+}L_{\tilde\Pi_-}=0$. In particular the element $\tilde\Pi_+$ is a **nilpotent** of the
+band's own product, $\tilde\Pi_+\star\tilde\Pi_+=N(\tilde\Pi_+)e_0=0$, while the operator it defines is a projector: the
 band realises a projector on an element of vanishing square.
 
 *Proof.* The projector criterion is *The Specificities of the General Quaternionic Algebra*, §*The Projectors*: the
 faithfulness of the parameter map reduces $L_{\tilde P}^{2}=L_{\tilde P}$ to $(\tilde P^{\natural})^{2}=\tilde P^{\natural}$,
 and ${\natural}$ permutes the plain idempotents, so the elements are exactly the plain idempotents. The exchange
-$\tilde\Pi_1^{\natural}=\tilde\Pi_2$ is the computation $\tfrac12(e_0+ie_3)^{\natural}=\tfrac12(e_0-ie_3)=\tilde\Pi_2$, and
-the nilpotence is the same specificities article, $N(\tilde\Pi_1)=0$ on a nontrivial plain idempotent.
+$\tilde\Pi_+^{\natural}=\tilde\Pi_-$ is the computation $\tfrac12(e_0+ie_3)^{\natural}=\tfrac12(e_0-ie_3)=\tilde\Pi_-$, and
+the nilpotence is the same specificities article, $N(\tilde\Pi_+)=0$ on a nontrivial plain idempotent. Here $ie_3$ is a root of $+1$, $(ie_3)^2=e_0$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
 
 **Proposition (the twisted right actions are the commutant).** A twisted right multiplication commutes with every left
 one, so it is a $\mathbb{B}$-linear map of $S$ into itself or into the complement; the operators commuting with every
@@ -483,22 +483,22 @@ The operator is not form-preserving, since its parameter has norm two, and it is
 the criterion.
 
 The causal division is displayed by three material four-vectors and one Lorentz parameter. With the material sector
-convention $\tilde T=ict\,e_0+\mathbf x$ and $c=1$,
+convention $\tilde T=ict\,e_0+\vec x$ and $c=1$,
 
 $$
 N(5ie_0+3e_1)=-16,\qquad N(3ie_0+3e_1)=0,\qquad N(3ie_0+5e_1)=16,
 $$
 
 the first **timelike**, the second **null**, on the causal cone, and the third **spacelike**. A boost parameter of norm
-one, $\tilde\Lambda=\cosh u\,e_0+\sinh u\,ie_1$, has $N(\tilde\Lambda)=1$, and its left multiplication is a
-form-preserving operator: $N(L_{\tilde\Lambda}(5ie_0+3e_1))=N(5ie_0+3e_1)=-16$ for every $u$, the interval of the
+one, $\tilde U=\cosh u\,e_0+\sinh u\,ie_1$, has $N(\tilde U)=1$, and its left multiplication is a
+form-preserving operator: $N(L_{\tilde U}(5ie_0+3e_1))=N(5ie_0+3e_1)=-16$ for every $u$, the interval of the
 timelike four-vector unchanged.
 
 **A numerical check.** The two composition laws, the mixed commutation, the sixteen-dimensional span, the isotope
 identity, the three adjoints, the one-sided type criteria on random, central, pure and null parameters, the two-sided
 self-adjointness criterion $\tilde A^{\natural}=\pm\tilde A$, the quadraticity and the multiplication law of $\Theta$,
 the identity $\Theta_{\tilde A}=N(\tilde A)\mathrm{Ad}_{\tilde A}$ with the agreement on the norm-one slice, and the
-projector criterion with the exchange $\tilde\Pi_1^{\natural}=\tilde\Pi_2$ were all recomputed outside the repository to
+projector criterion with the exchange $\tilde\Pi_+^{\natural}=\tilde\Pi_-$ were all recomputed outside the repository to
 machine precision; the numerical values of the worked case, the three causal signs and the boost preserving the interval
 were checked element by element.
 

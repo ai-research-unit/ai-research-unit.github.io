@@ -21,7 +21,7 @@ $$
 or, in natural units $\hbar = c = 1$, $(i\gamma^\mu\partial_\mu - m)\psi = 0$. Multiplying by $\gamma^0$ and separating the time derivative puts it in Hamiltonian form,
 
 $$
-i\,\partial_t\psi = \hat{H}\psi, \qquad \hat{H} = c\,\boldsymbol{\alpha}\cdot\hat{\mathbf{p}} + \beta mc^2,
+i\,\partial_t\psi = \hat{H}\psi, \qquad \hat{H} = c\,\boldsymbol{\alpha}\cdot\hat p + \beta mc^2,
 $$
 
 where $\beta = \gamma^0$ and $\boldsymbol{\alpha}^k = \gamma^0\gamma^k$; we restore $\hbar$ and $c$ when a physical statement is made. The matrices satisfy
@@ -30,13 +30,13 @@ $$
 \{\alpha^j,\alpha^k\} = 2\delta^{jk}I, \qquad \{\alpha^k,\beta\} = 0, \qquad (\alpha^k)^2 = I,
 $$
 
-so the velocity operator $c\boldsymbol{\alpha}$ has eigenvalues $\pm c$ and the Hamiltonian has eigenvalues $\pm E$ with $E = \sqrt{\mathbf{p}^2c^2 + m^2c^4}$.
+so the velocity operator $c\boldsymbol{\alpha}$ has eigenvalues $\pm c$ and the Hamiltonian has eigenvalues $\pm E$ with $E = \sqrt{\vec p^2c^2 + m^2c^4}$.
 
 The oscillation follows from the Heisenberg equation. Because $\{\alpha^k,\hat H\} = 2cp_k$ as an operator identity, the velocity in the Heisenberg picture has the exact form (natural units)
 
 $$
 \alpha^k(t) \;=\; \frac{cp_k}{\hat H} \;+\; e^{i\hat H t}\Big(\alpha^k(0) - \frac{cp_k}{\hat H}\Big)e^{-i\hat H t},
-\qquad \hat H = c\,\boldsymbol{\alpha}\cdot\hat{\mathbf{p}} + \beta mc^2,
+\qquad \hat H = c\,\boldsymbol{\alpha}\cdot\hat p + \beta mc^2,
 $$
 
 in which the first term is the constant drift velocity and the second is the *trembling* term. Its phase evolves as $e^{\pm 2iEt}$ on the two energy branches, so the angular frequency is $2E/\hbar$, and integrating once gives the position
@@ -73,13 +73,13 @@ $$
 \tilde\nabla\tilde\Psi_R = m\tilde\Psi_L, \qquad \tilde\nabla^{\natural}\tilde\Psi_L = m\tilde\Psi_R, \qquad \tilde\Psi^\flat = -\tilde\Psi^{*},
 $$
 
-with massless limit $\tilde\nabla\tilde\Psi = 0$. The conjugation $\flat$ is the algebra's real structure, not the mass term. Its plane-wave solutions are $\tilde\Psi = \tilde\Psi_0\exp(\tilde k\tilde{Q})$ with wave biquaternion $\tilde k = e_0k_0 + \mathbf{k}$ and the single mass-shell condition
+with massless limit $\tilde\nabla\tilde\Psi = 0$. The conjugation $\flat$ is the algebra's real structure, not the mass term. Its plane-wave solutions are $\tilde\Psi = \tilde\Psi_0\exp(\tilde k\tilde{Q})$ with wave biquaternion $\tilde k = e_0k_0 + \vec k$ and the single mass-shell condition
 
 $$
 \tilde k\tilde k^{\natural} = -\frac{m^2c^2}{\hbar^2}.
 $$
 
-The two roots of that condition — positive and negative frequency — are the two branches $u^{(r)}(\mathbf{p})e^{-i(Et-\mathbf{p}\cdot\mathbf{x})}$ and $v^{(r)}(\mathbf{p})e^{+i(Et-\mathbf{p}\cdot\mathbf{x})}$ constructed in the parent, with $E = +\sqrt{\mathbf{p}^2c^2 + m^2c^4}$. The spin sums, normalizations, and the non-relativistic reduction belong to the parent; the present article uses only the branches and the mass shell.
+The two roots of that condition — positive and negative frequency — are the two branches $u^{(r)}(\vec p)e^{-i(Et-\vec p\cdot\vec x)}$ and $v^{(r)}(\vec p)e^{+i(Et-\vec p\cdot\vec x)}$ constructed in the parent, with $E = +\sqrt{\vec p^2c^2 + m^2c^4}$. The spin sums, normalizations, and the non-relativistic reduction belong to the parent; the present article uses only the branches and the mass shell.
 
 One fact about the field decomposition will be needed throughout. For $\tilde\Psi = \tilde\Psi_+ + \tilde\Psi_-$ with $\tilde\Psi_\pm \in \mathbb{M}_\pm$, Hermitian conjugation acts as $\tilde\Psi_\pm^{*} = \pm\tilde\Psi_\pm$, so
 
@@ -108,7 +108,7 @@ $$
 
 in which $cp_k/\hat H$ denotes the operator $cp_k\hat H^{-1} = cp_k\hat H/E^2$ — not a multiple of the identity, since $\hat H$ is a matrix. Because $\hat H$ anticommutes with $\alpha^k - cp_k/\hat H$, the oscillating factor evolves on each energy eigenspace as $e^{\pm 2iEt/\hbar}$.
 
-The identity was checked by direct matrix computation on a case chosen here rather than on the rest case that motivated it: momentum $\mathbf{p}/mc = (0.3,\,0.2,\,-0.1)$, so $|\mathbf{p}| = 0.374\,mc$ and $E = 1.0677\,mc^2$, at the three times $t = 0.017, 0.05, 0.23$ in units of $\hbar/(mc^2)$. The left side $e^{i\hat Ht/\hbar}\alpha^k e^{-i\hat Ht/\hbar}$ and the right side above agreed to a maximum absolute entry of $1.2\times10^{-16}$ over all three components and all times. The rest case is then a consequence, $E = mc^2$, not an input.
+The identity was checked by direct matrix computation on a case chosen here rather than on the rest case that motivated it: momentum $\vec p/mc = (0.3,\,0.2,\,-0.1)$, so $|\vec p| = 0.374\,mc$ and $E = 1.0677\,mc^2$, at the three times $t = 0.017, 0.05, 0.23$ in units of $\hbar/(mc^2)$. The left side $e^{i\hat Ht/\hbar}\alpha^k e^{-i\hat Ht/\hbar}$ and the right side above agreed to a maximum absolute entry of $1.2\times10^{-16}$ over all three components and all times. The rest case is then a consequence, $E = mc^2$, not an input.
 
 The frequency is $2E/\hbar$ on general grounds and $2mc^2/\hbar$ at rest. The numbers for the electron, $m_ec^2 = 0.510998950$ MeV and $\hbar = 6.582119569\times10^{-22}$ MeV s, are
 
@@ -149,25 +149,25 @@ Two consequences deserve emphasis. First, since the rest-energy phase rotates th
 
 The claim to test is: *the positive- and negative-energy components are the $\mathbb{M}_+$ and $\mathbb{M}_-$ sectors.* The test fails, and the reason is structural rather than numerical.
 
-**The energy-sign split is generated outside $\mathbb{B}$.** The projector onto positive energy at momentum $\mathbf{p}$ is
+**The energy-sign split is generated outside $\mathbb{B}$.** The projector onto positive energy at momentum $\vec p$ is
 
 $$
-P_+(\mathbf{p}) = \tfrac12\Big(I + \frac{c\,\boldsymbol{\alpha}\cdot\mathbf{p} + \beta mc^2}{E}\Big) = \tfrac12\Big(I + \frac{\hat H}{E}\Big),
+P_+(\vec p) = \tfrac12\Big(I + \frac{c\,\boldsymbol{\alpha}\cdot\vec p + \beta mc^2}{E}\Big) = \tfrac12\Big(I + \frac{\hat H}{E}\Big),
 $$
 
-and it contains $\beta = \gamma^0$. But $\gamma^0$ is an **odd** element of the Clifford algebra: it is a single generator, and $\mathbb{B}$ is isomorphic to the **even** subalgebra $\mathrm{Cl}^+_{1,3}$. An odd element has no representative in $\mathbb{B}$ at all, and a fortiori none in either sector. This is not a convention; it is tested by the parity grading. With $\omega = \gamma^0\gamma^1\gamma^2\gamma^3$ the volume element, even elements commute with $\omega$ and odd elements anticommute with it; direct computation gives $\{\beta,\omega\} = 0$ (so $\beta$ is odd) and $[\alpha^k,\omega] = 0$ (so the $\alpha^k$ are even). The energy-sign split and the sector split are therefore generated by different operations: $P_\pm(\mathbf{p})$ by $\beta$, which is outside $\mathbb{B}$, and the sector projectors $\tfrac12(I\pm{}^{*})$ by Hermitian conjugation, which is inside it.
+and it contains $\beta = \gamma^0$. But $\gamma^0$ is an **odd** element of the Clifford algebra: it is a single generator, and $\mathbb{B}$ is isomorphic to the **even** subalgebra $\mathrm{Cl}^+_{1,3}$. An odd element has no representative in $\mathbb{B}$ at all, and a fortiori none in either sector. This is not a convention; it is tested by the parity grading. With $\omega = \gamma^0\gamma^1\gamma^2\gamma^3$ the volume element, even elements commute with $\omega$ and odd elements anticommute with it; direct computation gives $\{\beta,\omega\} = 0$ (so $\beta$ is odd) and $[\alpha^k,\omega] = 0$ (so the $\alpha^k$ are even). The energy-sign split and the sector split are therefore generated by different operations: $P_\pm(\vec p)$ by $\beta$, which is outside $\mathbb{B}$, and the sector projectors $\tfrac12(I\pm{}^{*})$ by Hermitian conjugation, which is inside it.
 
 **They are also splits of different objects.** The sector split is a decomposition of the *algebra element* $\tilde\Psi \in \mathbb{B}$ into $\tilde\Psi_+ + \tilde\Psi_-$. The energy-sign split is a decomposition of the *spinor module* — of the four-component Dirac spinor, with positive and negative energy each two-dimensional. The biquaternion algebra $\mathbb{B}\cong M_2(\mathbb{C})$ acts on a two-dimensional complex module; the four-component spinor is the direct sum of that module with its conjugate, and the energy projection mixes the two summands. Identifying a decomposition of the algebra with a decomposition of the module, without a stated dictionary, is a category error, and the parent article explicitly leaves the dictionary as a convention.
 
 **The natural dictionary the corpus supplies points the other way.** For a normalized two-component spinor the parent identifies the rank-one Hermitian form
 
 $$
-\psi\psi^\dagger \;\longmapsto\; \tfrac12\big(e_0 + i\hat{\mathbf{n}}\big) \in \mathbb{M}_+,
+\psi\psi^\dagger \;\longmapsto\; \tfrac12\big(e_0 + i\hat n\big) \in \mathbb{M}_+,
 $$
 
-the idempotent of the informational sector, independent of energy sign. Both rest-frame branches of the parent — $u^{(r)}(0)\propto(\xi^{(r)},0)$ and $v^{(r)}(0)\propto(0,\eta^{(r)})$ in the Dirac basis — reduce to a single two-component spinor and therefore to an $\mathbb{M}_+$ object. The sector $\mathbb{M}_-$ is where the *current* lives, $\tilde J = ic\,j^0e_0 + \mathbf{j} \in \mathbb{M}_-$, not where the negative-energy component lives. So on the dictionary actually available, the sector split tracks the operator–vector (state–current) distinction, not the energy sign, and both energy signs land in the same sector.
+the idempotent of the informational sector, independent of energy sign. Both rest-frame branches of the parent — $u^{(r)}(0)\propto(\xi^{(r)},0)$ and $v^{(r)}(0)\propto(0,\eta^{(r)})$ in the Dirac basis — reduce to a single two-component spinor and therefore to an $\mathbb{M}_+$ object. The sector $\mathbb{M}_-$ is where the *current* lives, $\tilde J = ic\,j^0e_0 + \vec j \in \mathbb{M}_-$, not where the negative-energy component lives. So on the dictionary actually available, the sector split tracks the operator–vector (state–current) distinction, not the energy sign, and both energy signs land in the same sector.
 
-**A momentum argument reinforces this.** The sector split is pointwise and momentum-independent: whether an element is Hermitian is a property of the element, not of any Fourier mode it carries. The energy projection is momentum-dependent through $\boldsymbol{\alpha}\cdot\mathbf{p}$. A momentum-independent algebraic split cannot be a momentum-dependent spectral projection except in the trivial case $\mathbf{p} = 0$, and even there the two rest branches both land in $\mathbb{M}_+$.
+**A momentum argument reinforces this.** The sector split is pointwise and momentum-independent: whether an element is Hermitian is a property of the element, not of any Fourier mode it carries. The energy projection is momentum-dependent through $\boldsymbol{\alpha}\cdot\vec p$. A momentum-independent algebraic split cannot be a momentum-dependent spectral projection except in the trivial case $\vec p = 0$, and even there the two rest branches both land in $\mathbb{M}_+$.
 
 The honest conclusion, then, is that the $\mathbb{M}_\pm$ split **renames the Hermitian decomposition of the algebra and not the $\pm$-energy decomposition of the spinor**. It is not obviously "doing work": the two splittings share the mass scale, but the interference that produces the trembling is between energy branches, and the energy branches are not the sectors. If a $\mathbb{B}$-internal splitting is wanted to carry the interference, the candidate is not the sector split but **chirality**: the chirality operator $\gamma_5$ is Clifford-**even**, hence has a representative in $\mathbb{B}$, and in the massless limit chirality locks to helicity, so that the two branches become the two chiralities. Whether that relabelling is the correct one is not settled here, and the status of the chirality idempotents in the sector decomposition is recorded as an open item. What is settled is that the $\pm$-energy split is not the $\mathbb{M}_\pm$ split, for the reasons above.
 
@@ -193,7 +193,7 @@ The Zitterbewegung is usually introduced as a property of the electron, and a co
 
 ## Summary
 
-The Zitterbewegung was derived in the biquaternion notation of the series. The Heisenberg velocity satisfies the exact identity $\alpha^k(t) = cp_k/\hat H + e^{i\hat Ht/\hbar}(\alpha^k(0)-cp_k/\hat H)e^{-i\hat Ht/\hbar}$, checked by matrix computation at momentum $|\mathbf{p}| = 0.374\,mc$ and three times, with maximum error $1.2\times10^{-16}$; the oscillating term has frequency $2E/\hbar$, equal to $2mc^2/\hbar$ at rest, and the electron value $1.55269\times10^{21}\ \text{rad s}^{-1}$ and amplitude $\hbar/(2mc) = 193.1$ fm were confirmed.
+The Zitterbewegung was derived in the biquaternion notation of the series. The Heisenberg velocity satisfies the exact identity $\alpha^k(t) = cp_k/\hat H + e^{i\hat Ht/\hbar}(\alpha^k(0)-cp_k/\hat H)e^{-i\hat Ht/\hbar}$, checked by matrix computation at momentum $|\vec p| = 0.374\,mc$ and three times, with maximum error $1.2\times10^{-16}$; the oscillating term has frequency $2E/\hbar$, equal to $2mc^2/\hbar$ at rest, and the electron value $1.55269\times10^{21}\ \text{rad s}^{-1}$ and amplitude $\hbar/(2mc) = 193.1$ fm were confirmed.
 
 The genuinely algebraic content is that the mass is the linear coupling between the two chiralities (the algebra's two central ideals), that the real structure $\flat$ acts with opposite signs on the two sectors, and that the rest-energy phase $e^{-imc^2t/\hbar} = \cos(mc^2t/\hbar)e_0 - \sin(mc^2t/\hbar)(ie_0)$ rotates the two sectors into one another at $mc^2/\hbar$. The Zitterbewegung phase is the square of this evolution phase, so its frequency is exactly twice the sector-rotation frequency.
 
@@ -213,7 +213,7 @@ The structural claim that motivated the article fails. The positive- and negativ
 | $\tilde k\tilde k^{\natural} = -m^2c^2/\hbar^2$ | Biquaternionic mass-shell condition |
 | $u^{(r)}, v^{(r)}$ | Positive- and negative-frequency spinors |
 | $\beta = \gamma^0$, $\alpha^k = \gamma^0\gamma^k$ | Dirac matrices; $\beta$ odd, $\alpha^k$ even |
-| $\hat H = c\boldsymbol{\alpha}\cdot\hat{\mathbf{p}} + \beta mc^2$ | Dirac Hamiltonian, $\hat H^2 = E^2I$ |
+| $\hat H = c\boldsymbol{\alpha}\cdot\hat p + \beta mc^2$ | Dirac Hamiltonian, $\hat H^2 = E^2I$ |
 | $\omega = \gamma^0\gamma^1\gamma^2\gamma^3$ | Volume element (parity grading) |
 | $\omega_Z = 2E/\hbar$ | Zitterbewegung angular frequency |
 | $\hbar/(2mc)$ | Zitterbewegung amplitude (order) |

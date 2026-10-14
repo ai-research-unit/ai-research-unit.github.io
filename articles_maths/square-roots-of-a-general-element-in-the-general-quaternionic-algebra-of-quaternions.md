@@ -26,7 +26,7 @@ $$
 
 *Proof.* The image is contained in the scalar line by the reduction, and every central value is the square of a root when the equation $N(\tilde\xi) = \lambda$ is soluble, which over $\mathbb{R}$ happens exactly for $\lambda \geq 0$.
 
-**Remark (the contrast with the plain square).** The plain square is $\mathbb{H}$-valued and the plain square-root problem is solved element by element; for example $e_1$ is the plain square of $\tilde\xi = (e_0+e_1)/\sqrt{2}$, since $\tilde\xi^2 = (e_0+e_1)^2/2 = e_1$. A non-central element of $\mathbb{H}$ therefore has plain square roots. In the quaternionic product the same element is not a square at all, and no non-central element is. The scalar–vector split, which for the plain square gives the pair $\xi_0^2 - N(\boldsymbol\xi) = q_0$ and $2\xi_0\boldsymbol\xi = \boldsymbol q$, collapses here to the single scalar equation and to the vanishing of the vector part of $\tilde q$.
+**Remark (the contrast with the plain square).** The plain square is $\mathbb{H}$-valued and the plain square-root problem is solved element by element; for example $e_1$ is the plain square of $\tilde\xi = (e_0+e_1)/\sqrt{2}$, since $\tilde\xi^2 = (e_0+e_1)^2/2 = e_1$. A non-central element of $\mathbb{H}$ therefore has plain square roots. In the quaternionic product the same element is not a square at all, and no non-central element is. The scalar–vector split, which for the plain square gives the pair $\xi_0^2 - N(\vec\xi) = q_0$ and $2\xi_0\vec\xi = \vec q$, collapses here to the single scalar equation and to the vanishing of the vector part of $\tilde q$.
 
 ## The Classification of the Roots
 

@@ -40,7 +40,7 @@ and the rank of $\mathsf{M}_4(\tilde P\star\tilde Q)$ is four exactly when $N(\t
 
 *Proof.* The two displays of the trace theorems, here and in the companion article.
 
-**Remark (the diagonal in the regular model).** The diagonal is read in the regular model by applying $\mathsf{M}_4$ to the diagonal form $\tilde Q\star\tilde Q=K(\tilde Q,\tilde Q)e_0-Q_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{Q}$ of *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra*: $\mathsf{M}_4(\tilde Q\star\tilde Q)=K(\tilde Q,\tilde Q)I_4-\mathsf{M}_4(Q_0\overline{\mathbf{Q}}+\overline{Q_0}\mathbf{Q})$, the scalar matrix of the form value minus the matrix of the mixed term. On the vector witnesses $e_1$ and $e_1+ie_2$ the mixed term vanishes and the value is the scalar matrix $-I_4$ or $-2I_4$; the deformation away from the scalar matrices appears at $e_0+e_1$, as in the companion article.
+**Remark (the diagonal in the regular model).** The diagonal is read in the regular model by applying $\mathsf{M}_4$ to the diagonal form $\tilde Q\star\tilde Q=K(\tilde Q,\tilde Q)e_0-Q_0\overline{\vec Q}-\overline{Q_0}\vec Q$ of *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra*: $\mathsf{M}_4(\tilde Q\star\tilde Q)=K(\tilde Q,\tilde Q)I_4-\mathsf{M}_4(Q_0\overline{\vec Q}+\overline{Q_0}\vec Q)$, the scalar matrix of the form value minus the matrix of the mixed term. On the vector witnesses $e_1$ and $e_1+ie_2$ the mixed term vanishes and the value is the scalar matrix $-I_4$ or $-2I_4$; the deformation away from the scalar matrices appears at $e_0+e_1$, as in the companion article.
 
 ## The Matrix Form of $K$ and Its Cone
 
@@ -104,7 +104,7 @@ $$
 
 since $e_1\star e_1=-e_0$; and at the pair $e_1+ie_2,\,e_1+ie_2$ the symmetrised value is the scalar matrix $-2I_4=K(e_1+ie_2,e_1+ie_2)I_4$, the same scalar $-2$ as in the realization, the two models differing only in the size of the matrix.
 
-**The two models.** At the vector witnesses, where the mixed term $Q_0\overline{\mathbf Q}+\overline{Q_0}\mathbf Q$ vanishes, the symmetrised value is the scalar matrix of the Krein form in both models, with the adjugate in the first slot of the realization and the transpose in the first slot of the regular model; away from those witnesses the value is the scalar matrix of the form minus the matrix of the mixed term, the deformation of *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra*. The entrywise value $-I_4$ at the vector unit $e_1$ is the same statement in the regular model as the value $-I$ in the realization.
+**The two models.** At the vector witnesses, where the mixed term $Q_0\overline{\vec Q}+\overline{Q_0}\vec Q$ vanishes, the symmetrised value is the scalar matrix of the Krein form in both models, with the adjugate in the first slot of the realization and the transpose in the first slot of the regular model; away from those witnesses the value is the scalar matrix of the form minus the matrix of the mixed term, the deformation of *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra*. The entrywise value $-I_4$ at the vector unit $e_1$ is the same statement in the regular model as the value $-I$ in the realization.
 
 ## Summary
 

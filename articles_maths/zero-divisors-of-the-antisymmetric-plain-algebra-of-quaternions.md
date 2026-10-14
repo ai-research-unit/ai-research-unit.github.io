@@ -3,7 +3,7 @@
 ## Introduction
 
 The antisymmetric plain algebra of $\mathbb{H}$ carries the cross product
-$\tilde p\times\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\mathbf p\times\mathbf q$ of
+$\tilde p\times\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\vec p\times\vec q$ of
 *Introduction to the Antisymmetric Plain Algebra of Quaternions*. The plain algebra is a division
 algebra, with no zero divisor; the antisymmetric block is at the opposite extreme. This article
 determines its zero divisors: the criterion, the pairs that multiply to zero and the dimension
@@ -21,11 +21,11 @@ Derivations of the Antisymmetric Plain Algebra* and its two matrix models, all b
 in this category.
 
 **Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and
-$e_1^2=e_2^2=e_3^2=-e_0$. A generic element is $\tilde q=q_0e_0+\mathbf q$ with
-$\mathbf q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; $\mathbf p\cdot\mathbf q$ is the
-Euclidean dot product and $\mathbf p\times\mathbf q$ the vector product of the vector parts; the
+$e_1^2=e_2^2=e_3^2=-e_0$. A generic element is $\tilde q=q_0e_0+\vec q$ with
+$\vec q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; $\vec p\cdot\vec q$ is the
+Euclidean dot product and $\vec p\times\vec q$ the vector product of the vector parts; the
 **centre** is $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$ and the **vector subspace** is
-$\mathrm{Vect}(\mathbb{H})=\{\mathbf q\}$.
+$\mathrm{Vect}(\mathbb{H})=\{\vec q\}$.
 
 ## The Notion and the Product
 
@@ -59,11 +59,11 @@ the definition.
 **Theorem (the criterion).** For nonzero $\tilde p,\tilde q$,
 
 $$
-\tilde p\times\tilde q=0\iff \mathbf p\times\mathbf q=0\iff \mathbf p\ \text{and}\ \mathbf q\ \text{are linearly dependent in}\ \mathbb{R}^3 .
+\tilde p\times\tilde q=0\iff \vec p\times\vec q=0\iff \vec p\ \text{and}\ \vec q\ \text{are linearly dependent in}\ \mathbb{R}^3 .
 $$
 
 The dependence is the **parallelism of the vector parts**: the criterion reads
-$\mathbf q=\lambda\mathbf p$, or $\mathbf p=\lambda\mathbf q$, for some real $\lambda$, the zero
+$\vec q=\lambda\vec p$, or $\vec p=\lambda\vec q$, for some real $\lambda$, the zero
 vector being proportional to every vector.
 
 *Proof.* The operation is the vector product of the vector parts, which vanishes exactly when the
@@ -78,9 +78,9 @@ blocks does not occur here — the operation never reads a norm.
 ### The Annihilators
 
 The annihilator of an element is the kernel of its left multiplication, the two sides coinciding
-because the block is alternating; it is the plane $\mathbb{R}e_0\oplus\mathbb{R}\mathbf p$ for a
+because the block is alternating; it is the plane $\mathbb{R}e_0\oplus\mathbb{R}\vec p$ for a
 noncentral element and the whole space for a central one. The annihilators, the operator
-$\operatorname{diag}(0,C_{\mathbf p})$ with its characteristic polynomial $t^2(t^2+|\mathbf p|^2)$,
+$\operatorname{diag}(0,C_{\vec p})$ with its characteristic polynomial $t^2(t^2+|\vec p|^2)$,
 the rank table and the dichotomy by the vector part are the companion article *Annihilators of the
 Antisymmetric Plain Algebra*, below this article in this category.
 
@@ -92,8 +92,8 @@ Antisymmetric Plain Algebra*, below this article in this category.
 $\tilde p\times\tilde q=0$ form two disjoint families:
 
 $$
-\text{(i) the pure pairs: } \tilde p=\mathbf u,\ \tilde q=\mathbf v
-\ \text{with}\ \mathbf u,\mathbf v\neq0\ \text{and parallel};
+\text{(i) the pure pairs: } \tilde p=\vec u,\ \tilde q=\vec v
+\ \text{with}\ \vec u,\vec v\neq0\ \text{and parallel};
 \qquad
 \text{(ii) the pairs with a scalar part: } \tilde p\ \text{or}\ \tilde q\ \text{non-pure},
 $$
@@ -108,7 +108,7 @@ both vector parts are nonzero and parallel, the pair is in the first family exac
 elements are pure. The two families are disjoint and cover every pair.
 
 **Remark (the two families and the annihilator).** For a noncentral element the annihilator is the
-plane $\mathbb{R}e_0\oplus\mathbb{R}\mathbf p$: its vector line $\mathbb{R}\mathbf p$ carries the
+plane $\mathbb{R}e_0\oplus\mathbb{R}\vec p$: its vector line $\mathbb{R}\vec p$ carries the
 pure partners and the rest of the plane the non-pure ones, so the pure pairs are the vector-line
 stratum and the pairs with a scalar part the complementary stratum. For a central element the
 annihilator is the whole space and the partner is arbitrary.
@@ -120,7 +120,7 @@ real dimension six, and the annihilator of a noncentral element is a plane of re
 
 *Proof.* The zero-divisor set is $\mathbb{H}\setminus\{0\}$, of dimension four. For a pair, choose
 the first element: if it is noncentral, four parameters, then the partner ranges over the
-annihilator plane $\mathbb{R}e_0\oplus\mathbb{R}\mathbf p$, of dimension two, giving a family of
+annihilator plane $\mathbb{R}e_0\oplus\mathbb{R}\vec p$, of dimension two, giving a family of
 dimension six, which dominates the central stratum
 $\{\lambda e_0\}\times(\mathbb{H}\setminus\{0\})$, of dimension five. So the pairs have dimension
 six.
@@ -131,10 +131,10 @@ The antisymmetric plain block has no nontrivial zero divisor theory to discover:
 alternating, so $\tilde p\times\tilde p=0$ and every nonzero element is a zero divisor with itself
 as partner, the zero-divisor set being the punctured four-dimensional space. The criterion for a
 pair is the parallelism of the vector parts,
-$\mathbf p\times\mathbf q=0\iff\mathbf q=\lambda\mathbf p$ or $\mathbf p=\lambda\mathbf q$, and the
+$\vec p\times\vec q=0\iff\vec q=\lambda\vec p$ or $\vec p=\lambda\vec q$, and the
 annihilator of a noncentral element is the two-dimensional plane
-$\mathbb{R}e_0\oplus\mathbb{R}\mathbf p$, of the left multiplication operator
-$\operatorname{diag}(0,C_{\mathbf p})$, of vanishing trace and determinant and rank two off the
+$\mathbb{R}e_0\oplus\mathbb{R}\vec p$, of the left multiplication operator
+$\operatorname{diag}(0,C_{\vec p})$, of vanishing trace and determinant and rank two off the
 centre. The zero-divisor pairs form two families, the pure parallel pairs and the pairs with a
 scalar part, of total real dimension six. Over $\mathbb{C}$ the criterion is identical and the only
 difference is the possible degeneracy of the operator's quadratic factor on the isotropic cone.
@@ -145,10 +145,10 @@ difference is the possible degeneracy of the operator's quadratic factor on the 
 |---|---|
 | $\tilde p\times\tilde q=0$, $\tilde p,\tilde q\neq0$ | a zero-divisor pair |
 | $\mathbb{H}\setminus\{0\}$ | the zero-divisor set, total |
-| $\mathbf p,\mathbf q$ proportional | the criterion |
-| $\operatorname{Ann}(\tilde p)=\mathbb{R}e_0\oplus\mathbb{R}\mathbf p$ | the annihilator of a noncentral element |
-| $L^{\times}_{\tilde p}=\operatorname{diag}(0,C_{\mathbf p})$ | the left multiplication operator |
-| $t^2(t^2+\lvert\mathbf p\rvert^2)$ | its characteristic polynomial |
+| $\vec p,\vec q$ proportional | the criterion |
+| $\operatorname{Ann}(\tilde p)=\mathbb{R}e_0\oplus\mathbb{R}\vec p$ | the annihilator of a noncentral element |
+| $L^{\times}_{\tilde p}=\operatorname{diag}(0,C_{\vec p})$ | the left multiplication operator |
+| $t^2(t^2+\lvert\vec p\rvert^2)$ | its characteristic polynomial |
 | rank $2$ / $0$ | on the noncentral elements / on the centre |
 
 ## Further Reading

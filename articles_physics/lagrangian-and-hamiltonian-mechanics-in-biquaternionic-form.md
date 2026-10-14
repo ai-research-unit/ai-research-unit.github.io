@@ -25,7 +25,7 @@ The companion articles supply the pieces:
 
 The standard Lagrangian and Hamiltonian formalism is recalled here in the form the biquaternion transcription will take; nothing in this section is new.
 
-The formalism is not an independent postulate. It follows from **D'Alembert's principle of virtual work** — the infinitesimal virtual work done by the impressed forces across displacements consistent with the constraints vanishes, which is the statement that the constraint forces do no work. Eliminating those forces is what allows the constraints to be absorbed into the geometry of the coordinates: a system of $\mathcal N$ constituents in three dimensions with $\kappa$ independent constraints has $3\mathcal N-\kappa$ **degrees of freedom**, described by the same number of **generalized coordinates** $q_i$, one per degree of freedom. These are not curvilinear coordinates. The number of curvilinear coordinates is the dimension of the position space — three, for three-dimensional space — whereas the number of generalized coordinates is the number of degrees of freedom, which constraints reduce and additional constituents raise; the two counts need not agree. A constraint expressible as $\mathbf r=\mathbf r(q,t)$ holding for all $t$ is **holonomic**; it is **scleronomic** when the relation carries no explicit time and **rheonomic** when it does. The Lagrange equation obtained below is the generalized form of Newton's second law that results, and the stationary-action statement is its equivalent formulation in integral form.
+The formalism is not an independent postulate. It follows from **D'Alembert's principle of virtual work** — the infinitesimal virtual work done by the impressed forces across displacements consistent with the constraints vanishes, which is the statement that the constraint forces do no work. Eliminating those forces is what allows the constraints to be absorbed into the geometry of the coordinates: a system of $\mathcal N$ constituents in three dimensions with $\kappa$ independent constraints has $3\mathcal N-\kappa$ **degrees of freedom**, described by the same number of **generalized coordinates** $q_i$, one per degree of freedom. These are not curvilinear coordinates. The number of curvilinear coordinates is the dimension of the position space — three, for three-dimensional space — whereas the number of generalized coordinates is the number of degrees of freedom, which constraints reduce and additional constituents raise; the two counts need not agree. A constraint expressible as $\vec r=\vec r(q,t)$ holding for all $t$ is **holonomic**; it is **scleronomic** when the relation carries no explicit time and **rheonomic** when it does. The Lagrange equation obtained below is the generalized form of Newton's second law that results, and the stationary-action statement is its equivalent formulation in integral form.
 
 Let a system have $n$ generalized coordinates $q=(q_1,\dots,q_n)$ and velocities $\dot q$. The **Lagrangian** is a smooth real function $L(q,\dot q,t)$, and the **action** is the functional
 
@@ -109,7 +109,7 @@ $$
 \tilde q=q_0\,e_0+q_1\,e_1+q_2\,e_2+q_3\,e_3\in\mathbb{H}_{\mathbb{B}} ,
 $$
 
-with real components $q_\mu$. The physical three-space is the pure real part $\mathbf q=q_1e_1+q_2e_2+q_3e_3\in\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_-$, and the central coordinate $q_0e_0\in\mathbb{C}_{\mathbb{B}}\cap\mathbb{H}_{\mathbb{B}}$ is a fourth, scalar degree of freedom. A system with three degrees of freedom is the special case $q_0=0$; the pure-vector configuration is the one that carries the spatial interpretation.
+with real components $q_\mu$. The physical three-space is the pure real part $\vec q=q_1e_1+q_2e_2+q_3e_3\in\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_-$, and the central coordinate $q_0e_0\in\mathbb{C}_{\mathbb{B}}\cap\mathbb{H}_{\mathbb{B}}$ is a fourth, scalar degree of freedom. A system with three degrees of freedom is the special case $q_0=0$; the pure-vector configuration is the one that carries the spatial interpretation.
 
 For a central-valued function $F(\tilde q)$ — a function taking values in $\mathbb{C}_{\mathbb{B}}$ — define the **quaternion gradient** componentwise,
 
@@ -134,7 +134,7 @@ $$
 T=\tfrac{1}{2}m\,N(\dot{\tilde q})=\tfrac{1}{2}m\,\dot{\tilde q}\,\bar{\dot{\tilde q}}=\tfrac{1}{2}m\sum_{\mu=0}^{3}\dot q_\mu^2 .
 $$
 
-For a pure-vector configuration the central term is absent and $T=\tfrac{1}{2}m|\dot{\mathbf q}|^2$, the familiar kinetic energy. The kinetic energy is therefore the **biquaternion norm** of the velocity, and this is the first structural fact of the biquaternion formulation of mechanics: the algebra's own quadratic form is the free kinetic energy. The biquaternion norm on $\mathbb{H}_{\mathbb{B}}$ is positive definite, so $T\ge0$ with equality only for $\dot{\tilde q}=0$; no sign choice has to be made.
+For a pure-vector configuration the central term is absent and $T=\tfrac{1}{2}m|\dot{\vec q}|^2$, the familiar kinetic energy. The kinetic energy is therefore the **biquaternion norm** of the velocity, and this is the first structural fact of the biquaternion formulation of mechanics: the algebra's own quadratic form is the free kinetic energy. The biquaternion norm on $\mathbb{H}_{\mathbb{B}}$ is positive definite, so $T\ge0$ with equality only for $\dot{\tilde q}=0$; no sign choice has to be made.
 
 The free Lagrangian is
 
@@ -209,7 +209,7 @@ $$
 H_0=\frac{N(\tilde p)}{2m}=\frac{\tilde p\,\tilde p^{\natural}}{2m}=\frac{1}{2m}\sum_{\mu=0}^{3}p_\mu^2 ,
 $$
 
-the free Hamiltonian, which reduces to the familiar $\mathbf p^2/2m$ for a pure-vector momentum, $p_0=0$. The structural statement is the mirror of the one for $L_0$: **the free Hamiltonian is the biquaternion norm of the momentum, divided by $2m$.** The biquaternion norm thus appears at both ends of the Legendre transform, once on velocity and once on momentum, because the Legendre transform of a quadratic form is its own inverse up to the mass factor.
+the free Hamiltonian, which reduces to the familiar $\vec p^2/2m$ for a pure-vector momentum, $p_0=0$. The structural statement is the mirror of the one for $L_0$: **the free Hamiltonian is the biquaternion norm of the momentum, divided by $2m$.** The biquaternion norm thus appears at both ends of the Legendre transform, once on velocity and once on momentum, because the Legendre transform of a quadratic form is its own inverse up to the mass factor.
 
 **Harmonic oscillator.** For $L=\tfrac{1}{2}mN(\dot{\tilde q})-\tfrac{1}{2}m\omega^2N(\tilde q)$ the momentum is again $\tilde p=m\dot{\tilde q}$ and
 
@@ -302,8 +302,8 @@ Multiplication by $i$ therefore turns the configuration into (minus) the momentu
 The same assembly works for a system with four degrees of freedom, with $\tilde q,\tilde p$ general real quaternions, and the sector split then reads
 
 $$
-\tilde Z_{+}=\tfrac{1}{2}\!\left(\tilde Z+\tilde Z^{*}\right)=q_0\,e_0+i\,\mathbf p ,\qquad
-\tilde Z_{-}=\tfrac{1}{2}\!\left(\tilde Z-\tilde Z^{*}\right)=i\,p_0\,e_0+\mathbf q ,
+\tilde Z_{+}=\tfrac{1}{2}\!\left(\tilde Z+\tilde Z^{*}\right)=q_0\,e_0+i\,\vec p ,\qquad
+\tilde Z_{-}=\tfrac{1}{2}\!\left(\tilde Z-\tilde Z^{*}\right)=i\,p_0\,e_0+\vec q ,
 $$
 
 so that the two vector parts separate as configuration and momentum while the two scalar components pair the other way: the configuration scalar $q_0$ is Hermitian and the momentum scalar $i\,p_0$ is anti-Hermitian. The clean statement — material part the configuration, informational part $i$ times the momentum — is the three-degree-of-freedom case $q_0=p_0=0$, which is also the one that carries the spatial interpretation.
@@ -313,7 +313,7 @@ so that the two vector parts separate as configuration and momentum while the tw
 The phase-space biquaternion $\tilde Z=\tilde q+i\tilde p$ packages the **configuration** with the **momentum**. There is a second packaging, and it is the covariant one: the Hamiltonian with the canonical momentum in the same biquaternion. Gsponer and Hurni call it the **four-Hamiltonian**
 
 $$
-\Pi = \left[H(t,\mathbf x,\vec\pi)\,;\,-i\vec\pi(t,\mathbf x)\right],
+\Pi = \left[H(t,\vec x,\vec\pi)\,;\,-i\vec\pi(t,\vec x)\right],
 $$
 
 a bireal — that is, Hermitian — biquaternion whose scalar part is the Hamiltonian and whose vector part carries the canonical momentum. For $n$ point particles in a time-independent external field it is assembled from the four-momenta and the potential,
@@ -336,7 +336,7 @@ $$
 \oint dX\circ\Pi = 0 ,
 $$
 
-which for two fixed endpoints is Hamilton's principle, $\delta\int_{X_1}^{X_2} dX\circ\Pi = 0$. Hamilton's principle is thus, in this formulation, the **exactness of the four-Hamiltonian one-form**; and for a Hamiltonian with no explicit time dependence the same condition is equivalent to Hamilton's equations $\dot{\mathbf x}=d H/d\vec\pi$, $\dot{\vec\pi}=-d H/d\mathbf x$.
+which for two fixed endpoints is Hamilton's principle, $\delta\int_{X_1}^{X_2} dX\circ\Pi = 0$. Hamilton's principle is thus, in this formulation, the **exactness of the four-Hamiltonian one-form**; and for a Hamiltonian with no explicit time dependence the same condition is equivalent to Hamilton's equations $\dot{\vec x}=d H/d\vec\pi$, $\dot{\vec\pi}=-d H/d\vec x$.
 
 
 **Two packagings, two sectors.** The contrast with the previous section is exact. The phase-space biquaternion $\tilde Z$ pairs a material part with an informational part; the four-Hamiltonian $\Pi$ lies **entirely** in the Hermitian (informational) sector, its two halves being the Hamiltonian and the momentum rather than a position and a momentum. The corpus has both objects: $\tilde Z$ for the configuration–momentum split and $\Pi$ for the covariant energy–momentum-plus-potential object whose potential is the action.
@@ -361,7 +361,7 @@ $$
 -\mathrm{Sc}\!\left(\overline{\nabla_{\tilde p}f}\;\nabla_{\tilde q}g\right).\;}
 $$
 
-Only the scalar part of each quaternion product enters. For pure $\tilde a,\tilde b$ the product $\tilde a^{\natural}\tilde b$ has a vector part as well, $-\tilde a\times\tilde b$; in general the vector part is $a_0\mathbf b-b_0\mathbf a-\mathbf a\times\mathbf b$, and only the cross-product term is intrinsic to the pairing. The Poisson bracket discards it, and the discarded part is precisely the cross-product structure that reappears as the angular-momentum bracket below. This is the algebraic content of the statement that the classical bracket is the antisymmetric scalar pairing of two gradients.
+Only the scalar part of each quaternion product enters. For pure $\tilde a,\tilde b$ the product $\tilde a^{\natural}\tilde b$ has a vector part as well, $-\tilde a\times\tilde b$; in general the vector part is $a_0\vec b-b_0\vec a-\vec a\times\vec b$, and only the cross-product term is intrinsic to the pairing. The Poisson bracket discards it, and the discarded part is precisely the cross-product structure that reappears as the angular-momentum bracket below. This is the algebraic content of the statement that the classical bracket is the antisymmetric scalar pairing of two gradients.
 
 Because the bracket is built from scalar parts of quaternion products, it is automatically bilinear and antisymmetric, and in these coordinates it is the canonical bracket in disguise, so it satisfies the Jacobi identity. The derivation property $\{f,gh\}=\{f,g\}h+g\{f,h\}$ holds for the commutative product of central-valued functions, exactly as in the standard theory.
 
@@ -399,13 +399,13 @@ $$
 \tilde L=\tilde q\,\tilde p
 $$
 
-decomposes, for the pure-vector configuration $\tilde q,\tilde p$ that carries the spatial interpretation, as $\tilde L=-\mathbf q\cdot\mathbf p+\mathbf q\times\mathbf p$; the scalar part is (minus) the contraction of position and momentum, and the **vector part is the angular momentum** $\mathbf L=\mathbf q\times\mathbf p$. This is the biquaternion form of the cross-product formula $\mathbf L=\mathbf r\times\mathbf p$. Its components satisfy, as in the companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow*,
+decomposes, for the pure-vector configuration $\tilde q,\tilde p$ that carries the spatial interpretation, as $\tilde L=-\vec q\cdot\vec p+\vec q\times\vec p$; the scalar part is (minus) the contraction of position and momentum, and the **vector part is the angular momentum** $\vec L=\vec q\times\vec p$. This is the biquaternion form of the cross-product formula $\vec L=\vec r\times\vec p$. Its components satisfy, as in the companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow*,
 
 $$
 \{L_i,L_j\}=\varepsilon_{ijk}L_k,\qquad \{L_i,q_j\}=\varepsilon_{ijk}q_k,\qquad \{L_i,p_j\}=\varepsilon_{ijk}p_k .
 $$
 
-The first of these is the statement that the components of angular momentum close into $\mathrm{SU}(2)$ under the Poisson bracket; it is the bracket that the biquaternion algebra realizes **exactly**, because the quaternion product already carries the cross product, with no deformation parameter. The companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow* identifies the corresponding one-parameter group: on the coadjoint orbit, the flow generated by $H=2G\cdot\mathbf S$ is the rotor conjugation by $\exp(tG)$, and the generators agree term for term.
+The first of these is the statement that the components of angular momentum close into $\mathrm{SU}(2)$ under the Poisson bracket; it is the bracket that the biquaternion algebra realizes **exactly**, because the quaternion product already carries the cross product, with no deformation parameter. The companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow* identifies the corresponding one-parameter group: on the coadjoint orbit, the flow generated by $H=2G\cdot\vec S$ is the rotor conjugation by $\exp(tG)$, and the generators agree term for term.
 
 ### What the Bracket Is Not
 
@@ -431,7 +431,7 @@ $$
 \tilde q\longmapsto \tilde R\,\tilde q\,\tilde R^{*},\qquad \tilde R\in\mathbb{H}_{\mathbb{B}},\quad \tilde R\tilde R^{\natural}=e_0 .
 $$
 
-The biquaternion norm is invariant, $N(\tilde R\tilde q\tilde R^{*})=N(\tilde q)$, because the rotor has unit norm. If the potential is rotationally invariant, so is the Lagrangian, and the conserved Noether charge is the angular momentum $\tilde L=\tilde q\tilde p$ of the previous section, that is its vector part $\mathbf q\times\mathbf p$. This is the classical mechanics reading of the rotor: the rotation group is the group of unit real quaternions $SU(2)$, acting on the configuration by conjugation. The companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow* develops the rotor-flow correspondence, and the companion article *Noether's Theorem in Biquaternionic Form* develops the general current construction.
+The biquaternion norm is invariant, $N(\tilde R\tilde q\tilde R^{*})=N(\tilde q)$, because the rotor has unit norm. If the potential is rotationally invariant, so is the Lagrangian, and the conserved Noether charge is the angular momentum $\tilde L=\tilde q\tilde p$ of the previous section, that is its vector part $\vec q\times\vec p$. This is the classical mechanics reading of the rotor: the rotation group is the group of unit real quaternions $SU(2)$, acting on the configuration by conjugation. The companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow* develops the rotor-flow correspondence, and the companion article *Noether's Theorem in Biquaternionic Form* develops the general current construction.
 
 **The central phase.** Because $i$ is central, a central phase acts on the biquaternion-valued configuration by $\tilde q\mapsto e^{i\alpha}\tilde q$. For a real-quaternion configuration it does not preserve the real subspace — $e^{i\alpha}\tilde q$ is a complex biquaternion unless $\tilde q=0$ — so it is a symmetry of the complexified formulation rather than of the real configuration space; it becomes a genuine internal symmetry only for a complex biquaternion-valued field, where it is the $U(1)$ of the companion article *The Gauge Principle in Biquaternionic Form*. It also acts on the free Lagrangian, $L=\tfrac12mN(\dot{\tilde q})\mapsto e^{2i\alpha}L$, so a real Lagrangian is invariant only for $e^{2i\alpha}=1$: the transformation is a symmetry of the complexified formulation and not of the real one. In the present classical setting it acts on the phase-space biquaternion $\tilde Z$ and is the algebra's complex structure; its consequences for the action and for the symplectic structure are developed in the companion articles *The Action Principle and the Classical Limit as Stationary Phase in Biquaternionic Form* and *The Symplectic Form and the Biquaternion Norm Cone*.
 
@@ -443,7 +443,7 @@ The transcription is exact within its domain, and the domain is worth stating pl
 
 **What it does not give.** The algebra is finite dimensional; it cannot carry the configuration space of a system with more than a few degrees of freedom, nor an infinite-dimensional field configuration except through its coefficients. The Poisson bracket is a scalar projection of a quaternion product, and the vector part it discards is not a second bracket. And the canonical Heisenberg sector is absent: there is no pair $\tilde q,\tilde p$ inside $\mathbb{B}$ whose bracket is a central constant, as the companion articles *Similitudes Between the Poisson Bracket and the Quantum Commutator* and *The Harmonic Oscillator in Biquaternionic Form* prove. None of these limitations is a defect of the transcription; they are properties of the algebra, and they mark where the biquaternion language is a convenience and where it is a constraint.
 
-**The field case.** The one direction in which the finite-dimensional transcription is extended rather than limited is the field, and it is the subject of the companion article *Hamiltonian Field Theory in Biquaternionic Form*. There the single conjugate momentum becomes a conjugate momentum field, the Legendre transform acts on a density, the bracket becomes a bracket on functionals with $\{\phi(\mathbf{x}),\pi(\mathbf{y})\}=\delta^3(\mathbf{x}-\mathbf{y})$, the Hamiltonian becomes the integral of a density whose Hermitian-form expression is the energy density, and the conservation law becomes the continuity equation for the energy flux, whose density and flux are the scalar and vector parts of one Hermitian biquaternion. The central scalar field is the case in which the algebra's contribution is the packaging and the sector interpretation rather than a change of the bracket, and it is the case that the article on canonical quantization takes over unchanged.
+**The field case.** The one direction in which the finite-dimensional transcription is extended rather than limited is the field, and it is the subject of the companion article *Hamiltonian Field Theory in Biquaternionic Form*. There the single conjugate momentum becomes a conjugate momentum field, the Legendre transform acts on a density, the bracket becomes a bracket on functionals with $\{\phi(\vec x),\pi(\vec y)\}=\delta^3(\vec x-\vec y)$, the Hamiltonian becomes the integral of a density whose Hermitian-form expression is the energy density, and the conservation law becomes the continuity equation for the energy flux, whose density and flux are the scalar and vector parts of one Hermitian biquaternion. The central scalar field is the case in which the algebra's contribution is the packaging and the sector interpretation rather than a change of the bracket, and it is the case that the article on canonical quantization takes over unchanged.
 
 ## Summary
 
@@ -473,7 +473,7 @@ The formulation is a transcription, exact for configurations that fit in a real 
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_-,\mathbb{M}_+$ | Anti-Hermitian (material) and Hermitian (informational) sectors |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
-| $\tilde q=q_0e_0+\mathbf q$ | Configuration quaternion (real) |
+| $\tilde q=q_0e_0+\vec q$ | Configuration quaternion (real) |
 | $\dot{\tilde q}$ | Configuration velocity |
 | $N(\tilde q) = \langle\tilde q,\tilde q\rangle_{\natural}=\tilde q\tilde q^{\natural}$ | Biquaternion norm |
 | $L(\tilde q,\dot{\tilde q},t)$ | Lagrangian |
@@ -489,7 +489,7 @@ The formulation is a transcription, exact for configurations that fit in a real 
 | $\tilde Z=\tilde q+i\tilde p$ | Phase-space biquaternion |
 | $\nabla_{\tilde q}f,\nabla_{\tilde p}f$ | Gradients of an observable |
 | $\{f,g\}$ | Poisson bracket |
-| $\tilde L=\tilde q\tilde p$ | Angular momentum (vector part $\mathbf q\times\mathbf p$) |
+| $\tilde L=\tilde q\tilde p$ | Angular momentum (vector part $\vec q\times\vec p$) |
 | $\tilde R\in\mathbb{H}_{\mathbb{B}}$, $N(\tilde R)=e_0$ | Rotation rotor |
 | $\mathrm{Tr}(e_0)=2$ | Trace normalization |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |

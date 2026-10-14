@@ -30,7 +30,7 @@ the shape that commutes with $J=\begin{pmatrix}0&-\mathrm{I}\\ \mathrm{I}&0\end{
 
 The product carries the general plain bilinear $B$ form, the scalar part of the general product of its family, quoted from *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*:
 $$
-B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-(\mathbf P,\mathbf Q)
+B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-(\vec P,\vec Q)
 $$
 Over $\mathbb{C}$ it is a symmetric bilinear form; a nondegenerate symmetric bilinear form over $\mathbb{C}$ is classified by its rank alone, so its realification is not the doubling of a complex inertia but the **split** pair described in §*The Realification of a Form* of *The Realification and the Effect of the Change of Scalars*: the real part $\operatorname{Re}\Phi$ and the imaginary part $\operatorname{Im}\Phi$ are two real symmetric bilinear forms, and on the identification $\mathbb{R}^8$ the realification has signature
 $$

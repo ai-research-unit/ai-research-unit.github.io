@@ -11,14 +11,14 @@ $$
 =\tfrac12\,F_{\mu\nu}\star F^{\mu\nu}
 =\frac{2i}{c}\,I_2 \quad(\text{Lorentzian}),
 \qquad
-I_2=\mathbf E\cdot\mathbf B ,
+I_2=\vec E\cdot\vec B ,
 $$
 
-as *Instantons and Solitons in Biquaternionic Form* recomputed from the component conventions of *The Field-Strength Biquaternion and Its Invariants*. The coefficient is fixed by the identity $\tfrac14\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}=\tfrac12 F_{\mu\nu}\star F^{\mu\nu}$, so that the quarter-density carries half the coefficient of $F_{\mu\nu}\tilde F^{\mu\nu}=\frac{4i}{c}I_2$ used below; the two are not to be "aligned". The theta term of the Maxwell sector is therefore proportional to the integral of one of the framework's own invariants, and it is specifically the **pseudoscalar** invariant: $I_1=\mathbf E^2-c^2\mathbf B^2$ is parity-even and $I_2$ is parity-odd. The CP-odd character of the theta term, which is the source of the strong CP problem, is thus visible in the algebra as the parity of the second invariant.
+as *Instantons and Solitons in Biquaternionic Form* recomputed from the component conventions of *The Field-Strength Biquaternion and Its Invariants*. The coefficient is fixed by the identity $\tfrac14\epsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}=\tfrac12 F_{\mu\nu}\star F^{\mu\nu}$, so that the quarter-density carries half the coefficient of $F_{\mu\nu}\tilde F^{\mu\nu}=\frac{4i}{c}I_2$ used below; the two are not to be "aligned". The theta term of the Maxwell sector is therefore proportional to the integral of one of the framework's own invariants, and it is specifically the **pseudoscalar** invariant: $I_1=\vec E^2-c^2\vec B^2$ is parity-even and $I_2$ is parity-odd. The CP-odd character of the theta term, which is the source of the strong CP problem, is thus visible in the algebra as the parity of the second invariant.
 
 Three things follow, and the article states them separately. The algebra **supplies** the theta term's density and its discrete periodicity; it **supplies** the structure of the Witten effect, in the sense that a theta shift and a magnetic charge together generate an electric charge; and it **does not supply** the value of $\theta$, because $\theta$ is a parameter labelling the vacuum and not an output of a complexified classical algebra. The strong CP problem is the statement that the observed near-vanishing of the physical theta parameter is not explained by the framework — or by the Standard Model without additional structure. This is reported as the boundary of what the algebra can address.
 
-**Conventions.** We use those of *Conventions in the Biquaternion Universe* and of the companion gauge articles. The field-strength biquaternion is $\tilde F=i\sqrt{\epsilon}\mathbf E-\sqrt{\mu}\mathbf H$, its dual is $\tilde F_\star=-i\tilde F$, and the invariants are $I_1=\mathbf E^2-c^2\mathbf B^2$ and $I_2=\mathbf E\cdot\mathbf B$. The topological charge and theta term are
+**Conventions.** We use those of *Conventions in the Biquaternion Universe* and of the companion gauge articles. The field-strength biquaternion is $\tilde F=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$, its dual is $\tilde F_\star=-i\tilde F$, and the invariants are $I_1=\vec E^2-c^2\vec B^2$ and $I_2=\vec E\cdot\vec B$. The topological charge and theta term are
 
 $$
 Q=\frac{1}{8\pi^2}\int\mathrm{Tr}\bigl(F\wedge F\bigr)\in\mathbb Z ,
@@ -32,7 +32,7 @@ with all indices summed in the $ict$ convention as in the companion gauge articl
 
 - Companion article *The Magnetic Monopole in Biquaternionic Form*, for the dyons and the quantisation condition.
 - Companion article *The 't Hooft–Polyakov Monopole in Biquaternionic Form*, for the finite-energy topological monopole.
-- Companion article *The Field-Strength Biquaternion and Its Invariants*, for the invariant $I_2=\mathbf E\cdot\mathbf B$.
+- Companion article *The Field-Strength Biquaternion and Its Invariants*, for the invariant $I_2=\vec E\cdot\vec B$.
 - Companion article *The Semiclassical Expansion and the Instanton Gas in Biquaternionic Form*, for the theta vacuum and its periodicity.
 - Companion article *Electric–Magnetic Duality and the Modular Group in Biquaternionic Form*, for the modular action on the charges.
 
@@ -63,7 +63,7 @@ F_{\mu\nu}\tilde F^{\mu\nu}=\frac{4i}{c}I_2\ \ (\text{Lorentzian}),
 \qquad
 F_{\mu\nu}\tilde F^{\mu\nu}=4I_2\ \ (\text{Euclidean}),
 \qquad
-I_2=\mathbf E\cdot\mathbf B ,
+I_2=\vec E\cdot\vec B ,
 $$
 
 
@@ -191,7 +191,7 @@ which reduces at $\theta=0$ to the monopole mass $M=4\pi v/g$ of the monopole ar
 
 ## Summary
 
-The theta term $S_\theta=\frac{\theta}{32\pi^2}\int F_{\mu\nu}\tilde F^{\mu\nu}$ is a total derivative, hence dependent only on the instanton number, and in the abelian sector its density is proportional to the framework's parity-odd invariant $I_2=\mathbf E\cdot\mathbf B$:
+The theta term $S_\theta=\frac{\theta}{32\pi^2}\int F_{\mu\nu}\tilde F^{\mu\nu}$ is a total derivative, hence dependent only on the instanton number, and in the abelian sector its density is proportional to the framework's parity-odd invariant $I_2=\vec E\cdot\vec B$:
 
 $$
 F_{\mu\nu}\tilde F^{\mu\nu}=\frac{4i}{c}\,I_2 \quad(\text{Lorentzian}),
@@ -210,10 +210,10 @@ The Witten effect states that a monopole of magnetic charge $q_m=4\pi n/e$ carri
 | Symbol | Meaning |
 |---|---|
 | $\mathbb B=\mathbb C\otimes_{\mathbb R}\mathbb H$ | Biquaternion algebra |
-| $\tilde F=i\sqrt{\epsilon}\mathbf E-\sqrt{\mu}\mathbf H$ | Field-strength biquaternion |
+| $\tilde F=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Field-strength biquaternion |
 | $\tilde F_\star=-i\tilde F$ | Dual field-strength biquaternion |
-| $I_1=\mathbf E^2-c^2\mathbf B^2$ | First invariant (parity-even, scalar) |
-| $I_2=\mathbf E\cdot\mathbf B$ | Second invariant (parity-odd, pseudoscalar); theta density |
+| $I_1=\vec E^2-c^2\vec B^2$ | First invariant (parity-even, scalar) |
+| $I_2=\vec E\cdot\vec B$ | Second invariant (parity-odd, pseudoscalar); theta density |
 | $\theta$ | Theta angle; coefficient of the topological term |
 | $S_\theta=\frac{\theta}{32\pi^2}\int F\tilde F$ | Theta term of the action |
 | $\tilde F^{\mu\nu}=\frac12\epsilon^{\mu\nu\rho\sigma}F_{\rho\sigma}$ | Hodge dual field strength |

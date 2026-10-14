@@ -13,7 +13,7 @@ real quaternion forms**. At the witness
 $$
 (x,y,z)=(e_1,\,e_1,\,ie_2),
 \qquad
-\tilde P\diamond\tilde Q=\mathbf{P}\times\overline{\mathbf{Q}},
+\tilde P\diamond\tilde Q=\vec P\times\overline{\vec Q},
 $$
 
 the cyclic sum is
@@ -24,7 +24,7 @@ $$
 
 and it differs from zero. The witness uses the element $ie_2$, which is **not** on the real basis
 $\{e_0,e_1,e_2,e_3\}$. On the real quaternion subspace the operation coincides with the **plain**
-antisymmetric part $\mathbf{P}\times\mathbf{Q}$, which **is** a Lie bracket — it satisfies the Jacobi
+antisymmetric part $\vec P\times\vec Q$, which **is** a Lie bracket — it satisfies the Jacobi
 identity — and a check performed on the real basis finds no failure at all. The failure of the complex
 bracket is therefore a statement about the algebra as a **complex** space, and a real-form computation,
 however extensive, cannot see it.
@@ -41,12 +41,12 @@ the obstruction's place in the map of the four general products to *The Four Gen
 **Conventions.** As in the companion articles of this block:
 $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0=1$,
 $e_k^{2}=-e_0$, $e_1e_2=e_3$, central $i$; $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$,
-scalar part $\mathrm{Sc}(\tilde Q)=Q_0$ and vector part $\mathbf{Q}=\sum_kQ_ke_k$; the natural conjugation
-$\tilde Q^{\natural}=Q_0e_0-\mathbf{Q}$, the coefficientwise one $\bar{\tilde Q}=\sum_\mu\bar Q_\mu e_\mu$,
-and the star $\tilde Q^{*}=\overline{\tilde Q^{\natural}}$; $(\mathbf{P},\mathbf{Q})=\sum_kP_kQ_k$ and
+scalar part $\mathrm{Sc}(\tilde Q)=Q_0$ and vector part $\vec Q=\sum_kQ_ke_k$; the natural conjugation
+$\tilde Q^{\natural}=Q_0e_0-\vec Q$, the coefficientwise one $\bar{\tilde Q}=\sum_\mu\bar Q_\mu e_\mu$,
+and the star $\tilde Q^{*}=\overline{\tilde Q^{\natural}}$; $(\vec P,\vec Q)=\sum_kP_kQ_k$ and
 $\times$ are the bilinear dot and cross products; the block's operation is
-$\tilde P\diamond\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural})=\mathbf{P}\times\overline{\mathbf{Q}}$;
-the plain antisymmetric part is $\mathrm{APA}$, $\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf{P}\times\mathbf{Q}$;
+$\tilde P\diamond\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural})=\vec P\times\overline{\vec Q}$;
+the plain antisymmetric part is $\mathrm{APA}$, $\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\vec P\times\vec Q$;
 the sectors are $\mathbb{M}_+$ and $\mathbb{M}_-$. All conventions are
 those of *Conventions in the Biquaternion Universe*.
 
@@ -65,10 +65,10 @@ the witnesses and the basis elements they use.
 |---|---|---|---|---|
 | $\mathrm{AQA}$ | $\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$ | $(e_0,e_1,e_2)$ | $-e_3$ | all four real |
 | $\mathrm{APS}$ | $\tfrac12(\tilde P\tilde Q^{*}-\overline{\tilde Q}\tilde P^{\natural})=\mathrm{Vect}(\tilde P\tilde Q^{*})$ | $(e_0,e_1,e_2)$ | $+e_3$ | all four real |
-| $\mathrm{AQS}$ | $\tfrac12(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural})=\mathbf{P}\times\overline{\mathbf{Q}}$ | $(e_1,e_1,ie_2)$ | $-2ie_2$ | $ie_2$ is complex |
+| $\mathrm{AQS}$ | $\tfrac12(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural})=\vec P\times\overline{\vec Q}$ | $(e_1,e_1,ie_2)$ | $-2ie_2$ | $ie_2$ is complex |
 
 The **plain** antisymmetric part $\mathrm{APA}$, the first row of the four general products, is absent from the
-table, and its absence is the reason the table is worth drawing: $\mathrm{APA}=\mathbf{P}\times\mathbf{Q}$
+table, and its absence is the reason the table is worth drawing: $\mathrm{APA}=\vec P\times\vec Q$
 is the ordinary cross product of two real vectors continued to the algebra, it **is** the Lie bracket of
 $\mathfrak{so}(3)$ and of the vector representation of $\mathfrak{su}(2)$, and it **satisfies** the Jacobi
 identity. The three failing brackets are therefore not the antisymmetric parts as such; they are the three
@@ -107,7 +107,7 @@ conjugate in the second argument of the rule does nothing:
 
 $$
 \tilde P,\tilde Q\in\mathbb{H}_{\mathbb{B}}\quad\Longrightarrow\quad
-\tilde P\diamond\tilde Q=\mathbf{P}\times\overline{\mathbf{Q}}=\mathbf{P}\times\mathbf{Q}=\tilde P\wedge\tilde Q .
+\tilde P\diamond\tilde Q=\vec P\times\overline{\vec Q}=\vec P\times\vec Q=\tilde P\wedge\tilde Q .
 $$
 
 The complex bracket restricted to the real quaternion subspace **is** the plain antisymmetric part. Since
@@ -205,7 +205,7 @@ the real form is exactly the place where the complex structure of $\mathbb{B}$ i
 **The defect does not close.** A non-associative law can fail in two ways: the bracket of the prescribed
 elements can leave the span, or it can stay inside a span that is nevertheless not a Lie algebra. The
 second is what happens here. The real span of the values of $\mathrm{AQS}$ over $100$ random complex triples is
-the **whole** six-dimensional vector subspace of $\mathbf{P}$ and $\mathbf{Q}$, so the operation is far from
+the **whole** six-dimensional vector subspace of $\vec P$ and $\vec Q$, so the operation is far from
 being too small; what it fails to be is a Lie bracket, because its cyclic sum is not zero on any of those
 triples. The closure one can form from the operation is therefore a **vector space and not an algebra**: the
 defect does not shrink under closure, it is inherited by the generated span. The name is the article's; the
@@ -242,9 +242,9 @@ repeated here.
 
 **Proved, and recomputed.** The antisymmetric gauge product fails the Jacobi identity at the witness
 $(x,y,z)=(e_1,e_1,ie_2)$, with cyclic sum $-2ie_2$, and the failure holds on an open neighbourhood. The
-plain antisymmetric part $\mathrm{APA}=\mathbf{P}\times\mathbf{Q}$ satisfies the Jacobi identity, and it is
+plain antisymmetric part $\mathrm{APA}=\vec P\times\vec Q$ satisfies the Jacobi identity, and it is
 the restriction of the gauge bracket to the real quaternion subspace: on $\mathbb{H}_{\mathbb{B}}$, where
-$\overline{\mathbf{Q}}=\mathbf{Q}$, the two coincide. Consequently every cyclic sum on a triple of real
+$\overline{\vec Q}=\vec Q$, the two coincide. Consequently every cyclic sum on a triple of real
 basis elements vanishes (all $64$ triples checked), and the smallest witness needs the complex element
 $ie_2$; on the eight-element basis $\{e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3\}$ exactly $72$ of the $512$
 triples fail. The comparison of the three failing brackets is reproduced from *The 12 Products of the Biquaternion Complex Space*, and the computation from *The Conjugate Cross Product and the
@@ -270,10 +270,10 @@ The complex witness reads as a statement about where a failure can be seen: a br
 
 ## Summary
 
-The antisymmetric gauge product $\tilde P\diamond\tilde Q=\mathbf{P}\times\overline{\mathbf{Q}}$ **fails
+The antisymmetric gauge product $\tilde P\diamond\tilde Q=\vec P\times\overline{\vec Q}$ **fails
 the Jacobi identity**, at the witness $(e_1,e_1,ie_2)$ where the cyclic sum is $-2ie_2$. It is one of the
 **three failing brackets** of the twelve — $\mathrm{AQA}$, $\mathrm{APS}$, $\mathrm{AQS}$ — while the
-plain antisymmetric part $\mathrm{APA}=\mathbf{P}\times\mathbf{Q}$ **satisfies** the identity; the
+plain antisymmetric part $\mathrm{APA}=\vec P\times\vec Q$ **satisfies** the identity; the
 difference is the conjugation, and each failing bracket inserts one conjugation more than the plain one.
 The distinctive property of the $\mathrm{AQS}$ failure is that **it is invisible on the real forms**: on
 the real quaternion subspace the conjugate in the second slot is the identity, the gauge bracket
@@ -291,8 +291,8 @@ that is the interpretation the band closes with.
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\diamond\tilde Q=\mathbf{P}\times\overline{\mathbf{Q}}$ | the antisymmetric gauge product, $\mathrm{AQS}$ |
-| $\tilde P\wedge\tilde Q=\mathbf{P}\times\mathbf{Q}$ | the plain antisymmetric part, $\mathrm{APA}$ |
+| $\tilde P\diamond\tilde Q=\vec P\times\overline{\vec Q}$ | the antisymmetric gauge product, $\mathrm{AQS}$ |
+| $\tilde P\wedge\tilde Q=\vec P\times\vec Q$ | the plain antisymmetric part, $\mathrm{APA}$ |
 | $\mathrm{AQA}=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$ | the quaternionic antisymmetric part |
 | $\mathrm{APS}=\mathrm{Vect}(\tilde P\tilde Q^{*})$ | the plain sesquilinear antisymmetric part |
 | $(e_1,e_1,ie_2)$ | the witness of the Jacobi failure |

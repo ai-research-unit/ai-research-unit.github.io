@@ -122,9 +122,9 @@ The two-sided case runs along the centre.
 
 **Example.** Let $A = \mathbb{B} = \mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ with $R = \mathbb{C}$, $\varsigma$ the conjugation and $*$ the involution of *Introduction to the General Plain Sesqualgebra of Biquaternions*, which conjugates the coefficient and negates $e_1, e_2, e_3$ while fixing $e_0$. The algebra is simple by *Ideals and Peirce Decomposition of the General Plain Algebra*, and like the matrices it is not a division algebra. The idempotents
 $$
-\tilde\Pi_1 = \tfrac12(e_0 + i e_3), \qquad \tilde\Pi_2 = \tfrac12(e_0 - i e_3)
+\tilde\Pi_+ = \tfrac12(e_0 + i e_3), \qquad \tilde\Pi_- = \tfrac12(e_0 - i e_3)
 $$
-of that article are primitive and noncentral, and both are Hermitian for this involution, since $(i e_3)^{*} = e_3^{*} i^{*} = (-e_3)(-i) = i e_3$. They generate the minimal left ideals $\mathbb{B}\tilde\Pi_1$ and $\mathbb{B}\tilde\Pi_2$, whose two-sided ideal is all of $\mathbb{B}$ because the algebra is simple. The involution sends $\mathbb{B}\tilde\Pi_j$ to the conjugate image $\tilde\Pi_j\mathbb{B}$, which is a minimal right ideal and a different set: a minimal left ideal $Ae$ is stable only when the idempotent is both Hermitian and central, and $\tilde\Pi_j$ is not central. The centre is $\mathbb{C}$, so the algebra is central over $\mathbb{C}$ but not over $\mathbb{R}$.
+of that article are primitive and noncentral, and both are Hermitian for this involution, since $(i e_3)^{*} = e_3^{*} i^{*} = (-e_3)(-i) = i e_3$. Here $i e_3$ is a root of $+1$, $(i e_3)^2 = e_0$, and the two idempotents $\tilde\Pi_+$ and $\tilde\Pi_-$ are its associated idempotents. They generate the minimal left ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$, whose two-sided ideal is all of $\mathbb{B}$ because the algebra is simple. The involution sends $\mathbb{B}\tilde\Pi_\pm$ to the conjugate image $\tilde\Pi_\pm\mathbb{B}$, which is a minimal right ideal and a different set: a minimal left ideal $Ae$ is stable only when the idempotent is both Hermitian and central, and $\tilde\Pi_\pm$ is not central. The centre is $\mathbb{C}$, so the algebra is central over $\mathbb{C}$ but not over $\mathbb{R}$.
 
 ## Summary
 

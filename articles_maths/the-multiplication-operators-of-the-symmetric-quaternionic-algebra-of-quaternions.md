@@ -6,7 +6,7 @@ The multiplication operators of a product are the maps $\tilde q\mapsto\tilde p\
 
 **Boundaries.** The product is *Introduction to the Symmetric Quaternionic Algebra of Quaternions*; the form is *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*, above this article in this category; the definitions of the operator, the adjoint and the derivation are *Definitions for the Study of the 6 Algebraic Structures* and *The Two General Products of the Quaternion $\mathbb{R}$ Space*.
 
-**Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$; an element is $\tilde q=q_0e_0+\mathbf q$ with $\mathbf q=\sum_kq_ke_k$. The **quaternion conjugation** is $\tilde q^{\natural}=q_0e_0-\mathbf q$; the bar is the identity, the star coincides with the natural sign ${}^{\natural}$. The **quaternion form** is $N(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q$; the **symmetric quaternionic product** is $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$. The block is commutative, so the left and right multiplication operators coincide, and there is one family $L_{\tilde p}$, with
+**Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$; an element is $\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_kq_ke_k$. The **quaternion conjugation** is $\tilde q^{\natural}=q_0e_0-\vec q$; the bar is the identity, the star coincides with the natural sign ${}^{\natural}$. The **quaternion form** is $N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$; the **symmetric quaternionic product** is $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$. The block is commutative, so the left and right multiplication operators coincide, and there is one family $L_{\tilde p}$, with
 
 $$
 L_{\tilde p}(\tilde q)=\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0 .
@@ -76,9 +76,9 @@ an operator depending on $\tilde y$ through $y_0$ alone, with values in the line
 
 *Proof.* $N(L_{\tilde p}\tilde x,\tilde y)=N(N(\tilde p,\tilde x)e_0,\tilde y)=N(\tilde p,\tilde x)y_0$, and $N(\tilde x,y_0\tilde p)=y_0N(\tilde x,\tilde p)=y_0N(\tilde p,\tilde x)$, so the displayed operator satisfies the defining identity; it is unique because $N$ is non-degenerate.
 
-**Corollary (self-adjointness is centrality).** $L_{\tilde p}$ is self-adjoint, $L_{\tilde p}^{\dagger}=L_{\tilde p}$, if and only if $\tilde p$ is central, that is $\mathbf p=0$.
+**Corollary (self-adjointness is centrality).** $L_{\tilde p}$ is self-adjoint, $L_{\tilde p}^{\dagger}=L_{\tilde p}$, if and only if $\tilde p$ is central, that is $\vec p=0$.
 
-*Proof.* $L_{\tilde p}(\tilde y)=N(\tilde p,\tilde y)e_0$ is scalar valued, while $L_{\tilde p}^{\dagger}(\tilde y)=y_0\tilde p$ has vector part $y_0\mathbf p$; the two are equal for all $\tilde y$ exactly when $\mathbf p=0$. For central $\tilde p=p_0e_0$ both are $p_0y_0e_0$.
+*Proof.* $L_{\tilde p}(\tilde y)=N(\tilde p,\tilde y)e_0$ is scalar valued, while $L_{\tilde p}^{\dagger}(\tilde y)=y_0\tilde p$ has vector part $y_0\vec p$; the two are equal for all $\tilde y$ exactly when $\vec p=0$. For central $\tilde p=p_0e_0$ both are $p_0y_0e_0$.
 
 **Remark (the adjoint is not the multiplication).** The adjoint reads only the scalar coordinate $y_0$ of its argument and its value lies in the line of $\tilde p$; the multiplication reads the full pairing and its value lies on the scalar line. The two agree exactly at a central multiplier.
 

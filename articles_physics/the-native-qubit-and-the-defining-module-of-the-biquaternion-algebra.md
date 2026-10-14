@@ -89,7 +89,7 @@ $$
 \mathbb{B} = \mathbb{M}_+ \oplus \mathbb{M}_- .
 $$
 
-Both are four-dimensional over $\mathbb{R}$, and multiplication by the central $i$ exchanges them, $i\,\mathbb{M}_+ = \mathbb{M}_-$. Elements of the form $\tilde{H} = h_0e_0 + i\mathbf{h}$ with $h_0\in\mathbb{R}$ and $\mathbf{h}\in\mathbb{R}^3$ span $\mathbb{M}_+$; the corresponding matrices are $h_0I_2 + \mathbf{h}\cdot\boldsymbol{\sigma}$, the general Hermitian $2\times2$ matrix. This is the sense in which states and observables live in $\mathbb{M}_+$: $\mathbb{M}_+$ **is** the real vector space of Hermitian operators of the two-level system, carried by the algebra rather than postulated beside it.
+Both are four-dimensional over $\mathbb{R}$, and multiplication by the central $i$ exchanges them, $i\,\mathbb{M}_+ = \mathbb{M}_-$. Elements of the form $\tilde{H} = h_0e_0 + i\vec h$ with $h_0\in\mathbb{R}$ and $\vec h\in\mathbb{R}^3$ span $\mathbb{M}_+$; the corresponding matrices are $h_0I_2 + \vec h\cdot\boldsymbol{\sigma}$, the general Hermitian $2\times2$ matrix. This is the sense in which states and observables live in $\mathbb{M}_+$: $\mathbb{M}_+$ **is** the real vector space of Hermitian operators of the two-level system, carried by the algebra rather than postulated beside it.
 
 ## The Defining Module
 
@@ -154,10 +154,10 @@ the two antipodal idempotents of the direction $\hat{\mu}$. Each satisfies $\til
 A general state is a positive trace-one element of $\mathbb{M}_+$,
 
 $$
-\tilde{\rho} = \tfrac{1}{2}\bigl(e_0 + i\mathbf{r}\bigr), \qquad \mathbf{r}\in\mathbb{R}^3,
+\tilde{\rho} = \tfrac{1}{2}\bigl(e_0 + i\vec r\bigr), \qquad \vec r\in\mathbb{R}^3,
 $$
 
-positive exactly when $|\mathbf{r}|\leq1$. It is the operator on $S$ with matrix $\tfrac12(I_2 + \mathbf{r}\cdot\boldsymbol{\sigma})$. The **trace pairing** between a state and an observable $\tilde{H}\in\mathbb{M}_+$ is
+positive exactly when $|\vec r|\leq1$. It is the operator on $S$ with matrix $\tfrac12(I_2 + \vec r\cdot\boldsymbol{\sigma})$. The **trace pairing** between a state and an observable $\tilde{H}\in\mathbb{M}_+$ is
 
 $$
 \mathrm{Tr}(\tilde{\rho}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{\rho}\tilde{H}),
@@ -176,11 +176,11 @@ where $\hat{H}$ is the matrix image of $\tilde{H}$. This identity is the bridge 
 A general state $\tilde\rho$ is a convex combination of pure states,
 
 $$
-\tilde{\rho} = \lambda_+\,\tilde\Pi_1(\hat{\mathbf{r}}) + \lambda_-\,\tilde\Pi_2(\hat{\mathbf{r}}),
-\qquad \lambda_\pm = \tfrac{1}{2}\bigl(1\pm|\mathbf{r}|\bigr),
+\tilde{\rho} = \lambda_+\,\tilde\Pi_1(\hat r) + \lambda_-\,\tilde\Pi_2(\hat r),
+\qquad \lambda_\pm = \tfrac{1}{2}\bigl(1\pm|\vec r|\bigr),
 $$
 
-when $\mathbf{r}\neq0$, and is the maximally mixed state $\tfrac12 e_0$ when $\mathbf{r}=0$. This is the spectral decomposition on the module: the two eigenvectors are the rays of $\hat{\mathbf{r}}$ and $-\hat{\mathbf{r}}$. The correspondence is exactly the ordinary one between a density operator and its eigenvectors, expressed in the algebra. The Bloch ball is the image of the trace-one positive cone, and its boundary is the set of rank-one projectors; the companion article *The Bloch Ball as the Trace-One Slice of the Future Light Cone* develops that geometry from the biquaternion norm, and it is recalled below only as far as the module requires.
+when $\vec r\neq0$, and is the maximally mixed state $\tfrac12 e_0$ when $\vec r=0$. This is the spectral decomposition on the module: the two eigenvectors are the rays of $\hat r$ and $-\hat r$. The correspondence is exactly the ordinary one between a density operator and its eigenvectors, expressed in the algebra. The Bloch ball is the image of the trace-one positive cone, and its boundary is the set of rank-one projectors; the companion article *The Bloch Ball as the Trace-One Slice of the Future Light Cone* develops that geometry from the biquaternion norm, and it is recalled below only as far as the module requires.
 
 ## The Geometry of the Module
 
@@ -192,16 +192,16 @@ $$
 N(\tilde{Q}) = \tilde{Q}\,\tilde{Q}^{\natural} = \sum_{\mu=0}^{3} Q_\mu^2 .
 $$
 
-On $\mathbb{M}_+$, writing $\tilde{Q} = q_0e_0 + i\mathbf{q}$ with real $q_0,\mathbf{q}$, it evaluates to
+On $\mathbb{M}_+$, writing $\tilde{Q} = q_0e_0 + i\vec q$ with real $q_0,\vec q$, it evaluates to
 
 $$
-N(\tilde{Q}) = \bigl(q_0^2 - |\mathbf{q}|^2\bigr)e_0 ,
+N(\tilde{Q}) = \bigl(q_0^2 - |\vec q|^2\bigr)e_0 ,
 $$
 
 which is a real scalar. Positivity of the operator is the non-negativity of the biquaternion norm together with $q_0\geq0$: the biquaternion norm is the determinant of the matrix image, $N(\tilde{Q}) = \det M(\tilde{Q})\,e_0$, so it vanishes on the boundary of the positive cone as well as outside it, and only the sign of $q_0$ selects the future cone. For a state
 
 $$
-N(\tilde{\rho}) = \tfrac{1}{4}\bigl(1 - |\mathbf{r}|^2\bigr)e_0 .
+N(\tilde{\rho}) = \tfrac{1}{4}\bigl(1 - |\vec r|^2\bigr)e_0 .
 $$
 
 The biquaternion norm therefore measures the departure of a state from the boundary of the Bloch ball, and it vanishes precisely on the rank-one idempotents — the rays of the module. On the pure states the algebra's biquaternion norm has a nonzero kernel; that degenerate cone is the module's set of rays, and it is the geometric reason the rank-one idempotents are the zero divisors of $\mathbb{M}_+$.
@@ -220,7 +220,7 @@ $$
 p_k^{\pm} = \mathrm{Tr}\bigl(\tilde{\rho}\,\tilde\Pi_{1,2}(\hat{e}_k)\bigr) = \tfrac12\bigl(1 \pm r_k\bigr),
 $$
 
-the three pairs of outcome probabilities determine $\mathbf{r}$ and hence the state. This is the elementary tomographic completeness of the three coordinate measurements, and it is the module-level content of the mutually unbiased bases of a qubit. The module carries no further state parameters: it has complex dimension two, its rays are parametrized by two real angles, and its states by three real numbers.
+the three pairs of outcome probabilities determine $\vec r$ and hence the state. This is the elementary tomographic completeness of the three coordinate measurements, and it is the module-level content of the mutually unbiased bases of a qubit. The module carries no further state parameters: it has complex dimension two, its rays are parametrized by two real angles, and its states by three real numbers.
 
 ## What the Module Supplies and What It Does Not
 
@@ -255,7 +255,7 @@ the three pairs of outcome probabilities determine $\mathbf{r}$ and hence the st
 
 The elementary informational unit of the biquaternion framework is the defining module of the algebra. Because $\mathbb{B}\cong M_2(\mathbb{C})$ is a simple finite-dimensional complex algebra, it has a unique simple left module $S=\mathbb{C}^2$, the column space, and every irreducible representation is equivalent to the action on $S$. The qubit is therefore native to the algebra: it is what the algebra is a matrix algebra of, not a Hilbert space adjoined to it.
 
-On the module, the elements of $\mathbb{M}_+$ act as Hermitian operators; the rank-one idempotents $\tilde\Pi_{1,2}(\hat{\mu}) = \tfrac12(e_0\pm i\hat{\mu})$ correspond bijectively to the rays of $S$, and are exactly the pure states; the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is the Born rule and coincides with the module expectation value $\langle u|\hat{H}|u\rangle$. A general state $\tilde{\rho} = \tfrac12(e_0+i\mathbf{r})$ is a positive trace-one element with spectral decomposition into two rays, and the biquaternion norm $N(\tilde{\rho}) = \tfrac14(1-|\mathbf{r}|^2)e_0$ vanishes exactly on the rays, so that the pure states are the zero divisors of $\mathbb{M}_+$ and the Bloch ball is the trace-one slice of the positive cone. The left regular module is $\mathbb{B}\cong S\oplus S$, an algebraic doubling whose informational content is left open.
+On the module, the elements of $\mathbb{M}_+$ act as Hermitian operators; the rank-one idempotents $\tilde\Pi_{1,2}(\hat{\mu}) = \tfrac12(e_0\pm i\hat{\mu})$ correspond bijectively to the rays of $S$, and are exactly the pure states; the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is the Born rule and coincides with the module expectation value $\langle u|\hat{H}|u\rangle$. A general state $\tilde{\rho} = \tfrac12(e_0+i\vec r)$ is a positive trace-one element with spectral decomposition into two rays, and the biquaternion norm $N(\tilde{\rho}) = \tfrac14(1-|\vec r|^2)e_0$ vanishes exactly on the rays, so that the pure states are the zero divisors of $\mathbb{M}_+$ and the Bloch ball is the trace-one slice of the positive cone. The left regular module is $\mathbb{B}\cong S\oplus S$, an algebraic doubling whose informational content is left open.
 
 What the module does not supply is the composition rule for several qubits: the tensor product $\mathbb{B}\otimes\mathbb{B}$ and its four-dimensional module are an additional structure. That, and not the definition of the unit, is where the framework's informational assumptions become substantive.
 
@@ -274,10 +274,10 @@ What the module does not supply is the composition rule for several qubits: the 
 | $\tilde{Q}^{*}$ | Hermitian conjugate (anti-linear involution) |
 | $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
 | $\tilde\Pi_{1,2}(\hat{\mu}) = \tfrac12(e_0\pm i\hat{\mu})$ | Rank-one idempotents (pure states) |
-| $\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$ | State with Bloch vector $\mathbf{r}$, $|\mathbf{r}|\le1$ |
+| $\tilde{\rho} = \tfrac12(e_0 + i\vec r)$ | State with Bloch vector $\vec r$, $|\vec r|\le1$ |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = \langle u|\hat{H}|u\rangle$ | Trace pairing (Born rule) |
 | $r_k = \mathrm{Tr}(\tilde{\rho}\,ie_k)$ | Bloch components (tomography) |
-| $N(\tilde{\rho}) = \tfrac14(1-|\mathbf{r}|^2)e_0$ | Biquaternion norm of a state |
+| $N(\tilde{\rho}) = \tfrac14(1-|\vec r|^2)e_0$ | Biquaternion norm of a state |
 
 ## Further Reading
 

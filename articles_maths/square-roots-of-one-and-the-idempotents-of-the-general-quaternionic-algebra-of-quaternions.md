@@ -48,17 +48,17 @@ Idempotents in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space
 **Conventions.** $\mathbb{H}$ is the real quaternion algebra with basis $e_0=1,e_1,e_2,e_3$, the rules
 $e_k^2=-e_0$ and $e_1e_2=e_3$. Juxtaposition is the plain product and $\star$ the general quaternionic
 bilinear product $\tilde p\star\tilde q=\tilde p^{\natural}\tilde q$, with the conjugation
-$\tilde p^{\natural}=p_0-\mathbf p$ and $\tilde p=p_0e_0+\mathbf p$,
-$\mathbf p=p_1e_1+p_2e_2+p_3e_3$. The **algebraic norm** is
+$\tilde p^{\natural}=p_0-\vec p$ and $\tilde p=p_0e_0+\vec p$,
+$\vec p=p_1e_1+p_2e_2+p_3e_3$. The **algebraic norm** is
 
 $$
-N(\tilde p)=\tilde p^{\natural}\tilde p=p_0^2+\lvert\mathbf p\rvert^2=\sum_{\mu=0}^{3}p_\mu^2 ,
+N(\tilde p)=\tilde p^{\natural}\tilde p=p_0^2+\lvert\vec p\rvert^2=\sum_{\mu=0}^{3}p_\mu^2 ,
 $$
 
-positive definite, with polar form $\beta(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q$. A **central
+positive definite, with polar form $\beta(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$. A **central
 value** is an element $\lambda e_0$ with $\lambda\in\mathbb{R}$, and $\hat\mu$ denotes a real unit vector of
 $\mathbb{R}^3$. The centre is the scalar line $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$ and the vector subspace
-is $\mathrm{Vect}(\mathbb{H})=\{\mathbf p\}$; the two are supplementary and orthogonal for the norm. A root
+is $\mathrm{Vect}(\mathbb{H})=\{\vec p\}$; the two are supplementary and orthogonal for the norm. A root
 of a central value carries the lower-case xi $\tilde\xi$ of the quaternion layer, and an idempotent the
 lower-case pi $\tilde\pi$.
 
@@ -89,8 +89,8 @@ $\{\tilde\xi:N(\tilde\xi)=\lambda\}$.
 
 **Remark (no vector equation).** The reduction is a single real equation in the four coordinates, and it
 holds for every $\lambda$ at once. The plain product reduces the same problem to the pair
-$\xi_0^2-\lvert\boldsymbol\xi\rvert^2=\lambda$ and $2\xi_0\boldsymbol\xi=0$, whose second equation forces
-$\xi_0=0$ or $\boldsymbol\xi=0$ (*Square Roots of One and the Idempotents of the General Plain Algebra*); the
+$\xi_0^2-\lvert\vec\xi\rvert^2=\lambda$ and $2\xi_0\vec\xi=0$, whose second equation forces
+$\xi_0=0$ or $\vec\xi=0$ (*Square Roots of One and the Idempotents of the General Plain Algebra*); the
 quaternionic square is central for every element, so the second equation does not arise and the root set is
 the level set itself. The general value is *Square Roots of a General Element in the General Quaternionic
 Algebra*, and the value $0$ is *Square Roots of Zero and the Nilpotents of the General Quaternionic
@@ -98,7 +98,7 @@ Algebra*.
 
 ## The Roots of Plus One
 
-**The roots of $+1$ are exactly the solutions of $N(\tilde\xi)=\xi_0^2+\lvert\boldsymbol\xi\rvert^2=1$, the
+**The roots of $+1$ are exactly the solutions of $N(\tilde\xi)=\xi_0^2+\lvert\vec\xi\rvert^2=1$, the
 unit sphere $\mathrm{Sp}(1)$ of the quaternion algebra, of real dimension three, containing the central pair
 $\pm e_0$ and the pure unit vectors $\hat\mu$.**
 
@@ -107,7 +107,7 @@ $\pm e_0$ and the pure unit vectors $\hat\mu$.**
 **Theorem.** The roots of $+1$ in the general quaternionic product are the solutions of
 
 $$
-N(\tilde\xi)=\xi_0^2+\lvert\boldsymbol\xi\rvert^2=1 ,
+N(\tilde\xi)=\xi_0^2+\lvert\vec\xi\rvert^2=1 ,
 $$
 
 the unit sphere $\mathrm{Sp}(1)$ of real dimension three. It contains the two central roots $\pm e_0$ and the
@@ -116,7 +116,7 @@ pure unit vectors $\hat\mu$.
 **Proof.** The criterion is the reduction. The norm is positive definite and nondegenerate, and its level set
 at the value $1$ is a nondegenerate quadric in the four real coordinates, of real dimension $4-1=3$. The
 elements $\pm e_0$ have $N=1$; a pure unit vector $\hat\mu$ has $\xi_0=0$ and
-$\lvert\boldsymbol\xi\rvert^2=1$, and satisfies the equation.
+$\lvert\vec\xi\rvert^2=1$, and satisfies the equation.
 
 **Corollary (the count).** The root set of $+1$ is never a finite set; its cardinality is that of the
 continuum, and the article states the count by dimension rather than by cardinality, as the corpus does.
@@ -128,7 +128,7 @@ whole of the difference.
 
 | value $\lambda$ | quaternionic $\tilde\xi\star\tilde\xi$ | plain $\tilde\xi^2$ |
 |---|---|---|
-| $-1$ | no root | the pure elements with $\lvert\boldsymbol\xi\rvert=1$, of real dimension two |
+| $-1$ | no root | the pure elements with $\lvert\vec\xi\rvert=1$, of real dimension two |
 | $+1$ | the norm-one level set $\mathrm{Sp}(1)$, of real dimension three | $\{\pm e_0\}$ alone |
 
 **Proposition.** The two root sets of $-1$ are as different as they can be: the plain equation has a
@@ -136,11 +136,11 @@ two-dimensional family of roots, the pure elements of norm one, and the quaterni
 two root sets of $+1$ are exchanged in the same way: the plain equation has two roots, $\pm e_0$, and the
 quaternionic equation has the whole three-dimensional unit sphere.
 
-**Proof.** The plain square is $(\xi_0^2-\lvert\boldsymbol\xi\rvert^2)e_0+2\xi_0\boldsymbol\xi$; the equation
-$\tilde\xi^2=\lambda e_0$ is the pair $\xi_0^2-\lvert\boldsymbol\xi\rvert^2=\lambda$,
-$2\xi_0\boldsymbol\xi=0$. For $\lambda=-1$ the second equation forces a pure root, and then
-$-\lvert\boldsymbol\xi\rvert^2=-1$ gives $\lvert\boldsymbol\xi\rvert=1$; for $\lambda=+1$ it forces
-$\xi_0=0$, which gives $-\lvert\boldsymbol\xi\rvert^2=1$, impossible, or $\boldsymbol\xi=0$, which gives
+**Proof.** The plain square is $(\xi_0^2-\lvert\vec\xi\rvert^2)e_0+2\xi_0\vec\xi$; the equation
+$\tilde\xi^2=\lambda e_0$ is the pair $\xi_0^2-\lvert\vec\xi\rvert^2=\lambda$,
+$2\xi_0\vec\xi=0$. For $\lambda=-1$ the second equation forces a pure root, and then
+$-\lvert\vec\xi\rvert^2=-1$ gives $\lvert\vec\xi\rvert=1$; for $\lambda=+1$ it forces
+$\xi_0=0$, which gives $-\lvert\vec\xi\rvert^2=1$, impossible, or $\vec\xi=0$, which gives
 $\xi_0=\pm1$. The quaternionic column is §*Statement and Dimension* and the emptiness at $-1$; the plain
 column is *Square Roots of One and the Idempotents of the General Plain Algebra*.
 
@@ -181,12 +181,12 @@ $$
 N(\tilde p)=p_0^2+p_1^2+p_2^2+p_3^2 .
 $$
 
-**Proof.** With $\tilde p=p_0e_0+\mathbf p$ the product has scalar part $p_0^2+\mathbf p\cdot\mathbf p$ and
-vector part $p_0\mathbf p-p_0\mathbf p-\mathbf p\times\mathbf p=0$ at equal arguments; the square is
+**Proof.** With $\tilde p=p_0e_0+\vec p$ the product has scalar part $p_0^2+\vec p\cdot\vec p$ and
+vector part $p_0\vec p-p_0\vec p-\vec p\times\vec p=0$ at equal arguments; the square is
 $N(\tilde p)e_0$ (*Introduction to the General Quaternionic Algebra of Quaternions*).
 
 The lemma is the reason the idempotent equation is trivial here and nontrivial for the plain product. The
-plain square of the same element is $p_0^2e_0+2p_0\mathbf p+\mathbf p^2$, whose vector part is not obliged
+plain square of the same element is $p_0^2e_0+2p_0\vec p+\vec p^2$, whose vector part is not obliged
 to vanish; the quaternionic square carries no vector part at all, and the equation is a quadratic in one real
 variable.
 
@@ -201,8 +201,8 @@ element the equation reads $A^2e_0=Ae_0$, that is $A^2=A$, or $A(A-1)=0$; the fi
 $A\in\{0,1\}$. Both values satisfy the equation.
 
 **Remark (the equation is weaker than centrality).** The single scalar equation $N(\tilde\pi)=\pi_0$ is not
-idempotence; it must be read with centrality attached. Every pure element $\mathbf p\neq0$ has
-$N(\mathbf p)=\lvert\mathbf p\rvert^2\neq0$ and is not central, so it fails the equation and is not an
+idempotence; it must be read with centrality attached. Every pure element $\vec p\neq0$ has
+$N(\vec p)=\lvert\vec p\rvert^2\neq0$ and is not central, so it fails the equation and is not an
 idempotent; and the central element $-e_0$, of norm $1$, satisfies $N=1\neq\pi_0=-1$ and is not idempotent
 either. The scalar equation alone does not decide idempotence.
 
@@ -228,10 +228,10 @@ $\tilde\xi^2=4\tilde\pi-4\tilde\pi+e_0=e_0$. The two maps are inverse to each ot
 $\tilde\pi=\tfrac12(e_0+\tilde\xi)$. Then
 
 $$
-\tilde\pi\star\tilde\pi-\tilde\pi=\tfrac14\bigl(\tilde\xi^{\natural}-\tilde\xi\bigr)=-\tfrac12\boldsymbol\xi ,
+\tilde\pi\star\tilde\pi-\tilde\pi=\tfrac14\bigl(\tilde\xi^{\natural}-\tilde\xi\bigr)=-\tfrac12\vec\xi ,
 $$
 
-so $\tilde\pi$ is an idempotent of $\star$ exactly when $\boldsymbol\xi=0$, that is exactly for
+so $\tilde\pi$ is an idempotent of $\star$ exactly when $\vec\xi=0$, that is exactly for
 $\tilde\xi=\pm e_0$.
 
 **Proof.** The product is $\mathbb{R}$-bilinear, so
@@ -243,7 +243,7 @@ $$
 $$
 
 and $N(\tilde\xi)=1$; dividing by four and subtracting $\tilde\pi=\tfrac12(e_0+\tilde\xi)$ leaves
-$\tfrac14(\tilde\xi^{\natural}-\tilde\xi)$. Since $\tilde\xi^{\natural}-\tilde\xi=-2\boldsymbol\xi$, the
+$\tfrac14(\tilde\xi^{\natural}-\tilde\xi)$. Since $\tilde\xi^{\natural}-\tilde\xi=-2\vec\xi$, the
 difference vanishes exactly when the vector part of $\tilde\xi$ does, and the roots of $+1$ with vanishing
 vector part are $\pm e_0$.
 
@@ -303,12 +303,12 @@ $e_0$; on the vector subspace the only idempotent is $0$.
 | subspace | element | $\tilde\pi\star\tilde\pi$ | idempotents |
 |---|---|---|---|
 | $\mathbb{R}_{\mathbb{H}}$, the centre | $Ae_0$ | $A^2e_0$ | $0$, $e_0$ |
-| $\mathrm{Vect}(\mathbb{H})$, the vector subspace | $\mathbf p$ | $\lvert\mathbf p\rvert^2e_0$ | $0$ |
+| $\mathrm{Vect}(\mathbb{H})$, the vector subspace | $\vec p$ | $\lvert\vec p\rvert^2e_0$ | $0$ |
 
 **Proof.** Each entry is the algebraic norm on the subspace of the same row, by the lemma. In the centre the
 equation leaves $A^2=A$, hence $A\in\{0,1\}$. In the vector subspace a central element equals a vector only
-at $0$; a nonzero pure element has square $\lvert\mathbf p\rvert^2e_0$, a nonzero central element, which
-differs from the pure $\mathbf p$, so the origin alone is idempotent.
+at $0$; a nonzero pure element has square $\lvert\vec p\rvert^2e_0$, a nonzero central element, which
+differs from the pure $\vec p$, so the origin alone is idempotent.
 
 **Remark.** The centre carries the two trivial idempotents and the vector subspace only $0$; neither
 remarkable subspace carries a nontrivial idempotent. Over $\mathbb{R}$ the quaternion algebra has exactly

@@ -41,8 +41,8 @@ the natural conjugation ${}^{\natural}$, the coefficient conjugation $\bar{\cdot
 conjugation ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, with $\tilde Q^{\flat}=-\tilde Q^{*}$. The biquaternion
 norm is $N(\tilde Q)=\langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^{2}$,
 whose vanishing locus is the cone; the subspaces are the anti-Hermitian material sector $\mathbb{M}_-$ and
-the Hermitian informational sector $\mathbb{M}_+$; the material coordinate is $\tilde Q=ict\,e_0+\mathbf x$,
-so that $N(\tilde Q)=-c^{2}t^{2}+\mathbf x^{2}$, and $c=1/\sqrt{\epsilon\mu}$. An element is **pure** when
+the Hermitian informational sector $\mathbb{M}_+$; the material coordinate is $\tilde Q=ict\,e_0+\vec x$,
+so that $N(\tilde Q)=-c^{2}t^{2}+\vec x^{2}$, and $c=1/\sqrt{\epsilon\mu}$. An element is **pure** when
 its scalar part vanishes, $Q_0=0$, and **non-pure** when $Q_0\neq0$. The plain product is written
 $\tilde P\tilde Q$ and the plain sesquilinear product $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$; the
 trace is $\mathrm{Tr}=2\,\mathrm{Sc}$. The twelve structures are those of *The 12 Products of the
@@ -91,10 +91,10 @@ $$
 $$
 
 a complex cone of complex dimension three with the apex removed, of real dimension six. On the material
-sector it is the light cone $|\mathbf x|=c|t|$. The scalar part cuts it into two families, and the physics
+sector it is the light cone $|\vec x|=c|t|$. The scalar part cuts it into two families, and the physics
 of the two is different.
 
-- The **pure** family, $Q_0=0$ and $(\mathbf Q,\mathbf Q)=0$. The square of a pure zero divisor vanishes,
+- The **pure** family, $Q_0=0$ and $(\vec Q,\vec Q)=0$. The square of a pure zero divisor vanishes,
   $\tilde Q^{2}=-(Q_1^{2}+Q_2^{2}+Q_3^{2})e_0=0$: these are the nilpotents, the lightlike displacements. A
   pure lightlike displacement is the translation part of a null direction, and its square being zero is
   the algebra's form of the statement that two successive displacements along a null direction add and
@@ -180,7 +180,7 @@ The invertible elements are again the elements off the cone, with $e_0$ a two-si
 
 ### $\mathrm{APA}$, the antisymmetric plain algebra — rotation
 
-The product is the commutator $\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf P\times\mathbf Q$, an
+The product is the commutator $\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\vec P\times\vec Q$, an
 alternating product, so every nonzero element is annihilated by itself and the zero-divisor set is the
 whole punctured space $\mathbb{B}\setminus\{0\}$. A bracket is not a composition: no element of it has an
 inverse. Physically the antisymmetric plain product is the Lie bracket of rotations, and the statement is
@@ -279,7 +279,7 @@ There is no unit, both symmetrised terms conjugating a factor, so the complement
 
 ### $\mathrm{AQS}$, the antisymmetric quaternionic sesqualgebra — polarisation
 
-The product is the antisymmetrisation $\tfrac12(\tilde P^{\natural}\tilde Q^{*}-\overline{\tilde Q^{\natural}\tilde P^{*}})=\mathbf P\times\overline{\mathbf Q}$,
+The product is the antisymmetrisation $\tfrac12(\tilde P^{\natural}\tilde Q^{*}-\overline{\tilde Q^{\natural}\tilde P^{*}})=\vec P\times\overline{\vec Q}$,
 the conjugate cross product, and its zero-divisor set is the whole punctured space. The band reads the
 polarisation of the gauge coupling, and a conjugate bracket is not a composition. The reading is *The
 Cross Product of a Vector with Its Conjugate: the Antisymmetric Gauge Product* and *The Operators of the
@@ -365,7 +365,7 @@ says so.
 | $\mathrm{SPA}$ and $\mathrm{SQS}$ have the enlarged set $(\{Q_0=0\}\cup\mathcal{C})\setminus\{0\}$ | mathematics companion; witness $e_1\bullet e_2=0$ with $N(e_1)=1$ recomputed | verified |
 | the six derived structures have the whole punctured space | mathematics companion; random annihilators found for $\mathrm{SQA}$ and $\mathrm{SPS}$, alternating squares vanish | verified |
 | the cone is contained in all twelve sets and equals four | mathematics companion, theorem | cited |
-| the material cone is the light cone $|\mathbf x|=c|t|$ | *The Light Cone as the Biquaternion Zero-Divisor Cone* | cited |
+| the material cone is the light cone $|\vec x|=c|t|$ | *The Light Cone as the Biquaternion Zero-Divisor Cone* | cited |
 | the rank drop of the sesquilinear square is the mass label | *Mass, Rank and the Positivity of the Dagger* | cited |
 | the cone is the information barrier, the home of the erasure's target and the rank-one mass boundary | *Causality and the Light Cone as an Information Barrier in Biquaternionic Form*; *Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form*; *Mass, Rank and the Positivity of the Dagger* | interpretation |
 | the complement of the cone is the invertible region; a spacelike element is a unit | *The Group of Units of the General Plain Algebra and the Complement of the Zero-Divisor Cone*; *Subluminal and Superluminal Electromagnetic Waves and the Lepton Mass Spectrum*; recomputed that a random spacelike element has $N>0$ and an inverse | verified |
@@ -694,7 +694,7 @@ edge of the state space, the critical set of the square and the complement of th
 - pure means $Q_0=0$; non-pure means $Q_0\neq0$; a nilpotent is a nonzero element with $\tilde\Upsilon^{2}=0$; an idempotent satisfies $\tilde\Pi^{2}=\tilde\Pi$.
 - The twelve structures: GPA, GQA, GPS, GQS the four general products; SPA, SQA, SPS, SQS the symmetric parts; APA, AQA, APS, AQS the antisymmetric parts.
 - $\mathbb{M}_\pm$ the anti-Hermitian and Hermitian sectors; $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace; $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ the centre.
-- $c=1/\sqrt{\epsilon\mu}$ the speed of light in the medium; $\tilde Q=ict\,e_0+\mathbf x$ the material coordinate.
+- $c=1/\sqrt{\epsilon\mu}$ the speed of light in the medium; $\tilde Q=ict\,e_0+\vec x$ the material coordinate.
 
 ## Further Reading
 
@@ -704,7 +704,7 @@ edge of the state space, the critical set of the square and the complement of th
 - The obstruction that is topological rather than algebraic: *The Magnetic Monopole in Biquaternionic Form*, for the patchwise potential and the Dirac string, the winding as the magnetic charge, the sector split of the electric and magnetic fields, and the quantisation condition that imports $\hbar$.
 - The cone as a geometric boundary: *Velocity Space as Hyperbolic Geometry in Biquaternionic Form*, for the light cone as the ideal boundary of hyperbolic velocity space and the ideal points as the non-invertible lightlike elements.
 - The comparison of the four general products: *Composition and Probability: the General Plain Algebra and the General Plain Sesqualgebra of Biquaternions Compared*; *The Cone and the Massless Particles in the 12 Structures of Biquaternions over $\mathbb{C}$*.
-- The two families: *Square Roots: the Local Complex Structure, the Light Cone and the Mass Shell*; *Idempotents in the 12 Structures of Biquaternions over $\mathbb{C}$*; *Nilpotents in the 12 Structures of Biquaternions over $\mathbb{C}$*; *The Biquaternion Vacuum as a Minimal Idempotent*; *Decoherence as Idempotent Projection*.
+- The two families: *Square Roots of One and the Idempotents: the Hermitian Observables and the States*; *Square Roots of Zero and the Nilpotents: the Light Cone*; *Idempotents in the 12 Structures of Biquaternions over $\mathbb{C}$*; *Nilpotents in the 12 Structures of Biquaternions over $\mathbb{C}$*; *The Biquaternion Vacuum as a Minimal Idempotent*; *Decoherence as Idempotent Projection*.
 - The state and the rank drop: *Mass, Rank and the Positivity of the Dagger*; *The States the Indefinite Metric Cannot Normalise*; *The Bloch Ball as the Trace-One Slice of the Future Light Cone*.
 - The metric on the cone: *The Fubini–Study Geometry and the Biquaternion Norm*, for the Fubini–Study metric as the second variation of the biquaternion norm on the null boundary, and the limit that the interior metric is the Bures metric, which the algebra does not supply.
 - The information and thermodynamics of the cone: *Causality and the Light Cone as an Information Barrier in Biquaternionic Form*; *Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form*; *Quantum Channels and the Reversible/Irreversible Dichotomy*; *Decoherence as Idempotent Projection*.

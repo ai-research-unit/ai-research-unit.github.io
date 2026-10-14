@@ -81,7 +81,7 @@ so that the **momentum operator is a root of $-1$ times a real frequency**. In o
 The material coordinate of the series is
 
 $$
-\tilde Q=ict\,e_0+\mathbf x ,
+\tilde Q=ict\,e_0+\vec x ,
 $$
 
 an element of the material sector $\mathbb{M}_-$ whose scalar coefficient is imaginary and whose vector part is real: the material time is imaginary and the material space is real, and the placement of the $i$ is the sector's. The conjugate variable of that coordinate enters through the root and not through a real number. On the informational hypothesis of *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* the interpretation sharpens, because the imaginary directions are not extra spatial directions: the sector's own coordinates show the placement, the informational time being real while the informational space is imaginary, and the transform adds the complementary fact that **the imaginary directions are the conjugate directions**. Read this way, an imaginary axis is a conjugate axis and not a direction of propagation: it is the axis the root selects, along which the frequency and the wavevector are paired, and not a further direction in which anything travels.
@@ -98,7 +98,7 @@ $$
 
 The symbol is the interval read in the conjugate variables. It vanishes on the light cone, so that the transform of a solution of $\Box\tilde F=0$ is supported on the cone. The level sets of the symbol and of the interval are the same sets — the two differ by a constant factor and by the overall sign the convention carries — so the mass-shell condition $N(\tilde P)=-m^{2}c^{2}$ is the statement that the symbol takes a fixed value, and the **mass labels the level set**: the zero set of the symbol is the massless shell and its level sets are the massive shells.
 
-This is the spectral form of two interpretations the corpus already carries. *The Interval as the Square and the Charge of the Material Composition* reads the interval as the square of a material composition and its mass shell as the level set $\{N=-m^{2}c^{2}\}$, and *Square Roots: the Local Complex Structure, the Light Cone and the Mass Shell* reads the mass shell as the fibre of the natural square over the scalar $-m^{2}c^{2}$. The transform adds the conjugate-variable form of the same statement: in the frequency variables the interval acts as a **multiplier** and not as a form, the transform is the basis in which it is diagonal, and the mass is the value it reads there. The support of a massless field on the cone and the level set of a massive one are the two ends of the same sentence.
+This is the spectral form of two interpretations the corpus already carries. *The Interval as the Square and the Charge of the Material Composition* reads the interval as the square of a material composition and its mass shell as the level set $\{N=-m^{2}c^{2}\}$, and *Square Roots of a General Element: the Mass Shell* reads the mass shell as the fibre of the natural square over the scalar $-m^{2}c^{2}$. The transform adds the conjugate-variable form of the same statement: in the frequency variables the interval acts as a **multiplier** and not as a form, the transform is the basis in which it is diagonal, and the mass is the value it reads there. The support of a massless field on the cone and the level set of a massive one are the two ends of the same sentence.
 
 ## The Choice of Root: Which Clock the Analysis Uses
 
@@ -160,7 +160,7 @@ which vanishes on the light cone, so that the interval acts as a multiplier, the
 | $W(t,\omega)=\exp(-2\pi\rho\,\omega t)$ | The Fourier kernel; $=\cos(2\pi\omega t)e_0-\sin(2\pi\omega t)\rho$ |
 | $W(t,\omega)^{-1}$ | The inverse; $=\cos(2\pi\omega t)e_0+\sin(2\pi\omega t)\rho$, for every root |
 | $N(\tilde Q)$ | The biquaternion norm; $N(W)=e_0$ for a pure root |
-| $\tilde Q=ict\,e_0+\mathbf x$ | The material coordinate in $\mathbb{M}_-$ |
+| $\tilde Q=ict\,e_0+\vec x$ | The material coordinate in $\mathbb{M}_-$ |
 | $\partial_\mu\mapsto 2\pi\rho\,\omega_\mu$ | The diagonalisation of the derivative; the momentum operator |
 | $\tilde{\nabla}$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | The biquaternionic gradient and the d'Alembertian |
 | $-4\pi^{2}(\omega_0^{2}-\omega_1^{2}-\omega_2^{2}-\omega_3^{2})$ | The symbol of $\Box$; the interval in the conjugate variables |
@@ -172,6 +172,6 @@ which vanishes on the light cone, so that the interval acts as a multiplier, the
 - *Conventions in the Biquaternion Universe* — the central imaginary as one generator on the remarkable subspaces; the phase, the duality rotation, the Wick rotation and the exchange of the two sectors as its restrictions.
 - *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — the informational interpretation of the imaginary vector part and the positive form that repairs the positivity.
 - *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector* — the material coordinate and the interval.
-- *The Interval as the Square and the Charge of the Material Composition* and *Square Roots: the Local Complex Structure, the Light Cone and the Mass Shell* — the interval as a square, the mass shell as a level set and as a fibre of the natural square.
+- *The Interval as the Square and the Charge of the Material Composition* and *Square Roots of a General Element: the Mass Shell* — the interval as a square, the mass shell as a level set and as a fibre of the natural square.
 - *The Parabolic Dirac Operator and the Fourier Reformulation of Maxwell's Equations* — the use of the transform on the differential operators in the electromagnetism category, which owns the PDE applications.
 - *Conventions in the Biquaternion Universe* — the conventions of the series.

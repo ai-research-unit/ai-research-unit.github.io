@@ -22,7 +22,7 @@ The catalogue is not a list of defects of the framework. It is the map of the bo
 
 Each item below is given in the form **statement — proof — consequence — remedy**, and each is verified either by explicit computation or by a standard theorem cited as standard.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$, and central $i$, $i^2=-1$. Conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}={}^{\natural}\circ\bar{\cdot}$ (Hermitian), with $\flat=-{}^{*}$. The subspaces are $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_0,ie_1,ie_2,ie_3\}$ and $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, $\mathrm{Tr}(e_0)=2$; the biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$; the Hermitian form is $\langle\tilde{Q},\tilde{Y}\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Y})$. The matrix model is the $\mathbb{C}$-linear representation $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$, with $\mathsf{M}_2(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. States are $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ with $|\mathbf{r}|\leq1$; pure states are $\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$; the state module is the minimal left ideal $\mathbb{B}\tilde\Pi_1$ with $\tilde\Pi_1=\tfrac12(e_0+ie_3)$.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=\epsilon_{jkl}e_l$ for $j\neq k$, and central $i$, $i^2=-1$. Conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), ${}^{*}={}^{\natural}\circ\bar{\cdot}$ (Hermitian), with $\flat=-{}^{*}$. The subspaces are $\mathbb{M}_+=\mathrm{span}_\mathbb{R}\{e_0,ie_1,ie_2,ie_3\}$ and $\mathbb{M}_-=\mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$. The trace is $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$, $\mathrm{Tr}(e_0)=2$; the biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}$; the Hermitian form is $\langle\tilde{Q},\tilde{Y}\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Y})$. The matrix model is the $\mathbb{C}$-linear representation $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$, with $\mathsf{M}_2(\mathbb{B})=M_2(\mathbb{C})$ and $\det M(\tilde{Q})=N(\tilde{Q})$. States are $\tilde{\rho}=\tfrac12(e_0+i\vec r)$ with $|\vec r|\leq1$; pure states are $\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$; the state module is the minimal left ideal $\mathbb{B}\tilde\Pi_+$ with $\tilde\Pi_+=\tfrac12(e_0+ie_3)$. Here $ie_3$ is a root of $+1$, $(ie_3)^2=e_0$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
 
 ## How an Obstruction Is Certified
 
@@ -88,7 +88,7 @@ so the solutions are exactly $0$ and $e_0$. The corresponding two-sided ideals $
 
 **Statement.** Neither the biquaternion norm nor its negative is positive definite on the Hermitian subspace $\mathbb{M}_+$, and on the full algebra the form is complex-valued, so definiteness is not defined there at all. The biquaternion norm is therefore not a norm and cannot be used to define probabilities.
 
-**Proof.** On $\mathbb{M}_+$ the biquaternion norm is $N(h_0e_0+i\mathbf{h})=(h_0^2-|\mathbf{h}|^2)e_0$, of signature $(1,3)$; on the algebra it is $N(\tilde{Q})=(x_0^2+x_1^2+x_2^2+x_3^2)e_0$, which is complex-valued for complex coefficients. The form is already indefinite on the Hermitian subspace: the Hermitian element $\tilde{H}=e_0+ie_1$ has $N(\tilde{H}) = \langle\tilde{H},\tilde{H}\rangle_{\natural}=(1-1)e_0=0$ while $\tilde{H}\neq0$, and $\tilde{H}=ie_1$ has $N(ie_1)=-e_0$, so neither sign is definite there.
+**Proof.** On $\mathbb{M}_+$ the biquaternion norm is $N(h_0e_0+i\vec h)=(h_0^2-|\vec h|^2)e_0$, of signature $(1,3)$; on the algebra it is $N(\tilde{Q})=(x_0^2+x_1^2+x_2^2+x_3^2)e_0$, which is complex-valued for complex coefficients. The form is already indefinite on the Hermitian subspace: the Hermitian element $\tilde{H}=e_0+ie_1$ has $N(\tilde{H}) = \langle\tilde{H},\tilde{H}\rangle_{\natural}=(1-1)e_0=0$ while $\tilde{H}\neq0$, and $\tilde{H}=ie_1$ has $N(ie_1)=-e_0$, so neither sign is definite there.
 
 **Consequence.** The biquaternion norm cannot certify that an element is non-zero, cannot define a topology, and cannot supply the positive quantity that Born probabilities require. Its physical role is the determinant — the Minkowski form on the Hermitian sector and the null cone of the pure states — not a metre.
 
@@ -120,9 +120,9 @@ for every $\hat{\mu}$ while $\tilde\Pi(\hat{\mu})\neq0$; indeed the defining pro
 
 ### O8. The biquaternion norm gives a flat interior, not the Bures metric
 
-**Statement.** The quadratic form of the algebra cannot generate the statistically distinguished metric of the mixed states. It supplies the flat Euclidean form $\tfrac14|d\mathbf{r}|^2$ on the whole ball, whereas the distinguished metric is the Bures metric.
+**Statement.** The quadratic form of the algebra cannot generate the statistically distinguished metric of the mixed states. It supplies the flat Euclidean form $\tfrac14|d\vec r|^2$ on the whole ball, whereas the distinguished metric is the Bures metric.
 
-**Proof.** For a state $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ and any displacement $\delta\tilde{\rho}=\tfrac12 i\,\delta\mathbf{r}$, the biquaternion norm is $-N(\delta\tilde{\rho})=\tfrac14|\delta\mathbf{r}|^2$, with no dependence on the radial direction; the quadratic form is the same at every point of the ball. The Bures metric is $\tfrac14\bigl(|d\mathbf{r}|^2+(\mathbf{r}\cdot d\mathbf{r})^2/(1-r^2)\bigr)$, which agrees with the flat form only at the centre $r=0$ and on tangential displacements at the boundary $r=1$. The two differ in the interior, and the difference is precisely the radial distinguishability term.
+**Proof.** For a state $\tilde{\rho}=\tfrac12(e_0+i\vec r)$ and any displacement $\delta\tilde{\rho}=\tfrac12 i\,\delta\vec r$, the biquaternion norm is $-N(\delta\tilde{\rho})=\tfrac14|\delta\vec r|^2$, with no dependence on the radial direction; the quadratic form is the same at every point of the ball. The Bures metric is $\tfrac14\bigl(|d\vec r|^2+(\vec r\cdot d\vec r)^2/(1-r^2)\bigr)$, which agrees with the flat form only at the centre $r=0$ and on tangential displacements at the boundary $r=1$. The two differ in the interior, and the difference is precisely the radial distinguishability term.
 
 **Consequence.** The algebra's form fixes the geometry of the pure states and the geometry at the maximally mixed state, and nothing in between. Claims about the metrical structure of mixed states require an import from quantum information theory.
 
@@ -160,7 +160,7 @@ $$
 $$
 for every unit $\hat{\mu}$, with both factors non-zero. In the matrix model this is the statement that rank-one matrices of orthogonal ranges multiply to zero; an element is invertible exactly when $\det M(\tilde{Q})=N(\tilde{Q})\neq0$, and the zero divisors are the elements of vanishing norm.
 
-**Consequence.** The *pure* states are precisely the singular states: a pure state $\tilde{P}$ is idempotent with $N(\tilde{P})=0$, hence a zero divisor, while a mixed state $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ with $|\mathbf{r}|<1$ has $N(\tilde{\rho})=\tfrac14(1-r^2)e_0\neq0$ and is invertible. The multiplicative group of the algebra, $\mathbb{B}^\times=\{N\neq0\}$, therefore contains every mixed state and excludes every pure one, and statements requiring invertibility of a pure state are meaningless in this framework.
+**Consequence.** The *pure* states are precisely the singular states: a pure state $\tilde{P}$ is idempotent with $N(\tilde{P})=0$, hence a zero divisor, while a mixed state $\tilde{\rho}=\tfrac12(e_0+i\vec r)$ with $|\vec r|<1$ has $N(\tilde{\rho})=\tfrac14(1-r^2)e_0\neq0$ and is invertible. The multiplicative group of the algebra, $\mathbb{B}^\times=\{N\neq0\}$, therefore contains every mixed state and excludes every pure one, and statements requiring invertibility of a pure state are meaningless in this framework.
 
 **Remedy.** None is needed; the structure is that of a matrix algebra, and the relevant group for transformations is $\mathbb{B}^\times$, acting on the module. The point of recording the obstruction is that "the quaternions are a division algebra" does not survive complexification, and the biquaternion algebra must not be used as if it did.
 
@@ -245,19 +245,19 @@ $$
 
 Since the two subspaces intersect only at zero, no non-zero Hermitian element is $i$ times a Hermitian element.
 
-**Consequence.** The framework's Hilbert space is the **module** $\mathbb{B}\tilde\Pi_1\cong\mathbb{C}^2$, on which $i$ acts as the complex structure and the inner product is the Hermitian form; the observable space $\mathbb{M}_+$ is a real vector space and must be handled as such. Treating $\mathbb{M}_+$ as a complex Hilbert space is the characteristic error this catalogue is concerned to exclude.
+**Consequence.** The framework's Hilbert space is the **module** $\mathbb{B}\tilde\Pi_+\cong\mathbb{C}^2$, on which $i$ acts as the complex structure and the inner product is the Hermitian form; the observable space $\mathbb{M}_+$ is a real vector space and must be handled as such. Treating $\mathbb{M}_+$ as a complex Hilbert space is the characteristic error this catalogue is concerned to exclude.
 
 **Remedy.** Put the complex structure on the module and keep the real structure on the observables; the two are related by the map $\psi\mapsto\psi\psi^\dagger$ that sends rays to Hermitian rank-one elements.
 
 ### O17. The state module is not canonical
 
-**Statement.** There is no distinguished minimal left ideal of $\mathbb{B}$; the module $\mathbb{B}\tilde\Pi_1$ depends on the idempotent $\tilde\Pi_1$, and different choices give isomorphic but distinct submodules.
+**Statement.** There is no distinguished minimal left ideal of $\mathbb{B}$; the module $\mathbb{B}\tilde\Pi_+$ depends on the idempotent $\tilde\Pi_+$, and different choices give isomorphic but distinct submodules.
 
-**Proof.** The minimal left ideals of $M_2(\mathbb{C})$ are the column spaces of rank-one projections; they are all isomorphic as modules, and the unitary group acts transitively on the rank-one projections, so no one of them is singled out by the algebra. Concretely, $\tilde\Pi_1=\tfrac12(e_0+ie_3)$ and $\tilde\Pi_3=\tfrac12(e_0+ie_1)$ generate distinct ideals related by a unitary conjugation.
+**Proof.** The minimal left ideals of $M_2(\mathbb{C})$ are the column spaces of rank-one projections; they are all isomorphic as modules, and the unitary group acts transitively on the rank-one projections, so no one of them is singled out by the algebra. Concretely, $\tilde\Pi_+=\tfrac12(e_0+ie_3)$ and $\tilde\Pi_3=\tfrac12(e_0+ie_1)$ generate distinct ideals related by a unitary conjugation.
 
 **Consequence.** The identification of the two components of a spinor, and hence the split into material and informational parts, requires a choice of basis; the state space is canonical only up to unitary equivalence. Physical predictions are invariant under the choice, but the bookkeeping is not.
 
-**Remedy.** Fix the idempotent once and for all — the corpus fixes $\tilde\Pi_1=\tfrac12(e_0+ie_3)$ — and verify that any statement of interest is invariant under unitary change of $\tilde\Pi_1$. The isomorphism is not a canonical identification, and statements that depend on it must be shown to be basis-independent.
+**Remedy.** Fix the idempotent once and for all — the corpus fixes $\tilde\Pi_+=\tfrac12(e_0+ie_3)$ — and verify that any statement of interest is invariant under unitary change of $\tilde\Pi_+$. The isomorphism is not a canonical identification, and statements that depend on it must be shown to be basis-independent.
 
 ## V. Obstructions of Dynamics and Interpretation
 
@@ -323,7 +323,7 @@ Since the two subspaces intersect only at zero, no non-zero Hermitian element is
 
 **Proof.** The failure is the **associator defect** of the parent product and not an accident of the witness.
 
-**Consequence.** The Lie structure the framework does carry is the **plain** bracket and its derived bracket on the vector subspace, where it is the cross product on $\mathbb{C}^3$, equivalently $\mathfrak{sl}(2,\mathbb{C})$. The bracket that must carry conjugation and interference does not close. For the quaternionic wedge the derived bracket still closes on $\mathrm{Vect}(\mathbb{B})$ as $\mathfrak{sl}(2,\mathbb{C})$, the identity being carried by the rotations and the obstruction by the boost-like mixed terms $P_0\mathbf Q-Q_0\mathbf P$ (*Boosts, Mixed Terms and the Missing Lie Structure*), so its failure is the extension of the derived bracket to the whole algebra and not a failure of the derived bracket itself. For the state space there is no derived rescue: interference has no Lie algebra, so the state space's antisymmetric pairing cannot be the generator of a group.
+**Consequence.** The Lie structure the framework does carry is the **plain** bracket and its derived bracket on the vector subspace, where it is the cross product on $\mathbb{C}^3$, equivalently $\mathfrak{sl}(2,\mathbb{C})$. The bracket that must carry conjugation and interference does not close. For the quaternionic wedge the derived bracket still closes on $\mathrm{Vect}(\mathbb{B})$ as $\mathfrak{sl}(2,\mathbb{C})$, the identity being carried by the rotations and the obstruction by the boost-like mixed terms $P_0\vec Q-Q_0\vec P$ (*Boosts, Mixed Terms and the Missing Lie Structure*), so its failure is the extension of the derived bracket to the whole algebra and not a failure of the derived bracket itself. For the state space there is no derived rescue: interference has no Lie algebra, so the state space's antisymmetric pairing cannot be the generator of a group.
 
 **Remedy.** Read the failure measurements as the low operations of a **higher structure**: the associator and the Jacobi defect are the first terms of an $A_\infty$ and an $L_\infty$ algebra, and the repair is to state the higher identities rather than to look for a bracket that closes (*A Higher Structure for the Jacobi Failure*; *A-Infinity and L-Infinity Algebras*).
 
@@ -347,7 +347,7 @@ Since the two subspaces intersect only at zero, no non-zero Hermitian element is
 | O14 unit forced central | norm preservation for all $\tilde{H}$ | accept the complex scalar field |
 | O15 sectors not an algebra grading | $\mathbb{M}_+\mathbb{M}_+\not\subseteq\mathbb{M}_+$ | use commutators or the trace |
 | O16 no complex structure on $\mathbb{M}_+$ | $i\mathbb{M}_+=\mathbb{M}_-$ | put it on the module |
-| O17 module not canonical | transitive action on idempotents | fix $\tilde\Pi_1$ and check invariance |
+| O17 module not canonical | transitive action on idempotents | fix $\tilde\Pi_+$ and check invariance |
 | O18 no time or Hamiltonian | inner derivations only | import the dynamics |
 | O19 measurement problem untouched | O1, O2, O18 together | add interpretive structure |
 | O20 no algebraic scale | scale-free relations | import the scales |
@@ -402,7 +402,7 @@ Each obstruction is proved from the defining relations and is stated with its co
 | $\langle\tilde{Q},\tilde{Y}\rangle_{}^{*}=\mathrm{Tr}(\tilde{Q}^{*}\tilde{Y})$ | Hermitian form |
 | $\tilde\Pi(\hat{\mu})=\tfrac12(e_0+i\hat{\mu})$ | Pure state, null under $N$ |
 | $\mathbb{A}_{\hat{n}}$ | Maximal commutative subalgebra |
-| $\mathbb{B}\tilde\Pi_1$, $\tilde\Pi_1=\tfrac12(e_0+ie_3)$, also written $S$ | State (spinor) module, $\cong\mathbb{C}^2$; $\mathbb{B}=\mathrm{End}(S)$ |
+| $\mathbb{B}\tilde\Pi_+$, $\tilde\Pi_+=\tfrac12(e_0+ie_3)$, also written $S$ | State (spinor) module, $\cong\mathbb{C}^2$; $\mathbb{B}=\mathrm{End}(S)$ |
 | $M_2(\mathbb{C})$ | Matrix model; $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$ |
 | $U(2)$ | Norm-preserving (unitary) group |
 | $G_N=U(1)\cdot SL(2,\mathbb{C})$ | Biquaternion-norm-preserving group, $\dim_\mathbb{R}=7$ |

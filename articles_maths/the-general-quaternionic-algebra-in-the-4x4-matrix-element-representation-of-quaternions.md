@@ -94,7 +94,7 @@ $$
 \operatorname{tr}\mathsf M_4(\tilde q) = 4q_0 , \qquad \det\mathsf M_4(\tilde q) = N(\tilde q)^2 .
 $$
 
-*Proof.* The trace is above. For the determinant, the operator $L_{\tilde q}$ has the complex eigenvalues $\alpha$ and $\overline{\alpha}$ with multiplicity two, where $\alpha = q_0 + |\mathbf q|i$ is a root of $\alpha^2 - 2q_0\alpha + N(\tilde q) = 0$, so $\det L_{\tilde q} = \alpha^2\overline{\alpha}^2 = N(\tilde q)^2$.
+*Proof.* The trace is above. For the determinant, the operator $L_{\tilde q}$ has the complex eigenvalues $\alpha$ and $\overline{\alpha}$ with multiplicity two, where $\alpha = q_0 + |\vec q|i$ is a root of $\alpha^2 - 2q_0\alpha + N(\tilde q) = 0$, so $\det L_{\tilde q} = \alpha^2\overline{\alpha}^2 = N(\tilde q)^2$.
 
 **Corollary (the units).** $\mathsf M_4(\tilde q)$ is invertible exactly when $\tilde q \neq 0$, with positive determinant; the image of the unit group is the group of invertible matrices in the image, isomorphic to $\mathbb{H}^{\times}$.
 

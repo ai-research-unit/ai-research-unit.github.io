@@ -39,97 +39,97 @@ Each structure is read with its product, written on the coordinates, and with it
 
 Its product is the **general plain bilinear product**,
 $$
-\tilde{P}\tilde{Q}=\bigl[P_0Q_0-(\mathbf{P},\mathbf{Q})\bigr]+P_0\mathbf{Q}+Q_0\mathbf{P}+\mathbf{P}\times\mathbf{Q}.
+\tilde{P}\tilde{Q}=\bigl[P_0Q_0-(\vec P,\vec Q)\bigr]+P_0\vec Q+Q_0\vec P+\vec P\times\vec Q.
 $$
-Its decomposition is the scalar part $P_0Q_0-(\mathbf{P},\mathbf{Q})$ and the vector part $P_0\mathbf{Q}+Q_0\mathbf{P}+\mathbf{P}\times\mathbf{Q}$, and it splits into its two parts, $\mathrm{GPA}=\mathrm{SPA}+\mathrm{APA}$. The multiplication is associative, $e_0$ is a unit on both sides, and the values fill the whole space.
+Its decomposition is the scalar part $P_0Q_0-(\vec P,\vec Q)$ and the vector part $P_0\vec Q+Q_0\vec P+\vec P\times\vec Q$, and it splits into its two parts, $\mathrm{GPA}=\mathrm{SPA}+\mathrm{APA}$. The multiplication is associative, $e_0$ is a unit on both sides, and the values fill the whole space.
 
 ### The Symmetric Plain Algebra (SPA)
 
 Its product is the **symmetric plain bilinear product**, the symmetric part of the general plain bilinear product.
 $$
-\tfrac12\bigl(\tilde{P}\tilde{Q}+\tilde{Q}\tilde{P}\bigr)=\bigl[P_0Q_0-(\mathbf{P},\mathbf{Q})\bigr]+P_0\mathbf{Q}+Q_0\mathbf{P}.
+\tfrac12\bigl(\tilde{P}\tilde{Q}+\tilde{Q}\tilde{P}\bigr)=\bigl[P_0Q_0-(\vec P,\vec Q)\bigr]+P_0\vec Q+Q_0\vec P.
 $$
-Its decomposition is the scalar part $P_0Q_0-(\mathbf{P},\mathbf{Q})$ and the vector part $P_0\mathbf{Q}+Q_0\mathbf{P}$. The multiplication is commutative and satisfies the Jordan identity, $e_0$ is a unit on both sides, and the values fill the whole space.
+Its decomposition is the scalar part $P_0Q_0-(\vec P,\vec Q)$ and the vector part $P_0\vec Q+Q_0\vec P$. The multiplication is commutative and satisfies the Jordan identity, $e_0$ is a unit on both sides, and the values fill the whole space.
 
 ### The Antisymmetric Plain Algebra (APA)
 
 Its product is the **antisymmetric plain bilinear product**, the antisymmetric part of the general plain bilinear product.
 $$
-\tfrac12\bigl(\tilde{P}\tilde{Q}-\tilde{Q}\tilde{P}\bigr)=\mathbf{P}\times\mathbf{Q}.
+\tfrac12\bigl(\tilde{P}\tilde{Q}-\tilde{Q}\tilde{P}\bigr)=\vec P\times\vec Q.
 $$
-Its decomposition is the scalar part $0$ and the vector part $\mathbf{P}\times\mathbf{Q}$ alone. The multiplication is alternating and satisfies the Jacobi identity, it has no unit, and its values lie in the vector subspace.
+Its decomposition is the scalar part $0$ and the vector part $\vec P\times\vec Q$ alone. The multiplication is alternating and satisfies the Jacobi identity, it has no unit, and its values lie in the vector subspace.
 
 ### The General Quaternionic Algebra (GQA)
 
 Its product is the **general quaternionic bilinear product**,
 $$
-\tilde{P}^{\natural}\tilde{Q}=\bigl[P_0Q_0+(\mathbf{P},\mathbf{Q})\bigr]+P_0\mathbf{Q}-Q_0\mathbf{P}-\mathbf{P}\times\mathbf{Q}.
+\tilde{P}^{\natural}\tilde{Q}=\bigl[P_0Q_0+(\vec P,\vec Q)\bigr]+P_0\vec Q-Q_0\vec P-\vec P\times\vec Q.
 $$
-Its decomposition is the scalar part $P_0Q_0+(\mathbf{P},\mathbf{Q})$ and the vector part $P_0\mathbf{Q}-Q_0\mathbf{P}-\mathbf{P}\times\mathbf{Q}$, and it splits into its two parts, $\mathrm{GQA}=\mathrm{SQA}+\mathrm{AQA}$. The multiplication is not associative, $e_0$ is a unit on the left only, and the values fill the whole space.
+Its decomposition is the scalar part $P_0Q_0+(\vec P,\vec Q)$ and the vector part $P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$, and it splits into its two parts, $\mathrm{GQA}=\mathrm{SQA}+\mathrm{AQA}$. The multiplication is not associative, $e_0$ is a unit on the left only, and the values fill the whole space.
 
 ### The Symmetric Quaternionic Algebra (SQA)
 
 Its product is the **symmetric quaternionic bilinear product**, the symmetric part of the general quaternionic bilinear product.
 $$
-\tfrac12\bigl(\tilde{P}^{\natural}\tilde{Q}+\tilde{Q}^{\natural}\tilde{P}\bigr)=\bigl[P_0Q_0+(\mathbf{P},\mathbf{Q})\bigr].
+\tfrac12\bigl(\tilde{P}^{\natural}\tilde{Q}+\tilde{Q}^{\natural}\tilde{P}\bigr)=\bigl[P_0Q_0+(\vec P,\vec Q)\bigr].
 $$
-Its decomposition is the scalar part $P_0Q_0+(\mathbf{P},\mathbf{Q})$ alone, its vector part being zero. The multiplication is commutative, it is not a Jordan product, its values lie in the centre, and it has no unit.
+Its decomposition is the scalar part $P_0Q_0+(\vec P,\vec Q)$ alone, its vector part being zero. The multiplication is commutative, it is not a Jordan product, its values lie in the centre, and it has no unit.
 
 ### The Antisymmetric Quaternionic Algebra (AQA)
 
 Its product is the **antisymmetric quaternionic bilinear product**, the antisymmetric part of the general quaternionic bilinear product.
 $$
-\tfrac12\bigl(\tilde{P}^{\natural}\tilde{Q}-\tilde{Q}^{\natural}\tilde{P}\bigr)=P_0\mathbf{Q}-Q_0\mathbf{P}-\mathbf{P}\times\mathbf{Q}.
+\tfrac12\bigl(\tilde{P}^{\natural}\tilde{Q}-\tilde{Q}^{\natural}\tilde{P}\bigr)=P_0\vec Q-Q_0\vec P-\vec P\times\vec Q.
 $$
-Its decomposition is the scalar part $0$ and the vector part $P_0\mathbf{Q}-Q_0\mathbf{P}-\mathbf{P}\times\mathbf{Q}$. The multiplication is alternating, it fails the Jacobi identity, it has no unit, and its values lie in the vector subspace.
+Its decomposition is the scalar part $0$ and the vector part $P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$. The multiplication is alternating, it fails the Jacobi identity, it has no unit, and its values lie in the vector subspace.
 
 ### The General Plain Sesqualgebra (GPS)
 
 Its product is the **general plain sesquilinear product**,
 $$
-\tilde{P}\tilde{Q}^{*}=\bigl[P_0\overline{Q_0}+(\mathbf{P},\overline{\mathbf{Q}})\bigr]-P_0\overline{\mathbf{Q}}+\overline{Q_0}\mathbf{P}-\mathbf{P}\times\overline{\mathbf{Q}}.
+\tilde{P}\tilde{Q}^{*}=\bigl[P_0\overline{Q_0}+(\vec P,\overline{\vec Q})\bigr]-P_0\overline{\vec Q}+\overline{Q_0}\vec P-\vec P\times\overline{\vec Q}.
 $$
-Its decomposition is the scalar part $P_0\overline{Q_0}+(\mathbf{P},\overline{\mathbf{Q}})$ and the vector part $-P_0\overline{\mathbf{Q}}+\overline{Q_0}\mathbf{P}-\mathbf{P}\times\overline{\mathbf{Q}}$, and it splits into its two parts, $\mathrm{GPS}=\mathrm{SPS}+\mathrm{APS}$. The multiplication is sesquilinear over $(\mathbb{C},\bar{\cdot})$, it is not associative, $e_0$ is a unit on the right only, and the values fill the whole space.
+Its decomposition is the scalar part $P_0\overline{Q_0}+(\vec P,\overline{\vec Q})$ and the vector part $-P_0\overline{\vec Q}+\overline{Q_0}\vec P-\vec P\times\overline{\vec Q}$, and it splits into its two parts, $\mathrm{GPS}=\mathrm{SPS}+\mathrm{APS}$. The multiplication is sesquilinear over $(\mathbb{C},\bar{\cdot})$, it is not associative, $e_0$ is a unit on the right only, and the values fill the whole space.
 
 ### The Symmetric Plain Sesqualgebra (SPS)
 
 Its product is the **symmetric plain sesquilinear product**, the symmetric part of the general plain sesquilinear product.
 $$
-\tfrac12\bigl(\tilde{P}\tilde{Q}^{*}+\overline{\tilde{Q}}\tilde{P}^{\natural}\bigr)=\bigl[P_0\overline{Q_0}+(\mathbf{P},\overline{\mathbf{Q}})\bigr].
+\tfrac12\bigl(\tilde{P}\tilde{Q}^{*}+\overline{\tilde{Q}}\tilde{P}^{\natural}\bigr)=\bigl[P_0\overline{Q_0}+(\vec P,\overline{\vec Q})\bigr].
 $$
-Its decomposition is the scalar part $P_0\overline{Q_0}+(\mathbf{P},\overline{\mathbf{Q}})$ alone, its vector part being zero. The multiplication is conjugate-commutative, its values lie in the centre, and it has no unit.
+Its decomposition is the scalar part $P_0\overline{Q_0}+(\vec P,\overline{\vec Q})$ alone, its vector part being zero. The multiplication is conjugate-commutative, its values lie in the centre, and it has no unit.
 
 ### The Antisymmetric Plain Sesqualgebra (APS)
 
 Its product is the **antisymmetric plain sesquilinear product**, the antisymmetric part of the general plain sesquilinear product.
 $$
-\tfrac12\bigl(\tilde{P}\tilde{Q}^{*}-\overline{\tilde{Q}}\tilde{P}^{\natural}\bigr)=-P_0\overline{\mathbf{Q}}+\overline{Q_0}\mathbf{P}-\mathbf{P}\times\overline{\mathbf{Q}}.
+\tfrac12\bigl(\tilde{P}\tilde{Q}^{*}-\overline{\tilde{Q}}\tilde{P}^{\natural}\bigr)=-P_0\overline{\vec Q}+\overline{Q_0}\vec P-\vec P\times\overline{\vec Q}.
 $$
-Its decomposition is the scalar part $0$ and the vector part $-P_0\overline{\mathbf{Q}}+\overline{Q_0}\mathbf{P}-\mathbf{P}\times\overline{\mathbf{Q}}$. The multiplication is conjugate-alternating, it fails the Jacobi identity, it has no unit, and its values lie in the vector subspace.
+Its decomposition is the scalar part $0$ and the vector part $-P_0\overline{\vec Q}+\overline{Q_0}\vec P-\vec P\times\overline{\vec Q}$. The multiplication is conjugate-alternating, it fails the Jacobi identity, it has no unit, and its values lie in the vector subspace.
 
 ### The General Quaternionic Sesqualgebra (GQS)
 
 Its product is the **general quaternionic sesquilinear product**,
 $$
-\tilde{P}^{\natural}\tilde{Q}^{*}=\bigl[P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})\bigr]-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}+\mathbf{P}\times\overline{\mathbf{Q}}.
+\tilde{P}^{\natural}\tilde{Q}^{*}=\bigl[P_0\overline{Q_0}-(\vec P,\overline{\vec Q})\bigr]-P_0\overline{\vec Q}-\overline{Q_0}\vec P+\vec P\times\overline{\vec Q}.
 $$
-Its decomposition is the scalar part $P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})$ and the vector part $-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}+\mathbf{P}\times\overline{\mathbf{Q}}$, and it splits into its two parts, $\mathrm{GQS}=\mathrm{SQS}+\mathrm{AQS}$. The multiplication is sesquilinear over $(\mathbb{C},\bar{\cdot})$, it is not associative, it has a unit on neither side, and the values fill the whole space.
+Its decomposition is the scalar part $P_0\overline{Q_0}-(\vec P,\overline{\vec Q})$ and the vector part $-P_0\overline{\vec Q}-\overline{Q_0}\vec P+\vec P\times\overline{\vec Q}$, and it splits into its two parts, $\mathrm{GQS}=\mathrm{SQS}+\mathrm{AQS}$. The multiplication is sesquilinear over $(\mathbb{C},\bar{\cdot})$, it is not associative, it has a unit on neither side, and the values fill the whole space.
 
 ### The Symmetric Quaternionic Sesqualgebra (SQS)
 
 Its product is the **symmetric quaternionic sesquilinear product**, the symmetric part of the general quaternionic sesquilinear product.
 $$
-\tfrac12\bigl(\tilde{P}^{\natural}\tilde{Q}^{*}+\tilde{Q}^{*}\tilde{P}^{\natural}\bigr)=\bigl[P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})\bigr]-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}.
+\tfrac12\bigl(\tilde{P}^{\natural}\tilde{Q}^{*}+\tilde{Q}^{*}\tilde{P}^{\natural}\bigr)=\bigl[P_0\overline{Q_0}-(\vec P,\overline{\vec Q})\bigr]-P_0\overline{\vec Q}-\overline{Q_0}\vec P.
 $$
-Its decomposition is the scalar part $P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})$ and the vector part $-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}$. The multiplication is conjugate-commutative, it is not a Jordan product, it has no unit, and its values lie in no subspace of the remarkable subspaces.
+Its decomposition is the scalar part $P_0\overline{Q_0}-(\vec P,\overline{\vec Q})$ and the vector part $-P_0\overline{\vec Q}-\overline{Q_0}\vec P$. The multiplication is conjugate-commutative, it is not a Jordan product, it has no unit, and its values lie in no subspace of the remarkable subspaces.
 
 ### The Antisymmetric Quaternionic Sesqualgebra (AQS)
 
 Its product is the **antisymmetric quaternionic sesquilinear product**, the antisymmetric part of the general quaternionic sesquilinear product.
 $$
-\tfrac12\bigl(\tilde{P}^{\natural}\tilde{Q}^{*}-\tilde{Q}^{*}\tilde{P}^{\natural}\bigr)=\mathbf{P}\times\overline{\mathbf{Q}}.
+\tfrac12\bigl(\tilde{P}^{\natural}\tilde{Q}^{*}-\tilde{Q}^{*}\tilde{P}^{\natural}\bigr)=\vec P\times\overline{\vec Q}.
 $$
-Its decomposition is the scalar part $0$ and the vector part $\mathbf{P}\times\overline{\mathbf{Q}}$. The multiplication is conjugate-alternating, it fails the Jacobi identity, it has no unit, and its values lie in the vector subspace.
+Its decomposition is the scalar part $0$ and the vector part $\vec P\times\overline{\vec Q}$. The multiplication is conjugate-alternating, it fails the Jacobi identity, it has no unit, and its values lie in the vector subspace.
 
 ### The Two That Are Lie and Jordan Products
 
@@ -161,7 +161,7 @@ The four general products are neither symmetrisations nor antisymmetrisations, a
 
 The twelve structures are the twelve products of *The 12 Products of the Biquaternion Complex Space* read as multiplications, and each name is three letters: the part, $\mathrm G$ general or $\mathrm S$ symmetric or $\mathrm A$ antisymmetric; the first slot, $\mathrm P$ plain or $\mathrm Q$ quaternionic; the family, $\mathrm A$ the algebra over $\mathbb{C}$ or $\mathrm S$ the sesqualgebra over $\mathbb{C}$. The four names that begin with $\mathrm G$ are the four structures the corpus names apart, the multiplications of the four general products, and the other eight are their symmetrisations and antisymmetrisations.
 
-Of the twelve, two are the product of a classical nonassociative algebra and both belong to the plain family: $\mathrm{APA}=\mathbf{P}\times\mathbf{Q}$ is the one Lie product and $\mathrm{SPA}=\tilde{P}\bullet\tilde{Q}$ the one Jordan product. The other six parts fail the identity of their kind, with the witnesses recorded above. The six structures whose code ends in $\mathrm A$ are $\mathbb{C}$-bilinear and the six whose code ends in $\mathrm S$ are sesquilinear over $(\mathbb{C},\bar{\cdot})$.
+Of the twelve, two are the product of a classical nonassociative algebra and both belong to the plain family: $\mathrm{APA}=\vec P\times\vec Q$ is the one Lie product and $\mathrm{SPA}=\tilde{P}\bullet\tilde{Q}$ the one Jordan product. The other six parts fail the identity of their kind, with the witnesses recorded above. The six structures whose code ends in $\mathrm A$ are $\mathbb{C}$-bilinear and the six whose code ends in $\mathrm S$ are sesquilinear over $(\mathbb{C},\bar{\cdot})$.
 
 ## Summary of Notation
 
@@ -172,10 +172,10 @@ Of the twelve, two are the product of a classical nonassociative algebra and bot
 | $\mathrm A$, $\mathrm S$ (third letter) | the family: the algebra over $\mathbb{C}$, the sesqualgebra over $\mathbb{C}$ |
 | $\mathrm{GPA}$, $\mathrm{SPA}$, $\mathrm{APA}$, $\mathrm{GQA}$, $\mathrm{SQA}$, $\mathrm{AQA}$ | the six structures of the two algebras over $\mathbb{C}$ |
 | $\mathrm{GPS}$, $\mathrm{SPS}$, $\mathrm{APS}$, $\mathrm{GQS}$, $\mathrm{SQS}$, $\mathrm{AQS}$ | the six structures of the two sesqualgebras over $\mathbb{C}$ |
-| $N(\tilde{P},\tilde{Q})=P_0Q_0+(\mathbf{P},\mathbf{Q})$ | the quaternion form, the scalar part of $\mathrm{SQA}$ |
+| $N(\tilde{P},\tilde{Q})=P_0Q_0+(\vec P,\vec Q)$ | the quaternion form, the scalar part of $\mathrm{SQA}$ |
 | $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{M}_{+}$, $\mathbb{M}_{-}$ | the centre, the vector subspace and the Hermitian and anti-Hermitian subspaces |
 | Jacobi, Jordan | the two identities that single out $\mathrm{APA}$ and $\mathrm{SPA}$ |
-| $\overline{\mathbf{Q}}$, $(\mathbf{P},\mathbf{Q})$, $\mathbf{P}\times\mathbf{Q}$ | the coefficientwise conjugate of the vector part, the bilinear dot product and the bilinear cross product |
+| $\overline{\vec Q}$, $(\vec P,\vec Q)$, $\vec P\times\vec Q$ | the coefficientwise conjugate of the vector part, the bilinear dot product and the bilinear cross product |
 
 ## Further Reading
 

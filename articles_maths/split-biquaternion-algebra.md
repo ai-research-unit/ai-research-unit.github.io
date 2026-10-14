@@ -36,10 +36,10 @@ $$
 We write
 
 $$
-\tilde{Q} = Q_0 e_0 + \mathbf{Q}, \qquad \mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3,
+\tilde{Q} = Q_0 e_0 + \vec Q, \qquad \vec Q = Q_1 e_1 + Q_2 e_2 + Q_3 e_3,
 $$
 
-where $Q_0$ is the **split scalar part** and $\mathbf{Q}$ is the **split vector part**. The tilde signals that $\tilde{Q}$ is an element of the algebra $\mathbb{H}_{\mathbb{D}}$, not a quaternion.
+where $Q_0$ is the **split scalar part** and $\vec Q$ is the **split vector part**. The tilde signals that $\tilde{Q}$ is an element of the algebra $\mathbb{H}_{\mathbb{D}}$, not a quaternion.
 
 Each split complex coefficient is written in terms of its real and split parts:
 
@@ -173,13 +173,13 @@ $$
 where the products $e_\mu e_\nu$ are those of the quaternion algebra, extended split-complex-linearly. In scalar-vector notation, this becomes
 
 $$
-\tilde{Q} \bullet \tilde{R} = Q_0 R_0 - (\mathbf{Q}, \mathbf{R}) + Q_0 \mathbf{R} + R_0 \mathbf{Q} + [\mathbf{Q}, \mathbf{R}],
+\tilde{Q} \bullet \tilde{R} = Q_0 R_0 - (\vec Q, \vec R) + Q_0 \vec R + R_0 \vec Q + [\vec Q, \vec R],
 $$
 
 where
 
 $$
-(\mathbf{Q}, \mathbf{R}) = \sum_{k=1}^{3} Q_k R_k, \qquad [\mathbf{Q}, \mathbf{R}] = \sum_{j,k,l=1}^{3} \epsilon_{jkl} Q_j R_k e_l.
+(\vec Q, \vec R) = \sum_{k=1}^{3} Q_k R_k, \qquad [\vec Q, \vec R] = \sum_{j,k,l=1}^{3} \epsilon_{jkl} Q_j R_k e_l.
 $$
 
 This formula has the same structure as the quaternion product: scalar part, vector part, dot product, cross product. The only difference is that the coefficients are now split complex.
@@ -445,10 +445,10 @@ The quadratic form, the inner product, the norm and the Euclidean norm are a for
 | $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ | General split biquaternion |
 | $Q_\mu = q_\mu + j q'_\mu$ | Split complex coefficient |
 | $Q_0$ | Split scalar part |
-| $\mathbf{Q}$ | Split vector part |
-| $\tilde{Q}^{\natural} = Q_0 e_0 - \mathbf{Q}$ | Quaternion conjugate |
-| $\bar{\tilde{Q}} = \bar{Q_0} e_0 + \mathbf{Q}^*$ | Split complex conjugate |
-| $\tilde{Q}^{*} = \bar{Q_0} e_0 - \mathbf{Q}^*$ | Hermitian conjugate |
+| $\vec Q$ | Split vector part |
+| $\tilde{Q}^{\natural} = Q_0 e_0 - \vec Q$ | Quaternion conjugate |
+| $\bar{\tilde{Q}} = \bar{Q_0} e_0 + \vec Q^*$ | Split complex conjugate |
+| $\tilde{Q}^{*} = \bar{Q_0} e_0 - \vec Q^*$ | Hermitian conjugate |
 | $\tilde{Q}^\flat = -\tilde{Q}^{*}$ | Anti-Hermitian conjugate |
 | $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}$ | Split complex subspace |
 | $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$ | Quaternion subspace |

@@ -5,7 +5,7 @@
 The companion article *The Hermitian Form as a Product: Positivity and the Real Part of the Born Pairing* introduced the symmetric half of the plain sesquilinear product,
 
 $$
-\tilde P\circledast\tilde Q=\mathrm{Sc}\bigl(\tilde P\tilde Q^{*}\bigr)e_0=H(\tilde P,\tilde Q)e_0,\qquad H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q}),
+\tilde P\circledast\tilde Q=\mathrm{Sc}\bigl(\tilde P\tilde Q^{*}\bigr)e_0=H(\tilde P,\tilde Q)e_0,\qquad H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\vec P,\overline{\vec Q}),
 $$
 
 and read its algebraic norm as a probability. This article asks the question that the title puts forward: **why are the values central?** The answer is not a small technicality but the whole content of the block, and it separates the block from the quaternionic sesquilinear row that is its nearest neighbour.
@@ -14,7 +14,7 @@ Three interpretations are developed. First, **a value of the block is a number a
 
 **Boundaries.** The centrality, the conjugate-commutative law and the idempotents are *The Conjugate-Commutative Law and the Idempotents of the Symmetric Plain Sesqualgebra*; the restrictions and the closure of the remarkable subspaces are *Remarkable Subspaces under the Symmetric Plain Sesqualgebra of Biquaternions*; the positivity of the form, its cone and its signature are *Mass, Rank and the Positivity of the Dagger* and *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint*. The state space, the Bloch ball and its cone are *The Bloch Ball as the Trace-One Slice of the Future Light Cone*, *Quantum Physics in Biquaternionic Form* and *The Ontology of the Quantum State under the Biquaternion Framework*; the projections of the algebra and their role in measurement are *Decoherence as Idempotent Projection* and *The Measurement Problem in Algebraic Form*. The quaternionic row and its indefinite form are *The Fourth Product and Its Indefinite Metric*, *The States the Indefinite Metric Cannot Normalise* and *Why the Fourth Product Is a Gauge Structure and Not a State Space*, and the matrix side of the Krein form $K$ is *The Krein Gram Matrix and the Restrictions of the Form*.
 
-**Conventions.** As in the companion article and in *Conventions in the Biquaternion Universe*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_k^{2}=-e_0$, $e_1e_2=e_3$; $\tilde Q=Q_0e_0+\mathbf Q$, $Q_\mu\in\mathbb{C}$; ${}^{\natural}$ the natural conjugation, $\overline{\cdot}$ the coefficientwise one, ${}^{*}=\overline{\cdot}\circ{}^{\natural}$; $\mathrm{Sc}$ the scalar part, $\mathrm{Tr}=2\,\mathrm{Sc}$; the centre $\mathbb{C}_{\mathbb{B}}=\{\lambda e_0\}$; the sectors $\mathbb{M}_{+}$ (Hermitian, informational) and $\mathbb{M}_{-}$ (anti-Hermitian, material). The operation of the block is written $\tilde P\circledast\tilde Q$; the fourth product is $\tilde P^{\natural}\tilde Q^{*}$ and its symmetric part is written $\mathrm{SQS}(\tilde P,\tilde Q)=\tfrac12(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural})$, whose scalar form is the **Krein form** $K(\tilde P,\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ with $\varepsilon=(1,-1,-1,-1)$; the general quaternionic bilinear form is $N$. The Hermitian form is $H=\langle\cdot,\cdot\rangle_{*}$, its algebraic norm is $H(\tilde Q,\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}$, and the biquaternion norm is $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$.
+**Conventions.** As in the companion article and in *Conventions in the Biquaternion Universe*: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_k^{2}=-e_0$, $e_1e_2=e_3$; $\tilde Q=Q_0e_0+\vec Q$, $Q_\mu\in\mathbb{C}$; ${}^{\natural}$ the natural conjugation, $\overline{\cdot}$ the coefficientwise one, ${}^{*}=\overline{\cdot}\circ{}^{\natural}$; $\mathrm{Sc}$ the scalar part, $\mathrm{Tr}=2\,\mathrm{Sc}$; the centre $\mathbb{C}_{\mathbb{B}}=\{\lambda e_0\}$; the sectors $\mathbb{M}_{+}$ (Hermitian, informational) and $\mathbb{M}_{-}$ (anti-Hermitian, material). The operation of the block is written $\tilde P\circledast\tilde Q$; the fourth product is $\tilde P^{\natural}\tilde Q^{*}$ and its symmetric part is written $\mathrm{SQS}(\tilde P,\tilde Q)=\tfrac12(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural})$, whose scalar form is the **Krein form** $K(\tilde P,\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ with $\varepsilon=(1,-1,-1,-1)$; the general quaternionic bilinear form is $N$. The Hermitian form is $H=\langle\cdot,\cdot\rangle_{*}$, its algebraic norm is $H(\tilde Q,\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}$, and the biquaternion norm is $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$.
 
 ## The Values Are Central
 
@@ -52,13 +52,13 @@ A central value is a complex **number**. It carries no vector direction, and thi
 
 ### The Algebraic norm on the State Side
 
-The centrality also organises the **square** of a state. For $\tilde\rho=\tfrac12(e_0+i\mathbf r)$ one has
+The centrality also organises the **square** of a state. For $\tilde\rho=\tfrac12(e_0+i\vec r)$ one has
 
 $$
-\tilde\rho\circledast\tilde\rho=H(\tilde\rho,\tilde\rho)e_0=\tfrac14\bigl(1+\lvert\mathbf r\rvert^{2}\bigr)e_0=\tfrac12\,\mathrm{Tr}\bigl(\tilde\rho^{2}\bigr)e_0,
+\tilde\rho\circledast\tilde\rho=H(\tilde\rho,\tilde\rho)e_0=\tfrac14\bigl(1+\lvert\vec r\rvert^{2}\bigr)e_0=\tfrac12\,\mathrm{Tr}\bigl(\tilde\rho^{2}\bigr)e_0,
 $$
 
-so the algebraic norm of a state is one half of its **purity**, a central number. The state's Bloch vector $\mathbf r$ enters this value through its length alone: the square of an element sees the magnitude of the coherence and not its orientation. The orientation is carried by the antisymmetric half of the same square, where $\tilde\rho\wedge_{*}\tilde\rho=\tfrac12 i\mathbf r$. The two halves of the **square** therefore split the state into its purity, a central number, and its coherence direction, a vector, and this block owns the number. The operation is not blind to orientation when it is given two elements — on $\mathbb{M}_{+}$ the form is positive definite of rank four, so the pairing of two different states does depend on their relative direction — but the value of the square of one element carries none.
+so the algebraic norm of a state is one half of its **purity**, a central number. The state's Bloch vector $\vec r$ enters this value through its length alone: the square of an element sees the magnitude of the coherence and not its orientation. The orientation is carried by the antisymmetric half of the same square, where $\tilde\rho\wedge_{*}\tilde\rho=\tfrac12 i\vec r$. The two halves of the **square** therefore split the state into its purity, a central number, and its coherence direction, a vector, and this block owns the number. The operation is not blind to orientation when it is given two elements — on $\mathbb{M}_{+}$ the form is positive definite of rank four, so the pairing of two different states does depend on their relative direction — but the value of the square of one element carries none.
 
 **Remark (verified).** $\tilde\rho\circledast\tilde\rho=\tfrac12\mathrm{Tr}(\tilde\rho^{2})e_0$ to $<10^{-13}$ over $100$ random states.
 
@@ -105,23 +105,23 @@ the two trivial ones (*The Conjugate-Commutative Law and the Idempotents of the 
 
 ### A Projector Is Not an Idempotent of the Operation
 
-The corpus's pure states are the idempotents of the algebra, $\tilde\Pi_{1,2}(\hat{\boldsymbol{\mu}})=\tfrac12(e_0\pm i\hat{\boldsymbol{\mu}})$ with $\lvert\hat{\boldsymbol{\mu}}\rvert=1$; they are the rank-one projections and the boundary of the Bloch ball (*The Born Rule as a Trace Formula — Derivation and Comparison*, *Decoherence as Idempotent Projection*). Under the operation of this block,
+The corpus's pure states are the idempotents of the algebra, $\tilde\Pi_{1,2}(\hat\mu)=\tfrac12(e_0\pm i\hat\mu)$ with $\lvert\hat\mu\rvert=1$; they are the rank-one projections and the boundary of the Bloch ball (*The Born Rule as a Trace Formula — Derivation and Comparison*, *Decoherence as Idempotent Projection*). Under the operation of this block,
 
 $$
 \tilde\Pi_{1,2}\circledast\tilde\Pi_{1,2}=H(\tilde\Pi_{1,2},\tilde\Pi_{1,2})e_0=\tfrac12\,e_0 ,
 $$
 
-for **every** unit direction $\hat{\boldsymbol{\mu}}$. A pure state is therefore **not an idempotent** of the operation, and, sharper still, all pure states have the same **self-pairing** $\tfrac12 e_0$: the algebraic norm of the block on the pure states is constant and carries no orientation, which is why the operation's idempotent equation finds only $0$ and $e_0$. What the operation does see is the **relative** direction of two elements, because on $\mathbb{M}_{+}$ the form is positive definite of rank four and
+for **every** unit direction $\hat\mu$. A pure state is therefore **not an idempotent** of the operation, and, sharper still, all pure states have the same **self-pairing** $\tfrac12 e_0$: the algebraic norm of the block on the pure states is constant and carries no orientation, which is why the operation's idempotent equation finds only $0$ and $e_0$. What the operation does see is the **relative** direction of two elements, because on $\mathbb{M}_{+}$ the form is positive definite of rank four and
 
 $$
-H\bigl(\tilde\Pi_{1,2}(\hat{\boldsymbol{\mu}}),\tilde\Pi_{1,2}(\hat{\boldsymbol{\nu}})\bigr)=\tfrac12\cos^{2}\frac{\theta}{2},\qquad \hat{\boldsymbol{\mu}}\cdot\hat{\boldsymbol{\nu}}=\cos\theta,
+H\bigl(\tilde\Pi_{1,2}(\hat\mu),\tilde\Pi_{1,2}(\hat\nu)\bigr)=\tfrac12\cos^{2}\frac{\theta}{2},\qquad \hat\mu\cdot\hat\nu=\cos\theta,
 $$
 
 so two states of different direction are separated by the pairing even though each has the same algebraic norm. The value $\tfrac12 e_0$ is one half of the trace pairing of a projector with itself — the halved certainty $\mathrm{Tr}(\tilde\Pi^{2})=1$ — and it is the algebraic norm of a state and not a measurement of one.
 
-**Interpretation (the overlap, and where the factor of two sits).** The value $H(\tilde\Pi(\hat{\boldsymbol{\mu}}),\tilde\Pi(\hat{\boldsymbol{\nu}}))=\tfrac12\cos^{2}(\theta/2)$ is **one half of the Born overlap** of the two states; twice it, $\cos^{2}(\theta/2)$, is the **transition probability** that a state prepared in the direction $\hat{\boldsymbol{\mu}}$ passes a test prepared in the direction $\hat{\boldsymbol{\nu}}$, maximal at $\theta=0$ and vanishing at $\theta=\pi$. The constant self-pairing $\tfrac12 e_0$ and the varying relative pairing are the two faces of one fact: a state has no orientation against itself and a full one against another, so the **algebraic norm of the operation is uninformative and its off-diagonal carries the relative amplitude**. The one half is the same one half that makes the operation one half of the Born trace pairing, and it must be carried in the comparison, not dropped.
+**Interpretation (the overlap, and where the factor of two sits).** The value $H(\tilde\Pi(\hat\mu),\tilde\Pi(\hat\nu))=\tfrac12\cos^{2}(\theta/2)$ is **one half of the Born overlap** of the two states; twice it, $\cos^{2}(\theta/2)$, is the **transition probability** that a state prepared in the direction $\hat\mu$ passes a test prepared in the direction $\hat\nu$, maximal at $\theta=0$ and vanishing at $\theta=\pi$. The constant self-pairing $\tfrac12 e_0$ and the varying relative pairing are the two faces of one fact: a state has no orientation against itself and a full one against another, so the **algebraic norm of the operation is uninformative and its off-diagonal carries the relative amplitude**. The one half is the same one half that makes the operation one half of the Born trace pairing, and it must be carried in the comparison, not dropped.
 
-**Remark (verified).** $H(\tilde\Pi_{1,2},\tilde\Pi_{1,2})=\tfrac12$ for every projector of the corpus, so $\tilde\Pi_{1,2}\circledast\tilde\Pi_{1,2}=\tfrac12e_0$, and $H(\tilde\Pi(\hat{\boldsymbol{\mu}}),\tilde\Pi(\hat{\boldsymbol{\nu}}))=\tfrac12\cos^{2}(\theta/2)$; the two directions are separated by the pairing, showing that the block is not blind to orientation even though its algebraic norm is constant. No nontrivial idempotent of the operation exists, the idempotent equation reducing on the centre to $\lvert\lambda\rvert^{2}=\lambda$.
+**Remark (verified).** $H(\tilde\Pi_{1,2},\tilde\Pi_{1,2})=\tfrac12$ for every projector of the corpus, so $\tilde\Pi_{1,2}\circledast\tilde\Pi_{1,2}=\tfrac12e_0$, and $H(\tilde\Pi(\hat\mu),\tilde\Pi(\hat\nu))=\tfrac12\cos^{2}(\theta/2)$; the two directions are separated by the pairing, showing that the block is not blind to orientation even though its algebraic norm is constant. No nontrivial idempotent of the operation exists, the idempotent equation reducing on the centre to $\lvert\lambda\rvert^{2}=\lambda$.
 
 ### The Operation Selects No State
 
@@ -134,17 +134,17 @@ The two facts combine into the interpretation that this article and its companio
 The other symmetric part of the sesquilinear side of the twelve is the **symmetric quaternionic sesquilinear product**, the symmetric half of the fourth product $\tilde P^{\natural}\tilde Q^{*}$,
 
 $$
-\mathrm{SQS}(\tilde P,\tilde Q)=\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural}\bigr)=\bigl[P_0\overline{Q_0}-(\mathbf P,\overline{\mathbf Q})\bigr]e_0-P_0\overline{\mathbf Q}-\overline{Q_0}\,\mathbf P,
+\mathrm{SQS}(\tilde P,\tilde Q)=\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural}\bigr)=\bigl[P_0\overline{Q_0}-(\vec P,\overline{\vec Q})\bigr]e_0-P_0\overline{\vec Q}-\overline{Q_0}\,\vec P,
 $$
 
-whose scalar part is the **indefinite** Krein form $K(\tilde P,\tilde Q)=P_0\overline{Q_0}-(\mathbf P,\overline{\mathbf Q})$ and whose vector part is the mixed term alone (*Introduction to the General Quaternionic Sesqualgebra of Biquaternions*, *The Krein Gram Matrix and the Restrictions of the Form*). The comparison is exact and instructive, and it does not go in the direction a reader might expect.
+whose scalar part is the **indefinite** Krein form $K(\tilde P,\tilde Q)=P_0\overline{Q_0}-(\vec P,\overline{\vec Q})$ and whose vector part is the mixed term alone (*Introduction to the General Quaternionic Sesqualgebra of Biquaternions*, *The Krein Gram Matrix and the Restrictions of the Form*). The comparison is exact and instructive, and it does not go in the direction a reader might expect.
 
-**The value is not central.** The value of the quaternionic block is $K(\tilde P,\tilde Q)e_0-P_0\overline{\mathbf Q}-\overline{Q_0}\mathbf P$, a general element with a complex scalar part and a vector part; it lies in **no subspace of the remarkable subspaces**, and the block is therefore not a form read on the centre but a genuine element-valued operation.
+**The value is not central.** The value of the quaternionic block is $K(\tilde P,\tilde Q)e_0-P_0\overline{\vec Q}-\overline{Q_0}\vec P$, a general element with a complex scalar part and a vector part; it lies in **no subspace of the remarkable subspaces**, and the block is therefore not a form read on the centre but a genuine element-valued operation.
 
 **The algebraic norm is not central and not definite.** For $\tilde P=\tilde Q$,
 
 $$
-\mathrm{SQS}(\tilde Q,\tilde Q)=\bigl[\lvert Q_0\rvert^{2}-\lvert\mathbf Q\rvert^{2}\bigr]e_0-2\,\mathrm{Re}\bigl(Q_0\overline{\mathbf Q}\bigr),
+\mathrm{SQS}(\tilde Q,\tilde Q)=\bigl[\lvert Q_0\rvert^{2}-\lvert\vec Q\rvert^{2}\bigr]e_0-2\,\mathrm{Re}\bigl(Q_0\overline{\vec Q}\bigr),
 $$
 
 an indefinite scalar part together with a real vector part; the restriction of the scalar form to the vector subspace is negative definite, and over the complex coefficients the form has inertia $(1,3)$, over the real parameters $(2,6)$, with a large isotropic set (the pure states of the corpus are *null* for it, *The States the Indefinite Metric Cannot Normalise*, *The Fourth Product and Its Indefinite Metric*).
@@ -167,7 +167,7 @@ an indefinite scalar part together with a real vector part; the restriction of t
 - A probability value is a **central number**, unpacked from the algebra and not chosen.
 - The law is conjugate-commutative, and the natural conjugation is an automorphism while the star is the reversal.
 - The algebraic norm of a state is its **purity**, one half of $\mathrm{Tr}(\tilde\rho^{2})$.
-- The relative pairing is **one half of the Born overlap**: $2H(\tilde\Pi(\hat{\boldsymbol{\mu}}),\tilde\Pi(\hat{\boldsymbol{\nu}}))=\cos^{2}(\theta/2)$ is the transition probability, the algebraic norm being uninformative and the off-diagonal carrying the relative amplitude.
+- The relative pairing is **one half of the Born overlap**: $2H(\tilde\Pi(\hat\mu),\tilde\Pi(\hat\nu))=\cos^{2}(\theta/2)$ is the transition probability, the algebraic norm being uninformative and the off-diagonal carrying the relative amplitude.
 
 **What it does not give.**
 - It gives no orientation: every pure state has the same self-pairing $\tfrac12 e_0$, and its idempotents are only $0$ and $e_0$. The orientation is carried by the antisymmetric algebraic norm and by the relative pairing of two distinct elements.
@@ -192,9 +192,9 @@ The values of the symmetric plain sesquilinear product are the **centre** of the
 | $\tilde\rho\circledast\tilde\rho=\tfrac12\mathrm{Tr}(\tilde\rho^{2})e_0$ | the algebraic norm of a state is its purity |
 | $\{\tilde Q\circledast\tilde Q\}=\mathbb{R}_{\ge0}e_0$ | the one-dimensional cone of the operation |
 | $\{0,e_0\}$ | the idempotents of the operation |
-| $\tilde\Pi_{1,2}\circledast\tilde\Pi_{1,2}=\tfrac12 e_0$ | a projector is not an idempotent of the operation; $H(\tilde\Pi(\hat{\boldsymbol{\mu}}),\tilde\Pi(\hat{\boldsymbol{\nu}}))=\tfrac12\cos^{2}(\theta/2)$ |
+| $\tilde\Pi_{1,2}\circledast\tilde\Pi_{1,2}=\tfrac12 e_0$ | a projector is not an idempotent of the operation; $H(\tilde\Pi(\hat\mu),\tilde\Pi(\hat\nu))=\tfrac12\cos^{2}(\theta/2)$ |
 | $\mathrm{SQS}(\tilde P,\tilde Q)=\tfrac12(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural})$ | the symmetric quaternionic sesquilinear product |
-| $K(\tilde P,\tilde Q)=P_0\overline{Q_0}-(\mathbf P,\overline{\mathbf Q})$ | the indefinite Krein form of the quaternionic row |
+| $K(\tilde P,\tilde Q)=P_0\overline{Q_0}-(\vec P,\overline{\vec Q})$ | the indefinite Krein form of the quaternionic row |
 | $\mathbb{M}_{+}$ | the state side, carried by the plain row alone |
 
 ## Further Reading

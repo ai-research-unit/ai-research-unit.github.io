@@ -72,10 +72,10 @@ zero divisor of either side, and the annihilator is never a proper nonzero subsp
 ## The Multiplication Operator and the Rank
 
 **Proposition (the operators and their invariants).** In the basis $e_0,e_1,e_2,e_3$ the operators
-$L_{\tilde p}$ and $R_{\tilde p}$ of an element $\tilde p=p_0e_0+\mathbf p$ have trace $4p_0$ each
+$L_{\tilde p}$ and $R_{\tilde p}$ of an element $\tilde p=p_0e_0+\vec p$ have trace $4p_0$ each
 and determinant
 $$
-\det L_{\tilde p}=\det R_{\tilde p}=N(\tilde p)^2=(p_0^2+|\mathbf p|^2)^2,
+\det L_{\tilde p}=\det R_{\tilde p}=N(\tilde p)^2=(p_0^2+|\vec p|^2)^2,
 $$
 and the characteristic polynomial
 $$
@@ -90,8 +90,8 @@ $D=\operatorname{diag}(1,-1,-1,-1)$ (*Association and the Transpose on the Gener
 and *One-Sided Operators on the General Plain Algebra of Quaternions*,
 $L_{\tilde a}^{\sim}=R_{\tilde a}$); a transpose has the same trace and the same characteristic
 polynomial, hence the same determinant. The quadratic factor $t^2-2p_0t+N(\tilde p)$ has
-discriminant $-4|\mathbf p|^2$: it is $(t-p_0)^2$ at $\mathbf p=0$, and it has no real root when
-$\mathbf p\neq0$. The invariants are computed exactly on $e_0$, $(2,-3,5,7)$, $(0,1,2,3)$ and $0$
+discriminant $-4|\vec p|^2$: it is $(t-p_0)^2$ at $\vec p=0$, and it has no real root when
+$\vec p\neq0$. The invariants are computed exactly on $e_0$, $(2,-3,5,7)$, $(0,1,2,3)$ and $0$
 in the verification of this article.
 
 **Corollary (the rank and the annihilator).** The rank of the two operators and the two
@@ -126,7 +126,7 @@ $L_{\tilde p}\tilde x=\lambda\tilde x$, the scalar operator, so it is invertible
 annihilator is $\{0\}$. The centre is the scalar line $\mathbb{R}e_0$ (*Introduction to the General
 Plain Algebra of Quaternions*), and a nonzero central element is invertible as a nonzero scalar is.
 
-**The vector subspace.** A nonzero pure element $\tilde p=\mathbf p$ has norm $|\mathbf p|^2>0$, so
+**The vector subspace.** A nonzero pure element $\tilde p=\vec p$ has norm $|\vec p|^2>0$, so
 it is invertible and its annihilator is $\{0\}$. The vector subspace is as free of annihilators as
 the whole space.
 
@@ -142,7 +142,7 @@ The annihilator of an element in a product is the set of partners the element ki
 the right annihilator being the kernels of the left and the right multiplication. The general plain
 multiplication is the associative product of the quaternion algebra $\mathbb{H}$, which over
 $\mathbb{R}$ is a division algebra. Its operators $L_{\tilde p}$ and $R_{\tilde p}$ have trace
-$4p_0$ and determinant $N(\tilde p)^2=(p_0^2+|\mathbf p|^2)^2$, and characteristic polynomial
+$4p_0$ and determinant $N(\tilde p)^2=(p_0^2+|\vec p|^2)^2$, and characteristic polynomial
 $(t^2-2p_0t+N(\tilde p))^2$. The annihilator of every nonzero element is $\{0\}$ on both sides, and
 the two sides coincide trivially; the annihilator of the origin is the whole space. The dichotomy
 is therefore the split of the space into the origin and its complement, with no intermediate case
@@ -161,7 +161,7 @@ it to characterise.
 | $B_\star(\tilde q)=\{\tilde x:\tilde x\tilde q=0\}$ | the right annihilator of $\tilde q$, the kernel of the right multiplication |
 | $L_{\tilde p},R_{\tilde p}$ | the left and the right multiplication operators, of determinant $N(\tilde p)^2$ and trace $4p_0$ |
 | $\chi_{L_{\tilde p}}(t)=(t^2-2p_0t+N(\tilde p))^2$ | the characteristic polynomial of the operator |
-| $N(\tilde p)=p_0^2+|\mathbf p|^2$ | the quaternion norm, positive definite over $\mathbb{R}$ |
+| $N(\tilde p)=p_0^2+|\vec p|^2$ | the quaternion norm, positive definite over $\mathbb{R}$ |
 | $A_\star(\tilde q)=B_\star(\tilde q)$ | the two sides coincide, being $\{0\}$ off the origin and $\mathbb{H}$ at the origin |
 
 ## Further Reading

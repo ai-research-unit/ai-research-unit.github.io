@@ -169,14 +169,13 @@ $$
 
 computed on random samples, and the same pure isotropic cone is now nilpotent of **index three**,
 $\star^{2}\neq0$ and $\star^{3}=0$. The image of the sesquilinear square is the Hermitian cone
-$\{\alpha e_0+i\mathbf w:\alpha\geq\lvert\mathbf w\rvert\}$, with
-$\alpha^{2}-\lvert\mathbf w\rvert^{2}=\lvert N(\tilde X)\rvert^{2}$, and its boundary is the image of
+$\{\alpha e_0+i\vec w:\alpha\geq\lvert\vec w\rvert\}$, with
+$\alpha^{2}-\lvert\vec w\rvert^{2}=\lvert N(\tilde X)\rvert^{2}$, and its boundary is the image of
 the zero divisors.
 
 The **physical interpretation** is that the light cone is a boundary of the **composition** and not of the
 probability. A massless four-momentum is a zero divisor: it is not invertible for the composition, and
-that is what propagation at the speed of light means algebraically (*Square Roots: the Local Complex
-Structure, the Light Cone and the Mass Shell*, where the roots of $0$ are the nilpotents of the cone).
+that is what propagation at the speed of light means algebraically (*Square Roots of One and the Idempotents: the Hermitian Observables and the States*; *Square Roots of Zero and the Nilpotents: the Light Cone*; *Square Roots of a General Element: the Mass Shell*, where the roots of $0$ are the nilpotents of the cone).
 Its probability, however, is not zero. The Hermitian square of a zero divisor is a nonzero Hermitian
 element on the boundary of the positive cone, of rank one, so a massless element carries a well-defined
 boundary state and not a null state; the probability pairing is definite and never sees the cone as a
@@ -222,7 +221,7 @@ a projection onto the material sector, and it is read in *The General Plain Bili
 
 The square map has different root sets in the two bands, and they are the two bands in one table. In the
 GPA the roots of $-e_0$ are the local complex structures: the central $\pm ie_0$ together with the pure
-complex vectors of square one, of which the equation $\mathbf X\cdot\mathbf X=1$ is the condition (both
+complex vectors of square one, of which the equation $\vec X\cdot\vec X=1$ is the condition (both
 computed). The roots of $0$ are the nilpotents of the light cone. The roots of $+e_0$ are the
 involutions and reality conditions. The mass shell is the slice of the same map on which the square of a
 four-momentum is a fixed scalar. In the GPS the root set collapses. There is **no** root of $-e_0$,
@@ -234,8 +233,7 @@ The **physical interpretation** is that the clock belongs to the composition and
 root of $-e_0$ is the quarter turn that carries the clock, and it is present in the algebra and absent
 from the state space: the phase of quantum theory is the phase of the **amplitude**, not a complex
 structure of the state. The interpretation of the three distinguished radicands as the three physical cases
-(the local complex structure, the light cone and the mass shell) is *Square Roots: the Local Complex
-Structure, the Light Cone and the Mass Shell*. The roots of $+e_0$ are the reversible operations, and
+(the local complex structure, the light cone and the mass shell) is *Square Roots of One and the Idempotents: the Hermitian Observables and the States*; *Square Roots of Zero and the Nilpotents: the Light Cone*; *Square Roots of a General Element: the Mass Shell*. The roots of $+e_0$ are the reversible operations, and
 their identification with the unitary slice is the operator face of *Observables, Gauge Generators and
 the Chirality of the Internal Action*. The Hermitian cone that replaces the root ladder on the state
 side is *Mass, Rank and the Positivity of the Dagger*, and the reality-condition trichotomy of the
@@ -371,8 +369,7 @@ forms and leave the sesquilinear ones fixed, so the pair of bands is itself sort
 *Conventions in the Biquaternion Universe*. Second, the dial is where the **clock** enters: the quarter
 turn of the local complex structure lives in the composition and is absent from the pairing, so the
 phase of the framework is the phase of an amplitude and the state carries no clock of its own (*Each
-Sector Is the Other's Clock: the Sector Exchange as Relational Time*, *Square Roots: the Local Complex
-Structure, the Light Cone and the Mass Shell*). Third, the dial is where **positivity** enters, and it
+Sector Is the Other's Clock: the Sector Exchange as Relational Time*, *Square Roots of One and the Idempotents: the Hermitian Observables and the States*; *Square Roots of Zero and the Nilpotents: the Light Cone*; *Square Roots of a General Element: the Mass Shell*). Third, the dial is where **positivity** enters, and it
 enters once: the probability form is the same form whose algebraic norm is the squared modulus, whose trace is
 the Born rule and whose cone is the state cone, so the Bochner positivity of the transform and the
 Hilbert structure of the state space are one fact (*The Bochner Theorem for the Biquaternion Transform:
@@ -414,7 +411,7 @@ the Born rule live, and the step between them is the framework's quantisation.
 
 - The mathematics companion: *The General Plain Algebra and the General Plain Sesqualgebra of Biquaternions Compared*.
 - The map of the four general products: *The Four General Products and Their Physical Readings*.
-- The GPA band: *The General Plain Bilinear Product on the Biquaternion Space*; *The General Plain Bilinear Product on the Material Sector*; *Square Roots: the Local Complex Structure, the Light Cone and the Mass Shell*; *The Spinor Space as a Module of the General Plain Algebra*; *The Complementary Space of the Spinor Space in the General Plain Algebra*; *The Operators of the General Plain Bilinear Product: One-Sided, Two-Sided and the Sandwich*.
+- The GPA band: *The General Plain Bilinear Product on the Biquaternion Space*; *The General Plain Bilinear Product on the Material Sector*; *Square Roots of One and the Idempotents: the Hermitian Observables and the States*; *Square Roots of Zero and the Nilpotents: the Light Cone*; *Square Roots of a General Element: the Mass Shell*; *The Spinor Space as a Module of the General Plain Algebra*; *The Complementary Space of the Spinor Space in the General Plain Algebra*; *The Operators of the General Plain Bilinear Product: One-Sided, Two-Sided and the Sandwich*.
 - The GPS band: *The Spinor Space as a Hilbert Space of the General Plain Sesqualgebra*; *The Complementary Space of the Spinor Space in the General Plain Sesqualgebra*; *Mass, Rank and the Positivity of the Dagger*; *Observables, Gauge Generators and the Chirality of the Internal Action*; *Particle Types, Discrete Charge and Three-Particle Couplings*; *The Operators of the Plain Sesquilinear Product and the Born Pairing*; *The Bochner Theorem for the Biquaternion Transform: the Hermitian Form and the Root*.
 - The fused interpretation of the module and the form: *The Spinor Space as a Module and as a Hilbert Space*.
 - The built massless case: *The Null Four-Momentum: What the Cone Derives and What It Does Not*.

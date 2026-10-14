@@ -138,7 +138,7 @@ $$
 
 **A scalar parameter.** For $\tilde A=\lambda e_0$ the multiplications are scalars, $L_{\tilde A}=R_{\tilde A}=\lambda\,\mathrm{id}$; they are self-adjoint for every $\lambda$, since a scalar parameter is central, and a form-preserving map exactly for $\lambda^{2}=1$, that is $\lambda=\pm1$.
 
-**A vector parameter.** For $\tilde V=e_1$, $N(\tilde V)=1$ and $\tilde V^{\natural}=-e_1$, so $L_{\tilde V}$ is skew-adjoint and an automorphism of the form; the right multiplication $R_{\tilde V}$ has the same two properties, and $L_{\tilde V}R_{\tilde V}=\Theta_{\tilde V}$ is the reflection-like operator of the two-sided layer.
+**A vector parameter.** For $\tilde R=e_1$, $N(\tilde R)=1$ and $\tilde R^{\natural}=-e_1$, so $L_{\tilde R}$ is skew-adjoint and an automorphism of the form; the right multiplication $R_{\tilde R}$ has the same two properties, and $L_{\tilde R}R_{\tilde R}=\Theta_{\tilde R}$ is the reflection-like operator of the two-sided layer.
 
 **A null parameter.** For $\tilde A=e_1+ie_2$, $N(\tilde A)=0$: both multiplications are nonzero, neither is invertible, and both collapse the form, $N(L_{\tilde A}\tilde X)=0$ for every $\tilde X$.
 

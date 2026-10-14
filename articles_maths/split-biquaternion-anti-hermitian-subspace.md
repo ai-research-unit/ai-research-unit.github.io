@@ -52,13 +52,13 @@ The obstruction is that a product of two anti-Hermitian elements has a real scal
 
 ### The Symmetrized Product Lands in the Hermitian Subspace
 
-**Proposition.** For $\tilde{Q} = j r_0 e_0 + \mathbf{u}$ and $\tilde{R} = j s_0 e_0 + \mathbf{v}$ in $\mathbb{M}_-$, with $\mathbf{u}, \mathbf{v}$ real pure quaternions,
+**Proposition.** For $\tilde{Q} = j r_0 e_0 + \vec u$ and $\tilde{R} = j s_0 e_0 + \vec v$ in $\mathbb{M}_-$, with $\vec u, \vec v$ real pure quaternions,
 
 $$
-\tilde{Q} \bullet \tilde{R} = \tfrac{1}{2}(\tilde{Q}\tilde{R} + \tilde{R}\tilde{Q}) = \left(r_0 s_0 - \mathbf{u}\cdot\mathbf{v}\right) e_0 + j\left(r_0 \mathbf{v} + s_0 \mathbf{u}\right) \in \mathbb{M}_+.
+\tilde{Q} \bullet \tilde{R} = \tfrac{1}{2}(\tilde{Q}\tilde{R} + \tilde{R}\tilde{Q}) = \left(r_0 s_0 - \vec u\cdot\vec v\right) e_0 + j\left(r_0 \vec v + s_0 \vec u\right) \in \mathbb{M}_+.
 $$
 
-**Proof.** Expanding and using $\mathbf{u}\mathbf{v} = -\mathbf{u}\cdot\mathbf{v} + \mathbf{u}\times\mathbf{v}$, the products $\tilde{Q}\tilde{R}$ and $\tilde{R}\tilde{Q}$ differ only in the sign of the cross term $\mathbf{u}\times\mathbf{v}$, which therefore cancels under symmetrization; the remaining scalar part is real and the remaining vector part is purely split-imaginary.
+**Proof.** Expanding and using $\vec u\vec v = -\vec u\cdot\vec v + \vec u\times\vec v$, the products $\tilde{Q}\tilde{R}$ and $\tilde{R}\tilde{Q}$ differ only in the sign of the cross term $\vec u\times\vec v$, which therefore cancels under symmetrization; the remaining scalar part is real and the remaining vector part is purely split-imaginary.
 
 So the symmetrized product of two anti-Hermitian elements is Hermitian, the mirror image of the fact that the commutator of two Hermitian elements is anti-Hermitian.
 
@@ -67,10 +67,10 @@ So the symmetrized product of two anti-Hermitian elements is Hermitian, the mirr
 **Proposition.** Under the commutator, $\mathbb{M}_-$ is a **Lie subalgebra** of $\mathbb{H}_{\mathbb{D}}$:
 
 $$
-[\tilde{Q}, \tilde{R}] = \tilde{Q}\tilde{R} - \tilde{R}\tilde{Q} = 2\,\mathbf{u} \times \mathbf{v} \in \mathbb{M}_-.
+[\tilde{Q}, \tilde{R}] = \tilde{Q}\tilde{R} - \tilde{R}\tilde{Q} = 2\,\vec u \times \vec v \in \mathbb{M}_-.
 $$
 
-**Proof.** With the same expansion, the commutator retains only the cross term $2\mathbf{u}\times\mathbf{v}$, which is a pure real quaternion; this lies in $\mathbb{M}_-$ because its scalar part is $0$ and its vector part is real. The Jacobi identity is inherited from the associativity of the product.
+**Proof.** With the same expansion, the commutator retains only the cross term $2\vec u\times\vec v$, which is a pure real quaternion; this lies in $\mathbb{M}_-$ because its scalar part is $0$ and its vector part is real. The Jacobi identity is inherited from the associativity of the product.
 
 The bracket image $[\mathbb{M}_-, \mathbb{M}_-]$ is the three-dimensional space of pure real quaternions, the same three-dimensional Lie algebra $\mathrm{SO}(3)$ that is the commutator subalgebra of the quaternion subspace; the bracket of anti-Hermitian elements generates $\mathrm{SO}(3)$, developed in *Split-Biquaternion Exponential and Lie Group Structure*.
 
@@ -79,7 +79,7 @@ The bracket image $[\mathbb{M}_-, \mathbb{M}_-]$ is the three-dimensional space 
 **Proposition.** Multiplication by $j$ is a linear isomorphism $\mathbb{M}_- \to \mathbb{M}_+$ with inverse multiplication by $j$:
 
 $$
-j\left(j r_0 e_0 + \mathbf{u}\right) = r_0 e_0 + j \mathbf{u} \in \mathbb{M}_+, \qquad j\, \mathbb{M}_- = \mathbb{M}_+, \qquad j\, \mathbb{M}_+ = \mathbb{M}_-.
+j\left(j r_0 e_0 + \vec u\right) = r_0 e_0 + j \vec u \in \mathbb{M}_+, \qquad j\, \mathbb{M}_- = \mathbb{M}_+, \qquad j\, \mathbb{M}_+ = \mathbb{M}_-.
 $$
 
 **Proof.** Since $j$ is central with $j^2 = 1$, multiplying an element with purely split-imaginary scalar part and real vector part by $j$ exchanges the two parts, producing a real scalar part and a purely split-imaginary vector part, which is $\mathbb{M}_+$; applying $j$ twice is the identity.
@@ -88,16 +88,16 @@ The map swaps the roles of the forms: the split-biquaternion norm on $\mathbb{M}
 
 ### The Square
 
-For $\tilde{Q} = j r_0 e_0 + \mathbf{u}$ the square is
+For $\tilde{Q} = j r_0 e_0 + \vec u$ the square is
 
 $$
-\tilde{Q}^2 = \left(r_0^2 - (\mathbf{u}, \mathbf{u})\right) e_0 + 2 j r_0 \mathbf{u} \in \mathbb{M}_+,
+\tilde{Q}^2 = \left(r_0^2 - (\vec u, \vec u)\right) e_0 + 2 j r_0 \vec u \in \mathbb{M}_+,
 $$
 
-the square of an anti-Hermitian element being Hermitian. In particular, for a real vector $\mathbf{u}$,
+the square of an anti-Hermitian element being Hermitian. In particular, for a real vector $\vec u$,
 
 $$
-\mathbf{u}^2 = -(\mathbf{u},\mathbf{u})\, e_0,
+\vec u^2 = -(\vec u,\vec u)\, e_0,
 $$
 
 a negative real scalar. The square of $je_0$ is $e_0$, so $je_0$ itself is an involution of the algebra that is not the identity.
@@ -138,7 +138,7 @@ The signatures of the Hermitian form on the two sectors are complementary, $(1,3
 
 **Theorem.** For $\tilde{Q} \in \mathbb{M}_-$ the following are equivalent: $\tilde{Q}$ is a unit; $N(\tilde{Q}) \neq 0$; $\tilde{Q} \neq 0$. Hence $\mathbb{M}_-$ contains no zero divisor and no nilpotent.
 
-**Proof.** The split-biquaternion norm is positive definite, vanishing only at the origin, so every nonzero element is a unit, with inverse $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$. A nilpotent $\tilde{Q} \neq 0$ would require $\tilde{Q}^2 = 0$, that is $r_0^2 = |\mathbf{u}|^2$ and $r_0\mathbf{u} = 0$, forcing $\tilde{Q} = 0$.
+**Proof.** The split-biquaternion norm is positive definite, vanishing only at the origin, so every nonzero element is a unit, with inverse $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$. A nilpotent $\tilde{Q} \neq 0$ would require $\tilde{Q}^2 = 0$, that is $r_0^2 = |\vec u|^2$ and $r_0\vec u = 0$, forcing $\tilde{Q} = 0$.
 
 As on $\mathbb{M}_+$, the isotropic cone of the Hermitian form consists of units, not zero divisors: the two sectors together contain no zero divisor at all, and the zero divisors of $\mathbb{H}_{\mathbb{D}}$ are confined to the two four-dimensional subspaces $Z_+$ and $Z_-$ of *Split-Biquaternion Zero Divisors*.
 
@@ -152,16 +152,16 @@ $$
 
 which form a two-sphere $S^2$.
 
-**Proof.** For $\tilde{Q} = j r_0 e_0 + \mathbf{u}$ the equation $\tilde{Q}^2 = -1$ reads, by the square formula, $r_0^2 - |\mathbf{u}|^2 = -1$ and $2 r_0 \mathbf{u} = 0$. The second equation gives $r_0 = 0$ or $\mathbf{u} = 0$; $\mathbf{u} = 0$ would give $r_0^2 = -1$, impossible, so $r_0 = 0$ and $|\mathbf{u}|^2 = 1$.
+**Proof.** For $\tilde{Q} = j r_0 e_0 + \vec u$ the equation $\tilde{Q}^2 = -1$ reads, by the square formula, $r_0^2 - |\vec u|^2 = -1$ and $2 r_0 \vec u = 0$. The second equation gives $r_0 = 0$ or $\vec u = 0$; $\vec u = 0$ would give $r_0^2 = -1$, impossible, so $r_0 = 0$ and $|\vec u|^2 = 1$.
 
-The three imaginary units $e_1, e_2, e_3$ lie in $\mathbb{M}_-$, so the subspace contains the quaternion imaginary sphere; the roots of $-1$ in $\mathbb{M}_-$ are exactly the roots of $-1$ in the quaternion subspace. The roots of $-1$ in $\mathbb{M}_+$ are instead the elements $j\mathbf{u}$ with $\mathbf{u}$ a unit pure real quaternion, the sphere $jS^2$; the two spheres are exchanged by multiplication by $j$.
+The three imaginary units $e_1, e_2, e_3$ lie in $\mathbb{M}_-$, so the subspace contains the quaternion imaginary sphere; the roots of $-1$ in $\mathbb{M}_-$ are exactly the roots of $-1$ in the quaternion subspace. The roots of $-1$ in $\mathbb{M}_+$ are instead the elements $j\vec u$ with $\vec u$ a unit pure real quaternion, the sphere $jS^2$; the two spheres are exchanged by multiplication by $j$.
 
 ## The Image in the Two Halves
 
-Under the idempotent-decomposition isomorphism $\varphi : \mathbb{H}_{\mathbb{D}} \to \mathbb{H} \oplus \mathbb{H}$, an anti-Hermitian element $\tilde{Q} = j r_0 e_0 + \mathbf{u}$ has components
+Under the idempotent-decomposition isomorphism $\varphi : \mathbb{H}_{\mathbb{D}} \to \mathbb{H} \oplus \mathbb{H}$, an anti-Hermitian element $\tilde{Q} = j r_0 e_0 + \vec u$ has components
 
 $$
-\tilde{Q}_+ = r_0 + \mathbf{u}, \qquad \tilde{Q}_- = -r_0 + \mathbf{u} = -(\tilde{Q}_+)^{\natural}.
+\tilde{Q}_+ = r_0 + \vec u, \qquad \tilde{Q}_- = -r_0 + \vec u = -(\tilde{Q}_+)^{\natural}.
 $$
 
 The image of $\mathbb{M}_-$ is therefore the set of **anti-conjugate pairs**
@@ -208,7 +208,7 @@ The anti-Hermitian subspace is the negative eigenspace of the involution ${}^{*}
 
 ## Summary
 
-The anti-Hermitian subspace $\mathbb{M}_-$ is the fixed space of anti-Hermitian conjugation, the set of elements $\tilde{Q} = j r_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with purely split-imaginary scalar part and real vector part; it is a real vector space of dimension $4$ with basis $je_0, e_1, e_2, e_3$. It is **not** a subalgebra — $(je_0)^2 = e_0$ leaves it — but the symmetrized product of two of its elements is Hermitian, the commutator is $2\,\mathbf{u}\times\mathbf{v}$, a pure real quaternion, and under that bracket $\mathbb{M}_-$ is a **Lie subalgebra** with bracket image the three-dimensional $\mathrm{SO}(3)$. Multiplication by $j$ is a linear isomorphism $\mathbb{M}_- \to \mathbb{M}_+$, and the square of an anti-Hermitian element is Hermitian. The split-biquaternion norm restricts to the positive definite form $N = r_0^2 + q_1^2 + q_2^2 + q_3^2$ of signature $(4,0)$, so $\mathbb{M}_-$ contains no zero divisor and no nilpotent; the indefinite form is the Hermitian form, of signature $(3,1)$ and isotropic cone $r_0^2 = q_1^2 + q_2^2 + q_3^2$, whose nonzero points are all units. The roots of $-1$ in the subspace are the unit pure real quaternions, a two-sphere $S^2$, the same roots as in the quaternion subspace. The image under $\varphi$ is the set of anti-conjugate pairs $(h, -h^{\natural})$ in $\mathbb{H} \oplus \mathbb{H}$. Of the four involutions, anti-Hermitian conjugation fixes the subspace pointwise, quaternion and split complex conjugations negate the vector and scalar parts respectively, and Hermitian conjugation is minus the identity; the subspace is complementary to $\mathbb{M}_+$.
+The anti-Hermitian subspace $\mathbb{M}_-$ is the fixed space of anti-Hermitian conjugation, the set of elements $\tilde{Q} = j r_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with purely split-imaginary scalar part and real vector part; it is a real vector space of dimension $4$ with basis $je_0, e_1, e_2, e_3$. It is **not** a subalgebra — $(je_0)^2 = e_0$ leaves it — but the symmetrized product of two of its elements is Hermitian, the commutator is $2\,\vec u\times\vec v$, a pure real quaternion, and under that bracket $\mathbb{M}_-$ is a **Lie subalgebra** with bracket image the three-dimensional $\mathrm{SO}(3)$. Multiplication by $j$ is a linear isomorphism $\mathbb{M}_- \to \mathbb{M}_+$, and the square of an anti-Hermitian element is Hermitian. The split-biquaternion norm restricts to the positive definite form $N = r_0^2 + q_1^2 + q_2^2 + q_3^2$ of signature $(4,0)$, so $\mathbb{M}_-$ contains no zero divisor and no nilpotent; the indefinite form is the Hermitian form, of signature $(3,1)$ and isotropic cone $r_0^2 = q_1^2 + q_2^2 + q_3^2$, whose nonzero points are all units. The roots of $-1$ in the subspace are the unit pure real quaternions, a two-sphere $S^2$, the same roots as in the quaternion subspace. The image under $\varphi$ is the set of anti-conjugate pairs $(h, -h^{\natural})$ in $\mathbb{H} \oplus \mathbb{H}$. Of the four involutions, anti-Hermitian conjugation fixes the subspace pointwise, quaternion and split complex conjugations negate the vector and scalar parts respectively, and Hermitian conjugation is minus the identity; the subspace is complementary to $\mathbb{M}_+$.
 
 ## Summary of Notation
 
@@ -219,10 +219,10 @@ The anti-Hermitian subspace $\mathbb{M}_-$ is the fixed space of anti-Hermitian 
 | $\mathbb{M}_-$ | Anti-Hermitian subspace, fixed space of ${}^{\flat}$ |
 | $\mathbb{M}_+$ | Hermitian subspace, fixed space of ${}^{*}$ |
 | ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ | The four conjugations |
-| $N(\tilde{Q}) = r_0^2 + |\mathbf{u}|^2$ | Norm on $\mathbb{M}_-$, signature $(4,0)$ |
+| $N(\tilde{Q}) = r_0^2 + |\vec u|^2$ | Norm on $\mathbb{M}_-$, signature $(4,0)$ |
 | $\sum_\mu (q_\mu^2 - q'^2_\mu)$ | Scalar part of the Hermitian form, signature $(3,1)$ on $\mathbb{M}_-$ |
 | $\tilde{Q} \bullet \tilde{R} = \tfrac{1}{2}(\tilde{Q}\tilde{R} + \tilde{R}\tilde{Q})$ | Symmetrized product, landing in $\mathbb{M}_+$ |
-| $[\tilde{Q}, \tilde{R}] = 2\,\mathbf{u} \times \mathbf{v}$ | Commutator, a pure real quaternion |
+| $[\tilde{Q}, \tilde{R}] = 2\,\vec u \times \vec v$ | Commutator, a pure real quaternion |
 | $j : \mathbb{M}_- \to \mathbb{M}_+$ | Isomorphism by multiplication by $j$ |
 | $S^2$ | The roots of $-1$ in $\mathbb{M}_-$, unit pure real quaternions |
 | $r_0^2 = q_1^2 + q_2^2 + q_3^2$ | Isotropic cone of the Hermitian form |

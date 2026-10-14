@@ -14,9 +14,9 @@ The companion article *Canonical Quantization of the Biquaternion Maxwell Field*
 
 The Proca equation in biquaternionic form is the classical parent of this article; its conventions are those of the Maxwell companions, and the reader is referred to the series conventions for the algebra. The results established here are the following.
 
-- **Established, and recomputed below.** The Proca Lagrangian in the series $ict$ metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$ is $\mathcal{L}=-\tfrac14F_{\mu\nu}F^{\mu\nu}-\tfrac12\mu^2A_\mu A^\mu$, the mass term sign being fixed so that the equation is $(\Box-\mu^2)\tilde{A}=0$ in the Lorenz gauge, the same sign as the Klein–Gordon equation of the companion article *The Klein–Gordon Equation in Biquaternionic Form*. The Lorenz condition $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})=0$ is **not** a gauge choice in the massive theory: it follows from the field equation by taking the divergence, and the algebra reproduces this as $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{\nabla}\tilde{F})=\Box\,\mathrm{Sc}(\tilde{F})=0$ on one side and $\mu^2 S$ on the other. The Legendre transform gives $\pi^\mu=-F^{0\mu}$, unchanged from Maxwell, so that $\pi^0\approx0$ is still primary; the secondary constraint is Gauss's law deformed to $\partial_i\pi^i+\mu^2A_0\approx0$; and the two constraints are second class because $\{\pi^0(\mathbf{x}),\partial_i\pi^i(\mathbf{y})+\mu^2A_0(\mathbf{y})\}=-\mu^2\delta^{(3)}(\mathbf{x}-\mathbf{y})$. The phase-space count $(8-2)/2=3$ gives three field degrees of freedom. The three on-shell polarizations satisfy the completeness relation $\sum_{r=1}^3\varepsilon^r_\mu\varepsilon^r_\nu=\eta_{\mu\nu}+p_\mu p_\nu/\mu^2$, whose right-hand side is an idempotent of trace three that annihilates $p^\nu$; the same object is the numerator of the Proca propagator, so the propagator's residue is the three-polarization projector.
+- **Established, and recomputed below.** The Proca Lagrangian in the series $ict$ metric $\eta=\mathrm{diag}(-1,+1,+1,+1)$ is $\mathcal{L}=-\tfrac14F_{\mu\nu}F^{\mu\nu}-\tfrac12\mu^2A_\mu A^\mu$, the mass term sign being fixed so that the equation is $(\Box-\mu^2)\tilde{A}=0$ in the Lorenz gauge, the same sign as the Klein–Gordon equation of the companion article *The Klein–Gordon Equation in Biquaternionic Form*. The Lorenz condition $S=\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})=0$ is **not** a gauge choice in the massive theory: it follows from the field equation by taking the divergence, and the algebra reproduces this as $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{\nabla}\tilde{F})=\Box\,\mathrm{Sc}(\tilde{F})=0$ on one side and $\mu^2 S$ on the other. The Legendre transform gives $\pi^\mu=-F^{0\mu}$, unchanged from Maxwell, so that $\pi^0\approx0$ is still primary; the secondary constraint is Gauss's law deformed to $\partial_i\pi^i+\mu^2A_0\approx0$; and the two constraints are second class because $\{\pi^0(\vec x),\partial_i\pi^i(\vec y)+\mu^2A_0(\vec y)\}=-\mu^2\delta^{(3)}(\vec x-\vec y)$. The phase-space count $(8-2)/2=3$ gives three field degrees of freedom. The three on-shell polarizations satisfy the completeness relation $\sum_{r=1}^3\varepsilon^r_\mu\varepsilon^r_\nu=\eta_{\mu\nu}+p_\mu p_\nu/\mu^2$, whose right-hand side is an idempotent of trace three that annihilates $p^\nu$; the same object is the numerator of the Proca propagator, so the propagator's residue is the three-polarization projector.
 - **The framework's contribution.** The algebra supplies the material sector in which the massive potential lives, the field strength and its zero scalar part, the d'Alembertian, and the divergence operation that turns the field equation into the Lorenz condition. It supplies the statement that the Lorenz condition is a consequence rather than a choice, because $\mathrm{Sc}(\tilde{F})=0$ is an algebraic property of the field strength and $\Box$ is central and scalar. It does not supply the mass term: the value of $\mu$ is a parameter, and the algebra fixes neither its existence nor its magnitude.
-- **Imported, and left visible.** The Legendre transform, the Dirac bracket for the second-class system, the mode algebra $[\hat{a}_r(\mathbf{p}),\hat{a}_s^\dagger(\mathbf{q})]=\delta_{rs}(2\pi)^3\delta^{(3)}(\mathbf{p}-\mathbf{q})$, the normal-ordering convention, and the propagator's $i\epsilon$ prescription are standard quantum field theory transcribed into the framework's notation. As in the Maxwell and Dirac companions, the bosonic ladder algebra is not native to the finite-dimensional algebra: the Fock companion proves that no pair of elements of $\mathbb{B}$ satisfies a canonical commutator, so the algebra supplies the module on which the ladder acts and not the ladder.
+- **Imported, and left visible.** The Legendre transform, the Dirac bracket for the second-class system, the mode algebra $[\hat{a}_r(\vec p),\hat{a}_s^\dagger(\vec q)]=\delta_{rs}(2\pi)^3\delta^{(3)}(\vec p-\vec q)$, the normal-ordering convention, and the propagator's $i\epsilon$ prescription are standard quantum field theory transcribed into the framework's notation. As in the Maxwell and Dirac companions, the bosonic ladder algebra is not native to the finite-dimensional algebra: the Fock companion proves that no pair of elements of $\mathbb{B}$ satisfies a canonical commutator, so the algebra supplies the module on which the ladder acts and not the ladder.
 
 - Companion article *Canonical Quantization of the Biquaternion Maxwell Field*, for the massless case, the first-class constraint structure, the Gupta–Bleuler quantization, and the two transverse polarizations.
 - Companion article *The Photon in Biquaternionic Form*, for the massless one-particle state, the helicity operator, and the self-dual split of the field strength.
@@ -26,20 +26,20 @@ The Proca equation in biquaternionic form is the classical parent of this articl
 - Companion article *The Gauge Principle in Biquaternionic Form*, for the gauge transformation and the gauge scalar $S$.
 - Companion article *Angular Momentum and Spin in Biquaternionic Form*, for the rotation generators and the adjoint action.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$ and $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$, $i$ is the central scalar imaginary, and the fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector). The gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, its conjugate is $\tilde{\nabla}^{\natural}=e_0\partial_{ict}-e_1\partial_x-e_2\partial_y-e_3\partial_z$, and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\partial_{ict}^2+\Delta$. The material basis is $\varepsilon_0=ie_0$, $\varepsilon_k=e_k$, with $\eta_{\mu\nu}=\langle\varepsilon_\mu,\varepsilon_\nu\rangle_{\natural}=\mathrm{diag}(-1,+1,+1,+1)$ and the general quaternionic bilinear form $\langle\tilde{Q},\tilde{P}\rangle_{\natural}=\mathrm{Sc}(\tilde{Q}\tilde{P}^{\natural})$; the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. For the free-field quantization natural units $\hbar=c=1$ are used, in which $\mu$ is the mass, and the dimensionful equation is restored by $\mu\to mc/\hbar$. The potential is the material four-vector $\tilde{A}=iA_0e_0+\mathbf{A}\in\mathbb{M}_-$, the field strength is $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, and the series metric is the $ict$ metric of signature $(-,+,+,+)$.
+**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$ and $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$, $i$ is the central scalar imaginary, and the fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector). The gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, its conjugate is $\tilde{\nabla}^{\natural}=e_0\partial_{ict}-e_1\partial_x-e_2\partial_y-e_3\partial_z$, and $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}=\partial_{ict}^2+\Delta$. The material basis is $\varepsilon_0=ie_0$, $\varepsilon_k=e_k$, with $\eta_{\mu\nu}=\langle\varepsilon_\mu,\varepsilon_\nu\rangle_{\natural}=\mathrm{diag}(-1,+1,+1,+1)$ and the general quaternionic bilinear form $\langle\tilde{Q},\tilde{P}\rangle_{\natural}=\mathrm{Sc}(\tilde{Q}\tilde{P}^{\natural})$; the trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$. For the free-field quantization natural units $\hbar=c=1$ are used, in which $\mu$ is the mass, and the dimensionful equation is restored by $\mu\to mc/\hbar$. The potential is the material four-vector $\tilde{A}=iA_0e_0+\vec A\in\mathbb{M}_-$, the field strength is $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$, and the series metric is the $ict$ metric of signature $(-,+,+,+)$.
 
 ## The Proca Field in Biquaternionic Form
 
 ### The Lagrangian and the Field Equation
 
-The Maxwell Lagrangian in the series convention is $\mathcal{L}_{\mathrm{M}}=-\tfrac14F_{\mu\nu}F^{\mu\nu}=\tfrac12(\mathbf{E}^2-\mathbf{B}^2)$, with the potential $\tilde{A}\in\mathbb{M}_-$ and $\mathbf{E}$, $\mathbf{B}$ the electric and magnetic fields. The Proca field adds the only invariant available at this order that contains no derivative and is quadratic in the field, the biquaternion norm of the potential:
+The Maxwell Lagrangian in the series convention is $\mathcal{L}_{\mathrm{M}}=-\tfrac14F_{\mu\nu}F^{\mu\nu}=\tfrac12(\vec E^2-\vec B^2)$, with the potential $\tilde{A}\in\mathbb{M}_-$ and $\vec E$, $\vec B$ the electric and magnetic fields. The Proca field adds the only invariant available at this order that contains no derivative and is quadratic in the field, the biquaternion norm of the potential:
 
 $$
 \mathcal{L} = -\tfrac14F_{\mu\nu}F^{\mu\nu} - \tfrac12\mu^2 A_\mu A^\mu
-= \tfrac12\left(\mathbf{E}^2-\mathbf{B}^2\right) + \tfrac12\mu^2\left(A_0^2-\mathbf{A}^2\right).
+= \tfrac12\left(\vec E^2-\vec B^2\right) + \tfrac12\mu^2\left(A_0^2-\vec A^2\right).
 $$
 
-The sign of the mass term is fixed by the requirement that the equation reduce, in the Lorenz gauge, to the same sign convention as the companion Klein–Gordon equation $(\Box-\mu^2)\tilde{\Phi}=0$. Because $A_\mu A^\mu=-A_0^2+\mathbf{A}^2$ in signature $(-,+,+,+)$, the invariant $\mathcal{L}_\mu=-\tfrac12\mu^2A_\mu A^\mu$ is $\tfrac12\mu^2(A_0^2-\mathbf{A}^2)$ in components. The mass term is a central real scalar times the biquaternion norm of the material four-vector: it commutes with every element of $\mathbb{B}$, and it is the same invariant the scalar field carries, evaluated on the material vector instead of on a central scalar.
+The sign of the mass term is fixed by the requirement that the equation reduce, in the Lorenz gauge, to the same sign convention as the companion Klein–Gordon equation $(\Box-\mu^2)\tilde{\Phi}=0$. Because $A_\mu A^\mu=-A_0^2+\vec A^2$ in signature $(-,+,+,+)$, the invariant $\mathcal{L}_\mu=-\tfrac12\mu^2A_\mu A^\mu$ is $\tfrac12\mu^2(A_0^2-\vec A^2)$ in components. The mass term is a central real scalar times the biquaternion norm of the material four-vector: it commutes with every element of $\mathbb{B}$, and it is the same invariant the scalar field carries, evaluated on the material vector instead of on a central scalar.
 
 The Euler–Lagrange equation is
 
@@ -98,19 +98,19 @@ three copies of the Klein–Gordon equation, one for each independent polarizati
 A plane-wave solution is
 
 $$
-A_\mu(x) = \varepsilon_\mu(\mathbf{p})\,e^{-ip\cdot x},
-\qquad p^2 \equiv \omega_{\mathbf{p}}^2-\mathbf{p}^2 = \mu^2,
+A_\mu(x) = \varepsilon_\mu(\vec p)\,e^{-ip\cdot x},
+\qquad p^2 \equiv \omega_{\vec p}^2-\vec p^2 = \mu^2,
 \qquad p^\mu\varepsilon_\mu = 0,
 $$
 
-with $\omega_{\mathbf{p}}=\sqrt{\mathbf{p}^2+\mu^2}$ and the invariant phase $p_\mu x^\mu=\omega_{\mathbf{p}}t-\mathbf{p}\cdot\mathbf{x}$ of the series convention, the material four-wavevector being $\tilde{K}=i\omega_{\mathbf{p}}e_0+\mathbf{p}$, whose biquaternion norm is $N(\tilde{K})=(\mathbf{p}^2-\omega_{\mathbf{p}}^2)e_0$, so that $p^2=-N(\tilde{K})$ as in the scalar companion. The Lorenz condition is the transversality condition $p^\mu\varepsilon_\mu=0$ — the plain contraction $\omega_{\mathbf{p}}\varepsilon_0+\mathbf{p}\cdot\boldsymbol{\varepsilon}$ of the four components — one complex linear condition on the four components of $\varepsilon_\mu$, leaving three independent polarizations. These are the two transverse polarizations, with $\varepsilon_\mu=(0,\boldsymbol{\varepsilon}_T)$ and $\mathbf{p}\cdot\boldsymbol{\varepsilon}_T=0$, and the longitudinal one,
+with $\omega_{\vec p}=\sqrt{\vec p^2+\mu^2}$ and the invariant phase $p_\mu x^\mu=\omega_{\vec p}t-\vec p\cdot\vec x$ of the series convention, the material four-wavevector being $\tilde{K}=i\omega_{\vec p}e_0+\vec p$, whose biquaternion norm is $N(\tilde{K})=(\vec p^2-\omega_{\vec p}^2)e_0$, so that $p^2=-N(\tilde{K})$ as in the scalar companion. The Lorenz condition is the transversality condition $p^\mu\varepsilon_\mu=0$ — the plain contraction $\omega_{\vec p}\varepsilon_0+\vec p\cdot\vec\varepsilon$ of the four components — one complex linear condition on the four components of $\varepsilon_\mu$, leaving three independent polarizations. These are the two transverse polarizations, with $\varepsilon_\mu=(0,\vec\varepsilon_T)$ and $\vec p\cdot\vec\varepsilon_T=0$, and the longitudinal one,
 
 $$
-\varepsilon^{L}_\mu = \frac{1}{\mu}\left(-|\mathbf{p}|,\,0,\,0,\,\omega_{\mathbf{p}}\right)
-\quad\text{for}\quad \mathbf{p}=p\,\hat{\mathbf{z}},
+\varepsilon^{L}_\mu = \frac{1}{\mu}\left(-|\vec p|,\,0,\,0,\,\omega_{\vec p}\right)
+\quad\text{for}\quad \vec p=p\,\hat z,
 $$
 
-in the components appropriate to the series metric. The minus sign in the spatial entry is forced by transversality: with the plus sign the contraction $p^\mu\varepsilon^{L}_\mu$ is $2\omega_{\mathbf{p}}|\mathbf{p}|/\mu$ instead of zero.
+in the components appropriate to the series metric. The minus sign in the spatial entry is forced by transversality: with the plus sign the contraction $p^\mu\varepsilon^{L}_\mu$ is $2\omega_{\vec p}|\vec p|/\mu$ instead of zero.
 
 
 The three polarizations are orthonormal and complete: they satisfy $\varepsilon^{r}_\mu\varepsilon^{s\mu}=\delta_{rs}$, all three norms being $+1$, and the completeness relation
@@ -120,7 +120,7 @@ $$
 = \eta_{\mu\nu} + \frac{p_\mu p_\nu}{\mu^2},
 $$
 
-and its right-hand side was checked directly: it is idempotent, $P^2=P$, it has trace $3$, and it annihilates the momentum, $P_{\mu\nu}p^\nu=0$. The trace three is the statement that three polarizations are physical; the annihilation is the statement that $P$ projects onto the three-plane orthogonal to $p$, which for a massive vector is the full on-shell polarization space. At rest, $p^\mu=(\mu,\mathbf{0})$, the projector is $\mathrm{diag}(0,1,1,1)$, the three spatial directions, and the longitudinal polarization is the spatial direction of the momentum in the boosted frame. The three vectors were exhibited explicitly at $\mathbf{p}=0$, $p=1.5\,\hat{\mathbf{z}}$ and $p=-3\,\hat{\mathbf{z}}$, and the completeness relation was verified to machine precision at each, together with $p^\mu\varepsilon^r_\mu=0$.
+and its right-hand side was checked directly: it is idempotent, $P^2=P$, it has trace $3$, and it annihilates the momentum, $P_{\mu\nu}p^\nu=0$. The trace three is the statement that three polarizations are physical; the annihilation is the statement that $P$ projects onto the three-plane orthogonal to $p$, which for a massive vector is the full on-shell polarization space. At rest, $p^\mu=(\mu,\mathbf{0})$, the projector is $\mathrm{diag}(0,1,1,1)$, the three spatial directions, and the longitudinal polarization is the spatial direction of the momentum in the boosted frame. The three vectors were exhibited explicitly at $\vec p=0$, $p=1.5\,\hat z$ and $p=-3\,\hat z$, and the completeness relation was verified to machine precision at each, together with $p^\mu\varepsilon^r_\mu=0$.
 
 ## The Legendre Transform and the Constraint Structure
 
@@ -131,7 +131,7 @@ The conjugate momenta are read from the derivative terms of the Lagrangian, and 
 $$
 \pi^\mu = \frac{\partial\mathcal{L}}{\partial(\partial_0A_\mu)} = -F^{0\mu},
 \qquad\text{so that}\qquad
-\pi^0 = 0, \qquad \boldsymbol{\pi} = -i\mathbf{E},
+\pi^0 = 0, \qquad \vec\pi = -i\vec E,
 $$
 
 the last equality being the Maxwell companion's writing of the spatial momenta. The vanishing of $\pi^0$ is the **primary constraint** $\pi^0\approx0$, unchanged by the mass term, because the mass term is a function of $A_0$ and not of its time derivative.
@@ -141,8 +141,8 @@ the last equality being the Maxwell companion's writing of the spatial momenta. 
 The Hamiltonian is obtained by the Legendre transform, $H=\pi^i\partial_0A_i-\mathcal{L}$, with $A_0$ retained as a coordinate. Carrying out the transform and integrating the total spatial derivative by parts gives
 
 $$
-H = \int d^3x\left[\tfrac12\left(\mathbf{E}^2+\mathbf{B}^2\right)
-+ \tfrac12\mu^2\left(\mathbf{A}^2-A_0^2\right) - A_0\,\partial_i\pi^i\right],
+H = \int d^3x\left[\tfrac12\left(\vec E^2+\vec B^2\right)
++ \tfrac12\mu^2\left(\vec A^2-A_0^2\right) - A_0\,\partial_i\pi^i\right],
 $$
 
 in which $A_0$ appears linearly, as a Lagrange multiplier, and quadratically, through the mass term. Consistency of the primary constraint with the evolution requires
@@ -166,9 +166,9 @@ $$
 Their Poisson bracket is
 
 $$
-\{\phi_1(\mathbf{x}),\phi_2(\mathbf{y})\}
-= \mu^2\{\pi^0(\mathbf{x}),A_0(\mathbf{y})\}
-= -\mu^2\,\delta^{(3)}(\mathbf{x}-\mathbf{y}) \neq 0,
+\{\phi_1(\vec x),\phi_2(\vec y)\}
+= \mu^2\{\pi^0(\vec x),A_0(\vec y)\}
+= -\mu^2\,\delta^{(3)}(\vec x-\vec y) \neq 0,
 $$
 
 so the constraint matrix is the nonsingular $2\times2$ matrix
@@ -195,28 +195,28 @@ The system is quantized by the Dirac procedure. The second-class constraints are
 The field operator is expanded in the three positive-norm polarizations,
 
 $$
-\hat{A}_\mu(x) = \int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2\omega_{\mathbf{p}}}}
+\hat{A}_\mu(x) = \int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2\omega_{\vec p}}}
 \sum_{r=1}^{3}\left[
-\varepsilon^r_\mu(\mathbf{p})\,\hat{a}_r(\mathbf{p})\,e^{-ip_\mu x^\mu}
-+ \varepsilon^{r*}_\mu(\mathbf{p})\,\hat{a}_r^\dagger(\mathbf{p})\,e^{+ip_\mu x^\mu}
+\varepsilon^r_\mu(\vec p)\,\hat{a}_r(\vec p)\,e^{-ip_\mu x^\mu}
++ \varepsilon^{r*}_\mu(\vec p)\,\hat{a}_r^\dagger(\vec p)\,e^{+ip_\mu x^\mu}
 \right],
 $$
 
-with $p^0=\omega_{\mathbf{p}}=\sqrt{\mathbf{p}^2+\mu^2}$. The mode operators satisfy the bosonic commutators
+with $p^0=\omega_{\vec p}=\sqrt{\vec p^2+\mu^2}$. The mode operators satisfy the bosonic commutators
 
 $$
-\left[\hat{a}_r(\mathbf{p}),\hat{a}_s^\dagger(\mathbf{q})\right]
-= \delta_{rs}\,(2\pi)^3\delta^{(3)}(\mathbf{p}-\mathbf{q}),
+\left[\hat{a}_r(\vec p),\hat{a}_s^\dagger(\vec q)\right]
+= \delta_{rs}\,(2\pi)^3\delta^{(3)}(\vec p-\vec q),
 \qquad
-\left[\hat{a}_r(\mathbf{p}),\hat{a}_s(\mathbf{q})\right]=0 ,
+\left[\hat{a}_r(\vec p),\hat{a}_s(\vec q)\right]=0 ,
 $$
 
 with **all three polarizations of positive norm**. This is the sharpest contrast with the massless case. There the covariance of the description forced a fourth, timelike polarization of negative norm and the indefinite metric $\zeta=(-1,+1,+1,+1)$, and the physical subspace had to be selected by the Gupta–Bleuler subsidiary condition. Here the constraint analysis has already removed the fourth direction, the remaining three are spacelike and positive-norm, and no subsidiary condition is imposed. The Fock space is the symmetric algebra of the three-dimensional polarization module at each momentum, and its norm is positive definite.
 
-The state $|0\rangle$, annihilated by every $\hat{a}_r(\mathbf{p})$, is the field vacuum. The one-particle states
+The state $|0\rangle$, annihilated by every $\hat{a}_r(\vec p)$, is the field vacuum. The one-particle states
 
 $$
-|\mathbf{p},r\rangle = \hat{a}_r^\dagger(\mathbf{p})|0\rangle
+|\vec p,r\rangle = \hat{a}_r^\dagger(\vec p)|0\rangle
 $$
 
 carry three polarizations at each momentum. Their scalar product is positive for all three. The spin content of the triplet — which combination of the three corresponds to which spin projection, and what the adjoint action of the rotation group does to them — is developed in the following article of this subcategory, on integer-spin quantization and the adjoint action on the material sector; here it is enough that the three states exist and are positive.
@@ -226,22 +226,22 @@ carry three polarizations at each momentum. Their scalar product is positive for
 Substituting the mode expansion into the Hamiltonian and normal ordering gives
 
 $$
-:\hat{H}: = \int\!\frac{d^3p}{(2\pi)^3}\,\omega_{\mathbf{p}}
-\sum_{r=1}^{3}\hat{a}_r^\dagger(\mathbf{p})\hat{a}_r(\mathbf{p}),
+:\hat{H}: = \int\!\frac{d^3p}{(2\pi)^3}\,\omega_{\vec p}
+\sum_{r=1}^{3}\hat{a}_r^\dagger(\vec p)\hat{a}_r(\vec p),
 $$
 
-the energy of a state being the sum of $\omega_{\mathbf{p}}$ over its quanta. The un-normal-ordered constant is the zero-point energy
+the energy of a state being the sum of $\omega_{\vec p}$ over its quanta. The un-normal-ordered constant is the zero-point energy
 
 $$
-E_0 = \frac{1}{2}\int\!\frac{d^3p}{(2\pi)^3}\,\omega_{\mathbf{p}}\sum_{r=1}^{3}1
-= \frac{3}{2}\int\!\frac{d^3p}{(2\pi)^3}\,\omega_{\mathbf{p}},
+E_0 = \frac{1}{2}\int\!\frac{d^3p}{(2\pi)^3}\,\omega_{\vec p}\sum_{r=1}^{3}1
+= \frac{3}{2}\int\!\frac{d^3p}{(2\pi)^3}\,\omega_{\vec p},
 $$
 
 three half-quanta per mode, one for each polarization. It is quartically divergent, and it is the same kind of object as the scalar field's, with the factor three counting the polarizations. Its physical consequences — the subtraction prescription, the boundary dependence, and the Casimir energy of a confined massive field — are the subject of the companion article *The Vacuum State and the Casimir Effect in Biquaternionic Form*; the free-field vacuum energy is recorded here only for completeness, and it carries no biquaternionic structure beyond the central scalar in which it lives.
 
 ## The Propagator and the Polarization Projector
 
-The two-point function is the inverse of the momentum-space kinetic operator. With the field equation written $\left[(p^2-\mu^2)\delta^\nu{}_\sigma+p^\nu p_\sigma\right]\tilde{A}^\sigma=0$ in the series momentum convention $p^2=\omega^2-\mathbf{p}^2$, the inverse is
+The two-point function is the inverse of the momentum-space kinetic operator. With the field equation written $\left[(p^2-\mu^2)\delta^\nu{}_\sigma+p^\nu p_\sigma\right]\tilde{A}^\sigma=0$ in the series momentum convention $p^2=\omega^2-\vec p^2$, the inverse is
 
 $$
 D^\nu{}_\sigma(p) = \frac{\delta^\nu{}_\sigma + p^\nu p_\sigma/\mu^2}{p^2-\mu^2},
@@ -317,7 +317,7 @@ The massless limit is the limit in which the two constraints become first class,
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
 | $i$ | Central scalar imaginary, $i^2=-1$ |
 | $\mathbb{M}_+,\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) sectors |
-| $\tilde{A}=iA_0e_0+\mathbf{A}\in\mathbb{M}_-$ | Proca potential biquaternion |
+| $\tilde{A}=iA_0e_0+\vec A\in\mathbb{M}_-$ | Proca potential biquaternion |
 | $\tilde{F}=\tilde{\nabla}^{\natural}\tilde{A}-\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ | Field-strength biquaternion, $\mathrm{Sc}(\tilde{F})=0$ |
 | $\tilde{\nabla},\tilde{\nabla}^{\natural},\Box=\partial_{ict}^2+\Delta$ | Gradient, conjugate, d'Alembertian |
 | $\mathcal{L}=-\tfrac14F_{\mu\nu}F^{\mu\nu}-\tfrac12\mu^2A_\mu A^\mu$ | Proca Lagrangian (series $ict$ metric) |
@@ -331,8 +331,8 @@ The massless limit is the limit in which the two constraints become first class,
 | $\{\pi^0,\partial_i\pi^i+\mu^2A_0\}=-\mu^2\delta^{(3)}$ | Second-class bracket; $\det\Delta=\mu^4\neq0$ |
 | $\varepsilon^r_\mu$ ($r=1,2,3$), $\varepsilon^L_\mu$ | Transverse and longitudinal polarizations |
 | $\sum_r\varepsilon^r_\mu\varepsilon^r_\nu=\eta_{\mu\nu}+p_\mu p_\nu/\mu^2$ | Polarization completeness; $P^2=P$, $\mathrm{tr}P=3$, $P_{\mu\nu}p^\nu=0$ |
-| $\hat{a}_r(\mathbf{p}),\hat{a}_r^\dagger(\mathbf{p})$ | Mode operators with $[\hat{a}_r,\hat{a}_s^\dagger]=\delta_{rs}(2\pi)^3\delta^{(3)}$ |
-| $:\hat{H}:=\int d^3p/(2\pi)^3\,\omega_{\mathbf{p}}\sum_r\hat{a}_r^\dagger\hat{a}_r$ | Normal-ordered Hamiltonian |
+| $\hat{a}_r(\vec p),\hat{a}_r^\dagger(\vec p)$ | Mode operators with $[\hat{a}_r,\hat{a}_s^\dagger]=\delta_{rs}(2\pi)^3\delta^{(3)}$ |
+| $:\hat{H}:=\int d^3p/(2\pi)^3\,\omega_{\vec p}\sum_r\hat{a}_r^\dagger\hat{a}_r$ | Normal-ordered Hamiltonian |
 | $D_{\mu\nu}(p)=i(\eta_{\mu\nu}+p_\mu p_\nu/\mu^2)/(p^2-\mu^2+i\epsilon)$ | Proca propagator; residue is the polarization projector |
 | $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula |
 

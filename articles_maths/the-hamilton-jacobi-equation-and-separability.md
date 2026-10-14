@@ -217,11 +217,11 @@ a conic with one focus at the centre and eccentricity $e$; the sign of the energ
 $$
 \alpha_\theta^2 = p_\theta^2 + \frac{p_\phi^2}{\sin^2\theta} ,
 $$
-which is the squared magnitude of the angular momentum $|\mathbf L|^2$; and the radial equation is
+which is the squared magnitude of the angular momentum $|\vec L|^2$; and the radial equation is
 $$
-\frac{1}{2m}\Bigl(p_r^2+\frac{|\mathbf L|^2}{r^2}\Bigr)+U(r) = \alpha_1 ,
+\frac{1}{2m}\Bigl(p_r^2+\frac{|\vec L|^2}{r^2}\Bigr)+U(r) = \alpha_1 ,
 $$
-with the energy as the third constant. The three constants $\alpha_1$, $|\mathbf L|^2$ and the axial component of $\mathbf L$ are the three commuting integrals of the spherical case, and they are read off directly from the separated equations. For the general Stäckel potential $U$ the $\phi$ equation is instead $(\partial W_\phi/\partial\phi)^2=2m\bigl(\Gamma_\phi-U_\phi(\phi)\bigr)$, whose constant $\Gamma_\phi$ is the bracket of the $\phi$ coordinate rather than the axial momentum; the central case is the one in which $U_\phi$ is constant and the bracket reduces to $\alpha_\phi^2/2m$. For the Kepler potential $U=-k/r$ the three constants reduce to the classical integrals of the Coulomb problem, and for the isotropic oscillator $U=\frac12m\omega^2r^2$ they exhibit the accidental degeneracy of that problem, whose extra integral is algebraic in the separated momenta.
+with the energy as the third constant. The three constants $\alpha_1$, $|\vec L|^2$ and the axial component of $\vec L$ are the three commuting integrals of the spherical case, and they are read off directly from the separated equations. For the general Stäckel potential $U$ the $\phi$ equation is instead $(\partial W_\phi/\partial\phi)^2=2m\bigl(\Gamma_\phi-U_\phi(\phi)\bigr)$, whose constant $\Gamma_\phi$ is the bracket of the $\phi$ coordinate rather than the axial momentum; the central case is the one in which $U_\phi$ is constant and the bracket reduces to $\alpha_\phi^2/2m$. For the Kepler potential $U=-k/r$ the three constants reduce to the classical integrals of the Coulomb problem, and for the isotropic oscillator $U=\frac12m\omega^2r^2$ they exhibit the accidental degeneracy of that problem, whose extra integral is algebraic in the separated momenta.
 
 ### Parabolic Coordinates and the Stark Effect
 
@@ -278,7 +278,7 @@ The examples are the central force, whose separation constant is the angular mom
 | $I_i=\frac{1}{2\pi}\oint p_i\,dq^i$ | Action variables of a separable system |
 | $(r,\theta,\phi)$, $(r,\phi)$ | Spherical and polar coordinates |
 | $(\xi,\eta,\phi)$, $\xi=r+z$, $\eta=r-z$ | Parabolic coordinates |
-| $\alpha_\phi$, $\alpha_\theta^2=|\mathbf L|^2$ | Spherical separation constants |
+| $\alpha_\phi$, $\alpha_\theta^2=|\vec L|^2$ | Spherical separation constants |
 | $B_1$, $B_2$, $B_1+B_2=2\kappa$ | Parabolic separation constants of the Coulomb-plus-field problem |
 
 ## Further Reading

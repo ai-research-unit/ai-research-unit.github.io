@@ -122,7 +122,7 @@ The statements above are finite and were recomputed in the two-component and fou
 
 **The opposite sign.** For $\mathcal T^2=+1$ no degeneracy is enforced. With a random real symmetric $H$ on $\mathbb{C}^4$ — which is invariant under conjugation, the $\mathcal T^2=+1$ case — the spectrum is $\{-3.01553,-1.70328,0.12807,2.44612\}$, four distinct levels with minimum gap $1.31225$. The contrast is the theorem: the degeneracy is a consequence of the sign, not of the symmetry alone.
 
-**The antisymmetric form.** The pairing that makes each doublet one quaternionic line is the invariant antisymmetric form of the spinor, $\varepsilon=i\sigma_y$, and its invariance was recomputed: for five random $SU(2)$ elements $U=\exp(i\theta\,\mathbf n\cdot\boldsymbol\sigma/2)$, the identity
+**The antisymmetric form.** The pairing that makes each doublet one quaternionic line is the invariant antisymmetric form of the spinor, $\varepsilon=i\sigma_y$, and its invariance was recomputed: for five random $SU(2)$ elements $U=\exp(i\theta\,\vec n\cdot\boldsymbol\sigma/2)$, the identity
 
 $$
 U^{\mathsf T}\varepsilon\,U=\varepsilon
@@ -191,9 +191,9 @@ The biquaternion interpretation is that the algebra contains the units for exact
 **A magnetic field.** The standard $\mathcal T$-odd perturbation of a spin system is a term linear in an external field,
 
 $$
-H_{\text{field}}=-\boldsymbol\mu\cdot\mathbf B ,
+H_{\text{field}}=-\vec\mu\cdot\vec B ,
 \qquad
-\boldsymbol\mu=\gamma\mathbf S ,
+\vec\mu=\gamma\vec S ,
 $$
 
 and it breaks the symmetry because the angular momentum is $\mathcal T$-odd while the field is $\mathcal T$-invariant. In the module language the perturbation is a term along a chosen axis, and the axis is one of the three imaginary directions of the algebra: the field singles out a unit $n$ and hence a particular $e_n$, and the pair $\{v,\mathcal Tv\}$ is split by an amount proportional to the field. This is the empirical signature of the classification: a Kramers pair's splitting in a field is the statement that no $\mathcal T$-invariant perturbation can lift it.
@@ -270,7 +270,7 @@ The same antiunitary $J$ with $J^2=-e_0$ is a quaternionic structure, and the co
 | $\mathcal T=i\sigma_yK$ | Standard spinor representative; $U$ real, $U^2=-I_2$ |
 | $\{v,\mathcal Tv\}$ | Kramers doublet (degenerate, orthogonal pair) |
 | $\langle\mathcal Tv,v\rangle=0$, $H(\mathcal Tv)=E(\mathcal Tv)$ | Proof identities (recomputed, error $0$) |
-| $H_{\text{field}}=-\boldsymbol\mu\cdot\mathbf B$ | $\mathcal T$-odd perturbation; lifts the degeneracy |
+| $H_{\text{field}}=-\vec\mu\cdot\vec B$ | $\mathcal T$-odd perturbation; lifts the degeneracy |
 | $\tilde Q^*,\tilde Q^{*},\tilde Q^\flat=-\tilde Q^{*}$ | The algebra's three antilinear involutions (companion) |
 | $\flat=+$ on $\mathbb{M}_-$, $- $ on $\mathbb{M}_+$ | Sector action of the algebra's real structure |
 | $J^2=-e_0$, $J=UK$ | Quaternionic structure of the state space |

@@ -8,7 +8,7 @@ The results are collected here because they are one subject. The block is a Jord
 
 The square of the block is the plain square, so the idempotents of the block are the idempotents of the plain product, classified in *Square Roots of One and the Idempotents of the General Plain Algebra*, and the norm is the biquaternion norm of *Norm and Invertibility in the General Quaternionic Algebra*. What this article adds is the reading of those facts as the degree-two structure of the Jordan algebra, and the fuller theory of the Jordan inverse. The Common Theory articles of the block are *Norm and Invertibility in the Symmetric Plain Algebra*, *Zero Divisors of the Symmetric Plain Algebra*, *Square Roots of One and the Idempotents of the Symmetric Plain Algebra*, *Square Roots of Zero and the Nilpotents of the Symmetric Plain Algebra*, *Square Roots of a General Element in the Symmetric Plain Algebra* and *The Specificities of the Symmetric Plain Algebra*; the trace form of the block is *The Trace Form and the Invariance of the Symmetric Plain Algebra*; the idempotents as minimal ideals of the parent are *Ideals and Peirce Decomposition of the General Plain Algebra*; and the placement of the block among the twelve operations is *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$ and central scalar imaginary $i$. An element is $\tilde Q=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^{3}Q_ke_k$ and $Q_\mu\in\mathbb{C}$, and $(\mathbf{Q},\mathbf{Q})=\sum_kQ_k^2$. The product is $\bullet$, the symmetric plain product; the product $\tilde P\tilde Q$ without a mark is the general plain one. The natural conjugate is $\tilde Q^{\natural}=Q_0e_0-\mathbf{Q}$, and the biquaternion norm is $\langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$ of *Norm and Invertibility in the General Quaternionic Algebra*, written $N(\tilde Q)$ here.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$ and central scalar imaginary $i$. An element is $\tilde Q=Q_0e_0+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_ke_k$ and $Q_\mu\in\mathbb{C}$, and $(\vec Q,\vec Q)=\sum_kQ_k^2$. The product is $\bullet$, the symmetric plain product; the product $\tilde P\tilde Q$ without a mark is the general plain one. The natural conjugate is $\tilde Q^{\natural}=Q_0e_0-\vec Q$, and the biquaternion norm is $\langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$ of *Norm and Invertibility in the General Quaternionic Algebra*, written $N(\tilde Q)$ here.
 
 ## The Square and the Quadratic Map
 
@@ -17,7 +17,7 @@ The square of the block is the plain square, so the idempotents of the block are
 **Proposition.** The square of an element in the block is the plain square:
 
 $$
-\tilde Q\bullet\tilde Q=\tilde Q^2=\bigl[Q_0^2-(\mathbf{Q},\mathbf{Q})\bigr]e_0+2Q_0\mathbf{Q}.
+\tilde Q\bullet\tilde Q=\tilde Q^2=\bigl[Q_0^2-(\vec Q,\vec Q)\bigr]e_0+2Q_0\vec Q.
 $$
 
 *Proof.* $\tilde Q\bullet\tilde Q=\tfrac12(\tilde Q^2+\tilde Q^2)=\tilde Q^2$, and the plain square is the displayed form, read from the scalar–vector rule of *Introduction to the General Plain Algebra of Biquaternions* at $\tilde P=\tilde Q$.
@@ -45,7 +45,7 @@ $$
 T(\tilde Q)=2Q_0,\quad N(\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^2 .
 $$
 
-*Proof.* On the square of the previous section, $\tilde Q\bullet\tilde Q=Q_0^2-(\mathbf{Q},\mathbf{Q})+2Q_0\mathbf{Q}$ and $T(\tilde Q)\tilde Q=2Q_0\cdot(Q_0e_0+\mathbf{Q})=2Q_0^2e_0+2Q_0\mathbf{Q}$. Subtracting the two leaves $\bigl(Q_0^2-(\mathbf{Q},\mathbf{Q})-2Q_0^2+N(\tilde Q)\bigr)e_0$, and the coefficient vanishes because $N(\tilde Q)=Q_0^2+(\mathbf{Q},\mathbf{Q})$.
+*Proof.* On the square of the previous section, $\tilde Q\bullet\tilde Q=Q_0^2-(\vec Q,\vec Q)+2Q_0\vec Q$ and $T(\tilde Q)\tilde Q=2Q_0\cdot(Q_0e_0+\vec Q)=2Q_0^2e_0+2Q_0\vec Q$. Subtracting the two leaves $\bigl(Q_0^2-(\vec Q,\vec Q)-2Q_0^2+N(\tilde Q)\bigr)e_0$, and the coefficient vanishes because $N(\tilde Q)=Q_0^2+(\vec Q,\vec Q)$.
 
 **Definition.** The functional $T(\tilde Q)=2Q_0$ is the **generic trace** of the block and $N(\tilde Q)=\sum_\mu Q_\mu^2$ its **generic norm**. The quadratic identity is the generic minimal polynomial of the block, of degree two.
 
@@ -54,10 +54,10 @@ $$
 **Remark (the discriminant).** The discriminant of the quadratic identity is
 
 $$
-T(\tilde Q)^2-4N(\tilde Q)=4Q_0^2-4\sum_\mu Q_\mu^2=-4(\mathbf{Q},\mathbf{Q}).
+T(\tilde Q)^2-4N(\tilde Q)=4Q_0^2-4\sum_\mu Q_\mu^2=-4(\vec Q,\vec Q).
 $$
 
-**It vanishes exactly on the set $\{(\mathbf{Q},\mathbf{Q})=0\}$**, the isotropic cone of the vector part, which contains the whole centre; there the two generic roots coincide, and off that set the element has two distinct generic roots. The set is strictly larger than the centre: the element $e_1+ie_2$ has a non-zero vector part and $(\mathbf{Q},\mathbf{Q})=1+i^2=0$, so its quadratic is $\lambda^2$ and its two roots coincide. The computed expression was checked on the coordinate rule.
+**It vanishes exactly on the set $\{(\vec Q,\vec Q)=0\}$**, the isotropic cone of the vector part, which contains the whole centre; there the two generic roots coincide, and off that set the element has two distinct generic roots. The set is strictly larger than the centre: the element $e_1+ie_2$ has a non-zero vector part and $(\vec Q,\vec Q)=1+i^2=0$, so its quadratic is $\lambda^2$ and its two roots coincide. The computed expression was checked on the coordinate rule.
 
 ## The Idempotents of the Block
 
@@ -137,14 +137,14 @@ An element is isotropic exactly when it fails to be invertible, so the invertibl
 **Theorem.** The elements of square zero, $\tilde Q\bullet\tilde Q=0$, are exactly the **pure isotropic vectors**:
 
 $$
-\tilde Q\bullet\tilde Q=0\iff Q_0=0\ \text{and}\ (\mathbf{Q},\mathbf{Q})=0,
+\tilde Q\bullet\tilde Q=0\iff Q_0=0\ \text{and}\ (\vec Q,\vec Q)=0,
 $$
 
 that is, exactly the elements of the vector subspace $\mathrm{Vect}(\mathbb{B})$ on which the norm vanishes. They are a proper subset of the isotropic cone.
 
-*Proof.* By the square of the block, $\tilde Q\bullet\tilde Q=\bigl(Q_0^2-(\mathbf{Q},\mathbf{Q})\bigr)e_0+2Q_0\mathbf{Q}$. Its vanishing gives the two scalar conditions $Q_0^2=(\mathbf{Q},\mathbf{Q})$ and $Q_0\mathbf{Q}=0$. If $Q_0\neq0$ the second gives $\mathbf{Q}=0$, and the first gives $Q_0=0$, a contradiction; so $Q_0=0$, and the first condition becomes $(\mathbf{Q},\mathbf{Q})=0$. Conversely a pure element with $(\mathbf{Q},\mathbf{Q})=0$ has zero square.
+*Proof.* By the square of the block, $\tilde Q\bullet\tilde Q=\bigl(Q_0^2-(\vec Q,\vec Q)\bigr)e_0+2Q_0\vec Q$. Its vanishing gives the two scalar conditions $Q_0^2=(\vec Q,\vec Q)$ and $Q_0\vec Q=0$. If $Q_0\neq0$ the second gives $\vec Q=0$, and the first gives $Q_0=0$, a contradiction; so $Q_0=0$, and the first condition becomes $(\vec Q,\vec Q)=0$. Conversely a pure element with $(\vec Q,\vec Q)=0$ has zero square.
 
-**Remark (square zero is stronger than isotropic).** The isotropic cone is $\{N(\tilde Q)=0\}$, which for a pure element is the same condition $(\mathbf{Q},\mathbf{Q})=0$; but for $Q_0\neq0$ the equation $N(\tilde Q)=0$ has the solutions $(\mathbf{Q},\mathbf{Q})=-Q_0^2$, whose square has the non-zero vector part $2Q_0\mathbf{Q}$ since $\mathbf{Q}\neq0$. The element $e_0+ie_1$ is the witness: $N(e_0+ie_1)=1+i^2=0$, while $(e_0+ie_1)\bullet(e_0+ie_1)=2e_0+2ie_1\neq0$. **The elements of square zero are the pure part of the isotropic cone, and the isotropic cone is strictly larger**, so the two notions must not be identified.
+**Remark (square zero is stronger than isotropic).** The isotropic cone is $\{N(\tilde Q)=0\}$, which for a pure element is the same condition $(\vec Q,\vec Q)=0$; but for $Q_0\neq0$ the equation $N(\tilde Q)=0$ has the solutions $(\vec Q,\vec Q)=-Q_0^2$, whose square has the non-zero vector part $2Q_0\vec Q$ since $\vec Q\neq0$. The element $e_0+ie_1$ is the witness: $N(e_0+ie_1)=1+i^2=0$, while $(e_0+ie_1)\bullet(e_0+ie_1)=2e_0+2ie_1\neq0$. **The elements of square zero are the pure part of the isotropic cone, and the isotropic cone is strictly larger**, so the two notions must not be identified.
 
 ### The Isotopy with the Two by Two Matrices
 
@@ -159,7 +159,7 @@ Two Jordan algebras of degree two whose norm forms are carried to one another by
 
 ## Summary
 
-The symmetric plain algebra is a commutative unital Jordan algebra of degree two. Its square is the plain square, $\tilde Q\bullet\tilde Q=Q_0^2-(\mathbf{Q},\mathbf{Q})+2Q_0\mathbf{Q}$, and it satisfies the quadratic identity $\tilde Q\bullet\tilde Q-T(\tilde Q)\tilde Q+N(\tilde Q)e_0=0$ with generic trace $T(\tilde Q)=2Q_0$ and generic norm $N(\tilde Q)=\sum_\mu Q_\mu^2$, of discriminant $-4(\mathbf{Q},\mathbf{Q})$. Its idempotents are the idempotents of the plain product — the trivial elements $0$ and $e_0$ and the isotropic elements $\tfrac12(e_0+\mathbf u)$ with $\mathbf u^2=e_0$ pure — and their theory is the Common Theory article *Square Roots of One and the Idempotents of the Symmetric Plain Algebra*. Its inverse is $\tilde Q^{-1}=(2Q_0e_0-\tilde Q)/N(\tilde Q)=\tilde Q^{\natural}/N(\tilde Q)$, which is the inverse of the algebra, and the invertibility criterion is $N(\tilde Q)\neq0$. The isotropic cone is $\{N(\tilde Q)=0\}$, the union of the origin and the zero-divisor cone, so the block is not a division Jordan algebra; the elements of square zero are the pure isotropic vectors, a proper subset of that cone, and $e_0+ie_1$ separates the two. The block is a degree-two Jordan algebra isotopic to the symmetrised $2\times2$ matrices, with the generic trace as the matrix trace and the generic norm as the determinant.
+The symmetric plain algebra is a commutative unital Jordan algebra of degree two. Its square is the plain square, $\tilde Q\bullet\tilde Q=Q_0^2-(\vec Q,\vec Q)+2Q_0\vec Q$, and it satisfies the quadratic identity $\tilde Q\bullet\tilde Q-T(\tilde Q)\tilde Q+N(\tilde Q)e_0=0$ with generic trace $T(\tilde Q)=2Q_0$ and generic norm $N(\tilde Q)=\sum_\mu Q_\mu^2$, of discriminant $-4(\vec Q,\vec Q)$. Its idempotents are the idempotents of the plain product — the trivial elements $0$ and $e_0$ and the isotropic elements $\tfrac12(e_0+\vec u)$ with $\vec u^2=e_0$ pure — and their theory is the Common Theory article *Square Roots of One and the Idempotents of the Symmetric Plain Algebra*. Its inverse is $\tilde Q^{-1}=(2Q_0e_0-\tilde Q)/N(\tilde Q)=\tilde Q^{\natural}/N(\tilde Q)$, which is the inverse of the algebra, and the invertibility criterion is $N(\tilde Q)\neq0$. The isotropic cone is $\{N(\tilde Q)=0\}$, the union of the origin and the zero-divisor cone, so the block is not a division Jordan algebra; the elements of square zero are the pure isotropic vectors, a proper subset of that cone, and $e_0+ie_1$ separates the two. The block is a degree-two Jordan algebra isotopic to the symmetrised $2\times2$ matrices, with the generic trace as the matrix trace and the generic norm as the determinant.
 
 ## Summary of Notation
 
@@ -169,10 +169,10 @@ The symmetric plain algebra is a commutative unital Jordan algebra of degree two
 | $T(\tilde Q)=2Q_0$ | the generic trace |
 | $N(\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^2=\langle\tilde Q,\tilde Q\rangle_{\natural}$ | the generic norm, the biquaternion norm |
 | $\tilde Q\bullet\tilde Q-T(\tilde Q)\tilde Q+N(\tilde Q)e_0=0$ | the quadratic identity, the generic minimal polynomial |
-| $\tfrac12(e_0+\mathbf u)$, $\mathbf u^2=e_0$ pure | the non-trivial idempotents (*Square Roots of One and the Idempotents of the Symmetric Plain Algebra*) |
+| $\tfrac12(e_0+\vec u)$, $\vec u^2=e_0$ pure | the non-trivial idempotents (*Square Roots of One and the Idempotents of the Symmetric Plain Algebra*) |
 | $\tilde Q^{-1}=\tilde Q^{\natural}/N(\tilde Q)$ | the Jordan inverse, the algebra inverse |
 | $\{N(\tilde Q)=0\}$ | the isotropic cone, the zero-divisor cone with the origin |
-| $Q_0=0,\ (\mathbf{Q},\mathbf{Q})=0$ | the elements of square zero, the pure isotropic vectors |
+| $Q_0=0,\ (\vec Q,\vec Q)=0$ | the elements of square zero, the pure isotropic vectors |
 | $\mathsf{M}_2$ | the $2\times2$ matrix model, carrying $T$ to $\operatorname{Tr}$ and $N$ to $\det$ |
 
 ## Further Reading

@@ -42,7 +42,7 @@ when the limit exists, where $\log^+t=\max(\log t,0)$, and write $G_{\tilde C}(\
 
 **Proposition (norm-independence).** If the limit defining $G_{\tilde C}(\tilde Q)$ exists for the Euclidean norm, then it exists and is equal for every norm on $\mathbb{B}$; the limit is thus a function of the algebra and the parameter and not of the metric.
 
-**Proof.** Let $\|\cdot\|$ be another norm. Equivalence gives constants $m,M>0$ with $m\|\tilde V\|_E\le\|\tilde V\|\le M\|\tilde V\|_E$ for all $\tilde V$. Then
+**Proof.** Let $\|\cdot\|$ be another norm. Equivalence gives constants $m,M>0$ with $m\|\tilde R\|_E\le\|\tilde R\|\le M\|\tilde R\|_E$ for all $\tilde R$. Then
 
 $$
 2^{-n}\log^+ m+2^{-n}\log^+\|F^n(\tilde Q)\|_E \le 2^{-n}\log^+\|F^n(\tilde Q)\| \le 2^{-n}\log^+ M+2^{-n}\log^+\|F^n(\tilde Q)\|_E ,

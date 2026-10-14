@@ -3,7 +3,7 @@
 ## Introduction
 
 The antisymmetric quaternionic multiplication
-$\tilde p\diamond\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)=p_0\mathbf q-q_0\mathbf p-\mathbf p\times\mathbf q$ is alternating, vector valued and without a unit,
+$\tilde p\diamond\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)=p_0\vec q-q_0\vec p-\vec p\times\vec q$ is alternating, vector valued and without a unit,
 and it fails the Jacobi identity (*Introduction to the Antisymmetric Quaternionic Algebra of
 Quaternions*). This article does the failure in full: the cyclic sum and its closed form, the basis
 computation and the witnesses, the criterion that relates the defect to the associator of the parent
@@ -26,8 +26,8 @@ comparator, whose cyclic sum vanishes, is *The Lie Algebra of the Antisymmetric 
 *The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra* of the
 
 **Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and
-$e_1^2=e_2^2=e_3^2=-e_0$; a generic element is $\tilde q=q_0e_0+\mathbf q$, the **vector subspace** is
-$\mathrm{Vect}(\mathbb{H})=\{\mathbf q\}$ and $\mathbf p\times\mathbf q$ is the vector product. The
+$e_1^2=e_2^2=e_3^2=-e_0$; a generic element is $\tilde q=q_0e_0+\vec q$, the **vector subspace** is
+$\mathrm{Vect}(\mathbb{H})=\{\vec q\}$ and $\vec p\times\vec q$ is the vector product. The
 **cyclic sum** is the left-nested one,
 
 $$
@@ -47,17 +47,17 @@ $[\tilde p,\tilde q,\tilde r]=(\tilde p^{\natural}\tilde q)^{\natural}\tilde r-\
 
 $$
 J(\tilde p,\tilde q,\tilde r)
-=-p_0\,(\mathbf q\times\mathbf r)+q_0\,(\mathbf p\times\mathbf r)-r_0\,(\mathbf p\times\mathbf q).
+=-p_0\,(\vec q\times\vec r)+q_0\,(\vec p\times\vec r)-r_0\,(\vec p\times\vec q).
 $$
 
 In particular $J$ is a pure vector for every triple, the scalar part of every cyclic sum is zero, and
 $J$ is an $\mathbb{R}$-trilinear alternating map of its three arguments.
 
-*Proof.* Insert the explicit form $\tilde a\diamond\tilde b=a_0\mathbf b-b_0\mathbf a-\mathbf a\times\mathbf b$
+*Proof.* Insert the explicit form $\tilde a\diamond\tilde b=a_0\vec b-b_0\vec a-\vec a\times\vec b$
 into the three terms. The first factor of each term is a value of the block and has zero scalar part, so
 each term is $-c_0\tilde u-\tilde u\times\tilde c$ with $\tilde u$ the bracket of the first two
 arguments; collecting the three terms, the double cross products collapse by the identity
-$\mathbf u\times(\mathbf a\times\mathbf b)=\mathbf a(\mathbf u,\mathbf b)-\mathbf b(\mathbf u,\mathbf a)$
+$\vec u\times(\vec a\times\vec b)=\vec a(\vec u,\vec b)-\vec b(\vec u,\vec a)$
 and the terms with the scalar product of vectors cancel in pairs, leaving the displayed expression.
 Alternation follows from the antisymmetry of the cross product.
 
@@ -174,7 +174,7 @@ $\mathbb{H}\diamond\mathbb{H}=\mathrm{Vect}(\mathbb{H})$, and it is closed under
 the block is the negative of the cross product,
 
 $$
-\mathbf p\diamond\mathbf q=-\,\mathbf p\times\mathbf q ,
+\vec p\diamond\vec q=-\,\vec p\times\vec q ,
 $$
 
 which satisfies the Jacobi identity; the subalgebra $(\mathrm{Vect}(\mathbb{H}),\diamond)$ is therefore
@@ -189,14 +189,14 @@ Algebra*, above this article in this category, of structure $\mathfrak{so}(3)$.
 
 **Remark (the failure is the scalar–vector interaction).** The block is a Lie bracket on
 $\mathrm{Vect}(\mathbb{H})$ and not on $\mathbb{H}$: the derived bracket is the cross product and is
-closed and Lie, and what the block adds to it is the two mixed terms $p_0\mathbf q-q_0\mathbf p$, which
+closed and Lie, and what the block adds to it is the two mixed terms $p_0\vec q-q_0\vec p$, which
 carry the scalar part into the vector subspace and break the identity. The failure is thus the failure
 of the extension, not of the derived bracket.
 
 ## Summary
 
 The antisymmetric quaternionic block fails the Jacobi identity. Its cyclic sum is the pure vector
-$J(\tilde p,\tilde q,\tilde r)=-p_0(\mathbf q\times\mathbf r)+q_0(\mathbf p\times\mathbf r)-r_0(\mathbf p\times\mathbf q)$,
+$J(\tilde p,\tilde q,\tilde r)=-p_0(\vec q\times\vec r)+q_0(\vec p\times\vec r)-r_0(\vec p\times\vec q)$,
 linear in the scalar triple with the three cross products as coefficients; it vanishes identically in
 the scalar triple exactly on the pairwise parallel vector parts, and it is nonzero on $18$ of the $64$
 basis triples. The witness is $(e_0,e_1,e_2)$, of value $-e_3$, and the minimal witnesses are the three
@@ -214,12 +214,12 @@ same way and has $\mathfrak{sl}(2,\mathbb{C})$ as derived algebra.
 | Symbol | Meaning |
 |---|---|
 | $J(\tilde p,\tilde q,\tilde r)=(x\diamond y)\diamond z+(y\diamond z)\diamond x+(z\diamond x)\diamond y$ | the cyclic sum |
-| $-p_0(\mathbf q\times\mathbf r)+q_0(\mathbf p\times\mathbf r)-r_0(\mathbf p\times\mathbf q)$ | the closed form |
+| $-p_0(\vec q\times\vec r)+q_0(\vec p\times\vec r)-r_0(\vec p\times\vec q)$ | the closed form |
 | $J(e_0,e_1,e_2)=-e_3$ | the witness of the failure |
 | $[\tilde p,\tilde q,\tilde r]=(\tilde p^{\natural}\tilde q)^{\natural}\tilde r-\tilde p^{\natural}(\tilde q^{\natural}\tilde r)$ | the associator of the parent |
 | $(\tilde q^{\natural}\tilde p-\tilde p^{\natural}\tilde q^{\natural})\tilde r$ | the closed form of the associator |
 | $J=\tfrac14\sum_\sigma\operatorname{sgn}(\sigma)\,[\tilde p_\sigma,\tilde q_\sigma,\tilde r_\sigma]$ | the criterion |
-| $\mathbf p\diamond\mathbf q=-\mathbf p\times\mathbf q$ | the derived bracket, a Lie bracket of structure $\mathfrak{so}(3)$ |
+| $\vec p\diamond\vec q=-\vec p\times\vec q$ | the derived bracket, a Lie bracket of structure $\mathfrak{so}(3)$ |
 
 ## Further Reading
 

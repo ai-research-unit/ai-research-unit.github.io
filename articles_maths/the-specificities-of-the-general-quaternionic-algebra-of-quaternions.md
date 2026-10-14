@@ -60,7 +60,7 @@ nonzero at $[e_1,e_0,e_0] = 2e_1$ and at $24$ of the $64$ basis triples. The pro
 
 **Theorem (the two eigenspaces).** The conjugation is an involution of the algebra, $\tilde p^{\natural\natural} = \tilde p$; it fixes the scalar line and negates the vector subspace, which are its two eigenspaces, of dimensions one and three.
 
-*Proof.* The coordinate expression $p_0 - \mathbf p$ gives both statements at once.
+*Proof.* The coordinate expression $p_0 - \vec p$ gives both statements at once.
 
 **Theorem (what the conjugation reverses, and what it does not).** The conjugation is an anti-automorphism of the **plain** product, $(\tilde p\tilde q)^{\natural} = \tilde q^{\natural}\tilde p^{\natural}$, and it is **not** an anti-automorphism of the quaternionic product: $(\tilde p \star \tilde q)^{\natural} = \tilde q^{\natural}\tilde p$ and $\tilde q^{\natural} \star \tilde p^{\natural} = \tilde q\tilde p^{\natural}$, and the two differ for a non-central factor. What holds instead is the exchange law
 

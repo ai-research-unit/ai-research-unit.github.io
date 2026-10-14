@@ -14,7 +14,7 @@ The article is organised as follows. A first section defines the survival amplit
 **Conventions.** We use those of *Conventions in the Biquaternion Universe*, *Introduction to the Biquaternion Universe* and *Quantum Physics in Biquaternionic Form*. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with units $e_0=1,e_1,e_2,e_3$, $e_j^2=-e_0$, and central scalar imaginary $i$ with $i^2=-1$. The Hermitian subspace is $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$; the Hamiltonian is $\tilde H\in\mathbb{M}_+$, so that
 
 $$
-\tilde H = h_0\,e_0 + i\,\mathbf{h}, \qquad h_0\in\mathbb{R},\quad \mathbf{h}\in\mathbb{R}^3,
+\tilde H = h_0\,e_0 + i\,\vec h, \qquad h_0\in\mathbb{R},\quad \vec h\in\mathbb{R}^3,
 $$
 
 and the centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$. The state module is $S=\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$ with the dictionary $\mathsf{M}_2(e_k)=-i\sigma_k$ and $\mathsf{M}_2(ie_k)=\sigma_k$; a pure state is the idempotent $\tilde P=\tfrac12(e_0+i\hat\mu)$ with $\hat\mu$ a unit vector along the $e_k$, and $\mathrm{Tr}(\tilde P)=1$. The trace convention is $\mathrm{Tr}=2\,\mathrm{Sc}$. The dynamics is $\tilde U(t)=e^{-i\tilde Ht/\hbar}$ with the state evolving by conjugation, $\tilde\rho(t)=\tilde U(t)\tilde\rho(0)\tilde U(t)^{*}$; the evolution is unitary, $\tilde U\tilde U^{*}=e_0$, and the scalar part $h_0$ of the Hamiltonian contributes only a global phase to the conjugated state. Energies are measured in the same units as $\hbar\omega$.
@@ -158,7 +158,7 @@ On the first sheet the denominator $z-E_0-\Sigma(z)$ inherits that symmetry: its
 
 ### The pole is central
 
-The self-energy $\Sigma(z)$ is a scalar function of the central variable $z$, and the equation that fixes the pole, $z-E_0-\Sigma(z)=0$, is an equation between complex numbers of the centre. The pole $z_\star$, the level shift $\Delta$, the width $\Gamma$ and the lifetime $\tau=\hbar/\Gamma$ are therefore **central**, whatever the direction of $\mathbf{h}$ in the Hamiltonian and however the non-central part couples the slots of the module. This is the article's structural statement, and it is the theorem behind the fifth limit of *The Biquaternion Universe as an Improvement of the Quaternionic Quantum Theory* — a dynamics that preserves the Hermitian norm for every Hermitian generator forces its unit into the centre, *Unitarity from Centrality: The Biquaternion Norm-Preservation Theorem* — read here at the level of a displaced pole. The same centrality that fixes the norm-preserving unit fixes the pole.
+The self-energy $\Sigma(z)$ is a scalar function of the central variable $z$, and the equation that fixes the pole, $z-E_0-\Sigma(z)=0$, is an equation between complex numbers of the centre. The pole $z_\star$, the level shift $\Delta$, the width $\Gamma$ and the lifetime $\tau=\hbar/\Gamma$ are therefore **central**, whatever the direction of $\vec h$ in the Hamiltonian and however the non-central part couples the slots of the module. This is the article's structural statement, and it is the theorem behind the fifth limit of *The Biquaternion Universe as an Improvement of the Quaternionic Quantum Theory* — a dynamics that preserves the Hermitian norm for every Hermitian generator forces its unit into the centre, *Unitarity from Centrality: The Biquaternion Norm-Preservation Theorem* — read here at the level of a displaced pole. The same centrality that fixes the norm-preserving unit fixes the pole.
 
 The centrality is not a coincidence of the models treated below. It is a consequence of taking the trace over the module to reach the scalar Green's function: the trace of a module operator is central, and any quantity read from the trace is central with it.
 
@@ -172,7 +172,7 @@ $$
 H = \begin{pmatrix} H_{\mathrm{c}} & V \\ V^{*} & H_{\mathrm{nc}}\end{pmatrix},
 $$
 
-where $H_{\mathrm{c}}$ governs the first slot, $H_{\mathrm{nc}}$ the second, and $V$ is the off-diagonal entry through which the two are coupled — the entry into which the non-central part $i\mathbf{h}$ of $\tilde H$ enters. The block identity of *The Resolvent Operator*, applied to this splitting, gives the Green's function of the first slot its reduced form,
+where $H_{\mathrm{c}}$ governs the first slot, $H_{\mathrm{nc}}$ the second, and $V$ is the off-diagonal entry through which the two are coupled — the entry into which the non-central part $i\vec h$ of $\tilde H$ enters. The block identity of *The Resolvent Operator*, applied to this splitting, gives the Green's function of the first slot its reduced form,
 
 $$
 G_{\mathrm{c}}(z) = \Bigl(z - H_{\mathrm{c}} - V\frac{1}{z-H_{\mathrm{nc}}}V^{*}\Bigr)^{-1}
@@ -286,7 +286,7 @@ What the algebra adds is that the pole is central, that a non-central coupling r
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra; centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces |
-| $\tilde H=h_0e_0+i\mathbf{h}$ | Hamiltonian, Hermitian, $h_0\in\mathbb{R}$, $\mathbf{h}\in\mathbb{R}^3$ |
+| $\tilde H=h_0e_0+i\vec h$ | Hamiltonian, Hermitian, $h_0\in\mathbb{R}$, $\vec h\in\mathbb{R}^3$ |
 | $\tilde P_0$ | Idempotent of the initial state, rank one, $\mathrm{Tr}=1$ |
 | $\tilde U(t)=e^{-i\tilde Ht/\hbar}$ | Unitary evolution, $\tilde U\tilde U^{*}=e_0$ |
 | $A(t)=\mathrm{Tr}(\tilde P_0\tilde U(t))$ | Survival amplitude; $P(t)=\lvert A(t)\rvert^{2}$ |

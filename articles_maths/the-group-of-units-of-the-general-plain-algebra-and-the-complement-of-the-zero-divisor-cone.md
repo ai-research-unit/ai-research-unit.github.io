@@ -39,8 +39,7 @@ Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. None of those is
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0=1,e_1,e_2,e_3$
 with $e_1e_2=e_3$, $e_k^{2}=-e_0$ and central scalar imaginary $i$; a general element is $\tilde
-Q=\sum_{\mu=0}^{3}Q_\mu e_\mu=Q_0e_0+\mathbf Q$ with $Q_\mu\in\mathbb{C}$ and $\mathbf
-Q=\sum_{k=1}^{3}Q_ke_k$. The natural conjugation is $\tilde Q^{\natural}=Q_0-\mathbf Q$, the
+Q=\sum_{\mu=0}^{3}Q_\mu e_\mu=Q_0e_0+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=\sum_{k=1}^{3}Q_ke_k$. The natural conjugation is $\tilde Q^{\natural}=Q_0-\vec Q$, the
 coefficientwise conjugation is $\bar{\cdot}$, and the Hermitian conjugation is
 ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The product is the general plain bilinear product $\tilde
 P\tilde Q$, written by juxtaposition, and the **general quaternionic bilinear algebraic norm** $N$,
@@ -81,15 +80,15 @@ $$
 $$
 
 *Proof.* The natural conjugation is an anti-automorphism, $\tilde P^{\natural}\tilde
-Q^{\natural}=(\tilde Q\tilde P)^{\natural}$. Write $\tilde Q=Q_0e_0+\mathbf Q$, so that $\tilde
-Q^{\natural}=Q_0e_0-\mathbf Q$ and
+Q^{\natural}=(\tilde Q\tilde P)^{\natural}$. Write $\tilde Q=Q_0e_0+\vec Q$, so that $\tilde
+Q^{\natural}=Q_0e_0-\vec Q$ and
 
 $$
-\tilde Q\tilde Q^{\natural}=Q_0^{2}e_0-\mathbf Q^{2},
+\tilde Q\tilde Q^{\natural}=Q_0^{2}e_0-\vec Q^{2},
 $$
 
 whose vector part vanishes and whose scalar part is $Q_0^{2}+\sum_k Q_k^{2}=N(\tilde Q)$, because
-the vector part of the algebra squares to $\mathbf Q^{2}=-\sum_kQ_k^{2}e_0$. Hence $\tilde Q\tilde
+the vector part of the algebra squares to $\vec Q^{2}=-\sum_kQ_k^{2}e_0$. Hence $\tilde Q\tilde
 Q^{\natural}=N(\tilde Q)e_0$, and the same computation in the other order gives $\tilde
 Q^{\natural}\tilde Q=N(\tilde Q)e_0$. If $N(\tilde Q)\neq0$ the displayed element is a two-sided
 inverse. If $N(\tilde Q)=0$ and $\tilde Q\neq0$ then $\tilde Q^{\natural}\neq0$ and $\tilde Q\tilde

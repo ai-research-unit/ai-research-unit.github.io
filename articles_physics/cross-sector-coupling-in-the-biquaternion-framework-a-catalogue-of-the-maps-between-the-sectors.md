@@ -67,8 +67,8 @@ $$
 \tilde{Q}^{\natural}\tilde{Q} = N(\tilde{Q})\,e_0,
 $$
 
-with $N(\tilde{Q}) = \sum_\mu Q_\mu^{2}$. For $\tilde{Q}\in\mathbb{M}_-$, written $\tilde{Q} = ict\,e_0+\mathbf{x}$
-with real $t$ and $\mathbf{x}$, the value $N(\tilde{Q}) = -c^{2}t^{2}+\mathbf{x}^{2}$ is **real**, and the
+with $N(\tilde{Q}) = \sum_\mu Q_\mu^{2}$. For $\tilde{Q}\in\mathbb{M}_-$, written $\tilde{Q} = ict\,e_0+\vec x$
+with real $t$ and $\vec x$, the value $N(\tilde{Q}) = -c^{2}t^{2}+\vec x^{2}$ is **real**, and the
 scalar line $\mathbb{R}e_0$ lies in $\mathbb{M}_+$.
 
 **Interpretation.** Squaring is therefore a map $\mathbb{M}_-\to\mathbb{M}_+$, with image the real scalar line,
@@ -83,15 +83,15 @@ $100$; on $100$ random pairs of material elements the product lies in neither se
 
 The second map is a rotation of the four-vector into an element of the informational sector.
 
-**Map.** On a material element $\tilde{Q} = ict\,e_0+\mathbf{x}$, the central element
+**Map.** On a material element $\tilde{Q} = ict\,e_0+\vec x$, the central element
 $\tilde{H} = -\tfrac{i}{2}\tilde{Q}$ is
 
 $$
-\tilde{H} = -\tfrac{i}{2}\bigl(ict\,e_0+\mathbf{x}\bigr) = \tfrac12\bigl(ct\,e_0-i\mathbf{x}\bigr) \in \mathbb{M}_+,
+\tilde{H} = -\tfrac{i}{2}\bigl(ict\,e_0+\vec x\bigr) = \tfrac12\bigl(ct\,e_0-i\vec x\bigr) \in \mathbb{M}_+,
 $$
 
 with $\mathrm{Tr}(\tilde{H}) = ct$ and $N(\tilde{H}) = -\tfrac14 N(\tilde{Q})$. On the trace-one slice
-$ct = 1$ it is the Hermitian state $\tilde\rho = \tfrac12(e_0+i\mathbf{r})$ with $\mathbf{r} = -\mathbf{x}$,
+$ct = 1$ it is the Hermitian state $\tilde\rho = \tfrac12(e_0+i\vec r)$ with $\vec r = -\vec x$,
 a point of the Bloch ball.
 
 **Interpretation.** The map is a dictionary and not a dynamics: it names a **state preparation**, the
@@ -125,12 +125,12 @@ Rotation: Phase, Duality and the Wick Rotation as One Generator*. The scalar $i$
 
 An informational element can also act on a material one.
 
-**Proposition.** A unit-norm element $\tilde{\Lambda}\in\mathbb{M}_+$ — the carrier of the pure boosts —
-acts on the material sector by the sandwich $\tilde{T}\mapsto\tilde{\Lambda}\tilde{T}\tilde{\Lambda}^{*}$,
+**Proposition.** A unit-norm element $\tilde{U}\in\mathbb{M}_+$ — the carrier of the pure boosts —
+acts on the material sector by the sandwich $\tilde{T}\mapsto\tilde{U}\tilde{T}\tilde{U}^{*}$,
 and the result is again material.
 
-**Why.** $(\tilde{\Lambda}\tilde{T}\tilde{\Lambda}^{*})^{*} = \tilde{\Lambda}\tilde{T}^{*}\tilde{\Lambda}^{*} = -\tilde{\Lambda}\tilde{T}\tilde{\Lambda}^{*}$,
-since $\tilde{\Lambda}^{*} = \tilde{\Lambda}$ for a Hermitian rotor and $\tilde{T}^{*} = -\tilde{T}$.
+**Why.** $(\tilde{U}\tilde{T}\tilde{U}^{*})^{*} = \tilde{U}\tilde{T}^{*}\tilde{U}^{*} = -\tilde{U}\tilde{T}\tilde{U}^{*}$,
+since $\tilde{U}^{*} = \tilde{U}$ for a Hermitian rotor and $\tilde{T}^{*} = -\tilde{T}$.
 
 **Interpretation.** The action is a **frame change**: the informational sector, through its Hermitian rotors,
 supplies the transformations of the material sector. It is a coupling of a third kind — not a map
@@ -147,14 +147,14 @@ A coupling can also be a scalar read from one element of each sector.
 the scalar part of the plain product is purely imaginary,
 
 $$
-\mathrm{Sc}(\tilde{P}\tilde{H}) = i\bigl(ct\,h_0-\mathbf{x}\cdot\mathbf{h}\bigr) \quad \text{for }
-\tilde{P} = ict\,e_0+\mathbf{x}, \quad \tilde{H} = h_0e_0+i\mathbf{h},
+\mathrm{Sc}(\tilde{P}\tilde{H}) = i\bigl(ct\,h_0-\vec x\cdot\vec h\bigr) \quad \text{for }
+\tilde{P} = ict\,e_0+\vec x, \quad \tilde{H} = h_0e_0+i\vec h,
 $$
 
 with both factors real.
 
-**Why.** The scalar part of the product is $P_0H_0-(\mathbf{P},\mathbf{H})$, and the two terms are
-$ict\cdot h_0$ and $\mathbf{x}\cdot i\mathbf{h}$, each carrying one factor of $i$.
+**Why.** The scalar part of the product is $P_0H_0-(\vec P,\vec H)$, and the two terms are
+$ict\cdot h_0$ and $\vec x\cdot i\vec h$, each carrying one factor of $i$.
 
 **Interpretation.** The pairing reads a material operation against an informational state and returns a phase,
 which is the off-sector interpretation of *The General Plain Bilinear Product on the Material Sector*. It is a pairing and
@@ -208,7 +208,7 @@ Biquaternionic Form*.
 | square $\tilde{Q}\mapsto\tilde{Q}^{\natural}\tilde{Q}$ | map | $\mathbb{M}_-\to\mathbb{M}_+$, image $\mathbb{R}e_0$ | *The Interval as the Square and the Charge of the Material Composition* | a map, not an evolution; the product of two is not informational |
 | preparation $\tilde{H} = -\tfrac{i}{2}\tilde{Q}$ | map | $\mathbb{M}_-\to\mathbb{M}_+$ | *The Bloch Ball as the Trace-One Slice of the Future Light Cone* | a dictionary, no dynamics; state only on the trace-one slice |
 | central multiplication $\tilde{Q}\mapsto i\tilde{Q}$ | map | $\mathbb{M}_-\leftrightarrow\mathbb{M}_+$ | *Conventions in the Biquaternion Universe* | invertible, order four; no arrow by itself |
-| rotor action $\tilde{T}\mapsto\tilde{\Lambda}\tilde{T}\tilde{\Lambda}^{*}$ | action | $\mathbb{M}_+$ acts on $\mathbb{M}_-$ | *Biquaternion Rotations and Lorentz Transformations* | preserves the sector it acts on; unit-norm rotors only |
+| rotor action $\tilde{T}\mapsto\tilde{U}\tilde{T}\tilde{U}^{*}$ | action | $\mathbb{M}_+$ acts on $\mathbb{M}_-$ | *Biquaternion Rotations and Lorentz Transformations* | preserves the sector it acts on; unit-norm rotors only |
 | off-sector scalar $\mathrm{Sc}(\tilde{P}\tilde{H})$ | pairing | $\mathbb{M}_-\times\mathbb{M}_+\to i\mathbb{R}$ | *The General Plain Bilinear Product on the Material Sector* | a pairing, produces no element |
 | imaginary part of $N$ | pairing | $\mathbb{M}_-\times\mathbb{M}_+$ cross terms | *Norm and Invertibility in the General Quaternionic Algebra* | an interpretation of one element's own cross terms |
 | Matsubara continuation | continuation | imaginary time $=$ informational time | *The KMS Condition and the Biquaternion Framework*, *The Matsubara Thermal Formalism in Biquaternionic Form* | a continuation, not a new coupling |
@@ -261,11 +261,11 @@ each of its instances owned by an article that proves it.
 | $\mathbb{M}_\pm = \{\tilde{Q} : \tilde{Q}^{*} = \pm\tilde{Q}\}$ | Material ($-$) and informational ($+$) sectors |
 | ${}^{*}$ | Hermitian conjugation, $e_k^{*} = -e_k$, $i^{*} = -i$ |
 | ${}^{\natural}$, $\bar{\cdot}$, $\flat = -{}^{*}$ | Quaternion conjugation, coefficient conjugation, the real structure |
-| $\tilde{Q} = ict\,e_0+\mathbf{x}$ | Material element, $t$ and $\mathbf{x}$ real |
-| $\tilde{H} = h_0e_0+i\mathbf{h}$ | Informational element, $h_0$ and $\mathbf{h}$ real |
+| $\tilde{Q} = ict\,e_0+\vec x$ | Material element, $t$ and $\vec x$ real |
+| $\tilde{H} = h_0e_0+i\vec h$ | Informational element, $h_0$ and $\vec h$ real |
 | $N(\tilde{Q}) = \tilde{Q}^{\natural}\tilde{Q} = \sum_\mu Q_\mu^{2}$ | Biquaternion norm; equal to the interval on $\mathbb{M}_-$ |
 | $\tilde{H} = -\tfrac{i}{2}\tilde{Q}$ | The preparation map, $\mathbb{M}_-\to\mathbb{M}_+$ |
-| $\tilde{T}\mapsto\tilde{\Lambda}\tilde{T}\tilde{\Lambda}^{*}$ | The rotor action, $\tilde{\Lambda}\in\mathbb{M}_+$ of unit norm |
+| $\tilde{T}\mapsto\tilde{U}\tilde{T}\tilde{U}^{*}$ | The rotor action, $\tilde{U}\in\mathbb{M}_+$ of unit norm |
 | $\mathrm{Sc}(\tilde{P}\tilde{H})$ | Off-sector scalar pairing, purely imaginary |
 
 ## Further Reading

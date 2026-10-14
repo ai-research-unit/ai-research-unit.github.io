@@ -120,7 +120,7 @@ $$
 D_3 = e_1\partial_1 + e_2\partial_2 + e_3\partial_3
 $$
 
-be the three-dimensional Cauchy–Riemann operator, or **Moisil–Theodoresco operator**, of *Quaternion Regular Functions*, where its relation to the four-dimensional operator of that article is stated. On a quaternion-valued $g$ it acts as $D_3g = -\operatorname{div}\mathbf{g}+\operatorname{grad}g_0+\operatorname{rot}\mathbf{g}$; on a scalar it is the gradient, $D_3\phi = \operatorname{grad}\phi$; and its square is the negative Laplacian, $D_3^2 = -\Delta$, the cross terms cancelling because $\partial_j\partial_k$ is symmetric while $e_je_k$ is antisymmetric for $j\neq k$. The **logarithmic derivative** of Marchenko is the vector-valued function
+be the three-dimensional Cauchy–Riemann operator, or **Moisil–Theodoresco operator**, of *Quaternion Regular Functions*, where its relation to the four-dimensional operator of that article is stated. On a quaternion-valued $g$ it acts as $D_3g = -\operatorname{div}\vec g+\operatorname{grad}g_0+\operatorname{rot}\vec g$; on a scalar it is the gradient, $D_3\phi = \operatorname{grad}\phi$; and its square is the negative Laplacian, $D_3^2 = -\Delta$, the cross terms cancelling because $\partial_j\partial_k$ is symmetric while $e_je_k$ is antisymmetric for $j\neq k$. The **logarithmic derivative** of Marchenko is the vector-valued function
 
 $$
 \check\partial\phi = \phi^{-1}D_3\phi,
@@ -128,45 +128,45 @@ $$
 
 and it is logarithmic in the sense that $\check\partial(\phi_1\phi_2) = \check\partial\phi_1+\check\partial\phi_2$ for non-vanishing scalars, which is the Leibniz rule $D_3(\phi g) = D_3(\phi)g+\phi D_3g$ applied to a scalar left factor.
 
-**Proposition (the Riccati PDE).** A scalar $\phi$ that does not vanish on $\Omega$ solves the three-dimensional Schrödinger equation $\Delta\phi+v\phi = 0$ if and only if $\mathbf{f} = \check\partial\phi$ solves
+**Proposition (the Riccati PDE).** A scalar $\phi$ that does not vanish on $\Omega$ solves the three-dimensional Schrödinger equation $\Delta\phi+v\phi = 0$ if and only if $\vec f = \check\partial\phi$ solves
 
 $$
-D_3\mathbf{f} + \mathbf{f}^2 = v .
+D_3\vec f + \vec f^2 = v .
 $$
 
-*Proof.* Write $\mathbf{f} = \phi^{-1}\nabla\phi$. Its curl vanishes, $\operatorname{rot}\mathbf{f} = \nabla(\phi^{-1})\times\nabla\phi = 0$, so $D_3\mathbf{f} = -\operatorname{div}\mathbf{f} = -\phi^{-1}\Delta\phi+\phi^{-2}\langle\nabla\phi,\nabla\phi\rangle$, while $\mathbf{f}^2 = -|\mathbf{f}|^2 = -\phi^{-2}\langle\nabla\phi,\nabla\phi\rangle$. The last terms cancel and $D_3\mathbf{f}+\mathbf{f}^2 = -\phi^{-1}\Delta\phi$, which equals $v$ exactly when $\Delta\phi+v\phi = 0$.
+*Proof.* Write $\vec f = \phi^{-1}\nabla\phi$. Its curl vanishes, $\operatorname{rot}\vec f = \nabla(\phi^{-1})\times\nabla\phi = 0$, so $D_3\vec f = -\operatorname{div}\vec f = -\phi^{-1}\Delta\phi+\phi^{-2}\langle\nabla\phi,\nabla\phi\rangle$, while $\vec f^2 = -|\vec f|^2 = -\phi^{-2}\langle\nabla\phi,\nabla\phi\rangle$. The last terms cancel and $D_3\vec f+\vec f^2 = -\phi^{-1}\Delta\phi$, which equals $v$ exactly when $\Delta\phi+v\phi = 0$.
 
-**Remark (component form and the one-dimensional case).** Since the vector part of $D_3\mathbf{f}$ is the curl, the Riccati PDE is the pair $\operatorname{rot}\mathbf{f} = 0$ and $-\operatorname{div}\mathbf{f}+\mathbf{f}^2 = v$. On a simply connected domain the first gives $\mathbf{f} = \operatorname{grad}\phi$, and the second becomes the scalar equation
+**Remark (component form and the one-dimensional case).** Since the vector part of $D_3\vec f$ is the curl, the Riccati PDE is the pair $\operatorname{rot}\vec f = 0$ and $-\operatorname{div}\vec f+\vec f^2 = v$. On a simply connected domain the first gives $\vec f = \operatorname{grad}\phi$, and the second becomes the scalar equation
 
 $$
 \Delta\phi + \langle\nabla\phi,\nabla\phi\rangle = -v .
 $$
 
-For $\mathbf{f} = f_k(x_k)e_k$ the equation reduces to $\partial_kf_k+f_k^2 = -v$, which is the classical Riccati equation: the equation of the line is a solution class of the equation of $\mathbb{R}^3$, not merely a limiting case of it.
+For $\vec f = f_k(x_k)e_k$ the equation reduces to $\partial_kf_k+f_k^2 = -v$, which is the classical Riccati equation: the equation of the line is a solution class of the equation of $\mathbb{R}^3$, not merely a limiting case of it.
 
-**Remark (the factorisation, and its hypothesis).** The Schrödinger operator factorises as the logarithmic derivative linearises it. With $M_{\mathbf{f}}$ the operator of right multiplication by $\mathbf{f}$, one has $-\Delta-vI = (D_3+M_{\mathbf{f}})(D_3-M_{\mathbf{f}})$ if and only if $\mathbf{f}$ solves the Riccati PDE. The identity holds on a scalar right factor, and the restriction is not cosmetic: it is exactly the hypothesis of the Leibniz rule above. On a general quaternion-valued argument the product differs from $-\Delta-v$ by $\sum_ke_k[\psi,\partial_k\mathbf{f}]$, which vanishes for scalar $\psi$ and for constant $\mathbf{f}$ and not otherwise.
+**Remark (the factorisation, and its hypothesis).** The Schrödinger operator factorises as the logarithmic derivative linearises it. With $M_{\vec f}$ the operator of right multiplication by $\vec f$, one has $-\Delta-vI = (D_3+M_{\vec f})(D_3-M_{\vec f})$ if and only if $\vec f$ solves the Riccati PDE. The identity holds on a scalar right factor, and the restriction is not cosmetic: it is exactly the hypothesis of the Leibniz rule above. On a general quaternion-valued argument the product differs from $-\Delta-v$ by $\sum_ke_k[\psi,\partial_k\vec f]$, which vanishes for scalar $\psi$ and for constant $\vec f$ and not otherwise.
 
 ### Euler's Theorems in Three Dimensions
 
 Both classical theorems lift, with the quadrature replaced by the transport equation.
 
-**Proposition (the first theorem, lifted).** Let $\mathbf{h} = \operatorname{grad}\xi$ be a particular solution of the Riccati PDE. Then $\mathbf{f} = \mathbf{g}+\mathbf{h}$ is also a solution, where $\mathbf{g} = \check\partial\Psi$ and the scalar $\Psi$ solves
+**Proposition (the first theorem, lifted).** Let $\vec h = \operatorname{grad}\xi$ be a particular solution of the Riccati PDE. Then $\vec f = \vec g+\vec h$ is also a solution, where $\vec g = \check\partial\Psi$ and the scalar $\Psi$ solves
 
 $$
 \Delta\Psi + 2\langle\nabla\xi,\nabla\Psi\rangle = 0,
 $$
 
-equivalently $\operatorname{div}(e^{2\xi}\nabla\Psi) = 0$. The first form is the **transport equation** of the ray method, which appears paired with the eikonal equation in the short-wavelength approximation of the wave equation; the second is the equation of electrostatics with $e^{2\xi}$ as the dielectric permeability, and the continuity equation of a steady flow with $e^{2\xi}$ as the density. The classical first theorem is the case $\mathbf{h} = 0$.
+equivalently $\operatorname{div}(e^{2\xi}\nabla\Psi) = 0$. The first form is the **transport equation** of the ray method, which appears paired with the eikonal equation in the short-wavelength approximation of the wave equation; the second is the equation of electrostatics with $e^{2\xi}$ as the dielectric permeability, and the continuity equation of a steady flow with $e^{2\xi}$ as the density. The classical first theorem is the case $\vec h = 0$.
 
-**Proposition (the second theorem, lifted).** Let $\mathbf{h}_1 = \operatorname{grad}\xi_1$ and $\mathbf{h}_2 = \operatorname{grad}\xi_2$ be two particular solutions. Then
+**Proposition (the second theorem, lifted).** Let $\vec h_1 = \operatorname{grad}\xi_1$ and $\vec h_2 = \operatorname{grad}\xi_2$ be two particular solutions. Then
 
 $$
-\mathbf{f} = \nabla\phi = \frac{\mathbf{h}_1w-\mathbf{h}_2}{w-1}, \qquad w = Ae^{\xi_1-\xi_2},
+\vec f = \nabla\phi = \frac{\vec h_1w-\vec h_2}{w-1}, \qquad w = Ae^{\xi_1-\xi_2},
 $$
 
 with $A$ a complex constant, solves the Riccati PDE.
 
-**Example (the lifted theorems give a class, not the general solution).** For $v = -1$ the constants $\mathbf{h}_1 = e_1 = \operatorname{grad}x_1$ and $\mathbf{h}_2 = e_2 = \operatorname{grad}x_2$ are particular solutions, and the second theorem gives the one-parameter family $\mathbf{f} = (Ae^{x_1-x_2}e_1-e_2)/(Ae^{x_1-x_2}-1)$. The third solution $\mathbf{h}_3 = e_3$ belongs to no member of that family. The classical count of particular solutions therefore does not survive the lift unchanged: two particular solutions give a larger class and not the general solution.
+**Example (the lifted theorems give a class, not the general solution).** For $v = -1$ the constants $\vec h_1 = e_1 = \operatorname{grad}x_1$ and $\vec h_2 = e_2 = \operatorname{grad}x_2$ are particular solutions, and the second theorem gives the one-parameter family $\vec f = (Ae^{x_1-x_2}e_1-e_2)/(Ae^{x_1-x_2}-1)$. The third solution $\vec h_3 = e_3$ belongs to no member of that family. The classical count of particular solutions therefore does not survive the lift unchanged: two particular solutions give a larger class and not the general solution.
 
 ### What the Lift Is Not
 
@@ -303,10 +303,10 @@ where $C$ is the $N\times N$ matrix with entries $C_{mn} = \frac{c_m(t)^2}{\kapp
 **Theorem (Its–Matveev, Dubrovin–Novikov).** The finite-gap solutions of KdV are exactly the solutions for which the spectrum of $L=-\partial_x^2+u$ is a finite union of bands; they are given by the **Its–Matveev formula**
 
 $$
-u(x,t) = -2\sum_{j=1}^{g}\lambda_j + 2\partial_x^2\log\Theta\bigl(\mathbf{U}x + \mathbf{V}t + \mathbf{d}\bigr) ,
+u(x,t) = -2\sum_{j=1}^{g}\lambda_j + 2\partial_x^2\log\Theta\bigl(\vec Ux + \vec Vt + \vec d\bigr) ,
 $$
 
-where $\Theta$ is the Riemann theta function of the hyperelliptic curve $\mu^2 = \prod_{j=1}^{2g+1}(\lambda-\lambda_j)$, the vectors $\mathbf{U},\mathbf{V}$ are the periods of two Abelian differentials and $\mathbf{d}$ is a constant; the solution is quasi-periodic in $x$ and $t$ with $g$ independent frequencies.
+where $\Theta$ is the Riemann theta function of the hyperelliptic curve $\mu^2 = \prod_{j=1}^{2g+1}(\lambda-\lambda_j)$, the vectors $\vec U,\vec V$ are the periods of two Abelian differentials and $\vec d$ is a constant; the solution is quasi-periodic in $x$ and $t$ with $g$ independent frequencies.
 
 *Proof.* Quoted as standard. The Baker–Akhiezer function on the curve satisfies a linear problem whose compatibility is the KdV equation, exactly as in the zero-curvature formulation, and Riemann's theta-function solution of the inversion problem expresses the divisor of the Baker–Akhiezer function in terms of theta functions; the formula for $u$ follows from the pole behaviour of the Baker–Akhiezer function at infinity.
 
@@ -332,7 +332,7 @@ An integrable system is a nonlinear evolution equation that is equivalent to the
 
 KdV has infinitely many conservation laws, generated by the Lenard recursion with recursion operator $R=-\partial_x^2+4u+2u_x\partial_x^{-1}$, whose first members are $u$, $u^2$ and $u^3+\frac12u_x^2$; the density $u^3+\frac12u_x^2$ is the energy, and the equation is bi-Hamiltonian with respect to the compatible structures $\partial_x$ and $-\partial_x^3+4u\partial_x+2u_x$, which is what produces the infinite family by the Magri theorem. The inverse scattering transform computes the scattering data of $L$ — reflection and transmission coefficients, bound states and norming constants — of which the transmission coefficient and the eigenvalues are time-independent while the reflection data evolve by $e^{8ik^3t}$; the potential is recovered by the Gelfand–Levitan–Marchenko equation and the formula $u=-2\partial_xK(x,x)$. Reflectionless data give the reflectionless potentials, among them the one-soliton $u=-2\kappa^2\operatorname{sech}^2(\kappa(x-4\kappa^2t-x_0))$ and the $N$-soliton determinant formula; the collision of solitons is elastic with a phase shift. The periodic analogue is the finite-gap solution, built from a hyperelliptic Riemann surface and a Riemann theta function by the Its–Matveev formula, and the integrability tests are the Painlevé test and the Hirota bilinear form, in which KdV becomes $D_x(D_t+D_x^3)\tau\cdot\tau=0$.
 
-The classical prototype of this linearisation is the Riccati equation $y'+y^2=-v$, whose logarithmic derivative $y=\phi'/\phi$ carries it into the Schrödinger equation $-\phi''-v\phi=0$ and factorises the operator, $-\partial_x^2-v=-(\partial_x+y)(\partial_x-y)$. Euler's two theorems of 1760 make the equation's solvability a count of known particular solutions: one solution gives the general solution in two quadratures, two solutions in one, three algebraically, and four give a constant cross-ratio. The equation lifts to three dimensions as the Riccati PDE $D_3\mathbf{f}+\mathbf{f}^2=v$, with $D_3=e_1\partial_1+e_2\partial_2+e_3\partial_3$ and $\mathbf{f}=\check\partial\phi=\phi^{-1}D_3\phi$; it is equivalent to the Schrödinger equation $\Delta\phi+v\phi=0$ and, in components, to the curl-free condition $\operatorname{rot}\mathbf{f}=0$ together with $\Delta\phi+\langle\nabla\phi,\nabla\phi\rangle=-v$. Both lifted Euler theorems hold, with the transport equation $\operatorname{div}(e^{2\xi}\nabla\Psi)=0$ in place of the quadrature, and they produce a larger class of solutions rather than the general solution. The lift is not an integrable system in the Lax sense of this article: it has no isospectral deformation and no conservation hierarchy.
+The classical prototype of this linearisation is the Riccati equation $y'+y^2=-v$, whose logarithmic derivative $y=\phi'/\phi$ carries it into the Schrödinger equation $-\phi''-v\phi=0$ and factorises the operator, $-\partial_x^2-v=-(\partial_x+y)(\partial_x-y)$. Euler's two theorems of 1760 make the equation's solvability a count of known particular solutions: one solution gives the general solution in two quadratures, two solutions in one, three algebraically, and four give a constant cross-ratio. The equation lifts to three dimensions as the Riccati PDE $D_3\vec f+\vec f^2=v$, with $D_3=e_1\partial_1+e_2\partial_2+e_3\partial_3$ and $\vec f=\check\partial\phi=\phi^{-1}D_3\phi$; it is equivalent to the Schrödinger equation $\Delta\phi+v\phi=0$ and, in components, to the curl-free condition $\operatorname{rot}\vec f=0$ together with $\Delta\phi+\langle\nabla\phi,\nabla\phi\rangle=-v$. Both lifted Euler theorems hold, with the transport equation $\operatorname{div}(e^{2\xi}\nabla\Psi)=0$ in place of the quadrature, and they produce a larger class of solutions rather than the general solution. The lift is not an integrable system in the Lax sense of this article: it has no isospectral deformation and no conservation hierarchy.
 
 ## Summary of Notation
 
@@ -357,7 +357,7 @@ The classical prototype of this linearisation is the Riccati equation $y'+y^2=-v
 | $v$, $y$ | Potential and field of the Riccati equation $y'+y^2=-v$ |
 | $y_0,y_1$ | Particular solutions of the Riccati equation; $k$ the Euler constant |
 | $D_3$, $\check\partial\phi$ | Three-dimensional Cauchy–Riemann operator and the logarithmic derivative |
-| $\mathbf{f}$, $\xi$, $\Psi$ | Riccati-PDE field, the particular solution $\operatorname{grad}\xi$, the transport function |
+| $\vec f$, $\xi$, $\Psi$ | Riccati-PDE field, the particular solution $\operatorname{grad}\xi$, the transport function |
 
 
 

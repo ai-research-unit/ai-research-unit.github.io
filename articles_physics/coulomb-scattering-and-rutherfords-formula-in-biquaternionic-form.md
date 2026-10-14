@@ -34,7 +34,7 @@ $$
 \tilde H=\left[-\frac{\hbar^2}{2m}\nabla^2+\frac{\alpha}{r}\right]e_0
 $$
 
-is central, so the stationary equation $\tilde H\psi=E\psi$ reduces to the scalar equation for the envelope, and every stationary state is $\psi=\phi(\mathbf x)\chi$ with $\chi$ a constant module element. The potential is spherically symmetric, so the envelope separates in spherical coordinates and the angular dependence is carried by the spherical harmonics, which are scalar functions. In the module there is no angular structure at all: the spin-0 state has no orientation, and the entire angular dependence of the problem is the scalar angular dependence of $\phi$. The comparison with the sibling spin subcategories is exact: there, a spin-orbit coupling would make the Hamiltonian non-central and the partial-wave decomposition would carry a spin index; here it does not.
+is central, so the stationary equation $\tilde H\psi=E\psi$ reduces to the scalar equation for the envelope, and every stationary state is $\psi=\phi(\vec x)\chi$ with $\chi$ a constant module element. The potential is spherically symmetric, so the envelope separates in spherical coordinates and the angular dependence is carried by the spherical harmonics, which are scalar functions. In the module there is no angular structure at all: the spin-0 state has no orientation, and the entire angular dependence of the problem is the scalar angular dependence of $\phi$. The comparison with the sibling spin subcategories is exact: there, a spin-orbit coupling would make the Hamiltonian non-central and the partial-wave decomposition would carry a spin index; here it does not.
 
 ### The Coulomb parameter
 
@@ -215,15 +215,15 @@ This is the sharpest statement of the Coulomb problem's special character: the B
 The first Born amplitude is the Fourier transform of the potential at the momentum transfer,
 
 $$
-f_B(\theta)=-\frac{2m}{\hbar^2}\frac{1}{4\pi}\int d^3r\;e^{-i\mathbf q\cdot\mathbf r}\,V(r),
+f_B(\theta)=-\frac{2m}{\hbar^2}\frac{1}{4\pi}\int d^3r\;e^{-i\vec q\cdot\vec r}\,V(r),
 \qquad
 q=2k\sin(\theta/2),
 $$
 
-where $q$ is the magnitude of the momentum transfer $\mathbf q=\mathbf k'-\mathbf k$. For the Coulomb potential the transform is the standard Coulomb kernel,
+where $q$ is the magnitude of the momentum transfer $\vec q=\vec k'-\vec k$. For the Coulomb potential the transform is the standard Coulomb kernel,
 
 $$
-\int d^3r\;\frac{e^{-i\mathbf q\cdot\mathbf r}}{r}=\frac{4\pi}{q^2},
+\int d^3r\;\frac{e^{-i\vec q\cdot\vec r}}{r}=\frac{4\pi}{q^2},
 $$
 
 so

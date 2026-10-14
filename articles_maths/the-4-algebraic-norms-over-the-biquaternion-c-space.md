@@ -44,7 +44,7 @@ The one **topological** norm of the space, $\lVert\cdot\rVert_E$, is the square 
 
 ## Notational Conventions
 
-$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the biquaternion algebra, with basis $e_0,e_1,e_2,e_3$, $e_0=1$, $e_k^{2}=-e_0$, and central scalar imaginary $i$, $i^{2}=-1$. A general element is $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$, written in the centre–vector split $\tilde Q=c+v$ with $c=Q_0e_0\in\mathbb{C}_{\mathbb{B}}$ and $v=\sum_{k=1}^{3}Q_ke_k\in\mathrm{Vect}(\mathbb{B})$. The scalar part is $\mathrm{Sc}$, the coefficientwise conjugation is $\bar{\cdot}$, the natural conjugation is ${}^{\natural}$, with $Q^{\natural}_\nu=\varepsilon_\nu Q_\nu$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The sign vector is $\varepsilon=(1,-1,-1,-1)$, and $\mathbb{B}$ is identified with $\mathbb{C}^{4}$ by $\tilde Q\mapsto(Q_0,Q_1,Q_2,Q_3)$. The vector parts carry the complex bilinear dot product $(\mathbf P,\mathbf Q)=\sum_{k=1}^{3}P_kQ_k$ and the cross product $\mathbf P\times\mathbf Q$. The four general forms are the four pairings of *Conventions in the Biquaternion Universe*, written there with one bracket $\langle\cdot,\cdot\rangle$ whose subscript records the pair $(a,b)$ — the natural conjugation ${}^{\natural}$ for a non-identity first slot and the star ${}^{*}$ for a non-identity second slot. In the letters of this article,
+$\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the biquaternion algebra, with basis $e_0,e_1,e_2,e_3$, $e_0=1$, $e_k^{2}=-e_0$, and central scalar imaginary $i$, $i^{2}=-1$. A general element is $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$, written in the centre–vector split $\tilde Q=c+v$ with $c=Q_0e_0\in\mathbb{C}_{\mathbb{B}}$ and $v=\sum_{k=1}^{3}Q_ke_k\in\mathrm{Vect}(\mathbb{B})$. The scalar part is $\mathrm{Sc}$, the coefficientwise conjugation is $\bar{\cdot}$, the natural conjugation is ${}^{\natural}$, with $Q^{\natural}_\nu=\varepsilon_\nu Q_\nu$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The sign vector is $\varepsilon=(1,-1,-1,-1)$, and $\mathbb{B}$ is identified with $\mathbb{C}^{4}$ by $\tilde Q\mapsto(Q_0,Q_1,Q_2,Q_3)$. The vector parts carry the complex bilinear dot product $(\vec P,\vec Q)=\sum_{k=1}^{3}P_kQ_k$ and the cross product $\vec P\times\vec Q$. The four general forms are the four pairings of *Conventions in the Biquaternion Universe*, written there with one bracket $\langle\cdot,\cdot\rangle$ whose subscript records the pair $(a,b)$ — the natural conjugation ${}^{\natural}$ for a non-identity first slot and the star ${}^{*}$ for a non-identity second slot. In the letters of this article,
 
 $$
 B(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu Q_\mu,
@@ -87,7 +87,7 @@ $$
 
 which are four different pairs.
 
-**Remark (a vanishing form carries no algebraic norm).** The four antisymmetric operations have the zero algebraic norm because their scalar part is identically zero — $\mathbf P\times\mathbf Q$ for $\mathrm{APA}$ and $\mathrm{AQA}$, and the alternating forms of the two Hermitian forms for $\mathrm{APS}$ and $\mathrm{AQS}$. A vanishing quadratic form is not an algebraic norm, and its vanishing set is the whole space, so the four operations are counted with no algebraic norm rather than with a zero one.
+**Remark (a vanishing form carries no algebraic norm).** The four antisymmetric operations have the zero algebraic norm because their scalar part is identically zero — $\vec P\times\vec Q$ for $\mathrm{APA}$ and $\mathrm{AQA}$, and the alternating forms of the two Hermitian forms for $\mathrm{APS}$ and $\mathrm{AQS}$. A vanishing quadratic form is not an algebraic norm, and its vanishing set is the whole space, so the four operations are counted with no algebraic norm rather than with a zero one.
 
 ## The Four Algebraic Norms
 
@@ -97,7 +97,7 @@ $$
 B(\tilde Q)=B(\tilde Q,\tilde Q)=\sum_\mu\varepsilon_\mu Q_\mu^{2}=Q_0^{2}-Q_1^{2}-Q_2^{2}-Q_3^{2},
 $$
 
-the general plain bilinear algebraic norm $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-(\mathbf P,\mathbf Q)$. It is complex-valued and $\mathbb{C}$-quadratic, its Gram matrix on the coefficient basis is the sign matrix $\mathrm E=\operatorname{diag}(1,-1,-1,-1)$, and its realification is of signature $(4,4)$. Its vanishing set is the complex cone $B(\tilde Q)=0$, already the complex quadric of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*. It is not multiplicative. The algebraic norm is that of the **plain product**, the multiplication of the algebra, and it is the one algebraic norm the plain product carries.
+the general plain bilinear algebraic norm $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-(\vec P,\vec Q)$. It is complex-valued and $\mathbb{C}$-quadratic, its Gram matrix on the coefficient basis is the sign matrix $\mathrm E=\operatorname{diag}(1,-1,-1,-1)$, and its realification is of signature $(4,4)$. Its vanishing set is the complex cone $B(\tilde Q)=0$, already the complex quadric of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*. It is not multiplicative. The algebraic norm is that of the **plain product**, the multiplication of the algebra, and it is the one algebraic norm the plain product carries.
 
 ### The General Quaternionic Bilinear Algebraic Norm $N$
 
@@ -105,7 +105,7 @@ $$
 N(\tilde Q)=N(\tilde Q,\tilde Q)=\sum_\mu Q_\mu^{2}=Q_0^{2}+Q_1^{2}+Q_2^{2}+Q_3^{2},
 $$
 
-the general quaternionic bilinear algebraic norm $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$. It is complex-valued, its Gram matrix is the identity $\mathrm I_4$, and its realification is of signature $(4,4)$. Its vanishing set is the zero-divisor cone $\mathcal N=\{N(\tilde Q)=0\}$, of real dimension $6$, and the algebraic norm is the reason $\mathbb{B}$ has zero divisors at all.
+the general quaternionic bilinear algebraic norm $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\vec P,\vec Q)$. It is complex-valued, its Gram matrix is the identity $\mathrm I_4$, and its realification is of signature $(4,4)$. Its vanishing set is the zero-divisor cone $\mathcal N=\{N(\tilde Q)=0\}$, of real dimension $6$, and the algebraic norm is the reason $\mathbb{B}$ has zero divisors at all.
 
 **Proposition (multiplicativity).** $N$ is multiplicative:
 $$
@@ -122,7 +122,7 @@ $$
 H(\tilde Q)=H(\tilde Q,\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}=\lvert Q_0\rvert^{2}+\lvert Q_1\rvert^{2}+\lvert Q_2\rvert^{2}+\lvert Q_3\rvert^{2},
 $$
 
-the general plain sesquilinear algebraic norm $H(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})$. It is real-valued, $\mathbb{R}$-quadratic and positive definite, $H(\tilde Q)>0$ for $\tilde Q\neq0$; its Gram matrix is $\mathrm I_4$ and its realification is of signature $(8,0)$. Its vanishing set is the origin alone, and it is the square of the topological norm, $H(\tilde Q)=\lVert\tilde Q\rVert_E^{2}$.
+the general plain sesquilinear algebraic norm $H(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})=P_0\overline{Q_0}+(\vec P,\overline{\vec Q})$. It is real-valued, $\mathbb{R}$-quadratic and positive definite, $H(\tilde Q)>0$ for $\tilde Q\neq0$; its Gram matrix is $\mathrm I_4$ and its realification is of signature $(8,0)$. Its vanishing set is the origin alone, and it is the square of the topological norm, $H(\tilde Q)=\lVert\tilde Q\rVert_E^{2}$.
 
 The algebraic norm is definite, and it is the one of the four whose square root is the topological norm: $\lVert\tilde Q\rVert_E$ is the unique topological norm of the real vector space $\mathbb{B}\cong\mathbb{R}^{8}$, up to equivalence, and it is the topological norm under which every one of the twelve operations is read in *Topology and Metric for Each of the Twelve Operations*. It is not multiplicative.
 
@@ -132,7 +132,7 @@ $$
 K(\tilde Q)=K(\tilde Q,\tilde Q)=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}=\lvert Q_0\rvert^{2}-\lvert Q_1\rvert^{2}-\lvert Q_2\rvert^{2}-\lvert Q_3\rvert^{2},
 $$
 
-the general quaternionic sesquilinear algebraic norm $K(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=P_0\overline{Q_0}-(\mathbf P,\overline{\mathbf Q})$; it is the **Krein algebraic norm** of the algebra, the algebraic norm of the Krein form. It is real-valued and indefinite, its Gram matrix is the sign matrix $\mathrm E$, and its realification is of signature $(2,6)$. Its vanishing set is the real cone $\mathcal K=\{\lVert c\rVert_E=\lVert v\rVert_E\}$ of the centre–vector split, and by the identity $K(\tilde Q)=\lVert c\rVert_E^{2}-\lVert v\rVert_E^{2}$ it is the null cone of the indefinite metric. It is not multiplicative. The algebraic norm is the one that the **Krein structure** of the algebra produces, the pair of a definite and an indefinite form, and its positive and negative value-one sets are $S^{1}\times\mathbb{R}^{6}$ and $S^{5}\times\mathbb{R}^{2}$.
+the general quaternionic sesquilinear algebraic norm $K(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=P_0\overline{Q_0}-(\vec P,\overline{\vec Q})$; it is the **Krein algebraic norm** of the algebra, the algebraic norm of the Krein form. It is real-valued and indefinite, its Gram matrix is the sign matrix $\mathrm E$, and its realification is of signature $(2,6)$. Its vanishing set is the real cone $\mathcal K=\{\lVert c\rVert_E=\lVert v\rVert_E\}$ of the centre–vector split, and by the identity $K(\tilde Q)=\lVert c\rVert_E^{2}-\lVert v\rVert_E^{2}$ it is the null cone of the indefinite metric. It is not multiplicative. The algebraic norm is the one that the **Krein structure** of the algebra produces, the pair of a definite and an indefinite form, and its positive and negative value-one sets are $S^{1}\times\mathbb{R}^{6}$ and $S^{5}\times\mathbb{R}^{2}$.
 
 ## The Table of the Four Algebraic Norms
 

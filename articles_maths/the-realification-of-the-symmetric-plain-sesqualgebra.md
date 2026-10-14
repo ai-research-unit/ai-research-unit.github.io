@@ -6,7 +6,7 @@ The Symmetric Plain Sesqualgebra is one of the twelve algebraic structures that 
 $$
 \tilde P\star\tilde Q=\tfrac12\bigl(\tilde P\tilde Q^{*}+\overline{\tilde Q}\tilde P^{\natural}\bigr)=H(\tilde P,\tilde Q)e_0,
 \qquad
-H(\tilde P,\tilde Q)=\mathrm{Sc}\bigl(\tilde P\tilde Q^{*}\bigr)=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q}),
+H(\tilde P,\tilde Q)=\mathrm{Sc}\bigl(\tilde P\tilde Q^{*}\bigr)=P_0\overline{Q_0}+(\vec P,\overline{\vec Q}),
 $$
 which over $\mathbb{C}$ is the symmetric plain sesquilinear structure of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, and the only one of the twelve that is Hermitian (*The Specificities of the Symmetric Plain Sesqualgebra*). Read over $\mathbb{R}$, the same product on the same set is an $\mathbb{R}$-algebra on the eight-dimensional real space $\mathbb{R}^8$, and this article owns that real reading.
 
@@ -37,7 +37,7 @@ the first the shape of the conjugate-linear maps and the second the shape of the
 
 The product carries the general plain sesquilinear, the Hermitian $H$ form, the scalar part of the general product of its family, quoted from *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*:
 $$
-H(\tilde P,\tilde Q)=\mathrm{Sc}\bigl(\tilde P\tilde Q^{*}\bigr)=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q}).
+H(\tilde P,\tilde Q)=\mathrm{Sc}\bigl(\tilde P\tilde Q^{*}\bigr)=P_0\overline{Q_0}+(\vec P,\overline{\vec Q}).
 $$
 Over $\mathbb{C}$ it is a Hermitian form of complex inertia $(4,0)$; the realification of a Hermitian form is not split but the **doubling** of its inertia, by §*The Realification of a Form* of *The Realification and the Effect of the Change of Scalars*: the form is real on the diagonal, the realification keeps its real part $\operatorname{Re}H$, and the realified signature is
 $$

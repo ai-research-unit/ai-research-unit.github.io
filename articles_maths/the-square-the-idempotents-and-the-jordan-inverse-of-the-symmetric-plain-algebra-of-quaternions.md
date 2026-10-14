@@ -6,7 +6,7 @@ The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde p
 
 **This is not the algebra $\mathbb{H}$.** The two algebras share the space, the addition, the real scalars and the unit, but $\bullet$ is a different multiplication and the projection onto the scalar line is not multiplicative. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives nothing new.
 
-**Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1^2=e_2^2=e_3^2=-e_0$. An element is $\tilde q=q_0e_0+\mathbf q$ with $\mathbf q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; the norm is $N(\tilde q)=\tilde q\tilde q^{\natural}=q_0^2+|\mathbf q|^2$, the generic trace is $T(\tilde q)=2q_0$, and the multiplication operator is $L^{\bullet}_{\tilde p}\tilde q=\tilde p\bullet\tilde q$ of *The Multiplication Operators of the Symmetric Plain Algebra*, below this article in this category.
+**Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1^2=e_2^2=e_3^2=-e_0$. An element is $\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; the norm is $N(\tilde q)=\tilde q\tilde q^{\natural}=q_0^2+|\vec q|^2$, the generic trace is $T(\tilde q)=2q_0$, and the multiplication operator is $L^{\bullet}_{\tilde p}\tilde q=\tilde p\bullet\tilde q$ of *The Multiplication Operators of the Symmetric Plain Algebra*, below this article in this category.
 
 ## The Square Map
 
@@ -14,7 +14,7 @@ The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde p
 
 $$
 Q:\tilde p\mapsto\tilde p\bullet\tilde p=\tilde p^2,\qquad
-Q(\tilde p)=\bigl(p_0^2-|\mathbf p|^2\bigr)e_0+2p_0\mathbf p .
+Q(\tilde p)=\bigl(p_0^2-|\vec p|^2\bigr)e_0+2p_0\vec p .
 $$
 
 It is the diagonal of the product; the polarisation $Q(\tilde p,\tilde q)=\tfrac12\bigl(Q(\tilde p+\tilde q)-Q(\tilde p)-Q(\tilde q)\bigr)$ is the product, $Q(\tilde p,\tilde q)=\tilde p\bullet\tilde q$.
@@ -22,13 +22,13 @@ It is the diagonal of the product; the polarisation $Q(\tilde p,\tilde q)=\tfrac
 **Proposition (the relation to the norm).** The square, the trace and the norm are tied by
 
 $$
-\mathrm{Sc}\,\tilde p^2=p_0^2-|\mathbf p|^2=2p_0^2-N(\tilde p),\qquad
-N(\tilde p)=p_0^{\,2}+|\mathbf p|^{\,2},
+\mathrm{Sc}\,\tilde p^2=p_0^2-|\vec p|^2=2p_0^2-N(\tilde p),\qquad
+N(\tilde p)=p_0^{\,2}+|\vec p|^{\,2},
 $$
 
 and by the quadratic identity $\tilde p^2-T(\tilde p)\tilde p+N(\tilde p)e_0=0$. The square of the block is the **plain square**; it is **not** the quaternionic square, whose value is the central element $\tilde p^{\natural}\tilde p=N(\tilde p)e_0$, and the two agree only on the scalar line.
 
-*Proof.* The square is displayed above; the scalar part is $p_0^2-|\mathbf p|^2$, the vector part $2p_0\mathbf p$. The plain square is quoted from *Introduction to the General Plain Algebra of Quaternions* and the quaternionic square from *Introduction to the General Quaternionic Algebra of Quaternions*, below this article in this category; the quadratic identity is *Norm and Invertibility in the Symmetric Plain Algebra*.
+*Proof.* The square is displayed above; the scalar part is $p_0^2-|\vec p|^2$, the vector part $2p_0\vec p$. The plain square is quoted from *Introduction to the General Plain Algebra of Quaternions* and the quaternionic square from *Introduction to the General Quaternionic Algebra of Quaternions*, below this article in this category; the quadratic identity is *Norm and Invertibility in the Symmetric Plain Algebra*.
 
 **Remark (the two general products on one square).** The chapter carries two general products, the plain product $\tilde p\tilde q$ and the quaternionic product $\tilde p^{\natural}\tilde q$; the square of the block is the square of the first, and the symmetrisation of the second, *Introduction to the Symmetric Quaternionic Algebra of Quaternions*, below this article in this category, has the central square $N(\tilde p)e_0$. **The division of the real chapter is between these two squares**, and the block's square is the non-central one.
 
@@ -44,11 +44,11 @@ $$
 
 the two trivial idempotents; there is no nontrivial one.
 
-*Proof.* The square is the plain square, so the equation is $\tilde\pi^2=\tilde\pi$. The vector part gives $(2\pi_0-1)\boldsymbol{\pi}=0$, so either $\boldsymbol{\pi}=0$ and the scalar part gives $\pi_0^2=\pi_0$, giving $\tilde\pi\in\{0,e_0\}$, or $\pi_0=\tfrac12$ and the scalar part gives $|\boldsymbol{\pi}|^2=-\tfrac14$, with no real solution.
+*Proof.* The square is the plain square, so the equation is $\tilde\pi^2=\tilde\pi$. The vector part gives $(2\pi_0-1)\vec\pi=0$, so either $\vec\pi=0$ and the scalar part gives $\pi_0^2=\pi_0$, giving $\tilde\pi\in\{0,e_0\}$, or $\pi_0=\tfrac12$ and the scalar part gives $|\vec\pi|^2=-\tfrac14$, with no real solution.
 
-**Remark (the degeneracy in a division algebra).** A nontrivial idempotent is built, in a split algebra, from a pure root of $+e_0$ by $\tilde\pi=\tfrac12(e_0+\mathbf u)$, and the reason the construction fails here is that **the pure square is negative**: $\mathbf u\bullet\mathbf u=-|\mathbf u|^2e_0$, so a pure element can be a root of $-e_0$ but never a root of $+e_0$. Over a division algebra with a negative definite pure part the construction never closes, and the idempotent class collapses to the two trivial elements; the collapse is the algebraic form of the absence of the split.
+**Remark (the degeneracy in a division algebra).** A nontrivial idempotent is built, in a split algebra, from a pure root of $+e_0$ by $\tilde\pi=\tfrac12(e_0+\vec u)$, and the reason the construction fails here is that **the pure square is negative**: $\vec u\bullet\vec u=-|\vec u|^2e_0$, so a pure element can be a root of $-e_0$ but never a root of $+e_0$. Over a division algebra with a negative definite pure part the construction never closes, and the idempotent class collapses to the two trivial elements; the collapse is the algebraic form of the absence of the split.
 
-**Corollary (the associated idempotents).** The only idempotents associated with the zero divisors are the trivial ones: a nonzero pure element $\mathbf u$ is a zero divisor but the element $\tfrac12(e_0+\mathbf u)$ has square $\tfrac14(1-|\mathbf u|^2)e_0+\tfrac12\mathbf u$, which is not an idempotent for any real $\mathbf u$.
+**Corollary (the associated idempotents).** The only idempotents associated with the zero divisors are the trivial ones: a nonzero pure element $\vec u$ is a zero divisor but the element $\tfrac12(e_0+\vec u)$ has square $\tfrac14(1-|\vec u|^2)e_0+\tfrac12\vec u$, which is not an idempotent for any real $\vec u$.
 
 ## The Peirce Decomposition
 
@@ -113,14 +113,14 @@ $$
 
 ## Summary
 
-The square map of the block is the plain square, $Q(\tilde p)=(p_0^2-|\mathbf p|^2)e_0+2p_0\mathbf p$, polarising to the product, with the scalar part $2p_0^2-N(\tilde p)$ and the quadratic identity $\tilde p^2-T(\tilde p)\tilde p+N(\tilde p)e_0=0$. The idempotents are exactly $0$ and $e_0$, because a nontrivial idempotent would need a pure root of $+e_0$ and the pure square is $-|\mathbf u|^2e_0$; the Peirce decomposition is trivial, $J_1(e_0)=\mathbb{H}$ and $J_0(0)=\mathbb{H}$ with the other spaces vanishing. The Jordan inverse is $\tilde p^{-1}=(T(\tilde p)e_0-\tilde p)/N(\tilde p)=\tilde p^{\natural}/N(\tilde p)$ for $\tilde p\neq0$, two-sided and involutive but not multiplicative, and the invertible elements do not form a group. The quadratic representation is $U_{\tilde p}=2(L^{\bullet}_{\tilde p})^2-L^{\bullet}_{\tilde p^{\,\bullet2}}$, equal to the sandwich $\tilde p\tilde q\tilde p$, and $N(U_{\tilde p}\tilde q)=N(\tilde p)^2N(\tilde q)$. Everything but the idempotents and the Peirce decomposition has the same shape over $\mathbb{C}$; there the idempotents are many and the Peirce calculus opens.
+The square map of the block is the plain square, $Q(\tilde p)=(p_0^2-|\vec p|^2)e_0+2p_0\vec p$, polarising to the product, with the scalar part $2p_0^2-N(\tilde p)$ and the quadratic identity $\tilde p^2-T(\tilde p)\tilde p+N(\tilde p)e_0=0$. The idempotents are exactly $0$ and $e_0$, because a nontrivial idempotent would need a pure root of $+e_0$ and the pure square is $-|\vec u|^2e_0$; the Peirce decomposition is trivial, $J_1(e_0)=\mathbb{H}$ and $J_0(0)=\mathbb{H}$ with the other spaces vanishing. The Jordan inverse is $\tilde p^{-1}=(T(\tilde p)e_0-\tilde p)/N(\tilde p)=\tilde p^{\natural}/N(\tilde p)$ for $\tilde p\neq0$, two-sided and involutive but not multiplicative, and the invertible elements do not form a group. The quadratic representation is $U_{\tilde p}=2(L^{\bullet}_{\tilde p})^2-L^{\bullet}_{\tilde p^{\,\bullet2}}$, equal to the sandwich $\tilde p\tilde q\tilde p$, and $N(U_{\tilde p}\tilde q)=N(\tilde p)^2N(\tilde q)$. Everything but the idempotents and the Peirce decomposition has the same shape over $\mathbb{C}$; there the idempotents are many and the Peirce calculus opens.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
 | $Q(\tilde p)=\tilde p\bullet\tilde p=\tilde p^2$ | the square map |
-| $\mathbf u\bullet\mathbf u=-\lvert\mathbf u\rvert^2e_0$ | the square of a pure element |
+| $\vec u\bullet\vec u=-\lvert\vec u\rvert^2e_0$ | the square of a pure element |
 | $\{0,e_0\}$ | the idempotents |
 | $J_\lambda(\tilde\pi)$ | the Peirce spaces, trivial at $0$ and $e_0$ |
 | $\tilde p^{-1}=\tilde p^{\natural}/N(\tilde p)$ | the Jordan inverse |

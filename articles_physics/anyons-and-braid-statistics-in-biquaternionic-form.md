@@ -147,8 +147,8 @@ The linking number was verified by direct computation. The Gauss integral
 
 $$
 \mathrm{Lk}(C_1,C_2) = \frac{1}{4\pi}\oint_{C_1}\oint_{C_2}
-\frac{(\mathbf{x}_1-\mathbf{x}_2)\cdot(d\mathbf{x}_1\times d\mathbf{x}_2)}
-{|\mathbf{x}_1-\mathbf{x}_2|^3}
+\frac{(\vec x_1-\vec x_2)\cdot(d\vec x_1\times d\vec x_2)}
+{|\vec x_1-\vec x_2|^3}
 $$
 
 was evaluated numerically for the Hopf link, the two circles linked once, and gave
@@ -273,7 +273,7 @@ In the biquaternion framework the braiding phase is a holonomy and the exchange 
 | $W_R(C)=\mathrm{Tr}_R\,\mathcal{P}\exp(i\oint_C A)$ | Wilson loop; the observable of the topological theory |
 | $\langle W_{q_1}(C_1)W_{q_2}(C_2)\rangle=\exp(2\pi i\frac{q_1q_2}{k}\mathrm{Lk})$ | Loop correlator; exponential of the linking number |
 | $\theta=\pi q^2/k$, $s=q^2/2k$ | Statistics angle and spin of the charge-$q$ anyon at level $k$ |
-| $\mathrm{Lk}=\frac{1}{4\pi}\oint\oint\frac{(\mathbf{x}_1-\mathbf{x}_2)\cdot(d\mathbf{x}_1\times d\mathbf{x}_2)}{|\mathbf{x}_1-\mathbf{x}_2|^3}$ | Gauss linking integral; $=\pm1$ for the Hopf link (verified) |
+| $\mathrm{Lk}=\frac{1}{4\pi}\oint\oint\frac{(\vec x_1-\vec x_2)\cdot(d\vec x_1\times d\vec x_2)}{|\vec x_1-\vec x_2|^3}$ | Gauss linking integral; $=\pm1$ for the Hopf link (verified) |
 | $a\times b=\sum_c N_{ab}^c c$ | Fusion rules; multiplicities from tensor products |
 | $d_a$ | Quantum dimension |
 | $\mathrm{TL}_n(d)$, $d=2\cos\frac{\pi}{k+2}$ | Temperley–Lieb algebra; level dependence of the braid representation |

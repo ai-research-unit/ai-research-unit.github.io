@@ -5,7 +5,7 @@
 The antisymmetric quaternionic multiplication
 $$
 \tilde P\diamond\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P\bigr)
-=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q
+=P_0\vec Q-Q_0\vec P-\vec P\times\vec Q
 $$
 is alternating, vector valued and without a unit, and it fails the Jacobi identity
 (*Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions*, *The Jacobi Failure
@@ -16,8 +16,8 @@ object it has one sharp feature, and the feature is the whole of the present art
 
 The feature is the action of the algebra unit. For the block,
 $$
-L_{e_0}\tilde X=e_0\diamond\tilde X=\mathbf X , \qquad
-R_{e_0}\tilde X=\tilde X\diamond e_0=-\mathbf X , \qquad
+L_{e_0}\tilde X=e_0\diamond\tilde X=\vec X , \qquad
+R_{e_0}\tilde X=\tilde X\diamond e_0=-\vec X , \qquad
 L_{e_0}^{2}=L_{e_0},
 $$
 so the left multiplication by $e_0$ is the **projection onto the vector subspace** along the
@@ -54,7 +54,7 @@ $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3
 $e_1e_2=e_3$ and central scalar imaginary $i$. The operation of the block is $\diamond$,
 $\tilde P\diamond\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$;
 the parent product is $\tilde P^{\natural}\tilde Q$ and the symmetric half is $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$. An element
-is $\tilde P=P_0e_0+\mathbf P$ with $\mathbf P=\sum_kP_ke_k$; $\mathrm{Vect}(\mathbb{B})$ is the
+is $\tilde P=P_0e_0+\vec P$ with $\vec P=\sum_kP_ke_k$; $\mathrm{Vect}(\mathbb{B})$ is the
 vector subspace of the pure elements, of complex dimension three, and
 $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ is the centre. The **left multiplication** of the block
 is $L_{\tilde A}\tilde X=\tilde A\diamond\tilde X$, and $L_{\tilde A}^{2}=L_{\tilde A}L_{\tilde A}$
@@ -68,19 +68,19 @@ the element $e_0$ is a projector.
 **Proposition (the unit acts as the projection onto the vector subspace).** For every element
 $\tilde X$,
 $$
-L_{e_0}\tilde X=\mathbf X , \qquad R_{e_0}\tilde X=-\mathbf X , \qquad L_{e_0}^{2}=L_{e_0}.
+L_{e_0}\tilde X=\vec X , \qquad R_{e_0}\tilde X=-\vec X , \qquad L_{e_0}^{2}=L_{e_0}.
 $$
 The image of $L_{e_0}$ is $\mathrm{Vect}(\mathbb{B})$, its kernel is $\mathbb{C}_{\mathbb{B}}$,
 and $\mathbb{B}=\mathrm{Vect}(\mathbb{B})\oplus\mathbb{C}_{\mathbb{B}}$.
 
-*Proof.* The explicit form at $\tilde P=e_0$, where $P_0=1$ and $\mathbf P=\mathbf 0$, gives
-$e_0\diamond\tilde X=\mathbf X$, and at $\tilde Q=e_0$ it gives
-$\tilde X\diamond e_0=-\mathbf X$. The map $\tilde X\mapsto\mathbf X$ is the identity on the
+*Proof.* The explicit form at $\tilde P=e_0$, where $P_0=1$ and $\vec P=\mathbf 0$, gives
+$e_0\diamond\tilde X=\vec X$, and at $\tilde Q=e_0$ it gives
+$\tilde X\diamond e_0=-\vec X$. The map $\tilde X\mapsto\vec X$ is the identity on the
 vector subspace and vanishes on the centre, so it is a projector, its square is itself, its
 image is $\mathrm{Vect}(\mathbb{B})$ and its kernel is $\mathbb{C}_{\mathbb{B}}$; the two are
 complementary because every element is the sum of its scalar and vector parts.
 
-**Remark (the element is not a unit).** The element $e_0$ satisfies $e_0\diamond\tilde X=\mathbf X$,
+**Remark (the element is not a unit).** The element $e_0$ satisfies $e_0\diamond\tilde X=\vec X$,
 which is $\tilde X$ only when $\tilde X$ is pure; at a non-pure element the scalar part is
 discarded. The block has no unit (*Introduction to the Antisymmetric Quaternionic Algebra of
 Biquaternions*), and $e_0$ is a **left identity on the vector subspace** and not a unit: it acts
@@ -96,18 +96,18 @@ L_{\tilde X}^{2}=L_{\tilde X}\iff \tilde X=0\ \text{or}\ \tilde X=e_0 .
 $$
 The two projectors are the zero operator and the projection onto the vector subspace.
 
-*Proof.* Write $L_{\tilde X}\tilde Y=\tilde U$ with
-$\tilde U=X_0\mathbf Y-Y_0\mathbf X-\mathbf X\times\mathbf Y$; the value is pure, so
-$L_{\tilde X}^{2}\tilde Y=L_{\tilde X}\tilde U=X_0\tilde U-\mathbf X\times\tilde U$, and the
-projector condition reads $X_0\tilde U-\mathbf X\times\tilde U=\tilde U$ for every $\tilde Y$.
-At $\tilde Y=e_0$, where $Y_0=1$ and $\mathbf Y=\mathbf 0$, one has $\tilde U=-\mathbf X$, and
-the condition becomes $(X_0-1)\mathbf X=\mathbf 0$; so either $\mathbf X=\mathbf 0$ or
-$X_0=1$. If $\mathbf X=\mathbf 0$, then $L_{\tilde X}\tilde Y=X_0\mathbf Y$ and the projector
+*Proof.* Write $L_{\tilde X}\tilde Y=\tilde R$ with
+$\tilde R=X_0\vec Y-Y_0\vec X-\vec X\times\vec Y$; the value is pure, so
+$L_{\tilde X}^{2}\tilde Y=L_{\tilde X}\tilde R=X_0\tilde R-\vec X\times\tilde R$, and the
+projector condition reads $X_0\tilde R-\vec X\times\tilde R=\tilde R$ for every $\tilde Y$.
+At $\tilde Y=e_0$, where $Y_0=1$ and $\vec Y=\mathbf 0$, one has $\tilde R=-\vec X$, and
+the condition becomes $(X_0-1)\vec X=\mathbf 0$; so either $\vec X=\mathbf 0$ or
+$X_0=1$. If $\vec X=\mathbf 0$, then $L_{\tilde X}\tilde Y=X_0\vec Y$ and the projector
 condition is $X_0^{2}=X_0$, giving $X_0=0$ or $X_0=1$, that is $\tilde X=0$ or
-$\tilde X=e_0$. If $\mathbf X\neq\mathbf 0$ and $X_0=1$, the condition reads
-$\mathbf X\times\tilde U=0$ for every $\tilde Y$, so $\tilde U$ is parallel to $\mathbf X$ at
-every $\tilde Y$; taking $\tilde Y$ pure with $\mathbf Y$ perpendicular to $\mathbf X$ gives
-$\tilde U=\mathbf Y-\mathbf X\times\mathbf Y$, a vector perpendicular to $\mathbf X$ and nonzero,
+$\tilde X=e_0$. If $\vec X\neq\mathbf 0$ and $X_0=1$, the condition reads
+$\vec X\times\tilde R=0$ for every $\tilde Y$, so $\tilde R$ is parallel to $\vec X$ at
+every $\tilde Y$; taking $\tilde Y$ pure with $\vec Y$ perpendicular to $\vec X$ gives
+$\tilde R=\vec Y-\vec X\times\vec Y$, a vector perpendicular to $\vec X$ and nonzero,
 against the requirement, so this case is impossible. The two admissible elements give
 $L_0=0$ and $L_{e_0}=P_{\mathrm{Vect}}$ by the governing identity.
 
@@ -132,8 +132,8 @@ The vector subspace is the image of the block and a left ideal of the block, and
 the kernel of $L_{e_0}$.
 
 *Proof.* The splitting and the identifications are the governing identity. The image of the
-block is $\mathrm{Vect}(\mathbb{B})$, and it is a left ideal because for $\mathbf A$ pure and
-any $\tilde Y$ the value $\mathbf A\diamond\tilde Y=-Y_0\mathbf A-\mathbf A\times\mathbf Y$ is
+block is $\mathrm{Vect}(\mathbb{B})$, and it is a left ideal because for $\vec A$ pure and
+any $\tilde Y$ the value $\vec A\diamond\tilde Y=-Y_0\vec A-\vec A\times\vec Y$ is
 pure; the centre is the kernel of $L_{e_0}$ by the same identity.
 
 The corollary is the useful form of the criterion. In the block the two subspaces the theory
@@ -146,9 +146,9 @@ splitting, when it exists, is carried by an idempotent, a family, or not at all.
 
 The criterion of the block is the projector classification of §*The Projector Classification*: the only projectors are the zero operator and the projection onto the vector subspace, the latter at the unit $e_0$, and the splitting of §*The Splitting Realised by One Element* is carried by the multiplication of that one element.
 
-**Theorem (the isolation).** Of the twelve structures of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, the block is the only one in which the left multiplication by the algebra unit is the projection onto the vector subspace, and the only one admitting an element $\tilde E$ with $\tilde E\star\tilde X=\mathbf X$ for every $\tilde X$; the element is $\tilde E=e_0$, uniquely.
+**Theorem (the isolation).** Of the twelve structures of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, the block is the only one in which the left multiplication by the algebra unit is the projection onto the vector subspace, and the only one admitting an element $\tilde E$ with $\tilde E\star\tilde X=\vec X$ for every $\tilde X$; the element is $\tilde E=e_0$, uniquely.
 
-*Proof.* The block's entry is the governing identity. For the other eleven, group them by the action of the unit. In GPA, GQA and SPA the unit acts as the identity, whose image is the whole space and not the vector subspace; in SQA it acts as the projection onto the centre; in APA and AQS it acts as zero. In the six sesquilinear structures the left multiplication by $e_0$ is conjugate-linear or zero, and a conjugate-linear map is not the $\mathbb{C}$-linear projection onto the vector subspace; a conjugate-linear $L$ with $L^{2}=L$ is linear and conjugate-linear at once, hence zero, so in the six the only projector is the zero operator. For the element $\tilde E$, the equation at $\tilde X=e_0$ reads $\tilde E\star e_0=0$; in GPA, SPA and GPS this forces $\tilde E=0$, in GQA, GQS and SQS it forces $\tilde E^{\natural}=0$, and in SQA and SPS it forces $E_0e_0=0$, none compatible with the value $\mathbf X$ at a pure $\tilde X$; in APA and AQS the value at $e_0$ vanishes identically and the pure values are the cross products $\mathbf E\times\mathbf X$ and $\mathbf E\times\overline{\mathbf X}$, which lie in the orthogonal plane of $\mathbf E$; and in APS the value at $e_0$, which is $\mathbf E$, forces $\tilde E=E_0e_0$, after which the values at $e_1$ and at $ie_1$ force the contradictory $E_0=-1$ and $E_0=1$. Inside the block the element is unique: at $\tilde X=e_0$ the equation gives $-\mathbf E=0$, so $\mathbf E=0$, and at a pure $\tilde X$ it gives $E_0\tilde X=\tilde X$, so $E_0=1$.
+*Proof.* The block's entry is the governing identity. For the other eleven, group them by the action of the unit. In GPA, GQA and SPA the unit acts as the identity, whose image is the whole space and not the vector subspace; in SQA it acts as the projection onto the centre; in APA and AQS it acts as zero. In the six sesquilinear structures the left multiplication by $e_0$ is conjugate-linear or zero, and a conjugate-linear map is not the $\mathbb{C}$-linear projection onto the vector subspace; a conjugate-linear $L$ with $L^{2}=L$ is linear and conjugate-linear at once, hence zero, so in the six the only projector is the zero operator. For the element $\tilde E$, the equation at $\tilde X=e_0$ reads $\tilde E\star e_0=0$; in GPA, SPA and GPS this forces $\tilde E=0$, in GQA, GQS and SQS it forces $\tilde E^{\natural}=0$, and in SQA and SPS it forces $E_0e_0=0$, none compatible with the value $\vec X$ at a pure $\tilde X$; in APA and AQS the value at $e_0$ vanishes identically and the pure values are the cross products $\vec E\times\vec X$ and $\vec E\times\overline{\vec X}$, which lie in the orthogonal plane of $\vec E$; and in APS the value at $e_0$, which is $\vec E$, forces $\tilde E=E_0e_0$, after which the values at $e_1$ and at $ie_1$ force the contradictory $E_0=-1$ and $E_0=1$. Inside the block the element is unique: at $\tilde X=e_0$ the equation gives $-\vec E=0$, so $\vec E=0$, and at a pure $\tilde X$ it gives $E_0\tilde X=\tilde X$, so $E_0=1$.
 
 | the action of the unit $e_0$ | the structures |
 |---|---|
@@ -158,7 +158,7 @@ The criterion of the block is the projector classification of §*The Projector C
 | zero | APA, AQS |
 | **the projection onto the vector subspace** | **AQA** |
 
-The block is alone in its class, and the reason is the two mixed terms $P_0\mathbf Q-Q_0\mathbf P$ that it carries and that the plain antisymmetrisation does not: those terms make the unit act on the scalar direction and so turn its multiplication into a proper projection.
+The block is alone in its class, and the reason is the two mixed terms $P_0\vec Q-Q_0\vec P$ that it carries and that the plain antisymmetrisation does not: those terms make the unit act on the scalar direction and so turn its multiplication into a proper projection.
 
 ## The Other Criteria Fail Here
 
@@ -204,12 +204,12 @@ the exact sense of its isolation among the twelve: the unit carries the projecto
 
 The antisymmetric quaternionic multiplication is the alternating structure whose left
 multiplication by the algebra unit is the projection onto the vector subspace,
-$L_{e_0}\tilde X=\mathbf X$, $L_{e_0}^{2}=L_{e_0}$, with $R_{e_0}=-L_{e_0}$; the projector
+$L_{e_0}\tilde X=\vec X$, $L_{e_0}^{2}=L_{e_0}$, with $R_{e_0}=-L_{e_0}$; the projector
 classification of the block is the pair $L_{\tilde X}^{2}=L_{\tilde X}\Leftrightarrow\tilde X\in\{0,e_0\}$, so the projector class is the smallest a structure with a nonzero projector can
 have. The projection is the canonical splitting $\mathbb{B}=\mathrm{Vect}(\mathbb{B})\oplus \mathbb{C}_{\mathbb{B}}$ realised by the multiplication of one element, the vector subspace
 being the image of the block and a left ideal and the centre its kernel. The block is the only
 one of the twelve in which the algebra unit multiplies as the projection onto the vector
-subspace, and the only one admitting an element $\tilde E$ with $\tilde E\star\tilde X=\mathbf X$
+subspace, and the only one admitting an element $\tilde E$ with $\tilde E\star\tilde X=\vec X$
 for every $\tilde X$, the element being $e_0$ uniquely; the other eleven give the identity, the projection onto the centre, the zero operator or a conjugate-linear map at the unit, and none of them gives this projection. The alternativity criterion of the plain algebra and the rank-one
 criterion of the symmetric quaternionic algebra both fail for the block, and the criterion stated
 here is its own. What the block delivers is two projectors, one splitting and one left ideal, and
@@ -219,7 +219,7 @@ no Peirce calculus.
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\diamond\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$ | the antisymmetric quaternionic multiplication, the operation $\mathrm{AQA}$ |
+| $\tilde P\diamond\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)=P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$ | the antisymmetric quaternionic multiplication, the operation $\mathrm{AQA}$ |
 | $L_{\tilde A}\tilde X=\tilde A\diamond\tilde X$, $R_{\tilde A}\tilde X=\tilde X\diamond\tilde A$ | the left and the right multiplication of the block |
 | $L_{e_0}=P_{\mathrm{Vect}}$ | the criterion, the unit multiplying as the projection onto the vector subspace |
 | $L_{\tilde X}^{2}=L_{\tilde X}$ | the projector equation; its solutions are $0$ and $e_0$ |

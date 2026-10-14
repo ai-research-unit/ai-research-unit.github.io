@@ -72,7 +72,7 @@ where $N(\tilde u,\tilde x)$ is the polar form restricted to $V$. The first map 
 
 ## The Comparison with the Plain Algebra
 
-**Proposition.** The plain algebra of the same space carries the indefinite form $\mathrm B(\tilde q) = q_0^2 - \mathbf q \cdot \mathbf q$ of signature $(1,3)$ and the same norm $N$; the shells of $\mathrm B$ are not groups, so the pin group of $\mathrm B$ lives in the Clifford algebra of $\mathrm B$ and not in $\mathbb{H}$, whereas the shells of $N$ are groups and their pin group is the unit sphere. The quaternionic block takes $N$ for its form, so in this block the definite case is the case of the block and the shell is the pin and spin group without a passage to a Clifford algebra.
+**Proposition.** The plain algebra of the same space carries the indefinite form $\mathrm B(\tilde q) = q_0^2 - \vec q \cdot \vec q$ of signature $(1,3)$ and the same norm $N$; the shells of $\mathrm B$ are not groups, so the pin group of $\mathrm B$ lives in the Clifford algebra of $\mathrm B$ and not in $\mathbb{H}$, whereas the shells of $N$ are groups and their pin group is the unit sphere. The quaternionic block takes $N$ for its form, so in this block the definite case is the case of the block and the shell is the pin and spin group without a passage to a Clifford algebra.
 
 *Proof.* Multiplicativity fails for an indefinite form on a division algebra of dimension four, with the witness of the plain article; the shell statements are the theorems above.
 
@@ -100,7 +100,7 @@ The form of the general quaternionic algebra of quaternions is the definite quat
 | $\{\pm e_0\}$ | the kernel of the inner action on the algebra |
 | $q_0 > 0$, with a tie-break on the equator | the normalisation of the section |
 | $\tilde u\tilde x\tilde u = \tilde x - 2N(\tilde u,\tilde x)\tilde u$ | the reflection by a pure unit, for $\tilde x \in V$ |
-| $\mathrm B(\tilde q) = q_0^2 - \mathbf q \cdot \mathbf q$ | the plain form of the sibling block, indefinite of signature $(1,3)$ |
+| $\mathrm B(\tilde q) = q_0^2 - \vec q \cdot \vec q$ | the plain form of the sibling block, indefinite of signature $(1,3)$ |
 
 ## Further Reading
 

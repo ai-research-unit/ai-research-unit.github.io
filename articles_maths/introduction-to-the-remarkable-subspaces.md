@@ -71,49 +71,49 @@ $$
 
 **Basis and dimension.** The real basis is $e_1, e_2, e_3, ie_1, ie_2, ie_3$ and $\dim_{\mathbb{R}}\mathrm{Vect}(\mathbb{B}) = 6$. It is the largest of the remarkable subspaces, and the only one of dimension $6$.
 
-**Role.** It is not a subalgebra, since the product of two pure vectors has a scalar part; it is closed under the commutator, the bracket of two pure vectors being twice their cross product. It splits into the real vector triple $\operatorname{span}\{e_1,e_2,e_3\}$ and the imaginary vector triple $\operatorname{span}\{ie_1,ie_2,ie_3\}$, and its elements are the **pure vectors**, written $\mathbf{Q}$.
+**Role.** It is not a subalgebra, since the product of two pure vectors has a scalar part; it is closed under the commutator, the bracket of two pure vectors being twice their cross product. It splits into the real vector triple $\operatorname{span}\{e_1,e_2,e_3\}$ and the imaginary vector triple $\operatorname{span}\{ie_1,ie_2,ie_3\}$, and its elements are the **pure vectors**, written $\vec Q$.
 
 **The norm and the zero divisors.** The norm of a pure vector is the complex dot product of the vector with itself:
 
 $$
-N(\mathbf{P}) = (\mathbf{P},\mathbf{P}) = P_1^2 + P_2^2 + P_3^2 .
+N(\vec P) = (\vec P,\vec P) = P_1^2 + P_2^2 + P_3^2 .
 $$
 
-A pure vector is a unit exactly when $(\mathbf{P},\mathbf{P}) \neq 0$. Since a pure vector satisfies $\mathbf{P}^2 = -(\mathbf{P},\mathbf{P})e_0$, the nonzero non-units of the vector subspace are exactly its **square-zero** elements:
+A pure vector is a unit exactly when $(\vec P,\vec P) \neq 0$. Since a pure vector satisfies $\vec P^2 = -(\vec P,\vec P)e_0$, the nonzero non-units of the vector subspace are exactly its **square-zero** elements:
 
 $$
-(\mathbf{P},\mathbf{P}) = 0 \iff \mathbf{P}^2 = 0 .
+(\vec P,\vec P) = 0 \iff \vec P^2 = 0 .
 $$
 
-An explicit example is $\mathbf{P} = e_1 + ie_2$, whose square vanishes: $(e_1 + ie_2)^2 = -e_0 + ie_3 - ie_3 + e_0 = 0$. Writing the complex vector as $\boldsymbol{\rho} + i\boldsymbol{\rho}'$ with $\boldsymbol{\rho}, \boldsymbol{\rho}'$ real,
+An explicit example is $\vec P = e_1 + ie_2$, whose square vanishes: $(e_1 + ie_2)^2 = -e_0 + ie_3 - ie_3 + e_0 = 0$. Writing the complex vector as $\vec\rho + i\vec\rho'$ with $\vec\rho, \vec\rho'$ real,
 
 $$
-(\mathbf{P},\mathbf{P}) = (\boldsymbol{\rho},\boldsymbol{\rho}) - (\boldsymbol{\rho}',\boldsymbol{\rho}') + 2i(\boldsymbol{\rho},\boldsymbol{\rho}') ,
+(\vec P,\vec P) = (\vec\rho,\vec\rho) - (\vec\rho',\vec\rho') + 2i(\vec\rho,\vec\rho') ,
 $$
 
-so that the condition is the pair of real equations $(\boldsymbol{\rho},\boldsymbol{\rho}) = (\boldsymbol{\rho}',\boldsymbol{\rho}')$ and $(\boldsymbol{\rho},\boldsymbol{\rho}') = 0$. **A pure vector is a zero divisor exactly when its two real parts are orthogonal and of equal length.** Writing $\boldsymbol{\rho} = r\hat{u}$ and $\boldsymbol{\rho}' = r\hat{v}$ with $r > 0$ and $\hat{u}, \hat{v}$ an orthonormal pair of directions, the zero divisors of the vector subspace are the elements $r(\hat{u} + i\hat{v})$: a four-parameter family, cut out by two real equations in the six real coordinates. The conjugation $\mathbf{P}^{\natural} = -\mathbf{P}$ is nonzero whenever $\mathbf{P}$ is, so for a square-zero $\mathbf{P}$ the pair $\mathbf{P}, -\mathbf{P}$ is a pair of nonzero elements with vanishing product: **every zero divisor of the vector subspace is its own annihilating partner**. This is the property that the two Hermitian subspaces do not share, and the reason the pure and the non-pure family are kept apart throughout.
+so that the condition is the pair of real equations $(\vec\rho,\vec\rho) = (\vec\rho',\vec\rho')$ and $(\vec\rho,\vec\rho') = 0$. **A pure vector is a zero divisor exactly when its two real parts are orthogonal and of equal length.** Writing $\vec\rho = r\hat{u}$ and $\vec\rho' = r\hat{v}$ with $r > 0$ and $\hat{u}, \hat{v}$ an orthonormal pair of directions, the zero divisors of the vector subspace are the elements $r(\hat{u} + i\hat{v})$: a four-parameter family, cut out by two real equations in the six real coordinates. The conjugation $\vec P^{\natural} = -\vec P$ is nonzero whenever $\vec P$ is, so for a square-zero $\vec P$ the pair $\vec P, -\vec P$ is a pair of nonzero elements with vanishing product: **every zero divisor of the vector subspace is its own annihilating partner**. This is the property that the two Hermitian subspaces do not share, and the reason the pure and the non-pure family are kept apart throughout.
 
-**The idempotents and the ideals.** The vector subspace has one idempotent, $0$. A pure vector with $\mathbf{P}^2 = \mathbf{P}$ would have $\mathbf{P}^2 = -(\mathbf{P},\mathbf{P})e_0$ central and equal to the pure vector $\mathbf{P}$, so $\mathbf{P} \in \mathbb{C}_{\mathbb{B}} \cap \mathrm{Vect}(\mathbb{B}) = 0$. It therefore has square-zero elements and no idempotent; an element that is a projection never has a pure vector part without a scalar part. Through a nonzero nilpotent $\mathbf{P}$ the subspace determines the minimal ideal $\mathbb{B}\mathbf{P}$ and the annihilator $I_{\mathbf{P}}$, and for a nilpotent the two coincide, $\mathbb{B}\mathbf{P} = I_{\mathbf{P}}$ and $\mathbf{P}\mathbb{B} = J_{\mathbf{P}}$, by §*The Idempotents and the Ideals in the Remarkable Subspaces*. An explicit case is $\mathbf{P} = e_1 + ie_2$, with
+**The idempotents and the ideals.** The vector subspace has one idempotent, $0$. A pure vector with $\vec P^2 = \vec P$ would have $\vec P^2 = -(\vec P,\vec P)e_0$ central and equal to the pure vector $\vec P$, so $\vec P \in \mathbb{C}_{\mathbb{B}} \cap \mathrm{Vect}(\mathbb{B}) = 0$. It therefore has square-zero elements and no idempotent; an element that is a projection never has a pure vector part without a scalar part. Through a nonzero nilpotent $\vec P$ the subspace determines the minimal ideal $\mathbb{B}\vec P$ and the annihilator $I_{\vec P}$, and for a nilpotent the two coincide, $\mathbb{B}\vec P = I_{\vec P}$ and $\vec P\mathbb{B} = J_{\vec P}$, by §*The Idempotents and the Ideals in the Remarkable Subspaces*. An explicit case is $\vec P = e_1 + ie_2$, with
 
 $$
-\mathbb{B}\mathbf{P} = I_{\mathbf{P}} = \operatorname{span}_{\mathbb{R}}\left\{e_1 + ie_2,\; e_2 - ie_1,\; e_0 - ie_3,\; e_3 + ie_0\right\},
+\mathbb{B}\vec P = I_{\vec P} = \operatorname{span}_{\mathbb{R}}\left\{e_1 + ie_2,\; e_2 - ie_1,\; e_0 - ie_3,\; e_3 + ie_0\right\},
 $$
 
 the first two elements being further nilpotents of the vector subspace and the last two a Hermitian element and $i$ times it. This minimal ideal is the sum of a complex line of the vector subspace, a real line of $\mathbb{M}_+$ and a real line of $\mathbb{M}_-$; it contains no basis element of the algebra, so it is not a sum of coordinate blocks and it is not one of the remarkable subspaces.
 
-**The roots.** A pure element is $\tilde\Xi = \mathbf{P} = P_1e_1 + P_2e_2 + P_3e_3$ with complex coefficients, and $\mathbf{P}^2 = -(\mathbf{P},\mathbf{P})e_0$, so $\tilde\Xi^2 = -e_0$ is the single complex equation
+**The roots.** A pure element is $\tilde\Xi = \vec P = P_1e_1 + P_2e_2 + P_3e_3$ with complex coefficients, and $\vec P^2 = -(\vec P,\vec P)e_0$, so $\tilde\Xi^2 = -e_0$ is the single complex equation
 
 $$
-(\mathbf{P},\mathbf{P}) = P_1^2 + P_2^2 + P_3^2 = 1 .
+(\vec P,\vec P) = P_1^2 + P_2^2 + P_3^2 = 1 .
 $$
 
-Its solutions are the **pure roots**, and the whole of them, of both kinds, lies here: the vector subspace contains every root of $-1$ that is not one of the trivial pair. In the real and imaginary parts the equation is the pair $(\boldsymbol{\rho},\boldsymbol{\rho}) - (\boldsymbol{\rho}',\boldsymbol{\rho}') = 1$ and $(\boldsymbol{\rho},\boldsymbol{\rho}') = 0$, whose solutions with $\boldsymbol{\rho}' = 0$ are the **real roots**, the vectors $\boldsymbol{\rho}$ of length one, a two-parameter family, and whose solutions with $\boldsymbol{\rho}' \neq 0$ are the **non-trivial roots**, a four-parameter family, the two real parts orthogonal and their squared lengths differing by one,
+Its solutions are the **pure roots**, and the whole of them, of both kinds, lies here: the vector subspace contains every root of $-1$ that is not one of the trivial pair. In the real and imaginary parts the equation is the pair $(\vec\rho,\vec\rho) - (\vec\rho',\vec\rho') = 1$ and $(\vec\rho,\vec\rho') = 0$, whose solutions with $\vec\rho' = 0$ are the **real roots**, the vectors $\vec\rho$ of length one, a two-parameter family, and whose solutions with $\vec\rho' \neq 0$ are the **non-trivial roots**, a four-parameter family, the two real parts orthogonal and their squared lengths differing by one,
 
 $$
-(\boldsymbol{\rho},\boldsymbol{\rho}) = (\boldsymbol{\rho}',\boldsymbol{\rho}') + 1 , \qquad (\boldsymbol{\rho},\boldsymbol{\rho}') = 0 .
+(\vec\rho,\vec\rho) = (\vec\rho',\vec\rho') + 1 , \qquad (\vec\rho,\vec\rho') = 0 .
 $$
 
-The vector subspace is the only one of the remarkable subspaces in which all three central equations have solutions: the roots of $-1$ as units, the nilpotents $\mathbf{P}^2 = 0$ as the pure solutions of $(\mathbf{P},\mathbf{P}) = 0$, and the roots of $+1$ as the pure solutions of $(\mathbf{P},\mathbf{P}) = -1$. So $\mathrm{Vect}(\mathbb{B})$ carries roots of $-1$ as units and roots of $0$ as zero divisors at the same time, the two opposite kinds of element of the algebra meeting in this one subspace.
+The vector subspace is the only one of the remarkable subspaces in which all three central equations have solutions: the roots of $-1$ as units, the nilpotents $\vec P^2 = 0$ as the pure solutions of $(\vec P,\vec P) = 0$, and the roots of $+1$ as the pure solutions of $(\vec P,\vec P) = -1$. So $\mathrm{Vect}(\mathbb{B})$ carries roots of $-1$ as units and roots of $0$ as zero divisors at the same time, the two opposite kinds of element of the algebra meeting in this one subspace.
 
 ## The Quaternion Subspace
 
@@ -145,10 +145,10 @@ $$
 
 For $h \in \mathbb{H}_{\mathbb{B}}$, the equation $h^2 = h$ reads $h(h - e_0) = 0$, and the quaternion subspace is a division algebra, so $h = 0$ or $h = e_0$. This is the argument that the anti-quaternion subspace cannot use — it is not a division algebra, nor even closed under the product — and it is the reason the two quaternion subspaces reach the same trivial answer by different routes. On the ideal side the quaternion subspace is the sharpest of the three negative cases: not merely the subspace as a whole, but **every single nonzero element** of $\mathbb{H}_{\mathbb{B}}$ is a unit, so every one of them generates the whole algebra on both sides, and the ideal theory sees nothing of the subspace beyond the identity element it shares with the centre and with $\mathbb{M}_+$. The subspace is closed under the product — one of the two of the remarkable subspaces that are, the centre being the other — but it is not an ideal: $ie_1 \in \mathbb{B}$ and $e_1 \in \mathbb{H}_{\mathbb{B}}$ give $ie_1e_1 = -i \notin \mathbb{H}_{\mathbb{B}}$.
 
-**The roots.** A real quaternion is $\tilde\Xi = h_0e_0 + \boldsymbol{\rho}$ with $h_0 \in \mathbb{R}$ and $\boldsymbol{\rho}$ a **real** vector, and its square is $(h_0^2 - (\boldsymbol{\rho},\boldsymbol{\rho}))e_0 + 2h_0\boldsymbol{\rho}$. Setting this equal to $-e_0$ gives the pair $2h_0\boldsymbol{\rho} = 0$ and $h_0^2 - (\boldsymbol{\rho},\boldsymbol{\rho}) = -1$. The first equation gives $\boldsymbol{\rho} = 0$ or $h_0 = 0$. With $\boldsymbol{\rho} = 0$ the second reads $h_0^2 = -1$, impossible for a real $h_0$; with $h_0 = 0$ it reads $(\boldsymbol{\rho},\boldsymbol{\rho}) = 1$. So the roots of $-1$ in the quaternion subspace are
+**The roots.** A real quaternion is $\tilde\Xi = h_0e_0 + \vec\rho$ with $h_0 \in \mathbb{R}$ and $\vec\rho$ a **real** vector, and its square is $(h_0^2 - (\vec\rho,\vec\rho))e_0 + 2h_0\vec\rho$. Setting this equal to $-e_0$ gives the pair $2h_0\vec\rho = 0$ and $h_0^2 - (\vec\rho,\vec\rho) = -1$. The first equation gives $\vec\rho = 0$ or $h_0 = 0$. With $\vec\rho = 0$ the second reads $h_0^2 = -1$, impossible for a real $h_0$; with $h_0 = 0$ it reads $(\vec\rho,\vec\rho) = 1$. So the roots of $-1$ in the quaternion subspace are
 
 $$
-\tilde\Xi = \boldsymbol{\rho} , \qquad \boldsymbol{\rho} \in \mathbb{R}^3 , \quad (\boldsymbol{\rho},\boldsymbol{\rho}) = 1 ,
+\tilde\Xi = \vec\rho , \qquad \vec\rho \in \mathbb{R}^3 , \quad (\vec\rho,\vec\rho) = 1 ,
 $$
 
 the **real unit vectors** and nothing else. These are the classical imaginary units of the quaternions, and their absence of a scalar part is what excludes the trivial roots: $\pm i$ has vanishing vector part and is not a real quaternion.
@@ -177,7 +177,7 @@ Every nonzero element is therefore a unit, with inverse $(ih)^{-1} = -(i h^{\nat
 
 **The idempotents and the ideals.** The anti-quaternion subspace has one idempotent, $0$. An element of it is $ih$ with $h$ real, and $(ih)^2 = -h^2$ is a real quaternion; an idempotent there would satisfy $\tilde\Pi = \tilde\Pi^2 \in \mathbb{H}_{\mathbb{B}}$ and therefore lie in $i\mathbb{H}_{\mathbb{B}} \cap \mathbb{H}_{\mathbb{B}} = 0$. The subspace consists of units and zero, so it contributes nothing to the idempotent theory of the algebra. For the ideals, multiplication by the central unit $i$ carries $\mathbb{H}_{\mathbb{B}}$ bijectively to $i\mathbb{H}_{\mathbb{B}}$ and preserves products and linear combinations, so everything said of the quaternion subspace holds of it verbatim: every nonzero element is a unit, no zero divisor lies in it, and every nonzero element generates $\mathbb{B}$ on both sides. It is not an ideal: $e_1 \in \mathbb{B}$ and $ie_1 \in i\mathbb{H}_{\mathbb{B}}$ give $e_1 \cdot ie_1 = -i \notin i\mathbb{H}_{\mathbb{B}}$.
 
-**The roots.** An element of $i\mathbb{H}_{\mathbb{B}}$ is $\tilde\Xi = ih$ with $h = h_0e_0 + \boldsymbol{\rho}$ a real quaternion, and $\tilde\Xi^2 = -h^2 = ((\boldsymbol{\rho},\boldsymbol{\rho}) - h_0^2)e_0 - 2h_0\boldsymbol{\rho}$. Setting this equal to $-e_0$ gives $2h_0\boldsymbol{\rho} = 0$ and $(\boldsymbol{\rho},\boldsymbol{\rho}) - h_0^2 = -1$. The first equation again forces $\boldsymbol{\rho} = 0$ or $h_0 = 0$. With $h_0 = 0$ the second reads $(\boldsymbol{\rho},\boldsymbol{\rho}) = -1$, impossible for a real vector; with $\boldsymbol{\rho} = 0$ it reads $h_0^2 = 1$, so $h_0 = \pm 1$ and
+**The roots.** An element of $i\mathbb{H}_{\mathbb{B}}$ is $\tilde\Xi = ih$ with $h = h_0e_0 + \vec\rho$ a real quaternion, and $\tilde\Xi^2 = -h^2 = ((\vec\rho,\vec\rho) - h_0^2)e_0 - 2h_0\vec\rho$. Setting this equal to $-e_0$ gives $2h_0\vec\rho = 0$ and $(\vec\rho,\vec\rho) - h_0^2 = -1$. The first equation again forces $\vec\rho = 0$ or $h_0 = 0$. With $h_0 = 0$ the second reads $(\vec\rho,\vec\rho) = -1$, impossible for a real vector; with $\vec\rho = 0$ it reads $h_0^2 = 1$, so $h_0 = \pm 1$ and
 
 $$
 \tilde\Xi = \pm i .
@@ -206,10 +206,10 @@ $$
 **The idempotents.** The Hermitian subspace is the one of the remarkable subspaces that carries a nontrivial family of idempotents. Besides $0$ and $e_0$,
 
 $$
-\tilde\Pi = \tfrac{1}{2}\left(e_0 + i\mathbf{u}\right) , \qquad \mathbf{u} \in \mathbb{R}^3 , \quad (\mathbf{u},\mathbf{u}) = 1 .
+\tilde\Pi = \tfrac{1}{2}\left(e_0 + i\vec u\right) , \qquad \vec u \in \mathbb{R}^3 , \quad (\vec u,\vec u) = 1 .
 $$
 
-The parameter $\mathbf{u}$ runs over the real unit vectors, so the nontrivial idempotents of the Hermitian subspace form a two-parameter family; each is a Hermitian idempotent of the algebra and a projection. Three properties hold for every member, and they are the ones the projection theory uses. **First, the norm vanishes, so every nontrivial idempotent of the Hermitian subspace is a zero divisor.** The norm of $\tfrac{1}{2}(e_0 + i\mathbf{u})$ is $\tfrac{1}{4}(1 - (\mathbf{u},\mathbf{u})) = 0$, and the nontrivial idempotents are exactly the zero divisors of the Hermitian subspace with scalar part $\tfrac{1}{2}$, every other zero divisor of the subspace being a real multiple of one of them. **Second, the complement and the orthogonality.** The complement $e_0 - \tilde\Pi = \tfrac{1}{2}(e_0 - i\mathbf{u})$ is again a nontrivial idempotent of the subspace, and
+The parameter $\vec u$ runs over the real unit vectors, so the nontrivial idempotents of the Hermitian subspace form a two-parameter family; each is a Hermitian idempotent of the algebra and a projection. Three properties hold for every member, and they are the ones the projection theory uses. **First, the norm vanishes, so every nontrivial idempotent of the Hermitian subspace is a zero divisor.** The norm of $\tfrac{1}{2}(e_0 + i\vec u)$ is $\tfrac{1}{4}(1 - (\vec u,\vec u)) = 0$, and the nontrivial idempotents are exactly the zero divisors of the Hermitian subspace with scalar part $\tfrac{1}{2}$, every other zero divisor of the subspace being a real multiple of one of them. **Second, the complement and the orthogonality.** The complement $e_0 - \tilde\Pi = \tfrac{1}{2}(e_0 - i\vec u)$ is again a nontrivial idempotent of the subspace, and
 
 $$
 \tilde\Pi\left(e_0 - \tilde\Pi\right) = \left(e_0 - \tilde\Pi\right)\tilde\Pi = 0 , \qquad \tilde\Pi + \left(e_0 - \tilde\Pi\right) = e_0 :
@@ -221,7 +221,7 @@ $$
 \tilde\Pi\tilde{X}\tilde\Pi = \tilde{X}\tilde\Pi \quad (\tilde{X} \in \mathbb{B}\tilde\Pi) , \qquad \tilde\Pi\tilde{Y}\tilde\Pi = 0 \quad (\tilde{Y} \in \mathbb{B}(e_0 - \tilde\Pi)) .
 $$
 
-**The ideals.** Let $\tilde\Pi = \tfrac{1}{2}(e_0 + i\mathbf{u})$ be a Hermitian idempotent and $f = e_0 - \tilde\Pi = \tfrac{1}{2}(e_0 - i\mathbf{u})$ its complement. The annihilators are the complement ideals themselves,
+**The ideals.** Let $\tilde\Pi = \tfrac{1}{2}(e_0 + i\vec u)$ be a Hermitian idempotent and $f = e_0 - \tilde\Pi = \tfrac{1}{2}(e_0 - i\vec u)$ its complement. The annihilators are the complement ideals themselves,
 
 $$
 I_{\tilde\Pi} = \left\{\tilde X : \tilde X\tilde\Pi = 0\right\} = \left\{\tilde X\,f : \tilde X \in \mathbb{B}\right\} = \mathbb{B}f , \qquad J_{\tilde\Pi} = f\mathbb{B} ,
@@ -247,21 +247,21 @@ $$
 
 Two of the four lines are the **idempotent lines** $\mathbb{C}\tilde\Pi$ and $\mathbb{C}f$, each meeting $\mathbb{M}_+$ and $\mathbb{M}_-$ in one real dimension, and two are the **nilpotent lines** $\mathbb{C}(e_3 \mp ie_2)$, lying wholly in the vector subspace.
 
-**The norm and the non-units.** A Hermitian element is $a_0e_0 + i\mathbf{p}$ with $a_0 \in \mathbb{R}$ and $\mathbf{p}$ a real vector, and its norm is the difference
+**The norm and the non-units.** A Hermitian element is $a_0e_0 + i\vec p$ with $a_0 \in \mathbb{R}$ and $\vec p$ a real vector, and its norm is the difference
 
 $$
-N(a_0e_0 + i\mathbf{p}) = a_0^2 + i^2(p_1^2 + p_2^2 + p_3^2) = a_0^2 - (\mathbf{p},\mathbf{p}) .
+N(a_0e_0 + i\vec p) = a_0^2 + i^2(p_1^2 + p_2^2 + p_3^2) = a_0^2 - (\vec p,\vec p) .
 $$
 
-A Hermitian element is a unit exactly when $a_0^2 \neq (\mathbf{p},\mathbf{p})$, so the nonzero non-units of the Hermitian subspace are the nonzero solutions of the single equation $a_0^2 = (\mathbf{p},\mathbf{p})$. Since $(\mathbf{p},\mathbf{p})$ is a sum of real squares, a nonzero solution has $a_0 \neq 0$; indeed $\mathbf{p} = 0$ would give $a_0 = 0$. So every zero divisor of the Hermitian subspace can be written with $a_0$ divided out,
+A Hermitian element is a unit exactly when $a_0^2 \neq (\vec p,\vec p)$, so the nonzero non-units of the Hermitian subspace are the nonzero solutions of the single equation $a_0^2 = (\vec p,\vec p)$. Since $(\vec p,\vec p)$ is a sum of real squares, a nonzero solution has $a_0 \neq 0$; indeed $\vec p = 0$ would give $a_0 = 0$. So every zero divisor of the Hermitian subspace can be written with $a_0$ divided out,
 
 $$
-a_0e_0 + i\mathbf{p} = 2a_0 \cdot \tfrac{1}{2}\left(e_0 + i\,\frac{\mathbf{p}}{a_0}\right) , \qquad \left(\frac{\mathbf{p}}{a_0}, \frac{\mathbf{p}}{a_0}\right) = 1 ,
+a_0e_0 + i\vec p = 2a_0 \cdot \tfrac{1}{2}\left(e_0 + i\,\frac{\vec p}{a_0}\right) , \qquad \left(\frac{\vec p}{a_0}, \frac{\vec p}{a_0}\right) = 1 ,
 $$
 
-and the second factor is a **Hermitian idempotent**. **The zero divisors of the Hermitian subspace are exactly the nonzero real multiples of the Hermitian idempotents**, and the set of them is a cone of two pieces, the two signs of $a_0$ over the same $\mathbf{p}$. An explicit pair is $(e_0 + ie_1)(e_0 - ie_1) = e_0 - e_0 = 0$, since $(ie_1)^2 = e_0$ and $e_0$ is central; here $e_0 \pm ie_1$ are the two zero divisors, each the other's annihilating partner, and they are $2$ times the idempotents $\tfrac{1}{2}(e_0 \pm ie_1)$. Their squares are $2(e_0 \pm ie_1) \neq 0$, so the vector subspace's square-zero elements are not typical of the algebra's zero divisors but peculiar to it.
+and the second factor is a **Hermitian idempotent**. **The zero divisors of the Hermitian subspace are exactly the nonzero real multiples of the Hermitian idempotents**, and the set of them is a cone of two pieces, the two signs of $a_0$ over the same $\vec p$. An explicit pair is $(e_0 + ie_1)(e_0 - ie_1) = e_0 - e_0 = 0$, since $(ie_1)^2 = e_0$ and $e_0$ is central; here $e_0 \pm ie_1$ are the two zero divisors, each the other's annihilating partner, and they are $2$ times the idempotents $\tfrac{1}{2}(e_0 \pm ie_1)$. Their squares are $2(e_0 \pm ie_1) \neq 0$, so the vector subspace's square-zero elements are not typical of the algebra's zero divisors but peculiar to it.
 
-**The roots.** A Hermitian element is $\tilde\Xi = a_0e_0 + i\mathbf{p}$ with $a_0 \in \mathbb{R}$ and $\mathbf{p}$ a real vector, and its square is $(a_0^2 + (\mathbf{p},\mathbf{p}))e_0 + 2ia_0\mathbf{p}$. Setting this equal to $-e_0$ gives $2a_0\mathbf{p} = 0$ and $a_0^2 + (\mathbf{p},\mathbf{p}) = -1$. The second equation is a sum of two real squares equal to $-1$, impossible: **the Hermitian subspace contains no root of $-1$.** This is the sharpest of the two negative cases, because the Hermitian subspace is where the idempotents live: the idempotents are built from the roots, $\tilde\Pi = \tfrac{1}{2}(e_0 + \tilde\Xi i)$, and it is $\tilde\Xi i$, not $\tilde\Xi$, that lies in $\mathbb{M}_+$ when $\tilde\Xi$ is a real root. The roots of $+1$ in $\mathbb{M}_+$ are $\pm e_0$ and the imaginary unit vectors $i\mathbf{p}$ with $\mathbf{p}$ of length one, which is exactly the statement that the idempotents of $\mathbb{M}_+$ are $0$, $e_0$ and $\tfrac{1}{2}(e_0 + i\mathbf{u})$ over real unit vectors. So the roots of $-1$ do not touch $\mathbb{M}_+$; their images under multiplication by $i$ are what $\mathbb{M}_+$ is made of.
+**The roots.** A Hermitian element is $\tilde\Xi = a_0e_0 + i\vec p$ with $a_0 \in \mathbb{R}$ and $\vec p$ a real vector, and its square is $(a_0^2 + (\vec p,\vec p))e_0 + 2ia_0\vec p$. Setting this equal to $-e_0$ gives $2a_0\vec p = 0$ and $a_0^2 + (\vec p,\vec p) = -1$. The second equation is a sum of two real squares equal to $-1$, impossible: **the Hermitian subspace contains no root of $-1$.** This is the sharpest of the two negative cases, because the Hermitian subspace is where the idempotents live: the idempotents are built from the roots, $\tilde\Pi = \tfrac{1}{2}(e_0 + \tilde\Xi i)$, and it is $\tilde\Xi i$, not $\tilde\Xi$, that lies in $\mathbb{M}_+$ when $\tilde\Xi$ is a real root. The roots of $+1$ in $\mathbb{M}_+$ are $\pm e_0$ and the imaginary unit vectors $i\vec p$ with $\vec p$ of length one, which is exactly the statement that the idempotents of $\mathbb{M}_+$ are $0$, $e_0$ and $\tfrac{1}{2}(e_0 + i\vec u)$ over real unit vectors. So the roots of $-1$ do not touch $\mathbb{M}_+$; their images under multiplication by $i$ are what $\mathbb{M}_+$ is made of.
 
 ## The Anti-Hermitian Subspace
 
@@ -281,26 +281,26 @@ $$
 
 **Role.** It is not a subalgebra and it is not closed under the symmetrized product; it is closed under the commutator, and it is a real Lie algebra of dimension four whose centre is the line $\mathbb{R}(ie_0)$. It is the set of elements with purely imaginary scalar part and real vector part, and it is the anti-fixed space of ${}^{*}$ as well as the fixed space of $\flat$.
 
-**The norm and the non-units.** An anti-Hermitian element is $ib_0e_0 + \mathbf{q}$ with $b_0 \in \mathbb{R}$ and $\mathbf{q}$ a real vector, and its norm is
+**The norm and the non-units.** An anti-Hermitian element is $ib_0e_0 + \vec q$ with $b_0 \in \mathbb{R}$ and $\vec q$ a real vector, and its norm is
 
 $$
-N(ib_0e_0 + \mathbf{q}) = (ib_0)^2 + q_1^2 + q_2^2 + q_3^2 = -b_0^2 + (\mathbf{q},\mathbf{q}) .
+N(ib_0e_0 + \vec q) = (ib_0)^2 + q_1^2 + q_2^2 + q_3^2 = -b_0^2 + (\vec q,\vec q) .
 $$
 
-An anti-Hermitian element is a unit exactly when $(\mathbf{q},\mathbf{q}) \neq b_0^2$, and the nonzero non-units are the nonzero solutions of $(\mathbf{q},\mathbf{q}) = b_0^2$. A nonzero solution has $b_0 \neq 0$, and dividing it out,
+An anti-Hermitian element is a unit exactly when $(\vec q,\vec q) \neq b_0^2$, and the nonzero non-units are the nonzero solutions of $(\vec q,\vec q) = b_0^2$. A nonzero solution has $b_0 \neq 0$, and dividing it out,
 
 $$
-ib_0e_0 + \mathbf{q} = 2ib_0 \cdot \tfrac{1}{2}\left(e_0 - i\,\frac{\mathbf{q}}{b_0}\right) , \qquad \left(\frac{\mathbf{q}}{b_0}, \frac{\mathbf{q}}{b_0}\right) = 1 ,
+ib_0e_0 + \vec q = 2ib_0 \cdot \tfrac{1}{2}\left(e_0 - i\,\frac{\vec q}{b_0}\right) , \qquad \left(\frac{\vec q}{b_0}, \frac{\vec q}{b_0}\right) = 1 ,
 $$
 
-so that **the zero divisors of the anti-Hermitian subspace are exactly the nonzero purely imaginary multiples of the Hermitian idempotents**; the idempotent is the one of the Hermitian subspace, and only the multiplier is imaginary. This is the precise sense in which the two Hermitian subspaces share their zero divisors: the same family of idempotents, multiplied by a real number in the one case and by a purely imaginary number in the other, with the result in $\mathbb{M}_+$ and in $\mathbb{M}_-$ respectively. An explicit pair is $(ie_0 + e_1)(ie_0 - e_1) = -e_0 - ie_1 + ie_1 + e_0 = 0$, with $ie_0 \pm e_1$ the two zero divisors, of square $-2e_0 \pm 2ie_1$, neither zero. The subspace is the mirror image of the Hermitian one, the sign of the norm reversed, and its non-units are correspondingly not square-zero: the square of $ib_0e_0 + \mathbf{q}$ is $-(b_0^2 + (\mathbf{q},\mathbf{q}))e_0 + 2ib_0\mathbf{q}$, which vanishes only at the zero element. So the Hermitian and the anti-Hermitian non-units alike have nonzero square, and among the remarkable subspaces the only subspace with a nonzero square-zero element is the vector subspace.
+so that **the zero divisors of the anti-Hermitian subspace are exactly the nonzero purely imaginary multiples of the Hermitian idempotents**; the idempotent is the one of the Hermitian subspace, and only the multiplier is imaginary. This is the precise sense in which the two Hermitian subspaces share their zero divisors: the same family of idempotents, multiplied by a real number in the one case and by a purely imaginary number in the other, with the result in $\mathbb{M}_+$ and in $\mathbb{M}_-$ respectively. An explicit pair is $(ie_0 + e_1)(ie_0 - e_1) = -e_0 - ie_1 + ie_1 + e_0 = 0$, with $ie_0 \pm e_1$ the two zero divisors, of square $-2e_0 \pm 2ie_1$, neither zero. The subspace is the mirror image of the Hermitian one, the sign of the norm reversed, and its non-units are correspondingly not square-zero: the square of $ib_0e_0 + \vec q$ is $-(b_0^2 + (\vec q,\vec q))e_0 + 2ib_0\vec q$, which vanishes only at the zero element. So the Hermitian and the anti-Hermitian non-units alike have nonzero square, and among the remarkable subspaces the only subspace with a nonzero square-zero element is the vector subspace.
 
-**The idempotents and the ideals.** The anti-Hermitian subspace has one idempotent, $0$. The **square** of every element of it lies in the Hermitian subspace, though the product of two different elements need not — $e_1e_2 = e_3$ stays in $\mathbb{M}_-$: for $\tilde{Q} = ib_0e_0 + \mathbf{q}$ with $b_0$ real and $\mathbf{q}$ real, the square is $\tilde{Q}^2 = -(b_0^2 + (\mathbf{q},\mathbf{q}))e_0 + 2ib_0\mathbf{q}$, real in its scalar part and imaginary in its vector part, which is the shape of $\mathbb{M}_+$. So an idempotent there would satisfy $\tilde\Pi = \tilde\Pi^2 \in \mathbb{M}_+$ and lie in $\mathbb{M}_+ \cap \mathbb{M}_- = 0$. Its nonzero elements are the purely imaginary multiples of the Hermitian subspace's idempotents, and a central multiple $c\tilde\Pi$ of an idempotent is an idempotent only when $c(c-1) = 0$, that is when $c = 0$ or $c = 1$. For the ideals the subspace is $i\mathbb{M}_+$: multiplication by the central unit $i$ is a bijection of $\mathbb{M}_+$ onto $\mathbb{M}_-$ that preserves products and linear combinations and therefore preserves ideals. So the zero divisors of $\mathbb{M}_-$ are the purely imaginary multiples of the Hermitian idempotents, and the minimal ideals they determine are the very same four, $\mathbb{B}\tilde\Pi$, $\mathbb{B}f$, $\tilde\Pi\mathbb{B}$ and $f\mathbb{B}$, with the same elements. **The subspace $\mathbb{M}_-$ adds no ideal to those already determined by $\mathbb{M}_+$**, and the same relation holds between $i\mathbb{H}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$, and between the centre and itself, so that up to the central unit $i$ the ideal theory of the remarkable subspaces is carried by the three subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$ and $\mathbb{M}_+$.
+**The idempotents and the ideals.** The anti-Hermitian subspace has one idempotent, $0$. The **square** of every element of it lies in the Hermitian subspace, though the product of two different elements need not — $e_1e_2 = e_3$ stays in $\mathbb{M}_-$: for $\tilde{Q} = ib_0e_0 + \vec q$ with $b_0$ real and $\vec q$ real, the square is $\tilde{Q}^2 = -(b_0^2 + (\vec q,\vec q))e_0 + 2ib_0\vec q$, real in its scalar part and imaginary in its vector part, which is the shape of $\mathbb{M}_+$. So an idempotent there would satisfy $\tilde\Pi = \tilde\Pi^2 \in \mathbb{M}_+$ and lie in $\mathbb{M}_+ \cap \mathbb{M}_- = 0$. Its nonzero elements are the purely imaginary multiples of the Hermitian subspace's idempotents, and a central multiple $c\tilde\Pi$ of an idempotent is an idempotent only when $c(c-1) = 0$, that is when $c = 0$ or $c = 1$. For the ideals the subspace is $i\mathbb{M}_+$: multiplication by the central unit $i$ is a bijection of $\mathbb{M}_+$ onto $\mathbb{M}_-$ that preserves products and linear combinations and therefore preserves ideals. So the zero divisors of $\mathbb{M}_-$ are the purely imaginary multiples of the Hermitian idempotents, and the minimal ideals they determine are the very same four, $\mathbb{B}\tilde\Pi$, $\mathbb{B}f$, $\tilde\Pi\mathbb{B}$ and $f\mathbb{B}$, with the same elements. **The subspace $\mathbb{M}_-$ adds no ideal to those already determined by $\mathbb{M}_+$**, and the same relation holds between $i\mathbb{H}_{\mathbb{B}}$ and $\mathbb{H}_{\mathbb{B}}$, and between the centre and itself, so that up to the central unit $i$ the ideal theory of the remarkable subspaces is carried by the three subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$ and $\mathbb{M}_+$.
 
-**The roots.** An anti-Hermitian element is $\tilde\Xi = ib_0e_0 + \mathbf{q}$ with $b_0 \in \mathbb{R}$ and $\mathbf{q}$ a real vector, and its square is $-(b_0^2 + (\mathbf{q},\mathbf{q}))e_0 + 2ib_0\mathbf{q}$. Setting this equal to $-e_0$ gives $2b_0\mathbf{q} = 0$ and $b_0^2 + (\mathbf{q},\mathbf{q}) = 1$. The first equation gives $\mathbf{q} = 0$ or $b_0 = 0$, and both alternatives are now possible. With $\mathbf{q} = 0$ the second reads $b_0^2 = 1$, giving the trivial roots $\pm i$; with $b_0 = 0$ it reads $(\mathbf{q},\mathbf{q}) = 1$, giving the real unit vectors. So the anti-Hermitian subspace contains
+**The roots.** An anti-Hermitian element is $\tilde\Xi = ib_0e_0 + \vec q$ with $b_0 \in \mathbb{R}$ and $\vec q$ a real vector, and its square is $-(b_0^2 + (\vec q,\vec q))e_0 + 2ib_0\vec q$. Setting this equal to $-e_0$ gives $2b_0\vec q = 0$ and $b_0^2 + (\vec q,\vec q) = 1$. The first equation gives $\vec q = 0$ or $b_0 = 0$, and both alternatives are now possible. With $\vec q = 0$ the second reads $b_0^2 = 1$, giving the trivial roots $\pm i$; with $b_0 = 0$ it reads $(\vec q,\vec q) = 1$, giving the real unit vectors. So the anti-Hermitian subspace contains
 
 $$
-\tilde\Xi = \pm i \qquad \text{and} \qquad \tilde\Xi = \mathbf{q} , \quad \mathbf{q} \in \mathbb{R}^3 , \quad (\mathbf{q},\mathbf{q}) = 1 ,
+\tilde\Xi = \pm i \qquad \text{and} \qquad \tilde\Xi = \vec q , \quad \vec q \in \mathbb{R}^3 , \quad (\vec q,\vec q) = 1 ,
 $$
 
 both families at once. It is the only one of the remarkable subspaces besides the vector subspace to contain roots of $-1$ of both the trivial and the pure kind, and it is the meeting place of the two: the trivial roots lie in $\mathbb{C}_{\mathbb{B}} \cap i\mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_-$ and the real roots in $\mathrm{Vect}(\mathbb{B}) \cap \mathbb{H}_{\mathbb{B}} \cap \mathbb{M}_-$.
@@ -309,7 +309,7 @@ both families at once. It is the only one of the remarkable subspaces besides th
 
 The same computation can be read at the other two central values, and the result is a companion table.
 
-**The roots of $0$** are $0$ and the **nilpotent cone**, by *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*; the nonzero ones are the pure solutions of $(\mathbf{P},\mathbf{P}) = 0$, so they lie in the vector subspace and nowhere else. Each of the remarkable subspaces contains $0$, and only the vector subspace contains any other root of $0$.
+**The roots of $0$** are $0$ and the **nilpotent cone**, by *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*; the nonzero ones are the pure solutions of $(\vec P,\vec P) = 0$, so they lie in the vector subspace and nowhere else. Each of the remarkable subspaces contains $0$, and only the vector subspace contains any other root of $0$.
 
 **The roots of $+1$** are the images $\tilde\Xi i$ of the roots of $-1$, the map $\tilde\Xi \mapsto \tilde\Xi i$ being a bijection. Multiplication by $i$ carries the remarkable subspaces to the remarkable subspaces — it fixes the centre and the vector subspace and interchanges $\mathbb{H}_{\mathbb{B}}$ with $i\mathbb{H}_{\mathbb{B}}$, and $\mathbb{M}_+$ with $\mathbb{M}_-$ — so the table for $+1$ is the table for $-1$ transported by that interchange:
 
@@ -318,7 +318,7 @@ The same computation can be read at the other two central values, and the result
 | $\mathbb{C}_{\mathbb{B}}$ | $\pm 1$ |
 | $\mathrm{Vect}(\mathbb{B})$ | the images of the pure roots |
 | $\mathbb{H}_{\mathbb{B}}$ | $\pm 1$ |
-| $i\mathbb{H}_{\mathbb{B}}$ | the imaginary unit quaternions $i\mathbf{p}$ with $(\mathbf{p},\mathbf{p}) = 1$ |
+| $i\mathbb{H}_{\mathbb{B}}$ | the imaginary unit quaternions $i\vec p$ with $(\vec p,\vec p) = 1$ |
 | $\mathbb{M}_+$ | $\pm 1$ and the imaginary unit quaternions |
 | $\mathbb{M}_-$ | none |
 
@@ -340,17 +340,17 @@ $$
 \tilde\Pi = \tfrac{1}{2}\left(e_0 + \tilde\Xi i\right) , \qquad \tilde\Xi^2 = -1 ,
 $$
 
-with $\tilde\Xi$ a root of minus one; there are no others. Writing the idempotent as $\tilde\Pi = \Pi_0e_0 + \mathbf{q}$, with $\Pi_0$ the scalar part and $\mathbf{q}$ the vector part, and using $\mathbf{q}^2 = -(\mathbf{q},\mathbf{q})e_0$, the equation $\tilde\Pi^2 = \tilde\Pi$ is the pair
+with $\tilde\Xi$ a root of minus one; there are no others. Writing the idempotent as $\tilde\Pi = \Pi_0e_0 + \vec q$, with $\Pi_0$ the scalar part and $\vec q$ the vector part, and using $\vec q^2 = -(\vec q,\vec q)e_0$, the equation $\tilde\Pi^2 = \tilde\Pi$ is the pair
 
 $$
-\Pi_0^2 - (\mathbf{q},\mathbf{q}) = \Pi_0 , \qquad 2\Pi_0\mathbf{q} = \mathbf{q} .
+\Pi_0^2 - (\vec q,\vec q) = \Pi_0 , \qquad 2\Pi_0\vec q = \vec q .
 $$
 
-**Theorem (the idempotents of the remarkable subspaces).** The idempotents of $\mathbb{C}_{\mathbb{B}}$ are $0$ and $e_0$; those of $\mathbb{H}_{\mathbb{B}}$ are $0$ and $e_0$; those of $\mathbb{M}_+$ are $0$, $e_0$ and the family of elements $\tfrac{1}{2}(e_0 + i\mathbf{u})$ with $\mathbf{u}$ a real vector of $(\mathbf{u},\mathbf{u}) = 1$; and $0$ is the only idempotent of $\mathrm{Vect}(\mathbb{B})$, of $i\mathbb{H}_{\mathbb{B}}$ and of $\mathbb{M}_-$.
+**Theorem (the idempotents of the remarkable subspaces).** The idempotents of $\mathbb{C}_{\mathbb{B}}$ are $0$ and $e_0$; those of $\mathbb{H}_{\mathbb{B}}$ are $0$ and $e_0$; those of $\mathbb{M}_+$ are $0$, $e_0$ and the family of elements $\tfrac{1}{2}(e_0 + i\vec u)$ with $\vec u$ a real vector of $(\vec u,\vec u) = 1$; and $0$ is the only idempotent of $\mathrm{Vect}(\mathbb{B})$, of $i\mathbb{H}_{\mathbb{B}}$ and of $\mathbb{M}_-$.
 
-**Proof.** Read the two equations of the display above on each subspace, whose elements are enumerated in the sections. The second equation is the one that does the work: it forces $\mathbf{q} = 0$ unless the scalar part is exactly $\tfrac{1}{2}$, and the scalar part is real only on the centre and in the Hermitian subspace. *Centre:* $\mathbf{q} = 0$ and $\Pi_0^2 = \Pi_0$, so $\Pi_0 \in \{0,1\}$. *Vector:* $\Pi_0 = 0$, and $2\Pi_0\mathbf{q} = \mathbf{q}$ gives $\mathbf{q} = 0$ directly. *Quaternion:* $\Pi_0 = h_0$ real and $\mathbf{q}$ a real vector; $2h_0\mathbf{q} = \mathbf{q}$ gives $\mathbf{q} = 0$ or $h_0 = \tfrac{1}{2}$, and $h_0 = \tfrac{1}{2}$ in the first equation gives $(\mathbf{q},\mathbf{q}) = -\tfrac{1}{4}$, impossible for a real vector, so $\mathbf{q} = 0$ and $h_0 \in \{0,1\}$. *Anti-quaternion:* $\Pi_0$ is purely imaginary and $\mathbf{q}$ is real; $2\Pi_0\mathbf{q} = \mathbf{q}$ forces $\mathbf{q} = 0$ since $2\Pi_0 \neq 1$, and the first equation then gives $\Pi_0^2 = \Pi_0$ with $\Pi_0$ purely imaginary, so $\Pi_0 = 0$. *Hermitian:* $\Pi_0 = a_0$ real and $\mathbf{q} = i\mathbf{p}$ with $\mathbf{p}$ real, so $(\mathbf{q},\mathbf{q}) = -(\mathbf{p},\mathbf{p})$; the second equation gives $\mathbf{p} = 0$ or $a_0 = \tfrac{1}{2}$, and with $\mathbf{p} = 0$ the first gives $a_0 \in \{0,1\}$ while with $a_0 = \tfrac{1}{2}$ it gives $(\mathbf{p},\mathbf{p}) = \tfrac{1}{4}$. *Anti-Hermitian:* $\Pi_0$ is purely imaginary and $\mathbf{q}$ is real; the second equation forces $\mathbf{q} = 0$, and the first gives $\Pi_0 = 0$.
+**Proof.** Read the two equations of the display above on each subspace, whose elements are enumerated in the sections. The second equation is the one that does the work: it forces $\vec q = 0$ unless the scalar part is exactly $\tfrac{1}{2}$, and the scalar part is real only on the centre and in the Hermitian subspace. *Centre:* $\vec q = 0$ and $\Pi_0^2 = \Pi_0$, so $\Pi_0 \in \{0,1\}$. *Vector:* $\Pi_0 = 0$, and $2\Pi_0\vec q = \vec q$ gives $\vec q = 0$ directly. *Quaternion:* $\Pi_0 = h_0$ real and $\vec q$ a real vector; $2h_0\vec q = \vec q$ gives $\vec q = 0$ or $h_0 = \tfrac{1}{2}$, and $h_0 = \tfrac{1}{2}$ in the first equation gives $(\vec q,\vec q) = -\tfrac{1}{4}$, impossible for a real vector, so $\vec q = 0$ and $h_0 \in \{0,1\}$. *Anti-quaternion:* $\Pi_0$ is purely imaginary and $\vec q$ is real; $2\Pi_0\vec q = \vec q$ forces $\vec q = 0$ since $2\Pi_0 \neq 1$, and the first equation then gives $\Pi_0^2 = \Pi_0$ with $\Pi_0$ purely imaginary, so $\Pi_0 = 0$. *Hermitian:* $\Pi_0 = a_0$ real and $\vec q = i\vec p$ with $\vec p$ real, so $(\vec q,\vec q) = -(\vec p,\vec p)$; the second equation gives $\vec p = 0$ or $a_0 = \tfrac{1}{2}$, and with $\vec p = 0$ the first gives $a_0 \in \{0,1\}$ while with $a_0 = \tfrac{1}{2}$ it gives $(\vec p,\vec p) = \tfrac{1}{4}$. *Anti-Hermitian:* $\Pi_0$ is purely imaginary and $\vec q$ is real; the second equation forces $\vec q = 0$, and the first gives $\Pi_0 = 0$.
 
-**Corollary.** The nontrivial idempotents present in the remarkable subspaces are exactly the **Hermitian idempotents** $\tfrac{1}{2}(e_0 + i\mathbf{u})$, and they all lie in the Hermitian subspace. Each is a zero divisor, since its norm is $\tfrac{1}{4}(1 - (\mathbf{u},\mathbf{u})) = 0$; so is its complement, and the two are orthogonal and sum to $e_0$. Every idempotent of the algebra not of this form — every idempotent built on a non-Hermitian root of minus one — lies in none of the remarkable subspaces, its vector part mixing a real and an imaginary direction. So the remarkable subspaces see exactly one nontrivial family of idempotents, in exactly one subspace.
+**Corollary.** The nontrivial idempotents present in the remarkable subspaces are exactly the **Hermitian idempotents** $\tfrac{1}{2}(e_0 + i\vec u)$, and they all lie in the Hermitian subspace. Each is a zero divisor, since its norm is $\tfrac{1}{4}(1 - (\vec u,\vec u)) = 0$; so is its complement, and the two are orthogonal and sum to $e_0$. Every idempotent of the algebra not of this form — every idempotent built on a non-Hermitian root of minus one — lies in none of the remarkable subspaces, its vector part mixing a real and an imaginary direction. So the remarkable subspaces see exactly one nontrivial family of idempotents, in exactly one subspace.
 
 **The ideals.** $\mathbb{B}$ is **simple**, its only two-sided ideals being $0$ and $\mathbb{B}$, and it has **length two** as a left module over itself, so that every nonzero proper left ideal is **minimal**, of real dimension $4$, and dually every nonzero proper right ideal is a minimal right ideal of real dimension $4$. Two consequences are immediate. Since the only two-sided ideals are $0$ and $\mathbb{B}$, **no subspace of the remarkable subspaces is a two-sided ideal**. And each of the remarkable subspaces **generates the whole algebra on both sides**,
 
@@ -362,20 +362,20 @@ because a left ideal containing a unit is everything, and each of the remarkable
 
 **Theorem (the annihilators of the zero divisors).** Let $\tilde Q \neq 0$ be a zero divisor of $\mathbb{B}$, so that $N(\tilde Q) = 0$. Write $I_{\tilde Q}$ for the set of $\tilde X$ with $\tilde X\tilde Q = 0$ and $J_{\tilde Q}$ for the set of $\tilde X$ with $\tilde Q\tilde X = 0$. Then $I_{\tilde Q}$ is a minimal left ideal, $J_{\tilde Q}$ is a minimal right ideal, and each has real dimension $4$.
 
-**Theorem (the ideal generated against the annihilator).** For a nonzero **nilpotent** of the vector subspace, $\mathbf{P}^2 = 0$, the ideal generated and the annihilator coincide, $\mathbb{B}\mathbf{P} = I_{\mathbf{P}}$ and $\mathbf{P}\mathbb{B} = J_{\mathbf{P}}$; for every other zero divisor $\tilde Q$ the two are distinct and therefore complementary,
+**Theorem (the ideal generated against the annihilator).** For a nonzero **nilpotent** of the vector subspace, $\vec P^2 = 0$, the ideal generated and the annihilator coincide, $\mathbb{B}\vec P = I_{\vec P}$ and $\vec P\mathbb{B} = J_{\vec P}$; for every other zero divisor $\tilde Q$ the two are distinct and therefore complementary,
 
 $$
 \mathbb{B} = \mathbb{B}\tilde Q \oplus I_{\tilde Q} = \tilde Q\mathbb{B} \oplus J_{\tilde Q} .
 $$
 
-**Proof of the nilpotent case.** If $\mathbf{P}^2 = 0$ then $(\tilde X\mathbf{P})\mathbf{P} = \tilde X\mathbf{P}^2 = 0$ for every $\tilde X$, so $\mathbb{B}\mathbf{P} \subseteq I_{\mathbf{P}}$, and $\mathbb{B}\mathbf{P}$ contains $\mathbf{P} \neq 0$ while $I_{\mathbf{P}}$ is proper, so both are nonzero proper left ideals; by the length-two statement they are both minimal of real dimension $4$, hence equal. The right-hand statement is the mirror image, using $(\mathbf{P}\tilde X)\mathbf{P} = 0$ on the left instead.
+**Proof of the nilpotent case.** If $\vec P^2 = 0$ then $(\tilde X\vec P)\vec P = \tilde X\vec P^2 = 0$ for every $\tilde X$, so $\mathbb{B}\vec P \subseteq I_{\vec P}$, and $\mathbb{B}\vec P$ contains $\vec P \neq 0$ while $I_{\vec P}$ is proper, so both are nonzero proper left ideals; by the length-two statement they are both minimal of real dimension $4$, hence equal. The right-hand statement is the mirror image, using $(\vec P\tilde X)\vec P = 0$ on the left instead.
 
 The subspaces of the remarkable subspaces that carry a zero divisor are the vector subspace, $\mathbb{M}_+$ and $\mathbb{M}_-$, by the sections above; the other three — the centre, the quaternion subspace and the anti-quaternion subspace — consist of $0$ and units, and determine no minimal ideal at all. So the ideal content of the remarkable subspaces is carried by three of them:
 
 | subspace | left ideal generated | units in it | minimal one-sided ideals determined |
 |---|---|---|---|
 | $\mathbb{C}_{\mathbb{B}}$ | $\mathbb{B}$ | all $Ae_0$ with $A \neq 0$ | none |
-| $\mathrm{Vect}(\mathbb{B})$ | $\mathbb{B}$ | $e_1$ | $\mathbb{B}\mathbf{P} = I_{\mathbf{P}}$ and $\mathbf{P}\mathbb{B} = J_{\mathbf{P}}$, $\mathbf{P}$ a nonzero nilpotent |
+| $\mathrm{Vect}(\mathbb{B})$ | $\mathbb{B}$ | $e_1$ | $\mathbb{B}\vec P = I_{\vec P}$ and $\vec P\mathbb{B} = J_{\vec P}$, $\vec P$ a nonzero nilpotent |
 | $\mathbb{H}_{\mathbb{B}}$ | $\mathbb{B}$ | $e_0$ | none |
 | $i\mathbb{H}_{\mathbb{B}}$ | $\mathbb{B}$ | $ie_0$ | none |
 | $\mathbb{M}_+$ | $\mathbb{B}$ | $e_0$ | $\mathbb{B}\tilde\Pi$, $I_{\tilde\Pi} = \mathbb{B}(e_0-\tilde\Pi)$ and their right-hand twins, $\tilde\Pi$ a Hermitian idempotent |
@@ -385,15 +385,15 @@ Every one of the minimal ideals determined by the remarkable subspaces meets the
 
 | minimal ideal | $\mathbb{C}_{\mathbb{B}}$ | $\mathrm{Vect}(\mathbb{B})$ | $\mathbb{H}_{\mathbb{B}}$ | $i\mathbb{H}_{\mathbb{B}}$ | $\mathbb{M}_+$ | $\mathbb{M}_-$ |
 |---|---|---|---|---|---|---|
-| each $\mathbb{B}\mathbf{P}$, $\mathbf{P}\mathbb{B}$, $\mathbb{B}\tilde\Pi$, $\mathbb{B}f$, $\tilde\Pi\mathbb{B}$, $f\mathbb{B}$ | $0$ | $2$ | $0$ | $0$ | $1$ | $1$ |
+| each $\mathbb{B}\vec P$, $\vec P\mathbb{B}$, $\mathbb{B}\tilde\Pi$, $\mathbb{B}f$, $\tilde\Pi\mathbb{B}$, $f\mathbb{B}$ | $0$ | $2$ | $0$ | $0$ | $1$ | $1$ |
 
 the entries being real dimensions; so the minimal ideals meet exactly the three subspaces that carry zero divisors, and avoid the other three entirely.
 
 ## Summary
 
-The biquaternion algebra carries four conjugations whose fixed and anti-fixed spaces reduce to six distinct subspaces, the remarkable subspaces. The centre $\mathbb{C}_{\mathbb{B}}$, the fixed space of quaternion conjugation, is the set of elements with vanishing vector part, of real basis $e_0, ie_0$ and dimension $2$; it is the centre of the algebra and a field, its nonzero elements are all units, it carries the trivial idempotent pair $0, e_0$ and no minimal ideal, and it contains the two trivial roots of $-1$ and nothing else. The vector subspace $\mathrm{Vect}(\mathbb{B})$, the anti-fixed space of quaternion conjugation, is the kernel of the scalar part, of real basis $e_1, e_2, e_3, ie_1, ie_2, ie_3$ and dimension $6$; it is a Lie algebra and not a subalgebra, its nonzero non-units are the square-zero pure vectors $r(\hat u + i\hat v)$ over an orthonormal pair of directions, a four-parameter family, each its own annihilating partner, and it carries the minimal ideal $\mathbb{B}\mathbf{P} = I_{\mathbf{P}}$ of any nonzero nilpotent; it is the only subspace in which all three central equations have solutions, and it contains every root of $-1$ that is not one of the trivial pair, the real unit vectors and the four-parameter non-trivial family. The quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the fixed space of complex conjugation, is the set of elements with real coefficients, of real basis $e_0, e_1, e_2, e_3$ and dimension $4$; it is a division subalgebra, every nonzero element a unit, it carries the trivial idempotent pair and no minimal ideal, and its roots of $-1$ are the real unit vectors.
+The biquaternion algebra carries four conjugations whose fixed and anti-fixed spaces reduce to six distinct subspaces, the remarkable subspaces. The centre $\mathbb{C}_{\mathbb{B}}$, the fixed space of quaternion conjugation, is the set of elements with vanishing vector part, of real basis $e_0, ie_0$ and dimension $2$; it is the centre of the algebra and a field, its nonzero elements are all units, it carries the trivial idempotent pair $0, e_0$ and no minimal ideal, and it contains the two trivial roots of $-1$ and nothing else. The vector subspace $\mathrm{Vect}(\mathbb{B})$, the anti-fixed space of quaternion conjugation, is the kernel of the scalar part, of real basis $e_1, e_2, e_3, ie_1, ie_2, ie_3$ and dimension $6$; it is a Lie algebra and not a subalgebra, its nonzero non-units are the square-zero pure vectors $r(\hat u + i\hat v)$ over an orthonormal pair of directions, a four-parameter family, each its own annihilating partner, and it carries the minimal ideal $\mathbb{B}\vec P = I_{\vec P}$ of any nonzero nilpotent; it is the only subspace in which all three central equations have solutions, and it contains every root of $-1$ that is not one of the trivial pair, the real unit vectors and the four-parameter non-trivial family. The quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the fixed space of complex conjugation, is the set of elements with real coefficients, of real basis $e_0, e_1, e_2, e_3$ and dimension $4$; it is a division subalgebra, every nonzero element a unit, it carries the trivial idempotent pair and no minimal ideal, and its roots of $-1$ are the real unit vectors.
 
-The anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the anti-fixed space of complex conjugation, is the set of elements with purely imaginary coefficients, of real basis $ie_0, ie_1, ie_2, ie_3$ and dimension $4$; it is a module over the quaternion subspace and not a subalgebra, every nonzero element a unit, it carries only the idempotent $0$ and no minimal ideal, and its roots of $-1$ are the trivial pair. The Hermitian subspace $\mathbb{M}_+$, the fixed space of Hermitian conjugation, is the set of elements with real scalar part and purely imaginary vector part, of real basis $e_0, ie_1, ie_2, ie_3$ and dimension $4$; it is a Jordan algebra under the symmetrized product, it carries the nontrivial family of idempotents $\tfrac{1}{2}(e_0 + i\mathbf{u})$ over real unit vectors, which are also exactly the zero divisors of the subspace, each with the orthogonal complement $e_0 - \tilde\Pi$ and the four minimal ideals $\mathbb{B}\tilde\Pi$, $\mathbb{B}f$, $\tilde\Pi\mathbb{B}$, $f\mathbb{B}$, and it contains no root of $-1$. The anti-Hermitian subspace $\mathbb{M}_-$, the anti-fixed space of Hermitian conjugation and the fixed space of the reversal, is the set of elements with purely imaginary scalar part and real vector part, of real basis $ie_0, e_1, e_2, e_3$ and dimension $4$; it is a real Lie algebra, its zero divisors are the purely imaginary multiples of the Hermitian idempotents and determine the same four minimal ideals, and its roots of $-1$ are the trivial pair and the real unit vectors.
+The anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the anti-fixed space of complex conjugation, is the set of elements with purely imaginary coefficients, of real basis $ie_0, ie_1, ie_2, ie_3$ and dimension $4$; it is a module over the quaternion subspace and not a subalgebra, every nonzero element a unit, it carries only the idempotent $0$ and no minimal ideal, and its roots of $-1$ are the trivial pair. The Hermitian subspace $\mathbb{M}_+$, the fixed space of Hermitian conjugation, is the set of elements with real scalar part and purely imaginary vector part, of real basis $e_0, ie_1, ie_2, ie_3$ and dimension $4$; it is a Jordan algebra under the symmetrized product, it carries the nontrivial family of idempotents $\tfrac{1}{2}(e_0 + i\vec u)$ over real unit vectors, which are also exactly the zero divisors of the subspace, each with the orthogonal complement $e_0 - \tilde\Pi$ and the four minimal ideals $\mathbb{B}\tilde\Pi$, $\mathbb{B}f$, $\tilde\Pi\mathbb{B}$, $f\mathbb{B}$, and it contains no root of $-1$. The anti-Hermitian subspace $\mathbb{M}_-$, the anti-fixed space of Hermitian conjugation and the fixed space of the reversal, is the set of elements with purely imaginary scalar part and real vector part, of real basis $ie_0, e_1, e_2, e_3$ and dimension $4$; it is a real Lie algebra, its zero divisors are the purely imaginary multiples of the Hermitian idempotents and determine the same four minimal ideals, and its roots of $-1$ are the trivial pair and the real unit vectors.
 
 Exactly two of the remarkable subspaces are closed under the product, the centre and the quaternion subspace, and both are division algebras; no subspace of the remarkable subspaces is a two-sided ideal and each generates $\mathbb{B}$ on both sides. Of the remarkable subspaces, only three contain a nonzero idempotent and only three carry a zero divisor, and up to the central unit $i$ the ideal theory is carried by the centre, the vector subspace and the Hermitian subspace. The remarkable subspaces are pairwise distinct; their relations are collected in *Comparison of the Remarkable Subspaces*, and the algebra each one carries belongs to the thematic articles.
 
@@ -416,13 +416,13 @@ Exactly two of the remarkable subspaces are closed under the product, the centre
 | $\tilde{P} \bullet \tilde{Q}$ | the symmetrized product $\tfrac{1}{2}(\tilde{P}\tilde{Q} + \tilde{Q}\tilde{P})$ |
 | $\tilde\Pi$ | an idempotent, $\tilde\Pi^2 = \tilde\Pi$ |
 | $e_0 - \tilde\Pi, f$ | the complementary idempotent |
-| $\mathbf{u}$ | a real unit vector, the parameter of the Hermitian idempotents |
+| $\vec u$ | a real unit vector, the parameter of the Hermitian idempotents |
 | $I_{\tilde Q}, J_{\tilde Q}$ | the sets of $\tilde X$ with $\tilde X\tilde Q = 0$ and with $\tilde Q\tilde X = 0$ |
-| $\mathbf{P}$ | a pure vector, and a nonzero nilpotent in the ideal theory |
+| $\vec P$ | a pure vector, and a nonzero nilpotent in the ideal theory |
 | $\tilde\Xi$ | a root of a central value |
-| $A, \mathbf{p}, \mathbf{q}$ | a complex scalar and the real vectors of a Hermitian or anti-Hermitian element |
-| $h$ | a real quaternion, $h_0e_0 + \boldsymbol{\rho}$ with $\boldsymbol{\rho}$ real |
-| $\boldsymbol{\rho}, \boldsymbol{\rho}'$ | the real and imaginary parts of a complex vector |
+| $A, \vec p, \vec q$ | a complex scalar and the real vectors of a Hermitian or anti-Hermitian element |
+| $h$ | a real quaternion, $h_0e_0 + \vec\rho$ with $\vec\rho$ real |
+| $\vec\rho, \vec\rho'$ | the real and imaginary parts of a complex vector |
 
 ## Further Reading
 

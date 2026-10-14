@@ -9,13 +9,13 @@ $$
 \tilde q = r\,b\,u,
 $$
 
-a positive real scale $r$, a unit boost $b$, and an orthogonal factor $u$ which is a rotation in the timelike case and a reflection in the spacelike case. The count is three, not the two of the quaternion algebra and not the four of the biquaternion algebra of the companion articles, and each of the three arises from a distinct feature of the algebra.
+a positive real scale $r$ ($r \in \mathbb{R}$, $r>0$), a unit boost $b$ ($b \in \mathrm{P} = \operatorname{span}\{e_2,e_3\}$, $N(b)=1$), and an orthogonal factor $u$ which is a rotation in the timelike case and a reflection in the spacelike case. The count is three, not the two of the quaternion algebra and not the four of the biquaternion algebra of the companion articles, and each of the three arises from a distinct feature of the algebra.
 
 The mathematical engine of the article is the matrix model. The split-quaternion algebra is isomorphic to the algebra of real two-by-two matrices, and under that isomorphism the polar representation above is the polar decomposition of a matrix into a positive definite symmetric factor and an orthogonal factor. Everything else in the article is that statement translated back into the algebra, with the translation made explicit so that the algebraic form can be used without passing through the matrices.
 
 Two differences from the quaternion case govern the whole article, and both come from the split-quaternion norm. The quaternion norm is positive definite, so its square root is a positive real with no choice; the split-quaternion norm has signature $(2,2)$ and takes both signs, so the modulus must be built from the absolute value $|N(\tilde q)|$ and the sign of $N(\tilde q)$ is transferred to the orthogonal factor. And the quaternion algebra is a division algebra, so every nonzero element has a polar representation; the split-quaternion algebra has a null cone, and the elements on it have none, so the theorem is stated on the invertible elements and the trichotomy of the corpus's *Split-Quaternion Norm and Invertibility* is carried along.
 
-The conventions are those of *Split-Quaternion Algebra*: the basis is $1, e_1, e_2, e_3$ with
+The conventions are those of *Split-Quaternion Algebra*: the basis is $e_0 = 1, e_1, e_2, e_3$ with
 
 $$
 e_1^2 = -1, \qquad e_2^2 = +1, \qquad e_3 = e_1e_2, \qquad e_1e_2 = -e_2e_1,
@@ -28,6 +28,18 @@ N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2+q_1^2-q_2^2-q_3^2,
 $$
 
 the identification with $\mathrm{Cl}_{1,1}$ and with $M_2(\mathbb{R})$ is the corpus's, and the element is **timelike** when $N(\tilde q) > 0$, **spacelike** when $N(\tilde q) < 0$ and **lightlike** when $N(\tilde q) = 0$. No physics is invoked.
+
+## The Word as Exponentials
+
+The word $\tilde q = r\,b\,u$ is a product of three factors, and the scale and the boost are exponentials while the orthogonal factor is a rotation exponential times an optional discrete reflection:
+
+$$
+\tilde q = \exp(\ln r)\,\exp(\sigma)\cdot u , \qquad r = \sqrt{\lvert N(\tilde q)\rvert} > 0 , \qquad \sigma\in\mathrm{P} = \operatorname{span}\{e_2,e_3\} ,
+$$
+
+with $u = \exp(\theta e_1)$ in the timelike case and $u = \exp(\theta e_1)\,e_2$ in the spacelike case. The exponent of the scale is the real number $\ln r$, whose root is $1$ of square $+1$, the hyperbolic row of the trichotomy; the exponent of the boost is $\sigma$, whose square is the positive scalar $\lvert\sigma\rvert^2$, again the hyperbolic row; the exponent of the rotation is $\theta e_1$, whose root $e_1$ has square $-1$, the trigonometric row. The reflection $e_2$ is discrete and is not an exponential. The boost logarithm, its two parameters and the two components of the orthogonal factor are the subject of the sections below.
+
+**The boost and the rotation do not commute, so the order is part of the word.** The bracket is $[\sigma,\theta e_1] = 2\theta(t_3e_2-t_2e_3)$, a real pure element in the plane of $e_2$ and $e_3$, non-zero as soon as $\sigma$ and $\theta$ are; the product of the two exponentials is therefore not the exponential of the sum. Over $60$ random boosts and rotations the largest coefficient of the bracket is $6.59$ and the largest coefficient of the failure $\exp(\sigma+\theta e_1)-\exp(\sigma)\exp(\theta e_1)$ of the sum rule is $2.09$. Two rewritings are therefore unavailable: the interchange of the boost and the rotation, and their fusion into a single exponential. The scale is central and passes through both, so the order that matters is the relative order of the boost and the orthogonal factor. The obstruction can be **total**, not merely large. At the angle $\theta = \pi$ the rotation factor is $\exp(\pi e_1) = -1$, so the element is $-b$, whose determinant is $N(b) = 1$ and whose trace is $-2\cosh d$; its two eigenvalues are $-e^{d}$ and $-e^{-d}$, both negative and distinct. A real matrix with two distinct negative eigenvalues has no real logarithm, so that element is the exponential of no element of the algebra at all, and the product of two exponentials is the only exponential description it has.
 
 ## The Algebra and Its Two Involutions
 
@@ -111,6 +123,8 @@ $$
 $$
 
 in which $r$ is the **modulus**, $b$ the **unit boost** and $u$ the **orthogonal factor**.
+
+Both non-scalar factors are **unit elements**, that is, elements of norm one for the norm in view up to the sign of an indefinite norm (*Conventions in Mathematics*, §*The Unitary Convention*): the norm in view is the split-quaternion norm $N$, the boost is the level set $N(b)=1$ inside the positive definite elements, and the orthogonal factor has $N(u)=\pm1$, the sign being that of the element. The phrase names the norm-one elements and not every invertible element: the **group of units** $\mathbb{H}_{\mathrm{s}}^\times = \{N\neq0\}$ is the wider set of invertible elements, treated later, and the two senses of the word are kept apart throughout.
 
 The definition is stated before its existence is proved, and it contains three conditions that are not independent: a symmetric element of the algebra is positive definite exactly when its two eigenvalues are positive, and the normalisation $N(b) = 1$ fixes the product of those eigenvalues. The conditions are collected in the proposition below.
 
@@ -258,7 +272,7 @@ $$
 
 with the same angle convention. The element $e_2$ is the fixed reflection, and the factorisation is unique for the same reason the rotation form is: the angle is read off from the rotation part and the discrete factor is then determined. The reflection is therefore the discrete part of the orthogonal factor and the angle is its continuous part.
 
-The presence of two components is the sharpest contrast with the quaternion case, where the rotor lies in the connected group $\mathrm{Sp}(1)$. The reason is the group that the rotor occupies and not the split-quaternion norm directly: here the rotor satisfies $u^{\tau}u = 1$, so it is an element of the full orthogonal group $O(2)$, whose two components are the rotations and the reflections and are separated by the determinant; there the rotor satisfies $N(u) = 1$ and is an element of the sphere $S^3$, which is connected. The indefiniteness of $N$ enters in a different place, by making spacelike elements available in the first place, and it is the spacelike elements that carry the reflection.
+The presence of two components is the sharpest contrast with the quaternion case, where the rotor lies in the connected group $\mathrm{Sp}(1) = \{\tilde q \in \mathbb{H} : \tilde q\tilde q^{\natural} = 1\}$ of unit quaternions. The reason is the group that the rotor occupies and not the split-quaternion norm directly: here the rotor satisfies $u^{\tau}u = 1$, so it is an element of the full orthogonal group $O(2)$, whose two components are the rotations and the reflections and are separated by the determinant; there the rotor satisfies $N(u) = 1$ and is an element of the sphere $S^3$, which is connected. The indefiniteness of $N$ enters in a different place, by making spacelike elements available in the first place, and it is the spacelike elements that carry the reflection.
 
 ## Worked Examples
 
@@ -334,7 +348,7 @@ Three points of the comparison are worth stating explicitly.
 
 **The modulus is still a real scale, but its formula is not.** In $\mathbb{H}$ the modulus is $\sqrt{N(\tilde q)}$ and needs no absolute value, because the quaternion norm is definite. In $\mathbb{H}_{\mathrm{s}}$ it is $\sqrt{|N(\tilde q)|}$, and the absolute value is not a cosmetic convenience: it is the statement that the split-quaternion norm takes both signs.
 
-**A boost appears, and a rotation direction disappears.** The quaternion algebra has three compact directions, the unit sphere $S^3$; the split-quaternion algebra has one, the circle generated by $e_1$. The two directions lost from the compact part are exactly the two directions gained by the boost, and the total remains four. In the biquaternion algebra of the companion article both a three-dimensional boost and a three-parameter rotor are present, and both survive because the algebra is eight-dimensional.
+**A boost appears, and a rotation direction disappears.** The quaternion algebra has three compact directions, the unit sphere $\mathrm{Sp}(1)=S^3$; the split-quaternion algebra has one, the circle generated by $e_1$. The two directions lost from the compact part are exactly the two directions gained by the boost, and the total remains four. In the biquaternion algebra of the companion article both a three-dimensional boost and a three-parameter rotor are present, and both survive because the algebra is eight-dimensional.
 
 **The centre contributes nothing in either case.** The centre of $\mathbb{H}_{\mathrm{s}}$ is $\mathbb{R}$, so there is no central phase factor, just as in $\mathbb{H}$. The centre-valued factor is of dimension one in the biquaternion algebra and provides the fourth factor there.
 

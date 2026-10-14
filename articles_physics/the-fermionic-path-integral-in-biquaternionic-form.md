@@ -133,7 +133,7 @@ where $S_F$ is the propagator amplitude of the companion article in configuratio
 
 ### The Biquaternion Form of the Kernel
 
-Writing the wave biquaternion $\tilde k=iE\,e_0+\mathbf p$, so that $\tilde k\tilde k^{\natural}=-p^2$, the momentum-space kernel is
+Writing the wave biquaternion $\tilde k=iE\,e_0+\vec p$, so that $\tilde k\tilde k^{\natural}=-p^2$, the momentum-space kernel is
 
 $$
 S_F(p)=-\frac{i(\not p+m)}{\tilde k\tilde k^{\natural}+m^2-i\epsilon},

@@ -33,12 +33,12 @@ Three qubits are involved, and it matters which is which:
 The arena is therefore $\mathbb{B}^{\otimes3}\cong M_8(\mathbb{C})$, with the trace the product of the factor traces, $\mathrm{Tr}(x\otimes y\otimes z)=\mathrm{Tr}_\mathbb{B}(x)\mathrm{Tr}_\mathbb{B}(y)\mathrm{Tr}_\mathbb{B}(z)$. The unknown state is written
 
 $$
-\tilde{\rho}_\psi=\tfrac12\left(e_0+i\mathbf{r}\right),
+\tilde{\rho}_\psi=\tfrac12\left(e_0+i\vec r\right),
 \qquad
-\mathbf{r}=\sum_{k=1}^{3}r_k\,e_k,\qquad |\mathbf{r}|\leq 1 ,
+\vec r=\sum_{k=1}^{3}r_k\,e_k,\qquad |\vec r|\leq 1 ,
 $$
 
-with $|\mathbf{r}|=1$ exactly when the state is pure and $\mathbf{r}=0$ when it is maximally mixed. The initial three-qubit state is the single element
+with $|\vec r|=1$ exactly when the state is pure and $\vec r=0$ when it is maximally mixed. The initial three-qubit state is the single element
 
 $$
 \tilde{\rho}^{(0)}=\tilde{\rho}_\psi^{(1)}\otimes P_{\Phi^+}^{(23)}\in\mathbb{M}_+\otimes\mathbb{M}_+\otimes\mathbb{M}_+ ,
@@ -329,7 +329,7 @@ A source in the literature (Obojska, *Journal of Physics Communications* **4** (
 
 Quantum teleportation in the biquaternion framework is the following chain of algebraic statements.
 
-The resource is the Bell idempotent $P_{\Phi^+}=\tfrac14(e_0\otimes e_0-e_1\otimes e_1+e_2\otimes e_2-e_3\otimes e_3)$ of $\mathbb{M}_+\otimes\mathbb{M}_+$, whose partial traces are both $\tfrac12 e_0$. The unknown single-qubit state is $\tilde{\rho}_\psi=\tfrac12(e_0+i\mathbf{r})\in\mathbb{M}_+$, and the initial state is $\tilde{\rho}^{(0)}=\tilde{\rho}_\psi^{(1)}\otimes P_{\Phi^+}^{(23)}$.
+The resource is the Bell idempotent $P_{\Phi^+}=\tfrac14(e_0\otimes e_0-e_1\otimes e_1+e_2\otimes e_2-e_3\otimes e_3)$ of $\mathbb{M}_+\otimes\mathbb{M}_+$, whose partial traces are both $\tfrac12 e_0$. The unknown single-qubit state is $\tilde{\rho}_\psi=\tfrac12(e_0+i\vec r)\in\mathbb{M}_+$, and the initial state is $\tilde{\rho}^{(0)}=\tilde{\rho}_\psi^{(1)}\otimes P_{\Phi^+}^{(23)}$.
 
 Alice measures the pair $(1,2)$ with the four Bell projectors $P_\epsilon^{(12)}=P_\epsilon\otimes e_0$, equivalently with the commuting stabiliser observables $S_1=-e_1\otimes e_1$ and $S_3=-e_3\otimes e_3$, whose outcome pair is $(s_1,s_3)=(-\epsilon_1,-\epsilon_3)$. The teleportation identity
 
@@ -351,7 +351,7 @@ The unconditioned average of the branches is the Pauli twirl $\tfrac14\sum_\epsi
 | $\mathbb{B}^{\otimes3}\cong M_8(\mathbb{C})$ | Three-qubit arena |
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$ |
 | $i$ | Scalar imaginary, $i^2=-1$ |
-| $\tilde{\rho}_\psi=\tfrac12(e_0+i\mathbf{r})$ | Unknown single-qubit state |
+| $\tilde{\rho}_\psi=\tfrac12(e_0+i\vec r)$ | Unknown single-qubit state |
 | $P_\epsilon=\tfrac14(e_0\otimes e_0+\sum_k\epsilon_k e_k\otimes e_k)$ | Bell idempotent, $\epsilon_1\epsilon_2\epsilon_3=+1$ |
 | $P_{\Phi^+}$, $\epsilon=(-1,+1,-1)$ | Shared resource (Bell idempotent) |
 | $S_1=-e_1\otimes e_1$, $S_3=-e_3\otimes e_3$ | Stabiliser involutions; $(s_1,s_3)=(-\epsilon_1,-\epsilon_3)$ |

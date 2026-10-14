@@ -37,15 +37,15 @@ a reductive Lie algebra whose semisimple part is $\mathrm{SO}(4)$.
 
 **Definition.** For $\tilde Q \in \mathbb{H}_{\mathbb{D}}$ the **exponential** is $\exp(\tilde Q) = \sum_{n\geq0} \tilde Q^n/n!$, and it converges for every $\tilde Q$ because the algebra is finite-dimensional.
 
-**Theorem.** $\exp$ commutes with the splitting: $\exp(\tilde Q_+,\tilde Q_-) = (\exp\tilde Q_+, \exp\tilde Q_-)$. For a quaternion $\tilde q = a + \mathbf{u}$ with $a \in \mathbb{R}$ and $\mathbf{u} \in \mathrm{Im}\,\mathbb{H}$,
+**Theorem.** $\exp$ commutes with the splitting: $\exp(\tilde Q_+,\tilde Q_-) = (\exp\tilde Q_+, \exp\tilde Q_-)$. For a quaternion $\tilde q = a + \vec u$ with $a \in \mathbb{R}$ and $\vec u \in \mathrm{Im}\,\mathbb{H}$,
 
 $$
-\exp(\tilde q) = e^{a}\left(\cos|\mathbf{u}| + \frac{\mathbf{u}}{|\mathbf{u}|}\sin|\mathbf{u}|\right) , \qquad \mathbf{u} \neq 0 ,
+\exp(\tilde q) = e^{a}\left(\cos|\vec u| + \frac{\vec u}{|\vec u|}\sin|\vec u|\right) , \qquad \vec u \neq 0 ,
 $$
 
-and $\exp(a) = e^{a}e_0$ for the real case $\mathbf{u} = 0$.
+and $\exp(a) = e^{a}e_0$ for the real case $\vec u = 0$.
 
-**Proof.** The exponential of a direct sum is the pair of exponentials. For the quaternion formula, write $\tilde q = a + \mathbf{u}$ with $a$ central and $\mathbf{u}^2 = -|\mathbf{u}|^2$, separate the series into even and odd parts, and use $\cos$ and $\sin$.
+**Proof.** The exponential of a direct sum is the pair of exponentials. For the quaternion formula, write $\tilde q = a + \vec u$ with $a$ central and $\vec u^2 = -|\vec u|^2$, separate the series into even and odd parts, and use $\cos$ and $\sin$.
 
 So the exponential in the split biquaternion algebra is the pair of quaternion exponentials, one per half, and the closed form follows from the formula above componentwise.
 
@@ -63,9 +63,9 @@ $$
 \ker\exp = \left\{ (\tilde Q_+, \tilde Q_-) : \exp\tilde Q_+ = \exp\tilde Q_- = 1 \right\} ,
 $$
 
-where for a quaternion $\tilde q$, $\exp\tilde q = 1$ if and only if $\tilde q = 0$ or $\tilde q = 2\pi k\,\hat{\mathbf{u}}$ with $k \in \mathbb{Z}_{>0}$ and $\hat{\mathbf{u}}$ a unit imaginary quaternion.
+where for a quaternion $\tilde q$, $\exp\tilde q = 1$ if and only if $\tilde q = 0$ or $\tilde q = 2\pi k\,\hat u$ with $k \in \mathbb{Z}_{>0}$ and $\hat u$ a unit imaginary quaternion.
 
-**Proof.** Surjectivity is componentwise: every nonzero quaternion has a polar form $\tilde q = r\hat{q}$ with $r > 0$ and $\hat q$ a unit quaternion, and $\hat q = \cos\theta + \sin\theta\,\hat{\mathbf{u}}$ is $\exp(\theta\hat{\mathbf{u}})$, so $\exp(\log r + \theta\hat{\mathbf{u}}) = \tilde q$; applying this in each half gives surjectivity onto the units. For the kernel, $\exp(a + \mathbf{u}) = 1$ gives $e^a\cos|\mathbf{u}| = 1$ and $e^a\sin|\mathbf{u}|\,\hat{\mathbf{u}} = 0$; if $\mathbf{u} = 0$ then $e^a = 1$ and $a = 0$, while if $\mathbf{u} \neq 0$ then $\sin|\mathbf{u}| = 0$ forces $a = 0$ and $|\mathbf{u}| \in 2\pi\mathbb{Z}_{>0}$.
+**Proof.** Surjectivity is componentwise: every nonzero quaternion has a polar form $\tilde q = r\hat{q}$ with $r > 0$ and $\hat q$ a unit quaternion, and $\hat q = \cos\theta + \sin\theta\,\hat u$ is $\exp(\theta\hat u)$, so $\exp(\log r + \theta\hat u) = \tilde q$; applying this in each half gives surjectivity onto the units. For the kernel, $\exp(a + \vec u) = 1$ gives $e^a\cos|\vec u| = 1$ and $e^a\sin|\vec u|\,\hat u = 0$; if $\vec u = 0$ then $e^a = 1$ and $a = 0$, while if $\vec u \neq 0$ then $\sin|\vec u| = 0$ forces $a = 0$ and $|\vec u| \in 2\pi\mathbb{Z}_{>0}$.
 
 The kernel is therefore a union of a point and countably many two-spheres in each half, and the exponential fails to be injective in the same manner as the quaternion exponential.
 
@@ -97,9 +97,9 @@ The norm-one group is the compact part of the unit group: every unit is a positi
 
 ### The Elliptic Subgroups
 
-**Theorem.** Let $\hat{\mathbf{u}}$ be a unit element of $\mathrm{Im}\,\mathbb{H}$, so $\hat{\mathbf{u}}^2 = -e_0$. Then $e^{t\hat{\mathbf{u}}} = \cos t\,e_0 + \sin t\,\hat{\mathbf{u}}$ lies in the norm-one group, and the elements $e^{t\hat{\mathbf{u}}}$ and $e^{t j\hat{\mathbf{u}}}$ generate compact one-parameter subgroups, since $(j\hat{\mathbf{u}})^2 = -e_0$ as well.
+**Theorem.** Let $\hat u$ be a unit element of $\mathrm{Im}\,\mathbb{H}$, so $\hat u^2 = -e_0$. Then $e^{t\hat u} = \cos t\,e_0 + \sin t\,\hat u$ lies in the norm-one group, and the elements $e^{t\hat u}$ and $e^{t j\hat u}$ generate compact one-parameter subgroups, since $(j\hat u)^2 = -e_0$ as well.
 
-**Proof.** $\hat{\mathbf{u}}^2 = -e_0$ gives the trigonometric form directly; and $(j\hat{\mathbf{u}})^2 = j^2\hat{\mathbf{u}}^2 = (+1)(-e_0) = -e_0$, so the same form applies to $j\hat{\mathbf{u}}$. Both elements have unit norm.
+**Proof.** $\hat u^2 = -e_0$ gives the trigonometric form directly; and $(j\hat u)^2 = j^2\hat u^2 = (+1)(-e_0) = -e_0$, so the same form applies to $j\hat u$. Both elements have unit norm.
 
 The elliptic subgroups are the compact rotations: the group generated is a copy of $SO(2)$ in each case, and the two-sphere of roots of $-e_0$ in $\mathbb{M}_-$, namely the unit imaginary quaternions, parametrises them, as treated in *Split-Biquaternion Roots of Minus One*.
 
@@ -109,7 +109,7 @@ The elliptic subgroups are the compact rotations: the group generated is a copy 
 
 **Proof.** The series for $\exp(tj)$ splits into even and odd parts using $j^2 = e_0$. For the second statement, $\tilde Q^2 = e_0$ in the components $\tilde Q_\pm$ gives $\tilde Q_\pm^2 = e_0$ in the quaternion division algebra $\mathbb{H}$, whose solutions are $\tilde Q_\pm = \pm e_0$; hence $\tilde Q$ is one of $(\pm 1, \pm 1)$, that is $\pm e_0$ or $\pm j$.
 
-The hyperbolic one-parameter subgroups are thus generated by the central element $j$, the compact ones by the imaginary quaternion directions of the two halves together with the Hermitian imaginary directions $j\hat{\mathbf{u}}$. The absence of nilpotent elements means there are no parabolic one-parameter subgroups inside the algebra, as recorded in *Split-Biquaternion Rotations and the Lorentz Group*.
+The hyperbolic one-parameter subgroups are thus generated by the central element $j$, the compact ones by the imaginary quaternion directions of the two halves together with the Hermitian imaginary directions $j\hat u$. The absence of nilpotent elements means there are no parabolic one-parameter subgroups inside the algebra, as recorded in *Split-Biquaternion Rotations and the Lorentz Group*.
 
 ## Polar and Exponential Parametrisation
 
@@ -131,7 +131,7 @@ In the biquaternion case the algebra $\mathbb{B} \cong M_2(\mathbb{C})$ is simpl
 
 ## Summary
 
-The split biquaternion algebra is a real Lie algebra of dimension $8$ under the commutator, the direct sum $\mathbb{H}\oplus\mathbb{H}$ of the two halves, with centre $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}\cong\mathbb{D}$ and derived algebra $\mathrm{SO}(3)\oplus\mathrm{SO}(3)\cong\mathrm{SO}(4)$; it is reductive, $\mathbb{R}^2\oplus\mathrm{SO}(4)$. Its exponential commutes with the splitting and has the quaternion closed form componentwise, $e^{a}(\cos|\mathbf{u}| + \hat{\mathbf{u}}\sin|\mathbf{u}|)$; the group law holds for commuting arguments and its failure is measured by the commutator; and the exponential is surjective onto the units, with kernel the pairs of quaternions of the form $2\pi k\hat{\mathbf{u}}$. The group of units is $\mathbb{H}_{\mathbb{D}}^\times \cong \mathbb{H}^\times\times\mathbb{H}^\times \cong \mathbb{R}_{>0}^2\times S^3\times S^3$, connected, simply connected, of dimension $8$, and the norm-one group is the compact $S^3\times S^3\cong\mathrm{Spin}(4)$. The elliptic one-parameter subgroups are generated by elements with square $-e_0$, which include the imaginary quaternion directions and the Hermitian imaginary directions $j\hat{\mathbf{u}}$; the hyperbolic ones are generated by the central $j$ with square $+e_0$, the only noncentral solutions of $\tilde Q^2 = e_0$ being absent. Every element has a componentwise polar form and every unit an exponential parametrisation. Compared with the biquaternion case, the simple algebra $\mathrm{GL}(2,\mathbb{C})$ is replaced by the reductive $\mathbb{R}^2\oplus\mathrm{SO}(4)$, the unit group $GL(2,\mathbb{C})$ by $\mathbb{R}_{>0}^2\times S^3\times S^3$, and the non-compact $SL(2,\mathbb{C})$ slice by the compact $\mathrm{Spin}(4)$.
+The split biquaternion algebra is a real Lie algebra of dimension $8$ under the commutator, the direct sum $\mathbb{H}\oplus\mathbb{H}$ of the two halves, with centre $\mathbb{D}_{\mathbb{H}_{\mathbb{D}}}\cong\mathbb{D}$ and derived algebra $\mathrm{SO}(3)\oplus\mathrm{SO}(3)\cong\mathrm{SO}(4)$; it is reductive, $\mathbb{R}^2\oplus\mathrm{SO}(4)$. Its exponential commutes with the splitting and has the quaternion closed form componentwise, $e^{a}(\cos|\vec u| + \hat u\sin|\vec u|)$; the group law holds for commuting arguments and its failure is measured by the commutator; and the exponential is surjective onto the units, with kernel the pairs of quaternions of the form $2\pi k\hat u$. The group of units is $\mathbb{H}_{\mathbb{D}}^\times \cong \mathbb{H}^\times\times\mathbb{H}^\times \cong \mathbb{R}_{>0}^2\times S^3\times S^3$, connected, simply connected, of dimension $8$, and the norm-one group is the compact $S^3\times S^3\cong\mathrm{Spin}(4)$. The elliptic one-parameter subgroups are generated by elements with square $-e_0$, which include the imaginary quaternion directions and the Hermitian imaginary directions $j\hat u$; the hyperbolic ones are generated by the central $j$ with square $+e_0$, the only noncentral solutions of $\tilde Q^2 = e_0$ being absent. Every element has a componentwise polar form and every unit an exponential parametrisation. Compared with the biquaternion case, the simple algebra $\mathrm{GL}(2,\mathbb{C})$ is replaced by the reductive $\mathbb{R}^2\oplus\mathrm{SO}(4)$, the unit group $GL(2,\mathbb{C})$ by $\mathbb{R}_{>0}^2\times S^3\times S^3$, and the non-compact $SL(2,\mathbb{C})$ slice by the compact $\mathrm{Spin}(4)$.
 
 ## Summary of Notation
 
@@ -142,12 +142,12 @@ The split biquaternion algebra is a real Lie algebra of dimension $8$ under the 
 | $\mathrm{Im}\,\mathbb{H}$ | Imaginary quaternions, $\cong \mathrm{SO}(3)$ |
 | $\mathbb{H}_{\mathbb{D}} \cong \mathbb{R}^2\oplus\mathrm{SO}(4)$ | Reductive Lie algebra structure |
 | $\exp(\tilde Q) = \sum \tilde Q^n/n!$ | Exponential map |
-| $e^{t\hat{\mathbf{u}}} = \cos t + \sin t\,\hat{\mathbf{u}}$ | Elliptic one-parameter subgroup, $\hat{\mathbf{u}}^2 = -e_0$ |
+| $e^{t\hat u} = \cos t + \sin t\,\hat u$ | Elliptic one-parameter subgroup, $\hat u^2 = -e_0$ |
 | $e^{tj} = \cosh t + \sinh t\,j$ | Hyperbolic one-parameter subgroup, $j^2 = +e_0$ |
 | $\mathbb{H}_{\mathbb{D}}^{\times} \cong \mathbb{R}_{>0}^2\times S^3\times S^3$ | Group of units, connected, dimension $8$ |
 | $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ | Split-Biquaternion norm |
 | $G_1 = \{ \tilde{S} : N(\tilde{S}) = e_0 \} = S^3\times S^3 \cong \mathrm{Spin}(4)$ | Norm-one group |
-| $\ker\exp$ | Pairs of quaternions $2\pi k\hat{\mathbf{u}}$ |
+| $\ker\exp$ | Pairs of quaternions $2\pi k\hat u$ |
 | $\tilde{Q} = r_+\hat{q}_+ \tilde\Pi_1 + r_-\hat{q}_- \tilde\Pi_2$ | Componentwise polar form |
 
 ## Further Reading

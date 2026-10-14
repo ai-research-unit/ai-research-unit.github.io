@@ -10,10 +10,10 @@ The article establishes:
 
 1. **The collective spin.** The operators $\tilde{J}_\alpha = \sum_{i=1}^N\tilde{S}_\alpha^{(i)}$ are Hermitian elements of $\mathbb{M}_+$ on the $N$-spin space; the symmetric states are the Dicke states, and the collective coherent state is the highest-weight state of a rotor.
 2. **The Tavis–Cummings Hamiltonian and its collective coupling.** In the rotating-wave approximation the interaction is $g(a^\dagger \tilde{J}_- + a\tilde{J}_+)$, and in the single-excitation sector the collective coupling is $\hbar g\sqrt{N}$, giving the collective Rabi splitting $2\hbar g\sqrt{N}$. Both statements are verified below.
-3. **Spin squeezing.** The Wineland parameter $\xi_R^2 = N(\Delta J_\perp)^2/|\langle\mathbf{J}\rangle|^2$ defines the noise relative to the standard quantum limit; the one-axis twisting Hamiltonian $\frac{\chi}{\hbar}\tilde{J}_3^2$ drives $\xi_R^2$ below $1$. The exact diagonalisation in the Dicke basis gives $\xi^2_{\min}$ decreasing with $N$, consistent with the standard $N^{-2/3}$ scaling.
+3. **Spin squeezing.** The Wineland parameter $\xi_R^2 = N(\Delta J_\perp)^2/|\langle\vec J\rangle|^2$ defines the noise relative to the standard quantum limit; the one-axis twisting Hamiltonian $\frac{\chi}{\hbar}\tilde{J}_3^2$ drives $\xi_R^2$ below $1$. The exact diagonalisation in the Dicke basis gives $\xi^2_{\min}$ decreasing with $N$, consistent with the standard $N^{-2/3}$ scaling.
 4. **The algebra's interpretation.** The collective observables are elements of $\mathbb{M}_+$, the mean spin and the covariance are trace pairings, the squeezing ellipsoid is the image of the coherent-state noise ball under the non-uniform rotor that implements the twist — a shear, not a rigid rotation — and the Tavis–Cummings interaction is an $\mathbb{M}_+$ coupling between the spin and the mode.
 
-The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$, $\tilde\Pi_{1,2}(\hat\mu) = \tfrac12(e_0\pm i\hat\mu)$, $\tilde{\rho} = \tfrac12(e_0+i\mathbf{r})$, the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, and the isomorphism $\mathsf{M}_2$ with $ie_k\mapsto\sigma_k$.
+The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$, $\tilde\Pi_{1,2}(\hat\mu) = \tfrac12(e_0\pm i\hat\mu)$, $\tilde{\rho} = \tfrac12(e_0+i\vec r)$, the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, and the isomorphism $\mathsf{M}_2$ with $ie_k\mapsto\sigma_k$.
 
 The companion articles supply the pieces:
 - Companion article *Angular Momentum and Spin in Biquaternionic Form*, for the collective spin, the ladder operators and the Dicke states.
@@ -59,7 +59,7 @@ $$
 |\theta,\phi\rangle = \bigotimes_{i=1}^N \left(\cos\frac{\theta}{2}|{+}\rangle_i + \sin\frac{\theta}{2}e^{i\phi}|{-}\rangle_i\right),
 $$
 
-which equals the highest-weight state of the collective spin rotated to the direction $(\theta,\phi)$. Its mean spin is $\langle\mathbf{J}\rangle = \tfrac{N\hbar}{2}\hat{n}(\theta,\phi)$, and its transverse variance is isotropic,
+which equals the highest-weight state of the collective spin rotated to the direction $(\theta,\phi)$. Its mean spin is $\langle\vec J\rangle = \tfrac{N\hbar}{2}\hat{n}(\theta,\phi)$, and its transverse variance is isotropic,
 
 $$
 \langle J_\perp^2\rangle = \frac{N\hbar^2}{4},
@@ -71,7 +71,7 @@ This is the standard quantum limit: the noise is the quantum noise of $N$ indepe
 
 ### The Bloch Ball of the Collective Spin
 
-The collective state space, restricted to the symmetric subspace, is the spin-$N/2$ state space, whose Bloch-ball analogue has dimension $N$ (see the companion article *Angular Momentum and Spin in Biquaternionic Form*). For $N=1$ it reduces to the spin-1/2 Bloch sphere of this subcategory. The mean spin $\langle\mathbf{J}\rangle$ is a vector of length at most $\tfrac{N\hbar}{2}$; a coherent state sits on the boundary, and a state with reduced mean spin sits inside. Squeezing is a statement about the **covariance** of $\mathbf{J}$, and it is therefore not visible in the mean spin alone.
+The collective state space, restricted to the symmetric subspace, is the spin-$N/2$ state space, whose Bloch-ball analogue has dimension $N$ (see the companion article *Angular Momentum and Spin in Biquaternionic Form*). For $N=1$ it reduces to the spin-1/2 Bloch sphere of this subcategory. The mean spin $\langle\vec J\rangle$ is a vector of length at most $\tfrac{N\hbar}{2}$; a coherent state sits on the boundary, and a state with reduced mean spin sits inside. Squeezing is a statement about the **covariance** of $\vec J$, and it is therefore not visible in the mean spin alone.
 
 ## The Tavis–Cummings Model
 
@@ -144,10 +144,10 @@ The same collective enhancement governs the coupling of the spins to a radiating
 
 ### The Standard Quantum Limit
 
-For a coherent spin state the transverse variance is $(\Delta J_\perp)^2 = \tfrac{\hbar^2 N}{4}$ and the mean spin is $|\langle\mathbf{J}\rangle| = \tfrac{\hbar N}{2}$. The **Wineland squeezing parameter** is
+For a coherent spin state the transverse variance is $(\Delta J_\perp)^2 = \tfrac{\hbar^2 N}{4}$ and the mean spin is $|\langle\vec J\rangle| = \tfrac{\hbar N}{2}$. The **Wineland squeezing parameter** is
 
 $$
-\xi_R^2 = \frac{N\,(\Delta J_\perp)^2_{\min}}{|\langle\mathbf{J}\rangle|^2},
+\xi_R^2 = \frac{N\,(\Delta J_\perp)^2_{\min}}{|\langle\vec J\rangle|^2},
 $$
 
 where $(\Delta J_\perp)^2_{\min}$ is the smallest variance in the plane perpendicular to the mean spin. The numerator is $N$ times the squeezed variance, the denominator the squared mean spin; for a coherent state $\xi_R^2 = 1$, a state with $\xi_R^2 < 1$ is **spin squeezed**, and the metrological phase sensitivity is improved by the factor $\xi_R$ below the standard quantum limit.
@@ -261,7 +261,7 @@ verified numerically for $N = 1,4,16,100$. The Holstein–Primakoff linearisatio
 **Spin squeezing** is measured by the Wineland parameter
 
 $$
-\xi_R^2 = \frac{N\,(\Delta J_\perp)^2_{\min}}{|\langle\mathbf{J}\rangle|^2},
+\xi_R^2 = \frac{N\,(\Delta J_\perp)^2_{\min}}{|\langle\vec J\rangle|^2},
 $$
 
 equal to $1$ for a coherent state and below $1$ for a squeezed state. One-axis twisting, $\tilde{H}_{OAT} = \frac{\chi}{\hbar}\tilde{J}_3^2$, is diagonal in the Dicke basis and exactly solvable; minimising $\xi_R^2$ over the twisting time gives $0.354,0.230,0.143,0.087$ for $N = 8,16,32,64$, consistent with the standard $N^{-2/3}$ scaling and with $\xi_R^2 = 1$ at $\chi t = 0$. Two-axis countertwisting reaches the ideal Heisenberg scaling $\xi^2\propto N^{-1}$.
@@ -287,7 +287,7 @@ In the algebra the mean spin is a linear trace pairing $\mathrm{Tr}(\tilde{\rho}
 | $\tilde{H} = \hbar\omega_c a^\dagger a + \omega_a\tilde{J}_3 + g(a^\dagger\tilde{J}_-+a\tilde{J}_+)$ | Tavis–Cummings Hamiltonian |
 | $a^\dagger a + \tilde{J}_3/\hbar + N/2$ | Conserved excitation number |
 | $\Delta E = 2\hbar g\sqrt{N}$ | Collective Rabi splitting |
-| $\xi_R^2 = N(\Delta J_\perp)^2_{\min}/|\langle\mathbf{J}\rangle|^2$ | Wineland squeezing parameter |
+| $\xi_R^2 = N(\Delta J_\perp)^2_{\min}/|\langle\vec J\rangle|^2$ | Wineland squeezing parameter |
 | $\tilde{H}_{OAT} = \frac{\chi}{\hbar}\tilde{J}_3^2$ | One-axis twisting Hamiltonian |
 | $\mathrm{Cov}(J_\alpha,J_\beta)$ | Collective covariance; the squeezing ellipse |
 

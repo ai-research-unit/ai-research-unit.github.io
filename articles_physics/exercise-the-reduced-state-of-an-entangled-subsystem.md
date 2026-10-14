@@ -176,7 +176,7 @@ The same values as in the standard formulation.
 
 The reduced state $\rho_1 = \frac{1}{2} e_0$ has three notable properties.
 
-**1. It is a mixed state.** In the biquaternion framework, a general state of $\mathbb{M}_+$ has the form $\rho = \tfrac{1}{2}(e_0 + i\mathbf{r})$ with $|\mathbf{r}| \leq 1$. The pure states are the ones with $|\mathbf{r}| = 1$ (the idempotents), and the maximally mixed state is the one with $\mathbf{r} = 0$. The reduced state $\rho_1 = \frac{1}{2} e_0$ corresponds to $\mathbf{r} = 0$, i.e., the centre of the Bloch ball. It is a mixed state, at the maximal distance from the pure states.
+**1. It is a mixed state.** In the biquaternion framework, a general state of $\mathbb{M}_+$ has the form $\rho = \tfrac{1}{2}(e_0 + i\vec r)$ with $|\vec r| \leq 1$. The pure states are the ones with $|\vec r| = 1$ (the idempotents), and the maximally mixed state is the one with $\vec r = 0$. The reduced state $\rho_1 = \frac{1}{2} e_0$ corresponds to $\vec r = 0$, i.e., the centre of the Bloch ball. It is a mixed state, at the maximal distance from the pure states.
 
 **2. It is invariant under all unitary transformations.** Under a rotor conjugation $\rho_1 \mapsto \tilde{U}\rho_1\tilde{U}^{*}$ with $\tilde{U}\tilde{U}^{*} = e_0$, the reduced state is unchanged:
 
@@ -216,7 +216,7 @@ $$
 
 using $\mathrm{Tr}_\mathbb{B}(\tilde\Pi_1) = 1$ for an idempotent of trace one.
 
-So the reduced state is the pure state $\tilde\Pi_1 = \tfrac{1}{2}(e_0 + ie_3)$, which is an idempotent with Bloch vector $\mathbf{r} = e_3$ and purity $1$. The purity and entropy are
+So the reduced state is the pure state $\tilde\Pi_1 = \tfrac{1}{2}(e_0 + ie_3)$, which is an idempotent with Bloch vector $\vec r = e_3$ and purity $1$. The purity and entropy are
 
 $$
 \mathrm{Tr}((\rho_1^{\mathrm{prod}})^2) = 1, \qquad S(\rho_1^{\mathrm{prod}}) = 0.
@@ -235,7 +235,7 @@ The contrast is the operational signature of entanglement: **product states have
 
 **1. The reduced state is obtained by a partial trace.** The partial trace $\mathrm{Tr}_2$ is a linear map $\mathbb{B}\otimes\mathbb{B} \to \mathbb{B}$, defined on elementary tensors by $\mathrm{Tr}_2(a\otimes b) = a\,\mathrm{Tr}_\mathbb{B}(b)$. This is the biquaternion form of the standard partial trace.
 
-**2. The reduced state of an entangled subsystem is mixed.** The biquaternion framework represents pure states as idempotents of $\mathbb{M}_+$ and mixed states as general positive trace-one elements. The reduced state $\frac{1}{2} e_0$ is not idempotent; it is a genuine mixed state, with $\mathbf{r} = 0$.
+**2. The reduced state of an entangled subsystem is mixed.** The biquaternion framework represents pure states as idempotents of $\mathbb{M}_+$ and mixed states as general positive trace-one elements. The reduced state $\frac{1}{2} e_0$ is not idempotent; it is a genuine mixed state, with $\vec r = 0$.
 
 **3. The entanglement is encoded in the tensor-product structure.** The singlet idempotent $P_{\mathrm{singlet}}$ has non-trivial components in the tensor-product terms $e_k\otimes e_k$ with $k \neq 0$, and none of the form $e_k\otimes e_0$. The entangled terms are traceless in the second factor, so they drop out of the partial trace, and only the $e_0\otimes e_0$ term survives, giving the maximally mixed reduced state. In a product state the terms $e_k\otimes e_0$ are present, and they carry the pure reduced state.
 

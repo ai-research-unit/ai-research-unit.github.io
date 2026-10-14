@@ -173,7 +173,7 @@ The framework calls $\flat$ the algebra's **real structure**. The neutrino compa
 | exchanges the chiral halves | with $^{\dagger}$ the sector split is by $\flat$ | yes |
 | role | the $\mathbb{M}_\pm$ split, traces, bilinears | the Majorana reality condition |
 
-The third row and the fourth row are the substance. The fixed spaces have the *same real dimension four*, which is why the two are so easy to identify — and why the identification is wrong. The neutrino companion tests it on the equation and reports the obstruction: **the Dirac operator does not preserve $\mathbb{M}_-$.** Left multiplication by a spatial generator carries an element of $\mathbb{M}_-$ out of the subspace, because the gradient is a sum of odd Clifford elements while $\mathbb{M}_-$ is an even-algebra subspace. A reality condition that the kinetic operator does not respect cannot be imposed on a field: the constrained field would not stay constrained under time evolution. So $\mathbb{M}_-$ is a perfectly good real form *of the algebra* — Lorentz-stable under the rotor action $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ — and simultaneously not the Majorana reality condition *of the module*, despite the matching dimension count.
+The third row and the fourth row are the substance. The fixed spaces have the *same real dimension four*, which is why the two are so easy to identify — and why the identification is wrong. The neutrino companion tests it on the equation and reports the obstruction: **the Dirac operator does not preserve $\mathbb{M}_-$.** Left multiplication by a spatial generator carries an element of $\mathbb{M}_-$ out of the subspace, because the gradient is a sum of odd Clifford elements while $\mathbb{M}_-$ is an even-algebra subspace. A reality condition that the kinetic operator does not respect cannot be imposed on a field: the constrained field would not stay constrained under time evolution. So $\mathbb{M}_-$ is a perfectly good real form *of the algebra* — Lorentz-stable under the rotor action $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ — and simultaneously not the Majorana reality condition *of the module*, despite the matching dimension count.
 
 The moral is the one this article exists to record:
 
@@ -264,8 +264,8 @@ These are $16$ real linear equations in the $16$ real unknowns $(\tilde{\Psi}_0,
 
 | locus | shell condition | nullity |
 |---|---|---|
-| timelike | $k_0^2 = \mathbf{k}^2 + m^2$ | $0$ |
-| spacelike | $\mathbf{k}^2 = k_0^2 + m^2$ | $4$ |
+| timelike | $k_0^2 = \vec k^2 + m^2$ | $0$ |
+| spacelike | $\vec k^2 = k_0^2 + m^2$ | $4$ |
 | elsewhere | — | $0$ |
 
 The nullity vanishes on the physical shell and jumps to four on the spacelike locus. The equation has no timelike solutions and a four-real-dimensional family of spacelike ones — so its propagating modes are spacelike, at any $m\neq 0$. An equation whose central-phase plane waves are spacelike is not the Dirac equation, and it contradicts the four-momentum kinematics the rest of the series uses. That is why the equation was retired, and reproducing the two nullities by hand is a matter of pure real arithmetic.
@@ -293,7 +293,7 @@ $$
 
 is formed with the same gradient and the same mass. The three antilinear involutions conjugate the phase, so as in the equation above the minimal ansatz is the two-frequency superposition, a system of $16$ real unknowns; the linear involution leaves the phase alone, a single frequency suffices there, and the count is that of an $8$-unknown system. The table gives the dimension of the solution space in each case, quoted for a representative momentum and independent of it within a row.
 
-| involution | type | fixed space | timelike $k_0^2 = \mathbf{k}^2 + m^2$ | spacelike $\mathbf{k}^2 = k_0^2 + m^2$ |
+| involution | type | fixed space | timelike $k_0^2 = \vec k^2 + m^2$ | spacelike $\vec k^2 = k_0^2 + m^2$ |
 |---|---|---|---|---|
 | quaternion conjugation ${}^{\natural}$ | linear | $\mathbb{C}_{\mathbb{B}}$, real dim $2$ | $2$ | $0$ |
 | complex conjugation $\bar{\cdot}$ | antilinear | $\mathbb{H}_{\mathbb{B}}$, real dim $4$ | $0$ | $8$ |

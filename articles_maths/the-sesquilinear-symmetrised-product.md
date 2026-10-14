@@ -195,7 +195,7 @@ The symmetrised product is the symmetric half of the **plain** exchange, the swa
 On the biquaternion sesqualgebra over $(\mathbb{C},\bar{\cdot})$ with the derived operation $x \star y = xy^{*}$ and $c=\overline{\cdot}$ the conjugate-symmetric part is the **scalar part** of the product,
 
 $$
-\tfrac12\bigl(\tilde{P}\tilde{Q}^{*}+\bigl(\tilde{P}\tilde{Q}^{*}\bigr)^{\natural}\bigr)=\mathrm{Sc}\bigl(\tilde{P}\tilde{Q}^{*}\bigr)=P_0\overline{Q_0}+(\mathbf{P},\overline{\mathbf{Q}}),
+\tfrac12\bigl(\tilde{P}\tilde{Q}^{*}+\bigl(\tilde{P}\tilde{Q}^{*}\bigr)^{\natural}\bigr)=\mathrm{Sc}\bigl(\tilde{P}\tilde{Q}^{*}\bigr)=P_0\overline{Q_0}+(\vec P,\overline{\vec Q}),
 $$
 
 the Hermitian form of the sesqualgebra read as a central element, and its antisymmetric partner is the vector part $\mathrm{Vect}(\tilde{P}\tilde{Q}^{*})$. The symmetrised product and the conjugate-symmetric part are the two symmetric halves of the one product, taken under the two exchanges, and they are not the same operation: the symmetrisation here is Hermitian-valued in $\mathbb{M}_{+}$ and only $\mathbb{R}$-bilinear, while the conjugate-symmetric part is central and sesquilinear. The twelve names of *The 12 Products of the Biquaternion Complex Space* belong to the reading that keeps the class, whose symmetric half for the derived operation is the conjugate-symmetric part just written, the operation $\mathrm{SPS}$.

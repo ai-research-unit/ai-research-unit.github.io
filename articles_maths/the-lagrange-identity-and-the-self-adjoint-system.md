@@ -5,10 +5,10 @@
 The Green formula is the integrated form of an identity between the operator and its adjoint, and that identity is the **Lagrange identity**: the difference $\bar v\,Lu-u\,\overline{L^{\dagger}v}$ is a divergence,
 
 $$
-\bar v\,Lu-u\,\overline{L^{\dagger}v} = \operatorname{div}\mathbf P(u,v) ,
+\bar v\,Lu-u\,\overline{L^{\dagger}v} = \operatorname{div}\vec P(u,v) ,
 $$
 
-where $\mathbf P(u,v)$ is the **bilinear concomitant**, a vector of boundary expressions of order one less than the operator in each variable. Integrating the identity over the domain and applying the divergence theorem produces the Green formula, the boundary integral being the flux of the concomitant through the boundary; the boundary form of *Self-Adjoint Boundary Value Problems and the Sturm–Liouville Theory* is exactly that flux. When the operator is written as a first-order system, the same identity becomes the invariance of a **symplectic form**: the system is self-adjoint for a form $\omega$ when $\omega(Ay,z)+\omega(y,Az)=0$ for all $y,z$, and then $\omega$ is constant on pairs of solutions, its boundary values $[\omega(y,z)]_a^b$ being the boundary term.
+where $\vec P(u,v)$ is the **bilinear concomitant**, a vector of boundary expressions of order one less than the operator in each variable. Integrating the identity over the domain and applying the divergence theorem produces the Green formula, the boundary integral being the flux of the concomitant through the boundary; the boundary form of *Self-Adjoint Boundary Value Problems and the Sturm–Liouville Theory* is exactly that flux. When the operator is written as a first-order system, the same identity becomes the invariance of a **symplectic form**: the system is self-adjoint for a form $\omega$ when $\omega(Ay,z)+\omega(y,Az)=0$ for all $y,z$, and then $\omega$ is constant on pairs of solutions, its boundary values $[\omega(y,z)]_a^b$ being the boundary term.
 
 This article reads the differential equation with the conjugation that defines the adjoint. It fixes the Lagrange identity in one and several variables, with the concomitant of a second-order operator written out and the general order stated; derives the Green formula from it; and passes to the system form, where the symplectic form appears, states the self-adjointness of the system, and identifies the boundary term as the boundary value of the symplectic form. It closes with the Sturm–Liouville equation as the instance, whose system is self-adjoint and whose concomitant is the classical bracket.
 
@@ -30,13 +30,13 @@ $$
 
 *Proof.* Both sides are sesquilinear in $u,v$ and of order at most $m$ in each, and it suffices to verify the identity for the monomials $p_k u^{(k)}$ and $p_k\bar v^{(k)}$ by the product rule: each $k$-th derivative term contributes a total derivative after the $k$-fold integration by parts that defines the adjoint, and the accumulating boundary expressions assemble into $P$. For the second order, $\bar v\,(-(pu')'+qu)-u\,(-\overline{(pv')'}+qv) = p(u\bar v''-u''\bar v)+p'(u\bar v'-u'\bar v) = \frac{d}{dx}\bigl[p(u\bar v'-u'\bar v)\bigr]$, since $u\bar v''-u''\bar v=\frac{d}{dx}(u\bar v'-u'\bar v)$.
 
-**Theorem (the divergence form).** Let $L=\sum_{|\alpha|\le m}a_\alpha(x)\partial^\alpha$ be a differential operator on a domain $\Omega\subseteq\mathbb{R}^n$ with smooth coefficients and let $L^{\dagger}$ be its formal adjoint. Then there is a vector field $x\mapsto\mathbf P(u,v)(x)$, the **concomitant vector**, with
+**Theorem (the divergence form).** Let $L=\sum_{|\alpha|\le m}a_\alpha(x)\partial^\alpha$ be a differential operator on a domain $\Omega\subseteq\mathbb{R}^n$ with smooth coefficients and let $L^{\dagger}$ be its formal adjoint. Then there is a vector field $x\mapsto\vec P(u,v)(x)$, the **concomitant vector**, with
 
 $$
-\bar v\,Lu - u\,\overline{L^{\dagger}v} = \operatorname{div}\mathbf P(u,v) ,
+\bar v\,Lu - u\,\overline{L^{\dagger}v} = \operatorname{div}\vec P(u,v) ,
 $$
 
-a sesquilinear in $u,v$, of order at most $m-1$ in each variable in each component; in one variable $\mathbf P$ is the scalar $P$ above.
+a sesquilinear in $u,v$, of order at most $m-1$ in each variable in each component; in one variable $\vec P$ is the scalar $P$ above.
 
 *Proof.* Each monomial $a_\alpha\partial^\alpha$ pairs with the adjoint monomial through the integration by parts, and the boundary terms of the $n$-dimensional product rule assemble into the divergence of a vector field built from the derivatives of $u$ and $v$ of order at most $m-1$; the scalar case is the display above. The argument is that of the divergence theorem applied monomial by monomial, and the resulting vector field is unique up to a divergence-free field, which does not change the identity.
 
@@ -45,20 +45,20 @@ a sesquilinear in $u,v$, of order at most $m-1$ in each variable in each compone
 **Theorem (the Green formula).** With the notation above and $\Omega$ a bounded domain with smooth boundary,
 
 $$
-\int_\Omega(Lu)\,\bar v\,dx - \int_\Omega u\,\overline{L^{\dagger}v}\,dx = \int_{\partial\Omega}\mathbf P(u,v)\cdot\nu\,dS ,
+\int_\Omega(Lu)\,\bar v\,dx - \int_\Omega u\,\overline{L^{\dagger}v}\,dx = \int_{\partial\Omega}\vec P(u,v)\cdot\nu\,dS ,
 $$
 
 where $\nu$ is the outward unit normal; the right side is the **boundary form**
 
 $$
-\langle u,v\rangle_\partial = \int_{\partial\Omega}\mathbf P(u,v)\cdot\nu\,dS ,
+\langle u,v\rangle_\partial = \int_{\partial\Omega}\vec P(u,v)\cdot\nu\,dS ,
 $$
 
 an expression in the boundary data of $u$ and $v$, skew-Hermitian when $L=L^{\dagger}$.
 
 *Proof.* Integrate the Lagrange identity over $\Omega$ and apply the divergence theorem of *Vector Calculus and the Divergence Theorem*; the left side is the difference of the two pairings and the right side is the flux of the concomitant. The skew-Hermitian property is that of *Self-Adjoint Boundary Value Problems and the Sturm–Liouville Theory*, computed by exchanging $u$ and $v$ and conjugating.
 
-**Example (the second-order operator and the classical bracket).** For $Lu=-(pu')'+qu$ the concomitant vector is $\mathbf P(u,v)=p\,(u\nabla\bar v-\bar v\nabla u)$ and the boundary form is the classical bracket
+**Example (the second-order operator and the classical bracket).** For $Lu=-(pu')'+qu$ the concomitant vector is $\vec P(u,v)=p\,(u\nabla\bar v-\bar v\nabla u)$ and the boundary form is the classical bracket
 
 $$
 \langle u,v\rangle_\partial = \Bigl[p\,(u\bar v'-u'\bar v)\Bigr]_a^b
@@ -96,7 +96,7 @@ and the form $\omega(y,z)=y_1\bar z_2-y_2\bar z_1=p(u\bar v'-u'\bar v)$ is sympl
 
 ## Summary
 
-The Lagrange identity states that the difference $\bar v\,Lu-u\,\overline{L^{\dagger}v}$ is a divergence, $\operatorname{div}\mathbf P(u,v)$, the bilinear concomitant $\mathbf P$ being sesquilinear and of order one less than $L$ in each variable; for $Lu=-(pu')'+qu$ it is the scalar $p(u\bar v'-u'\bar v)$, and the identity is verified by the product rule. Integrating the identity over a domain and applying the divergence theorem gives the Green formula, whose boundary integral is the boundary form $\langle u,v\rangle_\partial$, an expression in the boundary data and skew-Hermitian when the operator is formally self-adjoint; in one dimension it is the classical bracket $[\,p(u\bar v'-u'\bar v)\,]_a^b$. Written as a first-order system $y'=Ay$, the identity becomes the invariance of a symplectic form: the system is self-adjoint for $\omega$ when $\omega(Ay,z)+\omega(y,Az)=0$, and then $\omega$ is constant on pairs of solutions and its boundary values are the boundary term. The adjoint system $z'=-A^*z$ has the pairing $\langle y,z\rangle$ constant on pairs of solutions and is self-adjoint exactly when $A^{*}=-A$. The Sturm–Liouville equation as the system $y=(u,pu')$ is the instance: its matrix $A$ is symplectic-skew for the classical form $p(u\bar v'-u'\bar v)$, the form is invariant, and the boundary term is the classical bracket whose vanishing is the self-adjointness of the problem.
+The Lagrange identity states that the difference $\bar v\,Lu-u\,\overline{L^{\dagger}v}$ is a divergence, $\operatorname{div}\vec P(u,v)$, the bilinear concomitant $\vec P$ being sesquilinear and of order one less than $L$ in each variable; for $Lu=-(pu')'+qu$ it is the scalar $p(u\bar v'-u'\bar v)$, and the identity is verified by the product rule. Integrating the identity over a domain and applying the divergence theorem gives the Green formula, whose boundary integral is the boundary form $\langle u,v\rangle_\partial$, an expression in the boundary data and skew-Hermitian when the operator is formally self-adjoint; in one dimension it is the classical bracket $[\,p(u\bar v'-u'\bar v)\,]_a^b$. Written as a first-order system $y'=Ay$, the identity becomes the invariance of a symplectic form: the system is self-adjoint for $\omega$ when $\omega(Ay,z)+\omega(y,Az)=0$, and then $\omega$ is constant on pairs of solutions and its boundary values are the boundary term. The adjoint system $z'=-A^*z$ has the pairing $\langle y,z\rangle$ constant on pairs of solutions and is self-adjoint exactly when $A^{*}=-A$. The Sturm–Liouville equation as the system $y=(u,pu')$ is the instance: its matrix $A$ is symplectic-skew for the classical form $p(u\bar v'-u'\bar v)$, the form is invariant, and the boundary term is the classical bracket whose vanishing is the self-adjointness of the problem.
 
 ## Summary of Notation
 
@@ -104,9 +104,9 @@ The Lagrange identity states that the difference $\bar v\,Lu-u\,\overline{L^{\da
 |---|---|
 | $L$, $L^{\dagger}$ | Differential operator and its formal adjoint |
 | $P(u,v)$ | Bilinear concomitant (scalar case) |
-| $\mathbf P(u,v)$ | Concomitant vector (several variables) |
-| $\operatorname{div}\mathbf P=\bar vLu-u\overline{L^{\dagger}v}$ | Lagrange identity |
-| $\langle u,v\rangle_\partial=\int_{\partial\Omega}\mathbf P\cdot\nu\,dS$ | Boundary form (Green formula) |
+| $\vec P(u,v)$ | Concomitant vector (several variables) |
+| $\operatorname{div}\vec P=\bar vLu-u\overline{L^{\dagger}v}$ | Lagrange identity |
+| $\langle u,v\rangle_\partial=\int_{\partial\Omega}\vec P\cdot\nu\,dS$ | Boundary form (Green formula) |
 | $y'=Ay$ | First-order system |
 | $z'=-A^{*}z$ | Adjoint system, $A^{*}=\bar A^{\mathsf T}$ |
 | $\omega(y,z)$ | Symplectic form; $\omega(Ay,z)+\omega(y,Az)=0$ |

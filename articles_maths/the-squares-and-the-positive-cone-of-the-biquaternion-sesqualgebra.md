@@ -59,21 +59,21 @@ $$
 
 a nonnegative real number that vanishes if and only if $\tilde Q=0$.
 
-**Proof.** The scalar part of $\tilde P\tilde Q^{*}$ is $P_0\overline{Q_0}-(\mathbf P,-\overline{\mathbf Q})=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})=\sum_\mu P_\mu\overline{Q_\mu}$, by the scalar–vector form of the product of *Introduction to the General Plain Sesqualgebra of Biquaternions*, §*The Scalar Part of the Multiplication*. At $\tilde P=\tilde Q$ the sum is $\sum_\mu\lvert Q_\mu\rvert^{2}$, a sum of modulus squares; it is nonnegative, and it vanishes only when every coordinate vanishes.
+**Proof.** The scalar part of $\tilde P\tilde Q^{*}$ is $P_0\overline{Q_0}-(\vec P,-\overline{\vec Q})=P_0\overline{Q_0}+(\vec P,\overline{\vec Q})=\sum_\mu P_\mu\overline{Q_\mu}$, by the scalar–vector form of the product of *Introduction to the General Plain Sesqualgebra of Biquaternions*, §*The Scalar Part of the Multiplication*. At $\tilde P=\tilde Q$ the sum is $\sum_\mu\lvert Q_\mu\rvert^{2}$, a sum of modulus squares; it is nonnegative, and it vanishes only when every coordinate vanishes.
 
 **Remark.** The display is the reason the square is non-vanishing: a nonzero square has a strictly positive scalar part, so it is not zero and its scalar part fixes a genuine sign. It is also the reason the general plain bilinear sum $\sum_\mu Q_\mu^{2}$ and the scalar part of the square are not the same function: the first is a general plain bilinear sum, the second a sum of modulus squares, and they agree exactly on the real subspace.
 
 ### The Coordinates of the Square
 
-**Proposition.** In the scalar–vector form, with $\tilde Q=Q_0e_0+\mathbf Q$,
+**Proposition.** In the scalar–vector form, with $\tilde Q=Q_0e_0+\vec Q$,
 
 $$
-\tilde Q\star\tilde Q=\Bigl(\sum_{\mu=0}^{3}\lvert Q_\mu\rvert^{2}\Bigr)e_0+\bar Q_0\mathbf Q-Q_0\overline{\mathbf Q}-\mathbf Q\times\overline{\mathbf Q} ,
+\tilde Q\star\tilde Q=\Bigl(\sum_{\mu=0}^{3}\lvert Q_\mu\rvert^{2}\Bigr)e_0+\bar Q_0\vec Q-Q_0\overline{\vec Q}-\vec Q\times\overline{\vec Q} ,
 $$
 
 and the vector part is the sum of the three terms displayed.
 
-**Proof.** Multiply $\tilde Q=Q_0+\mathbf Q$ by $\tilde Q^{*}=\bar Q_0-\overline{\mathbf Q}$ with the multiplication of the basis; the scalar part is the sum of the modulus squares by the theorem above, and the vector part collects the terms $\bar Q_0\mathbf Q$ and $-Q_0\overline{\mathbf Q}$ from the two scalars and the cross term $-\mathbf Q\times\overline{\mathbf Q}$.
+**Proof.** Multiply $\tilde Q=Q_0+\vec Q$ by $\tilde Q^{*}=\bar Q_0-\overline{\vec Q}$ with the multiplication of the basis; the scalar part is the sum of the modulus squares by the theorem above, and the vector part collects the terms $\bar Q_0\vec Q$ and $-Q_0\overline{\vec Q}$ from the two scalars and the cross term $-\vec Q\times\overline{\vec Q}$.
 
 **Remark.** The vector part need not vanish, so the square of an element is a genuinely biquaternionic Hermitian element and not a real scalar. The real scalar part is the only part whose sign is fixed, and it is the part the properness of the cone is read from.
 
@@ -87,7 +87,7 @@ $$
 
 and likewise $ie_\mu\star ie_\mu=e_0$ for the three vector directions. Indeed $e_k\star e_k=e_ke_k^{*}=e_k(-e_k)=-e_k^{2}=e_0$, and $e_0\star e_0=e_0e_0^{*}=e_0$; for $ie_k$ one has $(ie_k)^{*}=ie_k$ and $(ie_k)^{2}=i^{2}e_k^{2}=(-1)(-e_0)=e_0$, so $ie_k\star ie_k=(ie_k)^{2}=e_0$.
 
-**Remark.** The basis elements are therefore not small squares but unit-sized ones, and the square of a Hermitian element of square $e_0$ is $e_0$ throughout. The family of Hermitian elements with $\tilde Q^{2}=e_0$ is the family that the matrix model sends to the Hermitian involutions, and it is the family that parametrises the projections of *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, each projection being $\tfrac12(e_0+i\hat\mu)$ with $i\hat\mu$ of square $-e_0$.
+**Remark.** The basis elements are therefore not small squares but unit-sized ones, and the square of a Hermitian element of square $e_0$ is $e_0$ throughout. The family of Hermitian elements with $\tilde Q^{2}=e_0$ is the family that the matrix model sends to the Hermitian involutions, and it is the family that parametrises the projections of *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*, each projection being $\tfrac12(e_0+\tilde\Xi)$ with $\tilde\Xi$ of square $-e_0$.
 
 ### The Two Squares
 
@@ -99,7 +99,7 @@ $$
 
 so they agree on the real subspace $\mathbb{R}^{4}$ and differ off it. The simplest witness is $\tilde Q=ie_0$, where the square of the multiplication is $e_0$ and the natural square is $-e_0$, a difference of $2e_0$.
 
-**Proof.** Write the coordinates in the real form $\tilde Q=\tilde A+i\tilde B$ with $\tilde A,\tilde B$ real. The star and the natural conjugation act on that form by $\tilde Q^{*}=\tilde A^{\natural}-i\tilde B^{\natural}$ and $\tilde Q^{\natural}=\tilde A^{\natural}+i\tilde B^{\natural}$, because both maps are $\mathbb{R}$-linear and the star conjugates the coefficient $i$; hence the difference of the two squares is $\tilde Q\tilde Q^{*}-\tilde Q\tilde Q^{\natural}=-2i\,\tilde Q\tilde B^{\natural}$. If the two squares are equal then $\tilde Q\tilde B^{\natural}=0$, that is $\tilde A\tilde B^{\natural}+i\tilde B\tilde B^{\natural}=0$; the first term is real and the second is the purely imaginary scalar $i\bigl(B_0^{2}+\lVert\mathbf B\rVert^{2}\bigr)$, so the equation forces $\tilde B\tilde B^{\natural}=0$, whence $\tilde B=0$ and the four coordinates of $\tilde Q$ are real. Conversely, for real coordinates one has $\tilde Q^{*}=\tilde Q^{\natural}$ and the two squares coincide. At $\tilde Q=ie_0$ one has $\tilde A=0$ and $\tilde B=e_0$, so the difference is $-2i\,(ie_0)e_0=2e_0$, while $\tilde Q\star\tilde Q=i\bar i\,e_0=e_0$ and $\tilde Q\tilde Q^{\natural}=i^{2}e_0=-e_0$.
+**Proof.** Write the coordinates in the real form $\tilde Q=\tilde A+i\tilde B$ with $\tilde A,\tilde B$ real. The star and the natural conjugation act on that form by $\tilde Q^{*}=\tilde A^{\natural}-i\tilde B^{\natural}$ and $\tilde Q^{\natural}=\tilde A^{\natural}+i\tilde B^{\natural}$, because both maps are $\mathbb{R}$-linear and the star conjugates the coefficient $i$; hence the difference of the two squares is $\tilde Q\tilde Q^{*}-\tilde Q\tilde Q^{\natural}=-2i\,\tilde Q\tilde B^{\natural}$. If the two squares are equal then $\tilde Q\tilde B^{\natural}=0$, that is $\tilde A\tilde B^{\natural}+i\tilde B\tilde B^{\natural}=0$; the first term is real and the second is the purely imaginary scalar $i\bigl(B_0^{2}+\lVert\vec B\rVert^{2}\bigr)$, so the equation forces $\tilde B\tilde B^{\natural}=0$, whence $\tilde B=0$ and the four coordinates of $\tilde Q$ are real. Conversely, for real coordinates one has $\tilde Q^{*}=\tilde Q^{\natural}$ and the two squares coincide. At $\tilde Q=ie_0$ one has $\tilde A=0$ and $\tilde B=e_0$, so the difference is $-2i\,(ie_0)e_0=2e_0$, while $\tilde Q\star\tilde Q=i\bar i\,e_0=e_0$ and $\tilde Q\tilde Q^{\natural}=i^{2}e_0=-e_0$.
 
 **Remark.** The distinction matters for the vanishing of the square. The natural square $\bigl(\sum_\mu Q_\mu^{2}\bigr)e_0$ vanishes exactly on the zero divisors of the algebra, a six-real-dimensional set, by *Zero Divisors of the General Plain Algebra*; the square of the multiplication vanishes exactly at $\tilde Q=0$. The two statements are the two halves of the corpus's treatment of squares, and the cone of the multiplication is built from the first and not the second.
 

@@ -6,14 +6,14 @@ The nilpotent is defined by an equation in which the product occurs, so it is a 
 
 $$
 \tilde p\diamond\tilde q=\tfrac12\bigl(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p\bigr)
-=p_0\mathbf q-q_0\mathbf p-\mathbf p\times\mathbf q ,
+=p_0\vec q-q_0\vec p-\vec p\times\vec q ,
 $$
 
 which is alternating and without a unit (*Introduction to the Antisymmetric Quaternionic Algebra of Quaternions*). The article determines its nilpotent class and its index.
 
 The answer is total. The block is alternating, so $\tilde\upsilon\diamond\tilde\upsilon=0$ for every element, and therefore the square-zero set of the block is the whole space: **every nonzero element of $\mathbb{H}$ is a nilpotent of the block, of index exactly two**, and no nilpotent has index three or more. The nilpotent class of the block is thus the punctured space, the largest a nilpotent class can be, and it strictly contains the parent quaternionic product's, which over $\mathbb{R}$ is empty. The square-zero set is at once the root set of $0$ and, off the origin, the zero-divisor set of the block, and the two companion articles are cited. The higher powers are read with the left-nested bracketing of the definitions, since the block is not associative.
 
-**Conventions.** Throughout, $\tilde p=p_0e_0+\mathbf p$, $\tilde q=q_0e_0+\mathbf q$ and $\tilde\upsilon=\upsilon_0e_0+\boldsymbol\upsilon$ name elements of $\mathbb{H}$ with real coefficients, $(\mathbf p,\mathbf q)$ is the dot product and $\mathbf p\times\mathbf q$ the cross product of the vector parts, and $\tilde q^{\natural}=q_0e_0-\mathbf q$ is the quaternion conjugation; the bar is the identity and the star coincides with the natural conjugation, so no bare bar is written on an element of this block. The operation is written $\diamond$ and never $\wedge^{\natural}$ outside a citation, and unqualified, *nilpotent* means a nilpotent of the block. The quaternion form of the space is $N(\tilde p)=p_0^2+\lvert\mathbf p\rvert^2$, positive definite.
+**Conventions.** Throughout, $\tilde p=p_0e_0+\vec p$, $\tilde q=q_0e_0+\vec q$ and $\tilde\upsilon=\upsilon_0e_0+\vec\upsilon$ name elements of $\mathbb{H}$ with real coefficients, $(\vec p,\vec q)$ is the dot product and $\vec p\times\vec q$ the cross product of the vector parts, and $\tilde q^{\natural}=q_0e_0-\vec q$ is the quaternion conjugation; the bar is the identity and the star coincides with the natural conjugation, so no bare bar is written on an element of this block. The operation is written $\diamond$ and never $\wedge^{\natural}$ outside a citation, and unqualified, *nilpotent* means a nilpotent of the block. The quaternion form of the space is $N(\tilde p)=p_0^2+\lvert\vec p\rvert^2$, positive definite.
 
 **Boundaries.** The operation and its alternation are *Introduction to the Antisymmetric Quaternionic Algebra of Quaternions*; the definitions of the nilpotent, the index of nilpotency and the square-zero element are *Definitions for the Study of the 6 Algebraic Structures*. The nilpotents of the general plain product, to which the block is compared, are *Nilpotents of the General Plain Algebra*; the nilpotent sets of the six structures are *Nilpotents in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; the zero divisors and the idempotents of the block are *Zero Divisors of the Antisymmetric Quaternionic Algebra* and *Idempotents of the Antisymmetric Quaternionic Algebra*; and the matrix models are *The Antisymmetric Quaternionic Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* and *The Antisymmetric Quaternionic Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{R})_L$*.
 
@@ -85,19 +85,19 @@ The contrast with the biquaternion chapter is exactly the definiteness of the fo
 
 ## Summary
 
-For the antisymmetric quaternionic multiplication $\tilde p\diamond\tilde q=p_0\mathbf q-q_0\mathbf p-\mathbf p\times\mathbf q$ every nonzero element is a nilpotent: the square $\tilde\upsilon\diamond\tilde\upsilon$ vanishes identically, so the square-zero set is the whole space and every nilpotent has index exactly two, and no nilpotent has index three or more. The nilpotent class is therefore the punctured space, and it strictly contains the parent quaternionic product's, which over $\mathbb{R}$ is empty, the quaternion form being positive definite. Every nilpotent is a two-sided zero divisor with itself as the annihilating partner, and the implication *nilpotent implies zero divisor* holds for the block at every nilpotent without exception; the square detects no zero divisor here because it vanishes on everything. The nilpotent class and the idempotent class are disjoint, the idempotent class being the origin alone. The natural conjugation carries the class onto itself and acts as the negative of the identity on the values of the block; in either matrix model the square is the zero matrix.
+For the antisymmetric quaternionic multiplication $\tilde p\diamond\tilde q=p_0\vec q-q_0\vec p-\vec p\times\vec q$ every nonzero element is a nilpotent: the square $\tilde\upsilon\diamond\tilde\upsilon$ vanishes identically, so the square-zero set is the whole space and every nilpotent has index exactly two, and no nilpotent has index three or more. The nilpotent class is therefore the punctured space, and it strictly contains the parent quaternionic product's, which over $\mathbb{R}$ is empty, the quaternion form being positive definite. Every nilpotent is a two-sided zero divisor with itself as the annihilating partner, and the implication *nilpotent implies zero divisor* holds for the block at every nilpotent without exception; the square detects no zero divisor here because it vanishes on everything. The nilpotent class and the idempotent class are disjoint, the idempotent class being the origin alone. The natural conjugation carries the class onto itself and acts as the negative of the identity on the values of the block; in either matrix model the square is the zero matrix.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde p\diamond\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)=p_0\mathbf q-q_0\mathbf p-\mathbf p\times\mathbf q$ | the antisymmetric quaternionic multiplication, the operation $\mathrm{AQA}$ |
+| $\tilde p\diamond\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)=p_0\vec q-q_0\vec p-\vec p\times\vec q$ | the antisymmetric quaternionic multiplication, the operation $\mathrm{AQA}$ |
 | $\tilde\upsilon\diamond\tilde\upsilon=0$ | the criterion, the vanishing square of every element |
 | $\mathbb{H}$ | the square-zero set of the block, the whole space |
 | $\mathbb{H}\setminus\{0\}$ | the nilpotent class of the block, the punctured space |
 | $2$ | the index of nilpotency of every nilpotent |
 | $(\tilde p\diamond\tilde q)^{\natural}=-\tilde p\diamond\tilde q$ | the natural conjugation acts as minus the identity on the values |
-| $N(\tilde\upsilon)=\upsilon_0^2+\lvert\boldsymbol\upsilon\rvert^2$ | the quaternion form, positive definite, whose zero set is the parent's square-zero set |
+| $N(\tilde\upsilon)=\upsilon_0^2+\lvert\vec\upsilon\rvert^2$ | the quaternion form, positive definite, whose zero set is the parent's square-zero set |
 
 ## Further Reading
 

@@ -20,7 +20,7 @@ measurement cone to *POVMs and the Positive Cone in Biquaternionic Form*; and th
 scalar forms to *The Four General Products and Their Physical Readings*.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$,
-$e_k^{2}=-e_0$, $e_1e_2=e_3$, central $i$ with $i^{2}=-1$. An element is $\tilde Q=Q_0e_0+\mathbf Q$ with
+$e_k^{2}=-e_0$, $e_1e_2=e_3$, central $i$ with $i^{2}=-1$. An element is $\tilde Q=Q_0e_0+\vec Q$ with
 complex coefficients. The conjugations are the Hermitian ${}^{*}$ (coefficientwise conjugate of the
 natural conjugate), so that $\mathsf{M}_2(\tilde Q^{*})=\mathsf{M}_2(\tilde Q)^{\dagger}$ in the $2\times2$ matrix model,
 and the natural ${}^{\natural}$. The sectors are $\mathbb{M}_-=\{\tilde Q^{*}=-\tilde Q\}$ (material) and
@@ -29,7 +29,7 @@ $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$; its square is the **sesquilinear s
 square** is $\tilde Q\tilde Q^{\natural}=N(\tilde Q)e_0$. The trace is $\mathrm{Tr}=2\,\mathrm{Sc}$, the
 matrix model is $\mathsf{M}_2$ with $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$, and the Euclidean norm is
 $\lVert\tilde Q\rVert_E^{2}=\sum_\mu\lvert Q_\mu\rvert^{2}$. A Hermitian element is written
-$\tilde H=te_0+i\mathbf u$ with $t$ real and $\mathbf u$ a real three-vector.
+$\tilde H=te_0+i\vec u$ with $t$ real and $\vec u$ a real three-vector.
 
 ## The Two Squares of One Element
 
@@ -64,7 +64,7 @@ $$
 \tilde Q\tilde Q^{\natural}=N(\tilde Q)e_0,\qquad N(\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^{2} ,
 $$
 
-a complex scalar times $e_0$. It is **indefinite**: on the material coordinate $\tilde Q=ict\,e_0+\mathbf x$ it is $-c^{2}t^{2}+\lvert\mathbf x\rvert^{2}$, the interval, whose vanishing set on $\mathbb{M}_-$ is
+a complex scalar times $e_0$. It is **indefinite**: on the material coordinate $\tilde Q=ict\,e_0+\vec x$ it is $-c^{2}t^{2}+\lvert\vec x\rvert^{2}$, the interval, whose vanishing set on $\mathbb{M}_-$ is
 the light cone and whose level set $N=-m^{2}c^{2}$ is the mass shell. A scalar multiple of $e_0$ carries
 no rank of its own; its information is the **value** $N$.
 
@@ -137,8 +137,8 @@ elements. For the idempotent $\tilde\Pi=\tfrac12(e_0-ie_3)$ one has $N=0$,
 $\mathrm{Sc}(\tilde\Pi\tilde\Pi^{*})=\tfrac12$ and rank $1$: the projector is a massless, rank-one
 element, as the state interpretation of the informational sector requires.
 
-The boundary case shows where the rank drops. The Hermitian element $\tilde H=te_0+i\mathbf u$ has
-$N(\tilde H)=t^{2}-\lvert\mathbf u\rvert^{2}$, so it is on the cone exactly at $t=\lvert\mathbf u\rvert$, the boundary of the positive cone; there the square drops from rank $2$ to rank $1$ and the
+The boundary case shows where the rank drops. The Hermitian element $\tilde H=te_0+i\vec u$ has
+$N(\tilde H)=t^{2}-\lvert\vec u\rvert^{2}$, so it is on the cone exactly at $t=\lvert\vec u\rvert$, the boundary of the positive cone; there the square drops from rank $2$ to rank $1$ and the
 element becomes a positive multiple of a rank-one projector. The rank drop and the boundary of the cone
 are the same locus.
 
@@ -153,9 +153,9 @@ Three descriptions agree.
   $\mathsf{M}_2(\tilde Q)\mathsf{M}_2(\tilde Q)^{\dagger}$.
 - **Positive elements.** Those matrices are exactly the positive semidefinite ones, so
   $P=\{\tilde H\in\mathbb{M}_+:\tilde H\geq0\}$.
-- **Forward cone.** A Hermitian element $\tilde H=te_0+i\mathbf u$ is positive semidefinite exactly when
-  $t\geq\lvert\mathbf u\rvert$, so
-  $P=\{te_0+i\mathbf u:t\geq\lvert\mathbf u\rvert\}$, the forward cone of the interval form on
+- **Forward cone.** A Hermitian element $\tilde H=te_0+i\vec u$ is positive semidefinite exactly when
+  $t\geq\lvert\vec u\rvert$, so
+  $P=\{te_0+i\vec u:t\geq\lvert\vec u\rvert\}$, the forward cone of the interval form on
   $\mathbb{M}_+$.
 
 The cone has an interior and a boundary, and each is an algebraic class:
@@ -170,7 +170,7 @@ $$
 The same cone wears both interpretations. As the set of positive semidefinite Hermitian elements it is the set of
 **effects**, and its trace-one slice is the state space (*POVMs and the Positive Cone in Biquaternionic
 Form*): a probability is a normalised effect, and the order $0\leq\tilde E\leq e_0$ is the order in which
-effects are compared. As the forward cone $t\geq\lvert\mathbf u\rvert$ of the interval form it is the
+effects are compared. As the forward cone $t\geq\lvert\vec u\rvert$ of the interval form it is the
 **causal order**, with interior timelike, boundary lightlike and complement spacelike. That one cone is at
 once the order in which probabilities are measured and the order in which events are causally related is
 the cone's double interpretation: the positivity of the dagger and the causality of the interval are the same cone,
@@ -186,7 +186,7 @@ $\lVert\cdot\rVert_E$ therefore inherits the positivity as a theorem and cannot 
 Lagrangian of the wrong sign, because there is no sign to choose.
 
 **No tachyon in the state cone.** A tachyon, in the interpretation, is an element whose natural square is
-spacelike, that is $\lvert t\rvert<\lvert\mathbf u\rvert$ on $\mathbb{M}_+$, which places it strictly
+spacelike, that is $\lvert t\rvert<\lvert\vec u\rvert$ on $\mathbb{M}_+$, which places it strictly
 outside the forward cone and its backward partner. The algebra's statement is that every sesquilinear
 square lies **in** the cone, so no square is spacelike, and that the spacelike elements lie outside the
 state cone rather than inside it. Whether a spacelike element is a physical particle is not an algebraic
@@ -259,7 +259,7 @@ $\mathrm{Sc}(\tilde Q\tilde Q^{*})=\lVert\tilde Q\rVert_E^{2}>0$ off zero;
 $\mathrm{Tr}(\tilde Q\tilde Q^{*})=2\lVert\tilde Q\rVert_E^{2}$;
 $\det\mathsf{M}_2(\tilde Q\tilde Q^{*})=\lvert N(\tilde Q)\rvert^{2}$; the rank criterion
 $\mathrm{rank}\,\mathsf{M}_2(\tilde Q\tilde Q^{*})=\mathrm{rank}\,\mathsf{M}_2(\tilde Q)$, equal to $2$ off the cone and
-$1$ on it; the three descriptions of the positive cone and the equivalence $t\geq\lvert\mathbf u\rvert$; the interior/boundary dictionary; the rank-two square as a sum of two rank-one squares. No
+$1$ on it; the three descriptions of the positive cone and the equivalence $t\geq\lvert\vec u\rvert$; the interior/boundary dictionary; the rank-two square as a sum of two rank-one squares. No
 element has negative sesquilinear norm.
 
 **Interpretations.** Rank as a mass label; the massive square as a bound pair of two massless constituents; the
@@ -293,9 +293,9 @@ same rank gives two polarisations for the massive type and one for the massless,
 are one square read twice, its determinant and its rank; the two squares of one element are its two metrics,
 the positive probability metric of the dagger and the indefinite causal metric of the interval. The positive cone is
 simultaneously the image of the square, the set of positive semidefinite Hermitian elements, and the
-forward cone $t\geq\lvert\mathbf u\rvert$ of the interval form, with interior the positive definite
+forward cone $t\geq\lvert\vec u\rvert$ of the interval form, with interior the positive definite
 elements and boundary the massless ones, and it is at once the cone of effects and the causal order; a
-spacelike element, $\lvert t\rvert<\lvert\mathbf u\rvert$, lies
+spacelike element, $\lvert t\rvert<\lvert\vec u\rvert$, lies
 outside it, so nothing the algebra produces as a square is spacelike. The positivity of the dagger is what
 makes the internal symmetry group compact and the charges discrete (*Particle Types, Discrete Charge and
 Three-Particle Couplings*); the states and their isotropy belong to *The States the Indefinite Metric Cannot Normalise*; the
@@ -314,8 +314,8 @@ and *Causality and the Light Cone as an Information Barrier in Biquaternionic Fo
 | $\lVert\tilde Q\rVert_E^{2}=\sum_\mu\lvert Q_\mu\rvert^{2}$ | the Euclidean square; $\mathrm{Sc}$ of the sesquilinear square |
 | $\mathsf{M}_2$ | the $2\times2$ matrix model; $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$ |
 | $\mathrm{Tr}=2\,\mathrm{Sc}$ | the trace convention |
-| $P=\{\tilde Q\tilde Q^{*}\}=\{\tilde H\in\mathbb{M}_+:\tilde H\geq0\}=\{te_0+i\mathbf u:t\geq\lvert\mathbf u\rvert\}$ | the positive cone |
-| $t\geq\lvert\mathbf u\rvert$ | the cone condition; interior positive definite, boundary massless |
+| $P=\{\tilde Q\tilde Q^{*}\}=\{\tilde H\in\mathbb{M}_+:\tilde H\geq0\}=\{te_0+i\vec u:t\geq\lvert\vec u\rvert\}$ | the positive cone |
+| $t\geq\lvert\vec u\rvert$ | the cone condition; interior positive definite, boundary massless |
 | $\mathbb{M}_\pm$ | the informational (Hermitian) and material (anti-Hermitian) sectors |
 
 ## Further Reading

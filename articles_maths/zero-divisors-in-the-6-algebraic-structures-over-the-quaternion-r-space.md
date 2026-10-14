@@ -58,10 +58,10 @@ The ring-theoretic picture breaks on the derived structures: the element $e_1$, 
 The product is $\tilde p\tilde q$, its conjugate is $\tilde p^{\natural}$, and the form of the product is
 
 $$
-N(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p^{\natural}\tilde q)=p_0q_0+(\mathbf p,\mathbf q) ,
+N(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p^{\natural}\tilde q)=p_0q_0+(\vec p,\vec q) ,
 $$
 
-the quaternion form of *The 2 Forms over the Quaternion $\mathbb{R}$ Space*. The norm is the form at the two equal arguments, $N(\tilde p)=N(\tilde p,\tilde p)$, the scalar of the central element $\tilde p^{\natural}\tilde p$. Write $\tilde p=p_0e_0+\mathbf p$ with $\mathbf p=p_1e_1+p_2e_2+p_3e_3$ and $\tilde p^{\natural}=p_0e_0-\mathbf p$. Since $e_ke_l+e_le_k=0$ for $k\neq l$ and $e_k^{2}=-e_0$, the vector part squares to $\mathbf p^{2}=-(p_1^{2}+p_2^{2}+p_3^{2})e_0$, so
+the quaternion form of *The 2 Forms over the Quaternion $\mathbb{R}$ Space*. The norm is the form at the two equal arguments, $N(\tilde p)=N(\tilde p,\tilde p)$, the scalar of the central element $\tilde p^{\natural}\tilde p$. Write $\tilde p=p_0e_0+\vec p$ with $\vec p=p_1e_1+p_2e_2+p_3e_3$ and $\tilde p^{\natural}=p_0e_0-\vec p$. Since $e_ke_l+e_le_k=0$ for $k\neq l$ and $e_k^{2}=-e_0$, the vector part squares to $\vec p^{2}=-(p_1^{2}+p_2^{2}+p_3^{2})e_0$, so
 
 $$
 \tilde p^{\natural}\tilde p=(p_0^{2}+p_1^{2}+p_2^{2}+p_3^{2})e_0 ,
@@ -75,15 +75,15 @@ The units are the elements off the vanishing set of the norm, $\mathbb{H}^{\time
 
 ### $\mathrm{SPA}$, the symmetric plain algebra
 
-The product is the Jordan product $\tilde p\bullet\tilde q=\tfrac12(\tilde p\tilde q+\tilde q\tilde p)=(p_0q_0-(\mathbf p,\mathbf q))e_0+p_0\mathbf q+q_0\mathbf p$, the symmetrisation of the plain product, so its form is the same,
+The product is the Jordan product $\tilde p\bullet\tilde q=\tfrac12(\tilde p\tilde q+\tilde q\tilde p)=(p_0q_0-(\vec p,\vec q))e_0+p_0\vec q+q_0\vec p$, the symmetrisation of the plain product, so its form is the same,
 
 $$
-N(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p^{\natural}\tilde q)=p_0q_0+(\mathbf p,\mathbf q) ,
+N(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p^{\natural}\tilde q)=p_0q_0+(\vec p,\vec q) ,
 $$
 
 and the norm is the reduced norm $N(\tilde p)=p_0^{2}+p_1^{2}+p_2^{2}+p_3^{2}$ of §*The General Plain Algebra (GPA)*.
 
-**The zero-divisor set is the punctured vector subspace $\mathrm{Vect}(\mathbb{H})\setminus\{0\}$, of real dimension three.** If $\tilde p$ is pure, $\tilde p=\mathbf u$, and the partner is pure, $\tilde q=\mathbf v$, the product is $\tilde p\bullet\tilde q=-(\mathbf u,\mathbf v)e_0$, which vanishes exactly when $\mathbf u$ and $\mathbf v$ are orthogonal; a nonzero pure element has a nonzero orthogonal vector in the three-dimensional vector subspace. If $\tilde p$ is not pure the left multiplication operator is nonsingular, of determinant
+**The zero-divisor set is the punctured vector subspace $\mathrm{Vect}(\mathbb{H})\setminus\{0\}$, of real dimension three.** If $\tilde p$ is pure, $\tilde p=\vec u$, and the partner is pure, $\tilde q=\vec v$, the product is $\tilde p\bullet\tilde q=-(\vec u,\vec v)e_0$, which vanishes exactly when $\vec u$ and $\vec v$ are orthogonal; a nonzero pure element has a nonzero orthogonal vector in the three-dimensional vector subspace. If $\tilde p$ is not pure the left multiplication operator is nonsingular, of determinant
 
 $$
 \det L^{\bullet}_{\tilde p}=p_0^{2}N(\tilde p) ,
@@ -97,7 +97,7 @@ The unit $e_0$ is two-sided, and every nonzero element is invertible, $e_1\bulle
 
 ### $\mathrm{APA}$, the antisymmetric plain algebra
 
-The product is the commutator $\tilde p\wedge\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\mathbf p\times\mathbf q$. It is alternating, so at the two equal arguments it vanishes, $\tilde p\wedge\tilde p=0$; there is no form there and no norm.
+The product is the commutator $\tilde p\wedge\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\vec p\times\vec q$. It is alternating, so at the two equal arguments it vanishes, $\tilde p\wedge\tilde p=0$; there is no form there and no norm.
 
 **The zero-divisor set is the whole punctured space $\mathbb{H}\setminus\{0\}$.** Every nonzero element is annihilated by itself.
 
@@ -108,10 +108,10 @@ There is no unit, the values lying in the vector subspace, so there is no group 
 The product is $\tilde p^{\natural}\tilde q$, its conjugate is $\tilde p^{\natural}$, and the form of the product is
 
 $$
-N(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p^{\natural}\tilde q)=p_0q_0+(\mathbf p,\mathbf q) .
+N(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p^{\natural}\tilde q)=p_0q_0+(\vec p,\vec q) .
 $$
 
-The norm is the form at the two equal arguments, the reduced norm of §*The General Plain Algebra (GPA)*, $N(\tilde p)=p_0^{2}+p_1^{2}+p_2^{2}+p_3^{2}$; the natural conjugation sends $\mathbf p$ to $-\mathbf p$, so $N(\tilde p^{\natural})=N(\tilde p)$.
+The norm is the form at the two equal arguments, the reduced norm of §*The General Plain Algebra (GPA)*, $N(\tilde p)=p_0^{2}+p_1^{2}+p_2^{2}+p_3^{2}$; the natural conjugation sends $\vec p$ to $-\vec p$, so $N(\tilde p^{\natural})=N(\tilde p)$.
 
 **The zero-divisor set is empty.** The natural product is the plain product with the natural conjugation in the first slot, so its left multiplication by $\tilde p$ is the plain left multiplication by $\tilde p^{\natural}$; the kernel is $\{0\}$ for $\tilde p\neq0$ by §*The General Plain Algebra (GPA)*. The element is invertible, with the two-sided inverse $(\tilde p^{-1})^{\natural}$.
 
@@ -122,7 +122,7 @@ The element $e_0$ is a left unit alone, and every nonzero element has the two-si
 The product is $\tfrac12(\tilde p^{\natural}\tilde q+\tilde q^{\natural}\tilde p)=N(\tilde p,\tilde q)e_0$, central, and the form of the product is
 
 $$
-N(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p^{\natural}\tilde q)=p_0q_0+(\mathbf p,\mathbf q) ,
+N(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p^{\natural}\tilde q)=p_0q_0+(\vec p,\vec q) ,
 $$
 
 the quaternion form of *The 2 Forms over the Quaternion $\mathbb{R}$ Space*; the norm is the reduced norm $N(\tilde p)=p_0^{2}+p_1^{2}+p_2^{2}+p_3^{2}$.
@@ -197,7 +197,7 @@ On a pure element the Jordan criterion drops the scalar coordinate and becomes a
 
 | | pure, $p_0=0$ | non-pure, $p_0\neq0$ |
 |---|---|---|
-| the criterion of $\mathrm{SPA}$ | a nonzero pure partner orthogonal to $\mathbf p$ | none |
+| the criterion of $\mathrm{SPA}$ | a nonzero pure partner orthogonal to $\vec p$ | none |
 | square in the plain product | $\tilde p^{2}=-N(\tilde p)e_0$ | $\tilde p^{2}=2p_0\tilde p-N(\tilde p)e_0$ |
 | structure | the zero divisors of $\mathrm{SPA}$ | the regular elements of $\mathrm{SPA}$ |
 | real dimension | $3$ | $4$ |
@@ -221,10 +221,10 @@ Over $\mathbb{C}$ the two separate: the sesquilinear square $\tilde P\star\tilde
 **The cone over $\mathbb{R}$ belongs to the plain form, not to the norm.** The plain bilinear form
 
 $$
-B(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\tilde q)=p_0q_0-(\mathbf p,\mathbf q)
+B(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\tilde q)=p_0q_0-(\vec p,\vec q)
 $$
 
-has signature $(1,3)$ (*The 2 Forms over the Quaternion $\mathbb{R}$ Space*), and its vanishing set is a genuine real double cone, $p_0^{2}=\lvert\mathbf p\rvert^{2}$, of real dimension three, whose link on the unit sphere is the disjoint union $S^{2}\sqcup S^{2}$, one sphere per nappe (*Biquaternion Lorentzian and Conformal Geometry*). The norm's vanishing set is the apex alone. Of the two bilinear structures of the article, therefore, $B$ carries a cone and $N$ does not, and this is the sharp form of the contrast: over $\mathbb{R}$ the cone is a property of the signature and not of the algebra. The physics corpus's light cone is this real cone, read on the material sector where the time coordinate carries the factor $ict$ (*Introduction to the Remarkable Subspaces of the Quaternions*).
+has signature $(1,3)$ (*The 2 Forms over the Quaternion $\mathbb{R}$ Space*), and its vanishing set is a genuine real double cone, $p_0^{2}=\lvert\vec p\rvert^{2}$, of real dimension three, whose link on the unit sphere is the disjoint union $S^{2}\sqcup S^{2}$, one sphere per nappe (*Biquaternion Lorentzian and Conformal Geometry*). The norm's vanishing set is the apex alone. Of the two bilinear structures of the article, therefore, $B$ carries a cone and $N$ does not, and this is the sharp form of the contrast: over $\mathbb{R}$ the cone is a property of the signature and not of the algebra. The physics corpus's light cone is this real cone, read on the material sector where the time coordinate carries the factor $ict$ (*Introduction to the Remarkable Subspaces of the Quaternions*).
 
 **The units are every nonzero element, and their group is a sphere.** The invertible elements are $\mathbb{H}^{\times}=\mathbb{H}\setminus\{0\}$, a group homeomorphic to $S^{3}$, simply connected, with $\pi_1(\mathbb{H}^{\times})=0$ and $\pi_3(\mathbb{H}^{\times})\cong\mathbb{Z}$ (*The Quaternion Unit Group as a Topological Group*). The complex case is different in exactly one place: $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$, with $\pi_1(\mathbb{B}^{\times})\cong\mathbb{Z}$, the extra circle coming from the punctured complex line that the vanishing set of the norm leaves in each direction (*The Biquaternion Unit Group as a Topological Group*). The integer the complex units carry and the real ones do not is the winding of the determinant.
 
@@ -271,8 +271,8 @@ Read against the complex case, the emptiness has one cause. The norm is positive
 |---|---|
 | $\star$ | one of the six products of $\mathbb{H}$; the two general products in the theorems |
 | $\tilde p\tilde q$, $\tilde p^{\natural}\tilde q$ | the two general products |
-| $N(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p^{\natural}\tilde q)=p_0q_0+(\mathbf p,\mathbf q)$ | the quaternion form, positive definite, the polar form of the norm |
-| $B(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\tilde q)=p_0q_0-(\mathbf p,\mathbf q)$ | the plain bilinear form, of signature $(1,3)$ |
+| $N(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p^{\natural}\tilde q)=p_0q_0+(\vec p,\vec q)$ | the quaternion form, positive definite, the polar form of the norm |
+| $B(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\tilde q)=p_0q_0-(\vec p,\vec q)$ | the plain bilinear form, of signature $(1,3)$ |
 | $N(\tilde p)=p_0^{2}+p_1^{2}+p_2^{2}+p_3^{2}$ | the reduced norm, the quaternion bilinear algebraic norm, the scalar of the central square $\tilde p\tilde p^{\natural}=N(\tilde p)e_0$ |
 | $\{N=0\}=\{0\}$ | the vanishing set of the norm, the apex alone; there is no cone |
 | $\varnothing$ | the zero-divisor set of the two general products |
@@ -280,7 +280,7 @@ Read against the complex case, the emptiness has one cause. The norm is positive
 | $\mathbb{H}\setminus\{0\}$ | the zero-divisor set of $\mathrm{APA}$, $\mathrm{SQA}$ and $\mathrm{AQA}$ |
 | $p_0^{2}N(\tilde p)$ | the determinant of the left multiplication operator of $\mathrm{SPA}$ |
 | $\tilde p^{-1}=\tilde p^{\natural}/N(\tilde p)$ | the inverse of a nonzero element |
-| $(\mathbf p,\mathbf q)$ | the plain bilinear dot product of the two vector parts |
+| $(\vec p,\vec q)$ | the plain bilinear dot product of the two vector parts |
 | $\mathrm{GPA},\dots,\mathrm{AQA}$ | the six structures of the space: the two general products and their four symmetric and antisymmetric parts |
 
 ## Further Reading

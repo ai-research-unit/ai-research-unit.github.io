@@ -67,7 +67,7 @@ W[\tilde J] = \tfrac12\big\langle \tilde J,\tilde K^{-1}\tilde J\big\rangle ,
 \qquad\text{equivalently}\qquad
 W[\tilde J] = \tfrac12\int\frac{d^4k}{(2\pi)^4}\,\frac{\big|\tilde J(k)\big|^2}{\tilde k\tilde k^{\natural}+m^2},
 $$
-using the wave biquaternion $\tilde k=iEe_0+\mathbf{p}$ and $\tilde k\tilde k^{\natural}=-p^2$. The kernel displayed is that of the kinetic operator $-\Box+m^2$, whose symbol is the central mass-shell operator $\mathcal{M}(\tilde k)=\tilde k\tilde k^{\natural}+m^2$; the action's operator is $\tilde K=\Box-m^2$, whose symbol is $-\mathcal{M}$, so the kernel of $\tilde K^{-1}$ is its negative, $-1/\mathcal{M}$. Recording this once fixes the relative sign of the source kernel and of the classical field below. Its second derivative is the propagator $D_F$, the object of *The Feynman Propagator in Biquaternionic Form*; the framework's contribution is the central scalar kinetic operator $\mathcal{M}(\tilde k)=\tilde k\tilde k^{\natural}+m^2$, as before.
+using the wave biquaternion $\tilde k=iEe_0+\vec p$ and $\tilde k\tilde k^{\natural}=-p^2$. The kernel displayed is that of the kinetic operator $-\Box+m^2$, whose symbol is the central mass-shell operator $\mathcal{M}(\tilde k)=\tilde k\tilde k^{\natural}+m^2$; the action's operator is $\tilde K=\Box-m^2$, whose symbol is $-\mathcal{M}$, so the kernel of $\tilde K^{-1}$ is its negative, $-1/\mathcal{M}$. Recording this once fixes the relative sign of the source kernel and of the classical field below. Its second derivative is the propagator $D_F$, the object of *The Feynman Propagator in Biquaternionic Form*; the framework's contribution is the central scalar kinetic operator $\mathcal{M}(\tilde k)=\tilde k\tilde k^{\natural}+m^2$, as before.
 
 **A remark on the trace.** The derivative $\delta W/\delta\tilde J$ is defined through the pairing, and because the pairing is a real bilinear form on the module, it takes a module-valued source to a module-valued classical field. No privileged matrix basis is needed; the derivative is the module's own gradient. This will matter in the next section, where the Legendre transform is taken on the module and not on a coordinate vector space.
 
@@ -270,7 +270,7 @@ Because a central kinetic operator does not mix the material and informational s
 | $V_{\mathrm{eff}}(\tilde\phi)=-\Gamma/\text{vol}$ | Effective potential |
 | $\delta V_{\mathrm{eff}}/\delta\tilde\phi=0$, $\delta^2V_{\mathrm{eff}}/\delta\tilde\phi^2\ge0$ | Vacuum condition; stability (convexity) |
 | $\tilde K=\Box-m^2$, $\Box=\partial_{ict}^2+\Delta$ | Central kinetic operator |
-| $\tilde k=iEe_0+\mathbf{p}$, $\tilde k\tilde k^{\natural}=-p^2$ | Wave biquaternion |
+| $\tilde k=iEe_0+\vec p$, $\tilde k\tilde k^{\natural}=-p^2$ | Wave biquaternion |
 
 ## Further Reading
 

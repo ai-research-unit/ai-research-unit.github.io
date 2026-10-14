@@ -40,8 +40,8 @@ The following table collects the quantitative results the series has obtained an
 
 | Domain | Framework result | Standard result reproduced |
 |---|---|---|
-| Single qubit | Bloch sphere and Bloch ball; $\mathrm{Tr}(\tilde{\rho}\tilde{H})=h_0+\mathbf{r}\cdot\mathbf{h}$; sandwich update | States, observables, Born rule, projective measurement |
-| Relativistic point mechanics | $N(d\tilde{Q})=-c^2dt^2+d\mathbf{x}^2$; $\tilde{P}\tilde{P}^{\natural}=-m^2c^2$; $\tilde{F}\tilde{P}^{\natural}+\tilde{P}\tilde{F}^{\natural}=0$ | Interval, mass shell, four-force orthogonality |
+| Single qubit | Bloch sphere and Bloch ball; $\mathrm{Tr}(\tilde{\rho}\tilde{H})=h_0+\vec r\cdot\vec h$; sandwich update | States, observables, Born rule, projective measurement |
+| Relativistic point mechanics | $N(d\tilde{Q})=-c^2dt^2+d\vec x^2$; $\tilde{P}\tilde{P}^{\natural}=-m^2c^2$; $\tilde{F}\tilde{P}^{\natural}+\tilde{P}\tilde{F}^{\natural}=0$ | Interval, mass shell, four-force orthogonality |
 | Maxwell field | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$; Riemann–Silberstein field; invariants | Maxwell's equations in a medium |
 | Dirac field | $\tilde{\nabla}\tilde{\Psi}_R=m\tilde{\Psi}_L$, $\tilde{\nabla}^{\natural}\tilde{\Psi}_L=m\tilde{\Psi}_R$; massless case $\tilde{\nabla}\tilde{\Psi}=0$ | Dirac equation, mass term |
 | Electron gyromagnetic ratio | $g=2$ at tree level; anomaly **absent** | Dirac's tree-level value; the anomaly is outside the framework |
@@ -91,19 +91,19 @@ Each candidate below is examined under the three questions of the Introduction a
 
 **The candidate.** The framework's most distinctive physical claim after the two-sector interpretation is that the complex structure of $\mathbb{B}$ is **local**, its scale set by the local speed of light $c=1/\sqrt{\epsilon\mu}$. One might hope that an observable depends on the complex structure as such, and not merely on the standard electromagnetic properties of the medium.
 
-**The framework-specific quantity.** The local speed $c(\mathbf{x})=1/\sqrt{\epsilon(\mathbf{x})\mu(\mathbf{x})}$, which fixes the embedding of physical time in the imaginary scalar direction, $\partial_{ict}=-(i/c)\,\partial_t$.
+**The framework-specific quantity.** The local speed $c(\vec x)=1/\sqrt{\epsilon(\vec x)\mu(\vec x)}$, which fixes the embedding of physical time in the imaginary scalar direction, $\partial_{ict}=-(i/c)\,\partial_t$.
 
-**Derived or posited.** The relation $c=1/\sqrt{\epsilon\mu}$ is **standard**, a consequence of the constitutive relations $\mathbf{D}=\epsilon\mathbf{E}$ and $\mathbf{B}=\mu\mathbf{H}$; the framework does not derive it. What is posited is the *identification* of this standard speed with the scale of the complex structure. Crucially, the framework adds no equation for $\epsilon$ or $\mu$: in every calculation of the series they are the standard medium parameters, supplied from outside.
+**Derived or posited.** The relation $c=1/\sqrt{\epsilon\mu}$ is **standard**, a consequence of the constitutive relations $\vec D=\epsilon\vec E$ and $\vec B=\mu\vec H$; the framework does not derive it. What is posited is the *identification* of this standard speed with the scale of the complex structure. Crucially, the framework adds no equation for $\epsilon$ or $\mu$: in every calculation of the series they are the standard medium parameters, supplied from outside.
 
 **The existing bound.** None specific to the framework. Bounds on $\epsilon(\omega)$ and $\mu(\omega)$ are bounds on the standard medium response, which the framework takes as input; they do not test the complex-structure interpretation, because that interpretation makes no claim about their values.
 
-**Verdict.** Not a signature. The *locality* of the complex structure is inherited entirely from the standard locality of $c(\mathbf{x})$, so any observable sensitive to it is already an observable of standard medium electromagnetism.
+**Verdict.** Not a signature. The *locality* of the complex structure is inherited entirely from the standard locality of $c(\vec x)$, so any observable sensitive to it is already an observable of standard medium electromagnetism.
 
 ### A Second Light Cone, or Vacuum Birefringence
 
 **The candidate.** The framework has two sectors, and the two sectors carry quadratic forms of opposite signature. Perhaps there are two null structures, hence a polarization-dependent propagation speed — birefringence — or a second, "informational" light cone.
 
-**The framework-specific quantity.** The biquaternion norm $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$. It is a **single** quadratic form on $\mathbb{B}$, and its zero set is a single cone. Its restrictions to $\mathbb{M}_-$ and $\mathbb{M}_+$ are the mirror quadratic forms $-q_0^2+\mathbf{q}^2$ and $q_0^2-\mathbf{q}^2$; these are restrictions of the same form to complementary subspaces, not two independent propagation structures. A field propagating in the framework obeys one d'Alembertian $\Box=\partial_{ict}^2+\Delta$, built from one $c$. There is no second cone and no splitting of polarizations.
+**The framework-specific quantity.** The biquaternion norm $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$. It is a **single** quadratic form on $\mathbb{B}$, and its zero set is a single cone. Its restrictions to $\mathbb{M}_-$ and $\mathbb{M}_+$ are the mirror quadratic forms $-q_0^2+\vec q^2$ and $q_0^2-\vec q^2$; these are restrictions of the same form to complementary subspaces, not two independent propagation structures. A field propagating in the framework obeys one d'Alembertian $\Box=\partial_{ict}^2+\Delta$, built from one $c$. There is no second cone and no splitting of polarizations.
 
 **Derived or posited.** The single cone is **derived**: it is the zero-divisor set of the algebra, a theorem of the corpus. The absence of birefringence is therefore a consequence of the algebra, not an unverified claim.
 
@@ -127,7 +127,7 @@ Each candidate below is examined under the three questions of the Introduction a
 
 **The candidate.** The framework's central interpretive claim is that $\mathbb{M}_+$ is a physical sector. A coupling between the sectors beyond the standard Lorentz action would be new physics: a fifth force, a new field, a mass mixing.
 
-**The framework-specific quantity.** Unspecified. The only operations involving both sectors are multiplication by $i$, which exchanges them, and the rotor conjugation $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$, the standard Lorentz action. The companion article on $\mathbb{M}_+$ states that no dynamics for $\mathbb{M}_+$-valued fields is specified and that there is no coupling beyond the Lorentz one; the introduction lists a coupling between the sectors as an open question.
+**The framework-specific quantity.** Unspecified. The only operations involving both sectors are multiplication by $i$, which exchanges them, and the rotor conjugation $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$, the standard Lorentz action. The companion article on $\mathbb{M}_+$ states that no dynamics for $\mathbb{M}_+$-valued fields is specified and that there is no coupling beyond the Lorentz one; the introduction lists a coupling between the sectors as an open question.
 
 **Derived or posited.** Posited as a question. There is no field equation, no action, and no coupling constant.
 
@@ -199,7 +199,7 @@ Each candidate below is examined under the three questions of the Introduction a
 
 ### An External Programme That Varies the Speed of Light
 
-**The candidate.** A programme outside the framework — the biquaternion relativity of A. Waser (2011) — takes the framework's complexified four-position and four-velocity and reads gravitation as the effect of a spatially varying speed of light, $c=c_0f(\mathbf{x})$, with the profile fixed by requiring the model's own force $F_g=-mc\,\nabla c$ to reproduce Newton's law. From that one input the paper derives the Schwarzschild line element, the classical equation of motion with perihelion precession, the gravitational redshift, free transverse gravitation waves of velocity $c$, and a screened field of a point charge.
+**The candidate.** A programme outside the framework — the biquaternion relativity of A. Waser (2011) — takes the framework's complexified four-position and four-velocity and reads gravitation as the effect of a spatially varying speed of light, $c=c_0f(\vec x)$, with the profile fixed by requiring the model's own force $F_g=-mc\,\nabla c$ to reproduce Newton's law. From that one input the paper derives the Schwarzschild line element, the classical equation of motion with perihelion precession, the gravitational redshift, free transverse gravitation waves of velocity $c$, and a screened field of a point charge.
 
 **The framework-specific quantity.** None of the framework's. The programme uses the four-velocity biquaternion, the semi-biquaternion product, and the complexified four-position, which the corpus's companion articles read as a rewriting of standard four-vector kinematics. Its distinctive content is the added hypothesis that $c$ varies with position and that the line element is $ds^2=-f^2c_0^2\,dt^2+(dr^2+r^2d\Omega^2)/f^2$. The algebra does not force either.
 
@@ -265,7 +265,7 @@ The main result is therefore negative, and meant to be: the framework currently 
 | $c_0=1/\sqrt{\epsilon_0\mu_0}$ | Vacuum speed of light |
 | $\tilde{\nabla}$, $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ | Biquaternionic gradient, d'Alembertian |
 | $\tilde\Pi_{1,2}=\tfrac12(e_0\pm i\hat{\mu})$ | Idempotent (pure state) |
-| $\tilde{H}=h_0e_0+i\mathbf{h}$ | Hermitian element (observable) |
+| $\tilde{H}=h_0e_0+i\vec h$ | Hermitian element (observable) |
 | $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula (Born rule) |
 | $\mathbb{B}\cong M_2(\mathbb{C})$ | The algebra is the standard complex $2\times2$ algebra |
 | $SL(2,\mathbb{C})$ | Unit-norm biquaternions (Lorentz double cover) |

@@ -3,7 +3,7 @@
 ## Introduction
 
 The antisymmetric plain algebra of $\mathbb{H}$ is the cross product
-$\tilde p\times\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\mathbf p\times\mathbf q$ of
+$\tilde p\times\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\vec p\times\vec q$ of
 *Introduction to the Antisymmetric Plain Algebra of Quaternions*. This article reads the operation on
 the **left regular representation** $M_4(\mathbb{R})_L$ of *Introduction to the $4\times4$ Matrix
 Element Representation $M_4(\mathbb{R})_L$ of Quaternions*, where the plain product becomes the matrix
@@ -31,8 +31,8 @@ Matrix Element Representation $M_2(\mathbb{C})$*, above this article in this cat
 $e_1^2=e_2^2=e_3^2=-e_0$; the left regular representation is the map $\mathsf{M}_4$ sending $\tilde q$ to
 the matrix of the left multiplication $r\mapsto\tilde q r$ in the basis $(e_0,e_1,e_2,e_3)$, and the
 right regular representation is $\mathsf{R}_4$, the matrix of $r\mapsto r\tilde q$. The **quaternion
-form** is $N(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q$ and the **plain form**
-$B(\tilde p,\tilde q)=p_0q_0-\mathbf p\cdot\mathbf q$.
+form** is $N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$ and the **plain form**
+$B(\tilde p,\tilde q)=p_0q_0-\vec p\cdot\vec q$.
 
 ## The Left Regular Model
 
@@ -77,7 +77,7 @@ and half of it is the image of the bracket.
 
 $$
 \mathsf{M}_4\bigl(\mathrm{Vect}(\mathbb{H})\bigr)
-=\{\mathsf{M}_4(\mathbf q):\ \operatorname{Tr}\mathsf{M}_4(\mathbf q)=0\},
+=\{\mathsf{M}_4(\vec q):\ \operatorname{Tr}\mathsf{M}_4(\vec q)=0\},
 $$
 
 a three-dimensional real subspace, and the kernel of the model map is $\{0\}$.
@@ -130,13 +130,13 @@ $$
 $$
 
 which on the derived algebra is twice the Killing form,
-$\operatorname{Tr}(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q))=-4\,\mathbf p\cdot\mathbf q=2\kappa(\tilde p,\tilde q)$
+$\operatorname{Tr}(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q))=-4\,\vec p\cdot\vec q=2\kappa(\tilde p,\tilde q)$
 for pure $\tilde p,\tilde q$; and the determinant reads the quaternion norm,
 $\det\mathsf{M}_4(\tilde q)=N(\tilde q)^2$.
 
 *Proof.* The model is multiplicative, so
 $\operatorname{Tr}(\mathsf{M}_4(\tilde p)\mathsf{M}_4(\tilde q))=\operatorname{Tr}\mathsf{M}_4(\tilde p\tilde q)=4\mathrm{Sc}(\tilde p\tilde q)=4B(\tilde p,\tilde q)$;
-on pure elements $B=-\mathbf p\cdot\mathbf q$, and the Killing form is $-2\,\mathbf p\cdot\mathbf q$
+on pure elements $B=-\vec p\cdot\vec q$, and the Killing form is $-2\,\vec p\cdot\vec q$
 (*The Killing Form of the Antisymmetric Plain Algebra*, below this article in this category).
 
 ## The Comparison with the Plain Algebra on the Model

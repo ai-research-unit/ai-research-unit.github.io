@@ -6,7 +6,7 @@ This article studies the algebraic norm and the invertibility of the antisymmetr
 
 $$
 \tilde P\diamond\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P\bigr)
-=P_0\mathbf{Q}-Q_0\mathbf{P}-\mathbf{P}\times\mathbf{Q},
+=P_0\vec Q-Q_0\vec P-\vec P\times\vec Q,
 $$
 
 the antisymmetric part of the general quaternionic product $\tilde P^{\natural}\tilde Q$ (*Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions*). The operation is $\mathbb{C}$-bilinear, alternating and vector valued, and it has no unit on either side.
@@ -17,9 +17,9 @@ The invertibility is a second and independent absence. The block has **no left u
 
 **Boundaries.** The operation, its class and the absence of a unit are *Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions*; the general definitions of the unit and the inverse are *Definitions for the Study of the 12 Algebraic Structures*, §*The Unit and the Inverse*, and the unit table of the four general products is *Comparison Between the Four General Products*; the antisymmetrisation from which the block is written is *The Symmetric and Antisymmetric Parts of an Algebra Product*. The algebraic norm of the general quaternionic bilinear product is $N$, a different form, and its theory is *Norm and Invertibility in the General Quaternionic Algebra*; the invariant forms of the block are *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*. Nothing topological and nothing metric appears.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_1e_2=e_3$ and central scalar imaginary $i$; an element is $\tilde Q=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^{3}Q_ke_k$, and $\tilde P^{\natural}\tilde Q$ is the general quaternionic bilinear product. The product of the block is $\tilde P\diamond\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$, and unqualified, *unit* and *inverse* mean the unit and the inverse of $\diamond$.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_1e_2=e_3$ and central scalar imaginary $i$; an element is $\tilde Q=Q_0e_0+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_ke_k$, and $\tilde P^{\natural}\tilde Q$ is the general quaternionic bilinear product. The product of the block is $\tilde P\diamond\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$, and unqualified, *unit* and *inverse* mean the unit and the inverse of $\diamond$.
 
-**The results.** The antisymmetric quaternionic multiplication has no left unit, no right unit and no two-sided unit, hence no inverse and an empty group of units, and the inverse equation $\tilde X\diamond\tilde Y=e_0$ has no solution because every value of the block is a pure vector. Its scalar part vanishes identically, so its algebraic norm is the zero function and the block carries no algebraic norm rather than a zero one. Its square vanishes identically, $\tilde X\diamond\tilde X=0$, and its conjugated square is the pure vector $\tilde X\diamond\tilde X^{\natural}=-2X_0\mathbf X$, so neither canonical quadratic is central-valued. The invertibility criterion $N\neq0$ of the parent quaternionic product is not transferred.
+**The results.** The antisymmetric quaternionic multiplication has no left unit, no right unit and no two-sided unit, hence no inverse and an empty group of units, and the inverse equation $\tilde X\diamond\tilde Y=e_0$ has no solution because every value of the block is a pure vector. Its scalar part vanishes identically, so its algebraic norm is the zero function and the block carries no algebraic norm rather than a zero one. Its square vanishes identically, $\tilde X\diamond\tilde X=0$, and its conjugated square is the pure vector $\tilde X\diamond\tilde X^{\natural}=-2X_0\vec X$, so neither canonical quadratic is central-valued. The invertibility criterion $N\neq0$ of the parent quaternionic product is not transferred.
 
 ## The Relative Definitions
 
@@ -37,9 +37,9 @@ Throughout this article the product is the antisymmetric quaternionic multiplica
 
 **Theorem (no unit).** The operation $\diamond$ has no left unit and no right unit; there is no $\tilde E$ with $\tilde E\diamond\tilde X=\tilde X$ for every $\tilde X$, and none with $\tilde X\diamond\tilde E=\tilde X$ for every $\tilde X$. Hence there is no two-sided unit.
 
-*Proof.* A left unit $\tilde E$ gives at $\tilde X=e_0$ the value $\tilde E\diamond e_0=-\mathbf{E}$, which would have to equal $e_0$; a right unit gives at $\tilde X=e_0$ the value $e_0\diamond\tilde E=\mathbf{E}$, which would have to equal $e_0$; and neither $-\mathbf{E}$ nor $\mathbf{E}$ is central for a nonzero value of $\mathbf{E}$, while $\mathbf{E}=0$ gives the value $0$.
+*Proof.* A left unit $\tilde E$ gives at $\tilde X=e_0$ the value $\tilde E\diamond e_0=-\vec E$, which would have to equal $e_0$; a right unit gives at $\tilde X=e_0$ the value $e_0\diamond\tilde E=\vec E$, which would have to equal $e_0$; and neither $-\vec E$ nor $\vec E$ is central for a nonzero value of $\vec E$, while $\vec E=0$ gives the value $0$.
 
-The absence is structural: the value of the block is a pure vector for every pair of arguments, and the equations that would name a unit require the central element $e_0$ on one side. The block has, however, a one-sided identity on its own image: the element $e_0$ satisfies $e_0\diamond\tilde X=\mathbf{X}$ and $\tilde X\diamond e_0=-\mathbf{X}$, the two one-sided actions on the vector part; the operation itself remains without a two-sided unit.
+The absence is structural: the value of the block is a pure vector for every pair of arguments, and the equations that would name a unit require the central element $e_0$ on one side. The block has, however, a one-sided identity on its own image: the element $e_0$ satisfies $e_0\diamond\tilde X=\vec X$ and $\tilde X\diamond e_0=-\vec X$, the two one-sided actions on the vector part; the operation itself remains without a two-sided unit.
 
 ## The Absence of an Inverse
 
@@ -59,7 +59,7 @@ has no solution in $\mathbb{B}$, because the left side has zero scalar part for 
 
 ## The Algebraic Norm of the Block
 
-**The scalar part of the block vanishes identically, so the algebraic norm of the operation is the zero function and the block carries no algebraic norm rather than a zero one; its square vanishes identically and its conjugated square is the pure vector $\tilde X\diamond\tilde X^{\natural}=-2X_0\mathbf X$.**
+**The scalar part of the block vanishes identically, so the algebraic norm of the operation is the zero function and the block carries no algebraic norm rather than a zero one; its square vanishes identically and its conjugated square is the pure vector $\tilde X\diamond\tilde X^{\natural}=-2X_0\vec X$.**
 
 **Definition (the algebraic norm of the operation).** Let $f$ be an operation on $\mathbb{B}$ with scalar-part form $\varphi(\tilde P,\tilde Q)=\mathrm{Sc}\,f(\tilde P,\tilde Q)$. The **algebraic norm of $f$** is the diagonal of that form,
 
@@ -79,12 +79,12 @@ $$
 
 The algebraic norm of the operation is identically zero, and by the convention of the definition the block carries **no algebraic norm**.
 
-*Proof.* The value $\tilde P\diamond\tilde Q=P_0\mathbf{Q}-Q_0\mathbf{P}-\mathbf{P}\times\mathbf{Q}$ is a pure vector: the scalar parts of $P_0\mathbf{Q}$ and $Q_0\mathbf{P}$ cancel, and the cross product has zero scalar part. Its diagonal is therefore the zero function. A vanishing quadratic form is not an algebraic norm, and its vanishing set is the whole space, so the block is counted with no algebraic norm rather than with a zero one.
+*Proof.* The value $\tilde P\diamond\tilde Q=P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$ is a pure vector: the scalar parts of $P_0\vec Q$ and $Q_0\vec P$ cancel, and the cross product has zero scalar part. Its diagonal is therefore the zero function. A vanishing quadratic form is not an algebraic norm, and its vanishing set is the whole space, so the block is counted with no algebraic norm rather than with a zero one.
 
 **Remark (the two canonical quadratics of the block).** The product being alternating, the square vanishes identically, and the conjugated square is a pure vector:
 
 $$
-\tilde X\diamond\tilde X=0,\qquad \tilde X\diamond\tilde X^{\natural}=-2X_0\mathbf{X} .
+\tilde X\diamond\tilde X=0,\qquad \tilde X\diamond\tilde X^{\natural}=-2X_0\vec X .
 $$
 
 The square is the zero map, and the conjugated square is central exactly on the vector subspace and on the centre, not everywhere; neither takes its values in the centre at every element, so no central-valued quadratic map is built from the product. The parent product $\tilde P^{\natural}\tilde Q$ removes its scalar part in the block, and with the scalar part removed from a square the central quadratic form is gone.
@@ -93,21 +93,21 @@ The square is the zero map, and the conjugated square is central exactly on the 
 
 **The algebraic norm $N$ of the parent quaternionic product is a different form and does not decide anything for the block: no element is invertible and the group of units is empty, so no invertibility criterion is transferred.**
 
-**Remark (the criterion of the parent is not read here).** The general quaternionic bilinear product $\tilde P^{\natural}\tilde Q$ is left-unital with left unit $e_0$, and its invertibility is decided by the non-vanishing of its algebraic norm $N$, the diagonal of $\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\mathbf{P},\mathbf{Q})$ (*Norm and Invertibility in the General Quaternionic Algebra*). That form is a different algebraic norm, it is not the algebraic norm of the block, and it is not read here. The block has no unit against which to invert and no algebraic norm to decide anything: no element is invertible, and the empty group of units is the sharp form of the statement.
+**Remark (the criterion of the parent is not read here).** The general quaternionic bilinear product $\tilde P^{\natural}\tilde Q$ is left-unital with left unit $e_0$, and its invertibility is decided by the non-vanishing of its algebraic norm $N$, the diagonal of $\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\vec P,\vec Q)$ (*Norm and Invertibility in the General Quaternionic Algebra*). That form is a different algebraic norm, it is not the algebraic norm of the block, and it is not read here. The block has no unit against which to invert and no algebraic norm to decide anything: no element is invertible, and the empty group of units is the sharp form of the statement.
 
 ## Summary
 
-The antisymmetric quaternionic multiplication $\tilde P\diamond\tilde Q=P_0\mathbf{Q}-Q_0\mathbf{P}-\mathbf{P}\times\mathbf{Q}$ has no unit on either side, hence no invertible element and an empty group of units, and the inverse equation $\tilde X\diamond\tilde Y=e_0$ has no solution because every value of the block is a pure vector. The **algebraic norm** of the operation is the diagonal of its scalar-part form; the scalar part vanishes identically, the diagonal is the zero function, and by the convention of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* a vanishing quadratic form is not an algebraic norm, so the block carries **no algebraic norm**. The square vanishes identically and the conjugated square is the pure vector $-2X_0\mathbf{X}$, so neither canonical quadratic is central-valued. The algebraic norm $N$ of the parent quaternionic product is a different form of a different product and is not read here; no invertibility criterion is transferred, and the place of both notions is taken by the absence of a unit and of an inverse.
+The antisymmetric quaternionic multiplication $\tilde P\diamond\tilde Q=P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$ has no unit on either side, hence no invertible element and an empty group of units, and the inverse equation $\tilde X\diamond\tilde Y=e_0$ has no solution because every value of the block is a pure vector. The **algebraic norm** of the operation is the diagonal of its scalar-part form; the scalar part vanishes identically, the diagonal is the zero function, and by the convention of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* a vanishing quadratic form is not an algebraic norm, so the block carries **no algebraic norm**. The square vanishes identically and the conjugated square is the pure vector $-2X_0\vec X$, so neither canonical quadratic is central-valued. The algebraic norm $N$ of the parent quaternionic product is a different form of a different product and is not read here; no invertibility criterion is transferred, and the place of both notions is taken by the absence of a unit and of an inverse.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\diamond\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)=P_0\mathbf{Q}-Q_0\mathbf{P}-\mathbf{P}\times\mathbf{Q}$ | the antisymmetric quaternionic multiplication, the operation $\mathrm{AQA}$ |
+| $\tilde P\diamond\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)=P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$ | the antisymmetric quaternionic multiplication, the operation $\mathrm{AQA}$ |
 | $\tilde P^{\natural}\tilde Q$ | the parent general quaternionic product |
 | $\mathrm{Sc}(\tilde P\diamond\tilde Q)=0$ | the scalar part of the block vanishes identically |
 | $\varphi_{\diamond}(\tilde Q)=0$ | the algebraic norm of the block, the zero function; the block carries no algebraic norm |
-| $\tilde X\diamond\tilde X=0$, $\tilde X\diamond\tilde X^{\natural}=-2X_0\mathbf{X}$ | the square vanishes; the conjugated square is a pure vector |
+| $\tilde X\diamond\tilde X=0$, $\tilde X\diamond\tilde X^{\natural}=-2X_0\vec X$ | the square vanishes; the conjugated square is a pure vector |
 | no unit, no inverse, no group of units | the absence carried by the block |
 
 ## Further Reading

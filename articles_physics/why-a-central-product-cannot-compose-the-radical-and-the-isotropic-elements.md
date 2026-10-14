@@ -16,7 +16,7 @@ The operation is
 
 $$
 \tilde P\bullet\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P\bigr)
-=\bigl[P_0Q_0+(\mathbf P,\mathbf Q)\bigr]e_0=N(\tilde P,\tilde Q)\,e_0 ,
+=\bigl[P_0Q_0+(\vec P,\vec Q)\bigr]e_0=N(\tilde P,\tilde Q)\,e_0 ,
 $$
 
 the symmetrised quaternionic product of the band
@@ -39,15 +39,15 @@ signature table, are *Comparison Between the Four General Products* and
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis
 $e_0=1,e_1,e_2,e_3$, $e_k^{2}=-e_0$, $e_1e_2=e_3$, and central scalar imaginary $i$ with $i^{2}=-1$; an
-element is $\tilde Q=Q_0e_0+\mathbf Q$; the natural conjugation is ${}^{\natural}$, the Hermitian star
+element is $\tilde Q=Q_0e_0+\vec Q$; the natural conjugation is ${}^{\natural}$, the Hermitian star
 ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, and the sectors are $\mathbb{M}_\pm$. The general plain bilinear product is
 $\tilde P\tilde Q$, the quaternionic product is $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$, and
 $\tilde P\bullet\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$ is its
 symmetrisation. The symmetrisation symbol $\bullet$ is **row-relative** in this chapter: the plain row
 writes it for $\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$, a different operation. The **general
 quaternionic bilinear form** is
-$N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$ and the
-**general plain bilinear form** is $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-(\mathbf P,\mathbf Q)$;
+$N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\vec P,\vec Q)$ and the
+**general plain bilinear form** is $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-(\vec P,\vec Q)$;
 the biquaternion norm is $N(\tilde Q)=\langle\tilde Q,\tilde Q\rangle_{\natural}=Q_0^{2}+Q_1^{2}+Q_2^{2}+Q_3^{2}$.
 
 ## A Product Whose Values Are All Central
@@ -81,7 +81,7 @@ $$
 for every $\tilde Z\neq0$ there is an $\tilde X$ with $\tilde Z\bullet\tilde X\neq0$, and the coefficient
 has Gram matrix $I_4$, of rank $4$ over $\mathbb{C}$.
 
-*Proof.* The coefficient is $N(\tilde Z,\tilde X)=Z_0X_0+(\mathbf Z,\mathbf X)$; taking $\tilde X=e_0$
+*Proof.* The coefficient is $N(\tilde Z,\tilde X)=Z_0X_0+(\vec Z,\vec X)$; taking $\tilde X=e_0$
 gives $Z_0$, and taking $\tilde X=e_k$ gives $Z_k$, so an element in the radical has all four coordinates
 zero. Its Gram matrix in the basis $e_0,e_1,e_2,e_3$ is the identity, of rank $4$ over $\mathbb{C}$; its
 realification is $\operatorname{diag}(I_4,-I_4)$, of signature $(4,4)$ and index $4$.
@@ -178,8 +178,8 @@ on the Symmetric Quaternionic Algebra* is exactly the passage between the two re
 $B$. The two differ by the sign of the vector part alone,
 
 $$
-N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q) , \qquad
-B(\tilde P,\tilde Q)=P_0Q_0-(\mathbf P,\mathbf Q) ,
+N(\tilde P,\tilde Q)=P_0Q_0+(\vec P,\vec Q) , \qquad
+B(\tilde P,\tilde Q)=P_0Q_0-(\vec P,\vec Q) ,
 $$
 
 so a value of this band's operation that is written $B$ is wrong, and the natural conjugation in the first
@@ -339,8 +339,8 @@ Operations*; and the two forms are *Comparison Between the Four General Products
 | $\{N(\tilde Q)=0\}$ | the isotropic elements; the zero divisors and the light cone |
 | $\bigl(\tilde X^{\bullet2}\bullet\tilde Y\bigr)\bullet\tilde X=\tilde X^{\bullet2}\bullet(\tilde Y\bullet\tilde X)$ | the Jordan identity; false, witness $(e_1,e_1)$ |
 | $e_0\bullet\tilde Q=Q_0e_0$ | the projection onto the scalar part; there is no unit |
-| $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$ | the general quaternionic bilinear form, the coefficient |
-| $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-(\mathbf P,\mathbf Q)$ | the general plain bilinear form; not the coefficient |
+| $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\vec P,\vec Q)$ | the general quaternionic bilinear form, the coefficient |
+| $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-(\vec P,\vec Q)$ | the general plain bilinear form; not the coefficient |
 | $(1,1),(3,3),(4,0),(0,4),(1,3),(3,1)$ | the signatures of $N$ on the remarkable subspaces |
 
 ## Further Reading

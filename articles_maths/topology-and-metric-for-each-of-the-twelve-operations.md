@@ -111,7 +111,7 @@ The operation is the half-sum $\tfrac12(\tilde{P}\tilde{Q}+\tilde{Q}\tilde{P})$,
 
 ### APA — antisymmetric plain algebra
 
-The operation is the half-difference $\tfrac12(\tilde{P}\tilde{Q}-\tilde{Q}\tilde{P})=\mathbf{P}\times\mathbf{Q}$, the cross product of the two vector parts. By Fact 1 its scalar part **vanishes identically**: the operation carries no form at all, and neither the diagonal route nor the symmetry route applies to it.
+The operation is the half-difference $\tfrac12(\tilde{P}\tilde{Q}-\tilde{Q}\tilde{P})=\vec P\times\vec Q$, the cross product of the two vector parts. By Fact 1 its scalar part **vanishes identically**: the operation carries no form at all, and neither the diagonal route nor the symmetry route applies to it.
 
 **Topology.** The operation owns no level set and no isometry group, its values lying in the vector subspace. What it does own is the whole Lie structure of the algebra: it is the one operation of the twelve that is alternating and satisfies the Jacobi identity, and its bracket is the Lie bracket of *The Unitary Lie Algebra*.
 
@@ -127,7 +127,7 @@ The operation is $\tilde{P}^{\natural}\tilde{Q}$, the plain product with the fir
 
 ### SQA — symmetric quaternionic algebra
 
-The operation is $\tfrac12(\tilde{P}^{\natural}\tilde{Q}+\tilde{Q}^{\natural}\tilde{P})$, which by Fact 1 has scalar part **$P_0Q_0+(\mathbf{P},\mathbf{Q})$**, the same general quaternionic bilinear form as that of $\mathrm{GQA}$. Its values lie in the centre, so it is the operation that *is* the bilinear form read as a product: a commutative product with values in the two-dimensional centre $\mathbb{C}_{\mathbb{B}}$ and with no unit.
+The operation is $\tfrac12(\tilde{P}^{\natural}\tilde{Q}+\tilde{Q}^{\natural}\tilde{P})$, which by Fact 1 has scalar part **$P_0Q_0+(\vec P,\vec Q)$**, the same general quaternionic bilinear form as that of $\mathrm{GQA}$. Its values lie in the centre, so it is the operation that *is* the bilinear form read as a product: a commutative product with values in the two-dimensional centre $\mathbb{C}_{\mathbb{B}}$ and with no unit.
 
 **Topology.** The same level set, the norm-one group, and the same isometry group $O_4(\mathbb{C})$ as $\mathrm{GQA}$; the two operations are two readings of one object, the form as a pairing and the form as a product.
 

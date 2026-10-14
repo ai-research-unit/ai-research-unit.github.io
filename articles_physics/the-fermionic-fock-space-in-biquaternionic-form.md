@@ -54,7 +54,7 @@ complex-valued, $\mathbb{C}$-antilinear in the first argument and positive defin
 
 **The biquaternion norm.** On $\mathbb{B}$, $N(\tilde{Q})=\sum_\mu Q_\mu^2=Q_0^2+Q_1^2+Q_2^2+Q_3^2$, general plain bilinear and scalar-valued; it is isotropic on the zero divisors, and on the real sectors it has signature $(3,1)$ on the material sector $\mathbb{M}_-$ and the mirror signature $(1,3)$ on the informational sector $\mathbb{M}_+$, as the conventions article fixes. Its restriction to the ideal $\mathbb{B}\tilde\varepsilon_+$ vanishes identically: the left ideal is totally isotropic for $N$, which was checked to machine precision on random elements of the ideal. The biquaternion norm therefore does *not* descend to a form on the one-particle space. What $S$ carries instead is the antisymmetric form $\varepsilon$ and the mixed pairing with the dual, and those are the invariant bilinears; the biquaternion norm's role is on $\mathbb{B}$ itself.
 
-A one-particle state is therefore an element of the ideal, whose *physical* content is the ray in $S$ and whose *algebraic* content is the element of $\mathbb{B}\tilde\varepsilon_+$. The two are related by the Hermitian form for probabilities and by the antisymmetric and mixed pairings for the Lorentz-invariant bilinears. The classical plane-wave spinor $u^{(r)}(\mathbf p)$ of the solutions article is a one-particle state in this sense; the positive-frequency half of the parent's mode expansion is exactly the statement that the creation operators of the field act on the one-particle space $S_{\mathbf p}\cong S$ for each momentum.
+A one-particle state is therefore an element of the ideal, whose *physical* content is the ray in $S$ and whose *algebraic* content is the element of $\mathbb{B}\tilde\varepsilon_+$. The two are related by the Hermitian form for probabilities and by the antisymmetric and mixed pairings for the Lorentz-invariant bilinears. The classical plane-wave spinor $u^{(r)}(\vec p)$ of the solutions article is a one-particle state in this sense; the positive-frequency half of the parent's mode expansion is exactly the statement that the creation operators of the field act on the one-particle space $S_{\vec p}\cong S$ for each momentum.
 
 ### The Lorentz Action and the Covering Sign
 
@@ -144,7 +144,7 @@ $$
 
 where $\Lambda^n\rho$ denotes the induced action on $\Lambda^nS$, and the reason this is the natural action is that the exterior algebra is a functor: it converts each one-particle representation into the sequence of its antisymmetric powers, preserving direct sums, tensor products and duals.
 
-The decomposition is computed by symmetry. On $S$ the total-spin operators are $J_i$, and $\Gamma(J_i)$ acts on $\Lambda S$ as the antisymmetric jet of $J_i$: as $0$ on the vacuum, as $J_i$ on $\Lambda^1S=S$, and as the induced (scalar) action on $\Lambda^2S$. Since $\Lambda^2S\cong\mathbb{C}$ with the invariant $\varepsilon$, the top power is a Lorentz **singlet**, and the vacuum is the other. On the middle power the quadratic Casimir $\mathbf{J}^2$ is the one-particle Casimir, $j(j+1)=\tfrac34$. The eigenvalues of $\mathbf{J}^2$ on $\mathcal{F}$, in the occupation basis, are
+The decomposition is computed by symmetry. On $S$ the total-spin operators are $J_i$, and $\Gamma(J_i)$ acts on $\Lambda S$ as the antisymmetric jet of $J_i$: as $0$ on the vacuum, as $J_i$ on $\Lambda^1S=S$, and as the induced (scalar) action on $\Lambda^2S$. Since $\Lambda^2S\cong\mathbb{C}$ with the invariant $\varepsilon$, the top power is a Lorentz **singlet**, and the vacuum is the other. On the middle power the quadratic Casimir $\vec J^2$ is the one-particle Casimir, $j(j+1)=\tfrac34$. The eigenvalues of $\vec J^2$ on $\mathcal{F}$, in the occupation basis, are
 
 $$
 \{0,\tfrac34,\tfrac34,0\},
@@ -164,7 +164,7 @@ $$
 S_i=\tfrac12\sum_{ss'}\hat a_s^\dagger(\sigma_i)_{ss'}\hat a_{s'}
 $$
 
-on the four-dimensional space $\Lambda S$ and diagonalising $\mathbf{J}^2=\sum_iS_i^2$: the spectrum is $\{0,0,\tfrac34,\tfrac34\}$, with $\hat N$ eigenvalues $\{0,1,1,2\}$ and $J_z$ eigenvalues $\{0,\tfrac12,-\tfrac12,0\}$. The singlets are the vacuum and the antisymmetric pair; the doublet is the one-particle space. This is the same $\Lambda S$ of the previous section, now read as a representation.
+on the four-dimensional space $\Lambda S$ and diagonalising $\vec J^2=\sum_iS_i^2$: the spectrum is $\{0,0,\tfrac34,\tfrac34\}$, with $\hat N$ eigenvalues $\{0,1,1,2\}$ and $J_z$ eigenvalues $\{0,\tfrac12,-\tfrac12,0\}$. The singlets are the vacuum and the antisymmetric pair; the doublet is the one-particle space. This is the same $\Lambda S$ of the previous section, now read as a representation.
 
 The same decomposition follows without diagonalising, and the derivation shows why the top power must be a singlet. On $\Lambda^1S=S$ the induced action is the one-particle action, whose Casimir is $j(j+1)=\tfrac34$. On $\Lambda^2S$, which is one-dimensional, the induced action of $J_i$ is the antisymmetrised pair
 
@@ -178,11 +178,11 @@ Three consequences are worth stating.
 
 **The $2\pi$ sign and the grading agree.** The covering element $-e_0$ acts on $\Lambda^nS$ as $(-1)^n$ times the identity, so the nontrivial element of the double cover is precisely the degree parity on the Fock space. Because the one-particle space is odd, the action of $-e_0$ on it is $-\mathrm{id}$; on the vacuum and on the pair it is $+\mathrm{id}$. A $2\pi$ rotation therefore acts as the fermionic parity $(-1)^{\hat N}$ on the state space: the spinors carry the sign $-1$, while the even subspace and every bilinear are returned to themselves, so the sign is invisible in observables and only the $4\pi$ rotation returns a spinor to itself. This is the state-space content of the spin–statistics pairing of the companion article.
 
-**The field's Fock space is a tensor product.** For the field, the one-particle space is $\bigoplus_{\mathbf p,r}S_{\mathbf p,r}$, and the functor gives
+**The field's Fock space is a tensor product.** For the field, the one-particle space is $\bigoplus_{\vec p,r}S_{\vec p,r}$, and the functor gives
 
 $$
-\mathcal{F}_{\text{field}}=\Lambda\!\left(\bigoplus_{\mathbf p,r}S_{\mathbf p,r}\right)
-=\bigotimes_{\mathbf p,r}\Lambda S_{\mathbf p,r},
+\mathcal{F}_{\text{field}}=\Lambda\!\left(\bigoplus_{\vec p,r}S_{\vec p,r}\right)
+=\bigotimes_{\vec p,r}\Lambda S_{\vec p,r},
 $$
 
 with each tensor factor four-dimensional and the vacuum the empty wedge. Occupation numbers are $0$ and $1$ mode by mode; the grading is the parity of the total occupation; and the Lorentz content is the tensor tower generated by the two singlet powers and the doublet power at each momentum.
@@ -273,7 +273,7 @@ $$
 0\oplus\tfrac12\oplus0,
 $$
 
-with $\mathbf{J}^2$ eigenvalues $\{0,\tfrac34,\tfrac34,0\}$ recomputed on the four-dimensional space; the antisymmetric pair is a singlet because $U^{\mathsf T}\varepsilon U=\varepsilon$ for every $U$ of unit determinant — every Lorentz transformation, not only the rotations — with the residual checked exactly on random $SL(2,\mathbb C)$ elements and to $7\times10^{-16}$ on random $SU(2)$ ones. The covering element acts as the degree parity, $\Gamma(-e_0)=(-1)^{\hat N}$, and the identity $\Gamma(-I)=(-1)^{\hat N}$ was recomputed in both constructions. For one mode the parity is the algebra element $(-1)^F=ie_3=2\tilde S_3/\hbar$; for the field it is the product over modes and external to $\mathbb{B}$.
+with $\vec J^2$ eigenvalues $\{0,\tfrac34,\tfrac34,0\}$ recomputed on the four-dimensional space; the antisymmetric pair is a singlet because $U^{\mathsf T}\varepsilon U=\varepsilon$ for every $U$ of unit determinant — every Lorentz transformation, not only the rotations — with the residual checked exactly on random $SL(2,\mathbb C)$ elements and to $7\times10^{-16}$ on random $SU(2)$ ones. The covering element acts as the degree parity, $\Gamma(-e_0)=(-1)^{\hat N}$, and the identity $\Gamma(-I)=(-1)^{\hat N}$ was recomputed in both constructions. For one mode the parity is the algebra element $(-1)^F=ie_3=2\tilde S_3/\hbar$; for the field it is the product over modes and external to $\mathbb{B}$.
 
 The operators generated by the mode operators fill the matrix algebra of the Fock space, $\mathrm{Cl}(2N)\cong M_{2^N}(\mathbb{C})$, verified by rank computation for $N=1$ ($\dim 4$) and $N=2$ ($\dim 16$). States are Hermitian idempotents of $\mathbb{M}_+$, the observables are even, and the Born rule is the trace pairing $\mathrm{Tr}(\tilde P\hat H)=2\,\mathrm{Sc}(\tilde P\hat H)$, checked to machine precision.
 

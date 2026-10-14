@@ -37,14 +37,14 @@ $$
 The measurement operator is the spin projection along $\hat{n}$:
 
 $$
-\hat{n}\cdot\mathbf{S} = \frac{\hbar}{2}\,\hat{n}\cdot\boldsymbol{\sigma} = \frac{\hbar}{2}\begin{pmatrix} \cos\theta & \sin\theta \\ \sin\theta & -\cos\theta \end{pmatrix},
+\hat{n}\cdot\vec S = \frac{\hbar}{2}\,\hat{n}\cdot\boldsymbol{\sigma} = \frac{\hbar}{2}\begin{pmatrix} \cos\theta & \sin\theta \\ \sin\theta & -\cos\theta \end{pmatrix},
 $$
 
 where $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ are the Pauli matrices.
 
 ### Step 3: The eigenstate for the outcome
 
-The eigenvector of $\hat{n}\cdot\mathbf{S}$ with eigenvalue $+\hbar/2$ (equivalently, the $+1$ eigenvector of $\hat{n}\cdot\boldsymbol{\sigma}$), up to a global phase, is
+The eigenvector of $\hat{n}\cdot\vec S$ with eigenvalue $+\hbar/2$ (equivalently, the $+1$ eigenvector of $\hat{n}\cdot\boldsymbol{\sigma}$), up to a global phase, is
 
 $$
 |+n\rangle = \begin{pmatrix} \cos(\theta/2) \\ \sin(\theta/2) \end{pmatrix}.
@@ -167,7 +167,7 @@ The same pattern applies to the calculation of the **expectation value of the sp
 ### Standard formulation
 
 $$
-\langle \hat{n}\cdot\mathbf{S}\rangle_{+z} = \langle +z|\hat{n}\cdot\mathbf{S}|+z\rangle = \frac{\hbar}{2}\cos\theta.
+\langle \hat{n}\cdot\vec S\rangle_{+z} = \langle +z|\hat{n}\cdot\vec S|+z\rangle = \frac{\hbar}{2}\cos\theta.
 $$
 
 ### Biquaternion formulation
@@ -225,7 +225,7 @@ The two formulations agree, as they must. The biquaternion formulation makes exp
 | $i$ | Scalar imaginary, $i^2 = -1$ |
 | $\boldsymbol{\sigma} = (\sigma_1, \sigma_2, \sigma_3)$ | Pauli matrices |
 | $P(\hat{m}) = \tfrac{1}{2}(e_0 + i\hat{m})$ | Pure-state idempotent |
-| $\tilde{H} = h_0 e_0 + i\mathbf{h}$ | Hermitian element (observable) |
+| $\tilde{H} = h_0 e_0 + i\vec h$ | Hermitian element (observable) |
 | $\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$ | Trace of an element of $\mathbb{M}_+$ |
 | $p_+ = \mathrm{Tr}(P_n \circ P_z)$ | Born rule in biquaternion form |
 

@@ -15,10 +15,10 @@ The conventions are those of the companion articles. The biquaternion algebra is
 A spin-$\tfrac{1}{2}$ particle is prepared in the **spin-up state along the $x$-axis**, and is then placed in a uniform magnetic field
 
 $$
-\mathbf{B} = B_0\,\hat{z}
+\vec B = B_0\,\hat{z}
 $$
 
-pointing along the $z$-axis. The magnetic moment of the particle is $\boldsymbol{\mu} = \gamma\mathbf{S}$, where $\gamma$ is the gyromagnetic ratio and $\mathbf{S}$ is the spin operator. What is the **expectation value of the spin along the $x$-axis** as a function of time?
+pointing along the $z$-axis. The magnetic moment of the particle is $\vec\mu = \gamma\vec S$, where $\gamma$ is the gyromagnetic ratio and $\vec S$ is the spin operator. What is the **expectation value of the spin along the $x$-axis** as a function of time?
 
 This is the classic **Larmor precession** exercise. It exercises the Hamiltonian, the evolution operator, and the time-dependent expectation value, in a setting where the answer is a simple harmonic function of time.
 
@@ -34,10 +34,10 @@ $$
 
 ### Step 2: The Hamiltonian
 
-The Hamiltonian of a magnetic moment $\boldsymbol{\mu} = \gamma\mathbf{S}$ in a magnetic field $\mathbf{B} = B_0\hat{z}$ is
+The Hamiltonian of a magnetic moment $\vec\mu = \gamma\vec S$ in a magnetic field $\vec B = B_0\hat{z}$ is
 
 $$
-H = -\boldsymbol{\mu}\cdot\mathbf{B} = -\gamma B_0 S_z = -\frac{\hbar\omega_L}{2}\sigma_3,
+H = -\vec\mu\cdot\vec B = -\gamma B_0 S_z = -\frac{\hbar\omega_L}{2}\sigma_3,
 $$
 
 where
@@ -169,10 +169,10 @@ The spin precesses in the $xy$-plane with angular frequency $\omega_L$, as expec
 
 **3. The state evolves by rotor conjugation.** The evolved state is $\tilde{\rho}(t) = \tilde{U}(t)\tilde{\rho}(0)\tilde{U}(t)^{*}$. This is the standard form of the von Neumann evolution, expressed as a **rotor conjugation** on the algebra. The evolution is automatically unitary: $\tilde{U}\tilde{U}^{*} = e_0$ is preserved by the exponential form.
 
-**4. The precession is a rotation of the Bloch vector.** The evolved state has the form $\tilde{\rho}(t) = \frac{1}{2}(e_0 + i\mathbf{r}(t))$ with
+**4. The precession is a rotation of the Bloch vector.** The evolved state has the form $\tilde{\rho}(t) = \frac{1}{2}(e_0 + i\vec r(t))$ with
 
 $$
-\mathbf{r}(t) = \cos(\omega_L t)\,e_1 - \sin(\omega_L t)\,e_2.
+\vec r(t) = \cos(\omega_L t)\,e_1 - \sin(\omega_L t)\,e_2.
 $$
 
 This is a **unit vector rotating** in the $xy$-plane with angular frequency $\omega_L$. The Bloch vector precesses about the $z$-axis, which is the direction of the magnetic field. The precession is the algebraic content of Larmor precession.

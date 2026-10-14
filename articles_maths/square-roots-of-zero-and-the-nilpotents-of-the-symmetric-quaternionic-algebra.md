@@ -12,7 +12,7 @@ $$
 
 The second is the nilpotents, the elements with $\tilde\Xi^{\star k}=0$ for some $k$. The two subjects meet at the index two case: the roots of $0$ are exactly the square-zero elements, that is the nilpotents of index two, and the nilpotents of the block add one more family, the pure non-isotropic elements, of index three. The roots-of-$0$ part states the reduction, the set and the pointer to the index; the nilpotent part states the powers, the criterion and everything downstream of it. The criterion is proved once, in §*The Criterion and the Index*, and §*The Roots of Zero* cites it.
 
-**The results.** The roots of $0$ are the punctured isotropic cone $\{N=0\}\setminus\{0\}$ of the form $N(\tilde\Xi)=\Xi_0^2+(\mathbf\Xi,\mathbf\Xi)$, of complex dimension three and real dimension six, with the two families of *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*; they are exactly the square-zero elements of the block and exactly the zero divisors of the parent algebra, while the block's own zero-divisor set is the whole punctured space. The powers of an element are central from the square on,
+**The results.** The roots of $0$ are the punctured isotropic cone $\{N=0\}\setminus\{0\}$ of the form $N(\tilde\Xi)=\Xi_0^2+(\vec\Xi,\vec\Xi)$, of complex dimension three and real dimension six, with the two families of *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*; they are exactly the square-zero elements of the block and exactly the zero divisors of the parent algebra, while the block's own zero-divisor set is the whole punctured space. The powers of an element are central from the square on,
 
 $$
 \tilde\Upsilon^{\star k}=N(\tilde\Upsilon)\,\Upsilon_0^{\,k-2}\,e_0\qquad(k\geq2),
@@ -22,10 +22,10 @@ so an element is nilpotent exactly when it is isotropic, $N=0$, or pure, $\Upsil
 
 The article is algebraic. It does not treat the roots of $+1$ and the idempotents, which are *Square Roots of One and the Idempotents of the Symmetric Quaternionic Algebra*; the roots of a general element, which are *Square Roots of a General Element in the Symmetric Quaternionic Algebra*; the isotropic cone and its two families, which are *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*; the structure of the zero-divisor set, which is *Zero Divisors of the Symmetric Quaternionic Algebra*; or the square-zero sets of the four general products, which are *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and *Comparison Between the Four General Products*.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$, and central scalar imaginary $i$, $i^2=-1$. A general element is $\tilde\Upsilon=\Upsilon_0e_0+\mathbf\Upsilon$ with $\Upsilon_\mu\in\mathbb{C}$ and $\mathbf\Upsilon=\Upsilon_1e_1+\Upsilon_2e_2+\Upsilon_3e_3$, and $(\mathbf P,\mathbf Q)=\sum_{k=1}^{3}P_kQ_k$ may vanish without $\mathbf\Upsilon$ vanishing. The **symmetric quaternionic multiplication** is
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$, and central scalar imaginary $i$, $i^2=-1$. A general element is $\tilde\Upsilon=\Upsilon_0e_0+\vec\Upsilon$ with $\Upsilon_\mu\in\mathbb{C}$ and $\vec\Upsilon=\Upsilon_1e_1+\Upsilon_2e_2+\Upsilon_3e_3$, and $(\vec P,\vec Q)=\sum_{k=1}^{3}P_kQ_k$ may vanish without $\vec\Upsilon$ vanishing. The **symmetric quaternionic multiplication** is
 
 $$
-\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0,\qquad N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q),
+\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0,\qquad N(\tilde P,\tilde Q)=P_0Q_0+(\vec P,\vec Q),
 $$
 
 and its diagonal is $N(\tilde\Upsilon)=N(\tilde\Upsilon,\tilde\Upsilon)=\sum_{\mu=0}^{3}\Upsilon_\mu^2$; the operation is also written $\bullet$. The centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ and the vector subspace is $\mathrm{Vect}(\mathbb{B})=\mathbb{C}e_1+\mathbb{C}e_2+\mathbb{C}e_3$. A root of a central value is written $\tilde\Xi$, a nilpotent $\tilde\Upsilon$ (§*The Nilpotent Convention* of *Conventions in Mathematics*), and a generic element $\tilde P$.
@@ -34,18 +34,18 @@ The equations name a product, so the roots and the nilpotents are relative to it
 
 ## The Roots of Zero
 
-**The roots of $0$ are exactly the elements with $N(\tilde\Xi)=\Xi_0^2+(\mathbf\Xi,\mathbf\Xi)=0$ and $\tilde\Xi\neq0$: the punctured isotropic cone of the form, of complex dimension three and real dimension six, whose elements are exactly the square-zero elements of the block and the zero divisors of the parent algebra.**
+**The roots of $0$ are exactly the elements with $N(\tilde\Xi)=\Xi_0^2+(\vec\Xi,\vec\Xi)=0$ and $\tilde\Xi\neq0$: the punctured isotropic cone of the form, of complex dimension three and real dimension six, whose elements are exactly the square-zero elements of the block and the zero divisors of the parent algebra.**
 
 A **root of $0$** is a nonzero element $\tilde\Xi\in\mathbb{B}$ with $\tilde\Xi\star\tilde\Xi=0$, the square being the one of the symmetric quaternionic product.
 
 ### The Reduction
 
-**The reduction of the square of the block, $\tilde\Xi\star\tilde\Xi=N(\tilde\Xi)e_0$, gives for the value $0$ the single scalar equation $N(\tilde\Xi)=\Xi_0^2+(\mathbf\Xi,\mathbf\Xi)=0$, so the root set of $0$ is the level set $N=0$ minus the origin: the isotropic cone of the form, the only level that is invariant under every scaling.**
+**The reduction of the square of the block, $\tilde\Xi\star\tilde\Xi=N(\tilde\Xi)e_0$, gives for the value $0$ the single scalar equation $N(\tilde\Xi)=\Xi_0^2+(\vec\Xi,\vec\Xi)=0$, so the root set of $0$ is the level set $N=0$ minus the origin: the isotropic cone of the form, the only level that is invariant under every scaling.**
 
 **Theorem (the roots of zero).** The roots of $0$ are exactly the elements with
 
 $$
-N(\tilde\Xi)=\Xi_0^2+(\mathbf\Xi,\mathbf\Xi)=0,\qquad \tilde\Xi\neq0 .
+N(\tilde\Xi)=\Xi_0^2+(\vec\Xi,\vec\Xi)=0,\qquad \tilde\Xi\neq0 .
 $$
 
 *Proof.* The square is $N(\tilde\Xi)e_0$ by the definition of the product, and it vanishes exactly when $N(\tilde\Xi)=0$; the value $\tilde\Xi=0$ is excluded by the definition of a root, which is a nonzero element. The reduction and the behaviour of the level sets under the conjugations and the scalings are *Square Roots of One and the Idempotents of the Symmetric Quaternionic Algebra* §*The Reduction* and §*The Three Level Sets*.
@@ -222,7 +222,7 @@ In the symmetric quaternionic block the square is always central, $\tilde\Xi\sta
 | symbol | meaning |
 |---|---|
 | $\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0$ | the symmetric quaternionic multiplication |
-| $N(\tilde Q)=\sum_\mu Q_\mu^2=\Xi_0^2+(\mathbf\Xi,\mathbf\Xi)$ | the form at the two equal arguments |
+| $N(\tilde Q)=\sum_\mu Q_\mu^2=\Xi_0^2+(\vec\Xi,\vec\Xi)$ | the form at the two equal arguments |
 | $\{N=0\}\setminus\{0\}$ | the roots of $0$, the square-zero elements, the nilpotents of index two |
 | $\tilde\Upsilon^{\star k}=N\Upsilon_0^{k-2}e_0$ | the $k$-th power, $k\geq2$ |
 | $N=0$ | the square-zero family, index two, the isotropic cone |

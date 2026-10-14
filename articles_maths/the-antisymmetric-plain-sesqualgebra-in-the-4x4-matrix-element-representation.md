@@ -48,24 +48,24 @@ the **traceless part** of the conjugate-transposed product of the regular matric
 
 *Proof.* $\mathsf{M}_4(\tilde P\tilde Q^{*})=\mathsf{M}_4(\tilde P)\mathsf{M}_4(\tilde Q)^{\dagger}$ by the $*$-representation property, and the vector part is the traceless part.
 
-**Theorem (the invariants in the regular model).** For every value $\tilde V$ of the block,
+**Theorem (the invariants in the regular model).** For every value $\tilde S$ of the block,
 
 $$
-\operatorname{Tr}\mathsf{M}_4(\tilde V)=0,
+\operatorname{Tr}\mathsf{M}_4(\tilde S)=0,
 \qquad
-\det\mathsf{M}_4(\tilde V)=N(\tilde V)^{2},
+\det\mathsf{M}_4(\tilde S)=N(\tilde S)^{2},
 \qquad
-\operatorname{rank}\mathsf{M}_4(\tilde V)=
+\operatorname{rank}\mathsf{M}_4(\tilde S)=
 \begin{cases}
-4, & N(\tilde V)\neq0,\\
-2, & N(\tilde V)=0,\ \tilde V\neq0,\\
-0, & \tilde V=0.
+4, & N(\tilde S)\neq0,\\
+2, & N(\tilde S)=0,\ \tilde S\neq0,\\
+0, & \tilde S=0.
 \end{cases}
 $$
 
-*Proof.* The trace vanishes because $\operatorname{Tr}\mathsf{M}_4(\tilde X)=4\mathrm{Sc}(\tilde X)$ and the value is a pure vector; the determinant is $N(\tilde X)^2$ for every $\tilde X$, by the invariants of the model. For the rank, $\det\mathsf{M}_4(\tilde V)=N(\tilde V)^2$, so the regular matrix is invertible exactly when $N(\tilde V)\neq0$; for $N(\tilde V)=0$ and $\tilde V\neq0$ the left regular representation of a central simple algebra has rank a multiple of the degree two, and the value is a zero divisor, so the rank is two.
+*Proof.* The trace vanishes because $\operatorname{Tr}\mathsf{M}_4(\tilde X)=4\mathrm{Sc}(\tilde X)$ and the value is a pure vector; the determinant is $N(\tilde X)^2$ for every $\tilde X$, by the invariants of the model. For the rank, $\det\mathsf{M}_4(\tilde S)=N(\tilde S)^2$, so the regular matrix is invertible exactly when $N(\tilde S)\neq0$; for $N(\tilde S)=0$ and $\tilde S\neq0$ the left regular representation of a central simple algebra has rank a multiple of the degree two, and the value is a zero divisor, so the rank is two.
 
-**Remark (the image and the rank in the regular model).** The image of the block in the regular model is the image of the vector subspace under $\mathsf{M}_4$, of complex dimension three: the value $\tilde V=e_0\diamond\tilde R=\mathbf R$ has regular matrix $\mathsf{M}_4(\mathbf R)$ of rank four whenever $N(\mathbf R)\neq0$, so the image meets the invertible matrices, while a zero divisor $\mathbf R$ has rank two. The $2\times2$ model reads the same image by the traceless matrices, again of complex dimension three, and the two models have the same rank pattern on the values through the factor two, $\operatorname{rank}\mathsf{M}_4=2\operatorname{rank}\mathsf{M}_2$ on the values, which is the ratio of the sizes of the two matrix algebras.
+**Remark (the image and the rank in the regular model).** The image of the block in the regular model is the image of the vector subspace under $\mathsf{M}_4$, of complex dimension three: the value $\tilde S=e_0\diamond\tilde R=\vec R$ has regular matrix $\mathsf{M}_4(\vec R)$ of rank four whenever $N(\vec R)\neq0$, so the image meets the invertible matrices, while a zero divisor $\vec R$ has rank two. The $2\times2$ model reads the same image by the traceless matrices, again of complex dimension three, and the two models have the same rank pattern on the values through the factor two, $\operatorname{rank}\mathsf{M}_4=2\operatorname{rank}\mathsf{M}_2$ on the values, which is the ratio of the sizes of the two matrix algebras.
 
 **Remark (the two-sided antisymmetrised operator).** The regular model also carries the **two-sided** antisymmetrisation
 
@@ -147,7 +147,7 @@ which is $e_0\diamond e_1=-e_1$; the regular matrix is traceless, of rank four s
 
 ## Summary
 
-In the $4\times4$ model the block is the traceless part of the conjugate-transposed product, $\mathsf{M}_4(\tilde P\diamond\tilde Q)=M-\tfrac14\operatorname{Tr}(M)I$ with $M=\mathsf{M}_4(\tilde P)\mathsf{M}_4(\tilde Q)^{\dagger}$, with trace zero and determinant $N(\tilde V)^2$, and rank four, two or zero according as $N\neq0$, $N=0$ with $\tilde V\neq0$, or $\tilde V=0$; the image is the image of the vector subspace under the regular representation, of complex dimension three. The form is the Hilbert–Schmidt pairing, $\tfrac14\operatorname{Tr}$ in the regular model, and the unique invariant form is the scalar-slot form $X_0\overline{Y_0}=\tfrac1{16}\operatorname{Tr}\mathsf{M}_4(\tilde X)\overline{\operatorname{Tr}\mathsf{M}_4(\tilde Y)}$, degenerate on every value. The two-sided antisymmetrised operator $\tfrac12\bigl(\mathsf{M}_4(\tilde P)\mathsf{M}_4^{R}(\tilde Q^{*})-\mathsf{M}_4(\tilde Q)\mathsf{M}_4^{R}(\tilde P^{*})\bigr)$ is a different object: it is alternating, with trace $4i\,\mathrm{Im}(P_0\overline{Q_0})$ and generic rank four. The positive definite form $H$ vanishes only on the zero value, while the determinant vanishes on the whole isotropic cone, with $e_1+ie_2$ a nonzero value of rank two.
+In the $4\times4$ model the block is the traceless part of the conjugate-transposed product, $\mathsf{M}_4(\tilde P\diamond\tilde Q)=M-\tfrac14\operatorname{Tr}(M)I$ with $M=\mathsf{M}_4(\tilde P)\mathsf{M}_4(\tilde Q)^{\dagger}$, with trace zero and determinant $N(\tilde S)^2$, and rank four, two or zero according as $N\neq0$, $N=0$ with $\tilde S\neq0$, or $\tilde S=0$; the image is the image of the vector subspace under the regular representation, of complex dimension three. The form is the Hilbert–Schmidt pairing, $\tfrac14\operatorname{Tr}$ in the regular model, and the unique invariant form is the scalar-slot form $X_0\overline{Y_0}=\tfrac1{16}\operatorname{Tr}\mathsf{M}_4(\tilde X)\overline{\operatorname{Tr}\mathsf{M}_4(\tilde Y)}$, degenerate on every value. The two-sided antisymmetrised operator $\tfrac12\bigl(\mathsf{M}_4(\tilde P)\mathsf{M}_4^{R}(\tilde Q^{*})-\mathsf{M}_4(\tilde Q)\mathsf{M}_4^{R}(\tilde P^{*})\bigr)$ is a different object: it is alternating, with trace $4i\,\mathrm{Im}(P_0\overline{Q_0})$ and generic rank four. The positive definite form $H$ vanishes only on the zero value, while the determinant vanishes on the whole isotropic cone, with $e_1+ie_2$ a nonzero value of rank two.
 
 ## Summary of Notation
 

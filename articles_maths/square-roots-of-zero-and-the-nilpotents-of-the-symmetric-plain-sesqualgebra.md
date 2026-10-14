@@ -10,7 +10,7 @@ The reduction is the one of *Square Roots of One and the Idempotents of the Symm
 
 **Boundaries.** The product, its class and its placement are *Introduction to the Symmetric Plain Sesqualgebra of Biquaternions*; the relative definition of the nilpotent, of the index and of the square-zero element, and the bracketing of the powers, are *Definitions for the Study of the 12 Algebraic Structures*, and the root is defined there too. The nilpotents of the parent and their identification with the pure family of the zero divisors are *Nilpotents of the General Plain Algebra* and *Zero Divisors of the General Plain Algebra*; the square-zero sets of the four general products are *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and *Comparison Between the Four General Products*. The idempotents of the block are *Square Roots of One and the Idempotents of the Symmetric Plain Sesqualgebra*. The model used here is *The Symmetric Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*. Nothing topological and nothing metric appears.
 
-**Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with central scalar imaginary $i$. A general element is $\tilde{Q} = \sum_{\mu=0}^{3}Q_\mu e_\mu = Q_0e_0 + \mathbf Q$ with $Q_0\in\mathbb{C}$ and $\mathbf Q = \sum_{k=1}^{3}Q_ke_k$; the natural conjugation is $\tilde{Q}^{\natural} = \sum_\mu\varepsilon_\mu Q_\mu e_\mu$ with $\varepsilon = (1,-1,-1,-1)$, the coefficientwise conjugation is $\overline{\tilde{Q}} = \sum_\mu\overline{Q_\mu}e_\mu$, and the Hermitian conjugation is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$. The product of the block is
+**Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with central scalar imaginary $i$. A general element is $\tilde{Q} = \sum_{\mu=0}^{3}Q_\mu e_\mu = Q_0e_0 + \vec Q$ with $Q_0\in\mathbb{C}$ and $\vec Q = \sum_{k=1}^{3}Q_ke_k$; the natural conjugation is $\tilde{Q}^{\natural} = \sum_\mu\varepsilon_\mu Q_\mu e_\mu$ with $\varepsilon = (1,-1,-1,-1)$, the coefficientwise conjugation is $\overline{\tilde{Q}} = \sum_\mu\overline{Q_\mu}e_\mu$, and the Hermitian conjugation is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$. The product of the block is
 
 $$
 \tilde P\star\tilde Q = H(\tilde P,\tilde Q)e_0, \qquad H(\tilde P,\tilde Q) = \sum_{\mu=0}^{3}P_\mu\overline{Q_\mu},
@@ -50,7 +50,7 @@ and the right-nested reading is a different expression. For the block the two re
 
 **The left-nested and the right-nested cubes are $(P\star P)\star P = H(P)\overline{P_0}e_0$ and $P\star(P\star P) = H(P)P_0e_0$, central and conjugate, and both vanish exactly when the scalar coordinate $P_0$ vanishes or $P = 0$.**
 
-**Theorem (the cube).** For every $\tilde P = P_0e_0 + \mathbf P$,
+**Theorem (the cube).** For every $\tilde P = P_0e_0 + \vec P$,
 
 $$
 (\tilde P\star\tilde P)\star\tilde P = H(\tilde P)\,\overline{P_0}\,e_0, \qquad \tilde P\star(\tilde P\star\tilde P) = H(\tilde P)\,P_0\,e_0,
@@ -69,12 +69,12 @@ so the left-nested and the right-nested cubes vanish together, exactly when $P_0
 **Theorem (the classification).** An element $\tilde\Upsilon$ is nilpotent of the block if and only if its scalar coordinate vanishes,
 
 $$
-\tilde\Upsilon\in\mathrm{Vect}(\mathbb{B}) = \{\tilde P = P_0e_0 + \mathbf P : P_0 = 0\},
+\tilde\Upsilon\in\mathrm{Vect}(\mathbb{B}) = \{\tilde P = P_0e_0 + \vec P : P_0 = 0\},
 $$
 
 the vector subspace of complex dimension three. Every nonzero nilpotent has index three, and the block has no nilpotent of index four or more.
 
-*Proof.* Let $\tilde P = P_0e_0 + \mathbf P$. If $P_0 = 0$ then $(\tilde P\star\tilde P)\star\tilde P = H(\tilde P)\overline{P_0}e_0 = 0$ by the cube, while $\tilde P\star\tilde P = H(\tilde P)e_0$ is nonzero as soon as $\tilde P\neq0$, so the index is exactly three. If $P_0\neq0$, then the powers are
+*Proof.* Let $\tilde P = P_0e_0 + \vec P$. If $P_0 = 0$ then $(\tilde P\star\tilde P)\star\tilde P = H(\tilde P)\overline{P_0}e_0 = 0$ by the cube, while $\tilde P\star\tilde P = H(\tilde P)e_0$ is nonzero as soon as $\tilde P\neq0$, so the index is exactly three. If $P_0\neq0$, then the powers are
 
 $$
 \tilde P^{\star k} = H(\tilde P)\,\overline{P_0}^{\,k-2}\,e_0 \qquad (k\geq2),

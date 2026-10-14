@@ -6,7 +6,7 @@ The symmetric plain algebra of $\mathbb{B}$ carries the product $\tilde P\bullet
 
 The transport is short because the symmetrisation of the plain product becomes the symmetrisation of the matrix product: the plain product is the matrix product, so the block's product is the half-sum of a matrix and its exchanged product. What the model adds is the matrix reading of every notion at once — the square as an ordinary matrix square, the quadratic identity as the Cayley–Hamilton identity, the idempotents as ordinary projectors, the isotropic cone as the singular matrices, the elements of square zero as the nilpotent matrices, the trace form as a scaled matrix trace — and the matrix list of the idempotents and of the non-isotropic elements.
 
-**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$ and central scalar imaginary $i$; an element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; the generic norm is $N(\tilde Q)=\sum_\mu Q_\mu^2$ and the trace form is $\tau(\tilde P,\tilde Q)=P_0Q_0-(\mathbf{P},\mathbf{Q})$. The $2\times2$ realization is $\mathsf{M}_2(e_0)=I$ and $\mathsf{M}_2(e_k)=-i\sigma_k$ with the Pauli matrices $\sigma_k$, an isomorphism of algebras with $\operatorname{Tr}\mathsf{M}_2(\tilde Q)=2Q_0$, $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$ and $\mathsf{M}_2(\tilde Q^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde Q)$.
+**Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$ and central scalar imaginary $i$; an element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$; the generic norm is $N(\tilde Q)=\sum_\mu Q_\mu^2$ and the trace form is $\tau(\tilde P,\tilde Q)=P_0Q_0-(\vec P,\vec Q)$. The $2\times2$ realization is $\mathsf{M}_2(e_0)=I$ and $\mathsf{M}_2(e_k)=-i\sigma_k$ with the Pauli matrices $\sigma_k$, an isomorphism of algebras with $\operatorname{Tr}\mathsf{M}_2(\tilde Q)=2Q_0$, $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$ and $\mathsf{M}_2(\tilde Q^{\natural})=\operatorname{adj}\mathsf{M}_2(\tilde Q)$.
 
 ## The Symmetrisation of the Matrix Product
 
@@ -62,10 +62,10 @@ $$
 
 *Proof.* $\mathsf{M}_2(\tilde\Xi)^2=\mathsf{M}_2(\tilde\Xi^2)=\mathsf{M}_2(e_0)=I$, so $J^2=I$; hence $\mathsf{M}_2(\tilde\Pi)^2=\tfrac14(I+J)^2=\tfrac14(2I+2J)=\tfrac12(I+J)=\mathsf{M}_2(\tilde\Pi)$, so the image is idempotent with eigenvalues $1,0$, that is a projector of rank one, of trace $\operatorname{Tr}\mathsf{M}_2(\tilde\Pi)=2\Pi_0=1$.
 
-**Theorem (the Hermitian idempotents).** The Hermitian idempotents have **Hermitian projectors** as their matrices: for a unit real vector $\hat\mu$ in $\mathbb{R}^3$,
+**Theorem (the Hermitian idempotents).** The Hermitian idempotents have **Hermitian projectors** as their matrices: for a unit real vector $\hat n$ in $\mathbb{R}^3$,
 
 $$
-\mathsf{M}_2\bigl(\tfrac12(e_0+i\hat\mu)\bigr)=\tfrac12\bigl(I+i\mathsf{M}_2(\hat\mu)\bigr)
+\mathsf{M}_2\bigl(\tfrac12(e_0+\tilde\Xi)\bigr)=\tfrac12\bigl(I+i\mathsf{M}_2(\hat n)\bigr)
 $$
 
 is a self-adjoint projector of the model, of kernel the complementary minimal left ideal.
@@ -123,17 +123,17 @@ $$
 \det\bigl(L^{\bullet}_{\tilde A}\bigr)=A_0^2N(\tilde A),
 $$
 
-and the operator trace is $\operatorname{Tr}(L^{\bullet}_{\tilde P}L^{\bullet}_{\tilde Q})=4P_0Q_0-2(\mathbf{P},\mathbf{Q})$ in the coefficient basis.
+and the operator trace is $\operatorname{Tr}(L^{\bullet}_{\tilde P}L^{\bullet}_{\tilde Q})=4P_0Q_0-2(\vec P,\vec Q)$ in the coefficient basis.
 
-*Proof.* The operator is the sum of the two maps $M\mapsto\tfrac12\mathsf{M}_2(\tilde A)M$ and $M\mapsto\tfrac12 M\mathsf{M}_2(\tilde A)$. On $M_2(\mathbb{C})$ the map $M\mapsto AM$ has trace $2\operatorname{Tr}A$, so each half has trace $\operatorname{Tr}\mathsf{M}_2(\tilde A)=2A_0$ and the sum has trace $4A_0$; the determinant $A_0^2N(\tilde A)$ is that of *The Multiplication Operators of the Symmetric Plain Algebra* and the operator trace $\operatorname{Tr}(L^{\bullet}_{\tilde P}L^{\bullet}_{\tilde Q})=4P_0Q_0-2(\mathbf{P},\mathbf{Q})$ that of *The Trace Form and the Invariance of the Symmetric Plain Algebra*, both recomputed in the model.
+*Proof.* The operator is the sum of the two maps $M\mapsto\tfrac12\mathsf{M}_2(\tilde A)M$ and $M\mapsto\tfrac12 M\mathsf{M}_2(\tilde A)$. On $M_2(\mathbb{C})$ the map $M\mapsto AM$ has trace $2\operatorname{Tr}A$, so each half has trace $\operatorname{Tr}\mathsf{M}_2(\tilde A)=2A_0$ and the sum has trace $4A_0$; the determinant $A_0^2N(\tilde A)$ is that of *The Multiplication Operators of the Symmetric Plain Algebra* and the operator trace $\operatorname{Tr}(L^{\bullet}_{\tilde P}L^{\bullet}_{\tilde Q})=4P_0Q_0-2(\vec P,\vec Q)$ that of *The Trace Form and the Invariance of the Symmetric Plain Algebra*, both recomputed in the model.
 
 **Remark (the two operators and the two traces).** The multiplication operator of the block is the **average of the two one-sided matrix multiplications**, and the trace of that average is the trace of the matrix and not twice it; the operator trace is
 
 $$
-\operatorname{Tr}\bigl(L^{\bullet}_{\tilde P}L^{\bullet}_{\tilde Q}\bigr)=4P_0Q_0-2(\mathbf{P},\mathbf{Q})=2\tau(\tilde P,\tilde Q)+\tfrac12T(\tilde P)T(\tilde Q),
+\operatorname{Tr}\bigl(L^{\bullet}_{\tilde P}L^{\bullet}_{\tilde Q}\bigr)=4P_0Q_0-2(\vec P,\vec Q)=2\tau(\tilde P,\tilde Q)+\tfrac12T(\tilde P)T(\tilde Q),
 $$
 
-which is not a multiple of the trace form $\tau(\tilde P,\tilde Q)=P_0Q_0-(\mathbf{P},\mathbf{Q})$, since the two coefficient pairs $(4,-2)$ and $(1,-1)$ are not proportional. **The operator trace is not the trace form**, and it agrees with the trace of the product of the two plain operators, $\operatorname{Tr}(L_{\tilde P}L_{\tilde Q})=4\tau(\tilde P,\tilde Q)$, exactly when $(\mathbf{P},\mathbf{Q})=0$; the two differ at $\tilde P=\tilde Q=e_1$, where the operator trace is $-2$ against $4\tau=-4$. **The model carries the operators to the symmetrised matrix multiplications and the trace form to the half trace of the matrix square**, and the transport agrees with the coordinate computation.
+which is not a multiple of the trace form $\tau(\tilde P,\tilde Q)=P_0Q_0-(\vec P,\vec Q)$, since the two coefficient pairs $(4,-2)$ and $(1,-1)$ are not proportional. **The operator trace is not the trace form**, and it agrees with the trace of the product of the two plain operators, $\operatorname{Tr}(L_{\tilde P}L_{\tilde Q})=4\tau(\tilde P,\tilde Q)$, exactly when $(\vec P,\vec Q)=0$; the two differ at $\tilde P=\tilde Q=e_1$, where the operator trace is $-2$ against $4\tau=-4$. **The model carries the operators to the symmetrised matrix multiplications and the trace form to the half trace of the matrix square**, and the transport agrees with the coordinate computation.
 
 ## The Derivations and the Automorphisms
 

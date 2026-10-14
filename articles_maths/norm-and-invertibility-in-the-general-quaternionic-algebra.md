@@ -8,7 +8,7 @@ A norm is relative to a product, and the algebraic norm of a product is the diag
 
 The inverse is where the two products separate. The definition of an inverse, stated once in *Definitions for the Study of the 12 Algebraic Structures*, §*The Unit and the Inverse*, presupposes a product with a **two-sided unit**, and the general quaternionic product has a **left unit** alone. The consequence is stated and not filled: no element of $\mathbb{B}$ is invertible of $\star$, the product has no group of units of its own, and the word has no reading for it. What survives is the pair of one-sided inverse equations relative to the left unit $e_0$, and the article computes them: the two have the same unique solution, $(\tilde P^{-1})^{\natural}$, exactly when the norm is non-zero, and neither has a solution when the norm vanishes. The criterion is therefore the algebraic norm of this product, and it is not the algebraic norm of the plain product; the two products do not share their algebraic norms.
 
-**The results.** The general quaternionic product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ has a central square, $\tilde Q\star\tilde Q=N(\tilde Q)e_0$ with $N(\tilde Q)=\sum_\mu Q_\mu^2=Q_0^2+(\mathbf Q,\mathbf Q)$, and $N$ is multiplicative, $N(\tilde P\star\tilde Q)=N(\tilde P)N(\tilde Q)$. The product has the left unit $e_0$ and no right unit, hence no two-sided unit, so **no element is invertible of $\star$** and the product has **no group of units**; what survives is the pair of one-sided equations $\tilde P\star\tilde X=e_0$ and $\tilde X\star\tilde P=e_0$, soluble exactly when $N(\tilde P)\neq0$ with the common unique solution $(\tilde P^{-1})^{\natural}=\tilde P/N(\tilde P)$, and insoluble when $N(\tilde P)=0$. The criterion is therefore the algebraic norm: a nonzero $\tilde P$ is a zero divisor exactly when $N(\tilde P)=0$, and the elements of non-vanishing norm form the plain group of units $\mathbb{B}^{\times}=\{N\neq0\}$, stable under $\star$ but not a group under it. Each section below states its result first and then proves it.
+**The results.** The general quaternionic product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ has a central square, $\tilde Q\star\tilde Q=N(\tilde Q)e_0$ with $N(\tilde Q)=\sum_\mu Q_\mu^2=Q_0^2+(\vec Q,\vec Q)$, and $N$ is multiplicative, $N(\tilde P\star\tilde Q)=N(\tilde P)N(\tilde Q)$. The product has the left unit $e_0$ and no right unit, hence no two-sided unit, so **no element is invertible of $\star$** and the product has **no group of units**; what survives is the pair of one-sided equations $\tilde P\star\tilde X=e_0$ and $\tilde X\star\tilde P=e_0$, soluble exactly when $N(\tilde P)\neq0$ with the common unique solution $(\tilde P^{-1})^{\natural}=\tilde P/N(\tilde P)$, and insoluble when $N(\tilde P)=0$. The criterion is therefore the algebraic norm: a nonzero $\tilde P$ is a zero divisor exactly when $N(\tilde P)=0$, and the elements of non-vanishing norm form the plain group of units $\mathbb{B}^{\times}=\{N\neq0\}$, stable under $\star$ but not a group under it. Each section below states its result first and then proves it.
 
 **Boundaries.** The algebraic norm of the plain product is $B(\tilde Q)=\sum_\mu\varepsilon_\mu Q_\mu^{2}$, a different form, and its theory is *Norm and Invertibility in the General Plain Algebra*; the algebraic norm $N$ is the one of this product, and the criterion $N\neq0$ is proved here. The zero divisors are *Zero Divisors of the General Quaternionic Algebra*, where the set $\{N=0\}\setminus\{0\}$ is characterised as a set; the one-sided inverse equations of the four general products side by side, and the tabulation of their solutions, are *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The One-Sided Inverse Equations*, whose table is quoted and not restated. The product and its element theory are *Introduction to the General Quaternionic Algebra of Biquaternions*; the left multiplications and the monoid they form are *The Left Multiplications of the Quaternionic Product and the Opposite Monoid*; and the signatures of the norm on the remarkable subspaces are *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions*. The Hermitian form $\tilde Q\tilde Q^{*}$ is a different object, of the informational sector, whose positivity is *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint* and whose scalar part carries the Euclidean norm of *The Euclidean Topology of the Biquaternion Algebra*; the polar scale $r$ as a physical reading is *The Polar Element Representation of Biquaternions* and *The Four Readings of a Biquaternion: Norm, Rank, Charge and Scale*.
 
@@ -18,11 +18,11 @@ $$
 \tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q ,
 $$
 
-with $\natural$ the natural conjugation $\tilde Q^{\natural}=Q_0-\mathbf Q$ and $\mathbf Q=\sum_{k=1}^{3}Q_ke_k$ the vector part. An element is $\tilde Q=Q_0e_0+\mathbf Q$, and $(\mathbf P,\mathbf Q)=\sum_kP_kQ_k$ is the complex bilinear form of the vector parts.
+with $\natural$ the natural conjugation $\tilde Q^{\natural}=Q_0-\vec Q$ and $\vec Q=\sum_{k=1}^{3}Q_ke_k$ the vector part. An element is $\tilde Q=Q_0e_0+\vec Q$, and $(\vec P,\vec Q)=\sum_kP_kQ_k$ is the complex bilinear form of the vector parts.
 
 ## The Algebraic Norm of the Product
 
-**The general quaternionic product carries exactly one algebraic norm, the scalar of its central square, $N(\tilde Q)=\sum_\mu Q_\mu^2=Q_0^2+(\mathbf Q,\mathbf Q)$; its polar form is the scalar coefficient $N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$ of the symmetrised product, and it is multiplicative, $N(\tilde P\star\tilde Q)=N(\tilde P)N(\tilde Q)$.**
+**The general quaternionic product carries exactly one algebraic norm, the scalar of its central square, $N(\tilde Q)=\sum_\mu Q_\mu^2=Q_0^2+(\vec Q,\vec Q)$; its polar form is the scalar coefficient $N(\tilde P,\tilde Q)=P_0Q_0+(\vec P,\vec Q)$ of the symmetrised product, and it is multiplicative, $N(\tilde P\star\tilde Q)=N(\tilde P)N(\tilde Q)$.**
 
 ### Definition
 
@@ -39,10 +39,10 @@ Throughout this article the product is the general quaternionic bilinear product
 **Proposition.** For every $\tilde Q\in\mathbb{B}$,
 
 $$
-\tilde Q\star\tilde Q=\tilde Q^{\natural}\tilde Q=N(\tilde Q)\,e_0 , \qquad N(\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^2=Q_0^2+(\mathbf Q,\mathbf Q) .
+\tilde Q\star\tilde Q=\tilde Q^{\natural}\tilde Q=N(\tilde Q)\,e_0 , \qquad N(\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^2=Q_0^2+(\vec Q,\vec Q) .
 $$
 
-**Proof.** The first display is the definition of the product at equal arguments; the scalar–vector form of *Introduction to the General Quaternionic Algebra of Biquaternions* gives $\tilde Q^{\natural}\tilde Q=(Q_0-\mathbf Q)(Q_0+\mathbf Q)=Q_0^2-\mathbf Q^2$, and $\mathbf Q^2=-(\mathbf Q,\mathbf Q)$ for a vector part. The same scalar is produced in the two orders, $\tilde Q^{\natural}\tilde Q=\tilde Q\tilde Q^{\natural}$, because the computation read the other way, $(Q_0+\mathbf Q)(Q_0-\mathbf Q)=Q_0^2-\mathbf Q^2$, gives the same value.
+**Proof.** The first display is the definition of the product at equal arguments; the scalar–vector form of *Introduction to the General Quaternionic Algebra of Biquaternions* gives $\tilde Q^{\natural}\tilde Q=(Q_0-\vec Q)(Q_0+\vec Q)=Q_0^2-\vec Q^2$, and $\vec Q^2=-(\vec Q,\vec Q)$ for a vector part. The same scalar is produced in the two orders, $\tilde Q^{\natural}\tilde Q=\tilde Q\tilde Q^{\natural}$, because the computation read the other way, $(Q_0+\vec Q)(Q_0-\vec Q)=Q_0^2-\vec Q^2$, gives the same value.
 
 The algebraic norm is therefore an element of $\mathbb{C}$ and not a length: it is the value of a quadratic form on the complex space $\mathbb{B}$, and its vanishing set is a cone and not a sphere.
 
@@ -51,7 +51,7 @@ The algebraic norm is therefore an element of $\mathbb{C}$ and not a length: it 
 **Proposition.** The polar form of the algebraic norm is the scalar coefficient of the symmetrised product. Writing
 
 $$
-N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q) ,
+N(\tilde P,\tilde Q)=P_0Q_0+(\vec P,\vec Q) ,
 $$
 
 one has
@@ -281,7 +281,7 @@ The algebraic norm is the quadratic form of the algebra, so its restriction to t
 
 **Corollary.** Every nonzero element of the quaternion subspace and of the anti-quaternion subspace is a unit of the plain product and satisfies both one-sided equations of $\star$. The other four subspaces contain nonzero elements of algebraic norm zero; on those the criterion fails and neither one-sided equation is soluble, and they are zero divisors of the algebra.
 
-**Proof.** The algebraic norm is definite on the quaternion and the anti-quaternion subspaces and indefinite on the other four, by the table; the criterion of §*The Criterion* converts the values into the two statements. On a pure element the algebraic norm is $(\mathbf P,\mathbf P)$ and on a Hermitian element it is $|a_0|^2-|\mathbf b|^2$ in the coordinates of the subspace, so every zero of the algebraic norm in $\mathbb{M}_{+}$ or in $\mathbb{M}_{-}$ has non-zero scalar part, that is, is non-pure.
+**Proof.** The algebraic norm is definite on the quaternion and the anti-quaternion subspaces and indefinite on the other four, by the table; the criterion of §*The Criterion* converts the values into the two statements. On a pure element the algebraic norm is $(\vec P,\vec P)$ and on a Hermitian element it is $|a_0|^2-|\vec b|^2$ in the coordinates of the subspace, so every zero of the algebraic norm in $\mathbb{M}_{+}$ or in $\mathbb{M}_{-}$ has non-zero scalar part, that is, is non-pure.
 
 **Remark (a mixed real form of signature $(2,2)$).** Beyond the remarkable subspaces the geometry uses one mixed real subspace, the **split form**
 
@@ -293,7 +293,7 @@ of real dimension four, matrix $\operatorname{diag}(1,1,-1,-1)$, complexificatio
 
 ## Summary
 
-The general quaternionic bilinear product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ has a central square, $\tilde Q\star\tilde Q=N(\tilde Q)e_0$ with $N(\tilde Q)=\sum_\mu Q_\mu^2=Q_0^2+(\mathbf Q,\mathbf Q)$, and this scalar is the **algebraic norm** of the product, with polar form the scalar coefficient $N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$ of the symmetrised product and with the multiplicative law $N(\tilde P\star\tilde Q)=N(\tilde P)N(\tilde Q)$.
+The general quaternionic bilinear product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ has a central square, $\tilde Q\star\tilde Q=N(\tilde Q)e_0$ with $N(\tilde Q)=\sum_\mu Q_\mu^2=Q_0^2+(\vec Q,\vec Q)$, and this scalar is the **algebraic norm** of the product, with polar form the scalar coefficient $N(\tilde P,\tilde Q)=P_0Q_0+(\vec P,\vec Q)$ of the symmetrised product and with the multiplicative law $N(\tilde P\star\tilde Q)=N(\tilde P)N(\tilde Q)$.
 
 The product has the left unit $e_0$ and no right one, hence no two-sided unit, and the definition of the inverse, which requires one, applies to no element: **there is no invertible element and no group of units of the quaternionic product**. What survives is the pair of one-sided equations relative to $e_0$: both have the same unique solution, $(\tilde P^{-1})^{\natural}=\tilde P/N(\tilde P)$, exactly when $N(\tilde P)\neq0$, and neither has a solution when $N(\tilde P)=0$. The criterion is thus the algebraic norm, as for the plain product, and the elements of non-vanishing algebraic norm form the plain group of units $\mathbb{B}^{\times}$, stable under $\star$ and carrying the invertible left multiplications, without being a group of the product. For an element of unit norm the inverse is the quaternion conjugate, $\tilde P^{-1}=\tilde P^{\natural}$, which coincides with the dagger exactly on the unitary elements, the rotation rotors, and not on the boosts. On the quaternion and the anti-quaternion subspaces the norm is definite and every nonzero element is a unit of the plain product; on the centre, the vector, the Hermitian and the anti-Hermitian subspaces it is indefinite and they carry the zero divisors. Beyond the six remarkable subspaces the geometry uses one mixed real form, the split form $W=\operatorname{span}_{\mathbb{R}}\{e_0,e_1,ie_2,ie_3\}$ of signature $(2,2)$.
 
@@ -305,10 +305,10 @@ Read as a norm of the algebra, $N$ is the **semi-norm** of the literature: of th
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | the biquaternion algebra |
 | $e_0,e_1,e_2,e_3$ | the basis, $e_0$ the identity, $e_k$ the quaternion units |
-| $\tilde Q=Q_0e_0+\mathbf Q$ | an element and its scalar–vector split |
+| $\tilde Q=Q_0e_0+\vec Q$ | an element and its scalar–vector split |
 | $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ | the general quaternionic bilinear product |
 | $N(\tilde Q)=\sum_\mu Q_\mu^2$ | the algebraic norm of the product, the scalar of the square, $\tilde Q\star\tilde Q=N(\tilde Q)e_0$ |
-| $N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$ | the polar form of the algebraic norm |
+| $N(\tilde P,\tilde Q)=P_0Q_0+(\vec P,\vec Q)$ | the polar form of the algebraic norm |
 | the sign axiom, the triangle inequality, the scaling axiom | the audit of the norm axioms, of which only the first survives; $N$ is the semi-norm of the literature |
 | $r(\tilde Q)=\sqrt{\lvert N(\tilde Q)\rvert}=\sqrt{\lvert\det\mathsf{M}_2(\tilde Q)\rvert}$ | the unique multiplicative real norm on the units, the polar scale |
 | $\tilde Q=q_r+iq_i$ | the halves; $\Re N=N(q_r)-N(q_i)$, $\Im N=2\langle q_r,q_i\rangle$ |

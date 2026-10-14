@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The harmonic oscillator is the first system in this subcategory with a **restoring force**. The free particle of the companion article has a constant velocity and a straight worldline; the oscillator has an acceleration proportional to its displacement, $\ddot{\mathbf{x}} = -\omega^2\mathbf{x}$, so its motion is bounded and periodic and its trajectory closes. In the biquaternion framework it is the first system in which the **two-sector structure** of the algebra becomes visible in a classical mechanical quantity rather than in a formal classification.
+The harmonic oscillator is the first system in this subcategory with a **restoring force**. The free particle of the companion article has a constant velocity and a straight worldline; the oscillator has an acceleration proportional to its displacement, $\ddot{\vec x} = -\omega^2\vec x$, so its motion is bounded and periodic and its trajectory closes. In the biquaternion framework it is the first system in which the **two-sector structure** of the algebra becomes visible in a classical mechanical quantity rather than in a formal classification.
 
 The observation the article develops is the following. The state of a one-dimensional oscillator is a pair of conjugate real numbers, the displacement $x$ and the momentum $p$, or, in the normalization that makes the motion a rigid rotation, the complex amplitude
 
@@ -29,39 +29,39 @@ The article is organized as follows. The oscillator is first written in the mate
 
 ### The Equation of Motion
 
-A particle of mass $m$ bound to the origin by the linear restoring force $\mathbf{F} = -k\mathbf{x}$, with $k = m\omega^2$, obeys
+A particle of mass $m$ bound to the origin by the linear restoring force $\vec F = -k\vec x$, with $k = m\omega^2$, obeys
 
 $$
-m\ddot{\mathbf{x}} = -m\omega^2\mathbf{x}, \qquad \ddot{\mathbf{x}} + \omega^2\mathbf{x} = 0 .
+m\ddot{\vec x} = -m\omega^2\vec x, \qquad \ddot{\vec x} + \omega^2\vec x = 0 .
 $$
 
 In the framework the worldline is the material-sector curve
 
 $$
-\tilde{Q}(t) = ic\,t\,e_0 + \mathbf{x}(t), \qquad \mathbf{x}(t) = x(t)\,e_1 + y(t)\,e_2 + z(t)\,e_3 ,
+\tilde{Q}(t) = ic\,t\,e_0 + \vec x(t), \qquad \vec x(t) = x(t)\,e_1 + y(t)\,e_2 + z(t)\,e_3 ,
 $$
 
 and the equation of motion is a statement about its vector part alone. The scalar direction $ie_0$ is untouched: the restoring force acts on the spatial displacement and not on the time. This is the same split that the free particle exhibits, now with a nontrivial vector equation.
 
-For the present article it is enough to take the motion one-dimensional along a fixed direction $\hat{\mathbf{n}}$, so that
+For the present article it is enough to take the motion one-dimensional along a fixed direction $\hat n$, so that
 
 $$
-\mathbf{x}(t) = \xi(t)\,\hat{\mathbf{n}}, \qquad \xi(t) = A\cos(\omega t + \varphi),
+\vec x(t) = \xi(t)\,\hat n, \qquad \xi(t) = A\cos(\omega t + \varphi),
 $$
 
 with amplitude $A$ and phase $\varphi$. The general motion is a superposition of three such one-dimensional motions, or a single one after the orientation of the axes is chosen; nothing in the sector structure depends on the number of dimensions, and the one-dimensional case carries all of it.
 
 ### The Restoring Force as a Central Material Vector
 
-The force $\mathbf{F} = -m\omega^2\mathbf{x}$ is a real pure quaternion: it lies in the vector part of the material sector, the real three-space $\operatorname{span}\{e_1, e_2, e_3\} \subset \mathbb{M}_-$. It is proportional and opposite to the position, so it is a **central force** in the mechanical sense of being directed along the radius from the origin; the oscillator is therefore the simplest member of the family of central-force problems that the later articles of this subcategory treat. Its force law is linear rather than inverse-square, and its orbits are the closed ellipses of the phase plane rather than the conic sections of the Kepler problem, but the structural placement is the same: a real force vector in $\mathbb{M}_-$ acting on a real position vector in $\mathbb{M}_-$.
+The force $\vec F = -m\omega^2\vec x$ is a real pure quaternion: it lies in the vector part of the material sector, the real three-space $\operatorname{span}\{e_1, e_2, e_3\} \subset \mathbb{M}_-$. It is proportional and opposite to the position, so it is a **central force** in the mechanical sense of being directed along the radius from the origin; the oscillator is therefore the simplest member of the family of central-force problems that the later articles of this subcategory treat. Its force law is linear rather than inverse-square, and its orbits are the closed ellipses of the phase plane rather than the conic sections of the Kepler problem, but the structural placement is the same: a real force vector in $\mathbb{M}_-$ acting on a real position vector in $\mathbb{M}_-$.
 
 Because the force is a pure vector, its product with the position is a pure quaternion with both a scalar and a vector part,
 
 $$
-\mathbf{F}\,\mathbf{x} = -\mathbf{F}\cdot\mathbf{x} + \mathbf{F}\times\mathbf{x} = m\omega^2|\mathbf{x}|^2\,e_0 + 0 ,
+\vec F\,\vec x = -\vec F\cdot\vec x + \vec F\times\vec x = m\omega^2|\vec x|^2\,e_0 + 0 ,
 $$
 
-the vector part vanishing because $\mathbf{F}$ and $\mathbf{x}$ are parallel. The scalar part of the product is the negative of the potential energy's double, $-\mathbf{F}\cdot\mathbf{x} = m\omega^2|\mathbf{x}|^2$, and the vanishing of the vector part is the algebraic statement that the force is central: a force is central about the origin exactly when its product with the position has no vector part, equivalently when $\mathbf{F}$ and $\mathbf{x}$ commute, $[\mathbf{F}, \mathbf{x}] = 0$. The later articles of this subcategory develop this criterion; for the oscillator it is immediate.
+the vector part vanishing because $\vec F$ and $\vec x$ are parallel. The scalar part of the product is the negative of the potential energy's double, $-\vec F\cdot\vec x = m\omega^2|\vec x|^2$, and the vanishing of the vector part is the algebraic statement that the force is central: a force is central about the origin exactly when its product with the position has no vector part, equivalently when $\vec F$ and $\vec x$ commute, $[\vec F, \vec x] = 0$. The later articles of this subcategory develop this criterion; for the oscillator it is immediate.
 
 ### Energy
 
@@ -228,7 +228,7 @@ The bracket shows how the sector split interacts with the flow. The energy is a 
 
 ### Numerical Checks
 
-The structural claims of this section were verified by explicit computation with complex-coefficient quaternions. The Hermitian and anti-Hermitian parts of the central amplitude were computed and found to be $x\,e_0$ and $i(p/m\omega)e_0$ respectively; the phase rotation $a\mapsto e^{-i\omega t}a$ was found to reproduce the standard oscillator solution for the displacement and the momentum to twelve decimal places; the energy was found to equal $\tfrac12 m\omega^2|a|^2$ and to equal the scalar part of $\tilde{A}\tilde{A}^{*}$; and the biquaternion norm was found to be $a^2e_0$, indefinite. Separately, the commutator of two Hermitian biquaternions was computed and found to be the pure real quaternion $-2\,\mathbf{h}\times\mathbf{k}$ with a vanishing scalar part, which is the fact that prevents the canonical commutator from being realized in $\mathbb{M}_+$.
+The structural claims of this section were verified by explicit computation with complex-coefficient quaternions. The Hermitian and anti-Hermitian parts of the central amplitude were computed and found to be $x\,e_0$ and $i(p/m\omega)e_0$ respectively; the phase rotation $a\mapsto e^{-i\omega t}a$ was found to reproduce the standard oscillator solution for the displacement and the momentum to twelve decimal places; the energy was found to equal $\tfrac12 m\omega^2|a|^2$ and to equal the scalar part of $\tilde{A}\tilde{A}^{*}$; and the biquaternion norm was found to be $a^2e_0$, indefinite. Separately, the commutator of two Hermitian biquaternions was computed and found to be the pure real quaternion $-2\,\vec h\times\vec k$ with a vanishing scalar part, which is the fact that prevents the canonical commutator from being realized in $\mathbb{M}_+$.
 
 ## One Oscillator or Two?
 
@@ -244,7 +244,7 @@ A genuinely two-oscillator structure would require two independent complex ampli
 
 ## Summary
 
-The classical harmonic oscillator in biquaternionic form has its trajectory, its restoring force and its energy in the material sector, and its phase structure in the centre. The trajectory is $\tilde{Q} = ic\,t\,e_0 + \mathbf{x}(t)$ with $\ddot{\mathbf{x}} = -\omega^2\mathbf{x}$; the restoring force $\mathbf{F} = -m\omega^2\mathbf{x}$ is a real vector in $\mathbb{M}_-$ and is central about the origin.
+The classical harmonic oscillator in biquaternionic form has its trajectory, its restoring force and its energy in the material sector, and its phase structure in the centre. The trajectory is $\tilde{Q} = ic\,t\,e_0 + \vec x(t)$ with $\ddot{\vec x} = -\omega^2\vec x$; the restoring force $\vec F = -m\omega^2\vec x$ is a real vector in $\mathbb{M}_-$ and is central about the origin.
 
 The complex amplitude $a = x + ip/(m\omega)$ embeds in the algebra as the central element
 
@@ -271,14 +271,14 @@ positive definite and bounded below, whereas the biquaternion norm $N(\tilde{A})
 | $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra |
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$, $e_je_k = \epsilon_{jkl}e_l$ $(j\neq k)$ |
 | $i$ | Central scalar imaginary, $i^2 = -e_0$; $i\mathbb{M}_\pm = \mathbb{M}_\mp$ |
-| $\mathbb{M}_-$ | Anti-Hermitian (material) sector: $iq_0e_0 + \mathbf{q}$ |
-| $\mathbb{M}_+$ | Hermitian (informational) sector: $h_0e_0 + i\mathbf{h}$ |
+| $\mathbb{M}_-$ | Anti-Hermitian (material) sector: $iq_0e_0 + \vec q$ |
+| $\mathbb{M}_+$ | Hermitian (informational) sector: $h_0e_0 + i\vec h$ |
 | $\mathbb{C}_{\mathbb{B}} = \operatorname{span}_\mathbb{R}\{e_0, ie_0\}$ | Centre; the phase plane of the oscillator |
 | $\mathbb{M}_+ \cap \mathbb{C}_{\mathbb{B}} = e_0\mathbb{R}$ | Real axis of the phase plane (position quadrature) |
 | $\mathbb{M}_- \cap \mathbb{C}_{\mathbb{B}} = ie_0\mathbb{R}$ | Imaginary axis of the phase plane (momentum quadrature) |
-| $\tilde{Q} = ic\,t\,e_0 + \mathbf{x}$ | Worldline, in $\mathbb{M}_-$ |
+| $\tilde{Q} = ic\,t\,e_0 + \vec x$ | Worldline, in $\mathbb{M}_-$ |
 | $\omega$, $k = m\omega^2$ | Angular frequency; spring constant |
-| $\mathbf{F} = -m\omega^2\mathbf{x}$ | Restoring force, real vector in $\mathbb{M}_-$; central, $[\mathbf{F},\mathbf{x}]=0$ |
+| $\vec F = -m\omega^2\vec x$ | Restoring force, real vector in $\mathbb{M}_-$; central, $[\vec F,\vec x]=0$ |
 | $x$, $p$, $\varpi = p/(m\omega)$ | Displacement, momentum, normalized momentum |
 | $a = x + i\varpi \in \mathbb{C}$ | Complex amplitude |
 | $\tilde{A} = a\,e_0 \in \mathbb{C}_{\mathbb{B}}$ | Central embedding of the amplitude |

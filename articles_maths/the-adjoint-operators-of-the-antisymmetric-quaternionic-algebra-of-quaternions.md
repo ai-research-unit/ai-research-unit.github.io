@@ -3,7 +3,7 @@
 ## Introduction
 
 The antisymmetric quaternionic algebra of $\mathbb{H}$ carries the operation
-$\tilde p\diamond\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)=p_0\mathbf q-q_0\mathbf p-\mathbf p\times\mathbf q$, which fails the Jacobi identity (*The Jacobi
+$\tilde p\diamond\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)=p_0\vec q-q_0\vec p-\vec p\times\vec q$, which fails the Jacobi identity (*The Jacobi
 Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra*, below this article in
 this category). This article reads its adjoint operators: the left multiplications by an element, their
 matrix and invariants, the failure of the derivation property and its identity with the Jacobi failure,
@@ -26,8 +26,8 @@ Algebra*, below this article in this category. The comparator is *The Adjoint Op
 chapter.
 
 **Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and
-$e_1^2=e_2^2=e_3^2=-e_0$; a generic element is $\tilde q=q_0e_0+\mathbf q$, the **centre** is
-$\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$ and the **vector subspace** is $\mathrm{Vect}(\mathbb{H})=\{\mathbf q\}$.
+$e_1^2=e_2^2=e_3^2=-e_0$; a generic element is $\tilde q=q_0e_0+\vec q$, the **centre** is
+$\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$ and the **vector subspace** is $\mathrm{Vect}(\mathbb{H})=\{\vec q\}$.
 The **adjoint operator** is the left multiplication $L^{\diamond}_{\tilde p}\tilde q=\tilde p\diamond\tilde q$,
 with matrix $M_{\tilde p}$ in the coefficient basis, and the **derivation** is an endomorphism $D$ with
 $D(\tilde p\diamond\tilde q)=D\tilde p\diamond\tilde q+\tilde p\diamond D\tilde q$. The **cyclic sum**
@@ -37,8 +37,8 @@ Quaternionic Algebra*, below this article in this category.
 ## The Adjoint Operators
 
 **Proposition.** The adjoint operator of $\tilde p$ is
-$L^{\diamond}_{\tilde p}\tilde q=p_0\mathbf q-q_0\mathbf p-\mathbf p\times\mathbf q$, $\mathbb{R}$-linear,
-and the map $\tilde p\mapsto L^{\diamond}_{\tilde p}$ is injective, since $L^{\diamond}_{\tilde p}e_0=-\mathbf p$.
+$L^{\diamond}_{\tilde p}\tilde q=p_0\vec q-q_0\vec p-\vec p\times\vec q$, $\mathbb{R}$-linear,
+and the map $\tilde p\mapsto L^{\diamond}_{\tilde p}$ is injective, since $L^{\diamond}_{\tilde p}e_0=-\vec p$.
 
 **Proposition (the matrix).** In the basis $(e_0,e_1,e_2,e_3)$ the matrix is
 
@@ -51,11 +51,11 @@ M_{\tilde p}=\begin{pmatrix}
 \end{pmatrix},
 $$
 
-the first column being $-\mathbf p$ and the three-by-three block carrying $p_0\mathrm{I}_3-[\mathbf p]_\times$.
+the first column being $-\vec p$ and the three-by-three block carrying $p_0\mathrm{I}_3-[\vec p]_\times$.
 
-*Proof.* The columns are the coordinates of $\tilde p\diamond e_\nu$: at $\nu=0$ the value is $-\mathbf p$;
-at $\nu=k$ the value is $p_0e_k-\mathbf p\times e_k$, whose coordinates are $p_0$ on the $k$-th vector
-line and the cross terms of $\mathbf p\times e_k$ elsewhere.
+*Proof.* The columns are the coordinates of $\tilde p\diamond e_\nu$: at $\nu=0$ the value is $-\vec p$;
+at $\nu=k$ the value is $p_0e_k-\vec p\times e_k$, whose coordinates are $p_0$ on the $k$-th vector
+line and the cross terms of $\vec p\times e_k$ elsewhere.
 
 **Theorem (the invariants).** The operator has
 
@@ -64,11 +64,11 @@ $$
 \operatorname{rank}M_{\tilde p}=\begin{cases}3,&\tilde p\neq0,\\0,&\tilde p=0,\end{cases}
 $$
 
-the characteristic polynomial $\chi(t)=t(t-p_0)\bigl((t-p_0)^2+|\mathbf p|^2\bigr)$, the kernel the **line**
+the characteristic polynomial $\chi(t)=t(t-p_0)\bigl((t-p_0)^2+|\vec p|^2\bigr)$, the kernel the **line**
 $\mathbb{R}\tilde p$, and the image the vector subspace $\mathrm{Vect}(\mathbb{H})$ for $\tilde p\neq0$.
 
 *Proof.* The first row of $M_{\tilde p}$ is zero, so $t$ divides the characteristic polynomial, and the
-three-by-three block is $p_0\mathrm{I}_3-[\mathbf p]_\times$, of determinant $p_0(p_0^2+|\mathbf p|^2)$
+three-by-three block is $p_0\mathrm{I}_3-[\vec p]_\times$, of determinant $p_0(p_0^2+|\vec p|^2)$
 and trace $3p_0$; the displayed polynomial is the product, and its constant term, the determinant, is
 zero. The kernel contains $\mathbb{R}\tilde p$ by alternation and the image lies in the vector subspace
 because the values are pure; the rank is three off the origin and zero there, so the kernel is the line
@@ -114,7 +114,7 @@ $$
 \bigl[L^{\diamond}_{\tilde p},L^{\diamond}_{\tilde q}\bigr]=L^{\diamond}_{\tilde p\diamond\tilde q}-J(\tilde p,\tilde q,\cdot),
 $$
 
-with $J(\tilde p,\tilde q,\cdot)$ the operator $r\mapsto -p_0(\mathbf q\times\mathbf r)+q_0(\mathbf p\times\mathbf r)-r_0(\mathbf p\times\mathbf q)$,
+with $J(\tilde p,\tilde q,\cdot)$ the operator $r\mapsto -p_0(\vec q\times\vec r)+q_0(\vec p\times\vec r)-r_0(\vec p\times\vec q)$,
 nonzero for general arguments; the block's adjoint map is therefore not a representation.
 
 ## The Derivation Algebra
@@ -131,7 +131,7 @@ of real dimension three, and every derivation is **outer**: there is no nonzero 
 on the sixteen basis pairs. The system forces the first row and the first column of $D$ to vanish, so
 $D(e_0)=0$ and $D$ preserves the vector subspace, and leaves the three-by-three vector block a general
 skew matrix; its solution space is therefore the skew maps of the vector subspace, of dimension three.
-For the inner derivations, $L^{\diamond}_{\tilde p}e_0=-\mathbf p$ vanishes exactly when $\mathbf p=0$,
+For the inner derivations, $L^{\diamond}_{\tilde p}e_0=-\vec p$ vanishes exactly when $\vec p=0$,
 and then $L^{\diamond}_{e_0}=\mathrm{diag}(0,1,1,1)$ is not a derivation, so the only inner derivation is
 zero.
 
@@ -174,27 +174,27 @@ of the parent product.
 
 | | the cross product | the antisymmetric quaternionic block |
 |---|---|---|
-| the operator | $\operatorname{ad}_{\tilde p}=\operatorname{diag}(0,C_{\mathbf p})$ | $M_{\tilde p}$, first column $-\mathbf p$ |
+| the operator | $\operatorname{ad}_{\tilde p}=\operatorname{diag}(0,C_{\vec p})$ | $M_{\tilde p}$, first column $-\vec p$ |
 | the trace | $0$ | $3p_0$ |
 | the rank | $2$ off the centre | $3$ off the origin |
-| the kernel | the plane $\mathbb{R}e_0\oplus\mathbb{R}\mathbf p$ | the line $\mathbb{R}\tilde p$ |
+| the kernel | the plane $\mathbb{R}e_0\oplus\mathbb{R}\vec p$ | the line $\mathbb{R}\tilde p$ |
 | the commutator formula | $\operatorname{ad}_{\tilde p\times\tilde q}=[\operatorname{ad}_{\tilde p},\operatorname{ad}_{\tilde q}]$ | $[L_{\tilde p},L_{\tilde q}]=L_{\tilde p\diamond\tilde q}-J(\tilde p,\tilde q,\cdot)$ |
 | the derivations | three-dimensional, all inner | three-dimensional, all outer |
-| the pure part | $\mathbf p\times\cdot$ | $-\mathbf p\times\cdot$ |
+| the pure part | $\vec p\times\cdot$ | $-\vec p\times\cdot$ |
 
 **Remark (the deformation).** On pure elements the block is the negative of the cross product, so the
 operator of a pure element is the operator of $\mathrm{APA}$ with the sign reversed, a Lie bracket on
-the vector subspace; for a general element the two mixed terms $p_0\mathbf q-q_0\mathbf p$ are added,
+the vector subspace; for a general element the two mixed terms $p_0\vec q-q_0\vec p$ are added,
 the trace $3p_0$ appears where it was zero, the kernel shrinks from a plane to the line of the element,
 and the commutator acquires the deviation $J$, the operator form of the Jacobi failure.
 
 ## Summary
 
 The adjoint operator of the antisymmetric quaternionic block is the left multiplication
-$L^{\diamond}_{\tilde p}\tilde q=p_0\mathbf q-q_0\mathbf p-\mathbf p\times\mathbf q$, of matrix with
-first column $-\mathbf p$ and vector block $p_0\mathrm{I}_3-[\mathbf p]_\times$, of trace $3p_0$,
+$L^{\diamond}_{\tilde p}\tilde q=p_0\vec q-q_0\vec p-\vec p\times\vec q$, of matrix with
+first column $-\vec p$ and vector block $p_0\mathrm{I}_3-[\vec p]_\times$, of trace $3p_0$,
 determinant zero, rank three off the origin, characteristic polynomial
-$t(t-p_0)\bigl((t-p_0)^2+|\mathbf p|^2\bigr)$, kernel the line $\mathbb{R}\tilde p$ and image the vector
+$t(t-p_0)\bigl((t-p_0)^2+|\vec p|^2\bigr)$, kernel the line $\mathbb{R}\tilde p$ and image the vector
 subspace. The operators are not derivations: the derivation defect is $-J$ and the homomorphism defect
 is $-J$, both zero exactly on the triples on which the cyclic sum vanishes, with the witness
 $(e_0,e_1,e_2)$ giving a defect $e_3$; the commutator of two operators is the operator of the value
@@ -211,7 +211,7 @@ drop on the isotropic cone.
 | Symbol | Meaning |
 |---|---|
 | $L^{\diamond}_{\tilde p}\tilde q=\tilde p\diamond\tilde q$ | the adjoint operator |
-| first column $-\mathbf p$, block $p_0\mathrm{I}_3-[\mathbf p]_\times$ | the matrix |
+| first column $-\vec p$, block $p_0\mathrm{I}_3-[\vec p]_\times$ | the matrix |
 | $\operatorname{Tr}=3p_0$, rank $3$, kernel $\mathbb{R}\tilde p$ | the invariants |
 | $L^{\diamond}_{\tilde p}(\tilde q\diamond\tilde r)-\dots=-J(\tilde p,\tilde q,\tilde r)$ | the derivation defect, the failure |
 | $[L^{\diamond}_{\tilde p},L^{\diamond}_{\tilde q}]-L^{\diamond}_{\tilde p\diamond\tilde q}=-\,J(\tilde p,\tilde q,\cdot)$ | the homomorphism defect |

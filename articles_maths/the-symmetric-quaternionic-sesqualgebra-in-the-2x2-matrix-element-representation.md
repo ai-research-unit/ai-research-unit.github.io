@@ -22,7 +22,7 @@ This article is the first of the two representation articles of the block, and i
 
 The model is *The General Quaternionic Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*; the form $K$ is *The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra*; the diagonal and its centrality are *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra*; and the product is *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions*.
 
-**Conventions.** $\operatorname{adj}M$ is the adjugate of the two-by-two matrix $M$, $\operatorname{adj}\begin{pmatrix}a&b\\c&d\end{pmatrix}=\begin{pmatrix}d&-b\\-c&a\end{pmatrix}$; $M^{\dagger}$ is the conjugate transpose; $N(\tilde Q)=\tilde Q^{\natural}\tilde Q=Q_0^{2}+Q_1^{2}+Q_2^{2}+Q_3^{2}$ is the norm and $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$; the coefficient basis is $e_0,e_1,e_2,e_3$; and $\mathbf Q=(Q_1,Q_2,Q_3)$ is the vector part.
+**Conventions.** $\operatorname{adj}M$ is the adjugate of the two-by-two matrix $M$, $\operatorname{adj}\begin{pmatrix}a&b\\c&d\end{pmatrix}=\begin{pmatrix}d&-b\\-c&a\end{pmatrix}$; $M^{\dagger}$ is the conjugate transpose; $N(\tilde Q)=\tilde Q^{\natural}\tilde Q=Q_0^{2}+Q_1^{2}+Q_2^{2}+Q_3^{2}$ is the norm and $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$; the coefficient basis is $e_0,e_1,e_2,e_3$; and $\vec Q=(Q_1,Q_2,Q_3)$ is the vector part.
 
 ## The Two-by-Two Model
 
@@ -64,12 +64,12 @@ and its Gram matrix in the coefficient basis is $E=\operatorname{diag}(1,-1,-1,-
 
 $$
 \mathsf{M}_2(\tilde Q\star\tilde Q)=\Bigl(|Q_0|^{2}-\sum_{k=1}^{3}|Q_k|^{2}\Bigr)I
--\mathsf{M}_2\bigl(Q_0\overline{\mathbf{Q}}+\overline{Q_0}\mathbf{Q}\bigr),
+-\mathsf{M}_2\bigl(Q_0\overline{\vec Q}+\overline{Q_0}\vec Q\bigr),
 $$
 
 so it is the scalar matrix of the form value minus the matrix of the mixed term.
 
-*Proof.* Apply $\mathsf{M}_2$ to the diagonal form $\tilde Q\star\tilde Q=K(\tilde Q,\tilde Q)e_0-Q_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{Q}$ of *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra*; the first summand becomes $K(\tilde Q,\tilde Q)I$ and the second the matrix of the mixed term.
+*Proof.* Apply $\mathsf{M}_2$ to the diagonal form $\tilde Q\star\tilde Q=K(\tilde Q,\tilde Q)e_0-Q_0\overline{\vec Q}-\overline{Q_0}\vec Q$ of *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra*; the first summand becomes $K(\tilde Q,\tilde Q)I$ and the second the matrix of the mixed term.
 
 **Corollary (the two witnesses give scalar matrices).** On the two witnesses,
 
@@ -89,7 +89,7 @@ $$
 \mathsf{M}_2\bigl((e_0+e_1)\star(e_0+e_1)\bigr)=\mathsf{M}_2(-2e_1)=2i\sigma_1=\begin{pmatrix}0&2i\\2i&0\end{pmatrix},
 $$
 
-a non-scalar matrix, non-scalar exactly when the mixed term $Q_0\overline{\mathbf{Q}}+\overline{Q_0}\mathbf{Q}$ does not vanish, that is when $Q_0\overline{Q_k}\notin i\mathbb{R}$ for some $k$, the centrality criterion of *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra*. This is a departure of the computation from the menu comment, recorded here rather than smoothed over.
+a non-scalar matrix, non-scalar exactly when the mixed term $Q_0\overline{\vec Q}+\overline{Q_0}\vec Q$ does not vanish, that is when $Q_0\overline{Q_k}\notin i\mathbb{R}$ for some $k$, the centrality criterion of *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra*. This is a departure of the computation from the menu comment, recorded here rather than smoothed over.
 
 ## The Matrix Form of $K$ and Its Cone
 
@@ -171,7 +171,7 @@ In the two-by-two model the block is the symmetrisation of the twisted matrix pr
 | $\mathsf{M}_2(\tilde Q)=Q_0I-i\sum_kQ_k\sigma_k$ | the two-by-two model; $\mathsf{M}_2({}^{\natural})=\operatorname{adj}$, $\mathsf{M}_2({}^{*})={}^{\dagger}$ |
 | $\mathsf{M}_2(\tilde P\star\tilde Q)=\tfrac12(\operatorname{adj}\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)^{\dagger}+\mathsf{M}_2(\tilde Q)^{\dagger}\operatorname{adj}\mathsf{M}_2(\tilde P))$ | the block in the two-by-two model |
 | $\operatorname{Tr}\mathsf{M}_2(\tilde P\star\tilde Q)=2K$, $\det\mathsf{M}_2=N$ | trace and determinant in the two-by-two model |
-| $\mathsf{M}_2(\tilde Q\star\tilde Q)=K(\tilde Q,\tilde Q)I-\mathsf{M}_2(Q_0\overline{\mathbf{Q}}+\overline{Q_0}\mathbf{Q})$ | the diagonal in the model |
+| $\mathsf{M}_2(\tilde Q\star\tilde Q)=K(\tilde Q,\tilde Q)I-\mathsf{M}_2(Q_0\overline{\vec Q}+\overline{Q_0}\vec Q)$ | the diagonal in the model |
 | $\mathsf{M}_2(e_1\star e_1)=-I$, $\mathsf{M}_2((e_1+ie_2)\star(e_1+ie_2))=-2I$, $\mathsf{M}_2((e_0+e_1)\star(e_0+e_1))=2i\sigma_1$ | the two scalar witnesses and the non-scalar witness |
 | $K(\tilde P,\tilde Q)=\tfrac12\operatorname{Tr}(\operatorname{adj}\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)^{\dagger})$ | the form in the model; Gram $E=\operatorname{diag}(1,-1,-1,-1)$ |
 

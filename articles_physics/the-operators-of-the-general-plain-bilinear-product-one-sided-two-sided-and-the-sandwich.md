@@ -41,12 +41,12 @@ of Biquaternions*, *Two-Sided Operators on the General Plain Algebra of Biquater
 Transpose on the General Plain Algebra*; the article reads them.
 
 Throughout, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$,
-$e_k^{2}=-e_0$ and central imaginary $i$; a general element is $\tilde Q=Q_0e_0+\mathbf Q$ with the vector part
-$\mathbf Q=Q_1e_1+Q_2e_2+Q_3e_3$. The adjoint for the plain form is written $F^{\approx}$ and called the **associate**.
+$e_k^{2}=-e_0$ and central imaginary $i$; a general element is $\tilde Q=Q_0e_0+\vec Q$ with the vector part
+$\vec Q=Q_1e_1+Q_2e_2+Q_3e_3$. The adjoint for the plain form is written $F^{\approx}$ and called the **associate**.
 The form is
 
 $$
-B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-\mathbf P\!\cdot\!\mathbf Q,\qquad
+B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-\vec P\!\cdot\!\vec Q,\qquad
 \mathrm{Gram}=\mathrm{diag}(1,-1,-1,-1),
 $$
 
@@ -206,7 +206,7 @@ uses of the one action form.
 $\mathbb{M}_+$ and its sandwich is self-adjoint for the plain form.
 - The **material conjugation** has an anti-Hermitian parameter, $\tilde Q\in\mathbb{M}_-$, and by the criterion it is
 self-adjoint too; the sector signs of the two cases are opposite, which is the $\lambda=\pm1$ of the proof.
-- The **Lorentz action** has a unit-norm parameter $\tilde\Lambda\tilde\Lambda^{\natural}=e_0$ which is in general in
+- The **Lorentz action** has a unit-norm parameter $\tilde U\tilde U^{\natural}=e_0$ which is in general in
 neither sector, and then the sandwich is **not** self-adjoint for the plain form: a boost is not symmetric for the
 sector sign.
 
@@ -284,17 +284,17 @@ because there the twist absorbs a norm and here there is no twist to absorb one.
 ## The Operators Acting on the Spinor Space
 
 The operators of the block act on the state space, and the action is the content of the two other articles of this
-group. Let $S=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,\tilde\Upsilon_2\}$ be the minimal left ideal of *The
-Spinor Space as a Module of the General Plain Algebra*, with $\tilde\Pi_2=e_0-\tilde\Pi_1$ and the complement
-$\mathbb{B}\tilde\Pi_2=\mathbb{C}\{\tilde\Pi_2,\tilde\Upsilon_1\}$ of *The Complementary Space of the Spinor Space in
+group. Let $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\tilde\Upsilon_2\}$ be the minimal left ideal of *The
+Spinor Space as a Module of the General Plain Algebra*, with $\tilde\Pi_-=e_0-\tilde\Pi_+$ and the complement
+$\mathbb{B}\tilde\Pi_-=\mathbb{C}\{\tilde\Pi_-,\tilde\Upsilon_1\}$ of *The Complementary Space of the Spinor Space in
 the General Plain Algebra*.
 
-**Proposition (the left actions are the matrices of the module).** On the basis $(\tilde\Pi_1,\tilde\Upsilon_2)$ the
+**Proposition (the left actions are the matrices of the module).** On the basis $(\tilde\Pi_+,\tilde\Upsilon_2)$ the
 four left multiplications by the basis elements are the matrix units
 
 $$
-L_{\tilde\Pi_1}=\begin{pmatrix}1&0\\0&0\end{pmatrix},\qquad
-L_{\tilde\Pi_2}=\begin{pmatrix}0&0\\0&1\end{pmatrix},\qquad
+L_{\tilde\Pi_+}=\begin{pmatrix}1&0\\0&0\end{pmatrix},\qquad
+L_{\tilde\Pi_-}=\begin{pmatrix}0&0\\0&1\end{pmatrix},\qquad
 L_{\tilde\Upsilon_1}=\begin{pmatrix}0&1\\0&0\end{pmatrix},\qquad
 L_{\tilde\Upsilon_2}=\begin{pmatrix}0&0\\1&0\end{pmatrix},
 $$
@@ -308,7 +308,7 @@ simple module.
 
 **Proposition (the right actions move the state space to its complement).** A right multiplication commutes with every
 left one, so it is a $\mathbb{B}$-linear map of $S$ into itself or into the complement; right multiplication by the
-nilpotent $\tilde\Upsilon_1$ carries $S$ onto $\mathbb{B}\tilde\Pi_2$ and is an isomorphism of modules, and right
+nilpotent $\tilde\Upsilon_1$ carries $S$ onto $\mathbb{B}\tilde\Pi_-$ and is an isomorphism of modules, and right
 multiplication by $\tilde\Upsilon_2$ carries the complement onto $S$. A central element, by contrast, has equal left and
 right actions and can move nothing.
 
@@ -359,42 +359,42 @@ two operators agree exactly when $\tilde A^{*}=\tilde A^{-1}$, that is when $\ti
 they coincide exactly when the two right parameters coincide; the kernel of the action $\tilde A\mapsto\mathrm{Ad}_{\tilde A}$
 is the centre, so no ambiguity remains.
 
-**Theorem (both preserve the interval, and they differ on a boost).** Let $\tilde\Lambda$ be of unit norm,
-$\tilde\Lambda\tilde\Lambda^{\natural}=e_0$. Then $\Theta_{\tilde\Lambda}$ and $\mathrm{Ad}_{\tilde\Lambda}$ both
+**Theorem (both preserve the interval, and they differ on a boost).** Let $\tilde U$ be of unit norm,
+$\tilde U\tilde U^{\natural}=e_0$. Then $\Theta_{\tilde U}$ and $\mathrm{Ad}_{\tilde U}$ both
 preserve the interval $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ and both preserve the sectors
 $\mathbb{M}_\pm$; the inner automorphism preserves the plain form $B$ as well, and the sandwich preserves it exactly
-when $\tilde\Lambda^{*}\tilde\Lambda=\pm e_0$, a condition the unit-norm boosts fail. A boost is therefore a parameter
+when $\tilde U^{*}\tilde U=\pm e_0$, a condition the unit-norm boosts fail. A boost is therefore a parameter
 for which the two operators differ **and** for which the sandwich loses the plain form.
 
-*Proof.* For the interval, with $\tilde\Lambda^{\natural}=\tilde\Lambda^{-1}$ and
-$\tilde\Lambda^{*}=\bar{\tilde\Lambda}^{\,\natural}$, and writing the two-sided operator of the sandwich as
-$\Theta_{\tilde\Lambda}\tilde P=\tilde\Lambda\tilde P\tilde\Lambda^{*}$,
+*Proof.* For the interval, with $\tilde U^{\natural}=\tilde U^{-1}$ and
+$\tilde U^{*}=\bar{\tilde U}^{\,\natural}$, and writing the two-sided operator of the sandwich as
+$\Theta_{\tilde U}\tilde P=\tilde U\tilde P\tilde U^{*}$,
 
 $$
-N\bigl(\Theta_{\tilde\Lambda}\tilde P,\Theta_{\tilde\Lambda}\tilde Q\bigr)
-=\mathrm{Sc}\bigl((\tilde\Lambda\tilde P\tilde\Lambda^{*})^{\natural}\,\tilde\Lambda\tilde Q\tilde\Lambda^{*}\bigr)
-=\mathrm{Sc}\bigl(\tilde\Lambda^{*\natural}\tilde P^{\natural}\tilde\Lambda^{\natural}\tilde\Lambda\tilde Q\tilde\Lambda^{*}\bigr)
-=\mathrm{Sc}\bigl(\tilde P^{\natural}\tilde Q\,\tilde\Lambda^{*}\tilde\Lambda^{*\natural}\bigr)
+N\bigl(\Theta_{\tilde U}\tilde P,\Theta_{\tilde U}\tilde Q\bigr)
+=\mathrm{Sc}\bigl((\tilde U\tilde P\tilde U^{*})^{\natural}\,\tilde U\tilde Q\tilde U^{*}\bigr)
+=\mathrm{Sc}\bigl(\tilde U^{*\natural}\tilde P^{\natural}\tilde U^{\natural}\tilde U\tilde Q\tilde U^{*}\bigr)
+=\mathrm{Sc}\bigl(\tilde P^{\natural}\tilde Q\,\tilde U^{*}\tilde U^{*\natural}\bigr)
 =\mathrm{Sc}\bigl(\tilde P^{\natural}\tilde Q\bigr),
 $$
 
-where the third step uses $\tilde\Lambda^{\natural}\tilde\Lambda=e_0$ and the cyclicity of the scalar part, and the
+where the third step uses $\tilde U^{\natural}\tilde U=e_0$ and the cyclicity of the scalar part, and the
 last uses
 
 $$
-\tilde\Lambda^{*}\tilde\Lambda^{*\natural}
-=\bar{\tilde\Lambda}^{\,\natural}\bar{\tilde\Lambda}
-=\overline{\tilde\Lambda^{\natural}\tilde\Lambda}=e_0 .
+\tilde U^{*}\tilde U^{*\natural}
+=\bar{\tilde U}^{\,\natural}\bar{\tilde U}
+=\overline{\tilde U^{\natural}\tilde U}=e_0 .
 $$
 
 The inner automorphism preserves the interval because it preserves the product and the natural conjugation; the sector statement is
-$(\Theta_{\tilde\Lambda}\tilde P)^{*}=\tilde\Lambda\tilde P^{*}\tilde\Lambda^{*}$, which changes the sign of the sector
+$(\Theta_{\tilde U}\tilde P)^{*}=\tilde U\tilde P^{*}\tilde U^{*}$, which changes the sign of the sector
 exactly when $\tilde P$ does; and the plain form is not preserved because the sandwich is not an algebra automorphism.
 
 **Read as a physical statement.** The framework attaches a conjugation to an element in two ways, and the two agree
 only on the compact part of the parameter group. The Lorentz action is the **conjugate** one,
-$\tilde P\mapsto\tilde\Lambda\tilde P\tilde\Lambda^{*}$, and the algebra automorphism is the **inverse** one,
-$\tilde P\mapsto\tilde\Lambda\tilde P\tilde\Lambda^{-1}$; on a boost the two differ, while on a rotation they coincide,
+$\tilde P\mapsto\tilde U\tilde P\tilde U^{*}$, and the algebra automorphism is the **inverse** one,
+$\tilde P\mapsto\tilde U\tilde P\tilde U^{-1}$; on a boost the two differ, while on a rotation they coincide,
 and the compact subgroup is exactly the place where "conjugation by the inverse" and "conjugation by the conjugate" are
 the same statement. This is the operator form of the corpus's identification of the compact slice with the internal
 charge and of the boost with the non-compact part: the difference of the two conjugations is a Lorentz-invariant
@@ -428,18 +428,18 @@ for the sector sign while the parameter is a material four-vector.
 Take next a **boost** parameter,
 
 $$
-\tilde\Lambda=\cosh u\,e_0+\sinh u\,ie_1,\qquad
-\tilde\Lambda\tilde\Lambda^{\natural}=e_0,\qquad
-\tilde\Lambda\tilde\Lambda^{*}=\cosh 2u\,e_0+\sinh 2u\,ie_1\neq e_0 .
+\tilde U=\cosh u\,e_0+\sinh u\,ie_1,\qquad
+\tilde U\tilde U^{\natural}=e_0,\qquad
+\tilde U\tilde U^{*}=\cosh 2u\,e_0+\sinh 2u\,ie_1\neq e_0 .
 $$
 
 The parameter has unit norm and is Hermitian, so it is in $\mathbb{M}_+$ and the sandwich is self-adjoint; but it is not
 unitary, so it is not in the compact slice. On $e_1$ the two conjugations separate:
 
 $$
-\Theta_{\tilde\Lambda}(e_1)=\tilde\Lambda^{2}e_1=\cosh 2u\,e_1-\sinh 2u\,ie_0,
+\Theta_{\tilde U}(e_1)=\tilde U^{2}e_1=\cosh 2u\,e_1-\sinh 2u\,ie_0,
 \qquad
-\mathrm{Ad}_{\tilde\Lambda}(e_1)=e_1 .
+\mathrm{Ad}_{\tilde U}(e_1)=e_1 .
 $$
 
 Both operators preserve the interval, the sandwich moves $e_1$ by a hyperbolic rotation, and the inner automorphism
@@ -537,7 +537,7 @@ The operators of the general plain algebra are the left and the right multiplica
 and $R_{\tilde B}(\tilde Y)=\tilde Y\tilde B$, and their products $L_{\tilde A}R_{\tilde B}(\tilde Y)=\tilde A\tilde Y\tilde B$,
 the one-sided and the two-sided families. The parameter enters once in each slot, the two families commute, and
 composition reverses the second slot. The bilinear form of the block is the scalar part of the product itself,
-$B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-\mathbf P\!\cdot\!\mathbf Q$ of Gram matrix
+$B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-\vec P\!\cdot\!\vec Q$ of Gram matrix
 $\mathrm{diag}(1,-1,-1,-1)$, and the transpose for $B$ **swaps the two sides**:
 $(L_{\tilde A})^{\approx}=R_{\tilde A}$ and $(L_{\tilde A}R_{\tilde B})^{\approx}=L_{\tilde B}R_{\tilde A}$. Every
 type criterion follows: a one-sided operator is self-adjoint exactly for a central parameter and skew-adjoint only for
@@ -576,8 +576,8 @@ the naming.
 | $\tilde A\tilde B=e_0\iff L_{\tilde A}R_{\tilde B}=\mathrm{Ad}_{\tilde A}$ | The multiplicative operators |
 | $\tilde B\tilde A$ central $\implies$ multiplicative up to $\tilde B\tilde A$ | The partial law; no norm enters |
 | $\{S:SL_{\tilde A}=L_{\tilde A}S\}=R(\mathbb{B})$ | The commutant; the bicommutant is $\mathbb{C}\,\mathrm{id}$ |
-| $\Theta_{\tilde\Lambda}=\mathrm{Ad}_{\tilde\Lambda}\iff\tilde\Lambda\tilde\Lambda^{*}=e_0$ | The two conjugations agree on the unitary slice |
-| $S=\mathbb{B}\tilde\Pi_1$, $\mathbb{B}\tilde\Pi_2$ | The spinor space and its complement |
+| $\Theta_{\tilde U}=\mathrm{Ad}_{\tilde U}\iff\tilde U\tilde U^{*}=e_0$ | The two conjugations agree on the unitary slice |
+| $S=\mathbb{B}\tilde\Pi_+$, $\mathbb{B}\tilde\Pi_-$ | The spinor space and its complement |
 
 ## Further Reading
 

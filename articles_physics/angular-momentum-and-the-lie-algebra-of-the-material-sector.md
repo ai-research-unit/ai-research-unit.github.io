@@ -15,7 +15,7 @@ The invariant form of the algebra is the **Killing form**
 
 $$
 \kappa(\tilde P,\tilde Q)=\operatorname{Tr}\bigl(\operatorname{ad}_{\tilde P}\operatorname{ad}_{\tilde Q}\bigr)
-=-2\,\mathbf{P}\cdot\mathbf{Q}=-2\,(P_1Q_1+P_2Q_2+P_3Q_3),
+=-2\,\vec P\cdot\vec Q=-2\,(P_1Q_1+P_2Q_2+P_3Q_3),
 $$
 
 with the adjoint $\operatorname{ad}_{\tilde P}(\tilde X)=\tilde P\wedge\tilde X$. It is symmetric and
@@ -40,8 +40,8 @@ Spin in Biquaternionic Form*.
 
 The conventions are those of the companion article: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$
 with basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$, $e_k^{2}=-e_0$, central imaginary $i$, general element
-$\tilde Q=Q_0e_0+\mathbf{Q}$, scalar part $\mathrm{Sc}(\tilde Q)=Q_0$, and the bracket
-$\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf{P}\times\mathbf{Q}$. The
+$\tilde Q=Q_0e_0+\vec Q$, scalar part $\mathrm{Sc}(\tilde Q)=Q_0$, and the bracket
+$\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\vec P\times\vec Q$. The
 material sector is $\mathbb{M}_-=\{\tilde Q:\tilde Q^{*}=-\tilde Q\}$, the informational sector
 $\mathbb{M}_+=\{\tilde Q:\tilde Q^{*}=+\tilde Q\}$.
 
@@ -123,7 +123,7 @@ and $\operatorname{ad}:\mathfrak{g}\to\operatorname{End}(\mathfrak{g})$ is the a
 
 **Proposition.** The adjoint map is $\mathbb{C}$-linear, annihilates the centre and takes values in the
 vector subspace, its image at a fixed $\tilde P$ being the complex plane
-$\mathbf P\times\mathbb{B}$ orthogonal to $\mathbf P$; it is a Lie homomorphism,
+$\vec P\times\mathbb{B}$ orthogonal to $\vec P$; it is a Lie homomorphism,
 
 $$
 \operatorname{ad}_{\tilde P\wedge\tilde Q}
@@ -141,8 +141,8 @@ $$
 *Proof.* Linearity is the bilinearity of the bracket; the homomorphism is the Jacobi identity written with
 triples with max deviation $0$. The kernel of the adjoint is the centre, since
 $\operatorname{ad}_{\tilde P}=0$ requires $\tilde P$ to annihilate every element. At a fixed $\tilde P$
-with vector part $\mathbf P$ the image is $\mathbf P\times\mathbb{B}$, the complex plane orthogonal to
-$\mathbf P$ when $\mathbf P\neq0$ and $\{0\}$ when $\tilde P$ is central, so no single adjoint is onto the
+with vector part $\vec P$ the image is $\vec P\times\mathbb{B}$, the complex plane orthogonal to
+$\vec P$ when $\vec P\neq0$ and $\{0\}$ when $\tilde P$ is central, so no single adjoint is onto the
 vector subspace, while the images over the algebra span it. The operators, the inner
 and outer derivations and the automorphisms they generate are *The Adjoint Operators and the Derivations
 of the Antisymmetric Plain Algebra*.
@@ -161,7 +161,7 @@ Antisymmetric Plain Algebra*; the inner ones are exactly the transformations gen
 
 $$
 \kappa(\tilde P,\tilde Q)=\operatorname{Tr}\bigl(\operatorname{ad}_{\tilde P}\operatorname{ad}_{\tilde Q}\bigr)
-=-2\,\mathbf{P}\cdot\mathbf{Q}=-2\,(P_1Q_1+P_2Q_2+P_3Q_3),
+=-2\,\vec P\cdot\vec Q=-2\,(P_1Q_1+P_2Q_2+P_3Q_3),
 $$
 
 with Gram matrix $\operatorname{diag}(0,-2,-2,-2)$ in the basis of the units. Its radical is the centre
@@ -184,7 +184,7 @@ $$
 \mathbb{M}_-:(0,3),\qquad \mathbb{M}_+:(3,0).
 $$
 
-*Proof.* The formula $\kappa=-2\,\mathbf{P}\cdot\mathbf{Q}$ restricted to a real direction is a sum of
+*Proof.* The formula $\kappa=-2\,\vec P\cdot\vec Q$ restricted to a real direction is a sum of
 squares with the sign of the direction, negative for real vector coefficients and positive for imaginary
 ones; the scalar direction contributes zero. This is the restriction table
 of *The Killing Form of the Antisymmetric Plain Algebra*.
@@ -239,10 +239,10 @@ generators of the Lorentz group:
 $\mathfrak{su}(2)$ with generators $T_a=\tfrac12e_a$;
 - the three **imaginary** vector units $ie_1,ie_2,ie_3$ generate the **boosts**, the non-compact
 directions, on which the Killing form is positive;
-- a finite rotation is the conjugation $\tilde X\mapsto\tilde\Lambda\tilde X\tilde\Lambda^{-1}$ by the
+- a finite rotation is the conjugation $\tilde X\mapsto\tilde U\tilde X\tilde U^{-1}$ by the
 rotor $\cos\tfrac{\theta}{2}+\sin\tfrac{\theta}{2}\,e_k$ of the companion article, and a finite boost is
-the dagger-sandwich $\tilde X\mapsto\tilde\Lambda\tilde X\tilde\Lambda^{*}$ by the Hermitian element
-$\cosh\tfrac{\psi}{2}+i\sinh\tfrac{\psi}{2}\,\hat{\mathbf{u}}$, of unit norm, of *Biquaternion Rotations
+the dagger-sandwich $\tilde X\mapsto\tilde U\tilde X\tilde U^{*}$ by the Hermitian element
+$\cosh\tfrac{\psi}{2}+i\sinh\tfrac{\psi}{2}\,\hat u$, of unit norm, of *Biquaternion Rotations
 and Lorentz Transformations* and *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*.
 
 The complex vector subspace is exactly the sector the corpus calls the home of the Lorentz generators, and
@@ -315,7 +315,7 @@ $\mathbb{H}_{\mathbb{B}}\cong\mathbb{R}e_0\oplus\mathfrak{su}(2)$ and
 $\mathbb{M}_-\cong\mathfrak{u}(2)$; the adjoint map satisfies
 $\operatorname{ad}_{\tilde P\wedge\tilde Q}=[\operatorname{ad}_{\tilde P},\operatorname{ad}_{\tilde Q}]$
 and the Leibniz rule; the Killing form is
-$\kappa(\tilde P,\tilde Q)=\operatorname{Tr}(\operatorname{ad}_{\tilde P}\operatorname{ad}_{\tilde Q})=-2\,\mathbf{P}\cdot\mathbf{Q}$
+$\kappa(\tilde P,\tilde Q)=\operatorname{Tr}(\operatorname{ad}_{\tilde P}\operatorname{ad}_{\tilde Q})=-2\,\vec P\cdot\vec Q$
 with Gram matrix $\operatorname{diag}(0,-2,-2,-2)$, radical the centre,
 and vector restriction of real signature $(3,3)$, negative on the real directions and positive on the
 imaginary ones; the Casimir
@@ -348,7 +348,7 @@ $\mathfrak{g}/\mathbb{C}_{\mathbb{B}}\cong\mathfrak{sl}(2,\mathbb{C})$; the real
 $\mathbb{H}_{\mathbb{B}}\cong\mathbb{R}e_0\oplus\mathfrak{su}(2)$ and $\mathbb{M}_-\cong\mathfrak{u}(2)$.
 The adjoint action $\operatorname{ad}_{\tilde P}(\tilde X)=\tilde P\wedge\tilde X$ is a Lie homomorphism
 and a derivation, and the Killing form is
-$\kappa(\tilde P,\tilde Q)=\operatorname{Tr}(\operatorname{ad}_{\tilde P}\operatorname{ad}_{\tilde Q})=-2\,\mathbf{P}\cdot\mathbf{Q}$,
+$\kappa(\tilde P,\tilde Q)=\operatorname{Tr}(\operatorname{ad}_{\tilde P}\operatorname{ad}_{\tilde Q})=-2\,\vec P\cdot\vec Q$,
 with radical the centre and vector restriction of real signature
 $(3,3)$: negative on the three real vector directions and positive on the three imaginary ones. **The
 sign of the form is the compact–non-compact dichotomy**: the real vector triple is the compact
@@ -370,7 +370,7 @@ the angular momentum of a material field.
 | $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ | Centre of the bracket; the radical of the Killing form |
 | $\operatorname{ad}_{\tilde P}(\tilde X)=\tilde P\wedge\tilde X$ | Adjoint of $\tilde P$; the adjoint representation |
 | $\operatorname{ad}_{\tilde P\wedge\tilde Q}=[\operatorname{ad}_{\tilde P},\operatorname{ad}_{\tilde Q}]$ | The adjoint is a Lie homomorphism |
-| $\kappa(\tilde P,\tilde Q)=\operatorname{Tr}(\operatorname{ad}_{\tilde P}\operatorname{ad}_{\tilde Q})=-2\,\mathbf{P}\cdot\mathbf{Q}$ | The Killing form; Gram $\operatorname{diag}(0,-2,-2,-2)$ |
+| $\kappa(\tilde P,\tilde Q)=\operatorname{Tr}(\operatorname{ad}_{\tilde P}\operatorname{ad}_{\tilde Q})=-2\,\vec P\cdot\vec Q$ | The Killing form; Gram $\operatorname{diag}(0,-2,-2,-2)$ |
 | $(3,3)$ on $\mathrm{Vect}(\mathbb{B})$ | Negative on real vector directions, positive on imaginary |
 | $\Omega=-\tfrac12(e_1^{2}+e_2^{2}+e_3^{2})$ | Casimir element; acts $\tfrac38$ on the $2$-dim module, $1$ on the adjoint |
 | $T_a=\tfrac12e_a$, $T_0=\tfrac12ie_0$ | Generators of $\mathfrak{su}(2)$ and $\mathfrak{u}(1)$ in $\mathbb{M}_-\cong\mathfrak{u}(2)$ |

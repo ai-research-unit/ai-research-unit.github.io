@@ -6,7 +6,7 @@ The symmetric quaternionic multiplication is the central-valued operation $\tild
 
 The model itself, the regular matrix $\mathsf{M}_4$, the trace $\operatorname{Tr}\mathsf{M}_4(\tilde Q)=4Q_0$, the determinant $\det\mathsf{M}_4(\tilde Q)=N(\tilde Q)^2$ and the matrix of the conjugation as the transpose are those of the cited articles and are used here, not restated. The form $N$ and its Gram matrix are *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*; the operators are *The Multiplication Operators of the Symmetric Quaternionic Algebra*; the normal forms of the singular matrices are *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*. Nothing of the enriched layer is used.
 
-**Conventions.** The product is $\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0$ with $N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$; the left regular matrix is $\mathsf{M}_4(\tilde P)$, whose $m$-th column is the coordinate column of the product $\tilde P e_m$, with $\mathsf{M}_4(\tilde P^\natural)=\mathsf{M}_4(\tilde P)^{\mathsf T}$ in the basis and $\mathsf{M}_2(e_k)=-i\sigma_k$ in the companion model.
+**Conventions.** The product is $\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0$ with $N(\tilde P,\tilde Q)=P_0Q_0+(\vec P,\vec Q)$; the left regular matrix is $\mathsf{M}_4(\tilde P)$, whose $m$-th column is the coordinate column of the product $\tilde P e_m$, with $\mathsf{M}_4(\tilde P^\natural)=\mathsf{M}_4(\tilde P)^{\mathsf T}$ in the basis and $\mathsf{M}_2(e_k)=-i\sigma_k$ in the companion model.
 
 ## The Symmetrisation of the Left Multiplications
 

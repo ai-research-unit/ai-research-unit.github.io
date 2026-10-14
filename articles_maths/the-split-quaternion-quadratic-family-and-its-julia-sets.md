@@ -74,9 +74,9 @@ The inner automorphisms form the group of all automorphisms of the algebra over 
 
 ## The Slice Reductions
 
-**Proposition (the parameter's subalgebra).** Let $\mathbb{R}[c]=\operatorname{span}\{e_0,c\}$. Then $\mathbb{R}[c]$ is a subalgebra, the critical orbit lies in it, and its isomorphism type is decided by the sign of $N(\mathbf c)$: it is a copy of $\mathbb{C}$ if $N(\mathbf c)>0$ (the vector part timelike), a copy of the split-complex algebra $\mathbb{D}$ if $N(\mathbf c)<0$ (the vector part spacelike), and the algebra of dual numbers if $N(\mathbf c)=0$ (the vector part null).
+**Proposition (the parameter's subalgebra).** Let $\mathbb{R}[c]=\operatorname{span}\{e_0,c\}$. Then $\mathbb{R}[c]$ is a subalgebra, the critical orbit lies in it, and its isomorphism type is decided by the sign of $N(\vec c)$: it is a copy of $\mathbb{C}$ if $N(\vec c)>0$ (the vector part timelike), a copy of the split-complex algebra $\mathbb{D}$ if $N(\vec c)<0$ (the vector part spacelike), and the algebra of dual numbers if $N(\vec c)=0$ (the vector part null).
 
-*Proof.* The span of $1$ and $c$ is closed under multiplication; the critical orbit starts at $0$ and stays in it as in the definite case. The minimal polynomial of $c$ is $x^2-2c_0x+N(c)$, with $N(c)=c_0^2+N(\mathbf c)$, so its discriminant is $4c_0^2-4N(c)=-4N(\mathbf c)$; the three cases correspond to a negative discriminant (complex roots, the algebra $\mathbb{C}$), a positive one (two real roots, the algebra $\mathbb{D}$), and a zero one (a double root, the dual numbers).
+*Proof.* The span of $1$ and $c$ is closed under multiplication; the critical orbit starts at $0$ and stays in it as in the definite case. The minimal polynomial of $c$ is $x^2-2c_0x+N(c)$, with $N(c)=c_0^2+N(\vec c)$, so its discriminant is $4c_0^2-4N(c)=-4N(\vec c)$; the three cases correspond to a negative discriminant (complex roots, the algebra $\mathbb{C}$), a positive one (two real roots, the algebra $\mathbb{D}$), and a zero one (a double root, the dual numbers).
 
 **Proposition (the complex and split-complex slices).** On $\mathbb{R}[c]$ the restriction of $f_c$ is the quadratic map of the subalgebra, conjugated to $z\mapsto z^2+\kappa$ in the complex case and to the split-complex map $A\mapsto A^2+C$ in the split-complex case, where the conjugate parameter is the image of $c$ under the isomorphism.
 
@@ -88,7 +88,7 @@ $$
 A_{\pm}^{(n+1)}=\bigl(A_\pm^{(n)}\bigr)^2+C_\pm , \qquad A_\pm^{(0)}=\text{the components of } A , \quad C_\pm=\text{the components of } c .
 $$
 
-Thus **a split-complex quadratic orbit is two real quadratic orbits, one in each idempotent direction**; and in the complex case $N(\mathbf c)>0$ the corresponding statement is a single complex orbit.
+Thus **a split-complex quadratic orbit is two real quadratic orbits, one in each idempotent direction**; and in the complex case $N(\vec c)>0$ the corresponding statement is a single complex orbit.
 
 *Proof.* The idempotents satisfy $\tilde\pi_1^2=\tilde\pi_1$, $\tilde\pi_2^2=\tilde\pi_2$ and $\tilde\pi_1\tilde\pi_2=0$ by *Split-Quaternion Ideals and Peirce Decomposition*, and the algebra $\mathbb{D}_2$ is the direct sum $\mathbb{R}\tilde\pi_1\oplus\mathbb{R}\tilde\pi_2$; squaring is componentwise in this basis, $(A_+\tilde\pi_1+A_-\tilde\pi_2)^2=A_+^2\tilde\pi_1+A_-^2\tilde\pi_2$, and adding $c$ adds the components. The direct computation is recorded in the companion file. The complex case has no real idempotents, and its orbit is the single complex orbit.
 
@@ -106,9 +106,9 @@ Thus **a split-complex quadratic orbit is two real quadratic orbits, one in each
 
 **(b) The parameter $c=2e_2$.** The split-complex components are $C_+=2$ and $C_-=-2$; the real map $u\mapsto u^2+2$ has empty filled Julia set, so the invariant slice is empty; the critical orbit escapes, and the numerical search finds no bounded orbit.
 
-**(c) The parameter $c=e_1$.** Then $N(\mathbf c)=1>0$, the subalgebra $\mathbb{R}[e_1]=\operatorname{span}\{e_0,e_1\}\cong\mathbb{C}$, and the critical orbit is the complex orbit of $z\mapsto z^2+i$; it is bounded, and $e_1$ lies in the connectedness locus.
+**(c) The parameter $c=e_1$.** Then $N(\vec c)=1>0$, the subalgebra $\mathbb{R}[e_1]=\operatorname{span}\{e_0,e_1\}\cong\mathbb{C}$, and the critical orbit is the complex orbit of $z\mapsto z^2+i$; it is bounded, and $e_1$ lies in the connectedness locus.
 
-**(d) The parameter $c=e_2$.** Then $N(\mathbf c)=-1<0$, the subalgebra is the split-complex plane $\mathbb{D}_2$, and the idempotent components are $C_+=1$, $C_-=-1$; the real map $u\mapsto u^2+1$ has no bounded orbit, since $u^2+1>|u|$ for every real $u$, so the critical orbit escapes in the $+$ direction and $K_{e_2}\cap\mathbb{D}_2$ is empty. The parameter is outside the connectedness locus.
+**(d) The parameter $c=e_2$.** Then $N(\vec c)=-1<0$, the subalgebra is the split-complex plane $\mathbb{D}_2$, and the idempotent components are $C_+=1$, $C_-=-1$; the real map $u\mapsto u^2+1$ has no bounded orbit, since $u^2+1>|u|$ for every real $u$, so the critical orbit escapes in the $+$ direction and $K_{e_2}\cap\mathbb{D}_2$ is empty. The parameter is outside the connectedness locus.
 
 ## Summary
 

@@ -6,17 +6,17 @@ A quantum system whose Hamiltonian is varied slowly around a closed loop in a pa
 
 The phase is computed by two routes. The first integrates the **Berry connection** $\mathcal{A}$ — a $U(1)$ connection on the parameter space — around the loop; the second integrates the **Berry curvature** $\mathcal{F} = d\mathcal{A}$ over a surface that the loop bounds. Both routes are used below and checked against one another on an explicit example, because their agreement is the content of the statement that the phase is geometric.
 
-This article carries that construction into the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the companion articles, and asks what the algebra contributes. The read-list notation is inherited unchanged: the algebra $\mathbb{B}$ with basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$; the scalar imaginary $i$; the fixed-point subspaces $\mathbb{M}_+$ (Hermitian, the informational sector), $\mathbb{M}_-$ (anti-Hermitian, the material sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions), and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ (the centre); the Hermitian observable $\tilde{H} = h_0 e_0 + i\mathbf{h}$; the idempotent $\tilde\Pi_{1,2}(\hat{\mu}) = \tfrac12(e_0 \pm i\hat{\mu})$; the spinor $\psi$ in a minimal left ideal $\mathbb{B}\tilde{P}$ of the state module; and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
+This article carries that construction into the biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ of the companion articles, and asks what the algebra contributes. The read-list notation is inherited unchanged: the algebra $\mathbb{B}$ with basis $e_0 = 1, e_1, e_2, e_3$ and $e_k^2 = -e_0$; the scalar imaginary $i$; the fixed-point subspaces $\mathbb{M}_+$ (Hermitian, the informational sector), $\mathbb{M}_-$ (anti-Hermitian, the material sector), $\mathbb{H}_{\mathbb{B}}$ (real quaternions), and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ (the centre); the Hermitian observable $\tilde{H} = h_0 e_0 + i\vec h$; the idempotent $\tilde\Pi_{1,2}(\hat{\mu}) = \tfrac12(e_0 \pm i\hat{\mu})$; the spinor $\psi$ in a minimal left ideal $\mathbb{B}\tilde{P}$ of the state module; and the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
 
 The article's findings are stated here in advance, so that the reader can hold them against the text.
 
-1. **The Berry connection is not visible in the state of $\mathbb{M}_+$.** The instantaneous eigenstate of a Hermitian Hamiltonian is an idempotent $\tilde\Pi_{1,2}(\hat{\mathbf{h}})$, but $\mathrm{Tr}(\tilde{P}\,\partial_\mu\tilde{P}) = 0$ identically, so no Berry connection can be built from the idempotent alone. The connection lives on the **spinor** $\psi$ of the state module, and its definition uses the same trace pairing that gives the Born rule. This is the framework's sharpest statement about the Berry phase: the phase is carried by the spinor, which the Bloch-ball state discards.
+1. **The Berry connection is not visible in the state of $\mathbb{M}_+$.** The instantaneous eigenstate of a Hermitian Hamiltonian is an idempotent $\tilde\Pi_{1,2}(\hat h)$, but $\mathrm{Tr}(\tilde{P}\,\partial_\mu\tilde{P}) = 0$ identically, so no Berry connection can be built from the idempotent alone. The connection lives on the **spinor** $\psi$ of the state module, and its definition uses the same trace pairing that gives the Born rule. This is the framework's sharpest statement about the Berry phase: the phase is carried by the spinor, which the Bloch-ball state discards.
 2. **The connection is a $U(1)$ gauge connection on parameter space**, transforming as $\mathcal{A} \mapsto \mathcal{A} - d\alpha$ under a rephasing of the eigenstate, with curvature $\mathcal{F} = d\mathcal{A}$. Its structure group is the unitary part of the centre $\mathbb{C}_{\mathbb{B}}$ — the same $U(1)$ that *The Gauge Principle in Biquaternionic Form* attaches to the algebra.
 3. **The two routes agree** on spin-1/2 in a slowly rotating field: the line integral of the connection and the surface integral of the curvature both give $-\Omega/2$, where $\Omega$ is the solid angle subtended by the loop, for every loop in a one-parameter family.
 4. **The curvature is quantised only on a closed surface.** The cap flux $-\pi(1-\cos\theta_0)$ is continuous in the loop; only the integral over the closed Bloch sphere is quantised, giving the Chern number $\mp 1$ for the two bands, whose sum is zero. The closed surface must avoid the degeneracy point, which is where the gap closes.
 5. **The Berry connection is not the framework's spacetime connection.** It is literally the standard Berry connection, rewritten through the trace pairing. Its relation to the abelian connection $\tilde{A}$ of the gauge-principle article is an **analogy**: same structure group, same transformation law, same curvature definition, but a different base space and a different kind of object. It is not claimed to be the same field.
 
-**Which case.** Throughout the article the level is **non-degenerate** and the Berry phase is **abelian** (a $U(1)$ number). For the two-level Hamiltonian the gap is $\Delta = 2|\mathbf{h}|$, and it is required to stay bounded away from zero along the path; at $\mathbf{h} = 0$ the two levels become degenerate, the gap closes, and the adiabatic theorem fails. The non-abelian (degenerate-level) case is not available in a single-qubit framework; the section *Degenerate Levels and the Abelian Case* states exactly why, and leaves it as a gap.
+**Which case.** Throughout the article the level is **non-degenerate** and the Berry phase is **abelian** (a $U(1)$ number). For the two-level Hamiltonian the gap is $\Delta = 2|\vec h|$, and it is required to stay bounded away from zero along the path; at $\vec h = 0$ the two levels become degenerate, the gap closes, and the adiabatic theorem fails. The non-abelian (degenerate-level) case is not available in a single-qubit framework; the section *Degenerate Levels and the Abelian Case* states exactly why, and leaves it as a gap.
 
 ## The Adiabatic Setting and the Two Phases
 
@@ -53,33 +53,33 @@ an integer multiple of $2\pi$. The closed-loop phase is therefore well defined *
 For a two-level system in the biquaternion framework, the relevant Hamiltonian is
 
 $$
-\tilde{H}(\mathbf{R}) = \tfrac12\, i\,\mathbf{R} = \tfrac12\, i\,(R_1 e_1 + R_2 e_2 + R_3 e_3) \in \mathbb{M}_+ ,
-\qquad \mathbf{R} \in \mathbb{R}^3 ,
+\tilde{H}(\vec R) = \tfrac12\, i\,\vec R = \tfrac12\, i\,(R_1 e_1 + R_2 e_2 + R_3 e_3) \in \mathbb{M}_+ ,
+\qquad \vec R \in \mathbb{R}^3 ,
 $$
 
-which under the isomorphism $e_0 \mapsto I$, $e_j \mapsto -i_{\mathrm{mat}}\sigma_j$ (where $i_{\mathrm{mat}}$ is the matrix imaginary, the image of the scalar imaginary $i$) maps to the standard spin Hamiltonian $\tfrac12\mathbf{R}\cdot\boldsymbol{\sigma}$. Its spectral decomposition is the one inherited from the parent article,
+which under the isomorphism $e_0 \mapsto I$, $e_j \mapsto -i_{\mathrm{mat}}\sigma_j$ (where $i_{\mathrm{mat}}$ is the matrix imaginary, the image of the scalar imaginary $i$) maps to the standard spin Hamiltonian $\tfrac12\vec R\cdot\boldsymbol{\sigma}$. Its spectral decomposition is the one inherited from the parent article,
 
 $$
-\tilde{H} = \tfrac{R}{2}\,\tilde\Pi_1(\hat{\mathbf{R}}) - \tfrac{R}{2}\,\tilde\Pi_2(\hat{\mathbf{R}}) ,
+\tilde{H} = \tfrac{R}{2}\,\tilde\Pi_1(\hat R) - \tfrac{R}{2}\,\tilde\Pi_2(\hat R) ,
 \qquad
-\tilde\Pi_{1,2}(\hat{\mathbf{R}}) = \tfrac12\bigl(e_0 \pm i\hat{\mathbf{R}}\bigr) ,
+\tilde\Pi_{1,2}(\hat R) = \tfrac12\bigl(e_0 \pm i\hat R\bigr) ,
 \qquad
-\hat{\mathbf{R}} = \mathbf{R}/R ,
+\hat R = \vec R/R ,
 $$
 
-with $R = |\mathbf{R}|$. The eigenvalues are $\pm R/2$, so the **gap is $\Delta = R$**, and it closes exactly at $\mathbf{R} = 0$. Both the spectral decomposition and the eigenvalue formula are verified below by direct biquaternion multiplication.
+with $R = |\vec R|$. The eigenvalues are $\pm R/2$, so the **gap is $\Delta = R$**, and it closes exactly at $\vec R = 0$. Both the spectral decomposition and the eigenvalue formula are verified below by direct biquaternion multiplication.
 
-**Parameter space.** The eigenstate $\tilde\Pi_{1,2}(\hat{\mathbf{R}})$ depends on $\mathbf{R}$ only through the unit direction $\hat{\mathbf{R}}$, and on the scalar part $h_0$ not at all (the parent article shows that a central phase cancels from the state). The magnitude $R$ sets the gap but not the eigenstate. The parameter space that matters is therefore the unit sphere
+**Parameter space.** The eigenstate $\tilde\Pi_{1,2}(\hat R)$ depends on $\vec R$ only through the unit direction $\hat R$, and on the scalar part $h_0$ not at all (the parent article shows that a central phase cancels from the state). The magnitude $R$ sets the gap but not the eigenstate. The parameter space that matters is therefore the unit sphere
 
 $$
-\mathcal{P} = \{\hat{\mathbf{R}} \in \mathbb{R}^3 : |\hat{\mathbf{R}}| = 1\} = S^2 ,
+\mathcal{P} = \{\hat R \in \mathbb{R}^3 : |\hat R| = 1\} = S^2 ,
 $$
 
 which is exactly the **Bloch sphere** of pure states of $\mathbb{M}_+$. This is a structural feature of the two-level framework: the parameter space of the Hamiltonians modulo their trivial parts is the space of idempotents of the informational sector, i.e. the state space of the qubit itself.
 
 ## The Eigenstate Is a Spinor, Not an Idempotent
 
-The instantaneous eigenstate of $\tilde{H} = \tfrac12 i\mathbf{R}$ is the idempotent $\tilde\Pi_{1,2}(\hat{\mathbf{R}})$. It is natural to try to build the Berry connection out of it. One cannot, and the reason is worth stating as a lemma, because it is the first place the framework's two notions of "state" separate.
+The instantaneous eigenstate of $\tilde{H} = \tfrac12 i\vec R$ is the idempotent $\tilde\Pi_{1,2}(\hat R)$. It is natural to try to build the Berry connection out of it. One cannot, and the reason is worth stating as a lemma, because it is the first place the framework's two notions of "state" separate.
 
 **Lemma (the idempotent is blind to the connection).** Let $\tilde\Pi(\lambda)$ be a smooth family of idempotents with $\mathrm{Tr}(\tilde{P}) = 1$. Then
 
@@ -96,9 +96,9 @@ $$
 
 But $\mathrm{Tr}(\tilde{P}) = 1$ is constant, so $\mathrm{Tr}(\partial_\mu\tilde{P}) = 0$, and hence $\mathrm{Tr}(\tilde{P}\partial_\mu\tilde{P}) = 0$.
 
-The lemma is not special to the qubit: it is the algebraic statement that a rank-one projector carries no phase information. For the idempotent $\tilde\Pi_1(\hat{\mathbf{R}}) = \tfrac12(e_0 + i\hat{\mathbf{R}})$ it can also be checked directly, since $\partial_\mu\tilde\Pi_1 = \tfrac12 i\,\partial_\mu\hat{\mathbf{R}}$ and $\mathrm{Sc}\bigl((e_0 + i\hat{\mathbf{R}})\,\partial_\mu\hat{\mathbf{R}}\bigr) = \mathrm{Sc}(\partial_\mu\hat{\mathbf{R}}) + i\,\mathrm{Sc}(\hat{\mathbf{R}}\,\partial_\mu\hat{\mathbf{R}}) = 0$, using $\hat{\mathbf{R}}\cdot\partial_\mu\hat{\mathbf{R}} = 0$ from $|\hat{\mathbf{R}}| = 1$. Both the general proof and the direct computation return zero.
+The lemma is not special to the qubit: it is the algebraic statement that a rank-one projector carries no phase information. For the idempotent $\tilde\Pi_1(\hat R) = \tfrac12(e_0 + i\hat R)$ it can also be checked directly, since $\partial_\mu\tilde\Pi_1 = \tfrac12 i\,\partial_\mu\hat R$ and $\mathrm{Sc}\bigl((e_0 + i\hat R)\,\partial_\mu\hat R\bigr) = \mathrm{Sc}(\partial_\mu\hat R) + i\,\mathrm{Sc}(\hat R\,\partial_\mu\hat R) = 0$, using $\hat R\cdot\partial_\mu\hat R = 0$ from $|\hat R| = 1$. Both the general proof and the direct computation return zero.
 
-The carrier of the Berry connection is therefore the **spinor** of the state module, not the density matrix. In the minimal left ideal $\mathbb{B}\tilde\Pi_3$ generated by $\tilde\Pi_3 = \tfrac12(e_0 + ie_3)$, the spin-up eigenstate of $\tfrac12 i\mathbf{R}$ is
+The carrier of the Berry connection is therefore the **spinor** of the state module, not the density matrix. In the minimal left ideal $\mathbb{B}\tilde\Pi_3$ generated by $\tilde\Pi_3 = \tfrac12(e_0 + ie_3)$, the spin-up eigenstate of $\tfrac12 i\vec R$ is
 
 $$
 \psi_+(\theta,\phi) = \cos\tfrac{\theta}{2}\,E_{11} + e^{i\phi}\sin\tfrac{\theta}{2}\,E_{21}
@@ -106,12 +106,12 @@ $$
 \psi_+ = \tfrac12\cos\tfrac{\theta}{2}\bigl(e_0 + ie_3\bigr) + \tfrac12 e^{i\phi}\sin\tfrac{\theta}{2}\bigl(ie_1 + e_2\bigr) ,
 $$
 
-where $\hat{\mathbf{R}} = (\sin\theta\cos\phi, \sin\theta\sin\phi, \cos\theta)$ and $E_{11}, E_{21}$ are the matrix units of the isomorphism. The right-hand expression is an element of $\mathbb{B}$, the left-hand expression its matrix image; the two are the same object written in two notations. That $\psi_+$ does lie in the ideal, that it is normalized, that it reproduces the idempotent, and that it is the eigenvector, are all verified by direct multiplication below.
+where $\hat R = (\sin\theta\cos\phi, \sin\theta\sin\phi, \cos\theta)$ and $E_{11}, E_{21}$ are the matrix units of the isomorphism. The right-hand expression is an element of $\mathbb{B}$, the left-hand expression its matrix image; the two are the same object written in two notations. That $\psi_+$ does lie in the ideal, that it is normalized, that it reproduces the idempotent, and that it is the eigenvector, are all verified by direct multiplication below.
 
 **The bilinear relation.** The two notions of state are related by
 
 $$
-\tilde\Pi_1(\hat{\mathbf{R}}) = \frac{\psi_+(\theta,\phi)\,\psi_+(\theta,\phi)^\dagger}{\mathrm{Tr}\!\left(\psi_+^\dagger\psi_+\right)} ,
+\tilde\Pi_1(\hat R) = \frac{\psi_+(\theta,\phi)\,\psi_+(\theta,\phi)^\dagger}{\mathrm{Tr}\!\left(\psi_+^\dagger\psi_+\right)} ,
 $$
 
 which is the parent article's $\tilde{\rho} = \psi\psi^\dagger/\mathrm{Tr}(\psi^\dagger\psi)$. The density matrix forgets the phase of $\psi_+$; the lemma says precisely that this forgotten phase is what the Berry connection measures. So the Berry phase is a property of the **state module** of the framework, not of the Bloch ball.
@@ -221,8 +221,8 @@ It is worth recording that the curvature is a **local** object while the connect
 Take a spin-1/2 in a magnetic field whose direction rotates at a fixed polar angle, so that in the biquaternion framework
 
 $$
-\tilde{H}(t) = \tfrac12\,i\,\mathbf{R}(t) , \qquad
-\mathbf{R}(t) = R\bigl(\sin\theta_0\cos\omega t,\ \sin\theta_0\sin\omega t,\ \cos\theta_0\bigr) ,
+\tilde{H}(t) = \tfrac12\,i\,\vec R(t) , \qquad
+\vec R(t) = R\bigl(\sin\theta_0\cos\omega t,\ \sin\theta_0\sin\omega t,\ \cos\theta_0\bigr) ,
 $$
 
 with $R > 0$ and $\theta_0 \in (0,\pi)$ fixed. The path is the circle $\theta = \theta_0$ on the Bloch sphere, traversed once per period $T = 2\pi/\omega$, and the gap is $\Delta = R$ everywhere on the path, so the adiabatic theorem applies provided the rotation is slow compared with the gap, $\hbar\omega \ll R$. The parameter $\phi = \omega t$ runs from $0$ to $2\pi$.
@@ -290,7 +290,7 @@ $$
 
 giving $\gamma_- = +\Omega/2$. In the gauge adapted to the south pole the same band has $\mathcal{A}^{(-)}_\phi = -\cos^2(\theta/2)$, which differs from the first by exactly $1$. Around the equator loop the two expressions give phases differing by $2\pi$: $+\pi$ against $-\pi$. Both are legitimate local descriptions of the same band, they differ by the non-single-valued phase $e^{-i\phi}$ on the overlap, and they define the same curvature, $+\tfrac12\sin\theta\,d\theta\wedge d\phi$. The physical content is the pair of statements $\gamma_- - \gamma_+ = \Omega$ and $\gamma_\pm$ defined modulo $2\pi$; stating either phase as a single absolute real number requires choosing a patch, and the choice is not physical. This is the first trap of the introduction, made concrete.
 
-**What was checked, and on what case.** The spinor normalization $\mathrm{Tr}(\psi_+^\dagger\psi_+) = 1$; the reproduction $\psi_+\psi_+^\dagger = \tilde\Pi_1(\hat{\mathbf{R}})$ of the idempotent; the eigenvalue equation $\tilde{H}\psi_+ = \tfrac{R}{2}\psi_+$; the spectral decomposition $\tilde{H} = \tfrac{R}{2}\tilde\Pi_1 - \tfrac{R}{2}\tilde\Pi_2$; the connection components above; the curvature; the two routes and their agreement on the five loops; the speed independence on a non-uniform reparametrization; and the $2\pi$ shift between the two patches of the spin-down band. All were recomputed in exact arithmetic from the quaternion multiplication rules, and the two-route agreement was in addition recomputed independently by numerical quadrature. No formula in this article rests on a single case chosen to fit it.
+**What was checked, and on what case.** The spinor normalization $\mathrm{Tr}(\psi_+^\dagger\psi_+) = 1$; the reproduction $\psi_+\psi_+^\dagger = \tilde\Pi_1(\hat R)$ of the idempotent; the eigenvalue equation $\tilde{H}\psi_+ = \tfrac{R}{2}\psi_+$; the spectral decomposition $\tilde{H} = \tfrac{R}{2}\tilde\Pi_1 - \tfrac{R}{2}\tilde\Pi_2$; the connection components above; the curvature; the two routes and their agreement on the five loops; the speed independence on a non-uniform reparametrization; and the $2\pi$ shift between the two patches of the spin-down band. All were recomputed in exact arithmetic from the quaternion multiplication rules, and the two-route agreement was in addition recomputed independently by numerical quadrature. No formula in this article rests on a single case chosen to fit it.
 
 ## Quantisation on a Closed Surface
 
@@ -316,13 +316,13 @@ $$
 
 and the Chern numbers sum to zero. This is required: a rank-two bundle over $S^2$ whose two eigenlines are complementary has total first Chern number zero, because its determinant line is trivial. The check on the second band is a case that the first band did not supply, and it is the two-band completeness relation, not the single-band computation, that fixes the relative sign.
 
-**Why the closed surface matters, and why it can be closed.** The closed-surface integral is a **topological** statement, not a statement about the loop. The curvature is the field of a point source at the origin of parameter space. Writing $\hat{\mathbf{R}} = \mathbf{R}/R$, the spin-up curvature three-vector is
+**Why the closed surface matters, and why it can be closed.** The closed-surface integral is a **topological** statement, not a statement about the loop. The curvature is the field of a point source at the origin of parameter space. Writing $\hat R = \vec R/R$, the spin-up curvature three-vector is
 
 $$
-\boldsymbol{\mathcal{F}} = -\frac{1}{2}\,\frac{\hat{\mathbf{R}}}{R^2} ,
+\vec{\mathcal{F}} = -\frac{1}{2}\,\frac{\hat R}{R^2} ,
 $$
 
-the field of a **monopole of charge $g = -1/2$** located at $\mathbf{R} = 0$, and the Chern number is twice the charge, $C_+ = 2g = -1$. But $\mathbf{R} = 0$ is exactly where the two levels become degenerate and the gap closes; the connection and the adiabatic theorem both fail there. The Bloch sphere at a fixed magnitude $R$ avoids the origin, which is why the integral over it is well defined, and the integer it computes counts the degeneracies enclosed. If the surface were allowed to pass through $\mathbf{R} = 0$, or if the gap closed anywhere on it, the integral would not be defined. Quantisation, closedness, and the non-closing gap are therefore one requirement, not three.
+the field of a **monopole of charge $g = -1/2$** located at $\vec R = 0$, and the Chern number is twice the charge, $C_+ = 2g = -1$. But $\vec R = 0$ is exactly where the two levels become degenerate and the gap closes; the connection and the adiabatic theorem both fail there. The Bloch sphere at a fixed magnitude $R$ avoids the origin, which is why the integral over it is well defined, and the integer it computes counts the degeneracies enclosed. If the surface were allowed to pass through $\vec R = 0$, or if the gap closed anywhere on it, the integral would not be defined. Quantisation, closedness, and the non-closing gap are therefore one requirement, not three.
 
 **Robustness under deformation.** The integer cannot change under a deformation of the Hamiltonian that keeps the gap open. To see this within the two-level family, let the direction field be distorted by a monotone function $\Theta(\theta)$ with $\Theta(0) = 0$ and $\Theta(\pi) = \pi$. The connection is again $\mathcal{A}_\phi = -\sin^2(\Theta/2)$ and the curvature is
 
@@ -338,7 +338,7 @@ $$
 = -\frac{1}{2}\cdot 2\pi\cdot 2 = -2\pi ,
 $$
 
-independent of $\Theta$. The specific family $\Theta(\theta) = \theta + s\sin\theta$, monotone for $|s| < 1$, was checked at $s = 0, \tfrac12, -\tfrac34, \tfrac{9}{10}$ and gives $C_+ = -1$ at every value. Equivalently, for a general nonvanishing smooth $\mathbf{b}(\hat{\mathbf{R}})$, the spin-up curvature is $-\tfrac12$ times the pullback of the area form of $S^2$ by the map $\hat{\mathbf{b}} : S^2 \to S^2$, and its integral is $-2\pi$ times the degree of that map. The degree is an integer that a continuous deformation cannot change without the map passing through zero somewhere — that is, without the gap closing. The quantisation is thus protected by the same condition that makes the adiabatic theorem valid.
+independent of $\Theta$. The specific family $\Theta(\theta) = \theta + s\sin\theta$, monotone for $|s| < 1$, was checked at $s = 0, \tfrac12, -\tfrac34, \tfrac{9}{10}$ and gives $C_+ = -1$ at every value. Equivalently, for a general nonvanishing smooth $\vec b(\hat R)$, the spin-up curvature is $-\tfrac12$ times the pullback of the area form of $S^2$ by the map $\hat b : S^2 \to S^2$, and its integral is $-2\pi$ times the degree of that map. The degree is an integer that a continuous deformation cannot change without the map passing through zero somewhere — that is, without the gap closing. The quantisation is thus protected by the same condition that makes the adiabatic theorem valid.
 
 **Relation to the spacetime monopole, and its limit.** The algebraic shape here — a $U(1)$ curvature whose flux over a closed surface is quantised, with the integral counting a singularity — is the same shape that *The Magnetic Monopole in Biquaternionic Form* exhibits for the Dirac quantisation condition. The two are not the same statement, and the difference is the base space. There the monopole is a magnetic charge in space, its flux is an electromagnetic flux, and the quantisation condition $eg = 2\pi n\hbar c$ constrains the product of electric and magnetic charges. Here the "monopole" is a degeneracy point in the space of Hamiltonians, its flux is a Berry flux, and the integer is the degree of a map from the parameter sphere to itself. The two invocations of the same $U(1)$ curvature structure carry no established relation; the resemblance is recorded, and nothing is claimed to follow from it.
 
@@ -368,15 +368,15 @@ make $\pi_3$ a $k$-plane bundle wherever it is defined, and the existence questi
 2. **$s_2 : s_1(B) \to L_2$, a continuous choice of eigenspace.** Given the branch, $s_2(b) = (b,\lambda(b),W_b)$ is a continuous map $B \to G_k(V)$ into the Grassmannian of $k$-planes in $V$. It fails when the eigenvalue exists at every point but its eigenspace cannot be selected continuously — the level crossing again, seen one floor up.
 3. **$s_3$, a nowhere-zero eigenvector field.** Given the first two, the spectral bundle $\pi_3$ restricts to a $k$-plane bundle over $B$, and a nowhere-zero cross-section of it is a nowhere-zero eigenvector field. Its existence is the vanishing question for that bundle, and the Chern number computed above is its invariant.
 
-So the eigenbundle of a two-band Hamiltonian over the Bloch sphere exists because all three cross-sections exist: the eigenvalues $\lambda_\pm = h_0 \pm \lvert\mathbf{h}\rvert$ are continuous and exchange only where $|\mathbf{h}| = 0$, the eigenline can be chosen continuously on any chart, and the Chern number $C_\pm = \mp 1$ is the invariant of the last step, not of the first two. The adiabatic theorem of this article is stated under precisely the hypothesis that the three exist.
+So the eigenbundle of a two-band Hamiltonian over the Bloch sphere exists because all three cross-sections exist: the eigenvalues $\lambda_\pm = h_0 \pm \lvert\vec h\rvert$ are continuous and exchange only where $|\vec h| = 0$, the eigenline can be chosen continuously on any chart, and the Chern number $C_\pm = \mp 1$ is the invariant of the last step, not of the first two. The adiabatic theorem of this article is stated under precisely the hypothesis that the three exist.
 
 **Boundary.** The classification is a statement of homotopy theory, and this article records it and does not use it. What the corpus takes from it is the sharp form of the assumption it has been making: the "gap does not close along the surface" condition, used above only to make an integral well defined, is the condition that the first two cross-sections extend over the whole surface, and an obstruction at any of the three steps is a topological reason for a phase that cannot be computed. The theory's machinery — the diagram, the lifting spaces, the obstruction classes — is not imported into the algebra, and no biquaternionic statement is claimed to follow from it.
 
 ## Degenerate Levels and the Abelian Case
 
-Every phase computed so far is a single real number modulo $2\pi$. That is the **abelian** case, and it holds because the traversed level is non-degenerate: the two eigenvalues $\lambda_\pm = h_0 \pm |\mathbf{h}|$ of the Hamiltonian are distinct, the eigenprojectors $\tilde\Pi_{1,2}(\hat{\mathbf{h}})$ are rank one, and the adiabatic evolution acquires one phase, not a matrix of phases. The general adiabatic theorem for a degenerate level replaces the connection by a matrix-valued one-form and the phase by a unitary matrix on the degenerate subspace; that is the non-abelian, or Wilczek–Zee, case, and it is a genuinely different object.
+Every phase computed so far is a single real number modulo $2\pi$. That is the **abelian** case, and it holds because the traversed level is non-degenerate: the two eigenvalues $\lambda_\pm = h_0 \pm |\vec h|$ of the Hamiltonian are distinct, the eigenprojectors $\tilde\Pi_{1,2}(\hat h)$ are rank one, and the adiabatic evolution acquires one phase, not a matrix of phases. The general adiabatic theorem for a degenerate level replaces the connection by a matrix-valued one-form and the phase by a unitary matrix on the degenerate subspace; that is the non-abelian, or Wilczek–Zee, case, and it is a genuinely different object.
 
-**Which case is available here.** For a single-qubit Hamiltonian the degeneracy condition is $h_0 + |\mathbf{h}| = h_0 - |\mathbf{h}|$, i.e. $|\mathbf{h}| = 0$, i.e. $\mathbf{h} = 0$. So the only degenerate Hamiltonian in $\mathbb{M}_+$ is a multiple of the identity, $\tilde{H} = h_0 e_0$, for which the two levels coincide and the eigenprojectors are not defined at all. That is the same point at which the gap closes and the adiabatic theorem fails. There is therefore **no non-degenerate level with a degeneracy** in a single-qubit framework: degeneracy and gap closing coincide, and the abelian case is the only case. The non-abelian Berry phase requires a level of dimension greater than one separated from the rest of the spectrum, which in this framework means at least three levels, hence at least $\mathbb{B}^{\otimes n}$ for $n \geq 2$. The parent article leaves the tensor product $\mathbb{B}^{\otimes_\mathbb{C} n} \cong M_{2^n}(\mathbb{C})$ as an open question, so the non-abelian case is out of reach of the present article and is recorded as a gap rather than approximated.
+**Which case is available here.** For a single-qubit Hamiltonian the degeneracy condition is $h_0 + |\vec h| = h_0 - |\vec h|$, i.e. $|\vec h| = 0$, i.e. $\vec h = 0$. So the only degenerate Hamiltonian in $\mathbb{M}_+$ is a multiple of the identity, $\tilde{H} = h_0 e_0$, for which the two levels coincide and the eigenprojectors are not defined at all. That is the same point at which the gap closes and the adiabatic theorem fails. There is therefore **no non-degenerate level with a degeneracy** in a single-qubit framework: degeneracy and gap closing coincide, and the abelian case is the only case. The non-abelian Berry phase requires a level of dimension greater than one separated from the rest of the spectrum, which in this framework means at least three levels, hence at least $\mathbb{B}^{\otimes n}$ for $n \geq 2$. The parent article leaves the tensor product $\mathbb{B}^{\otimes_\mathbb{C} n} \cong M_{2^n}(\mathbb{C})$ as an open question, so the non-abelian case is out of reach of the present article and is recorded as a gap rather than approximated.
 
 This is a case where the framework's smallness is informative rather than limiting: the reason the Berry phase is abelian here is not a choice of convenience but a fact about a two-level algebra, and the reason it cannot be made non-abelian is the same fact.
 
@@ -409,7 +409,7 @@ What the framework does supply, beyond the rewriting, is a set of structural pla
 **A neighbouring sense of "geometric phase", to be kept apart.** The phases above are holonomies of a $U(1)$ connection on a parameter space, and they are quantum-mechanical. The biquaternionic literature uses the phrase for a second, unrelated object. In the complex-quaternionic constructions treated in the companion article *The Lorentz Group as Biquaternion Norm Automorphisms*, the invariant $\sigma = z_1^2+z_2^2+z_3^2$ of the algebra automorphisms is complex, and its argument,
 
 $$
-\alpha = \arg\sigma , \qquad \tan\alpha = \frac{2\,\mathbf{p}\cdot\mathbf{q}}{|\mathbf{p}|^2-|\mathbf{q}|^2} , \qquad z_a = p_a+iq_a ,
+\alpha = \arg\sigma , \qquad \tan\alpha = \frac{2\,\vec p\cdot\vec q}{|\vec p|^2-|\vec q|^2} , \qquad z_a = p_a+iq_a ,
 $$
 
 is a **Lorentz invariant** — the argument of an invariant is invariant — and the source calls it a "geometric phase" accompanying a displacement in spacetime. It is geometric in the plain sense that it is a function of the complexified metric rather than of the dynamics, and the source proposes it as the origin of quantum interference. It is *not* a Berry phase, and it shares with one nothing but the name: there is no adiabatic loop, no connection, no $U(1)$ holonomy, no parameter space of Hamiltonians, and no $\hbar$. It is the phase that labels the fibre of the bilinear map from $\mathbb{C}^3$ to the induced real coordinates, so it is a function of the point and carries no path dependence at all — the opposite of the defining property of the Berry phase. The corpus records it as a distinct sense of the words and does not identify the two.
@@ -432,7 +432,7 @@ is a **Lorentz invariant** — the argument of an invariant is invariant — and
 
 The Berry phase is the geometric phase acquired by an adiabatic eigenstate around a closed loop in parameter space. It is computed by two equivalent routes, the line integral of the **Berry connection** and the surface integral of the **Berry curvature**, and it is defined modulo $2\pi$ because a rephasing of the eigenstate is a gauge transformation.
 
-In the biquaternion framework the instantaneous eigenstate of $\tilde{H} = \tfrac12 i\mathbf{R}$ is the idempotent $\tilde\Pi_{1,2}(\hat{\mathbf{R}})$, but the idempotent is **blind** to the connection: $\mathrm{Tr}(\tilde{P}\partial_\mu\tilde{P}) = 0$ identically. The connection is carried by the **spinor** $\psi$ of the minimal left ideal $\mathbb{B}\tilde{P}$, and is defined by the trace pairing of the state module,
+In the biquaternion framework the instantaneous eigenstate of $\tilde{H} = \tfrac12 i\vec R$ is the idempotent $\tilde\Pi_{1,2}(\hat R)$, but the idempotent is **blind** to the connection: $\mathrm{Tr}(\tilde{P}\partial_\mu\tilde{P}) = 0$ identically. The connection is carried by the **spinor** $\psi$ of the minimal left ideal $\mathbb{B}\tilde{P}$, and is defined by the trace pairing of the state module,
 
 $$
 \mathcal{A}_\mu = i\,\frac{\mathrm{Tr}\!\left(\psi^\dagger\partial_\mu\psi\right)}{\mathrm{Tr}\!\left(\psi^\dagger\psi\right)} ,
@@ -445,7 +445,7 @@ $$
 
 The structure group is the unitary part of the centre $\mathbb{C}_{\mathbb{B}}$, the same $U(1)$ that the gauge-principle article attaches to the algebra, and the transformation law is the same additive law as $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$. The relation between the two connections is an exact **analogy of gauge type**, not an identity: they live on different base spaces, are objects of different kinds, and the framework does not equate them.
 
-On spin-1/2 in a slowly rotating field with the loop at polar angle $\theta_0$, the connection is $\mathcal{A} = -\tfrac{1-\cos\theta}{2}d\phi$, the curvature is $\mathcal{F} = -\tfrac12\sin\theta\,d\theta\wedge d\phi$, and both routes give $\gamma_+ = -\Omega/2$ for every $\theta_0$, where $\Omega = 2\pi(1-\cos\theta_0)$ is the solid angle of the loop. The phase is independent of the speed of traversal, unlike the dynamical phase. The two spin branches have equal and opposite curvatures and Chern numbers $C_\pm = \mp 1$, summing to zero. Over a **closed** surface the flux is quantised as the Chern number and is robust under gap-preserving deformations; over an open cap it is the continuous solid angle, so the quantisation is specifically a closed-surface statement, and the surface must avoid the degeneracy point $\mathbf{R} = 0$ where the gap closes and the connection is singular. That point is the parameter-space monopole, distinct from the spacetime monopole of the companion article, though the two share the algebraic shape of a quantised $U(1)$ flux.
+On spin-1/2 in a slowly rotating field with the loop at polar angle $\theta_0$, the connection is $\mathcal{A} = -\tfrac{1-\cos\theta}{2}d\phi$, the curvature is $\mathcal{F} = -\tfrac12\sin\theta\,d\theta\wedge d\phi$, and both routes give $\gamma_+ = -\Omega/2$ for every $\theta_0$, where $\Omega = 2\pi(1-\cos\theta_0)$ is the solid angle of the loop. The phase is independent of the speed of traversal, unlike the dynamical phase. The two spin branches have equal and opposite curvatures and Chern numbers $C_\pm = \mp 1$, summing to zero. Over a **closed** surface the flux is quantised as the Chern number and is robust under gap-preserving deformations; over an open cap it is the continuous solid angle, so the quantisation is specifically a closed-surface statement, and the surface must avoid the degeneracy point $\vec R = 0$ where the gap closes and the connection is singular. That point is the parameter-space monopole, distinct from the spacetime monopole of the companion article, though the two share the algebraic shape of a quantised $U(1)$ flux.
 
 The level is non-degenerate throughout, so the phase is abelian; the non-abelian (degenerate-level) case is unavailable in a single-qubit framework, where degeneracy and gap closing coincide, and it is left as a gap together with the many-qubit tensor product. For a single qubit the article is a reformulation; its structural content is that the parameter space is the Bloch sphere of $\mathbb{M}_+$, that the connection and the Born rule come from one trace pairing, that the connection requires the spinor rather than the density matrix, and that the $U(1)$ of the phase is the centre of the algebra rather than an imported group.
 
@@ -459,13 +459,13 @@ The level is non-degenerate throughout, so the phase is abelian; the non-abelian
 | $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ | Centre of the algebra; $U(1) = U(\mathbb{C}_{\mathbb{B}})$ its unitary part |
 | $\mathbb{M}_+, \mathbb{M}_-$ | Hermitian (informational) and anti-Hermitian (material) sectors |
 | $\mathbb{H}_{\mathbb{B}}$ | Real-quaternion subspace |
-| $\tilde{H} = h_0 e_0 + i\mathbf{h}$ | Hermitian Hamiltonian (observable) |
+| $\tilde{H} = h_0 e_0 + i\vec h$ | Hermitian Hamiltonian (observable) |
 | $\tilde\Pi_{1,2}(\hat{\mu}) = \tfrac12(e_0 \pm i\hat{\mu})$ | Idempotent (pure state / eigenprojector) |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula (Born rule and the pairing used for the connection) |
 | $\mathbb{B}\tilde{P}$ | Minimal left ideal; the state module of spinors $\psi$ |
 | $\psi_\pm$ | Normalized instantaneous eigen-spinor |
 | $\tilde{\rho} = \psi\psi^\dagger/\mathrm{Tr}(\psi^\dagger\psi)$ | Density matrix associated to a spinor |
-| $\mathbf{R}$, $R = \lvert\mathbf{R}\rvert$, $\hat{\mathbf{R}}$ | Parameter vector, its magnitude, its direction; $\hat{\mathbf{R}} \in S^2$ |
+| $\vec R$, $R = \lvert\vec R\rvert$, $\hat R$ | Parameter vector, its magnitude, its direction; $\hat R \in S^2$ |
 | $\mathcal{P} = S^2$ | Parameter space = Bloch sphere of $\mathbb{M}_+$ |
 | $\theta, \phi$ | Polar and azimuthal angles on the Bloch sphere |
 | $\mathcal{A}_\mu$ | Berry connection, $i\,\mathrm{Tr}(\psi^\dagger\partial_\mu\psi)/\mathrm{Tr}(\psi^\dagger\psi)$ |
@@ -473,7 +473,7 @@ The level is non-degenerate throughout, so the phase is abelian; the non-abelian
 | $\mathcal{F}_{\mu\nu} = \partial_\mu\mathcal{A}_\nu - \partial_\nu\mathcal{A}_\mu$ | Berry curvature |
 | $\gamma_\pm$ | Berry phase of the spin-up / spin-down band |
 | $\Omega = 2\pi(1-\cos\theta_0)$ | Solid angle of the cap bounded by the loop |
-| $\Delta = R$ | Spectral gap; closes at $\mathbf{R} = 0$ |
+| $\Delta = R$ | Spectral gap; closes at $\vec R = 0$ |
 | $C_\pm = \mp 1$ | First Chern numbers of the two bands over $S^2$ |
 | $B$, $\Phi : B \to \operatorname{End}(V)$, $V$ | Base (parameter) space, matrix field, fibre $V$ of dimension $n$ |
 | $L_1 \subset B\times K$, $L_2 \subset B\times K\times G_k(V)$, $L_3$ | Eigenvalue, eigenspace and eigenvector incidence spaces of the field |

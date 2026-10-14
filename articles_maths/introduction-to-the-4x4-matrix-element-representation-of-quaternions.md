@@ -64,7 +64,7 @@ The determinant is the **square** of the norm, not the norm: this is the doublin
 | $\mathrm{Vect}(\mathbb{H})$ | $\left\{A:A^{\mathsf T}=-A,\ \operatorname{Tr}A=0\right\}$ intersected with the image | the skew-symmetric matrices of the image, dimension three |
 | $\mathbb{H}$ | the full image | dimension four |
 
-On the scalar line the representation is scalar, $\mathsf{M}_4(s)=sI_4$, with determinant $s^4$ and trace $4s$. On the vector subspace the matrices are skew-symmetric and traceless, and they form the three-dimensional Lie algebra of the image; the square of a pure quaternion being the scalar $-N(\mathbf q)$, the matrix of $\mathbf q^2$ is $-|\mathbf q|^2I_4$. The trace separates the two subspaces exactly as in the $2\times2$ article, and the skew-symmetry is the reading of $\mathbf q^{\natural}=-\mathbf q$ through the transpose identity above.
+On the scalar line the representation is scalar, $\mathsf{M}_4(s)=sI_4$, with determinant $s^4$ and trace $4s$. On the vector subspace the matrices are skew-symmetric and traceless, and they form the three-dimensional Lie algebra of the image; the square of a pure quaternion being the scalar $-N(\vec q)$, the matrix of $\vec q^2$ is $-|\vec q|^2I_4$. The trace separates the two subspaces exactly as in the $2\times2$ article, and the skew-symmetry is the reading of $\vec q^{\natural}=-\vec q$ through the transpose identity above.
 
 ## The Left and the Right Regular Representations
 

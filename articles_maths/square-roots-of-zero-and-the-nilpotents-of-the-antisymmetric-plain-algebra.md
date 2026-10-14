@@ -6,7 +6,7 @@ A root of a central value is defined by an equation in which the product occurs,
 the product (*Definitions for the Study of the 12 Algebraic Structures*, §*Powers, the Square and
 the Roots*). The block of this article is the antisymmetric plain multiplication
 $$
-\tilde\Xi\wedge\tilde Q=\tfrac12\bigl(\tilde\Xi\tilde Q-\tilde Q\tilde\Xi\bigr)=\mathbf\Xi\times\mathbf{Q},
+\tilde\Xi\wedge\tilde Q=\tfrac12\bigl(\tilde\Xi\tilde Q-\tilde Q\tilde\Xi\bigr)=\vec\Xi\times\vec Q,
 $$
 the cross product of the two vector parts, which is alternating and without a unit
 (*Introduction to the Antisymmetric Plain Algebra of Biquaternions*).
@@ -37,7 +37,7 @@ general right side, which is *Square Roots of a General Element in the Antisymme
 Algebra*; or the zero-divisor set in full, which is *Zero Divisors of the Antisymmetric Plain
 Algebra*.
 
-**The results.** For the antisymmetric plain multiplication $\tilde\Xi\wedge\tilde Q=\mathbf\Xi\times\mathbf{Q}$ the square of every element vanishes, $\tilde\Xi\wedge\tilde\Xi=0$, so **every element of the space is a nilpotent**: the origin of index one and every other element of index two. The root set of $0$ is the punctured space $\mathbb{B}\setminus\{0\}$, at once the nonzero square-zero elements, the nonzero nilpotents and the zero divisors; the implication *nilpotent implies zero divisor* therefore holds in the **total** form, with the origin as its only excluded element. The comparison with the parent product is the comparison of the whole space with the pure isotropic cone, of complex dimension two.
+**The results.** For the antisymmetric plain multiplication $\tilde\Xi\wedge\tilde Q=\vec\Xi\times\vec Q$ the square of every element vanishes, $\tilde\Xi\wedge\tilde\Xi=0$, so **every element of the space is a nilpotent**: the origin of index one and every other element of index two. The root set of $0$ is the punctured space $\mathbb{B}\setminus\{0\}$, at once the nonzero square-zero elements, the nonzero nilpotents and the zero divisors; the implication *nilpotent implies zero divisor* therefore holds in the **total** form, with the origin as its only excluded element. The comparison with the parent product is the comparison of the whole space with the pure isotropic cone, of complex dimension two.
 
 ## The Notion and Its Product
 
@@ -219,9 +219,9 @@ Antisymmetric Plain Algebra of Biquaternions*.
 
 **Remark (the parent nilpotents).** The parent general plain bilinear product is associative and
 unital, and its nilpotents are the pure elements with isotropic vector part, the vector parts being
-paired by the complex bilinear form $(\mathbf P,\mathbf Q)=P_1Q_1+P_2Q_2+P_3Q_3$:
+paired by the complex bilinear form $(\vec P,\vec Q)=P_1Q_1+P_2Q_2+P_3Q_3$:
 $$
-\tilde\Xi^{2}=0\iff \Xi_0=0\ \text{and}\ (\mathbf\Xi,\mathbf\Xi)=0
+\tilde\Xi^{2}=0\iff \Xi_0=0\ \text{and}\ (\vec\Xi,\vec\Xi)=0
 $$
 (*Square Roots of Zero and the Nilpotents of the General Plain Algebra*). The parent's nilpotent class is therefore a proper
 cone of the space, of complex dimension two, and the implication *nilpotent implies zero divisor*
@@ -234,19 +234,19 @@ identically zero, so the condition is satisfied by every element.
 
 ## Summary
 
-For the antisymmetric plain multiplication $\tilde\Xi\wedge\tilde Q=\mathbf\Xi\times\mathbf{Q}$ the square of every element vanishes, so every element is a nilpotent: the origin of index one and every other element of index two. The root set of $0$ is the whole punctured space, at once the nonzero square-zero elements, the nonzero nilpotents and the zero divisors, the three descriptions selecting one set. The implication *nilpotent implies zero divisor* holds in the total form, the origin being the only nilpotent excluded by the definition of the zero divisor; the conjugations preserve the class and every remarkable subspace inherits it. The comparison with the parent product is the comparison of the whole space with the pure isotropic cone, and the enlargement is the removal of the scalar part from the square.
+For the antisymmetric plain multiplication $\tilde\Xi\wedge\tilde Q=\vec\Xi\times\vec Q$ the square of every element vanishes, so every element is a nilpotent: the origin of index one and every other element of index two. The root set of $0$ is the whole punctured space, at once the nonzero square-zero elements, the nonzero nilpotents and the zero divisors, the three descriptions selecting one set. The implication *nilpotent implies zero divisor* holds in the total form, the origin being the only nilpotent excluded by the definition of the zero divisor; the conjugations preserve the class and every remarkable subspace inherits it. The comparison with the parent product is the comparison of the whole space with the pure isotropic cone, and the enlargement is the removal of the scalar part from the square.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde\Xi\wedge\tilde Q=\tfrac12(\tilde\Xi\tilde Q-\tilde Q\tilde\Xi)=\mathbf\Xi\times\mathbf{Q}$ | the antisymmetric plain multiplication, the operation $\mathrm{APA}$ |
+| $\tilde\Xi\wedge\tilde Q=\tfrac12(\tilde\Xi\tilde Q-\tilde Q\tilde\Xi)=\vec\Xi\times\vec Q$ | the antisymmetric plain multiplication, the operation $\mathrm{APA}$ |
 | $\tilde\Xi\wedge\tilde\Xi=0$ | the square of every element vanishes |
 | $\mathbb{B}\setminus\{0\}$ | the roots of $0$, at once the nonzero square-zero elements, the nonzero nilpotents and the zero divisors |
 | $\mathbb{B}$ | the nilpotent class of the block, the whole space |
 | index one / index two | the origin / every other element |
-| $(\mathbf P,\mathbf Q)=P_1Q_1+P_2Q_2+P_3Q_3$ | the complex bilinear form on the vector parts |
-| $\Xi_0=0,\ (\mathbf\Xi,\mathbf\Xi)=0$ | the nilpotents of the parent plain product, a proper cone of complex dimension two |
+| $(\vec P,\vec Q)=P_1Q_1+P_2Q_2+P_3Q_3$ | the complex bilinear form on the vector parts |
+| $\Xi_0=0,\ (\vec\Xi,\vec\Xi)=0$ | the nilpotents of the parent plain product, a proper cone of complex dimension two |
 
 ## Further Reading
 

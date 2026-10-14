@@ -6,7 +6,7 @@ The quaternions form a division algebra, so the units of the plain product are e
 
 **Boundaries.** The space and its topology are *Introduction to Topology on the Quaternions*, above this article in this category; the norm and the inverse formula are *Norm and Invertibility in the General Plain Algebra*, above this article in this category; the finite subgroups of the unit sphere are *Quaternion Orders and Finite Groups of Units*, below this article in this category; the exponential and the Lie structure are *Quaternion Exponential and Lie Group Structure*, below this article in this category; the rotations are *Quaternion Rotations and Reflections*, in `### Geometry`.
 
-**Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$; an element is $\tilde q=q_0e_0+\mathbf q$ with $\mathbf q=\sum_kq_ke_k$. The **quaternion form** is $N(\tilde q)=q_0^{2}+|\mathbf q|^{2}$ and the **norm** is $\lvert\tilde q\rvert=\sqrt{N(\tilde q)}$; the **quaternion conjugation** is $\tilde q^{\natural}=q_0e_0-\mathbf q$, the bar is the identity. The **unit sphere** is $S^3=\{\tilde q:N(\tilde q)=1\}$, the **group of units** is $\mathbb{H}^\times=\{\tilde q\neq0\}$.
+**Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$; an element is $\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_kq_ke_k$. The **quaternion form** is $N(\tilde q)=q_0^{2}+|\vec q|^{2}$ and the **norm** is $\lvert\tilde q\rvert=\sqrt{N(\tilde q)}$; the **quaternion conjugation** is $\tilde q^{\natural}=q_0e_0-\vec q$, the bar is the identity. The **unit sphere** is $S^3=\{\tilde q:N(\tilde q)=1\}$, the **group of units** is $\mathbb{H}^\times=\{\tilde q\neq0\}$.
 
 ## The Group of Units
 
@@ -63,13 +63,13 @@ $$
 \exp(\tilde q)=\sum_{n\geq0}\frac{\tilde q^{n}}{n!}
 $$
 
-converges everywhere, takes values in $\mathbb{H}^\times$, is continuous, and is surjective onto $\mathbb{H}^\times$; on the pure quaternions it is $\exp(\mathbf v)=\cos\lvert\mathbf v\rvert+\dfrac{\mathbf v}{\lvert\mathbf v\rvert}\sin\lvert\mathbf v\rvert$, a unit quaternion. Restricted to the open band $\{\tilde q:\lvert\mathbf q\rvert<\pi\}$ the map $\exp$ is a homeomorphism onto $\mathbb{H}^\times$ with the negative scalar ray removed.
+converges everywhere, takes values in $\mathbb{H}^\times$, is continuous, and is surjective onto $\mathbb{H}^\times$; on the pure quaternions it is $\exp(\vec v)=\cos\lvert\vec v\rvert+\dfrac{\vec v}{\lvert\vec v\rvert}\sin\lvert\vec v\rvert$, a unit quaternion. Restricted to the open band $\{\tilde q:\lvert\vec q\rvert<\pi\}$ the map $\exp$ is a homeomorphism onto $\mathbb{H}^\times$ with the negative scalar ray removed.
 
-*Proof.* The series converges by comparison with the real exponential, gives $\lvert\exp(\tilde q)\rvert=e^{q_0}\neq0$, so the values are units; the pure formula is the splitting of the series into its even and odd parts. Writing $\tilde q=q_0e_0+\mathbf v$, $\exp(\tilde q)=e^{q_0}\exp(\mathbf v)$, and $\exp(\mathbf v)=\cos\lvert\mathbf v\rvert+\widehat{\mathbf v}\sin\lvert\mathbf v\rvert$ with $\widehat{\mathbf v}=\mathbf v/\lvert\mathbf v\rvert$; every unit quaternion is uniquely $(\cos\theta,\widehat{\mathbf v}\sin\theta)$ with $\theta\in[0,\pi)$ and a unit imaginary direction, except the value $\theta=\pi$, which is $-e_0$, so the unit part of the image misses exactly $-e_0$ and the positive factor misses nothing; the inverse assigns to a unit quaternion its angle $\theta\in[0,\pi)$ and direction. Continuity and openness of the inverse are the continuity of the arccosine and the direction, and the excluded set is the negative scalar ray $-\mathbb{R}_{>0}e_0$.
+*Proof.* The series converges by comparison with the real exponential, gives $\lvert\exp(\tilde q)\rvert=e^{q_0}\neq0$, so the values are units; the pure formula is the splitting of the series into its even and odd parts. Writing $\tilde q=q_0e_0+\vec v$, $\exp(\tilde q)=e^{q_0}\exp(\vec v)$, and $\exp(\vec v)=\cos\lvert\vec v\rvert+\hat v\sin\lvert\vec v\rvert$ with $\hat v=\vec v/\lvert\vec v\rvert$; every unit quaternion is uniquely $(\cos\theta,\hat v\sin\theta)$ with $\theta\in[0,\pi)$ and a unit imaginary direction, except the value $\theta=\pi$, which is $-e_0$, so the unit part of the image misses exactly $-e_0$ and the positive factor misses nothing; the inverse assigns to a unit quaternion its angle $\theta\in[0,\pi)$ and direction. Continuity and openness of the inverse are the continuity of the arccosine and the direction, and the excluded set is the negative scalar ray $-\mathbb{R}_{>0}e_0$.
 
-**Corollary (the exponential generates the unit group).** Every unit is $\exp(\tilde q)$ for some $\tilde q$, and every unit quaternion is $\exp(\mathbf v)$ for a pure $\mathbf v$ with $\lvert\mathbf v\rvert\in[0,\pi]$; the exponential is a local homeomorphism at the origin, with local inverse the quaternion logarithm of *Quaternion Exponential and Lie Group Structure*.
+**Corollary (the exponential generates the unit group).** Every unit is $\exp(\tilde q)$ for some $\tilde q$, and every unit quaternion is $\exp(\vec v)$ for a pure $\vec v$ with $\lvert\vec v\rvert\in[0,\pi]$; the exponential is a local homeomorphism at the origin, with local inverse the quaternion logarithm of *Quaternion Exponential and Lie Group Structure*.
 
-*Proof.* The surjectivity onto $\mathbb{H}^\times$ is the theorem; the unit statement is the restriction to the pure part, allowing the value $\lvert\mathbf v\rvert=\pi$ for $-e_0$; the local statement is the inverse function theorem applied on the band, where the differential at the origin is the identity.
+*Proof.* The surjectivity onto $\mathbb{H}^\times$ is the theorem; the unit statement is the restriction to the pure part, allowing the value $\lvert\vec v\rvert=\pi$ for $-e_0$; the local statement is the inverse function theorem applied on the band, where the differential at the origin is the identity.
 
 ## Summary
 
@@ -83,8 +83,8 @@ The group of units of the quaternion algebra is the punctured space $\mathbb{H}^
 | $\mathbb{H}^\times\cong\mathbb{R}_{>0}\times S^3$ | the product decomposition |
 | $Sp(1)=S^3=\{N=1\}$ | the compact maximal subgroup |
 | $\{\pm e_0\}$, $Sp(1)/\{\pm e_0\}$ | the centre and the rotation quotient |
-| $\exp(\tilde q)=e^{q_0}\bigl(\cos\lvert\mathbf q\rvert+\widehat{\mathbf q}\sin\lvert\mathbf q\rvert\bigr)$ | the exponential, onto $\mathbb{H}^\times$ |
-| $\lvert\mathbf q\rvert<\pi$ | the band on which $\exp$ is a homeomorphism onto its image |
+| $\exp(\tilde q)=e^{q_0}\bigl(\cos\lvert\vec q\rvert+\hat q\sin\lvert\vec q\rvert\bigr)$ | the exponential, onto $\mathbb{H}^\times$ |
+| $\lvert\vec q\rvert<\pi$ | the band on which $\exp$ is a homeomorphism onto its image |
 
 ## Further Reading
 

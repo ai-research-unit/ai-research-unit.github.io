@@ -19,7 +19,7 @@ Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis 
 
 ### The Three Maps
 
-The inner automorphism determined by a unit $u$, $\iota_u(\tilde q) = u\tilde q u^{-1}$, is an involution exactly when $\iota_{u^2} = \mathrm{id}$, that is when $u^2$ is real: for $u = u_0+\mathbf{u}$ one has $u^2 = u_0^2-N(\mathbf{u})+2u_0\mathbf{u}$, real precisely when $u$ is real or pure imaginary. On the three basis imaginary units this gives three non-trivial involutions, and one writes $\iota_0 = \mathrm{id}$ for the identity.
+The inner automorphism determined by a unit $u$, $\iota_u(\tilde q) = u\tilde q u^{-1}$, is an involution exactly when $\iota_{u^2} = \mathrm{id}$, that is when $u^2$ is real: for $u = u_0+\vec u$ one has $u^2 = u_0^2-N(\vec u)+2u_0\vec u$, real precisely when $u$ is real or pure imaginary. On the three basis imaginary units this gives three non-trivial involutions, and one writes $\iota_0 = \mathrm{id}$ for the identity.
 
 **Definition.** For $k = 1,2,3$ the **involution about the axis $e_k$** is
 
@@ -279,16 +279,16 @@ Together with the diagonal theorem, these formulas express each of the sixteen p
 *Proof.* By the product rule of *Quaternion Algebra*, the product with the conjugate is
 
 $$
-\tilde q\tilde p^{\natural} = (q_0p_0+\mathbf q\cdot\mathbf p)+(p_0\mathbf q-q_0\mathbf p-\mathbf q\times\mathbf p) ,
+\tilde q\tilde p^{\natural} = (q_0p_0+\vec q\cdot\vec p)+(p_0\vec q-q_0\vec p-\vec q\times\vec p) ,
 $$
 
-so the $e_k$-component of $\tilde q\tilde p^{\natural}$ is $p_0q_k-q_0p_k-(\mathbf q\times\mathbf p)_k$. Taking $\tilde q = \tilde p$ and $\tilde p = \iota_j\tilde q$, whose components are $q_0$ and $\sigma_{j\nu}q_\nu$, gives
+so the $e_k$-component of $\tilde q\tilde p^{\natural}$ is $p_0q_k-q_0p_k-(\vec q\times\vec p)_k$. Taking $\tilde q = \tilde p$ and $\tilde p = \iota_j\tilde q$, whose components are $q_0$ and $\sigma_{j\nu}q_\nu$, gives
 
 $$
 B_{j,k} = q_0p_k-p_0\sigma_{jk}q_k-p_l\sigma_{jm}q_m+p_m\sigma_{jl}q_l ,
 $$
 
-with $(k,l,m)$ cyclic, since $(\mathbf q\times\mathbf p)_k = q_lp_m-q_mp_l$.
+with $(k,l,m)$ cyclic, since $(\vec q\times\vec p)_k = q_lp_m-q_mp_l$.
 
 ### Consequences
 

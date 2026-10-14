@@ -137,15 +137,15 @@ $$
 
 the **unsigned inner conjugation** and the **signed inner conjugation**; the second is the first with the grade involution $\alpha=\natural$ inserted on the left factor, and it is the operator of the general theory of *The Clifford, Pin and Spin Groups with Signed Inner Conjugation*, where $\mathrm{Ad}^{\alpha}_{U}(v)=\alpha(U)vU^{-1}$.
 
-**Proposition (the difference is the vector part).** For an invertible $\tilde A$ with scalar part $a_0$ and vector part $\mathbf A$,
+**Proposition (the difference is the vector part).** For an invertible $\tilde A$ with scalar part $a_0$ and vector part $\vec A$,
 
 $$
-\mathrm{Ad}^{\alpha}_{\tilde A}(\tilde X)-\mathrm{Ad}_{\tilde A}(\tilde X)=\bigl(\tilde A^{\natural}-\tilde A\bigr)\tilde X\tilde A^{-1}=-2\,\mathbf A\,\tilde X\tilde A^{-1},
+\mathrm{Ad}^{\alpha}_{\tilde A}(\tilde X)-\mathrm{Ad}_{\tilde A}(\tilde X)=\bigl(\tilde A^{\natural}-\tilde A\bigr)\tilde X\tilde A^{-1}=-2\,\vec A\,\tilde X\tilde A^{-1},
 $$
 
 moreover $\mathrm{Ad}^{\alpha}_{\tilde A}=\mathrm{Ad}_{\tilde A}$ when $\tilde A$ is central, and $\mathrm{Ad}^{\alpha}_{\tilde A}=-\mathrm{Ad}_{\tilde A}$ when $\tilde A$ lies in the vector subspace $V$. The second case is the insertion of the sign at its sharpest: for $\tilde A\in V$ the whole operator is negated.
 
-*Proof.* The first two displays are the definition, and $\tilde A^{\natural}-\tilde A=-2\mathbf A$ with $\mathbf A=\tilde A-a_0e_0$. If $\mathbf A=0$ the difference vanishes; if $a_0=0$ then $\tilde A^{\natural}=-\tilde A$.
+*Proof.* The first two displays are the definition, and $\tilde A^{\natural}-\tilde A=-2\vec A$ with $\vec A=\tilde A-a_0e_0$. If $\vec A=0$ the difference vanishes; if $a_0=0$ then $\tilde A^{\natural}=-\tilde A$.
 
 **Worked example ($\tilde A=e_0+e_1$, mixed, neither central nor in $V$).** The two operators and their difference are
 
@@ -176,7 +176,7 @@ $$
 \end{pmatrix}.
 $$
 
-The unsigned operator is the identity on the plane $\mathbb{C}\{e_0,e_1\}$ and the quarter turn $e_2\mapsto e_3$, $e_3\mapsto-e_2$ on $\mathbb{C}\{e_2,e_3\}$; the signed operator interchanges the two roles, it is a quarter turn on $\mathbb{C}\{e_0,e_1\}$ and the identity on $\mathbb{C}\{e_2,e_3\}$. The difference is twice the vector part, $2\mathbf A=2e_1$, and it reads as the matrix above.
+The unsigned operator is the identity on the plane $\mathbb{C}\{e_0,e_1\}$ and the quarter turn $e_2\mapsto e_3$, $e_3\mapsto-e_2$ on $\mathbb{C}\{e_2,e_3\}$; the signed operator interchanges the two roles, it is a quarter turn on $\mathbb{C}\{e_0,e_1\}$ and the identity on $\mathbb{C}\{e_2,e_3\}$. The difference is twice the vector part, $2\vec A=2e_1$, and it reads as the matrix above.
 
 **Worked example (the two extreme cases).** For $\tilde A=ie_0$, central, both operators are the identity: $\mathrm{Ad}^{\alpha}_{ie_0}=\mathrm{Ad}_{ie_0}=\mathrm{id}$. For $\tilde A=e_1\in V$, of norm one, with $e_1^{-1}=-e_1$,
 

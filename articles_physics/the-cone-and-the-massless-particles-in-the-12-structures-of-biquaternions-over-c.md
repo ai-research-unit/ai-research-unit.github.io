@@ -60,7 +60,7 @@ which is the determinant of the matrix model $\mathsf{M}_2$ with $\mathsf{M}_2(e
 $\mathsf{M}_2(e_k)=-i\sigma_k$. The subspaces are the anti-Hermitian material sector $\mathbb{M}_-$,
 the Hermitian informational sector $\mathbb{M}_+$, the real-quaternion subspace
 $\mathbb{H}_{\mathbb{B}}$ and the centre $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_{\mathbb{R}}\{e_0,ie_0\}$.
-The material coordinate is $\tilde Q=ict\,e_0+\mathbf{x}$, so that $N(\tilde Q)=-c^{2}t^{2}+\mathbf{x}^{2}$,
+The material coordinate is $\tilde Q=ict\,e_0+\vec x$, so that $N(\tilde Q)=-c^{2}t^{2}+\vec x^{2}$,
 and $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium. The trace formula is
 $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)=2\langle\tilde P,\tilde H\rangle$. The
 plain product is written $\tilde P\tilde Q$ and the plain sesquilinear product
@@ -77,8 +77,8 @@ $$
 N(\tilde Q)=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^{2}=\det\mathsf{M}_2(\tilde Q).
 $$
 
-On the material sector the norm is the Minkowski interval, $N(\tilde Q)=-c^{2}t^{2}+\mathbf{x}^{2}$ for
-$\tilde Q=ict\,e_0+\mathbf{x}$, so its zero set is the light cone $|\mathbf{x}|=c|t|$. The algebraic
+On the material sector the norm is the Minkowski interval, $N(\tilde Q)=-c^{2}t^{2}+\vec x^{2}$ for
+$\tilde Q=ict\,e_0+\vec x$, so its zero set is the light cone $|\vec x|=c|t|$. The algebraic
 character of that zero set is the subject of *The Light Cone as the Biquaternion Zero-Divisor Cone*: a
 nonzero biquaternion has vanishing norm if and only if it is a zero divisor, that is, if and only if it
 annihilates some nonzero element. The same article splits the zero divisors into the **nilpotents**, whose
@@ -130,8 +130,8 @@ objects that happen to be similar. They are the two faces of one cone, read in t
 matrix model makes them literally the same set of rank-one conditions.
 
 A third reading of the same set appears on the complexified phase space of *The Symplectic Form and the
-Biquaternion Norm Cone*, where a pure-vector phase-space biquaternion $\tilde Z=\mathbf q+i\mathbf p$ is
-null exactly when $\lvert\mathbf q\rvert=\lvert\mathbf p\rvert$ and $\mathbf q\cdot\mathbf p=0$: the cone
+Biquaternion Norm Cone*, where a pure-vector phase-space biquaternion $\tilde Z=\vec q+i\vec p$ is
+null exactly when $\lvert\vec q\rvert=\lvert\vec p\rvert$ and $\vec q\cdot\vec p=0$: the cone
 is the set where the configuration and the momentum magnitudes are equal and the two vectors are
 orthogonal, which is the isotropic locus of the sector sign, since $B=-N$ on the pure subspace. There the
 cone is a genuinely complex object and not a physical locus: the condition equates two quantities of
@@ -146,7 +146,7 @@ they are kept apart.
 - **The zero-divisor cone**, $\{\tilde Q\neq0:N(\tilde Q)=0\}$, the null set of the norm. It is the
   subject of this article, and "the cone" without qualification always means this set here.
 - **The state cone** of the informational sector, the future cone of $\mathbb{M}_+$, that is
-  $\{\alpha e_0+i\mathbf{w}:\alpha\geq\lvert\mathbf{w}\rvert\}$, sliced by $\mathrm{Tr}\,\tilde\varrho=1$
+  $\{\alpha e_0+i\vec w:\alpha\geq\lvert\vec w\rvert\}$, sliced by $\mathrm{Tr}\,\tilde\varrho=1$
   for the states. It is a cone of *positive* elements, and it is the image of the sesquilinear square; the
   zero-divisor cone is its rank-one boundary, as the next sections show.
 - **The cone of an operation**, the one-dimensional ray $\mathbb{R}_{\ge0}e_0$ that is the image of the
@@ -264,7 +264,7 @@ The unit $e_0$ is two-sided, and the invertible elements of the row are the comp
 
 ### $\mathrm{APA}$, the antisymmetric plain algebra — rotation
 
-The product is the commutator $\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf P\times\mathbf Q$, which is
+The product is the commutator $\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\vec P\times\vec Q$, which is
 alternating, and the left multiplication has real rank four off the cone and four on it. The cone is nothing
 for the row: the multiplication is already singular on the pure subspace, and the centre lies in its kernel.
 **The physical interpretation** is that the antisymmetric plain product is the bracket of rotations, a
@@ -374,8 +374,7 @@ The row has no unit, so the complement of the enlarged set, $\{Q_0\neq0,\ \mathr
 ### $\mathrm{AQS}$, the antisymmetric quaternionic sesqualgebra — polarisation
 
 The product is the antisymmetrisation
-$\tfrac12(\tilde P^{\natural}\tilde Q^{*}-\overline{\tilde Q^{\natural}\tilde P^{*}})=\mathbf
-P\times\overline{\mathbf Q}$, the conjugate cross product, which is alternating. The rank is four off the
+$\tfrac12(\tilde P^{\natural}\tilde Q^{*}-\overline{\tilde Q^{\natural}\tilde P^{*}})=\vec P\times\overline{\vec Q}$, the conjugate cross product, which is alternating. The rank is four off the
 cone and four on it: the cone is nothing for the row, and the centre lies in the kernel.
 **The physical interpretation** is the polarisation of the gauge coupling: a conjugate bracket is not a
 composition, so no invertibility is lost on the cone. The reading is *The Cross Product of a Vector with Its
@@ -404,7 +403,7 @@ $t$. The pure isotropic cone is therefore the square-zero locus, and its nilpote
 first power is nonzero and the second vanishes.
 
 The square-zero locus is a proper part of the cone. An idempotent multiple, for instance the Hermitian
-idempotent $\tilde\Pi=\tfrac12(e_0+i\hat{\boldsymbol\mu})$ with
+idempotent $\tilde\Pi=\tfrac12(e_0+i\hat\mu)$ with
 $\tilde\Pi^{2}=\tilde\Pi$, has vanishing norm and a nonzero square, so the cone is the disjoint union of
 the square-zero elements and the elements whose square is not zero.
 
@@ -484,7 +483,7 @@ B(\tilde Q,\tilde Q)=\mathrm{Sc}(\tilde Q^{2})=Q_0^{2}-\sum_k Q_k^{2},
 $$
 
 which is not the norm: the vector part enters with the opposite sign. On the material sector, where
-$Q_0=ict$ and the $Q_k$ are real, the sector sign is $-c^{2}t^{2}-\mathbf{x}^{2}$, a negative definite
+$Q_0=ict$ and the $Q_k$ are real, the sector sign is $-c^{2}t^{2}-\vec x^{2}$, a negative definite
 form, so the material sector contains no real direction on which $B$ vanishes. The light cone is not the
 null cone of the sector sign. *The General Plain Bilinear Product on the Material Sector* states the same separation
 from the other side, that the sector sign is definite on each sector and has no cone there, so that the
@@ -561,7 +560,7 @@ composition's own symmetry group preserves.
 Two facts about the material coordinates are worth separating here. The nilpotent cone of the composition
 band, the pure isotropic set of the nilpotent-index section, is the set of elements whose square vanishes;
 the roots of $0$ in the equation $\tilde X^{2}=0$ are exactly those nilpotents, and they are the subject of
-*Square Roots: the Local Complex Structure, the Light Cone and the Mass Shell*. A general element of the
+*Square Roots of Zero and the Nilpotents: the Light Cone*. A general element of the
 light cone need not be nilpotent: the idempotent multiples of the cone have nonzero square, and they are
 the elements that carry the rank-one structure used in the next section.
 
@@ -630,22 +629,22 @@ N(\tilde X\star\tilde X)=\lvert N(\tilde X)\rvert^{2},
 \mathrm{rank}\,\tilde X\star\tilde X=1\ \Longleftrightarrow\ N(\tilde X)=0.
 $$
 
-Writing the image as $\alpha e_0+i\mathbf{w}$ with $\alpha$ real and $\mathbf{w}$ a real vector, the
-positivity is the inequality $\alpha\geq\lvert\mathbf{w}\rvert$, and the determinant identity is
+Writing the image as $\alpha e_0+i\vec w$ with $\alpha$ real and $\vec w$ a real vector, the
+positivity is the inequality $\alpha\geq\lvert\vec w\rvert$, and the determinant identity is
 
 $$
-\alpha^{2}-\lvert\mathbf{w}\rvert^{2}=\lvert N(\tilde X)\rvert^{2}.
+\alpha^{2}-\lvert\vec w\rvert^{2}=\lvert N(\tilde X)\rvert^{2}.
 $$
 
 Three statements follow, and together they are the band's reading of the cone.
 
 - **The image is the state cone.** The image of the sesquilinear square is exactly the set of positive
-  elements of $\mathbb{M}_+$, that is, the set $\{\alpha e_0+i\mathbf{w}:\alpha\geq\lvert\mathbf{w}\rvert\}$.
+  elements of $\mathbb{M}_+$, that is, the set $\{\alpha e_0+i\vec w:\alpha\geq\lvert\vec w\rvert\}$.
   Every positive element is a sesquilinear square, by taking the positive square root, and the map is onto
   by that construction. This set is the future light cone of the informational sector, and *The Spinor
   Space as a Hilbert Space of the General Plain Sesqualgebra* identifies it with the state cone.
 - **The boundary is the image of the zero divisors.** The rank-one elements are the boundary
-  $\alpha=\lvert\mathbf{w}\rvert$, and by the rank criterion they are precisely the images of the cone. A
+  $\alpha=\lvert\vec w\rvert$, and by the rank criterion they are precisely the images of the cone. A
   massless element therefore maps to a rank-one positive element, which is a pure state, and the massless
   slice of the cone is the pure-state boundary of the state cone.
 - **The probability of a massless element is not zero.** The weight $H$ of the four-forms section is
@@ -683,18 +682,18 @@ The photon is the massless case the corpus has built, and it exhibits both jobs 
 four-momentum is
 
 $$
-\tilde P=i\frac{E}{c}e_0+\mathbf{p},
+\tilde P=i\frac{E}{c}e_0+\vec p,
 \qquad
-N(\tilde P)=-\frac{E^{2}}{c^{2}}+\mathbf{p}^{2},
+N(\tilde P)=-\frac{E^{2}}{c^{2}}+\vec p^{2},
 $$
 
-so the massless condition $N(\tilde P)=0$ is $\lvert\mathbf{p}\rvert=E/c$, and the four-momentum is a zero
+so the massless condition $N(\tilde P)=0$ is $\lvert\vec p\rvert=E/c$, and the four-momentum is a zero
 divisor. The lightlike momentum has a second face. With
-$\hat{\mathbf{n}}=\mathbf{p}/\lvert\mathbf{p}\rvert$ and
-$\tilde\Pi(\hat{\boldsymbol\mu})=\tfrac12(e_0+i\hat{\boldsymbol\mu})$, it is the imaginary multiple
+$\hat n=\vec p/\lvert\vec p\rvert$ and
+$\tilde\Pi(\hat\mu)=\tfrac12(e_0+i\hat\mu)$, it is the imaginary multiple
 
 $$
-\tilde P=2i\frac{E}{c}\,\tilde\Pi(-\hat{\mathbf{n}})
+\tilde P=2i\frac{E}{c}\,\tilde\Pi(-\hat n)
 $$
 
 of a rank-one Hermitian idempotent, so it is not merely non-invertible but a scaled projector. That
@@ -705,7 +704,7 @@ and What It Does Not*; the comparison uses them and does not re-derive them.
 The probability band completes the picture. The sesquilinear square of the same momentum is
 
 $$
-\tilde P\star\tilde P=4\frac{E^{2}}{c^{2}}\,\tilde\Pi(-\hat{\mathbf{n}}),
+\tilde P\star\tilde P=4\frac{E^{2}}{c^{2}}\,\tilde\Pi(-\hat n),
 $$
 
 a positive multiple of the **same** projector. The **interpretation**, and it is this article's, is that
@@ -907,7 +906,7 @@ The cone is the solution set of the equation $\tilde X^{2}=0$ that is not the or
 in the four general products it is a different part of the same cone, because the square is a different
 square while the zero-divisor set is one set:
 
-- $\mathrm{GPA}$: the pure isotropic cone $\{Q_0=0,\ (\mathbf Q,\mathbf Q)=0\}$, of real dimension four,
+- $\mathrm{GPA}$: the pure isotropic cone $\{Q_0=0,\ (\vec Q,\vec Q)=0\}$, of real dimension four,
   the lightlike displacements of the composition;
 - $\mathrm{GQA}$: the whole cone $\mathcal{C}$, of real dimension six, because the natural square is the
   norm and every lightlike element annihilates itself;
@@ -946,7 +945,7 @@ over $\mathbb{C}$*; this subsection gathers their tables for the cone.
 The dynamics has the cone for support, and the corpus computes the support.
 
 The wave operator is the norm of the gradient, $\Box=\tilde\nabla\tilde\nabla^{\natural}$, whose symbol is
-the norm of the four-wavevector; the zero set of the symbol, $\omega^{2}=c^{2}\mathbf{k}^{2}$, is the light
+the norm of the four-wavevector; the zero set of the symbol, $\omega^{2}=c^{2}\vec k^{2}$, is the light
 cone, which in the algebra is the zero-divisor cone, and the mass shell $N=-\mu^{2}$ is the **shifted cone**
 (*The Biquaternion D'Alembertian and Its Green's Functions*). The invariant kernel depends on the cone
 variable $\rho^{2}=-c^{2}t^{2}+R^{2}$, so it is **singular on the cone** and is not defined there as a
@@ -979,17 +978,17 @@ In the informational sector the same set is the boundary of positivity, and the 
 that boundary.
 
 The **positive cone** of the Hermitian sector is the future light cone of the norm: for
-$\tilde H=h_0e_0+i\mathbf{h}$, positivity is $N(\tilde H)=h_0^{2}-\lvert\mathbf{h}\rvert^{2}\geq0$ together
-with $h_0\geq0$, that is $h_0\geq\lvert\mathbf{h}\rvert$, and this cone is **self-dual** with respect to the
+$\tilde H=h_0e_0+i\vec h$, positivity is $N(\tilde H)=h_0^{2}-\lvert\vec h\rvert^{2}\geq0$ together
+with $h_0\geq0$, that is $h_0\geq\lvert\vec h\rvert$, and this cone is **self-dual** with respect to the
 trace pairing, which is the algebraic reason the pairing serves at once as the Born rule and as the duality
 that makes the measurement formalism work (*POVMs and the Positive Cone in Biquaternionic Form*). The
-**states** are its trace-one slice: $\tilde\rho=\tfrac12(e_0+i\mathbf{r})$ with
-$\lvert\mathbf{r}\rvert\leq1$, the closed unit ball whose boundary — the pure states — is at once the
+**states** are its trace-one slice: $\tilde\rho=\tfrac12(e_0+i\vec r)$ with
+$\lvert\vec r\rvert\leq1$, the closed unit ball whose boundary — the pure states — is at once the
 idempotents, the extreme rays of the cone and the zero divisors at trace one
 (*The Bloch Ball as the Trace-One Slice of the Future Light Cone*). The **entropy** is written in the
 biquaternion-norm coordinate and leaves the pure states, which are the cone, with **infinite slope**
 (*Von Neumann Entropy and the Biquaternion Norm*). Two further readings attach to the same boundary: the
-fringe visibility of the double-slit experiment obeys $V^{2}+P^{2}=\lvert\mathbf{r}\rvert^{2}\leq1$ with
+fringe visibility of the double-slit experiment obeys $V^{2}+P^{2}=\lvert\vec r\rvert^{2}\leq1$ with
 equality exactly on the cone, so maximal contrast is the statement that the which-path state is a zero
 divisor (*The Double-Slit Experiment in Biquaternionic Form*); and the fully polarised states of light,
 which are the points of the Poincaré sphere, are exactly the norm cone of the Hermitian sector, the
@@ -1061,8 +1060,8 @@ Readings of a Biquaternion: Norm, Rank, Charge and Scale*). The **Krein form** i
 **Krein cone**, the set of elements of non-negative Krein norm with respect to which the framework's
 indefinite-sector positivity is stated; its inertia is $(1,3,0)$ on the complexified Hermitian subspace and
 $(2,6,0)$ over $\mathbb{R}$ (*Indefinite Positivity and the Krein Cone of the Biquaternion Algebra*).
-The **vacuum** lies on the cone: the minimal idempotent $\tilde\Pi(\hat{\boldsymbol\mu})$ is null for every
-unit $\hat{\boldsymbol\mu}$, so $e_0=\tilde\Pi(\hat{\boldsymbol\mu})+\tilde\Pi(-\hat{\boldsymbol\mu})$
+The **vacuum** lies on the cone: the minimal idempotent $\tilde\Pi(\hat\mu)$ is null for every
+unit $\hat\mu$, so $e_0=\tilde\Pi(\hat\mu)+\tilde\Pi(-\hat\mu)$
 decomposes the unit along two null directions — the algebraic shape of a light-cone frame — and the cone is
 the union of the rays that the projectors single out (*The Biquaternion Vacuum as a Minimal Idempotent*).
 The **Lorentz group is the group of norm automorphisms** whose nonzero null vectors are the zero divisors,
@@ -1114,7 +1113,7 @@ made with the **Krein cone** of the negative of the interval
 
 Two further grid statements belong here. The cone's **isotropic lines are its Peirce lines**: the doubly null
 lines, the isotropic lines that lie in the norm cone as well, are exactly the Peirce lines
-$\mathbb{C}(e_0\pm i\hat{\boldsymbol\mu})$ spanned by the rank-one Hermitian idempotents, each generating a
+$\mathbb{C}(e_0\pm i\hat\mu)$ spanned by the rank-one Hermitian idempotents, each generating a
 minimal left and a minimal right ideal of complex dimension two all of whose elements are zero divisors, and
 the intersection of the cone with the Krein null set is the union of those lines, a cone of real dimension
 four (*The Isotropic Structure of the General Quaternionic Sesqualgebra*, *Ideals and Peirce Decomposition of
@@ -1311,14 +1310,14 @@ non-invertible without being lightlike.
 - "The cone" without qualification is the zero-divisor cone; the state cone is the future cone of $\mathbb{M}_+$, and the cone of an operation is the ray $\mathbb{R}_{\ge0}e_0$. The gauge metric has its own null set $\{K=0\}$.
 - The twelve rows: GPA, GQA, GPS, GQS the four general products; SPA, SQA, SPS, SQS the symmetric parts; APA, AQA, APS, AQS the antisymmetric parts; $L_{\tilde P}$ the left multiplication of the row, of rank read on the eight real parameters; $\Theta_{\tilde Q}$ the sandwich $\Theta_{\tilde Q}(\tilde R)=\tilde Q\tilde R\tilde Q^{*}$.
 - $\mathbb{M}_\pm$ the anti-Hermitian and Hermitian sectors; $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace; $\mathbb{C}_{\mathbb{B}}$ the centre.
-- $\tilde\Pi$ a plain idempotent, $\tilde\Pi^{2}=\tilde\Pi$; $\tilde\Pi(\hat{\boldsymbol\mu})=\tfrac12(e_0+i\hat{\boldsymbol\mu})$; $\Box=\tilde\nabla\tilde\nabla^{\natural}$.
+- $\tilde\Pi$ a plain idempotent, $\tilde\Pi^{2}=\tilde\Pi$; $\tilde\Pi(\hat\mu)=\tfrac12(e_0+i\hat\mu)$; $\Box=\tilde\nabla\tilde\nabla^{\natural}$.
 - $\mathsf{M}_2$ the $2\times2$ matrix model, $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$; $\mathrm{ISO}(2)$ the massless little group.
 
 ## Further Reading
 
 - The physics companion, in the same section of the menu: *Composition and Probability: the General Plain Algebra and the General Plain Sesqualgebra of Biquaternions Compared*.
 - The mathematics companion: *The General Plain Algebra and the General Plain Sesqualgebra of Biquaternions Compared*.
-- The cone in the algebra: *The Light Cone as the Biquaternion Zero-Divisor Cone*; *Zero Divisors as a Physical Locus in Biquaternionic Form*; *Square Roots: the Local Complex Structure, the Light Cone and the Mass Shell*.
+- The cone in the algebra: *The Light Cone as the Biquaternion Zero-Divisor Cone*; *Zero Divisors as a Physical Locus in Biquaternionic Form*; *Square Roots of Zero and the Nilpotents: the Light Cone*.
 - The cone in the material sector: *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*; *Causality and the Light Cone as an Information Barrier in Biquaternionic Form*; *The Boost of an Electromagnetic Plane Wave as a Rotation and a Dilation*.
 - The cone in the informational sector: *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*; *The Bloch Ball as the Trace-One Slice of the Future Light Cone*; *The Spinor Space as a Hilbert Space of the General Plain Sesqualgebra*; *Mass, Rank and the Positivity of the Dagger*.
 - The massless particles: *The Null Four-Momentum: What the Cone Derives and What It Does Not*; *The Photon in Biquaternionic Form*; *Canonical Quantization of the Biquaternion Graviton Field*; *Canonical Quantization of the Biquaternion Rarita–Schwinger Field*; *Chiral Fermions in the Biquaternion Framework*; *Conformal Invariance and the Massless Limit in Biquaternionic Form*; *The Celestial Sphere of the Null Cone: Null Directions, Chirality and the Phase*.

@@ -31,7 +31,7 @@ $$
 and $e_je_k = -e_ke_j$ for $j \neq k$. The scalar imaginary $i$ satisfies $i^2 = -1$ and commutes with every $e_\mu$. The conjugations are the ones defined in *Conventions in the Biquaternion Universe*: quaternion conjugation ${}^{\natural}$ ($e_0 \mapsto e_0$, $e_k \mapsto -e_k$), complex conjugation $\bar{\cdot}$ ($i \mapsto -i$), Hermitian conjugation ${}^{*} = ({}^{\natural})^{\,*}$, and the anti-Hermitian conjugation $\flat = -{}^{*}$. Multiplication is the complex-linear extension of the quaternion product, with the scalar–vector form
 
 $$
-\tilde{Q}\circ\tilde{R} = Q_0R_0 - (\mathbf{Q},\mathbf{R}) + Q_0\mathbf{R} + R_0\mathbf{Q} + [\mathbf{Q},\mathbf{R}].
+\tilde{Q}\circ\tilde{R} = Q_0R_0 - (\vec Q,\vec R) + Q_0\vec R + R_0\vec Q + [\vec Q,\vec R].
 $$
 
 ### The gamma side
@@ -48,10 +48,10 @@ $$
 (\gamma^0)^2 = +I_4, \qquad (\gamma^k)^2 = -I_4, \qquad k = 1,2,3.
 $$
 
-This is the standard **mostly-minus** convention, and it is the one the corpus uses throughout: the generators are the usual ones, the name is correct in the standard counting, and the square of a Clifford vector agrees with the biquaternion norm of the biquaternion the vector represents instead of differing by a sign. The $\mathbb{M}_-$ interval is a *separate* object — it belongs to the $ict$ gradient and not to the generators — and reads $ds^2 = -c^2\,dt^2 + d\mathbf{x}^2$, i.e.
+This is the standard **mostly-minus** convention, and it is the one the corpus uses throughout: the generators are the usual ones, the name is correct in the standard counting, and the square of a Clifford vector agrees with the biquaternion norm of the biquaternion the vector represents instead of differing by a sign. The $\mathbb{M}_-$ interval is a *separate* object — it belongs to the $ict$ gradient and not to the generators — and reads $ds^2 = -c^2\,dt^2 + d\vec x^2$, i.e.
 
 $$
-N(d\tilde{Q}) = d\tilde{Q}\circ\overline{d\tilde{Q}} = (ic\,dt)^2 + d\mathbf{x}^2 = -c^2\,dt^2 + d\mathbf{x}^2 ,
+N(d\tilde{Q}) = d\tilde{Q}\circ\overline{d\tilde{Q}} = (ic\,dt)^2 + d\vec x^2 = -c^2\,dt^2 + d\vec x^2 ,
 $$
 
 with the minus arising from $i^2 = -1$ and not from the generators' metric. The $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1) = -g$, and it is the level-2 object of the companion *Conventions in the Biquaternion Universe*; $g$ is the level-3 metric of the generators.
@@ -476,7 +476,7 @@ $$
 verified with general real coefficients on each sector. For the material four-vectors this is the Minkowski interval. Writing $\tilde{V} = i v_0 e_0 + v_1e_1 + v_2e_2 + v_3e_3 \in \mathbb{M}_-$,
 
 $$
-N(\tilde{V}) = \tilde{V}\tilde{V}^{\natural} = -v_0^2 + v_1^2 + v_2^2 + v_3^2 = -c^2t^2 + \mathbf{x}^2,
+N(\tilde{V}) = \tilde{V}\tilde{V}^{\natural} = -v_0^2 + v_1^2 + v_2^2 + v_3^2 = -c^2t^2 + \vec x^2,
 $$
 
 which is the invariant interval of the companion articles. So the interval is the Clifford biquaternion norm constructed with the reversal, and the minus sign in the time direction is the $ict$ metric sign $\eta^{00} = -1$ — the sign of $-g$, not of the generators' metric.
@@ -503,13 +503,13 @@ The dictionary so far has mapped objects; it is worth stating the two ways an el
 
 **One element, two interpretations.** Because $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H} \cong M_2(\mathbb{C})$, the algebra is the endomorphism algebra of its own unique simple module, $\mathbb{B} = \mathrm{End}(S)$ with $S$ of complex dimension two. Every element is therefore at once an **object** of the algebra and a **linear operator** on $S$. The two mechanisms are those two interpretations.
 
-**Mechanism one: multiplication, on the module.** A spinor is an element of the minimal left ideal $S = \mathbb{B}\tilde\Pi_1$, $\tilde\Pi_1 = \tfrac12(e_0+ie_3)$, and $\mathbb{B}$ acts on it by left multiplication, $\psi\mapsto \rho(\tilde B)\psi$. Since $\mathbb{B} = \mathrm{End}(S)$, *every* complex-linear operator on the spinor module is some biquaternion, and this mechanism carries the whole half-integer-spin sector: the Dirac field, its two Weyl halves, the chirality projectors (central idempotents of the complexified algebra $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}$, not of $\mathbb{B}$ itself), the mass $m$ and the central phase $\lambda = e^{i\theta}$ (central elements), and the gradient $\tilde{\nabla}$ when it acts on a field.
+**Mechanism one: multiplication, on the module.** A spinor is an element of the minimal left ideal $S = \mathbb{B}\tilde\Pi_+$, $\tilde\Pi_+ = \tfrac12(e_0+ie_3)$, and $\mathbb{B}$ acts on it by left multiplication, $\psi\mapsto \rho(\tilde B)\psi$. Since $\mathbb{B} = \mathrm{End}(S)$, *every* complex-linear operator on the spinor module is some biquaternion, and this mechanism carries the whole half-integer-spin sector: the Dirac field, its two Weyl halves, the chirality projectors (central idempotents of the complexified algebra $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}$, not of $\mathbb{B}$ itself), the mass $m$ and the central phase $\lambda = e^{i\theta}$ (central elements), and the gradient $\tilde{\nabla}$ when it acts on a field. Here $ie_3$ is a root of $+1$, $(ie_3)^2=e_0$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
 
 **Mechanism two: conjugation, on the algebra.** A four-vector is not in the module but in the algebra: the material sector $\mathbb{M}_- = \mathrm{span}_\mathbb{R}\{ie_0,e_1,e_2,e_3\}$. A Lorentz transformation acts on it by the rotor conjugation
 
 $$
-\tilde{Q} \;\mapsto\; \tilde\Lambda\,\tilde{Q}\,\tilde\Lambda^{*},
-\qquad \tilde\Lambda\in\mathbb{B},\quad N(\tilde\Lambda)=1,
+\tilde{Q} \;\mapsto\; \tilde U\,\tilde{Q}\,\tilde U^{*},
+\qquad \tilde U\in\mathbb{B},\quad N(\tilde U)=1,
 $$
 
 not by multiplication. This mechanism carries the integer-spin sector: the four-vector, the gauge potential, the field strength, the four-current, and the rotors themselves as points of $SL(2,\mathbb{C})$.
@@ -525,7 +525,7 @@ The same fact shows up as a closure failure. Left multiplication by a general el
 | chirality projectors $\tfrac12(1\pm\gamma_5)$ | central idempotents of $\mathbb{C}\otimes_\mathbb{R}\mathbb{B}$ | on the complexified module | — |
 | mass $m$, phase $\lambda$ | centre $\mathbb{C}_{\mathbb{B}}$ | scalar multiplication | $0$ |
 | gradient $\tilde{\nabla}$ acting on a field | $\mathbb{B}$ | left multiplication | — |
-| four-vector (momentum, position) | $\mathbb{M}_-\subset\mathbb{B}$ | conjugation $\tilde\Lambda\tilde{Q}\tilde\Lambda^{*}$ | $1$ |
+| four-vector (momentum, position) | $\mathbb{M}_-\subset\mathbb{B}$ | conjugation $\tilde U\tilde{Q}\tilde U^{*}$ | $1$ |
 | gauge potential, four-current | $\mathbb{M}_-$ | conjugation | $1$ |
 | field strength, Lorentz generator | the algebra's vector part | conjugation | $1$ |
 
@@ -607,7 +607,7 @@ This article is a dictionary between the Dirac gamma-matrix algebra and the biqu
 | $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Anti-Hermitian and Hermitian subspaces |
 | $\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | Real-quaternion and complex subspaces |
-| $S = \mathbb{B}\tilde\Pi_1$, $\tilde\Pi_1=\tfrac12(e_0+ie_3)$ | The simple (spinor) module; $\mathbb{B}=\mathrm{End}(S)$ |
+| $S = \mathbb{B}\tilde\Pi_+$, $\tilde\Pi_+=\tfrac12(e_0+ie_3)$ | The simple (spinor) module; $\mathbb{B}=\mathrm{End}(S)$ |
 | $\tilde{\nabla} = e_0\partial_{ict} + \sum_k e_k\partial_k$ | Biquaternionic gradient |
 | $\not\partial = \gamma^\mu\partial_\mu$ | Gamma-matrix Dirac operator |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace formula (unchanged) |

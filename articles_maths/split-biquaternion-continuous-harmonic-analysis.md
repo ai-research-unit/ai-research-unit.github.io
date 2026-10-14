@@ -15,7 +15,7 @@ $$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu = q_\mu + j q'_\mu, \quad q_\mu, q'_\mu \in \mathbb{R}.
 $$
 
-The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \mathbf{Q}$. The split-biquaternion norm is $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$.
+The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \vec Q$. The split-biquaternion norm is $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$.
 
 The **idempotent components** of $\tilde{Q}$ are the real quaternions
 
@@ -335,13 +335,13 @@ which is a split-biquaternion-valued multiplier.
 
 ### The Convective Derivative
 
-The convective derivative $\tilde{D} = \tilde{U}^{\natural} \tilde{\nabla}$ becomes multiplication by the split biquaternion
+The convective derivative $\tilde{D} = \tilde{R}^{\natural} \tilde{\nabla}$ becomes multiplication by the split biquaternion
 
 $$
-\tilde{U}^{\natural} \cdot 2\pi \rho (\omega_0 e_0 + \omega_1 e_1 + \omega_2 e_2 + \omega_3 e_3),
+\tilde{R}^{\natural} \cdot 2\pi \rho (\omega_0 e_0 + \omega_1 e_1 + \omega_2 e_2 + \omega_3 e_3),
 $$
 
-which depends on the velocity split biquaternion $\tilde{U}$ and on the frequency variables.
+which depends on the velocity split biquaternion $\tilde{R}$ and on the frequency variables.
 
 ### The General Principle
 
@@ -445,7 +445,7 @@ The key simplification relative to the biquaternion case is the **idempotent dec
 | $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2}$ | Idempotent components |
 | $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$ | Split-Biquaternion norm |
 | $\rho$ | A root of $-1$ in $\mathbb{H}$, $\rho^2 = -1$ |
-| $K_\rho(\mathbf{Q})$ | Split biquaternion Fourier kernel |
+| $K_\rho(\vec Q)$ | Split biquaternion Fourier kernel |
 | $\hat{f}(\xi)$ | Continuous split-biquaternion Fourier transform |
 | $f * g$ | Convolution |
 | $\tilde{\nabla}, \Box, \tilde{\nabla}^2, \tilde{D}$ | Gradient, d'Alembertian, gradient square, convective derivative |

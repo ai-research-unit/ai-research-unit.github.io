@@ -6,18 +6,18 @@ The quaternion space $\mathbb{H}$ is a four-dimensional real vector space and an
 
 The two products and their two structures are defined here. The identities that link them are *Relations Between the Two General Products*, below this article in this category, and the table of their laws is *Comparison Between the Two General Products*, below this article in this category. The symmetrisation and the antisymmetrisation of the two are *The 6 Products of the Quaternion Real Space*, and the six structures they define are *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, both below this article in this category. The left and right multiplications of the two are *The Two General Products and Operators*, the reading on the distinguished subspaces is *Remarkable Subspaces and the Two General Products*, and the degree-two reading is *The 2 Forms over the Quaternion $\mathbb{R}$ Space*, *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space* and *Remarkable Subspaces and the Two Forms*, all below this article in this category.
 
-**Conventions.** The algebra is $\mathbb{H}$, the real quaternion algebra, with units $e_0=1,e_1,e_2,e_3$, the relations $e_k^2=-e_0$ and $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$, and the general element $\tilde q=q_0e_0+\mathbf q$, $\mathbf q=q_1e_1+q_2e_2+q_3e_3$, with real coefficients $q_\mu$. The **dot product** is $\mathbf p\cdot\mathbf q=p_1q_1+p_2q_2+p_3q_3$ and the **cross product** $\mathbf p\times\mathbf q$ is the usual one, $(p_2q_3-p_3q_2)e_1+(p_3q_1-p_1q_3)e_2+(p_1q_2-p_2q_1)e_3$. The **scalar part** is $\mathrm{Sc}(\tilde q)=q_0$ and the **vector part** is $\operatorname{Vect}(\tilde q)=\mathbf q$. In this article $\tilde p$ and $\tilde q$ name elements, so that the letters $B$ and $N$ stay free for the forms.
+**Conventions.** The algebra is $\mathbb{H}$, the real quaternion algebra, with units $e_0=1,e_1,e_2,e_3$, the relations $e_k^2=-e_0$ and $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$, and the general element $\tilde q=q_0e_0+\vec q$, $\vec q=q_1e_1+q_2e_2+q_3e_3$, with real coefficients $q_\mu$. The **dot product** is $\vec p\cdot\vec q=p_1q_1+p_2q_2+p_3q_3$ and the **cross product** $\vec p\times\vec q$ is the usual one, $(p_2q_3-p_3q_2)e_1+(p_3q_1-p_1q_3)e_2+(p_1q_2-p_2q_1)e_3$. The **scalar part** is $\mathrm{Sc}(\tilde q)=q_0$ and the **vector part** is $\operatorname{Vect}(\tilde q)=\vec q$. In this article $\tilde p$ and $\tilde q$ name elements, so that the letters $B$ and $N$ stay free for the forms.
 
 ## The Two Products
 
-**Definition.** The **general plain bilinear product** and the **general quaternionic bilinear product** of the elements $\tilde p=p_0e_0+\mathbf p$ and $\tilde q=q_0e_0+\mathbf q$ are
+**Definition.** The **general plain bilinear product** and the **general quaternionic bilinear product** of the elements $\tilde p=p_0e_0+\vec p$ and $\tilde q=q_0e_0+\vec q$ are
 
 $$
-\tilde p\tilde q = \bigl(p_0q_0-\mathbf p\cdot\mathbf q\bigr) + p_0\mathbf q + q_0\mathbf p + \mathbf p\times\mathbf q ,
+\tilde p\tilde q = \bigl(p_0q_0-\vec p\cdot\vec q\bigr) + p_0\vec q + q_0\vec p + \vec p\times\vec q ,
 $$
 
 $$
-\tilde p^{\natural}\tilde q = \bigl(p_0q_0+\mathbf p\cdot\mathbf q\bigr) + p_0\mathbf q - q_0\mathbf p - \mathbf p\times\mathbf q .
+\tilde p^{\natural}\tilde q = \bigl(p_0q_0+\vec p\cdot\vec q\bigr) + p_0\vec q - q_0\vec p - \vec p\times\vec q .
 $$
 
 The first is the product of the algebra, read on the scalar and vector parts of the two elements; the second is the same rule with the first factor read through ${}^{\natural}$, which changes the sign of its vector part alone. The two products are defined on the same pair of coordinates and take their values in the same space, and the two are the **general** products of $\mathbb{H}$ in the sense of the general construction: the plain product with the two slots read as they stand, and the plain product with the first slot conjugated by the only nontrivial involution the element carries.
@@ -27,16 +27,16 @@ Both products are $\mathbb{R}$-bilinear, being built from the bilinear operation
 **Proposition (the two products separate the scalar and the vector part of the first factor).** For all $\tilde p,\tilde q$,
 
 $$
-\tilde p\tilde q+\tilde p^{\natural}\tilde q=2p_0\,\tilde q , \qquad \tilde p\tilde q-\tilde p^{\natural}\tilde q=2\,\mathbf p\,\tilde q ,
+\tilde p\tilde q+\tilde p^{\natural}\tilde q=2p_0\,\tilde q , \qquad \tilde p\tilde q-\tilde p^{\natural}\tilde q=2\,\vec p\,\tilde q ,
 $$
 
-where $\mathbf p\tilde q$ is read as an element multiplying $\tilde q$, and the two products agree exactly when the vector part of the first factor annihilates the second,
+where $\vec p\tilde q$ is read as an element multiplying $\tilde q$, and the two products agree exactly when the vector part of the first factor annihilates the second,
 
 $$
-\tilde p^{\natural}\tilde q=\tilde p\tilde q \quad\Longleftrightarrow\quad \mathbf p\tilde q=0 .
+\tilde p^{\natural}\tilde q=\tilde p\tilde q \quad\Longleftrightarrow\quad \vec p\tilde q=0 .
 $$
 
-*Proof.* The two rules differ only in the signs attached to $\mathbf p\cdot\mathbf q$, $\mathbf p\times\mathbf q$ and $q_0\mathbf p$, so adding them cancels those terms and leaves $2p_0q_0+2p_0\mathbf q=2p_0\tilde q$; subtracting them leaves $-2\mathbf p\cdot\mathbf q+2q_0\mathbf p+2\mathbf p\times\mathbf q$, which is $2\mathbf p\tilde q$ by the plain rule read with the vector part alone in the first slot. The agreement condition is the vanishing of the difference.
+*Proof.* The two rules differ only in the signs attached to $\vec p\cdot\vec q$, $\vec p\times\vec q$ and $q_0\vec p$, so adding them cancels those terms and leaves $2p_0q_0+2p_0\vec q=2p_0\tilde q$; subtracting them leaves $-2\vec p\cdot\vec q+2q_0\vec p+2\vec p\times\vec q$, which is $2\vec p\tilde q$ by the plain rule read with the vector part alone in the first slot. The agreement condition is the vanishing of the difference.
 
 The identities and the further relations they generate are *Relations Between the Two General Products*, below this article in this category.
 
@@ -92,7 +92,7 @@ The first is the **algebra** $\mathbb{H}$ itself, the quaternion algebra with it
 
 ## Summary
 
-The quaternion space carries two general products, defined on the same coordinates: the general plain bilinear product $\tilde p\tilde q=(p_0q_0-\mathbf p\cdot\mathbf q)+p_0\mathbf q+q_0\mathbf p+\mathbf p\times\mathbf q$, the multiplication of the algebra, and the general quaternionic bilinear product $\tilde p^{\natural}\tilde q=(p_0q_0+\mathbf p\cdot\mathbf q)+p_0\mathbf q-q_0\mathbf p-\mathbf p\times\mathbf q$, the same rule with the first factor conjugated by ${}^{\natural}$. Both are $\mathbb{R}$-bilinear, and their sum and difference separate the scalar part of the first factor from its vector part, $\tilde p\tilde q+\tilde p^{\natural}\tilde q=2p_0\tilde q$ and $\tilde p\tilde q-\tilde p^{\natural}\tilde q=2\mathbf p\tilde q$. The two multiplication tables coincide on the first row alone and differ by a sign on every entry of the other three rows.
+The quaternion space carries two general products, defined on the same coordinates: the general plain bilinear product $\tilde p\tilde q=(p_0q_0-\vec p\cdot\vec q)+p_0\vec q+q_0\vec p+\vec p\times\vec q$, the multiplication of the algebra, and the general quaternionic bilinear product $\tilde p^{\natural}\tilde q=(p_0q_0+\vec p\cdot\vec q)+p_0\vec q-q_0\vec p-\vec p\times\vec q$, the same rule with the first factor conjugated by ${}^{\natural}$. Both are $\mathbb{R}$-bilinear, and their sum and difference separate the scalar part of the first factor from its vector part, $\tilde p\tilde q+\tilde p^{\natural}\tilde q=2p_0\tilde q$ and $\tilde p\tilde q-\tilde p^{\natural}\tilde q=2\vec p\tilde q$. The two multiplication tables coincide on the first row alone and differ by a sign on every entry of the other three rows.
 
 The plain product makes $\mathbb{H}$ an associative division algebra with the two-sided unit $e_0$; the quaternionic product makes $\mathbb{H}$ a left-unital, non-associative quaternionic algebra. The two have the same two idempotents $0$ and $e_0$ and no zero divisor.
 
@@ -101,13 +101,13 @@ The plain product makes $\mathbb{H}$ an associative division algebra with the tw
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{H}$ | the real quaternion algebra, basis $e_0,e_1,e_2,e_3$ |
-| $\tilde q=q_0e_0+\mathbf q$ | an element, scalar part $q_0$, vector part $\mathbf q$ |
-| $\tilde q^{\natural}=q_0e_0-\mathbf q$ | the quaternion conjugation |
-| $\tilde p\tilde q=(p_0q_0-\mathbf p\cdot\mathbf q)+p_0\mathbf q+q_0\mathbf p+\mathbf p\times\mathbf q$ | the general plain bilinear product |
-| $\tilde p^{\natural}\tilde q=(p_0q_0+\mathbf p\cdot\mathbf q)+p_0\mathbf q-q_0\mathbf p-\mathbf p\times\mathbf q$ | the general quaternionic bilinear product |
+| $\tilde q=q_0e_0+\vec q$ | an element, scalar part $q_0$, vector part $\vec q$ |
+| $\tilde q^{\natural}=q_0e_0-\vec q$ | the quaternion conjugation |
+| $\tilde p\tilde q=(p_0q_0-\vec p\cdot\vec q)+p_0\vec q+q_0\vec p+\vec p\times\vec q$ | the general plain bilinear product |
+| $\tilde p^{\natural}\tilde q=(p_0q_0+\vec p\cdot\vec q)+p_0\vec q-q_0\vec p-\vec p\times\vec q$ | the general quaternionic bilinear product |
 | $\tilde p\tilde q+\tilde p^{\natural}\tilde q=2p_0\tilde q$ | the separation of the scalar part |
-| $\tilde p\tilde q-\tilde p^{\natural}\tilde q=2\mathbf p\tilde q$ | the separation of the vector part |
-| $\tilde p^{\natural}\tilde q=\tilde p\tilde q \iff \mathbf p\tilde q=0$ | the agreement condition |
+| $\tilde p\tilde q-\tilde p^{\natural}\tilde q=2\vec p\tilde q$ | the separation of the vector part |
+| $\tilde p^{\natural}\tilde q=\tilde p\tilde q \iff \vec p\tilde q=0$ | the agreement condition |
 | $e_0$ | the two-sided unit of the plain product, the left unit of the quaternionic one |
 
 ## Further Reading

@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The companion articles *Larmor Precession and the Classical Magnetic Moment in Biquaternionic Form* and *The Einstein–de Haas and Barnett Effects in Biquaternionic Form* both work with one number they do not fix: the gyromagnetic ratio $\gamma$, the constant that ties a magnetic moment to its angular momentum, $\boldsymbol{\mu} = \gamma\mathbf{S}$. Expressed through the dimensionless gyromagnetic factor $g$ by $\gamma = g\,q/2m$, the number is $g = 1$ for the magnetism of an ordinary current and $g = 2$ for the intrinsic magnetism of a spin. This article asks where the second value comes from, and answers it **classically and algebraically**: the factor two is the **double-cover factor** of the biquaternion rotation rotor, present in the algebra before any quantization, and not a dynamical accident of a particular charge distribution.
+The companion articles *Larmor Precession and the Classical Magnetic Moment in Biquaternionic Form* and *The Einstein–de Haas and Barnett Effects in Biquaternionic Form* both work with one number they do not fix: the gyromagnetic ratio $\gamma$, the constant that ties a magnetic moment to its angular momentum, $\vec\mu = \gamma\vec S$. Expressed through the dimensionless gyromagnetic factor $g$ by $\gamma = g\,q/2m$, the number is $g = 1$ for the magnetism of an ordinary current and $g = 2$ for the intrinsic magnetism of a spin. This article asks where the second value comes from, and answers it **classically and algebraically**: the factor two is the **double-cover factor** of the biquaternion rotation rotor, present in the algebra before any quantization, and not a dynamical accident of a particular charge distribution.
 
-The subject is set up to separate two questions that are easily confused. The first is the *absolute* normalization of the moment, which is fixed by the definition $\boldsymbol{\mu} = \tfrac{1}{2}\int\mathbf{r}\times\mathbf{j}\,d^3x$ together with the charge and mass of the carrier, and which is the content of the convective theorem below: a rigid rotor whose charge and mass densities are proportional has $\gamma = q/2m$, that is $g = 1$. The second is the *relative* factor between the convective and the intrinsic cases, and it is this factor, equal to two, that the article derives. The derivation is a statement about the representations in which the two couplings of one charged configuration are carried: the electromagnetic coupling is the phase of the central $U(1)$ and acts with weight one, while the angular momentum couples to the rotation and acts with weight one half on an intrinsic spin and weight one on an orbital vector. The gyromagnetic ratio is the ratio of the two weights, and the ratio is two.
+The subject is set up to separate two questions that are easily confused. The first is the *absolute* normalization of the moment, which is fixed by the definition $\vec\mu = \tfrac{1}{2}\int\vec r\times\vec j\,d^3x$ together with the charge and mass of the carrier, and which is the content of the convective theorem below: a rigid rotor whose charge and mass densities are proportional has $\gamma = q/2m$, that is $g = 1$. The second is the *relative* factor between the convective and the intrinsic cases, and it is this factor, equal to two, that the article derives. The derivation is a statement about the representations in which the two couplings of one charged configuration are carried: the electromagnetic coupling is the phase of the central $U(1)$ and acts with weight one, while the angular momentum couples to the rotation and acts with weight one half on an intrinsic spin and weight one on an orbital vector. The gyromagnetic ratio is the ratio of the two weights, and the ratio is two.
 
 The article is careful about what is derived and what is imported. The value $g=2$ is **fixed as a ratio** by the algebra, and this is what the two companion articles presuppose. The *magnitude* of the moment — one Bohr magneton $\mu_B = e\hbar/2m_e$ for the electron spin — is not fixed by the classical algebra, which has no $\hbar$; it is imported from the quantum normalization. The dynamical derivation of the coefficient $1/2m$ from the relativistic Dirac equation is likewise standard and is cited, not reproduced: it is a result of the companion articles *The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit* and *The Electron in Biquaternionic Form*, which obtain $g=2$ by eliminating the small component. The two accounts agree, and they agree because they compute the same double-cover factor: the relativistic one dynamically, the non-relativistic one algebraically.
 
@@ -17,8 +17,8 @@ The conventions are those of the foundational articles and of the two companion 
 The gyromagnetic ratio and the gyromagnetic factor are defined by
 
 $$
-\boldsymbol{\mu} = \gamma\,\mathbf{S}
-= g\,\frac{q}{2m}\,\mathbf{S},
+\vec\mu = \gamma\,\vec S
+= g\,\frac{q}{2m}\,\vec S,
 \qquad
 \gamma = g\,\frac{q}{2m},
 \qquad
@@ -44,9 +44,9 @@ with the intrinsic moment's informational-sector representative $\mu_k\,ie_k\in\
 Two couplings must be compared. The electromagnetic coupling is through the central phase: an element of the algebra of charge $q$ transforms as $\tilde{\Psi}\to e^{i\alpha}\tilde{\Psi}$ under a gauge phase, and the phase lives in the centre of the algebra, shared by both sectors. The rotational coupling is through the rotor: an element transforms by left multiplication by a unit real quaternion,
 
 $$
-\tilde{\Psi} \;\longmapsto\; \tilde{R}(\theta,\hat{\mathbf{n}})\,\tilde{\Psi},
+\tilde{\Psi} \;\longmapsto\; \tilde{R}(\theta,\hat n)\,\tilde{\Psi},
 \qquad
-\tilde{R}(\theta,\hat{\mathbf{n}}) = \exp\!\left(\frac{\theta}{2}\,\hat{n}_ke_k\right),
+\tilde{R}(\theta,\hat n) = \exp\!\left(\frac{\theta}{2}\,\hat{n}_ke_k\right),
 $$
 
 and the generator of the rotation is the half-unit $+\tfrac{1}{2}\hat{n}_ke_k$ rather than the unit $\hat{n}_ke_k$. The factor of two between these two generators is the origin of the factor two in $g$, and the rest of the article makes that statement precise.
@@ -59,22 +59,22 @@ The moment of a body is the sum of a **convective** part, generated by the motio
 
 ### The Moment and the Angular Momentum of a Rigid Rotor
 
-A body in rigid rotation with angular velocity $\boldsymbol{\omega}$ carries a charge current $\mathbf{j} = \rho_c\,\boldsymbol{\omega}\times\mathbf{r}$ and a mass current $\rho_m\,\boldsymbol{\omega}\times\mathbf{r}$, where $\rho_c$ and $\rho_m$ are the charge and mass densities. Its magnetic moment and its mechanical angular momentum are
+A body in rigid rotation with angular velocity $\vec\omega$ carries a charge current $\vec j = \rho_c\,\vec\omega\times\vec r$ and a mass current $\rho_m\,\vec\omega\times\vec r$, where $\rho_c$ and $\rho_m$ are the charge and mass densities. Its magnetic moment and its mechanical angular momentum are
 
 $$
-\boldsymbol{\mu} = \frac{1}{2}\int \rho_c(\mathbf{r})\,\mathbf{r}\times(\boldsymbol{\omega}\times\mathbf{r})\,d^3x
-= \frac{1}{2}\,\hat{\mathcal{M}}\,\boldsymbol{\omega},
+\vec\mu = \frac{1}{2}\int \rho_c(\vec r)\,\vec r\times(\vec\omega\times\vec r)\,d^3x
+= \frac{1}{2}\,\hat{\mathcal{M}}\,\vec\omega,
 \qquad
-\mathbf{L} = \int \rho_m(\mathbf{r})\,\mathbf{r}\times(\boldsymbol{\omega}\times\mathbf{r})\,d^3x
-= \hat{I}\,\boldsymbol{\omega},
+\vec L = \int \rho_m(\vec r)\,\vec r\times(\vec\omega\times\vec r)\,d^3x
+= \hat{I}\,\vec\omega,
 $$
 
 where
 
 $$
-\hat{\mathcal{M}}_{ij} = \int \rho_c(\mathbf{r})\left(r^2\delta_{ij} - r_ir_j\right)d^3x,
+\hat{\mathcal{M}}_{ij} = \int \rho_c(\vec r)\left(r^2\delta_{ij} - r_ir_j\right)d^3x,
 \qquad
-\hat{I}_{ij} = \int \rho_m(\mathbf{r})\left(r^2\delta_{ij} - r_ir_j\right)d^3x
+\hat{I}_{ij} = \int \rho_m(\vec r)\left(r^2\delta_{ij} - r_ir_j\right)d^3x
 $$
 
 are the charge and mass inertia tensors. The two tensors are built from the same geometric kernel $r^2\delta_{ij} - r_ir_j$ and differ only in the density that weights it, so that the entire classical gyromagnetic problem is the comparison of two weighted integrals of one kernel.
@@ -84,14 +84,14 @@ are the charge and mass inertia tensors. The two tensors are built from the same
 If the charge density is proportional to the mass density,
 
 $$
-\rho_c(\mathbf{r}) = \frac{q}{m}\,\rho_m(\mathbf{r}),
+\rho_c(\vec r) = \frac{q}{m}\,\rho_m(\vec r),
 $$
 
 then the two tensors are proportional, $\hat{\mathcal{M}} = (q/m)\hat{I}$, and the moment is
 
 $$
-\boldsymbol{\mu} = \frac{1}{2}\,\frac{q}{m}\,\hat{I}\,\boldsymbol{\omega}
-= \frac{q}{2m}\,\mathbf{L}.
+\vec\mu = \frac{1}{2}\,\frac{q}{m}\,\hat{I}\,\vec\omega
+= \frac{q}{2m}\,\vec L.
 $$
 
 The gyromagnetic ratio is the convective value
@@ -142,7 +142,7 @@ that is, when the mass is $5/8$ uniformly distributed through the sphere and $3/
 
 ### The Intrinsic Moment Is Not Convective
 
-The physical reason is that intrinsic magnetism is not a convective current at all. The moment of a rigid rotor is the first spatial moment of the current $\rho_c\mathbf{v}$, and its ratio to the angular momentum is the ratio of the two inertia tensors because the same velocity field generates both currents. An intrinsic moment has no such velocity field: it is a magnetisation $\mathbf{M}$, and the only current it carries is the bound magnetisation current $\mathbf{j}_b = \nabla\times\mathbf{M}$, which is *produced by* the moment rather than *producing* it. There is no independent charge density whose motion could be integrated, and the convective theorem therefore does not apply. What fixes the intrinsic $g$ is not a comparison of two charge and mass distributions but the representation in which the intrinsic angular momentum is carried, and that is the subject of the next section.
+The physical reason is that intrinsic magnetism is not a convective current at all. The moment of a rigid rotor is the first spatial moment of the current $\rho_c\vec v$, and its ratio to the angular momentum is the ratio of the two inertia tensors because the same velocity field generates both currents. An intrinsic moment has no such velocity field: it is a magnetisation $\vec M$, and the only current it carries is the bound magnetisation current $\vec j_b = \nabla\times\vec M$, which is *produced by* the moment rather than *producing* it. There is no independent charge density whose motion could be integrated, and the convective theorem therefore does not apply. What fixes the intrinsic $g$ is not a comparison of two charge and mass distributions but the representation in which the intrinsic angular momentum is carried, and that is the subject of the next section.
 
 ## The Algebraic Factor Two
 
@@ -156,7 +156,7 @@ g_k = -\,\frac{1}{2}\,e_k \in \mathbb{H}_{\mathbb{B}},
 [\,g_i, g_j\,] = -\,\epsilon_{ijk}\,g_k .
 $$
 
-A rotation through the angle $\theta$ about $\hat{\mathbf{n}}$ is the exponential $\tilde{R} = \exp(\tfrac{\theta}{2}\hat{n}_ke_k) = \exp(-\theta\,\hat{n}_kg_k)$, in which the coefficient of the rotation generator $\tfrac{1}{2}\hat{n}_ke_k$ is $\theta/2$ while the *rotation angle* is $\theta$. The observable intrinsic angular momentum is obtained from the generator by the same central $i$ that exchanges the sectors,
+A rotation through the angle $\theta$ about $\hat n$ is the exponential $\tilde{R} = \exp(\tfrac{\theta}{2}\hat{n}_ke_k) = \exp(-\theta\,\hat{n}_kg_k)$, in which the coefficient of the rotation generator $\tfrac{1}{2}\hat{n}_ke_k$ is $\theta/2$ while the *rotation angle* is $\theta$. The observable intrinsic angular momentum is obtained from the generator by the same central $i$ that exchanges the sectors,
 
 $$
 \tilde{S}_k = -\,i\hbar\,g_k = \frac{\hbar}{2}\,i e_k \in \mathbb{M}_+ ,
@@ -172,18 +172,18 @@ and its eigenvalues are $\pm\hbar/2$. The half in the angular-momentum generator
 The half in the generator is visible in the rotor as the **double cover**. The rotation rotor
 
 $$
-\tilde{R}(\theta,\hat{\mathbf{n}}) = \cos\frac{\theta}{2}\,e_0 + \sin\frac{\theta}{2}\,\hat{n}_ke_k
+\tilde{R}(\theta,\hat n) = \cos\frac{\theta}{2}\,e_0 + \sin\frac{\theta}{2}\,\hat{n}_ke_k
 $$
 
 returns to its starting value only after $\theta$ has advanced by $4\pi$:
 
 $$
-\tilde{R}(\theta + 2\pi,\hat{\mathbf{n}}) = -\,\tilde{R}(\theta,\hat{\mathbf{n}}),
+\tilde{R}(\theta + 2\pi,\hat n) = -\,\tilde{R}(\theta,\hat n),
 \qquad
-\tilde{R}(\theta + 4\pi,\hat{\mathbf{n}}) = \tilde{R}(\theta,\hat{\mathbf{n}}).
+\tilde{R}(\theta + 4\pi,\hat n) = \tilde{R}(\theta,\hat n).
 $$
 
-A material vector is rotated by conjugation, $\mathbf{x}\mapsto\tilde{R}\mathbf{x}\tilde{R}^{*}$, and the sign of the rotor cancels, so a vector returns after $\theta = 2\pi$. An intrinsic state is rotated by left multiplication, $\tilde{\Psi}\mapsto\tilde{R}\tilde{\Psi}$, and the sign does not cancel, so the state returns only after $\theta = 4\pi$. The material vector therefore transforms with **weight one** under the rotation — it is single-valued on the sphere of directions — while the intrinsic state transforms with **weight one half**. The rotor group is the double cover $\mathbb{H}_{\mathbb{B}}^1 = SU(2)$ of the orientation group $\mathbb{H}_{\mathbb{B}}^1/\{\pm e_0\} = SO(3)$, and the two-to-one map is exactly the statement that the vector weight is twice the spinor weight.
+A material vector is rotated by conjugation, $\vec x\mapsto\tilde{R}\vec x\tilde{R}^{*}$, and the sign of the rotor cancels, so a vector returns after $\theta = 2\pi$. An intrinsic state is rotated by left multiplication, $\tilde{\Psi}\mapsto\tilde{R}\tilde{\Psi}$, and the sign does not cancel, so the state returns only after $\theta = 4\pi$. The material vector therefore transforms with **weight one** under the rotation — it is single-valued on the sphere of directions — while the intrinsic state transforms with **weight one half**. The rotor group is the double cover $\mathbb{H}_{\mathbb{B}}^1 = SU(2)$ of the orientation group $\mathbb{H}_{\mathbb{B}}^1/\{\pm e_0\} = SO(3)$, and the two-to-one map is exactly the statement that the vector weight is twice the spinor weight.
 
 ### The Weights of the Two Couplings
 
@@ -210,13 +210,13 @@ The factor two is therefore not a dynamical coincidence of a particular distribu
 
 ### The Intrinsic Coupling
 
-The same factor appears in the coupling of the intrinsic moment to the field. With the spin observable $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$ and the magnetic induction $\mathbf{B} = B_ke_k$, the spin–field coupling is
+The same factor appears in the coupling of the intrinsic moment to the field. With the spin observable $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$ and the magnetic induction $\vec B = B_ke_k$, the spin–field coupling is
 
 $$
-\tilde{S}_kB_k = \frac{\hbar}{2}\,i\mathbf{B} \in \mathbb{M}_+ ,
+\tilde{S}_kB_k = \frac{\hbar}{2}\,i\vec B \in \mathbb{M}_+ ,
 $$
 
-the Hermitian element that the companion article on the Dirac non-relativistic limit identifies with the Pauli spin term $-\tfrac{q\hbar}{2m}\boldsymbol{\sigma}\cdot\mathbf{B}$. Writing it as $-\boldsymbol{\mu}\cdot\mathbf{B}$ with $\boldsymbol{\mu} = (q/m)\mathbf{S}$ gives the intrinsic gyromagnetic ratio $q/m$, and the factor two relative to the convective ratio $q/2m$ is the same half-weight of the spin: the field couples to the full vector slot $ie_k$ with weight one, while the angular momentum of the spin is generated through the half-unit $g_k = -\tfrac{1}{2}e_k$. The mismatch of the whole against the half is the factor two.
+the Hermitian element that the companion article on the Dirac non-relativistic limit identifies with the Pauli spin term $-\tfrac{q\hbar}{2m}\boldsymbol{\sigma}\cdot\vec B$. Writing it as $-\vec\mu\cdot\vec B$ with $\vec\mu = (q/m)\vec S$ gives the intrinsic gyromagnetic ratio $q/m$, and the factor two relative to the convective ratio $q/2m$ is the same half-weight of the spin: the field couples to the full vector slot $ie_k$ with weight one, while the angular momentum of the spin is generated through the half-unit $g_k = -\tfrac{1}{2}e_k$. The mismatch of the whole against the half is the factor two.
 
 ### Why the Ratio, and Not the Scale
 
@@ -251,12 +251,12 @@ For a pure orbital state, $s=0$ and $j=l$, the fraction vanishes and $g_J = 1$. 
 The dynamical derivation of the same number is standard and is the tree-level result of the Dirac equation. Carrying the biquaternion Dirac equation to the non-relativistic regime and eliminating the small component leaves the Pauli equation with the spin term
 
 $$
--\frac{q\hbar}{2m}\,\boldsymbol{\sigma}\cdot\mathbf{B}
+-\frac{q\hbar}{2m}\,\boldsymbol{\sigma}\cdot\vec B
 \;\longleftrightarrow\;
--\frac{q\hbar}{2m}\,i\mathbf{B} \in \mathbb{M}_+ ,
+-\frac{q\hbar}{2m}\,i\vec B \in \mathbb{M}_+ ,
 $$
 
-whose comparison with $-\boldsymbol{\mu}\cdot\mathbf{B}$ gives $\boldsymbol{\mu} = (q/m)\mathbf{S}$ and hence $g=2$. The coefficient $1/2m$ is produced by the elimination and is not inserted. The computation is performed in the companion articles *The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit* and *The Electron in Biquaternionic Form*, and it is the standard Dirac result; it is cited here as the standard dynamical account, not rederived.
+whose comparison with $-\vec\mu\cdot\vec B$ gives $\vec\mu = (q/m)\vec S$ and hence $g=2$. The coefficient $1/2m$ is produced by the elimination and is not inserted. The computation is performed in the companion articles *The Dirac Equation in Biquaternionic Form — Solutions and the Non-Relativistic Limit* and *The Electron in Biquaternionic Form*, and it is the standard Dirac result; it is cited here as the standard dynamical account, not rederived.
 
 The relation between the two accounts is this. The relativistic elimination produces the $1/2m$ coefficient from the two-component structure of the Dirac field, and the two-component structure is the double cover; the non-relativistic account of this article reads the same double cover directly off the rotor, with the half-unit generator and the weight one half. Both compute the factor two, one from the dynamics of the mass term and one from the algebra of the rotation, and the two agree. The advantage of the algebraic account is that it exhibits $g=2$ as a property of the *representation* of the intrinsic angular momentum, and therefore as a classical, non-quantum feature of the framework rather than a consequence of the mass term.
 
@@ -274,10 +274,10 @@ and the anomaly $a=(g-2)/2$ is the one-loop Schwinger value $a\approx\alpha/2\pi
 
 ## Summary
 
-The gyromagnetic factor $g$, defined by $\boldsymbol{\mu} = g(q/2m)\mathbf{S}$, compares the magnetic moment of a charged configuration to its angular momentum. For a **convective** configuration — a rigid rotor whose charge current is the motion of its charge density — the moment and the angular momentum are the two inertia integrals $\boldsymbol{\mu} = \tfrac{1}{2}\hat{\mathcal{M}}\boldsymbol{\omega}$ and $\mathbf{L} = \hat{I}\boldsymbol{\omega}$, and proportional charge and mass densities give
+The gyromagnetic factor $g$, defined by $\vec\mu = g(q/2m)\vec S$, compares the magnetic moment of a charged configuration to its angular momentum. For a **convective** configuration — a rigid rotor whose charge current is the motion of its charge density — the moment and the angular momentum are the two inertia integrals $\vec\mu = \tfrac{1}{2}\hat{\mathcal{M}}\vec\omega$ and $\vec L = \hat{I}\vec\omega$, and proportional charge and mass densities give
 
 $$
-\boldsymbol{\mu} = \frac{q}{2m}\,\mathbf{L},
+\vec\mu = \frac{q}{2m}\,\vec L,
 \qquad
 g = 1 .
 $$
@@ -312,7 +312,7 @@ The factor two is thus the double-cover factor of the biquaternion rotor, an alg
 
 | Symbol | Meaning |
 |---|---|
-| $\boldsymbol{\mu} = \gamma\mathbf{S}$ | Magnetic moment; gyromagnetic relation |
+| $\vec\mu = \gamma\vec S$ | Magnetic moment; gyromagnetic relation |
 | $\gamma = g\,q/2m$ | Gyromagnetic ratio |
 | $g = 2m\mu/(qS)$ | Gyromagnetic factor |
 | $\hat{\mathcal{M}}_{ij} = \int\rho_c(r^2\delta_{ij}-r_ir_j)$ | Charge inertia tensor |
@@ -323,7 +323,7 @@ The factor two is thus the double-cover factor of the biquaternion rotor, an alg
 | $\tilde{S}_k = -i\hbar g_k = \tfrac{\hbar}{2}ie_k$ | Spin observable in $\mathbb{M}_+$ |
 | $[g_i,g_j] = -\epsilon_{ijk}g_k$ | Generator algebra |
 | $[\tilde{S}_i,\tilde{S}_j] = i\hbar\epsilon_{ijk}\tilde{S}_k$ | Spin algebra |
-| $\tilde{R}(\theta,\hat{\mathbf{n}}) = \cos\tfrac{\theta}{2}e_0 + \sin\tfrac{\theta}{2}\hat{n}_ke_k$ | Rotation rotor (unit real quaternion) |
+| $\tilde{R}(\theta,\hat n) = \cos\tfrac{\theta}{2}e_0 + \sin\tfrac{\theta}{2}\hat{n}_ke_k$ | Rotation rotor (unit real quaternion) |
 | $\tilde{R}(\theta+2\pi) = -\tilde{R}(\theta)$ | Double cover |
 | $w_{U(1)}$, $w_{\rm rot}$ | Central phase weight (one); rotation weight (one or one half) |
 | $\mu/L = (q/2m)\,w_{U(1)}/w_{\rm rot}$ | Ratio of the two weights |

@@ -52,7 +52,7 @@ with $x^2 = \eta_{\rho\sigma}x^\rho x^\sigma$. The conformal group contains the 
 
 ### What the algebra carries, and what it does not
 
-Six of the fifteen generators — the Lorentz ones — are elements of $\mathbb{B}$: the rotations are $J_k = e_k$ and the boosts $K_k = ie_k$, and the Lorentz group acts by $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$. The dilation is realised by a non-unit element $\sqrt{\lambda}\,e_0$, which scales the biquaternion norm without preserving it. The translations and the special conformal transformations are not elements of the algebra and are not linear on $\mathbb{M}_-$: the special conformal transformation is a fractional map obtained by sandwiching a translation between two inversions, and the inversion itself is the algebra inverse composed with parity,
+Six of the fifteen generators — the Lorentz ones — are elements of $\mathbb{B}$: the rotations are $J_k = e_k$ and the boosts $K_k = ie_k$, and the Lorentz group acts by $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$. The dilation is realised by a non-unit element $\sqrt{\lambda}\,e_0$, which scales the biquaternion norm without preserving it. The translations and the special conformal transformations are not elements of the algebra and are not linear on $\mathbb{M}_-$: the special conformal transformation is a fractional map obtained by sandwiching a translation between two inversions, and the inversion itself is the algebra inverse composed with parity,
 $$
 I(\tilde{Q}) = \overline{\tilde{Q}}^{-1} = \frac{\tilde{Q}^{\natural}}{N(\tilde{Q})} ,
 \qquad
@@ -64,9 +64,9 @@ The companion establishes the count precisely: six generators inside, one expres
 
 One convention note is needed before the weight is used, because two quadratic forms are in play. The conformal group is the conformal group of Minkowski space, and its invariant interval is
 $$
-x^2 = \eta_{\mu\nu}x^\mu x^\nu = -c^2t^2 + \mathbf{x}^2 = N(\tilde{Q}) ,
+x^2 = \eta_{\mu\nu}x^\mu x^\nu = -c^2t^2 + \vec x^2 = N(\tilde{Q}) ,
 $$
-with $\eta = \mathrm{diag}(-1,+1,+1,+1)$ the level-two $ict$ metric of the conventions article. The operator $\Box = \partial_{ict}^2 + \Delta$, by contrast, is the **Euclidean** four-dimensional Laplacian in the real coordinates $(ict,\mathbf{x})$, so the differential operator's own "norm" is $\rho^2 = (ict)^2+\mathbf{x}^2$, which equals the level-one form on the $ict$ coordinates. The two agree as functions of the coordinates — both are $N(\tilde{Q})$ — but they differ in what they are: one is the Minkowski interval whose zero set is the light cone, the other is the Euclidean distance-squared of the continued coordinates. The conformal transformations preserve the former's zero set; the conformal factor $\Omega$ is defined by the scaling of the former; and the box operator's covariance identity is a statement about the latter. Keeping the two interpretations apart is what prevents the sign confusions the conventions article warns about.
+with $\eta = \mathrm{diag}(-1,+1,+1,+1)$ the level-two $ict$ metric of the conventions article. The operator $\Box = \partial_{ict}^2 + \Delta$, by contrast, is the **Euclidean** four-dimensional Laplacian in the real coordinates $(ict,\vec x)$, so the differential operator's own "norm" is $\rho^2 = (ict)^2+\vec x^2$, which equals the level-one form on the $ict$ coordinates. The two agree as functions of the coordinates — both are $N(\tilde{Q})$ — but they differ in what they are: one is the Minkowski interval whose zero set is the light cone, the other is the Euclidean distance-squared of the continued coordinates. The conformal transformations preserve the former's zero set; the conformal factor $\Omega$ is defined by the scaling of the former; and the box operator's covariance identity is a statement about the latter. Keeping the two interpretations apart is what prevents the sign confusions the conventions article warns about.
 
 ### Conformal weight
 
@@ -131,7 +131,7 @@ the standard expression; the point for this article is that the four extra symme
 
 ### The finite transformations and the compactification
 
-The four families can be written in finite form, and their composition is what makes them a group. The Lorentz transformations are $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$; the dilation is $\tilde{Q}\mapsto\lambda\tilde{Q}$; the translation is $\tilde{Q}\mapsto\tilde{Q}+\tilde{A}$; and the inversion is $\tilde{Q}\mapsto\tilde{Q}^{\natural}/N(\tilde{Q})$. A special conformal transformation is a translation between two inversions, and the composition law of the four families closes on the fifteen parameters. Two features of the finite maps belong to this article's subject. First, the inversion is **involutive**, $I(I(\tilde{Q})) = \tilde{Q}$ off the null cone, and its conformal factor satisfies $\Omega(I(\tilde{Q})) = 1/\Omega(\tilde{Q}) = N(\tilde{Q})$; the weight-one transformation law is consistent with this involution, which was checked by composing the map with itself on random off-cone points. Second, the maps are only **locally defined** on $\mathbb{M}_-$: the inversion is singular where $N(\tilde{Q}) = 0$, and the special conformal transformation is singular where its denominator vanishes. The conformal group is globally defined on the conformal compactification, in which the light cone is adjoined as a boundary and the inversions become everywhere defined; the companion's boundary statement and this article's field-theoretic statements both live on the locally defined maps, and the compactification is developed in the twistor literature rather than here.
+The four families can be written in finite form, and their composition is what makes them a group. The Lorentz transformations are $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$; the dilation is $\tilde{Q}\mapsto\lambda\tilde{Q}$; the translation is $\tilde{Q}\mapsto\tilde{Q}+\tilde{A}$; and the inversion is $\tilde{Q}\mapsto\tilde{Q}^{\natural}/N(\tilde{Q})$. A special conformal transformation is a translation between two inversions, and the composition law of the four families closes on the fifteen parameters. Two features of the finite maps belong to this article's subject. First, the inversion is **involutive**, $I(I(\tilde{Q})) = \tilde{Q}$ off the null cone, and its conformal factor satisfies $\Omega(I(\tilde{Q})) = 1/\Omega(\tilde{Q}) = N(\tilde{Q})$; the weight-one transformation law is consistent with this involution, which was checked by composing the map with itself on random off-cone points. Second, the maps are only **locally defined** on $\mathbb{M}_-$: the inversion is singular where $N(\tilde{Q}) = 0$, and the special conformal transformation is singular where its denominator vanishes. The conformal group is globally defined on the conformal compactification, in which the light cone is adjoined as a boundary and the inversions become everywhere defined; the companion's boundary statement and this article's field-theoretic statements both live on the locally defined maps, and the compactification is developed in the twistor literature rather than here.
 
 ## The Conformal Two-Point Function
 
@@ -165,7 +165,7 @@ because $\Box_{\tilde{Q}} = \lambda^{-2}\Box_{\lambda^{-1}\tilde{Q}}$ and the ma
 
 ### The symbol on the light cone and the rank drop
 
-On shell the four-momentum is a biquaternion $\tilde{K} = i(\omega/c)e_0 + \mathbf{k}$, and the symbol of the operator is its biquaternion norm,
+On shell the four-momentum is a biquaternion $\tilde{K} = i(\omega/c)e_0 + \vec k$, and the symbol of the operator is its biquaternion norm,
 $$
 \text{massive:}\quad N(\tilde{K}) = -\mu^2 \neq 0 ,
 \qquad\qquad
@@ -199,7 +199,7 @@ is a constant of the motion; in the massive case the charge is not conserved and
 
 ## The Trace of the Stress Tensor and the Improvement
 
-The trace is computed in the article's own $ict$ convention throughout: the operator is $\Box = \partial_{ict}^2 + \Delta$, the Laplacian of the level-one form in the four coordinates $(ict,\mathbf{x})$, so that no index is raised or lowered, and the Lagrangian is the action article's, $\mathcal{L} = -\mathrm{Sc}[(\tilde{\nabla}^{\natural}\tilde{\Phi}^{*})(\tilde{\nabla}\tilde{\Phi})] - \mu^2\mathrm{Sc}[\tilde{\Phi}^{*}\tilde{\Phi}]$. The canonical tensor of that article,
+The trace is computed in the article's own $ict$ convention throughout: the operator is $\Box = \partial_{ict}^2 + \Delta$, the Laplacian of the level-one form in the four coordinates $(ict,\vec x)$, so that no index is raised or lowered, and the Lagrangian is the action article's, $\mathcal{L} = -\mathrm{Sc}[(\tilde{\nabla}^{\natural}\tilde{\Phi}^{*})(\tilde{\nabla}\tilde{\Phi})] - \mu^2\mathrm{Sc}[\tilde{\Phi}^{*}\tilde{\Phi}]$. The canonical tensor of that article,
 $$
 T^\mu{}_\nu = -\bigl(\partial^\mu\phi^*\bigr)\partial_\nu\phi - \bigl(\partial^\mu\phi\bigr)\partial_\nu\phi^* - \delta^\mu{}_\nu\,\mathcal{L} ,
 $$
@@ -241,11 +241,11 @@ The argument that the Maxwell trace vanishes used not only the absence of a dime
 
 Kruglov's non-commutative electrodynamics makes the route concrete. *Maxwell's Theory on Non-Commutative Spaces and Quaternions* keeps the Maxwell Lagrangian expressed through the field strength, with no mass and with no dimensional parameter beyond the fixed background $\theta^{\mu\nu}$, and the stress tensor still has a non-zero trace at tree level. In the source's conventions,
 $$
-T^\mu{}_\mu = (\boldsymbol\theta\cdot\mathbf B)\left(\mathbf E^2-\mathbf B^2\right) - 2(\boldsymbol\theta\cdot\mathbf E)(\mathbf E\cdot\mathbf B),
+T^\mu{}_\mu = (\vec\theta\cdot\vec B)\left(\vec E^2-\vec B^2\right) - 2(\vec\theta\cdot\vec E)(\vec E\cdot\vec B),
 $$
 because $\theta^{\mu\nu}$ is fixed and does not transform with the metric, so the action is not a scalar and the variation does not yield a conserved, traceless tensor. The source states the connection explicitly: the violation of conformal invariance "relates to the violation of the Lorentz invariance in NC space."
 
-The two routes are distinguished by their fields, and the distinction is checkable. The **mass** route breaks the trace for every field configuration, and its restoration is the massless limit. The **arena** route is proportional to the two invariants contracted with the background, so it vanishes identically for every **null** field: all plane electromagnetic waves remain traceless, and only non-null configurations are anomalous, including at $\boldsymbol\theta\to0$ where the route closes. So the corpus's statement that the classical trace vanishes with the mass stands, and the addition is that mass is the unique *internal* scale: a scale can also be imported from the arena, and when it is, the trace reappears without any mass being present. That is the classical counterpart of the quantum anomaly below — the quantum anomaly introduces a scale by regularisation, the non-invariant arena introduces one by fiat — and it is why the corpus's conformal-invariance claims are claims about a Lorentz-invariant arena.
+The two routes are distinguished by their fields, and the distinction is checkable. The **mass** route breaks the trace for every field configuration, and its restoration is the massless limit. The **arena** route is proportional to the two invariants contracted with the background, so it vanishes identically for every **null** field: all plane electromagnetic waves remain traceless, and only non-null configurations are anomalous, including at $\vec\theta\to0$ where the route closes. So the corpus's statement that the classical trace vanishes with the mass stands, and the addition is that mass is the unique *internal* scale: a scale can also be imported from the arena, and when it is, the trace reappears without any mass being present. That is the classical counterpart of the quantum anomaly below — the quantum anomaly introduces a scale by regularisation, the non-invariant arena introduces one by fiat — and it is why the corpus's conformal-invariance claims are claims about a Lorentz-invariant arena.
 
 ## The Massless Dirac Field
 

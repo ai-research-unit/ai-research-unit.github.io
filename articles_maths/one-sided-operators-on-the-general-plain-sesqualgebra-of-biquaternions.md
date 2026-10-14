@@ -2,10 +2,10 @@
 
 ## Introduction
 
-Let $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ be the biquaternion algebra with its Hermitian conjugation ${}^{*}$ and the positive definite general plain sesquilinear form $(\tilde T,\tilde V)=\mathrm{Sc}(\tilde{T}^{*}\tilde V)$, whose Gram matrix in the basis $e_{0},e_{1},e_{2},e_{3}$ is the identity. For $\tilde B\in\mathbb{B}$ define the **left** and the **right multiplication**
+Let $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ be the biquaternion algebra with its Hermitian conjugation ${}^{*}$ and the positive definite general plain sesquilinear form $(\tilde T,\tilde R)=\mathrm{Sc}(\tilde{T}^{*}\tilde R)$, whose Gram matrix in the basis $e_{0},e_{1},e_{2},e_{3}$ is the identity. For $\tilde B\in\mathbb{B}$ define the **left** and the **right multiplication**
 
 $$
-L_{\tilde B}(\tilde V) = \tilde B\,\tilde V ,\qquad R_{\tilde C}(\tilde V) = \tilde V\,\tilde C .
+L_{\tilde B}(\tilde R) = \tilde B\,\tilde R ,\qquad R_{\tilde C}(\tilde R) = \tilde R\,\tilde C .
 $$
 
 These are the two one-sided operators of the algebra, and the two-sided operator of the companion article is their product, $\Theta_{\tilde B}=L_{\tilde B}R_{\tilde{B}^{*}}=R_{\tilde{B}^{*}}L_{\tilde B}$ (*Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions*).
@@ -19,7 +19,7 @@ The algebra, the dagger, the sectors and the slice are *Biquaternions as a Vecto
 **Definition.** For $\tilde B,\tilde C\in\mathbb{B}$ the **left multiplication by $\tilde B$** and the **right multiplication by $\tilde C$** are the $\mathbb{C}$-linear operators $L_{\tilde B},R_{\tilde C}\in\mathrm{End}_{\mathbb{C}}(\mathbb{B})$ with
 
 $$
-L_{\tilde B}(\tilde V)=\tilde B\,\tilde V,\qquad R_{\tilde C}(\tilde V)=\tilde V\,\tilde C .
+L_{\tilde B}(\tilde R)=\tilde B\,\tilde R,\qquad R_{\tilde C}(\tilde R)=\tilde R\,\tilde C .
 $$
 
 **Proposition (linearity in the parameter).** The assignments $\tilde B\mapsto L_{\tilde B}$ and $\tilde C\mapsto R_{\tilde C}$ are $\mathbb{C}$-linear and injective:
@@ -32,7 +32,7 @@ and $L_{\tilde B}=0$ or $R_{\tilde C}=0$ implies $\tilde B=0$ or $\tilde C=0$.
 
 *Proof.* The two displays are the distributivity of the algebra, and the injectivity follows by evaluating on $e_{0}$.
 
-**Remark (the contrast with the two-sided case).** The parameter enters **once**, so the assignment is linear and additive; in the two-sided case it enters twice, $\Theta_{\alpha \tilde T+\beta \tilde Q}(\tilde V)=\alpha\alpha^{*}\Theta_{\tilde T}(\tilde V)+\beta\beta^{*}\Theta_{\tilde Q}(\tilde V)+(\alpha\beta^{*}\tilde T\tilde V \bar{\tilde Q}+\beta\alpha^{*}\tilde Q\tilde V\tilde{T}^{*})$, which is the failure of additivity. Every difference between this article and its companion traces back to this one fact.
+**Remark (the contrast with the two-sided case).** The parameter enters **once**, so the assignment is linear and additive; in the two-sided case it enters twice, $\Theta_{\alpha \tilde T+\beta \tilde Q}(\tilde R)=\alpha\alpha^{*}\Theta_{\tilde T}(\tilde R)+\beta\beta^{*}\Theta_{\tilde Q}(\tilde R)+(\alpha\beta^{*}\tilde T\tilde R \bar{\tilde Q}+\beta\alpha^{*}\tilde Q\tilde R\tilde{T}^{*})$, which is the failure of additivity. Every difference between this article and its companion traces back to this one fact.
 
 ## The Composition Laws
 
@@ -42,9 +42,9 @@ $$
 L_{\tilde B}L_{\tilde C} = L_{\tilde B\tilde C},\qquad R_{\tilde B}R_{\tilde C} = R_{\tilde C\tilde B},\qquad L_{\tilde B}R_{\tilde C} = R_{\tilde C}L_{\tilde B},\qquad L_{\tilde B}R_{\tilde{B}^{*}} = \Theta_{\tilde B}.
 $$
 
-*Proof.* Associativity gives the first two, and the third is the associativity identity $\tilde B\,(\tilde V\,\tilde C)=(\tilde B\,\tilde V)\,\tilde C$; the fourth is the definition of the two-sided operator.
+*Proof.* Associativity gives the first two, and the third is the associativity identity $\tilde B\,(\tilde R\,\tilde C)=(\tilde B\,\tilde R)\,\tilde C$; the fourth is the definition of the two-sided operator.
 
-**Corollary (the two families, and the two-sided family as their product).** The left multiplications form a subalgebra of the operators isomorphic to $\mathbb{B}$ and the right multiplications form a subalgebra anti-isomorphic to $\mathbb{B}$, and the two subalgebras commute inside $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$; the products $L_{\tilde B}R_{\tilde C}$ are the **mixed** operators $\tilde V\mapsto \tilde B\tilde V\tilde C$, of which the two-sided family is the diagonal case $\tilde C=\tilde{B}^{*}$. A general mixed operator has two independent parameters and is a two-sided operator only when $\tilde C=\lambda \tilde{B}^{*}$ for a scalar $\lambda$, in which case it is $\lambda \Theta_{\tilde B}$; the mixed family is the subject of *Mixed Inner Conjugation and Hermitian Adjoint*.
+**Corollary (the two families, and the two-sided family as their product).** The left multiplications form a subalgebra of the operators isomorphic to $\mathbb{B}$ and the right multiplications form a subalgebra anti-isomorphic to $\mathbb{B}$, and the two subalgebras commute inside $\mathrm{End}_{\mathbb{C}}(\mathbb{B})$; the products $L_{\tilde B}R_{\tilde C}$ are the **mixed** operators $\tilde R\mapsto \tilde B\tilde R\tilde C$, of which the two-sided family is the diagonal case $\tilde C=\tilde{B}^{*}$. A general mixed operator has two independent parameters and is a two-sided operator only when $\tilde C=\lambda \tilde{B}^{*}$ for a scalar $\lambda$, in which case it is $\lambda \Theta_{\tilde B}$; the mixed family is the subject of *Mixed Inner Conjugation and Hermitian Adjoint*.
 
 ## The Adjoints of the One-Sided Operators
 
@@ -54,17 +54,17 @@ $$
 (L_{\tilde B})^{*} = L_{\tilde{B}^{*}},\qquad (R_{\tilde C})^{*} = R_{\tilde{C}^{*}} .
 $$
 
-*Proof.* For $\tilde V,\tilde Q\in\mathbb{B}$, using the anti-involution property of the dagger and the invariance of the scalar part under cyclic permutation,
+*Proof.* For $\tilde R,\tilde Q\in\mathbb{B}$, using the anti-involution property of the dagger and the invariance of the scalar part under cyclic permutation,
 
 $$
-(L_{\tilde B}\tilde V,\tilde Q) = \mathrm{Sc}\bigl((\tilde B\tilde V)^{\dagger}\tilde Q\bigr) = \mathrm{Sc}\bigl(\tilde{V}^{*}\tilde{B}^{*}\tilde Q\bigr) = \bigl(\tilde V,\ L_{\tilde{B}^{*}}\tilde Q\bigr) ,
+(L_{\tilde B}\tilde R,\tilde Q) = \mathrm{Sc}\bigl((\tilde B\tilde R)^{\dagger}\tilde Q\bigr) = \mathrm{Sc}\bigl(\tilde{R}^{*}\tilde{B}^{*}\tilde Q\bigr) = \bigl(\tilde R,\ L_{\tilde{B}^{*}}\tilde Q\bigr) ,
 $$
 
-and the same computation on the right with $(\tilde V\tilde C)^{\dagger}=\tilde{C}^{*}\tilde{V}^{*}$ gives $(R_{\tilde C}\tilde V,\tilde Q)=(\tilde V,R_{\tilde{C}^{*}}\tilde Q)$. The adjoint is unique, since the form is non-degenerate.
+and the same computation on the right with $(\tilde R\tilde C)^{\dagger}=\tilde{C}^{*}\tilde{R}^{*}$ gives $(R_{\tilde C}\tilde R,\tilde Q)=(\tilde R,R_{\tilde{C}^{*}}\tilde Q)$. The adjoint is unique, since the form is non-degenerate.
 
 **Corollary (the dagger is natural for the one-sided operators).** The assignments $\tilde B\mapsto L_{\tilde B}$ and $\tilde C\mapsto R_{\tilde C}$ carry the dagger of the algebra to the adjoint of the operator: $L_{\tilde B}^{\dagger}=L_{\tilde B}^{*}=L_{\tilde B^{*}}$ and $R_{\tilde C}^{\dagger}=R_{\tilde C}^{*}=R_{\tilde C^{*}}$, the dagger and the star coinciding because the adjoint in view is the one of the definite form. Consequently $L$ is a **faithful $*$-representation** of the algebra on the Hilbert space $(\mathbb{B},(\cdot,\cdot))$: it is linear, multiplicative, injective and compatible with the dagger. Since $\mathbb{B}\cong M_{2}(\mathbb{C})$ and $\dim_{\mathbb{C}}\mathbb{B}=4$, the representation is the left regular representation, that is two copies of the standard module $\mathbb{C}^{2}$ of the algebra (*The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*).
 
-**Remark (which half of the dagger is used).** The adjoint of $L_{\tilde B}$ is $L_{\tilde{B}^{*}}$ and **not** $R_{\tilde{B}^{*}}$: the cross identity $(L_{\tilde B}\tilde V,\tilde Q)=(\tilde V,R_{\tilde{B}^{*}}\tilde Q)$ is false in general. In the matrix model the point is that the Hilbert structure of the algebra is the space of matrices with the Hilbert–Schmidt form, and the adjoint of left multiplication is again left multiplication.
+**Remark (which half of the dagger is used).** The adjoint of $L_{\tilde B}$ is $L_{\tilde{B}^{*}}$ and **not** $R_{\tilde{B}^{*}}$: the cross identity $(L_{\tilde B}\tilde R,\tilde Q)=(\tilde R,R_{\tilde{B}^{*}}\tilde Q)$ is false in general. In the matrix model the point is that the Hilbert structure of the algebra is the space of matrices with the Hilbert–Schmidt form, and the adjoint of left multiplication is again left multiplication.
 
 ## Self-Adjoint, Skew and Unitary One-Sided Operators
 
@@ -82,7 +82,7 @@ $$
 
 and $L_{\tilde B}$ is invertible if and only if $\tilde B\in\mathbb{B}^{\times}$, with inverse $L_{\tilde B^{-1}}$. The same four statements hold for the right multiplication with the same criteria on the parameter.
 
-*Proof.* By the adjoint theorem, $L_{\tilde B}^{*}=L_{\tilde{B}^{*}}$, and the assignment is injective, so $L_{\tilde B}^{*}=L_{\tilde B}$ if and only if $\tilde{B}^{*}=\tilde B$, $L_{\tilde B}^{*}=-L_{\tilde B}$ if and only if $\tilde{B}^{*}=-\tilde B$, and $(L_{\tilde B})^{*}L_{\tilde B}=L_{\tilde{B}^{*}\tilde B}$ is the identity if and only if $\tilde{B}^{*}\tilde B=e_{0}$. The form preservation criterion is the same computation, $(L_{\tilde B}\tilde V,L_{\tilde B}\tilde Q)=(\tilde V,\tilde{B}^{*}\tilde B\tilde Q)$, and it coincides with unitarity of the operator. Invertibility is the inverse of an algebra element.
+*Proof.* By the adjoint theorem, $L_{\tilde B}^{*}=L_{\tilde{B}^{*}}$, and the assignment is injective, so $L_{\tilde B}^{*}=L_{\tilde B}$ if and only if $\tilde{B}^{*}=\tilde B$, $L_{\tilde B}^{*}=-L_{\tilde B}$ if and only if $\tilde{B}^{*}=-\tilde B$, and $(L_{\tilde B})^{*}L_{\tilde B}=L_{\tilde{B}^{*}\tilde B}$ is the identity if and only if $\tilde{B}^{*}\tilde B=e_{0}$. The form preservation criterion is the same computation, $(L_{\tilde B}\tilde R,L_{\tilde B}\tilde Q)=(\tilde R,\tilde{B}^{*}\tilde B\tilde Q)$, and it coincides with unitarity of the operator. Invertibility is the inverse of an algebra element.
 
 **Corollary (the two sectors give the two types).** The Hermitian and the anti-Hermitian elements act by the self-adjoint and by the skew-adjoint operators respectively, and the correspondence is exactly that of the involutions of the algebra:
 
@@ -123,10 +123,10 @@ $$
 
 ## The Form That Makes the Action Self-Adjoint
 
-**Theorem (the defining property of the form).** The scalar form satisfies, for all $\tilde B,\tilde V,\tilde Q$,
+**Theorem (the defining property of the form).** The scalar form satisfies, for all $\tilde B,\tilde R,\tilde Q$,
 
 $$
-(\tilde B\,\tilde V,\ \tilde Q) = \bigl(\tilde V,\ \tilde{B}^{*}\tilde Q\bigr) ,
+(\tilde B\,\tilde R,\ \tilde Q) = \bigl(\tilde R,\ \tilde{B}^{*}\tilde Q\bigr) ,
 $$
 
 and it is, up to a positive scalar, the **only** general plain sesquilinear form on $\mathbb{B}$ that is $\mathbb{C}$-linear in the second argument and invariant in the sense that the adjoint of $L_{\tilde B}$ is $L_{\tilde{B}^{*}}$ and the form is positive definite.
@@ -149,13 +149,13 @@ $$
 
 and is therefore of neither of the two types, in agreement with the theorem: the parameter is in neither sector. The example records where the type is decided: by the parameter, through the sector it lies in, and never by the argument.
 
-**A mixed operator that is not two-sided.** The operator $\tilde V\mapsto e_{1}\tilde Ve_{2}=L_{e_{1}}R_{e_{2}}$ is not of the form $\Theta_{\tilde T}$ for any $\tilde T$. Indeed a two-sided operator satisfies $\Theta_{\tilde T}(e_{0})=\tilde T\tilde{T}^{*}\in\mathbb{M}_+$, whereas $L_{e_{1}}R_{e_{2}}(e_{0})=e_{1}e_{2}=e_{3}$, which is anti-Hermitian; so no parameter $\tilde T$ reproduces the operator. In general $L_{\tilde B}R_{\tilde C}$ is two-sided only if $\tilde B\tilde C\in\mathbb{M}_+$, and when $\tilde C=\lambda \tilde{B}^{*}$ with $\lambda=\lvert\mu\rvert^{2}\geq0$ one has $L_{\tilde B}R_{\tilde C}=\Theta_{\mu \tilde B}$. Its adjoint is $L_{e_{1}^{\dagger}}R_{e_{2}^{\dagger}}=L_{-e_{1}}R_{-e_{2}}=L_{e_{1}}R_{e_{2}}$, so this particular mixed operator is self-adjoint, a phenomenon that the two-sided family does not show.
+**A mixed operator that is not two-sided.** The operator $\tilde R\mapsto e_{1}\tilde Re_{2}=L_{e_{1}}R_{e_{2}}$ is not of the form $\Theta_{\tilde T}$ for any $\tilde T$. Indeed a two-sided operator satisfies $\Theta_{\tilde T}(e_{0})=\tilde T\tilde{T}^{*}\in\mathbb{M}_+$, whereas $L_{e_{1}}R_{e_{2}}(e_{0})=e_{1}e_{2}=e_{3}$, which is anti-Hermitian; so no parameter $\tilde T$ reproduces the operator. In general $L_{\tilde B}R_{\tilde C}$ is two-sided only if $\tilde B\tilde C\in\mathbb{M}_+$, and when $\tilde C=\lambda \tilde{B}^{*}$ with $\lambda=\lvert\mu\rvert^{2}\geq0$ one has $L_{\tilde B}R_{\tilde C}=\Theta_{\mu \tilde B}$. Its adjoint is $L_{e_{1}^{\dagger}}R_{e_{2}^{\dagger}}=L_{-e_{1}}R_{-e_{2}}=L_{e_{1}}R_{e_{2}}$, so this particular mixed operator is self-adjoint, a phenomenon that the two-sided family does not show.
 
-**A check of the composition and the adjoint.** For random $\tilde B,\tilde C$ and random $\tilde V,\tilde Q$, the identities $L_{\tilde B}L_{\tilde C}=L_{\tilde B\tilde C}$, $L_{\tilde B}R_{\tilde C}=R_{\tilde C}L_{\tilde B}$ and $(L_{\tilde B}\tilde V,\tilde Q)=(\tilde V,L_{\tilde{B}^{*}}\tilde Q)$ were verified to machine precision, as were the four type criteria over the four subspaces.
+**A check of the composition and the adjoint.** For random $\tilde B,\tilde C$ and random $\tilde R,\tilde Q$, the identities $L_{\tilde B}L_{\tilde C}=L_{\tilde B\tilde C}$, $L_{\tilde B}R_{\tilde C}=R_{\tilde C}L_{\tilde B}$ and $(L_{\tilde B}\tilde R,\tilde Q)=(\tilde R,L_{\tilde{B}^{*}}\tilde Q)$ were verified to machine precision, as were the four type criteria over the four subspaces.
 
 ## Summary
 
-The left and the right multiplications $L_{\tilde B}(\tilde V)=\tilde B\tilde V$ and $R_{\tilde C}(\tilde V)=\tilde V\tilde C$ are the one-sided operators of the biquaternion algebra, and the two-sided operator of the companion article is their product $\Theta_{\tilde B}=L_{\tilde B}R_{\tilde{B}^{*}}$. The parameter enters **linearly**, and everything follows: the assignment is additive and injective, the composition laws are $L_{\tilde B}L_{\tilde C}=L_{\tilde B\tilde C}$, $R_{\tilde B}R_{\tilde C}=R_{\tilde C\tilde B}$ and $L_{\tilde B}R_{\tilde C}=R_{\tilde C}L_{\tilde B}$, the adjoints are $(L_{\tilde B})^{*}=L_{\tilde{B}^{*}}$ and $(R_{\tilde C})^{*}=R_{\tilde{C}^{*}}$, so that $L$ is a faithful $*$-representation of the algebra on the Hilbert space of the scalar form, of complex dimension four, that is two copies of the standard module. The **type criteria** are the ones of the involution lattice: $L_{\tilde B}$ is self-adjoint exactly on $\mathbb{M}_+$, skew-adjoint exactly on $\mathbb{M}_-$, unitary and congruent exactly on the slice $U$, and invertible exactly on the group of units; the Lie algebra of the unitary one-sided operators is $L_{\mathbb{M}_-}$ and the exponential stays inside the family, $e^{L_{\tilde B}}=L_{e^{\tilde B}}$. The **double centraliser theorem** holds in two lines: the commutant of the left multiplications is the right multiplications and conversely, the bicommutant is the scalars, and the mixed operators $L_{\tilde B}R_{\tilde C}$ with two independent parameters are the ones that are not two-sided. Finally the scalar form is characterised among the positive definite general plain sesquilinear forms by the property that the adjoint of the action is the action of the adjoint element, which is the statement that the algebra is a Hermitian Clifford module over itself. The pair of articles isolates in this way what the doubling of the parameter in the sandwich costs: the additivity, the separation of the two sectors, the existence of skew operators, and the injectivity of the assignment.
+The left and the right multiplications $L_{\tilde B}(\tilde R)=\tilde B\tilde R$ and $R_{\tilde C}(\tilde R)=\tilde R\tilde C$ are the one-sided operators of the biquaternion algebra, and the two-sided operator of the companion article is their product $\Theta_{\tilde B}=L_{\tilde B}R_{\tilde{B}^{*}}$. The parameter enters **linearly**, and everything follows: the assignment is additive and injective, the composition laws are $L_{\tilde B}L_{\tilde C}=L_{\tilde B\tilde C}$, $R_{\tilde B}R_{\tilde C}=R_{\tilde C\tilde B}$ and $L_{\tilde B}R_{\tilde C}=R_{\tilde C}L_{\tilde B}$, the adjoints are $(L_{\tilde B})^{*}=L_{\tilde{B}^{*}}$ and $(R_{\tilde C})^{*}=R_{\tilde{C}^{*}}$, so that $L$ is a faithful $*$-representation of the algebra on the Hilbert space of the scalar form, of complex dimension four, that is two copies of the standard module. The **type criteria** are the ones of the involution lattice: $L_{\tilde B}$ is self-adjoint exactly on $\mathbb{M}_+$, skew-adjoint exactly on $\mathbb{M}_-$, unitary and congruent exactly on the slice $U$, and invertible exactly on the group of units; the Lie algebra of the unitary one-sided operators is $L_{\mathbb{M}_-}$ and the exponential stays inside the family, $e^{L_{\tilde B}}=L_{e^{\tilde B}}$. The **double centraliser theorem** holds in two lines: the commutant of the left multiplications is the right multiplications and conversely, the bicommutant is the scalars, and the mixed operators $L_{\tilde B}R_{\tilde C}$ with two independent parameters are the ones that are not two-sided. Finally the scalar form is characterised among the positive definite general plain sesquilinear forms by the property that the adjoint of the action is the action of the adjoint element, which is the statement that the algebra is a Hermitian Clifford module over itself. The pair of articles isolates in this way what the doubling of the parameter in the sandwich costs: the additivity, the separation of the two sectors, the existence of skew operators, and the injectivity of the assignment.
 
 ## Summary of Notation
 
@@ -163,9 +163,9 @@ The left and the right multiplications $L_{\tilde B}(\tilde V)=\tilde B\tilde V$
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | The biquaternion algebra; basis $e_{0},e_{1},e_{2},e_{3}$ |
 | ${}^{*}$ | Hermitian conjugation; $\mathbb{M}_+$ fixed, $\mathbb{M}_-$ anti-fixed |
-| $(\tilde T,\tilde V)=\mathrm{Sc}(\tilde{T}^{*}\tilde V)$ | The scalar form; Gram matrix the identity |
-| $L_{\tilde B}(\tilde V)=\tilde B\tilde V$ | Left multiplication; $\mathbb{C}$-linear and injective in $\tilde B$ |
-| $R_{\tilde C}(\tilde V)=\tilde V\tilde C$ | Right multiplication; the anti-homomorphism family |
+| $(\tilde T,\tilde R)=\mathrm{Sc}(\tilde{T}^{*}\tilde R)$ | The scalar form; Gram matrix the identity |
+| $L_{\tilde B}(\tilde R)=\tilde B\tilde R$ | Left multiplication; $\mathbb{C}$-linear and injective in $\tilde B$ |
+| $R_{\tilde C}(\tilde R)=\tilde R\tilde C$ | Right multiplication; the anti-homomorphism family |
 | $\Theta_{\tilde B}=L_{\tilde B}R_{\tilde{B}^{*}}$ | The two-sided operator, the product of the two |
 | $L_{\tilde B}L_{\tilde C}=L_{\tilde B\tilde C}$, $R_{\tilde B}R_{\tilde C}=R_{\tilde C\tilde B}$ | Composition laws |
 | $L_{\tilde B}R_{\tilde C}=R_{\tilde C}L_{\tilde B}$ | The two families commute |

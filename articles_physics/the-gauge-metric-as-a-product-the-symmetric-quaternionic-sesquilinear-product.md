@@ -17,7 +17,7 @@ The operation is the **symmetric quaternionic sesquilinear product**
 
 $$
 \tilde P\bullet\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural}\bigr)
-=\bigl[P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})\bigr]-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P},
+=\bigl[P_0\overline{Q_0}-(\vec P,\overline{\vec Q})\bigr]-P_0\overline{\vec Q}-\overline{Q_0}\vec P,
 $$
 
 the operation named $\mathrm{SQS}$ in *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and developed as a multiplication in *Introduction to the Symmetric Quaternionic Sesqualgebra of
@@ -26,7 +26,7 @@ companion, the **antisymmetric quaternionic sesquilinear product**
 
 $$
 \tilde P\diamond\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}-\tilde Q^{*}\tilde P^{\natural}\bigr)
-=\mathbf{P}\times\overline{\mathbf{Q}},
+=\vec P\times\overline{\vec Q},
 $$
 
 is pure vector, and the two reconstruct the fourth product,
@@ -53,9 +53,9 @@ Symmetric and Antisymmetric Parts of a Sesqualgebra Product* and *The 12 Product
 **Conventions.** As in the companion articles of this block: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$
 with basis $e_0,e_1,e_2,e_3$, $e_0=1$, $e_k^{2}=-e_0$, $e_1e_2=e_3$, and central scalar imaginary $i$;
 a general element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$, of scalar part
-$\mathrm{Sc}(\tilde Q)=Q_0$ and vector part $\mathbf{Q}=\sum_kQ_ke_k$; the natural conjugation is
-$\tilde Q^{\natural}=Q_0e_0-\mathbf{Q}$, the coefficientwise one is $\bar{\tilde Q}=\sum_\mu\bar Q_\mu e_\mu$,
-and the star is $\tilde Q^{*}=\overline{\tilde Q^{\natural}}$; $(\mathbf{P},\mathbf{Q})=\sum_kP_kQ_k$ and
+$\mathrm{Sc}(\tilde Q)=Q_0$ and vector part $\vec Q=\sum_kQ_ke_k$; the natural conjugation is
+$\tilde Q^{\natural}=Q_0e_0-\vec Q$, the coefficientwise one is $\bar{\tilde Q}=\sum_\mu\bar Q_\mu e_\mu$,
+and the star is $\tilde Q^{*}=\overline{\tilde Q^{\natural}}$; $(\vec P,\vec Q)=\sum_kP_kQ_k$ and
 $\times$ are the bilinear dot and cross products; the fourth product is
 $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$; the Krein form is
 $K(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$
@@ -111,28 +111,28 @@ expands, on general elements, as
 
 $$
 \tilde P^{\natural}\tilde Q^{*}
-=\bigl[P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})\bigr]
--P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}+\mathbf{P}\times\overline{\mathbf{Q}},
+=\bigl[P_0\overline{Q_0}-(\vec P,\overline{\vec Q})\bigr]
+-P_0\overline{\vec Q}-\overline{Q_0}\vec P+\vec P\times\overline{\vec Q},
 $$
 
 and the two orders differ by the sign of the cross term alone: the scalar part and the mixed term
-$-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}$ are the same in both, and the cross products
-$\mathbf{P}\times\overline{\mathbf{Q}}$ and $\overline{\mathbf{Q}}\times\mathbf{P}=-\mathbf{P}\times\overline{\mathbf{Q}}$
+$-P_0\overline{\vec Q}-\overline{Q_0}\vec P$ are the same in both, and the cross products
+$\vec P\times\overline{\vec Q}$ and $\overline{\vec Q}\times\vec P=-\vec P\times\overline{\vec Q}$
 are opposite. The half-sum therefore keeps the scalar part and the mixed term and cancels the cross
 product, and the half-difference keeps the cross product and nothing else:
 
 $$
-\tilde P\bullet\tilde Q=\bigl[P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})\bigr]
--P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P},
+\tilde P\bullet\tilde Q=\bigl[P_0\overline{Q_0}-(\vec P,\overline{\vec Q})\bigr]
+-P_0\overline{\vec Q}-\overline{Q_0}\vec P,
 \qquad
-\tilde P\diamond\tilde Q=\mathbf{P}\times\overline{\mathbf{Q}}.
+\tilde P\diamond\tilde Q=\vec P\times\overline{\vec Q}.
 $$
 
 **Remark (the trap of the whole block).** In the **plain** sesquilinear row the split is the
 scalar/vector split of the one value: $\mathrm{SPS}=\mathrm{Sc}$ and $\mathrm{APS}=\mathrm{Vect}$
 (*The Hermitian Form as a Product: Positivity and the Real Part of the Born Pairing*). **For the fourth
 product it is not.** Here the antisymmetric part is one **piece** of the vector part, the cross term
-$\mathbf{P}\times\overline{\mathbf{Q}}$, and the symmetric part keeps the rest — the scalar part and the
+$\vec P\times\overline{\vec Q}$, and the symmetric part keeps the rest — the scalar part and the
 two mixed vector terms. The naive move, to call the scalar part of $\tilde P^{\natural}\tilde Q^{*}$ the
 symmetric part and its vector part the antisymmetric part, is therefore wrong, and it is wrong by exactly
 the two mixed terms. That error is the reason the symmetric half has a **non-central algebraic norm**, the
@@ -153,15 +153,15 @@ products, and it was checked against the owner article and against the row table
 
 $$
 \tilde P\bullet\tilde Q
-=\bigl[P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})\bigr]-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P},
+=\bigl[P_0\overline{Q_0}-(\vec P,\overline{\vec Q})\bigr]-P_0\overline{\vec Q}-\overline{Q_0}\vec P,
 $$
 
-with scalar part the Krein form $K(\tilde P,\tilde Q)=P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})$
-and vector part the mixed term $-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}$.
+with scalar part the Krein form $K(\tilde P,\tilde Q)=P_0\overline{Q_0}-(\vec P,\overline{\vec Q})$
+and vector part the mixed term $-P_0\overline{\vec Q}-\overline{Q_0}\vec P$.
 
 *Proof.* The value of the fourth product is the display of §*The Two Parts of the Fourth Product*; the
 swapped order has the same scalar part, because $\mathrm{Sc}(XY)=\mathrm{Sc}(YX)$ for the plain product,
-and its cross term opposite, because $\overline{\mathbf{Q}}\times\mathbf{P}=-\mathbf{P}\times\overline{\mathbf{Q}}$;
+and its cross term opposite, because $\overline{\vec Q}\times\vec P=-\vec P\times\overline{\vec Q}$;
 the half-sum is the display.
 
 **Corollary (the two projections sit side by side).** The scalar part of the value is a complex multiple of
@@ -169,9 +169,9 @@ $e_0$ and the vector part is a complex vector in
 $\mathrm{span}_{\mathbb{C}}\{e_1,e_2,e_3\}$; neither annihilates the other, and the two are read in the
 same element. Neither is the whole of the value, and neither was assigned the name of a part by the split.
 
-**The strain interpretation of the value.** The two projections have the shapes of the two elementary deformations of a frame, and the correspondence is exact. The scalar part is a **trace**, $K=\mathrm{Sc}(\tilde P\bullet\tilde Q)$, and a trace read on a frame is a **conformal factor**: it changes the scale and leaves the directions alone. The vector part is **traceless** — it is $-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}$ and carries no $e_0$ component — and a traceless symmetric part read on a frame is a **shear**: it changes the shape and leaves the volume. The symmetric gauge product is therefore read as a **frame-deformation operator**: its value is one scale and one shape, and the statement that the value lies in no subspace of the remarkable subspaces is the statement that a genuine deformation mixes the two grades. The interpretation is bounded by the same caution as the theorem it dresses: one value has at most a scalar and a vector part, and it is the **image** of the operation, not one of its values, whose real span is the whole algebra.
+**The strain interpretation of the value.** The two projections have the shapes of the two elementary deformations of a frame, and the correspondence is exact. The scalar part is a **trace**, $K=\mathrm{Sc}(\tilde P\bullet\tilde Q)$, and a trace read on a frame is a **conformal factor**: it changes the scale and leaves the directions alone. The vector part is **traceless** — it is $-P_0\overline{\vec Q}-\overline{Q_0}\vec P$ and carries no $e_0$ component — and a traceless symmetric part read on a frame is a **shear**: it changes the shape and leaves the volume. The symmetric gauge product is therefore read as a **frame-deformation operator**: its value is one scale and one shape, and the statement that the value lies in no subspace of the remarkable subspaces is the statement that a genuine deformation mixes the two grades. The interpretation is bounded by the same caution as the theorem it dresses: one value has at most a scalar and a vector part, and it is the **image** of the operation, not one of its values, whose real span is the whole algebra.
 
-**The mixed term as the sector-mixing term.** The vector part of the value is where the two sectors meet, and it is worth naming it. The vector part is $-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}$, and its components run over the six real directions of the vector subspace, three of them material ($e_k$) and three informational ($ie_k$); the scalar part $K$ couples only same-grade coefficients, and the mixed term is what couples the **scalar coefficient of one argument to the vector coefficients of the other**. The symmetric gauge product is therefore the algebraic seat of the framework's **matter–information mixing**: the term the corpus reads in the imaginary part of the biquaternion norm as the coupling of the material and informational sectors is carried here by the vector part of the value, and the **centrality criterion** of the band — $Q_0\overline{Q_k}\in i\mathbb{R}$ for every $k$ — is the **no-mixing** condition under which the coupling vanishes and the value returns to the centre. The name is the article's; the algebra of the term is the theorem above.
+**The mixed term as the sector-mixing term.** The vector part of the value is where the two sectors meet, and it is worth naming it. The vector part is $-P_0\overline{\vec Q}-\overline{Q_0}\vec P$, and its components run over the six real directions of the vector subspace, three of them material ($e_k$) and three informational ($ie_k$); the scalar part $K$ couples only same-grade coefficients, and the mixed term is what couples the **scalar coefficient of one argument to the vector coefficients of the other**. The symmetric gauge product is therefore the algebraic seat of the framework's **matter–information mixing**: the term the corpus reads in the imaginary part of the biquaternion norm as the coupling of the material and informational sectors is carried here by the vector part of the value, and the **centrality criterion** of the band — $Q_0\overline{Q_k}\in i\mathbb{R}$ for every $k$ — is the **no-mixing** condition under which the coupling vanishes and the value returns to the centre. The name is the article's; the algebra of the term is the theorem above.
 
 **The duality rotation is not the split.** A caution, because two operations of the corpus are easy to conflate here. Multiplication by the central imaginary $i$ is the **electric–magnetic duality rotation** of the field strength, and it exchanges the real and the imaginary sectors (*Other Remarkable Subspaces*); it is **not** the symmetric-versus-antisymmetric split of a product, which is the exchange of the two arguments adapted to the class. The duality rotation is an operation on an element of the algebra; the split is an operation on a product of two. The two coincide on nothing in general, and the corpus keeps them apart.
 
@@ -182,10 +182,10 @@ The two rows of sesqualgebra products are read against each other, and the contr
 | row | symmetric part | antisymmetric part | the symmetric value |
 |---|---|---|---|
 | plain sesquilinear $\mathrm{GPS}$ | $\mathrm{SPS}=\mathrm{Sc}(\tilde P\tilde Q^{*})=H(\tilde P,\tilde Q)$ | $\mathrm{APS}=\mathrm{Vect}(\tilde P\tilde Q^{*})$ | central, in $\mathbb{C}_{\mathbb{B}}$ |
-| quaternionic sesquilinear $\mathrm{GQS}$ | $\mathrm{SQS}=\tilde P\bullet\tilde Q$ | $\mathrm{AQS}=\mathbf{P}\times\overline{\mathbf{Q}}$ | scalar part $K$, vector part the mixed term, in no subspace of the remarkable subspaces |
+| quaternionic sesquilinear $\mathrm{GQS}$ | $\mathrm{SQS}=\tilde P\bullet\tilde Q$ | $\mathrm{AQS}=\vec P\times\overline{\vec Q}$ | scalar part $K$, vector part the mixed term, in no subspace of the remarkable subspaces |
 
 The plain symmetric part is **central-valued** and its algebraic norm is the positive Hermitian form
-$H(\tilde Q,\tilde Q)=\lvert Q_0\rvert^{2}+\lvert\mathbf{Q}\rvert^{2}$; the quaternionic symmetric part is
+$H(\tilde Q,\tilde Q)=\lvert Q_0\rvert^{2}+\lvert\vec Q\rvert^{2}$; the quaternionic symmetric part is
 **not central-valued**, its scalar part is the **indefinite** form $K$, and its value lies in no one of the
 remarkable subspaces. This is the first appearance of the tension the band carries: the two symmetric
 sesquilinear products do not divide the state side between them, because only one of the two has a
@@ -391,10 +391,10 @@ precise is cited and not restated.
 ## The Ledger
 
 **Proved, and recomputed.** The fourth product expands as
-$\tilde P^{\natural}\tilde Q^{*}=[P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})]-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}+\mathbf{P}\times\overline{\mathbf{Q}}$;
+$\tilde P^{\natural}\tilde Q^{*}=[P_0\overline{Q_0}-(\vec P,\overline{\vec Q})]-P_0\overline{\vec Q}-\overline{Q_0}\vec P+\vec P\times\overline{\vec Q}$;
 its two orders differ only in the sign of the cross term; the half-sum is
-$\tilde P\bullet\tilde Q=[P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})]-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}$
-and the half-difference is $\mathbf{P}\times\overline{\mathbf{Q}}$; the two parts reconstruct the fourth
+$\tilde P\bullet\tilde Q=[P_0\overline{Q_0}-(\vec P,\overline{\vec Q})]-P_0\overline{\vec Q}-\overline{Q_0}\vec P$
+and the half-difference is $\vec P\times\overline{\vec Q}$; the two parts reconstruct the fourth
 product. The symmetric half is conjugate-commutative, sesquilinear over $(\mathbb{C},\bar{\cdot})$ and
 neither commutative nor associative; $e_0\bullet\tilde Q=\tilde Q^{*}$ and
 $\tilde Q\bullet e_0=\tilde Q^{\natural}$, so there is no unit on either side; it fails the Jordan identity
@@ -427,7 +427,7 @@ The gauge metric reads as the pairing of the transformations rather than of the 
 The symmetric quaternionic sesquilinear product is the symmetric half of the fourth product under the
 class-preserving exchange, and it is the half that keeps the scalar part and the mixed vector term while
 the antisymmetric half takes the cross term alone. Its value is
-$[P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})]-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}$,
+$[P_0\overline{Q_0}-(\vec P,\overline{\vec Q})]-P_0\overline{\vec Q}-\overline{Q_0}\vec P$,
 of scalar part the Krein form $K$ and vector part the mixed term; the two projections sit side by side and
 neither annihilates the other. The operation is **conjugate-commutative** and sesquilinear over
 $(\mathbb{C},\bar{\cdot})$, it is neither commutative nor associative, it has **no unit** — the two
@@ -447,10 +447,10 @@ the reason the two symmetric sesquilinear products do not divide the state side 
 | Symbol | Meaning |
 |---|---|
 | $\tilde P\bullet\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural})$ | the symmetric quaternionic sesquilinear product, $\mathrm{SQS}$ |
-| $\tilde P\diamond\tilde Q=\mathbf{P}\times\overline{\mathbf{Q}}$ | the antisymmetric part, $\mathrm{AQS}$, read in the companion article |
+| $\tilde P\diamond\tilde Q=\vec P\times\overline{\vec Q}$ | the antisymmetric part, $\mathrm{AQS}$, read in the companion article |
 | $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}$ | the fourth product, whose parts the two are |
-| $\tilde P\bullet\tilde Q=[P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})]-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}$ | the value; scalar part $K$, vector part the mixed term |
-| $K(\tilde P,\tilde Q)=P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})$ | the Krein form; $\varepsilon=(1,-1,-1,-1)$ |
+| $\tilde P\bullet\tilde Q=[P_0\overline{Q_0}-(\vec P,\overline{\vec Q})]-P_0\overline{\vec Q}-\overline{Q_0}\vec P$ | the value; scalar part $K$, vector part the mixed term |
+| $K(\tilde P,\tilde Q)=P_0\overline{Q_0}-(\vec P,\overline{\vec Q})$ | the Krein form; $\varepsilon=(1,-1,-1,-1)$ |
 | $e_0\bullet\tilde Q=\tilde Q^{*}$, $\tilde Q\bullet e_0=\tilde Q^{\natural}$ | the two one-sided actions; no unit |
 | $x=y=e_1$; the sides $-e_0$, $e_0$ | the witness of the Jordan failure |
 | $(e_0+e_1)\bullet(e_0+e_1)=-2e_1$ | the non-central algebraic norm |

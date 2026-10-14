@@ -9,7 +9,7 @@ $$
 \tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q^{*} ,
 $$
 
-is the subject of this group. The rule, the scalar–vector form and the place of the product among the four are *The Four General Products of the Biquaternion $\mathbb{C}$ Space* §*The General Quaternionic Sesquilinear Product*; the sesqualgebra it defines, its multiplication table and its two actions of the unit are *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*. The symbols are those of the group: ${}^{\natural}$ is the natural conjugation $\tilde P^{\natural} = P_0 - \mathbf P$, ${}^{*}$ is the star conjugation $\tilde P^{*} = \overline{P_0} - \overline{\mathbf Q}$, the bar is the coefficientwise complex conjugation, and $\mathbf P = \sum_k P_k e_k$ is the vector part.
+is the subject of this group. The rule, the scalar–vector form and the place of the product among the four are *The Four General Products of the Biquaternion $\mathbb{C}$ Space* §*The General Quaternionic Sesquilinear Product*; the sesqualgebra it defines, its multiplication table and its two actions of the unit are *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*. The symbols are those of the group: ${}^{\natural}$ is the natural conjugation $\tilde P^{\natural} = P_0 - \vec P$, ${}^{*}$ is the star conjugation $\tilde P^{*} = \overline{P_0} - \overline{\vec Q}$, the bar is the coefficientwise complex conjugation, and $\vec P = \sum_k P_k e_k$ is the vector part.
 
 The subject of this article is the pair of **one-sided actions of the unit candidate** $e_0$, and the fact that they are not the identity but the two conjugations of the algebra:
 
@@ -144,20 +144,20 @@ The remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector su
 | subspace | left action $e_0 \star \cdot = {}^{*}$ | right action $\cdot \star e_0 = {}^{\natural}$ |
 |---|---|---|
 | $\mathbb{C}_{\mathbb{B}}$ | $A e_0 \mapsto \bar A e_0$ | identity |
-| $\mathrm{Vect}(\mathbb{B})$ | $\mathbf Q \mapsto -\overline{\mathbf Q}$ | $\mathbf Q \mapsto -\mathbf Q$ |
+| $\mathrm{Vect}(\mathbb{B})$ | $\vec Q \mapsto -\overline{\vec Q}$ | $\vec Q \mapsto -\vec Q$ |
 | $\mathbb{H}_{\mathbb{B}}$ | $\tilde Q \mapsto \tilde Q^{\natural}$ | $\tilde Q \mapsto \tilde Q^{\natural}$ |
 | $i\mathbb{H}_{\mathbb{B}}$ | $\tilde Q \mapsto -\tilde Q^{\natural}$ | $\tilde Q \mapsto \tilde Q^{\natural}$ |
 | $\mathbb{M}_{+}$ | identity | $\tilde Q \mapsto \tilde Q^{\natural}$ |
 | $\mathbb{M}_{-}$ | $-\mathrm{id}$ | $\tilde Q \mapsto \tilde Q^{\natural}$ |
 
-**Proof.** The left column is the star conjugation, $Q^{*}_0 = \overline{Q_0}$ and $Q^{*}_k = -\overline{Q_k}$; the right column is the natural conjugation, $\tilde Q^{\natural} = Q_0 - \mathbf Q$.
+**Proof.** The left column is the star conjugation, $Q^{*}_0 = \overline{Q_0}$ and $Q^{*}_k = -\overline{Q_k}$; the right column is the natural conjugation, $\tilde Q^{\natural} = Q_0 - \vec Q$.
 
-- On the centre, $\mathbf Q = 0$, so ${}^{*}$ is the coefficientwise conjugation of the single coordinate and ${}^{\natural}$ fixes the element.
-- On the vector subspace, $Q_0 = 0$, so ${}^{*}$ sends $\mathbf Q$ to $-\overline{\mathbf Q}$ and ${}^{\natural}$ sends it to $-\mathbf Q$.
+- On the centre, $\vec Q = 0$, so ${}^{*}$ is the coefficientwise conjugation of the single coordinate and ${}^{\natural}$ fixes the element.
+- On the vector subspace, $Q_0 = 0$, so ${}^{*}$ sends $\vec Q$ to $-\overline{\vec Q}$ and ${}^{\natural}$ sends it to $-\vec Q$.
 - On the quaternion subspace the coordinates are real, so the coefficientwise conjugation is the identity and the two conjugations coincide, both negating the vector part: this is the quaternionic conjugation of the real quaternion subspace.
 - On the anti-quaternion subspace write $\tilde Q = i\tilde K$ with $\tilde K$ in the quaternion subspace, so that $\tilde K^{*} = \tilde K^{\natural}$ there and the star is conjugate-linear while ${}^{\natural}$ is $\mathbb{C}$-linear: $\tilde Q^{*} = (i\tilde K)^{*} = -i\,\tilde K^{*} = -i\,\tilde K^{\natural} = -(i\tilde K)^{\natural} = -\tilde Q^{\natural}$, while the right action is $\tilde Q^{\natural}$.
-- On the Hermitian subspace, ${}^{*}$ is the identity by definition, and ${}^{\natural}$ fixes the real scalar coordinate and negates the imaginary vector coordinate, $\tilde Q = a_0 + i\mathbf p \mapsto a_0 - i\mathbf p$, which stays in $\mathbb{M}_{+}$.
-- On the anti-Hermitian subspace, ${}^{*}$ is $-\mathrm{id}$ by definition, and ${}^{\natural}$ fixes the imaginary scalar coordinate and negates the real vector coordinate, $\tilde Q = i b_0 + \mathbf q \mapsto i b_0 - \mathbf q$, which stays in $\mathbb{M}_{-}$.
+- On the Hermitian subspace, ${}^{*}$ is the identity by definition, and ${}^{\natural}$ fixes the real scalar coordinate and negates the imaginary vector coordinate, $\tilde Q = a_0 + i\vec p \mapsto a_0 - i\vec p$, which stays in $\mathbb{M}_{+}$.
+- On the anti-Hermitian subspace, ${}^{*}$ is $-\mathrm{id}$ by definition, and ${}^{\natural}$ fixes the imaginary scalar coordinate and negates the real vector coordinate, $\tilde Q = i b_0 + \vec q \mapsto i b_0 - \vec q$, which stays in $\mathbb{M}_{-}$.
 
 **Remark.** Two entries are the identity, and each is instructive. The left action is the identity on the Hermitian subspace, because that is the fixed space of ${}^{*}$; the right action is the identity on the centre, because the natural conjugation does not touch a scalar element; and no action is the identity on all of $\mathbb{B}$, which is the absence of a unit in its subspace form. The table also shows where the two actions agree, on $\mathbb{H}_{\mathbb{B}}$, and where they differ by a sign, on $i\mathbb{H}_{\mathbb{B}}$ and on $\mathbb{M}_{\pm}$.
 

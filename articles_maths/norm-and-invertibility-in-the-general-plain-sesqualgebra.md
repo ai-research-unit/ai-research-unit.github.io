@@ -177,7 +177,7 @@ $$
 
 | clause | general plain algebra | general plain sesqualgebra |
 |---|---|---|
-| algebraic norm | $B(\tilde Q)=\mathrm{Sc}(\tilde Q\tilde Q)=Q_0^2-(\mathbf Q,\mathbf Q)$, complex, indefinite | $H(\tilde Q)=\mathrm{Sc}(\tilde Q\star\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}$, real, definite |
+| algebraic norm | $B(\tilde Q)=\mathrm{Sc}(\tilde Q\tilde Q)=Q_0^2-(\vec Q,\vec Q)$, complex, indefinite | $H(\tilde Q)=\mathrm{Sc}(\tilde Q\star\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}$, real, definite |
 | multiplicativity of the algebraic norm | $B$ not multiplicative | $H$ submultiplicative, $H(\tilde P\star\tilde Q)=\lvert H(\tilde P,\tilde Q)\rvert^{2}$ |
 | isotropic vectors | the complex cone of $B$ | none but the origin |
 | unit | $e_0$, two-sided | $e_0$ right unit only, no left unit |

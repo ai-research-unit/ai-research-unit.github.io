@@ -8,7 +8,7 @@ The element is written
 $$
 \tilde P=P_0e_0+P_1e_1+P_2e_2+P_3e_3 , \qquad P_0,P_1,P_2,P_3\in\mathbb{C} ,
 $$
-and its scalar part and its vector part are $P_0$ and $\mathbf P=P_1e_1+P_2e_2+P_3e_3$. The four coordinates $P_0,\dots,P_3$ are the ones written against the basis below; the element is recovered from them as the sum above.
+and its scalar part and its vector part are $P_0$ and $\vec P=P_1e_1+P_2e_2+P_3e_3$. The four coordinates $P_0,\dots,P_3$ are the ones written against the basis below; the element is recovered from them as the sum above.
 
 The basis of $\mathbb{B}$ is multiplied by
 $$
@@ -24,10 +24,10 @@ $$
 
 Two complex vectors are paired by the complex bilinear dot product and the complex bilinear cross product,
 $$
-(\mathbf P,\mathbf Q)=\sum_{k=1}^{3}P_kQ_k , \qquad
-\mathbf P\times\mathbf Q=(P_2Q_3-P_3Q_2)e_1+(P_3Q_1-P_1Q_3)e_2+(P_1Q_2-P_2Q_1)e_3 ,
+(\vec P,\vec Q)=\sum_{k=1}^{3}P_kQ_k , \qquad
+\vec P\times\vec Q=(P_2Q_3-P_3Q_2)e_1+(P_3Q_1-P_1Q_3)e_2+(P_1Q_2-P_2Q_1)e_3 ,
 $$
-and the coefficientwise conjugate of a vector is written $\overline{\mathbf Q}=\overline{Q_1}e_1+\overline{Q_2}e_2+\overline{Q_3}e_3$. A conjugate of a vector is a complex vector like any other, so the same two pairings serve when one of their arguments is a conjugated vector.
+and the coefficientwise conjugate of a vector is written $\overline{\vec Q}=\overline{Q_1}e_1+\overline{Q_2}e_2+\overline{Q_3}e_3$. A conjugate of a vector is a complex vector like any other, so the same two pairings serve when one of their arguments is a conjugated vector.
 
 The identities that link the four general products are collected in *Relations Between the Four General Products* and their properties compared in *Comparison Between the Four General Products*. The article assumes the basis and the conjugations from *Biquaternions as a Vector Space over $\mathbb{C}$* and *The Group of Involutions*.
 
@@ -50,7 +50,7 @@ The rule is linear in the coordinates $P_0,\dots,P_3$ and linear in the coordina
 
 **The scalar–vector form.** Collecting the scalar part and the vector part of the two elements,
 $$
-\tilde P\tilde Q=\bigl(P_0Q_0-(\mathbf P,\mathbf Q)\bigr)+P_0\mathbf Q+Q_0\mathbf P+\mathbf P\times\mathbf Q .
+\tilde P\tilde Q=\bigl(P_0Q_0-(\vec P,\vec Q)\bigr)+P_0\vec Q+Q_0\vec P+\vec P\times\vec Q .
 $$
 
 The scalar part is $\mathrm{Sc}(\tilde P\tilde Q)=\sum_{\mu=0}^{3}\varepsilon_\mu P_\mu Q_\mu$ with $\varepsilon=(1,-1,-1,-1)$, and the vector part is the one displayed.
@@ -77,9 +77,9 @@ $$
 
 The rule is linear in the coordinates $P_0,\dots,P_3$ and linear in the coordinates $Q_0,\dots,Q_3$.
 
-**The scalar–vector form.** The scalar part of the first factor stays $P_0$ and its vector part becomes $-\mathbf P$, so the two pairings change sign where that vector part enters,
+**The scalar–vector form.** The scalar part of the first factor stays $P_0$ and its vector part becomes $-\vec P$, so the two pairings change sign where that vector part enters,
 $$
-\tilde P^{\natural}\tilde Q=\bigl(P_0Q_0+(\mathbf P,\mathbf Q)\bigr)+P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q .
+\tilde P^{\natural}\tilde Q=\bigl(P_0Q_0+(\vec P,\vec Q)\bigr)+P_0\vec Q-Q_0\vec P-\vec P\times\vec Q .
 $$
 
 The scalar part is $\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=\sum_{\mu=0}^{3}P_\mu Q_\mu$, and the vector part is the one displayed.
@@ -106,9 +106,9 @@ $$
 
 The rule is linear in the coordinates $P_0,\dots,P_3$ and conjugate-linear in the coordinates $Q_0,\dots,Q_3$, conjugation of the coefficients happening inside the product.
 
-**The scalar–vector form.** The scalar part of the second factor becomes $\overline{Q_0}$ and its vector part becomes $-\overline{\mathbf Q}$, so the two pairings change sign and are read against the conjugate vector,
+**The scalar–vector form.** The scalar part of the second factor becomes $\overline{Q_0}$ and its vector part becomes $-\overline{\vec Q}$, so the two pairings change sign and are read against the conjugate vector,
 $$
-\tilde P\tilde Q^{*}=\bigl(P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})\bigr)-P_0\overline{\mathbf Q}+\overline{Q_0}\mathbf P-\mathbf P\times\overline{\mathbf Q} .
+\tilde P\tilde Q^{*}=\bigl(P_0\overline{Q_0}+(\vec P,\overline{\vec Q})\bigr)-P_0\overline{\vec Q}+\overline{Q_0}\vec P-\vec P\times\overline{\vec Q} .
 $$
 
 The scalar part is $\mathrm{Sc}(\tilde P\tilde Q^{*})=\sum_{\mu=0}^{3}P_\mu\overline{Q_\mu}$, conjugate-linear in the coordinates of the second element; the vector part is the one displayed.
@@ -131,9 +131,9 @@ $$
 
 The rule is linear in the coordinates $P_0,\dots,P_3$ and conjugate-linear in the coordinates $Q_0,\dots,Q_3$.
 
-**The scalar–vector form.** The scalar part of the first factor is $P_0$ and its vector part is $-\mathbf P$; the scalar part of the second is $\overline{Q_0}$ and its vector part is $-\overline{\mathbf Q}$, so the dot product enters with a negative sign and the cross product with a positive one, read against the conjugate vector,
+**The scalar–vector form.** The scalar part of the first factor is $P_0$ and its vector part is $-\vec P$; the scalar part of the second is $\overline{Q_0}$ and its vector part is $-\overline{\vec Q}$, so the dot product enters with a negative sign and the cross product with a positive one, read against the conjugate vector,
 $$
-\tilde P^{\natural}\tilde Q^{*}=\bigl(P_0\overline{Q_0}-(\mathbf P,\overline{\mathbf Q})\bigr)-P_0\overline{\mathbf Q}-\overline{Q_0}\mathbf P+\mathbf P\times\overline{\mathbf Q} .
+\tilde P^{\natural}\tilde Q^{*}=\bigl(P_0\overline{Q_0}-(\vec P,\overline{\vec Q})\bigr)-P_0\overline{\vec Q}-\overline{Q_0}\vec P+\vec P\times\overline{\vec Q} .
 $$
 
 The scalar part is $\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\sum_{\mu=0}^{3}\varepsilon_\mu P_\mu\overline{Q_\mu}$, conjugate-linear in the coordinates of the second element; the vector part is the one displayed.
@@ -144,10 +144,10 @@ Four products are defined on the underlying $\mathbb{C}$-vector space of $\mathb
 
 | product | scalar part | vector part |
 |---|---|---|
-| $\tilde P\tilde Q$ | $P_0Q_0-(\mathbf P,\mathbf Q)$ | $P_0\mathbf Q+Q_0\mathbf P+\mathbf P\times\mathbf Q$ |
-| $\tilde P^{\natural}\tilde Q$ | $P_0Q_0+(\mathbf P,\mathbf Q)$ | $P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$ |
-| $\tilde P\tilde Q^{*}$ | $P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})$ | $-P_0\overline{\mathbf Q}+\overline{Q_0}\mathbf P-\mathbf P\times\overline{\mathbf Q}$ |
-| $\tilde P^{\natural}\tilde Q^{*}$ | $P_0\overline{Q_0}-(\mathbf P,\overline{\mathbf Q})$ | $-P_0\overline{\mathbf Q}-\overline{Q_0}\mathbf P+\mathbf P\times\overline{\mathbf Q}$ |
+| $\tilde P\tilde Q$ | $P_0Q_0-(\vec P,\vec Q)$ | $P_0\vec Q+Q_0\vec P+\vec P\times\vec Q$ |
+| $\tilde P^{\natural}\tilde Q$ | $P_0Q_0+(\vec P,\vec Q)$ | $P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$ |
+| $\tilde P\tilde Q^{*}$ | $P_0\overline{Q_0}+(\vec P,\overline{\vec Q})$ | $-P_0\overline{\vec Q}+\overline{Q_0}\vec P-\vec P\times\overline{\vec Q}$ |
+| $\tilde P^{\natural}\tilde Q^{*}$ | $P_0\overline{Q_0}-(\vec P,\overline{\vec Q})$ | $-P_0\overline{\vec Q}-\overline{Q_0}\vec P+\vec P\times\overline{\vec Q}$ |
 
 The general plain bilinear product multiplies the coordinates $P_\mu$ and $Q_\nu$ on the basis, $\tilde P\tilde Q=\sum_{\mu,\nu}P_\mu Q_\nu e_\mu e_\nu$, and is linear in both sets of coordinates. The general quaternionic bilinear product multiplies $P^{\natural}_\mu$ and $Q_\nu$, that is, the first element is read through ${}^{\natural}$; it is linear in both sets of coordinates. The general plain sesquilinear product multiplies $P_\mu$ and $Q^{*}_\nu$, that is, the second element is read through ${}^{*}$; it is linear in the coordinates of the first element and conjugate-linear in those of the second. The general quaternionic sesquilinear product multiplies $P^{\natural}_\mu$ and $Q^{*}_\nu$, both elements being read through their conjugations, and is linear in the first set of coordinates and conjugate-linear in the second.
 
@@ -165,10 +165,10 @@ Two exchanges act on the four general products. The **exchange by a conjugation*
 | $\tilde P^{\natural}\tilde Q^{*}$ | the general quaternionic sesquilinear product |
 | $\tilde P=P_0e_0+\dots+P_3e_3$ | the element and its four complex coordinates |
 | $\tilde P^{\natural}$, $\tilde P^{*}$ | the two conjugations, in coordinates |
-| $\mathbf P$ | the vector part $P_1e_1+P_2e_2+P_3e_3$ |
-| $(\mathbf P,\mathbf Q)$ | the complex bilinear dot product, $\sum_kP_kQ_k$ |
-| $\mathbf P\times\mathbf Q$ | the complex bilinear cross product |
-| $\overline{\mathbf Q}$ | the coefficientwise conjugate of the vector part |
+| $\vec P$ | the vector part $P_1e_1+P_2e_2+P_3e_3$ |
+| $(\vec P,\vec Q)$ | the complex bilinear dot product, $\sum_kP_kQ_k$ |
+| $\vec P\times\vec Q$ | the complex bilinear cross product |
+| $\overline{\vec Q}$ | the coefficientwise conjugate of the vector part |
 | $\varepsilon$ | the sign vector $(1,-1,-1,-1)$ |
 | $\mathrm{Sc}$, $\mathrm{Vec}$ | the scalar part and the vector part of an element |
 

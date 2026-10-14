@@ -175,7 +175,7 @@ Three features are reportable.
 
 **The maximum is not $2\sqrt{2}$, and it is not the discrete bound.** As $r\to\infty$ the maximum rises toward $2.3245$, which is well below Tsirelson's $2\sqrt{2}\approx2.8284$. Carrying the discrete bound over would both overstate what the state achieves and misdescribe what the bound is.
 
-**In the ideal EPR limit the maximum has a closed form.** As $r\to\infty$ the two-mode squeezed state tends to the ideal EPR state, and the correlator becomes $E\to\exp(-|\mathbf{w}-\mathbf{z}|^2)$ in rescaled real two-vectors $\mathbf w,\mathbf z$ carrying the squeezed quadrature combinations. The maximum of $S$ for this kernel is attained on the collinear configuration
+**In the ideal EPR limit the maximum has a closed form.** As $r\to\infty$ the two-mode squeezed state tends to the ideal EPR state, and the correlator becomes $E\to\exp(-|\vec w-\vec z|^2)$ in rescaled real two-vectors $\vec w,\vec z$ carrying the squeezed quadrature combinations. The maximum of $S$ for this kernel is attained on the collinear configuration
 $$
 \alpha_1=d,\qquad \alpha_2=-d,\qquad \beta_1=0,\qquad \beta_2=-2d,\qquad d^2=\frac{\ln 3}{8},
 $$

@@ -17,7 +17,7 @@ $$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu = q_\mu + j q'_\mu, \quad q_\mu, q'_\mu \in \mathbb{R}.
 $$
 
-The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \mathbf{Q}$, where $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The split complex conjugate is $\bar{\tilde{Q}} = \bar{Q_0} e_0 + \mathbf{Q}^*$, with $Q_{\bar{\mu}} = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^{*}$. The split-biquaternion norm is $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$.
+The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \vec Q$, where $\vec Q = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The split complex conjugate is $\bar{\tilde{Q}} = \bar{Q_0} e_0 + \vec Q^*$, with $Q_{\bar{\mu}} = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^{*}$. The split-biquaternion norm is $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$.
 
 The **idempotent components** of $\tilde{Q}$ are the real quaternions
 
@@ -56,10 +56,10 @@ $$
 where $\exp(\tilde{Q}_\pm)$ is the ordinary quaternion exponential of the component $\tilde{Q}_\pm \in \mathbb{H}$. The quaternion exponential is
 
 $$
-\exp(\tilde{Q}_\pm) = e^{q_0^\pm} \left(\cos|\mathbf{Q}_\pm| + \frac{\sin|\mathbf{Q}_\pm|}{|\mathbf{Q}_\pm|} \mathbf{Q}_\pm\right),
+\exp(\tilde{Q}_\pm) = e^{q_0^\pm} \left(\cos|\vec Q_\pm| + \frac{\sin|\vec Q_\pm|}{|\vec Q_\pm|} \vec Q_\pm\right),
 $$
 
-where $\tilde{Q}_\pm = q_0^\pm + \mathbf{Q}_\pm$ is the scalar-vector decomposition of the component, and $|\mathbf{Q}_\pm|$ is the ordinary quaternion modulus of the vector part. When the vector part vanishes, the formula reduces to $\exp(\tilde{Q}_\pm) = e^{q_0^\pm}$.
+where $\tilde{Q}_\pm = q_0^\pm + \vec Q_\pm$ is the scalar-vector decomposition of the component, and $|\vec Q_\pm|$ is the ordinary quaternion modulus of the vector part. When the vector part vanishes, the formula reduces to $\exp(\tilde{Q}_\pm) = e^{q_0^\pm}$.
 
 So the exponential of a split biquaternion is the pair of the quaternion exponentials of its two idempotent components:
 
@@ -71,13 +71,13 @@ This is the cleanest form of the exponential, and it is the reason the split biq
 
 ### Computation via the Exponential Polar Form
 
-The exponential can also be computed directly from the scalar-vector decomposition. Write $\tilde{Q} = Q_0 e_0 + \mathbf{Q}$ with $Q_0 \in \mathbb{D}$ and $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The scalar part commutes with everything, so
+The exponential can also be computed directly from the scalar-vector decomposition. Write $\tilde{Q} = Q_0 e_0 + \vec Q$ with $Q_0 \in \mathbb{D}$ and $\vec Q = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The scalar part commutes with everything, so
 
 $$
-\exp(\tilde{Q}) = e^{Q_0} \exp(\mathbf{Q}),
+\exp(\tilde{Q}) = e^{Q_0} \exp(\vec Q),
 $$
 
-where $e^{Q_0}$ is the split complex exponential and $\exp(\mathbf{Q})$ is the exponential of the vector part.
+where $e^{Q_0}$ is the split complex exponential and $\exp(\vec Q)$ is the exponential of the vector part.
 
 The split complex exponential is
 
@@ -91,17 +91,17 @@ $$
 \theta = \sqrt{Q_1^2 + Q_2^2 + Q_3^2}.
 $$
 
-Since $\mathbf{Q}^2 = -\theta^2 e_0$, the even and odd parts of the power series of the exponential are $\sum_m (-1)^m \theta^{2m}/(2m)!$ and $\sum_m (-1)^m \theta^{2m+1}/(2m+1)!$, so
+Since $\vec Q^2 = -\theta^2 e_0$, the even and odd parts of the power series of the exponential are $\sum_m (-1)^m \theta^{2m}/(2m)!$ and $\sum_m (-1)^m \theta^{2m+1}/(2m+1)!$, so
 
 $$
-\exp(\mathbf{Q}) = \cos\theta \, e_0 + \frac{\sin\theta}{\theta} \mathbf{Q},
+\exp(\vec Q) = \cos\theta \, e_0 + \frac{\sin\theta}{\theta} \vec Q,
 $$
 
-where $\cos$ and $\sin$ are the power series functions of a split complex argument ($\theta$ itself is not needed: only the even functions of it occur, and $\cos$ is even while $\sin\theta/\theta$ depends on $\theta^2$ alone). No hyperbolic function occurs here. When $\theta^2 = r^2$ is a positive real number, the identity reads $\cos r \, e_0 + (\sin r/r)\mathbf{Q}$. The real part of $\theta^2$ is $Q_1^2 + Q_2^2 + Q_3^2$, so $\theta^2$ is never a negative real number and there is no separate trigonometric case. The formula agrees with the idempotent formula when evaluated componentwise.
+where $\cos$ and $\sin$ are the power series functions of a split complex argument ($\theta$ itself is not needed: only the even functions of it occur, and $\cos$ is even while $\sin\theta/\theta$ depends on $\theta^2$ alone). No hyperbolic function occurs here. When $\theta^2 = r^2$ is a positive real number, the identity reads $\cos r \, e_0 + (\sin r/r)\vec Q$. The real part of $\theta^2$ is $Q_1^2 + Q_2^2 + Q_3^2$, so $\theta^2$ is never a negative real number and there is no separate trigonometric case. The formula agrees with the idempotent formula when evaluated componentwise.
 
 ### The Nilpotent Case
 
-If the vector part is nilpotent, i.e., $\mathbf{Q}^2 = 0$, then $\theta = 0$ and the formula degenerates. In the split biquaternion algebra this happens only for $\mathbf{Q} = 0$: since $\mathbf{Q}^2 = -\theta^2 e_0$ and the real part of $\theta^2$ is $Q_1^2 + Q_2^2 + Q_3^2$, the equation $\mathbf{Q}^2 = 0$ forces $\mathbf{Q} = 0$, and then $\exp(\mathbf{Q}) = e_0$. In particular the vector elements of the zero divisor subspaces $Z_\pm$ are not nilpotent: for $\mathbf{Q} = (1 - j)e_1 \in Z_+$ one has $\mathbf{Q}^2 = -2(1 - j) \neq 0$, and similarly for $Z_-$. Unlike the biquaternion algebra, whose extra unit squares to $-1$, $\mathbb{H}_{\mathbb{D}}$ has no nonzero nilpotent vector part.
+If the vector part is nilpotent, i.e., $\vec Q^2 = 0$, then $\theta = 0$ and the formula degenerates. In the split biquaternion algebra this happens only for $\vec Q = 0$: since $\vec Q^2 = -\theta^2 e_0$ and the real part of $\theta^2$ is $Q_1^2 + Q_2^2 + Q_3^2$, the equation $\vec Q^2 = 0$ forces $\vec Q = 0$, and then $\exp(\vec Q) = e_0$. In particular the vector elements of the zero divisor subspaces $Z_\pm$ are not nilpotent: for $\vec Q = (1 - j)e_1 \in Z_+$ one has $\vec Q^2 = -2(1 - j) \neq 0$, and similarly for $Z_-$. Unlike the biquaternion algebra, whose extra unit squares to $-1$, $\mathbb{H}_{\mathbb{D}}$ has no nonzero nilpotent vector part.
 
 ### Properties
 
@@ -136,19 +136,19 @@ $$
 and similarly for the other three functions. The quaternion trigonometric and hyperbolic functions are
 
 $$
-\sin(\tilde{Q}_\pm) = \sin(q_0^\pm) \cosh|\mathbf{Q}_\pm| + \cos(q_0^\pm) \sinh|\mathbf{Q}_\pm| \frac{\mathbf{Q}_\pm}{|\mathbf{Q}_\pm|},
+\sin(\tilde{Q}_\pm) = \sin(q_0^\pm) \cosh|\vec Q_\pm| + \cos(q_0^\pm) \sinh|\vec Q_\pm| \frac{\vec Q_\pm}{|\vec Q_\pm|},
 $$
 
 $$
-\cos(\tilde{Q}_\pm) = \cos(q_0^\pm) \cosh|\mathbf{Q}_\pm| - \sin(q_0^\pm) \sinh|\mathbf{Q}_\pm| \frac{\mathbf{Q}_\pm}{|\mathbf{Q}_\pm|},
+\cos(\tilde{Q}_\pm) = \cos(q_0^\pm) \cosh|\vec Q_\pm| - \sin(q_0^\pm) \sinh|\vec Q_\pm| \frac{\vec Q_\pm}{|\vec Q_\pm|},
 $$
 
 $$
-\sinh(\tilde{Q}_\pm) = \sinh(q_0^\pm) \cos|\mathbf{Q}_\pm| + \cosh(q_0^\pm) \sin|\mathbf{Q}_\pm| \frac{\mathbf{Q}_\pm}{|\mathbf{Q}_\pm|},
+\sinh(\tilde{Q}_\pm) = \sinh(q_0^\pm) \cos|\vec Q_\pm| + \cosh(q_0^\pm) \sin|\vec Q_\pm| \frac{\vec Q_\pm}{|\vec Q_\pm|},
 $$
 
 $$
-\cosh(\tilde{Q}_\pm) = \cosh(q_0^\pm) \cos|\mathbf{Q}_\pm| + \sinh(q_0^\pm) \sin|\mathbf{Q}_\pm| \frac{\mathbf{Q}_\pm}{|\mathbf{Q}_\pm|}.
+\cosh(\tilde{Q}_\pm) = \cosh(q_0^\pm) \cos|\vec Q_\pm| + \sinh(q_0^\pm) \sin|\vec Q_\pm| \frac{\vec Q_\pm}{|\vec Q_\pm|}.
 $$
 
 These are the standard quaternion formulas, and they reduce to the real formulas when the vector part vanishes.
@@ -194,7 +194,7 @@ $$
 where $\log(\tilde{Q}_\pm)$ is the ordinary quaternion logarithm of the component. The quaternion logarithm is
 
 $$
-\log(\tilde{Q}_\pm) = \log|\tilde{Q}_\pm| + \frac{\mathbf{Q}_\pm}{|\mathbf{Q}_\pm|} \arccos\left(\frac{q_0^\pm}{|\tilde{Q}_\pm|}\right),
+\log(\tilde{Q}_\pm) = \log|\tilde{Q}_\pm| + \frac{\vec Q_\pm}{|\vec Q_\pm|} \arccos\left(\frac{q_0^\pm}{|\tilde{Q}_\pm|}\right),
 $$
 
 where $|\tilde{Q}_\pm|$ is the quaternion modulus, and $\arccos$ is the ordinary real arccosine. When the vector part vanishes, the logarithm reduces to $\log(\tilde{Q}_\pm) = \log|q_0^\pm|$ (with a branch ambiguity of $2\pi$ in the argument).
@@ -255,7 +255,7 @@ When $\alpha$ is a real scalar, $\alpha_+ = \alpha_- = \alpha$, and the power fu
 
 ### The Quaternion Case
 
-The split biquaternion algebra contains the quaternion algebra $\mathbb{H}$ as the subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, which is the fixed-point set of split complex conjugation. For a quaternion $\tilde q = q_0 + \mathbf{q}$ with real coefficients, the idempotent components are equal: $\tilde{Q}_+ = \tilde{Q}_- = \tilde q$. So the elementary functions reduce to the ordinary quaternion elementary functions applied to the same quaternion in each component:
+The split biquaternion algebra contains the quaternion algebra $\mathbb{H}$ as the subspace $\mathbb{H}_{\mathbb{H}_{\mathbb{D}}}$, which is the fixed-point set of split complex conjugation. For a quaternion $\tilde q = q_0 + \vec q$ with real coefficients, the idempotent components are equal: $\tilde{Q}_+ = \tilde{Q}_- = \tilde q$. So the elementary functions reduce to the ordinary quaternion elementary functions applied to the same quaternion in each component:
 
 $$
 \exp(\tilde{Q}) = \exp(\tilde q) \tilde\Pi_1 + \exp(\tilde q) \tilde\Pi_2 = \exp(\tilde q),
@@ -305,7 +305,7 @@ This is the same situation as in the biquaternion case, and it is the fundamenta
 
 | Function | Idempotent form | Standard form |
 |---|---|---|
-| $\exp(\tilde{Q})$ | $\exp(\tilde{Q}_+) \tilde\Pi_1 + \exp(\tilde{Q}_-) \tilde\Pi_2$ | $e^{Q_0}(\cos\theta \, e_0 + \frac{\sin\theta}{\theta}\mathbf{Q})$ |
+| $\exp(\tilde{Q})$ | $\exp(\tilde{Q}_+) \tilde\Pi_1 + \exp(\tilde{Q}_-) \tilde\Pi_2$ | $e^{Q_0}(\cos\theta \, e_0 + \frac{\sin\theta}{\theta}\vec Q)$ |
 | $\sin(\tilde{Q})$ | $\sin(\tilde{Q}_+) \tilde\Pi_1 + \sin(\tilde{Q}_-) \tilde\Pi_2$ | (computed from the exponential) |
 | $\cos(\tilde{Q})$ | $\cos(\tilde{Q}_+) \tilde\Pi_1 + \cos(\tilde{Q}_-) \tilde\Pi_2$ | (computed from the exponential) |
 | $\sinh(\tilde{Q})$ | $\sinh(\tilde{Q}_+) \tilde\Pi_1 + \sinh(\tilde{Q}_-) \tilde\Pi_2$ | (computed from the exponential) |
@@ -378,7 +378,7 @@ and similarly for the trigonometric and hyperbolic functions.
 The exponential can also be computed directly from the scalar-vector decomposition:
 
 $$
-\exp(\tilde{Q}) = e^{Q_0} \left(\cos\theta \, e_0 + \frac{\sin\theta}{\theta} \mathbf{Q}\right),
+\exp(\tilde{Q}) = e^{Q_0} \left(\cos\theta \, e_0 + \frac{\sin\theta}{\theta} \vec Q\right),
 $$
 
 where $\theta^2 = Q_1^2 + Q_2^2 + Q_3^2$ is the split complex norm of the vector part and $\cos$, $\sin$ are the power series functions. There is one formula, not three: it covers a real $\theta^2 = r^2$ (where it reads $\cos r$, $\sin r/r$) and a non-real $\theta^2$ alike, and a negative real $\theta^2$ cannot occur.

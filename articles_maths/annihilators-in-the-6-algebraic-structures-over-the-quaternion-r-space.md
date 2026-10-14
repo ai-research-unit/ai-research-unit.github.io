@@ -24,9 +24,9 @@ $$
 $$
 because the map $\tilde y\mapsto\tilde x\star\tilde y$ is linear and vanishes exactly when it vanishes on a basis of the space, and the four units are such a basis. The same test applies to the right annihilating set, with the order of the factors exchanged. It reduces every computation below to at most four elementary products, and its content is not the linearity, which all six share, but the four values it reads: they are the columns of the left multiplication operator, and the annihilating set is the set of parameters for which all four columns vanish.
 
-**The coordinates, the norm and the remarkable subspaces.** In the units $e_0,e_1,e_2,e_3$ of the space $\mathbb{H}$, write $\tilde p=p_0e_0+\mathbf p$ and likewise $\tilde x=x_0e_0+\mathbf x$, with $\mathbf p=p_1e_1+p_2e_2+p_3e_3$; then $\tilde p^{\natural}=p_0e_0-\mathbf p$. The **dot product** is $(\mathbf p,\mathbf x)=\sum_kp_kx_k$, the **cross product** is $\mathbf p\times\mathbf x$, and the **norm** is $N(\tilde p)=p_0^{2}+(\mathbf p,\mathbf p)=p_0^{2}+|\mathbf p|^{2}$, the positive definite form $N(\tilde p,\tilde p)$ of *The 2 Forms over the Quaternion $\mathbb{R}$ Space*, in coordinates of *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space*. The **centre** is $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$ and the **vector subspace** is $\mathrm{Vect}(\mathbb{H})=\mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$; a **plane** is a real subspace of dimension two, written $\mathbb{R}\{u,v\}$ with its generators displayed, and a **line** is written $\mathbb{R}u$.
+**The coordinates, the norm and the remarkable subspaces.** In the units $e_0,e_1,e_2,e_3$ of the space $\mathbb{H}$, write $\tilde p=p_0e_0+\vec p$ and likewise $\tilde x=x_0e_0+\vec x$, with $\vec p=p_1e_1+p_2e_2+p_3e_3$; then $\tilde p^{\natural}=p_0e_0-\vec p$. The **dot product** is $(\vec p,\vec x)=\sum_kp_kx_k$, the **cross product** is $\vec p\times\vec x$, and the **norm** is $N(\tilde p)=p_0^{2}+(\vec p,\vec p)=p_0^{2}+|\vec p|^{2}$, the positive definite form $N(\tilde p,\tilde p)$ of *The 2 Forms over the Quaternion $\mathbb{R}$ Space*, in coordinates of *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space*. The **centre** is $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$ and the **vector subspace** is $\mathrm{Vect}(\mathbb{H})=\mathrm{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$; a **plane** is a real subspace of dimension two, written $\mathbb{R}\{u,v\}$ with its generators displayed, and a **line** is written $\mathbb{R}u$.
 
-**Two algebraic norms, and the one that decides.** The six products carry two **algebraic norms** and no more (*The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space*): the algebraic norm of a product is its scalar form read at the two equal arguments, each of the two is carried by two products, and the two antisymmetrisations carry none. They are the plain one, $N_P(\tilde p)=\tilde p^{2}$, whose scalar coefficient is $B(\tilde p)=p_0^{2}-|\mathbf p|^{2}$ and which is indefinite, carried by $\mathrm{GPA}$ and $\mathrm{SPA}$, and the quaternion one, $N_Q(\tilde p)=\tilde p^{\natural}\tilde p=N(\tilde p)e_0$, which is positive definite, carried by $\mathrm{GQA}$ and $\mathrm{SQA}$. **The norm that decides every annihilating set below is $N$**, the positive definite one. The plain norm does not decide: at $\tilde p=e_0+e_1$ its scalar coefficient is $B=0$ while $N=2$ and the element is invertible, $\tilde p^{-1}=\tfrac12(e_0-e_1)$. **Every statement below names its norm**: the deciding norm is written $N$, and the generic $\mathrm{Norm}$ of the owner articles is instantiated here by the positive definite norm $N(\tilde p)=p_0^{2}+p_1^{2}+p_2^{2}+p_3^{2}$. The two antisymmetrisations carry no algebraic norm, and their annihilating sets are read from the vector part alone.
+**Two algebraic norms, and the one that decides.** The six products carry two **algebraic norms** and no more (*The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space*): the algebraic norm of a product is its scalar form read at the two equal arguments, each of the two is carried by two products, and the two antisymmetrisations carry none. They are the plain one, $N_P(\tilde p)=\tilde p^{2}$, whose scalar coefficient is $B(\tilde p)=p_0^{2}-|\vec p|^{2}$ and which is indefinite, carried by $\mathrm{GPA}$ and $\mathrm{SPA}$, and the quaternion one, $N_Q(\tilde p)=\tilde p^{\natural}\tilde p=N(\tilde p)e_0$, which is positive definite, carried by $\mathrm{GQA}$ and $\mathrm{SQA}$. **The norm that decides every annihilating set below is $N$**, the positive definite one. The plain norm does not decide: at $\tilde p=e_0+e_1$ its scalar coefficient is $B=0$ while $N=2$ and the element is invertible, $\tilde p^{-1}=\tfrac12(e_0-e_1)$. **Every statement below names its norm**: the deciding norm is written $N$, and the generic $\mathrm{Norm}$ of the owner articles is instantiated here by the positive definite norm $N(\tilde p)=p_0^{2}+p_1^{2}+p_2^{2}+p_3^{2}$. The two antisymmetrisations carry no algebraic norm, and their annihilating sets are read from the vector part alone.
 
 
 ## The Six Structures and their Annihilators
@@ -45,7 +45,7 @@ The product is $\tilde p\tilde q$. It is associative, it carries the two-sided u
 
 The product is the Jordan product
 $$
-\tilde p\bullet\tilde q=\tfrac12\bigl(\tilde p\tilde q+\tilde q\tilde p\bigr)=\bigl(p_0q_0-(\mathbf p,\mathbf q)\bigr)e_0+p_0\mathbf q+q_0\mathbf p .
+\tilde p\bullet\tilde q=\tfrac12\bigl(\tilde p\tilde q+\tilde q\tilde p\bigr)=\bigl(p_0q_0-(\vec p,\vec q)\bigr)e_0+p_0\vec q+q_0\vec p .
 $$
 It is commutative, so the two one-sided sets are one set, and it carries the two-sided unit $e_0$.
 
@@ -57,11 +57,11 @@ It is commutative, so the two one-sided sets are one set, and it carries the two
 
 The product is the commutator
 $$
-\tilde p\wedge\tilde q=\tfrac12\bigl(\tilde p\tilde q-\tilde q\tilde p\bigr)=\mathbf p\times\mathbf q .
+\tilde p\wedge\tilde q=\tfrac12\bigl(\tilde p\tilde q-\tilde q\tilde p\bigr)=\vec p\times\vec q .
 $$
 It is alternating, so it vanishes at the two equal arguments, $\tilde p\wedge\tilde p=0$, and there is no form there and no norm.
 
-**The annihilating set is the scalar line $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$, the centre of the algebra.** The product depends only on the two vector parts, so a scalar element, having zero vector part, kills every partner and lies in the set. Conversely, an element with a nonzero vector part $\mathbf x$ fails: the vector $\mathbf x\times\mathbf y$ does not vanish for every partner $\mathbf y$. **The centre of the Lie algebra on the vector subspace is smaller, $\{0\}$**, because no axis line is parallel to every vector.
+**The annihilating set is the scalar line $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$, the centre of the algebra.** The product depends only on the two vector parts, so a scalar element, having zero vector part, kills every partner and lies in the set. Conversely, an element with a nonzero vector part $\vec x$ fails: the vector $\vec x\times\vec y$ does not vanish for every partner $\vec y$. **The centre of the Lie algebra on the vector subspace is smaller, $\{0\}$**, because no axis line is parallel to every vector.
 
 *Annihilators of the Antisymmetric Plain Algebra* owns the operator and the centre of the bracket.
 
@@ -77,7 +77,7 @@ The product is $\tilde p^{\natural}\tilde q$. The first factor carries the natur
 
 The product is the symmetrisation of the preceding one,
 $$
-\tfrac12\bigl(\tilde p^{\natural}\tilde q+\tilde q^{\natural}\tilde p\bigr)=N(\tilde p,\tilde q)e_0,\qquad N(\tilde p,\tilde q)=p_0q_0+(\mathbf p,\mathbf q) .
+\tfrac12\bigl(\tilde p^{\natural}\tilde q+\tilde q^{\natural}\tilde p\bigr)=N(\tilde p,\tilde q)e_0,\qquad N(\tilde p,\tilde q)=p_0q_0+(\vec p,\vec q) .
 $$
 It is central, commutative and symmetric, and its value is the form of *The 2 Forms over the Quaternion $\mathbb{R}$ Space* read at the two arguments.
 
@@ -89,11 +89,11 @@ It is central, commutative and symmetric, and its value is the form of *The 2 Fo
 
 The product is the antisymmetrisation of the general quaternionic one,
 $$
-\tfrac12\bigl(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p\bigr)=p_0\mathbf q-q_0\mathbf p-\mathbf p\times\mathbf q ,
+\tfrac12\bigl(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p\bigr)=p_0\vec q-q_0\vec p-\vec p\times\vec q ,
 $$
 a pure element at every pair. It is alternating, and its first factor carries the conjugation, which destroys the central direction.
 
-**The annihilating set is $\{0\}$.** The criterion reads $\tilde x\wedge^{\natural}e_0=-\mathbf x$, which vanishes only for a scalar element $\tilde x=s$, and then $\tilde x\wedge^{\natural}e_1=se_1$, which vanishes only for $s=0$. The right set is computed in the same way, and the scalar line that annihilates the plain cross product does not annihilate this one.
+**The annihilating set is $\{0\}$.** The criterion reads $\tilde x\wedge^{\natural}e_0=-\vec x$, which vanishes only for a scalar element $\tilde x=s$, and then $\tilde x\wedge^{\natural}e_1=se_1$, which vanishes only for $s=0$. The right set is computed in the same way, and the scalar line that annihilates the plain cross product does not annihilate this one.
 
 *Annihilators of the Antisymmetric Quaternionic Algebra* owns the operator and the failure of the central direction.
 
@@ -101,13 +101,13 @@ a pure element at every pair. It is alternating, and its first factor carries th
 
 ### The Six Annihilating Sets
 
-**Read the cells.** The annihilating set of a structure is the set of elements that the product kills at every partner, and the table records the six sets with the reason each one is what it is. The vector part of $\tilde x$ is $\mathbf x$, the family is read in the order of the two general products, and §*The Annihilating Set of a Product* carries the criterion, the coordinates and the two algebraic norms. Every set can be checked by multiplying a candidate into the four units, and the span notation $\mathbb{R}\{u,v\}$ is the real span of $u$ and $v$.
+**Read the cells.** The annihilating set of a structure is the set of elements that the product kills at every partner, and the table records the six sets with the reason each one is what it is. The vector part of $\tilde x$ is $\vec x$, the family is read in the order of the two general products, and §*The Annihilating Set of a Product* carries the criterion, the coordinates and the two algebraic norms. Every set can be checked by multiplying a candidate into the four units, and the span notation $\mathbb{R}\{u,v\}$ is the real span of $u$ and $v$.
 
 | family | structure | the product | the annihilating set, and why |
 |---|---|---|---|
 | the plain algebra | $\mathrm{GPA}$ | $\tilde p\tilde q$ | The set is $\{0\}$, because a nonzero element is invertible and the origin alone kills every partner. |
 | | $\mathrm{SPA}$ | $\tilde p\bullet\tilde q$ | The set is $\{0\}$, because the unit $e_0$ is a partner of the product and reads the element itself, $\tilde x\bullet e_0=\tilde x$, which vanishes only at the origin. |
-| | $\mathrm{APA}$ | $\tilde p\wedge\tilde q=\mathbf p\times\mathbf q$ | The set is the scalar line $\mathbb{R}_{\mathbb{H}}$, because a scalar has no vector part and the cross product reads the vector parts alone, while a nonzero vector part fails at a partner. |
+| | $\mathrm{APA}$ | $\tilde p\wedge\tilde q=\vec p\times\vec q$ | The set is the scalar line $\mathbb{R}_{\mathbb{H}}$, because a scalar has no vector part and the cross product reads the vector parts alone, while a nonzero vector part fails at a partner. |
 | the quaternionic algebra | $\mathrm{GQA}$ | $\tilde p^{\natural}\tilde q$ | The set is $\{0\}$, because the natural conjugation is a bijection and the partner $e_0$ reads $\tilde x^{\natural}$, which vanishes only at the origin. |
 | | $\mathrm{SQA}$ | $N(\tilde p,\tilde q)e_0$ | The set is $\{0\}$, because the value at the four units reads the four coordinates of the element, and the four real equations force the origin. |
 | | $\mathrm{AQA}$ | $\tilde p\wedge^{\natural}\tilde q$ | The set is $\{0\}$, because the partner $e_0$ forces a real element and the partner $e_1$ then kills it. |

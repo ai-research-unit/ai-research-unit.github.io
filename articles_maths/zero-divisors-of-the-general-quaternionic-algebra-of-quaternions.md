@@ -45,8 +45,8 @@ the Hermitian star coincides with the natural conjugation, so the block carries 
 involution
 
 $$
-\tilde p^{\natural}=p_0-\mathbf p,\qquad \tilde p=p_0e_0+\mathbf p,\quad
-\mathbf p=p_1e_1+p_2e_2+p_3e_3 .
+\tilde p^{\natural}=p_0-\vec p,\qquad \tilde p=p_0e_0+\vec p,\quad
+\vec p=p_1e_1+p_2e_2+p_3e_3 .
 $$
 
 Juxtaposition is the plain product $\tilde p\tilde q$ of the general plain algebra of the same space
@@ -60,13 +60,13 @@ the plain product with the first factor read through the conjugation. The **quat
 algebraic norm** is
 
 $$
-N(\tilde p)=\tilde p^{\natural}\tilde p=p_0^2+|\mathbf p|^2=\sum_{\mu=0}^{3}p_\mu^2 ,
+N(\tilde p)=\tilde p^{\natural}\tilde p=p_0^2+|\vec p|^2=\sum_{\mu=0}^{3}p_\mu^2 ,
 $$
 
-and $\beta(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q$ is its polar form, the quaternionic
+and $\beta(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$ is its polar form, the quaternionic
 bilinear form of the space. An element is **pure** when $p_0=0$ and **non-pure** when $p_0\neq0$; the
 centre is the scalar line $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$ and the vector subspace is
-$\mathrm{Vect}(\mathbb{H})=\{\mathbf p\}$.
+$\mathrm{Vect}(\mathbb{H})=\{\vec p\}$.
 
 ## Definition
 
@@ -168,8 +168,8 @@ $\mathbb{R}$ both families are empty, for the definiteness of the norm in the fi
 division property of the plain algebra in the second.
 
 **Proposition (the pure family is absent).** On the vector subspace
-$\mathrm{Vect}(\mathbb{H})$ the norm is $N(\mathbf p)=|\mathbf p|^2$, positive definite, so the
-isotropic equation $(\mathbf p,\mathbf p)=0$ has the single solution $\mathbf p=0$ and the pure
+$\mathrm{Vect}(\mathbb{H})$ the norm is $N(\vec p)=|\vec p|^2$, positive definite, so the
+isotropic equation $(\vec p,\vec p)=0$ has the single solution $\vec p=0$ and the pure
 family of zero divisors is empty.
 
 **Proof.** A sum of three real squares vanishes only at the origin; the criterion then excludes every
@@ -182,7 +182,7 @@ is empty.
 
 **Proof.** The plain algebra is a division algebra. If $\tilde p^2=\tilde p$ and $\tilde p\neq0$,
 left multiplication by the plain inverse $\tilde p^{-1}$ gives $\tilde p=e_0$. The Hermitian family
-$\tfrac12(e_0+i\hat\mu)$ that carries the complex family does not exist over $\mathbb{R}$, there
+$\tfrac12(e_0+\tilde\Xi)$ that carries the complex family does not exist over $\mathbb{R}$, there
 being no central imaginary unit; the idempotents of the block and the contrast with the complex
 counterpart are *Square Roots of One and the Idempotents of the General Quaternionic Algebra*, below this article in this
 category.
@@ -275,14 +275,14 @@ carries a zero divisor.
 | remarkable subspace | element | norm | zero divisors |
 |---|---|---|---|
 | $\mathbb{R}_{\mathbb{H}}$, the centre | $se_0$ | $s^2$ | none |
-| $\mathrm{Vect}(\mathbb{H})$, the vector subspace | $\mathbf p$ | $\lvert\mathbf p\rvert^2$ | none |
+| $\mathrm{Vect}(\mathbb{H})$, the vector subspace | $\vec p$ | $\lvert\vec p\rvert^2$ | none |
 
 **Proposition.** On the centre and on the vector subspace the norm of a nonzero element is strictly
 positive, so neither subspace contains an isotropic direction and neither contains a zero divisor;
 in each the origin alone is of norm zero.
 
-**Proof.** $N(se_0)=s^2$ vanishes only at $s=0$ and $N(\mathbf p)=|\mathbf p|^2$ only at
-$\mathbf p=0$, and a nonzero central element is a unit, $\zeta(se_0)=e_0/s$; the criterion then
+**Proof.** $N(se_0)=s^2$ vanishes only at $s=0$ and $N(\vec p)=|\vec p|^2$ only at
+$\vec p=0$, and a nonzero central element is a unit, $\zeta(se_0)=e_0/s$; the criterion then
 excludes every nonzero element of either subspace. The definiteness of the form on the two subspaces
 is *The Isotropic Structure of the General Quaternionic Algebra*.
 
@@ -334,11 +334,11 @@ one-sided here and two-sided there.
 |---|---|
 | $\mathbb{H}$ | the quaternion algebra, the real space of the block |
 | $e_0,e_1,e_2,e_3$ | the basis, $e_0$ the identity, $e_k^2=-e_0$ |
-| $\tilde p=p_0e_0+\mathbf p$ | an element and its scalar–vector split |
+| $\tilde p=p_0e_0+\vec p$ | an element and its scalar–vector split |
 | $\tilde p\star\tilde q=\tilde p^{\natural}\tilde q$ | the general quaternionic bilinear product |
-| ${}^{\natural}$ | the conjugation $\tilde p^{\natural}=p_0-\mathbf p$ |
+| ${}^{\natural}$ | the conjugation $\tilde p^{\natural}=p_0-\vec p$ |
 | $N(\tilde p)=\tilde p^{\natural}\tilde p=\sum_\mu p_\mu^2$ | the quaternionic bilinear algebraic norm, positive definite |
-| $\beta(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q$ | the quaternionic bilinear form, the polar form of $N$ |
+| $\beta(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$ | the quaternionic bilinear form, the polar form of $N$ |
 | $\varnothing$ | the zero-divisor set of the block |
 | $C=\{N=0\}=\{0\}$ | the zero set of the norm, the apex of the complex cone |
 | $\zeta(\tilde p)=\tilde p/N(\tilde p)$ | the two-sided inverse against the left unit |

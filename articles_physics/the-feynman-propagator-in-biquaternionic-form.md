@@ -16,24 +16,24 @@ The specific question this article asks is a question about the algebra. The biq
 
 We answer this on a concrete case, by computing the pole structure and the contour explicitly and by recomputing every displayed formula on a momentum chosen for the purpose. The finding is stated at the outset because it is the article's content. **The algebra supplies the complex plane in which the contour is drawn, and a natural notation for the prescription — the deformed mass-shell scalar $\tilde{k}\tilde{k}^{\natural}+m^2-i\epsilon$, whose imaginary part lies along the $ict$ direction of the material sector — but it does not select the contour.** The deformation's *axis* is algebraically natural; its *orientation*, which is what distinguishes the Feynman propagator from the retarded and advanced ones, is an analytic boundary condition. In this problem the algebra adds notation and a home for the $i\epsilon$, not the physics that fixes it. If that is all it adds, we say so.
 
-**Conventions.** We use those of the read-list articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $i$ is the scalar imaginary with $i^2=-1$. The material and informational sectors are $\mathbb{M}_-$ (anti-Hermitian) and $\mathbb{M}_+$ (Hermitian), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace (the fixed-point set of complex conjugation) and $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ is the centre. The biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, with $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}$. On the spinor module the biquaternion Dirac equation reads $(i\gamma^\mu\partial_\mu-m)\psi=0$, with $\bar\psi=\psi^\dagger\gamma^0$, the Clifford metric $g=\mathrm{diag}(+1,-1,-1,-1)$, the spacetime metric $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$ of the $ict$ gradient, and $\not p=\gamma^0E-\boldsymbol{\gamma}\cdot\mathbf{p}$ for $p^\mu=(E,\mathbf{p})$. The wave biquaternion is $\tilde{k}=iE\,e_0+\mathbf{p}$ (natural units $\hbar=c=1$), with $\tilde{k}\tilde{k}^{\natural}=-E^2+\mathbf{p}^2=-p^2$ and mass shell $\tilde{k}\tilde{k}^{\natural}=-m^2$. The trace pairing is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
+**Conventions.** We use those of the read-list articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$, and $i$ is the scalar imaginary with $i^2=-1$. The material and informational sectors are $\mathbb{M}_-$ (anti-Hermitian) and $\mathbb{M}_+$ (Hermitian), with $\mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace (the fixed-point set of complex conjugation) and $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ is the centre. The biquaternionic gradient is $\tilde{\nabla}=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$, with $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\tilde{\nabla}^{\natural}\tilde{\nabla}$. On the spinor module the biquaternion Dirac equation reads $(i\gamma^\mu\partial_\mu-m)\psi=0$, with $\bar\psi=\psi^\dagger\gamma^0$, the Clifford metric $g=\mathrm{diag}(+1,-1,-1,-1)$, the spacetime metric $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$ of the $ict$ gradient, and $\not p=\gamma^0E-\boldsymbol{\gamma}\cdot\vec p$ for $p^\mu=(E,\vec p)$. The wave biquaternion is $\tilde{k}=iE\,e_0+\vec p$ (natural units $\hbar=c=1$), with $\tilde{k}\tilde{k}^{\natural}=-E^2+\vec p^2=-p^2$ and mass shell $\tilde{k}\tilde{k}^{\natural}=-m^2$. The trace pairing is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$.
 
 ## The Two-Point Function of the Quantized Dirac Field
 
 The quantized field of the companion article is
 
 $$
-\hat{\psi}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf p}}}
-\sum_{r=1}^{2}\Big[\hat a_r(\mathbf p)\,u^{(r)}(\mathbf p)\,e^{-ip\cdot x}
-+\hat b_r^\dagger(\mathbf p)\,v^{(r)}(\mathbf p)\,e^{+ip\cdot x}\Big],
+\hat{\psi}(x)=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\vec p}}}
+\sum_{r=1}^{2}\Big[\hat a_r(\vec p)\,u^{(r)}(\vec p)\,e^{-ip\cdot x}
++\hat b_r^\dagger(\vec p)\,v^{(r)}(\vec p)\,e^{+ip\cdot x}\Big],
 $$
 
-with $E_{\mathbf p}=+\sqrt{\mathbf p^2+m^2}$, and its adjoint is obtained by Hermitian conjugation and multiplication by $\gamma^0$. The mode operators obey
+with $E_{\vec p}=+\sqrt{\vec p^2+m^2}$, and its adjoint is obtained by Hermitian conjugation and multiplication by $\gamma^0$. The mode operators obey
 
 $$
-\{\hat a_r(\mathbf p),\hat a_s^\dagger(\mathbf q)\}
-=\{\hat b_r(\mathbf p),\hat b_s^\dagger(\mathbf q)\}
-=(2\pi)^3\delta_{rs}\delta^{(3)}(\mathbf p-\mathbf q),
+\{\hat a_r(\vec p),\hat a_s^\dagger(\vec q)\}
+=\{\hat b_r(\vec p),\hat b_s^\dagger(\vec q)\}
+=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec q),
 $$
 
 with all other anticommutators vanishing. The parent article's spinors satisfy
@@ -49,17 +49,17 @@ Contracting the mode operators against the vacuum gives the two elementary two-p
 
 $$
 W_+(x-y)\;=\;\langle 0|\,\hat\psi(x)\,\bar{\hat\psi}(y)\,|0\rangle
-=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\mathbf p}}\,\big(\not p+m\big)\,e^{-ip\cdot(x-y)},
+=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\vec p}}\,\big(\not p+m\big)\,e^{-ip\cdot(x-y)},
 $$
 
 in which only the $\hat a\hat a^\dagger$ contraction survives, and the **negative-frequency** piece is
 
 $$
 W_-(x-y)\;=\;\langle 0|\,\bar{\hat\psi}(y)\,\hat\psi(x)\,|0\rangle
-=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\mathbf p}}\,\big(\not p-m\big)\,e^{+ip\cdot(x-y)},
+=\int\!\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\vec p}}\,\big(\not p-m\big)\,e^{+ip\cdot(x-y)},
 $$
 
-in which only $\hat b\hat b^\dagger$ survives. In both expressions $\not p$ is **on shell**, $\not p=\gamma^0E_{\mathbf p}-\boldsymbol\gamma\cdot\mathbf p$, because the spatial integral retains only the mass-shell modes. These two objects are not yet the propagator; each is a boundary value of an analytic function, and it is the time ordering that combines them into $S_F$.
+in which only $\hat b\hat b^\dagger$ survives. In both expressions $\not p$ is **on shell**, $\not p=\gamma^0E_{\vec p}-\boldsymbol\gamma\cdot\vec p$, because the spatial integral retains only the mass-shell modes. These two objects are not yet the propagator; each is a boundary value of an analytic function, and it is the time ordering that combines them into $S_F$.
 
 Time ordering for a fermion field carries the anticommutation sign:
 
@@ -81,39 +81,39 @@ $$
 
 The overall $i$ and the $i\epsilon$ are fixed by requiring that the $p^0$ integral reproduce the two branches with their relative sign. It is worth performing that check explicitly, because it is where a sign can silently go wrong.
 
-Write the $p^0$ integral at fixed $\mathbf p$. Since $p^2-m^2=(p^0)^2-E_{\mathbf p}^2$, the integrand has poles where
+Write the $p^0$ integral at fixed $\vec p$. Since $p^2-m^2=(p^0)^2-E_{\vec p}^2$, the integrand has poles where
 
 $$
-(p^0)^2-E_{\mathbf p}^2+i\epsilon=0,
+(p^0)^2-E_{\vec p}^2+i\epsilon=0,
 \qquad\text{i.e.}\qquad
-p^0=\pm\sqrt{E_{\mathbf p}^2-i\epsilon}
-=\pm\Big(E_{\mathbf p}-\frac{i\epsilon}{2E_{\mathbf p}}\Big)+O(\epsilon^2).
+p^0=\pm\sqrt{E_{\vec p}^2-i\epsilon}
+=\pm\Big(E_{\vec p}-\frac{i\epsilon}{2E_{\vec p}}\Big)+O(\epsilon^2).
 $$
 
-The $+E_{\mathbf p}$ pole is displaced **below** the real axis and the $-E_{\mathbf p}$ pole **above** it. This is the whole content of the prescription: the two poles move in *opposite* directions. The decay of $e^{-ip^0(x^0-y^0)}$ then selects one pole or the other:
+The $+E_{\vec p}$ pole is displaced **below** the real axis and the $-E_{\vec p}$ pole **above** it. This is the whole content of the prescription: the two poles move in *opposite* directions. The decay of $e^{-ip^0(x^0-y^0)}$ then selects one pole or the other:
 
-- for $x^0-y^0>0$, close the contour in the lower half-plane and pick up the pole at $+E_{\mathbf p}$;
-- for $x^0-y^0<0$, close in the upper half-plane and pick up the pole at $-E_{\mathbf p}$.
+- for $x^0-y^0>0$, close the contour in the lower half-plane and pick up the pole at $+E_{\vec p}$;
+- for $x^0-y^0<0$, close in the upper half-plane and pick up the pole at $-E_{\vec p}$.
 
 The residues are
 
 $$
-\operatorname*{Res}_{p^0=+E_{\mathbf p}}\frac{\not p+m}{(p^0)^2-E_{\mathbf p}^2}
-=\frac{\not p_{+}+m}{2E_{\mathbf p}},
+\operatorname*{Res}_{p^0=+E_{\vec p}}\frac{\not p+m}{(p^0)^2-E_{\vec p}^2}
+=\frac{\not p_{+}+m}{2E_{\vec p}},
 \qquad
-\operatorname*{Res}_{p^0=-E_{\mathbf p}}\frac{\not p+m}{(p^0)^2-E_{\mathbf p}^2}
-=\frac{\not p_{-}+m}{-2E_{\mathbf p}},
+\operatorname*{Res}_{p^0=-E_{\vec p}}\frac{\not p+m}{(p^0)^2-E_{\vec p}^2}
+=\frac{\not p_{-}+m}{-2E_{\vec p}},
 $$
 
-with $\not p_{+}=\gamma^0E_{\mathbf p}-\boldsymbol\gamma\cdot\mathbf p$ and $\not p_{-}=-\gamma^0E_{\mathbf p}-\boldsymbol\gamma\cdot\mathbf p$. Using the identity
+with $\not p_{+}=\gamma^0E_{\vec p}-\boldsymbol\gamma\cdot\vec p$ and $\not p_{-}=-\gamma^0E_{\vec p}-\boldsymbol\gamma\cdot\vec p$. Using the identity
 
 $$
-\not p_{-}+m=-\big(\not p_{+}(-\mathbf p)-m\big),
+\not p_{-}+m=-\big(\not p_{+}(-\vec p)-m\big),
 $$
 
-and substituting $\mathbf p\to-\mathbf p$ in the spatial integral, the two contributions become exactly $+W_+$ for $x^0-y^0>0$ and $-W_-$ for $x^0-y^0<0$. The single covariant expression, with its single factor of $i$ in front, therefore reproduces both the time ordering and the fermionic minus. That the *same* $i$ does both is the reason the covariant form is not merely a notational convenience; it is the statement that the contour and the time ordering are one piece of data.
+and substituting $\vec p\to-\vec p$ in the spatial integral, the two contributions become exactly $+W_+$ for $x^0-y^0>0$ and $-W_-$ for $x^0-y^0<0$. The single covariant expression, with its single factor of $i$ in front, therefore reproduces both the time ordering and the fermionic minus. That the *same* $i$ does both is the reason the covariant form is not merely a notational convenience; it is the statement that the contour and the time ordering are one piece of data.
 
-**A recomputation on a case chosen for it.** The claim that the contour integrates to the residues above was tested on a momentum not used to construct it. Take $m=0.7$ and $\mathbf p=(0.3,-0.9,1.1)$ in natural units, so that $|\mathbf p|=1.4525839046$ and $E_{\mathbf p}=1.6124515497$. Recomputing the Dirac spinors, the equations $(\not p-m)u^{(r)}=0$ and $(\not p+m)v^{(r)}=0$, the normalizations, and the spin sums $\sum_r u^{(r)}\bar u^{(r)}=\not p+m$ and $\sum_r v^{(r)}\bar v^{(r)}=\not p-m$ gives a maximum deviation of $4.4\times10^{-16}$; the matrix identity $(\not p-m)(\not p+m)=(p^2-m^2)I_4$, which uses $\not p^{\,2}=p^2I_4$, is exact. The Feynman poles for $\epsilon=10^{-3}$ come out at $+1.61245155-i\,3.10\times10^{-4}$ and $-1.61245155+i\,3.10\times10^{-4}$, that is, one on each side, as claimed. A direct numerical evaluation of the $p^0$ integral along the real axis reproduces the residue expressions for both signs of $x^0-y^0$ to about one percent at $\epsilon=10^{-2}$, where the discretization error is of that order. The relative minus sign was verified by evaluating both branches separately and comparing with $\theta(x^0-y^0)W_+-\theta(y^0-x^0)W_-$.
+**A recomputation on a case chosen for it.** The claim that the contour integrates to the residues above was tested on a momentum not used to construct it. Take $m=0.7$ and $\vec p=(0.3,-0.9,1.1)$ in natural units, so that $|\vec p|=1.4525839046$ and $E_{\vec p}=1.6124515497$. Recomputing the Dirac spinors, the equations $(\not p-m)u^{(r)}=0$ and $(\not p+m)v^{(r)}=0$, the normalizations, and the spin sums $\sum_r u^{(r)}\bar u^{(r)}=\not p+m$ and $\sum_r v^{(r)}\bar v^{(r)}=\not p-m$ gives a maximum deviation of $4.4\times10^{-16}$; the matrix identity $(\not p-m)(\not p+m)=(p^2-m^2)I_4$, which uses $\not p^{\,2}=p^2I_4$, is exact. The Feynman poles for $\epsilon=10^{-3}$ come out at $+1.61245155-i\,3.10\times10^{-4}$ and $-1.61245155+i\,3.10\times10^{-4}$, that is, one on each side, as claimed. A direct numerical evaluation of the $p^0$ integral along the real axis reproduces the residue expressions for both signs of $x^0-y^0$ to about one percent at $\epsilon=10^{-2}$, where the discretization error is of that order. The relative minus sign was verified by evaluating both branches separately and comparing with $\theta(x^0-y^0)W_+-\theta(y^0-x^0)W_-$.
 
 ## Feynman, Retarded, and Advanced: What Selects the Contour
 
@@ -121,9 +121,9 @@ The pole structure makes the choice of propagator explicit. Three prescriptions 
 
 | Prescription | Denominator | Poles (to first order in $\epsilon$) |
 |---|---|---|
-| Feynman | $(p^0)^2-E_{\mathbf p}^2+i\epsilon$ | $+E_{\mathbf p}$ below, $-E_{\mathbf p}$ above |
-| Retarded | $(p^0+i\epsilon)^2-E_{\mathbf p}^2$ | $\pm E_{\mathbf p}-i\epsilon$ (both below) |
-| Advanced | $(p^0-i\epsilon)^2-E_{\mathbf p}^2$ | $\pm E_{\mathbf p}+i\epsilon$ (both above) |
+| Feynman | $(p^0)^2-E_{\vec p}^2+i\epsilon$ | $+E_{\vec p}$ below, $-E_{\vec p}$ above |
+| Retarded | $(p^0+i\epsilon)^2-E_{\vec p}^2$ | $\pm E_{\vec p}-i\epsilon$ (both below) |
+| Advanced | $(p^0-i\epsilon)^2-E_{\vec p}^2$ | $\pm E_{\vec p}+i\epsilon$ (both above) |
 
 The three are distinguished by whether the displacements are **opposite** (Feynman) or **common** (retarded and advanced). For $\epsilon=10^{-3}$ and the same momentum, the retarded poles are at $1.61245155-i\,10^{-3}$ and $-1.61245155-i\,10^{-3}$, and the advanced poles at the same points with $+i\,10^{-3}$: both on the same side, as the table states. Closing the contour then shows at once why the retarded propagator vanishes for $x^0-y^0<0$ and the advanced one for $x^0-y^0>0$: with both poles on one side, one of the two half-planes contains no pole.
 
@@ -131,18 +131,18 @@ This is the physical content of the $i\epsilon$, and it is exactly the content t
 
 ## The Biquaternion Form of the Prescription
 
-The Feynman denominator has a compact biquaternion form. With the wave biquaternion $\tilde{k}=iE\,e_0+\mathbf p$ and its quaternion conjugate $\tilde{k}^{\natural}=iE\,e_0-\mathbf p$, the quaternion product is
+The Feynman denominator has a compact biquaternion form. With the wave biquaternion $\tilde{k}=iE\,e_0+\vec p$ and its quaternion conjugate $\tilde{k}^{\natural}=iE\,e_0-\vec p$, the quaternion product is
 
 $$
-\tilde{k}\tilde{k}^{\natural}=(iE)^2+\mathbf p^2=-E^2+\mathbf p^2=-p^2 .
+\tilde{k}\tilde{k}^{\natural}=(iE)^2+\vec p^2=-E^2+\vec p^2=-p^2 .
 $$
 
 
 $$
-\tilde{k}\tilde{k}^{\natural}=-m^2 \quad\Longleftrightarrow\quad E_{\mathbf p}^2=\mathbf p^2+m^2 ,
+\tilde{k}\tilde{k}^{\natural}=-m^2 \quad\Longleftrightarrow\quad E_{\vec p}^2=\vec p^2+m^2 ,
 $$
 
-whose two frequency branches $E=\pm E_{\mathbf p}$ are the two poles above. Inverting the relation gives the biquaternion form of the momentum-space amplitude,
+whose two frequency branches $E=\pm E_{\vec p}$ are the two poles above. Inverting the relation gives the biquaternion form of the momentum-space amplitude,
 
 $$
 S_F(p)\;=\;\frac{i(\not p+m)}{p^2-m^2+i\epsilon}
@@ -204,9 +204,9 @@ $$
 S_F(x-y)=i\int\!\frac{d^4p}{(2\pi)^4}\,e^{-ip\cdot(x-y)}\frac{\not p+m}{p^2-m^2+i\epsilon}.
 $$
 
-The $p^0$ integral has poles at $p^0=\pm(E_{\mathbf p}-i\epsilon/2E_{\mathbf p})$: the positive pole below the real axis and the negative pole above it. Closing below for $x^0-y^0>0$ and above for $x^0-y^0<0$ reproduces the positive- and negative-frequency pieces $W_\pm$ with the fermionic relative minus.
+The $p^0$ integral has poles at $p^0=\pm(E_{\vec p}-i\epsilon/2E_{\vec p})$: the positive pole below the real axis and the negative pole above it. Closing below for $x^0-y^0>0$ and above for $x^0-y^0<0$ reproduces the positive- and negative-frequency pieces $W_\pm$ with the fermionic relative minus.
 
-Writing the wave biquaternion $\tilde{k}=iE\,e_0+\mathbf p$, so that $\tilde{k}\tilde{k}^{\natural}=-p^2$, the propagator amplitude becomes
+Writing the wave biquaternion $\tilde{k}=iE\,e_0+\vec p$, so that $\tilde{k}\tilde{k}^{\natural}=-p^2$, the propagator amplitude becomes
 
 $$
 S_F(p)=-\frac{i(\not p+m)}{\tilde{k}\tilde{k}^{\natural}+m^2-i\epsilon},
@@ -230,13 +230,13 @@ and the prescription is a deformation of the mass-shell scalar. The deformation 
 | $\psi$, $\bar\psi=\psi^\dagger\gamma^0$ | Spinor-module representative and its adjoint |
 | $\gamma^\mu$, $g=\mathrm{diag}(+1,-1,-1,-1)$ | Gamma matrices and Clifford metric |
 | $\eta=\mathrm{diag}(-1,+1,+1,+1)=-g$ | Spacetime metric of the $ict$ gradient |
-| $p^\mu=(E,\mathbf p)$, $\not p=\gamma^0E-\boldsymbol\gamma\cdot\mathbf p$ | Four-momentum and Feynman slash |
-| $\hat\psi$, $\hat a_r(\mathbf p)$, $\hat b_r(\mathbf p)$ | Quantized field; particle and antiparticle modes |
-| $u^{(r)}(\mathbf p),v^{(r)}(\mathbf p)$ | Positive- and negative-frequency plane-wave spinors |
+| $p^\mu=(E,\vec p)$, $\not p=\gamma^0E-\boldsymbol\gamma\cdot\vec p$ | Four-momentum and Feynman slash |
+| $\hat\psi$, $\hat a_r(\vec p)$, $\hat b_r(\vec p)$ | Quantized field; particle and antiparticle modes |
+| $u^{(r)}(\vec p),v^{(r)}(\vec p)$ | Positive- and negative-frequency plane-wave spinors |
 | $\bar u u=2m$, $\bar v v=-2m$, $\sum_r u\bar u=\not p+m$, $\sum_r v\bar v=\not p-m$ | Parent article's normalizations and spin sums |
 | $W_\pm(x-y)$ | Positive- and negative-frequency two-point functions |
 | $S_F(x-y)=\langle 0|T\hat\psi(x)\bar{\hat\psi}(y)|0\rangle$ | Feynman propagator |
-| $\tilde{k}=iE\,e_0+\mathbf p$ | Wave biquaternion, $\tilde{k}\tilde{k}^{\natural}=-p^2$ |
+| $\tilde{k}=iE\,e_0+\vec p$ | Wave biquaternion, $\tilde{k}\tilde{k}^{\natural}=-p^2$ |
 | $\tilde{k}\tilde{k}^{\natural}=-m^2$ | Biquaternion mass-shell condition |
 | $\mathcal{M}(\tilde{k})=\tilde{k}\tilde{k}^{\natural}+m^2$ | Mass-shell operator; Feynman shift $\mathcal{M}(\tilde{k})-i\epsilon$ |
 | $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace pairing |

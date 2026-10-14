@@ -14,7 +14,7 @@ which is the same biquaternion norm whose vanishing defines the zero divisor con
 
 The article is organised as follows. The next section sets up the amplitude–phase decomposition and derives the two real equations into which the Schrödinger equation separates. The third section treats the Hamilton–Jacobi equation, its biquaternion-norm interpretation, and the trajectories and rays it defines. The fourth treats the transport equation, the WKB amplitude, and the van Vleck determinant. The fifth obtains the quantisation condition, the Maslov phase, and the tunnelling law. The sixth gives the exact rewriting with the quantum potential. The seventh states what the biquaternion form adds and what remains open, and the closing sections are the summary, the notation table, and the external literature.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_j^2=-e_0$, central scalar imaginary $i$; $\mathbb{C}_{\mathbb{B}}$ is the centre; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace; $\mathbb{M}_+$ and $\mathbb{M}_-$ are the Hermitian and anti-Hermitian sectors; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; and $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$. The Hamiltonian for a scalar potential is $\tilde H = [-\frac{\hbar^2}{2m}\nabla^2 + V(\mathbf x)]e_0$, central. The d'Alembertian is not used here; the only sign conventions engaged are those of the biquaternion norm and the Laplacian, both of which follow from $e_j^2=-e_0$.
+The conventions are those of the companion articles. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with $e_0=1,e_1,e_2,e_3$, $e_j^2=-e_0$, central scalar imaginary $i$; $\mathbb{C}_{\mathbb{B}}$ is the centre; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace; $\mathbb{M}_+$ and $\mathbb{M}_-$ are the Hermitian and anti-Hermitian sectors; the state module is $\mathbb{B}\tilde\Pi\cong\mathbb{C}^2$; and $\mathrm{Tr}(\tilde H)=2\,\mathrm{Sc}(\tilde H)$. The Hamiltonian for a scalar potential is $\tilde H = [-\frac{\hbar^2}{2m}\nabla^2 + V(\vec x)]e_0$, central. The d'Alembertian is not used here; the only sign conventions engaged are those of the biquaternion norm and the Laplacian, both of which follow from $e_j^2=-e_0$.
 
 ## The WKB Ansatz in Biquaternionic Form
 
@@ -23,9 +23,9 @@ The conventions are those of the companion articles. The algebra is $\mathbb{B}=
 Write the stationary state as
 
 $$
-\psi(\mathbf x) = A(\mathbf x)\;e^{\,iS(\mathbf x)/\hbar}\;\chi,
+\psi(\vec x) = A(\vec x)\;e^{\,iS(\vec x)/\hbar}\;\chi,
 \qquad
-A(\mathbf x) > 0, \quad S(\mathbf x) \in \mathbb{R}, \quad \chi \in \mathbb{B}\tilde\Pi,
+A(\vec x) > 0, \quad S(\vec x) \in \mathbb{R}, \quad \chi \in \mathbb{B}\tilde\Pi,
 $$
 
 with a real positive amplitude $A$ and a real phase $S$. The exponential is central, so it commutes with the module element $\chi$ and with everything else; the amplitude is real and therefore also central. Under the isomorphism $\mathsf{M}_2$, the state is $A e^{iS/\hbar}\chi$ with a scalar phase multiplying both components equally. This is the WKB form that the framework's conventions make natural: the phase is central, and the module factor is a constant spectator, exactly as in the free and scattering problems.
@@ -86,7 +86,7 @@ where $Q$ is the quantum potential. The two equations are exact: together they a
 Dropping the quantum potential, the leading-order equation is
 
 $$
-\frac{|\nabla S|^2}{2m} + V(\mathbf x) = E ,
+\frac{|\nabla S|^2}{2m} + V(\vec x) = E ,
 $$
 
 the **Hamilton–Jacobi equation** for the action $S$ of a particle of energy $E$ in the potential $V$. In the biquaternion algebra the phase gradient is the real quaternion $\nabla S=\sum_k(\partial_kS)e_k$, and its quaternion square is
@@ -113,27 +113,27 @@ an equation in the centre of the algebra: **the kinetic energy is the biquaterni
 
 ### Rays, trajectories, and the eikonal
 
-The Hamilton–Jacobi equation is solved by the method of characteristics, and the characteristics are the classical trajectories. Writing $\mathbf p = \nabla S$ for the classical momentum, the equation reads $|\mathbf p|^2/2m+V=E$, and its characteristic system is
+The Hamilton–Jacobi equation is solved by the method of characteristics, and the characteristics are the classical trajectories. Writing $\vec p = \nabla S$ for the classical momentum, the equation reads $|\vec p|^2/2m+V=E$, and its characteristic system is
 
 $$
-\dot{\mathbf x} = \frac{\mathbf p}{m},
+\dot{\vec x} = \frac{\vec p}{m},
 \qquad
-\dot{\mathbf p} = -\nabla V .
+\dot{\vec p} = -\nabla V .
 $$
 
-The phase gradient therefore defines a congruence of trajectories along which $S$ is constant along the wave fronts and increases at the rate $\dot S = \mathbf p\cdot\dot{\mathbf x} = |\mathbf p|^2/m$, which recovers the classical action. This is the optical–mechanical analogy in its algebraic form: the wave fronts $S=\text{const}$ are the surfaces of constant phase, the rays are the trajectories, and the phase gradient is the ray direction. In the biquaternion interpretation the ray direction per point is an element of the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the algebra's copy of three-dimensional space, and the phase accumulated along a ray is a central element of $\mathbb{C}_{\mathbb{B}}$.
+The phase gradient therefore defines a congruence of trajectories along which $S$ is constant along the wave fronts and increases at the rate $\dot S = \vec p\cdot\dot{\vec x} = |\vec p|^2/m$, which recovers the classical action. This is the optical–mechanical analogy in its algebraic form: the wave fronts $S=\text{const}$ are the surfaces of constant phase, the rays are the trajectories, and the phase gradient is the ray direction. In the biquaternion interpretation the ray direction per point is an element of the real-quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the algebra's copy of three-dimensional space, and the phase accumulated along a ray is a central element of $\mathbb{C}_{\mathbb{B}}$.
 
 ### The free and separable cases
 
 For the free particle the Hamilton–Jacobi equation has the complete integral
 
 $$
-S(\mathbf x,t) = \mathbf p\cdot\mathbf x - E t,
+S(\vec x,t) = \vec p\cdot\vec x - E t,
 \qquad
-E = \frac{|\mathbf p|^2}{2m},
+E = \frac{|\vec p|^2}{2m},
 $$
 
-whose phase gradient is the constant vector $\mathbf p$, and whose wave function $Ae^{i(\mathbf p\cdot\mathbf x-Et)/\hbar}$ is the plane wave of the free-particle article. For a separable potential $V=V_1(x_1)+V_2(x_2)+V_3(x_3)$ the equation separates, $S=\sum_k S_k(x_k)$, and each $S_k$ obeys
+whose phase gradient is the constant vector $\vec p$, and whose wave function $Ae^{i(\vec p\cdot\vec x-Et)/\hbar}$ is the plane wave of the free-particle article. For a separable potential $V=V_1(x_1)+V_2(x_2)+V_3(x_3)$ the equation separates, $S=\sum_k S_k(x_k)$, and each $S_k$ obeys
 
 $$
 \frac{1}{2m}\left(\frac{dS_k}{dx_k}\right)^2 + V_k(x_k) = E_k,
@@ -159,7 +159,7 @@ $$
 \nabla\cdot\left(A^2\,\nabla S\right) = 0
 $$
 
-is the statement that the vector field $A^2\nabla S$ is divergence-free. Since $\nabla S = m\mathbf v$ is the classical momentum, this is the continuity equation of a conserved density $A^2$ carried by the classical flow, and it is exactly the probability continuity equation $\nabla\cdot\mathbf J=0$ for a stationary state, with $\mathbf J = A^2\nabla S/m$. In one dimension it integrates at once:
+is the statement that the vector field $A^2\nabla S$ is divergence-free. Since $\nabla S = m\vec v$ is the classical momentum, this is the continuity equation of a conserved density $A^2$ carried by the classical flow, and it is exactly the probability continuity equation $\nabla\cdot\vec J=0$ for a stationary state, with $\vec J = A^2\nabla S/m$. In one dimension it integrates at once:
 
 $$
 A^2\,\frac{dS}{dx} = \text{const}
@@ -174,7 +174,7 @@ which is the WKB amplitude: the wave function is large where the particle moves 
 In three dimensions the transport equation is solved by the **van Vleck determinant**,
 
 $$
-A(\mathbf x)\ \propto\ \left|\det\frac{\partial^2 S_{\mathrm{cl}}}{\partial \mathbf x_i\,\partial \mathbf x_f}\right|^{1/2},
+A(\vec x)\ \propto\ \left|\det\frac{\partial^2 S_{\mathrm{cl}}}{\partial \vec x_i\,\partial \vec x_f}\right|^{1/2},
 $$
 
 which measures the focusing of the ray congruence: $A^2$ is the density of trajectories, and the determinant is the Jacobian of the map from initial to final positions. This is the same object that the path-integral article extracts from the Gaussian fluctuation determinant of the semiclassical kernel; the transport equation and the stationary-phase evaluation of the path integral give the same amplitude, as they must, since both are the leading order of the same expansion.
@@ -249,7 +249,7 @@ $$
 Q = -\frac{\hbar^2}{2m}\frac{\nabla^2 A}{A},
 $$
 
-which is exact for any state written in the form $Ae^{iS/\hbar}$. The equation has the same shape as Hamilton–Jacobi with the potential shifted by $Q$; consequently the trajectories defined by $\mathbf p=\nabla S$ are those of a particle moving in $V+Q$, not in $V$. The quantum potential is the entire difference between the classical and the quantum descriptions in this rewriting, and it is of order $\hbar^2$: the semiclassical expansion is the expansion of $Q$ in powers of $\hbar$, and the WKB approximation is the truncation at $Q=0$.
+which is exact for any state written in the form $Ae^{iS/\hbar}$. The equation has the same shape as Hamilton–Jacobi with the potential shifted by $Q$; consequently the trajectories defined by $\vec p=\nabla S$ are those of a particle moving in $V+Q$, not in $V$. The quantum potential is the entire difference between the classical and the quantum descriptions in this rewriting, and it is of order $\hbar^2$: the semiclassical expansion is the expansion of $Q$ in powers of $\hbar$, and the WKB approximation is the truncation at $Q=0$.
 
 The quantum potential is central: $A$ is real and central, $\nabla^2A$ is real and central, so $Q\in\mathbb{C}_{\mathbb{B}}|_{\mathbb{R}}=\mathbb{R}e_0$. The phase is central and the amplitude is central, and the exact rewriting of the Schrödinger equation into a Hamilton–Jacobi equation plus a transport equation therefore involves only the centre of the algebra at every order. This is the sharpest statement of what the semiclassical expansion is in this framework: **the entire expansion lives in the centre**, the phase as a central unitary element and the amplitude as a central real one. The non-central structure of the algebra does not enter the semiclassical limit of a spin-0 particle at any order.
 
@@ -303,7 +303,7 @@ $$
 \frac{1}{2m}N(\nabla S) = E - V :
 $$
 
-the kinetic energy is the biquaternion norm of the phase gradient. Its characteristics are the classical trajectories, with $\dot{\mathbf x}=\mathbf p/m$ and $\dot{\mathbf p}=-\nabla V$, and the wave fronts are the surfaces of constant phase. The transport equation gives the WKB amplitude $A=C/\sqrt{|p|}$ and, in three dimensions, the van Vleck determinant $\big|\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f\big|^{1/2}$ — the same object that the companion path-integral article obtains from the Gaussian fluctuation determinant.
+the kinetic energy is the biquaternion norm of the phase gradient. Its characteristics are the classical trajectories, with $\dot{\vec x}=\vec p/m$ and $\dot{\vec p}=-\nabla V$, and the wave fronts are the surfaces of constant phase. The transport equation gives the WKB amplitude $A=C/\sqrt{|p|}$ and, in three dimensions, the van Vleck determinant $\big|\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f\big|^{1/2}$ — the same object that the companion path-integral article obtains from the Gaussian fluctuation determinant.
 
 The Bohr–Sommerfeld condition $\oint p\,dx = 2\pi\hbar(n+\tfrac12)$, with the Maslov offsets from the Airy connection formulas, was verified to be exact for the harmonic oscillator and the Morse potential (relative errors below $5\times10^{-9}$ and $2\times10^{-9}$ respectively) and to be approximate for the anharmonic well $\tfrac12x^2+0.1x^4$, where it underestimates the exact levels by $4.6\%$, $0.88\%$, $0.37\%$, and $0.21\%$ for $n=0,\dots,3$ (exact values from finite-difference diagonalisation). The WKB tunnelling exponent $-\frac{2}{\hbar}\int\sqrt{2m(V-E)}\,dx$ matches the closed parabolic-barrier value $\pi(V_0-E)/\hbar\omega$ to $10^{-9}$ and reproduces the leading exponential of Kemble's exact formula.
 
@@ -326,7 +326,7 @@ The whole semiclassical expansion lives in the **centre** of the algebra: the ph
 | $\nabla S=\sum_k(\partial_kS)e_k$ | Phase gradient; real quaternion, $\in\mathbb{H}_{\mathbb{B}}$ |
 | $N(\nabla S)=\lvert\nabla S\rvert^2$ | Biquaternion norm of the phase gradient; $\nabla S\,\overline{\nabla S}=\lvert\nabla S\rvert^2e_0$ |
 | $\frac{1}{2m}N(\nabla S)=E-V$ | Hamilton–Jacobi equation as a biquaternion norm |
-| $\mathbf p=\nabla S$, $\dot{\mathbf x}=\mathbf p/m$, $\dot{\mathbf p}=-\nabla V$ | Characteristics; classical trajectories |
+| $\vec p=\nabla S$, $\dot{\vec x}=\vec p/m$, $\dot{\vec p}=-\nabla V$ | Characteristics; classical trajectories |
 | $\nabla\cdot(A^2\nabla S)=0$ | Transport equation |
 | $A=C/\sqrt{\lvert p\rvert}$ | WKB amplitude in one dimension |
 | $\lvert\det\partial^2S_{\mathrm{cl}}/\partial x_i\partial x_f\rvert^{1/2}$ | Van Vleck determinant |

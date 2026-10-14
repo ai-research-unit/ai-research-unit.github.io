@@ -8,7 +8,7 @@ quaternionic sesquilinear product**
 
 $$
 \tilde P\bullet\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q^{*}+\tilde Q^{*}\tilde P^{\natural}\bigr)
-=\bigl[P_0\overline{Q_0}-(\mathbf P,\overline{\mathbf Q})\bigr]-P_0\overline{\mathbf Q}-\overline{Q_0}\mathbf P,
+=\bigl[P_0\overline{Q_0}-(\vec P,\overline{\vec Q})\bigr]-P_0\overline{\vec Q}-\overline{Q_0}\vec P,
 $$
 
 and the operators the band attaches to an element are its two one-sided multiplications
@@ -46,10 +46,10 @@ are cited in place and none is re-proved here.
 
 **Conventions.** The conventions are those of *Conventions in the Biquaternion Universe*:
 $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, the relations $e_k^{2}=-e_0$ and $e_1e_2=e_3$, and
-central scalar imaginary $i$ with $i^{2}=-1$; an element is $\tilde Q=Q_0e_0+\mathbf Q$ with complex coefficients, of scalar part
-$\mathrm{Sc}(\tilde Q)=Q_0$ and vector part $\mathbf Q=\sum_kQ_ke_k$. The natural conjugation is $\tilde Q^{\natural}=Q_0e_0-\mathbf Q$, the
+central scalar imaginary $i$ with $i^{2}=-1$; an element is $\tilde Q=Q_0e_0+\vec Q$ with complex coefficients, of scalar part
+$\mathrm{Sc}(\tilde Q)=Q_0$ and vector part $\vec Q=\sum_kQ_ke_k$. The natural conjugation is $\tilde Q^{\natural}=Q_0e_0-\vec Q$, the
 coefficientwise conjugation is $\bar{\tilde Q}=\sum_\mu\overline{Q_\mu}e_\mu$, and the star is $\tilde Q^{*}=\overline{\tilde Q^{\natural}}$.
-The invariant form is $K(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=P_0\overline{Q_0}-(\mathbf P,\overline{\mathbf Q})$
+The invariant form is $K(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=P_0\overline{Q_0}-(\vec P,\overline{\vec Q})$
 with sign vector $\varepsilon=(1,-1,-1,-1)$; the two one-sided actions of $e_0$ are the conjugations, $e_0\bullet\tilde Q=\tilde Q^{*}$ and
 $\tilde Q\bullet e_0=\tilde Q^{\natural}$; and the norm is $N(\tilde Q)=\tilde Q^{\natural}\tilde Q=Q_0^{2}+Q_1^{2}+Q_2^{2}+Q_3^{2}$.
 
@@ -118,8 +118,8 @@ element of the complex endomorphism algebra. The interpretation is that no famil
 carries its operators without an operator calculus.
 
 **Definition (the value).** For all biquaternions the value of the product is
-$\tilde A\bullet\tilde X=K(\tilde A,\tilde X)e_0-A_0\overline{\mathbf X}-\overline{X_0}\mathbf A$, with scalar part the Krein form
-$K(\tilde A,\tilde X)$ and vector part the mixed term $-A_0\overline{\mathbf X}-\overline{X_0}\mathbf A$.
+$\tilde A\bullet\tilde X=K(\tilde A,\tilde X)e_0-A_0\overline{\vec X}-\overline{X_0}\vec A$, with scalar part the Krein form
+$K(\tilde A,\tilde X)$ and vector part the mixed term $-A_0\overline{\vec X}-\overline{X_0}\vec A$.
 
 *Proof.* The value is the display of *The Gauge Metric as a Product*, §*The Value of the Symmetric Gauge Product*; the scalar part is $K$ and
 the vector part the mixed term alone.
@@ -224,7 +224,7 @@ the crossing reader *The Operators of the Twelve Structures: Multiplication, Adj
 **Theorem (the types for $K$).** For $\tilde A\in\mathbb{B}$, $L^{\bullet}_{\tilde A}$ is self-adjoint for $K$ exactly when
 $\tilde A^{\natural}=\tilde A$, that is exactly when $\tilde A\in\mathbb{C}e_0$, and it is skew-adjoint exactly when
 $\tilde A^{\natural}=-\tilde A$, that is exactly when $\tilde A\in\mathrm{Vect}(\mathbb{B})$. A self-adjoint left multiplication has a
-**central** parameter and a skew-adjoint one has a **pure vector** parameter; a mixed parameter $\tilde A=\lambda e_0+\mathbf A$ with both
+**central** parameter and a skew-adjoint one has a **pure vector** parameter; a mixed parameter $\tilde A=\lambda e_0+\vec A$ with both
 parts nonzero is neither.
 
 *Proof.* By the adjoint theorem the adjoint of $L^{\bullet}_{\tilde A}$ is $L^{\bullet}_{\tilde A^{\natural}}$, and
@@ -419,7 +419,7 @@ form.
 
 ## A Worked Case
 
-Take the **minimal mixing element**, a sum of a scalar and a vector direction, $\tilde A=e_0+e_1$ with $A_0=1$, $\mathbf A=e_1$,
+Take the **minimal mixing element**, a sum of a scalar and a vector direction, $\tilde A=e_0+e_1$ with $A_0=1$, $\vec A=e_1$,
 $N(\tilde A)=2$ and $K(\tilde A,\tilde A)=0$. Its operator is neither self-adjoint nor skew-adjoint, since
 $\tilde A^{\natural}=e_0-e_1\neq\pm\tilde A$; its rank is eight and its determinant is $4$, so it is invertible. On the real basis
 $(e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3)$ the left multiplication acts by
@@ -439,7 +439,7 @@ $$
 \tilde A\bullet\tilde A=(e_0+e_1)\bullet(e_0+e_1)=-2e_1,
 $$
 
-because $K(\tilde A,\tilde A)=0$ and the mixed term $-A_0\overline{\mathbf A}-\overline{A_0}\mathbf A=-2e_1$ survives. The element is the
+because $K(\tilde A,\tilde A)=0$ and the mixed term $-A_0\overline{\vec A}-\overline{A_0}\vec A=-2e_1$ survives. The element is the
 witness that the algebraic norm is not central, and its value is a vector and not a complex multiple of $e_0$.
 
 Take next the **central parameter** $\tilde C=ie_0$ with $\tilde C^{\natural}=ie_0=\tilde C$ and $N(\tilde C)=-1$, which gives the
@@ -461,7 +461,7 @@ metric on four explicit parameters.
 
 **A numerical check.** Recomputing with biquaternions in the coefficient model, to machine precision over random and structured elements and
 never exceeding one hundred per claim: the product is conjugate-commutative and reduces to
-$[P_0\overline{Q_0}-(\mathbf P,\overline{\mathbf Q})]-P_0\overline{\mathbf Q}-\overline{Q_0}\mathbf P$;
+$[P_0\overline{Q_0}-(\vec P,\overline{\vec Q})]-P_0\overline{\vec Q}-\overline{Q_0}\vec P$;
 $L^{\bullet}_{\tilde A}=C\circ R^{\bullet}_{\tilde A}$ with $C$ the coefficientwise conjugation, so the two families do **not** coincide;
 $L^{\bullet}_{\lambda e_0}=\lambda\,{}^{*}$ and $R^{\bullet}_{\lambda e_0}=\overline{\lambda}\,{}^{\natural}$, the left family
 conjugate-linear and the right linear, each with the opposite parity in the parameter; the adjoint identity
@@ -511,7 +511,7 @@ the two families into one, which the symmetric plain row enjoys, requires commut
 $L^{\bullet}_{\tilde A}(\tilde X)=\tilde A\bullet\tilde X$, conjugate-linear, and $R^{\bullet}_{\tilde A}(\tilde X)=\tilde X\bullet\tilde A$,
 complex-linear, linked by $L^{\bullet}_{\tilde A}=C\circ R^{\bullet}_{\tilde A}$ with the coefficientwise conjugation, so the band carries
 **two** families of opposite parity and **not** a single family; $L^{\bullet}_{e_0}={}^{*}$ and $R^{\bullet}_{e_0}={}^{\natural}$; the value
-is $K(\tilde A,\tilde X)e_0-A_0\overline{\mathbf X}-\overline{X_0}\mathbf A$ with scalar part the Krein form $K$ and vector part the mixed
+is $K(\tilde A,\tilde X)e_0-A_0\overline{\vec X}-\overline{X_0}\vec A$ with scalar part the Krein form $K$ and vector part the mixed
 term; the families do not multiply, the left defect is the associator, and the parity forbids a complex-linear representation, so the band
 has no enveloping operator algebra. The form is the **indefinite** Krein form
 $K(\tilde P,\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ of signature $(1,3)$ with fundamental symmetry $J={}^{\natural}$, and
@@ -602,7 +602,7 @@ remarkable subspaces.
 | $L^{\bullet}_{\tilde A}=C\circ R^{\bullet}_{\tilde A}$, $C=\bar{\cdot}$ | the conjugate-commutativity of the two families |
 | $L^{\bullet}_{e_0}={}^{*}$, $R^{\bullet}_{e_0}={}^{\natural}$ | the two operators of the unit |
 | $L^{\bullet}_{\lambda e_0}=\lambda\,{}^{*}$, $R^{\bullet}_{\lambda e_0}=\overline{\lambda}\,{}^{\natural}$ | the parity in the parameter |
-| $\tilde A\bullet\tilde X=K(\tilde A,\tilde X)e_0-A_0\overline{\mathbf X}-\overline{X_0}\mathbf A$ | the value of the product |
+| $\tilde A\bullet\tilde X=K(\tilde A,\tilde X)e_0-A_0\overline{\vec X}-\overline{X_0}\vec A$ | the value of the product |
 | $K(\tilde P,\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$, $\varepsilon=(1,-1,-1,-1)$ | the Krein form, signature $(1,3)$ |
 | $J={}^{\natural}$, $T^{\dagger}=JT^{*}J$ | the fundamental symmetry and the $J$-adjoint |
 | $K(L^{\bullet}_{\tilde A}\tilde X,\tilde Y)=\overline{K(\tilde X,L^{\bullet}_{\tilde A^{\natural}}\tilde Y)}$ | the left-adjoint rule |

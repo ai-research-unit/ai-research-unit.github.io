@@ -145,9 +145,9 @@ There are exactly three. The reversal $\flat = -{}^{*}$ reproduces the fixed and
 | Symbol | Meaning |
 |---|---|
 | $\tilde{Q}$ | General biquaternion, $\mathbb{C} \otimes_{\mathbb{R}} \mathbb{H}$ |
-| $\bar{\cdot}$ | Complex conjugation; $\bar{\tilde{Q}} = \bar{Q_0} e_0 + \mathbf{Q}^*$ |
-| ${}^{*}$ | Hermitian conjugation; $\tilde{Q}^{*} = \bar{Q_0} e_0 - \mathbf{Q}^*$ |
-| ${}^{\natural}$ | Quaternion conjugation; $\tilde{Q}^{\natural} = Q_0 e_0 - \mathbf{Q}$ |
+| $\bar{\cdot}$ | Complex conjugation; $\bar{\tilde{Q}} = \bar{Q_0} e_0 + \vec Q^*$ |
+| ${}^{*}$ | Hermitian conjugation; $\tilde{Q}^{*} = \bar{Q_0} e_0 - \vec Q^*$ |
+| ${}^{\natural}$ | Quaternion conjugation; $\tilde{Q}^{\natural} = Q_0 e_0 - \vec Q$ |
 | $\flat$ | Reversal, $\flat = -{}^{*}$, the conjugation that gives no new decomposition |
 | $\mathbb{C}_{\mathbb{B}}$ | Centre, fixed space of ${}^{\natural}$; basis $e_0, ie_0$, dimension $2$ |
 | $\mathrm{Vect}(\mathbb{B})$ | Vector subspace, anti-fixed space of ${}^{\natural}$; basis $e_1, e_2, e_3, ie_1, ie_2, ie_3$, dimension $6$ |

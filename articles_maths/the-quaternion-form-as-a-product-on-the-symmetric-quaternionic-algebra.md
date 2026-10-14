@@ -4,7 +4,7 @@
 
 The symmetric quaternionic multiplication is a form placed on the central line: the value of
 $\tilde P\star\tilde Q$ is the central element $N(\tilde P,\tilde Q)e_0$, and the whole content of the
-operation is the coefficient $N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$
+operation is the coefficient $N(\tilde P,\tilde Q)=P_0Q_0+(\vec P,\vec Q)$
 (*Introduction to the Symmetric Quaternionic Algebra of Biquaternions*). This article reads the coefficient
 as the **form that the block carries**: it identifies it, computes its Gram matrix and its rank, its
 realification and its signature, its invariance under the product and the failure of that invariance, its
@@ -19,8 +19,8 @@ question for a symmetric product is *Jordan Algebras*; the matrix reading of the
 *The Symmetric Quaternionic Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* and *The Symmetric Quaternionic Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$*.
 
 **Conventions.** The operation is $\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0$ with
-$N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$; the norm is $N(\tilde Q)=N(\tilde Q,\tilde Q)=\sum_\mu Q_\mu^2$;
-the Hermitian form is $H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})$; the real basis
+$N(\tilde P,\tilde Q)=P_0Q_0+(\vec P,\vec Q)$; the norm is $N(\tilde Q)=N(\tilde Q,\tilde Q)=\sum_\mu Q_\mu^2$;
+the Hermitian form is $H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\vec P,\overline{\vec Q})$; the real basis
 of the algebra is $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$ over $\mathbb{R}$; the remarkable subspaces are
 $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$,
 $\mathbb{M}_+$ and $\mathbb{M}_-$.
@@ -30,8 +30,8 @@ $\mathbb{M}_+$ and $\mathbb{M}_-$.
 **Definition.** The **quaternion form** of the block is the symmetric $\mathbb{C}$-bilinear form
 
 $$
-N(\tilde P,\tilde Q) = P_0Q_0 + (\mathbf P,\mathbf Q), \qquad
-(\mathbf P,\mathbf Q) = \sum_{k=1}^{3}P_kQ_k ,
+N(\tilde P,\tilde Q) = P_0Q_0 + (\vec P,\vec Q), \qquad
+(\vec P,\vec Q) = \sum_{k=1}^{3}P_kQ_k ,
 $$
 
 and it is the coefficient of the product, $\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0$.
@@ -168,16 +168,16 @@ failure of the Jordan identity (*Jordan Algebras*).
 The restrictions of $N$ to the remarkable subspaces are the restrictions of the quaternion form
 computed in *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions*, whose table is
 quoted here; the present article adds only their reading through the product. Here $A,B\in\mathbb{C}$, $h,g$
-are real quaternions, $a_0,b_0\in\mathbb{R}$ and $\mathbf p,\mathbf q\in\mathbb{R}^3$ are real vectors.
+are real quaternions, $a_0,b_0\in\mathbb{R}$ and $\vec p,\vec q\in\mathbb{R}^3$ are real vectors.
 
 | subspace | elements | $N$ | dimension over $\mathbb{R}$ | signature | isotropic elements |
 |---|---|---|---|---|---|
 | $\mathbb{C}_{\mathbb{B}}$ | $Ae_0$, $Be_0$ | $AB$ | $2$ | $(1,1)$ | none (complex form) |
-| $\mathrm{Vect}(\mathbb{B})$ | $\mathbf P$, $\mathbf Q$ | $(\mathbf P,\mathbf Q)$ | $6$ | $(3,3)$ | the pure zero divisors |
+| $\mathrm{Vect}(\mathbb{B})$ | $\vec P$, $\vec Q$ | $(\vec P,\vec Q)$ | $6$ | $(3,3)$ | the pure zero divisors |
 | $\mathbb{H}_{\mathbb{B}}$ | $h$, $g$ | $h_0g_0+\cdots+h_3g_3$ | $4$ | $(4,0)$ | none |
 | $i\mathbb{H}_{\mathbb{B}}$ | $ih$, $ig$ | $-(h_0g_0+\cdots+h_3g_3)$ | $4$ | $(0,4)$ | none |
-| $\mathbb{M}_+$ | $a_0e_0+i\mathbf p$, $b_0e_0+i\mathbf q$ | $a_0b_0-(\mathbf p,\mathbf q)$ | $4$ | $(1,3)$ | the elements $a_0e_0+i\mathbf p$ with $a_0^2=(\mathbf p,\mathbf p)$ |
-| $\mathbb{M}_-$ | $ia_0e_0+\mathbf p$, $ib_0e_0+\mathbf q$ | $(\mathbf p,\mathbf q)-a_0b_0$ | $4$ | $(3,1)$ | the elements $\mathbf p+ia_0e_0$ with $(\mathbf p,\mathbf p)=a_0^2$ |
+| $\mathbb{M}_+$ | $a_0e_0+i\vec p$, $b_0e_0+i\vec q$ | $a_0b_0-(\vec p,\vec q)$ | $4$ | $(1,3)$ | the elements $a_0e_0+i\vec p$ with $a_0^2=(\vec p,\vec p)$ |
+| $\mathbb{M}_-$ | $ia_0e_0+\vec p$, $ib_0e_0+\vec q$ | $(\vec p,\vec q)-a_0b_0$ | $4$ | $(3,1)$ | the elements $\vec p+ia_0e_0$ with $(\vec p,\vec p)=a_0^2$ |
 
 **Remark (the product on each restriction).** On every one of the remarkable subspaces the product of two elements is a
 multiple of $e_0$ read through the displayed coefficient, and the square of an element is the value of the
@@ -205,13 +205,13 @@ block and $-H$ on the imaginary block, the two cross blocks being purely imagina
 $\tilde Q=ie_0$ exhibits the difference of the two forms.
 
 *Proof.* On real coefficients the conjugation acts trivially, $\overline{Q_0}=Q_0$ and
-$\overline{\mathbf Q}=\mathbf Q$, so $H(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)=N(\tilde P,\tilde Q)$.
+$\overline{\vec Q}=\vec Q$, so $H(\tilde P,\tilde Q)=P_0Q_0+(\vec P,\vec Q)=N(\tilde P,\tilde Q)$.
 For $\tilde P=e_0$, $\tilde Q=ie_0$ one has $N=i$ and $H=1\cdot\overline{i}= -i$, which differ.
 
 **Remark (the collapse with the other central operation on the real part).** The coincidence is the form-level
 statement that $\mathrm{SQA}=\mathrm{SPS}$ on the real part, which is one of the two collapses of the twelve
 to ten recorded in *The 12 Products of the Biquaternion Complex Space*. The symmetric part
-of the plain sesquilinear product has the coefficient $H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})$,
+of the plain sesquilinear product has the coefficient $H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\vec P,\overline{\vec Q})$,
 which is $N$ precisely when the coefficients are real; over $\mathbb{C}$ the two operations differ, and
 $N$ is the $\mathbb{C}$-bilinear conjugate of $H$ in the second slot. The block accordingly reads the form
 $N$ as the plain form of the operation, and refers to the norm article for the Hermitian form and its
@@ -220,7 +220,7 @@ positivity.
 ## Summary
 
 The form carried by the symmetric quaternionic multiplication is the quaternion form
-$N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$, the coefficient of the product and the scalar part of the
+$N(\tilde P,\tilde Q)=P_0Q_0+(\vec P,\vec Q)$, the coefficient of the product and the scalar part of the
 parent product $\tilde P^{\natural}\tilde Q$. Its Gram matrix in the basis is $I_4$, so it has rank $4$ over
 $\mathbb{C}$ and its radical is trivial; its realification is $\operatorname{diag}(I_4,-I_4)$ of signature
 $(4,4)$ and index $4$; its restrictions to the quaternion and anti-quaternion subspaces are the two definite
@@ -237,9 +237,9 @@ collapse $\mathrm{SQA}=\mathrm{SPS}$ on the real part.
 
 | Symbol | Meaning |
 |---|---|
-| $N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$ | the quaternion form of the block, the coefficient of the product |
+| $N(\tilde P,\tilde Q)=P_0Q_0+(\vec P,\vec Q)$ | the quaternion form of the block, the coefficient of the product |
 | $N(\tilde Q)=N(\tilde Q,\tilde Q)=\sum_\mu Q_\mu^2$ | the norm form, the diagonal of $N$ |
-| $H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})$ | the Hermitian form of $\mathbb{B}$ |
+| $H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\vec P,\overline{\vec Q})$ | the Hermitian form of $\mathbb{B}$ |
 | $G=I_4$ | the Gram matrix of $N$ in the basis $e_0,e_1,e_2,e_3$ |
 | $\operatorname{diag}(I_4,-I_4)$, signature $(4,4)$ | the realification of $N$ |
 | $(1,1),(3,3),(4,0),(0,4),(1,3),(3,1)$ | the signatures of the restrictions to the remarkable subspaces |

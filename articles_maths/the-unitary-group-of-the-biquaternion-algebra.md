@@ -28,7 +28,7 @@ that is, scalar multiples of unit quaternions by phases.
 
 **Corollary (the determinant and the norm coincide).** On $U(\mathbb{B})$ the biquaternion norm is the determinant through $\mathsf{M}_2$, and $N:U(\mathbb{B})\to S^{1}$ is a surjective homomorphism with kernel $S^{3}$, the unit quaternions. Hence $N$ realises an isomorphism $U(\mathbb{B})/S^{3}\cong S^{1}$.
 
-**Proof.** $\langle\tilde{U}\tilde{V},\tilde{U}\tilde{V}\rangle_{\natural}=\langle\tilde{U},\tilde{U}\rangle_{\natural}\langle\tilde{V},\tilde{V}\rangle_{\natural}$ is the multiplicativity of the norm ($\det$ is multiplicative), $\langle e_0,e_0\rangle_{\natural}=1$, and $|\langle\tilde{U},\tilde{U}\rangle_{\natural}|=1$ by the theorem, so the image lies in $S^{1}$ and is a subgroup; it is all of $S^{1}$ because $A\mapsto Ae_0$ is unitary of norm $A$. The kernel is $\{N=1\}\cap U(\mathbb{B})$, which is the unit quaternions.
+**Proof.** $\langle\tilde{U}\tilde{S},\tilde{U}\tilde{S}\rangle_{\natural}=\langle\tilde{U},\tilde{U}\rangle_{\natural}\langle\tilde{S},\tilde{S}\rangle_{\natural}$ is the multiplicativity of the norm ($\det$ is multiplicative), $\langle e_0,e_0\rangle_{\natural}=1$, and $|\langle\tilde{U},\tilde{U}\rangle_{\natural}|=1$ by the theorem, so the image lies in $S^{1}$ and is a subgroup; it is all of $S^{1}$ because $A\mapsto Ae_0$ is unitary of norm $A$. The kernel is $\{N=1\}\cap U(\mathbb{B})$, which is the unit quaternions.
 
 ## The Structure of the Unitary Group
 

@@ -8,7 +8,7 @@ The framework's answer is a split one, and the split is the subject of the artic
 
 This article is interpretive, and it keeps the boundary between what the algebra establishes and what is interpretation explicit in every section. The interpretive interpretations are labelled as interpretations, and where an interpretation is not forced by the algebra, that is said rather than smoothed over.
 
-The material is inherited, unchanged, from the read list. From *Quantum Physics in Biquaternionic Form*: the states are the positive trace-one elements of $\mathbb{M}_+$, the pure states are the idempotents $\tilde\Pi_{1,2}(\hat{\mu})=\tfrac12(e_0\pm i\hat{\mu})$, the mixed states are the interior of the Bloch ball $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ with $|\mathbf{r}|<1$, and the Born rule is the trace pairing $\mathrm{Tr}(\tilde{\rho}\tilde{H})$. From *The Bloch Ball as the Trace-One Slice of the Future Light Cone*: the state space is the intersection of the trace-one hyperplane with the future light cone of the biquaternion norm $N(\tilde{H})=\tilde{H}\tilde{H}^{\natural}$, and the pure states are the zero divisors at trace one. From *The Measurement Problem in Algebraic Form*: the element is **provenance-blind** and carries no index of the realised outcome. From *Decoherence as Idempotent Projection*: decoherence is the deformation of an idempotent into a non-idempotent positive trace-one element, with $\tilde{\rho}^2-\tilde{\rho}=\tfrac14(|\mathbf{r}|^2-1)e_0$. From *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*: the anti-Hermitian subspace carries the four-vectors and is complementary to $\mathbb{M}_+$.
+The material is inherited, unchanged, from the read list. From *Quantum Physics in Biquaternionic Form*: the states are the positive trace-one elements of $\mathbb{M}_+$, the pure states are the idempotents $\tilde\Pi_{1,2}(\hat{\mu})=\tfrac12(e_0\pm i\hat{\mu})$, the mixed states are the interior of the Bloch ball $\tilde{\rho}=\tfrac12(e_0+i\vec r)$ with $|\vec r|<1$, and the Born rule is the trace pairing $\mathrm{Tr}(\tilde{\rho}\tilde{H})$. From *The Bloch Ball as the Trace-One Slice of the Future Light Cone*: the state space is the intersection of the trace-one hyperplane with the future light cone of the biquaternion norm $N(\tilde{H})=\tilde{H}\tilde{H}^{\natural}$, and the pure states are the zero divisors at trace one. From *The Measurement Problem in Algebraic Form*: the element is **provenance-blind** and carries no index of the realised outcome. From *Decoherence as Idempotent Projection*: decoherence is the deformation of an idempotent into a non-idempotent positive trace-one element, with $\tilde{\rho}^2-\tilde{\rho}=\tfrac14(|\vec r|^2-1)e_0$. From *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*: the anti-Hermitian subspace carries the four-vectors and is complementary to $\mathbb{M}_+$.
 
 The article proceeds as follows. The next four sections collect the established structure of the state as an element: its definition and geometry; its cohabitation with the observables in one space; its convex structure; and its purity as idempotence and as zero-divisorhood. Two further sections state what the element does not carry and what it is not. The last three sections separate the ontological interpretations the algebra permits, state the sector hypothesis under which they acquire physical content, and list the questions the algebra leaves open.
 
@@ -19,30 +19,30 @@ The article proceeds as follows. The next four sections collect the established 
 A state of the informational sector is an element of the Hermitian subspace
 
 $$
-\tilde{\rho}=\tfrac12\left(e_0+i\,\mathbf{r}\right),\qquad \mathbf{r}=r_1 e_1+r_2 e_2+r_3 e_3\in\mathbb{R}^3,
+\tilde{\rho}=\tfrac12\left(e_0+i\,\vec r\right),\qquad \vec r=r_1 e_1+r_2 e_2+r_3 e_3\in\mathbb{R}^3,
 $$
 
-with the positivity condition $|\mathbf{r}|\leq1$. Its scalar part is real and its vector part purely imaginary, so $\tilde{\rho}\in\mathbb{M}_+$ by the definition of that subspace. Its trace is $\mathrm{Tr}(\tilde{\rho})=1$, and it is an observable — a Hermitian element — that is positive and normalized.
+with the positivity condition $|\vec r|\leq1$. Its scalar part is real and its vector part purely imaginary, so $\tilde{\rho}\in\mathbb{M}_+$ by the definition of that subspace. Its trace is $\mathrm{Tr}(\tilde{\rho})=1$, and it is an observable — a Hermitian element — that is positive and normalized.
 
 Three identities carry the whole of the state's structure. Expanding the square in the algebra,
 
 $$
-\tilde{\rho}^2=\tfrac14\left(\left(1+|\mathbf{r}|^2\right)e_0+2i\,\mathbf{r}\right),
+\tilde{\rho}^2=\tfrac14\left(\left(1+|\vec r|^2\right)e_0+2i\,\vec r\right),
 $$
 
 so the deviation from idempotency is a pure scalar,
 
 $$
-\tilde{\rho}^2-\tilde{\rho}=\tfrac14\left(|\mathbf{r}|^2-1\right)e_0 ,
+\tilde{\rho}^2-\tilde{\rho}=\tfrac14\left(|\vec r|^2-1\right)e_0 ,
 $$
 
 and the biquaternion norm is
 
 $$
-N(\tilde{\rho})=\tilde{\rho}\tilde{\rho}^{\natural}=\tfrac14\left(1-|\mathbf{r}|^2\right)e_0 .
+N(\tilde{\rho})=\tilde{\rho}\tilde{\rho}^{\natural}=\tfrac14\left(1-|\vec r|^2\right)e_0 .
 $$
 
-The three are consistent: the eigenvalues of $\tilde{\rho}$ are $\lambda_\pm=\tfrac12(1\pm|\mathbf{r}|)$, so positivity is exactly $|\mathbf{r}|\leq1$, which is exactly $N(\tilde{\rho})\geq0$, which is exactly membership of the future light cone of the biquaternion norm. The state space is therefore the trace-one slice of that cone,
+The three are consistent: the eigenvalues of $\tilde{\rho}$ are $\lambda_\pm=\tfrac12(1\pm|\vec r|)$, so positivity is exactly $|\vec r|\leq1$, which is exactly $N(\tilde{\rho})\geq0$, which is exactly membership of the future light cone of the biquaternion norm. The state space is therefore the trace-one slice of that cone,
 
 $$
 \{\text{states}\}=\left\{\tilde{\rho}\in\mathbb{M}_+:\ \mathrm{Tr}(\tilde{\rho})=1,\ N(\tilde{\rho})\geq0\right\},
@@ -59,15 +59,15 @@ the Bloch ball of radius one.
 A general observable of the informational sector is an element
 
 $$
-\tilde{H}=h_0 e_0+i\,\mathbf{h},\qquad h_0\in\mathbb{R},\quad \mathbf{h}\in\mathbb{R}^3,
+\tilde{H}=h_0 e_0+i\,\vec h,\qquad h_0\in\mathbb{R},\quad \vec h\in\mathbb{R}^3,
 $$
 
-of the same subspace $\mathbb{M}_+$. The state $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ is a particular case: an observable with $h_0=\tfrac12$ and $\mathbf{h}=\tfrac12\mathbf{r}$, positive and of trace one. **States are positive trace-one observables.** The standard formalism also represents states and observables by operators, but there the state is standardly read as a functional — a positive normalized linear map on observables — while the observable enters as the object acted upon. In the biquaternion framework the distinction is not one of kind and not one of dual space: it is the conjunction of two conditions, positivity and trace, imposed on elements of one four-dimensional real space.
+of the same subspace $\mathbb{M}_+$. The state $\tilde{\rho}=\tfrac12(e_0+i\vec r)$ is a particular case: an observable with $h_0=\tfrac12$ and $\vec h=\tfrac12\vec r$, positive and of trace one. **States are positive trace-one observables.** The standard formalism also represents states and observables by operators, but there the state is standardly read as a functional — a positive normalized linear map on observables — while the observable enters as the object acted upon. In the biquaternion framework the distinction is not one of kind and not one of dual space: it is the conjunction of two conditions, positivity and trace, imposed on elements of one four-dimensional real space.
 
 Two facts make the cohabitation exact. First, the trace pairing
 
 $$
-\mathrm{Tr}(\tilde{\rho}\tilde{H})=h_0+\mathbf{r}\cdot\mathbf{h}
+\mathrm{Tr}(\tilde{\rho}\tilde{H})=h_0+\vec r\cdot\vec h
 $$
 
 is a positive-definite symmetric form on $\mathbb{M}_+$, with Gram matrix diagonal in the basis $\{e_0,ie_1,ie_2,ie_3\}$; up to the normalization $\mathrm{Tr}(e_0)=2$ it is the Euclidean pairing. Second — and this is the point for the ontology — because the pairing is positive definite, the map
@@ -78,25 +78,25 @@ $$
 
 is injective: an element of $\mathbb{M}_+$ is determined by its pairings with observables. So the state, regarded as a functional on observables, is an element of the very space on which it is a functional; $\mathbb{M}_+$ is its own dual under the trace pairing, and there is no second space in which the state lives.
 
-That the state is a *positive* functional is part of the same structure. If $\tilde{H}\geq0$, meaning $h_0\geq|\mathbf{h}|$, then
+That the state is a *positive* functional is part of the same structure. If $\tilde{H}\geq0$, meaning $h_0\geq|\vec h|$, then
 
 $$
-\mathrm{Tr}(\tilde{\rho}\tilde{H})=h_0+\mathbf{r}\cdot\mathbf{h}\ \geq\ |\mathbf{h}|-|\mathbf{r}|\,|\mathbf{h}|=\left(1-|\mathbf{r}|\right)|\mathbf{h}|\ \geq\ 0 .
+\mathrm{Tr}(\tilde{\rho}\tilde{H})=h_0+\vec r\cdot\vec h\ \geq\ |\vec h|-|\vec r|\,|\vec h|=\left(1-|\vec r|\right)|\vec h|\ \geq\ 0 .
 $$
 
-Positivity of the functional is thus not an extra postulate; it is the positivity condition $|\mathbf{r}|\leq1$ of the state seen from the dual side.
+Positivity of the functional is thus not an extra postulate; it is the positivity condition $|\vec r|\leq1$ of the state seen from the dual side.
 
 **Interpretation.** The cohabitation of states and observables is a structural fact; what it means is an interpretation. The natural interpretation is that the framework refuses a dualistic picture in which "states of information" inhabit a different kind of object from "physical quantities". A more cautious interpretation is that the coincidence is a feature of working in $\mathbb{B}\cong M_2(\mathbb{C})$, where states and effects are both matrices. The algebra does not decide between these interpretations, and the fact that it does not is itself a datum: it locates the ontological question elsewhere than in a state/observable dichotomy.
 
 ## Convexity, Extremality, and the Superposition Principle
 
-The states form a **convex set**. If $\tilde{\rho}_1,\tilde{\rho}_2$ are states and $\lambda\in[0,1]$, then $\lambda\tilde{\rho}_1+(1-\lambda)\tilde{\rho}_2$ is Hermitian, of trace one, and positive — a state. In Bloch coordinates this is the convexity of the ball. The **pure** states, $|\mathbf{r}|=1$, are its **extreme points**: if a pure state is written as a nontrivial convex combination of two states, the two must coincide with it. For distinct unit vectors $\mathbf{r}_1\neq\mathbf{r}_2$ and $\lambda\in(0,1)$ one has $|\lambda\mathbf{r}_1+(1-\lambda)\mathbf{r}_2|<1$ strictly, by the triangle inequality, with equality only for $\mathbf{r}_1=\mathbf{r}_2$. Every mixed state, $|\mathbf{r}|<1$, is an interior point and admits a nontrivial decomposition; its spectral decomposition
+The states form a **convex set**. If $\tilde{\rho}_1,\tilde{\rho}_2$ are states and $\lambda\in[0,1]$, then $\lambda\tilde{\rho}_1+(1-\lambda)\tilde{\rho}_2$ is Hermitian, of trace one, and positive — a state. In Bloch coordinates this is the convexity of the ball. The **pure** states, $|\vec r|=1$, are its **extreme points**: if a pure state is written as a nontrivial convex combination of two states, the two must coincide with it. For distinct unit vectors $\vec r_1\neq\vec r_2$ and $\lambda\in(0,1)$ one has $|\lambda\vec r_1+(1-\lambda)\vec r_2|<1$ strictly, by the triangle inequality, with equality only for $\vec r_1=\vec r_2$. Every mixed state, $|\vec r|<1$, is an interior point and admits a nontrivial decomposition; its spectral decomposition
 
 $$
-\tilde{\rho}=\lambda_+\tilde\Pi_1(\hat{\mathbf{r}})+\lambda_-\tilde\Pi_2(\hat{\mathbf{r}}),\qquad \lambda_\pm=\tfrac12\left(1\pm|\mathbf{r}|\right),
+\tilde{\rho}=\lambda_+\tilde\Pi_1(\hat r)+\lambda_-\tilde\Pi_2(\hat r),\qquad \lambda_\pm=\tfrac12\left(1\pm|\vec r|\right),
 $$
 
-is one, and the spectral decomposition is unique for $\mathbf{r}\neq0$.
+is one, and the spectral decomposition is unique for $\vec r\neq0$.
 
 The state space is a convex body, not a vector space, and the difference matters. The sum of two states is not a state: $\mathrm{Tr}(\tilde{\rho}_1+\tilde{\rho}_2)=2$, and a scalar multiple of a state is not a state either. In particular the **superposition principle is not a statement about the state space**. Superposition belongs to the spinor module of $\mathbb{B}$ — the complex two-dimensional module entering the correspondence of *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* — which is a vector space; the states are the positive trace-one elements built from that module, and they form the convex ball. The framework's state is therefore not a vector to be added and not a ray to be projected: it is a convex element whose extreme points are the pure states.
 
@@ -104,13 +104,13 @@ The state space is a convex body, not a vector space, and the difference matters
 
 ## The Pure State Is an Idempotent and a Zero Divisor
 
-A state is pure exactly when $\tilde{\rho}^2=\tilde{\rho}$, which is exactly $|\mathbf{r}|=1$, which is exactly $N(\tilde{\rho})=0$. The last equality says that the pure states of trace one are exactly the **zero divisors** of $\mathbb{B}$ on the trace-one slice: a pure state is a nonzero element that annihilates a nonzero element, explicitly
+A state is pure exactly when $\tilde{\rho}^2=\tilde{\rho}$, which is exactly $|\vec r|=1$, which is exactly $N(\tilde{\rho})=0$. The last equality says that the pure states of trace one are exactly the **zero divisors** of $\mathbb{B}$ on the trace-one slice: a pure state is a nonzero element that annihilates a nonzero element, explicitly
 
 $$
 \tilde\Pi_1(\hat{\mu})\,\tilde\Pi_2(\hat{\mu})=0,\qquad \tilde\Pi_{1,2}(\hat{\mu})=\tfrac12\left(e_0\pm i\hat{\mu}\right),
 $$
 
-with $\hat{\mu}$ a unit pure real quaternion, and $\tilde\Pi_1+\tilde\Pi_2=e_0$. In the matrix representation $\mathbb{B}\cong M_2(\mathbb{C})$ a pure state is a rank-one projector, with vanishing determinant, while a mixed state is invertible and of rank two, with $\det=N(\tilde{\rho})=\tfrac14(1-|\mathbf{r}|^2)\neq0$. Purity, idempotence, extremality, and being a zero divisor are the same condition on the element.
+with $\hat{\mu}$ a unit pure real quaternion, and $\tilde\Pi_1+\tilde\Pi_2=e_0$. In the matrix representation $\mathbb{B}\cong M_2(\mathbb{C})$ a pure state is a rank-one projector, with vanishing determinant, while a mixed state is invertible and of rank two, with $\det=N(\tilde{\rho})=\tfrac14(1-|\vec r|^2)\neq0$. Purity, idempotence, extremality, and being a zero divisor are the same condition on the element.
 
 **Established, and recomputed.** For random pure states the idempotence, the vanishing biquaternion norm, the annihilation identity, and the vanishing determinant all hold; for random mixed states the failure of idempotence and the non-vanishing determinant hold. The determinant identity $\det\varphi(\tilde{Q})=N(\tilde{Q})$ for the matrix representation $\varphi$ was checked on random biquaternions, which is what identifies the biquaternion-norm-zero set with the singular, hence zero-divisor, set.
 
@@ -120,27 +120,27 @@ with $\hat{\mu}$ a unit pure real quaternion, and $\tilde\Pi_1+\tilde\Pi_2=e_0$.
 
 Two negative facts about the state element are as structural as the positive ones.
 
-**Provenance-blindness.** The state carries no record of how it was prepared. The algebra shows this directly: a mixed state has many ensemble decompositions. For a state with Bloch vector $\mathbf{r}$, $|\mathbf{r}|<1$, and a unit direction $\hat{\mathbf{n}}$ orthogonal to $\mathbf{r}$, put $t=\sqrt{1-|\mathbf{r}|^2}$, so that $\mathbf{r}_\pm=\mathbf{r}\pm t\hat{\mathbf{n}}$ are unit vectors. Then
+**Provenance-blindness.** The state carries no record of how it was prepared. The algebra shows this directly: a mixed state has many ensemble decompositions. For a state with Bloch vector $\vec r$, $|\vec r|<1$, and a unit direction $\hat n$ orthogonal to $\vec r$, put $t=\sqrt{1-|\vec r|^2}$, so that $\vec r_\pm=\vec r\pm t\hat n$ are unit vectors. Then
 
 $$
-\tilde{\rho}=\tfrac12\,\tilde\Pi_1(\mathbf{r}_+)+\tfrac12\,\tilde\Pi_1(\mathbf{r}_-)
+\tilde{\rho}=\tfrac12\,\tilde\Pi_1(\vec r_+)+\tfrac12\,\tilde\Pi_1(\vec r_-)
 $$
 
-is an ensemble decomposition with two pure states of the same type, distinct from the spectral decomposition (which uses one $\tilde\Pi_1$ and one $\tilde\Pi_2$). The maximally mixed state is the sharpest case: $\tfrac12 e_0=\tfrac12\tilde\Pi_1(\hat{\mathbf{n}})+\tfrac12\tilde\Pi_2(\hat{\mathbf{n}})$ for *every* unit $\hat{\mathbf{n}}$. The element is the same under all of these preparations, so it cannot be a catalogue of which preparation occurred. *The Measurement Problem in Algebraic Form* states the same fact as the provenance-blindness of the state, and uses it to explain why a proper and an improper mixture are the same element of $\mathbb{M}_+$.
+is an ensemble decomposition with two pure states of the same type, distinct from the spectral decomposition (which uses one $\tilde\Pi_1$ and one $\tilde\Pi_2$). The maximally mixed state is the sharpest case: $\tfrac12 e_0=\tfrac12\tilde\Pi_1(\hat n)+\tfrac12\tilde\Pi_2(\hat n)$ for *every* unit $\hat n$. The element is the same under all of these preparations, so it cannot be a catalogue of which preparation occurred. *The Measurement Problem in Algebraic Form* states the same fact as the provenance-blindness of the state, and uses it to explain why a proper and an improper mixture are the same element of $\mathbb{M}_+$.
 
 **No outcome index.** The state determines the Born probabilities
 
 $$
-p_\pm=\mathrm{Tr}\!\left(\tilde\Pi_{1,2}(\hat{\mathbf{h}})\,\tilde{\rho}\right)=\tfrac12\left(1\pm\hat{\mathbf{h}}\cdot\mathbf{r}\right)
+p_\pm=\mathrm{Tr}\!\left(\tilde\Pi_{1,2}(\hat h)\,\tilde{\rho}\right)=\tfrac12\left(1\pm\hat h\cdot\vec r\right)
 $$
 
-of a measurement along $\hat{\mathbf{h}}$, and nothing about which outcome occurs. No element of $\mathbb{M}_+$ and no operation of the algebra carries the index $\pm$; that is the selection problem in algebraic form, established in the measurement-problem article and not resolved here. In the geometric language of that article the statistics determine the segment — the pointer diameter — and the outcomes are its endpoints; the element is the segment.
+of a measurement along $\hat h$, and nothing about which outcome occurs. No element of $\mathbb{M}_+$ and no operation of the algebra carries the index $\pm$; that is the selection problem in algebraic form, established in the measurement-problem article and not resolved here. In the geometric language of that article the statistics determine the segment — the pointer diameter — and the outcomes are its endpoints; the element is the segment.
 
 **Established, inherited, and not repaired.** Both facts are properties of the element at the single-qubit level. They are stated here because they bound what any ontology of the state can claim: an element that carries neither provenance nor outcome cannot be a complete description of an individual measurement event, whatever else it is. In two clauses: the element is **operationally complete** — it determines every statistic and is determined by them — and **ontically incomplete** — it determines no outcome and records no preparation.
 
 ## The State Is Not a Spacetime Object, and Not a Spinor Ray
 
-The complementarity $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ assigns the state to the informational side. The four-vectors of relativistic physics — position, velocity, momentum, potential, current — lie in $\mathbb{M}_-$, with imaginary scalar part and real vector part; the state has real scalar part and imaginary vector part, so it lies in $\mathbb{M}_+$ and has zero component in $\mathbb{M}_-$. The state is therefore not a configuration in spacetime and not a four-vector; it is an element of the complementary sector. Its relation to the material sector is not that of a configuration but that of an operator: the elements of $\mathbb{M}_+$ act on $\mathbb{M}_-$ by conjugation, and the biquaternion-norm-preserving, unit-norm ones among them are the Lorentz boost rotors. A state is not one of them. Its biquaternion norm is $N(\tilde{\rho})=\tfrac14(1-|\mathbf{r}|^2)\in[0,\tfrac14]$, never $1$, so no state has unit norm; the state is not an action on spacetime either, but a normalized positive element of the operator subspace.
+The complementarity $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ assigns the state to the informational side. The four-vectors of relativistic physics — position, velocity, momentum, potential, current — lie in $\mathbb{M}_-$, with imaginary scalar part and real vector part; the state has real scalar part and imaginary vector part, so it lies in $\mathbb{M}_+$ and has zero component in $\mathbb{M}_-$. The state is therefore not a configuration in spacetime and not a four-vector; it is an element of the complementary sector. Its relation to the material sector is not that of a configuration but that of an operator: the elements of $\mathbb{M}_+$ act on $\mathbb{M}_-$ by conjugation, and the biquaternion-norm-preserving, unit-norm ones among them are the Lorentz boost rotors. A state is not one of them. Its biquaternion norm is $N(\tilde{\rho})=\tfrac14(1-|\vec r|^2)\in[0,\tfrac14]$, never $1$, so no state has unit norm; the state is not an action on spacetime either, but a normalized positive element of the operator subspace.
 
 The state is equally not a spinor ray. In the correspondence of *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, the spinor module of $\mathbb{B}$ corresponds to the Hilbert space $\mathbb{C}^2$ and the pure states correspond to the rank-one density operators. The framework's state is the second object, not the first: the pure state is the idempotent $\tilde\Pi_{1,2}(\hat{\mu})$, and the passage from a module element to a state is the rank-one projection onto it. A central phase $\psi\mapsto e^{i\theta}\psi$ leaves the idempotent unchanged, because $e^{i\theta}$ lies in the centre $\mathbb{C}_{\mathbb{B}}$; the phase of the spinor is therefore not part of the state. So the framework's state is not a vector and not a ray: it is the idempotent built from the ray, with the phase already quotiented out, and for a mixed state there is no spinor to build it from at all.
 
@@ -181,7 +181,7 @@ The point of separating the two is that the algebra cannot make the choice. The 
 The gaps are as much a part of the ontology as the results. Stated at the single-qubit level the framework supports:
 
 1. **The selection of an outcome.** No element and no operation selects an outcome as a function of the state. The statistics are determined; the outcome is not. Sectorial realism does not repair this.
-2. **The preferred basis.** The pointer direction is an input to decoherence, not an output of the algebra. A state with $\mathbf{r}\neq0$ has a canonical spectral decomposition, but its eigenbasis is not selected by any physical interaction, and it is not the pointer basis of a measurement.
+2. **The preferred basis.** The pointer direction is an input to decoherence, not an output of the algebra. A state with $\vec r\neq0$ has a canonical spectral decomposition, but its eigenbasis is not selected by any physical interaction, and it is not the pointer basis of a measurement.
 3. **The provenance of ensembles and the proper/improper distinction.** The element does not distinguish a proper from an improper mixture; whether that distinction has physical content is not decided by the algebra, and the record that would carry it is not in $\tilde{\rho}$.
 4. **Many-qubit ontology.** The state of $n$ qubits is a positive trace-one element of $\mathbb{M}_+^{\otimes n}$; the tensor product, the partial trace, and the reduced states are inherited rather than derived, and the ontology of a reduced state — its relation to the joint element — is treated in *Entangled Subsystems in the Biquaternion Framework* and is not developed here.
 5. **Field-theoretic and relativistic states.** The state described is a single-qubit state. The Lorentz action is on $\mathbb{M}_-$; the state lives in $\mathbb{M}_+$ and is not a Lorentz-covariant object in the same sense. A relativistic, many-particle state is not developed here.
@@ -192,10 +192,10 @@ The gaps are as much a part of the ontology as the results. Stated at the single
 The quantum state in the biquaternion framework is a **positive trace-one element of the Hermitian subspace $\mathbb{M}_+$**,
 
 $$
-\tilde{\rho}=\tfrac12\left(e_0+i\mathbf{r}\right),\qquad |\mathbf{r}|\leq1 ,
+\tilde{\rho}=\tfrac12\left(e_0+i\vec r\right),\qquad |\vec r|\leq1 ,
 $$
 
-equivalently a point of the Bloch ball, equivalently a trace-one element of the future light cone of the biquaternion norm. Its purity is idempotence, $|\mathbf{r}|=1$, equivalently vanishing of the biquaternion norm and zero-divisorhood at trace one; its mixedness is the single scalar $\tilde{\rho}^2-\tilde{\rho}=\tfrac14(|\mathbf{r}|^2-1)e_0$. States and observables are elements of the same four-dimensional real space, distinguished only by positivity and trace normalization; the trace pairing $\mathrm{Tr}(\tilde{\rho}\tilde{H})=h_0+\mathbf{r}\cdot\mathbf{h}$ makes the state a positive normalized functional on that space, and its positive definiteness makes the space its own dual. The states form a convex body whose extreme points are the pure states, so superposition is a property of the spinor module, not of the state space.
+equivalently a point of the Bloch ball, equivalently a trace-one element of the future light cone of the biquaternion norm. Its purity is idempotence, $|\vec r|=1$, equivalently vanishing of the biquaternion norm and zero-divisorhood at trace one; its mixedness is the single scalar $\tilde{\rho}^2-\tilde{\rho}=\tfrac14(|\vec r|^2-1)e_0$. States and observables are elements of the same four-dimensional real space, distinguished only by positivity and trace normalization; the trace pairing $\mathrm{Tr}(\tilde{\rho}\tilde{H})=h_0+\vec r\cdot\vec h$ makes the state a positive normalized functional on that space, and its positive definiteness makes the space its own dual. The states form a convex body whose extreme points are the pure states, so superposition is a property of the spinor module, not of the state space.
 
 Two negative facts bound the ontology. The element is **provenance-blind** — it has many ensemble decompositions, and the maximally mixed state has one for every basis — and it carries **no outcome index**, the probabilities $p_\pm$ being determined while the realised outcome is not. The state is not a spacetime object, lying in the sector complementary to the four-vectors; and it is not a spinor ray, being the idempotent built from the ray with the central phase already quotiented out.
 
@@ -211,16 +211,16 @@ The article's interpretive claim is that the algebra settles the identity, the s
 | $\mathbb{M}_+$ | Hermitian subspace (informational sector): real scalar, imaginary vector |
 | $\mathbb{M}_-$ | Anti-Hermitian subspace (material sector): imaginary scalar, real vector |
 | $\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; complex scalar centre |
-| $\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$ | State, $|\mathbf{r}|\leq1$ (Bloch ball) |
+| $\tilde{\rho} = \tfrac12(e_0 + i\vec r)$ | State, $|\vec r|\leq1$ (Bloch ball) |
 | $\tilde\Pi_{1,2}(\hat{\mu}) = \tfrac12(e_0 \pm i\hat{\mu})$ | Pure state (idempotent, rank-one projector, zero divisor) |
-| $\tilde{H} = h_0e_0 + i\mathbf{h}$ | Observable (general Hermitian element) |
+| $\tilde{H} = h_0e_0 + i\vec h$ | Observable (general Hermitian element) |
 | $N(\tilde{H}) = \tilde{H}\tilde{H}^{\natural}$ | Biquaternion norm, signature $(1,3)$ on $\mathbb{M}_+$ |
-| $N(\tilde{\rho}) = \tfrac14(1-|\mathbf{r}|^2)e_0$ | Biquaternion norm of a state; positivity $\Leftrightarrow N\geq0$ |
-| $\tilde{\rho}^2 - \tilde{\rho} = \tfrac14(|\mathbf{r}|^2-1)e_0$ | Deviation from idempotency (mixedness) |
+| $N(\tilde{\rho}) = \tfrac14(1-|\vec r|^2)e_0$ | Biquaternion norm of a state; positivity $\Leftrightarrow N\geq0$ |
+| $\tilde{\rho}^2 - \tilde{\rho} = \tfrac14(|\vec r|^2-1)e_0$ | Deviation from idempotency (mixedness) |
 | $\mathrm{Tr}(\tilde{H}) = 2\,\mathrm{Sc}(\tilde{H})$ | Trace |
-| $\mathrm{Tr}(\tilde{\rho}\tilde{H}) = h_0 + \mathbf{r}\cdot\mathbf{h}$ | Trace pairing (Born rule); positive definite |
-| $\lambda_\pm = \tfrac12(1\pm|\mathbf{r}|)$ | Eigenvalues of $\tilde{\rho}$ |
-| $\hat{\mu}, \hat{\mathbf{n}}, \hat{\mathbf{h}}, \hat{\mathbf{r}}$ | Unit pure real quaternions (directions) |
+| $\mathrm{Tr}(\tilde{\rho}\tilde{H}) = h_0 + \vec r\cdot\vec h$ | Trace pairing (Born rule); positive definite |
+| $\lambda_\pm = \tfrac12(1\pm|\vec r|)$ | Eigenvalues of $\tilde{\rho}$ |
+| $\hat{\mu}, \hat n, \hat h, \hat r$ | Unit pure real quaternions (directions) |
 | ${}^{*} = ({}^{\natural})^{\,*}$ | Hermitian conjugation |
 
 ## Further Reading

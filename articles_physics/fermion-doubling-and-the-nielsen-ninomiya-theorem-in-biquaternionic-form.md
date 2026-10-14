@@ -51,7 +51,7 @@ where the sixteen vectors $\pi_A$ have entries $0$ or $\pi$. There is the expect
 The doubling also shows in the dispersion relation: inverting the Wick rotation at the pole gives
 
 $$
-\sinh\omega(\mathbf p) = \sqrt{m^2 + \sum_{j=1}^3\sin^2 p_j},
+\sinh\omega(\vec p) = \sqrt{m^2 + \sum_{j=1}^3\sin^2 p_j},
 $$
 
 whose zeros are the local minima about which the species live — eight from the three spatial directions, and the remaining eight from the Euclidean temporal direction, which is recovered not by a naive $p_4 = \pm i\omega$ but by the full contour integration. The free continuum massless propagator is proportional to $\gamma_\mu p^\mu$, an **odd** function of $p$; a propagator that is local, continuous and periodic must therefore cross zero again, which is the corner pole. Scalar bosons escape because their symbol is even about the origin.
@@ -159,7 +159,7 @@ The biquaternion framework does not evade the obstruction. The doubling argument
 | $\pi_A$ | The sixteen sign patterns with entries $0$ or $\pi$ |
 | $S_\nu = i\gamma_5\gamma_\nu$ | Taste-exchange generators, $S_A$ the corresponding products |
 | $S(p)$ | Naive lattice propagator |
-| $\omega(\mathbf p)$ | Lattice dispersion relation |
+| $\omega(\vec p)$ | Lattice dispersion relation |
 | $F(x,y)$, $F_\mu(k)$ | Lattice kernel and its Fourier transform (vector field on the zone) |
 | $\tilde\nabla$ | Biquaternionic gradient |
 | $\mathbb{M}_\pm$ | Framework sectors |

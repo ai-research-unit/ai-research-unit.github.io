@@ -112,13 +112,13 @@ Since the centre is central and the four subspaces are the fixed spaces of invol
 | $\mathbb{M}_-, \mathbb{M}_-$ | $\mathbb{R} \oplus \mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$ | $\mathbb{M}_+$ | $\mathbb{M}_-$ |
 | $\mathbb{M}_+, \mathbb{M}_-$ | $j\mathbb{R} \oplus \mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$ | $\mathbb{M}_-$ | $\mathrm{span}\{je_1,je_2,je_3\}$ |
 
-The entries are read off the expansions of the product. For $\tilde{Q} = q_0 e_0 + j\mathbf{u}$ and $\tilde{R} = r_0 e_0 + j\mathbf{v}$ in $\mathbb{M}_+$,
+The entries are read off the expansions of the product. For $\tilde{Q} = q_0 e_0 + j\vec u$ and $\tilde{R} = r_0 e_0 + j\vec v$ in $\mathbb{M}_+$,
 
 $$
-\tilde{Q}\tilde{R} = q_0 r_0 - \mathbf{u}\cdot\mathbf{v} + \mathbf{u}\times\mathbf{v} + j(q_0\mathbf{v}+r_0\mathbf{u}),
+\tilde{Q}\tilde{R} = q_0 r_0 - \vec u\cdot\vec v + \vec u\times\vec v + j(q_0\vec v+r_0\vec u),
 $$
 
-which has real scalar part, real vector part $\mathbf{u}\times\mathbf{v}$ and split-imaginary vector part $j(q_0\mathbf{v}+r_0\mathbf{u})$, hence lies in $\mathbb{R}\oplus\mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$; the commutator keeps only $2\,\mathbf{u}\times\mathbf{v}$, a real vector, so it lies in $\mathbb{M}_-$, and the symmetrized product drops $\mathbf{u}\times\mathbf{v}$, leaving a real scalar and a split-imaginary vector, which is $\mathbb{M}_+$. The other rows follow from the analogous expansion for $\mathbb{M}_-$ and from the mixed expansion. In words: the symmetrized products respect the sectors (Hermitian stays Hermitian, anti-Hermitian goes to Hermitian, mixed goes to anti-Hermitian), while the commutators leave the sector in the Hermitian direction and give $\mathrm{SO}(3)$ for the pure units. The centre multiplies into every subspace without change, and the quaternion subspace acts on the algebra by multiplication.
+which has real scalar part, real vector part $\vec u\times\vec v$ and split-imaginary vector part $j(q_0\vec v+r_0\vec u)$, hence lies in $\mathbb{R}\oplus\mathrm{Vect}(\mathbb{H}_{\mathbb{D}})$; the commutator keeps only $2\,\vec u\times\vec v$, a real vector, so it lies in $\mathbb{M}_-$, and the symmetrized product drops $\vec u\times\vec v$, leaving a real scalar and a split-imaginary vector, which is $\mathbb{M}_+$. The other rows follow from the analogous expansion for $\mathbb{M}_-$ and from the mixed expansion. In words: the symmetrized products respect the sectors (Hermitian stays Hermitian, anti-Hermitian goes to Hermitian, mixed goes to anti-Hermitian), while the commutators leave the sector in the Hermitian direction and give $\mathrm{SO}(3)$ for the pure units. The centre multiplies into every subspace without change, and the quaternion subspace acts on the algebra by multiplication.
 
 ### The Reduction from Remarkable Subspaces to Four
 

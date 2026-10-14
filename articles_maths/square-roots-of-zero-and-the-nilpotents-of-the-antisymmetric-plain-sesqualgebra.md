@@ -6,7 +6,7 @@ A root of a central value is defined by an equation in which the product occurs,
 
 $$
 \tilde P\diamond\tilde Q=\operatorname{Vect}\bigl(\tilde P\tilde Q^{*}\bigr)
-=-P_0\overline{\mathbf{Q}}+\overline{Q_0}\mathbf{P}-\mathbf{P}\times\overline{\mathbf{Q}},
+=-P_0\overline{\vec Q}+\overline{Q_0}\vec P-\vec P\times\overline{\vec Q},
 $$
 
 the antisymmetric half of the general plain sesquilinear product, a product conjugate-linear in its second slot and without a unit (*Introduction to the Antisymmetric Plain Sesqualgebra of Biquaternions*).
@@ -66,7 +66,7 @@ and the roots of $0$ are exactly the nonzero elements of this set. The set is th
 The criterion has a real form, and the block shares its real splitting with the general value: write
 
 $$
-\tilde\Xi=\tilde\xi+i\tilde\xi',\qquad \tilde\xi=\xi_0e_0+\boldsymbol{\xi},\quad \tilde\xi'=\xi'_0e_0+\boldsymbol{\xi}',\qquad \xi_0,\xi'_0\in\mathbb{R},\quad \boldsymbol{\xi},\boldsymbol{\xi}'\in\mathbb{R}^{3},
+\tilde\Xi=\tilde\xi+i\tilde\xi',\qquad \tilde\xi=\xi_0e_0+\vec\xi,\quad \tilde\xi'=\xi'_0e_0+\vec\xi',\qquad \xi_0,\xi'_0\in\mathbb{R},\quad \vec\xi,\vec\xi'\in\mathbb{R}^{3},
 $$
 
 the two real quaternions of *Square Roots of a General Element in the Antisymmetric Plain Sesqualgebra*. Then the plain product with the star reads
@@ -75,7 +75,7 @@ $$
 \tilde\Xi\tilde\Xi^{*}=\bigl(\tilde\xi\tilde\xi^{\natural}+\tilde\xi'\tilde\xi'^{\natural}\bigr)+i\bigl(\tilde\xi'\tilde\xi^{\natural}-\tilde\xi\tilde\xi'^{\natural}\bigr),
 $$
 
-whose first term is a real scalar; the vector part of the second is $2\bigl(\xi_0\boldsymbol{\xi}'-\xi'_0\boldsymbol{\xi}+\boldsymbol{\xi}\times\boldsymbol{\xi}'\bigr)$, so the criterion $\operatorname{Vect}(\tilde\Xi\tilde\Xi^{*})=0$ is the real-linear dependence of the two real quaternions,
+whose first term is a real scalar; the vector part of the second is $2\bigl(\xi_0\vec\xi'-\xi'_0\vec\xi+\vec\xi\times\vec\xi'\bigr)$, so the criterion $\operatorname{Vect}(\tilde\Xi\tilde\Xi^{*})=0$ is the real-linear dependence of the two real quaternions,
 
 $$
 \tilde\Xi\tilde\Xi^{*}\ \text{central}\iff \tilde\xi\ \text{and}\ \tilde\xi'\ \text{are real-linearly dependent}.
@@ -85,7 +85,7 @@ The square-zero elements are therefore the elements whose real and imaginary qua
 
 ### The Shape of the Set
 
-**The square-zero set is a complex cone, and it is a proper subset of the space.** If $\tilde\Xi$ is square-zero and $\rho\in\mathbb{C}$ then $\rho\tilde\Xi$ is square-zero, because the diagonal of $\rho\tilde\Xi$ is $\operatorname{Vect}(\rho\tilde\Xi(\rho\tilde\Xi)^{*})=|\rho|^{2}\operatorname{Vect}(\tilde\Xi\tilde\Xi^{*})=|\rho|^{2}\,\tilde\Xi\diamond\tilde\Xi=0$; scaling by a complex number moves a square-zero element along the complex line through it and inside the set, and the set is a union of complex lines through the origin. The centre lies inside it, its elements having vanishing vector part; the real quaternion subspace and the anti-quaternion subspace lie inside it as well; and the element $e_1+ie_2$ is not square-zero, its real parts $\boldsymbol{\xi}=e_1$ and $\boldsymbol{\xi}'=e_2$ being independent, so its diagonal is the nonzero $2ie_3$.
+**The square-zero set is a complex cone, and it is a proper subset of the space.** If $\tilde\Xi$ is square-zero and $\rho\in\mathbb{C}$ then $\rho\tilde\Xi$ is square-zero, because the diagonal of $\rho\tilde\Xi$ is $\operatorname{Vect}(\rho\tilde\Xi(\rho\tilde\Xi)^{*})=|\rho|^{2}\operatorname{Vect}(\tilde\Xi\tilde\Xi^{*})=|\rho|^{2}\,\tilde\Xi\diamond\tilde\Xi=0$; scaling by a complex number moves a square-zero element along the complex line through it and inside the set, and the set is a union of complex lines through the origin. The centre lies inside it, its elements having vanishing vector part; the real quaternion subspace and the anti-quaternion subspace lie inside it as well; and the element $e_1+ie_2$ is not square-zero, its real parts $\vec\xi=e_1$ and $\vec\xi'=e_2$ being independent, so its diagonal is the nonzero $2ie_3$.
 
 The criterion is not automatic, and it selects a proper subset of the space. The element $e_1+ie_2$ has the noncentral plain product $\tilde P\tilde P^{*}=2e_0+2ie_3$ and the nonzero diagonal $2ie_3$, and it is not a root of $0$; the centre, the real quaternion subspace and the anti-quaternion subspace are inside the set, and the elements outside it are the majority. The line of the argument is the subject of *The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra*.
 
@@ -162,7 +162,7 @@ $$
 
 *Proof.* The criterion $\tilde\Upsilon\tilde\Upsilon^{*}\in\mathbb{C}_{\mathbb{B}}$ is carried to its star and to its natural conjugate by the identities $(\tilde\Upsilon\tilde\Upsilon^{*})^{*}=\tilde\Upsilon\tilde\Upsilon^{*}$ and, for a central element, $\lambda^{\natural}=\lambda$; the natural conjugation of a central element is central. So each of the two images satisfies the criterion.
 
-The star therefore pairs the nilpotents two by two through the involution $\tilde\Upsilon\mapsto\tilde\Upsilon^{*}$, and it fixes those with $\tilde\Upsilon^{*}=\tilde\Upsilon$, the **Hermitian nilpotents**. For the block the Hermitian elements are $a e_0+i\mathbf u$ with $a\in\mathbb{R}$ and $\mathbf u\in\mathbb{R}^{3}$, and their diagonal is $2ia\mathbf u$, so the Hermitian nilpotents are the real scalars and the purely imaginary vectors,
+The star therefore pairs the nilpotents two by two through the involution $\tilde\Upsilon\mapsto\tilde\Upsilon^{*}$, and it fixes those with $\tilde\Upsilon^{*}=\tilde\Upsilon$, the **Hermitian nilpotents**. For the block the Hermitian elements are $a e_0+i\vec u$ with $a\in\mathbb{R}$ and $\vec u\in\mathbb{R}^{3}$, and their diagonal is $2ia\vec u$, so the Hermitian nilpotents are the real scalars and the purely imaginary vectors,
 
 $$
 \mathbb{R}e_0\cup i\mathbb{R}^{3} .
@@ -174,7 +174,7 @@ The natural conjugation stabilises the real quaternion subspace and fixes the ce
 
 **The square-zero set contains the centre, the real quaternion subspace and the anti-quaternion subspace entire, and it meets the Hermitian and anti-Hermitian subspaces in the real scalars and the purely imaginary vectors alone.**
 
-The centre $\mathbb{C}_{\mathbb{B}}$, the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ lie inside the cone, by the criterion, each being a subspace on which the vector part of $\tilde P\tilde P^{*}$ vanishes. It does not contain the Hermitian subspace $\mathbb{M}_+$ or the anti-Hermitian subspace $\mathbb{M}_-$; a Hermitian element is $a e_0+i\mathbf u$ with $a\in\mathbb{R}$ and $\mathbf u\in\mathbb{R}^{3}$, its diagonal is $2ia\mathbf u$, so it is square-zero exactly when $a=0$ or $\mathbf u=0$, and the intersection is the union of the real scalars and the purely imaginary vectors. The witness $e_0+ie_1$, a Hermitian element with both a scalar and a vector part, is not square-zero: its diagonal is the nonzero $2ie_1$. The reading of the classes on the remarkable subspaces, with the dimension of each intersection, is *Remarkable Subspaces under the Antisymmetric Plain Sesqualgebra of Biquaternions*.
+The centre $\mathbb{C}_{\mathbb{B}}$, the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ and the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ lie inside the cone, by the criterion, each being a subspace on which the vector part of $\tilde P\tilde P^{*}$ vanishes. It does not contain the Hermitian subspace $\mathbb{M}_+$ or the anti-Hermitian subspace $\mathbb{M}_-$; a Hermitian element is $a e_0+i\vec u$ with $a\in\mathbb{R}$ and $\vec u\in\mathbb{R}^{3}$, its diagonal is $2ia\vec u$, so it is square-zero exactly when $a=0$ or $\vec u=0$, and the intersection is the union of the real scalars and the purely imaginary vectors. The witness $e_0+ie_1$, a Hermitian element with both a scalar and a vector part, is not square-zero: its diagonal is the nonzero $2ie_1$. The reading of the classes on the remarkable subspaces, with the dimension of each intersection, is *Remarkable Subspaces under the Antisymmetric Plain Sesqualgebra of Biquaternions*.
 
 ### The Comparison with the Parent and the Siblings
 
@@ -183,25 +183,25 @@ The centre $\mathbb{C}_{\mathbb{B}}$, the real quaternion subspace $\mathbb{H}_{
 **Remark (the parent plain product).** The general plain bilinear product $\tilde P\tilde Q$ is associative and unital, and its nilpotents are the pure elements with isotropic vector part,
 
 $$
-\tilde\Upsilon^{2}=0\iff P_0=0\ \text{and}\ (\mathbf P,\mathbf P)=0
+\tilde\Upsilon^{2}=0\iff P_0=0\ \text{and}\ (\vec P,\vec P)=0
 $$
 
 (*Nilpotents of the General Plain Algebra*). The parent's class is a proper cone of complex dimension two and the implication *nilpotent implies zero divisor* holds there with the pure isotropic cone as the set. The block's class is the whole square-zero cone, which strictly contains it: the element $e_0$ is a nilpotent of the block, $e_0\diamond e_0=0$, and it is not a nilpotent of the parent, $e_0^{2}=e_0\neq0$. The enlargement is the projection: the parent's criterion is a condition on the square, and the block discards the scalar part of the square, so more elements satisfy it.
 
-**Remark (the three antisymmetrisations).** The root of $0$ separates the three antisymmetric structures. The bilinear sibling $\mathrm{APA}=\mathbf\Xi\times\mathbf{Q}$ and the quaternionic bilinear sibling $\mathrm{AQA}$ are alternating, so their diagonal vanishes identically and their root-of-$0$ set is the whole space with the origin removed, of real dimension eight. The quaternionic sesquilinear sibling $\mathrm{AQS}=\mathbf\Xi\times\overline{\mathbf{Q}}$ has the diagonal $\mathbf\Xi\times\overline{\mathbf{\Xi}}$, which vanishes exactly when the two real parts of $\mathbf\Xi$ are linearly dependent and leaves the scalar part free, so its root-of-$0$ set is the union of the complex planes $\mathbb{C}e_0\oplus\mathbb{C}\mathbf v$ over the real directions $\mathbf v$, of real dimension six. The block's set is the smaller one, the real five-dimensional cone on the real unit sphere, because the block's projection constrains the scalar part as well.
+**Remark (the three antisymmetrisations).** The root of $0$ separates the three antisymmetric structures. The bilinear sibling $\mathrm{APA}=\vec\Xi\times\vec Q$ and the quaternionic bilinear sibling $\mathrm{AQA}$ are alternating, so their diagonal vanishes identically and their root-of-$0$ set is the whole space with the origin removed, of real dimension eight. The quaternionic sesquilinear sibling $\mathrm{AQS}=\vec\Xi\times\overline{\vec Q}$ has the diagonal $\vec\Xi\times\overline{\vec\Xi}$, which vanishes exactly when the two real parts of $\vec\Xi$ are linearly dependent and leaves the scalar part free, so its root-of-$0$ set is the union of the complex planes $\mathbb{C}e_0\oplus\mathbb{C}\vec v$ over the real directions $\vec v$, of real dimension six. The block's set is the smaller one, the real five-dimensional cone on the real unit sphere, because the block's projection constrains the scalar part as well.
 
 | block | $\tilde\Xi\star\tilde\Xi$ | roots of $0$ |
 |---|---|---|
 | $\mathrm{APA}$ | $0$ identically | all nonzero elements, real dimension eight |
 | $\mathrm{AQA}$ | $0$ identically | all nonzero elements, real dimension eight |
-| $\mathrm{AQS}$ | $\mathbf\Xi\times\overline{\mathbf{\Xi}}$ | dependent real parts, real dimension six |
+| $\mathrm{AQS}$ | $\vec\Xi\times\overline{\vec\Xi}$ | dependent real parts, real dimension six |
 | $\mathrm{APS}$ | $\operatorname{Vect}(\tilde\Xi\tilde\Xi^{*})$ | the cone on the real unit sphere, real dimension five |
 
 The root of $0$ of the four general products, where the equations are not contradictory, is *Square Roots of Minus One, Zero and Plus One in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the square-zero sets of the twelve structures are *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 ## Summary
 
-The roots of $0$ of the block are exactly the nonzero elements with $\tilde\Xi\tilde\Xi^{*}$ central, that is the nonzero square-zero elements; they form the complex cone on the real unit sphere of the quaternion subspace, of real dimension five, and the centre, the real quaternion subspace and the anti-quaternion subspace lie inside it. In the real splitting $\tilde\Xi=\tilde\xi+i\tilde\xi'$ the criterion is the real-linear dependence of the two real quaternions, that is the three real conditions $\xi_0\boldsymbol{\xi}'-\xi'_0\boldsymbol{\xi}+\boldsymbol{\xi}\times\boldsymbol{\xi}'=0$, and the set is a complex cone.
+The roots of $0$ of the block are exactly the nonzero elements with $\tilde\Xi\tilde\Xi^{*}$ central, that is the nonzero square-zero elements; they form the complex cone on the real unit sphere of the quaternion subspace, of real dimension five, and the centre, the real quaternion subspace and the anti-quaternion subspace lie inside it. In the real splitting $\tilde\Xi=\tilde\xi+i\tilde\xi'$ the criterion is the real-linear dependence of the two real quaternions, that is the three real conditions $\xi_0\vec\xi'-\xi'_0\vec\xi+\vec\xi\times\vec\xi'=0$, and the set is a complex cone.
 
 The **index is two**: the left-nested cube vanishes only when the square does, by the $2\times2$ model in which the block is the traceless part of $MM^{\dagger}$ and the cube is the traceless part of $NM^{\dagger}$ with $N$ the traceless part of $A=MM^{\dagger}$; the singularity of $M$ and, in the invertible case, the comparison of the two eigenvalues of the Hermitian matrix $H$ both force $N=0$. The nilpotents are therefore exactly the square-zero elements, and no element has index greater than two.
 
@@ -215,7 +215,7 @@ Every nilpotent is a two-sided zero divisor, here trivially, since a square-zero
 | $\tilde\Upsilon$ | a nilpotent of the block |
 | $\tilde P\diamond\tilde P=0$ | the square-zero condition, equivalent to $\tilde P\tilde P^{*}\in\mathbb{C}_{\mathbb{B}}$ |
 | $\rho\tilde u$, $\rho\in\mathbb{C}^{*}$, $\tilde u$ a real unit quaternion | the parametrisation of the nonzero square-zero elements |
-| $\xi_0\boldsymbol{\xi}'-\xi'_0\boldsymbol{\xi}+\boldsymbol{\xi}\times\boldsymbol{\xi}'=0$ | the criterion in the real splitting $\tilde\Xi=\tilde\xi+i\tilde\xi'$ |
+| $\xi_0\vec\xi'-\xi'_0\vec\xi+\vec\xi\times\vec\xi'=0$ | the criterion in the real splitting $\tilde\Xi=\tilde\xi+i\tilde\xi'$ |
 | index two | the statement that a vanishing cube forces a vanishing square |
 | $A=MM^{\dagger}$, $N=A-\tfrac12\operatorname{Tr}(A)I$ | the Hermitian square and its traceless part in the $2\times2$ model |
 | $\mathbb{R}e_0\cup i\mathbb{R}^{3}$ | the Hermitian nilpotents, the real scalars and the purely imaginary vectors |

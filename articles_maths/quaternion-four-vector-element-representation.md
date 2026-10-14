@@ -9,7 +9,7 @@ The article is coordinate bookkeeping on the algebra fixed in *Quaternion Algebr
 
 The corpus's default base is a commutative ring with identity, and the coordinate description holds over such a base; the positivity and the Euclidean interpretation of the quaternion norm are statements over $\mathbb{R}$, and they are flagged where they occur.
 
-Throughout, a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, with $q_\mu\in F$, $\mathrm{Sc}(\tilde q) = q_0$ and $\mathbf{q} = q_1e_1+q_2e_2+q_3e_3$; the conjugate is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and the quaternion norm is $N(\tilde q) = \tilde q\tilde{q}^{\natural}$. The coordinate map is the $F$-linear isomorphism $\varphi : \mathbb{H}\to F^4$.
+Throughout, a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, with $q_\mu\in F$, $\mathrm{Sc}(\tilde q) = q_0$ and $\vec q = q_1e_1+q_2e_2+q_3e_3$; the conjugate is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ and the quaternion norm is $N(\tilde q) = \tilde q\tilde{q}^{\natural}$. The coordinate map is the $F$-linear isomorphism $\varphi : \mathbb{H}\to F^4$.
 
 ## The Coordinate Vector
 
@@ -41,11 +41,11 @@ and it is the coordinate expression of the inner product of *Quaternion Norm and
 
 ## Multiplication in Components
 
-**Theorem.** The product of $p = p_0+\mathbf{p}$ and $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, in components, is given by the scalar and vector parts
+**Theorem.** The product of $p = p_0+\vec p$ and $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, in components, is given by the scalar and vector parts
 
 $$
-\mathrm{Sc}(p\tilde q) = p_0q_0 - \langle\mathbf{p},\mathbf{q}\rangle, \qquad
-\mathrm{Vect}(p\tilde q) = p_0\mathbf{q} + q_0\mathbf{p} + \mathbf{p}\times\mathbf{q},
+\mathrm{Sc}(p\tilde q) = p_0q_0 - \langle\vec p,\vec q\rangle, \qquad
+\mathrm{Vect}(p\tilde q) = p_0\vec q + q_0\vec p + \vec p\times\vec q,
 $$
 
 that is, in coordinates,
@@ -59,11 +59,11 @@ $$
 \end{aligned}
 $$
 
-*Proof.* Expanding $(p_0+\mathbf{p})(q_0+\mathbf{q})$ and using $\mathbf{p}\mathbf{q} = -\langle\mathbf{p},\mathbf{q}\rangle+\mathbf{p}\times\mathbf{q}$ gives the scalar and vector parts; the coordinate formulas are the coordinate form of the inner product and the standard cross product, whose components are $(p_2q_3-p_3q_2,\ p_3q_1-p_1q_3,\ p_1q_2-p_2q_1)$.
+*Proof.* Expanding $(p_0+\vec p)(q_0+\vec q)$ and using $\vec p\vec q = -\langle\vec p,\vec q\rangle+\vec p\times\vec q$ gives the scalar and vector parts; the coordinate formulas are the coordinate form of the inner product and the standard cross product, whose components are $(p_2q_3-p_3q_2,\ p_3q_1-p_1q_3,\ p_1q_2-p_2q_1)$.
 
-**Proposition.** The scalar part of the product is symmetric and the vector part is neither symmetric nor antisymmetric as a whole: the symmetric part of the vector component is $p_0\mathbf{q}+q_0\mathbf{p}$ and the antisymmetric part is the cross product $\mathbf{p}\times\mathbf{q}$.
+**Proposition.** The scalar part of the product is symmetric and the vector part is neither symmetric nor antisymmetric as a whole: the symmetric part of the vector component is $p_0\vec q+q_0\vec p$ and the antisymmetric part is the cross product $\vec p\times\vec q$.
 
-*Proof.* The scalar formula is symmetric in $p$ and $\tilde q$; in the vector formula the terms $p_0\mathbf{q}+q_0\mathbf{p}$ exchange under the swap while the cross product changes sign.
+*Proof.* The scalar formula is symmetric in $p$ and $\tilde q$; in the vector formula the terms $p_0\vec q+q_0\vec p$ exchange under the swap while the cross product changes sign.
 
 **Remark.** The four coordinate functions of the product are the components of the matrix product $L_p[\tilde q]$ with the left regular matrix $L_p$ of *Quaternion 4x4 Matrix Element Representation $M_4(\mathbb{R})_L$*, so the coordinate multiplication rule and the left regular representation carry the same information in different notation.
 
@@ -94,7 +94,7 @@ $$
 
 is the orthogonal decomposition, in the algebra and in coordinates, into the two summands.
 
-*Proof.* The conditions are the coordinate forms of $\mathbf{q} = 0$ and $q_0 = 0$; orthogonality of the two coordinate images is $q_0\cdot 0+0\cdot(q_1+q_2+q_3) = 0$ for the standard inner product.
+*Proof.* The conditions are the coordinate forms of $\vec q = 0$ and $q_0 = 0$; orthogonality of the two coordinate images is $q_0\cdot 0+0\cdot(q_1+q_2+q_3) = 0$ for the standard inner product.
 
 **Proposition.** On the vector coordinates the product law reduces to the scalar and vector products of three-dimensional vector analysis: the scalar coordinate of the product of two vectors is minus the inner product, and the three vector coordinates are the components of the cross product.
 
@@ -110,7 +110,7 @@ $$
 
 and the associated bilinear form is the standard Euclidean inner product $\mathrm{Sc}(p\tilde{q}^{\natural}) = [p]^{T}[\tilde q]$.
 
-*Proof.* $\tilde q\tilde{q}^{\natural} = (q_0+\mathbf{q})(q_0-\mathbf{q}) = q_0^2-\mathbf{q}^2 = q_0^2+N(\mathbf{q}) = \sum_\mu q_\mu^2$, and $[\tilde q]^T[\tilde q]$ is that sum. The bilinear form is the polarisation, which is $\mathrm{Sc}(p\tilde{q}^{\natural})$.
+*Proof.* $\tilde q\tilde{q}^{\natural} = (q_0+\vec q)(q_0-\vec q) = q_0^2-\vec q^2 = q_0^2+N(\vec q) = \sum_\mu q_\mu^2$, and $[\tilde q]^T[\tilde q]$ is that sum. The bilinear form is the polarisation, which is $\mathrm{Sc}(p\tilde{q}^{\natural})$.
 
 **Corollary.** Over $F = \mathbb{R}$ the quaternion norm is positive definite, the coordinate map is an isometry $\mathbb{H}\to\mathbb{R}^4$, and the modulus is the Euclidean length $|\tilde q| = \sqrt{q_0^2+q_1^2+q_2^2+q_3^2}$. In particular the four signs of the quaternion norm are all positive.
 
@@ -118,7 +118,7 @@ and the associated bilinear form is the standard Euclidean inner product $\mathr
 
 ## Summary
 
-The four-vector representation identifies a quaternion with the quadruple of its coordinates in the basis $(e_0,e_1,e_2,e_3)$; the column vector $[\tilde q]$ and the dual row $[\tilde q]^T$ carry the algebra, the row acting on the column by the Euclidean inner product $\mathrm{Sc}(\tilde q\bar p)$. The product is computed in components by $(p\tilde q)_0 = p_0q_0-\langle\mathbf{p},\mathbf{q}\rangle$ and $(p\tilde q)_k$ the three components of $p_0\mathbf{q}+q_0\mathbf{p}+\mathbf{p}\times\mathbf{q}$, so that the coordinate rule is the three-dimensional scalar and vector product extended by the scalar coordinates.
+The four-vector representation identifies a quaternion with the quadruple of its coordinates in the basis $(e_0,e_1,e_2,e_3)$; the column vector $[\tilde q]$ and the dual row $[\tilde q]^T$ carry the algebra, the row acting on the column by the Euclidean inner product $\mathrm{Sc}(\tilde q\bar p)$. The product is computed in components by $(p\tilde q)_0 = p_0q_0-\langle\vec p,\vec q\rangle$ and $(p\tilde q)_k$ the three components of $p_0\vec q+q_0\vec p+\vec p\times\vec q$, so that the coordinate rule is the three-dimensional scalar and vector product extended by the scalar coordinates.
 
 The three involutions are the diagonal sign matrices $\operatorname{diag}(1,-1,-1,-1)$, $\operatorname{diag}(-1,1,1,1)$ and $-I$, whose fixed coordinate sets are the first axis, the hyperplane $q_0 = 0$ and the origin. The scalar and vector subspaces are the first axis and that hyperplane, an orthogonal decomposition of the coordinate space, and the quaternion norm is the sum of the four positive squares $[\tilde q]^T[\tilde q]$.
 
@@ -140,7 +140,7 @@ The quaternion case is the real case, and its four positive signs are the whole 
 | $\operatorname{diag}(-1,1,1,1)$ | Matrix of vector conjugation |
 | $\mathbb{R}_{\mathbb{H}}, \operatorname{Im}\mathbb{H}$ | Scalar axis and vector hyperplane in coordinates |
 | $N(\tilde q) = \sum_{\mu=0}^{3}q_\mu^2 = [\tilde q]^{T}[\tilde q]$ | Quaternion norm, four positive signs |
-| $\mathbf{p}\times\mathbf{q}$ | Cross product in the vector coordinates |
+| $\vec p\times\vec q$ | Cross product in the vector coordinates |
 
 ## Further Reading
 

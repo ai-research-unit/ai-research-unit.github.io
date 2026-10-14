@@ -27,7 +27,7 @@ $$
 \langle \xi, \tilde q \rangle = \operatorname{Re}(\xi^{\natural} \tilde q) = \xi_0 q_0 + \xi_1 q_1 + \xi_2 q_2 + \xi_3 q_3.
 $$
 
-Note the sign: the quaternion conjugation $\xi^{\natural} = \xi_0 - \boldsymbol{\xi}$ gives $\xi^{\natural} \tilde q = (\xi_0 - \boldsymbol{\xi})(q_0 + \mathbf{q})$, whose real part is $\xi_0 q_0 + \boldsymbol{\xi} \cdot \mathbf{q}$. So the pairing is the ordinary Euclidean pairing on $\mathbb{R}^4$.
+Note the sign: the quaternion conjugation $\xi^{\natural} = \xi_0 - \vec\xi$ gives $\xi^{\natural} \tilde q = (\xi_0 - \vec\xi)(q_0 + \vec q)$, whose real part is $\xi_0 q_0 + \vec\xi \cdot \vec q$. So the pairing is the ordinary Euclidean pairing on $\mathbb{R}^4$.
 
 So at the level of the additive group, quaternion harmonic analysis is the same as Fourier analysis on $\mathbb{R}^4$. The non-commutative structure of $\mathbb{H}$ enters only when the algebra structure is used, as in the quaternion Fourier transform and the convolution theorem.
 

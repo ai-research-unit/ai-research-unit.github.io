@@ -14,9 +14,9 @@ $$
 $$
 is the eigenspace decomposition of ${}^{\natural}$. The two projections are
 $$
-\tilde q\longmapsto \mathrm{Sc}(\tilde q)=\tfrac12(\tilde q+\tilde q^{\natural}) , \qquad \tilde q\longmapsto \mathbf q=\tfrac12(\tilde q-\tilde q^{\natural}) ,
+\tilde q\longmapsto \mathrm{Sc}(\tilde q)=\tfrac12(\tilde q+\tilde q^{\natural}) , \qquad \tilde q\longmapsto \vec q=\tfrac12(\tilde q-\tilde q^{\natural}) ,
 $$
-they are idempotent, $\mathrm{Sc}+\mathrm{vec}=\operatorname{id}$, and they cut every element uniquely as $\tilde q=\mathrm{Sc}(\tilde q)+\mathbf q$. The decomposition is characteristic: the two summands are the fixed space of ${}^{\natural}$ and its anti-fixed space, and they are and remain distinguished by the algebra, the scalar line being its centre. The word **scalar** names the coordinates on $\mathbb{R}_{\mathbb{H}}$ and the word **pure** the elements of $\mathrm{Vect}(\mathbb{H})$.
+they are idempotent, $\mathrm{Sc}+\mathrm{vec}=\operatorname{id}$, and they cut every element uniquely as $\tilde q=\mathrm{Sc}(\tilde q)+\vec q$. The decomposition is characteristic: the two summands are the fixed space of ${}^{\natural}$ and its anti-fixed space, and they are and remain distinguished by the algebra, the scalar line being its centre. The word **scalar** names the coordinates on $\mathbb{R}_{\mathbb{H}}$ and the word **pure** the elements of $\mathrm{Vect}(\mathbb{H})$.
 
 ## The Axis Decomposition
 
@@ -24,7 +24,7 @@ Let $\nu$ be a unit imaginary quaternion and let $\iota_\nu(\tilde q)=\nu \tilde
 $$
 \mathbb{C}_\nu=\mathbb{R}e_0\oplus\mathbb{R}\nu=\{a+b\nu:a,b\in\mathbb{R}\},
 $$
-a commutative two-dimensional subalgebra, and its anti-fixed space is the orthogonal complement $\nu^\perp=\{\mathbf q\in\mathrm{Vect}(\mathbb{H}):\nu\cdot\mathbf q=0\}$, a plane. The eigenspace decomposition is therefore
+a commutative two-dimensional subalgebra, and its anti-fixed space is the orthogonal complement $\nu^\perp=\{\vec q\in\mathrm{Vect}(\mathbb{H}):\nu\cdot\vec q=0\}$, a plane. The eigenspace decomposition is therefore
 $$
 \mathbb{H}=\mathbb{C}_\nu\oplus\nu^\perp , \qquad 2+2=4 ,
 $$
@@ -36,7 +36,7 @@ $$
 $$
 the component of a pure element along the axis and its part orthogonal to the axis;
 $$
-\mathbf q=(\nu\cdot\mathbf q)\,\nu+\bigl(\mathbf q-(\nu\cdot\mathbf q)\nu\bigr) .
+\vec q=(\nu\cdot\vec q)\,\nu+\bigl(\vec q-(\nu\cdot\vec q)\nu\bigr) .
 $$
 Combining with the scalar–vector decomposition gives the three-term splitting $\mathbb{H}=\mathbb{R}_{\mathbb{H}}\oplus\mathbb{R}\nu\oplus\nu^\perp$ of dimensions $1+1+2$. The decomposition depends on the axis $\mathbb{R}\nu$, not on the unit chosen to name it, since $\nu$ and $-\nu$ give the same axis and the same $\mathbb{C}_\nu$. Of the two summands $\mathbb{C}_\nu$ is a commutative subalgebra and $\nu^\perp$ is only a subspace, not closed under the product: $\nu^\perp\subseteq\mathrm{Vect}(\mathbb{H})$ and the square of a nonzero element of $\nu^\perp$ is a nonzero scalar.
 
@@ -48,7 +48,7 @@ $$
 $$
 of *The Group of Involutions of the Quaternions*. It is an involutive anti-automorphism: $\alpha_\nu^2=\operatorname{id}$ on the elements and $\alpha_\nu(\tilde p\tilde q)=\alpha_\nu(\tilde q)\alpha_\nu(\tilde p)$ on the product, and it fixes every element of the plane
 $$
-\mathbb{R}_{\mathbb{H}}\oplus\nu^\perp=\{a+\mathbf q:a\in\mathbb{R},\ \mathbf q\in\nu^\perp\} ,
+\mathbb{R}_{\mathbb{H}}\oplus\nu^\perp=\{a+\vec q:a\in\mathbb{R},\ \vec q\in\nu^\perp\} ,
 $$
 scalar part plus the plane orthogonal to the axis, while reversing the axis line $\mathbb{R}\nu$ alone. Its eigenspace decomposition is therefore
 $$
@@ -70,7 +70,7 @@ $$
 $$
 The element $u$ is a **unit quaternion** (a **rotor**), and $\tilde q=|\tilde q|u$ is the **polar decomposition** of $\tilde q$. The decomposition is unique: the modulus is the non-negative root of the norm and the rotor is then forced. It multiplies two factors of different nature — a positive scalar and an element of the unit sphere — and it is not additive. The polar element, its argument and its axis are *Quaternion Polar Element Representation*, below this article in this category; the unit sphere $N=1$ is the group of rotors, whose topology is *The Quaternion Unit Group as a Topological Group*, below this article in this category.
 
-On the two remarkable subspaces the polar decomposition specialises. A nonzero scalar is already positive or negative and its rotor is $\pm e_0$; a pure element $\mathbf q$ has square $\mathbf q^2=-N(\mathbf q)$ and rotor $\mathbf q/|\mathbf q|$, an element of the sphere of roots of $-1$ of *Introduction to the Remarkable Subspaces of the Quaternions*.
+On the two remarkable subspaces the polar decomposition specialises. A nonzero scalar is already positive or negative and its rotor is $\pm e_0$; a pure element $\vec q$ has square $\vec q^2=-N(\vec q)$ and rotor $\vec q/|\vec q|$, an element of the sphere of roots of $-1$ of *Introduction to the Remarkable Subspaces of the Quaternions*.
 
 ## There Are Exactly These
 

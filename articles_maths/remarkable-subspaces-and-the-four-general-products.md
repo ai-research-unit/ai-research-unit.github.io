@@ -17,9 +17,9 @@ The criterion for each is the classical one. A subspace $U$ is a **Jordan algebr
 
 The scalar–vector form of the general plain bilinear product,
 $$
-\tilde{P}\tilde{Q}=\bigl(P_0Q_0-(\mathbf{P},\mathbf{Q})\bigr)+P_0\mathbf{Q}+Q_0\mathbf{P}+\mathbf{P}\times\mathbf{Q},
+\tilde{P}\tilde{Q}=\bigl(P_0Q_0-(\vec P,\vec Q)\bigr)+P_0\vec Q+Q_0\vec P+\vec P\times\vec Q,
 $$
-with $\mathbf{P},\mathbf{Q}$ the vector parts and $(\mathbf{P},\mathbf{Q})$, $\mathbf{P}\times\mathbf{Q}$ the complex dot and cross products, is used throughout. The remarkable subspaces, their defining conditions, their bases and their dimensions are not restated here; they belong to *Introduction to the Remarkable Subspaces*, and the coordinate blocks $B_0=\mathbb{R}e_0$, $B_1=\operatorname{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ and $B_2=\operatorname{span}_{\mathbb{R}}\{ie_1,ie_2,ie_3\}$ come from *Comparison of the Remarkable Subspaces*.
+with $\vec P,\vec Q$ the vector parts and $(\vec P,\vec Q)$, $\vec P\times\vec Q$ the complex dot and cross products, is used throughout. The remarkable subspaces, their defining conditions, their bases and their dimensions are not restated here; they belong to *Introduction to the Remarkable Subspaces*, and the coordinate blocks $B_0=\mathbb{R}e_0$, $B_1=\operatorname{span}_{\mathbb{R}}\{e_1,e_2,e_3\}$ and $B_2=\operatorname{span}_{\mathbb{R}}\{ie_1,ie_2,ie_3\}$ come from *Comparison of the Remarkable Subspaces*.
 
 ### The four general products have the same value set
 
@@ -68,7 +68,7 @@ The bracket of any two central elements is a real multiple of the central imagin
 
 **The vector subspace is a Lie algebra but not a Jordan algebra.** Under the two bilinear brackets it is $(\mathrm{Vect}(\mathbb{B}),[\cdot,\cdot])\cong\mathfrak{sl}(2,\mathbb{C})$, the general quaternionic bilinear bracket being the negative of the commutator, and it is **no Jordan algebra** for any of the four symmetrisations.
 
-A pure vector is $\mathbf{P}=P_1e_1+P_2e_2+P_3e_3$ with $P_1,P_2,P_3 \in \mathbb{C}$. Its scalar part vanishes and the natural conjugation reverses its sign, so the subspace, of real dimension six and complex dimension three, is the largest of the remarkable subspaces and is the complex analogue of the imaginary quaternions. The three operations behave here as differently as anywhere in the article: the product leaves the subspace at once, the symmetrisation collapses to the centre, and only the bracket stays.
+A pure vector is $\vec P=P_1e_1+P_2e_2+P_3e_3$ with $P_1,P_2,P_3 \in \mathbb{C}$. Its scalar part vanishes and the natural conjugation reverses its sign, so the subspace, of real dimension six and complex dimension three, is the largest of the remarkable subspaces and is the complex analogue of the imaginary quaternions. The three operations behave here as differently as anywhere in the article: the product leaves the subspace at once, the symmetrisation collapses to the centre, and only the bracket stays.
 
 **The four general products.** The square of a single basis vector already leaves the subspace, and is a nonzero central scalar for each of the four general products:
 $$
@@ -76,28 +76,28 @@ e_1e_1=-e_0,\qquad e_1^{\natural}e_1=e_0,\qquad e_1e_1^{*}=e_0,\qquad e_1^{\natu
 $$
 In general the product of two pure vectors is the sum of a scalar and a vector: the scalar–vector form of the general plain bilinear product read on the vector subspace,
 $$
-\mathbf{P}\mathbf{Q}=-(\mathbf{P},\mathbf{Q})e_0+\mathbf{P}\times\mathbf{Q},
+\vec P\vec Q=-(\vec P,\vec Q)e_0+\vec P\times\vec Q,
 $$
-with $(\mathbf{P},\mathbf{Q})$ the complex dot product and $\mathbf{P}\times\mathbf{Q}$ the complex cross product. The other three products are the same expression with the second factor replaced as the conjugation prescribes, and differ only in the signs of the two terms. Since the scalar part is a general complex number and the vector part a general vector, each of the four general products of a suitable pair **spans the whole algebra**, of real dimension eight. The vector subspace is therefore closed under **none of the four general products**.
+with $(\vec P,\vec Q)$ the complex dot product and $\vec P\times\vec Q$ the complex cross product. The other three products are the same expression with the second factor replaced as the conjugation prescribes, and differ only in the signs of the two terms. Since the scalar part is a general complex number and the vector part a general vector, each of the four general products of a suitable pair **spans the whole algebra**, of real dimension eight. The vector subspace is therefore closed under **none of the four general products**.
 
 **The symmetrisation.** No symmetrisation keeps the vector subspace inside itself either, and here the two bilinear and the two sesquilinear products part company. The two bilinear symmetrisations collapse to the centre, the cross-product terms cancelling in the symmetrised sum:
 $$
-\mathbf{P}\bullet_{\mathrm{pl}}\mathbf{Q}=-(\mathbf{P},\mathbf{Q})e_0,\qquad \mathbf{P}\bullet\mathbf{Q}=(\mathbf{P},\mathbf{Q})e_0,
+\vec P\bullet_{\mathrm{pl}}\vec Q=-(\vec P,\vec Q)e_0,\qquad \vec P\bullet\vec Q=(\vec P,\vec Q)e_0,
 $$
-so that the pair $\mathbf{P}=\mathbf{Q}=e_1$ has plain symmetrisation $-e_0$ and quaternionic symmetrisation $e_0$, a central element outside the subspace in either case. The contrast is sharp: the same two pure vectors whose plain product spans the whole algebra have their symmetrised product confined to the two-dimensional centre. The two sesquilinear symmetrisations instead fill the Hermitian subspace,
+so that the pair $\vec P=\vec Q=e_1$ has plain symmetrisation $-e_0$ and quaternionic symmetrisation $e_0$, a central element outside the subspace in either case. The contrast is sharp: the same two pure vectors whose plain product spans the whole algebra have their symmetrised product confined to the two-dimensional centre. The two sesquilinear symmetrisations instead fill the Hermitian subspace,
 $$
-\mathbf{P}\bullet_{*}\mathbf{Q}=\tfrac12\bigl(\mathbf{P}\mathbf{Q}^{*}+\mathbf{Q}\mathbf{P}^{*}\bigr)\in\mathbb{M}_{+},\qquad \mathbf{P}\bullet_{\natural*}\mathbf{Q}\in\mathbb{M}_{+},
+\vec P\bullet_{*}\vec Q=\tfrac12\bigl(\vec P\vec Q^{*}+\vec Q\vec P^{*}\bigr)\in\mathbb{M}_{+},\qquad \vec P\bullet_{\natural*}\vec Q\in\mathbb{M}_{+},
 $$
-of real dimension four, again outside the vector subspace. The vector subspace is therefore a **Jordan algebra for none** of the four general products. The collapse $\mathbf{P}\bullet_{\mathrm{pl}}\mathbf{P}=-(\mathbf{P},\mathbf{P})e_0$ explains the square-zero elements of the vector subspace, which are its zero divisors (*Introduction to the Remarkable Subspaces*).
+of real dimension four, again outside the vector subspace. The vector subspace is therefore a **Jordan algebra for none** of the four general products. The collapse $\vec P\bullet_{\mathrm{pl}}\vec P=-(\vec P,\vec P)e_0$ explains the square-zero elements of the vector subspace, which are its zero divisors (*Introduction to the Remarkable Subspaces*).
 
 **The bracket.** The commutator keeps the vector subspace inside itself, because the scalar part is symmetric and cancels in the antisymmetric half:
 $$
-[\mathbf{P},\mathbf{Q}]=2\,\mathbf{P}\times\mathbf{Q}\in\mathrm{Vect}(\mathbb{B}),\qquad
+[\vec P,\vec Q]=2\,\vec P\times\vec Q\in\mathrm{Vect}(\mathbb{B}),\qquad
 [\mathrm{Vect}(\mathbb{B}),\mathrm{Vect}(\mathbb{B})]=\mathrm{Vect}(\mathbb{B}) .
 $$
 The bracket of two pure vectors is twice their complex cross product, and the cross products of the complex vectors fill the whole subspace, so the algebra is equal to its own derived subalgebra and is perfect. It is the complex **Lie algebra $\mathfrak{sl}(2,\mathbb{C})$** of the traceless complex $2\times2$ matrices, of complex dimension three, read here in the coordinates $e_1,e_2,e_3$ against the Pauli matrices. The general quaternionic bilinear bracket is the negative of the commutator, since the natural conjugation negates a pure vector:
 $$
-[\mathbf{P},\mathbf{Q}]_{\natural}=\mathbf{P}^{\natural}\mathbf{Q}-\mathbf{Q}^{\natural}\mathbf{P}=(-\mathbf{P})\mathbf{Q}-(-\mathbf{Q})\mathbf{P}=-[\mathbf{P},\mathbf{Q}],
+[\vec P,\vec Q]_{\natural}=\vec P^{\natural}\vec Q-\vec Q^{\natural}\vec P=(-\vec P)\vec Q-(-\vec Q)\vec P=-[\vec P,\vec Q],
 $$
 so it is a **Lie algebra** too, the same one with the opposite sign. The two sesquilinear brackets leave the subspace: their values are anti-Hermitian, and they fill the anti-Hermitian subspace,
 $$
@@ -126,7 +126,7 @@ $$
 $$
 the symmetrisation of the real quaternion algebra, a commutative Jordan algebra of real dimension four. The other three symmetrisations stay inside the subspace but **fail the Jordan identity**, so that the quaternion subspace, closed under all four general products, is a Jordan algebra for exactly one of them. The general quaternionic bilinear and the general plain sesquilinear symmetrisations coincide there and collapse to the centre:
 $$
-\tilde{P}\bullet\tilde{Q}=\tilde{P}\bullet_{*}\tilde{Q}=\bigl(P_0Q_0+(\mathbf{P},\mathbf{Q})\bigr)e_0,
+\tilde{P}\bullet\tilde{Q}=\tilde{P}\bullet_{*}\tilde{Q}=\bigl(P_0Q_0+(\vec P,\vec Q)\bigr)e_0,
 $$
 the trace form of the general quaternionic bilinear product; the general quaternionic sesquilinear one is the natural conjugate of the Jordan product, $\tilde{P}\bullet_{\natural*}\tilde{Q}=(\tilde{P}\bullet_{\mathrm{pl}}\tilde{Q})^{\natural}$. Each of the three fails the identity at $x=e_1$: for the general quaternionic bilinear and the general plain sesquilinear symmetrisations $x\bullet x=e_0$, so the two sides of $(x\bullet x)\bullet(x\bullet x)=x\bullet\bigl(x\bullet(x\bullet x)\bigr)$ are $e_0$ and $0$; for the general quaternionic sesquilinear one, where $x\bullet_{\natural*}x=-e_0$, they are $e_0$ and $-e_0$.
 
@@ -178,17 +178,17 @@ each lying in the real vector triple $B_1\subset\mathbb{H}_{\mathbb{B}}$. The an
 
 **The Hermitian subspace is a Jordan algebra but not a Lie algebra.** Under $\bullet_{\mathrm{pl}}$ and $\bullet_{*}$, which coincide there, it is $H_{2}(\mathbb{C})=J(\mathbb{B})$, and it is **no Lie algebra** for any of the four brackets.
 
-A Hermitian element is $a_0e_0+i\mathbf{p}$ with $a_0 \in \mathbb{R}$ and $\mathbf{p}$ a real vector. The subspace is the fixed set of the Hermitian conjugation $*$ and has real dimension four. It is the mirror of the vector subspace — there the antisymmetric half is the richer, here it is the symmetric half — and it is the first subspace of the remarkable subspaces that is a Jordan algebra but not a Lie algebra.
+A Hermitian element is $a_0e_0+i\vec p$ with $a_0 \in \mathbb{R}$ and $\vec p$ a real vector. The subspace is the fixed set of the Hermitian conjugation $*$ and has real dimension four. It is the mirror of the vector subspace — there the antisymmetric half is the richer, here it is the symmetric half — and it is the first subspace of the remarkable subspaces that is a Jordan algebra but not a Lie algebra.
 
 **The four general products.** **None of the four keeps the Hermitian subspace inside itself.** The product of two Hermitian elements,
 $$
-(a_0e_0+i\mathbf{p})(b_0e_0+i\mathbf{r})=\bigl(a_0b_0+(\mathbf{p},\mathbf{r})\bigr)e_0-\mathbf{p}\times\mathbf{r}+i(a_0\mathbf{r}+b_0\mathbf{p}),
+(a_0e_0+i\vec p)(b_0e_0+i\vec r)=\bigl(a_0b_0+(\vec p,\vec r)\bigr)e_0-\vec p\times\vec r+i(a_0\vec r+b_0\vec p),
 $$
-has a real scalar part and a vector part that runs over the whole complex vector subspace, and the middle term $-\mathbf{p}\times\mathbf{r}$ is a real pure vector, which no Hermitian element has: the witness is $(ie_1)(ie_2)=-e_3$. The other three products differ only in the signs of the terms, and each of the four **spans $\mathbb{R}e_0\oplus\mathrm{Vect}(\mathbb{B})$**, of real dimension seven. It is the failure of the interior term that does the work: the Hermitian subspace has no real vector part, and that is precisely what the product of two of its elements supplies.
+has a real scalar part and a vector part that runs over the whole complex vector subspace, and the middle term $-\vec p\times\vec r$ is a real pure vector, which no Hermitian element has: the witness is $(ie_1)(ie_2)=-e_3$. The other three products differ only in the signs of the terms, and each of the four **spans $\mathbb{R}e_0\oplus\mathrm{Vect}(\mathbb{B})$**, of real dimension seven. It is the failure of the interior term that does the work: the Hermitian subspace has no real vector part, and that is precisely what the product of two of its elements supplies.
 
 **The symmetrisation.** This is the operation that stays. **All four symmetrisations keep the Hermitian subspace inside itself**, the special feature of this subspace: the cross-product term is antisymmetric and cancels, and the Hermitian conjugation $*$ fixes a Hermitian element, so that the general plain bilinear and the general plain sesquilinear symmetrisations agree:
 $$
-(a_0e_0+i\mathbf{p})\bullet_{\mathrm{pl}}(b_0e_0+i\mathbf{r})=(a_0e_0+i\mathbf{p})\bullet_{*}(b_0e_0+i\mathbf{r})=\bigl(a_0b_0+(\mathbf{p},\mathbf{r})\bigr)e_0+i(a_0\mathbf{r}+b_0\mathbf{p}).
+(a_0e_0+i\vec p)\bullet_{\mathrm{pl}}(b_0e_0+i\vec r)=(a_0e_0+i\vec p)\bullet_{*}(b_0e_0+i\vec r)=\bigl(a_0b_0+(\vec p,\vec r)\bigr)e_0+i(a_0\vec r+b_0\vec p).
 $$
 This is the **Jordan product**, and
 $$
@@ -196,7 +196,7 @@ $$
 $$
 is the Hermitian Jordan algebra of degree two, with two orthogonal idempotents and Peirce dimensions $1+2+1$ (*The 12 Products of the Biquaternion Complex Space*). The two quaternionic symmetrisations also stay inside but are central,
 $$
-(a_0e_0+i\mathbf{p})\bullet(b_0e_0+i\mathbf{r})=(a_0e_0+i\mathbf{p})\bullet_{\natural*}(b_0e_0+i\mathbf{r})=\bigl(a_0b_0-(\mathbf{p},\mathbf{r})\bigr)e_0,
+(a_0e_0+i\vec p)\bullet(b_0e_0+i\vec r)=(a_0e_0+i\vec p)\bullet_{\natural*}(b_0e_0+i\vec r)=\bigl(a_0b_0-(\vec p,\vec r)\bigr)e_0,
 $$
 and give **no Jordan algebra**, the identity failing at $x=ie_1$, where $x\bullet x=-e_0$ and the two sides of $(x\bullet x)\bullet(x\bullet x)=x\bullet\bigl(x\bullet(x\bullet x)\bigr)$ are $e_0$ and $0$. The Hermitian subspace is therefore a **Jordan algebra for the general plain bilinear product and for the general plain sesquilinear product**, which coincide there, and for neither of the two quaternionic products.
 
@@ -213,22 +213,22 @@ The commutator of two Hermitian elements is twice the cross product of their two
 
 **The anti-Hermitian subspace is a Lie algebra but not a Jordan algebra.** Under $[\cdot,\cdot]$ and $[\cdot,\cdot]_{*}$, the latter the negative of the former, it is $\mathfrak{u}(2)\cong\mathbb{R}(ie_0)\oplus B_1$, and it is **no Jordan algebra** for any of the four symmetrisations.
 
-An anti-Hermitian element is $ib'_0e_0+\mathbf{q}$ with $b'_0 \in \mathbb{R}$ and $\mathbf{q}$ a real vector. It is the anti-fixed set of the Hermitian conjugation $*$, has real dimension four, and is the image of the Hermitian subspace under multiplication by the central imaginary unit $ie_0$. It is the mirror of the Hermitian subspace — where the Hermitian subspace carries the symmetrisation, the anti-Hermitian one carries the bracket — and this reversal is the source of both its structures, the unitary Lie algebra $\mathfrak{u}(2)$ and the failure of the Jordan identity.
+An anti-Hermitian element is $ib'_0e_0+\vec q$ with $b'_0 \in \mathbb{R}$ and $\vec q$ a real vector. It is the anti-fixed set of the Hermitian conjugation $*$, has real dimension four, and is the image of the Hermitian subspace under multiplication by the central imaginary unit $ie_0$. It is the mirror of the Hermitian subspace — where the Hermitian subspace carries the symmetrisation, the anti-Hermitian one carries the bracket — and this reversal is the source of both its structures, the unitary Lie algebra $\mathfrak{u}(2)$ and the failure of the Jordan identity.
 
 **The four general products.** **None of the four keeps the anti-Hermitian subspace inside itself.** The product of two anti-Hermitian elements,
 $$
-(ib'_0e_0+\mathbf{q})(ic'_0e_0+\mathbf{r})=\bigl(-b'_0c'_0-(\mathbf{q},\mathbf{r})\bigr)e_0+\mathbf{q}\times\mathbf{r}+i(b'_0\mathbf{r}+c'_0\mathbf{q}),
+(ib'_0e_0+\vec q)(ic'_0e_0+\vec r)=\bigl(-b'_0c'_0-(\vec q,\vec r)\bigr)e_0+\vec q\times\vec r+i(b'_0\vec r+c'_0\vec q),
 $$
 has a real scalar part and a vector part that runs over the whole complex vector subspace, and it is the real scalar part that leaves the subspace: the witness is $(ie_0)(ie_0)=-e_0$, whereas an anti-Hermitian element has a purely imaginary scalar part. Each of the four **spans $\mathbb{R}e_0\oplus\mathrm{Vect}(\mathbb{B})$**, of real dimension seven, and the subspace is closed under no product.
 
 **The symmetrisation.** **No symmetrisation keeps the anti-Hermitian subspace inside itself.** The general plain bilinear symmetrisation is Hermitian-valued,
 $$
-(ib'_0e_0+\mathbf{q})\bullet_{\mathrm{pl}}(ic'_0e_0+\mathbf{r})=\bigl(-b'_0c'_0-(\mathbf{q},\mathbf{r})\bigr)e_0+i(b'_0\mathbf{r}+c'_0\mathbf{q})\in\mathbb{M}_{+},
+(ib'_0e_0+\vec q)\bullet_{\mathrm{pl}}(ic'_0e_0+\vec r)=\bigl(-b'_0c'_0-(\vec q,\vec r)\bigr)e_0+i(b'_0\vec r+c'_0\vec q)\in\mathbb{M}_{+},
 $$
 with a real scalar part and an imaginary vector part, and the general plain sesquilinear symmetrisation is its negative, since $*$ negates an anti-Hermitian element. The two quaternionic symmetrisations are also central, and are the negative of each other:
 $$
-(ib'_0e_0+\mathbf{q})\bullet(ic'_0e_0+\mathbf{r})=\bigl(-b'_0c'_0+(\mathbf{q},\mathbf{r})\bigr)e_0,\qquad
-(ib'_0e_0+\mathbf{q})\bullet_{\natural*}(ic'_0e_0+\mathbf{r})=\bigl(b'_0c'_0-(\mathbf{q},\mathbf{r})\bigr)e_0 .
+(ib'_0e_0+\vec q)\bullet(ic'_0e_0+\vec r)=\bigl(-b'_0c'_0+(\vec q,\vec r)\bigr)e_0,\qquad
+(ib'_0e_0+\vec q)\bullet_{\natural*}(ic'_0e_0+\vec r)=\bigl(b'_0c'_0-(\vec q,\vec r)\bigr)e_0 .
 $$
 The anti-Hermitian subspace is therefore a **Jordan algebra for none** of the four general products, and the symmetrised product of two anti-Hermitian elements is never anti-Hermitian. This is the sign reversal that separates the two sectors: multiplication by the central imaginary unit exchanges $\mathbb{M}_{+}$ and $\mathbb{M}_{-}$, but it does not carry the symmetrisation of one to the symmetrisation of the other, and only $\mathbb{M}_{+}$ is closed under it.
 
@@ -251,7 +251,7 @@ with the witness $[ie_0,e_1]_{\natural}=2ie_1\notin\mathbb{M}_{-}$. The anti-Her
 
 The remarkable subspaces of this article are the homes of the parts of the four general products under the **plain** exchange of the two arguments. The two parts of a bilinear product are read there directly, the antisymmetric parts of the two bilinear products spanning the vector subspace and the symmetric part of the quaternionic one collapsing to the centre; and the two parts of the plain sesquilinear product are the Hermitian subspace $\mathbb{M}_{+}$ and the anti-Hermitian subspace $\mathbb{M}_{-}$.
 
-The **exchange by the coefficientwise conjugation**, $f^{c}(\tilde{P},\tilde{Q})=\overline{f(\tilde{Q},\tilde{P})}$, keeps the class of the two sesquilinear products, and its two parts sit in two other subspaces of the same list. For $\tilde{P}\tilde{Q}^{*}$ they are the scalar part and the vector part of the value, so they lie in the **centre** $\mathbb{C}_{\mathbb{B}}$ and in the **vector subspace** $\mathrm{Vect}(\mathbb{B})$ — the two subspaces that carry the parts of the general quaternionic bilinear product under the plain exchange. For $\tilde{P}^{\natural}\tilde{Q}^{*}$ the skew half is the cross product $\mathbf{P}\times\overline{\mathbf{Q}}$ of the two vectors, so it lies in the **vector subspace**, while the conjugate-symmetric half carries the form $K(\tilde{P},\tilde{Q})=P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})$ in its scalar part and is not central, so it lies in no subspace of the remarkable subspaces.
+The **exchange by the coefficientwise conjugation**, $f^{c}(\tilde{P},\tilde{Q})=\overline{f(\tilde{Q},\tilde{P})}$, keeps the class of the two sesquilinear products, and its two parts sit in two other subspaces of the same list. For $\tilde{P}\tilde{Q}^{*}$ they are the scalar part and the vector part of the value, so they lie in the **centre** $\mathbb{C}_{\mathbb{B}}$ and in the **vector subspace** $\mathrm{Vect}(\mathbb{B})$ — the two subspaces that carry the parts of the general quaternionic bilinear product under the plain exchange. For $\tilde{P}^{\natural}\tilde{Q}^{*}$ the skew half is the cross product $\vec P\times\overline{\vec Q}$ of the two vectors, so it lies in the **vector subspace**, while the conjugate-symmetric half carries the form $K(\tilde{P},\tilde{Q})=P_0\overline{Q_0}-(\vec P,\overline{\vec Q})$ in its scalar part and is not central, so it lies in no subspace of the remarkable subspaces.
 
 So three of the passages of the adapted reading land in the list — the centre and the vector subspace for the plain sesquilinear product, the vector subspace again for the quaternionic one — against the Hermitian and the anti-Hermitian subspace, where the plain reading of the same two products lands. The two readings are of one pair of products each and neither is the other; the twelve names of *The 12 Products of the Biquaternion Complex Space* belong to the **adapted** reading and not to the plain one tabulated here, and the plain reading's own four halves are the operations of *The Sesquilinear Symmetrised Product* and *The Sesquilinear Commutator* (*The 12 Products of the Biquaternion Complex Space*, §*The Other Exchange, and the Class It Keeps*).
 
@@ -277,7 +277,7 @@ So three of the passages of the adapted reading land in the list — the centre 
 | $[\tilde{P},\tilde{Q}]_{f}$ | the bracket $f(\tilde{P},\tilde{Q})-f(\tilde{Q},\tilde{P})$ |
 | $\bullet$ | the symmetrised product, the symmetrisation of the general quaternionic bilinear product |
 | $\bullet_{\mathrm{pl}}, [\cdot,\cdot]$ | the symmetrisation and the commutator of the general plain bilinear product |
-| $(\mathbf{P},\mathbf{Q}), \mathbf{P}\times\mathbf{Q}$ | the complex dot and cross products of the vector parts |
+| $(\vec P,\vec Q), \vec P\times\vec Q$ | the complex dot and cross products of the vector parts |
 | $\mathfrak{sl}(2,\mathbb{C}), \mathfrak{u}(2), \mathfrak{su}(2)$ | the classical Lie algebras of the vector, anti-Hermitian and quaternion subspaces |
 
 ## Further Reading

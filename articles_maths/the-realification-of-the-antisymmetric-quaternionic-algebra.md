@@ -4,7 +4,7 @@
 
 The Antisymmetric Quaternionic Algebra is one of the twelve algebraic structures that the biquaternion space of $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ carries, the structure $\mathrm{AQA}$ of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. Its product, the antisymmetric quaternionic bilinear product, is
 $$
-\tilde P\diamond\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P\bigr)=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q,
+\tilde P\diamond\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P\bigr)=P_0\vec Q-Q_0\vec P-\vec P\times\vec Q,
 $$
 and this article owns it read over $\mathbb{R}$: the same product on the same set is an $\mathbb{R}$-algebra on the eight-dimensional real space $\mathbb{R}^8$.
 
@@ -81,7 +81,7 @@ The real rank of $L_{\tilde X}$ is twice its complex rank, and the complex rank 
 
 At the element $e_0$ the operator is the element-level specificity of the block read over $\mathbb{R}$: the left multiplication is the projection onto the realification of the vector subspace,
 $$
-L_{e_0}\tilde X=\mathbf X,\qquad L_{e_0}^2=L_{e_0},\qquad R_{e_0}=-L_{e_0},
+L_{e_0}\tilde X=\vec X,\qquad L_{e_0}^2=L_{e_0},\qquad R_{e_0}=-L_{e_0},
 $$
 it has real rank six, its image is the realification of $\mathrm{Vect}(\mathbb{B})$ and its kernel is the realification of the centre, of real dimension two. The identity and its interpretation are *The Specificities of the Antisymmetric Quaternionic Algebra*. The block's own invariant form is too degenerate to determine the adjoint of a multiplication operator, the whole vector subspace lying in its radical (*The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*, §*The Adjoint of the Operator with Respect to a Form*), so the block supplies no adjoint of its own; the adjoints the four realified forms of the space give to left multiplication are the four of *The Four General Products and Operators*, §*The Products Decide the Four Adjoints*, and they are identities of the plain product and not of this block.
 
@@ -91,7 +91,7 @@ Four features appear in the real reading of the block and not in its complex rea
 
 **The real subalgebras that are not complex subspaces.** Over $\mathbb{C}$ a subalgebra of the block is a complex subspace, hence of even real dimension, and the complex reading sees only those. Over $\mathbb{R}$ the quaternion subspace $\mathbb{H}_{\mathbb{B}}=\mathbb{R}\{e_0,e_1,e_2,e_3\}$, of real dimension four, is a subalgebra (*Remarkable Subspaces under the Antisymmetric Quaternionic Algebra of Biquaternions*, §*The Quaternion Subspace*), and its image
 $$
-\mathbb{R}\{e_1,e_2,e_3\}=\bigl\{\tilde Q=\mathbf Q,\ \mathbf Q\ \text{with real coefficients}\bigr\}
+\mathbb{R}\{e_1,e_2,e_3\}=\bigl\{\tilde Q=\vec Q,\ \vec Q\ \text{with real coefficients}\bigr\}
 $$
 is a subalgebra as well, of real dimension three: on the vector subspace the operation is the negative of the cross product (*Remarkable Subspaces under the Antisymmetric Quaternionic Algebra of Biquaternions*, §*The Vector Subspace*), so the value of two real pure vectors is a real pure vector again. Neither of the two is a complex subspace, the element $ie_1$ leaving both, and the three-dimensional one has no counterpart in the complex reading at all. Closedness is not automatic for a real subspace: $\mathbb{R}\{e_1,e_2\}$ is not a subalgebra, since $e_1\diamond e_2=-e_3$ leaves it; and the anti-quaternion, Hermitian and anti-Hermitian subspaces fail closure, each with its own smallest witness (*Remarkable Subspaces under the Antisymmetric Quaternionic Algebra of Biquaternions*). The general statement is the subspace row of the table of the four effects: a real subspace closed under the product need not be closed under $J$, so the real reading has more subalgebras than the complex one (*The Realification and the Effect of the Change of Scalars*, §*The Four Effects on a Structure*).
 

@@ -16,7 +16,7 @@ the annihilator is the kernel of that operator, so it is a linear subspace.
 The block of this article is the **general quaternionic sesquimultiplication**
 $$
 \tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q^{*}
-=\bigl[P_0Q_0+(\mathbf P,\overline{\mathbf Q})\bigr]-P_0\overline{\mathbf Q}-\overline{Q_0}\mathbf P+\mathbf P\times\overline{\mathbf Q},
+=\bigl[P_0Q_0+(\vec P,\overline{\vec Q})\bigr]-P_0\overline{\vec Q}-\overline{Q_0}\vec P+\vec P\times\overline{\vec Q},
 $$
 the product of the natural conjugate of the first factor with the conjugate of the second
 (*Introduction to the General Quaternionic Sesqualgebra of Biquaternions*). It is the block with
@@ -132,8 +132,8 @@ $L_{\lambda e_0}\tilde X=\lambda\tilde X^{*}$, whose kernel is the set of the $\
 $\tilde X^{*}=0$, that is $\{0\}$: the central elements are units of the plain product and their
 annihilator is $\{0\}$.
 
-**The vector subspace.** A nonzero pure element $\tilde P=\mathbf P$ has
-$C(\tilde P)=(\mathbf P,\mathbf P)$; it is a zero divisor of the cone exactly when the vector part
+**The vector subspace.** A nonzero pure element $\tilde P=\vec P$ has
+$C(\tilde P)=(\vec P,\vec P)$; it is a zero divisor of the cone exactly when the vector part
 is isotropic, and then each annihilator is a complex plane, the star of the plain annihilator for
 the left one and the conjugate of the plain annihilator for the right one.
 

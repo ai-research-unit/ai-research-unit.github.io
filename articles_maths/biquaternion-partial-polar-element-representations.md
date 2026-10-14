@@ -5,26 +5,40 @@
 The companion article *The Polar Element Representation of Biquaternions* writes a biquaternion with non-vanishing norm as four factors,
 
 $$
-\tilde{Q} = r\,e^{i\alpha}\,B\,\hat{q} ,
+\tilde{Q} = r\,e^{i\alpha}\,B\,\tilde u ,
 $$
 
-a scale, a central phase, a Hermitian positive boost and a unit real quaternion rotor. This article is about the three two-factor representations that are obtained from it by grouping the four factors in pairs, and it proves that the Hamilton and complex representations of the biquaternion literature, together with the Cartan representation used throughout the physics articles, are exactly those groupings.
+where $r \in \mathbb{R}$, $r>0$, is the positive real scale, $\alpha \in \mathbb{R}$ is the phase angle of the central phase $e^{i\alpha}$ (fixed to the branch $\alpha \in \left(-\frac{\pi}{2},\frac{\pi}{2}\right]$), $B$ is the Hermitian positive boost of unit norm ($B \in \mathbb{M}_+$, $\langle B,B\rangle_{\natural} = 1$), and $\tilde u$ is the rotor, a unit real quaternion ($\tilde u \in \mathrm{Sp}(1)$). This article is about the three two-factor representations that are obtained from it by grouping the four factors in pairs, and it proves that the Hamilton and complex representations of the biquaternion literature, together with the Cartan representation used throughout the physics articles, are exactly those groupings.
 
 The result is a classification, and it has one sentence: there are exactly three ways to split four objects into two unordered pairs, so there are exactly three partial polar representations of a biquaternion, and they are
 
 $$
-\tilde{Q} = \underbrace{\big(r\,e^{i\alpha}\big)}_{R}\underbrace{\big(B\,\hat{q}\big)}_{\exp(\tilde\Xi\Theta)} , \qquad
-\tilde{Q} = \underbrace{\big(r\,\hat{q}\big)}_{Q}\underbrace{\big(e^{i\alpha}\,\hat{q}^{-1}B\hat{q}\big)}_{\exp(i\Psi)} , \qquad
-\tilde{Q} = \underbrace{\big(r\,B\big)}_{H}\underbrace{\big(e^{i\alpha}\,\hat{q}\big)}_{U} .
+\tilde{Q} = \underbrace{\big(r\,e^{i\alpha}\big)}_{R}\underbrace{\big(B\,\tilde u\big)}_{\exp(\hat\Xi\Theta)} , \qquad
+\tilde{Q} = \underbrace{\big(r\,\tilde u\big)}_{Q}\underbrace{\big(e^{i\alpha}\,\tilde u^{-1}B\tilde u\big)}_{\exp(i\Psi)} , \qquad
+\tilde{Q} = \underbrace{\big(r\,B\big)}_{H}\underbrace{\big(e^{i\alpha}\,\tilde u\big)}_{U} .
 $$
 
-The first is the Hamilton representation, whose modulus is the complex scalar $R$; the second is the complex representation, whose modulus is the real quaternion $Q$; the third is the Cartan representation, whose modulus is the Hermitian positive element $H$. In each case the modulus of the named representation is a product of two of the four factors, and the second factor is the product of the other two, conjugated when necessary so that the order is restored.
+The first is the Hamilton representation, whose modulus is the complex scalar $R = re^{i\alpha} \in \mathbb{C}_{\mathbb{B}}$ and whose second factor is $\exp(\hat\Xi\Theta)$ for a root $\hat\Xi$ of $-e_0$ and a complex angle $\Theta \in \mathbb{C}$; the second is the complex representation, whose modulus is the real quaternion $Q = r\tilde u \in \mathbb{H}_{\mathbb{B}}$ and whose second factor is $\exp(i\Psi)$ for a central imaginary $i\Psi \in \mathbb{C}_{\mathbb{B}}$; the third is the Cartan representation, whose modulus is the Hermitian positive element $H = rB \in \mathbb{M}_+$ and whose second factor is $U = e^{i\alpha}\tilde u$. In each case the modulus of the named representation is a product of two of the four factors, and the second factor is the product of the other two, conjugated when necessary so that the order is restored.
 
 Two consequences follow immediately and are the reason the partial representations are called partial. First, each is available only when its modulus can be computed from the element, and the three conditions differ: the Hamilton representation needs the vector part to be non-null so that its axis can be normalised, the complex representation as constructed from the element's parts needs the real quaternion part to be invertible, and only the Cartan representation shares the domain of the polar representation, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$. Second, each calls a composite object the modulus, and it is the four-factor representation that separates that object into a genuine scale and a genuine phase, or into a scale and a rotor, or into a scale and a boost. The three named representations are therefore incomplete in a precise sense, not merely in the loose sense of being less general: each is the polar representation with a coarser grouping, and each loses the factors that the grouping merges.
 
 Two further points are recorded in the Hamilton section, because they belong to the representation rather than to the algebra: the representation of $\tilde{Q}$ is not the representation of its exponential, and the three parameters carry correlated ambiguities that the branch choices remove and that survive as the multivaluedness of the logarithm.
 
-The conventions are those of the corpus, and the four factors, their definitions, the modulus $\rho = re^{i\alpha} = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$ and the domain $\{N\neq0\}$ are those of the companion article and are not re-derived here. The Hamilton and complex representations are stated in the standard form of the literature, with their moduli $R$ and $Q$ and their angles $\Theta$ and $\Psi$, so that the regroupings can be checked against those definitions. No physics is invoked.
+The conventions are those of the corpus, and the four factors, their definitions, the modulus $\rho = re^{i\alpha} = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$, the rotor's group $\mathrm{Sp}(1) = \{\tilde u \in \mathbb{H} : \tilde u\tilde u^{\natural} = 1\}$ of unit real quaternions and the domain $\{N\neq0\}$ are those of the companion article and are not re-derived here. The Hamilton and complex representations are stated in the standard form of the literature, with their moduli $R$ and $Q$ and their angles $\Theta$ and $\Psi$, so that the regroupings can be checked against those definitions. No physics is invoked.
+
+## The Four Factors as Exponentials
+
+The four factors are exponentials, and the three groupings of this article are the three ways of pairing four exponentials. With the rapidity $\psi \in \mathbb{R}$, $\psi\ge0$, of the boost and its unit axis $\hat n \in S^2$, and the stored half-angle $\theta \in [0,\pi]$ of the rotor and its unit axis $\hat u \in S^2$, the word is
+
+$$
+\tilde{Q} = \exp(\ln r)\,\exp(i\alpha)\,\exp\Bigl(i\tfrac{\psi}{2}\hat n\Bigr)\,\exp(\theta\hat u) .
+$$
+
+Each exponent is a real parameter times a **root** of the algebra, and the square of that root decides the character of the exponential: for a root $\nu \in \mathbb{B}$ and a real $t \in \mathbb{R}$, the trigonometric case is $\exp(\nu t) = \cos t\,e_0 + \nu\sin t$ at $\nu^2 = -e_0$, the hyperbolic case is $\exp(\nu t) = \cosh t\,e_0 + \nu\sinh t$ at $\nu^2 = +e_0$, and the parabolic case is the truncation $\exp(\nu t) = e_0 + \nu t$ at $\nu^2 = 0$. The scale and the boost occupy the hyperbolic case, with the real root $e_0$ and the Hermitian root $i\hat n$, and the phase and the rotor occupy the trigonometric case, with the central root $i$ and the real pure quaternion root $\hat u$; the parabolic row carries no factor of the word. The root of each exponential is the reason the factor lies where it does in the algebra: the hyperbolic row gives the factor in $\mathbb{M}_+$ for the non-trivial boost exponent and on the positive real axis for the scale, and the trigonometric row gives the central phase and the rotor in $\mathbb{M}_- \cap \mathrm{Vect}(\mathbb{B})$.
+
+The pairing carried out in this article is a grouping of the exponentials, and the two exponents of a pair multiply as exponentials only when the pair commutes with the rest of the word up to the conjugation that restores the order. The Hamilton and the complex groups are the two pairings whose second factor is a single exponential, $\exp(\hat\Xi\Theta)$ and $\exp(i\Psi)$, and the Cartan group is the pairing whose second factor, $e^{i\alpha}\tilde u$, is a product of two exponentials and is therefore not written as one; this is the exponential reason the four-factor representation separates an object that each named representation calls the modulus.
+
+**The grouping is not free, because the exponents do not all commute.** The boost exponent and the rotor exponent fail to commute, so the pair products are **not** the exponentials of sums of exponents: $\exp(\hat\Xi\Theta)$ and $\exp(i\Psi)$ are computed from the element, not by adding the four exponents, and the Cartan second factor is a product of two exponentials that is no single exponential. Over $60$ random boosts and rotors the largest coefficient of the bracket of the two non-central exponents is $3.58$, and the largest coefficient of the failure of the sum rule is $0.76$. The three pairings stand as three distinct groupings of the same ordered word; none of them is obtained from another by reordering, and within the Cartan grouping the boost and the rotor may not be interchanged.
 
 ## The Four Factors and the Three Pairings
 
@@ -33,31 +47,31 @@ The conventions are those of the corpus, and the four factors, their definitions
 The four factors of the polar representation of an element with $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$ are
 
 $$
-r \in (0,\infty), \qquad e^{i\alpha} \in \mathbb{C}_{\mathbb{B}}, \quad |e^{i\alpha}| = 1, \qquad B \in \mathbb{M}_+, \quad \langle B,B\rangle_{\natural} = 1, \qquad \hat{q}\in\mathbb{H}_{\mathbb{B}}, \quad \langle\hat{q},\hat{q}\rangle_{\natural} = 1, \quad \hat{q}\in\mathrm{Sp}(1) ,
+r \in (0,\infty), \qquad e^{i\alpha} \in \mathbb{C}_{\mathbb{B}}, \quad |e^{i\alpha}| = 1, \qquad B \in \mathbb{M}_+, \quad \langle B,B\rangle_{\natural} = 1, \qquad \tilde u\in\mathbb{H}_{\mathbb{B}}, \quad \langle\tilde u,\tilde u\rangle_{\natural} = 1, \quad \tilde u\in\mathrm{Sp}(1) ,
 $$
 
-in the canonical order $\tilde{Q} = r\,e^{i\alpha}B\hat{q}$. Two structural facts about them govern every regrouping below. The phase $e^{i\alpha}$ is central, so it may be moved freely across the other factors. The boost and the rotor are not central, so moving one past the other conjugates it: for any element $\tilde{Q}$,
+in the canonical order $\tilde{Q} = r\,e^{i\alpha}B\tilde u$. Two structural facts about them govern every regrouping below. The phase $e^{i\alpha}$ is central, so it may be moved freely across the other factors. The boost and the rotor are not central, so moving one past the other conjugates it: for any element $\tilde{Q}$,
 
 $$
-\hat{q}\,\tilde{Q} = \left(\hat{q}\tilde{Q}\hat{q}^{-1}\right)\hat{q} , \qquad \hat{q}^{-1}\tilde{Q} = \left(\hat{q}^{-1}\tilde{Q}\hat{q}\right)\hat{q}^{-1} ,
+\tilde u\,\tilde{Q} = \left(\tilde u\tilde{Q}\tilde u^{-1}\right)\tilde u , \qquad \tilde u^{-1}\tilde{Q} = \left(\tilde u^{-1}\tilde{Q}\tilde u\right)\tilde u^{-1} ,
 $$
 
 which is the algebraic statement that a rotated object in the conjugate position is the same object.
 
 ### The Pairings
 
-A **pairing** of the four factors is a splitting of the list $\{r, e^{i\alpha}, B, \hat{q}\}$ into two unordered pairs, each pair then being multiplied together in the canonical order. The three pairings are displayed in the introduction. Written in the canonical order $\tilde{Q} = r e^{i\alpha}B\hat{q}$, they are obtained by inserting a parenthesis and, where a factor has crossed another, recording the conjugation:
+A **pairing** of the four factors is a splitting of the list $\{r, e^{i\alpha}, B, \tilde u\}$ into two unordered pairs, each pair then being multiplied together in the canonical order. The three pairings are displayed in the introduction. Written in the canonical order $\tilde{Q} = r e^{i\alpha}B\tilde u$, they are obtained by inserting a parenthesis and, where a factor has crossed another, recording the conjugation:
 
 $$
-r\Big(e^{i\alpha}\Big)B\hat{q} = \Big(re^{i\alpha}\Big)\Big(B\hat{q}\Big) ,
-$$
-
-$$
-r\,e^{i\alpha}B\hat{q} = \Big(r\hat{q}\Big)\Big(e^{i\alpha}\,\hat{q}^{-1}B\hat{q}\Big) ,
+r\Big(e^{i\alpha}\Big)B\tilde u = \Big(re^{i\alpha}\Big)\Big(B\tilde u\Big) ,
 $$
 
 $$
-r\,e^{i\alpha}B\hat{q} = \Big(rB\Big)\Big(e^{i\alpha}\hat{q}\Big) .
+r\,e^{i\alpha}B\tilde u = \Big(r\tilde u\Big)\Big(e^{i\alpha}\,\tilde u^{-1}B\tilde u\Big) ,
+$$
+
+$$
+r\,e^{i\alpha}B\tilde u = \Big(rB\Big)\Big(e^{i\alpha}\tilde u\Big) .
 $$
 
 In the second line the rotor has been moved to the left of the boost; the phase, being central, needed no correction; and the boost has been conjugated by the rotor, which is the conjugation that appears in the middle factor. The three right-hand sides are the Hamilton, complex and Cartan representations respectively.
@@ -79,62 +93,76 @@ the factor $\tfrac12$ accounting for the fact that the two pairs are unordered. 
 The Hamilton representation is the pairing of the scale with the phase against the boost with the rotor:
 
 $$
-\tilde{Q} = R\,\exp(\tilde\Xi\Theta), \qquad R = r\,e^{i\alpha} = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}, \qquad \exp(\tilde\Xi\Theta) = B\,\hat{q} .
+\tilde{Q} = R\,\exp(\hat\Xi\Theta), \qquad R = r\,e^{i\alpha} = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}, \qquad \exp(\hat\Xi\Theta) = B\,\tilde u .
 $$
 
-The modulus is the complex scalar $\rho$ of the polar representation, and the exponential is the whole rotor part, boost and rotation together. The identification of $B\hat{q}$ with a single exponential is the content of the companion article's construction, and it is the reason the Hamilton representation is the closest of the three to the quaternion polar representation: when all four coefficients are real, $B = e_0$, $\hat{q}$ is the unit quaternion, and the representation reduces to $q = r\exp(\mu\theta)$ term by term.
+The modulus is the complex scalar $\rho$ of the polar representation, and the exponential is the whole rotor part, boost and rotation together. The identification of $B\tilde u$ with a single exponential is the content of the companion article's construction, and it is the reason the Hamilton representation is the closest of the three to the quaternion polar representation: when all four coefficients are real, $B = e_0$, $\tilde u$ is the unit quaternion, and the representation reduces to $q = r\exp(\mu\theta)$ term by term.
+
+Both factors of the exponential are themselves exponentials of a single element, so the Hamilton factor is the single exponential of a **product of two exponentials**. The boost is
+
+$$
+B = \exp\Bigl(i\frac{\psi}{2}\hat n\Bigr) = \cosh\frac{\psi}{2}\,e_0 + i\sinh\frac{\psi}{2}\hat n ,
+$$
+
+with $\hat n$ a unit vector and $\psi$ the rapidity, and the rotor is
+
+$$
+\tilde u = \exp(\theta\hat u) = \cos\theta\,e_0 + \sin\theta\,\hat u ,
+$$
+
+with $\hat u$ a unit vector and $\theta$ the stored half-angle of the rotation. Each exponent is a parameter times a root of $\pm e_0$: $i\hat n$ is a Hermitian root of $+e_0$ and $\hat u$ a real pure root of $-e_0$. Their product is again a single exponential because the vector part is non-null on the domain of the representation, and its angle is the complex $\Theta$ whose real part is the rotation angle and whose imaginary part is the rapidity.
 
 ### The Statement
 
-The representation is stated as follows. Write $\tilde{Q} = Q_0e_0+\mathbf{Q}$ with vector part $\mathbf{Q} = Q_1e_1+Q_2e_2+Q_3e_3$, suppose $(\mathbf{Q},\mathbf{Q}) = Q_1^2+Q_2^2+Q_3^2 \neq 0$ and $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$, and put
+The representation is stated as follows. Write $\tilde{Q} = Q_0e_0+\vec Q$ with vector part $\vec Q = Q_1e_1+Q_2e_2+Q_3e_3$, suppose $(\vec Q,\vec Q) = Q_1^2+Q_2^2+Q_3^2 \neq 0$ and $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$, and put
 
 $$
-R = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}, \qquad \tilde\Xi = \frac{\mathbf{Q}}{B}, \qquad B = \sqrt{(\mathbf{Q},\mathbf{Q})}, \qquad \cos\Theta = \frac{Q_0}{R}, \qquad \sin\Theta = \frac{B}{R} .
+R = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}, \qquad \hat\Xi = \frac{\vec Q}{B}, \qquad B = \sqrt{(\vec Q,\vec Q)}, \qquad \cos\Theta = \frac{Q_0}{R}, \qquad \sin\Theta = \frac{B}{R} .
 $$
 
-Then $\tilde{Q} = R(\cos\Theta+\tilde\Xi\sin\Theta)$, and $\tilde\Xi$ is a root of $-1$: $\tilde\Xi^2 = \mathbf{Q}^2/B^2 = -(\mathbf{Q},\mathbf{Q})/B^2 = -1$, since the square of a pure biquaternion is $-\left(\mathbf{Q},\mathbf{Q}\right)e_0$. The angle $\Theta$ is complex and the modulus $R$ is complex, and the constraint $\cos^2\Theta+\sin^2\Theta = 1$ is the identity $Q_0^2+(\mathbf{Q},\mathbf{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}$.
+Then $\tilde{Q} = R(\cos\Theta+\hat\Xi\sin\Theta)$, and $\hat\Xi$ is a root of $-1$: $\hat\Xi^2 = \vec Q^2/B^2 = -(\vec Q,\vec Q)/B^2 = -1$, since the square of a pure biquaternion is $-\left(\vec Q,\vec Q\right)e_0$. The angle $\Theta$ is complex and the modulus $R$ is complex, and the constraint $\cos^2\Theta+\sin^2\Theta = 1$ is the identity $Q_0^2+(\vec Q,\vec Q) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}$.
 
 ### The Constraint on the Axis
 
-The axis of the Hamilton representation is not an arbitrary root of $-1$: it is the root parallel to the vector part of the element, and the parallelism is what makes the representation canonical. The accompanying constraints $\operatorname{Re}(\tilde\Xi)\perp\operatorname{Im}(\tilde\Xi)$ and $\|\operatorname{Re}\tilde\Xi\|^2-\|\operatorname{Im}\tilde\Xi\|^2 = 1$ are those of the companion article on the roots of minus one.
+The axis of the Hamilton representation is not an arbitrary root of $-1$: it is the root parallel to the vector part of the element, and the parallelism is what makes the representation canonical. The accompanying constraints $\operatorname{Re}(\hat\Xi)\perp\operatorname{Im}(\hat\Xi)$ and $\|\operatorname{Re}\hat\Xi\|^2-\|\operatorname{Im}\hat\Xi\|^2 = 1$ are those of the companion article on the roots of minus one.
 
-The constraint is exactly what fails when the vector part is null. If $(\mathbf{Q},\mathbf{Q}) = 0$ then $B = 0$, the axis $\tilde\Xi = \mathbf{Q}/B$ cannot be normalised, and the exponential factor has no axis to be built from. The pairing of the four factors still exists as a product, $\tilde{Q} = (re^{i\alpha})(B\hat{q})$, but it is not a Hamilton representation, because the second factor cannot be written as an exponential along the vector part.
+The constraint is exactly what fails when the vector part is null. If $(\vec Q,\vec Q) = 0$ then $B = 0$, the axis $\hat\Xi = \vec Q/B$ cannot be normalised, and the exponential factor has no axis to be built from. The pairing of the four factors still exists as a product, $\tilde{Q} = (re^{i\alpha})(B\tilde u)$, but it is not a Hamilton representation, because the second factor cannot be written as an exponential along the vector part.
 
 ### The Domain
 
 The Hamilton representation is therefore available on
 
 $$
-\left\{\tilde{Q} : \langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0 \ \text{ and } \ (\mathbf{Q},\mathbf{Q})\neq0\right\},
+\left\{\tilde{Q} : \langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0 \ \text{ and } \ (\vec Q,\vec Q)\neq0\right\},
 $$
 
-which is the complement of the union of the null cone and the quadric cone $(\mathbf{Q},\mathbf{Q}) = 0$. The second condition is not implied by the first and is not weaker: the element $1+e_1+ie_2$ has $N = 1$ and $(\mathbf{Q},\mathbf{Q}) = 1+i^2 = 0$, so it is invertible and has no Hamilton representation. Within its domain the representation is unique once the branch of $R = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$ is fixed; the literature states the uniqueness as up to the correlated replacement $(R,\Theta)\mapsto(-R,\Theta+\pi)$, which the branch choice of the polar representation removes.
+which is the complement of the union of the null cone and the quadric cone $(\vec Q,\vec Q) = 0$. The second condition is not implied by the first and is not weaker: the element $1+e_1+ie_2$ has $N = 1$ and $(\vec Q,\vec Q) = 1+i^2 = 0$, so it is invertible and has no Hamilton representation. Within its domain the representation is unique once the branch of $R = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$ is fixed; the literature states the uniqueness as up to the correlated replacement $(R,\Theta)\mapsto(-R,\Theta+\pi)$, which the branch choice of the polar representation removes.
 
 ### The Exponential of the Element
 
-The representation $\tilde{Q} = R\exp(\tilde\Xi\Theta)$ is a statement about $\tilde{Q}$ itself, and it must not be read as a statement about its exponential. Write $\mathbf{Q} = B\tilde\Xi$ and $\tilde{Q} = Q_0e_0 + B\tilde\Xi$. Since $Q_0e_0$ is central,
+The representation $\tilde{Q} = R\exp(\hat\Xi\Theta)$ is a statement about $\tilde{Q}$ itself, and it must not be read as a statement about its exponential. Write $\vec Q = B\hat\Xi$ and $\tilde{Q} = Q_0e_0 + B\hat\Xi$. Since $Q_0e_0$ is central,
 
 $$
-\exp(\tilde{Q}) = e^{Q_0}\exp(B\tilde\Xi) = e^{Q_0}\bigl(\cos B\,e_0 + \sin B\,\tilde\Xi\bigr),
+\exp(\tilde{Q}) = e^{Q_0}\exp(B\hat\Xi) = e^{Q_0}\bigl(\cos B\,e_0 + \sin B\,\hat\Xi\bigr),
 $$
 
-using $\tilde\Xi^2 = -e_0$ as above. The right-hand side is the Hamilton representation of the element $\exp(\tilde{Q})$, with modulus $e^{Q_0}$ and angle $B$; it is not the Hamilton representation of $\tilde{Q}$, whose modulus and angle are $R$ and $\Theta$. The two Hamilton data therefore agree only in the special case
+using $\hat\Xi^2 = -e_0$ as above. The right-hand side is the Hamilton representation of the element $\exp(\tilde{Q})$, with modulus $e^{Q_0}$ and angle $B$; it is not the Hamilton representation of $\tilde{Q}$, whose modulus and angle are $R$ and $\Theta$. The two Hamilton data therefore agree only in the special case
 
 $$
 R = e^{Q_0} \ \text{ and }\ \Theta = B, \qquad\text{that is,}\qquad \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \exp(2Q_0) \ \text{ and the angle } \Theta \text{ equals } B ,
 $$
 
-by the identity $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = Q_0^2 + B^2$. In general the inverse relation is the one that holds: the logarithm of $\tilde{Q}$ reads off its own modulus and angle, $\log\tilde{Q} = \log R\,e_0 + \Theta\,\tilde\Xi$ (*Biquaternion Elementary Functions*, §*The Logarithm*), so it is the logarithm, not the exponential, that recovers $(R,\Theta)$ from the element. The distinction matters whenever an element and its exponential are both in play, as for the exponential map of $\mathbb{B}^\times$ in *Biquaternion Lie Group and Exponential Structure*.
+by the identity $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = Q_0^2 + B^2$. In general the inverse relation is the one that holds: the logarithm of $\tilde{Q}$ reads off its own modulus and angle, $\log\tilde{Q} = \log R\,e_0 + \Theta\,\hat\Xi$ (*Biquaternion Elementary Functions*, §*The Logarithm*), so it is the logarithm, not the exponential, that recovers $(R,\Theta)$ from the element. The distinction matters whenever an element and its exponential are both in play, as for the exponential map of $\mathbb{B}^\times$ in *Biquaternion Lie Group and Exponential Structure*.
 
 ### Non-Uniqueness of the Parameters
 
 The three parameters of the Hamilton representation are not determined independently; the representation is unique only up to three correlated replacements.
 
-1. **The axis is defined up to sign.** The relation $\mathbf{Q} = B\tilde\Xi$ determines $\tilde\Xi$ only together with the sign of $B = \sqrt{(\mathbf{Q},\mathbf{Q})}$, since $B$ is a square root; replacing $B$ by $-B$ replaces $\tilde\Xi$ by $-\tilde\Xi$ and leaves both $\tilde\Xi^2 = -e_0$ and $\mathbf{Q}$ unchanged.
-2. **The angle is defined up to sign, correlated with the axis.** Replacing $(\tilde\Xi,\Theta)$ by $(-\tilde\Xi,-\Theta)$ leaves $\tilde{Q} = R(\cos\Theta + \tilde\Xi\sin\Theta)$ fixed, because the two changes cancel in the term $\tilde\Xi\sin\Theta$.
+1. **The axis is defined up to sign.** The relation $\vec Q = B\hat\Xi$ determines $\hat\Xi$ only together with the sign of $B = \sqrt{(\vec Q,\vec Q)}$, since $B$ is a square root; replacing $B$ by $-B$ replaces $\hat\Xi$ by $-\hat\Xi$ and leaves both $\hat\Xi^2 = -e_0$ and $\vec Q$ unchanged.
+2. **The angle is defined up to sign, correlated with the axis.** Replacing $(\hat\Xi,\Theta)$ by $(-\hat\Xi,-\Theta)$ leaves $\tilde{Q} = R(\cos\Theta + \hat\Xi\sin\Theta)$ fixed, because the two changes cancel in the term $\hat\Xi\sin\Theta$.
 3. **The modulus is defined up to sign, correlated with a shift of the angle.** Replacing $(R,\Theta)$ by $(-R,\Theta+\pi)$ gives the same element, since $\cos(\Theta+\pi) = -\cos\Theta$ and $\sin(\Theta+\pi) = -\sin\Theta$.
 
-Fixing the branches removes the first and the third: the four-factor representation fixes the modulus as $R = \rho = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$ with $r>0$, and a choice of the square root $B$ fixes the axis; then $\tilde\Xi$ and $\Theta$ are determined up to the period of the angle. What remains is the ambiguity of $\Theta$ modulo $2\pi$, which is precisely the multivaluedness of the logarithm: the branches of $\log\tilde{Q}$ differ by the kernel of the exponential, and the power functions inherit the ambiguity. This is why the logarithm and the powers are many-valued on $\mathbb{B}^\times$ while the exponential is single-valued.
+Fixing the branches removes the first and the third: the four-factor representation fixes the modulus as $R = \rho = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$ with $r>0$, and a choice of the square root $B$ fixes the axis; then $\hat\Xi$ and $\Theta$ are determined up to the period of the angle. What remains is the ambiguity of $\Theta$ modulo $2\pi$, which is precisely the multivaluedness of the logarithm: the branches of $\log\tilde{Q}$ differ by the kernel of the exponential, and the power functions inherit the ambiguity. This is why the logarithm and the powers are many-valued on $\mathbb{B}^\times$ while the exponential is single-valued.
 
 ## The Complex Representation
 
@@ -143,13 +171,13 @@ Fixing the branches removes the first and the third: the four-factor representat
 The complex representation is the pairing of the scale with the rotor against the phase with the boost:
 
 $$
-\tilde{Q} = Q\,\exp(i\Psi), \qquad Q = r\,\hat{q}, \qquad \exp(i\Psi) = e^{i\alpha}\,\hat{q}^{-1}B\hat{q} .
+\tilde{Q} = Q\,\exp(i\Psi), \qquad Q = r\,\tilde u, \qquad \exp(i\Psi) = e^{i\alpha}\,\tilde u^{-1}B\tilde u .
 $$
 
 The modulus is a real quaternion, of norm $\langle Q,Q\rangle_{\natural} = r^2$, and the exponential is central in its phase but not in its boost: the boost has been conjugated by the rotor, so that it can stand to the right of the modulus in the canonical order. Writing the conjugated boost as
 
 $$
-\hat{q}^{-1}B\hat{q} = \cosh\theta\,e_0 + i\sinh\theta\,\hat{n}', \qquad \theta = \frac{\psi}{2},
+\tilde u^{-1}B\tilde u = \cosh\theta\,e_0 + i\sinh\theta\,\hat{n}', \qquad \theta = \frac{\psi}{2},
 $$
 
 with $\psi$ the rapidity of $B$ and $\hat{n}'$ its axis rotated by the rotor, the exponent is
@@ -166,13 +194,13 @@ The representation is stated as follows. Write $\tilde{Q} = Q_r + iQ_i$ with $Q_
 
 ### The Modulus Is a Real Quaternion
 
-The modulus $Q = r\hat{q}$ of the pairing is exactly the modulus $Q_r(\cos\Psi)^{-1}$ of the construction from the element's parts. The identity is not a coincidence of two constructions; it follows from the polar representation. Since $Q = r\hat{q}$ is a real quaternion and $\exp(i\Psi)$ is an exponential of the central imaginary, the real quaternion part of $\tilde{Q} = Q\exp(i\Psi)$ is
+The modulus $Q = r\tilde u$ of the pairing is exactly the modulus $Q_r(\cos\Psi)^{-1}$ of the construction from the element's parts. The identity is not a coincidence of two constructions; it follows from the polar representation. Since $Q = r\tilde u$ is a real quaternion and $\exp(i\Psi)$ is an exponential of the central imaginary, the real quaternion part of $\tilde{Q} = Q\exp(i\Psi)$ is
 
 $$
 Q_r = Q\,\frac{\exp(i\Psi)+\exp(-i\Psi)}{2} = Q\cos\Psi ,
 $$
 
-because the complex conjugation of $\exp(i\Psi)$ is $\exp(-i\Psi)$ and the modulus $Q = r\hat{q}$ is fixed by it. Hence $Q = Q_r(\cos\Psi)^{-1}$, which is the construction formula. This identity was checked numerically on random elements with invertible $Q_r$, to $1.3\times10^{-12}$ in the coefficients.
+because the complex conjugation of $\exp(i\Psi)$ is $\exp(-i\Psi)$ and the modulus $Q = r\tilde u$ is fixed by it. Hence $Q = Q_r(\cos\Psi)^{-1}$, which is the construction formula. This identity was checked numerically on random elements with invertible $Q_r$, to $1.3\times10^{-12}$ in the coefficients.
 
 ### The Domain
 
@@ -188,7 +216,7 @@ The two conditions are again independent, and the second is met or missed indepe
 
 ### The Pairing Without the Construction
 
-A remark is in order, because it separates two distinct statements. The pairing $\tilde{Q} = (r\hat{q})\exp(i\Psi)$ is a grouping of the four factors of the polar representation, and the four factors exist whenever $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$. Hence the **factorisation** of $\tilde{Q}$ as a real quaternion times an exponential of the central imaginary exists on the whole complement of the null cone, while the **construction** of it from the real quaternion part needs $Q_r$ invertible. On the element $ie_1+ie_2$ the pairing gives
+A remark is in order, because it separates two distinct statements. The pairing $\tilde{Q} = (r\tilde u)\exp(i\Psi)$ is a grouping of the four factors of the polar representation, and the four factors exist whenever $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$. Hence the **factorisation** of $\tilde{Q}$ as a real quaternion times an exponential of the central imaginary exists on the whole complement of the null cone, while the **construction** of it from the real quaternion part needs $Q_r$ invertible. On the element $ie_1+ie_2$ the pairing gives
 
 $$
 ie_1+ie_2 = \left(e_1+e_2\right)\,\exp\!\left(i\frac{\pi}{2}\right),
@@ -203,20 +231,20 @@ with modulus $e_1+e_2$, which is a real quaternion, and exponent $\pi/2$, which 
 The Cartan representation is the pairing of the scale with the boost against the phase with the rotor:
 
 $$
-\tilde{Q} = H\,U , \qquad H = r\,B, \qquad U = e^{i\alpha}\,\hat{q} .
+\tilde{Q} = H\,U , \qquad H = r\,B, \qquad U = e^{i\alpha}\,\tilde u .
 $$
 
 The modulus is Hermitian positive and the second factor is unitary, so this is the matrix polar decomposition of the biquaternion: $\mathsf{M}_2(H)$ is the unique positive definite Hermitian square root of $\mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde{Q})^\dagger$ and $\mathsf{M}_2(U)$ is the unique unitary factor. Indeed
 
 $$
-\tilde{Q}\tilde{Q}^{*} = r^2B\hat{q}\hat{q}^{*} B^{*} = r^2B^2 = H^2 ,
+\tilde{Q}\tilde{Q}^{*} = r^2B\tilde u\tilde u^{*} B^{*} = r^2B^2 = H^2 ,
 $$
 
-using $\hat{q}\hat{q}^{*} = e_0$, the Hermitian character of $B$ and $B^2 = S$, so $H = \sqrt{\tilde{Q}\tilde{Q}^{*}}$ is the Hermitian positive square root, of norm $\langle H,H\rangle_{\natural} = r^2$.
+using $\tilde u\tilde u^{*} = e_0$, the Hermitian character of $B$ and $B^2 = S$, so $H = \sqrt{\tilde{Q}\tilde{Q}^{*}}$ is the Hermitian positive square root, of norm $\langle H,H\rangle_{\natural} = r^2$.
 
 ### The Statement
 
-The representation is the standard polar decomposition, and it needs no separate existence theorem: for $\tilde{Q}$ with $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$ the matrix $\mathsf{M}_2(\tilde{Q})$ is invertible, its polar decomposition is unique, and translating the two factors back through the algebra isomorphism gives $H$ and $U$ above. The modulus $H = rB$ combines the positive real scale with the Hermitian positive boost, and the second factor $U = e^{i\alpha}\hat{q}$ combines the central phase with the rotor.
+The representation is the standard polar decomposition, and it needs no separate existence theorem: for $\tilde{Q}$ with $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$ the matrix $\mathsf{M}_2(\tilde{Q})$ is invertible, its polar decomposition is unique, and translating the two factors back through the algebra isomorphism gives $H$ and $U$ above. The modulus $H = rB$ combines the positive real scale with the Hermitian positive boost, and the second factor $U = e^{i\alpha}\tilde u$ combines the central phase with the rotor.
 
 ### The Modulus Is Hermitian Positive
 
@@ -240,7 +268,7 @@ $$
 \tilde{Q} = |\tilde{Q}|\,e^{\alpha\theta_t}\,e^{I\beta\theta_h},
 $$
 
-with $\alpha$ and $\beta$ pure real unit quaternions, $I\beta$ a pure imaginary unit biquaternion, and two real angles $\theta_t$ and $\theta_h$. Translating their letters into those of this article, the trigonometric exponential $e^{\alpha\theta_t}$ is the rotor $\hat{q} = \exp(\theta\hat{\mathbf{u}})$ and the hyperbolic exponential $e^{I\beta\theta_h}$ is the boost, not about the original axis but about the axis rotated by the rotor: their product is $H = T^{-1}BT$ with $T$ the rotor, so their boost and the corpus boost $B$ are conjugate, with the same rapidity and the same norm. Their complex modulus $|\tilde{Q}|$ stands where the corpus writes the scale and the phase together.
+with $\alpha$ and $\beta$ pure real unit quaternions, $I\beta$ a pure imaginary unit biquaternion, and two real angles $\theta_t$ and $\theta_h$. Translating their letters into those of this article, the trigonometric exponential $e^{\alpha\theta_t}$ is the rotor $\tilde u = \exp(\theta\hat u)$ and the hyperbolic exponential $e^{I\beta\theta_h}$ is the boost, not about the original axis but about the axis rotated by the rotor: their product is $H = T^{-1}BT$ with $T$ the rotor, so their boost and the corpus boost $B$ are conjugate, with the same rapidity and the same norm. Their complex modulus $|\tilde{Q}|$ stands where the corpus writes the scale and the phase together.
 
 Three differences are worth recording, because a reader arriving from the paper meets them. The **order** is reversed: the two non-central factors are written angle first there and boost first here, and the two words are related by the conjugation above, the rotor itself being invariant under the reversal. The **count** differs: their $2+3+3 = 8$ keeps the complex modulus whole, where the corpus writes $1+1+3+3 = 8$ with the phase split off, and the paper explicitly declines to split a complex exponential into a scale and a unit phase. And the **branch and the uniqueness** of the general form are fixed and proved here, at $\alpha\in(-\pi/2,\pi/2]$, while the paper states neither and admits both orders. The mathematics of the pairing is the same in both places; what the corpus adds is the split of the modulus, the branch, and the uniqueness.
 
@@ -250,16 +278,16 @@ Three differences are worth recording, because a reader arriving from the paper 
 
 | representation | modulus | second factor | available when | condition on the element |
 |---|---|---|---|---|
-| Hamilton | $R = re^{i\alpha}$, complex scalar | $\exp(\tilde\Xi\Theta) = B\hat{q}$ | $(\mathbf{Q},\mathbf{Q})\neq0$ and $N\neq0$ | the vector part is non-null |
-| complex | $Q = r\hat{q}$, real quaternion | $\exp(i\Psi) = e^{i\alpha}\hat{q}^{-1}B\hat{q}$ | $Q_r\neq0$ and $N\neq0$ for the construction; $N\neq0$ for the pairing | the real quaternion part is invertible |
-| Cartan | $H = rB$, Hermitian positive | $U = e^{i\alpha}\hat{q}$, unitary | $N\neq0$ | none beyond invertibility |
+| Hamilton | $R = re^{i\alpha}$, complex scalar | $\exp(\hat\Xi\Theta) = B\tilde u$ | $(\vec Q,\vec Q)\neq0$ and $N\neq0$ | the vector part is non-null |
+| complex | $Q = r\tilde u$, real quaternion | $\exp(i\Psi) = e^{i\alpha}\tilde u^{-1}B\tilde u$ | $Q_r\neq0$ and $N\neq0$ for the construction; $N\neq0$ for the pairing | the real quaternion part is invertible |
+| Cartan | $H = rB$, Hermitian positive | $U = e^{i\alpha}\tilde u$, unitary | $N\neq0$ | none beyond invertibility |
 | polar representation | four factors | four factors | $N\neq0$ | none beyond invertibility |
 
 ### The Inclusions and the Counterexamples
 
 The domains are not nested. The domain of the Cartan representation contains the other two, and the Hamilton and complex domains overlap without containing each other. The following elements separate the cases, and each is computed in the examples below.
 
-| element | $N$ | $(\mathbf{Q},\mathbf{Q})$ | $Q_r$ | Hamilton | complex | Cartan |
+| element | $N$ | $(\vec Q,\vec Q)$ | $Q_r$ | Hamilton | complex | Cartan |
 |---|---|---|---|---|---|---|
 | $(1+i)e_0+e_1+2e_2$ | $5+2i$ | $5$ | $1+e_1+2e_2$ | yes | yes | yes |
 | $1+e_1+ie_2$ | $1$ | $0$ | $1+e_1$ | no | yes | yes |
@@ -271,10 +299,10 @@ The first line is the generic case, in which all three representations are avail
 The union of the three domains is the whole complement of the null cone, and the elements that the Hamilton and complex representations miss between them are exactly the nonzero purely imaginary complex scalars. The reason is elementary: $Q_r = 0$ means that every coefficient is purely imaginary, $Q_\mu = ib_\mu$ with $b_\mu\in\mathbb{R}$, and then
 
 $$
-(\mathbf{Q},\mathbf{Q}) = \sum_{k=1}^{3}(ib_k)^2 = -\sum_{k=1}^{3}b_k^2 \leq 0 ,
+(\vec Q,\vec Q) = \sum_{k=1}^{3}(ib_k)^2 = -\sum_{k=1}^{3}b_k^2 \leq 0 ,
 $$
 
-a negative real that vanishes only when $b_1 = b_2 = b_3 = 0$; verified to $3.6\times10^{-15}$ over constructed purely imaginary elements, with the imaginary part of $(\mathbf{Q},\mathbf{Q})$ vanishing identically. So the two conditions fail together only on $\tilde{Q} = ib_0e_0$, $b_0\neq0$. Each such element lies in the Cartan domain, with $r = |b_0|$, $\alpha = \pm\pi/2$, $H = |b_0|e_0$ and $U = \pm ie_0$; and it has an ordinary complex polar form $ib_0 = |b_0|\exp(\pm i\pi/2)$, which is the complex representation of the algebra only in the degenerate sense of the section on the two degenerate limits below.
+a negative real that vanishes only when $b_1 = b_2 = b_3 = 0$; verified to $3.6\times10^{-15}$ over constructed purely imaginary elements, with the imaginary part of $(\vec Q,\vec Q)$ vanishing identically. So the two conditions fail together only on $\tilde{Q} = ib_0e_0$, $b_0\neq0$. Each such element lies in the Cartan domain, with $r = |b_0|$, $\alpha = \pm\pi/2$, $H = |b_0|e_0$ and $U = \pm ie_0$; and it has an ordinary complex polar form $ib_0 = |b_0|\exp(\pm i\pi/2)$, which is the complex representation of the algebra only in the degenerate sense of the section on the two degenerate limits below.
 
 ### Why the Four-Factor Form Is the Reference
 
@@ -282,7 +310,7 @@ Two properties of the polar representation explain its role as the reference of 
 
 **Its domain is the largest.** The only obstruction is the vanishing of the biquaternion norm, which is the vanishing of the determinant of the matrix image. The partial representations fail on additional sets, and each failure is a failure to construct a modulus from the element: an axis cannot be normalised, or a quaternion cannot be inverted.
 
-**Its modulus separates into a scale and a phase.** The Hamilton representation calls the complex number $R = re^{i\alpha}$ the modulus, and one of its two constituents, $r$, is a positive real and the other, $e^{i\alpha}$, is central. The complex representation calls the real quaternion $r\hat{q}$ the modulus, one factor of which is a positive real and the other a rotation. The Cartan representation calls $rB$ the modulus, one factor of which is a positive real and the other a boost. In each case a positive real scale is entangled with a non-scalar factor, and only the four-factor representation exhibits the scale by itself.
+**Its modulus separates into a scale and a phase.** The Hamilton representation calls the complex number $R = re^{i\alpha}$ the modulus, and one of its two constituents, $r$, is a positive real and the other, $e^{i\alpha}$, is central. The complex representation calls the real quaternion $r\tilde u$ the modulus, one factor of which is a positive real and the other a rotation. The Cartan representation calls $rB$ the modulus, one factor of which is a positive real and the other a boost. In each case a positive real scale is entangled with a non-scalar factor, and only the four-factor representation exhibits the scale by itself.
 
 ## The Two Degenerate Limits
 
@@ -291,10 +319,10 @@ Two exact statements identify which classical polar form each named representati
 **A real quaternion.** If all four coefficients of $\tilde{Q}$ are real then $\tilde{Q}\in\mathbb{H}_{\mathbb{B}}$, the biquaternion norm $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \sum_\mu q_\mu^2$ is a positive real, and with the principal branch of the square root
 
 $$
-R = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}} \in \mathbb{R}_{>0}, \qquad \cos\Theta = \frac{q_0}{R}\in[-1,1], \qquad \sin\Theta = \frac{|\mathbf{q}|}{R}\in[0,1] ,
+R = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}} \in \mathbb{R}_{>0}, \qquad \cos\Theta = \frac{q_0}{R}\in[-1,1], \qquad \sin\Theta = \frac{|\vec q|}{R}\in[0,1] ,
 $$
 
-so both the modulus and the angle are real and $\tilde\Xi = \mathbf{q}/|\mathbf{q}|$ is a unit pure real quaternion. The Hamilton representation is then the quaternion polar representation $q = r\exp(\mu\theta)$ of the companion article *Quaternion Polar Element Representation*, with $r = R$, $\mu = \tilde\Xi$ and $\theta = \Theta$ real, and the identification is exact rather than asymptotic: over $100$ random real quaternions the imaginary parts of $R$, $\cos\Theta$ and $\sin\Theta$ vanished identically. The complex representation is available on the same elements and is degenerate there: $Q_i = 0$, hence $\tan\Psi = 0$, $\Psi = 0$ and $Q = Q_r = \tilde{Q}$, a representation by a modulus alone.
+so both the modulus and the angle are real and $\hat\Xi = \vec q/|\vec q|$ is a unit pure real quaternion. The Hamilton representation is then the quaternion polar representation $q = r\exp(\mu\theta)$ of the companion article *Quaternion Polar Element Representation*, with $r = R$, $\mu = \hat\Xi$ and $\theta = \Theta$ real, and the identification is exact rather than asymptotic: over $100$ random real quaternions the imaginary parts of $R$, $\cos\Theta$ and $\sin\Theta$ vanished identically. The complex representation is available on the same elements and is degenerate there: $Q_i = 0$, hence $\tan\Psi = 0$, $\Psi = 0$ and $Q = Q_r = \tilde{Q}$, a representation by a modulus alone.
 
 **A complex scalar.** If $\tilde{Q} = Ae_0$ with $A\in\mathbb{C}$ then the vector part vanishes, so $B = 0$ and the Hamilton representation is unavailable, while the complex representation gives
 
@@ -312,19 +340,19 @@ The algebra has three nontrivial conjugations: quaternion conjugation ${}^{\natu
 
 ### The Hamilton Representation
 
-In $\tilde{Q} = R\exp(\tilde\Xi\Theta)$ the modulus $R$ and the angle $\Theta$ are complex scalars and therefore central, while the axis $\tilde\Xi$ is pure, so that $\tilde\Xi^{\natural} = -\tilde\Xi$. Quaternion conjugation fixes the centre and reverses a pure element, complex conjugation is an automorphism and conjugates the three parameters, and Hermitian conjugation does both:
+In $\tilde{Q} = R\exp(\hat\Xi\Theta)$ the modulus $R$ and the angle $\Theta$ are complex scalars and therefore central, while the axis $\hat\Xi$ is pure, so that $\hat\Xi^{\natural} = -\hat\Xi$. Quaternion conjugation fixes the centre and reverses a pure element, complex conjugation is an automorphism and conjugates the three parameters, and Hermitian conjugation does both:
 
 $$
-(\tilde{Q})^{\natural} = R\exp(-\tilde\Xi\Theta), \qquad \bar{\tilde{Q}} = \bar{R}\exp(\tilde\Xi^{\natural}\bar{\Theta}), \qquad \tilde{Q}^{*} = \bar{R}\exp(-\tilde\Xi^{\natural}\bar{\Theta}) .
+(\tilde{Q})^{\natural} = R\exp(-\hat\Xi\Theta), \qquad \bar{\tilde{Q}} = \bar{R}\exp(\hat\Xi^{\natural}\bar{\Theta}), \qquad \tilde{Q}^{*} = \bar{R}\exp(-\hat\Xi^{\natural}\bar{\Theta}) .
 $$
 
-| conjugation | $R$ | $\tilde\Xi$ | $\Theta$ | result |
+| conjugation | $R$ | $\hat\Xi$ | $\Theta$ | result |
 |---|---|---|---|---|
-| quaternion ${}^{\natural}$ | $R$ | $-\tilde\Xi$ | $\Theta$ | $R\exp(-\tilde\Xi\Theta)$ |
-| complex $\bar{\cdot}$ | $\bar{R}$ | $\tilde\Xi^{\natural}$ | $\bar{\Theta}$ | $\bar{R}\exp(\tilde\Xi^{\natural}\bar{\Theta})$ |
-| Hermitian ${}^{*}$ | $\bar{R}$ | $-\tilde\Xi^{\natural}$ | $\bar{\Theta}$ | $\bar{R}\exp(-\tilde\Xi^{\natural}\bar{\Theta})$ |
+| quaternion ${}^{\natural}$ | $R$ | $-\hat\Xi$ | $\Theta$ | $R\exp(-\hat\Xi\Theta)$ |
+| complex $\bar{\cdot}$ | $\bar{R}$ | $\hat\Xi^{\natural}$ | $\bar{\Theta}$ | $\bar{R}\exp(\hat\Xi^{\natural}\bar{\Theta})$ |
+| Hermitian ${}^{*}$ | $\bar{R}$ | $-\hat\Xi^{\natural}$ | $\bar{\Theta}$ | $\bar{R}\exp(-\hat\Xi^{\natural}\bar{\Theta})$ |
 
-The consistency of the second row is a consequence of $\langle\bar{\tilde{Q}},\bar{\tilde{Q}}\rangle_{\natural} = \overline{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$, hence $R(\bar{\tilde{Q}}) = \overline{R(\tilde{Q})}$; the computed defect in that identity was exactly zero over $100$ random elements. Over the same sample the largest defect in the four coefficients of the three identities of the table was $9.9\times10^{-16}$, and the identity $R(\cos\Theta+\tilde\Xi\sin\Theta) = \tilde{Q}$ itself was verified on the same run to the same order. Only quaternion conjugation and Hermitian conjugation reverse the axis; complex conjugation preserves it and conjugates it.
+The consistency of the second row is a consequence of $\langle\bar{\tilde{Q}},\bar{\tilde{Q}}\rangle_{\natural} = \overline{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$, hence $R(\bar{\tilde{Q}}) = \overline{R(\tilde{Q})}$; the computed defect in that identity was exactly zero over $100$ random elements. Over the same sample the largest defect in the four coefficients of the three identities of the table was $9.9\times10^{-16}$, and the identity $R(\cos\Theta+\hat\Xi\sin\Theta) = \tilde{Q}$ itself was verified on the same run to the same order. Only quaternion conjugation and Hermitian conjugation reverse the axis; complex conjugation preserves it and conjugates it.
 
 ### The Complex Representation
 
@@ -381,21 +409,21 @@ The two named representations are distinguished by conjugation as sharply as by 
 Take $\tilde{Q} = (1+i)e_0+e_1+2e_2$, the generic element of the table above. Its polar representation, computed in the companion article, is
 
 $$
-r = 2.320595787, \quad \alpha = 0.190253189, \quad B = 1.072349609\,e_0 - 0.173166789\,i\,e_1 - 0.346333577\,i\,e_2, \quad \hat{q} = 0.470592172\,e_0+0.394599292\,e_1+0.789198585\,e_2 .
+r = 2.320595787, \quad \alpha = 0.190253189, \quad B = 1.072349609\,e_0 - 0.173166789\,i\,e_1 - 0.346333577\,i\,e_2, \quad \tilde u = 0.470592172\,e_0+0.394599292\,e_1+0.789198585\,e_2 .
 $$
 
-*The Hamilton regrouping.* The vector part is $\mathbf{Q} = e_1+2e_2$, so $(\mathbf{Q},\mathbf{Q}) = 5$ and $B_0 = \sqrt{5} = 2.236067978$; the axis is $\tilde\Xi = (e_1+2e_2)/\sqrt{5} = 0.447213595\,e_1+0.894427191\,e_2$, which satisfies $\tilde\Xi^2 = -1$. The modulus is $R = \rho = 2.278723854+0.438842117i$, and the complex angle is fixed by
+*The Hamilton regrouping.* The vector part is $\vec Q = e_1+2e_2$, so $(\vec Q,\vec Q) = 5$ and $B_0 = \sqrt{5} = 2.236067978$; the axis is $\hat\Xi = (e_1+2e_2)/\sqrt{5} = 0.447213595\,e_1+0.894427191\,e_2$, which satisfies $\hat\Xi^2 = -1$. The modulus is $R = \rho = 2.278723854+0.438842117i$, and the complex angle is fixed by
 
 $$
 \cos\Theta = \frac{Q_0}{R} = 0.504639332+0.341657461i, \qquad \sin\Theta = \frac{\sqrt{5}}{R} = 0.946188580-0.182219271i ,
 $$
 
-so that $\tilde{Q} = R(\cos\Theta+\tilde\Xi\sin\Theta)$; the reconstruction was checked to $3.9\times10^{-14}$ over random elements. The identity $\exp(\tilde\Xi\Theta) = B\hat{q}$ then holds term by term, both sides being $\tilde{Q}/R$, and with it the equality of the Hamilton representation with the first pairing of the four factors.
+so that $\tilde{Q} = R(\cos\Theta+\hat\Xi\sin\Theta)$; the reconstruction was checked to $3.9\times10^{-14}$ over random elements. The identity $\exp(\hat\Xi\Theta) = B\tilde u$ then holds term by term, both sides being $\tilde{Q}/R$, and with it the equality of the Hamilton representation with the first pairing of the four factors.
 
 *The complex regrouping.* The modulus is the real quaternion
 
 $$
-Q = r\hat{q} = 1.092054\,e_0 + 0.915705\,e_1 + 1.831411\,e_2 ,
+Q = r\tilde u = 1.092054\,e_0 + 0.915705\,e_1 + 1.831411\,e_2 ,
 $$
 
 matching the modulus $Q_r(\cos\Psi)^{-1}$ of the construction with $Q_r = 1+e_1+2e_2$, and the exponent is
@@ -415,7 +443,7 @@ $$
 Hermitian positive with $\langle H,H\rangle_{\natural} = r^2 = 5.385164807$, and the unitary factor is
 
 $$
-U = e^{i\alpha}\hat{q} = (0.462100989+0.088992519i)e_0 + (0.387479295+0.074621694i)e_1 + (0.774958590+0.149243388i)e_2 .
+U = e^{i\alpha}\tilde u = (0.462100989+0.088992519i)e_0 + (0.387479295+0.074621694i)e_1 + (0.774958590+0.149243388i)e_2 .
 $$
 
 The reconstruction $\tilde{Q} = HU$ was checked to $2.2\times10^{-16}$.
@@ -424,37 +452,37 @@ The three regroupings of the same four factors are therefore displayed on one el
 
 ### The Element with a Null Vector Part
 
-Take $\tilde{Q} = 1+e_1+ie_2$. Then $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 1+1+i^2 = 1$ and $(\mathbf{Q},\mathbf{Q}) = 1+i^2 = 0$, so the Hamilton representation does not exist: $B_0 = 0$ and the axis is undefined. The other two representations do exist, with
+Take $\tilde{Q} = 1+e_1+ie_2$. Then $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 1+1+i^2 = 1$ and $(\vec Q,\vec Q) = 1+i^2 = 0$, so the Hamilton representation does not exist: $B_0 = 0$ and the axis is undefined. The other two representations do exist, with
 
 $$
-r = 1, \qquad \alpha = 0, \qquad B = 1.414213562\,e_0 + 0.707106781\,i\,e_2 + 0.707106781\,i\,e_3, \qquad \hat{q} = 0.707106781\left(e_0+e_1\right) ,
+r = 1, \qquad \alpha = 0, \qquad B = 1.414213562\,e_0 + 0.707106781\,i\,e_2 + 0.707106781\,i\,e_3, \qquad \tilde u = 0.707106781\left(e_0+e_1\right) ,
 $$
 
-so that the complex modulus is $Q = \hat{q} = 0.707106781(e_0+e_1)$ and the Cartan modulus is $H = B$. The modulus computed from the parts, $Q_r(\cos\Psi)^{-1}$, is the same quaternion, and this equality is the identity proved in the section on the complex representation above; the element is also the non-scalar example of that section.
+so that the complex modulus is $Q = \tilde u = 0.707106781(e_0+e_1)$ and the Cartan modulus is $H = B$. The modulus computed from the parts, $Q_r(\cos\Psi)^{-1}$, is the same quaternion, and this equality is the identity proved in the section on the complex representation above; the element is also the non-scalar example of that section.
 
 ### The Element with a Vanishing Real Part
 
 Take $\tilde{Q} = ie_1+ie_2$. Then $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = -2$ and $Q_r = 0$, so the construction of the complex representation from the element's parts fails. The polar representation gives
 
 $$
-r = \sqrt{2}, \qquad \alpha = \frac{\pi}{2}, \qquad B = e_0, \qquad \hat{q} = \frac{e_1+e_2}{\sqrt{2}} ,
+r = \sqrt{2}, \qquad \alpha = \frac{\pi}{2}, \qquad B = e_0, \qquad \tilde u = \frac{e_1+e_2}{\sqrt{2}} ,
 $$
 
-so the Hamilton representation exists, with $B_0 = \sqrt{-2} = i\sqrt{2}$, axis $\tilde\Xi = (e_1+e_2)/\sqrt2$, $R = i\sqrt2$, $\cos\Theta = 0$ and $\sin\Theta = 1$:
+so the Hamilton representation exists, with $B_0 = \sqrt{-2} = i\sqrt{2}$, axis $\hat\Xi = (e_1+e_2)/\sqrt2$, $R = i\sqrt2$, $\cos\Theta = 0$ and $\sin\Theta = 1$:
 
 $$
 \tilde{Q} = i\sqrt{2}\,\exp\!\left(\frac{e_1+e_2}{\sqrt2}\frac{\pi}{2}\right) .
 $$
 
-The complex representation's pairing, on the other hand, exists with modulus $r\hat{q} = e_1+e_2$ and exponent $\Psi = \alpha = \pi/2$, as recorded above. The example therefore exhibits both the failure of the construction and the existence of the factorisation.
+The complex representation's pairing, on the other hand, exists with modulus $r\tilde u = e_1+e_2$ and exponent $\Psi = \alpha = \pi/2$, as recorded above. The example therefore exhibits both the failure of the construction and the existence of the factorisation.
 
 ### The Scalar Imaginary
 
-Take $\tilde{Q} = i$. Then $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = -1$, so the element is invertible and the polar representation is $i = 1\cdot e^{i\pi/2}\cdot e_0\cdot e_0$: the scale is one and the boost and the rotor are trivial. Both partial constructions fail, since $\mathbf{Q} = 0$ and $Q_r = 0$. The Cartan representation is available and reads $i = e_0\cdot i$, with modulus $e_0$ and unitary factor $i$: the central phase of the polar representation has been absorbed into the unitary factor, which is exactly the grouping that defines the Cartan representation. The example is the clearest single illustration of the difference between having a representation and being able to construct one from the element's parts.
+Take $\tilde{Q} = i$. Then $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = -1$, so the element is invertible and the polar representation is $i = 1\cdot e^{i\pi/2}\cdot e_0\cdot e_0$: the scale is one and the boost and the rotor are trivial. Both partial constructions fail, since $\vec Q = 0$ and $Q_r = 0$. The Cartan representation is available and reads $i = e_0\cdot i$, with modulus $e_0$ and unitary factor $i$: the central phase of the polar representation has been absorbed into the unitary factor, which is exactly the grouping that defines the Cartan representation. The example is the clearest single illustration of the difference between having a representation and being able to construct one from the element's parts.
 
 ## Summary
 
-The polar representation of a biquaternion has four factors, so it has exactly three pairings, and they are the Hamilton representation $R\exp(\tilde\Xi\Theta)$ with $R = re^{i\alpha}$ and the exponential $B\hat{q}$, the complex representation $Q\exp(i\Psi)$ with $Q = r\hat{q}$ and the exponential $e^{i\alpha}\hat{q}^{-1}B\hat{q}$, and the Cartan representation $HU$ with $H = rB$ and $U = e^{i\alpha}\hat{q}$. Each is obtained from the polar representation by multiplying two factors together, with a conjugation when the rotor has to cross the boost, and each is unique within its domain once the branch of the square root of the biquaternion norm is fixed. The Hamilton representation needs the vector part non-null, the complex representation as constructed needs the real quaternion part invertible, and the Cartan representation needs only $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$; the three domains are not nested, the Cartan domain contains the other two, the union of the three is the complement of the null cone, and the only elements in none of the first two are the purely imaginary complex scalars. The four-factor representation is the reference because its domain is the complement of the null cone alone and because it separates the scale from the phase, from the rotor and from the boost, whereas each partial representation entangles the scale with one of the other three.
+The polar representation of a biquaternion has four factors, so it has exactly three pairings, and they are the Hamilton representation $R\exp(\hat\Xi\Theta)$ with $R = re^{i\alpha}$ and the exponential $B\tilde u$, the complex representation $Q\exp(i\Psi)$ with $Q = r\tilde u$ and the exponential $e^{i\alpha}\tilde u^{-1}B\tilde u$, and the Cartan representation $HU$ with $H = rB$ and $U = e^{i\alpha}\tilde u$. Each is obtained from the polar representation by multiplying two factors together, with a conjugation when the rotor has to cross the boost, and each is unique within its domain once the branch of the square root of the biquaternion norm is fixed. The Hamilton representation needs the vector part non-null, the complex representation as constructed needs the real quaternion part invertible, and the Cartan representation needs only $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$; the three domains are not nested, the Cartan domain contains the other two, the union of the three is the complement of the null cone, and the only elements in none of the first two are the purely imaginary complex scalars. The four-factor representation is the reference because its domain is the complement of the null cone alone and because it separates the scale from the phase, from the rotor and from the boost, whereas each partial representation entangles the scale with one of the other three.
 
 The three named representations are also distinguished by their behaviour under the conjugations. On the Hamilton representation, quaternion conjugation and Hermitian conjugation reverse the axis and leave the angle, while complex conjugation conjugates the modulus, the axis and the angle; on the complex representation, complex conjugation flips only the scalar imaginary of the exponent, and quaternion conjugation and Hermitian conjugation exchange the order of the two factors, the angle being preserved exactly when the two quaternion parts of the element commute; on the Cartan representation, Hermitian conjugation replaces the pair $(H,U)$ by $(U^{*} HU, U^{*})$. In the two degenerate limits the named representations reproduce the classical polar forms: a real quaternion gives the quaternion polar representation in the Hamilton representation, and a complex scalar gives the ordinary complex polar form in the complex representation. Two facts recorded in the Hamilton section belong to the representation rather than to the grouping: the polar form of $\tilde{Q}$ is not the polar form of $\exp(\tilde{Q})$, the two agreeing only when $R = e^{Q_0}$ and $\Theta = B$, and the three parameters are unique only up to the correlated replacements that the branch choices remove, the residue being the multivaluedness of the logarithm.
 
@@ -462,19 +490,19 @@ The three named representations are also distinguished by their behaviour under 
 
 | symbol | meaning |
 |---|---|
-| $\tilde{Q} = r e^{i\alpha}B\hat{q}$ | the polar representation, four factors |
-| $r$, $e^{i\alpha}$, $B$, $\hat{q}$ | scale, central phase, Hermitian positive boost, unit real quaternion rotor |
+| $\tilde{Q} = r e^{i\alpha}B\tilde u$ | the polar representation, four factors |
+| $r$, $e^{i\alpha}$, $B$, $\tilde u\in\mathrm{Sp}(1)$ | scale, central phase, Hermitian positive boost, unit real quaternion rotor |
 | $\rho = re^{i\alpha} = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$ | the complex modulus of the four-factor representation |
-| $\mathbf{Q} = Q_1e_1+Q_2e_2+Q_3e_3$ | the vector part of $\tilde{Q}$ |
-| $(\mathbf{Q},\mathbf{Q}) = Q_1^2+Q_2^2+Q_3^2$ | the general plain bilinear square of the vector part |
+| $\vec Q = Q_1e_1+Q_2e_2+Q_3e_3$ | the vector part of $\tilde{Q}$ |
+| $(\vec Q,\vec Q) = Q_1^2+Q_2^2+Q_3^2$ | the general plain bilinear square of the vector part |
 | $Q_r$, $Q_i$ | the real and imaginary quaternion parts of $\tilde{Q}$ |
 | $R$ | Hamilton modulus, the complex scalar $\rho$ |
-| $\tilde\Xi$, $\Theta$ | Hamilton axis, parallel to $\mathbf{Q}$, and complex angle |
+| $\hat\Xi$, $\Theta$ | Hamilton axis, parallel to $\vec Q$, and complex angle |
 | $\exp(\tilde{Q})$ | the exponential; its Hamilton modulus $e^{Q_0}$ and angle $B$ are generally not those of $\tilde{Q}$ |
-| $Q$ | complex modulus, the real quaternion $r\hat{q}$ |
+| $Q$ | complex modulus, the real quaternion $r\tilde u$ |
 | $\Psi = \alpha+\theta\hat{n}'$ | complex angle, a real quaternion |
 | $\theta = \psi/2$, $\hat{n}'$ | half the boost rapidity, and the rotor-rotated boost axis |
-| $H = rB$, $U = e^{i\alpha}\hat{q}$ | Cartan modulus, Hermitian positive, and unitary factor |
+| $H = rB$, $U = e^{i\alpha}\tilde u$ | Cartan modulus, Hermitian positive, and unitary factor |
 | ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ | quaternion, complex and Hermitian conjugation |
 
 ## Further Reading
@@ -485,6 +513,6 @@ The three named representations are also distinguished by their behaviour under 
 - *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the null cone on which all four representations fail.
 - *Quaternion Polar Element Representation* (`articles_maths/quaternion-polar-element-representation.md`), for the quaternion polar representation that the Hamilton representation generalises, and which the complex representation reduces to on the real quaternions.
 - *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_physics/the-2x2-matrix-element-representation-m2c-of-biquaternions.md`), for the identification of the Cartan representation with the matrix polar decomposition.
-- *The Lorentz Group in Biquaternionic Form — Structure and Representations* (`articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.md`), for the Cartan representation $\tilde{\Lambda} = \tilde{B}\tilde{R}$ of the physics articles.
+- *The Lorentz Group in Biquaternionic Form — Structure and Representations* (`articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.md`), for the Cartan representation $\tilde{U} = \tilde{B}\tilde{R}$ of the physics articles.
 - *Complex Polar Element Representation* (`articles_maths/complex-polar-element-representation.md`) and *Split-Complex Polar Element Representation* (`articles_maths/split-complex-polar-element-representation.md`), for the two-dimensional members of the series and the trichotomy of the exponential $\exp(\nu\theta)$ that all four factors of these pairings are built from.
 - S. J. Sangwine and E. Hitzer, "Polar decomposition of complexified quaternions and octonions", *Advances in Applied Clifford Algebras* (2020), DOI 10.1007/s00006-020-1048-y; technical report CES-535, University of Essex (2019), for Theorem 1 and Corollary 1, the published form of the Cartan pairing discussed in the section above.

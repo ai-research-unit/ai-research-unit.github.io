@@ -16,12 +16,12 @@ This article establishes:
 
 1. **The coherent-state path integral for spin-1/2.** The resolution of identity on $\mathbb{CP}^1$, the overlap, the action $S = \int(i\hbar\langle z|\dot z\rangle - \langle z|\tilde{H}|z\rangle)dt$, and the measure.
 2. **The Wess–Zumino term is the geometric phase.** For a closed loop of the star, $\int i\langle z|\dot z\rangle\,dt = -\Omega_{\mathrm{sgn}}/2$, exactly the solid-angle phase of the spin-1/2 holonomy; verified below on a one-parameter family of loops.
-3. **The saddle point is Larmor precession.** Varying the action with the Wess–Zumino term included gives the classical equation $\dot{\mathbf{r}} = \gamma\,\mathbf{r}\times\mathbf{B}$ (the Bloch/Larmor equation), so the classical spin is the saddle point of the spin path integral.
+3. **The saddle point is Larmor precession.** Varying the action with the Wess–Zumino term included gives the classical equation $\dot{\vec r} = \gamma\,\vec r\times\vec B$ (the Bloch/Larmor equation), so the classical spin is the saddle point of the spin path integral.
 4. **The spinor (Grassmann) form.** The same propagator can be written as a path integral over a two-component spinor with the constraint $\bar\psi\psi = 1$; the two forms are related by the change of variables $\zeta = \psi_2/\psi_1$.
 5. **The double cover is visible in the path integral.** The coherent-state integral is over the sphere of idempotents and loses the phase; the spinor integral is over the double cover and retains it. The Wess–Zumino term is the obstruction to writing the action purely in terms of the idempotent.
 6. **Topological consequences.** The Wess–Zumino term is a topological term whose coefficient is the spin; it controls spin tunnelling and the quenching of the tunnelling amplitude, and it is the same object as the curvature quantisation of the geometric-phase articles.
 
-The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$, $\tilde\Pi_{1,2}(\hat\mu) = \tfrac12(e_0\pm i\hat\mu)$, $\tilde{\rho} = \tfrac12(e_0+i\mathbf{r})$, the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, and the isomorphism $\mathsf{M}_2$ with $ie_k\mapsto\sigma_k$.
+The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$, $\tilde\Pi_{1,2}(\hat\mu) = \tfrac12(e_0\pm i\hat\mu)$, $\tilde{\rho} = \tfrac12(e_0+i\vec r)$, the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, and the isomorphism $\mathsf{M}_2$ with $ie_k\mapsto\sigma_k$.
 
 The companion articles supply the pieces:
 - Companion article *The Path Integral in Biquaternionic Form*, for the path integral in the algebra and its classical limit.
@@ -163,11 +163,11 @@ $$
 which is $\hbar$ times the Berry curvature of the geometric-phase analysis. The Hamiltonian term supplies the energy. The resulting equation is the precession
 
 $$
-\dot{\mathbf{r}} = \gamma\,\mathbf{r}\times\mathbf{B}
-= \omega_L\,\mathbf{r}\times\hat{n}_0,
+\dot{\vec r} = \gamma\,\vec r\times\vec B
+= \omega_L\,\vec r\times\hat{n}_0,
 $$
 
-the Larmor/Bloch equation for the classical spin, with $|\mathbf{r}| = 1$. The classical spin is the saddle point of the spin-1/2 path integral, and its dynamics is precession on the sphere.
+the Larmor/Bloch equation for the classical spin, with $|\vec r| = 1$. The classical spin is the saddle point of the spin-1/2 path integral, and its dynamics is precession on the sphere.
 
 ### The Classical Limit as a Phase-Space Problem
 
@@ -261,7 +261,7 @@ $$
 
 one half the oriented solid angle: the geometric phase. This was verified numerically for five values of $\theta_0$.
 
-The saddle point of $S$ is the classical Larmor precession $\dot{\mathbf{r}} = \gamma\,\mathbf{r}\times\mathbf{B}$, obtained from the symplectic form $\omega = -\tfrac{\hbar}{2}\sin\theta\,d\theta\wedge d\phi$ and the classical Zeeman energy $\langle\tilde{H}\rangle = -\tfrac{\hbar\omega_L}{2}\hat{n}\cdot\hat{n}_0$. The same propagator can be written as a Grassmann integral over a two-component spinor with $\bar\psi\psi=1$, related to the coherent-state form by $\zeta = \psi_2/\psi_1$.
+The saddle point of $S$ is the classical Larmor precession $\dot{\vec r} = \gamma\,\vec r\times\vec B$, obtained from the symplectic form $\omega = -\tfrac{\hbar}{2}\sin\theta\,d\theta\wedge d\phi$ and the classical Zeeman energy $\langle\tilde{H}\rangle = -\tfrac{\hbar\omega_L}{2}\hat{n}\cdot\hat{n}_0$. The same propagator can be written as a Grassmann integral over a two-component spinor with $\bar\psi\psi=1$, related to the coherent-state form by $\zeta = \psi_2/\psi_1$.
 
 In the biquaternion algebra the coherent-state integral is an integral over the sphere of idempotents $\tilde\Pi_1(\hat{n})$ with energy $\mathrm{Tr}(\tilde{P}\tilde{H})$, and the spinor integral is its lift to the double cover; the Wess–Zumino term is the central phase of the rotor along the path. The term is topological: the symplectic form of the sphere is not exact, its total integral has magnitude $2\pi\hbar$, and the coefficient of the term is the spin. For a half-integer spin this makes the tunnelling instanton action imaginary by an odd multiple of $i\pi$, quenching the tunnelling between opposite classical states.
 
@@ -281,7 +281,7 @@ In the biquaternion algebra the coherent-state integral is an integral over the 
 | $\mathbb{1} = \tfrac{2}{\pi}\int\tfrac{d^2z}{(1+|z|^2)^2}|z\rangle\langle z|$ | Resolution of identity (spin-1/2) |
 | $S_{WZ} = i\hbar\oint\langle z|\partial_t|z\rangle dt = -\hbar\tfrac{\Omega}{2}$ | Wess–Zumino term |
 | $\omega = -\tfrac{\hbar}{2}\sin\theta\,d\theta\wedge d\phi$ | Symplectic form of the sphere |
-| $\dot{\mathbf{r}} = \gamma\,\mathbf{r}\times\mathbf{B}$ | Classical Larmor precession |
+| $\dot{\vec r} = \gamma\,\vec r\times\vec B$ | Classical Larmor precession |
 | $\bar\psi,\psi$ | Grassmann spinor variables, $\bar\psi\psi=1$ |
 | $\left|\int_{S^2}\omega\right| = 2\pi\hbar$ | Monopole flux; non-exactness of $\omega$ |
 

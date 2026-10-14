@@ -50,7 +50,7 @@ i.e., $\nu_4 = \pm c_0\|\nu\|$. The characteristic surfaces are the light cones.
 
 ### The Propagation of Smoothness
 
-In a linear hyperbolic equation, discontinuities in the initial data propagate along the characteristics without changing their structure. But **smooth initial data remains smooth for all time**. If the initial field $\tilde{F}(\mathbf{x}, 0)$ is $C^\infty$, then so is $\tilde{F}(\mathbf{x}, t)$ for every $t > 0$.
+In a linear hyperbolic equation, discontinuities in the initial data propagate along the characteristics without changing their structure. But **smooth initial data remains smooth for all time**. If the initial field $\tilde{F}(\vec x, 0)$ is $C^\infty$, then so is $\tilde{F}(\vec x, t)$ for every $t > 0$.
 
 The reason is that the solution operator is a Fourier multiplier: in the frequency domain, the solution is obtained by multiplying the initial data by a bounded function. The multiplier does not create new singularities; it only propagates the existing ones.
 
@@ -78,7 +78,7 @@ $$
 
 where $\tilde{F}^+$ and $\tilde{F}^-$ are the limiting values on the two sides of $S$.
 
-The distributional derivative of a discontinuous function acquires a surface term. If $\tilde{n}$ is the biquaternion-valued normal to $S$ (with $\tilde{n} = \mathbf{n}$ for a spatial surface and $\tilde{n} = i\nu_t\,e_0 + \mathbf{n}$ for a general hypersurface, in the $ict$ convention) and $\delta_S$ is the surface delta distribution, then
+The distributional derivative of a discontinuous function acquires a surface term. If $\tilde{n}$ is the biquaternion-valued normal to $S$ (with $\tilde{n} = \vec n$ for a spatial surface and $\tilde{n} = i\nu_t\,e_0 + \vec n$ for a general hypersurface, in the $ict$ convention) and $\delta_S$ is the surface delta distribution, then
 
 $$
 \partial_\mu \tilde{F} = \{\partial_\mu \tilde{F}\} + [\tilde{F}]_S\, n_\mu\, \delta_S,
@@ -104,7 +104,7 @@ So a discontinuity cannot propagate on a non-characteristic surface; the field m
 
 **Consequence for a characteristic surface.** If the surface is **characteristic** (the light cone, $\tilde{n}\tilde{n}^{\natural} = 0$), then $\tilde{n}$ is a zero divisor and the jump condition has nontrivial solutions. This is the case of a propagating wave front, treated in the next subsection.
 
-**Remark on material interfaces.** At a **material interface** (a surface across which the electromagnetic properties $\epsilon$ and $\mu$ jump), the field $\tilde{F}$ can jump even for a non-characteristic surface, because the constitutive relation $\tilde{F} = i\sqrt{\epsilon}\mathbf{E} - \sqrt{\mu}\mathbf{H}$ itself involves quantities that jump. The boundary conditions at such an interface are the standard ones — $[\mathbf{D}]\cdot n = 0$ and $[\mathbf{B}]\cdot n = 0$, with the tangential components of $\mathbf{E}$ and $\mathbf{H}$ continuous — but these follow from the integral form of Maxwell's equations across the interface, not from the jump condition $\tilde{n}[\tilde{F}]_S = 0$ in a homogeneous medium.
+**Remark on material interfaces.** At a **material interface** (a surface across which the electromagnetic properties $\epsilon$ and $\mu$ jump), the field $\tilde{F}$ can jump even for a non-characteristic surface, because the constitutive relation $\tilde{F} = i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H$ itself involves quantities that jump. The boundary conditions at such an interface are the standard ones — $[\vec D]\cdot n = 0$ and $[\vec B]\cdot n = 0$, with the tangential components of $\vec E$ and $\vec H$ continuous — but these follow from the integral form of Maxwell's equations across the interface, not from the jump condition $\tilde{n}[\tilde{F}]_S = 0$ in a homogeneous medium.
 
 ### The Light-Cone Condition
 
@@ -123,7 +123,7 @@ The wave-front condition implies that the jump $[\tilde{F}]_S$ has a specific st
 The derivation above uses the homogeneous biquaternionic Maxwell equation: a first-order operator and no zeroth-order term. The biquaternionic wave equations of the electro-gravimagnetic programme carry one, and it is worth recording that a **constant** zeroth-order term leaves the jump condition untouched. Write the biwave equation as $D^+_F\hat{B} = \hat{G}$ with $D^+_F = \nabla^+ + f + F$, $\nabla^+ = \partial_\tau + i\nabla$, $f$ a scalar and $F$ a constant vector, and $\hat{B} = B H$ the field extended across the front by a step. Only the derivative produces a layer, because the zeroth-order term contains the field and not its derivative:
 
 $$
-\nabla^+\hat{B} = \{\nabla^+B\} + \{n_0 + i\mathbf{n}\}\circ[B]_F\,\delta_F ,
+\nabla^+\hat{B} = \{\nabla^+B\} + \{n_0 + i\vec n\}\circ[B]_F\,\delta_F ,
 \qquad
 (f+F)\circ\hat{B} = \{(f+F)\circ B\} ,
 $$
@@ -131,75 +131,75 @@ $$
 so separating the surface terms gives the same condition as before,
 
 $$
-\{n_0 + i\mathbf{n}\}\circ[B]_F = 0 .
+\{n_0 + i\vec n\}\circ[B]_F = 0 .
 $$
 
-The $i$ on the spatial part of the normal is the bigradient's, and the condition is the article's $\tilde{n}[\tilde{F}]_S = 0$: the two normals differ only by the position of the $i$, since $-i(n_0 + i\mathbf{n}) = \mathbf{n} - i n_0$ puts the imaginary unit in the time slot, which is the $ict$ convention's $\tilde{n} = i\nu_t e_0 + \mathbf{n}$, and an overall factor in a vanishing condition is empty. Normalising the wave vector gives $n_0 = -1$, and separating the scalar and vector parts of $[B]_F = [b] + [\mathbf{B}]$,
+The $i$ on the spatial part of the normal is the bigradient's, and the condition is the article's $\tilde{n}[\tilde{F}]_S = 0$: the two normals differ only by the position of the $i$, since $-i(n_0 + i\vec n) = \vec n - i n_0$ puts the imaginary unit in the time slot, which is the $ict$ convention's $\tilde{n} = i\nu_t e_0 + \vec n$, and an overall factor in a vanishing condition is empty. Normalising the wave vector gives $n_0 = -1$, and separating the scalar and vector parts of $[B]_F = [b] + [\vec B]$,
 
 $$
-[b] + i(\mathbf{n},[\mathbf{B}]) = 0 ,
+[b] + i(\vec n,[\vec B]) = 0 ,
 \qquad
-[\mathbf{B}] = i\,\bigl([b]\,\mathbf{n} + [\mathbf{n},[\mathbf{B}]]\bigr) .
+[\vec B] = i\,\bigl([b]\,\vec n + [\vec n,[\vec B]]\bigr) .
 $$
 
-The scalar equation carries the whole transversality statement: if the scalar jump vanishes — as it does for a pure-vector biquaternion, which is the electromagnetic case — then $(\mathbf{n},[\mathbf{B}]) = 0$ and the front is transverse, exactly as in the light-cone condition above. The constant coefficient appears in neither, which is the same statement as the companion article's composition lemma read in the other direction: a constant zeroth-order coefficient enters the equation as a mass-like term and the jump condition not at all, because a discontinuity is a property of the derivative.
+The scalar equation carries the whole transversality statement: if the scalar jump vanishes — as it does for a pure-vector biquaternion, which is the electromagnetic case — then $(\vec n,[\vec B]) = 0$ and the front is transverse, exactly as in the light-cone condition above. The constant coefficient appears in neither, which is the same statement as the companion article's composition lemma read in the other direction: a constant zeroth-order coefficient enters the equation as a mass-like term and the jump condition not at all, because a discontinuity is a property of the derivative.
 
 ## The Joint Jump Conditions and Transversality
 
 The wave-front condition is compact in the biquaternionic variable, but its content on the electric and magnetic fields is a **joint jump system**. Write the A-field of the Maxwell article,
 
 $$
-\mathcal{A} = \sqrt{\epsilon}\,\mathbf{E} + i\sqrt{\mu}\,\mathbf{H} = -i\tilde{F},
+\mathcal{A} = \sqrt{\epsilon}\,\vec E + i\sqrt{\mu}\,\vec H = -i\tilde{F},
 $$
 
-the dual field strength. On a wave front $F_t$ moving with unit normal $\mathbf{n}$ at speed $c$, the condition $[\tilde{F}]_{F_t} = -i[\tilde{F}]_{F_t}\times\mathbf{n}$ is equivalent to the pair
+the dual field strength. On a wave front $F_t$ moving with unit normal $\vec n$ at speed $c$, the condition $[\tilde{F}]_{F_t} = -i[\tilde{F}]_{F_t}\times\vec n$ is equivalent to the pair
 
 $$
-\sqrt{\epsilon}\,[\mathbf{E}]_{F_t} = \sqrt{\mu}\,[\mathbf{H}]_{F_t}\times\mathbf{n},
+\sqrt{\epsilon}\,[\vec E]_{F_t} = \sqrt{\mu}\,[\vec H]_{F_t}\times\vec n,
 \qquad
-\sqrt{\mu}\,[\mathbf{H}]_{F_t} = \sqrt{\epsilon}\,\mathbf{n}\times[\mathbf{E}]_{F_t}.
+\sqrt{\mu}\,[\vec H]_{F_t} = \sqrt{\epsilon}\,\vec n\times[\vec E]_{F_t}.
 $$
 
 The two are not independent: each follows from the other together with transversality. Three corollaries make the geometry explicit.
 
-- **No surface charge.** Taking the inner product with $\mathbf{n}$ gives $([\mathcal{A}]_{F_t},\mathbf{n}) = 0$, hence $([\mathbf{E}]_{F_t},\mathbf{n}) = 0$ and $([\mathbf{H}]_{F_t},\mathbf{n}) = 0$: the normal components are continuous across the front, and no surface charge sits on it.
-- **Transversality.** If the field ahead of the front vanishes, then $\mathbf{E}$, $\mathbf{H}$ and $\mathbf{n}$ are pairwise orthogonal: both jumps lie in the tangent plane of the front, and the Poynting vector is parallel to the wave vector. This is the sense in which the strong shocks of the A-field equation are transverse.
-- **Electric and magnetic jumps vanish together.** $[\mathbf{E}]_{F_t} = 0$ if and only if $[\mathbf{H}]_{F_t} = 0$; an electric discontinuity cannot occur without a magnetic one.
+- **No surface charge.** Taking the inner product with $\vec n$ gives $([\mathcal{A}]_{F_t},\vec n) = 0$, hence $([\vec E]_{F_t},\vec n) = 0$ and $([\vec H]_{F_t},\vec n) = 0$: the normal components are continuous across the front, and no surface charge sits on it.
+- **Transversality.** If the field ahead of the front vanishes, then $\vec E$, $\vec H$ and $\vec n$ are pairwise orthogonal: both jumps lie in the tangent plane of the front, and the Poynting vector is parallel to the wave vector. This is the sense in which the strong shocks of the A-field equation are transverse.
+- **Electric and magnetic jumps vanish together.** $[\vec E]_{F_t} = 0$ if and only if $[\vec H]_{F_t} = 0$; an electric discontinuity cannot occur without a magnetic one.
 
 The energy carried across the front satisfies the jump relation
 
 $$
-[W]_{F_t} = c^{-1}\,(\mathbf{n},[\mathbf{P}]_{F_t}),
+[W]_{F_t} = c^{-1}\,(\vec n,[\vec P]_{F_t}),
 $$
 
 which is the electric-energy component of the electromagnetic Rankine–Hugoniot condition; it is what makes the energy conservation law hold distributionally across the front, and the energy section below states the full biquaternionic relation $[\tilde{n}\tilde{W}]_S = -[\tilde{P}]_S$.
 
 ### The Shock Waves of the Charge–Current Field
 
-The A-field is not the only object whose discontinuities the programme considers. The **charge–current field** $\tilde{\Theta} = i\rho + \mathbf J$, with $\rho$ and $\mathbf J$ the combined complex charge and current of the electro-gravimagnetic programme, has shocks of its own, and they are **not** transverse in general. In a free field that field obeys the first-order system
+The A-field is not the only object whose discontinuities the programme considers. The **charge–current field** $\tilde{\Theta} = i\rho + \vec J$, with $\rho$ and $\vec J$ the combined complex charge and current of the electro-gravimagnetic programme, has shocks of its own, and they are **not** transverse in general. In a free field that field obeys the first-order system
 
 $$
-\partial_\tau\rho + \mathrm{div}\,\mathbf{J} = 0,
+\partial_\tau\rho + \mathrm{div}\,\vec J = 0,
 \qquad
-\nabla\rho + \partial_\tau\mathbf{J} - i\,\mathrm{rot}\,\mathbf{J} = 0,
+\nabla\rho + \partial_\tau\vec J - i\,\mathrm{rot}\,\vec J = 0,
 $$
 
-which is the scalar and vector part of $D^-\tilde{\Theta} = 0$, and whose characteristic equation — read off the three-vector part, the scalar part being a constraint on the divergence — is $\nu_t(\nu_t^2 - c^2\|\boldsymbol{\nu}\|^2) = 0$: the two speeds $\nu_t = \pm c\|\boldsymbol{\nu}\|$ together with the **simple** null root $\nu_t = 0$, so the characteristic cone is Maxwell's and the stationary surfaces are characteristic. The jump conditions across a front $F_\tau$ with unit normal $\mathbf{m}$ follow from the distributional form of the system:
+which is the scalar and vector part of $D^-\tilde{\Theta} = 0$, and whose characteristic equation — read off the three-vector part, the scalar part being a constraint on the divergence — is $\nu_t(\nu_t^2 - c^2\|\vec\nu\|^2) = 0$: the two speeds $\nu_t = \pm c\|\vec\nu\|$ together with the **simple** null root $\nu_t = 0$, so the characteristic cone is Maxwell's and the stationary surfaces are characteristic. The jump conditions across a front $F_\tau$ with unit normal $\vec m$ follow from the distributional form of the system:
 
 $$
-[\rho]_{F_\tau} = \big(\mathbf{m}, [\mathbf{J}]_{F_\tau}\big),
+[\rho]_{F_\tau} = \big(\vec m, [\vec J]_{F_\tau}\big),
 \qquad
-[\mathbf{J}]_{F_\tau} = \mathbf{m}\,[\rho]_{F_\tau} - i\,\mathbf{m}\times[\mathbf{J}]_{F_\tau}.
+[\vec J]_{F_\tau} = \vec m\,[\rho]_{F_\tau} - i\,\vec m\times[\vec J]_{F_\tau}.
 $$
 
-The second relation fixes the tangential jumps, and its inner product with $\mathbf{m}$ recovers the first, so the pair is consistent (checked numerically). The geometric conclusion is immediate:
+The second relation fixes the tangential jumps, and its inner product with $\vec m$ recovers the first, so the pair is consistent (checked numerically). The geometric conclusion is immediate:
 
-- **The shocks are generally not transverse.** Taking the inner product of the second relation with $\mathbf{m}$ gives $(\mathbf{m}, [\mathbf{J}]_{F_\tau}) = [\rho]_{F_\tau}$: the longitudinal part of the current jump equals the charge jump. A nonzero charge jump therefore puts a longitudinal component into $[\mathbf{J}]_{F_\tau}$.
-- **They are transverse exactly when the charge is continuous.** If $[\rho]_{F_\tau} = 0$, the pair reduces to $(\mathbf{m},[\mathbf{J}]_{F_\tau}) = 0$ together with $[\mathbf{J}]_{F_\tau} = -i\,\mathbf{m}\times[\mathbf{J}]_{F_\tau}$, which is the transverse wave-front condition of the A-field.
+- **The shocks are generally not transverse.** Taking the inner product of the second relation with $\vec m$ gives $(\vec m, [\vec J]_{F_\tau}) = [\rho]_{F_\tau}$: the longitudinal part of the current jump equals the charge jump. A nonzero charge jump therefore puts a longitudinal component into $[\vec J]_{F_\tau}$.
+- **They are transverse exactly when the charge is continuous.** If $[\rho]_{F_\tau} = 0$, the pair reduces to $(\vec m,[\vec J]_{F_\tau}) = 0$ together with $[\vec J]_{F_\tau} = -i\,\vec m\times[\vec J]_{F_\tau}$, which is the transverse wave-front condition of the A-field.
 
 The contrast with the A-field is the point, and the source states it explicitly: strong A-field shocks are transverse, while the shocks of the charge–current field are not, unless the charge jump vanishes. The jump conditions and the roots are recorded here as the external programme's, in the same sense as the rest of *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis*; the free system and the two relations above were recomputed, and the derivation from the distributional system is the source's.
 
-The A-field's own fronts acquire a longitudinal term once the programme restores its scalar field. Taking the field as the scalar $\alpha$ plus the vector part, the jump conditions gain a term fixed by the scalar jump, and the wave fronts are transverse **exactly when the scalar field is continuous**: $[\alpha]_{F_\tau} = 0$ recovers the transverse conditions above, while a non-zero $[\alpha]_{F_\tau}$ puts a longitudinal component into the field jump, the normal components of $[\mathbf{E}]$ and $[\mathbf{H}]$ being the jumps of the two real parts of $\alpha$. The conditions, and their interpretation as the programme's attraction–resistance field, are recorded in *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis*; the classical case is the one above, with $\alpha$ absent.
+The A-field's own fronts acquire a longitudinal term once the programme restores its scalar field. Taking the field as the scalar $\alpha$ plus the vector part, the jump conditions gain a term fixed by the scalar jump, and the wave fronts are transverse **exactly when the scalar field is continuous**: $[\alpha]_{F_\tau} = 0$ recovers the transverse conditions above, while a non-zero $[\alpha]_{F_\tau}$ puts a longitudinal component into the field jump, the normal components of $[\vec E]$ and $[\vec H]$ being the jumps of the two real parts of $\alpha$. The conditions, and their interpretation as the programme's attraction–resistance field, are recorded in *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis*; the classical case is the one above, with $\alpha$ absent.
 
 ## Shock Formation in Nonlinear Media
 
@@ -210,13 +210,13 @@ Shock electromagnetic waves **do** occur in nonlinear media. The mechanism is th
 In a nonlinear optical medium, the constitutive relations are modified:
 
 $$
-\mathbf{D} = \epsilon_0\mathbf{E} + \mathbf{P}(\mathbf{E}), \qquad \mathbf{B} = \mu_0\mathbf{H} + \mu_0\mathbf{M}(\mathbf{H}),
+\vec D = \epsilon_0\vec E + \vec P(\vec E), \qquad \vec B = \mu_0\vec H + \mu_0\vec M(\vec H),
 $$
 
-where $\mathbf{P}$ and $\mathbf{M}$ are the nonlinear polarization and magnetization. For a Kerr medium, the leading nonlinearity is
+where $\vec P$ and $\vec M$ are the nonlinear polarization and magnetization. For a Kerr medium, the leading nonlinearity is
 
 $$
-\mathbf{P} = \epsilon_0(\chi^{(1)}\mathbf{E} + \chi^{(3)}|\mathbf{E}|^2\mathbf{E}),
+\vec P = \epsilon_0(\chi^{(1)}\vec E + \chi^{(3)}|\vec E|^2\vec E),
 $$
 
 where $\chi^{(1)}$ is the linear susceptibility and $\chi^{(3)}$ is the third-order nonlinear susceptibility.
@@ -227,7 +227,7 @@ $$
 n = n_0 + n_2 I,
 $$
 
-where $I = |\mathbf{E}|^2$ is the intensity and $n_2$ is the nonlinear refractive index. The local phase velocity $c(I) = c_0/n(I)$ depends on the intensity.
+where $I = |\vec E|^2$ is the intensity and $n_2$ is the nonlinear refractive index. The local phase velocity $c(I) = c_0/n(I)$ depends on the intensity.
 
 ### Steepening and Shock Formation
 
@@ -281,28 +281,28 @@ Each of these is an established phenomenon, with a substantial literature. The b
 
 Magnetohydrodynamics is the setting in which the fluid and electromagnetic descriptions genuinely coincide rather than merely resemble each other, and it is the plainest checkable instance of the fluid–electromagnetism correspondence. Its centre is the **induction equation**.
 
-For a conducting fluid of velocity $\mathbf{u}$ and magnetic diffusivity $\eta$, the magnetic field obeys
+For a conducting fluid of velocity $\vec u$ and magnetic diffusivity $\eta$, the magnetic field obeys
 
 $$
-\partial_t\mathbf{B} = \nabla\times(\mathbf{u}\times\mathbf{B}) + \eta\,\nabla^2\mathbf{B},
+\partial_t\vec B = \nabla\times(\vec u\times\vec B) + \eta\,\nabla^2\vec B,
 $$
 
-while the vorticity of the same flow, $\boldsymbol{\omega} = \nabla\times\mathbf{u}$, obeys the Helmholtz equation
+while the vorticity of the same flow, $\vec\omega = \nabla\times\vec u$, obeys the Helmholtz equation
 
 $$
-\partial_t\boldsymbol{\omega} = \nabla\times(\mathbf{u}\times\boldsymbol{\omega}) + \nu\,\nabla^2\boldsymbol{\omega}
+\partial_t\vec\omega = \nabla\times(\vec u\times\vec\omega) + \nu\,\nabla^2\vec\omega
 $$
 
 with the kinematic viscosity $\nu$. The two equations have the same form, in the same velocity field, with the magnetic field in the place of the vorticity and the magnetic diffusivity in the place of the kinematic viscosity. The vector identity behind both, valid for divergence-free fields, is
 
 $$
--\nabla\times(\mathbf{u}\times\mathbf{B}) = (\mathbf{B}\cdot\nabla)\mathbf{u} - (\mathbf{u}\cdot\nabla)\mathbf{B},
+-\nabla\times(\vec u\times\vec B) = (\vec B\cdot\nabla)\vec u - (\vec u\cdot\nabla)\vec B,
 $$
 
 so that each is of the advection–diffusion type
 
 $$
-\partial_t\mathbf{Q} + (\mathbf{u}\cdot\nabla)\mathbf{Q} = (\mathbf{Q}\cdot\nabla)\mathbf{u} + \kappa\,\nabla^2\mathbf{Q},
+\partial_t\vec Q + (\vec u\cdot\nabla)\vec Q = (\vec Q\cdot\nabla)\vec u + \kappa\,\nabla^2\vec Q,
 $$
 
 with the diffusivity $\kappa = \eta$ for the field and $\kappa = \nu$ for the vorticity. One consequence is that the magnetic field is frozen into a perfectly conducting fluid ($\eta = 0$) exactly as the vorticity is frozen into an inviscid one ($\nu = 0$): Alfvén's frozen-flux theorem is the magnetic image of Kelvin's circulation theorem. The identity has been verified by exact numerical differentiation over random divergence-free fields; the residuals are at machine precision.
@@ -395,7 +395,7 @@ Shock electromagnetic waves are not a feature of linear Maxwell equations in vac
 
 Shock electromagnetic waves **are** a feature of nonlinear media and plasmas. In a Kerr medium, the intensity-dependent refractive index causes the wave profile to steepen, and a shock forms in finite time. In a plasma, the coupling of the electromagnetic field to the charged matter produces a rich variety of shock structures.
 
-The biquaternion framework provides a compact language for expressing the shock conditions in nonlinear media and plasmas. The jump conditions, the energy–momentum balance, and the characteristic structure can all be expressed in biquaternion form. On a wave front the single condition $[\tilde{F}] = -i[\tilde{F}]\times\mathbf{n}$ unpacks into a joint jump system for $\mathbf{E}$ and $\mathbf{H}$ — the normal components continuous, the tangential jumps transverse, and the electric and magnetic tangential jumps vanishing together — with the energy jump $[W] = c^{-1}(\mathbf{n},[\mathbf{P}])$ closing the distributional conservation law. The **charge–current field** $\tilde{\Theta} = i\rho + \mathbf J$ of the electro-gravimagnetic programme behaves differently: its shocks are generally **not** transverse, because the longitudinal part of the current jump equals the charge jump, and they become transverse only when the charge jump vanishes. But the framework is linear, and the nonlinearity that drives shock formation must be added separately.
+The biquaternion framework provides a compact language for expressing the shock conditions in nonlinear media and plasmas. The jump conditions, the energy–momentum balance, and the characteristic structure can all be expressed in biquaternion form. On a wave front the single condition $[\tilde{F}] = -i[\tilde{F}]\times\vec n$ unpacks into a joint jump system for $\vec E$ and $\vec H$ — the normal components continuous, the tangential jumps transverse, and the electric and magnetic tangential jumps vanishing together — with the energy jump $[W] = c^{-1}(\vec n,[\vec P])$ closing the distributional conservation law. The **charge–current field** $\tilde{\Theta} = i\rho + \vec J$ of the electro-gravimagnetic programme behaves differently: its shocks are generally **not** transverse, because the longitudinal part of the current jump equals the charge jump, and they become transverse only when the charge jump vanishes. But the framework is linear, and the nonlinearity that drives shock formation must be added separately.
 
 The treatment of shock electromagnetic waves in the biquaternion framework is therefore a treatment of the **linear skeleton** of a nonlinear theory. It describes the geometry of the shock front and the conservation laws that the shock must satisfy, but it does not describe the nonlinear dynamics that creates the shock. That dynamics is the subject of nonlinear optics and plasma physics, and the biquaternion framework provides a natural language for expressing it.
 
@@ -407,15 +407,15 @@ The treatment of shock electromagnetic waves in the biquaternion framework is th
 | $c_0 = 1/\sqrt{\epsilon_0\mu_0}$ | **Speed of light in vacuum** (global constant) |
 | $\tilde{\nabla} = e_0\partial_{ict} + \sum_k e_k \partial_k$ | Biquaternionic gradient |
 | $\Box = \partial_{ict}^2 + \Delta$ | d'Alembertian |
-| $\tilde{n}$ | Biquaternion-valued normal to the surface ($\mathbf{n}$ for spatial, $i\nu_t e_0 + \mathbf{n}$ for general) |
+| $\tilde{n}$ | Biquaternion-valued normal to the surface ($\vec n$ for spatial, $i\nu_t e_0 + \vec n$ for general) |
 | $[\tilde{F}]_S$ | Jump of $\tilde{F}$ across the surface $S$ |
-| $\mathcal{A} = \sqrt{\epsilon}\,\mathbf{E} + i\sqrt{\mu}\,\mathbf{H} = -i\tilde{F}$ | A-field (dual field strength) |
-| $\tilde{\Theta} = i\rho + \mathbf{J}$ | Charge–current biquaternion of the electro-gravimagnetic programme |
+| $\mathcal{A} = \sqrt{\epsilon}\,\vec E + i\sqrt{\mu}\,\vec H = -i\tilde{F}$ | A-field (dual field strength) |
+| $\tilde{\Theta} = i\rho + \vec J$ | Charge–current biquaternion of the electro-gravimagnetic programme |
 | $\rho = \rho_E/\sqrt{\epsilon} - i\rho_H/\sqrt{\mu}$ | Combined complex charge density |
-| $\mathbf{J} = \sqrt{\mu}\,\mathbf{j}_E - i\sqrt{\epsilon}\,\mathbf{j}_H$ | Combined complex current |
-| $\mathbf{m}$ | Unit normal to the charge–current front |
-| $[\mathbf{E}]_{F_t}, [\mathbf{H}]_{F_t}$ | Jumps of the electric and magnetic fields across the wave front |
-| $\mathbf{n}$ | Unit normal to the wave front, in the direction of motion |
+| $\vec J = \sqrt{\mu}\,\vec j_E - i\sqrt{\epsilon}\,\vec j_H$ | Combined complex current |
+| $\vec m$ | Unit normal to the charge–current front |
+| $[\vec E]_{F_t}, [\vec H]_{F_t}$ | Jumps of the electric and magnetic fields across the wave front |
+| $\vec n$ | Unit normal to the wave front, in the direction of motion |
 | $\tilde{R}_{\mathrm{eff}}$ | Effective source including nonlinear medium response |
 
 ## Further Reading
@@ -425,7 +425,7 @@ The treatment of shock electromagnetic waves in the biquaternion framework is th
 - L. A. Alexeyeva, "Hamiltonian Form of the Maxwell Equations and Its Generalized Solutions" (2001), for the distributional treatment of discontinuous solutions.
 - L. A. Alexeyeva, "One Biquaternion Model of the Electro-Gravimagnetic Field. Field Analogues of Newton's Laws" (2007), for the charge–current field, its first-order system and the non-transverse character of its shocks; see *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis*.
 - L. A. Alexeyeva, "Maxwell Equations, Their Hamiltonian and Biquaternionic Forms and Properties of Their Solutions" (2016), for the biquaternionic formulation.
-- L. A. Alexeyeva, "Biquaternionic wave equations and the properties of their generalized solutions", *Differential Equations* **57** (5) (2021) 594–604, for the front condition $\{n_0 + i\mathbf{n}\}\circ[B]_F = 0$ of the biwave equation with a general constant structural coefficient and the transversality it implies; the composition lemma, the weighted kernel and the paper's sign discrepancy are recorded in *The Biquaternion D'Alembertian and Its Green's Functions*.
+- L. A. Alexeyeva, "Biquaternionic wave equations and the properties of their generalized solutions", *Differential Equations* **57** (5) (2021) 594–604, for the front condition $\{n_0 + i\vec n\}\circ[B]_F = 0$ of the biwave equation with a general constant structural coefficient and the transversality it implies; the composition lemma, the weighted kernel and the paper's sign discrepancy are recorded in *The Biquaternion D'Alembertian and Its Green's Functions*.
 - R. Z. Sagdeev, "Cooperative phenomena and shock waves in collisionless plasmas," *Reviews of Plasma Physics* **4** (1966) 23–91.
 - J. E. Allen, "Shock waves in plasmas," in *Encyclopedia of Physical Science and Technology* (Academic Press, 2001).
 - A. Jeffrey and T. Taniuti, *Non-Linear Wave Propagation* (Academic Press, 1964), for the general theory of nonlinear hyperbolic equations and shock formation.

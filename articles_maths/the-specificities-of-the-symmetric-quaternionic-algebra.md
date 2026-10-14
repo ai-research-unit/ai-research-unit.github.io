@@ -6,7 +6,7 @@ The symmetric quaternionic bilinear product $\tilde P\bullet\tilde Q=\tfrac12(\t
 
 $$
 \tilde P\bullet\tilde Q=N(\tilde P,\tilde Q)\,e_0,\qquad
-N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q),
+N(\tilde P,\tilde Q)=P_0Q_0+(\vec P,\vec Q),
 $$
 
 in which $N$ is the quaternion form, symmetric, non-degenerate, of Gram matrix the identity on the basis. The formula makes the algebra element-theoretically the poorest of the twelve: it is commutative with vanishing commutator, its image is the central line $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$, it has no unit, its radical is $\{0\}$ because the form is non-degenerate, and its idempotents are $0$ and $e_0$ alone (*The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*).
@@ -23,7 +23,7 @@ The article states and proves the exclusive law of the block on the same model a
 
 **Placement.** The article is the second and closing entry of the *Specific Theory* section of the symmetric quaternionic algebra, after *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*, and it is the third of the family that *The Specificities of the General Plain Algebra* began and *The Specificities of the General Quaternionic Algebra* continued. It uses the governing formula of *Introduction to the Symmetric Quaternionic Algebra of Biquaternions*, the non-degeneracy and the trivial radical of the radical article, the composition law of the multiplication operators in *The Multiplication Operators of the Symmetric Quaternionic Algebra*, the element idempotents of *Idempotents of the General Plain Algebra*, and the criterion of the article that began the family.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_1e_2=e_3$ and central scalar imaginary $i$. The product is written $\bullet$, as in the *Specific Theory* entries of the block, and coincides with the $\star$ of *Introduction to the Symmetric Quaternionic Algebra of Biquaternions* and of *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*; juxtaposition is the plain product and $\natural$ the natural conjugation. An element is $\tilde X=X_0+\mathbf X$ with $X_0$ its scalar coordinate and $\mathbf X=(X_1,X_2,X_3)$ its vector part, and $N(\tilde X,\tilde Y)=X_0Y_0+(\mathbf X,\mathbf Y)$ is the quaternion form, non-degenerate and of Gram matrix the identity. The **left multiplication** is $L_{\tilde X}(\tilde Y)=\tilde X\bullet\tilde Y$, and the subscript is the element. An **idempotent** of the algebra is an element equal to its own square, and a **projector** is an idempotent operator, that is an idempotent of the morphism space; the zero operator is one, and the two levels are never interchanged. An idempotent element corresponds to a projector when its multiplication operator is idempotent, and the content of §*The Projectors* is exactly the scalar equation $X_0=1$, together with the origin.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_1e_2=e_3$ and central scalar imaginary $i$. The product is written $\bullet$, as in the *Specific Theory* entries of the block, and coincides with the $\star$ of *Introduction to the Symmetric Quaternionic Algebra of Biquaternions* and of *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*; juxtaposition is the plain product and $\natural$ the natural conjugation. An element is $\tilde X=X_0+\vec X$ with $X_0$ its scalar coordinate and $\vec X=(X_1,X_2,X_3)$ its vector part, and $N(\tilde X,\tilde Y)=X_0Y_0+(\vec X,\vec Y)$ is the quaternion form, non-degenerate and of Gram matrix the identity. The **left multiplication** is $L_{\tilde X}(\tilde Y)=\tilde X\bullet\tilde Y$, and the subscript is the element. An **idempotent** of the algebra is an element equal to its own square, and a **projector** is an idempotent operator, that is an idempotent of the morphism space; the zero operator is one, and the two levels are never interchanged. An idempotent element corresponds to a projector when its multiplication operator is idempotent, and the content of §*The Projectors* is exactly the scalar equation $X_0=1$, together with the origin.
 
 ## The Exclusive Law of the Block
 
@@ -174,9 +174,9 @@ The symmetric quaternionic product satisfies the **scalar law** — it is commut
 | $\bullet$, $\star$ | the symmetric quaternionic product $\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)=N(\tilde P,\tilde Q)e_0$ |
 | $\circ$ | the generic operation of another structure of the catalogue, in §*The Isolation among the Twelve* |
 | scalar law | commutative with central values: $\tilde X\circ\tilde Y=\beta(\tilde X,\tilde Y)e_0$, $\beta$ symmetric |
-| $X_0$, $\mathbf X$ | the scalar coordinate and the vector part of $\tilde X=X_0+\mathbf X$ |
+| $X_0$, $\vec X$ | the scalar coordinate and the vector part of $\tilde X=X_0+\vec X$ |
 | $\mathrm{Sc}(\tilde X)=X_0$ | the scalar coordinate, read as a functional |
-| $N$ | the quaternion form $N(\tilde X,\tilde Y)=X_0Y_0+(\mathbf X,\mathbf Y)$, symmetric, non-degenerate, of Gram matrix the identity |
+| $N$ | the quaternion form $N(\tilde X,\tilde Y)=X_0Y_0+(\vec X,\vec Y)$, symmetric, non-degenerate, of Gram matrix the identity |
 | $L_{\tilde X}$ | the left multiplication $\tilde Y\mapsto\tilde X\bullet\tilde Y=N(\tilde X,\tilde Y)e_0$, rank one for $\tilde X\neq0$ |
 | $E$ | the projection $E:\tilde Y\mapsto Y_0e_0$ onto the central line, the operator of $e_0$ |
 | $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$ | the central line and the vector subspace, the eigenspaces of the scalar coordinate |

@@ -6,35 +6,35 @@ Maxwell's equations are the clearest illustration of why the biquaternionic form
 
 This article develops the biquaternionic formulation of Maxwell's equations in a material medium characterized by permittivity $\epsilon$ and permeability $\mu$, then takes the vacuum limit $\epsilon = \epsilon_0$, $\mu = \mu_0$. The presentation proceeds in the natural order: first the standard Maxwell equations in three-vector form, then the potential biquaternion $\tilde{A}$, then the biquaternionic gradient $\tilde{\nabla}$, then the field-strength biquaternion $\tilde{F}$, and finally the single biquaternionic equation that replaces the four standard Maxwell equations. The article closes with the gauge structure, the retarded Green's function, the stationary limit, the energy conservation law, the biquaternionic energy–momentum, the Lorentz transformation of the potential, and the extension to complexified spacetime.
 
-Throughout this article, the symbol $c$ denotes the **speed of light in the medium**: $c = 1/\sqrt{\epsilon\mu}$. In vacuum, $c$ reduces to the constant vacuum speed of light $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. The symbol $v$ (and $\mathbf{v}$, $\mathbf{u}$) is reserved for particle and frame velocities. This convention keeps the notation consistent with relativistic mechanics, where $c$ is the speed of light and $v$ is a velocity.
+Throughout this article, the symbol $c$ denotes the **speed of light in the medium**: $c = 1/\sqrt{\epsilon\mu}$. In vacuum, $c$ reduces to the constant vacuum speed of light $c_0 = 1/\sqrt{\epsilon_0\mu_0}$. The symbol $v$ (and $\vec v$, $\vec u$) is reserved for particle and frame velocities. This convention keeps the notation consistent with relativistic mechanics, where $c$ is the speed of light and $v$ is a velocity.
 
 ## Maxwell's Equations in a Material Medium
 
 In a linear, isotropic, non-dispersive medium characterized by permittivity $\epsilon$ and permeability $\mu$, Maxwell's equations in three-vector form are
 
 $$
-\mathrm{rot}\,\mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t},
+\mathrm{rot}\,\vec E = -\frac{\partial \vec B}{\partial t},
 $$
 
 $$
-\mathrm{rot}\,\mathbf{H} = \frac{\partial \mathbf{D}}{\partial t} + \mathbf{J},
+\mathrm{rot}\,\vec H = \frac{\partial \vec D}{\partial t} + \vec J,
 $$
 
 $$
-\mathrm{div}\,\mathbf{D} = \rho,
+\mathrm{div}\,\vec D = \rho,
 $$
 
 $$
-\mathrm{div}\,\mathbf{B} = 0,
+\mathrm{div}\,\vec B = 0,
 $$
 
 with the constitutive relations
 
 $$
-\mathbf{D} = \epsilon\,\mathbf{E}, \qquad \mathbf{B} = \mu\,\mathbf{H}.
+\vec D = \epsilon\,\vec E, \qquad \vec B = \mu\,\vec H.
 $$
 
-Here $\mathbf{E}$ is the electric field, $\mathbf{H}$ the magnetic field, $\mathbf{D}$ the electric displacement, $\mathbf{B}$ the magnetic induction, $\rho$ the free charge density, and $\mathbf{J}$ the free current density. The constants $\epsilon$ and $\mu$ are properties of the medium. In vacuum they take the values $\epsilon_0$ and $\mu_0$.
+Here $\vec E$ is the electric field, $\vec H$ the magnetic field, $\vec D$ the electric displacement, $\vec B$ the magnetic induction, $\rho$ the free charge density, and $\vec J$ the free current density. The constants $\epsilon$ and $\mu$ are properties of the medium. In vacuum they take the values $\epsilon_0$ and $\mu_0$.
 
 The speed of electromagnetic waves in the medium is
 
@@ -50,10 +50,10 @@ $$
 
 The local speed of light $c$ is the factor that controls propagation in the medium, and it enters the equations in the same way for all media. In vacuum, $c = c_0$.
 
-The source fields $\rho$ and $\mathbf{J}$ are not independent: they satisfy the **charge conservation law**
+The source fields $\rho$ and $\vec J$ are not independent: they satisfy the **charge conservation law**
 
 $$
-\mathrm{div}\,\mathbf{J} + \frac{\partial \rho}{\partial t} = 0,
+\mathrm{div}\,\vec J + \frac{\partial \rho}{\partial t} = 0,
 $$
 
 which follows from taking the divergence of the Ampère–Maxwell law and substituting Gauss's law. This constraint is the integrability condition for the Maxwell system, and it will reappear below as the constraint on the biquaternionic source $\tilde{R}$.
@@ -63,12 +63,12 @@ which follows from taking the divergence of the Ampère–Maxwell law and substi
 The electromagnetic field is described by a **potential biquaternion**
 
 $$
-\tilde{A} = A_0 + \mathbf{A}, \qquad A_0 = \frac{i\phi}{c}, \qquad \mathbf{A} = \mathbf{A},
+\tilde{A} = A_0 + \vec A, \qquad A_0 = \frac{i\phi}{c}, \qquad \vec A = \vec A,
 $$
 
-where $\phi$ is the scalar potential and $\mathbf{A}$ is the vector potential. The tilde signals that $\tilde{A}$ is an element of the biquaternion algebra $\mathbb{B}$, not a four-vector.
+where $\phi$ is the scalar potential and $\vec A$ is the vector potential. The tilde signals that $\tilde{A}$ is an element of the biquaternion algebra $\mathbb{B}$, not a four-vector.
 
-The scalar part $A_0 = i\phi/c$ is purely imaginary, matching the complex time coordinate $ict$. The vector part $\mathbf{A}$ is the ordinary vector potential. The factor of $i$ in $A_0$ is the same factor that appears in the complex time coordinate.
+The scalar part $A_0 = i\phi/c$ is purely imaginary, matching the complex time coordinate $ict$. The vector part $\vec A$ is the ordinary vector potential. The factor of $i$ in $A_0$ is the same factor that appears in the complex time coordinate.
 
 The coordinate representation of $\tilde{A}$ as a four-vector potential is
 
@@ -79,7 +79,7 @@ $$
 with $e_0 = 1$ and $e_1, e_2, e_3$ the quaternion units, and
 
 $$
-A^0 = \frac{i\phi}{c}, \qquad (A^1, A^2, A^3) = \mathbf{A}.
+A^0 = \frac{i\phi}{c}, \qquad (A^1, A^2, A^3) = \vec A.
 $$
 
 The four-vector representation is a coordinate representation of the biquaternion, not the fundamental object.
@@ -125,10 +125,10 @@ So the d'Alembertian is the product of the biquaternionic gradient and its quate
 The electromagnetic field is described by a **field-strength biquaternion**
 
 $$
-\tilde{F} = \mathbf{F}, \qquad \mathbf{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}.
+\tilde{F} = \vec F, \qquad \vec F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H.
 $$
 
-Here $\mathbf{F}$ is a complex three-vector combining the electric and magnetic fields, with an **imaginary** electric part and a **real** magnetic part: the electric field carries a time index, and in the $ict$ convention it is the time direction that supplies the factor $i$. The tilde signals that $\tilde{F}$ is a biquaternion with vanishing scalar part. The square roots $\sqrt{\epsilon}$ and $\sqrt{\mu}$ are the natural normalization factors that make the biquaternionic product symmetric between electric and magnetic contributions.
+Here $\vec F$ is a complex three-vector combining the electric and magnetic fields, with an **imaginary** electric part and a **real** magnetic part: the electric field carries a time index, and in the $ict$ convention it is the time direction that supplies the factor $i$. The tilde signals that $\tilde{F}$ is a biquaternion with vanishing scalar part. The square roots $\sqrt{\epsilon}$ and $\sqrt{\mu}$ are the natural normalization factors that make the biquaternionic product symmetric between electric and magnetic contributions.
 
 The field-strength biquaternion is obtained from the potential biquaternion by differentiation. In the biquaternion algebra, the natural object constructed from $\tilde{A}$ is
 
@@ -160,27 +160,27 @@ $$
 F^{\mu\nu} = -F^{\nu\mu}.
 $$
 
-**A note on the relation between $\mathbf{F}$ and $\tilde{\nabla}^{\natural}\tilde{A}$.** The precise identification of the biquaternion $\mathbf{F} = i\sqrt{\epsilon}\mathbf{E} - \sqrt{\mu}\mathbf{H}$ with the vector part of $\tilde{\nabla}^{\natural}\tilde{A}$ depends on the normalization of the potential and on the sign conventions for the fields. The tensor formula $F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu$ is unambiguous, and it is the definition of the field strength used in this article. The formula $\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ reproduces this field strength up to an overall normalization factor; with the convention $A_0 = i\phi/c$ used here the electric part is imaginary, and the choice $A_0 = -i\phi/c$ would reverse it. The reader who wants to verify the exact correspondence should check the components directly against the tensor formula.
+**A note on the relation between $\vec F$ and $\tilde{\nabla}^{\natural}\tilde{A}$.** The precise identification of the biquaternion $\vec F = i\sqrt{\epsilon}\vec E - \sqrt{\mu}\vec H$ with the vector part of $\tilde{\nabla}^{\natural}\tilde{A}$ depends on the normalization of the potential and on the sign conventions for the fields. The tensor formula $F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu$ is unambiguous, and it is the definition of the field strength used in this article. The formula $\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ reproduces this field strength up to an overall normalization factor; with the convention $A_0 = i\phi/c$ used here the electric part is imaginary, and the choice $A_0 = -i\phi/c$ would reverse it. The reader who wants to verify the exact correspondence should check the components directly against the tensor formula.
 
-The complex combination $\mathbf{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$ has a long history. It was introduced by **Ludwik Silberstein** in 1907, in his work on the electromagnetic field as a complex three-vector, and is now known as the **Riemann–Silberstein vector**; the biquaternionic field strength is $i\sqrt{\epsilon}$ times that vector, an overall constant factor. The biquaternionic formulation is the natural algebraic home of this object: the complex vector $\mathbf{F}$ is the vector part of a biquaternion with vanishing scalar part, and the operations of the electromagnetic field theory ($\mathrm{rot}$, $\mathrm{div}$, and the wave operator) become biquaternion multiplication and differentiation. The historical construction of Silberstein and its modern biquaternionic formulation are therefore two expressions of the same structure.
+The complex combination $\vec F = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ has a long history. It was introduced by **Ludwik Silberstein** in 1907, in his work on the electromagnetic field as a complex three-vector, and is now known as the **Riemann–Silberstein vector**; the biquaternionic field strength is $i\sqrt{\epsilon}$ times that vector, an overall constant factor. The biquaternionic formulation is the natural algebraic home of this object: the complex vector $\vec F$ is the vector part of a biquaternion with vanishing scalar part, and the operations of the electromagnetic field theory ($\mathrm{rot}$, $\mathrm{div}$, and the wave operator) become biquaternion multiplication and differentiation. The historical construction of Silberstein and its modern biquaternionic formulation are therefore two expressions of the same structure.
 
 ## The Biquaternionic Source
 
 The sources of the electromagnetic field are described by a **biquaternionic source**
 
 $$
-\tilde{R} = R_0 + \mathbf{R},
+\tilde{R} = R_0 + \vec R,
 $$
 
 with
 
 $$
-R_0 = \frac{i\rho}{\sqrt{\epsilon}}, \qquad \mathbf{R} = \sqrt{\mu}\,\mathbf{J}.
+R_0 = \frac{i\rho}{\sqrt{\epsilon}}, \qquad \vec R = \sqrt{\mu}\,\vec J.
 $$
 
 The scalar part of $\tilde{R}$ carries the charge density, and the vector part carries the current density. The normalizations $1/\sqrt{\epsilon}$ and $\sqrt{\mu}$ are chosen so that the biquaternionic equation below takes a form with no explicit $\epsilon$ or $\mu$.
 
-The source biquaternion is not arbitrary: the charge conservation law $\mathrm{div}\,\mathbf{J} + \partial_t \rho = 0$ becomes, in biquaternionic form,
+The source biquaternion is not arbitrary: the charge conservation law $\mathrm{div}\,\vec J + \partial_t \rho = 0$ becomes, in biquaternionic form,
 
 $$
 \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural} \tilde{R}\right) = 0,
@@ -198,18 +198,18 @@ $$
 
 One equation replaces the four standard Maxwell equations. There is no explicit factor of $\epsilon$ or $\mu$: the medium is entirely in the definitions of $\tilde{F}$ and $\tilde{R}$.
 
-The counting is visible in the characteristic polynomial. The principal symbol of the vector part $\partial_{ict}\mathbf{F} + \mathrm{rot}\,\mathbf{F}$ is $-({\omega}/{c})I + i\,[\boldsymbol{\xi}]_\times$ in the Fourier variables $({\boldsymbol{\xi}},\omega)$, where $[\boldsymbol{\xi}]_\times$ is the cross-product matrix, and its determinant is $-({\omega}/{c})\bigl(({\omega}/{c})^2 - |\boldsymbol{\xi}|^2\bigr)$. The characteristic set is therefore $\omega = 0$ together with the light cone $|\omega| = c|\boldsymbol{\xi}|$. The four standard Maxwell equations have the same characteristic set with every root doubled; the single complex equation carries the characteristics of the four with half the multiplicity, which is the symbol-level form of "one equation replaces four".
+The counting is visible in the characteristic polynomial. The principal symbol of the vector part $\partial_{ict}\vec F + \mathrm{rot}\,\vec F$ is $-({\omega}/{c})I + i\,[\vec\xi]_\times$ in the Fourier variables $({\vec\xi},\omega)$, where $[\vec\xi]_\times$ is the cross-product matrix, and its determinant is $-({\omega}/{c})\bigl(({\omega}/{c})^2 - |\vec\xi|^2\bigr)$. The characteristic set is therefore $\omega = 0$ together with the light cone $|\omega| = c|\vec\xi|$. The four standard Maxwell equations have the same characteristic set with every root doubled; the single complex equation carries the characteristics of the four with half the multiplicity, which is the symbol-level form of "one equation replaces four".
 
 Taking the scalar and vector parts of $\tilde{\nabla} \tilde{F} = -\tilde{R}$ separately, we recover the Hamiltonian form of Maxwell's equations. The scalar part is
 
 $$
--\mathrm{div}\,\mathbf{F} = -R_0,
+-\mathrm{div}\,\vec F = -R_0,
 $$
 
 and the vector part is
 
 $$
-\partial_{ict} \mathbf{F} + \mathrm{rot}\,\mathbf{F} = -\mathbf{R}.
+\partial_{ict} \vec F + \mathrm{rot}\,\vec F = -\vec R.
 $$
 
 These are equivalent to the four standard Maxwell equations. The integrability condition $\mathrm{Sc}(\tilde{\nabla}^{\natural} \tilde{R}) = 0$ is automatically satisfied when the source is expressed in terms of the potentials via $\tilde{R} = -\tilde{\nabla} \tilde{F}$, and it is the consistency condition that must be imposed when the source is specified independently.
@@ -246,20 +246,20 @@ The retarded Green's function is distinct from the **Cauchy kernel** $\tilde{Q}^
 The complex-vector form of the Maxwell system writes the field as a single complex three-vector
 
 $$
-\mathcal{A} = \sqrt{\epsilon}\,\mathbf{E} + i\sqrt{\mu}\,\mathbf{H},
+\mathcal{A} = \sqrt{\epsilon}\,\vec E + i\sqrt{\mu}\,\vec H,
 $$
 
 which satisfies one complex equation
 
 $$
--c^{-1}\partial_t \mathcal{A} - i\,\mathrm{rot}\,\mathcal{A} = \mathbf{j},
+-c^{-1}\partial_t \mathcal{A} - i\,\mathrm{rot}\,\mathcal{A} = \vec j,
 \qquad
-\mathbf{j} = \sqrt{\mu}\,\mathbf{J}_{\mathrm{e}} - i\sqrt{\epsilon}\,\mathbf{J}_{\mathrm{m}},
+\vec j = \sqrt{\mu}\,\vec J_{\mathrm{e}} - i\sqrt{\epsilon}\,\vec J_{\mathrm{m}},
 \qquad
 c = \frac{1}{\sqrt{\epsilon\mu}} .
 $$
 
-This is Alexeyeva's **A-field**, and the equation is what she calls the **Hamiltonian form** of the Maxwell equations — not the scalar/vector split of $\tilde{\nabla}\tilde{F} = -\tilde{R}$ that this article also calls by that name. The symbol $\mathcal{A}$ is used here for the A-field because the plain $\mathbf{A}$ is already the vector part of the potential biquaternion $\tilde{A}$ elsewhere in this article; the two objects are different and must not be conflated. The A-field carries the same content as the single biquaternionic equation in another variable: since the field strength is $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$,
+This is Alexeyeva's **A-field**, and the equation is what she calls the **Hamiltonian form** of the Maxwell equations — not the scalar/vector split of $\tilde{\nabla}\tilde{F} = -\tilde{R}$ that this article also calls by that name. The symbol $\mathcal{A}$ is used here for the A-field because the plain $\vec A$ is already the vector part of the potential biquaternion $\tilde{A}$ elsewhere in this article; the two objects are different and must not be conflated. The A-field carries the same content as the single biquaternionic equation in another variable: since the field strength is $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$,
 
 $$
 \mathcal{A} = -i\,\tilde{F},
@@ -270,7 +270,7 @@ which is exactly the dual field strength $\tilde{F}_\star = -i\tilde{F}$ of *The
 $$
 W = \tfrac{1}{2}\|\mathcal{A}\|^2,
 \qquad
-\mathbf{P} = \tfrac{1}{2}\,i c\,\mathcal{A}\times\mathcal{A}^* .
+\vec P = \tfrac{1}{2}\,i c\,\mathcal{A}\times\mathcal{A}^* .
 $$
 
 The point of the form is symmetry, not economy: the equation is invariant under the interchange of the electric and magnetic halves, which the four standard Maxwell equations possess only once magnetic charges are admitted. Dropping the condition of their absence is what produces the single complex equation.
@@ -289,31 +289,31 @@ $$
 \chi(R,t) = \psi *_t \theta(t) = \frac{1}{4\pi R}\,\theta(t - R/c),
 $$
 
-are the **wave function** (the scalar Green's function of the wave equation $\Delta\psi - c^{-2}\partial_t^2\psi = -\delta$) and its time antiderivative, with $R = \|\mathbf{x}\|$ and $\theta$ the Heaviside function. The tensor satisfies the radiation condition $U_{jk} = 0$ whenever $\|\mathbf{x}\| > ct > 0$ or $t < 0$, and the radiated field is the convolution $\mathcal{A} = U * \mathbf{j}$. The biquaternion kernel $\tilde{G}_1$ of the previous section is the same construction for the four-component field; the tensor form is what the three-component equation requires, and the two should not be confused.
+are the **wave function** (the scalar Green's function of the wave equation $\Delta\psi - c^{-2}\partial_t^2\psi = -\delta$) and its time antiderivative, with $R = \|\vec x\|$ and $\theta$ the Heaviside function. The tensor satisfies the radiation condition $U_{jk} = 0$ whenever $\|\vec x\| > ct > 0$ or $t < 0$, and the radiated field is the convolution $\mathcal{A} = U * \vec j$. The biquaternion kernel $\tilde{G}_1$ of the previous section is the same construction for the four-component field; the tensor form is what the three-component equation requires, and the two should not be confused.
 
 Two limits of the equation are worth recording in this complex form, because they replace a pair of split equations by a single complex one. When the sources are static, $\partial_t\mathcal{A} = 0$ and the equation reduces to the complex-vector Poisson equation
 
 $$
-\Delta\mathcal{A} = -i\,\mathrm{rot}\,\mathbf{J} + c\,\nabla\rho_{\mathrm{c}},
+\Delta\mathcal{A} = -i\,\mathrm{rot}\,\vec J + c\,\nabla\rho_{\mathrm{c}},
 $$
 
-whose solution combines the Coulomb and Biot–Savart terms into one complex field; and for a monochromatic field $\mathcal{A}(\mathbf{x},t) = \mathcal{A}(\mathbf{x})e^{-i\omega t}$ it becomes the complex-vector Helmholtz equation
+whose solution combines the Coulomb and Biot–Savart terms into one complex field; and for a monochromatic field $\mathcal{A}(\vec x,t) = \mathcal{A}(\vec x)e^{-i\omega t}$ it becomes the complex-vector Helmholtz equation
 
 $$
-\Delta\mathcal{A} + k^2\mathcal{A} = -ik\,\mathbf{J} - i\,\mathrm{rot}\,\mathbf{J} + c\,\nabla\rho_{\mathrm{c}}, \qquad k = \omega/c,
+\Delta\mathcal{A} + k^2\mathcal{A} = -ik\,\vec J - i\,\mathrm{rot}\,\vec J + c\,\nabla\rho_{\mathrm{c}}, \qquad k = \omega/c,
 $$
 
-with the same complex source $\mathbf{j} = \sqrt{\mu}\,\mathbf{J}_{\mathrm{e}} - i\sqrt{\epsilon}\,\mathbf{J}_{\mathrm{m}}$ split into its current and charge parts. These are Alexeyeva's static and monochromatic forms; the electric and magnetic halves are solved together, and the interface conditions on a surface of discontinuity are read from the single complex equation rather than from a matched pair.
+with the same complex source $\vec j = \sqrt{\mu}\,\vec J_{\mathrm{e}} - i\sqrt{\epsilon}\,\vec J_{\mathrm{m}}$ split into its current and charge parts. These are Alexeyeva's static and monochromatic forms; the electric and magnetic halves are solved together, and the interface conditions on a surface of discontinuity are read from the single complex equation rather than from a matched pair.
 
 ## The Stationary Limit
 
-When the sources are time-independent, $\partial_t \rho = 0$ and $\partial_t \mathbf{J} = 0$, the biquaternionic Maxwell equation reduces to a **static equation**. The field strength $\tilde{F}$ becomes time-independent, and the equation $\tilde{\nabla} \tilde{F} = -\tilde{R}$ separates into the two standard static equations:
+When the sources are time-independent, $\partial_t \rho = 0$ and $\partial_t \vec J = 0$, the biquaternionic Maxwell equation reduces to a **static equation**. The field strength $\tilde{F}$ becomes time-independent, and the equation $\tilde{\nabla} \tilde{F} = -\tilde{R}$ separates into the two standard static equations:
 
 $$
-\mathrm{div}\,\mathbf{D} = \rho, \qquad \mathrm{rot}\,\mathbf{H} = \mathbf{J},
+\mathrm{div}\,\vec D = \rho, \qquad \mathrm{rot}\,\vec H = \vec J,
 $$
 
-where $\mathbf{D} = \epsilon \mathbf{E}$ and $\mathbf{H} = \mathbf{B}/\mu$ are the usual static fields. In biquaternionic form, the static equation is
+where $\vec D = \epsilon \vec E$ and $\vec H = \vec B/\mu$ are the usual static fields. In biquaternionic form, the static equation is
 
 $$
 \tilde{\nabla}_{\mathrm{stat}} \tilde{F} = -\tilde{R}, \qquad \tilde{\nabla}_{\mathrm{stat}} = e_1 \partial_x + e_2 \partial_y + e_3 \partial_z,
@@ -324,18 +324,18 @@ where $\tilde{\nabla}_{\mathrm{stat}}$ is the biquaternionic gradient restricted
 The static solution is given by the **gradient of the Newton kernel**, not by the Newton kernel itself, because the static equation is first order:
 
 $$
-\tilde{F}(\mathbf{x}) = \frac{1}{4\pi} \int \frac{(\mathbf{x} - \mathbf{y})\,R_0(\mathbf{y})}{\|\mathbf{x} - \mathbf{y}\|^3}\,d^3 y \;-\; \frac{1}{4\pi} \int \frac{\mathbf{R}(\mathbf{y}) \times (\mathbf{x} - \mathbf{y})}{\|\mathbf{x} - \mathbf{y}\|^3}\,d^3 y,
+\tilde{F}(\vec x) = \frac{1}{4\pi} \int \frac{(\vec x - \vec y)\,R_0(\vec y)}{\|\vec x - \vec y\|^3}\,d^3 y \;-\; \frac{1}{4\pi} \int \frac{\vec R(\vec y) \times (\vec x - \vec y)}{\|\vec x - \vec y\|^3}\,d^3 y,
 $$
 
-with $R_0 = \mathrm{Sc}(\tilde{R})$ and $\mathbf{R} = \mathrm{Vect}(\tilde{R})$, and where $\|\mathbf{x} - \mathbf{y}\|$ is the ordinary Euclidean distance in $\mathbb{R}^3$. The first term is the biquaternionic form of the Coulomb law and the second that of the Biot-Savart law. Its imaginary part is $\sqrt{\epsilon}\mathbf{E}$ and its real part is $-\sqrt{\mu}\mathbf{H}$.
+with $R_0 = \mathrm{Sc}(\tilde{R})$ and $\vec R = \mathrm{Vect}(\tilde{R})$, and where $\|\vec x - \vec y\|$ is the ordinary Euclidean distance in $\mathbb{R}^3$. The first term is the biquaternionic form of the Coulomb law and the second that of the Biot-Savart law. Its imaginary part is $\sqrt{\epsilon}\vec E$ and its real part is $-\sqrt{\mu}\vec H$.
 
-For a point charge $q$ at the origin, the source is $\tilde{R} = i q/\sqrt{\epsilon}\,\delta(\mathbf{x}) e_0$, and the solution is
+For a point charge $q$ at the origin, the source is $\tilde{R} = i q/\sqrt{\epsilon}\,\delta(\vec x) e_0$, and the solution is
 
 $$
-\tilde{F}(\mathbf{x}) = \frac{i q\,\hat{\mathbf{x}}}{4\pi\sqrt{\epsilon}\,\|\mathbf{x}\|^2},
+\tilde{F}(\vec x) = \frac{i q\,\hat x}{4\pi\sqrt{\epsilon}\,\|\vec x\|^2},
 $$
 
-where $\hat{\mathbf{x}} = \mathbf{x}/\|\mathbf{x}\|$, which is the Coulomb field of a point charge at the origin, falling as $1/\|\mathbf{x}\|^2$. In the same way, a steady current loop produces a magnetic dipole field, and the biquaternionic formulation reproduces the standard results of magnetostatics.
+where $\hat x = \vec x/\|\vec x\|$, which is the Coulomb field of a point charge at the origin, falling as $1/\|\vec x\|^2$. In the same way, a steady current loop produces a magnetic dipole field, and the biquaternionic formulation reproduces the standard results of magnetostatics.
 
 ## Gauge Structure
 
@@ -359,7 +359,7 @@ $$
 S = \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural} \tilde{A}\right).
 $$
 
-This is the biquaternionic scalar field, whose components are $\partial_{ict} A_0 + \mathrm{div}\,\mathbf{A}$. Under a gauge transformation, it transforms as
+This is the biquaternionic scalar field, whose components are $\partial_{ict} A_0 + \mathrm{div}\,\vec A$. Under a gauge transformation, it transforms as
 
 $$
 S' = S - \Box \Gamma.
@@ -376,7 +376,7 @@ $$
 which means
 
 $$
-\partial_{ict} A_0 + \mathrm{div}\,\mathbf{A} = 0.
+\partial_{ict} A_0 + \mathrm{div}\,\vec A = 0.
 $$
 
 This is the biquaternionic form of the standard Lorenz condition $\partial_\mu A^\mu = 0$. It is a choice of gauge, not a physical condition. (The electro-gravimagnetic programme of *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis* uses the same condition in a different role, imposing it as a constraint of its representation rather than choosing it as a gauge; see that article, where the difference of logical status is recorded and not resolved.) In the Lorenz gauge, the potential satisfies the wave equation
@@ -388,10 +388,10 @@ $$
 with
 
 $$
-\tilde{R}' = ic\rho + \mathbf{J}.
+\tilde{R}' = ic\rho + \vec J.
 $$
 
-This is the biquaternionic wave equation for the potential. The factor of $\mu$ is explicit, because the potential equation in the tensor formulation is $\Box A^\mu = -\mu R^\mu$ with $R^\mu = (ic\rho, \mathbf{J})$. Note that the wave equation has a solution if and only if the source $\tilde{R}'$ satisfies the conservation law $\mathrm{Sc}(\tilde{\nabla}^{\natural} \tilde{R}') = 0$, which is equivalent to the charge conservation constraint on $\rho$ and $\mathbf{J}$.
+This is the biquaternionic wave equation for the potential. The factor of $\mu$ is explicit, because the potential equation in the tensor formulation is $\Box A^\mu = -\mu R^\mu$ with $R^\mu = (ic\rho, \vec J)$. Note that the wave equation has a solution if and only if the source $\tilde{R}'$ satisfies the conservation law $\mathrm{Sc}(\tilde{\nabla}^{\natural} \tilde{R}') = 0$, which is equivalent to the charge conservation constraint on $\rho$ and $\vec J$.
 
 The scalar field $S$ has no independent physical meaning. It is a gauge artifact, and the Lorenz gauge is the physical choice that sets it to zero. In the future, if a **physical interpretation** of $S$ is found, it would have to arise from a coupling to a sector of the theory that is not gauge-invariant. For the classical electromagnetic field, $S$ is not physical.
 
@@ -401,49 +401,49 @@ The scalar field $S$ has no independent physical meaning. It is a gauge artifact
 
 A second interpretation of the same equations, older than the relativistic one and independent of it, comes from fluid mechanics. It is a formal correspondence with a specific provenance, not an alternative derivation, and its limits are stated with it.
 
-The bridge is the **Lamb vector**. For an incompressible fluid of velocity $\mathbf{u}$, vorticity $\boldsymbol{\omega} = \nabla\times\mathbf{u}$ and pressure $p$, the convective acceleration obeys the identity
+The bridge is the **Lamb vector**. For an incompressible fluid of velocity $\vec u$, vorticity $\vec\omega = \nabla\times\vec u$ and pressure $p$, the convective acceleration obeys the identity
 
 $$
-(\mathbf{u}\cdot\nabla)\mathbf{u} = \boldsymbol{\omega}\times\mathbf{u} + \nabla\frac{|\mathbf{u}|^2}{2},
+(\vec u\cdot\nabla)\vec u = \vec\omega\times\vec u + \nabla\frac{|\vec u|^2}{2},
 $$
 
-so that the Euler equation $\partial_t\mathbf{u} + (\mathbf{u}\cdot\nabla)\mathbf{u} = -\nabla p/\rho$ takes the **Lamb form**
+so that the Euler equation $\partial_t\vec u + (\vec u\cdot\nabla)\vec u = -\nabla p/\rho$ takes the **Lamb form**
 
 $$
-\partial_t\mathbf{u} = -\,\nabla\!\left(\frac{p}{\rho} + \frac{|\mathbf{u}|^2}{2}\right) - \boldsymbol{\ell},
+\partial_t\vec u = -\,\nabla\!\left(\frac{p}{\rho} + \frac{|\vec u|^2}{2}\right) - \vec\ell,
 \qquad
-\boldsymbol{\ell} = \boldsymbol{\omega}\times\mathbf{u}.
+\vec\ell = \vec\omega\times\vec u.
 $$
 
-The quantity $\boldsymbol{\ell}$ is the **Lamb vector**. Comparison with the potential relations of the electromagnetic theory, $\mathbf{B} = \nabla\times\mathbf{A}$ and $\mathbf{E} = -\nabla V - \partial_t\mathbf{A}$, suggests the pairing
+The quantity $\vec\ell$ is the **Lamb vector**. Comparison with the potential relations of the electromagnetic theory, $\vec B = \nabla\times\vec A$ and $\vec E = -\nabla V - \partial_t\vec A$, suggests the pairing
 
 $$
-\mathbf{u}\;\leftrightarrow\;\mathbf{A},
+\vec u\;\leftrightarrow\;\vec A,
 \qquad
-\boldsymbol{\omega}\;\leftrightarrow\;\mathbf{B},
+\vec\omega\;\leftrightarrow\;\vec B,
 \qquad
-\boldsymbol{\ell}\;\leftrightarrow\;\mathbf{E},
+\vec\ell\;\leftrightarrow\;\vec E,
 \qquad
-\frac{p}{\rho}+\frac{|\mathbf{u}|^2}{2}\;\leftrightarrow\;V .
+\frac{p}{\rho}+\frac{|\vec u|^2}{2}\;\leftrightarrow\;V .
 $$
 
-With these identifications the Lamb form of the Euler equation *is* the definition of the electric field from the potentials, $\mathbf{E} = -\nabla V - \partial_t\mathbf{A}$, and its curl is the vorticity equation
+With these identifications the Lamb form of the Euler equation *is* the definition of the electric field from the potentials, $\vec E = -\nabla V - \partial_t\vec A$, and its curl is the vorticity equation
 
 $$
-\partial_t\boldsymbol{\omega} = -\,\nabla\times\boldsymbol{\ell},
+\partial_t\vec\omega = -\,\nabla\times\vec\ell,
 $$
 
-which is Faraday's law $\partial_t\mathbf{B} = -\nabla\times\mathbf{E}$ under the dictionary. Both statements are exact given the pairing. The counterpart of Gauss's law is the divergence of the Lamb form,
+which is Faraday's law $\partial_t\vec B = -\nabla\times\vec E$ under the dictionary. Both statements are exact given the pairing. The counterpart of Gauss's law is the divergence of the Lamb form,
 
 $$
-\nabla\cdot\boldsymbol{\ell} = -\,\nabla^2\!\left(\frac{p}{\rho} + \frac{|\mathbf{u}|^2}{2}\right),
+\nabla\cdot\vec\ell = -\,\nabla^2\!\left(\frac{p}{\rho} + \frac{|\vec u|^2}{2}\right),
 $$
 
 which holds for a divergence-free velocity. The hydrodynamic image of the charge density is therefore a Laplacian of the pressure-and-kinetic term rather than an independent quantity, which is where the analogy's electric sector is thinnest: the fluid has no carrier of "charge" that the flow does not already determine.
 
 The correspondence is attributed to H. Marmanis. It is stated here in three-vector language, as the source states it, and it is not a biquaternion formula; the biquaternionic content of these equations is the one the rest of this article records.
 
-**Limits.** The correspondence is partial, and the corpus does not take it as an explanation of electromagnetism. The full Euler equation is nonlinear while the field equations are not, and the source paper's correspondence is stated for the linearised equations. The magnetic Gauss law has no fluid counterpart, so the analogy has no magnetic monopole sector. The constitutive relations differ, so permittivity and permeability have no single fluid meaning. And the two theories do not share a symmetry group: Maxwell's equations are Lorentz invariant while the fluid equations are Galilean invariant. What the analogy reflects is the precise part of the symmetry structure the two share — of Maxwell's four equations, the two source-free ones are Galilean invariant as well, which is why the potential and field relations carry over and the source laws do not. The two Galilean limits of electrodynamics make this quantitative: sending $c \to \infty$ at fixed vacuum permeability gives the magnetic limit (the regime of the quasi-stationary approximation), and sending $c \to \infty$ at fixed vacuum permittivity with $\mathbf{B} \to c^2\mathbf{B}$ gives the electric limit, used in electrohydrodynamics; the incompressible fluid limit corresponds to the magnetic one, with the vacuum permittivity playing the role of an acoustic compressibility and the vacuum permeability that of a density. The relativistic account of the field remains the standard one. The force-side counterpart of the same correspondence is recorded in *The Lorentz Force in Biquaternion Form*.
+**Limits.** The correspondence is partial, and the corpus does not take it as an explanation of electromagnetism. The full Euler equation is nonlinear while the field equations are not, and the source paper's correspondence is stated for the linearised equations. The magnetic Gauss law has no fluid counterpart, so the analogy has no magnetic monopole sector. The constitutive relations differ, so permittivity and permeability have no single fluid meaning. And the two theories do not share a symmetry group: Maxwell's equations are Lorentz invariant while the fluid equations are Galilean invariant. What the analogy reflects is the precise part of the symmetry structure the two share — of Maxwell's four equations, the two source-free ones are Galilean invariant as well, which is why the potential and field relations carry over and the source laws do not. The two Galilean limits of electrodynamics make this quantitative: sending $c \to \infty$ at fixed vacuum permeability gives the magnetic limit (the regime of the quasi-stationary approximation), and sending $c \to \infty$ at fixed vacuum permittivity with $\vec B \to c^2\vec B$ gives the electric limit, used in electrohydrodynamics; the incompressible fluid limit corresponds to the magnetic one, with the vacuum permittivity playing the role of an acoustic compressibility and the vacuum permeability that of a density. The relativistic account of the field remains the standard one. The force-side counterpart of the same correspondence is recorded in *The Lorentz Force in Biquaternion Form*.
 
 ## Relationship Between the Two Formulations
 
@@ -451,36 +451,36 @@ The two formulations are related as follows:
 
 - The field-strength biquaternion $\tilde{F}$ is obtained from the potential biquaternion $\tilde{A}$ by differentiation: $\tilde{F} = \tilde{\nabla}^{\natural} \tilde{A} - \mathrm{Sc}(\tilde{\nabla}^{\natural} \tilde{A})$.
 - The first-order equation $\tilde{\nabla} \tilde{F} = -\tilde{R}$ is equivalent to the second-order equation $\Box \tilde{A} = -\mu \tilde{R}'$ in the Lorenz gauge.
-- The source biquaternions $\tilde{R}$ and $\tilde{R}'$ differ by the normalization factors: $\tilde{R} = i\rho/\sqrt{\epsilon} + \sqrt{\mu}\mathbf{J}$, while $\tilde{R}' = ic\rho + \mathbf{J}$.
+- The source biquaternions $\tilde{R}$ and $\tilde{R}'$ differ by the normalization factors: $\tilde{R} = i\rho/\sqrt{\epsilon} + \sqrt{\mu}\vec J$, while $\tilde{R}' = ic\rho + \vec J$.
 
 The first-order formulation is the most compact: one equation for the field strength. The second-order formulation is the most familiar: the wave equation for the potential. Both are valid, and both are biquaternionic.
 
-**A third route, and where it loses equivalence.** The two formulations above are equivalent to each other, and both are equivalent to the Maxwell system. The classical route to a single equation is a third thing, and it is not equivalent. Eliminating one field — solving the Ampère–Maxwell law for $\mathbf{H}$ and substituting it into $\mathrm{rot}\,\mathbf{E}=-\partial_t\mathbf{B}$ — yields a second-order wave equation for $\mathbf{E}$ alone, and that equation admits solutions the Maxwell system does not. Any $\mathbf{E}=\nabla\psi$ with $\Box\psi=0$ solves it, since $\Box\nabla\psi=\nabla\Box\psi$ vanishes, while $\mathrm{div}\,\mathbf{E}=\Delta\psi$ need not vanish; for $\psi=e^{ik(z-ct)}$ the divergence is $-k^2\psi$, so the elimination has enlarged the solution set by a longitudinal sector that Maxwell forbids. The constraints $\mathrm{div}\,\mathbf{D}=\rho$ and $\mathrm{div}\,\mathbf{B}=0$ are not implied by the wave equation and have to be reimposed by hand, and the boundary data do not transfer either: a Dirichlet or Neumann datum on $\mathbf{E}$ is natural data for the wave equation and not for the first-order system, while the natural Maxwell datum — the tangential components of $\mathbf{E}$ and $\mathbf{H}$ — is not a datum the wave equation is posed with. The reduction is convenient rather than faithful: it is what one wants for propagation, and it is not a statement of the theory.
+**A third route, and where it loses equivalence.** The two formulations above are equivalent to each other, and both are equivalent to the Maxwell system. The classical route to a single equation is a third thing, and it is not equivalent. Eliminating one field — solving the Ampère–Maxwell law for $\vec H$ and substituting it into $\mathrm{rot}\,\vec E=-\partial_t\vec B$ — yields a second-order wave equation for $\vec E$ alone, and that equation admits solutions the Maxwell system does not. Any $\vec E=\nabla\psi$ with $\Box\psi=0$ solves it, since $\Box\nabla\psi=\nabla\Box\psi$ vanishes, while $\mathrm{div}\,\vec E=\Delta\psi$ need not vanish; for $\psi=e^{ik(z-ct)}$ the divergence is $-k^2\psi$, so the elimination has enlarged the solution set by a longitudinal sector that Maxwell forbids. The constraints $\mathrm{div}\,\vec D=\rho$ and $\mathrm{div}\,\vec B=0$ are not implied by the wave equation and have to be reimposed by hand, and the boundary data do not transfer either: a Dirichlet or Neumann datum on $\vec E$ is natural data for the wave equation and not for the first-order system, while the natural Maxwell datum — the tangential components of $\vec E$ and $\vec H$ — is not a datum the wave equation is posed with. The reduction is convenient rather than faithful: it is what one wants for propagation, and it is not a statement of the theory.
 
-The biquaternionic formulation pays no such price, because it eliminates nothing. The single equation $\tilde{\nabla}\tilde{F}=-\tilde{R}$ is first order in one field-strength biquaternion, and the constraints are not separate conditions added afterwards: $\mathrm{div}\,\mathbf{F}=R_0$ is the scalar part of that same equation. This is the property Kravchenko calls the **diagonalization** of the Maxwell system, and it can be reproduced in vector calculus by combining the two fields rather than eliminating one of them into the other; *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation* displays the combinations and the first-order equations they satisfy. The two routes are distinct claims and both are wanted: the quaternionic form is preferred because it carries a function theory, and the point here is only that the first-order biquaternionic equation already has the equivalence the wave equation lacks.
+The biquaternionic formulation pays no such price, because it eliminates nothing. The single equation $\tilde{\nabla}\tilde{F}=-\tilde{R}$ is first order in one field-strength biquaternion, and the constraints are not separate conditions added afterwards: $\mathrm{div}\,\vec F=R_0$ is the scalar part of that same equation. This is the property Kravchenko calls the **diagonalization** of the Maxwell system, and it can be reproduced in vector calculus by combining the two fields rather than eliminating one of them into the other; *Maxwell's Equations in Chiral Media — The Quaternionic Reformulation* displays the combinations and the first-order equations they satisfy. The two routes are distinct claims and both are wanted: the quaternionic form is preferred because it carries a function theory, and the point here is only that the first-order biquaternionic equation already has the equivalence the wave equation lacks.
 
 **A fourth route: the matrix form, and what makes it work.** Daniel Henry Gottlieb writes the same system as a single **matrix** equation, in which the field is a $4 \times 4$ matrix and the divergence is a column of operators acting on it. In his units and conventions ($c = 1$, Heaviside–Lorentz, metric signature $(-,+,+,+)$, $t$ the time coordinate) the real skew operator of the Lorentz law and its dual are
 
 $$
-F = \begin{pmatrix} 0 & \mathbf{E}^{\mathsf T} \\ \mathbf{E} & -[\mathbf{B}]_\times \end{pmatrix}, \qquad
-F^* = \begin{pmatrix} 0 & -\mathbf{B}^{\mathsf T} \\ -\mathbf{B} & -[\mathbf{E}]_\times \end{pmatrix},
+F = \begin{pmatrix} 0 & \vec E^{\mathsf T} \\ \vec E & -[\vec B]_\times \end{pmatrix}, \qquad
+F^* = \begin{pmatrix} 0 & -\vec B^{\mathsf T} \\ -\vec B & -[\vec E]_\times \end{pmatrix},
 $$
 
-with $[\mathbf{u}]_\times$ the matrix of $\mathbf{v} \mapsto \mathbf{u} \times \mathbf{v}$; the paper writes the lower-right block of $F$ as $\times\mathbf{B}$, whose action is $\mathbf{v}\mapsto\mathbf{v}\times\mathbf{B} = -[\mathbf{B}]_\times\mathbf{v}$, which is the same object. The complexification $cF := F - iF^*$ is the matrix of a single complex three-vector,
+with $[\vec u]_\times$ the matrix of $\vec v \mapsto \vec u \times \vec v$; the paper writes the lower-right block of $F$ as $\times\vec B$, whose action is $\vec v\mapsto\vec v\times\vec B = -[\vec B]_\times\vec v$, which is the same object. The complexification $cF := F - iF^*$ is the matrix of a single complex three-vector,
 
 $$
-cF = \begin{pmatrix} 0 & \mathbf{A}^{\mathsf T} \\ \mathbf{A} & i[\mathbf{A}]_\times \end{pmatrix}, \qquad \mathbf{A} = \mathbf{E} + i\mathbf{B},
+cF = \begin{pmatrix} 0 & \vec A^{\mathsf T} \\ \vec A & i[\vec A]_\times \end{pmatrix}, \qquad \vec A = \vec E + i\vec B,
 $$
 
 and with the operator column $(-\partial_t, \nabla)^{\mathsf T}$ read entry by entry against the matrix — each operator differentiating the matrix entry beside it — the four equations become the three statements
 
 $$
-F\begin{pmatrix} -\partial_t \\ \nabla \end{pmatrix} = \begin{pmatrix} \rho \\ \mathbf{J} \end{pmatrix}, \qquad
-F^*\begin{pmatrix} -\partial_t \\ \nabla \end{pmatrix} = \begin{pmatrix} -\mathrm{div}\,\mathbf{B} \\ \partial_t\mathbf{B} + \mathrm{rot}\,\mathbf{E} \end{pmatrix}, \qquad
-cF\begin{pmatrix} -\partial_t \\ \nabla \end{pmatrix} = \begin{pmatrix} \rho \\ \mathbf{J} \end{pmatrix}.
+F\begin{pmatrix} -\partial_t \\ \nabla \end{pmatrix} = \begin{pmatrix} \rho \\ \vec J \end{pmatrix}, \qquad
+F^*\begin{pmatrix} -\partial_t \\ \nabla \end{pmatrix} = \begin{pmatrix} -\mathrm{div}\,\vec B \\ \partial_t\vec B + \mathrm{rot}\,\vec E \end{pmatrix}, \qquad
+cF\begin{pmatrix} -\partial_t \\ \nabla \end{pmatrix} = \begin{pmatrix} \rho \\ \vec J \end{pmatrix}.
 $$
 
-The first holds identically, because it is the two definitions $\rho = \mathrm{div}\,\mathbf{E}$ and $\mathbf{J} = \mathrm{rot}\,\mathbf{B} - \partial_t\mathbf{E}$; the second vanishes exactly when the two homogeneous laws hold; so the third, the paper's one equation, holds exactly when the Maxwell system holds. Recomputing the three on fields built from potentials, $\mathbf{B} = \mathrm{rot}\,\mathbf{A}$ and $\mathbf{E} = -\partial_t\mathbf{A} - \nabla\phi$, gives agreement to $6 \times 10^{-17}$ for the first and the third and $1 \times 10^{-17}$ for the vanishing of the second, and on a field that violates the homogeneous laws the discrepancy in the third is exactly $i\left(\mathrm{div}\,\mathbf{B},\; -(\partial_t\mathbf{B} + \mathrm{rot}\,\mathbf{E})\right)$, so the equivalence is exact rather than numerical coincidence. The paper also records the version of the same equation for the four fields $\mathbf{E}, \mathbf{B}, \mathbf{D}, \mathbf{H}$, in which $\mathbf{D} + i\mathbf{B}$ occupies the vector slots: the shape of the matrix is unchanged, but the paper notes that the square of that matrix is no longer a multiple of the identity — as it is for the form above, where $cF^2 = \langle\mathbf{A},\mathbf{A}\rangle I$ — and that this property singles out the first form among all matrices of the second. Both statements were checked: $cF^2 = \langle\mathbf{A},\mathbf{A}\rangle I$ exactly, and the second form's square misses a multiple of the identity by at least $14$ over $100$ random pairs of vectors.
+The first holds identically, because it is the two definitions $\rho = \mathrm{div}\,\vec E$ and $\vec J = \mathrm{rot}\,\vec B - \partial_t\vec E$; the second vanishes exactly when the two homogeneous laws hold; so the third, the paper's one equation, holds exactly when the Maxwell system holds. Recomputing the three on fields built from potentials, $\vec B = \mathrm{rot}\,\vec A$ and $\vec E = -\partial_t\vec A - \nabla\phi$, gives agreement to $6 \times 10^{-17}$ for the first and the third and $1 \times 10^{-17}$ for the vanishing of the second, and on a field that violates the homogeneous laws the discrepancy in the third is exactly $i\left(\mathrm{div}\,\vec B,\; -(\partial_t\vec B + \mathrm{rot}\,\vec E)\right)$, so the equivalence is exact rather than numerical coincidence. The paper also records the version of the same equation for the four fields $\vec E, \vec B, \vec D, \vec H$, in which $\vec D + i\vec B$ occupies the vector slots: the shape of the matrix is unchanged, but the paper notes that the square of that matrix is no longer a multiple of the identity — as it is for the form above, where $cF^2 = \langle\vec A,\vec A\rangle I$ — and that this property singles out the first form among all matrices of the second. Both statements were checked: $cF^2 = \langle\vec A,\vec A\rangle I$ exactly, and the second form's square misses a multiple of the identity by at least $14$ over $100$ random pairs of vectors.
 
 **The dual form, and why it holds.** The equation has a dual in which the matrix carries the operators and the vector carries the field. With
 
@@ -488,23 +488,23 @@ $$
 c\nabla := \begin{pmatrix} 0 & \nabla^{\mathsf T} \\ \nabla & i[\nabla]_\times \end{pmatrix},
 $$
 
-the system reads $(\partial_t I - c\nabla)\left(0,\; -\overline{\mathbf{E} + i\mathbf{B}}\right)^{\mathsf T} = \left(\rho,\; \mathbf{J}\right)^{\mathsf T}$, again exactly equivalent, and the two forms are one construction seen from two sides: in the first the matrix is the field and the column the operators, in the second the matrix is the operators and the column the field. Recomputing this form on the same fields gives agreement to machine precision, with one caveat of transcription: the conjugate bar in the column is required. Without it the scalar row still gives $\rho$ and the vector rows are wrong, which is how the formula extracts from the source and is why it is not stated here without the bar.
+the system reads $(\partial_t I - c\nabla)\left(0,\; -\overline{\vec E + i\vec B}\right)^{\mathsf T} = \left(\rho,\; \vec J\right)^{\mathsf T}$, again exactly equivalent, and the two forms are one construction seen from two sides: in the first the matrix is the field and the column the operators, in the second the matrix is the operators and the column the field. Recomputing this form on the same fields gives agreement to machine precision, with one caveat of transcription: the conjugate bar in the column is required. Without it the scalar row still gives $\rho$ and the vector rows are wrong, which is how the formula extracts from the source and is why it is not stated here without the bar.
 
-The paper writes two further equations of the same shape, in which the four-potential $(\phi, \mathbf{A})$ replaces the field in the column and the operator matrix acquires the potential in its entries; they are the potential-level counterparts of the two field-level equations, and they are the paper's route to the wave equation and to the covariant gauge condition $\partial_t\phi + \mathrm{div}\,\mathbf{A} = 0$. As printed, both carry a defect in the vector part, and this is recorded rather than reproduced: the first gives $\partial_t\mathbf{A} - i\,\mathrm{rot}\,\mathbf{A}$ where the definition $\mathbf{E} = -\partial_t\mathbf{A} - \nabla\phi$ requires the missing term $-\nabla\phi$, so it holds only in a gauge with $\nabla\phi = 0$, and the second gives $\partial_t\mathbf{A} + \nabla\phi + i\,\mathrm{rot}\,\mathbf{A}$ where $-\mathbf{E} - i\mathbf{B} = \partial_t\mathbf{A} + \nabla\phi - i\,\mathrm{rot}\,\mathbf{A}$ is required, a sign on the magnetic term. Recomputing both against the definitions, the discrepancies are exactly $|\nabla\phi|$ and $|2\mathbf{B}|$ respectively, term for term; the scalar rows and the operator identity $c\nabla^2 = \Delta I$ on which the reduction rests are unaffected, since the scalar row involves only $\partial_t\phi + \mathrm{div}\,\mathbf{A}$ and neither defect touches it. The duality between the two potential equations is therefore a statement about the two operator matrices, not a statement that the printed columns are already correct, and the mechanism below is what carries it.
+The paper writes two further equations of the same shape, in which the four-potential $(\phi, \vec A)$ replaces the field in the column and the operator matrix acquires the potential in its entries; they are the potential-level counterparts of the two field-level equations, and they are the paper's route to the wave equation and to the covariant gauge condition $\partial_t\phi + \mathrm{div}\,\vec A = 0$. As printed, both carry a defect in the vector part, and this is recorded rather than reproduced: the first gives $\partial_t\vec A - i\,\mathrm{rot}\,\vec A$ where the definition $\vec E = -\partial_t\vec A - \nabla\phi$ requires the missing term $-\nabla\phi$, so it holds only in a gauge with $\nabla\phi = 0$, and the second gives $\partial_t\vec A + \nabla\phi + i\,\mathrm{rot}\,\vec A$ where $-\vec E - i\vec B = \partial_t\vec A + \nabla\phi - i\,\mathrm{rot}\,\vec A$ is required, a sign on the magnetic term. Recomputing both against the definitions, the discrepancies are exactly $|\nabla\phi|$ and $|2\vec B|$ respectively, term for term; the scalar rows and the operator identity $c\nabla^2 = \Delta I$ on which the reduction rests are unaffected, since the scalar row involves only $\partial_t\phi + \mathrm{div}\,\vec A$ and neither defect touches it. The duality between the two potential equations is therefore a statement about the two operator matrices, not a statement that the printed columns are already correct, and the mechanism below is what carries it.
 
 The reason the dual pairs agree is an algebraic identity, and it is the source of everything else in this route. The matrices of the complex three-vectors satisfy the Clifford relation
 
 $$
-cF(\mathbf{A}_1)\,cF(\mathbf{A}_2) + cF(\mathbf{A}_2)\,cF(\mathbf{A}_1) = 2\langle \mathbf{A}_1, \mathbf{A}_2 \rangle I, \qquad \langle \mathbf{A}, \mathbf{A} \rangle = \mathbf{E}^2 - \mathbf{B}^2 + 2i\,\mathbf{E}\cdot\mathbf{B},
+cF(\vec A_1)\,cF(\vec A_2) + cF(\vec A_2)\,cF(\vec A_1) = 2\langle \vec A_1, \vec A_2 \rangle I, \qquad \langle \vec A, \vec A \rangle = \vec E^2 - \vec B^2 + 2i\,\vec E\cdot\vec B,
 $$
 
-in the general plain bilinear form — no conjugation, so that $\langle \mathbf{A}, \mathbf{A} \rangle$ is the two field invariants in one — and they **commute with their own complex conjugates**,
+in the general plain bilinear form — no conjugation, so that $\langle \vec A, \vec A \rangle$ is the two field invariants in one — and they **commute with their own complex conjugates**,
 
 $$
-cF(\mathbf{A}_1)\,\overline{cF(\mathbf{A}_2)} = \overline{cF(\mathbf{A}_2)}\,cF(\mathbf{A}_1),
+cF(\vec A_1)\,\overline{cF(\vec A_2)} = \overline{cF(\vec A_2)}\,cF(\vec A_1),
 $$
 
-for all $\mathbf{A}_1, \mathbf{A}_2$. The commutation is the whole mechanism: it is why the matrix of the field times the column of operators equals the matrix of the operators times the column of the field, and it is what the source itself names as the reason, together with the algebra it names as the origin of the commutation — the left and the right regular representations of the biquaternions. In the operator case the Clifford relation becomes
+for all $\vec A_1, \vec A_2$. The commutation is the whole mechanism: it is why the matrix of the field times the column of operators equals the matrix of the operators times the column of the field, and it is what the source itself names as the reason, together with the algebra it names as the origin of the commutation — the left and the right regular representations of the biquaternions. In the operator case the Clifford relation becomes
 
 $$
 c\nabla^2 = \Delta I, \qquad (\partial_t I - c\nabla)(\partial_t I + c\nabla) = (\partial_t^2 - \Delta) I,
@@ -514,7 +514,7 @@ both recomputed at the finite-difference floor, and the second is the paper's de
 
 **What the matrix route says about the algebra.** The correspondence with the algebra is exact, and it is a change of basis of *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*: those $4 \times 4$ matrices are the biquaternion algebra in the basis $e_0, x, y, z$ with $x = ie_1$, $y = ie_2$, $z = ie_3$, whose vector units square to $+e_0$; in that basis the left regular matrix of an element is $a I + cF$ with $cF$ the matrix above, the right regular matrix is **exactly its transpose** with no sign matrix, and $c\nabla$ is the same construction with the components of $\nabla$ in place of the field. The consequence for the question this section is about is not a confirmation but a reversal of direction: the one-equation compactness, with full equivalence and no elimination, is available in a purely matrix setting, so it settles nothing about the algebra; what the algebra supplies here is the *explanation* of the matrix identities, since the commutation that makes the dual pair agree is the commutation of the left and the right regular representations, and the field matrix is the left regular matrix in a basis. An author working in matrices and counting equations is led back to the algebra as the reason his identities are true. That is a stronger statement for the corpus than another confirmation of compactness, and it is consistent with the position taken in the section *The Question of What Is Fundamental* below: the algebra supplies the home in which relations become structural, not a claim that no other language can write the equation once.
 
-Two further items of the paper belong to other articles. The three matrices $cF(\mathbf{e}_i)$ of the coordinate unit vectors anticommute pairwise, square to the identity, and satisfy $cF(\mathbf{e}_1)cF(\mathbf{e}_2) = i\,cF(\mathbf{e}_3)$, while the sixteen matrices $I$, $cF(\mathbf{e}_i)$, their conjugates and their products form a Hermitian basis of $M_4(\mathbb{C})$ of which the four $\{I, cF(\mathbf{e}_i)\}$ span the biquaternions — same matrices, in the same basis, as the sixteen of the second realization recorded in *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*, where they are listed and where the transposition identity these matrices satisfy is stated. The tensor $\frac{1}{2}cF\,\overline{cF}$ is real, traceless and carries the energy density, the Poynting vector and the Maxwell stress, and its divergence is the four-force density; that balance, and the matrix proof of it from the Leibniz rule, are recorded beside the corpus's own derivation in *Exercise: The Electromagnetic Energy–Momentum Tensor*. The exponential of the real skew $F$ factors as $e^{F} = e^{cF/2}e^{\overline{cF}/2}$ and is a proper Lorentz transformation, recomputed to $1.4 \times 10^{-14}$ over $100$ random fields; the corpus has no separate article for this exponential as an element of the field theory, and it is recorded here only as a property of $cF$ rather than adopted as a route to the Lorentz group, which the two-sided action of *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* already supplies.
+Two further items of the paper belong to other articles. The three matrices $cF(\vec e_i)$ of the coordinate unit vectors anticommute pairwise, square to the identity, and satisfy $cF(\vec e_1)cF(\vec e_2) = i\,cF(\vec e_3)$, while the sixteen matrices $I$, $cF(\vec e_i)$, their conjugates and their products form a Hermitian basis of $M_4(\mathbb{C})$ of which the four $\{I, cF(\vec e_i)\}$ span the biquaternions — same matrices, in the same basis, as the sixteen of the second realization recorded in *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*, where they are listed and where the transposition identity these matrices satisfy is stated. The tensor $\frac{1}{2}cF\,\overline{cF}$ is real, traceless and carries the energy density, the Poynting vector and the Maxwell stress, and its divergence is the four-force density; that balance, and the matrix proof of it from the Leibniz rule, are recorded beside the corpus's own derivation in *Exercise: The Electromagnetic Energy–Momentum Tensor*. The exponential of the real skew $F$ factors as $e^{F} = e^{cF/2}e^{\overline{cF}/2}$ and is a proper Lorentz transformation, recomputed to $1.4 \times 10^{-14}$ over $100$ random fields; the corpus has no separate article for this exponential as an element of the field theory, and it is recorded here only as a property of $cF$ rather than adopted as a route to the Lorentz group, which the two-sided action of *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* already supplies.
 
 ## The Author's Reading: the Objection, the Modification, and Closure
 
@@ -523,28 +523,28 @@ The biquaternionic form is the corpus's own statement of Maxwell's equations, de
 **The objection.** In Alexeyeva's account the classical system has three faults: the two vector equations are not connected to the two scalar equations; the resulting system is "of a mixed hyperbolic–elliptic type", which she holds to contradict the wave nature of electromagnetic propagation; and it does not describe the longitudinal electromagnetic waves she takes to be observed. The first two are precise and reproducible. The vector pair's characteristic equation is
 
 $$
-\nu_\tau^2\left(\frac{\nu_\tau^2}{c^2} - \|\boldsymbol{\nu}\|^2\right)^2 = 0,
+\nu_\tau^2\left(\frac{\nu_\tau^2}{c^2} - \|\vec\nu\|^2\right)^2 = 0,
 $$
 
-so the vector system is hyperbolic with the light cone for its characteristics, while the scalar pair $\epsilon\,\mathrm{div}\,\mathbf{E} = \rho_E$, $\mathrm{div}\,\mathbf{H} = 0$ is purely spatial and elliptic; its Coulomb potential solves $\Delta u = \rho_E$, whose solution decays at infinity, which the author reads as incompatible with propagation. The corpus's own interpretation is the standard one: the vector equations are the **evolution** system and the scalar equations are **constraints** on its initial data, and the two are not meant to be joined by further dynamics. That the constraint sector is elliptic is a feature of the $3+1$ split, not a defect of the four-dimensional equation. The disagreement is one of interpretation, and the corpus records it only because the modification is built on it.
+so the vector system is hyperbolic with the light cone for its characteristics, while the scalar pair $\epsilon\,\mathrm{div}\,\vec E = \rho_E$, $\mathrm{div}\,\vec H = 0$ is purely spatial and elliptic; its Coulomb potential solves $\Delta u = \rho_E$, whose solution decays at infinity, which the author reads as incompatible with propagation. The corpus's own interpretation is the standard one: the vector equations are the **evolution** system and the scalar equations are **constraints** on its initial data, and the two are not meant to be joined by further dynamics. That the constraint sector is elliptic is a feature of the $3+1$ split, not a defect of the four-dimensional equation. The disagreement is one of interpretation, and the corpus records it only because the modification is built on it.
 
 **The modification.** Joining the vector and scalar equations into one connected system is what the scalar $\alpha$-field does. Adding $\alpha$ to the A-field biquaternion, $\tilde{\mathcal{A}} \to \alpha + \tilde{\mathcal{A}}$, turns the Hamiltonian form into the coupled first-order system
 
 $$
-\mathrm{rot}\,\mathbf{H} - \epsilon\,\partial_t\mathbf{E} + c^2\,\mathrm{grad}\,\alpha_1 = \mathbf{j}_E,
+\mathrm{rot}\,\vec H - \epsilon\,\partial_t\vec E + c^2\,\mathrm{grad}\,\alpha_1 = \vec j_E,
 \qquad
-\mathrm{rot}\,\mathbf{E} + \mu\,\partial_t\mathbf{H} - c^2\,\mathrm{grad}\,\alpha_2 = \mathbf{j}_H,
+\mathrm{rot}\,\vec E + \mu\,\partial_t\vec H - c^2\,\mathrm{grad}\,\alpha_2 = \vec j_H,
 $$
 
 $$
-\epsilon\,\mathrm{div}\,\mathbf{E} + \partial_t\alpha_1 = \rho_E,
+\epsilon\,\mathrm{div}\,\vec E + \partial_t\alpha_1 = \rho_E,
 \qquad
--\mu\,\mathrm{div}\,\mathbf{H} + \partial_t\alpha_2 = \rho_H,
+-\mu\,\mathrm{div}\,\vec H + \partial_t\alpha_2 = \rho_H,
 $$
 
 which is hyperbolic and in which each of the eight equations carries the field. The author calls it the **Maxwell–Dirac** system because its differential operator coincides with the differential part of the Dirac operator; the corpus's *The Biquaternion d'Alembertian and Its Green's Functions* records the related shifted-gradient form of the same name, and *The Electro-Gravimagnetic Field and the Magnetic-Charge–Mass Hypothesis* supplies the **physical interpretation** of $\alpha$ as the attraction–resistance field, its front conditions, and the static limit in which it gives Poisson's equation. The corpus records the system as a genuine first-order hyperbolic completion of the Maxwell pair and takes no position on whether the modification is needed.
 
-**Closure.** The author's own assessment is that the biquaternionic form is mathematically and physically self-consistent but **unclosed**: the field equations do not determine their own charges and currents, and closure requires the *material equations* for $\rho$ and $\mathbf{j}$, supplied in the companion papers. This is the corpus's own recurring theme — the source biquaternion $\tilde{R}$ must be supplied, not derived — restated in the author's terms, and it is the reason the programme's later papers turn to a law of motion for the charge–current field.
+**Closure.** The author's own assessment is that the biquaternionic form is mathematically and physically self-consistent but **unclosed**: the field equations do not determine their own charges and currents, and closure requires the *material equations* for $\rho$ and $\vec j$, supplied in the companion papers. This is the corpus's own recurring theme — the source biquaternion $\tilde{R}$ must be supplied, not derived — restated in the author's terms, and it is the reason the programme's later papers turn to a law of motion for the charge–current field.
 
 The three-vector form in *Maxwell's Equations in a Material Medium* above is the corpus's derivation; the modified system above and the objection that motivates it are recorded from the author's 2016 paper, and the corpus's own equation is not altered by them.
 
@@ -558,13 +558,13 @@ $$
 \tilde{W} = \frac{1}{2}\tilde{F}\tilde{F}^{*} = W + \frac{i}{c}\vec{S},
 $$
 
-where $W$ is the energy density and $\mathbf{S}$ is the energy flow density (the Poynting vector). For the electromagnetic field in a medium, these are
+where $W$ is the energy density and $\vec S$ is the energy flow density (the Poynting vector). For the electromagnetic field in a medium, these are
 
 $$
-W = \frac{1}{2}\left(\epsilon\,\mathbf{E}\cdot\mathbf{E} + \mu\,\mathbf{H}\cdot\mathbf{H}\right), \qquad \mathbf{S} = \mathbf{E}\times\mathbf{H}.
+W = \frac{1}{2}\left(\epsilon\,\vec E\cdot\vec E + \mu\,\vec H\cdot\vec H\right), \qquad \vec S = \vec E\times\vec H.
 $$
 
-The scalar part of $\tilde{W}$ is the energy density, real; the vector part is $(i/c)\mathbf{S}$, purely imaginary. The object is therefore an element of the Hermitian subspace $\mathbb{M}_+$, as every Hermitian form is, and the factor $i$ on the Poynting part is required: in the $ict$ convention a temporal component carries an $i$ relative to a spatial one, exactly as the scalar part of the source $\tilde{R}$ above is $i\rho/\sqrt{\epsilon}$ rather than $\rho/\sqrt{\epsilon}$. The form $\tilde{F}\tilde{F}^{*}$ is computed in *The Field-Strength Biquaternion and Its Invariants*; the factor $\tfrac{1}{2}$ is fixed by the requirement that the scalar part be the energy density. The energy–momentum **tensor** $T^{\mu\nu}$ is the source of the gravitational field in any theory that couples gravity to electromagnetism; $\tilde{W}$ carries its energy density and its energy flux.
+The scalar part of $\tilde{W}$ is the energy density, real; the vector part is $(i/c)\vec S$, purely imaginary. The object is therefore an element of the Hermitian subspace $\mathbb{M}_+$, as every Hermitian form is, and the factor $i$ on the Poynting part is required: in the $ict$ convention a temporal component carries an $i$ relative to a spatial one, exactly as the scalar part of the source $\tilde{R}$ above is $i\rho/\sqrt{\epsilon}$ rather than $\rho/\sqrt{\epsilon}$. The form $\tilde{F}\tilde{F}^{*}$ is computed in *The Field-Strength Biquaternion and Its Invariants*; the factor $\tfrac{1}{2}$ is fixed by the requirement that the scalar part be the energy density. The energy–momentum **tensor** $T^{\mu\nu}$ is the source of the gravitational field in any theory that couples gravity to electromagnetism; $\tilde{W}$ carries its energy density and its energy flux.
 
 The conservation of energy and momentum is expressed by the biquaternionic equation
 
@@ -572,17 +572,17 @@ $$
 \tilde{\nabla} \tilde{W} = -\tilde{P},
 $$
 
-where $\tilde{P}$ is the biquaternionic power–force density, whose scalar part is $-\frac{i}{c}\,\mathbf{J}\cdot\mathbf{E}$ and whose vector part is $-(\rho\mathbf{E} + \mathbf{J}\times\mathbf{B})$. Taking the scalar part of the equation gives the standard energy conservation law
+where $\tilde{P}$ is the biquaternionic power–force density, whose scalar part is $-\frac{i}{c}\,\vec J\cdot\vec E$ and whose vector part is $-(\rho\vec E + \vec J\times\vec B)$. Taking the scalar part of the equation gives the standard energy conservation law
 
 $$
-\frac{\partial W}{\partial t} + \mathrm{div}\,\mathbf{S} + \mathbf{J}\cdot\mathbf{E} = 0.
+\frac{\partial W}{\partial t} + \mathrm{div}\,\vec S + \vec J\cdot\vec E = 0.
 $$
 
 The energy–momentum tensor is the natural bridge between the electromagnetic field and the gravitational field. In the full complexified framework, the same structure appears in the gravitational sector, with the energy–momentum tensor playing the role of the source.
 
 ## Energy Conservation and the Cauchy Problem
 
-The biquaternionic energy–momentum $\tilde{W} = \tfrac{1}{2}\tilde{F}\tilde{F}^{*} = W + (i/c)\mathbf{S}$ satisfies the conservation law $\tilde{\nabla} \tilde{W} = -\tilde{P}$, where $\tilde{P}$ is the biquaternionic power–force density. Integrating this law over a spacetime region $D$ with smooth boundary $\partial D$, and using the divergence theorem, gives
+The biquaternionic energy–momentum $\tilde{W} = \tfrac{1}{2}\tilde{F}\tilde{F}^{*} = W + (i/c)\vec S$ satisfies the conservation law $\tilde{\nabla} \tilde{W} = -\tilde{P}$, where $\tilde{P}$ is the biquaternionic power–force density. Integrating this law over a spacetime region $D$ with smooth boundary $\partial D$, and using the divergence theorem, gives
 
 $$
 \int_{\partial D} \tilde{n} \tilde{W}\,dS = -\int_D \tilde{P}\,dV,
@@ -593,14 +593,14 @@ where $\tilde{n}$ is the biquaternion-valued outward normal on $\partial D$. Thi
 The conservation law implies the **uniqueness** of solutions of the Cauchy problem. Suppose two solutions $\tilde{F}_1$ and $\tilde{F}_2$ satisfy the same initial data at $t = 0$ and the same source $\tilde{R}$. Their difference $\tilde{F} = \tilde{F}_1 - \tilde{F}_2$ satisfies the homogeneous equation $\tilde{\nabla}\tilde{F} = 0$ with zero initial data. The energy integral
 
 $$
-E(t) = \int_{\mathbb{R}^3} W(\mathbf{x}, t)\,d^3 x = \frac{1}{2}\int_{\mathbb{R}^3} \|\tilde{F}(\mathbf{x}, t)\|_E^2\,d^3 x
+E(t) = \int_{\mathbb{R}^3} W(\vec x, t)\,d^3 x = \frac{1}{2}\int_{\mathbb{R}^3} \|\tilde{F}(\vec x, t)\|_E^2\,d^3 x
 $$
 
 is positive-definite and, by the conservation law, time-independent. Since $E(0) = 0$, it follows that $E(t) = 0$ for all $t$, and hence $\tilde{F} = 0$ everywhere. So the Cauchy problem for the biquaternionic Maxwell equation has at most one solution with finite energy. This is the biquaternionic version of the standard uniqueness theorem for Maxwell's equations.
 
 The energy method also provides a stability statement: small perturbations of the initial data lead to small perturbations of the solution, in the $L^2$ norm. The biquaternionic formulation preserves the standard well-posedness of the Maxwell Cauchy problem.
 
-The argument closes under weaker hypotheses than differentiability. In Alexeyeva's treatment the **classical solution** is continuous and differentiable everywhere except on finitely many wave fronts, on which it satisfies the jump condition. The energy identity then holds with the surface terms included, because the jump of the energy integrand on each front vanishes by the shock article's energy-jump relation, whose electric-energy component is $[W]_{F_t} = c^{-1}(\mathbf{n},[\mathbf{P}]_{F_t})$. The energy integral is still positive-definite and time-independent, so the classical solution — **shock fronts included** — is unique. This is stronger than the finite-energy uniqueness above: the plain energy method presumes enough smoothness to apply the divergence theorem, whereas the distributional statement covers the discontinuous solutions that the shock article needs.
+The argument closes under weaker hypotheses than differentiability. In Alexeyeva's treatment the **classical solution** is continuous and differentiable everywhere except on finitely many wave fronts, on which it satisfies the jump condition. The energy identity then holds with the surface terms included, because the jump of the energy integrand on each front vanishes by the shock article's energy-jump relation, whose electric-energy component is $[W]_{F_t} = c^{-1}(\vec n,[\vec P]_{F_t})$. The energy integral is still positive-definite and time-independent, so the classical solution — **shock fronts included** — is unique. This is stronger than the finite-energy uniqueness above: the plain energy method presumes enough smoothness to apply the divergence theorem, whereas the distributional statement covers the discontinuous solutions that the shock article needs.
 
 ## The Lorentz Transformation of the Potential
 
@@ -610,31 +610,31 @@ $$
 \tilde{A}' = \tilde{\Lambda}\,\tilde{A}\,\tilde{\Lambda}^{*},
 $$
 
-where $\tilde{\Lambda}$ is the boost biquaternion. For a pure boost with velocity $\mathbf{u}$, the boost biquaternion is
+where $\tilde{\Lambda}$ is the boost biquaternion. For a pure boost with velocity $\vec u$, the boost biquaternion is
 
 $$
-\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\hat{\mathbf{u}} = \exp\!\left(\frac{\psi}{2}\,i\hat{\mathbf{u}}\right),
+\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\,\hat u = \exp\!\left(\frac{\psi}{2}\,i\hat u\right),
 $$
 
-with the rapidity $\psi$ related to the velocity by $\tanh\psi = u/c$, and $\hat{\mathbf{u}} = \mathbf{u}/u$ the unit vector in the direction of the boost. The Lorentz factor is
+with the rapidity $\psi$ related to the velocity by $\tanh\psi = u/c$, and $\hat u = \vec u/u$ the unit vector in the direction of the boost. The Lorentz factor is
 
 $$
-\gamma = \frac{1}{\sqrt{1 - \mathbf{u}^2/c^2}} = \cosh\psi.
+\gamma = \frac{1}{\sqrt{1 - \vec u^2/c^2}} = \cosh\psi.
 $$
 
 The full development of the boost biquaternion, its relation to the four-velocity, and its action on the four-potential, is the subject of the companion article on the Lorentz transformation. Here we recall the resulting component formulas for the transformation of the scalar and vector potentials:
 
 $$
-\phi' = \gamma\left(\phi - \mathbf{u}\cdot\mathbf{A}\right),
+\phi' = \gamma\left(\phi - \vec u\cdot\vec A\right),
 $$
 
 $$
-\mathbf{A}' = \mathbf{A} + \frac{\gamma - 1}{u^2}(\mathbf{u}\cdot\mathbf{A})\mathbf{u} - \gamma\frac{\phi}{c^2}\mathbf{u}.
+\vec A' = \vec A + \frac{\gamma - 1}{u^2}(\vec u\cdot\vec A)\vec u - \gamma\frac{\phi}{c^2}\vec u.
 $$
 
 These are the standard Lorentz transformation formulas for the four-potential, obtained from the rotor conjugation $\tilde{A}' = \tilde{\Lambda}\tilde{A}\tilde{\Lambda}^{*}$. The same transformation law applies to the biquaternionic source $\tilde{R}$ and to the biquaternionic energy–momentum $\tilde{W}$. This confirms that the biquaternionic formulation is Lorentz-covariant, and it shows how the transformation laws look in biquaternionic form.
 
-**A note on earlier conventions.** An earlier version of this article used the one-sided formula $\tilde{A}' = (\gamma/c)\tilde{U}\tilde{A}$ with $\tilde{U} = c + i\mathbf{u}$. This formula is **incorrect**: it does not reproduce the standard component formulas for a general boost, and it does not match the rotor-conjugation formulation of the Lorentz transformation established in the companion articles. The correct transformation is the rotor conjugation given above.
+**A note on earlier conventions.** An earlier version of this article used the one-sided formula $\tilde{A}' = (\gamma/c)\tilde{U}\tilde{A}$ with $\tilde{U} = c + i\vec u$. This formula is **incorrect**: it does not reproduce the standard component formulas for a general boost, and it does not match the rotor-conjugation formulation of the Lorentz transformation established in the companion articles. The correct transformation is the rotor conjugation given above.
 
 ## The Vacuum Limit
 
@@ -647,13 +647,13 @@ $$
 All the equations above carry over with the substitution $c \to c_0$, $\epsilon \to \epsilon_0$, $\mu \to \mu_0$. In particular, the field-strength biquaternion becomes
 
 $$
-\tilde{F} = i\sqrt{\epsilon_0}\,\mathbf{E} - \sqrt{\mu_0}\,\mathbf{H},
+\tilde{F} = i\sqrt{\epsilon_0}\,\vec E - \sqrt{\mu_0}\,\vec H,
 $$
 
 and the potential biquaternion becomes
 
 $$
-\tilde{A} = \frac{i\phi}{c_0} + \mathbf{A}.
+\tilde{A} = \frac{i\phi}{c_0} + \vec A.
 $$
 
 The complex time coordinate becomes $ic_0 t$, recovering the familiar $ict$ form with the vacuum speed of light. The structure of the equations is unchanged. This is the content of the statement that the vacuum is a special case of a medium: the same equations describe both, with different values of $\epsilon$ and $\mu$.
@@ -674,7 +674,7 @@ This is a structural question, not a settled one. In SI units, $\mu_0$ and $c_0$
 
 The corpus separates an **element** — a number — from an **operator** — a number with a slot to be filled. The group *Focus on Element Representations* develops the numbers and the group *Focus on Operator Representations* develops the operators, and the separation is not book-keeping: it decides which objects may be added to one another and which must be applied to an argument.
 
-The Maxwell equation of this article is written with an **element**. The field strength $\tilde{F}=i\sqrt{\epsilon}\,\mathbf{E}-\sqrt{\mu}\,\mathbf{H}$ is a bivector, a number, and the equation $\tilde{\nabla}\tilde{F}=-\tilde{R}$ multiplies numbers. The electromagnetic **field tensor** is the associated **operator**: an object that takes a four-vector argument and returns a number, formed from the bivector and its order reverse. Gsponer and Hurni record its explicit form, in their notation, as
+The Maxwell equation of this article is written with an **element**. The field strength $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$ is a bivector, a number, and the equation $\tilde{\nabla}\tilde{F}=-\tilde{R}$ multiplies numbers. The electromagnetic **field tensor** is the associated **operator**: an object that takes a four-vector argument and returns a number, formed from the bivector and its order reverse. Gsponer and Hurni record its explicit form, in their notation, as
 
 $$
 F(\;) = \tfrac12\left([\;]\tilde{F} + \tilde{F}^{\sim}[\;]\right),
@@ -691,12 +691,12 @@ The distinction matters because the field's derived quantities come with slots. 
 In the corpus's conventions the split is explicit, and it was checked. For a pure-vector field strength $\tilde{F}=\sum_k F_k e_k$ the two order-parities of $\tilde{\nabla}\tilde{F}$ are
 
 $$
-\tfrac12\left(\tilde{\nabla}\tilde{F}+\tilde{F}^{\sim}\tilde{\nabla}\right)=\mathrm{rot}\,\mathbf{F},
+\tfrac12\left(\tilde{\nabla}\tilde{F}+\tilde{F}^{\sim}\tilde{\nabla}\right)=\mathrm{rot}\,\vec F,
 \qquad
-\tfrac12\left(\tilde{\nabla}\tilde{F}-\tilde{F}^{\sim}\tilde{\nabla}\right)=\partial_{ict}\mathbf{F}-\mathrm{div}\,\mathbf{F}\,e_0,
+\tfrac12\left(\tilde{\nabla}\tilde{F}-\tilde{F}^{\sim}\tilde{\nabla}\right)=\partial_{ict}\vec F-\mathrm{div}\,\vec F\,e_0,
 $$
 
-the first the spatial curl and the second a biquaternion whose scalar part is $-\mathrm{div}\,\mathbf{F}$ and whose vector part is $\partial_{ict}\mathbf{F}$; the second factor of each product is the reversed field strength acted on by the gradient from the right. The one-term equation $\tilde{\nabla}\tilde{F}=-\tilde{R}$ therefore fixes the *sum* of the two halves and neither half separately, and the second — the divergence half — is not identically zero: on a test field of mixed polynomial structure it has both a scalar and a vector part. So the compact equation is a statement about the sum; its spatial-reversal covariance rests on the two halves coinciding, and the source reads that coincidence as the monopole-free condition rather than as a property the writing inherits from the equation.
+the first the spatial curl and the second a biquaternion whose scalar part is $-\mathrm{div}\,\vec F$ and whose vector part is $\partial_{ict}\vec F$; the second factor of each product is the reversed field strength acted on by the gradient from the right. The one-term equation $\tilde{\nabla}\tilde{F}=-\tilde{R}$ therefore fixes the *sum* of the two halves and neither half separately, and the second — the divergence half — is not identically zero: on a test field of mixed polynomial structure it has both a scalar and a vector part. So the compact equation is a statement about the sum; its spatial-reversal covariance rests on the two halves coinciding, and the source reads that coincidence as the monopole-free condition rather than as a property the writing inherits from the equation.
 
 ## Maxwell's Vacuum Equation as a Cauchy–Riemann Condition
 
@@ -725,7 +725,7 @@ D_3=e_1\partial_x+e_2\partial_y+e_3\partial_z,
 k=\frac{\omega}{c}=\omega\sqrt{\epsilon\mu},
 $$
 
-whose scalar part is the constraint $\mathrm{div}\,\mathbf{F}=0$. The field-strength biquaternion is therefore left regular for the **shifted** three-dimensional Cauchy–Riemann operator $D_3-k$ of *Quaternion Regular Functions*: four-dimensional regularity becomes Helmholtz–Dirac regularity in three dimensions, with the shift supplied by the frequency. The companion combination $\tilde{G}=i\sqrt{\epsilon}\mathbf{E}+\sqrt{\mu}\mathbf{H}$ is annihilated by $D_3+k$ instead, and the A-field $\mathcal{A}=-i\tilde{F}$ satisfies the same equation as $\tilde{F}$, so the electromagnetic field splits into two decoupled first-order equations — the diagonalization again, read from the four-dimensional side. The companion article works this out for a chiral medium, where the two shifts separate and become the two wavenumbers.
+whose scalar part is the constraint $\mathrm{div}\,\vec F=0$. The field-strength biquaternion is therefore left regular for the **shifted** three-dimensional Cauchy–Riemann operator $D_3-k$ of *Quaternion Regular Functions*: four-dimensional regularity becomes Helmholtz–Dirac regularity in three dimensions, with the shift supplied by the frequency. The companion combination $\tilde{G}=i\sqrt{\epsilon}\vec E+\sqrt{\mu}\vec H$ is annihilated by $D_3+k$ instead, and the A-field $\mathcal{A}=-i\tilde{F}$ satisfies the same equation as $\tilde{F}$, so the electromagnetic field splits into two decoupled first-order equations — the diagonalization again, read from the four-dimensional side. The companion article works this out for a chiral medium, where the two shifts separate and become the two wavenumbers.
 
 ## The Internal Freedom of the Vacuum Field
 
@@ -752,7 +752,7 @@ The corpus records the invariance and the three interpretations as the source's 
 Up to this point, all biquaternions have been taken in the **anti-Hermitian subspace** $\mathbb{M}_-$ (the material sector), with $A_\mu = a_\mu + i a'_\mu$ and the constraint that the imaginary parts satisfy the reality conditions $a_0 = 0$, $a'_k = 0$ for the spatial components. In the full biquaternion algebra $\mathbb{B}$, the coefficients $A_\mu$ are arbitrary complex numbers, and the potential and field-strength biquaternions become **fully complexified**
 
 $$
-\tilde{A} = A_0 + \mathbf{A}, \qquad \tilde{F} = \mathbf{F},
+\tilde{A} = A_0 + \vec A, \qquad \tilde{F} = \vec F,
 $$
 
 with complex coefficients that are not restricted to the anti-Hermitian subspace. The projection onto $\mathbb{M}_-$ reproduces the electromagnetic field; the remaining components correspond to the additional directions of the complexified spacetime.
@@ -763,11 +763,11 @@ This is the natural generalization of the $ict$ structure. The electromagnetic f
 
 ## Summary
 
-Maxwell's equations in a linear, isotropic, non-dispersive medium collapse into the single biquaternionic equation $\tilde{\nabla}\tilde{F} = -\tilde{R}$, where $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$ is the biquaternionic gradient, $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$ is the field-strength biquaternion (the Riemann–Silberstein vector of Silberstein's 1907 construction, up to an overall factor), and $\tilde{R} = i\rho/\sqrt{\epsilon} + \sqrt{\mu}\,\mathbf{J}$ is the source biquaternion. One equation replaces the four standard Maxwell equations, and no explicit $\epsilon$ or $\mu$ appears, because the medium is carried entirely by the definitions of $\tilde{F}$ and $\tilde{R}$. The scalar and vector parts of the single equation reproduce the Hamiltonian form, $\mathrm{div}\,\mathbf{F} = R_0$ and $\partial_{ict}\mathbf{F} + \mathrm{rot}\,\mathbf{F} = -\mathbf{R}$. The d'Alembertian factors as $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \Delta$, and the conservation of electric charge is exactly the integrability condition $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{R}) = 0$. The single equation is first order and eliminates no field, and that is the property the classical reduction to a second-order wave equation lacks: the reduced equation admits solutions, among them longitudinal ones, that violate the divergence constraints. At fixed frequency the same equation reduces to the shifted Cauchy–Riemann condition $(D_3-k)\tilde{F}=0$ together with its companion, and in a chiral medium the two shifts separate into the two wavenumbers and the two circular polarizations. The vacuum equation also carries an internal freedom beyond its Lorentz covariance: right multiplication by any constant unit quaternion leaves it invariant, a three-parameter $\mathrm{SU}(2)$ that the equation does not fix and that Lanczos read as the freedom selecting the Lorentz character of the field — the electromagnetic six-vector, a four-vector, or the massless spin-1/2 that he did not take.
+Maxwell's equations in a linear, isotropic, non-dispersive medium collapse into the single biquaternionic equation $\tilde{\nabla}\tilde{F} = -\tilde{R}$, where $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$ is the biquaternionic gradient, $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ is the field-strength biquaternion (the Riemann–Silberstein vector of Silberstein's 1907 construction, up to an overall factor), and $\tilde{R} = i\rho/\sqrt{\epsilon} + \sqrt{\mu}\,\vec J$ is the source biquaternion. One equation replaces the four standard Maxwell equations, and no explicit $\epsilon$ or $\mu$ appears, because the medium is carried entirely by the definitions of $\tilde{F}$ and $\tilde{R}$. The scalar and vector parts of the single equation reproduce the Hamiltonian form, $\mathrm{div}\,\vec F = R_0$ and $\partial_{ict}\vec F + \mathrm{rot}\,\vec F = -\vec R$. The d'Alembertian factors as $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \Delta$, and the conservation of electric charge is exactly the integrability condition $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{R}) = 0$. The single equation is first order and eliminates no field, and that is the property the classical reduction to a second-order wave equation lacks: the reduced equation admits solutions, among them longitudinal ones, that violate the divergence constraints. At fixed frequency the same equation reduces to the shifted Cauchy–Riemann condition $(D_3-k)\tilde{F}=0$ together with its companion, and in a chiral medium the two shifts separate into the two wavenumbers and the two circular polarizations. The vacuum equation also carries an internal freedom beyond its Lorentz covariance: right multiplication by any constant unit quaternion leaves it invariant, a three-parameter $\mathrm{SU}(2)$ that the equation does not fix and that Lanczos read as the freedom selecting the Lorentz character of the field — the electromagnetic six-vector, a four-vector, or the massless spin-1/2 that he did not take.
 
 The retarded Green's function supplies the causal solution, the field at a point depending only on the sources in its past light cone; it is the fundamental solution of the hyperbolic wave operator and is related by the Wick rotation to the elliptic Cauchy kernel $\tilde{Q}^{\natural}/\|\tilde{Q}\|_E^4$ used in biquaternion analysis. In the stationary limit the equation becomes purely spatial and the solution is the gradient of the Newton kernel, whose first term is Coulomb's law for a point charge and whose second is the Biot–Savart law. The same content in the complex-vector variable $\mathcal{A} = -i\tilde{F}$ — the dual field strength — has a **Green tensor** $U_{jk}$ rather than a scalar kernel, built from the wave function $\psi = (4\pi R)^{-1}\delta(t - R/c)$ and its time antiderivative; with it the Cauchy problem is unique even when the solution carries shock fronts. The potential $\tilde{A}$ is subject to the gauge transformation $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$, under which $\tilde{F}$ is invariant while the scalar $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ shifts by $S' = S - \Box\Gamma$; the Lorenz gauge $S = 0$ reduces the first-order equation to the wave equation $\Box\tilde{A} = -\mu\tilde{R}'$.
 
-The energy and momentum of the field are carried by the halved Hermitian form $\tilde{W} = \tfrac{1}{2}\tilde{F}\tilde{F}^{*} = W + (i/c)\mathbf{S}$, an element of the Hermitian subspace $\mathbb{M}_+$ whose scalar part is the energy density $W$ and whose vector part is $(i/c)\mathbf{S}$, carrying the Poynting flux. It obeys the conservation law $\tilde{\nabla}\tilde{W} = -\tilde{P}$, which integrates to the biquaternionic Poynting theorem and gives uniqueness and stability of the Cauchy problem with finite energy. The four-potential transforms by rotor conjugation, $\tilde{A}' = \tilde{\Lambda}\tilde{A}\tilde{\Lambda}^{*}$, which reproduces the standard boost formulas for $\phi$ and $\mathbf{A}$ and exhibits the Lorentz covariance of the formulation. The vacuum limit is the substitution $\epsilon \to \epsilon_0$, $\mu \to \mu_0$, $c \to c_0$, leaving the structure of the equations unchanged; whether $c_0$ or the pair $(\epsilon_0,\mu_0)$ is fundamental is a structural question, not a settled one. Finally, the formulation extends to fully complexified coefficients, in which the electromagnetic field is the real projection of a complex field on the larger arena of complexified spacetime.
+The energy and momentum of the field are carried by the halved Hermitian form $\tilde{W} = \tfrac{1}{2}\tilde{F}\tilde{F}^{*} = W + (i/c)\vec S$, an element of the Hermitian subspace $\mathbb{M}_+$ whose scalar part is the energy density $W$ and whose vector part is $(i/c)\vec S$, carrying the Poynting flux. It obeys the conservation law $\tilde{\nabla}\tilde{W} = -\tilde{P}$, which integrates to the biquaternionic Poynting theorem and gives uniqueness and stability of the Cauchy problem with finite energy. The four-potential transforms by rotor conjugation, $\tilde{A}' = \tilde{\Lambda}\tilde{A}\tilde{\Lambda}^{*}$, which reproduces the standard boost formulas for $\phi$ and $\vec A$ and exhibits the Lorentz covariance of the formulation. The vacuum limit is the substitution $\epsilon \to \epsilon_0$, $\mu \to \mu_0$, $c \to c_0$, leaving the structure of the equations unchanged; whether $c_0$ or the pair $(\epsilon_0,\mu_0)$ is fundamental is a structural question, not a settled one. Finally, the formulation extends to fully complexified coefficients, in which the electromagnetic field is the real projection of a complex field on the larger arena of complexified spacetime.
 
 ## Summary of Notation
 
@@ -781,7 +781,7 @@ The energy and momentum of the field are carried by the halved Hermitian form $\
 | $\tilde{A}$ | Potential biquaternion |
 | $\tilde{F}$ | Field-strength biquaternion |
 | $\tilde{F}_\star = -i\tilde{F}$ | Dual field strength |
-| $\mathcal{A} = -i\tilde{F} = \sqrt{\epsilon}\,\mathbf{E} + i\sqrt{\mu}\,\mathbf{H}$ | A-field (complex three-vector; not the potential) |
+| $\mathcal{A} = -i\tilde{F} = \sqrt{\epsilon}\,\vec E + i\sqrt{\mu}\,\vec H$ | A-field (complex three-vector; not the potential) |
 | $U_{jk}$ | Green tensor of the A-field equation |
 | $\psi, \chi$ | Wave function $(4\pi R)^{-1}\delta(t - R/c)$ and its time antiderivative |
 | $\tilde{R}, \tilde{R}'$ | Source biquaternions |
@@ -799,7 +799,7 @@ The energy and momentum of the field are carried by the halved Hermitian form $\
 | $F, F^*, cF$ | Real field matrices of the matrix formulation and their complexification, $cF := F - iF^*$ |
 | $c\nabla$ | The operator matrix of the same formulation |
 | $k = \omega\sqrt{\epsilon\mu}$ | Wavenumber in the medium at fixed frequency; shift of $D_3-k$ |
-| $\mathbf{u}$ | Particle or frame velocity |
+| $\vec u$ | Particle or frame velocity |
 | $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
@@ -816,7 +816,7 @@ The energy and momentum of the field are carried by the halved Hermitian form $\
 - A. Waser, "Application of Bi-Quaternions in Physics" (2000, updated 2007), for the biquaternionic energy–momentum and the Lorentz transformation of the potential.
 - A. W. Conway, "On the applications of quaternions to some recent developments of electrical theory", *Proceedings of the Royal Irish Academy* **29** (1911) 1–9, and L. Silberstein, "Quaternionic form of relativity", *Philosophical Magazine* **23** (1912) 790–809, for the compact biquaternionic Maxwell equation $\nabla\tilde{F}=-4\pi J$ used here.
 - C. W. Kilmister, "The application of certain linear quaternion functions to tensor analysis", *Proceedings of the Royal Irish Academy* **57** (1955) 37–99, for the distinction between the electromagnetic field **bivector** and the field **operator** (tensor).
-- D. H. Gottlieb, "Maxwell's equations" (1 August 2004, 12 pp.), for the matrix formulation compared in *A fourth route* above: the single complex matrix equation $cF(-\partial_t,\nabla)^{\mathsf T} = (\rho,\mathbf{J})^{\mathsf T}$, the dual form with the operator matrix $c\nabla$, the operator identities $c\nabla^2 = \Delta I$ and $(\partial_t I - c\nabla)(\partial_t I + c\nabla) = (\partial_t^2 - \Delta)I$, and the commutation of the field matrices with their conjugates. The paper's equations (13) and (14) are not reproduced here: their vector parts carry the term and sign defects recorded in *A fourth route*. The paper's $4 \times 4$ matrices are those of the second realization of *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*, where the transposition identity they satisfy is stated.
+- D. H. Gottlieb, "Maxwell's equations" (1 August 2004, 12 pp.), for the matrix formulation compared in *A fourth route* above: the single complex matrix equation $cF(-\partial_t,\nabla)^{\mathsf T} = (\rho,\vec J)^{\mathsf T}$, the dual form with the operator matrix $c\nabla$, the operator identities $c\nabla^2 = \Delta I$ and $(\partial_t I - c\nabla)(\partial_t I + c\nabla) = (\partial_t^2 - \Delta)I$, and the commutation of the field matrices with their conjugates. The paper's equations (13) and (14) are not reproduced here: their vector parts carry the term and sign defects recorded in *A fourth route*. The paper's $4 \times 4$ matrices are those of the second realization of *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*, where the transposition identity they satisfy is stated.
 - C. Lanczos, "Die funktionentheoretischen Beziehungen der Maxwellschen Aethergleichungen — Ein Beitrag zur Relativitäts- und Elektronentheorie" (Budapest, 1919; reprinted in the *Collected Published Papers*, Vol. VI, A-1–A-82; English typescript arXiv:physics/0408079), for the interpretation of the vacuum Maxwell equation as the four-dimensional Cauchy–Riemann condition and the generalised Cauchy formula.
 - K. Imaeda, "A new formulation of classical electrodynamics", *Il Nuovo Cimento B* **32** (1976) 138–162, for the quaternionic vacuum Maxwell equation $i\partial_tF+DF=0$, the form the compact equation takes when the time derivative is left explicit; the source of the time-harmonic dictionary of *The Dirac Equation in Biquaternionic Form* cites it in the massless case.
 - R. Fueter, "Analytische Funktionen einer Quaternionenvariablen", *Commentarii Mathematici Helvetici* **4** (1932) 9–20, for the analytic function theory of regular quaternion functions.

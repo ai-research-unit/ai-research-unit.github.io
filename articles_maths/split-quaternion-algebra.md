@@ -38,10 +38,10 @@ $$
 The real number $q_0$ is the **scalar part**, and the triple $(q_1, q_2, q_3)$ is the **vector part**. We also write
 
 $$
-\tilde q = q_0 + \mathbf{v}, \qquad \mathbf{v} = q_1 e_1 + q_2 e_2 + q_3 e_3,
+\tilde q = q_0 + \vec v, \qquad \vec v = q_1 e_1 + q_2 e_2 + q_3 e_3,
 $$
 
-and we write $\operatorname{Sc}(\tilde q) = q_0$ and $\operatorname{Vec}(\tilde q) = \mathbf{v}$ for the two components.
+and we write $\operatorname{Sc}(\tilde q) = q_0$ and $\operatorname{Vec}(\tilde q) = \vec v$ for the two components.
 
 The four elements $1, e_1, e_2, e_3$ are linearly independent over $\mathbb{R}$ by definition, so $\dim_{\mathbb{R}} \mathbb{H}_{\mathrm{s}} = 4$. The unit is $1$, and every element is a real linear combination of the basis elements.
 
@@ -227,19 +227,19 @@ $$
 Z(\mathbb{H}_{\mathrm{s}}) = \{\tilde q : \tilde q \tilde p = \tilde p\tilde q \ \text{for all} \ \tilde p\} = \mathbb{R} \cdot 1 .
 $$
 
-**Proof.** The scalars are central. Conversely, suppose $\tilde q = q_0 + \mathbf{v}$ is central. Commuting $\tilde q$ with $e_1$ gives
+**Proof.** The scalars are central. Conversely, suppose $\tilde q = q_0 + \vec v$ is central. Commuting $\tilde q$ with $e_1$ gives
 
 $$
 0 = \tilde q e_1 - e_1 \tilde q .
 $$
 
-The scalar part of $\tilde q$ commutes with everything, so the condition is $\mathbf{v} e_1 - e_1 \mathbf{v} = 0$. Writing $\mathbf{v} = q_1 e_1 + q_2 e_2 + q_3 e_3$ and using the table,
+The scalar part of $\tilde q$ commutes with everything, so the condition is $\vec v e_1 - e_1 \vec v = 0$. Writing $\vec v = q_1 e_1 + q_2 e_2 + q_3 e_3$ and using the table,
 
 $$
-\mathbf{v} e_1 = -q_1 - q_2 e_3 + q_3 e_2, \qquad e_1 \mathbf{v} = -q_1 + q_2 e_3 - q_3 e_2,
+\vec v e_1 = -q_1 - q_2 e_3 + q_3 e_2, \qquad e_1 \vec v = -q_1 + q_2 e_3 - q_3 e_2,
 $$
 
-so $\mathbf{v} e_1 - e_1 \mathbf{v} = -2q_2 e_3 + 2q_3 e_2 = 0$, giving $q_2 = q_3 = 0$. Commuting with $e_2$ similarly gives $q_1 = 0$. Hence $\mathbf{v} = 0$ and $\tilde q = q_0$ is scalar.
+so $\vec v e_1 - e_1 \vec v = -2q_2 e_3 + 2q_3 e_2 = 0$, giving $q_2 = q_3 = 0$. Commuting with $e_2$ similarly gives $q_1 = 0$. Hence $\vec v = 0$ and $\tilde q = q_0$ is scalar.
 
 **Theorem (Simplicity).** The split-quaternion algebra is **simple**: it has no two-sided ideal other than $0$ and the algebra itself.
 
@@ -319,7 +319,7 @@ The system is not the eight-dimensional $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \o
 | $1, e_1, e_2, e_3$ | the basis, with $e_1^2=-1$, $e_2^2=e_3^2=+1$, $e_3=e_1e_2$ | this article |
 | $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | a general split-quaternion | this article |
 | $q_0 = \operatorname{Sc}(\tilde q)$ | the scalar part | this article |
-| $\mathbf{v} = \operatorname{Vec}(\tilde q)$ | the vector part | this article |
+| $\vec v = \operatorname{Vec}(\tilde q)$ | the vector part | this article |
 | $S = \mathbb{R}\cdot1$ | the scalar subspace | this article |
 | $V = \operatorname{span}\{e_1,e_2,e_3\}$ | the vector subspace | this article |
 | $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$ | the split-quaternion conjugation | this article |

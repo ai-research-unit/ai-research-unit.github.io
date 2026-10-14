@@ -21,7 +21,7 @@ and every table of the article follows this order, family by family and, inside 
 
 **Scope and owners.** This article owns the general value for the six structures of the quaternion space: the two squares and their reductions of §*The Two General Products at a General Value*, the six-row table of §*The Six Root Sets at a General Value*, the three existence classes, the roots of $0$ and the scaling. The two signed values $+1$ and $-1$, with the idempotents, are *Square Roots of One and the Idempotents in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; the value $0$ and the nilpotents are *Square Roots of Zero and the Nilpotents in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*. The products are *The 6 Products of the Quaternion $\mathbb{R}$ Space* and *The Two General Products of the Quaternion $\mathbb{R}$ Space*; the six structures are *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; the vocabulary stated once for a general product is *Definitions for the Study of the 6 Algebraic Structures*; the two forms are *The 2 Forms over the Quaternion $\mathbb{R}$ Space*; and the neighbouring classes of elements are *Square Roots of One and the Idempotents in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, *Square Roots of Zero and the Nilpotents in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, *Annihilators in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* and *Zero Divisors in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, below this article in this category.
 
-**Conventions.** $\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_0=1$ and $e_1e_2=e_3$; a general element is $\tilde\xi=\xi_0e_0+\boldsymbol\xi$ with $\xi_0\in\mathbb{R}$ and $\boldsymbol\xi=\sum_k\xi_ke_k$; the conjugation is $\tilde\xi^{\natural}=\xi_0-\boldsymbol\xi$; the **plain form** is $B(\tilde\xi)=\xi_0^{2}-\lvert\boldsymbol\xi\rvert^{2}$ and the **quaternion form** is $N(\tilde\xi)=\xi_0^{2}+\lvert\boldsymbol\xi\rvert^{2}$, with $\lvert\boldsymbol\xi\rvert^{2}=\sum_k\xi_k^{2}$. The root is defined in *Definitions for the Study of the 6 Algebraic Structures* §*The Element Vocabulary* as a **non-zero** element with $\tilde\xi\star\tilde\xi=\lambda e_0$; a root set is read here as a solution set, so the origin is counted with the roots of $0$, and the places where an owner counts the non-zero roots alone are read as the origin alone.
+**Conventions.** $\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_0=1$ and $e_1e_2=e_3$; a general element is $\tilde\xi=\xi_0e_0+\vec\xi$ with $\xi_0\in\mathbb{R}$ and $\vec\xi=\sum_k\xi_ke_k$; the conjugation is $\tilde\xi^{\natural}=\xi_0-\vec\xi$; the **plain form** is $B(\tilde\xi)=\xi_0^{2}-\lvert\vec\xi\rvert^{2}$ and the **quaternion form** is $N(\tilde\xi)=\xi_0^{2}+\lvert\vec\xi\rvert^{2}$, with $\lvert\vec\xi\rvert^{2}=\sum_k\xi_k^{2}$. The root is defined in *Definitions for the Study of the 6 Algebraic Structures* §*The Element Vocabulary* as a **non-zero** element with $\tilde\xi\star\tilde\xi=\lambda e_0$; a root set is read here as a solution set, so the origin is counted with the roots of $0$, and the places where an owner counts the non-zero roots alone are read as the origin alone.
 
 ## The Two General Products at a General Value
 
@@ -29,20 +29,20 @@ The quaternion space carries six structures and two general products, the plain 
 
 ### The Plain Product: The Vector–Scalar Reduction
 
-The plain square is $\tilde\xi^{2}=B(\tilde\xi)e_0+2\xi_0\boldsymbol\xi$, an element with scalar part the plain form $B(\tilde\xi)=\xi_0^{2}-\lvert\boldsymbol\xi\rvert^{2}$ and vector part $2\xi_0\boldsymbol\xi$, and the equation $\tilde\xi^{2}=\lambda e_0$ is the pair
+The plain square is $\tilde\xi^{2}=B(\tilde\xi)e_0+2\xi_0\vec\xi$, an element with scalar part the plain form $B(\tilde\xi)=\xi_0^{2}-\lvert\vec\xi\rvert^{2}$ and vector part $2\xi_0\vec\xi$, and the equation $\tilde\xi^{2}=\lambda e_0$ is the pair
 
 $$
-B(\tilde\xi)=\lambda , \qquad 2\xi_0\boldsymbol\xi=0 .
+B(\tilde\xi)=\lambda , \qquad 2\xi_0\vec\xi=0 .
 $$
 
-The second equation is the **vector–scalar reduction**: $\xi_0=0$ or $\boldsymbol\xi=0$. The case $\boldsymbol\xi=0$ gives the two central roots $\tilde\xi=\pm\sqrt\lambda\,e_0$, present for $\lambda>0$ and collapsing to the origin at $\lambda=0$, and absent for $\lambda<0$. The case $\xi_0=0$ gives the roots in the vector subspace, the solutions of $-\lvert\boldsymbol\xi\rvert^{2}=\lambda$, which are the sphere $\lvert\boldsymbol\xi\rvert^{2}=-\lambda$ of real dimension two for $\lambda<0$ and nothing for $\lambda>0$. So the plain product reads **every** real value: the negative values with the sphere of the vector subspace, the value $0$ with the origin, and the positive values with the two central points. The sphere of a negative value is the family of the complex structures on the vector subspace scaled by $\sqrt{-\lambda}$: a pure unit vector squares to $-e_0$, so the whole sphere is the family that the conversion of the plain product into an algebra over $\mathbb{C}$ uses.
+The second equation is the **vector–scalar reduction**: $\xi_0=0$ or $\vec\xi=0$. The case $\vec\xi=0$ gives the two central roots $\tilde\xi=\pm\sqrt\lambda\,e_0$, present for $\lambda>0$ and collapsing to the origin at $\lambda=0$, and absent for $\lambda<0$. The case $\xi_0=0$ gives the roots in the vector subspace, the solutions of $-\lvert\vec\xi\rvert^{2}=\lambda$, which are the sphere $\lvert\vec\xi\rvert^{2}=-\lambda$ of real dimension two for $\lambda<0$ and nothing for $\lambda>0$. So the plain product reads **every** real value: the negative values with the sphere of the vector subspace, the value $0$ with the origin, and the positive values with the two central points. The sphere of a negative value is the family of the complex structures on the vector subspace scaled by $\sqrt{-\lambda}$: a pure unit vector squares to $-e_0$, so the whole sphere is the family that the conversion of the plain product into an algebra over $\mathbb{C}$ uses.
 
 ### The Quaternionic Product: One Real Equation
 
 The square of the quaternionic product is already central,
 
 $$
-\tilde\xi^{\natural}\tilde\xi=N(\tilde\xi)e_0 , \qquad N(\tilde\xi)=\xi_0^{2}+\lvert\boldsymbol\xi\rvert^{2} ,
+\tilde\xi^{\natural}\tilde\xi=N(\tilde\xi)e_0 , \qquad N(\tilde\xi)=\xi_0^{2}+\lvert\vec\xi\rvert^{2} ,
 $$
 
 so the equation $\tilde\xi^{\natural}\tilde\xi=\lambda e_0$ is the single real equation $N(\tilde\xi)=\lambda$. The quaternion form is a sum of four real squares, hence non-negative, so a root exists exactly for a non-negative value: the origin alone at $\lambda=0$, and the sphere $N(\tilde\xi)=\lambda$ of real dimension three at $\lambda>0$. **Every positive value has a root and no negative value has one.**
@@ -57,7 +57,7 @@ The square of a structure is its operation read at the two equal arguments, and 
 
 ### $\mathrm{GPA}$, the general plain algebra
 
-The product is $\tilde\xi\tilde\eta$ and its square is the plain square, of scalar part $B$ and vector part $2\xi_0\boldsymbol\xi$. A root of $\lambda$ exists for **every** real $\lambda$, and the root set is the two central roots $\pm\sqrt\lambda\,e_0$ at a positive value, the origin at $0$, and the sphere of radius $\sqrt{-\lambda}$ in the vector subspace, of real dimension two, at a negative value. The product and its class are *Introduction to the General Plain Algebra of Quaternions*.
+The product is $\tilde\xi\tilde\eta$ and its square is the plain square, of scalar part $B$ and vector part $2\xi_0\vec\xi$. A root of $\lambda$ exists for **every** real $\lambda$, and the root set is the two central roots $\pm\sqrt\lambda\,e_0$ at a positive value, the origin at $0$, and the sphere of radius $\sqrt{-\lambda}$ in the vector subspace, of real dimension two, at a negative value. The product and its class are *Introduction to the General Plain Algebra of Quaternions*.
 
 ### $\mathrm{SPA}$, the symmetric plain algebra
 
@@ -89,7 +89,7 @@ The six root sets of the central value $\lambda e_0$ are collected below. The co
 
 | the structure | the square | $\lambda<0$ | $\lambda=0$ | $\lambda>0$ |
 |---|---|---|---|---|
-| $\mathrm{GPA}$ | $\tilde\xi^{2}$ | the sphere $\lvert\boldsymbol\xi\rvert^{2}=-\lambda$ in the vector subspace, real dimension $2$ | the origin alone | the pair $\pm\sqrt\lambda\,e_0$ |
+| $\mathrm{GPA}$ | $\tilde\xi^{2}$ | the sphere $\lvert\vec\xi\rvert^{2}=-\lambda$ in the vector subspace, real dimension $2$ | the origin alone | the pair $\pm\sqrt\lambda\,e_0$ |
 | $\mathrm{SPA}$ | $\tilde\xi^{2}$ | the same sphere | the origin alone | the same pair |
 | $\mathrm{APA}$ | $0$ | none | the whole space | none |
 | $\mathrm{GQA}$ | $N(\tilde\xi)e_0$ | none | the origin alone | the sphere $N=\lambda$, real dimension $3$ |
@@ -104,7 +104,7 @@ The six root sets of the central value $\lambda e_0$ are collected below. The co
 
 **Theorem (the two general products at a general value).** For every real value $\lambda e_0$ the two general products have different root sets, and the difference is the exchange of the two spheres. The plain product answers with the pair $\pm\sqrt\lambda\,e_0$ at a positive value and with the sphere of the vector subspace at a negative value; the quaternionic product answers with the sphere of the whole space at a positive value and with nothing at a negative value. At $\lambda=0$ the two answer together with the origin.
 
-*Proof.* The two root sets are the two reductions of §*The Two General Products at a General Value*: the plain reduction $B(\tilde\xi)=\lambda$, $2\xi_0\boldsymbol\xi=0$, and the single equation $N(\tilde\xi)=\lambda$. **The word is *differ*, not *coincide*.** The two squares differ by the sign of the vector part, $B(\tilde\xi)=\xi_0^{2}-\lvert\boldsymbol\xi\rvert^{2}$ against $N(\tilde\xi)=\xi_0^{2}+\lvert\boldsymbol\xi\rvert^{2}$, and that one sign moves the sphere from the negative values to the positive ones.
+*Proof.* The two root sets are the two reductions of §*The Two General Products at a General Value*: the plain reduction $B(\tilde\xi)=\lambda$, $2\xi_0\vec\xi=0$, and the single equation $N(\tilde\xi)=\lambda$. **The word is *differ*, not *coincide*.** The two squares differ by the sign of the vector part, $B(\tilde\xi)=\xi_0^{2}-\lvert\vec\xi\rvert^{2}$ against $N(\tilde\xi)=\xi_0^{2}+\lvert\vec\xi\rvert^{2}$, and that one sign moves the sphere from the negative values to the positive ones.
 
 ### The Three Existence Classes
 
@@ -124,8 +124,8 @@ Written on the coordinates, the root of $\lambda$ is the equation of the square 
 
 | the family | the equation of the root of $\lambda$ |
 |---|---|
-| the plain algebra | $\xi_0^{2}-\lvert\boldsymbol\xi\rvert^{2}=\lambda$ and $2\xi_0\boldsymbol\xi=0$ |
-| the quaternionic algebra | $\xi_0^{2}+\lvert\boldsymbol\xi\rvert^{2}=\lambda$ |
+| the plain algebra | $\xi_0^{2}-\lvert\vec\xi\rvert^{2}=\lambda$ and $2\xi_0\vec\xi=0$ |
+| the quaternionic algebra | $\xi_0^{2}+\lvert\vec\xi\rvert^{2}=\lambda$ |
 
 The value $0$ is the row $\lambda=0$ of each equation, and it is the value every structure of the six reads:
 
@@ -141,13 +141,13 @@ The two antisymmetric structures reach the value $0$ by vanishing, and their roo
 
 The plain reduction cuts the space into two families, and the root sets of the plain product respect the cut.
 
-**Definition.** An element is **pure** when its scalar part vanishes, $\xi_0=0$, and **central** when its vector part vanishes, $\boldsymbol\xi=0$.
+**Definition.** An element is **pure** when its scalar part vanishes, $\xi_0=0$, and **central** when its vector part vanishes, $\vec\xi=0$.
 
-The reduction of the plain square is the vanishing of the vector part, $2\xi_0\boldsymbol\xi=0$, and the two factors give the two families: the pure one, on which the reduction is satisfied identically, and the central one, on which it forces the vector part to vanish.
+The reduction of the plain square is the vanishing of the vector part, $2\xi_0\vec\xi=0$, and the two factors give the two families: the pure one, on which the reduction is satisfied identically, and the central one, on which it forces the vector part to vanish.
 
 | | pure, $\xi_0=0$ | central, $\xi_0\neq0$ |
 |---|---|---|
-| the reduction $2\xi_0\boldsymbol\xi=0$ | satisfied identically | forces $\boldsymbol\xi=0$ |
+| the reduction $2\xi_0\vec\xi=0$ | satisfied identically | forces $\vec\xi=0$ |
 | a root of $\lambda<0$ | the sphere of radius $\sqrt{-\lambda}$ | none |
 | a root of $0$ | the origin alone | the origin alone |
 | a root of $\lambda>0$ | none | the pair $\pm\sqrt\lambda\,e_0$ |
@@ -164,7 +164,7 @@ The scaling is the reason the plain sphere at a negative value is one sphere in 
 
 ## Summary
 
-The root of the central value $\lambda e_0$ in a structure is the element whose square in that structure is the value, and the value is general and real. The two general products give two reductions: the plain product reduces to the pair $B(\tilde\xi)=\xi_0^{2}-\lvert\boldsymbol\xi\rvert^{2}=\lambda$, $2\xi_0\boldsymbol\xi=0$, and the quaternionic product to the single real equation $N(\tilde\xi)=\xi_0^{2}+\lvert\boldsymbol\xi\rvert^{2}=\lambda$.
+The root of the central value $\lambda e_0$ in a structure is the element whose square in that structure is the value, and the value is general and real. The two general products give two reductions: the plain product reduces to the pair $B(\tilde\xi)=\xi_0^{2}-\lvert\vec\xi\rvert^{2}=\lambda$, $2\xi_0\vec\xi=0$, and the quaternionic product to the single real equation $N(\tilde\xi)=\xi_0^{2}+\lvert\vec\xi\rvert^{2}=\lambda$.
 
 The plain product has a root of every real value: the two central roots $\pm\sqrt\lambda\,e_0$ at a positive value, the origin at $0$, and the sphere of radius $\sqrt{-\lambda}$ in the vector subspace, of real dimension two, at a negative value. The quaternionic product has a root exactly of the non-negative values: the origin at $0$ and the sphere of radius $\sqrt\lambda$, of real dimension three, at a positive value. The two products exchange their spheres through the one sign that separates the plain form $B$ from the quaternion form $N$.
 
@@ -176,9 +176,9 @@ The root of $0$ exists for all six structures, and it is the origin for the four
 |---|---|
 | $\lambda e_0$ | a central value, $\lambda\in\mathbb{R}$ |
 | $\tilde\xi\star\tilde\xi$ | the square in the product at hand |
-| $B(\tilde\xi)=\xi_0^{2}-\lvert\boldsymbol\xi\rvert^{2}$ | the plain form, the scalar part of the plain square |
-| $N(\tilde\xi)=\xi_0^{2}+\lvert\boldsymbol\xi\rvert^{2}$ | the quaternion form, the square of the quaternionic product |
-| $\boldsymbol\xi=\sum_k\xi_ke_k$ | the vector part, the home of the sphere of the plain product |
+| $B(\tilde\xi)=\xi_0^{2}-\lvert\vec\xi\rvert^{2}$ | the plain form, the scalar part of the plain square |
+| $N(\tilde\xi)=\xi_0^{2}+\lvert\vec\xi\rvert^{2}$ | the quaternion form, the square of the quaternionic product |
+| $\vec\xi=\sum_k\xi_ke_k$ | the vector part, the home of the sphere of the plain product |
 | $\mathrm{GPA},\dots,\mathrm{AQA}$ | the six structures of the space, the two families of three |
 
 ## Further Reading

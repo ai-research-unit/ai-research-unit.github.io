@@ -8,21 +8,21 @@ The article proves the bounds, proves the exact formula for a real parameter, ex
 
 No physics is invoked.
 
-Throughout, $\dim_H$ is the Hausdorff dimension and $\dim_B$ the upper box dimension, $\kappa(c)=c_0+i|\mathbf c|$, and $J^{\mathbb{C}}_{\kappa}$ is the complex Julia set of $z \mapsto z^2+\kappa$.
+Throughout, $\dim_H$ is the Hausdorff dimension and $\dim_B$ the upper box dimension, $\kappa(c)=c_0+i|\vec c|$, and $J^{\mathbb{C}}_{\kappa}$ is the complex Julia set of $z \mapsto z^2+\kappa$.
 
 ## The Profile Map and the Bounds
 
 **Definition.** The **profile map** is
 
 $$
-\Phi : \mathbb{H} \to \mathbb{R}\times[0,\infty) , \qquad \Phi(\tilde q) = (q_0,|\mathbf q|) ,
+\Phi : \mathbb{H} \to \mathbb{R}\times[0,\infty) , \qquad \Phi(\tilde q) = (q_0,|\vec q|) ,
 $$
 
 and the **profile** of $J_c$ is $\Phi_c=\Phi(J_c)$. The profile is a subset of the closed half-plane; for a real parameter it is the $\sigma_c$ of *The Slices of the Quaternion Julia Sets*.
 
 **Proposition (the profile map is Lipschitz, with spherical fibres).** The map $\Phi$ is $1$-Lipschitz, so $\dim_H \Phi_c \leq \dim_H J_c$. The fibre $\Phi^{-1}((a,r))$ is a point when $r=0$ and the two-sphere of radius $r$ centred at $a$ when $r>0$; consequently the fibres have dimension $2$ generically and $\dim_H J_c \leq \dim_H \Phi_c + 2$.
 
-*Proof.* For $\tilde q,\tilde q'$ one has $\Phi(\tilde q)-\Phi(\tilde q')=(q_0-q_0',|\mathbf q|-|\mathbf q'|)$ and $||\mathbf q|-|\mathbf q'||\leq|\mathbf q-\mathbf q'|$, so $\Phi$ does not increase distances and a $1$-Lipschitz image cannot increase the Hausdorff dimension. The fibre statement is the definition of the rotation orbit; a quaternion is determined by its scalar part, the modulus of its vector part and the axis, and the axis is free. For the upper bound, cover the escaping part of the profile by the dyadic strips $\{2^{-(n+1)}<r\leq 2^{-n}\}$, $n \in \mathbb{Z}$; on each strip the section $J_c \cap \Phi^{-1}(\text{strip})$ is bi-Lipschitz equivalent to $(\Phi_c\cap\text{strip})\times S^2$, since on a strip with $r$ bounded below the map that sends $(a,r,u)$ to $a+r u$ has bounded derivative and bounded inverse; the product formula $\dim_H(X\times S^2)=\dim_H X+2$ of *Fractal Geometry* applies on each strip, and the countable stability of the Hausdorff dimension over the countable union of strips gives the bound. The axis part has dimension at most that of $\Phi_c$.
+*Proof.* For $\tilde q,\tilde q'$ one has $\Phi(\tilde q)-\Phi(\tilde q')=(q_0-q_0',|\vec q|-|\vec q'|)$ and $||\vec q|-|\vec q'||\leq|\vec q-\vec q'|$, so $\Phi$ does not increase distances and a $1$-Lipschitz image cannot increase the Hausdorff dimension. The fibre statement is the definition of the rotation orbit; a quaternion is determined by its scalar part, the modulus of its vector part and the axis, and the axis is free. For the upper bound, cover the escaping part of the profile by the dyadic strips $\{2^{-(n+1)}<r\leq 2^{-n}\}$, $n \in \mathbb{Z}$; on each strip the section $J_c \cap \Phi^{-1}(\text{strip})$ is bi-Lipschitz equivalent to $(\Phi_c\cap\text{strip})\times S^2$, since on a strip with $r$ bounded below the map that sends $(a,r,u)$ to $a+r u$ has bounded derivative and bounded inverse; the product formula $\dim_H(X\times S^2)=\dim_H X+2$ of *Fractal Geometry* applies on each strip, and the countable stability of the Hausdorff dimension over the countable union of strips gives the bound. The axis part has dimension at most that of $\Phi_c$.
 
 **Corollary (the slice is a lower bound).** Let $d=\dim_H J^{\mathbb{C}}_{\kappa(c)}$ be the dimension of the complex Julia set of the reduced parameter. Then
 
@@ -30,7 +30,7 @@ $$
 d \leq \dim_H J_c \leq \dim_H \Phi_c + 2 .
 $$
 
-*Proof.* The restriction of $\Phi$ to the invariant plane $\mathbb{C}_c$ is, on the closed upper half-plane $\{b\geq0\}$ of $\mathbb{C}_c$, the bi-Lipschitz map $a+b\hat{\mathbf c}\mapsto(a,b)$ onto a half-plane; it carries $J_c\cap\mathbb{C}_c\cap\{b\geq0\}$ onto a subset of $\Phi_c$ of the same dimension, and that subset has dimension $d$ because the complex Julia set is symmetric under the reflection $y\mapsto-y$, so the whole set is the union of the two half-planes and the real part, and the maximum of the three dimensions is $d$. Hence $\dim_H\Phi_c\geq d$, and the proposition gives the bounds with the slice computed by *The Slices of the Quaternion Julia Sets*.
+*Proof.* The restriction of $\Phi$ to the invariant plane $\mathbb{C}_c$ is, on the closed upper half-plane $\{b\geq0\}$ of $\mathbb{C}_c$, the bi-Lipschitz map $a+b\hat c\mapsto(a,b)$ onto a half-plane; it carries $J_c\cap\mathbb{C}_c\cap\{b\geq0\}$ onto a subset of $\Phi_c$ of the same dimension, and that subset has dimension $d$ because the complex Julia set is symmetric under the reflection $y\mapsto-y$, so the whole set is the union of the two half-planes and the real part, and the maximum of the three dimensions is $d$. Hence $\dim_H\Phi_c\geq d$, and the proposition gives the bounds with the slice computed by *The Slices of the Quaternion Julia Sets*.
 
 **Remark (the meaning of the bounds).** The upper bound says that the four-dimensional set cannot be more than two dimensions larger than its profile, because the only freedom beyond the profile is the two-dimensional sphere of the axis; the lower bound says that the set always contains its slice. The bounds differ by at most $2$, and the question is whether the upper one is attained.
 
@@ -92,7 +92,7 @@ The limit sets of the discrete groups of hyperbolic isometries are the fractal s
 
 ## Summary
 
-The profile map $\Phi(\tilde q)=(q_0,|\mathbf q|)$ is $1$-Lipschitz with spherical fibres, and it gives the general bounds $d\leq\dim_H J_c\leq\dim_H\Phi_c+2$, where $d$ is the dimension of the complex Julia set of the reduced parameter and $\Phi_c$ is the profile. For a real parameter the set is $\Phi$-saturated, the fibres over the off-axis part of the profile are full two-spheres, and the exact formula is
+The profile map $\Phi(\tilde q)=(q_0,|\vec q|)$ is $1$-Lipschitz with spherical fibres, and it gives the general bounds $d\leq\dim_H J_c\leq\dim_H\Phi_c+2$, where $d$ is the dimension of the complex Julia set of the reduced parameter and $\Phi_c$ is the profile. For a real parameter the set is $\Phi$-saturated, the fibres over the off-axis part of the profile are full two-spheres, and the exact formula is
 
 $$
 \dim_H J_c = \dim_H\bigl(J^{\mathbb{C}}_c\cap\{y\neq0\}\bigr)+2 ,
@@ -105,10 +105,10 @@ which is $d+2$ when the off-axis part carries the top dimension; the exceptions 
 | Symbol | Meaning |
 |---|---|
 | $\dim_H$, $\dim_B$ | Hausdorff dimension; upper box dimension, from *Fractal Geometry* |
-| $\Phi(\tilde q)=(q_0,\lvert\mathbf q\rvert)$ | The profile map |
+| $\Phi(\tilde q)=(q_0,\lvert\vec q\rvert)$ | The profile map |
 | $\Phi_c=\Phi(J_c)$ | The profile of the Julia set |
 | $d=\dim_H J^{\mathbb{C}}_{\kappa(c)}$ | Dimension of the complex slice |
-| $\kappa(c)=c_0+i\lvert\mathbf c\rvert$ | Reduced complex parameter |
+| $\kappa(c)=c_0+i\lvert\vec c\rvert$ | Reduced complex parameter |
 | $\mathbb{C}_c$, $\{r>0\}$ | Invariant plane; off-axis part of the profile |
 | $\rho_c$ | The reduction of *The Slices of the Quaternion Julia Sets* |
 | $\dim_H J_0=3$, $\dim_H J_{-2}=1$ | The two exact examples |

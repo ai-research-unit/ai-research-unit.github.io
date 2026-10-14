@@ -20,8 +20,8 @@ observation.
 
 The task is the corpus's usual one: record what is derived, mark what is chosen, and state the cost.
 The conventions are the corpus's. The field is the companion article's A-field,
-$\boldsymbol{\mathcal A} = \sqrt{\epsilon}\,\mathbf{E} + i\sqrt{\mu}\,\mathbf{H}$, and the paper's
-biquaternion of *tension*, $\tilde{A} = i\alpha + \boldsymbol{\mathcal A}$, is that field with the
+$\vec{\mathcal A} = \sqrt{\epsilon}\,\vec E + i\sqrt{\mu}\,\vec H$, and the paper's
+biquaternion of *tension*, $\tilde{A} = i\alpha + \vec{\mathcal A}$, is that field with the
 scalar part the paper calls the density of the ether. The paper's conjugation — the vector part
 negated and the coefficients complex-conjugated, the paper's **mutual** biquaternion and the
 conjugation it uses for the energy–momentum — is the corpus's ${}^{*}$ throughout. The symbol
@@ -39,7 +39,7 @@ $$
 \qquad
 \nabla^{\pm} = \partial_\tau \pm i\nabla ,
 \qquad
-\tilde{\Theta} = i\rho + \mathbf J ,
+\tilde{\Theta} = i\rho + \vec J ,
 $$
 
 with $\tilde{A}$ the tension biquaternion and $\tilde{\Theta}$ the charge–current biquaternion. On its
@@ -48,7 +48,7 @@ the bigradient of the field.
 
 One algebraic remark fixes what the object is. The classical biquaternion form of Maxwell's equations
 requires the scalar part of the field biquaternion to vanish, and that constraint is what makes the
-complex three-vector $\boldsymbol{\mathcal A}$ the whole of the field. The paper's own statement of
+complex three-vector $\vec{\mathcal A}$ the whole of the field. The paper's own statement of
 what its EGM field is: the restriction is **dropped** — the scalar part returns, and the paper
 names it the density of the ether. That is the whole of the extension, and it is the cleanest
 statement in the programme of what the programme is; the object is the one the companion article
@@ -82,7 +82,7 @@ Two things must be said about the name, and the corpus says them rather than let
 A **monochromatic** field is one whose time dependence is a single exponential,
 
 $$
-\tilde{A}(\tau,\mathbf{x}) = \tilde{\Phi}(\mathbf{x},\omega)\,e^{-i\omega\tau},
+\tilde{A}(\tau,\vec x) = \tilde{\Phi}(\vec x,\omega)\,e^{-i\omega\tau},
 \qquad \omega > 0 ,
 $$
 
@@ -90,7 +90,7 @@ so that $\partial_\tau \to -i\omega$. Substituting into the postulate gives the 
 equation**,
 
 $$
-\nabla^{-}_{\omega}\tilde{\Phi} = i\,\tilde{\Theta}(\mathbf{x},\omega),
+\nabla^{-}_{\omega}\tilde{\Phi} = i\,\tilde{\Theta}(\vec x,\omega),
 \qquad
 \nabla^{\pm}_{\omega} = \omega \pm \nabla ,
 $$
@@ -133,9 +133,9 @@ The inverse of the photon equation is built from the fundamental solution of the
 that satisfies the radiation condition,
 
 $$
-\psi(\mathbf{x},\omega) = -\frac{e^{\,i\omega r}}{4\pi r},
-\qquad r = \|\mathbf{x}\| ,
-\qquad \left(\Delta + \omega^{2}\right)\psi = \delta(\mathbf{x}) ,
+\psi(\vec x,\omega) = -\frac{e^{\,i\omega r}}{4\pi r},
+\qquad r = \|\vec x\| ,
+\qquad \left(\Delta + \omega^{2}\right)\psi = \delta(\vec x) ,
 $$
 
 the outgoing spherical kernel, whose flux through a small sphere was computed and is exactly $+1$,
@@ -144,32 +144,32 @@ $\omega$-gradient to the source convolved with this kernel gives the **photon bi
 monochromatic source,
 
 $$
-\tilde{\Phi}(\mathbf{x},\omega)
-= i\,\nabla^{+}_{\omega}\left\{\tilde{\Theta}(\mathbf{x},\omega) * \psi(\mathbf{x},\omega)\right\},
+\tilde{\Phi}(\vec x,\omega)
+= i\,\nabla^{+}_{\omega}\left\{\tilde{\Theta}(\vec x,\omega) * \psi(\vec x,\omega)\right\},
 $$
 
 so that a source distribution is an emitter whose field is the $\omega$-gradient of a Helmholtz
 potential. The class of solutions the paper works in is the biquaternions whose components are
 generalized functions of slow growth — tempered distributions — which is what makes the convolved
 sources here and the layered sources of the light section below legitimate rather than formal. For a
-**concentrated charge**, $\tilde{\Theta} = -i\,\delta(\mathbf{x})$, the kernel is
+**concentrated charge**, $\tilde{\Theta} = -i\,\delta(\vec x)$, the kernel is
 evaluated at once and the result is the **elementary photon**: a spherical EGM wave whose scalar and
 vector amplitudes are
 
 $$
 \left|\alpha_{0}\right| = \frac{\omega}{4\pi r},
 \qquad
-\left\|\boldsymbol{\mathcal A}_{0}\right\| = \frac{\sqrt{\omega^{2} + 1/r^{2}}}{4\pi r} ,
+\left\|\vec{\mathcal A}_{0}\right\| = \frac{\sqrt{\omega^{2} + 1/r^{2}}}{4\pi r} ,
 \qquad
-\mathbf{e}_{x} = \frac{\mathbf{x}}{r},
+\hat e_{x} = \frac{\vec x}{r},
 $$
 
 both recomputed. The wave is a spherical EGM wave emitted by a point charge, propagating at the speed
 of the field, decaying as $r^{-1}$; its density and tension amplitudes are proportional to its
 frequency; its energy density falls as $r^{-2}$ and the vector part of its energy–momentum
-biquaternion is radial along $\mathbf{e}_{x}$, both recomputed. The paper's energy–momentum display
-for it, $\tfrac12\tilde{\Phi}^{0}\tilde{\Phi}^{0{}^{*}} = w + i\mathbf{P}$, is
-$w \propto \omega^{2} + 1/(2r^{2})$ and $i\mathbf{P} \propto i\omega^{2}\mathbf{e}_{x}$ under one
+biquaternion is radial along $\hat e_{x}$, both recomputed. The paper's energy–momentum display
+for it, $\tfrac12\tilde{\Phi}^{0}\tilde{\Phi}^{0{}^{*}} = w + i\vec P$, is
+$w \propto \omega^{2} + 1/(2r^{2})$ and $i\vec P \propto i\omega^{2}\hat e_{x}$ under one
 shared prefactor, and that bracket is exactly the recomputed one; the overall prefactor is the
 paper's own and is not self-consistent between its two displays of the elementary photon, so the
 corpus carries the bracket and not the number. The two powers of $r$ in the tension are the near field
@@ -188,32 +188,32 @@ $$
 $$
 
 and because of the factorisation every solution of it is $\nabla^{+}_{\omega}$ applied to a Helmholtz
-potential. Taking the plane potentials $\varphi_{j} = e^{\,i(\mathbf{k},\mathbf{x})}e_{j}$ with
-$\|\mathbf{k}\| = \omega$ and $e_{0} = 1$, the programme's four modes are, in the corpus's
+potential. Taking the plane potentials $\varphi_{j} = e^{\,i(\vec k,\vec x)}e_{j}$ with
+$\|\vec k\| = \omega$ and $e_{0} = 1$, the programme's four modes are, in the corpus's
 notation and recomputed exactly,
 
 $$
-\tilde{\Phi}_{\mathbf{k}0} = \omega\,\varphi\left(1 + i\,\mathbf{e}_{k}\right),
+\tilde{\Phi}_{\vec k0} = \omega\,\varphi\left(1 + i\,\hat e_{k}\right),
 \qquad
-\tilde{\Phi}_{\mathbf{k}j} = \varphi\left(\omega\,e_{j} - i\,k_{j} + i\,[\mathbf{k},e_{j}]\right),
+\tilde{\Phi}_{\vec kj} = \varphi\left(\omega\,e_{j} - i\,k_{j} + i\,[\vec k,e_{j}]\right),
 \qquad j = 1,2,3 ,
 $$
 
-with $\varphi = e^{\,i(\mathbf{k},\mathbf{x})}$ and $\mathbf{e}_{k} = \mathbf{k}/\omega$. All four
+with $\varphi = e^{\,i(\vec k,\vec x)}$ and $\hat e_{k} = \vec k/\omega$. All four
 satisfy the free equation, and their content differs in a way the programme reads as physics.
 
 - **The scalar-potential mode is longitudinal and has the two field vectors parallel.** For
   $j = 0$ the mode has
-  $\mathbf{E} = -(\omega\sin\theta/\sqrt{\epsilon})\,\mathbf{e}_{k}$ and
-  $\mathbf{H} = (\omega\cos\theta/\sqrt{\mu})\,\mathbf{e}_{k}$ with $\theta = (\mathbf{k},\mathbf{x})$,
+  $\vec E = -(\omega\sin\theta/\sqrt{\epsilon})\,\hat e_{k}$ and
+  $\vec H = (\omega\cos\theta/\sqrt{\mu})\,\hat e_{k}$ with $\theta = (\vec k,\vec x)$,
   so both fields lie along the wave vector and are parallel up to a relative sign set by the phase —
   recomputed. No other mode of the construction is of this kind: a potential axis along
-  $\mathbf{k}$ reproduces this mode up to a factor, which is the redundancy recorded below. The paper
+  $\vec k$ reproduces this mode up to a factor, which is the redundancy recorded below. The paper
   calls it the plane longitudinal harmonic EGM wave.
 - **A vector-potential mode is transverse exactly when its potential is.** Its scalar (ether-density)
   amplitude is $\alpha = -k_{j}\varphi$, recomputed, so it vanishes precisely when
-  $e_{j} \perp \mathbf{k}$. In that case $\mathbf{E} \perp \mathbf{k}$, $\mathbf{H} \perp \mathbf{k}$
-  and $\mathbf{E} \perp \mathbf{H}$ — the **tensional wave** of the paper, with zero ether density —
+  $e_{j} \perp \vec k$. In that case $\vec E \perp \vec k$, $\vec H \perp \vec k$
+  and $\vec E \perp \vec H$ — the **tensional wave** of the paper, with zero ether density —
   while for $k_{j} \neq 0$ the mode carries a longitudinal part. This is where the ether section's
   restriction returns: the tensional wave is precisely the mode whose scalar part vanishes, that is,
   the member of the family that survives when the field biquaternion is required to have no scalar
@@ -225,7 +225,7 @@ satisfy the free equation, and their content differs in a way the programme read
   construction, and the corpus does not count them twice.
 - **The energy density is $\omega^{2}$ and the flux is along the wave vector.** With the corpus's
   ${}^{*}$, the biquaternion $\tfrac12\tilde{\Phi}\tilde{\Phi}^{*}$ has the real scalar part
-  $\omega^{2}$, independent of position, for every mode, and vector part $i\omega^{2}\mathbf{e}_{k}$;
+  $\omega^{2}$, independent of position, for every mode, and vector part $i\omega^{2}\hat e_{k}$;
   both are recomputed. The paper's own display instead places the vector-potential modes' flux along
   their polarisation axis, $\omega^{2}\cos\gamma_{j}\,e_{j}$, vanishing for the tensional wave, and
   that form does not reproduce from the paper's own amplitude formula. The corpus carries the
@@ -234,7 +234,7 @@ satisfy the free equation, and their content differs in a way the programme read
 
 One structural remark belongs here, because the paper presents the four modes as four independent
 polarisations. They are not. The free plane equation is an equation of eigenvectors,
-$\tilde{\Phi} = i\mathbf{e}_{k}\tilde{\Phi}$, whose solution space is **two complex dimensions**; the
+$\tilde{\Phi} = i\hat e_{k}\tilde{\Phi}$, whose solution space is **two complex dimensions**; the
 four modes span it twice over. The rank of the four amplitudes was computed and is two, so two of the
 four complex coefficients are redundant: the programme's four polarisations carry four real
 parameters, not eight.
@@ -245,7 +245,7 @@ Because the source enters linearly, the representations compose. Every emitted m
 a superposition of elementary photons weighted by the source,
 
 $$
-\tilde{\Phi}(\mathbf{x},\omega) = i\,\tilde{\Theta}(\mathbf{x},\omega) * \tilde{\Phi}^{0}(\mathbf{x},\omega),
+\tilde{\Phi}(\vec x,\omega) = i\,\tilde{\Theta}(\vec x,\omega) * \tilde{\Phi}^{0}(\vec x,\omega),
 $$
 
 the convolution being over the spatial variables, so the elementary photon is the kernel of the map
@@ -253,7 +253,7 @@ from a charge–current distribution to its field. Over a band of frequencies th
 contributions into what it calls light,
 
 $$
-\Lambda(\mathbf{x},\tau) = \int_{\omega_{1}}^{\omega_{2}} \tilde{\Phi}(\mathbf{x},\omega)\,e^{-i\omega\tau}\,d\omega ,
+\Lambda(\vec x,\tau) = \int_{\omega_{1}}^{\omega_{2}} \tilde{\Phi}(\vec x,\omega)\,e^{-i\omega\tau}\,d\omega ,
 \qquad
 \tilde{\Sigma}_{\Lambda} = \Lambda\Lambda^{*} ,
 $$
@@ -261,9 +261,9 @@ $$
 and the free-photon cloud is the same construction with the four plane modes weighted and summed,
 
 $$
-\mathrm{O}(\mathbf{x},\tau) = \sum_{j=0}^{3}\int_{\omega_{1}}^{\omega_{2}} e^{-i\omega\tau}
-\left\{\Omega_{j}(\mathbf{x},\omega) * \int_{\|\mathbf{k}\|=\omega} b_{j}(\mathbf{k},\omega)\,
-\tilde{\Phi}_{\mathbf{k}j}(\mathbf{x},\omega)\,dS(\mathbf{k})\right\} d\omega ,
+\mathrm{O}(\vec x,\tau) = \sum_{j=0}^{3}\int_{\omega_{1}}^{\omega_{2}} e^{-i\omega\tau}
+\left\{\Omega_{j}(\vec x,\omega) * \int_{\|\vec k\|=\omega} b_{j}(\vec k,\omega)\,
+\tilde{\Phi}_{\vec kj}(\vec x,\omega)\,dS(\vec k)\right\} d\omega ,
 \qquad
 \tilde{\Sigma}_{\mathrm{O}} = \tfrac12\,\mathrm{O}\,\mathrm{O}^{*} ,
 $$
@@ -276,7 +276,7 @@ speculation that such clouds "apparently describe ball lightning".
 Two structural remarks belong on the free-photon formula, which is the more general of the two. It
 sums the four polarisation types at each frequency, each with its own arbitrary weight *and* its own
 arbitrary biquaternion, and it integrates an arbitrary angular distribution over the sphere
-$\|\mathbf{k}\| = \omega$. Every ingredient of a beam of light is therefore an input — the band, the
+$\|\vec k\| = \omega$. Every ingredient of a beam of light is therefore an input — the band, the
 angular weights, the polarisation weights and the biquaternions — so the formula describes the set of
 possible light rather than any light, and that is the boundary-condition gap in its light-theoretic
 form. Second, the arbitrary biquaternion enters by **convolution**, which is the *structural
@@ -382,7 +382,7 @@ $\psi = -e^{\,i\omega r}/(4\pi r)$. The kernel gives the **elementary photon** o
 charge, a spherical wave with amplitudes $\omega/(4\pi r)$ and
 $\sqrt{\omega^{2}+1/r^{2}}/(4\pi r)$, an energy density falling as $r^{-2}$ and a radial flux; the
 homogeneous equation gives **free photons** as the four plane modes
-$\omega\varphi(1+i\mathbf{e}_{k})$ and $\varphi(\omega e_{j}-ik_{j}+i[\mathbf{k},e_{j}])$, of which
+$\omega\varphi(1+i\hat e_{k})$ and $\varphi(\omega e_{j}-ik_{j}+i[\vec k,e_{j}])$, of which
 the first is longitudinal with the two field vectors parallel and the others are transverse exactly
 when their potentials are; and a source's field is the source convolved with the elementary photon,
 which the paper reads as light, a cloud of elementary photons over a visible band.
@@ -405,29 +405,29 @@ clearest statement of what the programme assumes.
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde{A} = i\alpha + \boldsymbol{\mathcal A}$ | Biquaternion of tension; $\alpha$ is the density of the ether |
-| $\boldsymbol{\mathcal A} = \sqrt{\epsilon}\mathbf{E} + i\sqrt{\mu}\mathbf{H}$ | A-field, the companion article's field |
+| $\tilde{A} = i\alpha + \vec{\mathcal A}$ | Biquaternion of tension; $\alpha$ is the density of the ether |
+| $\vec{\mathcal A} = \sqrt{\epsilon}\vec E + i\sqrt{\mu}\vec H$ | A-field, the companion article's field |
 | $\alpha$ | Scalar part of the tension, named the density of the ether |
-| $\tilde{\Theta} = i\rho + \mathbf J$ | Charge–current biquaternion (corpus symbol) |
+| $\tilde{\Theta} = i\rho + \vec J$ | Charge–current biquaternion (corpus symbol) |
 | $\nabla^{\pm} = \partial_\tau \pm i\nabla$ | Mutual complex gradients of the postulate |
 | $\nabla = e_{1}\partial_{x}+e_{2}\partial_{y}+e_{3}\partial_{z}$ | Pure-vector gradient, left quaternion multiplication |
 | $\nabla\circ\nabla = -\Delta$ | The square of $\nabla$ |
 | $\nabla^{\pm}_{\omega} = \omega \pm \nabla$ | The paper's $\omega$-gradients; $\nabla^{\pm}_{\omega} = iD_{\mp}$ at fixed frequency |
-| $\tilde{\Phi}(\mathbf{x},\omega)$ | Biamplitude, $\tilde{A}(\tau,\mathbf{x}) = \tilde{\Phi}(\mathbf{x},\omega)e^{-i\omega\tau}$ |
+| $\tilde{\Phi}(\vec x,\omega)$ | Biamplitude, $\tilde{A}(\tau,\vec x) = \tilde{\Phi}(\vec x,\omega)e^{-i\omega\tau}$ |
 | $\nabla^{-}_{\omega}\tilde{\Phi} = i\tilde{\Theta}$ | The photon equation |
 | $\nabla^{-}_{\omega}\circ\nabla^{+}_{\omega} = \omega^{2} + \Delta$ | Helmholtz factorisation of the photon equation |
 | $\psi = -e^{\,i\omega r}/(4\pi r)$ | Outgoing Helmholtz kernel, radiation condition, $(\Delta+\omega^{2})\psi = \delta$ |
 | $\tilde{\Phi}^{0}$ | Elementary photon, the kernel of the source-to-field map |
-| $\alpha_{0}$, $\boldsymbol{\mathcal A}_{0}$ | Scalar and vector amplitudes of the elementary photon (the paper writes $\rho_{0}$ and $\|\Phi_{0}\|$) |
-| $\tilde{\Phi}_{\mathbf{k}j}$ | Free plane modes, $j = 0,1,2,3$ |
-| $\mathbf{e}_{k} = \mathbf{k}/\omega$ | Unit wave direction, $\|\mathbf{k}\| = \omega$ |
-| $\varphi = e^{\,i(\mathbf{k},\mathbf{x})}$ | Plane Helmholtz potential |
-| $\alpha = -k_{j}\varphi$ | Ether-density amplitude of the $j$-th mode; zero iff $e_{j}\perp\mathbf{k}$ |
-| $\mathbf{e}_{x} = \mathbf{x}/r$ | Radial unit vector |
+| $\alpha_{0}$, $\vec{\mathcal A}_{0}$ | Scalar and vector amplitudes of the elementary photon (the paper writes $\rho_{0}$ and $\|\Phi_{0}\|$) |
+| $\tilde{\Phi}_{\vec kj}$ | Free plane modes, $j = 0,1,2,3$ |
+| $\hat e_{k} = \vec k/\omega$ | Unit wave direction, $\|\vec k\| = \omega$ |
+| $\varphi = e^{\,i(\vec k,\vec x)}$ | Plane Helmholtz potential |
+| $\alpha = -k_{j}\varphi$ | Ether-density amplitude of the $j$-th mode; zero iff $e_{j}\perp\vec k$ |
+| $\hat e_{x} = \vec x/r$ | Radial unit vector |
 | $\Lambda$, $\tilde{\Sigma}_{\Lambda}$ | Light and its energy–momentum, a spectral integral over the band |
 | $\mathrm{O}$, $\tilde{\Sigma}_{\mathrm{O}}$ | Free-photon cloud and its energy–momentum (the paper writes omicron) |
 | $b_{j}$, $\Omega_{j}$ | Arbitrary angular weight and structural biquaternion of the $j$-th free-photon type |
-| $\tilde{\Phi}^{*} = \bar{s} - \bar{\mathbf V}$ | Vector-negating, coefficient-conjugating conjugation |
+| $\tilde{\Phi}^{*} = \bar{s} - \bar{\vec V}$ | Vector-negating, coefficient-conjugating conjugation |
 
 ## Further Reading
 

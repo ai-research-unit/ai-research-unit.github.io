@@ -28,7 +28,7 @@ The framework can verify two things exactly: the **boost generator** is the Herm
 
 The article proceeds as follows. The theorem is stated first, with its two hypotheses. Then its relation to the two parent articles is made explicit. Then the wedge is isolated, and the reason the theorem cannot be generalised is given. Then the boost generator is identified on the wedge. Then the modular flow is shown to be the boost with rapidity $2\pi$. Then the modular conjugation is shown to be the PCT/reflection operator, with the conjugation identities verified. Then the biquaternion boost rotor is compared with the modular generator, and the identification — and its limit — is recorded. It closes with the established/interpretation/gap split, the summary, and the notation.
 
-**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, scalar imaginary $i$ with $i^2=-1$, and $\mathbb{B}\cong M_2(\mathbb{C})$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The material coordinate is $\tilde{Q}=ict\,e_0+x\,e_1+y\,e_2+z\,e_3\in\mathbb{M}_-$, with biquaternion norm $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=-c^2t^2+x^2+y^2+z^2$. Rindler coordinates on the wedge are $x=\rho\cosh\eta$, $ct=\rho\sinh\eta$. The boost Killing vector is $\xi=x\partial_t+t\partial_x=\partial_\eta$; the boost rotor is $\tilde\Lambda(\psi)=\exp(\tfrac{\psi}{2}G_1)=\cosh\tfrac{\psi}{2}+i\sinh\tfrac{\psi}{2}e_1$ with $G_1=ie_1$, and it acts by rotor conjugation $\tilde{Q}\mapsto\tilde\Lambda\tilde{Q}\tilde\Lambda^{*}$. The trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, with $\mathrm{Tr}(e_0)=2$, is inherited unchanged. The modular data are those of the modular-theory companion: $S=J\Delta^{1/2}$, $\sigma_s(A)=\Delta^{is}A\Delta^{-is}$, $K=-\log\rho$ in finite dimension. Throughout, $c$ is the speed of light, and $\hbar$ and $k_B$ are the reduced Planck and Boltzmann constants.
+**Conventions.** Those of the companion articles. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, scalar imaginary $i$ with $i^2=-1$, and $\mathbb{B}\cong M_2(\mathbb{C})$. The material (anti-Hermitian) subspace is $\mathbb{M}_-$ and the informational (Hermitian) subspace is $\mathbb{M}_+$, with $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ and $i\mathbb{M}_\pm=\mathbb{M}_\mp$; $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace. The material coordinate is $\tilde{Q}=ict\,e_0+x\,e_1+y\,e_2+z\,e_3\in\mathbb{M}_-$, with biquaternion norm $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=-c^2t^2+x^2+y^2+z^2$. Rindler coordinates on the wedge are $x=\rho\cosh\eta$, $ct=\rho\sinh\eta$. The boost Killing vector is $\xi=x\partial_t+t\partial_x=\partial_\eta$; the boost rotor is $\tilde U(\psi)=\exp(\tfrac{\psi}{2}G_1)=\cosh\tfrac{\psi}{2}+i\sinh\tfrac{\psi}{2}e_1$ with $G_1=ie_1$, and it acts by rotor conjugation $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$. The trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H)$, with $\mathrm{Tr}(e_0)=2$, is inherited unchanged. The modular data are those of the modular-theory companion: $S=J\Delta^{1/2}$, $\sigma_s(A)=\Delta^{is}A\Delta^{-is}$, $K=-\log\rho$ in finite dimension. Throughout, $c$ is the speed of light, and $\hbar$ and $k_B$ are the reduced Planck and Boltzmann constants.
 
 ## The Theorem
 
@@ -38,7 +38,7 @@ The article proceeds as follows. The theorem is stated first, with its two hypot
 $$
 \Delta = e^{-2\pi K_{\mathrm{boost}}},
 $$
-where $K_{\mathrm{boost}}$ is the generator of the one-parameter group of boosts that preserve $W_R$, normalized so that the boost Killing vector is $\xi=\partial_\eta$. Equivalently, the modular flow is the boost by rapidity $2\pi s$ (the orientation is fixed below; in the rotor convention of this article the modular flow is $\tilde\Lambda(-2\pi s)$, which is future-directed on $W_R$):
+where $K_{\mathrm{boost}}$ is the generator of the one-parameter group of boosts that preserve $W_R$, normalized so that the boost Killing vector is $\xi=\partial_\eta$. Equivalently, the modular flow is the boost by rapidity $2\pi s$ (the orientation is fixed below; in the rotor convention of this article the modular flow is $\tilde U(-2\pi s)$, which is future-directed on $W_R$):
 $$
 \sigma_s(\tilde A)=\Delta^{is}\tilde A\Delta^{-is} = \text{the boost of rapidity }2\pi s\text{ applied to }\tilde A .
 $$
@@ -91,7 +91,7 @@ which is future-directed inside $W_R$ and past-directed inside $W_L$, and whose 
 
 **No such flow exists for a general region.** For a region $O$ that is not a wedge, there is in general no Killing vector of Minkowski space whose flow preserves $O$, and the modular Hamiltonian $K_O=-\log\Delta_O$ is not a geometric generator: it is a nonlocal operator on the region, not an integral of a local current against a Killing vector. The contrast is stark already in the vacuum. For a wedge the modular Hamiltonian is the boost $K_{\mathrm{boost}}$; for a ball of radius $R$ in a conformal field theory it is the Casini–Huerta–Myers operator
 $$
-K_{\mathrm{ball}} = 2\pi\int_{|\mathbf{x}|<R}\frac{R^2-|\mathbf{x}|^2}{2R}\,T_{00}(\mathbf{x})\,d^3x,
+K_{\mathrm{ball}} = 2\pi\int_{|\vec x|<R}\frac{R^2-|\vec x|^2}{2R}\,T_{00}(\vec x)\,d^3x,
 $$
 a smeared energy density with a position-dependent weight, which is local in a CFT but is not the generator of a spacetime symmetry. In a general quantum field theory the ball modular Hamiltonian is not even local. The wedge is the case in which the modular Hamiltonian is a symmetry generator, and the theorem is a statement about that case.
 
@@ -110,16 +110,16 @@ G_1 = i\,e_1 \in \mathbb{M}_+,
 $$
 which is Hermitian, $G_1^\dagger=G_1$, and satisfies $G_1^2=e_0$. Its exponential is the **boost rotor**
 $$
-\tilde\Lambda(\psi)=\exp\!\Big(\frac{\psi}{2}G_1\Big)
+\tilde U(\psi)=\exp\!\Big(\frac{\psi}{2}G_1\Big)
 =\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\,e_1 \in\mathbb{M}_+,
 $$
-Hermitian and of unit norm, $\tilde\Lambda\tilde\Lambda^{\natural}=e_0$. On an element $\tilde{Q}=iq_0e_0+q_1e_1+q_2e_2+q_3e_3\in\mathbb{M}_-$ the rotor acts by **rotor conjugation** $\tilde{Q}\mapsto\tilde\Lambda(\psi)\tilde{Q}\tilde\Lambda(\psi)$ (the rotor is Hermitian, so $\tilde\Lambda^{*}=\tilde\Lambda$), and a direct recomputation in the matrix representation gives
+Hermitian and of unit norm, $\tilde U\tilde U^{\natural}=e_0$. On an element $\tilde{Q}=iq_0e_0+q_1e_1+q_2e_2+q_3e_3\in\mathbb{M}_-$ the rotor acts by **rotor conjugation** $\tilde{Q}\mapsto\tilde U(\psi)\tilde{Q}\tilde U(\psi)$ (the rotor is Hermitian, so $\tilde U^{*}=\tilde U$), and a direct recomputation in the matrix representation gives
 $$
 q_0\longmapsto q_0\cosh\psi-q_1\sinh\psi,\qquad
 q_1\longmapsto q_1\cosh\psi-q_0\sinh\psi,\qquad
 q_2,q_3\ \text{unchanged},
 $$
-with the biquaternion norm preserved, $N(\tilde\Lambda\tilde{Q}\tilde\Lambda)=N(\tilde{Q})$. On the Rindler orbit $q_0=ct=\rho\sinh\eta$, $q_1=x=\rho\cosh\eta$, the same computation gives
+with the biquaternion norm preserved, $N(\tilde U\tilde{Q}\tilde U)=N(\tilde{Q})$. On the Rindler orbit $q_0=ct=\rho\sinh\eta$, $q_1=x=\rho\cosh\eta$, the same computation gives
 $$
 q_0\longmapsto\rho\sinh(\eta-\psi),\qquad q_1\longmapsto\rho\cosh(\eta-\psi),
 $$
@@ -127,7 +127,7 @@ so the rotor of rapidity $\psi$ shifts the Rindler time by $\eta\mapsto\eta-\psi
 
 **It is the two-sided action, not the commutator, that generates the boost.** The infinitesimal rotor action is
 $$
-\frac{d}{d\psi}\Big(\tilde\Lambda(\psi)\tilde{Q}\tilde\Lambda(\psi)\Big)\Big|_{\psi=0}
+\frac{d}{d\psi}\Big(\tilde U(\psi)\tilde{Q}\tilde U(\psi)\Big)\Big|_{\psi=0}
 =\frac{1}{2}\big(G_1\tilde{Q}+\tilde{Q}G_1\big),
 $$
 the **anticommutator**. The commutator is a different object:
@@ -145,9 +145,9 @@ The second conclusion is that the modular flow is the boost, with the right rapi
 
 **The rapidity.** The theorem states $\Delta=e^{-2\pi K_{\mathrm{boost}}}$, so the modular parameter $s$ in $\sigma_s(A)=\Delta^{is}A\Delta^{-is}$ is not the rapidity; it is the rapidity divided by $2\pi$. Equivalently, the modular flow is the boost by rapidity $2\pi s$. The verification is direct. Since the rotor of rapidity $\psi$ shifts Rindler time by $\eta\mapsto\eta-\psi$, the modular flow, which must be future-directed on $W_R$, is represented by the **inverse** rotor,
 $$
-\sigma_s(\tilde{Q})=\tilde\Lambda(-2\pi s)\,\tilde{Q}\,\tilde\Lambda(-2\pi s),
+\sigma_s(\tilde{Q})=\tilde U(-2\pi s)\,\tilde{Q}\,\tilde U(-2\pi s),
 $$
-and $\tilde\Lambda(-2\pi s)$ shifts the Rindler time by
+and $\tilde U(-2\pi s)$ shifts the Rindler time by
 $$
 \eta\longmapsto\eta+2\pi s .
 $$
@@ -158,7 +158,7 @@ $$
 $$
 which is $-2\pi$ times the boost generator of the preceding section, since that section's infinitesimal action is $\tfrac12(G_1\tilde{Q}+\tilde{Q}G_1)$. The factor $2\pi$ is the content of $\Delta=e^{-2\pi K_{\mathrm{boost}}}$, and it is verified rather than assumed.
 
-**The orientation.** The sign of $2\pi s$ is not decoration. It fixes which of the two one-parameter groups preserving the pair $(W_R,W_L)$ is the modular flow. The flow represented by $\tilde\Lambda(-2\pi s)$ advances $\eta$ and is future-directed on $W_R$; the opposite sign gives the flow that is future-directed on $W_L$. The modular Hamiltonians of the two wedges are related by $K_L=-K_R$, and the temperature is built from $|\kappa|$, so it is the same for both, but a statement about "the modular Hamiltonian" that omits the wedge is ambiguous, and the wedge is kept explicit.
+**The orientation.** The sign of $2\pi s$ is not decoration. It fixes which of the two one-parameter groups preserving the pair $(W_R,W_L)$ is the modular flow. The flow represented by $\tilde U(-2\pi s)$ advances $\eta$ and is future-directed on $W_R$; the opposite sign gives the flow that is future-directed on $W_L$. The modular Hamiltonians of the two wedges are related by $K_L=-K_R$, and the temperature is built from $|\kappa|$, so it is the same for both, but a statement about "the modular Hamiltonian" that omits the wedge is ambiguous, and the wedge is kept explicit.
 
 **Consistency with the Unruh temperature.** The same factor appears in the Unruh article. There the massless two-point function on the accelerated orbit is periodic in imaginary proper time with period $\beta=2\pi/a$, and the temperature is $T=\hbar a/(2\pi c k_B)$. The Rindler time is $\eta=a\tau$ in units $c=1$ (since $d\tau=\rho\,d\eta$ and $a=1/\rho$), so the modular parameter's period $2\pi$ in $\eta$ is the physical period $2\pi/a$ in proper time. The two computations — the modular one here and the field-theoretic one in the Unruh article — are consistent by the same factor.
 
@@ -186,10 +186,10 @@ J^2=\mathrm{id},\qquad J(i\tilde A)=-i\,J(\tilde A),\qquad J(\tilde\rho)=\tilde\
 $$
 were recomputed in rational arithmetic for two faithful states whose Bloch vectors were chosen after the formulas, not before them:
 $$
-\mathbf r_1=\Big(\tfrac{12}{25},\tfrac{16}{25},\tfrac{12}{25}\Big),\qquad
-\mathbf r_2=\Big(\tfrac23,\tfrac29,\tfrac49\Big),
+\vec r_1=\Big(\tfrac{12}{25},\tfrac{16}{25},\tfrac{12}{25}\Big),\qquad
+\vec r_2=\Big(\tfrac23,\tfrac29,\tfrac49\Big),
 $$
-both with $|\mathbf r|<1$ and neither along a basis axis. All four identities hold exactly for both.
+both with $|\vec r|<1$ and neither along a basis axis. All four identities hold exactly for both.
 
 **The geometric realisation.** The theorem writes $J=\Theta\,U(R_W)$, with $\Theta$ the PCT operator and $U(R_W)$ the unitary representative of the rotation by $\pi$ that leaves the characteristic two-plane of the wedge invariant. The net geometric effect on Minkowski space is the **reflection through the edge of the wedge**,
 $$
@@ -209,7 +209,7 @@ The question posed for this article is whether the biquaternion framework's boos
 
 **The identification does not extend to the flow inside the finite-dimensional algebra.** Three distinct obstructions, each recomputed.
 
-*Unitarity.* The modular flow is unitary: $\Delta^{is}=e^{-2\pi isK_{\mathrm{boost}}}$ satisfies $\Delta^{is}(\Delta^{is})^\dagger=1$. The finite-dimensional boost rotor is Hermitian, $\tilde\Lambda(\psi)^{*}=\tilde\Lambda(\psi)$, with $\tilde\Lambda(\psi)^2=e^{\psi G_1}\neq e_0$ for $\psi\neq0$, so it is not unitary implementing a symmetry of the finite-dimensional Hilbert space. This is the familiar statement that the Lorentz group, being noncompact, has no nontrivial finite-dimensional unitary representation; the unitary implementation of the boost exists only on the field-theoretic Hilbert space, not inside $\mathbb{B}$.
+*Unitarity.* The modular flow is unitary: $\Delta^{is}=e^{-2\pi isK_{\mathrm{boost}}}$ satisfies $\Delta^{is}(\Delta^{is})^\dagger=1$. The finite-dimensional boost rotor is Hermitian, $\tilde U(\psi)^{*}=\tilde U(\psi)$, with $\tilde U(\psi)^2=e^{\psi G_1}\neq e_0$ for $\psi\neq0$, so it is not unitary implementing a symmetry of the finite-dimensional Hilbert space. This is the familiar statement that the Lorentz group, being noncompact, has no nontrivial finite-dimensional unitary representation; the unitary implementation of the boost exists only on the field-theoretic Hilbert space, not inside $\mathbb{B}$.
 
 *Inner versus two-sided.* In finite dimension the modular flow is inner, $\sigma_s(\tilde A)=\tilde\rho^{is}\tilde A\tilde\rho^{-is}=e^{-isK}\tilde A e^{isK}$, whose generator on the algebra is the **commutator** $-i[K,\cdot]$. The geometric boost on $\mathbb{M}_-$ is the **two-sided** action with generator the anticommutator $\tfrac12(G_1\cdot+\cdot G_1)$. On the boost plane the commutator vanishes, $-i[G_1,\tilde{Q}]=0$ for $\tilde{Q}=iq_0e_0+q_1e_1$, while the two-sided action moves $q_0,q_1$ precisely as the boost; and off the boost plane the commutator generates a rotation in the $(e_2,e_3)$ plane. So the finite-dimensional inner flow cannot be the geometric boost on the material sector. This is the exact sense in which the model verifies the generator but not the flow.
 
@@ -217,7 +217,7 @@ The question posed for this article is whether the biquaternion framework's boos
 $$
 K=-\log\tilde\rho=\beta G_1+(\log Z)e_0,\qquad Z=\mathrm{Tr}(e^{-\beta G_1}),
 $$
-which is proportional to the boost generator $G_1$ modulo the central term $(\log Z)e_0$ (verified numerically to machine precision), so the generator identification holds exactly for that state. But for a generic faithful state $K$ is **not** proportional to $G_1$: for the state with Bloch vector $\mathbf r_1$ above, the Bloch vector of $K=-\log\tilde\rho$ is along $\mathbf r_1$ and is not along $e_1$. The identification therefore requires the thermal state for the boost, which is what the theorem's vacuum supplies and what the algebra alone does not.
+which is proportional to the boost generator $G_1$ modulo the central term $(\log Z)e_0$ (verified numerically to machine precision), so the generator identification holds exactly for that state. But for a generic faithful state $K$ is **not** proportional to $G_1$: for the state with Bloch vector $\vec r_1$ above, the Bloch vector of $K=-\log\tilde\rho$ is along $\vec r_1$ and is not along $e_1$. The identification therefore requires the thermal state for the boost, which is what the theorem's vacuum supplies and what the algebra alone does not.
 
 **Summary of the comparison.** The biquaternion boost rotor gives the same generator as the Bisognano–Wichmann modular operator, with the correct rapidity $2\pi s$; that is checked. It does not give the same one-parameter unitary flow inside the finite-dimensional algebra, because the flow is unitary while the finite-dimensional boost rotor is Hermitian and its action on $\mathbb{M}_-$ is two-sided. This is a gap, and it is the same gap the parent modular-theory article recorded — the finite-dimensional algebra $\mathbb{B}\cong M_2(\mathbb{C})$ is type I$_2$ and its modular flow is inner — restated at the wedge. It is left visible rather than closed.
 
@@ -232,9 +232,9 @@ which is proportional to the boost generator $G_1$ modulo the central term $(\lo
 
 **Established (algebra, recomputed above).**
 
-- $G_1=ie_1\in\mathbb{M}_+$ is the boost generator; $\tilde\Lambda(\psi)=\cosh\tfrac{\psi}{2}+i\sinh\tfrac{\psi}{2}e_1$ is Hermitian and of unit norm, preserves $\mathbb{M}_-$ and the biquaternion norm, and shifts the Rindler time by $\eta\mapsto\eta-\psi$.
+- $G_1=ie_1\in\mathbb{M}_+$ is the boost generator; $\tilde U(\psi)=\cosh\tfrac{\psi}{2}+i\sinh\tfrac{\psi}{2}e_1$ is Hermitian and of unit norm, preserves $\mathbb{M}_-$ and the biquaternion norm, and shifts the Rindler time by $\eta\mapsto\eta-\psi$.
 - The rotor acts on $\mathbb{M}_-$ by the two-sided (anticommutator) generator; the commutator with $G_1$ vanishes on the boost plane.
-- The modular flow advances the rapidity by $2\pi$ per unit modular parameter; $\tilde\Lambda(-2\pi s)$ advances $\eta$ by $2\pi s$.
+- The modular flow advances the rapidity by $2\pi$ per unit modular parameter; $\tilde U(-2\pi s)$ advances $\eta$ by $2\pi s$.
 - $J^2=1$, $J\,i\,J=-i$, $J\Delta J=\Delta^{-1}$, $J(\tilde\rho)=\tilde\rho$ in the finite-dimensional model, for two independently chosen faithful states.
 - The wedge reflection $r_W(t,x)=(-t,-x)$ is an involution, exchanges the wedges, and commutes with the boost.
 - For the boost-thermal state $\tilde\rho\propto e^{-\beta G_1}$ the modular Hamiltonian is $K=\beta G_1+(\log Z)e_0\propto G_1$.
@@ -256,7 +256,7 @@ which is proportional to the boost generator $G_1$ modulo the central term $(\lo
 
 The **Bisognano–Wichmann theorem** states that for a wedge region of Minkowski space the modular operator of the vacuum restricted to the wedge algebra is the boost generator, $\Delta=e^{-2\pi K_{\mathrm{boost}}}$, and the modular conjugation is the PCT/reflection operator. It is the meeting point of the two preceding articles: the modular-theory article constructed the abstract flow, and the Unruh article used the boost; the theorem is what makes the second application exact rather than a coincidence.
 
-In the biquaternion framework the wedge is a region of the material sector $\mathbb{M}_-$ bounded by the two null planes $x^1=\pm x^0$ (which lie in the zero-divisor cone), and the boost generator is the Hermitian element $G_1=ie_1\in\mathbb{M}_+$ with rotor $\tilde\Lambda(\psi)=\cosh\tfrac{\psi}{2}+i\sinh\tfrac{\psi}{2}e_1$. The framework **verifies** the generator identification: the rotor's infinitesimal action is the boost, $\tfrac{d}{d\psi}\tilde\Lambda\tilde{Q}\tilde\Lambda|_0=\tfrac12(G_1\tilde{Q}+\tilde{Q}G_1)$, the rotor shifts the Rindler time by $\eta\mapsto\eta-\psi$, and the modular flow advances the rapidity by $2\pi$ per unit modular parameter, so $\tilde\Lambda(-2\pi s)$ advances $\eta$ by $2\pi s$. This is the factor $2\pi$ in $\Delta=e^{-2\pi K_{\mathrm{boost}}}$, checked rather than assumed. The framework also verifies the conjugation identities: $J$ is anti-unitary with $J^2=1$ and $J\,i\,J=-i$, it satisfies $J\Delta J=\Delta^{-1}$, and it realises the wedge reflection $r_W(t,x)=(-t,-x)$ that exchanges the two wedges. The reflection commutes with the boost; it is the anti-unitarity, not the reflection, that inverts the flow.
+In the biquaternion framework the wedge is a region of the material sector $\mathbb{M}_-$ bounded by the two null planes $x^1=\pm x^0$ (which lie in the zero-divisor cone), and the boost generator is the Hermitian element $G_1=ie_1\in\mathbb{M}_+$ with rotor $\tilde U(\psi)=\cosh\tfrac{\psi}{2}+i\sinh\tfrac{\psi}{2}e_1$. The framework **verifies** the generator identification: the rotor's infinitesimal action is the boost, $\tfrac{d}{d\psi}\tilde U\tilde{Q}\tilde U|_0=\tfrac12(G_1\tilde{Q}+\tilde{Q}G_1)$, the rotor shifts the Rindler time by $\eta\mapsto\eta-\psi$, and the modular flow advances the rapidity by $2\pi$ per unit modular parameter, so $\tilde U(-2\pi s)$ advances $\eta$ by $2\pi s$. This is the factor $2\pi$ in $\Delta=e^{-2\pi K_{\mathrm{boost}}}$, checked rather than assumed. The framework also verifies the conjugation identities: $J$ is anti-unitary with $J^2=1$ and $J\,i\,J=-i$, it satisfies $J\Delta J=\Delta^{-1}$, and it realises the wedge reflection $r_W(t,x)=(-t,-x)$ that exchanges the two wedges. The reflection commutes with the boost; it is the anti-unitarity, not the reflection, that inverts the flow.
 
 The framework does **not** make the geometric boost an inner automorphism of the material sector. The modular flow is unitary, while the finite-dimensional boost rotor is Hermitian; the finite-dimensional modular flow acts by the commutator, which vanishes on the boost plane, whereas the geometric boost is two-sided. The generator identification is exact; the flow identification requires the infinite-dimensional field algebra, and is left as a gap. The framework reproduces the wedge and only the wedge: the modular Hamiltonian of a general region is not a geometric generator, and generalising the theorem beyond wedges is a defect.
 
@@ -275,8 +275,8 @@ The framework does **not** make the geometric boost an inner automorphism of the
 | $\rho,\eta$ | Rindler radius and time, $x=\rho\cosh\eta$, $ct=\rho\sinh\eta$ |
 | $\xi=x\partial_t+t\partial_x=\partial_\eta$ | Boost Killing vector |
 | $G_1=ie_1\in\mathbb{M}_+$ | Boost generator (Hermitian, $G_1^2=e_0$) |
-| $\tilde\Lambda(\psi)=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}e_1$ | Boost rotor (Hermitian, unit norm) |
-| $\tilde{Q}\mapsto\tilde\Lambda\tilde{Q}\tilde\Lambda$ | Boost = rotor conjugation on $\mathbb{M}_-$ |
+| $\tilde U(\psi)=\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}e_1$ | Boost rotor (Hermitian, unit norm) |
+| $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U$ | Boost = rotor conjugation on $\mathbb{M}_-$ |
 | $K_{\mathrm{boost}}$ | Boost Hamiltonian; $\Delta=e^{-2\pi K_{\mathrm{boost}}}$ |
 | $\Delta=S^*S$, $S=J\Delta^{1/2}$ | Modular operator; Tomita operator |
 | $J$ | Modular conjugation, anti-unitary, $J^2=1$, $J\,i\,J=-i$ |

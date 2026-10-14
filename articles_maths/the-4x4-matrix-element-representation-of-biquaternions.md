@@ -134,23 +134,23 @@ The regular representation is the first reducible realization in this subcategor
 **Definition.** Let
 
 $$
-\tilde\Pi_1 = \tfrac{1}{2}(e_0 + i e_3), \qquad \tilde\Pi_2 = \tfrac{1}{2}(e_0 - i e_3).
+\tilde\Pi_+ = \tfrac{1}{2}(e_0 + i e_3), \qquad \tilde\Pi_- = \tfrac{1}{2}(e_0 - i e_3).
 $$
 
-**Lemma (orthogonal idempotents).** The elements $\tilde\Pi_1$ and $\tilde\Pi_2$ satisfy
+**Lemma (orthogonal idempotents).** The elements $\tilde\Pi_+$ and $\tilde\Pi_-$ satisfy
 
 $$
-\tilde\Pi_1^2 = \tilde\Pi_1, \qquad \tilde\Pi_2^2 = \tilde\Pi_2, \qquad \tilde\Pi_1\tilde\Pi_2 = \tilde\Pi_2\tilde\Pi_1 = 0, \qquad \tilde\Pi_1 + \tilde\Pi_2 = e_0,
+\tilde\Pi_+^2 = \tilde\Pi_+, \qquad \tilde\Pi_-^2 = \tilde\Pi_-, \qquad \tilde\Pi_+\tilde\Pi_- = \tilde\Pi_-\tilde\Pi_+ = 0, \qquad \tilde\Pi_+ + \tilde\Pi_- = e_0,
 $$
 
-so that $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$ as a direct sum of left ideals.
+so that $\mathbb{B} = \mathbb{B}\tilde\Pi_+ \oplus \mathbb{B}\tilde\Pi_-$ as a direct sum of left ideals. $ie_3$ is a root of $+1$, $(ie_3)^2 = e_0$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
 
-**Proof.** Because $i$ is central, $e_3^2 = -e_0$ and $i^2 = -1$, one computes $\tilde\Pi_1^2 = \tfrac{1}{4}(e_0^2 + 2ie_3 + i^2 e_3^2) = \tfrac{1}{4}(e_0 + 2ie_3 + e_0) = \tfrac{1}{2}(e_0 + ie_3) = \tilde\Pi_1$, and similarly $\tilde\Pi_2^2 = \tilde\Pi_2$, while $\tilde\Pi_1\tilde\Pi_2 = \tfrac{1}{4}(e_0^2 - i^2e_3^2) = \tfrac{1}{4}(e_0 - e_0) = 0$. The sum is $e_0$, and the two ideals meet only in $0$: an element lying in both satisfies $\tilde{Q} = \tilde{Q}\tilde\Pi_2 = 0$, because membership of $\mathbb{B}\tilde\Pi_2$ gives $\tilde{Q}\tilde\Pi_2 = \tilde{Q}$ while $\tilde\Pi_1\tilde\Pi_2 = 0$. The sum is therefore direct. The idempotents and the Peirce decomposition are the subject of *Ideals and Peirce Decomposition of the General Plain Algebra*; the statement is used here only to split the module.
+**Proof.** Because $i$ is central, $e_3^2 = -e_0$ and $i^2 = -1$, one computes $\tilde\Pi_+^2 = \tfrac{1}{4}(e_0^2 + 2ie_3 + i^2 e_3^2) = \tfrac{1}{4}(e_0 + 2ie_3 + e_0) = \tfrac{1}{2}(e_0 + ie_3) = \tilde\Pi_+$, and similarly $\tilde\Pi_-^2 = \tilde\Pi_-$, while $\tilde\Pi_+\tilde\Pi_- = \tfrac{1}{4}(e_0^2 - i^2e_3^2) = \tfrac{1}{4}(e_0 - e_0) = 0$. The sum is $e_0$, and the two ideals meet only in $0$: an element lying in both satisfies $\tilde{Q} = \tilde{Q}\tilde\Pi_- = 0$, because membership of $\mathbb{B}\tilde\Pi_-$ gives $\tilde{Q}\tilde\Pi_- = \tilde{Q}$ while $\tilde\Pi_+\tilde\Pi_- = 0$. The sum is therefore direct. The idempotents and the Peirce decomposition are the subject of *Ideals and Peirce Decomposition of the General Plain Algebra*; the statement is used here only to split the module.
 
 **Theorem (the left regular matrix is $V \oplus V$).** In the basis
 
 $$
-\tilde\Pi_1, \quad e_1 \tilde\Pi_1, \quad \tilde\Pi_2, \quad e_1 \tilde\Pi_2
+\tilde\Pi_+, \quad e_1 \tilde\Pi_+, \quad \tilde\Pi_-, \quad e_1 \tilde\Pi_-
 $$
 
 of $\mathbb{B}$, the left regular matrix of $\tilde{Q}$ is
@@ -164,7 +164,7 @@ Q_1 + iQ_2 & Q_0 + iQ_3 & 0 & 0 \\
 \end{pmatrix},
 $$
 
-with the four corner entries zero: the subspaces spanned by $\tilde\Pi_1, e_1\tilde\Pi_1$ and by $\tilde\Pi_2, e_1\tilde\Pi_2$ are invariant under $\mathsf{M}_4^{L}(\tilde{Q})$, and on each of them the action is that of a minimal left ideal, hence a copy of the simple module $V$, so that the left regular representation is
+with the four corner entries zero: the subspaces spanned by $\tilde\Pi_+, e_1\tilde\Pi_+$ and by $\tilde\Pi_-, e_1\tilde\Pi_-$ are invariant under $\mathsf{M}_4^{L}(\tilde{Q})$, and on each of them the action is that of a minimal left ideal, hence a copy of the simple module $V$, so that the left regular representation is
 
 $$
 \mathbb{B} \cong V \oplus V
@@ -172,13 +172,13 @@ $$
 
 as a left $\mathbb{B}$-module. The regular representation is therefore reducible, and it is the first reducible realization in this subcategory.
 
-**Proof.** The two ideals $\mathbb{B}\tilde\Pi_1$ and $\mathbb{B}\tilde\Pi_2$ are stable under left multiplication by $\tilde Q$, because $\tilde{Q}(\tilde{S}\tilde\Pi_1) = (\tilde{Q}\tilde{S})\tilde\Pi_1$ for every $\tilde{S}$; hence the matrix is block diagonal in any basis adapted to the decomposition. The ideal $\mathbb{B}\tilde\Pi_1$ has the basis $\tilde\Pi_1, e_1\tilde\Pi_1$, since $e_2 \tilde\Pi_1 = i e_1 \tilde\Pi_1$ and $e_3 \tilde\Pi_1 = -i\tilde\Pi_1$. Its multiplication by the basis elements is read from
+**Proof.** The two ideals $\mathbb{B}\tilde\Pi_+$ and $\mathbb{B}\tilde\Pi_-$ are stable under left multiplication by $\tilde Q$, because $\tilde{Q}(\tilde{S}\tilde\Pi_+) = (\tilde{Q}\tilde{S})\tilde\Pi_+$ for every $\tilde{S}$; hence the matrix is block diagonal in any basis adapted to the decomposition. The ideal $\mathbb{B}\tilde\Pi_+$ has the basis $\tilde\Pi_+, e_1\tilde\Pi_+$, since $e_2 \tilde\Pi_+ = i e_1 \tilde\Pi_+$ and $e_3 \tilde\Pi_+ = -i\tilde\Pi_+$. Its multiplication by the basis elements is read from
 
 $$
-e_1 \tilde\Pi_1 = e_1\tilde\Pi_1, \quad e_2 \tilde\Pi_1 = ie_1\tilde\Pi_1, \quad e_3 \tilde\Pi_1 = -i\tilde\Pi_1, \qquad e_1(e_1\tilde\Pi_1) = -\tilde\Pi_1, \quad e_2(e_1\tilde\Pi_1) = i\tilde\Pi_1, \quad e_3(e_1\tilde\Pi_1) = ie_1\tilde\Pi_1,
+e_1 \tilde\Pi_+ = e_1\tilde\Pi_+, \quad e_2 \tilde\Pi_+ = ie_1\tilde\Pi_+, \quad e_3 \tilde\Pi_+ = -i\tilde\Pi_+, \qquad e_1(e_1\tilde\Pi_+) = -\tilde\Pi_+, \quad e_2(e_1\tilde\Pi_+) = i\tilde\Pi_+, \quad e_3(e_1\tilde\Pi_+) = ie_1\tilde\Pi_+,
 $$
 
-so in the basis $\tilde\Pi_1, e_1\tilde\Pi_1$ the sum $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ acts by the first two rows and columns of the displayed matrix, and the same computation on the basis $\tilde\Pi_2, e_1\tilde\Pi_2$ of $\mathbb{B}\tilde\Pi_2$ gives the last two. The trace of the matrix is $4Q_0$ by inspection and the determinant is the product of its two diagonal groups,
+so in the basis $\tilde\Pi_+, e_1\tilde\Pi_+$ the sum $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ acts by the first two rows and columns of the displayed matrix, and the same computation on the basis $\tilde\Pi_-, e_1\tilde\Pi_-$ of $\mathbb{B}\tilde\Pi_-$ gives the last two. The trace of the matrix is $4Q_0$ by inspection and the determinant is the product of its two diagonal groups,
 
 $$
 (Q_0 - iQ_3)(Q_0 + iQ_3) - (-Q_1 + iQ_2)(Q_1 + iQ_2) = N(\tilde{Q}),
@@ -194,7 +194,7 @@ $$
 
 which the form of the theorem above gives at once. The eigenvalues themselves, the Cayley–Hamilton identity, the eigenspace dimensions and the doubling of the multiplicities that the square produces are the subject of *Biquaternion Spectral Theory*, later in this chapter, and are cited from there rather than developed here.
 
-**Remark (the irreducible submodules are the minimal left ideals).** The two invariant subspaces are the two minimal left ideals $I_1 = \mathbb{B}\tilde\Pi_1$ and $I_2 = \mathbb{B}\tilde\Pi_2$ of the algebra. Both afford the module $V$, and the fact that $V$ is the only simple module is the classification of the simple modules. The decomposition $\mathbb{B} = I_1 \oplus I_2$ is therefore the same fact as the diagonal form of the regular matrix, read as ideals rather than as a matrix; the same decomposition is stated in *Modules over the General Plain Algebra of Biquaternions*, where the simple module is written $S$, as $\mathbb{B} \cong S \oplus S$.
+**Remark (the irreducible submodules are the minimal left ideals).** The two invariant subspaces are the two minimal left ideals $I_1 = \mathbb{B}\tilde\Pi_+$ and $I_2 = \mathbb{B}\tilde\Pi_-$ of the algebra. Both afford the module $V$, and the fact that $V$ is the only simple module is the classification of the simple modules. The decomposition $\mathbb{B} = I_1 \oplus I_2$ is therefore the same fact as the diagonal form of the regular matrix, read as ideals rather than as a matrix; the same decomposition is stated in *Modules over the General Plain Algebra of Biquaternions*, where the simple module is written $S$, as $\mathbb{B} \cong S \oplus S$.
 
 ## The Double Centralizer
 
@@ -206,7 +206,7 @@ $$
 
 is the image $\mathsf{M}_4^{R}(\mathbb{B})$, of complex dimension $4$.
 
-**Proof.** Write $\operatorname{col}(\tilde S)$ for the coordinate column of $\tilde S$. The defining property of the left matrix is $\mathsf{M}_4^{L}(\tilde{R})\operatorname{col}(\tilde S) = \operatorname{col}(\tilde{R}\tilde{S})$, and in particular $\mathsf{M}_4^{L}(\tilde{R})\operatorname{col}(e_0) = \operatorname{col}(\tilde{R})$. Let $C$ be in the centralizer and let $\mathbf{u} = C\operatorname{col}(e_0)$ be its first column; write $\tilde{Q}$ for the element of that coordinate column. Then, for every $\tilde{R}$,
+**Proof.** Write $\operatorname{col}(\tilde S)$ for the coordinate column of $\tilde S$. The defining property of the left matrix is $\mathsf{M}_4^{L}(\tilde{R})\operatorname{col}(\tilde S) = \operatorname{col}(\tilde{R}\tilde{S})$, and in particular $\mathsf{M}_4^{L}(\tilde{R})\operatorname{col}(e_0) = \operatorname{col}(\tilde{R})$. Let $C$ be in the centralizer and let $\vec u = C\operatorname{col}(e_0)$ be its first column; write $\tilde{Q}$ for the element of that coordinate column. Then, for every $\tilde{R}$,
 
 $$
 C\operatorname{col}(\tilde{R}) = C\,\mathsf{M}_4^{L}(\tilde{R})\operatorname{col}(e_0) = \mathsf{M}_4^{L}(\tilde{R})\,C\operatorname{col}(e_0) = \mathsf{M}_4^{L}(\tilde{R})\operatorname{col}(\tilde{Q}) = \operatorname{col}(\tilde{R}\tilde{Q}) = \mathsf{M}_4^{R}(\tilde{Q})\operatorname{col}(\tilde{R}),
@@ -317,11 +317,11 @@ with $K_1, K_2, K_3$ the coefficient conjugates of $ie_1, ie_2, ie_3$, each squa
 **The transposition identity is exact in this basis, and these are the matrices of the Maxwell literature.** The realization is the one in which the two $D$'s of the theorem of the transposition section disappear, and this is worth stating because it separates two things that the first basis runs together. Write the left regular matrix of the element $\tilde{Q} = A_0 e_0 + A_1 ie_1 + A_2 ie_2 + A_3 ie_3$ in this realization as
 
 $$
-\mathsf{M}'_4(\tilde{Q}) = A_0 I + cF(\mathbf{A}), \qquad
-cF(\mathbf{A}) := \begin{pmatrix} 0 & \mathbf{A}^{\mathsf{T}} \\ \mathbf{A} & i[\mathbf{A}]_\times \end{pmatrix}, \qquad \mathbf{A} = (A_1, A_2, A_3),
+\mathsf{M}'_4(\tilde{Q}) = A_0 I + cF(\vec A), \qquad
+cF(\vec A) := \begin{pmatrix} 0 & \vec A^{\mathsf{T}} \\ \vec A & i[\vec A]_\times \end{pmatrix}, \qquad \vec A = (A_1, A_2, A_3),
 $$
 
-with $[\mathbf{u}]_\times$ the matrix of $\mathbf{v} \mapsto \mathbf{u} \times \mathbf{v}$; this is the display of the realization above, and it is the same $cF$ that a matrix formulation of Maxwell's equations multiplies into the column $(-\partial_t, \nabla)^{\mathsf{T}}$. In this basis the right regular matrix is **exactly the transpose**,
+with $[\vec u]_\times$ the matrix of $\vec v \mapsto \vec u \times \vec v$; this is the display of the realization above, and it is the same $cF$ that a matrix formulation of Maxwell's equations multiplies into the column $(-\partial_t, \nabla)^{\mathsf{T}}$. In this basis the right regular matrix is **exactly the transpose**,
 
 $$
 \mathsf{M}'^{R}_4(\tilde{Q}) = \mathsf{M}'_4(\tilde{Q})^{\mathsf{T}} ,
@@ -442,7 +442,7 @@ The left regular matrix $\mathsf{M}_4^{L}$ of *Introduction to the 4×4 Matrix E
 
 The right regular matrix $\mathsf{M}_4^{R}$, whose $m$-th column is the coordinate column of $e_m\tilde Q$, is anti-multiplicative and is the regular representation of the opposite algebra. The naive identity $\mathsf{M}_4^{R}(\tilde{Q}) = \mathsf{M}_4^{L}(\tilde{Q})^{\mathsf{T}}$ is false — and the variant with $\tilde{Q}^{\natural}$ is the same statement, since $\mathsf{M}_4^{L}(\tilde{Q}^{\natural})^{\mathsf{T}} = \mathsf{M}_4^{L}(\tilde{Q})$ — while what holds is $\mathsf{M}_4^{R}(\tilde{Q}) = D\mathsf{M}_4^{L}(\tilde{Q})^{\mathsf{T}}D = D\mathsf{M}_4^{L}(\tilde{Q}^{\natural})D$ with $D = \operatorname{diag}(-1,1,1,1)$. The difference $\mathsf{M}_4^{L} - \mathsf{M}_4^{R}$ vanishes exactly on the centre $\mathbb{C}_{\mathbb{B}}$, and its $m$-th column is the coordinate column of $[\tilde Q, e_m]$; that is the precise sense in which left and right differ because the algebra is non-commutative.
 
-The regular module is $\mathbb{B} = I_1 \oplus I_2$ with $I_1 = \mathbb{B}\tilde\Pi_1$, $I_2 = \mathbb{B}\tilde\Pi_2$ and $\tilde\Pi_1 = \tfrac{1}{2}(e_0 + ie_3)$, $\tilde\Pi_2 = \tfrac12(e_0 - ie_3)$; in the adapted basis $\tilde\Pi_1, e_1\tilde\Pi_1, \tilde\Pi_2, e_1\tilde\Pi_2$ the left regular matrix is diagonal over the two invariant subspaces $I_1$, $I_2$, each a copy of the simple module $V$. So the regular module is $V \oplus V$, the regular representation is reducible, and it is the first reducible realization of this subcategory. The centralizer of $\mathsf{M}_4^{L}(\mathbb{B})$ is the right copy $\mathsf{M}_4^{R}(\mathbb{B})$, of complex dimension $4$. Over $\mathbb{R}$ the left regular matrix is $8 \times 8$ real with $\det = |N|^4$ and trace $8\operatorname{Re}(Q_0)$, the dimension doubling by restriction of scalars. The Hermitian sandwich $\tilde R \mapsto \tilde Q\tilde R\tilde Q^{*}$ has the matrix $\mathsf{H}_{\tilde Q} = \mathsf{M}_4^{L}(\tilde{Q})\,\mathsf{M}_4^{R}(\tilde{Q}^{*}) = \mathsf{M}_4^{L}(\tilde{Q})\,D\,\mathsf{M}_4^{L}(\tilde{Q})^{*}\,D$, a congruence and not a similarity; its realification has $\det = |N|^{8}$ and trace $8|Q_0|^{2}$.
+The regular module is $\mathbb{B} = I_1 \oplus I_2$ with $I_1 = \mathbb{B}\tilde\Pi_+$, $I_2 = \mathbb{B}\tilde\Pi_-$ and $\tilde\Pi_+ = \tfrac{1}{2}(e_0 + ie_3)$, $\tilde\Pi_- = \tfrac12(e_0 - ie_3)$; in the adapted basis $\tilde\Pi_+, e_1\tilde\Pi_+, \tilde\Pi_-, e_1\tilde\Pi_-$ the left regular matrix is diagonal over the two invariant subspaces $I_1$, $I_2$, each a copy of the simple module $V$. So the regular module is $V \oplus V$, the regular representation is reducible, and it is the first reducible realization of this subcategory. The centralizer of $\mathsf{M}_4^{L}(\mathbb{B})$ is the right copy $\mathsf{M}_4^{R}(\mathbb{B})$, of complex dimension $4$. Over $\mathbb{R}$ the left regular matrix is $8 \times 8$ real with $\det = |N|^4$ and trace $8\operatorname{Re}(Q_0)$, the dimension doubling by restriction of scalars. The Hermitian sandwich $\tilde R \mapsto \tilde Q\tilde R\tilde Q^{*}$ has the matrix $\mathsf{H}_{\tilde Q} = \mathsf{M}_4^{L}(\tilde{Q})\,\mathsf{M}_4^{R}(\tilde{Q}^{*}) = \mathsf{M}_4^{L}(\tilde{Q})\,D\,\mathsf{M}_4^{L}(\tilde{Q})^{*}\,D$, a congruence and not a similarity; its realification has $\det = |N|^{8}$ and trace $8|Q_0|^{2}$.
 
 A second $4 \times 4$ realization, the one used in the literature on eigenvector bundles, is equivalent to the regular one as a module — every faithful four-dimensional complex realization is $V \oplus V$ — and it carries a multiplicative quadratic map $m(A) = A A^{\natural} = \Delta(A) I$ of the algebra into the scalar matrices, $\Delta = A_0^2 - A_1^2 - A_2^2 - A_3^2$, which is a real quadratic map on the real coefficients and which the regular realization does not have, in contrast with the congruence-shaped quadratic map of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*. Its real slice $e_0, ie_1, ie_2, ie_3$ carries the Minkowski form $D = \operatorname{diag}(-1,1,1,1)$, of signature $(1,3)$, for which the three generators are the infinitesimal generators of $O(1,3)$, $M^{\mathsf T} = -DMD$; this is the form of the realization's real slice and must be distinguished from the general quaternionic bilinear form of signature $(4,4)$, which is the form of the eight-dimensional algebra. In that realization the sixteen products $\mathsf{M}_4^{L}(e_i)\mathsf{M}_4^{R}(e_j)$ are the Hermitian outer products $E_iE_j^{\mathsf T}$ and form a basis of $M_4(\mathbb{C})$ orthogonal for the trace, $\operatorname{tr}(P_{ij}P_{kl}) = 4\delta_{ik}\delta_{jl}$; the expansion it gives is the tensor-square reading of the double centralizer, and it says that every complex matrix is a biparavector, $\sum a_{ij}\,\mathsf{M}_4^{L}(e_i)\mathsf{M}_4^{R}(e_j)$.
 
@@ -463,8 +463,8 @@ A second $4 \times 4$ realization, the one used in the literature on eigenvector
 | ${}^{\natural}, \bar{\cdot}, {}^{*}, {}^{\flat}$ | Quaternion, complex, Hermitian and anti-Hermitian conjugations |
 | $\mathbb{C}_{\mathbb{B}}$ | Centre, the scalar subspace $\mathbb{C} e_0$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real quaternion subalgebra; its restriction carries the quaternion regular representation of *Quaternion Element Representations* |
-| $\tilde\Pi_1 = \tfrac{1}{2}(e_0 + ie_3)$, $\tilde\Pi_2 = \tfrac12(e_0 - ie_3)$ | Orthogonal idempotents, $\tilde\Pi_1 + \tilde\Pi_2 = e_0$, $\tilde\Pi_1\tilde\Pi_2 = 0$ |
-| $I_1 = \mathbb{B}\tilde\Pi_1$, $I_2 = \mathbb{B}\tilde\Pi_2$ | The two minimal left ideals, $\mathbb{B} = I_1 \oplus I_2$ |
+| $\tilde\Pi_+ = \tfrac{1}{2}(e_0 + ie_3)$, $\tilde\Pi_- = \tfrac12(e_0 - ie_3)$ | Orthogonal idempotents, $\tilde\Pi_+ + \tilde\Pi_- = e_0$, $\tilde\Pi_+\tilde\Pi_- = 0$ |
+| $I_1 = \mathbb{B}\tilde\Pi_+$, $I_2 = \mathbb{B}\tilde\Pi_-$ | The two minimal left ideals, $\mathbb{B} = I_1 \oplus I_2$ |
 | $V = \mathbb{C}^2$ | Simple left $\mathbb{B}$-module, complex dimension $2$ |
 | $\mathbb{B}^{\mathrm{op}}$ | Opposite algebra; the right regular matrix is a homomorphism from it |
 | $\epsilon^{ijk}$ | Levi-Civita symbol on the indices $1, 2, 3$ |

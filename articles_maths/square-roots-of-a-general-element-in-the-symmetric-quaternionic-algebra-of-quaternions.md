@@ -12,7 +12,7 @@ so a square root exists only for the central radicands, and for them the problem
 
 **Boundaries.** The special radicands $+1$ and $-1$ are *Square Roots of One and the Idempotents of the Symmetric Quaternionic Algebra*; the radicand zero and the square-zero elements are *Square Roots of Zero and the Nilpotents of the Symmetric Quaternionic Algebra*; the diagonal and the non-isotropic class are *Norm and Invertibility in the Symmetric Quaternionic Algebra*; the positivity of the squares and the square root of a positive central element are *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*; the general definitions are *Definitions for the Study of the 6 Algebraic Structures*; the parent's classification, which the block collapses, is *Square Roots of a General Element in the General Plain Algebra*.
 
-**Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$; an element is $\tilde x=x_0e_0+\mathbf x$. The **quaternion conjugation** is $\tilde x^{\natural}=x_0e_0-\mathbf x$; the bar is the identity, the star coincides with the natural sign ${}^{\natural}$. The **quaternion form** is $N(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q$, its diagonal is $N(\tilde x)=x_0^{2}+|\mathbf x|^{2}$, and the **symmetric quaternionic product** is $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$. The centre is $\mathbb{R}e_0$; the **unit sphere** of the plain product is $Sp(1)=\{\tilde u:N(\tilde u)=1\}$, the norm-one subgroup of the group of units of the plain product.
+**Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$; an element is $\tilde x=x_0e_0+\vec x$. The **quaternion conjugation** is $\tilde x^{\natural}=x_0e_0-\vec x$; the bar is the identity, the star coincides with the natural sign ${}^{\natural}$. The **quaternion form** is $N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$, its diagonal is $N(\tilde x)=x_0^{2}+|\vec x|^{2}$, and the **symmetric quaternionic product** is $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$. The centre is $\mathbb{R}e_0$; the **unit sphere** of the plain product is $Sp(1)=\{\tilde u:N(\tilde u)=1\}$, the norm-one subgroup of the group of units of the plain product.
 
 ## The Reduction
 
@@ -24,7 +24,7 @@ $$
 
 so the image of the square map of the block is the closed half-line $\mathbb{R}_{\geq0}e_0$.
 
-*Proof.* The product is $\tilde x\star\tilde x=N(\tilde x,\tilde x)e_0$ by the definition of the block, and $N(\tilde x,\tilde x)=N(\tilde x)=x_0^{2}+|\mathbf x|^{2}$ is a real scalar. The image statement is the positivity of $N$, the cone of squares being the closed half-line by *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*.
+*Proof.* The product is $\tilde x\star\tilde x=N(\tilde x,\tilde x)e_0$ by the definition of the block, and $N(\tilde x,\tilde x)=N(\tilde x)=x_0^{2}+|\vec x|^{2}$ is a real scalar. The image statement is the positivity of $N$, the cone of squares being the closed half-line by *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*.
 
 **Corollary (the obstruction to a square root).** The equation $\tilde x\star\tilde x=\tilde q$ has a solution only for the **central** radicands $\tilde q=\lambda e_0$, $\lambda\in\mathbb{R}$; for a noncentral $\tilde q$ the root set is empty. In particular the block has no element whose square is a vector, and the case of the general theory that treats the roots with a non-vanishing vector part does not occur here: there is neither a root of that shape nor a second case to distinguish.
 
@@ -46,7 +46,7 @@ the level set of the diagonal of the form at the value $\lambda$.
 $$
 \mathcal{R}(\lambda)=\{\tilde x:N(\tilde x)=\lambda\}=\sqrt{\lambda}\,Sp(1),
 $$
-a closed submanifold of real dimension $3$, containing $\pm\sqrt{\lambda}e_0$ and, for every unit vector $\mathbf u$ of the vector subspace, the element $\sqrt{\lambda}\mathbf u$;
+a closed submanifold of real dimension $3$, containing $\pm\sqrt{\lambda}e_0$ and, for every unit vector $\vec u$ of the vector subspace, the element $\sqrt{\lambda}\vec u$;
 - for $\lambda=0$ the root set is the origin alone, $\mathcal{R}(0)=\{0\}$;
 - for $\lambda<0$ the root set is empty, $\mathcal{R}(\lambda)=\varnothing$.
 
@@ -77,9 +77,9 @@ Solvability is therefore exactly the condition that the radicand be central with
 
 **Example (a noncentral radicand).** Let $\tilde q=e_1$. The equation $\tilde x\star\tilde x=e_1$ has no solution, since a square of the block is central and $e_1$ is not. The block's only possible radicands are the multiples of $e_0$, and on this example the collapse is at its sharpest: in the parent plain algebra the same equation has roots, and the comparison is the witness of the collapse (*Square Roots of a General Element in the General Plain Algebra*).
 
-**Example (the central value $\lambda=1$).** The roots are the unit sphere $N=1$, that is $Sp(1)$: the elements $\pm e_0$, the three units $e_1,e_2,e_3$ and their negatives, and every element $x_0e_0+\mathbf x$ with $x_0^{2}+|\mathbf x|^{2}=1$. The root set is computed in *Square Roots of One and the Idempotents of the Symmetric Quaternionic Algebra*.
+**Example (the central value $\lambda=1$).** The roots are the unit sphere $N=1$, that is $Sp(1)$: the elements $\pm e_0$, the three units $e_1,e_2,e_3$ and their negatives, and every element $x_0e_0+\vec x$ with $x_0^{2}+|\vec x|^{2}=1$. The root set is computed in *Square Roots of One and the Idempotents of the Symmetric Quaternionic Algebra*.
 
-**Example (the central value $\lambda=4$).** The roots are the level set $N=4$, the sphere $2\,Sp(1)$: it contains $\pm2e_0$, the elements $2e_k$, and every element with $x_0^{2}+|\mathbf x|^{2}=4$. Nothing in the root set is a root of the value $1$, the two level sets being disjoint.
+**Example (the central value $\lambda=4$).** The roots are the level set $N=4$, the sphere $2\,Sp(1)$: it contains $\pm2e_0$, the elements $2e_k$, and every element with $x_0^{2}+|\vec x|^{2}=4$. Nothing in the root set is a root of the value $1$, the two level sets being disjoint.
 
 **Example (the central value $\lambda=\tfrac14$).** The roots are the sphere $\tfrac12 Sp(1)$, of radius $\tfrac12$: it contains $\pm\tfrac12e_0$ and the elements with $N=\tfrac14$.
 

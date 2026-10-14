@@ -5,7 +5,7 @@
 Of the twelve algebraic structures that the complex space
 $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries, exactly one carries the classical
 theory of a **Lie algebra**: the **antisymmetric plain multiplication**
-$\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf{P}\times\mathbf{Q}$ of
+$\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\vec P\times\vec Q$ of
 *Introduction to the Antisymmetric Plain Algebra of Biquaternions*, the multiplication named
 $\mathrm{APA}$ in *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. Every
 structural result of the block belongs to it alone — the centre and the quotient, the derived
@@ -151,7 +151,7 @@ derived algebra $\mathrm{Vect}(\mathbb{B})\cong\mathfrak{sl}(2,\mathbb{C})$:
 $$
 \ker\mathrm{ad}=\mathbb{C}_{\mathbb{B}},\qquad
 \operatorname{Inn}(\mathfrak{g})=\{\mathrm{ad}_{\tilde P}\}
-=\{\mathrm{ad}_{\mathbf P}:\mathbf{P}\in\mathrm{Vect}(\mathbb{B})\}\cong\mathfrak{sl}(2,\mathbb{C}).
+=\{\mathrm{ad}_{\vec P}:\vec P\in\mathrm{Vect}(\mathbb{B})\}\cong\mathfrak{sl}(2,\mathbb{C}).
 $$
 
 *Proof.* An adjoint vanishes exactly when the element brackets to zero with everything, which is
@@ -191,7 +191,7 @@ quotient is the vector subspace $\mathrm{Vect}(\mathbb{B})$, of complex dimensio
 - **The derived algebra and the identifications.** The derived algebra is $\mathrm{Vect}(\mathbb{B})$,
 isomorphic to $\mathfrak{sl}(2,\mathbb{C})$, with the real form $\mathfrak{su}(2)$ on the
 anti-Hermitian subspace (*The Lie Algebra of the Antisymmetric Plain Algebra*).
-- **The invariant form.** The Killing form is $\kappa(\tilde P,\tilde Q)=-2\,\mathbf{P}\cdot\mathbf{Q}$,
+- **The invariant form.** The Killing form is $\kappa(\tilde P,\tilde Q)=-2\,\vec P\cdot\vec Q$,
 invariant and symmetric, of radical the centre; read on it the Cartan criteria give that the
 algebra is not semisimple, its radical being the centre, and that its derived algebra
 $\mathfrak{sl}(2,\mathbb{C})$ is simple; the form produces the Casimir element

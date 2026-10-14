@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The antisymmetric plain algebra, $\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf{P}\times\mathbf{Q}$, is read here in the $2\times2$ matrix model of the chapter of the general plain algebra: the two-dimensional model $\mathbb{B}\cong M_2(\mathbb{C})$, in which the bracket is the halved commutator of the matrix product. This article is the first of the two representation articles of the block, and its companion *The Antisymmetric Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$* reads the same bracket in the regular model and through the adjoint representation.
+The antisymmetric plain algebra, $\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\vec P\times\vec Q$, is read here in the $2\times2$ matrix model of the chapter of the general plain algebra: the two-dimensional model $\mathbb{B}\cong M_2(\mathbb{C})$, in which the bracket is the halved commutator of the matrix product. This article is the first of the two representation articles of the block, and its companion *The Antisymmetric Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$* reads the same bracket in the regular model and through the adjoint representation.
 
 The model turns the bracket into the halved commutator $\tfrac12(XY-YX)$ of two by two complex matrices, and the whole block is read off the two standard facts about the matrix commutator: **its image is the trace-free matrices, of complex dimension three, and its kernel is the scalar matrices, of complex dimension one.** The image is the derived algebra $\mathrm{Vect}(\mathbb{B})$, identified with $\mathfrak{sl}(2,\mathbb{C})$; the kernel is the centre $\mathbb{C}_{\mathbb{B}}$; and the trace form of the model is the Killing form of the block, $\kappa(\tilde P,\tilde Q)=\operatorname{Tr}(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q))$ on the derived algebra.
 
@@ -50,12 +50,12 @@ and the Lie algebra it makes of the trace-free matrices is $\mathfrak{sl}(2,\mat
 **Theorem (the trace form is the Killing form).** On the derived algebra,
 
 $$
-\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)\bigr)=\kappa(\tilde P,\tilde Q)=-2\,\mathbf{P}\cdot\mathbf{Q}\qquad(\tilde P,\tilde Q\in\mathrm{Vect}(\mathbb{B})),
+\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)\bigr)=\kappa(\tilde P,\tilde Q)=-2\,\vec P\cdot\vec Q\qquad(\tilde P,\tilde Q\in\mathrm{Vect}(\mathbb{B})),
 $$
 
 so the trace form of the two-dimensional model is the Killing form of the block.
 
-*Proof.* With $\mathsf{M}_2(\tilde P)=-i\,\mathbf{P}\cdot\sigma$ and $\mathsf{M}_2(\tilde Q)=-i\,\mathbf{Q}\cdot\sigma$ one has $\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)=-(\mathbf{P}\cdot\sigma)(\mathbf{Q}\cdot\sigma)=-(\mathbf{P}\cdot\mathbf{Q})\mathrm{I}_2-i(\mathbf{P}\times\mathbf{Q})\cdot\sigma$, whose trace is $-2\,\mathbf{P}\cdot\mathbf{Q}$ because the Pauli matrices are trace-free; this is the formula of *The Killing Form of the Antisymmetric Plain Algebra*.
+*Proof.* With $\mathsf{M}_2(\tilde P)=-i\,\vec P\cdot\sigma$ and $\mathsf{M}_2(\tilde Q)=-i\,\vec Q\cdot\sigma$ one has $\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)=-(\vec P\cdot\sigma)(\vec Q\cdot\sigma)=-(\vec P\cdot\vec Q)\mathrm{I}_2-i(\vec P\times\vec Q)\cdot\sigma$, whose trace is $-2\,\vec P\cdot\vec Q$ because the Pauli matrices are trace-free; this is the formula of *The Killing Form of the Antisymmetric Plain Algebra*.
 
 **Remark (the two objects of the block).** The model is the smallest faithful representation of the derived algebra, of complex dimension two, and its trace form is the invariant form itself: **the two objects of the block, the bracket and the form, are in this model the commutator and the trace. The identification is the reason the block is called the Lie block.** The scalar matrices, the kernel, are the centre; the trace-free matrices, the image, are the derived algebra; and the two are the two-dimensional model of the decomposition $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus\mathrm{Vect}(\mathbb{B})$.
 
@@ -100,7 +100,7 @@ which is $e_1\wedge e_2=e_3$ read in the entries.
 
 ## Summary
 
-In the two-dimensional model $\mathbb{B}\cong M_2(\mathbb{C})$ the antisymmetric plain algebra is the halved commutator $\mathsf{M}_2(\tilde P\wedge\tilde Q)=\tfrac12[\mathsf{M}_2(\tilde P),\mathsf{M}_2(\tilde Q)]$, with image the trace-free matrices, identified with $\mathfrak{sl}(2,\mathbb{C})$ and with the derived algebra, and kernel the scalar matrices, identified with the centre; the trace form of the model is the Killing form of the block, $\kappa(\tilde P,\tilde Q)=\operatorname{Tr}(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q))=-2\,\mathbf{P}\cdot\mathbf{Q}$ on the derived algebra. The model identifies the derived algebra with $\mathfrak{sl}(2,\mathbb{C})$ as its defining representation, and it exhibits the decomposition $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus\mathrm{Vect}(\mathbb{B})$ as a kernel and an image.
+In the two-dimensional model $\mathbb{B}\cong M_2(\mathbb{C})$ the antisymmetric plain algebra is the halved commutator $\mathsf{M}_2(\tilde P\wedge\tilde Q)=\tfrac12[\mathsf{M}_2(\tilde P),\mathsf{M}_2(\tilde Q)]$, with image the trace-free matrices, identified with $\mathfrak{sl}(2,\mathbb{C})$ and with the derived algebra, and kernel the scalar matrices, identified with the centre; the trace form of the model is the Killing form of the block, $\kappa(\tilde P,\tilde Q)=\operatorname{Tr}(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q))=-2\,\vec P\cdot\vec Q$ on the derived algebra. The model identifies the derived algebra with $\mathfrak{sl}(2,\mathbb{C})$ as its defining representation, and it exhibits the decomposition $\mathbb{B}=\mathbb{C}_{\mathbb{B}}\oplus\mathrm{Vect}(\mathbb{B})$ as a kernel and an image.
 
 ## Summary of Notation
 

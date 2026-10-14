@@ -100,7 +100,7 @@ For Bell-diagonal states the quantum mutual information is thus a function of th
 To extract classical information from a bipartite quantum state one must measure. A projective measurement on $B$ along a direction $\hat{n}$ has idempotents
 
 $$
-\tilde{\Pi}_{1,2} = \tfrac12\bigl(e_0 \pm i\hat{n}\cdot\hat{\mathbf{e}}\bigr) \quad\text{on }B,
+\tilde{\Pi}_{1,2} = \tfrac12\bigl(e_0 \pm i\hat{n}\cdot\hat e\bigr) \quad\text{on }B,
 \qquad
  e_0\otimes\tilde{\Pi}_{1,2} \ \text{on } AB ,
 $$
@@ -270,7 +270,7 @@ with marginals $\tilde{\rho}_A = \tilde{\rho}_B = \tfrac12 e_0$ and entropy a fu
 | $\tilde{\rho}_A = \mathrm{Tr}_B\tilde{\rho}_{AB}$, $\tilde{\rho}_B = \mathrm{Tr}_A\tilde{\rho}_{AB}$ | Marginal states |
 | $S(\tilde{\rho}) = -\mathrm{Tr}(\tilde{\rho}\log_2\tilde{\rho})$ | Von Neumann entropy (bits) |
 | $I(A:B) = S(\tilde{\rho}_A)+S(\tilde{\rho}_B)-S(\tilde{\rho}_{AB})$ | Quantum mutual information |
-| $\tilde{\Pi}_{1,2} = \tfrac12(e_0\pm i\hat{n}\cdot\hat{\mathbf{e}})$ | Projective measurement on $B$ |
+| $\tilde{\Pi}_{1,2} = \tfrac12(e_0\pm i\hat{n}\cdot\hat e)$ | Projective measurement on $B$ |
 | $J(A|B) = S(\tilde{\rho}_A)-S(A|\{\tilde{\Pi}\})$ | Classical mutual information |
 | $D(A|B) = I(A:B)-\max J(A|B)$ | Quantum discord |
 | $c_j = \mathrm{Tr}(\tilde{\rho}_{AB}\tilde{Q}_j)$ | Correlation coefficients |

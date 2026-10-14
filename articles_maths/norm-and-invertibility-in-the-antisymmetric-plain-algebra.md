@@ -5,7 +5,7 @@
 This article studies the algebraic norm and the invertibility of the antisymmetric plain multiplication
 
 $$
-\tilde P\wedge\tilde Q=\tfrac12\bigl(\tilde P\tilde Q-\tilde Q\tilde P\bigr)=\mathbf{P}\times\mathbf{Q},
+\tilde P\wedge\tilde Q=\tfrac12\bigl(\tilde P\tilde Q-\tilde Q\tilde P\bigr)=\vec P\times\vec Q,
 $$
 
 the cross product of the two vector parts, the antisymmetric half of the general plain bilinear product (*Introduction to the Antisymmetric Plain Algebra of Biquaternions*). The operation is $\mathbb{C}$-bilinear, alternating and vector valued, and it has no unit on either side.
@@ -16,9 +16,9 @@ The invertibility is a second and independent absence. The block has **no left u
 
 **Boundaries.** The operation, its class and the absence of a unit are *Introduction to the Antisymmetric Plain Algebra of Biquaternions*; the general definitions of the unit and the inverse are *Definitions for the Study of the 12 Algebraic Structures*, §*The Unit and the Inverse*, and the unit table of the four general products is *Comparison Between the Four General Products*; the antisymmetrisation from which the block is written is *The Symmetric and Antisymmetric Parts of an Algebra Product*. The algebraic norm of the general plain bilinear product is $B$, a different form, and its theory is *Norm and Invertibility in the General Plain Algebra*; the invariant forms of the block are *The Killing Form of the Antisymmetric Plain Algebra*. Nothing topological and nothing metric appears.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_1e_2=e_3$ and central scalar imaginary $i$; an element is $\tilde Q=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^{3}Q_ke_k$, and $\tilde P\tilde Q$ is the general plain bilinear product. The product of the block is $\tilde P\wedge\tilde Q=\mathbf{P}\times\mathbf{Q}$, and unqualified, *unit* and *inverse* mean the unit and the inverse of $\wedge$.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_1e_2=e_3$ and central scalar imaginary $i$; an element is $\tilde Q=Q_0e_0+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_ke_k$, and $\tilde P\tilde Q$ is the general plain bilinear product. The product of the block is $\tilde P\wedge\tilde Q=\vec P\times\vec Q$, and unqualified, *unit* and *inverse* mean the unit and the inverse of $\wedge$.
 
-**The results.** The antisymmetric plain multiplication $\tilde P\wedge\tilde Q=\mathbf{P}\times\mathbf{Q}$ has no left unit, no right unit and no two-sided unit, hence no invertible element and an empty group of units; the inverse equation $\tilde X\wedge\tilde Y=e_0$ has no solution, because every value of the block is a pure vector. Its scalar part vanishes identically, $\mathrm{Sc}(\tilde P\wedge\tilde Q)=0$, so the algebraic norm of the block is the zero function and the block carries **no algebraic norm**. Both canonical quadratics built from the product, the square $\tilde X\wedge\tilde X$ and the conjugated square $\tilde X\wedge\tilde X^{\natural}$, vanish identically as well.
+**The results.** The antisymmetric plain multiplication $\tilde P\wedge\tilde Q=\vec P\times\vec Q$ has no left unit, no right unit and no two-sided unit, hence no invertible element and an empty group of units; the inverse equation $\tilde X\wedge\tilde Y=e_0$ has no solution, because every value of the block is a pure vector. Its scalar part vanishes identically, $\mathrm{Sc}(\tilde P\wedge\tilde Q)=0$, so the algebraic norm of the block is the zero function and the block carries **no algebraic norm**. Both canonical quadratics built from the product, the square $\tilde X\wedge\tilde X$ and the conjugated square $\tilde X\wedge\tilde X^{\natural}$, vanish identically as well.
 
 ## The Relative Definitions
 
@@ -36,7 +36,7 @@ Throughout this article the product is the antisymmetric plain multiplication $\
 
 **Theorem (no unit).** The operation $\wedge$ has no left unit and no right unit; there is no $\tilde E$ with $\tilde E\wedge\tilde X=\tilde X$ for every $\tilde X$, and none with $\tilde X\wedge\tilde E=\tilde X$ for every $\tilde X$. Hence there is no two-sided unit.
 
-*Proof.* Let $\tilde E$ be a left unit. At $\tilde X=e_0$, whose vector part is zero, the value is $\tilde E\wedge e_0=\mathbf{E}\times\mathbf{0}=0$, which would have to equal $e_0$; the two differ, since $e_0$ is nonzero. Let $\tilde E$ be a right unit. At $\tilde X=e_0$ the value is $e_0\wedge\tilde E=\mathbf{0}\times\mathbf{E}=0$, which would again have to equal $e_0$. Hence neither one-sided unit exists.
+*Proof.* Let $\tilde E$ be a left unit. At $\tilde X=e_0$, whose vector part is zero, the value is $\tilde E\wedge e_0=\vec E\times\mathbf{0}=0$, which would have to equal $e_0$; the two differ, since $e_0$ is nonzero. Let $\tilde E$ be a right unit. At $\tilde X=e_0$ the value is $e_0\wedge\tilde E=\mathbf{0}\times\vec E=0$, which would again have to equal $e_0$. Hence neither one-sided unit exists.
 
 The absence is structural: the value of the block is a pure vector for every pair of arguments, and the equations that would name a unit require the central element $e_0$ on the right. The scalar direction is invisible to the operation, and a unit is exactly an element the operation cannot see.
 
@@ -78,12 +78,12 @@ $$
 
 The algebraic norm of the operation is identically zero, and by the convention of the definition the block carries **no algebraic norm**.
 
-*Proof.* The value of the block is the cross product $\mathbf{P}\times\mathbf{Q}$ of the two vector parts, a pure vector of scalar part zero for every pair; its diagonal is therefore the zero function. A vanishing quadratic form is not an algebraic norm, and its vanishing set is the whole space, so the block is counted with no algebraic norm rather than with a zero one.
+*Proof.* The value of the block is the cross product $\vec P\times\vec Q$ of the two vector parts, a pure vector of scalar part zero for every pair; its diagonal is therefore the zero function. A vanishing quadratic form is not an algebraic norm, and its vanishing set is the whole space, so the block is counted with no algebraic norm rather than with a zero one.
 
 **Remark (the two canonical quadratics of the block).** The product being alternating, the square and the conjugated square both vanish identically:
 
 $$
-\tilde X\wedge\tilde X=0,\qquad \tilde X\wedge\tilde X^{\natural}=\mathbf{X}\times(-\mathbf{X})=0 .
+\tilde X\wedge\tilde X=0,\qquad \tilde X\wedge\tilde X^{\natural}=\vec X\times(-\vec X)=0 .
 $$
 
 There is therefore no central-valued quadratic map built from the product, neither $\tilde X\wedge\tilde X$ nor the conjugated square $\tilde X\wedge\tilde X^{\natural}$; the two coincide at the zero map and neither descends to an algebraic norm. The parent product $\tilde P\tilde Q$ removes its scalar part in the block, and with the scalar part removed from a square the central quadratic form is gone.
@@ -92,17 +92,17 @@ There is therefore no central-valued quadratic map built from the product, neith
 
 **The invertibility criterion of the parent product is not read in the block: the block has no unit against which to invert and no algebraic norm to decide anything.**
 
-**Remark (the criterion of the parent is not read here).** The general plain bilinear product $\tilde P\tilde Q$ is associative and unital with unit $e_0$, and its invertibility is decided by the non-vanishing of its algebraic norm $B$, the diagonal of $\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-(\mathbf{P},\mathbf{Q})$ (*Norm and Invertibility in the General Plain Algebra*). That form is a different algebraic norm, it is not the algebraic norm of the block, and it is not read here. The block has no unit against which to invert and no algebraic norm to decide anything: no element is invertible, and the empty group of units is the sharp form of the statement.
+**Remark (the criterion of the parent is not read here).** The general plain bilinear product $\tilde P\tilde Q$ is associative and unital with unit $e_0$, and its invertibility is decided by the non-vanishing of its algebraic norm $B$, the diagonal of $\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-(\vec P,\vec Q)$ (*Norm and Invertibility in the General Plain Algebra*). That form is a different algebraic norm, it is not the algebraic norm of the block, and it is not read here. The block has no unit against which to invert and no algebraic norm to decide anything: no element is invertible, and the empty group of units is the sharp form of the statement.
 
 ## Summary
 
-The antisymmetric plain multiplication $\tilde P\wedge\tilde Q=\mathbf{P}\times\mathbf{Q}$ has no unit on either side, hence no invertible element and an empty group of units, and the inverse equation $\tilde X\wedge\tilde Y=e_0$ has no solution because every value of the block is a pure vector. The **algebraic norm** of the operation is the diagonal of its scalar-part form; the scalar part vanishes identically, the diagonal is the zero function, and by the convention of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* a vanishing quadratic form is not an algebraic norm, so the block carries **no algebraic norm**. Both canonical quadratics built from the product, the square and the conjugated square, vanish identically as well. The algebraic norm $B$ of the parent plain product is a different form of a different product and is not read here; no invertibility criterion is transferred, and the place of both notions is taken by the absence of a unit and of an inverse.
+The antisymmetric plain multiplication $\tilde P\wedge\tilde Q=\vec P\times\vec Q$ has no unit on either side, hence no invertible element and an empty group of units, and the inverse equation $\tilde X\wedge\tilde Y=e_0$ has no solution because every value of the block is a pure vector. The **algebraic norm** of the operation is the diagonal of its scalar-part form; the scalar part vanishes identically, the diagonal is the zero function, and by the convention of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* a vanishing quadratic form is not an algebraic norm, so the block carries **no algebraic norm**. Both canonical quadratics built from the product, the square and the conjugated square, vanish identically as well. The algebraic norm $B$ of the parent plain product is a different form of a different product and is not read here; no invertibility criterion is transferred, and the place of both notions is taken by the absence of a unit and of an inverse.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf{P}\times\mathbf{Q}$ | the antisymmetric plain multiplication, the operation $\mathrm{APA}$ |
+| $\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\vec P\times\vec Q$ | the antisymmetric plain multiplication, the operation $\mathrm{APA}$ |
 | $\tilde P\tilde Q$ | the parent general plain bilinear product, associative and unital |
 | $\mathrm{Sc}(\tilde P\wedge\tilde Q)=0$ | the scalar part of the block vanishes identically |
 | $\varphi_{\wedge}(\tilde Q)=0$ | the algebraic norm of the block, the zero function; the block carries no algebraic norm |

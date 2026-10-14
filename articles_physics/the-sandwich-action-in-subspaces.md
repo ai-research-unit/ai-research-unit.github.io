@@ -10,11 +10,11 @@ $$
 
 reads it as the action of the group of units, and computes its kernel, its invariants and its action on the remarkable subspaces. This article restricts the **acting element** to one of the remarkable subspaces and records what the restriction does to the operator. It is the counterpart of *The Polar Element Representation in Subspaces*, which restricts the same remarkable subspaces in the other direction: there the question is which of the four polar factors a subspace can carry, here it is which operator an element of a subspace produces. The acting element keeps any biquaternion norm: the unit-norm slice, where the sandwich is the Lorentz action of *Biquaternion Rotations and Lorentz Transformations*, is recovered below as the special case in which the operator is an isometry, and off that slice the sandwich of a subspace element is a similarity.
 
-The question is a physical one, and it has a physical answer. The Lorentz transformation of the corpus is written with a rotor, and for a pure boost that rotor lies in the Hermitian subspace $\mathbb{M}_+$, as *The Lorentz Transformation as a Biquaternionic Rotation* records: the boost biquaternion has a real scalar part and a purely imaginary vector part, so it is Hermitian and its sandwich collapses to $\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}$. That rotor has unit norm, and the unit-norm condition is what makes the map an isometry; the general element of the sector acts by a similarity, which the section on the two sectors separates from the isometric case. The rotation lies in $\mathbb{H}_{\mathbb{B}}$, the home of the unit real quaternions; the phase lies in the centre; the four-vectors lie in $\mathbb{M}_-$. Each subspace therefore asks a separate question — what kind of transformation does an element of *this* subspace produce? — and the six questions are answered below and turn out to be four.
+The question is a physical one, and it has a physical answer. The Lorentz transformation of the corpus is written with a rotor, and for a pure boost that rotor lies in the Hermitian subspace $\mathbb{M}_+$, as *The Lorentz Transformation as a Biquaternionic Rotation* records: the boost biquaternion has a real scalar part and a purely imaginary vector part, so it is Hermitian and its sandwich collapses to $\tilde{U}\tilde{Q}\tilde{U}$. That rotor has unit norm, and the unit-norm condition is what makes the map an isometry; the general element of the sector acts by a similarity, which the section on the two sectors separates from the isometric case. The rotation lies in $\mathbb{H}_{\mathbb{B}}$, the home of the unit real quaternions; the phase lies in the centre; the four-vectors lie in $\mathbb{M}_-$. Each subspace therefore asks a separate question — what kind of transformation does an element of *this* subspace produce? — and the six questions are answered below and turn out to be four.
 
 Three results organise the answer. The first is a **central invariance**: multiplying the acting element by a central scalar multiplies the sandwich by the squared modulus of that scalar. Because the scalar imaginary $i$ is central, the remarkable subspaces collapse to four **operator classes**: the centre, the vector subspace, the two halves together, and the two sectors together; an antiquaternion acts exactly as its real quaternion, and an element of the material sector acts exactly as the corresponding informational element. The second is that the operator's **type** is decided by the subspace in a sharp way: the centre gives the dilations, the vector subspace gives the similarities, the rotations by $\pi$ among them, the two halves give the rotations, and the two sectors give the similarities, which on the unit-norm slice are the Lorentz transformations: the boosts, and the boosts composed with a rotation by $\pi$ on the negative-norm branch. The third is the answer to the question the series puts to the Hermitian subspace: **the Lorentz transformation of the corpus is the sandwich of a unit-norm element of $\mathbb{M}_+$**, so the informational sector is the home of the boosts, and the material sector reaches the same family through the central imaginary.
 
-The conventions are those of *Conventions in the Biquaternion Universe*, and the notation is that of *Biquaternion Rotations and Lorentz Transformations*: $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2 = \det\mathsf{M}_2(\tilde{Q})$; $\operatorname{H}_{\tilde{Q}}(\tilde S) = \tilde{Q}\tilde S\tilde{Q}^{*}$ is the sandwich, which is the map the series calls rotor conjugation when $\tilde{Q}$ has unit norm; a **rotor** is an element of unit norm, so that $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$ and $\tilde{\Lambda}^{*} = \overline{\tilde{\Lambda}^{\natural}}$; $\hat{q}$ is a unit real quaternion; and the remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and antiquaternion subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and the informational and material sectors $\mathbb{M}_+$ and $\mathbb{M}_-$.
+The conventions are those of *Conventions in the Biquaternion Universe*, and the notation is that of *Biquaternion Rotations and Lorentz Transformations*: $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2 = \det\mathsf{M}_2(\tilde{Q})$; $\operatorname{H}_{\tilde{Q}}(\tilde S) = \tilde{Q}\tilde S\tilde{Q}^{*}$ is the sandwich, which is the map the series calls rotor conjugation when $\tilde{Q}$ has unit norm; a **rotor** is an element of unit norm, so that $\tilde{U}\tilde{U}^{\natural} = e_0$ and $\tilde{U}^{*} = \overline{\tilde{U}^{\natural}}$; $\hat{q}$ is a unit real quaternion; and the remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and antiquaternion subspaces $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, and the informational and material sectors $\mathbb{M}_+$ and $\mathbb{M}_-$.
 
 ## The Central Factor Leaves the Operator Alone
 
@@ -93,35 +93,35 @@ The result is the operator form of a fact about the polar representation: the tw
 
 ### A Vector Has a Central Square
 
-An element of the vector subspace is $\tilde{Q} = \mathbf{v} = v_1e_1 + v_2e_2 + v_3e_3$ with complex coefficients; equivalently $\operatorname{Sc}\tilde{Q} = 0$. Writing a general element as $\tilde{Q} = ae_0 + \mathbf{v}$ with $a$ complex, its square is
+An element of the vector subspace is $\tilde{Q} = \vec v = v_1e_1 + v_2e_2 + v_3e_3$ with complex coefficients; equivalently $\operatorname{Sc}\tilde{Q} = 0$. Writing a general element as $\tilde{Q} = ae_0 + \vec v$ with $a$ complex, its square is
 
 $$
-\tilde{Q}^2 = \left(a^2 - \mathbf{v}\cdot\mathbf{v}\right)e_0 + 2a\mathbf{v} ,
+\tilde{Q}^2 = \left(a^2 - \vec v\cdot\vec v\right)e_0 + 2a\vec v ,
 $$
 
-where $\mathbf{v}\cdot\mathbf{v} = v_1^2+v_2^2+v_3^2 = N(\mathbf{v})$ is the biquaternion norm of the vector part. The square is central exactly when the vector part of the square vanishes, that is when $a\mathbf{v} = 0$.
+where $\vec v\cdot\vec v = v_1^2+v_2^2+v_3^2 = N(\vec v)$ is the biquaternion norm of the vector part. The square is central exactly when the vector part of the square vanishes, that is when $a\vec v = 0$.
 
 **Proposition.** $\tilde{Q}^2$ is central if and only if $\tilde{Q}$ lies in the centre or in the vector subspace.
 
-*Proof.* If $a = 0$ or $\mathbf{v} = 0$ the displayed square is central. Conversely if $2a\mathbf{v} = 0$ with $\tilde{Q}$ not central, then $\mathbf{v}\neq 0$ and $a = 0$.
+*Proof.* If $a = 0$ or $\vec v = 0$ the displayed square is central. Conversely if $2a\vec v = 0$ with $\tilde{Q}$ not central, then $\vec v\neq 0$ and $a = 0$.
 
-For an element of the vector subspace the square is therefore central and computable in closed form: the products $e_je_k$ with $j\neq k$ cancel in pairs because they anticommute, so $\mathbf{v}^2 = -N(\mathbf{v})e_0$ and
+For an element of the vector subspace the square is therefore central and computable in closed form: the products $e_je_k$ with $j\neq k$ cancel in pairs because they anticommute, so $\vec v^2 = -N(\vec v)e_0$ and
 
 $$
-\mathbf{v}^2 = -N(\mathbf{v})\,e_0 .
+\vec v^2 = -N(\vec v)\,e_0 .
 $$
 
 ### A Real Vector Acts as the Rotation by $\pi$ About Itself
 
-Let $\hat{\mathbf{u}}$ be a real unit vector, so that $\hat{\mathbf{u}}^2 = -e_0$, $N(\hat{\mathbf{u}}) = 1$, and $\hat{\mathbf{u}}^{*} = -\hat{\mathbf{u}}$. The sandwich of a real unit vector is therefore a sandwich with a sign,
+Let $\hat u$ be a real unit vector, so that $\hat u^2 = -e_0$, $N(\hat u) = 1$, and $\hat u^{*} = -\hat u$. The sandwich of a real unit vector is therefore a sandwich with a sign,
 
 $$
-\operatorname{H}_{\hat{\mathbf{u}}}(\tilde S) = \hat{\mathbf{u}}\,\tilde S\,\hat{\mathbf{u}}^{*} = -\hat{\mathbf{u}}\,\tilde S\,\hat{\mathbf{u}} ,
+\operatorname{H}_{\hat u}(\tilde S) = \hat u\,\tilde S\,\hat u^{*} = -\hat u\,\tilde S\,\hat u ,
 $$
 
-and the map is the rotation by $\pi$ about $\hat{\mathbf{u}}$: it fixes $e_0$ and $\hat{\mathbf{u}}$, negates the two-dimensional plane orthogonal to $\hat{\mathbf{u}}$, and because $i$ is central it does the same on the imaginary vector part. In particular it preserves each of the remarkable subspaces, and it is an element of the rotation group $SO(3)$ of order two.
+and the map is the rotation by $\pi$ about $\hat u$: it fixes $e_0$ and $\hat u$, negates the two-dimensional plane orthogonal to $\hat u$, and because $i$ is central it does the same on the imaginary vector part. In particular it preserves each of the remarkable subspaces, and it is an element of the rotation group $SO(3)$ of order two.
 
-**Example.** For $\hat{\mathbf{u}} = e_1$ the operator acts on the basis by
+**Example.** For $\hat u = e_1$ the operator acts on the basis by
 
 | $\tilde S$ | $e_0$ | $e_1$ | $e_2$ | $e_3$ | $ie_0$ | $ie_1$ | $ie_2$ | $ie_3$ |
 |---|---|---|---|---|---|---|---|---|
@@ -131,39 +131,39 @@ which is the rotation through $\pi$ about $e_1$, as the polar article's interpre
 
 ### The Sandwich of a Vector Is a Similarity
 
-The sandwich of a vector scales the interval. For $\tilde{Q} = \mathbf{v}$ the biquaternion-norm relation gives
+The sandwich of a vector scales the interval. For $\tilde{Q} = \vec v$ the biquaternion-norm relation gives
 
 $$
-N\!\left(\operatorname{H}_{\mathbf{v}}(\tilde S)\right) = |N(\mathbf{v})|^2N(\tilde S) ,
+N\!\left(\operatorname{H}_{\vec v}(\tilde S)\right) = |N(\vec v)|^2N(\tilde S) ,
 $$
 
-so a vector preserves the causal type of every element and rescales the interval by one positive factor; on the unit-norm vectors the factor is one and the map is an isometry. The Hermitian element that measures the scaling is $\mathbf{v}\mathbf{v}^{*}$, computable from the cross product of the coefficient vector and its conjugate,
+so a vector preserves the causal type of every element and rescales the interval by one positive factor; on the unit-norm vectors the factor is one and the map is an isometry. The Hermitian element that measures the scaling is $\vec v\vec v^{*}$, computable from the cross product of the coefficient vector and its conjugate,
 
 $$
-\mathbf{v}\,\mathbf{v}^{*} = |\mathbf{v}|^2e_0 - \mathbf{v}\times\mathbf{v}^{*} , \qquad |\mathbf{v}|^2 = |v_1|^2+|v_2|^2+|v_3|^2 ,
+\vec v\,\vec v^{*} = |\vec v|^2e_0 - \vec v\times\vec v^{*} , \qquad |\vec v|^2 = |v_1|^2+|v_2|^2+|v_3|^2 ,
 $$
 
-where $|\mathbf{v}|^2$ is the Euclidean norm squared and $\mathbf{v}\times\mathbf{v}^{*}$ is the cross product of the coefficient triple with its complex conjugate. That cross product is purely imaginary in each coordinate, so $\mathbf{v}\mathbf{v}^{*}$ is an element of the informational sector; it is central exactly when the three coefficients share a common complex factor, $\mathbf{v} = c\,\mathbf{w}$ with $c\in\mathbb{C}$ and $\mathbf{w}$ real, and then the operator of the complex vector is the operator of the real direction multiplied by the biquaternion norm,
+where $|\vec v|^2$ is the Euclidean norm squared and $\vec v\times\vec v^{*}$ is the cross product of the coefficient triple with its complex conjugate. That cross product is purely imaginary in each coordinate, so $\vec v\vec v^{*}$ is an element of the informational sector; it is central exactly when the three coefficients share a common complex factor, $\vec v = c\,\vec w$ with $c\in\mathbb{C}$ and $\vec w$ real, and then the operator of the complex vector is the operator of the real direction multiplied by the biquaternion norm,
 
 $$
-\operatorname{H}_{\mathbf{v}} = |\mathbf{v}|^2\operatorname{H}_{\hat{\mathbf{w}}} , \qquad \hat{\mathbf{w}} = \mathbf{w}/|\mathbf{w}| .
+\operatorname{H}_{\vec v} = |\vec v|^2\operatorname{H}_{\hat w} , \qquad \hat w = \vec w/|\vec w| .
 $$
 
 ### The Unit-Norm Vectors Are Rotors of a Mixed Type
 
-A vector of unit norm, $N(\mathbf{v}) = 1$, is an element of the Lorentz group, so its sandwich, read on the material sector, lies in $O(1,3)$: it preserves the two sectors and scales the biquaternion norm by $|N|^2 = 1$, and the family of unit-norm vectors is connected and contains the real unit vectors, whose operators are the rotations by $\pi$, so the induced map on the material sector lies in the identity component $SO^+(1,3)$. It is not in general a pure boost: a complex vector acts as a boost composed with the rotation by $\pi$ about its own direction, a composition that the section on the sectors returns to. The computation is instructive:
+A vector of unit norm, $N(\vec v) = 1$, is an element of the Lorentz group, so its sandwich, read on the material sector, lies in $O(1,3)$: it preserves the two sectors and scales the biquaternion norm by $|N|^2 = 1$, and the family of unit-norm vectors is connected and contains the real unit vectors, whose operators are the rotations by $\pi$, so the induced map on the material sector lies in the identity component $SO^+(1,3)$. It is not in general a pure boost: a complex vector acts as a boost composed with the rotation by $\pi$ about its own direction, a composition that the section on the sectors returns to. The computation is instructive:
 
-**Example.** Take $\mathbf{v} = a\,e_1 + b\,e_2$ with $a = 0.6 + 0.5i$ and $b = \sqrt{1-a^2} = 0.99079746 - 0.30278640\,i$, so that $N(\mathbf{v}) = 1$. Then
+**Example.** Take $\vec v = a\,e_1 + b\,e_2$ with $a = 0.6 + 0.5i$ and $b = \sqrt{1-a^2} = 0.99079746 - 0.30278640\,i$, so that $N(\vec v) = 1$. Then
 
 $$
-\operatorname{H}_{\mathbf{v}}(ie_0) = 1.683359\,ie_0 + 1.354141\,e_3 , \qquad \operatorname{H}_{\mathbf{v}}(e_1) = -0.463359\,e_1 + 0.886171\,e_2 .
+\operatorname{H}_{\vec v}(ie_0) = 1.683359\,ie_0 + 1.354141\,e_3 , \qquad \operatorname{H}_{\vec v}(e_1) = -0.463359\,e_1 + 0.886171\,e_2 .
 $$
 
 The time axis stays in the cone, the transverse plane stays in the material sector, and the biquaternion norm is the unit one: the operator is a Lorentz transformation, with a boost part of rapidity $\operatorname{arcosh}1.683359 = 1.111035$ and a rotation part. The element is a rotor of unit norm, and its operator is not a pure boost.
 
 ### The Imaginary Vectors Give the Same Operators
 
-For $\mathbf{v}$ in the vector subspace the element $i\mathbf{v}$ is again in the vector subspace, and by the central rule the two elements have the same operator. The traceless Hermitian elements $i\mathbf{w}$ with $\mathbf{w}$ a real vector, which are the vector-subspace part of the informational sector, therefore act exactly as the real vectors $\mathbf{w}$, and in particular a unit imaginary vector $i\hat{\mathbf{u}}$ acts as the rotation by $\pi$ about $\hat{\mathbf{u}}$ even though its element is Hermitian. This is the first appearance of a phenomenon that the two sectors will show again: the sector label of an element does not fix the type of its operator.
+For $\vec v$ in the vector subspace the element $i\vec v$ is again in the vector subspace, and by the central rule the two elements have the same operator. The traceless Hermitian elements $i\vec w$ with $\vec w$ a real vector, which are the vector-subspace part of the informational sector, therefore act exactly as the real vectors $\vec w$, and in particular a unit imaginary vector $i\hat u$ acts as the rotation by $\pi$ about $\hat u$ even though its element is Hermitian. This is the first appearance of a phenomenon that the two sectors will show again: the sector label of an element does not fix the type of its operator.
 
 ## The Two Halves: the Rotations
 
@@ -175,13 +175,13 @@ $$
 \operatorname{H}_{\tilde{R}}(\tilde S) = \tilde{R}\,\tilde S\,\tilde{R}^{\natural} = |\tilde{R}|^2\,\operatorname{H}_{\hat{R}}(\tilde S) , \qquad \hat{R} = \tilde{R}/|\tilde{R}| .
 $$
 
-A real quaternion therefore acts as the dilation by its squared modulus composed with the rotation of the unit quaternion of the same direction, and on the unit-norm slice it is the familiar rotation. Writing $\tilde{R} = |\tilde{R}|(\cos\theta + \sin\theta\,\hat{\mathbf{u}})$ with $\hat{\mathbf{u}}$ a real unit vector,
+A real quaternion therefore acts as the dilation by its squared modulus composed with the rotation of the unit quaternion of the same direction, and on the unit-norm slice it is the familiar rotation. Writing $\tilde{R} = |\tilde{R}|(\cos\theta + \sin\theta\,\hat u)$ with $\hat u$ a real unit vector,
 
 $$
-\operatorname{H}_{\tilde{R}}(\mathbf{v}) = |\tilde{R}|^2\Bigl(\mathbf{v}\cos2\theta + (\hat{\mathbf{u}}\times\mathbf{v})\sin2\theta + \hat{\mathbf{u}}\,(\hat{\mathbf{u}}\cdot\mathbf{v})(1-\cos2\theta)\Bigr) ,
+\operatorname{H}_{\tilde{R}}(\vec v) = |\tilde{R}|^2\Bigl(\vec v\cos2\theta + (\hat u\times\vec v)\sin2\theta + \hat u\,(\hat u\cdot\vec v)(1-\cos2\theta)\Bigr) ,
 $$
 
-which is the rotation of the real vector part through $2\theta$ about $\hat{\mathbf{u}}$, scaled by $|\tilde{R}|^2$. The operator preserves all remarkable subspaces, and the kernel on the unit-norm slice is $\{\pm e_0\}$, so the map
+which is the rotation of the real vector part through $2\theta$ about $\hat u$, scaled by $|\tilde{R}|^2$. The operator preserves all remarkable subspaces, and the kernel on the unit-norm slice is $\{\pm e_0\}$, so the map
 
 $$
 \mathrm{Sp}(1)\longrightarrow SO(3) , \qquad \hat{q}\longmapsto\operatorname{H}_{\hat{q}} ,
@@ -212,13 +212,13 @@ The two sectors are the fixed spaces of the dagger, so the sandwich of an elemen
 Let $\tilde{Q}$ be a Hermitian element of unit norm, $\tilde{Q} = \tilde{Q}^{*}$, $N(\tilde{Q}) = 1$. Its matrix image is Hermitian of determinant one, so its eigenvalues are $\lambda$ and $\lambda^{-1}$ with $\lambda$ real and nonzero; when both are positive the element is the boost rotor
 
 $$
-\tilde{\Lambda} = \cosh\frac{\psi}{2}\,e_0 + i\sinh\frac{\psi}{2}\,\hat{\mathbf{u}} , \qquad \tanh\psi = \frac{u}{c} ,
+\tilde{U} = \cosh\frac{\psi}{2}\,e_0 + i\sinh\frac{\psi}{2}\,\hat u , \qquad \tanh\psi = \frac{u}{c} ,
 $$
 
-and when both are negative it is $-\tilde{\Lambda}$ with the same operator. Since $\tilde{\Lambda}$ is Hermitian, its sandwich has the element on both sides of the argument,
+and when both are negative it is $-\tilde{U}$ with the same operator. Since $\tilde{U}$ is Hermitian, its sandwich has the element on both sides of the argument,
 
 $$
-\operatorname{H}_{\tilde{\Lambda}}(\tilde{Q}) = \tilde{\Lambda}\,\tilde{Q}\,\tilde{\Lambda} ,
+\operatorname{H}_{\tilde{U}}(\tilde{Q}) = \tilde{U}\,\tilde{Q}\,\tilde{U} ,
 $$
 
 which is the form in which *The Lorentz Transformation as a Biquaternionic Rotation* writes the boost. This is the sharpest answer to the question the article started from: **the Lorentz transformation of the corpus is the sandwich of a unit-norm element of the informational sector**, with no rotation part, and the element is Hermitian, so no inverse appears in it. The unit-norm condition is what makes the similarity an isometry and the boost a Lorentz transformation. Its action on a four-position is the boost relation, and the kernel on the class is the two central signs, so the boost family is three-dimensional — the hyperbolic three-space of the rapidity vector — and the map from the class to the boosts is two to one.
@@ -226,13 +226,13 @@ which is the form in which *The Lorentz Transformation as a Biquaternionic Rotat
 **Example.** Take $\beta = 0.6$ along $e_3$, that is $\psi = \operatorname{artanh}0.6$, with
 
 $$
-\tilde{\Lambda} = 1.060660172\,e_0 + 0.353553391\,i\,e_3 , \qquad N(\tilde{\Lambda}) = \cosh^2\frac{\psi}{2}-\sinh^2\frac{\psi}{2} = 1 ,
+\tilde{U} = 1.060660172\,e_0 + 0.353553391\,i\,e_3 , \qquad N(\tilde{U}) = \cosh^2\frac{\psi}{2}-\sinh^2\frac{\psi}{2} = 1 ,
 $$
 
 and the four-position $\tilde{Q} = icte_0 + 0.6ct\,e_3$ of a world line of velocity $0.6c$, at $ct = 1$. Then
 
 $$
-\operatorname{H}_{\tilde{\Lambda}}(\tilde{Q}) = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda} = 0.8\,ie_0 ,
+\operatorname{H}_{\tilde{U}}(\tilde{Q}) = \tilde{U}\tilde{Q}\tilde{U} = 0.8\,ie_0 ,
 $$
 
 the four-position in the rest frame, with $ct' = 0.8 = \sqrt{1-0.6^2}$ and $z' = 0$. The boost formula of the corpus, $ct' = ct\cosh\psi - z\sinh\psi$ and $z' = z\cosh\psi - ct\sinh\psi$, is the same computation in components, and the element of the informational sector is the operator that performs it.
@@ -242,41 +242,41 @@ the four-position in the rest frame, with $ct' = 0.8 = \sqrt{1-0.6^2}$ and $z' =
 The unit-modulus Hermitian elements with $N(\tilde{Q}) = -1$ do not have both eigenvalues positive, and they are not boost rotors; they are nevertheless Lorentz operators, and their structure is worth one computation. Write
 
 $$
-\tilde{Q} = \sinh\varphi\,e_0 + i\cosh\varphi\,\hat{\mathbf{u}} , \qquad N(\tilde{Q}) = \sinh^2\varphi - \cosh^2\varphi = -1 ,
+\tilde{Q} = \sinh\varphi\,e_0 + i\cosh\varphi\,\hat u , \qquad N(\tilde{Q}) = \sinh^2\varphi - \cosh^2\varphi = -1 ,
 $$
 
-with $\hat{\mathbf{u}}$ a real unit vector. Then the product of $\tilde{Q}$ with the boost rotor $\tilde{\Lambda} = \cosh\varphi\,e_0 + i\sinh\varphi\,\hat{\mathbf{u}}$ and with the unit real vector $\hat{\mathbf{u}}$ is
+with $\hat u$ a real unit vector. Then the product of $\tilde{Q}$ with the boost rotor $\tilde{U} = \cosh\varphi\,e_0 + i\sinh\varphi\,\hat u$ and with the unit real vector $\hat u$ is
 
 $$
-\tilde{\Lambda}\,\hat{\mathbf{u}} = \cosh\varphi\,\hat{\mathbf{u}} + i\sinh\varphi\,\hat{\mathbf{u}}^2 = \cosh\varphi\,\hat{\mathbf{u}} - i\sinh\varphi\,e_0 = -i\tilde{Q} ,
-\qquad \tilde{Q} = i\,\tilde{\Lambda}\,\hat{\mathbf{u}} ,
+\tilde{U}\,\hat u = \cosh\varphi\,\hat u + i\sinh\varphi\,\hat u^2 = \cosh\varphi\,\hat u - i\sinh\varphi\,e_0 = -i\tilde{Q} ,
+\qquad \tilde{Q} = i\,\tilde{U}\,\hat u ,
 $$
 
 so by the central rule and the composition lemma
 
 $$
-\operatorname{H}_{\tilde{Q}} = \operatorname{H}_{\tilde{\Lambda}\hat{\mathbf{u}}} = \operatorname{H}_{\tilde{\Lambda}}\circ\operatorname{H}_{\hat{\mathbf{u}}} ,
+\operatorname{H}_{\tilde{Q}} = \operatorname{H}_{\tilde{U}\hat u} = \operatorname{H}_{\tilde{U}}\circ\operatorname{H}_{\hat u} ,
 $$
 
-a boost composed with the rotation by $\pi$ about $\hat{\mathbf{u}}$. At $\varphi = 0$ the element is the traceless $i\hat{\mathbf{u}}$ of the vector subspace and the boost factor is the identity, so the family is connected to the rotations by $\pi$; at every $\varphi$ the operator is orthochronous and proper, and the sign of the biquaternion norm decides whether the rotation by $\pi$ is present.
+a boost composed with the rotation by $\pi$ about $\hat u$. At $\varphi = 0$ the element is the traceless $i\hat u$ of the vector subspace and the boost factor is the identity, so the family is connected to the rotations by $\pi$; at every $\varphi$ the operator is orthochronous and proper, and the sign of the biquaternion norm decides whether the rotation by $\pi$ is present.
 
-**Example.** For $\tilde{Q} = \sqrt{3}\,e_0 + 2i\,e_3$, which is Hermitian with $N(\tilde{Q}) = 3-4 = -1$, the same data are $\hat{\mathbf{u}} = e_3$, $\cosh\varphi = 2$, $\sinh\varphi = \sqrt3$, the boost rotor $\tilde{\Lambda} = 2e_0 + i\sqrt3\,e_3$ of rapidity $\operatorname{arcosh}7 = 2.633915794$, and
+**Example.** For $\tilde{Q} = \sqrt{3}\,e_0 + 2i\,e_3$, which is Hermitian with $N(\tilde{Q}) = 3-4 = -1$, the same data are $\hat u = e_3$, $\cosh\varphi = 2$, $\sinh\varphi = \sqrt3$, the boost rotor $\tilde{U} = 2e_0 + i\sqrt3\,e_3$ of rapidity $\operatorname{arcosh}7 = 2.633915794$, and
 
 $$
-\operatorname{H}_{\tilde{Q}}(ie_0) = 7\,ie_0 - 4\sqrt3\,e_3 = 7\,ie_0 - 6.928203\,e_3 , \qquad \tilde{\Lambda}e_3 = -i\tilde{Q} ,
+\operatorname{H}_{\tilde{Q}}(ie_0) = 7\,ie_0 - 4\sqrt3\,e_3 = 7\,ie_0 - 6.928203\,e_3 , \qquad \tilde{U}e_3 = -i\tilde{Q} ,
 $$
 
-so that $\operatorname{H}_{\tilde{Q}} = \operatorname{H}_{\tilde{\Lambda}}\circ\operatorname{H}_{e_3}$: the transverse plane is negated and the time axis is carried to the four-velocity of rapidity $\operatorname{arcosh}7$. The example is the exact statement that a Hermitian element of negative biquaternion norm acts as a Lorentz operator with a rotation part, not as a boost.
+so that $\operatorname{H}_{\tilde{Q}} = \operatorname{H}_{\tilde{U}}\circ\operatorname{H}_{e_3}$: the transverse plane is negated and the time axis is carried to the four-velocity of rapidity $\operatorname{arcosh}7$. The example is the exact statement that a Hermitian element of negative biquaternion norm acts as a Lorentz operator with a rotation part, not as a boost.
 
 ### The Material Sector Gives the Same Operators
 
-Let $\tilde{Q}$ be an element of the material sector, $\tilde{Q}^{*} = -\tilde{Q}$, so that $\tilde{Q} = ict\,e_0 + \mathbf{x}$. By the central rule with $z = i$,
+Let $\tilde{Q}$ be an element of the material sector, $\tilde{Q}^{*} = -\tilde{Q}$, so that $\tilde{Q} = ict\,e_0 + \vec x$. By the central rule with $z = i$,
 
 $$
 \operatorname{H}_{\tilde{Q}} = \operatorname{H}_{i\tilde{Q}} , \qquad i\tilde{Q}\in\mathbb{M}_+ ,
 $$
 
-so the sandwich of a four-vector is the sandwich of the informational element $i\tilde{Q}$, and the material sector adds no operator family: the boosts, the rotations by $\pi$, and their compositions are already all present in the informational sector. The interpretation is the one the corpus uses everywhere: the same Lorentz transformation can be written with a Hermitian form, which is the informational interpretation, and with a four-vector, which is the material interpretation; the traceless Hermitian elements $i\hat{\mathbf{u}}$ correspond exactly to the unit spacelike four-vectors $-\hat{\mathbf{u}}$ and act as the rotations by $\pi$.
+so the sandwich of a four-vector is the sandwich of the informational element $i\tilde{Q}$, and the material sector adds no operator family: the boosts, the rotations by $\pi$, and their compositions are already all present in the informational sector. The interpretation is the one the corpus uses everywhere: the same Lorentz transformation can be written with a Hermitian form, which is the informational interpretation, and with a four-vector, which is the material interpretation; the traceless Hermitian elements $i\hat u$ correspond exactly to the unit spacelike four-vectors $-\hat u$ and act as the rotations by $\pi$.
 
 **Example.** The element of the previous example, $\tilde{Q} = \sqrt3\,e_0 + 2i\,e_3$, has $i\tilde{Q} = \sqrt3\,ie_0 - 2e_3$, a four-vector of biquaternion norm $N = -3+4 = 1$, that is, a unit spacelike four-vector; and $\operatorname{H}_{i\tilde{Q}}(ie_0) = 7ie_0 - 4\sqrt3e_3$ with the same right-hand side, so the two interpretations agree element by element, as the central rule requires.
 
@@ -287,11 +287,11 @@ The remarkable subspaces, the operator each produces, and the subspace's own int
 | subspace | acting element | the sandwich | kernel inside the class | the subspace's role |
 |---|---|---|---|---|
 | $\mathbb{C}_{\mathbb{B}}$ | $ze_0$ | dilation by $|z|^2$ | $U(1)e_0$ | the scale and the phase |
-| $\mathrm{Vect}(\mathbb{B})$ | $\mathbf{v}$, $\mathbf{v}^2 = -N(\mathbf{v})e_0$ | a similarity of the interval; the rotation by $\pi$ for a real unit $\mathbf{v}$ | none | the free phase of the polar form |
+| $\mathrm{Vect}(\mathbb{B})$ | $\vec v$, $\vec v^2 = -N(\vec v)e_0$ | a similarity of the interval; the rotation by $\pi$ for a real unit $\vec v$ | none | the free phase of the polar form |
 | $\mathbb{H}_{\mathbb{B}}$ | $\tilde{R}$ real | $|\tilde{R}|^2$ times the rotation through $2\theta$ | $\mathbb{R}^\times e_0$ | the rotor |
 | $i\mathbb{H}_{\mathbb{B}}$ | $i\tilde{R}$ | the same rotation | $i\mathbb{R}^\times e_0$ | the same rotor, phase frozen |
 | $\mathbb{M}_+$ | Hermitian $\tilde{Q}$ | the boost for $N = 1$ positive definite; boost times rotation by $\pi$ for $N = -1$ | $\mathbb{R}^\times e_0$ | the Lorentz transformation |
-| $\mathbb{M}_-$ | $\tilde{Q} = ict\,e_0+\mathbf{x}$ | the same family as $\mathbb{M}_+$, through $i\tilde{Q}$ | $i\mathbb{R}^\times e_0$ | the four-vectors |
+| $\mathbb{M}_-$ | $\tilde{Q} = ict\,e_0+\vec x$ | the same family as $\mathbb{M}_+$, through $i\tilde{Q}$ | $i\mathbb{R}^\times e_0$ | the four-vectors |
 
 ## Comparison with the Polar Representation in Subspaces
 
@@ -299,10 +299,10 @@ The two articles restrict the same remarkable subspaces, and the comparison is a
 
 The comparison also explains an asymmetry of this article. The polar representation loses factors when the element is restricted, and the loss is one-sided: a subspace is unable to carry a factor. The operator interpretation loses **operators** when the acting element is restricted, and the loss goes the other way: the remarkable subspaces produce only four operator classes, and inside a class they produce the same operator element by element. The two directions of restriction are the two halves of the same statement about the algebra, and the central circle, which is the kernel of the operator, is what makes them differ.
 
-**The operator factorises through the boost and the rotor, and doubles their parameters.** With the polar word $\tilde{Q} = re^{i\alpha}B\hat{q}$ and $\tilde{\Lambda} = B\hat{q}$ of unit norm,
+**The operator factorises through the boost and the rotor, and doubles their parameters.** With the polar word $\tilde{Q} = re^{i\alpha}B\hat{q}$ and $\tilde{U} = B\hat{q}$ of unit norm,
 
 $$
-\operatorname{H}_{\tilde{Q}} = r^{2}\,\operatorname{H}_{\tilde{\Lambda}},
+\operatorname{H}_{\tilde{Q}} = r^{2}\,\operatorname{H}_{\tilde{U}},
 $$
 
 because the Hermitian conjugates of the four factors are $\hat{q}^{*} = \hat{q}^{-1}$, $B^{*} = B$, $r^{*} = r$ and $(e^{i\alpha})^{*} = e^{-i\alpha}$, so the two central factors cancel against their inverses. A non-central factor occurs once on each side, so its parameter is deposited twice: the rotor of angle $\theta$ acts by the doubled angle, and the boost of rapidity $\psi$ acts by the doubled rapidity, as the diagonal case $\mathsf{M}_2(B) = \operatorname{diag}(e^{\psi/2},e^{-\psi/2})$ shows explicitly, the operator storing the half-rapidity and producing the rapidity. The four factors and their range are *The Polar Element Representation of Biquaternions* and *The Polar Element Representation in Subspaces*.
@@ -315,11 +315,11 @@ $\tilde{Q} = (3+2i)e_0$: $\operatorname{H}_{\tilde{Q}}(\tilde S) = 13\tilde S$, 
 
 ### A Real Unit Vector
 
-$\hat{\mathbf{u}} = e_1$: the sandwich acts as the rotation by $\pi$ about $e_1$, with $e_2\mapsto-e_2$, $e_3\mapsto-e_3$, $ie_2\mapsto-ie_2$, $ie_3\mapsto-ie_3$, and $e_0$, $e_1$, $ie_0$, $ie_1$ fixed. The operator is an involution and preserves all remarkable subspaces.
+$\hat u = e_1$: the sandwich acts as the rotation by $\pi$ about $e_1$, with $e_2\mapsto-e_2$, $e_3\mapsto-e_3$, $ie_2\mapsto-ie_2$, $ie_3\mapsto-ie_3$, and $e_0$, $e_1$, $ie_0$, $ie_1$ fixed. The operator is an involution and preserves all remarkable subspaces.
 
 ### An Imaginary Unit Vector
 
-$i\hat{\mathbf{u}} = ie_1$: the same operator as $e_1$, by the central rule, so a Hermitian element of the informational sector acts as a rotation by $\pi$; the sector label does not fix the type of the operator.
+$i\hat u = ie_1$: the same operator as $e_1$, by the central rule, so a Hermitian element of the informational sector acts as a rotation by $\pi$; the sector label does not fix the type of the operator.
 
 ### A Unit Quaternion
 
@@ -331,11 +331,11 @@ $\tilde{R} = 2e_0$: the element is central, so $\operatorname{H}_{\tilde{R}} = 4
 
 ### A Boost Rotor
 
-$\beta = 0.6$, $\tilde{\Lambda} = 1.060660172e_0 + 0.353553391ie_3$: $\operatorname{H}_{\tilde{\Lambda}}(ie_0+0.6e_3) = 0.8ie_0$, the rest-frame four-position, and the time axis of the moving world line is carried to the rest frame.
+$\beta = 0.6$, $\tilde{U} = 1.060660172e_0 + 0.353553391ie_3$: $\operatorname{H}_{\tilde{U}}(ie_0+0.6e_3) = 0.8ie_0$, the rest-frame four-position, and the time axis of the moving world line is carried to the rest frame.
 
 ### A Hermitian Element of Negative Biquaternion Norm
 
-$\tilde{Q} = \sqrt3e_0+2ie_3$: $\operatorname{H}_{\tilde{Q}}(ie_0) = 7ie_0 - 4\sqrt3e_3$, and $\operatorname{H}_{\tilde{Q}} = \operatorname{H}_{\tilde{\Lambda}}\circ\operatorname{H}_{e_3}$ with $\tilde{\Lambda} = 2e_0+i\sqrt3e_3$ of rapidity $\operatorname{arcosh}7 = 2.633915794$; the operator is a boost with a rotation by $\pi$, not a pure boost.
+$\tilde{Q} = \sqrt3e_0+2ie_3$: $\operatorname{H}_{\tilde{Q}}(ie_0) = 7ie_0 - 4\sqrt3e_3$, and $\operatorname{H}_{\tilde{Q}} = \operatorname{H}_{\tilde{U}}\circ\operatorname{H}_{e_3}$ with $\tilde{U} = 2e_0+i\sqrt3e_3$ of rapidity $\operatorname{arcosh}7 = 2.633915794$; the operator is a boost with a rotation by $\pi$, not a pure boost.
 
 ### A Unit Spacelike Four-Vector
 
@@ -349,7 +349,7 @@ The sandwich reads as an isometry of the form of each subspace, and the article'
 
 The sandwich, restricted to the remarkable subspaces, produces four operator classes, because a central factor multiplies the sandwich by the squared modulus of its scalar: the scalar imaginary identifies the two halves and the two sectors, so an antiquaternion acts as its real quaternion and a four-vector acts as the informational element $i$ times it.
 
-The **centre** contributes only the dilations by the squared modulus of the biquaternion norm. The **vector subspace** contributes the similarities of the interval: an element of the vector subspace has a central square, $\mathbf{v}^2 = -N(\mathbf{v})e_0$, and the sandwich preserves the causal type of every element while rescaling the interval by $|N(\mathbf{v})|^2$; a real unit vector acts as the rotation by $\pi$ about itself and preserves all remarkable subspaces, a general unit-norm vector acts on the four-vectors as a boost composed with that rotation, and the Hermitian factor of the scaling is $\mathbf{v}\mathbf{v}^{*} = |\mathbf{v}|^2e_0 - \mathbf{v}\times\mathbf{v}^{*}$. The **two halves** contribute the rotations: a real quaternion acts as $|\tilde{R}|^2$ times the rotation through twice its half-angle, the two equal on the unit-norm slice, with kernel $\{\pm e_0\}$ and the two-fold cover of $SO(3)$, and the two halves give the same operators. The **two sectors** contribute the similarities, whose unit-norm slice carries the Lorentz transformations: the sandwich of a Hermitian element of unit norm is the boost, written with the element on both sides, and it is the Lorentz transformation of the corpus, while a general element of the sector adds a dilation by $|N(\tilde{Q})|^2$; the sandwich of a four-vector is the same family through the central imaginary; and the sign of the biquaternion norm decides whether the operator carries a rotation by $\pi$, since the negative-norm Hermitian elements are $\tilde{Q} = i\tilde{\Lambda}\hat{\mathbf{u}}$ and act as a boost composed with the rotation by $\pi$ about $\hat{\mathbf{u}}$.
+The **centre** contributes only the dilations by the squared modulus of the biquaternion norm. The **vector subspace** contributes the similarities of the interval: an element of the vector subspace has a central square, $\vec v^2 = -N(\vec v)e_0$, and the sandwich preserves the causal type of every element while rescaling the interval by $|N(\vec v)|^2$; a real unit vector acts as the rotation by $\pi$ about itself and preserves all remarkable subspaces, a general unit-norm vector acts on the four-vectors as a boost composed with that rotation, and the Hermitian factor of the scaling is $\vec v\vec v^{*} = |\vec v|^2e_0 - \vec v\times\vec v^{*}$. The **two halves** contribute the rotations: a real quaternion acts as $|\tilde{R}|^2$ times the rotation through twice its half-angle, the two equal on the unit-norm slice, with kernel $\{\pm e_0\}$ and the two-fold cover of $SO(3)$, and the two halves give the same operators. The **two sectors** contribute the similarities, whose unit-norm slice carries the Lorentz transformations: the sandwich of a Hermitian element of unit norm is the boost, written with the element on both sides, and it is the Lorentz transformation of the corpus, while a general element of the sector adds a dilation by $|N(\tilde{Q})|^2$; the sandwich of a four-vector is the same family through the central imaginary; and the sign of the biquaternion norm decides whether the operator carries a rotation by $\pi$, since the negative-norm Hermitian elements are $\tilde{Q} = i\tilde{U}\hat u$ and act as a boost composed with the rotation by $\pi$ about $\hat u$.
 
 The type of the operator is therefore decided by the class of the acting element and, inside a class, by the element's biquaternion norm: the centre dilates, the vector subspace and the halves transform isometrically or almost so, and the sectors carry the Lorentz transformations on the unit-norm slice and the similarities off it.
 
@@ -362,13 +362,13 @@ The type of the operator is therefore decided by the class of the acting element
 | $\operatorname{H}_{\tilde{Q}\tilde{R}} = \operatorname{H}_{\tilde{Q}}\circ\operatorname{H}_{\tilde{R}}$ | the composition law |
 | $\mathbb{C}_{\mathbb{B}}$ | the centre, of elements $ze_0$ |
 | $\mathrm{Vect}(\mathbb{B})$ | the vector subspace, $\operatorname{Sc}\tilde{Q} = 0$ |
-| $\mathbf{v}^2 = -N(\mathbf{v})e_0$ | the central square of a vector |
-| $\mathbf{v}\mathbf{v}^{*} = \|\mathbf{v}\|^2e_0 - \mathbf{v}\times\mathbf{v}^{*}$ | the Hermitian element of a vector |
+| $\vec v^2 = -N(\vec v)e_0$ | the central square of a vector |
+| $\vec v\vec v^{*} = \|\vec v\|^2e_0 - \vec v\times\vec v^{*}$ | the Hermitian element of a vector |
 | $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$ | the quaternion and antiquaternion subspaces |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | the informational and material sectors |
-| $\tilde{\Lambda} = \cosh\frac{\psi}{2}e_0 + i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$ | the boost rotor, Hermitian and of unit norm |
-| $\hat{q} = \cos\theta+\sin\theta\,\hat{\mathbf{u}}$ | the rotation rotor, a unit real quaternion |
-| $\tilde{Q} = \sinh\varphi\,e_0 + i\cosh\varphi\,\hat{\mathbf{u}}$, $N = -1$ | the negative-norm branch of the informational sector, $= i\tilde{\Lambda}\hat{\mathbf{u}}$ |
+| $\tilde{U} = \cosh\frac{\psi}{2}e_0 + i\sinh\frac{\psi}{2}\hat u$ | the boost rotor, Hermitian and of unit norm |
+| $\hat{q} = \cos\theta+\sin\theta\,\hat u$ | the rotation rotor, a unit real quaternion |
+| $\tilde{Q} = \sinh\varphi\,e_0 + i\cosh\varphi\,\hat u$, $N = -1$ | the negative-norm branch of the informational sector, $= i\tilde{U}\hat u$ |
 | $SO^+(1,3)$, $SO(3)$ | the Lorentz group and the rotation group reached by the sandwich |
 | $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |

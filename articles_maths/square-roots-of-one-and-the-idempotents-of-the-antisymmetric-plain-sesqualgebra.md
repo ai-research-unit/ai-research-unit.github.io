@@ -6,7 +6,7 @@ A root of a central value is defined by an equation in which the product occurs,
 
 $$
 \tilde P\diamond\tilde Q=\operatorname{Vect}\bigl(\tilde P\tilde Q^{*}\bigr)
-=-P_0\overline{\mathbf{Q}}+\overline{Q_0}\mathbf{P}-\mathbf{P}\times\overline{\mathbf{Q}},
+=-P_0\overline{\vec Q}+\overline{Q_0}\vec P-\vec P\times\overline{\vec Q},
 $$
 
 the antisymmetric half of the general plain sesquilinear product, a product conjugate-linear in its second slot and without a unit (*Introduction to the Antisymmetric Plain Sesqualgebra of Biquaternions*).
@@ -19,11 +19,11 @@ $$
 
 The second is the idempotents of the block, the elements $\tilde\Pi$ with $\tilde\Pi\diamond\tilde\Pi=\tilde\Pi$. In a unital associative product the idempotent is the root of $+1$ in a scaled sense, through the **halving map** $\tilde\Xi\mapsto\tfrac12(e_0+\tilde\Xi)$ and its inverse $\tilde\Xi=2\tilde\Pi-e_0$. The block is not associative, it has no unit, and it has no root of $+1$; the map therefore carries nothing, and the two subjects are joined negatively, by the emptiness of the family the map would produce.
 
-The outcome is the extreme absence. The block has **no root of $+1$**, by the parity that removes the scalar part from every value; the roots of $-1$ fall to the same parity, and the paragraph closing §*The Root of One* records that their set is **empty**. The block has **one idempotent, the origin**, because its idempotent equation reduces to $\mathbf p=0$ on a pure vector. It therefore has no nontrivial idempotent, no orthogonal pair, no family summing to a unit, no primitive idempotent, no projection and no Peirce decomposition, and the unit $e_0$ of the ambient algebra is not an idempotent of the block.
+The outcome is the extreme absence. The block has **no root of $+1$**, by the parity that removes the scalar part from every value; the roots of $-1$ fall to the same parity, and the paragraph closing §*The Root of One* records that their set is **empty**. The block has **one idempotent, the origin**, because its idempotent equation reduces to $\vec p=0$ on a pure vector. It therefore has no nontrivial idempotent, no orthogonal pair, no family summing to a unit, no primitive idempotent, no projection and no Peirce decomposition, and the unit $e_0$ of the ambient algebra is not an idempotent of the block.
 
 The article is algebraic. It does not treat the roots of $0$ and the nilpotents, which are *Square Roots of Zero and the Nilpotents of the Antisymmetric Plain Sesqualgebra*; the square roots of a general right side, which is *Square Roots of a General Element in the Antisymmetric Plain Sesqualgebra*; the zero-divisor set, which is *Zero Divisors of the Antisymmetric Plain Sesqualgebra*; or the idempotent families of the general plain product, which are *Idempotents of the General Plain Algebra*.
 
-**The results.** For the block $\tilde P\diamond\tilde Q=\operatorname{Vect}(\tilde P\tilde Q^{*})$ every value is a pure vector, of vanishing scalar part, and $+e_0$ is central: the root equation of $+1$ therefore fails for every element, and the block has **no root of $+1$**. The roots of $-1$ are **empty** as well, the conjugate-linear second slot denying the sign-flip of a bilateral product. The idempotent equation reduces, on a pure vector $\mathbf p$, to $-\mathbf p\times\overline{\mathbf p}=\mathbf p$, whose only solution is $\mathbf p=0$: the block has **one idempotent, the origin**, hence no orthogonal pair, no family summing to a unit, no primitive idempotent, no projection and no Peirce decomposition; the unit $e_0$ is not an idempotent of the block. The comparison with the parent is the comparison of the origin alone with the Hermitian idempotents of the plain sesquilinear product, which the block does not inherit.
+**The results.** For the block $\tilde P\diamond\tilde Q=\operatorname{Vect}(\tilde P\tilde Q^{*})$ every value is a pure vector, of vanishing scalar part, and $+e_0$ is central: the root equation of $+1$ therefore fails for every element, and the block has **no root of $+1$**. The roots of $-1$ are **empty** as well, the conjugate-linear second slot denying the sign-flip of a bilateral product. The idempotent equation reduces, on a pure vector $\vec p$, to $-\vec p\times\overline{\vec p}=\vec p$, whose only solution is $\vec p=0$: the block has **one idempotent, the origin**, hence no orthogonal pair, no family summing to a unit, no primitive idempotent, no projection and no Peirce decomposition; the unit $e_0$ is not an idempotent of the block. The comparison with the parent is the comparison of the origin alone with the Hermitian idempotents of the plain sesquilinear product, which the block does not inherit.
 
 ## The Notion and Its Product
 
@@ -63,37 +63,37 @@ The obstruction is the **centrality**, and not the non-vanishing of the diagonal
 
 ### The Idempotent Equation of the Block
 
-**Proposition (an idempotent is pure).** An idempotent of the block has vanishing scalar part: $\tilde\Pi=\mathbf p$, a pure vector.
+**Proposition (an idempotent is pure).** An idempotent of the block has vanishing scalar part: $\tilde\Pi=\vec p$, a pure vector.
 
 *Proof.* The left member $\tilde\Pi\diamond\tilde\Pi$ is a value of the block, hence a pure vector whose scalar part is zero; the right member is $\tilde\Pi$, so the scalar part of $\tilde\Pi$ is zero.
 
 For a pure element the diagonal is the conjugate cross product,
 
 $$
-\mathbf p\diamond\mathbf p=-\mathbf p\times\overline{\mathbf p},
+\vec p\diamond\vec p=-\vec p\times\overline{\vec p},
 $$
 
-the value $\operatorname{Vect}(\mathbf p\mathbf p^{*})=\operatorname{Vect}(-\mathbf p\overline{\mathbf p})=-\mathbf p\times\overline{\mathbf p}$.
+the value $\operatorname{Vect}(\vec p\vec p^{*})=\operatorname{Vect}(-\vec p\overline{\vec p})=-\vec p\times\overline{\vec p}$.
 
-**Proposition (the diagonal of a pure element is purely imaginary).** For every pure $\mathbf p$ the value $-\mathbf p\times\overline{\mathbf p}$ is purely imaginary,
+**Proposition (the diagonal of a pure element is purely imaginary).** For every pure $\vec p$ the value $-\vec p\times\overline{\vec p}$ is purely imaginary,
 
 $$
--\mathbf p\times\overline{\mathbf p}=-\overline{\bigl(-\mathbf p\times\overline{\mathbf p}\bigr)} .
+-\vec p\times\overline{\vec p}=-\overline{\bigl(-\vec p\times\overline{\vec p}\bigr)} .
 $$
 
-*Proof.* Apply the coefficientwise conjugation to the value: the conjugate of $\mathbf p\times\overline{\mathbf p}$ is $\overline{\mathbf p}\times\mathbf p=-\mathbf p\times\overline{\mathbf p}$ by the anti-commutativity of the cross product over $\mathbb{C}$, so $-\mathbf p\times\overline{\mathbf p}$ equals the negative of its own conjugate.
+*Proof.* Apply the coefficientwise conjugation to the value: the conjugate of $\vec p\times\overline{\vec p}$ is $\overline{\vec p}\times\vec p=-\vec p\times\overline{\vec p}$ by the anti-commutativity of the cross product over $\mathbb{C}$, so $-\vec p\times\overline{\vec p}$ equals the negative of its own conjugate.
 
 **Theorem (the only idempotent is the origin).** The block has exactly one idempotent, the element $0$. There is no nontrivial idempotent.
 
-*Proof.* Let $\tilde\Pi$ be an idempotent. By the first proposition it is pure, $\tilde\Pi=\mathbf p$, and the equation is $-\mathbf p\times\overline{\mathbf p}=\mathbf p$. The left member is purely imaginary by the second proposition, so the right member is purely imaginary and $\mathbf p=i\mathbf u$ with $\mathbf u\in\mathbb{R}^{3}$; the left member is then
+*Proof.* Let $\tilde\Pi$ be an idempotent. By the first proposition it is pure, $\tilde\Pi=\vec p$, and the equation is $-\vec p\times\overline{\vec p}=\vec p$. The left member is purely imaginary by the second proposition, so the right member is purely imaginary and $\vec p=i\vec u$ with $\vec u\in\mathbb{R}^{3}$; the left member is then
 
 $$
--(i\mathbf u)\times\overline{(i\mathbf u)}=-(i\mathbf u)\times(-i\mathbf u)=i^{2}(\mathbf u\times\mathbf u)=0 ,
+-(i\vec u)\times\overline{(i\vec u)}=-(i\vec u)\times(-i\vec u)=i^{2}(\vec u\times\vec u)=0 ,
 $$
 
-the cross product of a real vector with itself being zero. The equation reads $\mathbf p=0$, so $\tilde\Pi=0$; the origin is an idempotent of every product, and it is the only one.
+the cross product of a real vector with itself being zero. The equation reads $\vec p=0$, so $\tilde\Pi=0$; the origin is an idempotent of every product, and it is the only one.
 
-The computation is the whole of the proof: the parity reduces an idempotent to a pure $\mathbf p$, the model computation $-\mathbf p\times\overline{\mathbf p}=\mathbf p$ is the equation, and its only solution is the origin. The unit $e_0$ of the ambient algebra is not an idempotent of the block, since $e_0\diamond e_0=\operatorname{Vect}(e_0)=0\neq e_0$.
+The computation is the whole of the proof: the parity reduces an idempotent to a pure $\vec p$, the model computation $-\vec p\times\overline{\vec p}=\vec p$ is the equation, and its only solution is the origin. The unit $e_0$ of the ambient algebra is not an idempotent of the block, since $e_0\diamond e_0=\operatorname{Vect}(e_0)=0\neq e_0$.
 
 ### The Consequences of the Absence
 
@@ -106,7 +106,7 @@ The computation is the whole of the proof: the parity reduces an idempotent to a
 
 **Proposition (the only projector is the zero operator).** Let $L^{\diamond}_{\tilde P}$ be the left multiplication of the block by $\tilde P$, the map $\tilde X\mapsto\tilde P\diamond\tilde X$. It is conjugate-linear, and it is a projector if and only if $\tilde P=0$, in which case it is the zero operator.
 
-*Proof.* The left multiplication of the block is $\mathbb{C}$-conjugate-linear in $\tilde X$, since the product is conjugate-linear in its second slot. If it were a projector, $L^{\diamond}_{\tilde P}\circ L^{\diamond}_{\tilde P}=L^{\diamond}_{\tilde P}$, the composite on the left being $\mathbb{C}$-linear while the right is conjugate-linear; a map that is both linear and conjugate-linear is zero, because $\lambda L(\tilde X)=L(\lambda\tilde X)=\overline{\lambda}L(\tilde X)$ for every $\lambda$, forcing $L(\tilde X)=0$. It remains to read $L^{\diamond}_{\tilde P}=0$: at $\tilde X=e_0$ the value is $\mathbf P$, so $\tilde P$ is central, $\tilde P=ce_0$; at $\tilde X=e_1$ the value is $\operatorname{Vect}(ce_0e_1^{*})=-ce_1$, so $c=0$ and $\tilde P=0$. Conversely $L^{\diamond}_0=0$ is a projector.
+*Proof.* The left multiplication of the block is $\mathbb{C}$-conjugate-linear in $\tilde X$, since the product is conjugate-linear in its second slot. If it were a projector, $L^{\diamond}_{\tilde P}\circ L^{\diamond}_{\tilde P}=L^{\diamond}_{\tilde P}$, the composite on the left being $\mathbb{C}$-linear while the right is conjugate-linear; a map that is both linear and conjugate-linear is zero, because $\lambda L(\tilde X)=L(\lambda\tilde X)=\overline{\lambda}L(\tilde X)$ for every $\lambda$, forcing $L(\tilde X)=0$. It remains to read $L^{\diamond}_{\tilde P}=0$: at $\tilde X=e_0$ the value is $\vec P$, so $\tilde P$ is central, $\tilde P=ce_0$; at $\tilde X=e_1$ the value is $\operatorname{Vect}(ce_0e_1^{*})=-ce_1$, so $c=0$ and $\tilde P=0$. Conversely $L^{\diamond}_0=0$ is a projector.
 
 The two absences, the idempotent and the projector, have one source, the conjugate-linearity together with the projection, and the operator reading is the subject of *The Adjoint Operators and the Sandwich of the Antisymmetric Plain Sesqualgebra*.
 
@@ -114,7 +114,7 @@ The two absences, the idempotent and the projector, have one source, the conjuga
 
 **The block keeps the origin alone and loses the parent's idempotents, which are not inherited; among the twelve structures it is the row in which the idempotent set collapses to the trivial one.**
 
-**Remark (the parent idempotents).** The parent of the block is the general plain sesquilinear product $\tilde P\tilde Q^{*}$, whose idempotents are the Hermitian idempotents, the elements $\tilde\Pi$ with $\tilde\Pi\tilde\Pi^{*}=\tilde\Pi$ and $\tilde\Pi^{*}=\tilde\Pi$; they are the two trivial idempotents $0$ and $e_0$ together with the sphere $\tfrac12e_0+i\mathbf u$ over the real vectors $\mathbf u$ with $(\mathbf u,\mathbf u)=\tfrac14$, and the block does not inherit them. The diagonal of such an element is $\operatorname{Vect}(\tilde\Pi\tilde\Pi^{*})=\operatorname{Vect}(\tilde\Pi)$, its own vector part, so a Hermitian idempotent is a block idempotent only when it equals its own vector part; and a pure Hermitian element $i\mathbf u$, whose block square is $0$, is a block idempotent only at the origin. The two idempotent sets therefore meet only at the origin, and the two sesquilinear blocks of the plain row have disjoint idempotent theories.
+**Remark (the parent idempotents).** The parent of the block is the general plain sesquilinear product $\tilde P\tilde Q^{*}$, whose idempotents are the Hermitian idempotents, the elements $\tilde\Pi$ with $\tilde\Pi\tilde\Pi^{*}=\tilde\Pi$ and $\tilde\Pi^{*}=\tilde\Pi$; they are the two trivial idempotents $0$ and $e_0$ together with the sphere $\tfrac12e_0+i\vec u$ over the real vectors $\vec u$ with $(\vec u,\vec u)=\tfrac14$, and the block does not inherit them. The diagonal of such an element is $\operatorname{Vect}(\tilde\Pi\tilde\Pi^{*})=\operatorname{Vect}(\tilde\Pi)$, its own vector part, so a Hermitian idempotent is a block idempotent only when it equals its own vector part; and a pure Hermitian element $i\vec u$, whose block square is $0$, is a block idempotent only at the origin. The two idempotent sets therefore meet only at the origin, and the two sesquilinear blocks of the plain row have disjoint idempotent theories.
 
 The block is one row of the table of the twelve idempotent sets, where the plain product carries the family $\tfrac12(e_0+\tilde\Xi)$ over its roots $\tilde\Xi$ of $+1$ and the natural product carries the trivial pair alone; the tabulation is *Idempotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Twelve Idempotent Sets*, and the idempotents of the general plain product are *Idempotents of the General Plain Algebra*.
 
@@ -122,7 +122,7 @@ The block is one row of the table of the twelve idempotent sets, where the plain
 
 For the block $\tilde P\diamond\tilde Q=\operatorname{Vect}(\tilde P\tilde Q^{*})$ every value is a pure vector, so the root equation of $+1$ reduces to $\operatorname{Vect}(\tilde\Xi\tilde\Xi^{*})=+e_0$ and has no solution: the block has **no root of $+1$**. The obstruction is the centrality of $+e_0$ and not the vanishing of the diagonal. The roots of $-1$ fall to the same parity and their set is **empty**, the conjugate-linear second slot denying the sign-flip of a bilateral product; the remark is not used later.
 
-The idempotent equation $\tilde\Pi\diamond\tilde\Pi=\tilde\Pi$ reduces to $-\mathbf p\times\overline{\mathbf p}=\mathbf p$ on a pure vector, and its only solution is $\mathbf p=0$: the block has **one idempotent, the origin**, and no nontrivial idempotent. The unit $e_0$ of the ambient algebra is not an idempotent of the block, the block being a bracket and not the plain product. No orthogonal pair, no family summing to a unit, no primitive idempotent and no Peirce decomposition exists, and the only projector the block carries is the zero operator, from the origin. The parent's Hermitian idempotents, $0$, $e_0$ and the sphere $\tfrac12e_0+i\mathbf u$, are not inherited, their diagonal being their own vector part, and the two idempotent sets meet only at the origin.
+The idempotent equation $\tilde\Pi\diamond\tilde\Pi=\tilde\Pi$ reduces to $-\vec p\times\overline{\vec p}=\vec p$ on a pure vector, and its only solution is $\vec p=0$: the block has **one idempotent, the origin**, and no nontrivial idempotent. The unit $e_0$ of the ambient algebra is not an idempotent of the block, the block being a bracket and not the plain product. No orthogonal pair, no family summing to a unit, no primitive idempotent and no Peirce decomposition exists, and the only projector the block carries is the zero operator, from the origin. The parent's Hermitian idempotents, $0$, $e_0$ and the sphere $\tfrac12e_0+i\vec u$, are not inherited, their diagonal being their own vector part, and the two idempotent sets meet only at the origin.
 
 ## Summary of Notation
 
@@ -132,7 +132,7 @@ The idempotent equation $\tilde\Pi\diamond\tilde\Pi=\tilde\Pi$ reduces to $-\mat
 | $\tilde\Xi\diamond\tilde\Xi=\operatorname{Vect}(\tilde\Xi\tilde\Xi^{*})$ | the diagonal of the block, always a pure vector |
 | $\tilde\Xi\diamond\tilde\Xi=+e_0$ | the root equation of $+1$, without solution |
 | $\lambda\in\{-1,+1\}$ | the two nonzero central values, both without roots; the value $0$ is *Square Roots of Zero and the Nilpotents of the Antisymmetric Plain Sesqualgebra* |
-| $\tilde\Pi\diamond\tilde\Pi=\tilde\Pi$ | the idempotent equation, equivalent to $\mathbf p=0$ on a pure vector |
+| $\tilde\Pi\diamond\tilde\Pi=\tilde\Pi$ | the idempotent equation, equivalent to $\vec p=0$ on a pure vector |
 | $\{0\}$ | the idempotent set of the block, the trivial idempotent alone |
 | $L^{\diamond}_{\tilde P}$ | the conjugate-linear left multiplication, a projector only at $\tilde P=0$ |
 | $\tfrac12(e_0+\tilde\Xi)$ | the idempotents of the general plain product, over the roots $\tilde\Xi$ of $+1$, absent from the block |

@@ -15,10 +15,10 @@ The article is in three steps. It fixes the singular set of the displaced potent
 In the stationary sector the field is carried by the scalar potential alone, and the four-potential is a material element with a purely imaginary scalar part,
 
 $$
-\tilde{A} = \frac{i\phi}{c}\,e_0 \in \mathbb{M}_-, \qquad \phi(\mathbf{x}) = \frac{q}{4\pi\epsilon}\,\frac{1}{\|\mathbf{x}-\mathbf{r}_0\|},
+\tilde{A} = \frac{i\phi}{c}\,e_0 \in \mathbb{M}_-, \qquad \phi(\vec x) = \frac{q}{4\pi\epsilon}\,\frac{1}{\|\vec x-\vec r_0\|},
 $$
 
-where $\mathbf{r}_0$ is the position of the point charge, $\epsilon$ is the permittivity of the medium, and $\|\mathbf{x}\|$ is the ordinary Euclidean length of the vector part. The potential is singular on the set $\mathbf{x}=\mathbf{r}_0$, a single point, and it is the kernel $1/\|\mathbf{x}-\mathbf{r}_0\|$ whose geometry the construction uses; the charge and the permittivity enter only as the overall factor $q/4\pi\epsilon$ and are set aside below.
+where $\vec r_0$ is the position of the point charge, $\epsilon$ is the permittivity of the medium, and $\|\vec x\|$ is the ordinary Euclidean length of the vector part. The potential is singular on the set $\vec x=\vec r_0$, a single point, and it is the kernel $1/\|\vec x-\vec r_0\|$ whose geometry the construction uses; the charge and the permittivity enter only as the overall factor $q/4\pi\epsilon$ and are set aside below.
 
 Lanczos introduces potential and field strength as **complex** quantities. If the potential is complex-valued, then in his interpretation there is no reason for the constants $(\xi,\eta,\zeta)$ that locate the singularity to be real, and the natural generalisation is to let them range over the complex numbers. A rotation and a translation of the coordinates bring the singularity to
 
@@ -36,16 +36,16 @@ $$
 
 ### The Square of the Distance and the Ring
 
-With $\mathbf{r}_0 = -i\varrho e_3$ the squared Euclidean separation is
+With $\vec r_0 = -i\varrho e_3$ the squared Euclidean separation is
 
 $$
-\|\mathbf{x}-\mathbf{r}_0\|^2 = x^2 + y^2 + (z+i\varrho)^2 = \bigl(x^2+y^2+z^2-\varrho^2\bigr) + 2i\,z\varrho ,
+\|\vec x-\vec r_0\|^2 = x^2 + y^2 + (z+i\varrho)^2 = \bigl(x^2+y^2+z^2-\varrho^2\bigr) + 2i\,z\varrho ,
 $$
 
 a **complex** number, and the potential is the reciprocal square root of it,
 
 $$
-\phi(\mathbf{x}) = \frac{1}{\sqrt{\,x^2 + y^2 + (z+i\varrho)^2\,}} .
+\phi(\vec x) = \frac{1}{\sqrt{\,x^2 + y^2 + (z+i\varrho)^2\,}} .
 $$
 
 The singular set is the zero set of the radicand. Writing the radicand as $A+iB$ with $A=x^2+y^2+z^2-\varrho^2$ and $B=2z\varrho$, the zero set is $A=0$ together with $B=0$. The second condition gives $z=0$, and with $z=0$ the first gives $x^2+y^2=\varrho^2$. Hence the singular set of the real coordinates is the **circle**
@@ -77,7 +77,7 @@ The single-valued physical statement that survives is this: **the singular locus
 Because the potential is complex, its gradient is complex, and the field of the configuration
 
 $$
-\mathbf{E}_\phi(\mathbf{x}) = -\mathrm{grad}\,\phi(\mathbf{x}) = -\bigl(\partial_x\phi\,e_1 + \partial_y\phi\,e_2 + \partial_z\phi\,e_3\bigr)
+\vec E_\phi(\vec x) = -\mathrm{grad}\,\phi(\vec x) = -\bigl(\partial_x\phi\,e_1 + \partial_y\phi\,e_2 + \partial_z\phi\,e_3\bigr)
 $$
 
 has both a real and an imaginary part at every point off the ring and off the disk. Writing $\phi=\phi_R+i\phi_I$, the real part $-\mathrm{grad}\,\phi_R$ is the electric field of the configuration and the imaginary part $-\mathrm{grad}\,\phi_I$ is a second field that survives from the displacement into $\mathbb{M}_+$. The imaginary part is not an artefact of the bookkeeping: it is nonzero at generic points, as it must be whenever $\varrho\neq0$, and it vanishes identically at $\varrho=0$, where the point electron is recovered and the field is purely electric.
@@ -90,7 +90,7 @@ An electric field that acquires an imaginary component under a displacement of t
 
 The corpus records both statements and keeps them apart. What is certain is the algebra: the displacement into $\mathbb{M}_+$ produces a second field whose transformation character differs from that of the ordinary magnetic field. Whether it is called magnetic, mesomagnetic, or a mere imaginary part of a complexified electric field is a question of **physical interpretation** that the algebra does not decide.
 
-**The far field is the point field.** The mesomagnetic forces are appreciable only near the ring. At distances large compared with $\varrho$ the displacement is a small perturbation of the position, and the field of the circle electron differs from that of the point electron by a quantity that vanishes with $\varrho/\|\mathbf{x}\|$. The ring is invisible from far away.
+**The far field is the point field.** The mesomagnetic forces are appreciable only near the ring. At distances large compared with $\varrho$ the displacement is a small perturbation of the position, and the field of the circle electron differs from that of the point electron by a quantity that vanishes with $\varrho/\|\vec x\|$. The ring is invisible from far away.
 
 ## The Self-Energy: the Difference That Vanishes
 
@@ -152,7 +152,7 @@ The construction's purpose is the self-energy. In the stationary field the Hamil
 | Symbol | Meaning |
 |---|---|
 | $\phi$ | Scalar potential; the displaced Coulomb potential $1/\sqrt{x^2+y^2+(z+i\varrho)^2}$, up to the charge factor |
-| $\mathbf{r}_0 = -i\varrho e_3$ | Position of the singularity, displaced into the informational sector |
+| $\vec r_0 = -i\varrho e_3$ | Position of the singularity, displaced into the informational sector |
 | $\Delta\tilde{Q} = -i\varrho e_3$ | The displacement itself; an element of $\mathbb{M}_+$ with $z'=-\varrho$ |
 | $\varrho$ | Magnitude of the imaginary displacement; radius of the circle electron |
 | $\Gamma$ | Singular set: the ring $z=0$, $x^2+y^2=\varrho^2$ |
@@ -162,7 +162,7 @@ The construction's purpose is the self-energy. In the stationary field the Hamil
 | $\rho=\varrho+\varepsilon\cos\varphi,\ z=\varepsilon\sin\varphi$ | Small torus threaded on the ring; the integration surface |
 | $\varepsilon$ | Radius of the torus threaded on the ring (Lanczos's $\epsilon$, renamed to avoid the permittivity) |
 | $H$ | Hamiltonian function (action density) of the ring; the difference of electric and mesomagnetic energy |
-| $\mathbf{E}_\phi = -\mathrm{grad}\,\phi$ | Complexified electric field of the displaced configuration; real part electric, imaginary part mesomagnetic |
+| $\vec E_\phi = -\mathrm{grad}\,\phi$ | Complexified electric field of the displaced configuration; real part electric, imaginary part mesomagnetic |
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Material and informational sectors |
 | $\epsilon$ | Permittivity of the medium (Coulomb factor only) |
 

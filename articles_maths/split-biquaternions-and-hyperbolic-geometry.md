@@ -81,12 +81,12 @@ as a homogeneous space, and the stabiliser of a point acts on the tangent space 
 **Theorem.** The geodesics of $H^3$ through a point $\tilde{Q}$ are the intersections of $H^3$ with the two-dimensional real subspaces of $\mathbb{M}_-$ through the origin that are spanned by $\tilde{Q}$ and a tangent vector, and are therefore the curves
 
 $$
-t\longmapsto \cosh t\,\tilde{Q} + \sinh t\,\tilde V, \qquad \tilde{Q}\in H^3,\ \tilde V\in T_{\tilde{Q}}H^3,\ g(\tilde V,\tilde V) = 1,\ g(\tilde{Q},\tilde V) = 0 .
+t\longmapsto \cosh t\,\tilde{Q} + \sinh t\,\tilde S, \qquad \tilde{Q}\in H^3,\ \tilde S\in T_{\tilde{Q}}H^3,\ g(\tilde S,\tilde S) = 1,\ g(\tilde{Q},\tilde S) = 0 .
 $$
 
-Every geodesic is the orbit of a hyperbolic one-parameter subgroup of $SO^{+}(3,1)$, and the intersection of the geodesic with the plane $\operatorname{span}(\tilde{Q},\tilde V)$ is the hyperbola $\{-a^2 + \text{(one coordinate)}^2 = -1\}$ in that plane.
+Every geodesic is the orbit of a hyperbolic one-parameter subgroup of $SO^{+}(3,1)$, and the intersection of the geodesic with the plane $\operatorname{span}(\tilde{Q},\tilde S)$ is the hyperbola $\{-a^2 + \text{(one coordinate)}^2 = -1\}$ in that plane.
 
-*Proof.* A geodesic of the hyperboloid model is the intersection of $H^3$ with a two-dimensional linear subspace $P$ on which the ambient form has signature $(1,1)$, because the second fundamental form of the hyperboloid in $\mathbb{M}_-$ is minus the ambient form and the geodesic curvature vanishes on such intersections. Parametrising the plane $P$ by an orthonormal pair $(\tilde{Q},\tilde V)$ with $g(\tilde{Q},\tilde{Q}) = -1$, $g(\tilde V,\tilde V) = +1$, $g(\tilde{Q},\tilde V) = 0$ gives the displayed curve, which has $g$-norm $-1$ and is the unit hyperbola in the plane. The one-parameter group statement is the classification of the hyperbolic generators of $\mathrm{SO}(3,1)$; it is the second row of the three-row table of *Split-Biquaternion Rotations and the Lorentz Group*.
+*Proof.* A geodesic of the hyperboloid model is the intersection of $H^3$ with a two-dimensional linear subspace $P$ on which the ambient form has signature $(1,1)$, because the second fundamental form of the hyperboloid in $\mathbb{M}_-$ is minus the ambient form and the geodesic curvature vanishes on such intersections. Parametrising the plane $P$ by an orthonormal pair $(\tilde{Q},\tilde S)$ with $g(\tilde{Q},\tilde{Q}) = -1$, $g(\tilde S,\tilde S) = +1$, $g(\tilde{Q},\tilde S) = 0$ gives the displayed curve, which has $g$-norm $-1$ and is the unit hyperbola in the plane. The one-parameter group statement is the classification of the hyperbolic generators of $\mathrm{SO}(3,1)$; it is the second row of the three-row table of *Split-Biquaternion Rotations and the Lorentz Group*.
 
 ## The Boundary and the Conformal Model
 
@@ -215,7 +215,7 @@ The isometries are of three types: elliptic, fixing a point and rotating about i
 | $\mathbb{M}_- = \{a\,je_0 + v\}$ | Anti-Hermitian subspace, $g$ of signature $(3,1)$ |
 | $g(\tilde{Q},\tilde{Q}) = -a^2 + v_1^2 + v_2^2 + v_3^2$ | The Lorentzian form on $\mathbb{M}_-$ |
 | $H^3 = \{\tilde{Q}\in\mathbb{M}_- : g(\tilde{Q},\tilde{Q}) = -1,\ a > 0\}$ | Hyperboloid model of hyperbolic three-space |
-| $\tilde V$ | Tangent vector, $g(\tilde V,\tilde V) = 1$, $g(\tilde{Q},\tilde V) = 0$ |
+| $\tilde S$ | Tangent vector, $g(\tilde S,\tilde S) = 1$, $g(\tilde{Q},\tilde S) = 0$ |
 | $d_H(\tilde{Q},\tilde R) = \operatorname{arcosh}(-g(\tilde{Q},\tilde R))$ | Hyperbolic distance |
 | $O(3,1)$, $SO^{+}(3,1)$, $O^{\uparrow}(3,1)$ | Lorentz group, restricted Lorentz group, sheet-preserving subgroup |
 | $SO(3)$, $O(4)$, $SO(4)$ | Isotropy and the rotational comparison groups |

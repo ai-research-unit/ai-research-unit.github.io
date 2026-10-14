@@ -9,7 +9,7 @@ The article uses *Quaternion Algebra* and *Quaternion Norm and Invertibility* fo
 
 The corpus's default base is a commutative ring with identity; the spectrum requires a division ring and a topology, so scalars lie in $\mathbb{H}$ or $\mathbb{C}$ and everything below is over $\mathbb{R}$.
 
-Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = q_0+q_1e_1+q_2e_2+q_3e_3$, with conjugate $\tilde{q}^{\natural}$, scalar part $\mathrm{Sc}\tilde q = q_0$, vector part $\mathrm{Vect}\tilde q = \mathbf{q}$, norm $N(\tilde q) = \tilde q\tilde{q}^{\natural}$ and modulus $|\tilde q| = \sqrt{N(\tilde q)}$. The unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$, and $M_n(\mathbb{H})$ acts on column vectors in $\mathbb{H}^n$.
+Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$ with basis $e_0 = 1, e_1, e_2, e_3$, $e_k^2 = -e_0$; a quaternion is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3 = q_0+q_1e_1+q_2e_2+q_3e_3$, with conjugate $\tilde{q}^{\natural}$, scalar part $\mathrm{Sc}\tilde q = q_0$, vector part $\mathrm{Vect}\tilde q = \vec q$, norm $N(\tilde q) = \tilde q\tilde{q}^{\natural}$ and modulus $|\tilde q| = \sqrt{N(\tilde q)}$. The unit group is $\mathbb{H}^{\times} = \mathbb{H}\setminus\{0\}$, and $M_n(\mathbb{H})$ acts on column vectors in $\mathbb{H}^n$.
 
 ## The Spectrum of a Quaternion
 
@@ -42,7 +42,7 @@ $$
 and the right spectrum is the **similarity class** of $\tilde q$,
 
 $$
-\sigma_R([\tilde q]) = \{q_0+\mathbf{w} : \mathbf{w}\in\operatorname{Im}\mathbb{H},\ |\mathbf{w}| = |\mathrm{Vect}\tilde q|\},
+\sigma_R([\tilde q]) = \{q_0+\vec w : \vec w\in\operatorname{Im}\mathbb{H},\ |\vec w| = |\mathrm{Vect}\tilde q|\},
 $$
 
 a point $\{q_0\}$ when $\tilde q$ is real and a two-sphere of radius $|\mathrm{Vect}\tilde q|$ about the real point $q_0$ otherwise.
@@ -82,7 +82,7 @@ which is a finite union of at most $n$ spheres or points.
 **Definition.** The **trace functional** and **determinant functional** — more precisely the **reduced trace** and **reduced norm** — of a quaternion are
 
 $$
-T(\tilde q) = 2\mathrm{Sc}\tilde q = 2q_0, \qquad D(\tilde q) = N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2+|\mathbf{q}|^2 .
+T(\tilde q) = 2\mathrm{Sc}\tilde q = 2q_0, \qquad D(\tilde q) = N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2+|\vec q|^2 .
 $$
 
 **Theorem (Cayley–Hamilton for a quaternion).** Every quaternion satisfies
@@ -91,19 +91,19 @@ $$
 \tilde q^2-T(\tilde q)\,\tilde q+D(\tilde q) = 0, \qquad \text{that is} \qquad \tilde q^2-2q_0\tilde q+N(\tilde q) = 0 .
 $$
 
-*Proof.* With $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ and $\mathbf{q}^2 = -|\mathbf{q}|^2$,
+*Proof.* With $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ and $\vec q^2 = -|\vec q|^2$,
 
 $$
-\tilde q^2 = q_0^2+2q_0\mathbf{q}+\mathbf{q}^2 = q_0^2+2q_0\mathbf{q}-|\mathbf{q}|^2 = 2q_0\tilde q-(q_0^2+|\mathbf{q}|^2) = T(\tilde q)\tilde q-D(\tilde q).
+\tilde q^2 = q_0^2+2q_0\vec q+\vec q^2 = q_0^2+2q_0\vec q-|\vec q|^2 = 2q_0\tilde q-(q_0^2+|\vec q|^2) = T(\tilde q)\tilde q-D(\tilde q).
 $$
 
 **Corollary.** A non-zero quaternion is a root of its own quadratic $x^2-T(\tilde q)x+D(\tilde q)$, which has the **non-positive** discriminant
 
 $$
-T(\tilde q)^2-4D(\tilde q) = 4q_0^2-4(q_0^2+|\mathbf{q}|^2) = -4|\mathbf{q}|^2\leq0;
+T(\tilde q)^2-4D(\tilde q) = 4q_0^2-4(q_0^2+|\vec q|^2) = -4|\vec q|^2\leq0;
 $$
 
-over the quaternions a negative discriminant is not a failure of existence but the statement that the two roots are the conjugate pair $q_0\pm\mu|\mathbf{q}|$ for any imaginary unit $\mu$.
+over the quaternions a negative discriminant is not a failure of existence but the statement that the two roots are the conjugate pair $q_0\pm\mu|\vec q|$ for any imaginary unit $\mu$.
 
 **Proposition.** The functionals satisfy
 
@@ -133,7 +133,7 @@ $$
 
 equivalently if and only if they have the same real part and the same modulus of the vector part. Consequently the similarity class of $\tilde q$ is a point when $\tilde q$ is real and a two-sphere otherwise, and the classes are parametrised by the half-plane $\{(t,d) : d\geq t^2/4\}$ through $(T,D)$.
 
-*Proof.* A conjugation $v^{-1}qv$ preserves the real part and the modulus of the vector part, hence $(T,D)$; conversely two quaternions with equal $(q_0,|\mathbf{q}|)$ are carried one to the other by conjugation by a unit quaternion, which preserves both invariants; this is the transitivity of the adjoint action in *Quaternion Rotations and Reflections*. The class is a point for real $\tilde q$, where $|\mathbf{q}| = 0$.
+*Proof.* A conjugation $v^{-1}qv$ preserves the real part and the modulus of the vector part, hence $(T,D)$; conversely two quaternions with equal $(q_0,|\vec q|)$ are carried one to the other by conjugation by a unit quaternion, which preserves both invariants; this is the transitivity of the adjoint action in *Quaternion Rotations and Reflections*. The class is a point for real $\tilde q$, where $|\vec q| = 0$.
 
 **Theorem (eigenvalue dichotomy).** For a quaternionic matrix the right spectrum is a finite union of similarity classes, each of which is of exactly one of two kinds: a **real point** $\{t\}$ or a non-degenerate **two-sphere** $[t+\mu s]$ with $s > 0$ and $\mu$ a pure unit. The two kinds cannot mix within one class.
 
@@ -174,12 +174,12 @@ where $\sigma_S(M)$ is the S-spectrum defined below.
 **Theorem.** For a single quaternion $\tilde q$ and $s\notin[\tilde q]$ the S-resolvent is
 
 $$
-\mathcal{R}_s(\tilde q) = \frac{a-2(q_0-s_0)\mathbf{v}}{a^2+4(q_0-s_0)^2|\mathbf{v}|^2}, \qquad a = (q_0-s_0)^2-|\mathbf{v}|^2+|\mathbf{w}|^2,
+\mathcal{R}_s(\tilde q) = \frac{a-2(q_0-s_0)\vec v}{a^2+4(q_0-s_0)^2|\vec v|^2}, \qquad a = (q_0-s_0)^2-|\vec v|^2+|\vec w|^2,
 $$
 
-with $\tilde q = q_0+\mathbf{v}$ and $s = s_0+\mathbf{w}$; it has a simple pole on the two-sphere $[\tilde q]$ and is analytic off it.
+with $\tilde q = q_0+\vec v$ and $s = s_0+\vec w$; it has a simple pole on the two-sphere $[\tilde q]$ and is analytic off it.
 
-*Proof.* Writing $\tilde q^2-2\operatorname{Re}(s)\tilde q+|s|^2 = a+2(q_0-s_0)\mathbf{v}$ with $a$ real and $2(q_0-s_0)\mathbf{v}$ pure, the inverse is $(a-2(q_0-s_0)\mathbf{v})/(a^2+4(q_0-s_0)^2|\mathbf{v}|^2)$. The denominator vanishes exactly when $a = 0$ and $s_0 = q_0$, that is when $s\in[\tilde q]$, which is the S-spectrum.
+*Proof.* Writing $\tilde q^2-2\operatorname{Re}(s)\tilde q+|s|^2 = a+2(q_0-s_0)\vec v$ with $a$ real and $2(q_0-s_0)\vec v$ pure, the inverse is $(a-2(q_0-s_0)\vec v)/(a^2+4(q_0-s_0)^2|\vec v|^2)$. The denominator vanishes exactly when $a = 0$ and $s_0 = q_0$, that is when $s\in[\tilde q]$, which is the S-spectrum.
 
 **Definition.** The **spectral radius** is $\rho(M) = \max\{|s| : s\in\sigma_S(M)\}$.
 
@@ -234,7 +234,7 @@ The S-spectrum $\sigma_S(M) = \{s : M^2-2\operatorname{Re}(s)M+|s|^2I \text{ sin
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{H}$ | Quaternion algebra, a division algebra; scalars non-central |
-| $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | Quaternion; $q_0 = \mathrm{Sc}\tilde q$, $\mathbf{q} = \mathrm{Vect}\tilde q$ |
+| $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ | Quaternion; $q_0 = \mathrm{Sc}\tilde q$, $\vec q = \mathrm{Vect}\tilde q$ |
 | $N(\tilde q) = \tilde q\tilde{q}^{\natural}$, $\lvert \tilde q\rvert = \sqrt{N(\tilde q)}$ | Quaternion norm and modulus |
 | $\sigma_{\mathbb{H}}(\tilde q) = \{\tilde q\}$ | Algebra spectrum of a single quaternion |
 | $\sigma_L(M)$, $\sigma_R(M)$ | Left and right spectra |

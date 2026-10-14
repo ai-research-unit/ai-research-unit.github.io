@@ -5,18 +5,18 @@
 The scalar part of the symmetric quaternionic sesquilinear product is a form in its own right, and this article reads it as the multiplication of the block. The scalar part of
 
 $$
-\tilde P\star\tilde Q=\bigl[P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})\bigr]-P_0\overline{\mathbf{Q}}-\overline{Q_0}\mathbf{P}
+\tilde P\star\tilde Q=\bigl[P_0\overline{Q_0}-(\vec P,\overline{\vec Q})\bigr]-P_0\overline{\vec Q}-\overline{Q_0}\vec P
 $$
 
 is
 
 $$
 K(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\star\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})
-=P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})
+=P_0\overline{Q_0}-(\vec P,\overline{\vec Q})
 =\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu},
 $$
 
-the **Krein form** of the corpus, and the vector part of the block is the mixed term alone. So the block is the form $K$ enlarged by one vector term: the map $\tilde Q\mapsto\tilde Q\star\tilde Q$ has real scalar part $K(\tilde Q,\tilde Q)$ and vector part $-2\mathrm{Re}(Q_0\overline{\mathbf{Q}})$, and the block is a product whose *values* carry $K$ as their scalar part and whose *scalar part* is $K$. That is the sense in which the form is a product: the form is the scalar component of a multiplication, and the multiplication is the smallest symmetric sesquilinear product whose scalar component is $K$.
+the **Krein form** of the corpus, and the vector part of the block is the mixed term alone. So the block is the form $K$ enlarged by one vector term: the map $\tilde Q\mapsto\tilde Q\star\tilde Q$ has real scalar part $K(\tilde Q,\tilde Q)$ and vector part $-2\mathrm{Re}(Q_0\overline{\vec Q})$, and the block is a product whose *values* carry $K$ as their scalar part and whose *scalar part* is $K$. That is the sense in which the form is a product: the form is the scalar component of a multiplication, and the multiplication is the smallest symmetric sesquilinear product whose scalar component is $K$.
 
 The form $K$ itself, its Gram matrices, its restrictions and its cone are *The Krein Gram Matrix and the Restrictions of the Form* and *The Isotropic Structure of the General Quaternionic Sesqualgebra*; the four pairings of the algebra are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; the indefinite positivity of the algebra is *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra*; the remarkable subspaces are *Remarkable Subspaces under the General Quaternionic Sesqualgebra of Biquaternions*; the comparison of the four forms of the row is *Comparison Between the Four General Products*; and the product whose scalar part is read here is *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions*. The invariance that does hold, the adjoint relation of the block, is used in *The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra*.
 
@@ -64,7 +64,7 @@ a real algebraic cone of real dimension seven through the origin, of real codime
 
 *Proof.* $K(\tilde P,\tilde P)=|P_0|^{2}-\sum_k|P_k|^{2}$, which vanishes exactly on the displayed set; the equation is one real equation on the eight real coordinates, so the real dimension is seven, and on the four real coordinates of the real quaternion subspace it is one real equation, of real dimension three. The cone is algebraic and homogeneous of degree two in the real coordinates.
 
-**Worked examples.** $e_0+e_1$, $e_0+e_2$, $e_0+e_3$ are isotropic; $e_1+ie_2$ is not, since $K(e_1+ie_2,e_1+ie_2)=-1-1=-2$; and the square-zero elements of *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra*, among them $e_0+i\boldsymbol\mu$ for real unit $\boldsymbol\mu$, are isotropic.
+**Worked examples.** $e_0+e_1$, $e_0+e_2$, $e_0+e_3$ are isotropic; $e_1+ie_2$ is not, since $K(e_1+ie_2,e_1+ie_2)=-1-1=-2$; and the square-zero elements of *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra*, among them $e_0+i\vec n$ for real unit $\vec n$, are isotropic.
 
 **Remark (isotropy is wider than square zero).** The isotropic set is exactly the set of elements whose square has zero scalar part; the square-zero set also asks for the vanishing of the vector part. So square zero is a condition on the element, isotropy a condition on its scalar part alone, and $e_0+e_1$ separates the two: it is isotropic, and its square is $-2e_1$.
 
@@ -75,13 +75,13 @@ a real algebraic cone of real dimension seven through the origin, of real codime
 | Subspace | $K$ on the subspace | Rank over $\mathbb{R}$ | Signature |
 |---|---|---|---|
 | centre $\mathbb{C}e_0$ | $\lambda\overline{\mu}$ | $2$ | $(2,0)$ |
-| vector $\mathbf{e}$ | $-(\mathbf{P},\overline{\mathbf{Q}})$ | $6$ | $(0,6)$ |
+| vector $\mathbf{e}$ | $-(\vec P,\overline{\vec Q})$ | $6$ | $(0,6)$ |
 | quaternion $\mathbb{H}_{\mathbb{B}}$ | $p_0q_0-\sum_kp_kq_k$ | $4$ | $(1,3)$ |
 | anti-quaternion $i\mathbb{H}_{\mathbb{B}}$ | $p_0q_0-\sum_kp_kq_k$ | $4$ | $(1,3)$ |
 | Hermitian $\mathbb{M}_{+}$ | $p_0q_0-\sum_kp_kq_k$ | $4$ | $(1,3)$ |
 | anti-Hermitian $\mathbb{M}_{-}$ | $p_0q_0-\sum_kp_kq_k$ | $4$ | $(1,3)$ |
 
-*Proof.* On the centre, $K(\lambda e_0,\mu e_0)=\lambda\overline{\mu}$, positive of rank two over the real coordinates of $\lambda$. On the vector subspace, $P_0=Q_0=0$ leaves $-(\mathbf{P},\overline{\mathbf{Q}})$, negative definite of rank six over the real coordinates of $\mathbf{P}$. On the real quaternion subspace all coefficients are real, so $K$ is the real bilinear form $p_0q_0-\sum_kp_kq_k$ of signature $(1,3)$. On the anti-quaternion subspace $P_k=ip_k$ with $p_k$ real, so $K(\tilde P,\tilde Q)=p_0q_0-\sum_k(ip_k)\overline{(iq_k)}=p_0q_0-\sum_kp_kq_k$, the same form. On $\mathbb{M}_{+}$ the coefficients are $(p_0,ip_1,ip_2,ip_3)$, and $P_k\overline{Q_k}=(ip_k)\overline{(iq_k)}=(ip_k)(-iq_k)=p_kq_k$, so $K=p_0q_0-\sum_kp_kq_k$; on $\mathbb{M}_{-}$ the roles of the scalar and vector coefficients are exchanged and the same computation applies.
+*Proof.* On the centre, $K(\lambda e_0,\mu e_0)=\lambda\overline{\mu}$, positive of rank two over the real coordinates of $\lambda$. On the vector subspace, $P_0=Q_0=0$ leaves $-(\vec P,\overline{\vec Q})$, negative definite of rank six over the real coordinates of $\vec P$. On the real quaternion subspace all coefficients are real, so $K$ is the real bilinear form $p_0q_0-\sum_kp_kq_k$ of signature $(1,3)$. On the anti-quaternion subspace $P_k=ip_k$ with $p_k$ real, so $K(\tilde P,\tilde Q)=p_0q_0-\sum_k(ip_k)\overline{(iq_k)}=p_0q_0-\sum_kp_kq_k$, the same form. On $\mathbb{M}_{+}$ the coefficients are $(p_0,ip_1,ip_2,ip_3)$, and $P_k\overline{Q_k}=(ip_k)\overline{(iq_k)}=(ip_k)(-iq_k)=p_kq_k$, so $K=p_0q_0-\sum_kp_kq_k$; on $\mathbb{M}_{-}$ the roles of the scalar and vector coefficients are exchanged and the same computation applies.
 
 **Corollary (the form is negative on the vector directions and positive on the centre).** On the decomposition $\mathbb{B}=\mathbb{C}e_0\oplus\mathbf{e}$, the form $K$ is the direct sum of a positive rank-two piece on the centre and a negative rank-six piece on the vector subspace.
 
@@ -143,15 +143,15 @@ The two agree term by term: the natural conjugation sends $\overline{\tilde X}\t
 **Theorem (the four scalar parts).** The four symmetric parts of the four general products have the scalar parts
 
 $$
-\mathrm{Sc}(\mathrm{SPA}(\tilde P,\tilde Q))=P_0Q_0-(\mathbf{P},\mathbf{Q}),
+\mathrm{Sc}(\mathrm{SPA}(\tilde P,\tilde Q))=P_0Q_0-(\vec P,\vec Q),
 \qquad
-\mathrm{Sc}(\mathrm{SQA}(\tilde P,\tilde Q))=P_0Q_0+(\mathbf{P},\mathbf{Q}),
+\mathrm{Sc}(\mathrm{SQA}(\tilde P,\tilde Q))=P_0Q_0+(\vec P,\vec Q),
 $$
 
 $$
-\mathrm{Sc}(\mathrm{SPS}(\tilde P,\tilde Q))=P_0\overline{Q_0}+(\mathbf{P},\overline{\mathbf{Q}})=H(\tilde P,\tilde Q),
+\mathrm{Sc}(\mathrm{SPS}(\tilde P,\tilde Q))=P_0\overline{Q_0}+(\vec P,\overline{\vec Q})=H(\tilde P,\tilde Q),
 \qquad
-\mathrm{Sc}(\mathrm{SQS}(\tilde P,\tilde Q))=P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})=K(\tilde P,\tilde Q).
+\mathrm{Sc}(\mathrm{SQS}(\tilde P,\tilde Q))=P_0\overline{Q_0}-(\vec P,\overline{\vec Q})=K(\tilde P,\tilde Q).
 $$
 
 The first two are the two symmetric bilinear forms of the algebra and the last two the two Hermitian forms, $H$ and $K$, of opposite sign in the vector term; on the real quaternion subspace $K$ coincides with the first bilinear form and $H$ with the second.
@@ -168,13 +168,13 @@ The first two are the two symmetric bilinear forms of the algebra and the last t
 
 **Anisotropic and isotropic.** $K(e_0+e_1,e_0+e_1)=1-1=0$ is isotropic; $K(e_0+2e_1,e_0+2e_1)=1-4=-3$ is anisotropic.
 
-**A complex isotropic element.** $\tilde P=e_0+ie_1$: $K=|1|^{2}-|i|^{2}=0$, isotropic; the element is also of square zero by the family of the diagonal article, since $|\mathbf{c}|^{2}=1=|\alpha|^{4}$.
+**A complex isotropic element.** $\tilde P=e_0+ie_1$: $K=|1|^{2}-|i|^{2}=0$, isotropic; the element is also of square zero by the family of the diagonal article, since $|\vec c|^{2}=1=|\alpha|^{4}$.
 
 **The defect computed.** $\tilde A=e_0$, $\tilde P=e_1$, $\tilde Q=e_2$: $\tilde A\star\tilde P=-e_1$ and $\tilde A\star\tilde Q=-e_2$, so $K(-e_1,-e_2)=K(e_1,e_2)=0$ and $K(\tilde P,\tilde Q)=K(e_1,e_2)=0$: the defect vanishes on this pair. On $\tilde A=\tilde P=e_0+e_1$, $\tilde Q=e_1$ the two values differ, and the defect is the difference of the two displays of the theorem.
 
 ## Summary
 
-The scalar part of the block is the Krein form $K(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\star\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$, Hermitian, with $K(\tilde Q,\tilde Q)=|Q_0|^{2}-\sum_k|Q_k|^{2}$ real. Its Gram matrix is $E=\mathrm{diag}(1,-1,-1,-1)$ in the coefficient basis and $\mathrm{diag}(1,-1,-1,-1,1,-1,-1,-1)$ in the real basis; its inertia is $(1,3)$, its real signature $(2,6)$, its rank four over $\mathbb{C}$ and eight over $\mathbb{R}$, and its radical is zero. Its isotropic cone is $\{|P_0|^{2}=\sum_k|P_k|^{2}\}$, of real dimension seven and real codimension one, and on the remarkable subspaces it restricts to $(2,0)$ on the centre, $(0,6)$ on the vector subspace, and $(1,3)$ on each of the four real four-dimensional subspaces. It is not invariant under the block; the defect is $\mathrm{Sc}(\mathrm{SPA}(\overline{\tilde P},\tilde A)\mathrm{SPA}(\tilde Q,\overline{\tilde A}))-K(\tilde P,\tilde Q)$, and the compatibility that holds is the adjoint relation $K(\tilde A\star\tilde X,\tilde Y)=\overline{K(\tilde X,\tilde A^{\natural}\star\tilde Y)}$. Of the four scalar parts of the row, $K$ and $H=P_0\overline{Q_0}+(\mathbf{P},\overline{\mathbf{Q}})$ are the two Hermitian forms, of opposite sign in the vector term, and they collapse onto the two bilinear forms on the real quaternion subspace.
+The scalar part of the block is the Krein form $K(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\star\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=P_0\overline{Q_0}-(\vec P,\overline{\vec Q})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$, Hermitian, with $K(\tilde Q,\tilde Q)=|Q_0|^{2}-\sum_k|Q_k|^{2}$ real. Its Gram matrix is $E=\mathrm{diag}(1,-1,-1,-1)$ in the coefficient basis and $\mathrm{diag}(1,-1,-1,-1,1,-1,-1,-1)$ in the real basis; its inertia is $(1,3)$, its real signature $(2,6)$, its rank four over $\mathbb{C}$ and eight over $\mathbb{R}$, and its radical is zero. Its isotropic cone is $\{|P_0|^{2}=\sum_k|P_k|^{2}\}$, of real dimension seven and real codimension one, and on the remarkable subspaces it restricts to $(2,0)$ on the centre, $(0,6)$ on the vector subspace, and $(1,3)$ on each of the four real four-dimensional subspaces. It is not invariant under the block; the defect is $\mathrm{Sc}(\mathrm{SPA}(\overline{\tilde P},\tilde A)\mathrm{SPA}(\tilde Q,\overline{\tilde A}))-K(\tilde P,\tilde Q)$, and the compatibility that holds is the adjoint relation $K(\tilde A\star\tilde X,\tilde Y)=\overline{K(\tilde X,\tilde A^{\natural}\star\tilde Y)}$. Of the four scalar parts of the row, $K$ and $H=P_0\overline{Q_0}+(\vec P,\overline{\vec Q})$ are the two Hermitian forms, of opposite sign in the vector term, and they collapse onto the two bilinear forms on the real quaternion subspace.
 
 ## Summary of Notation
 
@@ -184,9 +184,9 @@ The scalar part of the block is the Krein form $K(\tilde P,\tilde Q)=\mathrm{Sc}
 | $E=\mathrm{diag}(1,-1,-1,-1)$ | the Gram matrix of $K$ in the coefficient basis |
 | $(1,3)$; $(2,6)$ | the inertia over $\mathbb{C}$; the signature over $\mathbb{R}$ |
 | $\{|P_0|^{2}=\sum_k|P_k|^{2}\}$ | the isotropic cone |
-| $\mathrm{Sc}(\mathrm{SPA})=P_0Q_0-(\mathbf{P},\mathbf{Q})$ | the first symmetric bilinear scalar part |
-| $\mathrm{Sc}(\mathrm{SQA})=P_0Q_0+(\mathbf{P},\mathbf{Q})$ | the second symmetric bilinear scalar part |
-| $H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\mathbf{P},\overline{\mathbf{Q}})$ | the other Hermitian form, the scalar part of $\mathrm{SPS}$ |
+| $\mathrm{Sc}(\mathrm{SPA})=P_0Q_0-(\vec P,\vec Q)$ | the first symmetric bilinear scalar part |
+| $\mathrm{Sc}(\mathrm{SQA})=P_0Q_0+(\vec P,\vec Q)$ | the second symmetric bilinear scalar part |
+| $H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\vec P,\overline{\vec Q})$ | the other Hermitian form, the scalar part of $\mathrm{SPS}$ |
 | $K(\tilde A\star\tilde X,\tilde Y)=\overline{K(\tilde X,\tilde A^{\natural}\star\tilde Y)}$ | the adjoint relation, the compatibility that holds |
 
 ## Further Reading

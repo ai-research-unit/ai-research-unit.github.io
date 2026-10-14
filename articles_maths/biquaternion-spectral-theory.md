@@ -44,7 +44,7 @@ A biquaternion is written $\tilde{Q} = \sum_{\mu=0}^3 Q_\mu e_\mu$. Its **trace*
 $$
 T(\tilde{Q}) = 2Q_0, \qquad D(\tilde{Q}) = N(\tilde{Q}) = Q_0^2 + Q_1^2 + Q_2^2 + Q_3^2 .
 $$
-Write $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ and let $B = \sqrt{Q_1^2 + Q_2^2 + Q_3^2}$ be a fixed square root, the **complex norm of the vector part**; replacing $B$ by $-B$ changes nothing.
+Write $\vec Q = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ and let $B = \sqrt{Q_1^2 + Q_2^2 + Q_3^2}$ be a fixed square root, the **complex norm of the vector part**; replacing $B$ by $-B$ changes nothing.
 
 **Definition 3.1.** The **spectrum** of $\tilde{Q}$ is $\sigma(\tilde{Q}) = \{\lambda \in \mathbb{C} : \tilde{Q} - \lambda e_0 \text{ is not invertible in } \mathbb{B}\}$, the spectrum of Definition 1.1. Its characteristic polynomial is
 $$
@@ -62,9 +62,9 @@ the two roots coinciding exactly when $B = 0$.
 
 **Theorem 4.1 (Cayley–Hamilton).** Every $\tilde{Q} \in \mathbb{B}$ satisfies $\tilde{Q}^2 - 2Q_0\tilde{Q} + N(\tilde{Q})e_0 = 0$, i.e. $\tilde{Q}^2 - T(\tilde{Q})\tilde{Q} + D(\tilde{Q})e_0 = 0$.
 
-**Proof.** With $\tilde{Q} = Q_0e_0 + \mathbf{Q}$ and $\mathbf{Q}^2 = -B^2 e_0$,
+**Proof.** With $\tilde{Q} = Q_0e_0 + \vec Q$ and $\vec Q^2 = -B^2 e_0$,
 $$
-\tilde{Q}^2 = Q_0^2 e_0 + 2Q_0\mathbf{Q} - B^2 e_0 = 2Q_0\tilde{Q} - (Q_0^2 + B^2)e_0 = 2Q_0\tilde{Q} - N(\tilde{Q})e_0.
+\tilde{Q}^2 = Q_0^2 e_0 + 2Q_0\vec Q - B^2 e_0 = 2Q_0\tilde{Q} - (Q_0^2 + B^2)e_0 = 2Q_0\tilde{Q} - N(\tilde{Q})e_0.
 $$
 
 **Corollary 4.2.** If $N(\tilde{Q}) \neq 0$, then $\tilde{Q}^{-1} = (2Q_0e_0 - \tilde{Q})/N(\tilde{Q}) = \tilde{Q}^{\natural}/N(\tilde{Q})$.
@@ -95,8 +95,8 @@ $$
 **The two cases.** Let $\Delta = -4B^2$ be the discriminant of the characteristic polynomial.
 
 - **$\Delta \neq 0$ ($B \neq 0$).** $m_{\tilde{Q}} = x^2 - 2Q_0x + N(\tilde{Q})$ splits, with roots $Q_0 \pm iB$, and the Chinese remainder theorem gives $\mathbb{C}[\tilde{Q}] \cong \mathbb{C} \times \mathbb{C}$, evaluation at the two roots. This is the semisimple case; $\tilde{Q}$ is diagonalisable with eigenvalues $Q_0 \pm iB$.
-- **$\Delta = 0$ and $\mathbf{Q} \neq 0$ ($B = 0$).** $m_{\tilde{Q}} = (x - Q_0)^2$, and $\mathbb{C}[\tilde{Q}] \cong \mathbb{C}[\epsilon]/(\epsilon^2)$ with $\epsilon = \tilde{Q} - Q_0e_0$ nilpotent of order two. This is the local, non-semisimple case.
-- **$\mathbf{Q} = 0$.** $m_{\tilde{Q}} = x - Q_0$ and $\mathbb{C}[\tilde{Q}] = \mathbb{C}e_0$, of dimension one.
+- **$\Delta = 0$ and $\vec Q \neq 0$ ($B = 0$).** $m_{\tilde{Q}} = (x - Q_0)^2$, and $\mathbb{C}[\tilde{Q}] \cong \mathbb{C}[\epsilon]/(\epsilon^2)$ with $\epsilon = \tilde{Q} - Q_0e_0$ nilpotent of order two. This is the local, non-semisimple case.
+- **$\vec Q = 0$.** $m_{\tilde{Q}} = x - Q_0$ and $\mathbb{C}[\tilde{Q}] = \mathbb{C}e_0$, of dimension one.
 
 So $\dim_{\mathbb{C}} \mathbb{C}[\tilde{Q}]$ is $2$ in the first two cases and $1$ in the scalar case, and the isomorphism type is the same dichotomy as the conjugacy classification of §*Similarity Classes and the Eigenvalue Dichotomy*.
 
@@ -110,11 +110,11 @@ So $\dim_{\mathbb{C}} \mathbb{C}[\tilde{Q}]$ is $2$ in the first two cases and $
 
 (1) **Distinct eigenvalues ($\Delta \neq 0$, i.e. $B \neq 0$).** $\tilde{Q}$ has the two distinct eigenvalues $Q_0 \pm iB$, and its conjugacy class is determined by the unordered pair of eigenvalues, equivalently by $(T,D)$.
 
-2. **Repeated eigenvalue ($\Delta = 0$, i.e. $B = 0$).** The only eigenvalue is $Q_0$, and there are exactly two conjugacy classes with $(T,D) = (2Q_0, Q_0^2)$: the **central class** $\mathbf{Q} = 0$ ($\tilde{Q} = Q_0e_0$) and the **non-semi-simple class** $\mathbf{Q} \neq 0$, $\mathbf{Q}^2 = 0$ (conjugate to the Jordan block with diagonal $Q_0$).
+2. **Repeated eigenvalue ($\Delta = 0$, i.e. $B = 0$).** The only eigenvalue is $Q_0$, and there are exactly two conjugacy classes with $(T,D) = (2Q_0, Q_0^2)$: the **central class** $\vec Q = 0$ ($\tilde{Q} = Q_0e_0$) and the **non-semi-simple class** $\vec Q \neq 0$, $\vec Q^2 = 0$ (conjugate to the Jordan block with diagonal $Q_0$).
 
-Thus $(T,D)$ determines the conjugacy class except on the repeated locus, where the separating invariant is whether $\mathbf{Q} = 0$.
+Thus $(T,D)$ determines the conjugacy class except on the repeated locus, where the separating invariant is whether $\vec Q = 0$.
 
-**Proof.** (1) $p_{\tilde{Q}}$ has two distinct roots, so $\tilde{Q}$ is diagonalizable with them, and any two such elements are similar. (2) $B=0$ gives $\mathbf{Q}^2 = 0$; if $\mathbf{Q}\neq 0$ then $\tilde{Q} - Q_0e_0$ is nonzero with square $0$, so $\tilde{Q}$ is non-semi-simple and hence similar to the Jordan block with diagonal $Q_0$.
+**Proof.** (1) $p_{\tilde{Q}}$ has two distinct roots, so $\tilde{Q}$ is diagonalizable with them, and any two such elements are similar. (2) $B=0$ gives $\vec Q^2 = 0$; if $\vec Q\neq 0$ then $\tilde{Q} - Q_0e_0$ is nonzero with square $0$, so $\tilde{Q}$ is non-semi-simple and hence similar to the Jordan block with diagonal $Q_0$.
 
 In case 2, $N(\tilde{Q}) = Q_0^2$, so the non-semi-simple element is a zero divisor exactly when $Q_0 = 0$.
 
@@ -122,7 +122,7 @@ In case 2, $N(\tilde{Q}) = Q_0^2$, so the non-semi-simple element is a zero divi
 
 **Definition 6.1.** For $\lambda \in \sigma(\tilde{Q})$ the **eigenspace** is $E_\lambda = \{\tilde{P} \in \mathbb{B} : \tilde{Q}\tilde{P} = \lambda \tilde{P}\}$, the eigenspace of left multiplication by $\tilde{Q}$ on $\mathbb{B}$, and $\dim_\mathbb{C} E_\lambda$ is the **geometric multiplicity**.
 
-**Proposition 6.2.** For $\lambda \in \sigma(\tilde{Q})$: (1) if $B \neq 0$ then $\dim_\mathbb{C} E_\lambda = 2$; (2) if $B = 0$ and $\mathbf{Q} = 0$ then $E_{Q_0} = \mathbb{B}$; (3) if $B = 0$ and $\mathbf{Q} \neq 0$ then $\dim_\mathbb{C} E_{Q_0} = 2$.
+**Proposition 6.2.** For $\lambda \in \sigma(\tilde{Q})$: (1) if $B \neq 0$ then $\dim_\mathbb{C} E_\lambda = 2$; (2) if $B = 0$ and $\vec Q = 0$ then $E_{Q_0} = \mathbb{B}$; (3) if $B = 0$ and $\vec Q \neq 0$ then $\dim_\mathbb{C} E_{Q_0} = 2$.
 
 **Proof.** (1) Left multiplication by $\tilde{Q}$ is diagonalizable with the two distinct eigenvalues $Q_0 \pm iB$, each of algebraic multiplicity $2$, hence each eigenspace has dimension $2$. (2) $\tilde{Q} = Q_0e_0$ is central, so $\tilde{Q}\tilde{P} = Q_0\tilde{P}$ for every $\tilde{P}$. (3) Left multiplication by the nilpotent $\tilde{Q} - Q_0e_0$ has square $0$ and rank $2$, hence nullity $2$.
 
@@ -136,11 +136,11 @@ In case 2, $N(\tilde{Q}) = Q_0^2$, so the non-semi-simple element is a zero divi
 
 **Proposition 7.2.** For $\lambda \notin \sigma(\tilde{Q})$,
 $$
-R(\lambda) = \frac{(Q_0-\lambda)e_0 - \mathbf{Q}}{(Q_0-\lambda)^2 + B^2} = \frac{(\tilde{Q} - \lambda e_0)^{\natural}}{p_{\tilde{Q}}(\lambda)}.
+R(\lambda) = \frac{(Q_0-\lambda)e_0 - \vec Q}{(Q_0-\lambda)^2 + B^2} = \frac{(\tilde{Q} - \lambda e_0)^{\natural}}{p_{\tilde{Q}}(\lambda)}.
 $$
-**Proof.** $\tilde{Q} - \lambda e_0$ has conjugate $(Q_0-\lambda)e_0 - \mathbf{Q}$ and norm $(Q_0-\lambda)^2 + B^2 = p_{\tilde{Q}}(\lambda)$; apply Corollary 4.2.
+**Proof.** $\tilde{Q} - \lambda e_0$ has conjugate $(Q_0-\lambda)e_0 - \vec Q$ and norm $(Q_0-\lambda)^2 + B^2 = p_{\tilde{Q}}(\lambda)$; apply Corollary 4.2.
 
-**Corollary 7.3 (analyticity).** $R$ is rational in $\lambda$ with denominator $p_{\tilde{Q}}(\lambda)$, hence holomorphic on $\mathbb{C}\setminus\sigma(\tilde{Q})$, with poles exactly at the two eigenvalues. The pole is simple when $\tilde{Q}$ is diagonalizable, and double when $B = 0$ with $\mathbf{Q} \neq 0$, where $p_{\tilde{Q}} = (\lambda-Q_0)^2$ but the numerator at $\lambda = Q_0$ is $-\mathbf{Q} \neq 0$.
+**Corollary 7.3 (analyticity).** $R$ is rational in $\lambda$ with denominator $p_{\tilde{Q}}(\lambda)$, hence holomorphic on $\mathbb{C}\setminus\sigma(\tilde{Q})$, with poles exactly at the two eigenvalues. The pole is simple when $\tilde{Q}$ is diagonalizable, and double when $B = 0$ with $\vec Q \neq 0$, where $p_{\tilde{Q}} = (\lambda-Q_0)^2$ but the numerator at $\lambda = Q_0$ is $-\vec Q \neq 0$.
 
 Finally, the resolvent satisfies $R(\lambda) - R(\mu) = (\lambda-\mu)R(\lambda)R(\mu)$, since with $A = \tilde{Q}-\lambda e_0$ and $B = \tilde{Q}-\mu e_0$ one has $A^{-1}-B^{-1} = A^{-1}(B-A)B^{-1}$; consequently $R'(\lambda) = R(\lambda)^2$.
 
@@ -150,13 +150,13 @@ Finally, the resolvent satisfies $R(\lambda) - R(\mu) = (\lambda-\mu)R(\lambda)R
 
 **Proposition 8.2.** $\rho(\tilde{Q}) = 0$ iff $\tilde{Q}$ is nilpotent, equivalently $\tilde{Q}^2 = 0$, equivalently $Q_0 = 0$ and $B = 0$.
 
-**Proof.** $\rho = 0$ iff $Q_0 = B = 0$, and then $p_{\tilde{Q}}(\lambda) = \lambda^2$, so $\tilde{Q}^2 = 0$ by Cayley–Hamilton; conversely $\tilde{Q}^2 = 0$ makes $0$ the only eigenvalue. The nonzero pure nilpotents $\mathbf{Q}$ with $\mathbf{Q}^2 = 0$, which are zero divisors, are a special case.
+**Proof.** $\rho = 0$ iff $Q_0 = B = 0$, and then $p_{\tilde{Q}}(\lambda) = \lambda^2$, so $\tilde{Q}^2 = 0$ by Cayley–Hamilton; conversely $\tilde{Q}^2 = 0$ makes $0$ the only eigenvalue. The nonzero pure nilpotents $\vec Q$ with $\vec Q^2 = 0$, which are zero divisors, are a special case.
 
 **Theorem 8.3 (Gelfand).** For any norm on the finite-dimensional algebra $\mathbb{B}$, $\rho(\tilde{Q}) = \lim_{k\to\infty}\|\tilde{Q}^k\|^{1/k}$, independently of the biquaternion norm; with the Euclidean norm this reads $\lim_k\|\tilde{Q}^k\|_E^{1/k}$.
 
 ## The Exponential and the Logarithm
 
-The exponential $\exp(\tilde{Q}) = \sum_n \tilde{Q}^n/n!$ is entire and is the value of $e^A$ at the spectrum, in the holomorphic functional calculus on $\mathbb{C}[\tilde{Q}] = \mathrm{span}_\mathbb{C}\{e_0,\tilde{Q}\}$. The companion article gives $\exp(\tilde{Q}) = e^{Q_0}(\cos B\,e_0 + \sin B\,\hat{n})$ for $B \neq 0$ with $\hat{n} = \mathbf{Q}/B$, and $\exp(\tilde{Q}) = e^{Q_0}(e_0 + \mathbf{Q})$ for $B = 0$; the eigenvalues are $e^{Q_0 \pm iB}$ in the first case and the repeated $e^{Q_0}$ in the second.
+The exponential $\exp(\tilde{Q}) = \sum_n \tilde{Q}^n/n!$ is entire and is the value of $e^A$ at the spectrum, in the holomorphic functional calculus on $\mathbb{C}[\tilde{Q}] = \mathrm{span}_\mathbb{C}\{e_0,\tilde{Q}\}$. The companion article gives $\exp(\tilde{Q}) = e^{Q_0}(\cos B\,e_0 + \sin B\,\hat{n})$ for $B \neq 0$ with $\hat{n} = \vec Q/B$, and $\exp(\tilde{Q}) = e^{Q_0}(e_0 + \vec Q)$ for $B = 0$; the eigenvalues are $e^{Q_0 \pm iB}$ in the first case and the repeated $e^{Q_0}$ in the second.
 
 **Non-injectivity.** Since $2\pi i n e_0$ is central, $\exp(\tilde{Q} + 2\pi i n e_0) = \exp(\tilde{Q})$ for every integer $n$; in particular $\exp(0) = \exp(2\pi i e_0) = e_0$, although $2\pi i e_0 \neq 0$.
 
@@ -202,7 +202,7 @@ For $T = [q]$ this gives the $2$-sphere $\sigma_S([q]) = \{v^{-1}qv : v \in \mat
 
 **Theorem 12.3.** If $T \in M_n(\mathbb{H})$ is normal, then $T = U\,\mathrm{diag}(\lambda_1,\dots,\lambda_n)\,U^*$ for a unitary $U$ and complex $\lambda_i$ in a fixed slice, and $\sigma_S(T) = \bigcup_{i=1}^n [\lambda_i]$, where $[\lambda]$ is the conjugacy class $\{v^{-1}\lambda v : v \in \mathbb{H}^\times\}$. For Hermitian $T$ the $\lambda_i$ are real; for unitary $T$ they have modulus $1$.
 
-**Relation to the biquaternions.** For a real quaternion $q$ viewed as a biquaternion, the complex spectrum $\{q_0 \pm i|\mathbf{q}|\}$ is the slice $\sigma(q) = [q] \cap \mathbb{C}_i$ of the S-sphere $[q]$. Thus the S-spectrum plays for quaternionic matrices the role the complex spectrum plays for biquaternion matrices.
+**Relation to the biquaternions.** For a real quaternion $q$ viewed as a biquaternion, the complex spectrum $\{q_0 \pm i|\vec q|\}$ is the slice $\sigma(q) = [q] \cap \mathbb{C}_i$ of the S-sphere $[q]$. Thus the S-spectrum plays for quaternionic matrices the role the complex spectrum plays for biquaternion matrices.
 
 ## Summary
 

@@ -8,11 +8,11 @@ The theorem is not among the results the companion articles derive. *Canonical Q
 
 The division between what is established and what is only transcribed is stated at the outset and kept explicit.
 
-- **Established, and recomputed below.** The rotation group acts inside $\mathbb{B}$ through the rotor group of unit real quaternions, which is the double cover of $SO(3)$; the rotor through $2\pi$ about any axis is $-e_0$. Under the Lorentz action, the half-integer-spin representations are the spinor module and its tensor products, on which $-e_0$ acts as $-\mathrm{id}$, while the integer-spin representations descend to the Lorentz group, on which $-e_0$ acts as $+\mathrm{id}$. For the free spin-$\tfrac12$ field the equal-time **anticommutator** is a delta and the equal-time **commutator** is not: the former receives a $\delta^{(3)}(\boldsymbol\Delta)$ from the even part of the spin sum, the latter only a Bessel kernel that is nonzero at every spatial separation. In the single-mode truncation of the algebra the spin ladder operators *are* the mode ladder operators, $\tilde a=\tilde S_+/\hbar$, with $\{\tilde a,\tilde a^\dagger\}=e_0$, and the fermion-parity grading is the inner automorphism by the Hermitian involution $(-1)^F=ie_3=2\tilde S_3/\hbar$. The algebra hosts one such fermionic mode and no bosonic mode, for a reason that is a trace identity.
+- **Established, and recomputed below.** The rotation group acts inside $\mathbb{B}$ through the rotor group of unit real quaternions, which is the double cover of $SO(3)$; the rotor through $2\pi$ about any axis is $-e_0$. Under the Lorentz action, the half-integer-spin representations are the spinor module and its tensor products, on which $-e_0$ acts as $-\mathrm{id}$, while the integer-spin representations descend to the Lorentz group, on which $-e_0$ acts as $+\mathrm{id}$. For the free spin-$\tfrac12$ field the equal-time **anticommutator** is a delta and the equal-time **commutator** is not: the former receives a $\delta^{(3)}(\vec\Delta)$ from the even part of the spin sum, the latter only a Bessel kernel that is nonzero at every spatial separation. In the single-mode truncation of the algebra the spin ladder operators *are* the mode ladder operators, $\tilde a=\tilde S_+/\hbar$, with $\{\tilde a,\tilde a^\dagger\}=e_0$, and the fermion-parity grading is the inner automorphism by the Hermitian involution $(-1)^F=ie_3=2\tilde S_3/\hbar$. The algebra hosts one such fermionic mode and no bosonic mode, for a reason that is a trace identity.
 - **Transcribed, not derived.** The force of the theorem — that among the four pairings of spin class with bracket only two survive — is imported from relativistic quantum field theory. What the biquaternion presentation adds is that the two surviving pairings are the two *inequivalent structures the algebra actually carries*: the double-valued module for half-integer spin and the single-valued vector/adjoint representation for integer spin, together with the trace identity that decides which bracket the finite algebra can host.
 - **Gap, left visible.** The article does not *derive* spin–statistics from the biquaternion algebra. The one-mode coincidence is exact but finite-dimensional, and it does not lift to the field. This gap is stated in the sections where it arises and collected in the open questions.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$ and $e_je_k=\epsilon_{jkl}e_l$ for $j\ne k$, and $i$ is the scalar imaginary with $i^2=-1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace, home of the rotation rotors, and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$ is the complex scalar subspace, the centre of the algebra. The isomorphism with $M_2(\mathbb{C})$ is $\mathsf{M}_2(e_k)=-i\sigma_k$, so that $\mathsf{M}_2(ie_k)=\sigma_k$, and the trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ is inherited unchanged. In the field-theoretic sections we work in natural units $\hbar=c=1$ and use the gamma-matrix convention of the parents, $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$ with $g=\mathrm{diag}(+1,-1,-1,-1)$, $\bar\psi=\psi^\dagger\gamma^0$, and $\not p=\gamma^0 E_{\mathbf p}-\boldsymbol\gamma\cdot\mathbf p$; the relative sign of this Clifford metric with the $ict$ gradient of the Maxwell articles is the convention the parents flag, and is not used here.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0=1,e_1,e_2,e_3$ with $e_k^2=-e_0$ and $e_je_k=\epsilon_{jkl}e_l$ for $j\ne k$, and $i$ is the scalar imaginary with $i^2=-1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace, home of the rotation rotors, and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$ is the complex scalar subspace, the centre of the algebra. The isomorphism with $M_2(\mathbb{C})$ is $\mathsf{M}_2(e_k)=-i\sigma_k$, so that $\mathsf{M}_2(ie_k)=\sigma_k$, and the trace formula $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ is inherited unchanged. In the field-theoretic sections we work in natural units $\hbar=c=1$ and use the gamma-matrix convention of the parents, $\{\gamma^\mu,\gamma^\nu\}=2g^{\mu\nu}I_4$ with $g=\mathrm{diag}(+1,-1,-1,-1)$, $\bar\psi=\psi^\dagger\gamma^0$, and $\not p=\gamma^0 E_{\vec p}-\boldsymbol\gamma\cdot\vec p$; the relative sign of this Clifford metric with the $ict$ gradient of the Maxwell articles is the convention the parents flag, and is not used here.
 
 ## The Theorem and Its Ingredients
 
@@ -40,8 +40,8 @@ The relevant representations of the cover are the two-valued ones. The biquatern
 
 | Representation | Carrier | Action of the rotor | Action of $-e_0$ | Spin |
 |---|---|---|---|---|
-| Defining spinor module | $\mathbb{C}^2$ (module) | left multiplication $\psi\mapsto\tilde\Lambda\psi$ | $-\mathrm{id}$ | half-integer ($\tfrac12$) |
-| Vector (adjoint) | $\mathbb{M}_-$ | conjugation $\tilde{Q}\mapsto\tilde\Lambda\tilde{Q}\tilde\Lambda^{*}$ | $+\mathrm{id}$ | integer ($1$) |
+| Defining spinor module | $\mathbb{C}^2$ (module) | left multiplication $\psi\mapsto\tilde U\psi$ | $-\mathrm{id}$ | half-integer ($\tfrac12$) |
+| Vector (adjoint) | $\mathbb{M}_-$ | conjugation $\tilde{Q}\mapsto\tilde U\tilde{Q}\tilde U^{*}$ | $+\mathrm{id}$ | integer ($1$) |
 | Descended tensor powers | tensors over $\mathbb{M}_-$ | conjugation / tensor | $+\mathrm{id}$ | integer |
 | Genuine spin tensor powers | tensors over the module | left multiplication | $(-1)^{2s}$ | half-integer |
 
@@ -88,11 +88,13 @@ $$
 So the truncated ladder satisfies the **fermionic** canonical anticommutation relations exactly, with no truncation error, while its commutator fails the bosonic relation by a nonzero, non-central element. The number operator and the fermion-parity element are
 
 $$
-\tilde N=\tilde a^\dagger\tilde a=\tfrac12(e_0-ie_3)=\tilde\Pi_2,\qquad
+\tilde N=\tilde a^\dagger\tilde a=\tfrac12(e_0-ie_3)=\tilde\Pi_-,\qquad
 (-1)^F=e_0-2\tilde N=ie_3=\frac{2\tilde S_3}{\hbar},
 $$
 
 with $\tilde N^2=\tilde N$, so that $\tilde N$ is a pure-state projector and the single-mode occupation is valued in $\{0,1\}$. The parity element is Hermitian, squares to $e_0$, and gives the $\mathbb{Z}/2$ grading by inner automorphism,
+
+Here $ie_3$ is a root of $+1$, $(ie_3)^2=e_0$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
 
 $$
 (-1)^F\tilde a\,(-1)^F=-\tilde a,\qquad
@@ -116,65 +118,65 @@ The dimension count makes the same point. $\dim_\mathbb{C}M_2(\mathbb{C})=4=\dim
 The operator-level content of the theorem is a computation with the parents' free field. The mode expansion is
 
 $$
-\hat\psi(x)=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{1}{\sqrt{2E_{\mathbf p}}}
-\sum_r\Big[\hat a_r(\mathbf p)\,u^{(r)}(\mathbf p)\,e^{-ip\cdot x}
-+\hat b_r^\dagger(\mathbf p)\,v^{(r)}(\mathbf p)\,e^{+ip\cdot x}\Big],
+\hat\psi(x)=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{1}{\sqrt{2E_{\vec p}}}
+\sum_r\Big[\hat a_r(\vec p)\,u^{(r)}(\vec p)\,e^{-ip\cdot x}
++\hat b_r^\dagger(\vec p)\,v^{(r)}(\vec p)\,e^{+ip\cdot x}\Big],
 $$
 
 with $\hat\psi^\dagger$ the adjoint and the parents' spinors and spin sums, $\sum_r u^{(r)}\bar u^{(r)}=\not p+m$ and $\sum_r v^{(r)}\bar v^{(r)}=\not p-m$, hence
 
 $$
-\sum_r u^{(r)}u^{(r){}^{*}}=E_{\mathbf p}I_4+m\gamma^0+\gamma^0\boldsymbol\gamma\cdot\mathbf p,\qquad
-\sum_r v^{(r)}v^{(r){}^{*}}=E_{\mathbf p}I_4-m\gamma^0+\gamma^0\boldsymbol\gamma\cdot\mathbf p .
+\sum_r u^{(r)}u^{(r){}^{*}}=E_{\vec p}I_4+m\gamma^0+\gamma^0\boldsymbol\gamma\cdot\vec p,\qquad
+\sum_r v^{(r)}v^{(r){}^{*}}=E_{\vec p}I_4-m\gamma^0+\gamma^0\boldsymbol\gamma\cdot\vec p .
 $$
 
 The field is a spinor-module field; the biquaternion content is the module on which it is built and the notation, and the mode algebra is imposed. Two choices are available. The **Fermi choice** is
-$\{\hat a_r(\mathbf p),\hat a_s^\dagger(\mathbf q)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\mathbf p-\mathbf q)$, and likewise for $\hat b$, with all other brackets vanishing; the **Bose choice** replaces the braces by brackets.
+$\{\hat a_r(\vec p),\hat a_s^\dagger(\vec q)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec q)$, and likewise for $\hat b$, with all other brackets vanishing; the **Bose choice** replaces the braces by brackets.
 
-**The anticommutator (Fermi choice).** At equal times $x^0=y^0$ the two branches enter with opposite phases, and with $\theta=\mathbf p\cdot\boldsymbol\Delta$, $\boldsymbol\Delta=\mathbf x-\mathbf y$ (the sign of $\theta$ is fixed by the mode-expansion convention and drops out of the anticommutator, only $\cos\theta$ surviving there),
+**The anticommutator (Fermi choice).** At equal times $x^0=y^0$ the two branches enter with opposite phases, and with $\theta=\vec p\cdot\vec\Delta$, $\vec\Delta=\vec x-\vec y$ (the sign of $\theta$ is fixed by the mode-expansion convention and drops out of the anticommutator, only $\cos\theta$ surviving there),
 
 $$
 \sum_r\Big[u^{(r)}u^{(r){}^{*}}e^{+i\theta}+v^{(r)}v^{(r){}^{*}}e^{-i\theta}\Big]
-=2E_{\mathbf p}\cos\theta\,I_4
-+2\cos\theta\,\gamma^0\boldsymbol\gamma\cdot\mathbf p
+=2E_{\vec p}\cos\theta\,I_4
++2\cos\theta\,\gamma^0\boldsymbol\gamma\cdot\vec p
 +2im\sin\theta\,\gamma^0 .
 $$
 
-The map $\mathbf p\mapsto-\mathbf p$ sends $\theta\mapsto-\theta$ and $\boldsymbol\gamma\cdot\mathbf p\mapsto-\boldsymbol\gamma\cdot\mathbf p$. The first term is even and the second and third are odd, so the odd terms vanish under symmetric integration and
+The map $\vec p\mapsto-\vec p$ sends $\theta\mapsto-\theta$ and $\boldsymbol\gamma\cdot\vec p\mapsto-\boldsymbol\gamma\cdot\vec p$. The first term is even and the second and third are odd, so the odd terms vanish under symmetric integration and
 
 $$
-\{\hat\psi_a(x,t),\hat\psi_b^\dagger(y,t)\}=\delta_{ab}\,\delta^{(3)}(\mathbf x-\mathbf y).
+\{\hat\psi_a(x,t),\hat\psi_b^\dagger(y,t)\}=\delta_{ab}\,\delta^{(3)}(\vec x-\vec y).
 $$
 
-The spinorial part is the term $2\cos\theta\,\gamma^0\boldsymbol\gamma\cdot\mathbf p$ — the part that carries the spin structure through $\boldsymbol\gamma\cdot\mathbf p$. It is odd in $\mathbf p$ despite carrying the same $\cos\theta$ phase as the scalar term, and it cancels. Reading the two terms as "same phase, therefore same fate" is exactly the error the parity check is there to catch: the phase is even, but the spin factor $\boldsymbol\gamma\cdot\mathbf p$ is odd, and the product is odd. Division by $2E_{\mathbf p}$ leaves the even part $\cos\theta\,I_4$, which integrates to $\delta^{(3)}(\boldsymbol\Delta)$, and the anticommutator is local.
+The spinorial part is the term $2\cos\theta\,\gamma^0\boldsymbol\gamma\cdot\vec p$ — the part that carries the spin structure through $\boldsymbol\gamma\cdot\vec p$. It is odd in $\vec p$ despite carrying the same $\cos\theta$ phase as the scalar term, and it cancels. Reading the two terms as "same phase, therefore same fate" is exactly the error the parity check is there to catch: the phase is even, but the spin factor $\boldsymbol\gamma\cdot\vec p$ is odd, and the product is odd. Division by $2E_{\vec p}$ leaves the even part $\cos\theta\,I_4$, which integrates to $\delta^{(3)}(\vec\Delta)$, and the anticommutator is local.
 
 **The commutator (Bose choice for the same field).** Replacing the plus between the branches by a minus, the same spin sums give
 
 $$
 \sum_r\Big[u^{(r)}u^{(r){}^{*}}e^{+i\theta}-v^{(r)}v^{(r){}^{*}}e^{-i\theta}\Big]
-=2iE_{\mathbf p}\sin\theta\,I_4
+=2iE_{\vec p}\sin\theta\,I_4
 +2m\cos\theta\,\gamma^0
-+2i\sin\theta\,\gamma^0\boldsymbol\gamma\cdot\mathbf p .
++2i\sin\theta\,\gamma^0\boldsymbol\gamma\cdot\vec p .
 $$
 
-Here the even part is the last two terms — $2iE_{\mathbf p}\sin\theta\,I_4$ is odd — and it does **not** vanish:
+Here the even part is the last two terms — $2iE_{\vec p}\sin\theta\,I_4$ is odd — and it does **not** vanish:
 
 $$
 [\hat\psi_a(x,t),\hat\psi_b^\dagger(y,t)]
-=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{1}{2E_{\mathbf p}}
-\Big[2m\cos\theta\,\gamma^0+2i\sin\theta\,\gamma^0\boldsymbol\gamma\cdot\mathbf p\Big]_{ab},
+=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{1}{2E_{\vec p}}
+\Big[2m\cos\theta\,\gamma^0+2i\sin\theta\,\gamma^0\boldsymbol\gamma\cdot\vec p\Big]_{ab},
 $$
 
 after the odd term is dropped. This remaining integral evaluates to
 
 $$
 [\hat\psi(x,t),\hat\psi^\dagger(y,t)]
-=\gamma^0\big(m-i\boldsymbol\gamma\cdot\nabla_{\boldsymbol\Delta}\big)F(\boldsymbol\Delta),
+=\gamma^0\big(m-i\boldsymbol\gamma\cdot\nabla_{\vec\Delta}\big)F(\vec\Delta),
 \qquad
-F(\boldsymbol\Delta)=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{1}{E_{\mathbf p}}\cos(\mathbf p\cdot\boldsymbol\Delta),
+F(\vec\Delta)=\int\!\frac{d^3p}{(2\pi)^3}\,\frac{1}{E_{\vec p}}\cos(\vec p\cdot\vec\Delta),
 $$
 
-and for $m>0$ the kernel is $F(\boldsymbol\Delta)=\dfrac{m}{2\pi^2|\boldsymbol\Delta|}\,K_1\!\big(m|\boldsymbol\Delta|\big)$, the modified Bessel function of the second kind. The identity $\int_0^\infty\frac{p}{E}\sin(p\Delta)\,dp=mK_1(m\Delta)$ was checked numerically for $m=1$ and $\Delta=0.5,2,5,10$, to thirty digits. The kernel is nonzero for **every** $\boldsymbol\Delta\ne 0$; it decays exponentially for large separations, but it does not vanish. So at equal times and spatial separation $\boldsymbol\Delta\ne 0$ — a spacelike separation — the commutator of the spin-$\tfrac12$ field is nonzero, while the anticommutator is zero. The Bose choice fails microcausality for a half-integer-spin field.
+and for $m>0$ the kernel is $F(\vec\Delta)=\dfrac{m}{2\pi^2|\vec\Delta|}\,K_1\!\big(m|\vec\Delta|\big)$, the modified Bessel function of the second kind. The identity $\int_0^\infty\frac{p}{E}\sin(p\Delta)\,dp=mK_1(m\Delta)$ was checked numerically for $m=1$ and $\Delta=0.5,2,5,10$, to thirty digits. The kernel is nonzero for **every** $\vec\Delta\ne 0$; it decays exponentially for large separations, but it does not vanish. So at equal times and spatial separation $\vec\Delta\ne 0$ — a spacelike separation — the commutator of the spin-$\tfrac12$ field is nonzero, while the anticommutator is zero. The Bose choice fails microcausality for a half-integer-spin field.
 
 The same content has a covariant shorthand. With the field quantized by anticommutators, the general two-point functions are
 
@@ -191,14 +193,14 @@ where $\Delta_{\mathrm{A}}$ is the antisymmetric combination of the two branch p
 The third ingredient is positivity, and it is where the finite algebra has a native statement. With the mode expansion, the Hamiltonian of the free spinor field is
 
 $$
-\hat H=\sum_r\int\!\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p}\,
+\hat H=\sum_r\int\!\frac{d^3p}{(2\pi)^3}\,E_{\vec p}\,
 \big(\hat a_r^\dagger\hat a_r-\hat b_r\hat b_r^\dagger\big).
 $$
 
 The sign of the antiparticle term is decided by the bracket. With the **Fermi choice**, $\hat b\hat b^\dagger=e_0-\hat b^\dagger\hat b$, so after normal ordering
 
 $$
-\hat H=\sum_r\int\!\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p}\,
+\hat H=\sum_r\int\!\frac{d^3p}{(2\pi)^3}\,E_{\vec p}\,
 \big(\hat a_r^\dagger\hat a_r+\hat b_r^\dagger\hat b_r\big)+E_0,
 $$
 
@@ -227,9 +229,9 @@ The table also displays what the framework does and does not explain. The *spin*
 
 - The rotor group of unit real quaternions is the double cover of the rotation group; the rotor through $2\pi$ about any axis is $-e_0$, and through $4\pi$ is $e_0$.
 - Under the rotor action, the half-integer-spin representations live on the spinor module and its tensor powers, where $-e_0$ acts as $(-1)^{2s}=-1$, while the integer-spin representations live on $\mathbb{M}_-$ and its tensor powers, where $-e_0$ acts as $+1$. The algebra affords $j=\tfrac12$ as a module, $j=0$ on the centre under conjugation, and $j=1$ through the adjoint action on $\mathbb{M}_-$.
-- The single-mode ladder operators are the spin ladder operators, $\tilde a=\tilde S_+/\hbar$, and satisfy $\{\tilde a,\tilde a^\dagger\}=e_0$; the number operator is the idempotent $\tilde\Pi_2$; and the fermion-parity grading is the inner automorphism by $(-1)^F=ie_3=2\tilde S_3/\hbar$, an element of $\mathbb{M}_+$.
+- The single-mode ladder operators are the spin ladder operators, $\tilde a=\tilde S_+/\hbar$, and satisfy $\{\tilde a,\tilde a^\dagger\}=e_0$; the number operator is the idempotent $\tilde\Pi_-$; and the fermion-parity grading is the inner automorphism by $(-1)^F=ie_3=2\tilde S_3/\hbar$, an element of $\mathbb{M}_+$.
 - No bosonic mode exists in $\mathbb{B}$: a canonical commutator would be central and its trace would vanish, forcing it to zero.
-- For the free spin-$\tfrac12$ field built on the module, the equal-time anticommutator is $\delta_{ab}\delta^{(3)}(\boldsymbol\Delta)$ and the equal-time commutator is a nonzero Bessel kernel at every $\boldsymbol\Delta\ne 0$. The spinorial part of the anticommutator, $2\cos\theta\,\gamma^0\boldsymbol\gamma\cdot\mathbf p$, is odd in $\mathbf p$ and cancels; this was checked independently of the terms that suggested it.
+- For the free spin-$\tfrac12$ field built on the module, the equal-time anticommutator is $\delta_{ab}\delta^{(3)}(\vec\Delta)$ and the equal-time commutator is a nonzero Bessel kernel at every $\vec\Delta\ne 0$. The spinorial part of the anticommutator, $2\cos\theta\,\gamma^0\boldsymbol\gamma\cdot\vec p$, is odd in $\vec p$ and cancels; this was checked independently of the terms that suggested it.
 - The sign in $\tilde a\tilde a^\dagger=e_0\mp\tilde a^\dagger\tilde a$ is the sign of the antiparticle term in the Hamiltonian and the sign that decides positivity of the norm.
 
 **Transcribed, not derived.**
@@ -253,7 +255,7 @@ The table also displays what the framework does and does not explain. The *spin*
 
 **4. Integer-spin quantization in the algebra.** The vector representation appears through the adjoint action on $\mathbb{M}_-$, and its quantization is standard and imported. Is there a native construction of the integer-spin Fock space from the algebra that mirrors the single-mode fermionic one, and if not, what obstructs it beyond the trace identity?
 
-**5. The massless limit.** The microcausality failure of the commutator was computed at $m>0$, where the surviving kernel is the Bessel function $K_1$. As $m\to 0$ the kernel becomes $1/(2\pi^2|\boldsymbol\Delta|^2)$ and still does not vanish; the massless case is not qualitatively different, but the two helicity states of the Weyl field and the role of chirality in the theorem have not been developed here.
+**5. The massless limit.** The microcausality failure of the commutator was computed at $m>0$, where the surviving kernel is the Bessel function $K_1$. As $m\to 0$ the kernel becomes $1/(2\pi^2|\vec\Delta|^2)$ and still does not vanish; the massless case is not qualitatively different, but the two helicity states of the Weyl field and the role of chirality in the theorem have not been developed here.
 
 **6. Empirical content.** The construction reproduces standard field theory. Any deviation would have to appear where the algebra is used beyond transcription — for example in a modification of the one-mode identification or in the coupling to the material sector; none is visible at the level developed here.
 
@@ -261,7 +263,7 @@ The table also displays what the framework does and does not explain. The *spin*
 
 The spin–statistics theorem pairs half-integer spin with anticommutators and integer spin with commutators. In the biquaternion framework the spin half of the theorem is algebraic and exact: the rotor group of unit real quaternions is the double cover of the rotation group, the rotor through $2\pi$ is $-e_0$, half-integer-spin representations live on the spinor module where $-e_0$ acts as $-\mathrm{id}$, and integer-spin representations live on the material sector $\mathbb{M}_-$ where it acts as $+\mathrm{id}$. The framework's finite algebra also contains one fermionic mode, whose ladder operators are the spin ladder operators, $\tilde a=\tilde S_+/\hbar$, and whose parity grading is the Hermitian element $(-1)^F=ie_3=2\tilde S_3/\hbar$; no bosonic mode exists, because a canonical commutator would be central and traceless.
 
-The statistics half is transcribed with the parents' field. For the free spin-$\tfrac12$ field, the equal-time anticommutator is $\delta_{ab}\delta^{(3)}(\boldsymbol\Delta)$, the spinorial term $2\cos\theta\,\gamma^0\boldsymbol\gamma\cdot\mathbf p$ cancelling as an odd function of $\mathbf p$; the equal-time commutator, by contrast, leaves the Bessel kernel $\gamma^0(m-i\boldsymbol\gamma\cdot\nabla)F(\boldsymbol\Delta)$ and fails to vanish at any spatial separation. The same sign that selects the anticommutator selects the positive sign in $\tilde a\tilde a^\dagger=e_0-\tilde a^\dagger\tilde a$, and hence a bounded Hamiltonian and a positive-definite norm.
+The statistics half is transcribed with the parents' field. For the free spin-$\tfrac12$ field, the equal-time anticommutator is $\delta_{ab}\delta^{(3)}(\vec\Delta)$, the spinorial term $2\cos\theta\,\gamma^0\boldsymbol\gamma\cdot\vec p$ cancelling as an odd function of $\vec p$; the equal-time commutator, by contrast, leaves the Bessel kernel $\gamma^0(m-i\boldsymbol\gamma\cdot\nabla)F(\vec\Delta)$ and fails to vanish at any spatial separation. The same sign that selects the anticommutator selects the positive sign in $\tilde a\tilde a^\dagger=e_0-\tilde a^\dagger\tilde a$, and hence a bounded Hamiltonian and a positive-definite norm.
 
 What the framework establishes is that the two pairings which survive the theorem are the two inequivalent structures the algebra actually carries, and that the $2\pi$ sign which distinguishes them is an element of the algebra. What it does not establish is that the algebra forces the pairing; spin–statistics is exhibited in biquaternionic form, not derived from it. The one-mode coincidence is the visible edge of the question, and it is left as the article's central open problem.
 
@@ -280,19 +282,19 @@ What the framework establishes is that the two pairings which survive the theore
 | $\tilde R(2\pi,\hat n)=-e_0$, $\tilde R(4\pi,\hat n)=e_0$ | The two-valued sign of the spinor module |
 | $\tilde S_k=\tfrac{\hbar}{2}ie_k$, $\tilde S_\pm=\tfrac{\hbar}{2}(ie_1\mp e_2)$ | Spin operators in $\mathbb{M}_+$; ladders in $\mathbb{B}$ (they are not Hermitian) |
 | $\tilde a=\tfrac12(ie_1-e_2)=\tilde S_+/\hbar$, $\tilde a^\dagger=\tilde S_-/\hbar$ | Single fermionic mode ladder |
-| $\tilde N=\tilde a^\dagger\tilde a=\tfrac12(e_0-ie_3)=\tilde\Pi_2$ | Single-mode number operator (idempotent) |
+| $\tilde N=\tilde a^\dagger\tilde a=\tfrac12(e_0-ie_3)=\tilde\Pi_-$ | Single-mode number operator (idempotent) |
 | $(-1)^F=ie_3=e_0-2\tilde N=2\tilde S_3/\hbar$ | Fermion parity; Hermitian involution in $\mathbb{M}_+$ |
 | $\{\tilde a,\tilde a^\dagger\}=e_0$, $[\tilde a,\tilde a^\dagger]=ie_3$ | Fermionic mode relation; failure of the bosonic relation |
 | $\hat\psi$, $\bar{\hat\psi}=\hat\psi^\dagger\gamma^0$ | Quantized spinor-module field and its Dirac adjoint |
-| $\hat a_r(\mathbf p),\hat b_r^\dagger(\mathbf p)$ | Annihilation and antiparticle creation operators |
-| $u^{(r)}(\mathbf p),v^{(r)}(\mathbf p)$ | Positive- and negative-frequency spinors (from the parents) |
-| $\sum_r u^{(r)}u^{(r){}^{*}}=E_{\mathbf p}I_4+m\gamma^0+\gamma^0\boldsymbol\gamma\cdot\mathbf p$ | Spin sum (likewise $v$ with $-m$) |
-| $\theta=\mathbf p\cdot\boldsymbol\Delta$, $\boldsymbol\Delta=\mathbf x-\mathbf y$ | Phase and spatial separation in the equal-time brackets |
-| $\{\hat\psi_a,\hat\psi_b^\dagger\}=\delta_{ab}\delta^{(3)}(\boldsymbol\Delta)$ | Local equal-time anticommutator |
-| $[\hat\psi,\hat\psi^\dagger]=\gamma^0(m-i\boldsymbol\gamma\cdot\nabla)F(\boldsymbol\Delta)$ | Nonlocal equal-time commutator |
-| $F(\boldsymbol\Delta)=\frac{m}{2\pi^2|\boldsymbol\Delta|}K_1(m|\boldsymbol\Delta|)$ | Surviving commutator kernel ($m>0$) |
+| $\hat a_r(\vec p),\hat b_r^\dagger(\vec p)$ | Annihilation and antiparticle creation operators |
+| $u^{(r)}(\vec p),v^{(r)}(\vec p)$ | Positive- and negative-frequency spinors (from the parents) |
+| $\sum_r u^{(r)}u^{(r){}^{*}}=E_{\vec p}I_4+m\gamma^0+\gamma^0\boldsymbol\gamma\cdot\vec p$ | Spin sum (likewise $v$ with $-m$) |
+| $\theta=\vec p\cdot\vec\Delta$, $\vec\Delta=\vec x-\vec y$ | Phase and spatial separation in the equal-time brackets |
+| $\{\hat\psi_a,\hat\psi_b^\dagger\}=\delta_{ab}\delta^{(3)}(\vec\Delta)$ | Local equal-time anticommutator |
+| $[\hat\psi,\hat\psi^\dagger]=\gamma^0(m-i\boldsymbol\gamma\cdot\nabla)F(\vec\Delta)$ | Nonlocal equal-time commutator |
+| $F(\vec\Delta)=\frac{m}{2\pi^2|\vec\Delta|}K_1(m|\vec\Delta|)$ | Surviving commutator kernel ($m>0$) |
 | $\Delta_{\mathrm{A}}(x-y)$, $G_{\mathrm{S}}(x-y)$ | Antisymmetric (Pauli–Jordan-type) and symmetric two-point kernels |
-| $\hat H=\sum_r\int\frac{d^3p}{(2\pi)^3}E_{\mathbf p}(\hat a_r^\dagger\hat a_r+\hat b_r^\dagger\hat b_r)+E_0$ | Normal-ordered Hamiltonian (Fermi choice) |
+| $\hat H=\sum_r\int\frac{d^3p}{(2\pi)^3}E_{\vec p}(\hat a_r^\dagger\hat a_r+\hat b_r^\dagger\hat b_r)+E_0$ | Normal-ordered Hamiltonian (Fermi choice) |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 

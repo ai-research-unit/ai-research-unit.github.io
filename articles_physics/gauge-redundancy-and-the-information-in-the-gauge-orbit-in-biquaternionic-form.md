@@ -32,7 +32,7 @@ $$
 \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial_{ict}^2 + \Delta = \Delta - c^{-2}\partial_t^2 ,
 $$
 
-the series convention. The connection is $\tilde{A} = \sum_{\mu=0}^{3}A_\mu e_\mu = i\phi/c\,e_0 + \mathbf{A} \in \mathbb{M}_-$, with $A_0 = i\phi/c$ purely imaginary and $A_1,A_2,A_3$ real; it transforms as above under a real gauge function $\Gamma$. The coupling is written $\kappa = q/\hbar$, so that $D = \tilde{\nabla} + i\kappa\tilde{A}$ and $D_\mu = \partial_\mu + i\kappa A_\mu$. The gauge scalar is $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged.
+the series convention. The connection is $\tilde{A} = \sum_{\mu=0}^{3}A_\mu e_\mu = i\phi/c\,e_0 + \vec A \in \mathbb{M}_-$, with $A_0 = i\phi/c$ purely imaginary and $A_1,A_2,A_3$ real; it transforms as above under a real gauge function $\Gamma$. The coupling is written $\kappa = q/\hbar$, so that $D = \tilde{\nabla} + i\kappa\tilde{A}$ and $D_\mu = \partial_\mu + i\kappa A_\mu$. The gauge scalar is $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged.
 
 ## The Gauge Orbit as a Torsor
 
@@ -125,7 +125,7 @@ because $\tilde{\nabla}^{\natural}\tilde{\nabla}\Gamma = \Box\Gamma\,e_0$ is a p
 The scalar part of $\tilde{\nabla}^{\natural}\tilde{A}$ is the gauge scalar
 
 $$
-S = \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) = \partial_{ict}A_0 + \mathrm{div}\,\mathbf{A},
+S = \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) = \partial_{ict}A_0 + \mathrm{div}\,\vec A,
 \qquad
 S' = S - \Box\Gamma ,
 $$
@@ -143,7 +143,7 @@ was checked against the direct evaluation of $\mathrm{Vect}(\tilde{\nabla}^{\nat
 
 ### Local Triviality and the Degree-of-Freedom Count
 
-Any connection can be removed at a single point. Fix a point $\tilde{Q}_0$ and let $A_\mu$ be the components of $\tilde{A}(\tilde{Q}_0)$, with $A_0$ imaginary and $\mathbf{A}$ real. Define
+Any connection can be removed at a single point. Fix a point $\tilde{Q}_0$ and let $A_\mu$ be the components of $\tilde{A}(\tilde{Q}_0)$, with $A_0$ imaginary and $\vec A$ real. Define
 
 $$
 \Gamma(\tilde{Q}) = \sum_{\mu=0}^{3} A_\mu\,(x_\mu - x_{0\mu}),
@@ -187,7 +187,7 @@ $$
 S(\tilde{\rho}_{\tilde{A}'}\,\|\,\tilde{\sigma}_{\tilde{B}'}) = S(\tilde{\rho}_{\tilde{A}}\,\|\,\tilde{\sigma}_{\tilde{B}}) .
 $$
 
-This is the invariance, under unitary conjugation of both arguments, of the Umegaki relative entropy, $S(U\rho U^\dagger\|U\sigma U^\dagger) = S(\rho\|\sigma)$, inherited from the companion article on relative entropy. It was checked on explicit superpositions: with the two Bloch vectors $\mathbf{r} = (0.35,-0.55,0.28)$ and $\mathbf{s} = (0.6,0.1,-0.42)$ and a rotation by $0.9$ radians about the axis $(1,2,-0.5)$, the relative entropy took the value $0.626042709560$ before and after the rotation, agreeing to $3\times10^{-16}$.
+This is the invariance, under unitary conjugation of both arguments, of the Umegaki relative entropy, $S(U\rho U^\dagger\|U\sigma U^\dagger) = S(\rho\|\sigma)$, inherited from the companion article on relative entropy. It was checked on explicit superpositions: with the two Bloch vectors $\vec r = (0.35,-0.55,0.28)$ and $\vec s = (0.6,0.1,-0.42)$ and a rotation by $0.9$ radians about the axis $(1,2,-0.5)$, the relative entropy took the value $0.626042709560$ before and after the rotation, agreeing to $3\times10^{-16}$.
 
 Three consequences of the invariance spell out the redundancy.
 
@@ -315,19 +315,19 @@ The orbit's only non-empty content is global. A connection can be gauged to zero
 | $\tilde{\nabla} = e_0\partial_{ict} + e_k\partial_k$ | Biquaternionic gradient |
 | $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_k\partial_k$ | Quaternion-conjugate gradient |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \Delta$ | d'Alembertian, series convention |
-| $\tilde{A} = \sum_\mu A_\mu e_\mu = i\phi/c\,e_0 + \mathbf{A} \in \mathbb{M}_-$ | Connection, a material-sector one-form |
+| $\tilde{A} = \sum_\mu A_\mu e_\mu = i\phi/c\,e_0 + \vec A \in \mathbb{M}_-$ | Connection, a material-sector one-form |
 | $\Gamma$ | Real scalar gauge function |
 | $\lambda = e^{iq\Gamma/\hbar}$ | Local central phase |
 | $\kappa = q/\hbar$ | Coupling |
 | $\mathcal{O}(\tilde{A}) = \{\tilde{A} - \tilde{\nabla}\Gamma\}$ | The gauge orbit |
 | $\mathcal{G}/\mathbb{R}$ | Group of real gauge functions modulo constants; the orbit's torsor group |
 | $K = \sum_\mu k_\mu e_\mu$ | Wavevector biquaternion of the mode $k = (k_0,k_1,k_2,k_3)$; pure-gauge image is the real line $\mathbb{R}(iK)$ |
-| $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}) = \partial_{ict}A_0 + \mathrm{div}\,\mathbf{A}$ | Gauge scalar, pure gauge: $S' = S - \Box\Gamma$ |
+| $S = \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A}) = \partial_{ict}A_0 + \mathrm{div}\,\vec A$ | Gauge scalar, pure gauge: $S' = S - \Box\Gamma$ |
 | $\tilde{F} = \mathrm{Vect}(\tilde{\nabla}^{\natural}\tilde{A}) = \frac{1}{2}\sum_{\mu\nu}F_{\mu\nu}\bar{e}_\mu e_\nu$ | Field strength = curvature, orbit-invariant |
 | $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$ | Abelian curvature components |
 | $U(C) = \mathcal{P}\exp(i\oint_C A_\mu dx^\mu)$ | Holonomy; global obstruction |
 | $W(C) = \mathrm{Tr}\,U(C)$ | Wilson loop; two-sector bilinear |
-| $\tilde{\rho} = \tfrac12(e_0 + i\mathbf{r})$, $|\mathbf{r}|\leq1$ | State of the informational sector (Bloch ball) |
+| $\tilde{\rho} = \tfrac12(e_0 + i\vec r)$, $|\vec r|\leq1$ | State of the informational sector (Bloch ball) |
 | $S(\tilde{\rho}\|\tilde{\sigma})$ | Relative entropy; orbit-invariant. Distinct from the gauge scalar $S$ above — the two share a letter and nothing else |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace pairing; $\mathrm{Tr}(e_0) = 2$ |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |

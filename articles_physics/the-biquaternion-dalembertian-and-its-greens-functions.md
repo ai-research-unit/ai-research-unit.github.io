@@ -10,7 +10,7 @@ built from the biquaternionic gradient $\tilde{\nabla}$ and its quaternion conju
 
 The article is deliberately not about a particle. The Klein–Gordon equation and its propagator belong to the companion articles on spin $0$; the Dirac equation and its descendants belong to the companions on spin $1/2$; Proca and Rarita–Schwinger belong to spin $1$ and above. What those articles share, and what is developed here, is the operator that all of them are written in terms of, together with the object that turns a source into a field. Three things are established.
 
-First, the operator. The d'Alembertian is the **biquaternion norm of the gradient**, $\Box = N(\tilde{\nabla})$, and it is *central*: it is a scalar multiple of the algebra's identity as an operator, so it commutes with every biquaternion. Its symbol on a plane wave is $\omega^2/c^2 - \mathbf{k}^2$. Its formal adjoint is itself, and this is the first application of the involution lattice that the companion article on the involutions develops: the adjoint of the gradient is $-\tilde{\nabla}^{\natural}$, and the two signs cancel in the composed operator. The sign convention is the series convention of the companion *Conventions in the Biquaternion Universe*,
+First, the operator. The d'Alembertian is the **biquaternion norm of the gradient**, $\Box = N(\tilde{\nabla})$, and it is *central*: it is a scalar multiple of the algebra's identity as an operator, so it commutes with every biquaternion. Its symbol on a plane wave is $\omega^2/c^2 - \vec k^2$. Its formal adjoint is itself, and this is the first application of the involution lattice that the companion article on the involutions develops: the adjoint of the gradient is $-\tilde{\nabla}^{\natural}$, and the two signs cancel in the composed operator. The sign convention is the series convention of the companion *Conventions in the Biquaternion Universe*,
 $$
 \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \frac{\partial^2}{\partial Q_0^2} + \Delta_Q = \partial_{ict}^2 + \Delta = \Delta - c^{-2}\partial_t^2 \quad \text{on } \mathbb{M}_- ,
 $$
@@ -84,21 +84,21 @@ The verification of the composition was made on a random real symbol vector $s$,
 
 On a plane wave
 $$
-\tilde{\Phi} = \tilde{\Phi}_0\,e^{i(\mathbf{k}\cdot\mathbf{x} - \omega t)}
+\tilde{\Phi} = \tilde{\Phi}_0\,e^{i(\vec k\cdot\vec x - \omega t)}
 $$
 the derivatives act as numbers: $\partial_{ict} \to -\frac{i}{c}(-i\omega) = -\omega/c$ and $\partial_k \to ik_k$, so
 $$
-\partial_{ict}^2 \to \frac{\omega^2}{c^2}, \qquad \Delta \to -\mathbf{k}^2,
+\partial_{ict}^2 \to \frac{\omega^2}{c^2}, \qquad \Delta \to -\vec k^2,
 \qquad
-\Box \to \frac{\omega^2}{c^2} - \mathbf{k}^2 .
+\Box \to \frac{\omega^2}{c^2} - \vec k^2 .
 $$
-The symbol was checked by finite differences on such a wave, with the numerical value of $\Box\tilde{\Phi}$ agreeing with $(\omega^2/c^2 - \mathbf{k}^2)\tilde{\Phi}$ to the accuracy of the difference scheme. The zero set of the symbol, $\omega^2 = c^2\mathbf{k}^2$, is the light cone, which in this algebra is the zero-divisor cone of the biquaternion norm; the mass-shell condition $\Box \to \mu^2$ is the shifted cone.
+The symbol was checked by finite differences on such a wave, with the numerical value of $\Box\tilde{\Phi}$ agreeing with $(\omega^2/c^2 - \vec k^2)\tilde{\Phi}$ to the accuracy of the difference scheme. The zero set of the symbol, $\omega^2 = c^2\vec k^2$, is the light cone, which in this algebra is the zero-divisor cone of the biquaternion norm; the mass-shell condition $\Box \to \mu^2$ is the shifted cone.
 
 The sign convention deserves a paragraph of its own, because it is the series' most common false alarm. With $\partial_{ict} = -\frac{i}{c}\partial_t$, the operator above is $\Box = \Delta - c^{-2}\partial_t^2$, and the physical mass equation is
 $$
 \left(\Box - \frac{m^2c^2}{\hbar^2}\right)\psi = 0 ,
 $$
-whose symbol reproduces $\omega^2 = c^2\mathbf{k}^2 + m^2c^4/\hbar^2$. The companion article *Exercise: Chirality and the Weyl Spinors* works in natural units with the quantum-field-theory metric $(+,-,-,-)$ and writes the same operator in real time, $\Box = -\partial_0^2 + \nabla^2$; its mass equation is $(\Box - m^2)\psi = 0$, the same equation as here and as in every other companion. Throughout this article $\Box$ means the series convention above and the mass term is $-\mu^2$ with $\mu = mc/\hbar$.
+whose symbol reproduces $\omega^2 = c^2\vec k^2 + m^2c^4/\hbar^2$. The companion article *Exercise: Chirality and the Weyl Spinors* works in natural units with the quantum-field-theory metric $(+,-,-,-)$ and writes the same operator in real time, $\Box = -\partial_0^2 + \nabla^2$; its mass equation is $(\Box - m^2)\psi = 0$, the same equation as here and as in every other companion. Throughout this article $\Box$ means the series convention above and the mass term is $-\mu^2$ with $\mu = mc/\hbar$.
 
 ### Self-adjointness
 
@@ -159,9 +159,9 @@ the operator is translation invariant and the convolution is a convolution. This
 
 ### The four-dimensional Euclidean reading
 
-With $\tilde{Q} = ict\,e_0 + \mathbf{x}$, the biquaternion norm is
+With $\tilde{Q} = ict\,e_0 + \vec x$, the biquaternion norm is
 $$
-\rho^2 := N(\tilde{Q}) = (ict)^2 + \mathbf{x}^2 = -c^2t^2 + \mathbf{x}^2 ,
+\rho^2 := N(\tilde{Q}) = (ict)^2 + \vec x^2 = -c^2t^2 + \vec x^2 ,
 $$
 the Minkowski interval continued to imaginary time. Read as a quadratic form in the four real coordinates $(x_0, x_1, x_2, x_3)$ with $x_0 = ict$, the operator $\Box = \partial_{ict}^2 + \Delta$ is *exactly* the four-dimensional Laplacian,
 $$
@@ -175,20 +175,20 @@ G_{\mathrm{inv}}(\tilde{Q}) = \frac{1}{4\pi^2\rho^2} ,
 \qquad
 -\Box\,G_{\mathrm{inv}} = \delta^{(4)}(\tilde{Q}) .
 $$
-The coefficient is fixed by the distributional identity $\Delta_4\,\rho^{2-d} = -(d-2)\frac{2\pi^{d/2}}{\Gamma(d/2)}\delta^{(d)}$ at $d = 4$, which gives $\Delta_4\rho^{-2} = -4\pi^2\delta^{(4)}$. The identity was verified independently here by parts against a radial Gaussian: the integral $\int G_{\mathrm{inv}}\,(-\Delta_4 f)\,d^4x$ evaluates to $f(0)$ with the coefficient $1/(4\pi^2)$, to four decimal places on a two-million-point radial grid. In the Fourier variable $k = (k_4,\mathbf{k})$ conjugate to the $ict$ coordinate, $\Box \to -k_4^2 - \mathbf{k}^2$ and
+The coefficient is fixed by the distributional identity $\Delta_4\,\rho^{2-d} = -(d-2)\frac{2\pi^{d/2}}{\Gamma(d/2)}\delta^{(d)}$ at $d = 4$, which gives $\Delta_4\rho^{-2} = -4\pi^2\delta^{(4)}$. The identity was verified independently here by parts against a radial Gaussian: the integral $\int G_{\mathrm{inv}}\,(-\Delta_4 f)\,d^4x$ evaluates to $f(0)$ with the coefficient $1/(4\pi^2)$, to four decimal places on a two-million-point radial grid. In the Fourier variable $k = (k_4,\vec k)$ conjugate to the $ict$ coordinate, $\Box \to -k_4^2 - \vec k^2$ and
 $$
-\tilde{G}_{\mathrm{inv}}(k) = \frac{1}{k_4^2 + \mathbf{k}^2} ,
+\tilde{G}_{\mathrm{inv}}(k) = \frac{1}{k_4^2 + \vec k^2} ,
 $$
 the four-dimensional Coulomb kernel.
 
-Three properties of $G_{\mathrm{inv}}$ are worth naming. It is **real and scalar**: it is a multiple of $e_0$, hence central, and it commutes with every biquaternion. It is **invariant**: it depends on $\tilde{Q}$ only through $N(\tilde{Q})$, so it is unchanged by the Lorentz action $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$, which preserves the biquaternion norm. And it is **singular on the light cone**: $\rho^2$ vanishes exactly on the zero-divisor cone, and the kernel is not defined there as a function. As the Euclidean solution it is the one selected by decay at large $\rho$ with no reference to time; the causal solutions below differ from it by solutions of the homogeneous equation, and the difference is the whole of the physical content of the choice.
+Three properties of $G_{\mathrm{inv}}$ are worth naming. It is **real and scalar**: it is a multiple of $e_0$, hence central, and it commutes with every biquaternion. It is **invariant**: it depends on $\tilde{Q}$ only through $N(\tilde{Q})$, so it is unchanged by the Lorentz action $\tilde{Q} \mapsto \tilde{U}\tilde{Q}\tilde{U}^{*}$, which preserves the biquaternion norm. And it is **singular on the light cone**: $\rho^2$ vanishes exactly on the zero-divisor cone, and the kernel is not defined there as a function. As the Euclidean solution it is the one selected by decay at large $\rho$ with no reference to time; the causal solutions below differ from it by solutions of the homogeneous equation, and the difference is the whole of the physical content of the choice.
 
 ### The light-cone delta and the retarded kernel
 
 The causal kernels are supported on the light cone and are obtained from the invariant kernel by a distributional identity on the cone. The relevant object is the light-cone delta, which resolves the quadratic form into the two cones,
 $$
 \delta(\rho^2) = \delta\!\left(-c^2t^2 + R^2\right) = \frac{1}{2cR}\Bigl[\delta\!\left(t - \frac{R}{c}\right) + \delta\!\left(t + \frac{R}{c}\right)\Bigr] ,
-\qquad R = |\mathbf{x}| ,
+\qquad R = |\vec x| ,
 $$
 where the Jacobian is $|dg/dt| = 2c^2|t| = 2cR$ at either root. Applying the future step function selects the forward cone,
 $$
@@ -210,7 +210,7 @@ $$
 $$
 which hold off the origin and were verified to machine precision, the operator annihilates every such function where $R \neq 0$. The whole of $\Box G_{\mathrm{ret}}$ is therefore concentrated at the origin, and the standard computation gives
 $$
-\Box\,G_{\mathrm{ret}} = -\,\delta(t)\,\delta^{(3)}(\mathbf{x}) .
+\Box\,G_{\mathrm{ret}} = -\,\delta(t)\,\delta^{(3)}(\vec x) .
 $$
 The result was checked directly: on a smooth radial-$u$ kernel, $\Box[u(t-R/c)/(4\pi R)]$ evaluated by central differences at a generic off-origin point is at the level of the difference scheme's truncation error — below $10^{-8}$ for a step of $10^{-4}$, and falling as the square of the step until roundoff sets the floor, as a second-order scheme requires for an expression that vanishes identically. The advanced kernel solves the same equation, $\Box G_{\mathrm{adv}} = -\delta$, so the two are distinguished only by the support condition: $G_{\mathrm{ret}}$ vanishes for $t<0$ and $G_{\mathrm{adv}}$ for $t>0$, and the physical kernel is chosen by the requirement that a source affect only its future. This is the boundary condition of the companion exercise, and it is not an algebraic consequence of $\Box$.
 
@@ -230,7 +230,7 @@ $$
 G_{F}(\tilde{Q}) = \frac{1}{4\pi^2}\,\frac{1}{\rho^2 - i\epsilon} ,
 \qquad \epsilon \to 0^+ ,
 $$
-whose Fourier transform is $1/(k_4^2 + \mathbf{k}^2 - i\epsilon)$. Two facts make this the natural object of the quantum theory: its Wick rotation to imaginary time is exactly $G_{\mathrm{inv}}$, and its $i\epsilon$ prescription is the statement of which vacuum the propagator is referred to. The companion *Interpretation of the Wick Rotation in the Biquaternion Universe* develops the rotation in full; here it is enough to record that the four kernels — invariant, retarded, advanced, causal — are four boundary conditions on one operator, related by the cone identities above and by the time boundary conditions.
+whose Fourier transform is $1/(k_4^2 + \vec k^2 - i\epsilon)$. Two facts make this the natural object of the quantum theory: its Wick rotation to imaginary time is exactly $G_{\mathrm{inv}}$, and its $i\epsilon$ prescription is the statement of which vacuum the propagator is referred to. The companion *Interpretation of the Wick Rotation in the Biquaternion Universe* develops the rotation in full; here it is enough to record that the four kernels — invariant, retarded, advanced, causal — are four boundary conditions on one operator, related by the cone identities above and by the time boundary conditions.
 
 ## The Massive Operator
 
@@ -246,15 +246,15 @@ G^{(\mu)}_{\mathrm{inv}}(\tilde{Q}) = \frac{\mu}{4\pi^2\rho}\,K_1(\mu\rho) ,
 $$
 with $K_1$ the modified Bessel function; its Fourier transform is
 $$
-\tilde{G}^{(\mu)}_{\mathrm{inv}}(k) = \frac{1}{k_4^2 + \mathbf{k}^2 + \mu^2} .
+\tilde{G}^{(\mu)}_{\mathrm{inv}}(k) = \frac{1}{k_4^2 + \vec k^2 + \mu^2} .
 $$
 The short-distance behaviour is the massless kernel, $G^{(\mu)}_{\mathrm{inv}} \to 1/(4\pi^2\rho^2)$ as $\mu\rho \to 0$, and the large-distance behaviour is exponentially damped, $G^{(\mu)}_{\mathrm{inv}} \sim \frac{\sqrt{\mu}}{2(2\pi)^{3/2}\rho^{3/2}}e^{-\mu\rho}$: a mass screens. The retarded and advanced kernels acquire support inside the cone rather than on it, the sharp light-cone delta acquiring a tail in the Bessel functions; the closed form of the inside-cone part is the standard one and is cited rather than re-derived. The massless limit returns the delta on the cone, and the biquaternion content of the massive case is simply that the mass term is central, hence commutes with the algebra, and shifts the symbol by a constant without changing the sector structure.
 
 The mass shell is the symbol condition
 $$
-N(\tilde{K}) = -\!\left(\frac{\omega^2}{c^2} - \mathbf{k}^2\right)\Big|_{\text{on shell}} = -\mu^2 ,
+N(\tilde{K}) = -\!\left(\frac{\omega^2}{c^2} - \vec k^2\right)\Big|_{\text{on shell}} = -\mu^2 ,
 $$
-which was checked on a random on-shell four-momentum $K = i(\omega/c)e_0 + \mathbf{k}$ in $\mathbb{M}_-$, the biquaternion norm returning $-m^2c^2/\hbar^2$ exactly. Off shell the operator is invertible on the algebra; on the mass shell the symbol vanishes on the zero-divisor cone of the relevant complex momentum, which is the algebraic origin of the propagation and of the rank drop that the massless limit will exhibit.
+which was checked on a random on-shell four-momentum $K = i(\omega/c)e_0 + \vec k$ in $\mathbb{M}_-$, the biquaternion norm returning $-m^2c^2/\hbar^2$ exactly. Off shell the operator is invertible on the algebra; on the mass shell the symbol vanishes on the zero-divisor cone of the relevant complex momentum, which is the algebraic origin of the propagation and of the rank drop that the massless limit will exhibit.
 
 ## The First-Order Kernel
 
@@ -280,7 +280,7 @@ Three consequences follow and are used by the companion articles.
 $$
 G_\Box(\tilde{Q}) \mapsto G_\Box(\tilde{Q}) ,
 \qquad
-\tilde{G}_1(\tilde{Q}) \mapsto \tilde{\Lambda}\,\tilde{G}_1(\tilde{\Lambda}^{-1}\tilde{Q}\tilde{\Lambda}^{-{}^{*}})\,\tilde{\Lambda}^{*} ,
+\tilde{G}_1(\tilde{Q}) \mapsto \tilde{U}\,\tilde{G}_1(\tilde{U}^{-1}\tilde{Q}\tilde{U}^{-{}^{*}})\,\tilde{U}^{*} ,
 $$
 so that $\tilde{\nabla}\tilde{G}_1 = -\delta$ is preserved with the rotated gradient. This is what makes the inverse of the Dirac operator a covariant object.
 
@@ -307,11 +307,11 @@ $$
 = \Box + 2\kappa\,\partial_{ict} + \kappa^2
 = \left(\partial_{ict} + \kappa\right)^2 + \Delta ,
 $$
-which is central. On the plane wave $e^{i(\mathbf{k}\cdot\mathbf{x}-\omega t)}$ its symbol is
+which is central. On the plane wave $e^{i(\vec k\cdot\vec x-\omega t)}$ its symbol is
 $$
-\left(\frac{\omega}{c} - \kappa\right)^2 - \|\mathbf{k}\|^2 ,
+\left(\frac{\omega}{c} - \kappa\right)^2 - \|\vec k\|^2 ,
 $$
-so the shift acts on the symbol as a **translation of the frequency** and nothing else: $\omega$ and $\kappa$ enter only through the combination $\omega/c - \kappa$. Both the identity and the symbol were checked on random $(\omega, \mathbf{k}, \kappa)$ to machine precision.
+so the shift acts on the symbol as a **translation of the frequency** and nothing else: $\omega$ and $\kappa$ enter only through the combination $\omega/c - \kappa$. Both the identity and the symbol were checked on random $(\omega, \vec k, \kappa)$ to machine precision.
 
 **The generalized Maxwell–Dirac equation.** The single first-order equation
 $$
@@ -319,7 +319,7 @@ $$
 $$
 is the corpus form of the source's **generalized Maxwell–Dirac equation**. At $\kappa = 0$ it is the massless equation $\tilde{\nabla}B = 0$ that the companion Dirac and Maxwell articles both use, and the source's point is that one operator, shifted by a single central number, is written for the Maxwell and the Dirac operators at once. The corpus records the algebraic content — a central shift of the single gradient is available, and the mass it can carry is one complex number — and separates it from the physical identification of the two fields, which is a claim about the interpretation of $B$ and not about the operator.
 
-**A convention crossing.** The source's gradient is $\partial_\tau \pm i\nabla = i\tilde{\nabla}$ (the dictionary is recorded in the companion article on the electro-gravimagnetic programme), so its mass $m$ and the corpus shift are related by $\kappa = -im$. The case the source studies is an **imaginary** $m$, which is a **real** $\kappa$ here, and the dichotomy runs in opposite directions on the two sides. On the corpus side the symbol vanishes for real $(\omega, \mathbf{k})$ — non-trivial homogeneous plane waves exist — exactly when $\kappa$ is real, the vanishing set being the shifted cone $\omega/c = \kappa \pm \|\mathbf{k}\|$. For non-real $\kappa$ the symbol never vanishes on real $(\omega, \mathbf{k})$, so there is no non-trivial **plane-wave** solution; the stronger statement, that there is no non-trivial solution at all, holds only in the tempered class, because the substitution $u = e^{-\kappa x_4}v$ with $x_4 = ict$ turns the operator into $e^{-\kappa x_4}\Box e^{+\kappa x_4}$, so that *every* wave $v$ with $\Box v = 0$ gives a homogeneous solution $u$ and that solution is not tempered. The companion article *Bispinor Fields and the Fundamental Solution of the Generalized Maxwell–Dirac Equation* states that class, the general homogeneous solution, and the fundamental solution of the shifted operator. Both branches were checked numerically, and the source's own statement (non-trivial solutions for imaginary $m$ alone) is the mirror image under $\kappa = -im$. An article that copies the source's "imaginary mass" into the corpus convention without the factor $i$ will place the interesting case on the wrong side of this dichotomy.
+**A convention crossing.** The source's gradient is $\partial_\tau \pm i\nabla = i\tilde{\nabla}$ (the dictionary is recorded in the companion article on the electro-gravimagnetic programme), so its mass $m$ and the corpus shift are related by $\kappa = -im$. The case the source studies is an **imaginary** $m$, which is a **real** $\kappa$ here, and the dichotomy runs in opposite directions on the two sides. On the corpus side the symbol vanishes for real $(\omega, \vec k)$ — non-trivial homogeneous plane waves exist — exactly when $\kappa$ is real, the vanishing set being the shifted cone $\omega/c = \kappa \pm \|\vec k\|$. For non-real $\kappa$ the symbol never vanishes on real $(\omega, \vec k)$, so there is no non-trivial **plane-wave** solution; the stronger statement, that there is no non-trivial solution at all, holds only in the tempered class, because the substitution $u = e^{-\kappa x_4}v$ with $x_4 = ict$ turns the operator into $e^{-\kappa x_4}\Box e^{+\kappa x_4}$, so that *every* wave $v$ with $\Box v = 0$ gives a homogeneous solution $u$ and that solution is not tempered. The companion article *Bispinor Fields and the Fundamental Solution of the Generalized Maxwell–Dirac Equation* states that class, the general homogeneous solution, and the fundamental solution of the shifted operator. Both branches were checked numerically, and the source's own statement (non-trivial solutions for imaginary $m$ alone) is the mirror image under $\kappa = -im$. An article that copies the source's "imaginary mass" into the corpus convention without the factor $i$ will place the interesting case on the wrong side of this dichotomy.
 
 **The scalar-potential equation.** Applying $\tilde{\nabla}^{\natural}_\kappa$ to $\tilde{\nabla}_\kappa B = F$ gives
 $$
@@ -333,7 +333,7 @@ $$
 $$
 The converse is the shifted form of the **monogenic completion** the companion Dirac article uses at $\kappa = 0$, where a harmonic scalar $u$ is completed to the kernel element $\tilde{\nabla}^{\natural}u$; the source generates its spinors this way, from a scalar "C-field" by convolution, and the companion Dirac article takes that up. The source names the scalar operator the **Klein–Gordon–Fock–Schrödinger equation**: its symbol carries a second-order term of Klein–Gordon–Fock type, $\Box + \kappa^2$, and a first-order-in-time term $\kappa\,\partial_{ict}$ of Schrödinger type, and the name records that one operator contains one term of each kind. The corpus keeps the name only with that content attached. What the name does not supply is a derivation: one operator carrying a term of each type is not the same statement as the Klein–Gordon and Schrödinger equations following from it, and the corpus does not claim the latter.
 
-**The Cauchy problem.** The second-order operator to which the shifted square reduces at $\kappa = 0$ is $\Box$, the four-dimensional Laplacian in the $ict$ variables, so the wave operator is $-\Box$. The Cauchy problem $-\Box K = G$ with data $K(0,\mathbf{x}) = K^0(\mathbf{x})$ and $\partial_\tau K(0,\mathbf{x}) = K^1(\mathbf{x})$ is solved componentwise by the Kirchhoff formula of the companion *Partial Differential Equations*, with the retarded kernel $G_{\mathrm{ret}} = \frac{1}{4\pi R}\delta(t - R/c)$ of the section above; the biquaternion content is that the data and the solution are read off component by component and the four scalar solutions are reassembled. The source writes the first-order version of the same representation, in which the solution carries an extra $\tilde{\nabla}^{\natural}_\kappa$ applied to the scalar potential, so that the scalar formula is recovered at $\kappa = 0$; the corpus records the second-order Kirchhoff form as the one it can state and verify, and the source's first-order integral form is now recorded and checked in the companion article *Bispinor Fields and the Fundamental Solution of the Generalized Maxwell–Dirac Equation*, together with the fundamental solution of the shifted operator itself.
+**The Cauchy problem.** The second-order operator to which the shifted square reduces at $\kappa = 0$ is $\Box$, the four-dimensional Laplacian in the $ict$ variables, so the wave operator is $-\Box$. The Cauchy problem $-\Box K = G$ with data $K(0,\vec x) = K^0(\vec x)$ and $\partial_\tau K(0,\vec x) = K^1(\vec x)$ is solved componentwise by the Kirchhoff formula of the companion *Partial Differential Equations*, with the retarded kernel $G_{\mathrm{ret}} = \frac{1}{4\pi R}\delta(t - R/c)$ of the section above; the biquaternion content is that the data and the solution are read off component by component and the four scalar solutions are reassembled. The source writes the first-order version of the same representation, in which the solution carries an extra $\tilde{\nabla}^{\natural}_\kappa$ applied to the scalar potential, so that the scalar formula is recovered at $\kappa = 0$; the corpus records the second-order Kirchhoff form as the one it can state and verify, and the source's first-order integral form is now recorded and checked in the companion article *Bispinor Fields and the Fundamental Solution of the Generalized Maxwell–Dirac Equation*, together with the fundamental solution of the shifted operator itself.
 
 **The bounded-domain form, and the Kirchhoff–Green representation.** The formula above is the whole-space form, in which the domain is all of space and the only data are the initial values. On a bounded domain the same kernel gives the **Kirchhoff–Green representation**, in which the value at an interior point is the volume integral of the wave operator applied to the field against the kernel together with a surface term carrying the field and its normal derivative; the surface splits into the initial surface, where the term is the Cauchy data, and the lateral boundary, where it is the boundary data. The biquaternionic form of that identity in the four-dimensional Laplacian variables, with its numerical verification, is in the companion *Biquaternion Integration*; the analogue for the biquaternionic wave ("biwave") operator, unifying the Maxwell- and Dirac-equivalent second-order equations in one operator and carrying the conditions on its shock fronts, is constructed by L. A. Alexeyeva in the 2021 paper cited in Further Reading.
 
@@ -354,16 +354,16 @@ The cross terms cancel for the same reason as before — $[\,\partial_\tau + f,\
 
 **The weighted kernel, and a sign to pair correctly.** The fundamental solution of the scalar equation to which the square reduces is carried by the light cone with an exponential weight,
 $$
-\psi = \frac{1}{4\pi x}\,e^{-i(F,\mathbf{x}) - xf}\,\delta(\tau - x) , \qquad x = |\mathbf{x}| ,
+\psi = \frac{1}{4\pi x}\,e^{-i(F,\vec x) - xf}\,\delta(\tau - x) , \qquad x = |\vec x| ,
 $$
-as the paper prints it; on a plane wave the symbol becomes a shifted four-momentum and the transform of the kernel is its reciprocal. The exponent's **sign must match the sign of the $(F,\nabla)$ coefficient**, and this is the one place where the paper is not self-consistent. Substituting $e^{\lambda(F,\mathbf{x}) - f\tau}\chi$ into the operator leaves the residual $\bigl(\mu - 2\lambda\bigr)(F,\nabla\chi) + \bigl(1 + \lambda^2 - \mu\lambda\bigr)(F,F)\chi$; it vanishes for $\mu = 2\lambda$ with $\lambda = \pm i$ and for no other pairing. The coefficient and the exponent therefore carry the **same** sign: the coefficient $\mu = +2i(F,\nabla)$ is paired with
+as the paper prints it; on a plane wave the symbol becomes a shifted four-momentum and the transform of the kernel is its reciprocal. The exponent's **sign must match the sign of the $(F,\nabla)$ coefficient**, and this is the one place where the paper is not self-consistent. Substituting $e^{\lambda(F,\vec x) - f\tau}\chi$ into the operator leaves the residual $\bigl(\mu - 2\lambda\bigr)(F,\nabla\chi) + \bigl(1 + \lambda^2 - \mu\lambda\bigr)(F,F)\chi$; it vanishes for $\mu = 2\lambda$ with $\lambda = \pm i$ and for no other pairing. The coefficient and the exponent therefore carry the **same** sign: the coefficient $\mu = +2i(F,\nabla)$ is paired with
 $$
-\psi = \frac{1}{4\pi x}\,e^{+i(F,\mathbf{x}) - xf}\,\delta(\tau - x) , \qquad
+\psi = \frac{1}{4\pi x}\,e^{+i(F,\vec x) - xf}\,\delta(\tau - x) , \qquad
 \text{symbol} \quad (\xi - F)^2 - (\omega + if)^2 ,
 $$
-and $\mu = -2i(F,\nabla)$ with the mirror in which every sign of $F$ is reversed. The printed $e^{-i(F,\mathbf{x})}$ with $(\xi + F)^2 - (\omega + if)^2$ is that mirror; what the paper does not do is print it with the coefficient it uses. Its scalar equation, its KGFS equation and its theorem all carry the coefficient $+2i(F,\nabla)$ — its own derivation of the composition gives $+2i$ where its statement of the same lemma gives $-2i$ — while its kernel, its Fourier transform and the integral representations of its last three sections carry the opposite exponent. The two groups are therefore consistent only after $F \to -F$ in one of them, and the corpus records the pairing above, together with the discrepancy, rather than one of the printed halves.
+and $\mu = -2i(F,\nabla)$ with the mirror in which every sign of $F$ is reversed. The printed $e^{-i(F,\vec x)}$ with $(\xi + F)^2 - (\omega + if)^2$ is that mirror; what the paper does not do is print it with the coefficient it uses. Its scalar equation, its KGFS equation and its theorem all carry the coefficient $+2i(F,\nabla)$ — its own derivation of the composition gives $+2i$ where its statement of the same lemma gives $-2i$ — while its kernel, its Fourier transform and the integral representations of its last three sections carry the opposite exponent. The two groups are therefore consistent only after $F \to -F$ in one of them, and the corpus records the pairing above, together with the discrepancy, rather than one of the printed halves.
 
-**The weight, the phase, and the support.** At $F = 0$ the kernel is $\frac{e^{-f\tau}}{4\pi x}\delta(\tau-x) = e^{-f\tau}G_{\mathrm{ret}}$, which is the weighted retarded kernel of the companion bispinor article with the scalar part $f$ in the role of its $m$: on the cone $\tau = x$ the paper's weight $e^{-xf}$ and the derived weight $e^{-f\tau}$ are the same factor, and the section above records why the weight does not move the support. The non-central part behaves differently from the scalar part. For real $F$ the factor $e^{i(F,\mathbf{x})}$ is a pure phase, so it rescales the phase at each light-cone point and moves no support, and the kernel is still a $\delta$ on the cone: Huygens' principle — which the scalar weight buys, in the bispinor article's account, at the price of self-adjointness — survives the non-central part. The price is not paid twice, and the reason is the adjoint behaviour of the two first-order pieces. The second-order operator's first-order part is $2f\partial_\tau + 2i(F,\nabla)$; a first-order operator with a real coefficient is anti-self-adjoint, so the conjugating factor $i$ in the non-central term makes it **self-adjoint** for real $F$ while the scalar term stays anti-self-adjoint and carries the whole asymmetry.
+**The weight, the phase, and the support.** At $F = 0$ the kernel is $\frac{e^{-f\tau}}{4\pi x}\delta(\tau-x) = e^{-f\tau}G_{\mathrm{ret}}$, which is the weighted retarded kernel of the companion bispinor article with the scalar part $f$ in the role of its $m$: on the cone $\tau = x$ the paper's weight $e^{-xf}$ and the derived weight $e^{-f\tau}$ are the same factor, and the section above records why the weight does not move the support. The non-central part behaves differently from the scalar part. For real $F$ the factor $e^{i(F,\vec x)}$ is a pure phase, so it rescales the phase at each light-cone point and moves no support, and the kernel is still a $\delta$ on the cone: Huygens' principle — which the scalar weight buys, in the bispinor article's account, at the price of self-adjointness — survives the non-central part. The price is not paid twice, and the reason is the adjoint behaviour of the two first-order pieces. The second-order operator's first-order part is $2f\partial_\tau + 2i(F,\nabla)$; a first-order operator with a real coefficient is anti-self-adjoint, so the conjugating factor $i$ in the non-central term makes it **self-adjoint** for real $F$ while the scalar term stays anti-self-adjoint and carries the whole asymmetry.
 
 **Where the hypotheses bite.** The closed composition is an identity for a constant coefficient, and the derivation shows what it really uses. Commutativity needs only $\partial_\tau F = 0$, because the sole obstruction is $[\,\partial_\tau, F\,] = \partial_\tau F$; the **closed form** needs $\nabla F = 0$, the vector part both divergence-free and curl-free, at which the extra term $i(\nabla F)\circ B$ drops out. A coefficient that varies in space but not in time therefore keeps the two operators commuting and breaks the closed form: the difference between the true composition and the closed form is exactly $-i(\nabla F)\circ B$ (residual $2.8\times10^{-10}$), the closed-form residual of such a coefficient is $7.4\times10^{-2}$ while its commutator residual stays at $4.7\times10^{-11}$. A coefficient that varies in time breaks both ($7.1\times10^{-2}$ and $1.4\times10^{-1}$). Constant is the paper's case and the one in which both statements are exact.
 
@@ -389,7 +389,7 @@ The biquaternion d'Alembertian is the biquaternion norm of the gradient,
 $$
 \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial_{ict}^2 + \Delta = \Delta - c^{-2}\partial_t^2 ,
 $$
-a central scalar operator whose symbol is $\omega^2/c^2 - \mathbf{k}^2$ and whose sign is the series convention. Its adjoint is the gradient's adjoint composed with itself; the gradient obeys $\tilde{\nabla}^{*} = -\tilde{\nabla}^{\natural}$, so
+a central scalar operator whose symbol is $\omega^2/c^2 - \vec k^2$ and whose sign is the series convention. Its adjoint is the gradient's adjoint composed with itself; the gradient obeys $\tilde{\nabla}^{*} = -\tilde{\nabla}^{\natural}$, so
 $$
 \Box^{*} = \Box ,
 $$
@@ -398,7 +398,7 @@ the two minus signs cancelling. The adjoint statement was verified through the a
 The Green's functions are the boundary conditions on one equation, $-\Box G = \delta^{(4)}$. The invariant kernel is
 $$
 G_{\mathrm{inv}} = \frac{1}{4\pi^2\rho^2} ,
-\qquad \rho^2 = N(\tilde{Q}) = -c^2t^2 + \mathbf{x}^2 ,
+\qquad \rho^2 = N(\tilde{Q}) = -c^2t^2 + \vec x^2 ,
 $$
 the four-dimensional Euclidean fundamental solution, verified by parts against a radial test function. The causal kernels are supported on the light cone,
 $$
@@ -421,7 +421,7 @@ The shift carried by the first-order operator need not be central. With a consta
 $$
 D^+_F D^-_F = D^-_F D^+_F = \Box_{\text{s}} + 2f\partial_\tau + 2i(F,\nabla) + f^2 + (F,F) ,
 $$
-so the scalar part of the coefficient acts as a mass and the vector part as a direction the operator differentiates along, the corpus's central shift being the case $F = 0$. The kernel is the retarded kernel weighted by $e^{-f\tau}$ and multiplied by the phase $e^{\pm i(F,\mathbf{x})}$, the sign of the phase matching the sign of the $(F,\nabla)$ coefficient — the source prints the two with opposite signs, and the paired form is the one verified here. Because the phase moves no support, Huygens' principle survives the non-central part; and because a first-order operator with a real coefficient is anti-self-adjoint, the non-central part is self-adjoint for real $F$: it neither buys the Huygens property nor pays for it, and both belong to the scalar part alone.
+so the scalar part of the coefficient acts as a mass and the vector part as a direction the operator differentiates along, the corpus's central shift being the case $F = 0$. The kernel is the retarded kernel weighted by $e^{-f\tau}$ and multiplied by the phase $e^{\pm i(F,\vec x)}$, the sign of the phase matching the sign of the $(F,\nabla)$ coefficient — the source prints the two with opposite signs, and the paired form is the one verified here. Because the phase moves no support, Huygens' principle survives the non-central part; and because a first-order operator with a real coefficient is anti-self-adjoint, the non-central part is self-adjoint for real $F$: it neither buys the Huygens property nor pays for it, and both belong to the scalar part alone.
 
 ## Summary of Notation
 
@@ -429,11 +429,11 @@ so the scalar part of the coefficient acts as a mass and the vector part as a di
 |---|---|
 | $\tilde{\nabla} = \sum_\mu e_\mu\partial_\mu$ | Biquaternionic gradient, $\partial_0 = \partial_{ict} = -\frac{i}{c}\partial_t$ |
 | $\tilde{\nabla}^{\natural} = \sum_\mu e_\mu^{*}\partial_\mu$ | Quaternion-conjugate gradient, $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_k\partial_k$ |
-| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \Delta$ | Series d'Alembertian; central scalar; $\Box \to \omega^2/c^2 - \mathbf{k}^2$ |
+| $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \Delta$ | Series d'Alembertian; central scalar; $\Box \to \omega^2/c^2 - \vec k^2$ |
 | $\tilde{\nabla}^{*} = -\tilde{\nabla}^{\natural}$, $\Box^{*} = \Box$ | Adjoints under $\langle\tilde{F},\tilde{G}\rangle = \int\mathrm{Tr}(\tilde{F}^{*}\tilde{G})$ |
 | $\Box^\flat = -\Box$, $G_\Box^\flat = -G_\Box$, $\tilde{G}_1^\flat = \tilde{G}_1$ | Conjugation action on the operator and the kernels: ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ fix a real scalar and $\flat$ negates it; the conjugations preserve the sectors, multiplication by $i$ exchanges them, $i\tilde{G}_1 \in \mathbb{M}_+$ |
-| $\tilde{Q} = ict\,e_0 + \mathbf{x}$ | Material four-position |
-| $\rho^2 = N(\tilde{Q}) = -c^2t^2 + \mathbf{x}^2$ | Biquaternion norm of the separation; Euclidean four-distance squared |
+| $\tilde{Q} = ict\,e_0 + \vec x$ | Material four-position |
+| $\rho^2 = N(\tilde{Q}) = -c^2t^2 + \vec x^2$ | Biquaternion norm of the separation; Euclidean four-distance squared |
 | $G_{\mathrm{inv}} = \frac{1}{4\pi^2\rho^2}$ | Invariant (Euclidean) kernel; $-\Box G_{\mathrm{inv}} = \delta^{(4)}$ |
 | $G_{\mathrm{ret}} = \frac{1}{4\pi R}\delta(t - R/c)$ | Retarded kernel; $\Box G_{\mathrm{ret}} = -\delta$ |
 | $G_{\mathrm{adv}} = \frac{1}{4\pi R}\delta(t + R/c)$ | Advanced kernel; $\Box G_{\mathrm{adv}} = -\delta$ |
@@ -442,10 +442,10 @@ so the scalar part of the coefficient acts as a mass and the vector part as a di
 | $G^{(\mu)}_{\mathrm{inv}} = \frac{\mu}{4\pi^2\rho}K_1(\mu\rho)$ | Massive invariant kernel; $\mu = mc/\hbar$ |
 | $\tilde{G}_1 = \tilde{\nabla}^{\natural}G_\Box \in \mathbb{M}_-$ | First-order kernel; $\tilde{\nabla}\tilde{G}_1 = -\delta$ |
 | $\tilde{\nabla}_\kappa = \tilde{\nabla} + \kappa$, $\kappa \in \mathbb{C}$ | Shifted gradient (central shift) |
-| $\tilde{\nabla}_\kappa\tilde{\nabla}^{\natural}_\kappa = \Box + 2\kappa\partial_{ict} + \kappa^2$ | Square of the shifted gradient; symbol $(\omega/c - \kappa)^2 - \|\mathbf{k}\|^2$ |
+| $\tilde{\nabla}_\kappa\tilde{\nabla}^{\natural}_\kappa = \Box + 2\kappa\partial_{ict} + \kappa^2$ | Square of the shifted gradient; symbol $(\omega/c - \kappa)^2 - \|\vec k\|^2$ |
 | $\nabla^\pm = \partial_\tau \pm i\nabla$, $D^\pm_F = \nabla^\pm + f \pm F$ | Mutual bigradients and mutual Maxwell–Dirac operators; $\nabla^+ = i\tilde{\nabla}$, $\nabla^- = i\tilde{\nabla}^{\natural}$, and the shift is the non-central $\kappa = -i(f+F)$ |
 | $D^+_FD^-_F = \Box_{\text{s}} + 2f\partial_\tau + 2i(F,\nabla) + f^2 + (F,F)$ | Square of the mutual MD-operators; $\Box_{\text{s}} = \partial_\tau^2 - \Delta = -\Box$ |
-| $\psi = \frac{1}{4\pi x}e^{\pm i(F,\mathbf{x}) - xf}\delta(\tau-x)$ | Weighted light-cone kernel; the exponent's sign matches the sign of the $(F,\nabla)$ coefficient |
+| $\psi = \frac{1}{4\pi x}e^{\pm i(F,\vec x) - xf}\delta(\tau-x)$ | Weighted light-cone kernel; the exponent's sign matches the sign of the $(F,\nabla)$ coefficient |
 | $\Theta(t)$ | Step function selecting the future cone |
 | $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | Level-2 $ict$ metric (not used in $\Box$) |
 
@@ -459,5 +459,5 @@ so the scalar part of the coefficient acts as a mass and the vector part as a di
 - I. M. Gel'fand and G. E. Shilov, *Generalized Functions*, Vol. 1 (Academic Press, 1964), for the distributional calculus of the light-cone delta and the wave-front set of the causal kernels.
 - Fritz John, *Plane Waves and Spherical Means Applied to Partial Differential Equations* (Interscience, 1955), for the Hadamard elementary solution and the propagation of the wave operator's singularities on the characteristic cone.
 - L. A. Alexeyeva, "Biquaternions algebra and its applications by solving of some theoretical physics equations", *Clifford Analysis, Clifford Algebras and Their Applications* **7** (2012), 19–39 (arXiv:1302.0523), for the shifted gradient, the generalized Maxwell–Dirac equation, the Klein–Gordon–Fock–Schrödinger scalar equation, and the source's generalized Kirchhoff representation.
-- L. A. Alexeyeva, "Biquaternionic wave equations and the properties of their generalized solutions", *Differential Equations* **57** (5) (2021) 594–604 (DOI 10.1134/S0012266121050049), for the mutual bigradients, the mutual Maxwell–Dirac operators with a general constant biquaternion structural coefficient, the composition lemma and both of its printed signs, the weighted light-cone kernel and its symbol, the conditions on its shock fronts, the Cauchy problem, and the analogues of the Kirchhoff and Green representation formulas. Three points of the paper are recorded in the article with corrections rather than as printed: the composition lemma's statement carries $-2i(F,\nabla)$ where its own derivation, its scalar equation and its Fourier transform carry $+2i(F,\nabla)$; the kernel's exponent $-i(F,\mathbf{x})$ pairs with the second of those, not the first; and the structural coefficient must be constant for the closed form to hold.
+- L. A. Alexeyeva, "Biquaternionic wave equations and the properties of their generalized solutions", *Differential Equations* **57** (5) (2021) 594–604 (DOI 10.1134/S0012266121050049), for the mutual bigradients, the mutual Maxwell–Dirac operators with a general constant biquaternion structural coefficient, the composition lemma and both of its printed signs, the weighted light-cone kernel and its symbol, the conditions on its shock fronts, the Cauchy problem, and the analogues of the Kirchhoff and Green representation formulas. Three points of the paper are recorded in the article with corrections rather than as printed: the composition lemma's statement carries $-2i(F,\nabla)$ where its own derivation, its scalar equation and its Fourier transform carry $+2i(F,\nabla)$; the kernel's exponent $-i(F,\vec x)$ pairs with the second of those, not the first; and the structural coefficient must be constant for the closed form to hold.
 - L. A. Alexeyeva, "Biquaternion representation of the Dirac equations and bispinor fields", *Journal of Open Systems Evolution Problems* **25** (1–2) (2023), 15–24 (doi:10.26577/JPEOS.2023.v25.i1-2.i2), for the fundamental solution of the shifted operator and its light-cone support, the general solution of the inhomogeneous equation, the harmonic bispinors and their nullity, and the linear dispersion of the plane-wave family.

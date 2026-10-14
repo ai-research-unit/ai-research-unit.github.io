@@ -13,8 +13,8 @@ which identifies $\mathbb{B}$ with the coordinate space $\mathbb{C}^4$. The real
 The conventions are those of *Conventions in the Biquaternion Universe*, and none is redefined. The basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$, the scalar imaginary $i$ commutes with every unit, and the conjugations are ${}^{\natural}$, $\bar{\cdot}$, ${}^{*} = {}^{\natural}\circ\bar{\cdot}$ and ${}^{\flat} = -{}^{*}$. The biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. The physical dictionary writes a general element as a material coordinate plus an informational coordinate,
 
 $$
-\tilde{Q} = \underbrace{(ict)\,e_0 + \mathbf{x}}_{\in\,\mathbb{M}_-} \;+\; \underbrace{(ct')\,e_0 + i\mathbf{x}'}_{\in\,\mathbb{M}_+},
-\qquad \mathbf{x} = xe_1 + ye_2 + ze_3, \quad \mathbf{x}' = x'e_1 + y'e_2 + z'e_3,
+\tilde{Q} = \underbrace{(ict)\,e_0 + \vec x}_{\in\,\mathbb{M}_-} \;+\; \underbrace{(ct')\,e_0 + i\vec x'}_{\in\,\mathbb{M}_+},
+\qquad \vec x = xe_1 + ye_2 + ze_3, \quad \vec x' = x'e_1 + y'e_2 + z'e_3,
 $$
 
 with the eight real parameters $q'_0 = c\,t$, $(q_1, q_2, q_3) = (x, y, z)$, $q_0 = c\,t'$, $(q'_1, q'_2, q'_3) = (x', y', z')$, and with $c$ the speed of light in the medium.
@@ -69,7 +69,7 @@ $$
 \tilde{Q} = iq'_0e_0 + q_1e_1 + q_2e_2 + q_3e_3 \in \mathbb{M}_-, \qquad (Q^0, Q^1, Q^2, Q^3) = (iq'_0, q_1, q_2, q_3).
 $$
 
-The four-vectors of relativistic physics are of exactly this shape: the four-position has $q'_0 = ct$ and $(q_1, q_2, q_3) = (x,y,z)$, so its scalar coefficient is $ict = iq'_0$ and its four-vector is $(ict, x, y, z)$, while the four-momentum has $q'_0 = E/c$ and $(q_1, q_2, q_3) = \mathbf{p}$.
+The four-vectors of relativistic physics are of exactly this shape: the four-position has $q'_0 = ct$ and $(q_1, q_2, q_3) = (x,y,z)$, so its scalar coefficient is $ict = iq'_0$ and its four-vector is $(ict, x, y, z)$, while the four-momentum has $q'_0 = E/c$ and $(q_1, q_2, q_3) = \vec p$.
 
 **The informational four-vector.** An element of the informational sector has a real scalar coefficient and purely imaginary vector coefficients. Writing its real parameters as $q_0$ and $q'_1, q'_2, q'_3$, the element and its four-vector are
 
@@ -196,7 +196,7 @@ $$
 q_0 = ct', \quad q'_0 = ct, \quad q_1 = x, \quad q_2 = y, \quad q_3 = z, \quad q'_1 = x', \quad q'_2 = y', \quad q'_3 = z' ,
 $$
 
-the unprimed slot carrying the informational time $ct'$ and the material space $\mathbf{x}$, the primed slot the material time $ct$ and the informational space $\mathbf{x}'$.
+the unprimed slot carrying the informational time $ct'$ and the material space $\vec x$, the primed slot the material time $ct$ and the informational space $\vec x'$.
 
 **Definition.** The **remarkable subspaces** are
 
@@ -261,7 +261,7 @@ $$
 \tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu \longleftrightarrow (Q^0, Q^1, Q^2, Q^3) = (Q_0,\ Q_1,\ Q_2,\ Q_3) = (q_0,\ q_1,\ q_2,\ q_3) = (ct',\ x,\ y,\ z),
 $$
 
-with $Q_\mu = q_\mu$ real, $q_0 = ct'$ and $q_k = x_k$, and the biquaternion norm $N = c^2(t')^2 + \mathbf{x}^2$. The biquaternion norm is a sum of four squares with no minus sign, so it is positive definite and vanishes only at the zero element; the unit elements of this subspace are the rotation rotors.
+with $Q_\mu = q_\mu$ real, $q_0 = ct'$ and $q_k = x_k$, and the biquaternion norm $N = c^2(t')^2 + \vec x^2$. The biquaternion norm is a sum of four squares with no minus sign, so it is positive definite and vanishes only at the zero element; the unit elements of this subspace are the rotation rotors.
 
 ### The Antiquaternion Subspace $i\mathbb{H}_{\mathbb{B}}$
 
@@ -271,7 +271,7 @@ $$
 \tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu \longleftrightarrow (Q^0, Q^1, Q^2, Q^3) = (Q_0,\ Q_1,\ Q_2,\ Q_3) = (iq'_0,\ iq'_1,\ iq'_2,\ iq'_3) = (ict,\ ix',\ iy',\ iz'),
 $$
 
-with $Q_\mu = iq'_\mu$, $q'_0 = ct$ and $q'_k = x'_k$, and the biquaternion norm $N = -\big( c^2t^2 + (\mathbf{x}')^2 \big)$. It is $i$ times the quaternion subspace, and the biquaternion norm is the negative of a sum of four squares, so it too vanishes only at the zero element.
+with $Q_\mu = iq'_\mu$, $q'_0 = ct$ and $q'_k = x'_k$, and the biquaternion norm $N = -\big( c^2t^2 + (\vec x')^2 \big)$. It is $i$ times the quaternion subspace, and the biquaternion norm is the negative of a sum of four squares, so it too vanishes only at the zero element.
 
 ### The Material Subspace $\mathbb{M}_-$
 
@@ -281,7 +281,7 @@ $$
 \tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu \longleftrightarrow (Q^0, Q^1, Q^2, Q^3) = (Q_0,\ Q_1,\ Q_2,\ Q_3) = (iq'_0,\ q_1,\ q_2,\ q_3) = (ict,\ x,\ y,\ z),
 $$
 
-with $Q_0 = iq'_0$, $Q_k = q_k$, $q'_0 = ct$ and $q_k = x_k$, and the biquaternion norm $N = -c^2t^2 + \mathbf{x}^2$. The single minus sign is the $ict$ convention, and the signature $(3,1)$ of the biquaternion norm is the Minkowski one: this is the home of the four-vectors of relativistic physics.
+with $Q_0 = iq'_0$, $Q_k = q_k$, $q'_0 = ct$ and $q_k = x_k$, and the biquaternion norm $N = -c^2t^2 + \vec x^2$. The single minus sign is the $ict$ convention, and the signature $(3,1)$ of the biquaternion norm is the Minkowski one: this is the home of the four-vectors of relativistic physics.
 
 ### The Informational Subspace $\mathbb{M}_+$
 
@@ -291,7 +291,7 @@ $$
 \tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu \longleftrightarrow (Q^0, Q^1, Q^2, Q^3) = (Q_0,\ Q_1,\ Q_2,\ Q_3) = (q_0,\ iq'_1,\ iq'_2,\ iq'_3) = (ct',\ ix',\ iy',\ iz'),
 $$
 
-with $Q_0 = q_0$, $Q_k = iq'_k$, $q_0 = ct'$ and $q'_k = x'_k$, and the biquaternion norm $N = c^2(t')^2 - (\mathbf{x}')^2$, the transpose of the material condition, of signature $(1,3)$. The two sectors are exchanged by multiplication by $i$: $i\mathbb{M}_- = \mathbb{M}_+$, since $i\,(ict, x, y, z) = (-ct, ix, iy, iz)$ has the informational shape.
+with $Q_0 = q_0$, $Q_k = iq'_k$, $q_0 = ct'$ and $q'_k = x'_k$, and the biquaternion norm $N = c^2(t')^2 - (\vec x')^2$, the transpose of the material condition, of signature $(1,3)$. The two sectors are exchanged by multiplication by $i$: $i\mathbb{M}_- = \mathbb{M}_+$, since $i\,(ict, x, y, z) = (-ct, ix, iy, iz)$ has the informational shape.
 
 ## The Biquaternion Norm
 
@@ -319,19 +319,19 @@ $$
 N(\tilde{Q}) = -(a^0)^2 + (a^1)^2 + (a^2)^2 + (a^3)^2,
 $$
 
-a real quadratic form of signature $(3,1)$; with $a^0 = ct$ and $a^k = x_k$ it is the Minkowski interval $-c^2t^2 + \mathbf{x}^2$. On the informational sector $\mathbb{M}_+$, writing $Q^0 = a^0$ and $Q^k = i a^k$ with $a^\mu \in \mathbb{R}$, it restricts to
+a real quadratic form of signature $(3,1)$; with $a^0 = ct$ and $a^k = x_k$ it is the Minkowski interval $-c^2t^2 + \vec x^2$. On the informational sector $\mathbb{M}_+$, writing $Q^0 = a^0$ and $Q^k = i a^k$ with $a^\mu \in \mathbb{R}$, it restricts to
 
 $$
 N(\tilde{Q}) = (a^0)^2 - (a^1)^2 - (a^2)^2 - (a^3)^2,
 $$
 
-a real quadratic form of signature $(1,3)$; with $a^0 = ct'$ and $a^k = x'_k$ it is $c^2(t')^2 - (\mathbf{x}')^2$.
+a real quadratic form of signature $(1,3)$; with $a^0 = ct'$ and $a^k = x'_k$ it is $c^2(t')^2 - (\vec x')^2$.
 
 **Proof.** Substitute the coordinate conditions of the table above into $\sum_\mu (Q^\mu)^2$. On $\mathbb{M}_-$ the scalar term is $(ia^0)^2 = -(a^0)^2$ and the three vector terms are $(a^k)^2$; on $\mathbb{M}_+$ the scalar term is $(a^0)^2$ and the three vector terms are $(ia^k)^2 = -(a^k)^2$.
 
 The real sector $\mathbb{H}_{\mathbb{B}}$ is the case in which no coefficient carries the $i$, and its biquaternion norm is the positive-definite $q_0^2 + q_1^2 + q_2^2 + q_3^2$ of signature $(4,0)$. The two forms are exchanged by multiplication by the scalar imaginary, since $N(i\tilde{Q}) = -N(\tilde{Q})$ on every element and $\mathbb{M}_+ = i\mathbb{M}_-$, $\mathbb{M}_- = i\mathbb{M}_+$. The Lorentzian signature is therefore an **output** of the framework and not an input to it: the four coefficients start on an equal footing with all four signs positive, and the minus sign of the interval appears only when a real coordinate is placed on a direction whose coefficient carries the factor $i$.
 
-**The null cone and the causal classes.** The zeros of the biquaternion norm are the light cone of the framework. On $\mathbb{M}_-$ the condition $N(\tilde{Q}) = 0$ is $-c^2t^2 + \mathbf{x}^2 = 0$, the null cone of Minkowski space, and on the algebra at large it is the set of zero divisors. The interval is invariant under the rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ with $N(\tilde{\Lambda}) = e_0$, so no element of the restricted Lorentz group can move a displacement from one causal class to another; the causal structure of the framework and the orbit decomposition of the cone are developed in the companion articles on causality and on the Lorentz group.
+**The null cone and the causal classes.** The zeros of the biquaternion norm are the light cone of the framework. On $\mathbb{M}_-$ the condition $N(\tilde{Q}) = 0$ is $-c^2t^2 + \vec x^2 = 0$, the null cone of Minkowski space, and on the algebra at large it is the set of zero divisors. The interval is invariant under the rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ with $N(\tilde{\Lambda}) = e_0$, so no element of the restricted Lorentz group can move a displacement from one causal class to another; the causal structure of the framework and the orbit decomposition of the cone are developed in the companion articles on causality and on the Lorentz group.
 
 ### The Inverse in Coordinates
 
@@ -360,15 +360,15 @@ The material sector is the home of the four-vectors, and the four-vector represe
 **The four-position.**
 
 $$
-\tilde{Q} = ict\,e_0 + \mathbf{x}, \qquad N(\tilde{Q}) = -c^2t^2 + \mathbf{x}^2,
+\tilde{Q} = ict\,e_0 + \vec x, \qquad N(\tilde{Q}) = -c^2t^2 + \vec x^2,
 $$
 
 which is the Minkowski interval. The four-position is the element whose biquaternion norm vanishes on the light cone through the origin, and it is the object acted on by the rotor conjugation.
 
-**The four-velocity.** With $\gamma$ the Lorentz factor of a particle of velocity $\mathbf{v}$,
+**The four-velocity.** With $\gamma$ the Lorentz factor of a particle of velocity $\vec v$,
 
 $$
-\tilde{U} = i\gamma c\,e_0 + \gamma\mathbf{v}, \qquad N(\tilde{U}) = -\gamma^2\big( c^2 - \mathbf{v}^2 \big) = -c^2 .
+\tilde{V} = i\gamma c\,e_0 + \gamma\vec v, \qquad N(\tilde{V}) = -\gamma^2\big( c^2 - \vec v^2 \big) = -c^2 .
 $$
 
 The biquaternion norm of the four-velocity is **constant**, $-c^2$, on every timelike world line, which is the coordinate form of the statement that $\mathrm{d}\tau = \sqrt{-\mathrm{d}s^2}/c$ is the proper time.
@@ -376,13 +376,13 @@ The biquaternion norm of the four-velocity is **constant**, $-c^2$, on every tim
 **The four-momentum.**
 
 $$
-\tilde{P} = i\frac{E}{c}e_0 + \mathbf{p}, \qquad N(\tilde{P}) = -\frac{E^2}{c^2} + \mathbf{p}^2 .
+\tilde{P} = i\frac{E}{c}e_0 + \vec p, \qquad N(\tilde{P}) = -\frac{E^2}{c^2} + \vec p^2 .
 $$
 
-For an on-shell particle the dispersion relation $E^2 = c^2\mathbf{p}^2 + m^2c^4$ gives
+For an on-shell particle the dispersion relation $E^2 = c^2\vec p^2 + m^2c^4$ gives
 
 $$
-N(\tilde{P}) = -\Big( \frac{E^2}{c^2} - \mathbf{p}^2 \Big) = -m^2c^2 ,
+N(\tilde{P}) = -\Big( \frac{E^2}{c^2} - \vec p^2 \Big) = -m^2c^2 ,
 $$
 
 so the mass-shell condition is the statement that the four-momentum lies on the sphere of radius $mc$ in the biquaternion norm, and the mass is read off the biquaternion norm of the four-momentum. The dispersion relation itself, in biquaternionic form, is the subject of the wave-mechanics articles.
@@ -390,13 +390,13 @@ so the mass-shell condition is the statement that the four-momentum lies on the 
 **The four-current and the four-potential.** The electric four-current is
 
 $$
-\tilde{J} = i\rho c\,e_0 + \mathbf{J}, \qquad N(\tilde{J}) = -\rho^2c^2 + \mathbf{J}^2 ,
+\tilde{J} = i\rho c\,e_0 + \vec J, \qquad N(\tilde{J}) = -\rho^2c^2 + \vec J^2 ,
 $$
 
 and the four-potential is
 
 $$
-\tilde{A} = i\frac{\phi}{c}e_0 + \mathbf{A}, \qquad N(\tilde{A}) = -\frac{\phi^2}{c^2} + \mathbf{A}^2 .
+\tilde{A} = i\frac{\phi}{c}e_0 + \vec A, \qquad N(\tilde{A}) = -\frac{\phi^2}{c^2} + \vec A^2 .
 $$
 
 Neither biquaternion norm is fixed on general configurations; what is invariant is the transformation law, which is the rotor conjugation, and the gauge freedom, which is the addition of a gradient.
@@ -415,7 +415,7 @@ $$
 
 the all-plus sign of the biquaternion norm being exactly what makes the spatial part of the d'Alembertian positive with the $ict$ convention. The gradient is the case in which the material four-vector is an operator, and the wave equation $\Box\tilde{\Psi} = 0$ is the statement that the biquaternion norm of the gradient annihilates the field.
 
-**No index is raised or lowered.** The quadruple is written $Q^\mu$ with an upper index, and the index stays where it is: on $\mathbb{C}^4$ no metric is fixed, so the index is never lowered, and the biquaternion norm cannot serve as one because it is general plain bilinear — symmetric and non-degenerate, of rank four, but neither Hermitian nor positive definite. Physically, the $ict$ convention is what puts the metric into the **coefficient** instead of into a contraction rule: the material four-vector is $(ict, \mathbf{x})$ rather than $(ct, \mathbf{x})$, and the interval is then the sum of squares with no explicit scalar product. The corpus's metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$ is the level-2 interpretation of the same object, used when a contraction of four-vectors is written explicitly; the level-1 object is the identity Gram matrix on $\mathbb{C}^4$, and the minus sign appears only when the material real coordinates are put on the quadruple.
+**No index is raised or lowered.** The quadruple is written $Q^\mu$ with an upper index, and the index stays where it is: on $\mathbb{C}^4$ no metric is fixed, so the index is never lowered, and the biquaternion norm cannot serve as one because it is general plain bilinear — symmetric and non-degenerate, of rank four, but neither Hermitian nor positive definite. Physically, the $ict$ convention is what puts the metric into the **coefficient** instead of into a contraction rule: the material four-vector is $(ict, \vec x)$ rather than $(ct, \vec x)$, and the interval is then the sum of squares with no explicit scalar product. The corpus's metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$ is the level-2 interpretation of the same object, used when a contraction of four-vectors is written explicitly; the level-1 object is the identity Gram matrix on $\mathbb{C}^4$, and the minus sign appears only when the material real coordinates are put on the quadruple.
 
 ## Physical Readings
 
@@ -427,7 +427,7 @@ The four complex coordinates are read as a **spacetime event carrying an interna
 
 The four-vector representation reads a biquaternion $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ as its quadruple of complex coefficients $Q^\mu = (Q^0, Q^1, Q^2, Q^3)$, with $Q^0 = Q_0$ the scalar component and $(Q^1, Q^2, Q^3) = (Q_1, Q_2, Q_3)$ the vector components. It is a $\mathbb{C}$-linear isomorphism onto $\mathbb{C}^4$, of complex dimension four and real dimension eight, and it supplies the space on which the regular operator of *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* is written. Physically, each complex coefficient carries one material and one informational coordinate: $Q^0 = ct' + ict$ and $Q^k = x_k + ix'_k$, so that the material four-vector is the quadruple $(ict, x, y, z)$ with a purely imaginary scalar entry, that is $Q^0 = iq'_0$ with $q'_0 = ct$.
 
-The product in components has scalar part $Q^0R^0 - \sum_k Q^kR^k$ and vector part $Q^0R^i + R^0Q^i + \sum_{j,k}\epsilon^{ijk}Q^jR^k$, and the Levi-Civita term is the only trace of non-commutativity; the commutator is twice the cross product of the vector parts and lies in the complex space sector. The three involutions ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ act by negating the vector components, conjugating every component, and doing both, and the remarkable subspaces are the resulting coordinate conditions: the informational sector is the quadruples with real scalar component and purely imaginary vector components, the material sector the transpose of that condition. The biquaternion norm is $\sum_\mu (Q^\mu)^2$, with all four signs positive on $\mathbb{C}^4$ because each quaternion unit squares to $-e_0$ and the cross terms cancel; it restricts to signature $(3,1)$ on the material sector, where it is the Minkowski interval $-c^2t^2 + \mathbf{x}^2$, and to signature $(1,3)$ on the informational sector, and it vanishes exactly on the zero divisors, which are the light cone.
+The product in components has scalar part $Q^0R^0 - \sum_k Q^kR^k$ and vector part $Q^0R^i + R^0Q^i + \sum_{j,k}\epsilon^{ijk}Q^jR^k$, and the Levi-Civita term is the only trace of non-commutativity; the commutator is twice the cross product of the vector parts and lies in the complex space sector. The three involutions ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ act by negating the vector components, conjugating every component, and doing both, and the remarkable subspaces are the resulting coordinate conditions: the informational sector is the quadruples with real scalar component and purely imaginary vector components, the material sector the transpose of that condition. The biquaternion norm is $\sum_\mu (Q^\mu)^2$, with all four signs positive on $\mathbb{C}^4$ because each quaternion unit squares to $-e_0$ and the cross terms cancel; it restricts to signature $(3,1)$ on the material sector, where it is the Minkowski interval $-c^2t^2 + \vec x^2$, and to signature $(1,3)$ on the informational sector, and it vanishes exactly on the zero divisors, which are the light cone.
 
 The four-vectors of relativistic physics are the material elements: the four-position with biquaternion norm the interval, the four-velocity with biquaternion norm the constant $-c^2$, the four-momentum with biquaternion norm $-m^2c^2$ on the mass shell, the four-current and four-potential with their respective biquaternion norms, and the gradient, whose biquaternion norm is the d'Alembertian $\Box = \partial_{ict}^2 + \Delta$. The index on $Q^\mu$ is never raised or lowered, because the coefficient space carries no metric of its own; the $ict$ convention carries the metric in the coefficient, and the explicit metric $\eta = \mathrm{diag}(-1,+1,+1,+1)$ is the level-2 form used when a contraction is written out.
 
@@ -449,11 +449,11 @@ The four-vectors of relativistic physics are the material elements: the four-pos
 | $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | The biquaternion norm, the diagonal of the general quaternionic bilinear form and multiplicative; Gram matrix $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}^4$, signature $(3,1)$ on $\mathbb{M}_-$ and $(1,3)$ on $\mathbb{M}_+$ |
 | $\tilde{Q}^{-1} = \tilde{Q}^{\natural}/N(\tilde{Q})$ | The inverse in coordinates |
 | $c$, $c_0$ | Speed of light in the medium, $c = 1/\sqrt{\epsilon\mu}$, and its vacuum value |
-| $ict$, $\mathbf{x} = x e_1 + y e_2 + z e_3$ | The material coordinate; the four-position is $(ict, x, y, z)$ |
-| $ct'$, $i\mathbf{x}' = i x'e_1 + iy'e_2 + iz'e_3$ | The informational coordinate |
+| $ict$, $\vec x = x e_1 + y e_2 + z e_3$ | The material coordinate; the four-position is $(ict, x, y, z)$ |
+| $ct'$, $i\vec x' = i x'e_1 + iy'e_2 + iz'e_3$ | The informational coordinate |
 | $q'_0, q_1, q_2, q_3$ | Real parameters of a material four-vector, $\tilde{Q} = iq'_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$; $q'_0 = ct$, $(q_1,q_2,q_3) = (x,y,z)$ for the four-position |
 | $q_0, q'_1, q'_2, q'_3$ | Real parameters of an informational four-vector, $\tilde{Q} = q_0e_0 + iq'_1e_1 + iq'_2e_2 + iq'_3e_3$; $q_0 = ct'$, $(q'_1,q'_2,q'_3) = (x',y',z')$ |
-| $\tilde{U}$, $\tilde{P}$, $\tilde{J}$, $\tilde{A}$ | Four-velocity, four-momentum, four-current, four-potential; $N(\tilde{U}) = -c^2$, $N(\tilde{P}) = -m^2c^2$ on shell |
+| $\tilde{V}$, $\tilde{P}$, $\tilde{J}$, $\tilde{A}$ | Four-velocity, four-momentum, four-current, four-potential; $N(\tilde{V}) = -c^2$, $N(\tilde{P}) = -m^2c^2$ on shell |
 | $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$ | Biquaternionic gradient; $N(\tilde{\nabla}) = \Box$ |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \Delta$ | d'Alembertian, series convention |
 | $\eta = \mathrm{diag}(-1,+1,+1,+1)$ | The $ict$-coordinate metric of the explicit contractions (level 2) |

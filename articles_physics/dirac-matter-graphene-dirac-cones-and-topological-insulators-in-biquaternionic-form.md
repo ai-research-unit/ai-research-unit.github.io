@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**Dirac matter** is the name for the solids whose low-energy electronic excitations obey, not the Schrödinger equation, but an equation of Dirac type. The prototype is monolayer graphene, where the honeycomb lattice leaves electrons near the Fermi level massless and linearly dispersing, forming the **Dirac cones** of the Brillouin zone. The same structure appears in the surface states of three-dimensional **topological insulators**, where the bulk is gapped and insulating and the boundary carries a gapless Dirac cone protected by time-reversal symmetry. In both cases a two-component spinor, a $\boldsymbol{\sigma}\cdot\mathbf{p}$ kinetic term and a mass term that opens a gap organise the physics; these are exactly the three objects the biquaternion framework names as its own.
+**Dirac matter** is the name for the solids whose low-energy electronic excitations obey, not the Schrödinger equation, but an equation of Dirac type. The prototype is monolayer graphene, where the honeycomb lattice leaves electrons near the Fermi level massless and linearly dispersing, forming the **Dirac cones** of the Brillouin zone. The same structure appears in the surface states of three-dimensional **topological insulators**, where the bulk is gapped and insulating and the boundary carries a gapless Dirac cone protected by time-reversal symmetry. In both cases a two-component spinor, a $\boldsymbol{\sigma}\cdot\vec p$ kinetic term and a mass term that opens a gap organise the physics; these are exactly the three objects the biquaternion framework names as its own.
 
 This article asks what the framework contributes to Dirac matter and, just as importantly, what it does not. The framework **transcribes** the low-energy equations faithfully, and it locates the gap-opening term as the parent's chirality-mixing mass. It does **not** derive the honeycomb lattice, the Fermi velocity, or the topological invariant: those are material and many-body data. The one genuinely algebraic point offered here is a **counting** observation — the biquaternion field carries eight real components, the same count as the sublattice and valley isospins of graphene together — and a corresponding **caution**: the framework has two minimal left ideals, so it can host the chirality pair or the valley pair naturally, but the identification of its ideals with graphene's valley isospin is a choice, not a consequence. The distinction between the framework's chirality and graphene's pseudospin is the sharpest thing this article has to say.
 
@@ -21,7 +21,7 @@ Graphene is a single layer of carbon atoms on a honeycomb lattice. The lattice i
 Expanding the tight-binding bands about a zone corner gives the effective Hamiltonian
 
 $$
-H = v_F\,\boldsymbol{\sigma}\cdot\mathbf{p},
+H = v_F\,\boldsymbol{\sigma}\cdot\vec p,
 \qquad
 v_F \approx 10^6\ \mathrm{m/s} \approx \frac{c}{300},
 $$
@@ -29,13 +29,13 @@ $$
 acting on the two-component sublattice spinor. This is the massless Dirac equation in two spatial dimensions, with $v_F$ in place of $c$. Its energies are
 
 $$
-E(\mathbf p) = \pm v_F|\mathbf p|,
+E(\vec p) = \pm v_F|\vec p|,
 $$
 
-linear in momentum and vanishing at $\mathbf p = 0$: the bands touch at the Dirac point and there is no gap. A finite **mass** term opens one,
+linear in momentum and vanishing at $\vec p = 0$: the bands touch at the Dirac point and there is no gap. A finite **mass** term opens one,
 
 $$
-H = v_F\,\boldsymbol{\sigma}\cdot\mathbf{p} + \Delta\,\sigma_z ,
+H = v_F\,\boldsymbol{\sigma}\cdot\vec p + \Delta\,\sigma_z ,
 \qquad
 E = \pm\sqrt{v_F^2p^2 + \Delta^2},
 $$
@@ -58,7 +58,7 @@ whose offset $\tfrac12$ is the Berry phase $\pi$ of a massless Dirac fermion win
 
 Graphene's low-energy spinor carries two internal two-valued labels that are easy to confuse and must be kept apart.
 
-- **Sublattice pseudospin.** The two components of the $\boldsymbol{\sigma}$ in $H = v_F\boldsymbol{\sigma}\cdot\mathbf{p}$ are the amplitudes on sublattices $A$ and $B$. It is an orbital isospin; it exists because the cell has two sites. It is not the electron's spin, and rotations of it are not physical rotations of the electron.
+- **Sublattice pseudospin.** The two components of the $\boldsymbol{\sigma}$ in $H = v_F\boldsymbol{\sigma}\cdot\vec p$ are the amplitudes on sublattices $A$ and $B$. It is an orbital isospin; it exists because the cell has two sites. It is not the electron's spin, and rotations of it are not physical rotations of the electron.
 - **Valley isospin.** The label $K$ versus $K'$ distinguishes the two inequivalent cones. It is a momentum-space label, protected at low energy by the large momentum separation of the valleys.
 
 The physical electron additionally carries its genuine spin, so the full low-energy count is $2_{\mathrm{sublattice}}\times 2_{\mathrm{valley}}\times 2_{\mathrm{spin}} = 8$ complex components.
@@ -116,8 +116,8 @@ Graphene's massless Dirac electrons show the Klein effect of the companion artic
 The low-energy equations of Dirac matter are the framework's Dirac equation with the parameters of the material, and the transcription is exact:
 
 - the two-component spinor is the framework's minimal ideal;
-- the kinetic term $v_F\boldsymbol{\sigma}\cdot\mathbf{p}$ is the framework's massless Dirac operator, with $c$ replaced by $v_F$;
-- the linear dispersion $E=\pm v_F|\mathbf p|$ is the framework's mass shell in the massless limit;
+- the kinetic term $v_F\boldsymbol{\sigma}\cdot\vec p$ is the framework's massless Dirac operator, with $c$ replaced by $v_F$;
+- the linear dispersion $E=\pm v_F|\vec p|$ is the framework's mass shell in the massless limit;
 - the gap-opening perturbation is the framework's chirality-mixing mass;
 - the helical edge states are the framework's spinor structure with the Kramers sign of the companion article;
 - Klein tunnelling is the framework's massless step problem.
@@ -150,7 +150,7 @@ It does not supply the honeycomb lattice, the hopping $\gamma_0$, the Fermi velo
 
 ## Summary
 
-Dirac matter is the family of solids whose low-energy electrons obey a Dirac equation: graphene with its massless Dirac cones, and the surface and edge states of topological insulators. The honeycomb lattice's two-site cell gives a two-component sublattice pseudospin and the effective equation $H=v_F\boldsymbol{\sigma}\cdot\mathbf{p}$, linear and gapless at the Dirac point; the two inequivalent cones add a valley isospin; a sublattice-symmetry-breaking term inserts a Dirac mass and opens a gap.
+Dirac matter is the family of solids whose low-energy electrons obey a Dirac equation: graphene with its massless Dirac cones, and the surface and edge states of topological insulators. The honeycomb lattice's two-site cell gives a two-component sublattice pseudospin and the effective equation $H=v_F\boldsymbol{\sigma}\cdot\vec p$, linear and gapless at the Dirac point; the two inequivalent cones add a valley isospin; a sublattice-symmetry-breaking term inserts a Dirac mass and opens a gap.
 
 The biquaternion framework transcribes these equations exactly and locates two structures: the gap is the parent's chirality-mixing mass term, the unique bilinear coupling the two minimal left ideals; and the $\mathbb Z_2$ protection of the topological phase is the Kramers sign $\mathcal T^2=-e_0$ of the companion article, whose commutant is a quaternionic line. The framework does not supply the lattice, the Fermi velocity, the Dirac-point positions, the valley degeneracy or the invariant of any material, and — the article's sharpest caution — its two minimal ideals are chirality, not valley, so identifying them with graphene's valleys is an extra input rather than a consequence. What the framework offers is a precise language for the effective equation and the exact location of the mass and protection terms; the material supplies the rest.
 

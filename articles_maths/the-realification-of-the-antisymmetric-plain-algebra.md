@@ -4,7 +4,7 @@
 
 The Antisymmetric Plain Algebra is one of the twelve algebraic structures that the biquaternion space $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ carries, the structure carried by the product
 $$
-\tilde P\wedge\tilde Q=\tfrac12\bigl(\tilde P\tilde Q-\tilde Q\tilde P\bigr)=\mathbf{P}\times\mathbf{Q},
+\tilde P\wedge\tilde Q=\tfrac12\bigl(\tilde P\tilde Q-\tilde Q\tilde P\bigr)=\vec P\times\vec Q,
 $$
 the cross product of the two vector parts. It is the antisymmetric plain bilinear entry of the table of *The 12 Products of the Biquaternion Complex Space*, and it is the Lie product of that table: it alone of the twelve operations satisfies the Jacobi identity. Read over $\mathbb{R}$, the same product on the same set is an $\mathbb{R}$-algebra on the eight-dimensional real space $\mathbb{R}^8$, and this article owns that real reading.
 
@@ -36,13 +36,13 @@ In the real basis the criterion takes a block form. If the complex matrix of the
 $$
 \begin{pmatrix}A&-B\\B&A\end{pmatrix},
 $$
-the shape that commutes with $J=\begin{pmatrix}0&-\mathrm{I}\\\mathrm{I}&0\end{pmatrix}$. For this product the two blocks are cross products by the two real vectors of the vector part: writing $\tilde X$ with vector part $\mathbf{X}=\mathbf{a}+i\mathbf{b}$, the real matrix of $\tilde Y\mapsto\tilde X\wedge\tilde Y$ carries the matrix of $\mathbf{a}\times$ on its two diagonal blocks and the matrix of $\mathbf{b}\times$ below the diagonal, with its negative above, and it kills the scalar coordinate.
+the shape that commutes with $J=\begin{pmatrix}0&-\mathrm{I}\\\mathrm{I}&0\end{pmatrix}$. For this product the two blocks are cross products by the two real vectors of the vector part: writing $\tilde X$ with vector part $\vec X=\vec a+i\vec b$, the real matrix of $\tilde Y\mapsto\tilde X\wedge\tilde Y$ carries the matrix of $\vec a\times$ on its two diagonal blocks and the matrix of $\vec b\times$ below the diagonal, with its negative above, and it kills the scalar coordinate.
 
 ## The Forms the Block Carries over $\mathbb{R}$
 
 The form of an operation is its **scalar part** (*The 4 Forms over the Biquaternion $\mathbb{C}$ Space*), and the antisymmetrisation kills the scalar part of the general product of its family, so this product carries the **zero form** — a vanishing scalar part is counted as no form rather than as a fifth — and there is nothing for the realification of a form to act on. The two invariant symmetric forms the block does carry, read in *Norm and Invertibility in the Antisymmetric Plain Algebra*, do realify, and their realifications are the content of this section:
 $$
-K(\tilde A,\tilde B)=\operatorname{Tr}\bigl(L_{\tilde A}L_{\tilde B}\bigr)=-2\,\mathbf{A}\cdot\mathbf{B},
+K(\tilde A,\tilde B)=\operatorname{Tr}\bigl(L_{\tilde A}L_{\tilde B}\bigr)=-2\,\vec A\cdot\vec B,
 \qquad
 \varphi(\tilde P,\tilde Q)=P_0Q_0 .
 $$
@@ -93,7 +93,7 @@ R_{\tilde X}=-L_{\tilde X},
 \operatorname{Tr}_{\mathbb{R}}\bigl(L_{\tilde X}\bigr)=\operatorname{Tr}_{\mathbb{C}}\bigl(L_{\tilde X}\bigr)=0 .
 $$
 
-*Proof.* Alternation gives $\tilde Y\wedge\tilde X=-(\tilde X\wedge\tilde Y)$. The operator $L_{\tilde X}$ kills the scalar coordinate and acts on the derived algebra by the skew matrix $\mathbf{Y}\mapsto\mathbf{X}\times\mathbf{Y}$, whose complex trace vanishes; the real trace of a $\mathbb{C}$-linear endomorphism is twice the real part of its complex trace, so it vanishes too. Computed on the basis. **The trace row of the table of the four effects is not this row.** That row, $\operatorname{Tr}_{\mathbb{C}}(L_{\tilde P})=4\,\mathrm{Sc}(\tilde P)$ and $\operatorname{Tr}_{\mathbb{R}}(L_{\tilde P})=8\operatorname{Re}\mathrm{Sc}(\tilde P)$, is the row of the products of the table whose element $e_0$ is a **left unit** — the general plain, the symmetric plain and the general quaternionic product; on the other nine, this one included, it fails, and on this one both traces vanish.
+*Proof.* Alternation gives $\tilde Y\wedge\tilde X=-(\tilde X\wedge\tilde Y)$. The operator $L_{\tilde X}$ kills the scalar coordinate and acts on the derived algebra by the skew matrix $\vec Y\mapsto\vec X\times\vec Y$, whose complex trace vanishes; the real trace of a $\mathbb{C}$-linear endomorphism is twice the real part of its complex trace, so it vanishes too. Computed on the basis. **The trace row of the table of the four effects is not this row.** That row, $\operatorname{Tr}_{\mathbb{C}}(L_{\tilde P})=4\,\mathrm{Sc}(\tilde P)$ and $\operatorname{Tr}_{\mathbb{R}}(L_{\tilde P})=8\operatorname{Re}\mathrm{Sc}(\tilde P)$, is the row of the products of the table whose element $e_0$ is a **left unit** — the general plain, the symmetric plain and the general quaternionic product; on the other nine, this one included, it fails, and on this one both traces vanish.
 
 **Theorem (the operator trace form in the two readings).** For all $\tilde A,\tilde B$,
 $$
@@ -119,13 +119,13 @@ $$
 $$
 of real dimension $6+4=10$, against the complex $\operatorname{Der}_{\mathbb{C}}(\mathfrak{g})\cong\mathfrak{sl}(2,\mathbb{C})\oplus\mathbb{C}$ of real dimension $6+2=8$. The extra two dimensions are conjugate-linear and act on the centre alone.
 
-*Proof.* A derivation preserves the centre, because the centre is the annihilator and the Leibniz rule carries an annihilated element to an annihilated one, and it preserves the derived algebra, by the Leibniz rule and the stability of the image; so it is the sum of its two restrictions. The restrictions to the derived algebra are the derivations of the simple $\mathfrak{sl}(2,\mathbb{C})$ read over $\mathbb{R}$, hence the inner ones $\operatorname{ad}_{\mathbf{P}}$, of real dimension six, which is the factor $\mathfrak{sl}(2,\mathbb{C})$. A map vanishing on the derived algebra is a derivation exactly when it preserves the centre, and the centre is abelian of real dimension two, so every $\mathbb{R}$-linear endomorphism of it occurs: that is the factor $\operatorname{End}_{\mathbb{R}}(\mathbb{C}_{\mathbb{B}})$, of real dimension four, whose $\mathbb{C}$-linear half is the complex scalars $\mathbb{C}$ and completes the $\mathbb{C}$-linear part to $\mathfrak{sl}(2,\mathbb{C})\oplus\mathbb{C}$. Computed on the basis. The identity $\operatorname{Der}_{\mathbb{R}}=\operatorname{Der}_{\mathbb{C}}$ of the associative parent does not carry over, **because a derivation of a bracket is not a derivation of the ring**: a ring derivation kills $i$, from $i^2=-1$ and $D(-1)=0$, while a bracket derivation is free to move $i$ inside the centre, and here that freedom is two real dimensions.
+*Proof.* A derivation preserves the centre, because the centre is the annihilator and the Leibniz rule carries an annihilated element to an annihilated one, and it preserves the derived algebra, by the Leibniz rule and the stability of the image; so it is the sum of its two restrictions. The restrictions to the derived algebra are the derivations of the simple $\mathfrak{sl}(2,\mathbb{C})$ read over $\mathbb{R}$, hence the inner ones $\operatorname{ad}_{\vec P}$, of real dimension six, which is the factor $\mathfrak{sl}(2,\mathbb{C})$. A map vanishing on the derived algebra is a derivation exactly when it preserves the centre, and the centre is abelian of real dimension two, so every $\mathbb{R}$-linear endomorphism of it occurs: that is the factor $\operatorname{End}_{\mathbb{R}}(\mathbb{C}_{\mathbb{B}})$, of real dimension four, whose $\mathbb{C}$-linear half is the complex scalars $\mathbb{C}$ and completes the $\mathbb{C}$-linear part to $\mathfrak{sl}(2,\mathbb{C})\oplus\mathbb{C}$. Computed on the basis. The identity $\operatorname{Der}_{\mathbb{R}}=\operatorname{Der}_{\mathbb{C}}$ of the associative parent does not carry over, **because a derivation of a bracket is not a derivation of the ring**: a ring derivation kills $i$, from $i^2=-1$ and $D(-1)=0$, while a bracket derivation is free to move $i$ inside the centre, and here that freedom is two real dimensions.
 
 **Proposition (the automorphisms grow at the centre).** An $\mathbb{R}$-automorphism of the bracket preserves the centre and the derived algebra, so
 $$
 \operatorname{Aut}_{\mathbb{R}}(\mathfrak{g})\cong GL_2(\mathbb{R})\times\operatorname{Aut}_{\mathbb{R}}\bigl(\mathrm{Vect}(\mathbb{B}),\wedge\bigr),
 $$
-which contains $GL_2(\mathbb{R})\times PGL(2,\mathbb{C})$, while the $\mathbb{C}$-linear group is $\operatorname{Aut}_{\mathbb{C}}(\mathfrak{g})\cong\mathbb{C}^{\times}\times PGL(2,\mathbb{C})$ (*The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*). The centre contributes the whole of $GL_2(\mathbb{R})$ in place of the complex scalars, and the derived algebra contributes, beside its $\mathbb{C}$-linear automorphisms, the conjugate-linear conjugation $\mathbf{X}\mapsto\bar{\mathbf{X}}$.
+which contains $GL_2(\mathbb{R})\times PGL(2,\mathbb{C})$, while the $\mathbb{C}$-linear group is $\operatorname{Aut}_{\mathbb{C}}(\mathfrak{g})\cong\mathbb{C}^{\times}\times PGL(2,\mathbb{C})$ (*The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*). The centre contributes the whole of $GL_2(\mathbb{R})$ in place of the complex scalars, and the derived algebra contributes, beside its $\mathbb{C}$-linear automorphisms, the conjugate-linear conjugation $\vec X\mapsto\bar{\vec X}$.
 
 *Proof.* The centre and the derived algebra are characteristic, so an automorphism is a pair of an automorphism of each, and any such pair is an automorphism, because the bracket vanishes between the centre and the derived algebra and is internal to the derived algebra. The centre is abelian of real dimension two, so its automorphism group is the whole of $GL_2(\mathbb{R})$, of real dimension four, whose $\mathbb{C}$-linear part is $\mathbb{C}^{\times}$. On the derived algebra the complex automorphisms are $PGL(2,\mathbb{C})$, of real dimension six, and the conjugation of the coordinates is a further $\mathbb{R}$-automorphism, conjugate-linear and not in the complex group.
 
@@ -137,7 +137,7 @@ Read over $\mathbb{R}$ the Antisymmetric Plain Algebra is the same product on th
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf{P}\times\mathbf{Q}$ | the product of the Antisymmetric Plain Algebra |
+| $\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\vec P\times\vec Q$ | the product of the Antisymmetric Plain Algebra |
 | $\mathbb{R}^8$ | the realification of $\mathbb{B}$, the eight real basis elements $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$ |
 | $\mathbb{C}_{\mathbb{B}}=\mathbb{R}e_0\oplus\mathbb{R}(ie_0)$ | the centre, of complex dimension one and real dimension two |
 | $J$ | the complex structure, multiplication by $i$, of square $-1$ |

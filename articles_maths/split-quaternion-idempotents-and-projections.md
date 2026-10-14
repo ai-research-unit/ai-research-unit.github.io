@@ -16,13 +16,13 @@ The last two items are developed in the companion articles *Split-Quaternion Zer
 
 **Placement.** The article is third in the Algebra group, after the algebra and before the roots of $-1$, the zero divisors and the ideals, because the ideals and the zero divisors both use the idempotents. Its proofs use only the algebra article and the algebraic product $\tilde q\tilde{q}^{\natural}$; the classification of the non-scalar idempotents is proved here from the quadratic equation, so nothing is quoted from the roots of $-1$ article, which is the companion classification of the opposite sign.
 
-**Conventions.** The algebra is $\mathbb{H}_{\mathrm{s}} = \mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$, with basis $1, e_1, e_2, e_3$, the relations $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1 e_2$ and $e_1 e_2 = -e_2 e_1$. A general element is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, its scalar part is $q_0 = \operatorname{Sc}(\tilde q)$ and its vector part is $\mathbf{v} = q_1 e_1 + q_2 e_2 + q_3 e_3$. The conjugation is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$. The product $\tilde q\tilde{q}^{\natural}$ lies in the centre and is written
+**Conventions.** The algebra is $\mathbb{H}_{\mathrm{s}} = \mathrm{Cl}_{1,1} \cong M_2(\mathbb{R})$, with basis $1, e_1, e_2, e_3$, the relations $e_1^2 = -1$, $e_2^2 = +1$, $e_3 = e_1 e_2$ and $e_1 e_2 = -e_2 e_1$. A general element is $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$, its scalar part is $q_0 = \operatorname{Sc}(\tilde q)$ and its vector part is $\vec v = q_1 e_1 + q_2 e_2 + q_3 e_3$. The conjugation is $\tilde{q}^{\natural} = q_0 e_0 - q_1 e_1 - q_2 e_2 - q_3 e_3$. The product $\tilde q\tilde{q}^{\natural}$ lies in the centre and is written
 
 $$
 N(\tilde q) = \tilde q\tilde{q}^{\natural} = q_0^2 + q_1^2 - q_2^2 - q_3^2 ;
 $$
 
-it is formed and evaluated here as an algebraic product, and its metrical reading — the signature of the pairings, their isotropy and the group of units — is in *Split-Quaternion Norm and Invertibility*. The scalar subspace is $S = \mathbb{R}\cdot 1$ and the vector subspace is $V = \operatorname{span}\{e_1, e_2, e_3\}$; on $V$ the square of an element is minus that product, $\mathbf{v}^2 = -N(\mathbf{v})$.
+it is formed and evaluated here as an algebraic product, and its metrical reading — the signature of the pairings, their isotropy and the group of units — is in *Split-Quaternion Norm and Invertibility*. The scalar subspace is $S = \mathbb{R}\cdot 1$ and the vector subspace is $V = \operatorname{span}\{e_1, e_2, e_3\}$; on $V$ the square of an element is minus that product, $\vec v^2 = -N(\vec v)$.
 
 ## Idempotents in an Algebra
 
@@ -82,27 +82,27 @@ $$
 
 where $\eta \in V$ is a root of $+1$, i.e. $\eta^2 = 1$, equivalently $N(\eta) = -1$. There are no other idempotents in $\mathbb{H}_{\mathrm{s}}$.
 
-**Proof.** Write $\tilde\pi = q_0 + \mathbf{u}$ with $q_0 \in \mathbb{R}$ and $\mathbf{u} \in V$. Since $\mathbf{u}^2 = -N(\mathbf{u})$ for a vector,
+**Proof.** Write $\tilde\pi = q_0 + \vec u$ with $q_0 \in \mathbb{R}$ and $\vec u \in V$. Since $\vec u^2 = -N(\vec u)$ for a vector,
 
 $$
-\tilde\pi^2 = q_0^2 + 2q_0\mathbf{u} + \mathbf{u}^2 = \big(q_0^2 - N(\mathbf{u})\big) + 2q_0\mathbf{u}.
+\tilde\pi^2 = q_0^2 + 2q_0\vec u + \vec u^2 = \big(q_0^2 - N(\vec u)\big) + 2q_0\vec u.
 $$
 
-Equating to $\tilde\pi = q_0 + \mathbf{u}$ and separating the scalar and vector parts gives the two equations
+Equating to $\tilde\pi = q_0 + \vec u$ and separating the scalar and vector parts gives the two equations
 
 $$
-q_0^2 - N(\mathbf{u}) = q_0, \qquad 2q_0\mathbf{u} = \mathbf{u}.
+q_0^2 - N(\vec u) = q_0, \qquad 2q_0\vec u = \vec u.
 $$
 
-If $\mathbf{u} = 0$, then $q_0^2 = q_0$, so $q_0 = 0$ or $q_0 = 1$, giving the trivial idempotents. If $\mathbf{u} \neq 0$, the second equation gives $q_0 = \tfrac{1}{2}$. Substituting into the first gives $\tfrac{1}{4} - N(\mathbf{u}) = \tfrac{1}{2}$, so $N(\mathbf{u}) = -\tfrac{1}{4}$.
+If $\vec u = 0$, then $q_0^2 = q_0$, so $q_0 = 0$ or $q_0 = 1$, giving the trivial idempotents. If $\vec u \neq 0$, the second equation gives $q_0 = \tfrac{1}{2}$. Substituting into the first gives $\tfrac{1}{4} - N(\vec u) = \tfrac{1}{2}$, so $N(\vec u) = -\tfrac{1}{4}$.
 
-Define $\eta = 2\mathbf{u}$. Then $\eta \in V$, and
+Define $\eta = 2\vec u$. Then $\eta \in V$, and
 
 $$
-N(\eta) = 4N(\mathbf{u}) = -1, \qquad \eta^2 = 4\mathbf{u}^2 = -4N(\mathbf{u}) = 1,
+N(\eta) = 4N(\vec u) = -1, \qquad \eta^2 = 4\vec u^2 = -4N(\vec u) = 1,
 $$
 
-where the second identity uses $\mathbf{u}^2 = -N(\mathbf{u})$ for a vector. Thus $\eta$ is a root of $+1$ in the vector subspace, and $\tilde\pi = \tfrac{1}{2} + \mathbf{u} = \tfrac{1}{2}(1 + \eta)$.
+where the second identity uses $\vec u^2 = -N(\vec u)$ for a vector. Thus $\eta$ is a root of $+1$ in the vector subspace, and $\tilde\pi = \tfrac{1}{2} + \vec u = \tfrac{1}{2}(1 + \eta)$.
 
 The roots of $+1$ in $V$ are the vectors of the **spacelike unit hyperboloid** $N = -1$, a one-sheeted hyperboloid of two real dimensions, as recorded in *Split-Quaternion Roots of Minus One*, §*The Roots of $+1$*. The standard idempotents correspond to $\eta = e_2$ and $\eta = -e_2$, both of which satisfy $N = -1$.
 
@@ -215,10 +215,10 @@ The trivial idempotents $0$ and $1$ are the two isolated points of the idempoten
 The contrast with the biquaternion idempotent theory is the contrast of the two signs. In the biquaternion algebra $\mathbb{B} \cong M_2(\mathbb{C})$, the standard idempotents
 
 $$
-\tilde\Pi_1 = \tfrac{1}{2}(e_0 + i e_3), \qquad \tilde\Pi_2 = \tfrac{1}{2}(e_0 - i e_3)
+\tilde\Pi_+ = \tfrac{1}{2}(e_0 + i e_3), \qquad \tilde\Pi_- = \tfrac{1}{2}(e_0 - i e_3)
 $$
 
-are likewise non-central, but for a different reason: $\mathbb{B}$ is simple, so its only central idempotents are $0$ and $e_0$, and the nontrivial idempotents are obtained from the roots of $-1$ by $\tilde\Xi \mapsto \tfrac{1}{2}(e_0 + \tilde\Xi i)$ written with the central unit $i$ of $\mathbb{B}$. The biquaternion idempotents are therefore parametrised by the roots of $-1$, a set of real dimension $4$, whereas the split-quaternion idempotents are parametrised by the roots of $+1$ in $V$, a level set of real dimension $2$.
+are likewise non-central, but for a different reason: $\mathbb{B}$ is simple, so its only central idempotents are $0$ and $e_0$, and the nontrivial idempotents are obtained from the roots of $-1$ by $\tilde\Xi \mapsto \tfrac{1}{2}(e_0 + \tilde\Xi i)$ written with the central unit $i$ of $\mathbb{B}$. The biquaternion idempotents are therefore parametrised by the roots of $-1$, a set of real dimension $4$, whereas the split-quaternion idempotents are parametrised by the roots of $+1$ in $V$, a level set of real dimension $2$. $ie_3$ is a root of $+1$, $(ie_3)^2 = e_0$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
 
 The algebra in which the idempotents are genuinely **central** is not $\mathbb{B}$ but the eight-dimensional split-biquaternion algebra $\mathbb{H}_{\mathbb{D}} = \mathbb{D} \otimes_{\mathbb{R}} \mathbb{H}$ of the notation table, whose central split-complex unit $j$ carries the idempotents $e_\pm = \tfrac{1}{2}(1 \pm j)$. Those are central, they commute with every element, and their complementary pair decomposes $\mathbb{H}_{\mathbb{D}}$ as a product of two algebras. Nothing of this kind occurs in $\mathbb{H}_{\mathrm{s}}$: its idempotents are non-central, and the companion article *Split-Quaternion Ideals and Peirce Decomposition* records that the corresponding decomposition is a module decomposition and not an algebra decomposition. The same central-idempotent phenomenon is what the commutative split-complex algebra $\mathbb{D}$ exhibits, and the split-quaternion idempotents $\tilde\pi_{1,2}$ are precisely the images of the idempotents of $\mathbb{D}$ inside the non-commutative algebra $\mathbb{H}_{\mathrm{s}}$, where they cease to be central.
 

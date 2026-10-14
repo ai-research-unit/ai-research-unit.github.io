@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The antisymmetric quaternionic multiplication $\tilde P\diamond\tilde Q=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$ is the halved difference of the quaternionic product and the product with the arguments exchanged (*Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions*). This article reads the operation of the block in the $2\times2$ model, the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ with the matrix of ${}^{\natural}$ the adjugate, of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* and *The General Quaternionic Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*; it is the first of the two representation articles of the block, and its companion *The Antisymmetric Quaternionic Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$* repeats the reading on the regular representation. The article treats the difference of the two twisted products, the image and the kernel on the matrices, the trace, the determinant and the rank of the operator, and the matrix form of the invariant form and of the failure of the Jacobi identity. Nothing of the parent product's own models is redone; the models are cited and used.
+The antisymmetric quaternionic multiplication $\tilde P\diamond\tilde Q=P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$ is the halved difference of the quaternionic product and the product with the arguments exchanged (*Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions*). This article reads the operation of the block in the $2\times2$ model, the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ with the matrix of ${}^{\natural}$ the adjugate, of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* and *The General Quaternionic Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$*; it is the first of the two representation articles of the block, and its companion *The Antisymmetric Quaternionic Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$* repeats the reading on the regular representation. The article treats the difference of the two twisted products, the image and the kernel on the matrices, the trace, the determinant and the rank of the operator, and the matrix form of the invariant form and of the failure of the Jacobi identity. Nothing of the parent product's own models is redone; the models are cited and used.
 
 ## The Operation in the Model
 
@@ -113,7 +113,7 @@ $$
 =P_0Y-Q_0X-\tfrac12\bigl[X,Y\bigr],
 $$
 
-which is the model form of $P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$: the two scalar multiples carry the $P_0$ and $Q_0$ terms, and the halved commutator carries the cross product, since on two vector parts the commutator of the matrices is twice the matrix of the cross product.
+which is the model form of $P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$: the two scalar multiples carry the $P_0$ and $Q_0$ terms, and the halved commutator carries the cross product, since on two vector parts the commutator of the matrices is twice the matrix of the cross product.
 
 **The witness, entry by entry.** At the pair $e_0,e_1$ the scalar terms collapse and the commutator vanishes, $\mathsf{M}_2(e_0\diamond e_1)=\tfrac12\bigl(\mathsf{M}_2(e_1)-(-\mathsf{M}_2(e_1))\bigr)=\mathsf{M}_2(e_1)$; at the pair $e_1,e_2$ the halved commutator is the matrix of the cross product, that is the negative of the value of the operation,
 $$
@@ -129,7 +129,7 @@ In the $2\times2$ model the operation of the block is half the difference of the
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\diamond\tilde Q=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$ | the antisymmetric quaternionic multiplication, the operation $\mathrm{AQA}$ |
+| $\tilde P\diamond\tilde Q=P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$ | the antisymmetric quaternionic multiplication, the operation $\mathrm{AQA}$ |
 | $\mathsf{M}_2:\mathbb{B}\to M_2(\mathbb{C})$ | the isomorphism of the algebra with the $2\times2$ matrices |
 | $\operatorname{adj}\mathsf{M}_2(\tilde P)=\mathsf{M}_2(\tilde P^{\natural})$ | the matrix of the quaternion conjugation in the model |
 | $\operatorname{adj}\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)$ | the twisted product, the matrix of the parent product |

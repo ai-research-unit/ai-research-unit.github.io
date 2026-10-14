@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The block $\tilde P\diamond\tilde Q=\mathbf{P}\times\overline{\mathbf{Q}}$ of *Introduction to the Antisymmetric Quaternionic Sesqualgebra of Biquaternions* is pure-vector-valued, so it can be paired with the elements of the space by the Krein form
+The block $\tilde P\diamond\tilde Q=\vec P\times\overline{\vec Q}$ of *Introduction to the Antisymmetric Quaternionic Sesqualgebra of Biquaternions* is pure-vector-valued, so it can be paired with the elements of the space by the Krein form
 
 $$
 K(\tilde P,\tilde Q)=\mathrm{Sc}\bigl(\tilde P^{\natural}\tilde Q^{*}\bigr)=\sum_{\mu}\varepsilon_\mu P_\mu\overline{Q_\mu}
@@ -13,7 +13,7 @@ the form of *The Krein Gram Matrix and the Restrictions of the Form*, written th
 
 The form is owned by *The Krein Gram Matrix and the Restrictions of the Form* and its isotropic structure by *The Isotropic Structure of the General Quaternionic Sesqualgebra*; the remarkable subspaces are *Introduction to the Remarkable Subspaces*; the product the block splits is *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*; the general construction of a sesqualgebra part is *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product*; and the companion readings of the same form are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* for the four forms on the remarkable subspaces and *The Sesquilinear Pairing of the Antisymmetric Plain Sesqualgebra* for the plain-row companion of the block. This article owns the pairing itself.
 
-**Conventions.** As in the two preceding articles of the block: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$, a generic element $\tilde Q=Q_0e_0+\mathbf{Q}$, and the product $\diamond$ for the block. The form $K$ is linear in the **first** argument and conjugate-linear in the second; the vector subspace $\mathrm{Vect}(\mathbb{B})$ is the complex span of $e_1,e_2,e_3$.
+**Conventions.** As in the two preceding articles of the block: $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$, a generic element $\tilde Q=Q_0e_0+\vec Q$, and the product $\diamond$ for the block. The form $K$ is linear in the **first** argument and conjugate-linear in the second; the vector subspace $\mathrm{Vect}(\mathbb{B})$ is the complex span of $e_1,e_2,e_3$.
 
 ## The Pairing of a Value with a Third Element
 
@@ -21,26 +21,26 @@ The form is owned by *The Krein Gram Matrix and the Restrictions of the Form* an
 
 $$
 K\bigl(\tilde P\diamond\tilde Q,\tilde R\bigr)
-=-\sum_{k}\bigl(\mathbf{P}\times\overline{\mathbf{Q}}\bigr)_k\,\overline{R_k}
-=-\bigl(\mathbf{P}\times\overline{\mathbf{Q}},\overline{\mathbf{R}}\bigr),
+=-\sum_{k}\bigl(\vec P\times\overline{\vec Q}\bigr)_k\,\overline{R_k}
+=-\bigl(\vec P\times\overline{\vec Q},\overline{\vec R}\bigr),
 $$
 
 where the bracket on the right is the complex bilinear dot product of the value with the conjugate of the vector part of the third argument.
 
-*Proof.* The value $\mathbf{P}\times\overline{\mathbf{Q}}$ is pure vector, so the scalar term of $K$ drops and only the three vector terms remain, with the sign $\varepsilon_k=-1$ and the conjugation on the third argument.
+*Proof.* The value $\vec P\times\overline{\vec Q}$ is pure vector, so the scalar term of $K$ drops and only the three vector terms remain, with the sign $\varepsilon_k=-1$ and the conjugation on the third argument.
 
 **Proposition (the self-pairing is non-positive).** For all biquaternions,
 
 $$
 K\bigl(\tilde P\diamond\tilde Q,\tilde P\diamond\tilde Q\bigr)
-=-\bigl|\mathbf{P}\times\overline{\mathbf{Q}}\bigr|^{2}\le0,
+=-\bigl|\vec P\times\overline{\vec Q}\bigr|^{2}\le0,
 $$
 
 and it vanishes exactly when the value of the block vanishes, that is exactly when $\tilde P\diamond\tilde Q=0$.
 
-*Proof.* The self-pairing of a pure vector $\mathbf{V}$ is $-\sum_kV_k\overline{V_k}=-|\mathbf{V}|^{2}$, a non-positive real number, and it vanishes exactly when $\mathbf{V}=0$.
+*Proof.* The self-pairing of a pure vector $\vec V$ is $-\sum_kV_k\overline{V_k}=-|\vec V|^{2}$, a non-positive real number, and it vanishes exactly when $\vec V=0$.
 
-**Remark (the value on the negative side).** The self-pairing is never positive, and it is strictly negative exactly on the nonzero values of the block. The values of the block lie in the vector subspace, which is the negative definite row of the form, so the block never carries a value on which the form is positive or null except the value zero. The pairing of the block with the form is therefore a map into the negative cone of the form, conjugate-linear in the third argument, and the relation of the block to the norm of its value is the statement $K(\tilde P\diamond\tilde Q,\tilde P\diamond\tilde Q)=-|\tilde P\diamond\tilde Q|^{2}$. The paired value is null exactly on the elements of square zero of the block, which are the elements whose vector part lies on the quadric cone of the diagonal of *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*: the self-pairing vanishes on $\tilde P\diamond\tilde Q$ exactly when $\mathbf{P}$ and $\overline{\mathbf{Q}}$ are $\mathbb{C}$-linearly dependent; in particular the diagonal self-pairing $K(\tilde Q\diamond\tilde Q,\tilde Q\diamond\tilde Q)$ vanishes exactly at the elements whose vector part is a complex multiple of a real vector, which are the square-zero elements of the block, and the self-pairing vanishes for every $\tilde Q$ only when $\tilde P$ is central.
+**Remark (the value on the negative side).** The self-pairing is never positive, and it is strictly negative exactly on the nonzero values of the block. The values of the block lie in the vector subspace, which is the negative definite row of the form, so the block never carries a value on which the form is positive or null except the value zero. The pairing of the block with the form is therefore a map into the negative cone of the form, conjugate-linear in the third argument, and the relation of the block to the norm of its value is the statement $K(\tilde P\diamond\tilde Q,\tilde P\diamond\tilde Q)=-|\tilde P\diamond\tilde Q|^{2}$. The paired value is null exactly on the elements of square zero of the block, which are the elements whose vector part lies on the quadric cone of the diagonal of *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*: the self-pairing vanishes on $\tilde P\diamond\tilde Q$ exactly when $\vec P$ and $\overline{\vec Q}$ are $\mathbb{C}$-linearly dependent; in particular the diagonal self-pairing $K(\tilde Q\diamond\tilde Q,\tilde Q\diamond\tilde Q)$ vanishes exactly at the elements whose vector part is a complex multiple of a real vector, which are the square-zero elements of the block, and the self-pairing vanishes for every $\tilde Q$ only when $\tilde P$ is central.
 
 ## The Gram Matrix on the Basis Pairs
 
@@ -112,11 +112,11 @@ The form $K$ is non-degenerate of signature $(2,6)$ on the whole algebra, and it
 | Hermitian $\mathbb{M}_+$ | $q_0^{2}-(q'_1)^{2}-(q'_2)^{2}-(q'_3)^{2}$ | $(1,3)$ |
 | Anti-Hermitian $\mathbb{M}_-$ | $(q'_0)^{2}-q_1^{2}-q_2^{2}-q_3^{2}$ | $(1,3)$ |
 
-**Remark (the row the block reads).** The values of the block lie in the vector subspace, so the pairing of the block reads the **negative definite** row of the table and no other: on the vector subspace the form is $-\lvert\mathbf{V}\rvert^{2}$, and the pairing of a value with a third element is the complex bilinear dot product of the value with the conjugate of the vector part of the third element, with the sign $-$ and the conjugation on the third argument. The centre is the positive definite row, which the block does not reach; the four remaining rows are indefinite of signature $(1,3)$ and are reached only through their vector parts. The reading of the block on the remarkable subspaces themselves, with the vanishing on the centre and the failure of closure, is *Remarkable Subspaces under the Antisymmetric Quaternionic Sesqualgebra of Biquaternions*.
+**Remark (the row the block reads).** The values of the block lie in the vector subspace, so the pairing of the block reads the **negative definite** row of the table and no other: on the vector subspace the form is $-\lvert\vec V\rvert^{2}$, and the pairing of a value with a third element is the complex bilinear dot product of the value with the conjugate of the vector part of the third element, with the sign $-$ and the conjugation on the third argument. The centre is the positive definite row, which the block does not reach; the four remaining rows are indefinite of signature $(1,3)$ and are reached only through their vector parts. The reading of the block on the remarkable subspaces themselves, with the vanishing on the centre and the failure of closure, is *Remarkable Subspaces under the Antisymmetric Quaternionic Sesqualgebra of Biquaternions*.
 
 ## Summary
 
-Read against the Krein form $K(\tilde P,\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$, the block pairs a value with a third element as $K(\tilde P\diamond\tilde Q,\tilde R)=-(\mathbf{P}\times\overline{\mathbf{Q}},\overline{\mathbf{R}})$ and a value with itself as $K(\tilde P\diamond\tilde Q,\tilde P\diamond\tilde Q)=-\lvert\tilde P\diamond\tilde Q\rvert^{2}\le0$, so the block takes its values on the negative side of the form and is null there only when the value is zero. The Gram matrix of the sixteen basis pairs has rank $3$ over $\mathbb{C}$ and radical of complex dimension $13$, the values spanning the vector subspace, and the induced form is negative semidefinite of real rank $6$. The forms invariant under the block form a complex line of real dimension 2 in each of the four homogeneous classes of slot types, spanned by the central form $\beta_0(\tilde P,\tilde Q)=P_0\overline{Q_0}$ in the sesquilinear class and by $P_0Q_0$ in the bilinear class; every invariant of a homogeneous class is central and degenerate on the vector subspace, while the enlarged class of all real-bilinear invariants has real dimension $8$, the direct sum of the four central lines. The trace form vanishes identically. On the remarkable subspaces the pairing reads the negative definite vector row, the block never reaching the positive definite centre.
+Read against the Krein form $K(\tilde P,\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$, the block pairs a value with a third element as $K(\tilde P\diamond\tilde Q,\tilde R)=-(\vec P\times\overline{\vec Q},\overline{\vec R})$ and a value with itself as $K(\tilde P\diamond\tilde Q,\tilde P\diamond\tilde Q)=-\lvert\tilde P\diamond\tilde Q\rvert^{2}\le0$, so the block takes its values on the negative side of the form and is null there only when the value is zero. The Gram matrix of the sixteen basis pairs has rank $3$ over $\mathbb{C}$ and radical of complex dimension $13$, the values spanning the vector subspace, and the induced form is negative semidefinite of real rank $6$. The forms invariant under the block form a complex line of real dimension 2 in each of the four homogeneous classes of slot types, spanned by the central form $\beta_0(\tilde P,\tilde Q)=P_0\overline{Q_0}$ in the sesquilinear class and by $P_0Q_0$ in the bilinear class; every invariant of a homogeneous class is central and degenerate on the vector subspace, while the enlarged class of all real-bilinear invariants has real dimension $8$, the direct sum of the four central lines. The trace form vanishes identically. On the remarkable subspaces the pairing reads the negative definite vector row, the block never reaching the positive definite centre.
 
 ## Summary of Notation
 

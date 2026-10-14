@@ -21,6 +21,8 @@ $$
 
 in which $r$ is the **modulus** of $A$ and $u$ is its **unit factor**.
 
+The second factor is a **unit element**, an element of norm one for the norm in view (*Conventions in Mathematics*, §*The Unitary Convention*); the norm in view is the complex norm $N$, so the unit factor is the level set $N(u)=1$, the unit circle. The phrase names the norm-one elements and not every invertible element: the **group of units** $\mathbb{C}^\times$ of the algebra is the wider set $\mathbb{R}_{>0}\times U(1)$ treated in its own section, and the two senses of the word are kept apart throughout.
+
 The definition names the two factors before anything is proved about them, so that the propositions below have definite objects to be about. The modulus carries one real parameter. The unit factor is constrained by one real equation, $N(u) = 1$, which is the circle, so it carries one parameter out of the two of a general complex number. The counts add to the real dimension of the algebra, and this additivity is the pattern the whole family follows.
 
 ### The Modulus from the Norm
@@ -68,6 +70,16 @@ which is a group under multiplication, since $N(uv) = N(u)N(v) = 1$ and $N(u^{-1
 The pair of factors is therefore unique, with no sign ambiguity and no branch ambiguity. What is *not* unique is the coordinate that will be used for the unit factor: the angle of $u$ is determined only modulo $2\pi$, so the representation $A = r e^{i\theta}$ determines the number $\theta$ only as a class in $\mathbb{R}/2\pi\mathbb{Z}$. This is a property of the exponential and not of the factorisation: two different coordinates give the same unit factor.
 
 ## The Exponential Form
+
+### The Word as Exponentials
+
+The word $A = r\,u$ is the product of two exponentials, the scale and the unit factor:
+
+$$
+A = \exp(\ln r)\,\exp(i\theta) , \qquad r = \lvert A\rvert > 0 .
+$$
+
+The exponent of the scale is the real number $\ln r$, whose root is $1$ of square $+1$, the hyperbolic row of the trichotomy below; the exponent of the unit factor is the angle $\theta$, whose root is $i$, of square $-1$, the trigonometric row. The unit factor is the exponential of the angle only as a class, since $\exp(i\theta)$ has period $2\pi$, so the exponent is a class in $\mathbb{R}/2\pi\mathbb{Z}$. The two exponents commute, because $\ln r$ is a real scalar of the centre, so the order is free and the two exponentials **amalgamate into one**: $A = \exp(\ln r + i\theta)$. The word is one exponential here because there is no second non-central direction to obstruct the sum, and the freedom that remains is the period of the angle.
 
 ### The Trichotomy of the Exponential
 
@@ -245,7 +257,7 @@ so the reconstruction from an angle is stable to machine precision and the angle
 |---|---|---|---|---|---|
 | $\mathbb{C}$ | $a^2+a'^2$, definite | $\sqrt{N}$, positive real | $e^{i\theta}$, $\theta$ mod $2\pi$ | scale, circle (rotation and central phase together) | compact, $\mathbb{R}/2\pi\mathbb{Z}$ |
 | $\mathbb{D}$ | $a^2-a'^2$, indefinite | $\sqrt{|N|}$, positive real | $e^{\phi j}$ or $je^{\phi j}$ | scale, hyperbola (rotation and boost together) | four components, non-compact |
-| $\mathbb{H}$ | sum of four squares | $\sqrt{N}$, positive real | $S^3$ rotor | scale, rotor | compact |
+| $\mathbb{H}$ | sum of four squares | $\sqrt{N}$, positive real | $Sp(1)=S^3$ rotor | scale, rotor | compact |
 | $\mathbb{H}_{\mathrm{s}}$ | indefinite, signature $(2,2)$ | $\sqrt{|N|}$ with two regimes | two-component unit group | scale, rotor, boost | non-compact |
 
 The progression is the progression of the trichotomy. In $\mathbb{C}$ only the trigonometric row is occupied by the unit factor, and it is compact. In $\mathbb{D}$ the hyperbolic row is occupied instead, and the unit group is no longer compact. The two-dimensional algebra $\mathbb{C}$ is the case in which neither of the difficulties of the higher-dimensional members can happen, which is why it is treated first.

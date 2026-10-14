@@ -12,11 +12,11 @@ $$
 
 The second is the nilpotents of the algebra, the nonzero elements whose square vanishes. The two subjects are one subject: the roots of $0$ are the origin together with the square-zero elements, and the nonzero square-zero elements are exactly the nilpotents. **Over $\mathbb{R}$ both classes collapse** — the roots of $0$ are the origin alone and there is no nilpotent at all — and the collapse is the division property of the algebra, every nonzero element being a unit. The roots of $+e_0$ and the idempotents are the companion article *Square Roots of One and the Idempotents of the General Plain Algebra*, above this article in this category; the roots of the general quadratic $\tilde\xi^2=\tilde q$ are *Square Roots of a General Element in the General Plain Algebra*, below this article in this category.
 
-**The results.** The roots of $0$ are the origin alone; there is no nonzero square-zero element. The square-zero set is the singleton $\{0\}$, the nilpotent class is empty, and no element is of nilpotency index two or more, a vanishing power vanishing at the first step. The square of a general element closes in two terms, $\tilde q^2=[q_0^2-|\mathbf q|^2]e_0+2q_0\mathbf q$, whose central and vector coefficients cannot vanish together off the origin, and the cube closes as $\tilde q^3=q_0[q_0^2-3|\mathbf q|^2]e_0+[3q_0^2-|\mathbf q|^2]\mathbf q$, vanishing only at the origin as well. No element is both an idempotent and a nonzero nilpotent, and the square-zero class meets the centre and the vector subspace only at the origin.
+**The results.** The roots of $0$ are the origin alone; there is no nonzero square-zero element. The square-zero set is the singleton $\{0\}$, the nilpotent class is empty, and no element is of nilpotency index two or more, a vanishing power vanishing at the first step. The square of a general element closes in two terms, $\tilde q^2=[q_0^2-|\vec q|^2]e_0+2q_0\vec q$, whose central and vector coefficients cannot vanish together off the origin, and the cube closes as $\tilde q^3=q_0[q_0^2-3|\vec q|^2]e_0+[3q_0^2-|\vec q|^2]\vec q$, vanishing only at the origin as well. No element is both an idempotent and a nonzero nilpotent, and the square-zero class meets the centre and the vector subspace only at the origin.
 
 The article is algebraic. The zero-divisor set, its families and the criterion on the norm are *Zero Divisors of the General Plain Algebra*; the roots of $+e_0$ and the idempotents are *Square Roots of One and the Idempotents of the General Plain Algebra*; the general root problem is *Square Roots of a General Element in the General Plain Algebra*; and the folding of the empty classes, with the isolation of the plain product among the six, is *The Specificities of the General Plain Algebra*.
 
-**Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$, so that $e_k^2=-e_0$ and $e_je_k=-e_ke_j$ for $j\neq k$. An element is $\tilde q=q_0e_0+\mathbf q$ with $\mathbf q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; the scalar part is $q_0=\mathrm{Sc}(\tilde q)$ and the vector part is $\mathbf q$. The natural conjugation is $\tilde q^{\natural}=q_0e_0-\mathbf q$, and the **norm** is $N(\tilde q)=\tilde q\tilde q^{\natural}=q_0^2+|\mathbf q|^2$, positive definite over $\mathbb{R}$ by *Norm and Invertibility in the General Plain Algebra*; every nonzero element is a unit, $\tilde q^{-1}=\tilde q^{\natural}/N(\tilde q)$, so there is no zero divisor. The scalar line $\mathbb{R}e_0$ is the centre and the vector subspace is $\mathrm{Vect}(\mathbb{H})$, of dimension three. A root of a central value is written $\tilde\xi$ (§*The Root Convention* of *Conventions in Mathematics*), a nilpotent $\tilde\nu$ (§*The Nilpotent Convention*), and a generic element $\tilde q$.
+**Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$, so that $e_k^2=-e_0$ and $e_je_k=-e_ke_j$ for $j\neq k$. An element is $\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; the scalar part is $q_0=\mathrm{Sc}(\tilde q)$ and the vector part is $\vec q$. The natural conjugation is $\tilde q^{\natural}=q_0e_0-\vec q$, and the **norm** is $N(\tilde q)=\tilde q\tilde q^{\natural}=q_0^2+|\vec q|^2$, positive definite over $\mathbb{R}$ by *Norm and Invertibility in the General Plain Algebra*; every nonzero element is a unit, $\tilde q^{-1}=\tilde q^{\natural}/N(\tilde q)$, so there is no zero divisor. The scalar line $\mathbb{R}e_0$ is the centre and the vector subspace is $\mathrm{Vect}(\mathbb{H})$, of dimension three. A root of a central value is written $\tilde\xi$ (§*The Root Convention* of *Conventions in Mathematics*), a nilpotent $\tilde\nu$ (§*The Nilpotent Convention*), and a generic element $\tilde q$.
 
 The equations name a product, so the roots and the nilpotents are relative to it. The general definition of the power, the square, the root of a central value and the nilpotent, with the index of nilpotency and the square-zero element, is *Definitions for the Study of the 6 Algebraic Structures*, §*The Element Vocabulary*. Throughout this article the square is the one of the general plain bilinear product, the multiplication of the algebra; the other five structures over the same space carry roots of $0$ and square-zero sets of their own.
 
@@ -31,22 +31,22 @@ A **root of $0$** is an element $\tilde\xi\in\mathbb{H}$ with $\tilde\xi^2=0$, t
 Write the root in scalar and vector parts,
 
 $$
-\tilde\xi=\xi_0e_0+\boldsymbol\xi,\qquad \boldsymbol\xi=\xi_1e_1+\xi_2e_2+\xi_3e_3,\qquad \xi_k\in\mathbb{R}.
+\tilde\xi=\xi_0e_0+\vec\xi,\qquad \vec\xi=\xi_1e_1+\xi_2e_2+\xi_3e_3,\qquad \xi_k\in\mathbb{R}.
 $$
 
-**Proposition (the reduction at the value $0$).** For $\tilde\xi=\xi_0e_0+\boldsymbol\xi$,
+**Proposition (the reduction at the value $0$).** For $\tilde\xi=\xi_0e_0+\vec\xi$,
 
 $$
 \tilde\xi^2=0\qquad\Longleftrightarrow\qquad
 \begin{cases}
-2\xi_0\boldsymbol\xi=0,\\[2pt]
-\xi_0^2-|\boldsymbol\xi|^2=0 .
+2\xi_0\vec\xi=0,\\[2pt]
+\xi_0^2-|\vec\xi|^2=0 .
 \end{cases}
 $$
 
-*Proof.* Specialisation of the central reduction of *Square Roots of One and the Idempotents of the General Plain Algebra* to $\lambda=0$: the plain square is $\tilde\xi^2=(\xi_0^2-|\boldsymbol\xi|^2)e_0+2\xi_0\boldsymbol\xi$, and the element vanishes exactly when both its parts do.
+*Proof.* Specialisation of the central reduction of *Square Roots of One and the Idempotents of the General Plain Algebra* to $\lambda=0$: the plain square is $\tilde\xi^2=(\xi_0^2-|\vec\xi|^2)e_0+2\xi_0\vec\xi$, and the element vanishes exactly when both its parts do.
 
-Since $\mathbb{R}$ is a field, the vector equation holds exactly when $\xi_0=0$ or $\boldsymbol\xi=0$. **Only the scalar equation survives on each branch**: the root is pure, $\xi_0=0$, or it is a real scalar, $\boldsymbol\xi=0$.
+Since $\mathbb{R}$ is a field, the vector equation holds exactly when $\xi_0=0$ or $\vec\xi=0$. **Only the scalar equation survives on each branch**: the root is pure, $\xi_0=0$, or it is a real scalar, $\vec\xi=0$.
 
 ### The Scalar Case
 
@@ -60,13 +60,13 @@ the origin.
 
 ### The Pure Case Is Empty
 
-In the pure case $\tilde\xi=\boldsymbol\xi$ and the scalar equation reads
+In the pure case $\tilde\xi=\vec\xi$ and the scalar equation reads
 
 $$
--|\boldsymbol\xi|^2=0,
+-|\vec\xi|^2=0,
 $$
 
-that is $\boldsymbol\xi=0$: the pure branch returns the origin and no other element. **There is no nonzero pure root of $0$**, the sum of squares being definite, so a pure element has the non-positive square $-|\mathbf u|^2e_0$, which vanishes only at the origin.
+that is $\vec\xi=0$: the pure branch returns the origin and no other element. **There is no nonzero pure root of $0$**, the sum of squares being definite, so a pure element has the non-positive square $-|\vec u|^2e_0$, which vanishes only at the origin.
 
 ### Statement of the Theorem
 
@@ -76,11 +76,11 @@ $$
 \Sigma_0=\{0\}.
 $$
 
-*Proof.* By the reduction the root is pure or scalar. The scalar case gives $\xi_0=0$; the pure case gives $\boldsymbol\xi=0$; both return the origin, and the origin is a root. The two cases exhaust the equation and the class has one element.
+*Proof.* By the reduction the root is pure or scalar. The scalar case gives $\xi_0=0$; the pure case gives $\vec\xi=0$; both return the origin, and the origin is a root. The two cases exhaust the equation and the class has one element.
 
 ### Verification
 
-The origin is a root, $0\cdot 0=0$, and nothing else is: the pure branch needs $|\boldsymbol\xi|^2=0$ and the scalar branch $\xi_0^2=0$, both of which have the origin as their only real solution. The smallest non-central witnesses confirm the emptiness: the pure element $e_1$ has square $e_1^2=-e_0\neq0$, and the element $e_0+e_1$ has square $e_0+2e_1+e_1^2=2e_1\neq0$.
+The origin is a root, $0\cdot 0=0$, and nothing else is: the pure branch needs $|\vec\xi|^2=0$ and the scalar branch $\xi_0^2=0$, both of which have the origin as their only real solution. The smallest non-central witnesses confirm the emptiness: the pure element $e_1$ has square $e_1^2=-e_0\neq0$, and the element $e_0+e_1$ has square $e_0+2e_1+e_1^2=2e_1\neq0$.
 
 ### The Roots of Zero and the Nilpotents
 
@@ -93,7 +93,7 @@ The nonzero roots of $0$ are exactly the **nilpotents** of the algebra. The root
 The **nilpotents** of the algebra are the nonzero elements whose square vanishes. The class is empty, and the reason is one line long: the square of a general element closes in two terms, one central and one along the vector part,
 
 $$
-\tilde q^2=\bigl[q_0^2-|\mathbf q|^2\bigr]e_0+2q_0\mathbf q ,
+\tilde q^2=\bigl[q_0^2-|\vec q|^2\bigr]e_0+2q_0\vec q ,
 $$
 
 and the two coefficients cannot vanish together off the origin — the vector term forces the scalar part to vanish, and the central term then forces the vector part to vanish. The complexified block, where the central coefficient is a difference of *complex* squares, does the opposite, and its nilpotents fill the pure isotropic cone of real dimension four, the *pure* family of its zero divisors, the other family being the multiples of the nontrivial idempotents. Over $\mathbb{R}$ both families are empty.
@@ -114,15 +114,15 @@ Were the class not empty, it would be a conjugation-stable class; as it is, the 
 
 ### The Criterion
 
-**An element is square-zero exactly when it is the origin: the criterion is $q_0=0$ and $\mathbf q=0$, that is $\tilde q=0$, and over $\mathbb{R}$ the pure elements with isotropic vector part reduce to the origin alone.**
+**An element is square-zero exactly when it is the origin: the criterion is $q_0=0$ and $\vec q=0$, that is $\tilde q=0$, and over $\mathbb{R}$ the pure elements with isotropic vector part reduce to the origin alone.**
 
-**Theorem (the criterion for a square-zero element).** For $\tilde q\in\mathbb{H}$ the following are equivalent: $\tilde q^2=0$; the scalar part and the vector part both vanish, $q_0=0$ and $\mathbf q=0$; and $\tilde q=0$.
+**Theorem (the criterion for a square-zero element).** For $\tilde q\in\mathbb{H}$ the following are equivalent: $\tilde q^2=0$; the scalar part and the vector part both vanish, $q_0=0$ and $\vec q=0$; and $\tilde q=0$.
 
-*Proof.* The displayed formula expands the square. The two coefficients of the sum, central and vector, must vanish separately. If $q_0\neq0$ then the vector coefficient $2q_0\mathbf q$ vanishes only for $\mathbf q=0$, and then the central coefficient is $q_0^2\neq0$, a contradiction; so $q_0=0$. With $q_0=0$ the formula reads $\tilde q^2=-|\mathbf q|^2e_0$, which vanishes exactly when $|\mathbf q|^2=q_1^2+q_2^2+q_3^2=0$, a sum of three squares of real numbers, hence exactly when $\mathbf q=0$. So $\tilde q=0$ is the only square-zero element.
+*Proof.* The displayed formula expands the square. The two coefficients of the sum, central and vector, must vanish separately. If $q_0\neq0$ then the vector coefficient $2q_0\vec q$ vanishes only for $\vec q=0$, and then the central coefficient is $q_0^2\neq0$, a contradiction; so $q_0=0$. With $q_0=0$ the formula reads $\tilde q^2=-|\vec q|^2e_0$, which vanishes exactly when $|\vec q|^2=q_1^2+q_2^2+q_3^2=0$, a sum of three squares of real numbers, hence exactly when $\vec q=0$. So $\tilde q=0$ is the only square-zero element.
 
 **Corollary.** The square-zero set of the algebra is the singleton $\{0\}$, and the nilpotent class — the nonzero square-zero elements — is the empty set. The algebra therefore carries no nilpotent whatever, of index two or of any higher index.
 
-Over the complexified block the same computation passes through the complex bilinear form $(\mathbf Q,\mathbf Q)=Q_1^2+Q_2^2+Q_3^2$: the criterion there is $Q_0=0$ and $(\mathbf Q,\mathbf Q)=0$, a complex vector part on the isotropic cone, and the nilpotents are the nonzero elements of that cone, of real dimension four. The difference is exactly the passage from the sum of three real squares, which is positive definite, to the sum of three complex squares, which is isotropic on a cone.
+Over the complexified block the same computation passes through the complex bilinear form $(\vec Q,\vec Q)=Q_1^2+Q_2^2+Q_3^2$: the criterion there is $Q_0=0$ and $(\vec Q,\vec Q)=0$, a complex vector part on the isotropic cone, and the nilpotents are the nonzero elements of that cone, of real dimension four. The difference is exactly the passage from the sum of three real squares, which is positive definite, to the sum of three complex squares, which is isotropic on a cone.
 
 ### Index Two
 
@@ -133,14 +133,14 @@ Over the complexified block the same computation passes through the complex bili
 The direct computation of the cube agrees, and it is worth recording because it mirrors the complexified expansion:
 
 $$
-\tilde q^2=\bigl[q_0^2-|\mathbf q|^2\bigr]e_0+2q_0\mathbf q,\qquad \tilde q^3=q_0\bigl[q_0^2-3|\mathbf q|^2\bigr]e_0+\bigl[3q_0^2-|\mathbf q|^2\bigr]\mathbf q .
+\tilde q^2=\bigl[q_0^2-|\vec q|^2\bigr]e_0+2q_0\vec q,\qquad \tilde q^3=q_0\bigl[q_0^2-3|\vec q|^2\bigr]e_0+\bigl[3q_0^2-|\vec q|^2\bigr]\vec q .
 $$
 
-If $\mathbf q=0$ then $\tilde q^3=q_0^3e_0$ vanishes only for $q_0=0$; if $\mathbf q\neq0$ the vanishing of the vector coefficient forces $|\mathbf q|^2=3q_0^2$, and the central coefficient is then $q_0[q_0^2-9q_0^2]=-8q_0^3$, which vanishes only for $q_0=0$, whereupon $|\mathbf q|^2=0$, a contradiction. So $\tilde q^3=0$ if and only if $\tilde q=0$, and the same conclusion holds for every higher power.
+If $\vec q=0$ then $\tilde q^3=q_0^3e_0$ vanishes only for $q_0=0$; if $\vec q\neq0$ the vanishing of the vector coefficient forces $|\vec q|^2=3q_0^2$, and the central coefficient is then $q_0[q_0^2-9q_0^2]=-8q_0^3$, which vanishes only for $q_0=0$, whereupon $|\vec q|^2=0$, a contradiction. So $\tilde q^3=0$ if and only if $\tilde q=0$, and the same conclusion holds for every higher power.
 
 ### The Nilpotent Cone Is Empty
 
-The set of square-zero elements is $\{0\}$, so the **nilpotent cone is the empty set**: there is no parametrisation of it, no real dimension to give, and no family of isotropic pure elements, the sum of squares of the vector subspace being definite. The emptiness is also the **criterion for an empty class**: a nonzero square-zero element would be a zero divisor, and the general plain structure has none (*Definitions for the Study of the 6 Algebraic Structures*, §*The Criterion for an Empty Class*). Over the complexified block the pure square $\mathbf Q^2=-(\mathbf Q,\mathbf Q)e_0$ is indefinite, the isotropic pure elements form a cone of complex dimension two, and the nilpotents fill it; the real block has none of them.
+The set of square-zero elements is $\{0\}$, so the **nilpotent cone is the empty set**: there is no parametrisation of it, no real dimension to give, and no family of isotropic pure elements, the sum of squares of the vector subspace being definite. The emptiness is also the **criterion for an empty class**: a nonzero square-zero element would be a zero divisor, and the general plain structure has none (*Definitions for the Study of the 6 Algebraic Structures*, §*The Criterion for an Empty Class*). Over the complexified block the pure square $\vec Q^2=-(\vec Q,\vec Q)e_0$ is indefinite, the isotropic pure elements form a cone of complex dimension two, and the nilpotents fill it; the real block has none of them.
 
 ### The Nilpotents and the Zero Divisors
 
@@ -171,9 +171,9 @@ A square-zero element of the complexified block is pure, and its vector part is 
 | Remarkable subspace | Square-zero elements |
 |---|---|
 | $\mathbb{R}e_0$, the centre | $0$ alone; a nonzero scalar has $s^2>0$ |
-| $\mathrm{Vect}(\mathbb{H})$, the vector subspace | $0$ alone; a nonzero pure element has $\mathbf q^2=-\lvert\mathbf q\rvert^2e_0\neq0$ |
+| $\mathrm{Vect}(\mathbb{H})$, the vector subspace | $0$ alone; a nonzero pure element has $\vec q^2=-\lvert\vec q\rvert^2e_0\neq0$ |
 
-The entries are forced by the two restrictions of the norm: on the centre $N(se_0)=s^2$, positive for $s\neq0$, and on the vector subspace $N(\mathbf q)=|\mathbf q|^2$, positive for $\mathbf q\neq0$. A zero of the plain square is thus nowhere but the origin, and both remarkable subspaces carry the same square-zero set as the whole space; the two restrictions of the norm are *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space*.
+The entries are forced by the two restrictions of the norm: on the centre $N(se_0)=s^2$, positive for $s\neq0$, and on the vector subspace $N(\vec q)=|\vec q|^2$, positive for $\vec q\neq0$. A zero of the plain square is thus nowhere but the origin, and both remarkable subspaces carry the same square-zero set as the whole space; the two restrictions of the norm are *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space*.
 
 ### The Nilpotents and the Central Values
 
@@ -187,11 +187,11 @@ The equation $\tilde q^2=0$ is the third of the three central power equations $\
 
 ## Summary
 
-The square of the algebra is the plain square, and the criterion is $\tilde q^2=0$ if and only if $q_0=0$ and $\mathbf q=0$, which is $\tilde q=0$; so the **square-zero set is the singleton $\{0\}$ and the nilpotent class is empty**. There is no nonzero square-zero element and no element of index two or more: a vanishing power vanishes at the first step, and the direct computation of the square and the cube confirms it, the central coefficient $q_0^2-|\mathbf q|^2$ and the vector coefficient $2q_0\mathbf q$ being unable to vanish together off the origin. The algebra has no element with a vanishing power of any order, its powers being the powers of a division rule, and the index of nilpotency is therefore undefined.
+The square of the algebra is the plain square, and the criterion is $\tilde q^2=0$ if and only if $q_0=0$ and $\vec q=0$, which is $\tilde q=0$; so the **square-zero set is the singleton $\{0\}$ and the nilpotent class is empty**. There is no nonzero square-zero element and no element of index two or more: a vanishing power vanishes at the first step, and the direct computation of the square and the cube confirms it, the central coefficient $q_0^2-|\vec q|^2$ and the vector coefficient $2q_0\vec q$ being unable to vanish together off the origin. The algebra has no element with a vanishing power of any order, its powers being the powers of a division rule, and the index of nilpotency is therefore undefined.
 
-The roots of $0$ are the origin alone, and they are the degeneracy of the general square-root problem at the central value $0$: the scalar branch gives $\xi_0=0$ and the pure branch gives $\boldsymbol\xi=0$, both returning the origin. This is the opposite of the roots of $+e_0$, which are units; a nonzero root of $0$ would be a nilpotent and a zero divisor.
+The roots of $0$ are the origin alone, and they are the degeneracy of the general square-root problem at the central value $0$: the scalar branch gives $\xi_0=0$ and the pure branch gives $\vec\xi=0$, both returning the origin. This is the opposite of the roots of $+e_0$, which are units; a nonzero root of $0$ would be a nilpotent and a zero divisor.
 
-The nilpotent class is empty: there is no nilpotent cone, the set of square-zero elements is $\{0\}$, and the emptiness is the definiteness of the sum of squares, a nonzero pure element having the non-positive square $-|\mathbf q|^2e_0$ and a nonzero scalar the positive square $s^2e_0$. A nonzero nilpotent would be a zero divisor with itself, and the zero-divisor set of the algebra is empty; the two emptinesses are the same seen from two sides; no element is both an idempotent and a nonzero nilpotent, the two classes meeting only at the origin. The square-zero set meets neither the centre nor the vector subspace except at the origin. This is the opposite of the complexified block, whose nilpotents form the pure isotropic cone of real dimension four, and it is the folding recorded in *The Specificities of the General Plain Algebra*.
+The nilpotent class is empty: there is no nilpotent cone, the set of square-zero elements is $\{0\}$, and the emptiness is the definiteness of the sum of squares, a nonzero pure element having the non-positive square $-|\vec q|^2e_0$ and a nonzero scalar the positive square $s^2e_0$. A nonzero nilpotent would be a zero divisor with itself, and the zero-divisor set of the algebra is empty; the two emptinesses are the same seen from two sides; no element is both an idempotent and a nonzero nilpotent, the two classes meeting only at the origin. The square-zero set meets neither the centre nor the vector subspace except at the origin. This is the opposite of the complexified block, whose nilpotents form the pure isotropic cone of real dimension four, and it is the folding recorded in *The Specificities of the General Plain Algebra*.
 
 ## Summary of Notation
 
@@ -199,15 +199,15 @@ The nilpotent class is empty: there is no nilpotent cone, the set of square-zero
 |---|---|
 | $\mathbb{H}$ | Quaternion algebra, real dimension four |
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$, $e_1e_2=e_3$ |
-| $\tilde q=q_0e_0+\mathbf q$ | General element, scalar part $q_0$, vector part $\mathbf q$ |
-| $N(\tilde q)=q_0^2+\lvert\mathbf q\rvert^2$ | Quaternion norm, positive definite |
+| $\tilde q=q_0e_0+\vec q$ | General element, scalar part $q_0$, vector part $\vec q$ |
+| $N(\tilde q)=q_0^2+\lvert\vec q\rvert^2$ | Quaternion norm, positive definite |
 | $\tilde\nu$ | A nilpotent, a nonzero element of vanishing square |
 | $\tilde q^2=0$ | The square-zero equation |
 | $\Sigma_0=\{0\}$ | The roots of $0$, the origin alone |
 | $\{0\}$ | The square-zero set of the algebra |
 | $\varnothing$ | The nilpotent class |
-| $\tilde q^2=[q_0^2-\lvert\mathbf q\rvert^2]e_0+2q_0\mathbf q$ | The square of a general element |
-| $\tilde q^3=q_0[q_0^2-3\lvert\mathbf q\rvert^2]e_0+[3q_0^2-\lvert\mathbf q\rvert^2]\mathbf q$ | The cube of a general element |
+| $\tilde q^2=[q_0^2-\lvert\vec q\rvert^2]e_0+2q_0\vec q$ | The square of a general element |
+| $\tilde q^3=q_0[q_0^2-3\lvert\vec q\rvert^2]e_0+[3q_0^2-\lvert\vec q\rvert^2]\vec q$ | The cube of a general element |
 | $\mathbb{R}e_0$, $\mathrm{Vect}(\mathbb{H})$ | Centre and vector subspace |
 
 ## Further Reading

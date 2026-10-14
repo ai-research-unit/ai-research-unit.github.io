@@ -58,13 +58,13 @@ Two consequences follow. First, because the cone lies in every set, an element o
 The product is $\tilde P\tilde Q$, its conjugate is $\tilde P^{\natural}$, and the form of the product is
 
 $$
-\mathrm{Form}(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q) .
+\mathrm{Form}(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\vec P,\vec Q) .
 $$
 
-The norm is the form at the two equal arguments, $\mathrm{Norm}(\tilde P)=\mathrm{Form}(\tilde P,\tilde P)$, the scalar of the central element $\tilde P^{\natural}\tilde P$. Write $\tilde P=P_0e_0+\mathbf P$ with $\mathbf P=P_1e_1+P_2e_2+P_3e_3$ and $\tilde P^{\natural}=P_0e_0-\mathbf P$. Since $e_ke_l+e_le_k=0$ for $k\neq l$ and $e_k^{2}=-e_0$, the vector part squares to $\mathbf P^{2}=-(P_1^{2}+P_2^{2}+P_3^{2})e_0$, so
+The norm is the form at the two equal arguments, $\mathrm{Norm}(\tilde P)=\mathrm{Form}(\tilde P,\tilde P)$, the scalar of the central element $\tilde P^{\natural}\tilde P$. Write $\tilde P=P_0e_0+\vec P$ with $\vec P=P_1e_1+P_2e_2+P_3e_3$ and $\tilde P^{\natural}=P_0e_0-\vec P$. Since $e_ke_l+e_le_k=0$ for $k\neq l$ and $e_k^{2}=-e_0$, the vector part squares to $\vec P^{2}=-(P_1^{2}+P_2^{2}+P_3^{2})e_0$, so
 
 $$
-\tilde P^{\natural}\tilde P=(P_0e_0-\mathbf P)(P_0e_0+\mathbf P)=P_0^{2}e_0-\mathbf P^{2}=(P_0^{2}+P_1^{2}+P_2^{2}+P_3^{2})e_0 ,
+\tilde P^{\natural}\tilde P=(P_0e_0-\vec P)(P_0e_0+\vec P)=P_0^{2}e_0-\vec P^{2}=(P_0^{2}+P_1^{2}+P_2^{2}+P_3^{2})e_0 ,
 $$
 
 and its scalar is the norm $\mathrm{Norm}(\tilde P)=P_0^{2}+P_1^{2}+P_2^{2}+P_3^{2}$.
@@ -78,7 +78,7 @@ The units are the elements off the cone, $\mathbb{B}^{\times}=\{\tilde P:\mathrm
 The product is the Jordan product $\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$, the symmetrisation of the plain product, so its form is the same,
 
 $$
-\mathrm{Form}(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q) ,
+\mathrm{Form}(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\vec P,\vec Q) ,
 $$
 
 The norm is the form at the two equal arguments, $\mathrm{Norm}(\tilde P)=\mathrm{Form}(\tilde P,\tilde P)$, the reduced norm $\mathrm{Norm}(\tilde P)=P_0^{2}+P_1^{2}+P_2^{2}+P_3^{2}$ of §*The General Plain Algebra (GPA)*.
@@ -89,7 +89,7 @@ $$
 \bigl(\{P_0=0\}\cup\mathcal{C}\bigr)\setminus\{0\} .
 $$
 
-Read the Jordan product from the quaternion table, $\tilde P\circ\tilde Q=P_0Q_0e_0+P_0\mathbf Q+Q_0\mathbf P-(\mathbf P,\mathbf Q)e_0$. If $P_0\neq0$ the vector part forces $\mathbf Q=-(Q_0/P_0)\mathbf P$, and the scalar part becomes $Q_0\,\mathrm{Norm}(\tilde P)/P_0$; a nonzero annihilator therefore exists exactly when $\mathrm{Norm}(\tilde P)=0$, and it is then $\tilde P^{\natural}$. If $P_0=0$ and $\tilde P\neq0$, any nonzero $\mathbf Q$ orthogonal to $\mathbf P$ annihilates.
+Read the Jordan product from the quaternion table, $\tilde P\circ\tilde Q=P_0Q_0e_0+P_0\vec Q+Q_0\vec P-(\vec P,\vec Q)e_0$. If $P_0\neq0$ the vector part forces $\vec Q=-(Q_0/P_0)\vec P$, and the scalar part becomes $Q_0\,\mathrm{Norm}(\tilde P)/P_0$; a nonzero annihilator therefore exists exactly when $\mathrm{Norm}(\tilde P)=0$, and it is then $\tilde P^{\natural}$. If $P_0=0$ and $\tilde P\neq0$, any nonzero $\vec Q$ orthogonal to $\vec P$ annihilates.
 
 The plane $P_0=0$ of the pure elements is a second family beside the cone.
 
@@ -108,10 +108,10 @@ There is no unit, the values lying in the vector subspace, so there is no group 
 The product is $\tilde P^{\natural}\tilde Q$, its conjugate is $\tilde P^{\natural}$, and the form of the product is
 
 $$
-\mathrm{Form}(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q) .
+\mathrm{Form}(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\vec P,\vec Q) .
 $$
 
-The norm is the form at the two equal arguments, $\mathrm{Norm}(\tilde P)=\mathrm{Form}(\tilde P,\tilde P)$, the scalar of the central element $\tilde P^{\natural}\tilde P$ of §*The General Plain Algebra (GPA)*, $\mathrm{Norm}(\tilde P)=P_0^{2}+P_1^{2}+P_2^{2}+P_3^{2}$; the natural conjugation sends $\mathbf P$ to $-\mathbf P$, so $\mathrm{Norm}(\tilde P^{\natural})=\mathrm{Norm}(\tilde P)$. Here the norm is the criterion.
+The norm is the form at the two equal arguments, $\mathrm{Norm}(\tilde P)=\mathrm{Form}(\tilde P,\tilde P)$, the scalar of the central element $\tilde P^{\natural}\tilde P$ of §*The General Plain Algebra (GPA)*, $\mathrm{Norm}(\tilde P)=P_0^{2}+P_1^{2}+P_2^{2}+P_3^{2}$; the natural conjugation sends $\vec P$ to $-\vec P$, so $\mathrm{Norm}(\tilde P^{\natural})=\mathrm{Norm}(\tilde P)$. Here the norm is the criterion.
 
 **The zero-divisor set is the punctured cone $\mathcal{C}\setminus\{0\}$.** The cone is the quadric $\mathcal{C}$ of §*The General Plain Algebra (GPA)*. If $\mathrm{Norm}(\tilde P)=0$ the partner $\tilde Q=\tilde P^{\natural}$ annihilates, since $\tilde P^{\natural}\tilde P^{\natural}=\mathrm{Norm}(\tilde P^{\natural})e_0=0$; conversely, multiplying $\tilde P^{\natural}\tilde Q=0$ on the left by $\tilde P$ gives $\mathrm{Norm}(\tilde P)\tilde Q=0$.
 
@@ -122,7 +122,7 @@ The element $e_0$ is a left unit alone, and an element off the cone has the two-
 The product is $\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$, central, and the form of the product is
 
 $$
-\mathrm{Form}(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q) ,
+\mathrm{Form}(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\vec P,\vec Q) ,
 $$
 
 The norm is the form at the two equal arguments, $\mathrm{Norm}(\tilde P)=\mathrm{Form}(\tilde P,\tilde P)$, the reduced norm $\mathrm{Norm}(\tilde P)=P_0^{2}+P_1^{2}+P_2^{2}+P_3^{2}$.
@@ -144,10 +144,10 @@ There is no unit, the values lying in the vector subspace, so there is no group 
 The product is $\tilde P\tilde Q^{*}$, its conjugate is $\tilde P^{*}$, and the form of the product is
 
 $$
-\mathrm{Form}(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q}) .
+\mathrm{Form}(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})=P_0\overline{Q_0}+(\vec P,\overline{\vec Q}) .
 $$
 
-The norm is the form at the two equal arguments, $H(\tilde P)=\mathrm{Form}(\tilde P,\tilde P)=\mathrm{Sc}(\tilde P\tilde P^{*})=|P_0|^{2}+|\mathbf P|^{2}$, definite.
+The norm is the form at the two equal arguments, $H(\tilde P)=\mathrm{Form}(\tilde P,\tilde P)=\mathrm{Sc}(\tilde P\tilde P^{*})=|P_0|^{2}+|\vec P|^{2}$, definite.
 
 **The zero-divisor set is the punctured cone $\mathcal{C}\setminus\{0\}$.** The definite norm $H$ vanishes at the origin alone and cuts no cone. Put $\tilde Q=\tilde Y^{*}$; then $\tilde P\tilde Q^{*}=\tilde P\tilde Y$ is the plain product, whose form is $\mathrm{Sc}(\tilde P^{\natural}\tilde Y)$ and whose scalar at the two equal arguments is the reduced norm $\mathrm{Norm}(\tilde P)=P_0^{2}+P_1^{2}+P_2^{2}+P_3^{2}$ of §*The General Plain Algebra (GPA)*. The criterion is therefore $\mathrm{Norm}(\tilde P)=0$, the witness is $\tilde Q=(\tilde P^{\natural})^{*}$, since $\tilde P\tilde Q^{*}=\tilde P\tilde P^{\natural}=\mathrm{Norm}(\tilde P)e_0=0$ on the cone.
 
@@ -158,10 +158,10 @@ The element $e_0$ is a right unit alone, $e_0\star\tilde Q=\tilde Q^{*}$, and an
 The product is $\tfrac12(\tilde P\tilde Q^{*}+\overline{\tilde Q\tilde P^{*}})$, central, and the form of the product is
 
 $$
-\mathrm{Form}(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q}) ,
+\mathrm{Form}(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})=P_0\overline{Q_0}+(\vec P,\overline{\vec Q}) ,
 $$
 
-The norm is the form at the two equal arguments, $H(\tilde P)=\mathrm{Form}(\tilde P,\tilde P)=|P_0|^{2}+|\mathbf P|^{2}$, definite.
+The norm is the form at the two equal arguments, $H(\tilde P)=\mathrm{Form}(\tilde P,\tilde P)=|P_0|^{2}+|\vec P|^{2}$, definite.
 
 **The zero-divisor set is the whole punctured space $\mathbb{B}\setminus\{0\}$.** The value is the central read of the form, $\mathrm{Sc}(\tilde P\tilde Q^{*})e_0$. The norm $H$ is definite and does not decide; the equation $\mathrm{Sc}(\tilde P\tilde Q^{*})=0$ is one complex linear equation in the conjugated components of $\tilde Q$, and its solutions fill a complex hyperplane.
 
@@ -180,10 +180,10 @@ There is no unit, the values lying in the vector subspace, so there is no group 
 The product is $\tilde P^{\natural}\tilde Q^{*}$, its conjugates are $\natural$ and $*$, and the form of the product is
 
 $$
-\mathrm{Form}(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=P_0\overline{Q_0}-(\mathbf P,\overline{\mathbf Q}) .
+\mathrm{Form}(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=P_0\overline{Q_0}-(\vec P,\overline{\vec Q}) .
 $$
 
-The norm is the form at the two equal arguments, $K(\tilde P)=\mathrm{Form}(\tilde P,\tilde P)=\mathrm{Sc}(\tilde P^{\natural}\tilde P^{*})=|P_0|^{2}-|\mathbf P|^{2}$, indefinite.
+The norm is the form at the two equal arguments, $K(\tilde P)=\mathrm{Form}(\tilde P,\tilde P)=\mathrm{Sc}(\tilde P^{\natural}\tilde P^{*})=|P_0|^{2}-|\vec P|^{2}$, indefinite.
 
 **The zero-divisor set is the punctured cone $\mathcal{C}\setminus\{0\}$.** The indefinite norm $K$ vanishes on a real cone of its own, distinct from $\mathcal{C}$. Put $\tilde Q=\tilde Y^{*}$; then $\tilde P^{\natural}\tilde Q^{*}=\tilde P^{\natural}\tilde Y$ is the plain product of $\tilde P^{\natural}$, whose form is $\mathrm{Sc}(\tilde P\tilde Y)$ and whose scalar at the two equal arguments is $\mathrm{Norm}(\tilde P^{\natural})=\mathrm{Norm}(\tilde P)$ of §*The General Plain Algebra (GPA)*. The criterion is therefore $\mathrm{Norm}(\tilde P)=0$, the witness is $\tilde Q=(\tilde P^{\natural})^{*}$.
 
@@ -194,10 +194,10 @@ There is no unit on either side, and an element off the cone has the two-sided s
 The product is $\tfrac12(\tilde P^{\natural}\tilde Q^{*}+\overline{\tilde Q^{\natural}\tilde P^{*}})$, central, and the form of the product is
 
 $$
-\mathrm{Form}(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=P_0\overline{Q_0}-(\mathbf P,\overline{\mathbf Q}) ,
+\mathrm{Form}(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=P_0\overline{Q_0}-(\vec P,\overline{\vec Q}) ,
 $$
 
-The norm is the form at the two equal arguments, $K(\tilde P)=\mathrm{Form}(\tilde P,\tilde P)=|P_0|^{2}-|\mathbf P|^{2}$, indefinite.
+The norm is the form at the two equal arguments, $K(\tilde P)=\mathrm{Form}(\tilde P,\tilde P)=|P_0|^{2}-|\vec P|^{2}$, indefinite.
 
 **The zero-divisor set is the enlarged set $\left(\{P_0=0\}\cup\mathcal{C}\right)\setminus\{0\}$.** Put $\tilde Y=\tilde Q^{*}$; the two conjugations commute and the product becomes the Jordan product of $\tilde P^{\natural}$ with $\tilde Y$,
 
@@ -211,9 +211,9 @@ There is no unit, both symmetrised terms conjugating a factor, so $e_0$ acts as 
 
 ### $\mathrm{AQS}$, the antisymmetric quaternionic sesqualgebra
 
-The product is $\tfrac12(\tilde P^{\natural}\tilde Q^{*}-\overline{\tilde Q^{\natural}\tilde P^{*}})=\mathbf P\times\overline{\mathbf Q}$. At the two equal arguments it gives $\mathbf P\times\overline{\mathbf P}$, a pure vector; there is no norm.
+The product is $\tfrac12(\tilde P^{\natural}\tilde Q^{*}-\overline{\tilde Q^{\natural}\tilde P^{*}})=\vec P\times\overline{\vec Q}$. At the two equal arguments it gives $\vec P\times\overline{\vec P}$, a pure vector; there is no norm.
 
-**The zero-divisor set is the whole punctured space $\mathbb{B}\setminus\{0\}$.** If $\mathbf P\neq0$, take $\tilde Q=\overline{\tilde P}$: its vector part $\overline{\mathbf P}$ is parallel to $\mathbf P$, and a cross product of parallel vectors vanishes. If $\mathbf P=0$ the element is central and the product vanishes for every $\tilde Q$. Every nonzero element is a zero divisor.
+**The zero-divisor set is the whole punctured space $\mathbb{B}\setminus\{0\}$.** If $\vec P\neq0$, take $\tilde Q=\overline{\tilde P}$: its vector part $\overline{\vec P}$ is parallel to $\vec P$, and a cross product of parallel vectors vanishes. If $\vec P=0$ the element is central and the product vanishes for every $\tilde Q$. Every nonzero element is a zero divisor.
 
 There is no unit, the values lying in the vector subspace, so there is no group of units and the complement of the zero-divisor set is the origin alone.
 
@@ -281,11 +281,11 @@ The scalar part cuts the cone into two families, and the criterion and the squar
 
 **Definition.** An element is **pure** when its scalar part vanishes, $Q_0=0$, and **non-pure** when $Q_0\neq0$.
 
-On a pure element the scalar square $Q_0^{2}$ drops out of the criterion, which becomes $(\mathbf Q,\mathbf Q)=0$; on a non-pure element the criterion is the full vanishing of the norm.
+On a pure element the scalar square $Q_0^{2}$ drops out of the criterion, which becomes $(\vec Q,\vec Q)=0$; on a non-pure element the criterion is the full vanishing of the norm.
 
 | | pure, $Q_0=0$ | non-pure, $Q_0\neq0$ |
 |---|---|---|
-| criterion | $(\mathbf Q,\mathbf Q)=0$ | $\mathrm{Norm}(\tilde Q)=0$ |
+| criterion | $(\vec Q,\vec Q)=0$ | $\mathrm{Norm}(\tilde Q)=0$ |
 | square in the plain product | $\tilde Q^{2}=0$ | $\tilde Q^{2}=2Q_0\tilde Q$ |
 | structure | the nilpotents | the complex multiples of the nontrivial idempotents |
 | real dimension | $4$ | $6$ |
@@ -304,7 +304,7 @@ On the remarkable subspaces the four null sets are cut to two shapes (*Remarkabl
 
 **The cone is the complement of the unit group.** The units are exactly the elements off the cone, and the group they form is $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$, with $\pi_1(\mathbb{B}^{\times})\cong\mathbb{Z}$, $\pi_2(\mathbb{B}^{\times})=0$ and $\pi_3(\mathbb{B}^{\times})\cong\mathbb{Z}$, covered two-to-one by the centre and the determinant-one group (*The Biquaternion Unit Group as a Topological Group*). The cone and the unit group are complementarily read in homotopy: the cone's link has $\pi_2\cong\mathbb{Z}$, and the unit group has $\pi_2=0$.
 
-**The cone's isotropic lines are its Peirce lines.** A **doubly null line** is an isotropic line that lies in the norm cone as well, and the doubly null lines are exactly the **Peirce lines** $\mathbb{C}(e_0\pm i\hat{\boldsymbol\mu})$ spanned by the rank-one Hermitian idempotents; each generates a minimal left and a minimal right ideal of complex dimension two all of whose elements are zero divisors, and the intersection of the cone with the Krein null set is the union of those lines, a cone of real dimension four (*The Isotropic Structure of the General Quaternionic Sesqualgebra*, *Ideals and Peirce Decomposition of the General Plain Algebra*). The maximal totally isotropic subspaces are the objects of the Witt index, and the maximal one is not confined to the cone: the complex line $\mathbb{C}(e_0+e_1)$ is totally isotropic but has nonzero norm and is not a zero divisor.
+**The cone's isotropic lines are its Peirce lines.** A **doubly null line** is an isotropic line that lies in the norm cone as well, and the doubly null lines are exactly the **Peirce lines** $\mathbb{C}(e_0\pm i\hat n)$ spanned by the rank-one Hermitian idempotents; each generates a minimal left and a minimal right ideal of complex dimension two all of whose elements are zero divisors, and the intersection of the cone with the Krein null set is the union of those lines, a cone of real dimension four (*The Isotropic Structure of the General Quaternionic Sesqualgebra*, *Ideals and Peirce Decomposition of the General Plain Algebra*). The maximal totally isotropic subspaces are the objects of the Witt index, and the maximal one is not confined to the cone: the complex line $\mathbb{C}(e_0+e_1)$ is totally isotropic but has nonzero norm and is not a zero divisor.
 
 **The cone is the boundary of the Hermitian level sets.** The level sets of the Hermitian form are the real hyperboloids, the hyperboloid model of hyperbolic space, against the complex hypersurfaces of $N$; on a Minkowski slice the intersection degenerates to the two nappes of the light cone, and the future nappe is the Hermitian cone (*The Krein Level Sets and the Hyperbolic Structure*). The cone is thus the boundary of the real hyperbolic picture attached to the definite form, and it is the largest nontrivial vanishing set of a square: the natural square $\tilde Q\tilde Q^{\natural}$ vanishes exactly on the cone, while the sesquilinear square $\tilde Q\star\tilde Q=\tilde Q\tilde Q^{*}$ vanishes at the origin alone (*The Squares and the Positive Cone of the Biquaternion Sesqualgebra*).
 
@@ -360,7 +360,7 @@ Beyond the grid the same set is one of four null sets. The bilinear form $B$ has
 | pure, non-pure | scalar part zero, scalar part nonzero |
 | $\mathsf{M}_2$ | the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ |
 | $\tilde P^{-1}=\tilde P^{\natural}/\mathrm{Norm}(\tilde P)$ | the inverse of an element with $\mathrm{Norm}(\tilde P)\neq0$ |
-| $(\mathbf P,\mathbf Q)$ | the general plain bilinear dot product of the two vector parts |
+| $(\vec P,\vec Q)$ | the general plain bilinear dot product of the two vector parts |
 | $\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)$ | the general plain bilinear form, whose isotropic cone is not $\mathcal{C}$ |
 | $H(\tilde P)=\mathrm{Sc}(\tilde P\tilde P^{*})$ | the general plain sesquilinear algebraic norm, definite |
 | $K(\tilde P)=\mathrm{Sc}(\tilde P^{\natural}\tilde P^{*})$ | the general quaternionic sesquilinear algebraic norm, indefinite |

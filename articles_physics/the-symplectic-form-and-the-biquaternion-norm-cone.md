@@ -22,7 +22,7 @@ The companion articles are:
 
 ## The Standard Symplectic Structure
 
-A **symplectic vector space** is a real vector space $V$ with a bilinear form $\omega$ that is antisymmetric, $\omega(u,v)=-\omega(v,u)$, and non-degenerate, $\omega(u,v)=0$ for all $v$ implies $u=0$. In canonical coordinates $(\mathbf q,\mathbf p)$ on $V=\mathbb{R}^{2n}$ the standard form is
+A **symplectic vector space** is a real vector space $V$ with a bilinear form $\omega$ that is antisymmetric, $\omega(u,v)=-\omega(v,u)$, and non-degenerate, $\omega(u,v)=0$ for all $v$ implies $u=0$. In canonical coordinates $(\vec q,\vec p)$ on $V=\mathbb{R}^{2n}$ the standard form is
 
 $$
 \omega=\sum_{k=1}^{n}dq_k\wedge dp_k ,
@@ -70,25 +70,25 @@ since $\tilde q^{*}=-\tilde q$ and $(i\tilde p)^\dagger=i\tilde p$ for pure real
 
 $$
 \boxed{\;\mathrm{Sc}\!\left(\tilde Z^{*}\tilde W\right)
-=\bigl(\mathbf q\cdot\mathbf r+\mathbf p\cdot\mathbf s\bigr)
-+i\bigl(\mathbf q\cdot\mathbf s-\mathbf p\cdot\mathbf r\bigr).\;}
+=\bigl(\vec q\cdot\vec r+\vec p\cdot\vec s\bigr)
++i\bigl(\vec q\cdot\vec s-\vec p\cdot\vec r\bigr).\;}
 $$
 
-The real part is the Euclidean pairing of the two phase-space points, and the imaginary part is an antisymmetric pairing. Both statements follow from $\mathrm{Sc}(\tilde a\tilde b)=-\mathbf a\cdot\mathbf b$ for pure real quaternions, applied term by term.
+The real part is the Euclidean pairing of the two phase-space points, and the imaginary part is an antisymmetric pairing. Both statements follow from $\mathrm{Sc}(\tilde a\tilde b)=-\vec a\cdot\vec b$ for pure real quaternions, applied term by term.
 
 ### The Metric and the Symplectic Form
 
 Define the two real bilinear forms
 
 $$
-g(\tilde Z,\tilde W)=\mathrm{Re}\,\mathrm{Sc}\!\left(\tilde Z^{*}\tilde W\right)=\mathbf q\cdot\mathbf r+\mathbf p\cdot\mathbf s,
+g(\tilde Z,\tilde W)=\mathrm{Re}\,\mathrm{Sc}\!\left(\tilde Z^{*}\tilde W\right)=\vec q\cdot\vec r+\vec p\cdot\vec s,
 $$
 
 $$
-\omega(\tilde Z,\tilde W)=\mathrm{Im}\,\mathrm{Sc}\!\left(\tilde Z^{*}\tilde W\right)=\mathbf q\cdot\mathbf s-\mathbf p\cdot\mathbf r .
+\omega(\tilde Z,\tilde W)=\mathrm{Im}\,\mathrm{Sc}\!\left(\tilde Z^{*}\tilde W\right)=\vec q\cdot\vec s-\vec p\cdot\vec r .
 $$
 
-The form $g$ is symmetric and positive definite: $g(\tilde Z,\tilde Z)=|\mathbf q|^2+|\mathbf p|^2$, the Euclidean norm of the phase-space point, vanishing only at the origin. The form $\omega$ is antisymmetric, because exchanging $\tilde Z$ and $\tilde W$ exchanges $\mathbf q\cdot\mathbf s$ with $\mathbf r\cdot\mathbf p=\mathbf p\cdot\mathbf r$ and reverses the sign; and it is non-degenerate, since $\omega(\tilde Z,\tilde W)=0$ for all $\tilde W$ forces $\mathbf q=\mathbf p=0$. As a two-form in coordinates,
+The form $g$ is symmetric and positive definite: $g(\tilde Z,\tilde Z)=|\vec q|^2+|\vec p|^2$, the Euclidean norm of the phase-space point, vanishing only at the origin. The form $\omega$ is antisymmetric, because exchanging $\tilde Z$ and $\tilde W$ exchanges $\vec q\cdot\vec s$ with $\vec r\cdot\vec p=\vec p\cdot\vec r$ and reverses the sign; and it is non-degenerate, since $\omega(\tilde Z,\tilde W)=0$ for all $\tilde W$ forces $\vec q=\vec p=0$. As a two-form in coordinates,
 
 $$
 \omega=\sum_{k=1}^{3}dq_k\wedge dp_k ,
@@ -128,32 +128,32 @@ The **symplectic potential** is the one-form whose exterior derivative is $\omeg
 
 $$
 \mathrm{Sc}\!\left(\tilde Z^{*} d\tilde Z\right)
-=\tfrac{1}{2}\,d\,g(\tilde Z,\tilde Z)+i\left(\mathbf q\cdot d\mathbf p-\mathbf p\cdot d\mathbf q\right).
+=\tfrac{1}{2}\,d\,g(\tilde Z,\tilde Z)+i\left(\vec q\cdot d\vec p-\vec p\cdot d\vec q\right).
 $$
 
 Taking the imaginary part and defining
 
 $$
 \theta=\tfrac{1}{2}\,\mathrm{Im}\,\mathrm{Sc}\!\left(\tilde Z^{*} d\tilde Z\right)
-=\tfrac{1}{2}\left(\mathbf q\cdot d\mathbf p-\mathbf p\cdot d\mathbf q\right),
+=\tfrac{1}{2}\left(\vec q\cdot d\vec p-\vec p\cdot d\vec q\right),
 $$
 
 one finds
 
 $$
-d\theta=\tfrac{1}{2}\left(d\mathbf q\wedge d\mathbf p-d\mathbf p\wedge d\mathbf q\right)
-=d\mathbf q\wedge d\mathbf p=\omega .
+d\theta=\tfrac{1}{2}\left(d\vec q\wedge d\vec p-d\vec p\wedge d\vec q\right)
+=d\vec q\wedge d\vec p=\omega .
 $$
 
-The boundary term of the action of the preceding article, $\theta_{\mathrm{bdry}}=\mathrm{Sc}(\tilde p^{\natural}\,d\tilde q)=\mathbf p\cdot d\mathbf q$, is the canonical potential in the same sense but with the opposite sign: $d\theta_{\mathrm{bdry}}=d\mathbf p\wedge d\mathbf q=-\omega$, so it is $-\theta_{\mathrm{bdry}}$, not $\theta_{\mathrm{bdry}}$, that is a potential for the same $\omega$ as $\theta$. Comparing the two potentials for $\omega$,
+The boundary term of the action of the preceding article, $\theta_{\mathrm{bdry}}=\mathrm{Sc}(\tilde p^{\natural}\,d\tilde q)=\vec p\cdot d\vec q$, is the canonical potential in the same sense but with the opposite sign: $d\theta_{\mathrm{bdry}}=d\vec p\wedge d\vec q=-\omega$, so it is $-\theta_{\mathrm{bdry}}$, not $\theta_{\mathrm{bdry}}$, that is a potential for the same $\omega$ as $\theta$. Comparing the two potentials for $\omega$,
 
 $$
 \theta-\left(-\theta_{\mathrm{bdry}}\right)
-=\tfrac{1}{2}\left(\mathbf q\cdot d\mathbf p-\mathbf p\cdot d\mathbf q\right)+\mathbf p\cdot d\mathbf q
-=\tfrac{1}{2}\,d(\mathbf q\cdot\mathbf p),
+=\tfrac{1}{2}\left(\vec q\cdot d\vec p-\vec p\cdot d\vec q\right)+\vec p\cdot d\vec q
+=\tfrac{1}{2}\,d(\vec q\cdot\vec p),
 $$
 
-so they differ by the exact form $\tfrac12 d(\mathbf q\cdot\mathbf p)$, and the symplectic form is unchanged. This is the biquaternion form of the standard freedom in the symplectic potential, together with the standard sign that relates $p\,dq$ to $dq\wedge dp$; the sign is fixed once and for all here, so that the $\omega$ used below is the one whose brackets are the canonical ones of the preceding articles.
+so they differ by the exact form $\tfrac12 d(\vec q\cdot\vec p)$, and the symplectic form is unchanged. This is the biquaternion form of the standard freedom in the symplectic potential, together with the standard sign that relates $p\,dq$ to $dq\wedge dp$; the sign is fixed once and for all here, so that the $\omega$ used below is the one whose brackets are the canonical ones of the preceding articles.
 
 ### The Two-Form Identity
 
@@ -236,8 +236,8 @@ Unlike the Hermitian form, $N$ is **holomorphic**: it is a general plain bilinea
 
 $$
 B(\tilde Z,\tilde W)=\mathrm{Sc}\!\left(\tilde Z\tilde W^{\natural}\right)
-=\bigl(\mathbf q\cdot\mathbf r-\mathbf p\cdot\mathbf s\bigr)
-+i\bigl(\mathbf q\cdot\mathbf s+\mathbf p\cdot\mathbf r\bigr),
+=\bigl(\vec q\cdot\vec r-\vec p\cdot\vec s\bigr)
++i\bigl(\vec q\cdot\vec s+\vec p\cdot\vec r\bigr),
 $$
 
 which is symmetric, $B(\tilde Z,\tilde W)=B(\tilde W,\tilde Z)$, and complex-valued. The Hermitian pairing and the holomorphic form are the two natural pairings of a complex structure: the first is sesquilinear and positive definite, the second is bilinear and isotropic.
@@ -259,34 +259,34 @@ $$
 equivalently, separating real and imaginary parts,
 
 $$
-|\mathbf q|^2-|\mathbf p|^2=0,\qquad \mathbf q\cdot\mathbf p=0 .
+|\vec q|^2-|\vec p|^2=0,\qquad \vec q\cdot\vec p=0 .
 $$
 
-The cone is the locus where the configuration and momentum magnitudes are equal and the two vectors are orthogonal; it is isotropic for the holomorphic form, $B(\tilde Z,\tilde Z)=N(\tilde Z)=0$. Two remarks are needed. First, the condition equates the magnitudes of $\mathbf q$ and $\mathbf p$, which carry different physical dimensions unless a scale is fixed; the cone is therefore a statement about the complexified phase space after a symplectic normalization, and it is not by itself a physically invariant locus. Second, the cone meets the real phase space $\tilde q,\tilde p$ real only at $\tilde Z=0$: the general plain bilinear form is definite there, and its real zero set is a single point. The cone is a genuinely complex object.
+The cone is the locus where the configuration and momentum magnitudes are equal and the two vectors are orthogonal; it is isotropic for the holomorphic form, $B(\tilde Z,\tilde Z)=N(\tilde Z)=0$. Two remarks are needed. First, the condition equates the magnitudes of $\vec q$ and $\vec p$, which carry different physical dimensions unless a scale is fixed; the cone is therefore a statement about the complexified phase space after a symplectic normalization, and it is not by itself a physically invariant locus. Second, the cone meets the real phase space $\tilde q,\tilde p$ real only at $\tilde Z=0$: the general plain bilinear form is definite there, and its real zero set is a single point. The cone is a genuinely complex object.
 
 The algebra's reason for caring about the cone is that its points are the **zero divisors**: the biquaternions with $N(\tilde Q) = \langle\tilde Q,\tilde Q\rangle_{\natural}=0$ are exactly the elements $\tilde Q\neq0$ for which multiplication by $\tilde Q$ is not invertible, so the biquaternion norm's cone is the singular locus of the algebra's product. This is the same cone that the companion articles identify as the boundary of the idempotent (state) manifold in $\mathbb{M}_+$ and as the light cone of the material sector.
 
 ### The Material Light Cone
 
-The cone becomes physical when the scalar coordinate is imaginary. For a material-sector four-vector $\tilde{Q}=ict\,e_0+\mathbf x\in\mathbb{M}_-$,
+The cone becomes physical when the scalar coordinate is imaginary. For a material-sector four-vector $\tilde{Q}=ict\,e_0+\vec x\in\mathbb{M}_-$,
 
 $$
-N(\tilde{Q})=(ict)^2+\mathbf x^2=-c^2t^2+\mathbf x^2 ,
+N(\tilde{Q})=(ict)^2+\vec x^2=-c^2t^2+\vec x^2 ,
 $$
 
 which is the Minkowski interval; its zero set $N(\tilde{Q})=0$ is the **light cone**. So the light cone is the real slice of the biquaternion-norm cone, obtained by taking the scalar coefficient of the phase-space biquaternion to be purely imaginary rather than real. The indefinite signature of the Minkowski form and the definiteness of the Euclidean phase-space form are the same ambiguity of the biquaternion norm under a complex rotation of its scalar direction.
 
-The same computation identifies the characteristic cone of the d'Alembertian. For a plane-wave biquaternion $\tilde K=\frac{i\omega}{c}e_0+\mathbf k$, the biquaternion norm is
+The same computation identifies the characteristic cone of the d'Alembertian. For a plane-wave biquaternion $\tilde K=\frac{i\omega}{c}e_0+\vec k$, the biquaternion norm is
 
 $$
-N(\tilde K)=-\frac{\omega^2}{c^2}+\mathbf k^2 ,
+N(\tilde K)=-\frac{\omega^2}{c^2}+\vec k^2 ,
 $$
 
-and $N(\tilde K)=0$ is the dispersion relation $\omega^2/c^2=\mathbf k^2$ of the wave equation $\Box\tilde\Phi=0$. On a plane wave of frequency $\omega$ and wave vector $\mathbf k$, whose wave biquaternion is $\tilde K=\frac{i\omega}{c}e_0+\mathbf k$, the operator $\Box=\partial_{ict}^2+\Delta$ acts as the eigenvalue
+and $N(\tilde K)=0$ is the dispersion relation $\omega^2/c^2=\vec k^2$ of the wave equation $\Box\tilde\Phi=0$. On a plane wave of frequency $\omega$ and wave vector $\vec k$, whose wave biquaternion is $\tilde K=\frac{i\omega}{c}e_0+\vec k$, the operator $\Box=\partial_{ict}^2+\Delta$ acts as the eigenvalue
 
 $$
-(iK_0)^2+(i\mathbf k)^2
-=-\left(K_0^2+\mathbf k^2\right)=-N(\tilde K)=\frac{\omega^2}{c^2}-\mathbf k^2,
+(iK_0)^2+(i\vec k)^2
+=-\left(K_0^2+\vec k^2\right)=-N(\tilde K)=\frac{\omega^2}{c^2}-\vec k^2,
 \qquad K_0=\frac{i\omega}{c},
 $$
 
@@ -294,10 +294,10 @@ so $\Box\tilde\Phi=0$ is exactly $N(\tilde K)=0$; the overall sign of the symbol
 
 ## The Coadjoint Orbit and the Biquaternion-Norm Level Sets
 
-The biquaternion norm's level sets carry the symplectic structure in the case the companion articles develop. Let $\tilde S\in\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_-$ be a real pure quaternion, identified with a vector $\mathbf S$, and consider the level sets
+The biquaternion norm's level sets carry the symplectic structure in the case the companion articles develop. Let $\tilde S\in\mathbb{H}_{\mathbb{B}}\cap\mathbb{M}_-$ be a real pure quaternion, identified with a vector $\vec S$, and consider the level sets
 
 $$
-N(\tilde S)=|\mathbf S|^2=S^2 .
+N(\tilde S)=|\vec S|^2=S^2 .
 $$
 
 These are the spheres of radius $S$ in the three-dimensional space of pure real quaternions. On a sphere, the **Souriau–Kirillov form** is
@@ -309,7 +309,7 @@ $$
 \Omega_S=\frac{1}{2S}\,\varepsilon_{ijk}S_i\,dS_j\wedge dS_k ,
 $$
 
-where $\Omega_S$ is the area form of the sphere of radius $S$ (the sum over $i,j,k$ is unrestricted; the explicit $\tfrac12$ is what makes the expression the area form rather than twice it). The division by $S$ is the Souriau normalization: it is fixed by requiring that the inverse form give the bracket $\{S_i,S_j\}=\varepsilon_{ijk}S_k$ of the companion article, and it is checked at once at the north pole, where $\omega_{\mathrm S}=S^{-1}dS_1\wedge dS_2$ and the bracket reads $\{S_1,S_2\}=S_3=S$. The form is non-degenerate on the sphere and closed. The Hamiltonian flow generated by $H=2\mathbf G\cdot\mathbf S$ is the rotor conjugation $\tilde S\mapsto e^{t\tilde G}\tilde S\,e^{-t\tilde G}$, as the companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow* establishes, with $\{S_i,S_j\}=\varepsilon_{ijk}S_k$.
+where $\Omega_S$ is the area form of the sphere of radius $S$ (the sum over $i,j,k$ is unrestricted; the explicit $\tfrac12$ is what makes the expression the area form rather than twice it). The division by $S$ is the Souriau normalization: it is fixed by requiring that the inverse form give the bracket $\{S_i,S_j\}=\varepsilon_{ijk}S_k$ of the companion article, and it is checked at once at the north pole, where $\omega_{\mathrm S}=S^{-1}dS_1\wedge dS_2$ and the bracket reads $\{S_1,S_2\}=S_3=S$. The form is non-degenerate on the sphere and closed. The Hamiltonian flow generated by $H=2\vec G\cdot\vec S$ is the rotor conjugation $\tilde S\mapsto e^{t\tilde G}\tilde S\,e^{-t\tilde G}$, as the companion article *Similitudes Between Biquaternion Rotors and Hamiltonian Flow* establishes, with $\{S_i,S_j\}=\varepsilon_{ijk}S_k$.
 
 The biquaternion norm enters in two ways. First, the orbits are the level sets of $N$; the symplectic form is the Souriau form on those level sets, and the biquaternion norm's gradient is normal to them. Second, the level $S=0$ is the **degenerate orbit**: the sphere shrinks to a point, the area form collapses, and $N(\tilde S)=0$ is exactly the biquaternion-norm cone. The cone is therefore the singular (zero-radius) member of the family of coadjoint orbits on which the symplectic form lives. On the cone the form degenerates, and the algebra's product degenerates with it; away from the cone the orbifold of level sets carries a non-degenerate symplectic form. This is the precise sense in which the symplectic form and the biquaternion-norm cone are two aspects of one structure.
 
@@ -352,14 +352,14 @@ The symplectic form is the antisymmetric (imaginary) part of one Hermitian pairi
 | $\tilde Z=\tilde q+i\tilde p$ | Phase-space biquaternion |
 | $\tilde Z^{*}=-\tilde q+i\tilde p$ | Hermitian conjugate for pure real $\tilde q,\tilde p$ |
 | $\mathrm{Sc}(\tilde Z^{*}\tilde W)$ | Hermitian scalar pairing |
-| $g(\tilde Z,\tilde W)=\mathbf q\cdot\mathbf r+\mathbf p\cdot\mathbf s$ | Euclidean metric of phase space |
-| $\omega(\tilde Z,\tilde W)=\mathbf q\cdot\mathbf s-\mathbf p\cdot\mathbf r$ | Symplectic form, $\omega=\sum_k dq_k\wedge dp_k$ |
+| $g(\tilde Z,\tilde W)=\vec q\cdot\vec r+\vec p\cdot\vec s$ | Euclidean metric of phase space |
+| $\omega(\tilde Z,\tilde W)=\vec q\cdot\vec s-\vec p\cdot\vec r$ | Symplectic form, $\omega=\sum_k dq_k\wedge dp_k$ |
 | $i$ | Central scalar imaginary; the Kähler $J$ |
 | $\theta=\frac12\mathrm{Im}\,\mathrm{Sc}(\tilde Z^{*} d\tilde Z)$ | Symplectic potential, $d\theta=\omega$ |
 | $N(\tilde Q) = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^2$ | Biquaternion norm (holomorphic) |
 | $B(\tilde Z,\tilde W)=\mathrm{Sc}(\tilde Z\tilde W^{\natural}) = \langle\tilde Z,\tilde W\rangle_{\natural}$ | Symmetric general plain bilinear form of $N$ |
-| $N(\tilde{Q})=0$, $\tilde{Q}=ict\,e_0+\mathbf x$ | Light cone of the material sector |
-| $N(\tilde K)=0$, $\tilde K=\frac{i\omega}{c}e_0+\mathbf k$ | Characteristic cone of $\Box$ |
+| $N(\tilde{Q})=0$, $\tilde{Q}=ict\,e_0+\vec x$ | Light cone of the material sector |
+| $N(\tilde K)=0$, $\tilde K=\frac{i\omega}{c}e_0+\vec k$ | Characteristic cone of $\Box$ |
 | $N(\tilde S)=S^2$ | Coadjoint-orbit level set; $S=0$ is the cone |
 | $\omega_{\mathrm S}=\frac{1}{S}\Omega_S,\ \ \Omega_S=\frac{1}{2S}\varepsilon_{ijk}S_i dS_j\wedge dS_k$ | Souriau–Kirillov form on the orbit (area form divided by $S$) |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |

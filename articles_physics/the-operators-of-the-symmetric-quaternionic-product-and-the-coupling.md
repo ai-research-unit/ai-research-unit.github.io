@@ -9,7 +9,7 @@ is the **symmetrised quaternionic product**
 
 $$
 \tilde P\bullet\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P\bigr)
-=\bigl[P_0Q_0+(\mathbf P,\mathbf Q)\bigr]e_0=N(\tilde P,\tilde Q)\,e_0 ,
+=\bigl[P_0Q_0+(\vec P,\vec Q)\bigr]e_0=N(\tilde P,\tilde Q)\,e_0 ,
 $$
 
 and the operators of the band attach an element to an argument:
@@ -25,7 +25,7 @@ radical are the two sibling articles' business; this article adds the operator l
 layer is owned by a mathematics article and cited in place.
 
 The answer is one sentence. The form of the block is the **quaternion form**
-$N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$, of Gram matrix
+$N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\vec P,\vec Q)$, of Gram matrix
 the identity, symmetric and non-degenerate; its associate is the transpose, and the transpose of a multiplication
 is **not** a multiplication: $(L^{\bullet}_{\tilde A})^{\approx}(\tilde Y)=Y_0\tilde A$. Association therefore carries
 the parameter **out of the multiplier slot and into the argument's scalar slot**; it **keeps the side**, there
@@ -42,12 +42,12 @@ article.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis
 $e_0=1,e_1,e_2,e_3$, $e_k^{2}=-e_0$, $e_1e_2=e_3$, and central scalar imaginary $i$ with $i^{2}=-1$. An element
-is $\tilde Q=Q_0e_0+\mathbf Q$; the natural conjugation is ${}^{\natural}$, the Hermitian star
+is $\tilde Q=Q_0e_0+\vec Q$; the natural conjugation is ${}^{\natural}$, the Hermitian star
 ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, and the sectors are $\mathbb{M}_\pm=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}$,
 the material one $\mathbb{M}_-$. The general plain bilinear product is juxtaposition $\tilde P\tilde Q$, the quaternionic
 product is $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$, and the **general quaternionic bilinear form** is
 $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$, which is also the coefficient of this block; the
-**general plain bilinear form** is $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-(\mathbf P,\mathbf Q)$,
+**general plain bilinear form** is $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-(\vec P,\vec Q)$,
 differing from $N$ by the sign of the vector part alone. The symbol $\bullet$ is **row-relative** in this
 chapter: the plain row writes it for $\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ and this block for
 $\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$, a different operation; the mathematics
@@ -169,7 +169,7 @@ the block's substitute for the Jordan identity it fails, and it is a law of scal
 **Definition (the quaternion form).** The form of the band is the coefficient of its product,
 
 $$
-N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q),
+N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\vec P,\vec Q),
 \qquad \mathrm{Gram}=I_4 .
 $$
 
@@ -209,17 +209,17 @@ $$
 and in the basis the associate is the **transpose**. It **keeps the side**, there being one; it **conjugates
 nothing**; and it **does not keep the parameter in the multiplier slot**: it moves the parameter into the value,
 multiplied by the scalar coordinate of the argument. The multiplication is self-associate,
-$(L^{\bullet}_{\tilde A})^{\approx}=L^{\bullet}_{\tilde A}$, exactly when the parameter is **central**, $\mathbf A=0$,
+$(L^{\bullet}_{\tilde A})^{\approx}=L^{\bullet}_{\tilde A}$, exactly when the parameter is **central**, $\vec A=0$,
 that is when $L^{\bullet}_{\tilde A}$ is a multiple of the projection $E:\tilde Y\mapsto Y_0e_0$ onto the central
 line.
 
 *Proof.*
 $N(L^{\bullet}_{\tilde A}\tilde X,\tilde Y)=N\bigl(N(\tilde A,\tilde X)e_0,\tilde Y\bigr)=N(\tilde A,\tilde X)Y_0$,
 and
-$N\bigl(\tilde X,Y_0\tilde A\bigr)=Y_0\bigl(X_0A_0+(\mathbf X,\mathbf A)\bigr)=Y_0N(\tilde A,\tilde X)$;
+$N\bigl(\tilde X,Y_0\tilde A\bigr)=Y_0\bigl(X_0A_0+(\vec X,\vec A)\bigr)=Y_0N(\tilde A,\tilde X)$;
 the form is non-degenerate, so the associate is unique, and it is the transpose because the Gram matrix is the
 identity. Equality with $L^{\bullet}_{\tilde A}$ needs $Y_0\tilde A=N(\tilde A,\tilde Y)e_0$ for every $\tilde Y$;
-at $\tilde Y=e_k$ this gives $A_ke_0=0$ for $k=1,2,3$, hence $\mathbf A=0$, and then it holds. *The
+at $\tilde Y=e_k$ this gives $A_ke_0=0$ for $k=1,2,3$, hence $\vec A=0$, and then it holds. *The
 Multiplication Operators of the Symmetric Quaternionic Algebra*, §*The Adjoint with Respect to the Form*.
 
 **Read as a physical statement.** The adjoint for the form of the coupling **is not a coupling**: it returns the
@@ -241,13 +241,13 @@ The interpretation is that the adjoint of the block reads the **pair** of parame
 ### The Self-Adjoint and the Skew-Adjoint Criteria
 
 **Theorem (the types for the quaternion form).** The multiplication $L^{\bullet}_{\tilde A}$ is **self-adjoint**
-for $N$ if and only if $\tilde A$ is central, $\mathbf A=0$; the self-adjoint multiplications are therefore the
+for $N$ if and only if $\tilde A$ is central, $\vec A=0$; the self-adjoint multiplications are therefore the
 family $\{L^{\bullet}_{\lambda e_0}\}=\{\lambda E\}$ of the scalar multiples of the projection onto the central
 line. The only **skew-adjoint** multiplication is the zero operator.
 
-*Proof.* Self-adjointness is $(L^{\bullet}_{\tilde A})^{\approx}=L^{\bullet}_{\tilde A}$, which is $\mathbf A=0$ by the
+*Proof.* Self-adjointness is $(L^{\bullet}_{\tilde A})^{\approx}=L^{\bullet}_{\tilde A}$, which is $\vec A=0$ by the
 associate theorem. Skew-adjointness is $Y_0\tilde A=-N(\tilde A,\tilde Y)e_0$ for every $\tilde Y$; the vector
-part gives $Y_0\mathbf A=0$, so $\mathbf A=0$, and then the central part $Y_0A_0=-A_0Y_0$ forces $A_0=0$. *The
+part gives $Y_0\vec A=0$, so $\vec A=0$, and then the central part $Y_0A_0=-A_0Y_0$ forces $A_0=0$. *The
 Multiplication Operators of the Symmetric Quaternionic Algebra*, §*The Adjoint with Respect to the Form*.
 
 **Read as a physical statement.** The symmetric comparisons of the band are the scalars: an operation is a
@@ -377,22 +377,24 @@ $\mathfrak{so}(3,\mathbb{C})$, whose own double cover is the spin group of the p
 ideal, the **state space**
 
 $$
-S=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,\tilde\Upsilon_2\},
+S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\tilde\Upsilon_2\},
 \qquad
-\tilde\Pi_1=\tfrac12(e_0+ie_3),\quad \tilde\Upsilon_2=\tfrac12(ie_1+e_2),
+\tilde\Pi_+=\tfrac12(e_0+ie_3),\quad \tilde\Upsilon_2=\tfrac12(ie_1+e_2),
 $$
+
+Here $ie_3$ is a root of $+1$, $(ie_3)^2=e_0$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
 
 the multiplication acts by $L^{\bullet}_{\tilde A}s=N(\tilde A,s)e_0$ for $s\in S$; its image therefore lies in
 the central line $\mathbb{C}e_0$, which meets $S$ only at zero, so a non-zero multiplication is **not** an
 endomorphism of the state space. On the basis it is the rank-one functional
-$L^{\bullet}_{\tilde A}|_S=\bigl(N(\tilde A,\tilde\Pi_1),N(\tilde A,\tilde\Upsilon_2)\bigr)\otimes e_0$, with
+$L^{\bullet}_{\tilde A}|_S=\bigl(N(\tilde A,\tilde\Pi_+),N(\tilde A,\tilde\Upsilon_2)\bigr)\otimes e_0$, with
 kernel a line of $S$ for a parameter that is not $N$-orthogonal to $S$. A **central** parameter acts by
 $L^{\bullet}_{\lambda e_0}s=\lambda\,\mathrm{Sc}(s)e_0$, the scalar projection onto the central value. On the
 **material** sector the coupling of two material operations is real,
 $L^{\bullet}_{\tilde A}\mathbb{M}_-\subseteq\mathbb{R}e_0\subseteq\mathbb{M}_+$ for $\tilde A\in\mathbb{M}_-$.
 
 *Proof.* The display is the shape theorem restricted to $S$; the intersection $\mathbb{C}e_0\cap S=\{0\}$
-follows from the corner basis, since $e_0=\tilde\Pi_1+\tilde\Pi_2$ and $\tilde\Pi_2\notin S$; the central case is
+follows from the corner basis, since $e_0=\tilde\Pi_++\tilde\Pi_-$ and $\tilde\Pi_-\notin S$; the central case is
 $N(\lambda e_0,s)=\lambda\mathrm{Sc}(s)$; the reality on the material sector is the anti-Hermiticity of both
 parameters, $(N(\tilde A,s))^{*}=N(\tilde A,s)$. The ideal and its corner basis are *The Spinor Space as a Module
 and as a Hilbert Space*; the shape theorem is *The Multiplication Operators of the Symmetric Quaternionic
@@ -497,7 +499,7 @@ so the operators of two operations the product cannot distinguish in order diffe
 Take finally the **central** parameter $\tilde C=ie_0$, whose operator $L^{\bullet}_{ie_0}=iE$ has the algebraic norm
 matrix $i\,\mathrm{diag}(1,0,0,0)$ and is self-adjoint for $N$: the scalar multiples of $E$ are exactly the
 symmetric couplings, and $\tilde C\bullet\tilde X=iX_0e_0$ returns the scalar coordinate scaled by $i$. On the
-state basis the first parameter acts by $L^{\bullet}_{\tilde A}\tilde\Pi_1=\tfrac12 e_0$ and
+state basis the first parameter acts by $L^{\bullet}_{\tilde A}\tilde\Pi_+=\tfrac12 e_0$ and
 $L^{\bullet}_{\tilde A}\tilde\Upsilon_2=ie_0$, both central and in neither summand of $S$: the image of the state
 space is the central line. The three parameters — a material projector, an isotropic vector and a central scalar
 — display the two type criteria, the two rank-one operators, the collapse of the sandwich and the functional
@@ -510,12 +512,12 @@ and its centrality; the collapse $L^{\bullet}_{\tilde A}=R^{\bullet}_{\tilde A}$
 $\operatorname{Tr}(L^{\bullet}_{\tilde A})=A_0$ and $\det(L^{\bullet}_{\tilde A})=0$; the composition law
 $L^{\bullet}_{\tilde A}L^{\bullet}_{\tilde B}=A_0L^{\bullet}_{\tilde B}$ and the operator identity
 $L^{\bullet2}_{\tilde X}=X_0L^{\bullet}_{\tilde X}$; the associate $(L^{\bullet}_{\tilde A})^{\approx}(\tilde Y)=Y_0\tilde A$
-with the self-adjoint criterion $\mathbf A=0$ and the skew-adjoint criterion $\tilde A=0$; the projector and
+with the self-adjoint criterion $\vec A=0$ and the skew-adjoint criterion $\tilde A=0$; the projector and
 square-zero classifications $X_0=1$ and $X_0=0$; the multiplicativity criterion $\tilde A=0$ and the absence of any
 form-isometry in the family; the realified signature $(4,4)$ of $N$; the reality of the coupling on the material
 sector; the derivation space $\{De_0=0,\ D^{\mathsf T}+D=0\}$ of dimension three, with all its elements
 derivations and with the eight diagonal sign maps product-preserving; and the three worked parameters, including
-$L^{\bullet}_{\tilde A}\tilde\Pi_1=\tfrac12e_0$ and $L^{\bullet}_{\tilde A}\tilde\Upsilon_2=ie_0$. All were
+$L^{\bullet}_{\tilde A}\tilde\Pi_+=\tfrac12e_0$ and $L^{\bullet}_{\tilde A}\tilde\Upsilon_2=ie_0$. All were
 confirmed on every sample, and the associativity and Jordan witnesses were recomputed element by element.
 
 ## The Bound
@@ -544,7 +546,7 @@ no two-sided identity, and non-commutative operator composition; the operator id
 $L^{\bullet2}_{\tilde X}=X_0L^{\bullet}_{\tilde X}$, the product is neither associative (witness $e_1,e_1,e_0$)
 nor a Jordan product (witness $e_1,e_1$), and the scaling law
 $L^{\bullet}_{\tilde X}L^{\bullet}_{\tilde Z}=X_0L^{\bullet}_{\tilde Z}$ holds instead; the quaternion form
-$N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$ has Gram matrix the identity, rank four over $\mathbb{C}$ and
+$N(\tilde P,\tilde Q)=P_0Q_0+(\vec P,\vec Q)$ has Gram matrix the identity, rank four over $\mathbb{C}$ and
 realified signature $(4,4)$ of index four with material-sector signature $(-,+,+,+)$, is symmetric and
 non-degenerate and is **not invariant**, and its associate is the
 transpose, $(L^{\bullet}_{\tilde A})^{\approx}(\tilde Y)=Y_0\tilde A$, a multiplication exactly at the central
@@ -597,7 +599,7 @@ Read on the symmetries and the two-sided operators, the form is preserved by the
 
 ## Summary
 
-The operators of the symmetric quaternionic product are one family, because the product is commutative: the left and the right multiplication by an element coincide, $L^{\bullet}_{\tilde A}=R^{\bullet}_{\tilde A}$, and the multiplication is the rank-one operator $L^{\bullet}_{\tilde A}\tilde R=N(\tilde A,\tilde R)e_0$, of image the central line, kernel the hyperplane $N(\tilde A,\cdot)=0$, trace $A_0$ and determinant zero, faithful in the parameter. The multiplications compose by $L^{\bullet}_{\tilde A}L^{\bullet}_{\tilde B}=\mathrm{Sc}(\tilde A)L^{\bullet}_{\tilde B}$, so the family is a complex four-dimensional semigroup with left identities the parameters of scalar coordinate one and no two-sided identity, its operator composition is not commutative although the product is, and the operator identity is $L^{\bullet2}_{\tilde X}=X_0L^{\bullet}_{\tilde X}$; the product is neither associative nor a Jordan product, and the scaling law holds instead. The form of the block is the quaternion form $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$, of Gram matrix the identity, rank four over $\mathbb{C}$ and realified signature $(4,4)$ of index four with material-sector signature $(-,+,+,+)$, symmetric, non-degenerate and **not invariant**; its adjoint is the transpose, $(L^{\bullet}_{\tilde A})^{\approx}(\tilde Y)=Y_0\tilde A$, so association **keeps the side**, **conjugates nothing** and **does not keep the parameter in the multiplier slot**, and a multiplication is self-adjoint exactly at the central parameters, the only skew-adjoint one being zero. The derivations are the antisymmetric matrices killing $e_0$, of complex dimension three, all outer, and the bracket of two multiplications is not a derivation; no non-zero multiplication preserves the form or is multiplicative; the form-preserving operators are $G_N$ of complex dimension six, the product-preserving ones $G_{\star}$ of complex dimension three containing the eight diagonal sign maps, and the structure group rescales. The two-sided operators are rank one, so the group of invertible two-sided operators is trivial and the spin group has no instance in the band, its home being the parent; the sandwich collapses to $\Theta^{\bullet}_{\tilde A}=A_0L^{\bullet}_{\tilde A}$, a scaled projection and never a conjugation; and on the state space the multiplication is the functional $N(\tilde A,\cdot)$ times $e_0$, with image the central line and real on the material sector. The adjoint does not keep the family, the side is kept and no conjugation is applied: that one sentence is the band's operator answer.
+The operators of the symmetric quaternionic product are one family, because the product is commutative: the left and the right multiplication by an element coincide, $L^{\bullet}_{\tilde A}=R^{\bullet}_{\tilde A}$, and the multiplication is the rank-one operator $L^{\bullet}_{\tilde A}\tilde R=N(\tilde A,\tilde R)e_0$, of image the central line, kernel the hyperplane $N(\tilde A,\cdot)=0$, trace $A_0$ and determinant zero, faithful in the parameter. The multiplications compose by $L^{\bullet}_{\tilde A}L^{\bullet}_{\tilde B}=\mathrm{Sc}(\tilde A)L^{\bullet}_{\tilde B}$, so the family is a complex four-dimensional semigroup with left identities the parameters of scalar coordinate one and no two-sided identity, its operator composition is not commutative although the product is, and the operator identity is $L^{\bullet2}_{\tilde X}=X_0L^{\bullet}_{\tilde X}$; the product is neither associative nor a Jordan product, and the scaling law holds instead. The form of the block is the quaternion form $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\vec P,\vec Q)$, of Gram matrix the identity, rank four over $\mathbb{C}$ and realified signature $(4,4)$ of index four with material-sector signature $(-,+,+,+)$, symmetric, non-degenerate and **not invariant**; its adjoint is the transpose, $(L^{\bullet}_{\tilde A})^{\approx}(\tilde Y)=Y_0\tilde A$, so association **keeps the side**, **conjugates nothing** and **does not keep the parameter in the multiplier slot**, and a multiplication is self-adjoint exactly at the central parameters, the only skew-adjoint one being zero. The derivations are the antisymmetric matrices killing $e_0$, of complex dimension three, all outer, and the bracket of two multiplications is not a derivation; no non-zero multiplication preserves the form or is multiplicative; the form-preserving operators are $G_N$ of complex dimension six, the product-preserving ones $G_{\star}$ of complex dimension three containing the eight diagonal sign maps, and the structure group rescales. The two-sided operators are rank one, so the group of invertible two-sided operators is trivial and the spin group has no instance in the band, its home being the parent; the sandwich collapses to $\Theta^{\bullet}_{\tilde A}=A_0L^{\bullet}_{\tilde A}$, a scaled projection and never a conjugation; and on the state space the multiplication is the functional $N(\tilde A,\cdot)$ times $e_0$, with image the central line and real on the material sector. The adjoint does not keep the family, the side is kept and no conjugation is applied: that one sentence is the band's operator answer.
 
 ## Summary of Notation
 
@@ -613,10 +615,10 @@ The operators of the symmetric quaternionic product are one family, because the 
 | $L^{\bullet2}_{\tilde X}=X_0L^{\bullet}_{\tilde X}$ | The operator identity, the block's substitute for the Jordan identity |
 | $L^{\bullet}_{\tilde X}L^{\bullet}_{\tilde Z}=X_0L^{\bullet}_{\tilde Z}$ | The scaling law |
 | $(e_1\bullet e_1)\bullet e_0=e_0\neq0=e_1\bullet(e_1\bullet e_0)$ | The associativity witness |
-| $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$ | The quaternion form; Gram $I_4$, realified signature $(4,4)$, material-sector $(-,+,+,+)$ |
+| $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\vec P,\vec Q)$ | The quaternion form; Gram $I_4$, realified signature $(4,4)$, material-sector $(-,+,+,+)$ |
 | $(L^{\bullet}_{\tilde A})^{\approx}(\tilde Y)=Y_0\tilde A$ | The associate: the transpose; it does not keep the family |
-| $(L^{\bullet}_{\tilde A})^{\approx}=L^{\bullet}_{\tilde A}\iff\mathbf A=0$ | Self-adjoint exactly on the central line |
-| self-adjoint: $\mathbf A=0$; skew-adjoint: $\tilde A=0$ | The types for the quaternion form |
+| $(L^{\bullet}_{\tilde A})^{\approx}=L^{\bullet}_{\tilde A}\iff\vec A=0$ | Self-adjoint exactly on the central line |
+| self-adjoint: $\vec A=0$; skew-adjoint: $\tilde A=0$ | The types for the quaternion form |
 | $E:\tilde Y\mapsto Y_0e_0$, $L^{\bullet}_{\lambda e_0}=\lambda E$ | The projection onto the central line; the symmetric couplings |
 | $\{D:De_0=0,\ D^{\mathsf T}+D=0\}\cong\mathfrak{so}(3,\mathbb{C})$ | The derivations, of complex dimension three, all outer |
 | $[L^{\bullet}_{\tilde A},L^{\bullet}_{\tilde B}]=\mathrm{Sc}(\tilde A)L^{\bullet}_{\tilde B}-\mathrm{Sc}(\tilde B)L^{\bullet}_{\tilde A}$ | Not a derivation |
@@ -628,7 +630,7 @@ The operators of the symmetric quaternionic product are one family, because the 
 | $\Theta^{\bullet}_{\tilde A}=L^{\bullet}_{\tilde A}L^{\bullet}_{\tilde A}=A_0L^{\bullet}_{\tilde A}$ | The sandwich, a scaled projection |
 | $\mathrm{Ad}_{\tilde A}=L_{\tilde A}R_{\tilde A^{-1}}$, $\mathrm{Ad}_{\tilde A}\tilde X=\tilde A\tilde X\tilde A^{-1}$ | The inner automorphism of the plain product, cited |
 | $T_{a,b}$ of the parent Clifford structure | The invertible sandwiches and the spin group, cited |
-| $S=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,\tilde\Upsilon_2\}$ | The state space; $L^{\bullet}_{\tilde A}s=N(\tilde A,s)e_0$ |
+| $S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\tilde\Upsilon_2\}$ | The state space; $L^{\bullet}_{\tilde A}s=N(\tilde A,s)e_0$ |
 
 ## Further Reading
 
@@ -640,6 +642,6 @@ The operators of the symmetric quaternionic product are one family, because the 
 - *The Two-Sided Operators and the Spin Group* (`articles_maths/the-two-sided-operators-and-the-spin-group.md`), for the group of invertible two-sided operators, its kernel and the spin group as a group of invertible sandwiches, cited and not re-proved.
 - *The Quaternion Form as a Product: the Scalar Coupling of Two Material Operations* (`articles_physics/the-quaternion-form-as-a-product-the-scalar-coupling-of-two-material-operations.md`), the framing article of the band, for the operation, its centrality and the scalar-coupling interpretation.
 - *Why a Central Product Cannot Compose: the Radical and the Isotropic Elements* (`articles_physics/why-a-central-product-cannot-compose-the-radical-and-the-isotropic-elements.md`), for the radical, the isotropic elements, the absence of a unit and the Jordan witness, which are the band's own physics and not this article's.
-- *The Spinor Space as a Module and as a Hilbert Space* (`articles_physics/the-spinor-space-as-a-module-and-as-a-hilbert-space.md`), for the minimal left ideal, its corner basis $(\tilde\Pi_1,\tilde\Upsilon_2)$ and the nilpotent, which are the state space of the band.
+- *The Spinor Space as a Module and as a Hilbert Space* (`articles_physics/the-spinor-space-as-a-module-and-as-a-hilbert-space.md`), for the minimal left ideal, its corner basis $(\tilde\Pi_+,\tilde\Upsilon_2)$ and the nilpotent, which are the state space of the band.
 - *Observables, Gauge Generators and the Chirality of the Internal Action* (`articles_physics/observables-gauge-generators-and-the-chirality-of-the-internal-action.md`) and *Mass, Rank and the Positivity of the Dagger* (`articles_physics/mass-rank-and-the-positivity-of-the-dagger.md`), for the physical adjoint, the observables and generators, and the positivity of the Hermitian form that the quaternion form lacks.
 - *The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket* (`articles_physics/the-operators-of-the-twelve-structures-multiplication-adjoint-and-bracket.md`), the crossing reader of the twelve operator rows, for the comparison of the twelve adjoints.

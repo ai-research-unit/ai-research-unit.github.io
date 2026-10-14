@@ -47,18 +47,18 @@ Quaternionic Algebra*.
 **Conventions.** $\mathbb{H}$ is the real quaternion algebra with basis $e_0=1,e_1,e_2,e_3$, the rules
 $e_k^2=-e_0$ and $e_1e_2=e_3$. Juxtaposition is the plain product and $\star$ the general quaternionic
 bilinear product $\tilde p\star\tilde q=\tilde p^{\natural}\tilde q$, with the conjugation
-$\tilde p^{\natural}=p_0-\mathbf p$ and $\tilde p=p_0e_0+\mathbf p$,
-$\mathbf p=p_1e_1+p_2e_2+p_3e_3$. The **powers** are the left-nested products $\tilde p^{1}=\tilde p$ and
+$\tilde p^{\natural}=p_0-\vec p$ and $\tilde p=p_0e_0+\vec p$,
+$\vec p=p_1e_1+p_2e_2+p_3e_3$. The **powers** are the left-nested products $\tilde p^{1}=\tilde p$ and
 $\tilde p^{k+1}=\tilde p\star\tilde p^{k}$, and the **plain powers** are the same nestings in the plain
 product, written $\tilde p^{(k)}$, with $\tilde p^{(0)}=e_0$. The **algebraic norm** is
 
 $$
-N(\tilde p)=\tilde p^{\natural}\tilde p=p_0^2+\lvert\mathbf p\rvert^2=\sum_{\mu=0}^{3}p_\mu^2 ,
+N(\tilde p)=\tilde p^{\natural}\tilde p=p_0^2+\lvert\vec p\rvert^2=\sum_{\mu=0}^{3}p_\mu^2 ,
 $$
 
-positive definite, with polar form $\beta(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q$. The centre is
+positive definite, with polar form $\beta(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$. The centre is
 the scalar line $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$ and the vector subspace is
-$\mathrm{Vect}(\mathbb{H})=\{\mathbf p\}$.
+$\mathrm{Vect}(\mathbb{H})=\{\vec p\}$.
 
 ## The Roots of Zero
 
@@ -104,9 +104,9 @@ The same level set is read side by side with the plain product, and over $\mathb
 plain product alike; both algebras are division algebras, and neither has a square-zero element.
 
 **Proof.** The quaternionic column is §*The Root Set*. For the plain column the plain square is
-$(\xi_0^2-\lvert\boldsymbol\xi\rvert^2)e_0+2\xi_0\boldsymbol\xi$; the equation $\tilde\xi^2=0$ is the pair
-$\xi_0^2=\lvert\boldsymbol\xi\rvert^2$ and $\xi_0\boldsymbol\xi=0$. If $\xi_0\neq0$ then $\boldsymbol\xi=0$
-and $\xi_0^2=0$, a contradiction; hence $\xi_0=0$ and then $\lvert\boldsymbol\xi\rvert^2=0$, so
+$(\xi_0^2-\lvert\vec\xi\rvert^2)e_0+2\xi_0\vec\xi$; the equation $\tilde\xi^2=0$ is the pair
+$\xi_0^2=\lvert\vec\xi\rvert^2$ and $\xi_0\vec\xi=0$. If $\xi_0\neq0$ then $\vec\xi=0$
+and $\xi_0^2=0$, a contradiction; hence $\xi_0=0$ and then $\lvert\vec\xi\rvert^2=0$, so
 $\tilde\xi=0$. The plain column is *Square Roots of Zero and the Nilpotents of the General Plain Algebra*.
 
 **Remark (the collapse of the complex root set).** In the complex chapter the root set of $0$ of the
@@ -138,8 +138,8 @@ N(\tilde p)=p_0^2+p_1^2+p_2^2+p_3^2 .
 $$
 
 **Proof.** At equal arguments the vector part of the product is
-$p_0\mathbf p-p_0\mathbf p-\mathbf p\times\mathbf p=0$, so the square is the scalar part
-$p_0^2+\mathbf p\cdot\mathbf p$ times $e_0$ (*Introduction to the General Quaternionic Algebra of
+$p_0\vec p-p_0\vec p-\vec p\times\vec p=0$, so the square is the scalar part
+$p_0^2+\vec p\cdot\vec p$ times $e_0$ (*Introduction to the General Quaternionic Algebra of
 Quaternions*, and *Square Roots of One and the Idempotents of the General Quaternionic Algebra*).
 
 **Theorem (the criterion).** For $\tilde p\in\mathbb{H}$, $\tilde p\star\tilde p=0$ if and only if
@@ -236,16 +236,16 @@ $\mathrm{Vect}(\mathbb{H})$.
 
 **Proposition.** On the centre and on the vector subspace the square vanishes only at the origin, so neither
 subspace carries a square-zero element and neither carries a nilpotent; in the centre the square is
-$A^2e_0$, and in the vector subspace it is the central element $\lvert\mathbf p\rvert^2e_0\neq0$ for every
-nonzero pure $\mathbf p$.
+$A^2e_0$, and in the vector subspace it is the central element $\lvert\vec p\rvert^2e_0\neq0$ for every
+nonzero pure $\vec p$.
 
 | subspace | element | square | nilpotents |
 |---|---|---|---|
 | $\mathbb{R}_{\mathbb{H}}$, the centre | $Ae_0$ | $A^2e_0$ | none |
-| $\mathrm{Vect}(\mathbb{H})$, the vector subspace | $\mathbf p$ | $\lvert\mathbf p\rvert^2e_0$ | none |
+| $\mathrm{Vect}(\mathbb{H})$, the vector subspace | $\vec p$ | $\lvert\vec p\rvert^2e_0$ | none |
 
 **Proof.** The square is the norm on the subspace of each row, by the lemma; $A^2$ vanishes only at $A=0$
-and $\lvert\mathbf p\rvert^2$ only at $\mathbf p=0$. A nonzero pure element has a central nonzero square, so
+and $\lvert\vec p\rvert^2$ only at $\vec p=0$. A nonzero pure element has a central nonzero square, so
 no pure element is square-zero, and no central element is either.
 
 ## The Nilpotents and the Other Structures of the Space

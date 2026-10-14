@@ -12,10 +12,10 @@ The findings are stated in advance.
 2. **For spin-1/2 the geometric phase is one half the oriented solid angle, with a sign:** $\gamma_{\mathrm{geo}} = -\tfrac12\Omega_{\mathrm{sgn}}$, where $\Omega_{\mathrm{sgn}}$ is the solid angle subtended by the closed curve, counted positive for the orientation given by the right-hand rule about the curve.
 3. **The AA phase is exact for a precessing spin.** A spin prepared along $\hat{m}$ and left in a fixed field along $\hat{n}$ has a Bloch vector that precesses on a cone of half-angle $\theta_0$; over one period the AA phase is $\tfrac12$ of the unsigned solid angle of the cap, with the sign fixed by the sense of precession. This is computed exactly below, with no adiabatic approximation.
 4. **The spinor is double-valued.** A full $2\pi$ rotation of the spin returns the idempotent but sends the spinor to its negative; only after $4\pi$ does the spinor return. The geometric phase of the equator loop is the cleanest instance: the phase is $\pi$ after one period, a sign change, and $2\pi$ (i.e. the identity) after two.
-5. **The holonomy is a rotor.** The accumulated spin evolution is the product of a central phase and conjugation by a unit real quaternion $\tilde{R} = e^{-\frac{1}{2}\Phi\,\hat{n}}$, where $\Phi$ is the angle through which the Bloch vector is turned; the central phase and the rotation are the two faces of the same element of $\mathbb{B}$.
+5. **The holonomy is a rotor.** The accumulated spin evolution is the product of a central phase and conjugation by a unit real quaternion $\tilde{u} = e^{-\frac{1}{2}\Phi\,\hat{n}}$, where $\Phi$ is the angle through which the Bloch vector is turned; the central phase and the rotation are the two faces of the same element of $\mathbb{B}$.
 6. **The adiabatic Berry phase is the slow limit of the same holonomy.** Using the rotating-frame effective field of a circularly polarised drive, the AA phase reduces to the solid-angle formula when the drive is slow, with the sign set by the sense of the loop, and it departs from it as the drive speeds up.
 
-The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$, $\tilde\Pi_{1,2}(\hat\mu) = \tfrac12(e_0\pm i\hat\mu)$, $\tilde{\rho} = \tfrac12(e_0+i\mathbf{r})$, the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, and the isomorphism $\mathsf{M}_2$ with $ie_k\mapsto\sigma_k$.
+The notation is that of the read-list articles: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k$, $\tilde\Pi_{1,2}(\hat\mu) = \tfrac12(e_0\pm i\hat\mu)$, $\tilde{\rho} = \tfrac12(e_0+i\vec r)$, the trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$, and the isomorphism $\mathsf{M}_2$ with $ie_k\mapsto\sigma_k$.
 
 The companion articles supply the pieces:
 - Companion article *The Berry Phase and Geometric Phases in Biquaternionic Form*, for the adiabatic connection, the curvature and the two-route check.
@@ -96,7 +96,7 @@ $$
 \qquad \omega_L = \gamma B > 0,
 $$
 
-in the convention of the companion exercise *Exercise: Spin Precession in a Magnetic Field*, where the Bloch vector of a state initially along $+\hat{x}$ precesses as $\mathbf{r}(t) = (\cos\omega_L t, -\sin\omega_L t, 0)$. Prepare the spin along
+in the convention of the companion exercise *Exercise: Spin Precession in a Magnetic Field*, where the Bloch vector of a state initially along $+\hat{x}$ precesses as $\vec r(t) = (\cos\omega_L t, -\sin\omega_L t, 0)$. Prepare the spin along
 
 $$
 \hat{m} = \left(\sin\theta_0,\,0,\,\cos\theta_0\right),
@@ -139,12 +139,12 @@ Two limits make the formula transparent. At $\theta_0\to0$ the state is the eige
 The sign change $\psi(T) = -\psi(0)$ at the equator is not special to the equator: for every $\theta_0$ the spinor after one period differs from the initial spinor by a phase, and at $\theta_0 = \pi/2$ that phase is exactly $\pi$. The general statement is the double-valuedness of the spinor representation of the rotation group: a rotation of the spin by $2\pi$ is the identity on the idempotent,
 
 $$
-\tilde{R}(2\pi)\,\tilde\Pi_{1,2}(\hat{n})\,\tilde{R}(2\pi)^{*} = \tilde\Pi_{1,2}(\hat{n}),
+\tilde{u}(2\pi)\,\tilde\Pi_{1,2}(\hat{n})\,\tilde{u}(2\pi)^{*} = \tilde\Pi_{1,2}(\hat{n}),
 \qquad
-\tilde{R}(2\pi) = e^{-2\pi e_3/2} = -e_0,
+\tilde{u}(2\pi) = e^{-2\pi e_3/2} = -e_0,
 $$
 
-but acts on the spinor as multiplication by $-e_0$, and only a rotation by $4\pi$ is the identity on the spinor. In the biquaternion algebra this is the statement that the rotation group realised on the spinor is $SU(2)$, the double cover of the $SO(3)$ realised on the idempotents. The rotor $\tilde{R}(2\pi) = -e_0$ is the nontrivial element of the kernel of the covering map, and the geometric phase of the equator loop is the phase it carries.
+but acts on the spinor as multiplication by $-e_0$, and only a rotation by $4\pi$ is the identity on the spinor. In the biquaternion algebra this is the statement that the rotation group realised on the spinor is $SU(2)$, the double cover of the $SO(3)$ realised on the idempotents. The rotor $\tilde{u}(2\pi) = -e_0$ is the nontrivial element of the kernel of the covering map, and the geometric phase of the equator loop is the phase it carries.
 
 The physical consequences are standard: the spinor must be rotated by $4\pi$ to return, and the interference of spinor amplitudes can reveal the sign. The neutron interferometry of Rauch and collaborators and of Werner and collaborators are the standard demonstrations, and the $4\pi$ periodicity has since been confirmed with neutron resonance interferometry.
 
@@ -165,14 +165,14 @@ and a spinor phase $\psi\mapsto e^{i\alpha}\psi$ cancels between $\psi$ and $\ps
 The evolution over a closed loop of the state is, in the algebra, the product of a rotor and a central phase,
 
 $$
-\tilde{U} = e^{i\alpha}\,\tilde{R},
+\tilde{U} = e^{i\alpha}\,\tilde{u},
 \qquad
-\tilde{R} = e^{-\frac{1}{2}\Phi\,\hat{n}} = \cos\frac{\Phi}{2}\,e_0 - \sin\frac{\Phi}{2}\,\hat{n},
+\tilde{u} = e^{-\frac{1}{2}\Phi\,\hat{n}} = \cos\frac{\Phi}{2}\,e_0 - \sin\frac{\Phi}{2}\,\hat{n},
 $$
 
 for some axis $\hat{n}$, where $\Phi$ is the angle through which the Bloch vector is turned and $e^{i\alpha}$ carries the dynamical part $e^{-\frac{i}{\hbar}\int\langle\tilde{H}\rangle dt}$. The two faces are:
 
-- the **rotor** $\tilde{R}\in\mathbb{H}_{\mathbb{B}}$, which rotates the Bloch vector and is observable through the orientation of the state;
+- the **rotor** $\tilde{u}\in\mathbb{H}_{\mathbb{B}}$, which rotates the Bloch vector and is observable through the orientation of the state;
 - the **central phase** $e^{i\alpha}\in\mathbb{C}_{\mathbb{B}}$, which multiplies the spinor and is observable only through interference with another amplitude.
 
 The AA phase is the statement that the spinor phase and the geometry of the loop are locked together for a spin-1/2: the geometric phase is one half of the oriented solid angle swept by the Bloch vector, $\gamma_{\mathrm{geo}} = -\tfrac12\Omega_{\mathrm{sgn}}$. For the equator loop the swept solid angle has magnitude $2\pi$ and the phase is $\pi$ — one half of the full turn of the vector, which is why the spinor returns only to minus itself after one period. In general the relation between the geometric phase and the holonomy is a lift of an $SO(3)$ element to $SU(2)$, and the factor $\tfrac12$ is the statement that the lift is two-to-one.
@@ -204,20 +204,20 @@ $$
 = -\frac{\hbar}{2}\Big[\left(\omega_L\cos\theta_0-\omega\right)ie_3 + \omega_L\sin\theta_0\,ie_1\Big],
 $$
 
-which is the same rotating-frame structure as the Rabi problem. The rotating-frame Hamiltonian is $\tilde{H}_R = -\tfrac{\hbar}{2}\,i\,\mathbf{h}_{\mathrm{eff}}\cdot\mathbf{e}$ with
+which is the same rotating-frame structure as the Rabi problem. The rotating-frame Hamiltonian is $\tilde{H}_R = -\tfrac{\hbar}{2}\,i\,\vec h_{\mathrm{eff}}\cdot\mathbf e$ with
 
 $$
-\mathbf{h}_{\mathrm{eff}} = \left(\omega_L\sin\theta_0,\;0,\;\omega_L\cos\theta_0-\omega\right),
+\vec h_{\mathrm{eff}} = \left(\omega_L\sin\theta_0,\;0,\;\omega_L\cos\theta_0-\omega\right),
 \qquad
 \Omega_{\mathrm{eff}} = \sqrt{\omega_L^2 + \omega^2 - 2\omega\omega_L\cos\theta_0},
 $$
 
-so the effective spin observable points along $\hat{\mathbf{h}}_{\mathrm{eff}}$, and the Bloch vector precesses about $-\hat{\mathbf{h}}_{\mathrm{eff}}$ at the rate $\Omega_{\mathrm{eff}}$. Two limits are immediate.
+so the effective spin observable points along $\hat h_{\mathrm{eff}}$, and the Bloch vector precesses about $-\hat h_{\mathrm{eff}}$ at the rate $\Omega_{\mathrm{eff}}$. Two limits are immediate.
 
-- **Adiabatic limit** $\omega\ll\omega_L$: $\Omega_{\mathrm{eff}}\to\omega_L$ and $\mathbf{h}_{\mathrm{eff}}\to\omega_L\hat{n}(0)$; the spin follows the instantaneous eigenstate, and the holonomy is the solid-angle phase $-\tfrac12\Omega_{\mathrm{sgn}}$. For the clockwise loop used here the oriented solid angle is $-\Omega$ with $\Omega = 2\pi(1-\cos\theta_0)$, so the holonomy is $+\tfrac{\Omega}{2}$; the companion article uses the opposite (counterclockwise) orientation of the rotating field and therefore reports $-\tfrac{\Omega}{2}$. The magnitude is the same and the sign is fixed by the orientation, as the general formula requires.
+- **Adiabatic limit** $\omega\ll\omega_L$: $\Omega_{\mathrm{eff}}\to\omega_L$ and $\vec h_{\mathrm{eff}}\to\omega_L\hat{n}(0)$; the spin follows the instantaneous eigenstate, and the holonomy is the solid-angle phase $-\tfrac12\Omega_{\mathrm{sgn}}$. For the clockwise loop used here the oriented solid angle is $-\Omega$ with $\Omega = 2\pi(1-\cos\theta_0)$, so the holonomy is $+\tfrac{\Omega}{2}$; the companion article uses the opposite (counterclockwise) orientation of the rotating field and therefore reports $-\tfrac{\Omega}{2}$. The magnitude is the same and the sign is fixed by the orientation, as the general formula requires.
 - **Sudden limit** $\omega\gg\omega_L$: $\Omega_{\mathrm{eff}}\to\omega$ and the effective field is dominated by the $-\omega$ term; the spin cannot follow the field and the geometric phase is suppressed.
 
-At the **resonance** $\omega = \omega_L\cos\theta_0$ the longitudinal component vanishes, $\mathbf{h}_{\mathrm{eff}} = \omega_L\sin\theta_0\,\hat{x}$, and the effective spin field lies in the equatorial plane; the spin then precesses about the equatorial axis at the rate $\omega_L\sin\theta_0$. The Floquet quasi-energy over one period is the phase of the effective evolution; the geometric part is obtained by subtracting it from the total phase, exactly as in the AA definition.
+At the **resonance** $\omega = \omega_L\cos\theta_0$ the longitudinal component vanishes, $\vec h_{\mathrm{eff}} = \omega_L\sin\theta_0\,\hat{x}$, and the effective spin field lies in the equatorial plane; the spin then precesses about the equatorial axis at the rate $\omega_L\sin\theta_0$. The Floquet quasi-energy over one period is the phase of the effective evolution; the geometric part is obtained by subtracting it from the total phase, exactly as in the AA definition.
 
 ### What Changes and What Does Not
 
@@ -240,7 +240,7 @@ The rotating field exhibits the interpolation between the adiabatic Berry phase 
 
 1. **Non-abelian geometric phases.** The AA and Berry phases here are abelian ($U(1)$) because the spin-1/2 level is non-degenerate. For a degenerate level the holonomy is non-abelian. The framework of a single spin-1/2 cannot host the non-abelian case; the question is whether the algebra's idempotent structure extends to it, and it is left open by the Berry article as well.
 
-2. **The geometric phase of a mixed state.** A mixed state $\tilde\rho = \tfrac12(e_0+i\mathbf{r})$, $|\mathbf{r}|<1$, can also be transported around a loop, and a geometric phase can be defined for it (the Uhlmann phase). Does the algebra's null cone of zero divisors, which the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* identifies with a mirror light cone, support a natural phase for the boundary and the interior?
+2. **The geometric phase of a mixed state.** A mixed state $\tilde\rho = \tfrac12(e_0+i\vec r)$, $|\vec r|<1$, can also be transported around a loop, and a geometric phase can be defined for it (the Uhlmann phase). Does the algebra's null cone of zero divisors, which the companion article *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* identifies with a mirror light cone, support a natural phase for the boundary and the interior?
 
 3. **The local complex structure.** The spinor phase uses the central $i$, while the rotor uses the real units $e_k$. The series allows the complex structure to be local; the geometric phase, however, seems to require a globally defined spinor phase. Whether a local complex structure would modify the phase is unresolved, as it is in the companion articles *The Schrödinger Equation in Biquaternionic Form* and *The Path Integral in Biquaternionic Form*.
 
@@ -264,9 +264,9 @@ $$
 \gamma_{AA} = \pi(1-\cos\theta_0) = \frac{\Omega}{2},
 $$
 
-in the corpus Larmor sense (clockwise about $+\hat{z}$), which agrees with the general formula because the oriented solid angle is $-\Omega$. At $\theta_0 = \pi/2$ this is $\pi$: the spinor changes sign after one precession period, and only after two periods does it return. The propagator over one period is $\tilde{R}(2\pi) = -e_0$, the nontrivial element of the kernel of the double cover $\mathbb{H}_{\mathbb{B}}\to SO(3)$.
+in the corpus Larmor sense (clockwise about $+\hat{z}$), which agrees with the general formula because the oriented solid angle is $-\Omega$. At $\theta_0 = \pi/2$ this is $\pi$: the spinor changes sign after one precession period, and only after two periods does it return. The propagator over one period is $\tilde{u}(2\pi) = -e_0$, the nontrivial element of the kernel of the double cover $\mathbb{H}_{\mathbb{B}}\to SO(3)$.
 
-The **Berry phase** is the adiabatic limit of the same holonomy. For the field rotating about $\hat{z}$ at rate $\omega$, the rotating frame gives the static effective spin field $\mathbf{h}_{\mathrm{eff}} = (\omega_L\sin\theta_0,0,\omega_L\cos\theta_0-\omega)$ with gap $\Omega_{\mathrm{eff}} = \sqrt{\omega_L^2+\omega^2-2\omega\omega_L\cos\theta_0}$; in the limit $\omega\ll\omega_L$ the holonomy is $-\tfrac12\Omega_{\mathrm{sgn}}$ with the sign fixed by the traversal, and at $\omega = \omega_L\cos\theta_0$ the effective field is purely transverse.
+The **Berry phase** is the adiabatic limit of the same holonomy. For the field rotating about $\hat{z}$ at rate $\omega$, the rotating frame gives the static effective spin field $\vec h_{\mathrm{eff}} = (\omega_L\sin\theta_0,0,\omega_L\cos\theta_0-\omega)$ with gap $\Omega_{\mathrm{eff}} = \sqrt{\omega_L^2+\omega^2-2\omega\omega_L\cos\theta_0}$; in the limit $\omega\ll\omega_L$ the holonomy is $-\tfrac12\Omega_{\mathrm{sgn}}$ with the sign fixed by the traversal, and at $\omega = \omega_L\cos\theta_0$ the effective field is purely transverse.
 
 The geometric phase is carried by the spinor, not by the idempotent: the density matrix is quadratic in the spinor and the phase cancels in it. The holonomy is a rotor in $\mathbb{H}_{\mathbb{B}}$ whose rotation angle is twice the spinor phase, and this factor of two is the statement that the spinor representation is the double cover of the rotation group.
 
@@ -289,10 +289,10 @@ The geometric phase is carried by the spinor, not by the idempotent: the density
 | $\gamma_{\mathrm{geo}} = -\tfrac12\Omega_{\mathrm{sgn}}(\mathcal{C})$ | Solid-angle formula for spin-1/2 |
 | $\Omega = 2\pi(1-\cos\theta_0)$ | Unsigned solid angle of a latitude cap |
 | $\theta_0$ | Half-angle of the precession cone / polar angle of the loop |
-| $\tilde{R}(2\pi) = -e_0$ | One-period rotor; spinor double-valuedness |
-| $\tilde{R} = e^{-\frac{1}{2}\Phi\hat{n}}$ | Holonomy rotor; $\Phi$ the turn of the Bloch vector |
+| $\tilde{u}(2\pi) = -e_0$ | One-period rotor; spinor double-valuedness |
+| $\tilde{u} = e^{-\frac{1}{2}\Phi\hat{n}}$ | Holonomy rotor; $\Phi$ the turn of the Bloch vector |
 | $\tilde{U}_R(t) = \exp(-\tfrac{\omega t}{2}e_3)$ | Rotating-frame rotor for the driven field |
-| $\mathbf{h}_{\mathrm{eff}} = (\omega_L\sin\theta_0,0,\omega_L\cos\theta_0-\omega)$ | Effective spin field in the rotating frame |
+| $\vec h_{\mathrm{eff}} = (\omega_L\sin\theta_0,0,\omega_L\cos\theta_0-\omega)$ | Effective spin field in the rotating frame |
 | $\Omega_{\mathrm{eff}} = \sqrt{\omega_L^2+\omega^2-2\omega\omega_L\cos\theta_0}$ | Generalized (Floquet) frequency |
 | $\arg\langle\psi_1|\psi_2\rangle = \arg\mathrm{Tr}(\psi_1^\dagger\psi_2)$ | Pancharatnam connection |
 

@@ -16,7 +16,7 @@ The invertibility is where the article records an **absence**. The block has **n
 
 **Boundaries.** The general definitions of the unit and the inverse are *Definitions for the Study of the 12 Algebraic Structures*, §*The Unit and the Inverse*; the definition of the algebraic norm as the form at the two equal arguments and the three other algebraic norms are *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*; the algebraic norm of the plain product is $B$, a different form, and its theory is *Norm and Invertibility in the General Plain Algebra*. The isotropic cone of the block is *Zero Divisors of the Symmetric Quaternionic Algebra*; the form read as the multiplication of the block is *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*; the group of linear maps preserving the form and its Lie algebra are *The Multiplication Operators of the Symmetric Quaternionic Algebra*.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_1e_2=e_3$ and central scalar imaginary $i$, $i^2=-1$; a general element is $\tilde Q=Q_0e_0+\mathbf Q$ with $\mathbf Q=Q_1e_1+Q_2e_2+Q_3e_3$, and $(\mathbf P,\mathbf Q)=\sum_{k=1}^{3}P_kQ_k$. The natural conjugation is $\tilde Q^{\natural}=Q_0-\mathbf Q$. The **symmetric quaternionic multiplication** is $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)=\mathrm{Sc}(\tilde P\star\tilde Q)\,e_0$, with $\mathrm{Sc}(\tilde P\star\tilde Q)=N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$; it is written $\bullet$ in the Specific Theory and Operators entries of the block. Its diagonal is the algebraic norm of the block, $N(\tilde Q)=N(\tilde Q,\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^{2}$. The centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ and the vector subspace is $\mathrm{Vect}(\mathbb{B})=\mathbb{C}e_1+\mathbb{C}e_2+\mathbb{C}e_3$.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_1e_2=e_3$ and central scalar imaginary $i$, $i^2=-1$; a general element is $\tilde Q=Q_0e_0+\vec Q$ with $\vec Q=Q_1e_1+Q_2e_2+Q_3e_3$, and $(\vec P,\vec Q)=\sum_{k=1}^{3}P_kQ_k$. The natural conjugation is $\tilde Q^{\natural}=Q_0-\vec Q$. The **symmetric quaternionic multiplication** is $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)=\mathrm{Sc}(\tilde P\star\tilde Q)\,e_0$, with $\mathrm{Sc}(\tilde P\star\tilde Q)=N(\tilde P,\tilde Q)=P_0Q_0+(\vec P,\vec Q)$; it is written $\bullet$ in the Specific Theory and Operators entries of the block. Its diagonal is the algebraic norm of the block, $N(\tilde Q)=N(\tilde Q,\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^{2}$. The centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ and the vector subspace is $\mathrm{Vect}(\mathbb{B})=\mathbb{C}e_1+\mathbb{C}e_2+\mathbb{C}e_3$.
 
 **The results.** The block carries exactly one algebraic norm, the diagonal of its scalar-part form, $N(\tilde Q)=\mathrm{Sc}(\tilde Q\star\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^{2}$, complex-valued, indefinite, of Gram matrix the identity on $e_0,e_1,e_2,e_3$ and radical $\{0\}$. It is the multiplicative form of the plain product, $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$ with $N(\tilde P\tilde Q)=N(\tilde P)N(\tilde Q)$, but it is **not** multiplicative for the block, where $N(\tilde P\star\tilde Q)=N(\tilde P,\tilde Q)^2$. The block has no left unit, no right unit and no two-sided unit, hence no inverse and no group of units. The non-isotropic class $N\neq0$ is exactly the group of units of the plain product, with the inverse $\tilde Q^{-1}=\tilde Q^{\natural}/N(\tilde Q)$.
 
@@ -43,7 +43,7 @@ $$
 equivalently $N(\tilde Q)=N(\tilde Q,\tilde Q)$ for the form
 
 $$
-N(\tilde P,\tilde Q)=\mathrm{Sc}\bigl(\tilde P\star\tilde Q\bigr)=P_0Q_0+(\mathbf P,\mathbf Q),
+N(\tilde P,\tilde Q)=\mathrm{Sc}\bigl(\tilde P\star\tilde Q\bigr)=P_0Q_0+(\vec P,\vec Q),
 $$
 
 which is the general quaternionic bilinear form of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*. The two are related by the square of the product, which is the diagonal placed in the centre, $\tilde Q\star\tilde Q=N(\tilde Q)e_0$ (*Introduction to the Symmetric Quaternionic Algebra of Biquaternions*). The form is symmetric, $\mathbb{C}$-bilinear and non-degenerate, of Gram matrix the identity on the basis $e_0,e_1,e_2,e_3$; its radical is $\{0\}$ (*The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*).
@@ -60,9 +60,9 @@ $$
 \tilde P\star\tilde Q=\tfrac12\bigl(N(\tilde P+\tilde Q)-N(\tilde P)-N(\tilde Q)\bigr)e_0 .
 $$
 
-*Proof.* In the plain product $\tilde Q\tilde Q^{\natural}=\bigl(Q_0^2+(\mathbf Q,\mathbf Q)\bigr)e_0=N(\tilde Q)e_0$ by the multiplication table; the multiplicativity is the standard identity $(\tilde P\tilde Q)(\tilde P\tilde Q)^{\natural}=\tilde P\tilde Q\tilde Q^{\natural}\tilde P^{\natural}=N(\tilde P)N(\tilde Q)e_0$, using the centrality of the scalar; and the polarisation is the expansion of the square of $\tilde P+\tilde Q$ by bilinearity.
+*Proof.* In the plain product $\tilde Q\tilde Q^{\natural}=\bigl(Q_0^2+(\vec Q,\vec Q)\bigr)e_0=N(\tilde Q)e_0$ by the multiplication table; the multiplicativity is the standard identity $(\tilde P\tilde Q)(\tilde P\tilde Q)^{\natural}=\tilde P\tilde Q\tilde Q^{\natural}\tilde P^{\natural}=N(\tilde P)N(\tilde Q)e_0$, using the centrality of the scalar; and the polarisation is the expansion of the square of $\tilde P+\tilde Q$ by bilinearity.
 
-**Remark (the diagonal is the form, and only the form).** The symbol $N$ denotes the algebraic norm of the block and its polar form, and nothing else; the other three algebraic norms of the space are not read here. In particular the conjugate square $\tilde Q\star\tilde Q^{\natural}$ is a different element of the central line, with coefficient $N(\tilde Q,\tilde Q^{\natural})=Q_0^2-(\mathbf Q,\mathbf Q)$, and that coefficient is not the algebraic norm of the block.
+**Remark (the diagonal is the form, and only the form).** The symbol $N$ denotes the algebraic norm of the block and its polar form, and nothing else; the other three algebraic norms of the space are not read here. In particular the conjugate square $\tilde Q\star\tilde Q^{\natural}$ is a different element of the central line, with coefficient $N(\tilde Q,\tilde Q^{\natural})=Q_0^2-(\vec Q,\vec Q)$, and that coefficient is not the algebraic norm of the block.
 
 **Proposition (the algebraic norm is not multiplicative for the block).** For the product of the block,
 
@@ -86,7 +86,7 @@ $$
 
 and the natural conjugation preserves the algebraic norm while the star conjugates its value, $N(\tilde Q^{\natural})=N(\tilde Q)$ and $N(\tilde Q^{*})=\overline{N(\tilde Q)}$.
 
-*Proof.* The value is central, so each conjugation acts on it coefficientwise: $(\tilde P\star\tilde Q)^{\natural}=N(\tilde P,\tilde Q)e_0$ and $\tilde P^{\natural}\star\tilde Q^{\natural}=N(\tilde P^{\natural},\tilde Q^{\natural})e_0$, and $N(\tilde P^{\natural},\tilde Q^{\natural})=P_0Q_0+(-\mathbf P,-\mathbf Q)=N(\tilde P,\tilde Q)$; the star and the bar are the same computation with the coefficients conjugated. On the diagonal the first is $N(\tilde Q^{\natural})=N(\tilde Q)$ and the second $N(\tilde Q^{*})=\overline{N(\tilde Q)}$.
+*Proof.* The value is central, so each conjugation acts on it coefficientwise: $(\tilde P\star\tilde Q)^{\natural}=N(\tilde P,\tilde Q)e_0$ and $\tilde P^{\natural}\star\tilde Q^{\natural}=N(\tilde P^{\natural},\tilde Q^{\natural})e_0$, and $N(\tilde P^{\natural},\tilde Q^{\natural})=P_0Q_0+(-\vec P,-\vec Q)=N(\tilde P,\tilde Q)$; the star and the bar are the same computation with the coefficients conjugated. On the diagonal the first is $N(\tilde Q^{\natural})=N(\tilde Q)$ and the second $N(\tilde Q^{*})=\overline{N(\tilde Q)}$.
 
 The natural conjugation, an anti-automorphism of the plain product, is an **automorphism** of the block, because it is $\mathbb{C}$-linear and the block is commutative with central values; the star and the Hermitian conjugation are **conjugate-linear**, hence conjugations of the block and not automorphisms of it.
 
@@ -147,7 +147,7 @@ complex-valued, indefinite, the coefficient of the block-square and the multipli
 | symbol | meaning |
 |---|---|
 | $\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0$ | the symmetric quaternionic multiplication |
-| $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\star\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$ | the general quaternionic bilinear form, the scalar-part form of the product |
+| $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\star\tilde Q)=P_0Q_0+(\vec P,\vec Q)$ | the general quaternionic bilinear form, the scalar-part form of the product |
 | $N(\tilde Q)=N(\tilde Q,\tilde Q)=\sum_\mu Q_\mu^2$ | the algebraic norm of the block, one of the four algebraic norms of the space |
 | $N(\tilde P\star\tilde Q)=N(\tilde P,\tilde Q)^2$ | the failure of multiplicativity for the block |
 | $N\neq0$, $N=0$ | the non-isotropic class, the isotropic cone |

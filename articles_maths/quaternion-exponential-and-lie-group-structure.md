@@ -29,9 +29,9 @@ $$
 \mathbb{H} = \mathbb{R}_{\mathbb{H}}\oplus\operatorname{Im}\mathbb{H}\cong\mathbb{R}\oplus\mathrm{SO}(3),
 $$
 
-and $\operatorname{Im}\mathbb{H}$ is isomorphic to the cross-product Lie algebra $\mathrm{SO}(3)\cong\mathrm{SU}(2)$, with $[\mathbf{p},\mathbf{q}] = 2(\mathbf{p}\times\mathbf{q})$.
+and $\operatorname{Im}\mathbb{H}$ is isomorphic to the cross-product Lie algebra $\mathrm{SO}(3)\cong\mathrm{SU}(2)$, with $[\vec p,\vec q] = 2(\vec p\times\vec q)$.
 
-*Proof.* The centre is an abelian ideal, and it commutes with the vector subspace, so the sum is direct; $\operatorname{Im}\mathbb{H}$ is a subalgebra and an ideal because its bracket lands in itself and the centre commutes with it. The bracket on the vector subspace is $[\mathbf{p},\mathbf{q}] = \mathbf{p}\mathbf{q}-\mathbf{q}\mathbf{p} = 2(\mathbf{p}\times\mathbf{q})$, which is the cross-product Lie algebra, isomorphic to $\mathrm{SO}(3)$ and to $\mathrm{SU}(2)$.
+*Proof.* The centre is an abelian ideal, and it commutes with the vector subspace, so the sum is direct; $\operatorname{Im}\mathbb{H}$ is a subalgebra and an ideal because its bracket lands in itself and the centre commutes with it. The bracket on the vector subspace is $[\vec p,\vec q] = \vec p\vec q-\vec q\vec p = 2(\vec p\times\vec q)$, which is the cross-product Lie algebra, isomorphic to $\mathrm{SO}(3)$ and to $\mathrm{SU}(2)$.
 
 **Corollary.** The Lie algebra $\mathbb{H}$ is reductive but not semisimple: its centre is one-dimensional, and its derived algebra $\operatorname{Im}\mathbb{H}\cong\mathrm{SO}(3)$ is simple. The Killing form is negative definite on the derived ideal and zero on the centre.
 
@@ -53,15 +53,15 @@ which converges for every $\tilde q$ because the quaternion norm is multiplicati
 
 ### Closed Form
 
-**Theorem (closed form).** For $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with $\mathbf{q}\neq0$,
+**Theorem (closed form).** For $\tilde q = q_0 e_0 + q_1 e_1 + q_2 e_2 + q_3 e_3$ with $\vec q\neq0$,
 
 $$
-\exp(\tilde q) = e^{q_0}\Bigl(\cos|\mathbf{q}| + \frac{\mathbf{q}}{|\mathbf{q}|}\sin|\mathbf{q}|\Bigr),
+\exp(\tilde q) = e^{q_0}\Bigl(\cos|\vec q| + \frac{\vec q}{|\vec q|}\sin|\vec q|\Bigr),
 $$
 
-and for $\mathbf{q} = 0$ it reduces to the real exponential $\exp(q_0) = e^{q_0}$.
+and for $\vec q = 0$ it reduces to the real exponential $\exp(q_0) = e^{q_0}$.
 
-*Proof.* Write $\mathbf{q} = \mu\rho$ with $\mu$ a pure unit and $\rho = |\mathbf{q}|\geq0$, so $\mu^2 = -1$. Then $(q_0+\mu\rho)^n$ may be expanded, and separating the terms by the parity of $n$ and summing the real exponential gives the displayed expression, exactly as for the complex exponential.
+*Proof.* Write $\vec q = \mu\rho$ with $\mu$ a pure unit and $\rho = |\vec q|\geq0$, so $\mu^2 = -1$. Then $(q_0+\mu\rho)^n$ may be expanded, and separating the terms by the parity of $n$ and summing the real exponential gives the displayed expression, exactly as for the complex exponential.
 
 **Corollary.** The exponential commutes with neither addition nor multiplication of quaternions; it satisfies $N(\exp \tilde q) = e^{2\mathrm{Sc}(\tilde q)}$ and maps the imaginary subspace onto the unit sphere, where it is the parametrisation $\exp(\mu\theta) = \cos\theta+\mu\sin\theta$ for a pure unit $\mu$.
 
@@ -82,12 +82,12 @@ and it is surjective onto the unit sphere when restricted to the imaginary subsp
 **Proposition.** The exponential is not injective; its kernel is the union of the spheres of pure quaternions of radius $2\pi k$ together with the origin,
 
 $$
-\exp^{-1}(1) = \{0\}\cup\bigcup_{k\geq1}\bigl\{\mathbf{q}\in\operatorname{Im}\mathbb{H} : |\mathbf{q}| = 2\pi k\bigr\},
+\exp^{-1}(1) = \{0\}\cup\bigcup_{k\geq1}\bigl\{\vec q\in\operatorname{Im}\mathbb{H} : |\vec q| = 2\pi k\bigr\},
 $$
 
-and its restriction to the open set $\{\tilde q : |\mathbf{q}| < \pi\}$ is a diffeomorphism onto $\mathbb{H}^{\times}\setminus(-\mathbb{R}_{>0})$.
+and its restriction to the open set $\{\tilde q : |\vec q| < \pi\}$ is a diffeomorphism onto $\mathbb{H}^{\times}\setminus(-\mathbb{R}_{>0})$.
 
-*Proof.* $\exp(\tilde q) = 1$ forces $e^{q_0} = 1$ and $\sin|\mathbf{q}| = 0$ with $\cos|\mathbf{q}| = 1$, so $q_0 = 0$ and $|\mathbf{q}| = 2\pi k$ for an integer $k\geq0$, the case $k = 0$ giving the origin; conversely any such pure quaternion gives $\exp = 1$ by the closed form. The restriction statement is the classical property of the complex exponential applied to each axis direction $\mu$.
+*Proof.* $\exp(\tilde q) = 1$ forces $e^{q_0} = 1$ and $\sin|\vec q| = 0$ with $\cos|\vec q| = 1$, so $q_0 = 0$ and $|\vec q| = 2\pi k$ for an integer $k\geq0$, the case $k = 0$ giving the origin; conversely any such pure quaternion gives $\exp = 1$ by the closed form. The restriction statement is the classical property of the complex exponential applied to each axis direction $\mu$.
 
 ## The Group of Units
 
@@ -99,7 +99,7 @@ $$
 
 and the two factors commute and are the image under the exponential of the centre and of the imaginary subspace respectively.
 
-*Proof.* The polar split is *Quaternion Norm and Invertibility*; the scale factor is $\exp(q_0)$ with $q_0$ real and the unit factor is $\exp(\mathbf{q})$ up to the periodicity of the pure component, so the two exponential images are the two factors.
+*Proof.* The polar split is *Quaternion Norm and Invertibility*; the scale factor is $\exp(q_0)$ with $q_0$ real and the unit factor is $\exp(\vec q)$ up to the periodicity of the pure component, so the two exponential images are the two factors.
 
 **Theorem.** The polar form and the exponential form are the same decomposition: every unit has the parametrisation
 
@@ -161,7 +161,7 @@ The identification of the adjoint action with the rotations of $\operatorname{Im
 
 ## Summary
 
-The quaternion algebra is a Lie algebra under the commutator bracket, with derived subalgebra the imaginary subspace and centre the real line, splitting as $\mathbb{R}_{\mathbb{H}}\oplus\operatorname{Im}\mathbb{H}\cong\mathbb{R}\oplus\mathrm{SO}(3)$; it is reductive and not semisimple. The exponential has the closed form $\exp(q_0+\mathbf{q}) = e^{q_0}(\cos|\mathbf{q}|+\frac{\mathbf{q}}{|\mathbf{q}|}\sin|\mathbf{q}|)$, it satisfies $N(\exp \tilde q) = e^{2q_0}$, and it is surjective onto the group of units but not injective, with kernel the spheres of pure quaternions of radius $2\pi k$.
+The quaternion algebra is a Lie algebra under the commutator bracket, with derived subalgebra the imaginary subspace and centre the real line, splitting as $\mathbb{R}_{\mathbb{H}}\oplus\operatorname{Im}\mathbb{H}\cong\mathbb{R}\oplus\mathrm{SO}(3)$; it is reductive and not semisimple. The exponential has the closed form $\exp(q_0+\vec q) = e^{q_0}(\cos|\vec q|+\frac{\vec q}{|\vec q|}\sin|\vec q|)$, it satisfies $N(\exp \tilde q) = e^{2q_0}$, and it is surjective onto the group of units but not injective, with kernel the spheres of pure quaternions of radius $2\pi k$.
 
 The group of units splits as $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times Sp(1)$, and the unit sphere is the compact connected three-dimensional Lie group $Sp(1)\cong S^3\cong SU(2)$, the maximal compact subgroup; the polar and exponential forms of an element are the same decomposition, $\tilde q = e^{\alpha}\exp(\mu\theta)$ with $\mu$ a pure unit and $\theta\in[0,\pi]$, and the logarithm $\log \tilde q = \ln|\tilde q|+\mu\theta$ inverts the exponential off the negative real axis. The adjoint action of the exponential is the conjugation by its value, $\exp(t\operatorname{ad}_\mu) = \operatorname{Ad}_{e^{t\mu}}$, and the reading of this adjoint action as the rotations of the imaginary subspace is in *Quaternion Rotations and Reflections*.
 
@@ -176,7 +176,7 @@ The compactness of $Sp(1)$ and the circularity of its one-parameter subgroups ar
 | $\mathbb{R}_{\mathbb{H}}, \operatorname{Im}\mathbb{H}$ | Centre and derived subalgebra |
 | $\mathbb{H}\cong\mathbb{R}\oplus\mathrm{SO}(3)$ | Lie algebra decomposition |
 | $\exp(\tilde q) = \sum_n \tilde q^n/n!$ | Exponential map |
-| $\exp(q_0+\mathbf{q}) = e^{q_0}(\cos\lvert\mathbf{q}\rvert+\frac{\mathbf{q}}{\lvert\mathbf{q}\rvert}\sin\lvert\mathbf{q}\rvert)$ | Closed form |
+| $\exp(q_0+\vec q) = e^{q_0}(\cos\lvert\vec q\rvert+\frac{\vec q}{\lvert\vec q\rvert}\sin\lvert\vec q\rvert)$ | Closed form |
 | $\exp(\mu\theta) = \cos\theta+\mu\sin\theta$ | Unit-sphere parametrisation, $\mu$ a pure unit |
 | $\exp^{-1}(1) = \{2\pi k\mu\}$ | Kernel of the exponential |
 | $\mathbb{H}^{\times}\cong\mathbb{R}_{>0}\times Sp(1)$ | Polar split of the units |

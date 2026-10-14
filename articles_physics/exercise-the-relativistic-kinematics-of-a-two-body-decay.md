@@ -4,7 +4,7 @@
 
 This is one of the exercises in the relativity series. It is a set of worked problems in the relativistic kinematics of a two-body decay, using the framework and the notation of the companion article *The Relativistic Two-Body Problem in Biquaternionic Form*. That article is the parent of this exercise: it sets up the kinematics, and what follows applies it. Nothing new is introduced, and every result below is obtained from the tools already defined there.
 
-**What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, and the scalar imaginary $i$ with $i^2 = -1$. The anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part) and the Hermitian subspace $\mathbb{M}_+$. The biquaternion norm $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ and the invariant pairing $\langle \tilde{A}, \tilde{B}\rangle = \mathrm{Sc}(\tilde{A}\tilde{B}^{\natural})$ on $\mathbb{M}_-$. The four-momentum $\tilde{P} = m\tilde{U} = iE/c\,e_0 + \mathbf{p}$ with $N(\tilde{P}) = -m^2c^2$, the unit four-velocity $\tilde{u} = \tilde{U}/c$ with $N(\tilde{u}) = -1$, the rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ with $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$, the boost biquaternion $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat{\mathbf{u}}$ with $\tanh\psi = u/c$, and the relative rapidity $\psi_{\rm rel}$ with $\cosh\psi_{\rm rel} = -\langle \tilde{u}_1, \tilde{u}_2\rangle$. Throughout, $c$ is the speed of light in the medium, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ is the vacuum value.
+**What is assumed.** The biquaternion algebra $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with quaternion basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, and the scalar imaginary $i$ with $i^2 = -1$. The anti-Hermitian subspace $\mathbb{M}_-$ (imaginary scalar part, real vector part) and the Hermitian subspace $\mathbb{M}_+$. The biquaternion norm $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ and the invariant pairing $\langle \tilde{A}, \tilde{B}\rangle = \mathrm{Sc}(\tilde{A}\tilde{B}^{\natural})$ on $\mathbb{M}_-$. The four-momentum $\tilde{P} = m\tilde{V} = iE/c\,e_0 + \vec p$ with $N(\tilde{P}) = -m^2c^2$, the unit four-velocity $\tilde{u} = \tilde{V}/c$ with $N(\tilde{u}) = -1$, the rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ with $\tilde{\Lambda}\tilde{\Lambda}^{\natural} = e_0$, the boost biquaternion $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat u$ with $\tanh\psi = u/c$, and the relative rapidity $\psi_{\rm rel}$ with $\cosh\psi_{\rm rel} = -\langle \tilde{u}_1, \tilde{u}_2\rangle$. Throughout, $c$ is the speed of light in the medium, $c = 1/\sqrt{\epsilon\mu}$, and $c_0$ is the vacuum value.
 
 **What is to be shown.** The problems are: (1) the daughter energies and momentum in the centre-of-momentum frame of a parent at rest; (2) the general case of a moving parent, through the boost biquaternion the parent constructs; (3) the invariant mass of each pair in a three-body decay; (4) the threshold and the opening-angle conditions; (5) a numerical instance, checked to several digits; (6) the non-relativistic limit. Each problem is stated and then solved in full; the value of an exercise article is in the solutions.
 
@@ -12,7 +12,7 @@ This is one of the exercises in the relativity series. It is a set of worked pro
 $$
 A \;\longrightarrow\; 1 + 2, \qquad \tilde{P}_A = \tilde{P}_1 + \tilde{P}_2 .
 $$
-In the rest frame of the parent the total four-momentum is $\tilde{P}_A = iMc\,e_0$, so the parent rest frame **is** the centre-of-momentum (COM) frame of the daughters. Starred quantities refer to that frame: $\mathbf{p}_1^* = -\mathbf{p}_2^* = \mathbf{p}^*$, $p^* = |\mathbf{p}^*|$, and $E_1^* + E_2^* = Mc^2$. Unstarred quantities refer to the laboratory frame. Because the two-body article already derived the kinematics, several intermediate steps below reproduce its equations; they are included so that the exercise is self-contained.
+In the rest frame of the parent the total four-momentum is $\tilde{P}_A = iMc\,e_0$, so the parent rest frame **is** the centre-of-momentum (COM) frame of the daughters. Starred quantities refer to that frame: $\vec p_1^* = -\vec p_2^* = \vec p^*$, $p^* = |\vec p^*|$, and $E_1^* + E_2^* = Mc^2$. Unstarred quantities refer to the laboratory frame. Because the two-body article already derived the kinematics, several intermediate steps below reproduce its equations; they are included so that the exercise is self-contained.
 
 This exercise also serves to test the parent. The direction of the boost biquaternion that carries the COM frame to the laboratory — a point that repays care — is worked out explicitly in Problem 2.
 
@@ -20,11 +20,11 @@ This exercise also serves to test the parent. The direction of the boost biquate
 
 **Statement.** For $A \to 1+2$ with the parent at rest, derive the daughter energies $E_1^*, E_2^*$, the common momentum magnitude $p^*$, the speeds $v_a^*$, and the released energy $Q$. Show that the decay is allowed exactly when $M \ge m_1 + m_2$.
 
-**Solution.** The conservation law is the single biquaternion equation $\tilde{P}_A = \tilde{P}_1 + \tilde{P}_2$. In the parent rest frame $\tilde{P}_A = iMc\,e_0$, and writing $\tilde{P}_a^* = iE_a^*/c\,e_0 + \mathbf{p}_a^*$, the conservation law splits, under the real-linear projections onto the scalar and vector parts of $\mathbb{M}_-$, into
+**Solution.** The conservation law is the single biquaternion equation $\tilde{P}_A = \tilde{P}_1 + \tilde{P}_2$. In the parent rest frame $\tilde{P}_A = iMc\,e_0$, and writing $\tilde{P}_a^* = iE_a^*/c\,e_0 + \vec p_a^*$, the conservation law splits, under the real-linear projections onto the scalar and vector parts of $\mathbb{M}_-$, into
 $$
-E_1^* + E_2^* = Mc^2, \qquad \mathbf{p}_1^* + \mathbf{p}_2^* = 0 .
+E_1^* + E_2^* = Mc^2, \qquad \vec p_1^* + \vec p_2^* = 0 .
 $$
-The second equation says the daughters are emitted back to back: $\mathbf{p}_1^* = -\mathbf{p}_2^* = \mathbf{p}^*$, so $p_1^{*2} = p_2^{*2} = p^{*2}$. The mass-shell relations are
+The second equation says the daughters are emitted back to back: $\vec p_1^* = -\vec p_2^* = \vec p^*$, so $p_1^{*2} = p_2^{*2} = p^{*2}$. The mass-shell relations are
 $$
 E_1^{*2} = m_1^2c^4 + p^{*2}c^2, \qquad E_2^{*2} = m_2^2c^4 + p^{*2}c^2 .
 $$
@@ -49,7 +49,7 @@ The bracket factors as a difference of squares, first as $\left[(M-m_1)^2 - m_2^
 $$
 p^* = \frac{c}{2M}\sqrt{\left[M^2 - (m_1+m_2)^2\right]\left[M^2 - (m_1-m_2)^2\right]} .
 $$
-The speeds follow from $\mathbf{p}_a^* = \gamma_a^* m_a \mathbf{v}_a^*$ and $E_a^* = \gamma_a^* m_a c^2$, giving
+The speeds follow from $\vec p_a^* = \gamma_a^* m_a \vec v_a^*$ and $E_a^* = \gamma_a^* m_a c^2$, giving
 $$
 v_a^* = \frac{p^*c^2}{E_a^*},
 \qquad
@@ -78,64 +78,64 @@ obtained from $K_1 = E_1^* - m_1c^2 = \left[(M-m_1)^2 - m_2^2\right]c^2/(2M)$ by
 
 **Statement.** Let the parent have four-momentum
 $$
-\tilde{P}_A = i\frac{E}{c}\,e_0 + \mathbf{P},
+\tilde{P}_A = i\frac{E}{c}\,e_0 + \vec P,
 \qquad
 E = \Gamma Mc^2,
 \qquad
-\mathbf{P} = \Gamma M\mathbf{V},
+\vec P = \Gamma M\vec V,
 \qquad
 \Gamma = \frac{1}{\sqrt{1 - V^2/c^2}},
 $$
-in the laboratory, so that $\mathbf{V}$ is the parent's velocity in the lab. (a) Construct the boost biquaternion $\tilde{\Lambda}_{\rm CM}$ that carries the lab to the COM frame, and verify $\tilde{\Lambda}_{\rm CM}\tilde{P}_A\tilde{\Lambda}_{\rm CM}^{*} = iMc\,e_0$. (b) Identify the rotor that carries the COM daughter four-momenta to the lab. (c) Obtain the lab energies and momenta and the range of a daughter's lab energy.
+in the laboratory, so that $\vec V$ is the parent's velocity in the lab. (a) Construct the boost biquaternion $\tilde{\Lambda}_{\rm CM}$ that carries the lab to the COM frame, and verify $\tilde{\Lambda}_{\rm CM}\tilde{P}_A\tilde{\Lambda}_{\rm CM}^{*} = iMc\,e_0$. (b) Identify the rotor that carries the COM daughter four-momenta to the lab. (c) Obtain the lab energies and momenta and the range of a daughter's lab energy.
 
-**Solution (a).** From $\tilde{P}^{\natural}_A = iE/c\,e_0 - \mathbf{P}$,
+**Solution (a).** From $\tilde{P}^{\natural}_A = iE/c\,e_0 - \vec P$,
 $$
 -\frac{i}{Mc}\tilde{P}^{\natural}_A
-= \frac{E}{Mc^2}e_0 + i\frac{\mathbf{P}}{Mc}
-= \cosh\Psi\,e_0 + i\sinh\Psi\,\hat{\mathbf{V}},
+= \frac{E}{Mc^2}e_0 + i\frac{\vec P}{Mc}
+= \cosh\Psi\,e_0 + i\sinh\Psi\,\hat V,
 $$
-with $\cosh\Psi = E/(Mc^2) = \Gamma$, $\sinh\Psi = |\mathbf{P}|/(Mc) = \Gamma V/c$, hence $\tanh\Psi = V/c$. This is an element of $\mathbb{M}_+$ of unit norm, since $\cosh^2\Psi - \sinh^2\Psi = 1$. Its principal square root, with $\mathrm{Sc} > 0$, is the boost biquaternion
+with $\cosh\Psi = E/(Mc^2) = \Gamma$, $\sinh\Psi = |\vec P|/(Mc) = \Gamma V/c$, hence $\tanh\Psi = V/c$. This is an element of $\mathbb{M}_+$ of unit norm, since $\cosh^2\Psi - \sinh^2\Psi = 1$. Its principal square root, with $\mathrm{Sc} > 0$, is the boost biquaternion
 $$
 \tilde{\Lambda}_{\rm CM} = \sqrt{-\frac{i}{Mc}\tilde{P}^{\natural}_A}
-= \cosh\frac{\Psi}{2} + i\sinh\frac{\Psi}{2}\,\hat{\mathbf{V}},
+= \cosh\frac{\Psi}{2} + i\sinh\frac{\Psi}{2}\,\hat V,
 \qquad
 \tilde{\Lambda}_{\rm CM}\tilde{\Lambda}^{\natural}_{\rm CM} = e_0 .
 $$
-To verify that it rotates $\tilde{P}_A$ to $iMc\,e_0$, use the component action of the rotor with parameter $\hat{\mathbf{V}}$, which is the boost to the frame moving with velocity $\mathbf{V}$. On a four-momentum $(E', \mathbf{P}')$ it acts as
+To verify that it rotates $\tilde{P}_A$ to $iMc\,e_0$, use the component action of the rotor with parameter $\hat V$, which is the boost to the frame moving with velocity $\vec V$. On a four-momentum $(E', \vec P')$ it acts as
 $$
-E'' = \Gamma\left(E' - \mathbf{V}\cdot\mathbf{P}'\right),
+E'' = \Gamma\left(E' - \vec V\cdot\vec P'\right),
 \qquad
-\mathbf{P}'' = \mathbf{P}' + \frac{\Gamma-1}{V^2}\left(\mathbf{V}\cdot\mathbf{P}'\right)\mathbf{V} - \Gamma\frac{E'}{c^2}\mathbf{V}.
+\vec P'' = \vec P' + \frac{\Gamma-1}{V^2}\left(\vec V\cdot\vec P'\right)\vec V - \Gamma\frac{E'}{c^2}\vec V.
 $$
-Inserting $E' = E = \Gamma Mc^2$ and $\mathbf{P}' = \mathbf{P} = \Gamma M\mathbf{V}$ gives
+Inserting $E' = E = \Gamma Mc^2$ and $\vec P' = \vec P = \Gamma M\vec V$ gives
 $$
 E'' = \Gamma\left(\Gamma Mc^2 - \Gamma MV^2\right) = \Gamma^2 Mc^2\left(1 - V^2/c^2\right) = Mc^2,
 $$
-and, using $\mathbf{V}\cdot\mathbf{P} = \Gamma MV^2$,
+and, using $\vec V\cdot\vec P = \Gamma MV^2$,
 $$
-\mathbf{P}'' = \Gamma M\mathbf{V} + (\Gamma-1)\Gamma M\mathbf{V} - \Gamma^2 M\mathbf{V} = 0 .
+\vec P'' = \Gamma M\vec V + (\Gamma-1)\Gamma M\vec V - \Gamma^2 M\vec V = 0 .
 $$
 Hence $\tilde{\Lambda}_{\rm CM}\tilde{P}_A\tilde{\Lambda}_{\rm CM}^{*} = iMc\,e_0$, which is precisely the statement that $\tilde{\Lambda}_{\rm CM}$ is the boost to the COM frame.
 
 **Solution (b).** The rotation generated by $\tilde{\Lambda}_{\rm CM}$ carries the lab to the COM frame. The inverse rotation is generated by the quaternion conjugate,
 $$
-\tilde{\Lambda}^{\natural}_{\rm CM} = \cosh\frac{\Psi}{2} - i\sinh\frac{\Psi}{2}\,\hat{\mathbf{V}}
-= \cosh\frac{\Psi}{2} + i\sinh\frac{\Psi}{2}\,(-\hat{\mathbf{V}}),
+\tilde{\Lambda}^{\natural}_{\rm CM} = \cosh\frac{\Psi}{2} - i\sinh\frac{\Psi}{2}\,\hat V
+= \cosh\frac{\Psi}{2} + i\sinh\frac{\Psi}{2}\,(-\hat V),
 $$
 which is the boost biquaternion of the same rapidity in the opposite direction. The COM daughter four-momenta are therefore carried to the laboratory by
 $$
 \tilde{P}_a = \tilde{\Lambda}^{\natural}_{\rm CM}\,\tilde{P}_a^*\,\tilde{\Lambda}^{\natural}_{\rm CM}{}^\dagger .
 $$
 
-> **Remark on the parent's boost convention.** The parent writes the star-to-lab rotation as $\tilde{P}_a = \tilde{\Lambda}\tilde{P}_a^*\tilde{\Lambda}^{*}$ with $\tilde{\Lambda} = \cosh\frac{\Psi}{2} - i\sinh\frac{\Psi}{2}\hat{\mathbf{V}}$, the quaternion conjugate of the rotor that carries the laboratory frame to the parent rest frame - the sign of the vector part being opposite to that of the lab-to-rest rotor, as the parent states. That rotor produces $E_a = \gamma(E_a^* + \mathbf{V}\cdot\mathbf{p}_a^*)$, in agreement with the component formula quoted immediately below it in the parent; the biquaternion and component forms therefore agree. We work with the physical convention, in which a forward-emitted daughter ($\mathbf{V}\cdot\mathbf{p}_a^* > 0$) gains energy, and which corresponds to the inverse rotor above.
+> **Remark on the parent's boost convention.** The parent writes the star-to-lab rotation as $\tilde{P}_a = \tilde{\Lambda}\tilde{P}_a^*\tilde{\Lambda}^{*}$ with $\tilde{\Lambda} = \cosh\frac{\Psi}{2} - i\sinh\frac{\Psi}{2}\hat V$, the quaternion conjugate of the rotor that carries the laboratory frame to the parent rest frame - the sign of the vector part being opposite to that of the lab-to-rest rotor, as the parent states. That rotor produces $E_a = \gamma(E_a^* + \vec V\cdot\vec p_a^*)$, in agreement with the component formula quoted immediately below it in the parent; the biquaternion and component forms therefore agree. We work with the physical convention, in which a forward-emitted daughter ($\vec V\cdot\vec p_a^* > 0$) gains energy, and which corresponds to the inverse rotor above.
 
-**Solution (c).** Applying the component form of the rotation with the inverse rotor — equivalently, the standard Lorentz transformation with velocity $\mathbf{V}$ — gives
+**Solution (c).** Applying the component form of the rotation with the inverse rotor — equivalently, the standard Lorentz transformation with velocity $\vec V$ — gives
 $$
-E_a = \gamma\left(E_a^* + \mathbf{V}\cdot\mathbf{p}_a^*\right),
+E_a = \gamma\left(E_a^* + \vec V\cdot\vec p_a^*\right),
 \qquad
-\mathbf{p}_a = \mathbf{p}_a^* + \frac{\gamma-1}{V^2}\left(\mathbf{V}\cdot\mathbf{p}_a^*\right)\mathbf{V} + \gamma\frac{E_a^*}{c^2}\mathbf{V},
+\vec p_a = \vec p_a^* + \frac{\gamma-1}{V^2}\left(\vec V\cdot\vec p_a^*\right)\vec V + \gamma\frac{E_a^*}{c^2}\vec V,
 $$
-with $\gamma = \cosh\Psi = \Gamma$. Writing $\cos\theta_a^*$ for the angle between $\mathbf{V}$ and $\mathbf{p}_a^*$, and using $v_a^* = p^*c^2/E_a^*$,
+with $\gamma = \cosh\Psi = \Gamma$. Writing $\cos\theta_a^*$ for the angle between $\vec V$ and $\vec p_a^*$, and using $v_a^* = p^*c^2/E_a^*$,
 $$
 E_a = \gamma E_a^*\left(1 + \frac{Vv_a^*}{c^2}\cos\theta_a^*\right).
 $$
@@ -170,23 +170,23 @@ M_{ij}^2c^2 = m_i^2c^2 + m_j^2c^2 - 2\langle \tilde{P}_i, \tilde{P}_j\rangle .
 $$
 This is the parent's definition of the invariant mass of a pair, applied to a partial sum of three four-momenta. It requires only that $\mathbb{M}_-$ is a real vector space closed under addition and that $N$ be a quadratic form; no new primitive is needed. (The parent defines the pair mass for a two-body total; the same definition applied to a subset of a three-body system is the natural extension used in Dalitz-plot kinematics.)
 
-**Solution (b).** In the parent rest frame the three momenta sum to zero, $\mathbf{p}_1^* + \mathbf{p}_2^* + \mathbf{p}_3^* = 0$, so with $\tilde{P}_{12} = \tilde{P}_1 + \tilde{P}_2$,
+**Solution (b).** In the parent rest frame the three momenta sum to zero, $\vec p_1^* + \vec p_2^* + \vec p_3^* = 0$, so with $\tilde{P}_{12} = \tilde{P}_1 + \tilde{P}_2$,
 $$
-N\!\left(\tilde{P}_{12}\right) = \left(i\frac{E_1^* + E_2^*}{c}\right)^2 + \left(\mathbf{p}_1^* + \mathbf{p}_2^*\right)^2
+N\!\left(\tilde{P}_{12}\right) = \left(i\frac{E_1^* + E_2^*}{c}\right)^2 + \left(\vec p_1^* + \vec p_2^*\right)^2
 = -\frac{\left(Mc^2 - E_3^*\right)^2}{c^2} + p_3^{*2},
 $$
-where we used $\mathbf{p}_1^* + \mathbf{p}_2^* = -\mathbf{p}_3^*$ and $E_1^* + E_2^* = Mc^2 - E_3^*$. Hence
+where we used $\vec p_1^* + \vec p_2^* = -\vec p_3^*$ and $E_1^* + E_2^* = Mc^2 - E_3^*$. Hence
 $$
 M_{12}^2c^4 = \left(Mc^2 - E_3^*\right)^2 - p_3^{*2}c^2
 = M^2c^4 + m_3^2c^4 - 2Mc^2E_3^*,
 $$
 the second equality using $E_3^{*2} = m_3^2c^4 + p_3^{*2}c^2$. The pair mass is thus fixed by the energy of the third particle.
 
-**Solution (c).** Because $M_{12}$ is invariant, it may be evaluated in the parent rest frame, where it is a function of $E_3^*$ alone. The energy $E_3^*$ has a minimum $m_3c^2$, attained when $\mathbf{p}_3^* = 0$, and a maximum
+**Solution (c).** Because $M_{12}$ is invariant, it may be evaluated in the parent rest frame, where it is a function of $E_3^*$ alone. The energy $E_3^*$ has a minimum $m_3c^2$, attained when $\vec p_3^* = 0$, and a maximum
 $$
 E_3^{*\max} = \frac{\left[M^2 + m_3^2 - (m_1+m_2)^2\right]c^2}{2M},
 $$
-attained when $\mathbf{p}_1^* = -\mathbf{p}_2^*$, that is, when the pair $(1,2)$ is at relative rest and the decay is effectively the two-body decay $A \to (12) + 3$ with the composite mass $m_1 + m_2$. Since $M_{12}^2c^4 = M^2c^4 + m_3^2c^4 - 2Mc^2E_3^*$ decreases with $E_3^*$, the endpoints are
+attained when $\vec p_1^* = -\vec p_2^*$, that is, when the pair $(1,2)$ is at relative rest and the decay is effectively the two-body decay $A \to (12) + 3$ with the composite mass $m_1 + m_2$. Since $M_{12}^2c^4 = M^2c^4 + m_3^2c^4 - 2Mc^2E_3^*$ decreases with $E_3^*$, the endpoints are
 $$
 M_{12}^{\max} = M - m_3 \quad \left(\text{at } E_3^* = m_3c^2\right),
 \qquad
@@ -214,7 +214,7 @@ that is,
 $$
 \sum_{i<j} M_{ij}^2 = M^2 + m_1^2 + m_2^2 + m_3^2 .
 $$
-As a check, for $M = 100$, $(m_1,m_2,m_3) = (20,30,40)$ the right-hand side is $12900$; a direct evaluation of the three pair masses at a sample configuration (for instance the configuration with $\mathbf{p}_3^* = 0$, where $M_{12} = 60$) reproduces the same total.
+As a check, for $M = 100$, $(m_1,m_2,m_3) = (20,30,40)$ the right-hand side is $12900$; a direct evaluation of the three pair masses at a sample configuration (for instance the configuration with $\vec p_3^* = 0$, where $M_{12} = 60$) reproduces the same total.
 
 ## Problem 4: Threshold and the Opening Angle
 
@@ -230,20 +230,20 @@ M \ge m_1 + m_2 \iff Q \ge 0 .
 $$
 At threshold $Q = 0$, $p^* = 0$, and the daughters emerge with no relative motion. Below threshold there is no solution of $\tilde{P}_A = \tilde{P}_1 + \tilde{P}_2$ with all four-momenta on the future mass shell and real momenta.
 
-**Solution (b).** In the COM frame the momenta are back to back, $\mathbf{p}_1^* = -\mathbf{p}_2^*$, so the opening angle $\Theta^*$ between them satisfies
+**Solution (b).** In the COM frame the momenta are back to back, $\vec p_1^* = -\vec p_2^*$, so the opening angle $\Theta^*$ between them satisfies
 $$
-\cos\Theta^* = \frac{\mathbf{p}_1^*\cdot\mathbf{p}_2^*}{p^{*2}} = -1,
+\cos\Theta^* = \frac{\vec p_1^*\cdot\vec p_2^*}{p^{*2}} = -1,
 \qquad \Theta^* = \pi .
 $$
 The daughters are collinear and oppositely directed.
 
-**Solution (c).** Boost to the lab with the parent's velocity $\mathbf{V}$ along $\hat{\mathbf{z}}$, and let $\theta^*$ be the angle between $\mathbf{p}^*$ and $\mathbf{V}$ for daughter 1. From Problem 2 its lab momentum components perpendicular to and along $\mathbf{V}$ are
+**Solution (c).** Boost to the lab with the parent's velocity $\vec V$ along $\hat z$, and let $\theta^*$ be the angle between $\vec p^*$ and $\vec V$ for daughter 1. From Problem 2 its lab momentum components perpendicular to and along $\vec V$ are
 $$
 p_{1\perp} = p^*\sin\theta^*,
 \qquad
 p_{1\parallel} = \gamma\left(p^*\cos\theta^* + \frac{VE_1^*}{c^2}\right),
 $$
-so the lab angle $\theta_1$ measured from $\mathbf{V}$ satisfies
+so the lab angle $\theta_1$ measured from $\vec V$ satisfies
 $$
 \tan\theta_1 = \frac{p^*\sin\theta^*}{\gamma\left(p^*\cos\theta^* + VE_1^*/c^2\right)}
 = \frac{\sin\theta^*}{\gamma\left(\cos\theta^* + \beta/\beta_1^*\right)},
@@ -253,7 +253,7 @@ $$
 \tan\theta_a = \frac{\sin\theta^*}{\gamma\left(\cos\theta^* + \beta\right)} .
 $$
 
-**Solution (d).** For two massless daughters (for example $\pi^0 \to \gamma\gamma$) one has $E_1^* = E_2^* = Mc^2/2$ and $p^* = Mc/2$, so $\beta_a^* = 1$. Emit the two photons at COM angles $\theta^*$ and $\pi - \theta^*$ relative to $\mathbf{V}$; their lab angles $\theta_1, \theta_2$ measured from $\mathbf{V}$ obey the formula of part (c), and the opening angle is $\Theta = \theta_1 + \theta_2$. A direct calculation gives
+**Solution (d).** For two massless daughters (for example $\pi^0 \to \gamma\gamma$) one has $E_1^* = E_2^* = Mc^2/2$ and $p^* = Mc/2$, so $\beta_a^* = 1$. Emit the two photons at COM angles $\theta^*$ and $\pi - \theta^*$ relative to $\vec V$; their lab angles $\theta_1, \theta_2$ measured from $\vec V$ obey the formula of part (c), and the opening angle is $\Theta = \theta_1 + \theta_2$. A direct calculation gives
 $$
 \cos\Theta = \frac{\gamma^2 - 2 - \gamma^2\beta^2\cos^2\theta^*}{\gamma^2\left(1 - \beta^2\cos^2\theta^*\right)} .
 $$
@@ -374,15 +374,15 @@ in agreement with the parent's non-relativistic COM momentum. The kinetic energi
 
 **Moving parent.** Expanding the lab formulas of Problem 2 for $V, v_a^* \ll c$,
 $$
-E_a = \gamma\left(E_a^* + \mathbf{V}\cdot\mathbf{p}_a^*\right) \approx m_ac^2 + \tfrac12 m_a\left|\mathbf{V} + \mathbf{v}_a^*\right|^2,
+E_a = \gamma\left(E_a^* + \vec V\cdot\vec p_a^*\right) \approx m_ac^2 + \tfrac12 m_a\left|\vec V + \vec v_a^*\right|^2,
 \qquad
-\mathbf{p}_a \approx m_a\left(\mathbf{V} + \mathbf{v}_a^*\right),
+\vec p_a \approx m_a\left(\vec V + \vec v_a^*\right),
 $$
 so the daughter velocities add Galileanly, and the total lab momentum is
 $$
-\sum_a \mathbf{p}_a \approx (m_1+m_2)\mathbf{V} + m_1\mathbf{v}_1^* + m_2\mathbf{v}_2^* = (m_1+m_2)\mathbf{V},
+\sum_a \vec p_a \approx (m_1+m_2)\vec V + m_1\vec v_1^* + m_2\vec v_2^* = (m_1+m_2)\vec V,
 $$
-because $\mathbf{p}_1^* = -\mathbf{p}_2^*$ implies $m_1\mathbf{v}_1^* + m_2\mathbf{v}_2^* = 0$ at leading order. This is the Newtonian statement that the parent moves with velocity $\mathbf{V}$ while the daughters share the released energy in their relative motion.
+because $\vec p_1^* = -\vec p_2^*$ implies $m_1\vec v_1^* + m_2\vec v_2^* = 0$ at leading order. This is the Newtonian statement that the parent moves with velocity $\vec V$ while the daughters share the released energy in their relative motion.
 
 **Accuracy.** The expansions carry relative errors of order $Q/((m_1+m_2)c^2)$ and $v_a^{*2}/c^2$. Problem 5 makes this concrete: for $\Lambda \to p\pi^-$ ($Q/(m_1+m_2) \approx 3.5\%$) the momentum approximation is good to $4.7\%$ and the energy partition to $8.9\%$; for $K^+ \to \pi^+\pi^0$ ($Q/(m_1+m_2) \approx 0.80$) the momentum approximation already fails at the $15\%$ level. The limit requires both daughters to be non-relativistic, so it fails outright when one daughter is massless.
 
@@ -392,7 +392,7 @@ We have worked the relativistic kinematics of a two-body decay as an application
 
 1. **COM frame ($A$ at rest).** The daughters are back to back with $E_1^* + E_2^* = Mc^2$, individual energies $E_a^* = (M^2 + m_a^2 - m_b^2)c^2/(2M)$, common momentum $p^* = \frac{c}{2M}\sqrt{[M^2-(m_1+m_2)^2][M^2-(m_1-m_2)^2]}$, speeds $v_a^* = p^*c^2/E_a^*$, and released energy $Q = (M-m_1-m_2)c^2 = K_1 + K_2$. The decay is allowed iff $M \ge m_1 + m_2$.
 
-2. **Moving parent.** The parent constructs $\tilde{\Lambda}_{\rm CM} = \sqrt{-i\tilde{P}^{\natural}_A/(Mc)} = \cosh\frac{\Psi}{2} + i\sinh\frac{\Psi}{2}\hat{\mathbf{V}}$, which carries the lab to the COM frame; the inverse rotation, which carries the COM daughters to the lab, is generated by the quaternion conjugate $\tilde{\Lambda}^{\natural}_{\rm CM}$. It gives $E_a = \gamma(E_a^* + \mathbf{V}\cdot\mathbf{p}_a^*)$ and the standard momentum formula, with the lab energy of each daughter confined to $\gamma E_a^*(1 \pm Vv_a^*/c^2)$.
+2. **Moving parent.** The parent constructs $\tilde{\Lambda}_{\rm CM} = \sqrt{-i\tilde{P}^{\natural}_A/(Mc)} = \cosh\frac{\Psi}{2} + i\sinh\frac{\Psi}{2}\hat V$, which carries the lab to the COM frame; the inverse rotation, which carries the COM daughters to the lab, is generated by the quaternion conjugate $\tilde{\Lambda}^{\natural}_{\rm CM}$. It gives $E_a = \gamma(E_a^* + \vec V\cdot\vec p_a^*)$ and the standard momentum formula, with the lab energy of each daughter confined to $\gamma E_a^*(1 \pm Vv_a^*/c^2)$.
 
 3. **Three-body decay.** The pair mass is $M_{ij}^2c^2 = m_i^2c^2 + m_j^2c^2 - 2\langle\tilde{P}_i,\tilde{P}_j\rangle$; equivalently $M_{12}^2c^4 = (Mc^2 - E_3^*)^2 - p_3^{*2}c^2$, with $(m_1+m_2) \le M_{12} \le M - m_3$ and $\sum_{i<j}M_{ij}^2 = M^2 + m_1^2 + m_2^2 + m_3^2$.
 
@@ -414,14 +414,14 @@ We have worked the relativistic kinematics of a two-body decay as an application
 | $c$, $c_0$ | Speed of light in the medium, and in vacuum |
 | $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\langle\tilde{A},\tilde{B}\rangle = \mathrm{Sc}(\tilde{A}\tilde{B}^{\natural})$ | Invariant pairing on $\mathbb{M}_-$ |
-| $\tilde{P} = m\tilde{U} = iE/c\,e_0 + \mathbf{p}$ | Four-momentum, $N(\tilde{P}) = -m^2c^2$ |
-| $\tilde{u} = \tilde{U}/c$ | Unit four-velocity, $N(\tilde{u}) = -1$ |
+| $\tilde{P} = m\tilde{V} = iE/c\,e_0 + \vec p$ | Four-momentum, $N(\tilde{P}) = -m^2c^2$ |
+| $\tilde{u} = \tilde{V}/c$ | Unit four-velocity, $N(\tilde{u}) = -1$ |
 | $\tilde{\Lambda}_{\rm CM} = \sqrt{-i\tilde{P}^{\natural}_A/(Mc)}$ | Boost biquaternion, lab to COM frame |
 | $\tilde{\Lambda}^{\natural}_{\rm CM}$ | Quaternion conjugate, COM to lab |
 | $\Psi$ | COM rapidity, $\tanh\Psi = V/c$ |
 | $M$, $m_1$, $m_2$ | Parent and daughter masses |
 | $Q = (M-m_1-m_2)c^2$ | Released energy |
-| $E_a^*$, $\mathbf{p}_a^*$, $p^*$ | COM energies, momenta, common magnitude |
+| $E_a^*$, $\vec p_a^*$, $p^*$ | COM energies, momenta, common magnitude |
 | $v_a^* = p^*c^2/E_a^*$ | COM daughter speeds |
 | $\beta = V/c$, $\beta_a^* = v_a^*/c$ | Dimensionless speeds |
 | $M_{ij}$ | Invariant mass of pair $(i,j)$ |

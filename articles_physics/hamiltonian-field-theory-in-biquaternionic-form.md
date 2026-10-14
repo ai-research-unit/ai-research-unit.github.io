@@ -6,7 +6,7 @@ The companion article *Lagrangian and Hamiltonian Mechanics in Biquaternionic Fo
 
 Two objects are built here, and they answer two different questions. The first is the **Hamiltonian density** $\mathcal H$, the Legendre transform of the Lagrangian density, which is also the energy density of the companion article on stress–energy; the second is the **field Poisson bracket**, the bracket on functionals of the field and its conjugate momentum, together with the continuity equation that the density satisfies along the motion. Their sum is the classical Hamiltonian field theory in biquaternion form. The article then says where the algebra's contribution stops: for a central field the bracket is the standard one, and the biquaternion content is the packaging of the density and the flux rather than a change of the bracket. The genuinely different Hamiltonian formalism for a field — the covariant one, in which the conjugate object is a *quadruple* of momenta rather than one momentum field — is named at the end and developed in the mathematical corpus.
 
-The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$; $i$ is central with $i^2=-1$; the conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), and ${}^{*}=({}^{\natural})^{\,*}$ (Hermitian); $\mathbb{M}_-$ and $\mathbb{M}_+$ are the anti-Hermitian and Hermitian sectors, the material and informational ones. The material coordinate is $\tilde Q=ict\,e_0+\mathbf{x}$, the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, and the d'Alembertian is $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial_{ict}^2+\Delta$. The central scalar field is $\tilde\Phi(\tilde Q)=\phi(\tilde Q)e_0$ with $\tilde Q\in\mathbb{M}_-$, its Lagrangian density is the one fixed by *Noether's Theorem in Biquaternionic Form* and used by *Canonical Quantization of the Biquaternion Klein–Gordon Field*,
+The conventions are those of the read list. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$; $i$ is central with $i^2=-1$; the conjugations are ${}^{\natural}$ (quaternion), $\bar{\cdot}$ (complex), and ${}^{*}=({}^{\natural})^{\,*}$ (Hermitian); $\mathbb{M}_-$ and $\mathbb{M}_+$ are the anti-Hermitian and Hermitian sectors, the material and informational ones. The material coordinate is $\tilde Q=ict\,e_0+\vec x$, the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, and the d'Alembertian is $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial_{ict}^2+\Delta$. The central scalar field is $\tilde\Phi(\tilde Q)=\phi(\tilde Q)e_0$ with $\tilde Q\in\mathbb{M}_-$, its Lagrangian density is the one fixed by *Noether's Theorem in Biquaternionic Form* and used by *Canonical Quantization of the Biquaternion Klein–Gordon Field*,
 
 $$
 \mathcal{L}=-\mathrm{Sc}\!\left[(\tilde\nabla^{\natural}\tilde\Phi^{*})(\tilde\nabla\tilde\Phi)\right]-\mu^2\,\mathrm{Sc}\!\left[\tilde\Phi^{*}\tilde\Phi\right]
@@ -36,7 +36,7 @@ $$
 \pi^\dagger=\frac{\partial\mathcal{L}}{\partial\dot\phi^{\,*}}=\frac{1}{c^2}\dot\phi .
 $$
 
-The second formula is the conjugate of the first, and both are needed because the field is complex; on the real field $\phi=\phi^*$ the two agree. The transform is **regular**: $\pi$ determines $\dot\phi$ and conversely, since $\dot\phi=c^2\pi^\dagger$, so the phase space of the theory is the full space of pairs $(\phi,\pi)$ at each position and there is no constraint. This is the first structural fact of the transcription, and it is the point at which the scalar field differs from the two fields whose quantization the corpus treats alongside it. The Dirac field, being first order in time, carries a second-class constraint $\pi-i\psi^\dagger\approx0$; the Maxwell field, being a gauge field, carries the two first-class constraints $\pi^0\approx0$ and $\mathrm{div}\,\boldsymbol\pi\approx0$; the scalar field carries neither. A regular Legendre transform is what makes the phase space unconstrained, and an unconstrained phase space is what makes the Hamiltonian transcription a transposition with nothing added.
+The second formula is the conjugate of the first, and both are needed because the field is complex; on the real field $\phi=\phi^*$ the two agree. The transform is **regular**: $\pi$ determines $\dot\phi$ and conversely, since $\dot\phi=c^2\pi^\dagger$, so the phase space of the theory is the full space of pairs $(\phi,\pi)$ at each position and there is no constraint. This is the first structural fact of the transcription, and it is the point at which the scalar field differs from the two fields whose quantization the corpus treats alongside it. The Dirac field, being first order in time, carries a second-class constraint $\pi-i\psi^\dagger\approx0$; the Maxwell field, being a gauge field, carries the two first-class constraints $\pi^0\approx0$ and $\mathrm{div}\,\vec\pi\approx0$; the scalar field carries neither. A regular Legendre transform is what makes the phase space unconstrained, and an unconstrained phase space is what makes the Hamiltonian transcription a transposition with nothing added.
 
 ### The Hamiltonian Density
 
@@ -83,9 +83,9 @@ $$
 so that the canonical brackets are the distributional relations
 
 $$
-\{\phi(\mathbf{x}),\pi(\mathbf{y})\}=\delta^3(\mathbf{x}-\mathbf{y}),
+\{\phi(\vec x),\pi(\vec y)\}=\delta^3(\vec x-\vec y),
 \qquad
-\{\phi(\mathbf{x}),\phi(\mathbf{y})\}=\{\pi(\mathbf{x}),\pi(\mathbf{y})\}=0,
+\{\phi(\vec x),\phi(\vec y)\}=\{\pi(\vec x),\pi(\vec y)\}=0,
 $$
 
 with the conjugates carrying the mirrored signs. The bracket is antisymmetric and satisfies the Jacobi identity, and it does so **locally**: the Jacobi sum of three functionals is an integral of a sum of terms each of which is the Jacobi sum of the corresponding local expression in $(\phi,\pi)$ at a point, which vanishes because the finite-dimensional bracket of the canonical pair vanishes. The field bracket is therefore not a new algebraic structure; it is the same bracket applied at every point and integrated, and the delta functions are the statement that distinct points do not interact through the bracket. The Hamiltonian flow of the total Hamiltonian along the bracket is the field equation: for any functional $A$, $\dot A=\{A,H\}$, which on the canonical pair returns the pair of equations above.
@@ -95,12 +95,12 @@ with the conjugates carrying the mirrored signs. The bracket is antisymmetric an
 The energy density is conserved along the motion by a local conservation law. Differentiating $\mathcal{H}$ in time and using the equation of motion gives
 
 $$
-\partial_t\mathcal{H}+\nabla\cdot\mathbf{S}=0,
+\partial_t\mathcal{H}+\nabla\cdot\vec S=0,
 \qquad
-\mathbf{S}=-(\dot\phi^{\,*}\nabla\phi+\dot\phi\,\nabla\phi^{\,*})=-c^2(\pi\nabla\phi+\pi^\dagger\nabla\phi^{\,*});
+\vec S=-(\dot\phi^{\,*}\nabla\phi+\dot\phi\,\nabla\phi^{\,*})=-c^2(\pi\nabla\phi+\pi^\dagger\nabla\phi^{\,*});
 $$
 
-the mass terms cancel between the time derivative of $\mu^2|\phi|^2$ and the equation of motion, and the surviving terms are a divergence. The vector $\mathbf{S}$ is the **energy flux**. For a single plane wave $\phi=\phi_0e^{i(\mathbf{k}\cdot\mathbf{x}-\omega t)}$ one has $\mathbf{S}=2\omega\mathbf{k}|\phi_0|^2$, directed along the wavevector, so the energy travels the way the wave travels. Integrating the conservation law over a volume and using the vanishing of the flux at infinity makes the four-momentum
+the mass terms cancel between the time derivative of $\mu^2|\phi|^2$ and the equation of motion, and the surviving terms are a divergence. The vector $\vec S$ is the **energy flux**. For a single plane wave $\phi=\phi_0e^{i(\vec k\cdot\vec x-\omega t)}$ one has $\vec S=2\omega\vec k|\phi_0|^2$, directed along the wavevector, so the energy travels the way the wave travels. Integrating the conservation law over a volume and using the vanishing of the flux at infinity makes the four-momentum
 
 $$
 P_\nu=\frac{1}{c}\int T_{0\nu}\,d^3x
@@ -137,15 +137,15 @@ The second term is the mass form, positive and central. The first is the **kinet
 The density and the flux are the scalar and vector parts of one Hermitian biquaternion:
 
 $$
-\tilde W=\mathcal{H}\,e_0+\frac{i}{c}\mathbf{S}\in\mathbb{M}_+,
+\tilde W=\mathcal{H}\,e_0+\frac{i}{c}\vec S\in\mathbb{M}_+,
 \qquad
 \tilde\nabla\tilde W=0
 \ \ \text{on shell}.
 $$
 
-The scalar part of the biquaternion divergence is the continuity equation. This is the *same packaging* that the companion article on stress–energy gives the electromagnetic field, $\tilde W=\frac{1}{2}\tilde F\tilde F^{*}=W\,e_0+\frac{i}{c}\mathbf{S}$, whose scalar part is the Poynting theorem; the scalar field's energy density sits in the scalar direction of the informational sector and its flux in the three vector directions $ie_k$, so the two fields' energy–momentum biquaternions are elements of the same sector in the same arrangement. The one difference is that the electromagnetic $\tilde W$ is bilinear in the field strength whereas the scalar $\tilde W$ is bilinear in the gradient of the field, which is the field-theoretic way of saying that the scalar field carries no spin and its energy comes entirely from the derivatives.
+The scalar part of the biquaternion divergence is the continuity equation. This is the *same packaging* that the companion article on stress–energy gives the electromagnetic field, $\tilde W=\frac{1}{2}\tilde F\tilde F^{*}=W\,e_0+\frac{i}{c}\vec S$, whose scalar part is the Poynting theorem; the scalar field's energy density sits in the scalar direction of the informational sector and its flux in the three vector directions $ie_k$, so the two fields' energy–momentum biquaternions are elements of the same sector in the same arrangement. The one difference is that the electromagnetic $\tilde W$ is bilinear in the field strength whereas the scalar $\tilde W$ is bilinear in the gradient of the field, which is the field-theoretic way of saying that the scalar field carries no spin and its energy comes entirely from the derivatives.
 
-The static limit makes the arrangement visible. For a time-independent field the flux vanishes, $\tilde W=\mathcal{H}e_0$, and the conservation law reduces to $\nabla\cdot\mathbf{S}=0$, which is empty; the energy is conserved trivially. For a running wave it is the other way: $\mathcal{H}$ and $|\mathbf{S}|/c$ are equal and the biquaternion has the null-field pattern of a single travelling wave, exactly as the companion stress–energy article records for the massless scalar and for the electromagnetic wave.
+The static limit makes the arrangement visible. For a time-independent field the flux vanishes, $\tilde W=\mathcal{H}e_0$, and the conservation law reduces to $\nabla\cdot\vec S=0$, which is empty; the energy is conserved trivially. For a running wave it is the other way: $\mathcal{H}$ and $|\vec S|/c$ are equal and the biquaternion has the null-field pattern of a single travelling wave, exactly as the companion stress–energy article records for the massless scalar and for the electromagnetic wave.
 
 ### The Brackets in the Algebra
 
@@ -193,7 +193,7 @@ are the four-fold statement of the Klein–Gordon equation. Nothing is singled o
 What the algebra gives the Hamiltonian field theory is short and definite.
 
 - **The Hamiltonian density is a Hermitian form.** The kinetic, gradient and mass contributions are each the scalar part of a form built from the field and its gradient, and the assembled density is $\mathrm{Sc}[(\tilde\nabla\tilde\Phi)^{*}(\tilde\nabla\tilde\Phi)]+\mu^2\mathrm{Sc}[\tilde\Phi^{*}\tilde\Phi]$. The form is the algebra's own Hermitian pairing, not a transcription of a foreign object, and the $ict$ convention makes its kinetic term positive.
-- **The energy density and the flux are one sector element.** They are the scalar and vector parts of the Hermitian biquaternion $\tilde W=\mathcal{H}e_0+\frac{i}{c}\mathbf{S}\in\mathbb{M}_+$, with $\tilde\nabla\tilde W=0$ on shell — the same element, in the same sector and the same arrangement, that the electromagnetic field's energy–momentum occupies.
+- **The energy density and the flux are one sector element.** They are the scalar and vector parts of the Hermitian biquaternion $\tilde W=\mathcal{H}e_0+\frac{i}{c}\vec S\in\mathbb{M}_+$, with $\tilde\nabla\tilde W=0$ on shell — the same element, in the same sector and the same arrangement, that the electromagnetic field's energy–momentum occupies.
 - **The sector split is the energy–charge split.** The two real scalars in the two sectors' scalar directions contribute to the energy with the same sign and to the charge with opposite signs, and the split of the density is the field version of the phase-space biquaternion's real and imaginary parts.
 
 What the algebra does not give, and what a reader should not expect, is a modification of the bracket. The scalar field is central, its conjugate momentum is central, and the bracket on functionals of the pair is the standard one; the Jacobi identity holds for the same local reason it holds for a finite system, and no algebraic anomaly appears. The interesting brackets — those in which the algebra's non-commutativity and the sector structure are load-bearing — are those of the fields that carry an index, and those lie beyond the scalar case: the Dirac field on the spinor module, whose conjugate momentum is constrained, and the gauge fields, whose conjugate momenta are constrained and which are naturally described in the covariant formalism named above. The scalar field is the case in which the Hamiltonian transcription is complete and uninteresting, which is exactly why it is the case in which the classical canonical structure can be handed to the quantization article untouched.
@@ -204,9 +204,9 @@ The Hamiltonian field theory of the central scalar field is built from three obj
 
 **The conjugate momentum and the density.** The momentum field is $\pi=c^{-2}\dot\phi^{\,*}$ and its conjugate $\pi^\dagger=c^{-2}\dot\phi$; the Legendre transform is regular, so the phase space is unconstrained. The Hamiltonian density is $\mathcal{H}=\pi\dot\phi+\pi^\dagger\dot\phi^{\,*}-\mathcal{L}=c^{-2}|\dot\phi|^2+|\nabla\phi|^2+\mu^2|\phi|^2$, which is not minus the Lagrangian density and is the energy density $T^0{}_0$ of the translation current. In the algebra it is the Hermitian form $\mathcal{H}=\mathrm{Sc}[(\tilde\nabla\tilde\Phi)^{*}(\tilde\nabla\tilde\Phi)]+\mu^2\mathrm{Sc}[\tilde\Phi^{*}\tilde\Phi]$, positive because the $ict$ convention puts the kinetic term in with a plus.
 
-**The equations and the bracket.** Hamilton's field equations, $\dot\phi=\delta H/\delta\pi^\dagger$ and $\dot\pi=-\delta H/\delta\phi^\dagger$, are the Klein–Gordon equation; the field Poisson bracket is the integral over space of the local canonical bracket, with $\{\phi(\mathbf{x}),\pi(\mathbf{y})\}=\delta^3(\mathbf{x}-\mathbf{y})$, and its Jacobi identity is inherited locally from the canonical pair. The density satisfies the continuity equation $\partial_t\mathcal{H}+\nabla\cdot\mathbf{S}=0$ with flux $\mathbf{S}=-(\dot\phi^{\,*}\nabla\phi+\dot\phi\nabla\phi^{\,*})=-c^2(\pi\nabla\phi+\pi^\dagger\nabla\phi^{\,*})$, positive-directed along the wavevector for a plane wave.
+**The equations and the bracket.** Hamilton's field equations, $\dot\phi=\delta H/\delta\pi^\dagger$ and $\dot\pi=-\delta H/\delta\phi^\dagger$, are the Klein–Gordon equation; the field Poisson bracket is the integral over space of the local canonical bracket, with $\{\phi(\vec x),\pi(\vec y)\}=\delta^3(\vec x-\vec y)$, and its Jacobi identity is inherited locally from the canonical pair. The density satisfies the continuity equation $\partial_t\mathcal{H}+\nabla\cdot\vec S=0$ with flux $\vec S=-(\dot\phi^{\,*}\nabla\phi+\dot\phi\nabla\phi^{\,*})=-c^2(\pi\nabla\phi+\pi^\dagger\nabla\phi^{\,*})$, positive-directed along the wavevector for a plane wave.
 
-**The packaging and the sector interpretation.** Density and flux are the scalar and vector parts of the Hermitian biquaternion $\tilde W=\mathcal{H}e_0+\frac{i}{c}\mathbf{S}\in\mathbb{M}_+$, with $\tilde\nabla\tilde W=0$ on shell — the electromagnetic arrangement. Splitting the central field into its two sector scalars, the energy is the sum of the two sectors' kinetic, gradient and mass terms with the same sign, whereas the charge is their difference with opposite signs.
+**The packaging and the sector interpretation.** Density and flux are the scalar and vector parts of the Hermitian biquaternion $\tilde W=\mathcal{H}e_0+\frac{i}{c}\vec S\in\mathbb{M}_+$, with $\tilde\nabla\tilde W=0$ on shell — the electromagnetic arrangement. Splitting the central field into its two sector scalars, the energy is the sum of the two sectors' kinetic, gradient and mass terms with the same sign, whereas the charge is their difference with opposite signs.
 
 The formalism is the instantaneous one. The covariant formalism treats the four derivatives alike, conjugates to the field a quadruple of polymomenta, and has no unique bracket and no unique pairing with a time; it is the multisymplectic geometry of the mathematical corpus, and the instantaneous density is its time component.
 
@@ -214,7 +214,7 @@ The formalism is the instantaneous one. The covariant formalism treats the four 
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde\Phi=\phi\,e_0$ | The central scalar field, $\phi:\mathbb{R}^{1,3}\to\mathbb{C}$, $\tilde Q=ict\,e_0+\mathbf{x}\in\mathbb{M}_-$ |
+| $\tilde\Phi=\phi\,e_0$ | The central scalar field, $\phi:\mathbb{R}^{1,3}\to\mathbb{C}$, $\tilde Q=ict\,e_0+\vec x\in\mathbb{M}_-$ |
 | $\mathcal{L}=\frac{1}{c^2}|\dot\phi|^2-|\nabla\phi|^2-\mu^2|\phi|^2$ | The Lagrangian density, the sign fixed by *Noether's Theorem in Biquaternionic Form* |
 | $\mu=mc/\hbar$ | The inverse reduced Compton wavelength, the mass parameter of the Klein–Gordon equation |
 | $\pi=\partial\mathcal{L}/\partial\dot\phi=c^{-2}\dot\phi^{\,*}$ | The conjugate momentum field, and $\pi^\dagger=c^{-2}\dot\phi$ its conjugate |
@@ -222,10 +222,10 @@ The formalism is the instantaneous one. The covariant formalism treats the four 
 | $\mathcal{H}=\pi\dot\phi+\pi^\dagger\dot\phi^{\,*}-\mathcal{L}$ | The Hamiltonian density; it is $c^{-2}|\dot\phi|^2+|\nabla\phi|^2+\mu^2|\phi|^2$ and equals the energy density $T^0{}_0$ |
 | $H=\int\mathcal{H}\,d^3x$ | The total Hamiltonian |
 | $\mathcal{H}=\mathrm{Sc}[(\tilde\nabla\tilde\Phi)^{*}(\tilde\nabla\tilde\Phi)]+\mu^2\mathrm{Sc}[\tilde\Phi^{*}\tilde\Phi]$ | The Hamiltonian density as the sum of two Hermitian forms |
-| $\{\phi(\mathbf{x}),\pi(\mathbf{y})\}=\delta^3(\mathbf{x}-\mathbf{y})$ | The canonical field bracket, with the mirrored brackets for the conjugates |
+| $\{\phi(\vec x),\pi(\vec y)\}=\delta^3(\vec x-\vec y)$ | The canonical field bracket, with the mirrored brackets for the conjugates |
 | $\{A,B\}$ | The field Poisson bracket on functionals, the integral over space of the local canonical bracket |
-| $\mathbf{S}=-(\dot\phi^{\,*}\nabla\phi+\dot\phi\nabla\phi^{\,*})=-c^2(\pi\nabla\phi+\pi^\dagger\nabla\phi^{\,*})$ | The energy flux; $\partial_t\mathcal{H}+\nabla\cdot\mathbf{S}=0$ |
-| $\tilde W=\mathcal{H}e_0+\frac{i}{c}\mathbf{S}\in\mathbb{M}_+$ | The energy–momentum biquaternion of the field, with $\tilde\nabla\tilde W=0$ on shell |
+| $\vec S=-(\dot\phi^{\,*}\nabla\phi+\dot\phi\nabla\phi^{\,*})=-c^2(\pi\nabla\phi+\pi^\dagger\nabla\phi^{\,*})$ | The energy flux; $\partial_t\mathcal{H}+\nabla\cdot\vec S=0$ |
+| $\tilde W=\mathcal{H}e_0+\frac{i}{c}\vec S\in\mathbb{M}_+$ | The energy–momentum biquaternion of the field, with $\tilde\nabla\tilde W=0$ on shell |
 | $p^\mu=\partial\mathcal{L}/\partial(\partial_\mu\phi)=\partial^\mu\phi$ | The polymomentum of the covariant (De Donder–Weyl) formalism |
 | $H_{DW}=p^\mu\partial_\mu\phi-\mathcal{L}=\frac12p^\mu p_\mu+\frac12\mu^2\phi^2$ | The De Donder–Weyl Hamiltonian of the scalar field |
 | $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |

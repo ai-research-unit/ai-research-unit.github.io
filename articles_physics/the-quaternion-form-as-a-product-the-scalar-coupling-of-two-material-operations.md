@@ -7,7 +7,7 @@ operation that performs it. It is the **symmetrised quaternionic product**,
 
 $$
 \tilde P\bullet\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P\bigr)
-=\bigl[P_0Q_0+(\mathbf P,\mathbf Q)\bigr]e_0 ,
+=\bigl[P_0Q_0+(\vec P,\vec Q)\bigr]e_0 ,
 $$
 
 the symmetric part of the quaternionic product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ for the
@@ -46,23 +46,23 @@ cited and not redone.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis
 $e_0=1,e_1,e_2,e_3$, $e_k^{2}=-e_0$, $e_1e_2=e_3$, and central scalar imaginary $i$ with $i^{2}=-1$. An
-element is $\tilde Q=Q_0e_0+\mathbf Q$ with $Q_\mu\in\mathbb{C}$ and vector part
-$\mathbf Q=Q_1e_1+Q_2e_2+Q_3e_3$; the complex bilinear dot and cross products of vector parts are
-$(\mathbf P,\mathbf Q)=\sum_kP_kQ_k$ and $\mathbf P\times\mathbf Q$. The natural conjugation is
+element is $\tilde Q=Q_0e_0+\vec Q$ with $Q_\mu\in\mathbb{C}$ and vector part
+$\vec Q=Q_1e_1+Q_2e_2+Q_3e_3$; the complex bilinear dot and cross products of vector parts are
+$(\vec P,\vec Q)=\sum_kP_kQ_k$ and $\vec P\times\vec Q$. The natural conjugation is
 ${}^{\natural}$, the Hermitian star ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, and the sectors are
 $\mathbb{M}_\pm=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}$ with the material one $\mathbb{M}_-$. The ordinary
 (plain) product is juxtaposition $\tilde P\tilde Q$, the quaternionic product is
 $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$. The **general plain bilinear form** is
-$B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-(\mathbf P,\mathbf Q)$, the scalar part of the
+$B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-(\vec P,\vec Q)$, the scalar part of the
 plain product (*The General Plain Bilinear Product on the Biquaternion Space*), and the **general quaternionic bilinear
-form** is $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$,
+form** is $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\vec P,\vec Q)$,
 the scalar part of the quaternionic product (*Conventions in the Biquaternion Universe*). The two differ
 by the sign of the vector part alone. The symmetrisation symbol $\bullet$ is **row-relative** in this
 chapter — it is the symmetrisation of whichever product is in play, so the plain row writes
 $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ and this block writes
 $\tilde P\bullet\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$, a different
 operation — and this block's antisymmetrisation is written $\wedge_{\natural}$, where the plain row writes
-$\wedge$ for the cross product $\mathbf P\times\mathbf Q$. The remarkable subspaces are the centre
+$\wedge$ for the cross product $\vec P\times\vec Q$. The remarkable subspaces are the centre
 $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace
 $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian sector
 $\mathbb{M}_+$ and the material sector $\mathbb{M}_-$.
@@ -80,19 +80,19 @@ A bilinear product over a field in which $2$ is invertible therefore splits cano
 and an antisymmetric part (*The Symmetric and Antisymmetric Parts of an Algebra Product*), and the two
 parts of the quaternionic product are the two operations of the quaternionic row.
 
-**Proposition (the explicit form).** For all $\tilde P=P_0e_0+\mathbf P$ and $\tilde Q=Q_0e_0+\mathbf Q$,
+**Proposition (the explicit form).** For all $\tilde P=P_0e_0+\vec P$ and $\tilde Q=Q_0e_0+\vec Q$,
 
 $$
 \tilde P\bullet\tilde Q
 =\tfrac12\bigl(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P\bigr)
-=\bigl[P_0Q_0+(\mathbf P,\mathbf Q)\bigr]e_0 .
+=\bigl[P_0Q_0+(\vec P,\vec Q)\bigr]e_0 .
 $$
 
 In particular the value is central, the operation is $\mathbb{C}$-bilinear and commutative, and its
 image is the centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$.
 
 *Proof.* The parent value is
-$\tilde P^{\natural}\tilde Q=[P_0Q_0+(\mathbf P,\mathbf Q)]e_0+P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$
+$\tilde P^{\natural}\tilde Q=[P_0Q_0+(\vec P,\vec Q)]e_0+P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$
 (*The 12 Products of the Biquaternion Complex Space*). The reverse value is obtained
 by exchanging the arguments; its scalar part is symmetric in the pair and its vector part is
 antisymmetric, with the cross product reversing and the mixed terms exchanging with a sign. Half the sum
@@ -102,9 +102,9 @@ multiple of $e_0$ puts the image in the centre.
 
 **Remark (what the exchange leaves and what it removes).** The scalar part of the parent product carries
 the two terms the exchange leaves fixed — the square term $P_0Q_0$ and the scalar product
-$(\mathbf P,\mathbf Q)$ of the two vector parts — and the symmetrised part is exactly that half. The
-vector part of the parent, the mixed terms $P_0\mathbf Q-Q_0\mathbf P$ and the cross term
-$-\mathbf P\times\mathbf Q$, is antisymmetric and is removed; it is the operation of the companion band.
+$(\vec P,\vec Q)$ of the two vector parts — and the symmetrised part is exactly that half. The
+vector part of the parent, the mixed terms $P_0\vec Q-Q_0\vec P$ and the cross term
+$-\vec P\times\vec Q$, is antisymmetric and is removed; it is the operation of the companion band.
 The coupling therefore **removes the order** of the two operations: it is the value of the product once
 the order is forgotten, and nothing of the order survives.
 
@@ -122,11 +122,11 @@ and it is the value of the general quaternionic bilinear form placed on the cent
 
 $$
 \tilde P\bullet\tilde Q=N(\tilde P,\tilde Q)\,e_0 , \qquad
-N(\tilde P,\tilde Q)=\mathrm{Sc}\bigl(\tilde P^{\natural}\tilde Q\bigr)=P_0Q_0+(\mathbf P,\mathbf Q) .
+N(\tilde P,\tilde Q)=\mathrm{Sc}\bigl(\tilde P^{\natural}\tilde Q\bigr)=P_0Q_0+(\vec P,\vec Q) .
 $$
 
 *Proof.* The explicit form is the definition of the coefficient, and the coefficient is the scalar part
-of the parent product; commutativity is the symmetry of $P_0Q_0+(\mathbf P,\mathbf Q)$; the image statement
+of the parent product; commutativity is the symmetry of $P_0Q_0+(\vec P,\vec Q)$; the image statement
 is the centrality of the value.
 
 The operation is therefore a **bilinear form read as a product**: it takes two operations and returns the
@@ -169,12 +169,12 @@ $$
 \tilde Q\bullet\tilde Q=N(\tilde Q)\,e_0 , \qquad N(\tilde Q)=Q_0^{2}+Q_1^{2}+Q_2^{2}+Q_3^{2} .
 $$
 
-On the material coordinate $\tilde Q=ict\,e_0+\mathbf x$ the value is $-c^{2}t^{2}+\mathbf x^{2}$, the
+On the material coordinate $\tilde Q=ict\,e_0+\vec x$ the value is $-c^{2}t^{2}+\vec x^{2}$, the
 Minkowski interval.
 
-*Proof.* Put $\tilde P=\tilde Q$ in the explicit form: the coefficient is $Q_0^{2}+(\mathbf Q,\mathbf Q)$,
-which is $N(\tilde Q)$. The material interpretation is the substitution $Q_0=ict$ and $\mathbf Q=\mathbf x$ with
-$t$ and $\mathbf x$ real.
+*Proof.* Put $\tilde P=\tilde Q$ in the explicit form: the coefficient is $Q_0^{2}+(\vec Q,\vec Q)$,
+which is $N(\tilde Q)$. The material interpretation is the substitution $Q_0=ict$ and $\vec Q=\vec x$ with
+$t$ and $\vec x$ real.
 
 This is the article's sharpest point, and it must be stated with its caution. **The operation whose values
 are central is the one that carries the metric.** The algebraic norm of the scalar coupling is the interval, so
@@ -244,7 +244,7 @@ The operation has a **plain** cousin, the symmetric part of the general plain bi
 
 $$
 \tfrac12\bigl(\tilde P\tilde Q+\tilde Q\tilde P\bigr)
-=\bigl[P_0Q_0-(\mathbf P,\mathbf Q)\bigr]e_0+P_0\mathbf Q+Q_0\mathbf P ,
+=\bigl[P_0Q_0-(\vec P,\vec Q)\bigr]e_0+P_0\vec Q+Q_0\vec P ,
 $$
 
 the operation of the band `Focus on the Symmetric Plain Algebra (SPA) — Commutativity`. The two are the
@@ -255,9 +255,9 @@ Jordan product.
 | | symmetrised quaternionic (this band) | symmetrised plain (SPA) |
 |---|---|---|
 | definition | $\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$ | $\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ |
-| value | $[P_0Q_0+(\mathbf P,\mathbf Q)]e_0$ | $[P_0Q_0-(\mathbf P,\mathbf Q)]e_0+P_0\mathbf Q+Q_0\mathbf P$ |
+| value | $[P_0Q_0+(\vec P,\vec Q)]e_0$ | $[P_0Q_0-(\vec P,\vec Q)]e_0+P_0\vec Q+Q_0\vec P$ |
 | image | the centre $\mathbb{C}_{\mathbb{B}}$ | not central, vector part present |
-| coefficient | $N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$ | $B(\tilde P,\tilde Q)=P_0Q_0-(\mathbf P,\mathbf Q)$ |
+| coefficient | $N(\tilde P,\tilde Q)=P_0Q_0+(\vec P,\vec Q)$ | $B(\tilde P,\tilde Q)=P_0Q_0-(\vec P,\vec Q)$ |
 | unit | none | $e_0$, on both sides |
 | Jordan identity | fails | holds |
 
@@ -357,9 +357,9 @@ number.
 ## The Ledger
 
 **Proved.** The explicit form
-$\tilde P\bullet\tilde Q=[P_0Q_0+(\mathbf P,\mathbf Q)]e_0$ and the centrality of the value; the
+$\tilde P\bullet\tilde Q=[P_0Q_0+(\vec P,\vec Q)]e_0$ and the centrality of the value; the
 commutativity; the image equal to the centre $\mathbb{C}_{\mathbb{B}}$; the algebraic norm,
-$\tilde Q\bullet\tilde Q=N(\tilde Q)e_0$, with the material interpretation $-c^{2}t^{2}+\mathbf x^{2}$; the
+$\tilde Q\bullet\tilde Q=N(\tilde Q)e_0$, with the material interpretation $-c^{2}t^{2}+\vec x^{2}$; the
 reconstruction $\tilde P^{\natural}\tilde Q=\tilde P\bullet\tilde Q+\tilde P\wedge_{\natural}\tilde Q$;
 the sixteen basis products, algebraic norm with values $\delta_{\mu\nu}e_0$; the absence of a unit, with $e_0$
 acting as the projection onto the scalar part; the coefficient $N$ and not $B$, the two differing by the
@@ -393,7 +393,7 @@ The central-valued form reads as a coupling and not as a state: its values are n
 The symmetrised quaternionic product
 $\tilde P\bullet\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$ is the
 symmetric part of the quaternionic product for the exchange of its two arguments, and its value is
-central, $\tilde P\bullet\tilde Q=[P_0Q_0+(\mathbf P,\mathbf Q)]e_0=N(\tilde P,\tilde Q)e_0$: it is the
+central, $\tilde P\bullet\tilde Q=[P_0Q_0+(\vec P,\vec Q)]e_0=N(\tilde P,\tilde Q)e_0$: it is the
 **general quaternionic bilinear form read as a product**. The operation is commutative, its image is the
 centre, it has **no unit** ($e_0\bullet\tilde Q=Q_0e_0$ projects onto the scalar part), and it is **not a
 Jordan product**, unlike the symmetrised plain product of the band SPA. Its algebraic norm is the **interval**,
@@ -420,16 +420,16 @@ the comparison of the four rows is *The Four General Products and Their Physical
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | the biquaternion algebra |
 | $e_0,e_1,e_2,e_3$; $i$ | the basis, $e_k^{2}=-e_0$; the central scalar imaginary |
-| $\tilde Q=Q_0e_0+\mathbf Q$ | an element and its scalar–vector split |
+| $\tilde Q=Q_0e_0+\vec Q$ | an element and its scalar–vector split |
 | ${}^{\natural}$, ${}^{*}$ | the natural and the Hermitian conjugations |
 | $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ | the general quaternionic product (GQA) |
 | $\tilde P\bullet\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$ | the symmetrised quaternionic product (SQA, this band) |
 | $\tilde P\wedge_{\natural}\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$ | the antisymmetrised quaternionic product (AQA, the companion band) |
 | $\tilde P^{\natural}\tilde Q=\tilde P\bullet\tilde Q+\tilde P\wedge_{\natural}\tilde Q$ | the reconstruction of the parent |
-| $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$ | the general quaternionic bilinear form, the coefficient of the coupling |
-| $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-(\mathbf P,\mathbf Q)$ | the general plain bilinear form, the coefficient of the plain row |
+| $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\vec P,\vec Q)$ | the general quaternionic bilinear form, the coefficient of the coupling |
+| $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-(\vec P,\vec Q)$ | the general plain bilinear form, the coefficient of the plain row |
 | $N(\tilde Q)=Q_0^{2}+Q_1^{2}+Q_2^{2}+Q_3^{2}$ | the biquaternion norm, the algebraic norm of the coupling |
-| $ict\,e_0+\mathbf x$ | the material coordinate; $\tilde Q\bullet\tilde Q=-c^{2}t^{2}+\mathbf x^{2}$ |
+| $ict\,e_0+\vec x$ | the material coordinate; $\tilde Q\bullet\tilde Q=-c^{2}t^{2}+\vec x^{2}$ |
 | $\mathbb{C}_{\mathbb{B}},\mathrm{Vect}(\mathbb{B}),\mathbb{H}_{\mathbb{B}},i\mathbb{H}_{\mathbb{B}},\mathbb{M}_+,\mathbb{M}_-$ | the remarkable subspaces |
 
 ## Further Reading

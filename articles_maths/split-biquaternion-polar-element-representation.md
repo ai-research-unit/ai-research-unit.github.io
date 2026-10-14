@@ -17,7 +17,23 @@ $$
 
 Three features distinguish the case from the three previous algebras of the series, and they are the subject of the article. First, the square root that defines the modulus needs **no branch choice**: the split complex norm has non-negative real components, each of which has a unique non-negative square root, so the modulus is canonical in a way that the biquaternion modulus, with its branch of $\sqrt{N(\tilde{Q})}$, is not. Second, there is **no boost slot**: the split biquaternion algebra is the direct sum of two copies of the quaternion algebra, its unit sphere is compact and six-dimensional, and its group of units is the direct product of that compact sphere and a central non-compact group, so every direction of non-compactness lies in the centre; the non-compact factors are exactly the scale and the hyperbolic phase. Third, the **degeneration occurs on the zero divisors and not on the null cone of the split-biquaternion norm**: the split-biquaternion norm of a split biquaternion vanishes only at the origin, and the elements on which the rotor is not determined are those with a vanishing idempotent component.
 
-The article is the fourth and last of the series on the polar representations of the four real normed and semi-normed quaternion algebras, and it is organised in parallel with the reference article of the series, *The Polar Element Representation of Biquaternions*: the centre and the phase, the two halves, the split-biquaternion norm, the unit group and its two counts, the counting of the four slots, the order of the factors, the modulus, the second factor, the theorem, the algorithm, the meanings of the factors and the degenerate cases run in that order there and here, with four factors in the biquaternion case and two in this one. Two further sections treat what is particular to the present algebra: the behaviour of the decomposition under the conjugations, and the exponential form, which stands in the place of the biquaternion relation to the two partial forms, since this algebra has only one polar decomposition to relate. Conventions are those of *Split-Biquaternion Algebra*: the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, the split complex unit is $j$ with $j^2 = +1$, central, the idempotents are $\tilde\Pi_{1,2} = \tfrac12(1\pm j)$, an element is $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ with $Q_\mu = q_\mu + jq'_\mu \in \mathbb{D}$, and the split-biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. The isomorphism $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ and the idempotent decomposition are used throughout. No physics is invoked.
+The article is the fourth and last of the series on the polar representations of the four real normed and semi-normed quaternion algebras, and it is organised in parallel with the reference article of the series, *The Polar Element Representation of Biquaternions*: the centre and the phase, the two halves, the split-biquaternion norm, the unit group and its two counts, the counting of the four slots, the order of the factors, the modulus, the second factor, the theorem, the algorithm, the meanings of the factors and the degenerate cases run in that order there and here, with four factors in the biquaternion case and two in this one. Two further sections treat what is particular to the present algebra: the behaviour of the decomposition under the conjugations, and the exponential form, which stands in the place of the biquaternion relation to the two partial forms, since this algebra has only one polar decomposition to relate. Conventions are those of *Split-Biquaternion Algebra*: the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, the split complex unit is $j$ with $j^2 = +1$, central, the idempotents are $\tilde\Pi_{1,2} = \tfrac12(1\pm j)$, an element is $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ with $Q_\mu = q_\mu + jq'_\mu \in \mathbb{D}$, and the split-biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$. The unit real quaternions are $Sp(1) = \{\tilde q \in \mathbb{H} : \tilde q\tilde q^{\natural} = 1\}$, so the rotor is a pair of them, $\tilde{U} = u_+\tilde\Pi_1+u_-\tilde\Pi_2$ with $u_\pm \in Sp(1)$, in the unit sphere $S^3\times S^3 = Sp(1)\times Sp(1)$. The isomorphism $\mathbb{H}_{\mathbb{D}}\cong\mathbb{H}\oplus\mathbb{H}$ and the idempotent decomposition are used throughout. No physics is invoked.
+
+## The Word as Exponentials
+
+The word $\tilde Q = \lambda\,e^{j\tau}\,\tilde U$ is a product of three exponentials, the scale, the central hyperbolic phase and the rotor:
+
+$$
+\tilde Q = \exp(\ln\lambda)\,\exp(j\tau)\,\exp\bigl(\theta_+\mu_+\tilde\Pi_1 + \theta_-\mu_-\tilde\Pi_2\bigr) , \qquad \lambda = \sqrt{\rho_+\rho_-} > 0 , \qquad \tau = \tfrac{1}{2}\ln\frac{\rho_+}{\rho_-} ,
+$$
+
+with $\rho_\pm = \lvert A\pm A'\rvert$ the idempotent components of the split complex modulus, and $\theta_\pm$ the two angles about the unit pure real quaternions $\mu_\pm$. The exponent of the scale is the real number $\ln\lambda$, whose root is $e_0$ of square $+e_0$, the hyperbolic row of the trichotomy; the exponent of the phase is $j\tau$, whose root $j$ has square $+e_0$, again the hyperbolic row; the exponent of the rotor is $\theta_+\mu_+\tilde\Pi_1+\theta_-\mu_-\tilde\Pi_2$, whose root $\mu_+\tilde\Pi_1+\mu_-\tilde\Pi_2$ has square $-e_0$, the trigonometric row. The three factors commute pairwise — the scale and the phase are central, and the two halves of the rotor act in the two idempotents — so the word is order-free, unlike the biquaternion word, and the three exponentials **amalgamate into one**:
+
+$$
+\tilde Q = \exp\bigl(\ln\lambda + j\tau + \theta_+\mu_+\tilde\Pi_1 + \theta_-\mu_-\tilde\Pi_2\bigr) .
+$$
+
+The two non-central pieces $\theta_+\mu_+\tilde\Pi_1$ and $\theta_-\mu_-\tilde\Pi_2$ have vanishing bracket, since each is absorbed by its own idempotent, and there is no boost exponent here to obstruct the sum; this is the commutativity that the biquaternion word lacks. The writing holds on the elements with $\lambda\neq0$; at $\lambda = 0$ the element is a zero divisor and the exponent $\ln\lambda$ does not exist, although the polar representation still holds there with a degenerate rotor, as the sections on the domain and on the zero divisors record.
 
 ## Why Two Factors
 
@@ -233,6 +249,8 @@ $$
 $$
 
 the product being taken through the idempotents. The set is compact and six-dimensional, and it is the double cover of the rotation group $SO(4)$ of the four-dimensional space $\mathbb{H}$ under the two-sided action $\tilde{Q}\mapsto u_+\tilde{Q}u_-^{-1}$ of the companion article on rotations.
+
+The rotor is therefore a **unit element**, an element of norm one for the norm in view (*Conventions in Mathematics*, §*The Unitary Convention*): the norm in view is the split-biquaternion norm $N$, and the rotor is the level set $N(\tilde{U})=e_0$. It is not every invertible element: the **group of units** $\mathbb{H}_{\mathbb{D}}^\times$ is the wider set of invertible elements, those with both idempotent components nonzero, and the two senses of the word are kept apart throughout.
 
 ### The Rotor as an Exponential
 
@@ -519,19 +537,19 @@ $$
 \exp\tilde{Q} = \left(\exp\tilde{Q}_+\right)\tilde\Pi_1 + \left(\exp\tilde{Q}_-\right)\tilde\Pi_2 , \qquad \exp\tilde{Q}_\pm = \exp\left(A\pm A'\right) ,
 $$
 
-each component being an ordinary quaternion exponential. Writing $\tilde{Q} = Q_0e_0 + \mathbf{Q}$ with the split complex scalar part $Q_0$ and the vector part $\mathbf{Q} = \sum_kQ_ke_k$, the scalar part is central and the vector part satisfies
+each component being an ordinary quaternion exponential. Writing $\tilde{Q} = Q_0e_0 + \vec Q$ with the split complex scalar part $Q_0$ and the vector part $\vec Q = \sum_kQ_ke_k$, the scalar part is central and the vector part satisfies
 
 $$
-\mathbf{Q}^2 = -\sum_kQ_k^2 , \qquad \left(Q_0e_0\right)\mathbf{Q} = \mathbf{Q}\left(Q_0e_0\right) ,
+\vec Q^2 = -\sum_kQ_k^2 , \qquad \left(Q_0e_0\right)\vec Q = \vec Q\left(Q_0e_0\right) ,
 $$
 
 so the power series splits and gives
 
 $$
-\exp\tilde{Q} = e^{Q_0}\left(\cos\theta\,e_0 + \frac{\sin\theta}{\theta}\,\mathbf{Q}\right) , \qquad \theta^2 = -\mathbf{Q}^2 = \sum_kQ_k^2 ,
+\exp\tilde{Q} = e^{Q_0}\left(\cos\theta\,e_0 + \frac{\sin\theta}{\theta}\,\vec Q\right) , \qquad \theta^2 = -\vec Q^2 = \sum_kQ_k^2 ,
 $$
 
-with the split complex cosine, sine and square root taken componentwise in the central element $\theta$. This is the form of the de Moivre identity in this algebra: it is the analogue of the quaternion formula $\exp(\tilde q) = e^{q_0}(\cos|\mathbf{q}| + \mathbf{q}\sin|\mathbf{q}|/|\mathbf{q}|)$ and of the biquaternion formula with its complex angle, its angle here being split complex.
+with the split complex cosine, sine and square root taken componentwise in the central element $\theta$. This is the form of the de Moivre identity in this algebra: it is the analogue of the quaternion formula $\exp(\tilde q) = e^{q_0}(\cos|\vec q| + \vec q\sin|\vec q|/|\vec q|)$ and of the biquaternion formula with its complex angle, its angle here being split complex.
 
 ### The Vector Part
 
@@ -541,7 +559,7 @@ $$
 \theta^2 = \sum_kQ_k^2 = \sum_k\left(q_k^2+q'^2_k\right) + 2j\sum_kq_kq'_k , \qquad \theta^2_\pm = \sum_k\left(q_k\pm q'_k\right)^2 \ge 0 ,
 $$
 
-so $\theta$ is a split complex number with non-negative components and the exponential of a vector part is trigonometric in both halves, $\exp(\mathbf{Q})_\pm = \cos\theta_\pm + (\sin\theta_\pm/\theta_\pm)\mathbf{Q}_\pm$. There is therefore **no hyperbolic case for the vector part**. A classification of the exponential of a vector part by the sign of $\theta^2$ is not available in this algebra: the real part of $\theta^2$ is $\sum_k(q_k^2+q'^2_k)$, which is non-negative for every vector part and vanishes only at $\mathbf{Q} = 0$, and a split complex number has no sign to classify against. What distinguishes the two characters of $\theta^2$ is instead the equality of its two components:
+so $\theta$ is a split complex number with non-negative components and the exponential of a vector part is trigonometric in both halves, $\exp(\vec Q)_\pm = \cos\theta_\pm + (\sin\theta_\pm/\theta_\pm)\vec Q_\pm$. There is therefore **no hyperbolic case for the vector part**. A classification of the exponential of a vector part by the sign of $\theta^2$ is not available in this algebra: the real part of $\theta^2$ is $\sum_k(q_k^2+q'^2_k)$, which is non-negative for every vector part and vanishes only at $\vec Q = 0$, and a split complex number has no sign to classify against. What distinguishes the two characters of $\theta^2$ is instead the equality of its two components:
 
 $$
 \theta^2\in\mathbb{R} \quad\Longleftrightarrow\quad \sum_kq_kq'_k = 0 \quad\Longleftrightarrow\quad \theta^2_+ = \theta^2_- ,
@@ -556,14 +574,14 @@ $$
 and it is this factor that carries the boost-like direction. A worked instance of the split case, which also shows how little the splitness of $\theta^2$ costs, is
 
 $$
-\mathbf{Q} = e_1 + je_1 = 2e_1\tilde\Pi_1 , \qquad \theta^2 = 4\tilde\Pi_1 + 0\cdot \tilde\Pi_2 , \qquad \theta = 2\tilde\Pi_1 , \qquad \exp(\mathbf{Q}) = \exp(2e_1)\tilde\Pi_1 + \tilde\Pi_2 ,
+\vec Q = e_1 + je_1 = 2e_1\tilde\Pi_1 , \qquad \theta^2 = 4\tilde\Pi_1 + 0\cdot \tilde\Pi_2 , \qquad \theta = 2\tilde\Pi_1 , \qquad \exp(\vec Q) = \exp(2e_1)\tilde\Pi_1 + \tilde\Pi_2 ,
 $$
 
-with $\exp(2e_1) = \cos2 + \sin2\,e_1 = -0.416146837 + 0.909297427\,e_1$. The vector part $\mathbf{Q}$ here is a zero divisor, and its exponential is not: the exponential misses the zero divisors, which is the subject of the last subsection below.
+with $\exp(2e_1) = \cos2 + \sin2\,e_1 = -0.416146837 + 0.909297427\,e_1$. The vector part $\vec Q$ here is a zero divisor, and its exponential is not: the exponential misses the zero divisors, which is the subject of the last subsection below.
 
 ### The Nilpotent Case
 
-It is worth recording the case that a reader may expect and that does not occur. For a vector part, $\mathbf{Q}^2 = 0$ forces $\mathbf{Q} = 0$, because the components of $\theta^2$ are sums of squares and vanish only when every $Q_k$ does; consequently the identity $\exp(\mathbf{Q}) = e_0 + \mathbf{Q}$ holds only at $\mathbf{Q} = 0$. More generally the algebra has no non-zero nilpotent element of any kind, because it is the direct sum $\mathbb{H}\oplus\mathbb{H}$ of two division algebras and a nilpotent of the sum has a nilpotent component in each summand; in the recomputation the smallest ratio $|\tilde{Q}^2|/|\tilde{Q}|$ over four thousand random non-zero elements was $0.754$. The zero divisors are not nilpotent: the witness of the previous subsection has square $-4\tilde\Pi_1$, and the zero divisor witness $\tfrac12(1+e_1)(1+j)$ has square $e_1(1+j)$, both of them non-zero.
+It is worth recording the case that a reader may expect and that does not occur. For a vector part, $\vec Q^2 = 0$ forces $\vec Q = 0$, because the components of $\theta^2$ are sums of squares and vanish only when every $Q_k$ does; consequently the identity $\exp(\vec Q) = e_0 + \vec Q$ holds only at $\vec Q = 0$. More generally the algebra has no non-zero nilpotent element of any kind, because it is the direct sum $\mathbb{H}\oplus\mathbb{H}$ of two division algebras and a nilpotent of the sum has a nilpotent component in each summand; in the recomputation the smallest ratio $|\tilde{Q}^2|/|\tilde{Q}|$ over four thousand random non-zero elements was $0.754$. The zero divisors are not nilpotent: the witness of the previous subsection has square $-4\tilde\Pi_1$, and the zero divisor witness $\tfrac12(1+e_1)(1+j)$ has square $e_1(1+j)$, both of them non-zero.
 
 ### The Logarithm
 
@@ -632,7 +650,7 @@ $$
 
 with $u_\pm\in Sp(1)$, in which the modulus $\rho$ is the componentwise non-negative square root of the split-biquaternion norm and satisfies $\rho^2 = N(\tilde{Q})$, and the rotor lies in the unit sphere $S^3\times S^3$, of dimension six. The modulus is unique and needs no branch; the rotor is unique exactly when $\tilde{Q}$ is invertible, and on the zero divisors its vanishing-component factor is free. When both components of the modulus are positive, the modulus factors as $\rho = \lambda e^{j\tau}$ with the scale $\lambda = \sqrt{\rho_+\rho_-}$ and the hyperbolic phase $\tau = \tfrac12\ln(\rho_+/\rho_-)$; on the zero divisors $\lambda = 0$ and $\tau$ diverges, which is the sense in which a zero divisor has no scale. Among the four algebras of the series, $\mathbb{H}_{\mathbb{D}}$ is the one whose polar representation has no boost, whose phase factor is hyperbolic rather than elliptic, whose rotor is the largest, and whose domain is the whole algebra.
 
-The two factors commute, so the order of the product is not part of the statement: $\rho\tilde{U} = \tilde{U}\rho$, and the two halves of the rotor commute with each other and with the modulus. The four conjugations act on the decomposition by exchanging the halves of the modulus and of the rotor or by reversing the two rotor angles; of the four, three pass through the exponential, and the flat conjugation $\flat = -{}^{*}$ does not, satisfying $(\exp\tilde{Q})^{\flat} = -\exp(\tilde{Q}^{*})$ in place of $\exp(\tilde{Q}^{\flat})$. The representation also has an exponential form. The exponential of an element with split complex scalar part $Q_0$ and vector part $\mathbf{Q}$ is $\exp\tilde{Q} = e^{Q_0}(\cos\theta\,e_0 + (\sin\theta/\theta)\mathbf{Q})$ with $\theta^2 = \sum_kQ_k^2$, a split complex number whose two components are non-negative, so that no hyperbolic case occurs for the vector part; and every invertible element is the exponential of a single element, $\tilde{Q} = \exp(\ln\lambda + j\tau + \theta_+\mu_+\tilde\Pi_1 + \theta_-\mu_-\tilde\Pi_2)$, which is the polar representation written as one exponential. The exponential is surjective exactly onto the invertible elements and misses the zero divisors.
+The two factors commute, so the order of the product is not part of the statement: $\rho\tilde{U} = \tilde{U}\rho$, and the two halves of the rotor commute with each other and with the modulus. The four conjugations act on the decomposition by exchanging the halves of the modulus and of the rotor or by reversing the two rotor angles; of the four, three pass through the exponential, and the flat conjugation $\flat = -{}^{*}$ does not, satisfying $(\exp\tilde{Q})^{\flat} = -\exp(\tilde{Q}^{*})$ in place of $\exp(\tilde{Q}^{\flat})$. The representation also has an exponential form. The exponential of an element with split complex scalar part $Q_0$ and vector part $\vec Q$ is $\exp\tilde{Q} = e^{Q_0}(\cos\theta\,e_0 + (\sin\theta/\theta)\vec Q)$ with $\theta^2 = \sum_kQ_k^2$, a split complex number whose two components are non-negative, so that no hyperbolic case occurs for the vector part; and every invertible element is the exponential of a single element, $\tilde{Q} = \exp(\ln\lambda + j\tau + \theta_+\mu_+\tilde\Pi_1 + \theta_-\mu_-\tilde\Pi_2)$, which is the polar representation written as one exponential. The exponential is surjective exactly onto the invertible elements and misses the zero divisors.
 
 ## Summary of Notation
 
@@ -648,11 +666,11 @@ The two factors commute, so the order of the product is not part of the statemen
 | $\rho = \rho_+\tilde\Pi_1+\rho_-\tilde\Pi_2$ | the modulus, the componentwise non-negative square root |
 | $\lambda = \sqrt{\rho_+\rho_-}$ | the scale, a positive real except on the zero divisors |
 | $\tau = \tfrac12\ln(\rho_+/\rho_-)$ | the hyperbolic phase angle |
-| $\tilde{U} = u_+\tilde\Pi_1+u_-\tilde\Pi_2$ | the rotor, an element of the unit sphere |
-| $S^3\times S^3 = Sp(1)\times Sp(1)$ | the unit sphere and rotor group, dimension six, compact |
+| $\tilde{U} = u_+\tilde\Pi_1+u_-\tilde\Pi_2$ | the rotor, $u_\pm\in Sp(1)$, an element of the unit sphere |
+| $S^3\times S^3 = Sp(1)\times Sp(1)$ | the unit sphere and rotor group, the pairs of unit real quaternions, dimension six, compact |
 | $\theta_\pm\in[0,\pi]$, $\mu_\pm$ | the angle and unit axis of the two halves of the rotor, $u_\pm = \cos\theta_\pm + \mu_\pm\sin\theta_\pm$ |
 | $\exp$, $\log$ | the exponential and the logarithm, componentwise on the two halves, $\log$ defined exactly on the invertible elements |
-| $Q_0$, $\mathbf{Q}$ | the split complex scalar part and the vector part of an element |
+| $Q_0$, $\vec Q$ | the split complex scalar part and the vector part of an element |
 | $\theta$ | the split complex angle of the exponential form, $\theta^2 = \sum_kQ_k^2$, with non-negative components |
 | $\|\tilde{Q}\|_E$ | the Euclidean norm, $\sqrt{\sum_\mu(q_\mu^2+q'^2_\mu)}$, not multiplicative |
 

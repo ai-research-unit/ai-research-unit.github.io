@@ -68,10 +68,10 @@ $$
 \hat{S}_k = \frac{\hbar}{2}\sigma_k, \qquad k = 1, 2, 3.
 $$
 
-The state space is the spinor space $\mathbb{C}^2$, and the spin states are the eigenstates of $\mathbf{S}\cdot\hat{\mathbf{n}}$ for a unit vector $\hat{\mathbf{n}}$. The spin-up and spin-down projectors along the direction $\hat{\mathbf{n}}$ are
+The state space is the spinor space $\mathbb{C}^2$, and the spin states are the eigenstates of $\vec S\cdot\hat n$ for a unit vector $\hat n$. The spin-up and spin-down projectors along the direction $\hat n$ are
 
 $$
-\tilde\Pi_{1,2}^{\hat{\mathbf{n}}} = \frac{1}{2}\left(I_2 \pm \hat{\mathbf{n}}\cdot\boldsymbol{\sigma}\right).
+\tilde\Pi_{1,2}^{\hat n} = \frac{1}{2}\left(I_2 \pm \hat n\cdot\boldsymbol{\sigma}\right).
 $$
 
 These are Hermitian, idempotent, and of trace 1. They are the **pure-state projectors** of the spin system.
@@ -176,10 +176,10 @@ where $\mu = \mu_1 e_1 + \mu_2 e_2 + \mu_3 e_3$ is a unit pure real quaternion, 
 **Identification with spin projectors.** Under the isomorphism, $\tilde\Pi_{1,2}$ maps to
 
 $$
-\tilde\Pi_{1,2} \mapsto \frac{1}{2}\left(I_2 \pm \mu_1\sigma_1 \pm \mu_2\sigma_2 \pm \mu_3\sigma_3\right) = \frac{1}{2}\left(I_2 \pm \boldsymbol{\mu}\cdot\boldsymbol{\sigma}\right).
+\tilde\Pi_{1,2} \mapsto \frac{1}{2}\left(I_2 \pm \mu_1\sigma_1 \pm \mu_2\sigma_2 \pm \mu_3\sigma_3\right) = \frac{1}{2}\left(I_2 \pm \vec\mu\cdot\boldsymbol{\sigma}\right).
 $$
 
-This is exactly the spin projector $|\pm\hat{\boldsymbol{\mu}}\rangle\langle\pm\hat{\boldsymbol{\mu}}|$ onto the spin-up or spin-down state along the direction $\hat{\boldsymbol{\mu}}$.
+This is exactly the spin projector $|\pm\hat\mu\rangle\langle\pm\hat\mu|$ onto the spin-up or spin-down state along the direction $\hat\mu$.
 
 So **every spin-1/2 pure state corresponds to exactly one idempotent of $\mathbb{M}_+$**, and vice versa.
 
@@ -199,16 +199,16 @@ is **real** and is the **Born-rule expectation value** of $\tilde{H}$ in the sta
 
 ### Example
 
-Take $\mu = e_3$, so that $\tilde\Pi_1 = \tfrac{1}{2}(e_0 + e_3 i)$ corresponds to the spin-up state along the $z$ axis, and let $\tilde{H} = i e_1$ (the spin observable along the $x$ axis). Then
+Take $\mu = e_3$, so that $\tilde\Pi_+ = \tfrac{1}{2}(e_0 + e_3 i)$ corresponds to the spin-up state along the $z$ axis; the element $ie_3$ is a root of $+1$, $(ie_3)^2 = e_0$, and $\tilde\Pi_+$ with its complement $\tilde\Pi_- = \tfrac{1}{2}(e_0 - e_3 i)$ are its two associated idempotents. Let $\tilde{H} = i e_1$ (the spin observable along the $x$ axis). Then
 
 $$
-\tilde\Pi_1 \tilde{H} = \tfrac{1}{2}(e_0 + e_3 i)(ie_1) = \tfrac{1}{2}(ie_1 + e_3 i \cdot i e_1) = \tfrac{1}{2}(ie_1 - e_3 e_1) = \tfrac{1}{2}(ie_1 - e_2).
+\tilde\Pi_+ \tilde{H} = \tfrac{1}{2}(e_0 + e_3 i)(ie_1) = \tfrac{1}{2}(ie_1 + e_3 i \cdot i e_1) = \tfrac{1}{2}(ie_1 - e_3 e_1) = \tfrac{1}{2}(ie_1 - e_2).
 $$
 
 Taking twice the scalar part:
 
 $$
-2\,\mathrm{Sc}(\tilde\Pi_1 \tilde{H}) = 2 \cdot 0 = 0,
+2\,\mathrm{Sc}(\tilde\Pi_+ \tilde{H}) = 2 \cdot 0 = 0,
 $$
 
 which is the correct expectation $\langle \uparrow_z | S_x | \uparrow_z \rangle = 0$.
@@ -216,13 +216,13 @@ which is the correct expectation $\langle \uparrow_z | S_x | \uparrow_z \rangle 
 Take instead $\tilde{H} = ie_3$ (the spin observable along the $z$ axis):
 
 $$
-\tilde\Pi_1 \tilde{H} = \tfrac{1}{2}(e_0 + e_3 i)(ie_3) = \tfrac{1}{2}(ie_3 + e_3 i \cdot ie_3) = \tfrac{1}{2}(ie_3 - e_3 e_3) = \tfrac{1}{2}(ie_3 + e_0).
+\tilde\Pi_+ \tilde{H} = \tfrac{1}{2}(e_0 + e_3 i)(ie_3) = \tfrac{1}{2}(ie_3 + e_3 i \cdot ie_3) = \tfrac{1}{2}(ie_3 - e_3 e_3) = \tfrac{1}{2}(ie_3 + e_0).
 $$
 
 Taking twice the scalar part:
 
 $$
-2\,\mathrm{Sc}(\tilde\Pi_1 \tilde{H}) = 2 \cdot \tfrac{1}{2} = 1,
+2\,\mathrm{Sc}(\tilde\Pi_+ \tilde{H}) = 2 \cdot \tfrac{1}{2} = 1,
 $$
 
 which is the correct expectation $\langle \uparrow_z | S_z | \uparrow_z \rangle$ (up to the factor $\hbar/2$, which is absorbed in the normalization).
@@ -278,7 +278,7 @@ So the **spin rotations of a spin-1/2 particle are realized in the biquaternion 
 
 ### Hermitian Biquaternions
 
-The Hermitian biquaternions in $\mathbb{M}_+$ with unit norm are the **boost biquaternions** $\tilde{\Lambda} = \cosh(\psi/2) + i\sinh(\psi/2)\hat{\mathbf{u}}$. They generate the Lorentz boosts, and their action on $\mathbb{M}_-$ is the rotor conjugation.
+The Hermitian biquaternions in $\mathbb{M}_+$ with unit norm are the **boost biquaternions** $\tilde{\Lambda} = \cosh(\psi/2) + i\sinh(\psi/2)\hat u$. They generate the Lorentz boosts, and their action on $\mathbb{M}_-$ is the rotor conjugation.
 
 In the quantum-mechanical context, the boosts are **not** unitary (they are Hermitian, and their squares are not the identity). They correspond to operations that are non-unitary but still **invertible**: a boost has unit norm, so it inverts to $\tilde{\Lambda}^{\natural}$, and it represents a reversible change of state — unlike the genuinely irreversible idempotent projections.
 

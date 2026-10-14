@@ -12,9 +12,9 @@ The involution ${}^{\natural}$ itself, its eigenspaces and its role are *Introdu
 
 The **natural conjugation** (or **natural sign**) is
 $$
-\tilde q^{\natural}=q_0-\mathbf q , \qquad \tilde q=q_0+\mathbf q ,
+\tilde q^{\natural}=q_0-\vec q , \qquad \tilde q=q_0+\vec q ,
 $$
-in the notation of *The Quaternions as a Vector Space over $\mathbb{R}$*, with $\mathbf q=q_1e_1+q_2e_2+q_3e_3$.
+in the notation of *The Quaternions as a Vector Space over $\mathbb{R}$*, with $\vec q=q_1e_1+q_2e_2+q_3e_3$.
 
 **Proposition.** The map ${}^{\natural}$ is an anti-automorphism of $\mathbb{H}$ and an involution:
 $$
@@ -75,7 +75,7 @@ Conversely every anti-automorphism is of this form: if $\sigma$ is one, then $\s
 $$
 \sigma_a(\sigma_a(\tilde q))=a\bigl(a \tilde q^{\natural}a^{-1}\bigr)^{\natural}a^{-1}=a\,(a^{\natural})^{-1}\tilde q\,a^{\natural}a^{-1},
 $$
-which is the inner conjugation by $c=a(a^{\natural})^{-1}=a^2/|a|^2$; since the positive real factor does not change an inner conjugation, $\sigma_a^2=\iota_{a^2}$. Now $\iota_b=\operatorname{id}$ exactly when $b$ is central, and $a^2$ is central exactly when its vector part $2a_0\mathbf a$ vanishes, that is, exactly when $a$ is real or pure. A real $a$ gives $\sigma_a={}^{\natural}$, and a pure unit $a=\nu$ gives the twist $\alpha_\nu$, which depends only on the axis line.
+which is the inner conjugation by $c=a(a^{\natural})^{-1}=a^2/|a|^2$; since the positive real factor does not change an inner conjugation, $\sigma_a^2=\iota_{a^2}$. Now $\iota_b=\operatorname{id}$ exactly when $b$ is central, and $a^2$ is central exactly when its vector part $2a_0\vec a$ vanishes, that is, exactly when $a$ is real or pure. A real $a$ gives $\sigma_a={}^{\natural}$, and a pure unit $a=\nu$ gives the twist $\alpha_\nu$, which depends only on the axis line.
 
 The maps $id$ and ${}^{\natural}$, together with the pair $\iota_\nu,\alpha_\nu$ of one axis, four in all, are the involutions of the one-dimensional families; the next section collects the compositions.
 
@@ -116,7 +116,7 @@ $$
 $$
 according as the number of nonzero coordinates of its vector part is $0,1,2,3$. In particular the scalar line is the fixed set of $G$, and the generic element has the full orbit of eight.
 
-**Proof.** The inner involution $\iota_{\nu_1}$ acts as the identity on $\mathbb{R}\nu_1$ and as $-1$ on $\nu_2,\nu_3$; $\iota_{\nu_2}$ as $-1$ on $\nu_1,\nu_3$; $\iota_{\nu_3}$ as $-1$ on $\nu_1,\nu_2$; and ${}^{\natural}$ as $-1$ on all three. The four together generate the three independent sign changes, so the stabiliser of $\tilde q$ is the subgroup whose sign changes preserve the support of $\mathbf q$, of order $8/2^{(\text{number of nonzero coordinates})}$, and the orbit size is the complementary power of two.
+**Proof.** The inner involution $\iota_{\nu_1}$ acts as the identity on $\mathbb{R}\nu_1$ and as $-1$ on $\nu_2,\nu_3$; $\iota_{\nu_2}$ as $-1$ on $\nu_1,\nu_3$; $\iota_{\nu_3}$ as $-1$ on $\nu_1,\nu_2$; and ${}^{\natural}$ as $-1$ on all three. The four together generate the three independent sign changes, so the stabiliser of $\tilde q$ is the subgroup whose sign changes preserve the support of $\vec q$, of order $8/2^{(\text{number of nonzero coordinates})}$, and the orbit size is the complementary power of two.
 
 ## Summary
 
@@ -126,7 +126,7 @@ The natural sign is the one distinguished involution of $\mathbb{H}$. Each axis 
 
 | symbol | meaning |
 |---|---|
-| ${}^{\natural}$ | the natural conjugation $\tilde q\mapsto q_0-\mathbf q$, the distinguished anti-involution |
+| ${}^{\natural}$ | the natural conjugation $\tilde q\mapsto q_0-\vec q$, the distinguished anti-involution |
 | $\iota_\nu$ | the inner involution $\tilde q\mapsto\nu \tilde q\nu^{-1}$, one per axis line $\mathbb{R}\nu$ |
 | $\rho_\nu$ | the reflection $-\iota_\nu$, an involution with $\rho_\nu(\tilde p\tilde q)=-\rho_\nu(\tilde p)\rho_\nu(\tilde q)$ |
 | $\alpha_\nu$ | the twist ${}^{\natural}\iota_\nu$, the involutive anti-automorphism of the axis |

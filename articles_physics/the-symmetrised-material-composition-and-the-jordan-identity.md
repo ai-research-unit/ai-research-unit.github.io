@@ -21,7 +21,7 @@ the subject of the companion band. This article reads the symmetric half.
 The operation is the plain product with the cross term dropped,
 
 $$
-\tilde P\bullet\tilde Q=\bigl[P_0Q_0-(\mathbf{P},\mathbf{Q})\bigr]+P_0\mathbf{Q}+Q_0\mathbf{P},
+\tilde P\bullet\tilde Q=\bigl[P_0Q_0-(\vec P,\vec Q)\bigr]+P_0\vec Q+Q_0\vec P,
 $$
 
 it is $\mathbb{C}$-bilinear and commutative, $e_0$ is a unit on both sides, and it is **not** associative.
@@ -41,8 +41,8 @@ and introduces no scale.
 
 The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis
 $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$, $e_k^{2}=-e_0$, and central scalar imaginary $i$. A general element is
-$\tilde Q=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^{3}Q_ke_k$ and $Q_\mu\in\mathbb{C}$;
-$(\mathbf{P},\mathbf{Q})=\sum_kP_kQ_k$ is the complex bilinear dot product of the vector parts, and
+$\tilde Q=Q_0e_0+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_ke_k$ and $Q_\mu\in\mathbb{C}$;
+$(\vec P,\vec Q)=\sum_kP_kQ_k$ is the complex bilinear dot product of the vector parts, and
 $\mathrm{Sc}(\tilde Q)=Q_0$ is the scalar part. The material sector is the anti-Hermitian subspace
 $\mathbb{M}_-=\{\tilde Q:\tilde Q^{*}=-\tilde Q\}$, with the real basis $\{ie_0,e_1,e_2,e_3\}$, and the
 informational sector is the Hermitian subspace $\mathbb{M}_+=\{\tilde Q:\tilde Q^{*}=+\tilde Q\}$, with the
@@ -77,7 +77,7 @@ $$
 and the antisymmetric part is the **antisymmetric plain product**
 
 $$
-\tilde P\wedge\tilde Q=\tfrac12\bigl(\tilde P\tilde Q-\tilde Q\tilde P\bigr)=\mathbf{P}\times\mathbf{Q} .
+\tilde P\wedge\tilde Q=\tfrac12\bigl(\tilde P\tilde Q-\tilde Q\tilde P\bigr)=\vec P\times\vec Q .
 $$
 
 The general plain bilinear product is recovered from the two halves,
@@ -92,16 +92,16 @@ products and their parts is *The Four General Products and Their Physical Readin
 the coordinate form
 
 $$
-\tilde P\bullet\tilde Q=\bigl[P_0Q_0-(\mathbf{P},\mathbf{Q})\bigr]+P_0\mathbf{Q}+Q_0\mathbf{P},
+\tilde P\bullet\tilde Q=\bigl[P_0Q_0-(\vec P,\vec Q)\bigr]+P_0\vec Q+Q_0\vec P,
 $$
 
-which is the general plain bilinear product with the cross term $\mathbf{P}\times\mathbf{Q}$ removed.
+which is the general plain bilinear product with the cross term $\vec P\times\vec Q$ removed.
 
 *Proof.* The scalar part of the general plain bilinear product is symmetric,
-$\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-(\mathbf{P},\mathbf{Q})=\mathrm{Sc}(\tilde Q\tilde P)$, so it
+$\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-(\vec P,\vec Q)=\mathrm{Sc}(\tilde Q\tilde P)$, so it
 cancels nothing in the half-sum and remains.
-The vector part is $P_0\mathbf{Q}+Q_0\mathbf{P}+\mathbf{P}\times\mathbf{Q}$ in the one order and
-$Q_0\mathbf{P}+P_0\mathbf{Q}+\mathbf{Q}\times\mathbf{P}$ in the other; adding the two cancels the
+The vector part is $P_0\vec Q+Q_0\vec P+\vec P\times\vec Q$ in the one order and
+$Q_0\vec P+P_0\vec Q+\vec Q\times\vec P$ in the other; adding the two cancels the
 antisymmetric cross terms and doubles the symmetric terms, and halving gives the displayed vector part.
 Commutativity is the symmetry of the half-sum. This is *Introduction to the Symmetric Plain Algebra of
 Biquaternions*, read here as the operation of the block.
@@ -109,7 +109,7 @@ Biquaternions*, read here as the operation of the block.
 **Proposition.** The unit $e_0$ is a unit on both sides, $e_0\bullet\tilde Q=\tilde Q\bullet e_0=\tilde Q$,
 and it is the only unit.
 
-*Proof.* The unit has vector part zero, so $P_0\mathbf{Q}+Q_0\mathbf{P}$ reads $\mathbf{Q}$ and the scalar
+*Proof.* The unit has vector part zero, so $P_0\vec Q+Q_0\vec P$ reads $\vec Q$ and the scalar
 and dot terms read $Q_0$. Uniqueness is *Introduction to the Symmetric Plain Algebra of Biquaternions*.
 
 **Proposition.** The operation is **not associative**, with the witness $e_1\bullet e_1=-e_0$ read against
@@ -137,7 +137,7 @@ Algebra of Biquaternions*.
 **Proposed interpretation, labelled as such.** On the three vector units, $i,j\in\{1,2,3\}$, the table of the
 operation reads $\tfrac12(e_ie_j+e_je_i)=-\delta_{ij}e_0$, that is $\{e_i,e_j\}=-2\delta_{ij}e_0$; for
 two real pure vectors the symmetrised product is central,
-$\tfrac12(\mathbf P\mathbf Q+\mathbf Q\mathbf P)=-(\mathbf P\!\cdot\!\mathbf Q)\,e_0$. **The scalar part
+$\tfrac12(\vec P\vec Q+\vec Q\vec P)=-(\vec P\!\cdot\!\vec Q)\,e_0$. **The scalar part
 of the symmetrised composition is the scalar product of the two directions**, which is the
 anticommutation relation from which a Clifford algebra is built.
 
@@ -146,7 +146,7 @@ anticommutation relation from which a Clifford algebra is built.
 **Proposition.** The square of an element in the block is the ordinary square:
 
 $$
-\tilde Q\bullet\tilde Q=\tilde Q^{2}=\bigl[Q_0^{2}-(\mathbf{Q},\mathbf{Q})\bigr]+2Q_0\mathbf{Q}.
+\tilde Q\bullet\tilde Q=\tilde Q^{2}=\bigl[Q_0^{2}-(\vec Q,\vec Q)\bigr]+2Q_0\vec Q.
 $$
 
 *Proof.* $\tilde Q\bullet\tilde Q=\tfrac12(\tilde Q^{2}+\tilde Q^{2})=\tilde Q^{2}$, and the displayed
@@ -294,11 +294,11 @@ measurement.
 ## The Ledger
 
 **Proved.** The symmetrised plain product
-$\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)=[P_0Q_0-(\mathbf{P},\mathbf{Q})]+P_0\mathbf{Q}+Q_0\mathbf{P}$
+$\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)=[P_0Q_0-(\vec P,\vec Q)]+P_0\vec Q+Q_0\vec P$
 is $\mathbb{C}$-bilinear and commutative, with the unit $e_0$ on both
 sides, and it is not associative, with the witness $(e_1\bullet e_1)\bullet e_2=-e_2$ against
 $e_1\bullet(e_1\bullet e_2)=0$; its square is the ordinary square
-$\tilde Q^{2}=[Q_0^{2}-(\mathbf{Q},\mathbf{Q})]+2Q_0\mathbf{Q}$ and its product is the polarisation of
+$\tilde Q^{2}=[Q_0^{2}-(\vec Q,\vec Q)]+2Q_0\vec Q$ and its product is the polarisation of
 that square; it satisfies the Jordan identity, and it is the only Jordan product among the twelve; the
 general plain bilinear product is reconstructed as $\mathrm{GPA}=\mathrm{SPA}+\mathrm{APA}$; and on two material
 elements the symmetric half is the Hermitian anticommutator and the antisymmetric half the anti-Hermitian
@@ -322,8 +322,8 @@ The symmetrised product reads as what two material observations share when their
 
 The general plain bilinear product of $\mathbb{B}$ splits under the exchange of its arguments into the **symmetrised
 plain product**
-$\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)=[P_0Q_0-(\mathbf{P},\mathbf{Q})]+P_0\mathbf{Q}+Q_0\mathbf{P}$
-and the antisymmetric plain product $\tilde P\wedge\tilde Q=\mathbf{P}\times\mathbf{Q}$, with
+$\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)=[P_0Q_0-(\vec P,\vec Q)]+P_0\vec Q+Q_0\vec P$
+and the antisymmetric plain product $\tilde P\wedge\tilde Q=\vec P\times\vec Q$, with
 $\tilde P\tilde Q=\tilde P\bullet\tilde Q+\tilde P\wedge\tilde Q$. The symmetrised product is
 $\mathbb{C}$-bilinear and commutative, $e_0$ is its unit on both sides, and it is not associative. Its
 square is the ordinary square and its product is the polarisation of that square, so the square map sees
@@ -341,9 +341,9 @@ order. The Jordan identity is a law of the algebra and not a statement about mea
 |---|---|
 | $\tilde P\tilde Q$ | The ordinary (plain) product, associative and unital |
 | $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ | The symmetrised plain product, the operation $\mathrm{SPA}$ |
-| $\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf{P}\times\mathbf{Q}$ | The antisymmetric plain product, the operation $\mathrm{APA}$ |
+| $\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\vec P\times\vec Q$ | The antisymmetric plain product, the operation $\mathrm{APA}$ |
 | $\tilde P\tilde Q=\tilde P\bullet\tilde Q+\tilde P\wedge\tilde Q$ | The reconstruction $\mathrm{GPA}=\mathrm{SPA}+\mathrm{APA}$ |
-| $[P_0Q_0-(\mathbf{P},\mathbf{Q})]+P_0\mathbf{Q}+Q_0\mathbf{P}$ | The coordinate form; the general plain bilinear product with the cross term dropped |
+| $[P_0Q_0-(\vec P,\vec Q)]+P_0\vec Q+Q_0\vec P$ | The coordinate form; the general plain bilinear product with the cross term dropped |
 | $\tilde Q\bullet\tilde Q=\tilde Q^{2}$ | The square, equal to the ordinary square |
 | $(\tilde P\bullet\tilde Q)\bullet(\tilde P\bullet\tilde P)=\tilde P\bullet(\tilde Q\bullet(\tilde P\bullet\tilde P))$ | The Jordan identity |
 | $\tfrac12\{\tilde P,\tilde Q\}$, $\tfrac12[\tilde P,\tilde Q]$ | Anticommutator and commutator of two material elements |

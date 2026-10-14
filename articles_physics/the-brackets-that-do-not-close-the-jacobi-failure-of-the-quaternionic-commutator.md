@@ -9,7 +9,7 @@ operation is the **antisymmetrised quaternionic product**
 
 $$
 \tilde P\wedge_{\natural}\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P\bigr)
-=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q ,
+=P_0\vec Q-Q_0\vec P-\vec P\times\vec Q ,
 $$
 
 the antisymmetric part of the quaternionic product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ for
@@ -46,8 +46,8 @@ Why the Biquaternion Algebra Reaches SU(2) but Not SU(3)*, cited and not redone.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis
 $e_0=1,e_1,e_2,e_3$, $e_k^{2}=-e_0$, $e_1e_2=e_3$, and central scalar imaginary $i$ with $i^{2}=-1$; an
-element is $\tilde Q=Q_0e_0+\mathbf Q$ with vector part $\mathbf Q=Q_1e_1+Q_2e_2+Q_3e_3$; the complex
-bilinear dot and cross products of vector parts are $(\mathbf P,\mathbf Q)$ and $\mathbf P\times\mathbf Q$,
+element is $\tilde Q=Q_0e_0+\vec Q$ with vector part $\vec Q=Q_1e_1+Q_2e_2+Q_3e_3$; the complex
+bilinear dot and cross products of vector parts are $(\vec P,\vec Q)$ and $\vec P\times\vec Q$,
 and the cross product is defined by $e_j\times e_k=e_l$ cyclically. The natural conjugation is
 ${}^{\natural}$, the Hermitian star is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, and the sectors are
 $\mathbb{M}_\pm$. The general plain bilinear product is $\tilde P\tilde Q$; the quaternionic product is
@@ -56,19 +56,19 @@ $[\tilde P,\tilde Q]_{\natural}=\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\
 $\tilde P\bullet\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$ is its
 symmetrisation. The symmetrisation symbol $\bullet$ is **row-relative** in this chapter: the plain row
 writes it for $\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$, a different operation; the plain row writes
-$\wedge$ for its antisymmetrisation, the cross product $\mathbf P\times\mathbf Q$. The vector subspace is
+$\wedge$ for its antisymmetrisation, the cross product $\vec P\times\vec Q$. The vector subspace is
 $\mathrm{Vect}(\mathbb{B})=\{\tilde Q:\mathrm{Sc}(\tilde Q)=0\}$, the image of the operation; the
 general plain bilinear form is $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)$ and the general
 quaternionic bilinear form is $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$.
 
 ## The Antisymmetrised Quaternionic Product
 
-**Proposition (the explicit form).** For all $\tilde P=P_0e_0+\mathbf P$ and $\tilde Q=Q_0e_0+\mathbf Q$,
+**Proposition (the explicit form).** For all $\tilde P=P_0e_0+\vec P$ and $\tilde Q=Q_0e_0+\vec Q$,
 
 $$
 \tilde P\wedge_{\natural}\tilde Q
 =\tfrac12\bigl(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P\bigr)
-=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q .
+=P_0\vec Q-Q_0\vec P-\vec P\times\vec Q .
 $$
 
 The value has zero scalar part and lies in the vector subspace $\mathrm{Vect}(\mathbb{B})$; the operation
@@ -77,7 +77,7 @@ and its algebraic norm vanishes. It is half the quaternionic bracket,
 $\tilde P\wedge_{\natural}\tilde Q=\tfrac12[\tilde P,\tilde Q]_{\natural}$.
 
 *Proof.* The parent value is
-$\tilde P^{\natural}\tilde Q=[P_0Q_0+(\mathbf P,\mathbf Q)]e_0+P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$
+$\tilde P^{\natural}\tilde Q=[P_0Q_0+(\vec P,\vec Q)]e_0+P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$
 (*The 12 Products of the Biquaternion Complex Space*). Exchanging the arguments reverses
 the two mixed terms and the cross product and leaves the scalar part fixed, which cancels in the
 difference; half the difference is the displayed value. The scalar part zero puts the value in
@@ -108,7 +108,7 @@ negative of the cross product, $e_j\wedge_{\natural}e_k=-e_j\times e_k$; and the
 identity on the vector subspace and its negative on the right.
 
 *Proof.* Read the explicit form on the basis; the scalar-vanishing cases give the mixed signs
-$P_0\mathbf Q$ and $-Q_0\mathbf P$, and the pure-vector cases give $-\mathbf P\times\mathbf Q$. The table
+$P_0\vec Q$ and $-Q_0\vec P$, and the pure-vector cases give $-\vec P\times\vec Q$. The table
 is the one of *Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions*.
 
 Twelve of the sixteen entries are nonzero: the operation is not the zero bracket, and on the vector
@@ -120,10 +120,10 @@ subspace it is the plain cross product up to the overall sign.
 dimension three, and it contains no nonzero central element. The operation has no unit on either side.
 
 *Proof.* Every value has zero scalar part, so the image lies in $\mathrm{Vect}(\mathbb{B})$; conversely,
-$e_0\wedge_{\natural}\tilde Q=\mathbf Q$, so every pure vector is a value. The centre is the set of
+$e_0\wedge_{\natural}\tilde Q=\vec Q$, so every pure vector is a value. The centre is the set of
 elements with zero vector part, whose intersection with $\mathrm{Vect}(\mathbb{B})$ is $0$. A unit
 $\tilde E$ would satisfy $\tilde E\wedge_{\natural}\tilde X=\tilde X$ for all $\tilde X$; at
-$\tilde X=e_0$ the value is $-\mathbf E$, a pure vector, which cannot equal the central $e_0$, so no left
+$\tilde X=e_0$ the value is $-\vec E$, a pure vector, which cannot equal the central $e_0$, so no left
 unit exists; the same argument on the right excludes a right unit.
 
 The image is the **whole** vector subspace (complex dimension three, real dimension six) and not a
@@ -156,7 +156,7 @@ $-e_3,+e_3,-e_3$ and the sum is $-e_3$.
 
 $$
 J(\tilde P,\tilde Q,\tilde R)
-=-P_0\,(\mathbf Q\times\mathbf R)+Q_0\,(\mathbf P\times\mathbf R)-R_0\,(\mathbf P\times\mathbf Q) ,
+=-P_0\,(\vec Q\times\vec R)+Q_0\,(\vec P\times\vec R)-R_0\,(\vec P\times\vec Q) ,
 $$
 
 a $\mathbb{C}$-trilinear alternating pure-vector map, $\mathbb{C}$-linear in the triple of scalar parts
@@ -165,14 +165,14 @@ parallel.
 
 *Proof.* This is *The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic
 Algebra*; the identity of the three-cycle is proved there monomial by monomial, the double cross products
-collapsing by $\mathbf U\times(\mathbf A\times\mathbf B)=\mathbf A(\mathbf U,\mathbf B)-\mathbf B(\mathbf U,\mathbf A)$.
+collapsing by $\vec U\times(\vec A\times\vec B)=\vec A(\vec U,\vec B)-\vec B(\vec U,\vec A)$.
 
 Two consequences fix the incidence of the failure. First, the sum is decided on the basis, because it is
 $\mathbb{C}$-trilinear and alternating; it is nonzero on $18$ of the $64$ ordered triples of basis
 elements, the three unordered triples $\{0,1,2\}$, $\{0,1,3\}$ and $\{0,2,3\}$ with their six orderings
 each, with values the negatives of the three cross products. Second, a witness needs one nonzero scalar
 part and two independent vector parts: on the pure vectors alone the operation is the cross product up to
-sign, and there it does satisfy the identity. The failure enters **through the mixed terms** $P_0\mathbf Q-Q_0\mathbf P$,
+sign, and there it does satisfy the identity. The failure enters **through the mixed terms** $P_0\vec Q-Q_0\vec P$,
 which carry a scalar part into the vector subspace. The three smallest witnesses are
 $(e_0,e_1,e_2),(e_0,e_1,e_3),(e_0,e_2,e_3)$; the corpus's canonical witness is the first, with cyclic sum
 $-e_3$.
@@ -232,22 +232,22 @@ operation, which is $\mathbb{C}$-bilinear.
 The antisymmetric part of the **plain** product is the cross product,
 
 $$
-\tfrac12\bigl(\tilde P\tilde Q-\tilde Q\tilde P\bigr)=\mathbf P\times\mathbf Q ,
+\tfrac12\bigl(\tilde P\tilde Q-\tilde Q\tilde P\bigr)=\vec P\times\vec Q ,
 $$
 
 the operation $\mathrm{APA}$ of the catalogue. The two brackets differ in two ways, and both are what the
-conjugation inserts. First, the cross term is **reversed**: the plain bracket is $+\mathbf P\times\mathbf Q$,
-this one is $-\mathbf P\times\mathbf Q$, and on the pure vectors alone the two agree up to that sign.
-Second, the two **mixed terms** $P_0\mathbf Q-Q_0\mathbf P$ are **added** to this bracket and are absent
+conjugation inserts. First, the cross term is **reversed**: the plain bracket is $+\vec P\times\vec Q$,
+this one is $-\vec P\times\vec Q$, and on the pure vectors alone the two agree up to that sign.
+Second, the two **mixed terms** $P_0\vec Q-Q_0\vec P$ are **added** to this bracket and are absent
 from the plain one; the plain bracket vanishes whenever either argument is central, while this one does
-not, since $Ae_0\wedge_{\natural}\tilde Y=A\,\mathbf Y$. The plain bracket therefore **closes** — it
+not, since $Ae_0\wedge_{\natural}\tilde Y=A\,\vec Y$. The plain bracket therefore **closes** — it
 satisfies the Jacobi identity, it is a Lie bracket, and it is the one Lie product of the twelve operations
 — and this bracket does not. On the pure vectors this bracket is the negative of the cross product and it
 satisfies the identity there; the failure is entirely the price of the two mixed terms.
 
 **The derived bracket is a Lie bracket.** The derived subalgebra of this operation is the whole vector
 subspace, $\mathbb{B}\wedge_{\natural}\mathbb{B}=\mathrm{Vect}(\mathbb{B})$, and on it the operation is
-$-\mathbf P\times\mathbf Q$, a Lie bracket isomorphic to the cross product on $\mathbb{C}^3$, hence to
+$-\vec P\times\vec Q$, a Lie bracket isomorphic to the cross product on $\mathbb{C}^3$, hence to
 $\mathfrak{sl}(2,\mathbb{C})$. The failure is therefore not a failure of the **derived** bracket; it is the
 failure of the extension of that bracket to the whole algebra. This is the exact bound on the negative
 interpretation below: the operation is a Lie bracket **on the vector subspace** and not on $\mathbb{B}$. The
@@ -285,7 +285,7 @@ proves the trilinear form and its support and nothing about a physical anomaly; 
 framework's, and the support is a count on a basis and not an invariant.
 - **The closable part is exactly the rotations, and the boost-like part is the obstruction.** The proved facts
 are that the derived bracket on $\mathrm{Vect}(\mathbb{B})$ is $\mathfrak{sl}(2,\mathbb{C})$ and that the
-failure enters through the mixed terms $P_0\mathbf Q-Q_0\mathbf P$. Read together they say that the
+failure enters through the mixed terms $P_0\vec Q-Q_0\vec P$. Read together they say that the
 bracket **closes on the compact rotations** and **fails through the boost-like mixed terms**: offered as
 an interpretation, the identity is carried by the rotations and the obstruction by the boosts, so the price of
 the boost-like direction is the Jacobi identity. The boost-like interpretation of the mixed terms is the
@@ -317,12 +317,12 @@ internal group off the associative one-sided action, not off this bracket).
 ## The Ledger
 
 **Proved.** The explicit form
-$\tilde P\wedge_{\natural}\tilde Q=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$, its zero scalar
+$\tilde P\wedge_{\natural}\tilde Q=P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$, its zero scalar
 part, its pure-vector value, its alternation and its vanishing algebraic norm; its identity with half the
 quaternionic bracket; its image $\mathrm{Vect}(\mathbb{B})$; the absence of a unit on either side; the
 sixteen brackets of the basis; the failure of the Jacobi identity at the witness $(e_0,e_1,e_2)$ with
 cyclic sum $-e_3$; the closed form
-$J=-P_0(\mathbf Q\times\mathbf R)+Q_0(\mathbf P\times\mathbf R)-R_0(\mathbf P\times\mathbf Q)$ and its
+$J=-P_0(\vec Q\times\vec R)+Q_0(\vec P\times\vec R)-R_0(\vec P\times\vec Q)$ and its
 $18$ nonzero ordered basis triples; the associator criterion and the defect as non-associativity alone;
 the contrast with the plain bracket, which closes; the derived bracket on the vector subspace as a Lie
 bracket isomorphic to $\mathfrak{sl}(2,\mathbb{C})$.
@@ -342,18 +342,18 @@ stronger than the companion article's interpretation.
 
 ## Physical Readings
 
-The Jacobi failure reads as the algebraic origin of the boost obstruction: the non-compact generators do not close on a Lie algebra, and the gap is the mixed term $P_0\mathbf Q-Q_0\mathbf P$ that the companion article reads as the boost (*Boosts, Mixed Terms and the Missing Lie Structure*). Read on the split, the failure is the non-compactness of the informational generators, so this article's record of a failure and the framework's superselection statement are two statements of one fact: the boosts are informational generators and the informational generators do not form an algebra.
+The Jacobi failure reads as the algebraic origin of the boost obstruction: the non-compact generators do not close on a Lie algebra, and the gap is the mixed term $P_0\vec Q-Q_0\vec P$ that the companion article reads as the boost (*Boosts, Mixed Terms and the Missing Lie Structure*). Read on the split, the failure is the non-compactness of the informational generators, so this article's record of a failure and the framework's superselection statement are two statements of one fact: the boosts are informational generators and the informational generators do not form an algebra.
 
 ## Summary
 
 The antisymmetrised quaternionic product
-$\tilde P\wedge_{\natural}\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$
+$\tilde P\wedge_{\natural}\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)=P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$
 is the antisymmetric part of the quaternionic product for the exchange of its two arguments, pure vector,
 alternating, and half the quaternionic bracket; its image is the whole vector subspace
 $\mathrm{Vect}(\mathbb{B})$, it has no unit, and on the basis the mixed entries are $e_0\wedge_{\natural}e_k=e_k$,
 $e_k\wedge_{\natural}e_0=-e_k$ and the pure-vector entries are the negatives of the cross products. It
 **fails the Jacobi identity**, with the witness $(e_0,e_1,e_2)$ whose cyclic sum is $-e_3$; the sum is the
-closed form $J=-P_0(\mathbf Q\times\mathbf R)+Q_0(\mathbf P\times\mathbf R)-R_0(\mathbf P\times\mathbf Q)$,
+closed form $J=-P_0(\vec Q\times\vec R)+Q_0(\vec P\times\vec R)-R_0(\vec P\times\vec Q)$,
 nonzero on $18$ of the $64$ ordered basis triples and decided by the mixed scalar-vector terms. The cause
 is the **associator defect** of the parent quaternionic product: the associator criterion reads the failure
 off the non-associativity of the parent, and the two surviving associators at the witness, $\pm2e_3$,
@@ -379,12 +379,12 @@ bracket are the companion *Boosts, Mixed Terms and the Missing Lie Structure*.
 |---|---|
 | $\tilde P\wedge_{\natural}\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$ | the antisymmetrised quaternionic product (AQA, this band) |
 | $[\tilde P,\tilde Q]_{\natural}=\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P$ | the quaternionic bracket; twice the operation |
-| $P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$ | the explicit form; zero scalar part, pure vector |
+| $P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$ | the explicit form; zero scalar part, pure vector |
 | $\mathrm{Vect}(\mathbb{B})$ | the vector subspace, the image of the operation |
 | $J(\tilde P,\tilde Q,\tilde R)=(\tilde P\wedge_{\natural}\tilde Q)\wedge_{\natural}\tilde R+(\tilde Q\wedge_{\natural}\tilde R)\wedge_{\natural}\tilde P+(\tilde R\wedge_{\natural}\tilde P)\wedge_{\natural}\tilde Q$ | the Jacobi cyclic sum, left-nested; fails |
 | $(e_0,e_1,e_2)$ | the canonical witness; $J=-e_3$ |
 | $[\tilde X,\tilde Y,\tilde Z]$ | the associator of the parent product; the defect |
-| $\mathbf P\times\mathbf Q$ | the cross product; the plain bracket that closes |
+| $\vec P\times\vec Q$ | the cross product; the plain bracket that closes |
 | $\mathfrak{sl}(2,\mathbb{C})$ | the derived bracket on the vector subspace |
 | $\tilde P\bullet\tilde Q$ | the symmetric half (SQA); the two halves reconstruct the parent |
 

@@ -79,7 +79,7 @@ the plain **transpose** inserted in the first factor and the **conjugate transpo
 **The trace and the determinant of a value.** For $Z=\mathsf{M}_2(\tilde{P}\star\tilde{Q})$,
 
 $$
-\operatorname{Tr}Z=2\mathrm{Sc}(\tilde{P}\star\tilde{Q})=2\bigl(P_0\overline{Q_0}-(\mathbf{P},\overline{\mathbf{Q}})\bigr),\qquad \det Z=\langle\tilde{P},\tilde{P}\rangle_{\natural}\overline{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}},
+\operatorname{Tr}Z=2\mathrm{Sc}(\tilde{P}\star\tilde{Q})=2\bigl(P_0\overline{Q_0}-(\vec P,\overline{\vec Q})\bigr),\qquad \det Z=\langle\tilde{P},\tilde{P}\rangle_{\natural}\overline{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}},
 $$
 
 so the determinant of a value is the norm of the first factor times the conjugate of the norm of the second. On the norm-one elements the adjugate is the inverse, so the product of two norm-one matrices computed by the twisted rule again has determinant one, which is the matrix form of the closure of the units under the product.

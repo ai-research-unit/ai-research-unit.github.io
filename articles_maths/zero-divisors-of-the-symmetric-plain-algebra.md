@@ -35,8 +35,8 @@ families are named by *Square Roots of One and the Idempotents of the Symmetric 
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis
 $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$, central scalar imaginary $i$ and $Q_\mu\in\mathbb{C}$. An
-element is $\tilde Q=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^{3}Q_ke_k$, and
-$(\mathbf{P},\mathbf{Q})=\sum_kP_kQ_k$ is the complex bilinear dot product of the vector parts. The
+element is $\tilde Q=Q_0e_0+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_ke_k$, and
+$(\vec P,\vec Q)=\sum_kP_kQ_k$ is the complex bilinear dot product of the vector parts. The
 product with the mark is $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$; the
 central square is $C(\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^2=\tilde Q\tilde Q^{\natural}$, and the left
 multiplication is $L^{\bullet}_{\tilde Q}:\tilde R\mapsto\tilde Q\bullet\tilde R$. The vector
@@ -80,25 +80,25 @@ $$
 Q_0=0\qquad\text{or}\qquad C(\tilde Q)=0 .
 $$
 
-*Proof.* Suppose $Q_0=0$, so $\tilde Q=\mathbf Q$ is pure and non-zero. For a general
-$\tilde R=R_0e_0+\mathbf{R}$ the product is
-$\tilde Q\bullet\tilde R=R_0\mathbf{Q}-(\mathbf{Q},\mathbf{R})e_0$, which vanishes exactly when
-$R_0=0$ and $(\mathbf{Q},\mathbf{R})=0$; the second condition is one complex equation on
-$\mathbf{R}$, so there is a non-zero solution and $\tilde Q$ is a zero divisor. Suppose $Q_0\neq0$
+*Proof.* Suppose $Q_0=0$, so $\tilde Q=\vec Q$ is pure and non-zero. For a general
+$\tilde R=R_0e_0+\vec R$ the product is
+$\tilde Q\bullet\tilde R=R_0\vec Q-(\vec Q,\vec R)e_0$, which vanishes exactly when
+$R_0=0$ and $(\vec Q,\vec R)=0$; the second condition is one complex equation on
+$\vec R$, so there is a non-zero solution and $\tilde Q$ is a zero divisor. Suppose $Q_0\neq0$
 and $C(\tilde Q)=0$. Then $\tilde Q\bullet\tilde Q^{\natural}=C(\tilde Q)e_0=0$ by the quadratic
 identity, and $\tilde Q^{\natural}\neq0$, so $\tilde Q$ is a zero divisor. Conversely, suppose
 $Q_0\neq0$ and $C(\tilde Q)\neq0$ and let $\tilde R$ satisfy $\tilde Q\bullet\tilde R=0$. In
 coordinates the equation is the pair
 
 $$
-Q_0\mathbf{R}+R_0\mathbf{Q}=0,\qquad Q_0R_0-(\mathbf{Q},\mathbf{R})=0 .
+Q_0\vec R+R_0\vec Q=0,\qquad Q_0R_0-(\vec Q,\vec R)=0 .
 $$
 
-Taking the dot product of the first with $\mathbf{Q}$ gives
-$Q_0(\mathbf{Q},\mathbf{R})+R_0(\mathbf{Q},\mathbf{Q})=0$, and substituting
-$(\mathbf{Q},\mathbf{R})=Q_0R_0$ from the second gives
-$R_0\bigl(Q_0^2+(\mathbf{Q},\mathbf{Q})\bigr)=R_0C(\tilde Q)=0$, so $R_0=0$; then the second gives
-$(\mathbf{Q},\mathbf{R})=0$ and the first gives $Q_0\mathbf{R}=0$, so $\mathbf{R}=0$. Hence
+Taking the dot product of the first with $\vec Q$ gives
+$Q_0(\vec Q,\vec R)+R_0(\vec Q,\vec Q)=0$, and substituting
+$(\vec Q,\vec R)=Q_0R_0$ from the second gives
+$R_0\bigl(Q_0^2+(\vec Q,\vec Q)\bigr)=R_0C(\tilde Q)=0$, so $R_0=0$; then the second gives
+$(\vec Q,\vec R)=0$ and the first gives $Q_0\vec R=0$, so $\vec R=0$. Hence
 $\tilde R=0$.
 
 **Corollary.** The block is not a domain, and it is not a domain in the strongest possible way: the
@@ -119,9 +119,9 @@ annihilator.
 
 **Proposition.** Every non-zero pure element is a zero divisor.
 
-*Proof.* The product of two pure elements is $\tilde Q\bullet\tilde R=-(\mathbf{Q},\mathbf{R})e_0$,
-which vanishes for every non-zero $\tilde R$ in the complex plane orthogonal to $\mathbf{Q}$; in
-the three-dimensional complex vector subspace the single equation $(\mathbf{Q},\mathbf{R})=0$ has a
+*Proof.* The product of two pure elements is $\tilde Q\bullet\tilde R=-(\vec Q,\vec R)e_0$,
+which vanishes for every non-zero $\tilde R$ in the complex plane orthogonal to $\vec Q$; in
+the three-dimensional complex vector subspace the single equation $(\vec Q,\vec R)=0$ has a
 two-dimensional solution space.
 
 The family is parametrised by the vector subspace without the origin, a set of complex dimension
@@ -142,8 +142,8 @@ determinant vanishing through the factor $C(\tilde Q)$.
 
 The family is the set $\{\tilde Q:Q_0\neq0,\ C(\tilde Q)=0\}$, of complex dimension three, and up
 to the scalar it is the set of the **idempotents** of the block: the non-zero non-trivial
-idempotents are $\tfrac12(e_0+\mathbf{u})$ with $\mathbf{u}^2=e_0$ pure, and
-$C(\tfrac12(e_0+\mathbf{u}))=0$. The exact correspondence is *Idempotents of the Symmetric Plain
+idempotents are $\tfrac12(e_0+\vec u)$ with $\vec u^2=e_0$ pure, and
+$C(\tfrac12(e_0+\vec u))=0$. The exact correspondence is *Idempotents of the Symmetric Plain
 Algebra*, and the annihilator of the family, the complex line $\mathbb{C}\tilde Q^{\natural}$, is
 *Annihilators of the Symmetric Plain Algebra*.
 
@@ -184,9 +184,9 @@ vector subspace.
 So no transfer of the zero-divisor classification from the four general products to the block is
 valid, and this is the point of the article. The reason is visible in the product: the plain
 product of two pure elements is
-$\mathbf{P}\mathbf{Q}=-(\mathbf{P},\mathbf{Q})+\mathbf{P}\times\mathbf{Q}$, whose antisymmetric
+$\vec P\vec Q=-(\vec P,\vec Q)+\vec P\times\vec Q$, whose antisymmetric
 cross term keeps a non-isotropic pure element regular, while the symmetrisation removes the cross
-term and leaves only the scalar $-(\mathbf{P},\mathbf{Q})e_0$, which vanishes on the orthogonal
+term and leaves only the scalar $-(\vec P,\vec Q)e_0$, which vanishes on the orthogonal
 complement whatever the central square. **The block's zero-divisor set is the union of the vector
 subspace and the isotropic cone, not the isotropic cone alone.**
 

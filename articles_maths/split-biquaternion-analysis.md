@@ -17,7 +17,7 @@ $$
 \tilde{Q} = Q_0 e_0 + Q_1 e_1 + Q_2 e_2 + Q_3 e_3, \qquad Q_\mu = q_\mu + j q'_\mu, \quad q_\mu, q'_\mu \in \mathbb{R}.
 $$
 
-The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \mathbf{Q}$, where $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The split complex conjugate is $\bar{\tilde{Q}} = \bar{Q_0} e_0 + \mathbf{Q}^*$, with $Q_{\bar{\mu}} = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^{*}$. The split-biquaternion norm is $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$.
+The split complex unit is $j$, with $j^2 = +1$, and it commutes with the quaternion units. The quaternion conjugate is $\tilde{Q}^{\natural} = Q_0 e_0 - \vec Q$, where $\vec Q = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$. The split complex conjugate is $\bar{\tilde{Q}} = \bar{Q_0} e_0 + \vec Q^*$, with $Q_{\bar{\mu}} = q_\mu - j q'_\mu$. The Hermitian conjugate is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the anti-Hermitian conjugate is $\tilde{Q}^\flat = -\tilde{Q}^{*}$. The split-biquaternion norm is $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$.
 
 The idempotents of the split complex algebra are $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$ and $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$. The idempotent decomposition of a split biquaternion is
 
@@ -244,16 +244,16 @@ $$
 
 The tilde on $\tilde{\nabla}$ signals that it is a split-biquaternion-valued operator: its coefficients are $e_\mu$, which are quaternion units, and its "scalar" parts are the partial derivatives $\partial_\mu$.
 
-Writing $\tilde{F} = F_0 + \mathbf{F}$ with $\mathbf{F} = F_1 e_1 + F_2 e_2 + F_3 e_3$, we can compute $\tilde{\nabla}\tilde{F}$ in scalar-vector form. Separating the cases in the double sum, we obtain
+Writing $\tilde{F} = F_0 + \vec F$ with $\vec F = F_1 e_1 + F_2 e_2 + F_3 e_3$, we can compute $\tilde{\nabla}\tilde{F}$ in scalar-vector form. Separating the cases in the double sum, we obtain
 
 $$
-\tilde{\nabla}\tilde{F} = \left(\partial_0 F_0 - \mathrm{div}\,\mathbf{F}\right) + \left(\partial_0 \mathbf{F} + \mathrm{grad}\,F_0 + \mathrm{rot}\,\mathbf{F}\right),
+\tilde{\nabla}\tilde{F} = \left(\partial_0 F_0 - \mathrm{div}\,\vec F\right) + \left(\partial_0 \vec F + \mathrm{grad}\,F_0 + \mathrm{rot}\,\vec F\right),
 $$
 
 where
 
 $$
-\mathrm{div}\,\mathbf{F} = \sum_{k=1}^{3} \partial_k F_k, \qquad \mathrm{grad}\,F_0 = \sum_{k=1}^{3} (\partial_k F_0) e_k, \qquad \mathrm{rot}\,\mathbf{F} = \sum_{j,k,l=1}^{3} \epsilon_{jkl} (\partial_j F_k) e_l.
+\mathrm{div}\,\vec F = \sum_{k=1}^{3} \partial_k F_k, \qquad \mathrm{grad}\,F_0 = \sum_{k=1}^{3} (\partial_k F_0) e_k, \qquad \mathrm{rot}\,\vec F = \sum_{j,k,l=1}^{3} \epsilon_{jkl} (\partial_j F_k) e_l.
 $$
 
 The formula is identical to the biquaternion case. The reason is that the operator acts on functions of four real variables, and the multiplication of the coefficients is the same as in the biquaternion case up to the sign of the extra unit.
@@ -269,7 +269,7 @@ $$
 The product $\tilde{\nabla}^{\natural}\tilde{F}$ is computed in the same way:
 
 $$
-\tilde{\nabla}^{\natural}\tilde{F} = \left(\partial_0 F_0 + \mathrm{div}\,\mathbf{F}\right) + \left(\partial_0 \mathbf{F} - \mathrm{grad}\,F_0 - \mathrm{rot}\,\mathbf{F}\right).
+\tilde{\nabla}^{\natural}\tilde{F} = \left(\partial_0 F_0 + \mathrm{div}\,\vec F\right) + \left(\partial_0 \vec F - \mathrm{grad}\,F_0 - \mathrm{rot}\,\vec F\right).
 $$
 
 ### The d'Alembertian
@@ -357,16 +357,16 @@ This is a key structural fact: the gradient has **two** natural second-order pro
 Let
 
 $$
-\tilde{U} = \sum_{\mu=0}^{3} u_\mu e_\mu, \qquad u_\mu \in \mathbb{R},
+\tilde{S} = \sum_{\mu=0}^{3} u_\mu e_\mu, \qquad u_\mu \in \mathbb{R},
 $$
 
 be a split biquaternion with real coefficients. The **split-biquaternion convective derivative** is the operator
 
 $$
-\tilde{D} = \tilde{U}^{\natural} \tilde{\nabla},
+\tilde{D} = \tilde{S}^{\natural} \tilde{\nabla},
 $$
 
-where $\tilde{U}^{\natural} = u_0 e_0 - u_1 e_1 - u_2 e_2 - u_3 e_3$ is the quaternion conjugate.
+where $\tilde{S}^{\natural} = u_0 e_0 - u_1 e_1 - u_2 e_2 - u_3 e_3$ is the quaternion conjugate.
 
 We compute it explicitly:
 
@@ -379,26 +379,26 @@ where $\bar{u}_0 = u_0$ and $\bar{u}_k = -u_k$.
 Separating the cases and collecting terms, we obtain
 
 $$
-\tilde{D} = \left(u_0 \partial_0 + \mathbf{u}\cdot\mathrm{grad}\right) + \sum_{k=1}^{3} e_k (u_0 \partial_k - u_k \partial_0) - \mathrm{rot}(\mathbf{u}),
+\tilde{D} = \left(u_0 \partial_0 + \vec u\cdot\mathrm{grad}\right) + \sum_{k=1}^{3} e_k (u_0 \partial_k - u_k \partial_0) - \mathrm{rot}(\vec u),
 $$
 
-where $\mathbf{u}\cdot\mathrm{grad} = \sum_k u_k \partial_k$ is a scalar and $\mathrm{rot}(\mathbf{u}) = \sum_{j,k,l} \epsilon_{jkl} u_j \partial_k e_l$ is a split biquaternion.
+where $\vec u\cdot\mathrm{grad} = \sum_k u_k \partial_k$ is a scalar and $\mathrm{rot}(\vec u) = \sum_{j,k,l} \epsilon_{jkl} u_j \partial_k e_l$ is a split biquaternion.
 
 The **scalar part** of $\tilde{D}$ is
 
 $$
-\mathrm{Sc}(\tilde{D}) = u_0 \partial_0 + \mathbf{u}\cdot\mathrm{grad}.
+\mathrm{Sc}(\tilde{D}) = u_0 \partial_0 + \vec u\cdot\mathrm{grad}.
 $$
 
-This is the convective derivative in four dimensions. When $u_0 = 1$, it reduces to the ordinary convective derivative $\partial_0 + \mathbf{u}\cdot\mathrm{grad}$ for a field advected by a flow with velocity $\mathbf{u}$.
+This is the convective derivative in four dimensions. When $u_0 = 1$, it reduces to the ordinary convective derivative $\partial_0 + \vec u\cdot\mathrm{grad}$ for a field advected by a flow with velocity $\vec u$.
 
 The **vector part** of $\tilde{D}$ is
 
 $$
-\mathrm{Vec}(\tilde{D}) = \sum_{k=1}^{3} e_k (u_0 \partial_k - u_k \partial_0) - \mathrm{rot}(\mathbf{u}).
+\mathrm{Vec}(\tilde{D}) = \sum_{k=1}^{3} e_k (u_0 \partial_k - u_k \partial_0) - \mathrm{rot}(\vec u).
 $$
 
-This contains terms that couple the four components of $\tilde{U}$ to the partial derivatives.
+This contains terms that couple the four components of $\tilde{S}$ to the partial derivatives.
 
 ### The Operators in the Idempotent Basis
 
@@ -478,7 +478,7 @@ The split biquaternion algebra $\mathbb{H}_{\mathbb{D}}$ is a real vector space 
 
 A direct definition of differentiability with respect to the split biquaternion variable is problematic, because of the ambiguity of left and right division and the presence of zero divisors. The standard approach is to restrict to a four-dimensional real subspace $V \subset \mathbb{H}_{\mathbb{D}}$, with four real coordinates, and to define the differential operators on this subspace.
 
-The **split-biquaternion gradient** $\tilde{\nabla} = \sum_\mu e_\mu \partial_\mu$ is a split-biquaternion-valued first-order operator. Its quaternion conjugate $\tilde{\nabla}^{\natural}$ is obtained by negating the vector part. The **d'Alembertian** $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = (\partial_0^2 + \Delta)e_0$ is a scalar second-order operator. The **square** $\tilde{\nabla}^2 = (\partial_0^2 - \Delta) + 2\sum_k e_k \partial_0 \partial_k$ is a split-biquaternion-valued second-order operator. The **convective derivative** $\tilde{D} = \tilde{U}^{\natural}\tilde{\nabla}$ is a split-biquaternion-valued first-order operator whose scalar part is the four-dimensional convective derivative.
+The **split-biquaternion gradient** $\tilde{\nabla} = \sum_\mu e_\mu \partial_\mu$ is a split-biquaternion-valued first-order operator. Its quaternion conjugate $\tilde{\nabla}^{\natural}$ is obtained by negating the vector part. The **d'Alembertian** $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = (\partial_0^2 + \Delta)e_0$ is a scalar second-order operator. The **square** $\tilde{\nabla}^2 = (\partial_0^2 - \Delta) + 2\sum_k e_k \partial_0 \partial_k$ is a split-biquaternion-valued second-order operator. The **convective derivative** $\tilde{D} = \tilde{S}^{\natural}\tilde{\nabla}$ is a split-biquaternion-valued first-order operator whose scalar part is the four-dimensional convective derivative.
 
 The formulas for the operators are **identical** to the biquaternion case, because the operators act on functions of four real variables and the multiplication of the coefficients is the same up to the sign of the extra unit. What is different is the algebraic structure of the domains on which the operators are defined:
 
@@ -503,7 +503,7 @@ The specialization to specific four-dimensional subspaces, including the quatern
 | $\tilde\Pi_1 = \tfrac{1}{2}(1 + j)$, $\tilde\Pi_2 = \tfrac{1}{2}(1 - j)$ | Idempotents of $\mathbb{D}$ |
 | $\tilde{Q} = \sum_{\mu=0}^{3} Q_\mu e_\mu$ | General split biquaternion |
 | $Q_\mu = q_\mu + j q'_\mu$ | Split complex coefficient |
-| $\mathbf{Q} = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ | Split vector part |
+| $\vec Q = Q_1 e_1 + Q_2 e_2 + Q_3 e_3$ | Split vector part |
 | $\tilde{Q}^{\natural}, \bar{\tilde{Q}}, \tilde{Q}^{*}, \tilde{Q}^\flat$ | The four conjugations |
 | $N(\tilde{Q}) = \tilde{Q} \tilde{Q}^{\natural}$ | Split-Biquaternion norm |
 | $\tilde{Q}_\pm = \tilde{Q} \tilde\Pi_{1,2}$ | Idempotent components |

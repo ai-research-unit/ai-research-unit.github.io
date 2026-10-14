@@ -39,12 +39,12 @@ and it is constant along every solution, by the Beltrami identity.
 
 The variational principle takes the Lagrangian as given and produces the equation; the mechanical origin of the equation is a different statement, and it is the one that fixes the domain of validity. **D'Alembert's principle** is Newton's law written in terms of the work done on the displacements that the constraints permit, and the Lagrange equation is its transcription into generalised coordinates. The distinction matters because the principle continues to apply where the action is not stationary, which is the non-holonomic case.
 
-**Definition.** Let a system consist of $\mathcal N$ constituents at positions $\mathbf r_1,\dots,\mathbf r_{\mathcal N}$ in three-dimensional space, subject to $\kappa$ independent constraints. A **virtual displacement** $(\delta\mathbf r_1,\dots,\delta\mathbf r_{\mathcal N})$ is an infinitesimal displacement consistent with the constraints **at fixed time**; the constraints are **ideal** when the virtual work of the constraint forces vanishes, $\sum_a\mathbf R_a\cdot\delta\mathbf r_a=0$ for every virtual displacement. The number of **degrees of freedom** is $3\mathcal N-\kappa$, the number of **generalised coordinates** $q^1,\dots,q^n$ is equal to it, and the positions are expressed as $\mathbf r_a=\mathbf r_a(q,t)$.
+**Definition.** Let a system consist of $\mathcal N$ constituents at positions $\vec r_1,\dots,\vec r_{\mathcal N}$ in three-dimensional space, subject to $\kappa$ independent constraints. A **virtual displacement** $(\delta\vec r_1,\dots,\delta\vec r_{\mathcal N})$ is an infinitesimal displacement consistent with the constraints **at fixed time**; the constraints are **ideal** when the virtual work of the constraint forces vanishes, $\sum_a\vec R_a\cdot\delta\vec r_a=0$ for every virtual displacement. The number of **degrees of freedom** is $3\mathcal N-\kappa$, the number of **generalised coordinates** $q^1,\dots,q^n$ is equal to it, and the positions are expressed as $\vec r_a=\vec r_a(q,t)$.
 
-**Principle (D'Alembert).** The impressed forces $\mathbf F_a$ and the accelerations satisfy
+**Principle (D'Alembert).** The impressed forces $\vec F_a$ and the accelerations satisfy
 
 $$
-\sum_a\bigl(\mathbf F_a-m_a\ddot{\mathbf r}_a\bigr)\cdot\delta\mathbf r_a = 0
+\sum_a\bigl(\vec F_a-m_a\ddot{\vec r}_a\bigr)\cdot\delta\vec r_a = 0
 $$
 
 for every virtual displacement. The constraint forces do not appear, because they are ideal; the principle is Newton's law with the constraint forces eliminated rather than solved for.
@@ -57,13 +57,13 @@ $$
 
 with $T$ the kinetic energy. If the forces are conservative with potential $V$, so that $Q_j=-\partial V/\partial q^j$, the equation is the Euler–Lagrange equation of $L=T-V$.
 
-*Proof.* The displacement of the $a$-th constituent is $\delta\mathbf r_a=(\partial\mathbf r_a/\partial q^j)\delta q^j$, so the virtual work of the impressed forces is $Q_j\delta q^j$ with $Q_j=\sum_a\mathbf F_a\cdot\partial\mathbf r_a/\partial q^j$. For the inertial term, the product rule gives
+*Proof.* The displacement of the $a$-th constituent is $\delta\vec r_a=(\partial\vec r_a/\partial q^j)\delta q^j$, so the virtual work of the impressed forces is $Q_j\delta q^j$ with $Q_j=\sum_a\vec F_a\cdot\partial\vec r_a/\partial q^j$. For the inertial term, the product rule gives
 
 $$
-\sum_am_a\ddot{\mathbf r}_a\cdot\frac{\partial\mathbf r_a}{\partial q^j} = \frac{d}{dt}\Bigl(\sum_am_a\dot{\mathbf r}_a\cdot\frac{\partial\mathbf r_a}{\partial q^j}\Bigr)-\sum_am_a\dot{\mathbf r}_a\cdot\frac{d}{dt}\frac{\partial\mathbf r_a}{\partial q^j} ,
+\sum_am_a\ddot{\vec r}_a\cdot\frac{\partial\vec r_a}{\partial q^j} = \frac{d}{dt}\Bigl(\sum_am_a\dot{\vec r}_a\cdot\frac{\partial\vec r_a}{\partial q^j}\Bigr)-\sum_am_a\dot{\vec r}_a\cdot\frac{d}{dt}\frac{\partial\vec r_a}{\partial q^j} ,
 $$
 
-and with $T=\tfrac12\sum_am_a\lvert\dot{\mathbf r}_a\rvert^2$ the identities $\partial\mathbf r_a/\partial q^j=\partial\dot{\mathbf r}_a/\partial\dot q^j$ and $\frac{d}{dt}\partial\mathbf r_a/\partial q^j=\partial\dot{\mathbf r}_a/\partial q^j$ make the two terms $\frac{d}{dt}\partial T/\partial\dot q^j$ and $\partial T/\partial q^j$.
+and with $T=\tfrac12\sum_am_a\lvert\dot{\vec r}_a\rvert^2$ the identities $\partial\vec r_a/\partial q^j=\partial\dot{\vec r}_a/\partial\dot q^j$ and $\frac{d}{dt}\partial\vec r_a/\partial q^j=\partial\dot{\vec r}_a/\partial q^j$ make the two terms $\frac{d}{dt}\partial T/\partial\dot q^j$ and $\partial T/\partial q^j$.
 
 **Definition.** A constraint is **holonomic** if it is the vanishing of a relation $\phi(q,t)=0$ among the coordinates; it is **scleronomic** when $\phi$ carries no explicit time and **rheonomic** when it does. A holonomic constraint is used by elimination: it removes one coordinate, and the remaining coordinates are free. A constraint that is linear in the velocities, $A^a_j(q)\dot q^j=0$, and that admits no integrating factor is **non-holonomic**; it cannot be eliminated, and it must be imposed by multipliers.
 

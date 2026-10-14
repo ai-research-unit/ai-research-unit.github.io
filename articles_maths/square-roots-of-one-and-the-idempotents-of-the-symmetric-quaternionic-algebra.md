@@ -18,61 +18,61 @@ $$
 
 is a bijection from the roots of $+1$ onto the idempotents, with inverse $\tilde\Xi=2\tilde\Pi-e_0$. In this block it is not, and the failure is structural: the product is central valued, it has neither a unit nor an associativity, and the square of an element can never restore its vector part. The article states the roots of $+1$, states the two idempotents, and states the failure of the halving map as the correction it is; the idempotents are classified on their own equation, and on nothing else.
 
-**The results.** The roots of $+1$ are the level set $N=1$ of the diagonal form $N(\tilde\Xi)=\Xi_0^2+(\mathbf\Xi,\mathbf\Xi)$, an affine hyperquadric of complex dimension three containing the two central roots $\pm e_0$ and the four basis elements $e_0,e_1,e_2,e_3$. The scaling $\tilde\Xi\mapsto\mu\tilde\Xi$ carries the level $\lambda$ onto the level $\mu^2\lambda$, so the levels are pairwise disjoint and the non-central ones form one orbit. The idempotents are exactly $0$ and $e_0$: the equation $\tilde\Pi\star\tilde\Pi=N(\tilde\Pi)e_0=\tilde\Pi$ forces the vector part to vanish and the scalar part to satisfy $\Pi_0^2=\Pi_0$. The halving map carries the two central roots of $+1$ onto the two idempotents and carries no other root of $+1$ to an idempotent, so the bijection of the parent is false here and not merely unproved; the idempotent $e_0$ acts by the projection $E$ onto the centre along the vector subspace, which is not the identity; and the block has no Peirce decomposition and no classification of its zero divisors by idempotents.
+**The results.** The roots of $+1$ are the level set $N=1$ of the diagonal form $N(\tilde\Xi)=\Xi_0^2+(\vec\Xi,\vec\Xi)$, an affine hyperquadric of complex dimension three containing the two central roots $\pm e_0$ and the four basis elements $e_0,e_1,e_2,e_3$. The scaling $\tilde\Xi\mapsto\mu\tilde\Xi$ carries the level $\lambda$ onto the level $\mu^2\lambda$, so the levels are pairwise disjoint and the non-central ones form one orbit. The idempotents are exactly $0$ and $e_0$: the equation $\tilde\Pi\star\tilde\Pi=N(\tilde\Pi)e_0=\tilde\Pi$ forces the vector part to vanish and the scalar part to satisfy $\Pi_0^2=\Pi_0$. The halving map carries the two central roots of $+1$ onto the two idempotents and carries no other root of $+1$ to an idempotent, so the bijection of the parent is false here and not merely unproved; the idempotent $e_0$ acts by the projection $E$ onto the centre along the vector subspace, which is not the identity; and the block has no Peirce decomposition and no classification of its zero divisors by idempotents.
 
 The article is algebraic. It does not treat the roots of $0$ and the nilpotents, which are *Square Roots of Zero and the Nilpotents of the Symmetric Quaternionic Algebra*; the roots of a general element, which are *Square Roots of a General Element in the Symmetric Quaternionic Algebra*; the isotropic cone and its two families, which are *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*; the structure of the zero-divisor set, which is *Zero Divisors of the Symmetric Quaternionic Algebra*; or the operators of the block and its idempotent endomorphisms, which are *The Multiplication Operators of the Symmetric Quaternionic Algebra* and *The Specificities of the Symmetric Quaternionic Algebra*. The last paragraph of §*The Roots of One* records how the roots of $-1$ are read off the roots of $+1$; it is a remark, it is used nowhere, and it opens nothing.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_1e_2=e_3$, and central scalar imaginary $i$, $i^2=-1$. A general element is $\tilde\Xi=\Xi_0e_0+\mathbf\Xi$ with $\Xi_\mu\in\mathbb{C}$ and $\mathbf\Xi=\Xi_1e_1+\Xi_2e_2+\Xi_3e_3$, and $(\mathbf\Xi,\mathbf\Xi)=\sum_{k=1}^{3}\Xi_k^2$ may vanish without $\mathbf\Xi$ vanishing. The **symmetric quaternionic multiplication** is
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_1e_2=e_3$, and central scalar imaginary $i$, $i^2=-1$. A general element is $\tilde\Xi=\Xi_0e_0+\vec\Xi$ with $\Xi_\mu\in\mathbb{C}$ and $\vec\Xi=\Xi_1e_1+\Xi_2e_2+\Xi_3e_3$, and $(\vec\Xi,\vec\Xi)=\sum_{k=1}^{3}\Xi_k^2$ may vanish without $\vec\Xi$ vanishing. The **symmetric quaternionic multiplication** is
 
 $$
-\tilde\Xi\star\tilde Q=N(\tilde\Xi,\tilde Q)e_0,\qquad N(\tilde\Xi,\tilde Q)=\Xi_0Q_0+(\mathbf\Xi,\mathbf Q),
+\tilde\Xi\star\tilde Q=N(\tilde\Xi,\tilde Q)e_0,\qquad N(\tilde\Xi,\tilde Q)=\Xi_0Q_0+(\vec\Xi,\vec Q),
 $$
 
-and its diagonal is $N(\tilde\Xi)=N(\tilde\Xi,\tilde\Xi)=\sum_{\mu=0}^{3}\Xi_\mu^2$; the operation is also written $\bullet$. The centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$, the vector subspace is $\mathrm{Vect}(\mathbb{B})=\mathbb{C}e_1+\mathbb{C}e_2+\mathbb{C}e_3$, and $E$ is the projection $\tilde Y\mapsto Y_0e_0$ of the space onto its centre along the vector subspace. The natural conjugation is $\tilde\Xi^{\natural}=\Xi_0-\mathbf\Xi$, and the star and the Hermitian conjugation are those of *Conventions in Mathematics* §*The Conjugations and the Adjoint*. A root of a central value is written $\tilde\Xi$ (§*The Root Convention*), an idempotent $\tilde\Pi$ (§*The Idempotent Convention*), and a generic element $\tilde P$.
+and its diagonal is $N(\tilde\Xi)=N(\tilde\Xi,\tilde\Xi)=\sum_{\mu=0}^{3}\Xi_\mu^2$; the operation is also written $\bullet$. The centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$, the vector subspace is $\mathrm{Vect}(\mathbb{B})=\mathbb{C}e_1+\mathbb{C}e_2+\mathbb{C}e_3$, and $E$ is the projection $\tilde Y\mapsto Y_0e_0$ of the space onto its centre along the vector subspace. The natural conjugation is $\tilde\Xi^{\natural}=\Xi_0-\vec\Xi$, and the star and the Hermitian conjugation are those of *Conventions in Mathematics* §*The Conjugations and the Adjoint*. A root of a central value is written $\tilde\Xi$ (§*The Root Convention*), an idempotent $\tilde\Pi$ (§*The Idempotent Convention*), and a generic element $\tilde P$.
 
 The equations name a product, so the roots and the idempotents are relative to it. The general definition of the power, the square and the root of a central value is *Definitions for the Study of the 12 Algebraic Structures*, §*Powers, the Square and the Roots*, and the general definition of an idempotent, with the orthogonal, complete and primitive families, the projection and the Peirce decomposition, is the same article. Throughout this article the square is the one of the symmetric quaternionic product; the roots of a value and the idempotents of the other products of the space are read product by product in *Square Roots of Minus One, Zero and Plus One in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and *Idempotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 ## The Roots of One
 
-**The roots of $+1$ are exactly the elements with $N(\tilde\Xi)=\Xi_0^2+(\mathbf\Xi,\mathbf\Xi)=1$: the level set of the diagonal form at $1$, an affine hyperquadric of complex dimension three and real dimension six, containing the two central roots $\pm e_0$ and the four basis elements $e_0,e_1,e_2,e_3$, and containing no isotropic element.**
+**The roots of $+1$ are exactly the elements with $N(\tilde\Xi)=\Xi_0^2+(\vec\Xi,\vec\Xi)=1$: the level set of the diagonal form at $1$, an affine hyperquadric of complex dimension three and real dimension six, containing the two central roots $\pm e_0$ and the four basis elements $e_0,e_1,e_2,e_3$, and containing no isotropic element.**
 
 A **root of $+1$** is an element $\tilde\Xi\in\mathbb{B}$ with $\tilde\Xi\star\tilde\Xi=e_0$, the square being the one of the symmetric quaternionic product.
 
 ### The Reduction
 
-**For every central value $\lambda$ the equation $\tilde\Xi\star\tilde\Xi=\lambda e_0$ reduces to the single scalar equation $N(\tilde\Xi)=\Xi_0^2+(\mathbf\Xi,\mathbf\Xi)=\lambda$, so that each root set is a level set of the diagonal form: the natural conjugation and the sign leave each level set in place, while the star and the Hermitian conjugation carry the level set of $\lambda$ onto the level set of $\overline{\lambda}$.**
+**For every central value $\lambda$ the equation $\tilde\Xi\star\tilde\Xi=\lambda e_0$ reduces to the single scalar equation $N(\tilde\Xi)=\Xi_0^2+(\vec\Xi,\vec\Xi)=\lambda$, so that each root set is a level set of the diagonal form: the natural conjugation and the sign leave each level set in place, while the star and the Hermitian conjugation carry the level set of $\lambda$ onto the level set of $\overline{\lambda}$.**
 
 **Theorem (the reduction).** For every $\lambda\in\mathbb{C}$, the equation $\tilde\Xi\star\tilde\Xi=\lambda e_0$ is equivalent to the single scalar equation
 
 $$
-N(\tilde\Xi)=\Xi_0^2+(\mathbf\Xi,\mathbf\Xi)=\lambda .
+N(\tilde\Xi)=\Xi_0^2+(\vec\Xi,\vec\Xi)=\lambda .
 $$
 
 The natural conjugation and the sign leave each level set in place, and the star and the Hermitian conjugation carry the level set of $\lambda$ onto the level set of $\overline{\lambda}$.
 
-*Proof.* The square is $N(\tilde\Xi)e_0$ by the definition of the product, and comparing with $\lambda e_0$ gives the scalar equation, since $N$ depends only on the four coefficients squared and not on their order. The natural conjugation replaces $\mathbf\Xi$ by $-\mathbf\Xi$ and leaves the scalar part, so $N(\tilde\Xi^{\natural})=N(\tilde\Xi)$; the star conjugates the four coefficients and negates the vector part, and the Hermitian conjugation conjugates all four, so both give $N(\tilde\Xi^{*})=N(\overline{\tilde\Xi})=\overline{N(\tilde\Xi)}$.
+*Proof.* The square is $N(\tilde\Xi)e_0$ by the definition of the product, and comparing with $\lambda e_0$ gives the scalar equation, since $N$ depends only on the four coefficients squared and not on their order. The natural conjugation replaces $\vec\Xi$ by $-\vec\Xi$ and leaves the scalar part, so $N(\tilde\Xi^{\natural})=N(\tilde\Xi)$; the star conjugates the four coefficients and negates the vector part, and the Hermitian conjugation conjugates all four, so both give $N(\tilde\Xi^{*})=N(\overline{\tilde\Xi})=\overline{N(\tilde\Xi)}$.
 
-The reduction is total in the block: the vector part enters only through the single scalar $(\mathbf\Xi,\mathbf\Xi)$ and never through a vector equation, so the root problem is a problem of a quadratic form and not of a multiplication.
+The reduction is total in the block: the vector part enters only through the single scalar $(\vec\Xi,\vec\Xi)$ and never through a vector equation, so the root problem is a problem of a quadratic form and not of a multiplication.
 
 ### The Level Set of Plus One
 
 **Theorem (the roots of $+1$).** The roots of $+1$ are the elements with
 
 $$
-N(\tilde\Xi)=\Xi_0^2+(\mathbf\Xi,\mathbf\Xi)=1 ,
+N(\tilde\Xi)=\Xi_0^2+(\vec\Xi,\vec\Xi)=1 ,
 $$
 
 that is the level set of the diagonal form at $1$. The set is an affine hyperquadric of $\mathbb{C}^4$, of complex dimension three and real dimension six; it contains the two central roots $\pm e_0$ and the four basis elements $e_0,e_1,e_2,e_3$, and it contains no isotropic element.
 
 *Proof.* The reduction gives the equation; the level $1$ is non-central and the polynomial $N-1$ is nonsingular, so the set is an affine hyperquadric. The basis elements have $N(e_\mu)=1$ by the table $N(e_\mu,e_\nu)=\delta_{\mu\nu}$, and $\pm e_0$ likewise. An isotropic root would satisfy $N(\tilde\Xi)=0\neq1$.
 
-**Parametrisation.** Over each vector part $\mathbf\Xi$ the roots are the elements
+**Parametrisation.** Over each vector part $\vec\Xi$ the roots are the elements
 
 $$
-\tilde\Xi=\Xi_0e_0+\mathbf\Xi,\qquad \Xi_0^2=1-(\mathbf\Xi,\mathbf\Xi),
+\tilde\Xi=\Xi_0e_0+\vec\Xi,\qquad \Xi_0^2=1-(\vec\Xi,\vec\Xi),
 $$
 
-so the solutions over a fixed $\mathbf\Xi$ are the two square roots of $1-(\mathbf\Xi,\mathbf\Xi)$ when $(\mathbf\Xi,\mathbf\Xi)\neq1$, and the single value $\Xi_0=0$ when $(\mathbf\Xi,\mathbf\Xi)=1$. The exceptional vector parts exist, for instance $\mathbf\Xi=e_1$.
+so the solutions over a fixed $\vec\Xi$ are the two square roots of $1-(\vec\Xi,\vec\Xi)$ when $(\vec\Xi,\vec\Xi)\neq1$, and the single value $\Xi_0=0$ when $(\vec\Xi,\vec\Xi)=1$. The exceptional vector parts exist, for instance $\vec\Xi=e_1$.
 
 ### The Trivial Roots
 
@@ -116,10 +116,10 @@ $$
 (i\tilde\Xi)\star(i\tilde\Xi)=i^2\,(\tilde\Xi\star\tilde\Xi)=-e_0
 $$
 
-for every root $\tilde\Xi$ of $+1$; the inverse is $\tilde\Xi_-\mapsto-i\tilde\Xi_-$. The roots of $-1$ are therefore nonempty, and they are the level set $N=-1$,
+for every root $\tilde\Xi$ of $+1$; the inverse sends a root of $-1$ to $-i$ times it. The roots of $-1$ are therefore nonempty, and they are the level set $N=-1$,
 
 $$
-\{\tilde\Xi:N(\tilde\Xi)=-1\}=\Bigl\{\Xi_0e_0+\mathbf\Xi:\Xi_0^2=-1-(\mathbf\Xi,\mathbf\Xi)\Bigr\},
+\{\tilde\Xi:N(\tilde\Xi)=-1\}=\Bigl\{\Xi_0e_0+\vec\Xi:\Xi_0^2=-1-(\vec\Xi,\vec\Xi)\Bigr\},
 $$
 
 an affine hyperquadric of complex dimension three, containing the two central roots $\pm ie_0$ and no isotropic element, and invariant under the three conjugations because the value $-1$ is real.
@@ -204,7 +204,7 @@ which is a direct sum decomposition of the space under the projection $E$ and no
 
 ## Summary
 
-The roots of $+1$ of the symmetric quaternionic product are the level set $N=1$ of the form $N(\tilde\Xi)=\Xi_0^2+(\mathbf\Xi,\mathbf\Xi)$: an affine hyperquadric of complex dimension three containing the two central roots $\pm e_0$ and the four basis elements $e_0,e_1,e_2,e_3$. The roots of $-1$ are read from them by multiplication by the central imaginary, $\tilde\Xi\mapsto i\tilde\Xi$, because the product is two-sidedly linear and $i$ is central: the map is a bijection onto the level set $N=-1$, which is nonempty and contains the two central roots $\pm ie_0$; in a sesquilinear product the mechanism fails, and the roots of $-1$ are then not read this way. The roots of $0$ are the punctured isotropic cone and are *Square Roots of Zero and the Nilpotents of the Symmetric Quaternionic Algebra*.
+The roots of $+1$ of the symmetric quaternionic product are the level set $N=1$ of the form $N(\tilde\Xi)=\Xi_0^2+(\vec\Xi,\vec\Xi)$: an affine hyperquadric of complex dimension three containing the two central roots $\pm e_0$ and the four basis elements $e_0,e_1,e_2,e_3$. The roots of $-1$ are read from them by multiplication by the central imaginary, $\tilde\Xi\mapsto i\tilde\Xi$, because the product is two-sidedly linear and $i$ is central: the map is a bijection onto the level set $N=-1$, which is nonempty and contains the two central roots $\pm ie_0$; in a sesquilinear product the mechanism fails, and the roots of $-1$ are then not read this way. The roots of $0$ are the punctured isotropic cone and are *Square Roots of Zero and the Nilpotents of the Symmetric Quaternionic Algebra*.
 
 The idempotents of the block are exactly $0$ and $e_0$: the equation $\tilde\Pi\star\tilde\Pi=N(\tilde\Pi)e_0=\tilde\Pi$ forces the vector part to vanish, and the scalar part satisfies $\Pi_0^2=\Pi_0$. The continuum of idempotents of the parent plain algebra, the halving image of its roots of $+1$, dissolves in the block: the halving map $\tilde\Pi=\tfrac12(e_0+\tilde P)$ carries only the two central roots of $+1$ to idempotents, because the centrality of the product prevents the vector part of $\tilde\Pi$ from being cancelled. The idempotent $e_0$ acts by the projection $E$ onto the centre along the vector subspace, which is not the identity — the block having no unit — and the block has no Peirce decomposition, the available splitting $\mathbb{B}=\mathbb{C}e_0\oplus\mathrm{Vect}(\mathbb{B})$ being the image–kernel splitting of $E$ and not a decomposition into corner algebras. The parent's classification of the zero divisors by nontrivial idempotents has no analogue, since the block has neither the idempotents nor a proper zero-divisor set; the idempotent endomorphisms of the block are a different, larger family, treated in the Specificities entry.
 
@@ -213,7 +213,7 @@ The idempotents of the block are exactly $0$ and $e_0$: the equation $\tilde\Pi\
 | symbol | meaning |
 |---|---|
 | $\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0$ | the symmetric quaternionic multiplication |
-| $N(\tilde Q)=\sum_\mu Q_\mu^2=\Xi_0^2+(\mathbf\Xi,\mathbf\Xi)$ | the form at the two equal arguments |
+| $N(\tilde Q)=\sum_\mu Q_\mu^2=\Xi_0^2+(\vec\Xi,\vec\Xi)$ | the form at the two equal arguments |
 | $N=1$ | the roots of $+1$ |
 | $\pm e_0$ | the central roots of $+1$ |
 | $e_0,e_1,e_2,e_3$ | the four roots of $+1$ of the basis |

@@ -7,7 +7,7 @@ This article studies the algebraic norm and the invertibility of the antisymmetr
 $$
 \tilde P\diamond\tilde Q=\operatorname{Vect}\bigl(\tilde P\tilde Q^{*}\bigr)
 =\tfrac12\bigl(\tilde P\tilde Q^{*}-\overline{\tilde Q\tilde P^{*}}\bigr)
-=-P_0\overline{\mathbf{Q}}+\overline{Q_0}\mathbf{P}-\mathbf{P}\times\overline{\mathbf{Q}},
+=-P_0\overline{\vec Q}+\overline{Q_0}\vec P-\vec P\times\overline{\vec Q},
 $$
 
 the antisymmetric half of the general plain sesquilinear product, the operation $\mathrm{APS}$ of *Introduction to the Antisymmetric Plain Sesqualgebra of Biquaternions*. The operation is $\mathbb{C}$-bilinear in the first slot, conjugate-linear in the second, vector valued, and it has no unit on either side.
@@ -18,9 +18,9 @@ Both notions of the title are therefore **absences**. The block has no two-sided
 
 **Boundaries.** The operation, its class and the absence of a unit are *Introduction to the Antisymmetric Plain Sesqualgebra of Biquaternions*; the general definitions of the unit and the inverse are *Definitions for the Study of the 12 Algebraic Structures*, §*The Unit and the Inverse*, and the unit table of the four general products is *Comparison Between the Four General Products*; the element theory that uses the substitute is *Zero Divisors of the Antisymmetric Plain Sesqualgebra*, and the structural reading of the diagonal is *The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra*. The algebraic norm of the general plain sesquilinear product is $H$, a different form, and its theory is *Norm and Invertibility in the General Plain Sesqualgebra*. The centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ and the vector subspace is $\operatorname{Vect}(\mathbb{B})$; the projection $\operatorname{Vect}$ removes the scalar part, and it is $\mathbb{C}$-linear and surjective with kernel $\mathbb{C}_{\mathbb{B}}$.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$, central scalar imaginary $i$ and $Q_\mu\in\mathbb{C}$; an element is $\tilde Q=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^{3}Q_ke_k$. The natural conjugation is $\tilde Q^{\natural}=Q_0-\mathbf{Q}$, the coefficientwise conjugation is $\bar{\cdot}$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The general plain sesquilinear product is $\tilde P\tilde Q^{*}$, and the product of the block is $\diamond$.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$, central scalar imaginary $i$ and $Q_\mu\in\mathbb{C}$; an element is $\tilde Q=Q_0e_0+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_ke_k$. The natural conjugation is $\tilde Q^{\natural}=Q_0-\vec Q$, the coefficientwise conjugation is $\bar{\cdot}$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The general plain sesquilinear product is $\tilde P\tilde Q^{*}$, and the product of the block is $\diamond$.
 
-**The results.** The block has **no algebraic norm**: its scalar part vanishes identically, $\mathrm{Sc}(\tilde P\diamond\tilde Q)=0$, so the diagonal is the zero function and, by the convention that a vanishing quadratic form is not an algebraic norm, the block is counted with no algebraic norm rather than a zero one. It has **no unit** on either side, hence **no invertible element** and an **empty group of units**, and the one-sided inverse equations $\tilde Q\diamond\tilde R=e_0$ and $\tilde R\diamond\tilde Q=e_0$ have **no solution**, because every value of the block is a pure vector. The invertibility criterion of the parent is **not transferred**: the form $H$ is not the algebraic norm of the block and is not read here. What replaces the inverse is the operator reading, in which the multiplication by a non-central $\tilde A$ has the complex plane $\mathbb{C}e_0\oplus\mathbb{C}\overline{\mathbf A}$ as its kernel and induces a conjugate-linear bijection of the quotient onto the plane of the values orthogonal to $\mathbf{A}$.
+**The results.** The block has **no algebraic norm**: its scalar part vanishes identically, $\mathrm{Sc}(\tilde P\diamond\tilde Q)=0$, so the diagonal is the zero function and, by the convention that a vanishing quadratic form is not an algebraic norm, the block is counted with no algebraic norm rather than a zero one. It has **no unit** on either side, hence **no invertible element** and an **empty group of units**, and the one-sided inverse equations $\tilde Q\diamond\tilde R=e_0$ and $\tilde R\diamond\tilde Q=e_0$ have **no solution**, because every value of the block is a pure vector. The invertibility criterion of the parent is **not transferred**: the form $H$ is not the algebraic norm of the block and is not read here. What replaces the inverse is the operator reading, in which the multiplication by a non-central $\tilde A$ has the complex plane $\mathbb{C}e_0\oplus\mathbb{C}\overline{\vec A}$ as its kernel and induces a conjugate-linear bijection of the quotient onto the plane of the values orthogonal to $\vec A$.
 
 ## The Relative Definitions
 
@@ -41,10 +41,10 @@ Throughout this article the product is the block $\diamond$, and, unqualified, *
 *Proof.* The two one-sided actions of $e_0$ are
 
 $$
-\tilde P\diamond e_0=\mathbf{P},\qquad e_0\diamond\tilde Q=-\overline{\mathbf{Q}},
+\tilde P\diamond e_0=\vec P,\qquad e_0\diamond\tilde Q=-\overline{\vec Q},
 $$
 
-the first being $\operatorname{Vect}(\tilde P)$ and the second $\operatorname{Vect}(\tilde Q^{*})$. A left unit $\tilde u$ would satisfy, at $\tilde X=e_0$, the equation $\tilde u\diamond e_0=e_0$, that is $\mathbf{u}=e_0$; the left member is a vector part, of scalar part zero, while the right member has scalar part one, so the equation is impossible. A right unit $\tilde u$ would satisfy, at $\tilde X=e_0$, the equation $e_0\diamond\tilde u=e_0$, that is $-\overline{\mathbf{u}}=e_0$; the same parity of the scalar part forbids it.
+the first being $\operatorname{Vect}(\tilde P)$ and the second $\operatorname{Vect}(\tilde Q^{*})$. A left unit $\tilde u$ would satisfy, at $\tilde X=e_0$, the equation $\tilde u\diamond e_0=e_0$, that is $\vec u=e_0$; the left member is a vector part, of scalar part zero, while the right member has scalar part one, so the equation is impossible. A right unit $\tilde u$ would satisfy, at $\tilde X=e_0$, the equation $e_0\diamond\tilde u=e_0$, that is $-\overline{\vec u}=e_0$; the same parity of the scalar part forbids it.
 
 The obstruction is the projection: every value of the block is a pure vector, so its scalar part vanishes, while the unit $e_0$ has scalar part one. The block cannot see the unit of the space on either side, and the two displays above are the two one-sided actions that replace it. The parent product $\tilde P\tilde Q^{*}$ has the right unit $e_0$, and the block destroys it: the right-unit equation survives on the vector subspace alone and fails at every element with a non-zero scalar part.
 
@@ -100,7 +100,7 @@ the vector part of the Hermitian square $\tilde Q\tilde Q^{*}$; it is central ex
 
 ## The Relative Inverse
 
-**The multiplication by a non-central element $\tilde A$ has the complex plane $\mathbb{C}e_0\oplus\mathbb{C}\overline{\mathbf A}$ as its kernel, and it induces a conjugate-linear bijection of the quotient of $\mathbb{B}$ by that kernel onto the plane of the values orthogonal to $\mathbf{A}$ in the complex bilinear dot**, the relative inverse that replaces the missing inverse.
+**The multiplication by a non-central element $\tilde A$ has the complex plane $\mathbb{C}e_0\oplus\mathbb{C}\overline{\vec A}$ as its kernel, and it induces a conjugate-linear bijection of the quotient of $\mathbb{B}$ by that kernel onto the plane of the values orthogonal to $\vec A$ in the complex bilinear dot**, the relative inverse that replaces the missing inverse.
 
 The block has no inverse, but the one-sided multiplication by an element is an operator with a kernel and an image, and its invertibility on a quotient is the substitute the article records.
 
@@ -110,9 +110,9 @@ $$
 L_{\tilde A}\tilde R=\tilde A\diamond\tilde R,
 $$
 
-has the complex plane $\mathbb{C}e_0\oplus\mathbb{C}\overline{\mathbf{A}}$ of complex dimension two as its kernel, and it induces a conjugate-linear bijection of the quotient of $\mathbb{B}$ by that kernel onto the plane of the values orthogonal to $\mathbf{A}$ in the complex bilinear dot.
+has the complex plane $\mathbb{C}e_0\oplus\mathbb{C}\overline{\vec A}$ of complex dimension two as its kernel, and it induces a conjugate-linear bijection of the quotient of $\mathbb{B}$ by that kernel onto the plane of the values orthogonal to $\vec A$ in the complex bilinear dot.
 
-*Proof.* The kernel is the annihilator computed in *Zero Divisors of the Antisymmetric Plain Sesqualgebra*, of complex dimension two for a non-central element, and the block is conjugate-linear in its second slot, so the induced map on the quotient is conjugate-linear; the image is the plane $\{\tilde W:\mathbf{W}\in\operatorname{Vect}(\mathbb{B}),\ (\mathbf{W},\mathbf{A})=0\}$, and the dimension count gives the bijection.
+*Proof.* The kernel is the annihilator computed in *Zero Divisors of the Antisymmetric Plain Sesqualgebra*, of complex dimension two for a non-central element, and the block is conjugate-linear in its second slot, so the induced map on the quotient is conjugate-linear; the image is the plane $\{\tilde W:\vec W\in\operatorname{Vect}(\mathbb{B}),\ (\vec W,\vec A)=0\}$, and the dimension count gives the bijection.
 
 So the equation $\tilde A\diamond\tilde R=\tilde W$ is solvable exactly for the values on that plane, and the set of its solutions is a coset of the kernel. The block has no inverse, and it has a **relative inverse** in which each non-central element acts invertibly between two spaces of complex dimension two, the loss and the gain being accounted by the kernel and the image.
 
@@ -130,13 +130,13 @@ The antisymmetric plain sesqualgebra $\tilde P\diamond\tilde Q=\operatorname{Vec
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\diamond\tilde Q=\operatorname{Vect}(\tilde P\tilde Q^{*})=-P_0\overline{\mathbf{Q}}+\overline{Q_0}\mathbf{P}-\mathbf{P}\times\overline{\mathbf{Q}}$ | the antisymmetric plain sesqualgebra, the operation $\mathrm{APS}$ |
+| $\tilde P\diamond\tilde Q=\operatorname{Vect}(\tilde P\tilde Q^{*})=-P_0\overline{\vec Q}+\overline{Q_0}\vec P-\vec P\times\overline{\vec Q}$ | the antisymmetric plain sesqualgebra, the operation $\mathrm{APS}$ |
 | $\tilde P\tilde Q^{*}$ | the parent general plain sesquilinear product |
-| $\tilde P\diamond e_0=\mathbf{P}$, $e_0\diamond\tilde Q=-\overline{\mathbf{Q}}$ | the two one-sided actions of $e_0$ |
+| $\tilde P\diamond e_0=\vec P$, $e_0\diamond\tilde Q=-\overline{\vec Q}$ | the two one-sided actions of $e_0$ |
 | $\mathrm{Sc}(\tilde P\diamond\tilde Q)=0$ | the scalar part of the block vanishes identically |
 | $\varphi_{\diamond}(\tilde Q)=0$ | the algebraic norm of the block, the zero function; the block carries no algebraic norm |
 | $\tilde Q\diamond\tilde Q=\operatorname{Vect}(\tilde Q\tilde Q^{*})$ | the diagonal, the vector part of the Hermitian square |
-| $L_{\tilde A}\tilde R=\tilde A\diamond\tilde R$ | the one-sided multiplication, kernel $\mathbb{C}e_0\oplus\mathbb{C}\overline{\mathbf{A}}$ |
+| $L_{\tilde A}\tilde R=\tilde A\diamond\tilde R$ | the one-sided multiplication, kernel $\mathbb{C}e_0\oplus\mathbb{C}\overline{\vec A}$ |
 | $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$, $\operatorname{Vect}(\mathbb{B})$ | the centre, the vector subspace |
 | no unit, no inverse, no group of units | the absence carried by the block |
 

@@ -41,16 +41,16 @@ rather than re-derived.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis
 $e_0=1,e_1,e_2,e_3$, $e_k^{2}=-e_0$, $e_1e_2=e_3$, and central scalar imaginary $i$ with $i^{2}=-1$. An
-element is $\tilde Q=Q_0e_0+\mathbf Q$ with $Q_\mu\in\mathbb{C}$ and vector part
-$\mathbf Q=Q_1e_1+Q_2e_2+Q_3e_3$; the complex bilinear dot and cross products of vector parts are
-$(\mathbf P,\mathbf Q)=\sum_kP_kQ_k$ and $\mathbf P\times\mathbf Q$. The conjugations are the natural one
+element is $\tilde Q=Q_0e_0+\vec Q$ with $Q_\mu\in\mathbb{C}$ and vector part
+$\vec Q=Q_1e_1+Q_2e_2+Q_3e_3$; the complex bilinear dot and cross products of vector parts are
+$(\vec P,\vec Q)=\sum_kP_kQ_k$ and $\vec P\times\vec Q$. The conjugations are the natural one
 ${}^{\natural}$ (keeps the scalar coordinate, negates the three vector coordinates),
-$\tilde Q^{\natural}=Q_0-\mathbf Q$, the coefficientwise one $\bar{\cdot}$, and the Hermitian star
+$\tilde Q^{\natural}=Q_0-\vec Q$, the coefficientwise one $\bar{\cdot}$, and the Hermitian star
 ${}^{*}=\bar{\cdot}\circ{}^{\natural}$; the sectors are $\mathbb{M}_\pm=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}$,
 the material one being $\mathbb{M}_-$. Juxtaposition $\tilde P\tilde Q$ is the ordinary (plain) product of
 the algebra, $\star$ is the quaternionic product, and the biquaternion norm is
 $N(\tilde Q)=\langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^{2}$.
-The material coordinate is $\tilde Q=ict\,e_0+\mathbf x$ with $\mathbf x=xe_1+ye_2+ze_3$.
+The material coordinate is $\tilde Q=ict\,e_0+\vec x$ with $\vec x=xe_1+ye_2+ze_3$.
 
 ## The Product and the Square
 
@@ -59,9 +59,9 @@ factor is read through the natural conjugation before being multiplied. Writing 
 scalar–vector split,
 
 $$
-\tilde P\tilde Q=\bigl(P_0Q_0-(\mathbf P,\mathbf Q)\bigr)e_0+P_0\mathbf Q+Q_0\mathbf P+\mathbf P\times\mathbf Q ,
+\tilde P\tilde Q=\bigl(P_0Q_0-(\vec P,\vec Q)\bigr)e_0+P_0\vec Q+Q_0\vec P+\vec P\times\vec Q ,
 \qquad
-\tilde P\star\tilde Q=\bigl(P_0Q_0+(\mathbf P,\mathbf Q)\bigr)e_0+P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q ,
+\tilde P\star\tilde Q=\bigl(P_0Q_0+(\vec P,\vec Q)\bigr)e_0+P_0\vec Q-Q_0\vec P-\vec P\times\vec Q ,
 $$
 
 shows that the insertion does exactly one thing: it **reverses the sign of the product of the two vector
@@ -70,7 +70,7 @@ company as soon as one is present. On the vector part alone the quaternionic pro
 is
 
 $$
-\mathbf U\star\mathbf V = -\mathbf U\mathbf V = (\mathbf U,\mathbf V)e_0-\mathbf U\times\mathbf V .
+\vec U\star\vec V = -\vec U\vec V = (\vec U,\vec V)e_0-\vec U\times\vec V .
 $$
 
 **Theorem (the square is the interval).** For every $\tilde Q$,
@@ -80,14 +80,14 @@ $$
 $$
 
 **Proof.** In the second display put $\tilde P=\tilde Q$: the vector part is
-$Q_0\mathbf Q-Q_0\mathbf Q-\mathbf Q\times\mathbf Q=0$, because the cross product of a vector with itself
-vanishes, and the scalar part is $Q_0^{2}+(\mathbf Q,\mathbf Q)=N(\tilde Q)$.
+$Q_0\vec Q-Q_0\vec Q-\vec Q\times\vec Q=0$, because the cross product of a vector with itself
+vanishes, and the scalar part is $Q_0^{2}+(\vec Q,\vec Q)=N(\tilde Q)$.
 
 Every square of a single element therefore lands in the **centre** of the algebra, and on the central
 line it lands on a definite value. Two consequences are used below. The symmetrisation is central,
-$\tilde P\star\tilde Q+\tilde Q\star\tilde P=2\bigl(P_0Q_0+(\mathbf P,\mathbf Q)\bigr)e_0$, and the
+$\tilde P\star\tilde Q+\tilde Q\star\tilde P=2\bigl(P_0Q_0+(\vec P,\vec Q)\bigr)e_0$, and the
 discrepancy of the two orders is purely a vector,
-$\tilde P\star\tilde Q-\tilde Q\star\tilde P=2P_0\mathbf Q-2Q_0\mathbf P-2\mathbf P\times\mathbf Q$. The
+$\tilde P\star\tilde Q-\tilde Q\star\tilde P=2P_0\vec Q-2Q_0\vec P-2\vec P\times\vec Q$. The
 article does not develop either; it needs only that the square is central.
 
 **Remark (verified).**
@@ -103,31 +103,31 @@ notational unless it is stated.
 **Proposition (the ordinary square).** For every $\tilde Q$,
 
 $$
-\tilde Q\tilde Q = \bigl(Q_0^{2}-(\mathbf Q,\mathbf Q)\bigr)e_0 + 2Q_0\mathbf Q ,
+\tilde Q\tilde Q = \bigl(Q_0^{2}-(\vec Q,\vec Q)\bigr)e_0 + 2Q_0\vec Q ,
 $$
 
 so the ordinary square is central exactly when the scalar part of $\tilde Q$ vanishes or the vector part
 does, and its scalar value is
 
 $$
-\mathrm{Sc}(\tilde Q\tilde Q)=Q_0^{2}-(\mathbf Q,\mathbf Q)=B(\tilde Q,\tilde Q) ,
+\mathrm{Sc}(\tilde Q\tilde Q)=Q_0^{2}-(\vec Q,\vec Q)=B(\tilde Q,\tilde Q) ,
 $$
 
 the algebraic norm value of the general plain bilinear form $B$ of *The General Plain Bilinear Product on the Biquaternion Space*.
 
-**Proof.** Distribute the product and use $\mathbf Q^{2}=-(\mathbf Q,\mathbf Q)$ for a vector part.
+**Proof.** Distribute the product and use $\vec Q^{2}=-(\vec Q,\vec Q)$ for a vector part.
 
 The two squares differ in the sign of the vector pairing, and that single sign is the whole difference
 between a Euclidean square and the interval:
 
 $$
-B(\tilde Q,\tilde Q)=Q_0^{2}-(\mathbf Q,\mathbf Q) , \qquad N(\tilde Q)=Q_0^{2}+(\mathbf Q,\mathbf Q) .
+B(\tilde Q,\tilde Q)=Q_0^{2}-(\vec Q,\vec Q) , \qquad N(\tilde Q)=Q_0^{2}+(\vec Q,\vec Q) .
 $$
 
-On the material element $\tilde Q=ict\,e_0+\mathbf x$ the two read
+On the material element $\tilde Q=ict\,e_0+\vec x$ the two read
 
 $$
-B(\tilde Q,\tilde Q)=-c^{2}t^{2}-\lvert\mathbf x\rvert^{2} , \qquad N(\tilde Q)=-c^{2}t^{2}+\lvert\mathbf x\rvert^{2} ,
+B(\tilde Q,\tilde Q)=-c^{2}t^{2}-\lvert\vec x\rvert^{2} , \qquad N(\tilde Q)=-c^{2}t^{2}+\lvert\vec x\rvert^{2} ,
 $$
 
 the first the negative of the Euclidean length of the event, the second the interval. On this sector $B$
@@ -141,7 +141,7 @@ $\tilde Q=3e_0+ie_1$ shows both squares at once: the ordinary square is $10e_0+6
 central, its scalar value $10$ is $B(\tilde Q,\tilde Q)=9+1$, and the quaternionic square is
 $N(\tilde Q)e_0=8e_0$. The three numbers are $10$, $8$ and the Euclidean value $10$: the first and
 the last coincide only because this vector coefficient is purely imaginary, where
-$-\mathbf Q\!\cdot\!\mathbf Q$ and $\lvert\mathbf Q\rvert^{2}$ agree, so only two of the three values
+$-\vec Q\!\cdot\!\vec Q$ and $\lvert\vec Q\rvert^{2}$ agree, so only two of the three values
 differ — they remain three different questions asked of the same element.
 
 ## The Interval Is a Multiplicative Charge
@@ -265,8 +265,8 @@ because it is the concrete coupling the two sectors of the framework otherwise l
 $\tilde Q\star\tilde Q=N(\tilde Q)e_0$ lies on the real central line $\mathbb{R}e_0$, which is contained
 in the informational sector $\mathbb{M}_+$.
 
-**Proof.** Write $\tilde Q=ict\,e_0+\mathbf x$ with $t$ and the components of $\mathbf x$ real. Then
-$Q_0=ict$ is purely imaginary, the $Q_k$ are real, and $N(\tilde Q)=Q_0^{2}+\mathbf x^{2}=-c^{2}t^{2}+\mathbf x^{2}$
+**Proof.** Write $\tilde Q=ict\,e_0+\vec x$ with $t$ and the components of $\vec x$ real. Then
+$Q_0=ict$ is purely imaginary, the $Q_k$ are real, and $N(\tilde Q)=Q_0^{2}+\vec x^{2}=-c^{2}t^{2}+\vec x^{2}$
 is real. The unit $e_0$ is Hermitian, so $\mathbb{R}e_0\subseteq\mathbb{M}_+$. The square is
 $N(\tilde Q)e_0$ by the square identity.
 
@@ -323,7 +323,7 @@ any later block; it is recorded here for the name and for the exact reason it va
 composition**. Each clause below names a proved identity, and each is labelled as an interpretation.
 
 - **The interval of a material operation is its square.** On the material coordinate
-$\tilde Q=ict\,e_0+\mathbf x$ the square is $(-c^{2}t^{2}+\mathbf x^{2})e_0$, the Minkowski interval.
+$\tilde Q=ict\,e_0+\vec x$ the square is $(-c^{2}t^{2}+\vec x^{2})e_0$, the Minkowski interval.
 The interval, the four-velocity, the four-momentum and the rotor inverse are worked out in *The Four Readings of a Biquaternion: Norm, Rank, Charge and Scale* and are cited, not repeated.
 - **The massless shell is the vanishing of the square, and the mass shell a level set of it.** A
 four-momentum on shell has square $N(\tilde P)=-m^{2}c^{2}$, so the mass shell is
@@ -356,8 +356,8 @@ informational sector is
 $\lambda=\lim_{t\to\infty}\tfrac1{2t}\log\bigl(\lvert N(\delta\tilde\rho(t))\rvert/\lvert N(\delta\tilde\rho(0))\rvert\bigr)$,
 with the factor $\tfrac12$ forced by the quadratic form, and the multiplicativity of $N$ is
 what makes the logarithm additive along a flow and the limit finite (*The Lyapunov Exponent and
-Information Loss in the Biquaternion Framework*). Read on a material element $ict\,e_0+\mathbf x$ the
-potential is half the logarithm of the magnitude of the Minkowski interval, $-c^{2}t^{2}+\mathbf x^{2}$.
+Information Loss in the Biquaternion Framework*). Read on a material element $ict\,e_0+\vec x$ the
+potential is half the logarithm of the magnitude of the Minkowski interval, $-c^{2}t^{2}+\vec x^{2}$.
 The algebra proves the multiplicative law and nothing about the physical use of its logarithm, and the
 additive-potential name is the framework's.
 
@@ -391,7 +391,7 @@ the framework records the question rather than resolving it.
 ## The Ledger
 
 **Proved.** The square identity $\tilde Q\star\tilde Q=N(\tilde Q)e_0$ and the centrality of the square.
-The contrast with the ordinary square $\tilde Q\tilde Q=(Q_0^{2}-(\mathbf Q,\mathbf Q))e_0+2Q_0\mathbf Q$,
+The contrast with the ordinary square $\tilde Q\tilde Q=(Q_0^{2}-(\vec Q,\vec Q))e_0+2Q_0\vec Q$,
 whose scalar value is $B(\tilde Q,\tilde Q)$ and which is central only in the two degenerate cases; the two
 squares differ by the sign of the vector pairing, which the natural conjugation inserts. The
 multiplicativity $N(\tilde P\star\tilde Q)=N(\tilde P)N(\tilde Q)$ and the level-set law
@@ -438,9 +438,9 @@ The square map is read as the **Born/measurement arrow**: the square $\tilde{Q}\
 The quaternionic product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ is the general plain bilinear product with
 the natural conjugation inserted in the first slot, and the insertion reverses the sign of the product of
 the vector parts. Its square is central, $\tilde Q\star\tilde Q=N(\tilde Q)e_0$, so **the interval of a
-material element is its square**, and on the material coordinate $ict\,e_0+\mathbf x$ the square is
-$-c^{2}t^{2}+\mathbf x^{2}$. The general plain bilinear product squares to something else,
-$\tilde Q\tilde Q=(Q_0^{2}-(\mathbf Q,\mathbf Q))e_0+2Q_0\mathbf Q$, whose scalar value
+material element is its square**, and on the material coordinate $ict\,e_0+\vec x$ the square is
+$-c^{2}t^{2}+\vec x^{2}$. The general plain bilinear product squares to something else,
+$\tilde Q\tilde Q=(Q_0^{2}-(\vec Q,\vec Q))e_0+2Q_0\vec Q$, whose scalar value
 $B(\tilde Q,\tilde Q)$ is negative definite on the material sector and has no cone: the two products differ
 by the sign of the vector pairing, and that sign is the difference between a Euclidean square and the
 interval. The value of the square is multiplicative, $N(\tilde P\star\tilde Q)=N(\tilde P)N(\tilde Q)$,
@@ -469,7 +469,7 @@ Automorphisms*; and the comparison of the four general products by *The Four Gen
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | the biquaternion algebra |
 | $e_0,e_1,e_2,e_3$; $i$ | the basis, $e_k^{2}=-e_0$; the central scalar imaginary |
-| $\tilde Q=Q_0e_0+\mathbf Q$ | an element and its scalar–vector split |
+| $\tilde Q=Q_0e_0+\vec Q$ | an element and its scalar–vector split |
 | ${}^{\natural}$, ${}^{*}$ | the natural and the Hermitian conjugations |
 | $\mathbb{M}_\pm$ | the material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\tilde P\tilde Q$ | the ordinary (associative) product |
@@ -480,7 +480,7 @@ Automorphisms*; and the comparison of the four general products by *The Four Gen
 | $N(\tilde P\star\tilde Q)=N(\tilde P)N(\tilde Q)$ | multiplicativity; the interval as a charge |
 | $\mathcal N=\{N=0\}$ | the null set; the light cone on the material sector |
 | $\{N=1\}$ | the interval-one operations; a group under the general plain bilinear product |
-| $ict\,e_0+\mathbf x$ | the material coordinate |
+| $ict\,e_0+\vec x$ | the material coordinate |
 
 ## Further Reading
 

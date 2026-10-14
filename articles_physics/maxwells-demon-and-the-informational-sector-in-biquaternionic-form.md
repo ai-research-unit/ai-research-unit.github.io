@@ -18,7 +18,7 @@ The framework's contribution is the localisation of each step. The correlation a
 
 The treatment is classical. The gas is a classical one-particle gas, the record is a classical bit, and the mutual information is Shannon's. The demon does not need entanglement, and none is used; the quantum demon, whose memory is entangled with the gas, belongs to the informational subcategory of the sibling quantum category, and is cited there rather than developed here.
 
-The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$; $i$ is the central scalar imaginary; the sectors are $\mathbb{M}_+$ (Hermitian, informational) and $\mathbb{M}_-$ (anti-Hermitian, material); the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0) = 2$; the biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$; a state is $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\mathbf{r})$ with $|\mathbf{r}|\le1$; and entropies are measured in nats.
+The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$; the basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$; $i$ is the central scalar imaginary; the sectors are $\mathbb{M}_+$ (Hermitian, informational) and $\mathbb{M}_-$ (anti-Hermitian, material); the trace is $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ with $\mathrm{Tr}(e_0) = 2$; the biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$; a state is $\tilde{\rho} = \tfrac{1}{2}(e_0 + i\vec r)$ with $|\vec r|\le1$; and entropies are measured in nats.
 
 ## The Demon's Cycle in Two Sectors
 
@@ -38,7 +38,7 @@ Steps 1 and 2 create the work; steps 3 and 4 return the device to its initial st
 The gas is a material system. Its energy, and the heat it exchanges with the bath, are carried by the material sector: the four-momentum
 
 $$
-\tilde{P} = i\,\frac{E}{c}\,e_0 + \mathbf{p} \in \mathbb{M}_- ,
+\tilde{P} = i\,\frac{E}{c}\,e_0 + \vec p \in \mathbb{M}_- ,
 $$
 
 whose timelike component is the energy. The heat $Q$ delivered to the bath is a change of that component, and the bath's entropy change is $Q/T$ by the Clausius relation.
@@ -46,8 +46,8 @@ whose timelike component is the energy. The heat $Q$ delivered to the bath is a 
 The record is an informational state. It is a classical bit in a pointer basis,
 
 $$
-\tilde{\rho}_D = p_+\,\tilde\Pi_1(\hat{\mathbf{n}}) + p_-\,\tilde\Pi_2(\hat{\mathbf{n}}) \in \mathbb{M}_+ ,
-\qquad \tilde\Pi_{1,2}(\hat{\mathbf{n}}) = \tfrac{1}{2}\left(e_0 \pm i\hat{\mathbf{n}}\right),
+\tilde{\rho}_D = p_+\,\tilde\Pi_1(\hat n) + p_-\,\tilde\Pi_2(\hat n) \in \mathbb{M}_+ ,
+\qquad \tilde\Pi_{1,2}(\hat n) = \tfrac{1}{2}\left(e_0 \pm i\hat n\right),
 $$
 
 with entropy $\mathcal{S}(\tilde{\rho}_D) = h(|p_+ - p_-|)$ equal to the Shannon entropy of the pointer distribution. The record is diagonal in the pointer basis, so it is genuinely classical and carries no coherence.
@@ -79,27 +79,27 @@ The gas's marginal is uniform, as it was before the copy, and the record's margi
 It is useful to write the record's numbers in the algebra. Averaged over the measurement outcomes, the record is the maximally mixed state of the sector, because the gas bit is unbiased:
 
 $$
-\tilde{\rho}_D = \tfrac{1}{2}\tilde\Pi_1(\hat{\mathbf{n}}) + \tfrac{1}{2}\tilde\Pi_2(\hat{\mathbf{n}}) = \tfrac{1}{2}e_0,
+\tilde{\rho}_D = \tfrac{1}{2}\tilde\Pi_1(\hat n) + \tfrac{1}{2}\tilde\Pi_2(\hat n) = \tfrac{1}{2}e_0,
 \qquad
 N(\tilde{\rho}_D) = \tfrac{1}{4}e_0,
 \qquad
 \mathcal{S}(\tilde{\rho}_D) = \log 2 .
 $$
 
-The biquaternion norm is at its maximum and the entropy functional at its maximum, exactly as in the companion article: the more mixed the record, the larger its biquaternion norm and the more expensive its erasure. For a biased gas bit with weights $p_\pm$, the record's Bloch vector is $\mathbf{r}_D = (p_+ - p_-)\hat{\mathbf{n}}$, its biquaternion norm is $\tfrac{1}{4}(1-|\mathbf{r}_D|^2)e_0$, and its entropy is
+The biquaternion norm is at its maximum and the entropy functional at its maximum, exactly as in the companion article: the more mixed the record, the larger its biquaternion norm and the more expensive its erasure. For a biased gas bit with weights $p_\pm$, the record's Bloch vector is $\vec r_D = (p_+ - p_-)\hat n$, its biquaternion norm is $\tfrac{1}{4}(1-|\vec r_D|^2)e_0$, and its entropy is
 
 $$
 \mathcal{S}(\tilde{\rho}_D) = h\!\left(\sqrt{1 - 4\,\mathrm{Sc}\,N(\tilde{\rho}_D)}\right) = h\!\left(|p_+ - p_-|\right) \le \log 2 ,
 $$
 
-so a biased record is cheaper to erase than a uniform one. Conditioned on a single outcome, on the other hand, the record is **pure**: $\tilde{\rho}_D = \tilde\Pi_{1,2}(\hat{\mathbf{n}})$, an element of the null cone, with $N(\tilde{\rho}_D) = 0$ and $\mathcal{S}(\tilde{\rho}_D) = 0$. The record is pure when the demon conditions on its knowledge and mixed when the demon averages over it, and the erasure cost is set by the mixture — a distinction that the biquaternion norm makes visible, since it is maximal on the mixed record and vanishes on the conditioned one.
+so a biased record is cheaper to erase than a uniform one. Conditioned on a single outcome, on the other hand, the record is **pure**: $\tilde{\rho}_D = \tilde\Pi_{1,2}(\hat n)$, an element of the null cone, with $N(\tilde{\rho}_D) = 0$ and $\mathcal{S}(\tilde{\rho}_D) = 0$. The record is pure when the demon conditions on its knowledge and mixed when the demon averages over it, and the erasure cost is set by the mixture — a distinction that the biquaternion norm makes visible, since it is maximal on the mixed record and vanishes on the conditioned one.
 
 ### The Definite Record and the Idempotent Projection
 
 A demon that acts must have a **definite** record: it must know the bit, not be in a superposition of knowing and not knowing. If the record is represented by an element that carries coherence between the two pointer values, the coherence is unobservable to the demon's classical logic and must be removed. The removal is the **idempotent projection** onto the pointer basis:
 
 $$
-\Phi_{\hat{\mathbf{n}}}(\tilde{\rho}_D) = \tilde\Pi_1(\hat{\mathbf{n}})\,\tilde{\rho}_D\,\tilde\Pi_1(\hat{\mathbf{n}}) + \tilde\Pi_2(\hat{\mathbf{n}})\,\tilde{\rho}_D\,\tilde\Pi_2(\hat{\mathbf{n}}),
+\Phi_{\hat n}(\tilde{\rho}_D) = \tilde\Pi_1(\hat n)\,\tilde{\rho}_D\,\tilde\Pi_1(\hat n) + \tilde\Pi_2(\hat n)\,\tilde{\rho}_D\,\tilde\Pi_2(\hat n),
 $$
 
 the fully dephasing conditional expectation of the companion article *Coarse-Graining and the Biquaternion Entropy Functional*, which is idempotent and unital and does not decrease the entropy. The projection is itself irreversible: it is a coarse-graining, and it maps a continuum of records to the classical diameter.
@@ -168,7 +168,7 @@ This is the framework's coarse-graining structure read on the gas. The gas bit i
 After the feedback the record still holds the bit, and it must be reset for the next run. The erasure is the map
 
 $$
-\mathcal{E}_{\hat{\mathbf{n}}} : \tilde{\rho}_D \longmapsto \tilde\Pi_1(\hat{\mathbf{n}}),
+\mathcal{E}_{\hat n} : \tilde{\rho}_D \longmapsto \tilde\Pi_1(\hat n),
 $$
 
 the non-unital channel of the companion article *Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form*, whose entropy debit on the memory is $\Delta\mathcal{S} = -\mathcal{S}(\tilde{\rho}_D)$ and whose material cost is at least $k_BT\,\mathcal{S}(\tilde{\rho}_D)$. For the ideal demon the record is a full bit, $\mathcal{S}(\tilde{\rho}_D) = \log 2$, so
@@ -232,8 +232,8 @@ The cycle fails for a structural reason, and the framework states it exactly. Th
 |---|---|---|---|---|
 | Correlation (measure) | reversible permutation (rotor class) | yes | $0$ | record: $+k_B\log2$, offset by the correlation |
 | Feedback | reversible step (rotor class) | yes | $\le k_BT I$ | gas: $+k_B\log2$; bath: $-k_B\log2$ |
-| Registration (if charged) | idempotent projection $\Phi_{\hat{\mathbf{n}}}$ | no | $\ge 0$ | record: $\ge 0$ |
-| Erasure (standard charge) | non-unital reset $\mathcal{E}_{\hat{\mathbf{n}}}$ | no | $\ge k_BT H(D)$ | memory: $-k_BH(D)$; bath: $+k_BH(D)$ |
+| Registration (if charged) | idempotent projection $\Phi_{\hat n}$ | no | $\ge 0$ | record: $\ge 0$ |
+| Erasure (standard charge) | non-unital reset $\mathcal{E}_{\hat n}$ | no | $\ge k_BT H(D)$ | memory: $-k_BH(D)$; bath: $+k_BH(D)$ |
 
 Each entry is the change of the object the row touches, and the reversible rows balance exactly within themselves: the gas gains what the bath loses, and the memory's debit is the bath's credit. At the close of the cycle the gas and the record have returned to their initial states, so the net entropy produced is the bath's own, $-k_B\,I + k_B\,H(D)$: it vanishes for the ideal cycle, where $I = H(D) = \log2$, and equals $k_BH_2(e)$ for the noisy demon, which must dump the shortfall as extra heat. Two entries carry a qualification. The gas's $+k_B\log2$ in the feedback row is a **coarse-grained** increase: the demon's description of the gas is the two-cell description "which half", and it is the entropy of that description which rises as the accessible volume widens, while the gas bit's marginal state in $\mathbb{M}_+$ — the maximally mixed state — is the same before and after, and the fine-grained (Gibbs) entropy of the gas is conserved by the underlying Hamiltonian evolution, as in the companion article *Coarse-Graining and the Biquaternion Entropy Functional*. The record's $+k_B\log2$ in the correlation row is likewise a marginal entropy, and it is returned as the correlation, so that the joint entropy of gas and record is unchanged by the copy.
 
@@ -251,7 +251,7 @@ The framework also makes plain what it does not supply. The interaction that cor
 
 ## Summary
 
-The demon's device is a loop through both sectors of the framework. The gas is material, carrying energy and heat in $\mathbb{M}_-$; the record is informational, a classical bit $\tilde{\rho}_D = p_+\tilde\Pi_1(\hat{\mathbf{n}}) + p_-\tilde\Pi_2(\hat{\mathbf{n}})$ in $\mathbb{M}_+$ with entropy $\mathcal{S}(\tilde{\rho}_D) = h(|p_+ - p_-|)$.
+The demon's device is a loop through both sectors of the framework. The gas is material, carrying energy and heat in $\mathbb{M}_-$; the record is informational, a classical bit $\tilde{\rho}_D = p_+\tilde\Pi_1(\hat n) + p_-\tilde\Pi_2(\hat n)$ in $\mathbb{M}_+$ with entropy $\mathcal{S}(\tilde{\rho}_D) = h(|p_+ - p_-|)$.
 
 The cycle's four steps are the framework's operations. The **correlation** created by the measurement is a reversible permutation — the rotor class of the algebra: reversible, no work, no entropy — and it creates the mutual information $I$ between gas and record. The **registration** of a definite record is an idempotent projection, a coarse-graining. The **feedback** is a reversible step, and it extracts work bounded by
 
@@ -281,18 +281,18 @@ with equality for the perfect demon, which breaks even at $k_BT\log2$ extracted 
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Informational (Hermitian) and material (anti-Hermitian) subspaces |
 | $e_0 = 1, e_1, e_2, e_3$ | Quaternion basis, $e_k^2 = -e_0$ |
 | $i$ | Central scalar imaginary |
-| $\tilde{\rho} = \tfrac{1}{2}(e_0+i\mathbf{r})$ | State of the informational sector |
-| $\tilde\Pi_{1,2}(\hat{\mathbf{n}}) = \tfrac{1}{2}(e_0\pm i\hat{\mathbf{n}})$ | Pointer idempotents (logical states) |
+| $\tilde{\rho} = \tfrac{1}{2}(e_0+i\vec r)$ | State of the informational sector |
+| $\tilde\Pi_{1,2}(\hat n) = \tfrac{1}{2}(e_0\pm i\hat n)$ | Pointer idempotents (logical states) |
 | $\tilde{\rho}_D = p_+\tilde\Pi_1 + p_-\tilde\Pi_2$ | Demon's record (classical bit) |
 | $\mathrm{Tr}(\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_0)=2$ |
 | $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | Biquaternion norm |
-| $\mathcal{S}(\tilde{\rho}) = -2\,\mathrm{Sc}(\tilde{\rho}\log\tilde{\rho}) = h(|\mathbf{r}|)$ | Entropy functional (nats) |
+| $\mathcal{S}(\tilde{\rho}) = -2\,\mathrm{Sc}(\tilde{\rho}\log\tilde{\rho}) = h(|\vec r|)$ | Entropy functional (nats) |
 | $h(x) = -\tfrac{1+x}{2}\log\tfrac{1+x}{2} - \tfrac{1-x}{2}\log\tfrac{1-x}{2} = H_2\!\left(\tfrac{1-x}{2}\right)$ | Binary entropy, bias argument: $h(0)=\log 2$, $h(1)=0$ |
-| $\tilde{P} = i(E/c)e_0 + \mathbf{p}$ | Material four-momentum (gas, bath) |
+| $\tilde{P} = i(E/c)e_0 + \vec p$ | Material four-momentum (gas, bath) |
 | $Q$, $T$, $k_B$ | Heat, temperature, Boltzmann constant |
 | $\tilde{R}$, $\tilde{R}\tilde{R}^{*} = e_0$ | Rotor (algebraic representative of the reversible steps) |
-| $\Phi_{\hat{\mathbf{n}}}$ | Idempotent projection onto the pointer basis (registration) |
-| $\mathcal{E}_{\hat{\mathbf{n}}} : \tilde{\rho}_D\mapsto\tilde\Pi_1(\hat{\mathbf{n}})$ | Erasure (non-unital reset) |
+| $\Phi_{\hat n}$ | Idempotent projection onto the pointer basis (registration) |
+| $\mathcal{E}_{\hat n} : \tilde{\rho}_D\mapsto\tilde\Pi_1(\hat n)$ | Erasure (non-unital reset) |
 | $I(G\!:\!D) = H(G)+H(D)-H(G,D)$ | Mutual information of gas and record |
 | $I = \log 2 - H_2(e)$ | Mutual information of a record with error $e$ |
 | $H_2(e) = -e\log e - (1-e)\log(1-e)$ | Binary entropy of the error |

@@ -6,7 +6,7 @@ The biquaternion norm fixes what a motion is: the isometries of the form are the
 
 The article is the Geometry slot of the Lie-theoretic block: the algebra is *The 12 Products of the Biquaternion Complex Space*, the group and its exponential are *Biquaternion Lie Group and Exponential Structure*, and the topology of the group is *The Biquaternion Unit Group as a Topological Group*. The reflections and the Cartan–Dieudonné theorem are stated generally in *Versors, Rotors and the Sandwich Action with Signed Inner Conjugation* and *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* of Part II, and their biquaternion case is worked here; the Clifford reading of the algebra is *The Realification of the General Plain Algebra*; the transformation group in full is in *Biquaternion Automorphisms and Derivations*; and the finite groups of units, together with the figures they determine, are *Biquaternion Orders and Finite Groups of Units*.
 
-**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$, and $\tilde{Q}$ is a unit exactly when $N(\tilde{Q})\neq0$ (*Norm and Invertibility in the General Quaternionic Algebra*). Throughout, a biquaternion is written $\tilde{Q}=Q_0e_0+\mathbf{Q}$ with $\mathbf{Q}=\sum_{k=1}^3 Q_k e_k$.
+**Conventions.** The biquaternion algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and central scalar imaginary $i$; a general element is $\tilde{Q}=\sum_{\mu=0}^{3} Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The biquaternion norm is $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$, and $\tilde{Q}$ is a unit exactly when $N(\tilde{Q})\neq0$ (*Norm and Invertibility in the General Quaternionic Algebra*). Throughout, a biquaternion is written $\tilde{Q}=Q_0e_0+\vec Q$ with $\vec Q=\sum_{k=1}^3 Q_k e_k$.
 
 ---
 
@@ -24,7 +24,7 @@ $$
 \mathbb{B}^\times_1 \cong \mathrm{Spin}(1,3), \qquad \mathrm{B}_0 \cong \mathrm{so}(1,3).
 $$
 
-The Lorentz action is rotor conjugation, $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ for $\tilde{\Lambda} \in \mathbb{B}^\times_1$, which preserves $\mathbb{M}_-$ and $N(\tilde{Q})$; its compact part is the rotation family and its non-compact part the hyperbolic rotations, with closed forms in *Biquaternion Elementary Functions*, §*The Exponential in the Two Real Directions*.
+The Lorentz action is rotor conjugation, $\tilde{Q} \mapsto \tilde{U}\tilde{Q}\tilde{U}^{*}$ for $\tilde{U} \in \mathbb{B}^\times_1$, which preserves $\mathbb{M}_-$ and $N(\tilde{Q})$; its compact part is the rotation family and its non-compact part the hyperbolic rotations, with closed forms in *Biquaternion Elementary Functions*, §*The Exponential in the Two Real Directions*.
 
 ## The Rotor and the Sandwich Action
 
@@ -80,7 +80,7 @@ $$
 
 **Proof.** The biquaternion norm is multiplicative and central, $N(ab)=N(a)N(b)$, and $N(\tilde{Q}^{*})=N(\tilde{Q})^{*}$, because ${}^{*}$ is the composite of quaternion conjugation, which fixes $N$, with complex conjugation, which conjugates it. Hence $N(\tilde{Q}\tilde T\tilde{Q}^{*})=N(\tilde{Q})N(\tilde T)N(\tilde{Q})^{*}=\lvert N(\tilde{Q})\rvert^{2}N(\tilde T)$.
 
-On the unit-norm slice, where $\lvert N(\tilde{Q})\rvert=1$, the sandwich is an isometry of the biquaternion norm on both sectors: it is the action of $SL(2,\mathbb{C})$ on the Hermitian forms and on the four-vectors, and it is the covering map onto the proper orthochronous Lorentz group. The Lorentz transformation written above as $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ is the sandwich of a norm-one element, and for it no inverse and no rotation part appear.
+On the unit-norm slice, where $\lvert N(\tilde{Q})\rvert=1$, the sandwich is an isometry of the biquaternion norm on both sectors: it is the action of $SL(2,\mathbb{C})$ on the Hermitian forms and on the four-vectors, and it is the covering map onto the proper orthochronous Lorentz group. The Lorentz transformation written above as $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$ is the sandwich of a norm-one element, and for it no inverse and no rotation part appear.
 
 **The image of the unit.** Applied to $e_0$ the sandwich returns $\mathrm{H}_{\tilde{Q}}(e_0)=\tilde{Q}\tilde{Q}^{*}$, which is Hermitian and, for a general unit, not central: the centre is not preserved. The image of a traceless element need not be traceless, so the vector subspace is not preserved either.
 
@@ -103,11 +103,11 @@ The kernel is therefore the circle $U(1)=\{e^{i\theta}e_0\}$ in the centre, of o
 | operator | group | kernel | parameters lost |
 |---|---|---|---|
 | $\mathrm{H}_{\tilde{Q}}(\tilde T)=\tilde{Q}\tilde T\tilde{Q}^{*}$ | the units of $\mathbb{B}$ | $U(1)\subset\mathbb{C}_{\mathbb{B}}$ | the circle only |
-| $\mathrm{H}_{\tilde{\Lambda}}(\tilde T)=\tilde{\Lambda}\tilde T\tilde{\Lambda}^{*}$, $N(\tilde{\Lambda})=1$ | the unit-norm slice $SL(2,\mathbb{C})$ | $\{\pm e_0\}$ | the sign |
+| $\mathrm{H}_{\tilde{U}}(\tilde T)=\tilde{U}\tilde T\tilde{U}^{*}$, $N(\tilde{U})=1$ | the unit-norm slice $SL(2,\mathbb{C})$ | $\{\pm e_0\}$ | the sign |
 
 The action on the remarkable subspaces is the following. Each entry records whether the image of a general element of the row subspace lies in that same subspace, for a general unit and for a real unit quaternion.
 
-| subspace | $\mathrm{H}_{\tilde{Q}}$, general unit $\tilde{Q}$ | $\mathrm{H}_{\hat{q}}$, real unit quaternion |
+| subspace | $\mathrm{H}_{\tilde{Q}}$, general unit $\tilde{Q}$ | $\mathrm{H}_{\tilde u}$, real unit quaternion |
 |---|---|---|
 | $\mathbb{C}_{\mathbb{B}}$ (centre) | no | yes |
 | $\mathrm{Vect}(\mathbb{B})$ (vector, $6$-dimensional) | no | yes |
@@ -118,21 +118,21 @@ The action on the remarkable subspaces is the following. Each entry records whet
 
 The two sectors are preserved for every element; the four subspaces of the scalar–vector and quaternion decompositions are preserved only by the unitary elements, and by them because a real unit quaternion is unitary.
 
-**Theorem (which operators preserve the whole subspace structure).** Let $\tilde{Q}$ be a unit with polar representation $\tilde{Q}=re^{i\alpha}B\hat{q}$, where $r>0$, $\alpha$ is real, $B$ is Hermitian positive of unit norm and $\hat{q}$ is a unit real quaternion. The following are equivalent:
+**Theorem (which operators preserve the whole subspace structure).** Let $\tilde{Q}$ be a unit with polar representation $\tilde{Q}=re^{i\alpha}B\tilde u$, where $r>0$, $\alpha$ is real, $B$ is Hermitian positive of unit norm and $\tilde u$ is a unit real quaternion. The following are equivalent:
 
 1. the sandwich maps each of the remarkable subspaces to itself;
 2. $B=e_0$;
-3. $\tilde{Q}=A\hat{q}$ with $A$ central and $\hat{q}$ a unit real quaternion;
+3. $\tilde{Q}=A\tilde u$ with $A$ central and $\tilde u$ a unit real quaternion;
 4. $\tilde{Q}\tilde{Q}^{*}$ is a positive real multiple of $e_0$.
 
-When they hold, $\mathrm{H}_{\tilde{Q}}=\lvert A\rvert^{2}\mathrm{H}_{\hat{q}}$ is a dilation composed with a rotation of the vector space, and every one of the remarkable subspaces is preserved.
+When they hold, $\mathrm{H}_{\tilde{Q}}=\lvert A\rvert^{2}\mathrm{H}_{\tilde u}$ is a dilation composed with a rotation of the vector space, and every one of the remarkable subspaces is preserved.
 
-**Proof.** $(3)\Rightarrow(4)$: for $\tilde{Q}=A\hat{q}$ one has $\tilde{Q}\tilde{Q}^{*}=\lvert A\rvert^{2}\hat{q}\hat{q}^{\dagger}=\lvert A\rvert^{2}e_0$, since a real quaternion satisfies $\hat{q}^{\dagger}=\hat{q}^{\natural}=\hat{q}^{-1}$. $(4)\Rightarrow(3)$: if $\tilde{Q}\tilde{Q}^{*}=\lambda e_0$ with $\lambda>0$ then $\lvert N(\tilde{Q})\rvert=\lambda$, the element $\tilde{Q}/\rho$, with $\rho$ the principal square root of $N(\tilde{Q})$, has unit norm and Hermitian square $e_0$, hence is $e^{i\alpha}\hat{q}$ with $\hat{q}$ a unit real quaternion, and $\tilde{Q}$ is of the form $(3)$. $(2)\Leftrightarrow(3)$ is immediate from the polar form. $(3)\Rightarrow(1)$: a central factor contributes the dilation, which preserves every subspace, and $\mathrm{H}_{\hat{q}}$ is the rotation of the vector space, which does the same. $(1)\Rightarrow(4)$: if the centre is preserved then $\tilde{Q}\tilde{Q}^{*}$ is central; that element is Hermitian positive of norm $\lvert N(\tilde{Q})\rvert^{2}>0$, and a central Hermitian positive element of the algebra is a positive real multiple of $e_0$.
+**Proof.** $(3)\Rightarrow(4)$: for $\tilde{Q}=A\tilde u$ one has $\tilde{Q}\tilde{Q}^{*}=\lvert A\rvert^{2}\tilde u\tilde u^{\dagger}=\lvert A\rvert^{2}e_0$, since a real quaternion satisfies $\tilde u^{\dagger}=\tilde u^{\natural}=\tilde u^{-1}$. $(4)\Rightarrow(3)$: if $\tilde{Q}\tilde{Q}^{*}=\lambda e_0$ with $\lambda>0$ then $\lvert N(\tilde{Q})\rvert=\lambda$, the element $\tilde{Q}/\rho$, with $\rho$ the principal square root of $N(\tilde{Q})$, has unit norm and Hermitian square $e_0$, hence is $e^{i\alpha}\tilde u$ with $\tilde u$ a unit real quaternion, and $\tilde{Q}$ is of the form $(3)$. $(2)\Leftrightarrow(3)$ is immediate from the polar form. $(3)\Rightarrow(1)$: a central factor contributes the dilation, which preserves every subspace, and $\mathrm{H}_{\tilde u}$ is the rotation of the vector space, which does the same. $(1)\Rightarrow(4)$: if the centre is preserved then $\tilde{Q}\tilde{Q}^{*}$ is central; that element is Hermitian positive of norm $\lvert N(\tilde{Q})\rvert^{2}>0$, and a central Hermitian positive element of the algebra is a positive real multiple of $e_0$.
 
 The multiplicative criterion and this one meet on the unitary elements: the operators that are multiplicative are exactly those with $\tilde{Q}\tilde{Q}^{*}=e_0$, which are also the elements fixing the time axis, $\mathrm{H}_{\tilde{Q}}(ie_0)=i\tilde{Q}\tilde{Q}^{*}=ie_0$. On the unit-norm slice the operators preserving the subspace structure form
 
 $$
-\left\{\mathrm{H}_{\hat{q}}:\hat{q}\hat{q}^{\dagger}=e_0\right\}\cong SU(2)/\{\pm e_0\}\cong SO(3),
+\left\{\mathrm{H}_{\tilde u}:\tilde u\tilde u^{\dagger}=e_0\right\}\cong SU(2)/\{\pm e_0\}\cong SO(3),
 $$
 
 of real dimension three; with the dilations admitted they form $\mathbb{R}_{>0}\times SO(3)$, of real dimension four. The rotation group sits inside the six-dimensional operator group as the rotations sit inside the Lorentz group, and the remaining three dimensions are the boosts, which move the centre, the vector subspace and the two halves.

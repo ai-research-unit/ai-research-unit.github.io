@@ -28,7 +28,7 @@ T_{\tilde P,\tilde Q}(\tilde X)=\tilde P\tilde X\tilde Q,\qquad
 S_{\tilde P,\tilde Q}(\tilde X)=\tilde P\tilde X^{*}\tilde Q^{*},
 $$
 
-the **ordinary two-sided multiplication** and the **sandwich**. The block's composition laws are $L_{\tilde A}L_{\tilde B}=T_{\tilde A,\tilde B^{*}}$, $R_{\tilde A}R_{\tilde B}=R_{\tilde A\tilde B}$, $L_{\tilde A}R_{\tilde B}=L_{\tilde A\tilde B}$ and $R_{\tilde B}L_{\tilde A}=S_{\tilde A,\tilde B}$ of *The Left and Right Multiplications of the Biquaternion Sesqualgebra*. A projection is a Hermitian idempotent $\tilde\Pi=\tilde\Pi_1(\hat\mu)=\tfrac12(e_0+i\hat\mu)$ with $\hat\mu$ a real unit vector; $\tilde\Pi^{\perp}=e_0-\tilde\Pi$ is its complement, and $\tilde e_1=\tilde\Pi$, $\tilde e_2=\tilde\Pi^{\perp}$.
+the **ordinary two-sided multiplication** and the **sandwich**. The block's composition laws are $L_{\tilde A}L_{\tilde B}=T_{\tilde A,\tilde B^{*}}$, $R_{\tilde A}R_{\tilde B}=R_{\tilde A\tilde B}$, $L_{\tilde A}R_{\tilde B}=L_{\tilde A\tilde B}$ and $R_{\tilde B}L_{\tilde A}=S_{\tilde A,\tilde B}$ of *The Left and Right Multiplications of the Biquaternion Sesqualgebra*. A projection is a Hermitian idempotent $\tilde\Pi=\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_0+\tilde\Xi)$ with $\hat n$ a real unit vector; $\tilde\Pi^{\perp}=e_0-\tilde\Pi$ is its complement, and $\tilde e_1=\tilde\Pi$, $\tilde e_2=\tilde\Pi^{\perp}$.
 
 ## The Sandwich and the Two-Sided Multiplications
 

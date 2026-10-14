@@ -51,7 +51,7 @@ The coordinates cut $\mathbb{H}$ into two blocks, and the algebra singles these 
 - the **scalar subspace** (or **real line**) $\mathbb{R}_{\mathbb{H}}=\{\tilde q:q_1=q_2=q_3=0\}=\mathbb{R}e_0$, of dimension one;
 - the **vector subspace** $\mathrm{Vect}(\mathbb{H})=\{\tilde q:q_0=0\}=\mathbb{R}e_1\oplus\mathbb{R}e_2\oplus\mathbb{R}e_3$, of dimension three, also written $\operatorname{Im}\mathbb{H}$.
 
-The two are supplementary, $\mathbb{H}=\mathbb{R}_{\mathbb{H}}\oplus\mathrm{Vect}(\mathbb{H})$, and the decomposition of $\tilde q$ is the pair $(q_0,\mathbf q)$ with $\mathbf q=q_1e_1+q_2e_2+q_3e_3$. The two subspaces are the two fixed and anti-fixed spaces of the natural conjugation ${}^{\natural}$ in its coordinate form $\tilde q^{\natural}=q_0-\mathbf q$, and they are the two remarkable subspaces of the quaternion algebra. They are defined and developed in *Introduction to the Remarkable Subspaces of the Quaternions*, below this article in this category, and their comparison is *Comparison of the Remarkable Subspaces of the Quaternions*, below this article in this category. The word **scalar** is used for the real coordinate on $\mathbb{R}_{\mathbb{H}}$; the word **pure** is used for the elements of $\mathrm{Vect}(\mathbb{H})$.
+The two are supplementary, $\mathbb{H}=\mathbb{R}_{\mathbb{H}}\oplus\mathrm{Vect}(\mathbb{H})$, and the decomposition of $\tilde q$ is the pair $(q_0,\vec q)$ with $\vec q=q_1e_1+q_2e_2+q_3e_3$. The two subspaces are the two fixed and anti-fixed spaces of the natural conjugation ${}^{\natural}$ in its coordinate form $\tilde q^{\natural}=q_0-\vec q$, and they are the two remarkable subspaces of the quaternion algebra. They are defined and developed in *Introduction to the Remarkable Subspaces of the Quaternions*, below this article in this category, and their comparison is *Comparison of the Remarkable Subspaces of the Quaternions*, below this article in this category. The word **scalar** is used for the real coordinate on $\mathbb{R}_{\mathbb{H}}$; the word **pure** is used for the elements of $\mathrm{Vect}(\mathbb{H})$.
 
 ## The Ladder of the Real Algebras
 
@@ -77,7 +77,7 @@ The quaternion algebra is a four-dimensional real vector space on the basis $e_0
 | $\mathrm{Vect}(\mathbb{H})$ | the vector subspace $\mathbb{R}e_1\oplus\mathbb{R}e_2\oplus\mathbb{R}e_3$, dimension three |
 | $L_{\tilde p},R_{\tilde q}$ | the left and the right multiplication by $\tilde p$ and by $\tilde q$ |
 | $M_4(\mathbb{R})_L$ | the image of $\tilde p\mapsto L_{\tilde p}$, the left regular representation |
-| ${}^{\natural}$ | the natural conjugation $\tilde q\mapsto q_0-\mathbf q$ |
+| ${}^{\natural}$ | the natural conjugation $\tilde q\mapsto q_0-\vec q$ |
 
 ## Further Reading
 

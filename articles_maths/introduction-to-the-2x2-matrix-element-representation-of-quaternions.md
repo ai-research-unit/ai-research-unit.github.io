@@ -79,7 +79,7 @@ $$
 $$
 and for a unit imaginary $\nu$ the matrix $\mathsf{M}_2(\nu)$ is anti-Hermitian, $\mathsf{M}_2(\nu)^{\dagger}=-\mathsf{M}_2(\nu)$, with $\mathsf{M}_2(\nu)^{\dagger}\mathsf{M}_2(\nu)=I_2$, so the inner involutions are conjugations by matrices of the image satisfying that condition. The reflection $\rho_\nu=-\iota_\nu$ is minus the same conjugation.
 
-**Proof.** For the general entry, the conjugate transpose of $\mathsf{M}_2(\tilde q)$ is $\left(\begin{smallmatrix}\overline z&-w\\ \overline w&z\end{smallmatrix}\right)$, which is $\mathsf{M}_2(q_0-\mathbf q)$ read from the pattern with $z'=\overline z$, $w'=-w$; this is $\mathsf{M}_2(\tilde q^{\natural})$. The inner statement is the multiplicativity. For a unit imaginary $\nu$, $\mathsf{M}_2(\nu)^{\dagger}=\mathsf{M}_2(\nu^{\natural})=\mathsf{M}_2(-\nu)=-\mathsf{M}_2(\nu)$ and $\det\mathsf{M}_2(\nu)=N(\nu)=1$.
+**Proof.** For the general entry, the conjugate transpose of $\mathsf{M}_2(\tilde q)$ is $\left(\begin{smallmatrix}\overline z&-w\\ \overline w&z\end{smallmatrix}\right)$, which is $\mathsf{M}_2(q_0-\vec q)$ read from the pattern with $z'=\overline z$, $w'=-w$; this is $\mathsf{M}_2(\tilde q^{\natural})$. The inner statement is the multiplicativity. For a unit imaginary $\nu$, $\mathsf{M}_2(\nu)^{\dagger}=\mathsf{M}_2(\nu^{\natural})=\mathsf{M}_2(-\nu)=-\mathsf{M}_2(\nu)$ and $\det\mathsf{M}_2(\nu)=N(\nu)=1$.
 
 Thus the natural sign is involutive and anti-multiplicative in the matrix algebra too — the conjugate transpose satisfies $(AB)^{\dagger}=B^{\dagger}A^{\dagger}$ — while the matrix **transpose** alone realizes the composition of ${}^{\natural}$ with an inner involution, and the entrywise conjugation $\overline M$ realizes another.
 

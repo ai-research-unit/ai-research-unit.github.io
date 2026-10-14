@@ -17,11 +17,11 @@ The article is organised as follows. The first section recalls why integer spin 
 The conventions are those of the companion articles. The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$ and $e_1e_2 = e_3$, and central scalar imaginary $i$. The gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, with conjugate $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, so that $\tilde{\nabla}\tilde{\nabla}^{\natural} = \Box = \partial_{ict}^2 + \Delta$. The potential and field strength are
 
 $$
-\tilde{A} = \frac{i\phi}{c}\,e_0 + \mathbf{A}, \qquad
-\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H},
+\tilde{A} = \frac{i\phi}{c}\,e_0 + \vec A, \qquad
+\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{A}\right) = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H,
 $$
 
-with $\mathbf{H}$ the magnetic field and $\mathbf{B} = \mu\mathbf{H}$ the magnetic induction, and $c = 1/\sqrt{\epsilon\mu}$ the speed of light in the medium. The normalization of the potential is the one for which the two expressions for $\tilde{F}$ in the display agree, a constant multiple of $\tilde{A}$ being absorbed in it; the field strength itself is fixed unambiguously by the tensor formula $F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu$, as the companion field-strength article records. The Lorentz rotor acts by conjugation, $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$, and the $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$.
+with $\vec H$ the magnetic field and $\vec B = \mu\vec H$ the magnetic induction, and $c = 1/\sqrt{\epsilon\mu}$ the speed of light in the medium. The normalization of the potential is the one for which the two expressions for $\tilde{F}$ in the display agree, a constant multiple of $\tilde{A}$ being absorbed in it; the field strength itself is fixed unambiguously by the tensor formula $F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu$, as the companion field-strength article records. The Lorentz rotor acts by conjugation, $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$, and the $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$.
 
 ## Integer Spin and the Representation It Needs
 
@@ -57,7 +57,7 @@ $$
 
 a complex vector space of dimension three, equivalently a real vector space of dimension six with basis $\{e_1,e_2,e_3,ie_1,ie_2,ie_3\}$. The same six real basis elements are the six bivectors of the Clifford algebra $\mathrm{Cl}_{1,3}$: the three spatial rotation generators are the images of $e_k$, and the three boost generators are the images of $ie_k$. The real vector part is therefore at once
 
-- the space of real antisymmetric tensors, that is, of bivectors and of field strengths, through the identification of a complex three-vector with the pair $(\mathbf{E},\mathbf{B})$; and
+- the space of real antisymmetric tensors, that is, of bivectors and of field strengths, through the identification of a complex three-vector with the pair $(\vec E,\vec B)$; and
 - the Lorentz Lie algebra $\mathrm{SO}(1,3)$ of rotations and boosts, with the commutator bracket.
 
 That the two are the same six-dimensional real space is not a coincidence of dimension: both are the antisymmetric square of the four-vector space, and in the $ict$ convention the four-vector space is the material sector. The material sector $\mathbb{M}_-$ is the four-dimensional real subspace spanned by $ie_0, e_1, e_2, e_3$; its antisymmetric square is the six-dimensional space spanned by the products of distinct basis elements, which is exactly the real vector part of $\mathbb{B}$.
@@ -67,35 +67,35 @@ That the two are the same six-dimensional real space is not a coincidence of dim
 The field-strength biquaternion of the companion article is a pure vector,
 
 $$
-\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H} \;\in\; \mathrm{Vect}(\mathbb{B}),
+\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H \;\in\; \mathrm{Vect}(\mathbb{B}),
 $$
 
-with imaginary electric part and real magnetic part, and it is obtained from the four-potential by differentiation. This object carries all six real components of $(\mathbf{E},\mathbf{B})$, and the standard complex combination
+with imaginary electric part and real magnetic part, and it is obtained from the four-potential by differentiation. This object carries all six real components of $(\vec E,\vec B)$, and the standard complex combination
 
 $$
-\mathbf{V} = \mathbf{E} + ic\,\mathbf{B}, \qquad \tilde{F} = i\sqrt{\epsilon}\,\mathbf{V},
+\vec V = \vec E + ic\,\vec B, \qquad \tilde{F} = i\sqrt{\epsilon}\,\vec V,
 $$
 
-is the Riemann–Silberstein vector. The identification of $\mathbf{V}$ with a complex three-vector is precisely the identification of a real two-form with an element of the complex vector part, and it is the identification that makes the self-dual split transparent: the complex structure that appears in $\mathbf{V}$ is the algebra's scalar imaginary, and it is the same complex structure that defines the Hodge dual, as the next section shows.
+is the Riemann–Silberstein vector. The identification of $\vec V$ with a complex three-vector is precisely the identification of a real two-form with an element of the complex vector part, and it is the identification that makes the self-dual split transparent: the complex structure that appears in $\vec V$ is the algebra's scalar imaginary, and it is the same complex structure that defines the Hodge dual, as the next section shows.
 
 
 ## The Hodge Dual on the Vector Part
 
 ### Definition
 
-The Hodge dual of a field is defined on the fields themselves, by its action on the pair $(\mathbf{E},\mathbf{B})$,
+The Hodge dual of a field is defined on the fields themselves, by its action on the pair $(\vec E,\vec B)$,
 
 $$
-\star(\mathbf{E},\mathbf{B}) = \left(c\mathbf{B}, -\frac{\mathbf{E}}{c}\right), \qquad \star^2 = -1 ,
+\star(\vec E,\vec B) = \left(c\vec B, -\frac{\vec E}{c}\right), \qquad \star^2 = -1 ,
 $$
 
 which is the $\theta = \pi/2$ case of the duality rotation used in the companion article on the field-strength biquaternion and its invariants. On the Riemann–Silberstein vector the dual is multiplication by $-i$,
 
 $$
-\star\mathbf{V} = -i\mathbf{V},
+\star\vec V = -i\vec V,
 $$
 
-because $\star(\mathbf{E}+ic\mathbf{B}) = c\mathbf{B} - i\mathbf{E} = -i(\mathbf{E}+ic\mathbf{B})$. Since $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{V}$, the same statement holds on the field-strength biquaternion up to the overall constant:
+because $\star(\vec E+ic\vec B) = c\vec B - i\vec E = -i(\vec E+ic\vec B)$. Since $\tilde{F} = i\sqrt{\epsilon}\,\vec V$, the same statement holds on the field-strength biquaternion up to the overall constant:
 
 $$
 \star\tilde{F} = -i\,\tilde{F}.
@@ -103,32 +103,32 @@ $$
 
 ### Direct check
 
-The identity is worth checking without the Riemann–Silberstein shortcut, because the factors of $\epsilon$ and $\mu$ are the place where a sign can hide. Write $\mathbf{H} = \mathbf{B}/\mu$. The dual acts on the magnetic field as
+The identity is worth checking without the Riemann–Silberstein shortcut, because the factors of $\epsilon$ and $\mu$ are the place where a sign can hide. Write $\vec H = \vec B/\mu$. The dual acts on the magnetic field as
 
 $$
-\star\mathbf{H} = \frac{1}{\mu}\,\star\mathbf{B} = -\frac{\mathbf{E}}{c\mu},
+\star\vec H = \frac{1}{\mu}\,\star\vec B = -\frac{\vec E}{c\mu},
 $$
 
 so that
 
 $$
 \star\tilde{F}
-= i\sqrt{\epsilon}\,\star\mathbf{E} - \sqrt{\mu}\,\star\mathbf{H}
-= i\sqrt{\epsilon}\,c\mathbf{B} + \frac{\sqrt{\mu}}{c\mu}\,\mathbf{E}
-= \frac{i}{\sqrt{\mu}}\,\mathbf{B} + \sqrt{\epsilon}\,\mathbf{E},
+= i\sqrt{\epsilon}\,\star\vec E - \sqrt{\mu}\,\star\vec H
+= i\sqrt{\epsilon}\,c\vec B + \frac{\sqrt{\mu}}{c\mu}\,\vec E
+= \frac{i}{\sqrt{\mu}}\,\vec B + \sqrt{\epsilon}\,\vec E,
 $$
 
 using $\sqrt{\epsilon}\,c = \sqrt{\epsilon}/\sqrt{\epsilon\mu} = 1/\sqrt{\mu}$ and $\sqrt{\mu}/(c\mu) = \sqrt{\mu}\sqrt{\epsilon\mu}/\mu = \sqrt{\epsilon}$. On the other hand
 
 $$
--i\tilde{F} = -i\left(i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}\right)
-= \sqrt{\epsilon}\,\mathbf{E} + i\sqrt{\mu}\,\mathbf{H}
-= \sqrt{\epsilon}\,\mathbf{E} + \frac{i}{\sqrt{\mu}}\,\mathbf{B},
+-i\tilde{F} = -i\left(i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H\right)
+= \sqrt{\epsilon}\,\vec E + i\sqrt{\mu}\,\vec H
+= \sqrt{\epsilon}\,\vec E + \frac{i}{\sqrt{\mu}}\,\vec B,
 $$
 
 which is the same. The identity $\star = -i$ therefore holds for every field, with no assumption on the field's time dependence or on the wavevector.
 
-The identity is linear in the field, so it is enough to test it once and for all on a general superposition. With $\epsilon$ and $\mu$ at fixed numerical values and with $\mathbf{E}$ and $\mathbf{B}$ taken as a sum of two unrelated uniform fields — equivalently two Fourier components with different wavevectors and independent amplitudes — the residual of $\star\tilde{F} + i\tilde{F}$, computed componentwise from the definitions above, is at the level of $10^{-16}$ in units where the field components are of order one, that is, at the level of the floating-point round-off of the arithmetic. A single plane wave would not test the linearity of the identification, and it is the linearity that lets the dual be read as an operator on the whole vector part.
+The identity is linear in the field, so it is enough to test it once and for all on a general superposition. With $\epsilon$ and $\mu$ at fixed numerical values and with $\vec E$ and $\vec B$ taken as a sum of two unrelated uniform fields — equivalently two Fourier components with different wavevectors and independent amplitudes — the residual of $\star\tilde{F} + i\tilde{F}$, computed componentwise from the definitions above, is at the level of $10^{-16}$ in units where the field components are of order one, that is, at the level of the floating-point round-off of the arithmetic. A single plane wave would not test the linearity of the identification, and it is the linearity that lets the dual be read as an operator on the whole vector part.
 
 ### The dual as an operator on the algebra
 
@@ -163,24 +163,24 @@ and they decompose the complexified vector part into two three-dimensional compl
 The subtlety is that the real vector part is already complex, with the scalar imaginary supplying its complex structure. The complexification that the projectors require is a second, external complexification: one allows coefficients in a new unit, so that the complexified vector part is $\mathbb{C}\otimes_\mathbb{R}\mathrm{Vect}(\mathbb{B})$, of complex dimension six. On it, $\star$ has the two three-dimensional eigenspaces above. The real field strength is a real form of this six-dimensional space: it is an element of the vector part, and the biquaternion that the framework assigns to it carries the self-dual coordinate. Concretely, with the two combinations
 
 $$
-\mathbf{V} = \mathbf{E}+ic\,\mathbf{B}, \qquad \mathbf{V}^* = \mathbf{E}-ic\,\mathbf{B},
+\vec V = \vec E+ic\,\vec B, \qquad \vec V^* = \vec E-ic\,\vec B,
 $$
 
 the field-strength biquaternion and its coefficient conjugate are
 
 $$
-\tilde{F} = i\sqrt{\epsilon}\,\mathbf{V}, \qquad
-\tilde{F}^* = -i\sqrt{\epsilon}\,\mathbf{V}^*,
+\tilde{F} = i\sqrt{\epsilon}\,\vec V, \qquad
+\tilde{F}^* = -i\sqrt{\epsilon}\,\vec V^*,
 $$
 
-and the dual acts on the two coordinates with opposite signs, being $+i$ on $\mathbf{V}^*$ where it is $-i$ on $\mathbf{V}$:
+and the dual acts on the two coordinates with opposite signs, being $+i$ on $\vec V^*$ where it is $-i$ on $\vec V$:
 
 $$
-\mathbf{V}(\star F) = -i\,\mathbf{V}(F), \qquad
-\mathbf{V}^*(\star F) = +i\,\mathbf{V}^*(F) .
+\vec V(\star F) = -i\,\vec V(F), \qquad
+\vec V^*(\star F) = +i\,\vec V^*(F) .
 $$
 
-Because the dual anticommutes with coefficient conjugation, $\star(\tilde{F}^*) = -(\star\tilde{F})^*$, the two relations are statements about the two coordinates and not about $\tilde{F}$ and $\tilde{F}^*$ separately. The pair $(\mathbf{V},\mathbf{V}^*)$ is a real form of the pair of halves, and for a real field the two are complex conjugates of one another, so that $\tilde{F}$ together with its coefficient conjugate already carries all six real components of $(\mathbf{E},\mathbf{B})$.
+Because the dual anticommutes with coefficient conjugation, $\star(\tilde{F}^*) = -(\star\tilde{F})^*$, the two relations are statements about the two coordinates and not about $\tilde{F}$ and $\tilde{F}^*$ separately. The pair $(\vec V,\vec V^*)$ is a real form of the pair of halves, and for a real field the two are complex conjugates of one another, so that $\tilde{F}$ together with its coefficient conjugate already carries all six real components of $(\vec E,\vec B)$.
 
 ### The split of a general two-form
 
@@ -194,7 +194,7 @@ $$
 
 the two pieces are independent and transform separately under the Lorentz group, in $(1,0)$ and in $(0,1)$. This is the decomposition of the antisymmetric tensor into its self-dual and anti-self-dual parts, and in the biquaternion formulation it is the decomposition of a complexified vector of the algebra into the $+i$ and $-i$ eigencomponents of the Hodge dual.
 
-The split is Lorentz covariant, and the reason is short. The Lorentz action on the field strength is complex-linear on the Riemann–Silberstein vector: writing a boost as a complex $3\times3$ matrix $M$ acting on $\mathbf{V}$, the same boost acts on $i\mathbf{V}$ as $iM$, so the action commutes with multiplication by $i$ and consequently $\star$ commutes with the boost and maps each half to itself. The two halves are therefore invariant subspaces of the Lorentz action, which is what it means for them to be the two three-dimensional complex representations.
+The split is Lorentz covariant, and the reason is short. The Lorentz action on the field strength is complex-linear on the Riemann–Silberstein vector: writing a boost as a complex $3\times3$ matrix $M$ acting on $\vec V$, the same boost acts on $i\vec V$ as $iM$, so the action commutes with multiplication by $i$ and consequently $\star$ commutes with the boost and maps each half to itself. The two halves are therefore invariant subspaces of the Lorentz action, which is what it means for them to be the two three-dimensional complex representations.
 
 
 ## The Spin Content of the Two Halves
@@ -242,21 +242,21 @@ and the symmetric square of the conjugate module is $(0,1)$. The self-dual half 
 The duality rotation of the field-strength article is
 
 $$
-\mathbf{V} \mapsto e^{-i\theta}\,\mathbf{V},
+\vec V \mapsto e^{-i\theta}\,\vec V,
 $$
 
-and at $\theta = \pi/2$ it is the classical electric–magnetic duality. On the biquaternion side the rotation is multiplication of the field strength by a central phase, $\tilde{F}\mapsto e^{-i\theta}\tilde{F}$, and it acts on the two halves by opposite phases: because $\star = -i$ on the self-dual coordinate and $+i$ on the anti-self-dual one, the two acquire the phases $e^{-i\theta}$ and $e^{+i\theta}$ respectively, so each half is carried into itself while the relative phase between them runs through the circle. The invariants of the field are the two scalars of the companion articles, $I_1 = \mathbf{E}^2 - c^2\mathbf{B}^2$ and $I_2 = \mathbf{E}\cdot\mathbf{B}$, which are the real and imaginary parts of $\mathbf{V}\cdot\mathbf{V} = I_1 + 2ic\,I_2$; under the duality rotation they mix, $I_1\mapsto I_1\cos2\theta+2cI_2\sin2\theta$ and $2cI_2\mapsto 2cI_2\cos2\theta-I_1\sin2\theta$, so that the modulus $I_1^2 + 4c^2I_2^2$ is invariant under duality while each of $I_1$ and $I_2$ separately is not.
+and at $\theta = \pi/2$ it is the classical electric–magnetic duality. On the biquaternion side the rotation is multiplication of the field strength by a central phase, $\tilde{F}\mapsto e^{-i\theta}\tilde{F}$, and it acts on the two halves by opposite phases: because $\star = -i$ on the self-dual coordinate and $+i$ on the anti-self-dual one, the two acquire the phases $e^{-i\theta}$ and $e^{+i\theta}$ respectively, so each half is carried into itself while the relative phase between them runs through the circle. The invariants of the field are the two scalars of the companion articles, $I_1 = \vec E^2 - c^2\vec B^2$ and $I_2 = \vec E\cdot\vec B$, which are the real and imaginary parts of $\vec V\cdot\vec V = I_1 + 2ic\,I_2$; under the duality rotation they mix, $I_1\mapsto I_1\cos2\theta+2cI_2\sin2\theta$ and $2cI_2\mapsto 2cI_2\cos2\theta-I_1\sin2\theta$, so that the modulus $I_1^2 + 4c^2I_2^2$ is invariant under duality while each of $I_1$ and $I_2$ separately is not.
 
 ### Helicity
 
-For a plane wave of definite wavevector $\hat{\mathbf{k}}$, Faraday's law gives $\mathbf{B} = \hat{\mathbf{k}}\times\mathbf{E}/c$ and the transverse amplitude splits into circular components satisfying $\hat{\mathbf{k}}\times\hat{\boldsymbol{\varepsilon}}_\pm = \mp i\hat{\boldsymbol{\varepsilon}}_\pm$. Then
+For a plane wave of definite wavevector $\hat k$, Faraday's law gives $\vec B = \hat k\times\vec E/c$ and the transverse amplitude splits into circular components satisfying $\hat k\times\hat\varepsilon_\pm = \mp i\hat\varepsilon_\pm$. Then
 
 $$
-\mathbf{E} + ic\mathbf{B} = 2E_+\hat{\boldsymbol{\varepsilon}}_+, \qquad
-\mathbf{E} - ic\mathbf{B} = 2E_-\hat{\boldsymbol{\varepsilon}}_-,
+\vec E + ic\vec B = 2E_+\hat\varepsilon_+, \qquad
+\vec E - ic\vec B = 2E_-\hat\varepsilon_-,
 $$
 
-so that the self-dual combination $\mathbf{E}+ic\mathbf{B}$ contains only the helicity $+1$ amplitude and the anti-self-dual combination $\mathbf{E}-ic\mathbf{B}$ only the helicity $-1$ amplitude. The two halves of the two-form are therefore the two helicities of the radiation field: on each of two independent transverse directions, an amplitude proportional to $\hat{\boldsymbol{\varepsilon}}_+$ gives a vanishing anti-self-dual combination and an amplitude proportional to $\hat{\boldsymbol{\varepsilon}}_-$ the reverse, and no transverse amplitude gives both. The third helicity eigenvalue, zero, belongs to the propagation direction and is not a transverse polarization; for the massless field the longitudinal mode is removed by the gauge freedom, whose structure is the subject of the companion articles on the Maxwell field. The next article in this subcategory takes up the massive case, where the gauge freedom is absent, the longitudinal polarization becomes physical, and the third state has to be counted as a genuine degree of freedom.
+so that the self-dual combination $\vec E+ic\vec B$ contains only the helicity $+1$ amplitude and the anti-self-dual combination $\vec E-ic\vec B$ only the helicity $-1$ amplitude. The two halves of the two-form are therefore the two helicities of the radiation field: on each of two independent transverse directions, an amplitude proportional to $\hat\varepsilon_+$ gives a vanishing anti-self-dual combination and an amplitude proportional to $\hat\varepsilon_-$ the reverse, and no transverse amplitude gives both. The third helicity eigenvalue, zero, belongs to the propagation direction and is not a transverse polarization; for the massless field the longitudinal mode is removed by the gauge freedom, whose structure is the subject of the companion articles on the Maxwell field. The next article in this subcategory takes up the massive case, where the gauge freedom is absent, the longitudinal polarization becomes physical, and the third state has to be counted as a genuine degree of freedom.
 
 ## Where the Split Lives, and Where It Does Not
 
@@ -286,9 +286,9 @@ $$
 \star\tilde{F} = -i\,\tilde{F},
 $$
 
-that is, as minus left multiplication by the scalar imaginary; equivalently $\star = -i$ on the Riemann–Silberstein vector $\mathbf{V} = \mathbf{E}+ic\mathbf{B}$. Since $\star^2 = -1$, its projectors $\tilde\Pi_{sd,asd} = \tfrac12(1\pm i\star)$ decompose the complexified vector part into two three-dimensional complex spaces, the self-dual and anti-self-dual halves, which are the representations $(1,0)$ and $(0,1)$ and are preserved by every Lorentz transformation because the boost acts complex-linearly on $\mathbf{V}$. A real field strength is a real form of this space: its field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\mathbf{V}$ carries the self-dual coordinate $\mathbf{V} = \mathbf{E}+ic\mathbf{B}$, on which $\star = -i$, and the anti-self-dual coordinate is the combination $\mathbf{V}^* = \mathbf{E}-ic\mathbf{B}$ carried by $\tilde{F}^*$, on which $\star = +i$.
+that is, as minus left multiplication by the scalar imaginary; equivalently $\star = -i$ on the Riemann–Silberstein vector $\vec V = \vec E+ic\vec B$. Since $\star^2 = -1$, its projectors $\tilde\Pi_{sd,asd} = \tfrac12(1\pm i\star)$ decompose the complexified vector part into two three-dimensional complex spaces, the self-dual and anti-self-dual halves, which are the representations $(1,0)$ and $(0,1)$ and are preserved by every Lorentz transformation because the boost acts complex-linearly on $\vec V$. A real field strength is a real form of this space: its field-strength biquaternion $\tilde{F} = i\sqrt{\epsilon}\vec V$ carries the self-dual coordinate $\vec V = \vec E+ic\vec B$, on which $\star = -i$, and the anti-self-dual coordinate is the combination $\vec V^* = \vec E-ic\vec B$ carried by $\tilde{F}^*$, on which $\star = +i$.
 
-The split is pure integer spin. The self-dual half is the symmetric square of the defining module, $\mathrm{Sym}^2(S)\cong(1,0)$, of complex dimension three; the anti-self-dual half is $\mathrm{Sym}^2(\bar{S})\cong(0,1)$. Under duality rotation the two halves acquire opposite phases, and for a plane wave they are exactly the two helicities: $\mathbf{E}+ic\mathbf{B}$ carries helicity $+1$ and $\mathbf{E}-ic\mathbf{B}$ helicity $-1$. The carrier of all of this is the vector part of the algebra, which is not a module over $\mathbb{B}$ but a representation carried by conjugation and by tensor products of the defining module; that distinction is the boundary of the algebra's native spin content, and it is drawn in the final article of the subcategory.
+The split is pure integer spin. The self-dual half is the symmetric square of the defining module, $\mathrm{Sym}^2(S)\cong(1,0)$, of complex dimension three; the anti-self-dual half is $\mathrm{Sym}^2(\bar{S})\cong(0,1)$. Under duality rotation the two halves acquire opposite phases, and for a plane wave they are exactly the two helicities: $\vec E+ic\vec B$ carries helicity $+1$ and $\vec E-ic\vec B$ helicity $-1$. The carrier of all of this is the vector part of the algebra, which is not a module over $\mathbb{B}$ but a representation carried by conjugation and by tensor products of the defining module; that distinction is the boundary of the algebra's native spin content, and it is drawn in the final article of the subcategory.
 
 ## Summary of Notation
 
@@ -300,17 +300,17 @@ The split is pure integer spin. The self-dual half is the symmetric square of th
 | $\mathbb{M}_-$, $\mathbb{M}_+$ | Material (anti-Hermitian) and informational (Hermitian) sectors |
 | $\mathrm{Vect}(\mathbb{B})$ | Complex three-dimensional vector part, real dimension six |
 | $\tilde{\nabla}, \tilde{\nabla}^{\natural}$ | Biquaternionic gradient and its quaternion conjugate; $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2+\Delta$ |
-| $\tilde{A} = i\phi/c\,e_0 + \mathbf{A}$ | Four-potential biquaternion |
+| $\tilde{A} = i\phi/c\,e_0 + \vec A$ | Four-potential biquaternion |
 | $\tilde{F} = \tilde{\nabla}^{\natural}\tilde{A} - \mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{A})$ | Field-strength biquaternion, pure vector |
-| $\mathbf{E}, \mathbf{H}, \mathbf{B}=\mu\mathbf{H}$ | Electric field, magnetic field, magnetic induction |
+| $\vec E, \vec H, \vec B=\mu\vec H$ | Electric field, magnetic field, magnetic induction |
 | $\epsilon,\mu$, $c=1/\sqrt{\epsilon\mu}$ | Medium constants and speed of light in the medium |
-| $\mathbf{V} = \mathbf{E}+ic\mathbf{B}$ | Riemann–Silberstein vector, $\tilde{F}=i\sqrt{\epsilon}\,\mathbf{V}$ |
-| $I_1 = \mathbf{E}^2-c^2\mathbf{B}^2$, $I_2 = \mathbf{E}\cdot\mathbf{B}$ | The two field invariants, real and imaginary parts of $\mathbf{V}\cdot\mathbf{V} = I_1+2icI_2$ |
-| $\star$ | Hodge dual, $\star(\mathbf{E},\mathbf{B})=(c\mathbf{B},-\mathbf{E}/c)$, $\star^2=-1$, $\star\tilde{F}=-i\tilde{F}$ |
+| $\vec V = \vec E+ic\vec B$ | Riemann–Silberstein vector, $\tilde{F}=i\sqrt{\epsilon}\,\vec V$ |
+| $I_1 = \vec E^2-c^2\vec B^2$, $I_2 = \vec E\cdot\vec B$ | The two field invariants, real and imaginary parts of $\vec V\cdot\vec V = I_1+2icI_2$ |
+| $\star$ | Hodge dual, $\star(\vec E,\vec B)=(c\vec B,-\vec E/c)$, $\star^2=-1$, $\star\tilde{F}=-i\tilde{F}$ |
 | $\tilde\Pi_{sd,asd} = \tfrac12(1\pm i\star)$ | Projectors onto the self-dual ($\star=-i$) and anti-self-dual ($\star=+i$) halves |
 | $(1,0)$, $(0,1)$ | The two three-dimensional complex Lorentz representations |
 | $S$ | Defining (spinor) module, $\mathrm{Sym}^2(S)\cong(1,0)$ |
-| $\tilde{\Lambda}\in SL(2,\mathbb{C})$ | Lorentz rotor, $\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_0$ |
+| $\tilde{U}\in SL(2,\mathbb{C})$ | Lorentz rotor, $\tilde{U}\tilde{U}^{\natural}=e_0$ |
 
 ## Further Reading
 

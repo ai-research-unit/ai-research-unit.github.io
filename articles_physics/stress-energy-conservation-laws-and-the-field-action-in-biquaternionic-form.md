@@ -32,7 +32,7 @@ $$
 \Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla} = \partial_{ict}^2+\Delta = -\frac{1}{c^2}\partial_t^2+\Delta .
 $$
 
-The biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ — level 1, the identity $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and its restriction to the real material slice is the level-2 form $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The scalar mass parameter is $\mu = mc/\hbar$, so that the scalar equation is $(\Box-\mu^2)\tilde{\Phi}=0$, matching the companion article *The Klein–Gordon Equation in Biquaternionic Form*. The field strength is $\tilde{F}=i\sqrt{\epsilon}\,\mathbf{E}-\sqrt{\mu}\,\mathbf{H}$, the source is $\tilde{R}=\frac{i\rho}{\sqrt{\epsilon}}e_0+\sqrt{\mu}\,\mathbf{J}$, and the Maxwell equation is $\tilde{\nabla}\tilde{F}=-\tilde{R}$, all as fixed in the companion article *Maxwell's Equations in the Biquaternionic Formulation*. The energy density is $W=\tfrac12(\epsilon\mathbf{E}^2+\mu\mathbf{H}^2)$ and the Poynting vector is $\mathbf{S}=\mathbf{E}\times\mathbf{H}$. The trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value.
+The biquaternion norm is $N(\tilde{Q}) = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}=\tilde{Q}\tilde{Q}^{\natural}=\sum_\mu Q_\mu^2$ — level 1, the identity $\mathrm{diag}(+1,+1,+1,+1)$ on $\mathbb{C}$ — and its restriction to the real material slice is the level-2 form $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The scalar mass parameter is $\mu = mc/\hbar$, so that the scalar equation is $(\Box-\mu^2)\tilde{\Phi}=0$, matching the companion article *The Klein–Gordon Equation in Biquaternionic Form*. The field strength is $\tilde{F}=i\sqrt{\epsilon}\,\vec E-\sqrt{\mu}\,\vec H$, the source is $\tilde{R}=\frac{i\rho}{\sqrt{\epsilon}}e_0+\sqrt{\mu}\,\vec J$, and the Maxwell equation is $\tilde{\nabla}\tilde{F}=-\tilde{R}$, all as fixed in the companion article *Maxwell's Equations in the Biquaternionic Formulation*. The energy density is $W=\tfrac12(\epsilon\vec E^2+\mu\vec H^2)$ and the Poynting vector is $\vec S=\vec E\times\vec H$. The trace formula is $\mathrm{Tr}(\tilde{P}\tilde{H})=2\,\mathrm{Sc}(\tilde{P}\tilde{H}) = 2\langle\tilde{P},\tilde{H}\rangle$. Throughout, $c=1/\sqrt{\epsilon\mu}$ is the speed of light in the medium and $c_0$ its vacuum value.
 
 **A sign warning.** As in the companion exercise *Exercise: The Electromagnetic Energy–Momentum Tensor*, the mixed component $T^0{}_0$ carries a sign in the $ict$ convention: for the electromagnetic field $T^0{}_0=-W$, while the physical energy density is the contravariant $T^{00}=W$. This article keeps the same convention for the scalar field and states it at each tensor, so that the two fields can be compared without a sign discrepancy.
 
@@ -102,12 +102,12 @@ $$
 \partial_\mu F^{\mu\nu} = 0 ,
 $$
 
-and adding the minimal-coupling term $S_{\mathrm{int}}=-\int A_\nu J^\nu\,d^4x$ with the four-current $J^\nu=(\rho c,\mathbf{J})$ gives the inhomogeneous Maxwell equations, whose biquaternion form is the single equation
+and adding the minimal-coupling term $S_{\mathrm{int}}=-\int A_\nu J^\nu\,d^4x$ with the four-current $J^\nu=(\rho c,\vec J)$ gives the inhomogeneous Maxwell equations, whose biquaternion form is the single equation
 
 $$
 \tilde{\nabla}\tilde{F} = -\tilde{R},
 \qquad
-\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_0+\sqrt{\mu}\,\mathbf{J},
+\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_0+\sqrt{\mu}\,\vec J,
 \qquad
 \mathrm{Sc}\!\left(\tilde{\nabla}^{\natural}\tilde{R}\right)=0 ,
 $$
@@ -180,16 +180,16 @@ is time-independent, which follows by integrating the conservation law over a sp
 
 
 $$
-\phi(\mathbf{x},t) = \cos\!\left(k_1x-\omega_1t\right) + 0.6\cos\!\left(k_2y-\omega_2t\right),
+\phi(\vec x,t) = \cos\!\left(k_1x-\omega_1t\right) + 0.6\cos\!\left(k_2y-\omega_2t\right),
 \qquad
-\mathbf{k}_1 = (1.1,0,0),
+\vec k_1 = (1.1,0,0),
 \quad
-\mathbf{k}_2 = (0,0.9,0),
+\vec k_2 = (0,0.9,0),
 \quad
 \mu = 1.3,
 $$
 
-with $\omega_i^2 = \mathbf{k}_i^2+\mu^2$ for each mode, so that each mode is on shell and the two are on shell simultaneously. Evaluating $\partial^\mu T_{\mu\nu}$ by second-order finite differences with step $10^{-3}$ at the event $t=0.7$, $\mathbf{x}=(0.3,-0.5,0.2)$ gave residuals of order $10^{-6}$ for all four $\nu$, which is the discretisation error $O(h^2)$; the energy density at the same event was $T^{00}=3.37>0$. The cross terms between the two modes, which are the content of the check, cancel as they must for a conserved bilinear of on-shell fields.
+with $\omega_i^2 = \vec k_i^2+\mu^2$ for each mode, so that each mode is on shell and the two are on shell simultaneously. Evaluating $\partial^\mu T_{\mu\nu}$ by second-order finite differences with step $10^{-3}$ at the event $t=0.7$, $\vec x=(0.3,-0.5,0.2)$ gave residuals of order $10^{-6}$ for all four $\nu$, which is the discretisation error $O(h^2)$; the energy density at the same event was $T^{00}=3.37>0$. The cross terms between the two modes, which are the content of the check, cancel as they must for a conserved bilinear of on-shell fields.
 
 ## The Electromagnetic Stress–Energy as a Bigeneral quaternionic Bilinear
 
@@ -218,9 +218,9 @@ with the Maxwell stress
 $$
 \sigma_{jk} = \epsilon\,E_jE_k + \mu\,H_jH_k - W\,\delta_{jk},
 \qquad
-W = \tfrac12\left(\epsilon\mathbf{E}^2+\mu\mathbf{H}^2\right),
+W = \tfrac12\left(\epsilon\vec E^2+\mu\vec H^2\right),
 \qquad
-\mathbf{S} = \mathbf{E}\times\mathbf{H}.
+\vec S = \vec E\times\vec H.
 $$
 
 Raising the second index with $\eta=\mathrm{diag}(-1,+1,+1,+1)$ gives the symmetric contravariant tensor
@@ -233,7 +233,7 @@ T^{0j} = T^{j0} = \frac{1}{c}S_j,
 T^{jk} = -\sigma_{jk} = W\delta_{jk}-\epsilon E_jE_k-\mu H_jH_k ,
 $$
 
-which is the standard electromagnetic energy–momentum tensor in a medium: $W$ is the energy density, $\tfrac1c\mathbf{S}$ is the energy flux and (times $c$) the momentum density, and $-\sigma_{jk}$ is the momentum flux. The mixed tensor is deliberately not symmetric; the asymmetry is exactly the metric factor between the energy flux and the momentum density, and it disappears on raising the index.
+which is the standard electromagnetic energy–momentum tensor in a medium: $W$ is the energy density, $\tfrac1c\vec S$ is the energy flux and (times $c$) the momentum density, and $-\sigma_{jk}$ is the momentum flux. The mixed tensor is deliberately not symmetric; the asymmetry is exactly the metric factor between the energy flux and the momentum density, and it disappears on raising the index.
 
 **Tracelessness.** The trace in the Minkowski pairing is
 
@@ -241,25 +241,25 @@ $$
 \eta_{\mu\nu}T^{\mu\nu} = -T^{00}+T^{kk} = -W - \sigma_{kk} = -W + W = 0 ,
 $$
 
-because $\sigma_{kk} = \epsilon\mathbf{E}^2+\mu\mathbf{H}^2-3W = 2W-3W=-W$. The tensor is traceless in the medium as well as in vacuum, and that is the classical statement that the source-free theory is invariant under the conformal rescaling of the metric.
+because $\sigma_{kk} = \epsilon\vec E^2+\mu\vec H^2-3W = 2W-3W=-W$. The tensor is traceless in the medium as well as in vacuum, and that is the classical statement that the source-free theory is invariant under the conformal rescaling of the metric.
 
 **Conservation.** The divergence of the tensor is the Lorentz four-force density,
 
 $$
 \partial_\mu T^{\mu\nu} = -f^\nu ,
 \qquad
-f^\nu = \left(\frac{1}{c}\mathbf{E}\cdot\mathbf{J},\ \rho\mathbf{E}+\mathbf{J}\times\mathbf{B}\right),
+f^\nu = \left(\frac{1}{c}\vec E\cdot\vec J,\ \rho\vec E+\vec J\times\vec B\right),
 $$
 
 so that for a source-free field $\partial_\mu T^{\mu\nu}=0$, and in the presence of charges the field momentum is exchanged with the matter at the rate given by the Lorentz force. The companion article *The Lorentz Force in Biquaternion Form* treats the matter side of this exchange. The source-free conservation law was checked on a superposition of two plane waves in two different directions with two different polarisations,
 
 $$
-\mathbf{E} = \mathbf{e}_1\cos(k_1x-\omega_1t) + 0.5\,\mathbf{e}_2\cos(k_2y-\omega_2t),
+\vec E = \hat e_1\cos(k_1x-\omega_1t) + 0.5\,\hat e_2\cos(k_2y-\omega_2t),
 \qquad
-\mathbf{H} = \hat{\mathbf{k}}_i\times\mathbf{E}\ \text{per mode},
+\vec H = \hat k_i\times\vec E\ \text{per mode},
 $$
 
-with $\omega_i = c|\mathbf{k}_i|$, $c=1$, $\epsilon=\mu=1$. Evaluating $\partial_\mu T^{\mu\nu}$ by second-order finite differences with step $10^{-3}$ at the event $t=0.6$, $\mathbf{x}=(0.3,-0.7,0.2)$ gave $|\partial_\mu T^{\mu\nu}|$ of order $10^{-7}$, and falling as $h^2$, for all four $\nu$ — the discretisation error — confirming conservation for the interacting cross terms and not merely mode by mode.
+with $\omega_i = c|\vec k_i|$, $c=1$, $\epsilon=\mu=1$. Evaluating $\partial_\mu T^{\mu\nu}$ by second-order finite differences with step $10^{-3}$ at the event $t=0.6$, $\vec x=(0.3,-0.7,0.2)$ gave $|\partial_\mu T^{\mu\nu}|$ of order $10^{-7}$, and falling as $h^2$, for all four $\nu$ — the discretisation error — confirming conservation for the interacting cross terms and not merely mode by mode.
 
 **Where the algebra enters.** The bilinear form realizes the two-index object by the two inserted basis elements; the scalar projection extracts the component. This is why the natural object is the mixed tensor $T^\mu{}_\nu$ and not a doubly covariant one, and why no single biquaternion can carry the full tensor — the four-component object $\tilde{W}=\tfrac12\tilde{F}\tilde{F}^{*}$ carries only the time row, as the exercise shows. The rank-two object with two independent vector directions is the smallest algebraic structure that holds all the components, and the algebra supplies it through the bilinear rather than through a new field.
 
@@ -271,7 +271,7 @@ $$
 T^{\mu\nu}_{\mathrm{tot}} = T^{\mu\nu}_{\mathrm{em}} + T^{\mu\nu}_{\mathrm{matter}} ,
 $$
 
-is conserved. The matter tensor of a pressureless dust of proper density $n$ and four-velocity $\tilde{U}$ is the tensor form of the particle flux,
+is conserved. The matter tensor of a pressureless dust of proper density $n$ and four-velocity $\tilde{V}$ is the tensor form of the particle flux,
 
 $$
 T^{\mu\nu}_{\mathrm{matter}} = m\,n\,U^\mu U^\nu ,
@@ -290,13 +290,13 @@ $$
 The component $\nu=0$ of this statement is the **Poynting theorem**,
 
 $$
-\partial_t W + \nabla\cdot\mathbf{S} + \mathbf{E}\cdot\mathbf{J} = 0 ,
+\partial_t W + \nabla\cdot\vec S + \vec E\cdot\vec J = 0 ,
 $$
 
 the $\nu=k$ components are the momentum-balance equations that underlie radiation pressure, and the biquaternionic form of the whole statement is the single equation
 
 $$
-\mathrm{Sc}\!\left(\tilde{\nabla}\tilde{W}\right) = \frac{i}{c}\,\mathbf{J}\cdot\mathbf{E}
+\mathrm{Sc}\!\left(\tilde{\nabla}\tilde{W}\right) = \frac{i}{c}\,\vec J\cdot\vec E
 $$
 
 for the Hermitian form $\tilde{W}=\tfrac12\tilde{F}\tilde{F}^{*}$, which the companion article *Maxwell's Equations in the Biquaternionic Formulation* derives and the exercise re-derives by contrast with the failed real form. The pattern is general: the divergence of the field's stress–energy equals minus the four-force density, the divergence of the matter's tensor equals plus it, and the sum is conserved. The field action is what fixes both the field tensor and, through the coupling term, the force that appears on the matter side.
@@ -349,7 +349,7 @@ S_{\mathrm{em}} = -\frac14\int F_{\mu\nu}F^{\mu\nu}\,d^4x ,
 F_{\mu\nu}F^{\mu\nu} = 2\mu\,\mathrm{Re}\,N(\tilde{F}),
 $$
 
-has the equation $\tilde{\nabla}\tilde{F}=-\tilde{R}$, with $\tilde{R}=\frac{i\rho}{\sqrt{\epsilon}}e_0+\sqrt{\mu}\mathbf{J}$. The translation Noether current is the canonical tensor $T^\mu{}_\nu=\sum_a\frac{\partial\mathcal{L}}{\partial(\partial_\mu\psi_a)}\partial_\nu\psi_a-\delta^\mu_\nu\mathcal{L}$, conserved on shell, taken with the overall sign that makes $T^{00}>0$.
+has the equation $\tilde{\nabla}\tilde{F}=-\tilde{R}$, with $\tilde{R}=\frac{i\rho}{\sqrt{\epsilon}}e_0+\sqrt{\mu}\vec J$. The translation Noether current is the canonical tensor $T^\mu{}_\nu=\sum_a\frac{\partial\mathcal{L}}{\partial(\partial_\mu\psi_a)}\partial_\nu\psi_a-\delta^\mu_\nu\mathcal{L}$, conserved on shell, taken with the overall sign that makes $T^{00}>0$.
 
 The scalar stress–energy is $T_{\mu\nu}=\partial_\mu\phi\partial_\nu\phi+\eta_{\mu\nu}\mathcal{L}_\phi$, with
 
@@ -387,16 +387,16 @@ symmetric on raising the index, traceless in the Minkowski pairing, and conserve
 | $\mathcal{L}_\phi=-\tfrac12\partial_\mu\tilde{\Phi}\partial^\mu\tilde{\Phi}^{\natural}-\tfrac12\mu^2\tilde{\Phi}\tilde{\Phi}^{\natural}$ | Scalar Lagrangian |
 | $\mu=mc/\hbar$ | Scalar mass parameter |
 | $(\Box-\mu^2)\tilde{\Phi}=0$ | Biquaternionic Klein–Gordon equation |
-| $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$; $\tilde{F}=i\sqrt{\epsilon}\mathbf{E}-\sqrt{\mu}\mathbf{H}$ | Field strength |
+| $F_{\mu\nu}=\partial_\mu A_\nu-\partial_\nu A_\mu$; $\tilde{F}=i\sqrt{\epsilon}\vec E-\sqrt{\mu}\vec H$ | Field strength |
 | $S_{\mathrm{em}}=-\frac14\int F_{\mu\nu}F^{\mu\nu}d^4x$ | Electromagnetic action |
-| $\tilde{R}=\frac{i\rho}{\sqrt{\epsilon}}e_0+\sqrt{\mu}\mathbf{J}$; $\tilde{\nabla}\tilde{F}=-\tilde{R}$ | Biquaternionic Maxwell system |
-| $W=\tfrac12(\epsilon\mathbf{E}^2+\mu\mathbf{H}^2)$; $\mathbf{S}=\mathbf{E}\times\mathbf{H}$ | Energy density; Poynting vector |
+| $\tilde{R}=\frac{i\rho}{\sqrt{\epsilon}}e_0+\sqrt{\mu}\vec J$; $\tilde{\nabla}\tilde{F}=-\tilde{R}$ | Biquaternionic Maxwell system |
+| $W=\tfrac12(\epsilon\vec E^2+\mu\vec H^2)$; $\vec S=\vec E\times\vec H$ | Energy density; Poynting vector |
 | $\sigma_{jk}=\epsilon E_jE_k+\mu H_jH_k-W\delta_{jk}$ | Maxwell stress |
 | $T^\mu{}_\nu=\tfrac12\mathrm{Sc}(\tilde{F}\mathcal{E}_\mu\tilde{F}^{*}\mathcal{E}_\nu)$ | Electromagnetic stress–energy, bigeneral quaternionic bilinear |
 | $T^0{}_0=-W$, $T^0{}_j=\frac1cS_j$, $T^j{}_0=-\frac1cS_j$, $T^j{}_k=-\sigma_{jk}$ | Mixed components |
 | $T^{00}=W$, $T^{0j}=T^{j0}=\frac1cS_j$, $T^{jk}=-\sigma_{jk}$ | Contravariant (symmetric) components |
 | $\eta_{\mu\nu}T^{\mu\nu}=-T^{00}+T^{kk}=0$ | Tracelessness (Minkowski pairing) |
-| $\partial_\mu T^{\mu\nu}=-f^\nu$, $f^\nu=(\frac1c\mathbf{E}\cdot\mathbf{J},\ \rho\mathbf{E}+\mathbf{J}\times\mathbf{B})$ | Conservation with source; Lorentz four-force |
+| $\partial_\mu T^{\mu\nu}=-f^\nu$, $f^\nu=(\frac1c\vec E\cdot\vec J,\ \rho\vec E+\vec J\times\vec B)$ | Conservation with source; Lorentz four-force |
 | $T_{\mu\nu}=\partial_\mu\phi\partial_\nu\phi+\eta_{\mu\nu}\mathcal{L}_\phi$ | Scalar stress–energy |
 | $T_{00}=T^{00}=\frac{1}{2c^2}\dot{\phi}^2+\frac12(\nabla\phi)^2+\frac12\mu^2\phi^2$ | Scalar energy density, positive |
 | $c=1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |

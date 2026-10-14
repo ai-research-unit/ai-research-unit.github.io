@@ -66,14 +66,14 @@ as a left module, where $\tilde{Q}=e_0-\tilde{P}$ is the complementary orthogona
 The Lorentz group acts on the state module by left multiplication,
 
 $$
-\tilde{\psi}\;\longmapsto\;\tilde{\Lambda}\tilde{\psi},
+\tilde{\psi}\;\longmapsto\;\tilde{U}\tilde{\psi},
 \qquad
-\tilde{\Lambda}\in SL(2,\mathbb{C})=\{\tilde{\Lambda}\in\mathbb{B}:\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_0\},
+\tilde{U}\in SL(2,\mathbb{C})=\{\tilde{U}\in\mathbb{B}:\tilde{U}\tilde{U}^{\natural}=e_0\},
 $$
 
 and the representation so obtained is the defining two-dimensional representation of $SL(2,\mathbb{C})$, the **spin-$\tfrac{1}{2}$** representation. The representation-theoretic content of the module is the content of $S=\mathbb{C}^2$ as a module over $M_2(\mathbb{C})$; its restriction to the rotation subgroup can be read off from the Lie algebra action.
 
-The rotation subgroup is $SU(2)=SL(2,\mathbb{C})\cap U(2)$, whose elements are the unit real quaternions, $\tilde{R}=\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\hat{\mathbf{n}}$ with $\hat{\mathbf{n}}$ a unit pure real quaternion. Its Lie algebra is spanned by the generators
+The rotation subgroup is $SU(2)=SL(2,\mathbb{C})\cap U(2)$, whose elements are the unit real quaternions, $\tilde{u}=\cos\frac{\theta}{2}+\sin\frac{\theta}{2}\hat n$ with $\hat n$ a unit pure real quaternion. Its Lie algebra is spanned by the generators
 
 $$
 J_k=\tfrac{i}{2}e_k,
@@ -98,15 +98,15 @@ Since $\tfrac{3}{4}=j(j+1)$ gives $j=\tfrac{1}{2}$, the state module carries **s
 
 ### The Module Is Not Rotationally Invariant
 
-There is a second way to see the same content, and it is the one that makes the contrast with the scalar sharp. The idempotent $\tilde\Pi(\hat{\mu})$ is built from a **direction** $\hat{\mu}$, and a rotation moves that direction. Conjugating by a unit real quaternion $\tilde{R}$,
+There is a second way to see the same content, and it is the one that makes the contrast with the scalar sharp. The idempotent $\tilde\Pi(\hat{\mu})$ is built from a **direction** $\hat{\mu}$, and a rotation moves that direction. Conjugating by a unit real quaternion $\tilde{u}$,
 
 $$
-\tilde{R}\,\tilde\Pi(\hat{\mu})\,\tilde{R}^{*}
-=\tfrac{1}{2}\left(e_0+i\,\tilde{R}\hat{\mu}\tilde{R}^{*}\right)
+\tilde{u}\,\tilde\Pi(\hat{\mu})\,\tilde{u}^{*}
+=\tfrac{1}{2}\left(e_0+i\,\tilde{u}\hat{\mu}\tilde{u}^{*}\right)
 =\tilde\Pi(\hat{\mu}'),
 $$
 
-where $\hat{\mu}'=\tilde{R}\hat{\mu}\tilde{R}^{*}$ is the rotated unit pure quaternion. Rotations about the axis $\hat{\mu}$ leave $\tilde{P}$ fixed; rotations about other axes do not. The orbit of the idempotent is therefore the two-sphere of unit pure quaternions, and its stabilizer is the $U(1)$ subgroup of rotations about $\hat{\mu}$. This was verified numerically: a rotor of angle $1.1$ about the normalized axis $(0.3,-0.7,0.5)$ sends $\tilde\Pi(e_3)=\tfrac{1}{2}(e_0+ie_3)$ to $\tilde\Pi(\hat{\mu}')$ with $\hat{\mu}'=(-0.586,-0.524,0.618)$, a unit vector, while a rotation about $e_3$ fixes $\tilde\Pi(e_3)$ identically. A module that is carried by an idempotent with an axis is, in this concrete sense, not rotationally invariant: its very definition singles out a direction.
+where $\hat{\mu}'=\tilde{u}\hat{\mu}\tilde{u}^{*}$ is the rotated unit pure quaternion. Rotations about the axis $\hat{\mu}$ leave $\tilde{P}$ fixed; rotations about other axes do not. The orbit of the idempotent is therefore the two-sphere of unit pure quaternions, and its stabilizer is the $U(1)$ subgroup of rotations about $\hat{\mu}$. This was verified numerically: a rotor of angle $1.1$ about the normalized axis $(0.3,-0.7,0.5)$ sends $\tilde\Pi(e_3)=\tfrac{1}{2}(e_0+ie_3)$ to $\tilde\Pi(\hat{\mu}')$ with $\hat{\mu}'=(-0.586,-0.524,0.618)$, a unit vector, while a rotation about $e_3$ fixes $\tilde\Pi(e_3)$ identically. A module that is carried by an idempotent with an axis is, in this concrete sense, not rotationally invariant: its very definition singles out a direction.
 
 A scalar field is exactly the opposite. It has no axis, and no rotation may move it. The remainder of the article makes that requirement precise inside the algebra and identifies the unique subspace that satisfies it.
 
@@ -179,7 +179,7 @@ The state module is not an exception within a richer family of modules; it is, u
 
 If one insists on locating the scalar inside the algebra rather than inside a module, the centralizer computation settles where. Under the rotation subgroup the algebra decomposes as spin $0$ (the centre) plus spin $1$ (the traceless part); under the conjugation action there is no nonzero element invariant under the full Lorentz group, since the conjugation action on $\mathbb{B}$ is the irreducible complexified four-vector representation. The only rotationally invariant elements are central. A scalar field, being invariant under rotations, must therefore take its values in $\mathbb{C}_{\mathbb{B}}$, and there is nothing else it could take them in.
 
-It is worth stating plainly how the scalar relates to the rotor-conjugation action that carries the material sector. The four-vectors of $\mathbb{M}_-$ transform as $\tilde{Q}\mapsto\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$, which is the four-vector representation; under rotations it splits into the time component (spin $0$) and the spatial vector (spin $1$). The scalar field does not transform by this rule at all. Its Lorentz transformation is the transformation of its argument, $\tilde{\Phi}'(x')=\tilde{\Phi}(x)$, with no algebraic factor acting on the value. The absence of an algebraic action is the field-theoretic statement of spin $0$, and the centre is the value space in which that absence is natural.
+It is worth stating plainly how the scalar relates to the rotor-conjugation action that carries the material sector. The four-vectors of $\mathbb{M}_-$ transform as $\tilde{Q}\mapsto\tilde{U}\tilde{Q}\tilde{U}^{*}$, which is the four-vector representation; under rotations it splits into the time component (spin $0$) and the spatial vector (spin $1$). The scalar field does not transform by this rule at all. Its Lorentz transformation is the transformation of its argument, $\tilde{\Phi}'(x')=\tilde{\Phi}(x)$, with no algebraic factor acting on the value. The absence of an algebraic action is the field-theoretic statement of spin $0$, and the centre is the value space in which that absence is natural.
 
 ### The Trivial Representation Lives in the Tensor Square
 
@@ -261,29 +261,29 @@ with the biquaternion writing carrying no additional content. This is the honest
 The plane-wave solutions exhibit the same point. Writing the four-wavevector in the material sector,
 
 $$
-\tilde{K}=i\frac{\omega}{c}e_0+\mathbf{k}\in\mathbb{M}_-,
+\tilde{K}=i\frac{\omega}{c}e_0+\vec k\in\mathbb{M}_-,
 \qquad
-\tilde{Q}=ict\,e_0+\mathbf{x}\in\mathbb{M}_-,
+\tilde{Q}=ict\,e_0+\vec x\in\mathbb{M}_-,
 $$
 
-the phase is the scalar part $\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})=\mathbf{k}\cdot\mathbf{x}-\omega t$, a real central element, and the positive-frequency solution is
+the phase is the scalar part $\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})=\vec k\cdot\vec x-\omega t$, a real central element, and the positive-frequency solution is
 
 $$
 \tilde{\Phi}=\phi_0\,e^{\,i\,\mathrm{Sc}(\tilde{K}\tilde{Q}^{\natural})}\,e_0
-=\phi_0\,e^{\,i(\mathbf{k}\cdot\mathbf{x}-\omega t)}\,e_0 .
+=\phi_0\,e^{\,i(\vec k\cdot\vec x-\omega t)}\,e_0 .
 $$
 
 The exponential is central. The mass-shell condition is the biquaternion norm of the four-wavevector fixed to a negative constant,
 
 $$
-N(\tilde{K})=\tilde{K}\tilde{K}^{\natural}=-\frac{\omega^2}{c^2}+\mathbf{k}^2=-\frac{m^2c^2}{\hbar^2}
+N(\tilde{K})=\tilde{K}\tilde{K}^{\natural}=-\frac{\omega^2}{c^2}+\vec k^2=-\frac{m^2c^2}{\hbar^2}
 \quad\Longleftrightarrow\quad
-\omega^2=c^2\mathbf{k}^2+\frac{m^2c^4}{\hbar^2} ,
+\omega^2=c^2\vec k^2+\frac{m^2c^4}{\hbar^2} ,
 $$
 
-which is the standard relativistic dispersion relation and is reproduced here only to record that the scalar field's entire algebraic content is the biquaternion norm of a four-vector, not a module structure. The conserved current $\tilde{J}=ic\rho\,e_0+\mathbf{j}$ lies in $\mathbb{M}_-$, its scalar component being the imaginary scalar direction, exactly as for the four-current of relativistic mechanics.
+which is the standard relativistic dispersion relation and is reproduced here only to record that the scalar field's entire algebraic content is the biquaternion norm of a four-vector, not a module structure. The conserved current $\tilde{J}=ic\rho\,e_0+\vec j$ lies in $\mathbb{M}_-$, its scalar component being the imaginary scalar direction, exactly as for the four-current of relativistic mechanics.
 
-One structural remark belongs with the equation. The first-order operators of the framework, $\tilde{\nabla}$ and the module action by $\tilde{\Lambda}$, are module-theoretic or vectorial: they act on spinors or on four-vectors and change their representation content. The scalar field has neither. The only operator the scalar equation uses is the central scalar $\Box$, whose square-root structure — the spinor factorisation $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ — is a statement about the *operator*, not about the field it acts on. A scalar field is annihilated by a composite of spinor operators without ever being a spinor; it is the algebra's trivial representation appearing in the composition, not a state in the module.
+One structural remark belongs with the equation. The first-order operators of the framework, $\tilde{\nabla}$ and the module action by $\tilde{U}$, are module-theoretic or vectorial: they act on spinors or on four-vectors and change their representation content. The scalar field has neither. The only operator the scalar equation uses is the central scalar $\Box$, whose square-root structure — the spinor factorisation $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}$ — is a statement about the *operator*, not about the field it acts on. A scalar field is annihilated by a composite of spinor operators without ever being a spinor; it is the algebra's trivial representation appearing in the composition, not a state in the module.
 
 ## Scalars from the Module: The Composite Route
 
@@ -295,15 +295,15 @@ $$
 \sigma=\mathrm{Sc}\!\left(\tilde{\psi}\tilde{\chi}^{*}\right)=\tfrac{1}{2}\mathrm{Tr}\!\left(\tilde{\psi}\tilde{\chi}^{*}\right),
 $$
 
-is a complex number. Under a Lorentz transformation the module transforms by left multiplication, $\tilde{\psi}\mapsto\tilde{\Lambda}\tilde{\psi}$ and $\tilde{\chi}\mapsto\tilde{\Lambda}\tilde{\chi}$, so
+is a complex number. Under a Lorentz transformation the module transforms by left multiplication, $\tilde{\psi}\mapsto\tilde{U}\tilde{\psi}$ and $\tilde{\chi}\mapsto\tilde{U}\tilde{\chi}$, so
 
 $$
 \tilde{\psi}\tilde{\chi}^{*}
 \;\longmapsto\;
-\tilde{\Lambda}\,\tilde{\psi}\tilde{\chi}^{*}\,\tilde{\Lambda}^{*} ,
+\tilde{U}\,\tilde{\psi}\tilde{\chi}^{*}\,\tilde{U}^{*} ,
 $$
 
-which is the conjugation action on $\mathbb{M}_+$, the four-vector channel. Its scalar part is invariant under the rotation subgroup, where $\tilde{\Lambda}^{*}=\tilde{\Lambda}^{-1}$, but **not** under boosts, where $\tilde{\Lambda}^{*}\tilde{\Lambda}\neq e_0$. The object $\tilde{\psi}\tilde{\chi}^{*}$ is therefore a four-vector and $\sigma$ is its time component, not a Lorentz scalar; this is the algebraic form of the standard statement that $\psi^\dagger\psi$ is the time component of the four-current $\bar{\psi}\gamma^\mu\psi$, not an invariant. A numerical check on a generic pair gives the expected behaviour: at rapidity $1.3$ the boost changes $\sigma$ by $1.36$, while a rotation leaves it unchanged to $10^{-9}$.
+which is the conjugation action on $\mathbb{M}_+$, the four-vector channel. Its scalar part is invariant under the rotation subgroup, where $\tilde{U}^{*}=\tilde{U}^{-1}$, but **not** under boosts, where $\tilde{U}^{*}\tilde{U}\neq e_0$. The object $\tilde{\psi}\tilde{\chi}^{*}$ is therefore a four-vector and $\sigma$ is its time component, not a Lorentz scalar; this is the algebraic form of the standard statement that $\psi^\dagger\psi$ is the time component of the four-current $\bar{\psi}\gamma^\mu\psi$, not an invariant. A numerical check on a generic pair gives the expected behaviour: at rapidity $1.3$ the boost changes $\sigma$ by $1.36$, while a rotation leaves it unchanged to $10^{-9}$.
 
 The Lorentz-invariant scalars are instead the two pairings developed in the companion article on the spinor module. The **symplectic pairing** of two spinors of the same chirality,
 
@@ -313,17 +313,17 @@ $$
 \epsilon=\begin{pmatrix}0&1\\-1&0\end{pmatrix},
 $$
 
-is invariant because $\tilde{\Lambda}^{T}\epsilon\,\tilde{\Lambda}=\epsilon$, which holds since $\det\tilde{\Lambda}=1$. The **mixed pairing** of a spinor with one in the conjugate module,
+is invariant because $\tilde{U}^{T}\epsilon\,\tilde{U}=\epsilon$, which holds since $\det\tilde{U}=1$. The **mixed pairing** of a spinor with one in the conjugate module,
 
 $$
 b(\tilde{\psi},\tilde{\chi})=\tilde{\psi}^{*}\tilde{\chi},
 \qquad
-\tilde{\psi}\mapsto\tilde{\Lambda}\tilde{\psi},
+\tilde{\psi}\mapsto\tilde{U}\tilde{\psi},
 \qquad
-\tilde{\chi}\mapsto\mathsf{M}_2(\tilde{\Lambda}^{*})\tilde{\chi},
+\tilde{\chi}\mapsto\mathsf{M}_2(\tilde{U}^{*})\tilde{\chi},
 $$
 
-is invariant because $\tilde{\Lambda}^{*}\tilde{\Lambda}^{*}=e_0$. These are the two scalar channels of the module: $\varepsilon$ is the antisymmetric contraction of two same-chirality spinors, and $b$ is the Dirac scalar, which pairs the two chiral halves. Both take their values in the centre; the Hermitian pairing, by contrast, gives the four-vector channel just described. This is the algebraic form of the standard statements that $\bar{\psi}\psi$ is a Lorentz scalar while $\psi^\dagger\psi$ is not, that a fermion condensate can break a symmetry, and that the Higgs field, being a scalar, couples to fermions through precisely such bilinears. The scalar does not live in the module; it is a *pairing of two module elements*, and the pairing takes its values in the centre.
+is invariant because $\tilde{U}^{*}\tilde{U}^{*}=e_0$. These are the two scalar channels of the module: $\varepsilon$ is the antisymmetric contraction of two same-chirality spinors, and $b$ is the Dirac scalar, which pairs the two chiral halves. Both take their values in the centre; the Hermitian pairing, by contrast, gives the four-vector channel just described. This is the algebraic form of the standard statements that $\bar{\psi}\psi$ is a Lorentz scalar while $\psi^\dagger\psi$ is not, that a fermion condensate can break a symmetry, and that the Higgs field, being a scalar, couples to fermions through precisely such bilinears. The scalar does not live in the module; it is a *pairing of two module elements*, and the pairing takes its values in the centre.
 
 The distinction between the two routes is the distinction the title names. A field that is *in* the state module is a spinor, and it carries spin $\tfrac{1}{2}$ whether or not it is a solution of any particular equation. A field that is *built from* the state module can be a scalar, and it lives in the centre. The Klein–Gordon field is of the second kind: it is the trivial sector of the module's tensor square promoted to an independent field, which is why its equation is second order, why it decouples from the module's first-order structure, and why the material/informational split applies to it only as the real/imaginary split of one complex number.
 
@@ -364,9 +364,9 @@ For the sector split, the centre meets each sector in one real direction: the re
 | $\mathbb{B}\tilde{P}\cong\mathbb{C}^2$ | State module (minimal left ideal) |
 | $\tilde{\psi}$ | Spinor, an element of the state module |
 | $J_k=\tfrac{i}{2}e_k$ | Rotation generators; $J_1^2+J_2^2+J_3^2=\tfrac{3}{4}e_0$ on the module |
-| $SL(2,\mathbb{C})=\{\tilde{\Lambda}:\tilde{\Lambda}\tilde{\Lambda}^{\natural}=e_0\}$ | Unit-norm biquaternions; Lorentz group |
-| $\tilde{Q}=ict\,e_0+\mathbf{x}$ | Four-position biquaternion, $\in\mathbb{M}_-$ |
-| $\tilde{K}=i\omega/c\,e_0+\mathbf{k}$ | Four-wavevector, $\in\mathbb{M}_-$ |
+| $SL(2,\mathbb{C})=\{\tilde{U}:\tilde{U}\tilde{U}^{\natural}=e_0\}$ | Unit-norm biquaternions; Lorentz group |
+| $\tilde{Q}=ict\,e_0+\vec x$ | Four-position biquaternion, $\in\mathbb{M}_-$ |
+| $\tilde{K}=i\omega/c\,e_0+\vec k$ | Four-wavevector, $\in\mathbb{M}_-$ |
 | $N(\tilde{Q})=\tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\tilde{\nabla}=e_0\partial_{ict}+\sum_k e_k\partial_k$ | Biquaternionic gradient |
 | $\Box=\tilde{\nabla}\tilde{\nabla}^{\natural}=\partial_{ict}^2+\Delta$ | d'Alembertian, central and scalar |

@@ -51,7 +51,7 @@ the two shapes are the two criteria of §*The Realification of a Linear Map* of 
 
 The product carries the general quaternionic bilinear form, the scalar part of the general quaternionic product, quoted from *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*:
 $$
-N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q).
+N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=P_0Q_0+(\vec P,\vec Q).
 $$
 Over $\mathbb{C}$ it is a symmetric bilinear form; a nondegenerate symmetric bilinear form over $\mathbb{C}$ is classified by its rank alone, so its realification is the **split** pair $(\operatorname{Re}N,\operatorname{Im}N)$ of §*The Realification of a Form* of *The Realification and the Effect of the Change of Scalars*, and on the real basis $e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3$ its Gram matrix is
 $$

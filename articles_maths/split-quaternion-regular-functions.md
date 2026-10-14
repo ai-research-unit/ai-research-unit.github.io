@@ -32,16 +32,16 @@ The second-order operator $\Box$ is the **ultrahyperbolic operator** of signatur
 
 **Definition.** Let $\Omega$ be open in a four-dimensional real subspace, and let $F : \Omega \to \mathbb{H}_{\mathrm{s}}$ be continuously differentiable. Then $F$ is **left-regular**, or **left-monogenic**, if $\nabla F = 0$ on $\Omega$; it is **right-regular** if $F\nabla := \sum_\mu \partial_\mu F\, e_\mu = 0$; and **anti-regular** if $\bar{\nabla}F = 0$. In this category **regular** without qualification means left-regular, and the operator inverted is the first-order operator $\nabla$, not $\Box$.
 
-**Theorem (the regularity system).** Write $F = F_0 + \mathbf{F}$, $\mathbf{F} = F_1 e_1 + F_2 e_2 + F_3 e_3$. Then
+**Theorem (the regularity system).** Write $F = F_0 + \vec F$, $\vec F = F_1 e_1 + F_2 e_2 + F_3 e_3$. Then
 
 $$
-\nabla F = \bigl(\partial_{q_0} F_0 - \mathrm{div}_{\mathrm{s}}\,\mathbf{F}\bigr) + \bigl(\partial_{q_0} \mathbf{F} + \operatorname{grad}_{\mathrm{s}} F_0 + \operatorname{rot}_{\mathrm{s}} \mathbf{F}\bigr),
+\nabla F = \bigl(\partial_{q_0} F_0 - \mathrm{div}_{\mathrm{s}}\,\vec F\bigr) + \bigl(\partial_{q_0} \vec F + \operatorname{grad}_{\mathrm{s}} F_0 + \operatorname{rot}_{\mathrm{s}} \vec F\bigr),
 $$
 
 where the **split** divergence, gradient and curl are taken with respect to the indefinite form $N|_V = q_1^2-q_2^2-q_3^2$, using the sign matrix $\operatorname{diag}(1,-1,-1)$; hence $F$ is regular if and only if the four equations
 
 $$
-\partial_{q_0} F_0 = \mathrm{div}_{\mathrm{s}}\,\mathbf{F}, \qquad \partial_{q_0} \mathbf{F} + \operatorname{grad}_{\mathrm{s}} F_0 + \operatorname{rot}_{\mathrm{s}} \mathbf{F} = 0
+\partial_{q_0} F_0 = \mathrm{div}_{\mathrm{s}}\,\vec F, \qquad \partial_{q_0} \vec F + \operatorname{grad}_{\mathrm{s}} F_0 + \operatorname{rot}_{\mathrm{s}} \vec F = 0
 $$
 
 hold. This is the **split-quaternion Cauchy–Riemann system**, four scalar equations for the four coefficients, inheriting the signs of the indefinite form.

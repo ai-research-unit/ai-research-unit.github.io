@@ -19,7 +19,7 @@ with $a = \operatorname{Re} A$, $a' = \operatorname{Inf} A$, dual conjugation $\
 
 ### The Counting
 
-The algebra $\mathbb{D}'_{\mathbb{R}}$ has real dimension two. The group of units is, by *Dual-Numbers Norm and Invertibility*, a semidirect product that is in fact a direct product,
+The algebra $\mathbb{D}'_{\mathbb{R}}$ has real dimension two. In this article the word **unit** carries the ring sense of the corpus: a **unit** of the algebra is an invertible element, one with $a\neq0$, and the **group of units** $(\mathbb{D}')^\times$ is the set of them. It is not the corpus's **unit element**, which is an element of norm one for the norm in view (*Conventions in Mathematics*, §*The Unitary Convention*); here the unit elements $N(A)=1$ are the subgroup $\{\pm1\}\cdot(1+\mathrm{M})$, a proper subset of the group of units. The group of units is, by *Dual-Numbers Norm and Invertibility*, a semidirect product that is in fact a direct product,
 
 $$
 (\mathbb{D}')^\times \cong \mathbb{R}^\times \times (\mathbb{R}, +),
@@ -44,6 +44,16 @@ In the complex case the unit group contains the circle $U(1)$, whose parameter i
 Because $\mathbb{D}'_R$ is commutative, every element is central, and in particular the nilpotent $\varepsilon$ is central and the shear factor $\exp(s\varepsilon) = 1 + s\varepsilon$ is central. The phase-like factor is central but *nilpotent*, so it cannot be extracted by a logarithm taking values in a torus. The centrality is what makes the order of the factors in the polar form immaterial here.
 
 ## The Trichotomy of the Exponential
+
+### The Word as Exponentials
+
+The word $A = r\,u\,e^{s\varepsilon}$ is a product of a scale, a sign and a shear, and the scale and the shear are exponentials:
+
+$$
+A = \exp(\ln\lvert a\rvert)\cdot u\cdot\exp(s\varepsilon) , \qquad u = \pm 1 , \qquad s = \frac{a'}{a} .
+$$
+
+The exponent of the scale is the real number $\ln\lvert a\rvert$, whose root is $1$ of square $+1$, the hyperbolic row below; the exponent of the shear is the parabolic angle $s$, whose root is the nilpotent $\varepsilon$ of square $0$, the parabolic row, and its exponential truncates, $\exp(s\varepsilon) = 1 + s\varepsilon$. The sign $u$ is discrete and is not an exponential. The algebra is commutative, so the three factors commute, the order is free, and the two exponents **amalgamate into one**, $A = \exp(\ln\lvert a\rvert + s\varepsilon)$, for an element of positive real part; the sign is the one component the exponential does not reach.
 
 Let $\nu$ be an element of a real associative algebra and consider the one-parameter group $t \mapsto \exp(t\nu)$. The behaviour of the group is governed by $\nu^2$.
 

@@ -123,7 +123,7 @@ the factor $8$ being the octonion-valued coefficients. The corresponding count f
 
 ### The Fourier Transform of the Axial Class
 
-**Theorem.** Let $f$ be axial, $f(\tilde o) = u(o_0,\lvert\mathbf{o}\rvert) + v(o_0,\lvert\mathbf{o}\rvert)\hat{\mathbf{o}}$, in the sense of *Octonion Special Functions*, and let $f_0$ be a radial function, $f_0(\tilde o) = w(\lvert \tilde o\rvert)$. Then the Fourier transform is again axial, and the radial part of the transform is given by the Hankel transform in eight variables:
+**Theorem.** Let $f$ be axial, $f(\tilde o) = u(o_0,\lvert\vec o\rvert) + v(o_0,\lvert\vec o\rvert)\hat o$, in the sense of *Octonion Special Functions*, and let $f_0$ be a radial function, $f_0(\tilde o) = w(\lvert \tilde o\rvert)$. Then the Fourier transform is again axial, and the radial part of the transform is given by the Hankel transform in eight variables:
 
 $$
 \widehat{f_0}(\xi) = (2\pi)^{4}\frac{1}{\lvert\xi\rvert^{3}}\int_0^{\infty}w(r)\,J_3(\lvert\xi\rvert r)\,r^{4}\,dr ,
@@ -133,7 +133,7 @@ where $J_3$ is the Bessel function of the first kind of order $3 = \frac{n}{2}-1
 
 *Proof.* The transform commutes with the rotations of $\operatorname{Im}\mathbb{O}$ by the equivariance proposition, and those rotations are transitive on the spheres of the imaginary part; the axial symmetry is therefore preserved, and the transform is determined by its values on the positive imaginary axis. For the radial case the classical formula in $n$ dimensions is $\widehat{f_0}(\xi) = (2\pi)^{n/2}\rho^{-(n/2-1)}\int_0^{\infty}w(r)J_{n/2-1}(\rho r)r^{n/2}dr$ with $\rho = \lvert\xi\rvert$; with $n = 8$ this is the display. The details are the standard theory of the Hankel transform.
 
-**Corollary.** The kernel $E$ is axial, with profiles $u = o_0\lvert \tilde o\rvert^{-8}$ and $v = -\lvert\mathbf{o}\rvert\lvert \tilde o\rvert^{-8}$; its transform is axial and, since $E$ is homogeneous of degree $-7$ and the transform of a homogeneous function of degree $\lambda$ in dimension $n$ is homogeneous of degree $-\lambda-n$, the transform $\hat E$ is homogeneous of degree $-15$ away from the origin. The axial class is closed under the Fourier transform, since the transform preserves the rotational symmetry of the imaginary part.
+**Corollary.** The kernel $E$ is axial, with profiles $u = o_0\lvert \tilde o\rvert^{-8}$ and $v = -\lvert\vec o\rvert\lvert \tilde o\rvert^{-8}$; its transform is axial and, since $E$ is homogeneous of degree $-7$ and the transform of a homogeneous function of degree $\lambda$ in dimension $n$ is homogeneous of degree $-\lambda-n$, the transform $\hat E$ is homogeneous of degree $-15$ away from the origin. The axial class is closed under the Fourier transform, since the transform preserves the rotational symmetry of the imaginary part.
 
 The axial class is the maximal class of functions on which the octonionic harmonic analysis reduces to a classical transform of one variable, and the reason is the transitivity of $SO(7)$ on the imaginary spheres, a transitivity which the group of automorphisms $G_2$ shares: the octonionic symmetry group is a subgroup of $SO(7)$ acting transitively on $S^6$, and it is $G_2$ that preserves the multiplication among all the rotations.
 
@@ -154,7 +154,7 @@ The same list read in the opposite direction is a description of what the octoni
 
 For $f\in L^1(\mathbb{R}^8,\mathbb{O})$ the Fourier transform $\hat f(\xi) = \int f(\tilde o)e^{-i\langle\xi,\tilde o\rangle}d\tilde o$, with the adjoined central scalar unit $i$, is the componentwise classical transform and satisfies the inversion formula, the Plancherel and Parseval identities, and the uncertainty relation; it commutes with multiplication by constants on either side, and it commutes with the action of $G_2$. The convolution theorem $\widehat{f*g} = \hat f\hat g$ holds unchanged, because the convolution fixes the order of its two factors and the phase is scalar; the product theorem fails, and the failure is measured by integrals of associators, exactly as the Leibniz rule fails in the differential calculus.
 
-The spherical layer consists of the orthogonal decomposition $L^2(S^7) = \bigoplus_k\mathcal{H}_k$ of the harmonic polynomials, of eigenvalue $-k(k+6)$ for the spherical Laplacian, and of the monogenic subspaces $\mathcal{P}_k\subset\mathcal{H}_k$, whose real dimensions agree with the associative count $8\bigl[\binom{k+7}{7}-\binom{k+5}{7}\bigr]$-type while their module structure does not exist, because the monogenic functions are not a module over the octonions. The Cauchy kernel realises the Taylor expansion, and the finite-energy monogenic functions form a real Hilbert space with a unitary $G_2$-action. On the axial class the transform reduces to the eight-dimensional Hankel transform with the Bessel function $J_3$, so that the largest class of octonionic functions on which the harmonic analysis is a one-variable theory is the class of functions of $o_0$ and $\lvert\mathbf{o}\rvert$.
+The spherical layer consists of the orthogonal decomposition $L^2(S^7) = \bigoplus_k\mathcal{H}_k$ of the harmonic polynomials, of eigenvalue $-k(k+6)$ for the spherical Laplacian, and of the monogenic subspaces $\mathcal{P}_k\subset\mathcal{H}_k$, whose real dimensions agree with the associative count $8\bigl[\binom{k+7}{7}-\binom{k+5}{7}\bigr]$-type while their module structure does not exist, because the monogenic functions are not a module over the octonions. The Cauchy kernel realises the Taylor expansion, and the finite-energy monogenic functions form a real Hilbert space with a unitary $G_2$-action. On the axial class the transform reduces to the eight-dimensional Hankel transform with the Bessel function $J_3$, so that the largest class of octonionic functions on which the harmonic analysis is a one-variable theory is the class of functions of $o_0$ and $\lvert\vec o\rvert$.
 
 ## Summary of Notation
 
@@ -169,7 +169,7 @@ The spherical layer consists of the orthogonal decomposition $L^2(S^7) = \bigopl
 | $E$, $\omega_7 = \pi^4/3$ | Cauchy kernel and the volume of $S^7$ |
 | $J_3$, $r^7dr$ | Bessel function and measure of the eight-dimensional Hankel transform |
 | $G_2 = \operatorname{Aut}(\mathbb{O})$ | Automorphism group acting on functions and commuting with the transform |
-| $u(o_0,\lvert\mathbf{o}\rvert)+v(o_0,\lvert\mathbf{o}\rvert)\hat{\mathbf{o}}$ | Axial function |
+| $u(o_0,\lvert\vec o\rvert)+v(o_0,\lvert\vec o\rvert)\hat o$ | Axial function |
 
 ## Further Reading
 

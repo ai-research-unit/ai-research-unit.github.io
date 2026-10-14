@@ -18,7 +18,7 @@ The invertibility is where the article records an **absence**. The block is comm
 
 **Boundaries.** The algebraic norm of the general plain bilinear product is *Norm and Invertibility in the General Plain Algebra*, and the three other algebraic norms are *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*; none of the four is read here beyond $B$. The product, its unit and its non-associativity are *Introduction to the Symmetric Plain Algebra of Biquaternions*; the trace form the algebraic norm polarises is *The Trace Form and the Invariance of the Symmetric Plain Algebra*; the square and the quadratic identity are *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*; the zero divisors are *Zero Divisors of the Symmetric Plain Algebra*; the definitions of the unit and the inverse are *Definitions for the Study of the 12 Algebraic Structures*, §*The Unit and the Inverse*.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$, $e_k^{2}=-e_0$ and central scalar imaginary $i$. An element is $\tilde Q=Q_0e_0+\mathbf Q$ with $\mathbf Q=\sum_{k=1}^{3}Q_ke_k$ and $Q_\mu\in\mathbb{C}$; $(\mathbf P,\mathbf Q)=\sum_kP_kQ_k$ is the complex bilinear dot product of the vector parts. The natural conjugation is $\tilde Q^{\natural}=Q_0-\mathbf Q$, the coefficientwise conjugation is $\bar{\cdot}$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. Juxtaposition is the plain product and $\bullet$ is the product of the block, $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$, $e_k^{2}=-e_0$ and central scalar imaginary $i$. An element is $\tilde Q=Q_0e_0+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_ke_k$ and $Q_\mu\in\mathbb{C}$; $(\vec P,\vec Q)=\sum_kP_kQ_k$ is the complex bilinear dot product of the vector parts. The natural conjugation is $\tilde Q^{\natural}=Q_0-\vec Q$, the coefficientwise conjugation is $\bar{\cdot}$, and the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. Juxtaposition is the plain product and $\bullet$ is the product of the block, $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$.
 
 ## The Algebraic Norm of the Block
 
@@ -33,7 +33,7 @@ $$
 equivalently $B(\tilde Q)=B(\tilde Q,\tilde Q)$ for the form
 
 $$
-B(\tilde P,\tilde Q)=\mathrm{Sc}\bigl(\tilde P\bullet\tilde Q\bigr)=\mathrm{Sc}\bigl(\tilde P\tilde Q\bigr)=P_0Q_0-(\mathbf P,\mathbf Q),
+B(\tilde P,\tilde Q)=\mathrm{Sc}\bigl(\tilde P\bullet\tilde Q\bigr)=\mathrm{Sc}\bigl(\tilde P\tilde Q\bigr)=P_0Q_0-(\vec P,\vec Q),
 $$
 
 which is the general plain bilinear form of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*. The symmetrisation does not change the scalar part, so the block carries the algebraic norm of the general plain bilinear product; the form and its diagonal are of the same letter.

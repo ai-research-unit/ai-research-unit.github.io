@@ -160,7 +160,7 @@ and the condensate in turn is computed in the mean-field vacuum of a fermion of 
 $$
 m = 4N_c\,G\,m\,I_1(m) ,
 \qquad
-I_1(m) = \int_0^{\Lambda}\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{\mathbf{p}^2+m^2}} .
+I_1(m) = \int_0^{\Lambda}\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{\vec p^2+m^2}} .
 $$
 
 The equation always has the **chiral** solution $m=0$. Dividing by $m$, a nontrivial solution requires $1 = 4N_cG\,I_1(m)$, and since $I_1$ decreases with $m$ the threshold is set at $m=0$:
@@ -217,8 +217,8 @@ The dynamical coefficient is therefore a common mass for the two chiralities: th
 **The effective potential.** The mean-field energy of the condensate is the standard one. Writing $\sigma=-2G\langle\bar{\psi}\psi\rangle$ for the order parameter and $m=\sigma$ at the minimum, the effective potential at zero temperature is
 
 $$
-V(\sigma) \;=\; \frac{\sigma^2}{4G} \;-\; 2N_c\int^{\Lambda}\frac{d^3p}{(2\pi)^3}\,\sqrt{\mathbf{p}^2+\sigma^2}
-\;=\; \frac{m^2}{4G} \;-\; 2N_c\int^{\Lambda}\frac{d^3p}{(2\pi)^3}\sqrt{\mathbf{p}^2+m^2},
+V(\sigma) \;=\; \frac{\sigma^2}{4G} \;-\; 2N_c\int^{\Lambda}\frac{d^3p}{(2\pi)^3}\,\sqrt{\vec p^2+\sigma^2}
+\;=\; \frac{m^2}{4G} \;-\; 2N_c\int^{\Lambda}\frac{d^3p}{(2\pi)^3}\sqrt{\vec p^2+m^2},
 $$
 
 where the normalization of the first term is tied to the $(\bar{\psi}\psi)^2$ coupling convention used above. Its stationarity condition
@@ -303,7 +303,7 @@ The framework supplies the carrier of the condensate, the broken-symmetry patter
 | $\langle\bar{\Psi}\Psi\rangle=-v^3$ | Chiral condensate, the order parameter |
 | $m=-2G\langle\bar{\psi}\psi\rangle$ | Mean-field relation between mass and condensate |
 | $G$, $G_c=\pi^2/(N_c\Lambda^2)$ | Four-fermion coupling and critical coupling |
-| $I_1(m)=\int^\Lambda\frac{d^3p}{(2\pi)^3}(\mathbf{p}^2+m^2)^{-1/2}$ | Gap-equation integral |
+| $I_1(m)=\int^\Lambda\frac{d^3p}{(2\pi)^3}(\vec p^2+m^2)^{-1/2}$ | Gap-equation integral |
 | $N_f$, $N_c$, $\Lambda$ | Flavours, colours, ultraviolet cutoff |
 | $N_f^2-1$ | Number of Goldstone modes of the broken chiral symmetry |
 | $SU(N_f)_L\times SU(N_f)_R\to SU(N_f)_V$ | Chiral symmetry breaking pattern |

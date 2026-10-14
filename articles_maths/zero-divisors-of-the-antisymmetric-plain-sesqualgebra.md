@@ -6,7 +6,7 @@ A zero divisor is an element that annihilates a nonzero element, and it is defin
 This article determines the zero divisors of the antisymmetric plain sesqualgebra $\mathrm{APS}$,
 
 $$
-\tilde P\diamond\tilde Q=\operatorname{Vect}\bigl(\tilde P\tilde Q^{*}\bigr)=-P_0\overline{\mathbf{Q}}+\overline{Q_0}\mathbf{P}-\mathbf{P}\times\overline{\mathbf{Q}},
+\tilde P\diamond\tilde Q=\operatorname{Vect}\bigl(\tilde P\tilde Q^{*}\bigr)=-P_0\overline{\vec Q}+\overline{Q_0}\vec P-\vec P\times\overline{\vec Q},
 $$
 
 the antisymmetric half of the general plain sesquilinear product of *Introduction to the
@@ -36,8 +36,8 @@ Antisymmetric Plain Sesqualgebra*; the square-zero elements and the quadric of t
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis
 $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$, central scalar imaginary $i$ and coefficients in $\mathbb{C}$;
-an element is $\tilde Q=Q_0e_0+\mathbf{Q}$, with $\mathbf{Q}=\sum_{k=1}^{3}Q_ke_k$, and
-$(\mathbf P,\mathbf Q)=\sum_kP_kQ_k$ is the complex bilinear dot product of the vector parts. The
+an element is $\tilde Q=Q_0e_0+\vec Q$, with $\vec Q=\sum_{k=1}^{3}Q_ke_k$, and
+$(\vec P,\vec Q)=\sum_kP_kQ_k$ is the complex bilinear dot product of the vector parts. The
 conjugations are ${}^{\natural}$, the coefficientwise $\bar{\cdot}$ and the star
 ${}^{*}=\bar{\cdot}\circ{}^{\natural}$; the plain product is written $\tilde P\tilde Q$ and the
 parent sesquilinear product $\tilde P\tilde Q^{*}$. The projection $\operatorname{Vect}$ removes

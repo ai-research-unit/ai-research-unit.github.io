@@ -6,8 +6,8 @@ The informational sector $\mathbb{M}_+$ is the Hermitian half of the algebra: th
 states, the boosts and the identity. An element is written in its own coordinates as
 
 $$
-\tilde Q = q_0\,e_0 + i\mathbf q', \qquad q_0 = c t' \in \mathbb{R},\quad
-\mathbf q' = (x',y',z') \in \mathbb{R}^{3},
+\tilde Q = q_0\,e_0 + i\vec q', \qquad q_0 = c t' \in \mathbb{R},\quad
+\vec q' = (x',y',z') \in \mathbb{R}^{3},
 $$
 
 a **real** scalar part and three **imaginary** vector parts. This article reads the restriction to that
@@ -21,7 +21,7 @@ Subspace $\mathbb{M}_+$ as the Informational Sector*.
 The answer is the mirror of the material one. The scalar part
 
 $$
-B(\tilde P,\tilde Q) = \mathrm{Sc}(\tilde P\tilde Q) = p_0q_0 + \mathbf p'\!\cdot\!\mathbf q'
+B(\tilde P,\tilde Q) = \mathrm{Sc}(\tilde P\tilde Q) = p_0q_0 + \vec p'\!\cdot\!\vec q'
 $$
 
 is **positive definite** on the sector, of signature $(4,0)$: in the informational coordinates it is the
@@ -53,7 +53,7 @@ the Sectors*. None of those is reproved here.
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis
 $e_0=1,e_1,e_2,e_3$ with $e_1e_2=e_3$, $e_k^{2}=-e_0$, and central scalar imaginary $i$, $i^{2}=-1$; a
 general element is $\tilde Q=Q_0e_0+Q_1e_1+Q_2e_2+Q_3e_3$ with complex coefficients; the scalar part is
-$\mathrm{Sc}(\tilde Q)=Q_0$ and the vector part is $\mathbf Q=Q_1e_1+Q_2e_2+Q_3e_3$. The conjugations are
+$\mathrm{Sc}(\tilde Q)=Q_0$ and the vector part is $\vec Q=Q_1e_1+Q_2e_2+Q_3e_3$. The conjugations are
 the complex conjugation $\bar{\cdot}$, the natural (quaternion) conjugation ${\natural}$, and the
 Hermitian conjugation ${}^{*}=\bar{\cdot}\circ{\natural}$. The informational sector is the Hermitian half,
 $\mathbb{M}_+=\{\tilde Q:\tilde Q^{*}=+\tilde Q\}$, with the real basis $\{e_0,ie_1,ie_2,ie_3\}$; the
@@ -68,7 +68,7 @@ $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$.
 An informational element is written in the two dictionaries of the sector,
 
 $$
-\tilde Q = q_0\,e_0 + i\mathbf q' = (ct')\,e_0 + i x'\,e_1 + i y'\,e_2 + i z'\,e_3 \in \mathbb{M}_+,
+\tilde Q = q_0\,e_0 + i\vec q' = (ct')\,e_0 + i x'\,e_1 + i y'\,e_2 + i z'\,e_3 \in \mathbb{M}_+,
 \qquad c \ \text{the speed of light}.
 $$
 
@@ -82,9 +82,9 @@ Two forms carry the geometry of the sector, and they are the restrictions of the
 row:
 
 $$
-B(\tilde P,\tilde Q)=p_0q_0+\mathbf p'\!\cdot\!\mathbf q' \quad\text{of signature }(4,0),
+B(\tilde P,\tilde Q)=p_0q_0+\vec p'\!\cdot\!\vec q' \quad\text{of signature }(4,0),
 \qquad
-N(\tilde P,\tilde Q)=p_0q_0-\mathbf p'\!\cdot\!\mathbf q' \quad\text{of signature }(1,3).
+N(\tilde P,\tilde Q)=p_0q_0-\vec p'\!\cdot\!\vec q' \quad\text{of signature }(1,3).
 $$
 
 The first is the **sector sign** of this article, the scalar part of the general plain bilinear product, definite and
@@ -92,11 +92,11 @@ without cone; the second is the **interval**, the general quaternionic bilinear 
 zero set is the zero-divisor cone. The two differ by twice the coefficient square of the vector part,
 
 $$
-B(\tilde P,\tilde Q) = N(\tilde P,\tilde Q) - 2\,\mathbf Q\!\cdot\!\mathbf Q,
-\qquad \mathbf Q\!\cdot\!\mathbf Q = Q_1^{2}+Q_2^{2}+Q_3^{2},
+B(\tilde P,\tilde Q) = N(\tilde P,\tilde Q) - 2\,\vec Q\!\cdot\!\vec Q,
+\qquad \vec Q\!\cdot\!\vec Q = Q_1^{2}+Q_2^{2}+Q_3^{2},
 $$
 
-which on the sector is $-2|\mathbf q'|^{2}$ and therefore of one sign; the two forms agree only on the
+which on the sector is $-2|\vec q'|^{2}$ and therefore of one sign; the two forms agree only on the
 scalar line. Keeping $B$ and $N$ apart is the whole of the article: $B$ carries the sign of the sector
 and $N$ carries the metric, and on $\mathbb{M}_+$ the sign is positive and the metric is Lorentzian.
 
@@ -174,7 +174,7 @@ orthogonal directions, and the natural norm of the sector's own space. The inter
 directions is indefinite, so the sector carries a definite geometry and an indefinite one at once, and
 which one a process sees depends on the product it uses. The positive definite one is the geometry of the
 probability and the indefinite one the geometry of the metric; the two are the same four directions read
-twice, and the difference between them is the coefficient square of the vector part, $B-N=2|\mathbf q'|^{2}$.
+twice, and the difference between them is the coefficient square of the vector part, $B-N=2|\vec q'|^{2}$.
 
 ## The Square: the Sector that Receives
 
@@ -182,7 +182,7 @@ The composite of two informational operations need not be informational, but the
 and the square of a **material** element lands here too:
 
 $$
-\tilde Q^{2} = \bigl(q_0^{2}+\lvert\mathbf q'\rvert^{2}\bigr)e_0 + 2iq_0\mathbf q' \in \mathbb{M}_+
+\tilde Q^{2} = \bigl(q_0^{2}+\lvert\vec q'\rvert^{2}\bigr)e_0 + 2iq_0\vec q' \in \mathbb{M}_+
 \quad\text{for every } \tilde Q\in\mathbb{M}_+,
 \qquad
 \tilde Q^{2}\in\mathbb{M}_+ \quad\text{for every } \tilde Q\in\mathbb{M}_-.
@@ -216,9 +216,9 @@ idempotent equation gives $-\tilde\Pi=(\tilde\Pi^{*})^{2}=(-\tilde\Pi)^{2}=\tild
 whence $\tilde\Pi=0$. Every nonzero projection is therefore Hermitian, and the family is
 
 $$
-\tilde\Pi_1(\hat{\boldsymbol\mu}) = \tfrac12\bigl(e_0+i\hat{\boldsymbol\mu}\bigr),
+\tilde\Pi_1(\hat\mu) = \tfrac12\bigl(e_0+i\hat\mu\bigr),
 \qquad
-\hat{\boldsymbol\mu}\in\mathbb{R}^{3},\quad \lvert\hat{\boldsymbol\mu}\rvert=1,
+\hat\mu\in\mathbb{R}^{3},\quad \lvert\hat\mu\rvert=1,
 $$
 
 the **pure states** of the corpus, indexed by the unit sphere and forming the Bloch sphere. The material
@@ -232,7 +232,7 @@ One in the 12 Structures of Biquaternions over $\mathbb{C}$*).
 The idempotent sits **on the zero-divisor cone**. Its interval vanishes,
 
 $$
-N(\tilde\Pi,\tilde\Pi) = \tfrac14\bigl(1-\lvert\hat{\boldsymbol\mu}\rvert^{2}\bigr) = 0,
+N(\tilde\Pi,\tilde\Pi) = \tfrac14\bigl(1-\lvert\hat\mu\rvert^{2}\bigr) = 0,
 $$
 
 so a pure state is a zero divisor of the general plain bilinear product: it is not invertible, it is annihilated by a
@@ -242,34 +242,34 @@ state space: the Bloch ball is the trace-one slice of the future cone and its bo
 pure states (*The Cone and the Massless Particles in the 12 Structures of Biquaternions over $\mathbb{C}$*
 and *The Bloch Ball as the Trace-One Slice of the Future Light Cone*). Inside the sector the cone has two
 faces: a cone element with $q_0\neq0$ is a multiple of a pure state,
-$\tilde Q=2q_0\tilde\Pi_1(\mathbf q'/q_0)$, whereas the **nilpotents**, the pure isotropic elements of real
+$\tilde Q=2q_0\tilde\Pi_1(\vec q'/q_0)$, whereas the **nilpotents**, the pure isotropic elements of real
 dimension four, meet $\mathbb{M}_+$ at the origin alone, the square of an informational element having
 strictly positive scalar part (*Nilpotents in the 12 Structures of Biquaternions over $\mathbb{C}$*). For
 the general element of the unit-trace slice,
 
 $$
-\tilde\rho = \tfrac12\bigl(e_0+i\mathbf r\bigr),\qquad \lvert\mathbf r\rvert\le 1,
+\tilde\rho = \tfrac12\bigl(e_0+i\vec r\bigr),\qquad \lvert\vec r\rvert\le 1,
 $$
 
 the two forms read the Bloch vector as
 
 $$
-N(\tilde\rho,\tilde\rho) = \tfrac14\bigl(1-\lvert\mathbf r\rvert^{2}\bigr),
+N(\tilde\rho,\tilde\rho) = \tfrac14\bigl(1-\lvert\vec r\rvert^{2}\bigr),
 \qquad
-B(\tilde\rho,\tilde\rho) = \tfrac14\bigl(1+\lvert\mathbf r\rvert^{2}\bigr),
+B(\tilde\rho,\tilde\rho) = \tfrac14\bigl(1+\lvert\vec r\rvert^{2}\bigr),
 \qquad
-\mathrm{Tr}(\tilde\rho^{2}) = \tfrac12\bigl(1+\lvert\mathbf r\rvert^{2}\bigr),
+\mathrm{Tr}(\tilde\rho^{2}) = \tfrac12\bigl(1+\lvert\vec r\rvert^{2}\bigr),
 $$
 
 so the **cone of the norm is the purity boundary of the Bloch ball**: a state is pure exactly when
-$\lvert\mathbf r\rvert=1$, exactly when $N=0$, exactly when it is a zero divisor; a mixed state is
+$\lvert\vec r\rvert=1$, exactly when $N=0$, exactly when it is a zero divisor; a mixed state is
 interior, $N>0$, and is a unit. The purity is carried by the difference of the two forms,
-$B-N=\lvert\mathbf r\rvert^{2}/2$ on the slice: **a state is pure when the two forms are furthest apart**,
+$B-N=\lvert\vec r\rvert^{2}/2$ on the slice: **a state is pure when the two forms are furthest apart**,
 $B-N=\frac12$, and maximally mixed when they coincide, $B-N=0$.
 
-**Remark (verified).** $N=\frac14(1-\lvert\mathbf r\rvert^{2})$ and $B=\frac14(1+\lvert\mathbf r\rvert^{2})$
+**Remark (verified).** $N=\frac14(1-\lvert\vec r\rvert^{2})$ and $B=\frac14(1+\lvert\vec r\rvert^{2})$
 on $100$ random unit-trace elements; the Hermitian idempotents satisfy $N=0$ and $B=\frac12$ to machine
-precision, and $\mathrm{Tr}(\tilde\rho^{2})$ equals $\frac12(1+\lvert\mathbf r\rvert^{2})$.
+precision, and $\mathrm{Tr}(\tilde\rho^{2})$ equals $\frac12(1+\lvert\vec r\rvert^{2})$.
 
 **Proposed interpretation, labelled as such.** The same algebraic cone has **two physical roles on the
 two sides of the algebra**: on $\mathbb{M}_-$ it is the **light cone**, the wall of the massless and the
@@ -287,11 +287,11 @@ zero-divisor cone is the complement of the group of units. On the informational 
 the interval in the informational coordinate,
 
 $$
-N(\tilde Q)=q_0^{2}-\lvert\mathbf q'\rvert^{2}\neq 0,
+N(\tilde Q)=q_0^{2}-\lvert\vec q'\rvert^{2}\neq 0,
 $$
 
 so the units of the sector are the off-cone informational elements, the two open families
-$q_0^{2}>\lvert\mathbf q'\rvert^{2}$ and $q_0^{2}<\lvert\mathbf q'\rvert^{2}$, and the cone is the wall
+$q_0^{2}>\lvert\vec q'\rvert^{2}$ and $q_0^{2}<\lvert\vec q'\rvert^{2}$, and the cone is the wall
 between them and around them. The identity $e_0$ is a unit; so is every mixed state; no pure state is.
 
 **Proposed interpretation, labelled as such.** On the informational side the cone separates the
@@ -389,9 +389,9 @@ signature $(4,0)$ on $\mathbb{M}_+$ and to $-\mathrm{I}_4$ of signature $(0,4)$ 
 product of two informational elements splits into an informational anticommutator and a material
 commutator and is informational exactly when the two commute; the square of an element of either sector
 is informational, with scalar part equal to the sector sign; the sector contains the nonzero idempotents
-of the algebra and they form the unit sphere $\tilde\Pi_1(\hat{\boldsymbol\mu})$, all of them on the
-zero-divisor cone; on the unit-trace slice the interval is $\frac14(1-\lvert\mathbf r\rvert^{2})$ and the
-sector sign $\frac14(1+\lvert\mathbf r\rvert^{2})$, so the cone is the purity boundary and the mixed
+of the algebra and they form the unit sphere $\tilde\Pi_1(\hat\mu)$, all of them on the
+zero-divisor cone; on the unit-trace slice the interval is $\frac14(1-\lvert\vec r\rvert^{2})$ and the
+sector sign $\frac14(1+\lvert\vec r\rvert^{2})$, so the cone is the purity boundary and the mixed
 states are the interior units; the inverse of an informational unit is informational, and the norm
 restricts to a homomorphism $\mathbb{B}^{\times}\to\mathbb{C}^{\times}$.
 
@@ -424,9 +424,9 @@ the Sector Exchange as Relational Time*), and the product is the one operation t
 ## Summary
 
 The informational sector $\mathbb{M}_+$ carries the Hermitian elements, an element being
-$\tilde Q=(ct')e_0+i\mathbf x'$, and this article reads on it the general plain bilinear product $\tilde P\tilde Q$ whose
+$\tilde Q=(ct')e_0+i\vec x'$, and this article reads on it the general plain bilinear product $\tilde P\tilde Q$ whose
 full theory on the whole algebra is *The General Plain Bilinear Product on the Biquaternion Space*. Its scalar part
-$B=p_0q_0+\mathbf p'\!\cdot\!\mathbf q'$, the Euclidean inner product of the informational coordinates, is
+$B=p_0q_0+\vec p'\!\cdot\!\vec q'$, the Euclidean inner product of the informational coordinates, is
 positive definite on $\mathbb{M}_+$ with signature $(4,0)$ and negative definite on $\mathbb{M}_-$ with
 signature $(0,4)$: opposite definite signs on the two sectors, so $B$ carries the **sector sign**. Being
 definite, $B$ has no cone and cannot be the metric; the metric is the interval, the general quaternionic
@@ -436,8 +436,8 @@ exactly when the two commute, its material part being the commutator and its ord
 anticommutator; the square of an element of either sector is informational, so the sector receives the
 squares and is closed under squaring without being closed under the product. The nonzero idempotents of
 the algebra lie in $\mathbb{M}_+$ alone, they form the Bloch sphere of the pure states, and they lie on
-the zero-divisor cone; on the unit-trace slice the interval is $\frac14(1-\lvert\mathbf r\rvert^{2})$ and
-the sector sign $\frac14(1+\lvert\mathbf r\rvert^{2})$, so on this side of the algebra the cone is the
+the zero-divisor cone; on the unit-trace slice the interval is $\frac14(1-\lvert\vec r\rvert^{2})$ and
+the sector sign $\frac14(1+\lvert\vec r\rvert^{2})$, so on this side of the algebra the cone is the
 **purity boundary of the state space**: pure states are the zero divisors, mixed states the interior
 units, and the purity is the difference of the two metrics. The reversibility of the general plain bilinear product is
 carried by the norm $N$ and not by $B$. The distinctions are labelled throughout: what is proved is the
@@ -453,16 +453,16 @@ algebra restricted to $\mathbb{M}_+$, what is proposed is the naming.
 | $\bar{\cdot},{\natural},{}^{*}=\bar{\cdot}\circ{\natural}$ | Complex, natural and Hermitian conjugations |
 | $\mathbb{M}_+=\{\tilde Q:\tilde Q^{*}=+\tilde Q\}$ | Informational sector, basis $\{e_0,ie_1,ie_2,ie_3\}$ |
 | $\mathbb{M}_-=\{\tilde Q:\tilde Q^{*}=-\tilde Q\}$ | Material sector, basis $\{ie_0,e_1,e_2,e_3\}$ |
-| $\tilde Q=q_0e_0+i\mathbf q'=(ct')e_0+i\mathbf x'$ | An informational element; real time, imaginary space |
+| $\tilde Q=q_0e_0+i\vec q'=(ct')e_0+i\vec x'$ | An informational element; real time, imaginary space |
 | $\tilde P\tilde Q$ | General plain bilinear product ($\mathrm{GPA}$); associative, unital, non-commutative |
-| $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=p_0q_0+\mathbf p'\!\cdot\!\mathbf q'$ | Sector sign; $+\mathrm{I}_4$ on $\mathbb{M}_+$, $-\mathrm{I}_4$ on $\mathbb{M}_-$ |
+| $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=p_0q_0+\vec p'\!\cdot\!\vec q'$ | Sector sign; $+\mathrm{I}_4$ on $\mathbb{M}_+$, $-\mathrm{I}_4$ on $\mathbb{M}_-$ |
 | $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ | Interval; $(1,3)$ on $\mathbb{M}_+$, $(3,1)$ on $\mathbb{M}_-$ |
-| $B-N=2\,\mathbf Q\!\cdot\!\mathbf Q$ | The two forms differ by twice the coefficient square |
+| $B-N=2\,\vec Q\!\cdot\!\vec Q$ | The two forms differ by twice the coefficient square |
 | $\tfrac12(\tilde P\tilde Q\pm\tilde Q\tilde P)$ | Anticommutator in $\mathbb{M}_+$; commutator in $\mathbb{M}_-$ |
 | $\tilde Q^{2}\in\mathbb{M}_+$ | The square is informational for an element of either sector |
-| $\tilde\Pi_1(\hat{\boldsymbol\mu})=\tfrac12(e_0+i\hat{\boldsymbol\mu})$ | The nonzero idempotents; the Bloch sphere; on the cone |
-| $\tilde\rho=\tfrac12(e_0+i\mathbf r)$, $\lvert\mathbf r\rvert\le1$ | Unit-trace element; the Bloch ball |
-| $N(\tilde\rho,\tilde\rho)=\frac14(1-\lvert\mathbf r\rvert^{2})$ | The cone as the purity boundary |
+| $\tilde\Pi_1(\hat\mu)=\tfrac12(e_0+i\hat\mu)$ | The nonzero idempotents; the Bloch sphere; on the cone |
+| $\tilde\rho=\tfrac12(e_0+i\vec r)$, $\lvert\vec r\rvert\le1$ | Unit-trace element; the Bloch ball |
+| $N(\tilde\rho,\tilde\rho)=\frac14(1-\lvert\vec r\rvert^{2})$ | The cone as the purity boundary |
 | $\mathbb{B}^{\times}=\{N\neq0\}$, $\mathcal{C}=\{N=0\}$ | Group of units; zero-divisor cone |
 | $\mathrm{Tr}=2\,\mathrm{Sc}$ | Trace; $\mathrm{Tr}(\tilde\rho\tilde Q)$ an expectation value |
 | $(p,q)$ | Signature as (number of $+$, number of $-$) diagonal entries |

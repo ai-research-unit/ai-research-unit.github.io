@@ -49,7 +49,7 @@ $$
 \qquad
 \mathbb{B}=\mathbb{M}_-\oplus\mathbb{M}_+ ,
 $$
-the material and informational sectors; $\mathbb{H}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,e_1,e_2,e_3\}$ and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$ are the real-quaternion subspace and the centre. The isomorphism is $\mathsf{M}_2(e_k)=-i\sigma_k$, the trace is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ with $\mathrm{Sc}$ the real part of the $e_0$ coefficient, and the biquaternion norm is $N(\tilde Q) = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$. The material coordinate is $\tilde{Q} = ict\,e_0+\mathbf{x}$, the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, and the d'Alembertian is $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial_{ict}^2+\Delta$; the mass shell in momentum space is $\tilde k\tilde k^{\natural}=-m^2$ for $\tilde k=iEe_0+\mathbf{p}$. These are the conventions of *Conventions in the Biquaternion Universe*, *The Feynman Propagator in Biquaternionic Form*, and *The S-Matrix in Biquaternionic Form*.
+the material and informational sectors; $\mathbb{H}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,e_1,e_2,e_3\}$ and $\mathbb{C}_{\mathbb{B}}=\mathrm{span}_\mathbb{R}\{e_0,ie_0\}$ are the real-quaternion subspace and the centre. The isomorphism is $\mathsf{M}_2(e_k)=-i\sigma_k$, the trace is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$ with $\mathrm{Sc}$ the real part of the $e_0$ coefficient, and the biquaternion norm is $N(\tilde Q) = \langle\tilde Q,\tilde Q\rangle_{\natural}=\tilde Q\tilde Q^{\natural}$. The material coordinate is $\tilde{Q} = ict\,e_0+\vec x$, the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$, and the d'Alembertian is $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial_{ict}^2+\Delta$; the mass shell in momentum space is $\tilde k\tilde k^{\natural}=-m^2$ for $\tilde k=iEe_0+\vec p$. These are the conventions of *Conventions in the Biquaternion Universe*, *The Feynman Propagator in Biquaternionic Form*, and *The S-Matrix in Biquaternionic Form*.
 
 ## The Functional Integral and the Path Integral
 
@@ -113,7 +113,7 @@ W[J] - W[0] = \tfrac12\, J^\dagger K^{-1}J ,
 $$
 a Gaussian in the source.
 
-**The biquaternion case.** A field $\tilde\Phi$ valued in $\mathbb{B}$ has, at each mode, two complex components — the dimension of the spinor module $\mathbb{B}\tilde\Pi(\hat{\boldsymbol\mu})\cong\mathbb{C}^2$. The quadratic form is built from $\mathrm{Sc}$, which is a real bilinear pairing, and the Gaussian integral over the module is
+**The biquaternion case.** A field $\tilde\Phi$ valued in $\mathbb{B}$ has, at each mode, two complex components — the dimension of the spinor module $\mathbb{B}\tilde\Pi(\hat\mu)\cong\mathbb{C}^2$. The quadratic form is built from $\mathrm{Sc}$, which is a real bilinear pairing, and the Gaussian integral over the module is
 $$
 \int \mathcal{D}\tilde\Phi\; e^{-\frac12\langle\tilde\Phi,\tilde K\tilde\Phi\rangle + \langle\tilde J,\tilde\Phi\rangle}
 = \big(\det \tilde K\big)^{-1/2}\, e^{\frac12\langle\tilde J,\tilde K^{-1}\tilde J\rangle},
@@ -169,7 +169,7 @@ $$
 S_E[\phi] = \int d^4x_E\;\tfrac12\Big(\partial_\mu\phi\,\partial_\mu\phi + m^2\phi^2\Big)
 = \tfrac12\int d^4x_E\;\phi\big(-\Delta_E + m^2\big)\phi ,
 $$
-with $\Delta_E$ the Euclidean Laplacian, and in momentum space the kinetic operator is $k_E^2+m^2$. In the biquaternion framework the field is scalar-valued for the example and the kinetic operator is the central $-\Box + m^2$ continued to Euclidean signature, with $\Box=\partial_{ict}^2+\Delta$; the wave biquaternion $\tilde k=iEe_0+\mathbf{p}$ has biquaternion norm $\tilde k\tilde k^{\natural}=-p^2$, which becomes $k_E^2$ after the Wick rotation, so that the Euclidean kinetic operator is the central scalar $\tilde k\tilde k^{\natural}+m^2$.
+with $\Delta_E$ the Euclidean Laplacian, and in momentum space the kinetic operator is $k_E^2+m^2$. In the biquaternion framework the field is scalar-valued for the example and the kinetic operator is the central $-\Box + m^2$ continued to Euclidean signature, with $\Box=\partial_{ict}^2+\Delta$; the wave biquaternion $\tilde k=iEe_0+\vec p$ has biquaternion norm $\tilde k\tilde k^{\natural}=-p^2$, which becomes $k_E^2$ after the Wick rotation, so that the Euclidean kinetic operator is the central scalar $\tilde k\tilde k^{\natural}+m^2$.
 
 **The Gaussian result.** The free generating functional is
 $$
@@ -295,7 +295,7 @@ The **measure**, the **space of field configurations**, and the **interaction** 
 | $\langle\tilde{Q},\tilde Y\rangle=\mathrm{Re}\,\mathrm{Tr}(\tilde{Q}^{*}\tilde Y)$ | Real bilinear form of the action; sector-orthogonal |
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial_{ict}^2+\Delta$ | d'Alembertian, series convention |
 | $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | $ict$ metric (level 2) |
-| $\tilde k=iEe_0+\mathbf{p}$, $\tilde k\tilde k^{\natural}=-p^2$ | Wave biquaternion; Euclidean $k_E^2$ |
+| $\tilde k=iEe_0+\vec p$, $\tilde k\tilde k^{\natural}=-p^2$ | Wave biquaternion; Euclidean $k_E^2$ |
 | $S[\tilde\Phi]=\int d^4x\,\langle\tilde\Phi,\tilde K\tilde\Phi\rangle$ | Quadratic biquaternion action; $\tilde K=\Box-m^2$ |
 | $Z[\tilde J]=\int\mathcal{D}\tilde\Phi\,e^{-\frac12\langle\tilde\Phi,\tilde K\tilde\Phi\rangle+\langle\tilde J,\tilde\Phi\rangle}$ | Functional integral with source |
 | $Z_0=(\det\tilde K)^{-1/2}e^{\frac12\langle\tilde J,\tilde K^{-1}\tilde J\rangle}$ | Gaussian result; $\prod_k(\tilde k\tilde k^{\natural}+m^2)^{-1}$ per mode for the free central operator |

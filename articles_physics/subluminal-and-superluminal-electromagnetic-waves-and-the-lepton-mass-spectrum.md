@@ -12,7 +12,7 @@ for a 2-form field $F$, together with the spinor sector of the same algebra. Fro
 
 The corpus records the programme and does not endorse it. Its value to this corpus is twofold. The structural part — the spinor representation of the field, the criterion that selects the linear equation, and the axial-current form of the massless equation — is **rigorous and checkable**, and it bears directly on questions the corpus states elsewhere: the invariant classification of *The Field-Strength Biquaternion and Its Invariants*, which classifies the field by its two invariants and notes that they are not conserved by the free evolution, but does not exhibit the family of free solutions that carry non-null invariants; the Dirac–Hestenes formulation of *The Dirac–Hestenes Equation and Spacetime Algebra in Biquaternionic Form*, which already carries the Yvon–Takabayasi angle as an "angle zero for a pure electron state" but not the criterion that makes the equation linear; and the axial current of *The Magnetic Monopole in Biquaternionic Form*, which the massless equation here reproduces. The mass claim is of a different kind — an algebraic mass-generation proposal — and is recorded with that standing, next to the other two the corpus already holds.
 
-One convention differs from the corpus and is flagged once, so that formulas are not misread between the two. The source works in the **Clifford bundle** $C\ell(M)$ with the metric $g=\mathrm{diag}(+1,-1,-1,-1)$, the convention the corpus itself adopts for its gamma matrices. Its **volume element** $\gamma_5=\gamma_0\gamma_1\gamma_2\gamma_3$ satisfies $\gamma_5^2=-1$, and it sets $i\equiv\gamma_5$: the source's "$i$" in the electric–magnetic notation $F=\mathbf{E}+i\mathbf{B}$ is therefore the **duality operator**, the corpus's central imaginary unit, and not a second imaginary number. The source's fixed bivector $\gamma_{21}=\gamma_2\gamma_1$ is the **spin plane** that multiplies the spinor on the right, the role played in the corpus's Dirac–Hestenes article by the fixed element $I\sigma_3$. The even subalgebra $C\ell^+(M)$, in which the spinor $\psi$ lives, is the biquaternion algebra $\mathbb{B}$ under the corpus's dictionary; the source's route is nevertheless the **Clifford-bundle** one, and the corpus records it as a different technical road to the same structural equivalences, cross-referencing rather than merging.
+One convention differs from the corpus and is flagged once, so that formulas are not misread between the two. The source works in the **Clifford bundle** $C\ell(M)$ with the metric $g=\mathrm{diag}(+1,-1,-1,-1)$, the convention the corpus itself adopts for its gamma matrices. Its **volume element** $\gamma_5=\gamma_0\gamma_1\gamma_2\gamma_3$ satisfies $\gamma_5^2=-1$, and it sets $i\equiv\gamma_5$: the source's "$i$" in the electric–magnetic notation $F=\vec E+i\vec B$ is therefore the **duality operator**, the corpus's central imaginary unit, and not a second imaginary number. The source's fixed bivector $\gamma_{21}=\gamma_2\gamma_1$ is the **spin plane** that multiplies the spinor on the right, the role played in the corpus's Dirac–Hestenes article by the fixed element $I\sigma_3$. The even subalgebra $C\ell^+(M)$, in which the spinor $\psi$ lives, is the biquaternion algebra $\mathbb{B}$ under the corpus's dictionary; the source's route is nevertheless the **Clifford-bundle** one, and the corpus records it as a different technical road to the same structural equivalences, cross-referencing rather than merging.
 
 ## Maxwell's Equations in the Clifford Bundle
 
@@ -27,7 +27,7 @@ $$
 with $f$ a constant 2-form and $k$ the propagation vector. Applying $k$ on the left gives $kF=0$, and applying $k$ again gives $k^2F=0$, so the propagation vector is **null**,
 
 $$
-k^2=0 \quad\Longleftrightarrow\quad k_0=\pm|\mathbf{k}| .
+k^2=0 \quad\Longleftrightarrow\quad k_0=\pm|\vec k| .
 $$
 
 Multiplying $kF=0$ on the right by $F$ gives $F^2=0$: the plane wave has **null invariants**. Both facts are the standard ones, and the source's point in restating them is the contrast with what follows — the plane waves of the free equation sit on the special null case, and the source then exhibits solutions that do not.
@@ -38,7 +38,7 @@ $$
 F = f\cos kx + \gamma_5 f\sin kx .
 $$
 
-Writing $F=\mathbf{E}+\gamma_5\mathbf{B}$ and $f=\mathbf{e}$, this is $\mathbf{E}+\gamma_5\mathbf{B}=\mathbf{e}\cos kx+\gamma_5\mathbf{e}\sin kx$: the electric and magnetic parts are **out of phase by a quarter period**, and the "$i$" of the standard complex formulation is precisely the $\gamma_5$ that produces that phase, not a formal device. The source calls this the "secret" that the complex notation hides, and it is the observation on which the rest of its plane-wave discussion is built. That $\gamma_5$ is the duality operator is also why the **duality rotation** $F\mapsto e^{\gamma_5\beta}F$ of *Exercise: Duality Rotation and the Riemann–Silberstein Vector* appears below as the parameter that governs the non-linear equation.
+Writing $F=\vec E+\gamma_5\vec B$ and $f=\mathbf e$, this is $\vec E+\gamma_5\vec B=\mathbf e\cos kx+\gamma_5\mathbf e\sin kx$: the electric and magnetic parts are **out of phase by a quarter period**, and the "$i$" of the standard complex formulation is precisely the $\gamma_5$ that produces that phase, not a formal device. The source calls this the "secret" that the complex notation hides, and it is the observation on which the rest of its plane-wave discussion is built. That $\gamma_5$ is the duality operator is also why the **duality rotation** $F\mapsto e^{\gamma_5\beta}F$ of *Exercise: Duality Rotation and the Riemann–Silberstein Vector* appears below as the parameter that governs the non-linear equation.
 
 ### The Hertz potential
 
@@ -51,35 +51,35 @@ The solutions of the next two sections are generated by a **Hertz potential**. T
 The source takes the Hertz potential to be $\pi=\Phi\,\gamma_1\gamma_2$ with the scalar part separated as
 
 $$
-\Phi(t,\mathbf{x}) = \varphi(\mathbf{x})\,e^{\gamma_5\Omega t},
+\Phi(t,\vec x) = \varphi(\vec x)\,e^{\gamma_5\Omega t},
 $$
 
-so that the wave equation becomes the Helmholtz equation $\nabla^2\varphi+\Omega^2\varphi=0$. The simplest solution is the spherical one $\varphi(\mathbf{x})=C\,\sin(\Omega r)/r$, and the resulting stationary field $F_0$ is **regular at the origin** and **vanishes at infinity** — a localised field configuration at rest in the adapted frame. Written in the electric–magnetic split $F_0=\mathbf{E}_0+\gamma_5\mathbf{B}_0$ it is
+so that the wave equation becomes the Helmholtz equation $\nabla^2\varphi+\Omega^2\varphi=0$. The simplest solution is the spherical one $\varphi(\vec x)=C\,\sin(\Omega r)/r$, and the resulting stationary field $F_0$ is **regular at the origin** and **vanishes at infinity** — a localised field configuration at rest in the adapted frame. Written in the electric–magnetic split $F_0=\vec E_0+\gamma_5\vec B_0$ it is
 
 $$
-\mathbf{E}_0=-\mathbf{W}\sin\Omega t, \qquad \mathbf{B}_0=\mathbf{W}\cos\Omega t,
+\vec E_0=-\vec W\sin\Omega t, \qquad \vec B_0=\vec W\cos\Omega t,
 $$
 
-with $\mathbf{W}(\mathbf{x})$ a fixed vector field built from spherical harmonics and powers of $1/r$.
+with $\vec W(\vec x)$ a fixed vector field built from spherical harmonics and powers of $1/r$.
 
-Three of its properties are the point of the construction. First, the invariant $I_1=\mathbf{E}_0^2-c^2\mathbf{B}_0^2$ and the pseudo-invariant $I_2=\mathbf{E}_0\cdot\mathbf{B}_0$ are **not zero**: $\mathbf{E}_0$ and $\mathbf{B}_0$ are both parallel to $\mathbf{W}$ and oscillate a quarter period apart, so $I_2=\mathbf{E}_0\cdot\mathbf{B}_0$ is generally non-zero while $I_1=-|\mathbf{W}|^2\cos 2\Omega t$ oscillates between the two signs. The field is of the **generic electric–magnetic-parallel type**, not the null type, and it is a free solution of the source-free Maxwell equation that carries a **non-null** field. Second, the field is **not transverse**: the source shows by boosting the stationary solution to a moving subluminal one that the propagation vector is no longer orthogonal to the field, in contrast to the plane wave. That is why its construction matters to claims about longitudinal electromagnetic waves, for which the source cites Evans. Third, $\mathbf{W}$ satisfies the **Beltrami (force-free) equation**
+Three of its properties are the point of the construction. First, the invariant $I_1=\vec E_0^2-c^2\vec B_0^2$ and the pseudo-invariant $I_2=\vec E_0\cdot\vec B_0$ are **not zero**: $\vec E_0$ and $\vec B_0$ are both parallel to $\vec W$ and oscillate a quarter period apart, so $I_2=\vec E_0\cdot\vec B_0$ is generally non-zero while $I_1=-|\vec W|^2\cos 2\Omega t$ oscillates between the two signs. The field is of the **generic electric–magnetic-parallel type**, not the null type, and it is a free solution of the source-free Maxwell equation that carries a **non-null** field. Second, the field is **not transverse**: the source shows by boosting the stationary solution to a moving subluminal one that the propagation vector is no longer orthogonal to the field, in contrast to the plane wave. That is why its construction matters to claims about longitudinal electromagnetic waves, for which the source cites Evans. Third, $\vec W$ satisfies the **Beltrami (force-free) equation**
 
 $$
-\mathrm{rot}\,\mathbf{W} = -\Omega\,\mathbf{W},
+\mathrm{rot}\,\vec W = -\Omega\,\vec W,
 $$
 
 so that the configuration is a helical force-free field, the object that appears in plasma physics and in the earlier "force-free" literature the source cites. The energy integral of $F_0$ alone diverges, and the source notes that finite-energy wave packets over a distribution of frequencies can be formed instead.
 
 ### Purely electromagnetic particles
 
-The subluminal solutions bear on a question older than the formalism. Einstein, following Poincaré and Ehrenfest, asked whether a **purely electromagnetic particle** can exist: a field configuration $F_p$ with current $J_p$ obeying $\partial F_p=J_p$ and the subsidiary condition $J_p\cdot F_p=0$. In vector form the condition reads $\rho_p\mathbf{E}_p=0$, $\mathbf{j}_p\cdot\mathbf{E}_p=0$, $\mathbf{j}_p\times\mathbf{B}_p=0$, and Einstein concluded that the only solution is $J_p=0$ — but, the source observes, only if $J_p$ is **time-like**. If $J_p$ is allowed to be **space-like** there is a frame in which $\rho_p=0$, and a solution with $\mathbf{E}_p\cdot\mathbf{B}_p=0$ and $\mathbf{j}_p=kC\,\mathbf{B}_p$ exists, with $k=\pm1$ a chirality. The connection with the section above is that the free stationary field $F_0$ can be **split** as a field plus a current, $\partial F_0=0$ being equivalent to $\partial F_p=J_p$ for a suitable space-like $J_p$; the free equation then models a standing purely electromagnetic particle. This is the source's route into the older programme of Waite, Barut and Zeni, which it cites; it is recorded here as a programme item, not as an established particle model.
+The subluminal solutions bear on a question older than the formalism. Einstein, following Poincaré and Ehrenfest, asked whether a **purely electromagnetic particle** can exist: a field configuration $F_p$ with current $J_p$ obeying $\partial F_p=J_p$ and the subsidiary condition $J_p\cdot F_p=0$. In vector form the condition reads $\rho_p\vec E_p=0$, $\vec j_p\cdot\vec E_p=0$, $\vec j_p\times\vec B_p=0$, and Einstein concluded that the only solution is $J_p=0$ — but, the source observes, only if $J_p$ is **time-like**. If $J_p$ is allowed to be **space-like** there is a frame in which $\rho_p=0$, and a solution with $\vec E_p\cdot\vec B_p=0$ and $\vec j_p=kC\,\vec B_p$ exists, with $k=\pm1$ a chirality. The connection with the section above is that the free stationary field $F_0$ can be **split** as a field plus a current, $\partial F_0=0$ being equivalent to $\partial F_p=J_p$ for a suitable space-like $J_p$; the free equation then models a standing purely electromagnetic particle. This is the source's route into the older programme of Waite, Barut and Zeni, which it cites; it is recorded here as a programme item, not as an established particle model.
 
 ## Superluminal Solutions: the X-Wave
 
 The same Hertz-potential device produces **superluminal** solutions. The scalar seed is taken from the family of **X-waves**,
 
 $$
-\Phi_{X_n}(t,\mathbf{x}) = e^{in\theta}\int_0^\infty B(k)\,J_n(k\rho\sin\eta)\,e^{-k[a_0-i(z\cos\eta-t)]}\,dk,
+\Phi_{X_n}(t,\vec x) = e^{in\theta}\int_0^\infty B(k)\,J_n(k\rho\sin\eta)\,e^{-k[a_0-i(z\cos\eta-t)]}\,dk,
 $$
 
 with $\eta$ the **axicon angle** and $J_n$ the Bessel function. With $B(k)=a_0$ the integral is elementary and gives a **closed-form superluminal electromagnetic X-wave** (SEXW), a localised beam-like solution of the wave equation in which $z\cos\eta-t$ replaces the plane-wave phase — the field pattern travels faster than $c$ along the axis while the individual wave fronts do not. The source treats these as valid solutions of the free Maxwell equation and points to Rodrigues and Lu for the physical devices that would generate them.
@@ -237,7 +237,7 @@ The programme of Rodrigues and Vaz works in the Clifford bundle and presses the 
 | $F$, $F_0$, $F_e$, $F^\uparrow$ | Field 2-form; the stationary subluminal solution; the electron field; the positive-parity field |
 | $\pi$, $A$ | Hertz potential; vector potential, $A=-\delta\pi$ |
 | $f$, $k$, $x$ | Constant 2-form; propagation vector ($k^2=0$); position |
-| $\mathbf{E}_0,\mathbf{B}_0,\mathbf{W}$ | Fields of the stationary solution and their common vector, $\mathrm{rot}\,\mathbf{W}=-\Omega\mathbf{W}$ |
+| $\vec E_0,\vec B_0,\vec W$ | Fields of the stationary solution and their common vector, $\mathrm{rot}\,\vec W=-\Omega\vec W$ |
 | $\Omega$ | Intrinsic frequency of the subluminal solution ($\Omega$ in the Helmholtz equation $\nabla^2\varphi+\Omega^2\varphi=0$) |
 | $\Phi_{X_n}$, $\eta$ | Scalar X-wave seed; axicon angle |
 | $\psi$, $\widetilde{\psi}$ | Dirac–Hestenes spinor (even element) and its reverse |

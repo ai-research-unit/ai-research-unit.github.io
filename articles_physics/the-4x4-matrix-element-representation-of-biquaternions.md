@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The physical point comes first. The rotor group $\{\tilde{\Lambda} : N(\tilde{\Lambda}) = e_0\}$ acts on the material sector $\mathbb{M}_-$ by the rotor conjugation $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$, and that conjugation is literally the product of the left copy of $\tilde{\Lambda}$ with the right copy of $\tilde{\Lambda}^{*}$ acting on the four-vector: in the regular representation the Lorentz transformation of a four-vector is a product of two multiplications in the algebra.
+The physical point comes first. The rotor group $\{\tilde{U} : N(\tilde{U}) = e_0\}$ acts on the material sector $\mathbb{M}_-$ by the rotor conjugation $\tilde{Q} \mapsto \tilde{U}\tilde{Q}\tilde{U}^{*}$, and that conjugation is literally the product of the left copy of $\tilde{U}$ with the right copy of $\tilde{U}^{*}$ acting on the four-vector: in the regular representation the Lorentz transformation of a four-vector is a product of two multiplications in the algebra.
 
 The **regular representation** of the biquaternion algebra is the algebra acting on itself on the left. Multiplication on the left by a fixed element is linear on the four-dimensional space $\mathbb{B}$, so in the basis $e_0, e_1, e_2, e_3$ it is a $4 \times 4$ complex matrix. This article constructs that matrix and its companion for multiplication on the right, proves that the two constructions are multiplicative, and reads off the consequences: the determinant is the **square** of the biquaternion norm and the trace is four times the scalar part; the regular module is the direct sum of two copies of the simple module, which in this corpus are the two **chiralities**; the centralizer of the left copy is the right copy; and the two copies together give the two-sided action by which a Lorentz transformation of a four-vector is written. The image of the left multiplication is written $M_4(\mathbb{C})_L$: the subspace of $M_4(\mathbb{C})$ of the regular matrices, of complex dimension $4$ inside the $16$ of the matrix algebra.
 
-The conventions are those of *Conventions in the Biquaternion Universe* and of the two companion articles, and none is redefined. The basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$; the scalar imaginary $i$ commutes with every unit; the conjugations are ${}^{\natural}$, $\bar{\cdot}$, ${}^{*} = {}^{\natural}\circ\bar{\cdot}$ and ${}^{\flat} = -{}^{*}$; the biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$; the subspaces are $\mathbb{C}_{\mathbb{B}}$ (centre), $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$ (real), $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ (informational) and $\mathbb{M}_-$ (material); the physical coordinates are $\tilde{Q} = ict\,e_0 + \mathbf{x}$ in $\mathbb{M}_-$ and $ct'\,e_0 + i\mathbf{x}'$ in $\mathbb{M}_+$, with $\mathbf{x} = xe_1+ye_2+ze_3$ and $\mathbf{x}' = x'e_1+y'e_2+z'e_3$; the $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$ and the d'Alembertian is $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \Delta$.
+The conventions are those of *Conventions in the Biquaternion Universe* and of the two companion articles, and none is redefined. The basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$ and $e_1e_2 = e_3$; the scalar imaginary $i$ commutes with every unit; the conjugations are ${}^{\natural}$, $\bar{\cdot}$, ${}^{*} = {}^{\natural}\circ\bar{\cdot}$ and ${}^{\flat} = -{}^{*}$; the biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$; the subspaces are $\mathbb{C}_{\mathbb{B}}$ (centre), $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$ (real), $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ (informational) and $\mathbb{M}_-$ (material); the physical coordinates are $\tilde{Q} = ict\,e_0 + \vec x$ in $\mathbb{M}_-$ and $ct'\,e_0 + i\vec x'$ in $\mathbb{M}_+$, with $\vec x = xe_1+ye_2+ze_3$ and $\vec x' = x'e_1+y'e_2+z'e_3$; the $ict$ metric is $\eta = \mathrm{diag}(-1,+1,+1,+1)$ and the d'Alembertian is $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \Delta$.
 
 ## The Left Regular Matrix
 
@@ -234,7 +234,7 @@ $$
 
 **Proof.** Apply $D$ on the left and on the right to the transpose of the closed form of $\mathsf{M}_4^{L}(\tilde{Q})$. Left multiplication by $D$ negates the first row and right multiplication by $D$ negates the first column; the corner entry lies in both and is negated twice, hence unchanged. The result is the closed form of $\mathsf{M}_4^{R}(\tilde{Q})$. The second equality uses the transpose proposition.
 
-**The physical interpretation of $D$.** The matrix $D = \operatorname{diag}(-1,1,1,1)$ is exactly the $ict$ metric $\eta = \operatorname{diag}(-1,+1,+1,+1)$ of *Conventions in the Biquaternion Universe*. The relation $\mathsf{M}_4^{R}(\tilde{Q}) = \eta\,\mathsf{M}_4^{L}(\tilde{Q})^{\mathsf{T}}\,\eta$ therefore says that the change of basis relating the two copies of the algebra is the **metric itself**, and it is the level-2 face of the same sign that puts $-c^2t^2 + \mathbf{x}^2$ on the four-position. Nothing else in the article uses the metric, so the appearance of $\eta$ here is not a coincidence of notation but the visible trace of the sign convention itself.
+**The physical interpretation of $D$.** The matrix $D = \operatorname{diag}(-1,1,1,1)$ is exactly the $ict$ metric $\eta = \operatorname{diag}(-1,+1,+1,+1)$ of *Conventions in the Biquaternion Universe*. The relation $\mathsf{M}_4^{R}(\tilde{Q}) = \eta\,\mathsf{M}_4^{L}(\tilde{Q})^{\mathsf{T}}\,\eta$ therefore says that the change of basis relating the two copies of the algebra is the **metric itself**, and it is the level-2 face of the same sign that puts $-c^2t^2 + \vec x^2$ on the four-position. Nothing else in the article uses the metric, so the appearance of $\eta$ here is not a coincidence of notation but the visible trace of the sign convention itself.
 
 **The same relation read as an adjoint.** With the bilinear form $\langle u, v \rangle_\eta = u^{\mathsf{T}}\eta v$ on the columns, the theorem says that $\mathsf{M}_4^{R}(\tilde{Q})$ is the transpose of $\mathsf{M}_4^{L}(\tilde{Q})$ **with respect to $\eta$** and not with respect to the Euclidean form:
 
@@ -254,7 +254,7 @@ $$
 \tilde{Q}\tilde{R} - \tilde{R}\tilde{Q} = 2 \sum_{i=1}^{3} \Big( \sum_{j,k=1}^{3} \epsilon^{ijk} q_j r_k \Big) e_i ,
 $$
 
-so the matrix $\mathsf{M}_4^{L}(\tilde{Q}) - \mathsf{M}_4^{R}(\tilde{Q})$ carries $\tilde{R}$ to the element of $\mathrm{Vect}(\mathbb{B})$ whose spatial part is twice $\mathbf{q} \times \mathbf{r}$.
+so the matrix $\mathsf{M}_4^{L}(\tilde{Q}) - \mathsf{M}_4^{R}(\tilde{Q})$ carries $\tilde{R}$ to the element of $\mathrm{Vect}(\mathbb{B})$ whose spatial part is twice $\vec q \times \vec r$.
 
 ## The Module Structure and the Two Chiralities
 
@@ -263,23 +263,25 @@ The regular module is reducible, and its reduction into minimal left ideals is t
 **Definition.** Let
 
 $$
-\tilde\Pi_1 = \tfrac{1}{2}(e_0 + ie_3), \qquad \tilde\Pi_2 = \tfrac{1}{2}(e_0 - ie_3).
+\tilde\Pi_+ = \tfrac{1}{2}(e_0 + ie_3), \qquad \tilde\Pi_- = \tfrac{1}{2}(e_0 - ie_3).
 $$
 
-**Lemma (orthogonal idempotents).** The elements $\tilde\Pi_1$ and $\tilde\Pi_2$ satisfy
+The element $ie_3$ is a root of $+1$, $(ie_3)^2 = e_0$, and the two idempotents are its associated idempotents.
+
+**Lemma (orthogonal idempotents).** The elements $\tilde\Pi_+$ and $\tilde\Pi_-$ satisfy
 
 $$
-\tilde\Pi_1^2 = \tilde\Pi_1, \qquad \tilde\Pi_2^2 = \tilde\Pi_2, \qquad \tilde\Pi_1\tilde\Pi_2 = \tilde\Pi_2\tilde\Pi_1 = 0, \qquad \tilde\Pi_1 + \tilde\Pi_2 = e_0,
+\tilde\Pi_+^2 = \tilde\Pi_+, \qquad \tilde\Pi_-^2 = \tilde\Pi_-, \qquad \tilde\Pi_+\tilde\Pi_- = \tilde\Pi_-\tilde\Pi_+ = 0, \qquad \tilde\Pi_+ + \tilde\Pi_- = e_0,
 $$
 
-so that $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$ as a direct sum of left ideals.
+so that $\mathbb{B} = \mathbb{B}\tilde\Pi_+ \oplus \mathbb{B}\tilde\Pi_-$ as a direct sum of left ideals.
 
-**Proof.** Because $i$ is central, $e_3^2 = -e_0$ and $i^2 = -1$, one computes $\tilde\Pi_1^2 = \tfrac14(e_0 + 2ie_3 + i^2e_3^2) = \tfrac14(e_0 + 2ie_3 + e_0) = \tilde\Pi_1$, and similarly $\tilde\Pi_2^2 = \tilde\Pi_2$; while $\tilde\Pi_1\tilde\Pi_2 = \tfrac14(e_0 - i^2e_3^2) = \tfrac14(e_0 - e_0) = 0$. The sum is $e_0$, and the two ideals meet only in $0$: an element lying in both satisfies $\tilde{Q} = \tilde{Q}\tilde\Pi_2 = 0$, because membership of $\mathbb{B}\tilde\Pi_2$ gives $\tilde{Q}\tilde\Pi_2 = \tilde{Q}$ while $\tilde\Pi_1\tilde\Pi_2 = 0$. The sum is therefore direct. Under the isomorphism $\mathsf{M}_4$ of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* the two idempotents are the matrix units $\tilde\Pi_1 \mapsto E_{11}$ and $\tilde\Pi_2 \mapsto E_{22}$, and the two ideals are the two **columns** of the matrix algebra, which the corpus calls the two chiralities.
+**Proof.** Because $i$ is central, $e_3^2 = -e_0$ and $i^2 = -1$, one computes $\tilde\Pi_+^2 = \tfrac14(e_0 + 2ie_3 + i^2e_3^2) = \tfrac14(e_0 + 2ie_3 + e_0) = \tilde\Pi_+$, and similarly $\tilde\Pi_-^2 = \tilde\Pi_-$; while $\tilde\Pi_+\tilde\Pi_- = \tfrac14(e_0 - i^2e_3^2) = \tfrac14(e_0 - e_0) = 0$. The sum is $e_0$, and the two ideals meet only in $0$: an element lying in both satisfies $\tilde{Q} = \tilde{Q}\tilde\Pi_- = 0$, because membership of $\mathbb{B}\tilde\Pi_-$ gives $\tilde{Q}\tilde\Pi_- = \tilde{Q}$ while $\tilde\Pi_+\tilde\Pi_- = 0$. The sum is therefore direct. Under the isomorphism $\mathsf{M}_4$ of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* the two idempotents are the matrix units $\tilde\Pi_+ \mapsto E_{11}$ and $\tilde\Pi_- \mapsto E_{22}$, and the two ideals are the two **columns** of the matrix algebra, which the corpus calls the two chiralities.
 
 **Theorem (the left regular matrix is the sum of the two chiralities).** In the basis
 
 $$
-\tilde\Pi_1, \quad e_1\tilde\Pi_1, \quad \tilde\Pi_2, \quad e_1\tilde\Pi_2
+\tilde\Pi_+, \quad e_1\tilde\Pi_+, \quad \tilde\Pi_-, \quad e_1\tilde\Pi_-
 $$
 
 of $\mathbb{B}$, the left regular matrix of $\tilde{Q}$ is block diagonal,
@@ -302,13 +304,13 @@ $$
 
 as a left $\mathbb{B}$-module.
 
-**Proof.** The two ideals are stable under $\mathsf{M}_4^{L}(\tilde{Q})$, because $\tilde{Q}(\tilde{S}\tilde\Pi_1) = (\tilde{Q}\tilde{S})\tilde\Pi_1$ for every $\tilde{S}$; hence the matrix is block diagonal in any basis adapted to the decomposition. The ideal $\mathbb{B}\tilde\Pi_1$ has the basis $\tilde\Pi_1, e_1\tilde\Pi_1$, since $e_2\tilde\Pi_1 = ie_1\tilde\Pi_1$ and $e_3\tilde\Pi_1 = -i\tilde\Pi_1$. Its multiplication by the units is read from
+**Proof.** The two ideals are stable under $\mathsf{M}_4^{L}(\tilde{Q})$, because $\tilde{Q}(\tilde{S}\tilde\Pi_+) = (\tilde{Q}\tilde{S})\tilde\Pi_+$ for every $\tilde{S}$; hence the matrix is block diagonal in any basis adapted to the decomposition. The ideal $\mathbb{B}\tilde\Pi_+$ has the basis $\tilde\Pi_+, e_1\tilde\Pi_+$, since $e_2\tilde\Pi_+ = ie_1\tilde\Pi_+$ and $e_3\tilde\Pi_+ = -i\tilde\Pi_+$. Its multiplication by the units is read from
 
 $$
-e_2\tilde\Pi_1 = ie_1\tilde\Pi_1, \quad e_3\tilde\Pi_1 = -i\tilde\Pi_1, \qquad e_1(e_1\tilde\Pi_1) = -\tilde\Pi_1, \quad e_2(e_1\tilde\Pi_1) = i\tilde\Pi_1, \quad e_3(e_1\tilde\Pi_1) = ie_1\tilde\Pi_1,
+e_2\tilde\Pi_+ = ie_1\tilde\Pi_+, \quad e_3\tilde\Pi_+ = -i\tilde\Pi_+, \qquad e_1(e_1\tilde\Pi_+) = -\tilde\Pi_+, \quad e_2(e_1\tilde\Pi_+) = i\tilde\Pi_+, \quad e_3(e_1\tilde\Pi_+) = ie_1\tilde\Pi_+,
 $$
 
-so in the basis $\tilde\Pi_1, e_1\tilde\Pi_1$ the three vector units act by the matrices $\begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$, $\begin{pmatrix} 0 & i \\ i & 0 \end{pmatrix}$ and $\begin{pmatrix} -i & 0 \\ 0 & i \end{pmatrix}$, and carrying out the sum $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ gives $A_+$; the same computation on the basis $\tilde\Pi_2, e_1\tilde\Pi_2$ of $\mathbb{B}\tilde\Pi_2$ gives $A_-$. The trace of each block is $2Q_0$ by inspection and the determinant is
+so in the basis $\tilde\Pi_+, e_1\tilde\Pi_+$ the three vector units act by the matrices $\begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$, $\begin{pmatrix} 0 & i \\ i & 0 \end{pmatrix}$ and $\begin{pmatrix} -i & 0 \\ 0 & i \end{pmatrix}$, and carrying out the sum $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ gives $A_+$; the same computation on the basis $\tilde\Pi_-, e_1\tilde\Pi_-$ of $\mathbb{B}\tilde\Pi_-$ gives $A_-$. The trace of each block is $2Q_0$ by inspection and the determinant is
 
 $$
 \det A_+ = (Q_0 - iQ_3)(Q_0 + iQ_3) - (-Q_1 + iQ_2)(Q_1 + iQ_2) = Q_0^2 + Q_3^2 + Q_1^2 + Q_2^2 = N(\tilde{Q}),
@@ -352,7 +354,7 @@ $$
 \tilde\Upsilon_1 = \tfrac{1}{2}(ie_1 - e_2) \longmapsto E_{12},
 $$
 
-whose right action maps the first column onto the second — $E_{11} \mapsto E_{12}$ and $E_{21} \mapsto E_{22}$ — while annihilating the second, so that $\tilde\Pi_1\tilde\Upsilon_1 = \tilde\Upsilon_1$ while $\tilde\Pi_2\tilde\Upsilon_1 = 0$, and the algebra product is nilpotent, $\tilde\Upsilon_1^2 = 0$. The pair $\tilde\Upsilon_1$, $\tilde\Upsilon_2 = \tfrac12(ie_1 + e_2)$ satisfies $\tilde\Upsilon_1\tilde\Upsilon_2 = \tilde\Pi_1$ and $\tilde\Upsilon_2\tilde\Upsilon_1 = \tilde\Pi_2$. In the notation of the spinor-module articles these are the truncated ladder elements $x$ and $y$. The consequence is recorded in *The Dirac Equation in Biquaternionic Form*: the biquaternionic Dirac equation is linear and chirality-off-diagonal, $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$ and $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$, and the Dirac field is carried by the spinor module and not by the whole algebra. The regular matrix is where one sees that this is forced by the algebra and not chosen: the left action has no off-diagonal blocks.
+whose right action maps the first column onto the second — $E_{11} \mapsto E_{12}$ and $E_{21} \mapsto E_{22}$ — while annihilating the second, so that $\tilde\Pi_+\tilde\Upsilon_1 = \tilde\Upsilon_1$ while $\tilde\Pi_-\tilde\Upsilon_1 = 0$, and the algebra product is nilpotent, $\tilde\Upsilon_1^2 = 0$. The pair $\tilde\Upsilon_1$, $\tilde\Upsilon_2 = \tfrac12(ie_1 + e_2)$ satisfies $\tilde\Upsilon_1\tilde\Upsilon_2 = \tilde\Pi_+$ and $\tilde\Upsilon_2\tilde\Upsilon_1 = \tilde\Pi_-$. In the notation of the spinor-module articles these are the truncated ladder elements $x$ and $y$. The consequence is recorded in *The Dirac Equation in Biquaternionic Form*: the biquaternionic Dirac equation is linear and chirality-off-diagonal, $\tilde{\nabla}\tilde{\Psi}_R = m\tilde{\Psi}_L$ and $\tilde{\nabla}^{\natural}\tilde{\Psi}_L = m\tilde{\Psi}_R$, and the Dirac field is carried by the spinor module and not by the whole algebra. The regular matrix is where one sees that this is forced by the algebra and not chosen: the left action has no off-diagonal blocks.
 
 ## The Determinant and the Trace
 
@@ -374,15 +376,15 @@ $$
 
 in agreement with the two blocks $A_+(\tilde{Q}) = \begin{pmatrix} 3+i & -1+4i \\ 1+2i & 1+i \end{pmatrix}$ and $A_-(\tilde{Q}) = \begin{pmatrix} 1+i & -1-2i \\ 1-4i & 3+i \end{pmatrix}$ on this element, each of trace $4+2i$ and determinant $11+2i$.
 
-**For a material four-vector.** With $\tilde{Q} = iq'_0e_0 + \mathbf{q} \in \mathbb{M}_-$ the biquaternion norm is real, $N(\tilde{Q}) = -(q'_0)^2 + \mathbf{q}^2$, so
+**For a material four-vector.** With $\tilde{Q} = iq'_0e_0 + \vec q \in \mathbb{M}_-$ the biquaternion norm is real, $N(\tilde{Q}) = -(q'_0)^2 + \vec q^2$, so
 
 $$
-\det\mathsf{M}_4^{L}(\tilde{Q}) = \bigl( -(q'_0)^2 + \mathbf{q}^2 \bigr)^2, \qquad \operatorname{Tr}\mathsf{M}_4^{L}(\tilde{Q}) = 4iq'_0 .
+\det\mathsf{M}_4^{L}(\tilde{Q}) = \bigl( -(q'_0)^2 + \vec q^2 \bigr)^2, \qquad \operatorname{Tr}\mathsf{M}_4^{L}(\tilde{Q}) = 4iq'_0 .
 $$
 
-For the four-position, with $q'_0 = ct$ and $\mathbf{q} = \mathbf{x}$, the determinant of the regular matrix is the **square of the interval**: for $ct = 2$ and $\mathbf{x} = (1, \tfrac12, \tfrac12)$ the interval is the rational number $-4 + 1 + \tfrac14 + \tfrac14 = -\tfrac52$, and the regular matrix has determinant $\tfrac{25}{4}$, real and positive. For the four-momentum the on-shell biquaternion norm is $-m^2c^2$, so the regular matrix has determinant $m^4c^4$.
+For the four-position, with $q'_0 = ct$ and $\vec q = \vec x$, the determinant of the regular matrix is the **square of the interval**: for $ct = 2$ and $\vec x = (1, \tfrac12, \tfrac12)$ the interval is the rational number $-4 + 1 + \tfrac14 + \tfrac14 = -\tfrac52$, and the regular matrix has determinant $\tfrac{25}{4}$, real and positive. For the four-momentum the on-shell biquaternion norm is $-m^2c^2$, so the regular matrix has determinant $m^4c^4$.
 
-**The regular matrix is singular exactly on the light cone.** Since $\det\mathsf{M}_4^{L}(\tilde{Q}) = N(\tilde{Q})^2$, the regular matrix of an element fails to be invertible exactly when $N(\tilde{Q}) = 0$, that is, exactly on the zero-divisor cone. For a material four-vector that is the light cone $-c^2t^2 + \mathbf{x}^2 = 0$; for the four-momentum it is the massless case $m = 0$. The physical statement and the algebraic one are the same: a four-vector is a zero divisor of the algebra exactly when it is null, and the determinant of the regular representation is the test. Moreover the determinant is a **square**, and the square has a **physical interpretation**: the four-vector is the direct sum of two chiral copies, and each copy carries one factor of the biquaternion norm.
+**The regular matrix is singular exactly on the light cone.** Since $\det\mathsf{M}_4^{L}(\tilde{Q}) = N(\tilde{Q})^2$, the regular matrix of an element fails to be invertible exactly when $N(\tilde{Q}) = 0$, that is, exactly on the zero-divisor cone. For a material four-vector that is the light cone $-c^2t^2 + \vec x^2 = 0$; for the four-momentum it is the massless case $m = 0$. The physical statement and the algebraic one are the same: a four-vector is a zero divisor of the algebra exactly when it is null, and the determinant of the regular representation is the test. Moreover the determinant is a **square**, and the square has a **physical interpretation**: the four-vector is the direct sum of two chiral copies, and each copy carries one factor of the biquaternion norm.
 
 **Remark (the determinant is not the biquaternion norm).** The simple module carries the biquaternion norm as its determinant, $\det\mathsf{M}_4(\tilde{Q}) = N(\tilde{Q})$, and the regular module is the direct sum of two copies of it, so its determinant is the product of two biquaternion norms. The square appears because the regular representation acts on a space of twice the dimension, and the factor $2$ is the number of chiralities. Squaring does not change the zero set, which is why the light-cone statement survives the doubling, but it does change the degree: an identity that holds for $N$ to the first power in the 2×2 article holds only for $N^2$ here.
 
@@ -400,12 +402,12 @@ $$
 
 **Four-vectors of physics.** Four cases are worth recording, with constants rather than with units.
 
-| Four-vector | Components $(q'_0, \mathbf{q})$ | $\det\mathsf{M}_4^{L}$ | $\operatorname{Tr}\mathsf{M}_4^{L}$ |
+| Four-vector | Components $(q'_0, \vec q)$ | $\det\mathsf{M}_4^{L}$ | $\operatorname{Tr}\mathsf{M}_4^{L}$ |
 |---|---|---|---|
-| four-position | $(ct, \mathbf{x})$ | $( -c^2t^2 + \mathbf{x}^2 )^2$ | $4ict$ |
-| four-velocity | $(\gamma c, \gamma\mathbf{v})$ | $c^4$ | $4i\gamma c$ |
-| four-momentum, on shell | $(E/c, \mathbf{p})$ | $m^4c^4$ | $4iE/c$ |
-| four-momentum, massless | $(E/c, \mathbf{p})$ | $0$ | $4iE/c$ |
+| four-position | $(ct, \vec x)$ | $( -c^2t^2 + \vec x^2 )^2$ | $4ict$ |
+| four-velocity | $(\gamma c, \gamma\vec v)$ | $c^4$ | $4i\gamma c$ |
+| four-momentum, on shell | $(E/c, \vec p)$ | $m^4c^4$ | $4iE/c$ |
+| four-momentum, massless | $(E/c, \vec p)$ | $0$ | $4iE/c$ |
 
 The determinant of the four-velocity's regular matrix is the constant $c^4$, which is the matrix form of the statement that the four-velocity has constant biquaternion norm $-c^2$; the determinant is its square, and it is constant because the interval of a timelike world line is. The massless four-momentum has a singular regular matrix, and the massive one does not: the regular matrix detects the mass shell as the complement of the singular locus.
 
@@ -441,7 +443,7 @@ because the two chiral blocks are similar and each carries one factor. This is t
 
 ## Remarkable Subspaces
 
-Each of the algebra's remarkable subspaces has its own simplified regular matrix, obtained by substituting that subspace's parametrisation into the general matrix of the first section. The parametrisations are those of *Conventions in the Biquaternion Universe*: the complex coefficients are $Q_\mu = q_\mu + iq'_\mu$ with $q_\mu, q'_\mu$ real, and the physical coordinates are $ct, \mathbf{x}$ on the material side and $ct', \mathbf{x}'$ on the informational one.
+Each of the algebra's remarkable subspaces has its own simplified regular matrix, obtained by substituting that subspace's parametrisation into the general matrix of the first section. The parametrisations are those of *Conventions in the Biquaternion Universe*: the complex coefficients are $Q_\mu = q_\mu + iq'_\mu$ with $q_\mu, q'_\mu$ real, and the physical coordinates are $ct, \vec x$ on the material side and $ct', \vec x'$ on the informational one.
 
 Each subspace is displayed as a three-step chain: the general matrix in the complex coefficients $Q_\mu$, the same matrix with that subspace's real parameters substituted, and the same matrix in the physical coordinates, under the one dictionary
 
@@ -449,7 +451,7 @@ $$
 q_0 = ct', \quad q'_0 = ct, \quad q_1 = x, \quad q_2 = y, \quad q_3 = z, \quad q'_1 = x', \quad q'_2 = y', \quad q'_3 = z' ,
 $$
 
-the unprimed slot carrying the informational time $ct'$ and the material space $\mathbf{x}$, the primed slot the material time $ct$ and the informational space $\mathbf{x}'$.
+the unprimed slot carrying the informational time $ct'$ and the material space $\vec x$, the primed slot the material time $ct$ and the informational space $\vec x'$.
 
 **The centre subspace $\mathbb{C}_{\mathbb{B}}$.** One complex coefficient at the scalar slot, $Q_1 = Q_2 = Q_3 = 0$: the regular matrix is scalar, and the chain from the complex coefficient to its two real parameters to the two physical times is
 
@@ -488,7 +490,7 @@ $$
 = \begin{pmatrix} ct' & -x & -y & -z \\ x & ct' & -z & y \\ y & z & ct' & -x \\ z & -y & x & ct' \end{pmatrix},
 $$
 
-the real Cayley matrix, with $\operatorname{Tr}\mathsf{M}_4^{L} = 4ct'$ and $\det\mathsf{M}_4^{L} = \big( c^2(t')^2 + \mathbf{x}^2 \big)^2$.
+the real Cayley matrix, with $\operatorname{Tr}\mathsf{M}_4^{L} = 4ct'$ and $\det\mathsf{M}_4^{L} = \big( c^2(t')^2 + \vec x^2 \big)^2$.
 
 Its entries are real and its determinant is the square of a sum of four squares, so it is invertible for every nonzero element: this is the real $4 \times 4$ left regular representation of the quaternions, and the absence of zero divisors in $\mathbb{H}$ is the invertibility of this matrix.
 
@@ -500,7 +502,7 @@ $$
 = i\begin{pmatrix} ct & -x' & -y' & -z' \\ x' & ct & -z' & y' \\ y' & z' & ct & -x' \\ z' & -y' & x' & ct \end{pmatrix},
 $$
 
-with $q'_0 = ct$ and $q'_k = x'_k$ real, $\operatorname{Tr}\mathsf{M}_4^{L} = 4ict$ and $\det\mathsf{M}_4^{L} = \big( c^2t^2 + (\mathbf{x}')^2 \big)^2$. The assignment of the two times and the two spaces is the one the real sector does not take. The determinant is again the square of a sum of four squares, so this subspace too is a division algebra, a copy of $\mathbb{H}$.
+with $q'_0 = ct$ and $q'_k = x'_k$ real, $\operatorname{Tr}\mathsf{M}_4^{L} = 4ict$ and $\det\mathsf{M}_4^{L} = \big( c^2t^2 + (\vec x')^2 \big)^2$. The assignment of the two times and the two spaces is the one the real sector does not take. The determinant is again the square of a sum of four squares, so this subspace too is a division algebra, a copy of $\mathbb{H}$.
 
 **The informational subspace $\mathbb{M}_+$.** The scalar coefficient is real and the three spatial ones are purely imaginary, $Q_0 = q_0$ and $Q_k = iq'_k$: a real diagonal and a purely imaginary spatial block, reached by the same three-step chain,
 
@@ -510,7 +512,7 @@ $$
 = \begin{pmatrix} ct' & -ix' & -iy' & -iz' \\ ix' & ct' & -iz' & iy' \\ iy' & iz' & ct' & -ix' \\ iz' & -iy' & ix' & ct' \end{pmatrix},
 $$
 
-with $q_0 = ct'$ and $q'_k = x'_k$ real, $\operatorname{Tr}\mathsf{M}_4^{L} = 4ct'$ and $\det\mathsf{M}_4^{L} = \big( c^2(t')^2 - (\mathbf{x}')^2 \big)^2$. It is the mirror of the material case, of signature $(1,3)$. It is **Hermitian**, and its determinant is the square of the informational interval, so it is singular exactly on the informational null cone $ct' = \pm|\mathbf{x}'|$.
+with $q_0 = ct'$ and $q'_k = x'_k$ real, $\operatorname{Tr}\mathsf{M}_4^{L} = 4ct'$ and $\det\mathsf{M}_4^{L} = \big( c^2(t')^2 - (\vec x')^2 \big)^2$. It is the mirror of the material case, of signature $(1,3)$. It is **Hermitian**, and its determinant is the square of the informational interval, so it is singular exactly on the informational null cone $ct' = \pm|\vec x'|$.
 
 **The material subspace $\mathbb{M}_-$.** The scalar coefficient is purely imaginary and the three spatial ones are real, $Q_0 = iq'_0$ and $Q_k = q_k$: a purely imaginary diagonal and a real spatial block, and the chain carries the material four-vector from the complex coefficients through their real parameters to the physical coordinates $ict, x, y, z$,
 
@@ -520,7 +522,7 @@ $$
 = \begin{pmatrix} ict & -x & -y & -z \\ x & ict & -z & y \\ y & z & ict & -x \\ z & -y & x & ict \end{pmatrix},
 $$
 
-with $q'_0 = ct$ and $q_k = x_k$ real, $\operatorname{Tr}\mathsf{M}_4^{L} = 4ict$ and $\det\mathsf{M}_4^{L} = \big( -c^2t^2 + \mathbf{x}^2 \big)^2$. It is the matrix displayed in *The Matrix of a Four-Vector*. It is **anti-Hermitian**, and its determinant is the square of the Minkowski interval, so it is singular exactly on the light cone: a four-vector is a zero divisor of the algebra exactly when it is null.
+with $q'_0 = ct$ and $q_k = x_k$ real, $\operatorname{Tr}\mathsf{M}_4^{L} = 4ict$ and $\det\mathsf{M}_4^{L} = \big( -c^2t^2 + \vec x^2 \big)^2$. It is the matrix displayed in *The Matrix of a Four-Vector*. It is **anti-Hermitian**, and its determinant is the square of the Minkowski interval, so it is singular exactly on the light cone: a four-vector is a zero divisor of the algebra exactly when it is null.
 
 **Why the informational sector is Hermitian and the material one anti-Hermitian.** The two displays are not a coincidence: the left regular representation is a $*$-homomorphism for Hermitian conjugation,
 
@@ -569,7 +571,7 @@ $$
 **For a material four-vector.** With $\tilde{Q} \in \mathbb{M}_-$ the scalar part is $Q_0 = iq'_0$, whose real part vanishes, so
 
 $$
-\operatorname{Tr}\mathsf{M}_4^{L,\mathbb{R}}(\tilde{Q}) = 0, \qquad \det\mathsf{M}_4^{L,\mathbb{R}}(\tilde{Q}) = \bigl( -(q'_0)^2 + \mathbf{q}^2 \bigr)^4 ,
+\operatorname{Tr}\mathsf{M}_4^{L,\mathbb{R}}(\tilde{Q}) = 0, \qquad \det\mathsf{M}_4^{L,\mathbb{R}}(\tilde{Q}) = \bigl( -(q'_0)^2 + \vec q^2 \bigr)^4 ,
 $$
 
 the biquaternion norm being real on the material sector. The real regular matrix of a material four-vector is therefore **traceless**, and this is the sense in which the trace of a four-vector is zero: not over $\mathbb{C}$, where it is $4iq'_0$, but over the real eight-dimensional space, where the trace is twice the real part of the complex trace. The tracelessness is a property of the material sector alone, whose scalar part is purely imaginary; on the informational sector the scalar part is real and the real trace is $8q_0 = 8ct'$, generally nonzero. On the quaternion subalgebra $\mathbb{H}_{\mathbb{B}}$ and read on $\mathbb{H}_{\mathbb{B}}$ itself the construction is the $4 \times 4$ real regular representation of the quaternions.
@@ -581,40 +583,40 @@ One geometric statement uses both copies at once, and it is the reason the regul
 **Definition.** The **rotor group** of $\mathbb{B}$ is
 
 $$
-\{\tilde{\Lambda} \in \mathbb{B} : N(\tilde{\Lambda}) = e_0\} .
+\{\tilde{U} \in \mathbb{B} : N(\tilde{U}) = e_0\} .
 $$
 
-It is a group, and under $\mathsf{M}_4$ it is the special linear group $SL(2,\mathbb{C})$, since $N(\tilde{\Lambda}) = \det\mathsf{M}_4(\tilde{\Lambda}) = 1$.
+It is a group, and under $\mathsf{M}_4$ it is the special linear group $SL(2,\mathbb{C})$, since $N(\tilde{U}) = \det\mathsf{M}_4(\tilde{U}) = 1$.
 
 **Proposition (the two-sided action).** The map
 
 $$
-\tilde{Q} \longmapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}
+\tilde{Q} \longmapsto \tilde{U}\tilde{Q}\tilde{U}^{*}
 $$
 
 is a group action of the rotor group on the material sector $\mathbb{M}_-$ and on the informational sector $\mathbb{M}_+$, and it preserves the biquaternion norm on each:
 
 $$
-N(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}) = N(\tilde{Q}) .
+N(\tilde{U}\tilde{Q}\tilde{U}^{*}) = N(\tilde{Q}) .
 $$
 
-**Proof.** If $\tilde{Q}$ is anti-Hermitian then $(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*})^{*} = \tilde{\Lambda}\tilde{Q}^{*}\tilde{\Lambda}^{*} = -\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$, so $\mathbb{M}_-$ is preserved; if $\tilde{Q}$ is Hermitian then $\tilde{Q}^{*} = \tilde{Q}$ and $\mathbb{M}_+$ is preserved. The biquaternion norm is multiplicative, so $N(\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}) = N(\tilde{\Lambda})N(\tilde{Q})N(\tilde{\Lambda}^{*})$, and $N(\tilde{\Lambda}) = e_0$ while $N(\tilde{\Lambda}^{*}) = N(\tilde{\Lambda})^{*} = e_0$. Composition holds because $\tilde{\Lambda}_1(\tilde{\Lambda}_2\tilde{Q}\tilde{\Lambda}_2^{*})\tilde{\Lambda}_1^{*} = (\tilde{\Lambda}_1\tilde{\Lambda}_2)\tilde{Q}(\tilde{\Lambda}_1\tilde{\Lambda}_2)^{*}$.
+**Proof.** If $\tilde{Q}$ is anti-Hermitian then $(\tilde{U}\tilde{Q}\tilde{U}^{*})^{*} = \tilde{U}\tilde{Q}^{*}\tilde{U}^{*} = -\tilde{U}\tilde{Q}\tilde{U}^{*}$, so $\mathbb{M}_-$ is preserved; if $\tilde{Q}$ is Hermitian then $\tilde{Q}^{*} = \tilde{Q}$ and $\mathbb{M}_+$ is preserved. The biquaternion norm is multiplicative, so $N(\tilde{U}\tilde{Q}\tilde{U}^{*}) = N(\tilde{U})N(\tilde{Q})N(\tilde{U}^{*})$, and $N(\tilde{U}) = e_0$ while $N(\tilde{U}^{*}) = N(\tilde{U})^{*} = e_0$. Composition holds because $\tilde{U}_1(\tilde{U}_2\tilde{Q}\tilde{U}_2^{*})\tilde{U}_1^{*} = (\tilde{U}_1\tilde{U}_2)\tilde{Q}(\tilde{U}_1\tilde{U}_2)^{*}$.
 
 ### The Lorentz Transformation as Left Times Right
 
-**Corollary (the regular form of the rotor conjugation).** For every rotor $\tilde{\Lambda}$ and every four-vector $\tilde{Q}$,
+**Corollary (the regular form of the rotor conjugation).** For every rotor $\tilde{U}$ and every four-vector $\tilde{Q}$,
 
 $$
-\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*} = \mathsf{M}_4^{L}(\tilde{\Lambda})\,\mathsf{M}_4^{R}(\tilde{\Lambda}^{*})\,\tilde{Q},
+\tilde{U}\tilde{Q}\tilde{U}^{*} = \mathsf{M}_4^{L}(\tilde{U})\,\mathsf{M}_4^{R}(\tilde{U}^{*})\,\tilde{Q},
 $$
 
-so the rotor conjugation is the left copy of $\tilde{\Lambda}$ composed with the right copy of $\tilde{\Lambda}^{*}$.
+so the rotor conjugation is the left copy of $\tilde{U}$ composed with the right copy of $\tilde{U}^{*}$.
 
-**Proof.** By definition $\mathsf{M}_4^{L}(\tilde{\Lambda})$ multiplies on the left and $\mathsf{M}_4^{R}(\tilde{\Lambda}^{*})$ on the right; applying the second to the four-vector and then the first gives $\tilde{\Lambda}(\tilde{Q}\tilde{\Lambda}^{*}) = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$ by associativity.
+**Proof.** By definition $\mathsf{M}_4^{L}(\tilde{U})$ multiplies on the left and $\mathsf{M}_4^{R}(\tilde{U}^{*})$ on the right; applying the second to the four-vector and then the first gives $\tilde{U}(\tilde{Q}\tilde{U}^{*}) = \tilde{U}\tilde{Q}\tilde{U}^{*}$ by associativity.
 
 This is the statement promised in the introduction. A Lorentz transformation of a four-vector, in the biquaternion framework, is not primarily a matrix: it is a **two-sided multiplication**, one copy on each side, and the regular representation is the realization in which both copies are $4 \times 4$ matrices. The identity also shows why both regular representations are needed — the left one alone cannot produce the transformation, since the right factor is not central.
 
-**The invariance of the interval.** Since $N$ is multiplicative and $N(\tilde{\Lambda}^{*}) = N(\tilde{\Lambda})^{*} = e_0$, the interval of a material four-vector is preserved by every rotor conjugation. The zero set is therefore invariant, and the causal classes of the framework are the orbits of the rotor group. This is the algebraic statement of the invariance of the interval, and it is what makes the rotor group the Lorentz group of the framework.
+**The invariance of the interval.** Since $N$ is multiplicative and $N(\tilde{U}^{*}) = N(\tilde{U})^{*} = e_0$, the interval of a material four-vector is preserved by every rotor conjugation. The zero set is therefore invariant, and the causal classes of the framework are the orbits of the rotor group. This is the algebraic statement of the invariance of the interval, and it is what makes the rotor group the Lorentz group of the framework.
 
 ### Rotation Rotors and Boost Rotors
 
@@ -646,7 +648,7 @@ $$
 ct \mapsto \cosh 2s\;ct - \sinh 2s\;x, \qquad x \mapsto \cosh 2s\;x - \sinh 2s\;ct, \qquad y \mapsto y, \quad z \mapsto z .
 $$
 
-The prime is deliberately not used for the transformed coordinates: in this corpus a prime marks an **informational** coordinate, so $ct'$ and $\mathbf{x}'$ are the informational time and space of the conventions stated above, and the transformed material pair needs no new symbols. For the event $(ct, x) = (2, 1)$ the image is $(\tfrac{14}{3}, -\tfrac{13}{3})$ in the same order, and the interval is preserved, $-\tfrac{196}{9} + \tfrac{169}{9} = -3 = -4 + 1$: a timelike displacement of interval $-3$ is carried to a timelike displacement of interval $-3$. The boost is a hyperbolic rotation, the parameter $s$ is the half-rapidity, and the appearance of the double angle is the same factor of two as in the rotation case, there called the double cover.
+The prime is deliberately not used for the transformed coordinates: in this corpus a prime marks an **informational** coordinate, so $ct'$ and $\vec x'$ are the informational time and space of the conventions stated above, and the transformed material pair needs no new symbols. For the event $(ct, x) = (2, 1)$ the image is $(\tfrac{14}{3}, -\tfrac{13}{3})$ in the same order, and the interval is preserved, $-\tfrac{196}{9} + \tfrac{169}{9} = -3 = -4 + 1$: a timelike displacement of interval $-3$ is carried to a timelike displacement of interval $-3$. The boost is a hyperbolic rotation, the parameter $s$ is the half-rapidity, and the appearance of the double angle is the same factor of two as in the rotation case, there called the double cover.
 
 **Why the boosts are Hermitian and the rotations real.** The rotation rotors are the unit elements of the real sector $\mathbb{H}_{\mathbb{B}}$ and the boost rotors are the unit elements of the informational sector $\mathbb{M}_+$ whose scalar part is positive; together the two families generate the rotor group. The physical statement is that the two kinds of Lorentz transformation correspond to the two ways in which a unit-norm element can avoid the scalar imaginary: by having no $i$ at all, which is a rotation, or by carrying it in the vector part, which is a boost.
 
@@ -660,9 +662,9 @@ $$
 
 onto the identity component $SO^+(1,3)$ of the orthogonal group of the interval, with kernel $\{e_0, -e_0\}$, central of order two.
 
-**Proof.** A real-linear map of $\mathbb{M}_-$ preserving the quadratic form of signature $(3,1)$ is an element of $O(3,1)$; the action is continuous in $\tilde{\Lambda}$ and $SL(2,\mathbb{C})$ is connected, so the image is a connected subgroup of $O(3,1)$ and therefore lies in $SO^+(1,3)$. Surjectivity onto that component is the standard fact that $SL(2,\mathbb{C})$ is the double cover of the restricted Lorentz group, cited from the standard theory of the orthogonal groups. For the kernel, $\tilde{\Lambda}$ acts trivially precisely when $\tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*} = \tilde{Q}$ for every $\tilde{Q}$ in $\mathbb{M}_-$. Taking $\tilde{Q} = ie_0$ gives $\tilde{\Lambda}\tilde{\Lambda}^{*} = e_0$, that is, $\tilde{\Lambda}$ is unitary, and the condition then reads $\tilde{\Lambda}\tilde{Q} = \tilde{Q}\tilde{\Lambda}$ for every $\tilde{Q}$ in $\mathbb{M}_-$. The elements of $\mathbb{M}_-$ span $\mathbb{B}$ over $\mathbb{C}$, so $\tilde{\Lambda}$ commutes with every element of $\mathbb{B}$ and is therefore a central element $\lambda e_0$; the norm condition $N(\lambda e_0) = \lambda^2 = 1$ leaves $\lambda = \pm 1$. Both central elements act trivially and no other element does.
+**Proof.** A real-linear map of $\mathbb{M}_-$ preserving the quadratic form of signature $(3,1)$ is an element of $O(3,1)$; the action is continuous in $\tilde{U}$ and $SL(2,\mathbb{C})$ is connected, so the image is a connected subgroup of $O(3,1)$ and therefore lies in $SO^+(1,3)$. Surjectivity onto that component is the standard fact that $SL(2,\mathbb{C})$ is the double cover of the restricted Lorentz group, cited from the standard theory of the orthogonal groups. For the kernel, $\tilde{U}$ acts trivially precisely when $\tilde{U}\tilde{Q}\tilde{U}^{*} = \tilde{Q}$ for every $\tilde{Q}$ in $\mathbb{M}_-$. Taking $\tilde{Q} = ie_0$ gives $\tilde{U}\tilde{U}^{*} = e_0$, that is, $\tilde{U}$ is unitary, and the condition then reads $\tilde{U}\tilde{Q} = \tilde{Q}\tilde{U}$ for every $\tilde{Q}$ in $\mathbb{M}_-$. The elements of $\mathbb{M}_-$ span $\mathbb{B}$ over $\mathbb{C}$, so $\tilde{U}$ commutes with every element of $\mathbb{B}$ and is therefore a central element $\lambda e_0$; the norm condition $N(\lambda e_0) = \lambda^2 = 1$ leaves $\lambda = \pm 1$. Both central elements act trivially and no other element does.
 
-**The physical interpretation.** The rotor group is the covering group of the Lorentz group, the map $\mathrm{Ad}$ is two-to-one, and the two-element kernel is the statement that a physical Lorentz transformation corresponds to two rotors, $\tilde{\Lambda}$ and $-\tilde{\Lambda}$. The double cover is met in the spinor articles, where it is read on the module; here it is read as the two-sided action of the regular representation, that is, as the left copy composed with the right copy of the conjugate transpose. The corpus's account of the framework records that this rotor conjugation is the **only coupling** the framework supplies, and that it is kinematic: it is a symmetry of each of the two sectors and not a source, and no equation of motion for $\mathbb{M}_+$-valued fields is supplied with it.
+**The physical interpretation.** The rotor group is the covering group of the Lorentz group, the map $\mathrm{Ad}$ is two-to-one, and the two-element kernel is the statement that a physical Lorentz transformation corresponds to two rotors, $\tilde{U}$ and $-\tilde{U}$. The double cover is met in the spinor articles, where it is read on the module; here it is read as the two-sided action of the regular representation, that is, as the left copy composed with the right copy of the conjugate transpose. The corpus's account of the framework records that this rotor conjugation is the **only coupling** the framework supplies, and that it is kinematic: it is a symmetry of each of the two sectors and not a source, and no equation of motion for $\mathbb{M}_+$-valued fields is supplied with it.
 
 ## Physical Readings
 
@@ -672,9 +674,9 @@ The regular matrix reads as the algebra acting on itself, and its interpretation
 
 The left regular matrix $\mathsf{M}_4^{L}(\tilde{Q})$ is the left multiplication of the algebra on itself written in the basis $e_0, e_1, e_2, e_3$, and it is the Cayley matrix of quaternion multiplication, each entry of which is a single coefficient of $\tilde{Q}$ carrying a sign and none of which is a sum of coefficients. It is multiplicative, its transpose is the left matrix of the quaternion conjugate, $\mathsf{M}_4^{L}(\tilde{Q})^{\mathsf{T}} = \mathsf{M}_4^{L}(\tilde{Q}^{\natural})$, its determinant is the square of the biquaternion norm, $\det\mathsf{M}_4^{L}(\tilde{Q}) = N(\tilde{Q})^2$, and its trace is $4Q_0$. The right regular matrix $\mathsf{M}_4^{R}(\tilde{Q})$, whose $m$-th column is the column of $e_m\tilde{Q}$, is anti-multiplicative and is the regular representation of the opposite algebra; the naive identity $\mathsf{M}_4^{R}(\tilde{Q}) = \mathsf{M}_4^{L}(\tilde{Q})^{\mathsf{T}}$ is false — and the variant with $\tilde{Q}^{\natural}$ is the same statement, since $\mathsf{M}_4^{L}(\tilde{Q}^{\natural})^{\mathsf{T}} = \mathsf{M}_4^{L}(\tilde{Q})$ — while what holds is $\mathsf{M}_4^{R}(\tilde{Q}) = D\mathsf{M}_4^{L}(\tilde{Q})^{\mathsf{T}}D = D\mathsf{M}_4^{L}(\tilde{Q}^{\natural})D$ with $D = \operatorname{diag}(-1,1,1,1) = \eta$, the $ict$ metric.
 
-The regular module is $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$ with $\tilde\Pi_{1,2} = \tfrac12(e_0 \pm ie_3)$, the two chiralities; in the adapted basis $\tilde\Pi_1, e_1\tilde\Pi_1, \tilde\Pi_2, e_1\tilde\Pi_2$ the regular matrix is block diagonal with blocks $A_+$, $A_-$, each similar to $\mathsf{M}_4(\tilde{Q})$ and each a copy of the simple module $S$. So $\mathsf{M}_4^{L} \cong S \oplus S$, the characteristic polynomial is $(\lambda^2 - 2Q_0\lambda + N)^2$, and left multiplication cannot couple the two chiralities — which is why the mass term is a right multiplication by $\tilde\Upsilon_1 = \tfrac12(ie_1 - e_2)$. The centralizer of $\mathsf{M}_4^{L}(\mathbb{B})$ is $\mathsf{M}_4^{R}(\mathbb{B})$, of complex dimension four; over $\mathbb{R}$ the regular matrix is $8 \times 8$ with determinant $|N|^4$ and trace $8\operatorname{Re}(Q_0)$, hence traceless on a material four-vector.
+The regular module is $\mathbb{B} = \mathbb{B}\tilde\Pi_+ \oplus \mathbb{B}\tilde\Pi_-$ with $\tilde\Pi_\pm = \tfrac12(e_0 \pm ie_3)$, the two chiralities; in the adapted basis $\tilde\Pi_+, e_1\tilde\Pi_+, \tilde\Pi_-, e_1\tilde\Pi_-$ the regular matrix is block diagonal with blocks $A_+$, $A_-$, each similar to $\mathsf{M}_4(\tilde{Q})$ and each a copy of the simple module $S$. So $\mathsf{M}_4^{L} \cong S \oplus S$, the characteristic polynomial is $(\lambda^2 - 2Q_0\lambda + N)^2$, and left multiplication cannot couple the two chiralities — which is why the mass term is a right multiplication by $\tilde\Upsilon_1 = \tfrac12(ie_1 - e_2)$. The centralizer of $\mathsf{M}_4^{L}(\mathbb{B})$ is $\mathsf{M}_4^{R}(\mathbb{B})$, of complex dimension four; over $\mathbb{R}$ the regular matrix is $8 \times 8$ with determinant $|N|^4$ and trace $8\operatorname{Re}(Q_0)$, hence traceless on a material four-vector.
 
-Read on the material sector, the regular matrix of a four-vector is the matrix displayed in the first section, with trace $4iq'_0$ and determinant the square of the interval; the four-position has determinant $(-c^2t^2 + \mathbf{x}^2)^2$, the four-velocity $c^4$, the on-shell four-momentum $m^4c^4$, and the massless four-momentum zero. The gradient's regular matrix is the first-order $4 \times 4$ matrix whose chiral block has determinant $\Box$ and whose determinant is $\Box^2$. Finally, the rotor group $\{\tilde{\Lambda} : N(\tilde{\Lambda}) = e_0\} \cong SL(2,\mathbb{C})$ acts on $\mathbb{M}_-$ and $\mathbb{M}_+$ by $\tilde{Q} \mapsto \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$, which is $\mathsf{M}_4^{L}(\tilde{\Lambda})\mathsf{M}_4^{R}(\tilde{\Lambda}^{*})$ acting on the four-vector — the Lorentz transformation as left times right — preserving the interval, with rotation rotors the unit real quaternions, boost rotors the Hermitian unit elements, and the covering homomorphism $\mathrm{Ad}$ onto $SO^+(1,3)$ two-to-one with kernel $\{\pm e_0\}$.
+Read on the material sector, the regular matrix of a four-vector is the matrix displayed in the first section, with trace $4iq'_0$ and determinant the square of the interval; the four-position has determinant $(-c^2t^2 + \vec x^2)^2$, the four-velocity $c^4$, the on-shell four-momentum $m^4c^4$, and the massless four-momentum zero. The gradient's regular matrix is the first-order $4 \times 4$ matrix whose chiral block has determinant $\Box$ and whose determinant is $\Box^2$. Finally, the rotor group $\{\tilde{U} : N(\tilde{U}) = e_0\} \cong SL(2,\mathbb{C})$ acts on $\mathbb{M}_-$ and $\mathbb{M}_+$ by $\tilde{Q} \mapsto \tilde{U}\tilde{Q}\tilde{U}^{*}$, which is $\mathsf{M}_4^{L}(\tilde{U})\mathsf{M}_4^{R}(\tilde{U}^{*})$ acting on the four-vector — the Lorentz transformation as left times right — preserving the interval, with rotation rotors the unit real quaternions, boost rotors the Hermitian unit elements, and the covering homomorphism $\mathrm{Ad}$ onto $SO^+(1,3)$ two-to-one with kernel $\{\pm e_0\}$.
 
 ## Summary of Notation
 
@@ -693,25 +695,25 @@ Read on the material sector, the regular matrix of a four-vector is the matrix d
 | ${}^{\natural}, \bar{\cdot}, {}^{*} = {}^{\natural}\circ\bar{\cdot}, {}^{\flat} = -{}^{*}$ | Quaternion, complex, Hermitian, anti-Hermitian conjugation |
 | $\mathbb{C}_{\mathbb{B}}$ | Centre, the scalar subspace $\mathbb{C} e_0$; locus where $\mathsf{M}_4^{L} = \mathsf{M}_4^{R}$ |
 | $\mathbb{H}_{\mathbb{B}}, i\mathbb{H}_{\mathbb{B}}, \mathbb{M}_+, \mathbb{M}_-$ | Real sector, imaginary sector, informational sector, material sector |
-| $\tilde\Pi_1 = \tfrac12(e_0 + ie_3)$, $\tilde\Pi_2 = \tfrac12(e_0 - ie_3)$ | Orthogonal idempotents, $\tilde\Pi_1 + \tilde\Pi_2 = e_0$, $\tilde\Pi_1\tilde\Pi_2 = 0$ |
-| $\mathbb{B}\tilde\Pi_1$, $\mathbb{B}\tilde\Pi_2$ | The two minimal left ideals, i.e. the two chiralities; $\mathbb{B} = \mathbb{B}\tilde\Pi_1 \oplus \mathbb{B}\tilde\Pi_2$ |
+| $\tilde\Pi_+ = \tfrac12(e_0 + ie_3)$, $\tilde\Pi_- = \tfrac12(e_0 - ie_3)$ | Orthogonal idempotents, $\tilde\Pi_+ + \tilde\Pi_- = e_0$, $\tilde\Pi_+\tilde\Pi_- = 0$ |
+| $\mathbb{B}\tilde\Pi_+$, $\mathbb{B}\tilde\Pi_-$ | The two minimal left ideals, i.e. the two chiralities; $\mathbb{B} = \mathbb{B}\tilde\Pi_+ \oplus \mathbb{B}\tilde\Pi_-$ |
 | $A_+(\tilde{Q}), A_-(\tilde{Q})$ | The two $2 \times 2$ blocks of $\mathsf{M}_4^{L}$ in the adapted basis; $\operatorname{Tr} = 2Q_0$, $\det = N$ |
 | $u_+ = e_0 + e_3$, $u_- = e_1 + e_2$ | Conjugating elements, $A_\pm(\tilde{Q}) = \mathsf{M}_4(u_\pm)\mathsf{M}_4(\tilde{Q})\mathsf{M}_4(u_\pm)^{-1}$ |
-| $\tilde\Upsilon_1 = \tfrac12(ie_1 - e_2) \mapsto E_{12}$ | Truncated ladder element (the convention's $\tilde\Upsilon_1$); right multiplication carries $\mathbb{B}\tilde\Pi_1$ onto $\mathbb{B}\tilde\Pi_2$ |
+| $\tilde\Upsilon_1 = \tfrac12(ie_1 - e_2) \mapsto E_{12}$ | Truncated ladder element (the convention's $\tilde\Upsilon_1$); right multiplication carries $\mathbb{B}\tilde\Pi_+$ onto $\mathbb{B}\tilde\Pi_-$ |
 | $S = \mathbb{C}^2$ | Simple left $\mathbb{B}$-module, the spinor module; $\mathsf{M}_4^{L} \cong S \oplus S$ |
 | $\mathsf{M}_4(\tilde{Q})$ | The $2 \times 2$ matrix realization of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* |
 | $\{C : C\mathsf{M}_4^{L}(\tilde{R}) = \mathsf{M}_4^{L}(\tilde{R})C \ \forall \tilde{R}\} = \mathsf{M}_4^{R}(\mathbb{B})$ | The centralizer of the left copy in $M_4(\mathbb{C})$ is the right copy, of complex dimension $4$: the double centralizer statement |
 | $\mathsf{M}_4^{L,\mathbb{R}}(\tilde{Q})$ | Real $8 \times 8$ regular matrix; $\det = |N|^4$, $\operatorname{Tr} = 8\operatorname{Re}(Q_0)$ |
-| $q'_0, q_1, q_2, q_3$ | Real parameters of a material four-vector, $\tilde{Q} = iq'_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$, $\mathbf{q} = q_1e_1+q_2e_2+q_3e_3$; $q'_0 = ct$, $(q_1,q_2,q_3) = (x,y,z)$; $\operatorname{Tr}\mathsf{M}_4^{L} = 4iq'_0$, $\det\mathsf{M}_4^{L} = (-(q'_0)^2 + \mathbf{q}^2)^2$ |
+| $q'_0, q_1, q_2, q_3$ | Real parameters of a material four-vector, $\tilde{Q} = iq'_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$, $\vec q = q_1e_1+q_2e_2+q_3e_3$; $q'_0 = ct$, $(q_1,q_2,q_3) = (x,y,z)$; $\operatorname{Tr}\mathsf{M}_4^{L} = 4iq'_0$, $\det\mathsf{M}_4^{L} = (-(q'_0)^2 + \vec q^2)^2$ |
 | $\mathsf{M}_4^{L,\mathbb{R}}(\tilde{Q})$ for $\tilde{Q} \in \mathbb{M}_-$ | Traceless real $8 \times 8$ matrix; determinant the fourth power of the interval |
 | $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$ | Biquaternionic gradient; $\det A_+(\tilde{\nabla}) = \Box$, $\det\mathsf{M}_4^{L}(\tilde{\nabla}) = \Box^2$ |
 | $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \partial_{ict}^2 + \Delta$ | d'Alembertian, series convention |
 | $\eta = \operatorname{diag}(-1,+1,+1,+1)$ | $ict$ metric (level 2) |
-| $\tilde{\Lambda}$, $N(\tilde{\Lambda}) = e_0$ | Rotor; the rotor group $\cong SL(2,\mathbb{C})$ |
+| $\tilde{U}$, $N(\tilde{U}) = e_0$ | Rotor; the rotor group $\cong SL(2,\mathbb{C})$ |
 | $\tilde{R}(\theta,\hat n)$, $\tilde{B}(s,\hat n)$ | Rotation rotor (real, $\tilde{R}^{*} = \tilde{R}^{\natural}$) and boost rotor (Hermitian, $\tilde{B}^{*} = \tilde{B}$) |
 | $\mathrm{Ad} : SL(2,\mathbb{C}) \to SO^+(1,3)$ | Covering homomorphism, kernel $\{\pm e_0\}$ |
 | $c$ | Speed of light in the medium, $c = 1/\sqrt{\epsilon\mu}$ |
-| $ict$, $\mathbf{x}$; $ct'$, $i\mathbf{x}'$ | Material coordinate; informational coordinate |
+| $ict$, $\vec x$; $ct'$, $i\vec x'$ | Material coordinate; informational coordinate |
 
 ## Further Reading
 

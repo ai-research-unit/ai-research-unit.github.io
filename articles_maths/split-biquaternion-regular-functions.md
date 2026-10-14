@@ -55,13 +55,13 @@ The operator $\tilde{\nabla}$ is the first-order operator whose fundamental solu
 
 **Convention.** In this category **regular** without qualification means **left-regular**, $\tilde{\nabla}\tilde{F} = 0$; the operator inverted in the integral theory is the first-order operator $\tilde{\nabla}$, not $\Box$ and not $\tilde{\nabla}^2$.
 
-**Theorem (regularity system).** Writing $\tilde{F} = F_0 + \mathbf{F}$ with $\mathbf{F} = F_1e_1 + F_2e_2 + F_3e_3$, the function $\tilde{F}$ is left-regular if and only if
+**Theorem (regularity system).** Writing $\tilde{F} = F_0 + \vec F$ with $\vec F = F_1e_1 + F_2e_2 + F_3e_3$, the function $\tilde{F}$ is left-regular if and only if
 
 $$
-\partial_0 F_0 = \mathrm{div}\,\mathbf{F} , \qquad \partial_0\mathbf{F} + \mathrm{grad}\,F_0 + \mathrm{rot}\,\mathbf{F} = 0 ,
+\partial_0 F_0 = \mathrm{div}\,\vec F , \qquad \partial_0\vec F + \mathrm{grad}\,F_0 + \mathrm{rot}\,\vec F = 0 ,
 $$
 
-a system of four first-order equations coupling the scalar part $F_0$ to the vector part $\mathbf{F}$.
+a system of four first-order equations coupling the scalar part $F_0$ to the vector part $\vec F$.
 
 **Proof.** Expanding $\tilde{\nabla}\tilde{F} = \sum_\mu\sum_\nu (\partial_\mu F_\nu)e_\mu e_\nu$ and separating the scalar and vector parts of the quaternion product gives the displayed system, the same computation as for the quaternions (see *Split-Biquaternion Analysis*).
 

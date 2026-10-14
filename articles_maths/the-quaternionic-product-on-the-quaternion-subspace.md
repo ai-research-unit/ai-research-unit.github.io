@@ -6,7 +6,7 @@
 The product of this group is the **general quaternionic bilinear product**
 
 $$
-\tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q , \qquad \tilde P^{\natural} = P_0 - \mathbf P ,
+\tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q , \qquad \tilde P^{\natural} = P_0 - \vec P ,
 $$
 
 the second of the four general products of the biquaternion algebra $\mathbb{B}$ (*The Four General Products of the Biquaternion $\mathbb{C}$ Space* §*The General Quaternionic Bilinear Product*), whose algebra is *Introduction to the General Quaternionic Algebra of Biquaternions*. The preceding articles read the product over the whole algebra; this one reads it on the four-dimensional real subspace on which the whole batch becomes classical,
@@ -45,19 +45,19 @@ where $\bar h$ is the quaternion conjugate of $h$.
 
 Inside $\mathbb{H}_{\mathbb{B}}$ sit two smaller real subspaces, the real vector subspace $\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3$ and the real line $\mathbb{R}e_0$, and the product restricts to each in a way worth recording, because the restriction along the chain $\mathbb{R}e_0\subset\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3\subset\mathbb{H}_{\mathbb{B}}$ is what the vector part of the whole algebra sees.
 
-**The real vector subspace.** For real pure quaternions $\mathbf u,\mathbf v$, the natural conjugation is the negation, $\mathbf u^{\natural} = -\mathbf u$, so
+**The real vector subspace.** For real pure quaternions $\vec u,\vec v$, the natural conjugation is the negation, $\vec u^{\natural} = -\vec u$, so
 
 $$
-\mathbf u\star\mathbf v = \mathbf u^{\natural}\mathbf v = -\mathbf u\mathbf v = -(\mathbf u,\mathbf v)e_0+\mathbf u\times\mathbf v .
+\vec u\star\vec v = \vec u^{\natural}\vec v = -\vec u\vec v = -(\vec u,\vec v)e_0+\vec u\times\vec v .
 $$
 
-With the plain product written $\mathbf u\mathbf v = -(\mathbf u,\mathbf v)+\mathbf u\times\mathbf v$, this is the **negative of the plain product** of the two pure quaternions, and the two terms change sign together:
+With the plain product written $\vec u\vec v = -(\vec u,\vec v)+\vec u\times\vec v$, this is the **negative of the plain product** of the two pure quaternions, and the two terms change sign together:
 
 $$
-\mathbf u\star\mathbf v = (\mathbf u,\mathbf v)e_0-\mathbf u\times\mathbf v .
+\vec u\star\vec v = (\vec u,\vec v)e_0-\vec u\times\vec v .
 $$
 
-The value is the Euclidean dot product of the pair placed on the real line, minus the cross product; it is a real quaternion, so it stays inside $\mathbb{H}_{\mathbb{B}}$, but it does not stay inside the real vector subspace, because its scalar part $(\mathbf u,\mathbf v)$ is nonzero as soon as the two vectors are not orthogonal. The restriction is thus a map into the whole quaternion subspace, and the part of the value that returns to the real vector subspace is the pure part alone.
+The value is the Euclidean dot product of the pair placed on the real line, minus the cross product; it is a real quaternion, so it stays inside $\mathbb{H}_{\mathbb{B}}$, but it does not stay inside the real vector subspace, because its scalar part $(\vec u,\vec v)$ is nonzero as soon as the two vectors are not orthogonal. The restriction is thus a map into the whole quaternion subspace, and the part of the value that returns to the real vector subspace is the pure part alone.
 
 **The real line.** On $\mathbb{R}e_0$ the product is
 
@@ -67,7 +67,7 @@ $$
 
 the ordinary product of the real coordinates, and the real line is a two-sided subalgebra of the restricted algebra, with $e_0$ as its unit.
 
-**Remark (the sign contrast).** The middle restriction is the one that explains the sign contrasts of the batch: the plain product of two pure vectors is $-(\mathbf u,\mathbf v)+\mathbf u\times\mathbf v$, and reading the first slot through ${}^{\natural}$ multiplies by $-1$, so the restricted product is $+(\mathbf u,\mathbf v)e_0-\mathbf u\times\mathbf v$, with both terms negated. On the real line the sign is invisible, the two products agreeing there; on the real vector subspace it is visible in both terms.
+**Remark (the sign contrast).** The middle restriction is the one that explains the sign contrasts of the batch: the plain product of two pure vectors is $-(\vec u,\vec v)+\vec u\times\vec v$, and reading the first slot through ${}^{\natural}$ multiplies by $-1$, so the restricted product is $+(\vec u,\vec v)e_0-\vec u\times\vec v$, with both terms negated. On the real line the sign is invisible, the two products agreeing there; on the real vector subspace it is visible in both terms.
 
 ## The Failure of Associativity on the Subspace
 
@@ -154,7 +154,7 @@ The quaternion subspace $\mathbb{H}_{\mathbb{B}}$, of real dimension four, is th
 | $\mathbb{H}_{\mathbb{B}}$ | the quaternion subspace $\mathbb{R}e_0+\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3$ |
 | $h = h_0+h_1e_1+h_2e_2+h_3e_3$ | a real quaternion, all four coefficients real |
 | $\bar h = h_0-h_1e_1-h_2e_2-h_3e_3$ | the quaternion conjugate, the restriction of ${}^{\natural}$ |
-| ${}^{\natural}$ | the natural conjugation $\tilde P^{\natural} = P_0-\mathbf P$ |
+| ${}^{\natural}$ | the natural conjugation $\tilde P^{\natural} = P_0-\vec P$ |
 | $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q$ | the general quaternionic bilinear product, the multiplication of this group |
 | $h\bullet g = \tfrac12(\bar hg+\bar gh)$ | the symmetrisation of the restricted product, the definite inner product of the subspace |
 | $\tilde P\tilde Q$ | the plain (associative) product of the algebra |

@@ -6,13 +6,13 @@ The symmetric quaternionic block is the place where a form and a product are the
 
 **Boundaries.** The product and its scalar law are *Introduction to the Symmetric Quaternionic Algebra of Quaternions*; the two forms of the space, with their signatures and their reciprocal relation under the conjugation, are *The 2 Forms over the Quaternion $\mathbb{R}$ Space*; the norm and the invertibility criterion of the plain product are *Norm and Invertibility in the General Plain Algebra*; the zero divisors and the isotropic elements are *Zero Divisors of the Symmetric Quaternionic Algebra* and *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*, above this article in this category.
 
-**Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$; an element is $\tilde q=q_0e_0+\mathbf q$ with $\mathbf q=\sum_kq_ke_k$. The **quaternion conjugation** is $\tilde q^{\natural}=q_0e_0-\mathbf q$; the bar is the identity, the star coincides with the natural sign ${}^{\natural}$. The **quaternion form** is
+**Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$; an element is $\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_kq_ke_k$. The **quaternion conjugation** is $\tilde q^{\natural}=q_0e_0-\vec q$; the bar is the identity, the star coincides with the natural sign ${}^{\natural}$. The **quaternion form** is
 
 $$
-N(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q=\mathrm{Sc}\bigl(\tilde p^{\natural}\tilde q\bigr),
+N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q=\mathrm{Sc}\bigl(\tilde p^{\natural}\tilde q\bigr),
 $$
 
-the **plain form** is $B(\tilde p,\tilde q)=p_0q_0-\mathbf p\cdot\mathbf q=\mathrm{Sc}(\tilde p\tilde q)$, and the **symmetric quaternionic product** is $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$.
+the **plain form** is $B(\tilde p,\tilde q)=p_0q_0-\vec p\cdot\vec q=\mathrm{Sc}(\tilde p\tilde q)$, and the **symmetric quaternionic product** is $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$.
 
 ## The Form Read as a Product
 
@@ -108,15 +108,15 @@ and the product is recovered from the form by $\tilde p\star\tilde q=N(\tilde p,
 
 ## Summary
 
-The symmetric quaternionic block is the form $N(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q$ read on the scalar line, $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$, and the form is the scalar part of the product. Its Gram matrix in the basis is the identity $I_4$, so it is non-degenerate of rank $4$ with radical $\{0\}$; its quadratic form is $N(\tilde x)=x_0^{2}+|\mathbf x|^{2}$, positive definite of signature $(4,0)$ and inertia $(4,0,0)$, anisotropic, with the inequality $N(\tilde p,\tilde q)^{2}\leq N(\tilde p)N(\tilde q)$. The form determines the product and the product determines the form, through the scalar part and the polarisation.
+The symmetric quaternionic block is the form $N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$ read on the scalar line, $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$, and the form is the scalar part of the product. Its Gram matrix in the basis is the identity $I_4$, so it is non-degenerate of rank $4$ with radical $\{0\}$; its quadratic form is $N(\tilde x)=x_0^{2}+|\vec x|^{2}$, positive definite of signature $(4,0)$ and inertia $(4,0,0)$, anisotropic, with the inequality $N(\tilde p,\tilde q)^{2}\leq N(\tilde p)N(\tilde q)$. The form determines the product and the product determines the form, through the scalar part and the polarisation.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
-| $N(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q=\mathrm{Sc}(\tilde p^{\natural}\tilde q)$ | the quaternion form, the coefficient of the product |
-| $B(\tilde p,\tilde q)=p_0q_0-\mathbf p\cdot\mathbf q=\mathrm{Sc}(\tilde p\tilde q)$ | the plain form, indefinite of signature $(1,3)$ |
-| $N(\tilde x)=x_0^{2}+|\mathbf x|^{2}$ | the quadratic form, positive definite of signature $(4,0)$ |
+| $N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q=\mathrm{Sc}(\tilde p^{\natural}\tilde q)$ | the quaternion form, the coefficient of the product |
+| $B(\tilde p,\tilde q)=p_0q_0-\vec p\cdot\vec q=\mathrm{Sc}(\tilde p\tilde q)$ | the plain form, indefinite of signature $(1,3)$ |
+| $N(\tilde x)=x_0^{2}+|\vec x|^{2}$ | the quadratic form, positive definite of signature $(4,0)$ |
 | $I_4$ | the Gram matrix $N(e_\mu,e_\nu)=\delta_{\mu\nu}$ |
 | $\operatorname{rad}(N)=\{0\}$ | the radical of the non-degenerate form |
 | $2N(\tilde p,\tilde q)=N(\tilde p+\tilde q)-N(\tilde p)-N(\tilde q)$ | the polarisation |

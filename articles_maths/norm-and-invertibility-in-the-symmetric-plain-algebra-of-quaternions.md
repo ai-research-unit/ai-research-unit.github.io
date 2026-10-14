@@ -5,7 +5,7 @@
 The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde p\bullet\tilde q=\tfrac12(\tilde p\tilde q+\tilde q\tilde p)$ of *Introduction to the Symmetric Plain Algebra of Quaternions*, and a degree-two Jordan algebra carries a norm with it. This article reads the **norm** of the block,
 
 $$
-N(\tilde q)=\tilde q\,\tilde q^{\natural}=q_0^2+|\mathbf q|^2,
+N(\tilde q)=\tilde q\,\tilde q^{\natural}=q_0^2+|\vec q|^2,
 $$
 
 its polarisation, the quadratic identity that links it to the trace, the **Jordan inverse** and the criterion for the invertibility of an element, the failure of the invertible elements to form a group, the three-way classification of the elements, and the comparison with the plain algebra of the same space.
@@ -14,7 +14,7 @@ its polarisation, the quadratic identity that links it to the trace, the **Jorda
 
 The norm and the criterion for the invertibility of the block are the same objects as those of the plain algebra, because the norm is read off the plain product and the unit; they are *Norm and Invertibility in the General Plain Algebra* for the plain product, and what this article adds is the reading of them on the Jordan product, where the inverse is the Jordan inverse and where the invertible elements do **not** form a group. The trace form, the other form of the block, is *The Trace Form and the Invariance of the Symmetric Plain Algebra*; the square and the quadratic representation are *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*.
 
-**Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$, so that $e_1^2=e_2^2=e_3^2=-e_0$. A generic element is $\tilde q=q_0e_0+\mathbf q$ with $\mathbf q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; $\mathbf p\cdot\mathbf q=\sum_kp_kq_k$ and $|\mathbf q|^2=\mathbf q\cdot\mathbf q$. The plain product, the quaternion norm, the unit group and the division property are those of *Introduction to the General Plain Algebra of Quaternions* and *Norm and Invertibility in the General Plain Algebra*.
+**Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$, so that $e_1^2=e_2^2=e_3^2=-e_0$. A generic element is $\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; $\vec p\cdot\vec q=\sum_kp_kq_k$ and $|\vec q|^2=\vec q\cdot\vec q$. The plain product, the quaternion norm, the unit group and the division property are those of *Introduction to the General Plain Algebra of Quaternions* and *Norm and Invertibility in the General Plain Algebra*.
 
 ## The Norm of the Block
 
@@ -23,7 +23,7 @@ The norm and the criterion for the invertibility of the block are the same objec
 **Definition.** The **norm** of the block is the quadratic map
 
 $$
-N(\tilde q)=\tilde q\,\tilde q^{\natural}=\tilde q^{\natural}\tilde q=q_0^2+|\mathbf q|^2 .
+N(\tilde q)=\tilde q\,\tilde q^{\natural}=\tilde q^{\natural}\tilde q=q_0^2+|\vec q|^2 .
 $$
 
 It is the **algebraic norm** of the ambient algebra, read as the norm of the Jordan algebra. It agrees with the square of the Euclidean modulus, $N(\tilde q)=|\tilde q|^2$, and it is the generic norm of the degree-two Jordan algebra $\mathbb{H}^{\bullet}$.
@@ -34,16 +34,16 @@ $$
 N(\tilde q)\geq 0,\qquad N(\tilde q)=0\iff\tilde q=0,\qquad N(\tilde p\tilde q)=N(\tilde p)N(\tilde q).
 $$
 
-*Proof.* $N(\tilde q)=q_0^2+|\mathbf q|^2$ is a sum of squares of real numbers, so it is non-negative and vanishes only when all the coordinates vanish; multiplicativity is the identity $(\tilde p\tilde q)(\tilde p\tilde q)^{\natural}=\tilde p\tilde q\tilde q^{\natural}\tilde p^{\natural}=\tilde p N(\tilde q)\tilde p^{\natural}=N(\tilde p)N(\tilde q)$ of the plain algebra, quoted from *Norm and Invertibility in the General Plain Algebra*.
+*Proof.* $N(\tilde q)=q_0^2+|\vec q|^2$ is a sum of squares of real numbers, so it is non-negative and vanishes only when all the coordinates vanish; multiplicativity is the identity $(\tilde p\tilde q)(\tilde p\tilde q)^{\natural}=\tilde p\tilde q\tilde q^{\natural}\tilde p^{\natural}=\tilde p N(\tilde q)\tilde p^{\natural}=N(\tilde p)N(\tilde q)$ of the plain algebra, quoted from *Norm and Invertibility in the General Plain Algebra*.
 
-The norm is **positive definite where the trace form is indefinite**. The trace form $\tau(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\bullet\tilde q)=p_0q_0-\mathbf p\cdot\mathbf q$ has signature $(1,3)$ and an isotropic cone; the norm has signature $(4,0)$ and no isotropic element but the origin. The two are different forms of the block, and the definiteness of the norm is the definite property of the block, whose underlying product is not formally real, as *The Specificities of the Symmetric Plain Algebra*, below this article in this category states and reconciles.
+The norm is **positive definite where the trace form is indefinite**. The trace form $\tau(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\bullet\tilde q)=p_0q_0-\vec p\cdot\vec q$ has signature $(1,3)$ and an isotropic cone; the norm has signature $(4,0)$ and no isotropic element but the origin. The two are different forms of the block, and the definiteness of the norm is the definite property of the block, whose underlying product is not formally real, as *The Specificities of the Symmetric Plain Algebra*, below this article in this category states and reconciles.
 
 ### The Polarisation
 
 **Definition.** The **polarisation** of the norm is the symmetric bilinear form
 
 $$
-N(\tilde p,\tilde q)=\tfrac12\bigl(N(\tilde p+\tilde q)-N(\tilde p)-N(\tilde q)\bigr)=p_0q_0+\mathbf p\cdot\mathbf q .
+N(\tilde p,\tilde q)=\tfrac12\bigl(N(\tilde p+\tilde q)-N(\tilde p)-N(\tilde q)\bigr)=p_0q_0+\vec p\cdot\vec q .
 $$
 
 It is the **quaternion form** $\mathrm{Sc}(\tilde p^{\natural}\tilde q)$ of *The 2 Forms over the Quaternion $\mathbb{R}$ Space*, of Gram matrix $\mathrm{I}_4$ and signature $(4,0)$, positive definite.
@@ -52,7 +52,7 @@ It is the **quaternion form** $\mathrm{Sc}(\tilde p^{\natural}\tilde q)$ of *The
 
 *Proof.* Setting $\tilde p=\tilde q$ in the polarisation gives $N(\tilde q,\tilde q)=\tfrac12(4N(\tilde q)-2N(\tilde q))=N(\tilde q)$; the Gram matrix $\mathrm{I}_4$ is invertible.
 
-**Remark (the norm is not the quadratic trace of the block).** The quadratic trace of the block is $\mathrm{Sc}(\tilde q\bullet\tilde q)=\mathrm{Sc}(\tilde q^2)=q_0^2-|\mathbf q|^2$, an indefinite quadratic form, whose polarisation is the trace form $\tau$. The norm $N$ and the quadratic trace differ in the sign of the vector part, and their polarisations are the two forms of the block: **the norm polarises to the quaternion form and the quadratic trace polarises to the trace form**.
+**Remark (the norm is not the quadratic trace of the block).** The quadratic trace of the block is $\mathrm{Sc}(\tilde q\bullet\tilde q)=\mathrm{Sc}(\tilde q^2)=q_0^2-|\vec q|^2$, an indefinite quadratic form, whose polarisation is the trace form $\tau$. The norm $N$ and the quadratic trace differ in the sign of the vector part, and their polarisations are the two forms of the block: **the norm polarises to the quaternion form and the quadratic trace polarises to the trace form**.
 
 ### The Quadratic Identity
 
@@ -70,7 +70,7 @@ $$
 \tilde q^2-2q_0\tilde q+N(\tilde q)e_0=0 .
 $$
 
-*Proof.* With $\tilde q^{\bullet2}=\tilde q^2=(q_0^2-|\mathbf q|^2)e_0+2q_0\mathbf q$, the left-hand side is $\bigl[(q_0^2-|\mathbf q|^2)-2q_0^2+(q_0^2+|\mathbf q|^2)\bigr]e_0+(2q_0\mathbf q-2q_0\mathbf q)=0$.
+*Proof.* With $\tilde q^{\bullet2}=\tilde q^2=(q_0^2-|\vec q|^2)e_0+2q_0\vec q$, the left-hand side is $\bigl[(q_0^2-|\vec q|^2)-2q_0^2+(q_0^2+|\vec q|^2)\bigr]e_0+(2q_0\vec q-2q_0\vec q)=0$.
 
 The two coefficients $T$ and $N$ are the only degree-one and degree-two symmetric functions of the element that the block distinguishes, and the identity is the characteristic identity of the ambient degree-two algebra read on the Jordan product. It is the engine of the Jordan inverse below.
 
@@ -140,7 +140,7 @@ The norm and the invertibility split the nonzero elements into two kinds, and wi
 | a nonzero pure element | $e_1$ | $>0$ | $-e_1$ | yes |
 | a non-pure element | $e_0$ | $>0$ | $e_0$ | no |
 
-*Proof.* The norm is positive definite, so the origin is the only element of norm zero, and it is the only non-invertible element. A nonzero element $\tilde q=q_0e_0+\mathbf q$ is a **zero divisor** exactly when $q_0=0$, that is, exactly when it is pure, by *Zero Divisors of the Symmetric Plain Algebra*; a nonzero pure element is therefore invertible **and** a zero divisor, while a non-pure element is invertible and not a zero divisor.
+*Proof.* The norm is positive definite, so the origin is the only element of norm zero, and it is the only non-invertible element. A nonzero element $\tilde q=q_0e_0+\vec q$ is a **zero divisor** exactly when $q_0=0$, that is, exactly when it is pure, by *Zero Divisors of the Symmetric Plain Algebra*; a nonzero pure element is therefore invertible **and** a zero divisor, while a non-pure element is invertible and not a zero divisor.
 
 **Corollary.** In the block, invertibility and non-division are different properties: **every nonzero element is invertible, and yet the nonzero pure elements are zero divisors.** The two properties separate the nonzero elements into the two kinds of the table.
 
@@ -155,20 +155,20 @@ The two algebras of the same space are read side by side.
 | invertible set | the group $\mathbb{H}^{\times}$ | the nonzero elements, not a group |
 | zero divisors | none | the nonzero pure elements |
 | nilpotents | none | none |
-| norm | $N(\tilde q)=q_0^2+\lvert\mathbf q\rvert^2$, multiplicative | the same, and the generic norm of the block |
+| norm | $N(\tilde q)=q_0^2+\lvert\vec q\rvert^2$, multiplicative | the same, and the generic norm of the block |
 
 **Remark (what the change of product changes).** The norm, the inverse and the criterion are shared, because they are read off the plain product and the unit; what the Jordan product changes is the **closure** of the invertible set, hence the existence of zero divisors. The plain algebra is a division algebra and has no zero divisor; the block is a degree-two Jordan algebra with the same invertible elements and a family of zero divisors, because a product in it can pair an element with its conjugate direction and collapse.
 
 ## Summary
 
-The norm of the block is $N(\tilde q)=\tilde q\tilde q^{\natural}=q_0^2+|\mathbf q|^2$, positive definite and multiplicative for the plain product, polarising to the quaternion form $N(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q$ of signature $(4,0)$; its companion is the trace form $p_0q_0-\mathbf p\cdot\mathbf q$ of signature $(1,3)$, the polarisation of the quadratic trace. The generic trace is $T(\tilde q)=2q_0$, the quadratic identity is $\tilde q^2-T(\tilde q)\tilde q+N(\tilde q)e_0=0$, and an element is invertible if and only if $N(\tilde q)\neq0$, that is, if and only if $\tilde q\neq0$, with Jordan inverse $\tilde q^{-1}=(T(\tilde q)e_0-\tilde q)/N(\tilde q)=\tilde q^{\natural}/N(\tilde q)$. The invertible elements are therefore all the nonzero elements, but they do not form a group: $e_1,e_2$ are invertible and $e_1\bullet e_2=0$ is not. The three classes are the origin, the nonzero pure elements, which are invertible and are the zero divisors, and the non-pure elements, which are invertible and are not; invertibility and division are different properties in the block, where in the plain algebra they coincide.
+The norm of the block is $N(\tilde q)=\tilde q\tilde q^{\natural}=q_0^2+|\vec q|^2$, positive definite and multiplicative for the plain product, polarising to the quaternion form $N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$ of signature $(4,0)$; its companion is the trace form $p_0q_0-\vec p\cdot\vec q$ of signature $(1,3)$, the polarisation of the quadratic trace. The generic trace is $T(\tilde q)=2q_0$, the quadratic identity is $\tilde q^2-T(\tilde q)\tilde q+N(\tilde q)e_0=0$, and an element is invertible if and only if $N(\tilde q)\neq0$, that is, if and only if $\tilde q\neq0$, with Jordan inverse $\tilde q^{-1}=(T(\tilde q)e_0-\tilde q)/N(\tilde q)=\tilde q^{\natural}/N(\tilde q)$. The invertible elements are therefore all the nonzero elements, but they do not form a group: $e_1,e_2$ are invertible and $e_1\bullet e_2=0$ is not. The three classes are the origin, the nonzero pure elements, which are invertible and are the zero divisors, and the non-pure elements, which are invertible and are not; invertibility and division are different properties in the block, where in the plain algebra they coincide.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $N(\tilde q)=\tilde q\tilde q^{\natural}=q_0^2+\lvert\mathbf q\rvert^2$ | the norm of the block, the quaternion norm |
-| $N(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q$ | the polarisation of the norm, the quaternion form |
+| $N(\tilde q)=\tilde q\tilde q^{\natural}=q_0^2+\lvert\vec q\rvert^2$ | the norm of the block, the quaternion norm |
+| $N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$ | the polarisation of the norm, the quaternion form |
 | $T(\tilde q)=2q_0$ | the generic trace |
 | $\tilde q^2-T(\tilde q)\tilde q+N(\tilde q)e_0=0$ | the quadratic identity |
 | $\tilde q^{-1}=(T(\tilde q)e_0-\tilde q)/N(\tilde q)=\tilde q^{\natural}/N(\tilde q)$ | the Jordan inverse |

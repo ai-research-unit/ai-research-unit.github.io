@@ -16,7 +16,7 @@ the annihilator is the kernel of that operator, so it is a linear subspace.
 The block of this article is the **general quaternionic multiplication**
 $$
 \tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q
-=\bigl[P_0Q_0+(\mathbf P,\mathbf Q)\bigr]+P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q,
+=\bigl[P_0Q_0+(\vec P,\vec Q)\bigr]+P_0\vec Q-Q_0\vec P-\vec P\times\vec Q,
 $$
 the product of the natural conjugate of the first factor with the second (*Introduction to the
 General Quaternionic Algebra of Biquaternions*). It is neither commutative nor alternating, and yet
@@ -82,7 +82,7 @@ annihilators are generally distinct.
 **The operator $L_{\tilde P}$ has trace $4P_0$ and determinant $C(\tilde P)^{2}$ with $C(\tilde P)=\sum_\mu P_\mu^{2}$; it is invertible with trivial kernel when $C(\tilde P)\neq0$, and of rank two with kernel of complex dimension two when $\tilde P\neq0$ and $C(\tilde P)=0$.**
 
 **Proposition (the operator and its determinant).** In the basis $e_0,e_1,e_2,e_3$ the operator
-$L_{\tilde P}$ of an element $\tilde P=P_0e_0+\mathbf P$ has the matrix of multiplication by
+$L_{\tilde P}$ of an element $\tilde P=P_0e_0+\vec P$ has the matrix of multiplication by
 $\tilde P^{\natural}$, of trace $4P_0$ and determinant
 $$
 \det L_{\tilde P}=C(\tilde P)^{2},\qquad C(\tilde P)=\sum_{\mu=0}^{3}P_\mu^{2}.
@@ -126,7 +126,7 @@ multiplication by $\tilde Q^{\natural}$, of rank two on the cone; and
 $\tilde Q^{\natural}\tilde Q=C(\tilde Q)e_0=0$, so $\tilde Q$ lies in the annihilator.
 
 **Example.** For the pure zero divisor $\tilde Q=e_1+ie_2$, whose vector part has
-$(\mathbf Q,\mathbf Q)=1-1=0$, the common annihilator is
+$(\vec Q,\vec Q)=1-1=0$, the common annihilator is
 $$
 A_\star(e_1+ie_2)=\mathbb{C}\{e_1+ie_2,\ e_3-ie_0\},
 $$
@@ -157,10 +157,10 @@ than a plane on a cone. The annihilator is the invariant that separates the thre
 $L_{\lambda e_0}\tilde X=\lambda\tilde X$, the scalar operator, so it is a unit of the plain
 product and its annihilator is $\{0\}$.
 
-**The vector subspace.** A nonzero pure element $\tilde P=\mathbf P$ has
-$L_{\mathbf P}\tilde X=-\mathbf P\tilde X$ and $C(\tilde P)=(\mathbf P,\mathbf P)$; its annihilator
+**The vector subspace.** A nonzero pure element $\tilde P=\vec P$ has
+$L_{\vec P}\tilde X=-\vec P\tilde X$ and $C(\tilde P)=(\vec P,\vec P)$; its annihilator
 is $\{0\}$ unless the vector part is isotropic, and on the isotropic locus it is the complex plane
-of the elements the pure quaternion $\mathbf P$ kills by left multiplication.
+of the elements the pure quaternion $\vec P$ kills by left multiplication.
 
 **The Hermitian and anti-Hermitian subspaces.** On the Hermitian subspace the natural conjugation
 is the coefficientwise conjugation of the vector part, and the annihilator of a nonzero Hermitian

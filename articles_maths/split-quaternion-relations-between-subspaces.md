@@ -115,10 +115,10 @@ $S$ is the centre, so it acts on every subspace by scalar multiplication: $S \cd
 The product of two vectors is not a vector: it splits as
 
 $$
-\mathbf{u}\mathbf{v} = -B(\mathbf{u},\mathbf{v})\cdot 1 + \tfrac{1}{2}[\mathbf{u},\mathbf{v}],
+\vec u\vec v = -B(\vec u,\vec v)\cdot 1 + \tfrac{1}{2}[\vec u,\vec v],
 $$
 
-with scalar part $-B(\mathbf{u},\mathbf{v}) \in S$ and the remainder $\tfrac{1}{2}[\mathbf{u},\mathbf{v}] \in V$; so $V \cdot V \subseteq S \oplus V = \mathbb{H}_{\mathrm{s}}$, with equality. The commutator stays in $V$, and in the basis $e_1, e_2, e_3$,
+with scalar part $-B(\vec u,\vec v) \in S$ and the remainder $\tfrac{1}{2}[\vec u,\vec v] \in V$; so $V \cdot V \subseteq S \oplus V = \mathbb{H}_{\mathrm{s}}$, with equality. The commutator stays in $V$, and in the basis $e_1, e_2, e_3$,
 
 $$
 [e_1,e_2] = 2 e_3, \qquad [e_2,e_3] = -2 e_1, \qquad [e_3,e_1] = 2 e_2,

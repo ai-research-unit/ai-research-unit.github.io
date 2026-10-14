@@ -27,10 +27,10 @@ The title covers the relativistic case as the framework's algebraic structures r
 The framework's four-potential is the material-sector object
 
 $$
-\tilde A = \frac{i\phi}{c}\,e_0 + \mathbf{A} \in \mathbb{M}_-,
+\tilde A = \frac{i\phi}{c}\,e_0 + \vec A \in \mathbb{M}_-,
 $$
 
-and a static point nucleus is the special case $\mathbf{A} = 0$ with $\phi = Ze/(4\pi\epsilon_0 r)$, so that the potential energy of a charge $q$ in it is $q\phi = -\kappa/r$ for the electron. Two honest remarks, both inherited from the non-relativistic article, belong here. First, the $1/r$ form is **input**: the companion Maxwell article produces the field of a point charge as an imaginary vector in $\mathbb{M}_+$, but the point-charge source is supplied, not derived. Second, the framework does not supply the value of $\kappa$ or of the dimensionless coupling
+and a static point nucleus is the special case $\vec A = 0$ with $\phi = Ze/(4\pi\epsilon_0 r)$, so that the potential energy of a charge $q$ in it is $q\phi = -\kappa/r$ for the electron. Two honest remarks, both inherited from the non-relativistic article, belong here. First, the $1/r$ form is **input**: the companion Maxwell article produces the field of a point charge as an imaginary vector in $\mathbb{M}_+$, but the point-charge source is supplied, not derived. Second, the framework does not supply the value of $\kappa$ or of the dimensionless coupling
 
 $$
 \alpha = \frac{e^2}{4\pi\epsilon_0\hbar c}, \qquad \kappa = Z\alpha\,\hbar c,
@@ -40,10 +40,10 @@ which enters the spectrum as a parameter.
 
 ### The module transcription
 
-The framework's states are spinors in the minimal left ideal $\mathbb{B}\tilde P \cong \mathbb{C}^2$, and a position-space treatment extends this to a spinor field $\psi(t,\mathbf{x}) \in \mathbb{B}\tilde P \cong \mathbb{C}^2$ whose argument carries the position dependence. In this transcription the Dirac–Coulomb problem is the standard one,
+The framework's states are spinors in the minimal left ideal $\mathbb{B}\tilde P \cong \mathbb{C}^2$, and a position-space treatment extends this to a spinor field $\psi(t,\vec x) \in \mathbb{B}\tilde P \cong \mathbb{C}^2$ whose argument carries the position dependence. In this transcription the Dirac–Coulomb problem is the standard one,
 
 $$
-i\hbar\,\partial_t\psi = \Bigl[\,c\,\boldsymbol\alpha\cdot\hat{\mathbf p} + \beta mc^2 + V(r)\,\Bigr]\psi,
+i\hbar\,\partial_t\psi = \Bigl[\,c\,\boldsymbol\alpha\cdot\hat p + \beta mc^2 + V(r)\,\Bigr]\psi,
 \qquad \boldsymbol\alpha^k = \gamma^0\gamma^k, \quad \beta = \gamma^0,
 $$
 
@@ -64,17 +64,17 @@ In the non-relativistic problem the Hamiltonian is a scalar multiple of the iden
 At relative order $c^{-2}$ the elimination of the small component produces the effective large-component Hamiltonian
 
 $$
-\hat H = \frac{\boldsymbol\pi^2}{2m} + q\mathsf{M}_2 - \frac{q\hbar}{2m}\,\boldsymbol\sigma\cdot\mathbf B
-- \frac{\boldsymbol\pi^4}{8m^3c^2}
+\hat H = \frac{\vec\pi^2}{2m} + q\mathsf{M}_2 - \frac{q\hbar}{2m}\,\boldsymbol\sigma\cdot\vec B
+- \frac{\vec\pi^4}{8m^3c^2}
 + \frac{\hbar^2}{8m^2c^2}\nabla^2V
-- \frac{q\hbar}{4m^2c^2}\,\boldsymbol\sigma\cdot(\mathbf E\times\boldsymbol\pi),
+- \frac{q\hbar}{4m^2c^2}\,\boldsymbol\sigma\cdot(\vec E\times\vec\pi),
 $$
 
 whose last three terms are the relativistic kinetic correction, the Darwin term, and the spin–orbit coupling. It is derived in the companion exercise on the Pauli equation, which checks the coefficients against the exact spectrum; it is quoted here only for its structure. The **spin–orbit** term is the one that changes the character of the Hamiltonian. For a central potential it reads
 
 $$
--\frac{q\hbar}{4m^2c^2}\,\boldsymbol\sigma\cdot(\mathbf E\times\boldsymbol\pi)
-= \frac{1}{2m^2c^2}\frac{1}{r}\frac{dV}{dr}\,\mathbf L\cdot\mathbf S ,
+-\frac{q\hbar}{4m^2c^2}\,\boldsymbol\sigma\cdot(\vec E\times\vec\pi)
+= \frac{1}{2m^2c^2}\frac{1}{r}\frac{dV}{dr}\,\vec L\cdot\vec S ,
 $$
 
 and in the framework's operators the scalar coupling is
@@ -220,7 +220,7 @@ $$
 
 which vanishes only at $m = 0$, while the vector current is conserved for the massive field; this was verified numerically in the Noether article on a superposition of two on-shell plane waves (axial ratio $1.000000$, vector divergence $5.3\times10^{-10}$, both currents conserved at $m = 0$).
 
-The consequences should be stated plainly. The Coulomb potential can be inserted into the algebra-level equation $D\tilde\Psi_R = m\tilde\Psi_L$, $\bar{D}\tilde\Psi_L = m\tilde\Psi_R$ by the standard minimal coupling, and the central phase passes through the mass term; the charge is carried by the massive sector. The precise algebra-level transcription of the electromagnetic coupling — the biquaternion form of $\hat{\mathbf p} \to \hat{\mathbf p} - q\mathbf A$ and $i\hbar\partial_t \to i\hbar\partial_t - q\mathsf{M}_2$ — is set out in the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, which derives the coupled equation and proves it gauge covariant. What the corpus does not supply is the radial Dirac–Coulomb solution inside the algebra. Until it is supplied, the relativistic hydrogen atom in biquaternionic form is a transcription of the standard solution into the framework's algebra, not a derivation from the framework's own field equation.
+The consequences should be stated plainly. The Coulomb potential can be inserted into the algebra-level equation $D\tilde\Psi_R = m\tilde\Psi_L$, $\bar{D}\tilde\Psi_L = m\tilde\Psi_R$ by the standard minimal coupling, and the central phase passes through the mass term; the charge is carried by the massive sector. The precise algebra-level transcription of the electromagnetic coupling — the biquaternion form of $\hat p \to \hat p - q\vec A$ and $i\hbar\partial_t \to i\hbar\partial_t - q\mathsf{M}_2$ — is set out in the companion article *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, which derives the coupled equation and proves it gauge covariant. What the corpus does not supply is the radial Dirac–Coulomb solution inside the algebra. Until it is supplied, the relativistic hydrogen atom in biquaternionic form is a transcription of the standard solution into the framework's algebra, not a derivation from the framework's own field equation.
 
 ## What the Framework Supplies and What It Does Not
 
@@ -289,7 +289,7 @@ One gap is load-bearing and is left visible. The corpus's biquaternion Dirac equ
 | $\tilde\nabla = e_0\partial_{ict} + e_k\partial_k$ | Biquaternionic gradient (Dirac operator) |
 | $\Box = \tilde\nabla\tilde\nabla^{\natural} = \tilde\nabla^{\natural}\tilde\nabla$ | d'Alembertian |
 | $\tilde\Psi$, $\tilde\Psi^\flat = -\tilde\Psi^{*}$ | Biquaternion Dirac field and anti-Hermitian conjugate (the algebra's real structure; not the mass term) |
-| $\tilde A = i\phi/c\,e_0 + \mathbf{A} \in \mathbb{M}_-$ | Electromagnetic four-potential |
+| $\tilde A = i\phi/c\,e_0 + \vec A \in \mathbb{M}_-$ | Electromagnetic four-potential |
 | $V(r) = q\phi = -\kappa/r$ | Coulomb potential energy |
 | $\kappa = Ze^2/(4\pi\epsilon_0) = Z\alpha\,\hbar c$ | Coulomb coupling |
 | $\alpha = e^2/(4\pi\epsilon_0\hbar c)$ | Fine-structure constant |

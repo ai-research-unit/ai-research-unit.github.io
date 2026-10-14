@@ -47,7 +47,7 @@ so that $\mathbb{M}_+$ is the set of Hermitian elements, $\mathbb{M}_-$ the set 
 
 **Theorem.** There are no $\tilde{Q},\tilde{P}\in\mathbb{M}_+$ and no non-zero central real $\lambda$ with $[\tilde{Q},\tilde{P}]=\lambda\,i\,e_0$.
 
-**Proof.** Write $\tilde{Q}=h_0e_0+i\mathbf{h}\cdot\mathbf{e}$ and $\tilde{P}=k_0e_0+i\mathbf{k}\cdot\mathbf{e}$ with $h_0,k_0\in\mathbb{R}$ and $\mathbf{h},\mathbf{k}\in\mathbb{R}^3$. The product has scalar part $\mathrm{Sc}(\tilde{Q}\tilde{P})=h_0k_0+\mathbf{h}\cdot\mathbf{k}$; the cross terms $i e_j\cdot i e_k$ contribute the symmetric $\mathbf{e}\cdot\mathbf{e}$-part and the antisymmetric part of the product is traceless. The same computation with $\tilde{Q}$ and $\tilde{P}$ exchanged gives the identical scalar part, so
+**Proof.** Write $\tilde{Q}=h_0e_0+i\vec h\cdot\mathbf{e}$ and $\tilde{P}=k_0e_0+i\vec k\cdot\mathbf{e}$ with $h_0,k_0\in\mathbb{R}$ and $\vec h,\vec k\in\mathbb{R}^3$. The product has scalar part $\mathrm{Sc}(\tilde{Q}\tilde{P})=h_0k_0+\vec h\cdot\vec k$; the cross terms $i e_j\cdot i e_k$ contribute the symmetric $\mathbf{e}\cdot\mathbf{e}$-part and the antisymmetric part of the product is traceless. The same computation with $\tilde{Q}$ and $\tilde{P}$ exchanged gives the identical scalar part, so
 $$
 \mathrm{Sc}\bigl([\tilde{Q},\tilde{P}]\bigr)=0 .
 $$
@@ -61,7 +61,7 @@ The commutator is anti-Hermitian and lies in the vector part of $\mathbb{M}_-$, 
 
 Why the framework is not in the business of satisfying the relation is a matter of what its observable algebra is.
 
-**What $\mathbb{M}_+$ is.** The Hermitian subspace is the space of Hermitian $2\times2$ matrices, of real dimension four. It is exactly the observable space of a single two-state system: the identity $e_0$ and the three directions $ie_1,ie_2,ie_3$ play the roles of the identity and the three Pauli matrices under the matrix model $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$. Its states are the elements $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$ with $|\mathbf{r}|\leq1$, the Bloch ball, with the pure states on the boundary.
+**What $\mathbb{M}_+$ is.** The Hermitian subspace is the space of Hermitian $2\times2$ matrices, of real dimension four. It is exactly the observable space of a single two-state system: the identity $e_0$ and the three directions $ie_1,ie_2,ie_3$ play the roles of the identity and the three Pauli matrices under the matrix model $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$. Its states are the elements $\tilde{\rho}=\tfrac12(e_0+i\vec r)$ with $|\vec r|\leq1$, the Bloch ball, with the pure states on the boundary.
 
 **An internal algebra.** The algebra describes **internal** degrees of freedom: a two-valued label, its superpositions, its phases and its rotations. An observable of the algebra is an internal observable. Position is not an internal observable, and it is not obtainable from the internal ones, because the algebra has no element whose spectrum is a continuum and no element that fails to commute with a translation in a configuration variable.
 
@@ -198,7 +198,7 @@ The biquaternion framework and the canonical commutation relation are **independ
 | ${}^{*}={}^{\natural}\circ\bar{\cdot}$ | Hermitian conjugation |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | Hermitian and anti-Hermitian subspaces, $\mathbb{B}=\mathbb{M}_+\oplus\mathbb{M}_-$ |
 | $\mathrm{Tr}(\tilde{Q})=2\,\mathrm{Sc}(\tilde{Q})$ | Trace, $\mathrm{Tr}(e_0)=2$ |
-| $\tilde{Q}=h_0e_0+i\mathbf{h}\cdot\mathbf{e}$ | General element of $\mathbb{M}_+$; $\mathrm{Sc}(\tilde{Q}\tilde{P})=h_0k_0+\mathbf{h}\cdot\mathbf{k}$ |
+| $\tilde{Q}=h_0e_0+i\vec h\cdot\mathbf{e}$ | General element of $\mathbb{M}_+$; $\mathrm{Sc}(\tilde{Q}\tilde{P})=h_0k_0+\vec h\cdot\vec k$ |
 | $[Q,P]=i\hbar I$ | Canonical commutation relation |
 | $e^{i\alpha Q}e^{i\beta P}=e^{-i\hbar\alpha\beta}e^{i\beta P}e^{i\alpha Q}$ | Weyl form of the relation |
 | $|x\rangle$, $\langle x|x'\rangle=\delta(x-x')$ | Position eigenstate; not a vector of $L^2(\mathbb{R})$ |
@@ -208,7 +208,7 @@ The biquaternion framework and the canonical commutation relation are **independ
 | $Z|k\rangle=|k+1\ \mathrm{mod}\ N\rangle$ | Shift of the finite Weyl pair |
 | $XZ=\omega ZX$ | Weyl (clock-and-shift) relation; phase in place of $i\hbar$ |
 | $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$ | Matrix model of $\mathbb{B}$ |
-| $\tilde{\rho}=\tfrac12(e_0+i\mathbf{r})$, $|\mathbf{r}|\leq1$ | State, the Bloch ball |
+| $\tilde{\rho}=\tfrac12(e_0+i\vec r)$, $|\vec r|\leq1$ | State, the Bloch ball |
 
 ## Further Reading
 

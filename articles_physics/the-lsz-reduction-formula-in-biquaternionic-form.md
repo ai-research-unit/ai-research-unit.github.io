@@ -18,9 +18,9 @@ The findings are these.
 $$
 \mathcal{M}(\tilde k) = \tilde k\tilde k^{\natural}+m^2 ,
 \qquad
-\mathcal{M}(\tilde k)=0 \iff \tilde k\tilde k^{\natural}=-m^2 \iff E_{\mathbf p}^2=\mathbf p^2+m^2 ,
+\mathcal{M}(\tilde k)=0 \iff \tilde k\tilde k^{\natural}=-m^2 \iff E_{\vec p}^2=\vec p^2+m^2 ,
 $$
-with the wave biquaternion $\tilde k=iEe_0+\mathbf p$ and its quaternion conjugate $\tilde k^{\natural}=iEe_0-\mathbf p$. The product is central, $\tilde k\tilde k^{\natural}=(-E^2+\mathbf p^2)e_0=-p^2e_0$, so the mass shell is a **level set of the biquaternion norm**. Amputation is multiplication by the inverse propagator, the central mass-shell operator $\mathcal{M}(\tilde k)=\tilde k\tilde k^{\natural}+m^2=m^2-p^2$, with $D_F=1/\mathcal{M}(\tilde k)$ up to the $i\epsilon$; it is therefore a central scalar operation for a scalar field, and it commutes with everything.
+with the wave biquaternion $\tilde k=iEe_0+\vec p$ and its quaternion conjugate $\tilde k^{\natural}=iEe_0-\vec p$. The product is central, $\tilde k\tilde k^{\natural}=(-E^2+\vec p^2)e_0=-p^2e_0$, so the mass shell is a **level set of the biquaternion norm**. Amputation is multiplication by the inverse propagator, the central mass-shell operator $\mathcal{M}(\tilde k)=\tilde k\tilde k^{\natural}+m^2=m^2-p^2$, with $D_F=1/\mathcal{M}(\tilde k)$ up to the $i\epsilon$; it is therefore a central scalar operation for a scalar field, and it commutes with everything.
 - **Established (algebra).** The wave-function renormalization is the residue at the biquaternion-norm pole,
 $$
 Z = \lim_{p^2\to m^2}\big(m^2-p^2\big)\,D_F(p^2),
@@ -32,7 +32,7 @@ and for a central scalar operator on the biquaternion module the residue is the 
 
 The article proceeds as follows. The next section states the LSZ formula and sketches its derivation from asymptotic fields. A section identifies the amputation with the inverse mass-shell operator. A section fixes the external wavefunctions as biquaternion plane waves. A section treats the wave-function renormalization as a residue, verified numerically. A section treats the scalar and spinor cases separately, and a section the one-mode truncation and the module gap. A section separates what is established from what is interpretation.
 
-**Conventions.** We use those of the companion articles, in particular *The S-Matrix in Biquaternionic Form* and *The Feynman Propagator in Biquaternionic Form*. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, and central scalar imaginary $i$. The biquaternionic gradient is $\tilde\nabla=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$ with $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial_{ict}^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The wave biquaternion is $\tilde k=iEe_0+\mathbf p$ with **quaternion** conjugate $\tilde k^{\natural}=iEe_0-\mathbf p$ and $\tilde k\tilde k^{\natural}=(-E^2+\mathbf p^2)e_0=-p^2e_0$, where $p^2=E^2-\mathbf p^2$; the mass shell is $\tilde k\tilde k^{\natural}=-m^2c^2/\hbar^2$ (in the dynamical expressions we set $\hbar=c=1$). On the spinor module the Dirac operator is $\not p-m$ with $\not p=\gamma^0E-\boldsymbol\gamma\cdot\mathbf p$, the Clifford metric $g=\mathrm{diag}(+1,-1,-1,-1)$, and $\eta=-g$. The mode algebra is $\{\hat a_r(\mathbf p),\hat a_s^\dagger(\mathbf q)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\mathbf p-\mathbf q)$, with all other anticommutators zero; the matrix isomorphism is $\mathsf{M}_2(e_k)=-i\sigma_k$; the trace pairing is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$.
+**Conventions.** We use those of the companion articles, in particular *The S-Matrix in Biquaternionic Form* and *The Feynman Propagator in Biquaternionic Form*. The algebra is $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_k^2=-e_0$, and central scalar imaginary $i$. The biquaternionic gradient is $\tilde\nabla=e_0\partial_{ict}+e_1\partial_x+e_2\partial_y+e_3\partial_z$ with $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial_{ict}^2+\Delta$; the $ict$ metric is $\eta=\mathrm{diag}(-1,+1,+1,+1)$. The wave biquaternion is $\tilde k=iEe_0+\vec p$ with **quaternion** conjugate $\tilde k^{\natural}=iEe_0-\vec p$ and $\tilde k\tilde k^{\natural}=(-E^2+\vec p^2)e_0=-p^2e_0$, where $p^2=E^2-\vec p^2$; the mass shell is $\tilde k\tilde k^{\natural}=-m^2c^2/\hbar^2$ (in the dynamical expressions we set $\hbar=c=1$). On the spinor module the Dirac operator is $\not p-m$ with $\not p=\gamma^0E-\boldsymbol\gamma\cdot\vec p$, the Clifford metric $g=\mathrm{diag}(+1,-1,-1,-1)$, and $\eta=-g$. The mode algebra is $\{\hat a_r(\vec p),\hat a_s^\dagger(\vec q)\}=(2\pi)^3\delta_{rs}\delta^{(3)}(\vec p-\vec q)$, with all other anticommutators zero; the matrix isomorphism is $\mathsf{M}_2(e_k)=-i\sigma_k$; the trace pairing is $\mathrm{Tr}(\tilde P\tilde H)=2\,\mathrm{Sc}(\tilde P\tilde H) = 2\langle\tilde P,\tilde H\rangle$.
 
 ## The LSZ Formula
 
@@ -46,7 +46,7 @@ where $\tilde\Phi_{\mathrm{in/out}}$ is a free field and $Z$ is the wave-functio
 
 **The formula.** For $n$ incoming particles of momenta $p_1,\dots,p_n$ and $m$ outgoing of momenta $p'_1,\dots,p'_m$,
 $$
-\langle \mathbf p'_1\cdots\mathbf p'_m|S|\mathbf p_1\cdots\mathbf p_n\rangle
+\langle \vec p'_1\cdots\vec p'_m|S|\vec p_1\cdots\vec p_n\rangle
 = \Big[\prod_{j=1}^{m}\int d^4x'_j\,e^{ip'_j\cdot x'_j}\Big]
 \Big[\prod_{i=1}^{n}\int d^4x_i\,e^{-ip_i\cdot x_i}\Big]
 \Big[\prod_{\text{all legs}}\big(\Box-m^2\big)\Big]
@@ -81,14 +81,14 @@ so that
 $$
 \mathcal{M}(\tilde k)\,D_F(\tilde k) = -\,\big(p^2-m^2\big)\,D_F(\tilde k) = 1 \qquad ({\epsilon\to0,\ \text{off shell}}).
 $$
-Multiplying a correlation function by $\mathcal{M}(\tilde k)$ on a leg is precisely the inverse operation to attaching the propagator to that leg. This is the whole content of "amputation", and in the framework it is the multiplication of a module-valued function by the central scalar $\mathcal{M}(\tilde k)$. This is the normalization of the propagator article, whose Klein–Gordon Green's function is $G_F=1/(\mathbf p^2+m^2-\omega^2-i\epsilon)=1/(\mathcal{M}-i\epsilon)$ with $(\Box-m^2)G_F=-\delta^{(4)}$, and in which the free-field residue is $+1$; the textbook normalization $1/(p^2-m^2+i\epsilon)$ is its negative.
+Multiplying a correlation function by $\mathcal{M}(\tilde k)$ on a leg is precisely the inverse operation to attaching the propagator to that leg. This is the whole content of "amputation", and in the framework it is the multiplication of a module-valued function by the central scalar $\mathcal{M}(\tilde k)$. This is the normalization of the propagator article, whose Klein–Gordon Green's function is $G_F=1/(\vec p^2+m^2-\omega^2-i\epsilon)=1/(\mathcal{M}-i\epsilon)$ with $(\Box-m^2)G_F=-\delta^{(4)}$, and in which the free-field residue is $+1$; the textbook normalization $1/(p^2-m^2+i\epsilon)$ is its negative.
 
 **Centrality and commutation.** Because $\mathcal{M}(\tilde k)$ is central — it is a complex number times $e_0$ — the amputation commutes with the algebra's left and right multiplications and does not disturb any internal index. For a scalar field this means the amputation acts identically on both sectors and on all components; the operator can be moved freely past vertex factors, and the reduction is commutative with the internal symmetry structure. This is the algebraic statement behind the factorized kinematics of the next-but-one section.
 
 **The pole set is a biquaternion-norm level set.** The mass shell $\mathcal{M}(\tilde k)=0$ is the statement $\tilde k\tilde k^{\natural}=-m^2$, a level set of the biquaternion norm. For $m=0$ it is the zero set of the biquaternion norm, i.e. the zero-divisor cone, the light cone of *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*. The reduction formula thus places the external legs on a level set of the same biquaternion norm that determines the algebra's singular elements, the metric, and the zero-divisor cone; the mass shell and the light cone are the $m\ne0$ and $m=0$ members of one family.
 
 $$
-\tilde k\tilde k^{\natural} = -E^2+\mathbf p^2 = -0.490000
+\tilde k\tilde k^{\natural} = -E^2+\vec p^2 = -0.490000
 = -m^2 ,
 $$
 agreeing with $-m^2=-0.49$ to machine precision. The on-shell condition and the biquaternion-norm statement are thus the same equation, checked on a momentum not used to construct any other result.
@@ -101,7 +101,7 @@ The external legs carry the framework's plane waves, and this is where the reduc
 $$
 \tilde\Phi_{\tilde k}(\tilde{Q}) = \tilde w\,e^{\,i\,\mathrm{Sc}(\tilde k^{\natural}\tilde{Q})} ,
 \qquad
-\tilde{Q} = ict\,e_0+\mathbf x ,
+\tilde{Q} = ict\,e_0+\vec x ,
 $$
 with $\tilde w$ a constant biquaternion amplitude, satisfies $(\Box-m^2)\tilde\Phi_{\tilde k}=0$ for $\tilde k\tilde k^{\natural}=-m^2$, because the differential operator is central and acts on the exponential as multiplication by $-(\tilde k\tilde k^{\natural}+m^2)=-\mathcal{M}(\tilde k)$. The phase is the central scalar $\mathrm{Sc}(\tilde k^{\natural}\tilde{Q})=p\cdot x$, so the wave is a **central-phase** plane wave: its phase is a complex number and not a biquaternion, which is the reason the framework's free modes are the ordinary plane waves of the standard theory. This is the same statement that the path-integral and functional-integral articles make about the phase being central.
 
@@ -148,7 +148,7 @@ The two cases differ in exactly one place: whether the amputation operator is ce
 
 **Scalar case: block diagonality.** For a scalar biquaternion field the mass-shell operator $\mathcal{M}(\tilde k)$ is central, the external wavefunctions are central-phase plane waves with module-valued amplitudes, and the amputation commutes with the sector projections. The reduction's kinematics is therefore block diagonal with respect to the sector split: the amputation acts on each sector's part of a correlation function independently, and the sector parts are related by the central $i$ rather than being independent fields. This is the LSZ counterpart of the block-diagonal quadratic form of the functional integral and the effective action. Its content is a component count: the biquaternion scalar's four real components per sector enter the reduction separately, and the algebra fixes the split. It is **not** a statement that a biquaternion scalar is a multiplicity of complex scalars, for the reason the functional-integral and harmonic-oscillator articles give.
 
-**Spinor case: no factorization.** For a spinor field the amputation operator is the matrix $\not p-m$, which is not central; it acts on the spinor module and mixes the two chiralities through the mass. The external legs are the spinors $u^{(r)}(\mathbf p)$ and $v^{(r)}(\mathbf p)$ of the propagator article, with the spin sums $\sum_r u^{(r)}\bar u^{(r)}=\not p+m$ and $\sum_r v^{(r)}\bar v^{(r)}=\not p-m$; the reduction reads
+**Spinor case: no factorization.** For a spinor field the amputation operator is the matrix $\not p-m$, which is not central; it acts on the spinor module and mixes the two chiralities through the mass. The external legs are the spinors $u^{(r)}(\vec p)$ and $v^{(r)}(\vec p)$ of the propagator article, with the spin sums $\sum_r u^{(r)}\bar u^{(r)}=\not p+m$ and $\sum_r v^{(r)}\bar v^{(r)}=\not p-m$; the reduction reads
 $$
 \langle f|S|i\rangle_{\text{spinor}}
 = \Big[\prod_{\text{legs}}\int d^4x_j\,e^{\pm ip_j\cdot x_j}\Big]
@@ -165,9 +165,9 @@ Conditional on the one-mode identification of the Fock article, the reduction ha
 
 **The one-mode statement.** For a single fermionic mode the field $\tilde\Phi$ is replaced by the ladder $\tilde\Upsilon_1$ and its conjugate, the correlation functions by traces over the module, and the reduction becomes the matrix statement that the on-shell residue of the one-mode propagator is the identity of the mode algebra. Concretely, the one-mode two-point operators and their vacuum expectations are
 $$
-\tilde\Upsilon_1\tilde\Upsilon_2 = \tilde\Pi_1,
+\tilde\Upsilon_1\tilde\Upsilon_2 = \tilde\Pi_+,
 \qquad
-\tilde\Upsilon_2\tilde\Upsilon_1 = \tilde\Pi_2,
+\tilde\Upsilon_2\tilde\Upsilon_1 = \tilde\Pi_-,
 \qquad
 \big\langle \tilde\Upsilon_1\tilde\Upsilon_2\big\rangle_0 = 1,
 \qquad
@@ -241,9 +241,9 @@ $$
 \qquad\Longleftrightarrow\qquad
 \mathcal{M}(\tilde k)=\tilde k\tilde k^{\natural}+m^2=0 ,
 \qquad
-\tilde k\tilde k^{\natural}=(-E^2+\mathbf p^2)e_0=-p^2e_0 ,
+\tilde k\tilde k^{\natural}=(-E^2+\vec p^2)e_0=-p^2e_0 ,
 $$
-verified as $-0.490000=-m^2$ for $m=0.7$, $\mathbf p=(0.3,-0.9,1.1)$. Amputation is multiplication by the central mass-shell operator $\mathcal{M}(\tilde k)$, the inverse of the propagator $D_F=1/(\mathcal{M}-i\epsilon)$; the wave-function renormalization is the residue at the biquaternion-norm pole, checked to give $Z=2.3$ for a model propagator and $Z=1$ for the free field, where the amputated two-point function is exactly $1$. For a scalar biquaternion field the reduction's kinematics is block diagonal with respect to the sector split; for a spinor field the matrix amputation $\not p-m$ is non-central, the legs are the spinors $u^{(r)},v^{(r)}$ with $\sum_r u^{(r)}\bar u^{(r)}=\not p+m$, and the reduction does not factor.
+verified as $-0.490000=-m^2$ for $m=0.7$, $\vec p=(0.3,-0.9,1.1)$. Amputation is multiplication by the central mass-shell operator $\mathcal{M}(\tilde k)$, the inverse of the propagator $D_F=1/(\mathcal{M}-i\epsilon)$; the wave-function renormalization is the residue at the biquaternion-norm pole, checked to give $Z=2.3$ for a model propagator and $Z=1$ for the free field, where the amputated two-point function is exactly $1$. For a scalar biquaternion field the reduction's kinematics is block diagonal with respect to the sector split; for a spinor field the matrix amputation $\not p-m$ is non-central, the legs are the spinors $u^{(r)},v^{(r)}$ with $\sum_r u^{(r)}\bar u^{(r)}=\not p+m$, and the reduction does not factor.
 
 The reduction theorem itself — the asymptotic conditions, the adiabatic switching, the $\sqrt Z$ normalization — is standard and transcribed. The algebra supplies the mass-shell symbol, the central-phase plane waves, and the internal module; the field-level S-matrix and its reduction live on the Fock module and not in $\mathbb{B}$.
 
@@ -252,10 +252,10 @@ The reduction theorem itself — the asymptotic conditions, the adiabatic switch
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ | Biquaternion algebra, $\cong M_2(\mathbb{C})$ |
-| $\tilde k=iEe_0+\mathbf p$, $\tilde k^{\natural}=iEe_0-\mathbf p$ | Wave biquaternion and its quaternion conjugate |
-| $\tilde k\tilde k^{\natural}=(-E^2+\mathbf p^2)e_0=-p^2e_0$ | Central biquaternion norm; $p^2=E^2-\mathbf p^2$ |
+| $\tilde k=iEe_0+\vec p$, $\tilde k^{\natural}=iEe_0-\vec p$ | Wave biquaternion and its quaternion conjugate |
+| $\tilde k\tilde k^{\natural}=(-E^2+\vec p^2)e_0=-p^2e_0$ | Central biquaternion norm; $p^2=E^2-\vec p^2$ |
 | $\mathcal{M}(\tilde k)=\tilde k\tilde k^{\natural}+m^2=m^2-p^2$ | Mass-shell operator (vanishing defines the shell) |
-| $\mathcal{M}(\tilde k)=0\iff E_{\mathbf p}^2=\mathbf p^2+m^2$ | Mass shell |
+| $\mathcal{M}(\tilde k)=0\iff E_{\vec p}^2=\vec p^2+m^2$ | Mass shell |
 | $\Box=\tilde\nabla\tilde\nabla^{\natural}=\partial_{ict}^2+\Delta$ | d'Alembertian, series convention |
 | $\eta=\mathrm{diag}(-1,+1,+1,+1)$ | $ict$ metric (level 2) |
 | $D_F(\tilde k)=1/(\mathcal{M}(\tilde k)-i\epsilon)=-1/(p^2-m^2+i\epsilon)$ | Feynman propagator (momentum space) |
@@ -263,7 +263,7 @@ The reduction theorem itself — the asymptotic conditions, the adiabatic switch
 | $Z=\lim_{p^2\to m^2}(m^2-p^2)D_F(p^2)=\lim_{\mathcal{M}\to0}\mathcal{M}D_F$ | Wave-function renormalization (residue) |
 | $\langle f|S|i\rangle$ | S-matrix element from the reduction |
 | $e^{\,i\,\mathrm{Sc}(\tilde k^{\natural}\tilde{Q})}=e^{\,ip\cdot x}$ | Central-phase plane wave (external leg) |
-| $\not p=\gamma^0E-\boldsymbol\gamma\cdot\mathbf p$ | Spinor mass-shell operator |
+| $\not p=\gamma^0E-\boldsymbol\gamma\cdot\vec p$ | Spinor mass-shell operator |
 | $u^{(r)},v^{(r)}$ | External spinors; $\sum_r u^{(r)}\bar u^{(r)}=\not p+m$ |
 | $Z=Z_-+Z_+$ | Scalar-sector splitting of the residue (sum) |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |

@@ -3,7 +3,7 @@
 ## Introduction
 
 The antisymmetric plain algebra of $\mathbb{H}$ is the cross product
-$\tilde p\times\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\mathbf p\times\mathbf q$ of
+$\tilde p\times\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\vec p\times\vec q$ of
 *Introduction to the Antisymmetric Plain Algebra of Quaternions*. This article states what singles
 the block out among the six products of the space: the two identities it satisfies, the classes its
 laws empty, and the place it takes in the law table of *Definitions for the Study of the 6 Algebraic
@@ -33,8 +33,8 @@ the 6 Algebraic Structures* and the law table *The 6 Algebraic Structures over t
 $\mathbb{R}$ Space*.
 
 **Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and
-$e_1^2=e_2^2=e_3^2=-e_0$; a generic element is $\tilde q=q_0e_0+\mathbf q$, the centre is
-$\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$ and the vector subspace is $\mathrm{Vect}(\mathbb{H})=\{\mathbf q\}$.
+$e_1^2=e_2^2=e_3^2=-e_0$; a generic element is $\tilde q=q_0e_0+\vec q$, the centre is
+$\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$ and the vector subspace is $\mathrm{Vect}(\mathbb{H})=\{\vec q\}$.
 The laws are those of *Definitions for the Study of the 6 Algebraic Structures*.
 
 ## The Criterion
@@ -56,7 +56,7 @@ $$
 
 *Proof.* The alternation is $\tfrac12(\tilde p\tilde p-\tilde p\tilde p)=0$, the two terms of the
 difference coinciding. The cyclic sum is the one of the vector product of the vector parts,
-$(\mathbf p\times\mathbf q)\times\mathbf r+(\mathbf q\times\mathbf r)\times\mathbf p+(\mathbf r\times\mathbf p)\times\mathbf q$,
+$(\vec p\times\vec q)\times\vec r+(\vec q\times\vec r)\times\vec p+(\vec r\times\vec p)\times\vec q$,
 which vanishes by the anticommutativity of the vector product; it is verified on general elements and
 on the $64$ triples of the units.
 

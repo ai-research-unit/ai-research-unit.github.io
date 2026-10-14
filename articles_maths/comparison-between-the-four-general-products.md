@@ -6,7 +6,7 @@ The four general products of *The Four General Products of the Biquaternion $\ma
 
 This article tabulates the properties that separate the four general products — bilinearity, associativity, commutativity, the units, the alternative and the flexible identities, the degree-three identity, and the left multiplications — and gives the short computation that decides each entry where it is not immediate. It also records the one construction that produces the four, the plain product with a conjugation inserted in a slot, and with it the reason exactly one of them is a multiplication. §*The Group of the Operations* reads the four insertions of that construction as the four elements of a group, of which the four general products are the four readings of one rule; the same section reads the construction on a general algebra with its two anti-involutions, where each slot decides its own property, and collects the settings in the Table of the Slots. The scalar and vector parts the four induce are not compared here; they are *Relations Between the Four General Products*.
 
-The article assumes the four general products and their scalar–vector forms from *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, and it uses the identities of *Relations Between the Four General Products* for the unit and the monoid rows. Throughout, $1=e_0$ is the unit of the algebra and $\mathbf P$ is the vector part of $\tilde P=P_0+\mathbf P$.
+The article assumes the four general products and their scalar–vector forms from *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, and it uses the identities of *Relations Between the Four General Products* for the unit and the monoid rows. Throughout, $1=e_0$ is the unit of the algebra and $\vec P$ is the vector part of $\tilde P=P_0+\vec P$.
 
 ## The Property Table
 
@@ -33,9 +33,9 @@ The alternative row is satisfied automatically by the general plain bilinear pro
 
 The first two rows are read off the definitions. Each of the four general products is $\mathbb{C}$-linear in the first argument: the first factor is either untouched or conjugated by the $\mathbb{C}$-linear map ${}^{\natural}$, and the rest of the computation is linear in it. In the second argument, the general plain bilinear product and the ${}^{\natural}$-product are $\mathbb{C}$-linear, while the two products carrying the star are conjugate-linear, since ${}^{*}$ conjugates the coefficients of the second factor before the multiplication.
 
-The distinction is not a technicality of the definitions: it separates the two rows of the scalar and vector tables of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* that involve $\overline{\mathbf Q}$, and it is the reason the fourth column carries no unit and no monoid. It also settles what the four can be used for. A $\mathbb{C}$-bilinear operation on $\mathbb{B}$ defines on $\mathbb{B}$ the structure of an algebra over $\mathbb{C}$, associative or not; a conjugate-linear operation defines no such thing, and the two sesquilinear products are the multiplications of a sesqualgebra over $\mathbb{C}$ instead. The first of the two is nonetheless the multiplication of a sesqualgebra over $\mathbb{C}$ with its conjugation, being the derived operation of the algebra with the star, and that is a multiplication in the second sense the corpus admits (*Introduction to the General Plain Sesqualgebra of Biquaternions*); the second is not, since it reads the first factor through the $\mathbb{C}$-linear ${}^{\natural}$ as well. The four remain binary operations of the same kind, with the same two-step rule for their computation.
+The distinction is not a technicality of the definitions: it separates the two rows of the scalar and vector tables of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* that involve $\overline{\vec Q}$, and it is the reason the fourth column carries no unit and no monoid. It also settles what the four can be used for. A $\mathbb{C}$-bilinear operation on $\mathbb{B}$ defines on $\mathbb{B}$ the structure of an algebra over $\mathbb{C}$, associative or not; a conjugate-linear operation defines no such thing, and the two sesquilinear products are the multiplications of a sesqualgebra over $\mathbb{C}$ instead. The first of the two is nonetheless the multiplication of a sesqualgebra over $\mathbb{C}$ with its conjugation, being the derived operation of the algebra with the star, and that is a multiplication in the second sense the corpus admits (*Introduction to the General Plain Sesqualgebra of Biquaternions*); the second is not, since it reads the first factor through the $\mathbb{C}$-linear ${}^{\natural}$ as well. The four remain binary operations of the same kind, with the same two-step rule for their computation.
 
-**The two exchanges, and the class.** The four general products are split against an exchange of the two arguments, and there are two of them. The **exchange by a conjugation** $c$, $f^{c}(\tilde{P},\tilde{Q})=c(f(\tilde{Q},\tilde{P}))$, composes the swap with $c$ and keeps the class of the two sesquilinear products, whose parts under it are sesquilinear again; the conjugation and the swap repair each other's parity, and this is the exchange the twelve names are read against. The **plain exchange** swaps the arguments and does not keep the class: a part of a sesquilinear product taken under it is only $\mathbb{R}$-bilinear, since the swap moves the conjugate-linear slot to the other side, and its two halves are the operations of *The Sesquilinear Symmetrised Product* and *The Sesquilinear Commutator*. For the plain sesquilinear product and $c=\overline{\cdot}$ the two parts are the scalar part and the vector part of the product, $P_0\overline{Q_0}+(\mathbf{P},\overline{\mathbf{Q}})$ and $-P_0\overline{\mathbf{Q}}+\overline{Q_0}\mathbf{P}-\mathbf{P}\times\overline{\mathbf{Q}}$; for the general quaternionic sesquilinear product they are the symmetrisation of $\tilde{P}^{\natural}$ with $\tilde{Q}^{*}$ and half their commutator. The two exchanges and their two splits are read in *The 12 Products of the Biquaternion Complex Space*, §*The Other Exchange, and the Class It Keeps*, and in *The 12 Products of the Biquaternion Complex Space*, §*The Method of the Decomposition*.
+**The two exchanges, and the class.** The four general products are split against an exchange of the two arguments, and there are two of them. The **exchange by a conjugation** $c$, $f^{c}(\tilde{P},\tilde{Q})=c(f(\tilde{Q},\tilde{P}))$, composes the swap with $c$ and keeps the class of the two sesquilinear products, whose parts under it are sesquilinear again; the conjugation and the swap repair each other's parity, and this is the exchange the twelve names are read against. The **plain exchange** swaps the arguments and does not keep the class: a part of a sesquilinear product taken under it is only $\mathbb{R}$-bilinear, since the swap moves the conjugate-linear slot to the other side, and its two halves are the operations of *The Sesquilinear Symmetrised Product* and *The Sesquilinear Commutator*. For the plain sesquilinear product and $c=\overline{\cdot}$ the two parts are the scalar part and the vector part of the product, $P_0\overline{Q_0}+(\vec P,\overline{\vec Q})$ and $-P_0\overline{\vec Q}+\overline{Q_0}\vec P-\vec P\times\overline{\vec Q}$; for the general quaternionic sesquilinear product they are the symmetrisation of $\tilde{P}^{\natural}$ with $\tilde{Q}^{*}$ and half their commutator. The two exchanges and their two splits are read in *The 12 Products of the Biquaternion Complex Space*, §*The Other Exchange, and the Class It Keeps*, and in *The 12 Products of the Biquaternion Complex Space*, §*The Method of the Decomposition*.
 
 ## The Failure of Associativity
 
@@ -70,7 +70,7 @@ The unit $1=e_0$ of the algebra is a unit for the general plain bilinear product
 
 For the ${}^{\natural}$-product, $1^{\natural}\tilde Q=\tilde Q$, so $1$ is a left identity; and $\tilde P^{\natural}1=\tilde P^{\natural}$, which equals $\tilde P$ only when $\tilde P$ is fixed by ${}^{\natural}$, so $1$ is not a right identity, and there is no right identity, since a right identity $E$ would give $\tilde P^{\natural}E=\tilde P$ for all $\tilde P$, hence $E=1$ on taking $\tilde P=1$ and then $\tilde P^{\natural}=\tilde P$ for all $\tilde P$, which is false.
 
-For the ${}^{*}$-product the two sides exchange roles. Here $\tilde P\tilde Q^{*}$ leaves the first factor untouched, so $\tilde P1^{*}=\tilde P$ and $1$ is a right identity, while $1\tilde Q^{*}=\tilde Q^{*}$ is not $\tilde Q$ in general, so $1$ is not a left identity and there is no left identity. This is the one entry of the naive table that is easy to get wrong: because $\tilde Q^{*}=\overline{Q_0}e_0-\overline{\mathbf Q}$, the unit is conjugated to itself, and the star product is unital on the right and not on the left.
+For the ${}^{*}$-product the two sides exchange roles. Here $\tilde P\tilde Q^{*}$ leaves the first factor untouched, so $\tilde P1^{*}=\tilde P$ and $1$ is a right identity, while $1\tilde Q^{*}=\tilde Q^{*}$ is not $\tilde Q$ in general, so $1$ is not a left identity and there is no left identity. This is the one entry of the naive table that is easy to get wrong: because $\tilde Q^{*}=\overline{Q_0}e_0-\overline{\vec Q}$, the unit is conjugated to itself, and the star product is unital on the right and not on the left.
 
 For the fourth product neither $1^{\natural}\tilde Q^{*}=\tilde Q^{*}$ nor $\tilde P^{\natural}1=\tilde P^{\natural}$ returns its argument, and the same argument as above shows there is no identity on either side.
 
@@ -243,11 +243,11 @@ which is not a scalar multiple of $\mathrm{I}_2$. **The scalar square is a prope
 
 ## The Squares, the Idempotents and the Roots
 
-The four general products are told apart on a single element by the **square**, and the idempotent and the root problems follow from it. Writing $\tilde P = P_0e_0 + \mathbf P$ and $(\mathbf P,\mathbf P) = P_1^2 + P_2^2 + P_3^2$, the scalar part of the square is
+The four general products are told apart on a single element by the **square**, and the idempotent and the root problems follow from it. Writing $\tilde P = P_0e_0 + \vec P$ and $(\vec P,\vec P) = P_1^2 + P_2^2 + P_3^2$, the scalar part of the square is
 
 $$
-\mathrm{Sc}\bigl(\tilde P\tilde P\bigr) = P_0^2 - (\mathbf P,\mathbf P), \qquad
-\mathrm{Sc}\bigl(\tilde P^{\natural}\tilde P\bigr) = P_0^2 + (\mathbf P,\mathbf P) = N(\tilde P),
+\mathrm{Sc}\bigl(\tilde P\tilde P\bigr) = P_0^2 - (\vec P,\vec P), \qquad
+\mathrm{Sc}\bigl(\tilde P^{\natural}\tilde P\bigr) = P_0^2 + (\vec P,\vec P) = N(\tilde P),
 $$
 
 $$
@@ -259,7 +259,7 @@ These are the four algebraic norms of *The 4 Forms over the Biquaternion $\mathb
 
 | problem | $\tilde P\tilde P = \tilde P$ | $\tilde P^{\natural}\tilde P = \tilde P$ | $\tilde P\tilde P^{*} = \tilde P$ | $\tilde P^{\natural}\tilde P^{*} = \tilde P$ |
 |---|---|---|---|---|
-| idempotents | $0$, $e_0$, and $\tfrac12(e_0 + \tilde\Xi i)$ for a root $\tilde\Xi$ of $-e_0$ | $0$ and $e_0$ alone | $0$, $e_0$, and the Hermitian idempotents $\tfrac12(e_0 + i\hat\mu)$ with $\hat\mu$ a real unit vector | $0$, $e_0$, and $-\tfrac12 e_0 + \mu$ for a real $\mu$ of the vector subspace with $(\mu,\mu) = \tfrac34$ |
+| idempotents | $0$, $e_0$, and $\tfrac12(e_0 + \tilde\Xi i)$ for a root $\tilde\Xi$ of $-e_0$ | $0$ and $e_0$ alone | $0$, $e_0$, and the Hermitian idempotents $\tfrac12(e_0 + \tilde\Xi)$ with $\hat n$ a real unit vector | $0$, $e_0$, and $-\tfrac12e_0+\vec n$ for a real $\vec n$ of the vector subspace with $(\vec n,\vec n) = \tfrac34$ |
 
 The four columns are four different sets. The first is infinite and is the one the rest of the category uses; the second is the smallest possible, the two trivial idempotents; the third is the family of the pure states of *Idempotents of the General Plain Algebra*; the fourth is a family of a different kind, lying in the quaternion subspace $\mathbb{H}_{\mathbb{B}}$.
 
@@ -267,8 +267,8 @@ The square roots of a central value differ in the same way and by the same two s
 
 | square roots | $\tilde P\tilde P = \lambda e_0$ | $\tilde P^{\natural}\tilde P = \lambda e_0$ | $\tilde P\tilde P^{*} = \lambda e_0$ | $\tilde P^{\natural}\tilde P^{*} = \lambda e_0$ |
 |---|---|---|---|---|
-| of $-e_0$ | $P_0 = 0$ with $(\mathbf P,\mathbf P) = 1$, and $P_0 = \pm i$ | the solutions of $N(\tilde P) = -1$ | none | the solutions of $\tilde P^{\natural}\tilde P^{*} = -e_0$, among them every real pure $\mathbf P$ with $(\mathbf P,\mathbf P) = 1$ |
-| of $0$ | $P_0 = 0$ with $(\mathbf P,\mathbf P) = 0$, the nilpotents $\tilde\Upsilon$ | the solutions of $N(\tilde P) = 0$, the zero divisors together with $0$ | $\tilde P = 0$ alone | the solutions of $\tilde P^{\natural}\tilde P^{*} = 0$, among them $e_0 + ie_1$ |
+| of $-e_0$ | $P_0 = 0$ with $(\vec P,\vec P) = 1$, and $P_0 = \pm i$ | the solutions of $N(\tilde P) = -1$ | none | the solutions of $\tilde P^{\natural}\tilde P^{*} = -e_0$, among them every real pure $\vec P$ with $(\vec P,\vec P) = 1$ |
+| of $0$ | $P_0 = 0$ with $(\vec P,\vec P) = 0$, the nilpotents $\hat\Upsilon$ | the solutions of $N(\tilde P) = 0$, the zero divisors together with $0$ | $\tilde P = 0$ alone | the solutions of $\tilde P^{\natural}\tilde P^{*} = 0$, among them $e_0 + ie_1$ |
 
 The three families of *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra* are therefore the three parts of one column of this table, the column of the general plain bilinear product, and not a classification of the square of the algebra in general. The other three columns are the same three equations read in the other products, and each of the other three has its reading in the article of that product.
 
@@ -292,7 +292,7 @@ Both products without the star are multiplications of a bilinear $\mathbb{C}$-al
 | $\natural$, $\varsigma$ | the two commuting anti-involutions of a general algebra, $\natural$ linear and $\varsigma$ conjugate-linear, in the slot family |
 | $\star_{K_1K_2}$ | the general product $x\star_{K_1K_2}y=K_1(x)K_2(y)$ of the slot family, with $K_1$ the first slot and $K_2$ the second |
 | $\mathrm{E}$, $\mathrm{I}_4$ | the Gram matrices of the pairings of the readings in which the two insertions agree and differ |
-| $\mathbf P$ | the vector part of $\tilde P=P_0+\mathbf P$ |
+| $\vec P$ | the vector part of $\tilde P=P_0+\vec P$ |
 
 ## Further Reading
 

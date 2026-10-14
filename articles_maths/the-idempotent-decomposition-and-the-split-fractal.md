@@ -18,13 +18,13 @@ so that $\tilde Q=\tilde Q_{11}+\tilde Q_{12}+\tilde Q_{21}+\tilde Q_{22}$. The 
 
 ## The Peirce Components and the Halves
 
-**Proposition (the components are the matrix entries).** Under the matrix realization with the standard idempotents $\tilde\Pi_1=\tfrac12(e_0+ie_3)$ and $\tilde\Pi_2=\tfrac12(e_0-ie_3)$,
+**Proposition (the components are the matrix entries).** Under the matrix realization with the standard idempotents $\tilde\Pi_+=\tfrac12(e_0+ie_3)$ and $\tilde\Pi_-=\tfrac12(e_0-ie_3)$, the two associated idempotents of the root $ie_3$ of $+1$, $(ie_3)^2=e_0$,
 
 $$
-\mathsf{M}_2(\tilde\Pi_1)=\begin{pmatrix}1&0\\0&0\end{pmatrix},\qquad \mathsf{M}_2(\tilde\Pi_2)=\begin{pmatrix}0&0\\0&1\end{pmatrix},
+\mathsf{M}_2(\tilde\Pi_+)=\begin{pmatrix}1&0\\0&0\end{pmatrix},\qquad \mathsf{M}_2(\tilde\Pi_-)=\begin{pmatrix}0&0\\0&1\end{pmatrix},
 $$
 
-and the four Peirce components of $\tilde Q$ with respect to $\tilde\Pi_1$ are the four entries of $\mathsf{M}_2(\tilde Q)$,
+and the four Peirce components of $\tilde Q$ with respect to $\tilde\Pi_+$ are the four entries of $\mathsf{M}_2(\tilde Q)$,
 
 $$
 \mathsf{M}_2(\tilde Q)=\begin{pmatrix}\mathsf{M}_2(\tilde Q_{11})&\mathsf{M}_2(\tilde Q_{12})\\ \mathsf{M}_2(\tilde Q_{21})&\mathsf{M}_2(\tilde Q_{22})\end{pmatrix} .
@@ -99,7 +99,7 @@ The Peirce decomposition of a biquaternion with respect to a primitive idempoten
 | symbol | meaning |
 |---|---|
 | $\tilde\Pi$, $\tilde\Pi'=e_0-\tilde\Pi$ | a primitive idempotent and its complement |
-| $\tilde\Pi_1,\tilde\Pi_2$ | the standard idempotents $\tfrac12(e_0\pm ie_3)$ |
+| $\tilde\Pi_+,\tilde\Pi_-$ | the standard idempotents $\tfrac12(e_0\pm ie_3)$ |
 | $\tilde Q_{11},\tilde Q_{12},\tilde Q_{21},\tilde Q_{22}$ | the four Peirce components |
 | $W_{\tilde\Pi}=\mathbb{C}\tilde\Pi\oplus\mathbb{C}\tilde\Pi'$ | the idempotent plane |
 | $K_{C_1}\times K_{C_2}$ | the split fractal, a product of complex filled Julia sets |

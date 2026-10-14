@@ -8,7 +8,7 @@ Zero Divisor and the Annihilator*). The block of this article is the antisymmetr
 multiplication
 $$
 \tilde P\diamond\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P\bigr)
-=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q ,
+=P_0\vec Q-Q_0\vec P-\vec P\times\vec Q ,
 $$
 which is alternating and without a unit (*Introduction to the Antisymmetric Quaternionic Algebra of
 Biquaternions*). The article determines its zero-divisor set in full and compares the set with the
@@ -101,8 +101,8 @@ The only subclass the rank computation separates is the subclass of the isotropi
 cone $C(\tilde P)=0$, and it separates the shape of the annihilator and not the zero-divisor class.
 
 *Proof.* The criterion is the theorem of §*The Criterion*, which holds for every nonzero element
-and mentions no scalar part; the pure elements $\tilde P=\mathbf P$ and the non-pure elements
-$\tilde P=P_0e_0+\mathbf P$ with $P_0\neq0$ satisfy it in the same way. The central-square cone
+and mentions no scalar part; the pure elements $\tilde P=\vec P$ and the non-pure elements
+$\tilde P=P_0e_0+\vec P$ with $P_0\neq0$ satisfy it in the same way. The central-square cone
 $C(\tilde P)=0$ is the locus of the rank drop of §*The Annihilator and the Rank*, and it is neither
 empty nor the whole space, so it separates the annihilators without separating the zero-divisor
 class.
@@ -179,9 +179,9 @@ itself, the line $\mathbb{C}e_0$, and the restricted operation is the zero opera
 subspace, where the operation is the negative of the cross product, the annihilator of a nonzero
 pure element in the ambient space is the line through it when the element is not isotropic, and,
 when it is, the plane spanned by the element and by
-$e_0+i\,(\mathbf u\times\mathbf v)/(\mathbf u,\mathbf u)$, where $\mathbf u+i\,\mathbf v$ is the
-element with $\mathbf u$ and $\mathbf v$ real, $(\mathbf u,\mathbf u)=(\mathbf v,\mathbf v)\neq0$
-and $(\mathbf u,\mathbf v)=0$; inside the vector subspace the annihilator is the line through the
+$e_0+i\,(\vec u\times\vec v)/(\vec u,\vec u)$, where $\vec u+i\,\vec v$ is the
+element with $\vec u$ and $\vec v$ real, $(\vec u,\vec u)=(\vec v,\vec v)\neq0$
+and $(\vec u,\vec v)=0$; inside the vector subspace the annihilator is the line through the
 element in both cases, since the cross product of a nonzero pure element with another pure element
 vanishes exactly on the line of the first. The table of the operations on the subspaces and the
 elements whose bracket vanishes are *Remarkable Subspaces under the Antisymmetric Quaternionic
@@ -190,7 +190,7 @@ Algebra of Biquaternions*.
 ## Summary
 
 For the antisymmetric quaternionic multiplication
-$\tilde P\diamond\tilde Q=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$ the zero-divisor
+$\tilde P\diamond\tilde Q=P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$ the zero-divisor
 class is total: every nonzero element is a two-sided zero divisor, with itself as the annihilating
 partner, because the block is alternating and the square of each element vanishes. The zero-divisor
 set is the punctured space $\mathbb{B}\setminus\{0\}$, and it strictly contains the common
@@ -209,7 +209,7 @@ and the only subclass the annihilator separates is the isotropic one.
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\diamond\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q$ | the antisymmetric quaternionic multiplication, the operation $\mathrm{AQA}$ |
+| $\tilde P\diamond\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)=P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$ | the antisymmetric quaternionic multiplication, the operation $\mathrm{AQA}$ |
 | $A_\diamond(\tilde P),B_\diamond(\tilde P)$ | the left and the right annihilator of $\tilde P$ in the block, equal because the block is alternating |
 | $L_{\tilde P}$ | the left multiplication operator, $L_{\tilde P}\tilde X=\tilde P\diamond\tilde X$ |
 | $C(\tilde P)=\sum_\mu P_\mu^{2}$ | the central square, the zero-divisor criterion of the parent product and the locus of the rank drop |

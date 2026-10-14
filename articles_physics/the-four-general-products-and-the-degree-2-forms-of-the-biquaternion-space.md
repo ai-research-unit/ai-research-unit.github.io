@@ -6,7 +6,7 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ c
 
 The four general products are the source of the whole band. The twelve products of *The Twelve Products and the Twelve Algebraic Structures* are the four general products together with their eight parts, and the four forms are the scalar parts of the four general products. Nothing here is proved anew. The products are the matter of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, *Relations Between the Four General Products*, *Comparison Between the Four General Products* and *The Four General Products and Operators*; the forms are the matter of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, their algebraic norms of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*, and the two on the subspaces of *Remarkable Subspaces and the Four General Products* and *Remarkable Subspaces and the Four Forms*.
 
-**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, the relations $e_k^{2}=-e_0$ and $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$, and central scalar imaginary $i$ with $i^{2}=-1$. A general element is $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu=Q_0e_0+\mathbf Q$, with complex coefficients $Q_\mu$ and vector part $\mathbf Q=\sum_{k=1}^{3}Q_ke_k$. The natural conjugation ${}^{\natural}$ fixes $i$ and negates $e_1,e_2,e_3$; the coefficientwise conjugation $\bar{\cdot}$ conjugates the four coefficients; the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, so that $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ with $\varepsilon=(1,-1,-1,-1)$. The scalar part is $\mathrm{Sc}(\tilde X)=X_0$ and the trace is $\mathrm{Tr}=2\,\mathrm{Sc}$. The complex bilinear dot product and cross product of the vector parts are $(\mathbf P,\mathbf Q)=\sum_kP_kQ_k$ and $\mathbf P\times\mathbf Q$, and $\overline{\mathbf Q}$ is the coefficientwise conjugate of the vector part. The remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and antiquaternion subspaces $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, and the Hermitian and anti-Hermitian subspaces $\mathbb{M}_+$, $\mathbb{M}_-$. All conventions, including the reading of the four pairings with one bracket, are those of *Conventions in the Biquaternion Universe*.
+**Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$, the relations $e_k^{2}=-e_0$ and $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$, and central scalar imaginary $i$ with $i^{2}=-1$. A general element is $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu=Q_0e_0+\vec Q$, with complex coefficients $Q_\mu$ and vector part $\vec Q=\sum_{k=1}^{3}Q_ke_k$. The natural conjugation ${}^{\natural}$ fixes $i$ and negates $e_1,e_2,e_3$; the coefficientwise conjugation $\bar{\cdot}$ conjugates the four coefficients; the Hermitian conjugation is ${}^{*}=\bar{\cdot}\circ{}^{\natural}$, so that $Q^{*}_\nu=\varepsilon_\nu\overline{Q_\nu}$ with $\varepsilon=(1,-1,-1,-1)$. The scalar part is $\mathrm{Sc}(\tilde X)=X_0$ and the trace is $\mathrm{Tr}=2\,\mathrm{Sc}$. The complex bilinear dot product and cross product of the vector parts are $(\vec P,\vec Q)=\sum_kP_kQ_k$ and $\vec P\times\vec Q$, and $\overline{\vec Q}$ is the coefficientwise conjugate of the vector part. The remarkable subspaces are the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and antiquaternion subspaces $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, and the Hermitian and anti-Hermitian subspaces $\mathbb{M}_+$, $\mathbb{M}_-$. All conventions, including the reading of the four pairings with one bracket, are those of *Conventions in the Biquaternion Universe*.
 
 ## The Four General Products
 
@@ -29,19 +29,19 @@ of one rule under the insertion of a conjugation into a slot. Nothing else varie
 **The scalar–vector forms.** Written on the coordinates of the two elements,
 
 $$
-\tilde P\tilde Q=\bigl[P_0Q_0-(\mathbf P,\mathbf Q)\bigr]+P_0\mathbf Q+Q_0\mathbf P+\mathbf P\times\mathbf Q,
+\tilde P\tilde Q=\bigl[P_0Q_0-(\vec P,\vec Q)\bigr]+P_0\vec Q+Q_0\vec P+\vec P\times\vec Q,
 $$
 
 $$
-\tilde P^{\natural}\tilde Q=\bigl[P_0Q_0+(\mathbf P,\mathbf Q)\bigr]+P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q,
+\tilde P^{\natural}\tilde Q=\bigl[P_0Q_0+(\vec P,\vec Q)\bigr]+P_0\vec Q-Q_0\vec P-\vec P\times\vec Q,
 $$
 
 $$
-\tilde P\tilde Q^{*}=\bigl[P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})\bigr]-P_0\overline{\mathbf Q}+\overline{Q_0}\mathbf P-\mathbf P\times\overline{\mathbf Q},
+\tilde P\tilde Q^{*}=\bigl[P_0\overline{Q_0}+(\vec P,\overline{\vec Q})\bigr]-P_0\overline{\vec Q}+\overline{Q_0}\vec P-\vec P\times\overline{\vec Q},
 $$
 
 $$
-\tilde P^{\natural}\tilde Q^{*}=\bigl[P_0\overline{Q_0}-(\mathbf P,\overline{\mathbf Q})\bigr]-P_0\overline{\mathbf Q}-\overline{Q_0}\mathbf P+\mathbf P\times\overline{\mathbf Q}.
+\tilde P^{\natural}\tilde Q^{*}=\bigl[P_0\overline{Q_0}-(\vec P,\overline{\vec Q})\bigr]-P_0\overline{\vec Q}-\overline{Q_0}\vec P+\vec P\times\overline{\vec Q}.
 $$
 
 The first two are $\mathbb{C}$-bilinear in both slots; the last two are $\mathbb{C}$-linear in the first slot and conjugate-linear in the second. No two of the four agree on every pair.
@@ -53,9 +53,9 @@ The first two are $\mathbb{C}$-bilinear in both slots; the last two are $\mathbb
 The four general products are not four unrelated rules: the two insertions are independent, and every link between the four is a consequence of that single distinction. The two conjugations separate the scalar part of a factor from its vector part, by the splitting identities
 
 $$
-\tilde P\tilde Q\pm\tilde P^{\natural}\tilde Q=2P_0\tilde Q \ \text{and}\ 2\mathbf P\tilde Q,
+\tilde P\tilde Q\pm\tilde P^{\natural}\tilde Q=2P_0\tilde Q \ \text{and}\ 2\vec P\tilde Q,
 \qquad
-\tilde P\tilde Q^{*}\pm\tilde P^{\natural}\tilde Q^{*}=2P_0\tilde Q^{*}\ \text{and}\ 2\mathbf P\tilde Q^{*},
+\tilde P\tilde Q^{*}\pm\tilde P^{\natural}\tilde Q^{*}=2P_0\tilde Q^{*}\ \text{and}\ 2\vec P\tilde Q^{*},
 $$
 
 and the same two identities hold with the two vector parts in place of the scalar parts. The ${}^{\natural}$ of the quaternionic product and the ${}^{*}$ of the sesquilinear product return a product with the slots exchanged, which is why the scalar parts of the two are symmetric and conjugate-symmetric respectively, while no one of the four general products is commutative. The two remaining conjugations of the algebra add no new scalar part: $\mathrm{Sc}(\bar{\tilde P}\tilde Q)=\mathrm{Sc}(\tilde Q^{\natural}\tilde P^{*})$ and $\mathrm{Sc}(\tilde P\bar{\tilde Q})=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})$.
@@ -146,7 +146,7 @@ The four products are read physically as composition, causality, probability and
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | the biquaternion algebra, basis $e_0,e_1,e_2,e_3$, central imaginary $i$ |
-| $\tilde P=P_0e_0+\mathbf P$ | a biquaternion, its scalar part and vector part |
+| $\tilde P=P_0e_0+\vec P$ | a biquaternion, its scalar part and vector part |
 | ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ | the natural, the coefficientwise and the Hermitian conjugation |
 | $\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$, $\tilde P\tilde Q^{*}$, $\tilde P^{\natural}\tilde Q^{*}$ | the four general products |
 | $K_1(\tilde P)K_2(\tilde Q)$ | the general product as one multiplication with two inserted conjugations |

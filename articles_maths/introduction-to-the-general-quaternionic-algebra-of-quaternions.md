@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The quaternion algebra $\mathbb{H}$ is the four-dimensional real algebra with basis $e_0 = 1, e_1, e_2, e_3$, the multiplication rules $e_1^2 = e_2^2 = e_3^2 = e_1e_2e_3 = -e_0$ and the conjugation $\tilde q^{\natural} = q_0 - \mathbf q$; the basis, the table, the scalar–vector splitting and the conjugation are those of *Quaternion Algebra*, and they are used here without restatement. A quaternion is written $\tilde q = q_0e_0 + \mathbf q$ with $\mathbf q = q_1e_1 + q_2e_2 + q_3e_3$, the glyph of the quaternion layer. The real space $\mathbb{H}$ carries six operations, set out in *The 6 Products of the Quaternion Real Space* and structured in *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*. This article introduces the algebra carried by the second of its two bilinear operations, the **general quaternionic bilinear product**
+The quaternion algebra $\mathbb{H}$ is the four-dimensional real algebra with basis $e_0 = 1, e_1, e_2, e_3$, the multiplication rules $e_1^2 = e_2^2 = e_3^2 = e_1e_2e_3 = -e_0$ and the conjugation $\tilde q^{\natural} = q_0 - \vec q$; the basis, the table, the scalar–vector splitting and the conjugation are those of *Quaternion Algebra*, and they are used here without restatement. A quaternion is written $\tilde q = q_0e_0 + \vec q$ with $\vec q = q_1e_1 + q_2e_2 + q_3e_3$, the glyph of the quaternion layer. The real space $\mathbb{H}$ carries six operations, set out in *The 6 Products of the Quaternion Real Space* and structured in *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*. This article introduces the algebra carried by the second of its two bilinear operations, the **general quaternionic bilinear product**
 
 $$
 \tilde p \star \tilde q = \tilde p^{\natural}\tilde q .
@@ -19,20 +19,20 @@ This article does three things. It fixes the product and its coordinate rule. It
 **Definition.** For $\tilde p = p_0e_0 + p_1e_1 + p_2e_2 + p_3e_3$ and $\tilde q = q_0e_0 + q_1e_1 + q_2e_2 + q_3e_3$ in $\mathbb{H}$, the **general quaternionic bilinear product** is
 
 $$
-\tilde p \star \tilde q = \tilde p^{\natural}\tilde q , \qquad \tilde p^{\natural} = p_0 - \mathbf p = p_0 - p_1e_1 - p_2e_2 - p_3e_3 .
+\tilde p \star \tilde q = \tilde p^{\natural}\tilde q , \qquad \tilde p^{\natural} = p_0 - \vec p = p_0 - p_1e_1 - p_2e_2 - p_3e_3 .
 $$
 
 The product carries the star throughout the corpus; the bare juxtaposition is reserved for the associative multiplication $\tilde p\tilde q$ of $(\mathbb{H}, +, \cdot)$, the plain product of the general plain algebra of the same space, and the two are never interchanged.
 
 ### The Coordinate Rule
 
-**Proposition (the coordinate rule).** With $\mathbf p, \mathbf q$ the vector parts and $\mathbf p \times \mathbf q$ the cross product,
+**Proposition (the coordinate rule).** With $\vec p, \vec q$ the vector parts and $\vec p \times \vec q$ the cross product,
 
 $$
-\tilde p \star \tilde q = \bigl(p_0q_0 + \mathbf p \cdot \mathbf q\bigr)e_0 + p_0\mathbf q - q_0\mathbf p - \mathbf p \times \mathbf q .
+\tilde p \star \tilde q = \bigl(p_0q_0 + \vec p \cdot \vec q\bigr)e_0 + p_0\vec q - q_0\vec p - \vec p \times \vec q .
 $$
 
-*Proof.* Expand $\tilde p^{\natural}\tilde q = (p_0 - \mathbf p)(q_0 + \mathbf q) = p_0q_0 - \mathbf p\mathbf q + p_0\mathbf q - q_0\mathbf p$ and substitute the product of two pure quaternions, $\mathbf p\mathbf q = -\,\mathbf p \cdot \mathbf q + \mathbf p \times \mathbf q$ (*Quaternion Algebra*).
+*Proof.* Expand $\tilde p^{\natural}\tilde q = (p_0 - \vec p)(q_0 + \vec q) = p_0q_0 - \vec p\vec q + p_0\vec q - q_0\vec p$ and substitute the product of two pure quaternions, $\vec p\vec q = -\,\vec p \cdot \vec q + \vec p \times \vec q$ (*Quaternion Algebra*).
 
 **Proposition (bilinearity and the exchange law).** The product is $\mathbb{R}$-bilinear. It is neither commutative nor anticommutative. The two orderings are exchanged by the conjugation,
 
@@ -112,7 +112,7 @@ The quaternionic product and the plain product are the two bilinear laws on one 
 
 ## Summary
 
-The general quaternionic algebra of quaternions is the real space $\mathbb{H}$ under the product $\tilde p \star \tilde q = \tilde p^{\natural}\tilde q$, with the coordinate rule $(p_0q_0 + \mathbf p \cdot \mathbf q)e_0 + p_0\mathbf q - q_0\mathbf p - \mathbf p \times \mathbf q$ and the exchange law $\tilde q \star \tilde p = (\tilde p \star \tilde q)^{\natural}$. The product is not associative, its associator being $(\tilde q^{\natural}\tilde p - \tilde p^{\natural}\tilde q^{\natural})\tilde r$, nonzero at $(e_1,e_0,e_0)$ and at $24$ of the $64$ basis triples. The element $e_0$ is a left unit and not a right unit, and no right unit exists, so the algebra is left-unital and not unital and the inversion theory of the block is the theory of the two one-sided equations. The quaternion space carries two bilinear laws, $\tilde p\tilde q$ and $\tilde p^{\natural}\tilde q$, with four companion operations beside them; the quaternionic product is the left-unital, non-associative, zero-divisor-free member.
+The general quaternionic algebra of quaternions is the real space $\mathbb{H}$ under the product $\tilde p \star \tilde q = \tilde p^{\natural}\tilde q$, with the coordinate rule $(p_0q_0 + \vec p \cdot \vec q)e_0 + p_0\vec q - q_0\vec p - \vec p \times \vec q$ and the exchange law $\tilde q \star \tilde p = (\tilde p \star \tilde q)^{\natural}$. The product is not associative, its associator being $(\tilde q^{\natural}\tilde p - \tilde p^{\natural}\tilde q^{\natural})\tilde r$, nonzero at $(e_1,e_0,e_0)$ and at $24$ of the $64$ basis triples. The element $e_0$ is a left unit and not a right unit, and no right unit exists, so the algebra is left-unital and not unital and the inversion theory of the block is the theory of the two one-sided equations. The quaternion space carries two bilinear laws, $\tilde p\tilde q$ and $\tilde p^{\natural}\tilde q$, with four companion operations beside them; the quaternionic product is the left-unital, non-associative, zero-divisor-free member.
 
 ## Summary of Notation
 
@@ -121,12 +121,12 @@ The general quaternionic algebra of quaternions is the real space $\mathbb{H}$ u
 | $\mathbb{H}$ | the quaternion algebra, the real space of the block |
 | $e_0,e_1,e_2,e_3$ | the basis, $e_0$ the identity, $e_k^2 = -e_0$ |
 | $\tilde p = \sum_\mu p_\mu e_\mu$ | a general element and its four real coordinates |
-| $\mathbf p = \sum_k p_ke_k$ | the vector part, an element of $\mathbb{R}^3$ |
-| $\tilde p^{\natural} = p_0 - \mathbf p$ | the conjugation |
+| $\vec p = \sum_k p_ke_k$ | the vector part, an element of $\mathbb{R}^3$ |
+| $\tilde p^{\natural} = p_0 - \vec p$ | the conjugation |
 | $\tilde p \star \tilde q = \tilde p^{\natural}\tilde q$ | the general quaternionic bilinear product |
 | $[\tilde p,\tilde q,\tilde r]$ | the associator of the product |
 | $N$ | the quaternionic bilinear algebraic norm, *Norm and Invertibility in the General Quaternionic Algebra*, below this article in this category |
-| $\beta(\tilde p,\tilde q) = p_0q_0 + \mathbf p \cdot \mathbf q$ | the polar form of $N$ |
+| $\beta(\tilde p,\tilde q) = p_0q_0 + \vec p \cdot \vec q$ | the polar form of $N$ |
 
 ## Further Reading
 

@@ -16,7 +16,7 @@ the annihilator is the kernel of that operator, so it is a linear subspace.
 The block of this article is the **antisymmetric quaternionic multiplication**
 $$
 \tilde P\diamond\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde
-P\bigr)=P_0\mathbf Q-Q_0\mathbf P-\mathbf P\times\mathbf Q,
+P\bigr)=P_0\vec Q-Q_0\vec P-\vec P\times\vec Q,
 $$
 scalar part zero and vector part the mixed term with the cross term subtracted (*Introduction to
 the Antisymmetric Quaternionic Algebra of Biquaternions*). It is alternating, so every nonzero
@@ -67,10 +67,10 @@ therefore one set, the kernel of $L_{\tilde P}$.
 
 ## The Multiplication Operator and the Characteristic Polynomial
 
-**In the basis $e_0,e_1,e_2,e_3$ the operator $L_{\tilde P}$ of an element $\tilde P=P_0e_0+\mathbf P$ has trace $3P_0$, determinant $0$ and characteristic polynomial $t(t-P_0)(t^{2}-2P_0t+C(\tilde P))$.**
+**In the basis $e_0,e_1,e_2,e_3$ the operator $L_{\tilde P}$ of an element $\tilde P=P_0e_0+\vec P$ has trace $3P_0$, determinant $0$ and characteristic polynomial $t(t-P_0)(t^{2}-2P_0t+C(\tilde P))$.**
 
 **Proposition (the operator and its characteristic polynomial).** In the basis $e_0,e_1,e_2,e_3$
-the operator $L_{\tilde P}$ of an element $\tilde P=P_0e_0+\mathbf P$ has matrix
+the operator $L_{\tilde P}$ of an element $\tilde P=P_0e_0+\vec P$ has matrix
 $$
 \begin{pmatrix}
 0 & 0 & 0 & 0 \\
@@ -85,10 +85,10 @@ $$
 C(\tilde P)=\sum_{\mu=0}^{3}P_\mu^{2}.
 $$
 
-*Proof.* The first column is $-\mathbf P$, because $e_0$ has zero scalar part and the mixed term
-$-X_0\mathbf P$ survives; the remaining three columns are $P_0e_k-\mathbf P\times e_k$. The lower
-three-by-three block is $P_0\mathrm{I}_3-[\mathbf P]_\times$, whose eigenvalues are $P_0$ and
-$P_0\pm is$ with $s^{2}=(\mathbf P,\mathbf P)$, of characteristic polynomial
+*Proof.* The first column is $-\vec P$, because $e_0$ has zero scalar part and the mixed term
+$-X_0\vec P$ survives; the remaining three columns are $P_0e_k-\vec P\times e_k$. The lower
+three-by-three block is $P_0\mathrm{I}_3-[\vec P]_\times$, whose eigenvalues are $P_0$ and
+$P_0\pm is$ with $s^{2}=(\vec P,\vec P)$, of characteristic polynomial
 $t^{2}-2P_0t+C(\tilde P)$; the extra eigenvalue $0$ is the first column, and the trace $3P_0$ is
 the sum of the four eigenvalues. The determinant is the constant term, which is zero.
 
@@ -105,14 +105,14 @@ $\tilde P$ are
 | $\tilde P\neq0$, $C(\tilde P)\neq0$ | $\neq0$ | $3$ | $1$ |
 | $\tilde P\neq0$, $C(\tilde P)=0$ | $0$ | $2$ | $2$ |
 
-*Proof.* Write $N=P_0\mathrm{I}_3-[\mathbf P]_\times$ for the lower block, so that
-$N\mathbf P=P_0\mathbf P$. If $C(\tilde P)\neq0$ the eigenvalues of $N$ have no zero among them
+*Proof.* Write $N=P_0\mathrm{I}_3-[\vec P]_\times$ for the lower block, so that
+$N\vec P=P_0\vec P$. If $C(\tilde P)\neq0$ the eigenvalues of $N$ have no zero among them
 when $P_0\neq0$, and when $P_0=0$ the two nonzero eigenvalues $\pm is$ with $s^{2}=C(\tilde P)$
-give rank two, whose image is the plane orthogonal to $\mathbf P$; the first column $-\mathbf P$ is
-not in it because $(\mathbf P,\mathbf P)=C(\tilde P)\neq0$, so the rank is three in both cases. If
+give rank two, whose image is the plane orthogonal to $\vec P$; the first column $-\vec P$ is
+not in it because $(\vec P,\vec P)=C(\tilde P)\neq0$, so the rank is three in both cases. If
 $C(\tilde P)=0$ and $\tilde P\neq0$ the block $N$ has rank two and the first column adds nothing,
-either because $N\mathbf P=P_0\mathbf P$ or, when $P_0=0$, because the isotropic $\mathbf P$ lies
-in the image of $[\mathbf P]_\times$; the rank is two. The annihilator has dimension
+either because $N\vec P=P_0\vec P$ or, when $P_0=0$, because the isotropic $\vec P$ lies
+in the image of $[\vec P]_\times$; the rank is two. The annihilator has dimension
 $4-\operatorname{rank}L_{\tilde P}$.
 
 **Corollary (the line $\mathbb{C}\tilde P$ is always in the annihilator).** For every $\tilde P$
@@ -124,10 +124,10 @@ $\mathbb{C}\tilde P$ exactly off the cone, and on the cone it is the larger plan
 one-dimensional by the rank table, so it is the line; on the cone it is two-dimensional and
 contains the line.
 
-**Example.** At the element $e_0$, $L_{e_0}\tilde X=\mathbf X$ vanishes exactly on the pure
+**Example.** At the element $e_0$, $L_{e_0}\tilde X=\vec X$ vanishes exactly on the pure
 scalars, so the annihilator is the centre $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$, of dimension
-one, and $C(e_0)=1\neq0$. At the element $e_1+ie_2$, of vector part $\mathbf P=e_1+ie_2$ with
-$(\mathbf P,\mathbf P)=1+i^{2}=0$, the annihilator is the plane
+one, and $C(e_0)=1\neq0$. At the element $e_1+ie_2$, of vector part $\vec P=e_1+ie_2$ with
+$(\vec P,\vec P)=1+i^{2}=0$, the annihilator is the plane
 $$
 A_\diamond(e_1+ie_2)=\mathbb{C}\{e_1+ie_2,\ e_3+ie_0\}.
 $$
@@ -149,18 +149,18 @@ on the cone.
 
 ## The Annihilator on the Remarkable Subspaces
 
-**On every remarkable subspace the annihilator is the intersection of the ambient annihilator with the subspace: at a nonzero central element it is the centre $\mathbb{C}e_0$, on the vector subspace it meets the subspace in the line $\mathbb{C}\mathbf P$, the ambient annihilator being the plane $\mathbb{C}e_0\oplus\mathbb{C}\mathbf P$ when the pure element is isotropic and the line $\mathbb{C}\mathbf P$ alone when it is not, and every nonzero element of a Hermitian or anti-Hermitian subspace has the nonzero partner it has in the ambient block.**
+**On every remarkable subspace the annihilator is the intersection of the ambient annihilator with the subspace: at a nonzero central element it is the centre $\mathbb{C}e_0$, on the vector subspace it meets the subspace in the line $\mathbb{C}\vec P$, the ambient annihilator being the plane $\mathbb{C}e_0\oplus\mathbb{C}\vec P$ when the pure element is isotropic and the line $\mathbb{C}\vec P$ alone when it is not, and every nonzero element of a Hermitian or anti-Hermitian subspace has the nonzero partner it has in the ambient block.**
 
 **The centre.** A nonzero central element $\tilde P=\lambda e_0$ has
-$L_{\lambda e_0}\tilde X=\lambda\mathbf X$, the scalar multiple of the projection onto the vector
+$L_{\lambda e_0}\tilde X=\lambda\vec X$, the scalar multiple of the projection onto the vector
 subspace, so its annihilator is the centre $\mathbb{C}e_0$: the central elements annihilate the
 centre alone.
 
 **The vector subspace.** On the vector subspace, where $P_0=0$ and $\tilde X$ is pure, the
-operation is the negative cross product $\tilde P\diamond\tilde X=-\mathbf P\times\mathbf X$. The
-annihilator of a nonzero pure element meets the vector subspace in the line $\mathbb{C}\mathbf P$
-and is the plane $\mathbb{C}e_0\oplus\mathbb{C}\mathbf P$ of the ambient space when $\mathbf P$ is
-isotropic, the line $\mathbb{C}\mathbf P$ alone when it is not.
+operation is the negative cross product $\tilde P\diamond\tilde X=-\vec P\times\vec X$. The
+annihilator of a nonzero pure element meets the vector subspace in the line $\mathbb{C}\vec P$
+and is the plane $\mathbb{C}e_0\oplus\mathbb{C}\vec P$ of the ambient space when $\vec P$ is
+isotropic, the line $\mathbb{C}\vec P$ alone when it is not.
 
 **The Hermitian and anti-Hermitian subspaces.** The restriction of the block to a subspace
 annihilates the same elements as the ambient block intersected with the subspace, so every nonzero

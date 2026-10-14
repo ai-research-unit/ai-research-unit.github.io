@@ -6,7 +6,7 @@ This article is the operator article of the antisymmetric plain algebra, the alg
 Lie Bracket: Rotations and the Jacobi Identity*. Its product is the bracket
 
 $$
-\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf P\times\mathbf Q,
+\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\vec P\times\vec Q,
 $$
 
 the antisymmetrisation of the general plain bilinear product, of scalar part zero and values in the vector subspace
@@ -65,12 +65,12 @@ Every statement below is written in that convention and the factor is displayed 
 
 Throughout, $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$,
 $e_1e_2=e_3$, $e_k^{2}=-e_0$ and central imaginary $i$; a general element is
-$\tilde Q=Q_0e_0+\mathbf Q$ with vector part $\mathbf Q=Q_1e_1+Q_2e_2+Q_3e_3$. The centre is
+$\tilde Q=Q_0e_0+\vec Q$ with vector part $\vec Q=Q_1e_1+Q_2e_2+Q_3e_3$. The centre is
 $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$, the derived subspace is $\mathrm{Vect}(\mathbb{B})=\{ \mathrm{Sc}=0 \}$, the
 sectors are $\mathbb{M}_\pm=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}$, and the conjugations are the complex
 $\bar{\cdot}$, the natural ${\natural}$ and the Hermitian ${}^{*}=\bar{\cdot}\circ{\natural}$ of *Conventions in the
 Biquaternion Universe*. The bracket is written $\tilde P\wedge\tilde Q$ and its result is also written
-$\mathbf P\times\mathbf Q$; the commutator is $[\tilde P,\tilde Q]=\tilde P\tilde Q-\tilde Q\tilde P=2\,\tilde P\wedge\tilde Q$.
+$\vec P\times\vec Q$; the commutator is $[\tilde P,\tilde Q]=\tilde P\tilde Q-\tilde Q\tilde P=2\,\tilde P\wedge\tilde Q$.
 
 ## The Multiplication Operators and Their Composition
 
@@ -90,7 +90,7 @@ L^{\wedge}_{\tilde A}=\operatorname{ad}^{\wedge}_{\tilde A}=\tfrac12\operatornam
 $$
 
 so the left multiplications of the bracket are exactly its **inner derivations**, and the halved adjoint coincides
-with the cross-product operator $\mathbf A\times$ on the vector subspace and vanishes on the centre.
+with the cross-product operator $\vec A\times$ on the vector subspace and vanishes on the centre.
 
 *Proof.* Alternation gives $\tilde X\wedge\tilde A=-\tilde A\wedge\tilde X$, hence $R^{\wedge}=-L^{\wedge}$; the
 definition $\operatorname{ad}^{\wedge}_{\tilde A}(\tilde X)=\tilde A\wedge\tilde X$ gives the second identity, and
@@ -138,7 +138,7 @@ algebras from the bracket onto the inner derivations with kernel the centre $\ma
 $\mathrm{Inn}(\mathfrak{g})=\{L^{\wedge}_{\tilde A}\}\cong\mathbb{B}/\mathbb{C}e_0\cong\mathfrak{sl}(2,\mathbb{C})$,
 of complex dimension three: the adjoint representation is faithful on the derived algebra and invisible on the centre.
 
-*Proof.* The kernel is the set of $\tilde A$ with $\mathbf A\times=0$, that is $\tilde A$ central; the quotient is the
+*Proof.* The kernel is the set of $\tilde A$ with $\vec A\times=0$, that is $\tilde A$ central; the quotient is the
 vector subspace, whose cross-product algebra is $\mathfrak{so}(3,\mathbb{C})\cong\mathfrak{sl}(2,\mathbb{C})$ by *The
 Lie Algebra of the Antisymmetric Plain Algebra*.
 
@@ -152,12 +152,12 @@ direction is a phase the bracket cannot rotate, the operator form of the centre 
 
 **Definition.** The **invariant form** of the bracket is the Killing form
 $\kappa(\tilde P,\tilde Q)=\operatorname{Tr}(\operatorname{ad}^{\wedge}_{\tilde P}\operatorname{ad}^{\wedge}_{\tilde Q})$,
-computed with the halved adjoints; on general elements $\kappa(\tilde P,\tilde Q)=-2\,\mathbf P\!\cdot\!\mathbf Q$,
+computed with the halved adjoints; on general elements $\kappa(\tilde P,\tilde Q)=-2\,\vec P\!\cdot\!\vec Q$,
 with Gram matrix $\operatorname{diag}(0,-2,-2,-2)$ in the basis $(e_0,e_1,e_2,e_3)$. It kills the scalar part, is
 symmetric, is degenerate with radical the centre, and its restriction to the vector subspace is non-degenerate of real
 signature $(3,3)$.
 
-*Proof.* This is *The Killing Form of the Antisymmetric Plain Algebra*: the value $-2\,\mathbf P\!\cdot\!\mathbf Q$,
+*Proof.* This is *The Killing Form of the Antisymmetric Plain Algebra*: the value $-2\,\vec P\!\cdot\!\vec Q$,
 the Gram matrix, the radical and the signature are its first section, and the invariance
 $\kappa(\operatorname{ad}_{\tilde P}\tilde X,\tilde Q)+\kappa(\tilde X,\operatorname{ad}_{\tilde P}\tilde Q)=0$ is
 its invariance theorem.
@@ -192,7 +192,7 @@ bracket multiplication is a **generator**, the infinitesimal form of an orthogon
 operator of an observable; the observable is the Hermitian multiple, a dictionary read in the next section.
 
 **Theorem (the ordinary form agrees in sign on the family).** For the plain form of the ordinary row,
-$B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-\mathbf P\!\cdot\!\mathbf Q$,
+$B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-\vec P\!\cdot\!\vec Q$,
 
 $$
 B\bigl(L^{\wedge}_{\tilde A}\tilde X,\tilde Y\bigr)+B\bigl(\tilde X,L^{\wedge}_{\tilde A}\tilde Y\bigr)=0,
@@ -288,7 +288,7 @@ particular every conjugation by a unit, $T_{\tilde U}(\tilde P)=\tilde U\tilde P
 the bracket.
 
 *Proof.* The radical of $\kappa$ is the centre, so a form-preserving operator preserves the centre and acts on it by
-an invertible scalar $C_\lambda$; on the vector subspace, where $\kappa=-2\,\mathbf P\!\cdot\!\mathbf Q$ is
+an invertible scalar $C_\lambda$; on the vector subspace, where $\kappa=-2\,\vec P\!\cdot\!\vec Q$ is
 non-degenerate, it acts by a complex-orthogonal map, and non-degeneracy forbids a component carrying the centre into
 the vector subspace. A conjugation is an algebra automorphism, so it preserves the bracket and the form built from
 it; the automorphism group is $\operatorname{Aut}(\mathfrak{g})\cong\mathbb{C}^{\times}\times PGL(2,\mathbb{C})$ by
@@ -521,7 +521,7 @@ and $[\operatorname{ad}_{\tilde A},\operatorname{ad}_{\tilde B}]=\operatorname{a
 checked to machine precision (deviation below $10^{-14}$) on $80$ random triples, together with the Leibniz rule for
 $L^{\wedge}_{\tilde A}$ on the bracket. The skew-adjointness of $L^{\wedge}_{\tilde A}$ for $\kappa$ and for $B$, the
 negating adjoint $(L^{\wedge}_{\tilde A})^{\kappa}=L^{\wedge}_{-\tilde A}$, the Gram matrix
-$\operatorname{diag}(0,-2,-2,-2)$, the value $\kappa=-2\,\mathbf P\!\cdot\!\mathbf Q$, the self-adjointness of the
+$\operatorname{diag}(0,-2,-2,-2)$, the value $\kappa=-2\,\vec P\!\cdot\!\vec Q$, the self-adjointness of the
 algebraic norm sandwich, the self-adjointness criterion of a composite, the preservation of $\kappa$ and of the bracket by
 the conjugations by units, the form-preservation and the anti-preservation of the bracket by the reflection, the
 derivation property of $D_0$ and the matrix identity
@@ -583,7 +583,7 @@ cross-product operator on the vector subspace and vanishing on the centre; the n
 bracket law $[L^{\wedge}_{\tilde A},L^{\wedge}_{\tilde B}]=L^{\wedge}_{\tilde A\wedge\tilde B}=\tfrac12L^{\wedge}_{[\tilde A,\tilde B]}$
 holds exactly, and $[\operatorname{ad}_{\tilde A},\operatorname{ad}_{\tilde B}]=\operatorname{ad}_{[\tilde A,\tilde B]}$;
 the map $\tilde A\mapsto L^{\wedge}_{\tilde A}$ has kernel the centre and image $\mathfrak{sl}(2,\mathbb{C})$; the
-invariant form $\kappa(\tilde P,\tilde Q)=\operatorname{Tr}(\operatorname{ad}^{\wedge}_{\tilde P}\operatorname{ad}^{\wedge}_{\tilde Q})=-2\,\mathbf P\!\cdot\!\mathbf Q$
+invariant form $\kappa(\tilde P,\tilde Q)=\operatorname{Tr}(\operatorname{ad}^{\wedge}_{\tilde P}\operatorname{ad}^{\wedge}_{\tilde Q})=-2\,\vec P\!\cdot\!\vec Q$
 of Gram matrix $\operatorname{diag}(0,-2,-2,-2)$ makes every multiplication operator **skew-adjoint**, the adjoint
 negating the parameter, and the ordinary form $B$ agrees in sign on the family; the one-sided self-adjoint operators
 are exactly the central parameters, on which the operator vanishes, the Hermitian multiples $iL^{\wedge}_{\tilde A}$
@@ -645,7 +645,7 @@ with the factor of the halving displayed; this closes the acting maps on the bra
 the centre and image $\mathfrak{sl}(2,\mathbb{C})$.
 
 The bilinear form of the band is its own invariant form, the Killing form
-$\kappa(\tilde P,\tilde Q)=\operatorname{Tr}(\operatorname{ad}^{\wedge}_{\tilde P}\operatorname{ad}^{\wedge}_{\tilde Q})=-2\,\mathbf P\!\cdot\!\mathbf Q$
+$\kappa(\tilde P,\tilde Q)=\operatorname{Tr}(\operatorname{ad}^{\wedge}_{\tilde P}\operatorname{ad}^{\wedge}_{\tilde Q})=-2\,\vec P\!\cdot\!\vec Q$
 of Gram matrix $\operatorname{diag}(0,-2,-2,-2)$, and the adjoint **negates the parameter**,
 $(L^{\wedge}_{\tilde A})^{\kappa}=L^{\wedge}_{-\tilde A}$; it keeps the side, neither conjugating nor swapping, and
 the ordinary form $B$ agrees in sign on the family. Every type criterion follows: every multiplication operator is
@@ -670,13 +670,13 @@ is their Hermitian multiple. What is proved is the algebra; what is named is the
 |---|---|
 | $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | The biquaternion algebra, $\cong M_2(\mathbb{C})$ |
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^{2}=-e_0$, $e_1e_2=e_3$ |
-| $\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf P\times\mathbf Q$ | The bracket, the band's product |
+| $\tilde P\wedge\tilde Q=\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\vec P\times\vec Q$ | The bracket, the band's product |
 | $L^{\wedge}_{\tilde A}(\tilde X)=\tilde A\wedge\tilde X$ | Left multiplication; the halved adjoint |
 | $R^{\wedge}_{\tilde A}(\tilde X)=\tilde X\wedge\tilde A$ | Right multiplication; $R^{\wedge}_{\tilde A}=-L^{\wedge}_{\tilde A}$ |
 | $\operatorname{ad}^{\wedge}_{\tilde A}=\tfrac12\operatorname{ad}_{\tilde A}$ | The halving that separates the block's adjoint from the commutator adjoint |
 | $\operatorname{ad}_{\tilde A}=[\tilde A,\ \cdot\ ]=2L^{\wedge}_{\tilde A}$ | The commutator adjoint |
-| $\kappa(\tilde P,\tilde Q)=-2\,\mathbf P\!\cdot\!\mathbf Q$ | The invariant (Killing) form; $\operatorname{diag}(0,-2,-2,-2)$ |
-| $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-\mathbf P\!\cdot\!\mathbf Q$ | The ordinary plain form; agrees in sign on the family |
+| $\kappa(\tilde P,\tilde Q)=-2\,\vec P\!\cdot\!\vec Q$ | The invariant (Killing) form; $\operatorname{diag}(0,-2,-2,-2)$ |
+| $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-\vec P\!\cdot\!\vec Q$ | The ordinary plain form; agrees in sign on the family |
 | $\bigl[L^{\wedge}_{\tilde A},L^{\wedge}_{\tilde B}\bigr]=L^{\wedge}_{\tilde A\wedge\tilde B}=\tfrac12L^{\wedge}_{[\tilde A,\tilde B]}$ | The bracket law of the operators |
 | $\bigl(L^{\wedge}_{\tilde A}\bigr)^{\kappa}=-L^{\wedge}_{\tilde A}=L^{\wedge}_{-\tilde A}$ | The adjoint negates the parameter |
 | $L^{\wedge}_{\tilde A}$ skew-adjoint for all $\tilde A$; self-adjoint $\iff\tilde A$ central | The one-sided type criterion |
@@ -707,7 +707,7 @@ is their Hermitian multiple. What is proved is the algebra; what is named is the
   for the adjoint map as a homomorphism with kernel the centre, the inner derivations as its image, and
   $\operatorname{ad}_{[x,y]}=[\operatorname{ad}_x,\operatorname{ad}_y]$.
 - Mathematics article *The Killing Form of the Antisymmetric Plain Algebra*
-  (`articles_maths/the-killing-form-of-the-antisymmetric-plain-algebra.md`), for $\kappa=-2\,\mathbf P\!\cdot\!\mathbf Q$,
+  (`articles_maths/the-killing-form-of-the-antisymmetric-plain-algebra.md`), for $\kappa=-2\,\vec P\!\cdot\!\vec Q$,
   its Gram matrix, its radical and signature, its invariance and the Casimir.
 - Mathematics article *The Lie Algebra of the Antisymmetric Plain Algebra*
   (`articles_maths/the-lie-algebra-of-the-antisymmetric-plain-algebra.md`), for the centre, the derived algebra, the

@@ -49,7 +49,7 @@ $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2
 $e_je_k=-\delta_{jk}e_0+\varepsilon_{jkl}e_l$; $i$ is the central scalar imaginary. The conjugations are
 ${}^{\natural}$, $\bar{\cdot}$ and ${}^{*}=\bar{\cdot}\circ{}^{\natural}$. The biquaternion norm is
 $N(\tilde Q)=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^{2}$, whose vanishing locus is the cone; the trace
-is $\mathrm{Tr}=2\,\mathrm{Sc}$; the material coordinate is $\tilde Q=ict\,e_0+\mathbf x$. The twelve
+is $\mathrm{Tr}=2\,\mathrm{Sc}$; the material coordinate is $\tilde Q=ict\,e_0+\vec x$. The twelve
 structures are cited by their three-letter names, and the left and right annihilators are written
 $A_\star(\tilde P)$ and $B_\star(\tilde P)$ as in the mathematics companion.
 
@@ -159,14 +159,14 @@ the square-zero class.
 ## The Hyperplane of a Scalar-Valued Coupling
 
 Two structures collapse their product to a form: the symmetric quaternionic algebra
-$\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0$ with $N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$,
+$\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0$ with $N(\tilde P,\tilde Q)=P_0Q_0+(\vec P,\vec Q)$,
 and the symmetric plain sesqualgebra $\tilde P\star\tilde Q=H(\tilde P,\tilde Q)e_0$ with
-$H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})$. For each, the annihilator of
+$H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\vec P,\overline{\vec Q})$. For each, the annihilator of
 any nonzero element is the hyperplane cut by the form,
 
 $$
-P_0X_0+(\mathbf P,\mathbf X)=0\quad\text{(SQA)},\qquad
-P_0\overline{X_0}+(\mathbf P,\overline{\mathbf X})=0\quad\text{(SPS)} .
+P_0X_0+(\vec P,\vec X)=0\quad\text{(SQA)},\qquad
+P_0\overline{X_0}+(\vec P,\overline{\vec X})=0\quad\text{(SPS)} .
 $$
 
 The physical object is a coupling that returns a number. A number has no slot in which to act, so the
@@ -192,8 +192,8 @@ in *Why Probability Values Are Central: the Symmetric Sesquilinear Product and I
 The four antisymmetric structures are the brackets of the algebra, and their annihilators are the sets of
 partners with which the bracket vanishes, that is, the **centralisers** of the element in the three cases
 where the bracket is a commutator and its analogue. The clean physical case is the plain commutator
-$\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf P\times\mathbf Q$, whose annihilator is
-$\mathbb{C}e_0\oplus\mathbb{C}\mathbf P$: the partners the bracket sends to zero are the centre and the
+$\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\vec P\times\vec Q$, whose annihilator is
+$\mathbb{C}e_0\oplus\mathbb{C}\vec P$: the partners the bracket sends to zero are the centre and the
 element's own direction. Two facts follow, and both are physical.
 
 - **An element lies in its own annihilator.** The bracket of an element with itself is zero, because a
@@ -235,13 +235,13 @@ action the internal symmetry carries. *Annihilators of the General Plain Algebra
 The product is the Jordan product $\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$, which is commutative, so
 there is a single annihilator. Off the cone with $P_0\neq0$ it is $\{0\}$; on the cone with $P_0\neq0$ it
 is the line $\mathbb{C}\tilde P^{\natural}$; and at a pure element it is the plane
-$\{X_0=0,\ (\mathbf P,\mathbf X)=0\}$. A pure operation therefore kills the plane of operations
+$\{X_0=0,\ (\vec P,\vec X)=0\}$. A pure operation therefore kills the plane of operations
 orthogonal to it. The reading is *The Symmetrised Material Composition and the Jordan Identity*.
 
 ### $\mathrm{APA}$, the antisymmetric plain algebra — rotation
 
-The product is the commutator $\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\mathbf P\times\mathbf Q$. At
-a non-central element the annihilator is the plane $\mathbb{C}e_0\oplus\mathbb{C}\mathbf P$, the centre
+The product is the commutator $\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\vec P\times\vec Q$. At
+a non-central element the annihilator is the plane $\mathbb{C}e_0\oplus\mathbb{C}\vec P$, the centre
 together with the element's own direction; at a central element it is the whole space. The bracket, which
 measures non-commutativity, is blind to the centre, so a global phase is annihilated by everything. The
 reading is *The Cross Product as a Lie Bracket: Rotations and the Jacobi Identity*.
@@ -308,8 +308,8 @@ reading is *The Gauge Metric as a Product: the Symmetric Quaternionic Sesquiline
 
 ### $\mathrm{AQS}$, the antisymmetric quaternionic sesqualgebra — polarisation
 
-The product is the conjugate cross product $\mathbf P\times\overline{\mathbf X}$. At a non-central element
-the annihilator is the plane $\mathbb{C}e_0\oplus\mathbb{C}\overline{\mathbf P}$; at a central element it
+The product is the conjugate cross product $\vec P\times\overline{\vec X}$. At a non-central element
+the annihilator is the plane $\mathbb{C}e_0\oplus\mathbb{C}\overline{\vec P}$; at a central element it
 is all of $\mathbb{B}$. The centraliser of the conjugate bracket is the centre together with the conjugate
 direction, and a global phase is annihilated by everything. The reading is *The Cross Product of a Vector
 with Its Conjugate: the Antisymmetric Gauge Product*.
@@ -322,8 +322,8 @@ interpretation.
 | structure | product | annihilator of a general $\tilde P$ | physical reading |
 |---|---|---|---|
 | GPA | $\tilde P\tilde Q$ | $\{0\}$ off the cone; two distinct planes through $\mathbb{C}\tilde P^{\natural}$ on the cone | an invertible composition has trivial kernel; a lightlike one is chiral, killing different directions on the two sides |
-| SPA | $\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ | $\{0\}$ off the cone with $P_0\neq0$; the line $\mathbb{C}\tilde P^{\natural}$ on the cone; the plane $\{X_0=0,(\mathbf P,\mathbf X)=0\}$ for $P_0=0$ | the symmetric composition has one kernel; a pure operation kills the plane orthogonal to it |
-| APA | $\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)$ | the plane $\mathbb{C}e_0\oplus\mathbb{C}\mathbf P$ for $\mathbf P\neq0$; the whole space for a central element | the bracket's centraliser is the centre and the element's own direction; a global phase is annihilated by everything |
+| SPA | $\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$ | $\{0\}$ off the cone with $P_0\neq0$; the line $\mathbb{C}\tilde P^{\natural}$ on the cone; the plane $\{X_0=0,(\vec P,\vec X)=0\}$ for $P_0=0$ | the symmetric composition has one kernel; a pure operation kills the plane orthogonal to it |
+| APA | $\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)$ | the plane $\mathbb{C}e_0\oplus\mathbb{C}\vec P$ for $\vec P\neq0$; the whole space for a central element | the bracket's centraliser is the centre and the element's own direction; a global phase is annihilated by everything |
 | GQA | $\tilde P^{\natural}\tilde Q$ | $\{0\}$ off the cone; one plane containing $\mathbb{C}\tilde P$ on the cone | the natural product has one kernel, and a lightlike element lies in it |
 | SQA | $N(\tilde P,\tilde Q)e_0$ | the hyperplane $N(\tilde P,\tilde X)=0$ | a scalar coupling kills the orthogonal hyperplane; a number cannot act |
 | AQA | the antisymmetrisation | a line or a plane through $\mathbb{C}\tilde P$; the centre for a central element | the quaternionic bracket's centraliser, with the norm deciding line against plane |
@@ -332,7 +332,7 @@ interpretation.
 | APS | the antisymmetrisation | $\{0\}$ off the cone; the line $\mathbb{C}\overline{\tilde P}$ at nonzero norm; the star-image of the plain plane on the cone | the conjugate bracket reads the conjugate direction |
 | GQS | $\tilde P^{\natural}\tilde Q^{*}$ | $\{0\}$ off the cone; two distinct planes through $\mathbb{C}\tilde P^{*}$ on the cone | the gauge coupling is chiral, like the plain composition |
 | SQS | the symmetrisation | $\{0\}$ off the cone with $P_0\neq0$; the line $\mathbb{C}\tilde P^{*}$ on the cone; the plane $\{X_0=0,K(\tilde P,\tilde X)=0\}$ for $P_0=0$ | the symmetric gauge coupling has one kernel, a plane at a pure element against a line at a non-pure one |
-| AQS | the antisymmetrisation | the plane $\mathbb{C}e_0\oplus\mathbb{C}\overline{\mathbf P}$ for $\mathbf P\neq0$; the whole space for a central element | the conjugate bracket's centraliser; a global phase is annihilated by everything |
+| AQS | the antisymmetrisation | the plane $\mathbb{C}e_0\oplus\mathbb{C}\overline{\vec P}$ for $\vec P\neq0$; the whole space for a central element | the conjugate bracket's centraliser; a global phase is annihilated by everything |
 
 Four facts of the table are physical statements, and the mathematics companion states all four.
 
@@ -494,8 +494,8 @@ Sesquilinear Product and the Polarisation* computes the left multiplication of t
 reads through the table, and finds
 
 $$
-\ker L^{\diamond}_{\tilde A}=\mathbb{C}_{\mathbb{B}}\oplus\mathbb{C}\overline{\mathbf A},\qquad
-\operatorname{im}L^{\diamond}_{\tilde A}=\{(\mathbf A,\cdot)=0\}.
+\ker L^{\diamond}_{\tilde A}=\mathbb{C}_{\mathbb{B}}\oplus\mathbb{C}\overline{\vec A},\qquad
+\operatorname{im}L^{\diamond}_{\tilde A}=\{(\vec A,\cdot)=0\}.
 $$
 
 The kernel is the centre together with the conjugate direction of the parameter, and the image is the
@@ -627,7 +627,7 @@ is labelled by.
   in Biquaternionic Form* the index — the difference between the numbers of positive- and negative-chirality
   zero modes of the Dirac operator — equals the topological charge, so "the charge that classifies the field
   and the number of fermion zero modes that the field supports are one and the same number." The article is
-  also explicit about the framework's ceiling: the abelian index density is the invariant $I_2=\mathbf E\cdot\mathbf B$,
+  also explicit about the framework's ceiling: the abelian index density is the invariant $I_2=\vec E\cdot\vec B$,
   while the non-abelian density $\mathrm{Tr}(F\wedge F)$ needs a second slot that the rank-two biquaternion
   norm does not have.
 - The kernel is also the closed-state space $\ker s$ of BRST — the physical cohomology is its quotient
@@ -679,7 +679,7 @@ the roots of zero, the idempotents and the nilpotents of the rest of the section
 
 - $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, basis $e_0=1,e_1,e_2,e_3$, $e_k^{2}=-e_0$, $e_1e_2=e_3$.
 - $A_\star(\tilde P)=\{\tilde X:\tilde P\star\tilde X=0\}$ the left annihilator, $B_\star(\tilde P)=\{\tilde X:\tilde X\star\tilde P=0\}$ the right one, the kernels of $L_{\tilde P}$ and $R_{\tilde P}$.
-- $N(\tilde Q)=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^{2}$ the biquaternion norm; the cone is $\{N=0\}$; $N(\tilde P,\tilde Q)=P_0Q_0+(\mathbf P,\mathbf Q)$ and $H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\mathbf P,\overline{\mathbf Q})$ the two forms of the scalar-valued structures.
+- $N(\tilde Q)=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^{2}$ the biquaternion norm; the cone is $\{N=0\}$; $N(\tilde P,\tilde Q)=P_0Q_0+(\vec P,\vec Q)$ and $H(\tilde P,\tilde Q)=P_0\overline{Q_0}+(\vec P,\overline{\vec Q})$ the two forms of the scalar-valued structures.
 - ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$; $\mathrm{Tr}=2\,\mathrm{Sc}$; $\mathbb{C}\{u,v\}$ a complex plane, $\mathbb{C}u$ a complex line.
 - The twelve structures: GPA, GQA, GPS, GQS general; SPA, SQA, SPS, SQS symmetric; APA, AQA, APS, AQS antisymmetric.
 - $\mathbb{M}_\pm$ the sectors; $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace; $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ the centre.

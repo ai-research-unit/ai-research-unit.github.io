@@ -22,7 +22,7 @@ is a bijection from the roots of $+e_0$ onto the idempotents, with inverse $\til
 
 The article is algebraic. It does not treat the roots of the general quadratic $\tilde\xi^2=\tilde q$, which is *Square Roots of a General Element in the General Plain Algebra*; the roots of $0$ and the nilpotents, which are *Square Roots of Zero and the Nilpotents of the General Plain Algebra*; the structure of the zero-divisor set, which is *Zero Divisors of the General Plain Algebra*; or the idempotent theory of the complexified block, which is *Square Roots of One and the Idempotents of the General Plain Algebra*. The last paragraph of §*The Roots of One* records how the roots of $-e_0$ are read; it is a remark, it is used nowhere, and it opens nothing.
 
-**Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$, so that $e_k^2=-e_0$ and $e_je_k=-e_ke_j$ for $j\neq k$. An element is $\tilde q=q_0e_0+\mathbf q$ with $\mathbf q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; the scalar part is $q_0=\mathrm{Sc}(\tilde q)$ and the vector part is $\mathbf q$. The natural conjugation is $\tilde q^{\natural}=q_0e_0-\mathbf q$, and the **norm** is $N(\tilde q)=\tilde q\tilde q^{\natural}=q_0^2+|\mathbf q|^2$, positive definite over $\mathbb{R}$ by *Norm and Invertibility in the General Plain Algebra*; every nonzero element is a unit, $\tilde q^{-1}=\tilde q^{\natural}/N(\tilde q)$, so there is no zero divisor. The scalar line $\mathbb{R}e_0$ is the centre and the vector subspace is $\mathrm{Vect}(\mathbb{H})$, of dimension three. A root of a central value is written $\tilde\xi$ (§*The Root Convention* of *Conventions in Mathematics*), an idempotent $\tilde\pi$ (§*The Idempotent Convention*), and a generic element $\tilde q$ or $\tilde p$.
+**Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$, so that $e_k^2=-e_0$ and $e_je_k=-e_ke_j$ for $j\neq k$. An element is $\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; the scalar part is $q_0=\mathrm{Sc}(\tilde q)$ and the vector part is $\vec q$. The natural conjugation is $\tilde q^{\natural}=q_0e_0-\vec q$, and the **norm** is $N(\tilde q)=\tilde q\tilde q^{\natural}=q_0^2+|\vec q|^2$, positive definite over $\mathbb{R}$ by *Norm and Invertibility in the General Plain Algebra*; every nonzero element is a unit, $\tilde q^{-1}=\tilde q^{\natural}/N(\tilde q)$, so there is no zero divisor. The scalar line $\mathbb{R}e_0$ is the centre and the vector subspace is $\mathrm{Vect}(\mathbb{H})$, of dimension three. A root of a central value is written $\tilde\xi$ (§*The Root Convention* of *Conventions in Mathematics*), an idempotent $\tilde\pi$ (§*The Idempotent Convention*), and a generic element $\tilde q$ or $\tilde p$.
 
 The equations name a product, so the roots and the idempotents are relative to it. The general definition of the power, the square and the root of a central value, and the general definition of an idempotent, are *Definitions for the Study of the 6 Algebraic Structures*, §*The Element Vocabulary*; the orthogonal, complete and primitive families, the projection and the Peirce decomposition are *Unital Algebras*, §*Idempotents and the Peirce Decomposition*. Throughout this article the square is the one of the general plain bilinear product, the multiplication of the algebra; the other five structures over the same space carry roots and idempotents of their own.
 
@@ -37,28 +37,28 @@ A **root of $+e_0$** is an element $\tilde\xi\in\mathbb{H}$ with $\tilde\xi^2=e_
 Write the root in scalar and vector parts,
 
 $$
-\tilde\xi=\xi_0e_0+\boldsymbol\xi,\qquad \boldsymbol\xi=\xi_1e_1+\xi_2e_2+\xi_3e_3,\qquad \xi_k\in\mathbb{R}.
+\tilde\xi=\xi_0e_0+\vec\xi,\qquad \vec\xi=\xi_1e_1+\xi_2e_2+\xi_3e_3,\qquad \xi_k\in\mathbb{R}.
 $$
 
 The square of an element of the algebra closes in two terms, one central and one along the vector part, because the square of a pure element is central:
 
 $$
-\boldsymbol\xi^2=-|\boldsymbol\xi|^2e_0,\qquad \tilde q^2=\bigl[q_0^2-|\mathbf q|^2\bigr]e_0+2q_0\mathbf q .
+\vec\xi^2=-|\vec\xi|^2e_0,\qquad \tilde q^2=\bigl[q_0^2-|\vec q|^2\bigr]e_0+2q_0\vec q .
 $$
 
-**Proposition (the central reduction).** For $\tilde\xi=\xi_0e_0+\boldsymbol\xi$ and $\lambda\in\mathbb{R}$,
+**Proposition (the central reduction).** For $\tilde\xi=\xi_0e_0+\vec\xi$ and $\lambda\in\mathbb{R}$,
 
 $$
 \tilde\xi^2=\lambda e_0\qquad\Longleftrightarrow\qquad
 \begin{cases}
-2\xi_0\boldsymbol\xi=0,\\[2pt]
-\xi_0^2-|\boldsymbol\xi|^2=\lambda .
+2\xi_0\vec\xi=0,\\[2pt]
+\xi_0^2-|\vec\xi|^2=\lambda .
 \end{cases}
 $$
 
-*Proof.* The square is $\tilde\xi^2=(\xi_0^2-|\boldsymbol\xi|^2)e_0+2\xi_0\boldsymbol\xi$, and the element equals the central element $\lambda e_0$ exactly when its vector part vanishes and its scalar part is $\lambda$, which is the displayed pair.
+*Proof.* The square is $\tilde\xi^2=(\xi_0^2-|\vec\xi|^2)e_0+2\xi_0\vec\xi$, and the element equals the central element $\lambda e_0$ exactly when its vector part vanishes and its scalar part is $\lambda$, which is the displayed pair.
 
-Since $\mathbb{R}$ is a field, the vector equation holds exactly when $\xi_0=0$ or $\boldsymbol\xi=0$. **Only the scalar equation survives on each branch**: the root is pure, $\xi_0=0$, or it is a real scalar, $\boldsymbol\xi=0$. The case $\lambda=0$ is *Square Roots of Zero and the Nilpotents of the General Plain Algebra*, below this article in this category, and the general radicand $\tilde q$ is *Square Roots of a General Element in the General Plain Algebra*, below this article in this category.
+Since $\mathbb{R}$ is a field, the vector equation holds exactly when $\xi_0=0$ or $\vec\xi=0$. **Only the scalar equation survives on each branch**: the root is pure, $\xi_0=0$, or it is a real scalar, $\vec\xi=0$. The case $\lambda=0$ is *Square Roots of Zero and the Nilpotents of the General Plain Algebra*, below this article in this category, and the general radicand $\tilde q$ is *Square Roots of a General Element in the General Plain Algebra*, below this article in this category.
 
 ### The Scalar Case
 
@@ -72,13 +72,13 @@ They are the only roots of $+e_0$ with non-vanishing scalar part and the only on
 
 ### The Pure Case Is Empty
 
-In the pure case $\tilde\xi=\boldsymbol\xi$ and the scalar equation reads
+In the pure case $\tilde\xi=\vec\xi$ and the scalar equation reads
 
 $$
--|\boldsymbol\xi|^2=1,
+-|\vec\xi|^2=1,
 $$
 
-a value no real vector attains. **There is no pure root of $+e_0$.** The reason is the definiteness of the sum of squares: the square of a pure element is the negative scalar $\boldsymbol\xi^2=-|\boldsymbol\xi|^2e_0$, so a pure element is a root of a negative central value and never of a positive one.
+a value no real vector attains. **There is no pure root of $+e_0$.** The reason is the definiteness of the sum of squares: the square of a pure element is the negative scalar $\vec\xi^2=-|\vec\xi|^2e_0$, so a pure element is a root of a negative central value and never of a positive one.
 
 ### Statement of the Theorem
 
@@ -90,7 +90,7 @@ $$
 
 the class being the two-point set $\{+e_0,-e_0\}$.
 
-*Proof.* By the reduction the root is pure or scalar. The pure case is impossible, $|\boldsymbol\xi|^2=-1$ having no real solution. The scalar case gives $\xi_0^2=1$, that is $\pm e_0$. The two cases exhaust the equation and the set has two elements.
+*Proof.* By the reduction the root is pure or scalar. The pure case is impossible, $|\vec\xi|^2=-1$ having no real solution. The scalar case gives $\xi_0^2=1$, that is $\pm e_0$. The two cases exhaust the equation and the set has two elements.
 
 ### Verification
 
@@ -106,7 +106,7 @@ $$
 
 and a unit is not a zero divisor. The single element common to the roots of $+e_0$ and the idempotents is $e_0$: an element that is both a root of $+e_0$ and an idempotent satisfies $\tilde\xi^2=e_0$ and $\tilde\xi^2=\tilde\xi$, hence $\tilde\xi=e_0$. The two classes are different sets, and the halving map of §*The Idempotents* is the bijection between them.
 
-**The roots of minus one.** The roots of $-e_0$ are not the image of the roots of $+e_0$ here, because the mechanism that flips the sign is unavailable. For a product bilinear in its two slots with a **central element of square $-e_0$**, an element $i$ of the centre with $i^2=-e_0$, multiplication by it flips the sign, $(i\tilde\xi)^2=i^2\tilde\xi^2=-\tilde\xi^2$, and the roots of $-e_0$ are read off the roots of $+e_0$ by one map; over $\mathbb{R}$ the centre is the scalar line $\mathbb{R}e_0$ and no central element has square $-e_0$, so the mechanism is unavailable and the two root sets are not carried one to the other. They follow instead from the same reduction, at $\lambda=-1$: the scalar equation of §*The Reduction* reads $-\lvert\boldsymbol\xi\rvert^2=-1$ on the pure branch, that is $\lvert\boldsymbol\xi\rvert^2=1$, so the roots of $-e_0$ are exactly the elements of the vector subspace $\mathrm{Vect}(\mathbb{H})$ with $N(\boldsymbol\xi)=|\boldsymbol\xi|^2=1$, a quadric of real dimension two. The class exists, it is not empty, and it indexes no idempotent; the halving map uses the roots of $+e_0$ alone, and the roots of $-e_0$ are quoted here and used nowhere in this article.
+**The roots of minus one.** The roots of $-e_0$ are not the image of the roots of $+e_0$ here, because the mechanism that flips the sign is unavailable. For a product bilinear in its two slots with a **central element of square $-e_0$**, an element $i$ of the centre with $i^2=-e_0$, multiplication by it flips the sign, $(i\tilde\xi)^2=i^2\tilde\xi^2=-\tilde\xi^2$, and the roots of $-e_0$ are read off the roots of $+e_0$ by one map; over $\mathbb{R}$ the centre is the scalar line $\mathbb{R}e_0$ and no central element has square $-e_0$, so the mechanism is unavailable and the two root sets are not carried one to the other. They follow instead from the same reduction, at $\lambda=-1$: the scalar equation of §*The Reduction* reads $-\lvert\vec\xi\rvert^2=-1$ on the pure branch, that is $\lvert\vec\xi\rvert^2=1$, so the roots of $-e_0$ are exactly the elements of the vector subspace $\mathrm{Vect}(\mathbb{H})$ with $N(\vec\xi)=|\vec\xi|^2=1$, a quadric of real dimension two. The class exists, it is not empty, and it indexes no idempotent; the halving map uses the roots of $+e_0$ alone, and the roots of $-e_0$ are quoted here and used nowhere in this article.
 
 ## The Idempotents
 
@@ -142,9 +142,9 @@ $$
 
 There is no non-trivial idempotent.
 
-*Proof.* Write the equation as $\tilde\pi^2=\tilde\pi$ and factor it as $\tilde\pi(\tilde\pi-e_0)=0$. The plain product is a **division rule**: it has the two-sided unit $e_0$ and no zero divisor, every nonzero element being invertible with $\tilde\pi^{-1}=\tilde\pi^{\natural}/N(\tilde\pi)$ (*Norm and Invertibility in the General Plain Algebra*). A vanishing product in a division algebra has a vanishing factor, so either $\tilde\pi=0$ or $\tilde\pi-e_0=0$. The same conclusion in coordinates reads the plain square $\tilde\pi^2=(\pi_0^2-|\boldsymbol\pi|^2)e_0+2\pi_0\boldsymbol\pi$ and the pair $2\pi_0\boldsymbol\pi=\boldsymbol\pi$, $\pi_0^2-|\boldsymbol\pi|^2=\pi_0$: the first forces $(2\pi_0-1)\boldsymbol\pi=0$, and $\boldsymbol\pi\neq0$ with $\pi_0=\tfrac12$ would give $|\boldsymbol\pi|^2=-\tfrac14$, which has no real solution, so $\boldsymbol\pi=0$ and $\pi_0\in\{0,1\}$. **The two cases exhaust the equation and no non-trivial idempotent occurs.**
+*Proof.* Write the equation as $\tilde\pi^2=\tilde\pi$ and factor it as $\tilde\pi(\tilde\pi-e_0)=0$. The plain product is a **division rule**: it has the two-sided unit $e_0$ and no zero divisor, every nonzero element being invertible with $\tilde\pi^{-1}=\tilde\pi^{\natural}/N(\tilde\pi)$ (*Norm and Invertibility in the General Plain Algebra*). A vanishing product in a division algebra has a vanishing factor, so either $\tilde\pi=0$ or $\tilde\pi-e_0=0$. The same conclusion in coordinates reads the plain square $\tilde\pi^2=(\pi_0^2-|\vec\pi|^2)e_0+2\pi_0\vec\pi$ and the pair $2\pi_0\vec\pi=\vec\pi$, $\pi_0^2-|\vec\pi|^2=\pi_0$: the first forces $(2\pi_0-1)\vec\pi=0$, and $\vec\pi\neq0$ with $\pi_0=\tfrac12$ would give $|\vec\pi|^2=-\tfrac14$, which has no real solution, so $\vec\pi=0$ and $\pi_0\in\{0,1\}$. **The two cases exhaust the equation and no non-trivial idempotent occurs.**
 
-**Remark (why the class collapses over $\mathbb{R}$).** The standard construction of a non-trivial idempotent is the element $\tfrac12(e_0+\tilde\xi)$ with $\tilde\xi$ a **non-central root of $+e_0$**: the square $\tfrac14(e_0+2\tilde\xi+\tilde\xi^2)$ equals $\tfrac12(e_0+\tilde\xi)$ exactly when $\tilde\xi^2=e_0$. Over $\mathbb{R}$ the roots of $+e_0$ are the two central scalars $\pm e_0$, so $\tfrac12(e_0+\tilde\xi)$ returns only $e_0$ and $0$; a non-central root of $+e_0$ would need a pure element of square $+e_0$, and the pure square is the non-positive $-|\boldsymbol\xi|^2e_0$. In the complexified block the roots of $+e_0$ include non-central elements, the construction closes, and a whole family of idempotents lies between the two trivial ones; that counterpart is *Square Roots of One and the Idempotents of the General Plain Algebra*.
+**Remark (why the class collapses over $\mathbb{R}$).** The standard construction of a non-trivial idempotent is the element $\tfrac12(e_0+\tilde\xi)$ with $\tilde\xi$ a **non-central root of $+e_0$**: the square $\tfrac14(e_0+2\tilde\xi+\tilde\xi^2)$ equals $\tfrac12(e_0+\tilde\xi)$ exactly when $\tilde\xi^2=e_0$. Over $\mathbb{R}$ the roots of $+e_0$ are the two central scalars $\pm e_0$, so $\tfrac12(e_0+\tilde\xi)$ returns only $e_0$ and $0$; a non-central root of $+e_0$ would need a pure element of square $+e_0$, and the pure square is the non-positive $-|\vec\xi|^2e_0$. In the complexified block the roots of $+e_0$ include non-central elements, the construction closes, and a whole family of idempotents lies between the two trivial ones; that counterpart is *Square Roots of One and the Idempotents of the General Plain Algebra*.
 
 **Corollary (the class is two-point).** The idempotent class of the algebra is $\{0,e_0\}$, and the two are orthogonal, $0\cdot e_0=0$.
 
@@ -236,11 +236,11 @@ A non-trivial idempotent would be a zero divisor, since $\tilde\pi(e_0-\tilde\pi
 
 ### The Reading on the Centre and the Vector Subspace
 
-Both idempotents are **central**: $0$ and $e_0$ lie in the centre $\mathbb{R}e_0$. The vector subspace $\mathrm{Vect}(\mathbb{H})$ therefore contains no idempotent but the origin, a nonzero pure element $\mathbf u$ having square $\mathbf u^2=-|\mathbf u|^2e_0$, which equals $\mathbf u$ only for $\mathbf u=0$. **Of the two remarkable subspaces over $\mathbb{R}$ the centre carries the two idempotents and the vector subspace carries the origin alone**, the origin belonging to both.
+Both idempotents are **central**: $0$ and $e_0$ lie in the centre $\mathbb{R}e_0$. The vector subspace $\mathrm{Vect}(\mathbb{H})$ therefore contains no idempotent but the origin, a nonzero pure element $\vec u$ having square $\vec u^2=-|\vec u|^2e_0$, which equals $\vec u$ only for $\vec u=0$. **Of the two remarkable subspaces over $\mathbb{R}$ the centre carries the two idempotents and the vector subspace carries the origin alone**, the origin belonging to both.
 
 ## Summary
 
-The general plain bilinear product is the multiplication of the quaternion algebra, and the roots of $+e_0$ in that product are, by the reduction $\tilde\xi^2=\lambda e_0\Longleftrightarrow\{2\xi_0\boldsymbol\xi=0,\ \xi_0^2-|\boldsymbol\xi|^2=\lambda\}$, the two central scalars $\pm e_0$ alone: the pure branch needs $|\boldsymbol\xi|^2=-1$, which has no real solution, and the scalar branch gives $\xi_0^2=1$. The class is the two-point set, the central part of the level set $\{N=1\}$, and every root of $+e_0$ is a unit with $\tilde\xi^{-1}=\tilde\xi$.
+The general plain bilinear product is the multiplication of the quaternion algebra, and the roots of $+e_0$ in that product are, by the reduction $\tilde\xi^2=\lambda e_0\Longleftrightarrow\{2\xi_0\vec\xi=0,\ \xi_0^2-|\vec\xi|^2=\lambda\}$, the two central scalars $\pm e_0$ alone: the pure branch needs $|\vec\xi|^2=-1$, which has no real solution, and the scalar branch gives $\xi_0^2=1$. The class is the two-point set, the central part of the level set $\{N=1\}$, and every root of $+e_0$ is a unit with $\tilde\xi^{-1}=\tilde\xi$.
 
 The roots of $-e_0$ are read from the same reduction at $\lambda=-1$: they are the elements of the vector subspace with $N=1$, a quadric of real dimension two. The sign cannot be flipped, the centre $\mathbb{R}e_0$ having no element of square $-e_0$, so the roots of $-e_0$ are not the image of the roots of $+e_0$; the paragraph is a remark, and the roots of $-e_0$ index no idempotent.
 
@@ -252,11 +252,11 @@ The idempotents are the trivial elements $0$ and $e_0$ and nothing else, the equ
 |---|---|
 | $\mathbb{H}$ | Quaternion algebra, real dimension four |
 | $e_0=1,e_1,e_2,e_3$ | Quaternion basis, $e_k^2=-e_0$, $e_1e_2=e_3$ |
-| $\tilde q=q_0e_0+\mathbf q$ | General element, scalar part $q_0$, vector part $\mathbf q$ |
-| $N(\tilde q)=q_0^2+\lvert\mathbf q\rvert^2$ | Quaternion norm, positive definite |
+| $\tilde q=q_0e_0+\vec q$ | General element, scalar part $q_0$, vector part $\vec q$ |
+| $N(\tilde q)=q_0^2+\lvert\vec q\rvert^2$ | Quaternion norm, positive definite |
 | $\mathbb{R}e_0$, $\mathrm{Vect}(\mathbb{H})$ | Centre and vector subspace |
 | $\tilde\xi$ | A root of a central value; of $+e_0$ through the body, of $-e_0$ in the closing remark |
-| $\tilde\xi=\xi_0e_0+\boldsymbol\xi$ | Scalar and vector parts of a root |
+| $\tilde\xi=\xi_0e_0+\vec\xi$ | Scalar and vector parts of a root |
 | $\{+e_0,-e_0\}$ | The two roots of $+e_0$, the central part of $\{N=1\}$ |
 | $\tilde\pi$ | An idempotent, $\tilde\pi^2=\tilde\pi$ |
 | $\tilde\pi(\tilde\xi)=\tfrac12(e_0+\tilde\xi)$ | The idempotent of the root $\tilde\xi$; $\tilde\xi\mapsto\tilde\pi(\tilde\xi)$ is a bijection |

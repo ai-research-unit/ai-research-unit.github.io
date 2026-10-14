@@ -19,7 +19,7 @@ of the block is *The Specificities of the Symmetric Plain Algebra*; the measurem
 composition are the two sibling articles' business; this article adds the operator layer only.
 
 The answer is one sentence. The form of the block is the **trace form**
-$\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=P_0Q_0-(\mathbf P,\mathbf Q)$, of Gram
+$\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=P_0Q_0-(\vec P,\vec Q)$, of Gram
 $\mathrm{diag}(1,-1,-1,-1)$, symmetric, non-degenerate and **invariant**; the adjoint for it is the transpose
 $F^{\approx}$, and the transpose of a multiplication is the same multiplication,
 $(L^{\bullet}_{\tilde A})^{\approx}=L^{\bullet}_{\tilde A}$ and
@@ -35,7 +35,7 @@ Adjoint and Bracket*, not one of the twelve.
 
 The conventions are those of *Conventions in the Biquaternion Universe*:
 $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$, $e_1e_2=e_3$,
-$e_k^{2}=-e_0$ and central imaginary $i$; $\tilde Q=Q_0e_0+\mathbf Q$; sectors
+$e_k^{2}=-e_0$ and central imaginary $i$; $\tilde Q=Q_0e_0+\vec Q$; sectors
 $\mathbb{M}_\pm=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}$; generic trace $T(\tilde Q)=2Q_0$ and generic norm
 $N(\tilde Q)=\sum_\mu Q_\mu^{2}$. The operator theory is owned by four mathematics articles and is cited in
 place: *The Multiplication Operators of the Symmetric Plain Algebra* for the one family, its composition, its
@@ -124,7 +124,7 @@ Symmetrised Material Composition and the Jordan Identity*.
 **Definition (the trace form).** The form of the band is the scalar part of its product,
 
 $$
-\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=P_0Q_0-(\mathbf P,\mathbf Q),
+\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=P_0Q_0-(\vec P,\vec Q),
 \qquad \mathrm{Gram}=\mathrm{diag}(1,-1,-1,-1).
 $$
 
@@ -132,7 +132,7 @@ It is $\mathbb{C}$-bilinear, symmetric, non-degenerate, of realified signature $
 $(1,1),(3,3),(1,3),(3,1),(4,0),(0,4)$ to the remarkable subspaces; it is **invariant**,
 $\tau(\tilde P\bullet\tilde Q,\tilde R)=\tau(\tilde P,\tilde Q\bullet\tilde R)$, which is the associativity of
 the plain product read on the symmetrised product, and not merely symmetric. Its operator traces are
-$\operatorname{Tr}(L^{\bullet}_{\tilde P})=4P_0=2T(\tilde P)$ and $\operatorname{Tr}(L^{\bullet}_{\tilde P}L^{\bullet}_{\tilde Q})=4P_0Q_0-2(\mathbf P,\mathbf Q)=2\tau(\tilde P,\tilde Q)+\tfrac12T(\tilde P)T(\tilde Q)$,
+$\operatorname{Tr}(L^{\bullet}_{\tilde P})=4P_0=2T(\tilde P)$ and $\operatorname{Tr}(L^{\bullet}_{\tilde P}L^{\bullet}_{\tilde Q})=4P_0Q_0-2(\vec P,\vec Q)=2\tau(\tilde P,\tilde Q)+\tfrac12T(\tilde P)T(\tilde Q)$,
 the second being **not** a multiple of the form; and on the Hermitian sector the form is the positive definite
 Born pairing $H(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})$.
 
@@ -325,10 +325,10 @@ two-valued projection is absent, because a non-trivial idempotent gives no proje
 classical composition are the siblings' business, and this article supplies only the operator behind them.
 
 **Proposition (the spinor space).** On the minimal left ideal
-$S=\mathbb{B}\tilde\Pi_1=\mathbb{C}\{\tilde\Pi_1,\tilde\Upsilon_2\}$ with $\tilde\Pi_1=\tfrac12(e_0+ie_3)$, the
+$S=\mathbb{B}\tilde\Pi_+=\mathbb{C}\{\tilde\Pi_+,\tilde\Upsilon_2\}$ with $\tilde\Pi_+=\tfrac12(e_0+ie_3)$, the
 operator is half the matrix action of the module and half a module endomorphism of the complement,
 $L^{\bullet}_{\tilde A}s=\tfrac12(\tilde A s+s\tilde A)$ for $s\in S$; a **central** parameter has equal halves
-and acts as a scalar, $L^{\bullet}_{\lambda e_0}=\lambda\,\mathrm{id}$.
+and acts as a scalar, $L^{\bullet}_{\lambda e_0}=\lambda\,\mathrm{id}$. Here $ie_3$ is a root of $+1$, $(ie_3)^2=e_0$, and $\tilde\Pi_+$ and $\tilde\Pi_-$ are its two associated idempotents.
 
 *Proof.* The display is the symmetric-half theorem; the left half is the left regular representation of the
 module, and a right multiplication commutes with every left one and is therefore a module map, carrying the
@@ -418,10 +418,10 @@ the one Peirce spectrum, and the case displays the whole type theory of the band
 **A numerical check.** For random elements of the block the identities
 $L^{\bullet}_{\tilde A}=R^{\bullet}_{\tilde A}$, $L^{\bullet}_{\tilde A} =\tfrac12(L_{\tilde A}+R_{\tilde A})$, the four-term composition law, the associator deviation and the Jordan
 identity $[L^{\bullet}_{\tilde X},L^{\bullet}_{\tilde X\bullet\tilde X}]=0$ hold to machine precision; the trace
-form was checked to satisfy $\tau(\tilde P,\tilde Q)=P_0Q_0-(\mathbf P,\mathbf Q)$ with Gram
+form was checked to satisfy $\tau(\tilde P,\tilde Q)=P_0Q_0-(\vec P,\vec Q)$ with Gram
 $\mathrm{diag}(1,-1,-1,-1)$ and the invariance, and the operator traces to satisfy
 $\operatorname{Tr}(L^{\bullet}_{\tilde P})=4P_0$ and
-$\operatorname{Tr}(L^{\bullet}_{\tilde P}L^{\bullet}_{\tilde Q})=4P_0Q_0-2(\mathbf P,\mathbf Q)$; every
+$\operatorname{Tr}(L^{\bullet}_{\tilde P}L^{\bullet}_{\tilde Q})=4P_0Q_0-2(\vec P,\vec Q)$; every
 multiplication was verified self-associate with the only
 skew-adjoint one zero, and the inner derivations $\tfrac14\operatorname{ad}_{[\tilde A,\tilde B]}$ were verified
 skew and three-dimensional; the form-preserving criterion was checked to hold exactly at $\pm e_0$ in the family
@@ -469,7 +469,7 @@ generators are its commutators.
 $L^{\bullet}_{\tilde A}L^{\bullet}_{\tilde B} =\tfrac14(L_{\tilde A\tilde B}+L_{\tilde A}R_{\tilde B}+R_{\tilde A}L_{\tilde B}+R_{\tilde B\tilde A})$, not
 multiplicative, with associator deviation and witness $e_1,e_1,e_2$, and the Jordan identity on the operators is
 $[L^{\bullet}_{\tilde X},L^{\bullet}_{\tilde X\bullet\tilde X}]=0$ with the fundamental formula; the trace form
-$\tau=P_0Q_0-(\mathbf P,\mathbf Q)$ is symmetric, non-degenerate, invariant, of Gram $\mathrm{diag}(1,-1,-1,-1)$
+$\tau=P_0Q_0-(\vec P,\vec Q)$ is symmetric, non-degenerate, invariant, of Gram $\mathrm{diag}(1,-1,-1,-1)$
 and realified signature $(4,4)$, its associate **keeps the parameter**, $(L^{\bullet}_{\tilde A})^{\approx}=L^{\bullet}_{\tilde A}$,
 and reverses a composite; every multiplication is self-adjoint for $\tau$, the only skew-adjoint one is zero, and
 the commutators of the family are the inner derivations $\tfrac14\operatorname{ad}_{[\tilde A,\tilde B]}$, of
@@ -532,7 +532,7 @@ $\tilde X\mapsto\tilde A\tilde X\tilde A$. The composition of two multiplication
 plain operators and is not a multiplication, the deviation being the associator with witness $e_1,e_1,e_2$; the
 operator form of the Jordan identity is the commutation of the operator of an element with the operator of its
 square, with the fundamental formula for the quadratic representations. The bilinear form of the block is the
-trace form $\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=P_0Q_0-(\mathbf P,\mathbf Q)$,
+trace form $\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=P_0Q_0-(\vec P,\vec Q)$,
 symmetric, non-degenerate, invariant, of Gram $\mathrm{diag}(1,-1,-1,-1)$ and realified signature $(4,4)$; its adjoint **keeps the
 parameter**, $(L^{\bullet}_{\tilde A})^{\approx}=L^{\bullet}_{\tilde A}$, and reverses a composite, so the band
 has **no swap of sides**, the swap being impossible with one family. The conjugation of a parameter belongs to
@@ -565,7 +565,7 @@ answer.
 | $[L^{\bullet}_{\tilde X},L^{\bullet}_{\tilde X\bullet\tilde X}]=0$ | The Jordan identity on the operators |
 | $U_{\tilde A}=2(L^{\bullet}_{\tilde A})^{2}-L^{\bullet}_{\tilde A\bullet\tilde A}$ | The quadratic representation; $U_{\tilde A}\tilde X=\tilde A\tilde X\tilde A$ |
 | $U_{U_{\tilde A}\tilde B}=U_{\tilde A}U_{\tilde B}U_{\tilde A}$, $U_{\tilde A}^{2}=U_{\tilde A\bullet\tilde A}$ | The fundamental formula and the square |
-| $\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=P_0Q_0-(\mathbf P,\mathbf Q)$ | The trace form; Gram $\mathrm{diag}(1,-1,-1,-1)$ |
+| $\tau(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\bullet\tilde Q)=P_0Q_0-(\vec P,\vec Q)$ | The trace form; Gram $\mathrm{diag}(1,-1,-1,-1)$ |
 | $(L^{\bullet}_{\tilde A})^{\approx}=L^{\bullet}_{\tilde A}$ | The associate **keeps the parameter** |
 | $(L^{\bullet}_{\tilde A}L^{\bullet}_{\tilde B})^{\approx}=L^{\bullet}_{\tilde B}L^{\bullet}_{\tilde A}$ | Association reverses a composite |
 | $(L^{\bullet}_{\tilde A})^{\dagger}=L^{\bullet}_{\tilde A^{*}}$ | The Hermitian dagger **conjugates the parameter** |
@@ -581,7 +581,7 @@ answer.
 | $U_{\tilde A}=\mathrm{Ad}_{\tilde A}\iff\tilde A\bullet\tilde A=e_0$ | The sandwich and the inner automorphism agree on the symmetries |
 | $\mathbb{M}_+$ closed; $\tau|_{\mathbb{M}_+}=H$ positive definite | The observable sector and its Born pairing |
 | $L^{\bullet}_{\tilde\Pi}(2L^{\bullet}_{\tilde\Pi}-\mathrm{id})(L^{\bullet}_{\tilde\Pi}-\mathrm{id})=0$ | The cubic Peirce identity; eigenvalues $\{0,\tfrac12,1\}$ |
-| $S=\mathbb{B}\tilde\Pi_1$ | The spinor space; $L^{\bullet}_{\lambda e_0}=\lambda\,\mathrm{id}$ |
+| $S=\mathbb{B}\tilde\Pi_+$ | The spinor space; $L^{\bullet}_{\lambda e_0}=\lambda\,\mathrm{id}$ |
 
 ## Further Reading
 

@@ -139,7 +139,7 @@ $$
 $$
 so the unit group contains an infinite cyclic subgroup generated along a nilpotent direction. Such a direction exists integrally, for instance $P=e_1+ie_2$, which is null and has Gaussian-integer coefficients.
 
-**Physical interpretation. The real orders have finite unit groups; the complex order does not. The difference is the light cone: nilpotent directions are null, and a null direction generates a translation-like one-parameter group without bound. On the material sector, where the four-position is $\tilde{Q}=ict\,e_0+\mathbf{x}$, the null condition is the light cone $c^2t^2=\mathbf{x}^2$: the integral null element $P=e_1+ie_2$ lies on the complex null cone and is the nilpotent direction that generates the infinite cyclic subgroup, while the finite unit groups sit in the real sector $\mathbb{H}_{\mathbb{B}}$, where the norm is definite and no null direction exists. In physics terms the infinite unit group is the algebraic statement that the light cone is present, and the finite unit groups are the groups of the massive, non-null sector.
+**Physical interpretation. The real orders have finite unit groups; the complex order does not. The difference is the light cone: nilpotent directions are null, and a null direction generates a translation-like one-parameter group without bound. On the material sector, where the four-position is $\tilde{Q}=ict\,e_0+\vec x$, the null condition is the light cone $c^2t^2=\vec x^2$: the integral null element $P=e_1+ie_2$ lies on the complex null cone and is the nilpotent direction that generates the infinite cyclic subgroup, while the finite unit groups sit in the real sector $\mathbb{H}_{\mathbb{B}}$, where the norm is definite and no null direction exists. In physics terms the infinite unit group is the algebraic statement that the light cone is present, and the finite unit groups are the groups of the massive, non-null sector.
 
 ## Physical Readings
 
@@ -181,7 +181,7 @@ The integral biquaternions over the Gaussian integers have an infinite group of 
 | $n=e_1+ie_2$, $n^2=0$ | Nilpotent generator of the unipotent family |
 | $e_0+kn$, $N=1$ | Unipotent family of norm-one units, $k\in\mathbb{Z}$ |
 | $\mathbb{H}_{\mathbb{B}}$ | Real sector, the slice $ict=0$; home of the orders and their finite unit groups |
-| $c^2t^2=\mathbf{x}^2$ | Light cone of the material sector; the null condition $N(\tilde{Q})=0$ there |
+| $c^2t^2=\vec x^2$ | Light cone of the material sector; the null condition $N(\tilde{Q})=0$ there |
 
 ## Further Reading
 

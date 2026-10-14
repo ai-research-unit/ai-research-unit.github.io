@@ -9,31 +9,31 @@ A particle of rest mass $m$ and charge $q$ moving in a prescribed electromagneti
 
 Two limitations are stated at the outset, because they bound what is claimed.
 
-**One particle, a prescribed field, and the proper-time derivative.** The field $\tilde{F}$ is *external*: it is a fixed function of the event $\tilde{Q}$, not a dynamical field with its own equation of motion. The four-force $\tilde{K} = d\tilde{P}/d\tau$ is therefore a **proper-time** derivative, and for a single particle that is the correct form; the equation of motion is $\tilde{K} = q\,F(\tilde{U})$ and no conservation law is invoked. This matters because the proper-time form does **not** sum across bodies: the four-forces of two particles with different Lorentz factors are not the terms of a coordinate-time conservation law. That distinction, reported by the exercise *Four-Momentum Conservation in a Collision*, is the reason this article treats one particle only; a many-body or field-theoretic extension is a different problem and is not attempted here. Nothing in this article contradicts the exercise — the two statements concern different systems.
+**One particle, a prescribed field, and the proper-time derivative.** The field $\tilde{F}$ is *external*: it is a fixed function of the event $\tilde{Q}$, not a dynamical field with its own equation of motion. The four-force $\tilde{K} = d\tilde{P}/d\tau$ is therefore a **proper-time** derivative, and for a single particle that is the correct form; the equation of motion is $\tilde{K} = q\,F(\tilde{V})$ and no conservation law is invoked. This matters because the proper-time form does **not** sum across bodies: the four-forces of two particles with different Lorentz factors are not the terms of a coordinate-time conservation law. That distinction, reported by the exercise *Four-Momentum Conservation in a Collision*, is the reason this article treats one particle only; a many-body or field-theoretic extension is a different problem and is not attempted here. Nothing in this article contradicts the exercise — the two statements concern different systems.
 
-**The frame convention.** The read-list article on the Lorentz transformation builds the boost biquaternion from the four-velocity as $\tilde{\Lambda} = \sqrt{-\frac{i}{c}\tilde{U}^{\natural}}$, with the boost direction aligned with the particle velocity $\hat{\mathbf{u}} = \hat{\mathbf{v}}$. The rotor built from $+\mathbf{v}$ carries the **laboratory to the moving frame**, and its quaternion conjugate carries the moving frame back to the laboratory. This is the convention used throughout: whenever this article transforms to the instantaneous rest frame of the particle it uses $\tilde{\Lambda}$ built from $+\tilde{U}$, and the inverse transformation is by $\tilde{\Lambda}^{\natural}$. The convention is stated because it is a genuine ambiguity — the oppositely-signed rotor implements the same Lorentz transformation on a different branch — and it is fixed here rather than left implicit.
+**The frame convention.** The read-list article on the Lorentz transformation builds the boost biquaternion from the four-velocity as $\tilde{\Lambda} = \sqrt{-\frac{i}{c}\tilde{V}^{\natural}}$, with the boost direction aligned with the particle velocity $\hat u = \hat v$. The rotor built from $+\vec v$ carries the **laboratory to the moving frame**, and its quaternion conjugate carries the moving frame back to the laboratory. This is the convention used throughout: whenever this article transforms to the instantaneous rest frame of the particle it uses $\tilde{\Lambda}$ built from $+\tilde{V}$, and the inverse transformation is by $\tilde{\Lambda}^{\natural}$. The convention is stated because it is a genuine ambiguity — the oppositely-signed rotor implements the same Lorentz transformation on a different branch — and it is fixed here rather than left implicit.
 
 The article is organized as follows. The next section recalls the free four-momentum. The section after that states the minimal-coupling prescription and derives the canonical momentum from the action. The following section separates the canonical and kinetic momenta. The next section derives the equation of motion. Two sections check it on a purely electric field and on a purely magnetic field. A short section records the proper-time restriction, and another fixes the boost convention. A section separates what the algebra supplies from what it only transcribes, and the article closes with open questions.
 
-**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the complex scalar subspace, the centre of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The four-position is $\tilde{Q} = ict\,e_0 + \mathbf{x}$, the four-velocity is $\tilde{U} = \gamma(ic\,e_0 + \mathbf{v})$ with $\gamma = 1/\sqrt{1-\mathbf{v}^2/c^2}$, and the four-momentum is $\tilde{P} = m\tilde{U} = iE/c\,e_0 + \mathbf{p}$; all live in $\mathbb{M}_-$. The biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$, and the invariant pairing on $\mathbb{M}_-$ is $\langle\tilde{A},\tilde{B}\rangle = \mathrm{Sc}(\tilde{A}\tilde{B}^{\natural}) = -a_0b_0 + \mathbf{a}\cdot\mathbf{b}$ for $\tilde{A} = ia_0e_0 + \mathbf{a}$, $\tilde{B} = ib_0e_0 + \mathbf{b}$. The four-potential is $\tilde{A} = i\phi/c\,e_0 + \mathbf{A} \in \mathbb{M}_-$ and the field strength is $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$, with source $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_0 + \sqrt{\mu}\,\mathbf{J}$ and Maxwell equation $\tilde{\nabla}\tilde{F} = -\tilde{R}$. The field tensor is $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$, with $F^{0k} = iE_k/c$ and $F^{jk} = \epsilon_{jkl}B_l$ in the $ict$ convention. Following the article *The Lorentz Force in Biquaternion Form*, the symbol $\tilde{F}$ is reserved for the field strength and the **four-force is written $\tilde{K}$**, so that $\tilde{K} = d\tilde{P}/d\tau$ and $\tilde{K}\in\mathbb{M}_-$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value; $\mathbf{B} = \mu\mathbf{H}$ is the magnetic induction. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged.
+**Conventions.** We use those of the companion articles throughout. The biquaternion algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, the quaternion basis is $e_0 = 1, e_1, e_2, e_3$ with $e_k^2 = -e_0$, and $i$ is the scalar imaginary, $i^2 = -1$, commuting with every $e_k$. The fixed-point subspaces are $\mathbb{M}_-$ (anti-Hermitian, the material sector) and $\mathbb{M}_+$ (Hermitian, the informational sector); $\mathbb{H}_{\mathbb{B}}$ is the real-quaternion subspace and $\mathbb{C}_{\mathbb{B}} = \mathrm{span}_{\mathbb{R}}\{e_0, ie_0\}$ is the complex scalar subspace, the centre of the algebra. The biquaternionic gradient is $\tilde{\nabla} = e_0\partial_{ict} + e_1\partial_x + e_2\partial_y + e_3\partial_z$, its quaternion conjugate is $\tilde{\nabla}^{\natural} = e_0\partial_{ict} - e_1\partial_x - e_2\partial_y - e_3\partial_z$, and $\Box = \tilde{\nabla}\tilde{\nabla}^{\natural} = \tilde{\nabla}^{\natural}\tilde{\nabla}$. The four-position is $\tilde{Q} = ict\,e_0 + \vec x$, the four-velocity is $\tilde{V} = \gamma(ic\,e_0 + \vec v)$ with $\gamma = 1/\sqrt{1-\vec v^2/c^2}$, and the four-momentum is $\tilde{P} = m\tilde{V} = iE/c\,e_0 + \vec p$; all live in $\mathbb{M}_-$. The biquaternion norm is $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$, and the invariant pairing on $\mathbb{M}_-$ is $\langle\tilde{A},\tilde{B}\rangle = \mathrm{Sc}(\tilde{A}\tilde{B}^{\natural}) = -a_0b_0 + \vec a\cdot\vec b$ for $\tilde{A} = ia_0e_0 + \vec a$, $\tilde{B} = ib_0e_0 + \vec b$. The four-potential is $\tilde{A} = i\phi/c\,e_0 + \vec A \in \mathbb{M}_-$ and the field strength is $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$, with source $\tilde{R} = \frac{i\rho}{\sqrt{\epsilon}}e_0 + \sqrt{\mu}\,\vec J$ and Maxwell equation $\tilde{\nabla}\tilde{F} = -\tilde{R}$. The field tensor is $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$, with $F^{0k} = iE_k/c$ and $F^{jk} = \epsilon_{jkl}B_l$ in the $ict$ convention. Following the article *The Lorentz Force in Biquaternion Form*, the symbol $\tilde{F}$ is reserved for the field strength and the **four-force is written $\tilde{K}$**, so that $\tilde{K} = d\tilde{P}/d\tau$ and $\tilde{K}\in\mathbb{M}_-$. Throughout, $c = 1/\sqrt{\epsilon\mu}$ is the **speed of light in the medium** and $c_0$ its vacuum value; $\vec B = \mu\vec H$ is the magnetic induction. The trace formula $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ is inherited unchanged.
 
 ## The Free Particle
 
 The free four-momentum and its mass-shell condition are inherited from *Relativistic Mechanics in Biquaternionic Form* and are recalled only to fix what the coupling will modify. The four-velocity and four-momentum are
 
 $$
-\tilde{U} = \gamma\left(ic\,e_0 + \mathbf{v}\right), \qquad
-\tilde{P} = m\tilde{U} = i\,\frac{E}{c}\,e_0 + \mathbf{p},
-\qquad E = \gamma mc^2, \quad \mathbf{p} = \gamma m\mathbf{v},
+\tilde{V} = \gamma\left(ic\,e_0 + \vec v\right), \qquad
+\tilde{P} = m\tilde{V} = i\,\frac{E}{c}\,e_0 + \vec p,
+\qquad E = \gamma mc^2, \quad \vec p = \gamma m\vec v,
 $$
 
 and both lie in $\mathbb{M}_-$. The four-momentum satisfies the **mass-shell relation**
 
 $$
-N(\tilde{P}) = \tilde{P}\tilde{P}^{\natural} = -\frac{E^2}{c^2} + \mathbf{p}^2 = -m^2c^2,
+N(\tilde{P}) = \tilde{P}\tilde{P}^{\natural} = -\frac{E^2}{c^2} + \vec p^2 = -m^2c^2,
 $$
 
-equivalently $E^2 = \mathbf{p}^2c^2 + m^2c^4$. In the free theory the momentum that appears in the mass-shell relation is the particle's kinetic (mechanical) momentum, and it is also the canonical momentum conjugate to the four-position, because there is no potential to shift it. Minimal coupling is precisely the statement that this coincidence fails once $\tilde{A}\neq 0$.
+equivalently $E^2 = \vec p^2c^2 + m^2c^4$. In the free theory the momentum that appears in the mass-shell relation is the particle's kinetic (mechanical) momentum, and it is also the canonical momentum conjugate to the four-position, because there is no potential to shift it. Minimal coupling is precisely the statement that this coincidence fails once $\tilde{A}\neq 0$.
 
 ## The Minimal-Coupling Prescription
 
@@ -54,40 +54,40 @@ $$
 \tilde\varpi = \tilde{P}_{\mathrm{kin}} + q\tilde{A}\ \text{(canonical)},
 $$
 
-so that the prescription reads $\tilde{\varpi} \to \tilde{\varpi} - q\tilde{A}$, and the mass-shell condition becomes $N(\tilde{P}_{\mathrm{kin}}) = -m^2c^2$. In the free limit $\tilde{A}\to0$ the kinetic momentum reduces to the free symbol $\tilde{P} = m\tilde{U}$ of the preceding section, and the notation is consistent: $\tilde{P}_{\mathrm{kin}}$ is what $\tilde{P}$ becomes once the field is switched on.
+so that the prescription reads $\tilde{\varpi} \to \tilde{\varpi} - q\tilde{A}$, and the mass-shell condition becomes $N(\tilde{P}_{\mathrm{kin}}) = -m^2c^2$. In the free limit $\tilde{A}\to0$ the kinetic momentum reduces to the free symbol $\tilde{P} = m\tilde{V}$ of the preceding section, and the notation is consistent: $\tilde{P}_{\mathrm{kin}}$ is what $\tilde{P}$ becomes once the field is switched on.
 
-Expanding in components, with $\tilde\varpi = i\varpi_0 e_0 + \boldsymbol{\varpi}$ and $\tilde{A} = i\phi/c\,e_0 + \mathbf{A}$,
-
-$$
-\tilde{P}_{\mathrm{kin}} = i\left(\varpi_0 - \frac{q\phi}{c}\right)e_0 + \left(\boldsymbol{\varpi} - q\mathbf{A}\right)
-= i\,\frac{E}{c}\,e_0 + \mathbf{p},
-$$
-
-so the scalar coefficient $\varpi_0 - q\phi/c$ is the kinetic energy divided by $c$ and the vector coefficient $\boldsymbol{\varpi} - q\mathbf{A}$ is the kinetic three-momentum:
+Expanding in components, with $\tilde\varpi = i\varpi_0 e_0 + \vec\varpi$ and $\tilde{A} = i\phi/c\,e_0 + \vec A$,
 
 $$
-E = c\,\varpi_0 - q\phi, \qquad \mathbf{p} = \boldsymbol{\varpi} - q\mathbf{A}.
+\tilde{P}_{\mathrm{kin}} = i\left(\varpi_0 - \frac{q\phi}{c}\right)e_0 + \left(\vec\varpi - q\vec A\right)
+= i\,\frac{E}{c}\,e_0 + \vec p,
+$$
+
+so the scalar coefficient $\varpi_0 - q\phi/c$ is the kinetic energy divided by $c$ and the vector coefficient $\vec\varpi - q\vec A$ is the kinetic three-momentum:
+
+$$
+E = c\,\varpi_0 - q\phi, \qquad \vec p = \vec\varpi - q\vec A.
 $$
 
 The mass-shell relation $N(\tilde{P}_{\mathrm{kin}}) = -m^2c^2$ then reads
 
 $$
--\frac{\left(c\varpi_0 - q\phi\right)^2}{c^2} + \left(\boldsymbol{\varpi} - q\mathbf{A}\right)^2 = -m^2c^2,
+-\frac{\left(c\varpi_0 - q\phi\right)^2}{c^2} + \left(\vec\varpi - q\vec A\right)^2 = -m^2c^2,
 $$
 
 that is,
 
 $$
-\left(c\varpi_0 - q\phi\right)^2 = \left(\boldsymbol{\varpi} - q\mathbf{A}\right)^2c^2 + m^2c^4 .
+\left(c\varpi_0 - q\phi\right)^2 = \left(\vec\varpi - q\vec A\right)^2c^2 + m^2c^4 .
 $$
 
 Solving for the canonical energy $E_{\mathrm{can}} := c\,\varpi_0$ gives the **relativistic Hamiltonian**
 
 $$
-\boxed{\;E_{\mathrm{can}} = q\phi + c\sqrt{\left(\boldsymbol{\varpi} - q\mathbf{A}\right)^2 + m^2c^2}.\;}
+\boxed{\;E_{\mathrm{can}} = q\phi + c\sqrt{\left(\vec\varpi - q\vec A\right)^2 + m^2c^2}.\;}
 $$
 
-This is the standard result: the potential energy $q\phi$ is added, and the kinetic energy is built from the kinetic momentum $\boldsymbol{\varpi} - q\mathbf{A}$, not from the canonical momentum $\boldsymbol{\varpi}$. The kinetic energy in the bracket is the one that would be computed for a free particle whose momentum is $\mathbf{p} = \boldsymbol{\varpi} - q\mathbf{A}$.
+This is the standard result: the potential energy $q\phi$ is added, and the kinetic energy is built from the kinetic momentum $\vec\varpi - q\vec A$, not from the canonical momentum $\vec\varpi$. The kinetic energy in the bracket is the one that would be computed for a free particle whose momentum is $\vec p = \vec\varpi - q\vec A$.
 
 ### The action form and the canonical momentum
 
@@ -120,7 +120,7 @@ $$
 
 that is, **canonical = kinetic + $q\tilde{A}$**, which is exactly the component statement above. The prescription $P \to P - qA$ of the mass-shell form and the conjugate momentum of the action form are the same equation read in opposite directions.
 
-**Sign convention.** The pair of signs used here is the one inherited from the gauge-principle article: the covariant derivative is $D = \tilde{\nabla} + \frac{iq}{\hbar}\tilde{A}$ with gauge transformation $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$, and at the classical level the corresponding canonical/kinetic relation is $\tilde\varpi = \tilde{P}_{\mathrm{kin}} + q\tilde{A}$, equivalently $\tilde{P}_{\mathrm{kin}} = \tilde\varpi - q\tilde{A}$. This is the standard classical sign (the interaction Lagrangian is $-q\phi + q\mathbf{A}\cdot\mathbf{v}$ in laboratory time), and it is *not* silently reversed anywhere below. The corpus's field-theoretic sign conventions for the Dirac field are recorded in the minimal-coupling article; the classical statement here is the same prescription on the same connection.
+**Sign convention.** The pair of signs used here is the one inherited from the gauge-principle article: the covariant derivative is $D = \tilde{\nabla} + \frac{iq}{\hbar}\tilde{A}$ with gauge transformation $\tilde{A}' = \tilde{A} - \tilde{\nabla}\Gamma$, and at the classical level the corresponding canonical/kinetic relation is $\tilde\varpi = \tilde{P}_{\mathrm{kin}} + q\tilde{A}$, equivalently $\tilde{P}_{\mathrm{kin}} = \tilde\varpi - q\tilde{A}$. This is the standard classical sign (the interaction Lagrangian is $-q\phi + q\vec A\cdot\vec v$ in laboratory time), and it is *not* silently reversed anywhere below. The corpus's field-theoretic sign conventions for the Dirac field are recorded in the minimal-coupling article; the classical statement here is the same prescription on the same connection.
 
 ## Canonical Momentum Is Not Kinetic Momentum
 
@@ -142,10 +142,10 @@ So **the kinetic momentum is gauge-invariant and the canonical momentum is not.*
 
 **Free limit.** If $\tilde{A} = 0$ then $\tilde\varpi = \tilde{P}_{\mathrm{kin}} = \tilde{P}$ and every statement below reduces to the free ones of the parent article. The distinction is created by the coupling, not by the formalism.
 
-**A concrete case: the uniform magnetic field.** The cleanest display of the difference is a particle in a uniform magnetic field, where the canonical momentum has conserved components that the kinetic momentum does not. Take $\mathbf{B} = B_0\hat{\mathbf{e}}_3$ and the Landau gauge
+**A concrete case: the uniform magnetic field.** The cleanest display of the difference is a particle in a uniform magnetic field, where the canonical momentum has conserved components that the kinetic momentum does not. Take $\vec B = B_0\hat e_3$ and the Landau gauge
 
 $$
-\tilde{A} = B_0 x\,e_2, \qquad \text{i.e.} \qquad \mathbf{A} = B_0 x\,\hat{\mathbf{e}}_2 .
+\tilde{A} = B_0 x\,e_2, \qquad \text{i.e.} \qquad \vec A = B_0 x\,\hat e_2 .
 $$
 
 The Lagrangian does not depend on $y$ or $z$, so the conjugate momenta $\varpi_2$ and $\varpi_3$ are conserved:
@@ -154,9 +154,9 @@ $$
 \varpi_2 = p_y + qB_0 x = \text{const}, \qquad \varpi_3 = p_z = \text{const}.
 $$
 
-The kinetic momentum, by contrast, is not conserved: it rotates in the plane perpendicular to $\mathbf{B}$, since the equation of motion $d\mathbf{p}/dt = q\,\mathbf{v}\times\mathbf{B}$ with $\mathbf{v} = \mathbf{p}c^2/E$ is circular motion. The conserved quantities are the canonical components, the gauge-dependent ones; the kinetic momentum is the gauge-invariant one, and it is the one that turns. Both statements were checked numerically (see the companion), and they are not in tension: a gauge-dependent quantity may be conserved while a gauge-invariant quantity is not.
+The kinetic momentum, by contrast, is not conserved: it rotates in the plane perpendicular to $\vec B$, since the equation of motion $d\vec p/dt = q\,\vec v\times\vec B$ with $\vec v = \vec pc^2/E$ is circular motion. The conserved quantities are the canonical components, the gauge-dependent ones; the kinetic momentum is the gauge-invariant one, and it is the one that turns. Both statements were checked numerically (see the companion), and they are not in tension: a gauge-dependent quantity may be conserved while a gauge-invariant quantity is not.
 
-**What the distinction is not.** It is not a statement that the canonical momentum is unphysical. The canonical momentum is the generator of translations of the field and the variable of the Hamiltonian; its conservation is what makes the problem integrable in the Landau gauge. The point is only that it is *not* the momentum that appears in the velocity, $\mathbf{v} = \mathbf{p}_{\mathrm{kin}}c^2/E_{\mathrm{kin}}$, and *not* the momentum that obeys the free mass-shell relation.
+**What the distinction is not.** It is not a statement that the canonical momentum is unphysical. The canonical momentum is the generator of translations of the field and the variable of the Hamiltonian; its conservation is what makes the problem integrable in the Landau gauge. The point is only that it is *not* the momentum that appears in the velocity, $\vec v = \vec p_{\mathrm{kin}}c^2/E_{\mathrm{kin}}$, and *not* the momentum that obeys the free mass-shell relation.
 
 ## The Equation of Motion
 
@@ -187,10 +187,10 @@ $$
 \boxed{\;\frac{dP_{\mathrm{kin}}^\mu}{d\tau} = q\,F^{\mu\nu}U_\nu , \qquad \tilde{K} = \frac{d\tilde{P}_{\mathrm{kin}}}{d\tau}.\;}
 $$
 
-The contraction $\tilde{K} = q\,F(\tilde{U})$ is an element of $\mathbb{M}_-$, as it must be, and it is the **component form** of the Lorentz four-force. In components, with $F^{0k} = iE_k/c$ and $F^{jk} = \epsilon_{jkl}B_l$, the contraction is exactly the four-force of the read-list article,
+The contraction $\tilde{K} = q\,F(\tilde{V})$ is an element of $\mathbb{M}_-$, as it must be, and it is the **component form** of the Lorentz four-force. In components, with $F^{0k} = iE_k/c$ and $F^{jk} = \epsilon_{jkl}B_l$, the contraction is exactly the four-force of the read-list article,
 
 $$
-\tilde{K} = i\,\frac{\gamma q}{c}\left(\mathbf{E}\cdot\mathbf{v}\right)e_0 + \gamma q\left(\mathbf{E} + \mathbf{v}\times\mathbf{B}\right),
+\tilde{K} = i\,\frac{\gamma q}{c}\left(\vec E\cdot\vec v\right)e_0 + \gamma q\left(\vec E + \vec v\times\vec B\right),
 $$
 
 whose scalar part is the power and whose vector part is the relativistic three-force. The equation was checked against this component form at random fields and velocities; the agreement is exact (to machine precision), not approximate.
@@ -198,12 +198,12 @@ whose scalar part is the power and whose vector part is the relativistic three-f
 **The biquaternion product form.** The same four-force has the representation, established in *The Lorentz Force in Biquaternion Form*, as the anti-Hermitian projection of the product of the four-velocity and the field strength:
 
 $$
-\tilde{K} = -\,q\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{U}\tilde{F}\right),
+\tilde{K} = -\,q\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{V}\tilde{F}\right),
 \qquad
 P_{\mathbb{M}_-}(\tilde{Q}) = \tfrac{1}{2}\left(\tilde{Q} - \tilde{Q}^{*}\right).
 $$
 
-This article does not re-derive that formula; it records that the two routes agree, because the minimal-coupling contraction $qF^{\mu\nu}U_\nu$ and the projection formula are the same element of $\mathbb{M}_-$. The minimal-coupling route exhibits the force as the derivative of a momentum; the product route exhibits it as a bilinear in $\tilde{U}$ and $\tilde{F}$ that is manifestly covariant.
+This article does not re-derive that formula; it records that the two routes agree, because the minimal-coupling contraction $qF^{\mu\nu}U_\nu$ and the projection formula are the same element of $\mathbb{M}_-$. The minimal-coupling route exhibits the force as the derivative of a momentum; the product route exhibits it as a bilinear in $\tilde{V}$ and $\tilde{F}$ that is manifestly covariant.
 
 **Two structural consequences.** First, the force is orthogonal to the kinetic four-momentum. Differentiating the mass shell $N(\tilde{P}_{\mathrm{kin}}) = -m^2c^2$ along the worldline gives
 
@@ -217,12 +217,12 @@ the biquaternion form of $K^\mu P_\mu = 0$: the Lorentz force rotates the four-m
 
 The first independent check is a purely electric field. This case is *not* the one that suggested the formula — the derivation above used a general field — but it isolates the scalar potential and the electric contribution to the force.
 
-Take $\mathbf{B} = 0$ and a static, uniform electric field $\mathbf{E} = E_0\hat{\mathbf{e}}_1$, described by the potential $\phi = -E_0 x$, $\mathbf{A} = 0$, so that $\tilde{A} = -(iE_0/c)\,x\,e_0$. In this gauge the vector potential vanishes, so the canonical and kinetic momenta coincide in all three spatial components, $\varpi_k = p_k$, and differ only in the time component: $E_{\mathrm{can}} = E + q\phi$. The contraction $\tilde{K} = qF^{\mu\nu}U_\nu$ gives
+Take $\vec B = 0$ and a static, uniform electric field $\vec E = E_0\hat e_1$, described by the potential $\phi = -E_0 x$, $\vec A = 0$, so that $\tilde{A} = -(iE_0/c)\,x\,e_0$. In this gauge the vector potential vanishes, so the canonical and kinetic momenta coincide in all three spatial components, $\varpi_k = p_k$, and differ only in the time component: $E_{\mathrm{can}} = E + q\phi$. The contraction $\tilde{K} = qF^{\mu\nu}U_\nu$ gives
 
 $$
-\frac{d\mathbf{p}}{dt} = q\mathbf{E} = qE_0\,\hat{\mathbf{e}}_1,
+\frac{d\vec p}{dt} = q\vec E = qE_0\,\hat e_1,
 \qquad
-\frac{dE}{dt} = q\,\mathbf{E}\cdot\mathbf{v} = qE_0\,v_x .
+\frac{dE}{dt} = q\,\vec E\cdot\vec v = qE_0\,v_x .
 $$
 
 The first equation is exact and undamped by $\gamma$: the kinetic three-momentum grows linearly in laboratory time, $p_x = qE_0 t$ for a particle released from rest at $t=0$, and the energy follows from the mass shell,
@@ -233,23 +233,23 @@ E(t) = \sqrt{\left(qE_0t\right)^2c^2 + m^2c^4},
 v_x(t) = \frac{p_xc^2}{E} = \frac{qE_0tc^2}{\sqrt{\left(qE_0t\right)^2c^2 + m^2c^4}},
 $$
 
-so the worldline is hyperbolic and $v_x\to c$ as $t\to\infty$ without reaching it. The energy is not constant — an electric field does work — and its rate of change is the second equation above. The numerical solution of $d\mathbf{p}/dt = q\mathbf{E}$ with $\mathbf{v} = \mathbf{p}c^2/E$ reproduced $p_x = qE_0t$ to the integration accuracy and the mass-shell energy exactly.
+so the worldline is hyperbolic and $v_x\to c$ as $t\to\infty$ without reaching it. The energy is not constant — an electric field does work — and its rate of change is the second equation above. The numerical solution of $d\vec p/dt = q\vec E$ with $\vec v = \vec pc^2/E$ reproduced $p_x = qE_0t$ to the integration accuracy and the mass-shell energy exactly.
 
-Two remarks. The relation $d\mathbf{p}/dt = q\mathbf{E}$ holds for the **kinetic** momentum; had one differentiated the canonical momentum $\boldsymbol{\varpi} = \mathbf{p} + q\mathbf{A}$ instead, the vanishing of $\mathbf{A}$ in this gauge would hide the distinction, and a time-dependent $\mathbf{A}$ with $\mathbf{B}=0$ (a pure gauge field, or a field with $\mathbf{E} = -\partial_t\mathbf{A}$) would show it: then $\boldsymbol{\varpi}$ and $\mathbf{p}$ differ by $q\mathbf{A}$, and the force equation is the one for $\mathbf{p}$, not for $\boldsymbol{\varpi}$. This is the electric-field face of the canonical/kinetic distinction.
+Two remarks. The relation $d\vec p/dt = q\vec E$ holds for the **kinetic** momentum; had one differentiated the canonical momentum $\vec\varpi = \vec p + q\vec A$ instead, the vanishing of $\vec A$ in this gauge would hide the distinction, and a time-dependent $\vec A$ with $\vec B=0$ (a pure gauge field, or a field with $\vec E = -\partial_t\vec A$) would show it: then $\vec\varpi$ and $\vec p$ differ by $q\vec A$, and the force equation is the one for $\vec p$, not for $\vec\varpi$. This is the electric-field face of the canonical/kinetic distinction.
 
 ## Case II: A Purely Magnetic Field
 
 The second independent check is a purely magnetic field. This is the case in which the canonical and kinetic momenta differ most visibly, because the conserved canonical components coexist with a rotating kinetic momentum.
 
-Take $\mathbf{E} = 0$ and a static, uniform magnetic induction $\mathbf{B} = B_0\hat{\mathbf{e}}_3$. The contraction gives
+Take $\vec E = 0$ and a static, uniform magnetic induction $\vec B = B_0\hat e_3$. The contraction gives
 
 $$
-\frac{d\mathbf{p}}{dt} = q\,\mathbf{v}\times\mathbf{B},
+\frac{d\vec p}{dt} = q\,\vec v\times\vec B,
 \qquad
-\frac{dE}{dt} = q\,\mathbf{E}\cdot\mathbf{v} = 0 .
+\frac{dE}{dt} = q\,\vec E\cdot\vec v = 0 .
 $$
 
-The energy is constant, hence $\gamma$ and $|\mathbf{p}|$ are constant, and the motion in the plane perpendicular to $\mathbf{B}$ is circular with the relativistic cyclotron frequency
+The energy is constant, hence $\gamma$ and $|\vec p|$ are constant, and the motion in the plane perpendicular to $\vec B$ is circular with the relativistic cyclotron frequency
 
 $$
 \omega_c = \frac{qB_0}{\gamma m}.
@@ -257,9 +257,9 @@ $$
 
 The field does no work: a pure magnetic field changes the direction of the kinetic momentum but not its magnitude or the energy. Both statements follow from the contraction alone, without solving the equations.
 
-The canonical momentum behaves differently, as the preceding section anticipated. In the Landau gauge $\mathbf{A} = B_0x\,\hat{\mathbf{e}}_2$, the components $\varpi_2 = p_y + qB_0x$ and $\varpi_3 = p_z$ are conserved, while the kinetic momentum $\mathbf{p}$ rotates: at any instant its components change, and only its magnitude is fixed. A numerical integration of $d\mathbf{p}/dt = q\mathbf{v}\times\mathbf{B}$ with $\mathbf{v} = \mathbf{p}c^2/E$ kept $E$ and $|\mathbf{p}|$ fixed to the integration accuracy, held $\varpi_2$ and $\varpi_3$ constant to machine precision, and produced the circular motion whose period is $2\pi/\omega_c$. This is the sharpest display of the article's main distinction: the conserved quantities are the gauge-dependent canonical components; the gauge-invariant kinetic momentum is not conserved.
+The canonical momentum behaves differently, as the preceding section anticipated. In the Landau gauge $\vec A = B_0x\,\hat e_2$, the components $\varpi_2 = p_y + qB_0x$ and $\varpi_3 = p_z$ are conserved, while the kinetic momentum $\vec p$ rotates: at any instant its components change, and only its magnitude is fixed. A numerical integration of $d\vec p/dt = q\vec v\times\vec B$ with $\vec v = \vec pc^2/E$ kept $E$ and $|\vec p|$ fixed to the integration accuracy, held $\varpi_2$ and $\varpi_3$ constant to machine precision, and produced the circular motion whose period is $2\pi/\omega_c$. This is the sharpest display of the article's main distinction: the conserved quantities are the gauge-dependent canonical components; the gauge-invariant kinetic momentum is not conserved.
 
-**The two checks are independent.** The electric case tests the scalar-potential (time-component) part of the coupling, where the field does work; the magnetic case tests the vector-potential (space-component) part, where it does not. A formula fitted to one would not pass the other — the electric case would accept $d\mathbf{p}/dt = q\mathbf{E} + (\text{anything antisymmetric in }\mathbf{v},\mathbf{B})$ only if the magnetic term vanished for $\mathbf{B}=0$, and the magnetic case would accept a wrong coefficient of the electric term only if $\mathbf{E}=0$. The general derivation and the two cases agreeing on the *same* $\tilde{K} = qF^{\mu\nu}U_\nu$ is the content of the verification.
+**The two checks are independent.** The electric case tests the scalar-potential (time-component) part of the coupling, where the field does work; the magnetic case tests the vector-potential (space-component) part, where it does not. A formula fitted to one would not pass the other — the electric case would accept $d\vec p/dt = q\vec E + (\text{anything antisymmetric in }\vec v,\vec B)$ only if the magnetic term vanished for $\vec B=0$, and the magnetic case would accept a wrong coefficient of the electric term only if $\vec E=0$. The general derivation and the two cases agreeing on the *same* $\tilde{K} = qF^{\mu\nu}U_\nu$ is the content of the verification.
 
 ## The Proper-Time Restriction, Stated Explicitly
 
@@ -279,21 +279,21 @@ so the sum of four-forces is **not** the coordinate-time derivative of the total
 The read-list article on the Lorentz transformation relates the boost biquaternion to the four-velocity,
 
 $$
-\tilde{\Lambda} = \sqrt{-\frac{i}{c}\,\tilde{U}^{\natural}},
+\tilde{\Lambda} = \sqrt{-\frac{i}{c}\,\tilde{V}^{\natural}},
 \qquad \tilde\Lambda\tilde\Lambda^{\natural} = e_0,
 $$
 
-with the boost direction $\hat{\mathbf{u}}$ aligned with the particle velocity $\hat{\mathbf{v}}$, and implements the transformation of a four-vector by rotor conjugation $\tilde{Q}' = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$.
+with the boost direction $\hat u$ aligned with the particle velocity $\hat v$, and implements the transformation of a four-vector by rotor conjugation $\tilde{Q}' = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$.
 
-**Convention, stated once.** The rotor built from $+\tilde{U}$ carries the **laboratory to the moving (rest) frame**: acting on the four-velocity it gives
+**Convention, stated once.** The rotor built from $+\tilde{V}$ carries the **laboratory to the moving (rest) frame**: acting on the four-velocity it gives
 
 $$
-\tilde{\Lambda}\,\tilde{U}\,\tilde{\Lambda}^{*} = ic\,e_0,
+\tilde{\Lambda}\,\tilde{V}\,\tilde{\Lambda}^{*} = ic\,e_0,
 $$
 
-the four-velocity in the particle's rest frame, and the inverse transformation back to the laboratory is by the quaternion conjugate $\tilde{\Lambda}^{\natural}$. This was checked numerically on boosts along and off the coordinate axes, including the sign branch selected by $\mathrm{Sc}(\tilde\Lambda)>0$; the rotor built by the same recipe from the velocity-reversed four-velocity $\tilde{U}^{\natural} = \gamma(ic\,e_0 - \mathbf{v})$ carries the rest frame back to the laboratory and is the quaternion conjugate $\tilde{\Lambda}^{\natural} = \sqrt{-\frac{i}{c}\tilde{U}}$. The convention matters because the two choices are not related by a relabelling of $\mathbf{v}$ alone — the sign branch and the direction of the transformation can be confused — and it is fixed here so that every use of $\tilde{\Lambda}$ below is unambiguous.
+the four-velocity in the particle's rest frame, and the inverse transformation back to the laboratory is by the quaternion conjugate $\tilde{\Lambda}^{\natural}$. This was checked numerically on boosts along and off the coordinate axes, including the sign branch selected by $\mathrm{Sc}(\tilde\Lambda)>0$; the rotor built by the same recipe from the velocity-reversed four-velocity $\tilde{V}^{\natural} = \gamma(ic\,e_0 - \vec v)$ carries the rest frame back to the laboratory and is the quaternion conjugate $\tilde{\Lambda}^{\natural} = \sqrt{-\frac{i}{c}\tilde{V}}$. The convention matters because the two choices are not related by a relabelling of $\vec v$ alone — the sign branch and the direction of the transformation can be confused — and it is fixed here so that every use of $\tilde{\Lambda}$ below is unambiguous.
 
-With that convention the four-velocity, the four-momentum, and the four-force all transform by the **vector** rule, $\tilde{Q}' = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$, because all three lie in $\mathbb{M}_-$. The field strength does **not**: it transforms by the **bivector** rule $\tilde{F}' = \tilde{\Lambda}^{\natural}\tilde{F}\tilde{\Lambda}$, the same rule used in the Lorentz-force article. The product formula $\tilde{K} = -q\sqrt{\mu}\,P_{\mathbb{M}_-}(\tilde{U}\tilde{F})$ is covariant under the *pair* of rules, and the minimal-coupling equation $\tilde{K} = d\tilde{P}_{\mathrm{kin}}/d\tau$ is covariant because both sides are four-vectors. In the particle's rest frame, where $\tilde{U} = ic\,e_0$, the force reduces to $\tilde{K} = q\,\mathbf{E}_{\mathrm{rest}}$, the rest-frame electric field; this is the frame in which the electric and magnetic contributions to the force are cleanly separated, and it uses the convention above.
+With that convention the four-velocity, the four-momentum, and the four-force all transform by the **vector** rule, $\tilde{Q}' = \tilde{\Lambda}\tilde{Q}\tilde{\Lambda}^{*}$, because all three lie in $\mathbb{M}_-$. The field strength does **not**: it transforms by the **bivector** rule $\tilde{F}' = \tilde{\Lambda}^{\natural}\tilde{F}\tilde{\Lambda}$, the same rule used in the Lorentz-force article. The product formula $\tilde{K} = -q\sqrt{\mu}\,P_{\mathbb{M}_-}(\tilde{V}\tilde{F})$ is covariant under the *pair* of rules, and the minimal-coupling equation $\tilde{K} = d\tilde{P}_{\mathrm{kin}}/d\tau$ is covariant because both sides are four-vectors. In the particle's rest frame, where $\tilde{V} = ic\,e_0$, the force reduces to $\tilde{K} = q\,\vec E_{\mathrm{rest}}$, the rest-frame electric field; this is the frame in which the electric and magnetic contributions to the force are cleanly separated, and it uses the convention above.
 
 **A rotor that grows in time.** The rotor used here is fixed. The rest-to-lab rotor $\tilde{\Lambda}^{\natural}$ carried along the worldline, and allowed to depend on proper time, is the **eigenspinor** of the companion article *The Eigenspinor: The Lorentz Rotor as a Function of Proper Time*, and the equation of motion of this article is then its linear evolution equation $\dot{\tilde\Lambda} = \tfrac12\tilde\Omega\tilde\Lambda$ with $\tilde\Omega = -(q/m)\tilde{F}^{*}$ and the rest-to-lab sign. In a uniform field the eigenspinor integrates in closed form and reproduces the two cases below as its degenerate limits; in a general field it is a path-ordered exponential. The cross-reference is recorded here because the fixed rotor of this section is the special case $\tilde\Lambda(0)$ of the evolving one, and the two articles should be read together.
 
@@ -304,7 +304,7 @@ With that convention the four-velocity, the four-momentum, and the four-force al
 - *A single home for the four-vectors of the problem.* The four-position, four-velocity, kinetic four-momentum, canonical four-momentum, four-potential, and four-force all lie in the same four-dimensional real subspace $\mathbb{M}_-$, and the minimal-coupling shift $\tilde\varpi = \tilde{P}_{\mathrm{kin}} + q\tilde{A}$ is an equation inside that subspace.
 - *A constraint, not an extra postulate.* The mass-shell relation $N(\tilde{P}_{\mathrm{kin}}) = -m^2c^2$ is the biquaternion-norm condition on $\mathbb{M}_-$; with minimal coupling it *is* the relativistic Hamiltonian, and it delivers both the canonical/kinetic relation and the form of the energy in one equation.
 - *A canonical momentum from the action.* The conjugate momentum $\tilde\varpi = \tilde{P} + q\tilde{A}$ follows from the first variation of the biquaternion action with the pairing $\langle\tilde{A},\dot{\tilde{Q}}\rangle$, with no index apparatus.
-- *The form of the force.* The contraction $\tilde{K} = qF^{\mu\nu}U_\nu$ reassembles into the $\mathbb{M}_-$-valued four-force, and it agrees with the projection formula $ -q\sqrt{\mu}\,P_{\mathbb{M}_-}(\tilde{U}\tilde{F})$ of the Lorentz-force article.
+- *The form of the force.* The contraction $\tilde{K} = qF^{\mu\nu}U_\nu$ reassembles into the $\mathbb{M}_-$-valued four-force, and it agrees with the projection formula $ -q\sqrt{\mu}\,P_{\mathbb{M}_-}(\tilde{V}\tilde{F})$ of the Lorentz-force article.
 
 **Only transcribed.** The minimal-coupling *principle* itself — that the canonical four-momentum should be replaced by $\tilde{\varpi} - q\tilde{A}$ — is not derived from the algebra; it is the standard prescription carried into it, and the algebra supplies a home and a compact expression rather than a reason. The sign conventions are inherited from the parent articles and are conventions, not results. The non-relativistic limit likewise reproduces the Newtonian Lorentz force, as it must, and does not test the relativistic part of the construction.
 
@@ -334,7 +334,7 @@ $$
 N\!\left(\tilde{\varpi} - q\tilde{A}\right) = -m^2c^2 .
 $$
 
-The object $\tilde{\varpi} - q\tilde{A}$ is the **kinetic** four-momentum and $\tilde{\varpi}$ is the **canonical** four-momentum, $\tilde{\varpi} = \tilde{P}_{\mathrm{kin}} + q\tilde{A}$. The prescription has two faces, and they agree: on the mass-shell relation it yields the relativistic Hamiltonian $E_{\mathrm{can}} = q\phi + c\sqrt{(\boldsymbol{\varpi}-q\mathbf{A})^2 + m^2c^2}$; on the action $S = -mc\int\sqrt{-N(d\tilde{Q})} + q\int\mathrm{Sc}(\tilde{A}\,\bar{d\tilde{Q}})$ it yields the conjugate momentum $\tilde\varpi = m\dot{\tilde{Q}} + q\tilde{A}$. The two distinctions that carry the physical content are that the **kinetic momentum is gauge-invariant** and the **canonical momentum is not**, and that the kinetic, not the canonical, momentum is the one that obeys the free mass-shell relation and appears in the velocity $\mathbf{v} = \mathbf{p}c^2/E$.
+The object $\tilde{\varpi} - q\tilde{A}$ is the **kinetic** four-momentum and $\tilde{\varpi}$ is the **canonical** four-momentum, $\tilde{\varpi} = \tilde{P}_{\mathrm{kin}} + q\tilde{A}$. The prescription has two faces, and they agree: on the mass-shell relation it yields the relativistic Hamiltonian $E_{\mathrm{can}} = q\phi + c\sqrt{(\vec\varpi-q\vec A)^2 + m^2c^2}$; on the action $S = -mc\int\sqrt{-N(d\tilde{Q})} + q\int\mathrm{Sc}(\tilde{A}\,\bar{d\tilde{Q}})$ it yields the conjugate momentum $\tilde\varpi = m\dot{\tilde{Q}} + q\tilde{A}$. The two distinctions that carry the physical content are that the **kinetic momentum is gauge-invariant** and the **canonical momentum is not**, and that the kinetic, not the canonical, momentum is the one that obeys the free mass-shell relation and appears in the velocity $\vec v = \vec pc^2/E$.
 
 The equation of motion is the Lorentz force in its contracted form,
 
@@ -342,12 +342,12 @@ $$
 \frac{dP_{\mathrm{kin}}^\mu}{d\tau} = q\,F^{\mu\nu}U_\nu,
 \qquad
 \tilde{K} = \frac{d\tilde{P}_{\mathrm{kin}}}{d\tau}
-= -\,q\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{U}\tilde{F}\right),
+= -\,q\sqrt{\mu}\;P_{\mathbb{M}_-}\!\left(\tilde{V}\tilde{F}\right),
 $$
 
-with $\tilde{K} = i\frac{\gamma q}{c}(\mathbf{E}\cdot\mathbf{v})e_0 + \gamma q(\mathbf{E}+\mathbf{v}\times\mathbf{B})$ in components. It preserves the rest mass, $\tilde{K}\tilde{P}^{\natural}_{\mathrm{kin}} + \tilde{P}_{\mathrm{kin}}\tilde{K}^{\natural} = 0$, and it is a proper-time equation about a single worldline. Two independent cases were checked — a purely electric field, where $d\mathbf{p}/dt = q\mathbf{E}$ and the field does work, and a purely magnetic field, where $d\mathbf{p}/dt = q\mathbf{v}\times\mathbf{B}$, the energy is constant, and the motion is circular at $\omega_c = qB_0/(\gamma m)$ — together with the general contraction at random fields. The two cases test the time-like and space-like parts of the coupling separately, so agreement on both is not agreement on the case that suggested the formula.
+with $\tilde{K} = i\frac{\gamma q}{c}(\vec E\cdot\vec v)e_0 + \gamma q(\vec E+\vec v\times\vec B)$ in components. It preserves the rest mass, $\tilde{K}\tilde{P}^{\natural}_{\mathrm{kin}} + \tilde{P}_{\mathrm{kin}}\tilde{K}^{\natural} = 0$, and it is a proper-time equation about a single worldline. Two independent cases were checked — a purely electric field, where $d\vec p/dt = q\vec E$ and the field does work, and a purely magnetic field, where $d\vec p/dt = q\vec v\times\vec B$, the energy is constant, and the motion is circular at $\omega_c = qB_0/(\gamma m)$ — together with the general contraction at random fields. The two cases test the time-like and space-like parts of the coupling separately, so agreement on both is not agreement on the case that suggested the formula.
 
-The algebra supplies the common home $\mathbb{M}_-$ of the four-vectors, the biquaternion-norm mass shell that doubles as the Hamiltonian, the conjugate momentum of the action, and the reassembly of the contraction into the four-force; it does not supply the minimal-coupling principle itself, the sign conventions, or the geometric interpretation, which are carried in or interpreted. The proper-time form is correct for this single-particle problem and is explicitly not a many-body conservation law, and the boost rotor is fixed by the convention that its $+\mathbf{v}$ branch carries the laboratory to the moving frame.
+The algebra supplies the common home $\mathbb{M}_-$ of the four-vectors, the biquaternion-norm mass shell that doubles as the Hamiltonian, the conjugate momentum of the action, and the reassembly of the contraction into the four-force; it does not supply the minimal-coupling principle itself, the sign conventions, or the geometric interpretation, which are carried in or interpreted. The proper-time form is correct for this single-particle problem and is explicitly not a many-body conservation law, and the boost rotor is fixed by the convention that its $+\vec v$ branch carries the laboratory to the moving frame.
 
 ## Summary of Notation
 
@@ -360,21 +360,21 @@ The algebra supplies the common home $\mathbb{M}_-$ of the four-vectors, the biq
 | $\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ | Real-quaternion subspace; complex scalar subspace (centre) |
 | $N(\tilde{Q}) = \tilde{Q}\tilde{Q}^{\natural}$ | Biquaternion norm |
 | $\langle\tilde{A},\tilde{B}\rangle = \mathrm{Sc}(\tilde{A}\tilde{B}^{\natural})$ | Invariant pairing on $\mathbb{M}_-$ |
-| $\tilde{Q} = ict\,e_0 + \mathbf{x}$ | Four-position |
-| $\tilde{U} = \gamma(ic\,e_0 + \mathbf{v})$ | Four-velocity, $N(\tilde{U}) = -c^2$ |
-| $\tilde{P} = m\tilde{U} = iE/c\,e_0 + \mathbf{p}$ | Kinetic four-momentum, $N(\tilde{P}) = -m^2c^2$ |
-| $\tilde{A} = i\phi/c\,e_0 + \mathbf{A}$ | Four-potential (material-sector connection) |
+| $\tilde{Q} = ict\,e_0 + \vec x$ | Four-position |
+| $\tilde{V} = \gamma(ic\,e_0 + \vec v)$ | Four-velocity, $N(\tilde{V}) = -c^2$ |
+| $\tilde{P} = m\tilde{V} = iE/c\,e_0 + \vec p$ | Kinetic four-momentum, $N(\tilde{P}) = -m^2c^2$ |
+| $\tilde{A} = i\phi/c\,e_0 + \vec A$ | Four-potential (material-sector connection) |
 | $\tilde\varpi = \tilde{P} + q\tilde{A}$ | Canonical four-momentum |
 | $\tilde{P}_{\mathrm{kin}} = \tilde\varpi - q\tilde{A} = \tilde{P}$ | Kinetic four-momentum (gauge-invariant) |
 | $q$ | Charge (coupling constant, not fixed by the algebra) |
 | $N(\tilde{P}_{\mathrm{kin}}) = -m^2c^2$ | Minimal-coupling mass-shell relation |
-| $E_{\mathrm{can}} = c\varpi_0$ | Canonical energy; $E_{\mathrm{can}} = q\phi + c\sqrt{(\boldsymbol\varpi - q\mathbf{A})^2 + m^2c^2}$ |
+| $E_{\mathrm{can}} = c\varpi_0$ | Canonical energy; $E_{\mathrm{can}} = q\phi + c\sqrt{(\vec\varpi - q\vec A)^2 + m^2c^2}$ |
 | $F_{\mu\nu} = \partial_\mu A_\nu - \partial_\nu A_\mu$ | Field tensor; $F^{0k} = iE_k/c$, $F^{jk} = \epsilon_{jkl}B_l$ |
-| $\tilde{F} = i\sqrt{\epsilon}\,\mathbf{E} - \sqrt{\mu}\,\mathbf{H}$ | Field-strength biquaternion |
-| $\tilde{K} = d\tilde{P}_{\mathrm{kin}}/d\tau$ | Four-force; $\tilde{K} = qF^{\mu\nu}U_\nu = -q\sqrt{\mu}P_{\mathbb{M}_-}(\tilde{U}\tilde{F})$ |
+| $\tilde{F} = i\sqrt{\epsilon}\,\vec E - \sqrt{\mu}\,\vec H$ | Field-strength biquaternion |
+| $\tilde{K} = d\tilde{P}_{\mathrm{kin}}/d\tau$ | Four-force; $\tilde{K} = qF^{\mu\nu}U_\nu = -q\sqrt{\mu}P_{\mathbb{M}_-}(\tilde{V}\tilde{F})$ |
 | $P_{\mathbb{M}_-}(\tilde{Q}) = \tfrac12(\tilde{Q} - \tilde{Q}^{*})$ | Projection onto $\mathbb{M}_-$ |
-| $\tilde{\Lambda} = \sqrt{-\frac{i}{c}\tilde{U}^{\natural}}$ | Boost rotor; $+\mathbf{v}$ branch: laboratory to moving frame |
-| $\gamma = 1/\sqrt{1-\mathbf{v}^2/c^2}$ | Lorentz factor |
+| $\tilde{\Lambda} = \sqrt{-\frac{i}{c}\tilde{V}^{\natural}}$ | Boost rotor; $+\vec v$ branch: laboratory to moving frame |
+| $\gamma = 1/\sqrt{1-\vec v^2/c^2}$ | Lorentz factor |
 | $\omega_c = qB_0/(\gamma m)$ | Relativistic cyclotron frequency |
 | $c = 1/\sqrt{\epsilon\mu}$, $c_0$ | Speed of light in the medium; in vacuum |
 | $\mathrm{Tr}(\tilde{P}\tilde{H}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{H})$ | Trace pairing of the informational sector |

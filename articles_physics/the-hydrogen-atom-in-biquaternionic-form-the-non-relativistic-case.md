@@ -39,7 +39,7 @@ $$
 = -\hat p^{\,2}e_0 ,
 $$
 
-because $e_je_k+e_ke_j=0$ for $j\neq k$. Here $\hat p^{\,2}=\hat{\mathbf p}\cdot\hat{\mathbf p}=-\hbar^2\nabla^2$. Since quaternion conjugation negates the vector part, $\tilde p^{\natural}=-\tilde p$, and
+because $e_je_k+e_ke_j=0$ for $j\neq k$. Here $\hat p^{\,2}=\hat p\cdot\hat p=-\hbar^2\nabla^2$. Since quaternion conjugation negates the vector part, $\tilde p^{\natural}=-\tilde p$, and
 
 $$
 \tilde p\,\tilde p^{\natural} = N(\tilde p) = -\tilde p^{\,2} = \hat p^{\,2}e_0 = -\hbar^2\nabla^2\,e_0 .
@@ -51,14 +51,14 @@ $$
 \boxed{\;\tilde T = -\frac{1}{2m}\tilde p^{\,2} = \frac{1}{2m}\tilde p\,\tilde p^{\natural} = \frac{\hat p^{\,2}}{2m}e_0 . \;}
 $$
 
-The explicit minus sign is not decoration. The quaternion square of a pure vector is **minus** its Euclidean square, so writing $\tilde p^{\,2}/(2m)$ without the sign would reverse the kinetic term, leaving a Hamiltonian unbounded below and no bound states at all. The sign is the same algebraic fact — $e_k^2=-e_0$ — that gives the biquaternion norm $N(\tilde H)=h_0^2-|\mathbf h|^2$ on $\mathbb{M}_+$ its Lorentzian signature; for the momentum, whose scalar part is zero, the biquaternion norm is $-\sum_kh_k^2\,e_0$, the negative of the Euclidean square. The kinetic operator is, up to the factor $1/2m$, the biquaternion norm of the momentum.
+The explicit minus sign is not decoration. The quaternion square of a pure vector is **minus** its Euclidean square, so writing $\tilde p^{\,2}/(2m)$ without the sign would reverse the kinetic term, leaving a Hamiltonian unbounded below and no bound states at all. The sign is the same algebraic fact — $e_k^2=-e_0$ — that gives the biquaternion norm $N(\tilde H)=h_0^2-|\vec h|^2$ on $\mathbb{M}_+$ its Lorentzian signature; for the momentum, whose scalar part is zero, the biquaternion norm is $-\sum_kh_k^2\,e_0$, the negative of the Euclidean square. The kinetic operator is, up to the factor $1/2m$, the biquaternion norm of the momentum.
 
 ### The potential
 
 The Coulomb potential is the central scalar
 
 $$
-\tilde V = V(r)\,e_0, \qquad V(r) = -\frac{\kappa}{r}, \qquad \kappa = \frac{Ze^2}{4\pi\epsilon_0} .
+\tilde\Phi = V(r)\,e_0, \qquad V(r) = -\frac{\kappa}{r}, \qquad \kappa = \frac{Ze^2}{4\pi\epsilon_0} .
 $$
 
 It lies in $\mathbb{M}_+$, and in fact in the centre $\mathbb{C}_{\mathbb{B}}$. Two honest remarks belong here. First, the $1/r$ form is put in by hand: the framework's Maxwell equation does produce the field of a point charge as an imaginary vector in $\mathbb{M}_+$, but the point-charge source is input, not derived. Second, the potential is a scalar and carries no vector part, so the framework's sector structure is not used by it; a vector-valued or spin-dependent coupling would be a different problem, and none is introduced here.
@@ -68,12 +68,12 @@ It lies in $\mathbb{M}_+$, and in fact in the centre $\mathbb{C}_{\mathbb{B}}$. 
 Adding the two terms,
 
 $$
-\tilde H = \tilde T+\tilde V
+\tilde H = \tilde T+\tilde\Phi
 = \left[-\frac{\hbar^2}{2m}\nabla^2-\frac{\kappa}{r}\right]e_0
 = h_0\,e_0, \qquad h_0 = -\frac{\hbar^2}{2m}\nabla^2-\frac{\kappa}{r}.
 $$
 
-The Hamiltonian is Hermitian and lies in $\mathbb{M}_+$, and its vector part is zero: $\mathbf h=0$ in the general form $\tilde H=h_0e_0+i\mathbf h$. It is therefore **central**, commuting with every element of $\mathbb{B}$, and in particular with the spin operators and with $i$.
+The Hamiltonian is Hermitian and lies in $\mathbb{M}_+$, and its vector part is zero: $\vec h=0$ in the general form $\tilde H=h_0e_0+i\vec h$. It is therefore **central**, commuting with every element of $\mathbb{B}$, and in particular with the spin operators and with $i$.
 
 The generator of the Schrödinger equation is
 
@@ -89,7 +89,7 @@ and it lies along the time-like direction $ie_0$ of the material sector, as the 
 The framework's states are spinors in a minimal left ideal $\mathbb{B}\tilde P\cong\mathbb{C}^2$. A position-space treatment requires a spinor **field**,
 
 $$
-\psi(t,\mathbf x)\in\mathbb{B}\tilde P \cong \mathbb{C}^2,
+\psi(t,\vec x)\in\mathbb{B}\tilde P \cong \mathbb{C}^2,
 $$
 
 a two-component object defined on the spatial coordinates of the material sector. This is an extension of the framework's quantum formalism, which the companion articles state for a single qubit, and it should be labelled as one: the position dependence is carried by the **argument** of the field, not by the algebra. The algebra acts on the internal two-dimensional index; the argument is external structure that the finite-dimensional algebra does not contain.
@@ -214,7 +214,7 @@ $$
 The ground state is therefore
 
 $$
-\psi_{100}(\mathbf x) = \frac{1}{\sqrt{\pi a_0^3}}\,e^{-r/a_0}\,\chi_{m_s},
+\psi_{100}(\vec x) = \frac{1}{\sqrt{\pi a_0^3}}\,e^{-r/a_0}\,\chi_{m_s},
 \qquad E_1=-\frac{\kappa}{2a_0},
 $$
 
@@ -230,7 +230,7 @@ Under the isomorphism $\mathsf{M}_2$ the transcription is transparent. The field
 | Kinetic term $\hat p^2/2m$ | $-\frac{1}{2m}\tilde p^{\,2}=\frac{1}{2m}\tilde p\tilde p^{\natural}$ | scalar |
 | Orbital $\hat L_k$ | $\tilde L_k=\hat L_k e_0$ | scalar |
 | Spin $S_k=\frac{\hbar}{2}\sigma_k$ | $\tilde S_k=\frac{\hbar}{2}ie_k$ | vector |
-| Wavefunction $\psi\in L^2(\mathbb{R}^3)\otimes\mathbb{C}^2$ | spinor field $\psi(\mathbf x)\in\mathbb{B}\tilde P$ | module |
+| Wavefunction $\psi\in L^2(\mathbb{R}^3)\otimes\mathbb{C}^2$ | spinor field $\psi(\vec x)\in\mathbb{B}\tilde P$ | module |
 | Spectrum $E_n=-\frac{m\kappa^2}{2\hbar^2n^2}$ | identical | — |
 | Degeneracy $2n^2$ | identical, spin factor from $\dim\mathbb{B}\tilde P=2$ | — |
 

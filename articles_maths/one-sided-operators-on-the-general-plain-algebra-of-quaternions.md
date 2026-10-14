@@ -52,7 +52,7 @@ a four-dimensional space; its one-dimensional part in the scalar line is $\{\lam
 
 **Corollary.** The self-adjoint sector is the linear span of the identity and the operators $\tilde q\mapsto\tilde a\tilde q+\tilde q\tilde a$ for pure $\tilde a$; these last are the symmetrised multiplications, and they are the operators whose matrices are symmetric with respect to the Gram matrix $D$.
 
-*Proof.* $L_{\tilde a}+R_{\tilde a}$ with $\tilde a=\lambda+\mathbf a$ is $2\lambda\,\mathrm{id}$ plus the pure part; the matrix statement is the formula $G^{\sim}=D\,G^{\mathsf T}D$ of *Association and the Transpose on the General Plain Algebra*, above this article in this category, read at $G^{\sim}=G$.
+*Proof.* $L_{\tilde a}+R_{\tilde a}$ with $\tilde a=\lambda+\vec a$ is $2\lambda\,\mathrm{id}$ plus the pure part; the matrix statement is the formula $G^{\sim}=D\,G^{\mathsf T}D$ of *Association and the Transpose on the General Plain Algebra*, above this article in this category, read at $G^{\sim}=G$.
 
 ## The Skew Sector
 

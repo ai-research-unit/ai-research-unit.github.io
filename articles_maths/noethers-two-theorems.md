@@ -223,7 +223,7 @@ $$
 \partial_\nu j^\nu = \partial_\nu E^\nu \equiv 0 .
 $$
 
-The conservation of the source is therefore not an independent law but an **integrability condition**: the equation has no solution unless the source is conserved. This is the second-theorem route to charge conservation. The corpus reaches the same conclusion inside the biquaternion algebra, where the single equation $\tilde{\nabla}\tilde{F}=-\tilde{R}$ requires $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{R})=0$, which expands to $\partial_t\rho+\mathrm{div}\,\mathbf{J}=0$; the identity of the second theorem and the biquaternion integrability condition are the same statement in two notations.
+The conservation of the source is therefore not an independent law but an **integrability condition**: the equation has no solution unless the source is conserved. This is the second-theorem route to charge conservation. The corpus reaches the same conclusion inside the biquaternion algebra, where the single equation $\tilde{\nabla}\tilde{F}=-\tilde{R}$ requires $\mathrm{Sc}(\tilde{\nabla}^{\natural}\tilde{R})=0$, which expands to $\partial_t\rho+\mathrm{div}\,\vec J=0$; the identity of the second theorem and the biquaternion integrability condition are the same statement in two notations.
 
 ## Worked Example: a Local Symmetry with a Rigid Subgroup
 

@@ -6,7 +6,7 @@ A norm and an inverse are read in a product, and the equations name it. The bloc
 the **antisymmetric plain multiplication**
 
 $$
-\tilde p\times\tilde q=\tfrac12\bigl(\tilde p\tilde q-\tilde q\tilde p\bigr)=\mathbf p\times\mathbf q,
+\tilde p\times\tilde q=\tfrac12\bigl(\tilde p\tilde q-\tilde q\tilde p\bigr)=\vec p\times\vec q,
 $$
 
 the cross product of the two vector parts, the antisymmetric half of the general plain bilinear
@@ -18,7 +18,7 @@ survives.
 The answer is an absence and a substitute. The block has **no unit** on either side, hence **no
 inverse** and an empty group of units, and **no algebraic norm**, its square and its conjugated
 square both vanishing identically. The quadratic objects it does carry are the operator trace form
-$K(\tilde a,\tilde b)=\operatorname{Tr}(L_{\tilde a}L_{\tilde b})=-2\,\mathbf a\cdot\mathbf b$ and
+$K(\tilde a,\tilde b)=\operatorname{Tr}(L_{\tilde a}L_{\tilde b})=-2\,\vec a\cdot\vec b$ and
 the scalar-part form $\varphi(\tilde p,\tilde q)=p_0q_0$; the first is the invariant form of the block
 and the Killing form of the bracket, the second the rank-one form whose radical is the vector
 subspace, and neither is multiplicative.
@@ -30,13 +30,13 @@ Quaternion $\mathbb{R}$ Space*; and the invariant form of the block is *The Kill
 Antisymmetric Plain Algebra*.
 
 **Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and
-$e_1^2=e_2^2=e_3^2=-e_0$; a generic element is $\tilde q=q_0e_0+\mathbf q$, the centre is
+$e_1^2=e_2^2=e_3^2=-e_0$; a generic element is $\tilde q=q_0e_0+\vec q$, the centre is
 $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$ and the vector subspace is
-$\mathrm{Vect}(\mathbb{H})=\{\mathbf q\}$; $\tilde p\tilde q$ is the general plain bilinear product,
-and $\mathbf p\cdot\mathbf q$, $\mathbf p\times\mathbf q$ the Euclidean dot and vector products. The
-natural conjugation is $\tilde q^{\natural}=q_0e_0-\mathbf q$; over $\mathbb{R}$ the bar is the
+$\mathrm{Vect}(\mathbb{H})=\{\vec q\}$; $\tilde p\tilde q$ is the general plain bilinear product,
+and $\vec p\cdot\vec q$, $\vec p\times\vec q$ the Euclidean dot and vector products. The
+natural conjugation is $\tilde q^{\natural}=q_0e_0-\vec q$; over $\mathbb{R}$ the bar is the
 identity and the star coincides with the natural conjugation. The plain form is
-$B(\tilde p,\tilde q)=p_0q_0-\mathbf p\cdot\mathbf q$, the parent norm is
+$B(\tilde p,\tilde q)=p_0q_0-\vec p\cdot\vec q$, the parent norm is
 $N(\tilde q)=\tilde q\tilde q^{\natural}=\sum_\mu q_\mu^2$, and the left multiplication operator is
 $L_{\tilde p}\tilde x=\tilde p\times\tilde x$. Unqualified, *unit*, *inverse* and *norm* mean the
 unit, the inverse and the algebraic norm of the block.
@@ -68,9 +68,9 @@ $\tilde e$ with $\tilde e\times\tilde x=\tilde x$ for every $\tilde x$, and none
 $\tilde x\times\tilde e=\tilde x$ for every $\tilde x$. Hence there is no two-sided unit.
 
 *Proof.* A left unit $\tilde e$ would satisfy, at $\tilde x=e_0$, whose vector part is zero,
-$\tilde e\times e_0=\mathbf e\times\mathbf{0}=0$, which would have to equal $e_0$; the two differ,
+$\tilde e\times e_0=\vec e\times\mathbf{0}=0$, which would have to equal $e_0$; the two differ,
 since $e_0$ is nonzero. A right unit would satisfy, again at $\tilde x=e_0$,
-$e_0\times\tilde e=\mathbf{0}\times\mathbf e=0$, which would again have to equal $e_0$.
+$e_0\times\tilde e=\mathbf{0}\times\vec e=0$, which would again have to equal $e_0$.
 
 The absence is structural: the value of the block is a pure vector for every pair of arguments, and
 the equations that name a unit require the central element $e_0$ on the right. The scalar direction
@@ -115,12 +115,12 @@ that a product carries is a nonzero central-valued map.
 
 *Proof.* The first identity is alternation, $\tilde x\times\tilde x=0$ for every $\tilde x$, by
 *Introduction to the Antisymmetric Plain Algebra of Quaternions*. For the second, the natural
-conjugate is $\tilde x^{\natural}=x_0e_0-\mathbf x$, and the value of the block on a pair is the cross
+conjugate is $\tilde x^{\natural}=x_0e_0-\vec x$, and the value of the block on a pair is the cross
 product of the vector parts, so
-$\tilde x\times\tilde x^{\natural}=\mathbf x\times(-\mathbf x)=-\mathbf x\times\mathbf x=0$.
+$\tilde x\times\tilde x^{\natural}=\vec x\times(-\vec x)=-\vec x\times\vec x=0$.
 
 The vanishing is total: the block removes the scalar part of the parent, and with it the parent's
-central-valued form $N(\tilde x)=x_0^2+\lvert\mathbf x\rvert^2$. What the block keeps is a pair of
+central-valued form $N(\tilde x)=x_0^2+\lvert\vec x\rvert^2$. What the block keeps is a pair of
 forms on the whole space, and the word *norm* is read here as the absent central-valued quadratic
 form, not as a norm on a space.
 
@@ -134,19 +134,19 @@ the two left multiplication operators.
 $\varphi(\tilde p,\tilde q)=p_0q_0$, the product of the two scalar parts.
 
 **Proposition (the operator trace form).** For all $\tilde a,\tilde b$,
-$K(\tilde a,\tilde b)=-2\,\mathbf a\cdot\mathbf b=-2\,(a_1b_1+a_2b_2+a_3b_3)$; on the diagonal
-$K(\tilde x,\tilde x)=-2\lvert\mathbf x\rvert^2$. The Gram matrix of $K$ in the basis is
+$K(\tilde a,\tilde b)=-2\,\vec a\cdot\vec b=-2\,(a_1b_1+a_2b_2+a_3b_3)$; on the diagonal
+$K(\tilde x,\tilde x)=-2\lvert\vec x\rvert^2$. The Gram matrix of $K$ in the basis is
 $\operatorname{diag}(0,-2,-2,-2)$, the rank of $K$ is three, its radical is the centre
 $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$, and on the vector subspace $K$ is non-degenerate.
 
 *Proof.* The operator $L_{\tilde a}$ kills the scalar direction, its first column being zero, and acts
-on the vector part by $\mathbf x\mapsto\mathbf a\times\mathbf x$, so it is the block matrix
-$\operatorname{diag}(0,C_{\mathbf a})$ with $C_{\mathbf a}$ the cross-product matrix of $\mathbf a$.
-The composition is $\operatorname{diag}(0,C_{\mathbf a}C_{\mathbf b})$, of trace
-$\operatorname{Tr}(C_{\mathbf a}C_{\mathbf b})$, the scalar block contributing nothing. For
-skew-symmetric matrices, $\operatorname{Tr}(C_{\mathbf a}C_{\mathbf b})$ is the negative of the
-Frobenius pairing, which is $2\,\mathbf a\cdot\mathbf b$ here, so the trace is
-$-2\,\mathbf a\cdot\mathbf b$. The Gram entries are read at the units, $\mathbf e_i\cdot\mathbf e_j=\delta_{ij}$,
+on the vector part by $\vec x\mapsto\vec a\times\vec x$, so it is the block matrix
+$\operatorname{diag}(0,C_{\vec a})$ with $C_{\vec a}$ the cross-product matrix of $\vec a$.
+The composition is $\operatorname{diag}(0,C_{\vec a}C_{\vec b})$, of trace
+$\operatorname{Tr}(C_{\vec a}C_{\vec b})$, the scalar block contributing nothing. For
+skew-symmetric matrices, $\operatorname{Tr}(C_{\vec a}C_{\vec b})$ is the negative of the
+Frobenius pairing, which is $2\,\vec a\cdot\vec b$ here, so the trace is
+$-2\,\vec a\cdot\vec b$. The Gram entries are read at the units, $\mathbf e_i\cdot\mathbf e_j=\delta_{ij}$,
 whence the diagonal $\operatorname{diag}(0,-2,-2,-2)$; the rank is three, and the radical is the set
 orthogonal to every vector part, that is the centre.
 
@@ -160,22 +160,22 @@ K\bigl(\tilde p\times\tilde x,\tilde q\bigr)+K\bigl(\tilde x,\tilde p\times\tild
 $$
 
 *Proof.* For $K$ the left equation reads
-$-2(\mathbf p\times\mathbf x)\cdot\mathbf q-2\,\mathbf x\cdot(\mathbf p\times\mathbf q)=0$, the
+$-2(\vec p\times\vec x)\cdot\vec q-2\,\vec x\cdot(\vec p\times\vec q)=0$, the
 antisymmetry of the scalar triple product, the two terms being opposite. For $\varphi$ both terms
 vanish outright, because $\tilde p\times\tilde x$ is a pure vector and the scalar-part form is zero
-whenever one argument is central. The symmetry of $K$ is that of $\mathbf a\cdot\mathbf b$, and that
+whenever one argument is central. The symmetry of $K$ is that of $\vec a\cdot\vec b$, and that
 of $\varphi$ the symmetry of the product of the two scalar parts.
 
 **Remark (the two invariant forms).** The operator trace form $K$ and the scalar-part form
 $\varphi$ are independent, and they span the invariant symmetric forms of the block: a computation
 on the centre forces every invariant form to annihilate the pairings of the centre with the vector
 subspace, and on the vector subspace the invariant symmetric forms are proportional to
-$\mathbf p\cdot\mathbf q$, the vector subspace carrying the irreducible three-dimensional
+$\vec p\cdot\vec q$, the vector subspace carrying the irreducible three-dimensional
 representation of the block. The two extremes are $\varphi$, of rank one, whose radical and
 isotropic cone are the whole vector subspace, and $K$, non-degenerate on the vector subspace, whose
 radical is the centre. Their combination $\varphi+\tfrac12K=B$ is the plain form of the parent. The
 identification of $K$ with the Killing form
-$\kappa(\tilde p,\tilde q)=\operatorname{Tr}(\operatorname{ad}_{\tilde p}\operatorname{ad}_{\tilde q})=-2\,\mathbf p\cdot\mathbf q$
+$\kappa(\tilde p,\tilde q)=\operatorname{Tr}(\operatorname{ad}_{\tilde p}\operatorname{ad}_{\tilde q})=-2\,\vec p\cdot\vec q$
 of the block is *The Killing Form of the Antisymmetric Plain Algebra*, cited here and not reproved;
 the adjoint operator $\operatorname{ad}_{\tilde p}\tilde r=\tilde p\times\tilde r$ is the left
 multiplication $L_{\tilde p}$, so the two traces coincide and the identification is exact.
@@ -194,7 +194,7 @@ $\varphi(e_0\times e_0,e_0\times e_0)=\varphi(0,0)=0$ against $\varphi(e_0,e_0)^
 norm gives $N(e_1\times e_1)=N(0)=0$ against $N(e_1)^2=1$.
 
 *Proof.* The values of the block are read from its table, $e_1\times e_2=e_3$, $e_0\times e_0=0$ and
-$e_1\times e_1=0$, and the right sides are computed from $K=-2\,\mathbf a\cdot\mathbf b$,
+$e_1\times e_1=0$, and the right sides are computed from $K=-2\,\vec a\cdot\vec b$,
 $\varphi=p_0q_0$ and $N(\tilde x)=\sum_\mu x_\mu^2$. A single pair separates the two sides in each
 case, so no multiplicativity holds; the vanishing square satisfies the equation only because both
 sides vanish, and it is a norm in no sense.
@@ -214,13 +214,13 @@ norm and not a numerical accident.
 
 ## Summary
 
-The antisymmetric plain multiplication $\tilde p\times\tilde q=\mathbf p\times\mathbf q$ has no unit
+The antisymmetric plain multiplication $\tilde p\times\tilde q=\vec p\times\vec q$ has no unit
 on either side, hence no invertible element and an empty group of units: every value of the block is a
 pure vector, and the inverse equation $\tilde p\times\tilde q=e_0$ has no solution. The block has no
 algebraic norm, its square vanishing by alternation and its conjugated square
-$\mathbf x\times(-\mathbf x)$ vanishing too, so the central-valued parent norm is lost with the scalar
+$\vec x\times(-\vec x)$ vanishing too, so the central-valued parent norm is lost with the scalar
 part. What survives are two independent invariant symmetric forms, the operator trace form
-$K(\tilde a,\tilde b)=-2\,\mathbf a\cdot\mathbf b$, of Gram matrix
+$K(\tilde a,\tilde b)=-2\,\vec a\cdot\vec b$, of Gram matrix
 $\operatorname{diag}(0,-2,-2,-2)$, rank three and radical the centre, which is the Killing form of the
 bracket, and the rank-one scalar-part form $\varphi(\tilde p,\tilde q)=p_0q_0$, whose radical and
 isotropic cone are the vector subspace. Neither is multiplicative, the pairs $(e_1,e_2)$, $(e_0,e_0)$
@@ -231,11 +231,11 @@ transferred.
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde p\times\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\mathbf p\times\mathbf q$ | the antisymmetric plain multiplication, the operation $\mathrm{APA}$ |
+| $\tilde p\times\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\vec p\times\vec q$ | the antisymmetric plain multiplication, the operation $\mathrm{APA}$ |
 | $L_{\tilde a}\tilde x=\tilde a\times\tilde x$ | the left multiplication operator of the block |
-| $K(\tilde a,\tilde b)=\operatorname{Tr}(L_{\tilde a}L_{\tilde b})=-2\,\mathbf a\cdot\mathbf b$ | the operator trace form, rank three, radical the centre, the invariant form of the block |
+| $K(\tilde a,\tilde b)=\operatorname{Tr}(L_{\tilde a}L_{\tilde b})=-2\,\vec a\cdot\vec b$ | the operator trace form, rank three, radical the centre, the invariant form of the block |
 | $\varphi(\tilde p,\tilde q)=p_0q_0$ | the scalar-part form, rank one, radical the vector subspace |
-| $N(\tilde q)=\sum_\mu q_\mu^2$, $N(\tilde p,\tilde q)=p_0q_0+\mathbf p\cdot\mathbf q$ | the parent norm and the quaternion form, not norms of the block |
+| $N(\tilde q)=\sum_\mu q_\mu^2$, $N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$ | the parent norm and the quaternion form, not norms of the block |
 | $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$ | the centre, the radical of $K$, on which the block is invisible |
 
 ## Further Reading

@@ -29,7 +29,7 @@ and every table of the article follows this order, family by family and, inside 
 
 **Scope and owners.** This article owns the comparison of the six root sets of $+1$ and of the six idempotent sets, the unit theorem for a root of $+1$, the halving map between the two questions, and the reading of the collapse against the biquaternion case. The per-structure results stay owned by their articles, cited one by one below: the root sets of the six structures by the six *Square Roots of Minus One, Zero and Plus One in the …* of the chapter, and the idempotent sets by the six *Idempotents of the …*. The products are *The 6 Products of the Quaternion Real Space* and *The Two General Products of the Quaternion $\mathbb{R}$ Space*; the structures and the codes are *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; the vocabulary stated once for a general product, the root of a central value and the idempotent, is *Definitions for the Study of the 6 Algebraic Structures*; the two forms are *The 2 Forms over the Quaternion $\mathbb{R}$ Space*; the value $0$ and the square-zero sets are *Square Roots of Zero and the Nilpotents in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; the zero divisors and the unit criterion $N\neq0$ are *Zero Divisors in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; the division property of the plain product is *Norm and Invertibility in the General Plain Algebra of Quaternions*; and the biquaternion case that §*The Contrast with the Biquaternion Case* reads is *Idempotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
-**Conventions.** $\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_0=1$; a general element is $\tilde\xi=\xi_0e_0+\boldsymbol\xi$ with $\xi_0\in\mathbb{R}$ and $\boldsymbol\xi=\sum_k\xi_ke_k$; the natural conjugation is $\tilde\xi^{\natural}=\xi_0-\boldsymbol\xi$; the **plain form** is $B(\tilde\xi)=\xi_0^{2}-\lvert\boldsymbol\xi\rvert^{2}=\mathrm{Sc}(\tilde\xi^{2})$; and the **quaternion form** is $N(\tilde\xi)=\xi_0^{2}+\lvert\boldsymbol\xi\rvert^{2}=\mathrm{Sc}(\tilde\xi^{\natural}\tilde\xi)$, the norm. The plain product is $\tilde\xi\tilde\eta$, the Jordan product is $\tilde\xi\bullet\tilde\eta=\tfrac12(\tilde\xi\tilde\eta+\tilde\eta\tilde\xi)$, the plain cross product is $\tilde\xi\wedge\tilde\eta=\tfrac12(\tilde\xi\tilde\eta-\tilde\eta\tilde\xi)=\boldsymbol\xi\times\boldsymbol\eta$, the quaternionic product is $\tilde\xi^{\natural}\tilde\eta$, its symmetrisation is the scalar-valued rule $N(\tilde\xi,\tilde\eta)e_0$, and the quaternionic cross product is $\tilde\xi\wedge^{\natural}\tilde\eta=\tfrac12(\tilde\xi^{\natural}\tilde\eta-\tilde\eta^{\natural}\tilde\xi)$. The **square root of a central value** is defined in *Definitions for the Study of the 6 Algebraic Structures* §*The Element Vocabulary* as an element with $\tilde\xi^{2}=c$ and $c$ central, the class of them being the set of its solutions, with no non-zero requirement; the **idempotent** is defined in the same section as an element with $\tilde\pi^{2}=\tilde\pi$. The origin is therefore counted with the roots of $0$ wherever it solves the equation, and the places where an owner counts the non-zero roots alone are read as the origin alone.
+**Conventions.** $\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_0=1$; a general element is $\tilde\xi=\xi_0e_0+\vec\xi$ with $\xi_0\in\mathbb{R}$ and $\vec\xi=\sum_k\xi_ke_k$; the natural conjugation is $\tilde\xi^{\natural}=\xi_0-\vec\xi$; the **plain form** is $B(\tilde\xi)=\xi_0^{2}-\lvert\vec\xi\rvert^{2}=\mathrm{Sc}(\tilde\xi^{2})$; and the **quaternion form** is $N(\tilde\xi)=\xi_0^{2}+\lvert\vec\xi\rvert^{2}=\mathrm{Sc}(\tilde\xi^{\natural}\tilde\xi)$, the norm. The plain product is $\tilde\xi\tilde\eta$, the Jordan product is $\tilde\xi\bullet\tilde\eta=\tfrac12(\tilde\xi\tilde\eta+\tilde\eta\tilde\xi)$, the plain cross product is $\tilde\xi\wedge\tilde\eta=\tfrac12(\tilde\xi\tilde\eta-\tilde\eta\tilde\xi)=\vec\xi\times\vec\eta$, the quaternionic product is $\tilde\xi^{\natural}\tilde\eta$, its symmetrisation is the scalar-valued rule $N(\tilde\xi,\tilde\eta)e_0$, and the quaternionic cross product is $\tilde\xi\wedge^{\natural}\tilde\eta=\tfrac12(\tilde\xi^{\natural}\tilde\eta-\tilde\eta^{\natural}\tilde\xi)$. The **square root of a central value** is defined in *Definitions for the Study of the 6 Algebraic Structures* §*The Element Vocabulary* as an element with $\tilde\xi^{2}=c$ and $c$ central, the class of them being the set of its solutions, with no non-zero requirement; the **idempotent** is defined in the same section as an element with $\tilde\pi^{2}=\tilde\pi$. The origin is therefore counted with the roots of $0$ wherever it solves the equation, and the places where an owner counts the non-zero roots alone are read as the origin alone.
 
 ## The Roots of One in the Six Structures
 
@@ -37,7 +37,7 @@ The square of a structure is its operation read at the two equal arguments, so e
 
 | the square | the structures | at the two equal arguments |
 |---|---|---|
-| the plain square | $\mathrm{GPA}$, $\mathrm{SPA}$ | $(\xi_0^{2}-\lvert\boldsymbol\xi\rvert^{2})e_0+2\xi_0\boldsymbol\xi$ |
+| the plain square | $\mathrm{GPA}$, $\mathrm{SPA}$ | $(\xi_0^{2}-\lvert\vec\xi\rvert^{2})e_0+2\xi_0\vec\xi$ |
 | the central square | $\mathrm{GQA}$, $\mathrm{SQA}$ | $N(\tilde\xi)e_0$ |
 | the vanishing square | $\mathrm{APA}$, $\mathrm{AQA}$ | $0$ |
 
@@ -63,13 +63,13 @@ with no zero-divisor term, the plain product having no zero divisor at all (*Zer
 
 **Theorem (the root sets of $+1$; quoted).** Among the six structures of the quaternion real space the root set of $+1$ is the pair $\pm e_0$ for the two plain structures, the unit sphere $S^{3}$ of real dimension three for the two quaternionic structures, and the empty set for the two antisymmetric structures.
 
-*Proof.* The plain square is the plain form on the scalar part and twice the product $\xi_0\boldsymbol\xi$ on the vector part; the central square is the quaternion form; and the vanishing square is zero. The three readings are below.
+*Proof.* The plain square is the plain form on the scalar part and twice the product $\xi_0\vec\xi$ on the vector part; the central square is the quaternion form; and the vanishing square is zero. The three readings are below.
 
 The six are read one by one; each names the product, its square and its root set of $+1$, and cites the article that owns them.
 
 ### $\mathrm{GPA}$, the general plain algebra
 
-The product is $\tilde\xi\tilde\eta$ and its square is the plain square, of scalar part $B(\tilde\xi)=\xi_0^{2}-\lvert\boldsymbol\xi\rvert^{2}$ and vector part $2\xi_0\boldsymbol\xi$. The equation $\tilde\xi^{2}=e_0$ is the pair $B(\tilde\xi)=1$, $2\xi_0\boldsymbol\xi=0$: the second equation forces $\xi_0=0$ or $\boldsymbol\xi=0$, the pure branch gives $-\lvert\boldsymbol\xi\rvert^{2}=1$, which is empty, and the central branch gives $\xi_0^{2}=1$ and the two roots $\tilde\xi=\pm e_0$. The root set of $+1$ is the pair $\pm e_0$, the centre of the unit sphere of the algebra. The article is *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*.
+The product is $\tilde\xi\tilde\eta$ and its square is the plain square, of scalar part $B(\tilde\xi)=\xi_0^{2}-\lvert\vec\xi\rvert^{2}$ and vector part $2\xi_0\vec\xi$. The equation $\tilde\xi^{2}=e_0$ is the pair $B(\tilde\xi)=1$, $2\xi_0\vec\xi=0$: the second equation forces $\xi_0=0$ or $\vec\xi=0$, the pure branch gives $-\lvert\vec\xi\rvert^{2}=1$, which is empty, and the central branch gives $\xi_0^{2}=1$ and the two roots $\tilde\xi=\pm e_0$. The root set of $+1$ is the pair $\pm e_0$, the centre of the unit sphere of the algebra. The article is *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*.
 
 ### $\mathrm{SPA}$, the symmetric plain algebra
 
@@ -77,7 +77,7 @@ The product is the Jordan product $\tilde\xi\bullet\tilde\eta=\tfrac12(\tilde\xi
 
 ### $\mathrm{APA}$, the antisymmetric plain algebra
 
-The product is the commutator $\tilde\xi\wedge\tilde\eta=\boldsymbol\xi\times\boldsymbol\eta$, the cross product of the two vector parts. It is alternating, so at the two equal arguments it vanishes, $\tilde\xi\wedge\tilde\xi=0$, and the equation reduces to $0=e_0$. The root set of $+1$ is empty. The article is *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Plain Algebra*.
+The product is the commutator $\tilde\xi\wedge\tilde\eta=\vec\xi\times\vec\eta$, the cross product of the two vector parts. It is alternating, so at the two equal arguments it vanishes, $\tilde\xi\wedge\tilde\xi=0$, and the equation reduces to $0=e_0$. The root set of $+1$ is empty. The article is *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Plain Algebra*.
 
 ### $\mathrm{GQA}$, the general quaternionic algebra
 
@@ -95,13 +95,13 @@ The product is the commutator $\tilde\xi\wedge^{\natural}\tilde\eta=\tfrac12(\ti
 
 **The word is *differ*, not *coincide*.** The zero-divisor sets of the two general products are one set read twice, the empty set, the algebra being a division algebra; their root sets at $+1$ are two different sets. The reason is the one on which the whole chapter turns: the two general products read the same norm, and the zero-divisor criterion is the norm, but their squares are $B$ and $N$ on the vector subspace and the two differ by a sign, so the values at which the squares reach the unit are not the same values.
 
-**The two families of the plain reduction.** The reduction of the plain square is the vanishing of the vector part, $2\xi_0\boldsymbol\xi=0$, and the two factors give the two families of the plain family.
+**The two families of the plain reduction.** The reduction of the plain square is the vanishing of the vector part, $2\xi_0\vec\xi=0$, and the two factors give the two families of the plain family.
 
-**Definition.** An element is **pure** when its scalar part vanishes, $\xi_0=0$, and **central** when its vector part vanishes, $\boldsymbol\xi=0$.
+**Definition.** An element is **pure** when its scalar part vanishes, $\xi_0=0$, and **central** when its vector part vanishes, $\vec\xi=0$.
 
 | | pure, $\xi_0=0$ | central, $\xi_0\neq0$ |
 |---|---|---|
-| the reduction $2\xi_0\boldsymbol\xi=0$ | satisfied identically | forces $\boldsymbol\xi=0$ |
+| the reduction $2\xi_0\vec\xi=0$ | satisfied identically | forces $\vec\xi=0$ |
 | a root of $+1$ | none | the pair $\pm e_0$ |
 | the dimension | $3$ | $1$ |
 
@@ -149,7 +149,7 @@ The six are read one by one below; each names the product, its square and its id
 
 ### $\mathrm{GPA}$, the general plain algebra
 
-The product is $\tilde\pi\tilde\eta$, and its square is the plain square, of scalar part $B(\tilde\pi)=\pi_0^{2}-\lvert\boldsymbol\pi\rvert^{2}$ and vector part $2\pi_0\boldsymbol\pi$. The idempotents are $0$ and $e_0$ alone: the equation $\tilde\pi(\tilde\pi-e_0)=0$ meets the division property of the plain algebra, and no isotropic direction of the plain form is real. The article is *Idempotents of the General Plain Algebra*.
+The product is $\tilde\pi\tilde\eta$, and its square is the plain square, of scalar part $B(\tilde\pi)=\pi_0^{2}-\lvert\vec\pi\rvert^{2}$ and vector part $2\pi_0\vec\pi$. The idempotents are $0$ and $e_0$ alone: the equation $\tilde\pi(\tilde\pi-e_0)=0$ meets the division property of the plain algebra, and no isotropic direction of the plain form is real. The article is *Idempotents of the General Plain Algebra*.
 
 ### $\mathrm{SPA}$, the symmetric plain algebra
 
@@ -157,7 +157,7 @@ The product is the Jordan product $\tilde\pi\bullet\tilde\eta$, and its square i
 
 ### $\mathrm{APA}$, the antisymmetric plain algebra
 
-The product is the plain cross product $\tilde\pi\wedge\tilde\eta=\boldsymbol\pi\times\boldsymbol\eta$, alternating, so its square vanishes identically. The idempotent set is the origin alone, and $e_0$ is not an idempotent here. The article is *Idempotents of the Antisymmetric Plain Algebra*.
+The product is the plain cross product $\tilde\pi\wedge\tilde\eta=\vec\pi\times\vec\eta$, alternating, so its square vanishes identically. The idempotent set is the origin alone, and $e_0$ is not an idempotent here. The article is *Idempotents of the Antisymmetric Plain Algebra*.
 
 ### $\mathrm{GQA}$, the general quaternionic algebra
 
@@ -171,7 +171,7 @@ The product is $N(\tilde\pi,\tilde\eta)e_0$, the quaternion form read as a produ
 
 The product is the quaternionic cross product $\tilde\pi\wedge^{\natural}\tilde\eta$, alternating, so its square vanishes identically. The idempotent set is the origin alone. The article is *Idempotents of the Antisymmetric Quaternionic Algebra*.
 
-**Remark (the sign of the square).** The two-point set is the set of idempotents of the scalar field $\mathbb{R}$, read on the scalar line, and the four structures inherit it because their square operator is the plain square or the definite scalar $N(\tilde\pi)e_0$, and neither has a real solution beyond the two. The pure elements, which are the zero divisors of the Jordan structure, have the square $-\lvert\boldsymbol\pi\rvert^{2}e_0$, of the wrong sign for a nontrivial idempotent: the construction $\tfrac12(e_0+\tilde\pi)$ gives an idempotent only if $\tilde\pi$ is a root of $+e_0$, and a pure vector squares to $-\lvert\boldsymbol\pi\rvert^{2}e_0$, which is $+e_0$ for no real $\boldsymbol\pi$. So the zero divisors of the Jordan structure carry no idempotent with them.
+**Remark (the sign of the square).** The two-point set is the set of idempotents of the scalar field $\mathbb{R}$, read on the scalar line, and the four structures inherit it because their square operator is the plain square or the definite scalar $N(\tilde\pi)e_0$, and neither has a real solution beyond the two. The pure elements, which are the zero divisors of the Jordan structure, have the square $-\lvert\vec\pi\rvert^{2}e_0$, of the wrong sign for a nontrivial idempotent: the construction $\tfrac12(e_0+\tilde\pi)$ gives an idempotent only if $\tilde\pi$ is a root of $+e_0$, and a pure vector squares to $-\lvert\vec\pi\rvert^{2}e_0$, which is $+e_0$ for no real $\vec\pi$. So the zero divisors of the Jordan structure carry no idempotent with them.
 
 ## Results
 
@@ -194,8 +194,8 @@ Four structures have a root of $+1$, the pair $\pm e_0$ for the plain family and
 
 | structure | product | square of $\tilde\pi$ | idempotents |
 |---|---|---|---|
-| $\mathrm{GPA}$ | $\tilde\pi\tilde\eta$ | $(\pi_0^{2}-\lvert\boldsymbol\pi\rvert^{2})e_0+2\pi_0\boldsymbol\pi$ | $\{0,e_0\}$ |
-| $\mathrm{SPA}$ | $\tilde\pi\bullet\tilde\eta$ | $(\pi_0^{2}-\lvert\boldsymbol\pi\rvert^{2})e_0+2\pi_0\boldsymbol\pi$ | $\{0,e_0\}$ |
+| $\mathrm{GPA}$ | $\tilde\pi\tilde\eta$ | $(\pi_0^{2}-\lvert\vec\pi\rvert^{2})e_0+2\pi_0\vec\pi$ | $\{0,e_0\}$ |
+| $\mathrm{SPA}$ | $\tilde\pi\bullet\tilde\eta$ | $(\pi_0^{2}-\lvert\vec\pi\rvert^{2})e_0+2\pi_0\vec\pi$ | $\{0,e_0\}$ |
 | $\mathrm{APA}$ | $\tilde\pi\wedge\tilde\eta$ | $0$ | $\{0\}$ |
 | $\mathrm{GQA}$ | $\tilde\pi^{\natural}\tilde\eta$ | $N(\tilde\pi)e_0$ | $\{0,e_0\}$ |
 | $\mathrm{SQA}$ | $N(\tilde\pi,\tilde\eta)e_0$ | $N(\tilde\pi)e_0$ | $\{0,e_0\}$ |
@@ -235,8 +235,8 @@ The idempotents answer with two sets alone. The four structures whose square is 
 | $S^{2}$ | the roots of $-1$ of the plain family, the sphere of the pure unit quaternions, real dimension two |
 | $\{0,e_0\}$ | the idempotents of $\mathrm{GPA}$, $\mathrm{SPA}$, $\mathrm{GQA}$ and $\mathrm{SQA}$ |
 | $\{0\}$ | the idempotents of $\mathrm{APA}$ and $\mathrm{AQA}$ |
-| $B(\tilde\xi)=\xi_0^{2}-\lvert\boldsymbol\xi\rvert^{2}$ | the plain form, the scalar part of the plain square |
-| $N(\tilde\xi)=\xi_0^{2}+\lvert\boldsymbol\xi\rvert^{2}$ | the quaternion form, the square of the quaternionic family, and the norm |
+| $B(\tilde\xi)=\xi_0^{2}-\lvert\vec\xi\rvert^{2}$ | the plain form, the scalar part of the plain square |
+| $N(\tilde\xi)=\xi_0^{2}+\lvert\vec\xi\rvert^{2}$ | the quaternion form, the square of the quaternionic family, and the norm |
 | $\mathrm{GPA},\dots,\mathrm{AQA}$ | the six structures of the space, the two general products and their four parts |
 
 ## Further Reading
