@@ -70,7 +70,7 @@ A real subspace of $\mathbb{B}$ of real dimension four need not be closed under 
 
 ### What the View Adds
 
-The real reading sees more subspaces than the complex one, since every complex subspace is a real subspace and the converse fails, and it makes the antilinear maps visible as ordinary linear maps. It costs the complex structure, which leaves the scalars and must be carried by $J$ whenever the complex action is meant. The product stays $\mathbb{R}$-bilinear, so the four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* are read over $\mathbb{R}$ unchanged; the two ring-based readings, the $\mathbb{H}$-bimodule and the module over $\mathbb{B}$ itself, are *The Realification of the General Plain Algebra* and *Modules over the General Plain Algebra of Biquaternions*.
+The real reading sees more subspaces than the complex one, since every complex subspace is a real subspace and the converse fails, and it makes the antilinear maps visible as ordinary linear maps. It costs the complex structure, which leaves the scalars and must be carried by $J$ whenever the complex action is meant. The product stays $\mathbb{R}$-bilinear, so the four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* are read over $\mathbb{R}$ unchanged; the two ring-based readings, the $\mathbb{H}$-bimodule and the module over $\mathbb{B}$ itself, are *Modules over the General Plain Algebra of Quaternions* and *Modules over the General Plain Algebra of Biquaternions*.
 
 ## Summary
 

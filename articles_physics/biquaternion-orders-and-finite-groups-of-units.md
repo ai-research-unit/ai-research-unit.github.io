@@ -129,7 +129,7 @@ The five families of finite subgroups of $Sp(1)$ are the five families of simply
 $$
 2T \leftrightarrow \tilde E_6,\qquad 2O \leftrightarrow \tilde E_7,\qquad 2I \leftrightarrow \tilde E_8 .
 $$
-This is the **McKay correspondence**, and its content is that the Platonic solids, their binary preimages in the unit sphere and the exceptional simple Lie algebras are one subject. The Clifford interpretation of the algebra that underlies the correspondence is *The Realification of the General Plain Algebra*.
+This is the **McKay correspondence**, and its content is that the Platonic solids, their binary preimages in the unit sphere and the exceptional simple Lie algebras are one subject. The Clifford interpretation of the algebra that underlies the correspondence is *Biquaternion Other Algebraic Element Representations*.
 
 ## The Integral Biquaternions
 

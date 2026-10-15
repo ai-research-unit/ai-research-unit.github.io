@@ -16,15 +16,21 @@ This article reads the polar representation against those six subspaces, in the 
 
 **The result, in one sentence.** The four exponents of the polar word lie one in each of the four coordinate blocks of the algebra, so that each exponent lies in exactly three of the six remarkable subspaces and each remarkable subspace contains exactly two of the exponents, and the representation fails on a subspace exactly on its zero divisors.
 
-Four things are established, in this order. The four blocks and the exponent of each factor are identified. The blocks are put against the Clifford grades and against the six subspaces, which are their sums two by two. The incidence of the exponents with the subspaces is tabulated, with the polar data each subspace carries. The two products of the series — of two boosts, and of the word at a pure vector — are computed, and the domain and the conjugations of the word close the account.
+Four things are established, in this order. The four blocks and the exponent of each factor are identified. The blocks are put against the Clifford grades and against the six subspaces, which are their sums two by two. The incidence of the exponents with the subspaces is tabulated, with the polar data each subspace carries. The two products of the series — of two boosts, and of the word of a pure vector — are computed, and the domain and the conjugations of the word close the account.
 
-**Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has the basis $e_0,e_1,e_2,e_3$ with $e_1e_2 = e_3$ and the central scalar imaginary $i$, $i^2 = -1$. An element is $\tilde{Q} = \sum_{\mu=0}^{3}Q_\mu e_\mu$, with $Q_\mu\in\mathbb{C}$; the quaternion conjugation is $\tilde{Q}^{\natural} = Q_0e_0-\vec Q$, the coefficientwise conjugation is $\overline{\tilde{Q}}$, the Hermitian conjugation is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the reversal is $\tilde{Q}^{\flat} = -\tilde{Q}^{*}$. The norm is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^{2} = \det\mathsf{M}_2(\tilde{Q})$, complex in general, and the domain of the representation is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$. The symbols $r$, $e^{i\alpha}$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$, $\rho = re^{i\alpha}$, $\psi$, $\theta$, $\hat u_{\mathrm b}$, $\hat u_{\mathrm r}$, $\mathcal{A}$ and $N$ are those of the companion article, and the subspaces $\mathbb{M}_\pm$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ are the remarkable subspaces of *Introduction to the Remarkable Subspaces*. The four coordinate blocks $A_1$, $A_2$, $B_1$, $B_2$ are those of *Comparison of the Remarkable Subspaces*.
+**Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has the basis $e_0,e_1,e_2,e_3$ with $e_1e_2 = e_3$ and the central scalar imaginary $i$, $i^2 = -1$. An element is $\tilde{Q} = \sum_{\mu=0}^{3}Q_\mu e_\mu$, with $Q_\mu\in\mathbb{C}$.
+
+Four conjugations are used. The quaternion conjugation is $\tilde{Q}^{\natural} = Q_0e_0-\vec Q$, the coefficientwise conjugation is $\overline{\tilde{Q}}$, the Hermitian conjugation is $\tilde{Q}^{*} = \overline{\tilde{Q}^{\natural}}$, and the reversal is $\tilde{Q}^{\flat} = -\tilde{Q}^{*}$.
+
+The norm is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^{2} = \det\mathsf{M}_2(\tilde{Q})$, complex in general, and the domain of the representation is $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$.
+
+The symbols $r$, $e^{i\alpha}$, $\tilde U_{\mathrm b}$, $\tilde u_{\mathrm r}$, $\rho = re^{i\alpha}$, $\psi$, $\theta$, $\hat u_{\mathrm b}$, $\hat u_{\mathrm r}$, $\mathcal{A}$ and $N$ are those of the companion article. The subspaces $\mathbb{M}_\pm$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{C}_{\mathbb{B}}$ are the remarkable subspaces of *Introduction to the Remarkable Subspaces*, and the four coordinate blocks $A_1$, $A_2$, $B_1$, $B_2$ are those of *Comparison of the Remarkable Subspaces*.
 
 No physics is invoked; the physical reading is cited where it clarifies the algebra.
 
 ## The Four Exponents of the Word
 
-Each of the four factors is the exponential of a single element of the algebra, which is the reading of *The Polar Element Representation of Biquaternions*, §*The Exponentials of the Factors*:
+Each of the four factors is the exponential of a single element of the algebra, which is the reading of *The Polar Element Representation of Biquaternions*, §*The Polar Word*:
 
 $$
 \tilde{Q} = \exp(\ln r)\,\exp(i\alpha)\,\exp\Bigl(i\tfrac{\psi}{2}\hat u_{\mathrm b}\Bigr)\,\exp\Bigl(\tfrac{\theta}{2}\hat u_{\mathrm r}\Bigr) .
@@ -64,7 +70,7 @@ The two scalar blocks $A_1,A_2$ have real dimension one, the two vector blocks $
 
 **Theorem (the block reading of the polar word).** Each one of the four exponents of the polar word lies in exactly one of the four coordinate blocks, and every one of the four blocks carries exactly one exponent.
 
-**Proof.** The exponent $\ln r$ is a real multiple of $e_0$, hence in $A_1$; the exponent $i\alpha$ is a real multiple of $ie_0$, hence in $A_2$; the exponent $\tfrac{\theta}{2}\hat u_{\mathrm r}$ has three real coordinates on $e_1,e_2,e_3$ and vanishing others, hence is in $B_1$; and the exponent $i\tfrac{\psi}{2}\hat u_{\mathrm b}$ has three real coordinates on $ie_1,ie_2,ie_3$ and vanishing others, hence is in $B_2$. Since the blocks are disjoint, the assignment is a bijection between the four exponents and the four blocks. $\square$
+**Proof.** The exponent $\ln r$ is a real multiple of $e_0$, hence in $A_1$; the exponent $i\alpha$ is a real multiple of $ie_0$, hence in $A_2$; the exponent $\tfrac{\theta}{2}\hat u_{\mathrm r}$ has three real coordinates on $e_1,e_2,e_3$ and vanishing others, hence is in $B_1$; and the exponent $i\tfrac{\psi}{2}\hat u_{\mathrm b}$ has three real coordinates on $ie_1,ie_2,ie_3$ and vanishing others, hence is in $B_2$. Since the blocks are disjoint, the assignment is a bijection between the four exponents and the four blocks.
 
 The additivity of the dimensions of the blocks is the block form of the count of the four factors,
 
@@ -89,7 +95,7 @@ Under the identification $\mathbb{B}\cong\mathrm{Cl}_{3,0}$, $\gamma_k\mapsto ie
 
 **The four factors of the polar word are the four Clifford grades, one factor to a grade**, and the order of the grades is not the order of the word: the word is written scale, phase, boost, rotor, which is grade $0$, grade $3$, grade $1$, grade $2$.
 
-Two of the four exponents are written as a Clifford element with no comment. The boost exponent is the Clifford vector
+Two of the four exponents carry an axis, and the Clifford reading names the grade of each axis. The boost exponent is the Clifford vector
 
 $$
 i\tfrac{\psi}{2}\hat u_{\mathrm b} = \tfrac{\psi}{2}\bigl(\hat u_{\mathrm b,1}\gamma_1+\hat u_{\mathrm b,2}\gamma_2+\hat u_{\mathrm b,3}\gamma_3\bigr) ,
@@ -126,9 +132,7 @@ Every remarkable subspace is a sum of two of the four blocks (*Comparison of the
 | $\mathbb{M}_+$ | $\tilde{Q}^{*} = \tilde{Q}$ | $A_1\oplus B_2$ | $4$ |
 | $\mathbb{M}_-$ | $\tilde{Q}^{*} = -\tilde{Q}$ | $A_2\oplus B_1$ | $4$ |
 
-Two of the six subspaces are the two doubles of the blocks, the centre $A_1\oplus A_2$ and the vector subspace $B_1\oplus B_2$; the other four are the four mixed pairs, one scalar block with one vector block, and the four mixed pairs are exactly the four ways of choosing one of $A_1,A_2$ and one of $B_1,B_2$.
-
-The table is the whole relation between the blocks and the subspaces. It is a six-row table of two-block sums, and it is why the six subspaces are six and not eight: the eight sign patterns of the four blocks under a conjugation pair up into the six sums.
+Two of the six subspaces are the two doubles of the blocks, the centre $A_1\oplus A_2$ and the vector subspace $B_1\oplus B_2$; the other four are the four mixed pairs, one scalar block with one vector block, and they are exactly the four ways of choosing one of $A_1,A_2$ and one of $B_1,B_2$. The table is the whole relation between the blocks and the subspaces.
 
 ## The Incidence of the Four Exponents and the Six Subspaces
 
@@ -143,7 +147,7 @@ The block reading of the word and the block reading of the subspaces give the in
 
 **Theorem (the incidence).** Each of the four exponents of the polar word lies in exactly three of the six remarkable subspaces, and each of the six remarkable subspaces contains exactly two of the four exponents.
 
-**Proof.** Each exponent lies in exactly one block, by the block reading of the word; each block lies in exactly three remarkable subspaces, by the six-row table above; hence each exponent lies in exactly three of them. The dual statement is the same count read row by row of the subspace table: the centre contains $A_1$ and $A_2$, the vector subspace $B_1$ and $B_2$, the quaternion subspace $A_1$ and $B_1$, the anti-quaternion subspace $A_2$ and $B_2$, the Hermitian subspace $A_1$ and $B_2$, and the anti-Hermitian subspace $A_2$ and $B_1$. The counts agree: $4\times3 = 12 = 6\times2$. $\square$
+**Proof.** Each exponent lies in exactly one block, by the block reading of the word; each block lies in exactly three remarkable subspaces, by the six-row table above; hence each exponent lies in exactly three of them. The dual statement is the same count read row by row of the subspace table: the centre contains $A_1$ and $A_2$, the vector subspace $B_1$ and $B_2$, the quaternion subspace $A_1$ and $B_1$, the anti-quaternion subspace $A_2$ and $B_2$, the Hermitian subspace $A_1$ and $B_2$, and the anti-Hermitian subspace $A_2$ and $B_1$. The counts agree: $4\times3 = 12 = 6\times2$.
 
 Read subspace by subspace, the incidence gives the pair of exponents each subspace carries:
 
@@ -179,9 +183,11 @@ The behaviour of the phase is decided by the norm alone. The phase is $\alpha = 
 | $\mathbb{M}_+$ | $\sigma^{2}-\lvert\vec w\rvert^{2}$, real indefinite | $0$ or $\pi/2$ |
 | $\mathbb{M}_-$ | $\lvert\vec\rho\rvert^{2}-\tau^{2}$, real indefinite | $0$ or $\pi/2$ |
 
+The coordinates of the last two rows are those of the sectors: an element of the Hermitian subspace is $\sigma e_0+i\vec w$ with $\sigma = \operatorname{Re}Q_0$ and $\vec w = w_1e_1+w_2e_2+w_3e_3$ real, and an element of the anti-Hermitian subspace is $i\tau e_0+\vec\rho$ with $\tau = \operatorname{Im}Q_0$ and $\vec\rho$ real. The two bars denote the Euclidean norm of the vector, $\lvert\vec w\rvert^{2} = w_1^{2}+w_2^{2}+w_3^{2}$ and likewise for $\vec\rho$; on the vector subspace the same notation reads $(\vec Q,\vec Q) = Q_1^{2}+Q_2^{2}+Q_3^{2}$ with complex components, the complex Euclidean square.
+
 **The phase is a free coordinate on exactly the two subspaces whose norm is complex**, the centre and the vector subspace; it is frozen on the two halves, at $0$ and at $\pi/2$; and it is a two-valued label on the two sectors, where the norm is real indefinite. The norm is complex on exactly the two subspaces that are not real forms of the algebra, which is the same pair.
 
-The two non-central factors behave as follows, on the same subspaces.
+The two non-central factors behave as follows.
 
 | subspace | the boost | the rotor |
 |---|---|---|
@@ -194,12 +200,12 @@ The two non-central factors behave as follows, on the same subspaces.
 | $\mathbb{M}_-$, $N>0$ | a nontrivial boost | a half turn |
 | $\mathbb{M}_-$, $N<0$ | the element times $-i/r$ | a sign, $\pm e_0$ |
 
-Four of the rows are degenerate cases worth naming, and the derivations are those of the per-sector article.
+Four of the rows are degenerate cases worth naming, and the derivations are those of *The Polar Element Representation in Subspaces*.
 
 - **The centre.** Both non-central factors are trivial, $\tilde U_{\mathrm b} = \tilde u_{\mathrm r} = e_0$, up to the sign of the rotor; a central element is its own modulus. The rotor is $+e_0$ exactly when the argument of $Q_0$ lies in the branch interval $(-\tfrac{\pi}{2},\tfrac{\pi}{2}]$, and $-e_0$ otherwise, which is the residual sign of the two branches of the square root.
 - **The two halves.** The boost is $e_0$ and the rotor absorbs the whole unit-norm part. On the quaternion subspace the phase is $0$ and the rotor is $\tilde Q/|\tilde Q|$; on the anti-quaternion subspace the phase is $\pi/2$ and the rotor is $\tilde Q/(i|\tilde Q|)$. The two subspaces carry the same rotor set, the same group $\mathrm{Sp}(1)$, with the phase shifted by a quarter turn.
 - **The real vector block.** An element of $B_1$ has a positive real norm, so the phase is $0$, the boost is $e_0$, and the rotor is the direction of the element, a half turn about it.
-- **A definite Hermitian element.** On $\mathbb{M}_+$ with $N>0$ the normalised element is Hermitian and definite, so it is a boost up to sign, and the rotor is a sign. The same holds on $\mathbb{M}_-$ with $N<0$, where the normalised element is $i$ times a boost.
+- **A definite Hermitian element.** On $\mathbb{M}_+$ with $N>0$ the normalised element is Hermitian and definite, so it is a boost up to sign, and the rotor is a sign. The same holds on $\mathbb{M}_-$ with $N<0$, where the boost is $-i$ times the normalised element.
 
 The pattern of the last two rows is the symmetry of the two sectors: **on each sector the sign of the norm decides which of the two non-central factors is trivial.** A definite element of a sector is a boost with a sign rotor; an indefinite one has a half-turn rotor and a genuine boost.
 
@@ -210,7 +216,7 @@ The pattern of the last two rows is the symmetry of the two sectors: **on each s
 
 The two rows are exchanged row for row under the interchange $\mathbb{M}_+\leftrightarrow\mathbb{M}_-$ with $N\mapsto-N$, which is the central unit $i$ read on the sectors.
 
-The signs in the two sign rows are the signs of the two central coordinates of the sector: on $\mathbb{M}_+$ with $N>0$ the rotor is $\operatorname{sign}(\sigma)e_0$, where $\sigma = \operatorname{Re}Q_0$, and on $\mathbb{M}_-$ with $N<0$ it is $\operatorname{sign}(\tau)e_0$, where $\tau = \operatorname{Im}Q_0$ is the time coordinate. Both were verified over the random samples of each branch, with the boost matching the element to $1.8\times10^{-15}$ on $\mathbb{M}_+$ and to $7.2\times10^{-15}$ on $\mathbb{M}_-$.
+The signs in the two sign rows are the signs of the two central coordinates of the sector: on $\mathbb{M}_+$ with $N>0$ the rotor is $\operatorname{sign}(\sigma)e_0$, and on $\mathbb{M}_-$ with $N<0$ it is $\operatorname{sign}(\tau)e_0$ with $\tau$ the time coordinate. Both were verified over the random samples of each branch, with the boost matching the element to $1.8\times10^{-15}$ on $\mathbb{M}_+$ and to $7.2\times10^{-15}$ on $\mathbb{M}_-$.
 
 ## The Boost Family and the Rotor Group
 
@@ -223,7 +229,7 @@ The four factors are four subsets of the algebra, one per block, and two of them
 
 The rotor set is a **group**: the product of two unit real quaternions is a unit real quaternion. The phase set is a group as well, and the two of them are the groups the word carries.
 
-The boost set is **not** a group: the product of two Hermitian positive elements is not Hermitian in general, and it is not positive definite when it is, so the product of two boosts leaves the boost set. The product of two boosts is a boost times a rotor,
+The boost set is **not** a group: the product of two Hermitian positive elements is not Hermitian in general, so the product of two boosts does not stay in the boost set. The product of two boosts is a boost times a rotor,
 
 $$
 \tilde U_{\mathrm b}(a,\hat a)\,\tilde U_{\mathrm b}(b,\hat b) = \tilde U_{\mathrm b}(\psi,\hat u)\,\tilde u_{\mathrm r}(\theta,\hat n) ,
@@ -257,7 +263,7 @@ $$
 \tilde U_{\mathrm b} = \cosh\tfrac{\psi}{2}\,e_0+i\sinh\tfrac{\psi}{2}\,\hat u_{\mathrm b} , \qquad \tilde u_{\mathrm r} = \cos\tfrac{\theta}{2}\,e_0+\sin\tfrac{\theta}{2}\,\hat u_{\mathrm r} ,
 $$
 
-and compute the scalar part of their product. Only the scalar part is needed, and the two scalar parts contribute additively, because the scalar part of the product of a real scalar and an element is the product of the scalars:
+and compute the scalar part of their product. Only the scalar part is needed, and it splits into two terms, because the cross terms of a scalar factor with a pure factor have vanishing scalar part:
 
 $$
 \operatorname{Sc}\bigl(\tilde U_{\mathrm b}\tilde u_{\mathrm r}\bigr) = \cosh\tfrac{\psi}{2}\cos\tfrac{\theta}{2}+i\sinh\tfrac{\psi}{2}\sin\tfrac{\theta}{2}\operatorname{Sc}\bigl(\hat u_{\mathrm b}\hat u_{\mathrm r}\bigr) .
@@ -275,7 +281,7 @@ $$
 \cosh\tfrac{\psi}{2}\cos\tfrac{\theta}{2} = 0 , \qquad \sinh\tfrac{\psi}{2}\sin\tfrac{\theta}{2}\,(\hat u_{\mathrm b},\hat u_{\mathrm r}) = 0 .
 $$
 
-The first gives $\cos\tfrac{\theta}{2} = 0$, that is $\theta = \pi$, since $\theta\in[0,2\pi]$ and the other factor is positive. The second, with $\sin\tfrac{\theta}{2} = 1$, gives either $\psi = 0$ or $(\hat u_{\mathrm b},\hat u_{\mathrm r}) = 0$: the boost is trivial or the two axes are orthogonal. $\square$
+The first gives $\cos\tfrac{\theta}{2} = 0$, that is $\theta = \pi$, since $\theta\in[0,2\pi]$ and the other factor is positive. The second, with $\sin\tfrac{\theta}{2} = 1$, gives either $\psi = 0$ or $(\hat u_{\mathrm b},\hat u_{\mathrm r}) = 0$: the boost is trivial or the two axes are orthogonal.
 
 **Corollary (the normalised piece of a pure vector is a root of $-1$).** With the notation of the proposition, the unit-norm part $\vec Q/\rho$ satisfies
 
@@ -283,11 +289,11 @@ $$
 \left(\frac{\vec Q}{\rho}\right)^{\natural} = -\frac{\vec Q}{\rho} , \qquad \left(\frac{\vec Q}{\rho}\right)^{2} = -e_0 ,
 $$
 
-so it is a root of $-1$ of the algebra, pure and of unit norm. Both identities were verified to $2.6\times10^{-15}$ over $500$ random complex vectors, together with the two conclusions of the proposition: the scalar part of the rotor vanished to $7.8\times10^{-16}$ and the dot product of the two axes to $7.5\times10^{-16}$.
+so it is a root of $-1$ of the algebra, pure and of unit norm. Both identities were verified over $1000$ random complex vectors, the natural conjugate to machine precision and the square to $3.6\times10^{-15}$, together with the two conclusions of the proposition: the scalar part of the rotor vanished to $4.4\times10^{-16}$ and the dot product of the two axes to $2.6\times10^{-15}$.
 
 **Converse.** The argument reverses. If the rotor of the word of an element is a half turn about an axis orthogonal to the boost axis, then the scalar part of $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ vanishes, so the element with that word and any central modulus is pure. The vector subspace is therefore exactly the set of elements whose word has a half-turn rotor orthogonal to the boost axis.
 
-The proposition is the algebra behind the reading of the per-sector article, where the rotor of an element of the vector subspace is a unit vector of the plane of the two real parts; the block form of the same fact is that the vector subspace is the sum of the two non-central blocks and nothing else.
+The proposition is the algebra behind the reading of *The Polar Element Representation in Subspaces*, where the rotor of an element of the vector subspace is a unit vector of the plane of the two real parts; the block form of the same fact is that the vector subspace is the sum of the two non-central blocks and nothing else.
 
 ## The Domain Read on the Subspaces
 
@@ -304,7 +310,7 @@ The domain of the polar representation is the complement of the null cone $\{N =
 
 **Theorem (the domain on the subspaces).** The polar representation exists on the whole of the punctured centre, punctured quaternion subspace and punctured anti-quaternion subspace, and it fails on the other three subspaces exactly on their nonzero zero divisors.
 
-**Proof.** By the table, the norm of an element of each of the centre, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ vanishes only at the origin: the centre is a field, the quaternion subspace is a division algebra, and the anti-quaternion subspace is its purely imaginary copy, where the norm is minus a sum of squares. On the other three subspaces the vanishing of the norm is one complex equation on the vector subspace and two real equations on each sector, defining the isotropic cone and the two light cones, and $N = 0$ with $\tilde Q\neq0$ is exactly the zero-divisor condition. $\square$
+**Proof.** By the table, the norm of an element of each of the centre, $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$ vanishes only at the origin: the centre is a field, the quaternion subspace is a division algebra, and the anti-quaternion subspace is its purely imaginary copy, where the norm is minus a sum of squares. On the other three subspaces the vanishing of the norm is one complex equation on the vector subspace and two real equations on each sector, defining the isotropic cone and the two light cones, and $N = 0$ with $\tilde Q\neq0$ is exactly the zero-divisor condition.
 
 The three subspaces on which the representation never fails are exactly the three that carry no nonzero zero divisor, which is the statement of *Introduction to the Remarkable Subspaces* read through the polar representation. The intersection of the domain with the algebra is thus the complement of a single cone, and the trace of that cone on the subspaces is a single point on each of the centre, the quaternion subspace and the anti-quaternion subspace, the four-dimensional complex isotropic cone on the vector subspace, and a three-dimensional light cone on each sector.
 
@@ -324,8 +330,8 @@ so a vanishing norm stays vanishing and a non-vanishing one stays non-vanishing.
 |---|---|---|---|---|
 | $\overline{\tilde{Q}}$ | unchanged | $-\alpha$ | $\tilde U_{\mathrm b}^{\natural}$ | $\tilde u_{\mathrm r}$ |
 | $\tilde{Q}^{\natural}$ | unchanged | unchanged | $\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}^{\natural}\tilde u_{\mathrm r}$ | $\tilde u_{\mathrm r}^{-1}$ |
-| $\tilde{Q}^{*}$ | unchanged | $-\alpha$ | the reversed word | the reversed word |
-| $\tilde{Q}^{\flat}$ | unchanged | $-\alpha$ | the reversed word | the reversed word |
+| $\tilde{Q}^{*}$ | unchanged | $-\alpha$ | $\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $\tilde u_{\mathrm r}^{-1}$ |
+| $\tilde{Q}^{\flat}$ | unchanged | $-\alpha$ | $\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $-\tilde u_{\mathrm r}^{-1}$ |
 
 The complex conjugation is the one that preserves the shape of the word. Its effect is the coefficientwise conjugation of each factor, and since the rotor is a real quaternion and the boost has one real and three purely imaginary coefficients,
 
@@ -333,7 +339,7 @@ $$
 \overline{\tilde{Q}} = r\,e^{-i\alpha}\,\tilde U_{\mathrm b}^{\natural}\,\tilde u_{\mathrm r} ,
 $$
 
-which is a polar word again: the scale is unchanged, the phase is reversed, the rotor is unchanged, and the boost is replaced by its natural conjugate. The natural conjugate of a boost is a boost — it is the inverse, with the same rapidity and the opposite axis — so the complex conjugation acts on the polar data by reversing the phase and reflecting the boost axis, and it fixes the rotor. Verified to $8.9\times10^{-16}$ over $300$ elements, together with the positivity of $\tilde U_{\mathrm b}^{\natural}$.
+which is a polar word again: the scale is unchanged, the phase is reversed, the rotor is unchanged, and the boost is replaced by its natural conjugate. The natural conjugate of a boost is a boost — it is the inverse, with the same rapidity and the opposite axis — so the complex conjugation acts on the polar data by reversing the phase and reflecting the boost axis, and it fixes the rotor. Verified to $1.1\times10^{-14}$ over $300$ elements, together with the positivity of $\tilde U_{\mathrm b}^{\natural}$.
 
 The quaternion conjugation is the one that reverses the order of the two non-central factors. It keeps the modulus, since $N$ is invariant, and it gives
 
@@ -341,7 +347,7 @@ $$
 \tilde{Q}^{\natural} = r\,e^{i\alpha}\,\tilde u_{\mathrm r}^{-1}\,\tilde U_{\mathrm b}^{-1} ,
 $$
 
-with $\tilde U_{\mathrm b}^{-1} = \tilde U_{\mathrm b}^{\natural}$, so the word of $\tilde Q^{\natural}$ is the word of the inverse of the unit-norm part. Read in the standard order, it has the same scale and the same phase, the boost $\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}^{\natural}\tilde u_{\mathrm r}$ and the rotor $\tilde u_{\mathrm r}^{-1}$: the rapidity is unchanged, the boost axis is rotated by the rotor and reversed, and the rotation angle is reversed. Verified to $4.5\times10^{-16}$ over $300$ elements.
+with $\tilde U_{\mathrm b}^{-1} = \tilde U_{\mathrm b}^{\natural}$, so the word of $\tilde Q^{\natural}$ is the word of the inverse of the unit-norm part. Read in the standard order, it has the same scale and the same phase, the boost $\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}^{\natural}\tilde u_{\mathrm r}$ and the rotor $\tilde u_{\mathrm r}^{-1}$: the rapidity is reversed, the boost axis is rotated by the rotor and reversed, and the rotation angle is reversed. Verified over $300$ elements, the word to $2.1\times10^{-14}$, its boost to $9.8\times10^{-15}$ and its rotor to $2.6\times10^{-15}$.
 
 The Hermitian conjugation and the reversal reverse the order of the two factors and negate the phase. The Hermitian conjugate of the word is
 
@@ -349,11 +355,13 @@ $$
 \tilde{Q}^{*} = r\,e^{-i\alpha}\,\tilde u_{\mathrm r}^{-1}\,\tilde U_{\mathrm b} ,
 $$
 
-verified to $6.3\times10^{-15}$ over $300$ elements: the scale is unchanged, the phase is reversed, and the two non-central factors appear in the reversed order, with the boost on the right. The reversal differs from it by the central sign, $\tilde{Q}^{\flat} = -\tilde{Q}^{*}$, and the two of them therefore have the same polar data.
+verified to $1.1\times10^{-14}$ over $300$ elements: the scale is unchanged, the phase is reversed, and the two non-central factors appear in the reversed order, with the boost on the right. Read in the standard order, its boost is $\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ — the same rapidity about the rotor-rotated axis — and its rotor is $\tilde u_{\mathrm r}^{-1}$, verified to $1.7\times10^{-14}$ and $3.6\times10^{-15}$.
+
+The reversal is the Hermitian conjugate followed by the central sign, $\tilde{Q}^{\flat} = -\tilde{Q}^{*}$, and the central sign is a factor of the word: multiplying a unit-norm element by $-e_0$ leaves the scale, the phase and the boost in place, since $(-e_0)$ commutes and the Hermitian positive factor of $-X$ is that of $X$, and it negates the rotor. So the reversal has the same scale, the same phase and the same boost as the Hermitian conjugate, and its rotor is $-\tilde u_{\mathrm r}^{-1}$, verified to $3.6\times10^{-15}$: the same rotation read on the other sheet of the double cover, which is why the two words are the same only up to the sign of the rotor.
 
 ## Worked Examples
 
-**The centre.** For $\tilde{Q} = 1.2-0.5i$, the norm is $1.19-1.2i$, the modulus is $\rho = 1.2-0.5i$, so $r = 1.3$ and $\alpha = -0.394791120$, and the two non-central factors are $\tilde U_{\mathrm b} = \tilde u_{\mathrm r} = e_0$. The argument of $Q_0$ lies in the branch interval, which is the rotor $+e_0$ rather than $-e_0$. The reconstruction error is $2.5\times10^{-16}$.
+**The centre.** For $\tilde{Q} = 1.2-0.5i$, the norm is $1.19-1.2i$, the modulus is $\rho = 1.2-0.5i$, so $r = 1.3$ and $\alpha = -0.394791120$, and the two non-central factors are $\tilde U_{\mathrm b} = \tilde u_{\mathrm r} = e_0$. The argument of $Q_0$ lies in the branch interval, so the rotor is $+e_0$ and not $-e_0$. The reconstruction error is $1.1\times10^{-16}$.
 
 **The quaternion subspace.** For $h = 0.7+1.1e_1-0.4e_2+0.9e_3$ the norm is the positive real $2.67$, so $\alpha = 0$, the boost is $e_0$, and the rotor is the normalised element,
 
@@ -369,7 +377,7 @@ of angle $\theta = 2.256165420$ about the axis $(0.745014008,-0.270914185,0.6095
 
 **A generic complex vector.** For $\vec Q = (0.9+0.4i)e_1+(0.2-0.7i)e_2+0.5e_3$ the norm is complex, $0.45+0.44i$, and the phase is free: $r = 0.793325128$, $\alpha = 0.387081341$. The boost has rapidity $\psi = 1.681781019$ about the axis $(0.428682140,0.244961223,-0.869612340)$, the rotor has angle $\theta = \pi$ about the axis $(0.902525976,-0.072463835,0.424494823)$, and the two axes are orthogonal, their dot product being $1.6\times10^{-16}$. The reconstruction error is $1.2\times10^{-16}$.
 
-**A definite Hermitian element.** For $\tilde U_{\mathrm b} = \cosh0.9\,e_0+i\sinh0.9\,\hat u$ with $\hat u = (1,1,1)/\sqrt3$, of norm one and rapidity $1.8$, the polar data are $r = 1$, $\alpha = 0$, the boost equal to the element and the rotor $e_0$: the element is its own boost, which is the row $N>0$ of the Hermitian subspace. The negated element has the same boost and the rotor $-e_0$.
+**A definite Hermitian element.** For $\tilde U_{\mathrm b} = \cosh0.9\,e_0+i\sinh0.9\,\hat u$ with $\hat u = (1,1,1)/\sqrt3$, of norm one, the half-rapidity is the $0.9$ of the element and the rapidity is $1.8$; the polar data are $r = 1$, $\alpha = 0$, the boost equal to the element and the rotor $e_0$: the element is its own boost, which is the row $N>0$ of the Hermitian subspace. The negated element has the same boost and the rotor $-e_0$.
 
 **The product of two boosts.** For the boost of rapidity $0.7$ about $e_1$ and the boost of rapidity $0.5$ about $e_2$, the product has norm one, so $r = 1$ and $\alpha = 0$, and its polar data are a boost of rapidity $0.882520256$ about the axis $(0.854013219,0.520251306,0)$ and a rotor of angle $0.164398032$ about $-e_3$. The rapidity satisfies $\cosh\psi = \cosh0.7\cosh0.5$ to $9.8\times10^{-13}$, the two axes being orthogonal, and the rotor angle satisfies $\tan\tfrac{\theta}{2} = \sinh0.35\sinh0.25/(\cosh0.35\cosh0.25)$ to $2.8\times10^{-13}$.
 
@@ -381,7 +389,7 @@ Because each block lies in exactly three of the six subspaces and each subspace 
 
 The polar data of an element of a subspace follow from its norm. The phase is free on exactly the two subspaces whose norm is complex, the centre and the vector subspace, frozen at $0$ and $\pi/2$ on the two halves and two-valued on the two sectors. The boost is trivial on the centre and on the two halves; the rotor is a sign on the centre and on the definite branch of each sector; and the vector subspace is rigid, every one of its non-null elements having a half-turn rotor about an axis orthogonal to the boost axis.
 
-The two products of the series are the product of two boosts, which is a boost times a rotor with the classical rapidity and the Thomas-Wigner angle, and the word at a pure vector, whose unit-norm part is a root of $-1$ with a half-turn rotor about an axis orthogonal to the boost axis. The domain is the complement of the null cone, and its trace on the subspaces is a single point on each of the centre, the quaternion subspace and the anti-quaternion subspace, the complex isotropic cone on the vector subspace, and the two light cones on the sectors; the representation fails on a subspace exactly on its zero divisors. The four conjugations preserve the domain, and the complex conjugation preserves the shape of the word, reversing the phase and reflecting the boost axis while fixing the rotor.
+The two products of the series are the product of two boosts, which is a boost times a rotor with the classical rapidity and the Thomas-Wigner angle, and the word of a pure vector, whose unit-norm part is a root of $-1$ with a half-turn rotor about an axis orthogonal to the boost axis. The domain is the complement of the null cone, and its trace on the subspaces is a single point on each of the centre, the quaternion subspace and the anti-quaternion subspace, the complex isotropic cone on the vector subspace, and the two light cones on the sectors; the representation fails on a subspace exactly on its zero divisors. The four conjugations preserve the domain, and the complex conjugation preserves the shape of the word, reversing the phase and reflecting the boost axis while fixing the rotor.
 
 ## Summary of Notation
 
@@ -400,6 +408,8 @@ The two products of the series are the product of two boosts, which is a boost t
 | $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$ | the centre $A_1\oplus A_2$ and the vector subspace $B_1\oplus B_2$ |
 | $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$ | the quaternion subspace $A_1\oplus B_1$ and the anti-quaternion subspace $A_2\oplus B_2$ |
 | $\mathbb{M}_+$, $\mathbb{M}_-$ | the Hermitian subspace $A_1\oplus B_2$ and the anti-Hermitian subspace $A_2\oplus B_1$ |
+| $\sigma$, $\vec w$ | the scalar and the real vector of an element $\sigma e_0+i\vec w$ of the Hermitian subspace |
+| $\tau$, $\vec\rho$ | the scalar and the real vector of an element $i\tau e_0+\vec\rho$ of the anti-Hermitian subspace |
 | $\mathrm{Sp}(1)$ | the group of unit real quaternions, the rotor set |
 | $\mathcal{A}$ | the axis sphere, the unit vectors of $\mathbb{R}^3$ |
 | $\psi$, $\hat u_{\mathrm b}$ | rapidity and unit axis of the boost |
@@ -411,7 +421,7 @@ The two products of the series are the product of two boosts, which is a boost t
 ## Further Reading
 
 - *The Polar Element Representation of Biquaternions* (`articles_maths/the-polar-element-representation-of-biquaternions.md`), for the four factors, their exponentials, the count $1+1+3+3$, the order of the factors and the boundary of the family on the null cone.
-- *The Polar Element Representation in Subspaces* (`articles_physics/the-polar-element-representation-in-subspaces.md`), for the same restriction read sector by sector on the physics side: the norm of each subspace, the criteria for a trivial boost and a trivial rotor, and the worked examples of every sector. Its boost is written $\exp(-i\psi\hat u_{\mathrm b})$ where the maths series writes $\exp(i\tfrac{\psi}{2}\hat u_{\mathrm b})$, so its rapidity parameter is the double of the present one for the same element.
+- *The Polar Element Representation in Subspaces* (`articles_physics/the-polar-element-representation-in-subspaces.md`), for the same restriction read sector by sector on the physics side: the norm of each subspace, the criteria for a trivial boost and a trivial rotor, and the worked examples of every sector. Its boost is written $\exp(-i\psi\hat u_{\mathrm b})$ where the maths series writes $\exp(i\tfrac{\psi}{2}\hat u_{\mathrm b})$, so for the same element the parameter of the maths series is twice the one used there; the sign of the imaginary unit is the orientation of the axis and carries nothing more.
 - *The Cartan Hermitian Pairing of the Polar Element Representation of Biquaternions* (`articles_maths/the-cartan-hermitian-pairing-of-the-polar-element-representation-of-biquaternions.md`), for the Hermitian positive and unitary factors, and for the split of the exponents into $\mathbb{M}_+$ and $\mathbb{M}_-$ that the incidence of this article reproduces.
 - *The Hamilton Root Pairing of the Polar Element Representation of Biquaternions* (`articles_maths/the-hamilton-root-pairing-of-the-polar-element-representation-of-biquaternions.md`) and *The Quaternion Pairing of the Polar Element Representation of Biquaternions* (`articles_maths/the-quaternion-pairing-of-the-polar-element-representation-of-biquaternions.md`), for the two partial pairings of the same four factors and their domains, which are the two regroupings the incidence of this article does not see.
 - *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the six subspaces one by one, their bases, their dimensions, their elements and their ideals.
