@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Biquaternioid General Quaternionic Algebra (GQA) over $\mathbb{C}$ — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-biquaternioid-general-quaternionic-algebra-gqa-over-math0"><strong>The Biquaternioid General Quaternionic Algebra (GQA) over $\mathbb{C}$</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternioid complex space carries eleven structures beside the ordinary product. This article is about the <strong>general quaternionic algebra</strong>, written $\mathrm{GQA}$, whose product is the plain product with the natural conjugation inserted into its first slot, $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$. It is one of the two <strong>general</strong> algebras of the space, and its job in the framework is <strong>causality</strong>: its algebraic norm is the interval, its null set is the causal cone and its norm-one multiplications are the Lorentz transformations.</p>
+<p>The mathematics of the structure is owned by the group <em>The Biquaternioid General Quaternionic Algebra (GQA) over $\mathbb{C}$</em> of the mathematics menu. This article proves nothing. It lists the results, each with the mathematics article that owns it, and it keeps the physical readings the framework gives the structure, every one of them labelled as a reading.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$, $e_0=1$, $e_k^{2}=-e_0$, $e_1e_2=e_3$, and central imaginary $i$. An element is $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$. The conjugations are the natural one $\tilde Q^{\natural}=Q_0e_0-Q_1e_1-Q_2e_2-Q_3e_3$, the coefficientwise one $\bar{\tilde Q}$ and the star $\tilde Q^{*}=\bar{\tilde Q}^{\natural}$; the sectors are $\mathbb{M}_+=\{Q^{*}=Q\}$ (informational) and $\mathbb{M}_-=\{Q^{\flat}=Q\}$ (material) with $\flat=-{}^{*}$; the scalar part is $\mathrm{Sc}(\tilde X)=X_0$. All conventions are those of <em>Conventions in the Biquaternion Universe</em>.</p>
+<h2 id="the-results">The Results</h2>
+<h3 id="basic-properties">Basic Properties</h3>
+<ul>
+<li><strong>The operation.</strong> The product $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ is $\mathbb{R}$-bilinear and $\mathbb{C}$-bilinear — it conjugates no coefficient — and it is not associative. Its class among the twelve structures is that of a general algebra. Owner: <em>Introduction to the General Quaternionic Algebra</em>.</li>
+<li><strong>The unit.</strong> $e_0$ is a <strong>left</strong> identity, $e_0\star\tilde X=\tilde X$, and not a right one, $\tilde X\star e_0=\tilde X^{\natural}$. The structure therefore has no two-sided unit, and this is the algebraic mark of the orientation of the material composition. Owner: <em>Introduction to the General Quaternionic Algebra</em>.</li>
+<li><strong>The algebraic norm and invertibility.</strong> The norm is $N(\tilde Q)=\tilde Q^{\natural}\tilde Q=\sum_\mu Q_\mu^{2}$, which is <strong>multiplicative</strong> for the product, $N(\tilde P\star\tilde Q)=N(\tilde P)N(\tilde Q)$, and is reversed by the central generator, $N(i\tilde Q)=-N(\tilde Q)$. The invertibility criterion is $N(\tilde Q)\neq0$, with the inverse $\tilde Q^{\natural}/N(\tilde Q)$. Owner: <em>Norm and Invertibility in the General Quaternionic Algebra</em>.</li>
+<li><strong>Zero divisors.</strong> The zero-divisor set is the cone $\{N(\tilde Q)=0\}$: the lightlike parameters, the causal cone of the structure. Owner: <em>Zero Divisors of the General Quaternionic Algebra</em>.</li>
+<li><strong>Annihilators.</strong> The left, the right and the two-sided annihilator of an element and the radical of the product. Owner: <em>Annihilators of the General Quaternionic Algebra</em>.</li>
+<li><strong>Square roots of one and the idempotents.</strong> The roots of $+1$ and the idempotents of the structure. Owner: <em>Square Roots of One and the Idempotents of the General Quaternionic Algebra</em>.</li>
+<li><strong>Square roots of zero and the nilpotents.</strong> The roots of $0$ and the nilpotents of the structure. Owner: <em>Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra</em>.</li>
+<li><strong>Square roots of a general element.</strong> The root set of a general value, and the class the structure occupies among the four existence classes of the twelve. Owner: <em>Square Roots of a General Element in the General Quaternionic Algebra</em>.</li>
+</ul>
+<h3 id="advanced-properties">Advanced Properties</h3>
+<ul>
+<li><strong>The specificities.</strong> What the structure adds to its general product and what it shares with the other eleven. Owner: <em>The Specificities of the General Quaternionic Algebra</em>.</li>
+<li><strong>The associator and the ternary product.</strong> The associator of the quaternionic product, and the ternary product that fails the Jordan triple identity; this is the bound of the structure. Owner: <em>The Associator and the Ternary Product of the Quaternionic Product</em>.</li>
+<li><strong>The symmetrised quaternionic product and the Hermitian subspace.</strong> The symmetric half and the Hermitian elements it selects. Owner: <em>The Symmetrised Quaternionic Product and the Hermitian Subspace</em>.</li>
+<li><strong>The left multiplications and the opposite monoid.</strong> The left multiplications form the monoid of the structure; the right ones do not close, which is why the structure is an algebra of operators on one side only. Owner: <em>The Left Multiplications of the Quaternionic Product and the Opposite Monoid</em>.</li>
+<li><strong>The product on the quaternion subspace.</strong> The restriction of the quaternionic product to the quaternion subspace, where it is the ordinary quaternion product. Owner: <em>The Quaternionic Product on the Quaternion Subspace</em>.</li>
+<li><strong>The isotropic structure.</strong> The isotropic elements of the algebra under the structure. Owner: <em>The Isotropic Structure of the General Quaternionic Algebra</em>.</li>
+<li><strong>The remarkable subspaces and the realification.</strong> The restriction of the product to the centre, the vector subspace, the two halves and the two sectors, and the effect of the change of scalars. Owners: <em>Remarkable Subspaces under the General Quaternionic Algebra</em>, <em>The Realification of the General Quaternionic Algebra</em>.</li>
+</ul>
+<h3 id="operators">Operators</h3>
+<ul>
+<li><strong>The two-sided and the one-sided operators.</strong> The operators $\tilde X\mapsto\tilde A\star\tilde X$ and $\tilde X\mapsto\tilde X\star\tilde A$, their adjoints and their types; the left family is the opposite monoid and the right one does not close. Owners: <em>Two-Sided Operators on the General Quaternionic Algebra</em>, <em>One-Sided Operators on the General Quaternionic Algebra</em>.</li>
+<li><strong>The pin and spin groups.</strong> The two groups of the structure and the sandwich action they generate. Owner: <em>The Pin and Spin Groups of the General Quaternionic Algebra</em>.</li>
+</ul>
+<h3 id="representations">Representations</h3>
+<ul>
+<li><strong>The matrix models.</strong> The structure read in the $2\times2$ matrix element representation and in the $4\times4$ one. Owners: <em>The General Quaternionic Algebra in the $2\times2$ Matrix Element Representation</em>, <em>The General Quaternionic Algebra in the $4\times4$ Matrix Element Representation</em>.</li>
+</ul>
+<h2 id="physical-interpretation">Physical Interpretation</h2>
+<ul>
+<li><strong>The interval is the square of the composition, the mass its charge and the sign the sector.</strong> The norm is multiplicative, so the casual character of a product is the product of the causal characters of its factors; the division of the parameters into the timelike, the null and the spacelike is therefore compatible with the composition. The central generator reverses the norm, so the exchange that ticks the clock also carries the sign of the interval, and the signature flip between the two sectors is one application of the tick. The interval is the form that a change of the local complex structure moves, so its sign at a point is data of the embedding and not of the algebra.</li>
+<li><strong>The square map is the Born/measurement arrow.</strong> The square $\tilde Q\mapsto\tilde Q^{2}$ is the only algebraic map that takes a material element to an informational one, so it is the framework's candidate for the algebraic step from a process to a probability. Boundary: the corpus's Born rule is the trace formula and not the square map alone; the reading names a shape and claims no derivation.</li>
+<li><strong>The material composition is oriented and cannot measure.</strong> With no right unit and two slots that are not the same, a form of this product cannot be a probability; a measurement needs positivity and idempotents, and the material composition has neither, while the informational sector has both. The absence is informative rather than defective. The composition defines a <strong>monoid of operators and not an algebra</strong>: the operations compose and the elements do not.</li>
+<li><strong>The operators that preserve the interval are the Lorentz transformations.</strong> The multiplications by a parameter of norm one preserve the interval, and the set of parameters on which the interval vanishes is the causal cone; left multiplication by a null parameter collapses the form, $N(L_{\tilde P}\tilde X)=0$ for every $\tilde X$, which is the operator picture of lightlike propagation.</li>
+<li><strong>The sandwich is the inner automorphism scaled by the norm.</strong> The sandwich $\tilde X\mapsto\tilde A\tilde X\tilde A^{\natural}$ is quadratic in its parameter and defined on every element; on the norm-one slice — the Lorentz parameters — it is the inner automorphism, and off the slice the two differ by the norm, which is the mass.</li>
+<li><strong>The type criterion is the split of the interval.</strong> A one-sided operator is self-adjoint exactly for a central parameter and skew-adjoint exactly for a pure one, so the two populated sectors are the centre, which carries the time direction, and the vector subspace, which carries the three spatial directions. Read on the clock, the bracket touches no central coordinate and is invisible to the exchange.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<p>The biquaternioid general quaternionic algebra is the structure $\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$ over $\mathbb{C}$, the causality band of the framework: bilinear, non-associative, of a left identity only, with the multiplicative norm $N=\sum_\mu Q_\mu^{2}$ whose vanishing set is the causal cone and whose norm-one multiplications are the Lorentz transformations. Its square map sends the material sector to the informational one, its sandwich is the inner automorphism scaled by the norm, and its interval is the form a change of the local complex structure moves. The mathematics is owned by the mathematics group of the same name; the readings listed above are the framework's, each labelled, and none of them is a proof.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\star\tilde Q=\tilde P^{\natural}\tilde Q$</td>
+<td>the general quaternionic product, $\mathrm{GQA}$</td>
+</tr>
+<tr>
+<td>$e_0\star\tilde X=\tilde X$; $\tilde X\star e_0=\tilde X^{\natural}$</td>
+<td>a left unit; no right unit</td>
+</tr>
+<tr>
+<td>$N(\tilde Q)=\tilde Q^{\natural}\tilde Q=\sum_\mu Q_\mu^{2}$</td>
+<td>the algebraic norm; the interval</td>
+</tr>
+<tr>
+<td>$N(\tilde P\star\tilde Q)=N(\tilde P)N(\tilde Q)$</td>
+<td>multiplicativity of the norm</td>
+</tr>
+<tr>
+<td>$N(i\tilde Q)=-N(\tilde Q)$</td>
+<td>the norm reversal of the central generator</td>
+</tr>
+<tr>
+<td>$\{N(\tilde Q)=0\}$</td>
+<td>the causal cone; the lightlike parameters</td>
+</tr>
+<tr>
+<td>$L_{\tilde P}\tilde X=\tilde P^{\natural}\tilde X$</td>
+<td>the left multiplication; $\tilde P$ of norm one gives a Lorentz transformation</td>
+</tr>
+<tr>
+<td>$\tilde A\tilde X\tilde A^{\natural}$</td>
+<td>the sandwich; the inner automorphism scaled by the norm</td>
+</tr>
+<tr>
+<td>$\mathbb{M}_+,\mathbb{M}_-$</td>
+<td>the informational and material sectors</td>
+</tr>
+<tr>
+<td>$B$, $N$, $H$, $K$</td>
+<td>the four algebraic norms of the grid</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>The mathematics group <em>The Biquaternioid General Quaternionic Algebra (GQA) over $\mathbb{C}$</em> (<code>maths.md</code>), for every result listed above.</li>
+<li>Mathematics article <em>The Four General Products of the Biquaternioid $\mathbb{C}$ Space</em> (<code>articles_maths/the-four-general-products-of-the-biquaternioid-c-space.md</code>), for the four general products and the slot rule that generates them.</li>
+<li>Mathematics article <em>The 4 Algebraic Norms over the Biquaternioid $\mathbb{C}$ Space</em> (<code>articles_maths/the-4-algebraic-norms-over-the-biquaternioid-c-space.md</code>), for the four norms $B$, $N$, $H$, $K$ and their owners among the twelve.</li>
+<li>Companion article <em>The Four General Products and Their Physical Readings</em>, for the four jobs the four general products carry.</li>
+<li>Companion article <em>Mass, Rank and the Positivity of the Dagger</em>, for the two squares, the rank and the interval.</li>
+<li>Companion article <em>The Biquaternion Mathematics Corpus</em>, for the mathematics corpus as a whole and for the principle that no result is owned on the physics side.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

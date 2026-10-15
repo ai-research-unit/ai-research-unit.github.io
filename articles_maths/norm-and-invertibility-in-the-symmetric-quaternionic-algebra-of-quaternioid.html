@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Norm and Invertibility in the Symmetric Quaternionic Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="norm-and-invertibility-in-the-symmetric-quaternionic-algebra"><strong>Norm and Invertibility in the Symmetric Quaternionic Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The symmetric quaternionic product pairs two elements and returns a scalar: $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$. Read on the diagonal, the same object is the <strong>quaternion form</strong>, $\tilde p\star\tilde p=N(\tilde p)e_0$, and this article reads the block through the three notions that the diagonal controls: the <strong>algebraic norm</strong>, the <strong>unit</strong> and the <strong>inverse</strong>. The block answers the last two with an absence. The element $e_0$ multiplies by the scalar part alone, so the block has no unit, no one-sided unit and no inverse, and the group of units disappears with them. What the block does own is the form. The non-isotropic class, which over $\mathbb{R}$ is the whole punctured space, is exactly the group of units of the plain product, with the inverse of the plain product; the inverses belong to the parent, and the block reads them on its diagonal.</p>
+<p><strong>Boundaries.</strong> The product and its scalar law are <em>Introduction to the Symmetric Quaternionic Algebra of Quaternions</em>; the zero divisors are <em>Zero Divisors of the Symmetric Quaternionic Algebra</em>; the roots of a central value are <em>Square Roots of a General Element in the Symmetric Quaternionic Algebra</em>; the general definitions of a unit and of an inverse are <em>Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space</em>; the parent's norm and inverse criterion, which the block reads on its diagonal, are <em>Norm and Invertibility in the General Plain Algebra</em>.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$; an element is $\tilde q=q_0e_0+\vec q$. The <strong>quaternion conjugation</strong> is $\tilde q^{\natural}=q_0e_0-\vec q$; the bar is the identity, the star coincides with the natural sign ${}^{\natural}$. The <strong>quaternion form</strong> is $N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q=\mathrm{Sc}(\tilde p^{\natural}\tilde q)$, the <strong>plain form</strong> is $B(\tilde p,\tilde q)=p_0q_0-\vec p\cdot\vec q=\mathrm{Sc}(\tilde p\tilde q)$, and the <strong>symmetric quaternionic product</strong> is $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$. The centre is $\mathbb{R}e_0$ and the vector subspace is $\mathrm{Vect}(\mathbb{H})=\mathbb{R}e_1+\mathbb{R}e_2+\mathbb{R}e_3$.</p>
+<h2 id="the-general-definitions">The General Definitions</h2>
+<p>The vocabulary is fixed once in <em>Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space</em>, and the block only answers it.</p>
+<p><strong>Definition (unit).</strong> An element $e$ is a <strong>left unit</strong> of a real-bilinear rule when $e x=x$ for every $x$, a <strong>right unit</strong> when $x e=x$ for every $x$, and a <strong>two-sided unit</strong> or <strong>unit</strong> when both.</p>
+<p><strong>Definition (inverse and units).</strong> When the rule has a two-sided unit $e$, the <strong>inverse</strong> of $x$ is the element $y$ with $xy=e=yx$, and $x$ is <strong>invertible</strong>, or a <strong>unit</strong>, when it has one. Without a two-sided unit the word inverse is not used, and the group of units is not defined.</p>
+<p><strong>Definition (algebraic norm).</strong> The <strong>algebraic norm</strong> of the block is the coefficient of its diagonal, the scalar $N(\tilde x)$ with $\tilde x\star\tilde x=N(\tilde x)e_0$; equivalently, it is the diagonal of the scalar-part form of the product.</p>
+<p>The two definitions of the algebra are quoted, and the rest of the article is their reading on the block.</p>
+<h2 id="the-algebraic-norm-of-the-block">The Algebraic Norm of the Block</h2>
+<p><strong>Proposition (the norm is the diagonal).</strong> For every $\tilde x$ the square of the block is the central element</p>
+<p>$$
+\tilde x\star\tilde x=N(\tilde x)e_0,\qquad N(\tilde x)=x_0^{2}+|\vec x|^{2},
+$$</p>
+<p>so the algebraic norm of the block is the definite quaternion form $N$.</p>
+<p><em>Proof.</em> The product is $\tilde x\star\tilde x=N(\tilde x,\tilde x)e_0$ by the governing formula of <em>Introduction to the Symmetric Quaternionic Algebra of Quaternions</em>, and $N(\tilde x,\tilde x)=x_0^{2}+\vec x\cdot\vec x=N(\tilde x)$.</p>
+<p><strong>Theorem (the algebraic norm is the multiplicative form of the plain product).</strong> The algebraic norm of the block is the quaternion norm of the algebra,</p>
+<p>$$
+\tilde q\tilde q^{\natural}=N(\tilde q)e_0,\qquad N(\tilde q)=\mathrm{Sc}\bigl(\tilde q\tilde q^{\natural}\bigr)=\mathrm{Sc}\bigl(\tilde q^{\natural}\tilde q\bigr),
+$$</p>
+<p>so it is the coefficient of the quaternion algebraic norm $N_Q$ of the general quaternionic product; it is multiplicative for the <strong>plain</strong> product, $N(\tilde p\tilde q)=N(\tilde p)N(\tilde q)$; and the product of the block is the polarisation read on the central line,</p>
+<p>$$
+\tilde p\star\tilde q=\tfrac12\bigl(N(\tilde p+\tilde q)-N(\tilde p)-N(\tilde q)\bigr)e_0 .
+$$</p>
+<p>The form is positive definite, of Gram matrix $I_4$, of rank $4$, with radical $\{0\}$.</p>
+<p><em>Proof.</em> The identity $\tilde q\tilde q^{\natural}=N(\tilde q)e_0$, the multiplicativity and the inverse criterion are <em>Norm and Invertibility in the General Plain Algebra</em>, where the quaternion norm is owned, and the identification with the quaternion algebraic norm $N_Q$ is <em>The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space</em>; the polarisation is the expansion of $\tilde p\star\tilde p=N(\tilde p)e_0$ at $\tilde p+\tilde q$ by bilinearity; and the Gram matrix and the definiteness are <em>The Quaternion Form as a Product on the Symmetric Quaternionic Algebra</em>, where $N(e_\mu,e_\nu)=\delta_{\mu\nu}$ and $N(\tilde x)=x_0^{2}+|\vec x|^{2}$ is a sum of four squares vanishing only at the origin.</p>
+<p><strong>Theorem (the norm is not multiplicative for the block).</strong> For the product of the block the norm is the square of the coefficient,</p>
+<p>$$
+N(\tilde p\star\tilde q)=N(\tilde p,\tilde q)^{2},
+$$</p>
+<p>which differs in general from $N(\tilde p)N(\tilde q)$. At the witness $(\tilde p,\tilde q)=(e_1,e_2)$ the first is $0$, because $N(e_1,e_2)=0$, while the second is $1$.</p>
+<p><em>Proof.</em> $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$, and the norm of a central element is the square of its coefficient, $N(ae_0)=a^{2}N(e_0)=a^{2}$; hence $N(\tilde p\star\tilde q)=N(\tilde p,\tilde q)^{2}$. At the basis pair, $e_1\star e_2=N(e_1,e_2)e_0=0$, so its norm is $0$, while $N(e_1)=N(e_2)=1$.</p>
+<p><strong>Corollary (the block owns the form, not its multiplicativity).</strong> The block carries the definite form whose vanishing decides its classes, and the multiplicativity of that form belongs to the plain product and not to the block. The two statements are not in conflict: the same quadratic form is multiplicative for one product and quadratic in the coefficient for the other, and the difference is exactly the collapse of the product onto the scalar line.</p>
+<h2 id="the-absence-of-a-unit">The Absence of a Unit</h2>
+<p><strong>Theorem (there is no unit).</strong> The block has no left unit, no right unit and no two-sided unit.</p>
+<p><em>Proof.</em> Let $\tilde u$ be a left unit, so that $\tilde u\star\tilde q=\tilde q$ for every $\tilde q$. At $\tilde q=e_0$ this reads $\tilde u\star e_0=N(\tilde u,e_0)e_0=u_0e_0=e_0$, hence $u_0=1$. At $\tilde q=e_1$ it reads $\tilde u\star e_1=N(\tilde u,e_1)e_0=u_1e_0=e_1$, impossible because $u_1e_0$ is a multiple of $e_0$ and $e_1$ is not. So there is no left unit. The same computation with the roles exchanged, using $\tilde q\star\tilde u=\tilde q$ and the commutativity of the block, excludes a right unit. A two-sided unit would be in particular a left unit, so there is none.</p>
+<p><strong>Remark (the unit of the central line).</strong> The element $e_0$ is a two-sided unit of the scalar line alone: for every real $\lambda$, $e_0\star(\lambda e_0)=\lambda e_0=(\lambda e_0)\star e_0$. It fails on every noncentral element, $e_0\star e_1=N(e_0,e_1)e_0=0\neq e_1$, and this single evaluation is the whole failure: the block is the symmetric quaternionic structure, whose values are central, so its left multiplication by $e_0$ is the scalar-part projection and not the identity.</p>
+<p><strong>Corollary (no inverse, no group of units).</strong> Since the block has no two-sided unit, the inverse is not defined for it: no element is invertible, there is no group of units, and the block is not a division algebra, the definition requiring both a two-sided unit and the absence of zero divisors, neither of which the block has. Every statement about inverses in this block is a statement about the plain product, read below.</p>
+<p><strong>Remark (the equation $\tilde A\star\tilde X=e_0$).</strong> The equation $\tilde A\star\tilde X=e_0$ reads $N(\tilde A,\tilde X)=1$, a scalar equation in four unknowns. For $\tilde A\neq0$ it is <strong>solvable</strong>: the solution set is the affine hyperplane $\{\tilde X:N(\tilde A,\tilde X)=1\}$ of real dimension three, and $\tilde X=\tilde A/N(\tilde A)$ is one solution, because $N(\tilde A,\tilde A/N(\tilde A))=N(\tilde A)/N(\tilde A)=1$. For $\tilde A=0$ it has no solution, the left side being $0$. The solvability of this equation says only that $e_0$ lies in the image of the product, the image being the whole scalar line; it does not say that $\tilde X$ is an inverse, because no inverse is defined without a unit. The failure of invertibility is the absence of the unit, and not the unsolvability of the equation.</p>
+<h2 id="the-non-isotropic-class">The Non-Isotropic Class</h2>
+<p><strong>Definition.</strong> The <strong>non-isotropic class</strong> of the block is the complement of the isotropic set,</p>
+<p>$$
+\{\tilde p:N(\tilde p)\neq0\}.
+$$</p>
+<p><strong>Theorem (the non-isotropic class is the punctured space and the group of units of the parent).</strong> Over $\mathbb{R}$ the form is definite, so the non-isotropic class is the whole punctured space</p>
+<p>$$
+\{\tilde p:N(\tilde p)\neq0\}=\mathbb{H}\setminus\{0\},
+$$</p>
+<p>and it is exactly the group of units of the plain product, with the inverse of the plain product</p>
+<p>$$
+\tilde p^{-1}=\frac{\tilde p^{\natural}}{N(\tilde p)},\qquad
+\tilde p\,\tilde p^{-1}=e_0=\tilde p^{-1}\tilde p .
+$$</p>
+<p><em>Proof.</em> The form is positive definite, so $N(\tilde p)>0$ for every $\tilde p\neq0$, and $N(\tilde p)=0$ only at $\tilde p=0$; this gives the first display. The plain product is the quaternion multiplication, a division algebra, so every nonzero element is invertible with the displayed inverse, and $N(\tilde p^{-1})=1/N(\tilde p)$. The multiplicativity $N(\tilde p\tilde q)=N(\tilde p)N(\tilde q)$ makes the non-isotropic class closed under the plain product and stable under the plain inverse, so it is a group, the group of units of the parent.</p>
+<p><strong>Remark (the block has no invertibility of its own).</strong> The inverse written above is the inverse of the plain product; the block has no inverse. The role the group of units plays in a unital block is played here by the non-isotropic class, and the class is the unit group of the parent: the block owns the form whose vanishing defines the complement, and the group itself lives one level down, in the algebra from which the block is symmetrised. The passage from the plain product to its symmetric part therefore preserves the form and loses the multiplication, and with the multiplication it loses the unit and the inverses.</p>
+<p><strong>Corollary (the isotropic class).</strong> The complementary isotropic class is the origin alone,</p>
+<p>$$
+\{\tilde p:N(\tilde p)=0\}=\{0\},
+$$</p>
+<p>which is not a nilpotent, the nilpotents being the nonzero pure elements of <em>Square Roots of Zero and the Nilpotents of the Symmetric Quaternionic Algebra</em>, and which is the sole square-zero element of the block.</p>
+<h2 id="the-conjugation">The Conjugation</h2>
+<p><strong>Proposition (the single conjugation).</strong> Over $\mathbb{R}$ the three conjugations of the complex chapter collapse to one. The natural conjugation ${}^{\natural}$ is the only nontrivial one, the star coincides with it and the bar is the identity. The natural conjugation is an algebra automorphism of the plain product and preserves the form,</p>
+<p>$$
+N(\tilde p^{\natural})=N(\tilde p),\qquad N(\tilde p^{\natural},\tilde q^{\natural})=N(\tilde p,\tilde q),
+$$</p>
+<p>and it is an automorphism of the block as well, since the block's values are central,</p>
+<p>$$
+\tilde p^{\natural}\star\tilde q^{\natural}=N(\tilde p,\tilde q)e_0=\tilde p\star\tilde q .
+$$</p>
+<p><em>Proof.</em> The collapse of the conjugations is the convention of the real chapter; the natural conjugation reverses the sign of the vector part, so it fixes $p_0$, fixes $|\vec p|^{2}$, and preserves the dot product; the last display is the governing formula applied to the conjugated arguments, whose coefficient is unchanged.</p>
+<h2 id="summary">Summary</h2>
+<p>The symmetric quaternionic block reads its algebraic norm on its diagonal: the norm is the quaternion form $N(\tilde x)=x_0^{2}+|\vec x|^{2}$, positive definite of Gram matrix $I_4$ and radical $\{0\}$, and it is the same form that the plain product carries as its multiplicative norm, $N(\tilde p\tilde q)=N(\tilde p)N(\tilde q)$. For the block the form is not multiplicative, $N(\tilde p\star\tilde q)=N(\tilde p,\tilde q)^{2}$, with the witness $(e_1,e_2)$ giving $0$ against $1$. The block has no unit, no one-sided unit, no inverse and no group of units; the element $e_0$ is a unit of the central line alone, and the equation $\tilde A\star\tilde X=e_0$ is solvable for $\tilde A\neq0$ without producing an inverse. The non-isotropic class is the whole punctured space, which is exactly the group of units of the plain product with the inverse $\tilde p^{-1}=\tilde p^{\natural}/N(\tilde p)$, and the isotropic class is the origin alone.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$</td>
+<td>the quaternion form, the coefficient of the product</td>
+</tr>
+<tr>
+<td>$\tilde p\star\tilde p=N(\tilde p)e_0$</td>
+<td>the diagonal, the algebraic norm of the block</td>
+</tr>
+<tr>
+<td>$N(\tilde p)=p_0^{2}+|\vec p|^{2}$</td>
+<td>the definite norm, Gram matrix $I_4$, radical $\{0\}$</td>
+</tr>
+<tr>
+<td>$N(\tilde p\star\tilde q)=N(\tilde p,\tilde q)^{2}$</td>
+<td>the norm of a block product; not multiplicative</td>
+</tr>
+<tr>
+<td>unit, inverse</td>
+<td>absent; $e_0$ is a unit of the central line alone</td>
+</tr>
+<tr>
+<td>$\{\tilde p:N(\tilde p)\neq0\}=\mathbb{H}\setminus\{0\}$</td>
+<td>the non-isotropic class, the unit group of the plain product</td>
+</tr>
+<tr>
+<td>$\tilde p^{-1}=\tilde p^{\natural}/N(\tilde p)$</td>
+<td>the inverse of the plain product</td>
+</tr>
+<tr>
+<td>$\{\tilde p:N(\tilde p)=0\}=\{0\}$</td>
+<td>the isotropic class</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Norm and Invertibility in the General Plain Algebra</em> (<code>articles_maths/norm-and-invertibility-in-the-quaternion-algebra.md</code>), for the parent's norm $N(\tilde q)=\tilde q\tilde q^{\natural}$ and its inverse criterion, which the block reads on its diagonal</li>
+<li><em>The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space</em> (<code>articles_maths/the-2-algebraic-norms-over-the-quaternioid-r-space.md</code>), for the plain algebraic norm $N_P(\tilde p)=\tilde p^{2}$ and the quaternion algebraic norm $N_Q(\tilde p)=\tilde p^{\natural}\tilde p$, the block's diagonal being the coefficient of $N_Q$</li>
+<li><em>The Quaternion Form as a Product on the Symmetric Quaternionic Algebra</em> (<code>articles_maths/the-quaternioid-form-as-a-product-on-the-symmetric-quaternionic-algebra-of-quaternioid.md</code>), for the Gram matrix, the definiteness and the polarisation of the coefficient</li>
+<li><em>Zero Divisors of the Symmetric Quaternionic Algebra</em> (<code>articles_maths/zero-divisors-of-the-symmetric-quaternionic-algebra-of-quaternioid.md</code>), for the maximal zero-divisor set that contrasts with the trivial isotropic class</li>
+<li><em>Square Roots of a General Element in the Symmetric Quaternionic Algebra</em> (<code>articles_maths/square-roots-of-a-general-element-in-the-symmetric-quaternionic-algebra-of-quaternioid.md</code>), for the level sets of the diagonal</li>
+<li><em>Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space</em> (<code>articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-quaternioid-r-space.md</code>), for the definitions of the unit, the inverse and the radical</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, Graduate Texts in Mathematics 88, 1982), for the unit, the inverse and the group of units of an algebra.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the norm form of the quaternions and its multiplicativity.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

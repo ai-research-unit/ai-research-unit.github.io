@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Two General Products of the Quaternioid $\mathbb{R}$ Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-two-general-products-of-the-quaternioid-math0-space"><strong>The Two General Products of the Quaternioid $\mathbb{R}$ Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The quaternion space $\mathbb{H}$ is a four-dimensional real vector space and an associative division algebra, and it carries <strong>two</strong> general products: the <strong>general plain bilinear product</strong> $\tilde p\tilde q$, the multiplication of the algebra, and the <strong>general quaternionic bilinear product</strong> $\tilde p^{\natural}\tilde q$, the plain product with the first factor read through the quaternion conjugation ${}^{\natural}$. The base of the quaternion algebra is $\mathbb{R}$, so the only conjugation available is the natural conjugation ${}^{\natural}$ of the element; the pairing that uses it in the second slot returns the two general products read with both arguments conjugated, with the same scalar parts and the same laws, so no new family arises. Exactly two general products are read on $\mathbb{H}$, and this article defines them.</p>
+<p>The two products and their two structures are defined here. The identities that link them are <em>Relations Between the Two General Products</em>, below this article in this category, and the table of their laws is <em>Comparison Between the Two General Products</em>, below this article in this category. The symmetrisation and the antisymmetrisation of the two are <em>The 6 Products of the Quaternion Real Space</em>, and the six structures they define are <em>The Algebraic Structures over the Quaternion $\mathbb{R}$ Space</em>, both below this article in this category. The left and right multiplications of the two are <em>The Two General Products and Operators</em>, the reading on the distinguished subspaces is <em>Remarkable Subspaces and the Two General Products</em>, and the degree-two reading is <em>The 2 Forms over the Quaternion $\mathbb{R}$ Space</em>, <em>The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space</em> and <em>Remarkable Subspaces and the Two Forms</em>, all below this article in this category.</p>
+<p><strong>Conventions.</strong> The algebra is $\mathbb{H}$, the real quaternion algebra, with units $e_0=1,e_1,e_2,e_3$, the relations $e_k^2=-e_0$ and $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$, and the general element $\tilde q=q_0e_0+\vec q$, $\vec q=q_1e_1+q_2e_2+q_3e_3$, with real coefficients $q_\mu$. The <strong>dot product</strong> is $\vec p\cdot\vec q=p_1q_1+p_2q_2+p_3q_3$ and the <strong>cross product</strong> $\vec p\times\vec q$ is the usual one, $(p_2q_3-p_3q_2)e_1+(p_3q_1-p_1q_3)e_2+(p_1q_2-p_2q_1)e_3$. The <strong>scalar part</strong> is $\mathrm{Sc}(\tilde q)=q_0$ and the <strong>vector part</strong> is $\operatorname{Vect}(\tilde q)=\vec q$. In this article $\tilde p$ and $\tilde q$ name elements, so that the letters $B$ and $N$ stay free for the forms.</p>
+<h2 id="the-two-products">The Two Products</h2>
+<p><strong>Definition.</strong> The <strong>general plain bilinear product</strong> and the <strong>general quaternionic bilinear product</strong> of the elements $\tilde p=p_0e_0+\vec p$ and $\tilde q=q_0e_0+\vec q$ are</p>
+<p>$$
+\tilde p\tilde q = \bigl(p_0q_0-\vec p\cdot\vec q\bigr) + p_0\vec q + q_0\vec p + \vec p\times\vec q ,
+$$</p>
+<p>$$
+\tilde p^{\natural}\tilde q = \bigl(p_0q_0+\vec p\cdot\vec q\bigr) + p_0\vec q - q_0\vec p - \vec p\times\vec q .
+$$</p>
+<p>The first is the product of the algebra, read on the scalar and vector parts of the two elements; the second is the same rule with the first factor read through ${}^{\natural}$, which changes the sign of its vector part alone. The two products are defined on the same pair of coordinates and take their values in the same space, and the two are the <strong>general</strong> products of $\mathbb{H}$ in the sense of the general construction: the plain product with the two slots read as they stand, and the plain product with the first slot conjugated by the only nontrivial involution the element carries.</p>
+<p>Both products are $\mathbb{R}$-bilinear, being built from the bilinear operations of the real vector space $\mathbb{H}$: the scalar and vector parts, the dot product and the cross product are all bilinear over $\mathbb{R}$.</p>
+<p><strong>Proposition (the two products separate the scalar and the vector part of the first factor).</strong> For all $\tilde p,\tilde q$,</p>
+<p>$$
+\tilde p\tilde q+\tilde p^{\natural}\tilde q=2p_0\,\tilde q , \qquad \tilde p\tilde q-\tilde p^{\natural}\tilde q=2\,\vec p\,\tilde q ,
+$$</p>
+<p>where $\vec p\tilde q$ is read as an element multiplying $\tilde q$, and the two products agree exactly when the vector part of the first factor annihilates the second,</p>
+<p>$$
+\tilde p^{\natural}\tilde q=\tilde p\tilde q \quad\Longleftrightarrow\quad \vec p\tilde q=0 .
+$$</p>
+<p><em>Proof.</em> The two rules differ only in the signs attached to $\vec p\cdot\vec q$, $\vec p\times\vec q$ and $q_0\vec p$, so adding them cancels those terms and leaves $2p_0q_0+2p_0\vec q=2p_0\tilde q$; subtracting them leaves $-2\vec p\cdot\vec q+2q_0\vec p+2\vec p\times\vec q$, which is $2\vec p\tilde q$ by the plain rule read with the vector part alone in the first slot. The agreement condition is the vanishing of the difference.</p>
+<p>The identities and the further relations they generate are <em>Relations Between the Two General Products</em>, below this article in this category.</p>
+<h2 id="the-multiplication-tables">The Multiplication Tables</h2>
+<p>The two products are determined by their values on the pairs of units, as every bilinear rule is. For the plain product the table is the table of the algebra,</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\tilde p\backslash\tilde q$</th>
+<th>$e_0$</th>
+<th>$e_1$</th>
+<th>$e_2$</th>
+<th>$e_3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_0$</td>
+<td>$e_0$</td>
+<td>$e_1$</td>
+<td>$e_2$</td>
+<td>$e_3$</td>
+</tr>
+<tr>
+<td>$e_1$</td>
+<td>$e_1$</td>
+<td>$-e_0$</td>
+<td>$e_3$</td>
+<td>$-e_2$</td>
+</tr>
+<tr>
+<td>$e_2$</td>
+<td>$e_2$</td>
+<td>$-e_3$</td>
+<td>$-e_0$</td>
+<td>$e_1$</td>
+</tr>
+<tr>
+<td>$e_3$</td>
+<td>$e_3$</td>
+<td>$e_2$</td>
+<td>$-e_1$</td>
+<td>$-e_0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>and for the quaternionic product it is the same table with the entries $e_i^{\natural}e_j$,</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\tilde p\backslash\tilde q$</th>
+<th>$e_0$</th>
+<th>$e_1$</th>
+<th>$e_2$</th>
+<th>$e_3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_0$</td>
+<td>$e_0$</td>
+<td>$e_1$</td>
+<td>$e_2$</td>
+<td>$e_3$</td>
+</tr>
+<tr>
+<td>$e_1$</td>
+<td>$-e_1$</td>
+<td>$e_0$</td>
+<td>$-e_3$</td>
+<td>$e_2$</td>
+</tr>
+<tr>
+<td>$e_2$</td>
+<td>$-e_2$</td>
+<td>$e_3$</td>
+<td>$e_0$</td>
+<td>$-e_1$</td>
+</tr>
+<tr>
+<td>$e_3$</td>
+<td>$-e_3$</td>
+<td>$-e_2$</td>
+<td>$e_1$</td>
+<td>$e_0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The two tables coincide on the first row and differ by a sign on every entry of the other three rows. The sign is the reflection of the vector part of the first factor, and it is the whole of the difference between the two products beyond the conjugation.</p>
+<p><strong>Proposition (the values of the two products).</strong> The plain product is the multiplication of the associative division algebra, its only nonzero idempotent is $e_0$ and it has no zero divisor. The quaternionic product has the left unit $e_0$ and no right unit, is not associative, and has the same two idempotents $0$ and $e_0$ and no zero divisor.</p>
+<p><em>Proof.</em> The plain product is the multiplication of $\mathbb{H}$, an associative division algebra with unit $e_0$; its only idempotents are $0$ and $e_0$ because $p(p-e_0)=0$ forces $p=0$ or $p=e_0$, and there is no zero divisor because every nonzero element is invertible. For the quaternionic product, $e_0^{\natural}\tilde q=e_0\tilde q=\tilde q$ while $\tilde q^{\natural}e_0=\tilde q^{\natural}\neq\tilde q$ for a non-real $\tilde q$, so $e_0$ is a left unit and not a right one; associativity fails on $\tilde p=\tilde q=\tilde r=e_1$, where $(\tilde p^{\natural}\tilde q)^{\natural}\tilde r=(e_1^{\natural}e_1)^{\natural}e_1=e_0^{\natural}e_1=e_1$ while $\tilde p^{\natural}(\tilde q^{\natural}\tilde r)=e_1^{\natural}(e_1^{\natural}e_1)=e_1^{\natural}e_0=-e_1$, and the two sides differ by the sign of $e_1$. The failure is measured by the associator $(\tilde p^{\natural}\tilde q)^{\natural}\tilde r-\tilde p^{\natural}(\tilde q^{\natural}\tilde r)=(\tilde q^{\natural}\tilde p-\tilde p^{\natural}\tilde q^{\natural})\tilde r$ of <em>The Two General Products and Operators</em>, below this article in this category. The idempotents of the quaternionic product are computed from $\tilde p^{\natural}\tilde p=|p|^2e_0$, which is real, so $\tilde p^{\natural}\tilde p=\tilde p$ forces $p\in\mathbb{R}$ and $p^2=p$, hence $p=0$ or $p=e_0$. A zero divisor would give $\tilde p^{\natural}\tilde q=0$ with both factors nonzero; taking the norm of $\tilde p^{\natural}\tilde q$ gives $|p|^2|q|^2=0$, so one of the two factors is zero.</p>
+<p>The associator of the quaternionic product and the rest of its laws are <em>Comparison Between the Two General Products</em> and <em>The Two General Products and Operators</em>, both below this article in this category.</p>
+<h2 id="why-exactly-two-products">Why Exactly Two Products</h2>
+<p>The two products are read from one construction: the plain product with the natural conjugation inserted in a slot. The first-slot choice gives the plain and the quaternionic families, $(\mathrm{id},\mathrm{id})$ and $({}^{\natural},\mathrm{id})$; the second-slot choice gives the same two products read with both arguments conjugated, because the base field $\mathbb{R}$ carries no involution other than the identity, so the conjugation in the two slots is the same map ${}^{\natural}$.</p>
+<p>$$
+(\mathrm{id},{}^{\natural})\ \text{is}\ (\mathrm{id},\mathrm{id})\ \text{read at}\ (\tilde p^{\natural},\tilde q^{\natural}) , \qquad
+({}^{\natural},{}^{\natural})\ \text{is}\ ({}^{\natural},\mathrm{id})\ \text{read at}\ (\tilde p^{\natural},\tilde q^{\natural}) .
+$$</p>
+<p>The count is developed in <em>The Two General Products and the Reason There Are Only Two</em>, below this article in this category.</p>
+<h2 id="the-structures-the-two-products-define">The Structures the Two Products Define</h2>
+<p>The two products define the two structures that the whole operational vocabulary of the chapter describes, and no third structure is carried by a general product of $\mathbb{H}$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>product</th>
+<th>structure</th>
+<th>commutative</th>
+<th>associative</th>
+<th>unit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde p\tilde q$</td>
+<td>associative division algebra over $\mathbb{R}$</td>
+<td>no</td>
+<td>yes</td>
+<td>two-sided, $e_0$</td>
+</tr>
+<tr>
+<td>$\tilde p^{\natural}\tilde q$</td>
+<td>quaternionic algebra over $\mathbb{R}$</td>
+<td>no</td>
+<td>no</td>
+<td>left only, $e_0$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The first is the <strong>algebra</strong> $\mathbb{H}$ itself, the quaternion algebra with its multiplication: associative, with the two-sided unit $e_0$, non-commutative, and a division algebra, every nonzero element being invertible. The second is the <strong>quaternionic algebra</strong>, the space with the product of the first slot conjugated: non-associative, non-commutative, with the unit on the left alone. The two have the same underlying real vector space, the same two idempotents and the same absence of zero divisors, and they are told apart by associativity and by the side on which the unit acts. The two structures are read again, with the four structures of the two halves of each, in <em>The Algebraic Structures over the Quaternion $\mathbb{R}$ Space</em>, below this article in this category.</p>
+<h2 id="summary">Summary</h2>
+<p>The quaternion space carries two general products, defined on the same coordinates: the general plain bilinear product $\tilde p\tilde q=(p_0q_0-\vec p\cdot\vec q)+p_0\vec q+q_0\vec p+\vec p\times\vec q$, the multiplication of the algebra, and the general quaternionic bilinear product $\tilde p^{\natural}\tilde q=(p_0q_0+\vec p\cdot\vec q)+p_0\vec q-q_0\vec p-\vec p\times\vec q$, the same rule with the first factor conjugated by ${}^{\natural}$. Both are $\mathbb{R}$-bilinear, and their sum and difference separate the scalar part of the first factor from its vector part, $\tilde p\tilde q+\tilde p^{\natural}\tilde q=2p_0\tilde q$ and $\tilde p\tilde q-\tilde p^{\natural}\tilde q=2\vec p\tilde q$. The two multiplication tables coincide on the first row alone and differ by a sign on every entry of the other three rows.</p>
+<p>The plain product makes $\mathbb{H}$ an associative division algebra with the two-sided unit $e_0$; the quaternionic product makes $\mathbb{H}$ a left-unital, non-associative quaternionic algebra. The two have the same two idempotents $0$ and $e_0$ and no zero divisor.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{H}$</td>
+<td>the real quaternion algebra, basis $e_0,e_1,e_2,e_3$</td>
+</tr>
+<tr>
+<td>$\tilde q=q_0e_0+\vec q$</td>
+<td>an element, scalar part $q_0$, vector part $\vec q$</td>
+</tr>
+<tr>
+<td>$\tilde q^{\natural}=q_0e_0-\vec q$</td>
+<td>the quaternion conjugation</td>
+</tr>
+<tr>
+<td>$\tilde p\tilde q=(p_0q_0-\vec p\cdot\vec q)+p_0\vec q+q_0\vec p+\vec p\times\vec q$</td>
+<td>the general plain bilinear product</td>
+</tr>
+<tr>
+<td>$\tilde p^{\natural}\tilde q=(p_0q_0+\vec p\cdot\vec q)+p_0\vec q-q_0\vec p-\vec p\times\vec q$</td>
+<td>the general quaternionic bilinear product</td>
+</tr>
+<tr>
+<td>$\tilde p\tilde q+\tilde p^{\natural}\tilde q=2p_0\tilde q$</td>
+<td>the separation of the scalar part</td>
+</tr>
+<tr>
+<td>$\tilde p\tilde q-\tilde p^{\natural}\tilde q=2\vec p\tilde q$</td>
+<td>the separation of the vector part</td>
+</tr>
+<tr>
+<td>$\tilde p^{\natural}\tilde q=\tilde p\tilde q \iff \vec p\tilde q=0$</td>
+<td>the agreement condition</td>
+</tr>
+<tr>
+<td>$e_0$</td>
+<td>the two-sided unit of the plain product, the left unit of the quaternionic one</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the quaternion product, its vector reading and the products of the companion real algebras.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd ed. 2001), for the bilinear products of the division algebra $\mathbb{H}$ and the place of the quaternions among the Clifford algebras.</li>
+<li>Israel Nathan Herstein, <em>Topics in Algebra</em> (Wiley, 2nd ed. 1975), for associativity, units and the division property in a non-commutative ring.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, Graduate Texts in Mathematics 88, 1982), for algebras over a field, their general products and the laws they may carry.</li>
+<li>T. Y. Lam, <em>A First Course in Noncommutative Rings</em> (Springer, Graduate Texts in Mathematics 131, 2nd ed. 2001), for the reading of the quaternions as a division ring and the collapse of the general products over a base with a trivial involution.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

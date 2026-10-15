@@ -261,12 +261,12 @@ N\,K_N=\delta\, I_2 ,
 $$</p>
 <p>which is the fundamental solution of the quaternionic Maxwell operator recorded by the source, expressed here in the book's arrangement: it is built from the hyperholomorphic Cauchy kernels by the two rotations $A_i,B_i$ of $(15)$, and — because all the factors except $N$ are scalar — the same kernel serves the left and the right theories. From it the two integral operators of the Maxwell theory are formed in the usual way,</p>
 <p>$$
-\mathcal{K}_N[f](x)=-\int_\Gamma K_N(x-y)\,\vec n(y)\,f(y)\,d\Gamma_y ,
+\mathcal{K}_N[f](x)=-\int_\Gamma K_N(x-y)\,\hat u(y)\,f(y)\,d\Gamma_y ,
 \qquad
 \mathcal{T}_N[f](x)=\int_\Omega K_N(x-y)\,f(y)\,dy ,
 \tag{21}
 $$</p>
-<p>the <strong>Cauchy-type</strong> and <strong>Teodorescu-type</strong> operators associated with Maxwell's equations; the defining difference from the operators $\mathcal{K}_\alpha,\mathcal{T}_\alpha$ of the hyperholomorphic theory of the sibling articles is only the replacement of the kernel $\mathcal K_\alpha$ by the Maxwell kernel $K_N$, and the boundary integrals are taken over the Liapunov boundary $\Gamma=\partial\Omega$ of a bounded domain with outward normal $\vec n$. Three theorems then hold, the analogues of the three of the hyperholomorphic theory and proved from them by the same rotation.</p>
+<p>the <strong>Cauchy-type</strong> and <strong>Teodorescu-type</strong> operators associated with Maxwell's equations; the defining difference from the operators $\mathcal{K}_\alpha,\mathcal{T}_\alpha$ of the hyperholomorphic theory of the sibling articles is only the replacement of the kernel $\mathcal K_\alpha$ by the Maxwell kernel $K_N$, and the boundary integrals are taken over the Liapunov boundary $\Gamma=\partial\Omega$ of a bounded domain with outward normal $\hat u$. Three theorems then hold, the analogues of the three of the hyperholomorphic theory and proved from them by the same rotation.</p>
 <p><strong>Theorem (Borel–Pompeiu for the Maxwell operator).</strong> For a pair $f\in C^1(\Omega;\mathbb{B}^2)\cap C(\bar\Omega;\mathbb{B}^2)$,</p>
 <p>$$
 f=\mathcal{K}_N[f]+\mathcal{T}_N\,N[f]
@@ -284,9 +284,9 @@ $$</p>
 <h2 id="the-integral-representations-of-the-field">The Integral Representations of the Field</h2>
 <p>Translated back to the fields, the Cauchy formula $(23)$ becomes an integral representation, and its vector form is a classical one. The Cauchy-type operator is the boundary integral of the field and the normal against the Maxwell kernel, and the Teodorescu term is the volume integral of the current; written out in vectors and separated into the electric and magnetic parts, the boundary part of the representation is</p>
 <p>$$
-\vec E(x)=\int_\Gamma\Bigl\{\langle\mathrm{grad}_x\Theta_\alpha(x-y),\vec n(y)\rangle\tilde{\vec E}(y)
-+\bigl[[\mathrm{grad}_x\Theta_\alpha(x-y),\vec n(y)],\tilde{\vec E}(y)\bigr]
-+i\omega\,\Theta_\alpha(x-y)[\vec n(y),\tilde{\vec H}(y)]\Bigr\}d\Gamma_y
+\vec E(x)=\int_\Gamma\Bigl\{\langle\mathrm{grad}_x\Theta_\alpha(x-y),\hat u(y)\rangle\tilde{\vec E}(y)
++\bigl[[\mathrm{grad}_x\Theta_\alpha(x-y),\hat u(y)],\tilde{\vec E}(y)\bigr]
++i\omega\,\Theta_\alpha(x-y)[\hat u(y),\tilde{\vec H}(y)]\Bigr\}d\Gamma_y
 +\text{source terms},
 \tag{24}
 $$</p>
@@ -418,7 +418,7 @@ $$</p>
 </tr>
 <tr>
 <td>$\Omega,\Gamma=\partial\Omega$</td>
-<td>Bounded domain and its Liapunov boundary; $\vec n$ the outward normal</td>
+<td>Bounded domain and its Liapunov boundary; $\hat u$ the outward normal</td>
 </tr>
 <tr>
 <td>$\tilde{\vec e},\tilde{\vec h}$</td>

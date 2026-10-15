@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction to the Quaternioid Algebraic Structures — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="introduction-to-the-quaternioid-algebraic-structures"><strong>Introduction to the Quaternioid Algebraic Structures</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The real quaternions $\mathbb{H}$ are a division algebra, and that algebra is the subject of <em>Quaternion Algebra</em> and <em>Introduction to the General Plain Algebra of Quaternions</em>. The same four-dimensional real carrier, with its single involution ${}^{\natural}$, carries five further algebras beside the plain one: the <strong>general quaternionic algebra</strong>, the two symmetric algebras built from the slot exchange, and the two antisymmetric ones. This category gathers those six structures, and this article states what they are and how they are counted.</p>
+<p>The counting principle is the one of the whole synthetic part of the corpus: from one product and one involution the space generates its companions by the two operations that are always available, the exchange of the two slots and the adjunction of the involution to a slot. For $\mathbb{H}$ there are <strong>two general products</strong> and, under the slot exchange, <strong>six products</strong>; the six products are the multiplications of six algebras on the same carrier. That the count stops at two general products, and not four, is a feature of the quaternion layer: the base field is $\mathbb{R}$, so there is only one involution ${}^{\natural}$ and no coefficient conjugation, and the two slots offer the two settings $(\mathrm{id},\mathrm{id})$ and $({}^{\natural},\mathrm{id})$ alone.</p>
+<p><strong>Conventions.</strong> $\tilde p = p_0e_0+\vec p = \sum_{\mu=0}^{3}p_\mu e_\mu$ is a general quaternion, with $p_\mu\in\mathbb{R}$ and $\vec p = \sum_{k=1}^{3}p_ke_k$ the vector part; $e_0$ is the unit; ${}^{\natural}$ is the quaternion conjugation, $e_k^{\natural} = -e_k$ on the imaginary units, $e_0^{\natural} = e_0$; $(\vec p,\vec q) = \sum_k p_kq_k$ and $\vec p\times\vec q$ are the real dot and cross products. The plain bilinear product is written $\tilde p\tilde q$, the general quaternionic product $\tilde p^{\natural}\tilde q$. The tilde and the mark ${}^{\natural}$ are those of <em>Conventions in Mathematics</em>.</p>
+<h2 id="the-two-general-products">The Two General Products</h2>
+<p><strong>Definition.</strong> The <strong>two general products</strong> of the quaternion space are the <strong>general plain bilinear</strong> product and the <strong>general quaternionic bilinear</strong> product,</p>
+<p>$$
+\tilde p\tilde q = \bigl(p_0q_0 - (\vec p,\vec q)\bigr) + p_0\vec q + q_0\vec p + \vec p\times\vec q, \qquad
+\tilde p^{\natural}\tilde q = \bigl(p_0q_0 + (\vec p,\vec q)\bigr) + p_0\vec q - q_0\vec p - \vec p\times\vec q .
+$$</p>
+<p><strong>Theorem.</strong> Both products are $\mathbb{R}$-bilinear, and the second is the first with the first factor conjugated by ${}^{\natural}$; their sum and difference separate the scalar part of the first factor from its vector part,</p>
+<p>$$
+\tilde p\tilde q + \tilde p^{\natural}\tilde q = 2p_0\tilde q, \qquad\qquad \tilde p\tilde q - \tilde p^{\natural}\tilde q = 2\vec p\,\tilde q .
+$$</p>
+<p>The plain product makes $\mathbb{H}$ an associative division algebra with the two-sided unit $e_0$; the quaternionic product makes it a left-unital, non-associative algebra. The two have the same idempotents, $0$ and $e_0$, and neither has a zero divisor.</p>
+<p><strong>Proof.</strong> The two coordinate formulas are read from the multiplication table of $\mathbb{H}$; the second is the first with $\tilde p$ replaced by $\tilde p^{\natural} = p_0e_0-\vec p$, which flips the signs of $(\vec p,\vec q)$, of $q_0\vec p$ and of $\vec p\times\vec q$. Adding and subtracting the two displays kills the vector terms of the first factor, leaving $2p_0\tilde q$ and $2\vec p\tilde q$. Associativity, the unit and the division property of the plain product are <em>Introduction to the General Plain Algebra of Quaternions</em>; the left unit of the quaternionic product is $e_0$, since $e_0^{\natural}\tilde q = \tilde q$, and it is not a right unit, since $\tilde q^{\natural}e_0 = \tilde q^{\natural}$. The two products and their property table are <em>The Two General Products of the Quaternioid $\mathbb{R}$ Space</em> and <em>Relations Between the Two General Products</em>.</p>
+<p><strong>Remark (why only two).</strong> A general product is $\tilde p^{\,a}\tilde q^{\,b}$ with $a,b\in\{\mathrm{id},{}^{\natural}\}$ in the two slots, but the base field is $\mathbb{R}$: there is no coefficient conjugation, so the second slot offers no independent choice, and the two settings $({}^{\natural},{}^{\natural})$ and $(\mathrm{id},{}^{\natural})$ coincide with the two already listed after absorbing ${}^{\natural}$ into the product's argument. The count is <em>The Two General Products and the Reason There Are Only Two</em>.</p>
+<h2 id="the-six-products-and-the-six-structures">The Six Products and the Six Structures</h2>
+<p><strong>Definition.</strong> The <strong>six products</strong> are the two general products together with their four halves under the slot exchange:</p>
+<p>$$
+\tilde p\bullet\tilde q = \bigl(p_0q_0 - (\vec p,\vec q)\bigr) + p_0\vec q + q_0\vec p, \qquad N(\tilde p,\tilde q)e_0 = \bigl(p_0q_0 + (\vec p,\vec q)\bigr)e_0,
+$$</p>
+<p>$$
+\tilde p\wedge\tilde q = \vec p\times\vec q, \qquad\qquad \tilde p\wedge^{\natural}\tilde q = p_0\vec q - q_0\vec p - \vec p\times\vec q,
+$$</p>
+<p>the <strong>Jordan product</strong>, the <strong>quaternion form as a product</strong>, the <strong>cross product</strong> and the <strong>quaternionic cross product</strong>. The reconstruction is</p>
+<p>$$
+\tilde p\tilde q = \tilde p\bullet\tilde q + \tilde p\wedge\tilde q, \qquad\qquad \tilde p^{\natural}\tilde q = N(\tilde p,\tilde q)e_0 + \tilde p\wedge^{\natural}\tilde q .
+$$</p>
+<p><strong>Proof.</strong> The symmetrisation $\tfrac12(\tilde p\tilde q+\tilde q\tilde p)$ of the plain product keeps the symmetric terms and the antisymmetrisation $\tfrac12(\tilde p\tilde q-\tilde q\tilde p)$ keeps $\vec p\times\vec q$; the same split on the quaternionic product gives the scalar form and the quaternionic cross product. The two reconstructions are the definitions read together, and at the two equal arguments the antisymmetric halves vanish, so $\tilde p\bullet\tilde p = \tilde p^2$ and $\tilde p^{\natural}\tilde p = N(\tilde p)e_0$. The six products are <em>The 6 Products of the Quaternioid Real Space</em>.</p>
+<p><strong>Definition.</strong> The <strong>six algebraic structures</strong> on the common carrier are the algebras of the six products:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Structure</th>
+<th>Product</th>
+<th>Nature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>general plain algebra (GPA)</td>
+<td>$\tilde p\tilde q$</td>
+<td>associative unital division algebra</td>
+</tr>
+<tr>
+<td>general quaternionic algebra (GQA)</td>
+<td>$\tilde p^{\natural}\tilde q$</td>
+<td>non-associative, left-unital</td>
+</tr>
+<tr>
+<td>symmetric plain algebra (SPA)</td>
+<td>$\tilde p\bullet\tilde q$</td>
+<td>commutative Jordan algebra</td>
+</tr>
+<tr>
+<td>symmetric quaternionic algebra (SQA)</td>
+<td>$N(\tilde p,\tilde q)e_0$</td>
+<td>commutative scalar-valued rule</td>
+</tr>
+<tr>
+<td>antisymmetric plain algebra (APA)</td>
+<td>$\tilde p\wedge\tilde q$</td>
+<td>Lie algebra</td>
+</tr>
+<tr>
+<td>antisymmetric quaternionic algebra (AQA)</td>
+<td>$\tilde p\wedge^{\natural}\tilde q$</td>
+<td>alternating, non-Lie rule</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Theorem (the two laws of the table).</strong> Among the six, <strong>the general plain algebra is the only associative one</strong> and <strong>the antisymmetric plain algebra is the only one satisfying the Jacobi identity</strong>; the other four fail the corresponding law. The symmetric products are commutative, flexible and power-associative; the antisymmetric products are alternating, flexible and power-associative, with cubes zero; the general quaternionic product has a left unit alone and fails associativity, commutativity, flexibility and power-associativity.</p>
+<p><strong>Proof.</strong> Associativity of GPA is that of $\mathbb{H}$; the associator of GQA, the failure of the Jacobi identity for AQA and the laws of the remaining products are computed in <em>The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space</em>, from which the table is read; the algebraicity of the classification is <em>Algebras: A General Introduction</em> and <em>Symmetric Algebras</em> and <em>Anti-symmetric Algebras</em>.</p>
+<h2 id="the-two-forms-and-the-two-algebraic-norms">The Two Forms and the Two Algebraic Norms</h2>
+<p><strong>Theorem.</strong> The two general products carry <strong>two bilinear forms</strong>, the plain form and the quaternion form,</p>
+<p>$$
+B(\tilde p,\tilde q) = \mathrm{Sc}(\tilde p\tilde q) = p_0q_0 - (\vec p,\vec q), \qquad N(\tilde p,\tilde q) = \mathrm{Sc}(\tilde p^{\natural}\tilde q) = p_0q_0 + (\vec p,\vec q),
+$$</p>
+<p>symmetric and nondegenerate, of Gram matrices $\operatorname{diag}(1,-1,-1,-1)$ and $\mathrm I_4$ in the basis $e_0,e_1,e_2,e_3$, of signatures $(1,3)$ and $(4,0)$, differing by twice the dot product of the vector parts.</p>
+<p><strong>Proof.</strong> The scalar part of a product of basis elements is $\mathrm{Sc}(e_\mu e_\nu) = \varepsilon_\mu\delta_{\mu\nu}$ with $\varepsilon = (1,-1,-1,-1)$, and $\mathrm{Sc}(e_\mu^{\natural}e_\nu) = \delta_{\mu\nu}$; the two coordinate formulas follow by bilinearity, the Gram matrices are read from them, and the signatures are the counts of positive and negative diagonal entries. The forms are <em>The 2 Forms over the Quaternioid $\mathbb{R}$ Space</em>.</p>
+<p><strong>Theorem.</strong> The two algebraic norms are the values at the two equal arguments, $N_P(\tilde p) = \tilde p^2$ and $N_Q(\tilde p) = \tilde p^{\natural}\tilde p = \lvert\tilde p\rvert^2e_0$; the first is indefinite and <strong>not</strong> multiplicative, the second is positive definite, zero only at the origin, and multiplicative, $N_Q(\tilde p\tilde q) = N_Q(\tilde p)N_Q(\tilde q)$. The criterion of invertibility is the second's: $\tilde p$ is invertible exactly when $N_Q(\tilde p)\neq0$, with $\tilde p^{-1} = \tilde p^{\natural}/\lvert\tilde p\rvert^2$.</p>
+<p><strong>Proof.</strong> $N_P(\tilde p) = (p_0^2-\lvert\vec p\rvert^2)e_0+2p_0\vec p$ takes $e_0$ at $e_0$ and $-e_0$ at $e_1$, hence is indefinite; $N_P(e_1e_2) = N_P(e_3) = -e_0$ against $N_P(e_1)N_P(e_2) = e_0$, so it is not multiplicative. $N_Q(\tilde p) = (p_0^2+\lvert\vec p\rvert^2)e_0$ is $\lvert\tilde p\rvert^2e_0$ with $\lvert\tilde p\rvert^2>0$ for $\tilde p\neq0$, and $N_Q(\tilde p\tilde q) = \lvert\tilde p\tilde q\rvert^2 e_0 = \lvert\tilde p\rvert^2\lvert\tilde q\rvert^2 e_0$ by multiplicativity of the quaternion norm. The inverse formula is $(\tilde p^{\natural}/N_Q(\tilde p))$, which is the division property of $\mathbb{H}$. The two algebraic norms are <em>The 2 Algebraic Norms over the Quaternioid $\mathbb{R}$ Space</em>.</p>
+<p><strong>Corollary.</strong> The quaternion layer is <strong>not</strong> the biquaternion layer collapsed: for $\mathbb{H}$ the two forms are $B$ and $N$ and the two algebraic norms are $N_P$ and $N_Q$, whereas the biquaternion $\mathbb{C}$-space carries four forms and four algebraic norms, one for each setting of the two slots. The reason is the base field: over $\mathbb{C}$ the coefficient conjugation is a second involution and doubles the count.</p>
+<h2 id="the-general-and-the-higher-structures">The General and the Higher Structures</h2>
+<p><strong>Remark (the $\mathbb{C}$-readings).</strong> The same carrier read over $\mathbb{C}$ is the biquaternions $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$; the passage from the six structures over $\mathbb{R}$ to the twelve over $\mathbb{C}$ is the complexification, and it is <em>The Realification and the Effect of the Change of Scalars</em> and the <em>Biquaternionoid Algebraic Structures</em> category. This category keeps the $\mathbb{R}$-base clean: the structures over $\mathbb{R}$ are the $\mathrm{GPA},\dots,\mathrm{AQA}$ of the table above, and their $\mathbb{C}$-companions belong to the biquaternion layer.</p>
+<p><strong>Remark (the ternary product).</strong> The general quaternionic product $\tilde p^{\natural}\tilde q$ is non-associative, and its associator is not confined as in the complex case: the ternary product of the quaternionic product has a non-vanishing associator defect, treated in <em>The Associator and the Ternary Product of the Quaternionic Product</em>. This is the non-commutative counterpart of the flat ternary product of the complexoid, and it is the reason the correction terms of the Jordan triple identity are essential here.</p>
+<h2 id="summary">Summary</h2>
+<p>The quaternion space $\mathbb{H}$, of real dimension four and with the single involution ${}^{\natural}$, carries two general products — the plain bilinear $\tilde p\tilde q$ and the quaternionic bilinear $\tilde p^{\natural}\tilde q$ — and, under the exchange of the two slots, six products and six algebraic structures on the same carrier. The count stops at two general products because the base field is $\mathbb{R}$: there is one involution and no coefficient conjugation, so the second slot offers no independent choice. The six structures are the general plain algebra (associative, unital, division), the general quaternionic algebra (left-unital, non-associative), the symmetric plain and symmetric quaternionic algebras, and the antisymmetric plain and antisymmetric quaternionic algebras; the general plain algebra is the only associative one, and the antisymmetric plain algebra the only one satisfying Jacobi.</p>
+<p>The two general products carry two forms, $B$ of Gram $\operatorname{diag}(1,-1,-1,-1)$ and signature $(1,3)$, and $N$ of Gram $\mathrm I_4$ and signature $(4,0)$, and two algebraic norms $N_P(\tilde p) = \tilde p^2$, indefinite and not multiplicative, and $N_Q(\tilde p) = \lvert\tilde p\rvert^2e_0$, definite and multiplicative, the latter being the criterion of invertibility. The complexification of the carrier is the biquaternions, whose four forms and four algebraic norms double the two here; that doubling is the content of the biquaternion layer, not of this one.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Structure</th>
+<th>Product</th>
+<th>Form</th>
+<th>Algebraic norm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GPA</td>
+<td>$\tilde p\tilde q$</td>
+<td>$B(\tilde p,\tilde q) = p_0q_0-(\vec p,\vec q)$</td>
+<td>$N_P(\tilde p) = \tilde p^2$, indefinite</td>
+</tr>
+<tr>
+<td>GQA</td>
+<td>$\tilde p^{\natural}\tilde q$</td>
+<td>$N(\tilde p,\tilde q) = p_0q_0+(\vec p,\vec q)$</td>
+<td>$N_Q(\tilde p) = \lvert\tilde p\rvert^2e_0$, definite</td>
+</tr>
+<tr>
+<td>SPA</td>
+<td>$\tilde p\bullet\tilde q$</td>
+<td>$B$</td>
+<td>— (indefinite half)</td>
+</tr>
+<tr>
+<td>SQA</td>
+<td>$N(\tilde p,\tilde q)e_0$</td>
+<td>$N$</td>
+<td>$N$ itself</td>
+</tr>
+<tr>
+<td>APA</td>
+<td>$\tilde p\wedge\tilde q$</td>
+<td>vanishing (antisymmetric)</td>
+<td>vanishing</td>
+</tr>
+<tr>
+<td>AQA</td>
+<td>$\tilde p\wedge^{\natural}\tilde q$</td>
+<td>vanishing (antisymmetric)</td>
+<td>vanishing</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde p = p_0e_0+\vec p$</td>
+<td>general quaternion, $p_\mu\in\mathbb{R}$</td>
+</tr>
+<tr>
+<td>$\tilde p^{\natural}$</td>
+<td>quaternion conjugation, $e_k^{\natural} = -e_k$</td>
+</tr>
+<tr>
+<td>$\tilde p\tilde q$, $\tilde p^{\natural}\tilde q$</td>
+<td>the two general products</td>
+</tr>
+<tr>
+<td>$\tilde p\bullet\tilde q$, $N(\tilde p,\tilde q)e_0$, $\tilde p\wedge\tilde q$, $\tilde p\wedge^{\natural}\tilde q$</td>
+<td>the four halves</td>
+</tr>
+<tr>
+<td>GPA, GQA, SPA, SQA, APA, AQA</td>
+<td>the six structures</td>
+</tr>
+<tr>
+<td>$B(\tilde p,\tilde q)$, $N(\tilde p,\tilde q)$</td>
+<td>the plain form and the quaternion form</td>
+</tr>
+<tr>
+<td>$N_P(\tilde p)$, $N_Q(\tilde p)$</td>
+<td>the plain and quaternion algebraic norms</td>
+</tr>
+<tr>
+<td>$\operatorname{diag}(1,-1,-1,-1)$, $\mathrm I_4$</td>
+<td>Gram matrices of $B$ and $N$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Introduction to the General Plain Algebra of Quaternions</em> (<code>articles_maths/introduction-to-the-quaternion-algebra.md</code>), for the algebra $\mathbb{H}$ itself, its basis rules, its centre and its presentation.</li>
+<li><em>The Two General Products of the Quaternioid $\mathbb{R}$ Space</em> (<code>articles_maths/the-two-general-products-of-the-quaternioid-r-space.md</code>), <em>Relations Between the Two General Products</em> (<code>articles_maths/relations-between-the-two-general-products.md</code>) and <em>Comparison Between the Two General Products</em> (<code>articles_maths/comparison-between-the-two-general-products.md</code>), for the two products and their comparison.</li>
+<li><em>The 6 Products of the Quaternioid Real Space</em> (<code>articles_maths/the-6-products-of-the-quaternioid-real-space.md</code>) and <em>The Algebraic Structures over the Quaternioid $\mathbb{R}$ Space</em> (<code>articles_maths/the-algebraic-structures-over-the-quaternioid-r-space.md</code>), for the six products and the six named structures.</li>
+<li><em>The 2 Forms over the Quaternioid $\mathbb{R}$ Space</em> (<code>articles_maths/the-2-forms-over-the-quaternioid-r-space.md</code>) and <em>The 2 Algebraic Norms over the Quaternioid $\mathbb{R}$ Space</em> (<code>articles_maths/the-2-algebraic-norms-over-the-quaternioid-r-space.md</code>), for the two forms and the two algebraic norms.</li>
+<li><em>The Associator and the Ternary Product of the Quaternionic Product</em> (<code>articles_maths/the-associator-and-the-ternary-product-of-the-quaternionic-product-of-quaternioid.md</code>), for the non-commutative ternary product.</li>
+<li><em>Introduction to the General Quaternionic Algebra of Quaternions</em> (<code>articles_maths/introduction-to-the-general-quaternionic-algebra-of-quaternioid.md</code>), <em>Introduction to the Symmetric Plain Algebra of Quaternions</em> (<code>articles_maths/introduction-to-the-symmetric-plain-algebra-of-quaternioid.md</code>) and their companions, for the individual structures.</li>
+<li><em>Algebras: A General Introduction</em>, <em>Symmetric Algebras</em>, <em>Anti-symmetric Algebras</em> and <em>Sesqualgebras</em>, for the general theory of the algebras the six structures instantiate.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Annihilators of the Biquaternion Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="annihilators-of-the-biquaternion-algebra"><strong>Annihilators of the Biquaternion Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The zero divisor of a product is a property of one element alone: it says that <em>some</em> nonzero
+partner exists that the element kills. The annihilator says <em>which</em> partners those are, and it is
+the finer object. It is the set of elements killed by a fixed element,
+$$
+A_\star(\tilde Q)=\{\tilde X:\tilde Q\star\tilde X=0\},\qquad
+B_\star(\tilde Q)=\{\tilde X:\tilde X\star\tilde Q=0\},
+$$
+the left and the right annihilator (<em>Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>,
+§<em>The Zero Divisor and the Annihilator</em>). When the product is carried by a multiplication operator
+the annihilator is the kernel of that operator, so it is a linear subspace.</p>
+<p>The block of this article is the <strong>general plain multiplication</strong>, the plain product of the
+biquaternion algebra,
+$$
+\tilde P\star\tilde Q=\tilde P\tilde Q
+=\bigl[P_0Q_0-(\vec P,\vec Q)\bigr]+P_0\vec Q+Q_0\vec P+\vec P\times\vec Q,
+$$
+the operation of the twelve (<em>Introduction to the Biquaternion Algebra of
+Biquaternions</em>). It is associative, and the algebra is the complexification of the quaternion
+algebra, isomorphic to the matrix algebra $M_2(\mathbb{C})$. Its zero divisors are the elements of
+the cone $C(\tilde P)=0$, and a nonzero element of the cone is a rank-one matrix (<em>Zero Divisors of
+the Biquaternion Algebra</em>, above this article in this category). The annihilator is the kernel of
+the corresponding multiplication: it is $\{0\}$ off the cone and a complex plane on the cone, and
+the two sides carry two <strong>distinct</strong> planes. The article owns that reading, the two operators with
+their ranks, and the shape of the annihilator on the remarkable subspaces; the zero-divisor set is
+the cited article's.</p>
+<p><strong>The results.</strong> The annihilator of an element is the set of partners that it kills. For the general plain product the two multiplication operators have trace $4P_0$ and determinant $C(\tilde P)^{2}$; both annihilators are trivial off the cone, and each is a complex plane on the cone. The two planes are distinct, and they share the line $\mathbb{C}\tilde Q^{\natural}$.</p>
+<h2 id="the-annihilator-of-a-product">The Annihilator of a Product</h2>
+<p><strong>The annihilator of an element is the set of partners that it kills; the left annihilator is the kernel of the left multiplication and the right annihilator is the kernel of the right multiplication, and both are nonzero exactly when the element is a zero divisor of the corresponding side.</strong></p>
+<p><strong>Definition (annihilator).</strong> Let $\star$ be a product on $\mathbb{B}$ and let
+$\tilde Q\in\mathbb{B}$. The <strong>left annihilator</strong> and the <strong>right annihilator</strong> of $\tilde Q$ in
+$\star$ are
+$$
+A_\star(\tilde Q)=\{\tilde X:\tilde Q\star\tilde X=0\},\qquad
+B_\star(\tilde Q)=\{\tilde X:\tilde X\star\tilde Q=0\}.
+$$
+They are the kernels of the left and the right multiplication, and they are nonzero exactly when
+$\tilde Q$ is a zero divisor of the corresponding side.</p>
+<p>Throughout this article the product is the <strong>general plain multiplication</strong> $\star$, and
+unqualified, <em>annihilator</em> means the annihilator of $\star$. The two one-sided multiplications are
+the operators
+$$
+L_{\tilde P}\tilde X=\tilde P\tilde X,\qquad R_{\tilde P}\tilde X=\tilde X\tilde P,
+$$
+the left and the right multiplication of the plain algebra, and the block is the parent of the
+other eleven: it is the only one that is associative, and its annihilators are the model for the
+two-sided reading. The block carries <strong>no</strong> involution that identifies the sides, so the two
+annihilators of an element are generally distinct; the sibling blocks <em>Annihilators of the General
+Quaternionic Algebra</em>, <em>Annihilators of the General Plain Sesqualgebra</em> and <em>Annihilators of the
+General Quaternionic Sesqualgebra</em> each have an involution that modifies the reading.</p>
+<h2 id="the-multiplication-operators-and-their-ranks">The Multiplication Operators and Their Ranks</h2>
+<p><strong>Both multiplication operators have trace $4P_0$ and determinant $C(\tilde P)^{2}$; they are invertible off the cone, and on the cone each is of rank two with a kernel of complex dimension two.</strong></p>
+<p><strong>Proposition (the operators and their determinants).</strong> In the basis $e_0,e_1,e_2,e_3$ the
+operators $L_{\tilde P}$ and $R_{\tilde P}$ of an element $\tilde P=P_0e_0+\vec P$ have trace
+$4P_0$ each and determinant
+$$
+\det L_{\tilde P}=\det R_{\tilde P}=C(\tilde P)^{2},\qquad
+C(\tilde P)=\sum_{\mu=0}^{3}P_\mu^{2}.
+$$</p>
+<p><em>Proof.</em> The matrix of $L_{\tilde P}$ is the left multiplication matrix of the quaternion
+$\tilde P$, of determinant the square of the quaternion norm $C(\tilde P)$ and trace $4P_0$; the
+matrix of $R_{\tilde P}$ is the right multiplication matrix, of the same determinant and trace
+because it is the transposed-conjugate of the first on the four quaternion units.</p>
+<p><strong>Corollary (the rank and the annihilator).</strong> The ranks of the two operators and the two
+annihilators of $\tilde P$ are</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\tilde P$</th>
+<th>$C(\tilde P)$</th>
+<th>$\operatorname{rank}L_{\tilde P},\operatorname{rank}R_{\tilde P}$</th>
+<th>$\dim A_\star(\tilde P),\dim B_\star(\tilde P)$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$4$</td>
+</tr>
+<tr>
+<td>$\tilde P\neq0$, $C(\tilde P)\neq0$</td>
+<td>$\neq0$</td>
+<td>$4$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$\tilde P\neq0$, $C(\tilde P)=0$</td>
+<td>$0$</td>
+<td>$2$</td>
+<td>$2$</td>
+</tr>
+</tbody>
+</table></div>
+<p><em>Proof.</em> The determinant $C(\tilde P)^{2}$ is nonzero exactly when $C(\tilde P)\neq0$, and then
+both operators are invertible and both annihilators are $\{0\}$. When $C(\tilde P)=0$ the nonzero
+element $\tilde P$ is a rank-one matrix of $M_2(\mathbb{C})$, and the left and the right
+multiplication by a rank-one matrix have rank two as operators on the four-dimensional matrix
+space; the kernels are therefore of complex dimension two. The origin gives the zero operator.</p>
+<h2 id="the-annihilator-of-an-element">The Annihilator of an Element</h2>
+<p><strong>Off the cone both annihilators are $\{0\}$; on the cone each is a complex plane containing $\tilde Q^{\natural}$; and on the cone the two planes are distinct, sharing only the line $\mathbb{C}\tilde Q^{\natural}$.</strong></p>
+<p><strong>Theorem (the dimension of the annihilators).</strong> Let $\tilde Q\in\mathbb{B}$.</p>
+<ul>
+<li>If $\tilde Q$ is a unit of the plain product, $C(\tilde Q)\neq0$, then
+$A_\star(\tilde Q)=B_\star(\tilde Q)=\{0\}$.</li>
+<li>If $\tilde Q\neq0$ is a zero divisor, $C(\tilde Q)=0$, then $A_\star(\tilde Q)$ and
+$B_\star(\tilde Q)$ are each of complex dimension two, and each contains $\tilde Q^{\natural}$.</li>
+</ul>
+<p><em>Proof.</em> The first clause is the rank table. For the second, the plain algebra is isomorphic to
+$M_2(\mathbb{C})$ and a nonzero element of the cone is a matrix of rank one; the left
+multiplication by a rank-one matrix has rank two and kernel dimension two, and the right
+multiplication likewise. Finally $\tilde Q\tilde Q^{\natural}=C(\tilde Q)e_0=0$ and
+$\tilde Q^{\natural}\tilde Q=C(\tilde Q)e_0=0$, so $\tilde Q^{\natural}$ lies in both annihilators;
+and $\tilde Q$ lies in its own annihilator exactly when $\tilde Q^{2}=0$, which on the cone holds
+precisely for the pure zero divisors.</p>
+<p><strong>Theorem (the two annihilators are distinct on the cone).</strong> For a nonzero zero divisor $\tilde Q$
+of the cone the two annihilators $A_\star(\tilde Q)$ and $B_\star(\tilde Q)$ are distinct complex
+planes, and they share the complex line $\mathbb{C}\tilde Q^{\natural}$.</p>
+<p><em>Proof.</em> Both contain $\tilde Q^{\natural}$, as the proof of the preceding theorem shows, so the
+intersection contains that line. The examples below show two planes whose second generators differ,
+so the planes are distinct; two distinct planes in the four-dimensional space meet in a line, and
+the line is the shared $\mathbb{C}\tilde Q^{\natural}$.</p>
+<p><strong>Example.</strong> For the non-pure zero divisor $\tilde Q=e_0+ie_1$, of central square $1-1=0$, the two
+annihilators are
+$$
+A_\star(e_0+ie_1)=\mathbb{C}\{e_0-ie_1,\ e_3+ie_2\},\qquad
+B_\star(e_0+ie_1)=\mathbb{C}\{e_0-ie_1,\ e_3-ie_2\},
+$$
+and for the pure zero divisor $\tilde Q=e_1+ie_2$, of central square $1-1=0$,
+$$
+A_\star(e_1+ie_2)=\mathbb{C}\{e_1+ie_2,\ e_0+ie_3\},\qquad
+B_\star(e_1+ie_2)=\mathbb{C}\{e_1+ie_2,\ e_0-ie_3\}.
+$$
+In both cases the two planes share the line $\mathbb{C}\tilde Q^{\natural}$ and differ in the
+second generator.</p>
+<h2 id="the-dichotomy-by-the-cone">The Dichotomy by the Cone</h2>
+<p><strong>The annihilator reads the cone twice: off the cone it is trivial and the element is invertible, on the cone it is a complex plane; the block is the one of the general products for which the two sides are genuinely two.</strong></p>
+<p>The zero-divisor set of the block is the punctured cone $\{\tilde Q\neq0:C(\tilde Q)=0\}$, a single
+equation. The annihilator reads the cone twice: off the cone both annihilators are $\{0\}$ and the
+element is invertible, and on the cone each annihilator is a complex plane. The block is the parent
+of the twelve, and the two readings of the cone are its gift: the sibling general products
+<em>Annihilators of the General Quaternionic Algebra</em>, <em>Annihilators of the General Plain
+Sesqualgebra</em> and <em>Annihilators of the General Quaternionic Sesqualgebra</em> each keep the cone and
+the plane and modify the coincidence of the two sides by their involution. The general plain
+algebra is the one for which the two sides are genuinely two.</p>
+<h2 id="the-annihilator-on-the-remarkable-subspaces">The Annihilator on the Remarkable Subspaces</h2>
+<p><strong>On every remarkable subspace the annihilator is the intersection of the ambient annihilator with the subspace: trivial off the cone, and a complex plane inside the subspace on the cone.</strong></p>
+<p><strong>The centre.</strong> A nonzero central element $\tilde P=\lambda e_0$ has
+$L_{\lambda e_0}\tilde X=\lambda\tilde X$, the scalar operator, so it is a unit of the plain
+product and its annihilator is $\{0\}$.</p>
+<p><strong>The vector subspace.</strong> A nonzero pure element $\tilde P=\vec P$ has central square
+$(\vec P,\vec P)$, so it is a zero divisor of the cone exactly when its vector part is
+isotropic; then the two annihilators are the complex planes of the elements that the pure
+quaternion $\vec P$ kills, read off the multiplication table, and for the isotropic
+$\vec P=e_1+ie_2$ they are the planes of the example above.</p>
+<p><strong>The Hermitian and anti-Hermitian subspaces.</strong> On a remarkable subspace the annihilator of an
+element of the subspace is the intersection of the ambient plane with the subspace, so the
+annihilator of a nonzero element of a remarkable subspace is again a complex plane inside the
+subspace, cut out by the same multiplication table.</p>
+<h2 id="summary">Summary</h2>
+<p>The annihilator of an element in a product is the set of partners the element kills, the left and
+the right annihilator being the kernels of the left and the right multiplication. The general plain
+multiplication is the associative product of the biquaternion algebra, isomorphic to
+$M_2(\mathbb{C})$, and its operator $L_{\tilde P}$ and its transpose $R_{\tilde P}$ have
+determinant $C(\tilde P)^{2}$ and trace $4P_0$: both are invertible off the cone and of rank two
+with a two-dimensional kernel on the cone. Off the cone both annihilators vanish; on the cone each
+is a complex plane, and the two planes are <strong>distinct</strong>, sharing the line
+$\mathbb{C}\tilde Q^{\natural}$. The block is the parent of the other general products, which keep
+the cone and the plane and modify the coincidence of the two sides by an involution.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde P\star\tilde Q=\tilde P\tilde Q$</td>
+<td>the general plain multiplication, the operation, the associative product of the biquaternion algebra</td>
+</tr>
+<tr>
+<td>$A_\star(\tilde P)=\{\tilde X:\tilde P\tilde X=0\}$</td>
+<td>the left annihilator of $\tilde P$, the kernel of the left multiplication</td>
+</tr>
+<tr>
+<td>$B_\star(\tilde P)=\{\tilde X:\tilde X\tilde P=0\}$</td>
+<td>the right annihilator of $\tilde P$, the kernel of the right multiplication</td>
+</tr>
+<tr>
+<td>$L_{\tilde P},R_{\tilde P}$</td>
+<td>the left and the right multiplication operators, of determinant $C(\tilde P)^{2}$ and trace $4P_0$</td>
+</tr>
+<tr>
+<td>$C(\tilde P)=\sum_\mu P_\mu^{2}$</td>
+<td>the central square, the criterion of the cone</td>
+</tr>
+<tr>
+<td>the complex planes on the cone</td>
+<td>the two annihilators of a nonzero zero divisor, distinct and sharing the line $\mathbb{C}\tilde P^{\natural}$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em> (<code>articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md</code>), §<em>The Zero Divisor and the Annihilator</em>, for the zero divisor and the annihilator of a general product.</li>
+<li><em>Introduction to the Biquaternion Algebra</em> (<code>articles_maths/introduction-to-the-biquaternion-algebra.md</code>), for the operation, its associativity and its table.</li>
+<li><em>Zero Divisors of the Biquaternion Algebra</em> (<code>articles_maths/zero-divisors-of-the-biquaternion-algebra.md</code>), above this article in this category, for the cone, the two families and the rank-one matrix reading.</li>
+<li><em>Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em> (<code>articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternioid-c-space.md</code>), for the coincidence of the four zero-divisor sets on the cone and the one-sided inverse equations.</li>
+<li><em>Annihilators of the General Quaternionic Algebra</em> (<code>articles_maths/annihilators-of-the-general-quaternionic-algebra.md</code>), the sibling whose anti-automorphism makes the two annihilators coincide.</li>
+<li><em>Annihilators of the General Plain Sesqualgebra</em> (<code>articles_maths/annihilators-of-the-general-plain-sesqualgebra.md</code>), the sibling whose conjugate-linear star identifies the two sides.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

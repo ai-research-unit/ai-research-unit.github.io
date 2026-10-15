@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The 6 Products of the Quaternioid Real Space — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-6-products-of-the-quaternioid-real-space"><strong>The 6 Products of the Quaternioid Real Space</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>Each of the two general products of <em>The Two General Products of the Quaternion $\mathbb{R}$ Space</em> has a <strong>symmetric part</strong> and an <strong>antisymmetric part</strong>, taken under the interchange of the two slots; because both products are $\mathbb{R}$-bilinear with both slots linear, the base ring carrying no nontrivial involution, the interchange is the bare exchange of the two arguments, and the split produces four further products from the two:</p>
+<p>$$
+\tilde p\tilde q , \qquad \tilde p^{\natural}\tilde q , \qquad \tilde p\bullet\tilde q , \qquad N(\tilde p,\tilde q)e_0 , \qquad \tilde p\wedge\tilde q , \qquad \tilde p\wedge^{\natural}\tilde q .
+$$</p>
+<p>The first two of the six are the two general products, then come their two symmetric halves and then their two antisymmetric halves: $\tilde p\bullet\tilde q=\tfrac12(\tilde p\tilde q+\tilde q\tilde p)$ is the <strong>Jordan product</strong>, the symmetric half of the plain product; $N(\tilde p,\tilde q)e_0=\tfrac12(\tilde p^{\natural}\tilde q+\tilde q^{\natural}\tilde p)$ is the <strong>quaternion form read as a product</strong>, the symmetric half of the quaternionic product; $\tilde p\wedge\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)$ is the <strong>cross product</strong>, the antisymmetric half of the plain product; and $\tilde p\wedge^{\natural}\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)$ is the <strong>quaternionic cross product</strong>, the antisymmetric half of the quaternionic product. The six are the products of the six algebraic structures of the chapter, and the reconstruction $\tilde p\tilde q=\tilde p\bullet\tilde q+\tilde p\wedge\tilde q$ and $\tilde p^{\natural}\tilde q=N(\tilde p,\tilde q)e_0+\tilde p\wedge^{\natural}\tilde q$ recovers the general products from their halves.</p>
+<p>This article defines the six, writes each on the coordinates, states the reconstruction and reads the <strong>behaviour at the two equal arguments</strong> of each. It assumes the two products from <em>The Two General Products of the Quaternion $\mathbb{R}$ Space</em> and the annihilation identity of <em>Relations Between the Two General Products</em>, both preceding this one; the structures the six define are <em>The Algebraic Structures over the Quaternion $\mathbb{R}$ Space</em>, below this article in this category, and the definitions of their vocabulary are <em>Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space</em>, below this article in this category.</p>
+<p><strong>Conventions.</strong> Throughout, $\tilde p=p_0e_0+\vec p$ and $\tilde q=q_0e_0+\vec q$ name elements, $(\vec p,\vec q)=\sum_kp_kq_k$ is the dot product and $\vec p\times\vec q$ is the cross product of the vector parts, and $\tilde q^{\natural}=q_0e_0-\vec q$ is the quaternion conjugation. The plain form is $B(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\tilde q)$ and the quaternion form is $N(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p^{\natural}\tilde q)$, read here as the coefficient of the product $N(\tilde p,\tilde q)e_0$.</p>
+<h2 id="the-symmetric-and-the-antisymmetric-part">The Symmetric and the Antisymmetric Part</h2>
+<p><strong>Definition.</strong> For a binary rule $f$ on $\mathbb{H}$, its <strong>symmetric part</strong> and its <strong>antisymmetric part</strong> are</p>
+<p>$$
+f^{\mathrm{s}}(\tilde p,\tilde q)=\tfrac12\bigl(f(\tilde p,\tilde q)+f(\tilde q,\tilde p)\bigr) , \qquad f^{\mathrm{a}}(\tilde p,\tilde q)=\tfrac12\bigl(f(\tilde p,\tilde q)-f(\tilde q,\tilde p)\bigr) ,
+$$</p>
+<p>and $f=f^{\mathrm{s}}+f^{\mathrm{a}}$. The rule is <strong>symmetric</strong> when $f^{\mathrm{a}}=0$ and <strong>antisymmetric</strong> when $f^{\mathrm{s}}=0$.</p>
+<p><strong>Proposition (the split is the bare exchange).</strong> For each of the two general products the split is taken under the plain interchange of the two arguments, and $f^{\mathrm{s}}$ is symmetric, $f^{\mathrm{a}}$ antisymmetric, and both $\mathbb{R}$-bilinear.</p>
+<p><em>Proof.</em> The two products are $\mathbb{R}$-bilinear in each slot, so $f(\tilde q,\tilde p)$ is the value of the same rule with the arguments exchanged and the difference $f(\tilde p,\tilde q)-f(\tilde q,\tilde p)$ is additive in each slot; no conjugation enters the exchange, the base ring having no nontrivial involution, and this is the point at which the split here is the bare interchange. Symmetry of $f^{\mathrm{s}}$ and antisymmetry of $f^{\mathrm{a}}$ are immediate from the definitions.</p>
+<h2 id="the-six-products-on-the-coordinates">The Six Products on the Coordinates</h2>
+<p><strong>Definition.</strong> The six products are the two general products and their halves,</p>
+<p>$$
+\tilde p\tilde q , \quad \tilde p^{\natural}\tilde q , \quad \tilde p\bullet\tilde q , \quad N(\tilde p,\tilde q)e_0 , \quad \tilde p\wedge\tilde q , \quad \tilde p\wedge^{\natural}\tilde q ,
+$$</p>
+<p>and on the coordinates they are</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>product</th>
+<th>rule</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde p\tilde q$</td>
+<td>$\bigl(p_0q_0-(\vec p,\vec q)\bigr)+p_0\vec q+q_0\vec p+\vec p\times\vec q$</td>
+</tr>
+<tr>
+<td>$\tilde p^{\natural}\tilde q$</td>
+<td>$\bigl(p_0q_0+(\vec p,\vec q)\bigr)+p_0\vec q-q_0\vec p-\vec p\times\vec q$</td>
+</tr>
+<tr>
+<td>$\tilde p\bullet\tilde q$</td>
+<td>$\bigl(p_0q_0-(\vec p,\vec q)\bigr)+p_0\vec q+q_0\vec p$</td>
+</tr>
+<tr>
+<td>$N(\tilde p,\tilde q)e_0$</td>
+<td>$\bigl(p_0q_0+(\vec p,\vec q)\bigr)e_0$</td>
+</tr>
+<tr>
+<td>$\tilde p\wedge\tilde q$</td>
+<td>$\vec p\times\vec q$</td>
+</tr>
+<tr>
+<td>$\tilde p\wedge^{\natural}\tilde q$</td>
+<td>$p_0\vec q-q_0\vec p-\vec p\times\vec q$</td>
+</tr>
+</tbody>
+</table></div>
+<p>The plain triple is the general plain product, its symmetric half and its antisymmetric half; the quaternionic triple is the same three-fold split of the quaternionic product. The Jordan product is the symmetric part of the plain product and differs from it by the cross-product term; the product $N(\tilde p,\tilde q)e_0$ is the symmetric part of the quaternionic product and is scalar; the cross product is the antisymmetric part of the plain product and is pure vector; and the quaternionic cross product is the antisymmetric part of the quaternionic product and is pure vector.</p>
+<p><strong>Proposition (the reconstruction).</strong> For all $\tilde p,\tilde q$,</p>
+<p>$$
+\tilde p\tilde q=\tilde p\bullet\tilde q+\tilde p\wedge\tilde q , \qquad \tilde p^{\natural}\tilde q=N(\tilde p,\tilde q)e_0+\tilde p\wedge^{\natural}\tilde q .
+$$</p>
+<p><em>Proof.</em> The two general products are the sums of their symmetric and antisymmetric parts by the definition of the split; the four halves are the four products of the table.</p>
+<p>So the six products are read from the two general products by one and the same split, and the six are not independent: the two general products alone generate the four halves, and any four of the six determine the other two by the reconstruction. The quaternionic triple is the plain triple with the first factor conjugated, and the conjugation changes the sign of the antisymmetric terms; it leaves the symmetric term with the dot product changed to its negative, which is why the symmetric half of the quaternionic product is the scalar $N(\tilde p,\tilde q)e_0$ with the plus sign and not the Jordan product.</p>
+<h2 id="the-behaviour-at-the-two-equal-arguments">The Behaviour at the Two Equal Arguments</h2>
+<p>The antisymmetric parts vanish at the two equal arguments, so the square of each general product is the algebraic norm of its symmetric half.</p>
+<p><strong>Proposition (the algebraic norms).</strong> For every $\tilde p=p_0e_0+\vec p$,</p>
+<p>$$
+\tilde p^2=B(\tilde p)e_0+2p_0\vec p , \qquad \tilde p\bullet\tilde p=\tilde p^2 , \qquad \tilde p\wedge\tilde p=0 ,
+$$</p>
+<p>$$
+\tilde p^{\natural}\tilde p=N(\tilde p)e_0=|\tilde p|^2e_0 , \qquad N(\tilde p,\tilde p)e_0=N(\tilde p)e_0 , \qquad \tilde p\wedge^{\natural}\tilde p=0 ,
+$$</p>
+<p>with $B(\tilde p)=p_0^2-\lvert\vec p\rvert^2$ and $N(\tilde p)=p_0^2+\lvert\vec p\rvert^2$. The square of the plain product is read off the <strong>plain form</strong> $B$ and the square of the quaternionic product off the <strong>quaternion form</strong> $N$; the two antisymmetric products vanish at the two equal arguments, the cross products of a vector with itself being zero.</p>
+<p><em>Proof.</em> An antisymmetric rule has $f(\tilde p,\tilde p)=-f(\tilde p,\tilde p)=0$, so $\tilde p\wedge\tilde p=0$ and $\tilde p\wedge^{\natural}\tilde p=0$, and the algebraic norm of a rule is the algebraic norm of its symmetric half, $\tilde p\bullet\tilde p=\tilde p^2$ and $N(\tilde p,\tilde p)e_0=\tilde p^{\natural}\tilde p$. The two algebraic norms are the two squares of <em>Comparison Between the Two General Products</em>, the article preceding this one, namely $\tilde p^2=(p_0^2-\lvert\vec p\rvert^2)e_0+2p_0\vec p$ and $\tilde p^{\natural}\tilde p=\lvert\tilde p\rvert^2e_0$.</p>
+<p>So the algebraic norm of the six products carries the two algebraic norms of the chapter: the square of the plain product and the square of the quaternionic product are read off the same two forms $B$ and $N$, the first giving a general quaternion and the second a scalar, and the two antisymmetric products vanish identically at the two equal arguments, giving no square and no norm. The two algebraic norms are <em>The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space</em>, below this article in this category.</p>
+<h2 id="the-two-exchanges">The Two Exchanges</h2>
+<p>The six products here are the six products of the six algebraic structures of <em>The Algebraic Structures over the Quaternion $\mathbb{R}$ Space</em>, below this article in this category; the antisymmetric ones are the two Lie-layer products, and the symmetric ones the two Jordan-layer products.</p>
+<h2 id="summary">Summary</h2>
+<p>The two general products of $\mathbb{H}$ split under the interchange of their two slots, which is the bare exchange of the two arguments. The six products are the two general products $\tilde p\tilde q$ and $\tilde p^{\natural}\tilde q$ and their four halves: the Jordan product $\tilde p\bullet\tilde q=(p_0q_0-(\vec p,\vec q))+p_0\vec q+q_0\vec p$, the quaternion form as a product $N(\tilde p,\tilde q)e_0=(p_0q_0+(\vec p,\vec q))e_0$, the cross product $\tilde p\wedge\tilde q=\vec p\times\vec q$ and the quaternionic cross product $\tilde p\wedge^{\natural}\tilde q=p_0\vec q-q_0\vec p-\vec p\times\vec q$. The reconstruction is $\tilde p\tilde q=\tilde p\bullet\tilde q+\tilde p\wedge\tilde q$ and $\tilde p^{\natural}\tilde q=N(\tilde p,\tilde q)e_0+\tilde p\wedge^{\natural}\tilde q$.</p>
+<p>At the two equal arguments the antisymmetric products vanish and each general product equals its symmetric half: $\tilde p\bullet\tilde p=\tilde p^2=B(\tilde p)e_0+2p_0\vec p$ and $N(\tilde p,\tilde p)e_0=\tilde p^{\natural}\tilde p=N(\tilde p)e_0$, so the two squares are read off the two forms $B$ and $N$; the two antisymmetric products contribute no square.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\tilde p\tilde q$</td>
+<td>the general plain bilinear product</td>
+</tr>
+<tr>
+<td>$\tilde p^{\natural}\tilde q$</td>
+<td>the general quaternionic bilinear product</td>
+</tr>
+<tr>
+<td>$\tilde p\bullet\tilde q=\tfrac12(\tilde p\tilde q+\tilde q\tilde p)$</td>
+<td>the Jordan product, the symmetric half</td>
+</tr>
+<tr>
+<td>$N(\tilde p,\tilde q)e_0=\tfrac12(\tilde p^{\natural}\tilde q+\tilde q^{\natural}\tilde p)$</td>
+<td>the quaternion form as a product</td>
+</tr>
+<tr>
+<td>$\tilde p\wedge\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\vec p\times\vec q$</td>
+<td>the cross product, the antisymmetric half</td>
+</tr>
+<tr>
+<td>$\tilde p\wedge^{\natural}\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)$</td>
+<td>the quaternionic cross product</td>
+</tr>
+<tr>
+<td>$\tilde p\tilde q=\tilde p\bullet\tilde q+\tilde p\wedge\tilde q$</td>
+<td>the reconstruction of the plain product</td>
+</tr>
+<tr>
+<td>$\tilde p^{\natural}\tilde q=N(\tilde p,\tilde q)e_0+\tilde p\wedge^{\natural}\tilde q$</td>
+<td>the reconstruction of the quaternionic product</td>
+</tr>
+<tr>
+<td>$\tilde p^2=B(\tilde p)e_0+2p_0\vec p$, $\tilde p^{\natural}\tilde p=N(\tilde p)e_0$</td>
+<td>the two algebraic norms</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li>Nathan Jacobson, <em>Structure and Representations of Jordan Algebras</em> (American Mathematical Society, Colloquium Publications 39, 1968), for the symmetrisation of a bilinear product and the Jordan product.</li>
+<li>Richard S. Pierce, <em>Associative Algebras</em> (Springer, Graduate Texts in Mathematics 88, 1982), for the symmetric and antisymmetric parts of a bilinear rule and the Lie product of an associative algebra.</li>
+<li>John H. Conway and Derek A. Smith, <em>On Quaternions and Octonions</em> (A K Peters, 2003), for the quaternion product, its symmetrisation and the cross product of its vector part.</li>
+<li>Pertti Lounesto, <em>Clifford Algebras and Spinors</em> (Cambridge University Press, 2nd ed. 2001), for the products of the Clifford algebra $\mathrm{Cl}_{0,2}$ and the place of the cross product among them.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

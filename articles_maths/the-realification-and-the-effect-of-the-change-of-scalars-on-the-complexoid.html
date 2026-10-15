@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Realification and the Effect of the Change of Scalars — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="the-realification-and-the-effect-of-the-change-of-scalars"><strong>The Realification and the Effect of the Change of Scalars</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The complex numbers carry two readings of one algebra: over $\mathbb{C}$, where the space has dimension one, and over $\mathbb{R}$, where the same space has dimension two. This article is the passage from the first reading to the second, the <strong>realification</strong>, and the effect of the change of scalars on the products and on the two forms. It is the <strong>prototype</strong> of the general construction of <em>The Realification and the Effect of the Change of Scalars</em>.</p>
+<p>The space itself, its two scalar readings, the complex structure $J$ of multiplication by $i$, the criteria $TJ=JT$ and $SJ=-JS$ for the two kinds of real-linear map and their block shapes are those of <em>The Complex Numbers as a Vector Space over $\mathbb{R}$</em>, above this article in this category, and are recalled here only where the realification of the forms needs them. The two products are <em>The Two Products of the Complex Space</em>; the two forms and their algebraic norms are <em>The Two Forms and the Two Algebraic Norms of the Complex Space</em>, above this article in this category, and the realified signatures stated there, $(1,1)$ and $(2,0)$, are derived here from the two rules of the construction.</p>
+<p><strong>Conventions.</strong> <strong>Bar</strong> is complex conjugation and the <strong>Hermitian</strong> mark is the bar, ${}^{*}=\bar{\cdot}$. Elements are written $A=a+ia'$ and $C=c+ic'$, with $a$, $a'$, $c$, $c'$ real; the letters $B$, $N$, $H$, $K$ are the four forms, of which $B$ and $H$ survive, and $B$ is never an element. The topological norm $|\cdot|=\sqrt{H}$ remains the pointer of <em>Complex Norm and Invertibility</em>, below this article in this category.</p>
+<h2 id="the-two-scalar-interpretations-and-the-doubling-of-the-dimension">The Two Scalar Interpretations and the Doubling of the Dimension</h2>
+<p>Read over itself, $\mathbb{C}$ is the one-dimensional complex space with basis $1$; read over $\mathbb{R}$, it is the two-dimensional real space with basis $1$, $i$, and the two coordinates are the real and imaginary parts,</p>
+<p>$$
+A=a+ia'\longleftrightarrow (a,a')\in\mathbb{R}^{2}.
+$$</p>
+<p>The passage is the <strong>restriction of scalars</strong>: the set of elements and the multiplication are the same, and only the field of scalars is restricted, from $\mathbb{C}$ to $\mathbb{R}$. The dimension doubles, $1$ becoming $2$, and the complex scalars, which were multiplications by elements, are replaced by the two real scalars in the two coordinates.</p>
+<p><strong>Realification is not the inverse of complexification.</strong> Complexifying the real line $\mathbb{R}$ gives $\mathbb{C}$ by tensoring with $\mathbb{C}$, but complexifying the realified plane $\mathbb{R}^{2}$ gives $\mathbb{C}^{2}$ and not $\mathbb{C}$; the object the realification forgets is not the field alone but the complex structure, and it is restored by hand, as follows.</p>
+<h2 id="the-complex-structure-and-the-recovery-of-the-space">The Complex Structure and the Recovery of the Space</h2>
+<p>The <strong>complex structure</strong> of the realified space is the operator</p>
+<p>$$
+J(A)=iA,\qquad J(a,a')=(-a',a),
+$$</p>
+<p>which is $\mathbb{R}$-linear, is not $\mathbb{C}$-linear, and satisfies $J^{2}=-\operatorname{id}$. The map $J$ has no real eigenvalue, since $J(A)=\lambda A$ with $\lambda\in\mathbb{R}$ forces $A=0$, so the only $J$-stable real subspaces are $\{0\}$ and the whole space; equivalently, the complex subspaces of the one-dimensional complex space are $\{0\}$ and $\mathbb{C}$. The two remarkable subspaces are not $J$-stable: $J$ exchanges them,</p>
+<p>$$
+J(\mathbb{R}_{\mathbb{C}})=i\mathbb{R}_{\mathbb{C}},\qquad J(i\mathbb{R}_{\mathbb{C}})=\mathbb{R}_{\mathbb{C}},
+$$</p>
+<p>and they are the two eigenspaces of the bar and not of $J$.</p>
+<p><strong>Recovery.</strong> Given the realified space together with $J$, the complex structure is restored by defining the product of a complex scalar $\lambda=a+ib$ with an element $A$ as $aA+bJ(A)$; the space with this scalar multiplication is the complex space again, and multiplication by $i$ is $J$. Realification loses $J$ and restricts the scalars; the pair consisting of the realified space and its operator $J$ recovers both.</p>
+<h2 id="the-interplay-of-the-complex-structure-with-the-two-products">The Interplay of the Complex Structure with the Two Products</h2>
+<p>The two products are real-bilinear after the realification. The complex structure is multiplication by an element of the algebra, so it commutes with the multiplication in both slots and anticommutes with the conjugation in the conjugated slot:</p>
+<p>$$
+J(AC)=(JA)C=A(JC),\qquad J(A\bar C)=(JA)\bar C,\qquad A\overline{(JC)}=-J(A\bar C).
+$$</p>
+<p>The plain product $AC$ is therefore $J$-linear in both slots, and it is the realification of the complex-bilinear product of the algebra; the sesquilinear product $A\bar C$ is $J$-linear in the first slot and $J$-antilinear in the second, since the conjugation negates $J$. The two products are distinct real-bilinear operations, and the realification does not merge them; it is the complex structure that records how they differ.</p>
+<h2 id="the-two-kinds-of-real-linear-map">The Two Kinds of Real-Linear Map</h2>
+<p>A real-linear map $T$ of $\mathbb{C}$ is complex-linear exactly when it commutes with $J$, and a real-linear map $S$ is conjugate-linear exactly when it anticommutes with $J$:</p>
+<p>$$
+T(JA)=J(TA)\Longleftrightarrow TJ=JT,\qquad S(JA)=-J(SA)\Longleftrightarrow SJ=-JS.
+$$</p>
+<p>The bar is the model conjugate-linear map, and the multiplication by an element is the model complex-linear one. In the basis $1$, $i$, and with each complex entry $u+iv$ replaced by its $2\times2$ real block, a complex-linear map of matrix $X$ has the <strong>block shape</strong> of a commuting map,</p>
+<p>$$
+T=\begin{pmatrix}\Re X&-\Im X\\ \Im X&\Re X\end{pmatrix},
+$$</p>
+<p>and a conjugate-linear map of the same formal matrix $X$ has the block shape of an anticommuting one,</p>
+<p>$$
+S=\begin{pmatrix}\Re X&\Im X\\ \Im X&-\Re X\end{pmatrix}.
+$$</p>
+<p>At $n=1$ the matrix $X$ is the complex number $A=a+ia'$, and multiplication by $A$ and the map $C\mapsto A\bar C$ have the matrices</p>
+<p>$$
+\begin{pmatrix}a&-a'\\ a'&a\end{pmatrix},\qquad\begin{pmatrix}a&a'\\ a'&-a\end{pmatrix}.
+$$</p>
+<p>The first commutes with $J$ and has trace $2a$ and determinant $a^{2}+a'^{2}=H(A)$; the second anticommutes with $J$ and has trace $0$ and determinant $-(a^{2}+a'^{2})=-H(A)$. The two kinds of real-linear map are therefore told apart by their commutation with $J$, and at $n=1$ by the vanishing of the trace and the sign of the determinant. The first matrix is the regular representation of the algebra, read in <em>The Matrix Element Representations of the Complex Numbers</em>, above this article in this category, where its determinant and trace are identified with the two algebraic norms.</p>
+<h2 id="the-realification-of-the-two-forms">The Realification of the Two Forms</h2>
+<p>A form on the complex space, read on the realified space, is a form on a real space of twice the dimension, and its realified signature is given by one of two rules.</p>
+<p><strong>A symmetric complex-bilinear form</strong>, of rank $n$, realifies to the <strong>split signature</strong> $(n,n)$. The reason is that the complex structure flips the sign of the form, $B(iP,iQ)=-B(P,Q)$; on each complex line and its image under $J$ the realified form therefore takes opposite values, and the $n$ positive directions are balanced by $n$ negative ones.</p>
+<p><strong>A Hermitian form</strong>, of inertia $(p,q)$, realifies to the <strong>doubled inertia</strong> $(2p,2q)$. Its realification is the real part of the form, and the complex structure preserves that real part, $H(iP,iQ)=H(P,Q)$; on each complex line the real part is therefore read twice, once on the line and once on its image under $J$, and the inertia doubles. The conjugation in the second slot is what makes the difference, since it carries $H(P,iQ)$ to $-iH(P,Q)$ and so places the second copy with the sign that keeps the real part.</p>
+<p>On the two forms of the complex space, of rank and inertia one, the rules give</p>
+<p>$$
+B\longrightarrow(1,1),\qquad H\longrightarrow(2,0),
+$$</p>
+<p>the signatures stated in <em>The Two Forms and the Two Algebraic Norms of the Complex Space</em>, above this article in this category. The realified Gram matrix of $B$ is $\operatorname{diag}(1,-1)$, since the complex Gram matrix $[1]$ is real, and that of $H$ is the identity $\mathrm{id}_2$. The form $B$ is anisotropic over $\mathbb{C}$ and indefinite after realification; the two facts are read on different fields, the first on the complex values $A^{2}$ and the second on their real parts $a^{2}-a'^{2}$.</p>
+<h2 id="the-dictionary-of-the-complex-statements-against-the-real-ones">The Dictionary of the Complex Statements against the Real Ones</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the complex statement</th>
+<th>the real statement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>the space has dimension $1$</td>
+<td>the space has dimension $2$</td>
+</tr>
+<tr>
+<td>an element $A=a+ia'$</td>
+<td>the pair $(a,a')$ of real coordinates</td>
+</tr>
+<tr>
+<td>the imaginary unit $i$</td>
+<td>the complex structure $J$, $J^{2}=-\operatorname{id}$</td>
+</tr>
+<tr>
+<td>multiplication by $A$</td>
+<td>the matrix $\left(\begin{smallmatrix}a&-a'\\ a'&a\end{smallmatrix}\right)$, commuting with $J$</td>
+</tr>
+<tr>
+<td>the bar $\bar{\cdot}$</td>
+<td>the conjugate-linear maps, $SJ=-JS$</td>
+</tr>
+<tr>
+<td>a complex subspace, of complex dimension $m$</td>
+<td>a $J$-stable real subspace, of real dimension $2m$; here $\{0\}$ and $\mathbb{C}$</td>
+</tr>
+<tr>
+<td>a complex-linear map $T$</td>
+<td>the commutation $TJ=JT$ and the block shape of $T$</td>
+</tr>
+<tr>
+<td>the bilinear form $B$ of rank $1$</td>
+<td>a form of split signature $(1,1)$</td>
+</tr>
+<tr>
+<td>the Hermitian form $H$ of inertia $(1,0)$</td>
+<td>a form of signature $(2,0)$</td>
+</tr>
+<tr>
+<td>the automorphisms of $\mathbb{C}$ over itself, $\{1\}$</td>
+<td>the real-algebra automorphisms $\{1,\bar{\cdot}\}$</td>
+</tr>
+<tr>
+<td>the ideals, the idempotents, the zero divisors, the nilpotents, the units</td>
+<td>unchanged by the change of scalars</td>
+</tr>
+</tbody>
+</table></div>
+<p>Two rows carry the substance of the dictionary. The row of the automorphisms: the bar is not complex-linear but is real-linear, so it appears as an automorphism only in the real reading, and the automorphism group grows from one element to two, the Galois twist of the change of scalars. The last row: the classes of element and the structure of the ring are unchanged, because $i$ is an element of the algebra and not an external scalar; passing to the real reading changes the field of coefficients and the dimension, not the algebra.</p>
+<h2 id="the-trap-of-the-count-of-operations">The Trap of the Count of Operations</h2>
+<p>The realification doubles the dimension and leaves the two products distinct, so a reader who expects the count of operations to fall is looking in the wrong place. The trap is met one step earlier, on the <strong>real subspace</strong>: there the two products coincide, $A\bar C=AC$, because the bar fixes a real element, so a computation carried out on real elements sees one operation where the complex space has two. The count of two is recovered only by the imaginary elements, on which the two products are opposite (see <em>Remarkable Subspaces of the Complex Numbers and the Two Forms</em>, above this article in this category); the realification preserves that distinction and does not create it.</p>
+<h2 id="summary">Summary</h2>
+<p>The realification reads the one-dimensional complex space as the two-dimensional real space with basis $1$, $i$, restricting the scalars from $\mathbb{C}$ to $\mathbb{R}$ and doubling the dimension; the complex structure $J$ of multiplication by $i$ is $\mathbb{R}$-linear, not $\mathbb{C}$-linear, with $J^{2}=-\operatorname{id}$, no real eigenvalue, and the only $J$-stable real subspaces $\{0\}$ and $\mathbb{C}$, and the pair of the realified space and $J$ recovers the complex space. Realification is not the inverse of complexification; it is $J$ that is lost and $J$ that is restored. The two products stay distinct after the realification, and the complex structure records the difference by commuting with both slots of $AC$ and anticommuting with the conjugated slot of $A\bar C$. A symmetric complex-bilinear form of rank $n$ realifies to the split signature $(n,n)$ and a Hermitian form of inertia $(p,q)$ to $(2p,2q)$; on the two forms of the complex space this gives $(1,1)$ for $B$ and $(2,0)$ for $H$. The classes of element and the structure of the ring are unchanged, and the only count that falls is the count of the products on the real subspace, where they coincide.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{C}$ over $\mathbb{C}$</td>
+<td>the space of complex dimension $1$, basis $1$</td>
+</tr>
+<tr>
+<td>$\mathbb{C}$ over $\mathbb{R}$</td>
+<td>the realified space, real dimension $2$, basis $1$, $i$</td>
+</tr>
+<tr>
+<td>$A=a+ia'$</td>
+<td>an element in the two coordinates</td>
+</tr>
+<tr>
+<td>$J(A)=iA$</td>
+<td>the complex structure, $J^{2}=-\operatorname{id}$</td>
+</tr>
+<tr>
+<td>$TJ=JT$</td>
+<td>the criterion for a complex-linear real-linear map</td>
+</tr>
+<tr>
+<td>$SJ=-JS$</td>
+<td>the criterion for a conjugate-linear real-linear map</td>
+</tr>
+<tr>
+<td>$\left(\begin{smallmatrix}\Re X&-\Im X\\ \Im X&\Re X\end{smallmatrix}\right)$, $\left(\begin{smallmatrix}\Re X&\Im X\\ \Im X&-\Re X\end{smallmatrix}\right)$</td>
+<td>the two block shapes, commuting and anticommuting</td>
+</tr>
+<tr>
+<td>$B(A,C)=AC$, $H(A,C)=A\bar C$</td>
+<td>the two forms, of rank and inertia one</td>
+</tr>
+<tr>
+<td>$(1,1)$, $(2,0)$</td>
+<td>the realified signatures of $B$ and of $H$</td>
+</tr>
+<tr>
+<td>$\mathbb{R}_{\mathbb{C}}$, $i\mathbb{R}_{\mathbb{C}}$</td>
+<td>the two remarkable subspaces, exchanged by $J$</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Complex Numbers as a Vector Space over $\mathbb{R}$</em>, above this article in this category, for the two scalar readings of $\mathbb{C}$, the complex structure $J$, the criteria $TJ=JT$ and $SJ=-JS$ and the block shapes.</li>
+<li><em>The Two Forms and the Two Algebraic Norms of the Complex Space</em>, above this article in this category, for the two forms whose realified signatures are derived here.</li>
+<li><em>The Matrix Element Representations of the Complex Numbers</em>, above this article in this category, for the two matrices at $n=1$ read as element representations and for the identification of their determinant and trace with the algebraic norms.</li>
+<li><em>Remarkable Subspaces of the Complex Numbers and the Two Forms</em>, above this article in this category, for the coincidence of the two products on the real subspace.</li>
+<li><em>The Realification and the Effect of the Change of Scalars</em> (<code>articles_maths/the-realification-and-the-effect-of-the-change-of-scalars.md</code>), for the general construction, of which this article is the prototype.</li>
+<li><em>Complex Subspaces</em> (<code>articles_maths/complexoid-subspaces.md</code>) and <em>Complex Algebra</em> (<code>articles_maths/complex-algebra.md</code>), for the two subspaces and the field of the algebra.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

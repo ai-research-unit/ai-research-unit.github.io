@@ -219,100 +219,8 @@
 (\lambda x)y=\lambda(xy),\qquad x(\lambda y)=\varsigma(\lambda)(xy).
 $$</p>
 <p>The object is the algebra companion of the sesquilinear form, and the two are different: a sesquilinear form takes its values in the scalars, a sesqualgebra in the algebra itself. The datum is the pair $(R,\varsigma)$, and the object is relative to it; for the trivial involution the two scalar rules coincide and the category collapses exactly to the ordinary algebras. The corpus's reformulation is what makes the category tractable: a sesqualgebra over $(R,\varsigma)$ is an $R$-bilinear map $A\times A^{\varsigma}\to A$, where $A^{\varsigma}$ is the <strong>conjugate module</strong> ($\lambda\cdot x=\varsigma(\lambda)x$). The standard example is the derived operation $x\star y=xy^{*}$ of an associative algebra with a conjugate-linear involution, and it is associative exactly when the involution is the identity — which is why the sesquilinear world is not the bilinear one in another notation. The corpus develops the category as its bilinear sibling is developed: the conjugate module, the left and right multiplications with their opposite linearity, the ideals and quotients, the centre, the units and the zero divisors, the derivations, and the algebras with a degree-2 form on top of it.</p>
-<h3 id="the-structures-of-the-number-systems">The Structures of the Number Systems</h3>
-<p>The corpus does not study the biquaternion algebra in isolation. On each number system it meets it applies <strong>one construction</strong>, and the construction returns a finite list of algebraic structures. The list is the object of study, and its length is a property of the number system and not a convention. The construction has three steps.</p>
-<ol>
-<li><strong>Take a number system that is also an algebra.</strong> The four the corpus needs here are the complex numbers, the split-complex numbers, the quaternions and the biquaternions. Each carries at least one <strong>conjugation</strong>, an involution that reverses the order of a product. On the complex numbers it is the passage to the conjugate coefficient. On the quaternions it is the reversal of the vector part. On the biquaternions there are two, the conjugation of the coefficients and the natural conjugation of the algebra, and the two differ.</li>
-<li><strong>Form the general products.</strong> A product of two elements is turned into a new product by conjugating either argument, or both, or neither, the choice being taken independently in the first position and in the second. There are at most four such products, called the <strong>general products</strong>.</li>
-<li><strong>Split each general product.</strong> Exchanging the two arguments and taking the half-sum and the half-difference splits a product into a <strong>symmetric part</strong> and an <strong>antisymmetric part</strong>. The exchange is taken to preserve the conjugation the product carries, so that each part stays of the same kind as the product; a sesquilinear product, conjugate-linear in the second argument, has sesquilinear parts, and a bilinear product has bilinear parts. Each general product therefore yields three operations: the product itself, its symmetric part and its antisymmetric part.</li>
-</ol>
-<p>Two coincidences then cut the count down, and they are the reason different number systems carry different numbers of structures.</p>
-<ul>
-<li><strong>Commutativity.</strong> Over a commutative system the exchange of the two arguments leaves the product unchanged, so the symmetric part repeats the product and the antisymmetric part is the zero product. A commutative system contributes one structure per general product, the multiplication itself, and not three.</li>
-<li><strong>The two slot insertions coincide over the real numbers.</strong> When the coefficients are real, the conjugation of the coefficients is the identity map, so the Hermitian conjugation — the composite of the two — is the natural conjugation of the algebra, the map that negates the vector part, which is not the identity. The two arguments of a general product are then conjugated by one and the same map, so the products that conjugate the second argument repeat the products that conjugate the first, and the four general products collapse to two: the plain product, and the product whose first argument is conjugated. What collapses is the pair of insertions, not the conjugate. This is why the sesquilinear family is not a second family over the real numbers, and why it becomes one over the complex numbers.</li>
-</ul>
-<p>Taken through the four systems, the construction gives the list the corpus is built on.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Number system</th>
-<th>Over</th>
-<th>Structures</th>
-<th>The structures, in full</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>the complex numbers</td>
-<td>$\mathbb{C}$</td>
-<td><strong>2</strong></td>
-<td>the field product, and the sesquilinear product</td>
-</tr>
-<tr>
-<td>the split-complex numbers</td>
-<td>$\mathbb{D}$</td>
-<td><strong>2</strong></td>
-<td>the ring product, and the sesquilinear product</td>
-</tr>
-<tr>
-<td>the quaternions</td>
-<td>$\mathbb{R}$</td>
-<td><strong>6</strong></td>
-<td>the general, the symmetric and the antisymmetric plain algebra, and the general, the symmetric and the antisymmetric quaternionic algebra</td>
-</tr>
-<tr>
-<td>the biquaternions</td>
-<td>$\mathbb{C}$</td>
-<td><strong>12</strong></td>
-<td>the general, the symmetric and the antisymmetric plain algebra and sesqualgebra over $\mathbb{C}$, and the general, the symmetric and the antisymmetric quaternionic algebra and sesqualgebra over $\mathbb{C}$</td>
-</tr>
-</tbody>
-</table></div>
-<p>Three readings of the list.</p>
-<ul>
-<li><strong>The first two rungs are equal.</strong> The complex field and the split-complex ring differ in everything else — one is a field, the other has zero divisors — but each carries the same two structures: the multiplication and the sesquilinear product. The antisymmetrised products are the zero product, because both systems are commutative.</li>
-<li><strong>The step from two to six is the step from a commutative system to a non-commutative one.</strong> On the quaternions the symmetric part separates from the general product and the antisymmetric part is no longer zero, so each of the two general products yields three structures; among the halves, the symmetric plain part is the Jordan algebra and the antisymmetric plain part the Lie algebra, and the quaternionic pair carries neither identity.</li>
-<li><strong>The step from six to twelve is the step from real coefficients to complex ones.</strong> Over the real numbers the conjugation of the coefficients is the identity, so the Hermitian conjugation is the natural conjugation, the two slot insertions coincide, and the sesquilinear products are not a new family. Over the complex numbers the conjugation of the coefficients is not the identity, the two insertions differ, the sesquilinear family becomes a family of its own, and the count doubles.</li>
-</ul>
-<p>The top rung is the biquaternion algebra, and its twelve structures are the corpus's most complete instance of the construction. The name of a structure is read in three parts. The <strong>first part</strong> says which operation is meant: the general product, its symmetric part, or its antisymmetric part. The <strong>second part</strong> says how the first argument is read: <em>plain</em>, the argument as it stands; or <em>quaternionic</em>, the argument replaced by its natural conjugate. The <strong>third part</strong> says the family: <em>algebra</em>, the second argument as it stands; or <em>sesqualgebra</em>, the second argument replaced by its star-conjugate, the composite of the two conjugations.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>Family</th>
-<th>General product</th>
-<th>Symmetric part</th>
-<th>Antisymmetric part</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>the plain algebra over $\mathbb{C}$</td>
-<td>general plain algebra</td>
-<td>symmetric plain algebra</td>
-<td>antisymmetric plain algebra</td>
-</tr>
-<tr>
-<td>the quaternionic algebra over $\mathbb{C}$</td>
-<td>general quaternionic algebra</td>
-<td>symmetric quaternionic algebra</td>
-<td>antisymmetric quaternionic algebra</td>
-</tr>
-<tr>
-<td>the plain sesqualgebra over $\mathbb{C}$</td>
-<td>general plain sesqualgebra</td>
-<td>symmetric plain sesqualgebra</td>
-<td>antisymmetric plain sesqualgebra</td>
-</tr>
-<tr>
-<td>the quaternionic sesqualgebra over $\mathbb{C}$</td>
-<td>general quaternionic sesqualgebra</td>
-<td>symmetric quaternionic sesqualgebra</td>
-<td>antisymmetric quaternionic sesqualgebra</td>
-</tr>
-</tbody>
-</table></div>
-<p>The twelve products are distinct operations: no two agree on every pair. The corpus reads them by a classification. <strong>Two of them satisfy the identity of their kind</strong> — the symmetric plain product a Jordan identity, the antisymmetric plain product a Jacobi identity — and <strong>the other six of the symmetric and antisymmetric structures fail it</strong>, each with a witness on the eight-element basis of the space. Of the four general products, one is associative, the plain bilinear product, and the other three are not.</p>
-<p>Over the complex numbers the twelve are distinct. <strong>Over the real elements they collapse to ten</strong>, because two pairs among them coincide there. A check restricted to real elements would therefore see ten operations, and could report an obstruction absent when it is present.</p>
+<h3 id="complexoid-quaternioid-and-biquaternioid-structures">Complexoid, quaternioid and biquaternioid structures</h3>
+<p>Construction of non-associative complexoid, quaternioid and biquaternioid structures, using some particular products, split into a general, a symmetric and an antisymmetric part.</p>
 <h3 id="the-bochner-theorem-for-the-biquaternion-transform">The Bochner Theorem for the Biquaternion Transform</h3>
 <p>The corpus's own analytic result is a theorem about the transform that the biquaternion algebra carries. Bochner's theorem says that a continuous normalised positive-definite function on a group is the Fourier transform of a positive measure; read the other way it says the transform of a positive measure is positive definite. Its proof consumes two properties of the character — that it is multiplicative and that it is unitary — together with one property of the pairing, that the quadratic form carries the conjugation in its <strong>second</strong> slot. In the biquaternion algebra the ingredients are no longer settled in advance: multiplicativity survives every root; the unitarity of the character becomes a condition on the <strong>root of $-1$</strong> carried by the kernel's exponential, and the roots fall into families; and the pairing is chosen among the four the algebra carries.</p>
 <p>The corpus's answer is a single condition. The positivity the theorem needs is the positivity of the general plain sesquilinear form, and with that form <strong>the theorem holds exactly for the roots that are skew-adjoint for the Hermitian conjugation</strong> — the scalar imaginary and the real roots — and fails for the genuinely complex roots. The reason is exactly the unitarity of the character: the kernel is the exponential of the root, and it is unitary precisely when the root is skew-adjoint for the Hermitian conjugation. The corpus separates this from a different failure, which tests the multiplicative form and is independent of the root; the two are true statements and they are not the same statement. What is proved is the direction from the measure to the positive-definite function, with the criterion on the root; the converse of Bochner's theorem, that every positive-definite function is the transform of a positive measure, is not claimed.</p>
@@ -327,7 +235,7 @@ $$</p>
 <h2 id="common-misreadings">Common Misreadings</h2>
 <ol>
 <li><strong>It is not a physical theory.</strong> A reader coming from physics will recognise objects in it — the Lorentz group, the null cone, the hyperbolic rotation — but the corpus describes them as algebra and geometry, and no statement in it is about the world.</li>
-<li><strong>The biquaternion algebra is not the corpus's discovery.</strong> It is standard. What is new is the systematic reading of one algebra under all its natural products, and the study of the structures those products define.</li>
+<li><strong>The biquaternion algebra is not the corpus's discovery.</strong> It is standard. What is new is the systematic reading of one algebra under all its natural products, and the creation of the new structures those products define, the complexoids, the quaternioids and the biquaternioids. These are not alternative multiplications of the number system: the field, the quaternion algebra and the biquaternion algebra keep their own product in their own chapter, and each added structure is a new non-associative structure over the same space.</li>
 <li><strong>The four general products are distinct operations.</strong> None agrees with another on every pair, and the twelve products built from them are distinct too; a check restricted to real elements sees only ten, because two pairs coincide there.</li>
 <li><strong>An algebraic norm is not a length.</strong> It takes its value in the ring or the algebra — the algebraic norm of a biquaternion is a biquaternion — and it belongs to Algebra. The <strong>topological norm</strong>, selected to take positive real values, is what gives a distance, and it belongs to Topology.</li>
 <li><strong>A form that multiplies and a form that is definite are two different tools.</strong> The multiplicative form vanishes on nonzero elements; the definite form does not multiply. No function on the algebra is both, and the zero divisors are the reason.</li>
@@ -339,7 +247,7 @@ $$</p>
 </ol>
 <h2 id="summary">Summary</h2>
 <p>The mathematical corpus is a single account of pure mathematics of about 2,100 articles in six parts. Algebra builds the objects and carries the form and its algebraic norm, whose values lie in the ring or the algebra; Topology places a distance on each object; Analysis uses the derivative and the measure; Geometry reads the distance as an object; Catalogues gather the objects of the first four parts into transversal lists; and Synthetic Studies take one number system at a time through the whole ladder. Parts I to III share one five-slot spine — Foundations, Groups, Rings and Fields, Linear Spaces, Algebras — each adding its further subjects after it. Three rules fix the placement of every article: no category may use a structure it has not introduced, the parts are strictly ordered, and an object re-read through a new structure belongs to the new category. The boundaries give local tests: distance between algebra and topology, the derivative and the measure between topology and analysis, and a change of intent between analysis and geometry. The corpus is pure mathematics, with no application and no physics.</p>
-<p>The corpus's most developed single system is the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, associative with zero divisors and isomorphic to the $2\times2$ complex matrices. Its four general products carry four forms, two of which do the two jobs the corpus keeps apart: the multiplicative form multiplies, the Hermitian form is definite, and no function is both. The four products split into twelve distinct products, the twelve algebraic structures of the space, of which two satisfy the identity of their kind and six fail it. The same construction is run over the smaller number systems, and the count it returns there is the corpus's systematic introduction of the structures of each system: two for the complex field, two for the split-complex ring, six for the quaternion algebra and twelve for the biquaternion algebra. The element classes are relative to the product, and the corpus studies them product by product, with the idempotents, the nilpotents, the zero divisors, the roots and the Peirce decomposition. The corpus also develops the <strong>sesqualgebras</strong>, the algebras whose product is conjugate-linear in the second slot, as the algebra companion of the sesquilinear form, with the conjugate module $A^{\varsigma}$ turning every statement into one about a bilinear map $A\times A^{\varsigma}\to A$; and it proves a <strong>Bochner theorem</strong> for the biquaternion transform, in the general plain sesquilinear form, for the roots that are skew-adjoint for the Hermitian conjugation, and in the measure-to-function direction, the representability half being left open. Its statement is also continuous: on a finite abelian group the criterion is group-dependent, since a group whose characters are all central makes every root positive definite.</p>
+<p>The corpus's most developed single system is the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, associative with zero divisors and isomorphic to the $2\times2$ complex matrices. Its four general products carry four forms, two of which do the two jobs the corpus keeps apart: the multiplicative form multiplies, the Hermitian form is definite, and no function is both. The four products split into twelve distinct products, the twelve structures of the biquaternioid space, of which two satisfy the identity of their kind and six fail it. The same construction is run over the smaller number systems, and it creates the corpus's new structures beside the classical product of each: two for the complex field, two for the split-complex ring, six for the quaternion algebra and twelve for the biquaternion algebra, named the <strong>complexoids</strong>, the <strong>split-complexoids</strong>, the <strong>quaternioids</strong> and the <strong>biquaternioids</strong> in that order, and all but the classical product are non-associative. The element classes are relative to the product, and the corpus studies them product by product, with the idempotents, the nilpotents, the zero divisors, the roots and the Peirce decomposition. The corpus also develops the <strong>sesqualgebras</strong>, the algebras whose product is conjugate-linear in the second slot, as the algebra companion of the sesquilinear form, with the conjugate module $A^{\varsigma}$ turning every statement into one about a bilinear map $A\times A^{\varsigma}\to A$; and it proves a <strong>Bochner theorem</strong> for the biquaternion transform, in the general plain sesquilinear form, for the roots that are skew-adjoint for the Hermitian conjugation, and in the measure-to-function direction, the representability half being left open. Its statement is also continuous: on a finite abelian group the criterion is group-dependent, since a group whose characters are all central makes every root positive definite.</p>
 <p>Most of the corpus restates established mathematics, ordered by dependency. What it adds is the organisation of one algebra and the study of the class of structures its products define, proved from the definitions, so that it needs no experiment and is where the corpus's contribution lies.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
@@ -352,11 +260,11 @@ $$</p>
 <tbody>
 <tr>
 <td>general, symmetric, antisymmetric; plain, quaternionic; algebra, sesqualgebra</td>
-<td>the three parts in the name of each of the twelve structures of the biquaternion space, in that order; the twelve names are given in full in <em>The Structures of the Number Systems</em></td>
+<td>the three parts in the name of each of the twelve biquaternioid structures, in that order: the operation, the first slot, and the family, the third part naming an algebra over $\mathbb{C}$ or a sesqualgebra over $(\mathbb{C},\bar\cdot)$</td>
 </tr>
 <tr>
 <td>$2,\,2,\,6,\,12$</td>
-<td>the number of structures carried by the complex numbers, the split-complex numbers, the quaternions and the biquaternions</td>
+<td>the number of structures the construction creates over the complex numbers, the split-complex numbers, the quaternions and the biquaternions, named the complexoids, the split-complexoids, the quaternioids and the biquaternioids; all but the classical product are non-associative</td>
 </tr>
 <tr>
 <td>$\varsigma$, $A^{\varsigma}$</td>

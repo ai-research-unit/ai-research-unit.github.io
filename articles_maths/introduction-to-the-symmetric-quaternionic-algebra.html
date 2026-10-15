@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction to the Symmetric Quaternionic Algebra — Biquaternion Universe</title>
+  <link rel="stylesheet" href="../assets/css/base.css">
+  <link rel="stylesheet" href="../assets/css/layout.css">
+  <link rel="stylesheet" href="../assets/css/article.css">
+
+  <!-- KaTeX: CSS + JS + auto-render -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+        integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
+        crossorigin="anonymous">
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"
+          integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8"
+          crossorigin="anonymous"></script>
+  <script defer
+          src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
+          integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+          crossorigin="anonymous"
+          onload="renderMathInElement(document.body, {
+            delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$',  right: '$',  display: false}
+            ],
+            macros: {
+              '\\dddot':   '\\overset{\\cdot\\cdot\\cdot}{#1}',
+              '\\slashed': '\\not{#1}'
+            },
+            throwOnError: false,
+            errorColor: '#c00'
+          });"></script>
+</head>
+<body>
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <a href="../index.html" class="site-title">Biquaternion Universe</a>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="../index.html">Index</a></li>
+      <li><a href="../maths.html">Maths</a></li>
+      <li><a href="../physics.html">Physics</a></li>
+      <li><a href="../disclaimer.html">Disclaimer</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-wrap">
+    <main class="article">
+      <div class="article-body">
+        <h1 id="introduction-to-the-symmetric-quaternionic-algebra"><strong>Introduction to the Symmetric Quaternionic Algebra</strong></h1>
+<h2 id="introduction">Introduction</h2>
+<p>The biquaternion space $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries four general products, and the second of them is the <strong>general quaternionic bilinear product</strong> $\tilde P^{\natural}\tilde Q$, the plain product with the natural conjugation read on the first factor (<em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em>). Every bilinear product on $\mathbb{B}$ splits into a symmetric part and an antisymmetric part, and this article is the introduction of the block that reads the symmetric part of $\tilde P^{\natural}\tilde Q$ as a multiplication:</p>
+<p>$$
+\tilde P\star\tilde Q = \tfrac12\bigl(\tilde P^{\natural}\tilde Q + \tilde Q^{\natural}\tilde P\bigr).
+$$</p>
+<p>The general construction of the splitting is <em>The Symmetric and Antisymmetric Parts of an Algebra Product</em>; here it is cited and not restated. The article establishes the elementary theory of the operation: its rule, its coefficient, the sixteen products of the basis, its laws — commutativity, and the failure of associativity, of power-associativity, of the Jordan identity, of the Jacobi identity and of the alternating law — its image, the absence of a unit, the square and its polarisation, and the placement of the structure $\mathrm{SQA}$ among the twelve. The name $\mathrm{SQA}$ and the verb <em>collapse</em> are the two threads: the operation collapses the whole space onto its central line, and every later article of the block is a reading of the single formula $\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0$.</p>
+<p><strong>Boundaries.</strong> The four general products and their comparison are <em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em> and <em>Comparison Between the Four General Products</em>; the catalogue of the twelve operations, whose row $\mathrm{SQA}$ is one line, is <em>The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>; the general definitions of the unit, the inverse, the zero divisor, the idempotent, the nilpotent and the root are <em>Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>; the remarkable subspaces are <em>Introduction to the Remarkable Subspaces</em>; the norm, its polarisation and its isotropic cone are <em>Norm and Invertibility in the General Quaternionic Algebra</em> and <em>Zero Divisors of the General Plain Algebra</em>; the Jordan theory and the symmetrisation of an associative product are <em>Jordan Algebras</em>. The companion articles of the block read the same operation through its form (<em>The Quaternion Form as a Product on the Symmetric Quaternionic Algebra</em>), on the remarkable subspaces (<em>Remarkable Subspaces under the Symmetric Quaternionic Algebra of Biquaternions</em>), through its multiplication operators (<em>The Multiplication Operators of the Symmetric Quaternionic Algebra</em>) and in the two matrix models.</p>
+<p><strong>Conventions.</strong> $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$, and central scalar imaginary $i$, $i^2=-1$. A general element is $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu=Q_0e_0+\vec Q$ with $Q_0\in\mathbb{C}$ and $\vec Q=Q_1e_1+Q_2e_2+Q_3e_3$, and $(\vec P,\vec Q)=\sum_{k=1}^{3}P_kQ_k$ is the complex bilinear form of the two vector parts. The <strong>natural conjugation</strong> is $\tilde Q^{\natural}=Q_0-\vec Q$, the <strong>star</strong> is $\tilde Q^{*}=\overline{Q_0}-\overline{\vec Q}$, and the <strong>Hermitian conjugation</strong> is $\overline{\tilde Q}=\tilde Q^{\natural*}$; all three fix $e_0$, and the star and the Hermitian conjugation are conjugate-linear. The <strong>centre</strong> of the plain product is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$, the <strong>vector subspace</strong> is $\mathrm{Vect}(\mathbb{B})=\mathbb{C}e_1+\mathbb{C}e_2+\mathbb{C}e_3$, and $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$, $\mathbb{M}_-$ are the remaining remarkable subspaces of <em>Introduction to the Remarkable Subspaces</em>. The symmetric quaternionic multiplication is denoted $\star$ throughout the Common Theory entries of the block and $\bullet$ in its Specific Theory and Operators entries; the two are the same operation.</p>
+<h2 id="the-operation">The Operation</h2>
+<p><strong>Definition.</strong> The <strong>symmetric quaternionic multiplication</strong> of $\mathbb{B}$ is the operation</p>
+<p>$$
+\tilde P\star\tilde Q = \tfrac12\bigl(\tilde P^{\natural}\tilde Q + \tilde Q^{\natural}\tilde P\bigr).
+$$</p>
+<p>It is the symmetric part of the general quaternionic product $\tilde P^{\natural}\tilde Q$ for the exchange of the two arguments (<em>The Symmetric and Antisymmetric Parts of an Algebra Product</em>), and its antisymmetric half is the quaternionic bracket</p>
+<p>$$
+[\tilde P,\tilde Q]_{\natural} = \tilde P^{\natural}\tilde Q - \tilde Q^{\natural}\tilde P
+$$</p>
+<p>of the antisymmetric quaternionic algebra (<em>Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions</em>). The two halves reconstruct the parent product,</p>
+<p>$$
+\tilde P^{\natural}\tilde Q = \tilde P\star\tilde Q + \tfrac12[\tilde P,\tilde Q]_{\natural},
+$$</p>
+<p>and the operation is the multiplication of the structure denoted $\mathrm{SQA}$ in <em>The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>. Both slots are read linearly: the operation is $\mathbb{C}$-bilinear, the class of the parent product, and no conjugation is inserted in either slot of $\star$.</p>
+<p><strong>Theorem (the value is central and the coefficient is the quaternion form).</strong> For all $\tilde P,\tilde Q\in\mathbb{B}$,</p>
+<p>$$
+\tilde P\star\tilde Q = N(\tilde P,\tilde Q)\,e_0,\qquad N(\tilde P,\tilde Q)=P_0Q_0+(\vec P,\vec Q).
+$$</p>
+<p><em>Proof.</em> Write $\tilde P^{\natural}\tilde Q$ in scalar and vector parts (<em>Introduction to the General Quaternionic Algebra of Biquaternions</em>): scalar part $P_0Q_0+(\vec P,\vec Q)$, vector part $P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$. The exchange $\tilde Q^{\natural}\tilde P$ has the same scalar part and the vector part $Q_0\vec P-P_0\vec Q-\vec Q\times\vec P$. In the half-sum the two mixed terms cancel and the two cross products cancel by $\vec P\times\vec Q=-\vec Q\times\vec P$.</p>
+<p>The coefficient $N$ is the <strong>quaternion form</strong>, the one of the four forms of the space that the catalogue article <em>The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em> attaches to $\mathrm{SQA}$; its comparison with the other three forms is <em>Comparison Between the Four General Products</em> and <em>The 4 Forms over the Biquaternion $\mathbb{C}$ Space</em>.</p>
+<p><strong>Corollary (the class and the commutativity).</strong> The operation is $\mathbb{C}$-bilinear and commutative, its value is always central, and its commutator vanishes identically,</p>
+<p>$$
+\tilde P\star\tilde Q=\tilde Q\star\tilde P,\qquad [\tilde P,\tilde Q]_{\star}=\tilde P\star\tilde Q-\tilde Q\star\tilde P=0 .
+$$</p>
+<p><em>Proof.</em> Bilinearity is read on the definition, the two slots being linear; commutativity is read on the defining half-sum; centrality is the theorem; and the commutator vanishes because the product is commutative.</p>
+<p><strong>Remark (the value is central although neither summand is).</strong> The two summands $\tilde P^{\natural}\tilde Q$ and $\tilde Q^{\natural}\tilde P$ are exchanged by the natural conjugation, $(\tilde P^{\natural}\tilde Q)^{\natural}=\tilde Q^{\natural}\tilde P$, and an average of two elements exchanged by an involution is fixed by it; the elements fixed by ${}^{\natural}$ are the central ones. This is the reason for the centrality, and the reason $\mathrm{SQA}$ behaves unlike the symmetric part of the plain product, which keeps a vector part. Every later statement of the block is a reading of the formula $\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0$; the operation is the pairing $N$ placed on the central line.</p>
+<h2 id="the-multiplication-table">The Multiplication Table</h2>
+<p>The product of two basis elements is read from the definition and tabulated.</p>
+<p><strong>Proposition (the basis table).</strong> For $\mu,\nu\in\{0,1,2,3\}$,</p>
+<p>$$
+e_\mu\star e_\nu = \delta_{\mu\nu}\,e_0 .
+$$</p>
+<p><em>Proof.</em> For $\mu=\nu=0$: $e_0\star e_0=\tfrac12(e_0e_0+e_0e_0)=e_0$, and $N(e_0,e_0)=1$. For $\mu=\nu=k\ne0$: $e_k\star e_k=e_k^{\natural}e_k=(-e_k)e_k=e_0$, since $e_k^2=-e_0$, and $N(e_k,e_k)=1$. For $\mu\ne\nu$: if both indices are nonzero then $e_\mu^{\natural}e_\nu=-e_\mu e_\nu$ and $e_\nu^{\natural}e_\mu=-e_\nu e_\mu$, and $e_\mu e_\nu=-e_\nu e_\mu$ for the basis, so the two summands cancel; if one index is $0$ and the other is $k\ne0$ then $e_0^{\natural}e_k=e_k$ and $e_k^{\natural}e_0=-e_k$, which cancel; so the value is $0=\delta_{\mu\nu}e_0$.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>$\star$</th>
+<th>$e_0$</th>
+<th>$e_1$</th>
+<th>$e_2$</th>
+<th>$e_3$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$e_0$</td>
+<td>$e_0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$e_1$</td>
+<td>$0$</td>
+<td>$e_0$</td>
+<td>$0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$e_2$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$e_0$</td>
+<td>$0$</td>
+</tr>
+<tr>
+<td>$e_3$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$0$</td>
+<td>$e_0$</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Corollary (bilinearity and the determination by the table).</strong> The sixteen products are exactly the sixteen entries of the unit matrix: the coefficient $N$ is the standard symmetric $\mathbb{C}$-bilinear form of $\mathbb{C}^4$, with Gram matrix the identity on the basis, and the operation is determined by its table, $(\sum_\mu P_\mu e_\mu)\star(\sum_\nu Q_\nu e_\nu)=\sum_\mu P_\mu Q_\mu\,e_0$.</p>
+<p><em>Proof.</em> The table gives $e_\mu\star e_\nu=\delta_{\mu\nu}e_0$, and bilinearity extends the display to the general pair; conversely the display evaluates the definition of $N$.</p>
+<p><strong>Remark (the table is not the one of the plain product).</strong> The plain product gives a fixed-point-free permutation table with signs (<em>Introduction to the Biquaternion Algebra</em>), and the quaternionic product one with the first column negated. The entry $e_\mu\star e_\nu$ is the symmetrisation of the second, and it is diagonal because the antisymmetric part is what carries the off-diagonal signs: the symmetric half of the quaternionic product keeps only the diagonal of the quaternionic table. The table is the smallest possible for a nonzero operation.</p>
+<h2 id="the-laws-of-the-operation">The Laws of the Operation</h2>
+<p>The operation is a commutative multiplication with zero commutator, and no further law survives. The reference for the laws is <em>Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em> §<em>The laws of a product</em>, and the reading of the twelve one by one is <em>The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>.</p>
+<h3 id="commutativity-and-the-collapse-of-the-derived-operation">Commutativity, and the Collapse of the Derived Operation</h3>
+<p>The operation is commutative, so its <strong>commutator</strong> vanishes identically and the derived operation is the zero operation. The derived algebra is therefore the central line $\mathbb{C}e_0$ alone, on which the operation is the multiplication of $\mathbb{C}$: for complex $A,B$,</p>
+<p>$$
+(Ae_0)\star(Be_0)=AB\,e_0 .
+$$</p>
+<p>The operation carries no Lie structure; the antisymmetric half of the parent carries it instead, and that half is $\mathrm{AQA}$.</p>
+<h3 id="associativity">Associativity</h3>
+<p><strong>Proposition (the operation is not associative).</strong> At $\tilde P=\tilde Q=e_1$, $\tilde R=e_0$ the two bracketings differ,</p>
+<p>$$
+(\tilde P\star\tilde Q)\star\tilde R=e_0\neq 0=\tilde P\star(\tilde Q\star\tilde R),
+$$</p>
+<p>and the general associator is</p>
+<p>$$
+(\tilde P\star\tilde Q)\star\tilde R-\tilde P\star(\tilde Q\star\tilde R)
+=\bigl(N(\tilde P,\tilde Q)R_0-P_0N(\tilde Q,\tilde R)\bigr)e_0 .
+$$</p>
+<p><em>Proof.</em> $(\tilde P\star\tilde Q)\star\tilde R=N(\tilde P,\tilde Q)e_0\star\tilde R=N(\tilde P,\tilde Q)R_0e_0$, and $\tilde P\star(\tilde Q\star\tilde R)=N(\tilde Q,\tilde R)\,P_0e_0$. At the witness the first is $N(e_1,e_1)e_0=e_0$ and the second $N(e_1,e_0)e_0=0$.</p>
+<h3 id="power-associativity">Power-Associativity</h3>
+<p><strong>Proposition (the operation is not power-associative).</strong> The bracketings of the fourth power do not agree. At $\tilde X=e_0+e_1$, whose square is $\tilde X\star\tilde X=2e_0$,</p>
+<p>$$
+(\tilde X\star\tilde X)\star(\tilde X\star\tilde X)=4e_0\neq 2e_0=\bigl((\tilde X\star\tilde X)\star\tilde X\bigr)\star\tilde X .
+$$</p>
+<p><em>Proof.</em> $\tilde X\star\tilde X=N(\tilde X)e_0=2e_0$. On the left the product is $2e_0\star2e_0=4e_0$. On the right, $(\tilde X\star\tilde X)\star\tilde X=2e_0\star\tilde X=2X_0e_0=2e_0$, and $2e_0\star\tilde X=2e_0$ again; so the right side is $2e_0$. The two differ, and the failure is not a failure of the commutator but of the associator: the first bracketing uses the square of the square, the second the cube.</p>
+<p>The three-element powers agree, since $\tilde X\star(\tilde X\star\tilde X)=(\tilde X\star\tilde X)\star\tilde X$ by commutativity; the failure appears at the fourth power, the first power at which two essentially different bracketings exist.</p>
+<h3 id="the-two-classical-identities">The Two Classical Identities</h3>
+<p><strong>Proposition (the Jordan identity fails).</strong> The commutative operation is not a Jordan product: with the parenthesisation of <em>Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>, the identity</p>
+<p>$$
+\tilde P\star\bigl(\tilde Q\star(\tilde P\star\tilde P)\bigr)
+=\bigl(\tilde P\star\tilde Q\bigr)\star\bigl(\tilde P\star\tilde P\bigr)
+$$</p>
+<p>fails, and at $\tilde P=\tilde Q=e_1$ the two sides are $0$ and $e_0$.</p>
+<p><em>Proof.</em> At $x=e_1$ the square is $x\star x=e_0$. The left side is $x\star(x\star e_0)=x\star N(x,e_0)e_0=x\star0=0$; the right side is $(x\star x)\star(x\star x)=e_0\star e_0=N(e_0,e_0)e_0=e_0$.</p>
+<p><strong>Proposition (the Jacobi identity fails).</strong> For the same product the identity</p>
+<p>$$
+\tilde X\star(\tilde Y\star\tilde Z)+\tilde Y\star(\tilde Z\star\tilde X)+\tilde Z\star(\tilde X\star\tilde Y)=0
+$$</p>
+<p>fails, and at $\tilde X=\tilde Y=\tilde Z=e_0$ its left side is $3e_0$.</p>
+<p><em>Proof.</em> $\tilde Y\star\tilde Z=N(\tilde Y,\tilde Z)e_0$, so the first term is $X_0N(\tilde Y,\tilde Z)e_0$ and the sum is $\bigl(X_0N(\tilde Y,\tilde Z)+Y_0N(\tilde Z,\tilde X)+Z_0N(\tilde X,\tilde Y)\bigr)e_0$, which at the three units is $3e_0$.</p>
+<p><strong>Proposition (the alternating law fails).</strong> The operation is not alternating: $e_0\star e_0=e_0\neq0$, so there is an element whose square does not vanish.</p>
+<p>The operation is therefore neither associative, nor power-associative, nor a Jordan product, nor a Lie bracket. It is one of the two central operations of the twelve, the other being the symmetric part of the plain sesquilinear product, and the collapse of the commutator does not imply the collapse of the associator.</p>
+<h2 id="the-image-and-the-unit">The Image and the Unit</h2>
+<p><strong>Proposition (the image is the central line).</strong> The image of $\star$ is the central line $\mathbb{C}e_0=\mathbb{C}_{\mathbb{B}}$, on which the operation is the multiplication of $\mathbb{C}$.</p>
+<p><em>Proof.</em> Every value is central by the theorem of §<em>The Operation</em>, and every central element is a complex multiple of $e_0$.</p>
+<p><strong>Proposition (there is no unit).</strong> The operation has no unit, and no one-sided unit either. For every element $\tilde A$,</p>
+<p>$$
+\tilde A\star e_0=e_0\star\tilde A=A_0\,e_0 ,
+$$</p>
+<p>so $e_0$ is a unit for the central line alone. An element $u$ with $u\star\tilde Q=\tilde Q$ for every $\tilde Q$ would give $u\star e_0=u_0e_0=e_0$, hence $u_0=1$, and then $u\star e_1=u_1e_0=e_1$, which is impossible because $u_1e_0$ is central and $e_1$ is not.</p>
+<p><em>Proof.</em> The display is the theorem at $\tilde Q=e_0$: $N(\tilde A,e_0)=A_0=N(e_0,\tilde A)$. The unit argument is the one displayed; the same computation with the argument $e_1$ excludes a right unit.</p>
+<p><strong>Remark (the centre of the operation and the centre of the plain product).</strong> Two different sets could be called central and are kept apart. Because $\star$ is commutative, its mutual commutant is the whole space: every element commutes with every other under $\star$. The centre of the <em>plain</em> product is the line $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$, and that is the set in which the <em>values</em> of $\star$ lie. The operation is thus commutative everywhere while producing values in the centre of the algebra, and the two statements are not merged.</p>
+<p><strong>Remark (the operation acts by the scalar part).</strong> Multiplication by the central element $Ae_0$ is the map $\tilde Q\mapsto AQ_0e_0$: the scalar part of the argument, scaled and placed in the centre. The vector part of any argument is annihilated by the product with any element of the image. The operation is accordingly a representation of $\mathbb{C}$ on the central line rather than the multiplication of a unital algebra, and the first row and the first column of the table are the identity row and the identity column while the three vector rows and columns are zero.</p>
+<h2 id="the-square-and-its-polarisation">The Square and Its Polarisation</h2>
+<p><strong>Proposition (the square).</strong> For every $\tilde Q$,</p>
+<p>$$
+\tilde Q\star\tilde Q = N(\tilde Q)\,e_0,\qquad N(\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^2,
+$$</p>
+<p>and the coefficient is the polarisation of the square,</p>
+<p>$$
+\tilde P\star\tilde Q=\tfrac12\Bigl(N(\tilde P+\tilde Q)-N(\tilde P)-N(\tilde Q)\Bigr)e_0 .
+$$</p>
+<p><em>Proof.</em> The square is the theorem of §<em>The Operation</em> at $\tilde P=\tilde Q$, and $N(\tilde Q,\tilde Q)=\sum_\mu Q_\mu^2$; the polarisation identity is the expansion of the square of $\tilde P+\tilde Q$ by bilinearity.</p>
+<p><strong>Corollary (the square is the norm of the parent product).</strong> The diagonal $N$ of the form of the block is exactly the multiplicative norm of the general plain algebra, $N(\tilde Q)=\tilde Q\tilde Q^{\natural}$ (<em>Norm and Invertibility in the General Quaternionic Algebra</em>), and the square-zero elements of the block are the elements of the isotropic cone of that norm. The two readings are kept apart in the articles of the block: $N$ is multiplicative for the parent product, while the block itself carries no unit and no multiplicative norm, and $N$ is only bilinear.</p>
+<h2 id="the-placement-among-the-twelve">The Placement Among the Twelve</h2>
+<p>The twelve operations are the four general products and their two parts each; $\star$ is the symmetric part of the general quaternionic product, and its antisymmetric half is the bracket $[\cdot,\cdot]_{\natural}$. The two halves reconstruct the parent,</p>
+<p>$$
+\mathrm{GQA}=\mathrm{SQA}+\mathrm{AQA},\qquad
+\tilde P^{\natural}\tilde Q=\tilde P\star\tilde Q+\tfrac12[\tilde P,\tilde Q]_{\natural},
+$$</p>
+<p>with $\mathrm{SQA}$ one of the two central operations and $\mathrm{AQA}$ one of the four antisymmetric ones (<em>The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>).</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>the reading</th>
+<th>the value</th>
+<th>the class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathrm{GQA}$</td>
+<td>$\tilde P^{\natural}\tilde Q$</td>
+<td>$\mathbb{C}$-bilinear, no unit</td>
+</tr>
+<tr>
+<td>$\mathrm{SQA}$</td>
+<td>$\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$</td>
+<td>$\mathbb{C}$-bilinear, commutative, central values, no unit</td>
+</tr>
+<tr>
+<td>$\mathrm{AQA}$</td>
+<td>$\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$</td>
+<td>$\mathbb{C}$-bilinear, alternating, no unit</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The two contrasts.</strong> The operation differs from the symmetric part of the <strong>plain</strong> product, which is the Jordan product with the unit $e_0$, which is commutative and not central-valued, and which satisfies the Jordan identity; and it differs from the symmetric part of the <strong>plain sesquilinear</strong> product, which is central-valued like $\mathrm{SQA}$ but conjugate-commutative rather than commutative. On the real elements the two central operations coincide, $\mathrm{SQA}=\mathrm{SPS}$, and the catalogue records ten distinct operations on the real part against twelve on the complex space (<em>The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>). The exclusive law that singles $\mathrm{SQA}$ out among the twelve is stated in <em>The Specificities of the Symmetric Quaternionic Algebra</em>; the element theory of the block is the subject of the six later Common Theory entries.</p>
+<p><strong>Remark (the name and what it does not claim).</strong> The trailing $\mathrm A$ records that the operation is $\mathbb{C}$-bilinear and not merely sesquilinear, since the general quaternionic product from which it is taken is $\mathbb{C}$-bilinear. The word <em>symmetric</em> refers to the symmetry of the two slots, and the word <em>quaternionic</em> to the conjugation inserted in the parent product; neither word is a claim about a further structure.</p>
+<h2 id="summary">Summary</h2>
+<p>The symmetric part of the general quaternionic product $\tilde P^{\natural}\tilde Q$ is the commutative $\mathbb{C}$-bilinear operation $\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$, whose value is always the central element $N(\tilde P,\tilde Q)e_0$ with $N(\tilde P,\tilde Q)=P_0Q_0+(\vec P,\vec Q)$ the quaternion form. The sixteen basis products are the entries of the unit matrix, $e_\mu\star e_\nu=\delta_{\mu\nu}e_0$, so the operation is the standard symmetric form of $\mathbb{C}^4$ read as a product and is determined by its table. The image is the central line $\mathbb{C}_{\mathbb{B}}$, on which the operation is the multiplication of $\mathbb{C}$; there is no unit and no one-sided unit, the element $e_0$ being a unit for the central line alone. The operation is commutative with vanishing commutator, and it fails associativity at $(e_1,e_1,e_0)$, power-associativity at $e_0+e_1$, the Jordan identity at $e_1$, the Jacobi identity at $e_0$ and the alternating law at $e_0$; the collapse of the commutator does not imply the collapse of the associator. The square is the norm of the parent product, $\tilde Q\star\tilde Q=N(\tilde Q)e_0$ with $N(\tilde Q)=\sum_\mu Q_\mu^2$, and its polarisation is the form $N(\tilde P,\tilde Q)$. The operation is the unique central and commutative one among the six $\mathbb{C}$-bilinear operations of the catalogue, and it collapses on the real part with the symmetric part of the plain sesquilinear product; the companion articles of the block read it through its form, its subspaces, its operators and its matrix models.</p>
+<h2 id="summary-of-notation">Summary of Notation</h2>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>symbol</th>
+<th>meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$\mathbb{B}$</td>
+<td>the biquaternion algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$</td>
+</tr>
+<tr>
+<td>$e_0,e_1,e_2,e_3$</td>
+<td>the basis, $e_0$ the identity, $e_k^2=-e_0$, $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$</td>
+</tr>
+<tr>
+<td>${}^{\natural}$, ${}^{*}$, $\overline{\cdot}$</td>
+<td>the natural, the star and the Hermitian conjugations, all fixing $e_0$</td>
+</tr>
+<tr>
+<td>$i$</td>
+<td>the central scalar imaginary, $i^2=-1$</td>
+</tr>
+<tr>
+<td>$\tilde P^{\natural}\tilde Q$</td>
+<td>the general quaternionic bilinear product, the parent product</td>
+</tr>
+<tr>
+<td>$\tilde P\star\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q+\tilde Q^{\natural}\tilde P)$</td>
+<td>the symmetric quaternionic multiplication, the operation $\mathrm{SQA}$</td>
+</tr>
+<tr>
+<td>$[\tilde P,\tilde Q]_{\natural}=\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P$</td>
+<td>the quaternionic bracket, the operation $\mathrm{AQA}$</td>
+</tr>
+<tr>
+<td>$N(\tilde P,\tilde Q)=P_0Q_0+(\vec P,\vec Q)$</td>
+<td>the quaternion form, the coefficient of the product</td>
+</tr>
+<tr>
+<td>$N(\tilde Q)=N(\tilde Q,\tilde Q)=\sum_\mu Q_\mu^2$</td>
+<td>the norm form, the diagonal of $N$, the norm of the parent product</td>
+</tr>
+<tr>
+<td>$\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$</td>
+<td>the centre of the plain product, the image of $\star$</td>
+</tr>
+<tr>
+<td>$\mathrm{GQA},\mathrm{SQA},\mathrm{AQA}$</td>
+<td>the three operations of the quaternionic row of the catalogue</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="further-reading">Further Reading</h2>
+<ul>
+<li><em>The Symmetric and Antisymmetric Parts of an Algebra Product</em> (<code>articles_maths/the-symmetric-and-antisymmetric-parts-of-an-algebra-product.md</code>), for the splitting that produces the operation.</li>
+<li><em>Introduction to the General Quaternionic Algebra of Biquaternions</em> (<code>articles_maths/introduction-to-the-general-quaternionic-algebra.md</code>), for the parent product and its scalar–vector form.</li>
+<li><em>The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em> (<code>articles_maths/the-algebraic-structures-over-the-biquaternioid-c-space.md</code>), for the row of $\mathrm{SQA}$ in the catalogue.</li>
+<li><em>Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions</em> (<code>articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra.md</code>), for the other half of the row.</li>
+<li><em>Norm and Invertibility in the General Quaternionic Algebra</em> (<code>articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.md</code>) and <em>Zero Divisors of the General Plain Algebra</em> (<code>articles_maths/zero-divisors-of-the-biquaternion-algebra.md</code>), for the norm form, its polarisation and its isotropic cone.</li>
+<li><em>Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em> (<code>articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md</code>), for the general definitions of the unit, the inverse, the zero divisor, the idempotent, the nilpotent, the root and the laws of a product.</li>
+<li><em>The Specificities of the Symmetric Quaternionic Algebra</em> (<code>articles_maths/the-specificities-of-the-symmetric-quaternionic-algebra.md</code>), for the exclusive law of the block.</li>
+</ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

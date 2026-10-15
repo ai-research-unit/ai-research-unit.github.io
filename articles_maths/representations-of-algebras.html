@@ -166,18 +166,18 @@ $$</p>
 <h2 id="path-algebras-and-representation-type">Path Algebras and Representation Type</h2>
 <p>The representations of an arbitrary finite-dimensional algebra can be reduced to those of a combinatorially given quotient of a free algebra, and this is the second device, after the structure theorem, by which representations of algebras are classified.</p>
 <h3 id="quivers-and-their-representations">Quivers and their representations</h3>
-<p>A <strong>quiver</strong> $Q$ consists of a set of vertices $Q_0$, a set of arrows $Q_1$, and maps $s,t:Q_1\to Q_0$ assigning to an arrow its source and target; it is finite when both sets are finite. A <strong>representation</strong> of $Q$ over $F$ assigns to each vertex $x$ a vector space $V_x$ and to each arrow $a:x\to y$ a linear map $V_a:V_x\to V_y$; a morphism of representations is a family of linear maps $V_x\to W_x$ making all the squares commute. The <strong>dimension vector</strong> of a representation is</p>
+<p>A <strong>quiver</strong> $Q$ consists of a set of vertices $Q_0$, a set of arrows $Q_1$, and maps $s,t:Q_1\to Q_0$ assigning to an arrow its source and target; it is finite when both sets are finite. A <strong>representation</strong> of $Q$ over $F$ assigns to each vertex $i$ a vector space $V_i$ and to each arrow $a:i\to j$ a linear map $V_a:V_i\to V_j$; a morphism of representations is a family of linear maps $V_i\to W_i$ making all the squares commute. The <strong>dimension vector</strong> of a representation is</p>
 <p>$$
-\underline{\dim}\,V=(\dim_F V_x)_{x\in Q_0}\in\mathbb{N}^{Q_0}.
+\underline{\dim}\,V=(\dim_F V_i)_{i\in Q_0}\in\mathbb{N}^{Q_0}.
 $$</p>
 <h3 id="the-path-algebra">The path algebra</h3>
-<p>The <strong>path algebra</strong> $FQ$ has as an $F$-basis the paths of $Q$, including the trivial path $e_x$ of length zero at each vertex, and its product is concatenation of composable paths and zero otherwise. It is an associative algebra with unit $\sum_{x\in Q_0}e_x$, the $e_x$ are orthogonal idempotents, and the decomposition</p>
+<p>The <strong>path algebra</strong> $FQ$ has as an $F$-basis the paths of $Q$, including the trivial path $e_i$ of length zero at each vertex, and its product is concatenation of composable paths and zero otherwise. It is an associative algebra with unit $\sum_{i\in Q_0}e_i$, the $e_i$ are orthogonal idempotents, and the decomposition</p>
 <p>$$
-FQ=\bigoplus_{x,y\in Q_0}e_xFQe_y
+FQ=\bigoplus_{i,j\in Q_0}e_iFQe_j
 $$</p>
-<p>writes $FQ$ as a direct sum of the subspaces spanned by paths from $x$ to $y$. The construction converts representations into modules:</p>
-<p><strong>Proposition.</strong> For every finite quiver $Q$ there is an equivalence of categories $\operatorname{Mod}(FQ)\simeq\operatorname{Rep}_F(Q)$, under which a representation $V$ corresponds to the module $\bigoplus_{x\in Q_0}V_x$ with each path acting as the composite of its arrow maps.</p>
-<p>For a finite quiver without oriented cycles, $FQ$ is finite-dimensional, with $\dim_F FQ$ equal to the number of paths, and hereditary; the simple $FQ$-modules are the one-dimensional modules $S_x=FQe_x/\operatorname{rad}(FQ)e_x$ supported at the vertices, and the indecomposable projective modules are the $FQe_x$, of dimension vectors counting the paths starting at $x$. A representation is thus a module, and the dimension vector is its coarsest invariant.</p>
+<p>writes $FQ$ as a direct sum of the subspaces spanned by paths from $i$ to $j$. The construction converts representations into modules:</p>
+<p><strong>Proposition.</strong> For every finite quiver $Q$ there is an equivalence of categories $\operatorname{Mod}(FQ)\simeq\operatorname{Rep}_F(Q)$, under which a representation $V$ corresponds to the module $\bigoplus_{i\in Q_0}V_i$ with each path acting as the composite of its arrow maps.</p>
+<p>For a finite quiver without oriented cycles, $FQ$ is finite-dimensional, with $\dim_F FQ$ equal to the number of paths, and hereditary; the simple $FQ$-modules are the one-dimensional modules $S_i=FQe_i/\operatorname{rad}(FQ)e_i$ supported at the vertices, and the indecomposable projective modules are the $FQe_i$, of dimension vectors counting the paths starting at $i$. A representation is thus a module, and the dimension vector is its coarsest invariant.</p>
 <h3 id="gabriels-theorem-and-the-structure-of-basic-algebras">Gabriel's theorem and the structure of basic algebras</h3>
 <p><strong>Theorem (Gabriel).</strong> Let $Q$ be a finite connected quiver without oriented cycles and let $F$ be algebraically closed. Then $FQ$ has finitely many isomorphism classes of indecomposable representations if and only if the underlying undirected graph of $Q$ is one of the Dynkin diagrams $A_n$, $D_n$, $E_6$, $E_7$, $E_8$; in that case the indecomposable representations are in bijection with the positive roots of the corresponding root system, and their dimension vectors are exactly those roots.</p>
 <p>The passage from a quiver to an arbitrary algebra is given by the following standard structure theorem.</p>
@@ -286,7 +286,7 @@ $$</p>
 <td>quiver representations and modules over the path algebra</td>
 </tr>
 <tr>
-<td>$FQ$, $e_x$</td>
+<td>$FQ$, $e_i$</td>
 <td>path algebra and the trivial path at a vertex</td>
 </tr>
 <tr>

@@ -114,6 +114,13 @@ $$</p>
 <td>Real, $q_\mu$</td>
 </tr>
 <tr>
+<td>$\mathbb{B}_{\mathrm{r}}$</td>
+<td>Reduced biquaternions</td>
+<td>$T = A + Be$</td>
+<td>Scalar $A$, vector $Be$</td>
+<td>Complex, $A = a + ia'$, $B = b + ib'$</td>
+</tr>
+<tr>
 <td>$\mathbb{B}$</td>
 <td>Biquaternions</td>
 <td>$\tilde Q = Q_0e_0 + Q_1e_1 + Q_2e_2 + Q_3e_3$</td>
@@ -122,17 +129,17 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>Four rules are read off the table. <strong>A complex element carries a majuscule</strong>, $A$, the case naming the scalar sector: an upper-case glyph has a scalar sector larger than the reals, a lower-case one has the reals. <strong>The second coordinate of a complex element carries a prime</strong>, $A = a + ia'$. And <strong>the quaternionic elements carry a tilde</strong>: lower case for the quaternions, $\tilde q$, and upper case for the biquaternions, $\tilde Q$. Finally, <strong>the element is a scalar part plus a vector part</strong>: the scalar part is carried by the unit — $1$ in $\mathbb{C}$, $e_0$ in $\mathbb{H}$ and $\mathbb{B}$ — and the vector part by the remaining basis directions, carrying the arrow, $\vec q$ or $\vec Q$, so that $\tilde Q = Q_0e_0 + \vec Q$ with $\vec Q = Q_1e_1 + Q_2e_2 + Q_3e_3$ and $Q_\mu = q_\mu + iq'_\mu$. The arrow is reserved for the vector part of a named element, and the hat for a pure element, one with no scalar part (§<em>Pure Elements and their Coefficients</em>): the vector part of $\tilde{Q}$ is $\vec{Q}$, a pure element standing by itself is $\hat q$ or $\hat Q$, and a unit pure quaternion is written $\hat u$. The two marks are never stacked.</p>
+<p>Five rules are read off the table. <strong>A complex element carries a majuscule</strong>, $A$ or $B$, the case naming the scalar sector: an upper-case glyph has a scalar sector larger than the reals, a lower-case one has the reals. <strong>The second coordinate of a complex element carries a prime</strong>, $A = a + ia'$. And <strong>the quaternionic elements carry a tilde</strong>: lower case for the quaternions, $\tilde q$, and upper case for the biquaternions, $\tilde Q$; <strong>the reduced biquaternion element carries no tilde</strong>, $T = A + Be$, its algebra $\mathbb{B}_{\mathrm{r}} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}$ being commutative and having no quaternionic factor. Finally, <strong>the element is a scalar part plus a vector part</strong>: the scalar part is carried by the unit — $1$ in $\mathbb{C}$ and $\mathbb{B}_{\mathrm{r}}$, $e_0$ in $\mathbb{H}$ and $\mathbb{B}$ — and the vector part by the remaining basis directions, carrying the arrow, $\vec q$ or $\vec Q$, so that $\tilde Q = Q_0e_0 + \vec Q$ with $\vec Q = Q_1e_1 + Q_2e_2 + Q_3e_3$ and $Q_\mu = q_\mu + iq'_\mu$. The arrow is reserved for the vector part of a named element, and the hat for a pure element, one with no scalar part (§<em>Pure Elements and their Coefficients</em>): the vector part of $\tilde{Q}$ is $\vec{Q}$, a pure element standing by itself is $\hat q$ or $\hat Q$, and a unit pure quaternion is written $\hat u$. The two marks are never stacked.</p>
 <p><strong>The element with its vector.</strong> The rules collect into a scalar part beside a vector part,</p>
 <p>$$
-\tilde q = q_0e_0 + \vec q , \qquad \tilde Q = Q_0e_0 + \vec Q .
+\tilde q = q_0e_0 + \vec q , \qquad \tilde Q = Q_0e_0 + \vec Q , \qquad T = A + Be .
 $$</p>
 <p>with</p>
 <p>$$
 \vec q = q_1e_1 + q_2e_2 + q_3e_3 , \qquad \vec Q = Q_1e_1 + Q_2e_2 + Q_3e_3 .
 $$</p>
-<p>The first is the general quaternion and the second the general biquaternion, each written as a scalar part beside a vector part.</p>
-<p>The notation of this article already reads through the convention: the coefficients $q_\mu$ are real, the coefficients $Q_\mu = q_\mu + iq'_\mu$ are complex, and a general element of $\mathbb{B}$ is written $\tilde Q$.</p>
+<p>The first is the general quaternion, the second the general biquaternion, and the third the general reduced biquaternion, each written as a scalar part beside a vector part.</p>
+<p>The notation of this article already reads through the convention: the coefficients $q_\mu$ are real, the coefficients $Q_\mu = q_\mu + iq'_\mu$ are complex, the two coordinates $A = a + ia'$ and $B = b + ib'$ of the reduced biquaternion $T$ are complex, and a general element of $\mathbb{B}$ is written $\tilde Q$.</p>
 <p><strong>The generic element and the four-momentum share the letter $\tilde{P}$.</strong> A statement that holds for every element is written with $\tilde{P}$ or $\tilde{Q}$ — the trace pairing $\mathrm{Tr}(\tilde{P}\tilde{Q}) = 2\,\mathrm{Sc}(\tilde{P}\tilde{Q})$, the commutator bracket $[\tilde{P},\tilde{Q}] = \tilde{P}\tilde{Q} - \tilde{Q}\tilde{P}$, the general quaternionic bilinear form $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ and the multiplicativity $\langle\tilde{P}\tilde{Q},\tilde{P}\tilde{Q}\rangle_{\natural} = \langle\tilde{P},\tilde{P}\rangle_{\natural}\,\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$ — and the same letter names a four-momentum or four-vector, $\tilde{P} = m\tilde{V}$, the four-velocity being $\tilde{V}$. Both roles are inherited from the mathematical corpus, where <em>Idempotents of the General Plain Algebra</em> writes the generic element $\tilde{P}$ beside the idempotent $\tilde{\Pi}$.</p>
 <p><strong>What the prime marks.</strong> The prime belongs to the <strong>coefficients</strong>, not to the physical coordinates. The four coefficients of a general element are complex, and writing each as a real part plus $i$ times a real part,</p>
 <p>$$
@@ -335,7 +342,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>The basis of each, the coefficients it takes and the physical coordinates those carry are the table of §<em>The Coordinate Dictionary and the Sector Names</em>.</p>
-<p><strong>Compact and non-compact directions.</strong> A direction is <strong>compact</strong> when the one-parameter group it generates is a circle and <strong>non-compact</strong> when it is a hyperbola. The three real vector units $e_1,e_2,e_3$ generate the compact directions, the three imaginary units $ie_1,ie_2,ie_3$ the non-compact ones, and the complex vector subspace carries both. The Lie algebra this gives is <em>Angular Momentum and the Lie Algebra of the Material Sector</em>.</p>
+<p><strong>Compact and non-compact directions.</strong> A direction is <strong>compact</strong> when the one-parameter group it generates is a circle and <strong>non-compact</strong> when it is a hyperbola. The three real vector units $e_1,e_2,e_3$ generate the compact directions, the three imaginary units $ie_1,ie_2,ie_3$ the non-compact ones, and the complex vector subspace carries both. The Lie algebra this gives is <em>The Biquaternioid Antisymmetric Plain Algebra (APA) over $\mathbb{C}$</em>.</p>
 <p>The subspaces are treated one by one in the owner articles: $\mathbb{C}_{\mathbb{B}}$ in <em>Other Remarkable Subspaces</em>, §<em>The Complex Time Sector</em>; $\mathrm{Vect}(\mathbb{B})$ in §<em>The Complex Space Sector</em>; $\mathbb{H}_{\mathbb{B}}$ in §<em>The Real Sector</em>; $i\mathbb{H}_{\mathbb{B}}$ in §<em>The Imaginary Sector</em>; and the two sectors in <em>The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector</em> and <em>The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector</em>.</p>
 <h2 id="the-coordinate-dictionary-and-the-sector-names">The Coordinate Dictionary and the Sector Names</h2>
 <p>The dictionary between the parameters and the physical coordinates is fixed once and for all,</p>
@@ -465,6 +472,7 @@ $$</p>
 </table></div>
 <p><strong>The code is read letter by letter.</strong> The first letter says which of the three operations of a row — $\mathrm G$ the general product, $\mathrm S$ its symmetric part, $\mathrm A$ its antisymmetric part; the second says which of the two products — $\mathrm P$ the plain one, whose first slot is read as it stands, and $\mathrm Q$ the quaternionic one, whose first slot carries ${}^{\natural}$; and the third says the family — $\mathrm A$ the <strong>algebra</strong> over $\mathbb{C}$, whose three products are $\mathbb{C}$-bilinear, and $\mathrm S$ the <strong>sesqualgebra</strong> over $(\mathbb{C},\bar{\cdot})$, whose three products are sesquilinear. The four general products are the multiplications of the four general structures of the band; the eight parts are the symmetric and antisymmetric products beside them; and the twelve codes together name the twelve algebraic structures of <em>The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space</em>.</p>
 <p>The products themselves — their coordinates, their laws, their units and their images — are <em>The 12 Products of the Biquaternion Complex Space</em>, and the grid of the four general products is <em>The Four General Products and the Degree-2 Forms of the Biquaternion Space</em>.</p>
+<p><strong>The same code on the reduced biquaternion space.</strong> The construction is not special to $\mathbb{B}$. On the commutative algebra $\mathbb{B}_{\mathrm{r}} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{C} \cong \mathbb{C}\oplus\mathbb{C}$ — the reduced biquaternions, equivalently the tessarines or the double-complex numbers — the same four general products exist, $\mathrm{GPA}$, $\mathrm{GQA}$, $\mathrm{GPS}$ and $\mathrm{GQS}$, and each splits into a symmetric and an antisymmetric part by the two exchanges. Because the algebra is <strong>commutative</strong>, four of the twelve codes name no new operation there: $\mathrm{SPA} = \mathrm{GPA}$ and $\mathrm{SQS} = \mathrm{GQS}$, while $\mathrm{APA} = 0$ and $\mathrm{AQS} = 0$. The space therefore carries <strong>eight distinct algebraic structures</strong> — $\mathrm{GPA}$, $\mathrm{GQA}$, $\mathrm{GPS}$, $\mathrm{GQS}$ and the four live halves $\mathrm{SQA}$, $\mathrm{AQA}$, $\mathrm{SPS}$, $\mathrm{APS}$ — and the twelve slots, the four that collapse and the eight that remain are <em>The 12 Products of the Reduced Biquaternion Complex Space</em> and <em>The Algebraic Structures over the Reduced Biquaternion $\mathbb{C}$ Space</em> of the mathematical corpus, whose category is <em>Reduced Biquaternions</em>. The letter $\mathrm Q$ keeps its sense there — the first slot read through ${}^{\natural}$, the tessarine conjugation $e\mapsto-e$ — as in the band above.</p>
 <h2 id="the-involutions-and-the-four-forms">The Involutions and the Four Forms</h2>
 <p>The algebra carries four conjugations, and on it there are four forms, indexed by a pair of maps, one in each slot of the pairing. One rule ties the two lists together, and that rule is what lets the series say which form is the metric and which is the inner product without having to choose.</p>
 <p><strong>The setting.</strong> $\mathbb{B}$ is a $\mathbb{C}$-algebra whose centre is $\mathbb{C}$, so every complex scalar is central, $\lambda\tilde{Q} = \tilde{Q}\lambda$ for all $\lambda \in \mathbb{C}$, which is the property that makes "$\mathbb{C}$-bilinear" well defined on $\mathbb{B}$; the scalar part $\mathrm{Sc}(\tilde{Q}) = \tilde{Q}_0$ is $\mathbb{C}$-linear. The centre is treated in <em>Other Remarkable Subspaces</em>, §<em>The Complex Time Sector</em>, and the forms of the algebra in <em>Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with Hermitian Adjoint</em> and its mathematical twin <em>Hermitian Forms over an Involution Ring and the Unitary Witt Group with Hermitian Adjoint</em>, and, on the side of positivity, in <em>Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint</em>.</p>
@@ -921,16 +929,16 @@ $$</p>
 \Box = \partial_{ict}^2 + \Delta = -\partial_0^2 + \nabla^2 ,
 $$</p>
 <p>and the mass equation is the series equation $\left(\Box - m^2c^2/\hbar^2\right)\psi = 0$. <strong>No article of the series defines a second d'Alembertian</strong>, and no mass-term sign is left to a local convention.</p>
-<h2 id="the-real-structure-math740">The Real Structure $\flat$</h2>
-<h3 id="what-math741-is">What $\flat$ Is</h3>
+<h2 id="the-real-structure-math776">The Real Structure $\flat$</h2>
+<h3 id="what-math777-is">What $\flat$ Is</h3>
 <p>The map</p>
 <p>$$
 \tilde{\Psi}^\flat = -\tilde{\Psi}^{*} = -\overline{\tilde{\Psi}^{\natural}}
 $$</p>
 <p>is the <strong>anti-Hermitian conjugation</strong>, the negative of the star, and the algebra's <strong>real structure</strong> (§<em>The Conjugations and the Adjoint</em>). The sign convention on the two sectors is what makes $\mathbb{M}_-$ the material sector, and $\flat$'s fixed space is that sector (§<em>The Remarkable Subspaces</em>).</p>
-<h3 id="what-math745-is-for">What $\flat$ Is For</h3>
+<h3 id="what-math781-is-for">What $\flat$ Is For</h3>
 <p>$\flat$ is retained for conjugation and for the definition of the $\mathbb{M}_\pm$ split itself, for the trace and the bilinear pairings, and for the real-form question of Dirac versus Majorana fermions, which the companion articles on chirality, the neutrino and the CPT theorem develop. In every case the coupling built on $\flat$ pairs $\tilde{\Psi}$ with $\tilde{\Psi}^\flat$.</p>
-<h3 id="what-math751-is-not">What $\flat$ Is Not</h3>
+<h3 id="what-math787-is-not">What $\flat$ Is Not</h3>
 <p>$\flat$ is <strong>not</strong> the mass. The two roles were conflated in the retired form $\tilde{\nabla}\tilde{\Psi} = m\tilde{\Psi}^\flat$, and separating them is the content of the mass-term convention of <em>The Dirac Equation in Biquaternionic Form</em>. A reader who finds $\flat$ in an article should expect conjugation, a bilinear, or the sector split — never a mass.</p>
 <p>$\flat$ is <strong>not</strong> the charge conjugation either. It has the <strong>shape</strong> of a charge-conjugation pairing — it pairs an element with its own conjugate — but the operation called charge conjugation is the conjugate-linear pseudoautomorphism $\bar A=\Pi A^{*}\Pi^{-1}$, whose module form is $C[\psi]=i\gamma^{2}\psi^{*}$, and the operation is owned by <em>Charge Conjugation and the Division Ring: Charged, Neutral and Truly Neutral Particles in Biquaternionic Form</em>. The four levels of the name — the algebra's real structure $\flat$, the Clifford pseudoautomorphism, the module operation $C$, and the module real structure $\bar{\cdot}$ — are tabulated in <em>Antilinear Structure and the Two Kinds of Mass in Biquaternionic Form</em>.</p>
 <p><strong>$\flat$ and the Klein four.</strong> The four involutions $\{1,\bar{\cdot},{}^{\natural},{}^{*}\}$ form a <strong>Klein four group</strong> under composition, and $\flat=-{}^{*}$ is the <strong>fourth character</strong> and not a fourth element: it is minus the star, and its fixed space is the material sector. A reviewer must not treat $\flat$ as an independent involution. The Klein four and the four block characters are <em>Relations Between Subspaces</em>; the two $\mathbb{Z}_2$ decompositions that cannot be aligned are <em>The Centre of the Biquaternion Algebra as the Classical Sector</em>.</p>
@@ -965,6 +973,45 @@ $$</p>
 <p><strong>When it is written.</strong> The rule is <strong>collision, not layer</strong>. The mark is written where the operator's letter would otherwise be read as an element of the algebra — the ladders $a^{\mathrm{fop}}$, $b^{\mathrm{fop}}$, the field $\psi^{\mathrm{fop}}$, the Hamiltonian $H^{\mathrm{fop}}$, the number $N^{\mathrm{fop}}$, the spin $S^{\mathrm{fop}}$, the momentum $p^{\mathrm{fop}}$, the fermion number $F^{\mathrm{fop}}$, the charge $Q^{\mathrm{fop}}$ — and it is left off where no such reading is possible. The structural operators on the algebra carry glyphs of their own and no superscript: the left and right multiplications $L_{\tilde Q}$ and $R_{\tilde Q}$, the sandwich $\operatorname{H}_{\tilde Q}$, the derivations, the automorphisms, and the rotation rotor $\tilde u$, which is an element of $Sp(1)$ and an operator only through its action.</p>
 <p><strong>It combines with the dagger, operator first.</strong> The dagger is the general adjoint (§<em>The Conjugations and the Adjoint</em>); the superscript marks the operator. Where both are written on the same glyph, the operator mark comes first and the adjoint follows, $(a^{\mathrm{fop}})^{\dagger}$, contracted to $a^{\mathrm{fop}\dagger}$. The dagger alone never says that its glyph is an operator, and the superscript alone never says that the operator is self-adjoint; the two are read together, so that $a^{\mathrm{fop}\dagger}$ is the adjoint of the ladder and $N^{\mathrm{fop}}$ the number operator written without an adjoint because it is self-adjoint.</p>
 <p><strong>The opposite algebra carries a different token.</strong> The reversed-product algebra is written with the superscript $\mathrm{opp}$, $\mathbb{B}^{\mathrm{opp}}$, $A^{\mathrm{opp}}$, $M_n(D)^{\mathrm{opp}}$, on an <strong>algebra name</strong>, where the operator mark is written on an <strong>operator glyph</strong>. The two tokens are distinct and neither is read for the other: $a^{\mathrm{fop}}$ is never an opposite algebra, and $\mathbb{B}^{\mathrm{opp}}$ is never an operator.</p>
+<h2 id="the-subscripts">The Subscripts</h2>
+<p>A subscript is written with the underscore, <code>_</code>, inside the math delimiters, and the underscore takes a single token: one character is written bare, $Q_0$ and $Q_k$, and two characters or more are wrapped in braces, $Q_{n+1}$ and $\mathbb{B}_{\mathrm{r}}$, because a bare underscore would take the first character alone.</p>
+<p><strong>A subscript counts, or it names.</strong> A subscript that only tells one occurrence from another is numeric, so that a family is $Q_0, Q_1, \dots$ and a second numbered family of the same statement takes the next numbers. A subscript that names the object or the role it qualifies is a <strong>role label</strong>, and a role label is written in upright roman, as in $\mathbb{B}_{\mathrm{r}}$ and $\tilde U_{\mathrm r}$.</p>
+<p><strong>A sign is a subscript where the statement needs one</strong>, the member attached to $+1$ taking the subscript $+$ and the member attached to $-1$ the subscript $-$, as in $\tilde\Pi_+$ and $\tilde\Pi_-$.</p>
+<p>The forms a subscript takes are these.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>The subscript is</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>a digit</td>
+<td>$Q_0$, $Q_1$</td>
+</tr>
+<tr>
+<td>a letter</td>
+<td>$Q_k$, $Q_\mu$</td>
+</tr>
+<tr>
+<td>two indices</td>
+<td>$Q_{\mu\nu}$</td>
+</tr>
+<tr>
+<td>a sign</td>
+<td>$Q_\pm$</td>
+</tr>
+<tr>
+<td>an upright word</td>
+<td>$\mathbb{B}_{\mathrm{r}}$, $\tilde U_{\mathrm r}$</td>
+</tr>
+<tr>
+<td>a grouped expression</td>
+<td>$Q_{n+1}$</td>
+</tr>
+</tbody>
+</table></div>
 <h2 id="summary">Summary</h2>
 <p>The conventions of the series are one object read in order, from the object itself to the two clauses a field equation inherits.</p>
 <p><strong>The object and its parts.</strong> The algebra is $\mathbb{B} = \mathbb{C}\otimes_\mathbb{R}\mathbb{H}$, with basis $e_0 = 1, e_1, e_2, e_3$ satisfying $e_k^2 = -e_0$, over complex coefficients. The scalar unit $i$ is central, which is what makes the central phase the algebra's continuous symmetry, and multiplication by it is one map whose restrictions are the global phase and the exchanges and duality rotations of the sectors (§<em>The Central Map and Its Restrictions</em>). The conjugations cut the algebra into the remarkable subspaces of §<em>The Remarkable Subspaces</em>, each carrying its own real parameters and its slice of the coordinate dictionary, with $q'_0 = ct$, $q_0 = ct'$, $(q_1,q_2,q_3) = (x,y,z)$ and $(q'_1,q'_2,q'_3) = (x',y',z')$. The elements with no scalar part — the vector subspace — are the <strong>pure elements</strong>, written with the hat and without the tilde, $\hat{Q}$ (§<em>Pure Elements and their Coefficients</em>). The algebra carries four forms, not two — the general plain bilinear $B$, the general quaternionic bilinear $N$, the Hermitian $H$ and the Krein $K$ — read on the diagonal as the four norms, of which $N$ is the biquaternion norm. The matrix representation $\mathsf{M}_2$ is fixed by its four basis images, with the Hermitian units following as $\mathsf{M}_2(ie_k) = i\,\mathsf{M}_2(e_k)$; the residual freedom is a unitary change of basis of $\mathbb{C}^2$ and nothing further, so the sector dictionary cannot be altered by re-choosing it.</p>
@@ -1130,6 +1177,10 @@ $$</p>
 <tr>
 <td>$\mathrm{GPA}$, $\mathrm{SPA}$, $\mathrm{APA}$, $\mathrm{GQA}$, $\mathrm{SQA}$, $\mathrm{AQA}$, $\mathrm{GPS}$, $\mathrm{SPS}$, $\mathrm{APS}$, $\mathrm{GQS}$, $\mathrm{SQS}$, $\mathrm{AQS}$</td>
 <td>The twelve products, the four general products and their symmetric and antisymmetric parts (§<em>The Twelve Products and Their Names</em>)</td>
+</tr>
+<tr>
+<td>$\mathbb{B}_{\mathrm{r}}$, $T = A + Be$</td>
+<td>The reduced biquaternion algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$, equivalently the tessarines or the double-complex numbers; the same twelve codes are registered on it and four collapse — $\mathrm{SPA} = \mathrm{GPA}$, $\mathrm{SQS} = \mathrm{GQS}$, $\mathrm{APA} = 0$, $\mathrm{AQS} = 0$ — leaving the eight structures GPA, GQA, GPS, GQS, SQA, AQA, SPS, APS (§<em>The Twelve Products and Their Names</em>)</td>
 </tr>
 <tr>
 <td>$B = \langle\tilde{P},\tilde{Q}\rangle = \mathrm{Sc}(\tilde{P}\tilde{Q}) = P_0Q_0 - P_1Q_1 - P_2Q_2 - P_3Q_3$</td>

@@ -52,9 +52,10 @@
       <div class="article-body">
         <h1 id="the-polar-decomposition-of-biquaternions-in-practice"><strong>The Polar Decomposition of Biquaternions in Practice</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p><em>The Polar Element Representation of Biquaternions</em> proves the representation and fixes its uniqueness. This article records the procedure. It gives the two numbers that are read off the element and that fix three of the four factors' data, the five steps in the order in which they are forced, each factor as a closed expression in the four complex coordinates, the exponent of each factor with its position in the algebra, and three worked examples: one element given by its coordinates, one element already in polar form, and one element built from its four factors and decomposed back.</p>
-<p>In the matrix picture the procedure is the polar decomposition of $\mathrm{GL}(2,\mathbb{C})$, and it restricts to $\mathrm{SL}(2,\mathbb{C})$ on the unit-norm elements: $\tilde U_{\mathrm b}$ is the positive definite Hermitian factor of $\mathsf{M}_2(\tilde{Q})$, $e^{i\alpha}\tilde u_{\mathrm r}$ its unitary factor, and the scale and the phase are the split of the complex modulus $\rho = re^{i\alpha}$ off the two (<em>The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em>). The name of the article is the name of that matrix procedure.</p>
-<p>The conventions and the symbols are those of the corpus and of the companion article (<em>Conventions in Mathematics</em>; <em>The Polar Element Representation of Biquaternions</em>). The subspaces $\mathbb{M}_+$, $\mathbb{M}_-$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$ and $\mathbb{C}_{\mathbb{B}}$ are those of <em>Introduction to the Remarkable Subspaces</em>.</p>
+<p><strong>The polar decomposition of biquaternions</strong> is the procedure that produces the four factors of the polar word. In the matrix picture it is the polar decomposition of $\mathrm{GL}(2,\mathbb{C})$, and it restricts to $\mathrm{SL}(2,\mathbb{C})$ on the unit-norm elements: $\tilde U_{\mathrm b}$ is the positive definite Hermitian factor of $\mathsf{M}_2(\tilde{Q})$, $e^{i\alpha}\tilde u_{\mathrm r}$ its unitary factor, and the scale and the phase are the split of the complex modulus $\rho = re^{i\alpha}$ off the two (<em>The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions</em>). The name of the article is the name of that matrix procedure.</p>
+<p>The reference article of the series, <em>The Polar Element Representation of Biquaternions</em>, proves the representation $\tilde{Q} = r\,e^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ and fixes its uniqueness; the present article does not restate it.</p>
+<p><strong>The approach.</strong> The article records the procedure. It gives the two numbers that are read off the element and that fix three of the four factors' data, the five steps in the order in which they are forced, each factor as a closed expression in the four complex coordinates, the exponent of each factor with its position in the algebra, and three worked examples: one element given by its coordinates, one element already in polar form, and one element built from its four factors and decomposed back.</p>
+<p><strong>Conventions.</strong> The symbols and the conventions are those of the corpus and of the reference article (<em>Conventions in Mathematics</em>; <em>The Polar Element Representation of Biquaternions</em>). The subspaces $\mathbb{M}_+$, $\mathbb{M}_-$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$ and $\mathbb{C}_{\mathbb{B}}$ are those of <em>Introduction to the Remarkable Subspaces</em>.</p>
 <p>No physics is invoked. Every numerical value displayed below was recomputed in double precision.</p>
 <h2 id="the-two-invariants">The Two Invariants</h2>
 <h3 id="the-norm-and-the-euclidean-square">The Norm and the Euclidean Square</h3>
@@ -67,19 +68,19 @@ $$</p>
 E^{2}\ \ge\ \lvert N\rvert ,
 $$</p>
 <p>with equality exactly when the vector part of $\tilde{Q}\tilde{Q}^{*}$ vanishes, that is, when the boost is trivial: the inequality is Cauchy–Schwarz on the complex vector $(Q_0,Q_1,Q_2,Q_3)$.</p>
-<p><strong>Comment.</strong> The inequality is what makes the square roots of the procedure harmless. It gives $E^{2}+\lvert N\rvert > 0$ for every element of the domain, so no denominator below can vanish; it gives $\cosh\psi = E^{2}/\lvert N\rvert \ge 1$, so the rapidity read off the element is a real number; and it gives $\lvert\vec W\rvert^{2} = E^{4}-\lvert N\rvert^{2} \ge 0$, so the boost axis is defined. The equality case is the case of the trivial boost, and it is the only degenerate case that the two numbers can detect.</p>
+<p><strong>Comment.</strong> The inequality is what makes the square roots of the procedure harmless. It gives $E^{2}+\lvert N\rvert > 0$ for every element of the domain, so no denominator below can vanish; it gives $\cosh\psi = E^{2}/\lvert N\rvert \ge 1$, so the rapidity read off the element is a real number; and it gives $\lvert\mathrm{Vec}(\tilde{Q}\tilde{Q}^{*})\rvert^{2} = E^{4}-\lvert N\rvert^{2} \ge 0$, so the boost axis is defined. The equality case is the case of the trivial boost, and it is the only degenerate case that the two numbers can detect.</p>
 <h3 id="the-hermitian-product-and-its-vector-part">The Hermitian Product and Its Vector Part</h3>
 <p>The vector part of the Hermitian product is the only quantity of the procedure that needs the phases of the coordinates against one another,</p>
 <p>$$
-\tilde{Q}\tilde{Q}^{*} = E^{2}\,e_0 + i\,\vec W , \qquad \lvert\vec W\rvert^{2} = E^{4}-\lvert N\rvert^{2} , \qquad
+\tilde{Q}\tilde{Q}^{*} = E^{2}\,e_0 + i\,\mathrm{Vec}(\tilde{Q}\tilde{Q}^{*}) , \qquad \lvert\mathrm{Vec}(\tilde{Q}\tilde{Q}^{*})\rvert^{2} = E^{4}-\lvert N\rvert^{2} , \qquad
 W_k = \operatorname{Im}\Bigl[\overline{Q_0}\,Q_k - Q_0\,\overline{Q_k} - (\vec Q\times\overline{\vec Q})_k\Bigr] , \quad k = 1,2,3 .
 $$</p>
 <p>Every bracket is purely imaginary, so each $W_k$ is real. The scalar part of the Hermitian product is the Euclidean square, the norm of the Hermitian product is $\lvert N\rvert^{2}$, and the last identity is the multiplicativity of the norm read on that product.</p>
-<p><strong>Comment.</strong> The three sources of the vector part are the phase of $Q_0$ against the phases of the vector coordinates, in the first two terms of the bracket, and the phases of the vector coordinates against one another, in the cross product. The boost axis is $\hat u_{\mathrm b} = \vec W/\lvert\vec W\rvert$, so this is where the direction of the boost is decided.</p>
+<p><strong>Comment.</strong> The three sources of the vector part are the phase of $Q_0$ against the phases of the vector coordinates, in the first two terms of the bracket, and the phases of the vector coordinates against one another, in the cross product. The boost axis is $\hat u_{\mathrm b} = \mathrm{Vec}(\tilde{Q}\tilde{Q}^{*})/\lvert\mathrm{Vec}(\tilde{Q}\tilde{Q}^{*})\rvert$, so this is where the direction of the boost is decided.</p>
 <h3 id="what-the-two-invariants-fix-and-what-they-cannot">What the Two Invariants Fix and What They Cannot</h3>
 <p>The pair $(N,E^{2})$ fixes the first three factors and the rapidity datum of the fourth. The norm $N$ gives the modulus, hence the scale $r = \lvert N\rvert^{1/2}$ and the phase $\alpha = \tfrac12\arg N$; the ratio $E^{2}/\lvert N\rvert$ gives the rapidity through $\cosh\psi = E^{2}/\lvert N\rvert$.</p>
-<p>The pair cannot give the two directions. Conjugating by a real unit quaternion $R$, so that $\vec Q\mapsto R\vec Q R^{-1}$ and $Q_0$ is unchanged, leaves both $N$ and $E^{2}$ unchanged, since a real rotation preserves $\sum_kQ_k^{2}$ and $\sum_k\lvert Q_k\rvert^{2}$, and carries $\vec W$ to $R\vec WR^{-1}$, so the axis turns while the pair stands still. Over $100$ random elements and random rotations the pair was invariant to $1.1\times10^{-14}$, the vector part reproduced the rotated vector to $4.4\times10^{-15}$, and the axis itself moved by more than $0.3$ in $99$ of the $100$ draws.</p>
-<p>The count is the same statement. The four complex coordinates carry eight real numbers. The pair $(N,E^{2})$ accounts for three of them, the scale, the phase and the rapidity, and the remaining five are the two numbers of the boost axis, the two numbers of the rotor axis, and the rotation angle. The two axes come from the phases of the coordinates, through $\vec W$ and through the real parts of $Q_\mu e^{-i\alpha}$.</p>
+<p>The pair cannot give the two directions. Conjugating by a real unit quaternion $R$, so that $\vec Q\mapsto R\vec Q R^{-1}$ and $Q_0$ is unchanged, leaves both $N$ and $E^{2}$ unchanged, since a real rotation preserves $\sum_kQ_k^{2}$ and $\sum_k\lvert Q_k\rvert^{2}$, and carries $\mathrm{Vec}(\tilde{Q}\tilde{Q}^{*})$ to $R\mathrm{Vec}(\tilde{Q}\tilde{Q}^{*})R^{-1}$, so the axis turns while the pair stands still. Over $100$ random elements and random rotations the pair was invariant to $1.1\times10^{-14}$, the vector part reproduced the rotated vector to $4.4\times10^{-15}$, and the axis itself moved by more than $0.3$ in $99$ of the $100$ draws.</p>
+<p>The count is the same statement. The four complex coordinates carry eight real numbers. The pair $(N,E^{2})$ accounts for three of them, the scale, the phase and the rapidity, and the remaining five are the two numbers of the boost axis, the two numbers of the rotor axis, and the rotation angle. The two axes come from the phases of the coordinates, through $\mathrm{Vec}(\tilde{Q}\tilde{Q}^{*})$ and through the real parts of $Q_\mu e^{-i\alpha}$.</p>
 <h2 id="the-procedure">The Procedure</h2>
 <h3 id="the-five-steps">The Five Steps</h3>
 <p>Given $\tilde{Q}$ with $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$:</p>
@@ -87,18 +88,18 @@ $$</p>
 <li>Compute the biquaternion norm $N = \sum_\mu Q_\mu^2 \in \mathbb{C}$.</li>
 <li>Take its principal square root: write $N = |N|e^{i\varphi}$ with $\varphi\in(-\pi,\pi]$, and put $\rho = \sqrt{|N|}e^{i\varphi/2}$, so that $r = \sqrt{|N|}$ and $\alpha = \varphi/2$.</li>
 <li>Put $U = \tilde{Q}/\rho$, of unit norm.</li>
-<li>Compute $S = UU^{*}$, and write it as $\sigma e_0 + i\vec w$ with $\sigma\in\mathbb{R}$, $\vec w\in\mathbb{R}^3$; then put
-   $\tilde U_{\mathrm b} = \sqrt{\frac{1+\sigma}{2}}\,e_0 + \frac{i\vec w}{\sqrt{2(1+\sigma)}}$, and read the rapidity and axis off by $\cosh\psi = \sigma$, $\hat u_{\mathrm b} = \vec w/|\vec w|$.</li>
-<li>Put $\tilde u_{\mathrm r} = \tilde U_{\mathrm b}^{\natural}U$, and verify that its coefficients are real and that $\langle\tilde u_{\mathrm r},\tilde u_{\mathrm r}\rangle_{\natural} = 1$.</li>
+<li>Compute the Hermitian element $UU^{*}$, and write it as $\mathrm{Sc}(UU^{*}) e_0 + i\mathrm{Vec}(UU^{*})$ with $\mathrm{Sc}(UU^{*})\in\mathbb{R}$, $\mathrm{Vec}(UU^{*})\in\mathbb{R}^3$; then put
+   $\tilde U_{\mathrm b} = \sqrt{\frac{1+\mathrm{Sc}(UU^{*})}{2}}\,e_0 + \frac{i\mathrm{Vec}(UU^{*})}{\sqrt{2(1+\mathrm{Sc}(UU^{*}))}}$, and read the rapidity and axis off by $\cosh\psi = \mathrm{Sc}(UU^{*})$, $\hat u_{\mathrm b} = \mathrm{Vec}(UU^{*})/|\mathrm{Vec}(UU^{*})|$.</li>
+<li>Put $\tilde u_{\mathrm r} = U(\sqrt{U^{*}U})^{-1} = \tilde U_{\mathrm b}^{\natural}U$, the unitary factor of the right polar decomposition of $U$, and verify that its coefficients are real and that $\langle\tilde u_{\mathrm r},\tilde u_{\mathrm r}\rangle_{\natural} = 1$.</li>
 </ol>
 <p>The factors so obtained satisfy $\tilde{Q} = r e^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ identically.</p>
 <p><strong>Comment on step 1.</strong> Step 1 is a test before it is a computation. If $N = 0$ the element is a zero divisor, no factor of the word exists, and the procedure stops. The domain of the representation is the complement of the null cone, and the test is the first thing to perform.</p>
 <p><strong>Comment on step 2.</strong> Step 2 is the only step that requires a convention, and it carries the whole of it: the branch of the square root is fixed once and for all by $\alpha\in(-\pi/2,\pi/2]$, the closed right half plane. The other root $-\rho$ has angle $\alpha\pm\pi$ and is outside the interval. Every other step is forced.</p>
 <p><strong>Comment on step 3.</strong> Step 3 is a division by a complex number, that is, a multiplication by its inverse, and it costs nothing: $1/\rho = e^{-i\alpha}/r$. Its only role is to put the element on the unit-norm sphere, so that the remaining content of the decomposition is the split of a unit element into a boost and a rotor.</p>
-<p><strong>Comment on step 4.</strong> Step 4 is the only step that is not rational in the coordinates: it needs the positive square root of the Hermitian element $S$, and the closed form above is that square root written in the algebra. The element $S = UU^{*}$ is Hermitian and positive definite, of unit norm, hence $\sigma^{2}-\lvert\vec w\rvert^{2} = 1$ and $\sigma\ge1$, and the two square roots of $S$ are $\pm\tilde U_{\mathrm b}$; the positive one is taken. The rapidity and the axis are read off the two data of $S$: $\cosh\psi = \sigma$ and $\hat u_{\mathrm b} = \vec w/\lvert\vec w\rvert$.</p>
+<p><strong>Comment on step 4.</strong> Step 4 is the only step that is not rational in the coordinates: it needs the positive square root of the Hermitian element $UU^{*}$, and the closed form above is that square root written in the algebra. The element $UU^{*}$ is Hermitian and positive definite, of unit norm, hence $\mathrm{Sc}(UU^{*})^{2}-\lvert\mathrm{Vec}(UU^{*})\rvert^{2} = 1$ and $\mathrm{Sc}(UU^{*})\ge1$, and the two square roots of $UU^{*}$ are $\pm\tilde U_{\mathrm b}$; the positive one is taken. The rapidity and the axis are read off the two data of $UU^{*}$: $\cosh\psi = \mathrm{Sc}(UU^{*})$ and $\hat u_{\mathrm b} = \mathrm{Vec}(UU^{*})/\lvert\mathrm{Vec}(UU^{*})\rvert$.</p>
 <p><strong>Comment on step 5.</strong> Step 5 is a subtraction in disguise, and it needs no square root. The rotor is what is left of the unit element after the Hermitian positive part is divided out, and it is real because the division cancels the Hermitian part exactly: $U = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$, and the real quaternion $\tilde u_{\mathrm r}$ has as many real numbers as $\tilde U_{\mathrm b}$ has imaginary ones.</p>
 <h3 id="what-to-do-first">What to Do First</h3>
-<p>The procedure opens with a test and not with a computation: form the biquaternion norm $N$. If $N = 0$ the element is a zero divisor, no factor of the word exists, and the whole of the above is empty; the domain of the representation is the complement of the null cone, which is the first thing to establish. If $N\neq0$ the order is forced and has no freedom left: the modulus $\rho$ comes first, because it is the only step that needs the branch choice; the normalised element $U$ comes second, because every later step divides by $\rho$ or by a function of it; the Hermitian product $UU^{*}$ comes third, because the boost is its root; and the rotor comes last, as the residual. No step can be moved, and no step needs a second convention.</p>
+<p>The procedure opens with a test and not with a computation: form the biquaternion norm $N$. If $N = 0$ the element is a zero divisor, no factor of the word exists, and the whole of the above is empty; the domain of the representation is the complement of the null cone, which is the first thing to establish. If $N\neq0$ the order is forced and has no freedom left: the modulus $\rho$ comes first, because it is the only step that needs the branch choice; the normalised element $U$ comes second, because every later step divides by $\rho$ or by a function of it; the Hermitian element $UU^{*}$ comes third, because the boost is its root; and the rotor comes last, as the unitary factor of the right polar decomposition of $U$. No step can be moved, and no step needs a second convention.</p>
 <h3 id="each-factor-in-a-sentence">Each Factor in a Sentence</h3>
 <div class="table-scroll"><table>
 <thead>
@@ -137,7 +138,7 @@ $$</p>
 </tbody>
 </table></div>
 <p>The dimensions are $1+1+3+3 = 8$, which is the real dimension of the algebra: the decomposition is a change of coordinates on the complement of the null cone, with as many real parameters as the ambient algebra has, and the same count as the real dimension of $\mathrm{GL}(2,\mathbb{C})$ in the matrix picture.</p>
-<h3 id="the-factors-in-the-coordinates-of-math102">The Factors in the Coordinates of $\tilde{Q}$</h3>
+<h3 id="the-factors-in-the-coordinates-of-math105">The Factors in the Coordinates of $\tilde{Q}$</h3>
 <p>The five steps are formulas, and each factor is a closed expression in the four complex coordinates $Q_0,Q_1,Q_2,Q_3$. The expressions use <strong>two numbers read off the coordinates</strong>: the biquaternion norm $N$ and the Euclidean square $E^{2}$ of §<em>The Two Invariants</em>.</p>
 <div class="table-scroll"><table>
 <thead>
@@ -169,7 +170,7 @@ $$</p>
 </tr>
 <tr>
 <td>boost, vector part</td>
-<td>$\sinh\dfrac{\psi}{2}\,\hat u_{\mathrm b} = \dfrac{\vec W}{\sqrt{2\,\lvert N\rvert\,(E^{2}+\lvert N\rvert)}}$</td>
+<td>$\sinh\dfrac{\psi}{2}\,\hat u_{\mathrm b} = \dfrac{\mathrm{Vec}(\tilde{Q}\tilde{Q}^{*})}{\sqrt{2\,\lvert N\rvert\,(E^{2}+\lvert N\rvert)}}$</td>
 </tr>
 <tr>
 <td>rapidity</td>
@@ -181,15 +182,15 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<p>The vector part of the boost is read off the Hermitian product $\tilde{Q}\tilde{Q}^{*}$, which is the quantity $r^{2}S$ of step 4,</p>
+<p>The vector part of the boost is read off the Hermitian product $\tilde{Q}\tilde{Q}^{*}$, which is the quantity $r^{2}UU^{*}$ of step 4,</p>
 <p>$$
-\tilde{Q}\tilde{Q}^{*} = E^{2}\,e_0 + i\,\vec W , \qquad
-\tilde{U}_{\mathrm b} = \sqrt{\frac{E^{2}+\lvert N\rvert}{2\,\lvert N\rvert}}\;e_0 + \frac{i\,\vec W}{\sqrt{2\,\lvert N\rvert\,(E^{2}+\lvert N\rvert)}} , \qquad
-\lvert\vec W\rvert^{2} = E^{4}-\lvert N\rvert^{2} .
+\tilde{Q}\tilde{Q}^{*} = E^{2}\,e_0 + i\,\mathrm{Vec}(\tilde{Q}\tilde{Q}^{*}) , \qquad
+\tilde{U}_{\mathrm b} = \sqrt{\frac{E^{2}+\lvert N\rvert}{2\,\lvert N\rvert}}\;e_0 + \frac{i\,\mathrm{Vec}(\tilde{Q}\tilde{Q}^{*})}{\sqrt{2\,\lvert N\rvert\,(E^{2}+\lvert N\rvert)}} , \qquad
+\lvert\mathrm{Vec}(\tilde{Q}\tilde{Q}^{*})\rvert^{2} = E^{4}-\lvert N\rvert^{2} .
 $$</p>
-<p>The rapidity datum $\sigma$ of §<em>The Closed Form, the Rapidity and the Axis</em> of the companion article is the ratio $\sigma = E^{2}/\lvert N\rvert$, and the boost datum $\vec w$ of that section is $\vec W/\lvert N\rvert$.</p>
-<p><strong>Comment.</strong> The table is the algorithm in one glance: two rows are read off $N$ alone, the two boost rows are read off $E^{2}$ against $\lvert N\rvert$ and off $\vec W$, and the last row is the projection of the coordinates on the phase direction. Every entry is a closed expression, so no iteration, no search and no series occurs anywhere in the procedure except in the one square root of $\rho$ that step 2 fixes by convention.</p>
-<p><strong>Check on the first example below.</strong> For $\tilde{Q} = (1+i)e_0+e_1+2e_2$ the pair is $N = 5+2i$ and $E^{2} = 7$, so the table gives $\lvert N\rvert = \sqrt{29} = 5.385164807$, $r = 2.320595787$, $\alpha = 0.190253189$, $\sigma = E^{2}/\lvert N\rvert = 1.299867367$, speed $\sqrt{(7-\sqrt{29})/(7+\sqrt{29})} = 0.361088126$ and boost scalar $\sqrt{(7+\sqrt{29})/(2\sqrt{29})} = 1.072349609$, all of them the values computed step by step; the Hermitian product is $\tilde{Q}\tilde{Q}^{*} = 7\,e_0 - 2i\,e_1 - 4i\,e_2$, of vector part $\vec W = (-2,-4,0)$, and the rotor coefficients $\sqrt{2/(7+\sqrt{29})}\,\operatorname{Re}(Q_\mu e^{-i\alpha})$ are $0.470592172$, $0.394599292$, $0.789198585$ and $0$.</p>
+<p>The rapidity datum $\mathrm{Sc}(UU^{*})$ of §<em>The Closed Form, the Rapidity and the Axis</em> of the companion article is the ratio $\mathrm{Sc}(UU^{*}) = E^{2}/\lvert N\rvert$, and the boost datum $\mathrm{Vec}(UU^{*})$ of that section is $\mathrm{Vec}(\tilde{Q}\tilde{Q}^{*})/\lvert N\rvert$.</p>
+<p><strong>Comment.</strong> The table is the algorithm in one glance: two rows are read off $N$ alone, the two boost rows are read off $E^{2}$ against $\lvert N\rvert$ and off $\mathrm{Vec}(\tilde{Q}\tilde{Q}^{*})$, and the last row is the projection of the coordinates on the phase direction. Every entry is a closed expression, so no iteration, no search and no series occurs anywhere in the procedure except in the one square root of $\rho$ that step 2 fixes by convention.</p>
+<p><strong>Check on the first example below.</strong> For $\tilde{Q} = (1+i)e_0+e_1+2e_2$ the pair is $N = 5+2i$ and $E^{2} = 7$, so the table gives $\lvert N\rvert = \sqrt{29} = 5.385164807$, $r = 2.320595787$, $\alpha = 0.190253189$, $\mathrm{Sc}(UU^{*}) = E^{2}/\lvert N\rvert = 1.299867367$, speed $\sqrt{(7-\sqrt{29})/(7+\sqrt{29})} = 0.361088126$ and boost scalar $\sqrt{(7+\sqrt{29})/(2\sqrt{29})} = 1.072349609$, all of them the values computed step by step; the Hermitian product is $\tilde{Q}\tilde{Q}^{*} = 7\,e_0 - 2i\,e_1 - 4i\,e_2$, of vector part $\mathrm{Vec}(\tilde{Q}\tilde{Q}^{*}) = (-2,-4,0)$, and the rotor coefficients $\sqrt{2/(7+\sqrt{29})}\,\operatorname{Re}(Q_\mu e^{-i\alpha})$ are $0.470592172$, $0.394599292$, $0.789198585$ and $0$.</p>
 <h2 id="the-exponents-of-the-factors">The Exponents of the Factors</h2>
 <h3 id="the-table-of-the-exponents">The Table of the Exponents</h3>
 <p>Each of the four factors is the exponential of a single element of the algebra, and the exponent of each is a real parameter times a root of $-e_0$, $0$ or $+e_0$: the generator of a one-parameter group (<em>Conventions in Mathematics</em>, §<em>The Root Convention</em>). The four rows restate the table of §<em>The Polar Word</em> of <em>The Polar Element Representation of Biquaternions</em>; the comment on each row, the character table and the half-angle dictionary below are what this article adds to it.</p>
@@ -276,9 +277,9 @@ $$</p>
 <h3 id="the-two-half-angles">The Two Half-Angles</h3>
 <p>The exponents of the two non-central factors carry <strong>half</strong> of the parameter of the transformation they produce. The boost exponent is $i(\psi/2)\hat u_{\mathrm b}$ with $\psi$ the rapidity, and the conjugation by the boost produces a Lorentz transformation of rapidity $\psi$; the rotor exponent is $(\theta/2)\hat u_{\mathrm r}$ with $\theta$ the rotation angle, and the conjugation by the rotor produces a rotation by $\theta$. The doubling is the double cover of the two groups, and it is why the parameters of §<em>The Two Invariants</em> come back with a factor two: the dictionary of the half-angles is</p>
 <p>$$
-\cosh\frac{\psi}{2} = \sqrt{\frac{1+\sigma}{2}} , \qquad \sinh\frac{\psi}{2} = \frac{\lvert\vec w\rvert}{\sqrt{2(1+\sigma)}} , \qquad \cos\frac{\theta}{2} = u_{\mathrm r,0} , \qquad \sin\frac{\theta}{2} = \lvert\vec u_{\mathrm r}\rvert ,
+\cosh\frac{\psi}{2} = \sqrt{\frac{1+\mathrm{Sc}(UU^{*})}{2}} , \qquad \sinh\frac{\psi}{2} = \frac{\lvert\mathrm{Vec}(UU^{*})\rvert}{\sqrt{2(1+\mathrm{Sc}(UU^{*}))}} , \qquad \cos\frac{\theta}{2} = u_{\mathrm r,0} , \qquad \sin\frac{\theta}{2} = \lvert\vec u_{\mathrm r}\rvert ,
 $$</p>
-<p>with $\sigma = E^{2}/\lvert N\rvert$ and $\vec w = \vec W/\lvert N\rvert$ the data of $S$. The last two are read off the rotor itself: the scalar coefficient of a unit real quaternion is the cosine of the half-angle, and the length of its vector part the sine.</p>
+<p>with $\mathrm{Sc}(UU^{*}) = E^{2}/\lvert N\rvert$ and $\mathrm{Vec}(UU^{*}) = \mathrm{Vec}(\tilde{Q}\tilde{Q}^{*})/\lvert N\rvert$ the data of $UU^{*}$. The last two are read off the rotor itself: the scalar coefficient of a unit real quaternion is the cosine of the half-angle, and the length of its vector part the sine.</p>
 <h2 id="worked-example-an-element-given-by-its-coordinates">Worked Example: an Element Given by Its Coordinates</h2>
 <p>Take</p>
 <p>$$
@@ -295,15 +296,15 @@ $$</p>
 U_0 = 0.504639332+0.341657461i, \quad U_1 = 0.423148397-0.081490935i, \quad U_2 = 0.846296793-0.162981871i, \quad U_3 = 0 ,
 $$</p>
 <p>and $\langle U,U\rangle_{\natural} = 1$ as required.</p>
-<p><em>Step 4.</em> The Hermitian element $S = UU^{*}$ is</p>
+<p><em>Step 4.</em> The Hermitian element $UU^{*}$ is</p>
 <p>$$
-S = 1.299867367\,e_0 - 0.371390676\,i\,e_1 - 0.742781353\,i\,e_2 ,
+UU^{*} = 1.299867367\,e_0 - 0.371390676\,i\,e_1 - 0.742781353\,i\,e_2 ,
 $$</p>
-<p>so $\sigma = 1.299867367$, $\vec w = (-0.371390676, -0.742781353, 0)$ and $|\vec w| = 0.830454799$; the identity $\sigma^2-|\vec w|^2 = 1$ holds to $7\times10^{-16}$. The boost is therefore</p>
+<p>so $\mathrm{Sc}(UU^{*}) = 1.299867367$, $\mathrm{Vec}(UU^{*}) = (-0.371390676, -0.742781353, 0)$ and $|\mathrm{Vec}(UU^{*})| = 0.830454799$; the identity $\mathrm{Sc}(UU^{*})^2-|\mathrm{Vec}(UU^{*})|^2 = 1$ holds to $7\times10^{-16}$. The boost is therefore</p>
 <p>$$
 \tilde U_{\mathrm b} = 1.072349609\,e_0 - 0.173166789\,i\,e_1 - 0.346333577\,i\,e_2 ,
 $$</p>
-<p>with rapidity $\psi = 2\operatorname{arccosh}(1.072349609) = 0.756273220$, corresponding to the speed $\tanh(\psi/2) = 0.361088126$ in units $c = 1$, and axis $\hat u_{\mathrm b} = -(1,2,0)/\sqrt{5}$. The verification $\tilde U_{\mathrm b}^2 = S$ was carried out to $2.2\times10^{-16}$ in the coefficients.</p>
+<p>with rapidity $\psi = 2\operatorname{arccosh}(1.072349609) = 0.756273220$, corresponding to the speed $\tanh(\psi/2) = 0.361088126$ in units $c = 1$, and axis $\hat u_{\mathrm b} = -(1,2,0)/\sqrt{5}$. The verification $\tilde U_{\mathrm b}^2 = UU^{*}$ was carried out to $2.2\times10^{-16}$ in the coefficients.</p>
 <p><em>Step 5.</em> The rotor is</p>
 <p>$$
 \tilde u_{\mathrm r} = \tilde U_{\mathrm b}^{\natural}U = 0.470592172\,e_0 + 0.394599292\,e_1 + 0.789198585\,e_2 ,
@@ -324,7 +325,7 @@ $$</p>
 <p>$$
 \tilde{\Lambda} = \cosh\frac{\psi}{2}\,e_0 + i\sinh\frac{\psi}{2}\,e_1 , \qquad \psi = \operatorname{atanh}0.6 = 0.693147181 ,
 $$</p>
-<p>so that $\tilde{\Lambda} = 1.060660172\,e_0 + 0.353553391\,i\,e_1$. Its biquaternion norm is $N = \cosh^2\frac{\psi}{2}-\sinh^2\frac{\psi}{2} = 1$, a positive real, so the modulus is $\rho = 1$, the scale is $r = 1$ and the phase is $\alpha = 0$. The remaining construction returns $U = \tilde{\Lambda}$, $S = \tilde{\Lambda}^2$, $\tilde U_{\mathrm b} = \tilde{\Lambda}$ and $\tilde u_{\mathrm r} = e_0$, so that the four-factor form collapses to</p>
+<p>so that $\tilde{\Lambda} = 1.060660172\,e_0 + 0.353553391\,i\,e_1$. Its biquaternion norm is $N = \cosh^2\frac{\psi}{2}-\sinh^2\frac{\psi}{2} = 1$, a positive real, so the modulus is $\rho = 1$, the scale is $r = 1$ and the phase is $\alpha = 0$. The remaining construction returns $U = \tilde{\Lambda}$, $UU^{*} = \tilde{\Lambda}^2$, $\tilde U_{\mathrm b} = \tilde{\Lambda}$ and $\tilde u_{\mathrm r} = e_0$, so that the four-factor form collapses to</p>
 <p>$$
 \tilde{\Lambda} = 1\cdot e^{i\cdot0}\cdot\tilde{\Lambda}\cdot e_0 .
 $$</p>
@@ -356,13 +357,13 @@ $$</p>
 <p>that is $U_0 = 1$, $U_1 = 0.72i$, $U_2 = 0.21i$, $U_3 = 0.75$, and indeed $U = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$.</p>
 <p><em>Step 4.</em> The Hermitian element is</p>
 <p>$$
-S = UU^{*} = \frac{17}{8}\,e_0 + \frac98\,i\,e_1 + \frac32\,i\,e_2 = 2.125\,e_0 + 1.125\,i\,e_1 + 1.5\,i\,e_2 ,
+UU^{*} = \frac{17}{8}\,e_0 + \frac98\,i\,e_1 + \frac32\,i\,e_2 = 2.125\,e_0 + 1.125\,i\,e_1 + 1.5\,i\,e_2 ,
 $$</p>
-<p>so $\sigma = \frac{17}{8} = 2.125$, $\vec w = (\frac98,\frac32,0)$ and $\lvert\vec w\rvert = \frac{15}{8} = 1.875$; the identity $\sigma^2-\lvert\vec w\rvert^2 = 1$ is exact, $\frac{289}{64}-\frac{225}{64} = 1$. The boost is</p>
+<p>so $\mathrm{Sc}(UU^{*}) = \frac{17}{8} = 2.125$, $\mathrm{Vec}(UU^{*}) = (\frac98,\frac32,0)$ and $\lvert\mathrm{Vec}(UU^{*})\rvert = \frac{15}{8} = 1.875$; the identity $\mathrm{Sc}(UU^{*})^2-\lvert\mathrm{Vec}(UU^{*})\rvert^2 = 1$ is exact, $\frac{289}{64}-\frac{225}{64} = 1$. The boost is</p>
 <p>$$
-\tilde U_{\mathrm b} = \sqrt{\frac{1+\sigma}{2}}\,e_0 + \frac{i\vec w}{\sqrt{2(1+\sigma)}} = \frac54\,e_0 + \frac{9}{20}\,i\,e_1 + \frac35\,i\,e_2 ,
+\tilde U_{\mathrm b} = \sqrt{\frac{1+\mathrm{Sc}(UU^{*})}{2}}\,e_0 + \frac{i\mathrm{Vec}(UU^{*})}{\sqrt{2(1+\mathrm{Sc}(UU^{*}))}} = \frac54\,e_0 + \frac{9}{20}\,i\,e_1 + \frac35\,i\,e_2 ,
 $$</p>
-<p>since $\sqrt{(1+\sigma)/2} = \sqrt{25/16} = \frac54$ and $\lvert\vec w\rvert/\sqrt{2(1+\sigma)} = \frac{15}{8}\cdot\frac25 = \frac34$. The rapidity is $\psi = 2\operatorname{arcosh}\frac54 = 2\ln 2 = 1.386294361$, the speed is $\tanh\frac{\psi}{2} = \frac34/\frac54 = 0.6$, and the axis is $\hat u_{\mathrm b} = \vec w/\lvert\vec w\rvert = (0.6,0.8,0)$.</p>
+<p>since $\sqrt{(1+\mathrm{Sc}(UU^{*}))/2} = \sqrt{25/16} = \frac54$ and $\lvert\mathrm{Vec}(UU^{*})\rvert/\sqrt{2(1+\mathrm{Sc}(UU^{*}))} = \frac{15}{8}\cdot\frac25 = \frac34$. The rapidity is $\psi = 2\operatorname{arcosh}\frac54 = 2\ln 2 = 1.386294361$, the speed is $\tanh\frac{\psi}{2} = \frac34/\frac54 = 0.6$, and the axis is $\hat u_{\mathrm b} = \mathrm{Vec}(UU^{*})/\lvert\mathrm{Vec}(UU^{*})\rvert = (0.6,0.8,0)$.</p>
 <p><em>Step 5.</em> The rotor is</p>
 <p>$$
 \tilde u_{\mathrm r} = \tilde U_{\mathrm b}^{\natural}U = \frac45\,e_0 + \frac35\,e_3 ,
@@ -407,9 +408,9 @@ $$</p>
 <td>the Euclidean square, the second invariant</td>
 </tr>
 <tr>
-<td>$\tilde{Q}\tilde{Q}^{*} = E^{2}e_0 + i\vec W$</td>
+<td>$\tilde{Q}\tilde{Q}^{*} = E^{2}e_0 + i\,\mathrm{Vec}(\tilde{Q}\tilde{Q}^{*})$</td>
 <td>$\mathbb{M}_+$</td>
-<td>the Hermitian product, whose vector part $\vec W$ carries the boost axis</td>
+<td>the Hermitian product, whose vector part carries the boost axis</td>
 </tr>
 <tr>
 <td>$\rho = \sqrt{N} = re^{i\alpha}$</td>
@@ -427,19 +428,19 @@ $$</p>
 <td>the unit-norm part, $U = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$</td>
 </tr>
 <tr>
-<td>$S = UU^{*} = \sigma e_0 + i\vec w$</td>
-<td>$\mathbb{M}_+$, $N(S)=e_0$</td>
-<td>the Hermitian positive element, $\sigma = E^{2}/\lvert N\rvert$, $\vec w = \vec W/\lvert N\rvert$</td>
+<td>$UU^{*} = \mathrm{Sc}(UU^{*})\,e_0 + i\,\mathrm{Vec}(UU^{*})$</td>
+<td>$\mathbb{M}_+$, $N(UU^{*})=e_0$</td>
+<td>the Hermitian positive element, $\mathrm{Sc}(UU^{*}) = E^{2}/\lvert N\rvert$, $\mathrm{Vec}(UU^{*}) = \mathrm{Vec}(\tilde{Q}\tilde{Q}^{*})/\lvert N\rvert$</td>
 </tr>
 <tr>
-<td>$\tilde U_{\mathrm b} = \sqrt{S}$</td>
+<td>$\tilde U_{\mathrm b} = \sqrt{UU^{*}}$</td>
 <td>$\mathbb{M}_+$, unit norm</td>
 <td>the boost</td>
 </tr>
 <tr>
-<td>$\tilde u_{\mathrm r} = \tilde U_{\mathrm b}^{\natural}U$</td>
+<td>$\tilde u_{\mathrm r} = U(\sqrt{U^{*}U})^{-1} = \tilde U_{\mathrm b}^{\natural}U$</td>
 <td>$\mathrm{Sp}(1)$</td>
-<td>the rotor</td>
+<td>the rotor, the unitary factor of the right polar decomposition</td>
 </tr>
 <tr>
 <td>$\ln r$, $i\alpha$, $i\frac{\psi}{2}\hat u_{\mathrm b}$, $\frac{\theta}{2}\hat u_{\mathrm r}$</td>
@@ -461,8 +462,8 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><em>The Polar Element Representation of Biquaternions</em> (<code>articles_maths/the-polar-element-representation-of-biquaternions.md</code>), for the theorem, its existence and uniqueness, the branch of the modulus, the domain, the exponential trichotomy and the published form.</li>
-<li><em>The 4 Forms over the Biquaternion $\mathbb{C}$ Space</em> (<code>articles_maths/the-4-forms-over-the-biquaternion-c-space.md</code>), for the two invariants $N$ and $E^{2}$, the Hermitian form and the Euclidean norm.</li>
-<li><em>The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space</em> (<code>articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.md</code>), for the definiteness of the algebraic norm of $H$ and the multiplicativity of $N$, which are the two properties the inequality $E^{2}\ge\lvert N\rvert$ and the identity $\lvert\vec W\rvert^{2} = E^{4}-\lvert N\rvert^{2}$ rest on.</li>
+<li><em>The 4 Forms over the Biquaternion $\mathbb{C}$ Space</em> (<code>articles_maths/the-4-forms-over-the-biquaternioid-c-space.md</code>), for the two invariants $N$ and $E^{2}$, the Hermitian form and the Euclidean norm.</li>
+<li><em>The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space</em> (<code>articles_maths/the-4-algebraic-norms-over-the-biquaternioid-c-space.md</code>), for the definiteness of the algebraic norm of $H$ and the multiplicativity of $N$, which are the two properties the inequality $E^{2}\ge\lvert N\rvert$ and the identity $\lvert\mathrm{Vec}(\tilde{Q}\tilde{Q}^{*})\rvert^{2} = E^{4}-\lvert N\rvert^{2}$ rest on.</li>
 <li><em>Introduction to the Remarkable Subspaces</em> (<code>articles_maths/introduction-to-the-remarkable-subspaces.md</code>), for the subspaces in which the four exponents lie.</li>
 <li><em>The Polar Element Representation and Remarkable Subspaces</em> (<code>articles_maths/the-polar-element-representation-and-remarkable-subspaces.md</code>), for the four exponents read against the coordinate blocks, the incidence of the exponents with the subspaces and the polar data each subspace carries.</li>
 <li><em>The Cartan Hermitian Pairing of the Polar Element Representation of Biquaternions</em> (<code>articles_maths/the-cartan-hermitian-pairing-of-the-polar-element-representation-of-biquaternions.md</code>), for the two-factor grouping $\tilde{Q} = HU$ that the matrix picture of the introduction reads.</li>
