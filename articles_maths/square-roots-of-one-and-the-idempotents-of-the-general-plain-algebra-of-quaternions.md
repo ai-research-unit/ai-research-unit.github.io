@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The algebra of this article is the quaternion algebra $\mathbb{H}$, the real space $\mathbb{H}$ under the general plain bilinear product $\tilde p\tilde q$ of *Introduction to the General Plain Algebra of Quaternions*, the multiplication of the algebra and the operation named $\mathrm{GPA}$ in *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*. It is the only one of the six products of the space that is associative with a two-sided unit, and it is a division rule; that product is the one read throughout this article.
+The algebra of this article is the quaternion algebra $\mathbb{H}$, the real space $\mathbb{H}$ under the general plain bilinear product $\tilde p\tilde q$ of *Introduction to the General Plain Algebra of Quaternions*, the multiplication of the algebra and the operation named $\mathrm{GPA}$ in *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*. It is the only one of the six products of the space that is associative with a two-sided unit, and it is a division rule; that product is the one read throughout this article.
 
 The article treats two subjects, and in this order. The first is the square roots of the central value $+e_0$, the elements $\tilde\xi\in\mathbb{H}$ with
 
@@ -24,7 +24,7 @@ The article is algebraic. It does not treat the roots of the general quadratic $
 
 **Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$, so that $e_k^2=-e_0$ and $e_je_k=-e_ke_j$ for $j\neq k$. An element is $\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; the scalar part is $q_0=\mathrm{Sc}(\tilde q)$ and the vector part is $\vec q$. The natural conjugation is $\tilde q^{\natural}=q_0e_0-\vec q$, and the **norm** is $N(\tilde q)=\tilde q\tilde q^{\natural}=q_0^2+|\vec q|^2$, positive definite over $\mathbb{R}$ by *Norm and Invertibility in the General Plain Algebra*; every nonzero element is a unit, $\tilde q^{-1}=\tilde q^{\natural}/N(\tilde q)$, so there is no zero divisor. The scalar line $\mathbb{R}e_0$ is the centre and the vector subspace is $\mathrm{Vect}(\mathbb{H})$, of dimension three. A root of a central value is written $\tilde\xi$ (§*The Root Convention* of *Conventions in Mathematics*), an idempotent $\tilde\pi$ (§*The Idempotent Convention*), and a generic element $\tilde q$ or $\tilde p$.
 
-The equations name a product, so the roots and the idempotents are relative to it. The general definition of the power, the square and the root of a central value, and the general definition of an idempotent, are *Definitions for the Study of the 6 Algebraic Structures*, §*The Element Vocabulary*; the orthogonal, complete and primitive families, the projection and the Peirce decomposition are *Unital Algebras*, §*Idempotents and the Peirce Decomposition*. Throughout this article the square is the one of the general plain bilinear product, the multiplication of the algebra; the other five structures over the same space carry roots and idempotents of their own.
+The equations name a product, so the roots and the idempotents are relative to it. The general definition of the power, the square and the root of a central value, and the general definition of an idempotent, are *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, §*The Element Vocabulary*; the orthogonal, complete and primitive families, the projection and the Peirce decomposition are *Unital Algebras*, §*Idempotents and the Peirce Decomposition*. Throughout this article the square is the one of the general plain bilinear product, the multiplication of the algebra; the other five structures over the same space carry roots and idempotents of their own.
 
 ## The Roots of One
 
@@ -266,7 +266,7 @@ The idempotents are the trivial elements $0$ and $e_0$ and nothing else, the equ
 
 ## Further Reading
 
-- *Definitions for the Study of the 6 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-6-algebraic-structures.md`), §*The Element Vocabulary*, for the general definition of a root of a central value and of an idempotent; §*The Criterion for an Empty Class*, for the criterion that leaves the idempotent class the two-point set $\{0,e_0\}$.
+- *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-quaternion-r-space.md`), §*The Element Vocabulary*, for the general definition of a root of a central value and of an idempotent; §*The Criterion for an Empty Class*, for the criterion that leaves the idempotent class the two-point set $\{0,e_0\}$.
 - *Introduction to the General Plain Algebra of Quaternions* (`articles_maths/introduction-to-the-general-plain-algebra-of-quaternions.md`), for the product, the unit and the square.
 - *Unital Algebras* (`articles_maths/unital-algebras.md`), §*Idempotents and the Peirce Decomposition*, for the orthogonal, complete and primitive families and the four Peirce spaces of an associative unital algebra.
 - *Norm and Invertibility in the General Plain Algebra* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra-of-quaternions.md`), for the division property on which the classification rests.

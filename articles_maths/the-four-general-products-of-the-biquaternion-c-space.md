@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The underlying $\mathbb{C}$-vector space of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries four general products. Each is a rule that sends a pair of elements $(\tilde P,\tilde Q)$ to an element of $\mathbb{B}$, and each is stated below on the coordinates of the two elements. The four sections that follow are independent: the first defines the general plain bilinear product, the second the general quaternionic bilinear product, the third the general plain sesquilinear product, and the fourth the general quaternionic sesquilinear product, and each section is complete in itself, with the coordinates of the product and its scalar–vector form. In the four names, *complex* is the base ring, over which all four general products are written, and *quaternionic* marks a product whose first element is read through the natural conjugation ${}^{\natural}$.
+The underlying $\mathbb{C}$-vector space of the biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ carries four general products. Each is a rule that sends a pair of elements $(\tilde P,\tilde Q)$ to an element of $\mathbb{B}$, and each is stated below on the coordinates of the two elements. The four sections that follow are independent: the first defines the general plain bilinear product, the second the general plain sesquilinear product, the third the general quaternionic bilinear product, and the fourth the general quaternionic sesquilinear product, and each section is complete in itself, with the coordinates of the product and its scalar–vector form. In the four names, *complex* is the base ring, over which all four general products are written, and *quaternionic* marks a product whose first element is read through the natural conjugation ${}^{\natural}$.
 
 The element is written
 $$
@@ -55,35 +55,6 @@ $$
 
 The scalar part is $\mathrm{Sc}(\tilde P\tilde Q)=\sum_{\mu=0}^{3}\varepsilon_\mu P_\mu Q_\mu$ with $\varepsilon=(1,-1,-1,-1)$, and the vector part is the one displayed.
 
-## The General Quaternionic Bilinear Product $\tilde P^{\natural}\tilde Q$
-
-**Definition.** The **general quaternionic bilinear product** reads the first element through the conjugation ${}^{\natural}$ and leaves the second as it is. The coordinates of the first element enter as
-$$
-P^{\natural}_0=P_0 , \qquad P^{\natural}_1=-P_1 , \qquad P^{\natural}_2=-P_2 , \qquad P^{\natural}_3=-P_3 ,
-$$
-and the product is
-$$
-\tilde P^{\natural}\tilde Q=\sum_{\mu=0}^{3}\sum_{\nu=0}^{3}P^{\natural}_\mu Q_\nu\,e_\mu e_\nu
-=\sum_{\mu=0}^{3}\sum_{\nu=0}^{3}\varepsilon_\mu P_\mu Q_\nu\,e_\mu e_\nu .
-$$
-
-Written on the four units, the product is
-$$
-\tilde P^{\natural}\tilde Q=\bigl(P_0Q_0+P_1Q_1+P_2Q_2+P_3Q_3\bigr)
-+\bigl(P_0Q_1-P_1Q_0-P_2Q_3+P_3Q_2\bigr)e_1
-+\bigl(P_0Q_2+P_1Q_3-P_2Q_0-P_3Q_1\bigr)e_2
-+\bigl(P_0Q_3-P_1Q_2+P_2Q_1-P_3Q_0\bigr)e_3 .
-$$
-
-The rule is linear in the coordinates $P_0,\dots,P_3$ and linear in the coordinates $Q_0,\dots,Q_3$.
-
-**The scalar–vector form.** The scalar part of the first factor stays $P_0$ and its vector part becomes $-\vec P$, so the two pairings change sign where that vector part enters,
-$$
-\tilde P^{\natural}\tilde Q=\bigl(P_0Q_0+(\vec P,\vec Q)\bigr)+P_0\vec Q-Q_0\vec P-\vec P\times\vec Q .
-$$
-
-The scalar part is $\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=\sum_{\mu=0}^{3}P_\mu Q_\mu$, and the vector part is the one displayed.
-
 ## The General Plain Sesquilinear Product $\tilde P\tilde Q^{*}$
 
 **Definition.** The **general plain sesquilinear product** leaves the first element as it is and reads the second through the conjugation ${}^{*}$. The coordinates of the second element enter as
@@ -112,6 +83,35 @@ $$
 $$
 
 The scalar part is $\mathrm{Sc}(\tilde P\tilde Q^{*})=\sum_{\mu=0}^{3}P_\mu\overline{Q_\mu}$, conjugate-linear in the coordinates of the second element; the vector part is the one displayed.
+
+## The General Quaternionic Bilinear Product $\tilde P^{\natural}\tilde Q$
+
+**Definition.** The **general quaternionic bilinear product** reads the first element through the conjugation ${}^{\natural}$ and leaves the second as it is. The coordinates of the first element enter as
+$$
+P^{\natural}_0=P_0 , \qquad P^{\natural}_1=-P_1 , \qquad P^{\natural}_2=-P_2 , \qquad P^{\natural}_3=-P_3 ,
+$$
+and the product is
+$$
+\tilde P^{\natural}\tilde Q=\sum_{\mu=0}^{3}\sum_{\nu=0}^{3}P^{\natural}_\mu Q_\nu\,e_\mu e_\nu
+=\sum_{\mu=0}^{3}\sum_{\nu=0}^{3}\varepsilon_\mu P_\mu Q_\nu\,e_\mu e_\nu .
+$$
+
+Written on the four units, the product is
+$$
+\tilde P^{\natural}\tilde Q=\bigl(P_0Q_0+P_1Q_1+P_2Q_2+P_3Q_3\bigr)
++\bigl(P_0Q_1-P_1Q_0-P_2Q_3+P_3Q_2\bigr)e_1
++\bigl(P_0Q_2+P_1Q_3-P_2Q_0-P_3Q_1\bigr)e_2
++\bigl(P_0Q_3-P_1Q_2+P_2Q_1-P_3Q_0\bigr)e_3 .
+$$
+
+The rule is linear in the coordinates $P_0,\dots,P_3$ and linear in the coordinates $Q_0,\dots,Q_3$.
+
+**The scalar–vector form.** The scalar part of the first factor stays $P_0$ and its vector part becomes $-\vec P$, so the two pairings change sign where that vector part enters,
+$$
+\tilde P^{\natural}\tilde Q=\bigl(P_0Q_0+(\vec P,\vec Q)\bigr)+P_0\vec Q-Q_0\vec P-\vec P\times\vec Q .
+$$
+
+The scalar part is $\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=\sum_{\mu=0}^{3}P_\mu Q_\mu$, and the vector part is the one displayed.
 
 ## The General Quaternionic Sesquilinear Product $\tilde P^{\natural}\tilde Q^{*}$
 
@@ -145,23 +145,23 @@ Four products are defined on the underlying $\mathbb{C}$-vector space of $\mathb
 | product | scalar part | vector part |
 |---|---|---|
 | $\tilde P\tilde Q$ | $P_0Q_0-(\vec P,\vec Q)$ | $P_0\vec Q+Q_0\vec P+\vec P\times\vec Q$ |
-| $\tilde P^{\natural}\tilde Q$ | $P_0Q_0+(\vec P,\vec Q)$ | $P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$ |
 | $\tilde P\tilde Q^{*}$ | $P_0\overline{Q_0}+(\vec P,\overline{\vec Q})$ | $-P_0\overline{\vec Q}+\overline{Q_0}\vec P-\vec P\times\overline{\vec Q}$ |
+| $\tilde P^{\natural}\tilde Q$ | $P_0Q_0+(\vec P,\vec Q)$ | $P_0\vec Q-Q_0\vec P-\vec P\times\vec Q$ |
 | $\tilde P^{\natural}\tilde Q^{*}$ | $P_0\overline{Q_0}-(\vec P,\overline{\vec Q})$ | $-P_0\overline{\vec Q}-\overline{Q_0}\vec P+\vec P\times\overline{\vec Q}$ |
 
-The general plain bilinear product multiplies the coordinates $P_\mu$ and $Q_\nu$ on the basis, $\tilde P\tilde Q=\sum_{\mu,\nu}P_\mu Q_\nu e_\mu e_\nu$, and is linear in both sets of coordinates. The general quaternionic bilinear product multiplies $P^{\natural}_\mu$ and $Q_\nu$, that is, the first element is read through ${}^{\natural}$; it is linear in both sets of coordinates. The general plain sesquilinear product multiplies $P_\mu$ and $Q^{*}_\nu$, that is, the second element is read through ${}^{*}$; it is linear in the coordinates of the first element and conjugate-linear in those of the second. The general quaternionic sesquilinear product multiplies $P^{\natural}_\mu$ and $Q^{*}_\nu$, both elements being read through their conjugations, and is linear in the first set of coordinates and conjugate-linear in the second.
+The general plain bilinear product multiplies the coordinates $P_\mu$ and $Q_\nu$ on the basis, $\tilde P\tilde Q=\sum_{\mu,\nu}P_\mu Q_\nu e_\mu e_\nu$, and is linear in both sets of coordinates. The general plain sesquilinear product multiplies $P_\mu$ and $Q^{*}_\nu$, that is, the second element is read through ${}^{*}$; it is linear in the coordinates of the first element and conjugate-linear in those of the second. The general quaternionic bilinear product multiplies $P^{\natural}_\mu$ and $Q_\nu$, that is, the first element is read through ${}^{\natural}$; it is linear in both sets of coordinates. The general quaternionic sesquilinear product multiplies $P^{\natural}_\mu$ and $Q^{*}_\nu$, both elements being read through their conjugations, and is linear in the first set of coordinates and conjugate-linear in the second.
 
 The four scalar parts are the four displayed in the table, and the four vector parts beside them are the four displayed beside them. The identities that link the four general products, and the relations among the four scalar parts and the four vector parts, are *Relations Between the Four General Products*. Which of the four general products is a multiplication in the sense of algebra is *Comparison Between the Four General Products*. The split of each of the four general products into a symmetric and an antisymmetric part, and the Jordan and the Lie structure that the two parts of the general plain bilinear product carry, are *The 12 Products of the Biquaternion Complex Space*, which takes the four general products from here.
 
-Two exchanges act on the four general products. The **exchange by a conjugation** $c$, $\tilde{P}\tilde{Q}^{*}\mapsto c(\tilde{Q}\tilde{P}^{*})$, composes the swap with $c$ and is the one that keeps the class of the two sesquilinear products, whose parts under it are sesquilinear again, and it is the exchange the twelve names are read against; the **plain exchange**, which swaps the two elements of the pair, does not keep the class, a part of a sesquilinear product taken under it being only $\mathbb{R}$-bilinear. For the plain sesquilinear product and $c=\overline{\cdot}$ the two adapted parts are its scalar part and its vector part, displayed in the table above as the two halves of the third row; for the general quaternionic sesquilinear product they are the symmetrisation of $\tilde{P}^{\natural}$ with $\tilde{Q}^{*}$ and half their commutator. Both exchanges and their two splits are read in *The 12 Products of the Biquaternion Complex Space*, §*The Other Exchange, and the Class It Keeps*, and the general construction is *The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product*. The behaviour of the general plain bilinear product on each of the remarkable subspaces is tabulated in *Remarkable Subspaces and the Four General Products*; the operators of left and right multiplication are *The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure*; and the basis products written out one by one are in *Introduction to the General Plain Algebra of Biquaternions*, §*The Multiplication Table*.
+Two exchanges act on the four general products. The **exchange by a conjugation** $c$, $\tilde{P}\tilde{Q}^{*}\mapsto c(\tilde{Q}\tilde{P}^{*})$, composes the swap with $c$ and is the one that keeps the class of the two sesquilinear products, whose parts under it are sesquilinear again, and it is the exchange the twelve names are read against; the **plain exchange**, which swaps the two elements of the pair, does not keep the class, a part of a sesquilinear product taken under it being only $\mathbb{R}$-bilinear. For the plain sesquilinear product and $c=\overline{\cdot}$ the two adapted parts are its scalar part and its vector part, displayed in the table above as the two halves of the second row; for the general quaternionic sesquilinear product they are the symmetrisation of $\tilde{P}^{\natural}$ with $\tilde{Q}^{*}$ and half their commutator. Both exchanges and their two splits are read in *The 12 Products of the Biquaternion Complex Space*, §*The Other Exchange, and the Class It Keeps*, and the general construction is *The Conjugate-Symmetric and Skew-Conjugate-Symmetric Parts of a Sesquilinear Product*. The behaviour of the general plain bilinear product on each of the remarkable subspaces is tabulated in *Remarkable Subspaces and the Four General Products*; the operators of left and right multiplication are *The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure*; and the basis products written out one by one are in *Introduction to the General Plain Algebra of Biquaternions*, §*The Multiplication Table*.
 
 ## Summary of Notation
 
 | symbol | meaning |
 |---|---|
 | $\tilde P\tilde Q$ | the general plain bilinear product |
-| $\tilde P^{\natural}\tilde Q$ | the general quaternionic bilinear product |
 | $\tilde P\tilde Q^{*}$ | the general plain sesquilinear product |
+| $\tilde P^{\natural}\tilde Q$ | the general quaternionic bilinear product |
 | $\tilde P^{\natural}\tilde Q^{*}$ | the general quaternionic sesquilinear product |
 | $\tilde P=P_0e_0+\dots+P_3e_3$ | the element and its four complex coordinates |
 | $\tilde P^{\natural}$, $\tilde P^{*}$ | the two conjugations, in coordinates |

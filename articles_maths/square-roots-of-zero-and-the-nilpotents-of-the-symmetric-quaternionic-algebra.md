@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The symmetric quaternionic product is the pairing $\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0$ on $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the product of the block (*Introduction to the Symmetric Quaternionic Algebra of Biquaternions*), and it is the product read throughout this article. A root of a central value $\lambda$ is a nonzero element with $\tilde\Xi\star\tilde\Xi=\lambda e_0$, and a nilpotent is an element some power of which vanishes, the index being the least such power, a square-zero element being one of index two (*Definitions for the Study of the 12 Algebraic Structures* §*Powers, the Square and the Roots* and §*The Nilpotent*).
+The symmetric quaternionic product is the pairing $\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0$ on $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, the product of the block (*Introduction to the Symmetric Quaternionic Algebra of Biquaternions*), and it is the product read throughout this article. A root of a central value $\lambda$ is a nonzero element with $\tilde\Xi\star\tilde\Xi=\lambda e_0$, and a nilpotent is an element some power of which vanishes, the index being the least such power, a square-zero element being one of index two (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* §*Powers, the Square and the Roots* and §*The Nilpotent*).
 
 The article treats two subjects, and in this order. The first is the square roots of the central value $0$, the elements $\tilde\Xi\in\mathbb{B}$ with
 
@@ -20,7 +20,7 @@ $$
 
 so an element is nilpotent exactly when it is isotropic, $N=0$, or pure, $\Upsilon_0=0$. The index is two on the whole isotropic cone and three on the pure non-isotropic part of the vector subspace, and it is bounded by three. The nilpotents and the idempotents meet only at $0$; the nilpotent set and its two families are stable under the three conjugations; and in the $2\times2$ model the trace is $2Q_0$ and the determinant is $N(\tilde Q)$, so the block's nilpotents are the matrices that are trace-free or singular.
 
-The article is algebraic. It does not treat the roots of $+1$ and the idempotents, which are *Square Roots of One and the Idempotents of the Symmetric Quaternionic Algebra*; the roots of a general element, which are *Square Roots of a General Element in the Symmetric Quaternionic Algebra*; the isotropic cone and its two families, which are *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*; the structure of the zero-divisor set, which is *Zero Divisors of the Symmetric Quaternionic Algebra*; or the square-zero sets of the four general products, which are *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and *Comparison Between the Four General Products*.
+The article is algebraic. It does not treat the roots of $+1$ and the idempotents, which are *Square Roots of One and the Idempotents of the Symmetric Quaternionic Algebra*; the roots of a general element, which are *Square Roots of a General Element in the Symmetric Quaternionic Algebra*; the isotropic cone and its two families, which are *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra*; the structure of the zero-divisor set, which is *Zero Divisors of the Symmetric Quaternionic Algebra*; or the square-zero sets of the four general products, which are *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and *Comparison Between the Four General Products*.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$, and central scalar imaginary $i$, $i^2=-1$. A general element is $\tilde\Upsilon=\Upsilon_0e_0+\vec\Upsilon$ with $\Upsilon_\mu\in\mathbb{C}$ and $\vec\Upsilon=\Upsilon_1e_1+\Upsilon_2e_2+\Upsilon_3e_3$, and $(\vec P,\vec Q)=\sum_{k=1}^{3}P_kQ_k$ may vanish without $\vec\Upsilon$ vanishing. The **symmetric quaternionic multiplication** is
 
@@ -30,7 +30,7 @@ $$
 
 and its diagonal is $N(\tilde\Upsilon)=N(\tilde\Upsilon,\tilde\Upsilon)=\sum_{\mu=0}^{3}\Upsilon_\mu^2$; the operation is also written $\bullet$. The centre is $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ and the vector subspace is $\mathrm{Vect}(\mathbb{B})=\mathbb{C}e_1+\mathbb{C}e_2+\mathbb{C}e_3$. A root of a central value is written $\tilde\Xi$, a nilpotent $\tilde\Upsilon$ (§*The Nilpotent Convention* of *Conventions in Mathematics*), and a generic element $\tilde P$.
 
-The equations name a product, so the roots and the nilpotents are relative to it. The general definition of the nilpotent and of the square-zero element is *Definitions for the Study of the 12 Algebraic Structures* §*The Nilpotent*. Throughout this article the product is the symmetric quaternionic product; the block is not associative, so the bracketing of a power is fixed to the left-nested reading, and for this product the right-nested reading gives the same value.
+The equations name a product, so the roots and the nilpotents are relative to it. The general definition of the nilpotent and of the square-zero element is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* §*The Nilpotent*. Throughout this article the product is the symmetric quaternionic product; the block is not associative, so the bracketing of a power is fixed to the left-nested reading, and for this product the right-nested reading gives the same value.
 
 ## The Roots of Zero
 
@@ -231,11 +231,11 @@ In the symmetric quaternionic block the square is always central, $\tilde\Xi\sta
 
 ## Further Reading
 
-- *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), for the general definition of the nilpotent, of the index and of the square-zero element.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the general definition of the nilpotent, of the index and of the square-zero element.
 - *Square Roots of One and the Idempotents of the Symmetric Quaternionic Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-symmetric-quaternionic-algebra.md`), for the roots of $+1$, the idempotents and the reduction.
 - *Square Roots of a General Element in the Symmetric Quaternionic Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-symmetric-quaternionic-algebra.md`), for the radicands that are not the central values.
 - *Square Roots of Zero and the Nilpotents of the General Plain Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-plain-algebra.md`), for the parent's nilpotents, their index and their matrix characterisation.
-- *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the square-zero sets of the four general products.
+- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the square-zero sets of the four general products.
 - *Zero Divisors of the Symmetric Quaternionic Algebra* (`articles_maths/zero-divisors-of-the-symmetric-quaternionic-algebra.md`), for the maximal zero-divisor set of the block.
 - *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra* (`articles_maths/the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra.md`), for the isotropic cone and its two families.
 - *The Symmetric Quaternionic Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* (`articles_maths/the-symmetric-quaternionic-algebra-in-the-2x2-matrix-element-representation.md`), for the realization used here.

@@ -15,7 +15,7 @@ A norm is relative to a product, and the algebraic norm of a product is the diag
 
 The invertibility is a second and independent absence. The block has **no left unit, no right unit and no two-sided unit**, hence no inverse and an empty group of units; the inverse equation to the centre has no solution, because the block cannot produce a central value at all.
 
-**Boundaries.** The operation, its class and the absence of a unit are *Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions*; the general definitions of the unit and the inverse are *Definitions for the Study of the 12 Algebraic Structures*, §*The Unit and the Inverse*, and the unit table of the four general products is *Comparison Between the Four General Products*; the antisymmetrisation from which the block is written is *The Symmetric and Antisymmetric Parts of an Algebra Product*. The algebraic norm of the general quaternionic bilinear product is $N$, a different form, and its theory is *Norm and Invertibility in the General Quaternionic Algebra*; the invariant forms of the block are *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*. Nothing topological and nothing metric appears.
+**Boundaries.** The operation, its class and the absence of a unit are *Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions*; the general definitions of the unit and the inverse are *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Unit and the Inverse*, and the unit table of the four general products is *Comparison Between the Four General Products*; the antisymmetrisation from which the block is written is *The Symmetric and Antisymmetric Parts of an Algebra Product*. The algebraic norm of the general quaternionic bilinear product is $N$, a different form, and its theory is *Norm and Invertibility in the General Quaternionic Algebra*; the invariant forms of the block are *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra*. Nothing topological and nothing metric appears.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0,e_1,e_2,e_3$ with $e_1e_2=e_3$ and central scalar imaginary $i$; an element is $\tilde Q=Q_0e_0+\vec Q$ with $\vec Q=\sum_{k=1}^{3}Q_ke_k$, and $\tilde P^{\natural}\tilde Q$ is the general quaternionic bilinear product. The product of the block is $\tilde P\diamond\tilde Q=\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$, and unqualified, *unit* and *inverse* mean the unit and the inverse of $\diamond$.
 
@@ -23,7 +23,7 @@ The invertibility is a second and independent absence. The block has **no left u
 
 ## The Relative Definitions
 
-The word *unit* and the word *inverse* name a product, so the definitions are stated once for a general product and read on the block; they are *Definitions for the Study of the 12 Algebraic Structures*, §*The Unit and the Inverse*.
+The word *unit* and the word *inverse* name a product, so the definitions are stated once for a general product and read on the block; they are *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Unit and the Inverse*.
 
 **Definition (unit).** Let $\star$ be a product on $\mathbb{B}$. An element $e$ is a **left unit of $\star$** when $e\star\tilde X=\tilde X$ for every $\tilde X$, a **right unit** when $\tilde X\star e=\tilde X$ for every $\tilde X$, and a **two-sided unit** when it is both. A product with a two-sided unit is **unital**.
 
@@ -113,7 +113,7 @@ The antisymmetric quaternionic multiplication $\tilde P\diamond\tilde Q=P_0\vec 
 ## Further Reading
 
 - *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.md`), for the definition of the algebraic norm as the diagonal of a scalar-part form, for the zero diagonal of the four antisymmetric operations, and for the convention that counts them with no algebraic norm.
-- *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), §*The Unit and the Inverse*, for the unit, the inverse and the relativity of the definitions to the product.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), §*The Unit and the Inverse*, for the unit, the inverse and the relativity of the definitions to the product.
 - *Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra-of-biquaternions.md`), for the operation, its class, its image and the absence of a unit.
 - *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the unit table of the four general products.
 - *Norm and Invertibility in the General Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.md`), for the algebraic norm $N$ of the quaternionic product, which is not the form of this block.

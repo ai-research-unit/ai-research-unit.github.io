@@ -34,7 +34,7 @@ $$
 \tilde\Xi\star\tilde\Xi=\tilde R ,
 $$
 
-and the **root set** of $\tilde R$ in $\star$ is the set of its square roots. The special case in which $\tilde R=\lambda e_0$ is the root of a central value, which is *Definitions for the Study of the 12 Algebraic Structures*, §*Powers, the Square and the Roots*; the definition of the square root of an element and the reading of the root sets for a general element in the model block are *Square Roots of a General Element in the General Plain Algebra*.
+and the **root set** of $\tilde R$ in $\star$ is the set of its square roots. The special case in which $\tilde R=\lambda e_0$ is the root of a central value, which is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*; the definition of the square root of an element and the reading of the root sets for a general element in the model block are *Square Roots of a General Element in the General Plain Algebra*.
 
 Throughout this article the product is the block $\diamond$, so that, unqualified, a root is a square root in the block and the equation is $\tilde\Xi\diamond\tilde\Xi=\vec\Xi\times\overline{\vec\Xi}=\tilde R$. The origin is a root of the origin, and the roots of a general element are read on the vector subspace, since every value of the block is a pure vector.
 
@@ -132,7 +132,7 @@ A biquaternion has a square root in the block exactly when its scalar coordinate
 
 ## Further Reading
 
-- *Definitions for the Study of the 12 Algebraic Structures*, §*Powers, the Square and the Roots*, for the square root of an element and the root of a central value, for a general product.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*, for the square root of an element and the root of a central value, for a general product.
 - *Square Roots of One and the Idempotents of the Antisymmetric Quaternionic Sesqualgebra*, for the special case of the value $+1$ and for the idempotents of the block.
 - *Square Roots of Zero and the Nilpotents of the Antisymmetric Quaternionic Sesqualgebra*, for the special case of the value $0$, for the cone of the diagonal and for the nilpotents.
 - *The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*, for the diagonal, its cone and its image.

@@ -45,8 +45,8 @@ The **inertia** of each restriction is therefore read off the signs:
 | form | on $\mathbb{R}_{\mathbb{H}}$ | on $\operatorname{Vect}(\mathbb{H})$ | on $\mathbb{H}$ |
 |---|---|---|---|
 | $B$ | $(1,0)$ | $(0,3)$ | $(1,3)$ |
-| $\tau$ | $(1,0)$ | $(0,3)$ | $(1,3)$ |
 | $N$ | $(1,0)$ | $(3,0)$ | $(4,0)$ |
+| $\tau$ | $(1,0)$ | $(0,3)$ | $(1,3)$ |
 | $K$ | $(0,0)$ | $(0,3)$ | $(0,3)$ |
 | $\varphi$ | $(1,0)$ | $(0,0)$ | $(1,0)$ |
 

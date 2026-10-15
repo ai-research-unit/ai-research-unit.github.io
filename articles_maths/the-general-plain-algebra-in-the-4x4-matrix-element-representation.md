@@ -187,7 +187,7 @@ $$
 
 and it is the line spanned by the corresponding regular matrix; for instance the $(1,2)$ corner is $\mathsf{M}_4(\tilde\Pi_1\tilde Q\tilde\Pi_2)=a_{12}\mathsf{M}_4(\hat\Upsilon_1)$.
 
-**The two models compared.** In the $2\times2$ model the four Peirce matrices are the four matrix units, a basis of the whole of $M_2(\mathbb{C})$, because the realization is a bijection. In the regular model they are four matrices of $M_4(\mathbb{C})$ spanning only the four-dimensional image $\mathsf{M}_4(\mathbb{B})$, a subspace of the sixteen-dimensional $M_4(\mathbb{C})$; they are the images of the same four elements of the algebra, so the two readings differ in the carrier and not in the coordinates. The two rank-two projectors are the left multiplications by $\tilde\Pi_1$ and $\tilde\Pi_2$, with images the two minimal left ideals $\mathbb{B}\tilde\Pi_1$ and $\mathbb{B}\tilde\Pi_2$ of the splitting $\mathbb{B}=I_1\oplus I_2$ of *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*.
+**The two models compared.** In the $2\times2$ model the four Peirce matrices are the four matrix units, a basis of the whole of $M_2(\mathbb{C})$, because the realization is a bijection. In the regular model they are four matrices of $M_4(\mathbb{C})$ spanning only the four-dimensional image $\mathsf{M}_4(\mathbb{B})$, a subspace of the sixteen-dimensional $M_4(\mathbb{C})$; they are the images of the same four elements of the algebra, so the two readings differ in the carrier and not in the coordinates. The two rank-two projectors are the left multiplications by $\tilde\Pi_1$ and $\tilde\Pi_2$, with images the two minimal left ideals $\mathbb{B}\tilde\Pi_1$ and $\mathbb{B}\tilde\Pi_2$ of the splitting $\mathbb{B}=I_1\oplus I_2$ of *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*.
 
 ## Summary
 
@@ -208,7 +208,7 @@ The left regular representation turns the plain product of the algebra into the 
 ## Further Reading
 
 - *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* (`articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.md`), for the representation and its first properties
-- *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* (`articles_maths/the-4x4-matrix-element-representation-of-biquaternions.md`), for the further reading of the regular representation
+- *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* (`articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.md`), for the further reading of the regular representation
 - *The General Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* (`articles_maths/the-general-plain-algebra-in-the-2x2-matrix-element-representation.md`), for the companion reading of the group
 - *Remarkable Subspaces under the General Plain Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-plain-algebra-of-biquaternions.md`), for the restriction theory of the form
 - *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the four forms read side by side

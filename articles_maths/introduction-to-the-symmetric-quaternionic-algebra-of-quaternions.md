@@ -8,9 +8,9 @@ $$
 \tilde p\star\tilde q = \tfrac12\bigl(\tilde p^{\natural}\tilde q + \tilde q^{\natural}\tilde p\bigr).
 $$
 
-The general construction of the splitting, and the general definitions of the unit, the inverse, the zero divisor, the idempotent, the nilpotent and the root, are *Definitions for the Study of the 6 Algebraic Structures*; here they are cited and not restated. The article establishes the elementary theory of the operation: its rule, its coefficient, the sixteen products of the basis, its laws, its image, the absence of a unit, and the placement of the structure $\mathrm{SQA}$ among the six. The name $\mathrm{SQA}$ and the verb *collapse* are the two threads: the operation collapses the whole space onto its scalar line, and every later article of the block is a reading of the single formula $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$.
+The general construction of the splitting, and the general definitions of the unit, the inverse, the zero divisor, the idempotent, the nilpotent and the root, are *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; here they are cited and not restated. The article establishes the elementary theory of the operation: its rule, its coefficient, the sixteen products of the basis, its laws, its image, the absence of a unit, and the placement of the structure $\mathrm{SQA}$ among the six. The name $\mathrm{SQA}$ and the verb *collapse* are the two threads: the operation collapses the whole space onto its scalar line, and every later article of the block is a reading of the single formula $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$.
 
-**Boundaries.** The six products and the six structures are *The 6 Products of the Quaternion Real Space* and *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; the two general products are *The Two General Products of the Quaternion $\mathbb{R}$ Space*; the antisymmetric quaternionic companion of this block is *Introduction to the Antisymmetric Quaternionic Algebra of Quaternions*, below this article in this category; the parallel of this block among the plain products is *Introduction to the Symmetric Plain Algebra of Quaternions*, above this article in this category. The companion articles of the block read the same operation through its zero divisors, its roots of a central value, its specificities, its radical and isotropy, its form, its multiplication operators and its two matrix models. The quaternion norm and the invertibility criterion are *Norm and Invertibility in the General Plain Algebra*.
+**Boundaries.** The six products and the six structures are *The 6 Products of the Quaternion Real Space* and *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; the two general products are *The Two General Products of the Quaternion $\mathbb{R}$ Space*; the antisymmetric quaternionic companion of this block is *Introduction to the Antisymmetric Quaternionic Algebra of Quaternions*, below this article in this category; the parallel of this block among the plain products is *Introduction to the Symmetric Plain Algebra of Quaternions*, above this article in this category. The companion articles of the block read the same operation through its zero divisors, its roots of a central value, its specificities, its radical and isotropy, its form, its multiplication operators and its two matrix models. The quaternion norm and the invertibility criterion are *Norm and Invertibility in the General Plain Algebra*.
 
 **Conventions.** Throughout, $\mathbb{H}$ is the quaternion algebra over $\mathbb{R}$, with basis $e_0=1,e_1,e_2,e_3$, the products $e_1e_2=e_3$, $e_2e_3=e_1$, $e_3e_1=e_2$, and $e_k^{2}=-e_0$. A quaternion is $\tilde q=q_0e_0+q_1e_1+q_2e_2+q_3e_3$, its **scalar part** is $\mathrm{Sc}\,\tilde q=q_0$ and its **vector part** is $\mathrm{Vect}\,\tilde q=\vec q=q_1e_1+q_2e_2+q_3e_3$. The **quaternion conjugation** is $\tilde q^{\natural}=q_0e_0-\vec q$. On $\mathbb{R}$ the corpus convention reads: the **bar** is the identity, $\mathbb{R}$ having no nontrivial involution; the **natural sign** is ${}^{\natural}$; and the **star** coincides with the natural sign and adds nothing. The **quaternion form** is
 
@@ -34,7 +34,7 @@ $$
 \tilde p^{\natural}\tilde q = \tilde p\star\tilde q + \tfrac12\,[\tilde p,\tilde q]_{\natural},
 $$
 
-and the operation is the multiplication of the structure denoted $\mathrm{SQA}$ in *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*. Both slots are read linearly: the operation is $\mathbb{R}$-bilinear, the class of the parent product, and no conjugation is inserted in either slot of $\star$.
+and the operation is the multiplication of the structure denoted $\mathrm{SQA}$ in *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*. Both slots are read linearly: the operation is $\mathbb{R}$-bilinear, the class of the parent product, and no conjugation is inserted in either slot of $\star$.
 
 **Theorem (the value is scalar and the coefficient is the quaternion form).** For all $\tilde p,\tilde q\in\mathbb{H}$,
 
@@ -44,7 +44,7 @@ $$
 
 *Proof.* Write the parent product in scalar and vector parts. Since $\tilde p^{\natural}\tilde q=(p_0e_0-\vec p)(q_0e_0+\vec q)$, its scalar part is $p_0q_0+\vec p\cdot\vec q$ and its vector part is $p_0\vec q-q_0\vec p-\vec p\times\vec q$, as in *Introduction to the General Quaternionic Algebra of Quaternions*. The exchange $\tilde q^{\natural}\tilde p$ has the same scalar part and the vector part $q_0\vec p-p_0\vec q-\vec q\times\vec p$. In the half-sum the two mixed terms cancel and the two vector products cancel by $\vec p\times\vec q=-\vec q\times\vec p$.
 
-The coefficient $N$ is the **quaternion form**, the one of the two forms of the space that *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* attaches to $\mathrm{SQA}$.
+The coefficient $N$ is the **quaternion form**, the one of the two forms of the space that *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space* attaches to $\mathrm{SQA}$.
 
 **Corollary (the class and the commutativity).** The operation is $\mathbb{R}$-bilinear and commutative, its value is always scalar, and its commutator vanishes identically,
 
@@ -87,7 +87,7 @@ $$
 
 ## The Laws of the Operation
 
-The reference for the laws of a product is *Definitions for the Study of the 6 Algebraic Structures*; the reading of the six one by one is *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*.
+The reference for the laws of a product is *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; the reading of the six one by one is *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*.
 
 ### Commutativity, and the Collapse of the Derived Operation
 
@@ -128,7 +128,7 @@ $$
 
 ### The Two Classical Identities
 
-**Proposition (the Jordan identity fails).** With the parenthesisation of *Definitions for the Study of the 6 Algebraic Structures*, the identity
+**Proposition (the Jordan identity fails).** With the parenthesisation of *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, the identity
 
 $$
 \tilde x\star\bigl(\tilde y\star(\tilde x\star\tilde x)\bigr)=\bigl(\tilde x\star\tilde y\bigr)\star\bigl(\tilde x\star\tilde x\bigr)
@@ -172,7 +172,7 @@ so $e_0$ is a unit for the scalar line alone. An element $\tilde u$ with $\tilde
 
 ## The Block among the Six
 
-The six products of *The 6 Products of the Quaternion Real Space* are generated from the two general products by symmetrisation and antisymmetrisation, and the block is one row of the catalogue *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*.
+The six products of *The 6 Products of the Quaternion Real Space* are generated from the two general products by symmetrisation and antisymmetrisation, and the block is one row of the catalogue *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*.
 
 | code | product | $\tilde p\circ\tilde q$ | character |
 |---|---|---|---|
@@ -206,7 +206,7 @@ The symmetric quaternionic product is the operation $\tilde p\star\tilde q=\tfra
 ## Further Reading
 
 - *The 6 Products of the Quaternion Real Space* (`articles_maths/the-6-products-of-the-quaternion-real-space.md`), for the six products and their owners
-- *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-6-algebraic-structures-over-the-quaternion-r-space.md`), for the catalogue of the six structures and the $\mathrm{SQA}$ row
+- *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-algebraic-structures-over-the-quaternion-r-space.md`), for the catalogue of the six structures and the $\mathrm{SQA}$ row
 - *Introduction to the General Quaternionic Algebra of Quaternions* (`articles_maths/introduction-to-the-general-quaternionic-algebra-of-quaternions.md`), for the parent product $\tilde p^{\natural}\tilde q$ and its left multiplications
 - *Introduction to the Antisymmetric Quaternionic Algebra of Quaternions* (`articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra-of-quaternions.md`), for the antisymmetric companion and the reconstruction of the parent
 - *Introduction to the Symmetric Plain Algebra of Quaternions* (`articles_maths/introduction-to-the-symmetric-plain-algebra-of-quaternions.md`), for the other commutative structure, whose values are not scalar

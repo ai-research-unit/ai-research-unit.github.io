@@ -15,7 +15,7 @@ $$
 
 the quaternionic product with its scalar part removed. The space $\mathbb{H}$ with this operation is
 the **antisymmetric quaternionic algebra** of the block, the operation named $\mathrm{AQA}$ in
-*The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*.
+*The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*.
 
 **This is not the algebra $\mathbb{H}$.** The two share the space, the addition and the real scalars,
 but $\diamond$ is a different multiplication: it is alternating, it is not associative, it has no unit,
@@ -58,7 +58,7 @@ $$
 
 It is the antisymmetrisation of the parent product $\tilde p^{\natural}\tilde q$, the operation called
 the antisymmetric part of the product in *The Symmetric and Antisymmetric Parts of an Algebra Product*,
-and the operation named $\mathrm{AQA}$ in *The 6 Algebraic Structures over the Quaternion
+and the operation named $\mathrm{AQA}$ in *The Algebraic Structures over the Quaternion
 $\mathbb{R}$ Space*. The space $\mathbb{H}$ with $\diamond$ is the **antisymmetric quaternionic
 algebra** of the block.
 
@@ -211,7 +211,7 @@ $\mathfrak{su}(2)$ of *The Lie Algebra of the Antisymmetric Plain Algebra*.
 
 The block is the antisymmetrisation of the general quaternionic product, the second of the two
 antisymmetric operations of the six, set out in *The 6 Products of the Quaternion $\mathbb{R}$ Space*
-and structured in *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*: the two
+and structured in *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*: the two
 antisymmetric structures are this one and the antisymmetric plain one, and the law table separates them
 on the Jacobi identity, which the plain one satisfies and this one fails (*The Specificities of the
 Antisymmetric Plain Algebra* and *The Specificities of the Antisymmetric Quaternionic Algebra*). The
@@ -250,7 +250,7 @@ antisymmetric blocks.
 
 - *Introduction to the General Quaternionic Algebra of Quaternions*, for the parent product, its scalar–vector rule and its laws.
 - *The Symmetric and Antisymmetric Parts of an Algebra Product*, for the split, its two projections and the admissibility conditions.
-- *The 6 Products of the Quaternion $\mathbb{R}$ Space* and *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, for the six products and their names.
+- *The 6 Products of the Quaternion $\mathbb{R}$ Space* and *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, for the six products and their names.
 - *Introduction to the Antisymmetric Plain Algebra of Quaternions*, above this article in this category, for the comparator whose Jacobi identity holds.
 - *The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra*, below this article in this category, for the failure in full.
 - *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra* and *The Adjoint Operators of the Antisymmetric Quaternionic Algebra*, both below this article in this category, for the form and the operators.

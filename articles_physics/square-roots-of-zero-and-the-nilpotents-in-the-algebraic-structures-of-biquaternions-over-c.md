@@ -1,4 +1,4 @@
-# __Square Roots of Zero and the Nilpotents in the 12 Structures of Biquaternions over $\mathbb{C}$__
+# __Square Roots of Zero and the Nilpotents in the Algebraic Structures of Biquaternions over $\mathbb{C}$__
 
 ## Introduction
 
@@ -8,8 +8,7 @@ in that product is zero, $\tilde\Upsilon\star\tilde\Upsilon=0$. The corpus calls
 mathematics companion calls it a **nilpotent of index two**, and the square-zero set of a structure is
 the solution set of the equation, the origin included. The two names are one object: a root of zero is a
 square-zero element, and this article is at once the roots-of-zero part of the three named values and the
-physics companion of the mathematics *Square Roots of Zero and the Nilpotents in the 12 Algebraic
-Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/square-roots-of-zero-and-the-nilpotents-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`).
+physics companion of the mathematics *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/square-roots-of-zero-and-the-nilpotents-in-the-algebraic-structures-over-the-biquaternion-c-space.md`).
 
 The essential physics of the roots of zero is fixed by the corpus. A square-zero element **annihilates
 itself**, so the square-zero set is the self-annihilation part of the zero-divisor theory, and its
@@ -30,11 +29,11 @@ zero-divisor set of its structure and it contains the cone, but the converse fai
 of the twelve structures, and the gap is physical: **a state is not a lightlike displacement**.
 
 The values are read in the corpus order. The roots of $+1$ and the idempotents are the subject of the
-companion *Square Roots of One and the Idempotents in the 12 Structures of Biquaternions over
+companion *Square Roots of One and the Idempotents in the Algebraic Structures of Biquaternions over
 $\mathbb{C}$*; the general radicand, the four existence classes and the mass shell are the subject of
-*Square Roots of a General Element in the 12 Structures of Biquaternions over $\mathbb{C}$*; the
-degeneracy and the states are owned by *Zero Divisors in the 12 Structures of Biquaternions over
-$\mathbb{C}$* and *Annihilators in the 12 Structures of Biquaternions over $\mathbb{C}$*. This article
+*Square Roots of a General Element in the Algebraic Structures of Biquaternions over $\mathbb{C}$*; the
+degeneracy and the states are owned by *Zero Divisors in the Algebraic Structures of Biquaternions over
+$\mathbb{C}$* and *Annihilators in the Algebraic Structures of Biquaternions over $\mathbb{C}$*. This article
 owns the lightlike displacements and the nilpotents.
 
 **Conventions.** We use those of the companion articles unchanged. The algebra is
@@ -119,7 +118,7 @@ whole cone is the set of operations with no inverse.
 
 **The equation and the self-annihilation.** The equation $\tilde\Upsilon\star\tilde\Upsilon=0$ has a
 direct reading: the element **kills itself**. In the language of the companion article *Annihilators in
-the 12 Structures of Biquaternions over $\mathbb{C}$* the square-zero set is the set of elements lying in
+the Algebraic Structures of Biquaternions over $\mathbb{C}$* the square-zero set is the set of elements lying in
 their own annihilator, $\tilde\Upsilon\star\tilde\Upsilon=0$ exactly when
 $\tilde\Upsilon\in A_\star(\tilde\Upsilon)$ and $\tilde\Upsilon\in B_\star(\tilde\Upsilon)$, the
 annihilator being read in the same product.
@@ -145,23 +144,23 @@ The mathematics companion computes the four square-zero sets of the four general
 | product | the square-zero set | real dimension | physical interpretation |
 |---|---|---|---|
 | GPA | the pure isotropic cone $\{P_0=0,(\vec P,\vec P)=0\}$ | $4$ | the pure null displacements, the lightlike directions of the composition |
-| GQA | the whole cone $\mathcal{C}$ | $6$ | every lightlike element is self-annihilating in the interval band |
 | GPS | the origin alone | $0$ | the probability band has no nonzero square-zero element |
+| GQA | the whole cone $\mathcal{C}$ | $6$ | every lightlike element is self-annihilating in the interval band |
 | GQS | the subfamily $\overline{\tilde P}\tilde P=0$, containing $e_0+ie_1$ | $4$ | a proper part of the lightlike family of the gauge band |
 
 - **The composition band.** The plain square vanishes on the pure cone, of real dimension four, so a
   lightlike displacement of the composition is a pure direction with vanishing square. The non-pure cone
   elements, the multiples of the projectors, are **not** square-zero: they are the states, and the
   separation of the two families of the cone is the physical content of the section on the gap.
-- **The interval band.** The natural square is the norm, so the square-zero set is the whole cone: every
-  lightlike element of the interval band annihilates itself. This is the largest square-zero set among the
-  non-alternating structures, and the physical interpretation is that the band whose value is the interval knows
-  masslessness completely.
-- **The probability band.** The third square has the scalar part $H=\sum_\mu\lvert P_\mu\rvert^{2}$,
+- **The probability band.** The second square has the scalar part $H=\sum_\mu\lvert P_\mu\rvert^{2}$,
   definite, so its square-zero set is the origin alone. The physical interpretation is that **the probability
   band has no lightlike element**: a nonzero amplitude never composes to nothing. Masslessness does not
   live in the band that measures probability, and the owner of the positivity is *Why Probability Values
   Are Central: the Symmetric Sesquilinear Product and Its Cone*.
+- **The interval band.** The natural square is the norm, so the square-zero set is the whole cone: every
+  lightlike element of the interval band annihilates itself. This is the largest square-zero set among the
+  non-alternating structures, and the physical interpretation is that the band whose value is the interval knows
+  masslessness completely.
 - **The gauge band.** The fourth square vanishes on the subfamily $\overline{\tilde P}\tilde P=0$, which
   contains $e_0+ie_1$ and misses $ie_0+e_1+e_2+ie_3$. It is a proper subfamily of the cone, so the gauge
   band has lightlike elements that are not square-zero: the fourth product distinguishes a part of the
@@ -188,40 +187,8 @@ The product is the plain product and its square is the plain square. The root se
 isotropic cone $\{P_0=0,\ (\vec P,\vec P)=0\}$, of real dimension four, one component of the
 zero-divisor cone: the lightlike displacements that are their own annihilating partner. It is a proper
 subfamily of the cone, because a non-pure cone element is a multiple of a projector and not square-zero.
-The reading is *The Cone and the Massless Particles in the 12 Structures of Biquaternions over
+The reading is *The Cone and the Massless Particles in the Algebraic Structures of Biquaternions over
 $\mathbb{C}$*.
-
-### $\mathrm{SPA}$, the symmetric plain algebra — commutativity
-
-The product is the Jordan product and its square is the plain square, so the root set of $0$ is the pure
-isotropic cone, element for element that of $\mathrm{GPA}$. The same displacements are square-zero, and
-they are zero divisors of the symmetrised block in addition. The reading is *The Symmetrised Material
-Composition and the Jordan Identity*.
-
-### $\mathrm{APA}$, the antisymmetric plain algebra — rotation
-
-The product is the commutator $\vec P\times\vec Q$, alternating, so its square vanishes identically.
-The root set of $0$ is the whole space: every element is square-zero, an infinitesimal rotation. The
-reading is *The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket*.
-
-### $\mathrm{GQA}$, the general quaternionic algebra — causality
-
-The product is the natural product and its square is the central element $C(\tilde P)e_0$; the equation is
-the vanishing of the norm, so the root set of $0$ is the whole cone $\mathcal{C}$. Every lightlike element
-is self-annihilating, and the set coincides with the zero-divisor set, origin included. The reading is
-*The Cone and the Massless Particles in the 12 Structures of Biquaternions over $\mathbb{C}$*.
-
-### $\mathrm{SQA}$, the symmetric quaternionic algebra — coupling
-
-The product is the scalar-valued symmetrisation and its square is $C(\tilde P)e_0$, so the root set of $0$
-is the whole cone, as for $\mathrm{GQA}$. The same lightlike family is self-annihilating. The reading is
-*The Quaternion Form as a Product: the Scalar Coupling of Two Material Operations*.
-
-### $\mathrm{AQA}$, the antisymmetric quaternionic algebra — obstruction
-
-The product is the antisymmetrisation, alternating, so its square vanishes identically and the root set of
-$0$ is the whole space. The reading is *The Operators of the Twelve Structures: Multiplication, Adjoint
-and Bracket* and *Boosts, Mixed Terms and the Missing Lie Structure*.
 
 ### $\mathrm{GPS}$, the general plain sesqualgebra — probability
 
@@ -230,18 +197,12 @@ $\sum_\mu\lvert P_\mu\rvert^{2}$; the equation forces the origin. The root set o
 the probability band has no lightlike element. The reading is *Mass, Rank and the Positivity of the
 Dagger*.
 
-### $\mathrm{SPS}$, the symmetric plain sesqualgebra — positivity
+### $\mathrm{GQA}$, the general quaternionic algebra — causality
 
-The product is the scalar-valued symmetrisation and its square is $\mathrm{Sc}(\tilde P\tilde P^{*})e_0$,
-so the root set of $0$ is $\{0\}$ alone, for the same definiteness. The reading is *Why Probability Values
-Are Central: the Symmetric Sesquilinear Product and Its Cone*.
-
-### $\mathrm{APS}$, the antisymmetric plain sesqualgebra — phase
-
-The product is the antisymmetrisation and its square is half the difference between the Hermitian square
-and its conjugate, so the equation is equivalent to $\tilde P\tilde P^{*}$ being central. The root set of
-$0$ is that subfamily; it lies outside the cone and contains the unit $e_0$, whose conjugate-bracket
-square vanishes. The reading is *Zero Divisors as a Physical Locus in Biquaternionic Form*.
+The product is the natural product and its square is the central element $C(\tilde P)e_0$; the equation is
+the vanishing of the norm, so the root set of $0$ is the whole cone $\mathcal{C}$. Every lightlike element
+is self-annihilating, and the set coincides with the zero-divisor set, origin included. The reading is
+*The Cone and the Massless Particles in the Algebraic Structures of Biquaternions over $\mathbb{C}$*.
 
 ### $\mathrm{GQS}$, the general quaternionic sesqualgebra — gauge
 
@@ -250,12 +211,50 @@ $\overline{\tilde P}\tilde P$. The root set of $0$ is the subfamily $\{\overline
 a proper subfamily of the cone containing $e_0+ie_1$: a proper part of the lightlike family. The reading
 is *The Fourth Product and Its Indefinite Metric*.
 
+### $\mathrm{SPA}$, the symmetric plain algebra — commutativity
+
+The product is the Jordan product and its square is the plain square, so the root set of $0$ is the pure
+isotropic cone, element for element that of $\mathrm{GPA}$. The same displacements are square-zero, and
+they are zero divisors of the symmetrised block in addition. The reading is *The Symmetrised Material
+Composition and the Jordan Identity*.
+
+### $\mathrm{SPS}$, the symmetric plain sesqualgebra — positivity
+
+The product is the scalar-valued symmetrisation and its square is $\mathrm{Sc}(\tilde P\tilde P^{*})e_0$,
+so the root set of $0$ is $\{0\}$ alone, for the same definiteness. The reading is *Why Probability Values
+Are Central: the Symmetric Sesquilinear Product and Its Cone*.
+
+### $\mathrm{SQA}$, the symmetric quaternionic algebra — coupling
+
+The product is the scalar-valued symmetrisation and its square is $C(\tilde P)e_0$, so the root set of $0$
+is the whole cone, as for $\mathrm{GQA}$. The same lightlike family is self-annihilating. The reading is
+*The Quaternion Form as a Product: the Scalar Coupling of Two Material Operations*.
+
 ### $\mathrm{SQS}$, the symmetric quaternionic sesqualgebra — metric
 
 The product is the symmetric part of the fourth product and its square is the coefficientwise real part of
 $\tilde P^{\natural}\tilde P^{*}$; the equation is the same as for $\mathrm{GQS}$, so the root set of $0$
 is the subfamily $\{\overline{\tilde P}\tilde P=0\}$, the same as for its general partner. The reading is
 *The Gauge Metric as a Product: the Symmetric Quaternionic Sesquilinear Product*.
+
+### $\mathrm{APA}$, the antisymmetric plain algebra — rotation
+
+The product is the commutator $\vec P\times\vec Q$, alternating, so its square vanishes identically.
+The root set of $0$ is the whole space: every element is square-zero, an infinitesimal rotation. The
+reading is *The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket*.
+
+### $\mathrm{APS}$, the antisymmetric plain sesqualgebra — phase
+
+The product is the antisymmetrisation and its square is half the difference between the Hermitian square
+and its conjugate, so the equation is equivalent to $\tilde P\tilde P^{*}$ being central. The root set of
+$0$ is that subfamily; it lies outside the cone and contains the unit $e_0$, whose conjugate-bracket
+square vanishes. The reading is *Zero Divisors as a Physical Locus in Biquaternionic Form*.
+
+### $\mathrm{AQA}$, the antisymmetric quaternionic algebra — obstruction
+
+The product is the antisymmetrisation, alternating, so its square vanishes identically and the root set of
+$0$ is the whole space. The reading is *The Operators of the Twelve Structures: Multiplication, Adjoint
+and Bracket* and *Boosts, Mixed Terms and the Missing Lie Structure*.
 
 ### $\mathrm{AQS}$, the antisymmetric quaternionic sesqualgebra — polarisation
 
@@ -273,16 +272,16 @@ The table collects the square of each structure, its root set of $0$ and the phy
 | structure | square | root set of $0$ | physical interpretation |
 |---|---|---|---|
 | GPA | $\tilde P^{2}$ | the pure isotropic cone, dim 4 | the pure lightlike displacements of the composition |
-| SPA | $\tilde P^{2}$ | the pure isotropic cone | the same displacements, now zero divisors of the block |
-| APA | $0$ | the whole space | every infinitesimal rotation is square-zero |
-| GQA | $C(\tilde P)e_0$ | the whole cone $\mathcal{C}$ | every lightlike element is self-annihilating |
-| SQA | $C(\tilde P)e_0$ | the whole cone $\mathcal{C}$ | the same |
-| AQA | $0$ | the whole space | every infinitesimal rotation is square-zero |
 | GPS | $\tilde P\tilde P^{*}$ | the origin alone | no lightlike element in the probability band |
-| SPS | $\mathrm{Sc}(\tilde P\tilde P^{*})e_0$ | the origin alone | the same |
-| APS | the pure part | the subfamily with $\tilde P\tilde P^{*}$ central | the unit is square-zero for the conjugate bracket |
+| GQA | $C(\tilde P)e_0$ | the whole cone $\mathcal{C}$ | every lightlike element is self-annihilating |
 | GQS | $\overline{\tilde P}\tilde P$ | the subfamily $\overline{\tilde P}\tilde P=0$ | a proper part of the lightlike family |
+| SPA | $\tilde P^{2}$ | the pure isotropic cone | the same displacements, now zero divisors of the block |
+| SPS | $\mathrm{Sc}(\tilde P\tilde P^{*})e_0$ | the origin alone | the same |
+| SQA | $C(\tilde P)e_0$ | the whole cone $\mathcal{C}$ | the same |
 | SQS | the real part | the subfamily $\overline{\tilde P}\tilde P=0$ | the same as the general partner |
+| APA | $0$ | the whole space | every infinitesimal rotation is square-zero |
+| APS | the pure part | the subfamily with $\tilde P\tilde P^{*}$ central | the unit is square-zero for the conjugate bracket |
+| AQA | $0$ | the whole space | every infinitesimal rotation is square-zero |
 | AQS | the pure part | the subfamily fixed by the conjugation | the unit is square-zero for the conjugate bracket |
 
 Four kinds of row occur, and each is a physical statement.
@@ -321,9 +320,9 @@ therefore a zero divisor that is **not** square-zero: it cannot be composed, but
 displacement, and it is idempotent, $\tilde\Pi^{2}=\tilde\Pi$, rather than nilpotent,
 $\tilde\Upsilon^{2}=0$. The two equations are the two extreme quadratic equations of the algebra, and the
 two objects they define are the two physical objects of the pair of companion articles: the state in
-*Square Roots of One and the Idempotents in the 12 Structures of Biquaternions over $\mathbb{C}$* and the lightlike displacement here. The owner of the
+*Square Roots of One and the Idempotents in the Algebraic Structures of Biquaternions over $\mathbb{C}$* and the lightlike displacement here. The owner of the
 physical locus of the zero divisors is *Zero Divisors as a Physical Locus in Biquaternionic Form*, and the
-reading of the cone as the massless locus is *The Cone and the Massless Particles in the 12 Structures
+reading of the cone as the massless locus is *The Cone and the Massless Particles in the Algebraic Structures
 of Biquaternions over $\mathbb{C}$*.
 
 The physical statement is that **the set of the non-invertible operations is strictly larger than the set
@@ -338,7 +337,7 @@ probability and not because it is lightlike.
 | claim | source | status |
 |---|---|---|
 | the four square-zero sets are the pure cone, the whole cone, the origin and the subfamily $\overline{\tilde P}\tilde P=0$ | mathematics companion | cited |
-| a square-zero element lies in its own annihilator | mathematics companion; *Annihilators in the 12 Structures of Biquaternions over $\mathbb{C}$* | cited |
+| a square-zero element lies in its own annihilator | mathematics companion; *Annihilators in the Algebraic Structures of Biquaternions over $\mathbb{C}$* | cited |
 | the order $Z_3=\{0\}\subsetneq Z_1\subsetneq Z_2$, $Z_3\subsetneq Z_4\subsetneq Z_2$, $Z_1\cap Z_4=\{0\}$ | mathematics companion; recomputed $e_1+ie_2\in Z_1\setminus Z_4$ and $e_0+ie_1\in Z_4\setminus Z_1$ | verified |
 | $e_1+ie_2$ is square-zero in GPA and GQA and lies on the cone | mathematics companion; recomputed | verified |
 | $e_0+ie_1$ is square-zero in GQS and $ie_0+e_1+e_2+ie_3$ is not | mathematics companion; recomputed | verified |
@@ -434,7 +433,7 @@ gauge algebra, and in the framework that Jacobi identity is a consequence of the
 quaternion multiplication. The associativity of the parent product is therefore what makes a nilpotent
 differential available, and the cohomology is then the annihilator of the nilpotent quotiented by its
 image: the physical states are exactly the states a nilpotent operator does not reach, with the reachable
-ones removed. This is the annihilator reading of *Annihilators in the 12 Structures of Biquaternions over $\mathbb{C}$* sharpened
+ones removed. This is the annihilator reading of *Annihilators in the Algebraic Structures of Biquaternions over $\mathbb{C}$* sharpened
 by one more structure, and the three brackets of the corpus that fail the Jacobi identity — read in *A
 Higher Structure for the Jacobi Failure* — are precisely the ones that cannot carry such a differential.
 A bracket that does not close is a symmetry without a cohomology.
@@ -580,7 +579,7 @@ definite structural reason — so the contraction limit is the one degeneration 
   phase being the little-group $U(1)$. The lightlike displacement, the null four-momentum and the Dirac
   point are the same algebraic object in the three bands that reach it.
 - The branch-point reading of the value $0$ — the merging of the two roots of a nonzero value at the
-  massless limit — belongs to *Square Roots of a General Element in the 12 Structures of Biquaternions
+  massless limit — belongs to *Square Roots of a General Element in the Algebraic Structures of Biquaternions
   over $\mathbb{C}$* and is cited, not restated.
 
 - A square-zero element kills itself: it is an element of its own annihilator. Physically it is an
@@ -687,13 +686,13 @@ element theory of the algebra.
 - $Z_1,Z_2,Z_3,Z_4$ the square-zero sets of the plain, natural, general plain sesquilinear and general quaternionic sesquilinear products.
 - $A_\star(\tilde P)$, $B_\star(\tilde P)$ the left and right annihilators; self-annihilation is $\tilde P\in A_\star(\tilde P)$.
 - ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}=\bar{\cdot}\circ{}^{\natural}$; the material coordinate $\tilde Q=i c t\,e_0+\vec x$; $H(\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}$.
-- The twelve structures: GPA, GQA, GPS, GQS general; SPA, SQA, SPS, SQS symmetric; APA, AQA, APS, AQS antisymmetric.
+- The twelve structures: GPA, GPS, GQA, GQS general; SPA, SPS, SQA, SQS symmetric; APA, APS, AQA, AQS antisymmetric.
 
 ## Further Reading
 
-- The mathematics companion: *Square Roots of Zero and the Nilpotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/square-roots-of-zero-and-the-nilpotents-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the twelve square-zero sets, the order theorem $Z_3\subsetneq Z_1\subsetneq Z_2$, $Z_3\subsetneq Z_4\subsetneq Z_2$, $Z_1\cap Z_4=\{0\}$ and the gap with the zero-divisor sets.
-- The companion articles of the section: *Square Roots of One and the Idempotents in the 12 Structures of Biquaternions over $\mathbb{C}$*; *Square Roots of a General Element in the 12 Structures of Biquaternions over $\mathbb{C}$*; *Zero Divisors in the 12 Structures of Biquaternions over $\mathbb{C}$*; *Annihilators in the 12 Structures of Biquaternions over $\mathbb{C}$*.
-- The lightlike displacement and the photon: *The Null Four-Momentum: What the Cone Derives and What It Does Not*; *The Light Cone as the Biquaternion Zero-Divisor Cone*; *Zero Divisors as a Physical Locus in Biquaternionic Form*; *The Cone and the Massless Particles in the 12 Structures of Biquaternions over $\mathbb{C}$*.
+- The mathematics companion: *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/square-roots-of-zero-and-the-nilpotents-in-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the twelve square-zero sets, the order theorem $Z_3\subsetneq Z_1\subsetneq Z_2$, $Z_3\subsetneq Z_4\subsetneq Z_2$, $Z_1\cap Z_4=\{0\}$ and the gap with the zero-divisor sets.
+- The companion articles of the section: *Square Roots of One and the Idempotents in the Algebraic Structures of Biquaternions over $\mathbb{C}$*; *Square Roots of a General Element in the Algebraic Structures of Biquaternions over $\mathbb{C}$*; *Zero Divisors in the Algebraic Structures of Biquaternions over $\mathbb{C}$*; *Annihilators in the Algebraic Structures of Biquaternions over $\mathbb{C}$*.
+- The lightlike displacement and the photon: *The Null Four-Momentum: What the Cone Derives and What It Does Not*; *The Light Cone as the Biquaternion Zero-Divisor Cone*; *Zero Divisors as a Physical Locus in Biquaternionic Form*; *The Cone and the Massless Particles in the Algebraic Structures of Biquaternions over $\mathbb{C}$*.
 - The Grassmann reading of square-zero variables: *Grassmann Coherent States in Biquaternionic Form*, for the coherent-state labels as the minimal odd extension whose even part is the algebra itself and whose square-zero variable is not an element of $\mathbb{B}$; *The Graded Algebra, Fermion Parity and the Two Sectors with Signed Hermitian Adjoint in Biquaternionic Form*.
 - The ceiling of the ladder and the unit group: *The Qutrit Problem: Three-Level Systems Outside the Biquaternion Algebra*, for the square-zero raising operator that stops at two levels and the absent three-level module; *Biquaternion Orders and Finite Groups of Units*, for the null direction whose powers make the unit group of the complex order infinite, the arithmetic statement of the light cone.
 - The discrete lattice: *Lattice Gauge Theory and the Biquaternion Path Integral*, for the algebra's integral structures read as a discrete spacetime lattice whose Euclidean part is definite and whose null direction is a discrete lightlike direction, so that the light cone is a lattice cone.
@@ -705,5 +704,5 @@ element theory of the algebra.
 - The probability band and its positivity: *Why Probability Values Are Central: the Symmetric Sesquilinear Product and Its Cone*; *Mass, Rank and the Positivity of the Dagger*; *The Squares and the Positive Cone of the Biquaternion Sesqualgebra* (mathematics).
 - The gauge band: *The Fourth Product and Its Indefinite Metric*; *The States the Indefinite Metric Cannot Normalise*; *The Square of the General Quaternionic Sesquilinear Product and the Two Halves* (mathematics).
 - The brackets: *The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket*; *A Bracket Invisible on the Real Forms: the Complex Witness of the Jacobi Failure*.
-- The conventions and the nilpotent convention: *Conventions in the Biquaternion Universe*; *Definitions for the Study of the 12 Algebraic Structures* (mathematics).
+- The conventions and the nilpotent convention: *Conventions in the Biquaternion Universe*; *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (mathematics).
 - The grid: *The 12 Products of the Biquaternion Complex Space* (mathematics); *The Twelve Structures Compared: Product, Law and Form*.

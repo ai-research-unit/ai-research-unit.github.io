@@ -89,7 +89,7 @@ so the conjugation carries the product to the mirror product and back, and the t
 | symmetric quaternionic (SQA) | $\tfrac12(\tilde p^{\natural}\tilde q+\tilde q^{\natural}\tilde p)$ | commutative, scalar-valued, no unit, zero divisors |
 | antisymmetric quaternionic (AQA) | $\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)$ | alternating, Jacobi fails |
 
-**Remark.** The table is the chapter's, and the articles that own it are *The 6 Products of the Quaternion Real Space* and *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; it is reproduced here for the relation only. The symmetric and antisymmetric quaternionic blocks are below this article in this category, as is the synthesis.
+**Remark.** The table is the chapter's, and the articles that own it are *The 6 Products of the Quaternion Real Space* and *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; it is reproduced here for the relation only. The symmetric and antisymmetric quaternionic blocks are below this article in this category, as is the synthesis.
 
 ## Summary
 

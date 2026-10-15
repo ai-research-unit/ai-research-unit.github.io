@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The algebra of this article is the quaternion algebra $\mathbb{H}$, the real space $\mathbb{H}$ under the general plain bilinear product $\tilde p\tilde q$ of *Introduction to the General Plain Algebra of Quaternions*, the multiplication of the algebra and the operation named $\mathrm{GPA}$ in *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*. That product is the one read throughout this article.
+The algebra of this article is the quaternion algebra $\mathbb{H}$, the real space $\mathbb{H}$ under the general plain bilinear product $\tilde p\tilde q$ of *Introduction to the General Plain Algebra of Quaternions*, the multiplication of the algebra and the operation named $\mathrm{GPA}$ in *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*. That product is the one read throughout this article.
 
 The article treats two subjects, and in this order. The first is the square roots of the central value $0$, the elements $\tilde\xi\in\mathbb{H}$ with
 
@@ -18,7 +18,7 @@ The article is algebraic. The zero-divisor set, its families and the criterion o
 
 **Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$, so that $e_k^2=-e_0$ and $e_je_k=-e_ke_j$ for $j\neq k$. An element is $\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; the scalar part is $q_0=\mathrm{Sc}(\tilde q)$ and the vector part is $\vec q$. The natural conjugation is $\tilde q^{\natural}=q_0e_0-\vec q$, and the **norm** is $N(\tilde q)=\tilde q\tilde q^{\natural}=q_0^2+|\vec q|^2$, positive definite over $\mathbb{R}$ by *Norm and Invertibility in the General Plain Algebra*; every nonzero element is a unit, $\tilde q^{-1}=\tilde q^{\natural}/N(\tilde q)$, so there is no zero divisor. The scalar line $\mathbb{R}e_0$ is the centre and the vector subspace is $\mathrm{Vect}(\mathbb{H})$, of dimension three. A root of a central value is written $\tilde\xi$ (§*The Root Convention* of *Conventions in Mathematics*), a nilpotent $\tilde\nu$ (§*The Nilpotent Convention*), and a generic element $\tilde q$.
 
-The equations name a product, so the roots and the nilpotents are relative to it. The general definition of the power, the square, the root of a central value and the nilpotent, with the index of nilpotency and the square-zero element, is *Definitions for the Study of the 6 Algebraic Structures*, §*The Element Vocabulary*. Throughout this article the square is the one of the general plain bilinear product, the multiplication of the algebra; the other five structures over the same space carry roots of $0$ and square-zero sets of their own.
+The equations name a product, so the roots and the nilpotents are relative to it. The general definition of the power, the square, the root of a central value and the nilpotent, with the index of nilpotency and the square-zero element, is *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, §*The Element Vocabulary*. Throughout this article the square is the one of the general plain bilinear product, the multiplication of the algebra; the other five structures over the same space carry roots of $0$ and square-zero sets of their own.
 
 ## The Roots of Zero
 
@@ -102,7 +102,7 @@ and the two coefficients cannot vanish together off the origin — the vector te
 
 **Definition (nilpotent of a product).** Let $\star$ be a product on $\mathbb{H}$; a **square-zero element** of $\star$ is an element $\tilde q$ with $\tilde q^{\star2}=0$, and a **nilpotent of $\star$** is a **nonzero** element $\tilde\nu$ with $\tilde\nu^{\star k}=0$ for some $k\geq1$. The least such $k$ is the **index of nilpotency**, and an element is of **index two** when its square vanishes while it does not. The element $0$ is a square-zero element and is not a nilpotent.
 
-The equation names a product, and the notion is relative to it; throughout this article the product is the general plain bilinear product, the multiplication of the algebra, and the square is the plain square. The general definition, with the index of nilpotency and the square-zero element, is *Definitions for the Study of the 6 Algebraic Structures*, §*The Element Vocabulary*; the square-zero set and the nilpotent class are kept apart below, and the relation between them is stated in both readings.
+The equation names a product, and the notion is relative to it; throughout this article the product is the general plain bilinear product, the multiplication of the algebra, and the square is the plain square. The general definition, with the index of nilpotency and the square-zero element, is *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, §*The Element Vocabulary*; the square-zero set and the nilpotent class are kept apart below, and the relation between them is stated in both readings.
 
 The natural conjugation preserves square-zero elements, being multiplicative and carrying a vanishing square to a vanishing square,
 
@@ -140,7 +140,7 @@ If $\vec q=0$ then $\tilde q^3=q_0^3e_0$ vanishes only for $q_0=0$; if $\vec q\n
 
 ### The Nilpotent Cone Is Empty
 
-The set of square-zero elements is $\{0\}$, so the **nilpotent cone is the empty set**: there is no parametrisation of it, no real dimension to give, and no family of isotropic pure elements, the sum of squares of the vector subspace being definite. The emptiness is also the **criterion for an empty class**: a nonzero square-zero element would be a zero divisor, and the general plain structure has none (*Definitions for the Study of the 6 Algebraic Structures*, §*The Criterion for an Empty Class*). Over the complexified block the pure square $\vec Q^2=-(\vec Q,\vec Q)e_0$ is indefinite, the isotropic pure elements form a cone of complex dimension two, and the nilpotents fill it; the real block has none of them.
+The set of square-zero elements is $\{0\}$, so the **nilpotent cone is the empty set**: there is no parametrisation of it, no real dimension to give, and no family of isotropic pure elements, the sum of squares of the vector subspace being definite. The emptiness is also the **criterion for an empty class**: a nonzero square-zero element would be a zero divisor, and the general plain structure has none (*Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, §*The Criterion for an Empty Class*). Over the complexified block the pure square $\vec Q^2=-(\vec Q,\vec Q)e_0$ is indefinite, the isotropic pure elements form a cone of complex dimension two, and the nilpotents fill it; the real block has none of them.
 
 ### The Nilpotents and the Zero Divisors
 
@@ -212,7 +212,7 @@ The nilpotent class is empty: there is no nilpotent cone, the set of square-zero
 
 ## Further Reading
 
-- *Definitions for the Study of the 6 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-6-algebraic-structures.md`), §*The Element Vocabulary*, for the general definition of a root of a central value and of the nilpotent, with the index of nilpotency and the square-zero element; §*The Criterion for an Empty Class*, for the criterion that empties the nonzero nilpotent class.
+- *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-quaternion-r-space.md`), §*The Element Vocabulary*, for the general definition of a root of a central value and of the nilpotent, with the index of nilpotency and the square-zero element; §*The Criterion for an Empty Class*, for the criterion that empties the nonzero nilpotent class.
 - *Introduction to the General Plain Algebra of Quaternions* (`articles_maths/introduction-to-the-general-plain-algebra-of-quaternions.md`), for the product, the unit and the square.
 - *Square Roots of One and the Idempotents of the General Plain Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra-of-quaternions.md`), for the central reduction specialised here, the roots of $+e_0$, the idempotents and their disjointness from the square-zero class.
 - *Square Roots of a General Element in the General Plain Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-general-plain-algebra-of-quaternions.md`), for the roots of the general quadratic $\tilde\xi^2=\tilde q$, of which the roots of $0$ here are the degenerate case.

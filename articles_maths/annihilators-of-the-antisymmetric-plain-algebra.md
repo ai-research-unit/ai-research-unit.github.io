@@ -9,7 +9,7 @@ $$
 A_\star(\tilde Q)=\{\tilde X:\tilde Q\star\tilde X=0\},\qquad
 B_\star(\tilde Q)=\{\tilde X:\tilde X\star\tilde Q=0\},
 $$
-the left and the right annihilator (*Definitions for the Study of the 12 Algebraic Structures*,
+the left and the right annihilator (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*,
 §*The Zero Divisor and the Annihilator*). When the product is carried by a multiplication operator
 the annihilator is the kernel of that operator, so it is a linear subspace and its computation is
 one of linear algebra.
@@ -238,7 +238,7 @@ $\mathbb{C}e_0\oplus\mathbb{C}\vec P$ on the vector subspace.
 
 ## Further Reading
 
-- *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), for the zero divisor and the annihilator of a general product and for the relativity of the definition.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the zero divisor and the annihilator of a general product and for the relativity of the definition.
 - *Introduction to the Antisymmetric Plain Algebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-plain-algebra-of-biquaternions.md`), for the operation, its alternation and its table.
 - *Zero Divisors of the Antisymmetric Plain Algebra* (`articles_maths/zero-divisors-of-the-antisymmetric-plain-algebra.md`), above this article in this category, for the zero-divisor set, the criterion and the comparison with the other eleven structures.
 - *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the criterion, the two families and the structure of the zero divisors of the parent plain product.

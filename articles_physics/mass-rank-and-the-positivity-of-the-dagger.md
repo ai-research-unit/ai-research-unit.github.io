@@ -333,7 +333,7 @@ and *Causality and the Light Cone as an Information Barrier in Biquaternionic Fo
 - Companion article *Observables, Gauge Generators and the Chirality of the Internal Action*, for the
   adjoints, the observables and the generators of this structure.
 - Mathematics article *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*
-  (`articles_maths/the-2x2-matrix-element-representation-m2c-of-biquaternions.md`), for $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$.
+  (`articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.md`), for $\det\mathsf{M}_2(\tilde Q)=N(\tilde Q)$.
 - Mathematics article *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*
   (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the four scalar forms.
 - Mathematics article *Indefinite Inner Product Spaces*

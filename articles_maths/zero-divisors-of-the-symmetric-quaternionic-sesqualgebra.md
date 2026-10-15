@@ -12,11 +12,11 @@ are read in full in *Idempotents of the Symmetric Quaternionic Sesqualgebra* and
 Symmetric Quaternionic Sesqualgebra*.
 
 A divisor is relative to a product. The definition is stated once for a general product in
-*Definitions for the Study of the 12 Algebraic Structures*, §*The Zero Divisor and the
+*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Zero Divisor and the
 Annihilator*, and read on the products of the space; the unqualified word means the zero divisor of
 the block, and every other product is named. The four general products of the space share one
 zero-divisor set, $\{\tilde Q\neq0: C(\tilde Q)=0\}$ with $C(\tilde Q)=\sum_\mu Q_\mu^2$, a
-coincidence of the algebra proved in *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the block is a symmetric
+coincidence of the algebra proved in *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the block is a symmetric
 part of one of them and its set is **larger**, and the enlargement is the point of §*Comparison
 with the Four General Products*.
 
@@ -45,7 +45,7 @@ Plain Algebra*. Throughout this article the product is the block, written $\star
 ## Definition
 
 The word names a product, so the definition is stated for a general product and then read on the
-block; it is stated once and for all in *Definitions for the Study of the 12 Algebraic Structures*,
+block; it is stated once and for all in *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*,
 §*The Zero Divisor and the Annihilator*.
 
 **Definition (zero divisor of a product).** Let $\star$ be a product on $\mathbb{B}$ and let
@@ -145,7 +145,7 @@ annihilators, the rank table and the reading on the remarkable subspaces are the
 **Every zero divisor of a general product is a zero divisor of the block, and the inclusion is strict: the block's set adds the pure non-isotropic vectors, such as $e_1$, whose central square is $1$.**
 
 The four general products of $\mathbb{B}$ have one zero-divisor set,
-$\{\tilde Q\neq0:C(\tilde Q)=0\}$, where $C$ is the central square (**Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space**). The block's set contains it, and it contains more.
+$\{\tilde Q\neq0:C(\tilde Q)=0\}$, where $C$ is the central square (**Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space**). The block's set contains it, and it contains more.
 
 **Theorem (the block's set contains the general one).** Every zero divisor of a general product is
 a zero divisor of the block, and the inclusion is strict: the union of the block's two families is
@@ -263,8 +263,8 @@ substitute for the invertible ones.
 
 ## Further Reading
 
-- *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), §*The Zero Divisor and the Annihilator*, for the definition relative to a general product and for the dictionary of the classes against the four general products.
-- *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the single zero-divisor set of the four general products and the proof that the four definitions coincide.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), §*The Zero Divisor and the Annihilator*, for the definition relative to a general product and for the dictionary of the classes against the four general products.
+- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the single zero-divisor set of the four general products and the proof that the four definitions coincide.
 - *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the same class in the plain product, with the criterion, the two families and the annihilators.
 - *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra-of-biquaternions.md`), for the product, its class and its conjugate-commutativity.
 - *The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-sesqualgebra.md`), for the operators whose kernels are the annihilators.

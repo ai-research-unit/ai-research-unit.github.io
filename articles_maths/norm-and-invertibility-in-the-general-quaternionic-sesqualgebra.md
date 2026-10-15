@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A **unit** of a product $\star$ is an element $\tilde E$ with $\tilde E\star\tilde X = \tilde X\star\tilde E = \tilde X$ for every $\tilde X$, an **inverse** of $\tilde X$ is an element $\tilde Y$ with $\tilde X\star\tilde Y = \tilde Y\star\tilde X = \tilde E$, and $\tilde X$ is **invertible** when it has an inverse; the definitions are *Definitions for the Study of the 12 Algebraic Structures*. This article fixes the product to the **general quaternionic sesquilinear product**
+A **unit** of a product $\star$ is an element $\tilde E$ with $\tilde E\star\tilde X = \tilde X\star\tilde E = \tilde X$ for every $\tilde X$, an **inverse** of $\tilde X$ is an element $\tilde Y$ with $\tilde X\star\tilde Y = \tilde Y\star\tilde X = \tilde E$, and $\tilde X$ is **invertible** when it has an inverse; the definitions are *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. This article fixes the product to the **general quaternionic sesquilinear product**
 
 $$
 \tilde P \star \tilde Q = \tilde P^{\natural}\tilde Q^{*}
@@ -44,7 +44,7 @@ so the left action of $e_0$ is the star and the right action is the natural conj
 
 **Corollary (the absence and the element classes).** The concepts of *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra*, *Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra* and the roots of a central value of the block are read **without** a unit: an idempotent is an element equal to its square and not a projection onto the unit, a nilpotent is an element of vanishing square and not a multiple of a unit, and a root of $\lambda$ is an element of square $\lambda e_0$ and not the product of a unit with a root of $\lambda$ in the plain algebra.
 
-**Proof.** Each definition names only the product and $e_0$, and none of them names a unit; the corollary is the reading of *Definitions for the Study of the 12 Algebraic Structures* with the theorem above.
+**Proof.** Each definition names only the product and $e_0$, and none of them names a unit; the corollary is the reading of *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* with the theorem above.
 
 ## The Algebraic Norm of the Block
 
@@ -134,7 +134,7 @@ real, indefinite of signature $(2,6)$, with the $K$-isotropic cone as its vanish
 
 - *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.md`), for the definition of the algebraic norm as the form at the two equal arguments and the four algebraic norms of the space.
 - *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the general quaternionic sesquilinear form $K$ and the table of the four forms.
-- *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), for the unit, the inverse and the invertible element relative to a product.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the unit, the inverse and the invertible element relative to a product.
 - *The Two One-Sided Actions and the Absence of a Unit* (`articles_maths/the-two-one-sided-actions-and-the-absence-of-a-unit.md`), for the proof of the absence and the two one-sided families of the block.
 - *The Krein Gram Matrix and the Restrictions of the Form* (`articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md`), for $K$, its Gram matrix and its signatures.
 

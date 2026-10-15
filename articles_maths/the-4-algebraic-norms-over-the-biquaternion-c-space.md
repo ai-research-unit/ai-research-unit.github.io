@@ -2,26 +2,26 @@
 
 ## Introduction
 
-The twelve products of *The 12 Products of the Biquaternion Complex Space*, read as the twelve algebraic structures of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, carry four **forms** and no more, and this article starts from them. The four forms are the four **scalar parts** of the four general products, and they are counted and defined in *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, read off the third column of the table of the twelve: the **general plain bilinear form** $B$, the **general quaternionic bilinear form** $N$, the **general plain sesquilinear form** $H$, also called the **Hermitian form**, and the **general quaternionic sesquilinear form** $K$, also called the **Krein form**, each written with the one bracket of *Conventions in the Biquaternion Universe* whose subscript records the pair $(a,b)$,
+The twelve products of *The 12 Products of the Biquaternion Complex Space*, read as the twelve algebraic structures of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, carry four **forms** and no more, and this article starts from them. The four forms are the four **scalar parts** of the four general products, and they are counted and defined in *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, read off the third column of the table of the twelve: the **general plain bilinear form** $B$, the **general plain sesquilinear form** $H$, also called the **Hermitian form**, the **general quaternionic bilinear form** $N$, and the **general quaternionic sesquilinear form** $K$, also called the **Krein form**, each written with the one bracket of *Conventions in the Biquaternion Universe* whose subscript records the pair $(a,b)$,
 
 $$
 B(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle,
 \qquad
-N(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle_{\natural},
-\qquad
 H(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle_{*},
+\qquad
+N(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle_{\natural},
 \qquad
 K(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle_{\natural*},
 $$
 
-for the four pairs $(\mathrm{id},\mathrm{id})$, $({}^{\natural},\mathrm{id})$, $(\mathrm{id},{}^{*})$, $({}^{\natural},{}^{*})$ read in that order. The chain of the section is the table of the twelve, then the four forms, then the four algebraic norms of this article, and the passage from the second to the third is one operation: the **algebraic norm**.
+for the four pairs $(\mathrm{id},\mathrm{id})$, $(\mathrm{id},{}^{*})$, $({}^{\natural},\mathrm{id})$, $({}^{\natural},{}^{*})$ read in that order. The chain of the section is the table of the twelve, then the four forms, then the four algebraic norms of this article, and the passage from the second to the third is one operation: the **algebraic norm**.
 
 **Definition (the four algebraic norms).** The **algebraic norm** of a form is that form read at its two equal arguments, $	ilde P=	ilde Q$:
 
 $$
 B(\tilde Q)=B(\tilde Q,\tilde Q),\qquad
-N(\tilde Q)=N(\tilde Q,\tilde Q),\qquad
 H(\tilde Q)=H(\tilde Q,\tilde Q),\qquad
+N(\tilde Q)=N(\tilde Q,\tilde Q),\qquad
 K(\tilde Q)=K(\tilde Q,\tilde Q).
 $$
 
@@ -29,16 +29,16 @@ The four forms therefore give **four algebraic norms**, one to a form, written o
 
 $$
 B(\tilde Q)=\langle\tilde Q,\tilde Q\rangle=\sum_\mu\varepsilon_\mu Q_\mu^{2},\qquad
-N(\tilde Q)=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2},\qquad
 H(\tilde Q)=\langle\tilde Q,\tilde Q\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2},\qquad
+N(\tilde Q)=\langle\tilde Q,\tilde Q\rangle_{\natural}=\sum_\mu Q_\mu^{2},\qquad
 K(\tilde Q)=\langle\tilde Q,\tilde Q\rangle_{\natural*}=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2},
 $$
 
-with $\varepsilon=(1,-1,-1,-1)$. **One letter, two arities.** A letter names the **form** when it carries two arguments and the **algebraic norm** when it carries one; the norm is the form of the same name with its two arguments equated, and the four equations above are the whole of the definition. Read with one argument, the value is complex for $B$ and $N$ and real for $H$ and $K$, because a sesquilinear form has a real algebraic norm; the same equation written for a general form, $\varphi(\tilde Q)=\varphi(\tilde Q,\tilde Q)$, is the definition of §*The Algebraic Norm of an Operation*. The four names are $B$ the **general plain bilinear algebraic norm**, the algebraic norm of $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)$; $N$ the **general quaternionic bilinear algebraic norm**, the algebraic norm of $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$; $H$ the **general plain sesquilinear algebraic norm**, the algebraic norm of $H(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})$, also called the Hermitian algebraic norm; and $K$ the **general quaternionic sesquilinear algebraic norm**, the algebraic norm of $K(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})$, also called the Krein algebraic norm. The symmetrisation of a family keeps the scalar part of the general product, so it keeps the form and its algebraic norm; the antisymmetrisation kills the scalar part, so it has neither. That is the whole of the count, and §*From the Four Forms to the Four Algebraic Norms* proves it.
+with $\varepsilon=(1,-1,-1,-1)$. **One letter, two arities.** A letter names the **form** when it carries two arguments and the **algebraic norm** when it carries one; the norm is the form of the same name with its two arguments equated, and the four equations above are the whole of the definition. Read with one argument, the value is complex for $B$ and $N$ and real for $H$ and $K$, because a sesquilinear form has a real algebraic norm; the same equation written for a general form, $\varphi(\tilde Q)=\varphi(\tilde Q,\tilde Q)$, is the definition of §*The Algebraic Norm of an Operation*. The four names are $B$ the **general plain bilinear algebraic norm**, the algebraic norm of $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)$; $H$ the **general plain sesquilinear algebraic norm**, the algebraic norm of $H(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})$, also called the Hermitian algebraic norm; $N$ the **general quaternionic bilinear algebraic norm**, the algebraic norm of $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$; and $K$ the **general quaternionic sesquilinear algebraic norm**, the algebraic norm of $K(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})$, also called the Krein algebraic norm. The symmetrisation of a family keeps the scalar part of the general product, so it keeps the form and its algebraic norm; the antisymmetrisation kills the scalar part, so it has neither. That is the whole of the count, and §*From the Four Forms to the Four Algebraic Norms* proves it.
 
-The four algebraic norms are separated by three properties and no two of them share all three. The **value** lies in $\mathbb{C}$ for $B$ and $N$ and in $\mathbb{R}$ for $H$ and $K$. The **vanishing set** is the complex cone $\sum_\mu\varepsilon_\mu Q_\mu^{2}=0$ for $B$, the zero-divisor cone $\mathcal N$ for $N$, the origin alone for $H$, and the real cone $\mathcal K$ for $K$. **Multiplicativity** holds for $N$ alone and **definiteness** for $H$ alone; no one of the four is both, and that impossibility is the zero divisor of *Norm and Invertibility in the General Quaternionic Algebra*.
+The four algebraic norms are separated by three properties and no two of them share all three. The **value** lies in $\mathbb{C}$ for $B$ and $N$ and in $\mathbb{R}$ for $H$ and $K$. The **vanishing set** is the complex cone $\sum_\mu\varepsilon_\mu Q_\mu^{2}=0$ for $B$, the origin alone for $H$, the zero-divisor cone $\mathcal N$ for $N$, and the real cone $\mathcal K$ for $K$. **Multiplicativity** holds for $N$ alone and **definiteness** for $H$ alone; no one of the four is both, and that impossibility is the zero divisor of *Norm and Invertibility in the General Quaternionic Algebra*.
 
-The four algebraic norms of this article are the four degree-two functions of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, read at the two equal arguments of their pairings. Their names in the three-letter code of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* are read there; for the record, $B$ is carried by the general plain bilinear product and its symmetrisation, $N$ by the general quaternionic bilinear product and its symmetrisation, $H$ by the general plain sesquilinear product and its symmetrisation, and $K$ by the general quaternionic sesquilinear product and its symmetrisation, while the four antisymmetrisations carry no algebraic norm.
+The four algebraic norms of this article are the four degree-two functions of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, read at the two equal arguments of their pairings. Their names in the three-letter code of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* are read there; for the record, $B$ is carried by the general plain bilinear product and its symmetrisation, $H$ by the general plain sesquilinear product and its symmetrisation, $N$ by the general quaternionic bilinear product and its symmetrisation, and $K$ by the general quaternionic sesquilinear product and its symmetrisation, while the four antisymmetrisations carry no algebraic norm.
 
 The one **topological** norm of the space, $\lVert\cdot\rVert_E$, is the square root of $H$ and it is unique; the other three are algebraic and give no distance. The distinction is that of *Introduction to Mathematics* and of *Hermitian Forms over Algebras and Norms*: the algebraic norm takes its value in the ring, and the topological norm is the selection of the positive real values among them, which is the passage to *The Norm Defined by a Form*.
 
@@ -49,15 +49,15 @@ $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is the biquaternion algebr
 $$
 B(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu Q_\mu,
 \qquad
-N(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=\sum_\mu P_\mu Q_\mu,
-$$
-$$
 H(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})=\sum_\mu P_\mu\overline{Q_\mu},
+$$
+$$
+N(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=\sum_\mu P_\mu Q_\mu,
 \qquad
 K(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu},
 $$
 
-each being the trace form of its own pair up to the factor of the trace convention, $2h_{a,b}(\tilde P,\tilde Q)=\mathrm{Tr}(\tilde P^{a}\tilde Q^{b})$, for the four pairs $(\mathrm{id},\mathrm{id})$, $({}^{\natural},\mathrm{id})$, $(\mathrm{id},{}^{*})$, $({}^{\natural},{}^{*})$ read in that order. The four algebraic norms are $B(\tilde Q)=\langle\tilde Q,\tilde Q\rangle$, $N(\tilde Q)=\langle\tilde Q,\tilde Q\rangle_{\natural}$, $H(\tilde Q)=\langle\tilde Q,\tilde Q\rangle_{*}$ and $K(\tilde Q)=\langle\tilde Q,\tilde Q\rangle_{\natural*}$: the **general plain bilinear algebraic norm**, the **general quaternionic bilinear algebraic norm**, the **general plain sesquilinear algebraic norm** and the **general quaternionic sesquilinear algebraic norm**. The names, the bracket and the pair of each are the convention of *Conventions in the Biquaternion Universe*, which reads the four on the algebra and on the material sector; $H$ is also the Hermitian algebraic norm and $K$ the Krein algebraic norm, and the letters $B$, $N$, $H$, $K$ are the short names of this article. The Euclidean norm is $\lVert\tilde Q\rVert_E=\bigl(\sum_\mu\lvert Q_\mu\rvert^{2}\bigr)^{1/2}$.
+each being the trace form of its own pair up to the factor of the trace convention, $2h_{a,b}(\tilde P,\tilde Q)=\mathrm{Tr}(\tilde P^{a}\tilde Q^{b})$, for the four pairs $(\mathrm{id},\mathrm{id})$, $(\mathrm{id},{}^{*})$, $({}^{\natural},\mathrm{id})$, $({}^{\natural},{}^{*})$ read in that order. The four algebraic norms are $B(\tilde Q)=\langle\tilde Q,\tilde Q\rangle$, $H(\tilde Q)=\langle\tilde Q,\tilde Q\rangle_{*}$, $N(\tilde Q)=\langle\tilde Q,\tilde Q\rangle_{\natural}$ and $K(\tilde Q)=\langle\tilde Q,\tilde Q\rangle_{\natural*}$: the **general plain bilinear algebraic norm**, the **general plain sesquilinear algebraic norm**, the **general quaternionic bilinear algebraic norm** and the **general quaternionic sesquilinear algebraic norm**. The names, the bracket and the pair of each are the convention of *Conventions in the Biquaternion Universe*, which reads the four on the algebra and on the material sector; $H$ is also the Hermitian algebraic norm and $K$ the Krein algebraic norm, and the letters $B$, $H$, $N$, $K$ are the short names of this article. The Euclidean norm is $\lVert\tilde Q\rVert_E=\bigl(\sum_\mu\lvert Q_\mu\rvert^{2}\bigr)^{1/2}$.
 
 ## The Algebraic Norm of an Operation
 
@@ -71,18 +71,18 @@ a function of one element taking its value in $\mathbb{C}$ when $f$ is $\mathbb{
 
 The definition is the one of *Introduction to Mathematics*: the algebraic norm is the quadratic form $Q(x)=B(x,x)$ read at the two equal arguments of a form, valued in the ring. It records the size of an element only in the sense of the ring; it is not a distance, and it becomes a distance only when it is selected to take positive real values.
 
-The four algebraic norms of the biquaternion algebra are then the four functions of the introduction, $B$, $N$, $H$ and $K$: the four algebraic norms of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*.
+The four algebraic norms of the biquaternion algebra are then the four functions of the introduction, $B$, $H$, $N$ and $K$: the four algebraic norms of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*.
 
 ## From the Four Forms to the Four Algebraic Norms
 
-The count of the four is taken, one step, in *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*: the symmetrisation of a family keeps the scalar part and the antisymmetrisation kills it, so the eight operations of the four $\mathrm G/\mathrm S$ rows carry the four forms two by two and the four antisymmetric operations carry the zero form. The twelve products are named in the three-letter code of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* — the general, symmetric and antisymmetric operation of each family, the plain and quaternionic family lettered $\mathrm P$ and $\mathrm Q$ and the algebra and sesqualgebra lettered $\mathrm A$ and $\mathrm S$, so that the twelve are $\mathrm{GPA},\mathrm{SPA},\mathrm{APA}$ in the plain algebra, $\mathrm{GQA},\mathrm{SQA},\mathrm{AQA}$ in the quaternionic algebra, and $\mathrm{GPS},\mathrm{SPS},\mathrm{APS}$, $\mathrm{GQS},\mathrm{SQS},\mathrm{AQS}$ in the two sesqualgebras.
+The count of the four is taken, one step, in *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*: the symmetrisation of a family keeps the scalar part and the antisymmetrisation kills it, so the eight operations of the four $\mathrm G/\mathrm S$ rows carry the four forms two by two and the four antisymmetric operations carry the zero form. The twelve products are named in the three-letter code of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* — the general, symmetric and antisymmetric operation of each family, the plain and quaternionic family lettered $\mathrm P$ and $\mathrm Q$ and the algebra and sesqualgebra lettered $\mathrm A$ and $\mathrm S$, so that the twelve are $\mathrm{GPA}$, $\mathrm{GPS}$, $\mathrm{GQA}$, $\mathrm{GQS}$ the four general, $\mathrm{SPA}$, $\mathrm{SPS}$, $\mathrm{SQA}$, $\mathrm{SQS}$ the four symmetric and $\mathrm{APA}$, $\mathrm{APS}$, $\mathrm{AQA}$, $\mathrm{AQS}$ the four antisymmetric.
 
 **Proposition (the twelve operations carry four algebraic norms).** The twelve operations have exactly four distinct non-zero algebraic norms, the four algebraic norms above, each attained by two operations, and four operations have the zero algebraic norm.
 
-*Proof.* The algebraic norm is the form at the two equal arguments, so the count of the four algebraic norms is the count of the four forms, which is the proposition of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; the symmetrisation of a family therefore carries the same algebraic norm as the general product and the antisymmetrisation the zero one. Hence the algebraic norms of the twelve are those of the four general products, each on the two operations $\mathrm G$ and $\mathrm S$ of its family: $B$ on $\mathrm{GPA}$ and $\mathrm{SPA}$, $N$ on $\mathrm{GQA}$ and $\mathrm{SQA}$, $H$ on $\mathrm{GPS}$ and $\mathrm{SPS}$, $K$ on $\mathrm{GQS}$ and $\mathrm{SQS}$; and $0$ on $\mathrm{APA}$, $\mathrm{AQA}$, $\mathrm{APS}$ and $\mathrm{AQS}$. The four are distinct as functions of one element: on $e_1$ and on $ie_0$ their value pairs are
+*Proof.* The algebraic norm is the form at the two equal arguments, so the count of the four algebraic norms is the count of the four forms, which is the proposition of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; the symmetrisation of a family therefore carries the same algebraic norm as the general product and the antisymmetrisation the zero one. Hence the algebraic norms of the twelve are those of the four general products, each on the two operations $\mathrm G$ and $\mathrm S$ of its family: $B$ on $\mathrm{GPA}$ and $\mathrm{SPA}$, $H$ on $\mathrm{GPS}$ and $\mathrm{SPS}$, $N$ on $\mathrm{GQA}$ and $\mathrm{SQA}$, $K$ on $\mathrm{GQS}$ and $\mathrm{SQS}$; and $0$ on $\mathrm{APA}$, $\mathrm{APS}$, $\mathrm{AQA}$ and $\mathrm{AQS}$. The four are distinct as functions of one element: on $e_1$ and on $ie_0$ their value pairs are
 
 $$
-B=(-1,-1),\qquad N=(1,-1),\qquad H=(1,1),\qquad K=(-1,1),
+B=(-1,-1),\qquad H=(1,1),\qquad N=(1,-1),\qquad K=(-1,1),
 $$
 
 which are four different pairs.
@@ -98,6 +98,16 @@ B(\tilde Q)=B(\tilde Q,\tilde Q)=\sum_\mu\varepsilon_\mu Q_\mu^{2}=Q_0^{2}-Q_1^{
 $$
 
 the general plain bilinear algebraic norm $B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=P_0Q_0-(\vec P,\vec Q)$. It is complex-valued and $\mathbb{C}$-quadratic, its Gram matrix on the coefficient basis is the sign matrix $\mathrm E=\operatorname{diag}(1,-1,-1,-1)$, and its realification is of signature $(4,4)$. Its vanishing set is the complex cone $B(\tilde Q)=0$, already the complex quadric of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*. It is not multiplicative. The algebraic norm is that of the **plain product**, the multiplication of the algebra, and it is the one algebraic norm the plain product carries.
+
+### The General Plain Sesquilinear Algebraic Norm $H$
+
+$$
+H(\tilde Q)=H(\tilde Q,\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}=\lvert Q_0\rvert^{2}+\lvert Q_1\rvert^{2}+\lvert Q_2\rvert^{2}+\lvert Q_3\rvert^{2},
+$$
+
+the general plain sesquilinear algebraic norm $H(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})=P_0\overline{Q_0}+(\vec P,\overline{\vec Q})$. It is real-valued, $\mathbb{R}$-quadratic and positive definite, $H(\tilde Q)>0$ for $\tilde Q\neq0$; its Gram matrix is $\mathrm I_4$ and its realification is of signature $(8,0)$. Its vanishing set is the origin alone, and it is the square of the topological norm, $H(\tilde Q)=\lVert\tilde Q\rVert_E^{2}$.
+
+The algebraic norm is definite, and it is the one of the four whose square root is the topological norm: $\lVert\tilde Q\rVert_E$ is the unique topological norm of the real vector space $\mathbb{B}\cong\mathbb{R}^{8}$, up to equivalence, and it is the topological norm under which every one of the twelve operations is read in *Topology and Metric for Each of the Twelve Operations*. It is not multiplicative.
 
 ### The General Quaternionic Bilinear Algebraic Norm $N$
 
@@ -116,16 +126,6 @@ $$
 
 The algebraic norm is the **reduced norm** of the algebra, it is the only multiplicative one of the four, and it is the biquaternion algebraic norm of *Norm and Invertibility in the General Quaternionic Algebra*: an element is invertible if and only if $N(\tilde Q)\neq0$, and the unit group is the norm-one group $\{N(\tilde Q)=1\}$, a non-compact real $6$-manifold homotopy equivalent to $S^{3}$.
 
-### The General Plain Sesquilinear Algebraic Norm $H$
-
-$$
-H(\tilde Q)=H(\tilde Q,\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}=\lvert Q_0\rvert^{2}+\lvert Q_1\rvert^{2}+\lvert Q_2\rvert^{2}+\lvert Q_3\rvert^{2},
-$$
-
-the general plain sesquilinear algebraic norm $H(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})=P_0\overline{Q_0}+(\vec P,\overline{\vec Q})$. It is real-valued, $\mathbb{R}$-quadratic and positive definite, $H(\tilde Q)>0$ for $\tilde Q\neq0$; its Gram matrix is $\mathrm I_4$ and its realification is of signature $(8,0)$. Its vanishing set is the origin alone, and it is the square of the topological norm, $H(\tilde Q)=\lVert\tilde Q\rVert_E^{2}$.
-
-The algebraic norm is definite, and it is the one of the four whose square root is the topological norm: $\lVert\tilde Q\rVert_E$ is the unique topological norm of the real vector space $\mathbb{B}\cong\mathbb{R}^{8}$, up to equivalence, and it is the topological norm under which every one of the twelve operations is read in *Topology and Metric for Each of the Twelve Operations*. It is not multiplicative.
-
 ### The General Quaternionic Sesquilinear Algebraic Norm $K$
 
 $$
@@ -139,11 +139,11 @@ the general quaternionic sesquilinear algebraic norm $K(\tilde P,\tilde Q)=\math
 | algebraic norm | bracket of the form | algebraic norm, $B(	ilde Q)=B(	ilde Q,	ilde Q)$ | pairing | value | Gram | signature over $\mathbb{R}$ | vanishing set | multiplicative | definite |
 |---|---|---|---|---|---|---|---|---|---|
 | $B$ | $\langle\cdot,\cdot\rangle$ | $B(\tilde Q)=B(\tilde Q,\tilde Q)=\sum_\mu\varepsilon_\mu Q_\mu^{2}$ | the general plain bilinear form | $\mathbb{C}$ | $\mathrm E$ | $(4,4)$ | complex cone | no | — |
-| $N$ | $\langle\cdot,\cdot\rangle_{\natural}$ | $N(\tilde Q)=N(\tilde Q,\tilde Q)=\sum_\mu Q_\mu^{2}$ | the general quaternionic bilinear form | $\mathbb{C}$ | $\mathrm I_4$ | $(4,4)$ | $\mathcal N$, the zero divisors | **yes** | — |
 | $H$ | $\langle\cdot,\cdot\rangle_{*}$ | $H(\tilde Q)=H(\tilde Q,\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}$ | the general plain sesquilinear form, the Hermitian form | $\mathbb{R}$ | $\mathrm I_4$ | $(8,0)$ | $\{0\}$ | no | **yes** |
+| $N$ | $\langle\cdot,\cdot\rangle_{\natural}$ | $N(\tilde Q)=N(\tilde Q,\tilde Q)=\sum_\mu Q_\mu^{2}$ | the general quaternionic bilinear form | $\mathbb{C}$ | $\mathrm I_4$ | $(4,4)$ | $\mathcal N$, the zero divisors | **yes** | — |
 | $K$ | $\langle\cdot,\cdot\rangle_{\natural*}$ | $K(\tilde Q)=K(\tilde Q,\tilde Q)=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$ | the general quaternionic sesquilinear form, the Krein form | $\mathbb{R}$ | $\mathrm E$ | $(2,6)$ | $\mathcal K$ | no | no |
 
-The table separates the four by the field of their values, by the Gram matrix and the signature of their pairing, by their vanishing set, and by the two properties that single out one algebraic norm each: multiplicativity for $N$, definiteness for $H$.
+The table separates the four by the field of their values, by the Gram matrix and the signature of their pairing, by their vanishing set, and by the two properties that single out one algebraic norm each: definiteness for $H$, multiplicativity for $N$.
 
 ## What the Four Algebraic Norms Separate
 
@@ -151,7 +151,7 @@ The table separates the four by the field of their values, by the Gram matrix an
 
 *Proof.* The algebra has zero divisors, $(e_0+ie_1)(e_0-ie_1)=0$ with $e_0\pm ie_1\neq0$ and $N(e_0\pm ie_1)=1+i^{2}=0$. A multiplicative function $\varphi$ would give $\varphi(e_0+ie_1)\varphi(e_0-ie_1)=\varphi(0)=0$, so one of the two values is zero, on a nonzero element; a definite function is nonzero off the origin. No function is both.
 
-**Corollary.** $N$ is multiplicative and not definite; $H$ is definite and not multiplicative; and no third algebraic norm of the four repairs the split. The multiplicative one and the definite one are different objects, and that difference is the failure of the biquaternions to be a normed division algebra — the four normed division algebras $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$, $\mathbb{O}$ of the Hurwitz theorem are exactly the ones in which the two senses coincide.
+**Corollary.** $H$ is definite and not multiplicative; $N$ is multiplicative and not definite; and no third algebraic norm of the four repairs the split. The multiplicative one and the definite one are different objects, and that difference is the failure of the biquaternions to be a normed division algebra — the four normed division algebras $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$, $\mathbb{O}$ of the Hurwitz theorem are exactly the ones in which the two senses coincide.
 
 **Proposition (only $N$ is multiplicative).** Of the four algebraic norms, $N$ alone satisfies $\varphi(\tilde P\tilde Q)=\varphi(\tilde P)\varphi(\tilde Q)$.
 
@@ -163,7 +163,7 @@ The table separates the four by the field of their values, by the Gram matrix an
 
 ## Summary
 
-The twelve products of *The 12 Products of the Biquaternion Complex Space* carry four forms and, as their algebraic norms, four functions and no more: the symmetrisation of a family keeps the scalar part and the antisymmetrisation kills it, so the eight operations of the four $\mathrm G/\mathrm S$ rows carry the four algebraic norms two by two and the four antisymmetric operations carry the vanishing algebraic norm. The four are the general plain bilinear algebraic norm $B=\sum_\mu\varepsilon_\mu Q_\mu^{2}$, the general quaternionic bilinear algebraic norm $N=\sum_\mu Q_\mu^{2}$, the general plain sesquilinear algebraic norm $H=\sum_\mu\lvert Q_\mu\rvert^{2}$ and the general quaternionic sesquilinear algebraic norm $K=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$.
+The twelve products of *The 12 Products of the Biquaternion Complex Space* carry four forms and, as their algebraic norms, four functions and no more: the symmetrisation of a family keeps the scalar part and the antisymmetrisation kills it, so the eight operations of the four $\mathrm G/\mathrm S$ rows carry the four algebraic norms two by two and the four antisymmetric operations carry the vanishing algebraic norm. The four are the general plain bilinear algebraic norm $B=\sum_\mu\varepsilon_\mu Q_\mu^{2}$, the general plain sesquilinear algebraic norm $H=\sum_\mu\lvert Q_\mu\rvert^{2}$, the general quaternionic bilinear algebraic norm $N=\sum_\mu Q_\mu^{2}$ and the general quaternionic sesquilinear algebraic norm $K=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$.
 
 $B$ and $N$ are complex-valued and $H$ and $K$ real-valued. $N$ is the multiplicative one, the reduced norm and the criterion of invertibility; $H$ is the definite one, and its square root is the unique topological norm of the space; $B$ and $K$ are the two indefinite ones of the plain and of the Krein form. Multiplicativity and definiteness are held by no single one of the four, and the zero divisors are the reason.
 
@@ -172,13 +172,13 @@ $B$ and $N$ are complex-valued and $H$ and $K$ real-valued. $N$ is the multiplic
 | Symbol | Meaning |
 |---|---|
 | $B(\tilde Q)=B(\tilde Q,\tilde Q)=\sum_\mu\varepsilon_\mu Q_\mu^{2}$ | the general plain bilinear algebraic norm, the general plain bilinear algebraic norm |
-| $N(\tilde Q)=N(\tilde Q,\tilde Q)=\sum_\mu Q_\mu^{2}$ | the general quaternionic bilinear algebraic norm, the general quaternionic bilinear algebraic norm; multiplicative, the reduced norm |
 | $H(\tilde Q)=H(\tilde Q,\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}$ | the general plain sesquilinear algebraic norm, the general plain sesquilinear algebraic norm; definite, $\lVert\tilde Q\rVert_E^{2}$ |
+| $N(\tilde Q)=N(\tilde Q,\tilde Q)=\sum_\mu Q_\mu^{2}$ | the general quaternionic bilinear algebraic norm, the general quaternionic bilinear algebraic norm; multiplicative, the reduced norm |
 | $K(\tilde Q)=K(\tilde Q,\tilde Q)=\sum_\mu\varepsilon_\mu\lvert Q_\mu\rvert^{2}$ | the general quaternionic sesquilinear algebraic norm, the general quaternionic sesquilinear algebraic norm; the Krein algebraic norm |
 | $B(\tilde Q)=B(\tilde Q,\tilde Q)$ | one letter, two arities: two arguments give the form, one argument the algebraic norm |
 | $\varepsilon=(1,-1,-1,-1)$ | the sign vector |
-| $\mathrm E=\operatorname{diag}(1,-1,-1,-1)$ | the Gram matrix of $B$ and of $K$; $\mathrm I_4$ is the Gram matrix of $N$ and of $H$ |
-| $(4,4)$, $(4,4)$, $(8,0)$, $(2,6)$ | the realifications of $B$, $N$, $H$, $K$ |
+| $\mathrm E=\operatorname{diag}(1,-1,-1,-1)$ | the Gram matrix of $B$ and of $K$; $\mathrm I_4$ is the Gram matrix of $H$ and of $N$ |
+| $(4,4)$, $(8,0)$, $(4,4)$, $(2,6)$ | the realifications of $B$, $H$, $N$, $K$ |
 | $\mathcal N$, $\mathcal K$ | the zero-divisor cone, the null cone of the Krein algebraic norm |
 | $\lVert\tilde Q\rVert_E$ | the Euclidean norm, the square root of $H$, the unique topological norm |
 
@@ -186,8 +186,8 @@ $B$ and $N$ are complex-valued and $H$ and $K$ real-valued. $N$ is the multiplic
 
 - *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, the article that immediately precedes this one, for the table of the twelve, the count of the four forms and their definition with the one bracket whose subscript records the pair; this article starts from it.
 - *The 12 Products of the Biquaternion Complex Space*, for the twelve products, their scalar parts and their two-slot construction, on which the reduction to four algebraic norms rests.
-- *Conventions in the Biquaternion Universe*, for the convention of the four pairings — the one bracket $\langle\cdot,\cdot\rangle$ with the subscript that records the pair, the four names, the pairs $(\mathrm{id},\mathrm{id})$, $({}^{\natural},\mathrm{id})$, $(\mathrm{id},{}^{*})$, $({}^{\natural},{}^{*})$, the trace form $2h_{a,b}=\mathrm{Tr}(\tilde P^{a}\tilde Q^{b})$ and the readings of the four on the algebra and on the material sector.
-- *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, for the twelve names $\mathrm{GPA},\dots,\mathrm{AQS}$ that carry the four algebraic norms two by two and the zero diagonal.
+- *Conventions in the Biquaternion Universe*, for the convention of the four pairings — the one bracket $\langle\cdot,\cdot\rangle$ with the subscript that records the pair, the four names, the pairs $(\mathrm{id},\mathrm{id})$, $(\mathrm{id},{}^{*})$, $({}^{\natural},\mathrm{id})$, $({}^{\natural},{}^{*})$, the trace form $2h_{a,b}=\mathrm{Tr}(\tilde P^{a}\tilde Q^{b})$ and the readings of the four on the algebra and on the material sector.
+- *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, for the twelve names $\mathrm{GPA},\dots,\mathrm{AQS}$ that carry the four algebraic norms two by two and the zero diagonal.
 - *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, and *Comparison Between the Four General Products*, for the four general forms and the four algebraic norms they carry, with their Gram matrices, their signatures and their symmetries.
 - *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, for the four forms, the four degree-two functions and the four algebraic norms they carry, and their Gram matrices and signatures.
 - *Remarkable Subspaces and the Four Algebraic Norms*, for the restriction of the four algebraic norms to the remarkable subspaces, with their signatures and the definiteness of each.

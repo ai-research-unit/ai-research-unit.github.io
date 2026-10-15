@@ -30,9 +30,9 @@ and so the slot that decides which of the four carries a metric.
 
 **The framework's interpretation, and it is an interpretation and not a theorem, is that the four general products are the four
 jobs a relativistic quantum theory needs.** The plain product is **composition**, the product of
-operations and of the identity operation. The quaternionic product is **causality**, because its square
-is the interval. The sesquilinear product is **probability**, because its form is positive definite and
-is the Born pairing. The general quaternionic sesquilinear product is **gauge**, because its form is indefinite
+operations and of the identity operation. The sesquilinear product is **probability**, because its form is positive definite and
+is the Born pairing. The quaternionic product is **causality**, because its square
+is the interval. The general quaternionic sesquilinear product is **gauge**, because its form is indefinite
 and its ternary product is not a state space. Each of the four interpretations is labelled in §*The Four
 Interpretations* and in §*The Ledger*, and none of them is proved here: what is proved is the grid, and the
 interpretation is what the framework does with it.
@@ -41,8 +41,7 @@ interpretation is what the framework does with it.
 biquaternion space carries **twelve** products, and with them twelve algebraic structures: each of the four
 general products splits into a symmetric and an antisymmetric part, giving six $\mathbb{C}$-bilinear and six
 sesquilinear operations, that is **six algebras over $\mathbb{C}$ and six sesqualgebras over
-$(\mathbb{C},\bar{\cdot})$** (*The 12 Products of the Biquaternion Complex Space*, *The 12 Algebraic
-Structures over the Biquaternion $\mathbb{C}$ Space*). This article, and the four blocks it maps, read the
+$(\mathbb{C},\bar{\cdot})$** (*The 12 Products of the Biquaternion Complex Space*, *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*). This article, and the four blocks it maps, read the
 **general** structures alone: the two **general** algebras and the two **general** sesqualgebras among the six of each kind. The other eight structures are the symmetric and antisymmetric parts of the four general
 products, and they enter here only through the interpretation of §*The Four Readings* that the twelve are the four
 general products together with the two halves of each.
@@ -93,10 +92,10 @@ coordinates of the two factors on the basis of the units, the first factor read 
 ${}^{\natural}$ and the second plain or through ${}^{*}$, the two choices independent:
 
 $$
-\tilde P\tilde Q=\sum_{\mu,\nu}P_\mu Q_\nu\,e_\mu e_\nu,\qquad \tilde P^{\natural}\tilde Q=\sum_{\mu,\nu}\varepsilon_\mu P_\mu Q_\nu\,e_\mu e_\nu,
+\tilde P\tilde Q=\sum_{\mu,\nu}P_\mu Q_\nu\,e_\mu e_\nu,\qquad \tilde P\tilde Q^{*}=\sum_{\mu,\nu}\varepsilon_\nu P_\mu\overline{Q_\nu}\,e_\mu e_\nu,
 $$
 $$
-\tilde P\tilde Q^{*}=\sum_{\mu,\nu}\varepsilon_\nu P_\mu\overline{Q_\nu}\,e_\mu e_\nu,\qquad \tilde P^{\natural}\tilde Q^{*}=\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu P_\mu\overline{Q_\nu}\,e_\mu e_\nu .
+\tilde P^{\natural}\tilde Q=\sum_{\mu,\nu}\varepsilon_\mu P_\mu Q_\nu\,e_\mu e_\nu,\qquad \tilde P^{\natural}\tilde Q^{*}=\sum_{\mu,\nu}\varepsilon_\mu\varepsilon_\nu P_\mu\overline{Q_\nu}\,e_\mu e_\nu .
 $$
 
 Their scalar parts are the four forms the article reads throughout, and written out term by term they
@@ -105,13 +104,13 @@ are
 $$
 \begin{aligned}
 B(\tilde P,\tilde Q)&=\mathrm{Sc}(\tilde P\tilde Q)=\textstyle\sum_\mu\varepsilon_\mu P_\mu Q_\mu=P_0Q_0-P_1Q_1-P_2Q_2-P_3Q_3,\\
-N(\tilde P,\tilde Q)&=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=\textstyle\sum_\mu P_\mu Q_\mu=P_0Q_0+P_1Q_1+P_2Q_2+P_3Q_3,\\
 H(\tilde P,\tilde Q)&=\mathrm{Sc}(\tilde P\tilde Q^{*})=\textstyle\sum_\mu P_\mu\overline{Q_\mu}=P_0\overline{Q_0}+P_1\overline{Q_1}+P_2\overline{Q_2}+P_3\overline{Q_3},\\
+N(\tilde P,\tilde Q)&=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=\textstyle\sum_\mu P_\mu Q_\mu=P_0Q_0+P_1Q_1+P_2Q_2+P_3Q_3,\\
 K(\tilde P,\tilde Q)&=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\textstyle\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}=P_0\overline{Q_0}-P_1\overline{Q_1}-P_2\overline{Q_2}-P_3\overline{Q_3}.
 \end{aligned}
 $$
 
-The four scalar forms carry the short names $B$, $N$, $H$ and $K$ of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*. The four general products are the four interpretations of §*The Four Readings* — composition, causality, probability
+The four scalar forms carry the short names $B$, $H$, $N$ and $K$ of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*. The four general products are the four interpretations of §*The Four Readings* — composition, probability, causality
 and gauge — and the four scalar forms above are what the two slots organise in §*What the Two Slots
 Decide*; restricted to the two sectors they carry the signs recorded in §*The Two Marks in the Scalar
 Form*.
@@ -122,7 +121,7 @@ Each of the four general products of *The Four General Products of the Biquatern
 through an involution, and the involutions used are only two of the four available ones:
 
 $$
-\tilde P\tilde Q,\qquad \tilde P^{\natural}\tilde Q,\qquad \tilde P\tilde Q^{*},\qquad
+\tilde P\tilde Q,\qquad \tilde P\tilde Q^{*},\qquad \tilde P^{\natural}\tilde Q,\qquad
 \tilde P^{\natural}\tilde Q^{*}.
 $$
 
@@ -178,11 +177,11 @@ structure of an **algebra over $\mathbb{C}$**; when it carries the star the prod
 $\mathbb{C}$-linear in the first factor and conjugate-linear in the second and defines the structure of
 a **sesqualgebra over $\mathbb{C}$**. The two-and-two is the column split of the four **general** products
 alone: since each of the four splits further into a symmetric and an antisymmetric part, the space carries
-**six algebras and six sesqualgebras** in all (*The 12 Algebraic Structures over the Biquaternion
+**six algebras and six sesqualgebras** in all (*The Algebraic Structures over the Biquaternion
 $\mathbb{C}$ Space*), of which the two columns of the grid are the two **general** members of each kind. This
 is the split made in *Comparison Between the Four General Products*, and it is the reason the corpus has the four objects *Introduction to the General Plain Algebra of
-Biquaternions*, *Introduction to the General Quaternionic Algebra of Biquaternions*, *Introduction to the
-General Plain Sesqualgebra of Biquaternions* and *Introduction to the General Quaternionic Sesqualgebra of
+Biquaternions*, *Introduction to the General Plain Sesqualgebra of Biquaternions*, *Introduction to the
+General Quaternionic Algebra of Biquaternions* and *Introduction to the General Quaternionic Sesqualgebra of
 Biquaternions* and not one object with four general products.
 
 ### The Two Marks in the Scalar Form
@@ -193,8 +192,8 @@ in exactly two marks. With $\varepsilon=(1,-1,-1,-1)$ and $\mathrm{Sc}$ the scal
 | product | scalar form | written out |
 |---|---|---|
 | $\tilde P\tilde Q$ | $B(\tilde P,\tilde Q)$ | $\sum_\mu\varepsilon_\mu P_\mu Q_\mu$ |
-| $\tilde P^{\natural}\tilde Q$ | $N(\tilde P,\tilde Q)$ | $\sum_\mu P_\mu Q_\mu$ |
 | $\tilde P\tilde Q^{*}$ | $H(\tilde P,\tilde Q)$ | $\sum_\mu P_\mu\overline{Q_\mu}$ |
+| $\tilde P^{\natural}\tilde Q$ | $N(\tilde P,\tilde Q)$ | $\sum_\mu P_\mu Q_\mu$ |
 | $\tilde P^{\natural}\tilde Q^{*}$ | $K(\tilde P,\tilde Q)$ | $\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ |
 
 Read by column and row, the two marks separate cleanly:
@@ -214,8 +213,8 @@ its two slots agree.
 
 Reading the first factor through ${}^{\natural}$ is what turns a definite form into an indefinite one.
 On the material sector $\mathbb{M}_-$ the four scalar forms read, in the signs of a diagonal basis,
-$B=(-,-,-,-)$, $N=(-,+,+,+)$, $H=(+,+,+,+)$ and $K=(+,-,-,-)$; on the informational sector
-$\mathbb{M}_+$ they read $B=(+,+,+,+)$, $N=(+,-,-,-)$, $H=(+,+,+,+)$ and $K=(+,-,-,-)$. So $B$ and $H$
+$B=(-,-,-,-)$, $H=(+,+,+,+)$, $N=(-,+,+,+)$ and $K=(+,-,-,-)$; on the informational sector
+$\mathbb{M}_+$ they read $B=(+,+,+,+)$, $H=(+,+,+,+)$, $N=(+,-,-,-)$ and $K=(+,-,-,-)$. So $B$ and $H$
 are definite on each sector — $H$ positively on both, $B$ negatively on $\mathbb{M}_-$ and positively on
 $\mathbb{M}_+$ — while $N$ and $K$ are indefinite on each sector; and only $N$ carries the signature of
 spacetime, on $\mathbb{M}_-$ and with the opposite signs on $\mathbb{M}_+$. Read instead on the whole
@@ -226,7 +225,7 @@ claimed here.
 
 **The sector signs are checkable on one element.** Writing $\tilde Q=(ict,x,y,z)$ on $\mathbb{M}_-$ and
 $\tilde Q=(ct,ix,iy,iz)$ on $\mathbb{M}_+$, with $t,x,y,z$ real, the four forms read on $\mathbb{M}_-$
-$B=-c^2t^2-(x^2+y^2+z^2)$, $N=-c^2t^2+x^2+y^2+z^2$, $H=c^2t^2+x^2+y^2+z^2$, $K=c^2t^2-(x^2+y^2+z^2)$,
+$B=-c^2t^2-(x^2+y^2+z^2)$, $H=c^2t^2+x^2+y^2+z^2$, $N=-c^2t^2+x^2+y^2+z^2$, $K=c^2t^2-(x^2+y^2+z^2)$,
 and on $\mathbb{M}_+$ the same four with $B$ and $N$ negated and $H$ and $K$ unchanged. That is the
 table above, and it shows on $\mathbb{M}_-$ that $N$ is the Minkowski form.
 
@@ -268,8 +267,7 @@ agree.
 **The one-sidedness of the identity is the sharpest consequence, and it is worth stating separately.**
 $e_0$ is a left identity for exactly the two products whose second slot is trivial, and a right identity
 for exactly the two whose first slot is trivial. So the plain product alone has a two-sided identity,
-and it alone is associative; the quaternionic product has a left identity and no right one; the
-sesquilinear product has a right identity and no left one; and the general quaternionic sesquilinear product has
+and it alone is associative; the sesquilinear product has a right identity and no left one; the quaternionic product has a left identity and no right one; and the general quaternionic sesquilinear product has
 neither. In the notation of the slots,
 
 $$
@@ -387,11 +385,11 @@ and the other three are obtained from it by reading the first argument through $
 second through ${}^{*}$, or both:
 
 $$
-N(\tilde P,\tilde Q)=B(\tilde P^{\natural},\tilde Q),\qquad
-H(\tilde P,\tilde Q)=B(\tilde P,\tilde Q^{*}),
+H(\tilde P,\tilde Q)=B(\tilde P,\tilde Q^{*}),\qquad
+N(\tilde P,\tilde Q)=B(\tilde P^{\natural},\tilde Q),
 $$
 $$
-K(\tilde P,\tilde Q)=N(\tilde P,\tilde Q^{*})=H(\tilde P^{\natural},\tilde Q)=B(\tilde P^{\natural},\tilde Q^{*}).
+K(\tilde P,\tilde Q)=H(\tilde P^{\natural},\tilde Q)=N(\tilde P,\tilde Q^{*})=B(\tilde P^{\natural},\tilde Q^{*}).
 $$
 
 Nothing beyond the definitions is used: $B(\tilde P,\cdot)$ is the scalar part of the plain product, so
@@ -414,23 +412,23 @@ complex lines in each coordinate, the pairing of a real basis direction with its
 purely imaginary, of value $\pm i$, and it is the **real part** of the form that is realified and
 carries the signature.
 
-| subspace | $\dim_{\mathbb{R}}$ | $B$ | $N$ | $H$ | $K$ |
+| subspace | $\dim_{\mathbb{R}}$ | $B$ | $H$ | $N$ | $K$ |
 |---|---|---|---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$ | $2$ | $(1,1)$ | $(1,1)$ | $(2,0)$ | $(2,0)$ |
-| $\mathrm{Vect}(\mathbb{B})$ | $6$ | $(3,3)$ | $(3,3)$ | $(6,0)$ | $(0,6)$ |
+| $\mathbb{C}_{\mathbb{B}}$ | $2$ | $(1,1)$ | $(2,0)$ | $(1,1)$ | $(2,0)$ |
+| $\mathrm{Vect}(\mathbb{B})$ | $6$ | $(3,3)$ | $(6,0)$ | $(3,3)$ | $(0,6)$ |
 | $\mathbb{H}_{\mathbb{B}}$ | $4$ | $(1,3)$ | $(4,0)$ | $(4,0)$ | $(1,3)$ |
-| $i\mathbb{H}_{\mathbb{B}}$ | $4$ | $(3,1)$ | $(0,4)$ | $(4,0)$ | $(1,3)$ |
-| $\mathbb{M}_+$ | $4$ | $(4,0)$ | $(1,3)$ | $(4,0)$ | $(1,3)$ |
-| $\mathbb{M}_-$ | $4$ | $(0,4)$ | $(3,1)$ | $(4,0)$ | $(1,3)$ |
+| $i\mathbb{H}_{\mathbb{B}}$ | $4$ | $(3,1)$ | $(4,0)$ | $(0,4)$ | $(1,3)$ |
+| $\mathbb{M}_+$ | $4$ | $(4,0)$ | $(4,0)$ | $(1,3)$ | $(1,3)$ |
+| $\mathbb{M}_-$ | $4$ | $(0,4)$ | $(4,0)$ | $(3,1)$ | $(1,3)$ |
 
 **Remark (verified).** The table is checked on the six real Gram matrices in the natural bases, and the
 computed inertias agree with it on all six rows. The two rows the physics uses directly are the two
 sectors, and their algebraic norms show the pattern in numbers. On the material basis $\{ie_0,e_1,e_2,e_3\}$
-the algebraic norms of $B,N,H,K$ are $\mathrm{diag}(-1,-1,-1,-1)$, $\mathrm{diag}(-1,1,1,1)$,
-$\mathrm{diag}(1,1,1,1)$ and $\mathrm{diag}(1,-1,-1,-1)$, reproducing $(0,4)$, $(3,1)$, $(4,0)$ and
+the algebraic norms of $B,H,N,K$ are $\mathrm{diag}(-1,-1,-1,-1)$, $\mathrm{diag}(1,1,1,1)$,
+$\mathrm{diag}(-1,1,1,1)$ and $\mathrm{diag}(1,-1,-1,-1)$, reproducing $(0,4)$, $(4,0)$, $(3,1)$ and
 $(1,3)$; on the informational basis $\{e_0,ie_1,ie_2,ie_3\}$ the two **bilinear** algebraic norms change sign,
 to $\mathrm{diag}(1,1,1,1)$ and $\mathrm{diag}(1,-1,-1,-1)$, while the two **Hermitian** algebraic norms are
-unchanged, reproducing $(4,0)$, $(1,3)$, $(4,0)$ and $(1,3)$. The Hermitian algebraic norm of $K$ is
+unchanged, reproducing $(4,0)$, $(4,0)$, $(1,3)$ and $(1,3)$. The Hermitian algebraic norm of $K$ is
 $Q_0\overline{Q_0}-Q_1\overline{Q_1}-Q_2\overline{Q_2}-Q_3\overline{Q_3}$ in every basis, which is the
 $\varepsilon$-sign the first slot supplies and the reason its signature is the same on all four
 four-dimensional subspaces.
@@ -438,9 +436,9 @@ four-dimensional subspaces.
 Three features are read off the table and used throughout the corpus. **$H$ is positive definite on
 every subspace**, so it carries no signature and marks no subspace; it is the form of the state space
 and the Born pairing. **Each indefinite bilinear form is definite on exactly one pair of the
-four-dimensional subspaces**: $N$ on $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, the pair
-exchanged by multiplication by $i$, and $B$ on $\mathbb{M}_+$ and $\mathbb{M}_-$, the pair exchanged by
-the dagger; the first pair is the quaternionic split and the second the material–informational split.
+four-dimensional subspaces**: $B$ on $\mathbb{M}_+$ and $\mathbb{M}_-$, the pair exchanged by
+the dagger, and $N$ on $\mathbb{H}_{\mathbb{B}}$ and $i\mathbb{H}_{\mathbb{B}}$, the pair
+exchanged by multiplication by $i$; the first pair is the material–informational split and the second the quaternionic split.
 **$K$ has the same signature $(1,3)$ on all four four-dimensional subspaces**, so it distinguishes the
 four from the centre and the vector subspace but not from one another, which is why it is the natural
 form of the Krein space rather than a marker of a particular subspace.
@@ -464,15 +462,15 @@ restrictions are
 | form | on $\mathbb{M}_-$ | on $\mathbb{M}_+$ | the relation between the rows |
 |---|---|---|---|
 | $B$ | negative definite, $(0,4)$ | positive definite, $(4,0)$ | the sector sign |
-| $N$ | indefinite, $(3,1)$ | indefinite, $(1,3)$ | the interval, and its sign on the sector |
 | $H$ | positive definite, $(4,0)$ | positive definite, $(4,0)$ | $H=\pm B$ |
+| $N$ | indefinite, $(3,1)$ | indefinite, $(1,3)$ | the interval, and its sign on the sector |
 | $K$ | indefinite, $(1,3)$ | indefinite, $(1,3)$ | $K=\pm N$ |
 
 **Remark (verified).**
 with the algebraic norm signs of the table. The identities hold to machine precision, and the realified
-algebraic norms of $B,N,H,K$ are $(-1,-1,-1,-1)$, $(-1,1,1,1)$, $(1,1,1,1)$, $(1,-1,-1,-1)$ on $\mathbb{M}_-$
-and $(1,1,1,1)$, $(1,-1,-1,-1)$, $(1,1,1,1)$, $(1,-1,-1,-1)$ on $\mathbb{M}_+$, reproducing the inertias
-$(0,4)$, $(3,1)$, $(4,0)$, $(1,3)$ on $\mathbb{M}_-$ and $(4,0)$, $(1,3)$, $(4,0)$, $(1,3)$ on
+algebraic norms of $B,H,N,K$ are $(-1,-1,-1,-1)$, $(1,1,1,1)$, $(-1,1,1,1)$, $(1,-1,-1,-1)$ on $\mathbb{M}_-$
+and $(1,1,1,1)$, $(1,1,1,1)$, $(1,-1,-1,-1)$, $(1,-1,-1,-1)$ on $\mathbb{M}_+$, reproducing the inertias
+$(0,4)$, $(4,0)$, $(3,1)$, $(1,3)$ on $\mathbb{M}_-$ and $(4,0)$, $(4,0)$, $(1,3)$, $(1,3)$ on
 $\mathbb{M}_+$. These are the two sector rows of the table of §*Remarkable Subspaces*; what is added here
 is the last column, which compares the rows with each other.
 
@@ -538,16 +536,14 @@ cone and its mass shell, while the sesquilinear row supplies the metric of an in
 theory, $K$; and on the informational sector the two metrics coincide, which is the algebraic reason the
 two interpretations are easy to conflate.
 
-**Every structure the corpus uses is one of the four cells.** $B$ for the sector sign, $N$ for the
-interval, the light cone and the mass shell, $H$ for positivity, the Born pairing and the state space,
-$K$ for the indefinite metric of the gauge side. The comparison says that the framework does not use
+**Every structure the corpus uses is one of the four cells.** $B$ for the sector sign, $H$ for positivity, the Born pairing and the state space,
+$N$ for the interval, the light cone and the mass shell, $K$ for the indefinite metric of the gauge side. The comparison says that the framework does not use
 four unrelated forms but one form and two dials, and that the dial ${}^{\natural}$ is the one that
 produces a metric: it turns $B$ into $N$ in the bilinear row and $H$ into $K$ in the sesquilinear one.
 
 **The four forms are four measurements of one frame.** Because each cell is one pairing of one element
-with another, each form answers one question about a pair: $B$ how the two **compose**, $N$ whether one
-can **influence** the other, $H$ with what **probability** one reaches the other, $K$ how the two sit in
-the **gauge** frame. The four corners are then not four structures but the four interpretations a single frame
+with another, each form answers one question about a pair: $B$ how the two **compose**, $H$ with what **probability** one reaches the other, $N$ whether one
+can **influence** the other, $K$ how the two sit in the **gauge** frame. The four corners are then not four structures but the four interpretations a single frame
 invites, and a physical theory is a choice of which interpretation is the measured one. Read this way the grid
 is a grid of questions, and the corpus's four blocks are the four answers.
 
@@ -608,14 +604,14 @@ interpretation and not a theorem.
 | product | slots | scalar form | the form on $\mathbb{M}_-$ | the physical job | status of the interpretation |
 |---|---|---|---|---|---|
 | $\tilde P\tilde Q$ | $(\mathrm{id},\mathrm{id})$ | $B$ | definite, $(-,-,-,-)$ | **composition** | the algebra of material operations |
-| $\tilde P^{\natural}\tilde Q$ | $({}^{\natural},\mathrm{id})$ | $N$ | indefinite, $(-,+,+,+)$ | **causality** | the interval and the cone |
 | $\tilde P\tilde Q^{*}$ | $(\mathrm{id},{}^{*})$ | $H$ | positive definite, $(+,+,+,+)$ | **probability** | the state space and the Born pairing |
+| $\tilde P^{\natural}\tilde Q$ | $({}^{\natural},\mathrm{id})$ | $N$ | indefinite, $(-,+,+,+)$ | **causality** | the interval and the cone |
 | $\tilde P^{\natural}\tilde Q^{*}$ | $({}^{\natural},{}^{*})$ | $K$ | indefinite, $(+,-,-,-)$ | **gauge** | the indefinite metric |
 
 What is proved is the left half of the table: the four general products are the four slot pairs, and the four
 forms have the signs shown, by §*What the Two Slots Decide* and by §*The Four Forms Compared*, which
 also states the relations among the four forms. What is read is the last two columns: that composition,
-causality, probability and gauge are the four jobs a relativistic quantum theory needs, and that the
+probability, causality and gauge are the four jobs a relativistic quantum theory needs, and that the
 grid is a grid of jobs. **That the four jobs are these four is a claim about the framework and not a
 consequence of the algebra**, and it is offered as such. What can be said in its favour is that the four
 jobs are independent: a theory needs a rule for combining operations, a rule for saying which events can
@@ -628,8 +624,8 @@ antisymmetric half, so the twelve products of the space are the four general pro
 two halves of each: a **magnitude half** (the symmetric part, which carries the form, the interval and
 the pairing) and an **order half** (the antisymmetric part, which carries the bracket and the
 obstruction) attached to each job. The interpretation is thin, and is offered as one because the selection is
-severe: only two of the twelve satisfy a classical identity, the antisymmetric plain bilinear product
-being a Lie bracket and the symmetric plain bilinear product a Jordan product, and every other half is a
+severe: only two of the twelve satisfy a classical identity, the symmetric plain bilinear product
+being a Jordan product and the antisymmetric plain bilinear product a Lie bracket, and every other half is a
 structure without a classical identity of its own. So the grid's twelve are not twelve equivalent structures but four jobs, each with a
 metric half and an order half, of which only the two halves that close are classical. The claim that this
 is a selection principle is the framework's and is not proved; the count and the two exceptional halves
@@ -665,6 +661,16 @@ operations**, a genuine three-way interaction that cannot be assembled from two-
 pairs with the corpus's ternary-product articles (*Particle Types, Discrete Charge and Three-Particle
 Couplings*), and its boundary is that what fails to associate is the twist and not the elements.
 
+### The Probability Row
+
+- **Probability is centrality.** The symmetric sesquilinear product is a **central** number, and a number
+selects no state; the states are the idempotents, not the values of the product. Reading: the row supplies
+a weight and no state.
+- **The argument is the geometric phase of the cone.** The Born pairing has a real part, the probability
+$H$, and a vector part, the phase; the **argument** of the amplitude is the geometric (Pancharatnam) phase,
+and the vector part is the axis the phase is built on. Reading: the phase of the probability row is the
+geometric phase of the cone, which is the grid-level form of the corpus's phase articles.
+
 ### The Causality Row
 
 - **The scale potential $\log|N|$.** $N$ is multiplicative, so $\log|N|$ is **additive** over the
@@ -686,16 +692,6 @@ neither the compact nor the non-compact part alone but their **mixing** — a co
 neither the rotation nor the boost subgroup can see alone. The interpretation is labelled: it does not by itself
 select the internal group, whose ceiling has its own cause (*The Gauge Group Ceiling: Why the Biquaternion
 Algebra Reaches SU(2) but Not SU(3)*).
-
-### The Probability Row
-
-- **Probability is centrality.** The symmetric sesquilinear product is a **central** number, and a number
-selects no state; the states are the idempotents, not the values of the product. Reading: the row supplies
-a weight and no state.
-- **The argument is the geometric phase of the cone.** The Born pairing has a real part, the probability
-$H$, and a vector part, the phase; the **argument** of the amplitude is the geometric (Pancharatnam) phase,
-and the vector part is the axis the phase is built on. Reading: the phase of the probability row is the
-geometric phase of the cone, which is the grid-level form of the corpus's phase articles.
 
 ### The Gauge Row
 
@@ -830,8 +826,8 @@ four objects this article maps, and they are placed in the order of the corpus's
 | block of the physics menu | the product | the form | the maths anchor |
 |---|---|---|---|
 | *Focus on the General Plain Algebra (GPA) of Biquaternions — Composition* | $\tilde P\tilde Q$ | $B$ | *Introduction to the General Plain Algebra of Biquaternions* |
-| *Focus on the General Quaternionic Algebra (GQA) of Biquaternions — Causality* | $\tilde P^{\natural}\tilde Q$ | $N$ | *Introduction to the General Quaternionic Algebra of Biquaternions* |
 | *Focus on the General Plain Sesqualgebra (GPS) of Biquaternions — Probability* | $\tilde P\tilde Q^{*}$ | $H$ | *Introduction to the General Plain Sesqualgebra of Biquaternions* |
+| *Focus on the General Quaternionic Algebra (GQA) of Biquaternions — Causality* | $\tilde P^{\natural}\tilde Q$ | $N$ | *Introduction to the General Quaternionic Algebra of Biquaternions* |
 | *Focus on the General Quaternionic Sesqualgebra (GQS) of Biquaternions — Gauge* | $\tilde P^{\natural}\tilde Q^{*}$ | $K$ | *Introduction to the General Quaternionic Sesqualgebra of Biquaternions* |
 
 The division of labour among the four is fixed, and the corpus keeps to it.
@@ -841,10 +837,10 @@ general plain bilinear product, its associativity and its unit, the sector sign 
 the absence of a material idempotent, the composing multiplications, and the square roots of elements.
 The ideals, the Peirce decomposition and the enveloping algebra of the algebra are mathematics, and
 the block cites them instead of reproducing them.
-- **The quaternionic algebra** carries the interval and the light cone: the form $N$, the norm, the
-zero-divisor cone, the mass shell and the isometry group of the interval.
 - **The sesqualgebra** carries the state space: the sesquilinear product, the positivity of the
 dagger, the state cones and the Born pairing.
+- **The quaternionic algebra** carries the interval and the light cone: the form $N$, the norm, the
+zero-divisor cone, the mass shell and the isometry group of the interval.
 - **The quaternionic sesqualgebra**, the fourth corner, carries the indefinite structure: the
 general quaternionic sesquilinear product and the Krein form $K$, the indefinite-metric companion that is not
 a state space.
@@ -865,20 +861,19 @@ about them. The two slots decide the properties tabulated in §*What the Two Slo
 the left identity and the monoid of the left multiplications by the second slot; definiteness on each
 sector and the right identity by the first slot; the coefficient $\varepsilon$ by the two slots
 together; and associativity by both. $e_0$ is a left identity if and only if the second slot is trivial
-and a right identity if and only if the first slot is trivial, so exactly one of the four is associative
 and two-sidedly unital. The scalar forms are $B=\sum_\mu\varepsilon_\mu P_\mu Q_\mu$,
-$N=\sum_\mu P_\mu Q_\mu$, $H=\sum_\mu P_\mu\overline{Q_\mu}$ and
+$H=\sum_\mu P_\mu\overline{Q_\mu}$, $N=\sum_\mu P_\mu Q_\mu$ and
 $K=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$, so that $\varepsilon$ survives exactly when the two
 slots agree and the bar appears with the second slot. The quaternionic product is the only one of the
 four whose square is scalar, and $\tilde Q^{\natural}\tilde Q=N(\tilde Q)e_0$. Only the sesquilinear
 product is the derived operation of the algebra with ${}^{*}$, and the general quaternionic sesquilinear product
 is its ${}^{\natural}$-isotope and has no identity on either side. The four scalar forms are one
-bilinear form read through the two involutions, $N(\tilde P,\tilde Q)=B(\tilde P^{\natural},\tilde Q)$,
-$H(\tilde P,\tilde Q)=B(\tilde P,\tilde Q^{*})$ and
+bilinear form read through the two involutions, $H(\tilde P,\tilde Q)=B(\tilde P,\tilde Q^{*})$,
+$N(\tilde P,\tilde Q)=B(\tilde P^{\natural},\tilde Q)$ and
 $K(\tilde P,\tilde Q)=B(\tilde P^{\natural},\tilde Q^{*})$, and on the two sectors $H=\pm B$ and
 $K=\pm N$ with the sign of the sector, so that on a sector only two of the four forms are independent;
-the restrictions read negative definite, $(3,1)$, positive definite and $(1,3)$ on $\mathbb{M}_-$ and
-positive definite, $(1,3)$, positive definite and $(1,3)$ on $\mathbb{M}_+$. The full restriction table
+the restrictions read negative definite, positive definite, $(3,1)$ and $(1,3)$ on $\mathbb{M}_-$ and
+positive definite, positive definite, $(1,3)$ and $(1,3)$ on $\mathbb{M}_+$. The full restriction table
 of §*Remarkable Subspaces* is the companion statement: $H$ is positive definite on all remarkable subspaces, each
 indefinite bilinear form is definite on exactly one pair of the four-dimensional subspaces, and $K$ has
 the same signature $(1,3)$ on all four of them. The fourth product is non-associative: its associator is
@@ -886,7 +881,7 @@ nonzero on $256$ of the $512$ triples of the eight-element basis, at the clean w
 where it is $-2e_1$, and $(e_0,e_1,e_1)$, where it is $2e_0$, and the defect carries both a central and a
 vector part.
 
-**Interpretations.** That the four general products are composition, causality, probability and gauge; that inserting
+**Interpretations.** That the four general products are composition, probability, causality and gauge; that inserting
 the star reads as quantisation and inserting the natural conjugation reads as the appearance of a metric
 — the same dial that turns $B$ into $N$ and $H$ into $K$; that the fourth corner is the gauge side
 of the frame rather than a second state space; that the four forms are **four measurements of one
@@ -940,13 +935,13 @@ requires both slots trivial, and the square of an element is scalar for exactly 
 quaternionic product, whose square is the interval $N(\tilde Q)e_0$. The two-and-two division by the
 second slot is therefore the division of the four general products into two **general algebras over
 $\mathbb{C}$** and two **general sesqualgebras over $\mathbb{C}$** — the space itself carrying six algebras
-and six sesqualgebras, of which these four are the general members (*The 12 Algebraic Structures over the
+and six sesqualgebras, of which these four are the general members (*The Algebraic Structures over the
 Biquaternion $\mathbb{C}$ Space*) — and the two blocks of each pair are the two values of the first
 slot. Reading the grid physically, the four general products are the four jobs a relativistic quantum theory
-needs — composition, causality, probability and gauge — with the plain product associative and
-two-sidedly unital, the quaternionic product carrying the interval, the sesquilinear product carrying
-the positive definite Born form and the state space, and the general quaternionic sesquilinear product carrying
-an indefinite Krein form with no identity on either side and a ternary product that is not a Jordan
+needs — composition, probability, causality and gauge — with the plain product associative and
+two-sidedly unital, the sesquilinear product carrying the positive definite Born form and the state
+space, the quaternionic product carrying the interval, and the general quaternionic sesquilinear product
+carrying an indefinite Krein form with no identity on either side and a ternary product that is not a Jordan
 triple. The four scalar forms are one bilinear form read through the two involutions, and on a sector
 the two sesquilinear forms are the two bilinear ones up to the sign of that sector, so that on a sector
 the four reduce to two; the comparisons that cross the grid belong here, in §*The Four Forms Compared*
@@ -961,13 +956,13 @@ physics menu are these four objects, and this article is their map.
 | $K_1\in\{\mathrm{id},{}^{\natural}\}$ | First slot: identity or natural conjugation; the right identity, sector definiteness and the toggle of $\varepsilon$ |
 | $K_2\in\{\mathrm{id},{}^{*}\}$ | Second slot: identity or star; decides the composition |
 | $\tilde P\tilde Q$ | Plain product; slots $(\mathrm{id},\mathrm{id})$; associative, two-sided identity |
-| $\tilde P^{\natural}\tilde Q$ | Quaternionic product; slots $({}^{\natural},\mathrm{id})$; scalar square, the interval |
 | $\tilde P\tilde Q^{*}$ | Sesquilinear product; slots $(\mathrm{id},{}^{*})$; the derived operation |
+| $\tilde P^{\natural}\tilde Q$ | Quaternionic product; slots $({}^{\natural},\mathrm{id})$; scalar square, the interval |
 | $\tilde P^{\natural}\tilde Q^{*}$ | General quaternionic sesquilinear product; slots $({}^{\natural},{}^{*})$; no identity |
-| $B,N,H,K$ | The four scalar forms; $\varepsilon$ survives when the two slots agree, the bar with the second |
+| $B,H,N,K$ | The four scalar forms; $\varepsilon$ survives when the two slots agree, the bar with the second |
 | $\varepsilon=(1,-1,-1,-1)$ | The sign pattern of $\mathrm{Sc}(\tilde P\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu Q_\mu$ |
-| $\mathbb{M}_-$ | Material sector, the anti-Hermitian real four-space; the four forms read $(-,-,-,-)$, $(-,+,+,+)$, $(+,+,+,+)$, $(+,-,-,-)$ |
-| $\mathbb{M}_+$ | Informational sector, the Hermitian real four-space; the four forms read $(+,+,+,+)$, $(+,-,-,-)$, $(+,+,+,+)$, $(+,-,-,-)$ |
+| $\mathbb{M}_-$ | Material sector, the anti-Hermitian real four-space; the four forms read $(-,-,-,-)$, $(+,+,+,+)$, $(-,+,+,+)$, $(+,-,-,-)$ |
+| $\mathbb{M}_+$ | Informational sector, the Hermitian real four-space; the four forms read $(+,+,+,+)$, $(+,+,+,+)$, $(+,-,-,-)$, $(+,-,-,-)$ |
 | $N(\tilde Q)=\sum_\mu Q_\mu^{2}$ | The biquaternion norm; scalar only for the quaternionic product |
 | six algebras / six sesqualgebras | the twelve structures the space carries; the four general products are the two **general** algebras and the two **general** sesqualgebras among them |
 
@@ -1001,7 +996,7 @@ matrices and their signatures.
 (`articles_maths/the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.md`), for the
 sign of the square on the two sectors, $\tilde Q\star\tilde Q=\pm N(\tilde Q)e_0$.
 - Companion article *The General Plain Bilinear Product on the Biquaternion Space*, for the form $B$ alone on the remarkable subspaces.
-- Companion articles *The Interval as the Square and the Charge of the Material Composition*, *Mass, Rank and the Positivity of the Dagger* and *The Fourth Product and Its Indefinite Metric*, for $N$, $H$ and $K$ on the remarkable subspaces, and for the interval identity and the physical
+- Companion articles *The Interval as the Square and the Charge of the Material Composition*, *Mass, Rank and the Positivity of the Dagger* and *The Fourth Product and Its Indefinite Metric*, for $H$, $N$ and $K$ on the remarkable subspaces, and for the interval identity and the physical
 interpretation of the quaternionic product.
 - Companion article *The Biquaternion Mathematics Corpus*, whose Algebra block this article
 accompanies and whose entries carry the mathematics menu.

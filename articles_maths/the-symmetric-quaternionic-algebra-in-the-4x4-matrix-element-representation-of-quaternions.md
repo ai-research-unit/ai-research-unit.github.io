@@ -77,7 +77,7 @@ restricted to the regular matrices $\mathsf{M}_4(\tilde q)$ has image the real s
 
 ## The Comparison with the Other Blocks on the Same Model
 
-**Proposition (the six products in the regular model).** With $\mathsf{M}=\mathsf{M}_4$, the six operations of *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* read, for the left regular representation of the first factor,
+**Proposition (the six products in the regular model).** With $\mathsf{M}=\mathsf{M}_4$, the six operations of *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space* read, for the left regular representation of the first factor,
 
 | structure | product in the model | value |
 |---|---|---|

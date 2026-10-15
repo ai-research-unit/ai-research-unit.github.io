@@ -18,7 +18,7 @@ $$
 \operatorname{Rad}(\star)=\{\tilde r:\tilde r\star\tilde q=0\text{ for every }\tilde q\}=\{\tilde r:N(\tilde r,\tilde q)=0\text{ for every }\tilde q\}=\operatorname{rad}(N).
 $$
 
-An element $\tilde x$ is **isotropic** when $\tilde x\star\tilde x=0$, that is when $N(\tilde x)=0$. The definitions are those of *Definitions for the Study of the 6 Algebraic Structures* read for a commutative operation.
+An element $\tilde x$ is **isotropic** when $\tilde x\star\tilde x=0$, that is when $N(\tilde x)=0$. The definitions are those of *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space* read for a commutative operation.
 
 **Theorem (the radical is zero, by definiteness).**
 
@@ -89,7 +89,7 @@ The symmetric quaternionic block is non-degenerate and anisotropic: its coeffici
 ## Further Reading
 
 - *Introduction to the Symmetric Quaternionic Algebra of Quaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-algebra-of-quaternions.md`), for the product and its governing formula
-- *Definitions for the Study of the 6 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-6-algebraic-structures.md`), for the radical and the isotropic element
+- *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-quaternion-r-space.md`), for the radical and the isotropic element
 - *The 2 Forms over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-2-forms-over-the-quaternion-r-space.md`), for the Gram data, the signature and the isotropy of the two forms
 - *Zero Divisors of the Symmetric Quaternionic Algebra* (`articles_maths/zero-divisors-of-the-symmetric-quaternionic-algebra-of-quaternions.md`), for the maximal zero-divisor set that contrasts with the trivial isotropic set
 - *Square Roots of One and the Idempotents of the Symmetric Quaternionic Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-symmetric-quaternionic-algebra-of-quaternions.md`) and *Square Roots of Zero and the Nilpotents of the Symmetric Quaternionic Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-symmetric-quaternionic-algebra-of-quaternions.md`), for the root sets of the central values

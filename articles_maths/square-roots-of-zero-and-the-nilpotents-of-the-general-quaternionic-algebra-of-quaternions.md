@@ -8,10 +8,10 @@ product.
 
 Both notions name a product, and throughout this article the product is the general quaternionic bilinear
 product $\tilde p\star\tilde q=\tilde p^{\natural}\tilde q$ of the general quaternionic algebra, the
-$\mathrm{GQA}$ of *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; the square of the
+$\mathrm{GQA}$ of *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; the square of the
 article is the square of $\star$, and an unqualified *nilpotent* is a nilpotent of $\star$. The general
 definition of the square and of the roots of a central value, and the general definition of a nilpotent, are
-*Definitions for the Study of the 6 Algebraic Structures*, §*The Element Vocabulary*.
+*Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, §*The Element Vocabulary*.
 
 The whole article is settled by one computation, the square of every element being the central element
 $N(\tilde p)e_0$. The root equation of the value $0$ therefore reads $N(\tilde p)=0$, and the nilpotent
@@ -37,9 +37,9 @@ Quaternionic Algebra*; the norm, its definiteness and the plain division propert
 in the General Quaternionic Algebra* and *Norm and Invertibility in the General Plain Algebra*; the zero
 divisors are *Zero Divisors of the General Quaternionic Algebra*; the idempotents are *Square Roots of One
 and the Idempotents of the General Quaternionic Algebra*; the structure-level comparison of the six
-square-zero sets is *Square Roots of Zero and the Nilpotents in the 6 Algebraic Structures over the
+square-zero sets is *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the
 Quaternion $\mathbb{R}$ Space*, and the ordering of the twelve complex sets is quoted from *Square Roots of
-Zero and the Nilpotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the
+Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the
 definiteness of the form is *The Isotropic Structure of the General Quaternionic Algebra*; the
 general root problem for an arbitrary radicand is *Square Roots of a General Element in the General
 Quaternionic Algebra*.
@@ -127,7 +127,7 @@ nilpotent of index two.**
 $\tilde\nu$ is **nilpotent of $\star$** when $\tilde\nu\neq0$ and $\tilde\nu^{k}=0$ for some positive integer
 $k$; the least such $k$ is the **index**. The case $k=2$ is a **square-zero** element, and the **square-zero
 set** of the product is the solution set of $\tilde\nu\star\tilde\nu=0$. The definition is *Definitions for
-the Study of the 6 Algebraic Structures*, §*The Element Vocabulary*; the origin is not a nilpotent, the
+the Study of the Algebraic Structures*, §*The Element Vocabulary*; the origin is not a nilpotent, the
 class taking its nonzero members. Throughout this article the product is $\star$.
 
 **Lemma (the square is central).** For every $\tilde p\in\mathbb{H}$,
@@ -250,8 +250,7 @@ no pure element is square-zero, and no central element is either.
 
 ## The Nilpotents and the Other Structures of the Space
 
-The comparison of the six square-zero sets is *Square Roots of Zero and the Nilpotents in the 6 Algebraic
-Structures over the Quaternion $\mathbb{R}$ Space*, the structure-level article of the real chapter, and its
+The comparison of the six square-zero sets is *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, the structure-level article of the real chapter, and its
 verdict for the block is the origin alone.
 
 **Theorem (the six square-zero sets).** Among the six structures of the quaternion real space the square-zero
@@ -260,8 +259,7 @@ and the symmetric quaternionic algebra, and it is the whole space $\mathbb{H}$ f
 structures. Only two square-zero sets occur, and the general quaternionic structure is one of the four with
 the origin alone.
 
-**Proof.** The four rows are the theorem of *Square Roots of Zero and the Nilpotents in the 6 Algebraic
-Structures over the Quaternion $\mathbb{R}$ Space*, §*The Six Root Sets of $0$, Which Are the Six
+**Proof.** The four rows are the theorem of *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, §*The Six Root Sets of $0$, Which Are the Six
 Square-Zero Sets*, where the plain square is anisotropic
 and the quaternionic square is the definite norm; the two alternating rows are the same theorem, the
 products being alternating. The four structures with the origin alone are exactly those whose square is the
@@ -271,7 +269,7 @@ $\mathbb{R}$.
 **Remark (the complex ordering and the real collapse).** The complex chapter carries twelve structures and
 its comparison article orders the square-zero sets through the cone,
 $Z_3=\{0\}\subsetneq Z_1\subsetneq Z_2$ and $Z_3\subsetneq Z_4\subsetneq Z_2$ for the four general products
-(*Square Roots of Zero and the Nilpotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$
+(*Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$
 Space*, §*The Order of the Four Sets*), and it places the general quaternionic and the symmetric quaternionic
 structures at the whole cone. Over
 $\mathbb{R}$ the cone has become a point, so the general quaternionic set drops from the whole cone to the
@@ -316,7 +314,7 @@ definiteness that removes the zero divisors.
 ## Further Reading
 
 - Richard D. Schafer, *An Introduction to Nonassociative Algebras* (Academic Press, 1966), for nilpotents, powers and the division property in a non-associative algebra.
-- *Definitions for the Study of the 6 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-6-algebraic-structures.md`), §*The Element Vocabulary*, for the general definition of a nilpotent, of a square-zero element and of the powers.
+- *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-quaternion-r-space.md`), §*The Element Vocabulary*, for the general definition of a nilpotent, of a square-zero element and of the powers.
 - Kevin McCrimmon, *A Taste of Jordan Algebras* (Springer, 2004), for the powers of a non-associative product and the isotopes that preserve the division property.
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the division property of the quaternion algebra and the multiplicative norm.
 - *Norm and Invertibility in the General Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra-of-quaternions.md`), for the definite norm and the one-sided equations.
@@ -324,5 +322,5 @@ definiteness that removes the zero divisors.
 - *Square Roots of a General Element in the General Quaternionic Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-general-quaternionic-algebra-of-quaternions.md`), for the root problem of an arbitrary radicand.
 - *Square Roots of Zero and the Nilpotents of the General Plain Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-plain-algebra-of-quaternions.md`), for the plain root set of $0$ of the same space and the plain nilpotents.
 - *Zero Divisors of the General Quaternionic Algebra* (`articles_maths/zero-divisors-of-the-general-quaternionic-algebra-of-quaternions.md`), for the empty zero-divisor set.
-- *Square Roots of Zero and the Nilpotents in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/square-roots-of-zero-and-the-nilpotents-in-the-6-algebraic-structures-over-the-quaternion-r-space.md`), the comparison of the six square-zero sets of the real chapter, whose general quaternionic row is the origin.
-- *Square Roots of Zero and the Nilpotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/square-roots-of-zero-and-the-nilpotents-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), §*The Order of the Four Sets*, for the ordering of the four complex root sets of $0$ against which the real collapse is read.
+- *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/square-roots-of-zero-and-the-nilpotents-in-the-algebraic-structures-over-the-quaternion-r-space.md`), the comparison of the six square-zero sets of the real chapter, whose general quaternionic row is the origin.
+- *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/square-roots-of-zero-and-the-nilpotents-in-the-algebraic-structures-over-the-biquaternion-c-space.md`), §*The Order of the Four Sets*, for the ordering of the four complex root sets of $0$ against which the real collapse is read.

@@ -14,7 +14,7 @@ $$
 
 the cross product of the two vector parts. The space $\mathbb{H}$ with this operation is written
 $\mathbb{H}^{\times}$ and is the **antisymmetric plain algebra** of the block, the operation named
-$\mathrm{APA}$ in *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*.
+$\mathrm{APA}$ in *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*.
 
 **This is not the algebra $\mathbb{H}$.** The two share the space, the addition and the real
 scalars, but $\times$ is a different multiplication from $\tilde p\tilde q$: it is alternating, it
@@ -56,7 +56,7 @@ $$
 
 It is the **antisymmetrisation** of the general plain bilinear product $\tilde p\tilde q$, the
 operation called the antisymmetric part of the product in *The Symmetric and Antisymmetric Parts of
-an Algebra Product*, and the operation named $\mathrm{APA}$ in *The 6 Algebraic Structures over the
+an Algebra Product*, and the operation named $\mathrm{APA}$ in *The Algebraic Structures over the
 Quaternion $\mathbb{R}$ Space*. The space $\mathbb{H}$ with the product $\times$ is written
 $\mathbb{H}^{\times}$ and is the **antisymmetric plain algebra** of the block.
 
@@ -191,7 +191,7 @@ reading of the plain one.
 ## The Placement of the Block among the Six
 
 The space $\mathbb{H}$ carries six bilinear products, set out in *The 6 Products of the Quaternion
-$\mathbb{R}$ Space* and structured in *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$
+$\mathbb{R}$ Space* and structured in *The Algebraic Structures over the Quaternion $\mathbb{R}$
 Space*: the two general products, their symmetrisations and their antisymmetrisations. The block of
 this article is the antisymmetrisation of the plain product. It is the one **alternating** product of
 the plain row; the other antisymmetric operation of the six, the antisymmetrisation of the
@@ -229,7 +229,7 @@ and is the neighbouring block.
 
 - *Introduction to the General Plain Algebra of Quaternions*, for the plain product, its scalar–vector rule and its square.
 - *The Symmetric and Antisymmetric Parts of an Algebra Product*, for the split, its two projections and the admissibility conditions.
-- *The 6 Products of the Quaternion $\mathbb{R}$ Space* and *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, for the six products and their names.
+- *The 6 Products of the Quaternion $\mathbb{R}$ Space* and *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, for the six products and their names.
 - *Introduction to the Symmetric Plain Algebra of Quaternions*, for the symmetric half of the same product.
 - *The Lie Algebra of the Antisymmetric Plain Algebra*, below this article in this category, for the structure of the Lie algebra.
 - *The Killing Form of the Antisymmetric Plain Algebra* and *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*, both below this article in this category, for the form and the operators.

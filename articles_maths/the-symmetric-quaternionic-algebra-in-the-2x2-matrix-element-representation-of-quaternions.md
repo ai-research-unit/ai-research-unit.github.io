@@ -81,7 +81,7 @@ on the quaternion matrices has image the real scalar matrices $\mathbb{R}I_2$, r
 
 ## The Comparison with the Other Blocks on the Same Model
 
-**Proposition (the six products in the $2\times2$ model).** With $\mathsf{M}=\mathsf{M}_2$, the six operations of *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* read
+**Proposition (the six products in the $2\times2$ model).** With $\mathsf{M}=\mathsf{M}_2$, the six operations of *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space* read
 
 | structure | product in the model | value |
 |---|---|---|

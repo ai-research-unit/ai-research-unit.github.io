@@ -3,7 +3,7 @@
 ## Introduction
 
 A root of a central value is defined by an equation in which the product occurs, so it belongs to
-the product (*Definitions for the Study of the 12 Algebraic Structures*, §*Powers, the Square and
+the product (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and
 the Roots*). The block of this article is the antisymmetric quaternionic multiplication
 $$
 \tilde\Xi\diamond\tilde Q=\tfrac12\bigl(\tilde\Xi^{\natural}\tilde Q-\tilde Q^{\natural}\tilde\Xi\bigr)
@@ -63,7 +63,7 @@ $$
 $$
 The three central values the biquaternion algebra singles out are $-1$, $+1$ and $0$: the roots of
 $-1$ are the imaginary units, the roots of $+1$ are the involutions, and the roots of $0$ are the
-nonzero nilpotents of the product (*Definitions for the Study of the 12 Algebraic Structures*,
+nonzero nilpotents of the product (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*,
 §*Powers, the Square and the Roots*).
 
 **Definition (idempotent of a product).** Let $\star$ be a product on $\mathbb{B}$. An element
@@ -72,8 +72,7 @@ $$
 \tilde\Pi\star\tilde\Pi=\tilde\Pi .
 $$
 The origin and, when the product is unital, the unit are idempotents of every product; they are the
-**trivial idempotents**, and the others are **nontrivial** (*Definitions for the Study of the 12
-Algebraic Structures*, §*The Idempotent, the Projection and the Peirce Decomposition*).
+**trivial idempotents**, and the others are **nontrivial** (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Idempotent, the Projection and the Peirce Decomposition*).
 
 Throughout this article the product is the **antisymmetric quaternionic multiplication** $\diamond$,
 and unqualified, *root* means a root of the block and *idempotent* means an idempotent of the block.
@@ -188,7 +187,7 @@ origin meets it, and no other element is an idempotent.
 nontrivial idempotent, because it has no unit, no nontrivial idempotent and no associativity.
 
 *Proof.* The Peirce decomposition is defined relative to a nontrivial idempotent of an associative
-unital product (*Definitions for the Study of the 12 Algebraic Structures*, §*The Idempotent, the
+unital product (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Idempotent, the
 Projection and the Peirce Decomposition*); the theorem gives the idempotent set $\{0\}$, so no
 nontrivial idempotent is available, and the block has neither a unit nor an associativity to add.
 The three ingredients are all absent.
@@ -238,7 +237,7 @@ Idempotents of the General Quaternionic Algebra*). The block, with the scalar pa
 removed, keeps the origin alone: it loses the parent's left unit and the plain product's family, and
 with them the entire idempotent calculus, the left ideals, the direct sum decompositions and the
 Peirce decomposition belonging to the other products and not to it. The idempotent sets of the four
-general products are read side by side in *Idempotents in the 12 Algebraic Structures over the
+general products are read side by side in *Idempotents in the Algebraic Structures over the
 Biquaternion $\mathbb{C}$ Space*.
 
 ## Summary
@@ -276,7 +275,7 @@ quaternionic product's trivial pair.
 
 ## Further Reading
 
-- *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), for the root of a central value, the idempotent of a general product, the projection, the Peirce decomposition and the halving map, and for the relativity of the definitions
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the root of a central value, the idempotent of a general product, the projection, the Peirce decomposition and the halving map, and for the relativity of the definitions
 - *Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra-of-biquaternions.md`), for the operation, its alternation and its table
 - *The Symmetric and Antisymmetric Parts of an Algebra Product* (`articles_maths/the-symmetric-and-antisymmetric-parts-of-an-algebra-product.md`), for the square of a product and its split into the two halves
 - *Square Roots of Zero and the Nilpotents of the Antisymmetric Quaternionic Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-antisymmetric-quaternionic-algebra.md`), for the roots of $0$, which are the other face of the same vanishing square
@@ -285,4 +284,4 @@ quaternionic product's trivial pair.
 - *Zero Divisors of the Antisymmetric Quaternionic Algebra* (`articles_maths/zero-divisors-of-the-antisymmetric-quaternionic-algebra.md`), for the zero-divisor set and the annihilators of the block
 - *Square Roots of One and the Idempotents of the General Plain Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra.md`), for the idempotent family of the plain product, against which the block's origin alone is read
 - *Square Roots of One and the Idempotents of the General Quaternionic Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-quaternionic-algebra.md`), for the trivial idempotent pair of the parent product, whose family the block also loses
-- *Idempotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/idempotents-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the idempotent sets of the four general products side by side
+- *Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/idempotents-in-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the idempotent sets of the four general products side by side

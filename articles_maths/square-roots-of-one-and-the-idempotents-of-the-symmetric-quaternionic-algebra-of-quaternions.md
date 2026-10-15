@@ -21,8 +21,7 @@ The whole problem is decided by one identity. The square of every element of the
 element $N(\tilde x)e_0$, so the root equation of the value $\lambda$ reduces to the single real equation
 $N(\tilde x)=\lambda$, and the idempotent equation collapses to a quadratic on the scalar line. The
 general definition of a **square root of a central value** and of an **idempotent**, and the definition
-of the orthogonality and of the complement of an idempotent, are *Definitions for the Study of the 6
-Algebraic Structures*, §*The Element Vocabulary*; the product, its scalar law and the definiteness of
+of the orthogonality and of the complement of an idempotent, are *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, §*The Element Vocabulary*; the product, its scalar law and the definiteness of
 its coefficient are *Introduction to the Symmetric Quaternionic Algebra of Quaternions*.
 
 **The results.** The roots of $+e_0$ in the block are the elements of the level set $N=1$, the unit
@@ -182,7 +181,7 @@ the **complement** of an idempotent is defined only when the rule has a two-side
 of $\tilde\pi$ being $e-\tilde\pi$. The set of the idempotents contains $0$ and every two-sided unit;
 an idempotent different from $0$ is **non-trivial**.
 
-The definition is quoted from *Definitions for the Study of the 6 Algebraic Structures*; the block has
+The definition is quoted from *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; the block has
 no two-sided unit, so the complement and a complete orthogonal system are not available in it.
 
 ### The Classification
@@ -353,7 +352,7 @@ orthogonality that the parent's theory uses require the unit that the block does
 ## Further Reading
 
 - *Introduction to the Symmetric Quaternionic Algebra of Quaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-algebra-of-quaternions.md`), for the product $\star$, its scalar law and the form $N$
-- *Definitions for the Study of the 6 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-6-algebraic-structures.md`), for the square root of a central value, the idempotent, the orthogonality and the complement
+- *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-quaternion-r-space.md`), for the square root of a central value, the idempotent, the orthogonality and the complement
 - *Square Roots of a General Element in the Symmetric Quaternionic Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-symmetric-quaternionic-algebra-of-quaternions.md`), for the general central value and the classification by the sign
 - *Square Roots of Zero and the Nilpotents of the Symmetric Quaternionic Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-symmetric-quaternionic-algebra-of-quaternions.md`), the companion, for the value $0$ and the nilpotents
 - *Zero Divisors of the Symmetric Quaternionic Algebra* (`articles_maths/zero-divisors-of-the-symmetric-quaternionic-algebra-of-quaternions.md`), for the maximal zero-divisor set that makes the classification by idempotents vacuous

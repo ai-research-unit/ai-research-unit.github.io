@@ -3,7 +3,7 @@
 
 ## Introduction
 
-The four general products of $\mathbb{B}$ are four rules that pair two elements, and the corpus gives each of them an operator family: the plain bilinear product the *Association* family, the general quaternionic bilinear product the *Signed Inner Conjugation* family, the general plain sesquilinear product the *Hermitian Adjoint* family, and the general quaternionic sesquilinear product the Krein form, which carries its own indefinite theory rather than a family of the four-adjoint kind. A reader may conclude from that list that the product *decides* the operator, and may then ask whether the product decides whether an element acts as a rotation or as a reflection. **It does not.** The four general products have the same multiplication table of the units; they differ only in which conjugation is inserted into which slot of the pair. What they decide is the *pairing*, hence the adjoint, hence the name of the family. The action — a rotation, a reflection, an inner automorphism — is decided by the element and by the inserted sign, and the inserted sign is a choice among the involutions that the algebra already carries.
+The four general products of $\mathbb{B}$ are four rules that pair two elements, and the corpus gives each of them an operator family: the plain bilinear product the *Association* family, the general plain sesquilinear product the *Hermitian Adjoint* family, the general quaternionic bilinear product the *Signed Inner Conjugation* family, and the general quaternionic sesquilinear product the Krein form, which carries its own indefinite theory rather than a family of the four-adjoint kind. A reader may conclude from that list that the product *decides* the operator, and may then ask whether the product decides whether an element acts as a rotation or as a reflection. **It does not.** The four general products have the same multiplication table of the units; they differ only in which conjugation is inserted into which slot of the pair. What they decide is the *pairing*, hence the adjoint, hence the name of the family. The action — a rotation, a reflection, an inner automorphism — is decided by the element and by the inserted sign, and the inserted sign is a choice among the involutions that the algebra already carries.
 
 This article states that division of labour precisely, with the matrices of one element read through all four insertions.
 
@@ -22,14 +22,14 @@ The four general products, their relations and their comparison are *The Four Ge
 $$
 \tilde P\tilde Q ,
 \qquad
-\tilde P^{\natural}\tilde Q ,
-\qquad
 \tilde P\tilde Q^{*} ,
+\qquad
+\tilde P^{\natural}\tilde Q ,
 \qquad
 \tilde P^{\natural}\tilde Q^{*} ,
 $$
 
-the plain bilinear, the general quaternionic bilinear, the general plain sesquilinear and the general quaternionic sesquilinear product.
+the plain bilinear, the general plain sesquilinear, the general quaternionic bilinear and the general quaternionic sesquilinear product.
 
 **Proposition (one table, two insertions).** The four rules multiply the coordinates on the same products $e_\mu e_\nu$ of the basis. They differ in one point alone: whether the coordinates of each of the two elements are used as they stand or taken from the conjugated element, the two elements being treated independently of one another. Equivalently, the four general products are the four members of the orbit
 
@@ -49,8 +49,8 @@ of a single rule under the insertion of a conjugation into the first slot and a 
 
 $$
 \langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q),\quad
-\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q),\quad
 \langle\tilde P,\tilde Q\rangle_{\ast}=\mathrm{Sc}(\tilde P\tilde Q^{*}),\quad
+\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q),\quad
 \langle\tilde P,\tilde Q\rangle_{\natural\ast}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*}),
 $$
 
@@ -68,12 +68,12 @@ with Gram matrices in the basis $e_0,e_1,e_2,e_3$ equal to $\mathrm{E}=\operator
 
 $$
 (L_{\tilde A})^{\approx}=R_{\tilde A},\qquad
-(L_{\tilde A})^{N}=L_{\tilde A^{\natural}},\qquad
 (L_{\tilde A})^{\ast}=L_{\tilde A^{\ast}},\qquad
+(L_{\tilde A})^{N}=L_{\tilde A^{\natural}},\qquad
 (L_{\tilde A})^{\natural\ast}=R_{\bar{\tilde A}},
 $$
 
-and for the two-sided operator $(L_{\tilde A}R_{\tilde B})^{\approx}=L_{\tilde B}R_{\tilde A}$, $(L_{\tilde A}R_{\tilde B})^{N}=L_{\tilde A^{\natural}}R_{\tilde B^{\natural}}$, $(L_{\tilde A}R_{\tilde B})^{\ast}=L_{\tilde A^{\ast}}R_{\tilde B^{\ast}}$, $(L_{\tilde A}R_{\tilde B})^{\natural\ast}=L_{\bar{\tilde B}}R_{\bar{\tilde A}}$.
+and for the two-sided operator $(L_{\tilde A}R_{\tilde B})^{\approx}=L_{\tilde B}R_{\tilde A}$, $(L_{\tilde A}R_{\tilde B})^{\ast}=L_{\tilde A^{\ast}}R_{\tilde B^{\ast}}$, $(L_{\tilde A}R_{\tilde B})^{N}=L_{\tilde A^{\natural}}R_{\tilde B^{\natural}}$, $(L_{\tilde A}R_{\tilde B})^{\natural\ast}=L_{\bar{\tilde B}}R_{\bar{\tilde A}}$.
 
 *Proof.* *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*, where all sixteen cases are verified on the pairs of basis elements.
 
@@ -197,9 +197,9 @@ The four general products of the biquaternion algebra are one multiplication wit
 
 | Symbol | Meaning |
 |---|---|
-| $\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$, $\tilde P\tilde Q^{*}$, $\tilde P^{\natural}\tilde Q^{*}$ | the four general products: one table, the two insertions |
-| $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{\ast}$, $\langle\cdot,\cdot\rangle_{\natural\ast}$ | their scalar parts, the four pairings, Gram matrices $\mathrm{E},\mathrm{I}_4,\mathrm{I}_4,\mathrm{E}$ |
-| ${}^{\approx}$, ${}^{N}$, ${}^{*}$, ${}^{\natural\ast}$ | the four adjoints, decided by the four general products |
+| $\tilde P\tilde Q$, $\tilde P\tilde Q^{*}$, $\tilde P^{\natural}\tilde Q$, $\tilde P^{\natural}\tilde Q^{*}$ | the four general products: one table, the two insertions |
+| $\langle\cdot,\cdot\rangle$, $\langle\cdot,\cdot\rangle_{\ast}$, $\langle\cdot,\cdot\rangle_{\natural}$, $\langle\cdot,\cdot\rangle_{\natural\ast}$ | their scalar parts, the four pairings, Gram matrices $\mathrm{E},\mathrm{I}_4,\mathrm{I}_4,\mathrm{E}$ |
+| ${}^{\approx}$, ${}^{*}$, ${}^{N}$, ${}^{\natural\ast}$ | the four adjoints, decided by the four general products |
 | $\natural$, $\bar{\cdot}$, ${}^{*}$ | the sign, the coefficient conjugation, the Hermitian conjugation; $\natural$ has sign vector $(1,-1,-1,-1)$ |
 | $L_{\tilde A}R_{\tilde B}$ | a two-sided operator; $L_{\tilde A}R_{\tilde A^{-1}}$ the inner automorphism of the plain product |
 | $L_{\tilde A^{\natural}}R_{\tilde A^{-1}}$, $\tilde X\mapsto\tilde A\tilde X^{\natural}\tilde A^{-1}$ | the sign inserted in the parameter, and in the argument |

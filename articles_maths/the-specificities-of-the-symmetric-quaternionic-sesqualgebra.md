@@ -99,7 +99,7 @@ $\mathrm{SQS}$ is the only $K$-Hermitian product.
 
 ## The Isolation among the Twelve
 
-**Theorem (the isolation).** Among the twelve structures of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, the block is the only $K$-Hermitian product.
+**Theorem (the isolation).** Among the twelve structures of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, the block is the only $K$-Hermitian product.
 
 *Proof.* The block satisfies both clauses by §*The Law: Being $K$-Hermitian*. The other eleven each fail at least one clause. The three bilinear general products GPA and the bilinear parts SPA, SQA fail conjugate-symmetry at $(ie_1,e_1)$, where a bilinear product reverses the imaginary unit, and fail the scalar-part identity at the elements $e_1$ and $ie_1$, where the bilinear form differs from $K$; the two sesquilinear general products GPS and GQS fail conjugate-symmetry at $(e_1,e_2)$, where the two sides are opposite signs of $e_3$, GQS satisfying the scalar-part identity while GPS fails it at $e_1$; the symmetric plain sesquilinear part SPS satisfies conjugate-symmetry and fails the scalar-part identity at $e_1$, its scalar part being the definite form $|P_0|^2+\lVert\vec P\rVert^2$ and not $K$; and the four antisymmetric parts fail both, being skew-conjugate-symmetric — so conjugate-symmetry would force them to vanish — and having identically vanishing scalar part.
 

@@ -17,7 +17,7 @@ one: the roots of $0$ are the origin together with the square-zero elements, and
 elements are exactly the nilpotents.
 
 The nilpotent is the solution of an equation in the product, and the product is part of the definition: it
-is stated once for a general product in *Definitions for the Study of the 12 Algebraic Structures*,
+is stated once for a general product in *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*,
 §*Powers, the Square and the Roots* and §*The Nilpotent*, and read on the products of the space. The
 unqualified word means the block. The block is not associative, so a power needs a bracketing, and the
 left-nested reading is used throughout; the first statement of the article is that the ambiguity does not
@@ -32,7 +32,7 @@ the Symmetric Quaternionic Sesqualgebra*; the zero divisors and the criterion ar
 Symmetric Quaternionic Sesqualgebra*; the isotropic elements of the Krein form are *The Isotropic Structure
 of the General Quaternionic Sesqualgebra*; the nilpotents of the plain product are *Square Roots of Zero and
 the Nilpotents of the General Plain Algebra*; and the square-zero sets of the four general products are
-*Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+*Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ with basis $e_0,e_1,e_2,e_3$,
 $e_k^2=-e_0$ and $e_1e_2=e_3$; $\tilde Q=\sum_\mu Q_\mu e_\mu$ with $Q_\mu\in\mathbb{C}$ and central
@@ -171,11 +171,11 @@ $$
 
 the power being the left-nested reading
 $\tilde\Upsilon^{\star k}=(\cdots((\tilde\Upsilon\star\tilde\Upsilon)\star\tilde\Upsilon)\cdots\star\tilde\Upsilon)$
-of *Definitions for the Study of the 12 Algebraic Structures*, §*Powers, the Square and the Roots*. The
+of *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*. The
 least such $k$ is the **index of nilpotency**; an element of index two,
 $\tilde\Upsilon\star\tilde\Upsilon=0$ with $\tilde\Upsilon\neq0$, is a **square-zero element of $\star$**.
 
-This is *Definitions for the Study of the 12 Algebraic Structures*, §*The Nilpotent*. Unqualified, the
+This is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Nilpotent*. Unqualified, the
 product is the block, and the nilpotent of the block is the solution of $\tilde\Upsilon^{\star k}=0$ for some
 $k$. The origin is the trivial nilpotent and is excluded from the classification.
 
@@ -356,11 +356,11 @@ cone, the star conjugating the coefficient and fixing the direction.
 
 ## Further Reading
 
-- *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), §*The Nilpotent* and §*Powers, the Square and the Roots*, for the definition, the index and the left-nested power of a non-associative product.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), §*The Nilpotent* and §*Powers, the Square and the Roots*, for the definition, the index and the left-nested power of a non-associative product.
 - *Square Roots of One and the Idempotents of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-symmetric-quaternionic-sesqualgebra.md`), for the first central value and the class disjoint from the nilpotents.
 - *Square Roots of a General Element in the Symmetric Quaternionic Sesqualgebra* (`articles_maths/square-roots-of-a-general-element-in-the-symmetric-quaternionic-sesqualgebra.md`), for the equation $\tilde\Xi\star\tilde\Xi=\tilde R$ for an arbitrary value, of which the central value here is the case $\tilde R=0$.
 - *Zero Divisors of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/zero-divisors-of-the-symmetric-quaternionic-sesqualgebra.md`), for the criterion and the two families that the nilpotents sit inside.
 - *Square Roots of Zero and the Nilpotents of the General Plain Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-plain-algebra.md`), for the pure nilpotent cone of the plain product.
-- *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the square-zero set of the product whose symmetric part is the block.
+- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the square-zero set of the product whose symmetric part is the block.
 - *The Isotropic Structure of the General Quaternionic Sesqualgebra* (`articles_maths/the-isotropic-structure-of-the-general-quaternionic-sesqualgebra.md`), for the isotropic set of the Krein form, which is strictly larger than the cone.
 - *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra-of-biquaternions.md`), for the product and its diagonal.

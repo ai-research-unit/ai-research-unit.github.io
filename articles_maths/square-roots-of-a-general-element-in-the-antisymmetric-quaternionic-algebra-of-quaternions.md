@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The square root of an element is defined by an equation in which the product occurs, so it is read in the product (*Definitions for the Study of the 6 Algebraic Structures*). The block of this article is the antisymmetric quaternionic multiplication
+The square root of an element is defined by an equation in which the product occurs, so it is read in the product (*Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*). The block of this article is the antisymmetric quaternionic multiplication
 
 $$
 \tilde p\diamond\tilde q
@@ -22,7 +22,7 @@ The reduction is the same as the reduction of the three central values, and it i
 
 **Conventions.** Throughout, $\tilde p=p_0e_0+\vec p$, $\tilde q=q_0e_0+\vec q$ and $\tilde\xi=\xi_0e_0+\vec\xi$ name elements of $\mathbb{H}$ with real coefficients, $(\vec p,\vec q)$ is the dot product and $\vec p\times\vec q$ the cross product of the vector parts, and $\tilde q^{\natural}=q_0e_0-\vec q$ is the quaternion conjugation; the bar is the identity and the star coincides with the natural conjugation, so no bare bar is written on an element of this block. The operation is written $\diamond$ and never $\wedge^{\natural}$ outside a citation. The equation $\tilde\xi\diamond\tilde\xi=a$ is read in the product $\diamond$; the element $a$ is general, with no central or pure restriction, and the value $a=0$ is the origin of the space. The quaternion form of the space is $N(\tilde p)=p_0^2+\lvert\vec p\rvert^2$.
 
-**Boundaries.** The operation and its alternation are *Introduction to the Antisymmetric Quaternionic Algebra of Quaternions*; the definitions of the square and of the square root of an element are *Definitions for the Study of the 6 Algebraic Structures*. The general reduction of the equation in the plain product is *Square Roots of a General Element in the General Plain Algebra*; the special case of the three central values is *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Quaternionic Algebra*; the square-zero elements and the zero divisors are *Nilpotents of the Antisymmetric Quaternionic Algebra* and *Zero Divisors of the Antisymmetric Quaternionic Algebra*.
+**Boundaries.** The operation and its alternation are *Introduction to the Antisymmetric Quaternionic Algebra of Quaternions*; the definitions of the square and of the square root of an element are *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*. The general reduction of the equation in the plain product is *Square Roots of a General Element in the General Plain Algebra*; the special case of the three central values is *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Quaternionic Algebra*; the square-zero elements and the zero divisors are *Nilpotents of the Antisymmetric Quaternionic Algebra* and *Zero Divisors of the Antisymmetric Quaternionic Algebra*.
 
 ## The Notion and Its Product
 
@@ -77,7 +77,7 @@ The absence is total and is not a statement about a particular element: it holds
 | $0$ | $\tilde\xi\diamond\tilde\xi=0$ | the whole space $\mathbb{H}$ |
 | $a\neq0$ | $\tilde\xi\diamond\tilde\xi=a$ | empty |
 
-The table is the reduction read value by value. The case-by-case classification of the general plain algebra, with its finite families of roots determined by a discriminant, does not occur here, because the quadratic has collapsed. The single element with square roots is the origin, and its square roots are as many as the space allows; every other element has none. This is the reading of the root problem at a general element for the entry $\mathrm{AQA}$ of *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*.
+The table is the reduction read value by value. The case-by-case classification of the general plain algebra, with its finite families of roots determined by a discriminant, does not occur here, because the quadratic has collapsed. The single element with square roots is the origin, and its square roots are as many as the space allows; every other element has none. This is the reading of the root problem at a general element for the entry $\mathrm{AQA}$ of *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*.
 
 ## The Central Values
 
@@ -113,12 +113,12 @@ The square root of an element $a$ is an element whose square in the block is $a$
 
 ## Further Reading
 
-- *Definitions for the Study of the 6 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-6-algebraic-structures.md`), for the square and the square root of an element.
+- *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-quaternion-r-space.md`), for the square and the square root of an element.
 - *Introduction to the Antisymmetric Quaternionic Algebra of Quaternions* (`articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra-of-quaternions.md`), for the operation and its alternation.
 - *Square Roots of a General Element in the General Plain Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-general-plain-algebra-of-quaternions.md`), above this article in this category, for the general reduction to which this article is the counterpoint.
 - *Square Roots of Minus One, Zero and Plus One in the Antisymmetric Quaternionic Algebra* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-antisymmetric-quaternionic-algebra-of-quaternions.md`), for the central values as a special case.
 - *Nilpotents of the Antisymmetric Quaternionic Algebra* (`articles_maths/nilpotents-of-the-antisymmetric-quaternionic-algebra-of-quaternions.md`), for the square-zero elements of the block.
 - *Zero Divisors of the Antisymmetric Quaternionic Algebra* (`articles_maths/zero-divisors-of-the-antisymmetric-quaternionic-algebra-of-quaternions.md`), for the zero divisors of the block.
-- *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-6-algebraic-structures-over-the-quaternion-r-space.md`), for the six structures, of which the block is $\mathrm{AQA}$.
+- *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-algebraic-structures-over-the-quaternion-r-space.md`), for the six structures, of which the block is $\mathrm{AQA}$.
 - William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the square of a quaternion and its vector-part decomposition.
 - Pertti Lounesto, *Clifford Algebras and Spinors* (Cambridge University Press, 2nd ed. 2001), for the square roots of quaternions and the role of the vector part.

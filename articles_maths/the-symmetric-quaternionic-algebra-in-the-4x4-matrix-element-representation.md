@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The symmetric quaternionic multiplication is the central-valued operation $\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0$ (*Introduction to the Symmetric Quaternionic Algebra of Biquaternions*). This article reads the operation in the $4\times4$ left regular model, the left regular matrix $\mathsf{M}_4$ of *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*; it is the second of the two representation articles of the block, and its companion *The Symmetric Quaternionic Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* reads the same operation on the realisation $\mathsf{M}_2$. In the model the product of two elements becomes the symmetrisation of a product of left multiplications, the transpose carries the quaternion conjugation, and the value is a scalar matrix whose coefficient is the quaternion form $N$; the article records the trace and the rank of the resulting endomorphism and the matrix form of the form.
+The symmetric quaternionic multiplication is the central-valued operation $\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0$ (*Introduction to the Symmetric Quaternionic Algebra of Biquaternions*). This article reads the operation in the $4\times4$ left regular model, the left regular matrix $\mathsf{M}_4$ of *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*; it is the second of the two representation articles of the block, and its companion *The Symmetric Quaternionic Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* reads the same operation on the realisation $\mathsf{M}_2$. In the model the product of two elements becomes the symmetrisation of a product of left multiplications, the transpose carries the quaternion conjugation, and the value is a scalar matrix whose coefficient is the quaternion form $N$; the article records the trace and the rank of the resulting endomorphism and the matrix form of the form.
 
-The model itself, the regular matrix $\mathsf{M}_4$, the trace $\operatorname{Tr}\mathsf{M}_4(\tilde Q)=4Q_0$, the determinant $\det\mathsf{M}_4(\tilde Q)=N(\tilde Q)^2$ and the matrix of the conjugation as the transpose are those of the cited articles and are used here, not restated. The form $N$ and its Gram matrix are *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*; the operators are *The Multiplication Operators of the Symmetric Quaternionic Algebra*; the normal forms of the singular matrices are *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*. Nothing of the enriched layer is used.
+The model itself, the regular matrix $\mathsf{M}_4$, the trace $\operatorname{Tr}\mathsf{M}_4(\tilde Q)=4Q_0$, the determinant $\det\mathsf{M}_4(\tilde Q)=N(\tilde Q)^2$ and the matrix of the conjugation as the transpose are those of the cited articles and are used here, not restated. The form $N$ and its Gram matrix are *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*; the operators are *The Multiplication Operators of the Symmetric Quaternionic Algebra*; the normal forms of the singular matrices are *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*. Nothing of the enriched layer is used.
 
 **Conventions.** The product is $\tilde P\star\tilde Q=N(\tilde P,\tilde Q)e_0$ with $N(\tilde P,\tilde Q)=P_0Q_0+(\vec P,\vec Q)$; the left regular matrix is $\mathsf{M}_4(\tilde P)$, whose $m$-th column is the coordinate column of the product $\tilde P e_m$, with $\mathsf{M}_4(\tilde P^\natural)=\mathsf{M}_4(\tilde P)^{\mathsf T}$ in the basis and $\mathsf{M}_2(e_k)=-i\sigma_k$ in the companion model.
 
@@ -94,7 +94,7 @@ $$
 the determinant being $N(\tilde Q)^2$. The Gram matrix of $N$ in the basis is $I_4$.
 
 *Proof.* $\det\mathsf{M}_4(\tilde Q)=N(\tilde Q)^2$ is the determinant of the left regular representation
-(*The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*), so the determinant vanishes together with $N$. The Gram matrix is the table of
+(*Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*), so the determinant vanishes together with $N$. The Gram matrix is the table of
 *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*.
 
 **Remark (the definite rows in the model).** Under $\mathsf{M}_4$ the definite rows are read through the subspace
@@ -103,7 +103,7 @@ space of complex conjugation, is the set of elements with real coefficients, on 
 definite, and the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$ is its image under the multiplication by
 $i$, on which the form is negative definite. The regular matrix of an element of $\mathbb{H}_{\mathbb{B}}$ is a real
 $4\times4$ matrix, and the regular matrix of an element of $i\mathbb{H}_{\mathbb{B}}$ is purely imaginary; the
-correspondence is the one of *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*, which owns the subspace conditions.
+correspondence is the one of *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*, which owns the subspace conditions.
 
 ## Worked Examples
 
@@ -192,7 +192,7 @@ the definite rows are read through the subspace conditions of the representation
 ## Further Reading
 
 - *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* (`articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.md`), for the construction of the regular model
-- *The 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* (`articles_maths/the-4x4-matrix-element-representation-of-biquaternions.md`), for the regular model and its determinant
+- *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* (`articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.md`), for the regular model and its determinant
 - *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra* (`articles_maths/the-quaternion-form-as-a-product-on-the-symmetric-quaternionic-algebra.md`), for the form $N$ and its Gram matrix
 - *The Multiplication Operators of the Symmetric Quaternionic Algebra* (`articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-algebra.md`), for the operators transported by the model
 - *The Symmetric Quaternionic Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* (`articles_maths/the-symmetric-quaternionic-algebra-in-the-2x2-matrix-element-representation.md`), for the reading on the realisation

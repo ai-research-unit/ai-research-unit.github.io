@@ -8,7 +8,7 @@ on the scalar line. A scalar-valued operation has no room for a mystery in its e
 product $\tilde p\star\tilde q$ vanishes exactly when its coefficient vanishes. This article reads
 that single criterion and its consequences for the zero-divisor structure of the block. The
 definition of the **zero divisor**, of the **annihilator** and of the **regular element** is the
-general one of *Definitions for the Study of the 6 Algebraic Structures*, and the criterion is the
+general one of *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, and the criterion is the
 only computation of the article; everything after it is a reading of the criterion.
 
 **Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and
@@ -26,7 +26,7 @@ $\tilde b\neq0$ with $\tilde a\star\tilde b=0$ or $\tilde b\star\tilde a=0$; the
 commutative, so the two conditions coincide and no side has to be named. The **annihilator** of
 $\tilde a$ is $\mathrm{Ann}(\tilde a)=\{\tilde q:\tilde a\star\tilde q=0\}$, and $\tilde a$ is
 **regular** when it is not a zero divisor. These are the definitions of *Definitions for the Study
-of the 6 Algebraic Structures* read for a commutative operation.
+of the Algebraic Structures* read for a commutative operation.
 
 ## The Criterion
 
@@ -151,7 +151,7 @@ filling a cone.
 ## The Comparison with the Other Five Structures
 
 The zero divisors of a structure are read with the general definition of *Definitions for the Study
-of the 6 Algebraic Structures*; the six operations are those of *The 6 Algebraic Structures over
+of the Algebraic Structures*; the six operations are those of *The Algebraic Structures over
 the Quaternion $\mathbb{R}$ Space*.
 
 **Proposition (the two non-symmetric general products have none).** The general plain product
@@ -234,7 +234,7 @@ structure has only the nonzero pure quaternions, and the two general structures 
 ## Further Reading
 
 - *Introduction to the Symmetric Quaternionic Algebra of Quaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-algebra-of-quaternions.md`), for the product and its governing formula
-- *Definitions for the Study of the 6 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-6-algebraic-structures.md`), for the zero divisor, the annihilator and the regular element
+- *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-quaternion-r-space.md`), for the zero divisor, the annihilator and the regular element
 - *The 2 Forms over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-2-forms-over-the-quaternion-r-space.md`), for the two forms, their signatures and their isotropic elements
 - *Zero Divisors of the Symmetric Plain Algebra* (`articles_maths/zero-divisors-of-the-symmetric-plain-algebra-of-quaternions.md`), for the comparison with the other symmetric block
 - *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra* (`articles_maths/the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra-of-quaternions.md`), for the isotropic elements of the block

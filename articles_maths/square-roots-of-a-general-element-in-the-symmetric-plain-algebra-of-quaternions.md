@@ -8,7 +8,7 @@ $$
 \tilde p\bullet\tilde p=\tilde q
 $$
 
-for an arbitrary element $\tilde q$, by the scalar and vector split alone — free of Clifford algebras, norms and forms — states the classification of the root set, works the examples, and specialises to the central values. The equation names a product, so the root is relative to it: throughout this article the square is the one of the symmetric plain product, which is the plain square, and the general definitions of the power, the square and the root of a central value are *Definitions for the Study of the 6 Algebraic Structures*, §*The Element Vocabulary*.
+for an arbitrary element $\tilde q$, by the scalar and vector split alone — free of Clifford algebras, norms and forms — states the classification of the root set, works the examples, and specialises to the central values. The equation names a product, so the root is relative to it: throughout this article the square is the one of the symmetric plain product, which is the plain square, and the general definitions of the power, the square and the root of a central value are *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, §*The Element Vocabulary*.
 
 **This is not the algebra $\mathbb{H}$.** The two algebras share the space, the addition, the real scalars and the unit, but $\bullet$ is a different multiplication and the projection onto the scalar line is not multiplicative. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives nothing new.
 

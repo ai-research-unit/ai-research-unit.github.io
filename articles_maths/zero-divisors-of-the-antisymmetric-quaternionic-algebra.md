@@ -3,7 +3,7 @@
 ## Introduction
 
 The zero divisor is defined by an equation in which the product occurs, so it is a class of the
-product and not of the space (*Definitions for the Study of the 12 Algebraic Structures*, §*The
+product and not of the space (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The
 Zero Divisor and the Annihilator*). The block of this article is the antisymmetric quaternionic
 multiplication
 $$
@@ -122,8 +122,7 @@ the four definitions select one and the same set,
 $$
 \{\tilde Q\neq0:\ C(\tilde Q)=0\},
 $$
-a theorem about the algebra and not a property of the definitions (**Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space**, §*The Four General Products Coincide*; *Definitions for the Study of the 12 Algebraic
-Structures*, §9). The set of the block differs from it, and the difference is the content of the
+a theorem about the algebra and not a property of the definitions (**Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space**, §*The Four General Products Coincide*; *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §9). The set of the block differs from it, and the difference is the content of the
 comparison.
 
 **Proposition (the comparison).** The zero-divisor set of the block is the punctured space
@@ -219,9 +218,9 @@ and the only subclass the annihilator separates is the isotropic one.
 
 ## Further Reading
 
-- *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), for the zero divisor and the annihilator of a general product and for the relativity of the definition
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the zero divisor and the annihilator of a general product and for the relativity of the definition
 - *Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra-of-biquaternions.md`), for the operation, its alternation and its table
-- *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the coincidence of the four zero-divisor sets and the product-dependent annihilators
+- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the coincidence of the four zero-divisor sets and the product-dependent annihilators
 - *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the criterion, the two families and the structure of the zero divisors of the plain product
 - *Zero Divisors of the General Quaternionic Algebra* (`articles_maths/zero-divisors-of-the-general-quaternionic-algebra.md`), for the parent product's zero-divisor cone, on which the rank of the block's operator drops
 - *Remarkable Subspaces under the Antisymmetric Quaternionic Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-antisymmetric-quaternionic-algebra-of-biquaternions.md`), for the elements whose bracket vanishes and for the reading on the subspaces

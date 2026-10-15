@@ -6,7 +6,7 @@ The Symmetric Plain Algebra is one of the twelve algebraic structures that the b
 $$
 \tilde P\circ\tilde Q=\tfrac12\bigl(\tilde P\tilde Q+\tilde Q\tilde P\bigr),
 $$
-which over $\mathbb{C}$ is the symmetric plain bilinear structure of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. Read over $\mathbb{R}$, the same product on the same set is an $\mathbb{R}$-algebra on the eight-dimensional real space $\mathbb{R}^8$, and this article owns that real reading.
+which over $\mathbb{C}$ is the symmetric plain bilinear structure of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. Read over $\mathbb{R}$, the same product on the same set is an $\mathbb{R}$-algebra on the eight-dimensional real space $\mathbb{R}^8$, and this article owns that real reading.
 
 The general construction is not repeated here. The realification of a vector space, of a linear map and of a form, the doubling of the dimension, the complex structure $J$ and the table of the four effects are *The Realification and the Effect of the Change of Scalars*; This article gives what is specific to this product: its real bilinear reading, the law of its second slot over the centre, the realification of the form it carries and the signature that follows, and its real operators.
 
@@ -68,5 +68,5 @@ The Symmetric Plain Algebra read over $\mathbb{R}$ is the same product on the sa
 ## Further Reading
 
 - *The Realification and the Effect of the Change of Scalars* (`articles_maths/the-realification-and-the-effect-of-the-change-of-scalars.md`), for the general construction, the two rules of the realification of a form and the table of the four effects.
-- *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the twelve structures and the columns of the table of the twelve, of which this article is the real reading of one row.
+- *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-algebraic-structures-over-the-biquaternion-c-space.md`), for the twelve structures and the columns of the table of the twelve, of which this article is the real reading of one row.
 - *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the general plain bilinear form $B$, the first of the four whose realification is tabulated.

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A root of a central value is defined by an equation in which the product occurs, so it belongs to the product (*Definitions for the Study of the 12 Algebraic Structures*, §*Powers, the Square and the Roots*). The block of this article is the antisymmetric plain sesquilinear product
+A root of a central value is defined by an equation in which the product occurs, so it belongs to the product (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*). The block of this article is the antisymmetric plain sesquilinear product
 
 $$
 \tilde P\diamond\tilde Q=\operatorname{Vect}\bigl(\tilde P\tilde Q^{*}\bigr)
@@ -33,7 +33,7 @@ $$
 \tilde\Xi\star\tilde\Xi=\lambda e_0 .
 $$
 
-The three central values the biquaternion algebra singles out are $-1$, $+1$ and $0$: the roots of $-1$ are the imaginary units, the roots of $+1$ are the involutions, and the roots of $0$ are the nonzero nilpotents of the product (*Definitions for the Study of the 12 Algebraic Structures*, §*Powers, the Square and the Roots*).
+The three central values the biquaternion algebra singles out are $-1$, $+1$ and $0$: the roots of $-1$ are the imaginary units, the roots of $+1$ are the involutions, and the roots of $0$ are the nonzero nilpotents of the product (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*).
 
 **Definition (nilpotent of a product).** Let $\star$ be a product on $\mathbb{B}$. An element $\tilde\Upsilon$ is **nilpotent of $\star$** when some power of it vanishes,
 
@@ -41,7 +41,7 @@ $$
 \tilde\Upsilon^{\star k}=0\quad\text{for some }k\geq1,
 $$
 
-the power being the **left-nested reading** $\tilde\Upsilon^{\star k}=\bigl(\cdots\bigl((\tilde\Upsilon\star\tilde\Upsilon)\star\tilde\Upsilon\bigr)\cdots\star\tilde\Upsilon\bigr)$ when $\star$ is not associative; the least such $k$ is the **index of nilpotency**, and an element of index two, $\tilde\Upsilon\star\tilde\Upsilon=0$ with $\tilde\Upsilon\neq0$, is a **square-zero element of $\star$**. The origin is the trivial nilpotent, and the article is concerned with the others (*Definitions for the Study of the 12 Algebraic Structures*, §*The Nilpotent*).
+the power being the **left-nested reading** $\tilde\Upsilon^{\star k}=\bigl(\cdots\bigl((\tilde\Upsilon\star\tilde\Upsilon)\star\tilde\Upsilon\bigr)\cdots\star\tilde\Upsilon\bigr)$ when $\star$ is not associative; the least such $k$ is the **index of nilpotency**, and an element of index two, $\tilde\Upsilon\star\tilde\Upsilon=0$ with $\tilde\Upsilon\neq0$, is a **square-zero element of $\star$**. The origin is the trivial nilpotent, and the article is concerned with the others (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Nilpotent*).
 
 Throughout this article the product is the **block** $\diamond$, and unqualified, *root* means a root in $\diamond$, *nilpotent* means a nilpotent of $\diamond$ and *power* is read in $\diamond$. The block is not associative, so the bracketing of a power is specified and the left-nested reading is taken; the square is bracketing-free, and with it the square-zero element, since the equation $\tilde\Upsilon\diamond\tilde\Upsilon=0$ involves one product and no choice of bracketing. The index-two theorem below says that for the block no higher power vanishes without a vanishing square, so the choice of bracketing does not matter for the nilpotent class.
 
@@ -197,7 +197,7 @@ $$
 | $\mathrm{AQS}$ | $\vec\Xi\times\overline{\vec\Xi}$ | dependent real parts, real dimension six |
 | $\mathrm{APS}$ | $\operatorname{Vect}(\tilde\Xi\tilde\Xi^{*})$ | the cone on the real unit sphere, real dimension five |
 
-The root of $0$ of the four general products, where the equations are not contradictory, is *Square Roots of Minus One, Zero and Plus One in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the square-zero sets of the twelve structures are *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+The root of $0$ of the four general products, where the equations are not contradictory, is *Square Roots of Minus One, Zero and Plus One in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the square-zero sets of the twelve structures are *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 ## Summary
 
@@ -222,7 +222,7 @@ Every nilpotent is a two-sided zero divisor, here trivially, since a square-zero
 
 ## Further Reading
 
-- *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), §*Powers, the Square and the Roots* and §*The Nilpotent*, for the root of a central value, the nilpotent and its index.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), §*Powers, the Square and the Roots* and §*The Nilpotent*, for the root of a central value, the nilpotent and its index.
 - *Introduction to the Antisymmetric Plain Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-plain-sesqualgebra-of-biquaternions.md`), for the operation, its conjugate-alternation and its table.
 - *The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra* (`articles_maths/the-vector-part-of-the-square-and-the-jacobi-failure-of-the-antisymmetric-plain-sesqualgebra.md`), for the criterion for the vanishing of the diagonal and the quadric it traces.
 - *Square Roots of One and the Idempotents of the Antisymmetric Plain Sesqualgebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-antisymmetric-plain-sesqualgebra.md`), for the roots of $+1$ and the origin alone as the idempotent.

@@ -3,7 +3,7 @@
 ## Introduction
 
 The equation $\tilde\Xi\wedge\tilde\Xi=\tilde A$ names the product in which the square is read, so
-the square root is relative to it (*Definitions for the Study of the 12 Algebraic Structures*,
+the square root is relative to it (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*,
 §*Powers, the Square and the Roots*). The block of this article is the antisymmetric plain
 multiplication
 $$
@@ -34,7 +34,7 @@ $$
 \tilde\Xi\star\tilde\Xi=\tilde A .
 $$
 The roots of a central value are the special case $\tilde A=\lambda e_0$
-(*Definitions for the Study of the 12 Algebraic Structures*, §*Powers, the Square and the Roots*).
+(*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*).
 
 Throughout this article the product is the **antisymmetric plain multiplication** $\wedge$, and
 unqualified, *square root* means a square root of the block. The right side is an arbitrary
@@ -174,7 +174,7 @@ have no counterpart in the block.
 
 ## Further Reading
 
-- *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), for the square root of an element, the root of a central value and the relativity of the definitions to the product
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the square root of an element, the root of a central value and the relativity of the definitions to the product
 - *Introduction to the Antisymmetric Plain Algebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-plain-algebra-of-biquaternions.md`), for the operation, its alternation and its table
 - *Square Roots of One and the Idempotents of the Antisymmetric Plain Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-antisymmetric-plain-algebra.md`), for the central right sides $-1$ and $+1$, which are squareless, and for the idempotents
 - *Square Roots of Zero and the Nilpotents of the Antisymmetric Plain Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-antisymmetric-plain-algebra.md`), for the central right side $0$ and the square-zero elements, which are the square roots of the origin

@@ -11,7 +11,7 @@ $$
 $$
 
 the cross product of the vector part of the first argument with the **conjugate** of the vector part of
-the second. It is the operation named $\mathrm{AQS}$ in *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and developed as a multiplication in *Introduction to the Antisymmetric Quaternionic
+the second. It is the operation named $\mathrm{AQS}$ in *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and developed as a multiplication in *Introduction to the Antisymmetric Quaternionic
 Sesqualgebra of Biquaternions*. Its value is a **pure vector**, of scalar part zero; it is
 **conjugate-alternating**; and its algebraic norm, unlike the algebraic norm of every alternating bilinear product, does
 **not** vanish: at $\tilde Q=e_1+ie_2$ it is $-2ie_3$. The physics menu files the band under the word

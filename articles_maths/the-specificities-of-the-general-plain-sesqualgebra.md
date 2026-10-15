@@ -68,7 +68,7 @@ $$
 
 ## The Isolation among the Twelve
 
-**Theorem (the specificity).** Of the twelve structures of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, the general plain sesqualgebra is the only one whose right multiplications satisfy the right-composition law in the **forward** order.
+**Theorem (the specificity).** Of the twelve structures of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, the general plain sesqualgebra is the only one whose right multiplications satisfy the right-composition law in the **forward** order.
 
 *Proof.* The block satisfies it by §*The Criterion*. The other eleven are the three remaining general products together with the eight parts got by symmetrising or antisymmetrising the four. The three general products are disposed of by the table below: $\tilde P\tilde Q$ carries the forward law on the left and the reversed law on the right, $\tilde P^{\natural}\tilde Q$ carries the reversed law on the left, $\tilde P\tilde Q^{*}$ is the block, and $\tilde P^{\natural}\tilde Q^{*}$ conjugates both slots and closes on neither side. Each of the eight derived parts mixes the two slots in its multiplication, $R^{\circ}_{\tilde P}(\tilde X)=\tfrac12(\tilde X\circ\tilde P\pm\tilde P\circ\tilde X)$, so the composite of two of them is a sum of four products and is not a single multiplication at any element in general.
 

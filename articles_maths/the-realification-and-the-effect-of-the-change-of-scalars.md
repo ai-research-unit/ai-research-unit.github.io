@@ -98,8 +98,8 @@ $$
 | form | complex reading | realified signature |
 |---|---|---|
 | general plain bilinear $B$ | symmetric bilinear, rank $4$ | $(4,4)$ |
-| general quaternionic bilinear $N$ | symmetric bilinear, rank $4$ | $(4,4)$ |
 | general plain sesquilinear (Hermitian) $H$ | Hermitian, inertia $(4,0)$ | $(8,0)$ |
+| general quaternionic bilinear $N$ | symmetric bilinear, rank $4$ | $(4,4)$ |
 | general quaternionic sesquilinear (Krein) $K$ | Hermitian, inertia $(1,3)$ | $(2,6)$ |
 
 the four entries of **The Realification of the Four Forms**, §*The Four Gram Matrices*, quoted here as the instances of the two rules.
@@ -196,5 +196,5 @@ Read on the twelve algebraic structures, the passage turns the six $\mathbb{C}$-
 ## Further Reading
 
 - **The Realification of the Four Forms** (`articles_maths/the-realification-of-the-four-forms.md`), for the general case applied to the four forms of the corpus, the four Gram matrices, the four signatures, the restrictions to the remarkable subspaces and the realified null cones.
-- *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`) and *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the twelve products, their table and their two-slot construction, on which §*The Effect on the Twelve Algebraic Structures* rests.
+- *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`) and *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-algebraic-structures-over-the-biquaternion-c-space.md`), for the twelve products, their table and their two-slot construction, on which §*The Effect on the Twelve Algebraic Structures* rests.
 - *Change of Rings* (`articles_maths/change-of-rings.md`), *Extension of Scalars* (`articles_maths/extension-of-scalars.md`) and *Real Forms and the Descent of an Algebra* (`articles_maths/real-forms-and-the-descent-of-an-algebra.md`), for the general theory of the restriction and the extension of scalars and of the real forms.

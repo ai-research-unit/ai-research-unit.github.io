@@ -25,7 +25,7 @@ subspace, and neither is multiplicative.
 
 The word *norm* names here the **algebraic norm**, a central-valued quadratic map attached to a
 product and not a norm on a vector space. The general definitions are *Definitions for the Study of
-the 6 Algebraic Structures*; the algebraic norms of the parent are *The 2 Algebraic Norms over the
+the Algebraic Structures*; the algebraic norms of the parent are *The 2 Algebraic Norms over the
 Quaternion $\mathbb{R}$ Space*; and the invariant form of the block is *The Killing Form of the
 Antisymmetric Plain Algebra*.
 
@@ -44,8 +44,7 @@ unit, the inverse and the algebraic norm of the block.
 ## The Relative Definitions
 
 The word *unit* and the word *inverse* name a product, so the definitions are stated once for a
-general product and read on the block; they are *Definitions for the Study of the 6 Algebraic
-Structures*, §*The Element Vocabulary*.
+general product and read on the block; they are *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, §*The Element Vocabulary*.
 
 **Definition (unit).** Let $\star$ be a product on $\mathbb{H}$. An element $e$ is a **left unit of
 $\star$** when $e\star\tilde x=\tilde x$ for every $\tilde x$, a **right unit** when
@@ -240,7 +239,7 @@ transferred.
 
 ## Further Reading
 
-- *Definitions for the Study of the 6 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-6-algebraic-structures.md`), for the unit, the inverse and the relativity of the definitions to the product
+- *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-quaternion-r-space.md`), for the unit, the inverse and the relativity of the definitions to the product
 - *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-2-algebraic-norms-over-the-quaternion-r-space.md`), for the algebraic norm as the diagonal of the scalar-part form and the convention that counts a vanishing one as no norm
 - *Introduction to the Antisymmetric Plain Algebra of Quaternions* (`articles_maths/introduction-to-the-antisymmetric-plain-algebra-of-quaternions.md`), for the operation, its class, its table and the absence of a unit
 - *Norm and Invertibility in the General Plain Algebra* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra-of-quaternions.md`), for the parent norm, its multiplicativity and the invertibility criterion the block does not have

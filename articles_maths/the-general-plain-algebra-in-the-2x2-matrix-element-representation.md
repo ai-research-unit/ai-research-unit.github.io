@@ -182,7 +182,7 @@ The matrix realization $\mathsf{M}_2$ turns the plain product of the algebra int
 ## Further Reading
 
 - *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.md`), for the realization and its first properties
-- *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/the-2x2-matrix-element-representation-m2c-of-biquaternions.md`), for the further reading of the isomorphism
+- *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.md`), for the further reading of the isomorphism
 - *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the general plain bilinear form and its comparison with the other three
 - *Association and the Transpose on the General Plain Algebra* (`articles_maths/association-and-the-transpose-on-the-general-plain-algebra.md`), for the operators of this group
 - *The General Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$* (`articles_maths/the-general-plain-algebra-in-the-4x4-matrix-element-representation.md`), for the companion reading of the group

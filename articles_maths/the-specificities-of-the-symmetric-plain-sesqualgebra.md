@@ -43,7 +43,7 @@ $$
 
 ## The Isolation among the Twelve
 
-**Theorem (the specificity).** Of the twelve structures of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, the symmetric plain sesqualgebra is the only one that is **Hermitian**, that is conjugate-commutative with central image.
+**Theorem (the specificity).** Of the twelve structures of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, the symmetric plain sesqualgebra is the only one that is **Hermitian**, that is conjugate-commutative with central image.
 
 *Proof.* The block satisfies both clauses by the corollary above. The other eleven are the three remaining general products together with the eight parts got by symmetrising or antisymmetrising the four, and each fails at least one clause. The four general products fail the centrality, their value at $(e_0,e_1)$ being a nonzero multiple of $e_1$; the four antisymmetric parts fail it as well, their image being the vector subspace, and fail conjugate-commutativity too, being alternating ($\mathrm{APA}$, $\mathrm{AQA}$) or conjugate-alternating ($\mathrm{APS}$, $\mathrm{AQS}$) with an opposite value at $(e_1,e_2)$. Among the three remaining symmetric parts, the symmetric plain product fails both, its value at $(e_0,ie_0)$ being $ie_0$ against the conjugate $-ie_0$ and its value at $(e_0,e_1)$ being $e_1$; the symmetric quaternionic product satisfies centrality and fails conjugate-commutativity, its value at $(e_0,ie_0)$ being $ie_0$ against $-ie_0$; and the symmetric quaternionic sesquilinear product satisfies conjugate-commutativity and fails centrality, its value at $(e_0,e_1)$ being $-e_1$.
 

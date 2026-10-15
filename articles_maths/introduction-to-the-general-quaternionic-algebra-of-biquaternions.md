@@ -246,7 +246,7 @@ $$
 
 ### The Idempotents
 
-**Definition.** Let $\star$ be a product on $\mathbb{B}$. An element is **idempotent of $\star$** when $\tilde Q\star\tilde Q=\tilde Q$, and of **index two**, or **square-zero**, when $\tilde Q\neq0$ and $\tilde Q\star\tilde Q=0$. The definitions are *Definitions for the Study of the 12 Algebraic Structures*, §*The Idempotent, the Projection and the Peirce Decomposition* and §*The Nilpotent*, and they name the product at every step; throughout this article the product is the multiplication $\tilde P^{\natural}\tilde Q$.
+**Definition.** Let $\star$ be a product on $\mathbb{B}$. An element is **idempotent of $\star$** when $\tilde Q\star\tilde Q=\tilde Q$, and of **index two**, or **square-zero**, when $\tilde Q\neq0$ and $\tilde Q\star\tilde Q=0$. The definitions are *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Idempotent, the Projection and the Peirce Decomposition* and §*The Nilpotent*, and they name the product at every step; throughout this article the product is the multiplication $\tilde P^{\natural}\tilde Q$.
 
 **Proposition.** The idempotents of the multiplication are $0$ and $e_0$.
 

@@ -3,7 +3,7 @@
 ## Introduction
 
 This article is the operator article of the fourth band's antisymmetric half, the operation
-$\mathrm{AQS}$ of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. Its product is the
+$\mathrm{AQS}$ of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. Its product is the
 antisymmetric quaternionic sesquilinear product
 
 $$

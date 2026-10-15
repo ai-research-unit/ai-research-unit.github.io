@@ -3,7 +3,7 @@
 ## Introduction
 
 The square root of an element is defined by an equation in which the product occurs, so it is
-read in the product (*Definitions for the Study of the 12 Algebraic Structures*, §*Powers, the
+read in the product (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the
 Square and the Roots*). The block of this article is the antisymmetric quaternionic
 multiplication
 $$
@@ -183,7 +183,7 @@ $+1$. The square roots of the origin are the zero divisors of the block together
 
 ## Further Reading
 
-- *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), for the square root of an element, the power and the square, and for the relativity of the definitions to the product
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the square root of an element, the power and the square, and for the relativity of the definitions to the product
 - *Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra-of-biquaternions.md`), for the operation, its alternation and its table
 - *Square Roots of a General Element in the General Plain Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-general-plain-algebra.md`), for the reduction and the four-fold classification against which the collapsed classification of the block is read
 - *Square Roots of One and the Idempotents of the Antisymmetric Quaternionic Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-antisymmetric-quaternionic-algebra.md`), for the signed central values and for the reduction of the vanishing square

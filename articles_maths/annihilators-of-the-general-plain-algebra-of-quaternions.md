@@ -9,7 +9,7 @@ $$
 A_\star(\tilde q)=\{\tilde x:\tilde q\star\tilde x=0\},\qquad
 B_\star(\tilde q)=\{\tilde x:\tilde x\star\tilde q=0\},
 $$
-the left and the right annihilator (*Definitions for the Study of the 12 Algebraic Structures*,
+the left and the right annihilator (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*,
 §*The Zero Divisor and the Annihilator*). When the product is carried by a multiplication operator
 the annihilator is the kernel of that operator, so it is a linear subspace and its computation is
 one of linear algebra.
@@ -24,8 +24,8 @@ theory is the vanishing of the annihilator, and the article is short for that re
 annihilator of the block, the two multiplication operators, the rank table and the reading on the
 remarkable subspaces.
 
-The chapter carries the structure-level article *Annihilators in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*
-(`articles_maths/annihilators-in-the-6-algebraic-structures-over-the-quaternion-r-space.md`), whose annihilating set asks the other question:
+The chapter carries the structure-level article *Annihilators in the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*
+(`articles_maths/annihilators-in-the-algebraic-structures-over-the-quaternion-r-space.md`), whose annihilating set asks the other question:
 which elements kill the whole space for a fixed product, the radical of that product, where this
 article asks which elements a fixed element kills. The two notions are transposed, not equal.
 
@@ -166,8 +166,8 @@ it to characterise.
 
 ## Further Reading
 
-- *Definitions for the Study of the 6 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-6-algebraic-structures.md`), §*The Element Vocabulary*, for the zero divisor, the annihilator and the regular element of a general product.
-- *Annihilators in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/annihilators-in-the-6-algebraic-structures-over-the-quaternion-r-space.md`), the structure-level article of the chapter, for the other question: which elements kill the whole space for a fixed product, the radical, where this article fixes the element and reads the partners it kills.
+- *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-quaternion-r-space.md`), §*The Element Vocabulary*, for the zero divisor, the annihilator and the regular element of a general product.
+- *Annihilators in the Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/annihilators-in-the-algebraic-structures-over-the-quaternion-r-space.md`), the structure-level article of the chapter, for the other question: which elements kill the whole space for a fixed product, the radical, where this article fixes the element and reads the partners it kills.
 - *Introduction to the General Plain Algebra of Quaternions* (`articles_maths/introduction-to-the-general-plain-algebra-of-quaternions.md`), for the product, its associativity and its table.
 - *Norm and Invertibility in the General Plain Algebra* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra-of-quaternions.md`), for the norm and the division property that make every nonzero element a unit.
 - *One-Sided Operators on the General Plain Algebra of Quaternions* (`articles_maths/one-sided-operators-on-the-general-plain-algebra-of-quaternions.md`), for the operators $L_{\tilde p}$ and $R_{\tilde p}$ and their invertibility.

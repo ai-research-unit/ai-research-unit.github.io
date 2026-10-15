@@ -224,10 +224,10 @@ $$
 the **pure states** of the corpus, indexed by the unit sphere and forming the Bloch sphere. The material
 sector owns no projection, so the reference state of a material field comes from here — a **state** and
 not a material background, which is the companion article's reading and is not repeated. The family is the
-corpus's idempotent set (*Idempotents in the 12 Structures of Biquaternions over $\mathbb{C}$*), and its
+corpus's idempotent set (*Idempotents in the Algebraic Structures of Biquaternions over $\mathbb{C}$*), and its
 parametrisation is the corpus's bijection between the roots of $-e_0$ and the states: a pure state is a pure
 root of $+e_0$, built from a root of $-e_0$ by the central $i$ (*Square Roots of Minus One, Zero and Plus
-One in the 12 Structures of Biquaternions over $\mathbb{C}$*).
+One in the Algebraic Structures of Biquaternions over $\mathbb{C}$*).
 
 The idempotent sits **on the zero-divisor cone**. Its interval vanishes,
 
@@ -239,12 +239,12 @@ so a pure state is a zero divisor of the general plain bilinear product: it is n
 nonzero element, and the algebra's other projection at the antipodal direction completes it. The cone
 therefore cuts the informational sector, and on the unit-trace slice the cut is exactly the boundary of the
 state space: the Bloch ball is the trace-one slice of the future cone and its boundary is the sphere of the
-pure states (*The Cone and the Massless Particles in the 12 Structures of Biquaternions over $\mathbb{C}$*
+pure states (*The Cone and the Massless Particles in the Algebraic Structures of Biquaternions over $\mathbb{C}$*
 and *The Bloch Ball as the Trace-One Slice of the Future Light Cone*). Inside the sector the cone has two
 faces: a cone element with $q_0\neq0$ is a multiple of a pure state,
 $\tilde Q=2q_0\tilde\Pi_1(\vec q'/q_0)$, whereas the **nilpotents**, the pure isotropic elements of real
 dimension four, meet $\mathbb{M}_+$ at the origin alone, the square of an informational element having
-strictly positive scalar part (*Nilpotents in the 12 Structures of Biquaternions over $\mathbb{C}$*). For
+strictly positive scalar part (*Nilpotents in the Algebraic Structures of Biquaternions over $\mathbb{C}$*). For
 the general element of the unit-trace slice,
 
 $$
@@ -370,7 +370,7 @@ boundary of what it must declare is the boundary of the sector.
 - **The square is not the product.** A square of an element of either sector is informational, so the
   closure of the sector under squaring is not a closure under composition and must not be read as one.
 - **The reverse map is not read here.** The square of an element of either sector lands in $\mathbb{M}_+$;
-  the roots of a given element are classified by *Square Roots of a General Element in the 12 Structures of
+  the roots of a given element are classified by *Square Roots of a General Element in the Algebraic Structures of
   Biquaternions over $\mathbb{C}$* and are not read here.
 - **The cone is not a mass shell here.** The same cone that carries the mass shell on $\mathbb{M}_-$ is
   the purity boundary of the state space on $\mathbb{M}_+$, and the identification of a state with a
@@ -492,9 +492,9 @@ algebra restricted to $\mathbb{M}_+$, what is proposed is the naming.
 - Mathematics article *Idempotents of the General Plain Algebra*
   (`articles_maths/idempotents-of-the-general-plain-algebra.md`), for the classification of the
   idempotents and the projections.
-- Companion article *Zero Divisors in the 12 Structures of Biquaternions over $\mathbb{C}$*, for the cone
+- Companion article *Zero Divisors in the Algebraic Structures of Biquaternions over $\mathbb{C}$*, for the cone
   as the zero-divisor set of the composition band.
-- Companion article *Annihilators in the 12 Structures of Biquaternions over $\mathbb{C}$*, for the
+- Companion article *Annihilators in the Algebraic Structures of Biquaternions over $\mathbb{C}$*, for the
   annihilator planes of a lightlike element and the line they share.
 - Companion article *Composition and Probability: the General Plain Algebra and the General Plain
   Sesqualgebra of Biquaternions Compared*, for the twelve structures read side by side.

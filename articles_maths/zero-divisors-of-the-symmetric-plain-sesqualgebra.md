@@ -7,7 +7,7 @@ on the biquaternion space (*Introduction to the Symmetric Plain Sesqualgebra of 
 This article studies its **zero divisors**: the nonzero elements that annihilate a nonzero element.
 
 A zero divisor names a product, and the definition is relative. The definitions are stated once for
-a general product in *Definitions for the Study of the 12 Algebraic Structures*; here they are read
+a general product in *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; here they are read
 on the block. The block is a **rank-one pairing**: the value of the product is the coefficient of
 the form $H$ on the two arguments, and the form is non-degenerate. Two consequences follow and they
 are the whole article. The **criterion** is a single equation, $\tilde P\star\tilde R = 0$ exactly
@@ -27,9 +27,8 @@ common zero-divisor set of the four general products.
 *Introduction to the Symmetric Plain Sesqualgebra of Biquaternions*; the form $H$ and its
 non-degeneracy are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* and *The Hermitian Form as
 a Product on the Symmetric Plain Sesqualgebra*. The relative definition of the zero divisor and the
-vocabulary of the left, the right and the two-sided are *Definitions for the Study of the 12
-Algebraic Structures*; the common set of the four general products and the theorem that the four
-agree are *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, and the same set read on the plain product with its two
+vocabulary of the left, the right and the two-sided are *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the common set of the four general products and the theorem that the four
+agree are *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, and the same set read on the plain product with its two
 families is *Zero Divisors of the General Plain Algebra*, *Idempotents of the General Plain
 Algebra* and *Nilpotents of the General Plain Algebra*. Nothing topological and nothing metric
 appears.
@@ -161,7 +160,7 @@ Algebra*.
 The four general products of the space, $\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$,
 $\tilde P\tilde Q^{*}$ and $\tilde P^{\natural}\tilde Q^{*}$, select one common zero-divisor set,
 the nonzero elements of the isotropic cone $\{C(\tilde P) = \sum_\mu P_\mu^{2} = 0\}$, and the
-coincidence is a theorem of the space (*Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*). The block is a part of
+coincidence is a theorem of the space (*Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*). The block is a part of
 one of them, the general plain sesquilinear product, and its set is strictly larger.
 
 **Theorem (the block's set contains the common set, strictly).** Every zero divisor of the four
@@ -233,8 +232,8 @@ meets the set in its punctured self, so no subspace is preferred.
 ## Further Reading
 
 - *Introduction to the Symmetric Plain Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-plain-sesqualgebra-of-biquaternions.md`), for the product, its class and its table.
-- *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), for the relative definition of the zero divisor and the left, right and two-sided vocabulary.
-- *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the common set of the four general products and the theorem that the four agree.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the relative definition of the zero divisor and the left, right and two-sided vocabulary.
+- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the common set of the four general products and the theorem that the four agree.
 - *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the two families of the parent and their criteria.
 - *Norm and Invertibility in the Symmetric Plain Sesqualgebra* (`articles_maths/norm-and-invertibility-in-the-symmetric-plain-sesqualgebra.md`), for the definiteness and the absence of an invertible element.
 - *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the remarkable subspaces the set meets.

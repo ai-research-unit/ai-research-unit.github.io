@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Antisymmetric Quaternionic Algebra is one of the twelve algebraic structures that the biquaternion space of $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ carries, the structure $\mathrm{AQA}$ of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. Its product, the antisymmetric quaternionic bilinear product, is
+The Antisymmetric Quaternionic Algebra is one of the twelve algebraic structures that the biquaternion space of $\mathbb{B}=\mathbb{C}\otimes_\mathbb{R}\mathbb{H}$ carries, the structure $\mathrm{AQA}$ of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. Its product, the antisymmetric quaternionic bilinear product, is
 $$
 \tilde P\diamond\tilde Q=\tfrac12\bigl(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P\bigr)=P_0\vec Q-Q_0\vec P-\vec P\times\vec Q,
 $$
@@ -127,7 +127,7 @@ The Antisymmetric Quaternionic Algebra read over $\mathbb{R}$ is the same produc
 ## Further Reading
 
 - *The Realification and the Effect of the Change of Scalars* (`articles_maths/the-realification-and-the-effect-of-the-change-of-scalars.md`), for the general construction, the two rules of the realification of a form and the table of the four effects.
-- *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the twelve structures and the families of the table of the twelve, of which the block of this article is the entry $\mathrm{AQA}$.
+- *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-algebraic-structures-over-the-biquaternion-c-space.md`), for the twelve structures and the families of the table of the twelve, of which the block of this article is the entry $\mathrm{AQA}$.
 - *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra* (`articles_maths/the-invariant-bilinear-forms-of-the-antisymmetric-quaternionic-algebra.md`), for the form $\varphi$, the vanishing of the coefficient form and the operator trace form $K$, whose realifications this article reads.
 - *Remarkable Subspaces under the Antisymmetric Quaternionic Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-antisymmetric-quaternionic-algebra-of-biquaternions.md`), for the closure of the centre, the vector subspace and the quaternion subspace, the failure of closure of the other three, and the subspace that is the image of the whole operation.
 - *The Adjoint Operators of the Antisymmetric Quaternionic Algebra* (`articles_maths/the-adjoint-operators-of-the-antisymmetric-quaternionic-algebra.md`), for the matrix, the trace $3X_0$, the rank and the kernel of the left multiplication, cited here in the real basis.

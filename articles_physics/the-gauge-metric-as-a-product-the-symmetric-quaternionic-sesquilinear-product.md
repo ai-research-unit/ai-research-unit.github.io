@@ -20,7 +20,7 @@ $$
 =\bigl[P_0\overline{Q_0}-(\vec P,\overline{\vec Q})\bigr]-P_0\overline{\vec Q}-\overline{Q_0}\vec P,
 $$
 
-the operation named $\mathrm{SQS}$ in *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and developed as a multiplication in *Introduction to the Symmetric Quaternionic Sesqualgebra of
+the operation named $\mathrm{SQS}$ in *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* and developed as a multiplication in *Introduction to the Symmetric Quaternionic Sesqualgebra of
 Biquaternions*. Its scalar part is the Krein form $K$ and its vector part is the mixed term alone. Its
 companion, the **antisymmetric quaternionic sesquilinear product**
 

@@ -146,7 +146,7 @@ splitting, when it exists, is carried by an idempotent, a family, or not at all.
 
 The criterion of the block is the projector classification of §*The Projector Classification*: the only projectors are the zero operator and the projection onto the vector subspace, the latter at the unit $e_0$, and the splitting of §*The Splitting Realised by One Element* is carried by the multiplication of that one element.
 
-**Theorem (the isolation).** Of the twelve structures of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, the block is the only one in which the left multiplication by the algebra unit is the projection onto the vector subspace, and the only one admitting an element $\tilde E$ with $\tilde E\star\tilde X=\vec X$ for every $\tilde X$; the element is $\tilde E=e_0$, uniquely.
+**Theorem (the isolation).** Of the twelve structures of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, the block is the only one in which the left multiplication by the algebra unit is the projection onto the vector subspace, and the only one admitting an element $\tilde E$ with $\tilde E\star\tilde X=\vec X$ for every $\tilde X$; the element is $\tilde E=e_0$, uniquely.
 
 *Proof.* The block's entry is the governing identity. For the other eleven, group them by the action of the unit. In GPA, GQA and SPA the unit acts as the identity, whose image is the whole space and not the vector subspace; in SQA it acts as the projection onto the centre; in APA and AQS it acts as zero. In the six sesquilinear structures the left multiplication by $e_0$ is conjugate-linear or zero, and a conjugate-linear map is not the $\mathbb{C}$-linear projection onto the vector subspace; a conjugate-linear $L$ with $L^{2}=L$ is linear and conjugate-linear at once, hence zero, so in the six the only projector is the zero operator. For the element $\tilde E$, the equation at $\tilde X=e_0$ reads $\tilde E\star e_0=0$; in GPA, SPA and GPS this forces $\tilde E=0$, in GQA, GQS and SQS it forces $\tilde E^{\natural}=0$, and in SQA and SPS it forces $E_0e_0=0$, none compatible with the value $\vec X$ at a pure $\tilde X$; in APA and AQS the value at $e_0$ vanishes identically and the pure values are the cross products $\vec E\times\vec X$ and $\vec E\times\overline{\vec X}$, which lie in the orthogonal plane of $\vec E$; and in APS the value at $e_0$, which is $\vec E$, forces $\tilde E=E_0e_0$, after which the values at $e_1$ and at $ie_1$ force the contradictory $E_0=-1$ and $E_0=1$. Inside the block the element is unique: at $\tilde X=e_0$ the equation gives $-\vec E=0$, so $\vec E=0$, and at a pure $\tilde X$ it gives $E_0\tilde X=\tilde X$, so $E_0=1$.
 
@@ -225,7 +225,7 @@ no Peirce calculus.
 | $L_{\tilde X}^{2}=L_{\tilde X}$ | the projector equation; its solutions are $0$ and $e_0$ |
 | $\mathrm{Vect}(\mathbb{B})$ | the vector subspace, the image of $L_{e_0}$ and of the block, a left ideal |
 | $\mathbb{C}_{\mathbb{B}}=\mathbb{C}e_0$ | the centre, the kernel of $L_{e_0}$ |
-| GPA … AQS | the twelve structures, coded as in *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* |
+| GPA … AQS | the twelve structures, coded as in *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* |
 
 ## Further Reading
 

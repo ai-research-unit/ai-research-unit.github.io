@@ -147,7 +147,7 @@ $$
 \mathrm{cyc}\,\diamond\,(e_0,e_1,e_2)=e_3\neq0 ,
 $$
 
-so $\diamond$ is not a Lie bracket. The value is the one tabulated for $\mathrm{APS}$ in *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Twelve Structures, One by One*, recomputed here as the article declares its cyclic sum.
+so $\diamond$ is not a Lie bracket. The value is the one tabulated for $\mathrm{APS}$ in *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Twelve Structures, One by One*, recomputed here as the article declares its cyclic sum.
 
 **Remark (the reason).** For $\mathrm{AQA}$ the failure comes from the non-associativity of the quaternionic bilinear product that is antisymmetrised; here the antisymmetrised product is the plain sesquilinear one, whose two involutions — the coefficientwise conjugation of the base and the star of the second slot — are both non-trivial, so that product is **not** associative and the obstruction of *Lie Algebras of Sesqualgebras* applies. There the antisymmetrisation $x\star y-y\star x$ of a sesquilinear product is $R^{\varsigma}$-bilinear and antisymmetric, and it is a Lie bracket exactly when the product $\star$ is associative; for a unital faithful sesqualgebra that associativity would force both involutions to collapse, $\varsigma=\mathrm{id}$ and $*=\mathrm{id}$, which a genuine sesqualgebra over $(\mathbb{C},\bar{\cdot})$ forbids. The plain sesquilinear product is such a genuine sesqualgebra, so its antisymmetrisation fails. The failure is developed, with the obstruction and the comparison with the two siblings $\mathrm{AQA}$ and $\mathrm{AQS}$, in *The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra*.
 

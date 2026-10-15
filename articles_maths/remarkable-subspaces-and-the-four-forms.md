@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The four **forms** of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, the **general plain bilinear form** $B$, the **general quaternionic bilinear form** $N$, the **general plain sesquilinear form** $H$ and the **general quaternionic sesquilinear form** $K$, are read here against the remarkable subspaces of *Introduction to the Remarkable Subspaces* — the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ — one subspace to a section, with the summary tables here.
+The four **forms** of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, the **general plain bilinear form** $B$, the **general plain sesquilinear form** $H$, the **general quaternionic bilinear form** $N$ and the **general quaternionic sesquilinear form** $K$, are read here against the remarkable subspaces of *Introduction to the Remarkable Subspaces* — the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, the anti-quaternion subspace $i\mathbb{H}_{\mathbb{B}}$, the Hermitian subspace $\mathbb{M}_+$ and the anti-Hermitian subspace $\mathbb{M}_-$ — one subspace to a section, with the summary tables here.
 
 The rule is one line and needs no proof beyond the definition. The **restriction** of a form $\varphi$ to a subspace $U$ is the form read on the elements of $U$,
 
@@ -21,20 +21,20 @@ The first of the two tables below is the summary of the first point and the seco
 
 The value of each form on a general pair of elements of each subspace is this.
 
-| subspace | $B(\tilde P,\tilde Q)$ | $N(\tilde P,\tilde Q)$ | $H(\tilde P,\tilde Q)$ | $K(\tilde P,\tilde Q)$ |
+| subspace | $B(\tilde P,\tilde Q)$ | $H(\tilde P,\tilde Q)$ | $N(\tilde P,\tilde Q)$ | $K(\tilde P,\tilde Q)$ |
 |---|---|---|---|---|
-| $\mathbb{C}_{\mathbb{B}}$ | $AC$ | $AC$ | $A\overline{C}$ | $A\overline{C}$ |
-| $\mathrm{Vect}(\mathbb{B})$ | $-\sum_kP_kQ_k$ | $\sum_kP_kQ_k$ | $\sum_kP_k\overline{Q_k}$ | $-\sum_kP_k\overline{Q_k}$ |
+| $\mathbb{C}_{\mathbb{B}}$ | $AC$ | $A\overline{C}$ | $AC$ | $A\overline{C}$ |
+| $\mathrm{Vect}(\mathbb{B})$ | $-\sum_kP_kQ_k$ | $\sum_kP_k\overline{Q_k}$ | $\sum_kP_kQ_k$ | $-\sum_kP_k\overline{Q_k}$ |
 | $\mathbb{H}_{\mathbb{B}}$ | $h_0k_0-\sum_jh_jk_j$ | $\sum_\mu h_\mu k_\mu$ | $\sum_\mu h_\mu k_\mu$ | $h_0k_0-\sum_jh_jk_j$ |
-| $i\mathbb{H}_{\mathbb{B}}$ | $-h_0k_0+\sum_jh_jk_j$ | $-\sum_\mu h_\mu k_\mu$ | $\sum_\mu h_\mu k_\mu$ | $h_0k_0-\sum_jh_jk_j$ |
-| $\mathbb{M}_+$ | $a_0c_0+(\vec p,\vec q)$ | $a_0c_0-(\vec p,\vec q)$ | $a_0c_0+(\vec p,\vec q)$ | $a_0c_0-(\vec p,\vec q)$ |
-| $\mathbb{M}_-$ | $-b_0d_0-(\vec q,\vec r)$ | $-b_0d_0+(\vec q,\vec r)$ | $b_0d_0+(\vec q,\vec r)$ | $b_0d_0-(\vec q,\vec r)$ |
+| $i\mathbb{H}_{\mathbb{B}}$ | $-h_0k_0+\sum_jh_jk_j$ | $\sum_\mu h_\mu k_\mu$ | $-\sum_\mu h_\mu k_\mu$ | $h_0k_0-\sum_jh_jk_j$ |
+| $\mathbb{M}_+$ | $a_0c_0+(\vec p,\vec q)$ | $a_0c_0+(\vec p,\vec q)$ | $a_0c_0-(\vec p,\vec q)$ | $a_0c_0-(\vec p,\vec q)$ |
+| $\mathbb{M}_-$ | $-b_0d_0-(\vec q,\vec r)$ | $b_0d_0+(\vec q,\vec r)$ | $-b_0d_0+(\vec q,\vec r)$ | $b_0d_0-(\vec q,\vec r)$ |
 
 Each row is written in the coordinates of its own subspace: $\tilde P=Ae_0$ and $\tilde Q=Ce_0$ on the centre, $\tilde P=\sum_kP_ke_k$ and $\tilde Q=\sum_kQ_ke_k$ on the vector subspace, $\tilde P=h$ and $\tilde Q=k$ on the quaternion subspace, $\tilde P=ih$ and $\tilde Q=ik$ on the anti-quaternion subspace, $\tilde P=c_0e_0+i\vec q$ and $\tilde Q=a_0e_0+i\vec p$ on the Hermitian subspace, and $\tilde P=id_0e_0+\vec r$ and $\tilde Q=ib_0e_0+\vec q$ on the anti-Hermitian subspace. In the four real-type rows the symbols $h_\mu,k_\mu$ are the real coefficients of the two elements on the real basis of the subspace, as in *Remarkable Subspaces and the Four Algebraic Norms*.
 
 The field of the values separates the remarkable subspaces: on the centre and on the vector subspace all four forms are **complex-valued**, since the two elements carry general complex coefficients, and on the other four all four forms are **real-valued**, since there each coefficient is real or purely imaginary. The imaginary part therefore lives on the centre and on the vector subspace and nowhere else.
 
-The imaginary part of each form on each subspace is this, written $B=g_B+i\sigma_B$, $N=g_N+i\sigma_N$, $H=g_H+i\omega_H$ and $K=g_K+i\omega_K$.
+The imaginary part of each form on each subspace is this, written $B=g_B+i\sigma_B$, $H=g_H+i\omega_H$, $N=g_N+i\sigma_N$ and $K=g_K+i\omega_K$.
 
 | subspace | $\sigma_B$, $\sigma_N$ | rank | $\omega_H$, $\omega_K$ | rank |
 |---|---|---|---|---|
@@ -57,7 +57,7 @@ $$
 (0,4),(3,1),(4,0),(1,3)\ \text{on}\ \mathbb{M}_-,
 $$
 
-for $B$, $N$, $H$, $K$ in that order. It is recalled here and not re-proved: the argument belongs to that article, and the agreement of the two is the check that the real part of a form carries the signature the corpus reads at the two equal arguments.
+for $B$, $H$, $N$, $K$ in that order. It is recalled here and not re-proved: the argument belongs to that article, and the agreement of the two is the check that the real part of a form carries the signature the corpus reads at the two equal arguments.
 
 ## Notational Conventions
 
@@ -68,15 +68,15 @@ The four forms are those of *The 4 Forms over the Biquaternion $\mathbb{C}$ Spac
 $$
 B(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle=\mathrm{Sc}(\tilde P\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu Q_\mu,
 \qquad
-N(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=\sum_\mu P_\mu Q_\mu,
-$$
-$$
 H(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle_{*}=\mathrm{Sc}(\tilde P\tilde Q^{*})=\sum_\mu P_\mu\overline{Q_\mu},
+$$
+$$
+N(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle_{\natural}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=\sum_\mu P_\mu Q_\mu,
 \qquad
 K(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle_{\natural*}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu},
 $$
 
-and their names, the **general plain bilinear**, the **general quaternionic bilinear**, the **general plain sesquilinear**, also called the **Hermitian**, and the **general quaternionic sesquilinear**, also called the **Krein**, are those of that article. The value at the two equal arguments is written with the same letter and one argument, $B(\tilde Q)=B(\tilde Q,\tilde Q)$ and likewise for the other three.
+and their names, the **general plain bilinear**, the **general plain sesquilinear**, also called the **Hermitian**, the **general quaternionic bilinear**, and the **general quaternionic sesquilinear**, also called the **Krein**, are those of that article. The value at the two equal arguments is written with the same letter and one argument, $B(\tilde Q)=B(\tilde Q,\tilde Q)$ and likewise for the other three.
 
 For a complex-valued form $\varphi$ on a real subspace $U$ the **real part** and the **imaginary part** are the real forms $g=\operatorname{Re}\varphi$ and $\sigma=\operatorname{Im}\varphi$, so that $\varphi=g+i\sigma$; the letter $\omega$ is used for the imaginary part when it is alternating, that is for $H$ and $K$. The **signature** of $g$ over $\mathbb{R}$ is written $(p,q)$, $p$ positive and $q$ negative squares. The **null set** of a form on $U$ is $\{\tilde Q\in U:\varphi(\tilde Q,\tilde Q)=0\}$. A form is **non-degenerate** on $U$ when $\varphi(\tilde P,\tilde Q)=0$ for all $\tilde Q\in U$ forces $\tilde P=0$.
 
@@ -153,9 +153,9 @@ An element of the vector subspace is $\tilde Q=\sum_kQ_ke_k$ with $Q_k\in\mathbb
 $$
 B(\tilde P,\tilde Q)=-\sum_kP_kQ_k,
 \qquad
-N(\tilde P,\tilde Q)=\sum_kP_kQ_k,
-\qquad
 H(\tilde P,\tilde Q)=\sum_kP_k\overline{Q_k},
+\qquad
+N(\tilde P,\tilde Q)=\sum_kP_kQ_k,
 \qquad
 K(\tilde P,\tilde Q)=-\sum_kP_k\overline{Q_k}.
 $$
@@ -194,9 +194,9 @@ $$
 
 **On the quaternion subspace the four forms collapse to two, $B=K$ and $N=H$**, and they are the two classical real forms of the quaternion algebra: the Minkowski form $h_0k_0-(\vec h,\vec k)$ of signature $(1,3)$, and the Euclidean form $(\vec h,\vec k)_{\mathbb{R}^4}$ of signature $(4,0)$.
 
-All four are real-valued, so the imaginary part vanishes identically and the splitting of each form into real and imaginary parts is the form itself. The Gram matrices are the two diagonal matrices $\operatorname{diag}(1,-1,-1,-1)$ for $B$ and $K$ and $\mathrm I_4$ for $N$ and $H$, both of full rank, so all four restrictions are non-degenerate.
+All four are real-valued, so the imaginary part vanishes identically and the splitting of each form into real and imaginary parts is the form itself. The Gram matrices are the two diagonal matrices $\operatorname{diag}(1,-1,-1,-1)$ for $B$ and $K$ and $\mathrm I_4$ for $H$ and $N$, both of full rank, so all four restrictions are non-degenerate.
 
-**The null sets on the quaternion subspace are one light cone and two origins.** The forms $B$ and $K$ vanish on the real light cone $h_0^{2}=\lvert\vec h\rvert^{2}$, of real dimension three; the forms $N$ and $H$ vanish at the origin alone. This is the subspace on which the Minkowski form — and not the corpus's interval $N$, which is Euclidean here — is the algebraic norm of $K=B$, and the light cone here is its null cone.
+**The null sets on the quaternion subspace are one light cone and two origins.** The forms $B$ and $K$ vanish on the real light cone $h_0^{2}=\lvert\vec h\rvert^{2}$, of real dimension three; the forms $H$ and $N$ vanish at the origin alone. This is the subspace on which the Minkowski form — and not the corpus's interval $N$, which is Euclidean here — is the algebraic norm of $K=B$, and the light cone here is its null cone.
 
 ## The Anti-Quaternion Subspace
 
@@ -205,17 +205,17 @@ An element of the anti-quaternion subspace is $\tilde Q=ik$ with $k$ of the quat
 $$
 B(\tilde P,\tilde Q)=-h_0k_0+\sum_{j=1}^{3}h_jk_j,
 \qquad
-N(\tilde P,\tilde Q)=-\sum_{\mu=0}^{3}h_\mu k_\mu,
-$$
-$$
 H(\tilde P,\tilde Q)=\sum_{\mu=0}^{3}h_\mu k_\mu,
+$$
+$$
+N(\tilde P,\tilde Q)=-\sum_{\mu=0}^{3}h_\mu k_\mu,
 \qquad
 K(\tilde P,\tilde Q)=h_0k_0-\sum_{j=1}^{3}h_jk_j .
 $$
 
-**On the anti-quaternion subspace the four forms collapse to two with signs, $B=-K$ and $N=-H$**: each is the negative of the corresponding form on the quaternion subspace, $B$ of $K$ and $N$ of $H$, and the two sign changes are those of the translation by $i$ that takes one subspace to the other. The signatures are $(3,1)$ for $B$, $(0,4)$ for $N$, $(4,0)$ for $H$ and $(1,3)$ for $K$, and the Gram matrices are $\operatorname{diag}(-1,1,1,1)$, $-\mathrm I_4$, $\mathrm I_4$ and $\operatorname{diag}(1,-1,-1,-1)$, all of full rank.
+**On the anti-quaternion subspace the four forms collapse to two with signs, $B=-K$ and $N=-H$**: each is the negative of the corresponding form on the quaternion subspace, $B$ of $K$ and $N$ of $H$, and the two sign changes are those of the translation by $i$ that takes one subspace to the other. The signatures are $(3,1)$ for $B$, $(4,0)$ for $H$, $(0,4)$ for $N$ and $(1,3)$ for $K$, and the Gram matrices are $\operatorname{diag}(-1,1,1,1)$, $\mathrm I_4$, $-\mathrm I_4$ and $\operatorname{diag}(1,-1,-1,-1)$, all of full rank.
 
-All four are real-valued, so the imaginary part vanishes identically. The null sets are the real light cones of $B$ and of $K$, of real dimension three, and the origins of $N$ and of $H$: the same pattern as the quaternion subspace, with the roles of the two signs exchanged.
+All four are real-valued, so the imaginary part vanishes identically. The null sets are the real light cones of $B$ and of $K$, of real dimension three, and the origins of $H$ and of $N$: the same pattern as the quaternion subspace, with the roles of the two signs exchanged.
 
 ## The Hermitian Subspace
 
@@ -229,7 +229,7 @@ $$
 
 **On the Hermitian subspace the four forms collapse to two, $B=H$ and $N=K$**, the Euclidean form of signature $(4,0)$ and the Minkowski form of signature $(1,3)$. The collapse pairs a bilinear form with a sesquilinear one here, which does not happen on the other five, and the reason is that on the Hermitian subspace the star of the second slot acts as the identity, since the coefficients are already real in the scalar slot and purely imaginary in the vector slots.
 
-All four are real-valued, so the imaginary part vanishes identically, and the Gram matrices are $\mathrm I_4$ for $B$ and $H$ and $\operatorname{diag}(1,-1,-1,-1)$ for $N$ and $K$, both of full rank. The null sets are the light cone of the Minkowski pair $N$ and $K$, of real dimension three, and the origin of the Euclidean pair $B$ and $H$.
+All four are real-valued, so the imaginary part vanishes identically, and the Gram matrices are $\mathrm I_4$ for $B$ and $H$ and $\operatorname{diag}(1,-1,-1,-1)$ for $N$ and $K$, both of full rank. The null sets are the origin of the Euclidean pair $B$ and $H$ and the light cone of the Minkowski pair $N$ and $K$, of real dimension three.
 
 ## The Anti-Hermitian Subspace
 
@@ -238,19 +238,19 @@ An element of the anti-Hermitian subspace is $\tilde Q=ib_0e_0+\vec q$ with $b_0
 $$
 B(\tilde P,\tilde Q)=-b_0d_0-(\vec q,\vec r),
 \qquad
-N(\tilde P,\tilde Q)=-b_0d_0+(\vec q,\vec r),
-$$
-$$
 H(\tilde P,\tilde Q)=b_0d_0+(\vec q,\vec r),
+$$
+$$
+N(\tilde P,\tilde Q)=-b_0d_0+(\vec q,\vec r),
 \qquad
 K(\tilde P,\tilde Q)=b_0d_0-(\vec q,\vec r).
 $$
 
-**On the anti-Hermitian subspace the four forms are four distinct functions, with the two sign relations $B=-H$ and $N=-K$.** The signatures are $(0,4)$ for $B$, $(3,1)$ for $N$, $(4,0)$ for $H$ and $(1,3)$ for $K$, and the Gram matrices are $-\mathrm I_4$, $\operatorname{diag}(-1,1,1,1)$, $\mathrm I_4$ and $\operatorname{diag}(1,-1,-1,-1)$, all of full rank.
+**On the anti-Hermitian subspace the four forms are four distinct functions, with the two sign relations $B=-H$ and $N=-K$.** The signatures are $(0,4)$ for $B$, $(4,0)$ for $H$, $(3,1)$ for $N$ and $(1,3)$ for $K$, and the Gram matrices are $-\mathrm I_4$, $\mathrm I_4$, $\operatorname{diag}(-1,1,1,1)$ and $\operatorname{diag}(1,-1,-1,-1)$, all of full rank.
 
-All four are real-valued, so the imaginary part vanishes identically. The null sets are the light cones of $N$ and of $K$, of real dimension three, and the origins of $B$ and of $H$.
+All four are real-valued, so the imaginary part vanishes identically. The null sets are the origins of $B$ and of $H$ and the light cones of $N$ and of $K$, of real dimension three.
 
-**This is the material sector.** The four forms here are the two sesquilinear ones with their signs, $K=b_0^{2}-(\vec q,\vec q)$ of signature $(1,3)$ and $H=b_0^{2}+(\vec q,\vec q)$ the **Euclidean square** of signature $(4,0)$, against the two bilinear ones $B=-H$ and $N=-K$, and the two pairs of the corpus's material reading — the **interval** $N$ of signature $(3,1)$ against the Euclidean square, and the light cone of $N$ against the definite $H$ — are exactly the third and fourth columns of the table above.
+**This is the material sector.** The four forms here are the two sesquilinear ones with their signs, $H=b_0^{2}+(\vec q,\vec q)$ the **Euclidean square** of signature $(4,0)$ and $K=b_0^{2}-(\vec q,\vec q)$ of signature $(1,3)$, against the two bilinear ones $B=-H$ and $N=-K$, and the two pairs of the corpus's material reading — the **interval** $N$ of signature $(3,1)$ against the Euclidean square, and the light cone of $N$ against the definite $H$ — are exactly the columns of $H$ and of $K$ of the table above.
 
 ## The Real and Imaginary Parts
 
@@ -282,14 +282,14 @@ The identity says that the alternating part is not a second independent object o
 
 ## The Null Sets
 
-| subspace | $B$ | $N$ | $H$ | $K$ |
+| subspace | $B$ | $H$ | $N$ | $K$ |
 |---|---|---|---|---|
 | $\mathbb{C}_{\mathbb{B}}$ | $\{0\}$ | $\{0\}$ | $\{0\}$ | $\{0\}$ |
-| $\mathrm{Vect}(\mathbb{B})$ | the complex cone, real dimension $4$ | the complex cone, real dimension $4$ | $\{0\}$ | $\{0\}$ |
+| $\mathrm{Vect}(\mathbb{B})$ | the complex cone, real dimension $4$ | $\{0\}$ | the complex cone, real dimension $4$ | $\{0\}$ |
 | $\mathbb{H}_{\mathbb{B}}$ | the light cone, real dimension $3$ | $\{0\}$ | $\{0\}$ | the light cone, real dimension $3$ |
 | $i\mathbb{H}_{\mathbb{B}}$ | the light cone, real dimension $3$ | $\{0\}$ | $\{0\}$ | the light cone, real dimension $3$ |
-| $\mathbb{M}_+$ | $\{0\}$ | the light cone, real dimension $3$ | $\{0\}$ | the light cone, real dimension $3$ |
-| $\mathbb{M}_-$ | $\{0\}$ | the light cone, real dimension $3$ | $\{0\}$ | the light cone, real dimension $3$ |
+| $\mathbb{M}_+$ | $\{0\}$ | $\{0\}$ | the light cone, real dimension $3$ | the light cone, real dimension $3$ |
+| $\mathbb{M}_-$ | $\{0\}$ | $\{0\}$ | the light cone, real dimension $3$ | the light cone, real dimension $3$ |
 
 The rule behind the table is one line: **a form has a null cone on a subspace exactly when its real part is indefinite there**, and the signatures of the introduction and of the six sections say which are. The count of indefinite forms is none on the centre, two on the vector subspace, the bilinear pair $B$ and $N$ of signature $(3,3)$, and two on each of the four real-type subspaces, $B$ and $K$ on the quaternion subspace and on its imaginary translate, $N$ and $K$ on the two sectors. Two columns of the table are constant and are the two theorems of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* read on the remarkable subspaces: **$H$ is definite on all of them**, so its null set is the origin in each, and **$H$ is the only definite one**, so each of the other three has a cone on some subspace. A collapse with no sign keeps the cone, a collapse with a sign swaps it for the origin, and the collapse $H=K$ on the centre against $K=-H$ on the vector subspace is exactly the exchange of a definite form for an indefinite one.
 
@@ -339,5 +339,5 @@ The null sets are four origins on the centre; on the vector subspace two cones a
 - *Remarkable Subspaces and the Four General Products* (`articles_maths/remarkable-subspaces-and-the-four-general-products.md`), for the four general products — the operations whose scalar parts the four forms are — read on the same remarkable subspaces, with their symmetrisations and their brackets.
 - *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the remarkable subspaces, their defining conditions, their real bases and the dimensions used throughout.
 - *Conventions in the Biquaternion Universe* (`articles_physics/conventions-in-the-biquaternion-universe.md`), for the convention of the four pairings, the one bracket, the four names and the four pairs, and the readings of the four on the algebra and on the material sector.
-- *The Four General Products and Their Physical Readings* (`articles_physics/the-four-general-products-and-their-physical-readings.md`), for the four readings of the four forms — composition, causality, probability and gauge — and their signature table on the remarkable subspaces.
+- *The Four General Products and Their Physical Readings* (`articles_physics/the-four-general-products-and-their-physical-readings.md`), for the four readings of the four forms — composition, probability, causality and gauge — and their signature table on the remarkable subspaces.
 - *The Norm Defined by a Form* (`articles_maths/the-norm-defined-by-a-form.md`) and *Hermitian Forms over Algebras and Norms* (`articles_maths/hermitian-forms-over-algebras-and-norms.md`), for the passage from a form to its algebraic norm and from the algebraic norm to the topological norm, and for the real part, the imaginary part and the alternating companion of a Hermitian form.

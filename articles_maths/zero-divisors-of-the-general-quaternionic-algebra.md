@@ -7,7 +7,7 @@ the general quaternionic bilinear product, and it complements the algebraic norm
 describing the set on which the algebraic norm vanishes.
 
 A divisor is relative to a product, and the definition is stated once in *Definitions for the Study
-of the 12 Algebraic Structures*, §*The Zero Divisor and the Annihilator*; the unqualified "zero
+of the Algebraic Structures*, §*The Zero Divisor and the Annihilator*; the unqualified "zero
 divisor" means the zero divisor of the general quaternionic product throughout, and every other
 product is named. The article establishes four things. First, the **criterion**: a nonzero
 $\tilde Q$ is a zero divisor of $\star$ exactly when its algebraic norm vanishes, so the zero
@@ -27,7 +27,7 @@ the one product of the block whose annihilators are not exchanged by the conjuga
 product and the structure of the cone are *Zero Divisors of the General Plain Algebra*; the plain
 nilpotents are *Nilpotents of the General Plain Algebra*, and the plain idempotents *Idempotents of
 the General Plain Algebra*. The fact that the four general products select one and the same
-zero-divisor set, with its proof, and the one-sided inverse equations, are **Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space**; the article quotes that coincidence and does not reprove it. The algebraic norm and the
+zero-divisor set, with its proof, and the one-sided inverse equations, are **Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space**; the article quotes that coincidence and does not reprove it. The algebraic norm and the
 one-sided equations of this product are *Norm and Invertibility in the General Quaternionic
 Algebra*; the nilpotents of the product are *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra*; and
 the form on the remarkable subspaces is *Remarkable Subspaces under the General Quaternionic
@@ -57,7 +57,7 @@ element $\tilde Q$ is a **left zero divisor of $\star$** when $\tilde Q\neq0$ an
 nonzero $\tilde R$ with $\tilde Q\star\tilde R=0$; a **right zero divisor of $\star$** when
 $\tilde Q\neq0$ and there is a nonzero $\tilde R$ with $\tilde R\star\tilde Q=0$; and a **zero
 divisor of $\star$** when it is one or the other. It is a **two-sided zero divisor of $\star$**
-when it is both. The definition is *Definitions for the Study of the 12 Algebraic Structures*,
+when it is both. The definition is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*,
 §*The Zero Divisor and the Annihilator*, and the origin is not a zero divisor, both factors being
 required to be nonzero.
 
@@ -277,7 +277,7 @@ $$
 \{\tilde Q\neq0:N(\tilde Q)=0\} ,
 $$
 
-and this is a theorem of *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Four General Products Coincide*,
+and this is a theorem of *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Four General Products Coincide*,
 which this article quotes and does not reprove. What the product changes is the **equation** and
 the **annihilator**: the four left zero-divisor equations are $\tilde Q\tilde R=0$,
 $\tilde Q^{\natural}\tilde R=0$, $\tilde Q\tilde R^{*}=0$ and $\tilde Q^{\natural}\tilde R^{*}=0$,
@@ -324,7 +324,7 @@ multiple $2Q_0\tilde Q$. The left and the right annihilator of a zero divisor ar
 plane containing the element, and both are $0$ for a unit; the two annihilators **coincide for
 every element**, because the natural conjugation is a $\mathbb{C}$-linear anti-automorphism of
 order two that turns the one equation into the other. The zero-divisor set is the same set as for
-the plain product, a coincidence of the algebra proved in *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; what
+the plain product, a coincidence of the algebra proved in *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; what
 this product changes is the equation, the cone-shaped square, and the annihilator, which is
 symmetric here where the sesquilinear products make it conjugate-symmetric.
 
@@ -346,13 +346,13 @@ symmetric here where the sesquilinear products make it conjugate-symmetric.
 ## Further Reading
 
 - Richard D. Schafer, *An Introduction to Nonassociative Algebras* (Academic Press, 1966), for zero divisors and annihilators in a non-associative algebra.
-- *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), §*The Zero Divisor and the Annihilator*, for the product-relative definition of the zero divisor and of the annihilator.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), §*The Zero Divisor and the Annihilator*, for the product-relative definition of the zero divisor and of the annihilator.
 - Kevin McCrimmon, *A Taste of Jordan Algebras* (Springer, 2004), for isotopes and the way a change of product moves the zero divisors.
 - Sterling K. Berberian, *Baer \*-Rings* (Springer, 1972), for annihilators in a ring with an involution and the symmetry that an anti-automorphism imposes on them.
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the isotropic vectors of the complex quaternion algebra and the quadratic form $\sum_\mu Q_\mu^2$.
 - *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the two families, the criterion in the plain product and the structure of the cone.
 - *Norm and Invertibility in the General Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.md`), for the algebraic norm, its multiplicativity and the one-sided equations.
-- *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the coincidence of the four zero-divisor sets and the dependence of the annihilators on the product.
+- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the coincidence of the four zero-divisor sets and the dependence of the annihilators on the product.
 - *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-quaternionic-algebra.md`), for the square-zero elements of the product and the index of nilpotency.
 - *Square Roots of One and the Idempotents of the General Quaternionic Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-quaternionic-algebra.md`), for the displacement of the plain idempotents into the nilpotents of the product.
 - *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-algebra-of-biquaternions.md`), for the signatures of the algebraic norm on the six subspaces.

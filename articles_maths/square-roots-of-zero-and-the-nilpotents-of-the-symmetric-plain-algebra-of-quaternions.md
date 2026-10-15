@@ -8,7 +8,7 @@ $$
 \tilde p\bullet\tilde q=\tfrac12\bigl(\tilde p\tilde q+\tilde q\tilde p\bigr)
 $$
 
-of *Introduction to the Symmetric Plain Algebra of Quaternions*, the symmetrisation of the general plain bilinear product of *Introduction to the General Plain Algebra of Quaternions*, and the operation named $\mathrm{SPA}$ in *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*. The square of the block is the **plain square**, $\tilde p\bullet\tilde p=\tilde p^2$: the symmetrisation moves only the antisymmetric part of the product, and that part vanishes on the diagonal (*The Symmetric and Antisymmetric Parts of an Algebra Product*).
+of *Introduction to the Symmetric Plain Algebra of Quaternions*, the symmetrisation of the general plain bilinear product of *Introduction to the General Plain Algebra of Quaternions*, and the operation named $\mathrm{SPA}$ in *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*. The square of the block is the **plain square**, $\tilde p\bullet\tilde p=\tilde p^2$: the symmetrisation moves only the antisymmetric part of the product, and that part vanishes on the diagonal (*The Symmetric and Antisymmetric Parts of an Algebra Product*).
 
 The article treats two subjects, and in this order. The first is the square roots of the central value $0$, the elements $\tilde\xi\in\mathbb{H}$ with $\tilde\xi\bullet\tilde\xi=0$. The second is the nilpotents of the block, the nonzero elements whose square vanishes. The two subjects are one subject: the roots of $0$ are the origin together with the square-zero elements, and the nonzero square-zero elements are exactly the nilpotents. **Over $\mathbb{R}$ both classes collapse** — the roots of $0$ are the origin alone and there is no nilpotent at all — and the collapse is the definiteness of the Euclidean form of the vector subspace. The roots of $+e_0$ and the idempotents are the companion article *Square Roots of One and the Idempotents of the Symmetric Plain Algebra*; the roots of the general quadratic $\tilde\xi\bullet\tilde\xi=\tilde q$ are *Square Roots of a General Element in the Symmetric Plain Algebra*.
 
@@ -20,7 +20,7 @@ The article is algebraic. The zero-divisor set, its family and the criterion on 
 
 **Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$, so that $e_k^2=-e_0$ and $e_je_k=-e_ke_j$ for $j\neq k$. An element is $\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; $\vec p\cdot\vec q=\sum_kp_kq_k$ is the Euclidean dot product of the vector parts, and the plain square is $\tilde q^2=(q_0^2-|\vec q|^2)e_0+2q_0\vec q$. The **norm** is $N(\tilde q)=\tilde q\tilde q^{\natural}=q_0^2+|\vec q|^2$; the natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign. The scalar line $\mathbb{R}e_0$ is the centre and the vector subspace is $\mathrm{Vect}(\mathbb{H})=\operatorname{Im}\mathbb{H}$ (*Introduction to the Remarkable Subspaces of the Quaternions*). The left multiplication is $L^{\bullet}_{\tilde p}\tilde q=\tilde p\bullet\tilde q$. A root of a central value is written $\tilde\xi$ (§*The Root Convention* of *Conventions in Mathematics*), a nilpotent $\tilde\nu$ (§*The Nilpotent Convention*), and a generic element $\tilde p$ or $\tilde q$.
 
-The equations name a product, so the roots and the nilpotents are relative to it. The general definition of the power, the square and the root of a central value, and the general definition of the nilpotent, with the index of nilpotency and the square-zero element, are *Definitions for the Study of the 6 Algebraic Structures*, §*The Element Vocabulary*. Throughout this article the square is the one of the symmetric plain product, which is the plain square; the other five structures over the same space carry roots of $0$ and square-zero sets of their own.
+The equations name a product, so the roots and the nilpotents are relative to it. The general definition of the power, the square and the root of a central value, and the general definition of the nilpotent, with the index of nilpotency and the square-zero element, are *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, §*The Element Vocabulary*. Throughout this article the square is the one of the symmetric plain product, which is the plain square; the other five structures over the same space carry roots of $0$ and square-zero sets of their own.
 
 ## The Roots of Zero
 
@@ -100,7 +100,7 @@ The **nilpotents** of the block are the nonzero elements whose square vanishes. 
 
 **Definition (nilpotent of a product).** Let $\star$ be a product on $\mathbb{H}$; a **nilpotent of $\star$** is a nonzero element $\tilde\nu$ with $\tilde\nu^{\star k}=0$ for some $k\geq1$, and the least such $k$ is the **index of nilpotency**. The case $k=2$ is a **square-zero** element. The element $0$ is a square-zero element and is not a nilpotent.
 
-The equation names a product, and the notion is relative to it; the general definition, with the index of nilpotency and the square-zero element, is *Definitions for the Study of the 6 Algebraic Structures*, §*The Element Vocabulary*. Throughout this article the product is the symmetric plain product, which has the plain square.
+The equation names a product, and the notion is relative to it; the general definition, with the index of nilpotency and the square-zero element, is *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, §*The Element Vocabulary*. Throughout this article the product is the symmetric plain product, which has the plain square.
 
 The natural sign preserves square-zero elements, conjugation being multiplicative and carrying a vanishing square to a vanishing square,
 
@@ -126,7 +126,7 @@ $$
 
 **Corollary.** The only square-zero element of the block is the origin; the block has no nilpotent, and its nilpotent class is the empty set.
 
-**The criterion for an empty class.** The class of nonzero nilpotents is not recognized as empty from a law of the product alone: a symmetric product carries no law that forbids a square-zero element, and *Definitions for the Study of the 6 Algebraic Structures*, §*The Criterion for an Empty Class*, sends the class of the two symmetric structures to the basis for that reason. Read on the basis, the class is empty: the equation $|\vec P|^2=0$ has the origin as its only real solution. The emptiness is thus the definiteness of the Euclidean form, not the emptiness of the zero-divisor set.
+**The criterion for an empty class.** The class of nonzero nilpotents is not recognized as empty from a law of the product alone: a symmetric product carries no law that forbids a square-zero element, and *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, §*The Criterion for an Empty Class*, sends the class of the two symmetric structures to the basis for that reason. Read on the basis, the class is empty: the equation $|\vec P|^2=0$ has the origin as its only real solution. The emptiness is thus the definiteness of the Euclidean form, not the emptiness of the zero-divisor set.
 
 ### The Empty Nilpotent Cone
 
@@ -191,7 +191,7 @@ The nilpotent class of the block is empty: there is no nilpotent cone, the set o
 
 ## Further Reading
 
-- *Definitions for the Study of the 6 Algebraic Structures*, §*The Element Vocabulary* and §*The Criterion for an Empty Class*, for the product-relative definition of a nilpotent and the rule by which the class is recognized as empty.
+- *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, §*The Element Vocabulary* and §*The Criterion for an Empty Class*, for the product-relative definition of a nilpotent and the rule by which the class is recognized as empty.
 - *Introduction to the Symmetric Plain Algebra of Quaternions*, for the product, the unit and the square.
 - *Introduction to the General Plain Algebra of Quaternions*, for the division property of the plain product that empties the square-zero class.
 - *Square Roots of One and the Idempotents of the Symmetric Plain Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-symmetric-plain-algebra-of-quaternions.md`), for the roots of $+e_0$ and the idempotents, the companion central element class.

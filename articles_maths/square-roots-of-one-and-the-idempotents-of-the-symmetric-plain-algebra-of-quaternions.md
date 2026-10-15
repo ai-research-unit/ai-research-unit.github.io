@@ -8,7 +8,7 @@ $$
 \tilde p\bullet\tilde q=\tfrac12\bigl(\tilde p\tilde q+\tilde q\tilde p\bigr)
 $$
 
-of *Introduction to the Symmetric Plain Algebra of Quaternions*, the symmetrisation of the general plain bilinear product of *Introduction to the General Plain Algebra of Quaternions*, and the operation named $\mathrm{SPA}$ in *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*. The square of the block is the **plain square**, $\tilde p\bullet\tilde p=\tilde p^2$: the symmetrisation moves only the antisymmetric part of the product, and that part vanishes on the diagonal (*The Symmetric and Antisymmetric Parts of an Algebra Product*).
+of *Introduction to the Symmetric Plain Algebra of Quaternions*, the symmetrisation of the general plain bilinear product of *Introduction to the General Plain Algebra of Quaternions*, and the operation named $\mathrm{SPA}$ in *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*. The square of the block is the **plain square**, $\tilde p\bullet\tilde p=\tilde p^2$: the symmetrisation moves only the antisymmetric part of the product, and that part vanishes on the diagonal (*The Symmetric and Antisymmetric Parts of an Algebra Product*).
 
 The article treats two subjects, and in this order. The first is the square roots of the central value $+e_0$, the elements $\tilde\xi\in\mathbb{H}$ with $\tilde\xi\bullet\tilde\xi=e_0$. The second is the idempotents of the block, the elements $\tilde\pi$ with $\tilde\pi\bullet\tilde\pi=\tilde\pi$. The two subjects are one subject, because the **halving map**
 
@@ -26,7 +26,7 @@ The article is algebraic. It does not treat the roots of the general quadratic $
 
 **Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$, so that $e_k^2=-e_0$ and $e_je_k=-e_ke_j$ for $j\neq k$. An element is $\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; $\vec p\cdot\vec q=\sum_kp_kq_k$ is the Euclidean dot product of the vector parts, and the plain square is $\tilde q^2=(q_0^2-|\vec q|^2)e_0+2q_0\vec q$. The **norm** is $N(\tilde q)=\tilde q\tilde q^{\natural}=q_0^2+|\vec q|^2$; the natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign. The scalar line $\mathbb{R}e_0$ is the centre and the vector subspace is $\mathrm{Vect}(\mathbb{H})=\operatorname{Im}\mathbb{H}$ (*Introduction to the Remarkable Subspaces of the Quaternions*). The left multiplication is $L^{\bullet}_{\tilde p}\tilde q=\tilde p\bullet\tilde q$. A root of a central value is written $\tilde\xi$ (§*The Root Convention* of *Conventions in Mathematics*), an idempotent $\tilde\pi$ (§*The Idempotent Convention*), and a generic element $\tilde p$ or $\tilde q$.
 
-The equations name a product, so the roots and the idempotents are relative to it. The general definition of the power, the square and the root of a central value, and the general definition of an idempotent, are *Definitions for the Study of the 6 Algebraic Structures*, §*The Element Vocabulary*. Throughout this article the square is the one of the symmetric plain product, which is the plain square; the other five structures over the same space carry roots and idempotents of their own.
+The equations name a product, so the roots and the idempotents are relative to it. The general definition of the power, the square and the root of a central value, and the general definition of an idempotent, are *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, §*The Element Vocabulary*. Throughout this article the square is the one of the symmetric plain product, which is the plain square; the other five structures over the same space carry roots and idempotents of their own.
 
 ## The Roots of One
 
@@ -239,7 +239,7 @@ The idempotents of the block are the idempotents of the plain product, the two s
 
 ## Further Reading
 
-- *Definitions for the Study of the 6 Algebraic Structures*, §*The Element Vocabulary*, for the product-relative definition of an idempotent.
+- *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, §*The Element Vocabulary*, for the product-relative definition of an idempotent.
 - *Introduction to the Symmetric Plain Algebra of Quaternions*, for the product, the unit and the square.
 - *Introduction to the General Plain Algebra of Quaternions*, for the division property of the plain product that leaves only the two trivial idempotents.
 - *Square Roots of Zero and the Nilpotents of the Symmetric Plain Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-symmetric-plain-algebra-of-quaternions.md`), for the roots of $0$, the companion central value.

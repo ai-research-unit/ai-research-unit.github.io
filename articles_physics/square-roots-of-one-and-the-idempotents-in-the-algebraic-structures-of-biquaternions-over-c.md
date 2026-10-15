@@ -1,4 +1,4 @@
-# __Square Roots of One and the Idempotents in the 12 Structures of Biquaternions over $\mathbb{C}$__
+# __Square Roots of One and the Idempotents in the Algebraic Structures of Biquaternions over $\mathbb{C}$__
 
 ## Introduction
 
@@ -15,7 +15,7 @@ which for the general plain bilinear product is a bijection between the roots of
 idempotents, since $\tilde\Xi^{2}=e_0$ exactly when $\tilde\Pi^{2}=\tilde\Pi$; the square in the map
 is the plain square, and the other structures read their idempotent sets from their own squares. The map
 needs no central unit and no root of $-1$; it is proved on the
-mathematics side, in *Square Roots of One and the Idempotents in the 12 Algebraic Structures over the
+mathematics side, in *Square Roots of One and the Idempotents in the Algebraic Structures over the
 Biquaternion $\mathbb{C}$ Space*, and cited here. This article reads the roots of one and the idempotent
 states as one subject, and it is the physics companion of that mathematics article.
 
@@ -33,9 +33,9 @@ states of the gauge band, the displaced family of the fourth product.
 
 The three central values are read in the order the corpus uses. The roots of $+1$ are the subject here;
 the roots of $0$, the lightlike displacements, and the nilpotents are the subject of the companion
-*Square Roots of Zero and the Nilpotents in the 12 Structures of Biquaternions over $\mathbb{C}$*; the
+*Square Roots of Zero and the Nilpotents in the Algebraic Structures of Biquaternions over $\mathbb{C}$*; the
 general radicand, the four existence classes and the mass shell are the subject of *Square Roots of a
-General Element in the 12 Structures of Biquaternions over $\mathbb{C}$*. The roots of $-1$ are neither a
+General Element in the Algebraic Structures of Biquaternions over $\mathbb{C}$*. The roots of $-1$ are neither a
 section of this article nor of either companion: they are the short remark that closes the roots-of-one
 part, and the article says why.
 
@@ -195,18 +195,13 @@ $\pm e_0$ and the pure family with $(\vec\Xi,\vec\Xi)=-1$, of real dimension fou
 carries them onto the idempotents, so the composition has one state per involution. The reading is *Square
 Roots: the Local Complex Structure, the Light Cone and the Mass Shell*.
 
-### $\mathrm{SPA}$, the symmetric plain algebra — commutativity
+### $\mathrm{GPS}$, the general plain sesqualgebra — probability
 
-The product is the Jordan product and its square is the plain square, so the root set of $+1$ is that of
-$\mathrm{GPA}$ element for element. The pure roots lie in the vector subspace, the zero-divisor set of the
-block, and the pure roots are in bijection with the idempotents by the halving map. The reading is
-*Observables as a Jordan Algebra: the Symmetric Plain Product and the Classical Composition*.
-
-### $\mathrm{APA}$, the antisymmetric plain algebra — rotation
-
-The product is the commutator, an alternating product, so its square vanishes identically and the equation
-reads $0=e_0$. There is no root of $+1$. A bracket has no involution, only the trivial value. The reading
-is *The Cross Product as a Lie Bracket: Rotations and the Jacobi Identity*.
+The product is the pairing and its square is the Hermitian square, whose scalar part $H$ is non-negative.
+The roots of $+1$ are the unitary family $\{\tilde\Xi:\tilde\Xi\tilde\Xi^{*}=e_0\}$, the
+group $U(2)$ of real dimension four. Physically the band has reversibility and normalisation. The reading
+is *Mass, Rank and the Positivity of the Dagger* and *The Spinor Space as a Hilbert Space of the General
+Plain Sesqualgebra*.
 
 ### $\mathrm{GQA}$, the general quaternionic algebra — causality
 
@@ -215,25 +210,19 @@ the root problem of $+1$ is the level set $C=+1$, the quadric of real dimension 
 central pair $\pm e_0$ and the real vector roots $\tilde\xi$. The reading is *The Interval as the Square and
 the Charge of the Material Composition*.
 
-### $\mathrm{SQA}$, the symmetric quaternionic algebra — coupling
+### $\mathrm{GQS}$, the general quaternionic sesqualgebra — gauge
 
-The product is the scalar-valued symmetrisation and its square is the central square, so the root set of
-$+1$ is the same quadric $C=+1$ as for $\mathrm{GQA}$. The reading is *The Quaternion Form as a Product:
-the Scalar Coupling of Two Material Operations*.
+The product is the fourth product and its square has the Krein value as scalar part, real for every
+element. The roots of $+1$ are the slopes $\lvert t\rvert>1$ of the parametrisation $c(\tilde\xi+it)$ beside
+the central circle. Physically the value is the spacelike class of the indefinite metric. The reading is
+*The Fourth Product and Its Indefinite Metric*.
 
-### $\mathrm{AQA}$, the antisymmetric quaternionic algebra — obstruction
+### $\mathrm{SPA}$, the symmetric plain algebra — commutativity
 
-The product is the antisymmetrisation, alternating, so its square vanishes identically: there is no root
-of $+1$. The failure of the signed values is the algebraic face of the obstruction. The reading is *Boosts,
-Mixed Terms and the Missing Lie Structure*.
-
-### $\mathrm{GPS}$, the general plain sesqualgebra — probability
-
-The product is the pairing and its square is the Hermitian square, whose scalar part $H$ is non-negative.
-The roots of $+1$ are the unitary family $\{\tilde\Xi:\tilde\Xi\tilde\Xi^{*}=e_0\}$, the
-group $U(2)$ of real dimension four. Physically the band has reversibility and normalisation. The reading
-is *Mass, Rank and the Positivity of the Dagger* and *The Spinor Space as a Hilbert Space of the General
-Plain Sesqualgebra*.
+The product is the Jordan product and its square is the plain square, so the root set of $+1$ is that of
+$\mathrm{GPA}$ element for element. The pure roots lie in the vector subspace, the zero-divisor set of the
+block, and the pure roots are in bijection with the idempotents by the halving map. The reading is
+*Observables as a Jordan Algebra: the Symmetric Plain Product and the Classical Composition*.
 
 ### $\mathrm{SPS}$, the symmetric plain sesqualgebra — positivity
 
@@ -243,24 +232,35 @@ $\sum_\mu\lvert\Xi_\mu\rvert^{2}=1$ of real dimension seven, and the witness $\t
 member need not be a unit. The symmetrisation replaces unitarity by normalisation. The reading is *Why
 Probability Values Are Central: the Symmetric Sesquilinear Product and Its Cone*.
 
-### $\mathrm{APS}$, the antisymmetric plain sesqualgebra — phase
+### $\mathrm{SQA}$, the symmetric quaternionic algebra — coupling
 
-The product is the antisymmetrisation and its values are pure vectors, so the square never takes a central
-value: there is no root of $+1$. The obstruction is a parity of the value and not the vanishing of the
-square. The reading is *The Imaginary Part of the Born Pairing: the Antisymmetric Sesquilinear Product*.
-
-### $\mathrm{GQS}$, the general quaternionic sesqualgebra — gauge
-
-The product is the fourth product and its square has the Krein value as scalar part, real for every
-element. The roots of $+1$ are the slopes $\lvert t\rvert>1$ of the parametrisation $c(\tilde\xi+it)$ beside
-the central circle. Physically the value is the spacelike class of the indefinite metric. The reading is
-*The Fourth Product and Its Indefinite Metric*.
+The product is the scalar-valued symmetrisation and its square is the central square, so the root set of
+$+1$ is the same quadric $C=+1$ as for $\mathrm{GQA}$. The reading is *The Quaternion Form as a Product:
+the Scalar Coupling of Two Material Operations*.
 
 ### $\mathrm{SQS}$, the symmetric quaternionic sesqualgebra — metric
 
 The product is the symmetrisation and its square is the Hermitian part of the unsplit square. The roots of
 $+1$ are the family $\mathcal R_{+1}$ with $\lvert\alpha\rvert\geq1$, and a member need not be a unit. The
 reading is *The Gauge Metric as a Product: the Symmetric Quaternionic Sesquilinear Product*.
+
+### $\mathrm{APA}$, the antisymmetric plain algebra — rotation
+
+The product is the commutator, an alternating product, so its square vanishes identically and the equation
+reads $0=e_0$. There is no root of $+1$. A bracket has no involution, only the trivial value. The reading
+is *The Cross Product as a Lie Bracket: Rotations and the Jacobi Identity*.
+
+### $\mathrm{APS}$, the antisymmetric plain sesqualgebra — phase
+
+The product is the antisymmetrisation and its values are pure vectors, so the square never takes a central
+value: there is no root of $+1$. The obstruction is a parity of the value and not the vanishing of the
+square. The reading is *The Imaginary Part of the Born Pairing: the Antisymmetric Sesquilinear Product*.
+
+### $\mathrm{AQA}$, the antisymmetric quaternionic algebra — obstruction
+
+The product is the antisymmetrisation, alternating, so its square vanishes identically: there is no root
+of $+1$. The failure of the signed values is the algebraic face of the obstruction. The reading is *Boosts,
+Mixed Terms and the Missing Lie Structure*.
 
 ### $\mathrm{AQS}$, the antisymmetric quaternionic sesqualgebra — polarisation
 
@@ -277,22 +277,22 @@ plain pair's family being the one the halving map produces.
 | structure | square | roots of $+1$ | idempotent family | physical interpretation |
 |---|---|---|---|---|
 | GPA | $\tilde\Xi^{2}$ | $\pm e_0$ and the pure family $(\vec\Xi,\vec\Xi)=-1$, dim 4 | $\tfrac12(e_0+\tilde\Xi)$, the states | involution, discrete symmetry |
-| SPA | $\tilde\Xi^{2}$ | the set of GPA | the set of GPA | the same, but the pure roots are zero divisors of the block |
-| APA | $0$ | none | none | a bracket has no involution |
-| GQA | $C(\tilde\Xi)e_0$ | quadric $C=+1$, dim 6 | trivial pair only | the spacelike shell of the interval |
-| SQA | $C(\tilde\Xi)e_0$ | quadric $C=+1$ | trivial pair only | the same |
-| AQA | $0$ | none | none | a bracket has no involution |
 | GPS | $\tilde\Xi\tilde\Xi^{*}$ | the unitary group $U(2)$, dim 4 | the Hermitian states $\tfrac12(e_0+i\tilde\xi)$ | the symmetries of the pairing |
-| SPS | $H(\tilde\Xi)e_0$ | the sphere $H=1$, dim 7 | trivial pair only | normalisation replaces unitarity |
-| APS | the pure part | none | none | the bracket has a parity, not a value |
+| GQA | $C(\tilde\Xi)e_0$ | quadric $C=+1$, dim 6 | trivial pair only | the spacelike shell of the interval |
 | GQS | the Krein value | slopes $\lvert t\rvert>1$ and the central circle | the invertible states $-\tfrac12e_0+\mu$ | the spacelike class of the indefinite metric |
+| SPA | $\tilde\Xi^{2}$ | the set of GPA | the set of GPA | the same, but the pure roots are zero divisors of the block |
+| SPS | $H(\tilde\Xi)e_0$ | the sphere $H=1$, dim 7 | trivial pair only | normalisation replaces unitarity |
+| SQA | $C(\tilde\Xi)e_0$ | quadric $C=+1$ | trivial pair only | the same |
 | SQS | the Hermitian part | $\mathcal R_{+1}$ with $\lvert\alpha\rvert\geq1$ | the same family as the general partner | a root of one need not be a unit |
+| APA | $0$ | none | none | a bracket has no involution |
+| APS | the pure part | none | none | the bracket has a parity, not a value |
+| AQA | $0$ | none | none | a bracket has no involution |
 | AQS | the pure part | none | none | the bracket has a parity, not a value |
 
 Three groups appear.
 
-- **The four structures that carry the roots of one with rigid roots.** $\mathrm{GPA}$, $\mathrm{SPA}$,
-  $\mathrm{GQA}$ and $\mathrm{SQA}$ have roots of $+1$, and every root other than the central one is a unit
+- **The four structures that carry the roots of one with rigid roots.** $\mathrm{GPA}$, $\mathrm{GQA}$,
+  $\mathrm{SPA}$ and $\mathrm{SQA}$ have roots of $+1$, and every root other than the central one is a unit
   of the algebra; the halving map carries the plain pair's roots onto its idempotents, while the natural
   pair keeps the trivial pair alone. Physically they produce involutions and states, and the natural pair
   reads its root as the spacelike shell of the interval.
@@ -304,7 +304,7 @@ Three groups appear.
   general products.
 
 **The roots of $-1$: a closing remark.** They are not a section of this article, and they can often be deduced from the roots of $+1$: for
-the four bilateral structures $\mathrm{GPA}$, $\mathrm{SPA}$, $\mathrm{GQA}$ and $\mathrm{SQA}$,
+the four bilateral structures $\mathrm{GPA}$, $\mathrm{GQA}$, $\mathrm{SPA}$ and $\mathrm{SQA}$,
 multiplication by the central imaginary maps a root of $+1$ onto a root of $-1$ and back, the image
 $\tilde\Xi i$ satisfying $(\tilde\Xi i)^{2}=-e_0$ exactly when $\tilde\Xi^{2}=e_0$, because $i$ is
 central and $i^{2}=-1$; the mechanism is the one the mathematics companion verifies for the plain and
@@ -373,7 +373,7 @@ physical interpretation is that the symmetric composition prepares the same stat
 symmetrisation changes the process, not the states. The pure members of the family are zero divisors of the
 symmetrised block, because the vector subspace is its zero-divisor set, so a state that the symmetrisation
 prepares is a state the symmetrisation cannot invert: the owner is *The Cone and the Massless Particles in
-the 12 Structures of Biquaternions over $\mathbb{C}$*.
+the Algebraic Structures of Biquaternions over $\mathbb{C}$*.
 
 ## The Hermitian Family: the Pure States and the Bloch Ball
 
@@ -464,36 +464,6 @@ and are zero divisors, which is the algebraic form of the statement that a measu
 reading is *The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent* and
 *Square Roots of One and the Idempotents: the Hermitian Observables and the States*.
 
-### $\mathrm{SPA}$, the symmetric plain algebra — commutativity
-
-The product is the Jordan product and its square is the plain square, so the idempotent set is that of
-$\mathrm{GPA}$ element for element. The symmetrised composition prepares the same states, and the reading
-is *Observables as a Jordan Algebra: the Symmetric Plain Product and the Classical Composition*.
-
-### $\mathrm{APA}$, the antisymmetric plain algebra — rotation
-
-The product is the commutator, alternating, so its square vanishes identically and the idempotent equation
-forces the origin. An infinitesimal transformation has no state. The reading is *The Cross Product as a
-Lie Bracket: Rotations and the Jacobi Identity*.
-
-### $\mathrm{GQA}$, the general quaternionic algebra — causality
-
-The product is the natural product and its square is the central element $C(\tilde\Pi)e_0$, so an
-idempotent is central and the equation on the centre leaves only $0$ and $e_0$. The band of the interval
-carries no nontrivial state. The reading is *The Interval as the Square and the Charge of the Material
-Composition*.
-
-### $\mathrm{SQA}$, the symmetric quaternionic algebra — coupling
-
-The product is the scalar-valued symmetrisation, whose square is $C(\tilde\Pi)e_0$, so the idempotent set
-is the trivial pair, as for $\mathrm{GQA}$. A central coupling returns a number that cannot be a state.
-The reading is *The Quaternion Form as a Product: the Scalar Coupling of Two Material Operations*.
-
-### $\mathrm{AQA}$, the antisymmetric quaternionic algebra — obstruction
-
-The product is the antisymmetrisation, alternating, so its square vanishes identically and the idempotent
-set is the origin alone. The reading is *Boosts, Mixed Terms and the Missing Lie Structure*.
-
 ### $\mathrm{GPS}$, the general plain sesqualgebra — probability
 
 The product is the pairing and its square is the Hermitian square. The idempotents are $0$, $e_0$ and the
@@ -503,18 +473,12 @@ cone and the extremal points of the Bloch ball, and they are zero divisors becau
 inverse. The reading is *Why Probability Values Are Central: the Symmetric Sesquilinear Product and Its
 Cone* and *The Bloch Ball as the Trace-One Slice of the Future Light Cone*.
 
-### $\mathrm{SPS}$, the symmetric plain sesqualgebra — positivity
+### $\mathrm{GQA}$, the general quaternionic algebra — causality
 
-The product is the scalar-valued symmetrisation, so an idempotent is central and the equation on the
-centre, $q=\lvert q\rvert^{2}$, leaves the trivial pair. The symmetrised pairing keeps only the trivial
-states. The reading is *The Hermitian Form as a Product: Positivity and the Real Part of the Born
-Pairing*.
-
-### $\mathrm{APS}$, the antisymmetric plain sesqualgebra — phase
-
-The product is the antisymmetrisation and its square is a purely imaginary pure vector, so an idempotent
-has vanishing scalar part and the cross-product term forces the origin. The idempotent set is the origin
-alone. The reading is *The Imaginary Part of the Born Pairing: the Antisymmetric Sesquilinear Product*.
+The product is the natural product and its square is the central element $C(\tilde\Pi)e_0$, so an
+idempotent is central and the equation on the centre leaves only $0$ and $e_0$. The band of the interval
+carries no nontrivial state. The reading is *The Interval as the Square and the Charge of the Material
+Composition*.
 
 ### $\mathrm{GQS}$, the general quaternionic sesqualgebra — gauge
 
@@ -524,6 +488,25 @@ These are the invertible states of the gauge band, the only nontrivial idempoten
 units, which is the contrast with the null pure state of the composition. The reading is *The Fourth
 Product and Its Indefinite Metric* and *The States the Indefinite Metric Cannot Normalise*.
 
+### $\mathrm{SPA}$, the symmetric plain algebra — commutativity
+
+The product is the Jordan product and its square is the plain square, so the idempotent set is that of
+$\mathrm{GPA}$ element for element. The symmetrised composition prepares the same states, and the reading
+is *Observables as a Jordan Algebra: the Symmetric Plain Product and the Classical Composition*.
+
+### $\mathrm{SPS}$, the symmetric plain sesqualgebra — positivity
+
+The product is the scalar-valued symmetrisation, so an idempotent is central and the equation on the
+centre, $q=\lvert q\rvert^{2}$, leaves the trivial pair. The symmetrised pairing keeps only the trivial
+states. The reading is *The Hermitian Form as a Product: Positivity and the Real Part of the Born
+Pairing*.
+
+### $\mathrm{SQA}$, the symmetric quaternionic algebra — coupling
+
+The product is the scalar-valued symmetrisation, whose square is $C(\tilde\Pi)e_0$, so the idempotent set
+is the trivial pair, as for $\mathrm{GQA}$. A central coupling returns a number that cannot be a state.
+The reading is *The Quaternion Form as a Product: the Scalar Coupling of Two Material Operations*.
+
 ### $\mathrm{SQS}$, the symmetric quaternionic sesqualgebra — metric
 
 The product is the symmetric part of the fourth product, and its square is the coefficientwise real part
@@ -532,6 +515,23 @@ $\tilde\Pi$ real and reduces to $(\tilde\Pi^{\natural})^{2}=\tilde\Pi$, whose se
 $-\tfrac12e_0+\mu$, the same as for $\mathrm{GQS}$. The reading is *The Gauge Metric as a Product: the
 Symmetric Quaternionic Sesquilinear Product* and *Values in No Subspace: Why the Symmetric Gauge Product
 Is Not a State*.
+
+### $\mathrm{APA}$, the antisymmetric plain algebra — rotation
+
+The product is the commutator, alternating, so its square vanishes identically and the idempotent equation
+forces the origin. An infinitesimal transformation has no state. The reading is *The Cross Product as a
+Lie Bracket: Rotations and the Jacobi Identity*.
+
+### $\mathrm{APS}$, the antisymmetric plain sesqualgebra — phase
+
+The product is the antisymmetrisation and its square is a purely imaginary pure vector, so an idempotent
+has vanishing scalar part and the cross-product term forces the origin. The idempotent set is the origin
+alone. The reading is *The Imaginary Part of the Born Pairing: the Antisymmetric Sesquilinear Product*.
+
+### $\mathrm{AQA}$, the antisymmetric quaternionic algebra — obstruction
+
+The product is the antisymmetrisation, alternating, so its square vanishes identically and the idempotent
+set is the origin alone. The reading is *Boosts, Mixed Terms and the Missing Lie Structure*.
 
 ### $\mathrm{AQS}$, the antisymmetric quaternionic sesqualgebra — polarisation
 
@@ -547,16 +547,16 @@ idempotent and the physical interpretation.
 | structure | square | idempotents | central square of the nontrivial family | physical interpretation |
 |---|---|---|---|---|
 | GPA | $\tilde\Pi^{2}$ | $0$, $e_0$, $\tfrac12(e_0+\tilde\Xi)$ over the roots of $+1$ | $0$ (zero divisors) | every root of one gives a state; the state family of the composition |
-| SPA | $\tilde\Pi^{2}$ | the set of GPA | $0$ | the symmetric composition prepares the same states |
-| APA | $0$ | $0$ alone | — | an infinitesimal transformation has no state |
-| GQA | $C(\tilde\Pi)e_0$ | $0$, $e_0$ | — | the band of the interval has no nontrivial state |
-| SQA | $C(\tilde\Pi)e_0$ | $0$, $e_0$ | — | the same |
-| AQA | $0$ | $0$ alone | — | an infinitesimal transformation has no state |
 | GPS | $\tilde\Pi\tilde\Pi^{*}$ | $0$, $e_0$, $\tfrac12(e_0+i\tilde\xi)$ | $0$ (zero divisors) | the pure states, on the boundary of the positive cone and in the Bloch ball |
-| SPS | $\mathrm{Sc}(\tilde\Pi\tilde\Pi^{*})e_0$ | $0$, $e_0$ | — | the symmetrised pairing keeps only the trivial states |
-| APS | the pure part | $0$ alone | — | an infinitesimal transformation has no state |
+| GQA | $C(\tilde\Pi)e_0$ | $0$, $e_0$ | — | the band of the interval has no nontrivial state |
 | GQS | $\tilde\Pi^{\natural}\tilde\Pi^{*}$ | $0$, $e_0$, $-\tfrac12e_0+\mu$ | $e_0$ (units) | the invertible states of the gauge band |
+| SPA | $\tilde\Pi^{2}$ | the set of GPA | $0$ | the symmetric composition prepares the same states |
+| SPS | $\mathrm{Sc}(\tilde\Pi\tilde\Pi^{*})e_0$ | $0$, $e_0$ | — | the symmetrised pairing keeps only the trivial states |
+| SQA | $C(\tilde\Pi)e_0$ | $0$, $e_0$ | — | the same |
 | SQS | the real part | $0$, $e_0$, $-\tfrac12e_0+\mu$ | $e_0$ (units) | the same family as the general partner |
+| APA | $0$ | $0$ alone | — | an infinitesimal transformation has no state |
+| APS | the pure part | $0$ alone | — | an infinitesimal transformation has no state |
+| AQA | $0$ | $0$ alone | — | an infinitesimal transformation has no state |
 | AQS | the pure part | $0$ alone | — | an infinitesimal transformation has no state |
 
 Read by column, the table has three kinds of entry: the origin, present in all twelve rows; the unit,
@@ -564,8 +564,8 @@ present in the eight rows that are not antisymmetric; and the families, present 
 mathematics companion classifies. The four families are the plain one, four parameters and all, the
 Hermitian one, and the two rows that share the family $-\tfrac12e_0+\mu$. The physics of the table is the
 distribution of the states over the bands: the composition carries the largest family, the probability
-band carries the pure states, the gauge band carries the invertible states, the interval band and the
-brackets carry none.
+band carries the pure states, the interval band and the brackets carry none, and the gauge band carries
+the invertible states.
 
 ## The Complementation and the Complete Measurement
 
@@ -974,12 +974,12 @@ nonempty, with the witness $\tilde w$ on the cone for the symmetric gauge struct
 - The complementation $\tilde\Pi\mapsto e_0-\tilde\Pi$, with $\tilde\Pi(e_0-\tilde\Pi)=0$; the Peirce splitting $\mathbb{B}=\mathbb{B}\tilde\Pi\oplus\mathbb{B}(e_0-\tilde\Pi)$.
 - The remarkable subspaces: the centre $\mathbb{C}_{\mathbb{B}}$, the vector subspace $\mathrm{Vect}(\mathbb{B})$, the quaternion and anti-quaternion subspaces $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, and the Hermitian and anti-Hermitian ones $\mathbb{M}_+$, $\mathbb{M}_-$.
 - The witness $\tilde w=\tfrac{1}{\sqrt2}(e_1+ie_2)$ of the two symmetric sesquilinear structures.
-- The twelve structures: GPA, GQA, GPS, GQS general; SPA, SQA, SPS, SQS symmetric; APA, AQA, APS, AQS antisymmetric.
+- The twelve structures: GPA, GPS, GQA, GQS general; SPA, SPS, SQA, SQS symmetric; APA, APS, AQA, AQS antisymmetric.
 
 ## Further Reading
 
-- The mathematics companion: *Square Roots of One and the Idempotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/square-roots-of-one-and-the-idempotents-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the classification of the roots of $+1$ in the twelve structures, the unit theorem, the twelve idempotent sets, the central-square theorem, the halving map and the complementation.
-- The companion articles of the section: *Square Roots of Zero and the Nilpotents in the 12 Structures of Biquaternions over $\mathbb{C}$*, for the roots of $0$; *Square Roots of a General Element in the 12 Structures of Biquaternions over $\mathbb{C}$*, for the general radicand and the four existence classes; *Zero Divisors in the 12 Structures of Biquaternions over $\mathbb{C}$*; *Annihilators in the 12 Structures of Biquaternions over $\mathbb{C}$*.
+- The mathematics companion: *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/square-roots-of-one-and-the-idempotents-in-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the classification of the roots of $+1$ in the twelve structures, the unit theorem, the twelve idempotent sets, the central-square theorem, the halving map and the complementation.
+- The companion articles of the section: *Square Roots of Zero and the Nilpotents in the Algebraic Structures of Biquaternions over $\mathbb{C}$*, for the roots of $0$; *Square Roots of a General Element in the Algebraic Structures of Biquaternions over $\mathbb{C}$*, for the general radicand and the four existence classes; *Zero Divisors in the Algebraic Structures of Biquaternions over $\mathbb{C}$*; *Annihilators in the Algebraic Structures of Biquaternions over $\mathbb{C}$*.
 - The state reading of a process: *The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent*; *The Operators of the General Plain Bilinear Product: One-Sided, Two-Sided and the Sandwich*.
 - The plain family and the algebra's idempotents: *The Biquaternion Vacuum as a Minimal Idempotent*; *Ideals and Peirce Decomposition of the General Plain Algebra* (mathematics); *Square Roots of One and the Idempotents: the Hermitian Observables and the States*.
 - The pure states and the Bloch ball: *Why Probability Values Are Central: the Symmetric Sesquilinear Product and Its Cone*; *The Bloch Ball as the Trace-One Slice of the Future Light Cone*; *The Hermitian Subspace M₊ as the Informational Sector*; *The Anti-Hermitian Subspace M₋ as the Material Sector*.
@@ -990,4 +990,4 @@ nonempty, with the witness $\tilde w$ on the cone for the symmetric gauge struct
 - The entropy, the coarse-graining and the vacuum energy: *Von Neumann Entropy and the Biquaternion Norm*; *Coarse-Graining and the Biquaternion Entropy Functional*; *Relative Entropy and the Biquaternion Framework*; *Fisher Information and the Biquaternion Norm*; *The Vacuum State and the Casimir Effect in Biquaternionic Form*; *Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form*.
 - The contexts, the codes and the resources: *Contextuality and the Kochen–Specker Theorem in Biquaternionic Form*; *Quantum Error Correction and the Stabilizer Formalism in Biquaternionic Form*; *Mutually Unbiased Bases and the Biquaternion Algebra*; *Bosonization in Biquaternionic Form*; *Quantum Discord and Correlations Beyond Entanglement in Biquaternionic Form*; *Higher Spin from Tensor Products: Why the Biquaternion Algebra Admits Only Spin 0 and One-Half*; *Quantum Teleportation in Biquaternionic Form*.
 - The roots of $-1$ and their owners: *The Local Complex Structure and the Speed of Light*; *Each Sector Is the Other's Clock: the Sector Exchange as Relational Time*; *Thermal Time and the Modular Flow in the Biquaternion Framework*; *Kramers Degeneracy and Antiunitary Symmetry in Biquaternionic Form*; *The Spectral Triple of the Biquaternion Algebra*.
-- The grid and the definitions: *The 12 Products of the Biquaternion Complex Space*; *The Twelve Structures Compared: Product, Law and Form*; *Definitions for the Study of the 12 Algebraic Structures*; *Conventions in the Biquaternion Universe*.
+- The grid and the definitions: *The 12 Products of the Biquaternion Complex Space*; *The Twelve Structures Compared: Product, Law and Form*; *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; *Conventions in the Biquaternion Universe*.

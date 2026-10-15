@@ -1,10 +1,10 @@
-# __Annihilators in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space__
+# __Annihilators in the Algebraic Structures over the Quaternion $\mathbb{R}$ Space__
 
 ## Introduction
 
 An element annihilates a structure when multiplying by it kills the product on the whole space. The quaternion space carries six structures, so the question has six answers, and they are read here side by side. The article defines the left, the right and the two-sided annihilating set of a structure, proves them equal for each of the six, and compares the six sets. The answer is $\{0\}$ for five of the six and the scalar line for the cross product alone, and the comparison is the content. **The two one-sided annihilating sets coincide in all six structures**, because the norm $N$ of the quaternion real space is positive definite: the asymmetry of the biquaternion space, where the plain product and the general quaternionic sesquilinear product separate the two sides at an element of vanishing norm, has no counterpart over $\mathbb{R}$, the two structures that separate there being the two that need the complex coefficients to reach the cone at all.
 
-**Scope and owners.** The products are *The Two General Products of the Quaternion $\mathbb{R}$ Space* and *The 6 Products of the Quaternion Real Space*, the six structures are *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, and the forms are *The 2 Forms over the Quaternion $\mathbb{R}$ Space*, all above this article in this category.
+**Scope and owners.** The products are *The Two General Products of the Quaternion $\mathbb{R}$ Space* and *The 6 Products of the Quaternion Real Space*, the six structures are *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, and the forms are *The 2 Forms over the Quaternion $\mathbb{R}$ Space*, all above this article in this category.
 
 ## The Annihilating Set of a Product
 
@@ -31,7 +31,7 @@ because the map $\tilde y\mapsto\tilde x\star\tilde y$ is linear and vanishes ex
 
 ## The Six Structures and their Annihilators
 
-The two general products split into the six structures through the symmetrisation and the antisymmetrisation (*The 6 Products of the Quaternion Real Space*). Each structure is read below with its product, the criterion and the annihilating set; the six answers group in three pairs, the two general products, the two symmetric products and the two antisymmetric products, and a pair shares its proof. The six are in the order of *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*.
+The two general products split into the six structures through the symmetrisation and the antisymmetrisation (*The 6 Products of the Quaternion Real Space*). Each structure is read below with its product, the criterion and the annihilating set; the six answers group in three pairs, the two general products, the two symmetric products and the two antisymmetric products, and a pair shares its proof. The six are in the order of *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*.
 
 ### $\mathrm{GPA}$, the general plain algebra
 
@@ -40,6 +40,14 @@ The product is $\tilde p\tilde q$. It is associative, it carries the two-sided u
 **The annihilating set is $\{0\}$.** If the element kills every partner on the left, then $\tilde x=\tilde x\tilde x^{-1}=0$ after multiplying $\tilde x\tilde y=0$ at the partner $\tilde y=\tilde x^{-1}$, and the right set is empty except for the origin in the same way. The left multiplication is of rank four at every nonzero element and the set is as small as it can be.
 
 *Annihilators of the General Plain Algebra* owns the operator, its rank and its determinant.
+
+### $\mathrm{GQA}$, the general quaternionic algebra
+
+The product is $\tilde p^{\natural}\tilde q$. The first factor carries the natural conjugation, a bijection of $\mathbb{H}$ that fixes the centre, and the product is the plain product composed with that anti-involution.
+
+**The annihilating set is $\{0\}$.** At the partner $\tilde y=e_0$ the condition reads $\tilde x^{\natural}=0$, whence $\tilde x=0$; the right set is empty except for the origin in the same way.
+
+*Annihilators of the General Quaternionic Algebra* owns the operator and its rank.
 
 ### $\mathrm{SPA}$, the symmetric plain algebra
 
@@ -53,26 +61,6 @@ It is commutative, so the two one-sided sets are one set, and it carries the two
 
 *Annihilators of the Symmetric Plain Algebra* owns the operator and the shape of the annihilator of an element on the remarkable subspaces.
 
-### $\mathrm{APA}$, the antisymmetric plain algebra
-
-The product is the commutator
-$$
-\tilde p\wedge\tilde q=\tfrac12\bigl(\tilde p\tilde q-\tilde q\tilde p\bigr)=\vec p\times\vec q .
-$$
-It is alternating, so it vanishes at the two equal arguments, $\tilde p\wedge\tilde p=0$, and there is no form there and no norm.
-
-**The annihilating set is the scalar line $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$, the centre of the algebra.** The product depends only on the two vector parts, so a scalar element, having zero vector part, kills every partner and lies in the set. Conversely, an element with a nonzero vector part $\vec x$ fails: the vector $\vec x\times\vec y$ does not vanish for every partner $\vec y$. **The centre of the Lie algebra on the vector subspace is smaller, $\{0\}$**, because no axis line is parallel to every vector.
-
-*Annihilators of the Antisymmetric Plain Algebra* owns the operator and the centre of the bracket.
-
-### $\mathrm{GQA}$, the general quaternionic algebra
-
-The product is $\tilde p^{\natural}\tilde q$. The first factor carries the natural conjugation, a bijection of $\mathbb{H}$ that fixes the centre, and the product is the plain product composed with that anti-involution.
-
-**The annihilating set is $\{0\}$.** At the partner $\tilde y=e_0$ the condition reads $\tilde x^{\natural}=0$, whence $\tilde x=0$; the right set is empty except for the origin in the same way.
-
-*Annihilators of the General Quaternionic Algebra* owns the operator and its rank.
-
 ### $\mathrm{SQA}$, the symmetric quaternionic algebra
 
 The product is the symmetrisation of the preceding one,
@@ -84,6 +72,18 @@ It is central, commutative and symmetric, and its value is the form of *The 2 Fo
 **The annihilating set is $\{0\}$.** The criterion reads $N(\tilde x,e_\mu)=x_\mu$ for $\mu=0,1,2,3$, the four coordinates of the element one by one, so the four values vanish together only at the origin.
 
 *Annihilators of the Symmetric Quaternionic Algebra* owns the operator and the hyperplane it cuts.
+
+### $\mathrm{APA}$, the antisymmetric plain algebra
+
+The product is the commutator
+$$
+\tilde p\wedge\tilde q=\tfrac12\bigl(\tilde p\tilde q-\tilde q\tilde p\bigr)=\vec p\times\vec q .
+$$
+It is alternating, so it vanishes at the two equal arguments, $\tilde p\wedge\tilde p=0$, and there is no form there and no norm.
+
+**The annihilating set is the scalar line $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$, the centre of the algebra.** The product depends only on the two vector parts, so a scalar element, having zero vector part, kills every partner and lies in the set. Conversely, an element with a nonzero vector part $\vec x$ fails: the vector $\vec x\times\vec y$ does not vanish for every partner $\vec y$. **The centre of the Lie algebra on the vector subspace is smaller, $\{0\}$**, because no axis line is parallel to every vector.
+
+*Annihilators of the Antisymmetric Plain Algebra* owns the operator and the centre of the bracket.
 
 ### $\mathrm{AQA}$, the antisymmetric quaternionic algebra
 
@@ -101,15 +101,15 @@ a pure element at every pair. It is alternating, and its first factor carries th
 
 ### The Six Annihilating Sets
 
-**Read the cells.** The annihilating set of a structure is the set of elements that the product kills at every partner, and the table records the six sets with the reason each one is what it is. The vector part of $\tilde x$ is $\vec x$, the family is read in the order of the two general products, and §*The Annihilating Set of a Product* carries the criterion, the coordinates and the two algebraic norms. Every set can be checked by multiplying a candidate into the four units, and the span notation $\mathbb{R}\{u,v\}$ is the real span of $u$ and $v$.
+**Read the cells.** The annihilating set of a structure is the set of elements that the product kills at every partner, and the table records the six sets with the reason each one is what it is. The vector part of $\tilde x$ is $\vec x$, the half is read in the order general, symmetric and antisymmetric, and §*The Annihilating Set of a Product* carries the criterion, the coordinates and the two algebraic norms. Every set can be checked by multiplying a candidate into the four units, and the span notation $\mathbb{R}\{u,v\}$ is the real span of $u$ and $v$.
 
-| family | structure | the product | the annihilating set, and why |
+| half | structure | the product | the annihilating set, and why |
 |---|---|---|---|
-| the plain algebra | $\mathrm{GPA}$ | $\tilde p\tilde q$ | The set is $\{0\}$, because a nonzero element is invertible and the origin alone kills every partner. |
-| | $\mathrm{SPA}$ | $\tilde p\bullet\tilde q$ | The set is $\{0\}$, because the unit $e_0$ is a partner of the product and reads the element itself, $\tilde x\bullet e_0=\tilde x$, which vanishes only at the origin. |
-| | $\mathrm{APA}$ | $\tilde p\wedge\tilde q=\vec p\times\vec q$ | The set is the scalar line $\mathbb{R}_{\mathbb{H}}$, because a scalar has no vector part and the cross product reads the vector parts alone, while a nonzero vector part fails at a partner. |
-| the quaternionic algebra | $\mathrm{GQA}$ | $\tilde p^{\natural}\tilde q$ | The set is $\{0\}$, because the natural conjugation is a bijection and the partner $e_0$ reads $\tilde x^{\natural}$, which vanishes only at the origin. |
+| the general products | $\mathrm{GPA}$ | $\tilde p\tilde q$ | The set is $\{0\}$, because a nonzero element is invertible and the origin alone kills every partner. |
+| | $\mathrm{GQA}$ | $\tilde p^{\natural}\tilde q$ | The set is $\{0\}$, because the natural conjugation is a bijection and the partner $e_0$ reads $\tilde x^{\natural}$, which vanishes only at the origin. |
+| the symmetric products | $\mathrm{SPA}$ | $\tilde p\bullet\tilde q$ | The set is $\{0\}$, because the unit $e_0$ is a partner of the product and reads the element itself, $\tilde x\bullet e_0=\tilde x$, which vanishes only at the origin. |
 | | $\mathrm{SQA}$ | $N(\tilde p,\tilde q)e_0$ | The set is $\{0\}$, because the value at the four units reads the four coordinates of the element, and the four real equations force the origin. |
+| the antisymmetric products | $\mathrm{APA}$ | $\tilde p\wedge\tilde q=\vec p\times\vec q$ | The set is the scalar line $\mathbb{R}_{\mathbb{H}}$, because a scalar has no vector part and the cross product reads the vector parts alone, while a nonzero vector part fails at a partner. |
 | | $\mathrm{AQA}$ | $\tilde p\wedge^{\natural}\tilde q$ | The set is $\{0\}$, because the partner $e_0$ forces a real element and the partner $e_1$ then kills it. |
 
 **Theorem (the six annihilating sets).** Among the six structures the annihilating set is $\{0\}$ for all but one, and it is the scalar line $\mathbb{R}_{\mathbb{H}}$ for the cross product $\mathrm{APA}$ alone.
@@ -130,7 +130,7 @@ Five of the six structures are faithful in the sense that no nonzero element kil
 $$
 \ell(\star)\subseteq\{0\}\cup\{\text{zero divisors of }\star\} ,
 $$
-with equality exactly for the two general products, whose zero-divisor set is empty and whose annihilating set is the origin alone. The inclusion is strict for the four structures that have a zero divisor, and the gap is the subject of *Zero Divisors in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, below this article in this category. The two extremes are the general plain product, where both sets are as small as possible, and the cross products, where the zero-divisor set is the whole punctured space while the annihilating set is a line or a point.
+with equality exactly for the two general products, whose zero-divisor set is empty and whose annihilating set is the origin alone. The inclusion is strict for the four structures that have a zero divisor, and the gap is the subject of *Zero Divisors in the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, below this article in this category. The two extremes are the general plain product, where both sets are as small as possible, and the cross products, where the zero-divisor set is the whole punctured space while the annihilating set is a line or a point.
 
 **Consequence for the forms.** A product that vanishes for every second argument has zero scalar part, so the annihilating set of the product is contained in the radical of the associated form,
 $$
@@ -144,7 +144,7 @@ The annihilating set of a product is the set of elements that the product kills 
 
 Three facts summarize the six structures.
 
-- **The annihilating set is the origin alone in five of the six structures, and the scalar line in the sixth.** The general plain product is a division; the symmetric plain product carries the unit $e_0$; the general quaternionic product carries the natural conjugation, a bijection; the symmetric quaternionic product reads all four coordinates at the four units; and the antisymmetric quaternionic product is forced to a real element at $e_0$ and then killed at $e_1$. The antisymmetric plain product alone fails to be faithful, and its annihilating set is the scalar line $\mathbb{R}_{\mathbb{H}}$, the centre of the algebra, because the cross product forgets the scalar slot.
+- **The annihilating set is the origin alone in five of the six structures, and the scalar line in the sixth.** The general plain product is a division; the general quaternionic product carries the natural conjugation, a bijection; the symmetric plain product carries the unit $e_0$; the symmetric quaternionic product reads all four coordinates at the four units; and the antisymmetric quaternionic product is forced to a real element at $e_0$ and then killed at $e_1$. The antisymmetric plain product alone fails to be faithful, and its annihilating set is the scalar line $\mathbb{R}_{\mathbb{H}}$, the centre of the algebra, because the cross product forgets the scalar slot.
 - **The two one-sided annihilating sets coincide in all six structures**, so the annihilating set is a two-sided ideal of each of them, $\{0\}$ in five cases and the centre in the sixth. The biquaternion space separates the two sides in two of its twelve structures, and there only at an element of vanishing norm; over $\mathbb{R}$ the norm $N$ is positive definite and there is no such element.
 - **The radical of the product and the radical of the form agree for the four structures with a nonvanishing form, and they fail for the two cross products.** The plain form and the quaternion form are nondegenerate, of radical $\{0\}$, while the two cross products have the zero scalar form, of radical all of $\mathbb{H}$, and their annihilating sets are the scalar line and the origin.
 
@@ -154,28 +154,28 @@ Three facts summarize the six structures.
 |---|---|
 | $\ell(\star)$, $r(\star)$ | left and right annihilating sets of the product $\star$ |
 | $\ell\cap r$ | the two-sided annihilating set, the radical of the product |
-| $\{0\}$ | the value for GPA, SPA, GQA, SQA and AQA |
+| $\{0\}$ | the value for GPA, GQA, SPA, SQA and AQA |
 | $\mathbb{R}_{\mathbb{H}}$ | the annihilating set of the cross product, the centre of the algebra |
 | $e_\mu$ | the four units, the diagonal test of the criterion |
-| GPA, SPA, APA, GQA, SQA, AQA | the six structures of *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* |
+| GPA, GQA, SPA, SQA, APA, AQA | the six structures of *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space* |
 
 ## Further Reading
 
-- *Zero Divisors in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/zero-divisors-in-the-6-algebraic-structures-over-the-quaternion-r-space.md`), above this article in this category, for the companion question of the zero divisors and the six zero-divisor sets.
-- *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), for the annihilator and the zero divisor stated once for a general product.
-- *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-6-algebraic-structures-over-the-quaternion-r-space.md`), for the six structures and their names.
+- *Zero Divisors in the Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-quaternion-r-space.md`), above this article in this category, for the companion question of the zero divisors and the six zero-divisor sets.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the annihilator and the zero divisor stated once for a general product.
+- *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-algebraic-structures-over-the-quaternion-r-space.md`), for the six structures and their names.
 - *The 6 Products of the Quaternion Real Space* (`articles_maths/the-6-products-of-the-quaternion-real-space.md`), for the six products and their laws.
 - *The Two General Products of the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-two-general-products-of-the-quaternion-r-space.md`), for the two general products and the class-preserving exchange.
 - *The 2 Forms over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-2-forms-over-the-quaternion-r-space.md`), above this article in this category, for the radicals of the two forms.
 - *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-2-algebraic-norms-over-the-quaternion-r-space.md`), for the two algebraic norms, the multiplicativity and the invertibility criteria.
-- *Annihilators in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/annihilators-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the companion reading of the twelve structures of the biquaternion space, where an element of the cone carries two planes.
+- *Annihilators in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/annihilators-in-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the companion reading of the twelve structures of the biquaternion space, where an element of the cone carries two planes.
 
 The six owners of the subsections, in the order of the table, are:
 
 - *Annihilators of the General Plain Algebra* (`articles_maths/annihilators-of-the-general-plain-algebra-of-quaternions.md`), for $\mathrm{GPA}$.
-- *Annihilators of the Symmetric Plain Algebra* (`articles_maths/annihilators-of-the-symmetric-plain-algebra-of-quaternions.md`), for $\mathrm{SPA}$.
-- *Annihilators of the Antisymmetric Plain Algebra* (`articles_maths/annihilators-of-the-antisymmetric-plain-algebra-of-quaternions.md`), for $\mathrm{APA}$.
 - *Annihilators of the General Quaternionic Algebra* (`articles_maths/annihilators-of-the-general-quaternionic-algebra-of-quaternions.md`), for $\mathrm{GQA}$.
+- *Annihilators of the Symmetric Plain Algebra* (`articles_maths/annihilators-of-the-symmetric-plain-algebra-of-quaternions.md`), for $\mathrm{SPA}$.
 - *Annihilators of the Symmetric Quaternionic Algebra* (`articles_maths/annihilators-of-the-symmetric-quaternionic-algebra-of-quaternions.md`), for $\mathrm{SQA}$.
+- *Annihilators of the Antisymmetric Plain Algebra* (`articles_maths/annihilators-of-the-antisymmetric-plain-algebra-of-quaternions.md`), for $\mathrm{APA}$.
 - *Annihilators of the Antisymmetric Quaternionic Algebra* (`articles_maths/annihilators-of-the-antisymmetric-quaternionic-algebra-of-quaternions.md`), for $\mathrm{AQA}$.
 

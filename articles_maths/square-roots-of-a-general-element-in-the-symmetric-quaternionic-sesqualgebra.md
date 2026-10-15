@@ -12,7 +12,7 @@ treat the two central values, and completes the element theory of the block open
 by *Zero Divisors of the Symmetric Quaternionic Sesqualgebra*.
 
 The root is relative to a product, and the product is part of the definition: it is stated once for a
-general product in *Definitions for the Study of the 12 Algebraic Structures*, §*Powers, the Square and the
+general product in *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the
 Roots*. The unqualified word means the block. The block's square is not a self-map of the whole space: its
 value on any element is a **real** quaternion, so the equation is solvable only for the values of the real
 quaternion subspace, and there every value is attained. The article states the image of the square map, the
@@ -50,7 +50,7 @@ $$
 
 The set of the square roots of $\tilde R$ is its **fibre** $\varphi^{-1}(\tilde R)$ over $\tilde R$.
 
-This is *Definitions for the Study of the 12 Algebraic Structures*, §*Powers, the Square and the Roots*.
+This is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*.
 Unqualified, the product is the block and the square map is $\varphi$. The central values
 $\tilde R=\lambda e_0$ are the subject of *Square Roots of One and the Idempotents of the Symmetric
 Quaternionic Sesqualgebra* and *Square Roots of Zero and the Nilpotents of the Symmetric Quaternionic
@@ -220,7 +220,7 @@ manifold of dimension four. A value with a non-real coefficient has no root.
 
 ## Further Reading
 
-- *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), §*Powers, the Square and the Roots*, for the definitions of the square and of a root relative to a general product.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), §*Powers, the Square and the Roots*, for the definitions of the square and of a root relative to a general product.
 - *Square Roots of One and the Idempotents of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-symmetric-quaternionic-sesqualgebra.md`), for the central value $+1$, the roots of $-1$ and the idempotents, with the families $\mathcal R_\lambda$.
 - *Square Roots of Zero and the Nilpotents of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-symmetric-quaternionic-sesqualgebra.md`), for the central value $0$ and the nilpotents, with the families $\mathcal R_\lambda$.
 - *Square Roots of a General Element in the General Plain Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-general-plain-algebra.md`), for the same equation in the plain product, where the image is the whole space.

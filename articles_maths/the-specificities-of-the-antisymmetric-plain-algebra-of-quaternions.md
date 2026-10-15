@@ -6,8 +6,7 @@ The antisymmetric plain algebra of $\mathbb{H}$ is the cross product
 $\tilde p\times\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\vec p\times\vec q$ of
 *Introduction to the Antisymmetric Plain Algebra of Quaternions*. This article states what singles
 the block out among the six products of the space: the two identities it satisfies, the classes its
-laws empty, and the place it takes in the law table of *Definitions for the Study of the 6 Algebraic
-Structures*.
+laws empty, and the place it takes in the law table of *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*.
 
 The block is the **only** product of the six that is at once alternating and Jacobi; the two
 properties together make it the Lie product of the space. It has no unit, hence no inverse and no
@@ -29,13 +28,13 @@ of the Antisymmetric Plain Algebra*, and the element theory is *Zero Divisors of
 Plain Algebra*, *Square Roots of One and the Idempotents of the Antisymmetric Plain Algebra* and
 *Square Roots of Zero and the Nilpotents of the Antisymmetric Plain Algebra*, all below this article
 in this category. The law vocabulary is *Definitions for the Study of
-the 6 Algebraic Structures* and the law table *The 6 Algebraic Structures over the Quaternion
+the Algebraic Structures* and the law table *The Algebraic Structures over the Quaternion
 $\mathbb{R}$ Space*.
 
 **Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and
 $e_1^2=e_2^2=e_3^2=-e_0$; a generic element is $\tilde q=q_0e_0+\vec q$, the centre is
 $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$ and the vector subspace is $\mathrm{Vect}(\mathbb{H})=\{\vec q\}$.
-The laws are those of *Definitions for the Study of the 6 Algebraic Structures*.
+The laws are those of *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*.
 
 ## The Criterion
 
@@ -82,8 +81,7 @@ $(\tilde p\times\tilde q)\times\tilde r-\tilde p\times(\tilde q\times\tilde r)$ 
 the right alternative law fails at $e_1,e_2,e_2$.
 
 *Proof.* A bilinear alternating rule is antisymmetric, and the implications "alternating and bilinear
-$\Rightarrow$ flexible, power-associative, cube-zero" of *Definitions for the Study of the 6
-Algebraic Structures* give the first three; flexibility is checked at $e_1,e_2$, where
+$\Rightarrow$ flexible, power-associative, cube-zero" of *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space* give the first three; flexibility is checked at $e_1,e_2$, where
 $(e_1\times e_2)\times e_1=e_3\times e_1=e_2$ and $e_1\times(e_2\times e_1)=e_1\times(-e_3)=e_2$. The
 associator is read on the units, where $(e_1\times e_2)\times e_2=e_3\times e_2=-e_1$ is different
 from $e_1\times(e_2\times e_2)=0$, so the rule is not associative; the same triple is the failure of
@@ -140,12 +138,12 @@ category).
 
 *Proof.* The square vanishes identically, so every element is square-zero; the index of nilpotency is
 two for a nonzero element, the square being zero and the element itself nonzero, and one for the
-origin. The reading is the one of *Definitions for the Study of the 6 Algebraic Structures*, where the
+origin. The reading is the one of *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, where the
 class of nonzero nilpotents is the whole space for the two antisymmetric structures.
 
 ## The Isolation among the Six
 
-The following table, the law table of *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$
+The following table, the law table of *The Algebraic Structures over the Quaternion $\mathbb{R}$
 Space* read on the identities, shows the isolation of the block. The entries are the structures that
 satisfy the identity.
 
@@ -209,4 +207,4 @@ the Jacobi identity is the whole of the difference between them.
 - *The Lie Algebra of the Antisymmetric Plain Algebra*, below this article in this category, for the Lie structure.
 - *The Killing Form of the Antisymmetric Plain Algebra* and *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra*, both below this article in this category, for the form and the derivations.
 - *Zero Divisors of the Antisymmetric Plain Algebra*, *Square Roots of One and the Idempotents of the Antisymmetric Plain Algebra* and *Square Roots of Zero and the Nilpotents of the Antisymmetric Plain Algebra*, all below this article in this category, for the element classes folded here.
-- *Definitions for the Study of the 6 Algebraic Structures* and *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, for the law vocabulary and the law table.
+- *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space* and *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, for the law vocabulary and the law table.

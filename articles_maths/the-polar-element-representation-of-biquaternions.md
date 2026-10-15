@@ -88,7 +88,7 @@ The product of the four exponentials is **not** the exponential of the sum of th
 
 **The order cannot be changed, and the two non-central exponentials cannot be fused.** Both facts are the non-vanishing of the bracket $[\log \tilde U_{\mathrm b},\log\tilde u_{\mathrm r}]$, which measures how far the boost and the rotor are from commuting. Over $60$ random boosts and rotors the largest coefficient of that bracket is $3.58$ and the largest coefficient of the failure $\exp(\log \tilde U_{\mathrm b}+\log\tilde u_{\mathrm r})-\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ of the sum rule is $0.76$. A non-zero bracket forbids two rewritings at once: the interchange of the two non-central exponents, and the replacement of their product by the exponential of their sum. The phase is central and passes through both, so the order that matters is the relative order of the boost and the rotor; the word $re^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ fixes that relative order, and no rewriting of the four exponents changes it. The element still has a single exponential, but its exponent is read off the element and is **not** the sum $\log \tilde U_{\mathrm b} + \log\tilde u_{\mathrm r}$.
 
-The last two exponentials collapse to a **single** one whenever the vector part of the element is non-null. Then $\tilde U_{\mathrm b}\tilde u_{\mathrm r} = \exp(\hat\Xi\Theta)$, with $\hat\Xi$ a root of $-1$ ($\hat\Xi\in\mathbb{B}$, $\hat\Xi^2 = -e_0$, the generator parallel to the vector part) and $\Theta\in\mathbb{C}$ the complex angle whose real part is the rotation angle and whose imaginary part is the rapidity, so that the element is the single exponential $\tilde{Q} = R\,\exp(\hat\Xi\Theta)$ with $R = re^{i\alpha}\in\mathbb{C}$ central. This is the Hamilton representation, the first of the three pairings of the companion article, and the condition on the vector part, the constancy of $\Theta$ across the two orders and the numerical values are those of the section on the order of the factors.
+The last two exponentials collapse to a **single** one whenever the vector part of the element is non-null. Then $\tilde U_{\mathrm b}\tilde u_{\mathrm r} = \exp(\hat\Xi\Theta)$, with $\hat\Xi$ a root of $-1$ ($\hat\Xi\in\mathbb{B}$, $\hat\Xi^2 = -e_0$, the generator parallel to the vector part) and $\Theta\in\mathbb{C}$ the complex angle whose real part is the rotation angle and whose imaginary part is the rapidity, so that the element is the single exponential $\tilde{Q} = R\,\exp(\hat\Xi\Theta)$ with $R = re^{i\alpha}\in\mathbb{C}$ central. This is the Hamilton representation, the first of the three pairings, developed, with its domain and with its roots, in *The Hamilton Root Pairing of the Polar Element Representation of Biquaternions*, and the condition on the vector part, the constancy of $\Theta$ across the two orders and the numerical values are those of the section on the order of the factors.
 
 ## Why Four Factors
 
@@ -201,7 +201,7 @@ so the rapidity of a product is not the sum of the rapidities, and its rotation 
 
 The non-commutativity is a property of the boost factor rather than of the representation. The boost $\tilde U_{\mathrm b}$ is Hermitian and positive definite of norm one, so it is a multiple of the unit only when $\tilde U_{\mathrm b} = e_0$; it is therefore non-central whenever it is nontrivial, and that non-centrality is what forbids the transposition. The word becomes order-free in exactly the cases in which one of the two non-central factors is trivial or the two axes coincide: on the two halves, where $\tilde U_{\mathrm b} = e_0$; on the branches of the two sectors on which the rotor is $\pm e_0$; on the centre, where both are trivial; and for a rotor about the axis of the boost. In the last case the element is a single boost-rotation, which is why two boosts along the same line have no residual rotation.
 
-The three pairings of the companion article *Biquaternion Partial Polar Element Representations* are not reorderings of the word. All three keep $\tilde U_{\mathrm b}$ before $\tilde u_{\mathrm r}$; what a pairing moves is the single central factor, and where it needs the two non-central factors in the other order — as the complex form does, to stand its boost to the right of its modulus — it pays with a conjugation $\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, which is the boost about the rotated axis and not the original boost. The freedom of grouping and the lack of freedom of ordering are different freedoms, and the count $1+1+3+3$ is silent about both.
+The three pairings of the companion articles are not reorderings of the word. All three keep $\tilde U_{\mathrm b}$ before $\tilde u_{\mathrm r}$; what a pairing moves is the single central factor, and where it needs the two non-central factors in the other order — as the complex form does, to stand its boost to the right of its modulus — it pays with a conjugation $\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, which is the boost about the rotated axis and not the original boost. The freedom of grouping and the lack of freedom of ordering are different freedoms, and the count $1+1+3+3$ is silent about both.
 
 ## The Complex Modulus
 
@@ -416,7 +416,7 @@ Suppose $\tilde{Q} = r e^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r} = r'e
 
 ### The Domain and the Light Cone
 
-The theorem is stated on the complement of the null cone, $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0\}$, and that is exactly its domain: for $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ and $\tilde{Q}\neq0$ the element is a zero divisor, the matrix $\mathsf{M}_2(\tilde{Q})$ is singular, and no factorisation of the stated shape exists, since the product of the four factors has norm $r^2\cdot1\cdot1\cdot1 = r^2 > 0$ while $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$. The null cone is the algebra's light cone, and it is treated in the companion article on biquaternion zero divisors. Among the decompositions of this series it is the mildest possible failure: a single cone, of real codimension two in the eight-dimensional algebra, whereas the partial forms of the companion article fail on larger sets.
+The theorem is stated on the complement of the null cone, $\{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0\}$, and that is exactly its domain: for $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ and $\tilde{Q}\neq0$ the element is a zero divisor, the matrix $\mathsf{M}_2(\tilde{Q})$ is singular, and no factorisation of the stated shape exists, since the product of the four factors has norm $r^2\cdot1\cdot1\cdot1 = r^2 > 0$ while $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$. The null cone is the algebra's light cone, and it is treated in the companion article on biquaternion zero divisors. Among the decompositions of this series it is the mildest possible failure: a single cone, of real codimension two in the eight-dimensional algebra, whereas the partial forms of the companion articles fail on larger sets.
 
 **The condition of existence, in one line.** The polar representation of $\tilde{Q}$ exists if and only if
 
@@ -641,7 +641,7 @@ $$
 i = 1\cdot e^{i\pi/2}\cdot e_0\cdot e_0 ,
 $$
 
-which exhibits the phase factor at its extremal value. This element is the sharpest illustration of the point of the four factors: two of the three named representations of the companion article fail on it, since its vector part vanishes and its real quaternion part vanishes, while the representation is available and trivial.
+which exhibits the phase factor at its extremal value. This element is the sharpest illustration of the point of the four factors: two of the three named representations of the companion articles fail on it, since its vector part vanishes and its real quaternion part vanishes, while the representation is available and trivial.
 
 ### The Real Quaternions
 
@@ -651,137 +651,9 @@ If all four coefficients of $\tilde{Q}$ are real then $\langle\tilde{Q},\tilde{Q
 
 If $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ and $\tilde{Q}\neq0$ the element is a zero divisor and no decomposition exists, as shown in the section on the domain. The failure is not uniform in the structure of the element: for $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ the matrix $\mathsf{M}_2(\tilde{Q})$ has rank one, its columns span a minimal left ideal, and the element is a multiple of an idempotent; the companion article on biquaternion zero divisors treats the classification. What is relevant here is only that no product of the four factors can reproduce it, because the biquaternion norm of such a product is a positive real.
 
-## The Roots of One in the Two Exponential Forms
+### The Roots of One
 
-### The Polar Word at a Root of One
-
-The elements with $\tilde\Xi^2 = e_0$ are the **square roots of the algebra unit**. The norm is multiplicative, so taking norms in $\tilde\Xi^2 = e_0$ gives $\langle\tilde\Xi,\tilde\Xi\rangle_{\natural}^{2} = e_0$, and the norm of a root of one is one of the two square roots of the unit,
-
-$$
-\langle\tilde\Xi,\tilde\Xi\rangle_{\natural} = \pm e_0 .
-$$
-
-Since $\langle\tilde\Xi,\tilde\Xi\rangle_{\natural} = r^2e^{2i\alpha}$ with $r>0$ and $\alpha\in(-\pi/2,\pi/2]$, the two signs are the two cases of the word.
-
-**The unit-norm roots.** For $\langle\tilde\Xi,\tilde\Xi\rangle_{\natural} = e_0$ the modulus and the phase are trivial, $r = 1$ and $\alpha = 0$, and the word reduces to the Cartan case $\tilde\Xi = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$ of §*Degenerate Cases*. The roots of one of unit norm are exactly the central pair. The halving element $\tilde\Pi_- = \tfrac12(e_0-\tilde\Xi)$ is an idempotent,
-
-$$
-\tilde\Pi_-^2 = \tfrac14\bigl(e_0-2\tilde\Xi+\tilde\Xi^2\bigr) = \tfrac12(e_0-\tilde\Xi) = \tilde\Pi_- ,
-$$
-
-and the norm of an idempotent is an idempotent complex number, hence $0$ or $1$; here the norm is
-
-$$
-\langle\tilde\Pi_-,\tilde\Pi_-\rangle_{\natural} = \tfrac14\bigl(1+\langle\tilde\Xi,\tilde\Xi\rangle_{\natural}-2\Xi_0\bigr) = \tfrac12(1-\Xi_0),
-$$
-
-so $\Xi_0 = \pm1$. Writing $\tilde\Xi = \Xi_0e_0+\vec\Xi$ with $\vec\Xi = \Xi_1e_1+\Xi_2e_2+\Xi_3e_3$, the square is $\tilde\Xi^2 = \bigl(\Xi_0^2-(\vec\Xi,\vec\Xi)\bigr)e_0+2\Xi_0\vec\Xi$, and its vector part $2\Xi_0\vec\Xi$ vanishes: $\tilde\Xi = \pm e_0$. The two elements $\pm e_0$ are the only involutions of unit norm in the algebra.
-
-**The roots of norm $-e_0$.** For $\langle\tilde\Xi,\tilde\Xi\rangle_{\natural} = -e_0$ the modulus is $r = 1$ and the phase solves $e^{2i\alpha} = -1$, so $\alpha = \pi/2$, the phase factor is $e^{i\alpha} = i$, and the word is
-
-$$
-\tilde\Xi = i\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r} , \qquad (\tilde U_{\mathrm b}\tilde u_{\mathrm r})^2 = -e_0 .
-$$
-
-The condition is not automatic: it says that the unit product $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ is itself a unit-norm root of $-e_0$. Read on the two axes, it says that the two axes are orthogonal and that the rotor is pure,
-
-$$
-\hat u_{\mathrm b}\perp\hat u_{\mathrm r} , \qquad \tilde u_{\mathrm r} = \hat u_{\mathrm r}\in\mathcal{A} \quad (\theta = \pi) ,
-$$
-
-so that the rotor is a point of the axis sphere, its stored half-angle is $\pi/2$ and its rotation angle is $\pi$. The equivalence is the classification of the roots of one of the plain algebra (*Square Roots of One and the Idempotents of the General Plain Algebra*) read in the word, and it was verified in double precision. The family that remains has the four real parameters of that classification: the rapidity $\psi$, the rotor axis $\hat u_{\mathrm r}$ (two parameters), and the boost axis $\hat u_{\mathrm b}$ in the plane orthogonal to the rotor axis (one).
-
-### The Idempotent Exponential Form of a Root of One
-
-Every root of one has a one-exponential form, built on the same halving element. Since $\tilde\Pi_-$ is idempotent its exponential series truncates,
-
-$$
-\exp\bigl(i\pi\tilde\Pi_-\bigr) = e_0 + \bigl(e^{i\pi}-1\bigr)\tilde\Pi_- = e_0 - 2\tilde\Pi_- ,
-$$
-
-and the last element is the root itself:
-
-$$
-\tilde\Xi = \exp\bigl(i\pi\tilde\Pi_-\bigr), \qquad \tilde\Pi_- = \tfrac12(e_0-\tilde\Xi), \qquad \tilde\Pi_-^2 = \tilde\Pi_- .
-$$
-
-The form is a **single exponential of one element**, where the polar word is an ordered product of four. The two ends of the halving are the two trivial roots: $\tilde\Xi = e_0$ gives $\tilde\Pi_- = 0$ and $\exp(0) = e_0$, while $\tilde\Xi = -e_0$ gives $\tilde\Pi_- = e_0$ and $\exp(i\pi) = -e_0$. The exponent $i\pi\tilde\Pi_-$ is not the sum of the four exponents of the word, and the two are two different factorisations of the same root set.
-
-### The Bridge Between the Two Forms
-
-The two forms are tied by the **product of the last two factors** of the word, read at a root of one. On the roots of norm $-e_0$ the word is $\tilde\Xi = i\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}$, so that product is recovered from the root by the left multiplication by $-i$,
-
-$$
--i\,\tilde\Xi = \tilde U_{\mathrm b}\,\tilde u_{\mathrm r} , \qquad \bigl(-i\,\tilde\Xi\bigr)^2 = -e_0 , \qquad \langle -i\,\tilde\Xi , -i\,\tilde\Xi \rangle_{\natural} = e_0 ,
-$$
-
-the first equality the extraction, the second the statement that the extracted element is a root of $-e_0$, and the third that it has unit norm; its argument is $0$, so its phase is trivial and the extraction is already the polar factorisation of the read element. The element $-i\tilde\Xi$ is therefore a unit-norm root of $-e_0$ whenever the root has norm $-e_0$, and it is the product of the last two factors of the word. On the two central roots it is instead $-i$ and $+i$, both of norm $-e_0$, and the extraction carries no polar information.
-
-Substituting the extraction into the halving idempotent and into the idempotent form gives both directions in closed shape,
-
-$$
-\tilde\Pi_- = \tfrac12\bigl(e_0-\tilde\Xi\bigr) = \tfrac12\bigl(e_0-i\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}\bigr) , \qquad \tilde U_{\mathrm b}\,\tilde u_{\mathrm r} = i\,\bigl(2\tilde\Pi_--e_0\bigr) ,
-$$
-
-so the halving idempotent determines the product of the last two factors completely, and conversely. The exponent of the single exponential is $i\pi\tilde\Pi_-$, which the extraction expands into a **central part and a two-factor part**,
-
-$$
-\tilde\Xi = \exp\bigl(i\pi\tilde\Pi_-\bigr) = \exp\Bigl(\tfrac{i\pi}{2}e_0+\tfrac{\pi}{2}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}\Bigr) = \exp\Bigl(i\pi\,\frac{e_0-i\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}}{2}\Bigr) ,
-$$
-
-the central part fixed at $\tfrac{i\pi}{2}e_0$ and the two-factor part the last two factors of the word multiplied by the real half-turn $\tfrac{\pi}{2}$. The exponent is not the sum of the four exponents of the word, and the polar word is the polar decomposition of the root of $-e_0$ read from the root by $-i\tilde\Xi$.
-
-### The Hermitian Roots
-
-The roots of one that are Hermitian, $\tilde\Xi^{*} = \tilde\Xi$, are the elements whose word carries a trivial boost. On a root of norm $-e_0$ the word is $\tilde\Xi = i\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\tilde u_{\mathrm r} = \hat u_{\mathrm r}$ pure and the axes orthogonal, and its Hermitian conjugate is $\tilde\Xi^{*} = i\hat u_{\mathrm r}\tilde U_{\mathrm b}$; the two differ by $-2\sinh\tfrac{\psi}{2}\,\hat u_{\mathrm b}\hat u_{\mathrm r}$, which vanishes exactly when the boost is trivial. The Hermitian roots of one are therefore
-
-$$
-\tilde\Xi = \pm e_0 , \qquad \tilde\Xi = i\hat u_{\mathrm n} \quad \text{over the unit pure real quaternions } \hat u_{\mathrm n} ,
-$$
-
-the central pair and the purely imaginary family, and in the idempotent form the halving element of a Hermitian root is Hermitian.
-
-### The Two Pure Elements as the Source of the Word and of the Idempotents
-
-The whole section is generated by **two pure elements** and two central dials, in three steps.
-
-**Two pure elements give a Hermitian root of one.** Let $\hat u_{\mathrm b}$ and $\hat u_{\mathrm r}$ be orthogonal unit pure quaternions of $\mathbb{R}^3$. Their product is again a unit pure quaternion, and the product with the fixed central $i$ is a root of one of norm $-e_0$,
-
-$$
-\hat u_{\mathrm n} = \hat u_{\mathrm b}\,\hat u_{\mathrm r} , \qquad \hat u_{\mathrm n}^2 = -e_0 , \qquad \tilde\Xi_0 = i\,\hat u_{\mathrm b}\,\hat u_{\mathrm r} , \qquad \tilde\Xi_0^2 = e_0 , \qquad \langle\tilde\Xi_0,\tilde\Xi_0\rangle_{\natural} = -e_0 , \qquad \tilde\Xi_0^{*} = \tilde\Xi_0 .
-$$
-
-At this stage there is no angle and no dilatation: the two pure elements, their product, and the central $i$. The root so built is the Hermitian one, $\tilde\Xi_0 = i\hat u_{\mathrm n}$, of the subsection above.
-
-**The angles give the full root set.** Give the two elements their angles, the boost its rapidity $\psi$ and the rotor its angle $\theta$, and keep the rotor pure so that the two factors close:
-
-$$
-\tilde U_{\mathrm b} = \exp\Bigl(i\tfrac{\psi}{2}\hat u_{\mathrm b}\Bigr) , \qquad \tilde u_{\mathrm r} = \hat u_{\mathrm r} \quad (\theta = \pi) , \qquad \tilde\Xi = i\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r} , \qquad (\tilde U_{\mathrm b}\tilde u_{\mathrm r})^2 = -e_0 .
-$$
-
-This is the whole norm-$-e_0$ root set, the Hermitian one at $\psi = 0$ and the rest by the boost, which is its non-Hermitian part.
-
-**The dilatation and the phase give the element.** The same two non-central factors, dialled by the central scale and the central phase, are the general element,
-
-$$
-\tilde Q = r\,e^{i\alpha}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r} = \bigl(r\,e^{i\alpha}\bigr)\cdot\bigl(\text{the two non-central factors}\bigr) .
-$$
-
-So the root is the central dial $i$ and the element is the central dial $r e^{i\alpha}$ on the same two factors. When the two factors close, the element and the root are central multiples of one another on those shared factors, $\tilde Q = -i\,r\,e^{i\alpha}\,\tilde\Xi$; in general the element carries its own two factors, of the same kind, and the root is the closing case of them.
-
-**The root is the source of the idempotents and of the Peirce decomposition.** A root of one is carried by the halving map into the complementary idempotent pair $\tilde\Pi_\pm = \tfrac12(e_0\pm\tilde\Xi)$, and the pair splits the algebra into four **Peirce pieces**,
-
-$$
-\mathbb{B} = \tilde\Pi_+\mathbb{B}\tilde\Pi_+ \;\oplus\; \tilde\Pi_+\mathbb{B}\tilde\Pi_- \;\oplus\; \tilde\Pi_-\mathbb{B}\tilde\Pi_+ \;\oplus\; \tilde\Pi_-\mathbb{B}\tilde\Pi_- ,
-$$
-
-each of real dimension two for a root other than $\pm e_0$, the four summing to the real dimension eight of the algebra; the pieces are the ideals of *Ideals and Peirce Decomposition of the General Plain Algebra* and the Hermitian idempotents of *Hermitian Idempotents and the Peirce Decomposition*. The chain is thus
-
-$$
-\text{two pure elements} \;\longrightarrow\; \text{the root of one} \;\longrightarrow\; \text{the idempotents} \;\longrightarrow\; \text{the Peirce decomposition} ,
-$$
-
-and the same two pure elements, with their angles and the central dial, give the general element.
+The polar word is also read at a square root of one, and that reading — the two exponential forms the root set carries, the bridge between them, the Peirce decomposition that follows, and the Hamilton grouping of the same word — is developed in *The Hamilton Root Pairing of the Polar Element Representation of Biquaternions*.
 
 ## The Commutative Four-Dimensional Alternative
 
@@ -799,9 +671,9 @@ The form is useful for the two operations it is useful for here. Multiplication 
 
 One application is a use of a polar form the corpus does not otherwise have. The colour space is three-dimensional and the algebra four-dimensional, so the representation of a colour by an element of the algebra is not unique; the paper removes the redundancy by setting one of the three phases to zero, giving what it calls the **simplified polar form**, whose data are the brightness, hue and saturation of the colour and in which the norm and the conjugation of the element take their simplest forms. It is used for colour template matching and colour-sensitive edge detection, with the transforms of *Biquaternion Discrete Harmonic Analysis*.
 
-## Relation to the Two Partial Forms
+## Relation to the Three Pairings
 
-The relation of the present representation to the Hamilton, complex and Cartan representations is the following, stated here and proved in the companion article *Biquaternion Partial Polar Element Representations*.
+The relation of the present representation to the Hamilton, quaternion and Cartan pairings is the following. The Hamilton pairing, the first of the two **partial** regroupings, is stated here and developed in *The Hamilton Root Pairing of the Polar Element Representation of Biquaternions*; the quaternion pairing, the second, is developed in *The Quaternion Pairing of the Polar Element Representation of Biquaternions*; the Cartan pairing is the third grouping and is developed in *The Cartan Hermitian Pairing of the Polar Element Representation of Biquaternions*.
 
 The **Hamilton form** writes $\tilde{Q} = R\exp(\hat\Xi\Theta)$ with $R$ a complex scalar and $\hat\Xi$ a non-central root of $-1$ parallel to the vector part; in the present notation its two factors are
 
@@ -811,20 +683,20 @@ $$
 
 so that it groups the first two of the four factors into the modulus $R$ and the last two into the exponential. It is available whenever the vector part is non-null, which is a stronger condition than $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$.
 
-The **complex form** writes $\tilde{Q} = Q\exp(i\Psi)$ with $Q$ a real quaternion; in the present notation its two factors are
+The **quaternion form** writes $\tilde{Q} = Q\exp(i\Psi)$ with $Q$ a real quaternion; in the present notation its two factors are
 
 $$
 Q = r\,\tilde u_{\mathrm r} , \qquad \exp(i\Psi) = e^{i\alpha}\,\tilde u_{\mathrm r}^{\natural}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r} ,
 $$
 
-so that it groups the scale with the rotor into the quaternion modulus and the phase with a conjugated boost into the exponential. Its construction in the companion article proceeds from the real quaternion part of $\tilde{Q}$ and requires that part to be invertible, again a stronger condition than $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$.
+so that it groups the scale with the rotor into the quaternion modulus and the phase with a conjugated boost into the exponential. Its construction in *The Quaternion Pairing of the Polar Element Representation of Biquaternions* proceeds from the real quaternion part of $\tilde{Q}$ and requires that part to be invertible, again a stronger condition than $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$.
 
-Both partial forms are therefore regroupings of the same four factors, taken in pairs; there are exactly three ways to pair four objects into two pairs, and the third pairing, in which the scale is grouped with the boost and the phase with the rotor, is the Cartan form $\tilde{Q} = (r\tilde U_{\mathrm b})(e^{i\alpha}\tilde u_{\mathrm r})$, the matrix polar decomposition into a positive Hermitian factor and a unitary factor. All three are treated in the companion article.
+Both partial forms are therefore regroupings of the same four factors, taken in pairs; there are exactly three ways to pair four objects into two pairs, and the third pairing, in which the scale is grouped with the boost and the phase with the rotor, is the Cartan pairing $\tilde{Q} = (r\tilde U_{\mathrm b})(e^{i\alpha}\tilde u_{\mathrm r})$, the matrix polar decomposition into a positive Hermitian factor and a unitary factor. The Hamilton form is treated in *The Hamilton Root Pairing of the Polar Element Representation of Biquaternions*, the quaternion form in *The Quaternion Pairing of the Polar Element Representation of Biquaternions*, and the Cartan pairing in *The Cartan Hermitian Pairing of the Polar Element Representation of Biquaternions*.
 
 | representation | modulus | second factor | condition on $\tilde{Q}$ |
 |---|---|---|---|
 | Hamilton | $R = r\,e^{i\alpha}$ | $\exp(\hat\Xi\Theta) = \tilde U_{\mathrm b}\,\tilde u_{\mathrm r}$ | the vector part is non-null |
-| complex | $Q = r\,\tilde u_{\mathrm r}$ | $\exp(i\Psi) = e^{i\alpha}\,\tilde u_{\mathrm r}^{\natural}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}$ | the real quaternion part is invertible |
+| quaternion pairing | $Q = r\,\tilde u_{\mathrm r}$ | $\exp(i\Psi) = e^{i\alpha}\,\tilde u_{\mathrm r}^{\natural}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r}$ | the real quaternion part is invertible |
 | Cartan | $r\,\tilde U_{\mathrm b}$ | $e^{i\alpha}\,\tilde u_{\mathrm r}$ | $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$ |
 
 ## Summary
@@ -835,7 +707,7 @@ $$
 \tilde{Q} = r\,e^{i\alpha}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r} , \qquad r = \sqrt{|\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|} > 0, \quad \alpha = \tfrac{1}{2}\arg \langle\tilde{Q},\tilde{Q}\rangle_{\natural}, \quad \tilde U_{\mathrm b} \in \mathbb{M}_+, \quad \tilde u_{\mathrm r}\in\mathrm{Sp}(1) ,
 $$
 
-in which $\tilde U_{\mathrm b}$ is the Hermitian positive unit-norm boost and $\tilde u_{\mathrm r}$ the unit real quaternion rotor. The modulus of the decomposition is the complex number $\rho = re^{i\alpha} = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$, and the positive real factor $r$ is its absolute value, so a positive scale is always available and the phase is one of the four factors rather than a correction. The four factors have real dimensions $1+1+3+3 = 8$, they are unique, and the failure of the decomposition is exactly the null cone $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$. The decomposition is the reference form of the series: the Hamilton and complex forms of the companion article are the two other pairings of the same four factors, and the Cartan form of the physics articles is the special case $N = 1$ in which the scale and the phase are trivial.
+in which $\tilde U_{\mathrm b}$ is the Hermitian positive unit-norm boost and $\tilde u_{\mathrm r}$ the unit real quaternion rotor. The modulus of the decomposition is the complex number $\rho = re^{i\alpha} = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$, and the positive real factor $r$ is its absolute value, so a positive scale is always available and the phase is one of the four factors rather than a correction. The four factors have real dimensions $1+1+3+3 = 8$, they are unique, and the failure of the decomposition is exactly the null cone $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$. The decomposition is the reference form of the series: the Hamilton form of *The Hamilton Root Pairing of the Polar Element Representation of Biquaternions* and the quaternion form of *The Quaternion Pairing of the Polar Element Representation of Biquaternions* are the two other pairings of the same four factors, and the Cartan form of the physics articles is the special case $N = 1$ in which the scale and the phase are trivial.
 
 Each of the four factors is itself an exponential of a single element of the algebra:
 
@@ -844,7 +716,7 @@ Each of the four factors is itself an exponential of a single element of the alg
 - $\tilde U_{\mathrm b} = \exp\bigl(i\frac{\psi}{2}\hat u_{\mathrm b}\bigr)$, with the exponent traceless in $\mathbb{M}_+$;
 - $\tilde u_{\mathrm r} = \exp\bigl(\tfrac{\theta}{2}\hat u_{\mathrm r}\bigr)$, with $\tfrac{\theta}{2}\hat u_{\mathrm r}$ a real pure quaternion.
 
-So the polar word is an ordered product of four exponentials. The product is not the exponential of the sum of the exponents, because the two non-central exponents do not commute; the last two of them do collapse to a single exponential, $\tilde U_{\mathrm b}\tilde u_{\mathrm r} = \exp(\hat\Xi\Theta)$, whenever the vector part is non-null, which is the Hamilton form $\tilde{Q} = R\exp(\hat\Xi\Theta)$ of the companion article. The same word written at a root of one, $\langle\tilde\Xi,\tilde\Xi\rangle_{\natural} = \pm e_0$, gives $\pm e_0$ on the unit-norm roots and $i\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ on the roots of norm $-e_0$, with the boost axis orthogonal to the rotor axis and the rotor pure; the root set has the second form $\tilde\Xi = \exp(i\pi\tilde\Pi_-)$ on its halving idempotent $\tilde\Pi_- = \tfrac12(e_0-\tilde\Xi)$, tied to the word by the product of its last two factors, $-i\tilde\Xi = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$. The two non-central factors are themselves generated by two pure unit elements with their angles, and the root of one, through its halving idempotents, is the source of the idempotents and of the Peirce decomposition of the algebra.
+So the polar word is an ordered product of four exponentials. The product is not the exponential of the sum of the exponents, because the two non-central exponents do not commute; the last two of them do collapse to a single exponential, $\tilde U_{\mathrm b}\tilde u_{\mathrm r} = \exp(\hat\Xi\Theta)$, whenever the vector part is non-null, which is the Hamilton form $\tilde{Q} = R\exp(\hat\Xi\Theta)$ of *The Hamilton Root Pairing of the Polar Element Representation of Biquaternions*. The same word written at a root of one, $\langle\tilde\Xi,\tilde\Xi\rangle_{\natural} = \pm e_0$, is read in that article, together with the second, one-exponential form the root set carries on its halving idempotent and the chain that runs from the two pure factors to the idempotents and to the Peirce decomposition of the algebra.
 
 ## Summary of Notation
 
@@ -853,7 +725,6 @@ So the polar word is an ordered product of four exponentials. The product is not
 | $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ | — | the biquaternion algebra, $\tilde{Q} = \sum_\mu Q_\mu e_\mu$ |
 | $e_0 = 1$, $e_1,e_2,e_3$ | basis of $\mathbb{B}$ | the algebra unit and the quaternion units, $e_k^2 = -e_0$, $e_1e_2 = e_3$ |
 | $Q_\mu$ | $\mathbb{C}$ | the four complex coefficients of $\tilde{Q}$ |
-| $\Xi_\mu$ | $\mathbb{C}$ | the four complex coefficients of a root of one $\tilde\Xi$ |
 | $i$ | $\mathbb{C}_{\mathbb{B}}$, $i^2 = -1$ | the central scalar imaginary |
 | $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$ | $\mathbb{C}$, central | the biquaternion norm, equal to $\det\mathsf{M}_2(\tilde{Q})$ |
 | $\rho = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$ | $\mathbb{C}\setminus\{0\}$ | the complex modulus, the principal square root |
@@ -867,14 +738,10 @@ So the polar word is an ordered product of four exponentials. The product is not
 | $i\frac{\psi}{2}\hat u_{\mathrm b}$ | traceless in $\mathbb{M}_+$ | the boost exponent |
 | $\theta$ | $[0,2\pi]$ | the rotation angle of the rotor, whose stored half-angle is $\frac{\theta}{2}\in[0,\pi]$ |
 | $\hat u_{\mathrm r}$ | $\mathcal{A}$, a unit vector of $\mathbb{R}^3$ | the axis of the rotor |
-| $\hat u_{\mathrm n} = \hat u_{\mathrm b}\hat u_{\mathrm r}$ | $\mathcal{A}$, a unit vector of $\mathbb{R}^3$ | the composed pure axis of a Hermitian root of one, $i\hat u_{\mathrm n}$ |
 | $\frac{\theta}{2}\hat u_{\mathrm r}$ | real pure quaternion | the rotor exponent |
 | $\hat\Xi$ | $\mathbb{B}$, $\hat\Xi^2 = -e_0$ | the Hamilton axis, the pure root of $-1$ parallel to the vector part |
 | $\tilde u_{\mathrm r} = \tilde U_{\mathrm b}^{\natural}U$ | $\mathrm{Sp}(1)$ | the rotor, a unit real quaternion |
 | $\exp(\ln r)\,\exp(i\alpha)\,\exp\bigl(i\frac{\psi}{2}\hat u_{\mathrm b}\bigr)\,\exp\bigl(\frac{\theta}{2}\hat u_{\mathrm r}\bigr)$ | — | the polar word as an ordered product of four exponentials, $\theta\in[0,2\pi]$ |
-| $\tilde\Xi$ | $\mathbb{B}$, $\tilde\Xi^2 = e_0$ | a square root of the unit, the subject of §*The Roots of One in the Two Exponential Forms*; not to be confused with the Hamilton axis $\hat\Xi$, a root of $-e_0$ |
-| $\tilde\Pi_- = \tfrac12(e_0-\tilde\Xi)$ | $\mathbb{B}$, $\tilde\Pi_-^2=\tilde\Pi_-$ | the halving idempotent of a root of one, whose exponential is the root, $\tilde\Xi = \exp(i\pi\tilde\Pi_-)$ |
-| $-i\tilde\Xi = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$ | $\mathbb{B}$, $(-i\tilde\Xi)^2=-e_0$ | the product of the last two factors of the polar word, read from a root of one of norm $-e_0$ |
 | $\mathbb{M}_+$ | subspace of $\mathbb{B}$ | the Hermitian subspace, real scalar part and imaginary vector part |
 | $\mathbb{M}_-$ | subspace of $\mathbb{B}$ | the anti-Hermitian subspace, the material sector of the physics articles |
 | $\mathbb{H}_{\mathbb{B}}$ | subspace of $\mathbb{B}$ | the real quaternion subspace, the fixed space of complex conjugation |
@@ -883,13 +750,14 @@ So the polar word is an ordered product of four exponentials. The product is not
 ## Further Reading
 
 - *Biquaternions as a Vector Space over $\mathbb{C}$* (`articles_maths/biquaternions-as-a-vector-space-over-c.md`), for the algebra, the four conjugations and the remarkable subspaces.
-- *Biquaternion Partial Polar Element Representations* (`articles_maths/biquaternion-partial-polar-element-representations.md`), for the Hamilton, complex and Cartan representations as the three two-factor groupings of these four factors, with their domains.
+- *The Quaternion Pairing of the Polar Element Representation of Biquaternions* (`articles_maths/the-quaternion-pairing-of-the-polar-element-representation-of-biquaternions.md`), for the quaternion pairing and the comparison of the two partial two-factor groupings of these four factors, with their domains.
+- *The Hamilton Root Pairing of the Polar Element Representation of Biquaternions* (`articles_maths/the-hamilton-root-pairing-of-the-polar-element-representation-of-biquaternions.md`), for the Hamilton grouping, its non-central root of $-1$, and the reading of the same word at the roots of one in the two exponential forms.
+- *The Cartan Hermitian Pairing of the Polar Element Representation of Biquaternions* (`articles_maths/the-cartan-hermitian-pairing-of-the-polar-element-representation-of-biquaternions.md`), for the third two-factor grouping, $\tilde{Q} = HU$ with $H$ Hermitian positive and $U$ unitary, its Hermitian and anti-Hermitian exponent split and its full domain.
+- *The Polar Element Representation and Remarkable Subspaces* (`articles_maths/the-polar-element-representation-and-remarkable-subspaces.md`), for the four exponents read against the four coordinate blocks and the six remarkable subspaces, the incidence of the exponents with the subspaces, and the polar data each subspace carries.
 - *Split-Biquaternion Polar Element Representation* (`articles_maths/split-biquaternion-polar-element-representation.md`), for the semisimple analogue, whose modulus is split complex and whose rotor is six-dimensional.
 - *Quaternion Polar Element Representation* (`articles_maths/quaternion-polar-element-representation.md`), for the two-factor case that this decomposition restricts to on the real quaternions.
 - *Complex Polar Element Representation* (`articles_maths/complex-polar-element-representation.md`) and *Split-Complex Polar Element Representation* (`articles_maths/split-complex-polar-element-representation.md`), for the two-dimensional members of the series, where the rule of the exponential is stated once and the slots are counted in the smallest cases.
 - *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_physics/the-2x2-matrix-element-representation-m2c-of-biquaternions.md`), for the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$, the determinant, and the matrix polar decomposition.
 - *The Lorentz Group in Biquaternionic Form — Structure and Representations* (`articles_physics/the-lorentz-group-in-biquaternionic-form-structure-and-representations.md`), for the boost and rotation rotors and the Thomas-Wigner rotation.
-- *Ideals and Peirce Decomposition of the General Plain Algebra* (`articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra.md`) and *Hermitian Idempotents and the Peirce Decomposition* (`articles_maths/hermitian-idempotents-and-the-peirce-decomposition.md`), for the Peirce pieces below, into which a root of one splits the algebra through its halving idempotents.
-- *Square Roots of One and the Idempotents of the General Plain Algebra and the General Plain Sesqualgebra in Exponential Form* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra-and-the-general-plain-sesqualgebra-in-exponential-form.md`), for the classification of the roots of one in exponential form and the idempotent reading of the same roots.
 - S. J. Sangwine and E. Hitzer, "Polar decomposition of complexified quaternions and octonions", *Advances in Applied Clifford Algebras* (2020), DOI 10.1007/s00006-020-1048-y; technical report CES-535, University of Essex (2019), for the published two-exponential factorisation of the unit semi-norm elements and, in the general case, its Corollary 1 — whose trigonometric factor is the rotor $\tilde u_{\mathrm r}$ of this article and whose hyperbolic factor is the boost about the rotor-conjugated axis, $\tilde U_{\mathrm b} = \tilde u_{\mathrm r}^{-1}H\tilde u_{\mathrm r}$ with the same rapidity and norm — for Lemma 1, the trichotomy of the exponential of a hypercomplex root of $-1$, $0$ or $+1$, and for the degenerate word on the null cone of the boundary subsection above. The order of the two non-central factors is reversed there, angle first, and the complex modulus is kept whole rather than split into a scale and a phase, which is the difference of count $2+3+3$ against $1+1+3+3$; the corpus fixes the branch and proves uniqueness, while the paper admits both orders.
 - Soo-Chang Pei, Ja-Han Chang and Jian-Jiun Ding, "Commutative reduced biquaternions and their Fourier transform for signal and image processing applications", *IEEE Transactions on Signal Processing* **52** (2004) 2012–2022, for the reduced biquaternion algebra — the commutative four-dimensional algebra $\mathbb{C}\otimes_{\mathbb{R}}\mathbb{C}\cong\mathbb{C}\oplus\mathbb{C}$, equivalently the double-complex, tessarine or commutative hypercomplex algebra — and for its polar form, its uniqueness under the phase-range convention, its De Moivre theorem and the simplified polar form for colour images.

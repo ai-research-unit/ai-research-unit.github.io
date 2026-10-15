@@ -9,7 +9,7 @@ $$
 A_\star(\tilde Q)=\{\tilde X:\tilde Q\star\tilde X=0\},\qquad
 B_\star(\tilde Q)=\{\tilde X:\tilde X\star\tilde Q=0\},
 $$
-the left and the right annihilator (*Definitions for the Study of the 12 Algebraic Structures*,
+the left and the right annihilator (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*,
 §*The Zero Divisor and the Annihilator*). When the product is carried by a multiplication operator
 the annihilator is the kernel of that operator, so it is a linear subspace.
 
@@ -164,7 +164,7 @@ and three on the non-pure family.
 
 ## Further Reading
 
-- *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), §*The Zero Divisor and the Annihilator*, for the zero divisor and the annihilator of a general product.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), §*The Zero Divisor and the Annihilator*, for the zero divisor and the annihilator of a general product.
 - *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra-of-biquaternions.md`), for the operation and its conjugate-commutativity.
 - *Zero Divisors of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/zero-divisors-of-the-symmetric-quaternionic-sesqualgebra.md`), above this article in this category, for the criterion and the two families.
 - *The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-sesqualgebra.md`), for the operator calculus on which the rank is read.

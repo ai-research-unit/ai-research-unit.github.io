@@ -11,7 +11,7 @@ no unit, so it has no inverse and no group of units; the replacing object is the
 which does not detect the zero divisors.
 
 A norm and an inverse name a product, and the product is part of the definition: the unit and the inverse are
-stated once for a general product in *Definitions for the Study of the 12 Algebraic Structures*,
+stated once for a general product in *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*,
 §*The Unit and the Inverse*, and the algebraic norm of a product is the diagonal of its scalar-part form,
 the definition of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*. For the block the form is
 $K(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\star\tilde Q)=\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu}$ and
@@ -62,7 +62,7 @@ when there is a unit $\tilde E$ of $\star$ and an element $\tilde Q^{-1}$ with
 $\tilde Q\star\tilde Q^{-1}=\tilde Q^{-1}\star\tilde Q=\tilde E$; the invertible elements form the **group
 of units** of $\star$.
 
-This is *Definitions for the Study of the 12 Algebraic Structures*, §*The Unit and the Inverse*. Unqualified,
+This is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Unit and the Inverse*. Unqualified,
 the product is the block.
 
 ## The Absence of a Unit and of an Inverse
@@ -267,7 +267,7 @@ central square, not by $K$.
 
 - *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.md`), for the definition of the algebraic norm as the form at the two equal arguments and the four algebraic norms of the space.
 - *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the general quaternionic sesquilinear form $K$ and the table of the four forms.
-- *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), §*The Unit and the Inverse*, for the definitions relative to a general product and for the unit tables.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), §*The Unit and the Inverse*, for the definitions relative to a general product and for the unit tables.
 - *The Two One-Sided Actions and the Absence of a Unit* (`articles_maths/the-two-one-sided-actions-and-the-absence-of-a-unit.md`), for the two actions of $e_0$ and the proof that no element is a unit.
 - *Norm and Invertibility in the General Plain Algebra* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra.md`), for the algebraic norm $B$ of the plain product, which is not the form $K$ of this article.
 - *Zero Divisors of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/zero-divisors-of-the-symmetric-quaternionic-sesqualgebra.md`), for the criterion of the zero divisors and the regular elements.

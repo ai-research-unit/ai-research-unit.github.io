@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A square root of an element $\tilde Q$ in a product is an element with $\tilde\Xi\star\tilde\Xi=\tilde Q$, and the roots of a central value are the special case $\tilde Q=\lambda e_0$ (*Definitions for the Study of the 12 Algebraic Structures* §*Powers, the Square and the Roots*). In the parent plain algebra the problem has a rich classification — roots with non-vanishing vector part, roots of a central value, the reduction of the general element to its scalar part (*Square Roots of a General Element in the General Plain Algebra*). In the symmetric quaternionic block the problem **collapses**: the square of an element is always central,
+A square root of an element $\tilde Q$ in a product is an element with $\tilde\Xi\star\tilde\Xi=\tilde Q$, and the roots of a central value are the special case $\tilde Q=\lambda e_0$ (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* §*Powers, the Square and the Roots*). In the parent plain algebra the problem has a rich classification — roots with non-vanishing vector part, roots of a central value, the reduction of the general element to its scalar part (*Square Roots of a General Element in the General Plain Algebra*). In the symmetric quaternionic block the problem **collapses**: the square of an element is always central,
 
 $$
 \tilde\Xi\star\tilde\Xi=N(\tilde\Xi)e_0,
@@ -94,7 +94,7 @@ In the symmetric quaternionic block the square of every element is central, $\ti
 
 ## Further Reading
 
-- *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), for the general definitions of a power, a root of a central value and a square root of an element.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the general definitions of a power, a root of a central value and a square root of an element.
 - *Square Roots of a General Element in the General Plain Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-general-plain-algebra.md`), for the parent's classification, which the block collapses.
 - *Square Roots of One and the Idempotents of the Symmetric Quaternionic Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-symmetric-quaternionic-algebra.md`), for the roots of the central values $\pm1$.
 - *Square Roots of Zero and the Nilpotents of the Symmetric Quaternionic Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-symmetric-quaternionic-algebra.md`), for the radicand zero.

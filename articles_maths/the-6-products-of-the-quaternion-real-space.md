@@ -5,12 +5,12 @@
 Each of the two general products of *The Two General Products of the Quaternion $\mathbb{R}$ Space* has a **symmetric part** and an **antisymmetric part**, taken under the interchange of the two slots; because both products are $\mathbb{R}$-bilinear with both slots linear, the base ring carrying no nontrivial involution, the interchange is the bare exchange of the two arguments, and the split produces four further products from the two:
 
 $$
-\tilde p\tilde q , \qquad \tilde p\bullet\tilde q , \qquad \tilde p\wedge\tilde q , \qquad \tilde p^{\natural}\tilde q , \qquad N(\tilde p,\tilde q)e_0 , \qquad \tilde p\wedge^{\natural}\tilde q .
+\tilde p\tilde q , \qquad \tilde p^{\natural}\tilde q , \qquad \tilde p\bullet\tilde q , \qquad N(\tilde p,\tilde q)e_0 , \qquad \tilde p\wedge\tilde q , \qquad \tilde p\wedge^{\natural}\tilde q .
 $$
 
-The middle two of each triple are the symmetric and the antisymmetric halves: $\tilde p\bullet\tilde q=\tfrac12(\tilde p\tilde q+\tilde q\tilde p)$ is the **Jordan product**, the symmetric half of the plain product; $\tilde p\wedge\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)$ is the **cross product**, its antisymmetric half; $N(\tilde p,\tilde q)e_0=\tfrac12(\tilde p^{\natural}\tilde q+\tilde q^{\natural}\tilde p)$ is the **quaternion form read as a product**, the symmetric half of the quaternionic product; and $\tilde p\wedge^{\natural}\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)$ is the **quaternionic cross product**, its antisymmetric half. The six are the products of the six algebraic structures of the chapter, and the reconstruction $\tilde p\tilde q=\tilde p\bullet\tilde q+\tilde p\wedge\tilde q$ and $\tilde p^{\natural}\tilde q=N(\tilde p,\tilde q)e_0+\tilde p\wedge^{\natural}\tilde q$ recovers the general products from their halves.
+The first two of the six are the two general products, then come their two symmetric halves and then their two antisymmetric halves: $\tilde p\bullet\tilde q=\tfrac12(\tilde p\tilde q+\tilde q\tilde p)$ is the **Jordan product**, the symmetric half of the plain product; $N(\tilde p,\tilde q)e_0=\tfrac12(\tilde p^{\natural}\tilde q+\tilde q^{\natural}\tilde p)$ is the **quaternion form read as a product**, the symmetric half of the quaternionic product; $\tilde p\wedge\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)$ is the **cross product**, the antisymmetric half of the plain product; and $\tilde p\wedge^{\natural}\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)$ is the **quaternionic cross product**, the antisymmetric half of the quaternionic product. The six are the products of the six algebraic structures of the chapter, and the reconstruction $\tilde p\tilde q=\tilde p\bullet\tilde q+\tilde p\wedge\tilde q$ and $\tilde p^{\natural}\tilde q=N(\tilde p,\tilde q)e_0+\tilde p\wedge^{\natural}\tilde q$ recovers the general products from their halves.
 
-This article defines the six, writes each on the coordinates, states the reconstruction and reads the **behaviour at the two equal arguments** of each. It assumes the two products from *The Two General Products of the Quaternion $\mathbb{R}$ Space* and the annihilation identity of *Relations Between the Two General Products*, both preceding this one; the structures the six define are *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, below this article in this category, and the definitions of their vocabulary are *Definitions for the Study of the 6 Algebraic Structures*, below this article in this category.
+This article defines the six, writes each on the coordinates, states the reconstruction and reads the **behaviour at the two equal arguments** of each. It assumes the two products from *The Two General Products of the Quaternion $\mathbb{R}$ Space* and the annihilation identity of *Relations Between the Two General Products*, both preceding this one; the structures the six define are *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, below this article in this category, and the definitions of their vocabulary are *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, below this article in this category.
 
 **Conventions.** Throughout, $\tilde p=p_0e_0+\vec p$ and $\tilde q=q_0e_0+\vec q$ name elements, $(\vec p,\vec q)=\sum_kp_kq_k$ is the dot product and $\vec p\times\vec q$ is the cross product of the vector parts, and $\tilde q^{\natural}=q_0e_0-\vec q$ is the quaternion conjugation. The plain form is $B(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p\tilde q)$ and the quaternion form is $N(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p^{\natural}\tilde q)$, read here as the coefficient of the product $N(\tilde p,\tilde q)e_0$.
 
@@ -33,7 +33,7 @@ and $f=f^{\mathrm{s}}+f^{\mathrm{a}}$. The rule is **symmetric** when $f^{\mathr
 **Definition.** The six products are the two general products and their halves,
 
 $$
-\tilde p\tilde q , \quad \tilde p\bullet\tilde q , \quad \tilde p\wedge\tilde q , \quad \tilde p^{\natural}\tilde q , \quad N(\tilde p,\tilde q)e_0 , \quad \tilde p\wedge^{\natural}\tilde q ,
+\tilde p\tilde q , \quad \tilde p^{\natural}\tilde q , \quad \tilde p\bullet\tilde q , \quad N(\tilde p,\tilde q)e_0 , \quad \tilde p\wedge\tilde q , \quad \tilde p\wedge^{\natural}\tilde q ,
 $$
 
 and on the coordinates they are
@@ -41,13 +41,13 @@ and on the coordinates they are
 | product | rule |
 |---|---|
 | $\tilde p\tilde q$ | $\bigl(p_0q_0-(\vec p,\vec q)\bigr)+p_0\vec q+q_0\vec p+\vec p\times\vec q$ |
-| $\tilde p\bullet\tilde q$ | $\bigl(p_0q_0-(\vec p,\vec q)\bigr)+p_0\vec q+q_0\vec p$ |
-| $\tilde p\wedge\tilde q$ | $\vec p\times\vec q$ |
 | $\tilde p^{\natural}\tilde q$ | $\bigl(p_0q_0+(\vec p,\vec q)\bigr)+p_0\vec q-q_0\vec p-\vec p\times\vec q$ |
+| $\tilde p\bullet\tilde q$ | $\bigl(p_0q_0-(\vec p,\vec q)\bigr)+p_0\vec q+q_0\vec p$ |
 | $N(\tilde p,\tilde q)e_0$ | $\bigl(p_0q_0+(\vec p,\vec q)\bigr)e_0$ |
+| $\tilde p\wedge\tilde q$ | $\vec p\times\vec q$ |
 | $\tilde p\wedge^{\natural}\tilde q$ | $p_0\vec q-q_0\vec p-\vec p\times\vec q$ |
 
-The plain triple is the general plain product, its symmetric half and its antisymmetric half; the quaternionic triple is the same three-fold split of the quaternionic product. The Jordan product is the symmetric part of the plain product and differs from it by the cross-product term; the cross product is the antisymmetric part of the plain product and is pure vector; the product $N(\tilde p,\tilde q)e_0$ is the symmetric part of the quaternionic product and is scalar; and the quaternionic cross product is its antisymmetric part and is pure vector.
+The plain triple is the general plain product, its symmetric half and its antisymmetric half; the quaternionic triple is the same three-fold split of the quaternionic product. The Jordan product is the symmetric part of the plain product and differs from it by the cross-product term; the product $N(\tilde p,\tilde q)e_0$ is the symmetric part of the quaternionic product and is scalar; the cross product is the antisymmetric part of the plain product and is pure vector; and the quaternionic cross product is the antisymmetric part of the quaternionic product and is pure vector.
 
 **Proposition (the reconstruction).** For all $\tilde p,\tilde q$,
 
@@ -81,11 +81,11 @@ So the algebraic norm of the six products carries the two algebraic norms of the
 
 ## The Two Exchanges
 
-The six products here are the six products of the six algebraic structures of *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, below this article in this category; the antisymmetric ones are the two Lie-layer products, and the symmetric ones the two Jordan-layer products.
+The six products here are the six products of the six algebraic structures of *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, below this article in this category; the antisymmetric ones are the two Lie-layer products, and the symmetric ones the two Jordan-layer products.
 
 ## Summary
 
-The two general products of $\mathbb{H}$ split under the interchange of their two slots, which is the bare exchange of the two arguments. The six products are the two general products $\tilde p\tilde q$ and $\tilde p^{\natural}\tilde q$ and their four halves: the Jordan product $\tilde p\bullet\tilde q=(p_0q_0-(\vec p,\vec q))+p_0\vec q+q_0\vec p$, the cross product $\tilde p\wedge\tilde q=\vec p\times\vec q$, the quaternion form as a product $N(\tilde p,\tilde q)e_0=(p_0q_0+(\vec p,\vec q))e_0$ and the quaternionic cross product $\tilde p\wedge^{\natural}\tilde q=p_0\vec q-q_0\vec p-\vec p\times\vec q$. The reconstruction is $\tilde p\tilde q=\tilde p\bullet\tilde q+\tilde p\wedge\tilde q$ and $\tilde p^{\natural}\tilde q=N(\tilde p,\tilde q)e_0+\tilde p\wedge^{\natural}\tilde q$.
+The two general products of $\mathbb{H}$ split under the interchange of their two slots, which is the bare exchange of the two arguments. The six products are the two general products $\tilde p\tilde q$ and $\tilde p^{\natural}\tilde q$ and their four halves: the Jordan product $\tilde p\bullet\tilde q=(p_0q_0-(\vec p,\vec q))+p_0\vec q+q_0\vec p$, the quaternion form as a product $N(\tilde p,\tilde q)e_0=(p_0q_0+(\vec p,\vec q))e_0$, the cross product $\tilde p\wedge\tilde q=\vec p\times\vec q$ and the quaternionic cross product $\tilde p\wedge^{\natural}\tilde q=p_0\vec q-q_0\vec p-\vec p\times\vec q$. The reconstruction is $\tilde p\tilde q=\tilde p\bullet\tilde q+\tilde p\wedge\tilde q$ and $\tilde p^{\natural}\tilde q=N(\tilde p,\tilde q)e_0+\tilde p\wedge^{\natural}\tilde q$.
 
 At the two equal arguments the antisymmetric products vanish and each general product equals its symmetric half: $\tilde p\bullet\tilde p=\tilde p^2=B(\tilde p)e_0+2p_0\vec p$ and $N(\tilde p,\tilde p)e_0=\tilde p^{\natural}\tilde p=N(\tilde p)e_0$, so the two squares are read off the two forms $B$ and $N$; the two antisymmetric products contribute no square.
 
@@ -94,10 +94,10 @@ At the two equal arguments the antisymmetric products vanish and each general pr
 | Symbol | Meaning |
 |---|---|
 | $\tilde p\tilde q$ | the general plain bilinear product |
-| $\tilde p\bullet\tilde q=\tfrac12(\tilde p\tilde q+\tilde q\tilde p)$ | the Jordan product, the symmetric half |
-| $\tilde p\wedge\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\vec p\times\vec q$ | the cross product, the antisymmetric half |
 | $\tilde p^{\natural}\tilde q$ | the general quaternionic bilinear product |
+| $\tilde p\bullet\tilde q=\tfrac12(\tilde p\tilde q+\tilde q\tilde p)$ | the Jordan product, the symmetric half |
 | $N(\tilde p,\tilde q)e_0=\tfrac12(\tilde p^{\natural}\tilde q+\tilde q^{\natural}\tilde p)$ | the quaternion form as a product |
+| $\tilde p\wedge\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\vec p\times\vec q$ | the cross product, the antisymmetric half |
 | $\tilde p\wedge^{\natural}\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)$ | the quaternionic cross product |
 | $\tilde p\tilde q=\tilde p\bullet\tilde q+\tilde p\wedge\tilde q$ | the reconstruction of the plain product |
 | $\tilde p^{\natural}\tilde q=N(\tilde p,\tilde q)e_0+\tilde p\wedge^{\natural}\tilde q$ | the reconstruction of the quaternionic product |

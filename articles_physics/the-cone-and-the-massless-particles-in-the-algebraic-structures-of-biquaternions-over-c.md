@@ -1,4 +1,4 @@
-# __The Cone and the Massless Particles in the 12 Structures of Biquaternions over $\mathbb{C}$__
+# __The Cone and the Massless Particles in the Algebraic Structures of Biquaternions over $\mathbb{C}$__
 
 ## Introduction
 
@@ -169,8 +169,9 @@ This part reads the cone under each of the twelve structures in turn: the produc
 multiplication off the cone and on it, what the cone is for that structure, and the physical interpretation
 of the reading. The mathematics of each row is owned by the mathematics companion and its block articles;
 the reading is this article's. The order is that of *The Twelve Structures Compared: Product, Law and Form*
-and of *Zero Divisors in the 12 Structures of Biquaternions over $\mathbb{C}$*: the four families in turn,
-and each family read general, symmetric, antisymmetric.
+and of *Zero Divisors in the Algebraic Structures of Biquaternions over $\mathbb{C}$*: the four general structures first, then
+their four symmetric parts, then their four antisymmetric parts, and inside each group the plain algebra,
+then the plain sesqualgebra, then the quaternionic algebra, then the quaternionic sesqualgebra.
 
 The companion reads the **zero-divisor set** of each structure, that is the set of elements whose left
 multiplication is not injective; this part reads the **cone** in each, that is the rank that multiplication
@@ -179,7 +180,7 @@ readings coincide on the four general rows, whose zero-divisor set is exactly th
 separate on the other eight. In $\mathrm{SPA}$ and $\mathrm{SQS}$ the zero-divisor set is strictly larger
 than the cone, the pure family joining it; in the six remaining rows the multiplication is already
 degenerate off the cone, so the whole punctured space is the zero-divisor set, while the cone is only a
-rank drop for $\mathrm{AQA}$ and $\mathrm{APS}$ and nothing at all for $\mathrm{SQA}$, $\mathrm{SPS}$,
+rank drop for $\mathrm{APS}$ and $\mathrm{AQA}$ and nothing at all for $\mathrm{SPS}$, $\mathrm{SQA}$,
 $\mathrm{APA}$ and $\mathrm{AQS}$.
 
 ### The twelve rows in one table
@@ -193,16 +194,16 @@ algebra-valued symmetric rows take two values on the cone, and their entry carri
 | row | product | rank off the cone | rank on the cone | what the cone is for the row |
 | --- | --- | --- | --- | --- |
 | GPA | $\tilde P\tilde Q$ | $8$ | $4$ | the boundary of invertibility |
-| SPA | $s_{\mathrm{pb}}(\tilde P,\tilde Q)$ | $8$, and $4$ on the pure subspace | $4$ on the pure part, $6$ on the rest | a degeneration locus, not the whole one |
-| APA | $a_{\mathrm{pb}}(\tilde P,\tilde Q)$ | $4$ | $4$ | none: the centre lies in the kernel |
-| GQA | $\tilde P^{\natural}\tilde Q$ | $8$ | $4$ | the boundary of invertibility |
-| SQA | $s_{\mathrm{qb}}(\tilde P,\tilde Q)$ | $2$ | $2$ | none: the image is the centre |
-| AQA | $a_{\mathrm{qb}}(\tilde P,\tilde Q)$ | $6$ | $4$ | a drop, not the whole locus |
 | GPS | $\tilde P\tilde Q^{*}$ | $8$ | $4$ | the boundary of invertibility |
-| SPS | $s_{\mathrm{ps}}(\tilde P,\tilde Q)$ | $2$ | $2$ | none: the image is the centre |
-| APS | $a_{\mathrm{ps}}(\tilde P,\tilde Q)$ | $6$ | $4$ | a drop, not the whole locus |
+| GQA | $\tilde P^{\natural}\tilde Q$ | $8$ | $4$ | the boundary of invertibility |
 | GQS | $\tilde P^{\natural}\tilde Q^{*}$ | $8$ | $4$ | the boundary of invertibility |
+| SPA | $s_{\mathrm{pb}}(\tilde P,\tilde Q)$ | $8$, and $4$ on the pure subspace | $4$ on the pure part, $6$ on the rest | a degeneration locus, not the whole one |
+| SPS | $s_{\mathrm{ps}}(\tilde P,\tilde Q)$ | $2$ | $2$ | none: the image is the centre |
+| SQA | $s_{\mathrm{qb}}(\tilde P,\tilde Q)$ | $2$ | $2$ | none: the image is the centre |
 | SQS | $s_{\mathrm{qs}}(\tilde P,\tilde Q)$ | $8$, and $4$ on the pure subspace | $4$ on the pure part, $6$ on the rest | a degeneration locus, not the whole one |
+| APA | $a_{\mathrm{pb}}(\tilde P,\tilde Q)$ | $4$ | $4$ | none: the centre lies in the kernel |
+| APS | $a_{\mathrm{ps}}(\tilde P,\tilde Q)$ | $6$ | $4$ | a drop, not the whole locus |
+| AQA | $a_{\mathrm{qb}}(\tilde P,\tilde Q)$ | $6$ | $4$ | a drop, not the whole locus |
 | AQS | $a_{\mathrm{qs}}(\tilde P,\tilde Q)$ | $4$ | $4$ | none: the centre lies in the kernel |
 
 Three statements follow, and together they are the grid-level answer to the question of whether the cone
@@ -221,7 +222,7 @@ belongs to a product.
   at a generic element off the cone and off the pure subspace and degenerate only on the pure subspace and
   on the cone.
 - **The cone is absorbing for exactly those four rows.** The product of a lightlike element with anything
-  is lightlike, $N(\tilde P)=0\Rightarrow N(\tilde P\star\tilde Q)=0$, for GPA, GQA, GPS and GQS; it fails
+  is lightlike, $N(\tilde P)=0\Rightarrow N(\tilde P\star\tilde Q)=0$, for GPA, GPS, GQA and GQS; it fails
   for the eight parts, where the symmetrisation or the antisymmetrisation mixes a lightlike term with a
   second term that need not be lightlike, and the sum can leave the cone.
 
@@ -249,6 +250,40 @@ irreversible processes. The reading is *The Light Cone as the Biquaternion Zero-
 
 The units are the elements off the cone, forming the group $\mathbb{B}^{\times}\simeq S^{1}\times S^{3}$ (*The Biquaternion Unit Group as a Topological Group*), and the cone is exactly the complement of that group: the boundary of invertibility is a group boundary, the apex included, the origin lying in the complement and being no zero divisor.
 
+### $\mathrm{GPS}$, the general plain sesqualgebra — probability
+
+The product is the pairing $\tilde P\tilde Q^{*}$. The rank is eight off the cone and four on it, so the cone
+is the exact boundary of invertibility, and it is absorbing. **The physical interpretation** is the
+probability reading of the same boundary: the sesquilinear square drops from rank two to rank one exactly on
+the cone, so the cone is the rank-drop locus of the Born weight and the pure-state boundary of the state
+cone. The reading is *Mass, Rank and the Positivity of the Dagger* and *The Spinor Space as a Hilbert Space
+of the General Plain Sesqualgebra*.
+
+The element $e_0$ is a right unit alone, and the invertible elements are the elements off the cone, with the solution $(\tilde P^{-1})^{*}$; the cone is the complement of those elements.
+
+### $\mathrm{GQA}$, the general quaternionic algebra — causality
+
+The product is $\tilde P^{\natural}\tilde Q$, the plain product with the natural conjugation in the first
+slot, and its square is the central interval. The rank is eight off the cone and four on it, so the cone is
+the exact boundary of invertibility, and it is absorbing. **The physical interpretation** is the causality
+reading of the same boundary: a lightlike element cannot be composed with, the rank drop is the algebraic
+form of that statement, and the orientation of the product makes the band measure a sign rather than a size.
+The reading is *The Interval as the Square and the Charge of the Material Composition* and *Why the Material
+Composition Is Oriented and Cannot Measure*.
+
+The element $e_0$ is a left unit alone; the invertible elements are the elements off the cone, with the solution $(\tilde P^{-1})^{\natural}$, and the cone is the complement of those elements.
+
+### $\mathrm{GQS}$, the general quaternionic sesqualgebra — gauge
+
+The product is the fourth product $\tilde P^{\natural}\tilde Q^{*}$. The rank is eight off the cone and four
+on it, so the cone is the exact boundary of invertibility, and it is absorbing.
+**The physical interpretation** is the gauge reading: the cone is the locus where the indefinite gauge
+metric degenerates, and the rank drop is the algebraic form of a gauge direction that cannot be normalised.
+The reading is *The Fourth Product and Its Indefinite Metric* and *The States the Indefinite Metric Cannot
+Normalise*.
+
+There is no unit on either side, and the invertible elements are the elements off the cone, with the solution $(\tilde P^{-1})^{\natural*}$; the cone is the complement of those elements.
+
 ### $\mathrm{SPA}$, the symmetric plain algebra — commutativity
 
 The product is the Jordan product $\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$. The left multiplication has
@@ -262,29 +297,17 @@ Algebra: the Symmetric Plain Product and the Classical Composition*.
 
 The unit $e_0$ is two-sided, and the invertible elements of the row are the complement of its zero-divisor set, the smaller set $\{Q_0\neq0,\ \mathrm{Norm}\neq0\}$ (together with $0$, which is in the complement and is no zero divisor). They form no group, the product being non-associative. The pure family is the difference: an element with $Q_0=0$ and $\mathrm{Norm}\neq0$ is a plain unit, invertible in the composition, and a zero divisor of the symmetrised row.
 
-### $\mathrm{APA}$, the antisymmetric plain algebra — rotation
+### $\mathrm{SPS}$, the symmetric plain sesqualgebra — positivity
 
-The product is the commutator $\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\vec P\times\vec Q$, which is
-alternating, and the left multiplication has real rank four off the cone and four on it. The cone is nothing
-for the row: the multiplication is already singular on the pure subspace, and the centre lies in its kernel.
-**The physical interpretation** is that the antisymmetric plain product is the bracket of rotations, a
-bracket and not a composition, so it has no inverse to lose and the cone cannot mark a boundary that does not
-exist. The reading is *The Cross Product as a Lie Bracket: Rotations and the Jacobi Identity* and *Angular
-Momentum and the Lie Algebra of the Material Sector*.
+The product is the symmetrisation $\tfrac12(\tilde P\tilde Q^{*}+\overline{\tilde Q\tilde P^{*}})$, which is
+scalar-valued, with the non-negative value $H(\tilde P,\tilde Q)$. The rank is two off the cone and two on
+it: the cone is nothing for the row, because the image is the centre. **The physical interpretation** is that
+a symmetrised pairing is a measurement and not an operation: it keeps the real part of the Born weight alone,
+and a real number inverts nothing, so the cone is invisible to it. The reading is *The Hermitian Form as a
+Product: Positivity and the Real Part of the Born Pairing* and *Why Probability Values Are Central: the
+Symmetric Sesquilinear Product and Its Cone*.
 
 The row has no unit, so there is no group of units and the complement of the whole punctured space is the origin alone.
-
-### $\mathrm{GQA}$, the general quaternionic algebra — causality
-
-The product is $\tilde P^{\natural}\tilde Q$, the plain product with the natural conjugation in the first
-slot, and its square is the central interval. The rank is eight off the cone and four on it, so the cone is
-the exact boundary of invertibility, and it is absorbing. **The physical interpretation** is the causality
-reading of the same boundary: a lightlike element cannot be composed with, the rank drop is the algebraic
-form of that statement, and the orientation of the product makes the band measure a sign rather than a size.
-The reading is *The Interval as the Square and the Charge of the Material Composition* and *Why the Material
-Composition Is Oriented and Cannot Measure*.
-
-The element $e_0$ is a left unit alone; the invertible elements are the elements off the cone, with the solution $(\tilde P^{-1})^{\natural}$, and the cone is the complement of those elements.
 
 ### $\mathrm{SQA}$, the symmetric quaternionic algebra — coupling
 
@@ -299,38 +322,29 @@ Elements*.
 
 The row has no unit, so there is no group of units and the complement of the whole punctured space is the origin alone.
 
-### $\mathrm{AQA}$, the antisymmetric quaternionic algebra — obstruction
+### $\mathrm{SQS}$, the symmetric quaternionic sesqualgebra — metric
 
-The product is the antisymmetrisation $\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$,
-which is alternating. The left multiplication has rank six off the cone and four on it, so the cone lowers
-the rank but is not the whole degeneration locus. **The physical interpretation** is that the bracket
-obstructs the internal action and does not close; the cone is a rank drop inside a band that is already
-singular, and a bracket that does not close is not a composition that a boundary could mark. The reading is
-*The Brackets That Do Not Close: the Jacobi Failure of the Quaternionic Commutator* and *Boosts, Mixed Terms
-and the Missing Lie Structure*.
+The product is the symmetrisation
+$\tfrac12(\tilde P^{\natural}\tilde Q^{*}+\overline{\tilde Q^{\natural}\tilde P^{*}})$. The rank is eight off
+the cone, except on the pure subspace where it is four, and on the cone it is four on the pure part and six
+on the rest: the cone is a degeneration locus of the row and not the whole one, and the row is not
+absorbing. **The physical interpretation** is that the symmetric part of the gauge metric is again a
+coupling, and the same witness applies: a symmetrised gauge coupling annihilates two operations whose vector
+parts are conjugate-orthogonal, $e_1\star e_2=0$, so the pure family and the cone degenerate together. The
+reading is *The Gauge Metric as a Product: the Symmetric Quaternionic Sesquilinear Product* and *Values in
+No Subspace: Why the Symmetric Gauge Product Is Not a State*.
 
-The row has no unit, so there is no group of units and the complement of the whole punctured space is the origin alone.
+The row has no unit, so the complement of the enlarged set, $\{Q_0\neq0,\ \mathrm{Norm}\neq0\}\cup\{0\}$, carries no group of units.
 
-### $\mathrm{GPS}$, the general plain sesqualgebra — probability
+### $\mathrm{APA}$, the antisymmetric plain algebra — rotation
 
-The product is the pairing $\tilde P\tilde Q^{*}$. The rank is eight off the cone and four on it, so the cone
-is the exact boundary of invertibility, and it is absorbing. **The physical interpretation** is the
-probability reading of the same boundary: the sesquilinear square drops from rank two to rank one exactly on
-the cone, so the cone is the rank-drop locus of the Born weight and the pure-state boundary of the state
-cone. The reading is *Mass, Rank and the Positivity of the Dagger* and *The Spinor Space as a Hilbert Space
-of the General Plain Sesqualgebra*.
-
-The element $e_0$ is a right unit alone, and the invertible elements are the elements off the cone, with the solution $(\tilde P^{-1})^{*}$; the cone is the complement of those elements.
-
-### $\mathrm{SPS}$, the symmetric plain sesqualgebra — positivity
-
-The product is the symmetrisation $\tfrac12(\tilde P\tilde Q^{*}+\overline{\tilde Q\tilde P^{*}})$, which is
-scalar-valued, with the non-negative value $H(\tilde P,\tilde Q)$. The rank is two off the cone and two on
-it: the cone is nothing for the row, because the image is the centre. **The physical interpretation** is that
-a symmetrised pairing is a measurement and not an operation: it keeps the real part of the Born weight alone,
-and a real number inverts nothing, so the cone is invisible to it. The reading is *The Hermitian Form as a
-Product: Positivity and the Real Part of the Born Pairing* and *Why Probability Values Are Central: the
-Symmetric Sesquilinear Product and Its Cone*.
+The product is the commutator $\tfrac12(\tilde P\tilde Q-\tilde Q\tilde P)=\vec P\times\vec Q$, which is
+alternating, and the left multiplication has real rank four off the cone and four on it. The cone is nothing
+for the row: the multiplication is already singular on the pure subspace, and the centre lies in its kernel.
+**The physical interpretation** is that the antisymmetric plain product is the bracket of rotations, a
+bracket and not a composition, so it has no inverse to lose and the cone cannot mark a boundary that does not
+exist. The reading is *The Cross Product as a Lie Bracket: Rotations and the Jacobi Identity* and *Angular
+Momentum and the Lie Algebra of the Material Sector*.
 
 The row has no unit, so there is no group of units and the complement of the whole punctured space is the origin alone.
 
@@ -346,30 +360,17 @@ Operators of the Antisymmetric Plain Sesquilinear Product and the Phase*.
 
 The row has no unit, so there is no group of units and the complement of the whole punctured space is the origin alone.
 
-### $\mathrm{GQS}$, the general quaternionic sesqualgebra — gauge
+### $\mathrm{AQA}$, the antisymmetric quaternionic algebra — obstruction
 
-The product is the fourth product $\tilde P^{\natural}\tilde Q^{*}$. The rank is eight off the cone and four
-on it, so the cone is the exact boundary of invertibility, and it is absorbing.
-**The physical interpretation** is the gauge reading: the cone is the locus where the indefinite gauge
-metric degenerates, and the rank drop is the algebraic form of a gauge direction that cannot be normalised.
-The reading is *The Fourth Product and Its Indefinite Metric* and *The States the Indefinite Metric Cannot
-Normalise*.
+The product is the antisymmetrisation $\tfrac12(\tilde P^{\natural}\tilde Q-\tilde Q^{\natural}\tilde P)$,
+which is alternating. The left multiplication has rank six off the cone and four on it, so the cone lowers
+the rank but is not the whole degeneration locus. **The physical interpretation** is that the bracket
+obstructs the internal action and does not close; the cone is a rank drop inside a band that is already
+singular, and a bracket that does not close is not a composition that a boundary could mark. The reading is
+*The Brackets That Do Not Close: the Jacobi Failure of the Quaternionic Commutator* and *Boosts, Mixed Terms
+and the Missing Lie Structure*.
 
-There is no unit on either side, and the invertible elements are the elements off the cone, with the solution $(\tilde P^{-1})^{\natural*}$; the cone is the complement of those elements.
-
-### $\mathrm{SQS}$, the symmetric quaternionic sesqualgebra — metric
-
-The product is the symmetrisation
-$\tfrac12(\tilde P^{\natural}\tilde Q^{*}+\overline{\tilde Q^{\natural}\tilde P^{*}})$. The rank is eight off
-the cone, except on the pure subspace where it is four, and on the cone it is four on the pure part and six
-on the rest: the cone is a degeneration locus of the row and not the whole one, and the row is not
-absorbing. **The physical interpretation** is that the symmetric part of the gauge metric is again a
-coupling, and the same witness applies: a symmetrised gauge coupling annihilates two operations whose vector
-parts are conjugate-orthogonal, $e_1\star e_2=0$, so the pure family and the cone degenerate together. The
-reading is *The Gauge Metric as a Product: the Symmetric Quaternionic Sesquilinear Product* and *Values in
-No Subspace: Why the Symmetric Gauge Product Is Not a State*.
-
-The row has no unit, so the complement of the enlarged set, $\{Q_0\neq0,\ \mathrm{Norm}\neq0\}\cup\{0\}$, carries no group of units.
+The row has no unit, so there is no group of units and the complement of the whole punctured space is the origin alone.
 
 ### $\mathrm{AQS}$, the antisymmetric quaternionic sesqualgebra — polarisation
 
@@ -464,13 +465,9 @@ $100$ random elements and on the parametrised pure isotropic cone.
 The comparison uses four forms, and the cone is the null set of one of them. Writing them out is what
 shows that the cone is a property of the interval rather than of either product.
 
-The **interval** is the form $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$, whose value is
-the sum $\sum_\mu P_\mu Q_\mu$, and whose algebraic norm is the biquaternion norm,
-$N(\tilde Q,\tilde Q)=N(\tilde Q)$. The light cone is its null set by construction.
-
 The four forms are the forms of the four families of the grid, one to a family (*The Twelve Structures
-Compared: Product, Law and Form*): $B$ belongs to the plain bilinear family, to GPA and SPA; $N$ to the
-quaternionic bilinear family, to GQA and SQA; $H$ to the plain sesquilinear family, to GPS and SPS; and
+Compared: Product, Law and Form*): $B$ belongs to the plain bilinear family, to GPA and SPA; $H$ to the
+plain sesquilinear family, to GPS and SPS; $N$ to the quaternionic bilinear family, to GQA and SQA; and
 $K$ to the quaternionic sesquilinear family, to GQS and SQS. The cone is the null set of the interval, so
 it is the null set of the form of the **quaternionic bilinear** family and not of the general plain pair:
 the natural conjugation is what produces the interval, while the plain product carries the sector sign.
@@ -499,6 +496,10 @@ $$
 which is positive for every nonzero element. A positive definite form has no nonzero null vector, so the
 cone is invisible to the probability weight: no element of the cone is null for $H$, and no element
 outside it is null either.
+
+The **interval** is the form $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$, whose value is
+the sum $\sum_\mu P_\mu Q_\mu$, and whose algebraic norm is the biquaternion norm,
+$N(\tilde Q,\tilde Q)=N(\tilde Q)$. The light cone is its null set by construction.
 
 The **fourth form** is $K(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})$, the gauge
 metric of the quaternionic sesquilinear product, whose algebraic norm is
@@ -895,8 +896,8 @@ the direction it forgets is again lightlike. Nullity is closed under the operati
 the four general rows the annihilator of a cone element is a plane inside the cone. The two-sided case is
 the elementary one, and it is the self-annihilation of a pure cone element, $\tilde P^{2}=0$; the non-pure
 case is the state, whose conjugate survives on both sides and whose two kernels differ in one further
-direction. The reading is *Annihilators in the 12 Structures of Biquaternions over $\mathbb{C}$*, with the
-mathematics in its companion *Annihilators in the 12 Algebraic Structures over the Biquaternion
+direction. The reading is *Annihilators in the Algebraic Structures of Biquaternions over $\mathbb{C}$*, with the
+mathematics in its companion *Annihilators in the Algebraic Structures over the Biquaternion
 $\mathbb{C}$ Space*.
 
 ### The cone as the root set of zero
@@ -908,10 +909,10 @@ square while the zero-divisor set is one set:
 
 - $\mathrm{GPA}$: the pure isotropic cone $\{Q_0=0,\ (\vec Q,\vec Q)=0\}$, of real dimension four,
   the lightlike displacements of the composition;
-- $\mathrm{GQA}$: the whole cone $\mathcal{C}$, of real dimension six, because the natural square is the
-  norm and every lightlike element annihilates itself;
 - $\mathrm{GPS}$: the origin alone, because the sesquilinear square has the definite scalar part
   $\sum_\mu\lvert Q_\mu\rvert^{2}$, so the probability band has no lightlike element;
+- $\mathrm{GQA}$: the whole cone $\mathcal{C}$, of real dimension six, because the natural square is the
+  norm and every lightlike element annihilates itself;
 - $\mathrm{GQS}$: the subfamily $\overline{\tilde Q}\tilde Q=0$, of real dimension four, a proper part of
   the cone that contains $e_0+ie_1$ and misses both the pure isotropic element $e_1+ie_2$ and the
   lightlike $ie_0+e_1+e_2+ie_3$.
@@ -934,10 +935,10 @@ lies on the cone. The set of the non-invertible operations is therefore strictly
 the lightlike ones, and the difference is made of the states. In the probability band the gap runs the
 other way and is total: the zero-divisor set is the whole punctured space while the square-zero set is the
 origin alone, so no amplitude of that band is lightlike, and an amplitude is non-invertible because it is
-a probability and not because it is lightlike. The readings are *Nilpotents in the 12 Structures of
-Biquaternions over $\mathbb{C}$*, *Square Roots of Minus One, Zero and Plus One in the 12 Structures of
-Biquaternions over $\mathbb{C}$* and *Square Roots of a General Element in the 12 Structures of
-Biquaternions over $\mathbb{C}$*, with the states in *Idempotents in the 12 Structures of Biquaternions
+a probability and not because it is lightlike. The readings are *Nilpotents in the Algebraic Structures of
+Biquaternions over $\mathbb{C}$*, *Square Roots of Minus One, Zero and Plus One in the Algebraic Structures of
+Biquaternions over $\mathbb{C}$* and *Square Roots of a General Element in the Algebraic Structures of
+Biquaternions over $\mathbb{C}$*, with the states in *Idempotents in the Algebraic Structures of Biquaternions
 over $\mathbb{C}$*; this subsection gathers their tables for the cone.
 
 ### The cone in the propagators and the causal kernels
@@ -1087,7 +1088,7 @@ not the same object, and the corpus keeps the two apart.
 The grid itself has a theorem about the cone, and it is the mathematical form of the part above.
 
 **The cone is the mark of the four general products.** Among the twelve structures the zero-divisor set is
-the punctured cone exactly for $\mathrm{GPA}$, $\mathrm{GQA}$, $\mathrm{GPS}$ and $\mathrm{GQS}$, and for no
+the punctured cone exactly for $\mathrm{GPA}$, $\mathrm{GPS}$, $\mathrm{GQA}$ and $\mathrm{GQS}$, and for no
 other; the eight derived sets are strictly larger, the six antisymmetric and scalar-valued symmetric
 structures covering the whole punctured space and the two remaining symmetric structures
 $\mathrm{SPA}$ and $\mathrm{SQS}$ carrying the enlarged set
@@ -1096,11 +1097,11 @@ the zero-divisor set of each of the twelve and is equal to the set of exactly fo
 subset on which the twelve agree, and an element of vanishing norm admits an annihilating factor in all
 twelve products. The corollary also breaks the ring-theoretic picture on the derived structures, since
 $e_1$, of norm $1$, is a zero divisor of $\mathrm{SPA}$ and of $\mathrm{SQS}$ — a zero divisor need not be a
-non-unit unless the product has a two-sided unit (*Zero Divisors in the 12 Algebraic Structures over the
+non-unit unless the product has a two-sided unit (*Zero Divisors in the Algebraic Structures over the
 Biquaternion $\mathbb{C}$ Space*).
 
-The four **forms** are the grid's second statement about the cone. The form of each family is one of $N$,
-$B$, $H$, $K$; $B$ and $H$ are definite on each sector and **carry no cone there**, while $N$ and $K$ are
+The four **forms** are the grid's second statement about the cone. The form of each family is one of $B$,
+$H$, $N$, $K$; $B$ and $H$ are definite on each sector and **carry no cone there**, while $N$ and $K$ are
 indefinite and carry the light cone. The interval $N$ has signature $(3,1)$ on the material sector and
 $(1,3)$ on the informational one, the same form with its inertia reversed by the sector; $K$ has realified
 signature $(2,6)$ and coincides with $\pm N$ on the two sectors. $N$ is **multiplicative** on the general
@@ -1175,7 +1176,7 @@ The ledger of the article, in the comparative form of the pair of bands.
 | The norm and the rank readings of mass detect the cone, and only the massless elements are detected by both at once | Interpretation | *The Four Readings of a Biquaternion: Norm, Rank, Charge and Scale* |
 | The vacuum is a minimal idempotent on the cone, the unit decomposing along two null directions | Interpretation | *The Biquaternion Vacuum as a Minimal Idempotent* |
 | The projective null cone is a cone over the Segre quadric, while the twistor form's null set is the real conformal cone | Theorem | *Twistor Theory and Biquaternions* |
-| The cone is the mark of the four general products and is contained in the zero-divisor set of all twelve | Theorem | *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* |
+| The cone is the mark of the four general products and is contained in the zero-divisor set of all twelve | Theorem | *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* |
 | $N$ and $K$ carry the cone while $B$ and $H$ carry none, and the null set of $B$ is a complex quadric of real dimension six | Theorem | *The Four Forms, the Four Algebraic Norms and the Change of Scalars* |
 | Indefinite-sector positivity is stated with the Krein cone of the negative interval | Theorem | *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra* |
 | In the four forms the cone is one of four null sets: $B$'s is a different complex cone of real dimension six, $H$'s is the origin alone and $K$'s is the Krein cone of real dimension seven | Theorem | *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* |
@@ -1187,12 +1188,12 @@ The ledger of the article, in the comparative form of the pair of bands.
 | The positivity map sends the units into the interior of the Hermitian cone and the cone onto its boundary | Theorem | *Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint* |
 | The cone's isotropic lines are the Peirce lines, the doubly null lines, and the cone meets the Krein null set in their union, a cone of real dimension four | Theorem | *The Isotropic Structure of the General Quaternionic Sesqualgebra* |
 | The level sets of the Hermitian form are the real hyperboloids, whose future nappe on a Minkowski slice is the Hermitian cone | Theorem | *The Krein Level Sets and the Hyperbolic Structure* |
-| The annihilator of a cone element is a plane inside the cone, and the killers of a lightlike element are lightlike | Theorem | *Annihilators in the 12 Structures of Biquaternions over $\mathbb{C}$* |
-| The four planes of a cone element are one plain plane read through the two conjugations | Theorem | *Annihilators in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* |
-| The left and right annihilators differ exactly in $\mathrm{GPA}$ and $\mathrm{GQS}$, and only at a cone element | Theorem | *Annihilators in the 12 Structures of Biquaternions over $\mathbb{C}$* |
-| The four general products have one zero-divisor set and four root sets of zero: pure cone, whole cone, origin, $\overline{\tilde Q}\tilde Q=0$ | Theorem | *Nilpotents in the 12 Structures of Biquaternions over $\mathbb{C}$*; *Square Roots of a General Element in the 12 Structures of Biquaternions over $\mathbb{C}$* |
-| The root-set order $\{0\}=Z_3\subsetneq Z_1\subsetneq Z_2$, $Z_3\subsetneq Z_4\subsetneq Z_2$, $Z_1\cap Z_4=\{0\}$ | Theorem | *Nilpotents in the 12 Structures of Biquaternions over $\mathbb{C}$* |
-| A state is a zero divisor that is not square-zero, so the non-invertible set is larger than the lightlike one | Interpretation | *Nilpotents in the 12 Structures of Biquaternions over $\mathbb{C}$*; *Idempotents in the 12 Structures of Biquaternions over $\mathbb{C}$* |
+| The annihilator of a cone element is a plane inside the cone, and the killers of a lightlike element are lightlike | Theorem | *Annihilators in the Algebraic Structures of Biquaternions over $\mathbb{C}$* |
+| The four planes of a cone element are one plain plane read through the two conjugations | Theorem | *Annihilators in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* |
+| The left and right annihilators differ exactly in $\mathrm{GPA}$ and $\mathrm{GQS}$, and only at a cone element | Theorem | *Annihilators in the Algebraic Structures of Biquaternions over $\mathbb{C}$* |
+| The four general products have one zero-divisor set and four root sets of zero: pure cone, whole cone, origin, $\overline{\tilde Q}\tilde Q=0$ | Theorem | *Nilpotents in the Algebraic Structures of Biquaternions over $\mathbb{C}$*; *Square Roots of a General Element in the Algebraic Structures of Biquaternions over $\mathbb{C}$* |
+| The root-set order $\{0\}=Z_3\subsetneq Z_1\subsetneq Z_2$, $Z_3\subsetneq Z_4\subsetneq Z_2$, $Z_1\cap Z_4=\{0\}$ | Theorem | *Nilpotents in the Algebraic Structures of Biquaternions over $\mathbb{C}$* |
+| A state is a zero divisor that is not square-zero, so the non-invertible set is larger than the lightlike one | Interpretation | *Nilpotents in the Algebraic Structures of Biquaternions over $\mathbb{C}$*; *Idempotents in the Algebraic Structures of Biquaternions over $\mathbb{C}$* |
 | $m=0$, the mass scale, and the transverse reduction | Imported | *The Null Four-Momentum: What the Cone Derives and What It Does Not* |
 
 The two vocabularies are the same cone read twice, and the reading is what the comparison adds. The
@@ -1305,10 +1306,10 @@ non-invertible without being lightlike.
 - ${}^{\natural}$ natural conjugation; $\bar{\cdot}$ coefficient conjugation; ${}^{*}=\bar{\cdot}\circ{}^{\natural}$ Hermitian conjugation; $\tilde Q^{\flat}=-\tilde Q^{*}$.
 - $\mathrm{Sc}$ scalar part, $\mathrm{Tr}=2\,\mathrm{Sc}$; $N(\tilde Q)=\tilde Q\tilde Q^{\natural}=\sum_\mu Q_\mu^{2}$ the biquaternion norm, $N(\tilde Q)=\det\mathsf{M}_2(\tilde Q)$.
 - $\tilde P\tilde Q$ the plain product (composition, GPA); $\tilde P\star\tilde Q=\tilde P\tilde Q^{*}$ the plain sesquilinear product (probability, GPS).
-- $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ the interval; $B=\mathrm{Sc}(\tilde P\tilde Q)$ the sector sign; $H=\mathrm{Sc}(\tilde P\tilde Q^{*})$ the probability weight; $K=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})$ the fourth form.
+- $B=\mathrm{Sc}(\tilde P\tilde Q)$ the sector sign; $H=\mathrm{Sc}(\tilde P\tilde Q^{*})$ the probability weight; $N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ the interval; $K=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})$ the fourth form.
 - The cone is $\{\tilde Q\neq0:N(\tilde Q)=0\}$, the zero-divisor set; pure means $\mathrm{Sc}\,\tilde X=0$, isotropic means $\sum_k X_k^{2}=0$.
 - "The cone" without qualification is the zero-divisor cone; the state cone is the future cone of $\mathbb{M}_+$, and the cone of an operation is the ray $\mathbb{R}_{\ge0}e_0$. The gauge metric has its own null set $\{K=0\}$.
-- The twelve rows: GPA, GQA, GPS, GQS the four general products; SPA, SQA, SPS, SQS the symmetric parts; APA, AQA, APS, AQS the antisymmetric parts; $L_{\tilde P}$ the left multiplication of the row, of rank read on the eight real parameters; $\Theta_{\tilde Q}$ the sandwich $\Theta_{\tilde Q}(\tilde R)=\tilde Q\tilde R\tilde Q^{*}$.
+- The twelve rows: GPA, GPS, GQA, GQS the four general products; SPA, SPS, SQA, SQS the symmetric parts; APA, APS, AQA, AQS the antisymmetric parts; $L_{\tilde P}$ the left multiplication of the row, of rank read on the eight real parameters; $\Theta_{\tilde Q}$ the sandwich $\Theta_{\tilde Q}(\tilde R)=\tilde Q\tilde R\tilde Q^{*}$.
 - $\mathbb{M}_\pm$ the anti-Hermitian and Hermitian sectors; $\mathbb{H}_{\mathbb{B}}$ the real-quaternion subspace; $\mathbb{C}_{\mathbb{B}}$ the centre.
 - $\tilde\Pi$ a plain idempotent, $\tilde\Pi^{2}=\tilde\Pi$; $\tilde\Pi(\hat u)=\tfrac12(e_0+i\hat u)$; $\Box=\tilde\nabla\tilde\nabla^{\natural}$.
 - $\mathsf{M}_2$ the $2\times2$ matrix model, $\mathsf{M}_2(e_0)=I_2$, $\mathsf{M}_2(e_k)=-i\sigma_k$; $\mathrm{ISO}(2)$ the massless little group.
@@ -1323,8 +1324,8 @@ non-invertible without being lightlike.
 - The massless particles: *The Null Four-Momentum: What the Cone Derives and What It Does Not*; *The Photon in Biquaternionic Form*; *Canonical Quantization of the Biquaternion Graviton Field*; *Canonical Quantization of the Biquaternion Rarita–Schwinger Field*; *Chiral Fermions in the Biquaternion Framework*; *Conformal Invariance and the Massless Limit in Biquaternionic Form*; *The Celestial Sphere of the Null Cone: Null Directions, Chirality and the Phase*.
 - The map of the four products and their forms: *The Four General Products and Their Physical Readings* (which owns the sector collapse $K=\pm N$).
 - The other bands of the grid, for the cone's other faces: *The Interval as the Square and the Charge of the Material Composition* and *The Operators of the Quaternionic Product: the Opposite Monoid and the Norm* (causality, the absorbing set and the collapsing multiplication); *Why a Central Product Cannot Compose: the Radical and the Isotropic Elements* and *The Quaternion Form as a Product: the Scalar Coupling of Two Material Operations* (coupling, the character and the comparison that normalises none); *The States the Indefinite Metric Cannot Normalise* and *The Fourth Product and Its Indefinite Metric* (gauge, the null set and the intersection with the cone); *Why Probability Values Are Central: the Symmetric Sesquilinear Product and Its Cone* (positivity, the ray that is not the state cone).
-- The zero-divisor set of each structure: *Zero Divisors in the 12 Structures of Biquaternions over $\mathbb{C}$* (the twelve readings this article's third part is the cone counterpart of), and the algebraic background in *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, *The 12 Products of the Biquaternion Complex Space* and *Centre, Units, Zero Divisors and Division Algebras*.
-- The other faces of the same cone in the comparison family: *Annihilators in the 12 Structures of Biquaternions over $\mathbb{C}$* (the annihilator plane of a lightlike element and the chirality of the two sides); *Nilpotents in the 12 Structures of Biquaternions over $\mathbb{C}$*, *Square Roots of Minus One, Zero and Plus One in the 12 Structures of Biquaternions over $\mathbb{C}$* and *Square Roots of a General Element in the 12 Structures of Biquaternions over $\mathbb{C}$* (the four root sets of zero and the gap between the lightlike displacements and the states); *Idempotents in the 12 Structures of Biquaternions over $\mathbb{C}$* (the states on the cone and the measurement that has no inverse).
+- The zero-divisor set of each structure: *Zero Divisors in the Algebraic Structures of Biquaternions over $\mathbb{C}$* (the twelve readings this article's third part is the cone counterpart of), and the algebraic background in *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, *The 12 Products of the Biquaternion Complex Space* and *Centre, Units, Zero Divisors and Division Algebras*.
+- The other faces of the same cone in the comparison family: *Annihilators in the Algebraic Structures of Biquaternions over $\mathbb{C}$* (the annihilator plane of a lightlike element and the chirality of the two sides); *Nilpotents in the Algebraic Structures of Biquaternions over $\mathbb{C}$*, *Square Roots of Minus One, Zero and Plus One in the Algebraic Structures of Biquaternions over $\mathbb{C}$* and *Square Roots of a General Element in the Algebraic Structures of Biquaternions over $\mathbb{C}$* (the four root sets of zero and the gap between the lightlike displacements and the states); *Idempotents in the Algebraic Structures of Biquaternions over $\mathbb{C}$* (the states on the cone and the measurement that has no inverse).
 - The grid of the twelve structures: *The 12 Products of the Biquaternion Complex Space*; *The Twelve Structures Compared: Product, Law and Form*; *The Operators of the Twelve Structures: Multiplication, Adjoint and Bracket*.
 - The cone in the other realisations of the grid: *The Symplectic Form and the Biquaternion Norm Cone* (the cone as the isotropic locus of the sector sign on the phase space, and as the characteristic cone of the d'Alembertian); *The 2×2 Matrix Operator Representation $\mathsf M_2(\mathbb C)$ of Biquaternions* (the collapse of the congruence, from rank four to rank one); *Conformal Invariance and the Massless Limit in Biquaternionic Form* (the massless limit as a degeneration of the symbol); *Decoherence as Idempotent Projection* (the rank-one collapse read as information loss); *Biquaternion Rotations and Lorentz Transformations* (the rank-one stratum under the rotor group).
 - The cone as a topological object: *The Topology of the Zero-Divisor Cone* (the singular set, the contractibility, the link); *The Null Quadric and Its Projective Geometry* (the Segre quadric, the two rulings, the polarity).
@@ -1332,7 +1333,7 @@ non-invertible without being lightlike.
 - The cone as the boundary of the positive cone and of the state cone: *POVMs and the Positive Cone in Biquaternionic Form*; *Von Neumann Entropy and the Biquaternion Norm*; *The Double-Slit Experiment in Biquaternionic Form*; *Pancharatnam's Phase and the Polarization Sphere in Biquaternionic Form*; *The Generalized Bloch Ball for Spin 1 in the Biquaternion Framework* (the future light cone of the norm, self-duality, the infinite-slope entropy, the contrast bound and the Poincaré sphere, and the qutrit as the limit of the cone picture).
 - The cone as the causal and informational boundary: *The Relativistic Exchange of Information and Clock Synchronisation in Biquaternionic Form*; *The Unruh Effect in Biquaternionic Form*; *Hawking Radiation in Biquaternionic Form*; *Shock Electromagnetic Waves*; *Velocity Space as Hyperbolic Geometry in Biquaternionic Form*; *The Conformal Group in Biquaternionic Form*; *The Effective Optical Metric of the Local Complex Structure*; *The Local Complex Structure and the Speed of Light* (the null channel, the Rindler horizon, the pointwise horizon cone, the characteristic cone, the absolute, the conformal invariant, the optical aperture).
 - The cone in the rest of the physics: *The Four Readings of a Biquaternion: Norm, Rank, Charge and Scale* (the norm and the rank detect the cone); *The Fourth Product and Its Indefinite Metric* (the indefinite metric and the Krein form); *The Biquaternion Vacuum as a Minimal Idempotent*; *The Lorentz Group as Biquaternion Norm Automorphisms*; *Twistor Theory and Biquaternions*; *Dirac Matter: Graphene, Dirac Cones and Topological Insulators in Biquaternionic Form* (the vacuum on the cone, the norm automorphisms, the projective quadric, the emergent cones).
-- The cone in the twelve-structure mathematics: *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (the theorem and its corollary); *The Four Forms, the Four Algebraic Norms and the Change of Scalars* (which forms carry the cone); *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra* (the Krein cone).
+- The cone in the twelve-structure mathematics: *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (the theorem and its corollary); *The Four Forms, the Four Algebraic Norms and the Change of Scalars* (which forms carry the cone); *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra* (the Krein cone).
 - The cone among the four null sets: *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; *Remarkable Subspaces and the Four Forms*; *The Krein Level Sets and the Hyperbolic Structure* (the four null sets and the dimensions they drop to on the remarkable subspaces, the Krein cone and the real hyperboloids whose boundary the cone is).
 - The cone as the critical set of the square: *The Zero Divisors and the Singular Julia Sets*; *The Biquaternion Quadratic Map and Its Julia Sets* (the affine action of the square on the cone, the critical set and the idempotents on the Julia set of the parameter zero); *The Squares and the Positive Cone of the Biquaternion Sesqualgebra* (the natural square as the largest nontrivial vanishing set, against the sesquilinear square that vanishes only at the origin).
 - The cone as the complement of the units: *The Biquaternion Unit Group as a Topological Group* (the units off the cone, the covering and the homotopy groups); *Biquaternion Lorentzian and Conformal Geometry* (the Minkowski slice, its real light cone and the link $S^{2}\sqcup S^{2}$).

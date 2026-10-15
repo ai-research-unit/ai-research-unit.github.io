@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A root of a central value is defined by an equation in which the product occurs, so it belongs to the product (*Definitions for the Study of the 12 Algebraic Structures*, §*Powers, the Square and the Roots*). The block of this article is the antisymmetric plain sesquilinear product
+A root of a central value is defined by an equation in which the product occurs, so it belongs to the product (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*). The block of this article is the antisymmetric plain sesquilinear product
 
 $$
 \tilde P\diamond\tilde Q=\operatorname{Vect}\bigl(\tilde P\tilde Q^{*}\bigr)
@@ -33,7 +33,7 @@ $$
 \tilde\Xi\star\tilde\Xi=\lambda e_0 .
 $$
 
-The three central values the biquaternion algebra singles out are $-1$, $+1$ and $0$: the roots of $-1$ are the imaginary units, the roots of $+1$ are the involutions, and the roots of $0$ are the nonzero nilpotents of the product (*Definitions for the Study of the 12 Algebraic Structures*, §*Powers, the Square and the Roots*).
+The three central values the biquaternion algebra singles out are $-1$, $+1$ and $0$: the roots of $-1$ are the imaginary units, the roots of $+1$ are the involutions, and the roots of $0$ are the nonzero nilpotents of the product (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*).
 
 **Definition (idempotent of a product).** Let $\star$ be a product on $\mathbb{B}$. An element $\tilde\Pi$ is an **idempotent of $\star$** when
 
@@ -41,7 +41,7 @@ $$
 \tilde\Pi\star\tilde\Pi=\tilde\Pi .
 $$
 
-The origin and, when the product is unital, the unit are idempotents of every product: they are the **trivial idempotents**, and the others are **nontrivial** (*Definitions for the Study of the 12 Algebraic Structures*, §*The Idempotent, the Projection and the Peirce Decomposition*).
+The origin and, when the product is unital, the unit are idempotents of every product: they are the **trivial idempotents**, and the others are **nontrivial** (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Idempotent, the Projection and the Peirce Decomposition*).
 
 Throughout this article the product is the **block** $\diamond$, and unqualified, *root* means a root of a central value in $\diamond$ and *idempotent* means an idempotent of $\diamond$; the value is fixed at $+1$ in §*The Root of One*. In a unital associative product the idempotent is the root of $+1$ in a scaled sense: the halving map $\tilde\Xi\mapsto\tfrac12(e_0+\tilde\Xi)$ is a bijection from the roots of $+1$ onto the idempotents, with inverse $\tilde\Xi=2\tilde\Pi-e_0$, because $\tilde\Xi^{2}=e_0$ exactly when the idempotent equation holds at $\tfrac12(e_0+\tilde\Xi)$. The block is not associative and carries no unit, so the map is not read on it; its root set of $+1$ is empty and its idempotents are determined directly in §*The Idempotents*.
 
@@ -116,7 +116,7 @@ The two absences, the idempotent and the projector, have one source, the conjuga
 
 **Remark (the parent idempotents).** The parent of the block is the general plain sesquilinear product $\tilde P\tilde Q^{*}$, whose idempotents are the Hermitian idempotents, the elements $\tilde\Pi$ with $\tilde\Pi\tilde\Pi^{*}=\tilde\Pi$ and $\tilde\Pi^{*}=\tilde\Pi$; they are the two trivial idempotents $0$ and $e_0$ together with the sphere $\tfrac12e_0+i\vec u$ over the real vectors $\vec u$ with $(\vec u,\vec u)=\tfrac14$, and the block does not inherit them. The diagonal of such an element is $\operatorname{Vect}(\tilde\Pi\tilde\Pi^{*})=\operatorname{Vect}(\tilde\Pi)$, its own vector part, so a Hermitian idempotent is a block idempotent only when it equals its own vector part; and a pure Hermitian element $i\vec u$, whose block square is $0$, is a block idempotent only at the origin. The two idempotent sets therefore meet only at the origin, and the two sesquilinear blocks of the plain row have disjoint idempotent theories.
 
-The block is one row of the table of the twelve idempotent sets, where the plain product carries the family $\tfrac12(e_0+\tilde\Xi)$ over its roots $\tilde\Xi$ of $+1$ and the natural product carries the trivial pair alone; the tabulation is *Idempotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Twelve Idempotent Sets*, and the idempotents of the general plain product are *Idempotents of the General Plain Algebra*.
+The block is one row of the table of the twelve idempotent sets, where the plain product carries the family $\tfrac12(e_0+\tilde\Xi)$ over its roots $\tilde\Xi$ of $+1$ and the natural product carries the trivial pair alone; the tabulation is *Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Twelve Idempotent Sets*, and the idempotents of the general plain product are *Idempotents of the General Plain Algebra*.
 
 ## Summary
 
@@ -139,10 +139,10 @@ The idempotent equation $\tilde\Pi\diamond\tilde\Pi=\tilde\Pi$ reduces to $-\vec
 
 ## Further Reading
 
-- *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), §*Powers, the Square and the Roots* and §*The Idempotent, the Projection and the Peirce Decomposition*, for the root of a central value, the idempotent and the halving map.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), §*Powers, the Square and the Roots* and §*The Idempotent, the Projection and the Peirce Decomposition*, for the root of a central value, the idempotent and the halving map.
 - *Introduction to the Antisymmetric Plain Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-plain-sesqualgebra-of-biquaternions.md`), for the operation, its conjugate-alternation and its table.
 - *Square Roots of Zero and the Nilpotents of the Antisymmetric Plain Sesqualgebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-antisymmetric-plain-sesqualgebra.md`), for the roots of $0$ and the other face of the projection.
 - *Square Roots of a General Element in the Antisymmetric Plain Sesqualgebra* (`articles_maths/square-roots-of-a-general-element-in-the-antisymmetric-plain-sesqualgebra.md`), for the square map of the block and the arbitrary right side.
 - *Idempotents of the General Plain Algebra* (`articles_maths/idempotents-of-the-general-plain-algebra-of-quaternions.md`), for the idempotent family of the general plain product, against which the block's origin alone is read.
-- *Idempotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/idempotents-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), §*The Twelve Idempotent Sets*, for the idempotent sets of the twelve structures side by side.
+- *Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/idempotents-in-the-algebraic-structures-over-the-biquaternion-c-space.md`), §*The Twelve Idempotent Sets*, for the idempotent sets of the twelve structures side by side.
 - *The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra* (`articles_maths/the-vector-part-of-the-square-and-the-jacobi-failure-of-the-antisymmetric-plain-sesqualgebra.md`), for the criterion for the vanishing of the diagonal.

@@ -9,7 +9,7 @@ $$
 A_\star(\tilde q)=\{\tilde x:\tilde q\star\tilde x=0\},\qquad
 B_\star(\tilde q)=\{\tilde x:\tilde x\star\tilde q=0\},
 $$
-the left and the right annihilator (*Definitions for the Study of the 12 Algebraic Structures*,
+the left and the right annihilator (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*,
 §*The Zero Divisor and the Annihilator*). When the product is carried by a multiplication operator
 the annihilator is the kernel of that operator, so it is a real subspace of the four-dimensional
 space $\mathbb{H}$.
@@ -32,7 +32,7 @@ origin.
 The article is short, and it is short for one reason: the block has no zero divisors. There is no
 *Zero Divisors* article for it, because there is no zero-divisor set to describe, and the
 annihilator is read off the division property in a page. This is the element-level annihilator. It
-is not the structure-level *Annihilators in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, whose object is the annihilating set of an element that kills the
+is not the structure-level *Annihilators in the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, whose object is the annihilating set of an element that kills the
 **whole** space for a fixed product, the radical; here the product is fixed and the element varies.
 
 ## The Annihilator of a Product
@@ -191,7 +191,7 @@ algebra, of determinant $N(\tilde p)^2=(p_0^2+|\vec p|^2)^2$, invertible at ever
 $\tilde p$. The common annihilator is therefore $\{0\}$ at every nonzero element and the whole
 space at the origin, and the dichotomy has these two rows and no more. The block has no zero
 divisors and no *Zero Divisors* article, and its element-level annihilator is distinct from the
-structure-level annihilating set of *Annihilators in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, which fixes the product and reads the elements
+structure-level annihilating set of *Annihilators in the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, which fixes the product and reads the elements
 that kill the whole space. The complex sibling, where the norm becomes isotropic, has a cone and a
 plane on it; over $\mathbb{R}$ the division property leaves nothing.
 
@@ -210,10 +210,10 @@ plane on it; over $\mathbb{R}$ the division property leaves nothing.
 
 ## Further Reading
 
-- *Definitions for the Study of the 6 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-6-algebraic-structures.md`), §*The Element Vocabulary*, for the zero divisor, the annihilator and the regular element of a general product.
+- *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-quaternion-r-space.md`), §*The Element Vocabulary*, for the zero divisor, the annihilator and the regular element of a general product.
 - *Introduction to the General Quaternionic Algebra of Quaternions* (`articles_maths/introduction-to-the-general-quaternionic-algebra-of-quaternions.md`), for the product, its table and its conjugation.
 - *Norm and Invertibility in the General Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra-of-quaternions.md`), for the definite norm, its multiplicativity and the absence of zero divisors.
 - *The Isotropic Structure of the General Quaternionic Algebra* (`articles_maths/the-isotropic-structure-of-the-general-quaternionic-algebra-of-quaternions.md`), for the definiteness of the form and the emptiness of the isotropic structure.
 - *One-Sided Operators on the General Quaternionic Algebra of Quaternions* (`articles_maths/one-sided-operators-on-the-general-quaternionic-algebra-of-quaternions.md`), for the left and the right multiplications and their injectivity.
-- *Annihilators in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/annihilators-in-the-6-algebraic-structures-over-the-quaternion-r-space.md`), for the structure-level annihilating set over the whole space, which is $\{0\}$ for the general quaternionic product.
+- *Annihilators in the Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/annihilators-in-the-algebraic-structures-over-the-quaternion-r-space.md`), for the structure-level annihilating set over the whole space, which is $\{0\}$ for the general quaternionic product.
 - *Annihilators of the General Quaternionic Algebra* (`articles_maths/annihilators-of-the-general-quaternionic-algebra.md`), the complex sibling, whose annihilator is a complex plane on the zero-divisor cone that the passage to $\mathbb{R}$ removes.

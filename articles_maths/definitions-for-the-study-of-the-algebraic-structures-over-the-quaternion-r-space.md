@@ -1,12 +1,12 @@
-# __Definitions for the Study of the 6 Algebraic Structures__
+# __Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space__
 
 ## Introduction
 
-The six structures of *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* are read through a vocabulary of elements and of identities which the six blocks that follow use without restating it. This article fixes that vocabulary once: the **element vocabulary** — the square, the powers, the unit and the units, the inverse, the radical, the zero divisor, the idempotent, the nilpotent and the square root of a central value — is stated for an arbitrary real-bilinear product and then read on the six; the **identity vocabulary** — alternating, flexible, Jordan, Jacobi, power-associative and the degree-three identities — is stated with its mutual implications; and the **criterion for an empty class** is given, the rule by which a class defined by an equation is recognized as empty from the laws of the product alone.
+The six structures of *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space* are read through a vocabulary of elements and of identities which the six blocks that follow use without restating it. This article fixes that vocabulary once: the **element vocabulary** — the square, the powers, the unit and the units, the inverse, the radical, the zero divisor, the idempotent, the nilpotent and the square root of a central value — is stated for an arbitrary real-bilinear product and then read on the six; the **identity vocabulary** — alternating, flexible, Jordan, Jacobi, power-associative and the degree-three identities — is stated with its mutual implications; and the **criterion for an empty class** is given, the rule by which a class defined by an equation is recognized as empty from the laws of the product alone.
 
-Nothing here is a theorem about the quaternion space; the article is the common grammar of the six blocks, and every statement in it is a definition or an implication among definitions. The six products and the six structures are those of *The 6 Products of the Quaternion Real Space* and *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, the two articles preceding this one.
+Nothing here is a theorem about the quaternion space; the article is the common grammar of the six blocks, and every statement in it is a definition or an implication among definitions. The six products and the six structures are those of *The 6 Products of the Quaternion Real Space* and *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, the two articles preceding this one.
 
-**Conventions.** Throughout, $f$ is a real-bilinear binary rule on the space $\mathbb{H}$, written multiplicatively $f(x,y)=xy$ in the statements about a general product, and $x,y,z$ name elements. When the product of a statement is one of the six, it is named by its abbreviation of *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*. The element $0$ is the zero vector and $e$ names a unit.
+**Conventions.** Throughout, $f$ is a real-bilinear binary rule on the space $\mathbb{H}$, written multiplicatively $f(x,y)=xy$ in the statements about a general product, and $x,y,z$ name elements. When the product of a statement is one of the six, it is named by its abbreviation of *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*. The element $0$ is the zero vector and $e$ names a unit.
 
 ## The Element Vocabulary
 
@@ -62,19 +62,19 @@ for all $x,y,z$.
 
 ## The Reading on the Six
 
-The table records, for each identity, the structures of the six that satisfy it, on the basis pairs and triples of *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*.
+The table records, for each identity, the structures of the six that satisfy it, on the basis pairs and triples of *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*.
 
-| identity | $\mathrm{GPA}$ | $\mathrm{SPA}$ | $\mathrm{APA}$ | $\mathrm{GQA}$ | $\mathrm{SQA}$ | $\mathrm{AQA}$ |
+| identity | $\mathrm{GPA}$ | $\mathrm{GQA}$ | $\mathrm{SPA}$ | $\mathrm{SQA}$ | $\mathrm{APA}$ | $\mathrm{AQA}$ |
 |---|---|---|---|---|---|---|
-| alternating | no | no | **yes** | no | no | **yes** |
-| flexible | yes | yes | yes | no | yes | yes |
-| power-associative | yes | yes | yes | no | yes | yes |
-| Jordan identity | yes | yes | yes | yes | no | yes |
+| alternating | no | no | no | no | **yes** | **yes** |
+| flexible | yes | no | yes | yes | yes | yes |
+| power-associative | yes | no | yes | yes | yes | yes |
+| Jordan identity | yes | yes | yes | no | yes | yes |
 | associative | **yes** | no | no | no | no | no |
 | alternative | yes | no | no | no | no | no |
-| Jacobi identity | no | no | **yes** | no | no | no |
+| Jacobi identity | no | no | no | no | **yes** | no |
 
-The reading is the law table of *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* reordered by identity rather than by structure, and it obeys the implications above: the two antisymmetric structures are the only alternating ones, they are flexible and power-associative and cube-zero by the second implication; the two symmetric structures are flexible and power-associative by the third; the general plain structure is the only associative one and hence flexible, power-associative and Jordan; and the general quaternionic structure is the only one whose half-products carry no law that the product itself inherits, its first factor being conjugated.
+The reading is the law table of *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space* reordered by identity rather than by structure, and it obeys the implications above: the two antisymmetric structures are the only alternating ones, they are flexible and power-associative and cube-zero by the second implication; the two symmetric structures are flexible and power-associative by the third; the general plain structure is the only associative one and hence flexible, power-associative and Jordan; and the general quaternionic structure is the only one whose half-products carry no law that the product itself inherits, its first factor being conjugated.
 
 The Jordan identity holds for five of the six, the antisymmetric structures included, and it fails only for the symmetric quaternionic structure: the Jordan identity is weak, and the structure called the Jordan layer is $\mathrm{SPA}$ because its product is symmetric and the identity is the strongest law it has, not because it is the only one satisfying the identity.
 

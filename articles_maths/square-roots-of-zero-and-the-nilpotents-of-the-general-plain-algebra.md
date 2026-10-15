@@ -14,7 +14,7 @@ The second is the nilpotents of the algebra, the nonzero elements whose square v
 
 **The results.** The roots of $0$ are the origin together with the nilpotent cone, the pure biquaternions whose complex vector part is isotropic, a four-real-parameter family. The nilpotents are exactly the nonzero pure elements with $P_0=0$ and $P_1^2+P_2^2+P_3^2=0$; they form the nilpotent cone of complex dimension two and real dimension four inside the vector subspace, and lie in no other remarkable subspace. Every nilpotent has index two, so $\tilde P^3=0$ exactly when $\tilde P^2=0$. Each nonzero nilpotent annihilates itself and is a two-sided zero divisor, the pure family of the zero-divisor set; no nilpotent is an idempotent, the two classes meeting only at $0$; and under the $2\times2$ matrix model the nilpotents are the nonzero trace-free singular matrices.
 
-The article is algebraic. The zero-divisor set, its two families and the criterion on the central square are *Zero Divisors of the General Plain Algebra*; the roots of $+1$ and the idempotents are *Square Roots of One and the Idempotents of the General Plain Algebra*; the minimal ideals the nilpotents generate are *Ideals and Peirce Decomposition of the General Plain Algebra*; and the same class read against the four general products is *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+The article is algebraic. The zero-divisor set, its two families and the criterion on the central square are *Zero Divisors of the General Plain Algebra*; the roots of $+1$ and the idempotents are *Square Roots of One and the Idempotents of the General Plain Algebra*; the minimal ideals the nilpotents generate are *Ideals and Peirce Decomposition of the General Plain Algebra*; and the same class read against the four general products is *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$, and central scalar imaginary $i$, $i^2=-1$. A general element is $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu=Q_0e_0+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=\sum_{k=1}^{3}Q_ke_k$. The natural conjugation is $\tilde Q^{\natural}=Q_0-\vec Q$ and the star is $\tilde Q^{*}=\overline{Q_0}-\overline{\vec Q}$. The general plain bilinear form of two vector parts is
 
@@ -30,7 +30,7 @@ $$
 
 The remarkable subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ are *Introduction to the Remarkable Subspaces*. A root of a central value is written $\tilde\Xi$ (§*The Root Convention* of *Conventions in Mathematics*), a nilpotent $\tilde\Upsilon$ (§*The Nilpotent Convention*), and a generic element $\tilde P$ or $\tilde Q$.
 
-The equations name a product, so the roots and the nilpotents are relative to it. The general definition of the power, the square, the root of a central value and the nilpotent, with the index of nilpotency and the square-zero element, is *Definitions for the Study of the 12 Algebraic Structures*, §*Powers, the Square and the Roots*. Throughout this article the square is the one of the general plain bilinear product, the multiplication of the algebra; the other three general products carry roots of $0$ and square-zero sets of their own, and they are *Comparison Between the Four General Products*.
+The equations name a product, so the roots and the nilpotents are relative to it. The general definition of the power, the square, the root of a central value and the nilpotent, with the index of nilpotency and the square-zero element, is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*. Throughout this article the square is the one of the general plain bilinear product, the multiplication of the algebra; the other three general products carry roots of $0$ and square-zero sets of their own, and they are *Comparison Between the Four General Products*.
 
 ## The Roots of Zero
 
@@ -150,7 +150,7 @@ $$
 \tilde\Upsilon^2=0 .
 $$
 
-The element $0$ is a nilpotent, the trivial one, and the article is concerned with the nonzero ones. A nilpotent is of **index two**: its square vanishes while it does not, and no higher power is needed. The equation names a product, and the notion is relative to it; the general definition, with the index of nilpotency and the square-zero element, is *Definitions for the Study of the 12 Algebraic Structures*, §*Powers, the Square and the Roots*. Throughout this article the product is the general plain bilinear product, the multiplication of the algebra, and where another of the four general products is meant it is named.
+The element $0$ is a nilpotent, the trivial one, and the article is concerned with the nonzero ones. A nilpotent is of **index two**: its square vanishes while it does not, and no higher power is needed. The equation names a product, and the notion is relative to it; the general definition, with the index of nilpotency and the square-zero element, is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*. Throughout this article the product is the general plain bilinear product, the multiplication of the algebra, and where another of the four general products is meant it is named.
 
 The square is the only power that has to be checked. Since $\tilde\Upsilon^3=\tilde\Upsilon\tilde\Upsilon^2=\tilde\Upsilon^2\tilde\Upsilon$, a square-zero element has every higher power zero, and §*Index Two* shows conversely that a vanishing cube already forces a vanishing square. Index two is therefore the only index the algebra carries, and the two clauses of the definition are exhaustive: the nilpotents are exactly the nonzero square-zero elements, with no further stratification.
 
@@ -283,7 +283,7 @@ The real and imaginary parts make the same point. Writing $\tilde\Upsilon=\vec p
 
 **Under the isomorphism $\mathbb{B}\cong M_2(\mathbb{C})$ the nilpotents are exactly the nonzero matrices that are trace-free and singular, equivalently the nonzero rank-one matrices conjugate to the Jordan block $\begin{pmatrix}0&1\\0&0\end{pmatrix}$.**
 
-In the model $\mathbb{B}\cong M_2(\mathbb{C})$ of *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, the criterion becomes the linear algebra of a trace-free singular matrix.
+In the model $\mathbb{B}\cong M_2(\mathbb{C})$ of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, the criterion becomes the linear algebra of a trace-free singular matrix.
 
 **Theorem.** Under the isomorphism $\mathsf M_2$ with $\mathsf M_2(\tilde P)=P_0\mathrm I_2-iP_1\sigma_1-iP_2\sigma_2-iP_3\sigma_3$, the following coincide: $\tilde P$ is a nilpotent; $\mathsf M_2(\tilde P)$ is a nonzero nilpotent matrix; and $\mathsf M_2(\tilde P)$ is trace-free, $\operatorname{tr}\mathsf M_2(\tilde P)=2P_0=0$, and singular, $\det\mathsf M_2(\tilde P)=C(\tilde P)=0$.
 
@@ -354,13 +354,13 @@ Every nonzero nilpotent annihilates itself, so it is a two-sided zero divisor an
 
 ## Further Reading
 
-- *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), for the general definition of a root of a central value and of the nilpotent, with the index of nilpotency and the square-zero element.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the general definition of a root of a central value and of the nilpotent, with the index of nilpotency and the square-zero element.
 - *Square Roots of One and the Idempotents of the General Plain Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra.md`), for the roots of $+1$ and the idempotents, the other two central element classes.
 - *Square Roots of a General Element in the General Plain Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-general-plain-algebra.md`), for the roots of the general quadratic $\tilde\Xi^2=\tilde Q$, of which the roots of $0$ here are one case.
 - *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the two families of the zero-divisor set, the pure family being exactly these nilpotents.
 - *Ideals and Peirce Decomposition of the General Plain Algebra* (`articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra.md`), for the off-diagonal units $\hat\Upsilon_1,\hat\Upsilon_2$, the minimal ideals they generate and the Peirce basis.
-- *The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/the-2x2-matrix-element-representation-m2c-of-biquaternions.md`), for the isomorphism $\mathsf M_2$, the trace and determinant, and the triangular Jordan form.
+- *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.md`), for the isomorphism $\mathsf M_2$, the trace and determinant, and the triangular Jordan form.
 - *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the vector subspace, the nilpotent cone it carries and the absence of a nilpotent in the other five subspaces.
-- *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the same class read against the four general products, where only the plain product has this square-zero set.
+- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the same class read against the four general products, where only the plain product has this square-zero set.
 - S. J. Sangwine and D. Alfsmann, "Determination of the biquaternion divisors of zero, including the idempotents and nilpotents", *Advances in Applied Clifford Algebras* **20** (2010) 401–416.
 - J. P. Ward, *Quaternions and Cayley Numbers* (Kluwer, 1997), for the algebraic properties of the biquaternions.

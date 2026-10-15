@@ -13,7 +13,7 @@ divisors **of the general plain bilinear product**, to name the two families the
 separates, and to prove that over $\mathbb{R}$ both are empty.
 
 A divisor is relative to a product. The definition is stated once for a general product in
-*Definitions for the Study of the 6 Algebraic Structures*, §*The Element Vocabulary*; the unqualified
+*Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, §*The Element Vocabulary*; the unqualified
 "zero divisor" means "zero divisor of the general plain bilinear product", the multiplication of the
 general plain algebra, and every other product is named.
 
@@ -141,7 +141,7 @@ criterion.
 
 ## The Algebra Is a Division Algebra
 
-By the vocabulary of *Definitions for the Study of the 6 Algebraic Structures*, a product with no
+By the vocabulary of *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, a product with no
 zero divisor and a two-sided unit is a **division rule**, and an algebra whose product is a division
 rule is a **division algebra**. For the finite-dimensional algebra $\mathbb{H}$, the two clauses of
 the criterion agree: if every nonzero element is invertible then no nonzero element can annihilate
@@ -291,7 +291,7 @@ either is a zero divisor.
 
 ## Further Reading
 
-- *Definitions for the Study of the 6 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-6-algebraic-structures.md`), §*The Element Vocabulary*, for the product-relative definition of the zero divisor and of the division rule.
+- *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-quaternion-r-space.md`), §*The Element Vocabulary*, for the product-relative definition of the zero divisor and of the division rule.
 - *Norm and Invertibility in the General Plain Algebra* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra-of-quaternions.md`), for the quaternion norm, its multiplicativity, the invertibility criterion and the division property.
 - *Idempotents of the General Plain Algebra* (`articles_maths/idempotents-of-the-general-plain-algebra-of-quaternions.md`) and *Nilpotents of the General Plain Algebra* (`articles_maths/nilpotents-of-the-general-plain-algebra-of-quaternions.md`), below this article in this category, for the two classes that the complexified zero-divisor families become over $\mathbb{R}$.
 - *Annihilators of the General Plain Algebra* (`articles_maths/annihilators-of-the-general-plain-algebra-of-quaternions.md`), below this article in this category, for the annihilator of an element, the two multiplication operators and their rank.

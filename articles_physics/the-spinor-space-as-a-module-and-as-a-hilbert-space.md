@@ -12,7 +12,7 @@ The names of the two corpus groups are the two jobs. The plain algebra is the gr
 
 ### The Unqualified Product Is the Plain Product
 
-Every class of element in the corpus is defined by an equation whose symbol is a product: an idempotent by $\tilde\Pi\star\tilde\Pi=\tilde\Pi$, a nilpotent by $\tilde\Upsilon\star\tilde\Upsilon=0$, a zero divisor by $\tilde Q\star\tilde R=0$. The definitions article *Definitions for the Study of the 12 Algebraic Structures* states the rule: **the product is part of the definition and not a background convention**, so a class is always relative to a product. The space carries four general products,
+Every class of element in the corpus is defined by an equation whose symbol is a product: an idempotent by $\tilde\Pi\star\tilde\Pi=\tilde\Pi$, a nilpotent by $\tilde\Upsilon\star\tilde\Upsilon=0$, a zero divisor by $\tilde Q\star\tilde R=0$. The definitions article *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* states the rule: **the product is part of the definition and not a background convention**, so a class is always relative to a product. The space carries four general products,
 
 $$
 \tilde P\tilde Q,\qquad \tilde P^{\natural}\tilde Q,\qquad \tilde P\tilde Q^{*},\qquad \tilde P^{\natural}\tilde Q^{*},

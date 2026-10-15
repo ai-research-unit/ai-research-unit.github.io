@@ -1,4 +1,4 @@
-# __Square Roots of One and the Idempotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space__
+# __Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space__
 
 ## Introduction
 
@@ -8,26 +8,25 @@ $$
 \tilde\Xi\star\tilde\Xi=\lambda e_0 , \qquad \lambda\in\mathbb{C},
 $$
 
-and the **root set** of the value is the set of the solutions of the equation. This article reads the value $+1$ structure by structure in the twelve structures of the space, and then reads the idempotents, which are the roots of $+1$ carried by the halving map. The root of a general value, the four existence classes of the twelve structures and the criterion that a root of a non-zero value is a unit are *Square Roots of a General Element in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, which states them once; its companion *Square Roots of Zero and the Nilpotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* reads the value $0$. The value $-1$ is not a subject of this article: its root sets are deduced, where they exist, from the root sets of $+1$ by one map, and they are the short remark that closes §*The Roots of One*. Nothing else here uses them. The general vocabulary — the root of a central value and the idempotent stated once for a general product — is *Definitions for the Study of the 12 Algebraic Structures*.
+and the **root set** of the value is the set of the solutions of the equation. This article reads the value $+1$ structure by structure in the twelve structures of the space, and then reads the idempotents, which are the roots of $+1$ carried by the halving map. The root of a general value, the four existence classes of the twelve structures and the criterion that a root of a non-zero value is a unit are *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, which states them once; its companion *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* reads the value $0$. The value $-1$ is not a subject of this article: its root sets are deduced, where they exist, from the root sets of $+1$ by one map, and they are the short remark that closes §*The Roots of One*. Nothing else here uses them. The general vocabulary — the root of a central value and the idempotent stated once for a general product — is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
-**The twelve names.** The space carries twelve products, the four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* and their eight symmetric and antisymmetric parts (*The 12 Products of the Biquaternion Complex Space*). Each product has a three-letter code: the first letter is the operation, $\mathrm G$ the general product and $\mathrm S$, $\mathrm A$ its symmetric and antisymmetric parts; the second is the product of the family, $\mathrm P$ the plain one and $\mathrm Q$ the quaternionic one, whose first slot is read through the natural conjugation; the third is the family, $\mathrm A$ the algebra over $\mathbb{C}$ and $\mathrm S$ the sesqualgebra, whose second slot carries the Hermitian conjugation. The twelve are read in the four families of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*,
+**The twelve names.** The space carries twelve products, the four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space* and their eight symmetric and antisymmetric parts (*The 12 Products of the Biquaternion Complex Space*). Each product has a three-letter code: the first letter is the operation, $\mathrm G$ the general product and $\mathrm S$, $\mathrm A$ its symmetric and antisymmetric parts; the second is the product of the family, $\mathrm P$ the plain one and $\mathrm Q$ the quaternionic one, whose first slot is read through the natural conjugation; the third is the family, $\mathrm A$ the algebra over $\mathbb{C}$ and $\mathrm S$ the sesqualgebra, whose second slot carries the Hermitian conjugation. The twelve are read in the four families and the three operations of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*,
 
-| the family | general | symmetric | antisymmetric |
-|---|---|---|---|
-| the plain algebra | $\mathrm{GPA}$ | $\mathrm{SPA}$ | $\mathrm{APA}$ |
-| the quaternionic algebra | $\mathrm{GQA}$ | $\mathrm{SQA}$ | $\mathrm{AQA}$ |
-| the plain sesqualgebra | $\mathrm{GPS}$ | $\mathrm{SPS}$ | $\mathrm{APS}$ |
-| the quaternionic sesqualgebra | $\mathrm{GQS}$ | $\mathrm{SQS}$ | $\mathrm{AQS}$ |
+| the operation | the plain algebra | the plain sesqualgebra | the quaternionic algebra | the quaternionic sesqualgebra |
+|---|---|---|---|---|
+| the general | $\mathrm{GPA}$ | $\mathrm{GPS}$ | $\mathrm{GQA}$ | $\mathrm{GQS}$ |
+| the symmetric | $\mathrm{SPA}$ | $\mathrm{SPS}$ | $\mathrm{SQA}$ | $\mathrm{SQS}$ |
+| the antisymmetric | $\mathrm{APA}$ | $\mathrm{APS}$ | $\mathrm{AQA}$ | $\mathrm{AQS}$ |
 
-and every table of the article follows this order, family by family and, inside a family, general then symmetric then antisymmetric.
+and every table of the article follows the new order: the four general structures first, then their four symmetric parts, then their four antisymmetric parts; and inside each group the plain algebra, then the plain sesqualgebra, then the quaternionic algebra, then the quaternionic sesqualgebra.
 
-**Scope and owners.** This article owns the value $+1$ in the twelve structures, the halving map, the idempotent sets of the twelve structures, the comparison of the four idempotent sets and the position of the families in the remarkable subspaces. The root set of each structure stays owned by its article *Square Roots of One and the Idempotents of the …*, cited one by one in §*The Twelve Structures and the Roots of One*; the four-set table is *Comparison Between the Four General Products* §*The Squares, the Idempotents and the Roots*; the vocabulary is *Definitions for the Study of the 12 Algebraic Structures*; the products and the names are *The 12 Products of the Biquaternion Complex Space* and *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the cone and the zero-divisor sets are *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the invertibility criterion is *Norm and Invertibility in the General Quaternionic Algebra*; the group of the third product's root of $+1$ is *The Unitary Group of the Biquaternion Algebra*; the Peirce decomposition is *Ideals and Peirce Decomposition of the General Plain Algebra*; and the square-zero sets named here are *Square Roots of Zero and the Nilpotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+**Scope and owners.** This article owns the value $+1$ in the twelve structures, the halving map, the idempotent sets of the twelve structures, the comparison of the four idempotent sets and the position of the families in the remarkable subspaces. The root set of each structure stays owned by its article *Square Roots of One and the Idempotents of the …*, cited one by one in §*The Twelve Structures and the Roots of One*; the four-set table is *Comparison Between the Four General Products* §*The Squares, the Idempotents and the Roots*; the vocabulary is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the products and the names are *The 12 Products of the Biquaternion Complex Space* and *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the cone and the zero-divisor sets are *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the invertibility criterion is *Norm and Invertibility in the General Quaternionic Algebra*; the group of the second product's root of $+1$ is *The Unitary Group of the Biquaternion Algebra*; the Peirce decomposition is *Ideals and Peirce Decomposition of the General Plain Algebra*; and the square-zero sets named here are *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
-**Conventions.** $\mathbb{B}$ has basis $e_0,e_1,e_2,e_3$ over $\mathbb{C}$ with $e_1e_2=e_3$; the central imaginary is $i$, with $i^{2}=-e_0$ and $i$ commuting with every element; a general element is $\tilde\Xi=\Xi_0e_0+\vec\Xi$ with $\Xi_0\in\mathbb{C}$ and $\vec\Xi=\sum_k\Xi_ke_k$. The natural conjugation is $\tilde\Xi^{\natural}=\Xi_0-\vec\Xi$, the star is $\tilde\Xi^{*}=\overline{\tilde\Xi^{\natural}}$, the coefficientwise conjugation is $\overline{\tilde\Xi}$, the **central square** is $C(\tilde\Xi)e_0=\tilde\Xi^{\natural}\tilde\Xi=\tilde\Xi\tilde\Xi^{\natural}$ with $C(\tilde\Xi)=\sum_\mu\Xi_\mu^{2}$, the **Hermitian square** is $H(\tilde\Xi)=\sum_\mu\lvert\Xi_\mu\rvert^{2}$, and the **Krein value** is $\Delta(\tilde\Xi)=\lvert\Xi_0\rvert^{2}-\sum_k\lvert\Xi_k\rvert^{2}$. A **central value** is an element $\lambda e_0$ with $\lambda\in\mathbb{C}$, and $\hat u$ is a real unit vector, of square $-e_0$ and of bilinear square $(\hat u,\hat u)=1$. The **halving map** is $\tilde\Xi\mapsto\tilde\Pi=\tfrac12(e_0+\tilde\Xi)$, of inverse $\tilde\Xi=2\tilde\Pi-e_0$, the square in the map being the square of the general plain bilinear product. The root is defined in *Definitions for the Study of the 12 Algebraic Structures* §*Powers, the Square and the Roots* as a **non-zero** element with $\tilde\Xi\star\tilde\Xi=\lambda e_0$; a root set is read here as a solution set, so the origin is counted with the roots of $0$ of §*The Twelve Structures and the Roots of One*, and at the value $+1$ the convention changes nothing, the origin being no root of it.
+**Conventions.** $\mathbb{B}$ has basis $e_0,e_1,e_2,e_3$ over $\mathbb{C}$ with $e_1e_2=e_3$; the central imaginary is $i$, with $i^{2}=-e_0$ and $i$ commuting with every element; a general element is $\tilde\Xi=\Xi_0e_0+\vec\Xi$ with $\Xi_0\in\mathbb{C}$ and $\vec\Xi=\sum_k\Xi_ke_k$. The natural conjugation is $\tilde\Xi^{\natural}=\Xi_0-\vec\Xi$, the star is $\tilde\Xi^{*}=\overline{\tilde\Xi^{\natural}}$, the coefficientwise conjugation is $\overline{\tilde\Xi}$, the **central square** is $C(\tilde\Xi)e_0=\tilde\Xi^{\natural}\tilde\Xi=\tilde\Xi\tilde\Xi^{\natural}$ with $C(\tilde\Xi)=\sum_\mu\Xi_\mu^{2}$, the **Hermitian square** is $H(\tilde\Xi)=\sum_\mu\lvert\Xi_\mu\rvert^{2}$, and the **Krein value** is $\Delta(\tilde\Xi)=\lvert\Xi_0\rvert^{2}-\sum_k\lvert\Xi_k\rvert^{2}$. A **central value** is an element $\lambda e_0$ with $\lambda\in\mathbb{C}$, and $\hat u$ is a real unit vector, of square $-e_0$ and of bilinear square $(\hat u,\hat u)=1$. The **halving map** is $\tilde\Xi\mapsto\tilde\Pi=\tfrac12(e_0+\tilde\Xi)$, of inverse $\tilde\Xi=2\tilde\Pi-e_0$, the square in the map being the square of the general plain bilinear product. The root is defined in *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* §*Powers, the Square and the Roots* as a **non-zero** element with $\tilde\Xi\star\tilde\Xi=\lambda e_0$; a root set is read here as a solution set, so the origin is counted with the roots of $0$ of §*The Twelve Structures and the Roots of One*, and at the value $+1$ the convention changes nothing, the origin being no root of it.
 
 ## The Roots of One
 
-**Definition (the root of a central value; quoted).** Let $\star$ be a product on $\mathbb{B}$, let $\lambda\in\mathbb{C}$ and let $\tilde\Xi\in\mathbb{B}$. The element is a **root of $\lambda e_0$ of $\star$** when $\tilde\Xi\star\tilde\Xi=\lambda e_0$, and the **root set** of the value is the set of the solutions (*Definitions for the Study of the 12 Algebraic Structures* §*Powers, the Square and the Roots*). The definition names its product, and every statement below names the product it reads.
+**Definition (the root of a central value; quoted).** Let $\star$ be a product on $\mathbb{B}$, let $\lambda\in\mathbb{C}$ and let $\tilde\Xi\in\mathbb{B}$. The element is a **root of $\lambda e_0$ of $\star$** when $\tilde\Xi\star\tilde\Xi=\lambda e_0$, and the **root set** of the value is the set of the solutions (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* §*Powers, the Square and the Roots*). The definition names its product, and every statement below names the product it reads.
 
 ### The Five Squares and the Twelve Structures
 
@@ -36,10 +35,10 @@ The square of a structure is its operation read at the two equal arguments, so t
 | the square | the structures | at the two equal arguments |
 |---|---|---|
 | the plain square | $\mathrm{GPA}$, $\mathrm{SPA}$ | $\tilde\Xi^{2}=\bigl(\Xi_0^{2}-(\vec\Xi,\vec\Xi)\bigr)e_0+2\Xi_0\vec\Xi$ |
-| the central square | $\mathrm{GQA}$, $\mathrm{SQA}$ | $C(\tilde\Xi)e_0$ |
 | the Hermitian square | $\mathrm{GPS}$, $\mathrm{SPS}$ | $\tilde\Xi\tilde\Xi^{*}$, of scalar part $H$, the scalar part alone for $\mathrm{SPS}$ |
+| the central square | $\mathrm{GQA}$, $\mathrm{SQA}$ | $C(\tilde\Xi)e_0$ |
 | the sesquilinear square | $\mathrm{GQS}$, $\mathrm{SQS}$ | $\tilde\Xi^{\natural}\tilde\Xi^{*}$, of scalar part $\Delta$, the coefficientwise real part alone for $\mathrm{SQS}$ |
-| the vanishing square | $\mathrm{APA}$, $\mathrm{AQA}$, $\mathrm{APS}$, $\mathrm{AQS}$ | $0$ on the two bilinear structures, a pure element on the two sesquilinear ones |
+| the vanishing square | $\mathrm{APA}$, $\mathrm{APS}$, $\mathrm{AQA}$, $\mathrm{AQS}$ | $0$ on the two bilinear structures, a pure element on the two sesquilinear ones |
 
 The five squares are read from *The 12 Products of the Biquaternion Complex Space* and the four group articles: the $\mathrm{SPS}$ square is the central element $\mathrm{Sc}(\tilde\Xi\tilde\Xi^{*})e_0$ (*The Squares and the Positive Cone of the Biquaternion Sesqualgebra*), and the $\mathrm{SQS}$ square is the coefficientwise real part of $\tilde\Xi^{\natural}\tilde\Xi^{*}$, a real element and not the central square of $\mathrm{GQS}$ (*The Square of the General Quaternionic Sesquilinear Product and the Two Halves*). The square of $\mathrm{SPA}$ is the plain square, the product being the Jordan product $\tfrac12(\tilde\Xi\tilde Q+\tilde Q\tilde\Xi)$, and the square of $\mathrm{SQA}$ is the central square.
 
@@ -50,19 +49,19 @@ The five squares are read from *The 12 Products of the Biquaternion Complex Spac
 | the product | the roots of $+1$ |
 |---|---|
 | $\mathrm{GPA}$, $\tilde\Xi\tilde Q$ | the central pair $\pm e_0$, and the pure elements with $(\vec\Xi,\vec\Xi)=-1$, a family of real dimension four |
-| $\mathrm{GQA}$, $\tilde\Xi^{\natural}\tilde Q$ | the quadric $C(\tilde\Xi)=+1$, of real dimension six |
 | $\mathrm{GPS}$, $\tilde\Xi\tilde Q^{*}$ | the family $\{\tilde\Xi:\tilde\Xi\tilde\Xi^{*}=e_0\}$, the group of the linear maps preserving the Hermitian form, of real dimension four |
+| $\mathrm{GQA}$, $\tilde\Xi^{\natural}\tilde Q$ | the quadric $C(\tilde\Xi)=+1$, of real dimension six |
 | $\mathrm{GQS}$, $\tilde\Xi^{\natural}\tilde Q^{*}$ | the family $c(\hat u+it)$ at the slopes $\lvert t\rvert>1$ with $(t^{2}-1)\lvert c\rvert^{2}=1$, and the central circle $\lvert a\rvert^{2}=1$, of real dimension four |
 
-The four descriptions are the four reductions of *Square Roots of a General Element in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* §*The Four General Products at a General Value*, read at $\lambda=+1$: the pair and the pure quadric, the level set of $C$, the family of the linear maps preserving the form, and the two pieces of the fourth product. **The word here is *differ*, not *coincide*.** The four zero-divisor sets of the four general products are one set read four times, because the four products read the same norm; the four root sets are not, because the square of a product is not the norm of a product, even at the value $+1$ where the four sets are as near as they come. The plain set carries the pure quadric $(\vec\Xi,\vec\Xi)=-1$, on which $C=-1$, while the natural set is the quadric $C=+1$; the third set is the family $\tilde\Xi\tilde\Xi^{*}=e_0$, which is a group, and the fourth is the union of a slope family and a circle, which is not.
+The four descriptions are the four reductions of *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* §*The Four General Products at a General Value*, read at $\lambda=+1$: the pair and the pure quadric, the family of the linear maps preserving the form, the level set of $C$, and the two pieces of the fourth product. **The word here is *differ*, not *coincide*.** The four zero-divisor sets of the four general products are one set read four times, because the four products read the same norm; the four root sets are not, because the square of a product is not the norm of a product, even at the value $+1$ where the four sets are as near as they come. The plain set carries the pure quadric $(\vec\Xi,\vec\Xi)=-1$, on which $C=-1$; the second set is the family $\tilde\Xi\tilde\Xi^{*}=e_0$, which is a group; the third set is the quadric $C=+1$; and the fourth is the union of a slope family and a circle, which is not.
 
-**The reading in the algebra.** For the four general products a root of $+1$ is a root of a non-zero central value, hence a unit of the algebra, by the theorem of *Square Roots of a General Element in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* §*The Roots Are Units, or Zero Divisors*; the relation is $\mathcal R_{+1}\subseteq\mathbb{B}^{\times}$. The plane roots of the plain product are units and not zero divisors: they are pure, and the central square of a pure element is $-(\vec\Xi,\vec\Xi)e_0=C(\tilde\Xi)e_0$, equal to $e_0$ at a root of $+1$ and never zero. The reading fails for the two symmetric sesquilinear structures outside the four general products, where a root of $+1$ may lie on the cone: the witness $\tfrac{1}{\sqrt2}(e_1+ie_2)$ is a root of $+1$ in $\mathrm{SPS}$ with $C=0$, hence a zero divisor of the algebra and not a unit.
+**The reading in the algebra.** For the four general products a root of $+1$ is a root of a non-zero central value, hence a unit of the algebra, by the theorem of *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* §*The Roots Are Units, or Zero Divisors*; the relation is $\mathcal R_{+1}\subseteq\mathbb{B}^{\times}$. The plane roots of the plain product are units and not zero divisors: they are pure, and the central square of a pure element is $-(\vec\Xi,\vec\Xi)e_0=C(\tilde\Xi)e_0$, equal to $e_0$ at a root of $+1$ and never zero. The reading fails for the two symmetric sesquilinear structures outside the four general products, where a root of $+1$ may lie on the cone: the witness $\tfrac{1}{\sqrt2}(e_1+ie_2)$ is a root of $+1$ in $\mathrm{SPS}$ with $C=0$, hence a zero divisor of the algebra and not a unit.
 
 ### The Existence at the Value One
 
-Two mechanisms remove the root of $+1$ from a structure, and they are the two of *Square Roots of a General Element in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* §*The Four Existence Classes* read at $+1$.
+Two mechanisms remove the root of $+1$ from a structure, and they are the two of *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* §*The Four Existence Classes* read at $+1$.
 
-**Theorem (the existence at the value one; quoted).** A root of $+1$ exists for the four bilateral structures $\mathrm{GPA}$, $\mathrm{SPA}$, $\mathrm{GQA}$, $\mathrm{SQA}$ and for the two indefinite sesquilinear structures $\mathrm{GQS}$, $\mathrm{SQS}$; it exists for neither of the two definite sesquilinear structures $\mathrm{GPS}$, $\mathrm{SPS}$ at a negative real value, while the value $+1$ is reached there; and it does not exist for the four antisymmetric structures $\mathrm{APA}$, $\mathrm{AQA}$, $\mathrm{APS}$, $\mathrm{AQS}$, whose square takes the central value $0$ alone. The two definite sesquilinear structures reach the negative real values nowhere, because their square has non-negative scalar part, $H$ for $\mathrm{GPS}$ and the same scalar part for $\mathrm{SPS}$; the four antisymmetric structures read no central value other than $0$, their square vanishing on the two bilinear ones and being a pure element on the two sesquilinear ones.
+**Theorem (the existence at the value one; quoted).** A root of $+1$ exists for the four bilateral structures $\mathrm{GPA}$, $\mathrm{GQA}$, $\mathrm{SPA}$, $\mathrm{SQA}$ and for the two indefinite sesquilinear structures $\mathrm{GQS}$, $\mathrm{SQS}$; it exists for neither of the two definite sesquilinear structures $\mathrm{GPS}$, $\mathrm{SPS}$ at a negative real value, while the value $+1$ is reached there; and it does not exist for the four antisymmetric structures $\mathrm{APA}$, $\mathrm{APS}$, $\mathrm{AQA}$, $\mathrm{AQS}$, whose square takes the central value $0$ alone. The two definite sesquilinear structures reach the negative real values nowhere, because their square has non-negative scalar part, $H$ for $\mathrm{GPS}$ and the same scalar part for $\mathrm{SPS}$; the four antisymmetric structures read no central value other than $0$, their square vanishing on the two bilinear ones and being a pure element on the two sesquilinear ones.
 
 ### The Two Families of the Plain Reduction
 
@@ -88,7 +87,7 @@ $$
 \tilde\Xi\star\tilde X=e_0 , \qquad \tilde X\star\tilde\Xi=e_0
 $$
 
-has a solution, the inverse $\tilde\Xi^{-1}=\tilde\Xi^{\natural}/C(\tilde\Xi)$ for the plain product and one of the conjugated inverses of the one-sided table for the other three (*Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* §*The One-Sided Inverse Equations*). A root of the value $0$ has no solution on either side, and that vanishing is read with the value $0$ in *Square Roots of Zero and the Nilpotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+has a solution, the inverse $\tilde\Xi^{-1}=\tilde\Xi^{\natural}/C(\tilde\Xi)$ for the plain product and one of the conjugated inverses of the one-sided table for the other three (*Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* §*The One-Sided Inverse Equations*). A root of the value $0$ has no solution on either side, and that vanishing is read with the value $0$ in *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 The value $+1$ is therefore the value at which the roots of the plain product are invertible with the explicit inverse $\tilde\Xi^{-1}=\tilde\Xi^{\natural}$, the central square being $e_0$ there: the pure roots of $+1$ have $C=e_0$, and the central pair has $C=e_0$ at $+e_0$ and $C=e_0$ at $-e_0$ as well, the central square of $-e_0$ being $e_0$.
 
@@ -102,45 +101,45 @@ The twelve root sets of $+1$ are read one by one, each quoted from the article t
 
 The product is $\tilde\Xi\tilde Q$, and its square is the plain square, of scalar part $\Xi_0^{2}-(\vec\Xi,\vec\Xi)$ and vector part $2\Xi_0\vec\Xi$. The roots of $+1$ are the central pair $\pm e_0$ and the pure quadric $(\vec\Xi,\vec\Xi)=-1$ of real dimension four, which contains the purely imaginary unit vectors $\tilde\Xi$. The article is *Square Roots of One and the Idempotents of the General Plain Algebra*.
 
-### $\mathrm{SPA}$, the symmetric plain algebra
+### $\mathrm{GPS}$, the general plain sesqualgebra
 
-The product is the Jordan product $\tilde\Xi\bullet\tilde Q=\tfrac12(\tilde\Xi\tilde Q+\tilde Q\tilde\Xi)$, and its square is the plain square, $\tilde\Xi\bullet\tilde\Xi=\tilde\Xi^{2}$; the root set of $+1$ is therefore that of $\mathrm{GPA}$, element for element. The article is *Square Roots of One and the Idempotents of the Symmetric Plain Algebra*.
-
-### $\mathrm{APA}$, the antisymmetric plain algebra
-
-The product is the commutator $\tilde\Xi\wedge\tilde Q=\tfrac12(\tilde\Xi\tilde Q-\tilde Q\tilde\Xi)=\vec\Xi\times\vec Q$, alternating, so its square vanishes at the two equal arguments and the equation of the value $+1$ reads $0=e_0$. **There is no root of $+1$**, the value $0$ alone being read by the vanishing square. The article is *Square Roots of One and the Idempotents of the Antisymmetric Plain Algebra*.
+The product is $\tilde\Xi\tilde Q^{*}$, and its square is the Hermitian element $\tilde\Xi\tilde\Xi^{*}$, of scalar part $H(\tilde\Xi)$. The roots of $+1$ are the unitary family $\{\tilde\Xi:\tilde\Xi\tilde\Xi^{*}=e_0\}$, the group of the linear maps preserving the Hermitian form, of real dimension four, described as the family $e^{i\theta}w$ over the real unit quaternions $w$; it contains $e_0$, $-e_0$ and the purely imaginary unit vectors $\tilde\Xi$. **The negative values are reached nowhere**, the scalar part $H$ being non-negative. The article is *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*.
 
 ### $\mathrm{GQA}$, the general quaternionic algebra
 
 The product is $\tilde\Xi^{\natural}\tilde Q$, and its square is the central square $C(\tilde\Xi)e_0$, so the equation of the value $+1$ is the single complex equation $C(\tilde\Xi)=1$. The root set is the quadric $C=+1$ of real dimension six, containing the central pair $\pm e_0$ and the real unit vectors $\hat u$. The article is *Square Roots of One and the Idempotents of the General Quaternionic Algebra*.
 
-### $\mathrm{SQA}$, the symmetric quaternionic algebra
+### $\mathrm{GQS}$, the general quaternionic sesqualgebra
 
-The product is the symmetrisation $\tfrac12(\tilde\Xi^{\natural}\tilde Q+\tilde Q^{\natural}\tilde\Xi)=C(\tilde\Xi,\tilde Q)e_0$, the form read as a product, and its square is the central square; the root set of $+1$ is the same quadric $C=+1$ as that of $\mathrm{GQA}$, of real dimension six. The article is *Square Roots of One and the Idempotents of the Symmetric Quaternionic Algebra*.
+The product is $\tilde\Xi^{\natural}\tilde Q^{*}$, and its square has scalar part the Krein value $\Delta(\tilde\Xi)$, real for every element. The roots of $+1$ are the family $c(\hat u+it)$ at the slopes $\lvert t\rvert>1$, with $\lvert c\rvert^{2}=1/(t^{2}-1)$, of real dimension four, beside the central circle $\lvert a\rvert^{2}=1$; they contain $e_0$ and $i$, and the three intervals of the slope carry the three root sets of the structure, the middle one, $\lvert t\rvert=1$, carrying the cone $c(\hat u\pm i)$ of the roots of $0$. The article is *Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra*.
 
-### $\mathrm{AQA}$, the antisymmetric quaternionic algebra
+### $\mathrm{SPA}$, the symmetric plain algebra
 
-The product is the commutator $\tilde\Xi\wedge^{\natural}\tilde Q=\tfrac12(\tilde\Xi^{\natural}\tilde Q-\tilde Q^{\natural}\tilde\Xi)$, alternating, so its square vanishes and the equation reads $0=e_0$. **There is no root of $+1$.** The article is *Square Roots of One and the Idempotents of the Antisymmetric Quaternionic Algebra*.
-
-### $\mathrm{GPS}$, the general plain sesqualgebra
-
-The product is $\tilde\Xi\tilde Q^{*}$, and its square is the Hermitian element $\tilde\Xi\tilde\Xi^{*}$, of scalar part $H(\tilde\Xi)$. The roots of $+1$ are the unitary family $\{\tilde\Xi:\tilde\Xi\tilde\Xi^{*}=e_0\}$, the group of the linear maps preserving the Hermitian form, of real dimension four, described as the family $e^{i\theta}w$ over the real unit quaternions $w$; it contains $e_0$, $-e_0$ and the purely imaginary unit vectors $\tilde\Xi$. **The negative values are reached nowhere**, the scalar part $H$ being non-negative. The article is *Square Roots of One and the Idempotents of the General Plain Sesqualgebra*.
+The product is the Jordan product $\tilde\Xi\bullet\tilde Q=\tfrac12(\tilde\Xi\tilde Q+\tilde Q\tilde\Xi)$, and its square is the plain square, $\tilde\Xi\bullet\tilde\Xi=\tilde\Xi^{2}$; the root set of $+1$ is therefore that of $\mathrm{GPA}$, element for element. The article is *Square Roots of One and the Idempotents of the Symmetric Plain Algebra*.
 
 ### $\mathrm{SPS}$, the symmetric plain sesqualgebra
 
 The product is the symmetrisation $\tfrac12(\tilde\Xi\tilde Q^{*}+\overline{\tilde Q\tilde\Xi^{*}})$, whose value is central, and its square is $H(\tilde\Xi)e_0$; the equation is the single real equation $H(\tilde\Xi)=1$. The root set of $+1$ is the quadric $H=1$, that is the set $\sum_\mu\lvert\Xi_\mu\rvert^{2}=1$ in $\mathbb{C}^{4}$, of real dimension seven. **The negative values are reached nowhere**, for the same definiteness; and the root set of $+1$ is not the group of $\mathrm{GPS}$ but the quadric of the Hermitian square above it, the symmetrisation reading the scalar part of the square alone. The article is *Square Roots of One and the Idempotents of the Symmetric Plain Sesqualgebra*.
 
-### $\mathrm{APS}$, the antisymmetric plain sesqualgebra
+### $\mathrm{SQA}$, the symmetric quaternionic algebra
 
-The product is the antisymmetrisation $\tfrac12(\tilde\Xi\tilde Q^{*}-\overline{\tilde Q\tilde\Xi^{*}})$, whose values are pure elements, so the square never takes a central value. **There is no root of $+1$**, the obstruction being the purity of the value and not the vanishing of the square. The article is *Square Roots of One and the Idempotents of the Antisymmetric Plain Sesqualgebra*.
-
-### $\mathrm{GQS}$, the general quaternionic sesqualgebra
-
-The product is $\tilde\Xi^{\natural}\tilde Q^{*}$, and its square has scalar part the Krein value $\Delta(\tilde\Xi)$, real for every element. The roots of $+1$ are the family $c(\hat u+it)$ at the slopes $\lvert t\rvert>1$, with $\lvert c\rvert^{2}=1/(t^{2}-1)$, of real dimension four, beside the central circle $\lvert a\rvert^{2}=1$; they contain $e_0$ and $i$, and the three intervals of the slope carry the three root sets of the structure, the middle one, $\lvert t\rvert=1$, carrying the cone $c(\hat u\pm i)$ of the roots of $0$. The article is *Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra*.
+The product is the symmetrisation $\tfrac12(\tilde\Xi^{\natural}\tilde Q+\tilde Q^{\natural}\tilde\Xi)=C(\tilde\Xi,\tilde Q)e_0$, the form read as a product, and its square is the central square; the root set of $+1$ is the same quadric $C=+1$ as that of $\mathrm{GQA}$, of real dimension six. The article is *Square Roots of One and the Idempotents of the Symmetric Quaternionic Algebra*.
 
 ### $\mathrm{SQS}$, the symmetric quaternionic sesqualgebra
 
 The product is the symmetrisation $\tfrac12(\tilde\Xi^{\natural}\tilde Q^{*}+\overline{\tilde Q^{\natural}\tilde\Xi^{*}})$, and its square is the coefficientwise real part of the unsplit square, a real element. The roots of $+1$ are the family $\mathcal R_{+1}$ of the owner, with $\lvert\alpha\rvert\geq1$, of real dimension four, containing $e_0$; the three root sets of the structure are pairwise disjoint, and the idempotents $-\tfrac12e_0+\hat u$ of §*The Idempotents* lie on none of them. The article is *Square Roots of One and the Idempotents of the Symmetric Quaternionic Sesqualgebra*.
+
+### $\mathrm{APA}$, the antisymmetric plain algebra
+
+The product is the commutator $\tilde\Xi\wedge\tilde Q=\tfrac12(\tilde\Xi\tilde Q-\tilde Q\tilde\Xi)=\vec\Xi\times\vec Q$, alternating, so its square vanishes at the two equal arguments and the equation of the value $+1$ reads $0=e_0$. **There is no root of $+1$**, the value $0$ alone being read by the vanishing square. The article is *Square Roots of One and the Idempotents of the Antisymmetric Plain Algebra*.
+
+### $\mathrm{APS}$, the antisymmetric plain sesqualgebra
+
+The product is the antisymmetrisation $\tfrac12(\tilde\Xi\tilde Q^{*}-\overline{\tilde Q\tilde\Xi^{*}})$, whose values are pure elements, so the square never takes a central value. **There is no root of $+1$**, the obstruction being the purity of the value and not the vanishing of the square. The article is *Square Roots of One and the Idempotents of the Antisymmetric Plain Sesqualgebra*.
+
+### $\mathrm{AQA}$, the antisymmetric quaternionic algebra
+
+The product is the commutator $\tilde\Xi\wedge^{\natural}\tilde Q=\tfrac12(\tilde\Xi^{\natural}\tilde Q-\tilde Q^{\natural}\tilde\Xi)$, alternating, so its square vanishes and the equation reads $0=e_0$. **There is no root of $+1$.** The article is *Square Roots of One and the Idempotents of the Antisymmetric Quaternionic Algebra*.
 
 ### $\mathrm{AQS}$, the antisymmetric quaternionic sesqualgebra
 
@@ -156,7 +155,7 @@ $$
 \tilde\Pi\star\tilde\Pi=\tilde\Pi ,
 $$
 
-the equation naming the product, and the **idempotent set** of the structure is the set of the solutions (*Definitions for the Study of the 12 Algebraic Structures* §*The Idempotent, the Projection and the Peirce Decomposition*). The equation is the algebraic form of a projection, and throughout this section the product is named in every statement; unqualified, an idempotent of an element of $\mathbb{B}$ means an idempotent of the general plain bilinear product, the multiplication of the algebra.
+the equation naming the product, and the **idempotent set** of the structure is the set of the solutions (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* §*The Idempotent, the Projection and the Peirce Decomposition*). The equation is the algebraic form of a projection, and throughout this section the product is named in every statement; unqualified, an idempotent of an element of $\mathbb{B}$ means an idempotent of the general plain bilinear product, the multiplication of the algebra.
 
 ### The Halving Map
 
@@ -168,7 +167,7 @@ The map is the plain product's, and the idempotent sets of the other structures 
 
 ### The Five Structures with a Nontrivial Idempotent
 
-**Theorem (the five structures with a nontrivial idempotent).** Among the twelve structures of the biquaternion complex space an idempotent other than $0$ and $e_0$ exists exactly for $\mathrm{GPA}$, $\mathrm{SPA}$, $\mathrm{GPS}$, $\mathrm{GQS}$ and $\mathrm{SQS}$. The four antisymmetric structures have the origin alone; the three structures with a scalar-valued square, $\mathrm{GQA}$, $\mathrm{SQA}$ and $\mathrm{SPS}$, have the trivial pair; and the idempotent sets of $\mathrm{GQS}$ and $\mathrm{SQS}$ coincide.
+**Theorem (the five structures with a nontrivial idempotent).** Among the twelve structures of the biquaternion complex space an idempotent other than $0$ and $e_0$ exists exactly for $\mathrm{GPA}$, $\mathrm{GPS}$, $\mathrm{GQS}$, $\mathrm{SPA}$ and $\mathrm{SQS}$. The four antisymmetric structures have the origin alone; the three structures with a scalar-valued square, $\mathrm{GQA}$, $\mathrm{SPS}$ and $\mathrm{SQA}$, have the trivial pair; and the idempotent sets of $\mathrm{GQS}$ and $\mathrm{SQS}$ coincide.
 
 *Proof.* On the two bilinear antisymmetric structures the square vanishes at the two equal arguments, so the equation forces the origin and excludes $\mathrm{APA}$ and $\mathrm{AQA}$. On the two antisymmetric sesquilinear structures the square is a pure element, so an idempotent has a vanishing scalar part; the conjugate-alternation $\tilde X\wedge\tilde Y=-\overline{\tilde Y\wedge\tilde X}$ of the two blocks makes the square of an element purely imaginary, so an idempotent there is pure and purely imaginary, $\tilde\Pi=i\vec q$ over a real vector $\vec q$; its vector part $i\vec q$ is a complex multiple of the real direction $\vec q$, so the diagonal vanishes by the criterion of the owner (*The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra*), the equation reads $i\vec q=0$, and the origin is the only solution; this excludes $\mathrm{APS}$ and $\mathrm{AQS}$. On $\mathrm{GQA}$, $\mathrm{SQA}$ and $\mathrm{SPS}$ the square is the central value $C(\tilde\Pi)e_0$, or $\mathrm{Sc}(\tilde\Pi\tilde\Pi^{*})e_0$ for the third, so an idempotent is central, $\tilde\Pi=qe_0$ with $q\in\mathbb{C}$, and the equation on the centre leaves $q=\lvert q\rvert^{2}\in\{0,1\}$ for the sesquilinear one and $q=q^{2}\in\{0,1\}$ for the two bilinear ones; this leaves the trivial pair. The five remaining rows are the theorem of §*The Plain Family and its Three Parts* together with the identity $\tilde\Pi\bullet\tilde\Pi=\tilde\Pi^{2}$ for $\mathrm{SPA}$, whose idempotents are the algebra's own; and for $\mathrm{SQS}$, whose square is a real element, the equation forces $\tilde\Pi$ real and reduces to $(\tilde\Pi^{\natural})^{2}=\tilde\Pi$, the set of the owner *Square Roots of One and the Idempotents of the Symmetric Quaternionic Sesqualgebra*.
 
@@ -256,35 +255,35 @@ The three tables below collect the root sets of $+1$, the idempotent sets of the
 | the family | the structure | the square | the roots of $+1$ |
 |---|---|---|---|
 | the plain algebra | $\mathrm{GPA}$ | $\tilde\Xi^{2}$ | the pair $\pm e_0$ and the pure quadric $(\vec\Xi,\vec\Xi)=-1$, real dimension $4$ |
-| | $\mathrm{SPA}$ | $\tilde\Xi^{2}$ | the two sets of $\mathrm{GPA}$ |
-| | $\mathrm{APA}$ | $0$ | none |
-| the quaternionic algebra | $\mathrm{GQA}$ | $C(\tilde\Xi)e_0$ | the quadric $C=+1$, real dimension $6$ |
-| | $\mathrm{SQA}$ | $C(\tilde\Xi)e_0$ | the quadric $C=+1$, real dimension $6$ |
-| | $\mathrm{AQA}$ | $0$ | none |
 | the plain sesqualgebra | $\mathrm{GPS}$ | $\tilde\Xi\tilde\Xi^{*}$ | the family $\tilde\Xi\tilde\Xi^{*}=e_0$, real dimension $4$ |
-| | $\mathrm{SPS}$ | $H(\tilde\Xi)e_0$ | the quadric $H=1$ in $\mathbb{C}^{4}$, real dimension $7$ |
-| | $\mathrm{APS}$ | a pure element | none |
+| the quaternionic algebra | $\mathrm{GQA}$ | $C(\tilde\Xi)e_0$ | the quadric $C=+1$, real dimension $6$ |
 | the quaternionic sesqualgebra | $\mathrm{GQS}$ | of scalar part $\Delta$ | the slopes $\lvert t\rvert>1$ and the central circle, real dimension $4$ |
-| | $\mathrm{SQS}$ | the coefficientwise real part | the family $\mathcal R_{+1}$ with $\lvert\alpha\rvert\geq1$, real dimension $4$ |
-| | $\mathrm{AQS}$ | a pure element | none |
+| the plain algebra | $\mathrm{SPA}$ | $\tilde\Xi^{2}$ | the two sets of $\mathrm{GPA}$ |
+| the plain sesqualgebra | $\mathrm{SPS}$ | $H(\tilde\Xi)e_0$ | the quadric $H=1$ in $\mathbb{C}^{4}$, real dimension $7$ |
+| the quaternionic algebra | $\mathrm{SQA}$ | $C(\tilde\Xi)e_0$ | the quadric $C=+1$, real dimension $6$ |
+| the quaternionic sesqualgebra | $\mathrm{SQS}$ | the coefficientwise real part | the family $\mathcal R_{+1}$ with $\lvert\alpha\rvert\geq1$, real dimension $4$ |
+| the plain algebra | $\mathrm{APA}$ | $0$ | none |
+| the plain sesqualgebra | $\mathrm{APS}$ | a pure element | none |
+| the quaternionic algebra | $\mathrm{AQA}$ | $0$ | none |
+| the quaternionic sesqualgebra | $\mathrm{AQS}$ | a pure element | none |
 
-Read against the empty set, the table has two kinds of entry: the value $+1$ is refused by the four antisymmetric structures, whose square vanishes or is pure; and the value $+1$ is read by the other eight rows, the plain pair and the pure quadric, the quadric of $C$, the group of the third product, the quadric $H=1$ of its symmetrisation, and the two families of the fourth product and its symmetrisation.
+Read against the empty set, the table has two kinds of entry: the value $+1$ is refused by the four antisymmetric structures, whose square vanishes or is pure; and the value $+1$ is read by the other eight rows, the plain pair and the pure quadric, the group of the second product and the quadric $H=1$ of its symmetrisation, the quadric of $C$, and the two families of the fourth product and its symmetrisation.
 
 ### The Twelve Idempotent Sets
 
 | structure | the square $\tilde\Pi\star\tilde\Pi$ | the idempotents |
 |---|---|---|
 | $\mathrm{GPA}$ | $\tilde\Pi^{2}$ | $0$, $e_0$, $\tfrac12(e_0+\tilde\Xi)$ over the roots $\tilde\Xi$ of $+1$ |
-| $\mathrm{SPA}$ | $\tilde\Pi^{2}$, the plain square | the same set as $\mathrm{GPA}$ |
-| $\mathrm{APA}$ | $0$ | $0$ alone |
-| $\mathrm{GQA}$ | $C(\tilde\Pi)e_0$ | $0$, $e_0$ |
-| $\mathrm{SQA}$ | $C(\tilde\Pi)e_0$ | $0$, $e_0$ |
-| $\mathrm{AQA}$ | $0$ | $0$ alone |
 | $\mathrm{GPS}$ | $\tilde\Pi\tilde\Pi^{*}$ | $0$, $e_0$, $\tfrac12(e_0+\tilde\Xi)$ |
-| $\mathrm{SPS}$ | $\mathrm{Sc}(\tilde\Pi\tilde\Pi^{*})e_0$, real and $\geq 0$ | $0$, $e_0$ |
-| $\mathrm{APS}$ | $\tfrac12(\tilde\Pi\tilde\Pi^{*}-\overline{\tilde\Pi\tilde\Pi^{*}})$ | $0$ alone |
+| $\mathrm{GQA}$ | $C(\tilde\Pi)e_0$ | $0$, $e_0$ |
 | $\mathrm{GQS}$ | $\tilde\Pi^{\natural}\tilde\Pi^{*}$ | $0$, $e_0$, $-\tfrac12e_0+\vec n$ with $(\vec n,\vec n)=\tfrac34$ |
+| $\mathrm{SPA}$ | $\tilde\Pi^{2}$, the plain square | the same set as $\mathrm{GPA}$ |
+| $\mathrm{SPS}$ | $\mathrm{Sc}(\tilde\Pi\tilde\Pi^{*})e_0$, real and $\geq 0$ | $0$, $e_0$ |
+| $\mathrm{SQA}$ | $C(\tilde\Pi)e_0$ | $0$, $e_0$ |
 | $\mathrm{SQS}$ | $\tfrac12(\tilde\Pi^{\natural}\tilde\Pi^{*}+\overline{\tilde\Pi^{\natural}\tilde\Pi^{*}})$ | $0$, $e_0$, $-\tfrac12e_0+\vec n$ with $(\vec n,\vec n)=\tfrac34$ |
+| $\mathrm{APA}$ | $0$ | $0$ alone |
+| $\mathrm{APS}$ | $\tfrac12(\tilde\Pi\tilde\Pi^{*}-\overline{\tilde\Pi\tilde\Pi^{*}})$ | $0$ alone |
+| $\mathrm{AQA}$ | $0$ | $0$ alone |
 | $\mathrm{AQS}$ | $\tfrac12(\tilde\Pi^{\natural}\tilde\Pi^{*}-\overline{\tilde\Pi^{\natural}\tilde\Pi^{*}})$ | $0$ alone |
 
 Read by column, the table has three kinds of entry: the origin, present in all twelve rows; the unit, present in the eight rows that are not antisymmetric; and the families beyond the trivial pair, present in the five rows of §*The Five Structures with a Nontrivial Idempotent*. The two rows that carry the displaced family are the general quaternionic sesquilinear structure and its symmetrisation, and the two rows that carry the plain family are the general plain structure and its symmetrisation. The four sets themselves are tabulated in *Comparison Between the Four General Products*.
@@ -301,7 +300,7 @@ The table is the whole content of the halving map: the three parts of the roots 
 
 ## Summary
 
-The root of the central value $\lambda e_0$ in a structure is the solution of the equation $\tilde\Xi\star\tilde\Xi=\lambda e_0$, and this article reads the value $+1$. For the four general products the root sets are four different sets: the central pair $\pm e_0$ and the pure quadric $(\vec\Xi,\vec\Xi)=-1$ of the plain product, of real dimension four; the quadric $C=+1$ of the natural product, of real dimension six; the family $\tilde\Xi\tilde\Xi^{*}=e_0$, the group of the linear maps preserving the Hermitian form, of real dimension four; and the slope family at $\lvert t\rvert>1$ together with the central circle for the fourth product. A root of $+1$ is a unit of the algebra for the four general products, and the two symmetric sesquilinear structures lie outside that reading, the witness $\tfrac{1}{\sqrt2}(e_1+ie_2)$ being a root of $+1$ in $\mathrm{SPS}$ with $C=0$.
+The root of the central value $\lambda e_0$ in a structure is the solution of the equation $\tilde\Xi\star\tilde\Xi=\lambda e_0$, and this article reads the value $+1$. For the four general products the root sets are four different sets: the central pair $\pm e_0$ and the pure quadric $(\vec\Xi,\vec\Xi)=-1$ of the plain product, of real dimension four; the family $\tilde\Xi\tilde\Xi^{*}=e_0$, the group of the linear maps preserving the Hermitian form, of real dimension four; the quadric $C=+1$ of the natural product, of real dimension six; and the slope family at $\lvert t\rvert>1$ together with the central circle for the fourth product. A root of $+1$ is a unit of the algebra for the four general products, and the two symmetric sesquilinear structures lie outside that reading, the witness $\tfrac{1}{\sqrt2}(e_1+ie_2)$ being a root of $+1$ in $\mathrm{SPS}$ with $C=0$.
 
 Among the twelve structures a root of $+1$ exists for the four bilateral structures, the two indefinite sesquilinear ones and the two definite sesquilinear ones; and the four antisymmetric structures read the value $0$ alone, their square vanishing or being pure. The root sets of the signed values are not a subject here beyond the remark that ends §*The Roots of One*, since in the six bilinear structures the multiplication by $i$ carries the root set of $+1$ onto that of $-1$, and the mechanism is not universal.
 
@@ -314,7 +313,7 @@ The idempotents are the roots of $+1$ of the plain product read through the halv
 | $\lambda e_0$ | a central value, $\lambda\in\mathbb{C}$ |
 | $\mathcal R_{+1}$ | the root set of the value $+1$, the solutions of $\tilde\Xi\star\tilde\Xi=e_0$ |
 | $C(\tilde\Xi)e_0=\tilde\Xi^{\natural}\tilde\Xi$ | the central square, with $C(\tilde\Xi)=\sum_\mu\Xi_\mu^{2}$ |
-| $H(\tilde\Xi)=\sum_\mu\lvert\Xi_\mu\rvert^{2}$ | the Hermitian square, the scalar part of the third product's square |
+| $H(\tilde\Xi)=\sum_\mu\lvert\Xi_\mu\rvert^{2}$ | the Hermitian square, the scalar part of the second product's square |
 | $\Delta(\tilde\Xi)=\lvert\Xi_0\rvert^{2}-\sum_k\lvert\Xi_k\rvert^{2}$ | the Krein value, the scalar part of the fourth product's square |
 | $\hat u$ | a real unit vector, of square $-e_0$ |
 | $\tilde\Pi=\tfrac12(e_0+\tilde\Xi)$, $\tilde\Xi^{2}=e_0$ | the halving map, from the roots of $+1$ of the plain product to the idempotents |
@@ -324,12 +323,12 @@ The idempotents are the roots of $+1$ of the plain product read through the halv
 
 ## Further Reading
 
-- *Square Roots of a General Element in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/square-roots-of-a-general-element-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), the companion of this article, for the general value, the four existence classes and the theorem that a root of a non-zero value is a unit.
-- *Square Roots of Zero and the Nilpotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/square-roots-of-zero-and-the-nilpotents-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), the other companion, for the value $0$ and the square-zero sets.
-- *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), for the root of a central value and the idempotent stated once for a general product.
+- *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/square-roots-of-a-general-element-in-the-algebraic-structures-over-the-biquaternion-c-space.md`), the companion of this article, for the general value, the four existence classes and the theorem that a root of a non-zero value is a unit.
+- *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/square-roots-of-zero-and-the-nilpotents-in-the-algebraic-structures-over-the-biquaternion-c-space.md`), the other companion, for the value $0$ and the square-zero sets.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the root of a central value and the idempotent stated once for a general product.
 - *Square Roots of One and the Idempotents of the General Plain Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra.md`), and its siblings *Square Roots of One and the Idempotents of the Symmetric Plain Algebra*, *… of the Antisymmetric Plain Algebra*, *… of the General Quaternionic Algebra*, *… of the Symmetric Quaternionic Algebra*, *… of the Antisymmetric Quaternionic Algebra*, *… of the General Plain Sesqualgebra*, *… of the Symmetric Plain Sesqualgebra*, *… of the Antisymmetric Plain Sesqualgebra*, *… of the General Quaternionic Sesqualgebra*, *… of the Symmetric Quaternionic Sesqualgebra* and *… of the Antisymmetric Quaternionic Sesqualgebra* (the twelve files of `articles_maths/` whose names begin `square-roots-of-one-and-the-idempotents-of-the-`), for the root set of each structure, quoted one by one.
-- *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`) and *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the four general products, their eight parts and the twelve names.
-- *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the cone, the zero-divisor sets and the one-sided inverse equations.
+- *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`) and *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-algebraic-structures-over-the-biquaternion-c-space.md`), for the four general products, their eight parts and the twelve names.
+- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the cone, the zero-divisor sets and the one-sided inverse equations.
 - *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the tabulation of the four root problems and the four idempotent sets.
 - *The Unitary Group of the Biquaternion Algebra* (`articles_maths/the-unitary-group-of-the-biquaternion-algebra.md`), for the root set of $+1$ of the general plain sesquilinear product.
 - *The Squares and the Positive Cone of the Biquaternion Sesqualgebra* (`articles_maths/the-squares-and-the-positive-cone-of-the-biquaternion-sesqualgebra.md`) and *The Square of the General Quaternionic Sesquilinear Product and the Two Halves* (`articles_maths/the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.md`), for the two squares of the sesquilinear families.

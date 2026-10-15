@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The four general products of the biquaternion complex space carry four **forms**, their scalar parts, and each form carries an **algebraic norm**, its algebraic norm. This article is the third of the three reader articles that introduce the band *Focus on the 12 Algebraic Structures of Biquaternions over $\mathbb{C}$*: the first reads the four general products and the four forms they carry, the second reads the twelve products the four split into and the structures they define, and this one reads the four forms and the four algebraic norms on the six remarkable subspaces, and then reads the same objects after the change of scalars from $\mathbb{C}$ to $\mathbb{R}$ — the **realification**, which doubles the dimension, moves the twelve products and the four forms into the real forms, and carries its own trap in the counting of the structures. It also carries the ruling on the three levels of the word *metric* (§*The Metric: Three Levels*): the biquaternion norm, the two real sectors with their $ict$ metric, and the Clifford tool.
+The four general products of the biquaternion complex space carry four **forms**, their scalar parts, and each form carries an **algebraic norm**, its algebraic norm. This article is the third of the three reader articles that introduce the bands *Focus on the 4 General Algebraic Structures of Biquaternions over $\mathbb{C}$*, *Focus on the 4 Symmetric Algebraic Structures of Biquaternions over $\mathbb{C}$* and *Focus on the 4 Antisymmetric Algebraic Structures of Biquaternions over $\mathbb{C}$*: the first reads the four general products and the four forms they carry, the second reads the twelve products the four split into and the structures they define, and this one reads the four forms and the four algebraic norms on the six remarkable subspaces, and then reads the same objects after the change of scalars from $\mathbb{C}$ to $\mathbb{R}$ — the **realification**, which doubles the dimension, moves the twelve products and the four forms into the real forms, and carries its own trap in the counting of the structures. It also carries the ruling on the three levels of the word *metric* (§*The Metric: Three Levels*): the biquaternion norm, the two real sectors with their $ict$ metric, and the Clifford tool.
 
 The article owns nothing but the ruling of §*The Metric: Three Levels*, which belongs here because it disambiguates the forms compared below. The forms, their count and their symmetry are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; their algebraic norms, the multiplicativity and the definiteness are *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space*; the two on the subspaces are *Remarkable Subspaces and the Four Forms* and *Remarkable Subspaces and the Four Algebraic Norms*; and the realification is *The Realification and the Effect of the Change of Scalars*, whose two-dimensional prototype is *The Realification and the Effect of the Change of Scalars on the Complex Numbers*.
 
@@ -15,24 +15,24 @@ The scalar part of a general product is a degree-two form of the pair of its arg
 $$
 B(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q)=\textstyle\sum_\mu\varepsilon_\mu P_\mu Q_\mu,
 \qquad
-N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=\textstyle\sum_\mu P_\mu Q_\mu,
+H(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})=\textstyle\sum_\mu P_\mu\overline{Q_\mu},
 $$
 
 $$
-H(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P\tilde Q^{*})=\textstyle\sum_\mu P_\mu\overline{Q_\mu},
+N(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q)=\textstyle\sum_\mu P_\mu Q_\mu,
 \qquad
 K(\tilde P,\tilde Q)=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{*})=\textstyle\sum_\mu\varepsilon_\mu P_\mu\overline{Q_\mu},
 $$
 
-the general plain bilinear, the general quaternionic bilinear, the general plain sesquilinear and the general quaternionic sesquilinear form; they are the jobs of composition, causality, probability and gauge. The multiplication table of the units is the same in all four, so nothing but the insertion distinguishes them, and the four are **one bilinear form read through the two involutions**,
+the general plain bilinear, the general plain sesquilinear, the general quaternionic bilinear and the general quaternionic sesquilinear form; they are the jobs of composition, probability, causality and gauge. The multiplication table of the units is the same in all four, so nothing but the insertion distinguishes them, and the four are **one bilinear form read through the two involutions**,
 
 $$
-N(\tilde P,\tilde Q)=B(\tilde P^{\natural},\tilde Q),\qquad
 H(\tilde P,\tilde Q)=B(\tilde P,\tilde Q^{*}),\qquad
+N(\tilde P,\tilde Q)=B(\tilde P^{\natural},\tilde Q),\qquad
 K(\tilde P,\tilde Q)=B(\tilde P^{\natural},\tilde Q^{*}),
 $$
 
-a single computation in the four cells of the grid. The symmetry separates them at once: $B$ and $N$ are symmetric and $\mathbb{C}$-bilinear, $H$ and $K$ conjugate-symmetric and sesquilinear, with $H(\tilde P,\tilde Q)=\overline{H(\tilde Q,\tilde P)}$ and $K(\tilde P,\tilde Q)=\overline{K(\tilde Q,\tilde P)}$. Their Gram matrices in the basis $e_0,e_1,e_2,e_3$ are $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$ for $B$, $\mathrm{I}_4$ for $N$, $\mathrm{I}_4$ for $H$ and $\mathrm{E}$ for $K$, the matrix being $\mathrm{E}$ exactly when the two slots are treated alike — neither conjugated, as in $B$, or both, as in $K$ — and $\mathrm{I}_4$ when exactly one is conjugated, as in $N$ and $H$: two of the four forms are the two matrices, and the four forms are pairwise distinct although two pairs share a Gram matrix, a Gram matrix seeing the basis units alone, on which the conjugations act by the sign $\varepsilon_\mu$.
+a single computation in the four cells of the grid. The symmetry separates them at once: $B$ and $N$ are symmetric and $\mathbb{C}$-bilinear, $H$ and $K$ conjugate-symmetric and sesquilinear, with $H(\tilde P,\tilde Q)=\overline{H(\tilde Q,\tilde P)}$ and $K(\tilde P,\tilde Q)=\overline{K(\tilde Q,\tilde P)}$. Their Gram matrices in the basis $e_0,e_1,e_2,e_3$ are $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$ for $B$, $\mathrm{I}_4$ for $H$, $\mathrm{I}_4$ for $N$ and $\mathrm{E}$ for $K$, the matrix being $\mathrm{E}$ exactly when the two slots are treated alike — neither conjugated, as in $B$, or both, as in $K$ — and $\mathrm{I}_4$ when exactly one is conjugated, as in $H$ and $N$: two of the four forms are the two matrices, and the four forms are pairwise distinct although two pairs share a Gram matrix, a Gram matrix seeing the basis units alone, on which the conjugations act by the sign $\varepsilon_\mu$.
 
 **Two readings of the same object.** A form is read in two ways, and they are not the same statement. Read on the **second slot** it is either $\mathbb{C}$-bilinear — a pairing that can be iterated, the pairing of a composition — or conjugate-linear, a pairing that can only be evaluated, the pairing of a measurement. Read on the **first slot** it is either definite on each sector or signed: the two forms whose first slot is read as it stands, $B$ and $H$, are the two that measure; the two whose first slot carries ${}^{\natural}$, $N$ and $K$, are the two that carry a metric with a light cone. The second slot decides whether the form is a composability or a measurement, the first whether it measures or adds a light cone, and the four forms are the four cells of that grid.
 
@@ -42,33 +42,33 @@ The **algebraic norm** of a form is its algebraic norm, the degree-two function 
 
 $$
 B(\tilde Q)=Q_0^{2}-\textstyle\sum_kQ_k^{2},\qquad
-N(\tilde Q)=Q_0^{2}+\textstyle\sum_kQ_k^{2},\qquad
 H(\tilde Q)=\textstyle\sum_\mu\lvert Q_\mu\rvert^{2},\qquad
+N(\tilde Q)=Q_0^{2}+\textstyle\sum_kQ_k^{2},\qquad
 K(\tilde Q)=\lvert Q_0\rvert^{2}-\textstyle\sum_k\lvert Q_k\rvert^{2}.
 $$
 
-Two of the four have a sense the others lack, and the senses are different. **$N$ is multiplicative** on the general quaternionic bilinear product,
+Two of the four have a sense the others lack, and the senses are different. **$H$ is positive definite**, $H(\tilde Q)>0$ for $\tilde Q\neq0$, real on every element, and it is the unique topological norm of the space, its square root the Euclidean norm; it is the norm of no other product either. **$N$ is multiplicative** on the general quaternionic bilinear product,
 
 $$
 N(\tilde P^{\natural}\tilde Q)=N(\tilde P)\,N(\tilde Q),
 $$
 
-so that the units and the zero divisors of that product are closed and the light cone is closed under composition; the norm then behaves as a **charge** of the composition, and it is the norm of no other product. **$H$ is positive definite**, $H(\tilde Q)>0$ for $\tilde Q\neq0$, real on every element, and it is the unique topological norm of the space, its square root the Euclidean norm; it is the norm of no other product either. $B$ and $K$ have neither sense: $B$ is a complex bilinear algebraic norm, indefinite and anisotropic over $\mathbb{C}$, and $K$ an indefinite Hermitian algebraic norm. The separation of the **multiplicative** from the **positive definite** sense is the first thing a reader of the four norms must keep: $N$ is multiplicative and not definite, $H$ is definite and not multiplicative, and one and the same element may have a large $N$, a small $H$, or the reverse.
+so that the units and the zero divisors of that product are closed and the light cone is closed under composition; the norm then behaves as a **charge** of the composition, and it is the norm of no other product. $B$ and $K$ have neither sense: $B$ is a complex bilinear algebraic norm, indefinite and anisotropic over $\mathbb{C}$, and $K$ an indefinite Hermitian algebraic norm. The separation of the **multiplicative** from the **positive definite** sense is the first thing a reader of the four norms must keep: $H$ is definite and not multiplicative, $N$ is multiplicative and not definite, and one and the same element may have a large $H$, a small $N$, or the reverse.
 
-A second separation runs the other way. $B$ and $N$ have a **complex** algebraic norm, real on some elements and complex on others; $H$ and $K$ have a **real** one, being Hermitian. The two complex algebraic norms are the two indefinite forms of the algebras over $\mathbb{C}$; the two real algebraic norms are the two forms of the sesqualgebras. Of the four it is the two complex algebraic norms that are real on the two sectors and complex off them; and of those two, $N$ is the interval and $B$ the sector sign — $N$ indefinite on each sector, its level sets the mass shells, so that the mass is a level set of a real number.
+A second separation runs the other way. $B$ and $N$ have a **complex** algebraic norm, real on some elements and complex on others; $H$ and $K$ have a **real** one, being Hermitian. The two complex algebraic norms are the two indefinite forms of the algebras over $\mathbb{C}$; the two real algebraic norms are the two forms of the sesqualgebras. Of the four it is the two complex algebraic norms that are real on the two sectors and complex off them; and of those two, $B$ is the sector sign and $N$ the interval — $N$ indefinite on each sector, its level sets the mass shells, so that the mass is a level set of a real number.
 
 ## The Four Forms on the Remarkable Subspaces
 
 Restricted to a subspace, each form is read by its **signature** and by its **coincidences**: two forms may agree, or agree up to sign, on a subspace where they are different on the whole algebra, and the coincidences are the sharpest anatomy of the subspaces. The inertia of the restrictions, over $\mathbb{R}$, on the six subspaces:
 
-| subspace | $B$ | $N$ | $H$ | $K$ |
+| subspace | $B$ | $H$ | $N$ | $K$ |
 |---|---|---|---|---|
-| centre $\mathbb{C}_{\mathbb{B}}$ | $(1,1)$ | $(1,1)$ | $(2,0)$ | $(2,0)$ |
-| vector $\mathrm{Vect}(\mathbb{B})$ | $(3,3)$ | $(3,3)$ | $(6,0)$ | $(0,6)$ |
+| centre $\mathbb{C}_{\mathbb{B}}$ | $(1,1)$ | $(2,0)$ | $(1,1)$ | $(2,0)$ |
+| vector $\mathrm{Vect}(\mathbb{B})$ | $(3,3)$ | $(6,0)$ | $(3,3)$ | $(0,6)$ |
 | quaternion $\mathbb{H}_{\mathbb{B}}$ | $(1,3)$ | $(4,0)$ | $(4,0)$ | $(1,3)$ |
-| antiquaternion $i\mathbb{H}_{\mathbb{B}}$ | $(3,1)$ | $(0,4)$ | $(4,0)$ | $(1,3)$ |
-| Hermitian $\mathbb{M}_+$ | $(4,0)$ | $(1,3)$ | $(4,0)$ | $(1,3)$ |
-| anti-Hermitian $\mathbb{M}_-$ | $(0,4)$ | $(3,1)$ | $(4,0)$ | $(1,3)$ |
+| antiquaternion $i\mathbb{H}_{\mathbb{B}}$ | $(3,1)$ | $(4,0)$ | $(0,4)$ | $(1,3)$ |
+| Hermitian $\mathbb{M}_+$ | $(4,0)$ | $(4,0)$ | $(1,3)$ | $(1,3)$ |
+| anti-Hermitian $\mathbb{M}_-$ | $(0,4)$ | $(4,0)$ | $(3,1)$ | $(1,3)$ |
 
 **$H$ is definite on every subspace**, positive on the complex and the real-type subspaces alike, and it is the only one of the four that is: the other three are indefinite on the whole algebra, $B$ and $N$ as complex bilinear forms of rank four and $K$ as an indefinite Hermitian form. The definiteness of $H$ is what makes it the Born form, and its presence on every subspace is what makes it the only form a state can be normalised with.
 
@@ -112,12 +112,12 @@ and the two kinds of real-linear map are then distinguished by their relation to
 **The two rules of realification.** The change of scalars moves the forms by two rules, and they are the reason the four forms have the real signatures they have. A **symmetric bilinear form** realifies to the **split** signature: a complex bilinear form of complex rank $n$ becomes a real bilinear form of signature $(n,n)$. A **Hermitian form** realifies by **doubling its inertia**: a Hermitian form of complex inertia $(p,q)$ becomes a real form of signature $(2p,2q)$. Read on the four forms of $\mathbb{B}$, whose complex data are $B$ and $N$ of complex rank four, and $H$ of inertia $(4,0)$, $K$ of inertia $(1,3)$, the rules give the realified signatures
 
 $$
-B:(4,4),\qquad N:(4,4),\qquad H:(8,0),\qquad K:(2,6),
+B:(4,4),\qquad H:(8,0),\qquad N:(4,4),\qquad K:(2,6),
 $$
 
-all four indefinite over the reals except $H$, which stays positive definite and is the real Euclidean square. The two rules are also what the restriction table of the previous section re-derives subspace by subspace: the complex line $\mathbb{C}_{\mathbb{B}}$ realifies to a real plane, and the $(1,1)$, $(1,1)$, $(2,0)$, $(2,0)$ of the table are the two rules read on that plane.
+all four indefinite over the reals except $H$, which stays positive definite and is the real Euclidean square. The two rules are also what the restriction table of the previous section re-derives subspace by subspace: the complex line $\mathbb{C}_{\mathbb{B}}$ realifies to a real plane, and the $(1,1)$, $(2,0)$, $(1,1)$, $(2,0)$ of the table are the two rules read on that plane.
 
-**The dictionary, and the trap.** Realifying turns the twelve products and the four forms into operations of the real space, and two statements must be kept apart. The **objects** are the same: the twelve products exist on the same set after the change of scalars, the four forms are the same four forms, and every operation keeps its product over the real numbers, with real coefficients and real parts, since the change of scalars restricts the field and leaves the ring untouched. The **count** is not the same. On the real space a computation restricted to the real part sees ten of the twelve operations, the pairs $\mathrm{APA}=\mathrm{AQS}$ and $\mathrm{SQA}=\mathrm{SPS}$ having collapsed, and it sees the forms only through their restrictions, where the coincidences of the table replace the four distinct forms. A reader who counts the operations on the realification, or tests an identity there, therefore counts ten and reports a distinction erased; the count of twelve is the count on the complex space, and it is the count the band uses.
+**The dictionary, and the trap.** Realifying turns the twelve products and the four forms into operations of the real space, and two statements must be kept apart. The **objects** are the same: the twelve products exist on the same set after the change of scalars, the four forms are the same four forms, and every operation keeps its product over the real numbers, with real coefficients and real parts, since the change of scalars restricts the field and leaves the ring untouched. The **count** is not the same. On the real space a computation restricted to the real part sees ten of the twelve operations, the pairs $\mathrm{SPS}=\mathrm{SQA}$ and $\mathrm{APA}=\mathrm{AQS}$ having collapsed, and it sees the forms only through their restrictions, where the coincidences of the table replace the four distinct forms. A reader who counts the operations on the realification, or tests an identity there, therefore counts ten and reports a distinction erased; the count of twelve is the count on the complex space, and it is the count the band uses.
 
 **What the change of scalars is not.** The realification of $\mathbb{B}$ is $\mathbb{B}$ read over the reals, and not the algebra of pairs of quaternions: the multiplication of the realification is the multiplication of the complex algebra with the scalars restricted, and the complex structure $J$ is what makes the two readings differ. The centre of $\mathbb{B}$ stays the complex line $\mathbb{C}e_0$, the field $\mathbb{C}$ read over $\mathbb{R}$ and not a split algebra; and every object read from the ring alone — the centre, the ideals, the idempotents, the zero divisors, the nilpotents, the units — is unchanged by the passage, because $i$ is an element of the algebra and not an external scalar. The change of scalars is a change of the field of a module and of the dimension, not of the ring.
 
@@ -190,7 +190,7 @@ One consequence does reach the physics, and it is the only place where a level-3
 
 The four forms are the four quantities a relativistic quantum theory evaluates, and the change of scalars is the passage between the complex formulation and the real one. The readings are the framework's naming of a proved algebra and are labelled as readings.
 
-**The four forms.** The sector sign $B$ is the flag of the two sectors: positive definite on the informational sector and negative definite on the material one, it says which half an element is in and measures neither. The interval $N$ is the metric of the material sector, of signature $(3,1)$ there, its zero set the light cone and its level sets the mass shells, and its multiplicativity is the law by which the causal type of a composite is the product of the causal types. The Born form $H$ is the positive definite pairing of a state and an observable; it is the only form definite on every subspace, hence the only one a probability can be built from, and it is the same form on the informational and the material side. The Krein form $K$ is the indefinite Hermitian form of a gauge calibration, real at the two equal arguments and unable to normalise a state; on the material sector it is minus the interval, so the interval and the gauge form are one form read with a sign.
+**The four forms.** The sector sign $B$ is the flag of the two sectors: positive definite on the informational sector and negative definite on the material one, it says which half an element is in and measures neither. The Born form $H$ is the positive definite pairing of a state and an observable; it is the only form definite on every subspace, hence the only one a probability can be built from, and it is the same form on the informational and the material side. The interval $N$ is the metric of the material sector, of signature $(3,1)$ there, its zero set the light cone and its level sets the mass shells, and its multiplicativity is the law by which the causal type of a composite is the product of the causal types. The Krein form $K$ is the indefinite Hermitian form of a gauge calibration, real at the two equal arguments and unable to normalise a state; on the material sector it is minus the interval, so the interval and the gauge form are one form read with a sign.
 
 **The subspaces.** The restriction table is the algebra's own answer to which form belongs to which sector. The material sector carries the interval and the Krein form with the light cone, and the sector sign and the Born form with none; the informational sector carries the interval with the opposite inertia and the sector sign with the opposite sign; the Hermitian and anti-Hermitian subspaces are where the four forms collapse to two pairs, $B=H$ and $N=K$ on $\mathbb{M}_+$, and the collapse is the algebra's statement that on the observable sector the sector sign and the Born form are one form and the interval and the gauge form another. On the sectors the four forms are real, and this realness on the sectors is what makes the mass shell a real level set.
 
@@ -198,17 +198,17 @@ The four forms are the four quantities a relativistic quantum theory evaluates, 
 
 ## Summary
 
-The four general products of the biquaternion complex space carry four forms, $B$, $N$, $H$, $K$, the four cells of one bilinear form read through the two involutions, of Gram matrices $\mathrm{E}$, $\mathrm{I}_4$, $\mathrm{I}_4$ and $\mathrm{E}$; they carry four algebraic norms. Two of the four norms have a sense the others lack and the senses differ: $N$ is multiplicative on the quaternionic product, so that the units and the light cone are closed and the norm reads as a charge, and $H$ is positive definite and is the unique topological norm. On the six remarkable subspaces each form has a signature and the four forms coincide up to sign, with the pattern $B=N$, $H=K$ on the centre, $B=K$, $N=H$ on the quaternion subspace, $B=H$, $N=K$ on the Hermitian one, and the sign-reversed coincidences on their partners; $H$ is definite on every subspace, $B$ is the sector sign and no cone, and $N$ is the interval whose inertia is $(3,1)$ on the material sector and whose zero set is the light cone.
+The four general products of the biquaternion complex space carry four forms, $B$, $H$, $N$, $K$, the four cells of one bilinear form read through the two involutions, of Gram matrices $\mathrm{E}$, $\mathrm{I}_4$, $\mathrm{I}_4$ and $\mathrm{E}$; they carry four algebraic norms. Two of the four norms have a sense the others lack and the senses differ: $H$ is positive definite and is the unique topological norm, and $N$ is multiplicative on the quaternionic product, so that the units and the light cone are closed and the norm reads as a charge. On the six remarkable subspaces each form has a signature and the four forms coincide up to sign, with the pattern $B=N$, $H=K$ on the centre, $B=K$, $N=H$ on the quaternion subspace, $B=H$, $N=K$ on the Hermitian one, and the sign-reversed coincidences on their partners; $H$ is definite on every subspace, $B$ is the sector sign and no cone, and $N$ is the interval whose inertia is $(3,1)$ on the material sector and whose zero set is the light cone.
 
-The change of scalars from $\mathbb{C}$ to $\mathbb{R}$ is the realification: the same algebra read over the reals, of real dimension twice the complex one, with the complex structure $J=L_i$ distinguishing the complex-linear from the conjugate-linear real maps, and with two rules that move the forms — a complex bilinear form realifies to the split signature $(n,n)$ and a Hermitian form doubles its inertia — giving the realified signatures $B:(4,4)$, $N:(4,4)$, $H:(8,0)$, $K:(2,6)$. The objects survive the change and the count does not: a real computation sees ten of the twelve products and the collapsed forms, and the count of twelve belongs to the complex space.
+The change of scalars from $\mathbb{C}$ to $\mathbb{R}$ is the realification: the same algebra read over the reals, of real dimension twice the complex one, with the complex structure $J=L_i$ distinguishing the complex-linear from the conjugate-linear real maps, and with two rules that move the forms — a complex bilinear form realifies to the split signature $(n,n)$ and a Hermitian form doubles its inertia — giving the realified signatures $B:(4,4)$, $H:(8,0)$, $N:(4,4)$, $K:(2,6)$. The objects survive the change and the count does not: a real computation sees ten of the twelve products and the collapsed forms, and the count of twelve belongs to the complex space.
 
 ## Summary of Notation
 
 | Symbol | Meaning |
 |---|---|
-| $B$, $N$, $H$, $K$ | the four forms: general plain bilinear, general quaternionic bilinear, general plain sesquilinear, general quaternionic sesquilinear |
-| $B(\tilde Q),N(\tilde Q),H(\tilde Q),K(\tilde Q)$ | the four algebraic norms, the algebraic norms of the forms |
-| $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$ | the Gram matrix of $B$ and of $K$; $\mathrm{I}_4$ of $N$ and of $H$ |
+| $B$, $H$, $N$, $K$ | the four forms: general plain bilinear, general plain sesquilinear, general quaternionic bilinear, general quaternionic sesquilinear |
+| $B(\tilde Q),H(\tilde Q),N(\tilde Q),K(\tilde Q)$ | the four algebraic norms, the algebraic norms of the forms |
+| $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$ | the Gram matrix of $B$ and of $K$; $\mathrm{I}_4$ of $H$ and of $N$ |
 | $N(\tilde P^{\natural}\tilde Q)=N(\tilde P)N(\tilde Q)$ | the multiplicativity of the quaternionic norm |
 | $H(\tilde Q)=\sum_\mu\lvert Q_\mu\rvert^{2}$ | the positive definite norm, the unique topological one |
 | $(p,q)$ | the inertia of a form, positive and negative counts of a diagonalisation |

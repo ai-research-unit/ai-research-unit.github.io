@@ -10,7 +10,7 @@ A_\star(\tilde p)=\{\tilde x:\tilde p\star\tilde x=0\},\qquad
 B_\star(\tilde p)=\{\tilde x:\tilde x\star\tilde p=0\},
 $$
 the left and the right annihilator of the element in the product $\star$; the zero divisor and the
-radical are *Definitions for the Study of the 6 Algebraic Structures*, §*The Element Vocabulary*.
+radical are *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, §*The Element Vocabulary*.
 When the product is carried by a multiplication operator the annihilator is the kernel of that
 operator, so it is a linear subspace.
 
@@ -29,8 +29,8 @@ the annihilator on the remarkable subspaces; the zero-divisor set and the compar
 five structures are the cited article's.
 
 The word *annihilator* is also used one level up, for the elements that kill the whole space at a
-fixed product, which is the radical; that is the structure-level question of *Annihilators in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*
-(`articles_maths/annihilators-in-the-6-algebraic-structures-over-the-quaternion-r-space.md`), not the annihilator of a fixed element read here.
+fixed product, which is the radical; that is the structure-level question of *Annihilators in the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*
+(`articles_maths/annihilators-in-the-algebraic-structures-over-the-quaternion-r-space.md`), not the annihilator of a fixed element read here.
 
 ## The Annihilator of a Product
 
@@ -220,11 +220,11 @@ nonzero element.
 
 ## Further Reading
 
-- *Definitions for the Study of the 6 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-6-algebraic-structures.md`), §*The Element Vocabulary*, for the zero divisor and the radical of a general product.
+- *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-quaternion-r-space.md`), §*The Element Vocabulary*, for the zero divisor and the radical of a general product.
 - *Introduction to the Antisymmetric Quaternionic Algebra of Quaternions* (`articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra-of-quaternions.md`), for the operation, its alternation and its table.
 - *Zero Divisors of the Antisymmetric Quaternionic Algebra* (`articles_maths/zero-divisors-of-the-antisymmetric-quaternionic-algebra-of-quaternions.md`), above this article in this category, for the punctured space, the criterion and the comparison with the other five structures.
 - *The Adjoint Operators of the Antisymmetric Quaternionic Algebra* (`articles_maths/the-adjoint-operators-of-the-antisymmetric-quaternionic-algebra-of-quaternions.md`), below this article in this category, for the multiplication operator and its invariants.
-- *Annihilators in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/annihilators-in-the-6-algebraic-structures-over-the-quaternion-r-space.md`), for the structure-level annihilating set, the elements that kill the whole space for a fixed product.
+- *Annihilators in the Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/annihilators-in-the-algebraic-structures-over-the-quaternion-r-space.md`), for the structure-level annihilating set, the elements that kill the whole space for a fixed product.
 - *Introduction to the Remarkable Subspaces of the Quaternions* (`articles_maths/introduction-to-the-remarkable-subspaces-of-the-quaternions.md`), for the scalar line and the vector subspace on which the restriction is read.
 - *Annihilators of the Antisymmetric Plain Algebra* (`articles_maths/annihilators-of-the-antisymmetric-plain-algebra-of-quaternions.md`), the real twin block, whose annihilator of a noncentral element is the plane $\mathbb{R}e_0\oplus\mathbb{R}\vec p$.
 - *Annihilators of the Antisymmetric Quaternionic Sesqualgebra* (`articles_maths/annihilators-of-the-antisymmetric-quaternionic-sesqualgebra.md`), the complex sibling whose annihilator of a noncentral element is the plane $\mathbb{C}e_0\oplus\mathbb{C}\overline{\vec Q}$.

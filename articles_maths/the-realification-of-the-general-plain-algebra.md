@@ -45,7 +45,7 @@ Every product law is a polynomial identity with integer coefficients in the stru
 
 ## What Is Specific to the Real Interpretation
 
-Four structures exist over $\mathbb{R}$ and have no complex counterpart.
+Four things are specific to the real reading.
 
 **The real subalgebras.** A subalgebra of the complex reading is a complex subspace, of even real dimension. Over $\mathbb{R}$ there are subalgebras of every dimension at most eight. Among the coordinate subspaces the closed spans have dimensions $1,2,4,8$ with counts $1,7,7,1$, so there is no closed coordinate span of odd dimension above one; a subalgebra of odd dimension nevertheless exists, for instance
 $$
@@ -65,15 +65,11 @@ $$
 $$
 is a symmetric bilinear form of signature $(4,4)$ with zero radical, invariant under every automorphism. Its normalisation carries the dimension ratio: the complex trace counts $\mathrm{Sc}(\tilde X)$ with the factor $4$ and the real trace with the factor $8$, and $\tau$ is the real invariant form of the algebra.
 
-**The real models.** Over $\mathbb{C}$ the algebra is $M_2(\mathbb{C})$ acting on $\mathbb{C}^2$. Over $\mathbb{R}$ the same elements act on the realification $\mathbb{R}^4=\mathbb{C}^2_{\mathbb{R}}$, and on the left regular module $\mathbb{R}^8$, giving the readings $M_2(\mathbb{C})$ and $M_4(\mathbb{C})_L$. The real reading also brings a description with no complex counterpart of the same name, the **Clifford algebra** of the Minkowski form of signature $(1,3)$:
-$$
-\mathbb{B}\ \cong\ \mathrm{Cl}^+_{1,3}(\mathbb{R}),\qquad e_k\mapsto\gamma_0\gamma_k,\qquad i\mapsto-\omega=\gamma_0\gamma_1\gamma_2\gamma_3,
-$$
-where the reversion gives the natural conjugation and the norm gives a reversion square. It is an isomorphism of $\mathbb{C}$-algebras, since $\omega$ is central of square $-1$, so it is a second reading of the same ring and not a second structure.
+**The real models.** Over $\mathbb{C}$ the algebra is $M_2(\mathbb{C})$ acting on $\mathbb{C}^2$. Over $\mathbb{R}$ the same elements act on the realification $\mathbb{R}^4=\mathbb{C}^2_{\mathbb{R}}$, and on the left regular module $\mathbb{R}^8$, giving the readings $M_2(\mathbb{C})$ and $M_4(\mathbb{C})_L$. The Clifford reading of the same ring, the even Clifford algebra of the Minkowski form of signature $(1,3)$, is a third real model; it is the subject of *Biquaternion Other Algebraic Element Representations* and is not developed here.
 
 ## Summary
 
-Read over $\mathbb{R}$ the general plain algebra is the same associative unital product on the same elements, a simple $\mathbb{R}$-algebra on $\mathbb{R}^8$ with centre $\mathbb{C}_{\mathbb{B}}$; its second slot stays $\mathbb{C}_{\mathbb{B}}$-linear, its form $B$ realifies to signature $(4,4)$, and every ring-theoretic property is unchanged. The four conjugations are all $\mathbb{R}$-linear, the six sesquilinear structures become $\mathbb{R}$-algebras because $\mathbb{R}$ carries no involution, and the $A$/$S$ distinction is read in the centre. Four things are genuinely real: the odd-dimensional subalgebras, the Galois-twisted automorphism group, the trace form $8\operatorname{Re}B$, and the Clifford model $\mathrm{Cl}^+_{1,3}(\mathbb{R})$.
+Read over $\mathbb{R}$ the general plain algebra is the same associative unital product on the same elements, a simple $\mathbb{R}$-algebra on $\mathbb{R}^8$ with centre $\mathbb{C}_{\mathbb{B}}$; its second slot stays $\mathbb{C}_{\mathbb{B}}$-linear, its form $B$ realifies to signature $(4,4)$, and every ring-theoretic property is unchanged. The four conjugations are all $\mathbb{R}$-linear, the six sesquilinear structures become $\mathbb{R}$-algebras because $\mathbb{R}$ carries no involution, and the $A$/$S$ distinction is read in the centre. Four things are specific to the real reading: the odd-dimensional subalgebras, the Galois-twisted automorphism group, the trace form $8\operatorname{Re}B$, and the real models $M_2(\mathbb{C})$ and $M_4(\mathbb{C})_L$.
 
 ## Summary of Notation
 
@@ -86,10 +82,10 @@ Read over $\mathbb{R}$ the general plain algebra is the same associative unital 
 | $B$, $(4,4)$ | the general plain bilinear form and the signature of its realification |
 | $\rho:\operatorname{Aut}_{\mathbb{R}}(\mathbb{B})\to\{\mathrm{id},\kappa\}$ | the restriction to the centre, kernel $\operatorname{Aut}_{\mathbb{C}}(\mathbb{B})$ |
 | $\tau(\tilde P,\tilde Q)=\operatorname{Tr}(L_{\tilde P}L_{\tilde Q})$ | the trace form, $=8\operatorname{Re}B$, signature $(4,4)$ |
-| $\mathrm{Cl}^+_{1,3}(\mathbb{R})$ | the even Clifford algebra of the Minkowski form, isomorphic to $\mathbb{B}$ |
 
 ## Further Reading
 
 - *The Realification and the Effect of the Change of Scalars* (`articles_maths/the-realification-and-the-effect-of-the-change-of-scalars.md`), for the general construction, the two rules of the realification of a form, the table of the four effects and the change of scalars from $\mathbb{C}$ to $\mathbb{R}$.
-- *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.md`) and *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the twelve structures and the four forms of which this article is the real reading.
+- *Biquaternion Other Algebraic Element Representations* (`articles_maths/biquaternion-other-algebraic-element-representations.md`), for the Clifford reading $\mathbb{B}\cong\mathrm{Cl}^+_{1,3}(\mathbb{R})$, which is a real model of the same ring and is owned there.
+- *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-algebraic-structures-over-the-biquaternion-c-space.md`) and *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the twelve structures and the four forms of which this article is the real reading.
 - *The Specificities of the General Plain Algebra* (`articles_maths/the-specificities-of-the-general-plain-algebra.md`), for the left alternativity that isolates the general plain product among the twelve, a criterion that holds in the two readings.

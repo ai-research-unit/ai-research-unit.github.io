@@ -30,7 +30,7 @@ $$
 
 and the square of a pure element is $\vec Q^2=-(\vec Q,\vec Q)e_0$. The remarkable subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ are *Introduction to the Remarkable Subspaces*. A root of a central value is written $\tilde\Xi$ (§*The Root Convention* of *Conventions in Mathematics*), an idempotent $\tilde\Pi$ (§*The Idempotent Convention*), the two members of a complete pair with the two signs, $\tilde\Pi_+$ and $\tilde\Pi_-$, the subscript $+$ naming the member attached to $+1$, and a generic element $\tilde P$.
 
-The equations name a product, so the roots and the idempotents are relative to it. The general definition of the power, the square and the root of a central value is *Definitions for the Study of the 12 Algebraic Structures*, §*Powers, the Square and the Roots*, and the general definition of an idempotent, with the orthogonal, complete and primitive families, the projection and the Peirce decomposition, is the same article. Throughout this article the square is the one of the general plain bilinear product, the multiplication of the algebra; the other three general products carry roots and idempotents of their own, and they are *Comparison Between the Four General Products*.
+The equations name a product, so the roots and the idempotents are relative to it. The general definition of the power, the square and the root of a central value is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots*, and the general definition of an idempotent, with the orthogonal, complete and primitive families, the projection and the Peirce decomposition, is the same article. Throughout this article the square is the one of the general plain bilinear product, the multiplication of the algebra; the other three general products carry roots and idempotents of their own, and they are *Comparison Between the Four General Products*.
 
 ## The Roots of One
 
@@ -208,7 +208,7 @@ and a unit is not a zero divisor. The single element common to the roots of $+1$
 
 **Every idempotent of $\mathbb{B}$ is trivial, $0$ or $e_0$, or of the form $\tilde\Pi=\tfrac12(e_0+\tilde\Xi)$ with $\tilde\Xi$ a root of $+1$; a root carries the two idempotents $\tilde\Pi_+(\tilde\Xi)=\tfrac12(e_0+\tilde\Xi)$ and $\tilde\Pi_-(\tilde\Xi)=\tfrac12(e_0-\tilde\Xi)=e_0-\tilde\Pi_+(\tilde\Xi)$, a complete orthogonal pair whose difference is the root; the halving map $\tilde\Xi\mapsto\tfrac12(e_0+\tilde\Xi)$ is a bijection from the roots of $+1$ onto the idempotents; and the non-trivial idempotents form a four-real-parameter family.**
 
-The **idempotents** of $\mathbb{B}$ are the elements satisfying $\tilde\Pi^2=\tilde\Pi$, the square being the one of the general plain bilinear product. They are the algebraic form of a projection, and in $\mathbb{B}$ they do four separate jobs at once: they give the direct sum decompositions of the algebra into left ideals, and in particular the two minimal left ideals; they classify the non-pure zero divisors, every one of which is a complex multiple of an idempotent; they are in bijection with the roots of $+1$ through the halving map, each root carrying a complete orthogonal pair, so their classification is the classification of those roots; and they drive the Peirce decomposition of the algebra. The definition and the families are the general ones of *Definitions for the Study of the 12 Algebraic Structures*, read here in the general plain bilinear product.
+The **idempotents** of $\mathbb{B}$ are the elements satisfying $\tilde\Pi^2=\tilde\Pi$, the square being the one of the general plain bilinear product. They are the algebraic form of a projection, and in $\mathbb{B}$ they do four separate jobs at once: they give the direct sum decompositions of the algebra into left ideals, and in particular the two minimal left ideals; they classify the non-pure zero divisors, every one of which is a complex multiple of an idempotent; they are in bijection with the roots of $+1$ through the halving map, each root carrying a complete orthogonal pair, so their classification is the classification of those roots; and they drive the Peirce decomposition of the algebra. The definition and the families are the general ones of *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, read here in the general plain bilinear product.
 
 ### The Definition
 
@@ -226,7 +226,7 @@ $$
 \mathbb{B}=\mathbb{B}\tilde\Pi\oplus\mathbb{B}(e_0-\tilde\Pi),\qquad \mathbb{B}=\tilde\Pi\mathbb{B}\oplus(e_0-\tilde\Pi)\mathbb{B},
 $$
 
-and every such decomposition arises from an idempotent. A **primitive** idempotent, one that is not a sum of two nonzero orthogonal idempotents, generates a minimal left ideal. The general statements, with the orthogonal, complete and primitive families, the projection and the Peirce decomposition, are *Definitions for the Study of the 12 Algebraic Structures*.
+and every such decomposition arises from an idempotent. A **primitive** idempotent, one that is not a sum of two nonzero orthogonal idempotents, generates a minimal left ideal. The general statements, with the orthogonal, complete and primitive families, the projection and the Peirce decomposition, are *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 ### The Two Idempotents of a Root
 
@@ -489,7 +489,7 @@ The idempotents are the trivial elements $0$ and $e_0$ and the elements $\tilde\
 
 ## Further Reading
 
-- *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), for the general definition of a root of a central value, of a square and of an idempotent, with the orthogonal, complete and primitive families, the projection and the Peirce decomposition.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the general definition of a root of a central value, of a square and of an idempotent, with the orthogonal, complete and primitive families, the projection and the Peirce decomposition.
 - *Square Roots of a General Element in the General Plain Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-general-plain-algebra.md`), for the roots of the general quadratic $\tilde\Xi^2=\tilde Q$, of which the roots of $+1$ here are one case.
 - *Square Roots of Zero and the Nilpotents of the General Plain Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-plain-algebra.md`), for the roots of $0$ and the nilpotents, the second central value.
 - *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the two families of the zero-divisor set, of which the non-trivial idempotents are the non-pure one.

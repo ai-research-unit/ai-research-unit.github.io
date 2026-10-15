@@ -6,7 +6,7 @@ The symmetric plain algebra of $\mathbb{H}$ carries the Jordan product $\tilde p
 
 **This is not the algebra $\mathbb{H}$.** The two algebras share the space, the addition, the real scalars and the unit, but $\bullet$ is a different multiplication and the projection onto the scalar line is not multiplicative. Throughout, the natural sign ${}^{\natural}$ is the quaternion conjugation, the bar is the identity because $\mathbb{R}$ has no nontrivial involution, and the star coincides with the natural sign and gives nothing new.
 
-**Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1^2=e_2^2=e_3^2=-e_0$. An element is $\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; the norm is $N(\tilde q)=\tilde q\tilde q^{\natural}=q_0^2+|\vec q|^2$, the generic trace is $T(\tilde q)=2q_0$, and the scalar line and the vector subspace are those of *Introduction to the Remarkable Subspaces of the Quaternions*. The names of the six operations are those of *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*.
+**Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1^2=e_2^2=e_3^2=-e_0$. An element is $\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_{k=1}^{3}q_ke_k$ and $q_\mu\in\mathbb{R}$; the norm is $N(\tilde q)=\tilde q\tilde q^{\natural}=q_0^2+|\vec q|^2$, the generic trace is $T(\tilde q)=2q_0$, and the scalar line and the vector subspace are those of *Introduction to the Remarkable Subspaces of the Quaternions*. The names of the six operations are those of *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*.
 
 ## The Properties of the Block
 
@@ -161,4 +161,4 @@ The symmetric plain algebra of $\mathbb{H}$ is a commutative unital special Jord
 - *Zero Divisors of the Symmetric Plain Algebra*, for the zero divisors that are not nilpotents.
 - *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra*, below this article in this category, for the square and the inverse in full.
 - *Jordan Algebras*, for the special Jordan algebras, the formal reality and the classification of the formally real ones.
-- *The 6 Products of the Quaternion Real Space* and *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, for the six operations and their laws.
+- *The 6 Products of the Quaternion Real Space* and *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, for the six operations and their laws.

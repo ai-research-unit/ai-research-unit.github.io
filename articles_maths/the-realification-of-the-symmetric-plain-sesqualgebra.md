@@ -8,7 +8,7 @@ $$
 \qquad
 H(\tilde P,\tilde Q)=\mathrm{Sc}\bigl(\tilde P\tilde Q^{*}\bigr)=P_0\overline{Q_0}+(\vec P,\overline{\vec Q}),
 $$
-which over $\mathbb{C}$ is the symmetric plain sesquilinear structure of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, and the only one of the twelve that is Hermitian (*The Specificities of the Symmetric Plain Sesqualgebra*). Read over $\mathbb{R}$, the same product on the same set is an $\mathbb{R}$-algebra on the eight-dimensional real space $\mathbb{R}^8$, and this article owns that real reading.
+which over $\mathbb{C}$ is the symmetric plain sesquilinear structure of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, and the only one of the twelve that is Hermitian (*The Specificities of the Symmetric Plain Sesqualgebra*). Read over $\mathbb{R}$, the same product on the same set is an $\mathbb{R}$-algebra on the eight-dimensional real space $\mathbb{R}^8$, and this article owns that real reading.
 
 The general construction is not repeated here. The realification of a vector space, of a linear map and of a form, the doubling of the dimension, the complex structure $J$, the two rules of the realification of a form and the table of the four effects are *The Realification and the Effect of the Change of Scalars*; This article gives what is specific to this product: its real bilinear reading, the law of its second slot over the centre, the realification of the form it carries and the signature that follows, its real operators, and the four objects of the real reading that the Hermitian block adds.
 
@@ -83,7 +83,7 @@ $$
 $$
 the extra coset conjugate-linear: the complex automorphisms are the elements of $G_H$ fixing $e_0$ (*The Multiplication Operators of the Symmetric Plain Sesqualgebra*), and the passage to $\mathbb{R}$ adds the Galois twist of $\mathbb{C}/\mathbb{R}$.
 
-**The real-quaternion coincidence.** On the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ the block **coincides with the symmetric quaternionic algebra** $\mathrm{SQA}$ of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*:
+**The real-quaternion coincidence.** On the real quaternion subspace $\mathbb{H}_{\mathbb{B}}$ the block **coincides with the symmetric quaternionic algebra** $\mathrm{SQA}$ of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*:
 $$
 \tilde P\star\tilde Q=\mathrm{SQA}(\tilde P,\tilde Q)\qquad(\tilde P,\tilde Q\in\mathbb{H}_{\mathbb{B}}),
 $$
@@ -113,7 +113,7 @@ The Symmetric Plain Sesqualgebra read over $\mathbb{R}$ is the same product on t
 ## Further Reading
 
 - *The Realification and the Effect of the Change of Scalars* (`articles_maths/the-realification-and-the-effect-of-the-change-of-scalars.md`), for the general construction, the two rules of the realification of a form and the table of the four effects.
-- *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the twelve structures and the columns of the table of the twelve, of which this article is the real reading of one row.
+- *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-algebraic-structures-over-the-biquaternion-c-space.md`), for the twelve structures and the columns of the table of the twelve, of which this article is the real reading of one row.
 - *The Specificities of the Symmetric Plain Sesqualgebra* (`articles_maths/the-specificities-of-the-symmetric-plain-sesqualgebra.md`), for the Hermitian criterion and for the centrality shared with the symmetric quaternionic algebra.
 - *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`) and *The Realification of the Four Forms* (`articles_maths/the-realification-of-the-four-forms.md`), for the Hermitian form $H$ and for its realified Gram matrix, signature $(8,0)$ and null set $\{0\}$.
 - *The Multiplication Operators of the Symmetric Plain Sesqualgebra* (`articles_maths/the-multiplication-operators-of-the-symmetric-plain-sesqualgebra.md`), for the conjugate-linearity of the left family, the traces, the composition law and the adjoint, of which this article is the real reading.

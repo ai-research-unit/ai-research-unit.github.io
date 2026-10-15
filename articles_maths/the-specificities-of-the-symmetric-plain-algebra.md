@@ -8,7 +8,7 @@ $$
 \tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P),
 $$
 
-the multiplication of *Introduction to the Symmetric Plain Algebra of Biquaternions*. It makes the complex space a commutative unital Jordan algebra, and of the twelve structures of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* it is the only one that is a Jordan product. What is specific to the block is the structure a Jordan product carries and an arbitrary commutative product does not: a square that is the plain square, a multiplication operator that is the symmetric half of the two plain multiplications, a quadratic identity of degree two with a generic trace, a generic norm and an inverse, a quadratic representation, and a Peirce theory at the idempotents. Each is an explicit computation on the four coordinates, and each is developed below in the block's own terms.
+the multiplication of *Introduction to the Symmetric Plain Algebra of Biquaternions*. It makes the complex space a commutative unital Jordan algebra, and of the twelve structures of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* it is the only one that is a Jordan product. What is specific to the block is the structure a Jordan product carries and an arbitrary commutative product does not: a square that is the plain square, a multiplication operator that is the symmetric half of the two plain multiplications, a quadratic identity of degree two with a generic trace, a generic norm and an inverse, a quadratic representation, and a Peirce theory at the idempotents. Each is an explicit computation on the four coordinates, and each is developed below in the block's own terms.
 
 The block is exact in the opposite sense as well. The Jordan law is weaker than associativity, so the block does not inherit the parent's operator calculus: no non-trivial idempotent gives a projector, a square-zero element gives an operator of index three rather than a square-zero operator, the Peirce decomposition is cubic rather than quadratic, and the invertible elements form no group. Those absences are stated with the theorems they accompany, and §*The Isolation among the Twelve* names the one law from which the theorems and the absences both follow.
 
@@ -186,7 +186,7 @@ Three things the parent product has are absent, and the absences belong to the b
 
 One law separates the block from the other eleven structures, and it is stated here to close the article, not to enumerate them. The block is **commutative** and satisfies the **Jordan identity**, equivalently the operator identity of §*The Multiplication Operator*; a commutative product with the Jordan identity is a **Jordan product**, and the block is the only Jordan product of the twelve.
 
-**Theorem.** Of the twelve structures of *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, the symmetric plain product is the only one that is commutative and satisfies the Jordan identity.
+**Theorem.** Of the twelve structures of *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, the symmetric plain product is the only one that is commutative and satisfies the Jordan identity.
 
 *Proof.* The twelve are generated from the plain product by twisting a slot with a conjugation or by (anti)symmetrising, and each of the three operations destroys at least one clause of the criterion. The four general products are non-commutative, the four antisymmetric parts are non-commutative, the symmetric quaternionic product is commutative but fails the identity, and the two symmetric sesquilinear products are only conjugate-commutative and fail the identity. The block is commutative by construction and satisfies the identity by Jordan-admissibility, so it alone meets both clauses.
 
@@ -226,7 +226,7 @@ The symmetric plain product $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\
 | $T(\tilde Q)=2Q_0$, $N(\tilde Q)=\sum_\mu Q_\mu^2$ | the generic trace and the generic norm |
 | $\tilde Q^{-1}=\tilde Q^{\natural}/N(\tilde Q)$ | the Jordan inverse, the algebra inverse |
 | $\{N(\tilde Q)=0\}$ | the isotropic cone, the origin and the zero-divisor cone |
-| $\mathrm{GPA}\dots\mathrm{AQS}$ | the twelve structures, coded as in *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* |
+| $\mathrm{GPA}\dots\mathrm{AQS}$ | the twelve structures, coded as in *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* |
 
 ## Further Reading
 
@@ -235,4 +235,4 @@ The symmetric plain product $\tilde P\bullet\tilde Q=\tfrac12(\tilde P\tilde Q+\
 - *The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra* (`articles_maths/the-square-the-idempotents-and-the-jordan-inverse-of-the-symmetric-plain-algebra.md`), for the element theory the law delivers.
 - *The Multiplication Operators of the Symmetric Plain Algebra* (`articles_maths/the-multiplication-operators-of-the-symmetric-plain-algebra.md`), for the operators, the derivations and the structure algebra.
 - *The Symmetric and Antisymmetric Parts of an Algebra Product* (`articles_maths/the-symmetric-and-antisymmetric-parts-of-an-algebra-product.md`), for the Jordan-admissibility of an associative algebra.
-- *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the twelve operations and the isolation table.
+- *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-algebraic-structures-over-the-biquaternion-c-space.md`), for the twelve operations and the isolation table.

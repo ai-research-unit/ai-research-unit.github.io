@@ -19,7 +19,7 @@ product is nevertheless $\{0\}$, because the product is non-degenerate, and the 
 article.
 
 **Boundaries.** The general definition of the zero divisor, of the annihilator and of the regular
-element is *Definitions for the Study of the 12 Algebraic Structures* §*The Zero Divisor and the
+element is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* §*The Zero Divisor and the
 Annihilator*; the zero-divisor sets of the four general products are *Zero Divisors of the General
 Plain Algebra* and *Comparison Between the Four General Products*; the square-zero elements are
 *Square Roots of Zero and the Nilpotents of the Symmetric Quaternionic Algebra*; the isotropic cone and its two families are
@@ -190,9 +190,8 @@ the argument of §*The Criterion*. The other six hold a proper set: the four gen
 $\{N=0\}\setminus\{0\}$, the symmetric plain product has $e_0$ regular, since
 $\tilde P\bullet e_0=\tilde P$ never vanishes for $\tilde P\neq0$, and the symmetric quaternionic
 sesquilinear product, whose value carries a vector part, is read in its own article. The reading
-structure by structure is *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*,
-and the exact column of the definitions is *Definitions for the Study of the 12 Algebraic
-Structures* §*The Dictionary: The Classes and the Four General Products*.
+structure by structure is *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*,
+and the exact column of the definitions is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* §*The Dictionary: The Classes and the Four General Products*.
 
 ## Summary
 
@@ -225,7 +224,7 @@ and $\mathrm{AQS}$ being maximal too, and the symmetric plain product is not amo
 
 ## Further Reading
 
-- *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), for the general definition of the zero divisor, the annihilator and the regular element.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the general definition of the zero divisor, the annihilator and the regular element.
 - *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the zero-divisor set of the parent and its two families.
 - *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the coincidence of the four sets.
 - *Norm and Invertibility in the Symmetric Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-symmetric-quaternionic-algebra.md`), for the form, its non-degeneracy and the non-isotropic class.

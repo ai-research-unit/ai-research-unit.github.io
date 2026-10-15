@@ -1,19 +1,20 @@
-# __Zero Divisors in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space__
+# __Zero Divisors in the Algebraic Structures over the Quaternion $\mathbb{R}$ Space__
 
 ## Introduction
 
 Let $\star$ be a product on the quaternion algebra $\mathbb{H}$. A nonzero $\tilde p\in\mathbb{H}$ is a **zero divisor of $\star$** when it kills a nonzero partner: when $\tilde p\star\tilde q=0$ or $\tilde q\star\tilde p=0$ for some nonzero $\tilde q$. The first case makes it a left zero divisor, the second a right zero divisor, and an element of both kinds a two-sided zero divisor.
 
-**The six names.** The space carries six products, so the generic definition poses six questions; this article answers them once for all six. Each of the six products has a three-letter code: the first letter is the operation, $\mathrm G$ the general product and $\mathrm S$, $\mathrm A$ its symmetric and antisymmetric parts; the second is the first slot, $\mathrm P$ plain and $\mathrm Q$ quaternionic; the third is the family, $\mathrm A$ the algebra over $\mathbb{R}$. The six are read in the two families of *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*,
+**The six names.** The space carries six products, so the generic definition poses six questions; this article answers them once for all six. Each of the six products has a three-letter code: the first letter is the operation, $\mathrm G$ the general product and $\mathrm S$, $\mathrm A$ its symmetric and antisymmetric parts; the second is the first slot, $\mathrm P$ plain and $\mathrm Q$ quaternionic; the third is the family, $\mathrm A$ the algebra over $\mathbb{R}$. The six are read in the three halves of *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*,
 
-| the family | general | symmetric | antisymmetric |
-|---|---|---|---|
-| the plain algebra | $\mathrm{GPA}$ | $\mathrm{SPA}$ | $\mathrm{APA}$ |
-| the quaternionic algebra | $\mathrm{GQA}$ | $\mathrm{SQA}$ | $\mathrm{AQA}$ |
+| the half | the plain algebra | the quaternionic algebra |
+|---|---|---|
+| general | $\mathrm{GPA}$ | $\mathrm{GQA}$ |
+| symmetric | $\mathrm{SPA}$ | $\mathrm{SQA}$ |
+| antisymmetric | $\mathrm{APA}$ | $\mathrm{AQA}$ |
 
-and every table of the article follows this order, family by family and, inside a family, general then symmetric then antisymmetric.
+and every table of the article follows this order, half by half and, inside a half, the plain structure then the quaternionic one.
 
-**Scope and owners.** The general vocabulary, the zero divisor, the annihilator, the idempotent and the nilpotent stated once for a general product, is *Definitions for the Study of the 6 Algebraic Structures*. The criteria of the four derived structures stay owned by their articles, cited one by one in §*The Six Structures and the Zero-Divisor Set*. The two general products and their four parts are *The 6 Products of the Quaternion Real Space* and *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, whose three-letter code is used throughout, and the two forms are *The 2 Forms over the Quaternion $\mathbb{R}$ Space*. The property table and the two unit entries are *Comparison Between the Two General Products*; the idempotents and the roots of $+1$ are *Square Roots of One and the Idempotents in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; the roots of $0$, the square-zero sets and the nilpotents are *Square Roots of Zero and the Nilpotents in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; the root equation at a general value is *Square Roots of a General Element in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; and the annihilators of one element are *Annihilators in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*. The space being real and the norm definite, the empty set is finally read against the complex case in §*The Empty Set against the Complex Case*.
+**Scope and owners.** The general vocabulary, the zero divisor, the annihilator, the idempotent and the nilpotent stated once for a general product, is *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*. The criteria of the four derived structures stay owned by their articles, cited one by one in §*The Six Structures and the Zero-Divisor Set*. The two general products and their four parts are *The 6 Products of the Quaternion Real Space* and *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, whose three-letter code is used throughout, and the two forms are *The 2 Forms over the Quaternion $\mathbb{R}$ Space*. The property table and the two unit entries are *Comparison Between the Two General Products*; the idempotents and the roots of $+1$ are *Square Roots of One and the Idempotents in the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; the roots of $0$, the square-zero sets and the nilpotents are *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; the root equation at a general value is *Square Roots of a General Element in the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; and the annihilators of one element are *Annihilators in the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*. The space being real and the norm definite, the empty set is finally read against the complex case in §*The Empty Set against the Complex Case*.
 
 ## The Empty Zero-Divisor Set
 
@@ -41,9 +42,9 @@ So an element is a unit exactly when it lies off the vanishing set of the norm, 
 
 ## The Six Structures and the Zero-Divisor Set
 
-The two general products split into the six structures through the symmetrisation and the antisymmetrisation (*The 6 Products of the Quaternion Real Space*). A zero divisor names its product, so each of the six carries a zero-divisor set of its own; the table of §*Results* records them, one family to a block and, inside a block, the general structure first, the product written by its defining formula.
+The two general products split into the six structures through the symmetrisation and the antisymmetrisation (*The 6 Products of the Quaternion Real Space*). A zero divisor names its product, so each of the six carries a zero-divisor set of its own; the table of §*Results* records them, one half to a block and, inside a block, the plain structure first, the product written by its defining formula.
 
-**Theorem (the empty set is the mark of the two general products).** Among the six structures the zero-divisor set is empty exactly for the two general structures $\mathrm{GPA}$ and $\mathrm{GQA}$, and for no other. The four derived sets are strictly larger: the symmetric plain structure $\mathrm{SPA}$ has the punctured vector subspace $\mathrm{Vect}(\mathbb{H})\setminus\{0\}$ of real dimension three, and the three remaining structures $\mathrm{APA}$, $\mathrm{SQA}$ and $\mathrm{AQA}$ have the whole punctured space $\mathbb{H}\setminus\{0\}$.
+**Theorem (the empty set is the mark of the two general products).** Among the six structures the zero-divisor set is empty exactly for the two general structures $\mathrm{GPA}$ and $\mathrm{GQA}$, and for no other. The four derived sets are strictly larger: the symmetric plain structure $\mathrm{SPA}$ has the punctured vector subspace $\mathrm{Vect}(\mathbb{H})\setminus\{0\}$ of real dimension three, and the three remaining structures $\mathrm{SQA}$, $\mathrm{APA}$ and $\mathrm{AQA}$ have the whole punctured space $\mathbb{H}\setminus\{0\}$.
 
 The six structures are read one by one below; each names the product, its zero-divisor set and the reason. The two general rows are read together in §*Results*.
 
@@ -73,6 +74,20 @@ and its scalar is the norm.
 
 The units are the elements off the vanishing set of the norm, $\mathbb{H}^{\times}=\mathbb{H}\setminus\{0\}$, a group under the plain product with the two-sided inverse $\tilde p^{-1}=\tilde p^{\natural}/N(\tilde p)$; the complement of the empty zero-divisor set is that group together with the origin, the whole space.
 
+### $\mathrm{GQA}$, the general quaternionic algebra
+
+The product is $\tilde p^{\natural}\tilde q$, its conjugate is $\tilde p^{\natural}$, and the form of the product is
+
+$$
+N(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p^{\natural}\tilde q)=p_0q_0+(\vec p,\vec q) .
+$$
+
+The norm is the form at the two equal arguments, the reduced norm of §*The General Plain Algebra (GPA)*, $N(\tilde p)=p_0^{2}+p_1^{2}+p_2^{2}+p_3^{2}$; the natural conjugation sends $\vec p$ to $-\vec p$, so $N(\tilde p^{\natural})=N(\tilde p)$.
+
+**The zero-divisor set is empty.** The natural product is the plain product with the natural conjugation in the first slot, so its left multiplication by $\tilde p$ is the plain left multiplication by $\tilde p^{\natural}$; the kernel is $\{0\}$ for $\tilde p\neq0$ by §*The General Plain Algebra (GPA)*. The element is invertible, with the two-sided inverse $(\tilde p^{-1})^{\natural}$.
+
+The element $e_0$ is a left unit alone, and every nonzero element has the two-sided solution $(\tilde p^{-1})^{\natural}$ of the inverse equations; the invertible elements are $\mathbb{H}\setminus\{0\}$, and the complement of the empty zero-divisor set is that set together with the origin, the whole space.
+
 ### $\mathrm{SPA}$, the symmetric plain algebra
 
 The product is the Jordan product $\tilde p\bullet\tilde q=\tfrac12(\tilde p\tilde q+\tilde q\tilde p)=(p_0q_0-(\vec p,\vec q))e_0+p_0\vec q+q_0\vec p$, the symmetrisation of the plain product, so its form is the same,
@@ -95,28 +110,6 @@ The plane $p_0=0$ of the pure elements is the zero-divisor set of the structure,
 
 The unit $e_0$ is two-sided, and every nonzero element is invertible, $e_1\bullet(-e_1)=e_0$; but the invertible elements form no group, the product being non-associative, and the complement of the zero-divisor set is not the invertible set: the origin is a non-zero-divisor that is not invertible, and every nonzero pure element is invertible while lying in the zero-divisor set.
 
-### $\mathrm{APA}$, the antisymmetric plain algebra
-
-The product is the commutator $\tilde p\wedge\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\vec p\times\vec q$. It is alternating, so at the two equal arguments it vanishes, $\tilde p\wedge\tilde p=0$; there is no form there and no norm.
-
-**The zero-divisor set is the whole punctured space $\mathbb{H}\setminus\{0\}$.** Every nonzero element is annihilated by itself.
-
-There is no unit, the values lying in the vector subspace, so there is no group of units and the complement of the zero-divisor set — the whole punctured space — is the origin alone.
-
-### $\mathrm{GQA}$, the general quaternionic algebra
-
-The product is $\tilde p^{\natural}\tilde q$, its conjugate is $\tilde p^{\natural}$, and the form of the product is
-
-$$
-N(\tilde p,\tilde q)=\mathrm{Sc}(\tilde p^{\natural}\tilde q)=p_0q_0+(\vec p,\vec q) .
-$$
-
-The norm is the form at the two equal arguments, the reduced norm of §*The General Plain Algebra (GPA)*, $N(\tilde p)=p_0^{2}+p_1^{2}+p_2^{2}+p_3^{2}$; the natural conjugation sends $\vec p$ to $-\vec p$, so $N(\tilde p^{\natural})=N(\tilde p)$.
-
-**The zero-divisor set is empty.** The natural product is the plain product with the natural conjugation in the first slot, so its left multiplication by $\tilde p$ is the plain left multiplication by $\tilde p^{\natural}$; the kernel is $\{0\}$ for $\tilde p\neq0$ by §*The General Plain Algebra (GPA)*. The element is invertible, with the two-sided inverse $(\tilde p^{-1})^{\natural}$.
-
-The element $e_0$ is a left unit alone, and every nonzero element has the two-sided solution $(\tilde p^{-1})^{\natural}$ of the inverse equations; the invertible elements are $\mathbb{H}\setminus\{0\}$, and the complement of the empty zero-divisor set is that set together with the origin, the whole space.
-
 ### $\mathrm{SQA}$, the symmetric quaternionic algebra
 
 The product is $\tfrac12(\tilde p^{\natural}\tilde q+\tilde q^{\natural}\tilde p)=N(\tilde p,\tilde q)e_0$, central, and the form of the product is
@@ -130,6 +123,14 @@ the quaternion form of *The 2 Forms over the Quaternion $\mathbb{R}$ Space*; the
 **The zero-divisor set is the whole punctured space $\mathbb{H}\setminus\{0\}$.** The value is the central read of the form, $N(\tilde p,\tilde q)e_0$. The form is nondegenerate, its Gram matrix being the identity in the four coordinates, so for $\tilde p\neq0$ the equation $N(\tilde p,\tilde q)=0$ is one real linear equation in the four components of $\tilde q$ and its solutions fill a hyperplane of nonzero vectors, of real dimension three.
 
 There is no unit — the value is central and $e_0$ acts as $N(e_0,\tilde q)e_0=q_0e_0$, not as an identity — so there is no group of units and the complement of the zero-divisor set, the whole punctured space, is the origin alone.
+
+### $\mathrm{APA}$, the antisymmetric plain algebra
+
+The product is the commutator $\tilde p\wedge\tilde q=\tfrac12(\tilde p\tilde q-\tilde q\tilde p)=\vec p\times\vec q$. It is alternating, so at the two equal arguments it vanishes, $\tilde p\wedge\tilde p=0$; there is no form there and no norm.
+
+**The zero-divisor set is the whole punctured space $\mathbb{H}\setminus\{0\}$.** Every nonzero element is annihilated by itself.
+
+There is no unit, the values lying in the vector subspace, so there is no group of units and the complement of the zero-divisor set — the whole punctured space — is the origin alone.
 
 ### $\mathrm{AQA}$, the antisymmetric quaternionic algebra
 
@@ -147,13 +148,13 @@ The two general products share one zero-divisor set, the empty set of §*The Emp
 
 Read against the empty set and against the whole space, the six sets are
 
-| family | structure | the product | the zero-divisor set |
+| half | structure | the product | the zero-divisor set |
 |---|---|---|---|
-| the plain algebra | $\mathrm{GPA}$ | $\tilde p\tilde q$ | $\varnothing$ |
-| | $\mathrm{SPA}$ | $\tfrac12(\tilde p\tilde q+\tilde q\tilde p)$ | $\mathrm{Vect}(\mathbb{H})\setminus\{0\}$ |
-| | $\mathrm{APA}$ | $\tfrac12(\tilde p\tilde q-\tilde q\tilde p)$ | $\mathbb{H}\setminus\{0\}$ |
-| the quaternionic algebra | $\mathrm{GQA}$ | $\tilde p^{\natural}\tilde q$ | $\varnothing$ |
+| the general products | $\mathrm{GPA}$ | $\tilde p\tilde q$ | $\varnothing$ |
+| | $\mathrm{GQA}$ | $\tilde p^{\natural}\tilde q$ | $\varnothing$ |
+| the symmetric products | $\mathrm{SPA}$ | $\tfrac12(\tilde p\tilde q+\tilde q\tilde p)$ | $\mathrm{Vect}(\mathbb{H})\setminus\{0\}$ |
 | | $\mathrm{SQA}$ | $\tfrac12(\tilde p^{\natural}\tilde q+\tilde q^{\natural}\tilde p)$ | $\mathbb{H}\setminus\{0\}$ |
+| the antisymmetric products | $\mathrm{APA}$ | $\tfrac12(\tilde p\tilde q-\tilde q\tilde p)$ | $\mathbb{H}\setminus\{0\}$ |
 | | $\mathrm{AQA}$ | $\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)$ | $\mathbb{H}\setminus\{0\}$ |
 
 The two general products have one and the same set, the empty one. The symmetric plain structure has the punctured vector subspace, of real dimension three. The three remaining structures, the two antisymmetric ones and the scalar-valued symmetric one, have the whole punctured space. The empty set is therefore the zero-divisor set of exactly two of the six structures, and it is contained in all six, so that it is the common core of the six. The theorem below and §*The Six Structures and the Zero-Divisor Set* prove the table, and the sections that follow read its consequences.
@@ -261,7 +262,7 @@ A zero divisor is defined by an equation that names a product, so the six produc
 
 The common set is the empty set. The norm is a sum of four squares, its vanishing set is the origin alone, and every nonzero element is a unit with the two-sided inverse $\tilde p^{-1}=\tilde p^{\natural}/N(\tilde p)$; the space is the disjoint union $\mathbb{H}=\{0\}\cup\mathbb{H}^{\times}$, with no zero-divisor term. The scalar part cuts the space into the pure family, of real dimension three, which is the zero-divisor set of $\mathrm{SPA}$, and the non-pure family, of real dimension four, on which $\mathrm{SPA}$ has no zero divisor.
 
-The annihilators of a fixed element are *Annihilators in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; the square-zero sets and the roots of $0$ are *Square Roots of Zero and the Nilpotents in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*. The empty set is the zero-divisor set of the two general products alone: the symmetric plain structure has the punctured vector subspace, and the two antisymmetric structures together with the scalar-valued symmetric one have the whole punctured space. The empty set is contained in all six sets and is the largest subset on which they agree. What a product does not change is the detection of the units: an element of nonzero norm has the two-sided inverse $\tilde p^{-1}$ for the plain product and the one-sided solution $(\tilde p^{-1})^{\natural}$ for the natural one, and the one-sided inverse equations replace the classical equivalence for the natural product, which has no two-sided unit.
+The annihilators of a fixed element are *Annihilators in the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; the square-zero sets and the roots of $0$ are *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*. The empty set is the zero-divisor set of the two general products alone: the symmetric plain structure has the punctured vector subspace, and the two antisymmetric structures together with the scalar-valued symmetric one have the whole punctured space. The empty set is contained in all six sets and is the largest subset on which they agree. What a product does not change is the detection of the units: an element of nonzero norm has the two-sided inverse $\tilde p^{-1}$ for the plain product and the one-sided solution $(\tilde p^{-1})^{\natural}$ for the natural one, and the one-sided inverse equations replace the classical equivalence for the natural product, which has no two-sided unit.
 
 Read against the complex case, the emptiness has one cause. The norm is positive definite over $\mathbb{R}$, so both the plain square and the natural square vanish at the origin alone, whereas over $\mathbb{C}$ the natural square vanishes on the whole zero-divisor cone. The cone over $\mathbb{R}$ belongs to the plain bilinear form $B$ of signature $(1,3)$, a real double cone of real dimension three with link $S^{2}\sqcup S^{2}$, and not to the norm; the units are every nonzero element, a group homeomorphic to $S^{3}$ with $\pi_1=0$, against the complex units $S^{1}\times S^{3}$ with $\pi_1\cong\mathbb{Z}$; and the split siblings, whose norm is indefinite, have a punctured cone for a zero-divisor set. The cone is therefore a property of a non-definite signature rather than of the multiplication, and the quaternion space is the definite base case of the table.
 
@@ -277,7 +278,7 @@ Read against the complex case, the emptiness has one cause. The norm is positive
 | $\{N=0\}=\{0\}$ | the vanishing set of the norm, the apex alone; there is no cone |
 | $\varnothing$ | the zero-divisor set of the two general products |
 | $\mathrm{Vect}(\mathbb{H})\setminus\{0\}$ | the zero-divisor set of $\mathrm{SPA}$, the pure cone, of real dimension three |
-| $\mathbb{H}\setminus\{0\}$ | the zero-divisor set of $\mathrm{APA}$, $\mathrm{SQA}$ and $\mathrm{AQA}$ |
+| $\mathbb{H}\setminus\{0\}$ | the zero-divisor set of $\mathrm{SQA}$, $\mathrm{APA}$ and $\mathrm{AQA}$ |
 | $p_0^{2}N(\tilde p)$ | the determinant of the left multiplication operator of $\mathrm{SPA}$ |
 | $\tilde p^{-1}=\tilde p^{\natural}/N(\tilde p)$ | the inverse of a nonzero element |
 | $(\vec p,\vec q)$ | the plain bilinear dot product of the two vector parts |
@@ -285,17 +286,17 @@ Read against the complex case, the emptiness has one cause. The norm is positive
 
 ## Further Reading
 
-- *Definitions for the Study of the 6 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-6-algebraic-structures.md`), for the general vocabulary: the zero divisor, the annihilator, the idempotent, the nilpotent and the rest, each stated once for a general product.
+- *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-quaternion-r-space.md`), for the general vocabulary: the zero divisor, the annihilator, the idempotent, the nilpotent and the rest, each stated once for a general product.
 - *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-2-algebraic-norms-over-the-quaternion-r-space.md`), for the norm $N$ and the two algebraic norms read at the two equal arguments.
 - *The 2 Forms over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-2-forms-over-the-quaternion-r-space.md`), for the plain and the quaternion forms and their signatures, the plain form $B$ of signature $(1,3)$ whose null set is the real double cone and the definite norm $N$ whose null set is the apex.
 - *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra-of-quaternions.md`), for the plain-product criterion and the invertibility of the nonzero elements.
 - *Comparison Between the Two General Products* (`articles_maths/comparison-between-the-two-general-products.md`), for the property table, the unit entries, the square and the radical.
 - *The 6 Products of the Quaternion Real Space* (`articles_maths/the-6-products-of-the-quaternion-real-space.md`), for the two general products and their four symmetric and antisymmetric parts.
-- *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-6-algebraic-structures-over-the-quaternion-r-space.md`), for the six names, the three letters of each and the class of each.
-- *Square Roots of One and the Idempotents in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/square-roots-of-one-and-the-idempotents-in-the-6-algebraic-structures-over-the-quaternion-r-space.md`), for the roots of $+1$ and the idempotent sets of the six structures.
-- *Square Roots of a General Element in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/square-roots-of-a-general-element-in-the-6-algebraic-structures-over-the-quaternion-r-space.md`), for the root equation at a general central value.
-- *Annihilators in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/annihilators-in-the-6-algebraic-structures-over-the-quaternion-r-space.md`), for the one-sided annihilators of one element and the six-row table.
-- *Square Roots of Zero and the Nilpotents in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/square-roots-of-zero-and-the-nilpotents-in-the-6-algebraic-structures-over-the-quaternion-r-space.md`), for the square-zero sets, the roots of $0$ and the six-row reading.
+- *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-algebraic-structures-over-the-quaternion-r-space.md`), for the six names, the three letters of each and the class of each.
+- *Square Roots of One and the Idempotents in the Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/square-roots-of-one-and-the-idempotents-in-the-algebraic-structures-over-the-quaternion-r-space.md`), for the roots of $+1$ and the idempotent sets of the six structures.
+- *Square Roots of a General Element in the Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/square-roots-of-a-general-element-in-the-algebraic-structures-over-the-quaternion-r-space.md`), for the root equation at a general central value.
+- *Annihilators in the Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/annihilators-in-the-algebraic-structures-over-the-quaternion-r-space.md`), for the one-sided annihilators of one element and the six-row table.
+- *Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/square-roots-of-zero-and-the-nilpotents-in-the-algebraic-structures-over-the-quaternion-r-space.md`), for the square-zero sets, the roots of $0$ and the six-row reading.
 - *The Multiplication Operators of the Symmetric Plain Algebra* (`articles_maths/the-multiplication-operators-of-the-symmetric-plain-algebra-of-quaternions.md`), for the operator and the determinant $p_0^{2}N(\tilde p)$.
 - *Zero Divisors of the Symmetric Plain Algebra* (`articles_maths/zero-divisors-of-the-symmetric-plain-algebra-of-quaternions.md`), for the criterion $p_0=0$ and the annihilator planes.
 - *Zero Divisors of the Symmetric Quaternionic Algebra* (`articles_maths/zero-divisors-of-the-symmetric-quaternionic-algebra-of-quaternions.md`), for the scalar-valued product and its hyperplane annihilators.

@@ -196,7 +196,7 @@ the cone is the locus of maximal information. The square of the **whole** algebr
 future cone: for every element $\tilde X\star\tilde X$ is positive,
 $N(\tilde X\star\tilde X)=\lvert N(\tilde X)\rvert^{2}$, and it is a pure state exactly when $\tilde X$ is
 on the cone. The sector's positivity is therefore the image of the sesquilinear square, and the map is *The
-Cone and the Massless Particles in the 12 Structures of Biquaternions over $\mathbb{C}$*, while the state
+Cone and the Massless Particles in the Algebraic Structures of Biquaternions over $\mathbb{C}$*, while the state
 cone and the Bloch ball as its trace-one slice are *The Spinor Space as a Hilbert Space of the General Plain
 Sesqualgebra* and *The Bloch Ball as the Trace-One Slice of the Future Light Cone*.
 
@@ -338,7 +338,7 @@ form, and the boundary of what it must declare is the boundary of the sector.
   inside $\mathbb{M}_+$ the isometries are the unit imaginary directions and $\pm e_0$ alone.
 - **The state side has no root of $-1$ and no nilpotent.** The product has no element of vanishing square and
   no square root of $-e_0$; its roots of $+e_0$ are the unitary family $U(2)$, of which the isometries inside
-  $\mathbb{M}_+$ are the part read above (*Square Roots of Minus One, Zero and Plus One in the 12 Structures
+  $\mathbb{M}_+$ are the part read above (*Square Roots of Minus One, Zero and Plus One in the Algebraic Structures
   of Biquaternions over $\mathbb{C}$*).
 - **The mixed pairs are not read here.** The genuine conjugation of the second slot is visible on the
   pairs with one leg in each sector, and the example $e_0+ie_1$ with $ie_0+e_1$, both on the cone,
@@ -455,9 +455,9 @@ $\mathbb{M}_+$, what is proposed is the naming.
 - Mathematics article *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation*
   (`articles_maths/the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.md`), for the
   Hermitian projections, the centre and the positivity in the matrix model.
-- Companion article *The Cone and the Massless Particles in the 12 Structures of Biquaternions over
+- Companion article *The Cone and the Massless Particles in the Algebraic Structures of Biquaternions over
   $\mathbb{C}$*, for the state cone as the image of the sesquilinear square and the two faces of the cone.
-- Companion article *Zero Divisors in the 12 Structures of Biquaternions over $\mathbb{C}$*, for the cone
+- Companion article *Zero Divisors in the Algebraic Structures of Biquaternions over $\mathbb{C}$*, for the cone
   as the zero-divisor set of the probability band.
 - Companion article *Composition and Probability: the General Plain Algebra and the General Plain
   Sesqualgebra of Biquaternions Compared*, for the twelve structures read side by side.

@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The chapter closes where the six products of *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* meet the topology of the algebra. For each product one reads the scalar part of the square, polarises it into a symmetric bilinear form, and so obtains the metric that the product carries; the six rows fall into two classes, a definite one and an indefinite one, and the antisymmetric products carry the zero form. This is the only place in the chapter where the six products are read metrically; the products themselves, and their laws, are the articles cited and are not re-proved here.
+The chapter closes where the six products of *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space* meet the topology of the algebra. For each product one reads the scalar part of the square, polarises it into a symmetric bilinear form, and so obtains the metric that the product carries; the six rows fall into two classes, a definite one and an indefinite one, and the antisymmetric products carry the zero form. This is the only place in the chapter where the six products are read metrically; the products themselves, and their laws, are the articles cited and are not re-proved here.
 
-**Boundaries.** The six products and their laws are *The 6 Products of the Quaternion Real Space* and *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; the two forms of the space are *The 2 Forms over the Quaternion $\mathbb{R}$ Space*; the norm is *Norm and Invertibility in the General Plain Algebra*; the metric of the quaternion space is *Quaternion Metrics*, above this article in this category; the space and its topology are *Introduction to Topology on the Quaternions* and *Quaternion Topology*, above this article in this category.
+**Boundaries.** The six products and their laws are *The 6 Products of the Quaternion Real Space* and *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; the two forms of the space are *The 2 Forms over the Quaternion $\mathbb{R}$ Space*; the norm is *Norm and Invertibility in the General Plain Algebra*; the metric of the quaternion space is *Quaternion Metrics*, above this article in this category; the space and its topology are *Introduction to Topology on the Quaternions* and *Quaternion Topology*, above this article in this category.
 
 **Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$; an element is $\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_kq_ke_k$. The **quaternion form** is $N(\tilde q)=q_0^{2}+|\vec q|^{2}$ and the **plain form** is $B(\tilde q)=q_0^{2}-|\vec q|^{2}$; the **quaternion conjugation** is $\tilde q^{\natural}=q_0e_0-\vec q$, the bar is the identity. The six products are those of the table of *The 6 Products of the Quaternion Real Space*, and for a product $\star$ the **metric form** is the polarisation of the scalar part at the two equal arguments,
 
@@ -76,7 +76,7 @@ For each of the six products the scalar part of the square is a quadratic form, 
 
 ## Further Reading
 
-- *The 6 Products of the Quaternion Real Space* (`articles_maths/the-6-products-of-the-quaternion-real-space.md`) and *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-6-algebraic-structures-over-the-quaternion-r-space.md`), for the six products
+- *The 6 Products of the Quaternion Real Space* (`articles_maths/the-6-products-of-the-quaternion-real-space.md`) and *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-algebraic-structures-over-the-quaternion-r-space.md`), for the six products
 - *The 2 Forms over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-2-forms-over-the-quaternion-r-space.md`), for the signatures and the isotropy of $B$ and $N$
 - *Quaternion Metrics* (`articles_maths/quaternion-metrics.md`), for the metric of the quaternion space
 - *Introduction to Topology on the Quaternions* (`articles_maths/introduction-to-topology-on-the-quaternions.md`), for the sphere, the punctured space and the group of units

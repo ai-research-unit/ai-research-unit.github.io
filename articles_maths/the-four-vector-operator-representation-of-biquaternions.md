@@ -132,7 +132,7 @@ $$
 
 for a unit vector $\vec n$ determined by $\vec Q$. Moreover $\mathrm{H}_{\tilde{Q}}\circ\mathrm{H}_{\tilde{Q}} = 4\lvert Q^0\rvert^{2}\mathrm{H}_{\tilde{Q}}$ on the cone.
 
-**Proof.** Off the cone, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} \neq 0$, the element and its Hermitian conjugate are invertible, so $\mathrm{H}_{\tilde{Q}} = L_{\tilde{Q}} \circ R_{\tilde{Q}^{*}}$ is a composite of two bijections and has rank $4$. On the cone, with $\tilde{Q} \neq 0$, the matrix of the element has rank one (*The 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*), so $\tilde{Q}$ is a nonzero zero divisor, the left ideal $\mathbb{B}\tilde{Q}^{*}$ is minimal of complex dimension $2$ (*Ideals and Peirce Decomposition of the General Plain Algebra*), and
+**Proof.** Off the cone, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} \neq 0$, the element and its Hermitian conjugate are invertible, so $\mathrm{H}_{\tilde{Q}} = L_{\tilde{Q}} \circ R_{\tilde{Q}^{*}}$ is a composite of two bijections and has rank $4$. On the cone, with $\tilde{Q} \neq 0$, the matrix of the element has rank one (*Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*), so $\tilde{Q}$ is a nonzero zero divisor, the left ideal $\mathbb{B}\tilde{Q}^{*}$ is minimal of complex dimension $2$ (*Ideals and Peirce Decomposition of the General Plain Algebra*), and
 
 $$
 \operatorname{im}\mathrm{H}_{\tilde{Q}} = L_{\tilde{Q}}\bigl(\mathbb{B}\tilde{Q}^{*}\bigr) = \mathbb{B}\,\tilde{Q}\tilde{Q}^{*} = \mathbb{C}\cdot\tilde{Q}\tilde{Q}^{*},

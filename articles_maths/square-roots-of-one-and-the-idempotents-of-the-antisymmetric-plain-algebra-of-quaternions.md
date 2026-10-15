@@ -3,7 +3,7 @@
 ## Introduction
 
 The root of a central value is defined by an equation in which the product occurs, so it is a class
-of the product and not of the space (*Definitions for the Study of the 6 Algebraic Structures*,
+of the product and not of the space (*Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*,
 §*The Element Vocabulary*). The block of this article is the antisymmetric plain multiplication
 
 $$
@@ -60,21 +60,21 @@ are the imaginary units, the roots of $+1$ are the involutions, and the roots of
 nilpotents of the product. The general notion this specialises is the **square root of a central value** of the definitions
 article, an element with $\tilde\xi^2=c$, the class being the set of the solutions, with no non-zero
 requirement, so that the origin is counted there whenever it solves the equation (*Definitions for
-the Study of the 6 Algebraic Structures*, §*The Element Vocabulary*). A **root**, in this article and
+the Study of the Algebraic Structures*, §*The Element Vocabulary*). A **root**, in this article and
 in the articles of the block, is a nonzero element of that class, so that the roots of $0$ are the
 class without the origin.
 
 **Definition (idempotent of a product).** Let $\star$ be a product on $\mathbb{H}$. An element
 $\tilde\pi$ is an **idempotent of $\star$** when $\tilde\pi\star\tilde\pi=\tilde\pi$; the definitions
 article records that the idempotents contain the origin and every unit (*Definitions for the Study of
-the 6 Algebraic Structures*, §*The Element Vocabulary*), and the origin and the unit are the
+the Algebraic Structures*, §*The Element Vocabulary*), and the origin and the unit are the
 **trivial idempotents** here, the other idempotents being **nontrivial**. In a unital product the
 idempotent is the root of $+1$ in a scaled sense, through the halving map
 $\tilde\xi\mapsto\tfrac12(e_0+\tilde\xi)$, which carries the roots of $+1$ onto the idempotents, with
 inverse $\tilde\pi\mapsto2\tilde\pi-e_0$, the two computations
 $\tfrac12(e_0+\tilde\xi)^2=\tfrac12(e_0+\tilde\xi)$ and $(2\tilde\pi-e_0)^2=e_0$ reading the same
 identity (the map of the roots/idempotents architecture, *Square Roots of One and the Idempotents in
-the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*).
+the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*).
 
 Throughout this article the product is the antisymmetric plain multiplication $\times$, and
 unqualified, *root* means a root of the block and *idempotent* means an idempotent of the block. The
@@ -151,8 +151,7 @@ $0\times0=0$.
 
 The criterion is the whole of the computation, because the left side of the equation is identically
 zero and the equation constrains the right side alone, and it is the same criterion as the one
-recorded for the class of nonzero idempotents in *Definitions for the Study of the 6 Algebraic
-Structures*, §*The Criterion for an Empty Class*. Every candidate idempotent is excluded at once, and
+recorded for the class of nonzero idempotents in *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, §*The Criterion for an Empty Class*. Every candidate idempotent is excluded at once, and
 no coordinate computation is needed.
 
 **Corollary (no nontrivial idempotent).** The block has no nontrivial idempotent. In particular the
@@ -211,7 +210,7 @@ square at $e_0$, which is $e_0$ in the parent and $0$ in the block.
 **Remark (the contrast with the biquaternion chapter).** Over $\mathbb{C}$ the same parent product
 carries the idempotent family $\tfrac12(e_0+\tilde\Xi)$ over the roots $\tilde\Xi$ of $+1$, of real
 dimension four, and the four general products of the biquaternion space carry four idempotent sets
-whose sizes range from the trivial pair to the continuum (*Square Roots of One and the Idempotents in the 12 Algebraic Structures
+whose sizes range from the trivial pair to the continuum (*Square Roots of One and the Idempotents in the Algebraic Structures
 over the Biquaternion $\mathbb{C}$ Space*). The real block is poorer than any of them: it has the
 origin alone, and the complexification does not enlarge its idempotent set, the equation
 $0=\tilde\pi$ being independent of the field.
@@ -235,9 +234,9 @@ their root pattern, and the two **antisymmetric** halves share theirs: the split
 and antisymmetric parts is what decides the root theory, not the choice of the parent. The block is
 one of the two members of the degenerate antisymmetric family, the other being *Introduction to the
 Antisymmetric Quaternionic Algebra of Quaternions*, below this article in this category. The six
-idempotent sets are read side by side in *Square Roots of One and the Idempotents in the 6 Algebraic Structures over the
+idempotent sets are read side by side in *Square Roots of One and the Idempotents in the Algebraic Structures over the
 Quaternion $\mathbb{R}$ Space*, and the four sets of the biquaternion chapter in *Idempotents in the
-12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 ## Summary
 
@@ -270,7 +269,7 @@ to the block.
 
 ## Further Reading
 
-- *Definitions for the Study of the 6 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-6-algebraic-structures.md`), for the root of a central value, the idempotent of a general product, the relativity of the definition and the criterion for an empty class
+- *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-quaternion-r-space.md`), for the root of a central value, the idempotent of a general product, the relativity of the definition and the criterion for an empty class
 - *Introduction to the Antisymmetric Plain Algebra of Quaternions* (`articles_maths/introduction-to-the-antisymmetric-plain-algebra-of-quaternions.md`), for the operation, its alternation and its table
 - *Square Roots of Zero and the Nilpotents of the Antisymmetric Plain Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-antisymmetric-plain-algebra-of-quaternions.md`), below this article in this category, for the roots of $0$ and the nilpotents, the other face of the same vanishing square
 - *Square Roots of a General Element in the Antisymmetric Plain Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-antisymmetric-plain-algebra-of-quaternions.md`), below this article in this category, for the square map of the block and the absence of a root for every nonzero right side
@@ -278,7 +277,7 @@ to the block.
 - *The Specificities of the Antisymmetric Plain Algebra* (`articles_maths/the-specificities-of-the-antisymmetric-plain-algebra-of-quaternions.md`), below this article in this category, for the isolation of the block and the reading of its empty classes
 - *The Specificities of the General Plain Algebra* (`articles_maths/the-specificities-of-the-general-plain-algebra-of-quaternions.md`), for the two-point idempotent set of the parent division product
 - *Square Roots of One and the Idempotents of the General Plain Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra-of-quaternions.md`), for the idempotent families of the parent product
-- *Square Roots of One and the Idempotents in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/square-roots-of-one-and-the-idempotents-in-the-6-algebraic-structures-over-the-quaternion-r-space.md`), for the idempotent sets of the six structures side by side
-- *Square Roots of One and the Idempotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/square-roots-of-one-and-the-idempotents-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the four idempotent sets of the biquaternion chapter, against which the real block's origin alone is read
+- *Square Roots of One and the Idempotents in the Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/square-roots-of-one-and-the-idempotents-in-the-algebraic-structures-over-the-quaternion-r-space.md`), for the idempotent sets of the six structures side by side
+- *Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/square-roots-of-one-and-the-idempotents-in-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the four idempotent sets of the biquaternion chapter, against which the real block's origin alone is read
 - Richard S. Pierce, *Associative Algebras* (Springer, Graduate Texts in Mathematics 88, 1982), for idempotents, the Peirce decomposition and the radical.
 - Israel Nathan Herstein, *Topics in Algebra* (Wiley, 2nd ed. 1975), for idempotents and the ideal theory of a ring.

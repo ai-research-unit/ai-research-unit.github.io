@@ -3,7 +3,7 @@
 ## Introduction
 
 A root of a central value is defined by an equation in which the product occurs, so it belongs to
-the product (*Definitions for the Study of the 12 Algebraic Structures*, §*Powers, the Square and
+the product (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and
 the Roots*). The block of this article is the antisymmetric plain multiplication
 $$
 \tilde\Xi\wedge\tilde Q=\tfrac12\bigl(\tilde\Xi\tilde Q-\tilde Q\tilde\Xi\bigr)=\vec\Xi\times\vec Q,
@@ -50,7 +50,7 @@ $$
 $$
 The three central values the biquaternion algebra singles out are $-1$, $+1$ and $0$: the roots of
 $-1$ are the imaginary units, the roots of $+1$ are the involutions, and the roots of $0$ are the
-nonzero nilpotents of the product (*Definitions for the Study of the 12 Algebraic Structures*,
+nonzero nilpotents of the product (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*,
 §*Powers, the Square and the Roots*).
 
 **Definition (idempotent of a product).** Let $\star$ be a product on $\mathbb{B}$. An element
@@ -59,8 +59,7 @@ $$
 \tilde\Pi\star\tilde\Pi=\tilde\Pi .
 $$
 The origin and, when the product is unital, the unit are idempotents of every product; they are the
-**trivial idempotents**, and the others are **nontrivial** (*Definitions for the Study of the 12
-Algebraic Structures*, §*The Idempotent, the Projection and the Peirce Decomposition*).
+**trivial idempotents**, and the others are **nontrivial** (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Idempotent, the Projection and the Peirce Decomposition*).
 
 Throughout this article the product is the **antisymmetric plain multiplication** $\wedge$, and
 unqualified, *root* means a root of the block and *idempotent* means an idempotent of the block.
@@ -191,8 +190,8 @@ one-point set with a family: the block keeps the origin, the trivial idempotent 
 and loses every other idempotent, the unit of the parent among them, and it loses with them the
 entire idempotent calculus. The two sets are read against each other in the dictionary of the four
 general products, where the idempotent is one of the rows on which the four products separate
-(*Definitions for the Study of the 12 Algebraic Structures*, §9), and the four idempotent sets
-themselves are *Idempotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$
+(*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §9), and the four idempotent sets
+themselves are *Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$
 Space*, §*The Four Sets*.
 
 ## Summary
@@ -226,10 +225,10 @@ decompositions, the Peirce decomposition — belongs to the parent and not to th
 
 ## Further Reading
 
-- *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), for the root of a central value, the idempotent of a general product, the projection and the Peirce decomposition, and for the relativity of the definitions
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the root of a central value, the idempotent of a general product, the projection and the Peirce decomposition, and for the relativity of the definitions
 - *Introduction to the Antisymmetric Plain Algebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-plain-algebra-of-biquaternions.md`), for the operation, its alternation and its table
 - *Square Roots of Zero and the Nilpotents of the Antisymmetric Plain Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-antisymmetric-plain-algebra.md`), for the roots of $0$, which are the nonzero nilpotents, and the other face of the same vanishing square
 - *Square Roots of a General Element in the Antisymmetric Plain Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-antisymmetric-plain-algebra.md`), for the square map of the block and the arbitrary right side
 - *Square Roots of One and the Idempotents of the General Plain Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra.md`), for the idempotent family of the parent product, against which the block's origin alone is read
-- *Idempotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/idempotents-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the four idempotent sets of the four general products side by side
+- *Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/idempotents-in-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the four idempotent sets of the four general products side by side
 - *The Symmetric and Antisymmetric Parts of an Algebra Product* (`articles_maths/the-symmetric-and-antisymmetric-parts-of-an-algebra-product.md`), for the square of a product and its split into the two halves

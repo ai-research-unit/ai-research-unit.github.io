@@ -9,7 +9,7 @@ $$
 A_\star(\tilde Q)=\{\tilde X:\tilde Q\star\tilde X=0\},\qquad
 B_\star(\tilde Q)=\{\tilde X:\tilde X\star\tilde Q=0\},
 $$
-the left and the right annihilator (*Definitions for the Study of the 12 Algebraic Structures*,
+the left and the right annihilator (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*,
 §*The Zero Divisor and the Annihilator*). When the product is carried by a multiplication operator
 the annihilator is the kernel of that operator, so it is a linear subspace.
 
@@ -176,7 +176,7 @@ is the hyperplane in the one and the plane or the line in the other.
 
 ## Further Reading
 
-- *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), §*The Zero Divisor and the Annihilator*, for the zero divisor and the annihilator of a general product.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), §*The Zero Divisor and the Annihilator*, for the zero divisor and the annihilator of a general product.
 - *Introduction to the Symmetric Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-algebra-of-biquaternions.md`), for the product, its commutativity and its table.
 - *Zero Divisors of the Symmetric Quaternionic Algebra* (`articles_maths/zero-divisors-of-the-symmetric-quaternionic-algebra.md`), above this article in this category, for the criterion that makes the whole punctured space the zero-divisor set.
 - *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra* (`articles_maths/the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra.md`), for the non-degeneracy of the form and the isotropic locus.

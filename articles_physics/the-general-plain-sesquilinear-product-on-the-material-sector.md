@@ -194,7 +194,7 @@ $$
 $$
 
 the material line the conjugate spans, the shared line of the two annihilator planes of the composition
-(*Annihilators in the 12 Structures of Biquaternions over $\mathbb{C}$*). The unit $e_1$, of norm $N(e_1)=+1$, has no nonzero material
+(*Annihilators in the Algebraic Structures of Biquaternions over $\mathbb{C}$*). The unit $e_1$, of norm $N(e_1)=+1$, has no nonzero material
 annihilator at all.
 
 There are therefore two distinct vanishing statements on the same sector, and confusing them is the trap
@@ -223,12 +223,10 @@ The wall of the reversible operations stays where the composition put it, and th
 move it — it inherits it, because the second slot's conjugation is only a sign there. The wall has a second
 face on the sector: a lightlike four-vector is an imaginary multiple of a pure state,
 $\tilde T=2ict\,\tilde\Pi_1(-\hat x)$, so the massless displacement and the informational
-projection are one element read through the central $i$ (*The Cone and the Massless Particles in the 12
-Structures of Biquaternions over $\mathbb{C}$*). Its square is not zero,
+projection are one element read through the central $i$ (*The Cone and the Massless Particles in the Algebraic Structures of Biquaternions over $\mathbb{C}$*). Its square is not zero,
 $\tilde T^{2}=-2c^{2}t^{2}e_0+2ic^{2}t^{2}\hat x$, and no element of the sector squares to zero at
 all: the nilpotents are the pure isotropic elements, outside $\mathbb{M}_-$ except at the origin, nilpotent
-of index two under the composition and of index three under the probability product (*Nilpotents in the 12
-Structures of Biquaternions over $\mathbb{C}$*).
+of index two under the composition and of index three under the probability product (*Nilpotents in the Algebraic Structures of Biquaternions over $\mathbb{C}$*).
 
 ## The Isometries of the Probability: Rotations and Not Boosts
 
@@ -440,9 +438,9 @@ restricted to $\mathbb{M}_-$, what is proposed is the naming.
   sector.
 - Companion article *The Operators of the Plain Sesquilinear Product and the Born Pairing*, for the
   operators, the adjoint and the worked element.
-- Companion article *Zero Divisors in the 12 Structures of Biquaternions over $\mathbb{C}$*, for the cone
+- Companion article *Zero Divisors in the Algebraic Structures of Biquaternions over $\mathbb{C}$*, for the cone
   as the zero-divisor set of the probability band.
-- Companion article *The Cone and the Massless Particles in the 12 Structures of Biquaternions over
+- Companion article *The Cone and the Massless Particles in the Algebraic Structures of Biquaternions over
   $\mathbb{C}$*, for the two jobs of the one cone in the two bands.
 - Companion article *Composition and Probability: the General Plain Algebra and the General Plain
   Sesqualgebra of Biquaternions Compared*, for the twelve structures read side by side.

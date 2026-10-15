@@ -3,7 +3,7 @@
 ## Introduction
 
 A root of a central value is defined by an equation in which the product occurs, so it belongs to
-the product (*Definitions for the Study of the 12 Algebraic Structures*, §*Powers, the Square and
+the product (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and
 the Roots*). The block of this article is the antisymmetric plain multiplication
 $$
 \tilde\Xi\wedge\tilde Q=\tfrac12\bigl(\tilde\Xi\tilde Q-\tilde Q\tilde\Xi\bigr)=\vec\Xi\times\vec Q,
@@ -48,7 +48,7 @@ $$
 $$
 The three central values the biquaternion algebra singles out are $-1$, $+1$ and $0$; this article
 treats $0$, whose roots are the nonzero nilpotents of the product (*Definitions for the Study of
-the 12 Algebraic Structures*, §*Powers, the Square and the Roots*).
+the Algebraic Structures*, §*Powers, the Square and the Roots*).
 
 **Definition (nilpotent of a product).** Let $\star$ be a product on $\mathbb{B}$. An element
 $\tilde\Upsilon$ is **nilpotent of $\star$** when some power of it vanishes,
@@ -60,7 +60,7 @@ $\tilde\Upsilon^{\star k}=\bigl(\cdots\bigl((\tilde\Upsilon\star\tilde\Upsilon)\
 when the product is not associative. The least such $k$ is the **index of nilpotency**, and an
 element of index two, $\tilde\Upsilon\star\tilde\Upsilon=0$ with $\tilde\Upsilon\neq0$, is a
 **square-zero element of $\star$**. The origin is the trivial nilpotent, of index one
-(*Definitions for the Study of the 12 Algebraic Structures*, §*The Nilpotent*).
+(*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Nilpotent*).
 
 Throughout this article the product is the **antisymmetric plain multiplication** $\wedge$, and
 unqualified, *root* means a root of the block and *nilpotent* means a nilpotent of the block. The
@@ -175,8 +175,7 @@ the definition requiring nonzero elements.
 
 The implication is one of the rows of the dictionary of the four general products, where it holds
 for the plain product and the natural product and fails for the plain sesquilinear product
-(*Definitions for the Study of the 12 Algebraic Structures*, §9; *Zero Divisors in the 12 Algebraic
-Structures over the Biquaternion $\mathbb{C}$ Space*). For the block it holds without exception on
+(*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §9; *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*). For the block it holds without exception on
 the punctured space, and the exception is the origin alone.
 
 ### The Conjugations and the Remarkable Subspaces
@@ -250,11 +249,11 @@ For the antisymmetric plain multiplication $\tilde\Xi\wedge\tilde Q=\vec\Xi\time
 
 ## Further Reading
 
-- *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), for the root of a central value, the nilpotent of a general product, its index and the square-zero element, and for the relativity of the definitions
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the root of a central value, the nilpotent of a general product, its index and the square-zero element, and for the relativity of the definitions
 - *Introduction to the Antisymmetric Plain Algebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-plain-algebra-of-biquaternions.md`), for the operation, its alternation and its table
 - *Square Roots of One and the Idempotents of the Antisymmetric Plain Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-antisymmetric-plain-algebra.md`), for the roots of $+1$, which are empty, and the origin alone as the idempotent
 - *Square Roots of a General Element in the Antisymmetric Plain Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-antisymmetric-plain-algebra.md`), for the square map of the block and the arbitrary right side
 - *Zero Divisors of the Antisymmetric Plain Algebra* (`articles_maths/zero-divisors-of-the-antisymmetric-plain-algebra.md`), for the coincidence of the nonzero nilpotents with the zero divisors
 - *Remarkable Subspaces under the Antisymmetric Plain Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-antisymmetric-plain-algebra-of-biquaternions.md`), for the stable subspaces on which the class is inherited
 - *Square Roots of Zero and the Nilpotents of the General Plain Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-plain-algebra.md`), for the pure isotropic cone of the parent product, against which the whole space is read
-- *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the square-zero sets of the four general products and the failure of the implication for the plain sesquilinear one
+- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the square-zero sets of the four general products and the failure of the implication for the plain sesquilinear one

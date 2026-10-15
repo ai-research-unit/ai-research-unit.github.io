@@ -4,7 +4,7 @@
 
 The multiplication operators of a product are the maps $\tilde q\mapsto\tilde p\circ\tilde q$ obtained by fixing one slot. For the symmetric quaternionic product the maps are as degenerate as a nonzero multiplication can be: each of them sends the whole algebra onto the scalar line, and each is a scalar multiple of the identity when restricted to that line.
 
-**Boundaries.** The product is *Introduction to the Symmetric Quaternionic Algebra of Quaternions*; the form is *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*, above this article in this category; the definitions of the operator, the adjoint and the derivation are *Definitions for the Study of the 6 Algebraic Structures* and *The Two General Products of the Quaternion $\mathbb{R}$ Space*.
+**Boundaries.** The product is *Introduction to the Symmetric Quaternionic Algebra of Quaternions*; the form is *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra*, above this article in this category; the definitions of the operator, the adjoint and the derivation are *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space* and *The Two General Products of the Quaternion $\mathbb{R}$ Space*.
 
 **Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$; an element is $\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_kq_ke_k$. The **quaternion conjugation** is $\tilde q^{\natural}=q_0e_0-\vec q$; the bar is the identity, the star coincides with the natural sign ${}^{\natural}$. The **quaternion form** is $N(\tilde p,\tilde q)=p_0q_0+\vec p\cdot\vec q$; the **symmetric quaternionic product** is $\tilde p\star\tilde q=N(\tilde p,\tilde q)e_0$. The block is commutative, so the left and right multiplication operators coincide, and there is one family $L_{\tilde p}$, with
 
@@ -92,7 +92,7 @@ an operator depending on $\tilde y$ through $y_0$ alone, with values in the line
 
 ## The Derivations of the Block
 
-A **derivation** of the block is a linear map $D$ of $\mathbb{H}$ with $D(\tilde p\star\tilde q)=D\tilde p\star\tilde q+\tilde p\star D\tilde q$ (*Definitions for the Study of the 6 Algebraic Structures*); an **inner derivation** is $\mathrm{ad}_{\tilde p}(\tilde x)=\tilde p\star\tilde x-\tilde x\star\tilde p$.
+A **derivation** of the block is a linear map $D$ of $\mathbb{H}$ with $D(\tilde p\star\tilde q)=D\tilde p\star\tilde q+\tilde p\star D\tilde q$ (*Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*); an **inner derivation** is $\mathrm{ad}_{\tilde p}(\tilde x)=\tilde p\star\tilde x-\tilde x\star\tilde p$.
 
 **Proposition (the inner derivations vanish).** Every inner derivation of the block is zero, because the block is commutative; the derived law of the block is the zero operation.
 
@@ -137,5 +137,5 @@ The multiplication operators of the block are $L_{\tilde p}(\tilde q)=\tilde p\s
 
 - *Introduction to the Symmetric Quaternionic Algebra of Quaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-algebra-of-quaternions.md`), for the product and its rule
 - *The Quaternion Form as a Product on the Symmetric Quaternionic Algebra* (`articles_maths/the-quaternion-form-as-a-product-on-the-symmetric-quaternionic-algebra-of-quaternions.md`), for the form used in the adjoint
-- *Definitions for the Study of the 6 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-6-algebraic-structures.md`), for the operator, the adjoint and the derivation
+- *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-quaternion-r-space.md`), for the operator, the adjoint and the derivation
 - *The Multiplication Operators of the Symmetric Plain Algebra* (`articles_maths/the-multiplication-operators-of-the-symmetric-plain-algebra-of-quaternions.md`), for the parallel over the plain product

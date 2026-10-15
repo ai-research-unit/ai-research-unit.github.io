@@ -8,10 +8,10 @@ own square.
 
 Both notions name a product, and throughout this article the product is the general quaternionic bilinear
 product $\tilde p\star\tilde q=\tilde p^{\natural}\tilde q$ of the general quaternionic algebra, the
-$\mathrm{GQA}$ of *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; the square of the
+$\mathrm{GQA}$ of *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; the square of the
 article is the square of $\star$, and an unqualified *idempotent* is an idempotent of $\star$. The general
 definition of the square and of the roots of a central value, and the general definition of an idempotent,
-are *Definitions for the Study of the 6 Algebraic Structures*, §*The Element Vocabulary*.
+are *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, §*The Element Vocabulary*.
 
 The whole problem is decided by one identity. The square of every element of this product is the central
 element $N(\tilde p)e_0$, so the root equation of the value $\lambda$ reduces to the single real equation
@@ -41,9 +41,9 @@ Algebra*; the idempotents of the plain product of the same space and the Hermiti
 complex chapter are *Square Roots of One and the Idempotents of the General Plain Algebra*; the projectors
 and the operator theory are *The Left Multiplications of the Quaternionic Product
 and the Opposite Monoid* and *The Specificities of the General Quaternionic Algebra*; the structure-level
-comparison of the six root sets is *Square Roots of a General Element in the 6 Algebraic Structures over the
+comparison of the six root sets is *Square Roots of a General Element in the Algebraic Structures over the
 Quaternion $\mathbb{R}$ Space*, and that of the six idempotent sets is *Square Roots of One and the
-Idempotents in the 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*.
+Idempotents in the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*.
 
 **Conventions.** $\mathbb{H}$ is the real quaternion algebra with basis $e_0=1,e_1,e_2,e_3$, the rules
 $e_k^2=-e_0$ and $e_1e_2=e_3$. Juxtaposition is the plain product and $\star$ the general quaternionic
@@ -72,8 +72,7 @@ $$
 $$
 
 The root is relative to the product, and this article uses the one of $\star$ throughout; the general
-definition of the square and of the roots of a central value is *Definitions for the Study of the 6
-Algebraic Structures*, §*The Element Vocabulary*.
+definition of the square and of the roots of a central value is *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, §*The Element Vocabulary*.
 
 **Theorem (the reduction).** For every $\tilde\xi\in\mathbb{H}$,
 
@@ -171,7 +170,7 @@ idempotent.**
 **Definition.** Let $\star$ be a product on $\mathbb{H}$ and let $\tilde\pi\in\mathbb{H}$. The element
 $\tilde\pi$ is **idempotent of $\star$** when $\tilde\pi\star\tilde\pi=\tilde\pi$; the **trivial
 idempotents** are $0$ and the left unit $e_0$, and an idempotent different from both is **nontrivial**. The
-definition is *Definitions for the Study of the 6 Algebraic Structures*, §*The Element Vocabulary*, and it
+definition is *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, §*The Element Vocabulary*, and it
 names the product. Throughout this part the product is $\star$.
 
 **Lemma (the square is central).** For every $\tilde p\in\mathbb{H}$,
@@ -382,7 +381,7 @@ nilpotent, and the origin is the only idempotent whose square vanishes.
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the sphere of square roots of $-1$ in the quaternion algebra and the division property.
 - Kevin McCrimmon, *A Taste of Jordan Algebras* (Springer, 2004), for the idempotent equation, the halving map and the Peirce decomposition in the absence of associativity.
 - William Rowan Hamilton, *Lectures on Quaternions* (Hodges and Smith, Dublin, 1853), for the origin of the sphere of square roots of $-1$.
-- *Definitions for the Study of the 6 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-6-algebraic-structures.md`), §*The Element Vocabulary*, for the general definitions of the root of a central value, of an idempotent and of a projector.
+- *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-quaternion-r-space.md`), §*The Element Vocabulary*, for the general definitions of the root of a central value, of an idempotent and of a projector.
 - *Introduction to the General Quaternionic Algebra of Quaternions* (`articles_maths/introduction-to-the-general-quaternionic-algebra-of-quaternions.md`), for the product, its table and its left unit.
 - *Norm and Invertibility in the General Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra-of-quaternions.md`), for the definite norm and the units.
 - *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-quaternionic-algebra-of-quaternions.md`), for the roots of $0$, the empty square-zero set and the absence of nilpotents.

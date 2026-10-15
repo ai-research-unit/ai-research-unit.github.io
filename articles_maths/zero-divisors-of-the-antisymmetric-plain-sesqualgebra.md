@@ -26,10 +26,10 @@ annihilate a **complex plane**. So the block distinguishes its elements even tho
 them all zero divisors, and the distinction is the invertibility of the parent.
 
 The zero divisors are defined by a product, and the definition is stated once in *Definitions for
-the Study of the 12 Algebraic Structures*, §*The Zero Divisor and the Annihilator*; throughout this
+the Study of the Algebraic Structures*, §*The Zero Divisor and the Annihilator*; throughout this
 article the product is $\diamond$ and, unqualified, **zero divisor** means zero divisor of
 $\diamond$. The plain product's cone, its two families and its criterion $C(\tilde Q)=0$ are *Zero
-Divisors of the General Plain Algebra*; the four general products' common set is **Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space**; the annihilators of one element in the four general products are *Annihilators in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. The classes that the zero divisors of the block are not are its idempotents,
+Divisors of the General Plain Algebra*; the four general products' common set is **Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space**; the annihilators of one element in the four general products are *Annihilators in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. The classes that the zero divisors of the block are not are its idempotents,
 *Idempotents of the Antisymmetric Plain Sesqualgebra*, and its nilpotents, *Nilpotents of the
 Antisymmetric Plain Sesqualgebra*; the square-zero elements and the quadric of the diagonal are
 *The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra*.
@@ -193,7 +193,7 @@ $$
 \{\tilde Q\neq0:\ C(\tilde Q)=0\},\qquad C(\tilde Q)=\sum_{\mu=0}^{3}Q_\mu^{2}.
 $$
 
-This is *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Four General Products Coincide*, and it is not
+This is *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Four General Products Coincide*, and it is not
 restated here.
 
 The block is not one of the four general products, and its set does not coincide with theirs: the
@@ -246,7 +246,7 @@ conjugate-alternation. The set is a complex cone of complex dimension four, the 
 against the complex dimension three of the plain cone.
 
 The four general products of the space share the cone $\mathcal{C}\setminus\{0\}$ as their
-zero-divisor set, a theorem of *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the block's set is strictly
+zero-divisor set, a theorem of *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*; the block's set is strictly
 larger, and the enlargement is exactly the complement of that cone. The zero divisors of the block
 carry no information about the other classes: the unique idempotent is the origin and the
 nilpotents are a proper subcone, so an element is a zero divisor unconditionally and a nilpotent
@@ -266,8 +266,8 @@ only rarely.
 
 ## Further Reading
 
-- *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), §*The Zero Divisor and the Annihilator*, for the definition and the annihilator.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), §*The Zero Divisor and the Annihilator*, for the definition and the annihilator.
 - *Zero Divisors of the General Plain Algebra* (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the plain cone, its two families and the criterion $C(\tilde Q)=0$.
-- *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the coincidence of the four sets and the one-sided inverse equations.
+- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the coincidence of the four sets and the one-sided inverse equations.
 - *Introduction to the Antisymmetric Plain Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-plain-sesqualgebra-of-biquaternions.md`), for the product, its projection and its image.
 - *Annihilators of the Antisymmetric Plain Sesqualgebra* (`articles_maths/annihilators-of-the-antisymmetric-plain-sesqualgebra.md`), below this article in this category, the companion article, for the annihilator read through the parent invertibility and the rank table

@@ -14,7 +14,7 @@ The roots of $0$ are the origin alone, and the nilpotents are the nonzero pure q
 index exactly three. The two classes are pulled apart by the definiteness of the coefficient: the cube
 vanishes on the whole punctured vector subspace, the square only at the origin. The definitions of a
 **nilpotent**, of a **square-zero element** and of the **index of nilpotency** are *Definitions for the
-Study of the 6 Algebraic Structures*, §*The Element Vocabulary*; the product, its scalar law and the
+Study of the Algebraic Structures*, §*The Element Vocabulary*; the product, its scalar law and the
 definiteness of its coefficient are *Introduction to the Symmetric Quaternionic Algebra of
 Quaternions*.
 
@@ -149,7 +149,7 @@ nilpotency**. The case $k=2$, $\tilde\nu\star\tilde\nu=0$, is a **square-zero** 
 $k=3$, $\tilde\nu\star\tilde\nu\star\tilde\nu=0$, a **cube-zero** element. The origin satisfies every
 power-zero equation, but it is excluded by the definition, which requires a nonzero element.
 
-The vocabulary is quoted from *Definitions for the Study of the 6 Algebraic Structures*, and the article
+The vocabulary is quoted from *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, and the article
 reads it on the block.
 
 **Theorem (the nilpotents are the pure elements).** An element $\tilde x$ is a nilpotent of the block if
@@ -279,7 +279,7 @@ zero matrix, and only the trace-free branch survives.
 real chapter whose square vanishes only at the origin — the general and the
 symmetric plain and the general and the symmetric quaternionic — and it is the whole space for the two
 antisymmetric structures, whose squares vanish identically and whose nilpotent class is therefore the
-whole space apart from the origin (*Definitions for the Study of the 6 Algebraic Structures*;
+whole space apart from the origin (*Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*;
 *Square Roots of Zero and the Nilpotents of the General Plain Algebra*; *Square Roots of Zero and the Nilpotents of the Symmetric Plain Algebra*). Within the
 four, the symmetric quaternionic block is distinguished by its nilpotent class: it is the one of the
 four with a nonzero nilpotent family, the pure quaternions of index three, the other three having no
@@ -320,7 +320,7 @@ singular branch of the complex chapter collapses, and the trace-free branch alon
 ## Further Reading
 
 - *Introduction to the Symmetric Quaternionic Algebra of Quaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-algebra-of-quaternions.md`), for the product $\star$, its scalar law and the form $N$
-- *Definitions for the Study of the 6 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-6-algebraic-structures.md`), for the nilpotent, the square-zero element and the index of nilpotency
+- *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-quaternion-r-space.md`), for the nilpotent, the square-zero element and the index of nilpotency
 - *Norm and Invertibility in the Symmetric Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-symmetric-quaternionic-algebra-of-quaternions.md`), for the definite form whose vanishing decides the square-zero set
 - *Square Roots of a General Element in the Symmetric Quaternionic Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-symmetric-quaternionic-algebra-of-quaternions.md`), for the level sets of the diagonal and the radicand zero
 - *Square Roots of One and the Idempotents of the Symmetric Quaternionic Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-symmetric-quaternionic-algebra-of-quaternions.md`), the companion, for the roots of $+e_0$, the roots of $-e_0$ and the idempotents

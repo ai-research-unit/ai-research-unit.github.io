@@ -22,7 +22,7 @@ two trivial roots $\pm e_0$. The two classes are therefore classified independen
 of the block, and the failure of the map is stated and used nowhere.
 
 The root is relative to a product, and the product is part of the definition: it is stated once for a
-general product in *Definitions for the Study of the 12 Algebraic Structures*, §*Powers, the Square and the
+general product in *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the
 Roots*, and the definition of an idempotent, with the orthogonal, complete and primitive families and the
 Peirce decomposition, is the same article, §*The Idempotent, the Projection and the Peirce Decomposition*.
 The unqualified word means the block.
@@ -176,7 +176,7 @@ The origin is an idempotent of every product, and so is the unit when there is o
 idempotents**, and the others are **nontrivial**. The set of the idempotents of $\star$ is its **idempotent
 set**.
 
-This is *Definitions for the Study of the 12 Algebraic Structures*, §*The Idempotent, the Projection and the
+This is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Idempotent, the Projection and the
 Peirce Decomposition*. Unqualified, the product is the block, and the block has no unit, so the only trivial
 idempotents are $0$ and the unit candidate $e_0$.
 
@@ -428,7 +428,7 @@ only element they share is $e_0$.
 
 ## Further Reading
 
-- *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), §*Powers, the Square and the Roots* and §*The Idempotent, the Projection and the Peirce Decomposition*, for the definitions relative to a general product.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), §*Powers, the Square and the Roots* and §*The Idempotent, the Projection and the Peirce Decomposition*, for the definitions relative to a general product.
 - *Square Roots of Zero and the Nilpotents of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-symmetric-quaternionic-sesqualgebra.md`), for the second central value and the class disjoint from the idempotents.
 - *Square Roots of a General Element in the Symmetric Quaternionic Sesqualgebra* (`articles_maths/square-roots-of-a-general-element-in-the-symmetric-quaternionic-sesqualgebra.md`), for the equation $\tilde\Xi\star\tilde\Xi=\tilde R$ for an arbitrary value, of which the central values here are the scalar case.
 - *Zero Divisors of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/zero-divisors-of-the-symmetric-quaternionic-sesqualgebra.md`), for the criterion that makes every nonzero idempotent regular.

@@ -26,7 +26,7 @@ other of the twelve structures.**
 **Placement and boundaries.** The article closes the *Specific Theory* of the general plain algebra,
 after *The Specificities of the General Plain Algebra*. It states the invertibility criterion of the
 plain product that *Norm and Invertibility in the General Plain Algebra* declines to read from the
-product's own algebraic norm, and it cites *Zero Divisors in the 12 Algebraic Structures over the
+product's own algebraic norm, and it cites *Zero Divisors in the Algebraic Structures over the
 Biquaternion $\mathbb{C}$ Space* for the one-sided inverse equations read across the four general
 products. The topology of the group — the polar decomposition, the retractions onto the compact
 subgroups, the homotopy groups and the universal cover — is proved in *The Biquaternion Unit Group
@@ -34,8 +34,7 @@ as a Topological Group* and *The Unitary Group of the Biquaternion Algebra*; the
 the cone is *The Topology of the Zero-Divisor Cone*; the distribution of the units over the
 remarkable subspaces is *Norm and Invertibility in the General Quaternionic Algebra*, §*The
 Algebraic Norm on the Remarkable Subspaces*; the invertibility of the symmetrised product is *Norm
-and Invertibility in the Symmetric Plain Algebra*; and the classification of the twelve is *The 12
-Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. None of those is reproved here.
+and Invertibility in the Symmetric Plain Algebra*; and the classification of the twelve is *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. None of those is reproved here.
 
 **Conventions.** $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0=1,e_1,e_2,e_3$
 with $e_1e_2=e_3$, $e_k^{2}=-e_0$ and central scalar imaginary $i$; a general element is $\tilde
@@ -69,7 +68,7 @@ $$
 is the **zero-divisor cone**. It is a complex cone with apex at the origin, of complex dimension
 three and real dimension six, and the zero-divisor set of the four general products is the punctured
 cone $\mathcal{C}\setminus\{0\}$ (*Zero Divisors of the General Plain Algebra*; *Zero Divisors in
-the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*).
+the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*).
 
 **Theorem (the invertibility criterion of the plain product).** An element $\tilde Q$ of
 $\mathbb{B}$ is invertible in the plain product exactly when $N(\tilde Q)\neq0$, and its inverse is
@@ -349,7 +348,7 @@ Q)^{\natural}=\tilde Q^{\natural}\tilde P^{\natural}$, so that $\tilde P^{\natur
 P^{-1})^{\natural}=(\tilde P^{-1}\tilde P)^{\natural}=e_0$ and likewise with the coefficient
 conjugation. Conversely, the matrix model turns the equations into matrix equations with an
 invertible right factor, so the multiplication by $\tilde P$ is invertible and $N(\tilde P)\neq0$.
-The statement is *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$
+The statement is *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$
 Space*, §*The One-Sided Inverse Equations*, and the verification is by recomputation on $100$ random
 off-cone elements for each of the three non-unital products.
 
@@ -465,8 +464,8 @@ element at all.
 - *Zero Divisors of the General Plain Algebra*
   (`articles_maths/zero-divisors-of-the-general-plain-algebra.md`), for the criterion of the plain
   product, the two families of the cone and the three-way classification.
-- *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*
-  (`articles_maths/zero-divisors-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`),
+- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*
+  (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.md`),
   for the cone as the zero-divisor set of the four general products and the one-sided inverse
   equations.
 - *The Biquaternion Unit Group as a Topological Group*
@@ -485,10 +484,10 @@ element at all.
 - *The Specificities of the General Plain Algebra*
   (`articles_maths/the-specificities-of-the-general-plain-algebra.md`), for the left alternativity
   that the associativity of the plain product supplies and the isolation of the block.
-- *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*
-  (`articles_maths/the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the twelve
+- *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*
+  (`articles_maths/the-algebraic-structures-over-the-biquaternion-c-space.md`), for the twelve
   structures, their units and their images.
-- *Definitions for the Study of the 12 Algebraic Structures*
-  (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), for the unit, the
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*
+  (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the unit, the
   inverse, the zero divisor and the annihilator stated once for a general product.
 

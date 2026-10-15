@@ -3,7 +3,7 @@
 ## Introduction
 
 A root of a central value and a nilpotent are each defined by an equation in which the product
-occurs, so both belong to the product (*Definitions for the Study of the 12 Algebraic Structures*,
+occurs, so both belong to the product (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*,
 §*Powers, the Square and the Roots* and §*The Nilpotent*). The block of this article is the
 antisymmetric quaternionic multiplication
 $$
@@ -60,7 +60,7 @@ $$
 $$
 The three central values the biquaternion algebra singles out are $-1$, $+1$ and $0$: the roots of
 $-1$ are the imaginary units, the roots of $+1$ are the involutions, and the roots of $0$ are the
-nonzero nilpotents of the product (*Definitions for the Study of the 12 Algebraic Structures*,
+nonzero nilpotents of the product (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*,
 §*Powers, the Square and the Roots*).
 
 **Definition (nilpotent of a product).** Let $\star$ be a product on $\mathbb{B}$. An element
@@ -75,7 +75,7 @@ $$
 when the product is not associative. The least such $k$ is the
 **index of nilpotency**, and an element of index two, $\tilde\Upsilon\star\tilde\Upsilon=0$ with
 $\tilde\Upsilon\neq0$, is a **square-zero element of $\star$**. The origin is the trivial nilpotent,
-of index one (*Definitions for the Study of the 12 Algebraic Structures*, §*The Nilpotent*).
+of index one (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Nilpotent*).
 
 Throughout this article the product is the **antisymmetric quaternionic multiplication** $\diamond$,
 and unqualified, *root* means a root of the block and *nilpotent* means a nilpotent of the block.
@@ -213,10 +213,10 @@ the whole space, the zero-divisor set is the punctured space, and the two differ
 alone, which is the trivial nilpotent and is excluded from the zero divisors by their definition.
 
 *Proof.* The definition of the zero divisor requires a nonzero partner of a nonzero element
-(*Definitions for the Study of the 12 Algebraic Structures*, §*The Zero Divisor and the
+(*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Zero Divisor and the
 Annihilator*); a nonzero nilpotent has itself as a partner and is therefore a zero divisor, while
 the origin is excluded. The implication is a statement of a product and not of the twelve, and its
-reading for each product is *Definitions for the Study of the 12 Algebraic Structures*, §*The
+reading for each product is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The
 Nilpotent*.
 
 ### The Relation to the Idempotents
@@ -282,8 +282,8 @@ parent's cone widens to the whole space, and the parent's index two is kept by e
 element. The block's nilpotent set strictly contains the parent's, and the difference is the
 complement of the cone, on which the parent's square is a nonzero central value and the block's
 square is zero. The nilpotent sets of the twelve structures of the biquaternion space are read side
-by side in *Nilpotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, and
-the real-space analogue is *Nilpotents in the 6 Algebraic Structures over the Quaternion
+by side in *Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, and
+the real-space analogue is *Nilpotents in the Algebraic Structures over the Quaternion
 $\mathbb{R}$ Space*.
 
 ## Summary
@@ -318,11 +318,11 @@ matrix.
 
 ## Further Reading
 
-- *Definitions for the Study of the 12 Algebraic Structures* (`articles_maths/definitions-for-the-study-of-the-12-algebraic-structures.md`), for the root of a central value, the nilpotent, the index of nilpotency, the square-zero element and the relativity of the definitions
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the root of a central value, the nilpotent, the index of nilpotency, the square-zero element and the relativity of the definitions
 - *Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra-of-biquaternions.md`), for the operation, its alternation and its table
 - *Square Roots of One and the Idempotents of the Antisymmetric Quaternionic Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-antisymmetric-quaternionic-algebra.md`), for the reduction of the vanishing square and for the idempotent set, which meets the nilpotents at the origin
 - *Square Roots of a General Element in the Antisymmetric Quaternionic Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-antisymmetric-quaternionic-algebra.md`), for the general equation $\tilde\Xi\diamond\tilde\Xi=a$ and for the square roots of the origin, which are the whole space
 - *Zero Divisors of the Antisymmetric Quaternionic Algebra* (`articles_maths/zero-divisors-of-the-antisymmetric-quaternionic-algebra.md`), for the coincidence of the square-zero set with the zero-divisor set and for the annihilating partner
 - *Annihilators of the Antisymmetric Quaternionic Algebra* (`articles_maths/annihilators-of-the-antisymmetric-quaternionic-algebra.md`), for the annihilators of an element, which contain it
 - *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-quaternionic-algebra.md`), for the nilpotent cone $N=0$ of the parent product
-- *Nilpotents in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/nilpotents-in-the-12-algebraic-structures-over-the-biquaternion-c-space.md`), for the square-zero sets of the twelve structures side by side
+- *Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/nilpotents-in-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the square-zero sets of the twelve structures side by side

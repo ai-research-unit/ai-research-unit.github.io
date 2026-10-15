@@ -6,7 +6,7 @@ The antisymmetric quaternionic algebra of $\mathbb{H}$ is the quaternionic produ
 $\tilde p\diamond\tilde q=\tfrac12(\tilde p^{\natural}\tilde q-\tilde q^{\natural}\tilde p)=p_0\vec q-q_0\vec p-\vec p\times\vec q$ of *Introduction to the Antisymmetric
 Quaternionic Algebra of Quaternions*. This article states what singles the block out among the six
 products of the space: the identities it satisfies and those it fails, the classes its laws empty, and
-the place it takes in the law table of *Definitions for the Study of the 6 Algebraic Structures*.
+the place it takes in the law table of *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*.
 
 The block is **alternating** like its plain companion, and unlike it, it **fails the Jacobi identity**;
 the two facts together isolate it, since it is the only alternating product of the six that is not a
@@ -25,13 +25,13 @@ Quaternionic Algebra*, the form is *The Invariant Bilinear Forms of the Antisymm
 Algebra* and the operators are *The Adjoint Operators of the Antisymmetric Quaternionic Algebra*, all
 below this article in this category. The comparator is *The Specificities of the Antisymmetric Plain
 Algebra*, above this article in this category. The law vocabulary is *Definitions for the Study of the
-6 Algebraic Structures* and the law table *The 6 Algebraic Structures over the Quaternion
+Algebraic Structures* and the law table *The Algebraic Structures over the Quaternion
 $\mathbb{R}$ Space*.
 
 **Conventions.** The algebra is $\mathbb{H}$ with basis $e_0=1,e_1,e_2,e_3$ and
 $e_1^2=e_2^2=e_3^2=-e_0$; a generic element is $\tilde q=q_0e_0+\vec q$, the centre is
 $\mathbb{R}_{\mathbb{H}}=\mathbb{R}e_0$ and the vector subspace is $\mathrm{Vect}(\mathbb{H})=\{\vec q\}$.
-The laws are those of *Definitions for the Study of the 6 Algebraic Structures*.
+The laws are those of *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*.
 
 ## The Two-Line Criterion
 
@@ -128,13 +128,12 @@ subspace: the block's square vanishes on every element, the scalar direction inc
 $e_0\diamond e_0=0$.
 
 *Proof.* The square vanishes identically, so every element is square-zero; the index is two for a
-nonzero element and one for the origin. The reading is the one of *Definitions for the Study of the 6
-Algebraic Structures*, where the class of nonzero nilpotents is the whole space for the two
+nonzero element and one for the origin. The reading is the one of *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, where the class of nonzero nilpotents is the whole space for the two
 antisymmetric structures.
 
 ## The Isolation among the Six
 
-The following table, the law table of *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$
+The following table, the law table of *The Algebraic Structures over the Quaternion $\mathbb{R}$
 Space* read on the identities, shows the isolation of the block. The entries are the structures that
 satisfy the identity.
 
@@ -198,4 +197,4 @@ plain block, whose Jacobi identity holds.
 - *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra* and *The Adjoint Operators of the Antisymmetric Quaternionic Algebra*, both below this article in this category, for the form and the operators.
 - *The Symmetric and Antisymmetric Parts of an Algebra Product*, for the criterion relating the failure to the associator.
 - *The Specificities of the Antisymmetric Plain Algebra*, above this article in this category, for the comparator whose Jacobi identity holds.
-- *Definitions for the Study of the 6 Algebraic Structures* and *The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, for the law vocabulary and the law table.
+- *Definitions for the Study of the Algebraic Structures over the Quaternion $\mathbb{R}$ Space* and *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*, for the law vocabulary and the law table.

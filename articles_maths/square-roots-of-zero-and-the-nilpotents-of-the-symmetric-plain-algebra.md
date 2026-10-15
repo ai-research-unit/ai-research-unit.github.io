@@ -8,7 +8,7 @@ $$
 \tilde P\bullet\tilde Q=\tfrac12\bigl(\tilde P\tilde Q+\tilde Q\tilde P\bigr)
 $$
 
-of *Introduction to the Symmetric Plain Algebra of Biquaternions*, the symmetrisation of the general plain bilinear product of *Introduction to the General Plain Algebra of Biquaternions*, and the operation named $\mathrm{SPA}$ in *The 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. The square of the block is the **plain square**, $\tilde Q\bullet\tilde Q=\tilde Q^2$, the antisymmetric part of the product vanishing on the diagonal.
+of *Introduction to the Symmetric Plain Algebra of Biquaternions*, the symmetrisation of the general plain bilinear product of *Introduction to the General Plain Algebra of Biquaternions*, and the operation named $\mathrm{SPA}$ in *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. The square of the block is the **plain square**, $\tilde Q\bullet\tilde Q=\tilde Q^2$, the antisymmetric part of the product vanishing on the diagonal.
 
 The article treats two subjects, and in this order. The first is the square roots of the central value $0$, the elements $\tilde\Xi\in\mathbb{B}$ with
 
@@ -38,7 +38,7 @@ $$
 
 the generic norm of the block, written $N(\tilde Q)$ in *Norm and Invertibility in the Symmetric Plain Algebra*. The natural conjugation is $\tilde Q^{\natural}=Q_0-\vec Q$. The remarkable subspaces $\mathbb{C}_{\mathbb{B}}$, $\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_-$ are *Introduction to the Remarkable Subspaces* and *Remarkable Subspaces under the Symmetric Plain Algebra of Biquaternions*. A root of a central value is written $\tilde\Xi$ (§*The Root Convention* of *Conventions in Mathematics*), a nilpotent $\tilde\Upsilon$ (§*The Nilpotent Convention*), and a generic element $\tilde P$ or $\tilde Q$.
 
-The equations name a product, so the roots and the nilpotents are relative to it. The general definition of the power, the square, the root of a central value and the nilpotent, with the index of nilpotency and the square-zero element, is *Definitions for the Study of the 12 Algebraic Structures*, §*Powers, the Square and the Roots* and §*The Nilpotent*. Throughout this article the square is the one of the symmetric plain product, which is the plain square; the other three general products and their parts carry roots of $0$ and square-zero sets of their own, and they are *Comparison Between the Four General Products*.
+The equations name a product, so the roots and the nilpotents are relative to it. The general definition of the power, the square, the root of a central value and the nilpotent, with the index of nilpotency and the square-zero element, is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots* and §*The Nilpotent*. Throughout this article the square is the one of the symmetric plain product, which is the plain square; the other three general products and their parts carry roots of $0$ and square-zero sets of their own, and they are *Comparison Between the Four General Products*.
 
 ## The Roots of Zero
 
@@ -158,7 +158,7 @@ $$
 \tilde\Upsilon\bullet\tilde\Upsilon=0 .
 $$
 
-The element $0$ is a square-zero element, and it is not a nilpotent. The equation names a product, and the notion is relative to it; the general definition, with the index of nilpotency and the square-zero element, is *Definitions for the Study of the 12 Algebraic Structures*, §*The Nilpotent*. Throughout this article the product is the symmetric plain product, which has the plain square; where another of the four general products is meant it is named.
+The element $0$ is a square-zero element, and it is not a nilpotent. The equation names a product, and the notion is relative to it; the general definition, with the index of nilpotency and the square-zero element, is *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Nilpotent*. Throughout this article the product is the symmetric plain product, which has the plain square; where another of the four general products is meant it is named.
 
 The element is of **index two**: its square vanishes while it does not, and since $\tilde\Upsilon\bullet\tilde\Upsilon^{\bullet2}=\tilde\Upsilon^{\bullet2}\bullet\tilde\Upsilon=0$ every higher power vanishes as well. §*Index Two* shows conversely that a vanishing cube already forces a vanishing square, so the block carries no nilpotent of higher index, and the two clauses of the definition are exhaustive: the nilpotents are exactly the nonzero square-zero elements, with no further stratification.
 
@@ -333,7 +333,7 @@ Every nilpotent annihilates itself, so it is a two-sided zero divisor and the id
 
 ## Further Reading
 
-- *Definitions for the Study of the 12 Algebraic Structures*, §*Powers, the Square and the Roots* and §*The Nilpotent*, for the general definition of a root of a central value and of the nilpotent, with the index of nilpotency and the square-zero element.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots* and §*The Nilpotent*, for the general definition of a root of a central value and of the nilpotent, with the index of nilpotency and the square-zero element.
 - *Square Roots of Zero and the Nilpotents of the General Plain Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-plain-algebra.md`), for the criterion, the cone and the flag calculus of the algebra, which the block does not have.
 - *Square Roots of One and the Idempotents of the Symmetric Plain Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-symmetric-plain-algebra.md`), for the roots of $+1$ and the idempotents, the other two central element classes.
 - *Square Roots of a General Element in the Symmetric Plain Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-symmetric-plain-algebra.md`), for the roots of the general quadratic $\tilde\Xi\bullet\tilde\Xi=\tilde Q$, of which the roots of $0$ here are one case.

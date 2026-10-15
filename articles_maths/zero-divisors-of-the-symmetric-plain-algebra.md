@@ -11,7 +11,7 @@ sets of the four general products.
 
 The comparison is where the block separates from the algebra. For the four general products of *The
 Four General Products of the Biquaternion $\mathbb{C}$ Space* the zero-divisor set is the isotropic
-cone of the central square, and the four sets **coincide** (*Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*). For
+cone of the central square, and the four sets **coincide** (*Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*). For
 the symmetric plain product the set is **strictly larger**: every element of the vector subspace,
 isotropic or not, is a zero divisor, because the symmetrisation drops the cross product that the
 plain product uses to keep a non-isotropic pure element regular. The block therefore does not
@@ -24,7 +24,7 @@ annihilates $e_2$. The careful separation of the two notions is *Norm and Invert
 Symmetric Plain Algebra*; this article owns the annihilating elements.
 
 A zero divisor is defined relative to a product, and the definition is stated once for a general
-product in *Definitions for the Study of the 12 Algebraic Structures*, §*The Zero Divisor*;
+product in *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Zero Divisor*;
 throughout this article the product is $\bullet$ and, unqualified, **zero divisor** means zero
 divisor of $\bullet$. The zero divisors of the algebra, their criterion and their set are *Zero
 Divisors of the General Plain Algebra*; the annihilators and the determinant of the left
@@ -62,7 +62,7 @@ $$
 $$
 
 The zero divisors of the four general products and the theorem of the four coinciding sets are
-*Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
+*Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*.
 
 ## The Criterion
 
@@ -177,7 +177,7 @@ not in the algebra's set.
 the isotropic cone of the central square, and the zero-divisor set of the block is strictly larger
 than all four.
 
-*Proof.* The coincidence for the four general products is *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. The
+*Proof.* The coincidence for the four general products is *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. The
 strict inclusion is the theorem above: the block's set contains the isotropic cone and the whole
 vector subspace.
 
@@ -238,9 +238,9 @@ invertible elements are exactly the complement of the isotropic cone.
 
 ## Further Reading
 
-- *Definitions for the Study of the 12 Algebraic Structures*, §*The Zero Divisor*, for the product-relative definition and the dictionary of the classes.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Zero Divisor*, for the product-relative definition and the dictionary of the classes.
 - *Zero Divisors of the General Plain Algebra*, for the zero divisors of the algebra, their criterion and their set.
-- *Zero Divisors in the 12 Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, for the four coinciding sets, against which the block's set is compared.
+- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, for the four coinciding sets, against which the block's set is compared.
 - *Norm and Invertibility in the Symmetric Plain Algebra*, for the invertible elements and the distinction with the regular ones.
 - *Square Roots of One and the Idempotents of the Symmetric Plain Algebra* and *Square Roots of Zero and the Nilpotents of the Symmetric Plain Algebra*, for the two families named by the block.
 - *The Trace Form and the Invariance of the Symmetric Plain Algebra*, for the determinant $\det L^{\bullet}_{\tilde Q}=Q_0^2C(\tilde Q)$.
