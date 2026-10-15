@@ -17,7 +17,7 @@ This article is the object-level counterpart of *Remarkable Subspaces and the Fo
 - the **value on a general pair**, that is the restriction as a two-argument object;
 - the **imaginary part**, which is a second real bilinear form on the subspace, **symmetric** for the two bilinear forms and **alternating** for the two sesquilinear forms. It is non-zero and non-degenerate on exactly two of the remarkable subspaces, the centre and the vector subspace, and it vanishes identically on the other four.
 
-The first of the two tables below is the summary of the first point and the second of the second.
+The first of the two tables below is the summary of the first point and the second of the second. Two sections at the end read the form as a metric: §*The Automorphism Groups of the Restrictions*, for the orthogonal group of each restriction and its real forms, and §*The Realified Form on the Subspaces*, for the maximal definite subspaces, the three orthogonal splittings and the real null cones of the real parts.
 
 The value of each form on a general pair of elements of each subspace is this.
 
@@ -291,9 +291,57 @@ The identity says that the alternating part is not a second independent object o
 | $\mathbb{M}_+$ | $\{0\}$ | $\{0\}$ | the light cone, real dimension $3$ | the light cone, real dimension $3$ |
 | $\mathbb{M}_-$ | $\{0\}$ | $\{0\}$ | the light cone, real dimension $3$ | the light cone, real dimension $3$ |
 
-The rule behind the table is one line: **a form has a null cone on a subspace exactly when its real part is indefinite there**, and the signatures of the introduction and of the six sections say which are. The count of indefinite forms is none on the centre, two on the vector subspace, the bilinear pair $B$ and $N$ of signature $(3,3)$, and two on each of the four real-type subspaces, $B$ and $K$ on the quaternion subspace and on its imaginary translate, $N$ and $K$ on the two sectors. Two columns of the table are constant and are the two theorems of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* read on the remarkable subspaces: **$H$ is definite on all of them**, so its null set is the origin in each, and **$H$ is the only definite one**, so each of the other three has a cone on some subspace. A collapse with no sign keeps the cone, a collapse with a sign swaps it for the origin, and the collapse $H=K$ on the centre against $K=-H$ on the vector subspace is exactly the exchange of a definite form for an indefinite one.
+The rule behind the table is one line: **off the centre a form has a complex null cone on a subspace exactly when the restriction of its real part is indefinite there**, and the signatures of the introduction and of the six sections say which are. On the centre the complex zeros are trivial for all four forms even though the real part of $B$ and of $N$ is indefinite, and it is the real zeros of the real part that form the cone there; the two kinds of zero are separated in §*The Realified Form on the Subspaces*. The count of forms with a complex null cone is none on the centre, two on the vector subspace, the bilinear pair $B$ and $N$ of signature $(3,3)$, and two on each of the four real-type subspaces, $B$ and $K$ on the quaternion subspace and on its imaginary translate, $N$ and $K$ on the two sectors. Two columns of the table are constant and are the two theorems of *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* read on the remarkable subspaces: **$H$ is definite on all of them**, so its null set is the origin in each, and **$H$ is the only definite one**, so each of the other three has a cone on some subspace. A collapse with no sign keeps the cone, a collapse with a sign swaps it for the origin, and the collapse $H=K$ on the centre against $K=-H$ on the vector subspace is exactly the exchange of a definite form for an indefinite one.
 
 **The ambient cones are cut by the subspaces.** The ambient null sets of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* are the complex cone of $B$, the zero-divisor cone $\mathcal N$ of $N$ and the real cone $\mathcal K$ of $K$, of real dimensions six, six and seven. The table above is what those cones become on the remarkable subspaces, and the two are different pictures: the ambient cones have real dimension six or seven, and the cones of the table have real dimension four on the vector subspace and real dimension three on the four real-type subspaces, because the equations $\sum_kQ_k^{2}=0$ in three complex unknowns and $h_0^{2}=\lvert\vec h\rvert^{2}$ in four real unknowns have those dimensions. A subspace is not a small copy of the ambient space for a cone.
+
+## The Automorphism Groups of the Restrictions
+
+**Definition.** For a subspace $U$ of the remarkable subspaces the **automorphism group of the restriction** is the group of real-linear maps of $U$ preserving $B|_U$,
+
+$$
+\mathrm{Isom}\bigl(U,B\bigr)=\{S\in GL_{\mathbb{R}}(U):B(Su,Sv)=B(u,v)\ \text{for all }u,v\in U\}.
+$$
+
+It is the real orthogonal group of the signature of the real part $g_B$ on $U$, and its real dimension is $n(n-1)/2$ for $n=\dim_{\mathbb{R}}U$. The signatures of the introduction give the table.
+
+| subspace | signature of $g_B$ | automorphism group | real dimension |
+|---|---|---|---|
+| $\mathbb{C}_{\mathbb{B}}$ | $(1,1)$ | $O(1,1)$ | $1$ |
+| $\mathrm{Vect}(\mathbb{B})$ | $(3,3)$ | $O(3,3)$ | $15$ |
+| $\mathbb{H}_{\mathbb{B}}$ | $(1,3)$ | $O(1,3)$ | $6$ |
+| $i\mathbb{H}_{\mathbb{B}}$ | $(3,1)$ | $O(3,1)\cong O(1,3)$ | $6$ |
+| $\mathbb{M}_+$ | $(4,0)$ | $O(4)$ | $6$ |
+| $\mathbb{M}_-$ | $(0,4)$ | $O(4)$ | $6$ |
+
+The same rows with the signatures of $H$, $N$ and $K$ give their automorphism groups, since each of the four forms is non-degenerate on $U$ and its group depends on the signature alone.
+
+**Remark (the real group against the complex one).** On the two complex subspaces the largest $\mathbb{C}$-linear group that preserves the subspace and the form is the smaller complex orthogonal group, $O_1(\mathbb{C})$ on the centre and $O_3(\mathbb{C})$ on the vector subspace, of real dimensions $0$ and $6$; the real groups $O(1,1)$ and $O(3,3)$ of the table are larger, because a real-linear form preservation need not respect the complex structure. On the four real-type subspaces the two agree: a real automorphism of the restriction extends by complex linearity to an automorphism of the algebra preserving the subspace, and conversely. The rows $O(1,3)$ and $O(4)$ are therefore the real forms of the complex orthogonal group $O_4(\mathbb{C})$ of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, §*The Isometry Groups of the Four Forms*: each of the four real subspaces spans the algebra over $\mathbb{C}$, its restriction is a real form of a general plain bilinear form on $\mathbb{B}$, and the four restrictions are congruent to one another over $\mathbb{C}$. The groups $O(1,1)$ and $O(3,3)$ of the two complex subspaces are not real forms of that complex group.
+
+## The Realified Form on the Subspaces
+
+**The maximal definite subspaces.** The real part $g_B$ on the whole algebra has signature $(4,4)$, so its maximal positive definite and maximal negative definite dimensions are both $4$. The Hermitian subspace $\mathbb{M}_+$, of real dimension $4$ and positive definite, is a **maximal positive definite subspace**, and the anti-Hermitian subspace $\mathbb{M}_-$ a **maximal negative definite subspace**; neither can be enlarged while remaining definite, and the two are orthogonal complements. The centre is a definite plane only in the hyperbolic sense, its signature $(1,1)$ being neither positive nor negative definite, and the quaternion and vector subspaces carry both signs.
+
+**The three orthogonal splittings.** The form is diagonal in the natural bases, so three pairs of complementary subspaces split the algebra orthogonally, the signatures adding to $(4,4)$ in each:
+
+$$
+\mathbb{B}=\mathbb{C}_{\mathbb{B}}\perp\mathrm{Vect}(\mathbb{B}),\qquad
+\mathbb{B}=\mathbb{H}_{\mathbb{B}}\perp i\mathbb{H}_{\mathbb{B}},\qquad
+\mathbb{B}=\mathbb{M}_+\perp\mathbb{M}_-,
+$$
+
+of signatures $(1,1)\perp(3,3)$, $(1,3)\perp(3,1)$ and $(4,0)\perp(0,4)$. Only the third splits the realified form into a positive definite and a negative definite piece; in the first two both sides carry isotropic vectors. The two restricted forms of the third split are exchanged by the central scalar, $\langle i\tilde P,i\tilde Q\rangle=-\langle\tilde P,\tilde Q\rangle$.
+
+**The real null cones of $g_B=\operatorname{Re}B$.** On each of the four indefinite rows the real zeros of $g_B$ form a cone through the origin of real dimension one less than the subspace, and one null element on each row exhibits it.
+
+| subspace | signature | null element | real null cone, real dimension |
+|---|---|---|---|
+| $\mathbb{C}_{\mathbb{B}}$ | $(1,1)$ | $e_0+ie_0$ | $1$, the two lines $\mathbb{R}(e_0\pm ie_0)$ |
+| $\mathrm{Vect}(\mathbb{B})$ | $(3,3)$ | $e_1+ie_1$ | $5$ |
+| $\mathbb{H}_{\mathbb{B}}$ | $(1,3)$ | $e_0+e_1$ | $3$ |
+| $i\mathbb{H}_{\mathbb{B}}$ | $(3,1)$ | $ie_0+ie_1$ | $3$ |
+
+Each element is null because the real part of its value vanishes, $1-1$ on the centre and on the vector and quaternion subspaces, $-1+1$ on the anti-quaternion subspace. On an indefinite form of signature $(p,q)$ the zeros of the diagonal form a cone of real codimension one, whence the dimensions; on the centre, of real dimension two, the cone is the pair of lines $\mathbb{R}(e_0\pm ie_0)$. The two definite rows, $\mathbb{M}_+$ and $\mathbb{M}_-$, contribute no null element, so the isotropic rows are four and not six. These are the real zeros of $g_B$, and they are distinct from the complex null sets of the table above, which are the complex zeros of $B$: on the four real-type subspaces the two agree, because there $B$ is real-valued, while on the centre and the vector subspace they do not — the complex null set of $B$ is the origin on the centre and the complex cone of real dimension $4$ on the vector subspace, against the two real lines and the cone of real dimension $5$ found here. On the vector subspace the cone $\sum_kq_k^2=\sum_k(q'_k)^2$ contains the totally isotropic real plane $\mathrm{span}_{\mathbb{R}}\{e_1+ie_1,\ e_2+ie_2\}$, and the three elements $e_k+ie_k$ span a totally isotropic subspace of real dimension $3$, the maximum for signature $(3,3)$.
 
 ## The Material Interpretation
 
@@ -313,7 +361,9 @@ The forms split as $\varphi=g+i\sigma$, with $g$ real symmetric and $\sigma$ rea
 
 The four forms collapse on the remarkable subspaces as $B=N$ and $H=K$ on the centre, $B=-N$ and $K=-H$ on the vector subspace, $B=K$ and $N=H$ on the quaternion subspace, $B=-K$ and $N=-H$ on the anti-quaternion subspace, $B=H$ and $N=K$ on the Hermitian subspace and $B=-H$ and $N=-K$ on the anti-Hermitian subspace. On the two complex subspaces the imaginary part is read off the real part by the complex structure, $\omega(\tilde P,\tilde Q)=+g(\tilde P,i\tilde Q)$ for $H$ and $K$ and $\sigma(\tilde P,\tilde Q)=-g(\tilde P,i\tilde Q)$ for $B$ and $N$, the one sign being the whole difference between the two pairs.
 
-The null sets are four origins on the centre; on the vector subspace two cones and two origins, the cones being the complex cone of the bilinear pair; and on each of the four real-type subspaces two light cones and two origins. The rule is that a form has a null cone on a subspace exactly when its real part is indefinite there; $H$ is definite on all six and every other form has a cone on some subspace.
+The null sets are four origins on the centre; on the vector subspace two cones and two origins, the cones being the complex cone of the bilinear pair; and on each of the four real-type subspaces two light cones and two origins. The rule is that off the centre a form has a complex null cone on a subspace exactly when the restriction of its real part is indefinite there; $H$ is definite on all six and every other form has a cone on some subspace.
+
+Read as a metric, the restriction carries the orthogonal group of its signature: $O(1,1)$, $O(3,3)$, $O(1,3)$, $O(3,1)$, $O(4)$ and $O(4)$ on the centre, the vector subspace, the quaternion subspace, the anti-quaternion subspace and the two Hermitian subspaces, of real dimensions $1$, $15$, $6$, $6$, $6$ and $6$. The four real-type rows are the real forms of the complex orthogonal group $O_4(\mathbb{C})$, of $O(1,3)$ and $O(4)$; the two complex rows are the realified groups, larger than the complex groups $O_1(\mathbb{C})$ and $O_3(\mathbb{C})$ because a real-linear form preservation need not respect the complex structure. The realified form $g_B$ of signature $(4,4)$ has the Hermitian subspace as a maximal positive definite subspace and the anti-Hermitian subspace as a maximal negative definite one, orthogonal complements of one another, and it splits orthogonally three ways, $\mathbb{C}_{\mathbb{B}}\perp\mathrm{Vect}(\mathbb{B})$ of signatures $(1,1)\perp(3,3)$, $\mathbb{H}_{\mathbb{B}}\perp i\mathbb{H}_{\mathbb{B}}$ of $(1,3)\perp(3,1)$ and $\mathbb{M}_+\perp\mathbb{M}_-$ of $(4,0)\perp(0,4)$. The real zeros of $g_B$ are the four isotropic rows with the null elements $e_0+ie_0$, $e_1+ie_1$, $e_0+e_1$ and $ie_0+ie_1$, of real dimensions $1$, $5$, $3$ and $3$; on the two complex subspaces they are not the complex null sets of the table above, which are the complex zeros of the form.
 
 ## Summary of Notation
 
@@ -331,10 +381,13 @@ The null sets are four origins on the centre; on the vector subspace two cones a
 | $g$ and $\sigma$ in the real basis | the two parts as real matrices of twice the size: $\mathrm I_6$ and the block sum of three $\begin{pmatrix}0&-1\\ 1&0\end{pmatrix}$ on the vector subspace; the combined array $g+i\sigma$ is **not** the Gram matrix and is not read with the determinant rule |
 | $B=N$, $H=K$; $B=-N$, $K=-H$; $B=K$, $N=H$; $B=-K$, $N=-H$; $B=H$, $N=K$; $B=-H$, $N=-K$ | the collapse patterns, one to a subspace |
 | the light cone | the null cone of the Minkowski form on the four real-type subspaces; on the material sector it is the null cone of the interval $N$ of signature $(3,1)$ and of its negative $K$ of signature $(1,3)$ |
+| $O(1,1)$, $O(3,3)$, $O(1,3)$, $O(3,1)$, $O(4)$ | the automorphism groups of the restrictions of $B$, of real dimensions $1$, $15$, $6$, $6$, $6$ and $6$; the four real-type rows are the real forms of $O_4(\mathbb{C})$ |
+| $\mathbb{C}_{\mathbb{B}}\perp\mathrm{Vect}(\mathbb{B})$, $\mathbb{H}_{\mathbb{B}}\perp i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+\perp\mathbb{M}_-$ | the three orthogonal splittings of the algebra by $g_B$, of signatures $(1,1)\perp(3,3)$, $(1,3)\perp(3,1)$ and $(4,0)\perp(0,4)$ |
+| $e_0+ie_0$, $e_1+ie_1$, $e_0+e_1$, $ie_0+ie_1$ | the null elements of the four indefinite rows for the real part $g_B=\operatorname{Re}B$, whose real null cones have real dimensions $1$, $5$, $3$ and $3$ |
 
 ## Further Reading
 
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the four forms, their count, their definition with the one bracket whose subscript records the pair, the two slots and the four names.
+- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the four forms, their count, their definition with the one bracket whose subscript records the pair, the two slots and the four names.
 - *Remarkable Subspaces and the Four Algebraic Norms* (`articles_maths/remarkable-subspaces-and-the-four-algebraic-norms.md`), the article of the algebraic norms, for the four algebraic norms on the same remarkable subspaces, the signature table recalled here, the definiteness of $H$ on all six and the material reading of the interval and the Euclidean square.
 - *Remarkable Subspaces and the Four General Products* (`articles_maths/remarkable-subspaces-and-the-four-general-products.md`), for the four general products — the operations whose scalar parts the four forms are — read on the same remarkable subspaces, with their symmetrisations and their brackets.
 - *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the remarkable subspaces, their defining conditions, their real bases and the dimensions used throughout.

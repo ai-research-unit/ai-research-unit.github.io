@@ -8,7 +8,7 @@ $$
 \tilde P\bullet\tilde Q=\tfrac12\bigl(\tilde P\tilde Q+\tilde Q\tilde P\bigr)
 $$
 
-of *Introduction to the Symmetric Plain Algebra of Biquaternions*, the symmetrisation of the general plain bilinear product of *Introduction to the General Plain Algebra of Biquaternions*, and the operation named $\mathrm{SPA}$ in *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. The square of the block is the **plain square**, $\tilde Q\bullet\tilde Q=\tilde Q^2$, the antisymmetric part of the product vanishing on the diagonal.
+of *Introduction to the Symmetric Plain Algebra of Biquaternions*, the symmetrisation of the general plain bilinear product of *Introduction to the Biquaternion Algebra*, and the operation named $\mathrm{SPA}$ in *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. The square of the block is the **plain square**, $\tilde Q\bullet\tilde Q=\tilde Q^2$, the antisymmetric part of the product vanishing on the diagonal.
 
 The article treats two subjects, and in this order. The first is the square roots of the central value $0$, the elements $\tilde\Xi\in\mathbb{B}$ with
 
@@ -334,7 +334,7 @@ Every nilpotent annihilates itself, so it is a two-sided zero divisor and the id
 ## Further Reading
 
 - *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots* and §*The Nilpotent*, for the general definition of a root of a central value and of the nilpotent, with the index of nilpotency and the square-zero element.
-- *Square Roots of Zero and the Nilpotents of the General Plain Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-plain-algebra.md`), for the criterion, the cone and the flag calculus of the algebra, which the block does not have.
+- *Square Roots of Zero and the Nilpotents of the General Plain Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.md`), for the criterion, the cone and the flag calculus of the algebra, which the block does not have.
 - *Square Roots of One and the Idempotents of the Symmetric Plain Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-symmetric-plain-algebra.md`), for the roots of $+1$ and the idempotents, the other two central element classes.
 - *Square Roots of a General Element in the Symmetric Plain Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-symmetric-plain-algebra.md`), for the roots of the general quadratic $\tilde\Xi\bullet\tilde\Xi=\tilde Q$, of which the roots of $0$ here are one case.
 - *Zero Divisors of the Symmetric Plain Algebra* (`articles_maths/zero-divisors-of-the-symmetric-plain-algebra.md`), for the two parts of the zero-divisor set, the pure part being exactly these nilpotents together with the non-isotropic pure elements.

@@ -8,7 +8,7 @@ $$
 \tilde P\bullet\tilde Q=\tfrac12\bigl(\tilde P\tilde Q+\tilde Q\tilde P\bigr)
 $$
 
-of *Introduction to the Symmetric Plain Algebra of Biquaternions*, the symmetrisation of the general plain bilinear product of *Introduction to the General Plain Algebra of Biquaternions*, and the operation named $\mathrm{SPA}$ in *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. The square of the block is the **plain square**,
+of *Introduction to the Symmetric Plain Algebra of Biquaternions*, the symmetrisation of the general plain bilinear product of *Introduction to the Biquaternion Algebra*, and the operation named $\mathrm{SPA}$ in *The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*. The square of the block is the **plain square**,
 
 $$
 \tilde Q\bullet\tilde Q=\tilde Q^2 :
@@ -38,7 +38,7 @@ is a bijection from the roots of $+1$ onto the idempotents, with inverse $\tilde
 
 The roots of $+1$ of the block and the roots of $+1$ of the general plain product are the same set, the two squares being equal; the classification is the one of *Square Roots of One and the Idempotents of the General Plain Algebra*, restated here in the block's coordinates and with the block's reading. What the block adds to the classification is the reading of the pure roots as the indices of its idempotents, and of the non-trivial idempotents as its isotropic elements.
 
-**The results.** The roots of $+1$ are the two central scalars $\pm e_0$; the two-real-parameter family $\pm i\vec n$ over the pure real quaternions $\vec n$ with $\vec n^2=-e_0$; and the four-real-parameter family $\vec\xi+i\vec\xi'$ with $\vec\xi\neq0$ and the two real conditions $\xi_1^2+\xi_2^2+\xi_3^2-(\xi'_1)^2-(\xi'_2)^2-(\xi'_3)^2=-1$ and $\xi_1\xi'_1+\xi_2\xi'_2+\xi_3\xi'_3=0$. Every idempotent of the block is trivial, $0$ or $e_0$, or of the form $\tilde\Pi=\tfrac12(e_0+\tilde\Xi)$ with $\tilde\Xi$ a root of $+1$; the halving map is a bijection, carrying the class $\{\tilde\Xi,-\tilde\Xi\}$ to the complementary pair $\{\tilde\Pi,e_0-\tilde\Pi\}$. The Hermitian idempotents, the projections, are the images of the purely imaginary roots and form a two-real-parameter family in the Hermitian subspace; the non-trivial idempotents are isotropic, of vanishing central square, hence zero divisors with annihilator the line $\mathbb{C}(e_0-\tilde\Xi)$; and the block is not left-alternative, so a non-trivial idempotent gives **no** projector, only the unit does, and the Jordan theory gives the cubic Peirce identity $L^{\bullet}_{\tilde\Pi}(2L^{\bullet}_{\tilde\Pi}-\mathrm{id})(L^{\bullet}_{\tilde\Pi}-\mathrm{id})=0$ and the decomposition $\mathbb{B}=\mathbb{C}\tilde\Pi\oplus\mathbb{B}_{1/2}\oplus\mathbb{C}(e_0-\tilde\Pi)$ with $\dim_{\mathbb{C}}\mathbb{B}_{1/2}=2$. The roots of $-1$ are one paragraph, read off the roots of $+1$ by multiplication by $i$.
+**The results.** The roots of $+1$ are the two central scalars $\pm e_0$; the two-real-parameter family $\pm i\hat u$ over the real unit vectors $\hat u$ with $\hat u^2=-e_0$; and the four-real-parameter family $\vec\xi+i\vec\xi'$ with $\vec\xi\neq0$ and the two real conditions $\xi_1^2+\xi_2^2+\xi_3^2-(\xi'_1)^2-(\xi'_2)^2-(\xi'_3)^2=-1$ and $\xi_1\xi'_1+\xi_2\xi'_2+\xi_3\xi'_3=0$. Every idempotent of the block is trivial, $0$ or $e_0$, or of the form $\tilde\Pi=\tfrac12(e_0+\tilde\Xi)$ with $\tilde\Xi$ a root of $+1$; the halving map is a bijection, carrying the class $\{\tilde\Xi,-\tilde\Xi\}$ to the complementary pair $\{\tilde\Pi,e_0-\tilde\Pi\}$. The Hermitian idempotents, the projections, are the images of the purely imaginary roots and form a two-real-parameter family in the Hermitian subspace; the non-trivial idempotents are isotropic, of vanishing central square, hence zero divisors with annihilator the line $\mathbb{C}(e_0-\tilde\Xi)$; and the block is not left-alternative, so a non-trivial idempotent gives **no** projector, only the unit does, and the Jordan theory gives the cubic Peirce identity $L^{\bullet}_{\tilde\Pi}(2L^{\bullet}_{\tilde\Pi}-\mathrm{id})(L^{\bullet}_{\tilde\Pi}-\mathrm{id})=0$ and the decomposition $\mathbb{B}=\mathbb{C}\tilde\Pi\oplus\mathbb{B}_{1/2}\oplus\mathbb{C}(e_0-\tilde\Pi)$ with $\dim_{\mathbb{C}}\mathbb{B}_{1/2}=2$. The roots of $-1$ are one paragraph, read off the roots of $+1$ by multiplication by $i$.
 
 The article is algebraic. It does not treat the roots of the general quadratic $\tilde\Xi\bullet\tilde\Xi=\tilde Q$, which is *Square Roots of a General Element in the Symmetric Plain Algebra*; the roots of $0$ and the nilpotents, which are *Square Roots of Zero and the Nilpotents of the Symmetric Plain Algebra*; the structure of the zero-divisor set, which is *Zero Divisors of the Symmetric Plain Algebra*; or the operator theory of the block, which is *The Multiplication Operators of the Symmetric Plain Algebra*. The last paragraph of §*The Roots of One* records how the roots of $-1$ are read off the roots of $+1$; it is a remark, it is used nowhere, and it opens nothing.
 
@@ -60,7 +60,7 @@ The equations name a product, so the roots and the idempotents are relative to i
 
 ## The Roots of One
 
-**The roots of $+1$ are exactly the two central scalars $\pm e_0$, the two-real-parameter family $\pm i\vec n$ over the pure real quaternions $\vec n$ with $\vec n^2=-e_0$, and the four-real-parameter family $\vec\xi+i\vec\xi'$ with $\vec\xi\neq0$ and the two real conditions $\xi_1^2+\xi_2^2+\xi_3^2-(\xi'_1)^2-(\xi'_2)^2-(\xi'_3)^2=-1$ and $\vec\xi\cdot\vec\xi'=0$; there are no others.**
+**The roots of $+1$ are exactly the two central scalars $\pm e_0$, the two-real-parameter family $\pm i\hat u$ over the real unit vectors $\hat u$ with $\hat u^2=-e_0$, and the four-real-parameter family $\vec\xi+i\vec\xi'$ with $\vec\xi\neq0$ and the two real conditions $\xi_1^2+\xi_2^2+\xi_3^2-(\xi'_1)^2-(\xi'_2)^2-(\xi'_3)^2=-1$ and $\vec\xi\cdot\vec\xi'=0$; there are no others.**
 
 A **root of $+1$** is an element $\tilde\Xi\in\mathbb{B}$ with $\tilde\Xi\bullet\tilde\Xi=e_0$, the square being the one of the symmetric plain product.
 
@@ -109,10 +109,10 @@ $$
 The subfamily with vanishing real part, $\vec\xi=0$, has $\vec\Xi=i\vec\xi'$ and $(\vec\Xi,\vec\Xi)=-\vec\xi'^2$, so the condition is $\vec\xi'^2=1$: the roots of this subfamily are
 
 $$
-\tilde\Xi=\pm i\vec n,\qquad \vec n\ \text{a pure real quaternion with}\ \vec n^2=-e_0,
+\tilde\Xi=\pm i\hat u,\qquad \hat u\ \text{a unit real vector with}\ \hat u^2=-e_0,
 $$
 
-a two-real-parameter family, the **purely imaginary roots**. They are the elements $i\vec n$ with $\vec n$ a real unit vector, the sign being absorbed by $\vec n\mapsto-\vec n$.
+a two-real-parameter family, the **purely imaginary roots**. They are the elements $i\hat u$ with $\hat u$ a real unit vector, the sign being absorbed by $\hat u\mapsto-\hat u$.
 
 ### The Non-Trivial Roots
 
@@ -143,7 +143,7 @@ $$
 **The purely imaginary roots.** The two-real-parameter family
 
 $$
-\tilde\Xi=\pm i\vec n,\qquad \vec n=n_1e_1+n_2e_2+n_3e_3\ \text{real},\quad n_1^2+n_2^2+n_3^2=1 .
+\tilde\Xi=\pm i\hat u,\qquad \hat u=u_1e_1+u_2e_2+u_3e_3\ \text{real},\quad u_1^2+u_2^2+u_3^2=1 .
 $$
 
 **The non-trivial roots.** The four-real-parameter family
@@ -183,7 +183,7 @@ $$
 
 and the inverse is an inverse of the block as well, the two products having the same unit. Every **pure** root, however, is a **zero divisor** of the block: the pure family of the block's zero-divisor set is the whole vector subspace, so every nonzero pure element annihilates a complex plane (*Zero Divisors of the Symmetric Plain Algebra*). The block therefore has invertible roots of $+1$ at which it is not regular, which the algebra does not; the trivial roots $\pm e_0$ lie in the centre and are units that are not zero divisors. The only element that is both a root of $+1$ and an idempotent is $e_0$: an element with $\tilde\Xi\bullet\tilde\Xi=e_0$ and $\tilde\Xi\bullet\tilde\Xi=\tilde\Xi$ has $\tilde\Xi=e_0$.
 
-**The roots of minus one.** The roots of $-1$ are the elements $i\tilde\Xi$ with $\tilde\Xi$ a root of $+1$: the product is $\mathbb{C}$-bilinear with central $i$, so $(i\tilde\Xi)\bullet(i\tilde\Xi)=i^2(\tilde\Xi\bullet\tilde\Xi)=-e_0$, and $\tilde\Xi\mapsto i\tilde\Xi$ is a bijection because $i$ is invertible. The three families of the roots of $+1$ are carried to the central $\pm ie_0$, to the pure real quaternions $\pm\vec n$ with $\vec n^2=-e_0$, and to the family $-\vec\xi'+i\vec\xi$ with the same two real conditions; equivalently the roots of $-1$ are the central $\pm ie_0$ together with the pure elements $\tilde\Xi$ with $(\vec\Xi,\vec\Xi)=1$. The mechanism needs the central scalar of square $-1$ moved past the two slots, which the bilinearity of the block allows and a product conjugating one slot does not (*Comparison Between the Four General Products*). The roots of $-1$ are quoted here and are used nowhere in this article.
+**The roots of minus one.** The roots of $-1$ are the elements $i\tilde\Xi$ with $\tilde\Xi$ a root of $+1$: the product is $\mathbb{C}$-bilinear with central $i$, so $(i\tilde\Xi)\bullet(i\tilde\Xi)=i^2(\tilde\Xi\bullet\tilde\Xi)=-e_0$, and $\tilde\Xi\mapsto i\tilde\Xi$ is a bijection because $i$ is invertible. The three families of the roots of $+1$ are carried to the central $\pm ie_0$, to the real unit vectors $\pm\hat u$ with $\hat u^2=-e_0$, and to the family $-\vec\xi'+i\vec\xi$ with the same two real conditions; equivalently the roots of $-1$ are the central $\pm ie_0$ together with the pure elements $\tilde\Xi$ with $(\vec\Xi,\vec\Xi)=1$. The mechanism needs the central scalar of square $-1$ moved past the two slots, which the bilinearity of the block allows and a product conjugating one slot does not (*Comparison Between the Four General Products*). The roots of $-1$ are quoted here and are used nowhere in this article.
 
 ## The Idempotents
 
@@ -270,7 +270,7 @@ The inverse of the halving map is $\tilde\Xi=2\tilde\Pi-e_0$.
 Substituting the classification of the roots of $+1$ into the halving map gives the families of idempotents.
 
 - For the trivial roots $\tilde\Xi=\pm e_0$: $\tilde\Pi=\tfrac12(e_0\pm e_0)$ is $e_0$ or $0$. These are the **trivial idempotents**.
-- For the purely imaginary roots $\tilde\Xi=\pm i\vec n$: $\tilde\Pi=\tfrac12 e_0\pm\tfrac12 i\vec n$. Since $i\vec n$ is fixed by the star for a pure real $\vec n$, these idempotents are **Hermitian**, $\tilde\Pi^{*}=\tilde\Pi$, and they are the **projections** of the block; they lie in the Hermitian subspace $\mathbb{M}_+$, and they form a two-real-parameter family. An idempotent fixed by the star is an orthogonal projection, orthogonality being read from the Hermitian form of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Idempotent, the Projection and the Peirce Decomposition*).
+- For the purely imaginary roots $\tilde\Xi=\pm i\hat u$: $\tilde\Pi=\tfrac12 e_0\pm\tfrac12 i\hat u$. Since $i\hat u$ is fixed by the star for a real unit $\hat u$, these idempotents are **Hermitian**, $\tilde\Pi^{*}=\tilde\Pi$, and they are the **projections** of the block; they lie in the Hermitian subspace $\mathbb{M}_+$, and they form a two-real-parameter family. An idempotent fixed by the star is an orthogonal projection, orthogonality being read from the Hermitian form of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (*Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*The Idempotent, the Projection and the Peirce Decomposition*).
 - For the non-trivial roots $\tilde\Xi=\vec\xi+i\vec\xi'$ with $\vec\xi\neq0$ and the two real conditions of §*The Non-Trivial Roots*: $\tilde\Pi=\tfrac12 e_0+\tfrac12(\vec\xi+i\vec\xi')$. Its vector part carries both a nonzero real part $\vec\xi$ and a nonzero imaginary part $\vec\xi'$, so the idempotent lies in none of the four four-dimensional subspaces $\mathbb{H}_{\mathbb{B}}$, $i\mathbb{H}_{\mathbb{B}}$, $\mathbb{M}_+$ and $\mathbb{M}_{-}$ (*Remarkable Subspaces under the Symmetric Plain Algebra of Biquaternions*).
 
 The idempotents inherit the size of the root set. Since the halving map is a bijection and the trivial roots are isolated, the Hermitian idempotents form a two-real-parameter family and the remaining non-trivial idempotents form a four-real-parameter family. Every non-trivial idempotent is a zero divisor, as §*The Idempotents and the Zero Divisors* shows, so the non-trivial idempotents lie in the zero-divisor set of *Zero Divisors of the Symmetric Plain Algebra*, while the trivial idempotents $0$ and $e_0$ are outside it, $e_0$ being a unit.
@@ -356,7 +356,7 @@ The middle space is the Jordan analogue of the two mixed Peirce spaces of an ass
 
 ## Summary
 
-The square of the block is the plain square, so the roots of $+1$ of the block are exactly the roots of $+1$ of the general plain algebra, and the classification transfers without change. The roots of $+1$ are the two central scalars $\pm e_0$; the two-real-parameter family $\pm i\vec n$ over the pure real quaternions with $\vec n^2=-e_0$; and the four-real-parameter family $\vec\xi+i\vec\xi'$ with $\vec\xi\neq0$, $\vec\xi^2-\vec\xi'^2=-1$ and $\vec\xi\cdot\vec\xi'=0$; the two pure families together are the pure elements $\vec u$ with $\vec u^2=e_0$. Every root of $+1$ is a unit, and every pure root is a zero divisor, so the block has invertible roots of $+1$ that are not regular. The roots of $-1$ are the elements $i\tilde\Xi$ over the roots of $+1$: the central $\pm ie_0$, the pure real unit quaternions, and the family $-\vec\xi'+i\vec\xi$.
+The square of the block is the plain square, so the roots of $+1$ of the block are exactly the roots of $+1$ of the general plain algebra, and the classification transfers without change. The roots of $+1$ are the two central scalars $\pm e_0$; the two-real-parameter family $\pm i\hat u$ over the real unit vectors with $\hat u^2=-e_0$; and the four-real-parameter family $\vec\xi+i\vec\xi'$ with $\vec\xi\neq0$, $\vec\xi^2-\vec\xi'^2=-1$ and $\vec\xi\cdot\vec\xi'=0$; the two pure families together are the pure elements $\vec u$ with $\vec u^2=e_0$. Every root of $+1$ is a unit, and every pure root is a zero divisor, so the block has invertible roots of $+1$ that are not regular. The roots of $-1$ are the elements $i\tilde\Xi$ over the roots of $+1$: the central $\pm ie_0$, the pure real unit quaternions, and the family $-\vec\xi'+i\vec\xi$.
 
 The idempotents of the block are the idempotents of the plain product, the two squares being equal. They are the origin, the unit, and the four-real-parameter family $\tfrac12(e_0+\vec u)$ with $\vec u$ pure and $\vec u^2=e_0$; the halving map $\tilde\Xi\mapsto\tfrac12(e_0+\tilde\Xi)$ is a bijection from the roots of $+1$ onto the idempotents, with inverse $\tilde\Xi=2\tilde\Pi-e_0$, and it carries $\{\tilde\Xi,-\tilde\Xi\}$ to $\{\tilde\Pi,e_0-\tilde\Pi\}$. The Hermitian idempotents, the projections, are the images of the purely imaginary roots and lie in $\mathbb{M}_+$; the non-Hermitian non-trivial idempotents lie in none of the four four-dimensional subspaces. Every non-trivial idempotent is isotropic, $C=0$, and is a zero divisor whose annihilator is the line spanned by its natural conjugate, while the two trivial idempotents are not zero divisors; conversely every non-pure zero divisor is $2Q_0$ times a non-trivial idempotent. An idempotent and its complement $e_0-\tilde\Pi$ are orthogonal idempotents. The block is not left-alternative, so a non-trivial idempotent does **not** give a projector and there is no associative Peirce calculus, no corner subalgebra and no ideal lattice; only the unit gives the identity operator. What survives is the Jordan theory: the cubic Peirce identity $L^{\bullet}_{\tilde\Pi}(2L^{\bullet}_{\tilde\Pi}-\mathrm{id})(L^{\bullet}_{\tilde\Pi}-\mathrm{id})=0$ and the decomposition $\mathbb{B}=\mathbb{C}\tilde\Pi\oplus\mathbb{B}_{1/2}\oplus\mathbb{C}(e_0-\tilde\Pi)$ with a two-dimensional middle space.
 
@@ -366,7 +366,7 @@ The idempotents of the block are the idempotents of the plain product, the two s
 |---|---|
 | $\tilde P\bullet\tilde Q$ | the symmetric plain product, the multiplication of the block |
 | $\tilde\Xi$ | a root either of $+1$, $\tilde\Xi\bullet\tilde\Xi=e_0$, or of $-1$ when invoked in the remark |
-| $\pm e_0$, $\pm i\vec n$, $\vec\xi+i\vec\xi'$ | the trivial, purely imaginary and non-trivial roots of $+1$ |
+| $\pm e_0$, $\pm i\hat u$, $\vec\xi+i\vec\xi'$ | the trivial, purely imaginary and non-trivial roots of $+1$ |
 | $(\vec\Xi,\vec\Xi)=\Xi_1^2+\Xi_2^2+\Xi_3^2$ | the complex square of the vector part, deciding the pure families |
 | $C(\tilde Q)=\sum_\mu Q_\mu^2=\tilde Q\tilde Q^{\natural}$ | the central square, the generic norm $N$ |
 | $\tilde\Pi$ | an idempotent of the block, $\tilde\Pi^{\bullet2}=\tilde\Pi$ |
@@ -379,11 +379,11 @@ The idempotents of the block are the idempotents of the plain product, the two s
 ## Further Reading
 
 - *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space*, §*Powers, the Square and the Roots* and §*The Idempotent, the Projection and the Peirce Decomposition*, for the product-relative definitions.
-- *Square Roots of One and the Idempotents of the General Plain Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra.md`), for the classification of the roots of $+1$ and of the idempotents the block restates.
+- *Square Roots of One and the Idempotents of the General Plain Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.md`), for the classification of the roots of $+1$ and of the idempotents the block restates.
 - *Square Roots of Zero and the Nilpotents of the Symmetric Plain Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-symmetric-plain-algebra.md`), for the roots of $0$, the companion central value.
 - *Square Roots of a General Element in the Symmetric Plain Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-symmetric-plain-algebra.md`), for the general root problem $\tilde\Xi\bullet\tilde\Xi=\tilde Q$.
 - *Zero Divisors of the Symmetric Plain Algebra* (`articles_maths/zero-divisors-of-the-symmetric-plain-algebra.md`), for the pure family of the zero divisors and the isotropic idempotents.
 - *The Specificities of the Symmetric Plain Algebra* (`articles_maths/the-specificities-of-the-symmetric-plain-algebra.md`), for the left alternativity the block fails and the Jordan law it satisfies.
 - *The Multiplication Operators of the Symmetric Plain Algebra* (`articles_maths/the-multiplication-operators-of-the-symmetric-plain-algebra.md`), for the Peirce spaces and the structure algebra.
-- *Remarkable Subspaces under the Symmetric Plain Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-symmetric-plain-algebra-of-biquaternions.md`), for the Hermitian subspace and the placement of the idempotents.
+- *Remarkable Subspaces under the Symmetric Plain Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-symmetric-plain-algebra.md`), for the Hermitian subspace and the placement of the idempotents.
 - Kevin McCrimmon, *A Taste of Jordan Algebras* (Springer, 2004), for the cubic Peirce identity and the Peirce decomposition of a Jordan algebra.

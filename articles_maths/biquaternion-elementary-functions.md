@@ -50,7 +50,7 @@ the sum of the square of the scalar part and the square of the complex norm; thi
 
 ### The Two Regimes
 
-The vector part $\vec Q$ is a zero divisor exactly when $(\vec Q, \vec Q) = 0$, i.e. when $B = 0$; the criterion is in *Zero Divisors of the General Plain Algebra*, §*Pure Zero Divisors*. So there are two cases:
+The vector part $\vec Q$ is a zero divisor exactly when $(\vec Q, \vec Q) = 0$, i.e. when $B = 0$; the criterion is in *Zero Divisors of the Biquaternion Algebra*, §*Pure Zero Divisors*. So there are two cases:
 
 - **Oscillatory regime:** $B \neq 0$. The vector part is not a zero divisor, and it can be normalized to a root of $-1$. The powers of $\vec Q$ alternate, as in the quaternion case.
 - **Nilpotent regime:** $B = 0$. The vector part is nilpotent, and $\vec Q^2 = 0$. The powers of $\vec Q$ truncate after the first.

@@ -126,7 +126,7 @@ The completely positive maps of the biquaternion algebra are exactly the sums of
 ## Further Reading
 
 - *Completely Positive Maps of a Hermitian Algebra with Hermitian Adjoint* (`articles_maths/completely-positive-maps-of-a-hermitian-algebra-with-hermitian-adjoint.md`), the general theory of which this is the biquaternion instance.
-- *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions* (`articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra-of-biquaternions.md`), for the sandwich as an operator, its positivity and its cone.
+- *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions* (`articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.md`), for the sandwich as an operator, its positivity and its cone.
 - *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/the-spectra-of-the-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the positivity criteria in terms of the spectrum of the sandwich.
 - *Positivity and the Hermitian Cone of a Hermitian Algebra with Hermitian Adjoint* (`articles_maths/positivity-and-the-hermitian-cone-of-a-hermitian-algebra-with-hermitian-adjoint.md`), for the cone and the positive involution.
 - *The Hermitian Sylvester Equation* (`articles_maths/the-hermitian-sylvester-equation.md`), for the fixed-point operator of a completely positive map.

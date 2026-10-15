@@ -56,7 +56,7 @@ $$
 
 The set is a nondegenerate complex quadric of complex dimension three, hence of real dimension six. It contains the two central roots $\pm e_0$ and the elements $\hat u$ over the real unit vectors.
 
-**Proof.** The criterion is the reduction. With $\Xi_\mu=p_\mu+ip'_\mu$ the equation is the pair $\sum_{\mu=0}^{3}(p_\mu^2-(p'_\mu)^2)=1$, $\sum_{\mu=0}^{3}p_\mu p'_\mu=0$ of two independent real equations on the eight real coordinates; the gradient of $N$ does not vanish on the level set, so the quadric is nondegenerate off the origin and has real dimension $8-2=6$. The elements $\pm e_0$ have $N=(\pm1)^2=1$; a real unit vector $\hat u$ has $\Xi_0=0$, $(\vec\Xi,\vec\Xi)=\sum_kn_k^2=1$ and satisfies the equation.
+**Proof.** The criterion is the reduction. With $\Xi_\mu=p_\mu+ip'_\mu$ the equation is the pair $\sum_{\mu=0}^{3}(p_\mu^2-(p'_\mu)^2)=1$, $\sum_{\mu=0}^{3}p_\mu p'_\mu=0$ of two independent real equations on the eight real coordinates; the gradient of $N$ does not vanish on the level set, so the quadric is nondegenerate off the origin and has real dimension $8-2=6$. The elements $\pm e_0$ have $N=(\pm1)^2=1$; a real unit vector $\hat u$ has $\Xi_0=0$, $(\vec\Xi,\vec\Xi)=\sum_ku_k^2=1$ and satisfies the equation.
 
 ### The Families
 
@@ -148,7 +148,7 @@ The two propositions are the whole of the relation between the roots of one and 
 
 The idempotents of the plain product are the standard family of the algebra, and they are the elements the product fails to keep.
 
-**Definition.** For a **real unit vector** $\hat u=n_1e_1+n_2e_2+n_3e_3$, $n_1^2+n_2^2+n_3^2=1$, the **Hermitian idempotent** is
+**Definition.** For a **real unit vector** $\hat u=u_1e_1+u_2e_2+u_3e_3$, $u_1^2+u_2^2+u_3^2=1$, the **Hermitian idempotent** is
 
 $$
 \tilde\Pi_+(\tilde\Xi)=\tfrac12\bigl(e_0+\tilde\Xi\bigr) .
@@ -280,13 +280,13 @@ In the general quaternionic bilinear product the square of every element is the 
 - John H. Conway and Derek A. Smith, *On Quaternions and Octonions* (A K Peters, 2003), for the quadratic form $\sum_\mu Q_\mu^2$ of the complex quaternion algebra and its level sets.
 - Kevin McCrimmon, *A Taste of Jordan Algebras* (Springer, 2004), for the idempotent equation and the Peirce decomposition in the absence of associativity.
 - Max-Albert Knus, Alexander Merkurjev, Markus Rost and Jean-Pierre Tignol, *The Book of Involutions* (American Mathematical Society, 1998), for the conjugations of an algebra and the elements they fix.
-- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), §*Powers, the Square and the Roots* and §*The Idempotent, the Projection and the Peirce Decomposition*, for the general definitions of the root of a central value and of an idempotent.
-- *Introduction to the General Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-general-quaternionic-algebra-of-biquaternions.md`), for the product, the square and the left unit.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md`), §*Powers, the Square and the Roots* and §*The Idempotent, the Projection and the Peirce Decomposition*, for the general definitions of the root of a central value and of an idempotent.
+- *Introduction to the General Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-general-quaternionic-algebra.md`), for the product, the square and the left unit.
 - *Norm and Invertibility in the General Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.md`), for the algebraic norm and its table on the remarkable subspaces.
-- *Square Roots of One and the Idempotents of the General Plain Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra.md`), for the Hermitian idempotents, the halving map from the roots of $+1$, the plain classification and the plain roots of $+1$ and $-1$.
+- *Square Roots of One and the Idempotents of the General Plain Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.md`), for the Hermitian idempotents, the halving map from the roots of $+1$, the plain classification and the plain roots of $+1$ and $-1$.
 - *Square Roots of a General Element in the General Quaternionic Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-general-quaternionic-algebra.md`), for the root problem of an arbitrary radicand and the scaling of the root set.
 - *Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-quaternionic-algebra.md`), for the roots of $0$, the quadratic cone and the displacement of the plain idempotents into the nilpotents.
-- *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/square-roots-of-a-general-element-in-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the four root problems side by side and the criterion by which a root of a non-zero value is a unit.
+- *Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/square-roots-of-a-general-element-in-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the four root problems side by side and the criterion by which a root of a non-zero value is a unit.
 - *Zero Divisors of the General Quaternionic Algebra* (`articles_maths/zero-divisors-of-the-general-quaternionic-algebra.md`), for the criterion, the two families and the non-pure zero divisors.
 - *The Left Multiplications of the Quaternionic Product and the Opposite Monoid* (`articles_maths/the-left-multiplications-of-the-quaternionic-product-and-the-opposite-monoid.md`), for the monoid law and the projectors.
 - *The Specificities of the General Quaternionic Algebra* (`articles_maths/the-specificities-of-the-general-quaternionic-algebra.md`), for the projectors, the left ideals and the decomposition.

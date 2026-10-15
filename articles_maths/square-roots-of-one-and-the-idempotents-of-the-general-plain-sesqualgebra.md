@@ -164,7 +164,7 @@ $$
 \tilde\Pi_+(\tilde\Xi)=\tfrac12\bigl(e_0+\tilde\Xi\bigr) , \qquad \tilde\Xi=i\hat u , \qquad \hat u\in\mathbb{R}^{3},\ (\hat u,\hat u)=1 ,
 $$
 
-where $\hat u=\sum_{k=1}^{3}n_ke_k$ ranges over the real vectors of the vector subspace with $(\hat u,\hat u)=\sum_kn_k^{2}=1$. There are no others.
+where $\hat u=\sum_{k=1}^{3}u_ke_k$ ranges over the real vectors of the vector subspace with $(\hat u,\hat u)=\sum_ku_k^{2}=1$. There are no others.
 
 *Proof.* By the reduction the idempotents of the block are the Hermitian elements with $\tilde\Pi^{2}=\tilde\Pi$. A Hermitian element is $\tilde\Pi=\alpha e_0+i\vec w$ with $\alpha\in\mathbb{R}$ and $\vec w$ a real vector, and its square in the algebra is
 
@@ -178,21 +178,21 @@ since $\vec w^{2}=-\lvert\vec w\rvert^{2}e_0$ and $(i\vec w)^{2}=i^{2}\vec w^{2}
 
 ### The Coordinates
 
-**Proposition (the coordinate form).** For a real vector $\hat u$ with $(\hat u,\hat u)=1$ and coordinates $n_k\in\mathbb{R}$,
+**Proposition (the coordinate form).** For a real vector $\hat u$ with $(\hat u,\hat u)=1$ and coordinates $u_k\in\mathbb{R}$,
 
 $$
-\tilde\Pi_+(\tilde\Xi)=\tfrac12e_0+\tfrac{i}{2}\sum_{k=1}^{3}n_ke_k ,
+\tilde\Pi_+(\tilde\Xi)=\tfrac12e_0+\tfrac{i}{2}\sum_{k=1}^{3}u_ke_k ,
 $$
 
-so its scalar part is $\tfrac12$, its vector part is $\tfrac{i}{2}\hat u$, and its four coordinates are $\bigl(\tfrac12,\tfrac{i}{2}n_1,\tfrac{i}{2}n_2,\tfrac{i}{2}n_3\bigr)$. Its scalar part is the sum of the modulus squares of its coordinates,
+so its scalar part is $\tfrac12$, its vector part is $\tfrac{i}{2}\hat u$, and its four coordinates are $\bigl(\tfrac12,\tfrac{i}{2}u_1,\tfrac{i}{2}u_2,\tfrac{i}{2}u_3\bigr)$. Its scalar part is the sum of the modulus squares of its coordinates,
 
 $$
-\tfrac12=\tfrac14+\tfrac14\sum_kn_k^{2},
+\tfrac12=\tfrac14+\tfrac14\sum_ku_k^{2},
 $$
 
 which is the scalar-part identity of the reduction read on this family.
 
-*Proof.* The coordinates are read from the display, and $\sum_kn_k^{2}=1$ gives the scalar-part identity $\Pi_0=\sum_\mu\lvert\Pi_\mu\rvert^{2}$.
+*Proof.* The coordinates are read from the display, and $\sum_ku_k^{2}=1$ gives the scalar-part identity $\Pi_0=\sum_\mu\lvert\Pi_\mu\rvert^{2}$.
 
 **Remark.** The scalar part $\tfrac12$ is forced by the normalisation $(\hat u,\hat u)=1$ and is the same for the whole family; the family is the whole set of the projections and not a proper subfamily of it.
 
@@ -393,7 +393,7 @@ $$
 
 and the family is the set of the rank-one Hermitian idempotents of $M_2(\mathbb{C})$.
 
-*Proof.* The image of a Hermitian idempotent is Hermitian, $\mathsf{M}_2(\tilde\Pi)^{\dagger}=\mathsf{M}_2(\tilde\Pi^{*})=\mathsf{M}_2(\tilde\Pi)$, and idempotent, $\mathsf{M}_2(\tilde\Pi)^{2}=\mathsf{M}_2(\tilde\Pi^{2})=\mathsf{M}_2(\tilde\Pi)$. The image of $\tilde\Pi_+(\tilde\Xi)$ is computed from $\mathsf{M}_2(\tilde Q)=\sum_\mu Q_\mu\mathsf{M}_2(e_\mu)$ on the coordinates of §*The Coordinates*, and $\mathsf{M}_2(\tilde\Xi)=i\mathsf{M}_2(\hat u)$ because $\mathsf{M}_2$ is $\mathbb{C}$-linear. The matrices $i\mathsf{M}_2(e_1),i\mathsf{M}_2(e_2),i\mathsf{M}_2(e_3)$ are Hermitian, traceless and $i\mathsf{M}_2(e_k)^{2}=I$, and they form a real basis of the traceless Hermitian matrices; hence $i\mathsf{M}_2(\hat u)=\sum_kn_k\,i\mathsf{M}_2(e_k)$ is traceless Hermitian with square $(\hat u,\hat u)I$, and for $(\hat u,\hat u)=1$ the element $\tfrac12(I+i\mathsf{M}_2(\hat u))$ is a Hermitian idempotent of rank one because its trace is one. Conversely every rank-one Hermitian idempotent of $M_2(\mathbb{C})$ is $\tfrac12(I+H)$ with $H$ traceless Hermitian and $H^{2}=I$, and every such $H$ is $i\mathsf{M}_2(\hat u)$ for a real vector $\hat u$ with $(\hat u,\hat u)=1$.
+*Proof.* The image of a Hermitian idempotent is Hermitian, $\mathsf{M}_2(\tilde\Pi)^{\dagger}=\mathsf{M}_2(\tilde\Pi^{*})=\mathsf{M}_2(\tilde\Pi)$, and idempotent, $\mathsf{M}_2(\tilde\Pi)^{2}=\mathsf{M}_2(\tilde\Pi^{2})=\mathsf{M}_2(\tilde\Pi)$. The image of $\tilde\Pi_+(\tilde\Xi)$ is computed from $\mathsf{M}_2(\tilde Q)=\sum_\mu Q_\mu\mathsf{M}_2(e_\mu)$ on the coordinates of §*The Coordinates*, and $\mathsf{M}_2(\tilde\Xi)=i\mathsf{M}_2(\hat u)$ because $\mathsf{M}_2$ is $\mathbb{C}$-linear. The matrices $i\mathsf{M}_2(e_1),i\mathsf{M}_2(e_2),i\mathsf{M}_2(e_3)$ are Hermitian, traceless and $i\mathsf{M}_2(e_k)^{2}=I$, and they form a real basis of the traceless Hermitian matrices; hence $i\mathsf{M}_2(\hat u)=\sum_ku_k\,i\mathsf{M}_2(e_k)$ is traceless Hermitian with square $(\hat u,\hat u)I$, and for $(\hat u,\hat u)=1$ the element $\tfrac12(I+i\mathsf{M}_2(\hat u))$ is a Hermitian idempotent of rank one because its trace is one. Conversely every rank-one Hermitian idempotent of $M_2(\mathbb{C})$ is $\tfrac12(I+H)$ with $H$ traceless Hermitian and $H^{2}=I$, and every such $H$ is $i\mathsf{M}_2(\hat u)$ for a real vector $\hat u$ with $(\hat u,\hat u)=1$.
 
 **Remark.** The matrix image is the standard rank-one projection of a two-dimensional space, and the parametrisation by the real unit vectors $\hat u$ is the parametrisation of those projections by the traceless Hermitian involutions. The standard pair is $\mathsf{M}_2(\tilde\Pi_+)=E_{11}$ and $\mathsf{M}_2(\tilde\Pi_-)=E_{22}$.
 
@@ -438,13 +438,13 @@ The square of an element of the general plain sesqualgebra is the Hermitian elem
 
 ## Further Reading
 
-- *Introduction to the General Plain Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-general-plain-sesqualgebra-of-biquaternions.md`), for the product, its class, its two slot involutions and the positive cone of the square that the reduction uses.
-- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the relative definition of the root, the idempotent, the projection and the Peirce decomposition.
+- *Introduction to the General Plain Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-general-plain-sesqualgebra.md`), for the product, its class, its two slot involutions and the positive cone of the square that the reduction uses.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the relative definition of the root, the idempotent, the projection and the Peirce decomposition.
 - *Norm and Invertibility in the General Plain Sesqualgebra* (`articles_maths/norm-and-invertibility-in-the-general-plain-sesqualgebra.md`), for the algebraic norm, the square and the definiteness of its scalar part.
-- *The Squares and the Positive Cone of the Biquaternion Sesqualgebra* (`articles_maths/the-squares-and-the-positive-cone-of-the-biquaternion-sesqualgebra.md`), for the positive cone that the square of the block generates.
+- *The Squares and the Positive Cone of the Biquaternion Sesqualgebra* (`articles_maths/the-squares-and-the-positive-cone-of-the-biquaternioid-sesqualgebra.md`), for the positive cone that the square of the block generates.
 - *Square Roots of a General Element in the General Plain Sesqualgebra* (`articles_maths/square-roots-of-a-general-element-in-the-general-plain-sesqualgebra.md`), for the general reduction of the root equation of which the roots of $+1$ are one central case.
 - *Square Roots of Zero and the Nilpotents of the General Plain Sesqualgebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-plain-sesqualgebra.md`), for the roots of $0$, which the same square excludes, and the nilpotents of index three.
-- *Square Roots of One and the Idempotents of the General Plain Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra.md`), for the parent's roots of $+1$ and the halving map, whose Hermitian half is the set computed here.
+- *Square Roots of One and the Idempotents of the General Plain Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.md`), for the parent's roots of $+1$ and the halving map, whose Hermitian half is the set computed here.
 - *Idempotents of the General Plain Algebra* (`articles_maths/idempotents-of-the-general-plain-algebra-of-quaternions.md`), for the idempotents of the associative product, whose Hermitian half the block keeps.
 - *Zero Divisors of the General Plain Sesqualgebra* (`articles_maths/zero-divisors-of-the-general-plain-sesqualgebra.md`), for the criterion $C=0$ that no root of $+1$ satisfies and among which the projections sit.
 - *The Specificities of the General Plain Sesqualgebra* (`articles_maths/the-specificities-of-the-general-plain-sesqualgebra.md`), for the right-composition law and the projector criterion whose projector family is the whole plain idempotent set.

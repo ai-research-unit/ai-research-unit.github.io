@@ -173,8 +173,8 @@ The space carries four involutions, ${}^{\natural}$, $\bar{\cdot}$, ${}^{*}$ and
 
 ## Further Reading
 
-- *Biquaternions as a Vector Space over $\mathbb{C}$* (`articles_maths/biquaternions-as-a-vector-space-over-c.md`), for the elements, the basis, the three coordinate systems and the four conjugation formulas.
-- *Biquaternions as a Vector Space over $\mathbb{R}$* (`articles_maths/biquaternions-as-a-vector-space-over-r.md`), for the realification and the complex structure $J$.
+- *Biquaternions as a Vector Space over $\mathbb{C}$* (`articles_maths/the-biquaternioid-vector-space-over-c.md`), for the elements, the basis, the three coordinate systems and the four conjugation formulas.
+- *Biquaternions as a Vector Space over $\mathbb{R}$* (`articles_maths/the-biquaternioid-vector-space-over-r.md`), for the realification and the complex structure $J$.
 - *The Group of Involutions* (`articles_maths/the-group-of-involutions.md`), for the Klein four-group, its Cayley table and the place of the reversal outside it.
 - *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`) and *Comparison of the Remarkable Subspaces* (`articles_maths/comparison-of-the-remarkable-subspaces.md`), for the six subspaces, their blocks and their lattice.
 - *The Biquaternion Mathematics Corpus* (`articles_physics/the-biquaternion-mathematics-corpus.md`), the article this one follows and the index of the mathematics corpus it cites.

@@ -306,9 +306,9 @@ The left multiplication of the block is the conjugate-linear operator $L^{\diamo
 
 ## Further Reading
 
-- *Introduction to the Antisymmetric Plain Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-plain-sesqualgebra-of-biquaternions.md`), for the operation, the conjugate-alternation and the coefficientwise automorphism
-- *The Left and Right Multiplications of the Biquaternion Sesqualgebra* (`articles_maths/the-left-and-right-multiplications-of-the-biquaternion-sesqualgebra.md`), for the one-sided multiplications of the row and the obstruction to a single linear representation
-- *The Sesquilinear Sandwich on the Biquaternions* (`articles_maths/the-sesquilinear-sandwich-on-the-biquaternions.md`) and *The Adjoint of the Sesquilinear Sandwich on the Biquaternions* (`articles_maths/the-adjoint-of-the-sesquilinear-sandwich-on-the-biquaternions.md`), for the sandwich, the twisted adjoint rule and the adjoints of the one-sided operators
+- *Introduction to the Antisymmetric Plain Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-plain-sesqualgebra.md`), for the operation, the conjugate-alternation and the coefficientwise automorphism
+- *The Left and Right Multiplications of the Biquaternion Sesqualgebra* (`articles_maths/the-left-and-right-multiplications-of-the-biquaternioid-sesqualgebra.md`), for the one-sided multiplications of the row and the obstruction to a single linear representation
+- *The Sesquilinear Sandwich on the Biquaternions* (`articles_maths/the-sesquilinear-sandwich-on-the-biquaternioid.md`) and *The Adjoint of the Sesquilinear Sandwich on the Biquaternions* (`articles_maths/the-adjoint-of-the-sesquilinear-sandwich-on-the-biquaternioid.md`), for the sandwich, the twisted adjoint rule and the adjoints of the one-sided operators
 - *The Sesquilinear Pairing of the Antisymmetric Plain Sesqualgebra* (`articles_maths/the-sesquilinear-pairing-of-the-antisymmetric-plain-sesqualgebra.md`), for the form, the Gram data and the sandwich relation of the block
 - *Derivations of a Sesqualgebra* (`articles_maths/derivations-of-a-sesqualgebra.md`), for the derivation algebra, the group of the automorphisms and its Lie algebra
 - *Norm and Invertibility in the General Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.md`), for the units, the zero divisors and the form $H$

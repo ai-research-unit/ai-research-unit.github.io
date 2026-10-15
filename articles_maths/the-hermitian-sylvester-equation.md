@@ -138,8 +138,8 @@ The Sylvester equation $\tilde A\tilde P+\tilde P\tilde B=c$ on the biquaternion
 
 - *The Hermitian Sylvester Equation with Hermitian Adjoint* (`articles_maths/the-hermitian-sylvester-equation-with-hermitian-adjoint.md`), the general theory of which this is the biquaternion instance.
 - *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/the-spectra-of-the-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the spectral rules used throughout.
-- *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions* (`articles_maths/one-sided-operators-on-the-general-plain-sesqualgebra-of-biquaternions.md`), for the adjoints $(L_{\tilde A})^{*}=L_{\tilde{A}^{*}}$ and the composition laws.
-- *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions* (`articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra-of-biquaternions.md`), for the sandwich, its invariants and the congruence.
+- *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions* (`articles_maths/one-sided-operators-on-the-general-plain-sesqualgebra.md`), for the adjoints $(L_{\tilde A})^{*}=L_{\tilde{A}^{*}}$ and the composition laws.
+- *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions* (`articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.md`), for the sandwich, its invariants and the congruence.
 - *Biquaternion Automorphisms and Derivations* (`articles_maths/biquaternion-automorphisms-and-derivations.md`), for the derivations, the roots and the exponential.
 - *Self-Adjoint and Skew Operators with Hermitian Adjoint* (`articles_maths/self-adjoint-and-skew-operators-with-hermitian-adjoint.md`), for the general theory of the adjoint on an operator algebra.
-- *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the commutator, the roots and the Lie structure of the algebra.
+- *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternioid-complex-space.md`), for the commutator, the roots and the Lie structure of the algebra.

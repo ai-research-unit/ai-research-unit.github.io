@@ -142,7 +142,7 @@ The square map $u\mapsto u^{2}$ is a surjective homomorphism of the circle with 
 
 ## Further Reading
 
-- *The Two Forms and the Two Algebraic Norms of the Complex Space* (`articles_maths/the-two-forms-and-the-two-algebraic-norms-of-the-complex-space.md`), for the definite form and the plain form whose shells are compared here.
+- *The Two Forms and the Two Algebraic Norms of the Complex Space* (`articles_maths/the-two-forms-and-the-two-algebraic-norms-of-the-complexoid-space.md`), for the definite form and the plain form whose shells are compared here.
 - *Complex Norm and Invertibility* (`articles_maths/complex-norm-and-invertibility.md`), for the norm, its multiplicativity, the group of units and the polar split.
 - *Rotations and Reflections in the Complex Plane* (`articles_maths/rotations-and-reflections-in-the-complex-plane.md`), for the identification $U(1)\cong \mathrm{SO}(2)$, the reflections and the group $O(2)$.
 - *Complex Exponential and Lie Group Structure* (`articles_maths/complex-exponential-and-lie-group-structure.md`), for the exponential, the one-parameter subgroups and the group of units.

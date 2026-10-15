@@ -218,12 +218,12 @@ The change of scalars from $\mathbb{C}$ to $\mathbb{R}$ is the realification: th
 
 ## Further Reading
 
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the four forms, their count, their Gram matrices and their symmetry.
-- *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.md`), for the four algebraic norms, the multiplicativity of $N$ and the definiteness of $H$.
+- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the four forms, their count, their Gram matrices and their symmetry.
+- *The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-algebraic-norms-over-the-biquaternioid-c-space.md`), for the four algebraic norms, the multiplicativity of $N$ and the definiteness of $H$.
 - *Remarkable Subspaces and the Four Forms* (`articles_maths/remarkable-subspaces-and-the-four-forms.md`) and *Remarkable Subspaces and the Four Algebraic Norms* (`articles_maths/remarkable-subspaces-and-the-four-algebraic-norms.md`), for the restriction table and the coincidences of the four forms on the six subspaces.
 - *Remarkable Subspaces and the Four General Products* (`articles_maths/remarkable-subspaces-and-the-four-general-products.md`), for the closure of the products on the subspaces.
 - *The Realification and the Effect of the Change of Scalars* (`articles_maths/the-realification-and-the-effect-of-the-change-of-scalars.md`), for the construction, the two rules and the dictionary of the complex and the real statements.
-- *The Realification and the Effect of the Change of Scalars on the Complex Numbers* (`articles_maths/the-realification-and-the-effect-of-the-change-of-scalars-on-the-complex-numbers.md`), for the two-dimensional prototype.
+- *The Realification and the Effect of the Change of Scalars on the Complex Numbers* (`articles_maths/the-realification-and-the-effect-of-the-change-of-scalars-on-the-complexoid.md`), for the two-dimensional prototype.
 - *Conventions in the Biquaternion Universe* (`articles_physics/conventions-in-the-biquaternion-universe.md`), for the conventions of the algebra and the remarkable subspaces.
 - J. D. Bjorken and S. D. Drell, *Relativistic Quantum Mechanics* (McGraw-Hill, 1964), for the standard particle-physics metric and gamma-matrix conventions.
 - Steven Weinberg, *The Quantum Theory of Fields, Vol. I: Foundations* (Cambridge, 1995), for the metric and normalisation conventions of quantum field theory, and the consequences of changing them.

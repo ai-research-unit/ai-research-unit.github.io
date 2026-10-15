@@ -130,8 +130,8 @@ In the four-dimensional regular model the bracket is the halved commutator of th
 ## Further Reading
 
 - *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions* (`articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.md`), for the construction of the model
-- *The General Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$* (`articles_maths/the-general-plain-algebra-in-the-4x4-matrix-element-representation.md`), for the plain product in the model
-- *One-Sided Operators on the General Plain Algebra of Biquaternions* (`articles_maths/one-sided-operators-on-the-general-plain-algebra-of-biquaternions.md`) and *Two-Sided Operators on the General Plain Algebra of Biquaternions* (`articles_maths/two-sided-operators-on-the-general-plain-algebra-of-biquaternions.md`), for the left and right multiplication operators
+- *The General Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$* (`articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.md`), for the plain product in the model
+- *One-Sided Operators on the General Plain Algebra of Biquaternions* (`articles_maths/one-sided-operators-on-the-biquaternion-algebra.md`) and *Two-Sided Operators on the General Plain Algebra of Biquaternions* (`articles_maths/two-sided-operators-on-the-biquaternion-algebra.md`), for the left and right multiplication operators
 - *The Antisymmetric Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* (`articles_maths/the-antisymmetric-plain-algebra-in-the-2x2-matrix-element-representation.md`), for the reading on the two-dimensional model
-- *Introduction to the Antisymmetric Plain Algebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-plain-algebra-of-biquaternions.md`), for the bracket and the cross-product formula
+- *Introduction to the Antisymmetric Plain Algebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-plain-algebra.md`), for the bracket and the cross-product formula
 - *The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra* (`articles_maths/the-adjoint-operators-and-the-derivations-of-the-antisymmetric-plain-algebra.md`), for the adjoints, their matrices in the real basis and the derivations

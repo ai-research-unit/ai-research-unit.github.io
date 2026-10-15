@@ -13,7 +13,7 @@ statement. It owns no new theorem: it collects the four readings, marks which of
 states on which elements they agree, and states exactly where they part company.
 
 The owners are, in order, *The Four Forms, the Four Algebraic Norms and the Change of Scalars* for the norm and its reversal by the central
-imaginary, *Mass, Rank and the Positivity of the Dagger* for the rank and the positive cone, *Particle
+imaginary, *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$* for the rank and the positive cone, *Particle
 Types, Discrete Charge and Three-Particle Couplings* for the compact slice and the discrete charge, and
 *The Polar Element Representation of Biquaternions* for the polar scale, with the dilation interpretation in
 *Conformal Invariance and the Massless Limit in Biquaternionic Form*. The four forms and the sesquilinear
@@ -71,7 +71,7 @@ non-null elements each way, and every constructed nonzero null element has rank 
 Off the cone the agreement stops, and it stops in a stated way. A rank-two element may have $N>0$ or $N<0$;
 on the material sector those are the spacelike and the timelike regions, so **rank two does not say which
 sign**, and the mass label "massive" covers both the timelike and the spacelike elements. The corpus's own
-caution is *Mass, Rank and the Positivity of the Dagger*, §*No Ghosts, No Tachyons*: no element of the
+caution is *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*, §*No Ghosts, No Tachyons*: no element of the
 algebra has a negative sesquilinear norm, and the spacelike elements lie outside the state cone rather than
 inside it, so the rank-two spacelike elements are massive in the rank sense and are not states in the
 probability sense.
@@ -168,9 +168,9 @@ left out, and the Dirac and Majorana pair is placed at the equation level, outsi
 
 - *The Four Forms, the Four Algebraic Norms and the Change of Scalars*, for the norm, its multiplicativity and its reversal by the central
 imaginary.
-- *Mass, Rank and the Positivity of the Dagger*, for the rank criterion, the positive cone and the
+- *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*, for the rank criterion, the positive cone and the
 no-ghost and no-tachyon statements.
-- *Particle Types, Discrete Charge and Three-Particle Couplings*, for the compact slice and the discrete
+- *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*, for the compact slice and the discrete
 charge, and for the continuous rapidity of the non-compact directions.
 - *The Polar Element Representation of Biquaternions* and *Conformal Invariance and the Massless Limit in
 Biquaternionic Form*, for the polar scale and its dilation reading.

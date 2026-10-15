@@ -148,10 +148,10 @@ finite group $G$ the translation $\tau_g$ has the characters as a basis of eigen
 the $\lvert G\rvert$-th roots of unity; on $\ell^2(\mathbb Z)$ the shift $S=\tau_1$ has spectrum $\mathbb T$
 and no eigenvalues.
 
-**Proof.** The Fourier operator conjugates $\tau_y$ into multiplication by $e_y(\xi)=e^{-2\pi iy\cdot\xi}$
+**Proof.** The Fourier operator conjugates $\tau_y$ into multiplication by $\chi_y(\xi)=e^{-2\pi iy\cdot\xi}$
 by *The Fourier Operator* of this group; the spectrum of a multiplication operator $M_m$ on $L^2$ is the
 essential range of $m$, and for $y\neq0$ the function $\xi\mapsto e^{-2\pi iy\cdot\xi}$ sweeps the circle,
-so the essential range is $\mathbb T$. An eigenvalue would require $e_y$ to be constant on a set of positive
+so the essential range is $\mathbb T$. An eigenvalue would require $\chi_y$ to be constant on a set of positive
 measure, which it is not. On a finite group the characters form an orthonormal basis and the eigenvalues are
 $\overline{\chi(g)}$, roots of unity; on $\ell^2(\mathbb Z)$ the shift equation $Sf=\lambda f$ gives
 $f_n=\lambda^{-n}f_0$, which is square-summable only if $f=0$, whatever $\lambda$.

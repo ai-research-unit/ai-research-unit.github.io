@@ -10,7 +10,7 @@ $$
 
 and the isomorphism is written $\mathsf{M}_2 : \mathbb{B} \to M_2(\mathbb{C})$ throughout. A biquaternion and a $2 \times 2$ complex matrix are the same object written twice, and this is the form in which every statement about the algebra becomes an arithmetic check: the trace reads off the scalar part, the determinant **is** the biquaternion norm, invertibility becomes non-vanishing determinant, the Hermitian subspace becomes the Hermitian matrices, and the minimal left ideals become the matrix columns.
 
-The article supplies the $2 \times 2$ matrices that carry a single chirality, that is, the simple module $S = \mathbb{C}^2$ on which the algebra acts irreducibly. Its coefficient space is that of *The Four-Vector Element Representation of Biquaternions*, the left multiplication written on that space is that of *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*, and that representation is the direct sum $S \oplus S$ of two copies of the simple module treated here. The article states the assignment, checks that the four basis matrices multiply as the four units do, notes why the signs cannot be chosen differently, and reads off the invariants, the remarkable subspaces, the two ideals as columns, the conjugations, and the spin and qubit structures.
+The article supplies the $2 \times 2$ matrices that carry a single chirality, that is, the simple module $S = \mathbb{C}^2$ on which the algebra acts irreducibly. Its coefficient space is that of *The Four-Vector Element Representation of Biquaternions*, the left multiplication written on that space is that of *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*, and that representation is the direct sum $S \oplus S$ of two copies of the simple module treated here. The article states the assignment, checks that the four basis matrices multiply as the four units do, notes why the signs cannot be chosen differently, and reads off the invariants, the remarkable subspaces, the two ideals as columns, the conjugations, and the spin and qubit structures. Two further sections read the product and the form in the model: §*The General Plain Bilinear Form in the Model*, for the trace pairing, its Gram matrix, its isotropic cone and its automorphism group, and §*The Four Words and the Four Traces*, for the four products as four words in the matrix and its two involutions and for the four forms as four traces.
 
 The assignment is fixed here. It is not free: it is used identically by the spin, qubit, Bell-state, Dirac and Fock-space articles, and the two conventions a reader is likely to meet elsewhere do not agree with it.
 
@@ -40,7 +40,7 @@ $$
 = \begin{pmatrix} Q_0 - i Q_3 & -i Q_1 - Q_2 \\ -i Q_1 + Q_2 & Q_0 + i Q_3 \end{pmatrix}.
 $$
 
-**Remark (the choice, stated).** The assignment above is the corpus's choice, held fixed so that the realization agrees with *The Realification of the General Plain Algebra*. It is convenient because the three images of $e_1,e_2,e_3$ are $-i$ times the Pauli matrices, mentioned once as a shorthand and nothing more: every proposition is a statement about $\mathbb{B}$ and about $M_2(\mathbb{C})$. The choice is not canonical; a different isomorphism differs from this one by conjugation by an invertible matrix, and the invariants below are unchanged.
+**Remark (the choice, stated).** The assignment above is the corpus's choice, held fixed so that the realization agrees with *The Realification and the Effect of the Change of Scalars*. It is convenient because the three images of $e_1,e_2,e_3$ are $-i$ times the Pauli matrices, mentioned once as a shorthand and nothing more: every proposition is a statement about $\mathbb{B}$ and about $M_2(\mathbb{C})$. The choice is not canonical; a different isomorphism differs from this one by conjugation by an invertible matrix, and the invariants below are unchanged.
 
 **Remark.** The four coefficients and the four matrix entries carry the same data, but the passage between them is not a rearrangement: each entry is a fixed linear combination of two coefficients, with coefficients among $1,-1,i,-i$; the entry $\mathsf{M}_2(\tilde Q)_{12}=-iQ_1-Q_2$ involves two components at once.
 
@@ -180,6 +180,30 @@ $$
 one has $(uv^{T})_{ij}=M_{iq}M_{pj}/M_{pq}=M_{ij}$, so $M=uv^{T}$, and $u\neq0$ because its $p$-th entry is $M_{pq}\neq0$. A different pivot gives a pair differing by precisely the rescaling: the $j$-th columns of $uv^{T}=u'(v')^{T}$ give $u'=\lambda u$ for $\lambda=v_{j}/v'_{j}\neq0$, and the remaining entries give $v'=\lambda^{-1}v$.
 
 **Worked example.** For $\tilde{Q}=e_2+ie_3$ the image is $\mathsf{M}_2(\tilde{Q})=\begin{pmatrix}1&-1\\1&-1\end{pmatrix}$, of rank one; the pivot $M_{11}=1$ gives $u=(1,1)^{T}$, $v=(1,-1)^{T}$, and the pivot $M_{12}=-1$ gives $u=(-1,-1)^{T}$, $v=(-1,1)^{T}$, the same pair rescaled by $\lambda=-1$.
+
+## The General Plain Bilinear Form in the Model
+
+The trace identity of §*Trace, Determinant and the Biquaternion Norm* is a pairing of the algebra, and this is its name.
+
+**Theorem (the trace pairing).** For all biquaternions,
+
+$$
+B(\tilde P,\tilde Q)=\mathrm{Sc}\bigl(\tilde P\tilde Q\bigr)=\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q)\bigr),
+$$
+
+so the matrix trace is the carrier of the scalar part, and on the diagonal
+
+$$
+B(\tilde Q,\tilde Q)=\tfrac12\operatorname{Tr}\bigl(\mathsf{M}_2(\tilde Q)^2\bigr)=\sum_\mu\varepsilon_\mu Q_\mu^2,\qquad \varepsilon_0=+1,\ \varepsilon_1=\varepsilon_2=\varepsilon_3=-1 .
+$$
+
+*Proof.* The first equality is the definition of the general plain bilinear form; the second is the trace identity of §*Trace, Determinant and the Biquaternion Norm* applied to the product $\tilde P\tilde Q$; the diagonal is that identity read on the basis, where $\mathrm{Sc}(e_\mu e_\nu)=\varepsilon_\mu\delta_{\mu\nu}$ and $\operatorname{Tr}(\mathsf{M}_2(e_\mu)\mathsf{M}_2(e_\nu))=2\varepsilon_\mu\delta_{\mu\nu}$.
+
+**The Gram matrix, the congruence and the signature.** In the coefficient basis the Gram matrix of $B$ is the sign matrix $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$, and a change of basis of matrix $S$ replaces it by $S^{\mathsf T}\mathrm{E}S$; over $\mathbb{C}$ the form is determined up to congruence by its rank alone, every non-degenerate complex quadratic form of rank $4$ being equivalent to this one. The plain product is what puts the sign matrix $\mathrm{E}$, and not $\mathrm{I}_4$, in the coefficient basis. Over $\mathbb{R}$ the form has signature $(4,4)$ on the eight real coordinates, and it is indefinite.
+
+**The null set.** The pairing vanishes on the isotropic cone $\sum_\mu\varepsilon_\mu Q_\mu^2=0$, a complex cone of real dimension $6$ in $\mathbb{R}^8$, with two families of isotropic planes. It is the null set of neither the determinant nor the general quaternionic bilinear form; the quadric, its isotropic planes, the hyperbolic splitting and the index are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*.
+
+**The automorphisms.** A matrix preserves the trace pairing exactly when $T^{\mathsf T}\mathrm{E}T=\mathrm{E}$, so on the coefficients the automorphism group is $\{T\in GL_4(\mathbb{C}):T^{\mathsf T}\mathrm{E}T=\mathrm{E}\}=O_4(\mathbb{C})$, of complex dimension $6$ and real dimension $12$, its Lie algebra $\{X:X^{\mathsf T}\mathrm{E}+\mathrm{E}X=0\}$ being of real dimension $12$. The real structures exhibit the real forms: the Hermitian conjugation is an antilinear form reversal whose fixed space is the Hermitian subspace, of restriction signature $(4,0)$, so the automorphisms commuting with it form the real orthogonal group $O(4)$; the coefficient conjugation has fixed space the quaternion subspace, of signature $(1,3)$, exhibited by $O(1,3)$. The group of real-linear automorphisms of the realified form is the larger $O(4,4)$, which is not the group the form defines over $\mathbb{C}$. On the matrices the conjugation $M\mapsto UMU^{-1}$ by a unit and the transposition $M\mapsto M^{\mathsf T}$ are automorphisms, since $\operatorname{Tr}(UMU^{-1}\cdot UNU^{-1})=\operatorname{Tr}(MN)$ and $\operatorname{Tr}(M^{\mathsf T}N^{\mathsf T})=\operatorname{Tr}(MN)$; the inner automorphisms and the transposition together form a proper subgroup of the full group $O_4(\mathbb{C})$.
 
 ## Remarkable Subspaces
 
@@ -439,6 +463,30 @@ $$
 
 verified on explicit matrices, and the adjugate form of quaternion conjugation is the same dressing applied to the transpose. In this representation the safe rule is: use $\bar{\phantom{Q}}$, $\bar{\cdot}$, ${}^{*}$ and $\flat$ through the four formulas above, and never conjugate the matrix entries on their own.
 
+## The Four Words and the Four Traces
+
+The twelve operations of the two chapters are built from four products, and each product is a word in the two matrices $X=\mathsf{M}_2(\tilde P)$ and $Y=\mathsf{M}_2(\tilde Q)$ and in the two involutions of the model, the adjugate and the conjugate transpose.
+
+| product | first slot | second slot | the word |
+|---|---|---|---|
+| general plain | $X$ | $Y$ | $XY$ |
+| general quaternionic | $\operatorname{adj}X$ | $Y$ | $\operatorname{adj}X\,Y$ |
+| general plain sesquilinear | $X$ | $Y^{\dagger}$ | $XY^{\dagger}$ |
+| general quaternionic sesquilinear | $\operatorname{adj}X$ | $Y^{\dagger}$ | $\operatorname{adj}X\,Y^{\dagger}$ |
+
+The symmetric part of a product is the half-sum of its word and of the word with the two slots exchanged, and the antisymmetric part is the half-difference; those two halves are the subjects of the remaining representation articles of the block.
+
+**The four forms are four traces.** The four products are four matrix traces, and the four forms of the algebra are read from them:
+
+$$
+\tfrac12\operatorname{Tr}(XY)=B(\tilde P,\tilde Q),\qquad
+\tfrac12\operatorname{Tr}(\operatorname{adj}X\,Y)=N(\tilde P,\tilde Q),\qquad
+\tfrac12\operatorname{Tr}(XY^{\dagger})=H(\tilde P,\tilde Q),\qquad
+\tfrac12\operatorname{Tr}(\operatorname{adj}X\,Y^{\dagger})=K(\tilde P,\tilde Q),
+$$
+
+the general plain bilinear, the general quaternionic bilinear, the general plain sesquilinear and the general quaternionic sesquilinear form, in the two slots the table of the words prescribes. The adjugate is quaternion conjugation and the dagger is Hermitian conjugation, so in the two slots the four words are the two conjugations switched on and off, and the four forms are one trace read four times.
+
 ## Spin, Qubits and the Bloch Vector
 
 The matrix representation is what connects the algebra to the physics of two-state systems, and the connection runs through the single identity $ie_k \mapsto \mathsf{M}_2(ie_k)$. The images are the Hermitian basis matrices that the remark of *The Representation* names the Pauli matrices, and the whole section is written in those images.
@@ -491,7 +539,7 @@ $$
 This is the matrix form of the statement that the unit-norm elements act on $\mathbb{M}_-$ by rotor conjugation and generate the Lorentz group. Concretely, the rotation rotors are the unit-norm elements of $\mathbb{H}_{\mathbb{B}}$, which map to the $SU(2)$ matrices
 
 $$
-\tilde{R}(\theta, \hat u) = \exp\!\big(\tfrac{1}{2}\theta \hat u\cdot e\big) \;\longmapsto\; \exp\!\big(\tfrac{1}{2}\theta\,n_k\,\mathsf{M}_2(e_k)\big),
+\tilde{R}(\theta, \hat u) = \exp\!\big(\tfrac{1}{2}\theta \hat u\cdot e\big) \;\longmapsto\; \exp\!\big(\tfrac{1}{2}\theta\,u_k\,\mathsf{M}_2(e_k)\big),
 $$
 
 and the boost rotors are the Hermitian unit-norm elements, which map to the Hermitian $\mathrm{SL}(2,\mathbb{C})$ matrices. The two cases are distinguished in the matrix form by Hermiticity, exactly as they are distinguished in the algebra by the split $\mathbb{M}_+ \oplus \mathbb{M}_-$.
@@ -525,6 +573,7 @@ The matrix representation of the biquaternion algebra is the isomorphism $\maths
 - Quaternion conjugation is the adjugate $\epsilon M^{\mathsf T}\epsilon^{-1}$ and complex conjugation is $\epsilon\overline{M}\epsilon^{-1}$; both are dressed by the antisymmetric form $\epsilon = \mathsf{M}_2(-e_2)$. Hermitian conjugation is the conjugate transpose and $\flat = -{}^{*}$ is its negative, neither of them dressed. Entrywise conjugation of $M$ on its own is not the image of any involution of the algebra.
 - The physics is read off the matrices: $\tilde{S}_k = \tfrac{\hbar}{2}ie_k \mapsto \tfrac{\hbar}{2}\mathsf{M}_2(ie_k)$; the pure states are the rank-one projectors $\tilde\Pi_{1,2}(\hat u)$ and are the null elements $N(\tilde{P}) = 0$; the density matrix $\rho = \tfrac12\big(\mathsf{M}_2(e_0) + r_k\mathsf{M}_2(ie_k)\big)$ has $r_k = \mathrm{Tr}\big(\rho\,\mathsf{M}_2(ie_k)\big)$ on the Bloch ball.
 - Unit norm is unit determinant, so the unit-norm biquaternions are $\mathrm{SL}(2,\mathbb{C})$, with the rotations unitary and the boosts Hermitian.
+- The form and the four products are traces. The trace pairing is $B(\tilde P,\tilde Q)=\langle\tilde P,\tilde Q\rangle=\tfrac12\operatorname{Tr}(\mathsf{M}_2(\tilde P)\mathsf{M}_2(\tilde Q))$, of Gram matrix $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$, of signature $(4,4)$ on the eight real coordinates, isotropic on the cone $\sum_\mu\varepsilon_\mu Q_\mu^2=0$ of real dimension $6$, with automorphism group $O_4(\mathbb{C})$ and the real forms $O(4)$, $O(1,3)$ and $O(4,4)$. The four products are the four words $XY$, $\operatorname{adj}X\,Y$, $XY^{\dagger}$ and $\operatorname{adj}X\,Y^{\dagger}$ in the matrix and its adjugate and dagger, and the four forms are the four half-traces $B$, $N$, $H$ and $K$ in those words.
 
 ## Summary of Notation
 
@@ -564,6 +613,10 @@ The matrix representation of the biquaternion algebra is the isomorphism $\maths
 | $\langle\tilde{P},\tilde{Q}\rangle_{\natural}$ | the general quaternionic bilinear form, $\mathrm{Sc}(\tilde{P}^{\natural}\tilde{Q})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}=N(\tilde{Q})$ |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |
+| $B(\tilde P,\tilde Q)=\tfrac12\operatorname{Tr}(XY)$, Gram $\mathrm{E}=\operatorname{diag}(1,-1,-1,-1)$ | the general plain bilinear form as a half-trace in the model, $X=\mathsf{M}_2(\tilde P)$, $Y=\mathsf{M}_2(\tilde Q)$; signature $(4,4)$ on the eight real coordinates |
+| $\tfrac12\operatorname{Tr}(\operatorname{adj}X\,Y)=N$, $\tfrac12\operatorname{Tr}(XY^{\dagger})=H$, $\tfrac12\operatorname{Tr}(\operatorname{adj}X\,Y^{\dagger})=K$ | the quaternionic bilinear, the plain sesquilinear and the quaternionic sesquilinear form as half-traces, in the words the table prescribes |
+| $\operatorname{adj}X=M^{\natural}$, $Y^{\dagger}=M^{*}$ | the adjugate is quaternion conjugation and the dagger is Hermitian conjugation, the two involutions the four words are built from |
+| $O_4(\mathbb{C})$, $O(4)$, $O(1,3)$, $O(4,4)$ | the automorphism group of the trace pairing over $\mathbb{C}$, of complex dimension $6$, and its real forms cut out by the Hermitian and the coefficient conjugations, with the $O(4,4)$ of the realified form |
 
 ## Further Reading
 

@@ -194,13 +194,13 @@ The two metrics are the two readings of the two forms and satisfy $d_{H}^{2}-d_{
 
 ## Further Reading
 
-- *The Two Forms and the Two Algebraic Norms of the Complex Space* (`articles_maths/the-two-forms-and-the-two-algebraic-norms-of-the-complex-space.md`), for the two forms and the two algebraic norms whose diagonals are their squares.
-- *The Two Products of the Complex Space* (`articles_maths/the-two-products-of-the-complex-space.md`), for the two products $AC$ and $A\bar C$ whose forms are realified here.
-- *The Realification and the Effect of the Change of Scalars* (`articles_maths/the-realification-and-the-effect-of-the-change-of-scalars-on-the-complex-numbers.md`), the complex article of that name, for the realification rules that give the signatures $(1,1)$ and $(2,0)$.
+- *The Two Forms and the Two Algebraic Norms of the Complex Space* (`articles_maths/the-two-forms-and-the-two-algebraic-norms-of-the-complexoid-space.md`), for the two forms and the two algebraic norms whose diagonals are their squares.
+- *The Two Products of the Complex Space* (`articles_maths/the-two-products-of-the-complexoid-space.md`), for the two products $AC$ and $A\bar C$ whose forms are realified here.
+- *The Realification and the Effect of the Change of Scalars* (`articles_maths/the-realification-and-the-effect-of-the-change-of-scalars-on-the-complexoid.md`), the complex article of that name, for the realification rules that give the signatures $(1,1)$ and $(2,0)$.
 - *Complex Algebra* (`articles_maths/complex-algebra.md`), for the algebra, its basis and its one nontrivial involution.
 - *Complex Norm and Invertibility* (`articles_maths/complex-norm-and-invertibility.md`), for the modulus, its multiplicativity, its triangle inequality and the group of units.
 - *Rotations and Reflections in the Complex Plane* (`articles_maths/rotations-and-reflections-in-the-complex-plane.md`), for the identification of the form-preserving multiplications with $\mathrm{SO}(2)$, the reflections and the group $O(2)$.
-- *Complex Subspaces* (`articles_maths/complex-subspaces.md`), for the real and imaginary subspaces on which the split metric is definite of opposite signs.
-- *Remarkable Subspaces of the Complex Numbers and the Two Forms* (`articles_maths/remarkable-subspaces-of-the-complex-numbers-and-the-two-forms.md`), for the restrictions of the two forms to the two subspaces.
+- *Complex Subspaces* (`articles_maths/complexoid-subspaces.md`), for the real and imaginary subspaces on which the split metric is definite of opposite signs.
+- *Remarkable Subspaces of the Complex Numbers and the Two Forms* (`articles_maths/remarkable-subspaces-of-the-complexoid-and-the-two-forms.md`), for the restrictions of the two forms to the two subspaces.
 - Werner Greub, *Linear Algebra*, 4th edition (Springer, 1981), for Gram matrices, inertia and the groups preserving a symmetric or Hermitian form.
 - Pertti Lounesto, *Clifford Algebras and Spinors*, 2nd edition (Cambridge University Press, 2001), for the definite and indefinite forms of the plane and their groups.

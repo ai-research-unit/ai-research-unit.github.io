@@ -146,7 +146,7 @@ $$
 
 and then $g = K_\alpha f$.
 
-The criterion answers the question the Cauchy formula of the previous section leaves open. The formula reconstructs a regular function from boundary values already known to be admissible; the criterion decides which Hölder data are admissible at all, which is what a boundary condition alone supplies. It is the case $B=1$ of the Riemann boundary value problem $f^+ = f^-B+h$ of *Riemann Boundary Value Problems and Singular Integral Equations*: the criterion says that the datum lies in the $+1$ eigenspace of $S_\alpha$, and the general problem replaces the coefficient $1$ by an invertible $B$ and the single condition by the reduction of that article. The parameter itself can therefore be singular, not only the variable: for the pure element $\alpha = -(i\omega e_1+me_2)$ the norm is $N(\alpha) = m^2-\omega^2$, so $\alpha$ is a zero divisor — and, being pure, a nilpotent with $\alpha^2 = 0$ — exactly when $\omega^2 = m^2$. That is the third branch above, $\alpha$ a zero divisor with $\alpha_0 = 0$, and it is the criterion of *Zero Divisors of the General Plain Algebra* applied to the parameter rather than to the variable. The physical reading of the same identity, and the boundary-value problem that uses the criterion, are in the physics register of this article.
+The criterion answers the question the Cauchy formula of the previous section leaves open. The formula reconstructs a regular function from boundary values already known to be admissible; the criterion decides which Hölder data are admissible at all, which is what a boundary condition alone supplies. It is the case $B=1$ of the Riemann boundary value problem $f^+ = f^-B+h$ of *Riemann Boundary Value Problems and Singular Integral Equations*: the criterion says that the datum lies in the $+1$ eigenspace of $S_\alpha$, and the general problem replaces the coefficient $1$ by an invertible $B$ and the single condition by the reduction of that article. The parameter itself can therefore be singular, not only the variable: for the pure element $\alpha = -(i\omega e_1+me_2)$ the norm is $N(\alpha) = m^2-\omega^2$, so $\alpha$ is a zero divisor — and, being pure, a nilpotent with $\alpha^2 = 0$ — exactly when $\omega^2 = m^2$. That is the third branch above, $\alpha$ a zero divisor with $\alpha_0 = 0$, and it is the criterion of *Zero Divisors of the Biquaternion Algebra* applied to the parameter rather than to the variable. The physical reading of the same identity, and the boundary-value problem that uses the criterion, are in the physics register of this article.
 
 ### The Helmholtz Null-Set Splits
 
@@ -187,7 +187,7 @@ $$
 u = \frac{\alpha}{\gamma}, \qquad u^2 = 1, \qquad u^{\natural} = -u .
 $$
 
-Then $u$ is a **non-Hermitian root of $+1$**, in the classification of *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra*, and the elements
+Then $u$ is a **non-Hermitian root of $+1$**, in the classification of *Square Roots of Minus One, Zero and Plus One in the Biquaternion Algebra*, and the elements
 
 $$
 \beta_\pm = \tfrac12(1\pm u), \qquad \alpha_\pm = \tfrac12(\alpha\pm\gamma) = \pm\gamma\beta_\pm

@@ -102,7 +102,7 @@ Read physically, the interpretation is the framework's **process–state split**
 
 ## What the Reading Does Not Claim
 
-- The interpretation does **not** add an operator algebra structure to the states. The monoid of maps is not a $C^{*}$-algebra, the idempotents are not given a trace rule by it, and the states remain the projectors of the framework; the trace and the positivity are *Mass, Rank and the Positivity of the Dagger*.
+- The interpretation does **not** add an operator algebra structure to the states. The monoid of maps is not a $C^{*}$-algebra, the idempotents are not given a trace rule by it, and the states remain the projectors of the framework; the trace and the positivity are *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*.
 - It does **not** claim that an element *is* an operator in the quantum sense. The left multiplication is a $\mathbb{C}$-linear map of the algebra, and the interpretation identifies the **process** with that map; whether the map is a quantum channel is a further question, and the completely positive form is read in the $2\times2$ article and not owned here.
 - It does **not** claim that a non-invertible map is automatically a measurement. The zero divisors give kernels; a measurement needs a projection onto a state, which is the idempotent side, and the passage from one to the other is the collapse and not the mere vanishing of $N$.
 - It does **not** turn the associativity of the monoid into a physical statement about time ordering. That the composition of the maps is associative is a theorem about composition, true for any algebra; what is read physically is the **order** encoded in $L_{\tilde{P}\tilde{Q}}\neq L_{\tilde{Q}\tilde{P}}$, not the associativity.
@@ -144,7 +144,7 @@ The sandwich of the two matrix articles is the composition of a left action with
 
 - *The 2×2 Matrix Operator Representation $M_2(\mathbb{C})\otimes M_2(\mathbb{C})$ of Biquaternions* — the sandwich as the congruence $X\mapsto M X M^{\dagger}$, the completely positive form, and the rank-one collapse.
 - *The 4×4 Matrix Operator Representation $M_4(\mathbb{C})$ of Biquaternions* — the sandwich as $L_{\tilde{Q}}\circ R_{\tilde{Q}^{*}}$ and the regular matrices.
-- *The Group of Units of the General Plain Algebra and the Complement of the Zero-Divisor Cone* and *The Interval as the Square and the Charge of the Material Composition* — the units, the zero divisors, the inverse $\tilde{Q}^{\natural}/N(\tilde{Q})$ and the light cone.
+- *The Group of Units of the General Plain Algebra and the Complement of the Zero-Divisor Cone* and *The Biquaternioid General Quaternionic Algebra (GQA) over $\mathbb{C}$* — the units, the zero divisors, the inverse $\tilde{Q}^{\natural}/N(\tilde{Q})$ and the light cone.
 - *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* and *Ideals and Peirce Decomposition of the General Plain Algebra* — the idempotents, the minimal idempotents and the rank-one projections.
-- *Why the Material Composition Is Oriented and Cannot Measure* — the order of the material composition and the absence of a projection in $\mathbb{M}_-$.
+- *The Biquaternioid General Quaternionic Algebra (GQA) over $\mathbb{C}$* — the order of the material composition and the absence of a projection in $\mathbb{M}_-$.
 - *Decoherence as Idempotent Projection* — the framework's interpretation of the collapse as an idempotent.

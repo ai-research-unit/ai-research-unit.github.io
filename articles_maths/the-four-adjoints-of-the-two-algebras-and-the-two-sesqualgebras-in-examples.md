@@ -3,11 +3,11 @@
 
 ## Introduction
 
-The biquaternion algebra carries four pairings, and every pairing carries its own adjoint of a linear map. The corpus gives each of the four pairings an operator family, and it has named those families by their adjoints: *Association*, *Signed Inner Conjugation*, *Hermitian Adjoint* and *Signed Hermitian Adjoint*. Two of those names were also the titles of the operator articles until 2026-09-27; those two titles now name the algebra of their subcategory (*Two-Sided Operators on the General Plain Algebra of Biquaternions* and *Two-Sided Operators on the General Quaternionic Algebra of Biquaternions*), and the adjoint names are kept here for the adjoints themselves. The names look unrelated and the suffixes look arbitrary, so this article sets the four adjoints side by side and works them out on explicit maps and explicit matrices, in the coefficient basis $e_0,e_1,e_2,e_3$.
+The biquaternion algebra carries four pairings, and every pairing carries its own adjoint of a linear map. The corpus gives each of the four pairings an operator family, and it has named those families by their adjoints: *Association*, *Signed Inner Conjugation*, *Hermitian Adjoint* and *Signed Hermitian Adjoint*. Two of those names were also the titles of the operator articles until 2026-09-27; those two titles now name the algebra of their subcategory (*Two-Sided Operators on the Biquaternion Algebra* and *Two-Sided Operators on the General Quaternionic Algebra of Biquaternions*), and the adjoint names are kept here for the adjoints themselves. The names look unrelated and the suffixes look arbitrary, so this article sets the four adjoints side by side and works them out on explicit maps and explicit matrices, in the coefficient basis $e_0,e_1,e_2,e_3$.
 
 The result is a one-line rule, and the examples below are the evidence for it: **each of the four adjoint names is the adjoint of one of the four forms, and the adjective names the insertion of the sign.** *Association* is the transpose of the general plain bilinear form, the reversal of a product with no conjugation anywhere, and it is the name of that adjoint because the adjoint carries no conjugation to name. *Signed inner conjugation* is the name of the adjoint of the general quaternionic bilinear form: there the adjoint of $L_{\tilde A}$ is the left multiplication by $\tilde A^{\natural}$, the **signed left multiplication**, and the sandwich built from it is the inner conjugation up to the norm. *Hermitian adjoint* is the name of the adjoint of the general plain sesquilinear form, which is the conjugate linear $\ast$; and *signed Hermitian adjoint* is the **same** form with the sign inserted into the operator, which is why the Hermitian layer carries two families where the plain layer carries one. The word **signed** always has the same meaning in the corpus: the grade involution $\natural$, the conjugation that negates the vector part and fixes the centre, has been inserted.
 
-The forms are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; the four conjugations are *The Group of Involutions*; the plain transpose is *Association and the Transpose on the General Plain Algebra*, and its operator family is *Two-Sided Operators on the General Plain Algebra of Biquaternions*; the two other families are *Two-Sided Operators on the General Quaternionic Algebra of Biquaternions* and *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions*. The last section of examples turns the same two involutions on the *two-sided operators* themselves: the coefficient involution $\sigma$ and the sign character $\alpha$ are the two switches of the twisted right factor $c_{\sigma,\alpha}(\tilde A)=\sigma(\alpha(\tilde A))$, and the four settings of the two switches return the four forms read at the unit. The article is pure algebra; no argument uses a distance, a limit or a derivative.
+The forms are *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*; the four conjugations are *The Group of Involutions*; the plain transpose is the general transpose of a bilinear form of *Bilinear Forms*, §*Isometries*, and its operator family is *Two-Sided Operators on the Biquaternion Algebra*; the two other families are *Two-Sided Operators on the General Quaternionic Algebra of Biquaternions* and *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions*. The last section of examples turns the same two involutions on the *two-sided operators* themselves: the coefficient involution $\sigma$ and the sign character $\alpha$ are the two switches of the twisted right factor $c_{\sigma,\alpha}(\tilde A)=\sigma(\alpha(\tilde A))$, and the four settings of the two switches return the four forms read at the unit. The article is pure algebra; no argument uses a distance, a limit or a derivative.
 
 ## Conventions and the Four Forms
 
@@ -72,6 +72,60 @@ $$
 The associate **reverses the two parameters and leaves them alone**; the $N$-adjoint **keeps the parameters in place and replaces each by its image under the sign $\natural$**. So the word *association* names a transpose, and it is the suffix of a family exactly when the form of that family is the plain one; the word *signed inner conjugation* names the adjoint of the $\natural$-form, and no factor is reversed there. The third adjoint conjugates in place with the conjugate linear $\ast$, and the fourth swaps and conjugates.
 
 **Remark (why this answers the naming question).** Each of the four names is the name of an adjoint of one form: $\approx$ is printed as "Association", $N$ as "Signed Inner Conjugation", $\ast$ as "Hermitian Adjoint". The form decides the adjoint, and the adjoint supplies the name. The fourth adjoint above, for the general quaternionic sesquilinear form, is computed for completeness; the biquaternion corpus names that form in the Krein articles and has no separate operator family for it, and the suffix "Signed Hermitian Adjoint" belongs to the Hermitian-algebra layer, where it names the operators with the sign inserted on the *same* form as the Hermitian family.
+
+## Association as a Transpose
+
+The first of the four adjoints is the one the corpus has named, and it carries a calculus of its own. Write it $\approx$ for a general $\mathbb{C}$-linear map $F$, not only for a one-sided or a two-sided operator.
+
+**Proposition (the associate is an involution that reverses composition).** For $\mathbb{C}$-linear maps $F,G$ of $\mathbb{B}$,
+
+$$
+(F^{\approx})^{\approx}=F,\qquad (F\circ G)^{\approx}=G^{\approx}\circ F^{\approx},
+$$
+
+and on a pair of elements the defining property reads
+
+$$
+\mathrm{Sc}\bigl(F(\tilde R)\,\tilde S\bigr)=\mathrm{Sc}\bigl(\tilde R\,F^{\approx}(\tilde S)\bigr)\qquad\text{for all }\tilde R,\tilde S\in\mathbb{B}.
+$$
+
+*Proof.* The involution and the reversal are the uniqueness of the adjoint applied twice, as in the two-sided line of the theorem above; the second display is the definition with $\langle\tilde R,\tilde S\rangle=\mathrm{Sc}(\tilde R\tilde S)$ substituted.
+
+**Proposition (association reverses the factors of the Conway basis).** On the Conway operator basis $e_n[\,]e_m$, the elementary operator being $(e_n[\,]e_m)(\tilde R)=e_n\tilde R e_m$,
+
+$$
+\bigl(e_n[\,]e_m\bigr)^{\approx}=e_m[\,]e_n,
+\qquad\text{so}\qquad
+\Bigl(\sum_{n,m}A_{nm}\,e_n[\,]e_m\Bigr)^{\approx}=\sum_{n,m}A_{nm}\,e_m[\,]e_n .
+$$
+
+The edge rows $L_a=\sum_n a_n\,e_n[\,]e_0$ and $R_b=\sum_m b_m\,e_0[\,]e_m$ give back $L_a^{\approx}=R_a$ and $R_b^{\approx}=L_b$.
+
+*Proof.* $\langle(a[\,]b)\tilde R,\tilde S\rangle=\mathrm{Sc}(a\tilde Rb\tilde S)$ and the scalar part is invariant under the cyclic permutation of its three factors, $\mathrm{Sc}(a\tilde Rb\tilde S)=\mathrm{Sc}(\tilde Rb\tilde Sa)=\langle\tilde R,(b[\,]a)\tilde S\rangle$; the identity is satisfied by $b[\,]a$ and it is unique by non-degeneracy. The edge rows are the special cases $b=e_0$ and $a=e_0$. The Conway basis is *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure*, §*The Conway Operator Basis*.
+
+**Proposition (the matrix of the associate).** Let $F$ have matrix $M$ in the coefficient basis $e_0,e_1,e_2,e_3$. Then the matrix of the associate is
+
+$$
+M^{\approx}=\mathrm{E}\,M^{\mathsf T}\mathrm{E},
+$$
+
+the sign matrix $\mathrm{E}$ conjugating the plain transpose.
+
+*Proof.* Write the form as $\langle\tilde P,\tilde Q\rangle=P^{\mathsf T}\mathrm{E}Q$ on the coordinate columns. Then $\langle F\tilde R,\tilde S\rangle=(MR)^{\mathsf T}\mathrm{E}S=R^{\mathsf T}M^{\mathsf T}\mathrm{E}S$ and $\langle\tilde R,F^{\approx}\tilde S\rangle=R^{\mathsf T}\mathrm{E}M^{\approx}S$ for all $R,S$, so $M^{\mathsf T}\mathrm{E}=\mathrm{E}M^{\approx}$, that is $M^{\approx}=\mathrm{E}M^{\mathsf T}\mathrm{E}$ because $\mathrm{E}^{-1}=\mathrm{E}$.
+
+**Remark (when the associate is the plain transpose).** The two agree exactly when $M^{\mathsf T}$ commutes with $\mathrm{E}$. An operator that fixes the scalar unit $e_0$ and preserves the vector subspace has the block form $\operatorname{diag}(1,N)$ with $N$ a $3\times3$ matrix, and the conjugation by $\mathrm{E}$ acts as the sign $-1$ on the two off-diagonal blocks and as the identity on the two diagonal ones, so it is invisible there and $M^{\approx}=M^{\mathsf T}$. For a general map the two differ. The formula is the coordinate form of the general statement that the transpose of a bilinear form is taken with the Gram matrix conjugating both sides, $M\mapsto G^{-1}M^{\mathsf T}G$ (*Bilinear Forms*, §*Isometries*, and *Quadratic Forms and Polarisation*, §*Isometry of Forms*).
+
+**Proposition (association against the Hermitian adjoint).** Let $\bar F$ be the map obtained from $F$ by conjugating every coefficient. Then
+
+$$
+\bar F^{\approx}=\mathrm{E}\,F^{\ast}\,\mathrm{E},
+$$
+
+$F^{\ast}$ being the adjoint for the positive definite Hermitian form $\langle\cdot,\cdot\rangle_{\ast}$ of the theorem above.
+
+*Proof.* Conjugating the coefficients conjugates the entries of the matrix, taking $M$ to $\bar M$, so $\bar F^{\approx}$ has matrix $\mathrm{E}\bar M^{\mathsf T}\mathrm{E}$. The Hermitian adjoint has matrix $M^{\dagger}=\overline{M^{\mathsf T}}$, the conjugate transpose, so $\mathrm{E}F^{\ast}\mathrm{E}=\mathrm{E}\overline{M^{\mathsf T}}\mathrm{E}$, the same matrix.
+
+**Corollary (the collapse on the vector-preserving unitaries).** On the operators of the block form $\operatorname{diag}(1,N)$ the conjugation by $\mathrm{E}$ is invisible, so the proposition reads $\bar F^{\approx}=F^{\ast}$, and for a unitary $F$ it reads $F^{\ast}=F^{-1}$. On those operators the plain transpose, the associate and the Hermitian adjoint are one involution, which is why the source literature writes the three interchangeably; for a general linear map they are three, and the corpus keeps the association, the transpose for the indefinite form of Gram matrix $\mathrm{E}$, apart from the dagger, the adjoint for the positive definite form of Gram matrix $\mathrm{I}_4$.
 
 ## One Operator, Four Adjoints
 
@@ -285,7 +339,7 @@ The evidence is collected in one table, and it is a description of the corpus an
 
 | form | Gram | adjoint of $L_{\tilde A}$ | the operator family | adjoint name of the family |
 |---|---|---|---|---|
-| plain bilinear $\mathrm{Sc}(\tilde P\tilde Q)$ | $\mathrm{E}$ | $R_{\tilde A}$, a swap, no conjugation | $\{L_{\tilde A}R_{\tilde B}\}$, two independent parameters; the article *Two-Sided Operators on the General Plain Algebra of Biquaternions* | **Association** |
+| plain bilinear $\mathrm{Sc}(\tilde P\tilde Q)$ | $\mathrm{E}$ | $R_{\tilde A}$, a swap, no conjugation | $\{L_{\tilde A}R_{\tilde B}\}$, two independent parameters; the article *Two-Sided Operators on the Biquaternion Algebra* | **Association** |
 | quaternionic bilinear $\mathrm{Sc}(\tilde P^{\natural}\tilde Q)$ | $\mathrm{I}_4$ | $L_{\tilde A^{\natural}}=\Lambda^{\alpha}_{\tilde A}$, the signed left multiplication | $\{\Theta_{\tilde A}=L_{\tilde A}R_{\tilde A^{\natural}}=\tilde A\,\tilde X\,\tilde A^{\natural}\}$; the article *Two-Sided Operators on the General Quaternionic Algebra of Biquaternions* | **Signed Inner Conjugation** |
 | plain sesquilinear $\mathrm{Sc}(\tilde P\tilde Q^{\ast})$ | $\mathrm{I}_4$ | $L_{\tilde A^{\ast}}$ | the sandwich with the dagger, $\tilde X\mapsto\tilde A\tilde X\tilde A^{\ast}$, plain left factor; the article *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions* | **with Hermitian Adjoint** |
 | the same plain sesquilinear form | $\mathrm{I}_4$ | $L_{\tilde A^{\ast}}$ | the same sandwich with $\Lambda^{\alpha}_{\tilde A}$ in place of $L_{\tilde A}$ | **with Signed Hermitian Adjoint** |
@@ -297,7 +351,7 @@ The evidence is collected in one table, and it is a description of the corpus an
 
 ## Summary
 
-The biquaternion algebra has four pairings, and each pairing has its own adjoint of a linear map. For the general plain bilinear form the adjoint is the exchange of the two factors with no conjugation, $\approx$, which the corpus calls **association**, the name of the adjoint that the plain family carries. For the general quaternionic bilinear form the adjoint of the left multiplication is the left multiplication by $\tilde A^{\natural}$, the **signed left multiplication**, and the sandwich built on it is the inner conjugation up to the norm, which the corpus calls the **signed inner conjugation**, the name of the adjoint that the quaternionic family carries. For the general plain sesquilinear form the adjoint is the **Hermitian adjoint** $\ast$; and *signed Hermitian adjoint* is the same form with the sign inserted into the operator. The word *signed* has one meaning throughout: the insertion of the grade involution $\natural$, which is the identity on the centre and minus the identity on the vector subspace. The examples give the four adjoint matrices of one two-sided operator, the two matrices of the signed and the unsigned inner conjugation of a mixed element and of the two extreme parameters, and the four self-adjointness criteria on the same parameters. No step of the article uses a topology, a distance or a limit.
+The biquaternion algebra has four pairings, and each pairing has its own adjoint of a linear map. For the general plain bilinear form the adjoint is the exchange of the two factors with no conjugation, $\approx$, which the corpus calls **association**, the name of the adjoint that the plain family carries. The associate has a calculus of its own: it is an involution, it reverses composition, $(FG)^{\approx}=G^{\approx}F^{\approx}$, it reverses the factors of the Conway basis, $(e_n[\,]e_m)^{\approx}=e_m[\,]e_n$, its matrix in the coefficient basis is $M^{\approx}=\mathrm{E}M^{\mathsf T}\mathrm{E}$, and combined with the coefficient conjugation it relates to the Hermitian adjoint by $\bar F^{\approx}=\mathrm{E}F^{\ast}\mathrm{E}$, which collapses to $F^{\ast}=F^{-1}$ on the vector-preserving unitaries. For the general quaternionic bilinear form the adjoint of the left multiplication is the left multiplication by $\tilde A^{\natural}$, the **signed left multiplication**, and the sandwich built on it is the inner conjugation up to the norm, which the corpus calls the **signed inner conjugation**, the name of the adjoint that the quaternionic family carries. For the general plain sesquilinear form the adjoint is the **Hermitian adjoint** $\ast$; and *signed Hermitian adjoint* is the same form with the sign inserted into the operator. The word *signed* has one meaning throughout: the insertion of the grade involution $\natural$, which is the identity on the centre and minus the identity on the vector subspace. The examples give the four adjoint matrices of one two-sided operator, the two matrices of the signed and the unsigned inner conjugation of a mixed element and of the two extreme parameters, and the four self-adjointness criteria on the same parameters. No step of the article uses a topology, a distance or a limit.
 
 The two switches of the last section are the same two involutions read on the operators: the coefficient involution $\sigma$ replaces the squares $\lambda_\mu^{2}$ by the moduli $|\lambda_\mu|^{2}$, and the sign character $\alpha$ turns the signed sum $\sum\varepsilon_\mu\lambda_\mu^{2}$ into the unsigned one $\sum\lambda_\mu^{2}$. The four scalar parts that the two switches produce on one element are the four forms of the article, and the same two switches separate the four adjoints of the left multiplication.
 
@@ -311,6 +365,8 @@ The two switches of the last section are the same two involutions read on the op
 | $\langle\tilde P,\tilde Q\rangle_{\natural\ast}=\mathrm{Sc}(\tilde P^{\natural}\tilde Q^{\ast})$, Gram $\mathrm{E}$ | the general quaternionic sesquilinear form, the form of the **signed Hermitian adjoint** |
 | $\natural$, $\bar{\cdot}$, $\ast=\natural\bar{\cdot}$ | the natural conjugation (the grade involution), the coefficient conjugation, the Hermitian conjugation |
 | $(L_{\tilde A}R_{\tilde B})^{\approx}=L_{\tilde B}R_{\tilde A}$ | the associate, the adjoint for the general plain bilinear form: the swap, no conjugation |
+| $(e_n[\,]e_m)^{\approx}=e_m[\,]e_n$ | association on the Conway operator basis; $(FG)^{\approx}=G^{\approx}F^{\approx}$, and $L_a^{\approx}=R_a$, $R_b^{\approx}=L_b$ |
+| $M^{\approx}=\mathrm{E}M^{\mathsf T}\mathrm{E}$, $\bar F^{\approx}=\mathrm{E}F^{\ast}\mathrm{E}$ | the associate in the coefficient basis, and against the Hermitian adjoint; the collapse $\bar F^{\approx}=F^{\ast}=F^{-1}$ on the vector-preserving unitaries |
 | $(L_{\tilde A}R_{\tilde B})^{N}=L_{\tilde A^{\natural}}R_{\tilde B^{\natural}}$ | the $N$-adjoint, the adjoint for the general quaternionic bilinear form: the sign in place |
 | $(L_{\tilde A}R_{\tilde B})^{\ast}=L_{\tilde A^{\ast}}R_{\tilde B^{\ast}}$ | the Hermitian adjoint; $(L_{\tilde A}R_{\tilde B})^{\natural\ast}=L_{\bar{\tilde B}}R_{\bar{\tilde A}}$ the signed one |
 | $\mathrm{Ad}_{\tilde A}=\tilde A\,\tilde X\,\tilde A^{-1}$, $\mathrm{Ad}^{\alpha}_{\tilde A}=\tilde A^{\natural}\tilde X\tilde A^{-1}$ | the unsigned and the signed inner conjugation; $\mathrm{Ad}^{\alpha}=\mathrm{Ad}$ on the centre, $-\mathrm{Ad}$ on $V$ |
@@ -321,12 +377,13 @@ The two switches of the last section are the same two involutions read on the op
 ## Further Reading
 
 - *The Four General Products and Operators* (`articles_maths/the-four-general-products-and-operators.md`), for the products-to-operators bridge that the adjoints above serve, and for the theorem that the plain product gives minus the reflection and the sign gives the reflection
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the four forms the four adjoints belong to, their Gram matrices, their signatures and their notation table of the four adjoints
+- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the four forms the four adjoints belong to, their Gram matrices, their signatures and their notation table of the four adjoints
 - *The Group of Involutions* (`articles_maths/the-group-of-involutions.md`), for the four conjugations, their group and their linearity
-- *Association and the Transpose on the General Plain Algebra* (`articles_maths/association-and-the-transpose-on-the-general-plain-algebra.md`), for the associate $\approx$, the transposition rule and its Conway-basis form
-- *Two-Sided Operators on the General Plain Algebra of Biquaternions* (`articles_maths/two-sided-operators-on-the-general-plain-algebra-of-biquaternions.md`), for the family of the first adjoint, its swap law and its criteria
-- *Two-Sided Operators on the General Quaternionic Algebra of Biquaternions* (`articles_maths/two-sided-operators-on-the-general-quaternionic-algebra-of-biquaternions.md`), for the twisted operator $\Theta_{\tilde A}$, its $N$-adjoint and its self-adjointness criterion
-- *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions* (`articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra-of-biquaternions.md`), for the same family read with the dagger
+- *The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure* (`articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.md`), for the Conway operator basis on which the associate reverses the factors, and the regular representations $L_a$ and $R_b$ that transpose into one another
+- *Bilinear Forms* (`articles_maths/bilinear-forms.md`), §*Isometries*, and *Quadratic Forms and Polarisation* (`articles_maths/quadratic-forms-and-polarisation.md`), §*Isometry of Forms*, for the general transpose $M\mapsto G^{-1}M^{\mathsf T}G$ of a bilinear form, of which the associate is the biquaternion instance
+- *Two-Sided Operators on the Biquaternion Algebra* (`articles_maths/two-sided-operators-on-the-biquaternion-algebra.md`), for the family of the first adjoint, its swap law and its criteria
+- *Two-Sided Operators on the General Quaternionic Algebra of Biquaternions* (`articles_maths/two-sided-operators-on-the-general-quaternionic-algebra.md`), for the twisted operator $\Theta_{\tilde A}$, its $N$-adjoint and its self-adjointness criterion
+- *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions* (`articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra.md`), for the same family read with the dagger
 - *The Clifford, Pin and Spin Groups with Signed Inner Conjugation* (`articles_maths/the-clifford-pin-and-spin-groups-with-signed-inner-conjugation.md`), for $\mathrm{Ad}^{\alpha}_{U}(v)=\alpha(U)vU^{-1}$ and the general meaning of the sign
-- *The General Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* (`articles_maths/the-general-plain-algebra-in-the-2x2-matrix-element-representation.md`), for the same operators read as matrices, where the swap and the sign become a transposition and a bar
+- *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.md`), for the same operators read as matrices, where the swap and the sign become a transposition and a bar
 - Werner Greub, *Linear Algebra*, 4th edition (Springer, 1981), for the adjoint of a linear map with respect to a bilinear or a sesquilinear form

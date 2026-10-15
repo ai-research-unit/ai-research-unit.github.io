@@ -55,8 +55,8 @@ there is no pure root of $+1$, and $e_0$ is the case $\alpha=1$, $\vec c=\mathbf
 does not turn the roots of $+1$ into the roots of $-1$, because the product is sesquilinear and
 $(i\tilde\Xi)\star(i\tilde\Xi)=\tilde\Xi\star\tilde\Xi$; the roots of $-1$ are separately the pure unit
 vectors together with the family $\mathcal R_{-1}$, of real dimension five. The idempotents are $0$, $e_0$
-and the family $-\tfrac12e_0+\vec n$ with $\vec n\in\mathbb{R}^3$ and
-$\lVert\vec n\rVert^2=\tfrac34$, a two-sphere of radius $\tfrac{\sqrt3}{2}$ in the real quaternion
+and the family $-\tfrac12e_0+\tfrac{\sqrt3}{2}\hat u$ with $\hat u\in\mathbb{R}^3$ and
+$\lVert\hat u\rVert^2=1$, a two-sphere of radius $\tfrac{\sqrt3}{2}$ in the real quaternion
 subspace. Every nonzero idempotent has central square $C(\tilde\Pi)=1$ and is regular, so no nonzero
 idempotent is a zero divisor; no two nontrivial idempotents are orthogonal; and the two classes meet only at
 $e_0$.
@@ -154,8 +154,8 @@ The roots of $-1$ are quoted here and are used nowhere in this article.
 
 ## The Idempotents
 
-**Every idempotent of the block is $0$, $e_0$, or of the form $-\tfrac12e_0+\vec n$ with
-$\vec n\in\mathbb{R}^3$ and $\lVert\vec n\rVert^2=\tfrac34$; the nontrivial idempotents form
+**Every idempotent of the block is $0$, $e_0$, or of the form $-\tfrac12e_0+\tfrac{\sqrt3}{2}\hat u$ with
+$\hat u\in\mathbb{R}^3$ and $\lVert\hat u\rVert^2=1$; the nontrivial idempotents form
 a two-sphere of radius $\tfrac{\sqrt3}{2}$ in the real quaternion subspace, and no two of them are
 orthogonal.**
 
@@ -230,7 +230,7 @@ $\mathrm{Im}\,\alpha=0$; hence $\alpha=-\tfrac12$, and $\lVert\vec x\rVert^2=|\a
 ### The Classification of the Idempotents
 
 **Every idempotent of the block is either trivial ($0$ or $e_0$) or of the form
-$-\tfrac12e_0+\vec n$ with $\vec n\in\mathbb{R}^3$ and $\lVert\vec n\rVert^2=\tfrac34$;
+$-\tfrac12e_0+\tfrac{\sqrt3}{2}\hat u$ with $\hat u\in\mathbb{R}^3$ and $\lVert\hat u\rVert^2=1$;
 there are no others.**
 
 **Theorem (the idempotent set of the block).** The idempotents of the block are
@@ -240,10 +240,10 @@ $$
 \qquad
 e_0 ,
 \qquad\text{and}\qquad
--\tfrac12e_0+\vec n ,
+-\tfrac12e_0+\tfrac{\sqrt3}{2}\hat u ,
 \qquad
-\vec n\in\mathbb{R}^3,\quad
-\lVert\vec n\rVert^2=\tfrac34 .
+\hat u\in\mathbb{R}^3,\quad
+\lVert\hat u\rVert^2=1 .
 $$
 
 *Proof.* Let $\tilde\Pi=\alpha e_0+\vec x$ be an idempotent.
@@ -289,9 +289,9 @@ $\Xi_0$ is real and $\vec\Xi=\mathbf 0$: the element is a real central scalar. W
 $\tilde\Xi\star\tilde\Xi=e_0$ this forces $\tilde\Xi=\pm e_0$. So the map sends the roots of $+1$ to the two
 trivial idempotents $e_0$ (from $+e_0$) and $0$ (from $-e_0$), and to nothing else.
 
-In the other direction, a nontrivial idempotent $-\tfrac12e_0+\vec n$ gives
-$2\tilde\Pi-e_0=-2e_0+2\vec n$, a real quaternion whose block square is, by the diagonal formula,
-$e_0+8\vec n$, which differs from $e_0$ because $\vec n\neq\mathbf 0$. So the block carries
+In the other direction, a nontrivial idempotent $-\tfrac12e_0+\tfrac{\sqrt3}{2}\hat u$ gives
+$2\tilde\Pi-e_0=-2e_0+\sqrt3\hat u$, a real quaternion whose block square is, by the diagonal formula,
+$e_0+4\sqrt3\hat u$, which differs from $e_0$ because $\hat u\neq\mathbf 0$. So the block carries
 no bijection between its roots of $+1$ and its
 idempotents, in contrast with the associative plain product, where the halving map is a bijection
 (*Square Roots of One and the Idempotents of the General Plain Algebra*). The single element common to the
@@ -307,9 +307,9 @@ $C(\tilde\Pi)=1$ and is regular, and no two nontrivial idempotents are orthogona
 idempotent of the block is a real quaternion; every nonzero idempotent has central square $C(\tilde\Pi)=1$
 and is regular.
 
-*Proof.* Real quaternion: $0$, $e_0$ and $-\tfrac12e_0+\vec n$ are real by the classification. The
-central square of $-\tfrac12e_0+\vec n$ is
-$C=\tfrac14+\lVert\vec n\rVert^2=\tfrac14+\tfrac34=1$, and $C(e_0)=1$. Since a nonzero idempotent
+*Proof.* Real quaternion: $0$, $e_0$ and $-\tfrac12e_0+\tfrac{\sqrt3}{2}\hat u$ are real by the classification. The
+central square of $-\tfrac12e_0+\tfrac{\sqrt3}{2}\hat u$ is
+$C=\tfrac14+\tfrac34\lVert\hat u\rVert^2=\tfrac14+\tfrac34=1$, and $C(e_0)=1$. Since a nonzero idempotent
 has $Q_0\neq0$ (its scalar part is $1$ or $-\tfrac12$) and $C=1\neq0$, it is regular by the criterion of
 *Zero Divisors of the Symmetric Quaternionic Sesqualgebra*.
 
@@ -317,25 +317,25 @@ So no nonzero idempotent of the block is a zero divisor, and every nonzero idemp
 $C=1$ of the central square, while the trivial idempotent $0$ lies at $C=0$.
 
 **Theorem (no orthogonal pair).** For two nontrivial idempotents
-$\tilde\Pi=-\tfrac12e_0+\vec n$ and $\tilde\Pi'=-\tfrac12e_0+\vec m$,
+$\tilde\Pi=-\tfrac12e_0+\tfrac{\sqrt3}{2}\hat u$ and $\tilde\Pi'=-\tfrac12e_0+\tfrac{\sqrt3}{2}\hat v$,
 
 $$
-\tilde\Pi\star\tilde\Pi'=\tfrac14-\vec n\!\cdot\!\vec m
-+\tfrac12\bigl(\vec n+\vec m\bigr),
+\tilde\Pi\star\tilde\Pi'=\tfrac14-\tfrac34\hat u\!\cdot\!\hat v
++\tfrac{\sqrt3}{4}\bigl(\hat u+\hat v\bigr),
 $$
 
-whose scalar part is $\tfrac14-\vec n\!\cdot\!\vec m$ and whose vector part is
-$\tfrac12(\vec n+\vec m)$; it vanishes for no pair, so the nontrivial idempotents are
+whose scalar part is $\tfrac14-\tfrac34\hat u\!\cdot\!\hat v$ and whose vector part is
+$\tfrac{\sqrt3}{4}(\hat u+\hat v)$; it vanishes for no pair, so the nontrivial idempotents are
 pairwise non-orthogonal.
 
 *Proof.* Both elements are real quaternions, and for real arguments the block reads
 $\tilde P\star\tilde Q=[\mathrm{SPA}(\tilde P,\tilde Q)]^{\natural}$, the natural conjugate of the plain
 symmetric product $\mathrm{SPA}(\tilde P,\tilde Q)=\tfrac12(\tilde P\tilde Q+\tilde Q\tilde P)$; computing
 $\mathrm{SPA}$ of the two idempotents, whose vector-part term is
-$-\tfrac12(\vec n+\vec m)$, and applying the natural conjugation, which reverses the vector
-sign, gives the display. The scalar part vanishes only if $\vec n\!\cdot\!\vec m=\tfrac14$
-and the vector part only if $\vec m=-\vec n$, which would give
-$\vec n\!\cdot\!\vec m=-\lVert\vec n\rVert^2=-\tfrac34$, a contradiction.
+$-\tfrac{\sqrt3}{4}(\hat u+\hat v)$, and applying the natural conjugation, which reverses the vector
+sign, gives the display. The scalar part vanishes only if $\hat u\!\cdot\!\hat v=\tfrac13$
+and the vector part only if $\hat v=-\hat u$, which would give
+$\hat u\!\cdot\!\hat v=-1$, a contradiction.
 
 **Remark (no complete family, no Peirce calculus).** The block has no unit, so the notion of an orthogonal
 family summing to the unit has no content here, and no two nontrivial idempotents are orthogonal (only the
@@ -354,8 +354,8 @@ The three named classes of the block meet in a way opposite to the plain product
 |---|---|
 | zero divisors, pure family $\{Q_0=0\}$ | none, every nonzero idempotent having $Q_0\neq0$ |
 | zero divisors, non-pure family $\{Q_0\neq0,\ C=0\}$ | none, every nonzero idempotent having $C=1$ |
-| regular elements $\{Q_0\neq0,\ C\neq0\}$ | $e_0$ and the sphere $-\tfrac12e_0+\vec n$ |
-| nilpotents $\{\alpha(e_0+i\vec n)\}$ | none, the two classes meeting only at $0$ |
+| regular elements $\{Q_0\neq0,\ C\neq0\}$ | $e_0$ and the sphere $-\tfrac12e_0+\tfrac{\sqrt3}{2}\hat u$ |
+| nilpotents $\{\alpha(e_0+i\hat u)\}$ | none, the two classes meeting only at $0$ |
 
 The last row is proved in *Square Roots of Zero and the Nilpotents of the Symmetric Quaternionic
 Sesqualgebra*: an element cannot have both $\tilde\Pi\star\tilde\Pi=\tilde\Pi$ and
@@ -377,7 +377,7 @@ $e_0\star e_1=-e_1$.
 $\vec x=ie_1=i\alpha\vec c/|\alpha|^2$ with $\vec c=(\sqrt2,0,0)$ of $\lVert\vec c\rVert^2=2$, so
 $\tilde\Xi\star\tilde\Xi=e_0$.
 
-**A nontrivial idempotent.** $\vec n=\tfrac12(1,1,1)$ has $\lVert\vec n\rVert^2=\tfrac34$, so
+**A nontrivial idempotent.** $\hat u=\tfrac{1}{\sqrt3}(1,1,1)$ has $\lVert\hat u\rVert^2=1$, so
 $\tilde\Pi=-\tfrac12e_0+\tfrac12e_1+\tfrac12e_2+\tfrac12e_3$ satisfies $\tilde\Pi\star\tilde\Pi=\tilde\Pi$, as
 the classification states.
 
@@ -399,7 +399,7 @@ $(i\tilde\Xi)\star(i\tilde\Xi)=\tilde\Xi\star\tilde\Xi$; the roots of $-1$ are s
 vectors and the family $\mathcal R_{-1}$, of real dimension five.
 
 The idempotents are the trivial elements $0$ and $e_0$ together with the elements
-$-\tfrac12e_0+\vec n$ with $\lVert\vec n\rVert^2=\tfrac34$, a two-sphere of radius
+$-\tfrac12e_0+\tfrac{\sqrt3}{2}\hat u$ with $\lVert\hat u\rVert^2=1$, a two-sphere of radius
 $\tfrac{\sqrt3}{2}$ in the real quaternion subspace. Every nonzero idempotent has central square $1$ and is
 regular, so none is a zero divisor; no two nontrivial idempotents are orthogonal, so the block carries no
 complete orthogonal family and no Peirce decomposition; and the idempotents meet the nilpotents only at the
@@ -421,17 +421,17 @@ only element they share is $e_0$.
 | $\mathcal R_{+1}=\{\alpha e_0+\tfrac{i\alpha}{|\alpha|^2}\vec c:\lVert\vec c\rVert^2=|\alpha|^2(|\alpha|^2-1)\}$ | the roots of $+1$, $|\alpha|\geq1$ |
 | $\mathcal R_{-1}=\{\alpha e_0+\tfrac{i\alpha}{|\alpha|^2}\vec c:\lVert\vec c\rVert^2=|\alpha|^2(|\alpha|^2+1)\}$ | the non-pure roots of $-1$ |
 | $\{0\},\ \{e_0\}$ | the trivial idempotents, $e_0$ the unit candidate |
-| $-\tfrac12e_0+\vec n,\ \lVert\vec n\rVert^2=\tfrac34$ | the nontrivial idempotents, a two-sphere |
-| $\tilde\Pi\star\tilde\Pi'=\tfrac14-\vec n\!\cdot\!\vec m+\tfrac12(\vec n+\vec m)$ | no two nontrivial idempotents are orthogonal |
+| $-\tfrac12e_0+\tfrac{\sqrt3}{2}\hat u,\ \lVert\hat u\rVert^2=1$ | the nontrivial idempotents, a two-sphere |
+| $\tilde\Pi\star\tilde\Pi'=\tfrac14-\tfrac34\hat u\!\cdot\!\hat v+\tfrac{\sqrt3}{4}(\hat u+\hat v)$ | no two nontrivial idempotents are orthogonal |
 | $C(\tilde\Pi)=\sum_\mu\Pi_\mu^2=1$ | the central square, one on the nonzero idempotents |
 | $\mathbb{H}_{\mathbb{B}}$ | the real quaternion subspace, carrying the whole idempotent set |
 
 ## Further Reading
 
-- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), §*Powers, the Square and the Roots* and §*The Idempotent, the Projection and the Peirce Decomposition*, for the definitions relative to a general product.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md`), §*Powers, the Square and the Roots* and §*The Idempotent, the Projection and the Peirce Decomposition*, for the definitions relative to a general product.
 - *Square Roots of Zero and the Nilpotents of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-symmetric-quaternionic-sesqualgebra.md`), for the second central value and the class disjoint from the idempotents.
 - *Square Roots of a General Element in the Symmetric Quaternionic Sesqualgebra* (`articles_maths/square-roots-of-a-general-element-in-the-symmetric-quaternionic-sesqualgebra.md`), for the equation $\tilde\Xi\star\tilde\Xi=\tilde R$ for an arbitrary value, of which the central values here are the scalar case.
 - *Zero Divisors of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/zero-divisors-of-the-symmetric-quaternionic-sesqualgebra.md`), for the criterion that makes every nonzero idempotent regular.
 - *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-non-central-algebraic-norm-and-the-two-halves-of-the-symmetric-quaternionic-sesqualgebra.md`), for the diagonal formula that carries the reduction.
-- *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra-of-biquaternions.md`), for the product, its table and its two one-sided actions.
-- *Square Roots of One and the Idempotents of the General Plain Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra.md`), for the idempotents of the associative plain product, where the halving map is a bijection.
+- *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra.md`), for the product, its table and its two one-sided actions.
+- *Square Roots of One and the Idempotents of the General Plain Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.md`), for the idempotents of the associative plain product, where the halving map is a bijection.

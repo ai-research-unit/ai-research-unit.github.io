@@ -200,19 +200,19 @@ The parities are those of the coefficientwise conjugation.
 
 **Proof.** The square-zero set is $\{\tilde Q : \tilde Q\star\tilde Q = 0\}$; if $\tilde Q$ is in it, then $\overline{\tilde Q}\star\overline{\tilde Q} = \overline{\tilde Q\star\tilde Q} = 0$ by the proposition, so $\overline{\tilde Q}$ is in it too. The idempotent condition is $\tilde\Pi\star\tilde\Pi = \tilde\Pi$; conjugating both sides gives $\overline{\tilde\Pi}\star\overline{\tilde\Pi} = \overline{\tilde\Pi}$, so the conjugate is again an idempotent.
 
-**Remark.** The idempotent statement is the one the group uses: the nontrivial idempotents $\tilde\Pi(\vec n) = -\tfrac12e_0+\vec n$ with $\vec n$ in the real vector subspace of norm $\tfrac34$ are carried by the coefficientwise conjugation to the idempotents $\tilde\Pi(\vec n)$ with the same $\vec n$, because $\vec n$ has real coordinates and the conjugation fixes it; the two *other* conjugations change the sign of $\vec n$ and reach $\tilde\Pi(-\vec n)$, which is again an idempotent. The square-zero statement is what lets the witness $ie_0 + e_1 + e_2 + ie_3$ of the proper-inclusion theorem be replaced by its conjugate; both are zero divisors and both have nonzero square.
+**Remark.** The idempotent statement is the one the group uses: the nontrivial idempotents $\tilde\Pi(\hat u) = -\tfrac12e_0+\tfrac{\sqrt3}{2}\hat u$ with $\hat u$ in the real vector subspace of norm $\tfrac34$ are carried by the coefficientwise conjugation to the idempotents $\tilde\Pi(\hat u)$ with the same $\hat u$, because $\hat u$ has real coordinates and the conjugation fixes it; the two *other* conjugations change the sign of $\hat u$ and reach $\tilde\Pi(-\hat u)$, which is again an idempotent. The square-zero statement is what lets the witness $ie_0 + e_1 + e_2 + ie_3$ of the proper-inclusion theorem be replaced by its conjugate; both are zero divisors and both have nonzero square.
 
 ## The Squares of the Idempotents
 
 **Proposition (the square of an idempotent).** Let $\tilde\Pi$ be an idempotent of the multiplication, so that $\tilde\Pi \star \tilde\Pi = \tilde\Pi$. Then $\overline{\tilde\Pi}\tilde\Pi = \tilde\Pi^{\natural}$, and the plain square of $\tilde\Pi$ is $\tilde\Pi^{2} = \tilde\Pi^{\natural}$.
 
-**Proof.** The criterion of idempotence is $\overline{\tilde\Pi}\tilde\Pi = \tilde\Pi^{\natural}$ (*Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra*), which is the first statement. Applying ${}^{\natural}$ to the definition and using the criterion, or expanding $\tilde\Pi^{2}$ on the coordinates, gives the plain square: for a nontrivial idempotent $\tilde\Pi(\vec n) = -\tfrac12e_0+\vec n$ with $(\vec n,\vec n) = \tfrac34$,
+**Proof.** The criterion of idempotence is $\overline{\tilde\Pi}\tilde\Pi = \tilde\Pi^{\natural}$ (*Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra*), which is the first statement. Applying ${}^{\natural}$ to the definition and using the criterion, or expanding $\tilde\Pi^{2}$ on the coordinates, gives the plain square: for a nontrivial idempotent $\tilde\Pi(\hat u) = -\tfrac12e_0+\tfrac{\sqrt3}{2}\hat u$ with $(\hat u,\hat u)=1$,
 
 $$
-\tilde\Pi^{2} = \Bigl(\tfrac14 - \tfrac34\Bigr)e_0 + 2\cdot\Bigl(-\tfrac12\Bigr)\vec n = -\tfrac12 e_0 - \vec n = \tilde\Pi^{\natural} ,
+\tilde\Pi^{2} = \Bigl(\tfrac14 - \tfrac34\Bigr)e_0 + 2\cdot\Bigl(-\tfrac12\Bigr)\hat u = -\tfrac12 e_0 - \tfrac{\sqrt3}{2}\hat u = \tilde\Pi^{\natural} ,
 $$
 
-the vector part being $\vec n$.
+the vector part being $\hat u$.
 
 **Remark.** The example is the one the idempotents of the family supply. Along the three coordinate axes the idempotents are $\tilde\Pi = -\tfrac12 e_0 + \tfrac{\sqrt3}{2}\hat u$ with $\hat u \in \{\pm e_1, \pm e_2, \pm e_3\}$, and each has plain square $\tilde\Pi^{\natural} = -\tfrac12 e_0 - \tfrac{\sqrt3}{2}\hat u$ and square in the multiplication $\tilde\Pi$ itself. The scalar part of the square is $\lvert-\tfrac12\rvert^{2} - \tfrac34 = -\tfrac12$, the scalar coordinate of the idempotent, in agreement with the scalar-part formula, and it is negative, which is why the family of idempotents is not the positive cone of the sibling product.
 

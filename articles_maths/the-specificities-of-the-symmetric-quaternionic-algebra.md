@@ -185,8 +185,8 @@ The symmetric quaternionic product satisfies the **scalar law** — it is commut
 
 ## Further Reading
 
-- *The Specificities of the General Plain Algebra* (`articles_maths/the-specificities-of-the-general-plain-algebra.md`), for the criterion of the plain product, the model of the family.
+- *The Specificities of the General Plain Algebra* (`articles_maths/the-specificities-of-the-biquaternion-algebra.md`), for the criterion of the plain product, the model of the family.
 - *The Specificities of the General Quaternionic Algebra* (`articles_maths/the-specificities-of-the-general-quaternionic-algebra.md`), for the companion family of projectors in the general quaternionic product.
-- *Introduction to the Symmetric Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-algebra-of-biquaternions.md`), for the governing formula $\tilde P\bullet\tilde Q=N(\tilde P,\tilde Q)e_0$ and for the absence of a unit.
+- *Introduction to the Symmetric Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-algebra.md`), for the governing formula $\tilde P\bullet\tilde Q=N(\tilde P,\tilde Q)e_0$ and for the absence of a unit.
 - *The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra* (`articles_maths/the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra.md`), for the trivial radical, the idempotents $0$ and $e_0$, and the isotropic cone of the square-zero elements.
 - *The Multiplication Operators of the Symmetric Quaternionic Algebra* (`articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-algebra.md`), for the composition law and the rank, trace and adjoint of the operators.

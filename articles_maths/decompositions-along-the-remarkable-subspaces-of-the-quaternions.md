@@ -60,7 +60,7 @@ The plane $\mathbb{R}_{\mathbb{H}}\oplus\nu^\perp$ is not a subalgebra: for $\nu
 
 ## The Polar Decomposition
 
-The quaternion norm $N(\tilde q)=\tilde q\tilde q^{\natural}$ is real and non-negative on $\mathbb{H}$, by *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space*, below this article in this category, and it vanishes only at zero, by *Norm and Invertibility in the General Plain Algebra*, below this article in this category. For $\tilde q\neq0$ the number
+The quaternion norm $N(\tilde q)=\tilde q\tilde q^{\natural}$ is real and non-negative on $\mathbb{H}$, by *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space*, below this article in this category, and it vanishes only at zero, by *Norm and Invertibility in the Quaternion Algebra*, below this article in this category. For $\tilde q\neq0$ the number
 $$
 |\tilde q|=\sqrt{N(\tilde q)}\in\mathbb{R}_{>0}
 $$
@@ -99,5 +99,5 @@ The quaternion algebra decomposes four ways. Additively by the natural sign into
 ## Further Reading
 
 - *Introduction to the Remarkable Subspaces of the Quaternions* (`articles_maths/introduction-to-the-remarkable-subspaces-of-the-quaternions.md`), for the scalar–vector decomposition and the two subspaces.
-- *The Group of Involutions of the Quaternions* (`articles_maths/the-group-of-involutions-of-the-quaternions.md`), for the natural sign, the inner involutions and the twists that cut the three additive decompositions.
+- *The Group of Involutions of the Quaternions* (`articles_maths/the-group-of-involutions-of-the-quaternioid.md`), for the natural sign, the inner involutions and the twists that cut the three additive decompositions.
 - *Quaternion Polar Element Representation* (`articles_maths/quaternion-polar-element-representation.md`), below this article in this category, for the argument and the axis of the polar element.

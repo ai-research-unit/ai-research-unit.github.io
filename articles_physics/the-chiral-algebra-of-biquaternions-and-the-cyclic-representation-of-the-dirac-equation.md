@@ -58,13 +58,13 @@ $$
 **Uniform nullquaternions** are the biquaternions
 
 $$
-N = \lambda(1, \vec n), \qquad \vec n \in \mathbb{R}^3, \quad |\vec n| = 1, \quad \lambda \in \mathbb{C},
+N = \lambda(1, \hat u), \qquad \hat u \in \mathbb{R}^3, \quad |\hat u| = 1, \quad \lambda \in \mathbb{C},
 $$
 
-with the property that $\mathcal{B}\bar{\mathcal{B}} = 0$. The author normalises to $\lambda = \tfrac12$ and takes a right-handed triad $(\vec A, \vec B, \vec n)$ with $\vec A \times \vec B = \vec n$. The **isotropic basis** is then the four nullquaternions
+with the property that $\mathcal{B}\bar{\mathcal{B}} = 0$. The author normalises to $\lambda = \tfrac12$ and takes a right-handed triad $(\vec A, \vec B, \hat u)$ with $\vec A \times \vec B = \hat u$. The **isotropic basis** is then the four nullquaternions
 
 $$
-\vec q = \tfrac12(\vec A + i\vec B), \qquad \vec q^* = \tfrac12(\vec A - i\vec B), \qquad N = \tfrac12(1, \vec n), \qquad \bar{N} = \tfrac12(1, -\vec n),
+\vec q = \tfrac12(\vec A + i\vec B), \qquad \vec q^* = \tfrac12(\vec A - i\vec B), \qquad N = \tfrac12(1, \hat u), \qquad \bar{N} = \tfrac12(1, -\hat u),
 \tag{2}
 $$
 
@@ -82,7 +82,7 @@ $$
 \tag{4}
 $$
 
-which splits into a **transverse** part $\vec u = \alpha\vec q + \beta\vec q^*$ lying in the plane $\Pi$ spanned by $\vec A$ and $\vec B$, and a **longitudinal** part $\mathcal{P} = \xi N + \eta\bar{N}$ whose vector part is along $\vec n$. On space-time the coordinates are the light-cone coordinates
+which splits into a **transverse** part $\vec u = \alpha\vec q + \beta\vec q^*$ lying in the plane $\Pi$ spanned by $\vec A$ and $\vec B$, and a **longitudinal** part $\mathcal{P} = \xi N + \eta\bar{N}$ whose vector part is along $\hat u$. On space-time the coordinates are the light-cone coordinates
 
 $$
 \alpha = x - iy, \qquad \beta = x + iy, \qquad \xi = t + z, \qquad \eta = t - z,
@@ -111,7 +111,7 @@ $$
 
 for every $\mathcal{B}$.
 
-The correspondence with the corpus is again a Peirce correspondence but not an identity. The corpus's projectors are $\pi_{1,2} = \tfrac12(1 \pm e_1)$, with $\pi_1 \pi_2 = 0$; the paper's $N$ and $\bar{N}$ play the same role for the light-cone direction $\vec n$, and the author's chiral projectors turn out to be the signed parts themselves. The corpus's chirality projectors are the $\tfrac12(1 \pm \gamma_5)$ of the matrix representation (*The Dirac Algebra and Biquaternions — A Dictionary*, *gamma-five and the chirality projectors*); the paper's are not $\gamma_5$ but the two Peirce components of the light-cone decomposition, which is a different split.
+The correspondence with the corpus is again a Peirce correspondence but not an identity. The corpus's projectors are $\pi_{1,2} = \tfrac12(1 \pm e_1)$, with $\pi_1 \pi_2 = 0$; the paper's $N$ and $\bar{N}$ play the same role for the light-cone direction $\hat u$, and the author's chiral projectors turn out to be the signed parts themselves. The corpus's chirality projectors are the $\tfrac12(1 \pm \gamma_5)$ of the matrix representation (*The Dirac Algebra and Biquaternions — A Dictionary*, *gamma-five and the chirality projectors*); the paper's are not $\gamma_5$ but the two Peirce components of the light-cone decomposition, which is a different split.
 
 ### The Four Multiplication Types
 
@@ -327,7 +327,7 @@ In the first, both sides are negative signed biquaternions, that is left-chiral 
 
 ### The Boost and the Energy–Momentum Operators
 
-The paper treats one special Lorentz transformation, the boost of velocity $V = \tanh 2\theta$ along the chosen longitudinal direction $\vec n$, with the wave function written in the chiral algebra. In Weyl components the boost is
+The paper treats one special Lorentz transformation, the boost of velocity $V = \tanh 2\theta$ along the chosen longitudinal direction $\hat u$, with the wave function written in the chiral algebra. In Weyl components the boost is
 
 $$
 \psi_L = \begin{pmatrix} u \\ v \end{pmatrix} \mapsto \begin{pmatrix} e^{-\theta} u \\ e^{\theta} v \end{pmatrix}, \qquad
@@ -512,7 +512,7 @@ The remaining physical items are recorded as the author's claims. The boost, the
 
 ## Summary
 
-The source builds a purpose-made **chiral algebra** of biquaternions and writes the Dirac equation in it as a single expression. The algebra starts from the light-cone basis: the four nullquaternions $\vec q$, $\vec q^*$, $N$, $\bar{N}$ of (2), with $\vec q\vec q^* = N$, $\vec q^*\vec q = \bar{N}$ and $N\bar{N} = 0$, in which every biquaternion has the unique light-cone decomposition (4) and splits into a transverse part in the null plane and a longitudinal part along the chosen real direction $\vec n$. That decomposition is the corpus's Peirce decomposition, moved to the light-cone basis. On it the paper defines three things new to the corpus. First, **four general products** — outer, inner, diagonal and crossing — the outer one being the Pauli-type product $\vec u_1\cdot\vec u_2 + i\,\vec u_1\times\vec u_2$, which is not the corpus's Hamilton product and differs from it in the sign of the dot and the cross; the inner one having the remarkable properties $\vec q\otimes\vec q = \vec q$, $N\otimes\bar{N} = \vec q$, $\lambda_1\otimes\lambda_2 = \lambda_1\lambda_2\vec A$ and a genuine failure of compatibility with scalar multiplication; the crossing one being the projector law $\mathcal{P}^+\rightsquigarrow\mathcal{B} = \mathcal{B}^+$ that makes the two chiralities signed projectors. Second, **three exchange conjugations**, the coordinate permutations (10), which are not the corpus's conjugations but a change of product type. Third, **cyclic conjugation**, the four-cycle (12), whose fourth iterate is the identity and whose square is the exchange conjugation of the second type. The reformulation then reads: the biquaternion wave function (16) has the two Weyl chiralities as its two signed parts, $F^+ \sim \psi_R$ and $F^- \sim \psi_L$; the Dirac equation is the single expression $F^- \odot \bar{D} + D \otimes F^+ = im\overset{⤺}{F}$; its component form (21) is exactly the Weyl system under the correspondence (18), verified row by row; and the cyclic conjugation, read in Cartesian components, is the complex Hadamard matrix $H_4$. Around this the paper adds the machinery that makes the reading physical: the matrix picture, in which the outer product is the ordinary $2\times2$ matrix product and the diagonal product is the ordinary product under the map (32) — the Appendix's claimed second isomorphism, for the **inner** product, is false, and it is the diagonal that takes that place — a Lorentz boost acting by right-multiplication, whose components reproduce the Weyl boost, plane-wave solutions closing exactly on the mass shell $\epsilon^2 - \vec k^2 = m^2$, and the spin operators, which are the Pauli matrices under the diagonal-product isomorphism, with the exchange conjugation as the longitudinal spin flip. The apparatus is sound and largely verified; the equivalence is exact; the physical readings — the rotation transformation as the creator of the particle's proper rotation, the identification of the cyclic operation with spin, the superluminal branch, and the informational reading of the Hadamard matrix — are the author's. Three structural claims do not survive recomputation or could not be reproduced from the extracted text: the product-reversal law (11) and the boost's two-product identity (25), which could not be reproduced, and the Appendix's second matrix isomorphism (81)–(82), which is false in both printed forms.
+The source builds a purpose-made **chiral algebra** of biquaternions and writes the Dirac equation in it as a single expression. The algebra starts from the light-cone basis: the four nullquaternions $\vec q$, $\vec q^*$, $N$, $\bar{N}$ of (2), with $\vec q\vec q^* = N$, $\vec q^*\vec q = \bar{N}$ and $N\bar{N} = 0$, in which every biquaternion has the unique light-cone decomposition (4) and splits into a transverse part in the null plane and a longitudinal part along the chosen real direction $\hat u$. That decomposition is the corpus's Peirce decomposition, moved to the light-cone basis. On it the paper defines three things new to the corpus. First, **four general products** — outer, inner, diagonal and crossing — the outer one being the Pauli-type product $\vec u_1\cdot\vec u_2 + i\,\vec u_1\times\vec u_2$, which is not the corpus's Hamilton product and differs from it in the sign of the dot and the cross; the inner one having the remarkable properties $\vec q\otimes\vec q = \vec q$, $N\otimes\bar{N} = \vec q$, $\lambda_1\otimes\lambda_2 = \lambda_1\lambda_2\vec A$ and a genuine failure of compatibility with scalar multiplication; the crossing one being the projector law $\mathcal{P}^+\rightsquigarrow\mathcal{B} = \mathcal{B}^+$ that makes the two chiralities signed projectors. Second, **three exchange conjugations**, the coordinate permutations (10), which are not the corpus's conjugations but a change of product type. Third, **cyclic conjugation**, the four-cycle (12), whose fourth iterate is the identity and whose square is the exchange conjugation of the second type. The reformulation then reads: the biquaternion wave function (16) has the two Weyl chiralities as its two signed parts, $F^+ \sim \psi_R$ and $F^- \sim \psi_L$; the Dirac equation is the single expression $F^- \odot \bar{D} + D \otimes F^+ = im\overset{⤺}{F}$; its component form (21) is exactly the Weyl system under the correspondence (18), verified row by row; and the cyclic conjugation, read in Cartesian components, is the complex Hadamard matrix $H_4$. Around this the paper adds the machinery that makes the reading physical: the matrix picture, in which the outer product is the ordinary $2\times2$ matrix product and the diagonal product is the ordinary product under the map (32) — the Appendix's claimed second isomorphism, for the **inner** product, is false, and it is the diagonal that takes that place — a Lorentz boost acting by right-multiplication, whose components reproduce the Weyl boost, plane-wave solutions closing exactly on the mass shell $\epsilon^2 - \vec k^2 = m^2$, and the spin operators, which are the Pauli matrices under the diagonal-product isomorphism, with the exchange conjugation as the longitudinal spin flip. The apparatus is sound and largely verified; the equivalence is exact; the physical readings — the rotation transformation as the creator of the particle's proper rotation, the identification of the cyclic operation with spin, the superluminal branch, and the informational reading of the Hadamard matrix — are the author's. Three structural claims do not survive recomputation or could not be reproduced from the extracted text: the product-reversal law (11) and the boost's two-product identity (25), which could not be reproduced, and the Appendix's second matrix isomorphism (81)–(82), which is false in both printed forms.
 
 ## Summary of Notation
 
@@ -523,10 +523,10 @@ The source builds a purpose-made **chiral algebra** of biquaternions and writes 
 | $\mathcal{B} = (s, \vec u)$ | Scalar-vector (Silberstein) form: complex scalar $s$, complex vector $\vec u$ |
 | $\mathcal{B}^*, \bar{\mathcal{B}}, \bar{\mathcal{B}}^*$ | Complex, vector (quaternion), and double (Hermitian) conjugates |
 | $\lvert\mathcal{B}\rvert^2 = \mathcal{B}\bar{\mathcal{B}} = s^2 - \vec u^2$ | Square modulus (complex) |
-| $\vec A, \vec B, \vec n$ | Right-handed real triad, $\vec A\times\vec B = \vec n$, unit lengths |
+| $\vec A, \vec B, \hat u$ | Right-handed real triad, $\vec A\times\vec B = \hat u$, unit lengths |
 | $\Pi$ | The null (transverse) plane spanned by $\vec A$ and $\vec B$ |
 | $\vec q = \tfrac12(\vec A+i\vec B),\ \vec q^*$ | Nullvectors; $\vec q^2 = 0$ |
-| $N = \tfrac12(1, \vec n),\ \bar{N}$ | Uniform nullquaternions (idempotents); $N^2 = N$, $N\bar{N} = 0$ |
+| $N = \tfrac12(1, \hat u),\ \bar{N}$ | Uniform nullquaternions (idempotents); $N^2 = N$, $N\bar{N} = 0$ |
 | $\alpha, \beta, \xi, \eta$ | Isotropic coordinates: $\alpha = x-iy$, $\beta = x+iy$, $\xi = t+z$, $\eta = t-z$ |
 | $\mathcal{B}^+, \mathcal{B}^-$ | Signed (positive, negative) biquaternions; the Peirce components |
 | $\mathcal{P}^+, \mathcal{P}^-$ | Positive and negative projectors for the crossing product |

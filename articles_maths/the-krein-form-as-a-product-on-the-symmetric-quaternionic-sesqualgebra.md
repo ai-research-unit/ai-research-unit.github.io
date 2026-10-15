@@ -64,7 +64,7 @@ a real algebraic cone of real dimension seven through the origin, of real codime
 
 *Proof.* $K(\tilde P,\tilde P)=|P_0|^{2}-\sum_k|P_k|^{2}$, which vanishes exactly on the displayed set; the equation is one real equation on the eight real coordinates, so the real dimension is seven, and on the four real coordinates of the real quaternion subspace it is one real equation, of real dimension three. The cone is algebraic and homogeneous of degree two in the real coordinates.
 
-**Worked examples.** $e_0+e_1$, $e_0+e_2$, $e_0+e_3$ are isotropic; $e_1+ie_2$ is not, since $K(e_1+ie_2,e_1+ie_2)=-1-1=-2$; and the square-zero elements of *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra*, among them $e_0+i\vec n$ for real unit $\vec n$, are isotropic.
+**Worked examples.** $e_0+e_1$, $e_0+e_2$, $e_0+e_3$ are isotropic; $e_1+ie_2$ is not, since $K(e_1+ie_2,e_1+ie_2)=-1-1=-2$; and the square-zero elements of *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra*, among them $e_0+i\hat u$ for real unit $\hat u$, are isotropic.
 
 **Remark (isotropy is wider than square zero).** The isotropic set is exactly the set of elements whose square has zero scalar part; the square-zero set also asks for the vanishing of the vector part. So square zero is a condition on the element, isotropy a condition on its scalar part alone, and $e_0+e_1$ separates the two: it is isotropic, and its square is $-2e_1$.
 
@@ -192,11 +192,11 @@ The scalar part of the block is the Krein form $K(\tilde P,\tilde Q)=\mathrm{Sc}
 ## Further Reading
 
 - *The Krein Gram Matrix and the Restrictions of the Form* (`articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md`), for the form $K$, its Gram matrix and its restrictions.
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the four pairings of which $K$ is one.
+- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the four pairings of which $K$ is one.
 - *The Isotropic Structure of the General Quaternionic Sesqualgebra* (`articles_maths/the-isotropic-structure-of-the-general-quaternionic-sesqualgebra.md`), for the isotropic structure of the form.
-- *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra* (`articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternion-algebra.md`), for the indefinite positivity and the cone.
-- *Remarkable Subspaces under the General Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-sesqualgebra-of-biquaternions.md`), for the remarkable subspaces and the restrictions of the forms.
-- *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra-of-biquaternions.md`), for the product whose scalar part is the form.
+- *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra* (`articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternioid-algebra.md`), for the indefinite positivity and the cone.
+- *Remarkable Subspaces under the General Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-sesqualgebra.md`), for the remarkable subspaces and the restrictions of the forms.
+- *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra.md`), for the product whose scalar part is the form.
 - *The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-non-central-algebraic-norm-and-the-two-halves-of-the-symmetric-quaternionic-sesqualgebra.md`), for the square-zero family, which lies inside the isotropic cone.
 - *Comparison Between the Four General Products* (`articles_maths/comparison-between-the-four-general-products.md`), for the four scalar parts and their comparison.
 - *The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-sesqualgebra.md`), for the adjoint relation in operator form.

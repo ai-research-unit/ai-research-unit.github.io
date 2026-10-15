@@ -437,7 +437,7 @@ $$
 
 So a sequence that grows at most geometrically, $r(f_n) \le \sigma_f^{\,n}$, has terms of seminorm tending to zero as soon as $r(\tilde{Q}) > \sigma_f$, and the Z-transform literature takes the **region of convergence** to be this set, with $\sigma_f$ the **radius of convergence**. Two corrections come from the vanishing of $r$ on the zero divisors.
 
-**Vanishing of the seminorm is not convergence.** The standard idempotent of *Idempotents of the General Plain Algebra* is the one attached to the root $ie_3$ of $+1$: here $(ie_3)^2 = e_0$, and the two idempotents $\tilde\Pi_+ = \tfrac12(e_0+ie_3)$ and $\tilde\Pi_- = \tfrac12(e_0-ie_3)$ are its associated idempotents.
+**Vanishing of the seminorm is not convergence.** The standard idempotent of *Idempotents of the Biquaternion Algebra* is the one attached to the root $ie_3$ of $+1$: here $(ie_3)^2 = e_0$, and the two idempotents $\tilde\Pi_+ = \tfrac12(e_0+ie_3)$ and $\tilde\Pi_- = \tfrac12(e_0-ie_3)$ are its associated idempotents.
 
 $$
 \tilde\Pi_+ = \tfrac12(e_0 + ie_3), \qquad \tilde\Pi_+^2 = \tilde\Pi_+, \qquad N(\tilde\Pi_+) = 0, \qquad r(\tilde\Pi_+) = 0,

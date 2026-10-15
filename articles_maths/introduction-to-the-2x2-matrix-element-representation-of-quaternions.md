@@ -4,7 +4,7 @@
 
 The quaternion algebra $\mathbb{H}$ is realized, as a real algebra, by a four-dimensional subspace of the $2\times2$ complex matrices: the map assigns to $e_0,e_1,e_2,e_3$ four displayed matrices, extends by real linearity, and is multiplicative. This article presents the map, the trace and the determinant of the image, the images of the scalar and vector subspaces, the reason the image is a proper subspace of $M_2(\mathbb{C})$, and the form the conjugations take.
 
-The article is the first of the two matrix articles of the group; the companion is *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{R})_L$ of Quaternions*, below this article in this category, where the left regular representation realizes $\mathbb{H}$ inside the real matrices. This article owns the map, the multiplicativity, the trace, the determinant, the subspace conditions and the conjugation forms. The further development — the rank-one elements, the characteristic polynomial and the Cayley–Hamilton identity, the simple module and the matrix units — belongs to the blocks of *The General Plain Algebra in the 2×2 Matrix Element Representation $M_2(\mathbb{C})$*, below this article in this category.
+The article is the first of the two matrix articles of the group; the companion is *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{R})_L$ of Quaternions*, below this article in this category, where the left regular representation realizes $\mathbb{H}$ inside the real matrices. This article owns the map, the multiplicativity, the trace, the determinant, the subspace conditions and the conjugation forms. The further development — the rank-one elements, the characteristic polynomial and the Cayley–Hamilton identity, the simple module and the matrix units — belongs to the blocks of *The Quaternion Algebra in the 2×2 Matrix Element Representation $M_2(\mathbb{C})$*, below this article in this category.
 
 ## The Embedding
 
@@ -102,4 +102,4 @@ The quaternion algebra embeds in $M_2(\mathbb{C})$ by $e_0\mapsto I$, $e_k\mapst
 
 - *Quaternion Algebra* (`articles_maths/quaternion-algebra.md`), for the element and the multiplication table.
 - *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{R})_L$ of Quaternions* (`articles_maths/introduction-to-the-4x4-matrix-element-representation-of-quaternions.md`), below this article in this category, for the left regular representation.
-- *The General Plain Algebra in the 2×2 Matrix Element Representation $M_2(\mathbb{C})$* (`articles_maths/the-general-plain-algebra-in-the-2x2-matrix-element-representation-of-quaternions.md`), below this article in this category, for the rank-one elements and the further development.
+- *The Quaternion Algebra in the 2×2 Matrix Element Representation $M_2(\mathbb{C})$* (`articles_maths/the-quaternion-algebra-in-the-2x2-matrix-element-representation.md`), below this article in this category, for the rank-one elements and the further development.

@@ -7,7 +7,7 @@ This article is the integration slot of the octonion system. It treats the integ
 
 The article is the octonion member of the integration slots of this Part and follows the model of the *Quaternion Integration* and *Split-Biquaternion Integration*, together with the Cauchy theory of *Clifford Modules and the Twisted Cauchy–Riemann Operator*. It takes the operator $D$, the kernel $E$, the monogenic class and the Cauchy–Pompeiu formula from *Octonion Analysis* and does not repeat them; the object here is the integral as an operation. The harmonic analysis on $\mathbb{O}$ is the subject, and the functions of the next slot.
 
-**Conventions.** As in *Octonion Analysis*: $\mathbb{O}$ with basis $e_0,\dots,e_7$, variable $\tilde o = \sum_ko_ke_k$, partial derivatives $\partial_k$, conjugation $\bar\cdot$, inner product $\langle \tilde o,\tilde p\rangle = \operatorname{Sc}(\tilde o \tilde p^{\natural})$, norm $\lvert \tilde o\rvert^2 = \tilde o \tilde o^{\natural}$; the Cauchy–Riemann operator is $D = \sum_{k=0}^{7}e_k\partial_k$ and its conjugate $\bar D = \partial_0 - \sum_{k\geq1}e_k\partial_k$, with $D\bar D = \bar DD = \Delta_8$; the kernel is $E(\tilde o) = \tilde o^{\natural}/(\omega_7\lvert \tilde o\rvert^8)$, $\omega_7 = \operatorname{vol}S^7 = \pi^4/3$; $\mathcal{M}_L$ and $\mathcal{M}_R$ are the left- and right-monogenic classes. Integrals are taken with respect to the Euclidean volume and surface measures $dV$ and $dS$, and a domain is a bounded connected open set with smooth boundary, oriented as the boundary of the domain, with outward unit normal $n$.
+**Conventions.** As in *Octonion Analysis*: $\mathbb{O}$ with basis $e_0,\dots,e_7$, variable $o = \sum_ko_ke_k$, partial derivatives $\partial_k$, conjugation $\bar\cdot$, inner product $\langle o,p\rangle = \operatorname{Sc}(o p^{\natural})$, norm $\lvert o\rvert^2 = o o^{\natural}$; the Cauchy–Riemann operator is $D = \sum_{k=0}^{7}e_k\partial_k$ and its conjugate $\bar D = \partial_0 - \sum_{k\geq1}e_k\partial_k$, with $D\bar D = \bar DD = \Delta_8$; the kernel is $E(o) = o^{\natural}/(\omega_7\lvert o\rvert^8)$, $\omega_7 = \operatorname{vol}S^7 = \pi^4/3$; $\mathcal{M}_L$ and $\mathcal{M}_R$ are the left- and right-monogenic classes. Integrals are taken with respect to the Euclidean volume and surface measures $dV$ and $dS$, and a domain is a bounded connected open set with smooth boundary, oriented as the boundary of the domain, with outward unit normal $n$.
 
 ## Integrals of Octonion-Valued Functions
 
@@ -32,13 +32,13 @@ so that multiplication by a constant commutes with integration exactly as it com
 **Theorem (divergence theorem).** Let $\Omega$ be a domain with smooth boundary and $f$ a $C^1$ octonion-valued function on $\bar\Omega$. Then
 
 $$
-\int_{\partial\Omega}n(\tilde p)f(\tilde p)\,dS(\tilde p) = \int_\Omega \left(\bar D f\right)(\tilde p)\,dV(\tilde p), \qquad\text{where } \bar D = \partial_0 - \sum_{k\geq1}e_k\partial_k ,
+\int_{\partial\Omega}n(p)f(p)\,dS(p) = \int_\Omega \left(\bar D f\right)(p)\,dV(p), \qquad\text{where } \bar D = \partial_0 - \sum_{k\geq1}e_k\partial_k ,
 $$
 
 and, with the operator acting from the right,
 
 $$
-\int_{\partial\Omega}f(\tilde p)n(\tilde p)\,dS(\tilde p) = \int_\Omega (fD)(\tilde p)\,dV(\tilde p) .
+\int_{\partial\Omega}f(p)n(p)\,dS(p) = \int_\Omega (fD)(p)\,dV(p) .
 $$
 
 *Proof.* The first identity is the classical divergence theorem applied to the eight real components of $f$: the normal component $n_kf$ has divergence $\partial_kf$, and assembling the eight identities with the basis elements and the signs of $\bar D$ gives the display. The order of the factors is the order of the multiplication by the constant basis elements in the assembly. The second identity is the same statement with the roles of the basis elements reversed, that is, it is the first identity applied to the conjugate function and conjugated back, using the conjugacy $(Df)^{\natural} = f^{\natural}D$ of *Octonion Analysis*.
@@ -48,7 +48,7 @@ The divergence theorem is the fundamental integration identity of the octonionic
 **Corollary (Green's identity).** Let $u$ be real-valued of class $C^1$ and $v$ octonion-valued of class $C^1$ on $\bar\Omega$. Then
 
 $$
-\int_{\partial\Omega}u(\tilde p)\,n(\tilde p)\,v(\tilde p)\,dS(\tilde p) = \int_\Omega\left[(\bar Du)(\tilde p)\,v(\tilde p) + u(\tilde p)\,(\bar Dv)(\tilde p)\right]dV(\tilde p) ,
+\int_{\partial\Omega}u(p)\,n(p)\,v(p)\,dS(p) = \int_\Omega\left[(\bar Du)(p)\,v(p) + u(p)\,(\bar Dv)(p)\right]dV(p) ,
 $$
 
 with the multiplication by the scalar $u$ on the left of $v$ in both terms.
@@ -59,35 +59,35 @@ with the multiplication by the scalar $u$ on the left of $v$ in both terms.
 
 ## The Cauchy Integral Theorem
 
-**Theorem (Cauchy integral theorem).** Let $f$ be left-monogenic on a domain $\Omega$ containing a closed hypersurface $\Sigma$ bounding a domain $\Omega_\Sigma$, and let $\tilde o\notin\bar\Omega_\Sigma$. Then
+**Theorem (Cauchy integral theorem).** Let $f$ be left-monogenic on a domain $\Omega$ containing a closed hypersurface $\Sigma$ bounding a domain $\Omega_\Sigma$, and let $o\notin\bar\Omega_\Sigma$. Then
 
 $$
-\int_\Sigma \frac{(\tilde p-\tilde o)^{\natural}}{\lvert \tilde p - \tilde o\rvert^8}\,n(\tilde p)\,f(\tilde p)\,dS(\tilde p) = 0 ,
+\int_\Sigma \frac{(p-o)^{\natural}}{\lvert p - o\rvert^8}\,n(p)\,f(p)\,dS(p) = 0 ,
 $$
 
-and more generally the integral $\int_\Sigma K_{\tilde o}(\tilde p)\,n(\tilde p)f(\tilde p)dS(\tilde p)$ depends only on the homology class of $\Sigma$ in $\Omega\setminus\{\tilde o\}$, where $K_{\tilde o}(\tilde p) = (\tilde p-\tilde o)^{\natural}/\lvert \tilde p-\tilde o\rvert^8$ and $n$ is the outer normal of the region bounded.
+and more generally the integral $\int_\Sigma K_{o}(p)\,n(p)f(p)dS(p)$ depends only on the homology class of $\Sigma$ in $\Omega\setminus\{o\}$, where $K_{o}(p) = (p-o)^{\natural}/\lvert p-o\rvert^8$ and $n$ is the outer normal of the region bounded.
 
-*Proof.* The integrand is $E(\tilde p-\tilde o)n(\tilde p)f(\tilde p)$, and its divergence with respect to $\tilde p$ is computed by the product rule; for $\tilde p\neq \tilde o$ the kernel is monogenic on both sides, and the terms combine to a divergence, so Stokes' theorem makes the integral depend only on the homology class. The argument is the standard one of the Cauchy theory of the octonionic operator, with the sources cited; the cancellations happen before any product of two monogenic functions is formed.
+*Proof.* The integrand is $E(p-o)n(p)f(p)$, and its divergence with respect to $p$ is computed by the product rule; for $p\neq o$ the kernel is monogenic on both sides, and the terms combine to a divergence, so Stokes' theorem makes the integral depend only on the homology class. The argument is the standard one of the Cauchy theory of the octonionic operator, with the sources cited; the cancellations happen before any product of two monogenic functions is formed.
 
 **Corollary.** The kernel is normalised by the sphere: for every $r>0$,
 
 $$
-\frac{1}{\omega_7}\int_{\lvert \tilde p\rvert = r}\frac{\tilde p^{\natural}}{r^8}\,\frac{\tilde p}{r}\,dS(\tilde p) = e_0 ,
+\frac{1}{\omega_7}\int_{\lvert p\rvert = r}\frac{p^{\natural}}{r^8}\,\frac{p}{r}\,dS(p) = e_0 ,
 $$
 
 so that the integral of the kernel against the outer normal over a sphere is the identity, independently of the radius.
 
-*Proof.* Apply the Cauchy integral formula of *Octonion Analysis* to the constant function $f = e_0$ and $\tilde o = 0$; the left side is the displayed integral. Alternatively, compute it directly: $\tilde p^{\natural}\tilde p = r^2$, so the integrand is $r^{-7}e_0dS$ and the integral is $\omega_7r^7\cdot r^{-7}e_0 = \omega_7e_0$.
+*Proof.* Apply the Cauchy integral formula of *Octonion Analysis* to the constant function $f = e_0$ and $o = 0$; the left side is the displayed integral. Alternatively, compute it directly: $p^{\natural}p = r^2$, so the integrand is $r^{-7}e_0dS$ and the integral is $\omega_7r^7\cdot r^{-7}e_0 = \omega_7e_0$.
 
 The corollary exhibits the sphere as the cycle that detects the singularity of the kernel, in exact analogy with the complex and quaternionic cases; it is the source of the Cauchy formula and of the "winding" of a general cycle relative to a point.
 
-**Theorem (homology form of the Cauchy formula).** Let $f$ be left-monogenic on a domain $\Omega$, let $\tilde o\in\Omega$, and let $\Sigma\subset\Omega\setminus\{\tilde o\}$ be a closed oriented hypersurface homologous in $\Omega\setminus\{\tilde o\}$ to a small sphere around $\tilde o$ with the linking orientation. Then
+**Theorem (homology form of the Cauchy formula).** Let $f$ be left-monogenic on a domain $\Omega$, let $o\in\Omega$, and let $\Sigma\subset\Omega\setminus\{o\}$ be a closed oriented hypersurface homologous in $\Omega\setminus\{o\}$ to a small sphere around $o$ with the linking orientation. Then
 
 $$
-f(\tilde o) = \frac{1}{\omega_7}\int_\Sigma E(\tilde p-\tilde o)\,n(\tilde p)\,f(\tilde p)\,dS(\tilde p) .
+f(o) = \frac{1}{\omega_7}\int_\Sigma E(p-o)\,n(p)\,f(p)\,dS(p) .
 $$
 
-*Proof.* The difference of the two cycles is a boundary in $\Omega\setminus\{\tilde o\}$, and the Cauchy integral over a boundary is zero by the Cauchy integral theorem; hence the integrals over $\Sigma$ and over the small sphere agree, and the latter equals $f(\tilde o)$ by the Cauchy formula on a ball.
+*Proof.* The difference of the two cycles is a boundary in $\Omega\setminus\{o\}$, and the Cauchy integral over a boundary is zero by the Cauchy integral theorem; hence the integrals over $\Sigma$ and over the small sphere agree, and the latter equals $f(o)$ by the Cauchy formula on a ball.
 
 The homology form is the reason why the Cauchy integral is a topological object in the octonionic case as in the associative cases: the value at a point is determined by a cycle up to homology, and the entire dependence on the function is through its boundary values on that cycle.
 
@@ -96,18 +96,18 @@ The homology form is the reason why the Cauchy integral is a topological object 
 **Definition.** Let $\Sigma$ be a closed hypersurface bounding a domain $\Omega$ with outward normal $n$ and let $f$ be a Hölder-continuous $\mathbb{O}$-valued function on $\Sigma$. The **Cauchy integral operator** is
 
 $$
-(\mathcal{C}f)(\tilde o) = \frac{1}{\omega_7}\int_\Sigma E(\tilde p-\tilde o)\,n(\tilde p)\,f(\tilde p)\,dS(\tilde p), \qquad \tilde o\notin\Sigma .
+(\mathcal{C}f)(o) = \frac{1}{\omega_7}\int_\Sigma E(p-o)\,n(p)\,f(p)\,dS(p), \qquad o\notin\Sigma .
 $$
 
 **Theorem (jump formulas).** The function $\mathcal{C}f$ is left-monogenic on the complement of $\Sigma$, vanishes at infinity, and has boundary values from the two sides related by
 
 $$
-(\mathcal{C}f)^+(\tilde r) = \tfrac12 f(\tilde r) + (\mathcal{C}f)(\tilde r), \qquad (\mathcal{C}f)^-(\tilde r) = -\tfrac12 f(\tilde r) + (\mathcal{C}f)(\tilde r), \qquad \tilde r\in\Sigma ,
+(\mathcal{C}f)^+(r) = \tfrac12 f(r) + (\mathcal{C}f)(r), \qquad (\mathcal{C}f)^-(r) = -\tfrac12 f(r) + (\mathcal{C}f)(r), \qquad r\in\Sigma ,
 $$
 
 where the integrals are principal values and $(\mathcal{C}f)^\pm$ denote the limits from outside and from inside; hence $(\mathcal{C}f)^+ - (\mathcal{C}f)^- = f$.
 
-*Proof.* The standard Plemelj–Sokhotski argument: the singular integral with the kernel $E(\tilde p-\tilde o)$ has a principal value, and the difference of the two boundary values is the integral of the kernel over an infinitesimal sphere, which is the identity by the normalisation corollary. The monogenicity away from $\Sigma$ is the monogenicity of the kernel composed with the function. The argument uses the associativity of the triple products involved only in the order in which they are written.
+*Proof.* The standard Plemelj–Sokhotski argument: the singular integral with the kernel $E(p-o)$ has a principal value, and the difference of the two boundary values is the integral of the kernel over an infinitesimal sphere, which is the identity by the normalisation corollary. The monogenicity away from $\Sigma$ is the monogenicity of the kernel composed with the function. The argument uses the associativity of the triple products involved only in the order in which they are written.
 
 The jump formulas are the boundary-value theory of the octonionic Cauchy integral, and they are the exact analogues of the complex ones, because the singularity of the kernel is detected by the sphere and the sphere integral is a scalar multiple of the identity; what fails in the octonionic case, and fails also for the quaternions, is the possibility of iterating the operator to obtain a product formula for boundary values, since the composition of two Cauchy integrals would require the product of two monogenic functions, which need not be monogenic.
 
@@ -116,12 +116,12 @@ The jump formulas are the boundary-value theory of the octonionic Cauchy integra
 **Theorem.** The composition of the Cauchy integral operator with itself does not have the classical form: for $f$ continuous on $\Sigma$, the iterated integral
 
 $$
-(\mathcal{C}\mathcal{C}f)(\tilde o) = \frac{1}{\omega_7^2}\int_\Sigma E(\tilde p-\tilde o)n(\tilde p)\left(\int_\Sigma E(\tilde r-\tilde p)n(\tilde r)f(\tilde r)dS(\tilde r)\right)dS(\tilde p)
+(\mathcal{C}\mathcal{C}f)(o) = \frac{1}{\omega_7^2}\int_\Sigma E(p-o)n(p)\left(\int_\Sigma E(r-p)n(r)f(r)dS(r)\right)dS(p)
 $$
 
 is not in general equal to $\mathcal{C}f$ or to a constant multiple of $f$, and there is no identity of the form $\mathcal{C}^2 = \mathcal{C}$.
 
-*Proof.* The classical proof of the idempotence of the Cauchy transform uses the associativity of the product of the kernel with the function to interchange the order of the two integrations and identify a composition kernel; in the octonionic case the interchange produces associator terms $[E(\tilde p-\tilde o),n(\tilde p),E(\tilde r-\tilde p)]$, which do not vanish identically, and the composition kernel is not the single kernel. Hence no such identity holds; the failure is the same as the failure of the product of monogenic functions to be monogenic, transferred to the level of the integral.
+*Proof.* The classical proof of the idempotence of the Cauchy transform uses the associativity of the product of the kernel with the function to interchange the order of the two integrations and identify a composition kernel; in the octonionic case the interchange produces associator terms $[E(p-o),n(p),E(r-p)]$, which do not vanish identically, and the composition kernel is not the single kernel. Hence no such identity holds; the failure is the same as the failure of the product of monogenic functions to be monogenic, transferred to the level of the integral.
 
 This is the integration-theoretic face of the failure of the Leibniz rule of *Octonion Analysis*: the Cauchy integral is a good operator, but it is not an idempotent projector, and the space of boundary values is not an algebra of holomorphic-type functions in the sense of the complex theory. The harmonic analysis takes the place of the missing function algebra in the spectral description.
 
@@ -138,7 +138,7 @@ The shift $k+6$ is the octonionic case of the general rule $k+n-2$ for spherical
 **Proposition.** For a left-monogenic function $f$ on a ball of radius $r$ the surface integral of $f$ over the sphere is computable from the value at the centre,
 
 $$
-\int_{\lvert \tilde p\rvert = r}f(\tilde p)\,dS(\tilde p) = \omega_7r^7f(0),
+\int_{\lvert p\rvert = r}f(p)\,dS(p) = \omega_7r^7f(0),
 $$
 
 and more generally the mean value property of *Octonion Analysis* expresses every interior value as a surface integral over a sphere centred at the point.
@@ -180,12 +180,12 @@ The corollary is the integral form of the calibration statement: the constancy o
 Integration of octonion-valued functions is componentwise, hence $\mathbb{R}$-linear, and multiplication by a constant passes through the integral from either side; the position of a constant factor in the integrand is part of the meaning of the integral, because the algebra is not commutative. The divergence theorem reads
 
 $$
-\int_{\partial\Omega}n(\tilde p)f(\tilde p)dS(\tilde p) = \int_\Omega(\bar Df)(\tilde p)dV(\tilde p), \qquad \int_{\partial\Omega}f(\tilde p)n(\tilde p)dS(\tilde p) = \int_\Omega(fD)(\tilde p)dV(\tilde p),
+\int_{\partial\Omega}n(p)f(p)dS(p) = \int_\Omega(\bar Df)(p)dV(p), \qquad \int_{\partial\Omega}f(p)n(p)dS(p) = \int_\Omega(fD)(p)dV(p),
 $$
 
 with the order of the factors fixed by the operator, and it produces the Green identity for the product of two functions, with the caveat that the identity in its displayed form holds when the associator terms of the product rule vanish.
 
-The Cauchy integral theorem makes the boundary integral of the kernel against a monogenic function depend only on the homology class of the contour; the sphere normalisation shows that the kernel has total mass one against the outer normal, and the homology form of the Cauchy formula recovers $f(\tilde o)$ from any cycle linking $\tilde o$. The Cauchy integral operator has principal values and satisfies the classical jump formulas on a smooth hypersurface, so that the difference of its boundary values is the density; but the operator is not idempotent, because the classical proof requires the interchange of two integrations through an associative product, and the interchanged terms carry associators. Monogenic homogeneous polynomials are harmonic spherical harmonics with the eigenvalue shift $k+6$ in the exponent, orthogonal across degrees, and their integrals against the kernel give the Taylor coefficients.
+The Cauchy integral theorem makes the boundary integral of the kernel against a monogenic function depend only on the homology class of the contour; the sphere normalisation shows that the kernel has total mass one against the outer normal, and the homology form of the Cauchy formula recovers $f(o)$ from any cycle linking $o$. The Cauchy integral operator has principal values and satisfies the classical jump formulas on a smooth hypersurface, so that the difference of its boundary values is the density; but the operator is not idempotent, because the classical proof requires the interchange of two integrations through an associative product, and the interchanged terms carry associators. Monogenic homogeneous polynomials are harmonic spherical harmonics with the eigenvalue shift $k+6$ in the exponent, orthogonal across degrees, and their integrals against the kernel give the Taylor coefficients.
 
 The single structural difference from the associative cases is therefore the failure of the composition law: the Leibniz defect of the octonionic analysis destroys the product formula for monogenic functions and hence the idempotence of the Cauchy transform, while leaving the divergence theorem, the normalisation of the kernel, the homology invariance and the jump formulas intact.
 
@@ -195,14 +195,14 @@ The single structural difference from the associative cases is therefore the fai
 |---|---|
 | $\mathbb{O}$, $e_0,\dots,e_7$ | Octonion algebra and basis, $e_k^2 = -e_0$ for $k\geq1$ |
 | $D = \sum_{k=0}^{7}e_k\partial_k$, $\bar D$ | Cauchy–Riemann operator and its conjugate |
-| $E(\tilde o) = \tilde o^{\natural}/(\omega_7\lvert \tilde o\rvert^8)$ | Kernel, $DE = ED = \delta_0$ |
+| $E(o) = o^{\natural}/(\omega_7\lvert o\rvert^8)$ | Kernel, $DE = ED = \delta_0$ |
 | $\omega_7 = \pi^4/3$ | Volume of $S^7$ |
 | $n$, $dS$, $dV$ | Outward unit normal, surface and volume measures |
 | $\mathcal{M}_L$, $\mathcal{M}_R$ | Left- and right-monogenic functions |
 | $\mathcal{C}f$ | Cauchy integral operator with density $f$ |
 | $(\mathcal{C}f)^\pm$ | Boundary values from outside and inside |
 | $\mathcal{P}_k$ | Left-monogenic homogeneous polynomials of degree $k$ |
-| $[\tilde o,\tilde p,\tilde r]$, $[\tilde o,\tilde p]$ | Associator and commutator |
+| $[o,p,r]$, $[o,p]$ | Associator and commutator |
 
 
 

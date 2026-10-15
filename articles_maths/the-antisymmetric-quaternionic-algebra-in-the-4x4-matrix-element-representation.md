@@ -120,7 +120,7 @@ In the $4\times4$ regular model the operation of the block is half the differenc
 
 ## Further Reading
 
-- *Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra-of-biquaternions.md`), for the operation, its table and the witness of the failure
+- *Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra.md`), for the operation, its table and the witness of the failure
 - *The Adjoint Operators of the Antisymmetric Quaternionic Algebra* (`articles_maths/the-adjoint-operators-of-the-antisymmetric-quaternionic-algebra.md`), for the trace, the determinant, the rank and the kernel of the operator in the coefficient space
 - *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra* (`articles_maths/the-invariant-bilinear-forms-of-the-antisymmetric-quaternionic-algebra.md`), for the invariant form, its Gram matrix and its radical
 - *The General Quaternionic Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$* (`articles_maths/the-general-quaternionic-algebra-in-the-4x4-matrix-element-representation.md`), for the regular representation and the transpose of the conjugation

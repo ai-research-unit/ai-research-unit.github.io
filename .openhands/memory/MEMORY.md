@@ -245,7 +245,7 @@ form a cone" is the English verb (see trap 3 below). Guarded by a boundary-safe 
 - **The two element-theory comparison groups mirror each other and share their titles.** 12-space:
   `zero-divisors`, `annihilators`, `square-roots-of-minus-one-zero-and-plus-one`,
   `square-roots-of-a-general-element`, `idempotents`, `nilpotents`, then
-  `the-general-plain-algebra-and-the-general-plain-sesqualgebra-of-biquaternions-compared`. 6-space: the
+  `the-general-plain-algebra-and-the-general-plain-sesqualgebra-compared`. 6-space: the
   same six slugs with the `quaternion-` file prefix. Per-structure twins of the biquaternion chapter carry
   the `-of-quaternions` suffix. Titles are identical across the two chapters, so a bare *Title* in prose is
   ambiguous outside its chapter; every link must keep its `(articles_maths/...md)` path.
@@ -344,7 +344,7 @@ condition, NOT the definition.
   "projector" in the general-plain and symmetric blocks became "idempotent". Operator-sense uses were kept
   (involutions, Clifford/spinor operators, the matrix models, the `M_2`/`M_4` idempotent matrices, the 2x2 SPA
   theorem "The Hermitian idempotents have **Hermitian projectors** as their matrices").
-- The three *Specificities* articles (`the-specificities-of-the-general-plain-algebra`,
+- The three *Specificities* articles (`the-specificities-of-the-biquaternion-algebra`,
   `-general-quaternionic-algebra`, `-symmetric-quaternionic-algebra`, each with a `.context`) write "projector"
   for the operator and "idempotent" for the element. The article *The Specificities of the Symmetric Quaternionic
   Algebra* is new (2026-09-27) and settles its row of the GPA comparison table: the projectors are the elements of
@@ -364,7 +364,7 @@ condition, NOT the definition.
 - Every norm in prose gets its subject: "the norm of $\tilde P$", never bare "the norm".
 
 ## Name the norm: four algebraic norms, one decides (2026-09-27)
-- The biquaternion corpus carries FOUR algebraic norms, each on two of the twelve products: `B=Q_0^2-Q_1^2-Q_2^2-Q_3^2` (GPA,SPA), `N=Q_0^2+Q_1^2+Q_2^2+Q_3^2` (GQA,SQA), `H=|Q_0|^2+|Q|^2` (GPS,SPS), `K=|Q_0|^2-|Q|^2` (GQS,SQS); the four antisymmetrisations carry none. Owner: `the-4-algebraic-norms-over-the-biquaternion-c-space.md`.
+- The biquaternion corpus carries FOUR algebraic norms, each on two of the twelve products: `B=Q_0^2-Q_1^2-Q_2^2-Q_3^2` (GPA,SPA), `N=Q_0^2+Q_1^2+Q_2^2+Q_3^2` (GQA,SQA), `H=|Q_0|^2+|Q|^2` (GPS,SPS), `K=|Q_0|^2-|Q|^2` (GQS,SQS); the four antisymmetrisations carry none. Owner: `the-4-algebraic-norms-over-the-biquaternioid-c-space.md`.
 - The norm that DECIDES an annihilator is the reduced norm `Norm=Sc(P^nat P)=N`, the determinant of the 2x2 model. It is NOT the algebraic norm the plain product carries: `B` at `e_0+e_1` is 0 while `Norm` is 2 and the element is invertible. Never write bare "the norm" — name it, and say whether it carries or decides.
 
 - Write the norm by letter. `annihilators.md` names `N(P)=Sc(P^nat P)=P0^2+P1^2+P2^2+P3^2` in every cell and subsection; SPS names `H(P,X)=0` and SQS names `{X0=0}∩{K(P,X)=0}`. `Norm` alone is the corpus's generic norm of a statement, instantiated by the norm the statement uses. The author rejects any bare "the norm" or "the reduced norm".
@@ -374,4 +374,4 @@ condition, NOT the definition.
 - Annihilator vs zero divisors: `P` is a left zero divisor of a product iff its left annihilator is not `{0}`; if `P neq 0` kills `X neq 0` then `X` is a right zero divisor with witness `P`, so `A(P)\{0}` lies in the zero-divisor set `Z` of that product. The containment in the CONE holds only for the four general products (there `Z` = punctured cone). The eight derived structures have `Z` strictly larger (whole punctured space in APA, AQA, SQA, SPS, APS, AQS; `{P_0=0} union cone` in SPA, SQS), and their annihilators leave the cone. `P=0` is excluded: `A(0)=B` and `e_0` of norm 1 is in it.
 
 - Corpus quirk: inline math inside an emphasised title is not rendered by KaTeX, so `*The 6 Algebraic Structures over the Quaternion $\mathbb{R}$ Space*` shows the raw `$\mathbb{R}$` in the deployed HTML. It is pre-existing and affects the biquaternion articles too, not only the ones touched in this session.
-- `articles_maths/quaternion-annihilators.md` (the quaternion R comparison chapter) is deliberately STRUCTURE-level: its object is the set of elements that kill the whole space for a fixed product (the radical), while `articles_maths/annihilators.md` (the biquaternion chapter) is element-level. The split is recorded in the design note of `annihilators-of-the-symmetric-plain-algebra-of-quaternions.md` and in the cross-reference inside `annihilators.md`. Ask before changing the object.
+- `articles_maths/quaternion-annihilators.md` (the quaternion R comparison chapter) is deliberately STRUCTURE-level: its object is the set of elements that kill the whole space for a fixed product (the radical), while `articles_maths/annihilators.md` (the biquaternion chapter) is element-level. The split is recorded in the design note of `annihilators-of-the-symmetric-plain-algebra-of-quaternioid.md` and in the cross-reference inside `annihilators.md`. Ask before changing the object.

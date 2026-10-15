@@ -6,11 +6,30 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 
 ### Algebra
 
-#### Biquaternions as Linear Spaces
 
-- [Biquaternions as a Vector Space over $\mathbb{R}$](../articles_maths/biquaternions-as-a-vector-space-over-r.html)
-- [Biquaternions as a Vector Space over $\mathbb{C}$](../articles_maths/biquaternions-as-a-vector-space-over-c.html)
-- [The Group of Involutions](../articles_maths/the-group-of-involutions.html)
+#### Introduction to the Biquaternion Algebra
+
+- [Introduction to the Biquaternion Algebra](../articles_maths/introduction-to-the-biquaternion-algebra.html)
+- [The Four Products, Their Forms and Their Algebraic Norms](../articles_maths/the-four-products-their-forms-and-their-algebraic-norms.html)
+
+#### Properties of the Biquaternion Algebra over $\mathbb{C}$
+
+
+##### Basic Properties
+
+- [Norm and Invertibility in the Biquaternion Algebra](../articles_maths/norm-and-invertibility-in-the-biquaternion-algebra.html)
+- [Zero Divisors of the Biquaternion Algebra](../articles_maths/zero-divisors-of-the-biquaternion-algebra.html)
+- [Annihilators of the Biquaternion Algebra](../articles_maths/annihilators-of-the-biquaternion-algebra.html)
+- [Square Roots of One and the Idempotents of the Biquaternion Algebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra.html)
+- [Square Roots of Zero and the Nilpotents of the Biquaternion Algebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.html)
+- [Square Roots of a General Element in the Biquaternion Algebra](../articles_maths/square-roots-of-a-general-element-in-the-biquaternion-algebra.html)
+
+##### Advanced Properties
+
+- [The Specificities of the Biquaternion Algebra](../articles_maths/the-specificities-of-the-biquaternion-algebra.html)
+- [Ideals and Peirce Decomposition of the Biquaternion Algebra](../articles_maths/ideals-and-peirce-decomposition-of-the-biquaternion-algebra.html)
+- [Modules over the Biquaternion Algebra](../articles_maths/modules-over-the-biquaternion-algebra.html)
+- [The Group of Units of the Biquaternion Algebra and the Complement of the Zero-Divisor Cone](../articles_maths/the-group-of-units-of-the-biquaternion-algebra-and-the-complement-of-the-zero-divisor-cone.html)
 
 #### Remarkable Subspaces
 
@@ -26,509 +45,29 @@ The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ i
 - [Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions](../articles_maths/introduction-to-the-4x4-matrix-element-representation-of-biquaternions.html)
 - [Biquaternion Other Algebraic Element Representations](../articles_maths/biquaternion-other-algebraic-element-representations.html)
 
-#### Introduction to the Algebraic Structures of Biquaternions over $\mathbb{C}$
-
-- [The Four General Products of the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-four-general-products-of-the-biquaternion-c-space.html)
-- [Relations Between the Four General Products](../articles_maths/relations-between-the-four-general-products.html)
-- [Comparison Between the Four General Products](../articles_maths/comparison-between-the-four-general-products.html)
-- [The Four General Products and Operators](../articles_maths/the-four-general-products-and-operators.html)
-- [Remarkable Subspaces and the Four General Products](../articles_maths/remarkable-subspaces-and-the-four-general-products.html)
-- [The 12 Products of the Biquaternion Complex Space](../articles_maths/the-12-products-of-the-biquaternion-complex-space.html)
-- [The Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-algebraic-structures-over-the-biquaternion-c-space.html)
-- [Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.html)
-- [The 4 Forms over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-4-forms-over-the-biquaternion-c-space.html)
-- [Remarkable Subspaces and the Four Forms](../articles_maths/remarkable-subspaces-and-the-four-forms.html)
-- [The 4 Algebraic Norms over the Biquaternion $\mathbb{C}$ Space](../articles_maths/the-4-algebraic-norms-over-the-biquaternion-c-space.html)
-- [Remarkable Subspaces and the Four Algebraic Norms](../articles_maths/remarkable-subspaces-and-the-four-algebraic-norms.html)
-- [The Realification and the Effect of the Change of Scalars](../articles_maths/the-realification-and-the-effect-of-the-change-of-scalars.html)
-
-#### The 4 General Algebraic Structures of Biquaternions over $\mathbb{C}$
-
-##### Biquaternions as a General Plain Algebra (GPA) over $\mathbb{C}$
-
-###### Common Theory
-
-- [Introduction to the General Plain Algebra of Biquaternions](../articles_maths/introduction-to-the-general-plain-algebra-of-biquaternions.html)
-- [Norm and Invertibility in the General Plain Algebra](../articles_maths/norm-and-invertibility-in-the-general-plain-algebra.html)
-- [Zero Divisors of the General Plain Algebra](../articles_maths/zero-divisors-of-the-general-plain-algebra.html)
-- [Annihilators of the General Plain Algebra](../articles_maths/annihilators-of-the-general-plain-algebra.html)
-- [Square Roots of One and the Idempotents of the General Plain Algebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra.html)
-- [Square Roots of Zero and the Nilpotents of the General Plain Algebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-plain-algebra.html)
-- [Square Roots of a General Element in the General Plain Algebra](../articles_maths/square-roots-of-a-general-element-in-the-general-plain-algebra.html)
-
-###### Specific Theory
-
-- [The Specificities of the General Plain Algebra](../articles_maths/the-specificities-of-the-general-plain-algebra.html)
-- [Ideals and Peirce Decomposition of the General Plain Algebra](../articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-algebra.html)
-- [Modules over the General Plain Algebra of Biquaternions](../articles_maths/modules-over-the-general-plain-algebra-of-biquaternions.html)
-- [The Group of Units of the General Plain Algebra and the Complement of the Zero-Divisor Cone](../articles_maths/the-group-of-units-of-the-general-plain-algebra-and-the-complement-of-the-zero-divisor-cone.html)
-
-###### Form
-
-- [Association and the Transpose on the General Plain Algebra](../articles_maths/association-and-the-transpose-on-the-general-plain-algebra.html)
-- [Remarkable Subspaces under the General Plain Algebra of Biquaternions](../articles_maths/remarkable-subspaces-under-the-general-plain-algebra-of-biquaternions.html)
-
-###### Operators
-
-- [The Enveloping Operator Algebra of the General Plain Algebra and the Bi-module Structure](../articles_maths/the-enveloping-operator-algebra-of-the-general-plain-algebra-and-the-bi-module-structure.html)
-- [Two-Sided Operators on the General Plain Algebra of Biquaternions](../articles_maths/two-sided-operators-on-the-general-plain-algebra-of-biquaternions.html)
-- [One-Sided Operators on the General Plain Algebra of Biquaternions](../articles_maths/one-sided-operators-on-the-general-plain-algebra-of-biquaternions.html)
-- [The Pin and Spin Groups of the General Plain Algebra of Biquaternions](../articles_maths/the-pin-and-spin-groups-of-the-general-plain-algebra-of-biquaternions.html)
-
-###### Realification
-
-- [The Realification of the General Plain Algebra](../articles_maths/the-realification-of-the-general-plain-algebra.html)
-
-###### Representations
-
-- [The General Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$](../articles_maths/the-general-plain-algebra-in-the-2x2-matrix-element-representation.html)
-- [The General Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$](../articles_maths/the-general-plain-algebra-in-the-4x4-matrix-element-representation.html)
-
-##### Biquaternions as a General Plain Sesqualgebra (GPS) over $\mathbb{C}$
-
-###### Common Theory
-
-- [Introduction to the General Plain Sesqualgebra of Biquaternions](../articles_maths/introduction-to-the-general-plain-sesqualgebra-of-biquaternions.html)
-- [Norm and Invertibility in the General Plain Sesqualgebra](../articles_maths/norm-and-invertibility-in-the-general-plain-sesqualgebra.html)
-- [Zero Divisors of the General Plain Sesqualgebra](../articles_maths/zero-divisors-of-the-general-plain-sesqualgebra.html)
-- [Annihilators of the General Plain Sesqualgebra](../articles_maths/annihilators-of-the-general-plain-sesqualgebra.html)
-- [Square Roots of One and the Idempotents of the General Plain Sesqualgebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-plain-sesqualgebra.html)
-- [Square Roots of Zero and the Nilpotents of the General Plain Sesqualgebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-plain-sesqualgebra.html)
-- [Square Roots of a General Element in the General Plain Sesqualgebra](../articles_maths/square-roots-of-a-general-element-in-the-general-plain-sesqualgebra.html)
-- [The Squares and the Positive Cone of the Biquaternion Sesqualgebra](../articles_maths/the-squares-and-the-positive-cone-of-the-biquaternion-sesqualgebra.html)
-- [The Biquaternion Sesqualgebra Is Simple](../articles_maths/the-biquaternion-sesqualgebra-is-simple.html)
-
-###### Specific Theory
-
-- [The Specificities of the General Plain Sesqualgebra](../articles_maths/the-specificities-of-the-general-plain-sesqualgebra.html)
-- [Ideals and Peirce Decomposition of the General Plain Sesqualgebra](../articles_maths/ideals-and-peirce-decomposition-of-the-general-plain-sesqualgebra.html)
-- [The Ternary Product and the Associator of the Biquaternion Sesqualgebra](../articles_maths/the-ternary-product-and-the-associator-of-the-biquaternion-sesqualgebra.html)
-- [The Left and Right Multiplications of the Biquaternion Sesqualgebra](../articles_maths/the-left-and-right-multiplications-of-the-biquaternion-sesqualgebra.html)
-- [The Sesquilinear Sandwich on the Biquaternions](../articles_maths/the-sesquilinear-sandwich-on-the-biquaternions.html)
-- [The Adjoint of the Sesquilinear Sandwich on the Biquaternions](../articles_maths/the-adjoint-of-the-sesquilinear-sandwich-on-the-biquaternions.html)
-- [The Sesquilinear Commutator and the Symmetrised Product on the Biquaternions](../articles_maths/the-sesquilinear-commutator-and-the-symmetrised-product-on-the-biquaternions.html)
-
-###### Form
-
-- [The Canonical Hermitian Form on the Regular Module of the Biquaternion Algebra](../articles_maths/the-canonical-hermitian-form-on-the-regular-module-of-the-biquaternion-algebra.html)
-- [Positivity and the Hermitian Cone of the Biquaternion Algebra with Hermitian Adjoint](../articles_maths/positivity-and-the-hermitian-cone-of-the-biquaternion-algebra-with-hermitian-adjoint.html)
-- [The Bochner Theorem for the Biquaternion Transform: the Hermitian Form and the Root](../articles_maths/the-bochner-theorem-for-the-biquaternion-transform-the-hermitian-form-and-the-root.html)
-- [Hermitian Modules over the Biquaternion Algebra with Hermitian Adjoint](../articles_maths/hermitian-modules-over-the-biquaternion-algebra-with-hermitian-adjoint.html)
-- [Hermitian Forms over the Biquaternion Algebra and the Unitary Witt Group with Hermitian Adjoint](../articles_maths/hermitian-forms-over-the-biquaternion-algebra-and-the-unitary-witt-group-with-hermitian-adjoint.html)
-- [Remarkable Subspaces under the General Plain Sesqualgebra of Biquaternions](../articles_maths/remarkable-subspaces-under-the-general-plain-sesqualgebra-of-biquaternions.html)
-
-###### Operators
-
-- [Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions](../articles_maths/two-sided-operators-on-the-general-plain-sesqualgebra-of-biquaternions.html)
-- [One-Sided Operators on the General Plain Sesqualgebra of Biquaternions](../articles_maths/one-sided-operators-on-the-general-plain-sesqualgebra-of-biquaternions.html)
-- [The Pin and Spin Groups of the General Plain Sesqualgebra of Biquaternions](../articles_maths/the-pin-and-spin-groups-of-the-general-plain-sesqualgebra-of-biquaternions.html)
-- [Mixed Inner Conjugation on the General Plain Sesqualgebra of Biquaternions](../articles_maths/mixed-inner-conjugation-on-the-general-plain-sesqualgebra-of-biquaternions.html)
-- [Bilinear Operators on the General Plain Sesqualgebra of Biquaternions](../articles_maths/bilinear-operators-on-the-general-plain-sesqualgebra-of-biquaternions.html)
-- [The Enveloping Operator Algebra of the General Plain Sesqualgebra and the Bi-module Structure](../articles_maths/the-enveloping-operator-algebra-of-the-general-plain-sesqualgebra-and-the-bi-module-structure.html)
-
-###### Realification
-
-- [The Realification of the General Plain Sesqualgebra](../articles_maths/the-realification-of-the-general-plain-sesqualgebra.html)
-
-###### Representations
-
-- [Real Spinors and Reality Conditions on the Biquaternion Algebra with Hermitian Adjoint](../articles_maths/real-spinors-and-reality-conditions-on-the-biquaternion-algebra-with-hermitian-adjoint.html)
-- [The Fierz–Kofink Identities and the Classification of Spinors](../articles_maths/the-fierz-kofink-identities-and-the-classification-of-spinors.html)
-- [The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$](../articles_maths/the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.html)
-- [The General Plain Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$](../articles_maths/the-general-plain-sesqualgebra-in-the-4x4-matrix-element-representation.html)
-
-##### Biquaternions as a General Quaternionic Algebra (GQA) over $\mathbb{C}$
-
-###### Common Theory
-
-- [Introduction to the General Quaternionic Algebra of Biquaternions](../articles_maths/introduction-to-the-general-quaternionic-algebra-of-biquaternions.html)
-- [Norm and Invertibility in the General Quaternionic Algebra](../articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.html)
-- [Zero Divisors of the General Quaternionic Algebra](../articles_maths/zero-divisors-of-the-general-quaternionic-algebra.html)
-- [Annihilators of the General Quaternionic Algebra](../articles_maths/annihilators-of-the-general-quaternionic-algebra.html)
-- [Square Roots of One and the Idempotents of the General Quaternionic Algebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-quaternionic-algebra.html)
-- [Square Roots of Zero and the Nilpotents of the General Quaternionic Algebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-quaternionic-algebra.html)
-- [Square Roots of a General Element in the General Quaternionic Algebra](../articles_maths/square-roots-of-a-general-element-in-the-general-quaternionic-algebra.html)
-
-###### Specific Theory
-
-- [The Specificities of the General Quaternionic Algebra](../articles_maths/the-specificities-of-the-general-quaternionic-algebra.html)
-- [The Associator and the Ternary Product of the Quaternionic Product](../articles_maths/the-associator-and-the-ternary-product-of-the-quaternionic-product.html)
-- [The Symmetrised Quaternionic Product and the Hermitian Subspace](../articles_maths/the-symmetrised-quaternionic-product-and-the-hermitian-subspace.html)
-- [The Left Multiplications of the Quaternionic Product and the Opposite Monoid](../articles_maths/the-left-multiplications-of-the-quaternionic-product-and-the-opposite-monoid.html)
-- [The Quaternionic Product on the Quaternion Subspace](../articles_maths/the-quaternionic-product-on-the-quaternion-subspace.html)
-
-###### Form
-
-- [The Isotropic Structure of the General Quaternionic Algebra](../articles_maths/the-isotropic-structure-of-the-general-quaternionic-algebra.html)
-- [Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions](../articles_maths/remarkable-subspaces-under-the-general-quaternionic-algebra-of-biquaternions.html)
-
-###### Operators
-
-- [Two-Sided Operators on the General Quaternionic Algebra of Biquaternions](../articles_maths/two-sided-operators-on-the-general-quaternionic-algebra-of-biquaternions.html)
-- [One-Sided Operators on the General Quaternionic Algebra of Biquaternions](../articles_maths/one-sided-operators-on-the-general-quaternionic-algebra-of-biquaternions.html)
-- [The Pin and Spin Groups of the General Quaternionic Algebra of Biquaternions](../articles_maths/the-pin-and-spin-groups-of-the-general-quaternionic-algebra-of-biquaternions.html)
-
-###### Realification
-
-- [The Realification of the General Quaternionic Algebra](../articles_maths/the-realification-of-the-general-quaternionic-algebra.html)
-
-###### Representations
-
-- [The General Quaternionic Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$](../articles_maths/the-general-quaternionic-algebra-in-the-2x2-matrix-element-representation.html)
-- [The General Quaternionic Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$](../articles_maths/the-general-quaternionic-algebra-in-the-4x4-matrix-element-representation.html)
-
-##### Biquaternions as a General Quaternionic Sesqualgebra (GQS) over $\mathbb{C}$
-
-###### Common Theory
-
-- [Introduction to the General Quaternionic Sesqualgebra of Biquaternions](../articles_maths/introduction-to-the-general-quaternionic-sesqualgebra-of-biquaternions.html)
-- [Norm and Invertibility in the General Quaternionic Sesqualgebra](../articles_maths/norm-and-invertibility-in-the-general-quaternionic-sesqualgebra.html)
-- [Zero Divisors of the General Quaternionic Sesqualgebra](../articles_maths/zero-divisors-of-the-general-quaternionic-sesqualgebra.html)
-- [Annihilators of the General Quaternionic Sesqualgebra](../articles_maths/annihilators-of-the-general-quaternionic-sesqualgebra.html)
-- [Square Roots of One and the Idempotents of the General Quaternionic Sesqualgebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-quaternionic-sesqualgebra.html)
-- [Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-quaternionic-sesqualgebra.html)
-- [Square Roots of a General Element in the General Quaternionic Sesqualgebra](../articles_maths/square-roots-of-a-general-element-in-the-general-quaternionic-sesqualgebra.html)
-- [The Square of the General Quaternionic Sesquilinear Product and the Two Halves](../articles_maths/the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.html)
-
-###### Specific Theory
-
-- [The Specificities of the General Quaternionic Sesqualgebra](../articles_maths/the-specificities-of-the-general-quaternionic-sesqualgebra.html)
-- [The Two One-Sided Actions and the Absence of a Unit](../articles_maths/the-two-one-sided-actions-and-the-absence-of-a-unit.html)
-- [The Associator of the General Quaternionic Sesquilinear Product](../articles_maths/the-associator-of-the-quaternionic-sesquilinear-product.html)
-- [The Ternary Product and the Failure of the Jordan Triple Identity](../articles_maths/the-ternary-product-and-the-failure-of-the-jordan-triple-identity.html)
-- [The Left and Right Multiplications of the General Quaternionic Sesquilinear Product](../articles_maths/the-left-and-right-multiplications-of-the-quaternionic-sesquilinear-product.html)
-
-###### Form
-
-- [The Fundamental Symmetry of the Biquaternion Algebra](../articles_maths/the-fundamental-symmetry-of-the-biquaternion-algebra.html)
-- [The Krein Gram Matrix and the Restrictions of the Form](../articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.html)
-- [The Isotropic Structure of the General Quaternionic Sesqualgebra](../articles_maths/the-isotropic-structure-of-the-general-quaternionic-sesqualgebra.html)
-- [Krein Orthogonality and the Fundamental Decomposition](../articles_maths/krein-orthogonality-and-the-fundamental-decomposition.html)
-- [Remarkable Subspaces under the General Quaternionic Sesqualgebra of Biquaternions](../articles_maths/remarkable-subspaces-under-the-general-quaternionic-sesqualgebra-of-biquaternions.html)
-
-###### Operators
-
-- [J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra of Biquaternions](../articles_maths/j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra-of-biquaternions.html)
-- [Indefinite Positivity and the Krein Cone of the Biquaternion Algebra](../articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternion-algebra.html)
-- [The Indefinite Hermitian Sandwich on the General Quaternionic Sesqualgebra of Biquaternions](../articles_maths/the-indefinite-hermitian-sandwich-on-the-general-quaternionic-sesqualgebra-of-biquaternions.html)
-
-###### Realification
-
-- [The Realification of the General Quaternionic Sesqualgebra](../articles_maths/the-realification-of-the-general-quaternionic-sesqualgebra.html)
-
-###### Representations
-
-- [The General Quaternionic Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$](../articles_maths/the-general-quaternionic-sesqualgebra-in-the-2x2-matrix-element-representation.html)
-- [The General Quaternionic Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$](../articles_maths/the-general-quaternionic-sesqualgebra-in-the-4x4-matrix-element-representation.html)
-
-#### The 4 Symmetric Algebraic Structures of Biquaternions over $\mathbb{C}$
-
-##### Biquaternions as a Symmetric Plain Algebra (SPA) over $\mathbb{C}$
-
-###### Common Theory
-
-- [Introduction to the Symmetric Plain Algebra of Biquaternions](../articles_maths/introduction-to-the-symmetric-plain-algebra-of-biquaternions.html)
-- [Norm and Invertibility in the Symmetric Plain Algebra](../articles_maths/norm-and-invertibility-in-the-symmetric-plain-algebra.html)
-- [Zero Divisors of the Symmetric Plain Algebra](../articles_maths/zero-divisors-of-the-symmetric-plain-algebra.html)
-- [Annihilators of the Symmetric Plain Algebra](../articles_maths/annihilators-of-the-symmetric-plain-algebra.html)
-- [Square Roots of One and the Idempotents of the Symmetric Plain Algebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-symmetric-plain-algebra.html)
-- [Square Roots of Zero and the Nilpotents of the Symmetric Plain Algebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-symmetric-plain-algebra.html)
-- [Square Roots of a General Element in the Symmetric Plain Algebra](../articles_maths/square-roots-of-a-general-element-in-the-symmetric-plain-algebra.html)
-
-###### Specific Theory
-
-- [The Specificities of the Symmetric Plain Algebra](../articles_maths/the-specificities-of-the-symmetric-plain-algebra.html)
-- [The Square, the Idempotents and the Jordan Inverse of the Symmetric Plain Algebra](../articles_maths/the-square-the-idempotents-and-the-jordan-inverse-of-the-symmetric-plain-algebra.html)
-
-###### Form
-
-- [The Trace Form and the Invariance of the Symmetric Plain Algebra](../articles_maths/the-trace-form-and-the-invariance-of-the-symmetric-plain-algebra.html)
-- [Remarkable Subspaces under the Symmetric Plain Algebra of Biquaternions](../articles_maths/remarkable-subspaces-under-the-symmetric-plain-algebra-of-biquaternions.html)
-
-###### Operators
-
-- [The Multiplication Operators of the Symmetric Plain Algebra](../articles_maths/the-multiplication-operators-of-the-symmetric-plain-algebra.html)
-
-###### Realification
-
-- [The Realification of the Symmetric Plain Algebra](../articles_maths/the-realification-of-the-symmetric-plain-algebra.html)
-
-###### Representations
-
-- [The Symmetric Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$](../articles_maths/the-symmetric-plain-algebra-in-the-2x2-matrix-element-representation.html)
-- [The Symmetric Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$](../articles_maths/the-symmetric-plain-algebra-in-the-4x4-matrix-element-representation.html)
-
-##### Biquaternions as a Symmetric Plain Sesqualgebra (SPS) over $\mathbb{C}$
-
-###### Common Theory
-
-- [Introduction to the Symmetric Plain Sesqualgebra of Biquaternions](../articles_maths/introduction-to-the-symmetric-plain-sesqualgebra-of-biquaternions.html)
-- [Norm and Invertibility in the Symmetric Plain Sesqualgebra](../articles_maths/norm-and-invertibility-in-the-symmetric-plain-sesqualgebra.html)
-- [Zero Divisors of the Symmetric Plain Sesqualgebra](../articles_maths/zero-divisors-of-the-symmetric-plain-sesqualgebra.html)
-- [Annihilators of the Symmetric Plain Sesqualgebra](../articles_maths/annihilators-of-the-symmetric-plain-sesqualgebra.html)
-- [Square Roots of One and the Idempotents of the Symmetric Plain Sesqualgebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-symmetric-plain-sesqualgebra.html)
-- [Square Roots of Zero and the Nilpotents of the Symmetric Plain Sesqualgebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-symmetric-plain-sesqualgebra.html)
-- [Square Roots of a General Element in the Symmetric Plain Sesqualgebra](../articles_maths/square-roots-of-a-general-element-in-the-symmetric-plain-sesqualgebra.html)
-
-###### Specific Theory
-
-- [The Specificities of the Symmetric Plain Sesqualgebra](../articles_maths/the-specificities-of-the-symmetric-plain-sesqualgebra.html)
-- [The Conjugate-Commutative Law and the Idempotents of the Symmetric Plain Sesqualgebra](../articles_maths/the-conjugate-commutative-law-and-the-idempotents-of-the-symmetric-plain-sesqualgebra.html)
-
-###### Form
-
-- [The Hermitian Form as a Product on the Symmetric Plain Sesqualgebra](../articles_maths/the-hermitian-form-as-a-product-on-the-symmetric-plain-sesqualgebra.html)
-- [Remarkable Subspaces under the Symmetric Plain Sesqualgebra of Biquaternions](../articles_maths/remarkable-subspaces-under-the-symmetric-plain-sesqualgebra-of-biquaternions.html)
-
-###### Operators
-
-- [The Multiplication Operators of the Symmetric Plain Sesqualgebra](../articles_maths/the-multiplication-operators-of-the-symmetric-plain-sesqualgebra.html)
-
-###### Realification
-
-- [The Realification of the Symmetric Plain Sesqualgebra](../articles_maths/the-realification-of-the-symmetric-plain-sesqualgebra.html)
-
-###### Representations
-
-- [The Symmetric Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$](../articles_maths/the-symmetric-plain-sesqualgebra-in-the-2x2-matrix-element-representation.html)
-- [The Symmetric Plain Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$](../articles_maths/the-symmetric-plain-sesqualgebra-in-the-4x4-matrix-element-representation.html)
-
-##### Biquaternions as a Symmetric Quaternionic Algebra (SQA) over $\mathbb{C}$
-
-###### Common Theory
-
-- [Introduction to the Symmetric Quaternionic Algebra of Biquaternions](../articles_maths/introduction-to-the-symmetric-quaternionic-algebra-of-biquaternions.html)
-- [Norm and Invertibility in the Symmetric Quaternionic Algebra](../articles_maths/norm-and-invertibility-in-the-symmetric-quaternionic-algebra.html)
-- [Zero Divisors of the Symmetric Quaternionic Algebra](../articles_maths/zero-divisors-of-the-symmetric-quaternionic-algebra.html)
-- [Annihilators of the Symmetric Quaternionic Algebra](../articles_maths/annihilators-of-the-symmetric-quaternionic-algebra.html)
-- [Square Roots of One and the Idempotents of the Symmetric Quaternionic Algebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-symmetric-quaternionic-algebra.html)
-- [Square Roots of Zero and the Nilpotents of the Symmetric Quaternionic Algebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-symmetric-quaternionic-algebra.html)
-- [Square Roots of a General Element in the Symmetric Quaternionic Algebra](../articles_maths/square-roots-of-a-general-element-in-the-symmetric-quaternionic-algebra.html)
-
-###### Specific Theory
-
-- [The Specificities of the Symmetric Quaternionic Algebra](../articles_maths/the-specificities-of-the-symmetric-quaternionic-algebra.html)
-- [The Radical and the Isotropic Elements of the Symmetric Quaternionic Algebra](../articles_maths/the-radical-and-the-isotropic-elements-of-the-symmetric-quaternionic-algebra.html)
-
-###### Form
-
-- [The Quaternion Form as a Product on the Symmetric Quaternionic Algebra](../articles_maths/the-quaternion-form-as-a-product-on-the-symmetric-quaternionic-algebra.html)
-- [Remarkable Subspaces under the Symmetric Quaternionic Algebra of Biquaternions](../articles_maths/remarkable-subspaces-under-the-symmetric-quaternionic-algebra-of-biquaternions.html)
-
-###### Operators
-
-- [The Multiplication Operators of the Symmetric Quaternionic Algebra](../articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-algebra.html)
-
-###### Realification
-
-- [The Realification of the Symmetric Quaternionic Algebra](../articles_maths/the-realification-of-the-symmetric-quaternionic-algebra.html)
-
-###### Representations
-
-- [The Symmetric Quaternionic Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$](../articles_maths/the-symmetric-quaternionic-algebra-in-the-2x2-matrix-element-representation.html)
-- [The Symmetric Quaternionic Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$](../articles_maths/the-symmetric-quaternionic-algebra-in-the-4x4-matrix-element-representation.html)
-
-##### Biquaternions as a Symmetric Quaternionic Sesqualgebra (SQS) over $\mathbb{C}$
-
-###### Common Theory
-
-- [Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions](../articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra-of-biquaternions.html)
-- [Norm and Invertibility in the Symmetric Quaternionic Sesqualgebra](../articles_maths/norm-and-invertibility-in-the-symmetric-quaternionic-sesqualgebra.html)
-- [Zero Divisors of the Symmetric Quaternionic Sesqualgebra](../articles_maths/zero-divisors-of-the-symmetric-quaternionic-sesqualgebra.html)
-- [Annihilators of the Symmetric Quaternionic Sesqualgebra](../articles_maths/annihilators-of-the-symmetric-quaternionic-sesqualgebra.html)
-- [Square Roots of One and the Idempotents of the Symmetric Quaternionic Sesqualgebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-symmetric-quaternionic-sesqualgebra.html)
-- [Square Roots of Zero and the Nilpotents of the Symmetric Quaternionic Sesqualgebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-symmetric-quaternionic-sesqualgebra.html)
-- [Square Roots of a General Element in the Symmetric Quaternionic Sesqualgebra](../articles_maths/square-roots-of-a-general-element-in-the-symmetric-quaternionic-sesqualgebra.html)
-
-###### Specific Theory
-
-- [The Specificities of the Symmetric Quaternionic Sesqualgebra](../articles_maths/the-specificities-of-the-symmetric-quaternionic-sesqualgebra.html)
-- [The Non-Central Algebraic Norm and the Two Halves of the Symmetric Quaternionic Sesqualgebra](../articles_maths/the-non-central-algebraic-norm-and-the-two-halves-of-the-symmetric-quaternionic-sesqualgebra.html)
-
-###### Form
-
-- [The Krein Form as a Product on the Symmetric Quaternionic Sesqualgebra](../articles_maths/the-krein-form-as-a-product-on-the-symmetric-quaternionic-sesqualgebra.html)
-- [Remarkable Subspaces under the Symmetric Quaternionic Sesqualgebra of Biquaternions](../articles_maths/remarkable-subspaces-under-the-symmetric-quaternionic-sesqualgebra-of-biquaternions.html)
-
-###### Operators
-
-- [The Multiplication Operators of the Symmetric Quaternionic Sesqualgebra](../articles_maths/the-multiplication-operators-of-the-symmetric-quaternionic-sesqualgebra.html)
-
-###### Realification
-
-- [The Realification of the Symmetric Quaternionic Sesqualgebra](../articles_maths/the-realification-of-the-symmetric-quaternionic-sesqualgebra.html)
-
-###### Representations
-
-- [The Symmetric Quaternionic Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$](../articles_maths/the-symmetric-quaternionic-sesqualgebra-in-the-2x2-matrix-element-representation.html)
-- [The Symmetric Quaternionic Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$](../articles_maths/the-symmetric-quaternionic-sesqualgebra-in-the-4x4-matrix-element-representation.html)
-
-#### The 4 Antisymmetric Algebraic Structures of Biquaternions over $\mathbb{C}$
-
-##### Biquaternions as an Antisymmetric Plain Algebra (APA) over $\mathbb{C}$
-
-###### Common Theory
-
-- [Introduction to the Antisymmetric Plain Algebra of Biquaternions](../articles_maths/introduction-to-the-antisymmetric-plain-algebra-of-biquaternions.html)
-- [Norm and Invertibility in the Antisymmetric Plain Algebra](../articles_maths/norm-and-invertibility-in-the-antisymmetric-plain-algebra.html)
-- [Zero Divisors of the Antisymmetric Plain Algebra](../articles_maths/zero-divisors-of-the-antisymmetric-plain-algebra.html)
-- [Annihilators of the Antisymmetric Plain Algebra](../articles_maths/annihilators-of-the-antisymmetric-plain-algebra.html)
-- [Square Roots of One and the Idempotents of the Antisymmetric Plain Algebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-antisymmetric-plain-algebra.html)
-- [Square Roots of Zero and the Nilpotents of the Antisymmetric Plain Algebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-antisymmetric-plain-algebra.html)
-- [Square Roots of a General Element in the Antisymmetric Plain Algebra](../articles_maths/square-roots-of-a-general-element-in-the-antisymmetric-plain-algebra.html)
-
-###### Specific Theory
-
-- [The Specificities of the Antisymmetric Plain Algebra](../articles_maths/the-specificities-of-the-antisymmetric-plain-algebra.html)
-- [The Lie Algebra of the Antisymmetric Plain Algebra](../articles_maths/the-lie-algebra-of-the-antisymmetric-plain-algebra.html)
-
-###### Form
-
-- [The Killing Form of the Antisymmetric Plain Algebra](../articles_maths/the-killing-form-of-the-antisymmetric-plain-algebra.html)
-- [Remarkable Subspaces under the Antisymmetric Plain Algebra of Biquaternions](../articles_maths/remarkable-subspaces-under-the-antisymmetric-plain-algebra-of-biquaternions.html)
-
-###### Operators
-
-- [The Adjoint Operators and the Derivations of the Antisymmetric Plain Algebra](../articles_maths/the-adjoint-operators-and-the-derivations-of-the-antisymmetric-plain-algebra.html)
-
-###### Realification
-
-- [The Realification of the Antisymmetric Plain Algebra](../articles_maths/the-realification-of-the-antisymmetric-plain-algebra.html)
-
-###### Representations
-
-- [The Antisymmetric Plain Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$](../articles_maths/the-antisymmetric-plain-algebra-in-the-2x2-matrix-element-representation.html)
-- [The Antisymmetric Plain Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$](../articles_maths/the-antisymmetric-plain-algebra-in-the-4x4-matrix-element-representation.html)
-
-##### Biquaternions as an Antisymmetric Plain Sesqualgebra (APS) over $\mathbb{C}$
-
-###### Common Theory
-
-- [Introduction to the Antisymmetric Plain Sesqualgebra of Biquaternions](../articles_maths/introduction-to-the-antisymmetric-plain-sesqualgebra-of-biquaternions.html)
-- [Norm and Invertibility in the Antisymmetric Plain Sesqualgebra](../articles_maths/norm-and-invertibility-in-the-antisymmetric-plain-sesqualgebra.html)
-- [Zero Divisors of the Antisymmetric Plain Sesqualgebra](../articles_maths/zero-divisors-of-the-antisymmetric-plain-sesqualgebra.html)
-- [Annihilators of the Antisymmetric Plain Sesqualgebra](../articles_maths/annihilators-of-the-antisymmetric-plain-sesqualgebra.html)
-- [Square Roots of One and the Idempotents of the Antisymmetric Plain Sesqualgebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-antisymmetric-plain-sesqualgebra.html)
-- [Square Roots of Zero and the Nilpotents of the Antisymmetric Plain Sesqualgebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-antisymmetric-plain-sesqualgebra.html)
-- [Square Roots of a General Element in the Antisymmetric Plain Sesqualgebra](../articles_maths/square-roots-of-a-general-element-in-the-antisymmetric-plain-sesqualgebra.html)
-
-###### Specific Theory
-
-- [The Specificities of the Antisymmetric Plain Sesqualgebra](../articles_maths/the-specificities-of-the-antisymmetric-plain-sesqualgebra.html)
-- [The Vector Part of the Square and the Jacobi Failure of the Antisymmetric Plain Sesqualgebra](../articles_maths/the-vector-part-of-the-square-and-the-jacobi-failure-of-the-antisymmetric-plain-sesqualgebra.html)
-
-###### Form
-
-- [The Sesquilinear Pairing of the Antisymmetric Plain Sesqualgebra](../articles_maths/the-sesquilinear-pairing-of-the-antisymmetric-plain-sesqualgebra.html)
-- [Remarkable Subspaces under the Antisymmetric Plain Sesqualgebra of Biquaternions](../articles_maths/remarkable-subspaces-under-the-antisymmetric-plain-sesqualgebra-of-biquaternions.html)
-
-###### Operators
-
-- [The Adjoint Operators and the Sandwich of the Antisymmetric Plain Sesqualgebra](../articles_maths/the-adjoint-operators-and-the-sandwich-of-the-antisymmetric-plain-sesqualgebra.html)
-
-###### Realification
-
-- [The Realification of the Antisymmetric Plain Sesqualgebra](../articles_maths/the-realification-of-the-antisymmetric-plain-sesqualgebra.html)
-
-###### Representations
-
-- [The Antisymmetric Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$](../articles_maths/the-antisymmetric-plain-sesqualgebra-in-the-2x2-matrix-element-representation.html)
-- [The Antisymmetric Plain Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$](../articles_maths/the-antisymmetric-plain-sesqualgebra-in-the-4x4-matrix-element-representation.html)
-
-##### Biquaternions as an Antisymmetric Quaternionic Algebra (AQA) over $\mathbb{C}$
-
-###### Common Theory
-
-- [Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions](../articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra-of-biquaternions.html)
-- [Norm and Invertibility in the Antisymmetric Quaternionic Algebra](../articles_maths/norm-and-invertibility-in-the-antisymmetric-quaternionic-algebra.html)
-- [Zero Divisors of the Antisymmetric Quaternionic Algebra](../articles_maths/zero-divisors-of-the-antisymmetric-quaternionic-algebra.html)
-- [Annihilators of the Antisymmetric Quaternionic Algebra](../articles_maths/annihilators-of-the-antisymmetric-quaternionic-algebra.html)
-- [Square Roots of One and the Idempotents of the Antisymmetric Quaternionic Algebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-antisymmetric-quaternionic-algebra.html)
-- [Square Roots of Zero and the Nilpotents of the Antisymmetric Quaternionic Algebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-antisymmetric-quaternionic-algebra.html)
-- [Square Roots of a General Element in the Antisymmetric Quaternionic Algebra](../articles_maths/square-roots-of-a-general-element-in-the-antisymmetric-quaternionic-algebra.html)
-
-###### Specific Theory
-
-- [The Specificities of the Antisymmetric Quaternionic Algebra](../articles_maths/the-specificities-of-the-antisymmetric-quaternionic-algebra.html)
-- [The Jacobi Failure and the Associator Defect of the Antisymmetric Quaternionic Algebra](../articles_maths/the-jacobi-failure-and-the-associator-defect-of-the-antisymmetric-quaternionic-algebra.html)
-
-###### Form
-
-- [The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra](../articles_maths/the-invariant-bilinear-forms-of-the-antisymmetric-quaternionic-algebra.html)
-- [Remarkable Subspaces under the Antisymmetric Quaternionic Algebra of Biquaternions](../articles_maths/remarkable-subspaces-under-the-antisymmetric-quaternionic-algebra-of-biquaternions.html)
-
-###### Operators
-
-- [The Adjoint Operators of the Antisymmetric Quaternionic Algebra](../articles_maths/the-adjoint-operators-of-the-antisymmetric-quaternionic-algebra.html)
-
-###### Realification
-
-- [The Realification of the Antisymmetric Quaternionic Algebra](../articles_maths/the-realification-of-the-antisymmetric-quaternionic-algebra.html)
-
-###### Representations
-
-- [The Antisymmetric Quaternionic Algebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$](../articles_maths/the-antisymmetric-quaternionic-algebra-in-the-2x2-matrix-element-representation.html)
-- [The Antisymmetric Quaternionic Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$](../articles_maths/the-antisymmetric-quaternionic-algebra-in-the-4x4-matrix-element-representation.html)
-
-##### Biquaternions as an Antisymmetric Quaternionic Sesqualgebra (AQS) over $\mathbb{C}$
-
-###### Common Theory
-
-- [Introduction to the Antisymmetric Quaternionic Sesqualgebra of Biquaternions](../articles_maths/introduction-to-the-antisymmetric-quaternionic-sesqualgebra-of-biquaternions.html)
-- [Norm and Invertibility in the Antisymmetric Quaternionic Sesqualgebra](../articles_maths/norm-and-invertibility-in-the-antisymmetric-quaternionic-sesqualgebra.html)
-- [Zero Divisors of the Antisymmetric Quaternionic Sesqualgebra](../articles_maths/zero-divisors-of-the-antisymmetric-quaternionic-sesqualgebra.html)
-- [Annihilators of the Antisymmetric Quaternionic Sesqualgebra](../articles_maths/annihilators-of-the-antisymmetric-quaternionic-sesqualgebra.html)
-- [Square Roots of One and the Idempotents of the Antisymmetric Quaternionic Sesqualgebra](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-antisymmetric-quaternionic-sesqualgebra.html)
-- [Square Roots of Zero and the Nilpotents of the Antisymmetric Quaternionic Sesqualgebra](../articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-antisymmetric-quaternionic-sesqualgebra.html)
-- [Square Roots of a General Element in the Antisymmetric Quaternionic Sesqualgebra](../articles_maths/square-roots-of-a-general-element-in-the-antisymmetric-quaternionic-sesqualgebra.html)
-
-###### Specific Theory
-
-- [The Specificities of the Antisymmetric Quaternionic Sesqualgebra](../articles_maths/the-specificities-of-the-antisymmetric-quaternionic-sesqualgebra.html)
-- [The Conjugate Cross Product and the Jacobi Failure of the Antisymmetric Quaternionic Sesqualgebra](../articles_maths/the-conjugate-cross-product-and-the-jacobi-failure-of-the-antisymmetric-quaternionic-sesqualgebra.html)
-
-###### Form
-
-- [The Sesquilinear Pairing of the Antisymmetric Quaternionic Sesqualgebra](../articles_maths/the-sesquilinear-pairing-of-the-antisymmetric-quaternionic-sesqualgebra.html)
-- [Remarkable Subspaces under the Antisymmetric Quaternionic Sesqualgebra of Biquaternions](../articles_maths/remarkable-subspaces-under-the-antisymmetric-quaternionic-sesqualgebra-of-biquaternions.html)
-
-###### Operators
-
-- [The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra](../articles_maths/the-adjoint-operators-of-the-antisymmetric-quaternionic-sesqualgebra.html)
-
-###### Realification
-
-- [The Realification of the Antisymmetric Quaternionic Sesqualgebra](../articles_maths/the-realification-of-the-antisymmetric-quaternionic-sesqualgebra.html)
-
-###### Representations
-
-- [The Antisymmetric Quaternionic Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$](../articles_maths/the-antisymmetric-quaternionic-sesqualgebra-in-the-2x2-matrix-element-representation.html)
-- [The Antisymmetric Quaternionic Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$](../articles_maths/the-antisymmetric-quaternionic-sesqualgebra-in-the-4x4-matrix-element-representation.html)
-
-#### Comparison of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space
-
-- [Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.html)
-- [Annihilators in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/annihilators-in-the-algebraic-structures-over-the-biquaternion-c-space.html)
-- [Square Roots of One and the Idempotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/square-roots-of-one-and-the-idempotents-in-the-algebraic-structures-over-the-biquaternion-c-space.html)
-- [Square Roots of Zero and the Nilpotents in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/square-roots-of-zero-and-the-nilpotents-in-the-algebraic-structures-over-the-biquaternion-c-space.html)
-- [Square Roots of a General Element in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space](../articles_maths/square-roots-of-a-general-element-in-the-algebraic-structures-over-the-biquaternion-c-space.html)
-- [The General Plain Algebra and the General Plain Sesqualgebra of Biquaternions Compared](../articles_maths/the-general-plain-algebra-and-the-general-plain-sesqualgebra-of-biquaternions-compared.html)
-
 #### Biquaternions Polar Element Representation
 
 - [The Polar Element Representation of Biquaternions](../articles_maths/the-polar-element-representation-of-biquaternions.html)
+- [The Polar Decomposition of Biquaternions in Practice](../articles_maths/the-polar-decomposition-of-biquaternions-in-practice.html)
 - [The Quaternion Pairing of the Polar Element Representation of Biquaternions](../articles_maths/the-quaternion-pairing-of-the-polar-element-representation-of-biquaternions.html)
 - [The Hamilton Root Pairing of the Polar Element Representation of Biquaternions](../articles_maths/the-hamilton-root-pairing-of-the-polar-element-representation-of-biquaternions.html)
 - [The Cartan Hermitian Pairing of the Polar Element Representation of Biquaternions](../articles_maths/the-cartan-hermitian-pairing-of-the-polar-element-representation-of-biquaternions.html)
+- [The Polar Element Representation and Remarkable Subspaces](../articles_maths/the-polar-element-representation-and-remarkable-subspaces.html)
 
 #### Operators
 
+- [The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure](../articles_maths/the-enveloping-operator-algebra-of-the-biquaternion-algebra-and-the-bi-module-structure.html)
+- [Two-Sided Operators on the Biquaternion Algebra](../articles_maths/two-sided-operators-on-the-biquaternion-algebra.html)
+- [One-Sided Operators on the Biquaternion Algebra](../articles_maths/one-sided-operators-on-the-biquaternion-algebra.html)
+- [The Pin and Spin Groups of the Biquaternion Algebra](../articles_maths/the-pin-and-spin-groups-of-the-biquaternion-algebra.html)
 - [The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples](../articles_maths/the-four-adjoints-of-the-two-algebras-and-the-two-sesqualgebras-in-examples.html)
-- [Square Roots of One and the Idempotents of the General Plain Algebra and the General Plain Sesqualgebra in Exponential Form](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-plain-algebra-and-the-general-plain-sesqualgebra-in-exponential-form.html)
+- [Square Roots of One and the Idempotents of the Biquaternion Algebra and the General Plain Sesqualgebra in Exponential Form](../articles_maths/square-roots-of-one-and-the-idempotents-of-the-biquaternion-algebra-and-the-general-plain-sesqualgebra-in-exponential-form.html)
 
 #### Operators Representations
 
+
 ### Topology
+
 
 #### Introduction to Topology on the Biquaternions
 
@@ -608,8 +147,8 @@ The four blocks of the study read as a division of labour with the physics. Alge
 
 - The biquaternion algebra is studied in depth in the mathematics corpus; this article is the physics-side sub-menu of that study and owns no result of its own.
 - The mathematical study is organised in four blocks: *Algebra*, *Topology*, *Analysis* and *Geometry*, and each block carries a part of the physics.
-- The article carries the direct links to all three hundred and five entries of the mathematics *Biquaternions* category, grouped as the mathematics menu groups them.
-- The neighbouring mathematical systems, the split-biquaternions and the structural comparison around the biquaternions, are outside this index.
+- The article carries the direct links to all eighty-four entries of the mathematics *Biquaternions* category, grouped as the mathematics menu groups them.
+- The twelve structures the complex space carries, collected in the mathematics category *Biquaternioid Algebraic Structures*, and the neighbouring systems, the split-biquaternions and the structural comparison around the biquaternions, are outside this index.
 
 ## Summary of Notation
 
@@ -628,7 +167,7 @@ The four blocks of the study read as a division of labour with the physics. Alge
 
 ## Further Reading
 
-- The mathematics corpus itself: its menu and its *Biquaternions* category, from which every link of this article is taken. Its *Split-Biquaternions* category and *Structural Comparison around Biquaternions* continue the study of the neighbouring systems and are outside this index.
+- The mathematics corpus itself: its menu and its *Biquaternions* category, from which every link of this article is taken. Its *Biquaternioid Algebraic Structures* category collects the twelve structures the complex space carries, and its *Split-Biquaternions* and *Structural Comparison around Biquaternions* categories continue the study of the neighbouring systems; all three are outside this index.
 - Within the corpus, the foundational articles *Introduction to the Biquaternion Universe*, *Conventions in the Biquaternion Universe*, *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector* and *The Anti-Hermitian Subspace $\mathbb{M}_-$ as the Material Sector*.
 - Pertti Lounesto, *Clifford Algebras and Spinors*, second edition, Cambridge University Press, 2001, for the identification of the biquaternions with $M_2(\mathbb{C})$ and with the even part of $\mathrm{Cl}_{1,3}$.
 - Ian R. Porteous, *Clifford Algebras and the Classical Groups*, Cambridge University Press, 1995, for the classical groups carried by the algebra.

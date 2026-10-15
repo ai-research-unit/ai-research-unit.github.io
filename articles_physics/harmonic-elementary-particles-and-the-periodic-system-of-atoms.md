@@ -132,12 +132,12 @@ For the spherically symmetric scalar potential $\psi_{00}(\vec x,\omega) = j_0(\
 
 $$
 \tilde{\Theta}_{00}^{\,0}(\vec x,\omega)
-= \omega\left(j_0(\omega r) + j_1(\omega r)\,e_x\right),
+= \omega\left(j_0(\omega r) + j_1(\omega r)\,\hat e_x\right),
 \qquad
-e_x = \frac{\vec x}{r},
+\hat e_x = \frac{\vec x}{r},
 $$
 
-so the amplitude has the scalar part $\omega j_0(\omega r)$ and the vector part directed **radially**, $\omega j_1(\omega r)e_x$. This closed form was verified numerically by evaluating the operator $(\omega - \nabla)$ on $j_0(\omega r)$ by central differences and comparing with the right-hand side at random points, with the residual at the finite-difference floor; the identity $j_0' = -j_1$ is exact between the two closed forms.
+so the amplitude has the scalar part $\omega j_0(\omega r)$ and the vector part directed **radially**, $\omega j_1(\omega r)\hat e_x$. This closed form was verified numerically by evaluating the operator $(\omega - \nabla)$ on $j_0(\omega r)$ by central differences and comparing with the right-hand side at random points, with the residual at the finite-difference floor; the identity $j_0' = -j_1$ is exact between the two closed forms.
 
 The energy–momentum biquaternion of the programme is
 
@@ -200,11 +200,11 @@ so the scalar part carries the factor $j_1$ and vanishes at the origin while the
 
 $$
 \tilde{\Theta}_{00}^{\,\vec e}(\vec x,\omega)
-= -\,\omega\,j_1(\omega r)\left(\vec e, e_x\right)
-+ \omega\left(j_0(\omega r)\,\vec e - j_1(\omega r)\left[\vec e, e_x\right]\right),
+= -\,\omega\,j_1(\omega r)\left(\vec e, \hat e_x\right)
++ \omega\left(j_0(\omega r)\,\vec e - j_1(\omega r)\left[\vec e, \hat e_x\right]\right),
 $$
 
-and the paper's stated general form, its equation (4.4), carries the opposite sign on the commutator term. The source contradicts itself here: its equation (4.1) for the axis-directed case writes the term out explicitly as $\omega j_1(\omega r)(r_{,3}e_2 - r_{,2}e_3)$, which is $-\omega j_1[\vec e, e_x]$, while its general form would give $+\omega j_1[\vec e, e_x]$. The sign printed here is the derived one, and it is the one the source's own components use.
+and the paper's stated general form, its equation (4.4), carries the opposite sign on the commutator term. The source contradicts itself here: its equation (4.1) for the axis-directed case writes the term out explicitly as $\omega j_1(\omega r)(r_{,3}e_2 - r_{,2}e_3)$, which is $-\omega j_1[\vec e, \hat e_x]$, while its general form would give $+\omega j_1[\vec e, \hat e_x]$. The sign printed here is the derived one, and it is the one the source's own components use.
 
 The energy density is the same function of the Bessel functions as the pulsar's. Because the scalar and vector parts contribute with the weights $r_{,1}^2$ and $r_{,2}^2 + r_{,3}^2$, and because
 
@@ -271,7 +271,7 @@ The programme's hydrogen atom is the spherically symmetric pulsar of §III at a 
 
 $$
 \tilde H_0(\tau,\vec x)
-= \omega_0\left(j_0(\omega_0 r) + j_1(\omega_0 r)e_x\right)e^{-i\omega_0\tau}.
+= \omega_0\left(j_0(\omega_0 r) + j_1(\omega_0 r)\hat e_x\right)e^{-i\omega_0\tau}.
 $$
 
 Everything in the preceding sections applies to it without change: the charge density at the centre is $\omega_0$, the density falls as $r^{-1}$, the energy density as $r^{-2}$, the energy density has no nodal spheres, the charge density has them at $r_k = \pi k/\omega_0$, and the energy flux vanishes identically — which the paper reads as the statement that the atom does not radiate.
@@ -318,7 +318,7 @@ The division is unusually clean, and it is worth stating as a list, because the 
 Established, and verified above by recomputation.
 
 1. The free charge–current equation factors monochromatically into $(\omega - \nabla)$ and $(\omega + \nabla)$, and $(\omega+\nabla)(\omega-\nabla) = \omega^2 + \Delta$; every monochromatic solution is $(\omega-\nabla)\tilde{\Psi}$ for a Helmholtz potential $\tilde{\Psi}$.
-2. The spherical pulsar has the closed form $\omega(j_0 + j_1e_x)$, energy density $\tfrac12\omega^2(j_0^2+j_1^2)$, and vanishing Poynting biquaternion.
+2. The spherical pulsar has the closed form $\omega(j_0 + j_1\hat e_x)$, energy density $\tfrac12\omega^2(j_0^2+j_1^2)$, and vanishing Poynting biquaternion.
 3. The spherical spinor has the closed form $- \omega j_1 r_{,1} + \omega(j_0e_1 + j_1(r_{,3}e_2-r_{,2}e_3))$, the **same** energy density as the pulsar, and vanishing Poynting biquaternion.
 4. The vanishing Poynting biquaternion is a general property of standing monochromatic solutions with real amplitude components, not a special feature of these two.
 5. The central charge density is $\omega$ for the spherically symmetric pulsar and zero for every spinor and every pulsar with $n\geq1$, by the Bessel asymptotics.
@@ -338,7 +338,7 @@ Not established, and not derivable from the algebra.
 
 The 2019 formulation of the electro-gravimagnetic programme takes the **monochromatic** sector of its free charge–current field and proposes to read the solutions as elementary particles. The monochromatic sector is a clean piece of algebra: the free equation is $(\omega+\nabla)\tilde{\Theta}(\vec x,\omega) = 0$, the operator factors so that $(\omega+\nabla)(\omega-\nabla) = \omega^2+\Delta$, and every solution is generated from a Helmholtz potential by the single operator $\omega - \nabla$. The regular Helmholtz solutions are the spherical harmonics, and they split into **pulsars**, from a scalar potential, and **spinors**, from a vector one.
 
-The spherically symmetric pulsar is $\omega(j_0(\omega r) + j_1(\omega r)e_x)$ with the scalar part $\omega j_0$; the spinor polarised along a fixed axis is $-\omega j_1r_{,1} + \omega(j_0e_1 + j_1(r_{,3}e_2-r_{,2}e_3))$ with scalar part $-\omega j_1r_{,1}$. Both have energy density $\tfrac12\omega^2(j_0^2+j_1^2)$ and both have a vanishing Poynting biquaternion — which is a general property of standing waves under the conjugation $\tilde{\Theta}^{*} = \bar s - \bar{\vec V}$, and which the programme reads as the statement that a harmonic particle does not radiate. The pulsar's central density is $\omega$; every spinor's is zero; and that one dichotomy, decided by the Bessel asymptotics $j_n(z)\sim z^n/(2n+1)!!$, is the programme's classification of heavy particles from light ones, which it names bosons and leptons. All of these statements were verified numerically, as were the $r^{-1}$ and $r^{-2}$ far-field falloffs, the nodal spheres of the density at $\pi k/\omega$, and the absence of nodes in the energy density.
+The spherically symmetric pulsar is $\omega(j_0(\omega r) + j_1(\omega r)\hat e_x)$ with the scalar part $\omega j_0$; the spinor polarised along a fixed axis is $-\omega j_1r_{,1} + \omega(j_0e_1 + j_1(r_{,3}e_2-r_{,2}e_3))$ with scalar part $-\omega j_1r_{,1}$. Both have energy density $\tfrac12\omega^2(j_0^2+j_1^2)$ and both have a vanishing Poynting biquaternion — which is a general property of standing waves under the conjugation $\tilde{\Theta}^{*} = \bar s - \bar{\vec V}$, and which the programme reads as the statement that a harmonic particle does not radiate. The pulsar's central density is $\omega$; every spinor's is zero; and that one dichotomy, decided by the Bessel asymptotics $j_n(z)\sim z^n/(2n+1)!!$, is the programme's classification of heavy particles from light ones, which it names bosons and leptons. All of these statements were verified numerically, as were the $r^{-1}$ and $r^{-2}$ far-field falloffs, the nodal spheres of the density at $\pi k/\omega$, and the absence of nodes in the energy density.
 
 The one construction in the paper that the corpus did not already have is the **convolution**: since a constant-coefficient differential operator commutes with convolution, convolving any monochromatic solution with an arbitrary structural biquaternion $K(\vec x)$ yields another solution, and choosing $K$ to be an inhomogeneous lattice of shifted $\delta$-functions produces a lattice of shifted harmonic pulsars — the paper's crystal, body, tissue and filament construction. This part is algebra and it was verified; the naming of the products as crystals is interpretation, and the lattice steps, weights and frequencies are free parameters, as everything else discrete in the programme is.
 
@@ -370,7 +370,7 @@ The corpus's relation to this part of the programme is therefore the same as to 
 | $j_n$ | Spherical Bessel function of order $n$ |
 | $\tilde{\Theta}_{nm}^{\,0} = (\omega-\nabla)\circ\,\psi_{nm}$ | Pulsar (scalar potential) |
 | $\tilde{\Theta}_{nm}^{\,j} = (\omega-\nabla)\circ(\psi_{nm}e_j)$ | Spinor (vector potential) |
-| $e_x = \vec x/r$ | Radial unit vector |
+| $\hat e_x = \vec x/r$ | Radial unit vector |
 | $r_{,k} = x_k/r$ | Direction cosines; $\sum_k r_{,k}^2 = 1$ |
 | $\tilde{\Sigma} = \tfrac12\tilde{\Theta}\circ\tilde{\Theta}^{*}$ | Energy–momentum biquaternion |
 | $\tilde{\Theta}^{*} = \bar s - \bar{\vec V}$ | Vector-negating, coefficient-conjugating conjugation |

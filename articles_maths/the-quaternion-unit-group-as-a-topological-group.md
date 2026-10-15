@@ -4,7 +4,7 @@
 
 The quaternions form a division algebra, so the units of the plain product are exactly the nonzero elements and the punctured space is the group of units. The space is the article before it; the discrete subgroups of the sphere are the article after it.
 
-**Boundaries.** The space and its topology are *Introduction to Topology on the Quaternions*, above this article in this category; the norm and the inverse formula are *Norm and Invertibility in the General Plain Algebra*, above this article in this category; the finite subgroups of the unit sphere are *Quaternion Orders and Finite Groups of Units*, below this article in this category; the exponential and the Lie structure are *Quaternion Exponential and Lie Group Structure*, below this article in this category; the rotations are *Quaternion Rotations and Reflections*, in `### Geometry`.
+**Boundaries.** The space and its topology are *Introduction to Topology on the Quaternions*, above this article in this category; the norm and the inverse formula are *Norm and Invertibility in the Quaternion Algebra*, above this article in this category; the finite subgroups of the unit sphere are *Quaternion Orders and Finite Groups of Units*, below this article in this category; the exponential and the Lie structure are *Quaternion Exponential and Lie Group Structure*, below this article in this category; the rotations are *Quaternion Rotations and Reflections*, in `### Geometry`.
 
 **Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$; an element is $\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_kq_ke_k$. The **quaternion form** is $N(\tilde q)=q_0^{2}+|\vec q|^{2}$ and the **norm** is $\lvert\tilde q\rvert=\sqrt{N(\tilde q)}$; the **quaternion conjugation** is $\tilde q^{\natural}=q_0e_0-\vec q$, the bar is the identity. The **unit sphere** is $S^3=\{\tilde q:N(\tilde q)=1\}$, the **group of units** is $\mathbb{H}^\times=\{\tilde q\neq0\}$.
 
@@ -18,7 +18,7 @@ $$
 
 of real dimension $4$, open and dense in the algebra; its centre is $\mathbb{R}^\times e_0\cong\mathbb{R}^\times$, of real dimension one.
 
-*Proof.* The algebra is a division algebra, so every nonzero element is invertible, with inverse $\tilde q^{\natural}/N(\tilde q)$ (*Norm and Invertibility in the General Plain Algebra*); the origin is a closed proper algebraic subset, so its complement is open and dense; an element commutes with all of $\mathbb{H}$ exactly when it is a real scalar multiple of $e_0$, and the central units are the nonzero ones.
+*Proof.* The algebra is a division algebra, so every nonzero element is invertible, with inverse $\tilde q^{\natural}/N(\tilde q)$ (*Norm and Invertibility in the Quaternion Algebra*); the origin is a closed proper algebraic subset, so its complement is open and dense; an element commutes with all of $\mathbb{H}$ exactly when it is a real scalar multiple of $e_0$, and the central units are the nonzero ones.
 
 **Proposition (the subspace is a topological group).** With the topology of $\mathbb{H}$ the multiplication $\mathbb{H}^\times\times\mathbb{H}^\times\to\mathbb{H}^\times$ and the inversion $\mathbb{H}^\times\to\mathbb{H}^\times$ are continuous, so $\mathbb{H}^\times$ is a topological group.
 
@@ -90,6 +90,6 @@ The group of units of the quaternion algebra is the punctured space $\mathbb{H}^
 ## Further Reading
 
 - *Introduction to Topology on the Quaternions* (`articles_maths/introduction-to-topology-on-the-quaternions.md`), for the space and the three objects
-- *Norm and Invertibility in the General Plain Algebra* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra-of-quaternions.md`), for the inverse formula
+- *Norm and Invertibility in the Quaternion Algebra* (`articles_maths/norm-and-invertibility-in-the-quaternion-algebra.md`), for the inverse formula
 - *Quaternion Orders and Finite Groups of Units* (`articles_maths/quaternion-orders-and-finite-groups-of-units.md`), for the discrete subgroups of $S^3$
 - *Quaternion Exponential and Lie Group Structure* (`articles_maths/quaternion-exponential-and-lie-group-structure.md`), for the logarithm and the Lie structure

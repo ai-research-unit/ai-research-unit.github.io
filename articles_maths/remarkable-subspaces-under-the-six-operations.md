@@ -78,9 +78,9 @@ The six products carry five named forms, of which four are distinct: the plain f
 
 ## Further Reading
 
-- *The 2 Forms over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-2-forms-over-the-quaternion-r-space.md`), above this article in this category.
+- *The 2 Forms over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-2-forms-over-the-quaternioid-r-space.md`), above this article in this category.
 - *Remarkable Subspaces and the Two Forms* (`articles_maths/remarkable-subspaces-and-the-two-forms.md`), above this article in this category, for the two-form case of the table.
 - *Remarkable Subspaces and the Two Algebraic Norms* (`articles_maths/remarkable-subspaces-and-the-two-algebraic-norms.md`), above this article in this category, for the norm case.
-- *The Trace Form and the Invariance of the Symmetric Plain Algebra* (`articles_maths/the-trace-form-and-the-invariance-of-the-symmetric-plain-algebra-of-quaternions.md`), above this article in this category.
-- *The Killing Form of the Antisymmetric Plain Algebra* (`articles_maths/the-killing-form-of-the-antisymmetric-plain-algebra-of-quaternions.md`), above this article in this category.
-- *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra* (`articles_maths/the-invariant-bilinear-forms-of-the-antisymmetric-quaternionic-algebra-of-quaternions.md`), above this article in this category.
+- *The Trace Form and the Invariance of the Symmetric Plain Algebra* (`articles_maths/the-trace-form-and-the-invariance-of-the-symmetric-plain-algebra-of-quaternioid.md`), above this article in this category.
+- *The Killing Form of the Antisymmetric Plain Algebra* (`articles_maths/the-killing-form-of-the-antisymmetric-plain-algebra-of-quaternioid.md`), above this article in this category.
+- *The Invariant Bilinear Forms of the Antisymmetric Quaternionic Algebra* (`articles_maths/the-invariant-bilinear-forms-of-the-antisymmetric-quaternionic-algebra-of-quaternioid.md`), above this article in this category.

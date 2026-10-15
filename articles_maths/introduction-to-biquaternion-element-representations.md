@@ -4,7 +4,7 @@
 
 The biquaternion algebra $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ is isomorphic to the full matrix algebra $M_2(\mathbb{C})$, and this one fact settles its representation theory. The algebra is simple and semisimple, it has a single simple module up to isomorphism, and every representation is a direct sum of copies of it. This article introduces the representations of $\mathbb{B}$: the dictionary between representations and modules, the classification by a single dimension, Schur's lemma and the intertwiners, the defining and the half-spin representations, the tensor products and their Clebsch–Gordan rule, the real representations and the descent to the real form, and the representations of the group of units. It is the entry of the biquaternion chapter that the other representation articles presuppose.
 
-The treatment is purely mathematical. No physics is invoked. The general theory of finite-dimensional associative algebras — Wedderburn's theorem, semisimplicity, Schur's lemma, Morita equivalence — is used as standard. The module theory of $\mathbb{B}$ is not repeated here: it is the content of *Modules over the General Plain Algebra of Biquaternions*, which owns the regular module, the submodule–ideal correspondence, the endomorphism rings and the Morita equivalence, and it is cited throughout. The algebra conventions are those of *Biquaternions as a Vector Space over $\mathbb{C}$*: the basis $e_0,e_1,e_2,e_3$ with $e_0=1$, $e_k^2=-e_0$ and $e_1e_2=e_3$, the central scalar imaginary $i$ with $i^2=-1$, and a generic element written
+The treatment is purely mathematical. No physics is invoked. The general theory of finite-dimensional associative algebras — Wedderburn's theorem, semisimplicity, Schur's lemma, Morita equivalence — is used as standard. The module theory of $\mathbb{B}$ is not repeated here: it is the content of *Modules over the Biquaternion Algebra*, which owns the regular module, the submodule–ideal correspondence, the endomorphism rings and the Morita equivalence, and it is cited throughout. The algebra conventions are those of *Biquaternions as a Vector Space over $\mathbb{C}$*: the basis $e_0,e_1,e_2,e_3$ with $e_0=1$, $e_k^2=-e_0$ and $e_1e_2=e_3$, the central scalar imaginary $i$ with $i^2=-1$, and a generic element written
 
 $$
 \tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu,\qquad Q_\mu\in\mathbb{C}.
@@ -22,7 +22,7 @@ $$
 
 The isomorphism is $\mathsf{M}_2$ of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*, and its existence is the reason the whole representation theory is the linear algebra of a single two-dimensional space.
 
-Two ground structures are read on the same elements. Over its centre $\mathbb{C}$, over which it is an algebra and a four-dimensional vector space, the representations are complex. Over $\mathbb{R}$, over which it has dimension eight, the same elements form a real algebra $\mathbb{B}_{\mathbb{R}}$, and the real representations are a different category; the passage is restriction of scalars, treated below and in *Biquaternions as a Vector Space over $\mathbb{R}$* and *The Realification of the General Plain Algebra*.
+Two ground structures are read on the same elements. Over its centre $\mathbb{C}$, over which it is an algebra and a four-dimensional vector space, the representations are complex. Over $\mathbb{R}$, over which it has dimension eight, the same elements form a real algebra $\mathbb{B}_{\mathbb{R}}$, and the real representations are a different category; the passage is restriction of scalars, treated below and in *Biquaternions as a Vector Space over $\mathbb{R}$* and *The Realification and the Effect of the Change of Scalars*.
 
 **Definition.** The **opposite algebra** $\mathbb{B}^{\mathrm{opp}}$ is the same additive group with the reversed product $\tilde Q\cdot\tilde R=\tilde R\tilde Q$. Quaternion conjugation $\tilde Q\mapsto\tilde{Q}^{\natural}$ is an anti-automorphism, so $\mathbb{B}^{\mathrm{opp}}\cong\mathbb{B}$, and it is the standard way the two products are identified.
 
@@ -52,9 +52,9 @@ $$
 S\cong\mathbb{C}^2,\qquad \operatorname{End}_{\mathbb{B}}(S)\cong\mathbb{C},\qquad {}_{\mathbb{B}}\mathbb{B}\cong S\oplus S .
 $$
 
-The simple module is the defining module $S=\mathbb{B}\tilde\Pi_1$ of *Modules over the General Plain Algebra of Biquaternions*, cut by the idempotent $\tilde\Pi_1=\tfrac12(e_0+ie_3)$.
+The simple module is the defining module $S=\mathbb{B}\tilde\Pi_1$ of *Modules over the Biquaternion Algebra*, cut by the idempotent $\tilde\Pi_1=\tfrac12(e_0+ie_3)$.
 
-*Proof.* The algebra is $M_2(\mathbb{C})$, and a matrix algebra over a field has a single simple left module, its column space $\mathbb{C}^2$; the endomorphism ring is the field by Schur's lemma, and the regular module is the sum of the two column spaces. The identification with $\mathbb{B}\tilde\Pi_1$ is *Modules over the General Plain Algebra of Biquaternions*.
+*Proof.* The algebra is $M_2(\mathbb{C})$, and a matrix algebra over a field has a single simple left module, its column space $\mathbb{C}^2$; the endomorphism ring is the field by Schur's lemma, and the regular module is the sum of the two column spaces. The identification with $\mathbb{B}\tilde\Pi_1$ is *Modules over the Biquaternion Algebra*.
 
 **Corollary (classification).** Every left $\mathbb{B}$-module is a direct sum of copies of $S$,
 
@@ -64,13 +64,13 @@ $$
 
 so a representation is determined up to equivalence by its dimension, and the dimension is even. A representation of dimension $2k$ is irreducible exactly when $k=1$; for $k=0$ it is the zero representation.
 
-*Proof.* Complete reducibility is semisimplicity of $\mathbb{B}$, and the multiplicity $k$ is the dimension over the division ring $\operatorname{End}_{\mathbb{B}}(S)=\mathbb{C}$; the details are *Modules over the General Plain Algebra of Biquaternions* and *Simple and Semisimple Modules*.
+*Proof.* Complete reducibility is semisimplicity of $\mathbb{B}$, and the multiplicity $k$ is the dimension over the division ring $\operatorname{End}_{\mathbb{B}}(S)=\mathbb{C}$; the details are *Modules over the Biquaternion Algebra* and *Simple and Semisimple Modules*.
 
 **Corollary (Morita equivalence).** The functor $W\mapsto S\otimes_{\mathbb{C}}W$ is an equivalence of categories from the complex vector spaces to the left $\mathbb{B}$-modules, with inverse $\operatorname{Hom}_{\mathbb{B}}(S,-)$. It doubles every complex dimension, and it is the reason a $\mathbb{B}$-module is "a complex vector space in disguise".
 
-*Proof.* This is the Morita equivalence $\operatorname{Mod}(\mathbb{B})\cong\operatorname{Mod}(\mathbb{C})$ of *Modules over the General Plain Algebra of Biquaternions*, where $S$ is the standard $(\mathbb{B},\mathbb{C})$-bimodule and $\operatorname{End}_{\mathbb{C}}(S)=\mathbb{B}$ is the double centraliser.
+*Proof.* This is the Morita equivalence $\operatorname{Mod}(\mathbb{B})\cong\operatorname{Mod}(\mathbb{C})$ of *Modules over the Biquaternion Algebra*, where $S$ is the standard $(\mathbb{B},\mathbb{C})$-bimodule and $\operatorname{End}_{\mathbb{C}}(S)=\mathbb{B}$ is the double centraliser.
 
-**Remark (the parity of freeness).** A module $S^{\oplus k}$ is free over $\mathbb{B}$ exactly when $k$ is even, that is when its complex dimension $2k$ is divisible by four: the regular module $\mathbb{B}\cong S\oplus S$ is free of rank one, while the defining module $S$ itself is projective and not free. The parity is the entire distinction between the module theory of $\mathbb{B}$ and that of a field, and it is developed in *Modules over the General Plain Algebra of Biquaternions*.
+**Remark (the parity of freeness).** A module $S^{\oplus k}$ is free over $\mathbb{B}$ exactly when $k$ is even, that is when its complex dimension $2k$ is divisible by four: the regular module $\mathbb{B}\cong S\oplus S$ is free of rank one, while the defining module $S$ itself is projective and not free. The parity is the entire distinction between the module theory of $\mathbb{B}$ and that of a field, and it is developed in *Modules over the Biquaternion Algebra*.
 
 ## Schur's Lemma and Intertwiners
 
@@ -90,7 +90,7 @@ $$
 
 with automorphism group $\mathrm{GL}_k(\mathbb{C})$. In particular the commutant of the representation on $S^{\oplus k}$ is $M_k(\mathbb{C})$, and the double centraliser of the defining representation is $\operatorname{End}_{\mathbb{C}}(S)=\mathbb{B}$.
 
-*Proof.* A homomorphism is determined by the images of the $m$ copies of $S$, each of which is a homomorphism $S\to S^{\oplus n}$, that is an $n$-tuple of elements of $\operatorname{End}_{\mathbb{B}}(S)=\mathbb{C}$; assembling the tuples gives the matrix. The endomorphisms of $S^{\oplus k}$ are the square case, and the double centraliser is *Modules over the General Plain Algebra of Biquaternions*.
+*Proof.* A homomorphism is determined by the images of the $m$ copies of $S$, each of which is a homomorphism $S\to S^{\oplus n}$, that is an $n$-tuple of elements of $\operatorname{End}_{\mathbb{B}}(S)=\mathbb{C}$; assembling the tuples gives the matrix. The endomorphisms of $S^{\oplus k}$ are the square case, and the double centraliser is *Modules over the Biquaternion Algebra*.
 
 ## The Defining Representation
 
@@ -138,7 +138,7 @@ each summand once. This is the tensor product of the irreducible representations
 
 **Definition.** A **real representation** of $\mathbb{B}$ is a real vector space $V$ together with an $\mathbb{R}$-algebra homomorphism $\mathbb{B}_{\mathbb{R}}\to\operatorname{End}_{\mathbb{R}}(V)$, where $\mathbb{B}_{\mathbb{R}}$ is $\mathbb{B}$ read as a real algebra of dimension eight.
 
-Restriction of scalars relates the two categories. A complex representation $V$ of complex dimension $n$ is a real representation of real dimension $2n$ when the complex scalars are forgotten, and the passage is not invertible: a real representation carries no complex structure in general, and the ones that do are exactly the complex representations, distinguished by a real-linear operator $J$ with $J^{2}=-\mathrm{id}$ commuting with the algebra. The criterion and the two block shapes it gives are *Biquaternions as a Vector Space over $\mathbb{R}$* and *The Realification of the General Plain Algebra*.
+Restriction of scalars relates the two categories. A complex representation $V$ of complex dimension $n$ is a real representation of real dimension $2n$ when the complex scalars are forgotten, and the passage is not invertible: a real representation carries no complex structure in general, and the ones that do are exactly the complex representations, distinguished by a real-linear operator $J$ with $J^{2}=-\mathrm{id}$ commuting with the algebra. The criterion and the two block shapes it gives are *Biquaternions as a Vector Space over $\mathbb{R}$* and *The Realification and the Effect of the Change of Scalars*.
 
 **Theorem.** Every real representation of $\mathbb{B}$ is a direct sum of copies of the realification $S_{\mathbb{R}}$ of the defining module, of real dimension four:
 
@@ -148,7 +148,7 @@ $$
 
 *Proof.* The real algebra $\mathbb{B}_{\mathbb{R}}$ is the realification of $M_2(\mathbb{C})$, which is a simple Artinian real algebra with a single simple module, the realification of $\mathbb{C}^2$; complete reducibility and the multiplicity count are as over $\mathbb{C}$. The statement is the real reading of the classification, and it matches the complex classification through $\dim_{\mathbb{R}}M=2\dim_{\mathbb{C}}M$.
 
-**Remark (the real forms).** The algebra $\mathbb{B}$ contains the quaternion division algebra $\mathbb{H}$ and the real matrix algebra $M_2(\mathbb{R})$ as subalgebras of real dimension four, and its Clifford reading is $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}(\mathbb{R})$, the even Clifford algebra of the Minkowski form, which is *Biquaternion Other Algebraic Element Representations*. The four real forms — $\mathbb{B}$, $\mathbb{H}$, $M_2(\mathbb{R})$ and the split quaternions — are the real algebras of the same complexification, and the place of $\mathbb{B}$ among them is *The Realification of the General Plain Algebra*, with the split comparison in *Split-Biquaternion Element Representation Theory*. Only $\mathbb{H}$ is a division algebra, which is why only its module category is the category of quaternionic vector spaces.
+**Remark (the real forms).** The algebra $\mathbb{B}$ contains the quaternion division algebra $\mathbb{H}$ and the real matrix algebra $M_2(\mathbb{R})$ as subalgebras of real dimension four, and its Clifford reading is $\mathbb{B}\cong\mathrm{Cl}^{+}_{1,3}(\mathbb{R})$, the even Clifford algebra of the Minkowski form, which is *Biquaternion Other Algebraic Element Representations*. The four real forms — $\mathbb{B}$, $\mathbb{H}$, $M_2(\mathbb{R})$ and the split quaternions — are the real algebras of the same complexification, and the place of $\mathbb{B}$ among them is *The Realification and the Effect of the Change of Scalars*, with the split comparison in *Split-Biquaternion Element Representation Theory*. Only $\mathbb{H}$ is a division algebra, which is why only its module category is the category of quaternionic vector spaces.
 
 ## The Group of Units and Its Representations
 

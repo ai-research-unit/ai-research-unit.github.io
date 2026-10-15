@@ -127,18 +127,18 @@ The operator is defined for every $\tilde{Q}$, zero divisors included, but its r
 **Theorem (the rank in coordinates).** Let $\tilde{Q} \neq 0$. Then $\mathrm{H}_{\tilde{Q}}$ has rank $4$ if $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} \neq 0$ and rank $1$ if $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$. On the cone the image of the operator is the single complex line spanned by the Hermitian element $\tilde{Q}\tilde{Q}^{*}$ up to scale, and that element, normalised, is the minimal idempotent
 
 $$
-\tilde\Pi = \tfrac{1}{2}\bigl(e_0 + i\vec n\cdot\mathbf{e}\bigr)
+\tilde\Pi = \tfrac{1}{2}\bigl(e_0 + i\hat u\cdot\mathbf{e}\bigr)
 $$
 
-for a unit vector $\vec n$ determined by $\vec Q$. Moreover $\mathrm{H}_{\tilde{Q}}\circ\mathrm{H}_{\tilde{Q}} = 4\lvert Q^0\rvert^{2}\mathrm{H}_{\tilde{Q}}$ on the cone.
+for a unit vector $\hat u$ determined by $\vec Q$. Moreover $\mathrm{H}_{\tilde{Q}}\circ\mathrm{H}_{\tilde{Q}} = 4\lvert Q^0\rvert^{2}\mathrm{H}_{\tilde{Q}}$ on the cone.
 
-**Proof.** Off the cone, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} \neq 0$, the element and its Hermitian conjugate are invertible, so $\mathrm{H}_{\tilde{Q}} = L_{\tilde{Q}} \circ R_{\tilde{Q}^{*}}$ is a composite of two bijections and has rank $4$. On the cone, with $\tilde{Q} \neq 0$, the matrix of the element has rank one (*Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*), so $\tilde{Q}$ is a nonzero zero divisor, the left ideal $\mathbb{B}\tilde{Q}^{*}$ is minimal of complex dimension $2$ (*Ideals and Peirce Decomposition of the General Plain Algebra*), and
+**Proof.** Off the cone, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} \neq 0$, the element and its Hermitian conjugate are invertible, so $\mathrm{H}_{\tilde{Q}} = L_{\tilde{Q}} \circ R_{\tilde{Q}^{*}}$ is a composite of two bijections and has rank $4$. On the cone, with $\tilde{Q} \neq 0$, the matrix of the element has rank one (*Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*), so $\tilde{Q}$ is a nonzero zero divisor, the left ideal $\mathbb{B}\tilde{Q}^{*}$ is minimal of complex dimension $2$ (*Ideals and Peirce Decomposition of the Biquaternion Algebra*), and
 
 $$
 \operatorname{im}\mathrm{H}_{\tilde{Q}} = L_{\tilde{Q}}\bigl(\mathbb{B}\tilde{Q}^{*}\bigr) = \mathbb{B}\,\tilde{Q}\tilde{Q}^{*} = \mathbb{C}\cdot\tilde{Q}\tilde{Q}^{*},
 $$
 
-a single complex line, because the Hermitian element $\tilde{Q}\tilde{Q}^{*}$ has norm zero and is a nonzero multiple of a minimal idempotent (*Idempotents of the General Plain Algebra*); hence the rank is $1$. The scalar $4\lvert Q^0\rvert^{2}$ is the trace of the operator: in the matrix realization the congruence $X \mapsto MXM^{\dagger}$ has trace $\lvert\operatorname{Tr}M\rvert^{2} = \lvert 2Q^0\rvert^{2} = 4\lvert Q^0\rvert^{2}$, and a rank-one endomorphism $T$ satisfies $T^{2} = (\operatorname{Tr}T)\,T$, so $\mathrm{H}_{\tilde{Q}} \circ \mathrm{H}_{\tilde{Q}} = 4\lvert Q^0\rvert^{2}\mathrm{H}_{\tilde{Q}}$. The coordinate form of the image is the statement that every column $\mathrm{H}_{\tilde{Q}}(e_k)$ is a multiple of the single element $\tilde{Q}\tilde{Q}^{*}$, which is displayed in the worked case below.
+a single complex line, because the Hermitian element $\tilde{Q}\tilde{Q}^{*}$ has norm zero and is a nonzero multiple of a minimal idempotent (*Idempotents of the Biquaternion Algebra*); hence the rank is $1$. The scalar $4\lvert Q^0\rvert^{2}$ is the trace of the operator: in the matrix realization the congruence $X \mapsto MXM^{\dagger}$ has trace $\lvert\operatorname{Tr}M\rvert^{2} = \lvert 2Q^0\rvert^{2} = 4\lvert Q^0\rvert^{2}$, and a rank-one endomorphism $T$ satisfies $T^{2} = (\operatorname{Tr}T)\,T$, so $\mathrm{H}_{\tilde{Q}} \circ \mathrm{H}_{\tilde{Q}} = 4\lvert Q^0\rvert^{2}\mathrm{H}_{\tilde{Q}}$. The coordinate form of the image is the statement that every column $\mathrm{H}_{\tilde{Q}}(e_k)$ is a multiple of the single element $\tilde{Q}\tilde{Q}^{*}$, which is displayed in the worked case below.
 
 Two numbers therefore decide everything in coordinates: whether $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \sum_\mu (Q^\mu)^2$ vanishes, and whether $Q^0$ vanishes.
 
@@ -171,7 +171,7 @@ $$
 \mathrm{H}_{\tilde{Q}}(\tilde P) = 2\bigl(U^0 + i U^3\bigr)\bigl(e_0 + ie_3\bigr) = 4\bigl(U^0 + iU^3\bigr)\tilde\Pi_+ ,
 $$
 
-in which the image depends only on the two coefficients $U^0$ and $U^3$; the operator has forgotten the other two. Applying it twice gives zero, as the nilpotent case requires. The element $\tilde\Pi_+$ is the idempotent of *Ideals and Peirce Decomposition of the General Plain Algebra*, and its vanishing norm is the vanishing of $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$.
+in which the image depends only on the two coefficients $U^0$ and $U^3$; the operator has forgotten the other two. Applying it twice gives zero, as the nilpotent case requires. The element $\tilde\Pi_+$ is the idempotent of *Ideals and Peirce Decomposition of the Biquaternion Algebra*, and its vanishing norm is the vanishing of $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$.
 
 **A null operand with a nonzero scalar part.** Take $\tilde{Q} = \tfrac12(e_0 - ie_3) = \tilde\Pi_-$. Then $Q^\mu = (\tfrac12, 0, 0, -\tfrac{i}{2})$, of norm $\tfrac14 + (-\tfrac{i}{2})^2 = \tfrac14 - \tfrac14 = 0$ and of scalar part $\tfrac12 \neq 0$. This operand is **Hermitian**: $(\tfrac12)^{\dagger} = \tfrac12$ and $(ie_3)^{\dagger} = i^{\dagger}e_3^{\dagger} = (-i)(-e_3) = ie_3$, so $\tilde{Q}^{*} = \tilde{Q}$ and the operator is the two-sided product $\tilde\Pi_-\,\tilde P\,\tilde\Pi_-$. On a general $\tilde P = U^0e_0 + U^1e_1 + U^2e_2 + U^3e_3$ its value is
 
@@ -195,7 +195,7 @@ The element article of this pair lists the four coefficients; this article makes
 
 On the identity the operator returns $\tilde{Q}\tilde{Q}^{*}$, whose scalar component is the positive quantity $\sum_\mu\lvert Q^\mu\rvert^{2}$, the value of the general plain sesquilinear form $\mathrm{Sc}(\tilde{Q}\tilde{Q}^{*})$; on the vector basis elements it returns elements whose scalar components are $2i\,\mathrm{Im}(Q^0\overline{Q^k}) - (\vec Q\times(\vec Q)^{\natural})^k$. The centre and the vector subspace are therefore not preserved, while the two Hermitian sectors are, because the Hermitian condition constrains the components of the argument alone.
 
-The two regimes are decided by two numbers: whether the biquaternion norm $\sum_\mu(Q^\mu)^2$ vanishes, and whether the scalar part $Q^0$ vanishes. Outside the cone the four columns are independent and the operator is invertible; on the cone all four columns lie on the line of the Hermitian element $\tilde{Q}\tilde{Q}^{*}$, whose normalisation is a minimal idempotent $\tfrac12(e_0 + i\vec n\cdot\mathbf{e})$. On the cone the square of the operator is $4\lvert Q^0\rvert^{2}$ times the operator, so $Q^0 = 0$ gives a nilpotent operator and $Q^0 \neq 0$ a scaled projection. The worked operands $e_1 + ie_2$ and $\tfrac12(e_0 - ie_3)$ exhibit the two cases on the same line: both send the algebra onto the span of an idempotent and depend only on $U^0 + iU^3$, and the first is nilpotent while the second is the projection onto its own idempotent.
+The two regimes are decided by two numbers: whether the biquaternion norm $\sum_\mu(Q^\mu)^2$ vanishes, and whether the scalar part $Q^0$ vanishes. Outside the cone the four columns are independent and the operator is invertible; on the cone all four columns lie on the line of the Hermitian element $\tilde{Q}\tilde{Q}^{*}$, whose normalisation is a minimal idempotent $\tfrac12(e_0 + i\hat u\cdot\mathbf{e})$. On the cone the square of the operator is $4\lvert Q^0\rvert^{2}$ times the operator, so $Q^0 = 0$ gives a nilpotent operator and $Q^0 \neq 0$ a scaled projection. The worked operands $e_1 + ie_2$ and $\tfrac12(e_0 - ie_3)$ exhibit the two cases on the same line: both send the algebra onto the span of an idempotent and depend only on $U^0 + iU^3$, and the first is nilpotent while the second is the projection onto its own idempotent.
 
 ## Summary of Notation
 
@@ -211,7 +211,7 @@ The two regimes are decided by two numbers: whether the biquaternion norm $\sum_
 | $\mathrm{H}_{A\tilde{Q}} = \lvert A\rvert^{2}\mathrm{H}_{\tilde{Q}}$, $\mathrm{H}_{i\tilde{Q}} = \mathrm{H}_{\tilde{Q}}$ | central rule; blindness to $i$ |
 | $\operatorname{rank}\mathrm{H}_{\tilde{Q}} = 4$ or $1$ | outside the cone, and on it |
 | $\mathrm{H}_{\tilde{Q}}\circ\mathrm{H}_{\tilde{Q}} = 4\lvert Q^0\rvert^{2}\mathrm{H}_{\tilde{Q}}$, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ | nilpotent if $Q^0 = 0$, projection up to scale otherwise |
-| $\tilde\Pi = \tfrac12(e_0 + i\vec n\cdot\mathbf{e})$ | the idempotent whose line is the image on the cone |
+| $\tilde\Pi = \tfrac12(e_0 + i\hat u\cdot\mathbf{e})$ | the idempotent whose line is the image on the cone |
 
 ## Further Reading
 

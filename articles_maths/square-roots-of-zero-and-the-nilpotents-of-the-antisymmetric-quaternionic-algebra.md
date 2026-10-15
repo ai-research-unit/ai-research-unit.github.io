@@ -318,8 +318,8 @@ matrix.
 
 ## Further Reading
 
-- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the root of a central value, the nilpotent, the index of nilpotency, the square-zero element and the relativity of the definitions
-- *Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra-of-biquaternions.md`), for the operation, its alternation and its table
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the root of a central value, the nilpotent, the index of nilpotency, the square-zero element and the relativity of the definitions
+- *Introduction to the Antisymmetric Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-quaternionic-algebra.md`), for the operation, its alternation and its table
 - *Square Roots of One and the Idempotents of the Antisymmetric Quaternionic Algebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-antisymmetric-quaternionic-algebra.md`), for the reduction of the vanishing square and for the idempotent set, which meets the nilpotents at the origin
 - *Square Roots of a General Element in the Antisymmetric Quaternionic Algebra* (`articles_maths/square-roots-of-a-general-element-in-the-antisymmetric-quaternionic-algebra.md`), for the general equation $\tilde\Xi\diamond\tilde\Xi=a$ and for the square roots of the origin, which are the whole space
 - *Zero Divisors of the Antisymmetric Quaternionic Algebra* (`articles_maths/zero-divisors-of-the-antisymmetric-quaternionic-algebra.md`), for the coincidence of the square-zero set with the zero-divisor set and for the annihilating partner

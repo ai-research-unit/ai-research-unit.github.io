@@ -1,0 +1,318 @@
+# __The Enveloping Operator Algebra of the Biquaternion Algebra and the Bi-module Structure__
+
+## Introduction
+
+An algebra acts on itself in two ways at once: from the left, $\tilde R\mapsto \tilde Q\tilde R$, and from the right, $\tilde R\mapsto \tilde R\tilde P$. The corpus studies the two families of operators in *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions* and *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions* for the definite form, and in *One-Sided Operators on the Biquaternion Algebra* and *Two-Sided Operators on the Biquaternion Algebra* for the indefinite general plain form, and it uses their commuting product in *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*. What the corpus does not yet carry is the **algebra** in which the pair of actions naturally lives. That algebra is the **enveloping algebra**
+
+$$
+\mathbb B^{\mathrm e} = \mathbb B\otimes_{\mathbb C}\mathbb B^{\mathrm{opp}},
+$$
+
+the tensor product of the algebra with its opposite, and the pair of actions is the single left action of $\mathbb B^{\mathrm e}$ on $\mathbb B$,
+
+$$
+(\tilde Q\otimes \tilde P^{\mathrm{opp}})\cdot \tilde R = \tilde Q\,\tilde R\,\tilde P .
+$$
+
+This article develops that algebra for the biquaternion algebra. There are two results. The first is that the enveloping algebra is the **whole endomorphism algebra** of the biquaternion algebra as a complex vector space,
+
+$$
+\mathbb B^{\mathrm e}\cong \operatorname{End}_{\mathbb C}(\mathbb B)\cong M_4(\mathbb C),
+$$
+
+so that the left action of $\mathbb B^{\mathrm e}$ on $\mathbb B$ is faithful and exhausts the linear operators. The second is the reading that follows: the left multiplications $L_{\tilde Q}=\tilde Q\otimes\mathbb 1^{\mathrm{opp}}$ and the right multiplications $R_{\tilde P}=\mathbb 1\otimes \tilde P^{\mathrm{opp}}$ are **two commuting copies of $\mathbb B$ and $\mathbb B^{\mathrm{opp}}$ inside one endomorphism algebra**, of the same algebraic type, and the biquaternion algebra is a **bi-module** over the pair. The corpus's recorded question of which of the two actions is the physical matter representation then has a precise algebraic location: the question is not about the existence of one action or the other, since both are present and of the same type, but about which factor of the enveloping algebra a given physical degree of freedom uses.
+
+The article is pure algebra. The one-sided and two-sided operators are *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions* and *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions*; the general operator theory of an algebra is *The Operators on an Algebra*, whose left and right multiplications and whose double centraliser are the starting point here; the modules and the standard bi-module $_{\mathbb B}S_{\mathbb C}$ are *Modules over the Biquaternion Algebra*; and the spectral consequences of the Kronecker-product form of the two actions are *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*.
+
+## The Two Regular Representations
+
+The ground is the pair of regular representations, recalled with the corpus's notation.
+
+**Definition.** For $a\in\mathbb B$ let
+
+$$
+L_a\colon \mathbb B\to\mathbb B,\quad L_a(\tilde R)=a\tilde R,\qquad
+R_a\colon \mathbb B\to\mathbb B,\quad R_a(\tilde R)=\tilde R a .
+$$
+
+Both are $\mathbb C$-linear, and both assignments are injective, because $L_a(\mathbb 1)=a$ and $R_a(\mathbb 1)=a$.
+
+**Proposition (the composition laws).** For all $a,b\in\mathbb B$,
+
+$$
+L_aL_b=L_{ab},\qquad R_aR_b=R_{ba},\qquad L_aR_b=R_bL_a .
+$$
+
+*Proof.* $(L_aL_b)(\tilde R)=a(b\tilde R)=(ab)\tilde R=L_{ab}(\tilde R)$; $(R_aR_b)(\tilde R)=(\tilde R b)a=\tilde R(ba)=R_{ba}(\tilde R)$; and $(L_aR_b)(\tilde R)=a(\tilde R b)=(a\tilde R)b=(R_bL_a)(\tilde R)$. The last identity is associativity and needs no commutativity.
+
+So the map $L\colon a\mapsto L_a$ is an algebra **homomorphism** of $\mathbb B$ into $\operatorname{End}_{\mathbb C}(\mathbb B)$, while $R\colon a\mapsto R_a$ is an algebra **anti**-homomorphism, whose image is therefore a copy of the opposite algebra $\mathbb B^{\mathrm{opp}}$. The two families commute elementwise. This is the whole content of the two-sided operator $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde{Q}^{*}}$ of the corpus, decomposed into its two factors.
+
+**Theorem (the double centraliser).** The commutant of the left multiplications is exactly the right multiplications, and likewise with the roles exchanged:
+
+$$
+\{T\in\operatorname{End}_{\mathbb C}(\mathbb B) : T\,L_a=L_a\,T\ \ \forall a\}=\{R_b\}_{b\in\mathbb B},\qquad
+\{T : T\,R_b=R_b\,T\ \ \forall b\}=\{L_a\}_{a\in\mathbb B},
+$$
+
+and the bicommutant is the centre, $\{T: T\,\text{commutes with all }L_a\text{ and all }R_b\}=\mathbb C_{\mathbb B}=\mathbb C\cdot\mathbb 1$. Consequently $L_{\mathbb B}$ and $R_{\mathbb B}$ are mutual commutants, each of complex dimension four.
+
+*Proof.* This is the double centraliser of *Modules over the Biquaternion Algebra* and *The Operators on an Algebra*, specialised to the regular module: $\operatorname{End}_{\mathbb B}(\mathbb B)=R_{\mathbb B}\cong\mathbb B^{\mathrm{opp}}$, and the commutant of $R_{\mathbb B}$ is $\operatorname{End}_{\mathbb B^{\mathrm{opp}}}(\mathbb B)=L_{\mathbb B}$; the operators commuting with both are the $\mathbb B$-$\mathbb B$-linear endomorphisms of $\mathbb B$, which are the scalars, since $\mathbb B$ is a simple algebra with centre $\mathbb C$.
+
+The double centraliser theorem says that $\{L_a\}$ and $\{R_b\}$ are as large as two families can be while commuting. It does **not** yet say that together they generate every linear operator; that is the enveloping-algebra statement of the next section.
+
+## The Enveloping Algebra
+
+**Definition.** The **enveloping algebra** of $\mathbb B$ over $\mathbb C$ is
+
+$$
+\mathbb B^{\mathrm e} = \mathbb B\otimes_{\mathbb C}\mathbb B^{\mathrm{opp}},
+$$
+
+with multiplication the tensor product of the multiplications, $(\tilde Q\otimes \tilde P^{\mathrm{opp}})(\tilde Q'\otimes \tilde P'^{\mathrm{opp}})=\tilde Q\tilde Q'\otimes(\tilde P \tilde P')^{\mathrm{opp}}$, and unit $\mathbb 1\otimes\mathbb 1^{\mathrm{opp}}$. It has complex dimension $16$.
+
+**Definition (the action).** The algebra $\mathbb B^{\mathrm e}$ acts on $\mathbb B$ by the **sandwich action**
+
+$$
+(\tilde Q\otimes \tilde P^{\mathrm{opp}})\cdot \tilde R = \tilde Q\,\tilde R\,\tilde P .
+$$
+
+**Proposition (the action is a left action).** The sandwich action is $\mathbb C$-linear in $\tilde R$, and
+
+$$
+\bigl((\tilde Q\otimes \tilde P^{\mathrm{opp}})(\tilde Q'\otimes \tilde P'^{\mathrm{opp}})\bigr)\cdot \tilde R = (\tilde Q\otimes \tilde P^{\mathrm{opp}})\cdot\bigl((\tilde Q'\otimes \tilde P'^{\mathrm{opp}})\cdot \tilde R\bigr),\qquad
+(\mathbb 1\otimes\mathbb 1^{\mathrm{opp}})\cdot \tilde R = \tilde R .
+$$
+
+*Proof.* The right-hand side is $\tilde Q(\tilde Q'\tilde R\tilde P')\tilde P=\tilde Q \tilde Q'\,\tilde R\,\tilde P'\tilde P=((\tilde Q\tilde Q')\otimes(\tilde P\tilde P')^{\mathrm{opp}})\cdot \tilde R$, the left-hand side by the definition of the product in $\mathbb B^{\mathrm e}$. The unit is immediate.
+
+**Proposition (the two regular representations inside $\mathbb B^{\mathrm e}$).** Under the sandwich action,
+
+$$
+(\tilde Q\otimes\mathbb 1^{\mathrm{opp}})\cdot \tilde R = \tilde Q\tilde R = L_{\tilde Q}(\tilde R),\qquad
+(\mathbb 1\otimes \tilde P^{\mathrm{opp}})\cdot \tilde R = \tilde R\tilde P = R_{\tilde P}(\tilde R).
+$$
+
+So the left and right multiplications are the two "one-sided" elements of the enveloping algebra, obtained by putting the unit in the unused factor. In particular the assignment $a\mapsto a\otimes\mathbb 1^{\mathrm{opp}}$ is an algebra homomorphism $\mathbb B\to\mathbb B^{\mathrm e}$, and $a\mapsto\mathbb 1\otimes a^{\mathrm{opp}}$ is one $\mathbb B^{\mathrm{opp}}\to\mathbb B^{\mathrm e}$, and their images commute — the abstract form of $L_aR_b=R_bL_a$.
+
+**Theorem (the enveloping algebra is the endomorphism algebra).** The sandwich action defines an isomorphism of $\mathbb C$-algebras
+
+$$
+\mathbb B^{\mathrm e}=\mathbb B\otimes_{\mathbb C}\mathbb B^{\mathrm{opp}}\longrightarrow\operatorname{End}_{\mathbb C}(\mathbb B),\qquad \tilde Q\otimes \tilde P^{\mathrm{opp}}\mapsto\bigl(\tilde R\mapsto \tilde Q\tilde R\tilde P\bigr),
+$$
+
+so that $\mathbb B^{\mathrm e}\cong M_4(\mathbb C)$ and the left action of $\mathbb B^{\mathrm e}$ on $\mathbb B$ is faithful and exhausts all $\mathbb C$-linear operators on $\mathbb B$.
+
+*Proof.* Both sides have complex dimension $16$, so it suffices that the map is injective. Let $\sum_i \tilde Q_i\otimes \tilde P_i^{\mathrm{opp}}$ act as zero: $\sum_i \tilde Q_i \tilde R \tilde P_i=0$ for all $\tilde R\in\mathbb B$. Taking $\tilde R$ running over a basis of matrix units $E_{ab}$ of $\mathbb B\cong M_2(\mathbb C)$ and using the independence of the $E_{ab}$ gives $\sum_i \tilde Q_i\otimes \tilde P_i^{\mathrm{opp}}=0$, so the kernel is trivial. A linear injection between spaces of equal finite dimension is an isomorphism. The endomorphism algebra of the four-dimensional complex space $\mathbb B$ is $M_4(\mathbb C)$.
+
+**Corollary (the two-sided operators are the elementary tensors).** The two-sided operator $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde{Q}^{*}}$ is the image of the elementary tensor $\tilde Q\otimes(\tilde{Q}^{*})^{\mathrm{opp}}$, and the mixed operators $L_aR_b$ are the images of $a\otimes b^{\mathrm{opp}}$. The corpus's two-sided family is therefore the set of **rank-one** (elementary) elements of the enveloping algebra, a small subset of it.
+
+### The Peirce Decomposition of the Enveloping Algebra
+
+The Peirce decomposition of $\mathbb{B}$ of *Ideals and Peirce Decomposition of the Biquaternion Algebra* tensors to a Peirce decomposition of $\mathbb{B}^{\mathrm e}$. The four elements
+
+$$
+E_{ik} = \tilde\Pi_i \otimes \tilde\Pi_k^{\mathrm{opp}}, \qquad i,k\in\{1,2\},
+$$
+
+are idempotent and pairwise orthogonal,
+
+$$
+E_{ik}E_{jl} = \delta_{ij}\delta_{kl}E_{ik},
+$$
+
+by the multiplication of $\mathbb{B}^{\mathrm e}$ and the orthogonality of $\tilde\Pi_1,\tilde\Pi_2$ in each factor, and they sum to the unit, since $\tilde\Pi_1+\tilde\Pi_2 = e_0$ in both factors and the tensor product is bilinear. They are primitive, each corner $E_{ik}\mathbb{B}^{\mathrm e}E_{ik}$ being the one-dimensional division ring $\mathbb{C}(\tilde\Pi_i\otimes\tilde\Pi_k^{\mathrm{opp}})$, which is the primitivity criterion of *Ideals and Peirce Decomposition of the Biquaternion Algebra*, §*The Biquaternion Case*.
+
+The Peirce decomposition of $\mathbb{B}^{\mathrm e}$ with respect to this complete orthogonal family has sixteen corners, and each is one-dimensional over $\mathbb{C}$:
+
+$$
+E_{ik}\mathbb{B}^{\mathrm e}E_{jl} = (\tilde\Pi_i\mathbb{B}\tilde\Pi_j)\otimes(\tilde\Pi_l\mathbb{B}\tilde\Pi_k)^{\mathrm{opp}} = \mathbb{C}\,\bigl(\Lambda_{ij}\otimes\Lambda_{lk}^{\mathrm{opp}}\bigr),
+$$
+
+where $\Lambda_{ij}$ is the basis element of the corner $\tilde\Pi_i\mathbb{B}\tilde\Pi_j$ — that is, $\tilde\Pi_1, \hat\Upsilon_1, \hat\Upsilon_2, \tilde\Pi_2$ for $(i,j) = (1,1),(1,2),(2,1),(2,2)$. The corners multiply by the rule
+
+$$
+\bigl(E_{ik}\mathbb{B}^{\mathrm e}E_{jl}\bigr)\bigl(E_{i'k'}\mathbb{B}^{\mathrm e}E_{j'l'}\bigr) \subseteq \delta_{ji'}\delta_{lk'}\, E_{ik}\mathbb{B}^{\mathrm e}E_{j'l'} ,
+$$
+
+in which the two indices that must agree are read in the reversed order of the second factor. The reversal is not an artefact of the writing: it is the same reversal as in the composition rule $(a[\,]b)\circ(c[\,]d)=(ac)[\,](db)$ of §*The Conway Operator Basis*, it is the reason the second factor of the enveloping algebra is written with an $\mathrm{op}$, and it is visible in the corner basis element $\Lambda_{ij}\otimes\Lambda_{lk}^{\mathrm{opp}}$ above, whose second index pair is reversed. So the enveloping algebra is a sixteen-corner algebra, and the tensor product of the two Peirce bases is its Peirce basis; the Conway basis $e_n[\,]e_m$ of §*The Conway Operator Basis* is the tensor basis $e_n\otimes e_m^{\mathrm{opp}}$, and the change from one to the other is the matrix change of basis inside each factor, which is the passage from the four-vector coordinates to the matrix coordinates of *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions*.
+
+The four idempotents cut the algebra $\mathbb{B}$ itself, under the sandwich action, into its own four Peirce spaces:
+
+$$
+E_{ik}\cdot\tilde R = (\tilde\Pi_i\otimes\tilde\Pi_k^{\mathrm{opp}})\cdot\tilde R = \tilde\Pi_i\tilde R\tilde\Pi_k .
+$$
+
+The sandwich action of $E_{ik}$ is therefore the Peirce projection onto the corner $\tilde\Pi_i\mathbb{B}\tilde\Pi_k$, and since the four idempotents are complete and orthogonal, the left $\mathbb{B}^{\mathrm e}$-module ${}_{\mathbb{B}^{\mathrm e}}\mathbb{B}$ splits as the direct sum of the four complex lines $\tilde\Pi_i\mathbb{B}\tilde\Pi_k$: the Peirce decomposition of $\mathbb{B}$ is the decomposition of $\mathbb{B}$ as a module over its enveloping algebra, into the four components that the four projections single out. In particular the identity operator on $\mathbb{B}$ is the sum $\sum_{ik}E_{ik} = \mathbb 1\otimes\mathbb 1^{\mathrm{opp}}$, and the decomposition is the one along which the two-sided operators of §*The Bi-module Structure* are read corner by corner.
+
+## The Conway Operator Basis
+
+The isomorphism $\mathbb B^{\mathrm e}\cong\operatorname{End}_{\mathbb C}(\mathbb B)$ is abstract: it manufactures operators from tensors without exhibiting a basis of the operator space. The basis is classical, and it is what makes the isomorphism usable in coordinates. Following Hamilton, write $e_n[\,]e_m$ for the elementary operator that puts the argument between the two units,
+
+$$
+(e_n[\,]e_m)(\tilde R)=e_n\,\tilde R\,e_m ,
+$$
+
+the empty brackets marking the slot; Conway and Synge named the calculus that uses it. In the sandwich picture $e_n[\,]e_m$ is the image of the elementary tensor $e_n\otimes e_m^{\mathrm{opp}}$, so the sixteen operators are the images of a tensor basis and the main theorem gives at once:
+
+**Proposition (the Conway operators are a basis).** The sixteen operators $e_n[\,]e_m$, $n,m\in\{0,1,2,3\}$, are a $\mathbb C$-basis of $\operatorname{End}_{\mathbb C}(\mathbb B)$: every $\mathbb C$-linear function is uniquely
+
+$$
+F( )=\sum_{n,m=0}^{3}A_{nm}\,e_n[\,]e_m ,
+\qquad A_{nm}\in\mathbb C .
+$$
+
+*Proof.* The elementary tensors $e_n\otimes e_m^{\mathrm{opp}}$ are a basis of $\mathbb B\otimes_{\mathbb C}\mathbb B^{\mathrm{opp}}$ and the sandwich map is an isomorphism, so their images are a basis.
+
+In this notation the two regular representations are the two **edge rows** of the basis, the ones that carry the unit in the unused slot,
+
+$$
+L_a=\sum_{n=0}^{3}a_n\,e_n[\,]e_0,\qquad R_b=\sum_{m=0}^{3}b_m\,e_0[\,]e_m ,
+$$
+
+which is the coordinate form of $L_a=a\otimes\mathbb 1^{\mathrm{opp}}$ and $R_b=\mathbb 1\otimes b^{\mathrm{opp}}$.
+
+**Proposition (the composition rule).** For all $a,b,c,d\in\mathbb B$,
+
+$$
+(a[\,]b)\circ(c[\,]d)=(ac)[\,](db) .
+$$
+
+*Proof.* $\bigl(a[\,]b\bigr)\bigl((c[\,]d)(\tilde R)\bigr)=a\,c\,\tilde R\,d\,b=(ac)\tilde R(db)$. In the unit basis the rule expands as $e_n[\,]e_m\circ e_p[\,]e_q=(e_ne_p)[\,](e_qe_m)$, whose right-hand side is a linear combination of basis operators through the multiplication table of the imaginary units.
+
+**Remark (the regular operators).** The operator $e_n[\,]e_m$ is the composite $\mathsf{M}_4(e_n)\mathsf{M}_4^{R}(e_m)$ of a left and a right regular action, and the sixteen of them are the Conway basis of the operator space; their coordinates in the regular basis are computed in *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*.
+
+### The Three Classical Functions
+
+Three linear functions of the algebra carry the classical types. With $t_1=s_2s_3$, $t_2=s_1s_3$ and $t_3=s_1s_2$ they are
+
+$$
+A\{a\}=\tfrac12\bigl(a[\,]-[\,]a\bigr),
+$$
+
+$$
+D\{d\}=\tfrac12\bigl(d_1e_1[\,]e_1+d_2e_2[\,]e_2+d_3e_3[\,]e_3\bigr),
+$$
+
+$$
+S\{s\}=D\{s_1^2,s_2^2,s_3^2\}-\tfrac12\,s[\,]s .
+$$
+
+The first is antisymmetric, the second diagonal, the third diagonal-less symmetric; the three families span the traceless part of the operator space, and their coordinate forms in the regular basis are computed in *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*.
+
+**Remark (the source's sign).** The source writes the symmetric function with the two terms in the opposite order, $S\{s\}=\tfrac12 s[\,]s-D\{s_1^2,s_2^2,s_3^2\}$; the two conventions differ by an overall sign, and the corpus fixes the sign as written above.
+
+### The Extent of the Method
+
+The quaternion formulation of the classical types is complete in dimension three and incomplete in dimension four.
+
+**Remark (the method degrades from three to four dimensions).** The antisymmetric, the diagonal and the diagonal-less symmetric functions exhaust the traceless maps that act on the vector part and fix the scalar. For a general traceless map the same three families no longer suffice: the symmetric part needs a function that mixes the scalar and the vector parts, and the source records that its expression is cumbersome and not useful. The four-dimensional unitary groups are therefore assembled from two $SO(4)$ factors rather than from a single quaternion closed form — the same asymmetry that the Lie-group article reads as the clean three-dimensional and the less clean four-dimensional parametrisations.
+
+## The Base Field and the Real Dimension Count
+
+The isomorphism of the theorem is over $\mathbb C$, and the choice matters.
+
+**Remark (over $\mathbb R$ the action is not faithful).** Regard $\mathbb B$ as a **real** algebra, $\dim_{\mathbb R}\mathbb B=8$, so that $\mathbb B\otimes_{\mathbb R}\mathbb B^{\mathrm{opp}}$ has real dimension $64$, the same as $\operatorname{End}_{\mathbb R}(\mathbb B)$. The sandwich map $\mathbb B\otimes_{\mathbb R}\mathbb B^{\mathrm{opp}}\to\operatorname{End}_{\mathbb R}(\mathbb B)$, $\tilde Q\otimes \tilde P\mapsto(\tilde R\mapsto \tilde Q\tilde R\tilde P)$, is then **not** injective: its image is only the space of $\mathbb C$-linear operators, of real dimension $32$, and the kernel has real dimension $32$. The reason is that the central scalar $i$ is already in the algebra: the element $i\otimes\mathbb 1^{\mathrm{opp}}-\mathbb 1\otimes i^{\mathrm{opp}}$ acts as $\tilde R\mapsto i\tilde R-\tilde R i=0$, and the kernel is exactly the span of its image, that is the real $32$-dimensional space $\{i\tilde Q\otimes \tilde P^{\mathrm{opp}}-\tilde Q\otimes(i\tilde P)^{\mathrm{opp}}\}$. The complex base field removes exactly this redundancy, which is why the theorem above is stated over $\mathbb C$.
+
+*Proof.* The image operators are $\mathbb C$-linear because $\tilde Q$, $\tilde P$ commute with the scalar $i$, so the image is contained in $\operatorname{End}_{\mathbb C}(\mathbb B)$ of real dimension $32$, and $64-32=32$ is therefore an upper bound for the kernel; the element $i\otimes\mathbb 1^{\mathrm{opp}}-\mathbb 1\otimes i^{\mathrm{opp}}$ acts as zero, and the numerical rank computation below shows that the span of its image already has dimension $32$, so the bound is attained and the kernel is exactly that span.
+
+**Remark (the general statement).** For $A=M_n(k)$ over a field $k$, the same proof gives $A^{\mathrm e}=A\otimes_kA^{\mathrm{opp}}\cong\operatorname{End}_k(A)\cong M_{n^2}(k)$, and the enveloping action is faithful. The result is the matrix case of the general fact that a finite-dimensional **central simple** algebra is a faithful $A^{\mathrm e}$-module and $A^{\mathrm e}\cong\operatorname{End}_k(A)$; it fails for a commutative algebra with nilpotents, where $\tilde Q\otimes\mathbb 1^{\mathrm{opp}}-\mathbb 1\otimes \tilde Q^{\mathrm{opp}}$ can act as zero. The biquaternion algebra is central simple over $\mathbb C$, so the theorem applies with $n=2$.
+
+## The Bi-module Structure
+
+**Definition.** A $\mathbb B$-$\mathbb B$**-bi-module** is a complex vector space $M$ carrying a left $\mathbb B$-action and a right $\mathbb B$-action that commute: $(\tilde Q\cdot m)\cdot \tilde P=\tilde Q\cdot(m\cdot \tilde P)$ for all $\tilde Q,\tilde P\in\mathbb B$, $m\in M$. The algebra $\mathbb B$ itself, with the left and right multiplications, is the **regular bi-module** ${}_{\mathbb B}\mathbb B_{\mathbb B}$, and it is the defining example.
+
+**Proposition (the bi-module is the enveloping module).** A $\mathbb B$-$\mathbb B$-bi-module is the same thing as a left $\mathbb B^{\mathrm e}$-module, by $(\tilde Q\otimes \tilde P^{\mathrm{opp}})\cdot m=\tilde Q\cdot m\cdot \tilde P$. In particular the regular bi-module ${}_{\mathbb B}\mathbb B_{\mathbb B}$ is the left regular module of the enveloping algebra, $\mathbb B^{\mathrm e}\cdot\mathbb B=\mathbb B$, and it is a **generator**: the enveloping algebra is recovered as $\operatorname{End}_{\mathbb C}(\mathbb B)$.
+
+*Proof.* The correspondence is the definition of the enveloping algebra's action; the associativity of the two commuting actions is exactly the associativity of the multiplication in $\mathbb B^{\mathrm e}$. The last statement is the theorem of the previous section read as a statement about the module.
+
+**Theorem (the left and the right actions are of the same type).** Under the isomorphism $\mathbb B^{\mathrm e}\cong\operatorname{End}_{\mathbb C}(\mathbb B)$, both the left multiplications and the right multiplications are **left multiplications in the enveloping algebra**: $L_a$ is left multiplication by $a\otimes\mathbb 1^{\mathrm{opp}}$ and $R_b$ is left multiplication by $\mathbb 1\otimes b^{\mathrm{opp}}$, and the two elements commute. The two actions are therefore not of different algebraic kinds; they are two commuting copies of the same construction, the one of $\mathbb B$ and the other of its opposite.
+
+*Proof.* Immediate from the two propositions above. The distinction between $L_a$ and $R_b$ is the distinction between the tensor factors, not a distinction in the kind of action.
+
+This is Fauser's observation on the Daviau equation, in its abstract form. An equation on an algebra that multiplies its unknown on the left and on the right at once, such as $\nabla\varphi\,i\sigma_1=m\varphi^{*}+qA\varphi$ of *The Daviau Map and the Space Clifford Formulation of the Dirac Equation*, is a single equation in the enveloping algebra; the two-sidedness is not an awkwardness of the formulation but the bi-module structure of the algebra acting on itself.
+
+## The Left-versus-Right Question
+
+The corpus records, in *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*, an open question of the **matter representation**: whether the physical Dirac field is the left action of the algebra on itself or the right action, the two being two consistent covariant constructions. The enveloping algebra gives the algebraic part of the answer.
+
+**What the algebra says.** The bi-module ${}_{\mathbb B}\mathbb B_{\mathbb B}$ carries **both** actions, and they commute. A covariant construction that uses the left action and one that uses the right action are not two theories between which one must choose: they are two elements of one enveloping algebra, and any statement about one can be translated into a statement about the other. The choice of which action "is" the field is therefore not an algebraic choice; the algebra offers the pair.
+
+**What the algebra does not say.** It does not say which physical degree of freedom is carried by which factor. The embedding of the left multiplications is $a\mapsto a\otimes\mathbb 1^{\mathrm{opp}}$ and of the right multiplications is $b\mapsto\mathbb 1\otimes b^{\mathrm{opp}}$; the two factors are algebraically distinct but no physical label attaches to either from the algebra alone. Fauser's caution on the same point is that the identification of the right multiplication with a specific internal symmetry — the iso-spin degree of freedom — is not warranted by the algebra. The corpus records the caution and leaves the physical assignment open.
+
+**The precise form of the remaining question.** In the enveloping algebra the question becomes: for the physical Dirac field, which factor of $\mathbb B^{\mathrm e}$ carries the spin and which the internal quantum numbers, and is the split forced by the requirement that the current be conserved? The corpus's observation that the conserved current needs the Clifford-odd $\gamma_0$ of the full spacetime algebra is a constraint of exactly this kind, and it is the natural place to look for the answer. The algebra alone closes the existence half of the question and leaves the assignment half open.
+
+## The Envelope as a Luxury of the Associative Unital Case
+
+The enveloping algebra is a **luxury of the associative unital case**. The construction $a\otimes b^{\mathrm{opp}}$ uses associativity to make the sandwich well defined and the unit to place the two factors inside one endomorphism algebra; the operators themselves need neither, and they are defined for every binary product, associative or not.
+
+**What the envelope buys, and nothing else does.**
+
+- **Multiplicativity of the regular representation**, $L_aL_b=L_{ab}$: the assignment $a\mapsto L_a$ is an algebra homomorphism.
+- **An unambiguous sandwich** $a\tilde Rb$, hence the commuting pair $L_a,R_b$: the product of a left and a right operator reads on the element without parentheses.
+- **The bi-module structure**: $\mathbb B$ is a $\mathbb B$-$\mathbb B$-bi-module, equivalently a left module of $\mathbb B^{\mathrm e}$.
+- **The universal property**: the $\mathbb B$-bi-modules are exactly the left $\mathbb B^{\mathrm e}$-modules, so the bi-module theory of the algebra is the module theory of one associative algebra.
+
+**What survives without associativity.**
+
+- **The single operators** $L_a$ and $R_a$, defined for any binary product by $L_a(\tilde R)=a\tilde R$ and $R_a(\tilde R)=\tilde R a$.
+- **Adjoints for an invariant form**, hence the self-adjoint, skew-adjoint and unitary classes of operators.
+- **Derivations**: for any product the maps obeying the Leibniz rule already form a Lie algebra under the commutator.
+- **Automorphisms and the structure group** of the product.
+- **The pin and spin groups** cut out by a scalar condition on the parameters.
+
+The two lists are the reason the operator layer of the corpus does not depend on this article. The general plain bilinear product is the only one of the four general products that is associative and unital, so it is the only one of the twelve structures for which the first list is available at all (*Comparison Between the Four General Products*, §*The Failure of Associativity*). Every block nevertheless carries a full operator theory, and it is built from the second list: the one-sided and the two-sided operators are *One-Sided Operators on the Biquaternion Algebra* and *Two-Sided Operators on the Biquaternion Algebra*, the adjoints for the invariant forms are *Hermitian Adjoints on a Hermitian Algebra*, the derivations and the automorphisms are *Automorphisms and Derivations of Algebras* and *Biquaternion Automorphisms and Derivations*, and the pin and spin groups are *The Pin and Spin Groups of the Biquaternion Algebra*; the symmetric quaternionic and the two sesquilinear blocks read the same items over their own products, in *The Multiplication Operators of the Symmetric Quaternionic Algebra*, *The Adjoint Operators of the Antisymmetric Quaternionic Sesqualgebra* and the companion articles. The enveloping algebra is what the associative block has **in addition**; it is not what makes the other eleven blocks readable.
+
+**Remark (the multiplication algebra, the honest companion).** The object that exists for every product is the **multiplication algebra**, the subalgebra of $\operatorname{End}_{\mathbb C}(\mathbb B)$ generated by all $L_a$ and all $R_b$. It is associative by construction, since it lives inside an endomorphism algebra, and its dimension measures the operator content of the block. The enveloping algebra is the case in which the natural map $\mathbb B\otimes_{\mathbb C}\mathbb B^{\mathrm{opp}}\to\operatorname{End}_{\mathbb C}(\mathbb B)$ is an isomorphism; that map is an algebra homomorphism exactly when the product is associative, and it is injective exactly when the product has a unit, and this article's main theorem is that the general plain product supplies both and makes the map onto.
+
+## Worked Verification
+
+**The bi-module generators.** With the real basis $E_{00},E_{01},E_{10},E_{11},iE_{00},\dots,iE_{11}$ of $\mathbb B\cong M_2(\mathbb C)$ and the operators $L_{\tilde Q}R_{\tilde P}(\tilde R)=\tilde Q\tilde R\tilde P$ written as $8\times8$ real matrices, the $\mathbb R$-span of the $64$ operators has rank $32$. This is $\dim_{\mathbb R}\operatorname{End}_{\mathbb C}(\mathbb B)$, confirming that the two-sided family spans all $\mathbb C$-linear operators and that the missing $32$ real dimensions are exactly the $\mathbb R$-linear operators that fail to be $\mathbb C$-linear.
+
+**The composition laws and the commutativity.** On the same basis, $L_aL_b-L_{ab}=0$, $R_aR_b-R_{ba}=0$ and $L_aR_b-R_bL_a=0$ hold identically, with no residual.
+
+**The kernel over $\mathbb R$.** The $64\times64$ matrix of the element $i\otimes\mathbb 1^{\mathrm{opp}}-\mathbb 1\otimes i^{\mathrm{opp}}$ acting on $\mathbb B\otimes_{\mathbb R}\mathbb B$ has rank $32$; equivalently, the real span of $\{i\tilde Q\otimes \tilde P^{\mathrm{opp}}-\tilde Q\otimes(i\tilde P)^{\mathrm{opp}}\}$ has dimension $32$, which is the kernel of the real sandwich map, confirming both the non-faithfulness of the real enveloping action and the role of the complex base field.
+
+## Open Questions
+
+1. **The physical assignment.** Which tensor factor of $\mathbb B^{\mathrm e}$ carries the spin and which the internal quantum numbers of the physical Dirac field? The algebra settles the existence of both actions; the assignment is the remaining physical question, and the conserved-current constraint of *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism* is the natural tool.
+
+2. **The two-sided operators as rank-one elements.** The corpus's two-sided operators $\Theta_{\tilde Q}$ are the elementary tensors $\tilde Q\otimes(\tilde{Q}^{*})^{\mathrm{opp}}$. Does the corpus's classification of the two-sided operators (self-adjoint, unitary, and the rest) become the classification of elementary tensors by their factors, and does the enveloping algebra give the general operator a decomposition into such elementary pieces?
+
+3. **The enveloping algebra and the trace.** The trace form $\operatorname{Tr}(\tilde Q_1\tilde Q_2)=2\operatorname{Sc}(\tilde Q_1\tilde Q_2)$ is the algebra's $\mathbb C$-bilinear pairing. Does it extend to a trace on $\mathbb B^{\mathrm e}\cong M_4(\mathbb C)$, and is the resulting trace the one the corpus's spectral article uses on the operators?
+
+4. **The higher enveloping algebras.** The construction iterates: $(\mathbb B^{\mathrm e})^{\mathrm e}$ is the algebra acting on the operators on $\mathbb B$. Does the iteration terminate at the scalar matrices, and is there a chain of "enveloping" algebras with a limit that the corpus's operator theory would recognise?
+
+5. **Comparison with the universal enveloping algebra.** The corpus's *Universal Enveloping Algebras* is the Lie-theoretic $U(\mathfrak g)$ of a Lie algebra. The two "enveloping algebras" are different constructions sharing a name; the corpus should keep them apart and cross-link them, which this article does.
+
+## Summary
+
+The biquaternion algebra acts on itself from the left and from the right, and the algebra in which the pair of actions lives is the **enveloping algebra** $\mathbb B^{\mathrm e}=\mathbb B\otimes_{\mathbb C}\mathbb B^{\mathrm{opp}}$, with the sandwich action $(\tilde Q\otimes \tilde P^{\mathrm{opp}})\cdot \tilde R=\tilde Q\tilde R\tilde P$. The enveloping algebra is isomorphic to the full endomorphism algebra, $\mathbb B^{\mathrm e}\cong\operatorname{End}_{\mathbb C}(\mathbb B)\cong M_4(\mathbb C)$, so the action is faithful and exhausts the $\mathbb C$-linear operators; the two-sided operators of the corpus are the elementary tensors of the enveloping algebra. The Peirce decomposition of $\mathbb B$ tensors to one of $\mathbb B^{\mathrm e}$: the four idempotents $\tilde\Pi_i\otimes\tilde\Pi_k^{\mathrm{opp}}$ are complete, orthogonal and primitive, they cut $\mathbb B^{\mathrm e}$ into sixteen one-dimensional corners spanned by the tensors $\Lambda_{ij}\otimes\Lambda_{lk}^{\mathrm{opp}}$ of the two Peirce bases, the reversal of the second index pair being the reversal of the composition rule quoted below, and they cut $\mathbb B$ itself, under the sandwich action, into the four Peirce spaces $\tilde\Pi_i\mathbb B\tilde\Pi_k$ of the algebra. The isomorphism has an explicit basis, the sixteen **Conway operators** $e_n[\,]e_m$, with $(e_n[\,]e_m)(\tilde R)=e_n\tilde R e_m$ and the composition rule $(a[\,]b)\circ(c[\,]d)=(ac)[\,](db)$; the classical antisymmetric, diagonal and diagonal-less symmetric functions $A\{a\}$, $D\{d\}$ and $S\{s\}$ are the basis elements of the three matrix types; a linear function carries a second involution, **association**, which is treated in *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*. The left multiplications $L_a=a\otimes\mathbb 1^{\mathrm{opp}}$ and the right multiplications $R_b=\mathbb 1\otimes b^{\mathrm{opp}}$ are two commuting copies, in the enveloping algebra, of $\mathbb B$ and of $\mathbb B^{\mathrm{opp}}$; they are of the **same** algebraic type, and the biquaternion algebra is a **bi-module** over the pair, equivalently a left module of the enveloping algebra. The corpus's left-versus-right matter-representation question is thereby split into an algebraic half, which the enveloping algebra closes — both actions are present, of the same type, and commuting — and a physical half, which is the assignment of spin and internal quantum numbers to the two tensor factors and which the algebra does not decide. The result is over $\mathbb C$; over $\mathbb R$ the sandwich map has a $32$-dimensional kernel, exactly the redundancy of the central $i$, and this confirms that the complex base field is the natural one. The construction is the abstract form of Fauser's reading of the Daviau equation, whose unknown is multiplied from both sides at once. The construction is also the luxury of the associative unital case: it needs the associativity that makes the sandwich unambiguous and the unit that places the two factors in one endomorphism algebra, and of the twelve structures of the corpus the general plain bilinear product alone supplies both. What is left when they are absent — the single operators, their adjoints for an invariant form, the derivations, the automorphisms and the structure and pin-spin groups — is the operator layer that the other eleven blocks carry, and the multiplication algebra generated by the operators is its associative companion in every block.
+
+## Summary of Notation
+
+| Symbol | Meaning |
+|---|---|
+| $\mathbb B=\mathbb C\otimes_\mathbb R\mathbb H$ | Biquaternion algebra, $\cong M_2(\mathbb C)$, complex dimension $4$ |
+| $L_a(\tilde R)=a\tilde R$, $R_b(\tilde R)=\tilde R b$ | Left and right multiplication |
+| $e_n[\,]e_m$, $(e_n[\,]e_m)(\tilde R)=e_n\tilde R e_m$ | Conway operator; a basis of $\operatorname{End}_{\mathbb C}(\mathbb B)$ |
+| $(a[\,]b)\circ(c[\,]d)=(ac)[\,](db)$ | The composition rule |
+| $A\{a\}$, $D\{d\}$, $S\{s\}$ | The antisymmetric, diagonal and diagonal-less symmetric linear functions |
+| $L_aL_b=L_{ab}$, $R_aR_b=R_{ba}$, $L_aR_b=R_bL_a$ | The composition laws |
+| $\{L_a\}'=\{R_b\}$, $\{R_b\}'=\{L_a\}$ | The double centraliser |
+| multiplication algebra of $\mathbb B$ | The subalgebra of $\operatorname{End}_{\mathbb C}(\mathbb B)$ generated by the $L_a$ and the $R_b$; exists for every product, associative by construction |
+| $\mathbb B^{\mathrm{opp}}$ | The opposite algebra |
+| $\mathbb B^{\mathrm e}=\mathbb B\otimes_{\mathbb C}\mathbb B^{\mathrm{opp}}$ | The enveloping algebra; $\cong M_4(\mathbb C)$ |
+| $(\tilde Q\otimes \tilde P^{\mathrm{opp}})\cdot \tilde R=\tilde Q\tilde R\tilde P$ | The sandwich action |
+| $\mathbb B^{\mathrm e}\cong\operatorname{End}_{\mathbb C}(\mathbb B)$ | The main theorem |
+| ${}_{\mathbb B}\mathbb B_{\mathbb B}$ | The regular bi-module; a left $\mathbb B^{\mathrm e}$-module |
+| $\Theta_{\tilde Q}=L_{\tilde Q}R_{\tilde{Q}^{*}}$ | The two-sided operator; the elementary tensor $\tilde Q\otimes(\tilde{Q}^{*})^{\mathrm{opp}}$ |
+| $E_{ik}=\tilde\Pi_i\otimes\tilde\Pi_k^{\mathrm{opp}}$ | The four idempotents of $\mathbb B^{\mathrm e}$, cutting it into sixteen corners |
+| $\Lambda_{ij}$ | The basis element of the Peirce corner $\tilde\Pi_i\mathbb B\tilde\Pi_j$, one of $\tilde\Pi_1,\hat\Upsilon_1,\hat\Upsilon_2,\tilde\Pi_2$ |
+
+## Further Reading
+
+- A. Gsponer, "Explicit closed-form parametrization of SU(3) and SU(4) in terms of complex quaternions and elementary functions," arXiv:math-ph/0211056v2, 2002, §2–4, for the Conway operators $e_n[\,]e_m$, the composition and association rules, the functions $A\{a\}$, $D\{d\}$, $S\{s\}$ and their $4\times4$ matrix displays (10′)–(13′), the rule $G^{-1}=G^{+\approx}=G^{\dagger}$ for the group elements, and the remark that the quaternion method loses power from three to four dimensions.
+- A. W. Conway, "Quaternions and matrices," *Proceedings of the Royal Irish Academy* **A 50** (1945) 98–130, and J. L. Synge, "Quaternions, Lorentz transformations, and the Conway–Dirac–Eddington matrices," *Communications of the Dublin Institute for Advanced Studies* **A 21** (1972), for the Conway operator calculus in its original form.
+- B. Fauser, "On the equivalence of Daviau's space Clifford algebraic, Hestenes' and Parra's formulations of (real) Dirac theory," arXiv:hep-th/9908200, 1999, §1–2, for the enveloping algebra $P^{\mathrm e}\cong P\otimes P^{\mathrm T}$, the sandwich action, the statement that the left and right actions are of the same type, and the caution on the iso-spin reading.
+- The companion articles of this series: *The Operators on an Algebra*, *Modules over the Biquaternion Algebra*, *Introduction to the 4×4 Matrix Element Representation $M_4(\mathbb{C})_L$ of Biquaternions*, *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions*, *Two-Sided Operators on the General Plain Sesqualgebra of Biquaternions*, *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint*, and *Universal Enveloping Algebras* (the Lie-theoretic construction, distinct from this one).
+- The physics articles that use the reading: *The Daviau Map and the Space Clifford Formulation of the Dirac Equation*, *Parra's Four Options of the Dirac Equation and the Discrete Symmetries*, and *The Minimal Coupling of the Biquaternion Dirac Field to Electromagnetism*.

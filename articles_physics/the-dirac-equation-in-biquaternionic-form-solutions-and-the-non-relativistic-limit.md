@@ -273,17 +273,17 @@ The scalar and pseudoscalar pair are seen to be the real and imaginary parts of 
 There is a second, distinct bilinear that is genuinely biquaternionic in character: the rank-one Hermitian form built from a single two-component spinor. For $\psi \in \mathbb{C}^2$ normalized by $\psi^\dagger\psi = 1$, define
 
 $$
-\rho = \psi\psi^\dagger = \tfrac{1}{2}\left(I_2 + \vec n\cdot\boldsymbol{\sigma}\right), \qquad
-\vec n = \psi^\dagger\boldsymbol{\sigma}\psi .
+\rho = \psi\psi^\dagger = \tfrac{1}{2}\left(I_2 + \hat u\cdot\boldsymbol{\sigma}\right), \qquad
+\hat u = \psi^\dagger\boldsymbol{\sigma}\psi .
 $$
 
-Because $\vec n$ satisfies $|\vec n| = \psi^\dagger\psi = 1$ (the standard Pauli identity), $\rho$ is a rank-one Hermitian projector: $\rho^2 = \rho$, $\mathrm{Tr}\,\rho = 1$. Under the isomorphism $\sigma_k \leftrightarrow i e_k$, this maps to
+Because $\hat u$ satisfies $|\hat u| = \psi^\dagger\psi = 1$ (the standard Pauli identity), $\rho$ is a rank-one Hermitian projector: $\rho^2 = \rho$, $\mathrm{Tr}\,\rho = 1$. Under the isomorphism $\sigma_k \leftrightarrow i e_k$, this maps to
 
 $$
-\rho \;\longmapsto\; \tfrac{1}{2}\left(e_0 + i\,\hat u\right), \qquad \hat u = n_1 e_1 + n_2 e_2 + n_3 e_3,
+\rho \;\longmapsto\; \tfrac{1}{2}\left(e_0 + i\,\hat u\right), \qquad \hat u = u_1 e_1 + u_2 e_2 + u_3 e_3,
 $$
 
-which is exactly the idempotent $\tilde\Pi_1(\hat u)$ of the informational sector $\mathbb{M}_+$ in the companion quantum article. The unit vector $\vec n$ is the Bloch vector, and its normalization is a consequence of the algebra rather than an added condition. So a normalized two-component spinor is, in the biquaternion framework, precisely a pure state of $\mathbb{M}_+$, and the spinor bilinear $\psi\psi^\dagger$ is its representative idempotent. This is the sharpest sense in which the Dirac spinor structure and the informational sector are the same algebraic object, and it is the bridge between the present article and the qubit formalism.
+which is exactly the idempotent $\tilde\Pi_1(\hat u)$ of the informational sector $\mathbb{M}_+$ in the companion quantum article. The unit vector $\hat u$ is the Bloch vector, and its normalization is a consequence of the algebra rather than an added condition. So a normalized two-component spinor is, in the biquaternion framework, precisely a pure state of $\mathbb{M}_+$, and the spinor bilinear $\psi\psi^\dagger$ is its representative idempotent. This is the sharpest sense in which the Dirac spinor structure and the informational sector are the same algebraic object, and it is the bridge between the present article and the qubit formalism.
 
 ### The Gordon decomposition
 

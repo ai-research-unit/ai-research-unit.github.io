@@ -157,7 +157,7 @@ with both factors real.
 $ict\cdot h_0$ and $\vec x\cdot i\vec h$, each carrying one factor of $i$.
 
 **Interpretation.** The pairing reads a material operation against an informational state and returns a phase,
-which is the off-sector interpretation of *The General Plain Bilinear Product on the Material Sector*. It is a pairing and
+which is the off-sector interpretation of *The Bilinear Product on the Material Sector*. It is a pairing and
 not a map, and it produces no element of either sector. The **imaginary part of the norm** is the same
 phenomenon from the other side: the cross terms of $N$ couple the material and informational parameters
 of one element, and that is the interpretation the introduction records for the imaginary part of $N$, owned by
@@ -205,11 +205,11 @@ Biquaternionic Form*.
 
 | operation | type | source $\to$ target | owner | boundary |
 |---|---|---|---|---|
-| square $\tilde{Q}\mapsto\tilde{Q}^{\natural}\tilde{Q}$ | map | $\mathbb{M}_-\to\mathbb{M}_+$, image $\mathbb{R}e_0$ | *The Interval as the Square and the Charge of the Material Composition* | a map, not an evolution; the product of two is not informational |
+| square $\tilde{Q}\mapsto\tilde{Q}^{\natural}\tilde{Q}$ | map | $\mathbb{M}_-\to\mathbb{M}_+$, image $\mathbb{R}e_0$ | *The Biquaternioid General Quaternionic Algebra (GQA) over $\mathbb{C}$* | a map, not an evolution; the product of two is not informational |
 | preparation $\tilde{H} = -\tfrac{i}{2}\tilde{Q}$ | map | $\mathbb{M}_-\to\mathbb{M}_+$ | *The Bloch Ball as the Trace-One Slice of the Future Light Cone* | a dictionary, no dynamics; state only on the trace-one slice |
 | central multiplication $\tilde{Q}\mapsto i\tilde{Q}$ | map | $\mathbb{M}_-\leftrightarrow\mathbb{M}_+$ | *Conventions in the Biquaternion Universe* | invertible, order four; no arrow by itself |
 | rotor action $\tilde{T}\mapsto\tilde{U}\tilde{T}\tilde{U}^{*}$ | action | $\mathbb{M}_+$ acts on $\mathbb{M}_-$ | *Biquaternion Rotations and Lorentz Transformations* | preserves the sector it acts on; unit-norm rotors only |
-| off-sector scalar $\mathrm{Sc}(\tilde{P}\tilde{H})$ | pairing | $\mathbb{M}_-\times\mathbb{M}_+\to i\mathbb{R}$ | *The General Plain Bilinear Product on the Material Sector* | a pairing, produces no element |
+| off-sector scalar $\mathrm{Sc}(\tilde{P}\tilde{H})$ | pairing | $\mathbb{M}_-\times\mathbb{M}_+\to i\mathbb{R}$ | *The Bilinear Product on the Material Sector* | a pairing, produces no element |
 | imaginary part of $N$ | pairing | $\mathbb{M}_-\times\mathbb{M}_+$ cross terms | *Norm and Invertibility in the General Quaternionic Algebra* | an interpretation of one element's own cross terms |
 | Matsubara continuation | continuation | imaginary time $=$ informational time | *The KMS Condition and the Biquaternion Framework*, *The Matsubara Thermal Formalism in Biquaternionic Form* | a continuation, not a new coupling |
 | Landauer exchange | process | material $\to$ informational | *Landauer's Principle and the Material–Informational Exchange in Biquaternionic Form* | thermodynamic face; arrow from the acting monoid |
@@ -274,7 +274,7 @@ each of its instances owned by an article that proves it.
 material sector, its four-vectors and the interval.
 - *The Hermitian Subspace $\mathbb{M}_+$ as the Informational Sector*, companion article, for the
 informational sector, the trace pairing and the state space.
-- *The Interval as the Square and the Charge of the Material Composition*, companion article, for the
+- *The Biquaternioid General Quaternionic Algebra (GQA) over $\mathbb{C}$*, companion article, for the
 square map and its real-scalar image.
 - *The Material-Informational Split as a Superselection Structure in Biquaternionic Form*, companion
 article, for the negative statement and its real-form interpretation.

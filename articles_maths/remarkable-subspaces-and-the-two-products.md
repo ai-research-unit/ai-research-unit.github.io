@@ -90,6 +90,6 @@ The real subspace carries the units all its nonzero elements, the idempotents $0
 ## Further Reading
 
 - *The Two Products of the Complex Space*, for the two products, their definitions and the collapse of the four general products to them.
-- *Complex Subspaces* (`articles_maths/complex-subspaces.md`), for the two subspaces, their bases, their dimensions and the closure of the real subspace.
+- *Complex Subspaces* (`articles_maths/complexoid-subspaces.md`), for the two subspaces, their bases, their dimensions and the closure of the real subspace.
 - *Complex Algebra* (`articles_maths/complex-algebra.md`), for the field structure of the real subspace and the multiplication $AC$.
 - *The Two Forms and the Two Algebraic Norms of the Complex Space* and *Remarkable Subspaces of the Complex Numbers and the Two Forms*, below this article in this category, for the two forms and their restriction to the two subspaces.

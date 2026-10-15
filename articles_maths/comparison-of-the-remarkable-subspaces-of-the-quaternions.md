@@ -82,4 +82,4 @@ The quaternion algebra has two remarkable real subspaces, the scalar line and th
 
 - *Introduction to the Remarkable Subspaces of the Quaternions* (`articles_maths/introduction-to-the-remarkable-subspaces-of-the-quaternions.md`), for the definition, basis and role of the two subspaces.
 - *Decompositions Along the Remarkable Subspaces of the Quaternions* (`articles_maths/decompositions-along-the-remarkable-subspaces-of-the-quaternions.md`), for the three additive decompositions and the polar one.
-- *The Group of Involutions of the Quaternions* (`articles_maths/the-group-of-involutions-of-the-quaternions.md`), for the natural sign and the inner involutions of the axis lines.
+- *The Group of Involutions of the Quaternions* (`articles_maths/the-group-of-involutions-of-the-quaternioid.md`), for the natural sign and the inner involutions of the axis lines.

@@ -4,7 +4,7 @@
 
 The quaternion algebra carries a norm with integer values on certain lattices, and the lattices that are also rings are the **orders**. The two classical orders, the Lipschitz and the Hurwitz orders, have finitely many units, and the unit groups that occur are exactly the finite subgroups of the unit sphere. This article states the orders, their unit groups, the classification of the finite subgroups of the sphere, and the McKay correspondence; the topological group of units of the whole algebra is the article before it, and the finite groups are read here once.
 
-**Boundaries.** The norm and the invertibility criterion are *Norm and Invertibility in the General Plain Algebra*, above this article in this category; the group of units of the whole algebra and its topology are *The Quaternion Unit Group as a Topological Group*, above this article in this category; the unit sphere as a topological group is the same article.
+**Boundaries.** The norm and the invertibility criterion are *Norm and Invertibility in the Quaternion Algebra*, above this article in this category; the group of units of the whole algebra and its topology are *The Quaternion Unit Group as a Topological Group*, above this article in this category; the unit sphere as a topological group is the same article.
 
 **Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$; an element is $\tilde q=q_0e_0+q_1e_1+q_2e_2+q_3e_3$. The **quaternion form** is $N(\tilde q)=q_0^{2}+q_1^{2}+q_2^{2}+q_3^{2}$; the **quaternion conjugation** is $\tilde q^{\natural}=q_0e_0-q_1e_1-q_2e_2-q_3e_3$, the bar is the identity. The **unit sphere** is $S^3=\{\tilde q:N(\tilde q)=1\}$, the unit group of the algebra is $\mathbb{H}^\times$, and the norm and the group of units are as in the articles named above.
 
@@ -101,6 +101,6 @@ The Lipschitz order $\mathcal L=\mathbb{Z}+\mathbb{Z}i+\mathbb{Z}j+\mathbb{Z}k$ 
 
 ## Further Reading
 
-- *Norm and Invertibility in the General Plain Algebra* (`articles_maths/norm-and-invertibility-in-the-general-plain-algebra-of-quaternions.md`), for the norm and the inverse
+- *Norm and Invertibility in the Quaternion Algebra* (`articles_maths/norm-and-invertibility-in-the-quaternion-algebra.md`), for the norm and the inverse
 - *The Quaternion Unit Group as a Topological Group* (`articles_maths/the-quaternion-unit-group-as-a-topological-group.md`), for the group of units of the algebra and the sphere
 - *Quaternion Rotations and Reflections* (`articles_maths/quaternion-rotations-and-reflections.md`), for the rotation groups of the quotients

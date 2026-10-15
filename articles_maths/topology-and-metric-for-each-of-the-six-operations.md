@@ -4,7 +4,7 @@
 
 The chapter closes where the six products of *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space* meet the topology of the algebra. For each product one reads the scalar part of the square, polarises it into a symmetric bilinear form, and so obtains the metric that the product carries; the six rows fall into two classes, a definite one and an indefinite one, and the antisymmetric products carry the zero form. This is the only place in the chapter where the six products are read metrically; the products themselves, and their laws, are the articles cited and are not re-proved here.
 
-**Boundaries.** The six products and their laws are *The 6 Products of the Quaternion Real Space* and *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; the two forms of the space are *The 2 Forms over the Quaternion $\mathbb{R}$ Space*; the norm is *Norm and Invertibility in the General Plain Algebra*; the metric of the quaternion space is *Quaternion Metrics*, above this article in this category; the space and its topology are *Introduction to Topology on the Quaternions* and *Quaternion Topology*, above this article in this category.
+**Boundaries.** The six products and their laws are *The 6 Products of the Quaternion Real Space* and *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space*; the two forms of the space are *The 2 Forms over the Quaternion $\mathbb{R}$ Space*; the norm is *Norm and Invertibility in the Quaternion Algebra*; the metric of the quaternion space is *Quaternion Metrics*, above this article in this category; the space and its topology are *Introduction to Topology on the Quaternions* and *Quaternion Topology*, above this article in this category.
 
 **Conventions.** The algebra is $\mathbb{H}$ over $\mathbb{R}$ with basis $e_0=1,e_1,e_2,e_3$; an element is $\tilde q=q_0e_0+\vec q$ with $\vec q=\sum_kq_ke_k$. The **quaternion form** is $N(\tilde q)=q_0^{2}+|\vec q|^{2}$ and the **plain form** is $B(\tilde q)=q_0^{2}-|\vec q|^{2}$; the **quaternion conjugation** is $\tilde q^{\natural}=q_0e_0-\vec q$, the bar is the identity. The six products are those of the table of *The 6 Products of the Quaternion Real Space*, and for a product $\star$ the **metric form** is the polarisation of the scalar part at the two equal arguments,
 
@@ -18,7 +18,7 @@ $$
 
 **Proposition (the value at the two equal arguments).** For the six products the scalar part at the two equal arguments is
 
-| $\star$ | $\mathrm{GPA}$ | $\mathrm{SPA}$ | $\mathrm{APA}$ | $\mathrm{GQA}$ | $\mathrm{SQA}$ | $\mathrm{AQA}$ |
+| $\star$ | the algebra | $\mathrm{SPA}$ | $\mathrm{APA}$ | $\mathrm{GQA}$ | $\mathrm{SQA}$ | $\mathrm{AQA}$ |
 |---|---|---|---|---|---|---|
 | $Q_\star(\tilde q)=\mathrm{Sc}(\tilde q\star\tilde q)$ | $B(\tilde q)$ | $B(\tilde q)$ | $0$ | $N(\tilde q)$ | $N(\tilde q)$ | $0$ |
 
@@ -30,7 +30,7 @@ $$
 
 ## The Six, One by One
 
-**$\mathrm{GPA}$ — general plain algebra.** The metric form is the plain form $B$, of signature $(1,3)$, indefinite. The **unit set** $\{B=1\}$ is the two-sheeted hyperboloid of the timelike vectors, noncompact; the **null set** $\{B=0\}$ is the quadratic cone of the isotropic directions, of real dimension $3$. This is the Lorentz form of the algebra, and the plain product is the product whose quadratic invariant it is.
+**The algebra — quaternion algebra.** The metric form is the plain form $B$, of signature $(1,3)$, indefinite. The **unit set** $\{B=1\}$ is the two-sheeted hyperboloid of the timelike vectors, noncompact; the **null set** $\{B=0\}$ is the quadratic cone of the isotropic directions, of real dimension $3$. This is the Lorentz form of the algebra, and the plain product is the product whose quadratic invariant it is.
 
 **$\mathrm{SPA}$ — symmetric plain algebra.** The diagonal is the same square, so the metric is again $B$ of signature $(1,3)$; the unit set and the null set are the same hyperboloid and cone. The symmetric plain product is the Jordan product of the same indefinite form.
 
@@ -46,14 +46,14 @@ $$
 
 | product | quadratic diagonal $Q_\star$ | metric form | signature | unit set $\{Q_\star=1\}$ | null set $\{Q_\star=0\}$ |
 |---|---|---|---|---|---|
-| $\mathrm{GPA}$ | $B$ | $B$ | $(1,3)$ indefinite | hyperboloid, noncompact | the cone, dim $3$ |
+| the algebra | $B$ | $B$ | $(1,3)$ indefinite | hyperboloid, noncompact | the cone, dim $3$ |
 | $\mathrm{SPA}$ | $B$ | $B$ | $(1,3)$ indefinite | hyperboloid, noncompact | the cone, dim $3$ |
 | $\mathrm{APA}$ | $0$ | $0$ | totally degenerate | empty | all of $\mathbb{H}$ |
 | $\mathrm{GQA}$ | $N$ | $N$ | $(4,0)$ definite | $S^3$, compact | $\{0\}$ |
 | $\mathrm{SQA}$ | $N$ | $N$ | $(4,0)$ definite | $S^3$, compact | $\{0\}$ |
 | $\mathrm{AQA}$ | $0$ | $0$ | totally degenerate | empty | all of $\mathbb{H}$ |
 
-**Theorem (the two classes).** Four of the six products carry a nonzero metric and two carry the zero form; among the four, two are definite, the quaternionic products $\mathrm{GQA}$ and $\mathrm{SQA}$, and two are indefinite of signature $(1,3)$, the plain products $\mathrm{GPA}$ and $\mathrm{SPA}$. The definite class has the compact unit sphere $S^3$ and the trivial null set; the indefinite class has a noncompact unit hyperboloid and a null cone of real dimension $3$; the degenerate class has no unit set and its null set is the whole algebra.
+**Theorem (the two classes).** Four of the six products carry a nonzero metric and two carry the zero form; among the four, two are definite, the quaternionic products $\mathrm{GQA}$ and $\mathrm{SQA}$, and two are indefinite of signature $(1,3)$, the plain products, the algebra and $\mathrm{SPA}$. The definite class has the compact unit sphere $S^3$ and the trivial null set; the indefinite class has a noncompact unit hyperboloid and a null cone of real dimension $3$; the degenerate class has no unit set and its null set is the whole algebra.
 
 *Proof.* The statements are read from the table; the signatures are those of $B$ and $N$, the eigenvalues of the Gram matrices being $+1,-1,-1,-1$ and $+1,+1,+1,+1$; definiteness is *The 2 Forms over the Quaternion $\mathbb{R}$ Space*, and the compactness and the dimensions of the sets are *Introduction to Topology on the Quaternions*.
 
@@ -76,7 +76,7 @@ For each of the six products the scalar part of the square is a quadratic form, 
 
 ## Further Reading
 
-- *The 6 Products of the Quaternion Real Space* (`articles_maths/the-6-products-of-the-quaternion-real-space.md`) and *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-algebraic-structures-over-the-quaternion-r-space.md`), for the six products
-- *The 2 Forms over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-2-forms-over-the-quaternion-r-space.md`), for the signatures and the isotropy of $B$ and $N$
+- *The 6 Products of the Quaternion Real Space* (`articles_maths/the-6-products-of-the-quaternioid-real-space.md`) and *The Algebraic Structures over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-algebraic-structures-over-the-quaternioid-r-space.md`), for the six products
+- *The 2 Forms over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-2-forms-over-the-quaternioid-r-space.md`), for the signatures and the isotropy of $B$ and $N$
 - *Quaternion Metrics* (`articles_maths/quaternion-metrics.md`), for the metric of the quaternion space
 - *Introduction to Topology on the Quaternions* (`articles_maths/introduction-to-topology-on-the-quaternions.md`), for the sphere, the punctured space and the group of units

@@ -22,7 +22,7 @@ The rotor algebra used below is stated explicitly, from first principles.
 
 ### Rotors
 
-A rotation of three-dimensional space by an angle $\theta$ about a unit axis $\hat u = n_1e_1 + n_2e_2 + n_3e_3$, with $\hat u^2 = -e_0$, is represented by the **rotor**
+A rotation of three-dimensional space by an angle $\theta$ about a unit axis $\hat u = u_1e_1 + u_2e_2 + u_3e_3$, with $\hat u^2 = -e_0$, is represented by the **rotor**
 
 $$
 \tilde{\Lambda}(\theta,\hat u) = \cos\frac{\theta}{2} + \sin\frac{\theta}{2}\,\hat u \in \mathbb{H}_{\mathbb{B}} ,

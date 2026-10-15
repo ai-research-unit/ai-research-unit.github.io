@@ -7,7 +7,7 @@ A spin-$\tfrac12$ chain and a chain of fermionic modes are described by differen
 This article establishes:
 
 - **The one-site case is the algebra's own identity.** For one mode the parents' ladder $\tilde a=\tfrac12(ie_1-e_2)$, $\tilde a^\dagger=\tfrac12(ie_1+e_2)$ satisfies $\tilde a^2=0$ and $\{\tilde a,\tilde a^\dagger\}=e_0$ inside $\mathbb{B}$, so a one-site spin ladder *is* a fermionic mode with no string attached. The spin generators are the bilinears $\tilde S_k=\tfrac{\hbar}{2}ie_k$; the fermionic mode is the square of those bilinears' structure. There is nothing to transform at one site.
-- **The string.** For $N$ sites the map must carry a string, and the string is exactly the tensor product of the one-site parities: $\prod_{k<j}(-1)^{\hat n_k}=\prod_{k<j}\sigma^z_k$. It lies in $\bigotimes_j\mathbb{B}$ but not in $\mathbb{B}$, and for one site it collapses to the identity, which is why the one-site case needed none.
+- **The string.** For $N$ sites the map must carry a string, and the string is exactly the tensor product of the one-site parities: $\prod_{k<j}(-1)^{\hat m_k}=\prod_{k<j}\sigma^z_k$. It lies in $\bigotimes_j\mathbb{B}$ but not in $\mathbb{B}$, and for one site it collapses to the identity, which is why the one-site case needed none.
 - **The map and its failure to be a graded isomorphism.** The Jordan–Wigner map is a unital algebra isomorphism between the spin algebra and the fermionic mode algebra — both are the full matrix algebra of the $2^N$-dimensional space, and this is the Clifford identity $\mathcal{A}_N\cong\mathrm{Cl}(2N)\cong M_{2^N}(\mathbb{C})$. It does **not** preserve the fermionic grading: spins are even (bilinear) in fermions, fermions are odd. The transformation is the choice of a square root of the spin algebra, and the string is its branch cut.
 - **The consequences.** The hopping identity, the parity identity, the inverse map, the free-fermion solution of the XY chain, and the boundary term that distinguishes the two fermion-parity sectors.
 
@@ -67,7 +67,7 @@ $$
 \tilde a^\dagger=\frac{\tilde S_-}{\hbar}\Big|_{\text{one mode}} .
 $$
 
-**This is the one-site Jordan–Wigner transformation**, and it is an identity inside $\mathbb{B}$ rather than a transformation. The reason it needs no string is structural: the string is a product of the *other* sites' parities, and at one site there are no other sites. Equivalently, the string is $\prod_{k<j}(-1)^{\hat n_k}$ and the empty product is the identity. The algebra's contribution to the Jordan–Wigner story is therefore not the string but the fact that the transformation has a one-site fixed point: the spin and the fermion are two interpretations of the same biquaternion, the interpretation changing only when a *second* site is present.
+**This is the one-site Jordan–Wigner transformation**, and it is an identity inside $\mathbb{B}$ rather than a transformation. The reason it needs no string is structural: the string is a product of the *other* sites' parities, and at one site there are no other sites. Equivalently, the string is $\prod_{k<j}(-1)^{\hat m_k}$ and the empty product is the identity. The algebra's contribution to the Jordan–Wigner story is therefore not the string but the fact that the transformation has a one-site fixed point: the spin and the fermion are two interpretations of the same biquaternion, the interpretation changing only when a *second* site is present.
 
 **A note on the identification.** The parent article *The Spinor Module in Biquaternionic Form and Its Lorentz Action* and the dictionary companion fix the module-level statement $\mathsf{M}_2(ie_k)=\gamma^0\gamma^k$, whose left action on the invariant two-dimensional subspace is the Pauli action; the companion article *Fock Space and Creation/Annihilation Operators in Biquaternionic Form* gives the two-dimensional representative $\mathsf{M}_2(e_k)=-i\sigma_k$, hence $\mathsf{M}_2(ie_k)=\sigma_k$. In that representative the one-site identification is exact, including the conjugation:
 
@@ -108,9 +108,9 @@ The verification on $N=4$ returned a maximum error of exactly $0$ over all $16$ 
 **The number and the parity.** With the sign convention stated,
 
 $$
-\hat n_j=\hat c_j^\dagger\hat c_j=\frac{I-\sigma^z_j}{2} ,
+\hat m_j=\hat c_j^\dagger\hat c_j=\frac{I-\sigma^z_j}{2} ,
 \qquad
-(-1)^{\hat n_j}=\sigma^z_j ,
+(-1)^{\hat m_j}=\sigma^z_j ,
 $$
 
 so the occupied state is the spin-down state and the fermionic parity of a site *is* the site's $\sigma^z$. The first identity was checked term by term, the second follows from it in the two-dimensional site space and was checked as a matrix identity on the full chain.
@@ -127,7 +127,7 @@ and the inverse map returns the transverse spin components,
 $$
 \sigma^x_j=\Big(\prod_{k<j}\sigma^z_k\Big)\big(\hat c_j+\hat c_j^\dagger\big) ,
 \qquad
-\sigma^z_j=I-2\hat n_j .
+\sigma^z_j=I-2\hat m_j .
 $$
 
 Both were verified bond by bond and site by site on the four-site chain, with maximum errors of $0$. The inverse displays the asymmetry of the transformation: recovering a spin operator requires the same string that the fermion carried, so the map is an isomorphism of algebras but the *fermion* mode is defined only relative to an ordering of the sites.
@@ -137,7 +137,7 @@ Both were verified bond by bond and site by site on the four-site chain, with ma
 The string is not a novel object. Using the parity identity above,
 
 $$
-\prod_{k<j}\sigma^z_k=\prod_{k<j}(-1)^{\hat n_k}=\prod_{k<j}(-1)^{\hat F_k} ,
+\prod_{k<j}\sigma^z_k=\prod_{k<j}(-1)^{\hat m_k}=\prod_{k<j}(-1)^{\hat F_k} ,
 $$
 
 and the one-site parity is the algebra element the parents identify,
@@ -241,9 +241,9 @@ For $N$ sites, with $\hat c_j=(\prod_{k<j}\sigma^z_k)\sigma^+_j$ and the spin-do
 $$
 \{\hat c_i,\hat c_j^\dagger\}=\delta_{ij} ,
 \qquad
-\hat n_j=\frac{I-\sigma^z_j}{2} ,
+\hat m_j=\frac{I-\sigma^z_j}{2} ,
 \qquad
-(-1)^{\hat n_j}=\sigma^z_j ,
+(-1)^{\hat m_j}=\sigma^z_j ,
 \qquad
 \hat c_j^\dagger\hat c_{j+1}+\text{h.c.}=\tfrac12\big(\sigma^x_j\sigma^x_{j+1}+\sigma^y_j\sigma^y_{j+1}\big),
 $$
@@ -264,7 +264,7 @@ The map is a unital algebra isomorphism — both presentations generate $M_{2^N}
 | $\prod_{k<j}\sigma^z_k=\prod_{k<j}(-1)^{\hat F_k}$ | The string as a product of one-site parities |
 | $(-1)^{\hat F}=ie_3=2\tilde S_3/\hbar$ | One-site parity, the string's factor |
 | $\{\hat c_i,\hat c_j^\dagger\}=\delta_{ij}$, $\{\hat c_i,\hat c_j\}=0$ | Canonical anticommutators (verified, error $0$) |
-| $\hat n_j=(I-\sigma^z_j)/2$, $(-1)^{\hat n_j}=\sigma^z_j$ | Number and parity |
+| $\hat m_j=(I-\sigma^z_j)/2$, $(-1)^{\hat m_j}=\sigma^z_j$ | Number and parity |
 | $\hat c_j^\dagger\hat c_{j+1}+\text{h.c.}=\tfrac12(\sigma^x_j\sigma^x_{j+1}+\sigma^y_j\sigma^y_{j+1})$ | Hopping = XY bond |
 | $\sigma^x_j=(\prod_{k<j}\sigma^z_k)(\hat c_j+\hat c_j^\dagger)$ | Inverse map |
 | $\mathcal{A}_N\cong\mathrm{Cl}(2N)\cong M_{2^N}(\mathbb{C})$ | Both descriptions generate the full matrix algebra |

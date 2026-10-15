@@ -194,11 +194,11 @@ are fundamental solutions of $D_{3\pm\alpha}$, that is $D_{3\pm\alpha}\mathcal K
 $$
 T_\alpha f(x)=\int_\Omega \mathcal K_\alpha(x-y)f(y)\,d\Omega_y,
 \qquad
-K_\alpha f(x)=-\int_\Gamma \mathcal K_\alpha(x-y)\,\vec n(y)\,f(y)\,d\Gamma_y,
+K_\alpha f(x)=-\int_\Gamma \mathcal K_\alpha(x-y)\,\hat u(y)\,f(y)\,d\Gamma_y,
 $$
 
 $$
-S_\alpha f(x)=-2\int_\Gamma \mathcal K_\alpha(x-y)\,\vec n(y)\,f(y)\,d\Gamma_y,
+S_\alpha f(x)=-2\int_\Gamma \mathcal K_\alpha(x-y)\,\hat u(y)\,f(y)\,d\Gamma_y,
 \qquad
 P_\alpha=\tfrac12(I+S_\alpha),
 \qquad
@@ -251,7 +251,7 @@ The kernels assembled above are not only a language for the boundary-value probl
 **The problem.** Let $\Gamma$ be the boundary of a perfectly conducting body and $\Omega^-$ the exterior domain. Find fields satisfying the time-harmonic chiral system in $\Omega^-$, the outgoing radiation condition at infinity (the Silver–Müller condition of the previous section), and the boundary condition
 
 $$
-\tilde{\vec E}(\vec x)\times\vec n(\vec x)=\vec f(\vec x),
+\tilde{\vec E}(\vec x)\times\hat u(\vec x)=\vec f(\vec x),
 \qquad \vec x\in\Gamma ,
 $$
 
@@ -287,10 +287,10 @@ as two further equations at each collocation point. Second, the unknowns are the
 
 $$
 \|\tilde{\vec E}\|_{\infty,\Omega^-_r}+\|\tilde{\vec H}\|_{\infty,\Omega^-_r}
-\le C\,\|\vec n\times\tilde{\vec E}\|_{L^2(\Gamma)} .
+\le C\,\|\hat u\times\tilde{\vec E}\|_{L^2(\Gamma)} .
 $$
 
-**The impedance variant.** The survey notes that the same basis serves other boundary-value problems of the Maxwell system, notably the **impedance** problem, whose boundary condition $\vec E\times\vec n-Z_{\mathrm s}\,[(\vec H\times\vec n)\times\vec n]=\vec f$ (the survey's $Z_{\mathrm s}$ is written $\xi$) replaces the perfect-conductor condition $\tilde{\vec E}\times\vec n=\vec f$ of the problem above. It changes only the coefficient matrix of the collocation system, not the basis or the counting argument. The bracket is the tangential part of $\vec H$ up to sign, $[(\vec H\times\vec n)\times\vec n]=(\vec H\cdot\vec n)\vec n-\vec H$, and it is tangential to $\Gamma$ for any $\vec H$, so the added term is invisible to the normal component of the condition and $Z_{\mathrm s}=0$ returns the perfect-conductor case; that is why the modification is a coefficient change and nothing else.
+**The impedance variant.** The survey notes that the same basis serves other boundary-value problems of the Maxwell system, notably the **impedance** problem, whose boundary condition $\vec E\times\hat u-Z_{\mathrm s}\,[(\vec H\times\hat u)\times\hat u]=\vec f$ (the survey's $Z_{\mathrm s}$ is written $\xi$) replaces the perfect-conductor condition $\tilde{\vec E}\times\hat u=\vec f$ of the problem above. It changes only the coefficient matrix of the collocation system, not the basis or the counting argument. The bracket is the tangential part of $\vec H$ up to sign, $[(\vec H\times\hat u)\times\hat u]=(\vec H\cdot\hat u)\hat u-\vec H$, and it is tangential to $\Gamma$ for any $\vec H$, so the added term is invisible to the normal component of the condition and $Z_{\mathrm s}=0$ returns the perfect-conductor case; that is why the modification is a coefficient change and nothing else.
 
 **The reported test.** The method is tested against an exact solution: the field of a magnetic dipole, $\tilde{\vec E}^m=\mathrm{rot}(\vec c\,\Theta_\alpha)$ and $\tilde{\vec H}^m=-\mathrm{rot}\,\tilde{\vec E}^m/(i\alpha)$ with $\vec c$ constant, which satisfies the achiral ($\beta=0$) system and the radiation condition exactly, scattered by an ellipsoid with semi-axes $a=5,b=3,c=2$, the auxiliary surface being the concentric ellipsoid scaled by $0.15$ and the error measured on the concentric ellipsoid scaled by $5$. For $\alpha=1+0.3i$ the source's table is
 
@@ -340,7 +340,7 @@ $$
 which are the chiral generalisations of the ordinary relations $D_3\vec E=\mathrm{rot}\,\vec E$, $D_3\vec H=\mathrm{rot}\,\vec H$ of the sourceless case, the scalar term $-\tilde\rho$ of the first identity being the paper's symbol for $-\mathrm{div}\,\tilde{\vec E}$ as fixed above. The scalar part of the Stokes identity is the energy balance
 
 $$
--\int_\Gamma\bigl\langle[\tilde{\vec E}\times\tilde{\vec H}^{*}],\vec n\bigr\rangle\,d\Gamma
+-\int_\Gamma\bigl\langle[\tilde{\vec E}\times\tilde{\vec H}^{*}],\hat u\bigr\rangle\,d\Gamma
 =\int_\Omega\frac{ik^*}{1-k^{*2}\beta^{*2}}\bigl\langle\tilde{\vec E},\tilde{\vec E}^{*}\bigr\rangle\,dx
 -\int_\Omega\frac{ik}{1-k^2\beta^2}\bigl\langle\tilde{\vec H},\tilde{\vec H}^{*}\bigr\rangle\,dx
 +\int_\Omega\frac{1}{1-k^{*2}\beta^{*2}}\bigl\langle\tilde{\vec E},\tilde{\vec j}^{*}\bigr\rangle\,dx
@@ -348,7 +348,7 @@ $$
 \tag{24}
 $$
 
-The left-hand side is the flux of the complex Poynting vector through the boundary, written in the quaternionic pairing $\langle[\tilde{\vec E}\times\tilde{\vec H}^{*}],\vec n\rangle$; the right-hand side is the stored and dissipated energy of the two circular polarisations, weighted by the chiral denominators $1-k^2\beta^2$ and its conjugate $1-k^{*2}\beta^{*2}$. Those weights are the effect of the coupling: the two polarisations do not enter the balance symmetrically. The **vector part** of the same Stokes identity is a further identity of the field, equation $(25)$ of the source, a vector equality the authors call useful in the same way. The two differential identities $(26,27)$ are the load-bearing step, and they are what makes the balance a corollary of Stokes rather than an independent derivation.
+The left-hand side is the flux of the complex Poynting vector through the boundary, written in the quaternionic pairing $\langle[\tilde{\vec E}\times\tilde{\vec H}^{*}],\hat u\rangle$; the right-hand side is the stored and dissipated energy of the two circular polarisations, weighted by the chiral denominators $1-k^2\beta^2$ and its conjugate $1-k^{*2}\beta^{*2}$. Those weights are the effect of the coupling: the two polarisations do not enter the balance symmetrically. The **vector part** of the same Stokes identity is a further identity of the field, equation $(25)$ of the source, a vector equality the authors call useful in the same way. The two differential identities $(26,27)$ are the load-bearing step, and they are what makes the balance a corollary of Stokes rather than an independent derivation.
 
 ## Inhomogeneous and Stratified Chiral Media
 
@@ -483,7 +483,7 @@ The two things a reader should carry away are the two wavenumbers and the fact t
 | $H^s(\Gamma)$ | Boundary Sobolev space of order $s$; data of the completeness theorems live in $H^s$, $s>1$ |
 | $\Omega^\pm$, $\Gamma^\pm$ | Exterior/interior domain and the auxiliary surface carrying the source points |
 | $y_j^\pm,\ a_j,b_j\in\mathbb B$ | Source points on $\Gamma^\pm$ and the biquaternionic coefficients of the collocation trial functions |
-| $\vec f,\ \mathrm{Sc}$ | Prescribed tangential boundary field $\tilde{\vec E}\times\vec n$; scalar part of a biquaternion |
+| $\vec f,\ \mathrm{Sc}$ | Prescribed tangential boundary field $\tilde{\vec E}\times\hat u$; scalar part of a biquaternion |
 | $Z_{\mathrm s}$ | Surface impedance of the impedance boundary condition; written $\xi$ in the survey |
 | $\varphi$, $Q_\pm=\alpha\pm\nabla\varphi$ | Eikonal function and the zero divisors, $Q_+Q_-=0$ |
 | $z=x_3+e_1x_2$ | Transverse complex variable for the stratified solutions |

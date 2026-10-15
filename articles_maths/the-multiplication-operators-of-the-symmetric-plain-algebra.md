@@ -105,7 +105,7 @@ $$
 \tau\bigl(L^{\bullet}_{\tilde A}\tilde X,\tilde Y\bigr)=\tau\bigl(\tilde X,L^{\bullet}_{\tilde A}\tilde Y\bigr),
 $$
 
-so $(L^{\bullet}_{\tilde A})^{\approx}=L^{\bullet}_{\tilde A}$ in the mark $\approx$ of the associate of *Association and the Transpose on the General Plain Algebra*.
+so $(L^{\bullet}_{\tilde A})^{\approx}=L^{\bullet}_{\tilde A}$ in the mark $\approx$ of the associate of *The Four Adjoints of the Two Algebras and the Two Sesqualgebras in Examples*.
 
 *Proof.* By the definition of the operator and the invariance of the trace form,
 

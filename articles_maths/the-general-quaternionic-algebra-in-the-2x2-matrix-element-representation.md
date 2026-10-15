@@ -61,7 +61,7 @@ $$
 \mathsf{M}_2(\tilde{Q}\star\tilde{Q})=\operatorname{adj}\mathsf{M}_2(\tilde{Q})\mathsf{M}_2(\tilde{Q})=\det \mathsf{M}_2(\tilde{Q})\,I=N(\tilde{Q})\,I ,
 $$
 
-so the idempotents of the quaternionic product are exactly $0$ and $e_0$, and the zero divisors of the product are exactly the singular matrices. No nontrivial projection of $M_2(\mathbb{C})$ survives as an idempotent: the Hermitian projections $\tfrac12\bigl(I+i\sum_kn_k\mathsf{M}_2(e_k)\bigr)$ over the real unit vectors $\hat u=(n_1,n_2,n_3)$ are idempotent for the ordinary matrix product and are not idempotent here, becoming square-zero instead, $\operatorname{adj}(B)B=0$.
+so the idempotents of the quaternionic product are exactly $0$ and $e_0$, and the zero divisors of the product are exactly the singular matrices. No nontrivial projection of $M_2(\mathbb{C})$ survives as an idempotent: the Hermitian projections $\tfrac12\bigl(I+i\sum_ku_k\mathsf{M}_2(e_k)\bigr)$ over the real unit vectors $\hat u=(u_1,u_2,u_3)$ are idempotent for the ordinary matrix product and are not idempotent here, becoming square-zero instead, $\operatorname{adj}(B)B=0$.
 
 **The units and the norm.** The product has a unit exactly when the determinant does not vanish: the units of the algebra are the matrices of $GL_2(\mathbb{C})$, the elements with $N(\tilde{Q})\neq0$, and the norm-one group is $SL_2(\mathbb{C})$.
 
@@ -207,7 +207,7 @@ The $2\times2$ realization turns the natural conjugation into the adjugate and t
 - Kevin McCrimmon, *A Taste of Jordan Algebras* (Springer, 2004), for the reading of a twisted product as a product with an anti-automorphism inserted and the defect of its associativity.
 - *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.md`), for the realization and its first properties
 - *Introduction to the 2×2 Matrix Element Representation $M_2(\mathbb{C})$ of Biquaternions* (`articles_maths/introduction-to-the-2x2-matrix-element-representation-of-biquaternions.md`), for the further reading of the isomorphism
-- *Introduction to the General Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-general-quaternionic-algebra-of-biquaternions.md`), for the quaternionic product on the algebra
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the form on the algebra
+- *Introduction to the General Quaternionic Algebra of Biquaternions* (`articles_maths/introduction-to-the-general-quaternionic-algebra.md`), for the quaternionic product on the algebra
+- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the form on the algebra
 - *The General Quaternionic Algebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$* (`articles_maths/the-general-quaternionic-algebra-in-the-4x4-matrix-element-representation.md`), for the companion reading of the group
-- *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-algebra-of-biquaternions.md`), for the restriction theory of the form
+- *Remarkable Subspaces under the General Quaternionic Algebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-general-quaternionic-algebra.md`), for the restriction theory of the form

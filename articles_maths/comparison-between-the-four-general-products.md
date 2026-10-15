@@ -108,7 +108,7 @@ The two products carrying the star are not multiplications of a bilinear $\mathb
 
 The order of the four general products matches the order of the objects. The general plain bilinear product is the multiplication of the associative unital algebra; the general plain sesquilinear product is the derived operation, the multiplication the sesqualgebra takes; the two $\natural$-products are the same two products read with the $\mathbb{C}$-linear conjugation ${}^{\natural}$ inserted in the first slot, and the insertion of a $\mathbb{C}$-linear map changes the product without changing its sesquilinearity type.
 
-Each of the four general products is read as a multiplication in an article of its own: the general plain bilinear product in *Introduction to the General Plain Algebra of Biquaternions*, the general plain sesquilinear product in *Introduction to the General Plain Sesqualgebra of Biquaternions*, the general quaternionic bilinear product in *Introduction to the General Quaternionic Algebra of Biquaternions*, and the general quaternionic sesquilinear product in *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*; the entries of the table above are the statements those four articles prove or quote.
+Each of the four general products is read as a multiplication in an article of its own: the general plain bilinear product in *Introduction to the Biquaternion Algebra*, the general plain sesquilinear product in *Introduction to the General Plain Sesqualgebra of Biquaternions*, the general quaternionic bilinear product in *Introduction to the General Quaternionic Algebra of Biquaternions*, and the general quaternionic sesquilinear product in *Introduction to the General Quaternionic Sesqualgebra of Biquaternions*; the entries of the table above are the statements those four articles prove or quote.
 
 ## The Group of the Operations
 
@@ -259,7 +259,7 @@ These are the four algebraic norms of *The 4 Forms over the Biquaternion $\mathb
 
 | problem | $\tilde P\tilde P = \tilde P$ | $\tilde P\tilde P^{*} = \tilde P$ | $\tilde P^{\natural}\tilde P = \tilde P$ | $\tilde P^{\natural}\tilde P^{*} = \tilde P$ |
 |---|---|---|---|---|
-| idempotents | $0$, $e_0$, and $\tfrac12(e_0 + \tilde\Xi i)$ for a root $\tilde\Xi$ of $-e_0$ | $0$, $e_0$, and the Hermitian idempotents $\tfrac12(e_0 + \tilde\Xi)$ with $\hat u$ a real unit vector | $0$ and $e_0$ alone | $0$, $e_0$, and $-\tfrac12e_0+\vec n$ for a real $\vec n$ of the vector subspace with $(\vec n,\vec n) = \tfrac34$ |
+| idempotents | $0$, $e_0$, and $\tfrac12(e_0 + \tilde\Xi i)$ for a root $\tilde\Xi$ of $-e_0$ | $0$, $e_0$, and the Hermitian idempotents $\tfrac12(e_0 + \tilde\Xi)$ with $\hat u$ a real unit vector | $0$ and $e_0$ alone | $0$, $e_0$, and $-\tfrac12e_0+\tfrac{\sqrt3}{2}\hat u$ for a real $\hat u$ of the vector subspace with $(\hat u,\hat u)=1$ |
 
 The four columns are four different sets. The first is infinite and is the one the rest of the category uses; the second is the family of the pure states of *Idempotents of the General Plain Algebra*; the third is the smallest possible, the two trivial idempotents; the fourth is a family of a different kind, lying in the quaternion subspace $\mathbb{H}_{\mathbb{B}}$.
 
@@ -296,12 +296,12 @@ Both products without the star are multiplications of a bilinear $\mathbb{C}$-al
 
 ## Further Reading
 
-- *The Four General Products of the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-four-general-products-of-the-biquaternion-c-space.md`), for the four definitions and their scalar–vector forms.
+- *The Four General Products of the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-four-general-products-of-the-biquaternioid-c-space.md`), for the four definitions and their scalar–vector forms.
 - *Relations Between the Four General Products* (`articles_maths/relations-between-the-four-general-products.md`), for the identities that link the four general products and for the left multiplications.
 - *The Group of Involutions* (`articles_maths/the-group-of-involutions.md`), for the natural and the complex conjugation as an anti-automorphism and an automorphism and for the group they generate, which is a group of maps of the algebra and not the group of the readings of a rule.
 - *The Four General Products and Operators* (`articles_maths/the-four-general-products-and-operators.md`), for the convention that writes the four insertions (none), (${}^{\natural}$), (${}^{*}$) and (both), for the four adjoints they decide and for the operator they do not.
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the four pairings of the readings, their Gram matrices $\mathrm{E}$ and $\mathrm{I}_4$ and their signatures.
-- *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the symmetric and the antisymmetric part of each of the four general products, and the Jordan and the Lie structure the two parts of the general plain bilinear product carry.
+- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the four pairings of the readings, their Gram matrices $\mathrm{E}$ and $\mathrm{I}_4$ and their signatures.
+- *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternioid-complex-space.md`), for the symmetric and the antisymmetric part of each of the four general products, and the Jordan and the Lie structure the two parts of the general plain bilinear product carry.
 - *Remarkable Subspaces and the Four General Products* (`articles_maths/remarkable-subspaces-and-the-four-general-products.md`), for the four general products on the remarkable subspaces, and for the Jordan and the Lie algebra each of the remarkable subspaces carries and with which product.
-- *Introduction to the General Plain Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-general-plain-sesqualgebra-of-biquaternions.md`), for the sesquilinear reading of the general plain sesquilinear product and the algebra it defines.
+- *Introduction to the General Plain Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-general-plain-sesqualgebra.md`), for the sesquilinear reading of the general plain sesquilinear product and the algebra it defines.
 - *Sesqualgebras* (`articles_maths/sesqualgebras.md`), for the two scalar rules, the collapse theorem and the standard example that the sesquilinear row of the table tests.

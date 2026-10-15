@@ -6,7 +6,7 @@ The quaternion algebra $\mathbb{H}$ carries two distinguished real subspaces and
 
 Here there is no central unit and the quaternion norm is definite, so the lattice has two subspaces and the norm is positive. The point of the article is exactly this contrast, and it is stated at the end rather than left to the reader.
 
-The article owns the two subspaces one by one: the defining condition, the coordinate condition, the basis, the dimension, the role, and the two closures. It owns no product theory, no form and no topology; the norm is quoted from *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space*, below this article in this category, and the invertibility criterion from *Norm and Invertibility in the General Plain Algebra*, below this article in this category.
+The article owns the two subspaces one by one: the defining condition, the coordinate condition, the basis, the dimension, the role, and the two closures. It owns no product theory, no form and no topology; the norm is quoted from *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space*, below this article in this category, and the invertibility criterion from *Norm and Invertibility in the Quaternion Algebra*, below this article in this category.
 
 ## The Natural Sign and the Two Subspaces
 
@@ -58,7 +58,7 @@ Together with the decomposition $\tilde q=\mathrm{Sc}(\tilde q)+\vec q$ the two 
 $$
 N(\tilde q)=N(\mathrm{Sc}(\tilde q))+N(\vec q)=q_0^2+|\vec q|^2,
 $$
-the two subspaces being orthogonal for the associated inner product; this is *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space*, below this article in this category, read on the two blocks. Invertibility is non-vanishing norm, by *Norm and Invertibility in the General Plain Algebra*, below this article in this category: every nonzero element of either subspace is a unit, the scalar line and the vector space both meeting the singular set only at zero.
+the two subspaces being orthogonal for the associated inner product; this is *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space*, below this article in this category, read on the two blocks. Invertibility is non-vanishing norm, by *Norm and Invertibility in the Quaternion Algebra*, below this article in this category: every nonzero element of either subspace is a unit, the scalar line and the vector space both meeting the singular set only at zero.
 
 ## The Two-Subspace Lattice and the Absence of the Full Lattice
 
@@ -93,6 +93,6 @@ The quaternion algebra has two remarkable real subspaces. The scalar line $\math
 ## Further Reading
 
 - *Quaternion Algebra* (`articles_maths/quaternion-algebra.md`), for the element, the basis and the product.
-- *The Group of Involutions of the Quaternions* (`articles_maths/the-group-of-involutions-of-the-quaternions.md`), for the natural sign and the inner involutions that move the two subspaces.
+- *The Group of Involutions of the Quaternions* (`articles_maths/the-group-of-involutions-of-the-quaternioid.md`), for the natural sign and the inner involutions that move the two subspaces.
 - *Decompositions Along the Remarkable Subspaces of the Quaternions* (`articles_maths/decompositions-along-the-remarkable-subspaces-of-the-quaternions.md`), below this article in this category, for the scalar–vector, the axis and the twist decompositions.
-- *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-2-algebraic-norms-over-the-quaternion-r-space.md`), below this article in this category, for the algebraic norms $\tilde q^2$ and $\tilde q\tilde q^{\natural}$.
+- *The 2 Algebraic Norms over the Quaternion $\mathbb{R}$ Space* (`articles_maths/the-2-algebraic-norms-over-the-quaternioid-r-space.md`), below this article in this category, for the algebraic norms $\tilde q^2$ and $\tilde q\tilde q^{\natural}$.

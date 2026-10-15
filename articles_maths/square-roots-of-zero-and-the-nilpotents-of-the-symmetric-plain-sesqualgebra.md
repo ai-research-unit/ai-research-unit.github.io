@@ -187,13 +187,13 @@ The square of an element of the symmetric plain sesqualgebra is $\tilde\Xi\star\
 
 ## Further Reading
 
-- *Introduction to the Symmetric Plain Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-plain-sesqualgebra-of-biquaternions.md`), for the product, its class and its placement.
-- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the relative definition of the root, of the nilpotent, of the index, of the square-zero element and of the bracketing of the powers.
+- *Introduction to the Symmetric Plain Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-plain-sesqualgebra.md`), for the product, its class and its placement.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the relative definition of the root, of the nilpotent, of the index, of the square-zero element and of the bracketing of the powers.
 - *Norm and Invertibility in the Symmetric Plain Sesqualgebra* (`articles_maths/norm-and-invertibility-in-the-symmetric-plain-sesqualgebra.md`), for the algebraic norm, the square map and the definiteness.
 - *Square Roots of One and the Idempotents of the Symmetric Plain Sesqualgebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-symmetric-plain-sesqualgebra.md`), for the reduction of the root equation and the emptiness of the root set of $0$.
 - *Square Roots of a General Element in the Symmetric Plain Sesqualgebra* (`articles_maths/square-roots-of-a-general-element-in-the-symmetric-plain-sesqualgebra.md`), for the general reduction the present one specialises.
 - *Zero Divisors of the Symmetric Plain Sesqualgebra* (`articles_maths/zero-divisors-of-the-symmetric-plain-sesqualgebra.md`), for the punctured-space zero-divisor set and the annihilators.
 - *Nilpotents of the General Plain Algebra* (`articles_maths/nilpotents-of-the-general-plain-algebra-of-quaternions.md`), for the pure-cone nilpotents of the parent and the index-two theorem there.
-- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the square-zero set $\{0\}$ of the parent sesquilinear product.
+- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the square-zero set $\{0\}$ of the parent sesquilinear product.
 - *The Symmetric Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* (`articles_maths/the-symmetric-plain-sesqualgebra-in-the-2x2-matrix-element-representation.md`), for the model in which the cube is read.
-- *Remarkable Subspaces under the Symmetric Plain Sesqualgebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-symmetric-plain-sesqualgebra-of-biquaternions.md`), for the subspaces whose intersection with the nilpotent set is read here.
+- *Remarkable Subspaces under the Symmetric Plain Sesqualgebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-symmetric-plain-sesqualgebra.md`), for the subspaces whose intersection with the nilpotent set is read here.

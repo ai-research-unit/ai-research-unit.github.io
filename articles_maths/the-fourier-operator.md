@@ -172,9 +172,9 @@ becomes an algebraic one.
 
 ### Translation and Convolution Become Multiplication
 
-**Theorem.** For the translation $\tau_y$ and the character $e_y(\xi)=e^{-2\pi iy\cdot\xi}$ one has
+**Theorem.** For the translation $\tau_y$ and the character $\chi_y(\xi)=e^{-2\pi iy\cdot\xi}$ one has
 $$
-\mathcal F\tau_y\mathcal F^{-1}=M_{e_y} ,
+\mathcal F\tau_y\mathcal F^{-1}=M_{\chi_y} ,
 $$
 and for $k\in L^1(\mathbb R^n)$, with $T_k$ the convolution operator of the previous article,
 $$
@@ -182,7 +182,7 @@ $$
 $$
 for the multiplier operator $T_m$.
 
-**Proof.** $\mathcal F(\tau_yf)=\widehat{f(\cdot-y)}=e_y\mathcal Ff$ is the translation identity of the
+**Proof.** $\mathcal F(\tau_yf)=\widehat{f(\cdot-y)}=\chi_y\mathcal Ff$ is the translation identity of the
 Fourier article and gives the first formula; the convolution theorem $\widehat{k*f}=\hat k\hat f$ gives
 $T_k=\mathcal F^{-1}M_{\hat k}\mathcal F$, and the multiplier operator is defined by
 $T_m=\mathcal F^{-1}M_m\mathcal F$.
@@ -248,7 +248,7 @@ $\mathbb Z,\mathbb T$ exhibit the identical structure with characters in place o
 | $h_\alpha$ | Hermite functions, orthonormal basis with $\mathcal Fh_\alpha=(-i)^{\lvert\alpha\rvert}h_\alpha$ |
 | $D_j$ | $\frac1{2\pi i}\partial_j$; $\mathcal FD_j\mathcal F^{-1}=M_{x_j}$ |
 | $M_{x_j}$, $M_m$ | Multiplication operators |
-| $\tau_y$, $e_y$ | Translation and character, $\mathcal F\tau_y\mathcal F^{-1}=M_{e_y}$ |
+| $\tau_y$, $\chi_y$ | Translation and character, $\mathcal F\tau_y\mathcal F^{-1}=M_{\chi_y}$ |
 | $T_k$, $T_m$ | Convolution operator and multiplier operator |
 | $\omega$ | $e^{-2\pi i/N}$, the primitive $N$-th root of the finite transform |
 

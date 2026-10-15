@@ -139,7 +139,7 @@ The square map $u\mapsto u^{2}$ is a surjective homomorphism of the hyperbola on
 
 ## Further Reading
 
-- *The Two Forms and the Two Algebraic Norms of the Split-Complex Space* (`articles_maths/the-two-forms-and-the-two-algebraic-norms-of-the-split-complex-space.md`), for the indefinite form and the plain form whose shells are compared here.
+- *The Two Forms and the Two Algebraic Norms of the Split-Complex Space* (`articles_maths/the-two-forms-and-the-two-algebraic-norms-of-the-split-complexoid-space.md`), for the indefinite form and the plain form whose shells are compared here.
 - *Split-Complex Norm and Invertibility* (`articles_maths/split-complex-norm-and-invertibility.md`), for the norm, its polarisation, the group of units, the modulus and the Clifford algebra $\mathrm{Cl}(1,1)$.
 - *Split-Complex Exponential and Lie Group Structure* (`articles_maths/split-complex-exponential-and-lie-group-structure.md`), for the exponential, the unit-norm group $\mathbb{D}^{(1)}$, its identity component and the unit group as a Lie group.
 - *Hyperbolic Rotations* (`articles_maths/hyperbolic-rotations.md`), for the unit hyperbola, the identification with $SO(1,1)$, the hyperbolic rotations, the classification of the form-preserving maps, the reflections and the four components of $O(1,1)$.

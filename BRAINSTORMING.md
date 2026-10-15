@@ -7258,25 +7258,45 @@ If you want an axis symbol for the purely imaginary family, tell me which letter
 
 
 
-articles are about polar representations: 10 in maths and 3 in physics.
+
+full rename no biquaternion in biquaiternioid
+
+
+
+
+articles are about polar representations:
 
 Maths:
 
-The Polar Element Representation of Biquaternions — articles_maths/the-polar-element-representation-of-biquaternions.md
-Biquaternion Partial Polar Element Representations — articles_maths/biquaternion-partial-polar-element-representations.md
-Real Polar Element Representation — articles_maths/real-polar-element-representation.md
-Complex Polar Element Representation — articles_maths/complex-polar-element-representation.md
+the-polar-element-representation-of-biquaternions.md
+
+Biquaternions Polar Element Representation
+The Polar Element Representation of Biquaternions
+
+The Polar Decomposition of Biquaternions in Practice
+
+The Quaternion Pairing of the Polar Element Representation of Biquaternions
+
+The Hamilton Root Pairing of the Polar Element Representation of Biquaternions
+
+The Cartan Hermitian Pairing of the Polar Element Representation of Biquaternions
+
+The Polar Element Representation and Remarkable Subspaces
+
+
 Quaternion Polar Element Representation — articles_maths/quaternion-polar-element-representation.md
-Split-Complex Polar Element Representation — articles_maths/split-complex-polar-element-representation.md
-Split-Quaternion Polar Element Representation — articles_maths/split-quaternion-polar-element-representation.md
-Split-Biquaternion Polar Element Representation — articles_maths/split-biquaternion-polar-element-representation.md
-Dual-Numbers Polar Element Representation — articles_maths/dual-numbers-polar-element-representation.md
-Comparison of the Polar Element Representation — articles_maths/comparison-of-the-polar-element-representation.md
+
+split-quaternion-polar-element-representation.md
+
+split-biquaternion-polar-element-representation.md
+
+comparison-of-the-polar-element-representation.md
 
 Physics:
+the-polar-element-representation-of-biquaternions.md
 
-The Polar Element Representation of Biquaternions — articles_physics/the-polar-element-representation-of-biquaternions.md
-The Polar Element Representation in Subspaces — articles_physics/the-polar-element-representation-in-subspaces.md
+the-polar-element-representation-in-subspaces.md
+
 The Twisted Spinor Operator Representation of Biquaternions
 
 
@@ -7300,6 +7320,17 @@ B-singular:  B(Q) = 0  —  the "other" cone.
 
 
 
+
+
+
+The Commutative Four-Dimensional Alternative
+The four-factor representation above is the polar form of B B. The commutative four-dimensional algebra has its own, and it is the corpus's only polar form built for a commutative algebra of dimension four; it is recorded for the contrast, the two answering the same question differently.
+The algebra is C ⊗_R C ≅ C ⊕ C, the reduced biquaternion algebra of List of Algebras by Dimension: an element is q = A1 + A2 e with e^2 = +1 and A1, A2 ∈ C. Pei, Chang and Ding construct its polar form (IEEE Trans. Signal Processing 52 (2004) 2012–2022, §III) and prove three things about it.
+Existence. The form exists if and only if ⟨q,q⟩♮ = A1^2 − A2^2 ≠ 0 — the domain condition of this article, and here it is also a factorisation statement, since ⟨q,q⟩♮ = λ+ λ− in the idempotent coordinates λ± = A1 ± A2. The excluded set is thus the union of the two ideals Ce+ ∪ Ce−, with e± = 1/2(1 ± e), on which the element is a multiple of an idempotent; this is the commutative image of the null elements of the section above, and of the cone on which the four factors here fail.
+Uniqueness. The form carries a scale and three phases, and it is unique once the ranges of the three phases are fixed; the uniqueness is proved by showing that the equations for the phases have exactly one solution in those ranges. The uniqueness here is therefore purchased by a range convention, whereas the uniqueness above is a theorem about the factorisation itself.
+Compatibility. When the second component vanishes the form reduces to the ordinary complex polar form of Complex Polar Element Representation, which is the sense in which its authors select it as compatible with the complex case.
+The form is useful for the two operations it is useful for here. Multiplication becomes trivial, moduli multiplying and phases adding, and the paper proves a De Moivre theorem for it; the inverse is read off directly; and the geometric meaning is stated — one scaling, four rotations in the coordinate planes (1,2), (3,4), (1,4) and (2,3), and two Lorentz transformations in the planes (1,3) and (2,4). That is the precise form of the claim recorded with this family of algebras in The Three Two-Dimensional Algebras and the Three Kinds of Rotation: the four-dimensional commutative algebra carries the elliptic rotations of its complex factor and the hyperbolic transformations of its split factor at the same time, and its authors attach the reading to the special theory of relativity.
+One application is a use of a polar form the corpus does not otherwise have. The colour space is three-dimensional and the algebra four-dimensional, so the representation of a colour by an element of the algebra is not unique; the paper removes the redundancy by setting one of the three phases to zero, giving what it calls the simplified polar form, whose data are the brightness, hue and saturation of the colour and in which the norm and the conjugation of the element take their simplest forms. It is used for colour template matching and colour-sensitive edge detection, with the transforms of Biquaternion Discrete Harmonic Analysis.
 
 
 

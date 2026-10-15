@@ -12,9 +12,9 @@ whose rule, scalar–vector form and table are *Introduction to the General Quat
 
 **What the article does not do.** The roots of the central value $0$ and the nilpotents are *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra*; the roots of a **general** element are *Square Roots of a General Element in the General Quaternionic Sesqualgebra*, and the central value is the special case of that problem. The roots of $-1$ are **not** a subject of this article; they are quoted in one short paragraph at the end of §*The Roots of One*, they are used by no other passage, and the idempotent part rests on the roots of $+1$ alone. The zero divisors are *Zero Divisors of the General Quaternionic Sesqualgebra*, the criterion of invertibility of the plain algebra that the article uses is *Norm and Invertibility in the General Quaternionic Sesqualgebra*, and the four idempotent sets of the four general products are compared in *Comparison Between the Four General Products* §*The Squares, the Idempotents and the Roots*.
 
-**Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0 = 1, e_1, e_2, e_3$ with $e_1e_2 = e_3$ and central scalar imaginary $i$. An element is $\tilde Q = Q_0e_0+\vec Q$ with $\vec Q = \sum_{k=1}^{3}Q_ke_k$; $Q_0$ is the scalar part and $\vec Q$ the vector part. The natural conjugation is $\tilde Q^{\natural} = Q_0-\vec Q$, the star is $\tilde Q^{*} = \overline{\tilde Q^{\natural}} = \overline{Q_0}-\overline{\vec Q}$, and the Hermitian conjugation is $\overline{\tilde Q} = \tilde Q^{\natural*} = \tilde Q^{*\natural}$. The **central square** is $C(\tilde Q) = \sum_\mu Q_\mu^2$, with $C(\tilde Q)e_0 = \tilde Q\tilde Q^{\natural}$. The product throughout is the **general quaternionic sesquilinear product** $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q^{*}$, the fourth of the four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, with the natural conjugation ${}^{\natural}$ in the first slot and the star ${}^{*}$ in the second: the two **slot involutions** are ${}^{\natural}$ and ${}^{*}$. The juxtaposition $\tilde P\tilde Q$ is the general plain bilinear product, the multiplication of the algebra. The dot and cross products of vector parts are the general plain bilinear ones, and $\hat u$ denotes a real unit vector, $\sum_kn_k^2 = 1$. A **root of the central value $\lambda$** is a nonzero $\tilde\Xi$ with $\tilde\Xi\star\tilde\Xi = \lambda e_0$, and a **root of one** is a root of $+1$.
+**Conventions.** $\mathbb{B} = \mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ has basis $e_0 = 1, e_1, e_2, e_3$ with $e_1e_2 = e_3$ and central scalar imaginary $i$. An element is $\tilde Q = Q_0e_0+\vec Q$ with $\vec Q = \sum_{k=1}^{3}Q_ke_k$; $Q_0$ is the scalar part and $\vec Q$ the vector part. The natural conjugation is $\tilde Q^{\natural} = Q_0-\vec Q$, the star is $\tilde Q^{*} = \overline{\tilde Q^{\natural}} = \overline{Q_0}-\overline{\vec Q}$, and the Hermitian conjugation is $\overline{\tilde Q} = \tilde Q^{\natural*} = \tilde Q^{*\natural}$. The **central square** is $C(\tilde Q) = \sum_\mu Q_\mu^2$, with $C(\tilde Q)e_0 = \tilde Q\tilde Q^{\natural}$. The product throughout is the **general quaternionic sesquilinear product** $\tilde P\star\tilde Q = \tilde P^{\natural}\tilde Q^{*}$, the fourth of the four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, with the natural conjugation ${}^{\natural}$ in the first slot and the star ${}^{*}$ in the second: the two **slot involutions** are ${}^{\natural}$ and ${}^{*}$. The juxtaposition $\tilde P\tilde Q$ is the general plain bilinear product, the multiplication of the algebra. The dot and cross products of vector parts are the general plain bilinear ones, and $\hat u$ denotes a real unit vector, $\sum_ku_k^2 = 1$. A **root of the central value $\lambda$** is a nonzero $\tilde\Xi$ with $\tilde\Xi\star\tilde\Xi = \lambda e_0$, and a **root of one** is a root of $+1$.
 
-**The results.** In the general quaternionic sesquilinear product the square reduces to $\tilde\Xi\star\tilde\Xi = (\overline{\tilde\Xi}\tilde\Xi)^{\natural}$, so a root of $\lambda$ exists only for real $\lambda$, and for real $\lambda$ the nonzero roots are the family $\tilde\Xi = c(\hat u+it)$ with $(t^2-1)\lvert c\rvert^2 = \lambda$, of real dimension four, together with the central circle $\lvert a\rvert^2 = \lambda$ when $\lambda>0$. The value $+1$ takes the slopes $\lvert t\rvert>1$, with $\lvert c\rvert^2 = 1/(t^2-1)$, beside the central circle, and contains $e_0$ and $i$; every root of one is a unit of the plain algebra. The idempotents are exactly the two trivial elements $0$ and $e_0$ together with the two-parameter family $\tilde\Pi(\vec n) = -\tfrac12e_0+\vec n$ over the real vectors $\vec n$ with $(\vec n,\vec n) = \tfrac34$; every nontrivial idempotent has central square $1$, so it is a unit of the plain algebra with inverse its own natural conjugate $-\tfrac12e_0-\vec n$, and it lies outside the Hermitian subspace, being neither Hermitian nor skew-Hermitian. The four general products carry four different idempotent sets, and only this one has nontrivial idempotents that are units of the plain algebra; the idempotents of the sibling sesquilinear product are isotropic here, each of them square-zero. Each section below states its result first and then proves it.
+**The results.** In the general quaternionic sesquilinear product the square reduces to $\tilde\Xi\star\tilde\Xi = (\overline{\tilde\Xi}\tilde\Xi)^{\natural}$, so a root of $\lambda$ exists only for real $\lambda$, and for real $\lambda$ the nonzero roots are the family $\tilde\Xi = c(\hat u+it)$ with $(t^2-1)\lvert c\rvert^2 = \lambda$, of real dimension four, together with the central circle $\lvert a\rvert^2 = \lambda$ when $\lambda>0$. The value $+1$ takes the slopes $\lvert t\rvert>1$, with $\lvert c\rvert^2 = 1/(t^2-1)$, beside the central circle, and contains $e_0$ and $i$; every root of one is a unit of the plain algebra. The idempotents are exactly the two trivial elements $0$ and $e_0$ together with the two-parameter family $\tilde\Pi(\hat u) = -\tfrac12e_0+\tfrac{\sqrt3}{2}\hat u$ over the real vectors $\hat u$ with $(\hat u,\hat u)=1$; every nontrivial idempotent has central square $1$, so it is a unit of the plain algebra with inverse its own natural conjugate $-\tfrac12e_0-\tfrac{\sqrt3}{2}\hat u$, and it lies outside the Hermitian subspace, being neither Hermitian nor skew-Hermitian. The four general products carry four different idempotent sets, and only this one has nontrivial idempotents that are units of the plain algebra; the idempotents of the sibling sesquilinear product are isotropic here, each of them square-zero. Each section below states its result first and then proves it.
 
 ## The Reduction of the Root Equation
 
@@ -45,7 +45,7 @@ $$
 **Theorem (the roots of a central value).** Let $\lambda\in\mathbb{C}$. The value $\lambda$ has a root in $\star$ if and only if $\lambda\in\mathbb{R}$, and then the nonzero roots are exactly
 
 $$
-\tilde\Xi = c\bigl(\hat u + it\bigr) , \qquad c\in\mathbb{C}^{*} , \quad \hat u\in\mathbb{R}^3 , \quad \sum_{k=1}^{3}n_k^2 = 1 , \quad t\in\mathbb{R} , \quad (t^2-1)\lvert c\rvert^2 = \lambda ,
+\tilde\Xi = c\bigl(\hat u + it\bigr) , \qquad c\in\mathbb{C}^{*} , \quad \hat u\in\mathbb{R}^3 , \quad \sum_{k=1}^{3}u_k^2 = 1 , \quad t\in\mathbb{R} , \quad (t^2-1)\lvert c\rvert^2 = \lambda ,
 $$
 
 together with, when $\lambda>0$, the **central circle** of the scalar roots $\tilde\Xi = ae_0$ with $\lvert a\rvert^2 = \lambda$.
@@ -64,7 +64,7 @@ $$
 
 and a scalar root has $C(ae_0) = a^2$.
 
-**Proof.** The central square of $c(\hat u+it)$ is $c^2$ times the sum of the squares of the four coordinates of $\hat u+it$, which is $\sum_kn_k^2 + (it)^2 = 1-t^2$; for the scalar root it is $a^2$. The value vanishes exactly at $\lambda = 0$, the square-zero condition of *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra*.
+**Proof.** The central square of $c(\hat u+it)$ is $c^2$ times the sum of the squares of the four coordinates of $\hat u+it$, which is $\sum_ku_k^2 + (it)^2 = 1-t^2$; for the scalar root it is $a^2$. The value vanishes exactly at $\lambda = 0$, the square-zero condition of *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra*.
 
 ## The Roots of One
 
@@ -138,7 +138,7 @@ The two vector relations are of different kinds: the first constrains $\vec a$ a
 
 ## The Classification of the Idempotents
 
-**The idempotents are exactly $0$, $e_0$ and the family $\tilde\Pi(\vec n) = -\tfrac12e_0+\vec n$ with $\vec n$ a real vector of the vector subspace and $(\vec n,\vec n) = \tfrac34$; the two trivial idempotents have vanishing vector part, and every nontrivial idempotent has central square $1$ and is a unit of the plain algebra with inverse $-\tfrac12e_0-\vec n$.**
+**The idempotents are exactly $0$, $e_0$ and the family $\tilde\Pi(\hat u) = -\tfrac12e_0+\tfrac{\sqrt3}{2}\hat u$ with $\hat u$ a real unit vector of the vector subspace and $(\hat u,\hat u)=1$; the two trivial idempotents have vanishing vector part, and every nontrivial idempotent has central square $1$ and is a unit of the plain algebra with inverse $-\tfrac12e_0-\tfrac{\sqrt3}{2}\hat u$.**
 
 ### The Two Trivial Idempotents
 
@@ -151,12 +151,12 @@ The two vector relations are of different kinds: the first constrains $\vec a$ a
 **Theorem (the classification).** The idempotents of the multiplication are exactly
 
 $$
-0 , \qquad e_0 , \qquad\text{and}\qquad \tilde\Pi(\vec n) = -\tfrac12e_0+\vec n , \qquad \vec n\in\mathrm{Vect}(\mathbb{B})_{\mathbb{R}} , \qquad (\vec n,\vec n) = \tfrac34 .
+0 , \qquad e_0 , \qquad\text{and}\qquad \tilde\Pi(\hat u) = -\tfrac12e_0+\tfrac{\sqrt3}{2}\hat u , \qquad \hat u\in\mathrm{Vect}(\mathbb{B})_{\mathbb{R}} , \qquad (\hat u,\hat u)=1 .
 $$
 
 **Proof.** Let $\tilde Q$ be idempotent and write $\tilde Q = u + \vec a + i\vec b$ as above. The proof splits on whether the real vector $\vec a$ vanishes.
 
-Suppose first that $\vec a \neq 0$. The relation $(2u+1)\vec a = 0$ forces $u = -\tfrac12$. The relation $\vec a\times\vec b = -\tfrac12\vec b$ says that $\vec b$ lies in the kernel of the operator $\vec x \mapsto \vec a\times\vec x + \tfrac12\vec x$, that is, that $\vec b$ is a kernel vector of $L_{\vec a} + \tfrac12 I$ with $L_{\vec a}\vec x = \vec a\times\vec x$. The operator $L_{\vec a}$ is antisymmetric with respect to the real definite structure, since $(\vec a\times\vec x,\vec y) = -(\vec x,\vec a\times\vec y)$; an antisymmetric real operator has purely imaginary spectrum, together with the eigenvalue $0$, so $L_{\vec a} + \tfrac12 I$ has spectrum $\{ \tfrac12 \} \cup \{ \tfrac12 \pm i\lvert \vec a\rvert \}$, which does not contain $0$. Hence $L_{\vec a} + \tfrac12 I$ is invertible and $\vec b = 0$. The coordinate equation $u = u^{2} - \lvert\vec Q\rvert^{2}$ then gives $\lvert\vec Q\rvert^{2} = u^{2} - u = \tfrac14 + \tfrac12 = \tfrac34$, that is $(\vec n,\vec n) = \tfrac34$ for $\vec n = \vec Q = \vec a$. This is the family.
+Suppose first that $\vec a \neq 0$. The relation $(2u+1)\vec a = 0$ forces $u = -\tfrac12$. The relation $\vec a\times\vec b = -\tfrac12\vec b$ says that $\vec b$ lies in the kernel of the operator $\vec x \mapsto \vec a\times\vec x + \tfrac12\vec x$, that is, that $\vec b$ is a kernel vector of $L_{\vec a} + \tfrac12 I$ with $L_{\vec a}\vec x = \vec a\times\vec x$. The operator $L_{\vec a}$ is antisymmetric with respect to the real definite structure, since $(\vec a\times\vec x,\vec y) = -(\vec x,\vec a\times\vec y)$; an antisymmetric real operator has purely imaginary spectrum, together with the eigenvalue $0$, so $L_{\vec a} + \tfrac12 I$ has spectrum $\{ \tfrac12 \} \cup \{ \tfrac12 \pm i\lvert \vec a\rvert \}$, which does not contain $0$. Hence $L_{\vec a} + \tfrac12 I$ is invertible and $\vec b = 0$. The coordinate equation $u = u^{2} - \lvert\vec Q\rvert^{2}$ then gives $\lvert\vec Q\rvert^{2} = u^{2} - u = \tfrac14 + \tfrac12 = \tfrac34$, that is $(\vec Q,\vec Q) = \tfrac34$ for $\vec Q = \vec a$, so the idempotent is $\tilde\Pi(\hat u)$ with the real unit vector $\hat u = \tfrac{2}{\sqrt3}\vec Q$; this is the family.
 
 Suppose next that $\vec a = 0$. The relation $(2u+1)\vec a = 0$ is vacuous, and the relation $\vec a\times\vec b = -\tfrac12\vec b$ reads $\vec b = 0$. Then $\vec Q = 0$ and the coordinate equation gives $u = u^{2}$, that is $u = 0$ or $u = 1$. These are the two trivial idempotents.
 
@@ -164,7 +164,7 @@ Suppose next that $\vec a = 0$. The relation $(2u+1)\vec a = 0$ is vacuous, and 
 
 ## The Idempotents and the Roots of One
 
-**The idempotents are not the roots of one halved: the map $\tilde\Xi\mapsto\tfrac12(e_0+\tilde\Xi)$ carries the roots of $+1$ to idempotents only at the two trivial roots $\pm e_0$, and the candidate inverse $2\tilde\Pi-e_0 = -2e_0+2\vec n$ of a nontrivial idempotent has square $e_0+8\vec n$, not $e_0$.**
+**The idempotents are not the roots of one halved: the map $\tilde\Xi\mapsto\tfrac12(e_0+\tilde\Xi)$ carries the roots of $+1$ to idempotents only at the two trivial roots $\pm e_0$, and the candidate inverse $2\tilde\Pi-e_0 = -2e_0+\sqrt{3}\hat u$ of a nontrivial idempotent has square $e_0+4\sqrt{3}\hat u$, not $e_0$.**
 
 In a product with a two-sided unit the **halving map** $\tilde\Pi = \tfrac12(e_0+\tilde\Xi)$ and its inverse $\tilde\Xi = 2\tilde\Pi-e_0$ carry the roots of $+1$ onto the idempotents, because $\tilde\Xi^{2} = e_0$ exactly when $\tilde\Pi^{2} = \tilde\Pi$. This product has **no unit** (*The Two One-Sided Actions and the Absence of a Unit*), and the map fails here; the two sets are different and are read independently.
 
@@ -180,35 +180,35 @@ $$
 
 using $\tilde\Xi^{\natural}\tilde\Xi^{*} = \tilde\Xi\star\tilde\Xi = e_0$. The equation $\tilde\Pi\star\tilde\Pi = \tilde\Pi = \tfrac12e_0+\tfrac12\tilde\Xi$ is therefore $\tilde\Xi^{\natural}+\tilde\Xi^{*} = 2\tilde\Xi$. Writing $\tilde\Xi = x+\vec v$, this is $\bar x - \vec v + x - \overline{\vec v} = 2x + 2\vec v$, that is $(\bar x - x) - (\vec v + \overline{\vec v}) = 2\vec v$. The scalar part gives $x\in\mathbb{R}$ and the vector part gives $\vec v + \overline{\vec v} + 2\vec v = 0$; writing $\vec v = \vec a+i\vec b$ this is $4\vec a + 2i\vec b = 0$, so $\vec a = \vec b = 0$ and $\vec v = 0$. The root $\tilde\Xi$ is then the real scalar $x$ with $x^{2} = 1$, that is $x = \pm1$.
 
-**Proposition (the candidate inverse is not a root).** For the nontrivial idempotent $\tilde\Pi(\vec n) = -\tfrac12e_0+\vec n$ the element $\tilde\Xi = 2\tilde\Pi(\vec n)-e_0 = -2e_0+2\vec n$ has
+**Proposition (the candidate inverse is not a root).** For the nontrivial idempotent $\tilde\Pi(\hat u) = -\tfrac12e_0+\tfrac{\sqrt3}{2}\hat u$ the element $\tilde\Xi = 2\tilde\Pi(\hat u)-e_0 = -2e_0+\sqrt{3}\hat u$ has
 
 $$
-\tilde\Xi\star\tilde\Xi = e_0 + 8\vec n ,
+\tilde\Xi\star\tilde\Xi = e_0 + 4\sqrt{3}\hat u ,
 $$
 
-which is not $e_0$ for $\vec n\neq0$.
+which is not $e_0$ for $\hat u\neq0$.
 
-**Proof.** The element is real, so $\tilde\Xi^{\natural} = \tilde\Xi^{*} = -2e_0-2\vec n$ and $\tilde\Xi\star\tilde\Xi = \tilde\Xi^{\natural}\tilde\Xi^{*} = (-2e_0-2\vec n)^{2} = 4e_0 + 8\vec n + 4\vec n^{2}$. Since $\vec n^{2} = -(\vec n,\vec n)e_0 = -\tfrac34 e_0$, this is $4e_0+8\vec n-3e_0 = e_0+8\vec n$.
+**Proof.** The element is real, so $\tilde\Xi^{\natural} = \tilde\Xi^{*} = -2e_0-\sqrt{3}\hat u$ and $\tilde\Xi\star\tilde\Xi = \tilde\Xi^{\natural}\tilde\Xi^{*} = (-2e_0-\sqrt{3}\hat u)^{2} = 4e_0 + 4\sqrt{3}\hat u + 3\hat u^{2}$. Since $\hat u^{2} = -(\hat u,\hat u)e_0 = -e_0$, this is $4e_0+4\sqrt{3}\hat u-3e_0 = e_0+4\sqrt{3}\hat u$.
 
 **Remark.** The two sets therefore differ, and they meet only at $e_0$: an element that is both a root of one and an idempotent satisfies $\tilde\Pi\star\tilde\Pi = \tilde\Pi$ and $\tilde\Pi\star\tilde\Pi = e_0$, so $\tilde\Pi = e_0$; the element $0$ is an idempotent but is excluded from the roots, which are nonzero by definition. The idempotent part of the article rests on the idempotent equation alone, and the roots of $-1$ play no part in it.
 
 ## The Central Square of an Idempotent, and the Units
 
-**Every nontrivial idempotent has central square $1$, hence is a unit of the plain algebra with inverse its own natural conjugate $-\tfrac12e_0-\vec n$; the two trivial idempotents have central squares $C(0) = 0$ and $C(e_0) = 1$.**
+**Every nontrivial idempotent has central square $1$, hence is a unit of the plain algebra with inverse its own natural conjugate $-\tfrac12e_0-\tfrac{\sqrt3}{2}\hat u$; the two trivial idempotents have central squares $C(0) = 0$ and $C(e_0) = 1$.**
 
 **Proposition.** Every nontrivial idempotent has central square $1$,
 
 $$
-C\bigl(\tilde\Pi(\vec n)\bigr) = \tfrac14 + (\vec n,\vec n) = 1 ,
+C\bigl(\tilde\Pi(\hat u)\bigr) = \tfrac14 + \tfrac34(\hat u,\hat u) = 1 ,
 $$
 
-and hence is a unit of the plain algebra, with inverse its own natural conjugate, $\tilde\Pi(\vec n)^{-1} = \tilde\Pi(\vec n)^{\natural} = -\tfrac12 e_0 - \vec n$. The two trivial idempotents have central squares $C(0) = 0$ and $C(e_0) = 1$.
+and hence is a unit of the plain algebra, with inverse its own natural conjugate, $\tilde\Pi(\hat u)^{-1} = \tilde\Pi(\hat u)^{\natural} = -\tfrac12 e_0 - \tfrac{\sqrt3}{2}\hat u$. The two trivial idempotents have central squares $C(0) = 0$ and $C(e_0) = 1$.
 
-**Proof.** The central square of $\tilde\Pi(\vec n)$ is $\lvert-\tfrac12\rvert^{2} + (\vec n,\vec n) = \tfrac14 + \tfrac34 = 1$. An element of central square $1$ is a unit of the plain algebra because $\tilde P\tilde P^{\natural} = C(\tilde P)e_0 = e_0$, and $\tilde\Pi(\vec n)^{\natural} = -\tfrac12e_0 - \vec n$ by the linearity of ${}^{\natural}$. The values for $0$ and $e_0$ are immediate.
+**Proof.** The central square of $\tilde\Pi(\hat u)$ is $\lvert-\tfrac12\rvert^{2} + \tfrac34(\hat u,\hat u) = \tfrac14 + \tfrac34 = 1$. An element of central square $1$ is a unit of the plain algebra because $\tilde P\tilde P^{\natural} = C(\tilde P)e_0 = e_0$, and $\tilde\Pi(\hat u)^{\natural} = -\tfrac12e_0 - \tfrac{\sqrt3}{2}\hat u$ by the linearity of ${}^{\natural}$. The values for $0$ and $e_0$ are immediate.
 
 The proposition is the sharpest difference of this multiplication from its three companions. Among the four general products, only this one has a nontrivial idempotent, and the nontrivial idempotents of the other three are degenerate in a way the central square detects: they are zero divisors.
 
-**Remark (which unit, and which algebra).** The word **unit** in this section and in the summaries is the unit of the **plain algebra** $\tilde P\tilde Q$ and never the unit of the multiplication $\star$: the multiplication $\star$ has **no unit at all**, its two actions of $e_0$ being the star $\tilde Q\star e_0 = \tilde Q^{\natural}$ and the natural conjugation $e_0\star\tilde Q = \tilde Q^{*}$ (*The Two One-Sided Actions and the Absence of a Unit*). The element $\tilde\Pi(\vec n)^{-1} = -\tfrac12e_0-\vec n$ is the inverse of $\tilde\Pi(\vec n)$ in the plain algebra, $\tilde\Pi\tilde\Pi^{-1} = e_0$, and it is an inverse in no sense of the multiplication $\star$, which has no inverse because it has no unit. The corrected claim is therefore the one of *Norm and Invertibility in the General Quaternionic Sesqualgebra*: the nontrivial idempotents of the block are units of the plain algebra, and the block has no unit.
+**Remark (which unit, and which algebra).** The word **unit** in this section and in the summaries is the unit of the **plain algebra** $\tilde P\tilde Q$ and never the unit of the multiplication $\star$: the multiplication $\star$ has **no unit at all**, its two actions of $e_0$ being the star $\tilde Q\star e_0 = \tilde Q^{\natural}$ and the natural conjugation $e_0\star\tilde Q = \tilde Q^{*}$ (*The Two One-Sided Actions and the Absence of a Unit*). The element $\tilde\Pi(\hat u)^{-1} = -\tfrac12e_0-\tfrac{\sqrt3}{2}\hat u$ is the inverse of $\tilde\Pi(\hat u)$ in the plain algebra, $\tilde\Pi\tilde\Pi^{-1} = e_0$, and it is an inverse in no sense of the multiplication $\star$, which has no inverse because it has no unit. The corrected claim is therefore the one of *Norm and Invertibility in the General Quaternionic Sesqualgebra*: the nontrivial idempotents of the block are units of the plain algebra, and the block has no unit.
 
 ## The Idempotents of the Other Multiplications
 
@@ -247,7 +247,7 @@ $$
 \tilde\Pi_+(\tilde\Xi) \star \tilde\Pi_+(\tilde\Xi) = 0 .
 $$
 
-**Proof.** Let $\tilde H = \tfrac12(e_0 + \tilde\Xi)$ with $\hat u$ a real unit vector; it is Hermitian, $\tilde H^{*} = \tilde H$, and its coordinates are $H_0 = \tfrac12$, $H_k = \tfrac{i}{2}n_k$. Its central square is $C(\tilde H) = \tfrac14 - \tfrac14\sum_kn_k^{2} = 0$, as for the plain product. For a Hermitian element $\overline{\tilde H} = \tilde H^{\natural}$, and $\tilde H\star\tilde H = (\overline{\tilde H}\tilde H)^{\natural}$ by the square identity of *The Square of the General Quaternionic Sesquilinear Product and the Two Halves*; here the direct computation is available: $\tilde H \star \tilde H = \tilde H^{\natural}\tilde H^{*} = \tilde H^{\natural}\tilde H = C(\tilde H)e_0 = 0$, the $\natural$-product of an element with its conjugate being the central scalar $C(\tilde H)e_0$ (*Introduction to the General Quaternionic Algebra of Biquaternions* §*The Square and the Elements It Distinguishes*).
+**Proof.** Let $\tilde H = \tfrac12(e_0 + \tilde\Xi)$ with $\hat u$ a real unit vector; it is Hermitian, $\tilde H^{*} = \tilde H$, and its coordinates are $H_0 = \tfrac12$, $H_k = \tfrac{i}{2}u_k$. Its central square is $C(\tilde H) = \tfrac14 - \tfrac14\sum_ku_k^{2} = 0$, as for the plain product. For a Hermitian element $\overline{\tilde H} = \tilde H^{\natural}$, and $\tilde H\star\tilde H = (\overline{\tilde H}\tilde H)^{\natural}$ by the square identity of *The Square of the General Quaternionic Sesquilinear Product and the Two Halves*; here the direct computation is available: $\tilde H \star \tilde H = \tilde H^{\natural}\tilde H^{*} = \tilde H^{\natural}\tilde H = C(\tilde H)e_0 = 0$, the $\natural$-product of an element with its conjugate being the central scalar $C(\tilde H)e_0$ (*Introduction to the General Quaternionic Algebra of Biquaternions* §*The Square and the Elements It Distinguishes*).
 
 **Remark.** The sibling's idempotents are therefore not idempotents here, and they fail in the strongest possible way: their square in the multiplication vanishes. The two families of idempotents are the two fixed points of the same involution rule read in the two sesquilinear products, and the insertion of the natural conjugation in the first slot transposes them into square-zero elements.
 
@@ -270,7 +270,7 @@ because its square is the central scalar $\bigl(\sum_\mu Q_\mu^{2}\bigr)e_0$ (*I
 | $\tilde P\tilde Q$ | $0$, $e_0$, and $\tfrac12(e_0 + \tilde\Xi)$ for a root of one $\tilde\Xi$ of the plain algebra | zero divisors |
 | $\tilde P^{\natural}\tilde Q$ | $0$ and $e_0$ | none |
 | $\tilde P\tilde Q^{*}$ | $0$, $e_0$, and the Hermitian idempotents $\tfrac12(e_0 + \tilde\Xi)$ | zero divisors |
-| $\tilde P^{\natural}\tilde Q^{*}$ | $0$, $e_0$, and the family $-\tfrac12e_0+\vec n$ with $(\vec n,\vec n) = \tfrac34$ | units of the plain algebra, of central square $1$ |
+| $\tilde P^{\natural}\tilde Q^{*}$ | $0$, $e_0$, and the family $-\tfrac12e_0+\tfrac{\sqrt3}{2}\hat u$ with $(\hat u,\hat u)=1$ | units of the plain algebra, of central square $1$ |
 
 **Proof.** The four rows are the propositions above and the statement of the classification theorem; the last column is the central-square computation for each family, $C = 0$ for the nontrivial idempotents of the plain and of the sibling sesquilinear product and $C = 1$ for the family. The table is the idempotent row of *Comparison Between the Four General Products* §*The Squares, the Idempotents and the Roots*, read with the central square attached to each entry.
 
@@ -278,23 +278,23 @@ because its square is the central scalar $\bigl(\sum_\mu Q_\mu^{2}\bigr)e_0$ (*I
 
 ## The Family of Idempotents
 
-**The family is the affine translate by $-\tfrac12e_0$ of the real sphere $n_1^{2}+n_2^{2}+n_3^{2}=\tfrac34$, a two-parameter family whose six coordinate-axial members are $-\tfrac12e_0\pm\tfrac{\sqrt3}{2}e_k$; the group of unit quaternions acts transitively on it by conjugation.**
+**The family is the sphere of radius $\tfrac{\sqrt3}{2}$ centred at $-\tfrac12e_0$ in the real vector subspace, written $\tilde\Pi(\hat u) = -\tfrac12e_0+\tfrac{\sqrt3}{2}\hat u$ over the real unit vectors $\hat u$, a two-parameter family whose six coordinate-axial members are $-\tfrac12e_0\pm\tfrac{\sqrt3}{2}e_k$; the group of unit quaternions acts transitively on it by conjugation.**
 
 ### The Parametrisation
 
-The family of idempotents is the affine translate by $-\tfrac12 e_0$ of the set $(\vec n,\vec n)=\tfrac34$ in the real three-dimensional vector subspace $\mathrm{Vect}(\mathbb{B})_{\mathbb{R}}$. Writing $\vec n = n_1e_1+n_2e_2+n_3e_3$ with **real** coefficients $n_k$, the constraint is the single real quadratic equation
+The family of idempotents is the image of the set $(\hat u,\hat u)=1$ in the real three-dimensional vector subspace $\mathrm{Vect}(\mathbb{B})_{\mathbb{R}}$ under the map $\hat u\mapsto-\tfrac12 e_0+\tfrac{\sqrt3}{2}\hat u$. Writing $\hat u = u_1e_1+u_2e_2+u_3e_3$ with **real** coefficients $u_k$, the constraint is the single real quadratic equation
 
 $$
-n_1^{2}+n_2^{2}+n_3^{2} = \tfrac34 ,
+u_1^2+u_2^2+u_3^2=1 ,
 $$
 
 so every nontrivial idempotent is
 
 $$
-\tilde\Pi(\vec n) = -\tfrac12e_0+\vec n , \qquad n_1^{2}+n_2^{2}+n_3^{2} = \tfrac34 .
+\tilde\Pi(\hat u) = -\tfrac12e_0+\tfrac{\sqrt3}{2}\hat u , \qquad u_1^2+u_2^2+u_3^2=1 .
 $$
 
-The three coordinate-axial idempotents are the elements with $\vec n$ along one basis vector:
+The three coordinate-axial idempotents are the elements with $\hat u$ along one basis vector:
 
 $$
 -\tfrac12 e_0 \pm \tfrac{\sqrt3}{2} e_1 , \qquad -\tfrac12 e_0 \pm \tfrac{\sqrt3}{2} e_2 , \qquad -\tfrac12 e_0 \pm \tfrac{\sqrt3}{2} e_3 .
@@ -318,29 +318,29 @@ and $\tilde\Pi^{2} = -\tfrac12 e_0 - \tfrac{\sqrt3}{2} e_1$ is not $\tilde\Pi$, 
 
 **Proposition.** The group of unit quaternions acts transitively on the family of idempotents by conjugation.
 
-**Proof.** Let $\tilde U$ be a unit of the quaternion subspace, $\tilde U \in \mathbb{H}_{\mathbb{B}}$ with $C(\tilde U) = 1$; conjugation by $\tilde U$ in the quaternion division algebra is a real orthogonal map $\rho$ of the real vector subspace. Conjugation is a $\mathbb{C}$-algebra automorphism of the plain product, it commutes with both conjugations ${}^{\natural}$ and ${}^{*}$, and it therefore commutes with the multiplication $\star$ by the rule $\tilde U(\tilde X \star \tilde Y)\tilde U^{-1} = (\tilde U\tilde X\tilde U^{-1}) \star (\tilde U\tilde Y\tilde U^{-1})$. Reading this on the criterion shows that it preserves the idempotent set and maps $\tilde\Pi(\vec n)$ to $\tilde\Pi(\rho\vec n)$. Since these real orthogonal maps act transitively on the set $(\vec n,\vec n) = \tfrac34$, the action on the idempotent family is transitive.
+**Proof.** Let $\tilde U$ be a unit of the quaternion subspace, $\tilde U \in \mathbb{H}_{\mathbb{B}}$ with $C(\tilde U) = 1$; conjugation by $\tilde U$ in the quaternion division algebra is a real orthogonal map $\rho$ of the real vector subspace. Conjugation is a $\mathbb{C}$-algebra automorphism of the plain product, it commutes with both conjugations ${}^{\natural}$ and ${}^{*}$, and it therefore commutes with the multiplication $\star$ by the rule $\tilde U(\tilde X \star \tilde Y)\tilde U^{-1} = (\tilde U\tilde X\tilde U^{-1}) \star (\tilde U\tilde Y\tilde U^{-1})$. Reading this on the criterion shows that it preserves the idempotent set and maps $\tilde\Pi(\hat u)$ to $\tilde\Pi(\rho\hat u)$. Since these real orthogonal maps act transitively on the set $(\hat u,\hat u)=1$, the action on the idempotent family is transitive.
 
-**Remark.** The idempotent family is therefore a single class under the action of the unit quaternions, and the linear maps of the real vector subspace preserving the form $(\vec n,\vec n)$ are the structure group of the action. The two trivial idempotents are the fixed elements of the action, since a $\mathbb{C}$-algebra automorphism fixes $0$ and $e_0$.
+**Remark.** The idempotent family is therefore a single class under the action of the unit quaternions, and the linear maps of the real vector subspace preserving the form $(\hat u,\hat u)$ are the structure group of the action. The two trivial idempotents are the fixed elements of the action, since a $\mathbb{C}$-algebra automorphism fixes $0$ and $e_0$.
 
 ## The Hermitian Subspace and the Family
 
-**A nontrivial idempotent is neither Hermitian nor skew-Hermitian, $\tilde\Pi(\vec n)^{*}=-\tfrac12e_0-\vec n\neq\pm\tilde\Pi(\vec n)$ for $\vec n\neq0$, so the family lies in the quaternion subspace and outside the Hermitian subspace.**
+**A nontrivial idempotent is neither Hermitian nor skew-Hermitian, $\tilde\Pi(\hat u)^{*}=-\tfrac12e_0-\tfrac{\sqrt3}{2}\hat u\neq\pm\tilde\Pi(\hat u)$ for $\hat u\neq0$, so the family lies in the quaternion subspace and outside the Hermitian subspace.**
 
 The family lies in the quaternion subspace and outside the Hermitian subspace, and this is worth isolating because it is the source of the contrast with the sibling product.
 
 **Proposition.** A nontrivial idempotent is not Hermitian,
 
 $$
-\tilde\Pi(\vec n)^{*} = -\tfrac12 e_0 - \vec n \neq -\tfrac12e_0+\vec n = \tilde\Pi(\vec n)
+\tilde\Pi(\hat u)^{*} = -\tfrac12 e_0 - \tfrac{\sqrt3}{2}\hat u \neq -\tfrac12e_0+\tfrac{\sqrt3}{2}\hat u = \tilde\Pi(\hat u)
 $$
 
-for $\vec n \neq 0$, and it is not skew-Hermitian either.
+for $\hat u \neq 0$, and it is not skew-Hermitian either.
 
-**Proof.** The element $\tilde\Pi(\vec n)$ has real coordinates, so $\overline{\tilde\Pi(\vec n)} = \tilde\Pi(\vec n)$ and $\tilde\Pi(\vec n)^{*} = \tilde\Pi(\vec n)^{\natural} = -\tfrac12 e_0 - \vec n$. This differs from $\tilde\Pi(\vec n)$ exactly when $\vec n \neq 0$, and it differs from $-\tilde\Pi(\vec n) = \tfrac12 e_0 - \vec n$ because the scalar coordinates $\pm\tfrac12$ do not vanish.
+**Proof.** The element $\tilde\Pi(\hat u)$ has real coordinates, so $\overline{\tilde\Pi(\hat u)} = \tilde\Pi(\hat u)$ and $\tilde\Pi(\hat u)^{*} = \tilde\Pi(\hat u)^{\natural} = -\tfrac12 e_0 - \tfrac{\sqrt3}{2}\hat u$. This differs from $\tilde\Pi(\hat u)$ exactly when $\hat u \neq 0$, and it differs from $-\tilde\Pi(\hat u) = \tfrac12 e_0 - \tfrac{\sqrt3}{2}\hat u$ because the scalar coordinates $\pm\tfrac12$ do not vanish.
 
 **Remark.** The Hermitian subspace $\mathbb{M}_{+}$ is where the sibling product finds its idempotents and where this product finds none beyond the centre; the family of this product is cut out of the quaternion subspace instead, the fixed space of the other conjugation. This is the element-theoretic form of the fact that the two products differ by which slot carries the conjugation, and it is developed into the reading of the two halves in *The Square of the General Quaternionic Sesquilinear Product and the Two Halves*.
 
-**Remark (the complementary spherical family, and the absence of complementation).** The two infinite families are **complementary** in the following sense and in no other. The sibling product's idempotents are the **Hermitian spherical family** $\tilde\Pi_+(\tilde\Xi) = \tfrac12(e_0+\tilde\Xi)$ over the real unit vectors $\hat u$, and they are exactly the elements of the square-zero family of this product with scalar part $\tfrac12$: for such an element $\overline{\tilde\Pi_1}\tilde\Pi_1 = C(\tilde\Pi_1)e_0 = 0$, so $\tilde\Pi_1 \star \tilde\Pi_1 = 0$; the idempotents of this product are the elements $-\tfrac12e_0+\vec n$ with $(\vec n,\vec n) = \tfrac34$, of scalar part $-\tfrac12$. The two families are therefore on the two signs of the scalar part and neither is a translate or a conjugate of the other. There is **no nontrivial complementation**: the relations $\tilde\Pi \star \tilde\Pi' = 0$ and $\tilde\Pi+\tilde\Pi' = e_0$ hold, in either order, for the trivial pair $\{\tilde\Pi,\tilde\Pi'\} = \{e_0,0\}$ and for no other pair of idempotents. Indeed two nontrivial idempotents both have scalar part $-\tfrac12$, so their sum has scalar part $-1$ and not $1$; on the vector parts the relation would read $\vec n + \vec n' = 2e_0$, impossible since $\vec n$ and $\vec n'$ lie in the real vector subspace and their sum has no scalar part. The block has no unit and is not associative either, so the complementation and the Peirce decomposition of the plain product are not available to it, and the absence is one of the specificities recorded in *The Specificities of the General Quaternionic Sesqualgebra*.
+**Remark (the complementary spherical family, and the absence of complementation).** The two infinite families are **complementary** in the following sense and in no other. The sibling product's idempotents are the **Hermitian spherical family** $\tilde\Pi_+(\tilde\Xi) = \tfrac12(e_0+\tilde\Xi)$ over the real unit vectors $\hat u$, and they are exactly the elements of the square-zero family of this product with scalar part $\tfrac12$: for such an element $\overline{\tilde\Pi_1}\tilde\Pi_1 = C(\tilde\Pi_1)e_0 = 0$, so $\tilde\Pi_1 \star \tilde\Pi_1 = 0$; the idempotents of this product are the elements $-\tfrac12e_0+\tfrac{\sqrt3}{2}\hat u$ with $(\hat u,\hat u)=1$, of scalar part $-\tfrac12$. The two families are therefore on the two signs of the scalar part and neither is a translate or a conjugate of the other. There is **no nontrivial complementation**: the relations $\tilde\Pi \star \tilde\Pi' = 0$ and $\tilde\Pi+\tilde\Pi' = e_0$ hold, in either order, for the trivial pair $\{\tilde\Pi,\tilde\Pi'\} = \{e_0,0\}$ and for no other pair of idempotents. Indeed two nontrivial idempotents both have scalar part $-\tfrac12$, so their sum has scalar part $-1$ and not $1$; on the vector parts the relation would read $\tfrac{\sqrt3}{2}(\hat u + \hat u') = 2e_0$, impossible since $\hat u$ and $\hat u'$ lie in the real vector subspace and their sum has no scalar part. The block has no unit and is not associative either, so the complementation and the Peirce decomposition of the plain product are not available to it, and the absence is one of the specificities recorded in *The Specificities of the General Quaternionic Sesqualgebra*.
 
 ## Summary
 
@@ -351,10 +351,10 @@ A root of the central value $\lambda$ exists only for real $\lambda$, and for re
 The idempotents are the solutions of $\overline{\tilde Q}\tilde Q = \tilde Q^{\natural}$, equivalently of the four coordinate equations $Q_0 = u \in \mathbb{R}$, $u = u^{2} - \lvert\vec Q\rvert^{2}$, $(2u+1)\vec a = 0$ and $\vec a\times\vec b = -\tfrac12\vec b$ for $\vec Q = \vec a + i\vec b$. Their list is the two trivial idempotents $0$ and $e_0$ together with the family
 
 $$
-\tilde\Pi(\vec n) = -\tfrac12e_0+\vec n , \qquad \vec n\in\mathrm{Vect}(\mathbb{B})_{\mathbb{R}} , \qquad (\vec n,\vec n) = \tfrac34 ,
+\tilde\Pi(\hat u) = -\tfrac12e_0+\tfrac{\sqrt3}{2}\hat u , \qquad \hat u\in\mathrm{Vect}(\mathbb{B})_{\mathbb{R}} , \qquad (\hat u,\hat u)=1 ,
 $$
 
-and each nontrivial idempotent has central square $1$, so that it is a unit of the plain algebra with inverse its own natural conjugate $-\tfrac12 e_0 - \vec n$. The family is a single class under the action of the unit quaternions of the quaternion subspace, and it lies outside the Hermitian subspace, since a nontrivial idempotent is neither Hermitian nor skew-Hermitian. The idempotents are not the roots of one halved: the halving map carries the roots of one to idempotents only at the two trivial roots $\pm e_0$, and the two sets meet at $e_0$ alone. The idempotent sets of the four general products are four different sets: the plain product and the sibling sesquilinear product have infinite families of zero divisors, the sibling bilinear product has only the two trivial idempotents, and this product alone has a family of units of the plain algebra. The idempotents of the sibling sesquilinear product are isotropic for this multiplication, each of them having square zero, so the two infinite families are disjoint beyond $0$ and $e_0$.
+and each nontrivial idempotent has central square $1$, so that it is a unit of the plain algebra with inverse its own natural conjugate $-\tfrac12 e_0 - \tfrac{\sqrt3}{2}\hat u$. The family is a single class under the action of the unit quaternions of the quaternion subspace, and it lies outside the Hermitian subspace, since a nontrivial idempotent is neither Hermitian nor skew-Hermitian. The idempotents are not the roots of one halved: the halving map carries the roots of one to idempotents only at the two trivial roots $\pm e_0$, and the two sets meet at $e_0$ alone. The idempotent sets of the four general products are four different sets: the plain product and the sibling sesquilinear product have infinite families of zero divisors, the sibling bilinear product has only the two trivial idempotents, and this product alone has a family of units of the plain algebra. The idempotents of the sibling sesquilinear product are isotropic for this multiplication, each of them having square zero, so the two infinite families are disjoint beyond $0$ and $e_0$.
 
 ## Summary of Notation
 
@@ -372,17 +372,16 @@ and each nontrivial idempotent has central square $1$, so that it is a unit of t
 | $\overline{\tilde Q}\tilde Q = \tilde Q^{\natural}$ | the criterion for idempotence |
 | $Q_0 = u \in \mathbb{R}$, $u = u^{2} - \lvert\vec Q\rvert^{2}$ | the scalar coordinate equations |
 | $(2u+1)\vec a = 0$, $\vec a\times\vec b = -\tfrac12\vec b$ | the vector coordinate equations, $\vec Q = \vec a + i\vec b$ |
-| $\tilde\Pi(\vec n) = -\tfrac12e_0+\vec n$ | a nontrivial idempotent |
-| $\vec n\in\mathrm{Vect}(\mathbb{B})_{\mathbb{R}}$, $(\vec n,\vec n) = \tfrac34$ | the parameter and its constraint: a two-dimensional family |
-| $\hat u = \vec n / \lvert\vec n\rvert$ | the real unit direction |
-| $C(\tilde\Pi(\vec n)) = 1$ | every nontrivial idempotent is a unit of the plain algebra |
-| $\tilde\Pi(\vec n)^{-1} = \tilde\Pi(\vec n)^{\natural} = -\tfrac12 e_0 - \vec n$ | the inverse of a nontrivial idempotent |
+| $\tilde\Pi(\hat u) = -\tfrac12e_0+\tfrac{\sqrt3}{2}\hat u$ | a nontrivial idempotent |
+| $\hat u\in\mathrm{Vect}(\mathbb{B})_{\mathbb{R}}$, $(\hat u,\hat u)=1$ | the parameter and its constraint: a two-dimensional family |
+| $C(\tilde\Pi(\hat u)) = 1$ | every nontrivial idempotent is a unit of the plain algebra |
+| $\tilde\Pi(\hat u)^{-1} = \tilde\Pi(\hat u)^{\natural} = -\tfrac12 e_0 - \tfrac{\sqrt3}{2}\hat u$ | the inverse of a nontrivial idempotent |
 | $\tilde\Pi_+(\tilde\Xi) = \tfrac12(e_0 + \tilde\Xi)$ | the idempotents of the sibling sesquilinear product, isotropic here |
 | $\rho$ | the real orthogonal map of the vector subspace induced by conjugation by a unit quaternion |
 
 ## Further Reading
 
-- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the root of a central value and the idempotent, stated once for a general product.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the root of a central value and the idempotent, stated once for a general product.
 - *Square Roots of Minus One, Zero and Plus One in the General Plain Algebra* (`articles_maths/square-roots-of-minus-one-zero-and-plus-one-in-the-general-plain-algebra-of-quaternions.md`), for the plain reading of the three values, against which the roots of one are compared.
 - *Square Roots of a General Element in the General Quaternionic Sesqualgebra* (`articles_maths/square-roots-of-a-general-element-in-the-general-quaternionic-sesqualgebra.md`), for the general square-root problem of which the central value is the special case.
 - *Square Roots of Zero and the Nilpotents of the General Quaternionic Sesqualgebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-quaternionic-sesqualgebra.md`), for the roots of $0$, the square-zero family $c(\hat u\pm i)$.

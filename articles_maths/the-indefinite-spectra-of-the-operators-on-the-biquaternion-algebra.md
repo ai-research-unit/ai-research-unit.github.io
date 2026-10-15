@@ -130,8 +130,8 @@ For the Krein adjoint $T^{\dagger}=JT^{*}J$ the $J$-self-adjoint operators of th
 
 - *Spectral Theory on Krein Spaces* (`articles_maths/spectral-theory-on-krein-spaces.md`) and *Definitizable Operators and the Krein–Naĭmark Theorem* (`articles_maths/definitizable-operators-and-the-krein-naimark-theorem.md`), for the indefinite spectral theory and definitizability
 - *The Spectra of the Operators on the Biquaternion Algebra with Hermitian Adjoint* (`articles_maths/the-spectra-of-the-operators-on-the-biquaternion-algebra-with-hermitian-adjoint.md`), for the definite spectral rules quoted here
-- *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra-of-biquaternions.md`), for the $J$-self-adjointness criteria
-- *The Fundamental Symmetry of the Biquaternion Algebra* (`articles_maths/the-fundamental-symmetry-of-the-biquaternion-algebra.md`), for $J$ and its eigenspaces
-- *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra* (`articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternion-algebra.md`), for the indefinite cone and the $J$-Cartan involution
+- *J-Self-Adjoint and J-Unitary Operators on the General Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/j-self-adjoint-and-j-unitary-operators-on-the-general-quaternionic-sesqualgebra.md`), for the $J$-self-adjointness criteria
+- *The Fundamental Symmetry of the Biquaternion Algebra* (`articles_maths/the-fundamental-symmetry-of-the-biquaternioid-algebra.md`), for $J$ and its eigenspaces
+- *Indefinite Positivity and the Krein Cone of the Biquaternion Algebra* (`articles_maths/indefinite-positivity-and-the-krein-cone-of-the-biquaternioid-algebra.md`), for the indefinite cone and the $J$-Cartan involution
 - *Biquaternion Spectral Theory* (`articles_maths/biquaternion-spectral-theory.md`), for the element spectra and the Cayley–Hamilton functionals
 - Israel Gohberg, Peter Lancaster and Leiba Rodman, *Indefinite Linear Algebra and Applications* (Birkhäuser, 2005), for the spectra, the inertias and the normal forms of indefinite operators

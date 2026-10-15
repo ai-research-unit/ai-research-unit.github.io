@@ -182,12 +182,12 @@ The diagonal of the block is the vector part of the square, $\tilde Q\diamond\ti
 
 ## Further Reading
 
-- *Introduction to the Antisymmetric Plain Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-plain-sesqualgebra-of-biquaternions.md`), for the block, its class and the basis values used here
+- *Introduction to the Antisymmetric Plain Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-antisymmetric-plain-sesqualgebra.md`), for the block, its class and the basis values used here
 - *The Symmetric and Antisymmetric Parts of a Sesqualgebra Product* (`articles_maths/the-symmetric-and-antisymmetric-parts-of-a-sesqualgebra-product.md`), for the adapted split, the diagonal of a sesqualgebra part and the class the bare split fails to keep
-- *The Sesquilinear Commutator* (`articles_maths/the-sesquilinear-commutator.md`) and *The Sesquilinear Commutator and the Symmetrised Product on the Biquaternions* (`articles_maths/the-sesquilinear-commutator-and-the-symmetrised-product-on-the-biquaternions.md`), for the bare antisymmetrisation and its laws
+- *The Sesquilinear Commutator* (`articles_maths/the-sesquilinear-commutator.md`) and *The Sesquilinear Commutator and the Symmetrised Product on the Biquaternions* (`articles_maths/the-sesquilinear-commutator-and-the-symmetrised-product-on-the-biquaternioid.md`), for the bare antisymmetrisation and its laws
 - *Lie Algebras of Sesqualgebras* (`articles_maths/lie-algebras-of-sesqualgebras.md`), for the obstruction that forbids the antisymmetrisation of a genuine sesquilinear product
-- *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the row table, the three failures, the real witnesses and the ten operations of the real part
-- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the form $H$, the square and the zero divisors
+- *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternioid-complex-space.md`), for the row table, the three failures, the real witnesses and the ten operations of the real part
+- *The 4 Forms over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the form $H$, the square and the zero divisors
 - *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the remarkable subspaces and the Hermitian and anti-Hermitian halves
 - *The Antisymmetric Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* (`articles_maths/the-antisymmetric-plain-sesqualgebra-in-the-2x2-matrix-element-representation.md`), for the diagonal and the square-zero elements in the realization
 - *The Antisymmetric Plain Sesqualgebra in the $4\times4$ Matrix Element Representation $M_4(\mathbb{C})_L$* (`articles_maths/the-antisymmetric-plain-sesqualgebra-in-the-4x4-matrix-element-representation.md`), for the diagonal and the square-zero elements in the regular model

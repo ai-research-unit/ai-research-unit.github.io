@@ -158,10 +158,10 @@ The general plain sesqualgebra satisfies the **right-composition law** $R^{\star
 
 ## Further Reading
 
-- *The Specificities of the General Plain Algebra* (`articles_maths/the-specificities-of-the-general-plain-algebra.md`), for the criterion of left alternativity and the family of criteria this article closes.
+- *The Specificities of the General Plain Algebra* (`articles_maths/the-specificities-of-the-biquaternion-algebra.md`), for the criterion of left alternativity and the family of criteria this article closes.
 - *The Specificities of the General Quaternionic Algebra* (`articles_maths/the-specificities-of-the-general-quaternionic-algebra.md`), for the mirror criterion on the left multiplications and the left-ideal coincidence.
-- *Introduction to the General Plain Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-general-plain-sesqualgebra-of-biquaternions.md`), for the product, its class, its table and its placement among the twelve.
-- *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions* (`articles_maths/one-sided-operators-on-the-general-plain-sesqualgebra-of-biquaternions.md`), for the plain operators $L_{\tilde B}$, $R_{\tilde C}$, their composition laws, their adjoints and their types, which the dictionary reads on the block.
+- *Introduction to the General Plain Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-general-plain-sesqualgebra.md`), for the product, its class, its table and its placement among the twelve.
+- *One-Sided Operators on the General Plain Sesqualgebra of Biquaternions* (`articles_maths/one-sided-operators-on-the-general-plain-sesqualgebra.md`), for the plain operators $L_{\tilde B}$, $R_{\tilde C}$, their composition laws, their adjoints and their types, which the dictionary reads on the block.
 - *Norm and Invertibility in the General Plain Sesqualgebra* (`articles_maths/norm-and-invertibility-in-the-general-plain-sesqualgebra.md`), for the norm, the one-sided inverse and the criterion of invertibility.
 - *Square Roots of One and the Idempotents of the General Plain Sesqualgebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-general-plain-sesqualgebra.md`), for the Hermitian idempotents that the projector family meets.
 - *The General Plain Sesqualgebra in the $2\times2$ Matrix Element Representation $M_2(\mathbb{C})$* (`articles_maths/the-general-plain-sesqualgebra-in-the-2x2-matrix-element-representation.md`), for the model in which the dictionary is the conjugate transpose.

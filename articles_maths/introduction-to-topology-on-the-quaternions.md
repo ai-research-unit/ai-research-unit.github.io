@@ -16,7 +16,7 @@ This article opens the topological half of the chapter. The quaternion algebra i
 
 **Proposition (the norm is multiplicative and the inverse is continuous).** $\lvert\tilde p\tilde q\rvert=\lvert\tilde p\rvert\lvert\tilde q\rvert$, and the inversion map $\tilde q\mapsto\tilde q^{-1}=\tilde q^{\natural}/N(\tilde q)$ is continuous on the complement of the origin.
 
-*Proof.* Multiplicativity of $N$ is the multiplicativity of the plain product, $N(\tilde p\tilde q)=N(\tilde p)N(\tilde q)$; the inverse formula is *Norm and Invertibility in the General Plain Algebra*, and its coordinates are rational with denominator $N(\tilde q)\neq0$.
+*Proof.* Multiplicativity of $N$ is the multiplicativity of the plain product, $N(\tilde p\tilde q)=N(\tilde p)N(\tilde q)$; the inverse formula is *Norm and Invertibility in the Quaternion Algebra*, and its coordinates are rational with denominator $N(\tilde q)\neq0$.
 
 ## The Three Objects
 
@@ -71,7 +71,7 @@ The quaternion algebra is $\mathbb{R}^4$ with its Euclidean topology, the norm $
 
 ## Further Reading
 
-- *Introduction to the Symmetric Quaternionic Algebra of Quaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-algebra-of-quaternions.md`), for the algebra and its norm
+- *Introduction to the Symmetric Quaternionic Algebra of Quaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-algebra-of-quaternioid.md`), for the algebra and its norm
 - *Quaternion Topology* (`articles_maths/quaternion-topology.md`), for the space and its structure
 - *The Quaternion Unit Group as a Topological Group* (`articles_maths/the-quaternion-unit-group-as-a-topological-group.md`) and *Quaternion Orders and Finite Groups of Units* (`articles_maths/quaternion-orders-and-finite-groups-of-units.md`), for the units
 - *Topology and Metric for Each of the Six Operations* (`articles_maths/topology-and-metric-for-each-of-the-six-operations.md`), for the metric reading of the six products

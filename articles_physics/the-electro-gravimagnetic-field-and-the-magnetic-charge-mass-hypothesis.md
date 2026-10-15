@@ -413,14 +413,14 @@ The two papers' second-law postulates differ by the sign of $\tilde{\Theta}$, an
 
 The programme's conservation laws can be written in integral form, and the second law can be integrated over a fixed volume into a law for a body.
 
-The source's Theorem 1.1 states that a solution of the A-field equation satisfies $\partial_\tau\rho + \mathrm{div}\,\vec J = 0$ and $\partial_\tau W + \mathrm{div}\,\vec P = c^{-1}(\vec j_H\!\cdot\!\vec H - \vec j_E\!\cdot\!\vec E)$. The divergence theorem and Stokes' theorem then give the integral balances over a fixed domain $D^-$ with outward unit normal $\vec n$: the enclosed charge changes only through the flux of $\vec J$ across the boundary, the enclosed energy only through the flux of the Poynting vector plus the work of the currents on their own field, and two further relations express the A-field through its boundary values and its current,
+The source's Theorem 1.1 states that a solution of the A-field equation satisfies $\partial_\tau\rho + \mathrm{div}\,\vec J = 0$ and $\partial_\tau W + \mathrm{div}\,\vec P = c^{-1}(\vec j_H\!\cdot\!\vec H - \vec j_E\!\cdot\!\vec E)$. The divergence theorem and Stokes' theorem then give the integral balances over a fixed domain $D^-$ with outward unit normal $\vec w$: the enclosed charge changes only through the flux of $\vec J$ across the boundary, the enclosed energy only through the flux of the Poynting vector plus the work of the currents on their own field, and two further relations express the A-field through its boundary values and its current,
 
 $$
-\int_{D^-}\!\big(\rho(\vec x,\tau)-\rho(\vec x,0)\big)\,dV + \int_0^\tau\! d\tau\!\int_{\partial D^-}\!(\vec n,\vec J)\,dS = 0,
+\int_{D^-}\!\big(\rho(\vec x,\tau)-\rho(\vec x,0)\big)\,dV + \int_0^\tau\! d\tau\!\int_{\partial D^-}\!(\vec w,\vec J)\,dS = 0,
 $$
 
 $$
-\int_{D^-}\!\big(A(\vec x,\tau)-A(\vec x,0)\big)\,dV + i\int_0^\tau\! d\tau\!\int_{\partial D^-}\![\vec n,A]\,dS + \int_0^\tau\! d\tau\!\int_{D^-}\!\vec J\,dV = 0 .
+\int_{D^-}\!\big(A(\vec x,\tau)-A(\vec x,0)\big)\,dV + i\int_0^\tau\! d\tau\!\int_{\partial D^-}\![\vec w,A]\,dS + \int_0^\tau\! d\tau\!\int_{D^-}\!\vec J\,dV = 0 .
 $$
 
 The second is the integrated form of the A-field equation: the A-field in a volume is fixed by its earlier value, by its boundary values and by the current that has flowed through the volume.
@@ -429,7 +429,7 @@ Integrating the second law over a fixed volume gives the momentum law. Write $m_
 
 $$
 \kappa\sqrt{\epsilon}\,\partial_\tau\!\int_{D^-}\!\vec j_H\,dV
-+ \kappa\!\int_{\partial D^-}\!\Big(\frac{\rho_H}{\sqrt{\mu}}\,\vec n + \sqrt{\mu}\,(\vec n,\vec j_E)\Big)dS(x)
++ \kappa\!\int_{\partial D^-}\!\Big(\frac{\rho_H}{\sqrt{\mu}}\,\vec w + \sqrt{\mu}\,(\vec w,\vec j_E)\Big)dS(x)
 = q_{D^-}\tilde{\mathbf{E}}' + m_{D^-}\tilde{\mathbf{H}}'
 + \int_{D^-}\!\big(\vec j_E\times\vec B' - \vec j_H\times\vec D'\big)dV .
 $$
@@ -533,10 +533,10 @@ Hence the **shocks of the charge–current field are generally not transverse** 
 The two front systems above are specializations of one statement, and it is worth recording because it is the general theorem behind both. For an arbitrary bipotential $\tilde K$ of the biwave equation $\tilde\nabla^{\pm}\tilde K = \tilde G$ — the equation the A-field and the charge–current field both satisfy — the layer calculus of *Distributions on Surfaces, Layers, and Jump Conditions* gives, for a field with a finite gap on a front $S$,
 
 $$
-\tilde\nabla^{\pm}\hat{\tilde K} = \tilde\nabla^{\pm}\tilde K + (n_{ict} + \vec n)\circ[\tilde K]_S\,\delta_S ,
+\tilde\nabla^{\pm}\hat{\tilde K} = \tilde\nabla^{\pm}\tilde K + (n_{ict} + \vec w)\circ[\tilde K]_S\,\delta_S ,
 $$
 
-with $n_{ict}$ the normal's time component and $\vec n$ its spatial part, in the corpus's $ict$ normalization that the introduction records as $D^\pm$ up to $i$ and a sign. On a non-characteristic front the normal is invertible and the jump vanishes. On a **characteristic** front, $n_{ict}^2 + \|\vec n\|^2 = 0$, the normal is a zero divisor and $(n_{ict} + \vec n)\circ[\tilde K]_S = 0$ has nontrivial solutions. Writing $\vec m = \vec n/\|\vec n\|$ for the unit spatial normal and $[\tilde K]_S = [k]_S + [\vec K]_S$ for the scalar and vector parts of the jump, it is the null relation
+with $n_{ict}$ the normal's time component and $\vec w$ its spatial part, in the corpus's $ict$ normalization that the introduction records as $D^\pm$ up to $i$ and a sign. On a non-characteristic front the normal is invertible and the jump vanishes. On a **characteristic** front, $n_{ict}^2 + \|\vec w\|^2 = 0$, the normal is a zero divisor and $(n_{ict} + \vec w)\circ[\tilde K]_S = 0$ has nontrivial solutions. Writing $\vec m = \vec w/\|\vec w\|$ for the unit spatial normal and $[\tilde K]_S = [k]_S + [\vec K]_S$ for the scalar and vector parts of the jump, it is the null relation
 
 $$
 [\tilde K]_S = i\,\vec m\circ[\tilde K]_S ,

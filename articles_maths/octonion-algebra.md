@@ -13,7 +13,7 @@ $$
 e_k^2 = -e_0 \quad (1\leq k\leq 7).
 $$
 
-Conjugation is the linear map $\bar{\cdot}$ with $e_0^{\natural} = e_0$ and $e_k^{\natural} = -e_k$. The product of two distinct imaginary basis elements is $\pm e_l$ according to the orientation rule of the next section. All products are written without brackets only where associativity is known; the convention is that $\tilde o\tilde p\tilde r$ abbreviates $(\tilde o\tilde p)\tilde r$, and that a bracket is dropped only inside an associative subalgebra.
+Conjugation is the linear map $\bar{\cdot}$ with $e_0^{\natural} = e_0$ and $e_k^{\natural} = -e_k$. The product of two distinct imaginary basis elements is $\pm e_l$ according to the orientation rule of the next section. All products are written without brackets only where associativity is known; the convention is that $opr$ abbreviates $(op)r$, and that a bracket is dropped only inside an associative subalgebra.
 
 ## The Cayley–Dickson Construction
 
@@ -27,7 +27,7 @@ $$
 
 **Proposition.** If $A$ is a composition algebra with $N(a) = a a^{\natural}$, then $\mathrm{CD}(A)$ is a composition algebra with $N((a,b)) = N(a) + N(b)$, the conjugation $(\overline{a,b}) = (a^{\natural},-b)$, and the identity $(1,0)$.
 
-*Proof.* An expansion using the composition law in $A$ shows $N(\tilde o\tilde p) = N(\tilde o)N(\tilde p)$ for $\tilde o,\tilde p\in \mathrm{CD}(A)$ and $\tilde o \tilde o^{\natural} = N(\tilde o)(1,0)$; the statements about the identity and the conjugation are immediate from the definition.
+*Proof.* An expansion using the composition law in $A$ shows $N(op) = N(o)N(p)$ for $o,p\in \mathrm{CD}(A)$ and $o o^{\natural} = N(o)(1,0)$; the statements about the identity and the conjugation are immediate from the definition.
 
 The construction is the same one that produces $\mathbb{C}$ from $\mathbb{R}$ and $\mathbb{H}$ from $\mathbb{C}$. It produces $\mathbb{O}$ from $\mathbb{H}$:
 
@@ -89,53 +89,53 @@ The identification of the display fixes the indexing used throughout this Part: 
 | $e_6$ | $e_7$ | $e_4$ | $-e_5$ | $-e_2$ | $e_3$ | $-e_0$ | $-e_1$ |
 | $e_7$ | $-e_6$ | $e_5$ | $e_4$ | $-e_3$ | $-e_2$ | $e_1$ | $-e_0$ |
 
-**Definition.** The **vector part** and **scalar part** of an octonion $\tilde o = \sum_{k=0}^{7}o_ke_k$ are
+**Definition.** The **vector part** and **scalar part** of an octonion $o = \sum_{k=0}^{7}o_ke_k$ are
 
 $$
-\operatorname{Sc}(\tilde o) = o_0, \qquad \operatorname{Vect}(\tilde o) = \sum_{k=1}^{7}o_ke_k,
+\operatorname{Sc}(o) = o_0, \qquad \operatorname{Vect}(o) = \sum_{k=1}^{7}o_ke_k,
 $$
 
-and the **conjugate** is $\tilde o^{\natural} = \operatorname{Sc}(\tilde o) - \operatorname{Vect}(\tilde o)$; the octonion is **imaginary** or **pure** if $\operatorname{Sc}(\tilde o) = 0$, and the imaginary subspace is written $\operatorname{Im}\mathbb{O}$, a real seven-space.
+and the **conjugate** is $o^{\natural} = \operatorname{Sc}(o) - \operatorname{Vect}(o)$; the octonion is **imaginary** or **pure** if $\operatorname{Sc}(o) = 0$, and the imaginary subspace is written $\operatorname{Im}\mathbb{O}$, a real seven-space.
 
 ## Identities
 
 ### Conjugation and the Scalar Part
 
-**Proposition.** The following hold for all $\tilde o,\tilde p\in\mathbb{O}$ and $\lambda\in\mathbb{R}$:
+**Proposition.** The following hold for all $o,p\in\mathbb{O}$ and $\lambda\in\mathbb{R}$:
 
-1. $\overline{\tilde o^{\natural}} = \tilde o$, $(\tilde o+\tilde p)^{\natural} = \tilde o^{\natural} + \tilde p^{\natural}$, $(\lambda \tilde o)^{\natural} = \lambda \tilde o^{\natural}$;
-2. $\tilde o + \tilde o^{\natural} = 2\operatorname{Sc}(\tilde o)e_0$, so that $\tilde o + \tilde o^{\natural}\in\mathbb{R}e_0$;
-3. $\tilde o \tilde o^{\natural} = \tilde o^{\natural}\tilde o\in\mathbb{R}e_0$, and the scalar $\lvert \tilde o\rvert^2 = \tilde o \tilde o^{\natural}$ is the sum of the squares of the coefficients, $\lvert \tilde o\rvert^2 = \sum_{k=0}^{7}o_k^2$;
-4. $(\tilde o\tilde p)^{\natural} = \tilde p^{\natural}\,\tilde o^{\natural}$;
-5. $\tilde o \tilde o^{\natural} = 0$ implies $\tilde o = 0$.
+1. $\overline{o^{\natural}} = o$, $(o+p)^{\natural} = o^{\natural} + p^{\natural}$, $(\lambda o)^{\natural} = \lambda o^{\natural}$;
+2. $o + o^{\natural} = 2\operatorname{Sc}(o)e_0$, so that $o + o^{\natural}\in\mathbb{R}e_0$;
+3. $o o^{\natural} = o^{\natural}o\in\mathbb{R}e_0$, and the scalar $\lvert o\rvert^2 = o o^{\natural}$ is the sum of the squares of the coefficients, $\lvert o\rvert^2 = \sum_{k=0}^{7}o_k^2$;
+4. $(op)^{\natural} = p^{\natural}\,o^{\natural}$;
+5. $o o^{\natural} = 0$ implies $o = 0$.
 
-*Proof.* Statements 1 and 2 are immediate from the definitions. For 3, multiplicativity of the norm in the Cayley–Dickson doubling together with $N(e_0) = 1$ gives $\tilde o \tilde o^{\natural} = N(\tilde o)e_0$, and the displayed coordinate expression follows by expansion; the equality $\tilde o^{\natural}\tilde o = \tilde o \tilde o^{\natural}$ follows from $\overline{\tilde o \tilde o^{\natural}} = \tilde o \tilde o^{\natural}$ and statement 4. For 4, both sides are bilinear, and the identity is checked on basis elements from the table: for an oriented line $(a,b,c)$ one has $(e_a e_b)^{\natural} = e_c^{\natural} = -e_c$ and $e_b^{\natural} e_a^{\natural} = (-e_b)(-e_a) = e_be_a = -e_c$, and the remaining cases are similar. For 5, use statement 3.
+*Proof.* Statements 1 and 2 are immediate from the definitions. For 3, multiplicativity of the norm in the Cayley–Dickson doubling together with $N(e_0) = 1$ gives $o o^{\natural} = N(o)e_0$, and the displayed coordinate expression follows by expansion; the equality $o^{\natural}o = o o^{\natural}$ follows from $\overline{o o^{\natural}} = o o^{\natural}$ and statement 4. For 4, both sides are bilinear, and the identity is checked on basis elements from the table: for an oriented line $(a,b,c)$ one has $(e_a e_b)^{\natural} = e_c^{\natural} = -e_c$ and $e_b^{\natural} e_a^{\natural} = (-e_b)(-e_a) = e_be_a = -e_c$, and the remaining cases are similar. For 5, use statement 3.
 
-The scalar $\lvert \tilde o\rvert^2$ is the **quadratic norm** of $\tilde o$; its systematic treatment, the invariance of the associated bilinear form under multiplication, and the invertibility theory, are the subject and are used here only where the multiplication forces them.
+The scalar $\lvert o\rvert^2$ is the **quadratic norm** of $o$; its systematic treatment, the invariance of the associated bilinear form under multiplication, and the invertibility theory, are the subject and are used here only where the multiplication forces them.
 
 ### The Associator
 
-**Definition.** The **associator** of $\tilde o,\tilde p,\tilde r\in\mathbb{O}$ is
+**Definition.** The **associator** of $o,p,r\in\mathbb{O}$ is
 
 $$
-[\tilde o,\tilde p,\tilde r] = (\tilde o\tilde p)\tilde r - \tilde o(\tilde p\tilde r).
+[o,p,r] = (op)r - o(pr).
 $$
 
 **Theorem.** The associator is trilinear over $\mathbb{R}$ and **alternating**: it changes sign under the interchange of any two arguments, and vanishes whenever two arguments are equal. Consequently
 
 $$
-[\tilde o,\tilde p,\tilde r] = [\tilde p,\tilde r,\tilde o] = [\tilde r,\tilde o,\tilde p] = -[\tilde p,\tilde o,\tilde r] = -[\tilde o,\tilde r,\tilde p] = -[\tilde r,\tilde p,\tilde o] ,
+[o,p,r] = [p,r,o] = [r,o,p] = -[p,o,r] = -[o,r,p] = -[r,p,o] ,
 $$
 
 and the associator vanishes identically on any two-dimensional subspace, that is, the subalgebra generated by any two octonions is associative.
 
-*Proof.* Trilinearity is clear. The alternating property is checked on the basis: if two of $\tilde o,\tilde p,\tilde r$ are equal the associator vanishes by the multiplication table, and the sign change under transposition is a finite check on the $7^3 = 343$ triples of imaginary basis elements, all of which are covered by the seven-line rule. Vanishing on a two-dimensional subspace then follows because the associator of three elements of $\operatorname{span}(\tilde o,\tilde p)$ expands into associators with a repeated argument.
+*Proof.* Trilinearity is clear. The alternating property is checked on the basis: if two of $o,p,r$ are equal the associator vanishes by the multiplication table, and the sign change under transposition is a finite check on the $7^3 = 343$ triples of imaginary basis elements, all of which are covered by the seven-line rule. Vanishing on a two-dimensional subspace then follows because the associator of three elements of $\operatorname{span}(o,p)$ expands into associators with a repeated argument.
 
 The last statement is **Artin's theorem**, in the form in which it is used throughout the theory: *every subalgebra generated by two elements of $\mathbb{O}$ is associative*. Its consequence is that the octonions retain an associative "slice" through every point, and this is the reason why ordinary calculations with two octonions never require care with brackets. The first genuine failure of associativity requires three independent directions:
 
 **Example.** $[e_1,e_2,e_4] = (e_1e_2)e_4 - e_1(e_2e_4) = e_3e_4 - e_1e_6 = e_7 - (-e_7) = 2e_7$, so the associator is non-zero and is a pure imaginary octonion orthogonal to each of $e_1,e_2,e_4$; reversing two arguments changes its sign, $[e_1,e_4,e_2] = -2e_7$.
 
-**Proposition.** Let $\tilde o,\tilde p,\tilde r$ be imaginary octonions, pairwise orthogonal and of norm one. Then the associator $[\tilde o,\tilde p,\tilde r]$ is imaginary and is orthogonal to each of $\tilde o,\tilde p,\tilde r$; it vanishes exactly when $\tilde r$ lies in the quaternion subalgebra $\operatorname{span}(e_0,\tilde o,\tilde p,\tilde o\tilde p)$ generated by $\tilde o$ and $\tilde p$. In particular $[e_1,e_2,e_4] = 2e_7\neq0$, while $[e_1,e_2,e_3] = 0$ because $e_1,e_2,e_3$ span a quaternion subalgebra with $e_0$.
+**Proposition.** Let $o,p,r$ be imaginary octonions, pairwise orthogonal and of norm one. Then the associator $[o,p,r]$ is imaginary and is orthogonal to each of $o,p,r$; it vanishes exactly when $r$ lies in the quaternion subalgebra $\operatorname{span}(e_0,o,p,op)$ generated by $o$ and $p$. In particular $[e_1,e_2,e_4] = 2e_7\neq0$, while $[e_1,e_2,e_3] = 0$ because $e_1,e_2,e_3$ span a quaternion subalgebra with $e_0$.
 
 *Proof.* The orthogonality is verified by expanding in an orthonormal basis adapted to the triple and using the multiplication table; the vanishing criterion is the observation that the associator is determined by the Fano incidence, so that it vanishes precisely when the three units together with the identity close under multiplication.
 
@@ -143,28 +143,28 @@ The last statement is **Artin's theorem**, in the form in which it is used throu
 
 The weakening of associativity that the octonions satisfy is alternativity and the Moufang laws.
 
-**Theorem (Artin).** The octonions are **alternative**: for all $\tilde o,\tilde p\in\mathbb{O}$,
+**Theorem (Artin).** The octonions are **alternative**: for all $o,p\in\mathbb{O}$,
 
 $$
-(\tilde o\tilde o)\tilde p = \tilde o(\tilde o\tilde p), \qquad (\tilde o\tilde p)\tilde o = \tilde o(\tilde p\tilde o), \qquad (\tilde p\tilde o)\tilde o = \tilde p(\tilde o\tilde o) \quad\text{and}\quad (\tilde o\tilde p)\tilde p = \tilde o(\tilde p\tilde p),
+(oo)p = o(op), \qquad (op)o = o(po), \qquad (po)o = p(oo) \quad\text{and}\quad (op)p = o(pp),
 $$
 
 equivalently the associator changes sign when any two arguments are interchanged and vanishes when two are equal.
 
-**Theorem (Moufang).** For all $\tilde o,\tilde p,\tilde r\in\mathbb{O}$,
+**Theorem (Moufang).** For all $o,p,r\in\mathbb{O}$,
 
 $$
-(\tilde o\tilde p\tilde o)\tilde r = \tilde o(\tilde p(\tilde o\tilde r)), \qquad \tilde r(\tilde o\tilde p\tilde o) = ((\tilde r\tilde o)\tilde p)\tilde o, \qquad (\tilde o\tilde p)(\tilde r\tilde o) = \tilde o(\tilde p\tilde r)\tilde o ,
+(opo)r = o(p(or)), \qquad r(opo) = ((ro)p)o, \qquad (op)(ro) = o(pr)o ,
 $$
 
-where $\tilde o\tilde p\tilde o$ means $(\tilde o\tilde p)\tilde o$.
+where $opo$ means $(op)o$.
 
 *Proof.* Each identity is trilinear, so it suffices to check it on basis elements, which is finite and is done from the table; alternatively each is a consequence of the corresponding identity in the Cayley–Dickson double, where it follows from the associativity of the quaternion factor.
 
-**Proposition.** The following further identities hold for all $\tilde o,\tilde p\in\mathbb{O}$, and are the form in which invertibility is normally used:
+**Proposition.** The following further identities hold for all $o,p\in\mathbb{O}$, and are the form in which invertibility is normally used:
 
 $$
-\tilde o(\tilde o^{\natural}\tilde p) = \lvert \tilde o\rvert^2 \tilde p, \qquad (\tilde o \tilde p^{\natural})\tilde p = \lvert \tilde p\rvert^2 \tilde o, \qquad (\tilde o^{\natural}\tilde p)\tilde o^{\natural} = \lvert \tilde o\rvert^2 \tilde p, \qquad \tilde o^{\natural}(\tilde o\tilde p) = \lvert \tilde o\rvert^2 \tilde p .
+o(o^{\natural}p) = \lvert o\rvert^2 p, \qquad (o p^{\natural})p = \lvert p\rvert^2 o, \qquad (o^{\natural}p)o^{\natural} = \lvert o\rvert^2 p, \qquad o^{\natural}(op) = \lvert o\rvert^2 p .
 $$
 
 *Proof.* Expand in coordinates and use the table; the identities express the two-sidedness of the Cayley–Dickson conjugation in the algebra and are the exact substitutes for associativity in the cancellation arguments.
@@ -194,19 +194,19 @@ The quaternion subalgebras of $\mathbb{O}$ are parametrised by the oriented two-
 
 ### The Place of the Octonions
 
-**Theorem (Frobenius, Hurwitz).** Every finite-dimensional real associative division algebra is isomorphic to $\mathbb{R}$, $\mathbb{C}$ or $\mathbb{H}$; every finite-dimensional real normed division algebra — that is, every real algebra with a positive definite quadratic form satisfying $\lvert \tilde o\tilde p\rvert = \lvert \tilde o\rvert\lvert \tilde p\rvert$ and with no zero divisors — is isomorphic to $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ or $\mathbb{O}$. The octonions are therefore the largest normed division algebra, and the largest division algebra obtainable from the Cayley–Dickson construction.
+**Theorem (Frobenius, Hurwitz).** Every finite-dimensional real associative division algebra is isomorphic to $\mathbb{R}$, $\mathbb{C}$ or $\mathbb{H}$; every finite-dimensional real normed division algebra — that is, every real algebra with a positive definite quadratic form satisfying $\lvert op\rvert = \lvert o\rvert\lvert p\rvert$ and with no zero divisors — is isomorphic to $\mathbb{R}$, $\mathbb{C}$, $\mathbb{H}$ or $\mathbb{O}$. The octonions are therefore the largest normed division algebra, and the largest division algebra obtainable from the Cayley–Dickson construction.
 
 *Proof.* The associative statement is Frobenius's theorem; the general statement is Hurwitz's theorem on composition algebras, of which the octonion case is the last step. Both are quoted as standard, with the standard sources listed in the Further Reading; the corpus states the composition algebras of a general field in *Quadratic Forms over Algebras and Norms*.
 
 **Proposition.** The octonion algebra is **not** associative and is **not** commutative; it is **flexible**,
 
 $$
-\tilde o(\tilde p\tilde o) = (\tilde o\tilde p)\tilde o \quad\text{for all }\tilde o,\tilde p\in\mathbb{O},
+o(po) = (op)o \quad\text{for all }o,p\in\mathbb{O},
 $$
 
-and it is a **division algebra**: the only octonion $\tilde o$ with $\tilde o\tilde p = 0$ or $\tilde p\tilde o = 0$ for some $\tilde p\neq0$ is $\tilde o = 0$.
+and it is a **division algebra**: the only octonion $o$ with $op = 0$ or $po = 0$ for some $p\neq0$ is $o = 0$.
 
-*Proof.* Non-associativity and non-commutativity are the example and the skew-symmetric entries of the table. Flexibility is the specialisation $\tilde o = \tilde r$ of the alternating property of the associator. For the division statement, if $\tilde o\tilde p = 0$ with $\tilde p\neq0$ then $\tilde o = \lvert \tilde p\rvert^{-2}(\tilde o\tilde p)\tilde p^{\natural} = 0$ using the identities of the previous section.
+*Proof.* Non-associativity and non-commutativity are the example and the skew-symmetric entries of the table. Flexibility is the specialisation $o = r$ of the alternating property of the associator. For the division statement, if $op = 0$ with $p\neq0$ then $o = \lvert p\rvert^{-2}(op)p^{\natural} = 0$ using the identities of the previous section.
 
 The **centre** of $\mathbb{O}$ is $\mathbb{R}e_0$: an element commuting and associating with every element is a real scalar. The derivation algebra $\operatorname{Der}(\mathbb{O})$ is the exceptional Lie algebra $\mathrm{G}_2$, of dimension fourteen, and the automorphism group is the exceptional Lie group $G_2$; both are treated.
 
@@ -271,7 +271,7 @@ The $2\times2$ Hermitian matrices form a Jordan algebra under the symmetrised pr
 
 The octonion algebra $\mathbb{O}$ is the real vector space of dimension eight with basis $e_0 = 1, e_1,\dots,e_7$, with $e_k^2 = -e_0$ and with the products of distinct imaginary units determined by the orientation of the seven lines of the Fano plane: on a cyclically ordered line $(a,b,c)$ one has $e_ae_b = e_c$, $e_be_c = e_a$, $e_ce_a = e_b$, and reversing any factor negates the product. Equivalently, $\mathbb{O} = \mathbb{H}\oplus\mathbb{H}$ is the Cayley–Dickson double of the quaternions, with product $(a,b)(c,d) = (ac - d^{\natural}b, da + b c^{\natural})$.
 
-The algebra has identity $e_0$ and is neither commutative nor associative. Its associator $[\tilde o,\tilde p,\tilde r] = (\tilde o\tilde p)\tilde r - \tilde o(\tilde p\tilde r)$ is alternating, so the algebra is alternative and flexible and every subalgebra generated by two elements is associative; it satisfies the Moufang identities $(\tilde o\tilde p\tilde o)\tilde r = \tilde o(\tilde p(\tilde o\tilde r))$, $\tilde r(\tilde o\tilde p\tilde o) = ((\tilde r\tilde o)\tilde p)\tilde o$ and $(\tilde o\tilde p)(\tilde r\tilde o) = \tilde o(\tilde p\tilde r)\tilde o$. Conjugation is an anti-automorphism, $(\tilde o\tilde p)^{\natural} = \tilde p^{\natural} \tilde o^{\natural}$, and $\tilde o + \tilde o^{\natural}$ and $\tilde o \tilde o^{\natural}$ are real; the scalar $\lvert \tilde o\rvert^2 = \tilde o \tilde o^{\natural}$ is the sum of the squares of the coefficients. The identities $\tilde o(\tilde o^{\natural}\tilde p) = \lvert \tilde o\rvert^2\tilde p$ and $(\tilde o \tilde p^{\natural})\tilde p = \lvert \tilde p\rvert^2\tilde o$ replace associativity in cancellation. The algebra is a division algebra, and by Hurwitz's theorem it is the largest normed division algebra over $\mathbb{R}$. Its subalgebras generated by one and two elements are the copies of $\mathbb{C}$ and $\mathbb{H}$; its Fano lines record the quaternion subalgebras; its centre is $\mathbb{R}e_0$; and it may be presented by Zorn vector matrices, in which the product is expressed by the dot and cross products on $\mathbb{R}^7$.
+The algebra has identity $e_0$ and is neither commutative nor associative. Its associator $[o,p,r] = (op)r - o(pr)$ is alternating, so the algebra is alternative and flexible and every subalgebra generated by two elements is associative; it satisfies the Moufang identities $(opo)r = o(p(or))$, $r(opo) = ((ro)p)o$ and $(op)(ro) = o(pr)o$. Conjugation is an anti-automorphism, $(op)^{\natural} = p^{\natural} o^{\natural}$, and $o + o^{\natural}$ and $o o^{\natural}$ are real; the scalar $\lvert o\rvert^2 = o o^{\natural}$ is the sum of the squares of the coefficients. The identities $o(o^{\natural}p) = \lvert o\rvert^2p$ and $(o p^{\natural})p = \lvert p\rvert^2o$ replace associativity in cancellation. The algebra is a division algebra, and by Hurwitz's theorem it is the largest normed division algebra over $\mathbb{R}$. Its subalgebras generated by one and two elements are the copies of $\mathbb{C}$ and $\mathbb{H}$; its Fano lines record the quaternion subalgebras; its centre is $\mathbb{R}e_0$; and it may be presented by Zorn vector matrices, in which the product is expressed by the dot and cross products on $\mathbb{R}^7$.
 
 ## Summary of Notation
 
@@ -280,11 +280,11 @@ The algebra has identity $e_0$ and is neither commutative nor associative. Its a
 | $\mathbb{O}$ | The octonion algebra, $\dim_{\mathbb{R}} = 8$ |
 | $e_0 = 1, e_1,\dots,e_7$ | Basis, $e_k^2 = -e_0$ for $k\geq1$ |
 | $\mathbb{F}$, $(a,b,c)$ | Fano plane and its cyclically ordered lines |
-| $\tilde o^{\natural}$ | Conjugation, $e_0^{\natural} = e_0$, $e_k^{\natural} = -e_k$, $(\tilde o\tilde p)^{\natural} = \tilde p^{\natural} \tilde o^{\natural}$ |
-| $\operatorname{Sc}(\tilde o)$, $\operatorname{Vect}(\tilde o)$ | Scalar and vector parts, $\operatorname{Im}\mathbb{O} = \operatorname{Vect}(\mathbb{O})$ |
-| $\lvert \tilde o\rvert^2 = \tilde o \tilde o^{\natural} = \tilde o^{\natural}\tilde o = \sum_ko_k^2$ | Quadratic norm (developed) |
-| $[\tilde o,\tilde p,\tilde r] = (\tilde o\tilde p)\tilde r - \tilde o(\tilde p\tilde r)$ | Associator, alternating |
-| $\tilde o\tilde p\tilde o = (\tilde o\tilde p)\tilde o$ | Abbreviation in the Moufang identities |
+| $o^{\natural}$ | Conjugation, $e_0^{\natural} = e_0$, $e_k^{\natural} = -e_k$, $(op)^{\natural} = p^{\natural} o^{\natural}$ |
+| $\operatorname{Sc}(o)$, $\operatorname{Vect}(o)$ | Scalar and vector parts, $\operatorname{Im}\mathbb{O} = \operatorname{Vect}(\mathbb{O})$ |
+| $\lvert o\rvert^2 = o o^{\natural} = o^{\natural}o = \sum_ko_k^2$ | Quadratic norm (developed) |
+| $[o,p,r] = (op)r - o(pr)$ | Associator, alternating |
+| $opo = (op)o$ | Abbreviation in the Moufang identities |
 | $\mathrm{CD}(A)$ | Cayley–Dickson double of $A$ |
 | $\mathbb{O} = \mathrm{CD}(\mathbb{H}) = \mathbb{H}\oplus\mathbb{H}$ | The doubling construction |
 | $\operatorname{Der}(\mathbb{O}) = \mathrm{G}_2$, $\operatorname{Aut}(\mathbb{O}) = G_2$ | Derivation algebra and automorphism group |

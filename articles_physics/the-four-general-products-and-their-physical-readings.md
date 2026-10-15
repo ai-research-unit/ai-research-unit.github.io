@@ -52,7 +52,7 @@ decides the composition and the first the form, is the Table of the Slots of *Co
 General Products*. The signature table of the four scalar forms on the remarkable subspaces,
 which is where the effect of the first slot on the form is quantified, compares the four blocks with one
 another and so belongs to this article rather than to any of them; it is in §*Remarkable Subspaces*. The
-field of $B$ alone is *The General Plain Bilinear Product on the Biquaternion Space*, the entry article of the block of
+field of $B$ alone is *The Bilinear Product on the Biquaternion Space*, the entry article of the block of
 the algebra over $\mathbb{C}$, where the restriction of $B$ to the remarkable subspaces is read.
 
 **This article is also the place where the four are compared with one another.** Each block reads one
@@ -302,7 +302,7 @@ ${}^{\natural}$ and whose second slot is trivial.**
 That is the precise sense in which the quaternionic product is the product of the *interval*: it is the
 unique product of the four under which the square of an element is a scalar, and the scalar it returns
 is the biquaternion norm. The interval, the mass shell, the four-velocity and the inverse are owned by
-*The Interval as the Square and the Charge of the Material Composition* and are not restated here; what this article records is that the
+*The Biquaternioid General Quaternionic Algebra (GQA) over $\mathbb{C}$* and are not restated here; what this article records is that the
 interval is read off a product rather than attached to the space, and that the product is selected by
 its slots.
 
@@ -561,7 +561,7 @@ jobs and they compose into a single rule. The **second** slot's star makes the f
 plain slot is positive and carries the probability, the quaternionic slot is indefinite and carries the
 causal and gauge metric, and one principle — read the first slot without or with ${}^{\natural}$ —
 distinguishes the state side from the transformation side of the whole grid. The two metrics of a single
-element (*Mass, Rank and the Positivity of the Dagger*) are the two outcomes of that one principle.
+element (*The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$*) are the two outcomes of that one principle.
 
 **Geometry and symmetry are complementary, and no single product carries both.** The comparison makes a
 division visible that no block states: the **metric** lives in the symmetric, order-free layer and the
@@ -592,7 +592,7 @@ $H=-B$ on $\mathbb{M}_-$ does not make the general plain bilinear product a pair
 
 Three further readings of the grid are recorded here, each under a name of its own and each labelled an interpretation rather than a theorem; the counts they rest on are the body's.
 
-- **Twelve-to-ten measure.** The fall of the twelve operations to ten on the real part is read as a **measure of the complex structure** the grid carries: two distinctions are lost when the coefficients are restricted to the reals, and the count $12$ against $10$ is the algebraic size of the complex structure of the framework. The interpretation is the grid-level counterpart of *classical blindness* in *A Bracket Invisible on the Real Forms: the Complex Witness of the Jacobi Failure*, and its boundary is that the count is a count of operations and not a measure of a physical complexification.
+- **Twelve-to-ten measure.** The fall of the twelve operations to ten on the real part is read as a **measure of the complex structure** the grid carries: two distinctions are lost when the coefficients are restricted to the reals, and the count $12$ against $10$ is the algebraic size of the complex structure of the framework. The interpretation is the grid-level counterpart of *classical blindness* in *The Biquaternioid Antisymmetric Quaternionic Sesqualgebra (AQS) over $\mathbb{C}$*, and its boundary is that the count is a count of operations and not a measure of a physical complexification.
 - **Involution grid.** The four general products are read as the **four cells the two slots admit**: the identity or the natural conjugation ${}^{\natural}$ in the first slot and the identity or the star ${}^{*}$ in the second, and never ${}^{*}$ in the first nor ${}^{\natural}$ in the second, which is the rule of §*The Two Slots*. The name makes the grid a single object with two dials and not a list of four constructions. Its boundary is the corpus's own: the twelve unused slot pairs are not transposes or conjugates of the four used ones, so the grid of four is a genuine restriction of the algebra and not a redundancy of naming, and the four cells are therefore **not** the orbit of one product under the two involutions.
 - **Dial principle.** The rule that the first slot's natural conjugation decides between the definite form of the state side and the indefinite form of the transformation side is read as the **dial principle** of the framework: one dial separates the state side from the transformation side of the whole grid, and the two metrics of a single element are its two outcomes. The name is given here so that the principle can be cited as a single rule; the boundary is that the principle is a statement about the forms and not a derivation of the two jobs. The dial is a **reflection** — it negates the three vector coordinates and fixes the scalar direction, so it is a change of frame in the strict sense — and it is the algebraic sibling, and not the equal, of the framework's **Wick rotation**, which is multiplication by the central imaginary and a quarter-turn exchange of the two sectors (*Other Remarkable Subspaces*, *Interpretation of the Wick Rotation in the Biquaternion Universe*). The dial is an involution and the Wick rotation has order four; the rotation is central and therefore commutes with the multiplication, while the dial is an anti-automorphism that reverses the order of a product and acts on one argument of it. Only the dial is a slot of a product, and it is that slot — and not the rotation — that the grid's metric is made of.
 
@@ -744,7 +744,7 @@ step from an algebra to its sesqualgebra, and **the interpretation proposed for 
 classical composition of operations is replaced by a pairing that can be squared into a probability.
 
 **Interpretation (the star is the Riesz duality of the pairing).** The second slot is where the conjugation enters, and it changes the linearity of the form. Read without a conjugation, the product is $\mathbb{C}$-bilinear and its form pairs two elements linearly; read with the star, the Hermitian form
-$H$ (*The Hermitian Form as a Product: Positivity and the Real Part of the Born Pairing*) is linear in the first argument and conjugate-linear in the second, so the map that sends an element to its pairing against a fixed other, $\tilde Q\mapsto H(\cdot,\tilde Q)$, is **anti-linear** and is exactly the **Riesz map** that identifies the algebra with its dual. The second slot is therefore the conjugate-linear slot, and the second factor is read as the **bra** of the first. Read this way the Born pairing is not an added structure but a **choice of slot** — the star chooses the anti-linear side — and an amplitude is a number read from the pairing of an element with a dual element. The interpretation is labelled: the star supplies the Hilbert structure and the identification of the dual, and no equation of motion and no measure.
+$H$ (*The Biquaternioid Symmetric Plain Sesqualgebra (SPS) over $\mathbb{C}$*) is linear in the first argument and conjugate-linear in the second, so the map that sends an element to its pairing against a fixed other, $\tilde Q\mapsto H(\cdot,\tilde Q)$, is **anti-linear** and is exactly the **Riesz map** that identifies the algebra with its dual. The second slot is therefore the conjugate-linear slot, and the second factor is read as the **bra** of the first. Read this way the Born pairing is not an added structure but a **choice of slot** — the star chooses the anti-linear side — and an amplitude is a number read from the pairing of an element with a dual element. The interpretation is labelled: the star supplies the Hilbert structure and the identification of the dual, and no equation of motion and no measure.
 
 **Insert the natural conjugation in the first slot, and read the first factor through the map
 ${}^{\natural}$.** The form becomes indefinite on each sector, so a metric appears, and the coefficient
@@ -825,7 +825,7 @@ four objects this article maps, and they are placed in the order of the corpus's
 
 | block of the physics menu | the product | the form | the maths anchor |
 |---|---|---|---|
-| *Focus on the General Plain Algebra (GPA) of Biquaternions — Composition* | $\tilde P\tilde Q$ | $B$ | *Introduction to the General Plain Algebra of Biquaternions* |
+| *Focus on the General Plain Algebra (GPA) of Biquaternions — Composition* | $\tilde P\tilde Q$ | $B$ | *Introduction to the Biquaternion Algebra* |
 | *Focus on the General Plain Sesqualgebra (GPS) of Biquaternions — Probability* | $\tilde P\tilde Q^{*}$ | $H$ | *Introduction to the General Plain Sesqualgebra of Biquaternions* |
 | *Focus on the General Quaternionic Algebra (GQA) of Biquaternions — Causality* | $\tilde P^{\natural}\tilde Q$ | $N$ | *Introduction to the General Quaternionic Algebra of Biquaternions* |
 | *Focus on the General Quaternionic Sesqualgebra (GQS) of Biquaternions — Gauge* | $\tilde P^{\natural}\tilde Q^{*}$ | $K$ | *Introduction to the General Quaternionic Sesqualgebra of Biquaternions* |
@@ -918,7 +918,7 @@ The algebra fixes the grid and the signs; it does not fix the names.
 
 Three transversal interpretations can be added to the map. The sector exchange sorts the four products into two classes, the two bilinear products moving with the Wick exchange and the two sesquilinear products not, and a change of the local complex structure does the same, so the sorting itself is the framework's invariant criterion (*Conventions in the Biquaternion Universe*). And the exchange read as a clock adds an interpretation of the temporal product: the quarter turn of the complex time sector is the tick, whose reference and period are supplied and whose arrow and rate are not (*Each Sector Is the Other's Clock: the Sector Exchange as Relational Time*). A third interpretation is the exchange-invariant tensor square: because a tensor square of a bilinear form carries no sign of the sector, the framework's correlations are **between** the rows and not inside one of them, entanglement is not a fifth job, and the partial trace of a subsystem lives on the tensor square rather than on a row.
 
-A fourth transversal interpretation is the sorting of the four forms by **causal content** into a cone-carrying pair and an achronal pair. The pair a form falls in is decided by its inertia on the material sector: the two indefinite forms, $N$ and $K$, carry the light cone, and the two definite forms, $B$ and $H$, carry none. Within the achronal pair $B$ is the negative definite member and $H$ the positive definite one, the two signs of the Euclidean square of the material sector, $B=-H$ there — the sign the central imaginary reverses on the bilinear forms and leaves alone on the sesquilinear ones. Read $B$ as the **achronal form**: on it no two distinct material events are null-separated, so it carries no signal and defines no cone. Boundary: $B$ is negative definite and is therefore not a state space, the probability living on $H$; the owner of $B$ as a positive interpretation is *Why the Material Composition Is Oriented and Cannot Measure*.
+A fourth transversal interpretation is the sorting of the four forms by **causal content** into a cone-carrying pair and an achronal pair. The pair a form falls in is decided by its inertia on the material sector: the two indefinite forms, $N$ and $K$, carry the light cone, and the two definite forms, $B$ and $H$, carry none. Within the achronal pair $B$ is the negative definite member and $H$ the positive definite one, the two signs of the Euclidean square of the material sector, $B=-H$ there — the sign the central imaginary reverses on the bilinear forms and leaves alone on the sesquilinear ones. Read $B$ as the **achronal form**: on it no two distinct material events are null-separated, so it carries no signal and defines no cone. Boundary: $B$ is negative definite and is therefore not a state space, the probability living on $H$; the owner of $B$ as a positive interpretation is *The Biquaternioid General Quaternionic Algebra (GQA) over $\mathbb{C}$*.
 
 ## Summary
 
@@ -981,7 +981,7 @@ Born pairing, positivity and the state space carried by the Hermitian form.
 - János Bognár, *Indefinite Inner Product Spaces* (Springer, 1974), for Krein spaces, the fundamental
 decomposition and the indefinite metric carried by the fourth product.
 - Mathematics article *The Four General Products of the Biquaternion $\mathbb{C}$ Space*
-(`articles_maths/the-four-general-products-of-the-biquaternion-c-space.md`), for the four general products and their
+(`articles_maths/the-four-general-products-of-the-biquaternioid-c-space.md`), for the four general products and their
 definitions.
 - Mathematics article *Relations Between the Four General Products*
 (`articles_maths/relations-between-the-four-general-products.md`), for the scalar and vector
@@ -990,13 +990,13 @@ parts the four induce.
 (`articles_maths/comparison-between-the-four-general-products.md`), for the property table, the
 units, the monoids and the derived operation.
 - Mathematics article *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*
-(`articles_maths/the-4-forms-over-the-biquaternion-c-space.md`), for the four forms, their Gram
+(`articles_maths/the-4-forms-over-the-biquaternioid-c-space.md`), for the four forms, their Gram
 matrices and their signatures.
 - Mathematics article *The Square of the General Quaternionic Sesquilinear Product and the Two Halves*
 (`articles_maths/the-square-of-the-quaternionic-sesquilinear-product-and-the-two-halves.md`), for the
 sign of the square on the two sectors, $\tilde Q\star\tilde Q=\pm N(\tilde Q)e_0$.
-- Companion article *The General Plain Bilinear Product on the Biquaternion Space*, for the form $B$ alone on the remarkable subspaces.
-- Companion articles *The Interval as the Square and the Charge of the Material Composition*, *Mass, Rank and the Positivity of the Dagger* and *The Fourth Product and Its Indefinite Metric*, for $H$, $N$ and $K$ on the remarkable subspaces, and for the interval identity and the physical
+- Companion article *The Bilinear Product on the Biquaternion Space*, for the form $B$ alone on the remarkable subspaces.
+- Companion articles *The Biquaternioid General Quaternionic Algebra (GQA) over $\mathbb{C}$*, *The Biquaternioid General Plain Sesqualgebra (GPS) over $\mathbb{C}$* and *The Biquaternioid General Quaternionic Sesqualgebra (GQS) over $\mathbb{C}$*, for $H$, $N$ and $K$ on the remarkable subspaces, and for the interval identity and the physical
 interpretation of the quaternionic product.
 - Companion article *The Biquaternion Mathematics Corpus*, whose Algebra block this article
 accompanies and whose entries carry the mathematics menu.

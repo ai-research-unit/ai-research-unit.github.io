@@ -89,7 +89,7 @@ The two named classes of the block are the equations in which the algebraic norm
 
 **The idempotents.** The equation $\tilde Q\star\tilde Q=\tilde Q$ is the idempotent equation; its solution set, the non-orthogonality theorem and the comparison with the plain idempotents are *Idempotents of the Symmetric Quaternionic Sesqualgebra*. The algebraic norm contributes the scalar condition $K(\tilde\Pi,\tilde\Pi)=\alpha$, which forces the scalar coordinate of the nontrivial family.
 
-**Remark (the two classes and the algebraic norm).** The idempotents of the block lie in the real quaternion subspace, where the algebraic norm is real-valued; the nilpotents $\alpha(e_0+i\vec n)$ do not, and their algebraic norm vanishes. Both classes are the meeting of the non-central algebraic norm of this article with the element theory of the block.
+**Remark (the two classes and the algebraic norm).** The idempotents of the block lie in the real quaternion subspace, where the algebraic norm is real-valued; the nilpotents $\alpha(e_0+i\hat u)$ do not, and their algebraic norm vanishes. Both classes are the meeting of the non-central algebraic norm of this article with the element theory of the block.
 
 **Remark (square zero is not isotropy).** The square-zero elements are strictly inside the isotropic set of $K$, which is $\{K(\tilde Q,\tilde Q)=0\}$ and also contains the elements with a nonzero mixed vector part, for instance $e_0+e_1$, which is regular. The isotropic structure is *The Isotropic Structure of the General Quaternionic Sesqualgebra*, and the zero divisors of the block are *Zero Divisors of the Symmetric Quaternionic Sesqualgebra*.
 
@@ -119,7 +119,7 @@ On the algebraic norm $\tilde Q\star\tilde Q$ of an element, the two actions giv
 
 **A square-zero element.** $\tilde Q=e_0+ie_1$: $K=1-1=0$ and the mixed term $-e_0\overline{(ie_1)}-\overline{e_0}(ie_1)=-(-i)e_1-(i)e_1=ie_1-ie_1=0$, so $\tilde Q\star\tilde Q=0$; here $\alpha=1$ and $\vec c=e_1$ with $|\vec c|^{2}=1=|\alpha|^{4}$.
 
-**An idempotent.** $\tilde Q=-\tfrac12e_0+\tfrac{\sqrt3}{2}e_1$: $|\vec n|^{2}=\tfrac34$ and $\tilde Q\star\tilde Q=\tilde Q$; the norm is $N(\tilde Q)=\tfrac14+\tfrac34=1$.
+**An idempotent.** $\tilde Q=-\tfrac12e_0+\tfrac{\sqrt3}{2}e_1$: $|\hat u|^2=1$ and $\tilde Q\star\tilde Q=\tilde Q$; the norm is $N(\tilde Q)=\tfrac14+\tfrac34=1$.
 
 **The two halves at a vector.** $\tilde Q=e_1$: $\tilde Q^{\natural}\tilde Q^{*}=(-e_1)(-e_1)=-e_0$ and $\tilde Q^{*}\tilde Q^{\natural}=(-e_1)(-e_1)=-e_0$; the two orders coincide, the difference vanishes, and the algebraic norm is $-e_0$.
 
@@ -138,18 +138,18 @@ The algebraic norm of the block is the real element $\tilde Q\star\tilde Q=K(\ti
 | $e_1$, $e_1+ie_2$; $e_0+e_1$ | the two central witnesses; the non-central witness |
 | $\tilde Q^{\natural}\tilde Q^{*}$, $\tilde Q^{*}\tilde Q^{\natural}$ | the two halves of the algebraic norm, sum $2\tilde Q\star\tilde Q$, difference $2\vec Q\times\overline{\vec Q}$ |
 | $\alpha e_0+(i\alpha/|\alpha|^{2})\vec c$, $|\vec c|^{2}=|\alpha|^{4}$ | the square-zero elements, computed in the nilpotent server |
-| $-\tfrac12e_0+\vec n$, $|\vec n|^{2}=\tfrac34$ | the idempotents off $0$ and $e_0$, computed in the idempotent server |
+| $-\tfrac12e_0+\tfrac{\sqrt3}{2}\hat u$, $|\hat u|^2=1$ | the idempotents off $0$ and $e_0$, computed in the idempotent server |
 | $e_0\star\tilde Q=\tilde Q^{*}$, $\tilde Q\star e_0=\tilde Q^{\natural}$ | the two one-sided actions; no unit |
 
 ## Further Reading
 
-- *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra-of-biquaternions.md`), for the product and the reconstruction of the general quaternionic sesquilinear product from its two halves.
-- *Introduction to the General Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-general-quaternionic-sesqualgebra-of-biquaternions.md`), for the unsplit product and its square.
-- *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the antisymmetric companion and the table of the twelve operations.
+- *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra.md`), for the product and the reconstruction of the general quaternionic sesquilinear product from its two halves.
+- *Introduction to the General Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-general-quaternionic-sesqualgebra.md`), for the unsplit product and its square.
+- *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternioid-complex-space.md`), for the antisymmetric companion and the table of the twelve operations.
 - *The Two One-Sided Actions and the Absence of a Unit* (`articles_maths/the-two-one-sided-actions-and-the-absence-of-a-unit.md`), for the one-sided actions of the general quaternionic sesquilinear product.
 - *The Krein Gram Matrix and the Restrictions of the Form* (`articles_maths/the-krein-gram-matrix-and-the-restrictions-of-the-form.md`), for the form $K$ appearing as the scalar part of the algebraic norm.
 - *Nilpotents of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/nilpotents-of-the-symmetric-quaternionic-sesqualgebra.md`), the server that owns the square-zero elements carried by the algebraic norm.
 - *Idempotents of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/idempotents-of-the-symmetric-quaternionic-sesqualgebra.md`), the server that owns the idempotents carried by the algebraic norm.
 - *The Isotropic Structure of the General Quaternionic Sesqualgebra* (`articles_maths/the-isotropic-structure-of-the-general-quaternionic-sesqualgebra.md`), for the isotropic elements, of which the square-zero family is a part.
 - *Norm and Invertibility in the General Quaternionic Algebra* (`articles_maths/norm-and-invertibility-in-the-general-quaternionic-algebra.md`), for the norm $N$.
-- *Remarkable Subspaces under the Symmetric Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-symmetric-quaternionic-sesqualgebra-of-biquaternions.md`), for the closure of the remarkable subspaces under the product.
+- *Remarkable Subspaces under the Symmetric Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/remarkable-subspaces-under-the-symmetric-quaternionic-sesqualgebra.md`), for the closure of the remarkable subspaces under the product.

@@ -48,8 +48,8 @@ a generic element $\tilde P$ or $\tilde Q$. Throughout this article the product 
 
 **The results.** Every nilpotent of the block has index two, so
 $\tilde P\star(\tilde P\star\tilde P)=0$ exactly when $\tilde P\star\tilde P=0$, and the nonzero nilpotents
-are the square-zero elements $\alpha(e_0+i\vec n)$ with $\alpha\in\mathbb{C}^{\times}$ and
-$\vec n\in\mathbb{R}^3$ a unit vector. They form a real cone of real dimension four, and it contains
+are the square-zero elements $\alpha(e_0+i\hat u)$ with $\alpha\in\mathbb{C}^{\times}$ and
+$\hat u\in\mathbb{R}^3$ a unit vector. They form a real cone of real dimension four, and it contains
 no pure element. Every nonzero nilpotent is a non-pure zero divisor that annihilates itself on both sides,
 and the nilpotents are strictly smaller than the non-pure family, whose element $e_0+e_1+i\sqrt2\,e_2$ is not
 square-zero. No nonzero nilpotent is an idempotent, the two classes meeting only at the origin, and the three
@@ -57,8 +57,8 @@ conjugations permute the cone.
 
 ## The Roots of Zero
 
-**The roots of $0$ in the block are the origin and the elements $\alpha(e_0+i\vec n)$ with
-$\alpha\in\mathbb{C}^{\times}$ and $\vec n\in\mathbb{R}^3$ a unit vector; they form a real cone of
+**The roots of $0$ in the block are the origin and the elements $\alpha(e_0+i\hat u)$ with
+$\alpha\in\mathbb{C}^{\times}$ and $\hat u\in\mathbb{R}^3$ a unit vector; they form a real cone of
 dimension four that contains no pure element.**
 
 A **root of $0$** is an element $\tilde\Xi\in\mathbb{B}$ with $\tilde\Xi\star\tilde\Xi=0$, the square being
@@ -102,22 +102,22 @@ Let $\alpha\neq0$. The equation $\lVert\vec c\rVert^2=|\alpha|^4$ has the real s
 modulus $|\alpha|^2$, and every one of them is written
 
 $$
-\vec c=|\alpha|^2\vec n,
+\vec c=|\alpha|^2\hat u,
 \qquad
-\vec n\in\mathbb{R}^3,\quad
-\lVert\vec n\rVert=1 ,
+\hat u\in\mathbb{R}^3,\quad
+\lVert\hat u\rVert=1 ,
 $$
 
 so the root is
 
 $$
 \tilde\Xi=\alpha e_0+\frac{i\alpha}{|\alpha|^2}\vec c
-=\alpha e_0+i\alpha\vec n
-=\alpha\bigl(e_0+i\vec n\bigr).
+=\alpha e_0+i\alpha\hat u
+=\alpha\bigl(e_0+i\hat u\bigr).
 $$
 
-For a fixed direction $\vec n$ the coefficient $\alpha$ runs over the whole punctured plane, so the
-generator $e_0+i\vec n$ spans a complex line of square-zero elements; the union over the unit sphere
+For a fixed direction $\hat u$ the coefficient $\alpha$ runs over the whole punctured plane, so the
+generator $e_0+i\hat u$ spans a complex line of square-zero elements; the union over the unit sphere
 is the real cone of the next theorem.
 
 ### Statement of the Theorem
@@ -125,11 +125,11 @@ is the real cone of the next theorem.
 **Theorem (the roots of $0$).** The roots of $0$ in the block are the origin and the elements
 
 $$
-\alpha\bigl(e_0+i\vec n\bigr),
+\alpha\bigl(e_0+i\hat u\bigr),
 \qquad
 \alpha\in\mathbb{C}^{\times},\quad
-\vec n\in\mathbb{R}^3,\quad
-\lVert\vec n\rVert=1 .
+\hat u\in\mathbb{R}^3,\quad
+\lVert\hat u\rVert=1 .
 $$
 
 ### Verification
@@ -137,12 +137,12 @@ $$
 Each element of the display is a root of $0$: its scalar condition holds because
 
 $$
-K\bigl(\alpha(e_0+i\vec n),\alpha(e_0+i\vec n)\bigr)
-=|\alpha|^2-\lVert i\alpha\vec n\rVert^2
-=|\alpha|^2\bigl(1-\lVert\vec n\rVert^2\bigr)=0 ,
+K\bigl(\alpha(e_0+i\hat u),\alpha(e_0+i\hat u)\bigr)
+=|\alpha|^2-\lVert i\alpha\hat u\rVert^2
+=|\alpha|^2\bigl(1-\lVert\hat u\rVert^2\bigr)=0 ,
 $$
 
-and its vector condition holds because $\alpha\overline{(i\alpha n_k)}=-i|\alpha|^2n_k$ is purely
+and its vector condition holds because $\alpha\overline{(i\alpha u_k)}=-i|\alpha|^2u_k$ is purely
 imaginary for each $k$. Conversely the reduction shows that no other element is a root.
 
 ### The Roots of Zero and the Nilpotents
@@ -156,8 +156,8 @@ the same objects.
 
 ## The Nilpotents
 
-**The nonzero nilpotents of the block are the elements $\alpha(e_0+i\vec n)$ with
-$\alpha\in\mathbb{C}^{\times}$ and $\vec n\in\mathbb{R}^3$ a unit vector; they form a real cone of
+**The nonzero nilpotents of the block are the elements $\alpha(e_0+i\hat u)$ with
+$\alpha\in\mathbb{C}^{\times}$ and $\hat u\in\mathbb{R}^3$ a unit vector; they form a real cone of
 real dimension four, every one has index two, and none is an idempotent.**
 
 ### The Definition
@@ -235,7 +235,7 @@ exactly its square-zero elements, the cone of §*Statement of the Theorem*.
 and "some power vanishes" is the same as "the square vanishes".
 
 **Corollary (the shape of the set).** The nonzero nilpotents are a real cone of real dimension four: the
-parameter $\alpha$ runs over the punctured plane, of real dimension two, and the direction $\vec n$
+parameter $\alpha$ runs over the punctured plane, of real dimension two, and the direction $\hat u$
 over the unit sphere, of real dimension two.
 
 ### The Nilpotents and the Zero Divisors
@@ -253,12 +253,12 @@ on either side; both factors are nonzero by hypothesis. The two-sidedness is
 *Zero Divisors of the Symmetric Quaternionic Sesqualgebra*.
 
 **Theorem (the nilpotents are non-pure zero divisors).** A nilpotent
-$\tilde\Upsilon=\alpha(e_0+i\vec n)$ has scalar part $\alpha\neq0$ and central square
-$C(\tilde\Upsilon)=\alpha^2(1-\lVert\vec n\rVert^2)=0$; so it is a zero divisor of the block by the
+$\tilde\Upsilon=\alpha(e_0+i\hat u)$ has scalar part $\alpha\neq0$ and central square
+$C(\tilde\Upsilon)=\alpha^2(1-\lVert\hat u\rVert^2)=0$; so it is a zero divisor of the block by the
 non-pure criterion, and it is not in the pure family.
 
-*Proof.* $C(\alpha(e_0+i\vec n))=\alpha^2(1+\lVert i\vec n\rVert^2)=\alpha^2(1-\lVert\vec n\rVert^2)=0$
-because $\lVert\vec n\rVert=1$.
+*Proof.* $C(\alpha(e_0+i\hat u))=\alpha^2(1+\lVert i\hat u\rVert^2)=\alpha^2(1-\lVert\hat u\rVert^2)=0$
+because $\lVert\hat u\rVert=1$.
 
 The inclusion is strict: $C$ vanishes on the whole non-pure family $\{Q_0\neq0,\ C(\tilde Q)=0\}$, and the
 element
@@ -296,14 +296,14 @@ orbits by the real-valued coefficient.**
 The three conjugations act on the nilpotent cone by permuting its parameters, and the cone is invariant under
 each of them.
 
-| conjugation | value on $\tilde\Upsilon=\alpha(e_0+i\vec n)$ |
+| conjugation | value on $\tilde\Upsilon=\alpha(e_0+i\hat u)$ |
 |---|---|
-| natural ${}^{\natural}$ | $\alpha(e_0-i\vec n)$, the direction reversed |
-| complex $\bar{\cdot}$ | $\overline{\alpha}(e_0-i\vec n)$, the direction reversed and the coefficient conjugated |
-| star ${}^{*}={}^{\natural}\circ\bar{\cdot}$ | $\overline{\alpha}(e_0+i\vec n)$, the coefficient conjugated |
+| natural ${}^{\natural}$ | $\alpha(e_0-i\hat u)$, the direction reversed |
+| complex $\bar{\cdot}$ | $\overline{\alpha}(e_0-i\hat u)$, the direction reversed and the coefficient conjugated |
+| star ${}^{*}={}^{\natural}\circ\bar{\cdot}$ | $\overline{\alpha}(e_0+i\hat u)$, the coefficient conjugated |
 
-Every value is again of the form $\alpha'(e_0+i\vec n')$ with $\alpha'\in\mathbb{C}^{\times}$ and
-$\vec n'$ a real unit vector, so each conjugation is a bijection of the cone onto itself; the star
+Every value is again of the form $\alpha'(e_0+i\hat u')$ with $\alpha'\in\mathbb{C}^{\times}$ and
+$\hat u'$ a real unit vector, so each conjugation is a bijection of the cone onto itself; the star
 fixes the direction and conjugates the coefficient, and it fixes a nonzero nilpotent exactly when $\alpha$ is
 real. The class is a real cone of real dimension four, and it is decomposed into the orbits of the star by the
 real-valued coefficient.
@@ -327,9 +327,9 @@ $e_1\star e_2=0$, and it is not a nilpotent, since $e_1\star e_1=-e_0$.
 ## Summary
 
 The roots of $0$ in the block are the origin together with the nilpotent cone, the elements
-$\alpha(e_0+i\vec n)$ with $\alpha\in\mathbb{C}^{\times}$ and $\vec n\in\mathbb{R}^3$ a unit
-vector, a real cone of real dimension four; for a fixed direction $\vec n$ the generator
-$e_0+i\vec n$ spans a complex line of square-zero elements. The vector subspace contains no nonzero
+$\alpha(e_0+i\hat u)$ with $\alpha\in\mathbb{C}^{\times}$ and $\hat u\in\mathbb{R}^3$ a unit
+vector, a real cone of real dimension four; for a fixed direction $\hat u$ the generator
+$e_0+i\hat u$ spans a complex line of square-zero elements. The vector subspace contains no nonzero
 root of $0$.
 
 The nilpotent of the block has index two and no other: $\tilde P\star(\tilde P\star\tilde P)=0$ holds exactly
@@ -348,7 +348,7 @@ cone, the star conjugating the coefficient and fixing the direction.
 | $\tilde\Upsilon$ | a nilpotent of the block; index two, hence square-zero |
 | $\tilde\Xi\star\tilde\Xi=0$ | the root equation of $0$ in the block |
 | $\alpha\overline{\vec x}\in i\mathbb{R}^3,\ K(\tilde\Xi,\tilde\Xi)=0$ | the two conditions, from the diagonal |
-| $\alpha(e_0+i\vec n)$ | the nonzero roots of $0$, the nilpotent cone, of real dimension four |
+| $\alpha(e_0+i\hat u)$ | the nonzero roots of $0$, the nilpotent cone, of real dimension four |
 | $\tilde P\star(\tilde P\star\tilde P)=0\Leftrightarrow\tilde P\star\tilde P=0$ | the index-two theorem |
 | $C(\tilde\Upsilon)=\sum_\mu\Upsilon_\mu^2=0$ | the central square, vanishing on the nilpotents |
 | $\{Q_0=0\}$ | the pure zero divisors, containing no nonzero nilpotent |
@@ -356,11 +356,11 @@ cone, the star conjugating the coefficient and fixing the direction.
 
 ## Further Reading
 
-- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternion-c-space.md`), §*The Nilpotent* and §*Powers, the Square and the Roots*, for the definition, the index and the left-nested power of a non-associative product.
+- *Definitions for the Study of the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/definitions-for-the-study-of-the-algebraic-structures-over-the-biquaternioid-c-space.md`), §*The Nilpotent* and §*Powers, the Square and the Roots*, for the definition, the index and the left-nested power of a non-associative product.
 - *Square Roots of One and the Idempotents of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/square-roots-of-one-and-the-idempotents-of-the-symmetric-quaternionic-sesqualgebra.md`), for the first central value and the class disjoint from the nilpotents.
 - *Square Roots of a General Element in the Symmetric Quaternionic Sesqualgebra* (`articles_maths/square-roots-of-a-general-element-in-the-symmetric-quaternionic-sesqualgebra.md`), for the equation $\tilde\Xi\star\tilde\Xi=\tilde R$ for an arbitrary value, of which the central value here is the case $\tilde R=0$.
 - *Zero Divisors of the Symmetric Quaternionic Sesqualgebra* (`articles_maths/zero-divisors-of-the-symmetric-quaternionic-sesqualgebra.md`), for the criterion and the two families that the nilpotents sit inside.
-- *Square Roots of Zero and the Nilpotents of the General Plain Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-general-plain-algebra.md`), for the pure nilpotent cone of the plain product.
-- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternion-c-space.md`), for the square-zero set of the product whose symmetric part is the block.
+- *Square Roots of Zero and the Nilpotents of the General Plain Algebra* (`articles_maths/square-roots-of-zero-and-the-nilpotents-of-the-biquaternion-algebra.md`), for the pure nilpotent cone of the plain product.
+- *Zero Divisors in the Algebraic Structures over the Biquaternion $\mathbb{C}$ Space* (`articles_maths/zero-divisors-in-the-algebraic-structures-over-the-biquaternioid-c-space.md`), for the square-zero set of the product whose symmetric part is the block.
 - *The Isotropic Structure of the General Quaternionic Sesqualgebra* (`articles_maths/the-isotropic-structure-of-the-general-quaternionic-sesqualgebra.md`), for the isotropic set of the Krein form, which is strictly larger than the cone.
-- *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra-of-biquaternions.md`), for the product and its diagonal.
+- *Introduction to the Symmetric Quaternionic Sesqualgebra of Biquaternions* (`articles_maths/introduction-to-the-symmetric-quaternionic-sesqualgebra.md`), for the product and its diagonal.

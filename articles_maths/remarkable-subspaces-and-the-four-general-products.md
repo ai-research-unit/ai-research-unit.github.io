@@ -284,6 +284,6 @@ So three of the passages of the adapted reading land in the list — the centre 
 
 - *Introduction to the Remarkable Subspaces* (`articles_maths/introduction-to-the-remarkable-subspaces.md`), for the remarkable subspaces themselves, one to a section
 - *Comparison of the Remarkable Subspaces* (`articles_maths/comparison-of-the-remarkable-subspaces.md`), for the coordinate blocks, the intersections and the sums of the remarkable subspaces
-- *The Four General Products of the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-four-general-products-of-the-biquaternion-c-space.md`), for the definition of the four general products and their scalar–vector forms
-- *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternion-complex-space.md`), for the symmetric and antisymmetric halves of each of the four general products, the Jordan algebra of the whole algebra, the Jordan identity, the trace form and the Peirce decomposition
+- *The Four General Products of the Biquaternion $\mathbb{C}$ Space* (`articles_maths/the-four-general-products-of-the-biquaternioid-c-space.md`), for the definition of the four general products and their scalar–vector forms
+- *The 12 Products of the Biquaternion Complex Space* (`articles_maths/the-12-products-of-the-biquaternioid-complex-space.md`), for the symmetric and antisymmetric halves of each of the four general products, the Jordan algebra of the whole algebra, the Jordan identity, the trace form and the Peirce decomposition
 - *Relations Between the Four General Products* (`articles_maths/relations-between-the-four-general-products.md`), for the identities that link the four general products

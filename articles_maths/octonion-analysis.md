@@ -7,7 +7,7 @@ This article is the analysis slot of the octonion system. It sets up the differe
 
 The article is the octonion member of the analysis slots of this Part, and it follows the model of the analysis of the quaternions and the biquaternions and of the split biquaternions: *Quaternion Analysis* and *Split-Biquaternion Analysis*, with the differential operators and the integration of *Clifford Modules and the Twisted Cauchy–Riemann Operator*. The general theory of hypercomplex analysis in the associative case is that of the Part III companions *Clifford Analysis*, *Clifford Modules and the Twisted Cauchy–Riemann Operator* and *Clifford Analysis in Several Variables*; the present article is the octonion case and states where non-associativity changes the theory rather than restating the general theory. Integration, the special functions and the harmonic analysis are not covered here.
 
-**Conventions.** As throughout the octonion articles, $\mathbb{O}$ has basis $e_0 = 1,e_1,\dots,e_7$ with $e_k^2 = -e_0$ for $k\geq1$, $\tilde o = \sum_{k=0}^{7}o_ke_k$ is a variable octonion, $\partial_k = \partial/\partial o_k$, the conjugation is $\tilde o^{\natural}$ with $(\tilde o\tilde p)^{\natural} = \tilde p^{\natural} \tilde o^{\natural}$, the inner product is $\langle \tilde o,\tilde p\rangle = \operatorname{Sc}(\tilde o \tilde p^{\natural})$, and $\lvert \tilde o\rvert^2 = \langle \tilde o,\tilde o\rangle$ is the norm. The associator is $[\tilde o,\tilde p,\tilde r] = (\tilde o\tilde p)\tilde r - \tilde o(\tilde p\tilde r)$ and the commutator $[\tilde o,\tilde p] = \tilde o\tilde p - \tilde p\tilde o$. Functions are octonion-valued on a domain of $\mathbb{R}^8$ identified with $\mathbb{O}$ by the basis.
+**Conventions.** As throughout the octonion articles, $\mathbb{O}$ has basis $e_0 = 1,e_1,\dots,e_7$ with $e_k^2 = -e_0$ for $k\geq1$, $o = \sum_{k=0}^{7}o_ke_k$ is a variable octonion, $\partial_k = \partial/\partial o_k$, the conjugation is $o^{\natural}$ with $(op)^{\natural} = p^{\natural} o^{\natural}$, the inner product is $\langle o,p\rangle = \operatorname{Sc}(o p^{\natural})$, and $\lvert o\rvert^2 = \langle o,o\rangle$ is the norm. The associator is $[o,p,r] = (op)r - o(pr)$ and the commutator $[o,p] = op - po$. Functions are octonion-valued on a domain of $\mathbb{R}^8$ identified with $\mathbb{O}$ by the basis.
 
 ## The Cauchy–Riemann Operator
 
@@ -40,7 +40,7 @@ The factorisation is the same as in the quaternion and biquaternion cases, and i
 **Definition.** The **fundamental solution** of $D$ is the function
 
 $$
-E(\tilde o) = \frac{1}{\omega_7}\frac{\tilde o^{\natural}}{\lvert \tilde o\rvert^8}, \qquad \tilde o\neq0,
+E(o) = \frac{1}{\omega_7}\frac{o^{\natural}}{\lvert o\rvert^8}, \qquad o\neq0,
 $$
 
 where $\omega_7 = \operatorname{vol}(S^7) = \pi^4/3$ is the volume of the unit sphere.
@@ -53,9 +53,9 @@ $$
 
 and $\Delta_8E = 0$ away from the origin.
 
-*Proof.* Away from the origin, $D(\tilde o^{\natural}/\lvert \tilde o\rvert^8) = 0$ and $(\tilde o^{\natural}/\lvert \tilde o\rvert^8)D = 0$, by the same computation as in the associative Clifford case: $\tilde o^{\natural}$ is the product of seven-tuples of basis elements... the identity is the one used to prove that $\tilde o^{\natural}/\lvert \tilde o\rvert^n$ is the kernel of the Cauchy–Riemann operator in $\mathbb{R}^n$, and the computation uses the Clifford relations and the identity $\sum_ko_ke_k = \tilde o$, $\sum_k e_ko_k = \tilde o^{\natural}$ for monomials; it requires no associativity because only products of two basis elements are formed at each step. The constant $\omega_7$ is chosen so that $\int_{\lvert \tilde o\rvert = 1}\tilde o^{\natural}\,dS/n = 1$ in the distributional sense; the constant is the volume of the unit sphere, computed as $\pi^4/3$ in *Octonion Norm and Invertibility*.
+*Proof.* Away from the origin, $D(o^{\natural}/\lvert o\rvert^8) = 0$ and $(o^{\natural}/\lvert o\rvert^8)D = 0$, by the same computation as in the associative Clifford case: $o^{\natural}$ is the product of seven-tuples of basis elements... the identity is the one used to prove that $o^{\natural}/\lvert o\rvert^n$ is the kernel of the Cauchy–Riemann operator in $\mathbb{R}^n$, and the computation uses the Clifford relations and the identity $\sum_ko_ke_k = o$, $\sum_k e_ko_k = o^{\natural}$ for monomials; it requires no associativity because only products of two basis elements are formed at each step. The constant $\omega_7$ is chosen so that $\int_{\lvert o\rvert = 1}o^{\natural}\,dS/n = 1$ in the distributional sense; the constant is the volume of the unit sphere, computed as $\pi^4/3$ in *Octonion Norm and Invertibility*.
 
-The kernel reproduces the quaternionic situation, where the analogous function is $\tilde o^{\natural}/\lvert \tilde o\rvert^4$, and it is the kernel out of which the Cauchy formula of the next section is built. What differs is not the kernel but the class of functions.
+The kernel reproduces the quaternionic situation, where the analogous function is $o^{\natural}/\lvert o\rvert^4$, and it is the kernel out of which the Cauchy formula of the next section is built. What differs is not the kernel but the class of functions.
 
 ## Monogenic Functions
 
@@ -71,25 +71,25 @@ and the space of **right-monogenic** functions $\mathcal{M}_R(\Omega)$ is define
 
 **Proposition.** On a domain $\Omega$ the following hold.
 
-1. The spaces $\mathcal{M}_L(\Omega)$ and $\mathcal{M}_R(\Omega)$ are real vector spaces of harmonic functions and are infinite-dimensional; the constants are monogenic, while the coordinate function $\tilde o\mapsto \tilde o$ is not, since $D\tilde o = \sum_{k=0}^{7}e_k^2 = -6e_0$, and $\tilde o\mapsto \tilde o^{\natural}$ is not either, since $D \tilde o^{\natural} = 8e_0$.
-2. The **radial reduction**: for functions of the form $f = u(r) + v(r)\tilde o^{\natural}$ with $r = \lvert \tilde o\rvert$,
+1. The spaces $\mathcal{M}_L(\Omega)$ and $\mathcal{M}_R(\Omega)$ are real vector spaces of harmonic functions and are infinite-dimensional; the constants are monogenic, while the coordinate function $o\mapsto o$ is not, since $Do = \sum_{k=0}^{7}e_k^2 = -6e_0$, and $o\mapsto o^{\natural}$ is not either, since $D o^{\natural} = 8e_0$.
+2. The **radial reduction**: for functions of the form $f = u(r) + v(r)o^{\natural}$ with $r = \lvert o\rvert$,
 
 $$
-Df = \frac{u'}{r}\,\tilde o + \left(8v + rv'\right),
+Df = \frac{u'}{r}\,o + \left(8v + rv'\right),
 $$
 
-so that $f$ is left-monogenic if and only if $u$ is constant and $v = c\lvert \tilde o\rvert^{-8}$. The fundamental solution $E$ is the case $u = 0$, $v = \lvert \tilde o\rvert^{-8}/\omega_7$.
-3. The same computation for $g = u(r) + v(r)\tilde o$ gives $Dg = \frac{u'}{r}\tilde o + \frac{v'}{r}\tilde o^2 + v\sum_{k=0}^{7}e_k^2$, and since $\tilde o^2 = 2o_0\tilde o - \lvert \tilde o\rvert^2e_0$ is not a scalar for general $\tilde o$, no nonconstant radial function of this ansatz is monogenic; only the $\tilde o^{\natural}$ ansatz produces radial solutions.
+so that $f$ is left-monogenic if and only if $u$ is constant and $v = c\lvert o\rvert^{-8}$. The fundamental solution $E$ is the case $u = 0$, $v = \lvert o\rvert^{-8}/\omega_7$.
+3. The same computation for $g = u(r) + v(r)o$ gives $Dg = \frac{u'}{r}o + \frac{v'}{r}o^2 + v\sum_{k=0}^{7}e_k^2$, and since $o^2 = 2o_0o - \lvert o\rvert^2e_0$ is not a scalar for general $o$, no nonconstant radial function of this ansatz is monogenic; only the $o^{\natural}$ ansatz produces radial solutions.
 
-*Proof.* (1) The constants are annihilated by $D$, and $D\tilde o$ and $D \tilde o^{\natural}$ are the displayed computations, using $e_0^2 = e_0$ and $e_k^2 = -e_0$ for $k\geq1$. (2) Differentiating, $\partial_kf = u'o_k/r + v'o_k \tilde o^{\natural}/r + v e_k^{\natural}$, so
+*Proof.* (1) The constants are annihilated by $D$, and $Do$ and $D o^{\natural}$ are the displayed computations, using $e_0^2 = e_0$ and $e_k^2 = -e_0$ for $k\geq1$. (2) Differentiating, $\partial_kf = u'o_k/r + v'o_k o^{\natural}/r + v e_k^{\natural}$, so
 
 $$
-Df = \frac{u'}{r}\sum_ke_ko_k + \frac{v'}{r}\sum_ko_k(e_k \tilde o^{\natural}) + v\sum_ke_k e_k^{\natural} = \frac{u'}{r}\tilde o + \frac{v'}{r}\tilde o \tilde o^{\natural} + 8v ,
+Df = \frac{u'}{r}\sum_ke_ko_k + \frac{v'}{r}\sum_ko_k(e_k o^{\natural}) + v\sum_ke_k e_k^{\natural} = \frac{u'}{r}o + \frac{v'}{r}o o^{\natural} + 8v ,
 $$
 
-because $\sum_ke_ko_k = \tilde o$ for scalar coefficients $o_k$, because the associator with a scalar vanishes, and because $\sum_ke_k e_k^{\natural} = e_0 - \sum_{k\geq1}e_k^2 = 8e_0$. Since $\tilde o \tilde o^{\natural} = \lvert \tilde o\rvert^2 = r^2$, the display follows. (3) The second ansatz gives $\sum_ke_k(o_k\tilde o) = \tilde o^2$ in place of $\tilde o \tilde o^{\natural}$, and $\tilde o^2$ is scalar only when $\tilde o$ lies in a one-dimensional subspace, so no nonconstant radial solution arises.
+because $\sum_ke_ko_k = o$ for scalar coefficients $o_k$, because the associator with a scalar vanishes, and because $\sum_ke_k e_k^{\natural} = e_0 - \sum_{k\geq1}e_k^2 = 8e_0$. Since $o o^{\natural} = \lvert o\rvert^2 = r^2$, the display follows. (3) The second ansatz gives $\sum_ke_k(o_ko) = o^2$ in place of $o o^{\natural}$, and $o^2$ is scalar only when $o$ lies in a one-dimensional subspace, so no nonconstant radial solution arises.
 
-The radial reduction is worth isolating, since it is the source of the explicit examples and it shows how sharply the non-commutativity and non-associativity constrain them: the order of the factors in the ansatz matters, because $\tilde o \tilde o^{\natural}$ is a scalar while $\tilde o\tilde o$ is not, and the associator-free step $\sum_ke_k(o_k \tilde o^{\natural}) = \tilde o \tilde o^{\natural}$ is the one that makes the kernel monogenic.
+The radial reduction is worth isolating, since it is the source of the explicit examples and it shows how sharply the non-commutativity and non-associativity constrain them: the order of the factors in the ansatz matters, because $o o^{\natural}$ is a scalar while $oo$ is not, and the associator-free step $\sum_ke_k(o_k o^{\natural}) = o o^{\natural}$ is the one that makes the kernel monogenic.
 
 ### The Failure of the Leibniz Rule
 
@@ -145,31 +145,31 @@ Since the algebra is neither commutative nor associative, the classes are not th
 
 ## The Cauchy Integral Formula
 
-**Theorem (Cauchy–Pompeiu).** Let $\Omega\subset\mathbb{O}$ be a bounded domain with smooth boundary $\partial\Omega$ oriented as the boundary of $\Omega$, let $n(\tilde p) = \sum_kp_ke_k$ be the outward unit normal at $\tilde p\in\partial\Omega$ in the identification of $\mathbb{R}^8$ with $\mathbb{O}$, and let $dS$ be the surface measure. Then for every $f\in C^1(\bar\Omega)$ and every $\tilde o\in\Omega$,
+**Theorem (Cauchy–Pompeiu).** Let $\Omega\subset\mathbb{O}$ be a bounded domain with smooth boundary $\partial\Omega$ oriented as the boundary of $\Omega$, let $n(p) = \sum_kp_ke_k$ be the outward unit normal at $p\in\partial\Omega$ in the identification of $\mathbb{R}^8$ with $\mathbb{O}$, and let $dS$ be the surface measure. Then for every $f\in C^1(\bar\Omega)$ and every $o\in\Omega$,
 
 $$
-f(\tilde o) = \frac{1}{\omega_7}\int_{\partial\Omega}\frac{(\tilde p-\tilde o)^{\natural}}{\lvert \tilde p - \tilde o\rvert^8}\,n(\tilde p)\,f(\tilde p)\,dS(\tilde p) - \frac{1}{\omega_7}\int_{\Omega}\frac{(\tilde p-\tilde o)^{\natural}}{\lvert \tilde p - \tilde o\rvert^8}\,(Df)(\tilde p)\,dV(\tilde p).
+f(o) = \frac{1}{\omega_7}\int_{\partial\Omega}\frac{(p-o)^{\natural}}{\lvert p - o\rvert^8}\,n(p)\,f(p)\,dS(p) - \frac{1}{\omega_7}\int_{\Omega}\frac{(p-o)^{\natural}}{\lvert p - o\rvert^8}\,(Df)(p)\,dV(p).
 $$
 
 If $f$ is left-monogenic in $\Omega$, the second term vanishes and the **Cauchy integral formula** results:
 
 $$
-f(\tilde o) = \frac{1}{\omega_7}\int_{\partial\Omega}\frac{(\tilde p-\tilde o)^{\natural}}{\lvert \tilde p - \tilde o\rvert^8}\,n(\tilde p)\,f(\tilde p)\,dS(\tilde p), \qquad \tilde o\in\Omega .
+f(o) = \frac{1}{\omega_7}\int_{\partial\Omega}\frac{(p-o)^{\natural}}{\lvert p - o\rvert^8}\,n(p)\,f(p)\,dS(p), \qquad o\in\Omega .
 $$
 
-*Proof.* The formula is the standard Cauchy–Pompeiu formula for the octonionic Cauchy–Riemann operator: it follows from Stokes' theorem for the form $E(\tilde p-\tilde o)n(\tilde p)f(\tilde p)dS$, whose exterior derivative is computed with the product rule, and the resulting volume integrand is $E(\tilde p-\tilde o)(Df)(\tilde p)$ up to the correction terms, which are total derivatives and integrate to zero. The reader is referred to the sources cited for the details of the Stokes argument in the non-associative case. The passage to the monogenic case is the vanishing of the volume term.
+*Proof.* The formula is the standard Cauchy–Pompeiu formula for the octonionic Cauchy–Riemann operator: it follows from Stokes' theorem for the form $E(p-o)n(p)f(p)dS$, whose exterior derivative is computed with the product rule, and the resulting volume integrand is $E(p-o)(Df)(p)$ up to the correction terms, which are total derivatives and integrate to zero. The reader is referred to the sources cited for the details of the Stokes argument in the non-associative case. The passage to the monogenic case is the vanishing of the volume term.
 
 Two features of the formula are worth recording. First, the order of the factors is part of the statement: the kernel multiplies the normal on the left and the function on the left of that, and a right-monogenic version of the formula requires the conjugate arrangement of the factors given by the conjugacy of the two classes. Second, the formula holds although the algebra is not associative; its proof uses the Clifford relations and Stokes' theorem and does not require the product of two monogenic functions to be monogenic, which is why it survives the failure of the Leibniz rule recorded above.
 
 **Corollary (mean value).** For a left-monogenic function on a ball of radius $r$ centred at the origin,
 
 $$
-f(0) = \frac{1}{\omega_7r^7}\int_{\lvert \tilde p\rvert = r}f(\tilde p)\,dS(\tilde p),
+f(0) = \frac{1}{\omega_7r^7}\int_{\lvert p\rvert = r}f(p)\,dS(p),
 $$
 
 the integral being over the sphere of radius $r$, whose volume is $\omega_7r^7$; hence $f(0)$ is the mean value of $f$ over the sphere, and a non-constant monogenic function has no interior maximum of the modulus, so that the maximum principle holds.
 
-*Proof.* In the Cauchy formula on the ball, the kernel and the normal are $\tilde p^{\natural}/r^8$ and $n(\tilde p) = \tilde p/r$, and $\tilde p^{\natural}\tilde p = r^2$, so the integrand reduces to $f(\tilde p)/r^9 \cdot r^2 = f(\tilde p)/r^7$ up to the constant; dividing by $\omega_7$ gives the mean value. Harmonicity gives the maximum principle.
+*Proof.* In the Cauchy formula on the ball, the kernel and the normal are $p^{\natural}/r^8$ and $n(p) = p/r$, and $p^{\natural}p = r^2$, so the integrand reduces to $f(p)/r^9 \cdot r^2 = f(p)/r^7$ up to the constant; dividing by $\omega_7$ gives the mean value. Harmonicity gives the maximum principle.
 
 ## Comparison with the Associative Clifford Case
 
@@ -185,7 +185,7 @@ The comparison is therefore precise and asymmetric. The failure of the product o
 
 ## Summary
 
-The octonionic Cauchy–Riemann operator $D = \sum_{k=0}^{7}e_k\partial_k$, with conjugate $\bar D = \partial_0 - \sum_{k\geq1}e_k\partial_k$, is a first-order elliptic operator satisfying $D\bar D = \bar DD = \Delta_8$, so that every left- or right-monogenic function is harmonic. Its fundamental solution is $E(\tilde o) = \tilde o^{\natural}/(\omega_7\lvert \tilde o\rvert^8)$ with $\omega_7 = \pi^4/3$, homogeneous of degree $-7$, and the Cauchy–Pompeiu formula expresses a $C^1$ function on a domain by an integral over the boundary with the kernel $(\tilde p-\tilde o)^{\natural}/\lvert \tilde p-\tilde o\rvert^8$ multiplied on the left by the outward normal, together with a volume term involving $Df$; for left-monogenic functions only the boundary term remains, and the maximum principle follows.
+The octonionic Cauchy–Riemann operator $D = \sum_{k=0}^{7}e_k\partial_k$, with conjugate $\bar D = \partial_0 - \sum_{k\geq1}e_k\partial_k$, is a first-order elliptic operator satisfying $D\bar D = \bar DD = \Delta_8$, so that every left- or right-monogenic function is harmonic. Its fundamental solution is $E(o) = o^{\natural}/(\omega_7\lvert o\rvert^8)$ with $\omega_7 = \pi^4/3$, homogeneous of degree $-7$, and the Cauchy–Pompeiu formula expresses a $C^1$ function on a domain by an integral over the boundary with the kernel $(p-o)^{\natural}/\lvert p-o\rvert^8$ multiplied on the left by the outward normal, together with a volume term involving $Df$; for left-monogenic functions only the boundary term remains, and the maximum principle follows.
 
 Non-associativity enters the analysis at exactly one place, the product rule, and it changes the theory there. The Leibniz rule acquires the correction terms
 
@@ -200,14 +200,14 @@ which vanish identically only when the algebra is associative. Consequences: the
 | Symbol | Meaning |
 |---|---|
 | $\mathbb{O}$, $e_0,\dots,e_7$ | Octonion algebra and basis, $e_k^2 = -e_0$ for $k\geq1$ |
-| $\tilde o = \sum_ko_ke_k$, $\partial_k = \partial/\partial o_k$ | Octonion variable and partial derivatives |
+| $o = \sum_ko_ke_k$, $\partial_k = \partial/\partial o_k$ | Octonion variable and partial derivatives |
 | $D = \sum_{k=0}^{7}e_k\partial_k$ | Cauchy–Riemann operator |
 | $\bar D = \partial_0 - \sum_{k\geq1}e_k\partial_k$ | Conjugate operator, $D\bar D = \bar DD = \Delta_8$ |
-| $[\tilde o,\tilde p,\tilde r] = (\tilde o\tilde p)\tilde r - \tilde o(\tilde p\tilde r)$, $[\tilde o,\tilde p] = \tilde o\tilde p - \tilde p\tilde o$ | Associator and commutator |
+| $[o,p,r] = (op)r - o(pr)$, $[o,p] = op - po$ | Associator and commutator |
 | $\mathcal{M}_L(\Omega)$, $\mathcal{M}_R(\Omega)$ | Left- and right-monogenic functions, $Df = 0$, $fD = 0$ |
-| $E(\tilde o) = \tilde o^{\natural}/(\omega_7\lvert \tilde o\rvert^8)$ | Fundamental solution, $DE = ED = \delta_0$ |
+| $E(o) = o^{\natural}/(\omega_7\lvert o\rvert^8)$ | Fundamental solution, $DE = ED = \delta_0$ |
 | $\omega_7 = \pi^4/3$ | Volume of the unit sphere $S^7$ |
-| $n(\tilde p)$, $dS$, $dV$ | Outward unit normal, surface measure, volume measure |
+| $n(p)$, $dS$, $dV$ | Outward unit normal, surface measure, volume measure |
 | $\Delta_8$ | Laplacian of $\mathbb{R}^8$ |
 
 

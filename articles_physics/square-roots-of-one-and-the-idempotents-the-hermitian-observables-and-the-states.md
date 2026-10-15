@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Of the four general products of *The Four General Products of the Biquaternion $\mathbb{C}$ Space*, exactly one makes the biquaternion space $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ an associative unital $\mathbb{C}$-algebra: the general plain bilinear product $\tilde P\tilde Q$, the multiplication of the algebra, read throughout this article.
+Of the four general products of *The Four General Products of the Biquaternioid $\mathbb{C}$ Space*, exactly one makes the biquaternion space $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$ an associative unital $\mathbb{C}$-algebra: the general plain bilinear product $\tilde P\tilde Q$, the multiplication of the algebra, read throughout this article.
 
 The article reads that product at the central value $+1$. The **roots of $+1$** are the elements $\tilde\Xi\in\mathbb{B}$ with $\tilde\Xi^2=e_0$; the **idempotents** are the elements $\tilde\Pi$ with $\tilde\Pi^2=\tilde\Pi$. The two subjects are one subject, because the **halving map**
 
@@ -18,11 +18,11 @@ $$
 
 the two are a complete orthogonal pair, $\tilde\Pi_++\tilde\Pi_-=e_0$ and $\tilde\Pi_+\tilde\Pi_-=0$, the root is their difference, $\tilde\Xi=\tilde\Pi_+-\tilde\Pi_-$, and multiplication by the root acts by $+1$ on $\tilde\Pi_+$ and by $-1$ on $\tilde\Pi_-$. The pair, not the single idempotent, is the spine of the article: a root is an operator of square one, and its pair is the two projections onto its eigenspaces.
 
-The three families of roots, and the idempotents they carry, are the mathematics of *Square Roots of One and the Idempotents of the General Plain Algebra*: the trivial roots $\pm e_0$; the purely imaginary roots $\pm i\tilde\xi$ over the pure real quaternions $\tilde\xi$ with $\tilde\xi^2=-e_0$; and the non-trivial roots $\vec\xi+i\vec\xi'$ with $\vec\xi\neq0$ and two real conditions. That article owns them; they are cited and read here, not re-proved.
+The three families of roots, and the idempotents they carry, are the mathematics of *Square Roots of One and the Idempotents of the Biquaternion Algebra*: the trivial roots $\pm e_0$; the purely imaginary roots $\pm i\tilde\xi$ over the pure real quaternions $\tilde\xi$ with $\tilde\xi^2=-e_0$; and the non-trivial roots $\vec\xi+i\vec\xi'$ with $\vec\xi\neq0$ and two real conditions. That article owns them; they are cited and read here, not re-proved.
 
 **The physical interpretation.** The content added here is a reading. The **Hermitian roots of $+1$** — the trivial $\pm e_0$ and the purely imaginary family $\pm i\tilde\xi$ — are read as **Hermitian observables**, and the idempotents they carry as **states**. A Hermitian root is a Hermitian element whose square is the identity, an observable whose only values are $\pm1$; its two idempotents $\tilde\Pi_\pm$ are its two spectral projections, and they are the two pure states of the observable, because the Hermitian idempotents of the algebra are exactly the pure states of the informational sector. The observable and its two states are the two faces of one root. The roots of $-1$, read off the roots of $+1$ by the central imaginary, are the framework's **local complex structures**, and are the closing section of the article.
 
-The roots of $+1$ are the first of the three central values of the algebra; the roots of $0$ and the light cone are *Square Roots of Zero and the Nilpotents: the Light Cone*; the general quadratic is *Square Roots of a General Element in the General Plain Algebra: the Realisation*. The product and the algebra are *The Four General Products of the Biquaternion $\mathbb{C}$ Space* and *Introduction to the General Plain Algebra of Biquaternions*; the informational sector is *The Hermitian Subspace M₊ as the Informational Sector*; the pure states and the Bloch ball are *The Bloch Ball as the Trace-One Slice of the Future Light Cone* and *The Ontology of the Quantum State under the Biquaternion Framework*; the observables and their composition are *Observables as a Jordan Algebra: the Symmetric Plain Product and the Classical Composition*; the state as an idempotent is *The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent*; the projection reading of decoherence is *Decoherence as Idempotent Projection*; and the local complex structure is *The Local Complex Structure and the Speed of Light*.
+The roots of $+1$ are the first of the three central values of the algebra; the roots of $0$ and the light cone are *Square Roots of Zero and the Nilpotents: the Light Cone*; the general quadratic is *Square Roots of a General Element in the Biquaternion Algebra: the Realisation*. The product and the algebra are *The Four General Products of the Biquaternioid $\mathbb{C}$ Space* and *Introduction to the Biquaternion Algebra*; the informational sector is *The Hermitian Subspace M₊ as the Informational Sector*; the pure states and the Bloch ball are *The Bloch Ball as the Trace-One Slice of the Future Light Cone* and *The Ontology of the Quantum State under the Biquaternion Framework*; the observables and their composition are *Observables as a Jordan Algebra: the Symmetric Plain Product and the Classical Composition*; the state as an idempotent is *The Monoid of Acting Maps: the Process Is the Multiplication, the State Is the Idempotent*; the projection reading of decoherence is *Decoherence as Idempotent Projection*; and the local complex structure is *The Local Complex Structure and the Speed of Light*.
 
 **Conventions.** The algebra is $\mathbb{B}=\mathbb{C}\otimes_{\mathbb{R}}\mathbb{H}$, with basis $e_0=1,e_1,e_2,e_3$ and $e_1e_2=e_3$, and central scalar imaginary $i$, $i^2=-1$. A general element is $\tilde Q=\sum_{\mu=0}^{3}Q_\mu e_\mu=Q_0e_0+\vec Q$ with $Q_\mu\in\mathbb{C}$ and $\vec Q=\sum_{k=1}^{3}Q_ke_k$. The general plain bilinear form of two vector parts is
 
@@ -30,7 +30,7 @@ $$
 (\vec P,\vec Q)=\sum_{k=1}^{3}P_kQ_k,
 $$
 
-and the square of a pure element is $\vec Q^2=-(\vec Q,\vec Q)e_0$. The natural conjugation is $\tilde Q^{\natural}=Q_0-\vec Q$ and the Hermitian conjugation is $\tilde Q^{*}=\overline{Q_0}-\overline{\vec Q}$; the sectors are $\mathbb{M}_\pm=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}$. A root of a central value is written $\tilde\Xi$ (§*The Root Convention* of *Conventions in Mathematics*), an idempotent $\tilde\Pi$ (§*The Idempotent Convention*), and the two members of a complete pair carry the signs, $\tilde\Pi_+$ and $\tilde\Pi_-$. Orthogonality of projections is read from the Hermitian form of *The 4 Forms over the Biquaternion $\mathbb{C}$ Space*, which is named and not used.
+and the square of a pure element is $\vec Q^2=-(\vec Q,\vec Q)e_0$. The natural conjugation is $\tilde Q^{\natural}=Q_0-\vec Q$ and the Hermitian conjugation is $\tilde Q^{*}=\overline{Q_0}-\overline{\vec Q}$; the sectors are $\mathbb{M}_\pm=\{\tilde Q:\tilde Q^{*}=\pm\tilde Q\}$. A root of a central value is written $\tilde\Xi$ (§*The Root Convention* of *Conventions in Mathematics*), an idempotent $\tilde\Pi$ (§*The Idempotent Convention*), and the two members of a complete pair carry the signs, $\tilde\Pi_+$ and $\tilde\Pi_-$. Orthogonality of projections is read from the Hermitian form of *The 4 Forms over the Biquaternioid $\mathbb{C}$ Space*, which is named and not used.
 
 ## The Square and the Two Branches
 
@@ -54,7 +54,7 @@ Since $\mathbb{C}$ is a field, the vector equation holds exactly when $\Xi_0=0$ 
 
 **The roots of $+1$ are the two central scalars $\pm e_0$; the two-real-parameter family $\pm i\tilde\xi$ over the pure real quaternions $\tilde\xi$ with $\tilde\xi^2=-e_0$; and the four-real-parameter family $\vec\xi+i\vec\xi'$ with $\vec\xi\neq0$ and the two real conditions. There are no others.**
 
-The classification is the one of *Square Roots of One and the Idempotents of the General Plain Algebra*, recalled here in its three families.
+The classification is the one of *Square Roots of One and the Idempotents of the Biquaternion Algebra*, recalled here in its three families.
 
 ### The Trivial Roots
 
@@ -108,7 +108,7 @@ $$
 
 the algebraic form of a projection and its complementary projection; a Hermitian idempotent is an **orthogonal** projection for the Hermitian form. The components of the pair are orthogonal and complete, and the root is their difference, so the pair is the spectral decomposition of the root.
 
-**Idempotents, zero divisors and ideals.** The trivial idempotents $0$ and $e_0$ are not zero divisors, $e_0$ being a unit; every non-trivial idempotent is one, since $\tilde\Pi(e_0-\tilde\Pi)=0$, and conversely every non-pure zero divisor is a complex multiple $2Q_0\tilde\Pi$ of a non-trivial idempotent. The two minimal left ideals the standard pair generates and the Peirce decomposition it drives are *Ideals and Peirce Decomposition of the General Plain Algebra*; the zero-divisor structure is *Zero Divisors of the General Plain Algebra*.
+**Idempotents, zero divisors and ideals.** The trivial idempotents $0$ and $e_0$ are not zero divisors, $e_0$ being a unit; every non-trivial idempotent is one, since $\tilde\Pi(e_0-\tilde\Pi)=0$, and conversely every non-pure zero divisor is a complex multiple $2Q_0\tilde\Pi$ of a non-trivial idempotent. The two minimal left ideals the standard pair generates and the Peirce decomposition it drives are *Ideals and Peirce Decomposition of the Biquaternion Algebra*; the zero-divisor structure is *Zero Divisors of the Biquaternion Algebra*.
 
 ## The Hermitian Roots as Observables
 
@@ -126,7 +126,7 @@ The vector part vanishes only when $a_0=0$ or $\vec\eta=0$, and the two cases gi
 
 Three worked roots fix the reading. The element $ie_3$ is a Hermitian root, $(ie_3)^{*}=ie_3$ and $(ie_3)^2=e_0$, and it is the standard one; $ie_1$ is another; and the non-trivial root $e_1+i(e_2+e_3)$ is a root but is not Hermitian, hence not an observable. The distinction is the content of the table of §*The Roots of One*.
 
-**What the reading says and does not say.** It says that **the Hermitian roots of $+1$ are the involutive observables**, the observables of square one. It does not say that every observable of the framework is a root of $+1$: a general observable is a Hermitian element of arbitrary square, and the roots of $+1$ are the special, involutive ones. The reading is a naming, not a derivation. The roots are the mathematics of *Square Roots of One and the Idempotents of the General Plain Algebra*, and the observables are the framework's own, owned by *Observables as a Jordan Algebra: the Symmetric Plain Product and the Classical Composition*.
+**What the reading says and does not say.** It says that **the Hermitian roots of $+1$ are the involutive observables**, the observables of square one. It does not say that every observable of the framework is a root of $+1$: a general observable is a Hermitian element of arbitrary square, and the roots of $+1$ are the special, involutive ones. The reading is a naming, not a derivation. The roots are the mathematics of *Square Roots of One and the Idempotents of the Biquaternion Algebra*, and the observables are the framework's own, owned by *Observables as a Jordan Algebra: the Symmetric Plain Product and the Classical Composition*.
 
 ## The Idempotents as States
 
@@ -154,7 +154,7 @@ whence $\tilde\Xi=\tilde\Pi_+-\tilde\Pi_-$, and the pair splits the algebra into
 
 **The central imaginary $i$ turns the roots of $+1$ into the roots of $-1$: the map $\tilde\Xi\mapsto i\tilde\Xi$ is a bijection. Read physically, a root of $-1$ is a local complex structure, a choice of what is called $i$ in a patch; the distinguished global choice is the central $i$ itself.**
 
-If $\tilde\Xi^2=e_0$ then $(i\tilde\Xi)^2=i^2\tilde\Xi^2=-e_0$, because $i$ is central, and since $i$ is invertible the map is a bijection. The three families of the roots of $+1$ are carried to the three families of the roots of $-1$: the two central scalars $\pm i$; the family $\pm\tilde\xi$ over the pure real unit quaternions, the two-sphere $S^{2}$ of unit imaginary quaternions; and the family $-\vec\xi'+i\vec\xi$ with the same two real conditions. This is the closing remark of *Square Roots of One and the Idempotents of the General Plain Algebra*, quoted here for the reading it carries.
+If $\tilde\Xi^2=e_0$ then $(i\tilde\Xi)^2=i^2\tilde\Xi^2=-e_0$, because $i$ is central, and since $i$ is invertible the map is a bijection. The three families of the roots of $+1$ are carried to the three families of the roots of $-1$: the two central scalars $\pm i$; the family $\pm\tilde\xi$ over the pure real unit quaternions, the two-sphere $S^{2}$ of unit imaginary quaternions; and the family $-\vec\xi'+i\vec\xi$ with the same two real conditions. This is the closing remark of *Square Roots of One and the Idempotents of the Biquaternion Algebra*, quoted here for the reading it carries.
 
 **The interpretation.** A root of $-1$ is read as a **local complex structure**, a choice of which element plays the role of $i$ in a local patch. The central root $i$ is the distinguished choice, the one that commutes with every element and makes the algebra an algebra over $\mathbb{C}$; the remaining roots are local, each defining its own complex structure, and passing from one to another is a change of what plays the role of $i$. The physical interpretation — the local complex structure fixing the propagation of the fields and the speed of light of the patch — is owned by *The Local Complex Structure and the Speed of Light*.
 
@@ -168,7 +168,7 @@ The two readings of the article are one: **a Hermitian root of $+1$ is an observ
 - The Hermitian idempotents $\tilde\Pi_\pm$ are the pure states of the informational sector, the Bloch sphere; the non-Hermitian idempotents are not states.
 - The root and its pair are the observable and its two eigenstates, related by the halving map and its inverse, the root being the difference of the pair; the eigenvalues of the observable are the two signs, carried by the two idempotents.
 
-The roots of $-1$ carry the complementary reading: they are the local complex structures, the local choices of $i$, and they lie in the material sector. The classification is the mathematics of *Square Roots of One and the Idempotents of the General Plain Algebra*; the readings are proposals about naming.
+The roots of $-1$ carry the complementary reading: they are the local complex structures, the local choices of $i$, and they lie in the material sector. The classification is the mathematics of *Square Roots of One and the Idempotents of the Biquaternion Algebra*; the readings are proposals about naming.
 
 **What the framework does not claim.** The framework does not claim that every observable is a square root of $+1$, that every idempotent is a state, that quantum mechanics or the Born rule is derived here, or that one direction $\tilde\xi$ or one state is preferred. The identification of the Hermitian roots with observables and of the Hermitian idempotents with states is a reading of a classification, and the classification is the result.
 

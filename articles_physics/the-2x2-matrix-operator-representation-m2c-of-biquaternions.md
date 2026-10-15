@@ -180,7 +180,7 @@ The two regimes are the two ranks of $M$. Off the light cone $M$ is invertible, 
 | $\det(MXM^{\dagger}) = \lvert\det M\rvert^{2}\det X$ | the determinant scales; $N(\tilde T) = \langle\tilde T,\tilde T\rangle_{\natural} = \lvert N(\tilde{Q})\rvert^{2}N(\tilde R)$ |
 | $\operatorname{rank}\operatorname{H}_{\tilde{Q}} = (\operatorname{rank}M)^{2}$ | $4$ off the cone, $1$ on it, $0$ only at $\tilde{Q} = 0$ |
 | $M = uv^{\dagger} \Rightarrow MXM^{\dagger} = (v^{\dagger}Xv)uu^{\dagger}$ | the collapse of a null congruence onto one Hermitian line |
-| $uu^{\dagger} \leftrightarrow \tfrac12(e_0 + i\vec n\cdot\mathbf{e})$ | the generator of the image line is a minimal idempotent |
+| $uu^{\dagger} \leftrightarrow \tfrac12(e_0 + i\hat u\cdot\mathbf{e})$ | the generator of the image line is a minimal idempotent |
 | $4\lvert Q_0\rvert^{2}$ | trace of the operator; vanishes exactly for the nilpotent case |
 | $\langle\tilde{P},\tilde{Q}\rangle_{*}$ | the general plain sesquilinear form, $\mathrm{Sc}(\tilde{P}\tilde{Q}^{*})$; on the diagonal $\langle\tilde{Q},\tilde{Q}\rangle_{*}=\sum_\mu\lvert Q_\mu\rvert^{2}$ |
 | $\langle\tilde{P},\tilde{Q}\rangle$ | the general plain bilinear form, the scalar part of the general plain bilinear product, $\mathrm{Sc}(\tilde{P}\tilde{Q})$ |

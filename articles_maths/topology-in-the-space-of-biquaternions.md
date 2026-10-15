@@ -18,7 +18,7 @@ $$
 \mathbb{B}=\mathbb{R}\text{-span}\{e_0,e_1,e_2,e_3,ie_0,ie_1,ie_2,ie_3\},\qquad \dim_{\mathbb{R}}\mathbb{B}=8,
 $$
 
-with $\mathrm{Sc}(\tilde{Q})=Q_0$ the scalar part and the product of the algebra as in *The Realification of the General Plain Algebra*.
+with $\mathrm{Sc}(\tilde{Q})=Q_0$ the scalar part and the product of the algebra as in *The Realification and the Effect of the Change of Scalars*.
 
 ## 1. The Norm
 
@@ -72,7 +72,7 @@ $$
 
 It is Euclidean in the precise sense that this coordinate isomorphism is a linear bijection carrying the norm of §1 to the Euclidean norm of $\mathbb{R}^{8}$ and the balls $B(\tilde{Q},r)$ to the Euclidean balls, so the open sets are those of the usual metric topology of $\mathbb{R}^{8}$ and of nothing else.
 
-The topology is the usual one of a finite-dimensional real space: Hausdorff, second countable, locally compact, complete, path connected, and with the Heine–Borel property that a subset is compact exactly when it is closed and bounded (*Metric, Uniform and Complete Spaces*). It is also the topology inherited from any faithful finite-dimensional real representation: the regular representation gives a linear injection $\mathbb{B}\hookrightarrow M_4(\mathbb{R})$ (*The Realification of the General Plain Algebra*), and the topology defined above is the subspace topology of the operator norm there, by §2.
+The topology is the usual one of a finite-dimensional real space: Hausdorff, second countable, locally compact, complete, path connected, and with the Heine–Borel property that a subset is compact exactly when it is closed and bounded (*Metric, Uniform and Complete Spaces*). It is also the topology inherited from any faithful finite-dimensional real representation: the regular representation gives a linear injection $\mathbb{B}\hookrightarrow M_4(\mathbb{R})$ (*The Realification and the Effect of the Change of Scalars*), and the topology defined above is the subspace topology of the operator norm there, by §2.
 
 The norm of §1 is the topological norm: it is the norm that defines the topology of §3, and by §2 every other norm of the space gives the same topology.
 

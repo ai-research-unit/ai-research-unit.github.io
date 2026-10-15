@@ -342,13 +342,13 @@ $$
 
 verified to $1.4 \times 10^{-14}$ and nonzero wherever $t + z \ne -1$. So a Maxwell field with a twisting energy flow exists, in the family the paper proposes as the nonlinear counterexample, and the section's conclusion — that nonlinearity is what permits a swirling flow — is not established.
 
-**The correct statement.** For the flat normal field (11.2) the four Maxwell equations hold if and only if, in a frame where $P$ is spanned by $\vec a, \vec b$ and $\vec n = \vec a\times\vec b$ is the normal,
+**The correct statement.** For the flat normal field (11.2) the four Maxwell equations hold if and only if, in a frame where $P$ is spanned by $\vec a, \vec b$ and $\hat u = \vec a\times\vec b$ is the normal,
 
 $$
 f_t = f_n, \qquad \varphi_n = 0, \qquad f_a = -f\varphi_b, \qquad f_b = f\varphi_a,
 $$
 
-which in the coordinates of the counterexample ($\vec a = \vec e_1$, $\vec b = \vec e_2$, $\vec n = \vec e_3$) read $f_t = f_z$, $\varphi_z = 0$, $f_x = -f\varphi_y$, $f_y = f\varphi_x$. Each of the four was verified to be **necessary** by exhibiting a field that violates it — the residuals were $2.4 \times 10^{0}$ for $f_t \ne f_z$, $4.6 \times 10^{0}$ for $\varphi_z \ne 0$, and $5.3 \times 10^{0}$ for a violated planar condition — and the conjunction was verified to be **sufficient**, the residual being $0$ for a field satisfying all four. The twist (11.4) is $2f(\vec bf_a - \vec af_b)$, in these coordinates $2f(-f_y, f_x, 0)$, and it vanishes if and only if $f$ is constant in the plane; this was verified as an identity to $1.4 \times 10^{-14}$.
+which in the coordinates of the counterexample ($\vec a = \vec e_1$, $\vec b = \vec e_2$, $\hat u = \vec e_3$) read $f_t = f_z$, $\varphi_z = 0$, $f_x = -f\varphi_y$, $f_y = f\varphi_x$. Each of the four was verified to be **necessary** by exhibiting a field that violates it — the residuals were $2.4 \times 10^{0}$ for $f_t \ne f_z$, $4.6 \times 10^{0}$ for $\varphi_z \ne 0$, and $5.3 \times 10^{0}$ for a violated planar condition — and the conjunction was verified to be **sufficient**, the residual being $0$ for a field satisfying all four. The twist (11.4) is $2f(\vec bf_a - \vec af_b)$, in these coordinates $2f(-f_y, f_x, 0)$, and it vanishes if and only if $f$ is constant in the plane; this was verified as an identity to $1.4 \times 10^{-14}$.
 
 The two pairs are independent: one fixes the propagation along the normal, the other is a Cauchy–Riemann pair for $\ln f$ and $\varphi$ in the plane, solvable precisely when $\ln f$ is planar-harmonic. Both can hold at once, which is why a Maxwell field with a twisting flow exists — for instance every field of the paper's own family $f = f_1(t+z)f_2(x,y)$ with $\varphi$ independent of $z$ and $(f_2, \varphi)$ a Cauchy–Riemann pair in the plane. The contrast the paper wanted is therefore not between linear and nonlinear solutions but between *planar-uniform* and *planar-varying* ones, and the corpus has not found a way to keep the paper's interpretation.
 

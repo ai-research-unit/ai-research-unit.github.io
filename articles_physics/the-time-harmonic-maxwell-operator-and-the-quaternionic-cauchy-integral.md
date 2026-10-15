@@ -289,13 +289,13 @@ $$
 which is the fundamental solution of the quaternionic Maxwell operator recorded by the source, expressed here in the book's arrangement: it is built from the hyperholomorphic Cauchy kernels by the two rotations $A_i,B_i$ of $(15)$, and — because all the factors except $N$ are scalar — the same kernel serves the left and the right theories. From it the two integral operators of the Maxwell theory are formed in the usual way,
 
 $$
-\mathcal{K}_N[f](x)=-\int_\Gamma K_N(x-y)\,\vec n(y)\,f(y)\,d\Gamma_y ,
+\mathcal{K}_N[f](x)=-\int_\Gamma K_N(x-y)\,\hat u(y)\,f(y)\,d\Gamma_y ,
 \qquad
 \mathcal{T}_N[f](x)=\int_\Omega K_N(x-y)\,f(y)\,dy ,
 \tag{21}
 $$
 
-the **Cauchy-type** and **Teodorescu-type** operators associated with Maxwell's equations; the defining difference from the operators $\mathcal{K}_\alpha,\mathcal{T}_\alpha$ of the hyperholomorphic theory of the sibling articles is only the replacement of the kernel $\mathcal K_\alpha$ by the Maxwell kernel $K_N$, and the boundary integrals are taken over the Liapunov boundary $\Gamma=\partial\Omega$ of a bounded domain with outward normal $\vec n$. Three theorems then hold, the analogues of the three of the hyperholomorphic theory and proved from them by the same rotation.
+the **Cauchy-type** and **Teodorescu-type** operators associated with Maxwell's equations; the defining difference from the operators $\mathcal{K}_\alpha,\mathcal{T}_\alpha$ of the hyperholomorphic theory of the sibling articles is only the replacement of the kernel $\mathcal K_\alpha$ by the Maxwell kernel $K_N$, and the boundary integrals are taken over the Liapunov boundary $\Gamma=\partial\Omega$ of a bounded domain with outward normal $\hat u$. Three theorems then hold, the analogues of the three of the hyperholomorphic theory and proved from them by the same rotation.
 
 **Theorem (Borel–Pompeiu for the Maxwell operator).** For a pair $f\in C^1(\Omega;\mathbb{B}^2)\cap C(\bar\Omega;\mathbb{B}^2)$,
 
@@ -322,9 +322,9 @@ so the boundary values determine a quaternionic monochromatic function, and the 
 Translated back to the fields, the Cauchy formula $(23)$ becomes an integral representation, and its vector form is a classical one. The Cauchy-type operator is the boundary integral of the field and the normal against the Maxwell kernel, and the Teodorescu term is the volume integral of the current; written out in vectors and separated into the electric and magnetic parts, the boundary part of the representation is
 
 $$
-\vec E(x)=\int_\Gamma\Bigl\{\langle\mathrm{grad}_x\Theta_\alpha(x-y),\vec n(y)\rangle\tilde{\vec E}(y)
-+\bigl[[\mathrm{grad}_x\Theta_\alpha(x-y),\vec n(y)],\tilde{\vec E}(y)\bigr]
-+i\omega\,\Theta_\alpha(x-y)[\vec n(y),\tilde{\vec H}(y)]\Bigr\}d\Gamma_y
+\vec E(x)=\int_\Gamma\Bigl\{\langle\mathrm{grad}_x\Theta_\alpha(x-y),\hat u(y)\rangle\tilde{\vec E}(y)
++\bigl[[\mathrm{grad}_x\Theta_\alpha(x-y),\hat u(y)],\tilde{\vec E}(y)\bigr]
++i\omega\,\Theta_\alpha(x-y)[\hat u(y),\tilde{\vec H}(y)]\Bigr\}d\Gamma_y
 +\text{source terms},
 \tag{24}
 $$
@@ -405,7 +405,7 @@ The kernel of the theory is the outgoing Helmholtz kernel $\Theta_\alpha$ of $(1
 | $K_N$ | Maxwell–Cauchy kernel, the rotation of $\mathrm{diag}(\mathcal{K}_\alpha,\mathcal{K}_{-\alpha})$ |
 | $\mathcal{K}_N,\mathcal{T}_N$ | Cauchy-type and Teodorescu-type operators of the Maxwell theory |
 | $P_\alpha=\tfrac12(I+S_\alpha)$, $Q_\alpha=I-P_\alpha$ | Plemelj projectors of the shifted theory |
-| $\Omega,\Gamma=\partial\Omega$ | Bounded domain and its Liapunov boundary; $\vec n$ the outward normal |
+| $\Omega,\Gamma=\partial\Omega$ | Bounded domain and its Liapunov boundary; $\hat u$ the outward normal |
 | $\tilde{\vec e},\tilde{\vec h}$ | Dirichlet boundary data of the field |
 | $W=\sqrt{\mu/\epsilon}$ | Intrinsic impedance of the medium |
 
