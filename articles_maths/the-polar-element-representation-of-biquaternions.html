@@ -52,74 +52,21 @@
       <div class="article-body">
         <h1 id="the-polar-element-representation-of-biquaternions"><strong>The Polar Element Representation of Biquaternions</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>This article is about the <strong>polar representation</strong> of a biquaternion: the statement that every biquaternion with non-vanishing norm is the product of four factors,</p>
+<p>This article is about the <strong>polar representation</strong> of a biquaternion: the statement that every biquaternion with non-vanishing norm is the ordered product of a positive real scale, a central phase and two unit factors,</p>
 <p>$$
-\tilde{Q} = r\,e^{i\alpha}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r} ,
+\tilde{Q} = r\,\exp(i\alpha)\,\exp\Bigl(i\tfrac{\psi}{2}\hat u_{\mathrm b}\Bigr)\,\exp\Bigl(\tfrac{\theta}{2}\hat u_{\mathrm r}\Bigr) ,
 $$</p>
-<p>where the four factors are the following.</p>
+<p>with the four factors, their exponents and their ranges collected in one table.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>#</th>
 <th>factor</th>
 <th>name</th>
-<th>real dimension</th>
-<th>range or condition</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>$r$</td>
-<td>scale</td>
-<td>$1$</td>
-<td>$r \in \mathbb{R}$, $r>0$</td>
-</tr>
-<tr>
-<td>2</td>
-<td>$e^{i\alpha}$</td>
-<td>central phase</td>
-<td>$1$</td>
-<td>$\alpha \in \left(-\frac{\pi}{2},\frac{\pi}{2}\right]$, defined modulo $2\pi$ before the branch is fixed</td>
-</tr>
-<tr>
-<td>3</td>
-<td>$\tilde U_{\mathrm b}$</td>
-<td>boost</td>
-<td>$3$</td>
-<td>Hermitian positive definite, a unit element, $N(\tilde U_{\mathrm b})=e_0$</td>
-</tr>
-<tr>
-<td>4</td>
-<td>$\tilde u_{\mathrm r}$</td>
-<td>rotor</td>
-<td>$3$</td>
-<td>a unit real quaternion of $\mathbb{H}_{\mathbb{B}}$, $\mathrm{Sp}(1)$, $N(\tilde u_{\mathrm r})=e_0$</td>
-</tr>
-</tbody>
-</table></div>
-<p>The norm in view is the biquaternion norm $N = \langle\cdot,\cdot\rangle_{\natural}$, so a <strong>unit element</strong> is an element with $N = e_0$ (<em>Conventions in Mathematics</em>, §<em>The Unitary Convention</em>); the boost and the rotor are the two unit elements of the word, and the scale and the phase are not.</p>
-<p>The four factors are unique, and their real dimensions $1+1+3+3$ sum to the eight real dimensions of the algebra.</p>
-<p>The modulus of the representation is the complex number $\rho = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$, developed in §<em>The Complex Modulus</em>.</p>
-<p>The conventions and the symbols are those of the corpus (<em>Conventions in Mathematics</em>, §<em>Symbols</em>, §<em>The Unitary Convention</em>); the symbols this article uses are collected in §<em>Summary of Notation</em>.</p>
-<p>No physics is invoked. Every numerical value displayed below was recomputed in double precision.</p>
-<h2 id="the-exponentials-of-the-factors">The Exponentials of the Factors</h2>
-<p>Every one of the four factors is the exponential of a single element of the algebra, and the polar word is the ordered product of the four exponentials,</p>
-<p>$$
-\tilde{Q} = \exp(\ln r)\,\exp(i\alpha)\,\exp\Bigl(i\tfrac{\psi}{2}\hat u_{\mathrm b}\Bigr)\,\exp\Bigl(\tfrac{\theta}{2}\hat u_{\mathrm r}\Bigr) ,
-$$</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>#</th>
-<th>factor</th>
-<th>name</th>
-<th>real dimension</th>
-<th>exponential</th>
-<th>case</th>
-<th>closed form</th>
+<th>exponent</th>
+<th>root</th>
 <th>parameter and range</th>
-<th>unit axis</th>
+<th>real dimension</th>
 </tr>
 </thead>
 <tbody>
@@ -127,49 +74,95 @@ $$</p>
 <td>1</td>
 <td>$r$</td>
 <td>scale</td>
-<td>$1$</td>
-<td>$\exp(\ln r)$</td>
-<td>hyperbolic</td>
-<td>$r$</td>
-<td>$\ln r \in \mathbb{R}$, $r > 0$</td>
 <td>—</td>
+<td>—</td>
+<td>$r \in \mathbb{R}$, $r>0$</td>
+<td>$1$</td>
 </tr>
 <tr>
 <td>2</td>
-<td>$e^{i\alpha}$</td>
-<td>central phase</td>
-<td>$1$</td>
 <td>$\exp(i\alpha)$</td>
-<td>trigonometric</td>
-<td>$\cos\alpha\,e_0 + i\sin\alpha$</td>
+<td>central phase</td>
+<td>$i\alpha$</td>
+<td>$i$</td>
 <td>$\alpha \in \left(-\frac{\pi}{2},\frac{\pi}{2}\right]$</td>
-<td>—</td>
+<td>$1$</td>
 </tr>
 <tr>
 <td>3</td>
-<td>$\tilde U_{\mathrm b}$</td>
+<td>$\exp\bigl(i\tfrac{\psi}{2}\hat u_{\mathrm b}\bigr)$</td>
 <td>boost</td>
+<td>$i\tfrac{\psi}{2}\hat u_{\mathrm b}$</td>
+<td>$i\hat u_{\mathrm b}$</td>
+<td>$\psi \in \mathbb{R}$, $\psi\ge0$, $\hat u_{\mathrm b}\in\mathcal{A}$</td>
 <td>$3$</td>
-<td>$\exp\bigl(i\frac{\psi}{2}\hat u_{\mathrm b}\bigr)$</td>
-<td>hyperbolic</td>
-<td>$\cosh\frac{\psi}{2}\,e_0 + i\sinh\frac{\psi}{2}\,\hat u_{\mathrm b}$</td>
-<td>rapidity $\psi \in \mathbb{R}$, $\psi \ge 0$</td>
-<td>$\hat u_{\mathrm b}\in\mathcal{A}$, a unit vector of $\mathbb{R}^3$</td>
 </tr>
 <tr>
 <td>4</td>
-<td>$\tilde u_{\mathrm r}$</td>
-<td>rotor</td>
-<td>$3$</td>
 <td>$\exp\bigl(\tfrac{\theta}{2}\hat u_{\mathrm r}\bigr)$</td>
-<td>trigonometric</td>
-<td>$\cos\tfrac{\theta}{2}\,e_0 + \sin\tfrac{\theta}{2}\,\hat u_{\mathrm r}$</td>
-<td>rotation angle $\theta \in [0,2\pi]$</td>
-<td>$\hat u_{\mathrm r}\in\mathcal{A}$, a unit vector of $\mathbb{R}^3$</td>
+<td>rotor</td>
+<td>$\tfrac{\theta}{2}\hat u_{\mathrm r}$</td>
+<td>$\hat u_{\mathrm r}$</td>
+<td>$\theta \in [0,2\pi]$, $\hat u_{\mathrm r}\in\mathcal{A}$</td>
+<td>$3$</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>The two axes.</strong> The boost axis $\hat u_{\mathrm b}$ is the direction of the motion; the rotor axis $\hat u_{\mathrm r}$ is the axis of the rotation. Each of them is one direction in space. A direction is given by three real numbers, its cosines on the basis vectors $e_1,e_2,e_3$, and the three numbers have squares that sum to one,</p>
+<p>The scale is the one factor that is not an exponential. The three exponentials follow a single rule: the character of an exponential is trigonometric, hyperbolic or parabolic according to the square of the <strong>root</strong> of its exponent, a root of $-e_0$ giving the trigonometric case, a root of $+e_0$ the hyperbolic case, and a nilpotent root the parabolic case. The phase and the rotor stand on a root of $-e_0$, the boost on a root of $+e_0$, and the scale is the degenerate hyperbolic case whose root is the algebra unit $e_0$.</p>
+<p>The four factors are unique, and their real dimensions $1+1+3+3$ sum to the eight real dimensions of the algebra. The word exists exactly on the complement of the null cone, and its failure there is the whole of its failure.</p>
+<p>The body of the article is organised by the four factors: §<em>The Scale</em>, §<em>The Central Phase</em>, §<em>The Boost</em> and §<em>The Rotor</em> treat them one by one and gather their data — the exponent of each factor, its root, the subspace it lies in, the element it is built from and the cases in which it is trivial. §<em>Why Four Factors</em> states why the count is four, §<em>The Theorem</em> states and proves the representation and fixes its uniqueness, and the closing sections give the domain, the degenerate cases and the relation to the three pairings.</p>
+<p>The conventions and the symbols are those of the corpus (<em>Conventions in Mathematics</em>, §<em>Symbols</em>, §<em>The Unitary Convention</em>); the symbols this article uses are collected in §<em>Summary of Notation</em>.</p>
+<p>No physics is invoked.</p>
+<h2 id="the-polar-word">The Polar Word</h2>
+<p>The word is the ordered product of the four factors,</p>
+<p>$$
+\tilde{Q} = r\,\exp(i\alpha)\,\exp\Bigl(i\tfrac{\psi}{2}\hat u_{\mathrm b}\Bigr)\,\exp\Bigl(\tfrac{\theta}{2}\hat u_{\mathrm r}\Bigr) ,
+$$</p>
+<p>and the factors are read off the element one by one in the four sections that follow. Two objects are shared by them and are fixed here once.</p>
+<p><strong>The root of the exponent.</strong> Each of the three exponents is a real parameter times a <strong>root</strong> of $-e_0$, $0$ or $+e_0$ — the generator of a one-parameter group (<em>Conventions in Mathematics</em>, §<em>The Root Convention</em>) — and the character of its exponential is the square of that root.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>factor</th>
+<th>exponent</th>
+<th>root</th>
+<th>square of the root</th>
+<th>character</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$r$</td>
+<td>—</td>
+<td>$e_0$</td>
+<td>$+e_0$</td>
+<td>hyperbolic, degenerate</td>
+</tr>
+<tr>
+<td>$\exp(i\alpha)$</td>
+<td>$i\alpha$</td>
+<td>$i$</td>
+<td>$-e_0$</td>
+<td>trigonometric, central</td>
+</tr>
+<tr>
+<td>$\exp\bigl(i\tfrac{\psi}{2}\hat u_{\mathrm b}\bigr)$</td>
+<td>$i\tfrac{\psi}{2}\hat u_{\mathrm b}$</td>
+<td>$i\hat u_{\mathrm b}$</td>
+<td>$+e_0$</td>
+<td>hyperbolic</td>
+</tr>
+<tr>
+<td>$\exp\bigl(\tfrac{\theta}{2}\hat u_{\mathrm r}\bigr)$</td>
+<td>$\tfrac{\theta}{2}\hat u_{\mathrm r}$</td>
+<td>$\hat u_{\mathrm r}$</td>
+<td>$-e_0$</td>
+<td>trigonometric</td>
+</tr>
+</tbody>
+</table></div>
+<p>A root of $-e_0$ gives the trigonometric case, a root of $+e_0$ the hyperbolic case, and a nilpotent root the parabolic case, where the series truncates to the unit plus the exponent. The parabolic case produces no factor of the representation but is not empty in $\mathbb{B}$: the element $e_1+ie_2$ has square zero, so its exponential is $e_0+(e_1+ie_2)$, of norm one and neither a rotor nor a boost. The rule is Lemma 1 of Sangwine &amp; Hitzer, stated there for a hypercomplex root of $-1$, $0$ or $+1$.</p>
+<p><strong>The two axes.</strong> The boost axis $\hat u_{\mathrm b}$ is the direction of the motion; the rotor axis $\hat u_{\mathrm r}$ is the axis of the rotation. Each of them is one direction in space, given by three real numbers, its cosines on the basis vectors $e_1,e_2,e_3$, and the three numbers have squares that sum to one,</p>
 <p>$$
 \hat u = \hat u_1e_1+\hat u_2e_2+\hat u_3e_3 , \qquad \hat u_1,\hat u_2,\hat u_3\in\mathbb{R} , \qquad \hat u_1^2+\hat u_2^2+\hat u_3^2=1 .
 $$</p>
@@ -179,87 +172,186 @@ $$</p>
 <li>It is <strong>pure</strong>: there is no $e_0$ term among the three, so its scalar part is zero. The word describes the missing coefficient, not the three present ones.</li>
 <li>It is <strong>unit</strong>: its length is one, which is the condition $\hat u_1^2+\hat u_2^2+\hat u_3^2=1$.</li>
 </ul>
-<p>The three conditions have one algebraic consequence. Squaring the direction gives $\hat u^2=-e_0$, so the axis sphere is exactly the set of roots of $-e_0$ in $\mathbb{H}$: the quaternion roots of $-1$. The direction $e_1$ is one of them, the direction $(\tfrac{1}{\sqrt2},\tfrac{1}{\sqrt2},0)$ is another, and $e_0$ is not one of them, because it has a scalar part and its length is one only in the trivial sense of the scalar line.</p>
-<p>The set is written $\mathcal{A}$ and not $S$, so that the symbol $S$ stays with the spin groups $\mathrm{Spin}(n)$ of the spinor context; the group of unit quaternions is written $\mathrm{Sp}(1)$.</p>
-<p>The four exponentials are read off a single rule, which every algebra of the polar series follows: the character of the exponential is trigonometric, hyperbolic or parabolic according to the square of the root of the exponent, a root of $-e_0$ giving the trigonometric case, a root of $+e_0$ the hyperbolic case, and a nilpotent root the parabolic case, where the series truncates to the unit plus the exponent. The parabolic case produces no factor of the polar representation but is not empty in $\mathbb{B}$: the element $e_1+ie_2$ has square zero, so its exponential is $e_0+(e_1+ie_2)$, of norm one and neither a rotor nor a boost. The rule is Lemma 1 of Sangwine &amp; Hitzer, stated there for a hypercomplex root of $-1$, $0$ or $+1$.</p>
-<h3 id="the-exponent-of-each-factor">The Exponent of Each Factor</h3>
-<p>Each exponent is a real parameter times a <strong>root</strong> of $-e_0$, $0$ or $+e_0$ — the generator of a one-parameter group (<em>Conventions in Mathematics</em>, §<em>The Root Convention</em>) — and the character of its exponential is the square of that root.</p>
+<p>The three conditions have one algebraic consequence. Squaring the direction gives $\hat u^2=-e_0$, so the axis sphere is exactly the set of roots of $-e_0$ in $\mathbb{H}$: the quaternion roots of $-1$. The set is written $\mathcal{A}$ and not $S$, so that the symbol $S$ stays with the spin groups $\mathrm{Spin}(n)$ of the spinor context; the group of unit quaternions is written $\mathrm{Sp}(1)$.</p>
+<p>The two axes are not the only unit elements of the algebra: the scale and the phase stand on the two central unit elements $e_0$ and $i$.</p>
+<h2 id="the-scale">The Scale</h2>
+<p>The first factor is the positive real</p>
+<p>$$
+r = \lvert\rho\rvert = \sqrt{\lvert\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\rvert} ,
+$$</p>
+<p>the absolute value of the <strong>complex modulus</strong> of the element.</p>
+<h3 id="the-biquaternion-norm-and-its-square-root">The Biquaternion Norm and Its Square Root</h3>
+<p>The number under the root is the <strong>biquaternion norm</strong></p>
+<p>$$
+\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\mu=0}^{3}Q_\mu^2 ,
+$$</p>
+<p>the sum of the squares of the four complex coefficients: a complex number, central, multiplicative,</p>
+<p>$$
+\langle\tilde{P}\tilde{Q},\tilde{P}\tilde{Q}\rangle_{\natural} = \langle\tilde{P},\tilde{P}\rangle_{\natural}\langle\tilde{Q},\tilde{Q}\rangle_{\natural},
+$$</p>
+<p>and equal in the matrix model to the determinant, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \det\mathsf{M}_2(\tilde{Q})$. The modulus is its square root; to make it single valued, fix the branch once and for all. Write the norm in polar form in $\mathbb{C}$,</p>
+<p>$$
+\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = |\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|\,e^{i\varphi}, \qquad \varphi = \arg \langle\tilde{Q},\tilde{Q}\rangle_{\natural} \in (-\pi,\pi] ,
+$$</p>
+<p>and define</p>
+<p>$$
+\rho = \sqrt{|\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|}\;e^{i\varphi/2} ,
+$$</p>
+<p>the principal square root. Its modulus and argument are</p>
+<p>$$
+r = |\rho| = \sqrt{|\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|} \ \ge 0, \qquad \alpha = \arg\rho = \frac{\varphi}{2} \in \left(-\frac{\pi}{2},\frac{\pi}{2}\right] .
+$$</p>
+<p>The pair $(r,\alpha)$ is unique: the modulus is non-negative by construction and the angle lies in a half-open interval of length $\pi$, so no two pairs give the same $\rho$. The square root $\rho$ is one of the two solutions of $\tilde T^2 = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}$, and the branch choice above selects one of them; the other, $-\rho$, has angle $\alpha\pm\pi$ and is outside the interval. <strong>This branch is the only convention of the representation</strong>; every other step is forced.</p>
+<h3 id="the-scale-as-a-factor">The Scale as a Factor</h3>
+<p>The scale is a positive real number, the only factor that is both central and non-compact on the positive side, of real dimension $1$. It multiplies the element rigidly: replacing $\tilde{Q}$ by $\lambda\tilde{Q}$ with $\lambda>0$ multiplies $r$ by $\lambda$ and leaves the other three factors unchanged. It is the absolute value of the determinant of the matrix image, raised to the power $\tfrac12$, since $|\det\mathsf{M}_2(\tilde{Q})| = |\langle\tilde{Q},\tilde{Q}\rangle_{\natural}| = r^2$. It is the degenerate case of the hyperbolic row, and the one factor that is written without an exponential.</p>
+<p><strong>Under the conjugations</strong> the scale is unchanged, since the biquaternion norm is central and its modulus is invariant under each of them.</p>
+<p><strong>The scale is trivial</strong> exactly when the biquaternion norm has modulus one, $|\langle\tilde{Q},\tilde{Q}\rangle_{\natural}| = 1$; in particular it is one on the unit-norm elements, of which the Lorentz rotors of the physics articles are the case.</p>
+<h2 id="the-central-phase">The Central Phase</h2>
+<p>The second factor is the <strong>central phase</strong></p>
+<p>$$
+e^{i\alpha}, \qquad \alpha = \tfrac12\arg\langle\tilde{Q},\tilde{Q}\rangle_{\natural} \in \left(-\tfrac{\pi}{2},\tfrac{\pi}{2}\right] ,
+$$</p>
+<p>the unit element of the centre given by the argument of the biquaternion norm.</p>
+<h3 id="the-angle-of-the-norm">The Angle of the Norm</h3>
+<p>The phase is one half of the argument of the determinant of $\tilde{Q}$, the determinant being $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$ in the matrix model, and it vanishes exactly when the biquaternion norm is a positive real. Its value is not a normalisation constant: it carries information, and in the physical interpretation of the companion articles it is the central phase that the corpus's Noether and gauge articles identify as the algebra's continuous symmetry. Its real dimension is $1$.</p>
+<h3 id="centrality-exponent-and-root">Centrality, Exponent and Root</h3>
+<p>An element of the centre commutes with everything, so the phase may be moved through the other factors at no cost, and the central group $U(1)$ is a free one-parameter factor of any decomposition. It is the only factor that is both central and compact. Its exponent $i\alpha$ lies on the central imaginary line $i\mathbb{R}\subset\mathbb{C}_{\mathbb{B}}$, and it is the only exponent that commutes with the other three; its root is the central unit $i$, of square $-e_0$.</p>
+<p><strong>Under the conjugations</strong> the phase is reversed, $\alpha\mapsto-\alpha$, by the coefficientwise conjugation and by the Hermitian conjugation, and fixed by the quaternion conjugation.</p>
+<p><strong>The phase is trivial</strong> exactly when the biquaternion norm is a positive real, by $\alpha = \tfrac12\arg\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$; and it takes its extremal value on the scalar imaginary, whose word is $i = 1\cdot e^{i\pi/2}\cdot e_0\cdot e_0$.</p>
+<h2 id="the-boost">The Boost</h2>
+<p>The third factor is the <strong>boost</strong>,</p>
+<p>$$
+\tilde U_{\mathrm b} = \exp\Bigl(i\tfrac{\psi}{2}\hat u_{\mathrm b}\Bigr) = \cosh\tfrac{\psi}{2}\,e_0 + i\sinh\tfrac{\psi}{2}\,\hat u_{\mathrm b} , \qquad \psi \ge 0, \qquad \hat u_{\mathrm b}\in\mathcal{A} ,
+$$</p>
+<p>the Hermitian positive unit element of the word. It is written $\tilde U_{\mathrm b}$ for short, and it is the factor the physics articles call the Lorentz boost rotor.</p>
+<h3 id="the-exponent-and-the-root">The Exponent and the Root</h3>
+<p>The exponent $i\tfrac{\psi}{2}\hat u_{\mathrm b}$ lies in the Hermitian subspace $\mathbb{M}_+$, of real scalar part and purely imaginary vector part, and it is traceless, since its scalar part vanishes; its root is $i\hat u_{\mathrm b}$, Hermitian and of square $+e_0$. The exponent carries half of the rapidity: the conjugation by the boost produces a Lorentz transformation of rapidity $\psi$, so the stored half is counted twice, as §<em>What the Sandwich Sees</em> records. The boost is the only factor that is neither central nor compact, and its real dimension is $3$, the rapidity and the two angles of the axis.</p>
+<h3 id="the-hermitian-positive-factor">The Hermitian Positive Factor</h3>
+<p>The word <strong>unit</strong> is the corpus's, and it is relative to the norm: a <strong>unit element</strong> is an element of norm one, the norm being the one in view (<em>Conventions in Mathematics</em>, §<em>The Unitary Convention</em>). The norm in view here is the biquaternion norm $N = \langle\cdot,\cdot\rangle_{\natural}$, whose unit elements are the level set $\mathbb{B}^{\times}_1 = \{N = e_0\}$, the group of unit-norm elements, the special linear group $SL(2,\mathbb{C})$ in the matrix picture. A <strong>unitary</strong> element, by contrast, is one that preserves the sesquilinear form, and it is a narrower object.</p>
+<p>Divide the biquaternion by its modulus,</p>
+<p>$$
+U = \frac{\tilde{Q}}{\rho} .
+$$</p>
+<p>Then $U$ has unit norm, $\langle U,U\rangle_{\natural} = 1$, and the whole content of the decomposition sits in the split of the unit-norm part into a boost and a rotor. Form the Hermitian element</p>
+<p>$$
+S = U U^{*} .
+$$</p>
+<p>It is Hermitian, since $S^{*} = (UU^{*})^{*} = UU^{*} = S$, and it is positive definite, because in the matrix model $\mathsf{M}_2(S) = \mathsf{M}_2(U)\mathsf{M}_2(U)^\dagger$ is a positive definite Hermitian matrix whenever $\mathsf{M}_2(U)$ is invertible. Its biquaternion norm is $\langle S,S\rangle_{\natural} = 1$.</p>
+<p>The element $S$ is not itself the boost. The boost is its Hermitian positive square root,</p>
+<p>$$
+\tilde U_{\mathrm b} = \sqrt{S} , \qquad \tilde U_{\mathrm b}^2 = S ,
+$$</p>
+<p>which exists and is unique: a positive definite Hermitian matrix has exactly one positive definite Hermitian square root, and the condition $\langle S,S\rangle_{\natural} = 1$ is inherited as $\langle \tilde U_{\mathrm b},\tilde U_{\mathrm b}\rangle_{\natural}^2 = \langle S,S\rangle_{\natural} = 1$, so $\langle \tilde U_{\mathrm b},\tilde U_{\mathrm b}\rangle_{\natural} = 1$ for the positive root. The element $\tilde U_{\mathrm b}$ is not arbitrary in $\mathbb{M}_+$: the square root of a norm-one element has norm one, and that is the normalisation of the boost.</p>
+<h3 id="the-closed-form-the-rapidity-and-the-axis">The Closed Form, the Rapidity and the Axis</h3>
+<p>The matrix square root can be written out in the algebra, and this is what makes the decomposition an algorithm rather than an existence statement. Write the Hermitian element $S$ in its own parameters,</p>
+<p>$$
+S = \sigma\,e_0 + i\vec w, \qquad \sigma \in \mathbb{R}, \qquad \vec w \in \mathbb{R}^3 ,
+$$</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>factor</th>
-<th>exponent</th>
-<th>where the exponent lies</th>
+<th>symbol</th>
+<th>meaning</th>
+<th>range</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$r$</td>
-<td>$\ln r$</td>
-<td>the real line $\mathbb{R}e_0$</td>
+<td>$\sigma$</td>
+<td>the real scalar part of $S$</td>
+<td>$\sigma = \tfrac12\operatorname{tr}\mathsf{M}_2(S) \ge 1$</td>
 </tr>
 <tr>
-<td>$e^{i\alpha}$</td>
-<td>$i\alpha$</td>
-<td>the imaginary line $i\mathbb{R}\subset\mathbb{C}_{\mathbb{B}}$</td>
-</tr>
-<tr>
-<td>$\tilde U_{\mathrm b}$</td>
-<td>$i\frac{\psi}{2}\hat u_{\mathrm b}$</td>
-<td>$\mathbb{M}_+$, traceless</td>
-</tr>
-<tr>
-<td>$\tilde u_{\mathrm r}$</td>
-<td>$\tfrac{\theta}{2}\hat u_{\mathrm r}$</td>
-<td>$\mathbb{M}_- \cap \mathrm{Vect}(\mathbb{B})$, the real pure quaternions</td>
+<td>$\vec w$</td>
+<td>the purely imaginary vector part of $S$</td>
+<td>$\lvert\vec w\rvert^2 = \sigma^2 - 1$</td>
 </tr>
 </tbody>
 </table></div>
+<p>with real scalar part $\sigma$ and purely imaginary vector part $i\vec w$. The bound $\sigma \ge 1$ holds because the two eigenvalues of a positive definite matrix of determinant one and trace $2\sigma$ are positive and multiply to one; and</p>
+<p>$$
+\tilde U_{\mathrm b} = \sqrt{\frac{1+\sigma}{2}}\;e_0 + \frac{i\,\vec w}{\sqrt{2(1+\sigma)}} .
+$$</p>
+<p>Squaring this expression returns $S$, since</p>
+<p>$$
+\frac{1+\sigma}{2} - \frac{|\vec w|^2}{2(1+\sigma)} = \frac{(1+\sigma)^2 - |\vec w|^2}{2(1+\sigma)} = \frac{2\sigma(1+\sigma)}{2(1+\sigma)} = \sigma ,
+$$</p>
+<p>where $|\vec w|^2 = \sigma^2-1$ was used, which is the statement $\langle S,S\rangle_{\natural} = \sigma^2-|\vec w|^2 = 1$ for the Hermitian element $S$; the result is $\sigma + i\vec w = S$.</p>
+<p>The closed form shows that the boost is determined by one positive number and one direction. Writing</p>
+<p>$$
+\tilde U_{\mathrm b} = \cosh\frac{\psi}{2}\,e_0 + i\sinh\frac{\psi}{2}\,\hat u_{\mathrm b} , \qquad \psi \ge 0, \qquad \hat u_{\mathrm b} \in \mathcal{A} ,
+$$</p>
+<p>with $\cosh\psi = \sigma$ and $\hat u_{\mathrm b} = \vec w/|\vec w|$, the number $\psi$ is the boost's <strong>rapidity</strong> and $\hat u_{\mathrm b}$ its axis. The comparison of the two writings gives the dictionary</p>
+<p>$$
+\cosh\frac{\psi}{2} = \sqrt{\frac{1+\sigma}{2}}, \qquad \sinh\frac{\psi}{2} = \frac{|\vec w|}{\sqrt{2(1+\sigma)}} ,
+$$</p>
+<p>which are the half-angle identities applied to $\sigma = \cosh\psi$ and $|\vec w| = \sinh\psi$.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
-<th>factor</th>
-<th>parameter</th>
-<th>root</th>
-<th>its square</th>
+<th>boost datum</th>
+<th>symbol</th>
+<th>definition</th>
+<th>range</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>$r$</td>
-<td>$\ln r$</td>
-<td>$e_0$</td>
-<td>$+e_0$</td>
+<td>rapidity</td>
+<td>$\psi$</td>
+<td>$\cosh\psi = \sigma$</td>
+<td>$\psi \ge 0$</td>
 </tr>
 <tr>
-<td>$e^{i\alpha}$</td>
-<td>$\alpha$</td>
-<td>$i$</td>
-<td>$-e_0$</td>
-</tr>
-<tr>
-<td>$\tilde U_{\mathrm b}$</td>
-<td>$\frac{\psi}{2}$</td>
-<td>$i\hat u_{\mathrm b}$</td>
-<td>$+e_0$</td>
-</tr>
-<tr>
-<td>$\tilde u_{\mathrm r}$</td>
-<td>$\tfrac{\theta}{2}$</td>
-<td>$\hat u_{\mathrm r}$</td>
-<td>$-e_0$</td>
+<td>axis</td>
+<td>$\hat u_{\mathrm b}$</td>
+<td>$\vec w/\lvert\vec w\rvert$</td>
+<td>the axis sphere $\mathcal{A}$, the unit vectors of $\mathbb{R}^3$</td>
 </tr>
 </tbody>
 </table></div>
-<p>The scale is the degenerate case of the hyperbolic row: its exponent is the real scalar $\ln r$, its root is the algebra unit $e_0$, and the factor is positive by construction, since $r>0$. The phase and the rotor are the two roots of $-e_0$ of the trigonometric row, one central and one a real pure quaternion. The boost is the root of $+e_0$ of the hyperbolic row, the Hermitian $i\hat u_{\mathrm b}$. The positions of the four exponents in the algebra are the subject of the section on why there are four factors: the exponent of the boost lies in the Hermitian subspace $\mathbb{M}_+$, of real scalar part and purely imaginary vector part, and it is traceless because its scalar part vanishes; the exponent of the rotor lies in $\mathbb{M}_- \cap \mathrm{Vect}(\mathbb{B})$, the real pure quaternions, and a unit one squares to $-e_0$ because a real pure quaternion $x$ has $\langle x,x\rangle_{\natural} = -\,(x,x)$.</p>
-<p>The exponents of the two non-central factors carry half of the parameter of the transformation they produce. The boost exponent is $\frac{\psi}{2}\hat u_{\mathrm b}$, with $\psi$ the rapidity, and the conjugation by the boost produces a boost of rapidity $\psi$; the rotor exponent is $\frac{\theta}{2}\hat u_{\mathrm r}$, with $\theta$ the rotation angle, and the conjugation by the rotor produces a rotation by the angle $\theta$. Each non-central exponent therefore carries half of the parameter it produces, and the stored half is counted twice, which is the reading of the double cover on the exponents, the same doubling that §<em>What the Sandwich Sees</em> records.</p>
-<h3 id="the-two-cautions-of-the-exponential-reading">The Two Cautions of the Exponential Reading</h3>
-<p>The product of the four exponentials is <strong>not</strong> the exponential of the sum of the four exponents, because the two non-central exponents do not commute. The size of the failure is measured in the section on the order of the factors, where the same pair of factors gives $\|\exp(\log \tilde U_{\mathrm b} + \log\tilde u_{\mathrm r}) - \tilde U_{\mathrm b}\tilde u_{\mathrm r}\| = 0.160024643$ against $\|[\log \tilde U_{\mathrm b},\log\tilde u_{\mathrm r}]\| = 0.308850825$, and where the product of the four exponentials is shown to be order-free exactly when one of the two non-central factors is trivial or the two axes coincide.</p>
-<p><strong>The order cannot be changed, and the two non-central exponentials cannot be fused.</strong> Both facts are the non-vanishing of the bracket $[\log \tilde U_{\mathrm b},\log\tilde u_{\mathrm r}]$, which measures how far the boost and the rotor are from commuting. Over $60$ random boosts and rotors the largest coefficient of that bracket is $3.58$ and the largest coefficient of the failure $\exp(\log \tilde U_{\mathrm b}+\log\tilde u_{\mathrm r})-\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ of the sum rule is $0.76$. A non-zero bracket forbids two rewritings at once: the interchange of the two non-central exponents, and the replacement of their product by the exponential of their sum. The phase is central and passes through both, so the order that matters is the relative order of the boost and the rotor; the word $re^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ fixes that relative order, and no rewriting of the four exponents changes it. The element still has a single exponential, but its exponent is read off the element and is <strong>not</strong> the sum $\log \tilde U_{\mathrm b} + \log\tilde u_{\mathrm r}$.</p>
-<p>The last two exponentials collapse to a <strong>single</strong> one whenever the vector part of the element is non-null. Then $\tilde U_{\mathrm b}\tilde u_{\mathrm r} = \exp(\hat\Xi\Theta)$, with $\hat\Xi$ a root of $-1$ ($\hat\Xi\in\mathbb{B}$, $\hat\Xi^2 = -e_0$, the generator parallel to the vector part) and $\Theta\in\mathbb{C}$ the complex angle whose real part is the rotation angle and whose imaginary part is the rapidity, so that the element is the single exponential $\tilde{Q} = R\,\exp(\hat\Xi\Theta)$ with $R = re^{i\alpha}\in\mathbb{C}$ central. This is the Hamilton representation, the first of the three pairings, developed, with its domain and with its roots, in <em>The Hamilton Root Pairing of the Polar Element Representation of Biquaternions</em>, and the condition on the vector part, the constancy of $\Theta$ across the two orders and the numerical values are those of the section on the order of the factors.</p>
+<p>The boost carries three parameters, $\psi$ and the two angles of $\hat u_{\mathrm b}$, and the boost set is the three-dimensional hyperbolic space $H^3 = SL(2,\mathbb{C})/SU(2)$, the set of Lorentz boosts. The notation is the corpus's: $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat u_{\mathrm b}$ is the Lorentz boost biquaternion of the physics articles, Hermitian and of unit norm.</p>
+<h3 id="the-conjugations-and-the-trivial-boost">The Conjugations and the Trivial Boost</h3>
+<p><strong>Under the conjugations</strong> the quaternion conjugation and the coefficientwise conjugation replace the boost by its inverse, which is the boost of the same rapidity about the reflected axis, and the Hermitian conjugation fixes it, $\tilde U_{\mathrm b}^{*} = \tilde U_{\mathrm b}$.</p>
+<p><strong>The boost is trivial</strong> exactly when $\psi = 0$, that is, when $S = e_0$, equivalently when the unit-norm part $U$ is unitary; this holds on the centre and on the real quaternions.</p>
+<h2 id="the-rotor">The Rotor</h2>
+<p>The fourth factor is the <strong>rotor</strong>,</p>
+<p>$$
+\tilde u_{\mathrm r} = \exp\Bigl(\tfrac{\theta}{2}\hat u_{\mathrm r}\Bigr) = \cos\tfrac{\theta}{2}\,e_0 + \sin\tfrac{\theta}{2}\,\hat u_{\mathrm r} , \qquad \theta \in [0,2\pi], \qquad \hat u_{\mathrm r}\in\mathcal{A} ,
+$$</p>
+<p>the unit real quaternion of the word, written $\tilde u_{\mathrm r}$ for short.</p>
+<h3 id="the-exponent-and-the-root_1">The Exponent and the Root</h3>
+<p>The exponent $\tfrac{\theta}{2}\hat u_{\mathrm r}$ lies in $\mathbb{M}_- \cap \mathrm{Vect}(\mathbb{B})$, the real pure quaternions, the anti-Hermitian sector of the vector subspace; it is the only exponent that is neither central nor Hermitian. Its root is the real pure unit quaternion $\hat u_{\mathrm r}$, of square $-e_0$. The exponent carries half of the rotation angle: the conjugation by the rotor produces a rotation by the angle $\theta$. The rotor is compact and of real dimension $3$.</p>
+<h3 id="the-residual-and-its-unitarity">The Residual and Its Unitarity</h3>
+<p>The rotor is the residual factor,</p>
+<p>$$
+\tilde u_{\mathrm r} = \tilde U_{\mathrm b}^{-1}U = \tilde U_{\mathrm b}^{\natural}\,U ,
+$$</p>
+<p>where $\tilde U_{\mathrm b}^{-1} = \tilde U_{\mathrm b}^{\natural}$ because $\langle \tilde U_{\mathrm b},\tilde U_{\mathrm b}\rangle_{\natural} = 1$ and $\tilde U_{\mathrm b}\tilde U_{\mathrm b}^{\natural} = \langle \tilde U_{\mathrm b},\tilde U_{\mathrm b}\rangle_{\natural}e_0 = e_0$. An element is <strong>unitary</strong> when it preserves the sesquilinear form, $\tilde U^{*}\tilde U = e_0$, and the unitary elements form the group $U(\mathbb{B})\cong U(2)$ (<em>Conventions in Mathematics</em>, §<em>The Unitary Convention</em>); the condition is narrower than norm one. The rotor is unitary,</p>
+<p>$$
+\tilde u_{\mathrm r}\,\tilde u_{\mathrm r}^{*} = \tilde U_{\mathrm b}^{-1}UU^{*}\tilde U_{\mathrm b}^{-1} = \tilde U_{\mathrm b}^{-1}S\,\tilde U_{\mathrm b}^{-1} = \tilde U_{\mathrm b}^{-1}\tilde U_{\mathrm b}^2\tilde U_{\mathrm b}^{-1} = e_0 ,
+$$</p>
+<p>using $S = \tilde U_{\mathrm b}^2$ and the Hermitian character of $\tilde U_{\mathrm b}$, which lets $\tilde U_{\mathrm b}^{-1}$ pass through the product. So $\tilde u_{\mathrm r}$ lies in the unitary group $U(\mathbb{B})\cong U(2)$.</p>
+<h3 id="why-it-is-a-real-quaternion">Why It Is a Real Quaternion</h3>
+<p>More is true: $\tilde u_{\mathrm r}$ is a real quaternion, that is, an element of the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, all four of whose coefficients are real. Two conditions are needed and both hold. First,</p>
+<p>$$
+\langle\tilde u_{\mathrm r},\tilde u_{\mathrm r}\rangle_{\natural} = \frac{\langle U,U\rangle_{\natural}}{\langle \tilde U_{\mathrm b},\tilde U_{\mathrm b}\rangle_{\natural}} = 1 ,
+$$</p>
+<p>by multiplicativity, so $\tilde u_{\mathrm r}$ is a unimodular unitary element, hence in $SU(2)$ in the matrix model. Second, the elements of $\mathbb{B}$ that are simultaneously unitary and of unit norm are exactly the unit real quaternions: an element of $U(2)$ is of the form $e^{i\beta}\tilde A$ with $\tilde A$ a unit real quaternion, and its biquaternion norm is $\langle e^{i\beta}\tilde A,e^{i\beta}\tilde A\rangle_{\natural} = e^{2i\beta}\langle\tilde A,\tilde A\rangle_{\natural} = e^{2i\beta}$, so the additional condition $N = 1$ forces $e^{2i\beta} = 1$, hence $\beta = 0$ modulo $\pi$, and leaves $\tilde A$ up to the sign that $N = 1$ fixes.</p>
+<p>The rotor is therefore an element of</p>
+<p>$$
+\mathrm{Sp}(1) = \{\tilde u_{\mathrm r} \in \mathbb{H} : \tilde u_{\mathrm r}\tilde u_{\mathrm r}^{\natural} = 1\} = SU(2) ,
+$$</p>
+<p>the group of unit real quaternions, of dimension three. It is compact, and it is the same group that appears as the unit factor of the quaternion polar representation of the companion article. By the companion article on the Lorentz group, it acts on the material sector as a spatial rotation; the central phase $e^{i\alpha}$ has been split off from it, which is what distinguishes the present factor from the unitary factor of the matrix polar decomposition. Being non-central, the rotor does not commute with the boost, and that non-commutativity is the algebraic root of the Thomas-Wigner rotation of the physics articles: the product of two boosts is not a boost, and the discrepancy is a rotor.</p>
+<h3 id="the-conjugations-and-the-trivial-rotor">The Conjugations and the Trivial Rotor</h3>
+<p><strong>Under the conjugations</strong> the rotor is fixed by the coefficientwise conjugation and inverted by the quaternion and the Hermitian conjugation,</p>
+<p>$$
+\bar{\tilde u_{\mathrm r}} = \tilde u_{\mathrm r} , \qquad \tilde u_{\mathrm r}^{\natural} = \tilde u_{\mathrm r}^{*} = \tilde u_{\mathrm r}^{-1} .
+$$</p>
+<p><strong>The rotor is trivial</strong> exactly when the unit-norm part $U$ is Hermitian positive, that is, when $\tilde{Q} = \rho\,\tilde U_{\mathrm b}$.</p>
 <h2 id="why-four-factors">Why Four Factors</h2>
 <h3 id="the-centre-and-the-phase">The Centre and the Phase</h3>
-<p>The centre of $\mathbb{B}$ is $\mathbb{C}_{\mathbb{B}} \cong \mathbb{C}$, the complex scalars. An element of the centre commutes with everything, so a central factor can be moved through the other factors without changing the product, and the central group $U(1)$ is therefore a free one-parameter factor of any decomposition. The phase $e^{i\alpha}$ of the representation is this factor, and the corpus's articles on Noether's theorem and the gauge principle rest on the same centrality.</p>
+<p>The centre of $\mathbb{B}$ is $\mathbb{C}_{\mathbb{B}} \cong \mathbb{C}$, the complex scalars. An element of the centre commutes with everything, so a central factor can be moved through the other factors without changing the product, and the central group $U(1)$ is therefore a free one-parameter factor of any decomposition. The phase $e^{i\alpha}$ of the representation is this factor (§<em>The Central Phase</em>), and the corpus's articles on Noether's theorem and the gauge principle rest on the same centrality.</p>
 <h3 id="the-hermitian-and-the-anti-hermitian-halves">The Hermitian and the Anti-Hermitian Halves</h3>
 <p>The Hermitian conjugation ${}^{*}$ is an involution, so the algebra splits into its fixed space and its anti-fixed space,</p>
 <p>$$
@@ -400,187 +492,29 @@ $$</p>
 </tr>
 </tbody>
 </table></div>
-<h3 id="the-order-of-the-factors">The Order of the Factors</h3>
-<p><strong>The order is part of the word, because $\tilde U_{\mathrm b}$ is not central.</strong> The additivity $1+1+3+3 = 8$ counts the four factors as <strong>parameters</strong>, and it does not say that they may be written in any order. The four factors are unique as an ordered quadruple, in the word</p>
+<h2 id="the-order-of-the-factors">The Order of the Factors</h2>
+<p><strong>The order is part of the word, because the boost is not central.</strong> The additivity $1+1+3+3 = 8$ counts the four factors as <strong>parameters</strong>, and it does not say that they may be written in any order. The four factors are unique as an ordered quadruple, in the word</p>
 <p>$$
-\tilde{Q} = r\,e^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r} ,
+\tilde{Q} = r\,e^{i\alpha}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r} ,
 $$</p>
-<p>and the position of each factor in it is part of the statement. All four are exponentials of a single element, as the section <em>The Exponentials of the Factors</em> above records in full; among the four exponents only the scale and the phase are central, so the exponents do not commute.</p>
-<p>Since the centre $\mathbb{C}_{\mathbb{B}}$ is the whole of the central elements, the phase may be transposed at no cost, $e^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r} = \tilde U_{\mathrm b}\tilde u_{\mathrm r}\,e^{i\alpha}$ exactly, and the same holds for the scale. The other two factors may not be transposed. With $\tilde U_{\mathrm b}$ of rapidity $\psi = 0.7$ about $\hat u_{\mathrm b} = (1,0.3,0.2)/\|(1,0.3,0.2)\|$ and $\tilde u_{\mathrm r}$ of stored half-angle $\theta/2 = 0.6$ about $\hat u_{\mathrm r} = (\sin0.5,\ 0,\ \cos0.5)$,</p>
-<p>$$
-\left\|\tilde U_{\mathrm b}\tilde u_{\mathrm r} - \tilde u_{\mathrm r}\tilde U_{\mathrm b}\right\| = 0.296621057 ,
-$$</p>
-<p>where $\|\cdot\|$ denotes the largest modulus among the coefficient differences. The difference vanishes exactly when the two axes are parallel, and then the word is a single boost-rotation about the common axis. In general the two orders are related by a conjugation,</p>
+<p>and the position of each factor in it is part of the statement. Among the four exponents only the scale and the phase are central, so the exponents do not commute.</p>
+<p><strong>The two central factors are free.</strong> Since the centre $\mathbb{C}_{\mathbb{B}}$ is the whole of the central elements, the phase may be transposed at no cost, $e^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r} = \tilde U_{\mathrm b}\tilde u_{\mathrm r}\,e^{i\alpha}$ exactly, and the same holds for the scale. The other two factors may not. The product $\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ differs from $\tilde u_{\mathrm r}\tilde U_{\mathrm b}$ as soon as the two axes are not parallel, and the difference vanishes exactly when they are, and then the word is a single boost-rotation about the common axis. In general the two orders are related by a conjugation,</p>
 <p>$$
 \tilde u_{\mathrm r}\tilde U_{\mathrm b} = \left(\tilde u_{\mathrm r}\tilde U_{\mathrm b}\tilde u_{\mathrm r}^{-1}\right)\tilde u_{\mathrm r} ,
 $$</p>
 <p>so reversing the order replaces the boost by the conjugate boost: the rapidity is unchanged, the axis is rotated by the rotor, and the element is a different one. The modulus is not affected, since a conjugation preserves the biquaternion norm, so the reversed word has the same $r$ and the same $\alpha$: the non-commutativity lives in the last two factors alone.</p>
-<p>Both orders are single exponentials of the Hamilton form, and comparing their exponents shows what the order does and does not change. For the same pair,</p>
+<p><strong>The product is not the exponential of the sum.</strong> Both orders are single exponentials of the Hamilton form, and comparing their exponents shows what the order changes: the complex angle $\Theta$, whose imaginary part is the rapidity and whose real part is the rotation angle, is the same in both orders, and only the root of $-1$ changes. The exponent of a <strong>product</strong> is a different matter and is not the sum of the exponents of the factors,</p>
 <p>$$
-\tilde U_{\mathrm b}\tilde u_{\mathrm r} = \exp(\xi_1\Theta) , \qquad \tilde u_{\mathrm r}\tilde U_{\mathrm b} = \exp(\xi_2\Theta) , \qquad \Theta = 0.549803506 + 0.235625491\,i , \qquad \left\|\xi_1 - \xi_2\right\| = 0.553422443 ,
+\exp\left(\log \tilde U_{\mathrm b} + \log\tilde u_{\mathrm r}\right)\neq \tilde U_{\mathrm b}\tilde u_{\mathrm r} ,
 $$</p>
-<p>with $\xi_1,\xi_2$ roots of $-1$: the complex angle $\Theta$, whose imaginary part is the rapidity and whose real part is the rotation angle, is the same in both orders, and only the root changes. The exponent of a <strong>product</strong> is a different matter and is not the sum of the exponents of the factors,</p>
-<p>$$
-\exp\left(\log \tilde U_{\mathrm b} + \log\tilde u_{\mathrm r}\right)\neq \tilde U_{\mathrm b}\tilde u_{\mathrm r} , \qquad \left\|\exp\left(\log \tilde U_{\mathrm b} + \log\tilde u_{\mathrm r}\right) - \tilde U_{\mathrm b}\tilde u_{\mathrm r}\right\| = 0.160024643 , \qquad \left\|\left[\log \tilde U_{\mathrm b},\ \log\tilde u_{\mathrm r}\right]\right\| = 0.308850825 \neq 0 ,
-$$</p>
-<p>so the rapidity of a product is not the sum of the rapidities, and its rotation angle is not the sum of the rotation angles. Only the modulus is additive, $r = r_1r_2$ and $\alpha = \alpha_1 + \alpha_2$, and it is exactly so.</p>
-<p>The non-commutativity is a property of the boost factor rather than of the representation. The boost $\tilde U_{\mathrm b}$ is Hermitian and positive definite of norm one, so it is a multiple of the unit only when $\tilde U_{\mathrm b} = e_0$; it is therefore non-central whenever it is nontrivial, and that non-centrality is what forbids the transposition. The word becomes order-free in exactly the cases in which one of the two non-central factors is trivial or the two axes coincide: on the two halves, where $\tilde U_{\mathrm b} = e_0$; on the branches of the two sectors on which the rotor is $\pm e_0$; on the centre, where both are trivial; and for a rotor about the axis of the boost. In the last case the element is a single boost-rotation, which is why two boosts along the same line have no residual rotation.</p>
-<p>The three pairings of the companion articles are not reorderings of the word. All three keep $\tilde U_{\mathrm b}$ before $\tilde u_{\mathrm r}$; what a pairing moves is the single central factor, and where it needs the two non-central factors in the other order — as the complex form does, to stand its boost to the right of its modulus — it pays with a conjugation $\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, which is the boost about the rotated axis and not the original boost. The freedom of grouping and the lack of freedom of ordering are different freedoms, and the count $1+1+3+3$ is silent about both.</p>
-<h2 id="the-complex-modulus">The Complex Modulus</h2>
-<h3 id="the-biquaternion-norm">The Biquaternion Norm</h3>
-<p>The biquaternion norm is</p>
-<p>$$
-\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_{\mu=0}^{3}Q_\mu^2 ,
-$$</p>
-<p>the sum of the squares of the four complex coefficients. It is a complex number, it is central, and it is multiplicative,</p>
-<p>$$
-\langle\tilde{P}\tilde{Q},\tilde{P}\tilde{Q}\rangle_{\natural} = \langle\tilde{P},\tilde{P}\rangle_{\natural}\langle\tilde{Q},\tilde{Q}\rangle_{\natural}.
-$$</p>
-<p>In the matrix model it is the determinant, $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \det\mathsf{M}_2(\tilde{Q})$, so $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$ is exactly the condition that $\tilde{Q}$ be a zero divisor, and the set $\{N = 0\}$ is the algebra's null cone.</p>
-<h3 id="the-square-root-and-the-branch">The Square Root and the Branch</h3>
-<p>The modulus is the square root of the biquaternion norm. To make it single valued, fix the branch once and for all. Write the biquaternion norm in polar form in $\mathbb{C}$,</p>
-<p>$$
-\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = |\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|\,e^{i\varphi}, \qquad \varphi = \arg \langle\tilde{Q},\tilde{Q}\rangle_{\natural} \in (-\pi,\pi] ,
-$$</p>
-<p>and define</p>
-<p>$$
-\rho = \sqrt{|\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|}\;e^{i\varphi/2} ,
-$$</p>
-<p>which is the principal square root of $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$. Its modulus and argument are</p>
-<p>$$
-r = |\rho| = \sqrt{|\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|} \ \ge 0, \qquad \alpha = \arg\rho = \frac{\varphi}{2} \in \left(-\frac{\pi}{2},\frac{\pi}{2}\right] .
-$$</p>
-<p>The pair $(r,\alpha)$ is unique: the modulus is non-negative by construction and the angle lies in a half-open interval of length $\pi$, so no two pairs give the same $\rho$. The square root $\rho$ is one of the two solutions of $\tilde T^2 = \langle\tilde{Q},\tilde{Q}\rangle_{\natural}$, and the branch choice above selects one of them; the other, $-\rho$, has angle $\alpha\pm\pi$ and is outside the interval.</p>
-<h3 id="the-positive-real-part-and-the-phase">The Positive Real Part and the Phase</h3>
-<p>The modulus is the first two factors of the decomposition written as one,</p>
-<p>$$
-\rho = r\,e^{i\alpha},
-$$</p>
-<p>with $r$ a positive real and $e^{i\alpha}$ central. This is the sense in which the representation always supplies a positive real factor: the positive real part of the complex square root of the biquaternion norm exists whenever the biquaternion norm is nonzero, and it is the absolute value $|\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|^{1/2}$.</p>
-<p>The phase is not a normalisation constant, and its value carries information: it is one half of the argument of the determinant of $\tilde{Q}$, and it is nonzero exactly when $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}$ is not a positive real. In the physical reading of the companion articles, $e^{i\alpha}$ is the central phase that the corpus's Noether and gauge articles identify as the algebra's continuous symmetry.</p>
-<h2 id="the-hermitian-positive-factor">The Hermitian Positive Factor</h2>
-<h3 id="the-element-of-unit-norm">The Element of Unit Norm</h3>
-<p>The word <strong>unit</strong> is the corpus's, and it is relative to the norm: a <strong>unit element</strong> is an element of norm one, the norm being the one in view (<em>Conventions in Mathematics</em>, §<em>The Unitary Convention</em>). The norm in view here is the biquaternion norm $N = \langle\cdot,\cdot\rangle_{\natural}$, whose unit elements are the level set $\mathbb{B}^{\times}_1 = \{N = e_0\}$, the group of unit-norm elements, the special linear group $SL(2,\mathbb{C})$ in the matrix picture. A <strong>unitary</strong> element, by contrast, is one that preserves the sesquilinear form, and it is a narrower object, defined in the next section.</p>
-<p>Divide the biquaternion by its modulus:</p>
-<p>$$
-U = \frac{\tilde{Q}}{\rho} .
-$$</p>
-<p>Then $U$ has unit norm,</p>
-<p>$$
-\langle U,U\rangle_{\natural} = \frac{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}{\rho^2} = \frac{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}} = 1 ,
-$$</p>
-<p>so $U$ lies in the algebra's analogue of the special linear group, and the whole content of the decomposition now sits in the split $U = \tilde U_{\mathrm b}\tilde u_{\mathrm r}$.</p>
-<h3 id="the-square-root-of-math263">The Square Root of $UU^{*}$</h3>
-<p>Form the Hermitian element</p>
-<p>$$
-S = U U^{*} .
-$$</p>
-<p>It is Hermitian, since $S^{*} = (UU^{*})^{*} = UU^{*} = S$, and it is positive definite, because in the matrix model $\mathsf{M}_2(S) = \mathsf{M}_2(U)\mathsf{M}_2(U)^\dagger$ is a positive definite Hermitian matrix whenever $\mathsf{M}_2(U)$ is invertible. Its biquaternion norm is</p>
-<p>$$
-\langle S,S\rangle_{\natural} = \langle U,U\rangle_{\natural}\,\langle U^{*},U^{*}\rangle_{\natural} = \langle U,U\rangle_{\natural}\,\langle U,U\rangle_{\natural}^{*} = 1 ,
-$$</p>
-<p>using multiplicativity, the reality of $\langle U,U\rangle_{\natural} = 1$, and $\langle U^{*},U^{*}\rangle_{\natural} = \langle U,U\rangle_{\natural}^*$.</p>
-<p>The element $S$ is not itself the boost. The boost is its Hermitian positive square root,</p>
-<p>$$
-\tilde U_{\mathrm b} = \sqrt{S} , \qquad \tilde U_{\mathrm b}^2 = S ,
-$$</p>
-<p>which exists and is unique: a positive definite Hermitian matrix has exactly one positive definite Hermitian square root, and the condition $\langle S,S\rangle_{\natural} = 1$ is inherited as $\langle \tilde U_{\mathrm b},\tilde U_{\mathrm b}\rangle_{\natural}^2 = \langle S,S\rangle_{\natural} = 1$, so $\langle \tilde U_{\mathrm b},\tilde U_{\mathrm b}\rangle_{\natural} = 1$ for the positive root. The element $\tilde U_{\mathrm b}$ is not arbitrary in $\mathbb{M}_+$: the square root of a norm-one element has norm one, and that is the normalisation of the boost.</p>
-<h3 id="the-closed-form-of-the-boost">The Closed Form of the Boost</h3>
-<p>The matrix square root can be written out in the algebra, and this is what makes the decomposition an algorithm rather than an existence statement. Write the Hermitian element $S$ in its own parameters,</p>
-<p>$$
-S = \sigma\,e_0 + i\vec w, \qquad \sigma \in \mathbb{R}, \qquad \vec w \in \mathbb{R}^3 ,
-$$</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>symbol</th>
-<th>meaning</th>
-<th>range</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>$\sigma$</td>
-<td>the real scalar part of $S$</td>
-<td>$\sigma = \tfrac12\operatorname{tr}\mathsf{M}_2(S) \ge 1$</td>
-</tr>
-<tr>
-<td>$\vec w$</td>
-<td>the purely imaginary vector part of $S$</td>
-<td>$\lvert\vec w\rvert^2 = \sigma^2 - 1$</td>
-</tr>
-</tbody>
-</table></div>
-<p>with real scalar part $\sigma$ and purely imaginary vector part $i\vec w$. The bound $\sigma \ge 1$ holds because the two eigenvalues of a positive definite matrix of determinant one and trace $2\sigma$ are positive and multiply to one; and</p>
-<p>$$
-\tilde U_{\mathrm b} = \sqrt{\frac{1+\sigma}{2}}\;e_0 + \frac{i\,\vec w}{\sqrt{2(1+\sigma)}} .
-$$</p>
-<p>$$
-\frac{1+\sigma}{2} - \frac{|\vec w|^2}{2(1+\sigma)} = \frac{(1+\sigma)^2 - |\vec w|^2}{2(1+\sigma)} = \frac{2\sigma(1+\sigma)}{2(1+\sigma)} = \sigma ,
-$$</p>
-<p>where $|\vec w|^2 = \sigma^2-1$ was used, which is the statement $\langle S,S\rangle_{\natural} = \sigma^2-|\vec w|^2 = 1$ for the Hermitian element $S$. The result is $\sigma + i\vec w = S$.</p>
-<h3 id="the-rapidity-and-the-axis">The Rapidity and the Axis</h3>
-<p>The closed form shows that the boost is determined by one positive number and one direction. Writing</p>
-<p>$$
-\tilde U_{\mathrm b} = \cosh\frac{\psi}{2}\,e_0 + i\sinh\frac{\psi}{2}\,\hat u_{\mathrm b} , \qquad \psi \ge 0, \qquad \hat u_{\mathrm b} \in \mathcal{A} ,
-$$</p>
-<p>with $\cosh\psi = \sigma$ and $\hat u_{\mathrm b} = \vec w/|\vec w|$, the number $\psi$ is the boost's <strong>rapidity</strong> and $\hat u_{\mathrm b}$ its axis. The comparison of the two writings gives the dictionary</p>
-<p>$$
-\cosh\frac{\psi}{2} = \sqrt{\frac{1+\sigma}{2}}, \qquad \sinh\frac{\psi}{2} = \frac{|\vec w|}{\sqrt{2(1+\sigma)}} ,
-$$</p>
-<p>which are the half-angle identities applied to $\sigma = \cosh\psi$ and $|\vec w| = \sinh\psi$.</p>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>boost datum</th>
-<th>symbol</th>
-<th>definition</th>
-<th>range</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>rapidity</td>
-<td>$\psi$</td>
-<td>$\cosh\psi = \sigma$</td>
-<td>$\psi \ge 0$</td>
-</tr>
-<tr>
-<td>axis</td>
-<td>$\hat u_{\mathrm b}$</td>
-<td>$\vec w/\lvert\vec w\rvert$</td>
-<td>the axis sphere $\mathcal{A}$, the unit vectors of $\mathbb{R}^3$</td>
-</tr>
-</tbody>
-</table></div>
-<p>The boost therefore carries three parameters, $\psi$ and the two angles of $\hat u_{\mathrm b}$, and the boost set is the three-dimensional hyperbolic space $H^3$ of the previous section, the set of Lorentz boosts. The notation is the corpus's: $\tilde{\Lambda} = \cosh\frac{\psi}{2} + i\sinh\frac{\psi}{2}\hat u_{\mathrm b}$ is the Lorentz boost biquaternion of the physics articles, Hermitian and of unit norm.</p>
-<h2 id="the-unitary-factor">The Unitary Factor</h2>
-<h3 id="the-residual-and-its-unitarity">The Residual and Its Unitarity</h3>
-<p>The rotor is the residual factor,</p>
-<p>$$
-\tilde u_{\mathrm r} = \tilde U_{\mathrm b}^{-1}U = \tilde U_{\mathrm b}^{\natural}\,U ,
-$$</p>
-<p>where $\tilde U_{\mathrm b}^{-1} = \tilde U_{\mathrm b}^{\natural}$ because $\langle \tilde U_{\mathrm b},\tilde U_{\mathrm b}\rangle_{\natural} = 1$ and $\tilde U_{\mathrm b}\tilde U_{\mathrm b}^{\natural} = \langle \tilde U_{\mathrm b},\tilde U_{\mathrm b}\rangle_{\natural}e_0 = e_0$. An element is <strong>unitary</strong> when it preserves the sesquilinear form, $\tilde U^{*}\tilde U = e_0$, and the unitary elements form the group $U(\mathbb{B})\cong U(2)$ (<em>Conventions in Mathematics</em>, §<em>The Unitary Convention</em>); the condition is narrower than norm one. The rotor is unitary,</p>
-<p>$$
-\tilde u_{\mathrm r}\,\tilde u_{\mathrm r}^{*} = \tilde U_{\mathrm b}^{-1}UU^{*}\tilde U_{\mathrm b}^{-1} = \tilde U_{\mathrm b}^{-1}S\,\tilde U_{\mathrm b}^{-1} = \tilde U_{\mathrm b}^{-1}\tilde U_{\mathrm b}^2\tilde U_{\mathrm b}^{-1} = e_0 ,
-$$</p>
-<p>using $S = \tilde U_{\mathrm b}^2$ and the Hermitian character of $\tilde U_{\mathrm b}$, which lets $\tilde U_{\mathrm b}^{-1}$ pass through the product. So $\tilde u_{\mathrm r}$ lies in the unitary group $U(\mathbb{B})\cong U(2)$.</p>
-<h3 id="why-it-is-a-real-quaternion">Why It Is a Real Quaternion</h3>
-<p>More is true: $\tilde u_{\mathrm r}$ is a real quaternion, that is, an element of the quaternion subspace $\mathbb{H}_{\mathbb{B}}$, all four of whose coefficients are real. Two conditions are needed and both hold. First,</p>
-<p>$$
-\langle\tilde u_{\mathrm r},\tilde u_{\mathrm r}\rangle_{\natural} = \frac{\langle U,U\rangle_{\natural}}{\langle \tilde U_{\mathrm b},\tilde U_{\mathrm b}\rangle_{\natural}} = 1 ,
-$$</p>
-<p>by multiplicativity, so $\tilde u_{\mathrm r}$ is a unimodular unitary element, hence in $SU(2)$ in the matrix model. Second, the elements of $\mathbb{B}$ that are simultaneously unitary and of unit norm are exactly the unit real quaternions: an element of $U(2)$ is of the form $e^{i\beta}\tilde A$ with $\tilde A$ a unit real quaternion, and its biquaternion norm is $\langle e^{i\beta}\tilde A,e^{i\beta}\tilde A\rangle_{\natural} = e^{2i\beta}\langle\tilde A,\tilde A\rangle_{\natural} = e^{2i\beta}$, so the additional condition $N = 1$ forces $e^{2i\beta} = 1$, hence $\beta = 0$ modulo $\pi$, and leaves $\tilde A$ up to the sign that $N = 1$ fixes.</p>
-<p>The rotor is therefore an element of</p>
-<p>$$
-\mathrm{Sp}(1) = \{\tilde u_{\mathrm r} \in \mathbb{H} : \tilde u_{\mathrm r}\tilde u_{\mathrm r}^{\natural} = 1\} = SU(2) ,
-$$</p>
-<p>the group of unit real quaternions, of dimension three. It is compact, and it is the same group that appears as the unit factor of the quaternion polar representation of the companion article. By the companion article on the Lorentz group, it acts on the material sector as a spatial rotation; the central phase $e^{i\alpha}$ has been split off from it, which is what distinguishes the present factor from the unitary factor of the matrix polar decomposition.</p>
+<p>because the two non-central exponents do not commute, their bracket $[\log \tilde U_{\mathrm b},\log\tilde u_{\mathrm r}]$ being non-zero in general. A non-zero bracket forbids two rewritings at once: the interchange of the two non-central exponents, and the replacement of their product by the exponential of their sum. So the rapidity of a product is not the sum of the rapidities, and its rotation angle is not the sum of the rotation angles; only the modulus is additive, $r = r_1r_2$ and $\alpha = \alpha_1 + \alpha_2$, and it is exactly so.</p>
+<p><strong>The word is order-free in a short list of cases.</strong> The word becomes order-free in exactly the cases in which one of the two non-central factors is trivial or the two axes coincide: on the two halves, where $\tilde U_{\mathrm b} = e_0$; on the branches of the two sectors on which the rotor is $\pm e_0$; on the centre, where both are trivial; and for a rotor about the axis of the boost. In the last case the element is a single boost-rotation, which is why two boosts along the same line have no residual rotation.</p>
+<p><strong>The three pairings are not reorderings.</strong> All three keep the boost before the rotor; what a pairing moves is the single central factor, and where it needs the two non-central factors in the other order — as the complex form does, to stand its boost to the right of its modulus — it pays with a conjugation $\tilde u_{\mathrm r}^{-1}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$, which is the boost about the rotated axis and not the original boost. The freedom of grouping and the lack of freedom of ordering are different freedoms, and the count $1+1+3+3$ is silent about both. The numerical illustration of the two orders is in <em>The Polar Decomposition of Biquaternions in Practice</em>.</p>
 <h2 id="the-theorem">The Theorem</h2>
 <h3 id="statement">Statement</h3>
 <p><strong>Theorem (polar representation).</strong> Let $\tilde{Q}\in\mathbb{B}$ with $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$. Then there are unique</p>
 <p>$$
-r \in \mathbb{R}, \quad r>0, \qquad \alpha \in \left(-\frac{\pi}{2},\frac{\pi}{2}\right], \qquad \tilde U_{\mathrm b} = \cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\hat u_{\mathrm b} \in \mathbb{M}_+, \qquad \tilde u_{\mathrm r} \in \mathrm{Sp}(1),
+r \in \mathbb{R}, \quad r>0, \qquad \alpha \in \left(-\frac{\pi}{2},\frac{\pi}{2}\right], \qquad \tilde U_{\mathrm b} = \cosh\frac{\psi}{2}\,e_0+i\sinh\frac{\psi}{2}\,\hat u_{\mathrm b} \in \mathbb{M}_+, \qquad \tilde u_{\mathrm r} \in \mathrm{Sp}(1),
 $$</p>
 <p>such that</p>
 <p>$$
@@ -588,7 +522,7 @@ $$</p>
 $$</p>
 <p>Equivalently, $\tilde{Q} = \rho \tilde U_{\mathrm b}\tilde u_{\mathrm r}$ with $\rho = re^{i\alpha} = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$ the principal square root.</p>
 <h3 id="existence">Existence</h3>
-<p>The construction of the three preceding sections gives the factors: $\rho$ from the branch of the square root of the biquaternion norm, $U = \tilde{Q}/\rho$ of unit norm, $S = UU^{*}$ Hermitian positive definite of norm one, $\tilde U_{\mathrm b} = \sqrt{S}$ its unique Hermitian positive square root, and $\tilde u_{\mathrm r} = \tilde U_{\mathrm b}^{-1}U$, which is unitary and of norm one, hence a unit real quaternion. The product reproduces the element,</p>
+<p>The construction of §<em>The Boost</em> and §<em>The Rotor</em> gives the factors: $\rho$ from the branch of the square root of the biquaternion norm, $U = \tilde{Q}/\rho$ of unit norm, $S = UU^{*}$ Hermitian positive definite of norm one, $\tilde U_{\mathrm b} = \sqrt{S}$ its unique Hermitian positive square root, and $\tilde u_{\mathrm r} = \tilde U_{\mathrm b}^{-1}U$, which is unitary and of norm one, hence a unit real quaternion. The product reproduces the element,</p>
 <p>$$
 r\,e^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r} = \rho\,\tilde U_{\mathrm b}\left(\tilde U_{\mathrm b}^{-1}U\right) = \rho U = \tilde{Q} .
 $$</p>
@@ -613,133 +547,14 @@ $$</p>
 <p>$$
 r(\psi)\,\tilde U_{\mathrm b}(\psi) = e^{-\psi/2}\left(\cosh\tfrac{\psi}{2}\,e_0 - i\sinh\tfrac{\psi}{2}\,e_3\right) \longrightarrow \tfrac12\left(e_0 - ie_3\right), \qquad \psi \to \infty,
 $$</p>
-<p>verified at $\psi = 20, 40, 80$, the difference from the limit being exactly $\tfrac12e^{-\psi}$ in each of the two non-zero coefficients. The limit is the minimal idempotent $\tfrac12(e_0 + \hat\Xi i)$ with $\hat\Xi = -e_3$, the object classified in the companion article on biquaternion zero divisors: Hermitian, of norm zero, and idempotent. The word at the boundary therefore keeps a real scale and a trigonometric factor and fills the hyperbolic slot with a Hermitian idempotent of norm zero, one factor short of the four. Sangwine &amp; Hitzer exhibit the same degeneration on a divisor of zero,</p>
+<p>the difference from the limit being exactly $\tfrac12e^{-\psi}$ in each of the two non-zero coefficients, as $e^{-\psi/2}\cosh(\psi/2)=(1+e^{-\psi})/2$ gives. The limit is the minimal idempotent $\tfrac12(e_0 + \hat\Xi i)$ with $\hat\Xi = -e_3$, the object classified in the companion article on biquaternion zero divisors: Hermitian, of norm zero, and idempotent. The word at the boundary therefore keeps a real scale and a trigonometric factor and fills the hyperbolic slot with a Hermitian idempotent of norm zero, one factor short of the four. Sangwine &amp; Hitzer exhibit the same degeneration on a divisor of zero,</p>
 <p>$$
 \tilde P = \tfrac12\left(e_0 + e_1 + ie_2 - ie_3\right) = \sqrt2\cdot\frac{e_0+e_1}{\sqrt2}\cdot\tfrac12\left(e_0 - ie_3\right),
 $$</p>
 <p>whose last factor is that idempotent, and whose numerical factor $\sqrt2$ is not the modulus of $\tilde P$, which vanishes, but the modulus of the real part of $\tilde P$. The unbounded direction of the boost group and the null cone are thus a single cone, seen once as the boundary of the domain and once as the set of minimal idempotents, and the failure at that boundary is the collapse of the boost's positive factor rather than a discontinuity of the algebra.</p>
 <h2 id="the-algorithm">The Algorithm</h2>
-<h3 id="the-five-steps">The Five Steps</h3>
-<p>The proof above is effective, and it is worth recording as a procedure. Given $\tilde{Q}$ with $\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\neq0$:</p>
-<ol>
-<li>Compute the biquaternion norm $N = \sum_\mu Q_\mu^2 \in \mathbb{C}$.</li>
-<li>Take its principal square root: write $N = |N|e^{i\varphi}$ with $\varphi\in(-\pi,\pi]$, and put $\rho = \sqrt{|N|}e^{i\varphi/2}$, so that $r = \sqrt{|N|}$ and $\alpha = \varphi/2$.</li>
-<li>Put $U = \tilde{Q}/\rho$, of unit norm.</li>
-<li>Compute $S = UU^{*}$, and write it as $\sigma e_0 + i\vec w$ with $\sigma\in\mathbb{R}$, $\vec w\in\mathbb{R}^3$; then put
-$\tilde U_{\mathrm b} = \sqrt{\frac{1+\sigma}{2}}\,e_0 + \frac{i\vec w}{\sqrt{2(1+\sigma)}}$, and read the rapidity and axis off by $\cosh\psi = \sigma$, $\hat u_{\mathrm b} = \vec w/|\vec w|$.</li>
-<li>Put $\tilde u_{\mathrm r} = \tilde U_{\mathrm b}^{\natural}U$, and verify that its coefficients are real and that $\langle\tilde u_{\mathrm r},\tilde u_{\mathrm r}\rangle_{\natural} = 1$.</li>
-</ol>
-<p>The factors so obtained satisfy $\tilde{Q} = r e^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ identically. The only step that requires a convention rather than a formula is step 2, where the branch of the square root is fixed by $\alpha \in (-\pi/2,\pi/2]$; the other four steps are forced.</p>
-<h3 id="a-worked-example-step-by-step">A Worked Example, Step by Step</h3>
-<p>Take</p>
-<p>$$
-\tilde{Q} = (1+i)e_0 + e_1 + 2e_2 ,
-$$</p>
-<p>whose coefficients are $Q_0 = 1+i$, $Q_1 = 1$, $Q_2 = 2$, $Q_3 = 0$.</p>
-<p><em>Step 1.</em> The biquaternion norm is $N = (1+i)^2+1^2+2^2+0 = 2i+5 = 5+2i$, of modulus $|N| = \sqrt{29} = 5.385164807$ and argument $\arg N = 0.380506377$ rad.</p>
-<p><em>Step 2.</em> The modulus is $\rho = \sqrt{5.385164807}\,e^{0.190253189\,i} = 2.278723854 + 0.438842117 i$, hence</p>
-<p>$$
-r = 2.320595787 , \qquad \alpha = 0.190253189\ \text{rad} \approx 10.9007^\circ .
-$$</p>
-<p><em>Step 3.</em> Dividing, $U = \tilde{Q}/\rho$ has coefficients</p>
-<p>$$
-U_0 = 0.504639332+0.341657461i, \quad U_1 = 0.423148397-0.081490935i, \quad U_2 = 0.846296793-0.162981871i, \quad U_3 = 0 ,
-$$</p>
-<p>and $\langle U,U\rangle_{\natural} = 1$ as required.</p>
-<p><em>Step 4.</em> The Hermitian element $S = UU^{*}$ is</p>
-<p>$$
-S = 1.299867367\,e_0 - 0.371390676\,i\,e_1 - 0.742781353\,i\,e_2 ,
-$$</p>
-<p>so $\sigma = 1.299867367$, $\vec w = (-0.371390676, -0.742781353, 0)$ and $|\vec w| = 0.830454799$; the identity $\sigma^2-|\vec w|^2 = 1$ holds to $7\times10^{-16}$. The boost is therefore</p>
-<p>$$
-\tilde U_{\mathrm b} = 1.072349609\,e_0 - 0.173166789\,i\,e_1 - 0.346333577\,i\,e_2 ,
-$$</p>
-<p>with rapidity $\psi = 2\operatorname{arccosh}(1.072349609) = 0.756273220$, corresponding to the speed $\tanh(\psi/2) = 0.361088126$ in units $c = 1$, and axis $\hat u_{\mathrm b} = -(1,2,0)/\sqrt{5}$. The verification $\tilde U_{\mathrm b}^2 = S$ was carried out to $2.2\times10^{-16}$ in the coefficients.</p>
-<p><em>Step 5.</em> The rotor is</p>
-<p>$$
-\tilde u_{\mathrm r} = \tilde U_{\mathrm b}^{\natural}U = 0.470592172\,e_0 + 0.394599292\,e_1 + 0.789198585\,e_2 ,
-$$</p>
-<p>all of whose coefficients are real, with $\langle\tilde u_{\mathrm r},\tilde u_{\mathrm r}\rangle_{\natural} = 1$; its rotation angle is $\theta = 2.161669$ rad about the axis $(1,2,0)/\sqrt{5}$.</p>
-<p>The reconstruction $\tilde{Q} = r e^{i\alpha}\tilde U_{\mathrm b}\tilde u_{\mathrm r}$ was verified in double precision and agrees with $\tilde{Q}$ to $1.6\times10^{-16}$ in each coefficient. Note that the boost axis and the rotation axis are opposite in this example, which is a coincidence of the element and not a structural relation: no relation between the two axes is imposed by the decomposition, and a random element generally has them unrelated.</p>
-<p><em>The four exponents of this example.</em> The four factors are exponentials, and their exponents to the nine decimals used above are</p>
-<p>$$
-\ln r = 0.841823957 , \qquad \alpha = 0.190253189 , \qquad \frac{\psi}{2} = 0.378136610 , \qquad \frac{\theta}{2} = 1.080834539 ,
-$$</p>
-<p>the boost about $\hat u_{\mathrm b} = -(1,2,0)/\sqrt5$ and the rotor about $\hat u_{\mathrm r} = (1,2,0)/\sqrt5$, so that the word is the ordered product of four exponentials</p>
-<p>$$
-\tilde{Q} = \exp(0.841823957)\,\exp(0.190253189\,i)\,\exp\bigl(i\,0.378136610\,\hat u_{\mathrm b}\bigr)\,\exp\bigl(1.080834539\,\hat u_{\mathrm r}\bigr) .
-$$</p>
-<p>Rebuilding $\tilde U_{\mathrm b}$ and $\tilde u_{\mathrm r}$ from the last two exponents reproduces the factors of Steps 4 and 5; the full parameters are the rapidity $\psi = 0.756273220$ and the rotation angle $\theta = 2.161669078$, each twice its stored half.</p>
-<h3 id="a-second-example-an-element-already-in-polar-form">A Second Example: an Element Already in Polar Form</h3>
-<p>Take the Lorentz boost biquaternion of the physics articles with speed $0.6c$ along $e_1$,</p>
-<p>$$
-\tilde{\Lambda} = \cosh\frac{\psi}{2}\,e_0 + i\sinh\frac{\psi}{2}\,e_1 , \qquad \psi = \operatorname{atanh}0.6 = 0.693147181 ,
-$$</p>
-<p>so that $\tilde{\Lambda} = 1.060660172\,e_0 + 0.353553391\,i\,e_1$. Its biquaternion norm is $N = \cosh^2\frac{\psi}{2}-\sinh^2\frac{\psi}{2} = 1$, a positive real, so the modulus is $\rho = 1$, the scale is $r = 1$ and the phase is $\alpha = 0$. The remaining construction returns $U = \tilde{\Lambda}$, $S = \tilde{\Lambda}^2$, $\tilde U_{\mathrm b} = \tilde{\Lambda}$ and $\tilde u_{\mathrm r} = e_0$, so that the four-factor form collapses to</p>
-<p>$$
-\tilde{\Lambda} = 1\cdot e^{i\cdot0}\cdot\tilde{\Lambda}\cdot e_0 .
-$$</p>
-<p>The example is the reason the representation is a strict refinement of the physics convention: a Lorentz rotor is already in polar form, with two of its four factors trivial.</p>
-<h2 id="the-four-factors-and-their-meanings">The Four Factors and Their Meanings</h2>
-<h3 id="the-table-of-the-factors">The Table of the Factors</h3>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>factor</th>
-<th>symbol</th>
-<th>range</th>
-<th>real dimension</th>
-<th>what it is</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>scale</td>
-<td>$r$</td>
-<td>$(0,\infty)$</td>
-<td>$1$</td>
-<td>the absolute value of the complex modulus</td>
-</tr>
-<tr>
-<td>phase</td>
-<td>$e^{i\alpha}$</td>
-<td>$U(1)$, $\alpha\in(-\pi/2,\pi/2]$</td>
-<td>$1$</td>
-<td>the central phase, half the argument of the biquaternion norm</td>
-</tr>
-<tr>
-<td>boost</td>
-<td>$\tilde U_{\mathrm b}$</td>
-<td>$\cosh\frac{\psi}{2}+i\sinh\frac{\psi}{2}\hat u_{\mathrm b}$, $\psi\ge0$</td>
-<td>$3$</td>
-<td>the Hermitian positive unit element, $N(\tilde U_{\mathrm b})=e_0$, in $\mathbb{M}_+$</td>
-</tr>
-<tr>
-<td>rotor</td>
-<td>$\tilde u_{\mathrm r}$</td>
-<td>$\mathrm{Sp}(1) = SU(2)$</td>
-<td>$3$</td>
-<td>the unit real quaternion, $N(\tilde u_{\mathrm r})=e_0$, in $\mathbb{H}_{\mathbb{B}}$</td>
-</tr>
-</tbody>
-</table></div>
-<h3 id="the-scale">The Scale</h3>
-<p>The scale is a positive real number, the only factor that is both central and non-compact on the positive side. It multiplies the element rigidly: replacing $\tilde{Q}$ by $\lambda\tilde{Q}$ with $\lambda>0$ multiplies $r$ by $\lambda$ and leaves the other three factors unchanged. It is the absolute value of the determinant of the matrix image, raised to the power $\tfrac12$, since $|\det\mathsf{M}_2(\tilde{Q})| = |\langle\tilde{Q},\tilde{Q}\rangle_{\natural}| = r^2$. As an exponential it is the degenerate case, $r = \exp(\ln r)$ of the real exponent $\ln r$, and its root is the algebra unit $e_0$.</p>
-<h3 id="the-central-phase">The Central Phase</h3>
-<p>The phase is an element of the centre lying on the unit circle, and it is the only factor that is central and compact. It is determined by the argument of the biquaternion norm, $\alpha = \tfrac{1}{2}\arg \langle\tilde{Q},\tilde{Q}\rangle_{\natural}$, and it vanishes exactly when the biquaternion norm is a positive real. It commutes with everything, so it may be written on either side of the other factors; in the physical reading it is the algebra's continuous internal symmetry. As an exponential it is $\exp(i\alpha)$, the central imaginary exponent, and its root is the central $i$, of square $-e_0$.</p>
-<h3 id="the-boost">The Boost</h3>
-<p>The boost is the only factor that is neither central nor compact. It lies in the Hermitian subspace $\mathbb{M}_+$, is positive definite in the matrix picture, has unit norm, and is the exponential of a traceless Hermitian element,</p>
-<p>$$
-\tilde U_{\mathrm b} = \exp\Bigl(i\tfrac{\psi}{2}\hat u_{\mathrm b}\Bigr), \qquad i\tfrac{\psi}{2}\hat u_{\mathrm b} \in \mathbb{M}_+ \cap \{\text{traceless}\} ,
-$$</p>
-<p>the exponent being traceless and Hermitian, since its scalar part vanishes and its vector part is purely imaginary. The three parameters are the rapidity and the two angles of the axis, and the boost set is the hyperbolic space $H^3$. In the physics articles this factor is the Lorentz boost rotor, and its action on the material sector $\mathbb{M}_-$ is the boost of the frame.</p>
-<h3 id="the-rotor">The Rotor</h3>
-<p>The rotor is a unit real quaternion: compact, three-dimensional, an element of the same group that the quaternion polar representation of the companion article produces as its unit factor. It is the factor that carries the spatial rotation, and it is the only factor that lies in the quaternion subspace $\mathbb{H}_{\mathbb{B}}$ on the unit sphere. It is the exponential of a real pure quaternion,</p>
-<p>$$
-\tilde u_{\mathrm r} = \exp\Bigl(\tfrac{\theta}{2}\hat u_{\mathrm r}\Bigr) = \cos\tfrac{\theta}{2}\,e_0 + \sin\tfrac{\theta}{2}\,\hat u_{\mathrm r} , \qquad \hat u_{\mathrm r}\in\mathbb{R}^3, \quad (\hat u_{\mathrm r},\hat u_{\mathrm r}) = 1 ,
-$$</p>
-<p>with the rotation angle $\theta$ and the unit axis $\hat u_{\mathrm r}$: the exponent lies in $\mathbb{M}_- \cap \mathrm{Vect}(\mathbb{B})$, the real pure quaternions, the anti-Hermitian sector of the vector subspace. The rotation it performs is by the angle $\theta$, and the exponent $\tfrac{\theta}{2}\hat u_{\mathrm r}$ is the only one of the four that is neither central nor Hermitian. Being non-central, it does not commute with the boost, and that non-commutativity is the algebraic root of the Thomas-Wigner rotation of the physics articles: the product of two boosts is not a boost, and the discrepancy is a rotor.</p>
-<h3 id="what-the-sandwich-sees">What the Sandwich Sees</h3>
+<p>The proof above is effective, and the procedure it yields is recorded, step by step, in the companion article <em>The Polar Decomposition of Biquaternions in Practice</em> (<code>articles_maths/the-polar-decomposition-of-biquaternions-in-practice.md</code>). That article gives the five steps in the order in which they are forced, the two invariants read off the four complex coordinates, the biquaternion norm and the Euclidean square, each of the four factors as a closed expression in those coordinates, the exponent of each factor with its position in the algebra, and three fully worked examples, one of them an element built from its factors and decomposed back. The word is the one stated above, and the branch of the square root of the modulus is its only convention.</p>
+<h2 id="what-the-sandwich-sees">What the Sandwich Sees</h2>
 <p>The four factors are what an operator on the algebra detects, and the dagger sandwich $\mathrm{H}_{\tilde{Q}}(\tilde T)=\tilde{Q}\tilde T\tilde{Q}^{*}$ reads them as follows.</p>
 <ul>
 <li>The <strong>scale</strong> enters through the single dilation $\lvert \langle\tilde{Q},\tilde{Q}\rangle_{\natural}\rvert^{2}=r^{4}$ of the interval.</li>
@@ -863,17 +678,20 @@ $$</p>
 <h2 id="summary">Summary</h2>
 <p>Every biquaternion with non-vanishing norm has a unique polar representation</p>
 <p>$$
-\tilde{Q} = r\,e^{i\alpha}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r} , \qquad r = \sqrt{|\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|} > 0, \quad \alpha = \tfrac{1}{2}\arg \langle\tilde{Q},\tilde{Q}\rangle_{\natural}, \quad \tilde U_{\mathrm b} \in \mathbb{M}_+, \quad \tilde u_{\mathrm r}\in\mathrm{Sp}(1) ,
+\tilde{Q} = r\,e^{i\alpha}\,\tilde U_{\mathrm b}\,\tilde u_{\mathrm r} , \qquad r = \sqrt{\lvert\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\rvert} > 0, \quad \alpha = \tfrac{1}{2}\arg \langle\tilde{Q},\tilde{Q}\rangle_{\natural}, \quad \tilde U_{\mathrm b} \in \mathbb{M}_+, \quad \tilde u_{\mathrm r}\in\mathrm{Sp}(1) ,
 $$</p>
 <p>in which $\tilde U_{\mathrm b}$ is the Hermitian positive unit-norm boost and $\tilde u_{\mathrm r}$ the unit real quaternion rotor. The modulus of the decomposition is the complex number $\rho = re^{i\alpha} = \sqrt{\langle\tilde{Q},\tilde{Q}\rangle_{\natural}}$, and the positive real factor $r$ is its absolute value, so a positive scale is always available and the phase is one of the four factors rather than a correction. The four factors have real dimensions $1+1+3+3 = 8$, they are unique, and the failure of the decomposition is exactly the null cone $\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = 0$. The decomposition is the reference form of the series: the Hamilton form of <em>The Hamilton Root Pairing of the Polar Element Representation of Biquaternions</em> and the quaternion form of <em>The Quaternion Pairing of the Polar Element Representation of Biquaternions</em> are the two other pairings of the same four factors, and the Cartan form of the physics articles is the special case $N = 1$ in which the scale and the phase are trivial.</p>
-<p>Each of the four factors is itself an exponential of a single element of the algebra:</p>
+<p>The word is a positive real times three exponentials of single elements of the algebra, read in one writing,</p>
+<p>$$
+\tilde{Q} = r\,\exp(i\alpha)\,\exp\Bigl(i\tfrac{\psi}{2}\hat u_{\mathrm b}\Bigr)\,\exp\Bigl(\tfrac{\theta}{2}\hat u_{\mathrm r}\Bigr) ,
+$$</p>
+<p>with the exponents</p>
 <ul>
-<li>$r = \exp(\ln r)$;</li>
-<li>$e^{i\alpha} = \exp(i\alpha)$;</li>
-<li>$\tilde U_{\mathrm b} = \exp\bigl(i\frac{\psi}{2}\hat u_{\mathrm b}\bigr)$, with the exponent traceless in $\mathbb{M}_+$;</li>
-<li>$\tilde u_{\mathrm r} = \exp\bigl(\tfrac{\theta}{2}\hat u_{\mathrm r}\bigr)$, with $\tfrac{\theta}{2}\hat u_{\mathrm r}$ a real pure quaternion.</li>
+<li>$i\alpha$, central and of root $i$;</li>
+<li>$i\frac{\psi}{2}\hat u_{\mathrm b}$, traceless in $\mathbb{M}_+$, of root $i\hat u_{\mathrm b}$;</li>
+<li>$\tfrac{\theta}{2}\hat u_{\mathrm r}$, a real pure quaternion, of root $\hat u_{\mathrm r}$;</li>
 </ul>
-<p>So the polar word is an ordered product of four exponentials. The product is not the exponential of the sum of the exponents, because the two non-central exponents do not commute; the last two of them do collapse to a single exponential, $\tilde U_{\mathrm b}\tilde u_{\mathrm r} = \exp(\hat\Xi\Theta)$, whenever the vector part is non-null, which is the Hamilton form $\tilde{Q} = R\exp(\hat\Xi\Theta)$ of <em>The Hamilton Root Pairing of the Polar Element Representation of Biquaternions</em>. The same word written at a root of one, $\langle\tilde\Xi,\tilde\Xi\rangle_{\natural} = \pm e_0$, is read in that article, together with the second, one-exponential form the root set carries on its halving idempotent and the chain that runs from the two pure factors to the idempotents and to the Peirce decomposition of the algebra.</p>
+<p>and the scale $r>0$ the degenerate hyperbolic factor, written without an exponential. The product is not the exponential of the sum of the exponents, because the two non-central exponents do not commute; the last two of them do collapse to a single exponential, $\exp\bigl(i\frac{\psi}{2}\hat u_{\mathrm b}\bigr)\exp\bigl(\frac{\theta}{2}\hat u_{\mathrm r}\bigr) = \exp(\hat\Xi\Theta)$, whenever the vector part is non-null, which is the Hamilton form $\tilde{Q} = R\exp(\hat\Xi\Theta)$ of <em>The Hamilton Root Pairing of the Polar Element Representation of Biquaternions</em>. The same word written at a root of one, $\langle\tilde\Xi,\tilde\Xi\rangle_{\natural} = \pm e_0$, is read in that article, together with the second, one-exponential form the root set carries on its halving idempotent and the chain that runs from the two pure factors to the idempotents and to the Peirce decomposition of the algebra.</p>
 <h2 id="summary-of-notation">Summary of Notation</h2>
 <div class="table-scroll"><table>
 <thead>
@@ -905,7 +723,7 @@ $$</p>
 <td>the central scalar imaginary</td>
 </tr>
 <tr>
-<td>$\langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$</td>
+<td>$N = \langle\tilde{Q},\tilde{Q}\rangle_{\natural} = \tilde{Q}\tilde{Q}^{\natural} = \sum_\mu Q_\mu^2$</td>
 <td>$\mathbb{C}$, central</td>
 <td>the biquaternion norm, equal to $\det\mathsf{M}_2(\tilde{Q})$</td>
 </tr>
@@ -915,7 +733,7 @@ $$</p>
 <td>the complex modulus, the principal square root</td>
 </tr>
 <tr>
-<td>$r = \sqrt{|\langle\tilde{Q},\tilde{Q}\rangle_{\natural}|}$</td>
+<td>$r = \sqrt{\lvert\langle\tilde{Q},\tilde{Q}\rangle_{\natural}\rvert}$</td>
 <td>$\mathbb{R}$, $r > 0$</td>
 <td>the scale, a positive real</td>
 </tr>
@@ -980,9 +798,9 @@ $$</p>
 <td>the rotor, a unit real quaternion</td>
 </tr>
 <tr>
-<td>$\exp(\ln r)\,\exp(i\alpha)\,\exp\bigl(i\frac{\psi}{2}\hat u_{\mathrm b}\bigr)\,\exp\bigl(\frac{\theta}{2}\hat u_{\mathrm r}\bigr)$</td>
+<td>$r\,\exp(i\alpha)\,\exp\bigl(i\frac{\psi}{2}\hat u_{\mathrm b}\bigr)\,\exp\bigl(\frac{\theta}{2}\hat u_{\mathrm r}\bigr)$</td>
 <td>—</td>
-<td>the polar word as an ordered product of four exponentials, $\theta\in[0,2\pi]$</td>
+<td>the polar word, one positive real and three exponentials</td>
 </tr>
 <tr>
 <td>$\mathbb{M}_+$</td>
@@ -1009,9 +827,12 @@ $$</p>
 <h2 id="further-reading">Further Reading</h2>
 <ul>
 <li><em>Biquaternions as a Vector Space over $\mathbb{C}$</em> (<code>articles_maths/biquaternions-as-a-vector-space-over-c.md</code>), for the algebra, the four conjugations and the remarkable subspaces.</li>
+<li><em>The Polar Decomposition of Biquaternions in Practice</em> (<code>articles_maths/the-polar-decomposition-of-biquaternions-in-practice.md</code>), for the procedure in full: the two invariants read off the coordinates, the five steps and their order, the factors in the coordinates of $\tilde{Q}$, the exponent of each factor with its position in the algebra, and the worked examples.</li>
+<li><em>The 4 Forms over the Biquaternion $\mathbb{C}$ Space</em> (<code>articles_maths/the-4-forms-over-the-biquaternion-c-space.md</code>), for the two forms that the procedure reads off the element, the complex bilinear norm $N$ and the Hermitian form, and for the Euclidean norm $\lVert\cdot\rVert_{E}$.</li>
 <li><em>The Quaternion Pairing of the Polar Element Representation of Biquaternions</em> (<code>articles_maths/the-quaternion-pairing-of-the-polar-element-representation-of-biquaternions.md</code>), for the quaternion pairing and the comparison of the two partial two-factor groupings of these four factors, with their domains.</li>
 <li><em>The Hamilton Root Pairing of the Polar Element Representation of Biquaternions</em> (<code>articles_maths/the-hamilton-root-pairing-of-the-polar-element-representation-of-biquaternions.md</code>), for the Hamilton grouping, its non-central root of $-1$, and the reading of the same word at the roots of one in the two exponential forms.</li>
 <li><em>The Cartan Hermitian Pairing of the Polar Element Representation of Biquaternions</em> (<code>articles_maths/the-cartan-hermitian-pairing-of-the-polar-element-representation-of-biquaternions.md</code>), for the third two-factor grouping, $\tilde{Q} = HU$ with $H$ Hermitian positive and $U$ unitary, its Hermitian and anti-Hermitian exponent split and its full domain.</li>
+<li><em>The Polar Element Representation and Remarkable Subspaces</em> (<code>articles_maths/the-polar-element-representation-and-remarkable-subspaces.md</code>), for the four exponents read against the four coordinate blocks and the six remarkable subspaces, the incidence of the exponents with the subspaces, and the polar data each subspace carries.</li>
 <li><em>Split-Biquaternion Polar Element Representation</em> (<code>articles_maths/split-biquaternion-polar-element-representation.md</code>), for the semisimple analogue, whose modulus is split complex and whose rotor is six-dimensional.</li>
 <li><em>Quaternion Polar Element Representation</em> (<code>articles_maths/quaternion-polar-element-representation.md</code>), for the two-factor case that this decomposition restricts to on the real quaternions.</li>
 <li><em>Complex Polar Element Representation</em> (<code>articles_maths/complex-polar-element-representation.md</code>) and <em>Split-Complex Polar Element Representation</em> (<code>articles_maths/split-complex-polar-element-representation.md</code>), for the two-dimensional members of the series, where the rule of the exponential is stated once and the slots are counted in the smallest cases.</li>
