@@ -52,7 +52,7 @@
       <div class="article-body">
         <h1 id="comparison-between-the-four-general-products"><strong>Comparison Between the Four General Products</strong></h1>
 <h2 id="introduction">Introduction</h2>
-<p>The four general products of <em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em> are four binary rules on the same space, and it is natural to ask which of them deserves the name of multiplication. In the strict sense, of an associative multiplication with a two-sided unit over the field of scalars, only the general plain bilinear product does: the second is $\mathbb{C}$-bilinear but not associative and carries a unit on one side only, and the last two are not $\mathbb{C}$-bilinear at all, being conjugate-linear in their second argument. In the sense of the two objects the corpus has — an algebra in the sense of <em>Algebras</em>, and a sesqualgebra over $\mathbb{C}$ with its conjugation in the sense of <em>Sesqualgebras</em> — the four split two and two, and within the pair of sesquilinear ones the complex product is the one this series takes, being the derived operation of the algebra with the conjugate-linear involution.</p>
+<p>The four general products of <em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em> are four binary rules on the same space, and it is natural to ask which of them deserves the name of multiplication. In the strict sense, of an associative multiplication with a two-sided unit over the field of scalars, only the general plain bilinear product does: the general quaternionic bilinear product is $\mathbb{C}$-bilinear but not associative and carries a unit on one side only, and the two sesquilinear products are not $\mathbb{C}$-bilinear at all, being conjugate-linear in their second argument. In the sense of the two objects the corpus has — an algebra in the sense of <em>Algebras</em>, and a sesqualgebra over $\mathbb{C}$ with its conjugation in the sense of <em>Sesqualgebras</em> — the four split two and two, and within the pair of sesquilinear ones the complex product is the one this series takes, being the derived operation of the algebra with the conjugate-linear involution.</p>
 <p>This article tabulates the properties that separate the four general products — bilinearity, associativity, commutativity, the units, the alternative and the flexible identities, the degree-three identity, and the left multiplications — and gives the short computation that decides each entry where it is not immediate. It also records the one construction that produces the four, the plain product with a conjugation inserted in a slot, and with it the reason exactly one of them is a multiplication. §<em>The Group of the Operations</em> reads the four insertions of that construction as the four elements of a group, of which the four general products are the four readings of one rule; the same section reads the construction on a general algebra with its two anti-involutions, where each slot decides its own property, and collects the settings in the Table of the Slots. The scalar and vector parts the four induce are not compared here; they are <em>Relations Between the Four General Products</em>.</p>
 <p>The article assumes the four general products and their scalar–vector forms from <em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em>, and it uses the identities of <em>Relations Between the Four General Products</em> for the unit and the monoid rows. Throughout, $1=e_0$ is the unit of the algebra and $\vec P$ is the vector part of $\tilde P=P_0+\vec P$.</p>
 <h2 id="the-property-table">The Property Table</h2>
@@ -62,8 +62,8 @@
 <tr>
 <th>property</th>
 <th>$\tilde P\tilde Q$</th>
-<th>$\tilde P^{\natural}\tilde Q$</th>
 <th>$\tilde P\tilde Q^{*}$</th>
+<th>$\tilde P^{\natural}\tilde Q$</th>
 <th>$\tilde P^{\natural}\tilde Q^{*}$</th>
 </tr>
 </thead>
@@ -78,8 +78,8 @@
 <tr>
 <td>$\mathbb{C}$-linear in the second argument</td>
 <td>yes</td>
-<td>yes</td>
 <td>no</td>
+<td>yes</td>
 <td>no</td>
 </tr>
 <tr>
@@ -99,15 +99,15 @@
 <tr>
 <td>$1$ is a left identity</td>
 <td>yes</td>
-<td>yes</td>
 <td>no</td>
+<td>yes</td>
 <td>no</td>
 </tr>
 <tr>
 <td>$1$ is a right identity</td>
 <td>yes</td>
-<td>no</td>
 <td>yes</td>
+<td>no</td>
 <td>no</td>
 </tr>
 <tr>
@@ -134,27 +134,27 @@
 <tr>
 <td>left multiplications form a monoid</td>
 <td>yes</td>
-<td>yes</td>
 <td>no</td>
+<td>yes</td>
 <td>no</td>
 </tr>
 <tr>
 <td>multiplication of an algebra over $\mathbb{C}$</td>
 <td>yes</td>
-<td>yes</td>
 <td>no</td>
+<td>yes</td>
 <td>no</td>
 </tr>
 <tr>
 <td>multiplication of a sesqualgebra over $\mathbb{C}$</td>
 <td>no</td>
-<td>no</td>
 <td>yes</td>
+<td>no</td>
 <td>yes</td>
 </tr>
 </tbody>
 </table></div>
-<p>The alternative row is satisfied automatically by the general plain bilinear product, which is associative, and it is the three other columns that the row decides. The degree-three row records the identity $\tilde P(\tilde P\tilde P)=(\tilde P\tilde P)\tilde P$ for the operation in question, which is how power associativity is tested for a product of this kind; in this and the two rows above it, juxtaposition stands for the operation of the row. The last two rows ask which of the four general products is a multiplication of an algebra of the two kinds the corpus has, with the definitions of the paragraph above the table and with nothing added to them. The test is the scalar rules alone, and it is decided by the second slot. When the second slot is read without a conjugation, as in $\tilde P\tilde Q$ and in $\tilde P^{\natural}\tilde Q$, the product is $\mathbb{C}$-bilinear and belongs to the bilinear row; when it carries the star, as in $\tilde P\tilde Q^{*}$ and in $\tilde P^{\natural}\tilde Q^{*}$, the product is $\mathbb{C}$-linear in the first slot and conjugate-linear in the second and belongs to the sesquilinear row. The witness for each exclusion is one scalar, $\lambda = i$, and one pair, $\tilde P = \tilde Q = e_0$: for the two bilinear products $\tilde P(i\tilde Q) = ie_0$ while $\bar\imath(\tilde P\tilde Q) = -ie_0$, so they are not $\varsigma$-sesquilinear for the conjugation; and for the two star-products $\tilde P(i\tilde Q) = -ie_0$ while $i(\tilde P\tilde Q) = ie_0$, so they are not $\mathbb{C}$-bilinear. The four therefore split two and two by the involution each carries, the bilinear row reading yes, yes, no, no and the sesquilinear row no, no, yes, yes. Neither row separates the third column from the fourth, and none should: the two star-products differ only in the first slot, and ${}^{\natural}$ is $\mathbb{C}$-linear, so both are sesquilinear for the same conjugation. What separates them is the unit, and it is the row "$1$ is a right identity" above: the general plain sesquilinear product has $e_0$ on the right and the complex quaternionic one has not. Equivalently, only the general plain sesquilinear product is the <strong>derived operation</strong> $\tilde X\star\tilde Y = \tilde X\tilde Y^{*}$ of $\mathbb{B}$ with its conjugate-linear involution, the standard example of <em>Sesqualgebras</em> and the structure of <em>Introduction to the General Plain Sesqualgebra of Biquaternions</em>. The bilinear row is weakened in the same way by the absence of a qualifier: the sharper statement, that exactly one of the four general products is the multiplication of an <strong>associative unital</strong> $\mathbb{C}$-algebra, is §<em>Which of the Four Is a Multiplication</em> below, and it holds because the ${}^{\natural}$-product is neither associative nor two-sidedly unital.</p>
+<p>The alternative row is satisfied automatically by the general plain bilinear product, which is associative, and it is the three other columns that the row decides. The degree-three row records the identity $\tilde P(\tilde P\tilde P)=(\tilde P\tilde P)\tilde P$ for the operation in question, which is how power associativity is tested for a product of this kind; in this and the two rows above it, juxtaposition stands for the operation of the row. The last two rows ask which of the four general products is a multiplication of an algebra of the two kinds the corpus has, with the definitions of the paragraph above the table and with nothing added to them. The test is the scalar rules alone, and it is decided by the second slot. When the second slot is read without a conjugation, as in $\tilde P\tilde Q$ and in $\tilde P^{\natural}\tilde Q$, the product is $\mathbb{C}$-bilinear and belongs to the bilinear row; when it carries the star, as in $\tilde P\tilde Q^{*}$ and in $\tilde P^{\natural}\tilde Q^{*}$, the product is $\mathbb{C}$-linear in the first slot and conjugate-linear in the second and belongs to the sesquilinear row. The witness for each exclusion is one scalar, $\lambda = i$, and one pair, $\tilde P = \tilde Q = e_0$: for the two bilinear products $\tilde P(i\tilde Q) = ie_0$ while $\bar\imath(\tilde P\tilde Q) = -ie_0$, so they are not $\varsigma$-sesquilinear for the conjugation; and for the two star-products $\tilde P(i\tilde Q) = -ie_0$ while $i(\tilde P\tilde Q) = ie_0$, so they are not $\mathbb{C}$-bilinear. The four therefore split two and two by the involution each carries, the bilinear row reading yes, no, yes, no and the sesquilinear row no, yes, no, yes. Neither row separates the second column from the fourth, and none should: the two star-products differ only in the first slot, and ${}^{\natural}$ is $\mathbb{C}$-linear, so both are sesquilinear for the same conjugation. What separates them is the unit, and it is the row "$1$ is a right identity" above: the general plain sesquilinear product has $e_0$ on the right and the complex quaternionic one has not. Equivalently, only the general plain sesquilinear product is the <strong>derived operation</strong> $\tilde X\star\tilde Y = \tilde X\tilde Y^{*}$ of $\mathbb{B}$ with its conjugate-linear involution, the standard example of <em>Sesqualgebras</em> and the structure of <em>Introduction to the General Plain Sesqualgebra of Biquaternions</em>. The bilinear row is weakened in the same way by the absence of a qualifier: the sharper statement, that exactly one of the four general products is the multiplication of an <strong>associative unital</strong> $\mathbb{C}$-algebra, is §<em>Which of the Four Is a Multiplication</em> below, and it holds because the ${}^{\natural}$-product is neither associative nor two-sidedly unital.</p>
 <h2 id="bilinearity-and-sesquilinearity">Bilinearity and Sesquilinearity</h2>
 <p>The first two rows are read off the definitions. Each of the four general products is $\mathbb{C}$-linear in the first argument: the first factor is either untouched or conjugated by the $\mathbb{C}$-linear map ${}^{\natural}$, and the rest of the computation is linear in it. In the second argument, the general plain bilinear product and the ${}^{\natural}$-product are $\mathbb{C}$-linear, while the two products carrying the star are conjugate-linear, since ${}^{*}$ conjugates the coefficients of the second factor before the multiplication.</p>
 <p>The distinction is not a technicality of the definitions: it separates the two rows of the scalar and vector tables of <em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em> that involve $\overline{\vec Q}$, and it is the reason the fourth column carries no unit and no monoid. It also settles what the four can be used for. A $\mathbb{C}$-bilinear operation on $\mathbb{B}$ defines on $\mathbb{B}$ the structure of an algebra over $\mathbb{C}$, associative or not; a conjugate-linear operation defines no such thing, and the two sesquilinear products are the multiplications of a sesqualgebra over $\mathbb{C}$ instead. The first of the two is nonetheless the multiplication of a sesqualgebra over $\mathbb{C}$ with its conjugation, being the derived operation of the algebra with the star, and that is a multiplication in the second sense the corpus admits (<em>Introduction to the General Plain Sesqualgebra of Biquaternions</em>); the second is not, since it reads the first factor through the $\mathbb{C}$-linear ${}^{\natural}$ as well. The four remain binary operations of the same kind, with the same two-step rule for their computation.</p>
@@ -187,7 +187,7 @@ $$</p>
 <p>The <strong>left alternative</strong> identity is $\tilde P(\tilde P\tilde Q)=(\tilde P\tilde P)\tilde Q$, and a single failure of either the left or the right law denies alternativity, so it settles the row; it fails for the ${}^{\natural}$-product at $\tilde P=e_3$, $\tilde Q=-e_3$, where the left-hand side is $e_3$ and the right-hand side is $-e_3$, for the ${}^{*}$-product at $\tilde P=-e_3$, $\tilde Q=e_3$, with the same two values, and for the fourth product at $\tilde P=e_0$, $\tilde Q=ie_0$, where the two sides are $ie_0$ and $-ie_0$. The <strong>flexible</strong> identity is $(\tilde P\tilde Q)\tilde P=\tilde P(\tilde Q\tilde P)$; it fails for the ${}^{\natural}$-product at $\tilde P=e_3$, $\tilde Q=e_0$, the two sides being $-e_0$ and $e_0$, for the ${}^{*}$-product at $\tilde P=-e_2$, $\tilde Q=e_0$, the two sides being $e_0$ and $-e_0$, and for the fourth product at $\tilde P=ie_0$, $\tilde Q=e_0$, with the same two values. The <strong>degree-three</strong> identity $\tilde P(\tilde P\tilde P)=(\tilde P\tilde P)\tilde P$ fails for all three products: for the ${}^{\natural}$-product and for the ${}^{*}$-product at $\tilde P=e_3$, where the two sides are $-e_3$ and $e_3$ in the first case and $e_3$ and $-e_3$ in the second, and for the fourth product at $\tilde P=ie_3$, where the two sides are $ie_3$ and $-ie_3$.</p>
 <p>The general plain bilinear product satisfies all three, being associative, and it is the only one of the four that does. The pattern is the one the table shows: the four general products have the four displayed scalar parts and are told apart by their vector parts, and every one of these identities is an identity of elements, hence decided on the vector parts.</p>
 <h2 id="the-left-multiplications">The Left Multiplications</h2>
-<p>The left multiplication by $\tilde P$ is the map sending $\tilde X$ to the value of the operation on the pair $(\tilde P,\tilde X)$. For the general plain bilinear product the left multiplications compose by $L_{\tilde P}\circ L_{\tilde R}=L_{\tilde P\tilde R}$, which is associativity, and they form a monoid. For the ${}^{\natural}$-product the same composition law holds in reversed order, $L^{\natural}_{\tilde P}\circ L^{\natural}_{\tilde R}=L^{\natural}_{\tilde R\tilde P}$, so the left multiplications form a monoid again, isomorphic to the opposite of the multiplicative monoid of $\mathbb{B}$; this is why the row of the table on the left multiplications reads yes, yes, no, no, the two sesquilinear products being excluded by the computation of <em>Relations Between the Four General Products</em>, where the composition of two of their left multiplications is shown to be linear and hence not one of them.</p>
+<p>The left multiplication by $\tilde P$ is the map sending $\tilde X$ to the value of the operation on the pair $(\tilde P,\tilde X)$. For the general plain bilinear product the left multiplications compose by $L_{\tilde P}\circ L_{\tilde R}=L_{\tilde P\tilde R}$, which is associativity, and they form a monoid. For the ${}^{\natural}$-product the same composition law holds in reversed order, $L^{\natural}_{\tilde P}\circ L^{\natural}_{\tilde R}=L^{\natural}_{\tilde R\tilde P}$, so the left multiplications form a monoid again, isomorphic to the opposite of the multiplicative monoid of $\mathbb{B}$; this is why the row of the table on the left multiplications reads yes, no, yes, no, the two sesquilinear products being excluded by the computation of <em>Relations Between the Four General Products</em>, where the composition of two of their left multiplications is shown to be linear and hence not one of them.</p>
 <p>The row is not implied by the associative row. The ${}^{\natural}$-product is not associative, and its left multiplications still form a monoid, because the composition law holds in reversed order, by the anti-automorphism property of ${}^{\natural}$; and the two sesquilinear products fail the row for the reason given above, namely that the composition of two of their left multiplications leaves the class, which has nothing to do with the associativity of the underlying product.</p>
 <h2 id="which-of-the-four-is-a-multiplication">Which of the Four Is a Multiplication</h2>
 <p>The four rules are not unrelated: each is the <strong>general plain bilinear product with a conjugation inserted in one or both slots</strong>:</p>
@@ -201,7 +201,7 @@ $$</p>
 <p>The ${}^{\natural}$-product is $\mathbb{C}$-bilinear, and that is all: it is not associative and it is unital on the left only. It defines on the underlying vector space a non-associative algebra structure in the weak sense, one that agrees with the general plain bilinear product on the centre and disagrees on the vector parts; it is the product whose scalar part is the signless sum $\sum_\mu P_\mu Q_\mu$.</p>
 <p>The two products carrying the star are not multiplications of a bilinear $\mathbb{C}$-algebra at all: being conjugate-linear in their second argument they cannot be. Both are multiplications of a sesqualgebra over the conjugation, and within the pair they are separated by the unit. The general plain sesquilinear product is the derived operation $\tilde X\star\tilde Y = \tilde X\tilde Y^{*}$ of $\mathbb{B}$ with its conjugate-linear involution, that is the standard example of the category, and $e_0$ is a right unit of it; the general quaternionic sesquilinear product reads the first factor through the $\mathbb{C}$-linear ${}^{\natural}$ as well and has no right unit, so it is a sesquilinear multiplication that is not the derived one (<em>Introduction to the General Plain Sesqualgebra of Biquaternions</em>). The classification of the four general products is therefore: one multiplication of an associative unital algebra, one bilinear product that fails associativity and two-sidedness, and two multiplications of a sesqualgebra, of which the complex one is the derived operation with the right unit and the complex quaternionic one is not the derived operation and has no right unit.</p>
 <p>The order of the four general products matches the order of the objects. The general plain bilinear product is the multiplication of the associative unital algebra; the general plain sesquilinear product is the derived operation, the multiplication the sesqualgebra takes; the two $\natural$-products are the same two products read with the $\mathbb{C}$-linear conjugation ${}^{\natural}$ inserted in the first slot, and the insertion of a $\mathbb{C}$-linear map changes the product without changing its sesquilinearity type.</p>
-<p>Each of the four general products is read as a multiplication in an article of its own: the general plain bilinear product in <em>Introduction to the General Plain Algebra of Biquaternions</em>, the general quaternionic bilinear product in <em>Introduction to the General Quaternionic Algebra of Biquaternions</em>, the general plain sesquilinear product in <em>Introduction to the General Plain Sesqualgebra of Biquaternions</em>, and the general quaternionic sesquilinear product in <em>Introduction to the General Quaternionic Sesqualgebra of Biquaternions</em>; the entries of the table above are the statements those four articles prove or quote.</p>
+<p>Each of the four general products is read as a multiplication in an article of its own: the general plain bilinear product in <em>Introduction to the General Plain Algebra of Biquaternions</em>, the general plain sesquilinear product in <em>Introduction to the General Plain Sesqualgebra of Biquaternions</em>, the general quaternionic bilinear product in <em>Introduction to the General Quaternionic Algebra of Biquaternions</em>, and the general quaternionic sesquilinear product in <em>Introduction to the General Quaternionic Sesqualgebra of Biquaternions</em>; the entries of the table above are the statements those four articles prove or quote.</p>
 <h2 id="the-group-of-the-operations">The Group of the Operations</h2>
 <p>The four general products are four rules on one and the same space, and §<em>Which of the Four Is a Multiplication</em> reads each of the three others as the general plain bilinear product with a conjugation inserted in a slot. <strong>The four insertions that appear there are the four elements of a group.</strong> One insertion reads the first argument through the natural conjugation and one reads the second through the Hermitian conjugation; each of the two is its own inverse, the two commute, and the four are these two insertions, their composite and the identity. The group is of order four and elementary abelian, and the four general products are its four elements read on one and the same rule. <strong>Each of the two generators touches one slot</strong>, and it is that reading which decides which property of the four general products belongs to which slot: the group is read on the rules in §<em>The Readings and Their Group</em>, the same operation is read on a general algebra with its two anti-involutions in §<em>The Operation on a General Algebra</em>, the settings are collected in §<em>The Table of the Slots</em>, and the one setting whose square is central is §<em>The Square at One Setting</em>.</p>
 <h3 id="the-readings-and-their-group">The Readings and Their Group</h3>
@@ -376,10 +376,10 @@ $$</p>
 <p>The four general products are told apart on a single element by the <strong>square</strong>, and the idempotent and the root problems follow from it. Writing $\tilde P = P_0e_0 + \vec P$ and $(\vec P,\vec P) = P_1^2 + P_2^2 + P_3^2$, the scalar part of the square is</p>
 <p>$$
 \mathrm{Sc}\bigl(\tilde P\tilde P\bigr) = P_0^2 - (\vec P,\vec P), \qquad
-\mathrm{Sc}\bigl(\tilde P^{\natural}\tilde P\bigr) = P_0^2 + (\vec P,\vec P) = N(\tilde P),
+\mathrm{Sc}\bigl(\tilde P\tilde P^{*}\bigr) = \sum_\mu\lvert P_\mu\rvert^2,
 $$</p>
 <p>$$
-\mathrm{Sc}\bigl(\tilde P\tilde P^{*}\bigr) = \sum_\mu\lvert P_\mu\rvert^2, \qquad
+\mathrm{Sc}\bigl(\tilde P^{\natural}\tilde P\bigr) = P_0^2 + (\vec P,\vec P) = N(\tilde P), \qquad
 \mathrm{Sc}\bigl(\tilde P^{\natural}\tilde P^{*}\bigr) = \lvert P_0\rvert^2 - \sum_k\lvert P_k\rvert^2 .
 $$</p>
 <p>These are the four algebraic norms of <em>The 4 Forms over the Biquaternion $\mathbb{C}$ Space</em>, and the same four expressions are the scalar parts of the four general products of <em>Relations Between the Four General Products</em>. Two of them decide the two problems on the spot. The $\natural$-square lies in the centre for every element, being $N(\tilde P)e_0$, so its roots of a central value are the single equation $N(\tilde P) = \lambda$. The general plain sesquilinear square has the <strong>non-negative</strong> scalar part $\sum_\mu\lvert P_\mu\rvert^2$, so that product has no root of a negative value at all. The remaining two squares are elements, and their scalar parts are the indefinite general plain bilinear and Krein values.</p>
@@ -388,8 +388,8 @@ $$</p>
 <tr>
 <th>problem</th>
 <th>$\tilde P\tilde P = \tilde P$</th>
-<th>$\tilde P^{\natural}\tilde P = \tilde P$</th>
 <th>$\tilde P\tilde P^{*} = \tilde P$</th>
+<th>$\tilde P^{\natural}\tilde P = \tilde P$</th>
 <th>$\tilde P^{\natural}\tilde P^{*} = \tilde P$</th>
 </tr>
 </thead>
@@ -397,21 +397,21 @@ $$</p>
 <tr>
 <td>idempotents</td>
 <td>$0$, $e_0$, and $\tfrac12(e_0 + \tilde\Xi i)$ for a root $\tilde\Xi$ of $-e_0$</td>
-<td>$0$ and $e_0$ alone</td>
 <td>$0$, $e_0$, and the Hermitian idempotents $\tfrac12(e_0 + \tilde\Xi)$ with $\hat u$ a real unit vector</td>
+<td>$0$ and $e_0$ alone</td>
 <td>$0$, $e_0$, and $-\tfrac12e_0+\vec n$ for a real $\vec n$ of the vector subspace with $(\vec n,\vec n) = \tfrac34$</td>
 </tr>
 </tbody>
 </table></div>
-<p>The four columns are four different sets. The first is infinite and is the one the rest of the category uses; the second is the smallest possible, the two trivial idempotents; the third is the family of the pure states of <em>Idempotents of the General Plain Algebra</em>; the fourth is a family of a different kind, lying in the quaternion subspace $\mathbb{H}_{\mathbb{B}}$.</p>
+<p>The four columns are four different sets. The first is infinite and is the one the rest of the category uses; the second is the family of the pure states of <em>Idempotents of the General Plain Algebra</em>; the third is the smallest possible, the two trivial idempotents; the fourth is a family of a different kind, lying in the quaternion subspace $\mathbb{H}_{\mathbb{B}}$.</p>
 <p>The square roots of a central value differ in the same way and by the same two structural facts.</p>
 <div class="table-scroll"><table>
 <thead>
 <tr>
 <th>square roots</th>
 <th>$\tilde P\tilde P = \lambda e_0$</th>
-<th>$\tilde P^{\natural}\tilde P = \lambda e_0$</th>
 <th>$\tilde P\tilde P^{*} = \lambda e_0$</th>
+<th>$\tilde P^{\natural}\tilde P = \lambda e_0$</th>
 <th>$\tilde P^{\natural}\tilde P^{*} = \lambda e_0$</th>
 </tr>
 </thead>
@@ -419,15 +419,15 @@ $$</p>
 <tr>
 <td>of $-e_0$</td>
 <td>$P_0 = 0$ with $(\vec P,\vec P) = 1$, and $P_0 = \pm i$</td>
-<td>the solutions of $N(\tilde P) = -1$</td>
 <td>none</td>
+<td>the solutions of $N(\tilde P) = -1$</td>
 <td>the solutions of $\tilde P^{\natural}\tilde P^{*} = -e_0$, among them every real pure $\vec P$ with $(\vec P,\vec P) = 1$</td>
 </tr>
 <tr>
 <td>of $0$</td>
 <td>$P_0 = 0$ with $(\vec P,\vec P) = 0$, the nilpotents $\hat\Upsilon$</td>
-<td>the solutions of $N(\tilde P) = 0$, the zero divisors together with $0$</td>
 <td>$\tilde P = 0$ alone</td>
+<td>the solutions of $N(\tilde P) = 0$, the zero divisors together with $0$</td>
 <td>the solutions of $\tilde P^{\natural}\tilde P^{*} = 0$, among them $e_0 + ie_1$</td>
 </tr>
 </tbody>
@@ -446,7 +446,7 @@ $$</p>
 </thead>
 <tbody>
 <tr>
-<td>$\tilde P\tilde Q$, $\tilde P^{\natural}\tilde Q$, $\tilde P\tilde Q^{*}$, $\tilde P^{\natural}\tilde Q^{*}$</td>
+<td>$\tilde P\tilde Q$, $\tilde P\tilde Q^{*}$, $\tilde P^{\natural}\tilde Q$, $\tilde P^{\natural}\tilde Q^{*}$</td>
 <td>the four general products, defined in <em>The Four General Products of the Biquaternion $\mathbb{C}$ Space</em></td>
 </tr>
 <tr>
@@ -458,7 +458,7 @@ $$</p>
 <td>the quaternion units, with $e_1^2=e_2^2=e_3^2=-e_0$</td>
 </tr>
 <tr>
-<td>$L_{\tilde P}$, $L^{\natural}_{\tilde P}$, $L^{*}_{\tilde P}$, $L^{\natural*}_{\tilde P}$</td>
+<td>$L_{\tilde P}$, $L^{*}_{\tilde P}$, $L^{\natural}_{\tilde P}$, $L^{\natural*}_{\tilde P}$</td>
 <td>the left multiplications of the four general products</td>
 </tr>
 <tr>
